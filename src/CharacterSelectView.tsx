@@ -1,0 +1,366 @@
+import React, { useState, useEffect, useRef } from 'react';
+import type { GameDefinition } from './types';
+import { ThemeToggle } from './ThemeToggle';
+import { useTheme } from './ThemeContext';
+import { getCardColor } from './palette';
+
+interface Props {
+  game: GameDefinition;
+  onSelectCharacter: (characterId: string) => void;
+  onBack: () => void;
+  onHome: () => void;
+}
+
+export const CharacterSelectView: React.FC<Props> = ({ game, onSelectCharacter, onBack, onHome }) => {
+  const [favorites, setFavorites] = useState<string[]>([]);
+  const { theme } = useTheme();
+  const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
+  
+  useEffect(() => {
+    window.scrollTo(0,0);
+    const storedFavs = localStorage.getItem('fgc_favorites');
+    if (storedFavs) {
+      try {
+        setFavorites(JSON.parse(storedFavs));
+      } catch (e) {}
+    }
+  }, []);
+
+  const toggleFavorite = (e: React.MouseEvent, id: string) => {
+    e.stopPropagation();
+    const newFavs = favorites.includes(id) 
+      ? favorites.filter(fav => fav !== id) 
+      : [...favorites, id];
+    setFavorites(newFavs);
+    localStorage.setItem('fgc_favorites', JSON.stringify(newFavs));
+  };
+
+  // Mouse-reactive glow
+  const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>, charId: string) => {
+    const el = cardRefs.current.get(charId);
+    if (!el) return;
+    const rect = el.getBoundingClientRect();
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+    el.style.setProperty('--mouse-x', `${x}%`);
+    el.style.setProperty('--mouse-y', `${y}%`);
+  };
+  
+  // Sort favorites first, then alphabetical
+  const sortedCharacters = [...game.characters].sort((a, b) => {
+    const aFav = favorites.includes(a.id) ? 1 : 0;
+    const bFav = favorites.includes(b.id) ? 1 : 0;
+    if (aFav !== bFav) return bFav - aFav;
+    return a.name.localeCompare(b.name);
+  });
+
+  const isDark = theme === 'dark';
+  const headingGradient = isDark
+    ? 'linear-gradient(135deg, #f0f0f8 0%, #9090ae 100%)'
+    : 'linear-gradient(135deg, #1a1a2e 0%, #555570 100%)';
+
+  return (
+    <div style={{
+      minHeight: '100vh',
+      padding: 'var(--space-xl)',
+      position: 'relative',
+      overflow: 'clip',
+    }}>
+      {/* Ambient orb */}
+      <div style={{
+        position: 'absolute',
+        top: '0',
+        right: '-5%',
+        width: '400px',
+        height: '400px',
+        borderRadius: '50%',
+        background: `radial-gradient(circle, ${isDark ? 'rgba(99, 102, 241, 0.06)' : 'rgba(99, 102, 241, 0.04)'} 0%, transparent 70%)`,
+        filter: 'blur(60px)',
+        pointerEvents: 'none',
+      }} />
+
+      {/* Theme toggle — top right */}
+      <div style={{
+        position: 'fixed',
+        top: '1.25rem',
+        right: '1.25rem',
+        zIndex: 200,
+      }}>
+        <ThemeToggle />
+      </div>
+
+      {/* Sticky Header Wrapper */}
+      <div style={{
+        position: 'sticky',
+        top: 0,
+        zIndex: 50,
+        backgroundColor: 'var(--bg-primary)',
+        margin: 'calc(-1 * var(--space-xl)) calc(-1 * var(--space-xl)) var(--space-xl)',
+        padding: 'var(--space-xl) var(--space-xl) var(--space-md)',
+        borderBottom: '1px solid var(--border-subtle)',
+        transition: 'background-color 0.4s ease',
+      }}>
+        {/* Navigation breadcrumb */}
+      <nav style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '0.75rem',
+        marginBottom: 'var(--space-lg)',
+        animation: 'fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both',
+      }}>
+        <button
+          id="char-select-back"
+          onClick={onBack}
+          style={{
+            background: 'var(--bg-input)',
+            border: '1px solid var(--border-subtle)',
+            color: 'var(--text-secondary)',
+            fontSize: '0.9rem',
+            cursor: 'pointer',
+            padding: '0.5rem 1.1rem',
+            borderRadius: 'var(--radius-md)',
+            transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+            fontFamily: 'inherit',
+            fontWeight: 500,
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.4rem',
+          }}
+          onMouseOver={e => {
+            e.currentTarget.style.color = 'var(--text-primary)';
+            e.currentTarget.style.borderColor = 'var(--border-medium)';
+            e.currentTarget.style.background = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)';
+            e.currentTarget.style.transform = 'translateX(-2px)';
+          }}
+          onMouseOut={e => {
+            e.currentTarget.style.color = 'var(--text-secondary)';
+            e.currentTarget.style.borderColor = 'var(--border-subtle)';
+            e.currentTarget.style.background = 'var(--bg-input)';
+            e.currentTarget.style.transform = 'translateX(0)';
+          }}
+        >
+          ← Back
+        </button>
+        <span style={{ color: 'var(--text-muted)' }}>·</span>
+        <button
+          onClick={onHome}
+          title="Home"
+          style={{
+            background: 'transparent',
+            border: 'none',
+            color: 'var(--text-secondary)',
+            cursor: 'pointer',
+            padding: '0.25rem',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'all 0.2s ease',
+          }}
+          onMouseOver={e => {
+            e.currentTarget.style.color = 'var(--accent-indigo)';
+            e.currentTarget.style.transform = 'scale(1.15)';
+          }}
+          onMouseOut={e => {
+            e.currentTarget.style.color = 'var(--text-secondary)';
+            e.currentTarget.style.transform = 'scale(1)';
+          }}
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+        </button>
+        <span style={{ color: 'var(--text-muted)' }}>·</span>
+        <button 
+          onClick={onBack}
+          style={{ 
+            background: 'transparent',
+            border: 'none',
+            color: 'var(--text-secondary)', 
+            fontWeight: 500,
+            cursor: 'pointer',
+            padding: '2px 4px',
+            fontFamily: 'inherit',
+            fontSize: 'inherit',
+            transition: 'color 0.2s',
+          }}
+          onMouseOver={e => e.currentTarget.style.color = 'var(--text-primary)'}
+          onMouseOut={e => e.currentTarget.style.color = 'var(--text-secondary)'}
+        >
+          {game.name}
+        </button>
+        <span style={{ color: 'var(--text-muted)' }}>›</span>
+        <span style={{ color: 'var(--text-primary)', fontWeight: 700 }}>SELECT CHARACTER</span>
+      </nav>
+
+      {/* Section header */}
+      <header style={{
+        marginBottom: 'var(--space-2xl)',
+        animation: 'fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both',
+      }}>
+        <h1 style={{
+          fontSize: 'clamp(2rem, 4vw, 3rem)',
+          fontWeight: 900,
+          margin: 0,
+          background: headingGradient,
+          WebkitBackgroundClip: 'text',
+          backgroundClip: 'text',
+          WebkitTextFillColor: 'transparent',
+          color: 'transparent',
+        }}>
+          Choose Your Fighter
+        </h1>
+        <p style={{
+          color: 'var(--text-tertiary)',
+          fontSize: '1rem',
+          marginTop: '0.5rem',
+          fontWeight: 300,
+        }}>
+          {game.characters.length} fighter{game.characters.length !== 1 ? 's' : ''} available
+        </p>
+      </header>
+      </div>
+
+      {/* Character grid */}
+      <main style={{
+        display: 'grid',
+        gridTemplateColumns: 'repeat(auto-fill, minmax(200px, 1fr))',
+        gap: '1.25rem',
+        maxWidth: '1400px',
+        width: '100%',
+        margin: '0 auto',
+      }}>
+        {sortedCharacters.map((character, index) => {
+          const accentColor = getCardColor(index);
+          const isComingSoon = character.name.includes('Coming Soon');
+
+          return (
+            <button
+              key={character.id}
+              id={`char-card-${character.id}`}
+              ref={el => { if (el) cardRefs.current.set(character.id, el); }}
+              onClick={() => !isComingSoon && onSelectCharacter(character.id)}
+              onMouseMove={(e) => handleMouseMove(e, character.id)}
+              style={{
+                position: 'relative',
+                background: 'var(--bg-card)',
+                border: '1px solid var(--border-subtle)',
+                borderRadius: 'var(--radius-xl)',
+                padding: '1.5rem 1.25rem',
+                display: 'flex',
+                flexDirection: 'column',
+                alignItems: 'center',
+                justifyContent: 'center',
+                cursor: isComingSoon ? 'not-allowed' : 'pointer',
+                transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
+                overflow: 'hidden',
+                color: 'var(--text-primary)',
+                opacity: isComingSoon ? 0.4 : 1,
+                animation: `fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) ${150 + index * 60}ms both`,
+                fontFamily: 'inherit',
+                textAlign: 'center',
+                backdropFilter: 'blur(8px)',
+                WebkitBackdropFilter: 'blur(8px)',
+              }}
+              onMouseOver={(e) => {
+                if (isComingSoon) return;
+                const el = e.currentTarget;
+                el.style.transform = 'translateY(-6px) scale(1.04)';
+                el.style.borderColor = accentColor + '50';
+                el.style.boxShadow = `0 20px 50px ${accentColor}20, 0 0 0 1px ${accentColor}15`;
+                const mouseGlow = el.querySelector('.mouse-glow') as HTMLElement;
+                if (mouseGlow) mouseGlow.style.opacity = '1';
+              }}
+              onMouseOut={(e) => {
+                if (isComingSoon) return;
+                const el = e.currentTarget;
+                el.style.transform = 'translateY(0) scale(1)';
+                el.style.borderColor = 'var(--border-subtle)';
+                el.style.boxShadow = 'none';
+                const mouseGlow = el.querySelector('.mouse-glow') as HTMLElement;
+                if (mouseGlow) mouseGlow.style.opacity = '0';
+              }}
+            >
+              {/* Mouse-reactive glow */}
+              <div
+                className="mouse-glow"
+                style={{
+                  position: 'absolute',
+                  inset: 0,
+                  background: `radial-gradient(circle 140px at var(--mouse-x, 50%) var(--mouse-y, 50%), ${accentColor}30, transparent 70%)`,
+                  opacity: 0,
+                  transition: 'opacity 0.35s ease',
+                  borderRadius: 'inherit',
+                  pointerEvents: 'none',
+                  zIndex: 0,
+                }}
+              />
+
+              {/* Top accent bar */}
+              <div style={{
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                height: '3px',
+                background: `linear-gradient(90deg, ${accentColor}80, ${accentColor}, ${accentColor}80)`,
+                borderRadius: '0 0 3px 3px',
+              }} />
+
+              {/* Star toggle */}
+              <button 
+                onClick={(e) => toggleFavorite(e, character.id)}
+                style={{
+                  position: 'absolute',
+                  top: '10px',
+                  right: '10px',
+                  background: 'transparent',
+                  border: 'none',
+                  cursor: 'pointer',
+                  fontSize: '1.2rem',
+                  padding: '4px',
+                  color: favorites.includes(character.id) ? '#f59e0b' : 'var(--text-muted)',
+                  transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                  zIndex: 2,
+                }}
+                onMouseOver={e => { e.currentTarget.style.transform = 'scale(1.25) rotate(15deg)'; }}
+                onMouseOut={e => { e.currentTarget.style.transform = 'scale(1) rotate(0deg)'; }}
+              >
+                ★
+              </button>
+
+              {/* Name */}
+              <div style={{
+                fontSize: '1.15rem',
+                fontWeight: 700,
+                letterSpacing: '-0.01em',
+                position: 'relative',
+                zIndex: 1,
+              }}>
+                {character.name.replace(/ \(Coming Soon\)/, '')}
+              </div>
+
+              {/* Coming soon badge */}
+              {isComingSoon && (
+                <div style={{
+                  marginTop: '0.75rem',
+                  padding: '0.25rem 0.9rem',
+                  borderRadius: 'var(--radius-full)',
+                  background: 'var(--bg-badge)',
+                  border: '1px solid var(--border-subtle)',
+                  fontSize: '0.7rem',
+                  fontWeight: 600,
+                  color: 'var(--text-tertiary)',
+                  textTransform: 'uppercase',
+                  letterSpacing: '0.1em',
+                }}>
+                  Coming Soon
+                </div>
+              )}
+            </button>
+          );
+        })}
+      </main>
+    </div>
+  );
+};

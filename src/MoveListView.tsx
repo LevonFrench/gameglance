@@ -1,0 +1,823 @@
+import React, { useState, useEffect } from 'react';
+import type { GameDefinition, CharacterExport, Move } from './types';
+import { GlyphSequence } from './GlyphSequence';
+import type { ControllerType } from './glyphMap';
+import { ThemeToggle } from './ThemeToggle';
+import { useTheme } from './ThemeContext';
+
+interface Props {
+  game: GameDefinition;
+  characterId: string;
+  selectedPlaylist: Move[];
+  onToggleMove: (move: Move) => void;
+  onLaunchMainScreen: () => void;
+  onBack: () => void;
+  onHome: () => void;
+}
+
+const TYPE_COLORS: Record<string, string> = {
+  normal: '#6366f1',
+  special: '#f59e0b',
+  super: '#ef4444',
+  throw: '#22d3ee',
+  unique: '#8b5cf6',
+  common: '#10b981',
+};
+
+const TYPE_LABELS: Record<string, string> = {
+  normal: 'NRM',
+  special: 'SPL',
+  super: 'SUP',
+  throw: 'THR',
+  unique: 'UNQ',
+  common: 'COM',
+};
+
+export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, onToggleMove, onLaunchMainScreen, onBack, onHome }) => {
+  const [characterData, setCharacterData] = useState<CharacterExport | null>(null);
+  const [activeTab, setActiveTab] = useState<string>(game.tabs.find(t => t.toLowerCase() === 'special moves') || game.tabs[0] || 'Moves');
+  const [loadingError, setLoadingError] = useState<string>('');
+  const [controller, setController] = useState<ControllerType>('playstation');
+  const [searchQuery, setSearchQuery] = useState('');
+  const [showScrollTop, setShowScrollTop] = useState(false);
+  const { theme } = useTheme();
+
+  const isDark = theme === 'dark';
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setShowScrollTop(window.scrollY > 300);
+    };
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    setActiveTab(game.tabs.find(t => t.toLowerCase().includes('special')) || game.tabs[0] || 'Moves');
+    setCharacterData(null);
+    setLoadingError('');
+    fetch(`/data/${game.id}/${characterId}.json`)
+      .then(res => {
+        if (!res.ok) throw new Error("File not found");
+        return res.json();
+      })
+      .then(data => setCharacterData(data))
+      .catch(e => {
+        console.error(e);
+        setLoadingError(`Could not load data for ${characterId}. Ensure the data ingestion script was run.`);
+      });
+  }, [game.id, characterId]);
+
+  // Tab → move type mapping (defined before early returns so hooks aren't conditional)
+  const TAB_FILTER: Record<string, (data: CharacterExport) => Move[]> = {
+    'Normal Moves':   (d) => (d.movesList || []).filter(m => m.type === 'normal'),
+    'Special Moves':  (d) => (d.movesList || []).filter(m => m.type === 'special'),
+    'Super Arts':     (d) => (d.movesList || []).filter(m => m.type === 'super'),
+    'Super Combos':   (d) => (d.movesList || []).filter(m => m.type === 'super'),
+    'Unique Attacks': (d) => (d.movesList || []).filter(m => m.type === 'unique'),
+    'Throws':         (d) => (d.movesList || []).filter(m => m.type === 'throw'),
+    'Common Moves':   (d) => (d.movesList || []).filter(m => m.type === 'common'),
+    'Moves':          (d) => d.movesList || [],
+    'Combos':         (d) => (d.combosList || []).map(c => ({
+      id: c.id, name: c.name, type: 'normal' as const, inputs: c.inputs, frameData: {},
+    })),
+    'Fatalities':     (d) => (d.movesList || []).filter(m => m.type === 'super'),
+  };
+
+  // Pre-compute counts per tab (safe with null characterData)
+  const tabCounts = React.useMemo(() => {
+    if (!characterData) return {} as Record<string, number>;
+    const counts: Record<string, number> = {};
+    game.tabs.forEach(tab => {
+      const fn = TAB_FILTER[tab];
+      counts[tab] = fn ? fn(characterData).length : 0;
+    });
+    return counts;
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [characterData, game.tabs]);
+
+  // Auto-select preferred non-empty tab whenever data loads
+  React.useEffect(() => {
+    if (!characterData) return;
+    let targetTab = game.tabs.find(t => t.toLowerCase().includes('special') && (tabCounts[t] ?? 0) > 0);
+    if (!targetTab) {
+      targetTab = game.tabs.find(t => (tabCounts[t] ?? 0) > 0);
+    }
+    if (targetTab) setActiveTab(targetTab);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [characterData]);
+
+  if (loadingError) {
+    return (
+      <div style={{
+        padding: 'var(--space-xl)',
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: 'var(--space-lg)',
+      }}>
+        <div style={{
+          fontSize: '3rem',
+          marginBottom: 'var(--space-md)',
+        }}>⚠️</div>
+        <h2 style={{ color: 'var(--accent-rose)', fontWeight: 700, fontSize: '1.5rem' }}>Data Not Found</h2>
+        <p style={{ color: 'var(--text-secondary)', textAlign: 'center', maxWidth: '400px' }}>{loadingError}</p>
+        <button
+          onClick={onBack}
+          style={{
+            padding: '0.75rem 2rem',
+            background: 'var(--bg-input)',
+            color: 'var(--text-primary)',
+            border: '1px solid var(--border-medium)',
+            borderRadius: 'var(--radius-lg)',
+            cursor: 'pointer',
+            fontFamily: 'inherit',
+            fontWeight: 600,
+            fontSize: '0.95rem',
+            transition: 'all 0.25s ease',
+          }}
+          onMouseOver={e => {
+            e.currentTarget.style.transform = 'translateY(-2px)';
+            e.currentTarget.style.boxShadow = 'var(--shadow-md)';
+          }}
+          onMouseOut={e => {
+            e.currentTarget.style.transform = 'translateY(0)';
+            e.currentTarget.style.boxShadow = 'none';
+          }}
+        >
+          ← Go Back
+        </button>
+      </div>
+    );
+  }
+
+  if (!characterData) {
+    return (
+      <div style={{
+        minHeight: '100vh',
+        display: 'flex',
+        flexDirection: 'column',
+        alignItems: 'center',
+        justifyContent: 'center',
+        gap: 'var(--space-md)',
+      }}>
+        <div style={{
+          width: '48px',
+          height: '48px',
+          border: '3px solid var(--border-subtle)',
+          borderTopColor: 'var(--accent-indigo)',
+          borderRadius: '50%',
+          animation: 'spin 0.8s linear infinite',
+        }} />
+        <style>{`@keyframes spin { to { transform: rotate(360deg); } }`}</style>
+        <div style={{ color: 'var(--text-secondary)', fontWeight: 500 }}>
+          Loading {characterId} data...
+        </div>
+      </div>
+    );
+  }
+
+  // Generate list based on active tab
+  const resolveDisplayList = TAB_FILTER[activeTab];
+  let displayList: Move[] = resolveDisplayList ? resolveDisplayList(characterData) : (characterData.movesList || []);
+
+  // Filter by search
+  if (searchQuery.trim()) {
+    const q = searchQuery.toLowerCase();
+    displayList = displayList.filter(m => m.name.toLowerCase().includes(q));
+  }
+
+  const selectedCount = selectedPlaylist.length;
+
+  return (
+    <div style={{
+      minHeight: '100vh',
+      padding: 'var(--space-xl)',
+      paddingBottom: selectedCount > 0 ? '120px' : 'var(--space-xl)',
+      position: 'relative',
+    }}>
+      {/* Theme toggle — top right */}
+      <div style={{
+        position: 'fixed',
+        top: '1.25rem',
+        right: '1.25rem',
+        zIndex: 200,
+      }}>
+        <ThemeToggle />
+      </div>
+
+      <div style={{
+        position: 'sticky',
+        top: 0,
+        zIndex: 50,
+        backgroundColor: 'var(--bg-primary)',
+        margin: 'calc(-1 * var(--space-xl)) calc(-1 * var(--space-xl)) var(--space-xl)',
+        padding: 'var(--space-xl) var(--space-xl) var(--space-md)',
+        borderBottom: '1px solid var(--border-subtle)',
+        transition: 'background-color 0.4s ease',
+      }}>
+        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        {/* Breadcrumb nav */}
+      <nav style={{
+        display: 'flex',
+        alignItems: 'center',
+        gap: '0.75rem',
+        marginBottom: 'var(--space-lg)',
+        animation: 'fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both',
+        flexWrap: 'wrap',
+      }}>
+        <button
+          id="move-list-back"
+          onClick={onBack}
+          style={{
+            background: 'var(--bg-input)',
+            border: '1px solid var(--border-subtle)',
+            color: 'var(--text-secondary)',
+            fontSize: '0.9rem',
+            cursor: 'pointer',
+            padding: '0.5rem 1.1rem',
+            borderRadius: 'var(--radius-md)',
+            transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+            fontFamily: 'inherit',
+            fontWeight: 500,
+          }}
+          onMouseOver={e => {
+            e.currentTarget.style.color = 'var(--text-primary)';
+            e.currentTarget.style.background = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)';
+            e.currentTarget.style.transform = 'translateX(-2px)';
+          }}
+          onMouseOut={e => {
+            e.currentTarget.style.color = 'var(--text-secondary)';
+            e.currentTarget.style.background = 'var(--bg-input)';
+            e.currentTarget.style.transform = 'translateX(0)';
+          }}
+        >
+          ← Back
+        </button>
+        <span style={{ color: 'var(--text-muted)' }}>·</span>
+        <button
+          onClick={onHome}
+          title="Home"
+          style={{
+            background: 'transparent',
+            border: 'none',
+            color: 'var(--text-secondary)',
+            cursor: 'pointer',
+            padding: '0.25rem',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            transition: 'all 0.2s ease',
+          }}
+          onMouseOver={e => {
+            e.currentTarget.style.color = 'var(--accent-indigo)';
+            e.currentTarget.style.transform = 'scale(1.15)';
+          }}
+          onMouseOut={e => {
+            e.currentTarget.style.color = 'var(--text-secondary)';
+            e.currentTarget.style.transform = 'scale(1)';
+          }}
+        >
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+            <polyline points="9 22 9 12 15 12 15 22"></polyline>
+          </svg>
+        </button>
+        <span style={{ color: 'var(--text-muted)' }}>·</span>
+        <button 
+          onClick={onBack}
+          style={{ 
+            background: 'transparent',
+            border: 'none',
+            color: 'var(--text-secondary)', 
+            fontWeight: 500,
+            cursor: 'pointer',
+            padding: '2px 4px',
+            fontFamily: 'inherit',
+            fontSize: 'inherit',
+            transition: 'color 0.2s',
+          }}
+          onMouseOver={e => e.currentTarget.style.color = 'var(--text-primary)'}
+          onMouseOut={e => e.currentTarget.style.color = 'var(--text-secondary)'}
+        >
+          {characterData.game}
+        </button>
+        <span style={{ color: 'var(--text-muted)' }}>›</span>
+        <button 
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          style={{ 
+            background: 'transparent',
+            border: 'none',
+            color: 'var(--text-secondary)', 
+            fontWeight: 500,
+            cursor: 'pointer',
+            padding: '2px 4px',
+            fontFamily: 'inherit',
+            fontSize: 'inherit',
+            transition: 'color 0.2s',
+          }}
+          onMouseOver={e => e.currentTarget.style.color = 'var(--text-primary)'}
+          onMouseOut={e => e.currentTarget.style.color = 'var(--text-secondary)'}
+          title="Back to Top"
+        >
+          {characterData.character}
+        </button>
+        <span style={{ color: 'var(--text-muted)' }}>›</span>
+        <span style={{ color: 'var(--text-primary)', fontWeight: 700 }}>MOVES</span>
+      </nav>
+
+      {/* Toolbar: tabs + controller + search */}
+      <div style={{
+        display: 'flex',
+        flexDirection: 'column',
+        gap: 'var(--space-md)',
+        animation: 'fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both',
+      }}>
+        {/* Tabs */}
+        <div style={{
+          display: 'flex',
+          gap: '0.3rem',
+          background: 'var(--bg-input)',
+          padding: '5px',
+          borderRadius: 'var(--radius-lg)',
+          border: '1px solid var(--border-subtle)',
+          overflow: 'auto',
+        }}>
+          {game.tabs.map(tab => {
+            const isEmpty = tabCounts[tab] === 0;
+            const isActive = activeTab === tab;
+            return (
+              <button
+                key={tab}
+                id={`tab-${tab.replace(/\s+/g, '-').toLowerCase()}`}
+                onClick={() => !isEmpty && setActiveTab(tab)}
+                title={isEmpty ? `No ${tab} data available` : undefined}
+                style={{
+                  padding: '0.6rem 1.25rem',
+                  background: isActive
+                    ? isDark ? 'rgba(99, 102, 241, 0.15)' : 'rgba(99, 102, 241, 0.12)'
+                    : 'transparent',
+                  border: isActive
+                    ? '1px solid rgba(99, 102, 241, 0.3)'
+                    : '1px solid transparent',
+                  color: isEmpty
+                    ? 'var(--text-muted)'
+                    : isActive ? (isDark ? '#a5b4fc' : '#4f46e5') : 'var(--text-tertiary)',
+                  borderRadius: 'var(--radius-md)',
+                  fontSize: '0.85rem',
+                  fontWeight: isActive ? 700 : 500,
+                  cursor: isEmpty ? 'not-allowed' : 'pointer',
+                  transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                  fontFamily: 'inherit',
+                  whiteSpace: 'nowrap',
+                  opacity: isEmpty ? 0.4 : 1,
+                  position: 'relative',
+                }}
+                onMouseOver={e => {
+                  if (!isActive && !isEmpty) {
+                    e.currentTarget.style.background = isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.04)';
+                    e.currentTarget.style.color = 'var(--text-primary)';
+                  }
+                }}
+                onMouseOut={e => {
+                  if (!isActive && !isEmpty) {
+                    e.currentTarget.style.background = 'transparent';
+                    e.currentTarget.style.color = 'var(--text-tertiary)';
+                  }
+                }}
+              >
+                {tab}
+                {isEmpty && (
+                  <span style={{
+                    position: 'absolute',
+                    top: '-1px',
+                    right: '-1px',
+                    width: '6px',
+                    height: '6px',
+                    borderRadius: '50%',
+                    background: 'var(--text-muted)',
+                  }} />
+                )}
+                {!isEmpty && (
+                  <span style={{
+                    marginLeft: '0.35rem',
+                    fontSize: '0.65rem',
+                    opacity: 0.6,
+                    fontWeight: 600,
+                  }}>
+                    {tabCounts[tab]}
+                  </span>
+                )}
+              </button>
+            );
+          })}
+        </div>
+
+        {/* Search + controller */}
+        <div style={{ display: 'flex', gap: 'var(--space-sm)', alignItems: 'center', flexWrap: 'wrap' }}>
+          <div style={{ flex: 1, minWidth: '200px', position: 'relative' }}>
+            <span style={{
+              position: 'absolute',
+              left: '14px',
+              top: '50%',
+              transform: 'translateY(-50%)',
+              color: 'var(--text-tertiary)',
+              fontSize: '0.9rem',
+              pointerEvents: 'none',
+            }}>🔍</span>
+            <input
+              id="move-search"
+              type="text"
+              placeholder="Search moves..."
+              value={searchQuery}
+              onChange={e => setSearchQuery(e.target.value)}
+              style={{
+                width: '100%',
+                padding: '0.65rem 0.75rem 0.65rem 2.4rem',
+                background: 'var(--bg-input)',
+                border: '1px solid var(--border-subtle)',
+                borderRadius: 'var(--radius-lg)',
+                color: 'var(--text-primary)',
+                fontSize: '0.9rem',
+                fontFamily: 'inherit',
+                outline: 'none',
+                transition: 'all 0.25s ease',
+              }}
+              onFocus={e => {
+                e.currentTarget.style.borderColor = 'var(--accent-indigo)';
+                e.currentTarget.style.boxShadow = '0 0 0 3px rgba(99, 102, 241, 0.12)';
+              }}
+              onBlur={e => {
+                e.currentTarget.style.borderColor = 'var(--border-subtle)';
+                e.currentTarget.style.boxShadow = 'none';
+              }}
+            />
+          </div>
+
+          <select
+            id="controller-select"
+            value={controller}
+            onChange={e => setController(e.target.value as ControllerType)}
+            style={{
+              padding: '0.65rem 0.85rem',
+              background: 'var(--bg-input)',
+              border: '1px solid var(--border-subtle)',
+              borderRadius: 'var(--radius-lg)',
+              color: 'var(--text-primary)',
+              fontSize: '0.85rem',
+              fontFamily: 'inherit',
+              cursor: 'pointer',
+              outline: 'none',
+              transition: 'border-color 0.2s',
+            }}
+          >
+            <option value="playstation" style={{ background: 'var(--option-bg)' }}>🎮 PlayStation</option>
+            <option value="xbox" style={{ background: 'var(--option-bg)' }}>🎮 Xbox</option>
+            <option value="switch" style={{ background: 'var(--option-bg)' }}>🎮 Switch</option>
+            <option value="arcade" style={{ background: 'var(--option-bg)' }}>🕹️ Arcade</option>
+          </select>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      {/* Move list */}
+      <main style={{ maxWidth: '1200px', width: '100%', margin: '0 auto' }}>
+        {displayList.length === 0 ? (
+          <div style={{
+            textAlign: 'center',
+            padding: 'var(--space-3xl) var(--space-xl)',
+            color: 'var(--text-tertiary)',
+          }}>
+            <div style={{ fontSize: '2.5rem', marginBottom: 'var(--space-md)' }}>🎯</div>
+            <p style={{ fontWeight: 500 }}>
+              {searchQuery ? `No moves matching "${searchQuery}"` : `No data available for ${activeTab}.`}
+            </p>
+          </div>
+        ) : (
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+            {displayList.map((move, idx) => {
+              const isSelected = selectedPlaylist.some(m => m.id === move.id);
+              const typeColor = TYPE_COLORS[move.type] || '#6366f1';
+              const typeLabel = TYPE_LABELS[move.type] || move.type.toUpperCase();
+
+              return (
+                <div
+                  key={move.id}
+                  id={`move-${move.id}`}
+                  onClick={() => onToggleMove(move)}
+                  style={{
+                    padding: '1rem 1.25rem',
+                    background: isSelected
+                      ? `linear-gradient(135deg, ${typeColor}${isDark ? '12' : '10'}, ${typeColor}${isDark ? '08' : '08'})`
+                      : 'var(--bg-card)',
+                    borderRadius: 'var(--radius-lg)',
+                    display: 'flex',
+                    justifyContent: 'space-between',
+                    alignItems: 'center',
+                    cursor: 'pointer',
+                    border: isSelected
+                      ? `1px solid ${typeColor}40`
+                      : '1px solid var(--border-subtle)',
+                    transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
+                    animation: `fadeInUp 0.3s ease ${Math.min(idx * 20, 300)}ms both`,
+                    gap: '1rem',
+                    backdropFilter: 'blur(6px)',
+                    boxShadow: isDark ? 'none' : 'var(--shadow-xs)',
+                  }}
+                  onMouseOver={e => {
+                    if (!isSelected) {
+                      e.currentTarget.style.background = 'var(--bg-card-hover)';
+                      e.currentTarget.style.borderColor = 'var(--border-medium)';
+                    }
+                    e.currentTarget.style.transform = 'translateX(6px)';
+                    e.currentTarget.style.boxShadow = `var(--shadow-sm)`;
+                  }}
+                  onMouseOut={e => {
+                    if (!isSelected) {
+                      e.currentTarget.style.background = 'var(--bg-card)';
+                      e.currentTarget.style.borderColor = 'var(--border-subtle)';
+                    }
+                    e.currentTarget.style.transform = 'translateX(0)';
+                    e.currentTarget.style.boxShadow = 'none';
+                  }}
+                >
+                  {/* Left: checkbox + info */}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flex: 1, minWidth: 0 }}>
+                    {/* Checkbox */}
+                    <div style={{
+                      width: '24px',
+                      height: '24px',
+                      borderRadius: 'var(--radius-sm)',
+                      border: isSelected ? 'none' : `2px solid var(--text-muted)`,
+                      background: isSelected
+                        ? `linear-gradient(135deg, ${typeColor}, ${typeColor}cc)`
+                        : 'transparent',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: '#fff',
+                      fontSize: '0.7rem',
+                      fontWeight: 800,
+                      transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                      flexShrink: 0,
+                      boxShadow: isSelected ? `0 2px 8px ${typeColor}40` : 'none',
+                    }}>
+                      {isSelected && '✓'}
+                    </div>
+
+                    {/* Move info */}
+                    <div style={{ minWidth: 0, flex: 1 }}>
+                      <div style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.6rem',
+                        flexWrap: 'wrap',
+                      }}>
+                        <span style={{
+                          fontSize: '1.05rem',
+                          fontWeight: 700,
+                          color: isSelected ? 'var(--text-primary)' : (isDark ? '#d0d0e0' : '#2a2a40'),
+                          letterSpacing: '-0.01em',
+                        }}>
+                          {move.name}
+                        </span>
+                        <span style={{
+                          fontSize: '0.6rem',
+                          fontWeight: 700,
+                          padding: '0.2rem 0.55rem',
+                          borderRadius: 'var(--radius-full)',
+                          background: `${typeColor}18`,
+                          color: typeColor,
+                          letterSpacing: '0.08em',
+                          textTransform: 'uppercase',
+                        }}>
+                          {typeLabel}
+                        </span>
+                      </div>
+
+                      {/* Input glyphs inline */}
+                      <div style={{ marginTop: '0.4rem' }}>
+                        <GlyphSequence inputs={move.inputs} controller={controller} />
+                      </div>
+                    </div>
+                  </div>
+
+                  {/* Right: frame data */}
+                  {move.frameData && (move.frameData.startup || move.frameData.active) && (
+                    <div style={{
+                      display: 'flex',
+                      gap: '1rem',
+                      fontFamily: "'JetBrains Mono', monospace",
+                      fontSize: '0.75rem',
+                      flexShrink: 0,
+                    }}>
+                      {move.frameData.startup && (
+                        <div style={{
+                          display: 'flex',
+                          flexDirection: 'column',
+                          alignItems: 'center',
+                          gap: '0.15rem',
+                        }}>
+                          <span style={{
+                            fontSize: '0.6rem',
+                            fontWeight: 600,
+                            color: 'var(--text-tertiary)',
+                            textTransform: 'uppercase',
+                            letterSpacing: '0.05em',
+                          }}>SU</span>
+                          <span style={{
+                            color: isSelected ? typeColor : 'var(--text-secondary)',
+                            fontWeight: 700,
+                          }}>
+                            {move.frameData.startup}
+                          </span>
+                        </div>
+                      )}
+                      {move.frameData.active && (
+                        <div style={{
+                          display: 'flex',
+                          flexDirection: 'column',
+                          alignItems: 'center',
+                          gap: '0.15rem',
+                        }}>
+                          <span style={{
+                            fontSize: '0.6rem',
+                            fontWeight: 600,
+                            color: 'var(--text-tertiary)',
+                            textTransform: 'uppercase',
+                            letterSpacing: '0.05em',
+                          }}>ACT</span>
+                          <span style={{
+                            color: isSelected ? typeColor : 'var(--text-secondary)',
+                            fontWeight: 700,
+                          }}>
+                            {move.frameData.active.split('-')[0]}-{move.frameData.active.split('-')[1] || ''}
+                          </span>
+                        </div>
+                      )}
+                      {move.frameData.advantage && (
+                        <div style={{
+                          display: 'flex',
+                          flexDirection: 'column',
+                          alignItems: 'center',
+                          gap: '0.15rem',
+                        }}>
+                          <span style={{
+                            fontSize: '0.6rem',
+                            fontWeight: 600,
+                            color: 'var(--text-tertiary)',
+                            textTransform: 'uppercase',
+                            letterSpacing: '0.05em',
+                          }}>ADV</span>
+                          <span style={{
+                            color: move.frameData.advantage === 'D' ? 'var(--accent-rose)'
+                              : parseInt(move.frameData.advantage) >= 0 ? 'var(--accent-emerald)'
+                              : 'var(--accent-rose)',
+                            fontWeight: 700,
+                          }}>
+                            {move.frameData.advantage === 'D' ? 'KD' : (parseInt(move.frameData.advantage) > 0 ? '+' : '') + move.frameData.advantage}
+                          </span>
+                        </div>
+                      )}
+                    </div>
+                  )}
+                </div>
+              );
+            })}
+          </div>
+        )}
+      </main>
+
+      {/* Floating action bar */}
+      {selectedCount > 0 && (
+        <div
+          id="floating-action-bar"
+          style={{
+            position: 'fixed',
+            bottom: 'var(--space-xl)',
+            left: '50%',
+            transform: 'translateX(-50%)',
+            background: isDark ? 'rgba(15, 15, 30, 0.92)' : 'rgba(255, 255, 255, 0.92)',
+            backdropFilter: 'blur(24px) saturate(200%)',
+            WebkitBackdropFilter: 'blur(24px) saturate(200%)',
+            padding: '0.9rem 1.75rem',
+            borderRadius: 'var(--radius-2xl)',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '1.5rem',
+            boxShadow: `var(--shadow-lg), 0 0 0 1px ${isDark ? 'rgba(99, 102, 241, 0.2)' : 'rgba(99, 102, 241, 0.15)'}`,
+            border: `1px solid ${isDark ? 'rgba(99, 102, 241, 0.25)' : 'rgba(99, 102, 241, 0.2)'}`,
+            zIndex: 100,
+            animation: 'slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both',
+          }}
+        >
+          {/* Count badge */}
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            fontWeight: 600,
+            color: 'var(--text-secondary)',
+            fontSize: '0.9rem',
+          }}>
+            <span style={{
+              width: '30px',
+              height: '30px',
+              borderRadius: '50%',
+              background: 'linear-gradient(135deg, var(--accent-indigo), var(--accent-purple))',
+              color: '#fff',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              fontSize: '0.8rem',
+              fontWeight: 800,
+              boxShadow: '0 2px 8px rgba(99, 102, 241, 0.3)',
+            }}>
+              {selectedCount}
+            </span>
+            <span>selected</span>
+          </div>
+
+          {/* Launch button */}
+          <button
+            id="launch-main-screen"
+            onClick={onLaunchMainScreen}
+            style={{
+              background: 'linear-gradient(135deg, var(--accent-indigo), var(--accent-purple))',
+              color: '#fff',
+              border: 'none',
+              padding: '0.7rem 1.75rem',
+              borderRadius: 'var(--radius-full)',
+              fontWeight: 700,
+              cursor: 'pointer',
+              fontSize: '0.9rem',
+              fontFamily: 'inherit',
+              transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
+              boxShadow: '0 4px 18px rgba(99, 102, 241, 0.35)',
+              display: 'flex',
+              alignItems: 'center',
+              gap: '0.4rem',
+            }}
+            onMouseOver={e => {
+              e.currentTarget.style.transform = 'scale(1.06)';
+              e.currentTarget.style.boxShadow = '0 8px 28px rgba(99, 102, 241, 0.45)';
+            }}
+            onMouseOut={e => {
+              e.currentTarget.style.transform = 'scale(1)';
+              e.currentTarget.style.boxShadow = '0 4px 18px rgba(99, 102, 241, 0.35)';
+            }}
+          >
+            Launch GameGlance
+            <span style={{ fontSize: '1.1rem' }}>→</span>
+          </button>
+        </div>
+      )}
+
+      {/* Back to Top */}
+      {showScrollTop && (
+        <button
+          onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          style={{
+            position: 'fixed',
+            bottom: selectedCount > 0 ? '100px' : '30px',
+            right: '30px',
+            width: '48px',
+            height: '48px',
+            borderRadius: '50%',
+            background: isDark 
+              ? 'linear-gradient(135deg, rgba(20,20,40,0.9), rgba(30,30,55,0.9))'
+              : 'linear-gradient(135deg, rgba(255,255,255,0.95), rgba(245,245,250,0.95))',
+            color: 'var(--text-primary)',
+            border: '1px solid var(--border-subtle)',
+            boxShadow: 'var(--shadow-md)',
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontSize: '1.2rem',
+            zIndex: 90,
+            transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+            animation: 'fadeInUp 0.3s ease both',
+            backdropFilter: 'blur(12px)',
+          }}
+          onMouseOver={e => {
+            e.currentTarget.style.transform = 'translateY(-4px) scale(1.08)';
+            e.currentTarget.style.boxShadow = 'var(--shadow-lg)';
+            e.currentTarget.style.borderColor = 'var(--accent-indigo)';
+          }}
+          onMouseOut={e => {
+            e.currentTarget.style.transform = 'translateY(0) scale(1)';
+            e.currentTarget.style.boxShadow = 'var(--shadow-md)';
+            e.currentTarget.style.borderColor = 'var(--border-subtle)';
+          }}
+        >
+          ↑
+        </button>
+      )}
+    </div>
+  );
+};
