@@ -25,15 +25,6 @@ const TYPE_COLORS: Record<string, string> = {
   common: '#10b981',
 };
 
-const TYPE_LABELS: Record<string, string> = {
-  normal: 'NRM',
-  special: 'SPL',
-  super: 'SUP',
-  throw: 'THR',
-  unique: 'UNQ',
-  common: 'COM',
-};
-
 export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, onToggleMove, onLaunchMainScreen, onBack, onHome }) => {
   const [characterData, setCharacterData] = useState<CharacterExport | null>(null);
   const [orderedTabs, setOrderedTabs] = useState<string[]>([]);
@@ -117,6 +108,21 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     return counts;
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [characterData, game.tabs]);
+
+  // Sort empty tabs to the end automatically when data loads
+  useEffect(() => {
+    if (Object.keys(tabCounts).length === 0) return;
+    setOrderedTabs(prev => {
+      const nonEmpty = prev.filter(t => (tabCounts[t] || 0) > 0);
+      const empty = prev.filter(t => (tabCounts[t] || 0) === 0);
+      const mapped = [...nonEmpty, ...empty];
+      // Check if order actually needs changing to prevent loops
+      if (mapped.some((t, i) => t !== prev[i])) {
+        return mapped;
+      }
+      return prev;
+    });
+  }, [tabCounts]);
 
   const handleDragStart = (e: React.DragEvent, index: number) => {
     e.dataTransfer.setData('tab_index', index.toString());
@@ -231,7 +237,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
       <AmbientMesh 
         colors={isDark 
           ? ['rgba(99, 102, 241, 0.08)', 'rgba(34, 211, 238, 0.08)', 'rgba(245, 158, 11, 0.05)'] 
-          : ['rgba(99, 102, 241, 0.05)', 'rgba(34, 211, 238, 0.05)', 'rgba(245, 158, 11, 0.03)']} 
+          : ['rgba(99, 102, 241, 0.15)', 'rgba(34, 211, 238, 0.15)', 'rgba(245, 158, 11, 0.12)']} 
         speed={0.6} 
       />
 
@@ -403,33 +409,68 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                 }}
                 title={isEmpty ? `No ${tab} data available` : `Drag to reorder. Click to jump.`}
                 style={{
-                  padding: '0.6rem 1.25rem',
-                  background: 'transparent',
-                  border: '1px solid transparent',
-                  color: isEmpty ? 'var(--text-muted)' : 'var(--text-tertiary)',
-                  borderRadius: 'var(--radius-md)',
+                  padding: '0.5rem 1.25rem',
+                  background: isDark ? 'rgba(255,255,255,0.08)' : 'rgba(255,255,255,0.8)',
+                  border: '1px solid var(--border-medium)',
+                  color: isEmpty ? 'var(--text-muted)' : 'var(--text-secondary)',
+                  borderRadius: 'var(--radius-full)',
                   fontSize: '0.85rem',
-                  fontWeight: 500,
-                  cursor: isEmpty ? 'not-allowed' : 'pointer',
+                  fontWeight: 600,
+                  cursor: isEmpty ? 'not-allowed' : 'grab',
                   transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
                   fontFamily: 'inherit',
                   whiteSpace: 'nowrap',
                   opacity: isEmpty ? 0.4 : 1,
                   position: 'relative',
+                  display: 'flex',
+                  alignItems: 'center',
+                  gap: '0.35rem',
+                  boxShadow: 'var(--shadow-xs)',
                 }}
                 onMouseOver={e => {
                   if (!isEmpty) {
-                    e.currentTarget.style.background = isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.04)';
+                    e.currentTarget.style.background = isDark ? 'rgba(255,255,255,0.12)' : 'rgba(255,255,255,1)';
                     e.currentTarget.style.color = 'var(--text-primary)';
+                    e.currentTarget.style.borderColor = 'var(--accent-indigo)';
+                    e.currentTarget.style.transform = 'translateY(-1px)';
+                    e.currentTarget.style.boxShadow = 'var(--shadow-sm)';
                   }
                 }}
                 onMouseOut={e => {
                   if (!isEmpty) {
-                    e.currentTarget.style.background = 'transparent';
-                    e.currentTarget.style.color = 'var(--text-tertiary)';
+                    e.currentTarget.style.background = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(255,255,255,0.8)';
+                    e.currentTarget.style.color = 'var(--text-secondary)';
+                    e.currentTarget.style.borderColor = 'var(--border-medium)';
+                    e.currentTarget.style.transform = 'translateY(0)';
+                    e.currentTarget.style.boxShadow = 'var(--shadow-xs)';
                   }
                 }}
+                onMouseDown={e => {
+                  if (!isEmpty) e.currentTarget.style.cursor = 'grabbing';
+                }}
+                onMouseUp={e => {
+                  if (!isEmpty) e.currentTarget.style.cursor = 'grab';
+                }}
               >
+                {!isEmpty && (
+                  <span style={{
+                    opacity: 0.3,
+                    fontSize: '1rem',
+                    marginRight: '2px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    cursor: 'inherit',
+                  }}>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                      <line x1="8" y1="6" x2="8" y2="6"></line>
+                      <line x1="8" y1="12" x2="8" y2="12"></line>
+                      <line x1="8" y1="18" x2="8" y2="18"></line>
+                      <line x1="16" y1="6" x2="16" y2="6"></line>
+                      <line x1="16" y1="12" x2="16" y2="12"></line>
+                      <line x1="16" y1="18" x2="16" y2="18"></line>
+                    </svg>
+                  </span>
+                )}
                 {tab}
                 {isEmpty && (
                   <span style={{
@@ -444,10 +485,13 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                 )}
                 {!isEmpty && (
                   <span style={{
-                    marginLeft: '0.35rem',
+                    marginLeft: '0.1rem',
                     fontSize: '0.65rem',
                     opacity: 0.6,
-                    fontWeight: 600,
+                    fontWeight: 700,
+                    background: 'var(--bg-badge)',
+                    padding: '0.1rem 0.4rem',
+                    borderRadius: 'var(--radius-full)',
                   }}>
                     {tabCounts[tab]}
                   </span>
@@ -570,7 +614,6 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                     {displayList.map((move, idx) => {
               const isSelected = selectedPlaylist.some(m => m.id === move.id);
               const typeColor = TYPE_COLORS[move.type] || '#6366f1';
-              const typeLabel = TYPE_LABELS[move.type] || move.type.toUpperCase();
 
               return (
                 <div
@@ -652,18 +695,6 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                           letterSpacing: '-0.01em',
                         }}>
                           {move.name}
-                        </span>
-                        <span style={{
-                          fontSize: '0.6rem',
-                          fontWeight: 700,
-                          padding: '0.2rem 0.55rem',
-                          borderRadius: 'var(--radius-full)',
-                          background: `${typeColor}18`,
-                          color: typeColor,
-                          letterSpacing: '0.08em',
-                          textTransform: 'uppercase',
-                        }}>
-                          {typeLabel}
                         </span>
                       </div>
 

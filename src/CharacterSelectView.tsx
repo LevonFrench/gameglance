@@ -71,7 +71,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, onSelectCharacter, 
       <AmbientMesh 
         colors={isDark 
           ? ['rgba(99, 102, 241, 0.15)', 'rgba(34, 211, 238, 0.12)', 'rgba(245, 158, 11, 0.1)'] 
-          : ['rgba(99, 102, 241, 0.08)', 'rgba(34, 211, 238, 0.06)', 'rgba(245, 158, 11, 0.05)']} 
+          : ['rgba(99, 102, 241, 0.18)', 'rgba(34, 211, 238, 0.15)', 'rgba(245, 158, 11, 0.14)']} 
         speed={0.8} 
       />
 

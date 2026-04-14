@@ -57,18 +57,18 @@ const renderDirectionalSVG = (label: string, large: boolean, isDark: boolean) =>
 
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" style={{ transform: `rotate(${deg}deg)` }}>
-      <circle cx="12" cy="12" r="10.5" fill={isDark ? '#161625' : '#e8e8f0'} stroke={isDark ? '#2a2a40' : '#c0c0d0'} strokeWidth="1.5" />
+      <circle cx="12" cy="12" r="10.5" fill={isDark ? '#161625' : '#1a1a2e'} stroke={isDark ? '#2a2a40' : '#2a2a40'} strokeWidth="1.5" />
       <path
         d="M12 7 L17 12 L12 17"
         fill="none"
-        stroke={isDark ? '#e0e0f0' : '#2a2a3e'}
+        stroke={'#e0e0f0'}
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <line
         x1="7" y1="12" x2="16" y2="12"
-        stroke={isDark ? '#e0e0f0' : '#2a2a3e'}
+        stroke={'#e0e0f0'}
         strokeWidth="2.5"
         strokeLinecap="round"
       />
@@ -208,7 +208,7 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
             style={{
               width: `${btnSize}px`,
               height: `${btnSize}px`,
-              backgroundColor: isPlayStation ? (isDark ? '#161625' : '#e0e0ed') : iconColor,
+              backgroundColor: isPlayStation ? (isDark ? '#161625' : '#1a1a2e') : iconColor,
               borderRadius: '50%',
               color: isPlayStation ? iconColor : '#fff',
               fontWeight: 900,
@@ -216,7 +216,7 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
               boxShadow: `
                 0 3px 6px rgba(0,0,0,${isDark ? '0.4' : '0.15'}),
                 inset 0 -3px 0 rgba(0,0,0,0.2),
-                inset 0 2px 0 rgba(255,255,255,${isDark ? '0.06' : '0.3'}),
+                inset 0 2px 0 rgba(255,255,255,${isDark ? '0.06' : (isPlayStation ? '0.08' : '0.3')}),
                 0 0 0 1.5px ${isPlayStation ? iconColor + '25' : 'rgba(0,0,0,0.2)'}
               `,
               display: 'flex',

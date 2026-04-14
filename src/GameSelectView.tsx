@@ -154,7 +154,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
       <AmbientMesh 
         colors={isDark 
           ? ['rgba(99, 102, 241, 0.15)', 'rgba(168, 85, 247, 0.12)', 'rgba(236, 72, 153, 0.1)'] 
-          : ['rgba(99, 102, 241, 0.08)', 'rgba(168, 85, 247, 0.06)', 'rgba(236, 72, 153, 0.05)']} 
+          : ['rgba(99, 102, 241, 0.20)', 'rgba(168, 85, 247, 0.18)', 'rgba(236, 72, 153, 0.15)']} 
         speed={1.0} 
       />
 
