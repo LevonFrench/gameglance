@@ -14,10 +14,12 @@ function App() {
   const [selectedCharacter, setSelectedCharacter] = useState<string | null>(null);
   const [selectedPlaylist, setSelectedPlaylist] = useState<Move[]>([]);
   const [controller, setController] = useState<ControllerType>('playstation');
+  const [returningFromMoveList, setReturningFromMoveList] = useState(false);
 
   // Navigation handlers
   const handleSelectGame = (game: GameDefinition) => {
     setSelectedGame(game);
+    setReturningFromMoveList(false);
     setCurrentView('char_select');
   };
 
@@ -59,6 +61,7 @@ function App() {
       viewComponent = <CharacterSelectView 
          game={selectedGame} 
          controller={controller}
+         disableInitialAnimation={returningFromMoveList}
          onSetController={setController}
          onSelectCharacter={handleSelectCharacter} 
          onBack={() => setCurrentView('game_select')} 
@@ -78,7 +81,10 @@ function App() {
          onSetController={setController}
          onToggleMove={handleToggleMove}
          onLaunchMainScreen={handleLaunchMainScreen}
-         onBack={() => setCurrentView('char_select')}
+         onBack={() => {
+           setReturningFromMoveList(true);
+           setCurrentView('char_select');
+         }}
          onHome={() => setCurrentView('game_select')}
       />;
       break;

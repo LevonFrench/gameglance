@@ -9,13 +9,14 @@ import type { ControllerType } from './glyphMap';
 interface Props {
   game: GameDefinition;
   controller: ControllerType;
+  disableInitialAnimation?: boolean;
   onSetController: (c: ControllerType) => void;
   onSelectCharacter: (characterId: string) => void;
   onBack: () => void;
   onHome: () => void;
 }
 
-export const CharacterSelectView: React.FC<Props> = ({ game, controller, onSetController, onSelectCharacter, onBack, onHome }) => {
+export const CharacterSelectView: React.FC<Props> = ({ game, controller, disableInitialAnimation, onSetController, onSelectCharacter, onBack, onHome }) => {
   const [favorites, setFavorites] = useState<string[]>([]);
   const { theme } = useTheme();
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
@@ -59,9 +60,6 @@ export const CharacterSelectView: React.FC<Props> = ({ game, controller, onSetCo
   });
 
   const isDark = theme === 'dark';
-  const headingGradient = isDark
-    ? 'linear-gradient(135deg, #f0f0f8 0%, #9090ae 100%)'
-    : 'linear-gradient(135deg, #1a1a2e 0%, #555570 100%)';
 
   return (
     <div style={{
@@ -96,7 +94,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, controller, onSetCo
         alignItems: 'center',
         gap: '0.75rem',
         marginBottom: 'var(--space-lg)',
-        animation: 'fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both',
+        animation: disableInitialAnimation ? 'none' : 'fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both',
       }}>
         <button
           id="char-select-back"
@@ -224,17 +222,13 @@ export const CharacterSelectView: React.FC<Props> = ({ game, controller, onSetCo
       {/* Section header */}
       <header style={{
         marginBottom: 'var(--space-2xl)',
-        animation: 'fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both',
+        animation: disableInitialAnimation ? 'none' : 'fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both',
       }}>
         <h1 style={{
           fontSize: 'clamp(2rem, 4vw, 3rem)',
           fontWeight: 900,
           margin: 0,
-          background: headingGradient,
-          WebkitBackgroundClip: 'text',
-          backgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          color: 'transparent',
+          color: isDark ? '#f0f0f8' : '#1a1a2e',
         }}>
           Character Select
         </h1>
@@ -285,7 +279,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, controller, onSetCo
                 overflow: 'hidden',
                 color: 'var(--text-primary)',
                 opacity: isComingSoon ? 0.4 : 1,
-                animation: `fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) ${150 + index * 60}ms both`,
+                animation: disableInitialAnimation ? 'none' : `fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) ${150 + index * 60}ms both`,
                 fontFamily: 'inherit',
                 textAlign: 'center',
                 backdropFilter: 'blur(8px)',
