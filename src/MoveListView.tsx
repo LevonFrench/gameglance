@@ -4,6 +4,7 @@ import { GlyphSequence } from './GlyphSequence';
 import type { ControllerType } from './glyphMap';
 import { ThemeToggle } from './ThemeToggle';
 import { useTheme } from './ThemeContext';
+import { AmbientMesh } from './AmbientMesh';
 
 interface Props {
   game: GameDefinition;
@@ -35,7 +36,7 @@ const TYPE_LABELS: Record<string, string> = {
 
 export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, onToggleMove, onLaunchMainScreen, onBack, onHome }) => {
   const [characterData, setCharacterData] = useState<CharacterExport | null>(null);
-  const [activeTab, setActiveTab] = useState<string>(game.tabs.find(t => t.toLowerCase() === 'special moves') || game.tabs[0] || 'Moves');
+  const [orderedTabs, setOrderedTabs] = useState<string[]>([]);
   const [loadingError, setLoadingError] = useState<string>('');
   const [controller, setController] = useState<ControllerType>('playstation');
   const [searchQuery, setSearchQuery] = useState('');
@@ -53,8 +54,28 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
   }, []);
 
   useEffect(() => {
+    const stored = localStorage.getItem('fgc_tab_order');
+    if (stored) {
+      try {
+        const pref = JSON.parse(stored);
+        const sorted = [...game.tabs].sort((a,b) => {
+          let idxA = pref.indexOf(a);
+          let idxB = pref.indexOf(b);
+          if (idxA === -1) idxA = 999;
+          if (idxB === -1) idxB = 999;
+          return idxA - idxB;
+        });
+        setOrderedTabs(sorted);
+      } catch (e) {
+        setOrderedTabs(game.tabs);
+      }
+    } else {
+      setOrderedTabs(game.tabs);
+    }
+  }, [game.tabs]);
+
+  useEffect(() => {
     window.scrollTo(0, 0);
-    setActiveTab(game.tabs.find(t => t.toLowerCase().includes('special')) || game.tabs[0] || 'Moves');
     setCharacterData(null);
     setLoadingError('');
     fetch(`/data/${game.id}/${characterId}.json`)
@@ -97,16 +118,31 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [characterData, game.tabs]);
 
-  // Auto-select preferred non-empty tab whenever data loads
-  React.useEffect(() => {
-    if (!characterData) return;
-    let targetTab = game.tabs.find(t => t.toLowerCase().includes('special') && (tabCounts[t] ?? 0) > 0);
-    if (!targetTab) {
-      targetTab = game.tabs.find(t => (tabCounts[t] ?? 0) > 0);
-    }
-    if (targetTab) setActiveTab(targetTab);
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [characterData]);
+  const handleDragStart = (e: React.DragEvent, index: number) => {
+    e.dataTransfer.setData('tab_index', index.toString());
+  };
+
+  const handleDragOver = (e: React.DragEvent) => {
+    e.preventDefault();
+  };
+
+  const handleDrop = (e: React.DragEvent, toIndex: number) => {
+    e.preventDefault();
+    const fromIndex = parseInt(e.dataTransfer.getData('tab_index'), 10);
+    if (isNaN(fromIndex) || fromIndex === toIndex) return;
+    
+    const newTabs = [...orderedTabs];
+    const [movedTab] = newTabs.splice(fromIndex, 1);
+    newTabs.splice(toIndex, 0, movedTab);
+    
+    setOrderedTabs(newTabs);
+    
+    const stored = localStorage.getItem('fgc_tab_order');
+    let pref: string[] = [];
+    if (stored) { try { pref = JSON.parse(stored); } catch(e) {} }
+    const newPref = Array.from(new Set([...newTabs, ...pref]));
+    localStorage.setItem('fgc_tab_order', JSON.stringify(newPref));
+  };
 
   if (loadingError) {
     return (
@@ -180,15 +216,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     );
   }
 
-  // Generate list based on active tab
-  const resolveDisplayList = TAB_FILTER[activeTab];
-  let displayList: Move[] = resolveDisplayList ? resolveDisplayList(characterData) : (characterData.movesList || []);
-
-  // Filter by search
-  if (searchQuery.trim()) {
-    const q = searchQuery.toLowerCase();
-    displayList = displayList.filter(m => m.name.toLowerCase().includes(q));
-  }
+  // (Replaced displayList filtering with per-section filtering below)
 
   const selectedCount = selectedPlaylist.length;
 
@@ -199,6 +227,14 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
       paddingBottom: selectedCount > 0 ? '120px' : 'var(--space-xl)',
       position: 'relative',
     }}>
+      {/* Glowing Ambient Mesh Background */}
+      <AmbientMesh 
+        colors={isDark 
+          ? ['rgba(99, 102, 241, 0.08)', 'rgba(34, 211, 238, 0.08)', 'rgba(245, 158, 11, 0.05)'] 
+          : ['rgba(99, 102, 241, 0.05)', 'rgba(34, 211, 238, 0.05)', 'rgba(245, 158, 11, 0.03)']} 
+        speed={0.6} 
+      />
+
       {/* Theme toggle — top right */}
       <div style={{
         position: 'fixed',
@@ -346,29 +382,34 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           border: '1px solid var(--border-subtle)',
           overflow: 'auto',
         }}>
-          {game.tabs.map(tab => {
+          {orderedTabs.map((tab, idx) => {
             const isEmpty = tabCounts[tab] === 0;
-            const isActive = activeTab === tab;
             return (
               <button
                 key={tab}
                 id={`tab-${tab.replace(/\s+/g, '-').toLowerCase()}`}
-                onClick={() => !isEmpty && setActiveTab(tab)}
-                title={isEmpty ? `No ${tab} data available` : undefined}
+                draggable={!isEmpty}
+                onDragStart={(e) => handleDragStart(e, idx)}
+                onDragOver={handleDragOver}
+                onDrop={(e) => handleDrop(e, idx)}
+                onClick={() => {
+                  if (!isEmpty) {
+                    const section = document.getElementById(`section-${tab.replace(/\s+/g, '-').toLowerCase()}`);
+                    if (section) {
+                      const offsetTop = section.getBoundingClientRect().top + window.pageYOffset - 180;
+                      window.scrollTo({ top: offsetTop, behavior: 'smooth' });
+                    }
+                  }
+                }}
+                title={isEmpty ? `No ${tab} data available` : `Drag to reorder. Click to jump.`}
                 style={{
                   padding: '0.6rem 1.25rem',
-                  background: isActive
-                    ? isDark ? 'rgba(99, 102, 241, 0.15)' : 'rgba(99, 102, 241, 0.12)'
-                    : 'transparent',
-                  border: isActive
-                    ? '1px solid rgba(99, 102, 241, 0.3)'
-                    : '1px solid transparent',
-                  color: isEmpty
-                    ? 'var(--text-muted)'
-                    : isActive ? (isDark ? '#a5b4fc' : '#4f46e5') : 'var(--text-tertiary)',
+                  background: 'transparent',
+                  border: '1px solid transparent',
+                  color: isEmpty ? 'var(--text-muted)' : 'var(--text-tertiary)',
                   borderRadius: 'var(--radius-md)',
                   fontSize: '0.85rem',
-                  fontWeight: isActive ? 700 : 500,
+                  fontWeight: 500,
                   cursor: isEmpty ? 'not-allowed' : 'pointer',
                   transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
                   fontFamily: 'inherit',
@@ -377,13 +418,13 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                   position: 'relative',
                 }}
                 onMouseOver={e => {
-                  if (!isActive && !isEmpty) {
+                  if (!isEmpty) {
                     e.currentTarget.style.background = isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.04)';
                     e.currentTarget.style.color = 'var(--text-primary)';
                   }
                 }}
                 onMouseOut={e => {
-                  if (!isActive && !isEmpty) {
+                  if (!isEmpty) {
                     e.currentTarget.style.background = 'transparent';
                     e.currentTarget.style.color = 'var(--text-tertiary)';
                   }
@@ -486,7 +527,11 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
 
       {/* Move list */}
       <main style={{ maxWidth: '1200px', width: '100%', margin: '0 auto' }}>
-        {displayList.length === 0 ? (
+        {orderedTabs.every(tab => {
+          const list = TAB_FILTER[tab] ? TAB_FILTER[tab](characterData) : (characterData.movesList || []);
+          const filtered = searchQuery.trim() ? list.filter(m => m.name.toLowerCase().includes(searchQuery.toLowerCase())) : list;
+          return filtered.length === 0;
+        }) ? (
           <div style={{
             textAlign: 'center',
             padding: 'var(--space-3xl) var(--space-xl)',
@@ -494,12 +539,35 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           }}>
             <div style={{ fontSize: '2.5rem', marginBottom: 'var(--space-md)' }}>🎯</div>
             <p style={{ fontWeight: 500 }}>
-              {searchQuery ? `No moves matching "${searchQuery}"` : `No data available for ${activeTab}.`}
+              {searchQuery ? `No moves matching "${searchQuery}"` : `No data available.`}
             </p>
           </div>
         ) : (
-          <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
-            {displayList.map((move, idx) => {
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+            {orderedTabs.map(tab => {
+              let baseList = TAB_FILTER[tab] ? TAB_FILTER[tab](characterData) : (characterData.movesList || []);
+              if (tab === 'Moves' && game.id === 'mk1') {
+                 // some games don't categorize well, rely on everything if general tab
+              } else if (tab === 'Moves' && TAB_FILTER[tab]) {
+                 baseList = TAB_FILTER[tab](characterData);
+              }
+
+              const displayList = searchQuery.trim() ? baseList.filter(m => m.name.toLowerCase().includes(searchQuery.toLowerCase())) : baseList;
+              
+              if (displayList.length === 0) return null;
+
+              return (
+                <section key={tab} id={`section-${tab.replace(/\s+/g, '-').toLowerCase()}`}>
+                  <h2 style={{
+                    fontSize: '1.5rem',
+                    fontWeight: 800,
+                    marginBottom: '1rem',
+                    color: 'var(--text-primary)',
+                    borderBottom: '2px solid var(--border-subtle)',
+                    paddingBottom: '0.5rem',
+                  }}>{tab}</h2>
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                    {displayList.map((move, idx) => {
               const isSelected = selectedPlaylist.some(m => m.id === move.id);
               const typeColor = TYPE_COLORS[move.type] || '#6366f1';
               const typeLabel = TYPE_LABELS[move.type] || move.type.toUpperCase();
@@ -686,6 +754,10 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                     </div>
                   )}
                 </div>
+              );
+            })}
+                  </div>
+                </section>
               );
             })}
           </div>

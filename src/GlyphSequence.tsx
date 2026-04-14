@@ -14,6 +14,41 @@ const DIRECTION_ROTATIONS: Record<string, string> = {
   '←': '180', '↖': '225', '↑': '270', '↗': '315',
 };
 
+const NUMPAD_MAP: Record<string, string> = {
+  '1': 'down-back', '2': 'down', '3': 'down-forward',
+  '4': 'back', '6': 'forward', '7': 'up-back',
+  '8': 'up', '9': 'up-forward'
+};
+
+const tokenizeInputs = (inputs: string[]): string[] => {
+  const result: string[] = [];
+  for (const raw of inputs) {
+    if (['down', 'forward', 'back', 'up', 'down-forward', 'down-back', 'up-forward', 'up-back', '360', '720', '[Cancel]'].includes(raw)) {
+      result.push(raw);
+      continue;
+    }
+    const tokens = raw.split(/(\+| |,|~|\[Cancel\]|-|\/)/g).filter(Boolean);
+    for (let t of tokens) {
+      if (t === ' ') { result.push('[Cancel]'); continue; }
+      if (t === ',') { result.push('[Cancel]'); continue; }
+      if (t === '-') { result.push('[Cancel]'); continue; }
+      if (t === '~') { result.push('[Cancel]'); continue; }
+      if (t === '/') { result.push('or'); continue; }
+      if (t === '+') { result.push('+'); continue; }
+      if (t === '[Cancel]') { result.push(t); continue; }
+
+      if (/^[1-46-9]+$/.test(t)) {
+        for (const digit of t) {
+          result.push(NUMPAD_MAP[digit]);
+        }
+      } else {
+        result.push(t);
+      }
+    }
+  }
+  return result;
+};
+
 const renderDirectionalSVG = (label: string, large: boolean, isDark: boolean) => {
   const deg = DIRECTION_ROTATIONS[label];
   if (deg === undefined) return null;
@@ -45,6 +80,8 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
   const { theme } = useTheme();
   const isDark = theme === 'dark';
 
+  const expandedInputs = tokenizeInputs(inputs);
+
   return (
     <div style={{
       display: 'flex',
@@ -52,7 +89,7 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
       alignItems: 'center',
       flexWrap: 'wrap',
     }}>
-      {inputs.map((input, idx) => {
+      {expandedInputs.map((input, idx) => {
         // Cancel / link separator
         if (input === '[Cancel]') {
           return (

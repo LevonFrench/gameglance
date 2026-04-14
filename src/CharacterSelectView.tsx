@@ -3,6 +3,7 @@ import type { GameDefinition } from './types';
 import { ThemeToggle } from './ThemeToggle';
 import { useTheme } from './ThemeContext';
 import { getCardColor } from './palette';
+import { AmbientMesh } from './AmbientMesh';
 
 interface Props {
   game: GameDefinition;
@@ -66,18 +67,13 @@ export const CharacterSelectView: React.FC<Props> = ({ game, onSelectCharacter, 
       position: 'relative',
       overflow: 'clip',
     }}>
-      {/* Ambient orb */}
-      <div style={{
-        position: 'absolute',
-        top: '0',
-        right: '-5%',
-        width: '400px',
-        height: '400px',
-        borderRadius: '50%',
-        background: `radial-gradient(circle, ${isDark ? 'rgba(99, 102, 241, 0.06)' : 'rgba(99, 102, 241, 0.04)'} 0%, transparent 70%)`,
-        filter: 'blur(60px)',
-        pointerEvents: 'none',
-      }} />
+      {/* Glowing Ambient Mesh Background */}
+      <AmbientMesh 
+        colors={isDark 
+          ? ['rgba(99, 102, 241, 0.15)', 'rgba(34, 211, 238, 0.12)', 'rgba(245, 158, 11, 0.1)'] 
+          : ['rgba(99, 102, 241, 0.08)', 'rgba(34, 211, 238, 0.06)', 'rgba(245, 158, 11, 0.05)']} 
+        speed={0.8} 
+      />
 
       {/* Theme toggle — top right */}
       <div style={{
@@ -208,7 +204,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, onSelectCharacter, 
           WebkitTextFillColor: 'transparent',
           color: 'transparent',
         }}>
-          Choose Your Fighter
+          Character Select
         </h1>
         <p style={{
           color: 'var(--text-tertiary)',

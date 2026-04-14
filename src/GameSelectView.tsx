@@ -3,6 +3,7 @@ import type { GameDefinition } from './types';
 import { SUPPORTED_GAMES } from './games';
 import { ThemeToggle } from './ThemeToggle';
 import { useTheme } from './ThemeContext';
+import { AmbientMesh } from './AmbientMesh';
 
 interface Props {
   onSelectGame: (game: GameDefinition) => void;
@@ -149,29 +150,13 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
       position: 'relative',
       overflow: 'hidden',
     }}>
-      {/* Ambient background orbs */}
-      <div style={{
-        position: 'absolute',
-        top: '-20%',
-        left: '-10%',
-        width: '500px',
-        height: '500px',
-        borderRadius: '50%',
-        background: `radial-gradient(circle, ${isDark ? 'rgba(99, 102, 241, 0.08)' : 'rgba(99, 102, 241, 0.06)'} 0%, transparent 70%)`,
-        filter: 'blur(60px)',
-        pointerEvents: 'none',
-      }} />
-      <div style={{
-        position: 'absolute',
-        bottom: '-20%',
-        right: '-10%',
-        width: '600px',
-        height: '600px',
-        borderRadius: '50%',
-        background: `radial-gradient(circle, ${isDark ? 'rgba(168, 85, 247, 0.06)' : 'rgba(168, 85, 247, 0.04)'} 0%, transparent 70%)`,
-        filter: 'blur(80px)',
-        pointerEvents: 'none',
-      }} />
+      {/* Glowing Ambient Mesh Background */}
+      <AmbientMesh 
+        colors={isDark 
+          ? ['rgba(99, 102, 241, 0.15)', 'rgba(168, 85, 247, 0.12)', 'rgba(236, 72, 153, 0.1)'] 
+          : ['rgba(99, 102, 241, 0.08)', 'rgba(168, 85, 247, 0.06)', 'rgba(236, 72, 153, 0.05)']} 
+        speed={1.0} 
+      />
 
       {/* Theme toggle — top right */}
       <div style={{
