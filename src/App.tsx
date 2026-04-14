@@ -6,12 +6,14 @@ import { GameSelectView } from './GameSelectView';
 import { CharacterSelectView } from './CharacterSelectView';
 import { MoveListView } from './MoveListView';
 import { GameGlanceMainView } from './GameGlanceView';
+import type { ControllerType } from './glyphMap';
 
 function App() {
   const [currentView, setCurrentView] = useState<AppView>('game_select');
   const [selectedGame, setSelectedGame] = useState<GameDefinition | null>(null);
   const [selectedCharacter, setSelectedCharacter] = useState<string | null>(null);
   const [selectedPlaylist, setSelectedPlaylist] = useState<Move[]>([]);
+  const [controller, setController] = useState<ControllerType>('playstation');
 
   // Navigation handlers
   const handleSelectGame = (game: GameDefinition) => {
@@ -56,6 +58,8 @@ function App() {
       }
       viewComponent = <CharacterSelectView 
          game={selectedGame} 
+         controller={controller}
+         onSetController={setController}
          onSelectCharacter={handleSelectCharacter} 
          onBack={() => setCurrentView('game_select')} 
          onHome={() => setCurrentView('game_select')}
@@ -70,6 +74,8 @@ function App() {
          game={selectedGame}
          characterId={selectedCharacter}
          selectedPlaylist={selectedPlaylist}
+         controller={controller}
+         onSetController={setController}
          onToggleMove={handleToggleMove}
          onLaunchMainScreen={handleLaunchMainScreen}
          onBack={() => setCurrentView('char_select')}
@@ -82,6 +88,8 @@ function App() {
          playlist={selectedPlaylist} 
          gameName={selectedGame?.name || 'GAMES'}
          characterName={charName}
+         controller={controller}
+         onSetController={setController}
          onExit={handleExitMainScreen} 
       />;
       break;

@@ -10,6 +10,8 @@ interface Props {
   game: GameDefinition;
   characterId: string;
   selectedPlaylist: Move[];
+  controller: ControllerType;
+  onSetController: (c: ControllerType) => void;
   onToggleMove: (move: Move) => void;
   onLaunchMainScreen: () => void;
   onBack: () => void;
@@ -25,11 +27,10 @@ const TYPE_COLORS: Record<string, string> = {
   common: '#10b981',
 };
 
-export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, onToggleMove, onLaunchMainScreen, onBack, onHome }) => {
+export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, onSetController, onToggleMove, onLaunchMainScreen, onBack, onHome }) => {
   const [characterData, setCharacterData] = useState<CharacterExport | null>(null);
   const [orderedTabs, setOrderedTabs] = useState<string[]>([]);
   const [loadingError, setLoadingError] = useState<string>('');
-  const [controller, setController] = useState<ControllerType>('playstation');
   const [searchQuery, setSearchQuery] = useState('');
   const [showScrollTop, setShowScrollTop] = useState(false);
   const { theme } = useTheme();
@@ -241,16 +242,6 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         speed={0.6} 
       />
 
-      {/* Theme toggle — top right */}
-      <div style={{
-        position: 'fixed',
-        top: '1.25rem',
-        right: '1.25rem',
-        zIndex: 200,
-      }}>
-        <ThemeToggle />
-      </div>
-
       <div style={{
         position: 'sticky',
         top: 0,
@@ -368,7 +359,46 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           {characterData.character}
         </button>
         <span style={{ color: 'var(--text-muted)' }}>›</span>
+        <span style={{ color: 'var(--text-muted)' }}>›</span>
         <span style={{ color: 'var(--text-primary)', fontWeight: 700 }}>MOVES</span>
+
+        {/* Right tools: Social links, Controller, & Theme toggle */}
+        <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
+          <a href="#" target="_blank" rel="noreferrer" title="Instagram" style={{ color: 'var(--text-secondary)', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex' }} onMouseOver={e => { e.currentTarget.style.color = '#e1306c'; e.currentTarget.style.transform = 'scale(1.15)'; }} onMouseOut={e => { e.currentTarget.style.color = 'var(--text-secondary)'; e.currentTarget.style.transform = 'scale(1)'; }}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+          </a>
+          <a href="#" target="_blank" rel="noreferrer" title="Twitter" style={{ color: 'var(--text-secondary)', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex' }} onMouseOver={e => { e.currentTarget.style.color = '#1DA1F2'; e.currentTarget.style.transform = 'scale(1.15)'; }} onMouseOut={e => { e.currentTarget.style.color = 'var(--text-secondary)'; e.currentTarget.style.transform = 'scale(1)'; }}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+          </a>
+          <a href="#" target="_blank" rel="noreferrer" title="YouTube" style={{ color: 'var(--text-secondary)', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex' }} onMouseOver={e => { e.currentTarget.style.color = '#FF0000'; e.currentTarget.style.transform = 'scale(1.15)'; }} onMouseOut={e => { e.currentTarget.style.color = 'var(--text-secondary)'; e.currentTarget.style.transform = 'scale(1)'; }}>
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
+          </a>
+
+          <select
+            value={controller}
+            onChange={(e) => onSetController(e.target.value as ControllerType)}
+            style={{
+              padding: '0.35rem 0.65rem',
+              background: 'var(--bg-input)',
+              border: '1px solid var(--border-subtle)',
+              borderRadius: 'var(--radius-md)',
+              color: 'var(--text-primary)',
+              fontSize: '0.8rem',
+              fontFamily: 'inherit',
+              cursor: 'pointer',
+              outline: 'none',
+              transition: 'border-color 0.2s',
+            }}
+          >
+            <option value="playstation" style={{ background: 'var(--option-bg)' }}>🎮 PS</option>
+            <option value="xbox" style={{ background: 'var(--option-bg)' }}>🎮 Xbox</option>
+            <option value="switch" style={{ background: 'var(--option-bg)' }}>🎮 Switch</option>
+            <option value="arcade" style={{ background: 'var(--option-bg)' }}>🕹️ Arcade</option>
+          </select>
+
+          <div style={{ width: '1px', height: '20px', background: 'var(--border-subtle)', margin: '0 0.25rem' }}></div>
+          <ThemeToggle />
+        </div>
       </nav>
 
       {/* Toolbar: tabs + controller + search */}
@@ -541,29 +571,6 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
               }}
             />
           </div>
-
-          <select
-            id="controller-select"
-            value={controller}
-            onChange={e => setController(e.target.value as ControllerType)}
-            style={{
-              padding: '0.65rem 0.85rem',
-              background: 'var(--bg-input)',
-              border: '1px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-lg)',
-              color: 'var(--text-primary)',
-              fontSize: '0.85rem',
-              fontFamily: 'inherit',
-              cursor: 'pointer',
-              outline: 'none',
-              transition: 'border-color 0.2s',
-            }}
-          >
-            <option value="playstation" style={{ background: 'var(--option-bg)' }}>🎮 PlayStation</option>
-            <option value="xbox" style={{ background: 'var(--option-bg)' }}>🎮 Xbox</option>
-            <option value="switch" style={{ background: 'var(--option-bg)' }}>🎮 Switch</option>
-            <option value="arcade" style={{ background: 'var(--option-bg)' }}>🕹️ Arcade</option>
-          </select>
         </div>
       </div>
       </div>

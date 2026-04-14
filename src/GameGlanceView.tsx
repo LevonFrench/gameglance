@@ -8,10 +8,12 @@ interface Props {
   playlist: Move[];
   gameName: string;
   characterName: string;
+  controller: ControllerType;
+  onSetController: (c: ControllerType) => void;
   onExit: () => void;
 }
 
-export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, characterName, onExit }) => {
+export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, characterName, controller, onSetController, onExit }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
@@ -21,7 +23,6 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
   const [showOptions, setShowOptions] = useState(false);
   const [flipDelayMs, setFlipDelayMs] = useState(5000);
   const [itemsPerPage, setItemsPerPage] = useState(5);
-  const [controller, setController] = useState<ControllerType>('playstation');
 
   const totalPages = Math.ceil(playlist.length / itemsPerPage);
   const isDark = theme === 'dark';
@@ -210,7 +211,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
           <select
             id="gameglance-controller"
             value={controller}
-            onChange={(e) => setController(e.target.value as ControllerType)}
+            onChange={(e) => onSetController(e.target.value as ControllerType)}
             style={{
               padding: '0.45rem 0.65rem',
               background: 'var(--bg-input)',
