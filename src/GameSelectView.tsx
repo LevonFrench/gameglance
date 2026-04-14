@@ -135,9 +135,6 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
   });
 
   const isDark = theme === 'dark';
-  const headingGradient = isDark
-    ? 'linear-gradient(135deg, #f0f0f8 0%, #9090ae 100%)'
-    : 'linear-gradient(135deg, #1a1a2e 0%, #555570 100%)';
 
   return (
     <div style={{
@@ -188,11 +185,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
           fontSize: 'clamp(2.5rem, 6vw, 4rem)',
           fontWeight: 900,
           margin: 0,
-          background: headingGradient,
-          WebkitBackgroundClip: 'text',
-          backgroundClip: 'text',
-          WebkitTextFillColor: 'transparent',
-          color: 'transparent',
+          color: isDark ? '#f0f0f8' : '#1a1a2e',
           lineHeight: 1.1,
         }}>
           SELECT GAME
