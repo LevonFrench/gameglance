@@ -24,6 +24,7 @@ export interface CharacterExport {
 export interface GameDefinition {
   id: string;
   name: string;
+  developer?: string;
   tabs: string[];
   characters: { id: string, name: string }[];
 }

@@ -1,262 +1,35 @@
 {
-  "game": "Street Fighter Alpha 3",
-  "character": "Cody",
-  "theme_colors": {
-    "normal": "#60a5fa",
-    "special": "#f59e0b",
-    "super_fatality": "#ef4444"
-  },
-  "movesList": [
-    {
-      "id": "cody_normal_0",
-      "name": "Standing Light Punch",
-      "type": "normal",
-      "inputs": [
-        "LP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_1",
-      "name": "Standing Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "MP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_2",
-      "name": "Standing Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "HP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_3",
-      "name": "Standing Light Kick",
-      "type": "normal",
-      "inputs": [
-        "LK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_4",
-      "name": "Standing Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "MK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_5",
-      "name": "Standing Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "HK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_6",
-      "name": "Crouching Light Punch",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "LP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_7",
-      "name": "Crouching Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "MP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_8",
-      "name": "Crouching Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "HP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_9",
-      "name": "Crouching Light Kick",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "LK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_10",
-      "name": "Crouching Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "MK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_11",
-      "name": "Crouching Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "HK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_12",
-      "name": "Jumping Light Punch",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "LP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_13",
-      "name": "Jumping Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "MP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_14",
-      "name": "Jumping Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "HP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_15",
-      "name": "Jumping Light Kick",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "LK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_16",
-      "name": "Jumping Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "MK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_normal_17",
-      "name": "Jumping Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "HK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_criminal_uppercut_0",
-      "name": "Criminal Uppercut",
-      "type": "special",
-      "inputs": [
-        "d",
-        "dl",
-        "l",
-        "P"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_ruffian_kick_1",
-      "name": "Ruffian Kick",
-      "type": "special",
-      "inputs": [
-        "d",
-        "dr",
-        "r",
-        "K"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_bad_stone_2",
-      "name": "Bad Stone",
-      "type": "special",
-      "inputs": [
-        "d",
-        "dr",
-        "r",
-        "P"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_knife_pickup_3",
-      "name": "Knife Pickup",
-      "type": "special",
-      "inputs": [
-        "d",
-        "PPP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_final_destruction_4",
-      "name": "Final Destruction",
-      "type": "super",
-      "inputs": [
-        "d",
-        "dr",
-        "r",
-        "d",
-        "dr",
-        "r",
-        "P"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cody_dead_end_irony_5",
-      "name": "Dead End Irony",
-      "type": "super",
-      "inputs": [
-        "d",
-        "dr",
-        "r",
-        "d",
-        "dr",
-        "r",
-        "K"
-      ],
-      "frameData": {}
-    }
-  ],
-  "combosList": []
+    "name": "Cody",
+    "special_moves": [
+        {
+            "name": "Bad Stone",
+            "input": "236 + P (Hold P to delay)"
+        },
+        {
+            "name": "Criminal Upper",
+            "input": "214 + P"
+        },
+        {
+            "name": "Ruffian Kick",
+            "input": "236 + K"
+        },
+        {
+            "name": "Bad Spray",
+            "input": "412 + P (While getting up)"
+        },
+        {
+            "name": "Knife Pickup",
+            "input": "2 + P (Over knife)"
+        }
+    ],
+    "super_combos": [
+        {
+            "name": "Final Destruction",
+            "input": "236236 + P"
+        },
+        {
+            "name": "Dead End Irony",
+            "input": "236236 + K"
+        }
+    ]
 }

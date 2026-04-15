@@ -106,6 +106,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
   }
 
   const currentItems = playlist.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage);
+  const effectiveController = gameName.toLowerCase().includes('tatsunoko') ? 'wii' : controller;
 
   return (
     <div style={{
@@ -228,6 +229,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
             <option value="xbox" style={{ background: 'var(--option-bg)' }}>Xbox</option>
             <option value="switch" style={{ background: 'var(--option-bg)' }}>Switch</option>
             <option value="arcade" style={{ background: 'var(--option-bg)' }}>Arcade</option>
+            <option value="neogeo" style={{ background: 'var(--option-bg)' }}>Neo Geo</option>
           </select>
 
           <button
@@ -469,7 +471,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
               alignItems: 'center',
               flexShrink: 0,
             }}>
-              <GlyphSequence inputs={move.inputs} controller={controller} large={true} />
+              <GlyphSequence inputs={move.inputs} controller={effectiveController} large={true} />
             </div>
           </div>
         ))}

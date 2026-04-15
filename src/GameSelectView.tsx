@@ -16,18 +16,6 @@ const GAME_THEMES: Record<string, { gradient: string; icon: string; tagline: str
     tagline: 'World Warriors Await',
     glowColor: 'rgba(232, 54, 60, 0.25)',
   },
-  mk1: {
-    gradient: 'linear-gradient(135deg, #f59e0b 0%, #dc2626 100%)',
-    icon: '🐉',
-    tagline: 'Finish Them',
-    glowColor: 'rgba(245, 158, 11, 0.25)',
-  },
-  t8: {
-    gradient: 'linear-gradient(135deg, #3b82f6 0%, #8b5cf6 100%)',
-    icon: '⚡',
-    tagline: 'Iron Fist Rising',
-    glowColor: 'rgba(59, 130, 246, 0.25)',
-  },
   sf2: {
     gradient: 'linear-gradient(135deg, #1d4ed8 0%, #ef4444 100%)',
     icon: '🥋',
@@ -92,6 +80,7 @@ const GAME_THEMES: Record<string, { gradient: string; icon: string; tagline: str
 
 export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
   const [favorites, setFavorites] = useState<string[]>([]);
+  const [developerFilter, setDeveloperFilter] = useState<string>('All');
   const { theme } = useTheme();
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
   
@@ -125,16 +114,32 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
     el.style.setProperty('--mouse-y', `${y}%`);
   };
   
-  // Sort favorites first
-  const sortedGames = [...SUPPORTED_GAMES].sort((a, b) => {
-    const aFav = favorites.includes(a.id);
-    const bFav = favorites.includes(b.id);
-    if (aFav && !bFav) return -1;
-    if (!aFav && bFav) return 1;
-    return a.name.localeCompare(b.name);
-  });
+  // Sort favorites first, then filter by developer
+  const filteredAndSortedGames = [...SUPPORTED_GAMES]
+    .filter(g => developerFilter === 'All' || g.developer === developerFilter)
+    .sort((a, b) => {
+      const aFav = favorites.includes(a.id);
+      const bFav = favorites.includes(b.id);
+      if (aFav && !bFav) return -1;
+      if (!aFav && bFav) return 1;
+      return a.name.localeCompare(b.name);
+    });
 
   const isDark = theme === 'dark';
+  const developerCounts = SUPPORTED_GAMES.reduce((acc, game) => {
+    if (game.developer) {
+      acc[game.developer] = (acc[game.developer] || 0) + 1;
+    }
+    return acc;
+  }, {} as Record<string, number>);
+
+  const allDevelopers = [
+    'All',
+    ...Object.entries(developerCounts)
+      .filter(([_, count]) => count >= 5)
+      .map(([dev]) => dev)
+      .sort()
+  ];
 
   return (
     <div style={{
@@ -187,9 +192,56 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
           margin: 0,
           color: isDark ? '#f0f0f8' : '#1a1a2e',
           lineHeight: 1.1,
+          marginBottom: '1.5rem',
         }}>
           SELECT GAME
         </h1>
+
+        {/* Developer Filter */}
+        <div style={{
+          display: 'flex',
+          gap: '0.75rem',
+          justifyContent: 'center',
+          flexWrap: 'wrap',
+          maxWidth: '800px',
+          margin: '0 auto',
+        }}>
+          {allDevelopers.map(dev => {
+            const isActive = developerFilter === dev;
+            return (
+              <button
+                key={dev}
+                onClick={() => setDeveloperFilter(dev)}
+                style={{
+                  padding: '0.5rem 1.25rem',
+                  borderRadius: 'var(--radius-full)',
+                  border: `1px solid ${isActive ? 'var(--accent-indigo)' : 'var(--border-subtle)'}`,
+                  background: isActive ? 'var(--accent-indigo)' : 'var(--bg-glass)',
+                  color: isActive ? '#ffffff' : 'var(--text-secondary)',
+                  fontSize: '0.9rem',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                  backdropFilter: 'blur(12px)',
+                }}
+                onMouseOver={e => {
+                  if (!isActive) {
+                    e.currentTarget.style.borderColor = 'var(--text-secondary)';
+                    e.currentTarget.style.color = 'var(--text-primary)';
+                  }
+                }}
+                onMouseOut={e => {
+                  if (!isActive) {
+                    e.currentTarget.style.borderColor = 'var(--border-subtle)';
+                    e.currentTarget.style.color = 'var(--text-secondary)';
+                  }
+                }}
+              >
+                {dev}
+              </button>
+            );
+          })}
+        </div>
       </header>
 
       {/* Game Grid */}
@@ -201,7 +253,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
         width: '100%',
         margin: '0 auto',
       }}>
-        {sortedGames.map((game, index) => {
+        {filteredAndSortedGames.map((game, index) => {
           const theme = GAME_THEMES[game.id] || GAME_THEMES.sf6;
           const isFavorite = favorites.includes(game.id);
           return (

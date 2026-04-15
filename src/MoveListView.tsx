@@ -96,6 +96,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
       id: c.id, name: c.name, type: 'normal' as const, inputs: c.inputs, frameData: {},
     })),
     'Fatalities':     (d) => (d.movesList || []).filter(m => m.type === 'super'),
+    'Finishers':      (d) => (d.movesList || []).filter(m => m.type === 'finisher'),
   };
 
   // Pre-compute counts per tab (safe with null characterData)
@@ -223,9 +224,8 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     );
   }
 
-  // (Replaced displayList filtering with per-section filtering below)
-
   const selectedCount = selectedPlaylist.length;
+  const effectiveController = game.id === 'tatsunoko-vs-capcom-ultimate-all-stars' ? 'wii' : controller;
 
   return (
     <div style={{
@@ -394,6 +394,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
             <option value="xbox" style={{ background: 'var(--option-bg)' }}>🎮 Xbox</option>
             <option value="switch" style={{ background: 'var(--option-bg)' }}>🎮 Switch</option>
             <option value="arcade" style={{ background: 'var(--option-bg)' }}>🕹️ Arcade</option>
+            <option value="neogeo" style={{ background: 'var(--option-bg)' }}>🕹️ Neo Geo</option>
           </select>
 
           <div style={{ width: '1px', height: '20px', background: 'var(--border-subtle)', margin: '0 0.25rem' }}></div>
@@ -597,12 +598,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
             {orderedTabs.map(tab => {
               let baseList = TAB_FILTER[tab] ? TAB_FILTER[tab](characterData) : (characterData.movesList || []);
-              if (tab === 'Moves' && game.id === 'mk1') {
-                 // some games don't categorize well, rely on everything if general tab
-              } else if (tab === 'Moves' && TAB_FILTER[tab]) {
-                 baseList = TAB_FILTER[tab](characterData);
-              }
-
+              
               const displayList = searchQuery.trim() ? baseList.filter(m => m.name.toLowerCase().includes(searchQuery.toLowerCase())) : baseList;
               
               if (displayList.length === 0) return null;
@@ -707,7 +703,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
 
                       {/* Input glyphs inline */}
                       <div style={{ marginTop: '0.4rem' }}>
-                        <GlyphSequence inputs={move.inputs} controller={controller} />
+                        <GlyphSequence inputs={move.inputs} controller={effectiveController} />
                       </div>
                     </div>
                   </div>
