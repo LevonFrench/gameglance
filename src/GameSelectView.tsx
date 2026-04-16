@@ -625,18 +625,6 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
         })}
       </main>
 
-      {/* Footer branding */}
-      <footer style={{
-        marginTop: '3rem',
-        color: 'var(--text-muted)',
-        fontSize: '0.75rem',
-        fontWeight: 400,
-        letterSpacing: '0.1em',
-        textTransform: 'uppercase',
-        animation: 'fadeIn 0.8s ease 0.5s both',
-      }}>
-        FGC Companion Tool
-      </footer>
     </div>
   );
 };

@@ -109,7 +109,7 @@ export const BottomHeader: React.FC<Props> = ({
         color: 'var(--text-tertiary)',
         marginTop: '0.5rem'
       }}>
-        <span>© {new Date().getFullYear()} GameGlance. All character designs and movesets belong to their respective creators.</span>
+        <span>© {new Date().getFullYear()} GameGlance. FGC Second Screen App.</span>
         <div style={{ width: '1px', height: '12px', background: 'var(--border-subtle)' }} />
         <a href="mailto:contact@gameglance.app" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }} 
            onMouseEnter={e => e.currentTarget.style.color = 'var(--text-primary)'}
