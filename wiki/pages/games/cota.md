@@ -1,21 +1,22 @@
 ---
 title: "X-Men: Children of the Atom"
 type: game
-tags: [cota, crossover, capcom]
-games: [cota]
+tags: [cota]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # X-Men: Children of the Atom
 
-A classic Capcom fighting game.
+## Overview
+*No overview generated yet.*
 
-## Roster (2 characters parsed here)
+## Characters (2 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Cyclops, Silver Samurai
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/cota/{character}.json` — parsed from `faqs/capcom_crossover_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

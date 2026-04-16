@@ -1,1204 +1,700 @@
 {
-  "game": "Street Fighter 6",
-  "character": "Ed",
-  "theme_colors": {
-    "normal": "#FFFFFF",
-    "special": "#FFD700",
-    "super_fatality": "#FF0000"
-  },
-  "movesList": [
-    {
-      "id": "m_ed_0",
-      "name": "Standing Light Punch",
-      "type": "normal",
-      "inputs": [
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "4",
-        "active": "4-6",
-        "recovery": "7",
-        "advantage": "4"
-      }
-    },
-    {
-      "id": "m_ed_1",
-      "name": "Standing Light Kick",
-      "type": "normal",
-      "inputs": [
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "6",
-        "active": "6-7",
-        "recovery": "13",
-        "advantage": "3"
-      }
-    },
-    {
-      "id": "m_ed_2",
-      "name": "Standing Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "7",
-        "active": "7-9",
-        "recovery": "15",
-        "advantage": "6"
-      }
-    },
-    {
-      "id": "m_ed_3",
-      "name": "Standing Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-11",
-        "recovery": "16",
-        "advantage": "0"
-      }
-    },
-    {
-      "id": "m_ed_4",
-      "name": "Standing Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-13",
-        "recovery": "18",
-        "advantage": "5"
-      }
-    },
-    {
-      "id": "m_ed_5",
-      "name": "Standing Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-12",
-        "recovery": "12",
-        "advantage": "8"
-      }
-    },
-    {
-      "id": "m_ed_6",
-      "name": "Crouching Light Punch",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "4",
-        "active": "4-6",
-        "recovery": "10",
-        "advantage": "3"
-      }
-    },
-    {
-      "id": "m_ed_7",
-      "name": "Crouching Light Kick",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-6",
-        "recovery": "12",
-        "advantage": "2"
-      }
-    },
-    {
-      "id": "m_ed_8",
-      "name": "Crouching Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "8",
-        "active": "8-10",
-        "recovery": "19",
-        "advantage": "2"
-      }
-    },
-    {
-      "id": "m_ed_9",
-      "name": "Crouching Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "9",
-        "active": "9-10",
-        "recovery": "16",
-        "advantage": "8"
-      }
-    },
-    {
-      "id": "m_ed_10",
-      "name": "Crouching Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-13",
-        "recovery": "24",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_11",
-      "name": "Crouching Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "12-13",
-        "recovery": "19",
-        "advantage": "-1"
-      }
-    },
-    {
-      "id": "m_ed_12",
-      "name": "Jumping Light Punch",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-9",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_ed_13",
-      "name": "Jumping Light Kick",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "8",
-        "active": "8-10",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_ed_14",
-      "name": "Jumping Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "8",
-        "active": "8-13",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_ed_15",
-      "name": "Jumping Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-11",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_ed_16",
-      "name": "Jumping Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "9",
-        "active": "9-13",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_ed_17",
-      "name": "Jumping Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "8",
-        "active": "8-9",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_ed_18",
-      "name": "Psycho Knuckle(Lv1)",
-      "type": "special",
-      "inputs": [
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "39",
-        "active": "39-53",
-        "recovery": "35",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_19",
-      "name": "Psycho Knuckle(Lv2)",
-      "type": "special",
-      "inputs": [
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "69",
-        "active": "69-83",
-        "recovery": "35",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_20",
-      "name": "Cobra Punch",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "17",
-        "active": "17-19",
-        "recovery": "21",
-        "advantage": "1"
-      }
-    },
-    {
-      "id": "m_ed_21",
-      "name": "Flicker Combination(2)",
-      "type": "special",
-      "inputs": [
-        "[LK]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "7",
-        "active": "7-9",
-        "recovery": "15",
-        "advantage": "3"
-      }
-    },
-    {
-      "id": "m_ed_22",
-      "name": "Flicker Combination(3)",
-      "type": "special",
-      "inputs": [
-        "[LK]",
-        "[LK]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "7",
-        "active": "7-9",
-        "recovery": "16",
-        "advantage": "1"
-      }
-    },
-    {
-      "id": "m_ed_23",
-      "name": "Body Blow Combination",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "13",
-        "active": "13-14",
-        "recovery": "23",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_24",
-      "name": "Hitman Combination(2)",
-      "type": "special",
-      "inputs": [
-        "[MK]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "7",
-        "active": "7-8",
-        "recovery": "20",
-        "advantage": "0"
-      }
-    },
-    {
-      "id": "m_ed_25",
-      "name": "Hitman Combination(3)",
-      "type": "special",
-      "inputs": [
-        "[MK]",
-        "[MK]",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "11",
-        "active": "11-15",
-        "recovery": "23",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_26",
-      "name": "Low Smash Combination",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[HK]",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "12-16",
-        "recovery": "19",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_27",
-      "name": "Psycho Spark",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "14",
-        "active": "14-25",
-        "recovery": "8",
-        "advantage": "3"
-      }
-    },
-    {
-      "id": "m_ed_28",
-      "name": "OD Psycho Spark",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LP]",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "14",
-        "active": "14-25",
-        "recovery": "7",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_29",
-      "name": "L Psycho Shoot",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[LP]",
-        "[LK]",
-        "[Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "",
-        "recovery": "42 total frames",
-        "advantage": "3"
-      }
-    },
-    {
-      "id": "m_ed_30",
-      "name": "M Psycho Shoot",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[LP]",
-        "[LK]",
-        "[Forward]",
-        "+",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "",
-        "recovery": "42 total frames",
-        "advantage": "3"
-      }
-    },
-    {
-      "id": "m_ed_31",
-      "name": "H Psycho Shoot",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[LP]",
-        "[LK]",
-        "[Forward]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "",
-        "recovery": "42 total frames",
-        "advantage": "3"
-      }
-    },
-    {
-      "id": "m_ed_32",
-      "name": "OD L Psycho Shoot",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "+",
-        "[MP]",
-        "[LP]",
-        "[LP]",
-        "[LK]",
-        "[Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "",
-        "recovery": "40 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_33",
-      "name": "OD M Psycho Shoot",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "+",
-        "[MP]",
-        "[LP]",
-        "[LP]",
-        "[LK]",
-        "[Forward]",
-        "+",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "",
-        "recovery": "40 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_34",
-      "name": "OD H Psycho Shoot",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "+",
-        "[MP]",
-        "[LP]",
-        "[LP]",
-        "[LK]",
-        "[Forward]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "",
-        "recovery": "40 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_35",
-      "name": "L Psycho Uppercut",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-17",
-        "recovery": "28",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_36",
-      "name": "M Psycho Uppercut",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "+",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "14",
-        "active": "14-19",
-        "recovery": "32",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_37",
-      "name": "H Psycho Uppercut",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "16",
-        "active": "16-21",
-        "recovery": "33",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_38",
-      "name": "OD Psycho Uppercut",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "+",
-        "[LP]",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "13",
-        "active": "13-18",
-        "recovery": "36",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_39",
-      "name": "L Psycho Blitz",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "11",
-        "active": "11-2911-13, 17-19, 26-29",
-        "recovery": "14",
-        "advantage": "3"
-      }
-    },
-    {
-      "id": "m_ed_40",
-      "name": "M Psycho Blitz",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "13",
-        "active": "13-3613-14, 22-24, 34-36",
-        "recovery": "16",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_41",
-      "name": "H Psycho Blitz",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "15",
-        "active": "15-3715-16, 28-29, 36-37",
-        "recovery": "23",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_42",
-      "name": "OD Psycho Blitz",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LP]",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "13",
-        "active": "13-4413, 18, 22, 26, 30, 34,43-44",
-        "recovery": "20",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_43",
-      "name": "L Psycho Flicker",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "16",
-        "active": "16-19",
-        "recovery": "26",
-        "advantage": "1"
-      }
-    },
-    {
-      "id": "m_ed_44",
-      "name": "L Psycho Flicker (Charged)",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "31",
-        "active": "31-35",
-        "recovery": "24",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_45",
-      "name": "M Psycho Flicker",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "20",
-        "active": "20-23",
-        "recovery": "26",
-        "advantage": "3"
-      }
-    },
-    {
-      "id": "m_ed_46",
-      "name": "M Psycho Flicker (Charged)",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "35",
-        "active": "35-39",
-        "recovery": "24",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_47",
-      "name": "H Psycho Flicker",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "17",
-        "active": "17-24",
-        "recovery": "18",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_ed_48",
-      "name": "H Psycho Flicker (Charged)",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "35",
-        "active": "35-44",
-        "recovery": "19",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_ed_49",
-      "name": "OD Psycho Flicker",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LK]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "25",
-        "active": "25-28",
-        "recovery": "32",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_50",
-      "name": "Kill Rush (Forward)",
-      "type": "special",
-      "inputs": [
-        "[LK]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "31 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_ed_51",
-      "name": "Kill Switch Break",
-      "type": "special",
-      "inputs": [
-        "[LK]",
-        "[Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "11",
-        "active": "11-13",
-        "recovery": "20",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_52",
-      "name": "Kill Switch Chaser",
-      "type": "special",
-      "inputs": [
-        "[LK]",
-        "[Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "11",
-        "active": "11-13",
-        "recovery": "20",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_53",
-      "name": "Kill Rush (Backward)",
-      "type": "special",
-      "inputs": [
-        "[Back]",
-        "+",
-        "[LK]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "31 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_ed_54",
-      "name": "SA1 Psycho Storm",
-      "type": "super",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "13",
-        "active": "13- 6713-14, 22-23, 40-41, 45-46, 63, 65, 67",
-        "recovery": "56",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_55",
-      "name": "SA2 Psycho Cannon",
-      "type": "super",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "8",
-        "active": "",
-        "recovery": "35 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_56",
-      "name": "SA3 Psycho Chamber",
-      "type": "super",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-19",
-        "recovery": "64",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_57",
-      "name": "CA Psycho Chamber",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-19",
-        "recovery": "64",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_58",
-      "name": "Face Buster",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[LP]",
-        "[Forward]",
-        "+",
-        "[LP]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-7",
-        "recovery": "23",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_59",
-      "name": "Rib Crusher",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[LP]",
-        "[Back]",
-        "+",
-        "[LP]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-7",
-        "recovery": "23",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_60",
-      "name": "Forward Dash",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Forward]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "19 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_ed_61",
-      "name": "Backward Dash",
-      "type": "special",
-      "inputs": [
-        "[Back]",
-        "[Back]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "23 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_ed_62",
-      "name": "Drive Impact (Turn Punch)",
-      "type": "special",
-      "inputs": [
-        "[HP]",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "26",
-        "active": "26-27",
-        "recovery": "35",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_63",
-      "name": "Drive Reversal (while blocking): Hammer Blow",
-      "type": "special",
-      "inputs": [
-        "[LK]",
-        "[LP]",
-        "[Forward]",
-        "+",
-        "[HP]",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "20",
-        "active": "20-22",
-        "recovery": "26",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_64",
-      "name": "Drive Reversal (while recovering): Hammer Blow",
-      "type": "special",
-      "inputs": [
-        "[LK]",
-        "[LK]",
-        "[Forward]",
-        "+",
-        "[HP]",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "18",
-        "active": "18-20",
-        "recovery": "26",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_ed_65",
-      "name": "Drive Parry",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "1",
-        "active": "[*2] 1-12",
-        "recovery": "33",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_ed_66",
-      "name": "Perfect Parry (strike)",
-      "type": "special",
-      "inputs": [
-        "[LK]",
-        "+",
-        "[MP]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "1",
-        "active": "",
-        "recovery": "1",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_ed_67",
-      "name": "Perfect Parry (projectile)",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "1",
-        "active": "",
-        "recovery": "10",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_ed_68",
-      "name": "Parry Drive Rush",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[Forward]",
-        "[Forward]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "45 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_ed_69",
-      "name": "Cancel Drive Rush",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[Forward]",
-        "[Forward]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "46 total frames",
-        "advantage": ""
-      }
-    }
-  ],
-  "combosList": []
+    "game": "Street Fighter 6",
+    "character": "Ed",
+    "movesList": [
+        {
+            "id": "sp_0",
+            "name": "Psycho Flicker",
+            "type": "special",
+            "inputs": [
+                "down",
+                "down-back",
+                "back",
+                "P (Hold to charge)"
+            ]
+        },
+        {
+            "id": "sp_1",
+            "name": "Psycho Blitz",
+            "type": "special",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "P"
+            ]
+        },
+        {
+            "id": "sp_2",
+            "name": "Psycho Upper",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "P"
+            ]
+        },
+        {
+            "id": "sp_3",
+            "name": "Kill Rush",
+            "type": "special",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "K or 214",
+                "K"
+            ]
+        },
+        {
+            "id": "sup_0",
+            "name": "Psycho Storm (Lv.1)",
+            "type": "super",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "down",
+                "down-forward",
+                "forward",
+                "P"
+            ]
+        },
+        {
+            "id": "sup_1",
+            "name": "Psycho Cannon (Lv.2)",
+            "type": "super",
+            "inputs": [
+                "down",
+                "down-back",
+                "back",
+                "down",
+                "down-back",
+                "back",
+                "P"
+            ]
+        },
+        {
+            "id": "sup_2",
+            "name": "Psycho Chamber (Lv.3)",
+            "type": "super",
+            "inputs": [
+                "down",
+                "down-back",
+                "back",
+                "down",
+                "down-back",
+                "back",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_0",
+            "name": "Standing Light Punch",
+            "type": "normal",
+            "inputs": [
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_1",
+            "name": "Standing Light Kick",
+            "type": "normal",
+            "inputs": [
+                "[LK]"
+            ]
+        },
+        {
+            "id": "sp_2",
+            "name": "Standing Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "[MP]"
+            ]
+        },
+        {
+            "id": "sp_3",
+            "name": "Standing Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "[MK]"
+            ]
+        },
+        {
+            "id": "sp_4",
+            "name": "Standing Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_5",
+            "name": "Standing Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "[HK]"
+            ]
+        },
+        {
+            "id": "sp_6",
+            "name": "Crouching Light Punch",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_7",
+            "name": "Crouching Light Kick",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[LK]"
+            ]
+        },
+        {
+            "id": "sp_8",
+            "name": "Crouching Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[MP]"
+            ]
+        },
+        {
+            "id": "sp_9",
+            "name": "Crouching Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[MK]"
+            ]
+        },
+        {
+            "id": "sp_10",
+            "name": "Crouching Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_11",
+            "name": "Crouching Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[HK]"
+            ]
+        },
+        {
+            "id": "sp_12",
+            "name": "Jumping Light Punch",
+            "type": "normal",
+            "inputs": [
+                "[MP] [LP]"
+            ]
+        },
+        {
+            "id": "sp_13",
+            "name": "Jumping Light Kick",
+            "type": "normal",
+            "inputs": [
+                "[MP] [LK]"
+            ]
+        },
+        {
+            "id": "sp_14",
+            "name": "Jumping Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "[MP] [MP]"
+            ]
+        },
+        {
+            "id": "sp_15",
+            "name": "Jumping Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "[MP] [MK]"
+            ]
+        },
+        {
+            "id": "sp_16",
+            "name": "Jumping Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "[MP] [HP]"
+            ]
+        },
+        {
+            "id": "sp_17",
+            "name": "Jumping Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "[MP] [HK]"
+            ]
+        },
+        {
+            "id": "sp_18",
+            "name": "Psycho Knuckle(Lv1)",
+            "type": "special",
+            "inputs": [
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_19",
+            "name": "Psycho Knuckle(Lv2)",
+            "type": "special",
+            "inputs": [
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_20",
+            "name": "Cobra Punch",
+            "type": "special",
+            "inputs": [
+                "[Forward]",
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_21",
+            "name": "Flicker Combination(2)",
+            "type": "special",
+            "inputs": [
+                "[LK] [LK]"
+            ]
+        },
+        {
+            "id": "sp_22",
+            "name": "Flicker Combination(3)",
+            "type": "special",
+            "inputs": [
+                "[LK] [LK] [LK]"
+            ]
+        },
+        {
+            "id": "sp_23",
+            "name": "Body Blow Combination",
+            "type": "special",
+            "inputs": [
+                "[MP] [HP]"
+            ]
+        },
+        {
+            "id": "sp_24",
+            "name": "Hitman Combination(2)",
+            "type": "special",
+            "inputs": [
+                "[MK] [MK]"
+            ]
+        },
+        {
+            "id": "sp_25",
+            "name": "Hitman Combination(3)",
+            "type": "special",
+            "inputs": [
+                "[MK] [MK] [HP]"
+            ]
+        },
+        {
+            "id": "sp_26",
+            "name": "Low Smash Combination",
+            "type": "special",
+            "inputs": [
+                "[Down]",
+                "[HK] [HP]"
+            ]
+        },
+        {
+            "id": "sp_27",
+            "name": "Psycho Spark",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_28",
+            "name": "OD Psycho Spark",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[LP] [LP]"
+            ]
+        },
+        {
+            "id": "sp_29",
+            "name": "L Psycho Shoot",
+            "type": "special",
+            "inputs": [
+                "[LP] [LP] [LK] [Forward]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_30",
+            "name": "M Psycho Shoot",
+            "type": "special",
+            "inputs": [
+                "[LP] [LP] [LK] [Forward]",
+                "[MP]"
+            ]
+        },
+        {
+            "id": "sp_31",
+            "name": "H Psycho Shoot",
+            "type": "special",
+            "inputs": [
+                "[LP] [LP] [LK] [Forward]",
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_32",
+            "name": "OD L Psycho Shoot",
+            "type": "special",
+            "inputs": [
+                "[LP]",
+                "[MP] [LP] [LP] [LK] [Forward]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_33",
+            "name": "OD M Psycho Shoot",
+            "type": "special",
+            "inputs": [
+                "[LP]",
+                "[MP] [LP] [LP] [LK] [Forward]",
+                "[MP]"
+            ]
+        },
+        {
+            "id": "sp_34",
+            "name": "OD H Psycho Shoot",
+            "type": "special",
+            "inputs": [
+                "[LP]",
+                "[MP] [LP] [LP] [LK] [Forward]",
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_35",
+            "name": "L Psycho Uppercut",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Down] [Down-Forward]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_36",
+            "name": "M Psycho Uppercut",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Down] [Down-Forward]",
+                "[MP]"
+            ]
+        },
+        {
+            "id": "sp_37",
+            "name": "H Psycho Uppercut",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Down] [Down-Forward]",
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_38",
+            "name": "OD Psycho Uppercut",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Down] [Down-Forward]",
+                "[LP] [LP]"
+            ]
+        },
+        {
+            "id": "sp_39",
+            "name": "L Psycho Blitz",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Back] [Back]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_40",
+            "name": "M Psycho Blitz",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Back] [Back]",
+                "[MP]"
+            ]
+        },
+        {
+            "id": "sp_41",
+            "name": "H Psycho Blitz",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Back] [Back]",
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_42",
+            "name": "OD Psycho Blitz",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Back] [Back]",
+                "[LP] [LP]"
+            ]
+        },
+        {
+            "id": "sp_43",
+            "name": "L Psycho Flicker",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[LK]"
+            ]
+        },
+        {
+            "id": "sp_44",
+            "name": "L Psycho Flicker (Charged)",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[LK]"
+            ]
+        },
+        {
+            "id": "sp_45",
+            "name": "M Psycho Flicker",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[MK]"
+            ]
+        },
+        {
+            "id": "sp_46",
+            "name": "M Psycho Flicker (Charged)",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[MK]"
+            ]
+        },
+        {
+            "id": "sp_47",
+            "name": "H Psycho Flicker",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[HK]"
+            ]
+        },
+        {
+            "id": "sp_48",
+            "name": "H Psycho Flicker (Charged)",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[HK]"
+            ]
+        },
+        {
+            "id": "sp_49",
+            "name": "OD Psycho Flicker",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[LK] [LK]"
+            ]
+        },
+        {
+            "id": "sp_50",
+            "name": "Kill Rush (Forward)",
+            "type": "special",
+            "inputs": [
+                "[LK] [LK]"
+            ]
+        },
+        {
+            "id": "sp_51",
+            "name": "Kill Switch Break",
+            "type": "special",
+            "inputs": [
+                "[LK] [Forward]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_52",
+            "name": "Kill Switch Chaser",
+            "type": "special",
+            "inputs": [
+                "[LK] [Forward]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_53",
+            "name": "Kill Rush (Backward)",
+            "type": "special",
+            "inputs": [
+                "[Back]",
+                "[LK] [LK]"
+            ]
+        },
+        {
+            "id": "sp_54",
+            "name": "CA Psycho Chamber",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_55",
+            "name": "Face Buster",
+            "type": "special",
+            "inputs": [
+                "[LP] [LP] [Forward]",
+                "[LP] [LK]"
+            ]
+        },
+        {
+            "id": "sp_56",
+            "name": "Rib Crusher",
+            "type": "special",
+            "inputs": [
+                "[LP] [LP] [Back]",
+                "[LP] [LK]"
+            ]
+        },
+        {
+            "id": "sp_57",
+            "name": "Forward Dash",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Forward]"
+            ]
+        },
+        {
+            "id": "sp_58",
+            "name": "Backward Dash",
+            "type": "special",
+            "inputs": [
+                "[Back] [Back]"
+            ]
+        },
+        {
+            "id": "sp_59",
+            "name": "Drive Impact (Turn Punch)",
+            "type": "special",
+            "inputs": [
+                "[HP] [HK]"
+            ]
+        },
+        {
+            "id": "sp_60",
+            "name": "Drive Reversal (while blocking): Hammer Blow",
+            "type": "special",
+            "inputs": [
+                "[LK] [LP] [Forward]",
+                "[HP] [HK]"
+            ]
+        },
+        {
+            "id": "sp_61",
+            "name": "Drive Reversal (while recovering): Hammer Blow",
+            "type": "special",
+            "inputs": [
+                "[LK] [LK] [Forward]",
+                "[HP] [HK]"
+            ]
+        },
+        {
+            "id": "sp_62",
+            "name": "Drive Parry",
+            "type": "special",
+            "inputs": [
+                "[MP] [MK]"
+            ]
+        },
+        {
+            "id": "sp_63",
+            "name": "Perfect Parry (strike)",
+            "type": "special",
+            "inputs": [
+                "[LK]",
+                "[MP] [MK]"
+            ]
+        },
+        {
+            "id": "sp_64",
+            "name": "Perfect Parry (projectile)",
+            "type": "special",
+            "inputs": [
+                "[MP] [MK]"
+            ]
+        },
+        {
+            "id": "sp_65",
+            "name": "Parry Drive Rush",
+            "type": "special",
+            "inputs": [
+                "[LP] [Forward] [Forward]"
+            ]
+        },
+        {
+            "id": "sp_66",
+            "name": "Cancel Drive Rush",
+            "type": "special",
+            "inputs": [
+                "[LP] [Forward] [Forward]"
+            ]
+        },
+        {
+            "id": "sup_0",
+            "name": "SA1 Psycho Storm",
+            "type": "super",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+                "[LK]"
+            ]
+        },
+        {
+            "id": "sup_1",
+            "name": "SA2 Psycho Cannon",
+            "type": "super",
+            "inputs": [
+                "[Down] [Down-Back] [Back] [Down] [Down-Back] [Back]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sup_2",
+            "name": "SA3 Psycho Chamber",
+            "type": "super",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+                "[LP]"
+            ]
+        }
+    ],
+    "combosList": []
 }

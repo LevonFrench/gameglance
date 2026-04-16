@@ -1,21 +1,22 @@
 ---
 title: "The King of Fighters XIII"
 type: game
-tags: [the-king-of-fighters-xiii, snk]
-games: [the-king-of-fighters-xiii]
+tags: [the-king-of-fighters-xiii]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # The King of Fighters XIII
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Kyo Kusanagi
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/the-king-of-fighters-xiii/{character}.json` — parsed from `snk_modern_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

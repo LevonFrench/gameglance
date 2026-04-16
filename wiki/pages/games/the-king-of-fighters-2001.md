@@ -1,21 +1,22 @@
 ---
 title: "The King of Fighters 2001"
 type: game
-tags: [the-king-of-fighters-2001, snk]
-games: [the-king-of-fighters-2001]
+tags: [the-king-of-fighters-2001]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # The King of Fighters 2001
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-K9999
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/the-king-of-fighters-2001/{character}.json` — parsed from `kof_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

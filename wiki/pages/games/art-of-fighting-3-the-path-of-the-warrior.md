@@ -1,21 +1,22 @@
 ---
 title: "Art of Fighting 3: The Path of the Warrior"
 type: game
-tags: [art-of-fighting-3-the-path-of-the-warrior, snk]
-games: [art-of-fighting-3-the-path-of-the-warrior]
+tags: [art-of-fighting-3-the-path-of-the-warrior]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Art of Fighting 3: The Path of the Warrior
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Robert Garcia
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/art-of-fighting-3-the-path-of-the-warrior/{character}.json` — parsed from `neogeo_remaining_fighters.json`.
+## Meta
+*No meta/tier lists loaded.*

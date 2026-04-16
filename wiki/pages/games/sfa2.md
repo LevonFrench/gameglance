@@ -1,30 +1,22 @@
 ---
 title: "Street Fighter Alpha 2"
 type: game
-tags: [sfa2, classic, capcom]
-games: [sfa2]
+tags: [sfa2]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Street Fighter Alpha 2
 
-A classic Capcom fighting game.
+## Overview
+*No overview generated yet.*
 
-## Roster (3 characters)
+## Characters (3 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Ryu, Sakura, Rolento
+## Mechanics
+*No mechanics mapped.*
 
-## Move Categories
-
-**Special Moves**, **Super Combos**.
-
-## Data Source
-
-Character data: `public/data/sfa2/{character}.json` — 3 characters parsed from `faqs/sfa_movelists.json`.
-
-## See Also
-
-- [[sf2]]
-- [[sfa3]]
+## Meta
+*No meta/tier lists loaded.*

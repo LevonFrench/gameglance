@@ -1,21 +1,22 @@
 ---
 title: "Vampire Hunter 2"
 type: game
-tags: [vampirehunter2, crossover, capcom]
-games: [vampirehunter2]
+tags: [vampirehunter2]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Vampire Hunter 2
 
-A classic Capcom fighting game.
+## Overview
+*No overview generated yet.*
 
-## Roster (2 characters parsed here)
+## Characters (2 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Donovan, Pyron
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/vampirehunter2/{character}.json` — parsed from `faqs/capcom_crossover_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

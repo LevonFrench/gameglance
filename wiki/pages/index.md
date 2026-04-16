@@ -20,97 +20,226 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ---
 
-## 🎮 Games (17)
+## 🎮 Games (168)
 
-### Modern Titles
-| Page | Game | Characters | Era |
-|------|------|-----------|-----|
-| [[sf6]] | Street Fighter 6 | 26 | 2023–present |
-| [[t8]] | Tekken 8 | 38 | 2024–present |
-| [[cotw]] | Fatal Fury: City of the Wolves | 25 | 2025–present |
-| [[mk1]] | Mortal Kombat 1 | 1 (partial) | 2023–present |
-
-### Classic Capcom
-| Page | Game | Characters | Era |
-|------|------|-----------|-----|
-| [[sf2]] | Super Street Fighter II Turbo | 17 | 1994 |
-| [[sfa3]] | Street Fighter Alpha 3 | 34 | 1998 |
-| [[cvs2]] | Capcom vs SNK 2 | 46 | 2001 |
-| [[cvs1]] | Capcom vs. SNK | 30 | 2000 |
-| [[cfj]] | Capcom Fighting Jam | 20 | 2004 |
-| [[hypersf2]] | Hyper Street Fighter II | 17+ | 2003 |
-
-### Darkstalkers Series
-| Page | Game | Characters | Era |
-|------|------|-----------|-----|
-| [[darkstalkers]] | Darkstalkers: The Night Warriors | 10 | 1994 |
-| [[nightwarriors]] | Night Warriors: Darkstalkers' Revenge | 13 | 1995 |
-| [[vampiresavior]] | Vampire Savior | 19 | 1997 |
-
-### Other Capcom
-| Page | Game | Characters | Era |
-|------|------|-----------|-----|
-| [[pocketfighter]] | Pocket Fighter | 12 | 1997 |
-| [[projectjustice]] | Project Justice | 44 | 2000 |
-| [[plasmasword]] | Plasma Sword | 11 | 1998 |
-| [[cyberbots]] | Cyberbots | — | 1995 |
+### Complete Roster
+| Page | Game | Characters |
+|------|------|-----------|
+| [[aggressors-of-dark-kombat---complete-move-list]] | Aggressors of Dark Kombat - Complete Move List | 8 |
+| [[art-of-fighting]] | Art of Fighting | 1 |
+| [[art-of-fighting---complete-move-list]] | Art of Fighting - Complete Move List | 9 |
+| [[art-of-fighting-2---complete-move-list]] | Art of Fighting 2 - Complete Move List | 10 |
+| [[art-of-fighting-3---complete-move-list]] | Art of Fighting 3 - Complete Move List | 9 |
+| [[art-of-fighting-3-the-path-of-the-warrior]] | Art of Fighting 3: The Path of the Warrior | 1 |
+| [[astra-superstars]] | Astra Superstars | 3 |
+| [[astra-superstars---exhaustive-roster-move-list]] | Astra Superstars - Exhaustive Roster Move List | 10 |
+| [[asuka-120%-burning-fest-limited]] | Asuka 120% Burning Fest Limited | 4 |
+| [[blazblue-central-fiction]] | BlazBlue: Central Fiction | 3 |
+| [[blazblue-cross-tag-battle]] | BlazBlue: Cross Tag Battle | 1 |
+| [[bloody-roar]] | Bloody Roar | 4 |
+| [[bloody-roar-2-bringer-of-the-new-age]] | Bloody Roar 2: Bringer of the New Age | 4 |
+| [[bloody-roar-3]] | Bloody Roar 3 | 2 |
+| [[bloody-roar-4]] | Bloody Roar 4 | 1 |
+| [[bloody-roar-primal-fury--extreme]] | Bloody Roar: Primal Fury / Extreme | 1 |
+| [[breakers---complete-move-list]] | Breakers - Complete Move List | 8 |
+| [[breakers-revenge]] | Breakers Revenge | 1 |
+| [[breakers-revenge---complete-move-list]] | Breakers Revenge - Complete Move List | 10 |
+| [[capcom-fighting-jam]] | Capcom Fighting Jam | 6 |
+| [[capcom-fighting-jam-(capcom-fighting-evolution)]] | Capcom Fighting Jam (Capcom Fighting Evolution) | 24 |
+| [[capcom-vs-snk-2-mark-of-the-millennium-2001]] | Capcom vs. SNK 2: Mark of the Millennium 2001 | 16 |
+| [[capcom-vs-snk-millennium-fight-2000]] | Capcom vs. SNK: Millennium Fight 2000 | 5 |
+| [[capcom-vs-snk-millennium-fight-2000-pro]] | Capcom vs. SNK: Millennium Fight 2000 Pro | 32 |
+| [[cfj]] | Capcom Fighting Jam | 62 |
+| [[characters]] | characters | 218 |
+| [[common_normals]] | common_normals | 12 |
+| [[cota]] | X-Men: Children of the Atom | 2 |
+| [[cotw]] | Fatal Fury: City of the Wolves | 52 |
+| [[cvs1]] | Capcom vs. SNK | 35 |
+| [[cvs2]] | Capcom vs SNK 2 | 70 |
+| [[cyberbots]] | Cyberbots | 10 |
+| [[cyberbots-full-metal-madness]] | Cyberbots: Full Metal Madness | 9 |
+| [[darkstalkers]] | Darkstalkers: The Night Warriors | 23 |
+| [[darkstalkers-the-night-warriors]] | Darkstalkers: The Night Warriors | 4 |
+| [[darkstalkers-the-night-warriors-(vampire-the-night-warriors)]] | Darkstalkers: The Night Warriors (Vampire: The Night Warriors) | 12 |
+| [[dead-or-alive]] | Dead or Alive | 2 |
+| [[dead-or-alive-1---complete-move-list-(exhaustive)]] | Dead or Alive 1 - Complete Move List (Exhaustive) | 9 |
+| [[dead-or-alive-2]] | Dead or Alive 2 | 2 |
+| [[dead-or-alive-2---complete-move-list-(exhaustive)]] | Dead or Alive 2 - Complete Move List (Exhaustive) | 12 |
+| [[dead-or-alive-3]] | Dead or Alive 3 | 2 |
+| [[dead-or-alive-3---complete-move-list-(exhaustive)]] | Dead or Alive 3 - Complete Move List (Exhaustive) | 14 |
+| [[dead-or-alive-4]] | Dead or Alive 4 | 2 |
+| [[dead-or-alive-4---complete-move-list-(exhaustive)]] | Dead or Alive 4 - Complete Move List (Exhaustive) | 12 |
+| [[dead-or-alive-5]] | Dead or Alive 5 | 2 |
+| [[dead-or-alive-5-last-round---complete-move-list-(exhaustive)]] | Dead or Alive 5 Last Round - Complete Move List (Exhaustive) | 16 |
+| [[dnf-duel]] | DNF Duel | 4 |
+| [[doa6]] | Dead or Alive 6 - Complete Move List (Exhaustive) | 24 |
+| [[double-dragon-(neo-geo)---complete-move-list]] | Double Dragon (Neo Geo) - Complete Move List | 12 |
+| [[dragon-ball-fighterz]] | Dragon Ball FighterZ | 4 |
+| [[far-east-of-eden-kabuki-klash---complete-move-list]] | Far East of Eden: Kabuki Klash - Complete Move List | 11 |
+| [[fatal-fury-2]] | Fatal Fury 2 | 2 |
+| [[fatal-fury-3-road-to-the-final-victory]] | Fatal Fury 3: Road to the Final Victory | 2 |
+| [[fatal-fury-king-of-fighters]] | Fatal Fury: King of Fighters | 2 |
+| [[fatal-fury-special]] | Fatal Fury Special | 2 |
+| [[fighters-megamix]] | Fighters Megamix | 6 |
+| [[fighters-megamix---exhaustive-roster-move-list]] | Fighters Megamix - Exhaustive Roster Move List | 31 |
+| [[fighting-ex-layer]] | Fighting EX Layer | 3 |
+| [[fighting-vipers]] | Fighting Vipers | 2 |
+| [[fighting-vipers-2]] | Fighting Vipers 2 | 2 |
+| [[galaxy-fight-universal-warriors]] | Galaxy Fight: Universal Warriors | 8 |
+| [[garou-mark-of-the-wolves]] | Garou: Mark of the Wolves | 2 |
+| [[golden-axe-the-duel]] | Golden Axe: The Duel | 10 |
+| [[granblue-fantasy-versus-rising]] | Granblue Fantasy Versus: Rising | 3 |
+| [[groove-on-fight]] | Groove on Fight | 11 |
+| [[guilty-gear]] | Guilty Gear (1998) | 1 |
+| [[guilty-gear--strive-]] | Guilty Gear -Strive- (Ver. 2.00) | 4 |
+| [[guilty-gear-x]] | Guilty Gear X | 1 |
+| [[guilty-gear-xrd-rev-2]] | Guilty Gear Xrd REV 2 | 4 |
+| [[guilty-gear-xx-accent-core-plus-r]] | Guilty Gear XX Accent Core Plus R | 1 |
+| [[hypersf2]] | Hyper Street Fighter II | 3 |
+| [[killer-instinct-(1994)]] | Killer Instinct (1994) | 1 |
+| [[killer-instinct-(2013)]] | Killer Instinct (2013) | 2 |
+| [[killer-instinct-2--gold]] | Killer Instinct 2 / Gold | 1 |
+| [[kizuna-encounter-super-tag-battle]] | Kizuna Encounter: Super Tag Battle | 1 |
+| [[last-bronx]] | Last Bronx | 9 |
+| [[marvel-vs-capcom-clash-of-super-heroes]] | Marvel vs. Capcom: Clash of Super Heroes | 11 |
+| [[marvel-vs-capcom-infinite]] | Marvel vs. Capcom: Infinite | 7 |
+| [[matrimelee]] | Matrimelee (Power Instinct Matrimelee) | 1 |
+| [[mk1]] | mk1 | 1 |
+| [[mk2]] | Mk2 | 2 |
+| [[mortal-kombat-(2011)]] | Mortal Kombat (2011) | 1 |
+| [[mortal-kombat-deception]] | Mortal Kombat: Deception | 2 |
+| [[mortal-kombat-x]] | Mortal Kombat X | 1 |
+| [[msh]] | Marvel Super Heroes | 12 |
+| [[mshvsf]] | Marvel Super Heroes vs. Street Fighter | 17 |
+| [[mvc2]] | Mvc2 | 20 |
+| [[mvci]] | Marvel vs. Capcom: Infinite | 5 |
+| [[night-warriors-darkstalkers-revenge]] | Night Warriors: Darkstalkers | 4 |
+| [[nightwarriors]] | Night Warriors: Darkstalkers | 31 |
+| [[ninja-masters-haoh-ninpo-cho]] | Ninja Master | 1 |
+| [[persona-4-arena-ultimax]] | Persona 4 Arena Ultimax | 3 |
+| [[plasma-sword-nightmare-of-bilstein]] | Plasma Sword: Nightmare of Bilstein | 3 |
+| [[plasmasword]] | Plasma Sword | 11 |
+| [[pocket-fighter-(super-gem-fighter-mini-mix)]] | Pocket Fighter (Super Gem Fighter Mini Mix) | 3 |
+| [[pocketfighter]] | Pocket Fighter | 17 |
+| [[project-justice-(rival-schools-2)]] | Project Justice (Rival Schools 2) | 3 |
+| [[projectjustice]] | Project Justice | 56 |
+| [[rage-of-the-dragons]] | Rage of the Dragons | 1 |
+| [[real-bout-fatal-fury]] | Real Bout Fatal Fury | 1 |
+| [[real-bout-fatal-fury-2-the-newcomers]] | Real Bout Fatal Fury 2: The Newcomers | 1 |
+| [[real-bout-fatal-fury-special]] | Real Bout Fatal Fury Special | 1 |
+| [[roster]] | roster | 181 |
+| [[roster_highlights]] | roster_highlights | 24 |
+| [[samurai-shodown]] | Samurai Shodown | 2 |
+| [[samurai-shodown-(2019)]] | Samurai Shodown (2019) | 5 |
+| [[samurai-shodown-ii]] | Samurai Shodown II | 2 |
+| [[samurai-shodown-iii-blades-of-blood]] | Samurai Shodown III: Blades of Blood | 1 |
+| [[samurai-shodown-iv-amakusas-revenge]] | Samurai Shodown IV: Amakusa | 2 |
+| [[samurai-shodown-v]] | Samurai Shodown V | 1 |
+| [[samurai-shodown-v-special]] | Samurai Shodown V Special | 2 |
+| [[sf2]] | Super Street Fighter II Turbo | 42 |
+| [[sf31]] | Street Fighter III: New Generation | 2 |
+| [[sf32i]] | Street Fighter III: 2nd Impact - Giant Attack | 2 |
+| [[sf33s]] | Street Fighter III: 3rd Strike - Fight for the Future | 3 |
+| [[sf6]] | Street Fighter 6 | 29 |
+| [[sfa1]] | Street Fighter Alpha 1 | 5 |
+| [[sfa2]] | Street Fighter Alpha 2 | 3 |
+| [[sfa3]] | Street Fighter Alpha 3 | 64 |
+| [[snk-heroines-tag-team-frenzy]] | SNK Heroines: Tag Team Frenzy | 1 |
+| [[snk-vs-capcom-svc-chaos]] | SNK vs. Capcom: SVC Chaos | 1 |
+| [[ssf2]] | Super Street Fighter II: The New Challengers | 4 |
+| [[street-fighter-6]] | Street Fighter 6 | 22 |
+| [[street-fighter-alpha-3]] | Street Fighter Alpha 3 | 25 |
+| [[street-fighter-ex3]] | Street Fighter EX3 | 3 |
+| [[street-fighter-iii-3rd-strike]] | Street Fighter III: 3rd Strike | 19 |
+| [[street-fighter-v-champion-edition]] | Street Fighter V: Champion Edition | 4 |
+| [[super-street-fighter-ii-turbo]] | Super Street Fighter II Turbo | 17 |
+| [[t8]] | t8 | 40 |
+| [[tatsunoko-vs-capcom-ultimate-all-stars]] | Tatsunoko vs. Capcom: Ultimate All-Stars | 5 |
+| [[the-king-of-fighters-2000]] | The King of Fighters 2000 | 1 |
+| [[the-king-of-fighters-2001]] | The King of Fighters 2001 | 1 |
+| [[the-king-of-fighters-2002]] | The King of Fighters 2002 | 1 |
+| [[the-king-of-fighters-2003]] | The King of Fighters 2003 | 1 |
+| [[the-king-of-fighters-94]] | The King of Fighters  | 1 |
+| [[the-king-of-fighters-95]] | The King of Fighters  | 1 |
+| [[the-king-of-fighters-96]] | The King of Fighters  | 1 |
+| [[the-king-of-fighters-97]] | The King of Fighters  | 1 |
+| [[the-king-of-fighters-98]] | The King of Fighters  | 1 |
+| [[the-king-of-fighters-98-ultimate-match]] | The King of Fighters  | 8 |
+| [[the-king-of-fighters-99]] | The King of Fighters  | 1 |
+| [[the-king-of-fighters-xiii]] | The King of Fighters XIII | 1 |
+| [[the-king-of-fighters-xiv]] | The King of Fighters XIV | 1 |
+| [[the-king-of-fighters-xv]] | The King of Fighters XV | 4 |
+| [[the-last-blade]] | The Last Blade | 1 |
+| [[the-last-blade-2]] | The Last Blade 2 | 4 |
+| [[toshinden3]] | Toshinden3 | 26 |
+| [[ultimate-marvel-vs-capcom-3]] | Ultimate Marvel vs. Capcom 3 | 10 |
+| [[ultimate-mortal-kombat-3]] | Ultimate Mortal Kombat 3 | 1 |
+| [[ultra-street-fighter-iv]] | Ultra Street Fighter IV | 5 |
+| [[umvc3]] | Ultimate Marvel vs. Capcom 3 | 10 |
+| [[under-night-in-birth-ii-[sysceles]]] | Under Night In-Birth II [Sys:Celes] | 3 |
+| [[vampire-hunter-2-darkstalkers-revenge]] | Vampire Hunter 2: Darkstalkers | 3 |
+| [[vampire-savior-2-the-lord-of-vampire]] | Vampire Savior 2: The Lord of Vampire | 3 |
+| [[vampire-savior-the-lord-of-vampire]] | Vampire Savior: The Lord of Vampire | 15 |
+| [[vampirehunter2]] | Vampire Hunter 2 | 2 |
+| [[vampiresavior]] | Vampire Savior | 33 |
+| [[vampiresavior2]] | Vampire Savior 2 | 2 |
+| [[vf1]] | Virtua Fighter 1 - Complete Move List (Exhaustive) | 9 |
+| [[vf2]] | Vf2 | 10 |
+| [[vf3]] | Vf3 | 8 |
+| [[vf4]] | Vf4 | 7 |
+| [[vf5]] | Virtua Fighter 5 Ultimate Showdown - Complete Move List (Exhaustive) | 19 |
+| [[virtua-fighter]] | Virtua Fighter | 2 |
+| [[waku-waku-7]] | Waku Waku 7 | 1 |
+| [[world-heroes-perfect]] | World Heroes Perfect | 1 |
+| [[xmcoa]] | Xmcoa | 4 |
+| [[xmvsf]] | X-Men vs. Street Fighter | 5 |
 
 ---
 
-## 🥊 Characters (7 seed pages)
+## 🥊 Characters
 
-| Page | Character | Appearances |
-|------|-----------|-------------|
-| [[ryu]] | Ryu | SF6, SF2, SFα3, CvS2, CvS1, PF, CFJ |
-| [[ken]] | Ken Masters | SF6, SF2, SFα3, CvS2, PF, CFJ, CotW |
-| [[chun-li]] | Chun-Li | SF6, SF2, SFα3, CvS2, CvS1, PF, CotW |
-| [[terry-bogard]] | Terry Bogard | CotW, CvS2, CvS1, SF6 |
-| [[akuma]] | Akuma | SF6, SF2, SFα3, CvS2, CvS1, CFJ |
-| [[morrigan]] | Morrigan Aensland | DS, NW, VS, CvS1, CvS2, PF, CFJ |
-| [[mai-shiranui]] | Mai Shiranui | CotW, CvS2, CvS1, SF6 |
+*See individual game pages for raw character pointers. Character wiki pages are initialized dynamically during targeted source ingest to avoid empty namespace clustering.*
 
 ---
 
 ## ⚙️ Mechanics
 
-*No pages yet. Awaiting source ingest for Drive System, Heat System, etc.*
+*No pages yet.*
 
 ---
 
 ## 🗡️ Matchups
 
-*No pages yet. Awaiting analysis.*
+*No pages yet.*
 
 ---
 
 ## 🏛️ Archetypes
 
-*No pages yet. Planned: [[shoto]], [[grappler]], [[zoner]], [[rushdown]].*
+*No pages yet.*
 
 ---
 
 ## 📊 Comparisons
 
-*No pages yet. Planned: [[shoryuken-across-games]], [[throw-systems-compared]].*
+*No pages yet.*
 
 ---
 
 ## 📈 Meta
 
-*No pages yet. Awaiting tier list and meta sources.*
+*No pages yet.*
 
 ---
 
 ## 📓 Journal
 
-*No entries yet. Log your lab sessions and training observations here.*
+*No entries yet.*
 
 ---
 
 ## Statistics
 
-- **Total pages**: 26 (2 meta + 17 games + 7 characters)
-- **Games covered**: 17
-- **Characters with wiki pages**: 7 (of 300+ in the app)
-- **Coverage**: Seed stage — game pages complete, character pages for key cross-game fighters
+- **Total pages**: 170 (168 games)
+- **Games covered**: 168
 - **Last updated**: 2026-04-15

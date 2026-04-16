@@ -1,21 +1,22 @@
 ---
 title: "Guilty Gear X"
 type: game
-tags: [guilty-gear-x, snk]
-games: [guilty-gear-x]
+tags: [guilty-gear-x]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Guilty Gear X
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (2 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Ky Kiske, System Mechanics
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/guilty-gear-x/{character}.json` — parsed from `gg_legacy_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

@@ -1,21 +1,22 @@
 ---
 title: "Bloody Roar: Primal Fury / Extreme"
 type: game
-tags: [bloody-roar-primal-fury--extreme, hudson soft]
-games: [bloody-roar-primal-fury--extreme]
+tags: [bloody-roar-primal-fury--extreme]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Bloody Roar: Primal Fury / Extreme
 
-A classic fighting game by Hudson Soft.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Gado (Lion)
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/bloody-roar-primal-fury--extreme/{character}.json` — parsed from `bloody_roar_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

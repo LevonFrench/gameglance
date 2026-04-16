@@ -1,21 +1,22 @@
 ---
 title: "The King of Fighters 2002"
 type: game
-tags: [the-king-of-fighters-2002, snk]
-games: [the-king-of-fighters-2002]
+tags: [the-king-of-fighters-2002]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # The King of Fighters 2002
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Kula Diamond
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/the-king-of-fighters-2002/{character}.json` — parsed from `kof_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

@@ -7,8 +7,10 @@
             "name": "Hadouken",
             "type": "special",
             "inputs": [
-                "236",
-                "Attack"
+                "down",
+                "down-forward",
+                "forward",
+                "Attack (Air OK)"
             ]
         },
         {
@@ -16,8 +18,10 @@
             "name": "Shoryuken",
             "type": "special",
             "inputs": [
-                "623",
-                "Attack"
+                "forward",
+                "down",
+                "down-forward",
+                "Attack (Air OK)"
             ]
         },
         {
@@ -25,53 +29,43 @@
             "name": "Tatsumaki Senpukyaku",
             "type": "special",
             "inputs": [
-                "214",
-                "Attack (Ground or Air)"
+                "down",
+                "down-back",
+                "back",
+                "Attack (Air OK)"
             ]
         },
         {
-            "id": "hc_0",
+            "id": "sup_0",
             "name": "Shinku Hadouken",
             "type": "super",
             "inputs": [
-                "236",
-                "Any two Attacks (Ground or Air)"
+                "down",
+                "down-forward",
+                "forward",
+                "AT (Air OK)"
             ]
         },
         {
-            "id": "hc_1",
+            "id": "sup_1",
             "name": "Shinku Tatsumaki Senpukyaku",
             "type": "super",
             "inputs": [
-                "214",
-                "Any two Attacks"
+                "down",
+                "down-back",
+                "back",
+                "AT"
             ]
         },
         {
-            "id": "hc_2",
+            "id": "sup_2",
             "name": "Shin Shoryuken",
             "type": "super",
             "inputs": [
-                "623",
-                "Any two Attacks (Level 3)"
-            ]
-        },
-        {
-            "id": "um_0",
-            "name": "Baroque Combo",
-            "type": "unique",
-            "inputs": [
-                "P",
-                "Any Attack (During hit or block, spends red health)"
-            ]
-        },
-        {
-            "id": "um_1",
-            "name": "Mega Crash",
-            "type": "unique",
-            "inputs": [
-                "P",
-                "Any two Attacks (Costs 2 bars)"
+                "forward",
+                "down",
+                "down-forward",
+                "AT (Level 3)"
             ]
         }
     ],

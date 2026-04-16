@@ -1,8 +1,7 @@
 ---
 title: "Hyper Street Fighter II"
 type: game
-tags: [hypersf2, classic, capcom]
-games: [hypersf2]
+tags: [hypersf2]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
@@ -10,20 +9,14 @@ sources: 0
 
 # Hyper Street Fighter II
 
-Capcom's anniversary edition of Street Fighter II, released 2003. Allows players
-to select any version of each character from across the SF2 series
-(World Warrior through Super Turbo).
+## Overview
+*No overview generated yet.*
 
-## Roster
+## Characters (3 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Same core 17 characters as [[sf2]], but with multiple selectable versions per
-character spanning SF2: World Warrior, Champion Edition, Hyper Fighting,
-Super SF2, and Super Turbo.
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/hypersf2/` — data files present.
-
-## See Also
-
-- [[sf2]] — base game (Super Turbo version)
+## Meta
+*No meta/tier lists loaded.*

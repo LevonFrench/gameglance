@@ -1,21 +1,22 @@
 ---
 title: "Golden Axe: The Duel"
 type: game
-tags: [golden-axe-the-duel, sega]
-games: [golden-axe-the-duel]
+tags: [golden-axe-the-duel]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Golden Axe: The Duel
 
-A classic fighting game by Sega.
+## Overview
+*No overview generated yet.*
 
-## Roster (2 characters)
+## Characters (10 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Milan Flare, Death Adder
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/golden-axe-the-duel/{character}.json` — parsed from `sega_arcade_fighters.json`.
+## Meta
+*No meta/tier lists loaded.*

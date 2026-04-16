@@ -1,21 +1,22 @@
 ---
 title: "Samurai Shodown III: Blades of Blood"
 type: game
-tags: [samurai-shodown-iii-blades-of-blood, snk]
-games: [samurai-shodown-iii-blades-of-blood]
+tags: [samurai-shodown-iii-blades-of-blood]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Samurai Shodown III: Blades of Blood
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (2 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Haohmaru (Slash Style / Shura), Haohmaru (Bust Style / Rasetsu)
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/samurai-shodown-iii-blades-of-blood/{character}.json` — parsed from `samurai_shodown_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

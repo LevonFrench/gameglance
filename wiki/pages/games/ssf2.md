@@ -1,21 +1,22 @@
 ---
 title: "Super Street Fighter II: The New Challengers"
 type: game
-tags: [ssf2, capcom]
-games: [ssf2]
+tags: [ssf2]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Super Street Fighter II: The New Challengers
 
-A classic Capcom fighting game.
+## Overview
+*No overview generated yet.*
 
-## Roster (4 characters parsed here)
+## Characters (4 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Cammy, Fei Long, T. Hawk, Dee Jay
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/ssf2/{character}.json` — parsed from `faqs/sf_cps2_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

@@ -1,31 +1,73 @@
 {
-    "name": "Ken",
-    "special_moves": [
+    "game": "Marvel Super Heroes vs. Street Fighter",
+    "character": "Ken",
+    "movesList": [
         {
+            "id": "sp_0",
             "name": "Hadouken",
-            "input": "236 + P (Ground or Air)"
+            "type": "special",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "P (Air OK)"
+            ]
         },
         {
+            "id": "sp_1",
             "name": "Shoryuken",
-            "input": "623 + P"
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "P (Air OK)"
+            ]
         },
         {
+            "id": "sp_2",
             "name": "Tatsumaki Senpukyaku",
-            "input": "214 + K (Ground or Air)"
+            "type": "special",
+            "inputs": [
+                "down",
+                "down-back",
+                "back",
+                "K (Air OK)"
+            ]
+        },
+        {
+            "id": "sup_0",
+            "name": "Shoryu Reppa",
+            "type": "super",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "PP"
+            ]
+        },
+        {
+            "id": "sup_1",
+            "name": "Shinryuken",
+            "type": "super",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "KK (Tap buttons)"
+            ]
+        },
+        {
+            "id": "sup_2",
+            "name": "Shippu Jinraikyaku",
+            "type": "super",
+            "inputs": [
+                "down",
+                "down-back",
+                "back",
+                "KK"
+            ]
         }
     ],
-    "hyper_combos": [
-        {
-            "name": "Shoryureppa",
-            "input": "236 + PP"
-        },
-        {
-            "name": "Shinryuken",
-            "input": "236 + KK (Tap P/K rapidly)"
-        },
-        {
-            "name": "Shippu Jinraikyaku",
-            "input": "214 + KK"
-        }
-    ]
+    "combosList": []
 }

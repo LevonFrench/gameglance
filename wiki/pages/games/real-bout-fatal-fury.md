@@ -1,21 +1,22 @@
 ---
 title: "Real Bout Fatal Fury"
 type: game
-tags: [real-bout-fatal-fury, snk]
-games: [real-bout-fatal-fury]
+tags: [real-bout-fatal-fury]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Real Bout Fatal Fury
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Terry Bogard
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/real-bout-fatal-fury/{character}.json` — parsed from `fatal_fury_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

@@ -1,21 +1,22 @@
 ---
 title: "BlazBlue: Central Fiction"
 type: game
-tags: [blazblue-central-fiction, snk]
-games: [blazblue-central-fiction]
+tags: [blazblue-central-fiction]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # BlazBlue: Central Fiction
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (3 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Ragna the Bloodedge
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/blazblue-central-fiction/{character}.json` — parsed from `bbcf_movelist.json`.
+## Meta
+*No meta/tier lists loaded.*

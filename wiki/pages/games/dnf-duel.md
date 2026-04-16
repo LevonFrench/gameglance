@@ -1,21 +1,22 @@
 ---
 title: "DNF Duel"
 type: game
-tags: [dnf-duel, snk]
-games: [dnf-duel]
+tags: [dnf-duel]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # DNF Duel
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (4 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Striker
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/dnf-duel/{character}.json` — parsed from `dnf_duel_movelist.json`.
+## Meta
+*No meta/tier lists loaded.*

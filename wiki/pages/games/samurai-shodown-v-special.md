@@ -1,21 +1,22 @@
 ---
 title: "Samurai Shodown V Special"
 type: game
-tags: [samurai-shodown-v-special, snk]
-games: [samurai-shodown-v-special]
+tags: [samurai-shodown-v-special]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Samurai Shodown V Special
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (2 characters)
+## Characters (2 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Galford, Mina Majikina
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/samurai-shodown-v-special/{character}.json` — parsed from `samurai_shodown_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

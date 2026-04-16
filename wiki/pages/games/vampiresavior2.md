@@ -1,21 +1,22 @@
 ---
 title: "Vampire Savior 2"
 type: game
-tags: [vampiresavior2, crossover, capcom]
-games: [vampiresavior2]
+tags: [vampiresavior2]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Vampire Savior 2
 
-A classic Capcom fighting game.
+## Overview
+*No overview generated yet.*
 
-## Roster (2 characters parsed here)
+## Characters (2 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Jedah, B.B. Hood (Bulleta)
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/vampiresavior2/{character}.json` — parsed from `faqs/capcom_crossover_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

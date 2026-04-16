@@ -1,21 +1,22 @@
 ---
 title: "Mortal Kombat (2011)"
 type: game
-tags: [mortal-kombat-(2011), netherrealm studios]
-games: [mortal-kombat-(2011)]
+tags: [mortal-kombat-(2011)]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Mortal Kombat (2011)
 
-A classic fighting game by NetherRealm Studios.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Sub-Zero
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/mortal-kombat-(2011)/{character}.json` — parsed from `mk9_movelist.json`.
+## Meta
+*No meta/tier lists loaded.*

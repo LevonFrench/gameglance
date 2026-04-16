@@ -1,21 +1,22 @@
 ---
-title: "The King of Fighters '98"
+title: "The King of Fighters "
 type: game
-tags: [the-king-of-fighters-98, snk]
-games: [the-king-of-fighters-98]
+tags: [the-king-of-fighters-98]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
-# The King of Fighters '98
+# The King of Fighters 
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Rugal Bernstein
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/the-king-of-fighters-98/{character}.json` — parsed from `kof_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

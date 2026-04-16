@@ -1,8 +1,7 @@
 ---
 title: "Vampire Savior"
 type: game
-tags: [vampiresavior, classic, capcom, darkstalkers-series]
-games: [vampiresavior]
+tags: [vampiresavior]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
@@ -10,30 +9,14 @@ sources: 0
 
 # Vampire Savior
 
-Third and final mainline Darkstalkers entry, released 1997. Considered the peak of
-the series competitively. Features the Dark Force system.
+## Overview
+*No overview generated yet.*
 
-## Roster (19 characters)
+## Characters (33 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-ES, EX, Morrigan Aensland, Anakaris, Bishamon, Bulleta (B.B. Hood), Felicia,
-Gallon (Jon Talbain), Victor Gerdenheim, Lei-Lei (Hsien-Ko), Jedah, Lilith,
-Lord Zabel (Lord Raptor), Demitri Maximoff, Q-Bee, Aulbath (Rikuo),
-Sasquatch, Donovan, Pyron.
+## Mechanics
+*No mechanics mapped.*
 
-## Move Categories
-
-**Normal Moves**, **Special Moves**, **Super Arts**.
-
-## Core Mechanics
-
-- **Dark Force** — character-specific power-up mode
-- **Round system** — continuous rounds (no round breaks)
-
-## Data Source
-
-Character data: `public/data/vampiresavior/{character}.json` — 19 characters.
-
-## See Also
-
-- [[darkstalkers]], [[nightwarriors]] — predecessors
-- [[cfj]] — crossover featuring Jedah, Demitri, Felicia, Anakaris
+## Meta
+*No meta/tier lists loaded.*

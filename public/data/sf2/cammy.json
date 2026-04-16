@@ -1,257 +1,266 @@
 {
-  "game": "Super Street Fighter II Turbo",
-  "character": "Cammy",
-  "theme_colors": {
-    "normal": "#60a5fa",
-    "special": "#f59e0b",
-    "super_fatality": "#ef4444"
-  },
-  "movesList": [
-    {
-      "id": "cammy_normal_0",
-      "name": "Standing Light Punch",
-      "type": "normal",
-      "inputs": [
-        "LP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_1",
-      "name": "Standing Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "MP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_2",
-      "name": "Standing Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "HP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_3",
-      "name": "Standing Light Kick",
-      "type": "normal",
-      "inputs": [
-        "LK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_4",
-      "name": "Standing Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "MK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_5",
-      "name": "Standing Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "HK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_6",
-      "name": "Crouching Light Punch",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "LP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_7",
-      "name": "Crouching Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "MP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_8",
-      "name": "Crouching Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "HP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_9",
-      "name": "Crouching Light Kick",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "LK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_10",
-      "name": "Crouching Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "MK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_11",
-      "name": "Crouching Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "HK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_12",
-      "name": "Jumping Light Punch",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "LP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_13",
-      "name": "Jumping Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "MP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_14",
-      "name": "Jumping Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "HP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_15",
-      "name": "Jumping Light Kick",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "LK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_16",
-      "name": "Jumping Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "MK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_normal_17",
-      "name": "Jumping Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "HK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_spin_knuckle_0",
-      "name": "Spin Knuckle",
-      "type": "special",
-      "inputs": [
-        "b",
-        "down-back",
-        "d",
-        "down-forward",
-        "f",
-        "any punch"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_cannon_drill_1",
-      "name": "Cannon Drill",
-      "type": "special",
-      "inputs": [
-        "d",
-        "down-forward",
-        "f",
-        "any kick"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_cannon_spike_2",
-      "name": "Cannon Spike",
-      "type": "special",
-      "inputs": [
-        "f",
-        "d",
-        "down-forward",
-        "any kick"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_hooligan_3",
-      "name": "Hooligan",
-      "type": "special",
-      "inputs": [
-        "b",
-        "down-back",
-        "d",
-        "down-forward",
-        "f",
-        "up-forward",
-        "any punch"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_throw_4",
-      "name": "Throw",
-      "type": "special",
-      "inputs": [
-        "during hooligan press kick"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "cammy_cancel_5",
-      "name": "Cancel",
-      "type": "special",
-      "inputs": [
-        "during hooligan press kick before she begins the downward part"
-      ],
-      "frameData": {}
-    }
-  ],
-  "combosList": []
+    "game": "sf2",
+    "character": "Cammy",
+    "movesList": [
+        {
+            "id": "sp_0",
+            "name": "Spiral Arrow",
+            "type": "special",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_1",
+            "name": "Cannon Spike",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "any",
+                "kick"
+            ]
+        },
+        {
+            "id": "sp_2",
+            "name": "Axle Spin Knuckle",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down-forward",
+                "down",
+                "P"
+            ]
+        },
+        {
+            "id": "sp_3",
+            "name": "Hooligan Combination",
+            "type": "special",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "up-forward",
+                "P"
+            ]
+        },
+        {
+            "id": "sp_0",
+            "name": "Standing Light Punch",
+            "type": "normal",
+            "inputs": [
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_1",
+            "name": "Standing Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_2",
+            "name": "Standing Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_3",
+            "name": "Standing Light Kick",
+            "type": "normal",
+            "inputs": [
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_4",
+            "name": "Standing Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_5",
+            "name": "Standing Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_6",
+            "name": "Crouching Light Punch",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_7",
+            "name": "Crouching Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_8",
+            "name": "Crouching Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_9",
+            "name": "Crouching Light Kick",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_10",
+            "name": "Crouching Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_11",
+            "name": "Crouching Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_12",
+            "name": "Jumping Light Punch",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_13",
+            "name": "Jumping Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_14",
+            "name": "Jumping Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_15",
+            "name": "Jumping Light Kick",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_16",
+            "name": "Jumping Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_17",
+            "name": "Jumping Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_18",
+            "name": "Spin Knuckle",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "forward",
+                "down-back",
+                "down-forward",
+                "any",
+                "punch"
+            ]
+        },
+        {
+            "id": "sp_19",
+            "name": "Cannon Drill",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "any",
+                "kick"
+            ]
+        },
+        {
+            "id": "sp_21",
+            "name": "Hooligan",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "forward",
+                "down-back",
+                "down-forward",
+                "up-forward",
+                "any",
+                "punch"
+            ]
+        },
+        {
+            "id": "sp_22",
+            "name": "Throw",
+            "type": "throw",
+            "inputs": [
+                "during hooligan press kick"
+            ]
+        },
+        {
+            "id": "sp_23",
+            "name": "Cancel",
+            "type": "special",
+            "inputs": [
+                "during hooligan press kick before she begins the downward part"
+            ]
+        }
+    ],
+    "combosList": []
 }

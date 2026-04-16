@@ -1,21 +1,22 @@
 ---
 title: "Granblue Fantasy Versus: Rising"
 type: game
-tags: [granblue-fantasy-versus-rising, snk]
-games: [granblue-fantasy-versus-rising]
+tags: [granblue-fantasy-versus-rising]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Granblue Fantasy Versus: Rising
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (3 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Gran
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/granblue-fantasy-versus-rising/{character}.json` — parsed from `gbvsr_movelist.json`.
+## Meta
+*No meta/tier lists loaded.*

@@ -1,21 +1,22 @@
 ---
-title: "The King of Fighters '96"
+title: "The King of Fighters "
 type: game
-tags: [the-king-of-fighters-96, snk]
-games: [the-king-of-fighters-96]
+tags: [the-king-of-fighters-96]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
-# The King of Fighters '96
+# The King of Fighters 
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Chizuru Kagura
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/the-king-of-fighters-96/{character}.json` — parsed from `kof_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

@@ -1,30 +1,22 @@
 ---
 title: "Street Fighter Alpha 1"
 type: game
-tags: [sfa1, classic, capcom]
-games: [sfa1]
+tags: [sfa1]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Street Fighter Alpha 1
 
-A classic Capcom fighting game.
+## Overview
+*No overview generated yet.*
 
-## Roster (5 characters)
+## Characters (5 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Ryu, Ken, Chun-Li, Charlie (Nash), Akuma (Gouki)
+## Mechanics
+*No mechanics mapped.*
 
-## Move Categories
-
-**Special Moves**, **Super Combos**.
-
-## Data Source
-
-Character data: `public/data/sfa1/{character}.json` — 5 characters parsed from `faqs/sfa_movelists.json`.
-
-## See Also
-
-- [[sf2]]
-- [[sfa3]]
+## Meta
+*No meta/tier lists loaded.*

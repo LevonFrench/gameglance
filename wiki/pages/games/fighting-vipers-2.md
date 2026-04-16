@@ -1,21 +1,22 @@
 ---
 title: "Fighting Vipers 2"
 type: game
-tags: [fighting-vipers-2, sega]
-games: [fighting-vipers-2]
+tags: [fighting-vipers-2]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Fighting Vipers 2
 
-A classic fighting game by Sega.
+## Overview
+*No overview generated yet.*
 
-## Roster (3 characters)
+## Characters (2 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Emi, Charlie, System Mechanics
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/fighting-vipers-2/{character}.json` — parsed from `sega_arcade_fighters.json`.
+## Meta
+*No meta/tier lists loaded.*

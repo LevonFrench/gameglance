@@ -1,21 +1,22 @@
 ---
 title: "The King of Fighters 2003"
 type: game
-tags: [the-king-of-fighters-2003, snk]
-games: [the-king-of-fighters-2003]
+tags: [the-king-of-fighters-2003]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # The King of Fighters 2003
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Ash Crimson
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/the-king-of-fighters-2003/{character}.json` — parsed from `kof_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

@@ -7,8 +7,10 @@
             "name": "Judgment Cut",
             "type": "special",
             "inputs": [
-                "236",
-                "L, M, or H (Ground or Air)"
+                "down",
+                "down-forward",
+                "forward",
+                "L or M or H (Air OK)"
             ]
         },
         {
@@ -16,8 +18,10 @@
             "name": "Rapid Slash",
             "type": "special",
             "inputs": [
-                "236",
-                "L, M, or H"
+                "forward",
+                "down",
+                "down-forward",
+                "L or M or H"
             ]
         },
         {
@@ -25,9 +29,10 @@
             "name": "Trick (Teleport)",
             "type": "special",
             "inputs": [
-                "623",
-                "L, M, or H / 421",
-                "L, M, or H"
+                "down",
+                "down-back",
+                "back",
+                "L or M or H (Air OK)"
             ]
         },
         {
@@ -42,39 +47,47 @@
             ]
         },
         {
-            "id": "hc_0",
+            "id": "sup_0",
             "name": "Dimension Slash",
             "type": "super",
             "inputs": [
-                "236",
-                "Any two Attacks (Ground or Air)"
+                "down",
+                "down-forward",
+                "forward",
+                "AT (Air OK)"
             ]
         },
         {
-            "id": "hc_1",
+            "id": "sup_1",
             "name": "Spiral Swords",
             "type": "super",
             "inputs": [
-                "214",
-                "Any two Attacks"
+                "down",
+                "down-back",
+                "back",
+                "AT"
             ]
         },
         {
-            "id": "hc_2",
+            "id": "sup_2",
             "name": "Devil Trigger",
             "type": "super",
             "inputs": [
-                "22",
-                "Any two Attacks"
+                "down",
+                "down-back",
+                "back",
+                "S"
             ]
         },
         {
-            "id": "hc_3",
+            "id": "sup_3",
             "name": "Dark Angel",
             "type": "super",
             "inputs": [
-                "623",
-                "Any two Attacks (Level 3)"
+                "forward",
+                "down",
+                "down-forward",
+                "AT (Level 3)"
             ]
         }
     ],

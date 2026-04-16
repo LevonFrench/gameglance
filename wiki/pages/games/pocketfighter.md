@@ -1,8 +1,7 @@
 ---
 title: "Pocket Fighter"
 type: game
-tags: [pocketfighter, classic, capcom, chibi]
-games: [pocketfighter]
+tags: [pocketfighter]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
@@ -10,28 +9,14 @@ sources: 0
 
 # Pocket Fighter
 
-Capcom's chibi-style crossover fighter, released 1997. Features super-deformed
-versions of Street Fighter and Darkstalkers characters with gem-based power-ups.
+## Overview
+*No overview generated yet.*
 
-## Roster (12 characters)
+## Characters (17 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Ryu, Ken, Chun-Li, Sakura, Felicia, Morrigan, Zangief, Ibuki, Hsien-Ko (Lei Lei),
-Tessa, Dan, Akuma (Gouki).
+## Mechanics
+*No mechanics mapped.*
 
-## Move Categories
-
-**Normal Moves**, **Special Moves**, **Super Arts**.
-
-## Core Mechanics
-
-- **Gem System** — collect gems to power up attacks
-- **Flash Combos** — unique combo strings with costume-change animations
-
-## Data Source
-
-Character data: `public/data/pocketfighter/{character}.json` — 12 characters.
-
-## See Also
-
-- [[sf6]], [[sfa3]] — Street Fighter characters
-- [[darkstalkers]] — Darkstalkers characters (Morrigan, Felicia, Hsien-Ko)
+## Meta
+*No meta/tier lists loaded.*

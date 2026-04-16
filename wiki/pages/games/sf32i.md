@@ -1,21 +1,22 @@
 ---
 title: "Street Fighter III: 2nd Impact - Giant Attack"
 type: game
-tags: [sf32i, capcom]
-games: [sf32i]
+tags: [sf32i]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Street Fighter III: 2nd Impact - Giant Attack
 
-A classic Capcom fighting game.
+## Overview
+*No overview generated yet.*
 
-## Roster (2 characters parsed here)
+## Characters (2 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Hugo, Urien
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/sf32i/{character}.json` — parsed from `faqs/sf3_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

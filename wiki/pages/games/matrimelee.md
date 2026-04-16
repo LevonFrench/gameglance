@@ -1,21 +1,22 @@
 ---
 title: "Matrimelee (Power Instinct Matrimelee)"
 type: game
-tags: [matrimelee, snk]
-games: [matrimelee]
+tags: [matrimelee]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Matrimelee (Power Instinct Matrimelee)
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Keith Wayne
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/matrimelee/{character}.json` — parsed from `neogeo_remaining_fighters.json`.
+## Meta
+*No meta/tier lists loaded.*

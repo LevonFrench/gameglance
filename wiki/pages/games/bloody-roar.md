@@ -1,21 +1,22 @@
 ---
 title: "Bloody Roar"
 type: game
-tags: [bloody-roar, hudson soft]
-games: [bloody-roar]
+tags: [bloody-roar]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Bloody Roar
 
-A classic fighting game by Hudson Soft.
+## Overview
+*No overview generated yet.*
 
-## Roster (2 characters)
+## Characters (4 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Yugo (Wolf), Alice (Rabbit)
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/bloody-roar/{character}.json` — parsed from `bloody_roar_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

@@ -1,21 +1,22 @@
 ---
 title: "Last Bronx"
 type: game
-tags: [last-bronx, sega]
-games: [last-bronx]
+tags: [last-bronx]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Last Bronx
 
-A classic fighting game by Sega.
+## Overview
+*No overview generated yet.*
 
-## Roster (2 characters)
+## Characters (9 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Yusaku, Yoko
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/last-bronx/{character}.json` — parsed from `sega_arcade_fighters.json`.
+## Meta
+*No meta/tier lists loaded.*

@@ -1,5 +1,5 @@
 {
-    "game": "Guilty Gear -Strive- (Ver. 2.00)",
+    "game": "Guilty Gear -Strive-",
     "character": "Ky Kiske",
     "movesList": [
         {
@@ -7,26 +7,32 @@
             "name": "Stun Edge",
             "type": "special",
             "inputs": [
-                "236",
-                "S"
+                "down",
+                "down-forward",
+                "forward",
+                "S (Air OK)"
             ]
         },
         {
             "id": "sp_1",
-            "name": "Stun Edge Charge Attack",
+            "name": "Charged Stun Edge",
             "type": "special",
             "inputs": [
-                "236",
-                "HS"
+                "down",
+                "down-forward",
+                "forward",
+                "H"
             ]
         },
         {
             "id": "sp_2",
-            "name": "Aerial Stun Edge",
+            "name": "Vapor Thrust",
             "type": "special",
             "inputs": [
-                "(In Air) 236",
-                "S or HS"
+                "forward",
+                "down",
+                "down-forward",
+                "S or H (Air OK)"
             ]
         },
         {
@@ -34,7 +40,9 @@
             "name": "Stun Dipper",
             "type": "special",
             "inputs": [
-                "236",
+                "down",
+                "down-forward",
+                "forward",
                 "K"
             ]
         },
@@ -43,25 +51,20 @@
             "name": "Foudre Arc",
             "type": "special",
             "inputs": [
-                "214",
+                "down",
+                "down-back",
+                "back",
                 "K"
             ]
         },
         {
             "id": "sp_5",
-            "name": "Vapor Thrust",
-            "type": "special",
-            "inputs": [
-                "623",
-                "S or HS (Air OK)"
-            ]
-        },
-        {
-            "id": "sp_6",
             "name": "Dire Eclat",
             "type": "special",
             "inputs": [
-                "214",
+                "down",
+                "down-back",
+                "back",
                 "S"
             ]
         },
@@ -70,8 +73,13 @@
             "name": "Ride the Lightning",
             "type": "super",
             "inputs": [
-                "632146",
-                "HS (Air OK)"
+                "forward",
+                "down-forward",
+                "down",
+                "down-back",
+                "back",
+                "forward",
+                "H (Air OK)"
             ]
         },
         {
@@ -79,8 +87,13 @@
             "name": "Sacred Edge",
             "type": "super",
             "inputs": [
-                "236236",
-                "P"
+                "down",
+                "down-forward",
+                "forward",
+                "down",
+                "down-forward",
+                "forward",
+                "P (Air OK)"
             ]
         },
         {
@@ -88,8 +101,13 @@
             "name": "Dragon Install",
             "type": "super",
             "inputs": [
-                "214214",
-                "HS (Requires 30% HP or less)"
+                "down",
+                "down-back",
+                "back",
+                "down",
+                "down-back",
+                "back",
+                "H (Low HP only)"
             ]
         }
     ],

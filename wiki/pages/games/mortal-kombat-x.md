@@ -1,21 +1,22 @@
 ---
 title: "Mortal Kombat X"
 type: game
-tags: [mortal-kombat-x, netherrealm studios]
-games: [mortal-kombat-x]
+tags: [mortal-kombat-x]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Mortal Kombat X
 
-A classic fighting game by NetherRealm Studios.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Scorpion
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/mortal-kombat-x/{character}.json` — parsed from `mkx_movelist.json`.
+## Meta
+*No meta/tier lists loaded.*

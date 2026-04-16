@@ -1,21 +1,22 @@
 ---
 title: "The Last Blade 2"
 type: game
-tags: [the-last-blade-2, snk]
-games: [the-last-blade-2]
+tags: [the-last-blade-2]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # The Last Blade 2
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (4 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Moriya Minakata
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/the-last-blade-2/{character}.json` — parsed from `neogeo_remaining_fighters.json`.
+## Meta
+*No meta/tier lists loaded.*

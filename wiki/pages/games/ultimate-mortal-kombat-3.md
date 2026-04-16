@@ -1,21 +1,22 @@
 ---
 title: "Ultimate Mortal Kombat 3"
 type: game
-tags: [ultimate-mortal-kombat-3, netherrealm studios]
-games: [ultimate-mortal-kombat-3]
+tags: [ultimate-mortal-kombat-3]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Ultimate Mortal Kombat 3
 
-A classic fighting game by NetherRealm Studios.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Smoke (Human)
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/ultimate-mortal-kombat-3/{character}.json` — parsed from `mk_classic_arcade.json`.
+## Meta
+*No meta/tier lists loaded.*

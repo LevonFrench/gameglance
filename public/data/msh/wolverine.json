@@ -1,27 +1,38 @@
 {
-    "name": "Wolverine",
-    "special_moves": [
+    "game": "Marvel Super Heroes",
+    "character": "Wolverine",
+    "movesList": [
         {
+            "id": "sp_0",
             "name": "Berserker Barrage",
-            "input": "236 + P"
+            "type": "special",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "P"
+            ]
         },
         {
+            "id": "sp_1",
             "name": "Tornado Claw",
-            "input": "623 + P"
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "P"
+            ]
         },
         {
+            "id": "sp_2",
             "name": "Drill Claw",
-            "input": "Direction + MP+MK or HP+HK"
+            "type": "special",
+            "inputs": [
+                "Direction",
+                "LP+MK (Air OK)"
+            ]
         }
     ],
-    "super_combos": [
-        {
-            "name": "Berserker Barrage X",
-            "input": "236 + PP"
-        },
-        {
-            "name": "Weapon X",
-            "input": "623 + PP"
-        }
-    ]
+    "combosList": []
 }

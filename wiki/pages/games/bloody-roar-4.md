@@ -1,21 +1,22 @@
 ---
 title: "Bloody Roar 4"
 type: game
-tags: [bloody-roar-4, hudson soft]
-games: [bloody-roar-4]
+tags: [bloody-roar-4]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Bloody Roar 4
 
-A classic fighting game by Hudson Soft.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Nagi (Spurious)
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/bloody-roar-4/{character}.json` — parsed from `bloody_roar_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

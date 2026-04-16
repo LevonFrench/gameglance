@@ -7,7 +7,9 @@
             "name": "Hadouken",
             "type": "special",
             "inputs": [
-                "236",
+                "down",
+                "down-forward",
+                "forward",
                 "P"
             ]
         },
@@ -16,7 +18,9 @@
             "name": "Shoryuken",
             "type": "special",
             "inputs": [
-                "623",
+                "forward",
+                "down",
+                "down-forward",
                 "P"
             ]
         },
@@ -25,7 +29,9 @@
             "name": "Tatsumaki Senpukyaku",
             "type": "special",
             "inputs": [
-                "214",
+                "down",
+                "down-back",
+                "back",
                 "K"
             ]
         },
@@ -34,16 +40,19 @@
             "name": "Hashogeki",
             "type": "special",
             "inputs": [
-                "214",
+                "down",
+                "down-back",
+                "back",
                 "P"
             ]
         },
         {
             "id": "sp_4",
             "name": "Denjin Charge",
-            "type": "special",
+            "type": "super",
             "inputs": [
-                "22",
+                "down",
+                "down",
                 "P"
             ]
         },
@@ -52,7 +61,12 @@
             "name": "Shinku Hadouken (Lv.1)",
             "type": "super",
             "inputs": [
-                "236236",
+                "down",
+                "down-forward",
+                "forward",
+                "down",
+                "down-forward",
+                "forward",
                 "P"
             ]
         },
@@ -61,7 +75,12 @@
             "name": "Shin Hashogeki (Lv.2)",
             "type": "super",
             "inputs": [
-                "214214",
+                "down",
+                "down-back",
+                "back",
+                "down",
+                "down-back",
+                "back",
                 "P"
             ]
         },
@@ -70,34 +89,13 @@
             "name": "Shin Shoryuken (Lv.3)",
             "type": "super",
             "inputs": [
-                "236236",
+                "down",
+                "down-forward",
+                "forward",
+                "down",
+                "down-forward",
+                "forward",
                 "K"
-            ]
-        },
-        {
-            "id": "um_0",
-            "name": "Drive Impact",
-            "type": "unique",
-            "inputs": [
-                "HP",
-                "HK"
-            ]
-        },
-        {
-            "id": "um_1",
-            "name": "Drive Parry",
-            "type": "unique",
-            "inputs": [
-                "MP",
-                "MK"
-            ]
-        },
-        {
-            "id": "um_2",
-            "name": "Drive Rush",
-            "type": "unique",
-            "inputs": [
-                "66 (from Parry or cancelable normal)"
             ]
         }
     ],

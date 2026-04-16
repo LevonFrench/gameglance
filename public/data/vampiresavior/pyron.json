@@ -1,458 +1,323 @@
 {
-  "game": "Vampire Savior",
-  "character": "PYRON",
-  "theme_colors": {
-    "normal": "#818cf8",
-    "special": "#e879f9",
-    "super_fatality": "#f43f5e"
-  },
-  "movesList": [
-    {
-      "id": "pyron_normal_0",
-      "name": "Standing Light Punch",
-      "type": "normal",
-      "inputs": [
-        "LP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_1",
-      "name": "Standing Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "MP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_2",
-      "name": "Standing Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "HP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_3",
-      "name": "Standing Light Kick",
-      "type": "normal",
-      "inputs": [
-        "LK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_4",
-      "name": "Standing Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "MK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_5",
-      "name": "Standing Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "HK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_6",
-      "name": "Crouching Light Punch",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "LP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_7",
-      "name": "Crouching Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "MP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_8",
-      "name": "Crouching Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "HP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_9",
-      "name": "Crouching Light Kick",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "LK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_10",
-      "name": "Crouching Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "MK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_11",
-      "name": "Crouching Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "HK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_12",
-      "name": "Jumping Light Punch",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "LP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_13",
-      "name": "Jumping Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "MP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_14",
-      "name": "Jumping Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "HP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_15",
-      "name": "Jumping Light Kick",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "LK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_16",
-      "name": "Jumping Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "MK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_normal_17",
-      "name": "Jumping Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "HK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_soul_smasher_0",
-      "name": "SOUL SMASHER",
-      "type": "special",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "P([[air]])"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_zodiac_fire_1",
-      "name": "ZODIAC FIRE",
-      "type": "special",
-      "inputs": [
-        "f",
-        "down",
-        "down-forward",
-        "forward",
-        "P"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_orbital_blaze_2",
-      "name": "ORBITAL BLAZE",
-      "type": "special",
-      "inputs": [
-        "down",
-        "down-back",
-        "back",
-        "P([[air]] only)"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_galactic_voyage_3",
-      "name": "GALACTIC VOYAGE",
-      "type": "special",
-      "inputs": [
-        "b",
-        "down",
-        "down-back",
-        "back",
-        "P or K"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_guard_cancel_4",
-      "name": "GUARD CANCEL",
-      "type": "special",
-      "inputs": [
-        "forward",
-        "down",
-        "down-forward f",
-        "P"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_ice_laser_5",
-      "name": "ICE LASER",
-      "type": "super",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "P"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_ice_laser_6",
-      "name": "ICE LASER",
-      "type": "super",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "K"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_bomb_7",
-      "name": "BOMB",
-      "type": "super",
-      "inputs": [
-        "down",
-        "down-back",
-        "back",
-        "P([[air]])"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_laser_combo_8",
-      "name": "LASER COMBO",
-      "type": "super",
-      "inputs": [
-        "b",
-        "down",
-        "down-back",
-        "back",
-        "P"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_grenade_9",
-      "name": "GRENADE",
-      "type": "super",
-      "inputs": [
-        "down",
-        "down-back",
-        "back",
-        "K([[air]] only)"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_guard_cancel_10",
-      "name": "GUARD CANCEL",
-      "type": "super",
-      "inputs": [
-        "f",
-        "down",
-        "down-forward",
-        "forward",
-        "P"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_soul_smasher_11",
-      "name": "SOUL SMASHER",
-      "type": "special",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "P([[air]])"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_zodiac_fire_12",
-      "name": "ZODIAC FIRE",
-      "type": "special",
-      "inputs": [
-        "f",
-        "down",
-        "down-forward",
-        "forward",
-        "P"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_orbital_blaze_13",
-      "name": "ORBITAL BLAZE",
-      "type": "special",
-      "inputs": [
-        "down",
-        "down-back",
-        "back",
-        "P([[air]] only)"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_galactic_voyage_14",
-      "name": "GALACTIC VOYAGE",
-      "type": "special",
-      "inputs": [
-        "b",
-        "down",
-        "down-back",
-        "back",
-        "P or K"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_guard_cancel_15",
-      "name": "GUARD CANCEL",
-      "type": "special",
-      "inputs": [
-        "forward",
-        "down",
-        "down-forward f",
-        "P"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_ice_laser_16",
-      "name": "ICE LASER",
-      "type": "super",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "P"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_ice_laser_17",
-      "name": "ICE LASER",
-      "type": "super",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "K"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_bomb_18",
-      "name": "BOMB",
-      "type": "super",
-      "inputs": [
-        "down",
-        "down-back",
-        "back",
-        "P([[air]])"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_laser_combo_19",
-      "name": "LASER COMBO",
-      "type": "super",
-      "inputs": [
-        "b",
-        "down",
-        "down-back",
-        "back",
-        "P"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_grenade_20",
-      "name": "GRENADE",
-      "type": "super",
-      "inputs": [
-        "down",
-        "down-back",
-        "back",
-        "K([[air]] only)"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "pyron_guard_cancel_21",
-      "name": "GUARD CANCEL",
-      "type": "super",
-      "inputs": [
-        "f",
-        "down",
-        "down-forward",
-        "forward",
-        "P"
-      ],
-      "frameData": {}
-    }
-  ],
-  "combosList": []
+    "game": "vampiresavior",
+    "character": "PYRON",
+    "movesList": [
+        {
+            "id": "sp_0",
+            "name": "Soul Smasher",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "P([[air]])"
+            ]
+        },
+        {
+            "id": "sp_1",
+            "name": "Zodiac Fire",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "P"
+            ]
+        },
+        {
+            "id": "sp_2",
+            "name": "Orbital Blaze",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "P([[air]]",
+                "only)"
+            ]
+        },
+        {
+            "id": "sp_3",
+            "name": "Planet Burning",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down-forward",
+                "down",
+                "down-back",
+                "back",
+                "P (Close)"
+            ]
+        },
+        {
+            "id": "ex_0",
+            "name": "Cosmo Flare",
+            "type": "special",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "down",
+                "down-forward",
+                "forward",
+                "P"
+            ]
+        },
+        {
+            "id": "ex_1",
+            "name": "Shining Delta",
+            "type": "special",
+            "inputs": [
+                "(In Air)",
+                "down",
+                "down-forward",
+                "forward",
+                "down",
+                "down-forward",
+                "forward",
+                "P"
+            ]
+        },
+        {
+            "id": "sp_0",
+            "name": "Standing Light Punch",
+            "type": "normal",
+            "inputs": [
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_1",
+            "name": "Standing Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_2",
+            "name": "Standing Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_3",
+            "name": "Standing Light Kick",
+            "type": "normal",
+            "inputs": [
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_4",
+            "name": "Standing Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_5",
+            "name": "Standing Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_6",
+            "name": "Crouching Light Punch",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_7",
+            "name": "Crouching Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_8",
+            "name": "Crouching Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_9",
+            "name": "Crouching Light Kick",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_10",
+            "name": "Crouching Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_11",
+            "name": "Crouching Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_12",
+            "name": "Jumping Light Punch",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_13",
+            "name": "Jumping Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_14",
+            "name": "Jumping Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_15",
+            "name": "Jumping Light Kick",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_16",
+            "name": "Jumping Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_17",
+            "name": "Jumping Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_21",
+            "name": "GALACTIC VOYAGE",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "back",
+                "down-back",
+                "P",
+                "or",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_22",
+            "name": "GUARD CANCEL",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "P"
+            ]
+        },
+        {
+            "id": "sup_0",
+            "name": "ICE LASER",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "P"
+            ]
+        },
+        {
+            "id": "sup_1",
+            "name": "ICE LASER",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "K"
+            ]
+        },
+        {
+            "id": "sup_2",
+            "name": "BOMB",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "P([[air]])"
+            ]
+        },
+        {
+            "id": "sup_3",
+            "name": "LASER COMBO",
+            "type": "super",
+            "inputs": [
+                "back",
+                "down",
+                "back",
+                "down-back",
+                "P"
+            ]
+        },
+        {
+            "id": "sup_4",
+            "name": "GRENADE",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "K([[air]]",
+                "only)"
+            ]
+        }
+    ],
+    "combosList": []
 }

@@ -1,21 +1,22 @@
 ---
 title: "Dead or Alive 3"
 type: game
-tags: [dead-or-alive-3, tecmo]
-games: [dead-or-alive-3]
+tags: [dead-or-alive-3]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Dead or Alive 3
 
-A classic fighting game by Tecmo.
+## Overview
+*No overview generated yet.*
 
-## Roster (3 characters)
+## Characters (2 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Christie, Brad Wong, System Mechanics
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/dead-or-alive-3/{character}.json` — parsed from `doa_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

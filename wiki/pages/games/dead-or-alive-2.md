@@ -1,21 +1,22 @@
 ---
 title: "Dead or Alive 2"
 type: game
-tags: [dead-or-alive-2, tecmo]
-games: [dead-or-alive-2]
+tags: [dead-or-alive-2]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Dead or Alive 2
 
-A classic fighting game by Tecmo.
+## Overview
+*No overview generated yet.*
 
-## Roster (3 characters)
+## Characters (2 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Ryu Hayabusa, Ayane, System Mechanics
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/dead-or-alive-2/{character}.json` — parsed from `doa_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

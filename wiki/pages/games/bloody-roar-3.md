@@ -1,21 +1,22 @@
 ---
 title: "Bloody Roar 3"
 type: game
-tags: [bloody-roar-3, hudson soft]
-games: [bloody-roar-3]
+tags: [bloody-roar-3]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Bloody Roar 3
 
-A classic fighting game by Hudson Soft.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (2 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Xion (Unborn)
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/bloody-roar-3/{character}.json` — parsed from `bloody_roar_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

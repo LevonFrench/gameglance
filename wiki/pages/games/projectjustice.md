@@ -1,8 +1,7 @@
 ---
 title: "Project Justice"
 type: game
-tags: [projectjustice, classic, capcom, rival-schools]
-games: [projectjustice]
+tags: [projectjustice]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
@@ -10,25 +9,14 @@ sources: 0
 
 # Project Justice
 
-Capcom's Rival Schools sequel, released 2000. 3D fighter with team-based mechanics
-and the largest roster in the GameGlance database at 44 characters.
+## Overview
+*No overview generated yet.*
 
-## Roster (44 characters)
+## Characters (56 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Akira, Batsu, Boman, Daigo, Edge, Gan, Hayato, Hideo, Hinata, Kyoko, Kyosuke,
-Momo, Nagare, Natsu, Ran, Roberto, Shoma, Yurika, Zaki, Burning Batsu,
-Demon Hyo, Hyo Imawano, Kurow, Powered Akira, Roy Bromwell, Tiffany Rose,
-Vatsu, Wild Daigo, Alec, Barbara, Mark, Tony, Nancy, Eliza, Peter, Thelma,
-Claudia, David, Frank, Anna, Grace, Hilary, George, John.
+## Mechanics
+*No mechanics mapped.*
 
-## Move Categories
-
-**Normal Moves**, **Special Moves**, **Super Arts**.
-
-## Data Source
-
-Character data: `public/data/projectjustice/{character}.json` — 44 characters.
-
-## See Also
-
-- [[cfj]] — Kyosuke appears as a representative
+## Meta
+*No meta/tier lists loaded.*

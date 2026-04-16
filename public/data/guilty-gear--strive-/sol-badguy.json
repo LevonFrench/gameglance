@@ -1,5 +1,5 @@
 {
-    "game": "Guilty Gear -Strive- (Ver. 2.00)",
+    "game": "Guilty Gear -Strive-",
     "character": "Sol Badguy",
     "movesList": [
         {
@@ -7,26 +7,32 @@
             "name": "Gun Flame",
             "type": "special",
             "inputs": [
-                "236",
+                "down",
+                "down-forward",
+                "forward",
                 "P"
             ]
         },
         {
             "id": "sp_1",
-            "name": "Gun Flame (Feint)",
+            "name": "Volcanic Viper",
             "type": "special",
             "inputs": [
-                "214",
-                "P"
+                "forward",
+                "down",
+                "down-forward",
+                "S or H (Air OK)"
             ]
         },
         {
             "id": "sp_2",
-            "name": "Volcanic Viper",
+            "name": "Night Whirl",
             "type": "special",
             "inputs": [
-                "623",
-                "S or HS (Air OK)"
+                "down",
+                "down-back",
+                "back",
+                "K"
             ]
         },
         {
@@ -34,44 +40,34 @@
             "name": "Bandit Revolver",
             "type": "special",
             "inputs": [
-                "236",
+                "down",
+                "down-forward",
+                "forward",
                 "K (Air OK)"
             ]
         },
         {
             "id": "sp_4",
-            "name": "Bandit Bringer",
-            "type": "special",
-            "inputs": [
-                "214",
-                "K (Air OK)"
-            ]
-        },
-        {
-            "id": "sp_5",
             "name": "Wild Throw",
-            "type": "special",
+            "type": "throw",
             "inputs": [
-                "623",
+                "forward",
+                "down",
+                "down-forward",
                 "K (Command Grab)"
             ]
         },
         {
-            "id": "sp_6",
-            "name": "Night Raid Vortex",
-            "type": "special",
-            "inputs": [
-                "214",
-                "S"
-            ]
-        },
-        {
-            "id": "sp_7",
+            "id": "sp_5",
             "name": "Fafnir",
             "type": "special",
             "inputs": [
-                "41236",
-                "HS"
+                "back",
+                "down-back",
+                "down",
+                "down-forward",
+                "forward",
+                "H"
             ]
         },
         {
@@ -79,8 +75,13 @@
             "name": "Tyrant Rave",
             "type": "super",
             "inputs": [
-                "632146",
-                "HS"
+                "forward",
+                "down-forward",
+                "down",
+                "down-back",
+                "back",
+                "forward",
+                "H"
             ]
         },
         {
@@ -88,8 +89,13 @@
             "name": "Heavy Mob Cemetery",
             "type": "super",
             "inputs": [
-                "214214",
-                "HS"
+                "down",
+                "down-back",
+                "back",
+                "down",
+                "down-back",
+                "back",
+                "H"
             ]
         }
     ],

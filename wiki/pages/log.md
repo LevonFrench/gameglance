@@ -58,3 +58,13 @@ Parse with: `grep "^## \[" wiki/pages/log.md | tail -10`
 - Wrote raw character data to `public/data/` under corresponding game slugs (`sf31`, `sf32i`, `sf33s`, `ssf2`, `hypersf2`).
 - Generated new game pages for sf31, sf32i, sf33s, ssf2.
 - Updated existing character wiki pages and created new ones (e.g., Alex, Hugo, Urien, Makoto, Q).
+
+## [2026-04-15] lint | Wiki Refresh Architecture Alignment
+
+**Operation**: Refreshed master LLM Wiki structurally to match the new registry data.
+
+**What happened**:
+- Relocated nested directories of fetched strategy guides from `faqs/gfaqs` to canonical `wiki/raw/guides/`.
+- Programmatically parsed `src/games.ts` matching 1179 fighting games.
+- Auto-generated placeholder markdown shell files locally in `wiki/pages/games/` for any missing game page.
+- Entirely rebuilt `wiki/pages/index.md` rendering the synchronized table list mapping the 1179 titles.

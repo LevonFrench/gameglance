@@ -1,21 +1,22 @@
 ---
 title: "Fatal Fury 2"
 type: game
-tags: [fatal-fury-2, snk]
-games: [fatal-fury-2]
+tags: [fatal-fury-2]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Fatal Fury 2
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (2 characters)
+## Characters (2 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Mai Shiranui, Kim Kaphwan
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/fatal-fury-2/{character}.json` — parsed from `fatal_fury_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

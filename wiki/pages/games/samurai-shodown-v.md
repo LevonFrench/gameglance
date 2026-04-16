@@ -1,21 +1,22 @@
 ---
 title: "Samurai Shodown V"
 type: game
-tags: [samurai-shodown-v, snk]
-games: [samurai-shodown-v]
+tags: [samurai-shodown-v]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Samurai Shodown V
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Yoshitora Tokugawa
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/samurai-shodown-v/{character}.json` — parsed from `samurai_shodown_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

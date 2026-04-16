@@ -1,0 +1,4623 @@
+{
+    "game": "cyberbots",
+    "character": "Killer Bee",
+    "movesList": [
+        {
+            "id": "sp_0",
+            "name": "Standing Light Punch",
+            "type": "normal",
+            "inputs": [
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_1",
+            "name": "Standing Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_2",
+            "name": "Standing Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_3",
+            "name": "Standing Light Kick",
+            "type": "normal",
+            "inputs": [
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_4",
+            "name": "Standing Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_5",
+            "name": "Standing Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_6",
+            "name": "Crouching Light Punch",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_7",
+            "name": "Crouching Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_8",
+            "name": "Crouching Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_9",
+            "name": "Crouching Light Kick",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_10",
+            "name": "Crouching Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_11",
+            "name": "Crouching Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_12",
+            "name": "Jumping Light Punch",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_13",
+            "name": "Jumping Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_14",
+            "name": "Jumping Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_15",
+            "name": "Jumping Light Kick",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_16",
+            "name": "Jumping Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_17",
+            "name": "Jumping Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_18",
+            "name": "ub  u  uf",
+            "type": "special",
+            "inputs": [
+                "6",
+                "-",
+                "MK",
+                "la",
+                "-",
+                "light",
+                "attack",
+                "a",
+                "-",
+                "any",
+                "attack"
+            ]
+        },
+        {
+            "id": "sp_19",
+            "name": "b--",
+            "type": "special",
+            "inputs": [
+                "up",
+                "up",
+                "back",
+                "--f",
+                "-",
+                "-",
+                "boost",
+                "/",
+                "-",
+                "or"
+            ]
+        },
+        {
+            "id": "sp_20",
+            "name": "Standard Throw",
+            "type": "throw",
+            "inputs": [
+                "f/b a close               refer to the character's"
+            ]
+        },
+        {
+            "id": "sp_21",
+            "name": "Dash Forward",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "forward",
+                "back",
+                "/",
+                "consumes",
+                "boost",
+                "meter"
+            ]
+        },
+        {
+            "id": "sp_22",
+            "name": "Charge Attack One",
+            "type": "special",
+            "inputs": [
+                "la"
+            ]
+        },
+        {
+            "id": "sp_23",
+            "name": "Charge Attack Two",
+            "type": "special",
+            "inputs": [
+                "ha"
+            ]
+        },
+        {
+            "id": "sp_24",
+            "name": "Long Dash Forward",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "forward",
+                "back",
+                "(and",
+                "hold",
+                "f)",
+                "/",
+                "hold",
+                "consumes",
+                "boost",
+                "meter"
+            ]
+        },
+        {
+            "id": "sp_27",
+            "name": "Dash Backward",
+            "type": "special",
+            "inputs": [
+                "back",
+                "back",
+                "back",
+                "back",
+                "/",
+                "consumes",
+                "boost",
+                "meter"
+            ]
+        },
+        {
+            "id": "sp_28",
+            "name": "Retreat Attack One",
+            "type": "special",
+            "inputs": [
+                "la"
+            ]
+        },
+        {
+            "id": "sp_29",
+            "name": "Retreat Attack Two",
+            "type": "special",
+            "inputs": [
+                "ha"
+            ]
+        },
+        {
+            "id": "sp_30",
+            "name": "Long Dash Backward",
+            "type": "special",
+            "inputs": [
+                "back",
+                "back",
+                "(and",
+                "hold",
+                "b)/",
+                "hold",
+                "consumes",
+                "boost",
+                "meter"
+            ]
+        },
+        {
+            "id": "sp_31",
+            "name": "High Block",
+            "type": "special",
+            "inputs": [
+                "4"
+            ]
+        },
+        {
+            "id": "sp_32",
+            "name": "Low Block",
+            "type": "special",
+            "inputs": [
+                "down-back                          does not block oveHKeads"
+            ]
+        },
+        {
+            "id": "sp_33",
+            "name": "Air Block",
+            "type": "special",
+            "inputs": [
+                "4",
+                "up-back/u/up-forward"
+            ]
+        },
+        {
+            "id": "sp_34",
+            "name": "Safe Fall",
+            "type": "special",
+            "inputs": [
+                "4",
+                "tap",
+                "after",
+                "being",
+                "knocked"
+            ]
+        },
+        {
+            "id": "sp_35",
+            "name": "Recover Back",
+            "type": "special",
+            "inputs": [
+                "4",
+                "hold",
+                "after",
+                "hitting",
+                "the"
+            ]
+        },
+        {
+            "id": "sp_36",
+            "name": "Recover Forward",
+            "type": "special",
+            "inputs": [
+                "6",
+                "hold",
+                "after",
+                "hitting",
+                "the"
+            ]
+        },
+        {
+            "id": "sp_37",
+            "name": "Negative Edge",
+            "type": "special",
+            "inputs": [
+                "allows you to perform       an example would be"
+            ]
+        },
+        {
+            "id": "sp_38",
+            "name": "maneuvers by holding",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "performing",
+                "a",
+                "down-forward",
+                "P"
+            ]
+        },
+        {
+            "id": "sp_39",
+            "name": "the attack button",
+            "type": "special",
+            "inputs": [
+                "maneuver by instead"
+            ]
+        },
+        {
+            "id": "sp_40",
+            "name": "releasing the attack",
+            "type": "special",
+            "inputs": [
+                "for MPecials and supers"
+            ]
+        },
+        {
+            "id": "sp_41",
+            "name": "Power Charge",
+            "type": "special",
+            "inputs": [
+                "2",
+                "hold",
+                "la",
+                "ha",
+                "[charge]s",
+                "energy",
+                "directly"
+            ]
+        },
+        {
+            "id": "sp_42",
+            "name": "Giga Crush",
+            "type": "special",
+            "inputs": [
+                "la ha when super meter is   can hit oPPonent who is"
+            ]
+        },
+        {
+            "id": "sp_43",
+            "name": "full",
+            "type": "special",
+            "inputs": [
+                "on the ground"
+            ]
+        },
+        {
+            "id": "sp_44",
+            "name": "Hyper Mode",
+            "type": "super",
+            "inputs": [
+                "fill the super meter        lasts for 10 seconds or"
+            ]
+        },
+        {
+            "id": "sp_45",
+            "name": "completely",
+            "type": "special",
+            "inputs": [
+                "ends when a super or"
+            ]
+        },
+        {
+            "id": "sp_46",
+            "name": "Super",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a",
+                "when",
+                "super",
+                "the",
+                "super",
+                "meter",
+                "fills"
+            ]
+        },
+        {
+            "id": "sp_47",
+            "name": "meter is full",
+            "type": "special",
+            "inputs": [
+                "when an attack strikes"
+            ]
+        },
+        {
+            "id": "sp_48",
+            "name": "Dash Forward",
+            "type": "special",
+            "inputs": [
+                "4"
+            ]
+        },
+        {
+            "id": "sp_49",
+            "name": "Dash Backward",
+            "type": "special",
+            "inputs": [
+                "back",
+                "back"
+            ]
+        },
+        {
+            "id": "sp_50",
+            "name": "Hover",
+            "type": "special",
+            "inputs": [
+                "4",
+                "in",
+                "[[air]]"
+            ]
+        },
+        {
+            "id": "sp_51",
+            "name": "Air Dash",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "back",
+                "in",
+                "[[air]]"
+            ]
+        },
+        {
+            "id": "sp_52",
+            "name": "Air Back Dash",
+            "type": "special",
+            "inputs": [
+                "back",
+                "back",
+                "in",
+                "[[air]]"
+            ]
+        },
+        {
+            "id": "sp_53",
+            "name": "Boost Climb",
+            "type": "special",
+            "inputs": [
+                "up",
+                "back",
+                "in",
+                "[[air]]"
+            ]
+        },
+        {
+            "id": "sp_54",
+            "name": "Boost Climb Forward",
+            "type": "special",
+            "inputs": [
+                "4",
+                "up-forward",
+                "in",
+                "[[air]]"
+            ]
+        },
+        {
+            "id": "sp_55",
+            "name": "Boost Climb Back",
+            "type": "special",
+            "inputs": [
+                "4",
+                "up-back",
+                "in",
+                "[[air]]"
+            ]
+        },
+        {
+            "id": "sp_56",
+            "name": "Boost Descend Forward",
+            "type": "special",
+            "inputs": [
+                "4",
+                "down-forward",
+                "in",
+                "[[air]]"
+            ]
+        },
+        {
+            "id": "sp_57",
+            "name": "Boost Descend Back",
+            "type": "special",
+            "inputs": [
+                "4",
+                "down-back",
+                "in",
+                "[[air]]"
+            ]
+        },
+        {
+            "id": "sp_58",
+            "name": "Slow Landing",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "in",
+                "[[air]]"
+            ]
+        },
+        {
+            "id": "sp_59",
+            "name": "Punching Bag",
+            "type": "special",
+            "inputs": [
+                "f/b la close              shake joystick and tap"
+            ]
+        },
+        {
+            "id": "sp_60",
+            "name": "Direct Press",
+            "type": "special",
+            "inputs": [
+                "2",
+                "la",
+                "ha",
+                "the",
+                "timing",
+                "on",
+                "this",
+                "follow"
+            ]
+        },
+        {
+            "id": "sp_61",
+            "name": "Overhead Toss",
+            "type": "throw",
+            "inputs": [
+                "f/b ha close              will not work if you are"
+            ]
+        },
+        {
+            "id": "sp_62",
+            "name": "Pick Up And Toss",
+            "type": "throw",
+            "inputs": [
+                "f/b a to       will not work if you are"
+            ]
+        },
+        {
+            "id": "sp_63",
+            "name": "downed opponent",
+            "type": "special",
+            "inputs": [
+                "missing your critical"
+            ]
+        },
+        {
+            "id": "sp_64",
+            "name": "Laser Blade",
+            "type": "special",
+            "inputs": [
+                "ha in [[air]]                   oveHKead"
+            ]
+        },
+        {
+            "id": "sp_65",
+            "name": "One",
+            "type": "special",
+            "inputs": [
+                "la                          will not work if you are"
+            ]
+        },
+        {
+            "id": "sp_66",
+            "name": "Two",
+            "type": "special",
+            "inputs": [
+                "la                          first part must touch the"
+            ]
+        },
+        {
+            "id": "sp_67",
+            "name": "Machine Pumper",
+            "type": "special",
+            "inputs": [
+                "ha                          2 hits"
+            ]
+        },
+        {
+            "id": "sp_68",
+            "name": "Slide Drill",
+            "type": "special",
+            "inputs": [
+                "dash MK la"
+            ]
+        },
+        {
+            "id": "sp_69",
+            "name": "Retreat Drill",
+            "type": "special",
+            "inputs": [
+                "dash backward la"
+            ]
+        },
+        {
+            "id": "sp_70",
+            "name": "Shoulder Charge",
+            "type": "special",
+            "inputs": [
+                "dash MK ha            becomes slide drill if"
+            ]
+        },
+        {
+            "id": "sp_71",
+            "name": "Retreat Shoulder",
+            "type": "special",
+            "inputs": [
+                "dash backward ha           becomes retreat drill if"
+            ]
+        },
+        {
+            "id": "sp_72",
+            "name": "Knee Blades",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha",
+                "in",
+                "[[air]]",
+                "can",
+                "perform",
+                "another",
+                "[[air]]"
+            ]
+        },
+        {
+            "id": "sp_73",
+            "name": "Arc Sweep",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha",
+                "must",
+                "be",
+                "blocked",
+                "low"
+            ]
+        },
+        {
+            "id": "sp_74",
+            "name": "Quick Pursue",
+            "type": "special",
+            "inputs": [
+                "8",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_75",
+            "name": "Break Shaft",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "forward",
+                "down-back",
+                "down-forward",
+                "a",
+                "from",
+                "far",
+                "the",
+                "blades",
+                "will"
+            ]
+        },
+        {
+            "id": "sp_76",
+            "name": "Full Metal Charge",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "a",
+                "la=LK",
+                "ha=far"
+            ]
+        },
+        {
+            "id": "sp_77",
+            "name": "Gatling Rod",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "a",
+                "la=stationary",
+                "ha=slight"
+            ]
+        },
+        {
+            "id": "sp_78",
+            "name": "Needle Press",
+            "type": "special",
+            "inputs": [
+                "down",
+                "up",
+                "a",
+                "when",
+                "oPPonent",
+                "is",
+                "pursue",
+                "attack"
+            ]
+        },
+        {
+            "id": "sp_79",
+            "name": "Disassemble",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "a",
+                "close",
+                "shake",
+                "joystick",
+                "and",
+                "tap"
+            ]
+        },
+        {
+            "id": "sp_80",
+            "name": "Direct Press",
+            "type": "special",
+            "inputs": [
+                "6",
+                "down-forward",
+                "ha",
+                "close",
+                "unblockable;",
+                "will",
+                "not"
+            ]
+        },
+        {
+            "id": "sp_81",
+            "name": "Giga Burst",
+            "type": "special",
+            "inputs": [
+                "la ha when super meter is   can hit an oPPonent who's"
+            ]
+        },
+        {
+            "id": "sp_82",
+            "name": "full",
+            "type": "special",
+            "inputs": [
+                "on the floor"
+            ]
+        },
+        {
+            "id": "sp_83",
+            "name": "Death Cutter",
+            "type": "special",
+            "inputs": [
+                "f/b la close              shake joystick and tap"
+            ]
+        },
+        {
+            "id": "sp_85",
+            "name": "Stretch Treads",
+            "type": "special",
+            "inputs": [
+                "ha in [[air]]                   oveHKead"
+            ]
+        },
+        {
+            "id": "sp_86",
+            "name": "Mega Sword Thrust",
+            "type": "special",
+            "inputs": [
+                "ha                          will not work if you are"
+            ]
+        },
+        {
+            "id": "sp_87",
+            "name": "Down Slash",
+            "type": "special",
+            "inputs": [
+                "la                          will not work if you are"
+            ]
+        },
+        {
+            "id": "sp_88",
+            "name": "Side Slash",
+            "type": "special",
+            "inputs": [
+                "la                          first part must touch the"
+            ]
+        },
+        {
+            "id": "sp_89",
+            "name": "Sky Slash",
+            "type": "special",
+            "inputs": [
+                "ha                          side slash must touch the"
+            ]
+        },
+        {
+            "id": "sp_90",
+            "name": "Sky Slash",
+            "type": "special",
+            "inputs": [
+                "ha                          first part must touch the"
+            ]
+        },
+        {
+            "id": "sp_91",
+            "name": "Default E Slicer",
+            "type": "special",
+            "inputs": [
+                "2",
+                "dash",
+                "MK",
+                "la"
+            ]
+        },
+        {
+            "id": "sp_92",
+            "name": "E Slicer",
+            "type": "special",
+            "inputs": [
+                "dash MK la when you"
+            ]
+        },
+        {
+            "id": "sp_93",
+            "name": "Retreat E Slicer",
+            "type": "special",
+            "inputs": [
+                "dash backward la when you"
+            ]
+        },
+        {
+            "id": "sp_94",
+            "name": "Dangerous Roller",
+            "type": "special",
+            "inputs": [
+                "dash MK ha"
+            ]
+        },
+        {
+            "id": "sp_95",
+            "name": "Trick Roller",
+            "type": "special",
+            "inputs": [
+                "dash backward ha"
+            ]
+        },
+        {
+            "id": "sp_96",
+            "name": "Giant Drill",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha",
+                "in",
+                "[[air]]",
+                "oveHKead;",
+                "can",
+                "hit",
+                "an"
+            ]
+        },
+        {
+            "id": "sp_97",
+            "name": "Sneaky Treads",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha",
+                "must",
+                "be",
+                "blocked",
+                "low"
+            ]
+        },
+        {
+            "id": "sp_98",
+            "name": "G Splasher",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "a",
+                "la=shot",
+                "ha=long;",
+                "move"
+            ]
+        },
+        {
+            "id": "sp_99",
+            "name": "Slay Sword",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "back",
+                "down-forward",
+                "down-back",
+                "a",
+                "(hold",
+                "a",
+                "to",
+                "la=LK",
+                "ha=long;",
+                "will"
+            ]
+        },
+        {
+            "id": "sp_100",
+            "name": "empower)",
+            "type": "special",
+            "inputs": [
+                "not work if you are"
+            ]
+        },
+        {
+            "id": "sp_101",
+            "name": "Photon Splash",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "down-back",
+                "a",
+                "la=blasts",
+                "are",
+                "all",
+                "high"
+            ]
+        },
+        {
+            "id": "sp_102",
+            "name": "Air Photon Splash",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "down-back",
+                "a",
+                "in",
+                "[[air]]",
+                "la=blasts",
+                "are",
+                "all",
+                "high"
+            ]
+        },
+        {
+            "id": "sp_103",
+            "name": "Vertical Gears",
+            "type": "special",
+            "inputs": [
+                "down",
+                "up",
+                "ha"
+            ]
+        },
+        {
+            "id": "sp_106",
+            "name": "Mighty Hand",
+            "type": "special",
+            "inputs": [
+                "f/b ha close              will not work if you are"
+            ]
+        },
+        {
+            "id": "sp_107",
+            "name": "Pick Up And Slam",
+            "type": "throw",
+            "inputs": [
+                "f/b ha to      will not work if you are"
+            ]
+        },
+        {
+            "id": "sp_109",
+            "name": "Flame Wheel",
+            "type": "special",
+            "inputs": [
+                "la in [[air]]                   oveHKead"
+            ]
+        },
+        {
+            "id": "sp_110",
+            "name": "Full Blast",
+            "type": "special",
+            "inputs": [
+                "ha in [[air]]                   oveHKead"
+            ]
+        },
+        {
+            "id": "sp_111",
+            "name": "Low Roller",
+            "type": "special",
+            "inputs": [
+                "dash MK la"
+            ]
+        },
+        {
+            "id": "sp_112",
+            "name": "Retreat Roller",
+            "type": "special",
+            "inputs": [
+                "dash backward la"
+            ]
+        },
+        {
+            "id": "sp_113",
+            "name": "Mighty Drill",
+            "type": "special",
+            "inputs": [
+                "dash MK ha"
+            ]
+        },
+        {
+            "id": "sp_114",
+            "name": "Trick Drill",
+            "type": "special",
+            "inputs": [
+                "dash backward ha"
+            ]
+        },
+        {
+            "id": "sp_115",
+            "name": "Landing",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha",
+                "in",
+                "[[air]]",
+                "oveHKead;",
+                "can",
+                "hit",
+                "an"
+            ]
+        },
+        {
+            "id": "sp_116",
+            "name": "Ground Flames",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha",
+                "must",
+                "be",
+                "blocked",
+                "low"
+            ]
+        },
+        {
+            "id": "sp_117",
+            "name": "Dyna Blow",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "a",
+                "la=LK",
+                "ha=long;",
+                "will"
+            ]
+        },
+        {
+            "id": "sp_118",
+            "name": "Air Dyna Blow",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "a",
+                "in",
+                "[[air]]",
+                "la=LK",
+                "ha=long;",
+                "will"
+            ]
+        },
+        {
+            "id": "sp_119",
+            "name": "Riot Strike",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "a",
+                "la=reaPPears",
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_120",
+            "name": "Super Riot Strike",
+            "type": "super",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "la",
+                "ha",
+                "can",
+                "hit",
+                "an",
+                "oPPonent",
+                "who's"
+            ]
+        },
+        {
+            "id": "sp_121",
+            "name": "Air Riot Strike",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "a",
+                "in",
+                "[[air]]",
+                "la=reaPPears",
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_122",
+            "name": "Super Air Riot Strike",
+            "type": "super",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "la",
+                "ha",
+                "in",
+                "[[air]]",
+                "can",
+                "hit",
+                "an",
+                "oPPonent",
+                "who's"
+            ]
+        },
+        {
+            "id": "sp_123",
+            "name": "Death Bolt",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "back",
+                "down-forward",
+                "down-back",
+                "a",
+                "la=fast",
+                "ha=slow;",
+                "must",
+                "be"
+            ]
+        },
+        {
+            "id": "sp_124",
+            "name": "Flame Grip",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "down-back",
+                "la",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sp_125",
+            "name": "Death Grip",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "down-back",
+                "ha",
+                "move",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_126",
+            "name": "Violent Squeeze",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "a",
+                "close",
+                "shake",
+                "joystick",
+                "and",
+                "tap"
+            ]
+        },
+        {
+            "id": "sp_133",
+            "name": "Heavy Drop",
+            "type": "throw",
+            "inputs": [
+                "8",
+                "any",
+                "direction",
+                "except",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sp_134",
+            "name": "A close in air",
+            "type": "normal",
+            "inputs": [
+                "missing your critical"
+            ]
+        },
+        {
+            "id": "sp_135",
+            "name": "Drill Bit",
+            "type": "special",
+            "inputs": [
+                "ha in [[air]]                   all hits are oveHKeads"
+            ]
+        },
+        {
+            "id": "sp_138",
+            "name": "Blast Uppercut",
+            "type": "special",
+            "inputs": [
+                "ha                          2 hits"
+            ]
+        },
+        {
+            "id": "sp_141",
+            "name": "Power Punch",
+            "type": "special",
+            "inputs": [
+                "dash MK ha            becomes slide drill if"
+            ]
+        },
+        {
+            "id": "sp_142",
+            "name": "Retreat Punch",
+            "type": "special",
+            "inputs": [
+                "dash backward ha           becomes retreat drill if"
+            ]
+        },
+        {
+            "id": "sp_143",
+            "name": "Drill Blades",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha",
+                "in",
+                "[[air]]",
+                "can",
+                "perform",
+                "another",
+                "[[air]]"
+            ]
+        },
+        {
+            "id": "sp_144",
+            "name": "Energy Chop",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha"
+            ]
+        },
+        {
+            "id": "sp_145",
+            "name": "Violence Wind",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "forward",
+                "down-back",
+                "down-forward",
+                "la"
+            ]
+        },
+        {
+            "id": "sp_146",
+            "name": "Violence Winds",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "forward",
+                "down-back",
+                "down-forward",
+                "ha",
+                "move",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_147",
+            "name": "Risky Nail",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "a",
+                "ha",
+                "version",
+                "grounds"
+            ]
+        },
+        {
+            "id": "sp_148",
+            "name": "Satellite Force",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "a/la",
+                "ha",
+                "la=beams",
+                "aPPear",
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_149",
+            "name": "Dunk",
+            "type": "special",
+            "inputs": [
+                "down",
+                "down",
+                "a",
+                "close",
+                "unblockable;",
+                "will",
+                "not"
+            ]
+        },
+        {
+            "id": "sp_151",
+            "name": "Giga Rain",
+            "type": "special",
+            "inputs": [
+                "la ha when super meter is   can hit an oPPonent who's"
+            ]
+        },
+        {
+            "id": "sp_153",
+            "name": "Shock Punch",
+            "type": "special",
+            "inputs": [
+                "f/b la close              shake joystick and tap"
+            ]
+        },
+        {
+            "id": "sp_157",
+            "name": "Grinding Treads",
+            "type": "special",
+            "inputs": [
+                "la in [[air]]                   all hits are oveHKeads"
+            ]
+        },
+        {
+            "id": "sp_159",
+            "name": "Heavy Jolt",
+            "type": "special",
+            "inputs": [
+                "ha                          will not work if you are"
+            ]
+        },
+        {
+            "id": "sp_160",
+            "name": "Quick Shock",
+            "type": "special",
+            "inputs": [
+                "la                          will not work if you are"
+            ]
+        },
+        {
+            "id": "sp_161",
+            "name": "Punch",
+            "type": "special",
+            "inputs": [
+                "la                          first part must touch the"
+            ]
+        },
+        {
+            "id": "sp_162",
+            "name": "E Slicer",
+            "type": "special",
+            "inputs": [
+                "dash MK la"
+            ]
+        },
+        {
+            "id": "sp_163",
+            "name": "Retreat E Slicer",
+            "type": "special",
+            "inputs": [
+                "dash backward la"
+            ]
+        },
+        {
+            "id": "sp_164",
+            "name": "Tread Smash",
+            "type": "special",
+            "inputs": [
+                "dash MK ha"
+            ]
+        },
+        {
+            "id": "sp_165",
+            "name": "Retreat Tread",
+            "type": "special",
+            "inputs": [
+                "dash backward ha"
+            ]
+        },
+        {
+            "id": "sp_168",
+            "name": "Upward Heavy Jolt",
+            "type": "special",
+            "inputs": [
+                "6",
+                "ha",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sp_169",
+            "name": "Sparkle Laser",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "la",
+                "stuns",
+                "oPPonent",
+                "for",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_170",
+            "name": "Upward Sparkle Laser",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ha",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sp_171",
+            "name": "Rolling Gear",
+            "type": "special",
+            "inputs": [
+                "2",
+                "[charge]",
+                "for",
+                "1",
+                "second",
+                "la=straight",
+                "ha=upwards;"
+            ]
+        },
+        {
+            "id": "sp_172",
+            "name": "Air Rolling Gear",
+            "type": "special",
+            "inputs": [
+                "2",
+                "[charge]",
+                "for",
+                "1",
+                "second",
+                "la=straight",
+                "ha=upwards;"
+            ]
+        },
+        {
+            "id": "sp_173",
+            "name": "Thunder Rain",
+            "type": "special",
+            "inputs": [
+                "down",
+                "down",
+                "a",
+                "la=quick",
+                "ha=lasts",
+                "long;"
+            ]
+        },
+        {
+            "id": "sp_178",
+            "name": "Cross Whip",
+            "type": "special",
+            "inputs": [
+                "f/b la close              shake joystick and tap"
+            ]
+        },
+        {
+            "id": "sp_180",
+            "name": "Pick Up And Toss",
+            "type": "throw",
+            "inputs": [
+                "f/b ha to      will not work if you are"
+            ]
+        },
+        {
+            "id": "sp_182",
+            "name": "Whip Slash",
+            "type": "special",
+            "inputs": [
+                "la                          will not work if you are"
+            ]
+        },
+        {
+            "id": "sp_184",
+            "name": "Multi Driller",
+            "type": "special",
+            "inputs": [
+                "dash MK la"
+            ]
+        },
+        {
+            "id": "sp_185",
+            "name": "Retreat Driller",
+            "type": "special",
+            "inputs": [
+                "dash backward la"
+            ]
+        },
+        {
+            "id": "sp_186",
+            "name": "Jet Slide",
+            "type": "special",
+            "inputs": [
+                "dash MK ha"
+            ]
+        },
+        {
+            "id": "sp_187",
+            "name": "Trick Jet Slide",
+            "type": "special",
+            "inputs": [
+                "dash backward ha"
+            ]
+        },
+        {
+            "id": "sp_188",
+            "name": "Quad Spikes",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha",
+                "in",
+                "[[air]]",
+                "oveHKead;",
+                "can",
+                "hit",
+                "an"
+            ]
+        },
+        {
+            "id": "sp_189",
+            "name": "Ducking Whip",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sp_190",
+            "name": "Heat Grapple",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "la",
+                "whip",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_191",
+            "name": "High Heat Grapple",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ha",
+                "must",
+                "connect",
+                "whip",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_192",
+            "name": "Dizzy Boomerang",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "a",
+                "la=LK",
+                "ha=far"
+            ]
+        },
+        {
+            "id": "sp_193",
+            "name": "Air Dizzy Boomerang",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "a",
+                "in",
+                "[[air]]",
+                "la=LK",
+                "ha=far"
+            ]
+        },
+        {
+            "id": "sp_194",
+            "name": "Jackal Stamp",
+            "type": "special",
+            "inputs": [
+                "2",
+                "[charge]",
+                "for",
+                "1",
+                "second",
+                "la=4",
+                "hits",
+                "ha=6",
+                "hits;"
+            ]
+        },
+        {
+            "id": "sp_195",
+            "name": "Whip Sting",
+            "type": "special",
+            "inputs": [
+                "tap a rapidly               la=quick ha=lasts longer"
+            ]
+        },
+        {
+            "id": "sp_203",
+            "name": "Buzzsaw",
+            "type": "special",
+            "inputs": [
+                "ha in [[air]]                   all hits are oveHKeads;"
+            ]
+        },
+        {
+            "id": "sp_204",
+            "name": "Flame Upper",
+            "type": "special",
+            "inputs": [
+                "ha                          will not work if you are"
+            ]
+        },
+        {
+            "id": "sp_205",
+            "name": "Punch",
+            "type": "special",
+            "inputs": [
+                "la                          will not work if you are"
+            ]
+        },
+        {
+            "id": "sp_206",
+            "name": "Quick Energy",
+            "type": "special",
+            "inputs": [
+                "la                          first part must touch the"
+            ]
+        },
+        {
+            "id": "sp_207",
+            "name": "Mega Upper",
+            "type": "special",
+            "inputs": [
+                "ha                          quick energy must touch"
+            ]
+        },
+        {
+            "id": "sp_208",
+            "name": "Mega Upper",
+            "type": "special",
+            "inputs": [
+                "ha                          first part must touch the"
+            ]
+        },
+        {
+            "id": "sp_209",
+            "name": "Ground Saws",
+            "type": "special",
+            "inputs": [
+                "dash MK la"
+            ]
+        },
+        {
+            "id": "sp_211",
+            "name": "Matrix Ball",
+            "type": "special",
+            "inputs": [
+                "dash MK ha"
+            ]
+        },
+        {
+            "id": "sp_212",
+            "name": "Trick Matrix Ball",
+            "type": "special",
+            "inputs": [
+                "dash backward ha"
+            ]
+        },
+        {
+            "id": "sp_213",
+            "name": "Hidden Gear",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha",
+                "in",
+                "[[air]]",
+                "this",
+                "is",
+                "not",
+                "an",
+                "oveHKead;"
+            ]
+        },
+        {
+            "id": "sp_214",
+            "name": "Dangerous Wheels",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha",
+                "must",
+                "be",
+                "blocked",
+                "low"
+            ]
+        },
+        {
+            "id": "sp_215",
+            "name": "Iron Nail",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "a",
+                "ha",
+                "version",
+                "hits",
+                "twice;"
+            ]
+        },
+        {
+            "id": "sp_216",
+            "name": "Sunrise Blade",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "a",
+                "la=LK",
+                "ha=far"
+            ]
+        },
+        {
+            "id": "sp_217",
+            "name": "Drill Anchor",
+            "type": "special",
+            "inputs": [
+                "4",
+                "[charge]",
+                "for",
+                "1",
+                "second",
+                "chain",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_218",
+            "name": "Spiral Anchor",
+            "type": "special",
+            "inputs": [
+                "4",
+                "[charge]",
+                "for",
+                "1",
+                "second",
+                "chain",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_219",
+            "name": "Fordy Beat",
+            "type": "special",
+            "inputs": [
+                "la w ha"
+            ]
+        },
+        {
+            "id": "sp_220",
+            "name": "Fordy Break",
+            "type": "special",
+            "inputs": [
+                "la w ha la               must connect (not"
+            ]
+        },
+        {
+            "id": "sp_222",
+            "name": "Giga Strike",
+            "type": "special",
+            "inputs": [
+                "la ha when super meter is   can hit an oPPonent who's"
+            ]
+        },
+        {
+            "id": "sp_228",
+            "name": "Chain Spike Smasher",
+            "type": "special",
+            "inputs": [
+                "ha in [[air]]                   oveHKead"
+            ]
+        },
+        {
+            "id": "sp_229",
+            "name": "Claw",
+            "type": "special",
+            "inputs": [
+                "la                          will not work if you are"
+            ]
+        },
+        {
+            "id": "sp_230",
+            "name": "Surprise Energy",
+            "type": "special",
+            "inputs": [
+                "la                          first part must touch the"
+            ]
+        },
+        {
+            "id": "sp_231",
+            "name": "Max Push",
+            "type": "special",
+            "inputs": [
+                "ha                          surprise energy must"
+            ]
+        },
+        {
+            "id": "sp_232",
+            "name": "Max Push",
+            "type": "special",
+            "inputs": [
+                "ha                          first part must touch the"
+            ]
+        },
+        {
+            "id": "sp_233",
+            "name": "Claw Scoop",
+            "type": "special",
+            "inputs": [
+                "ha                          2 hits"
+            ]
+        },
+        {
+            "id": "sp_234",
+            "name": "Low Helicopter",
+            "type": "special",
+            "inputs": [
+                "dash MK la"
+            ]
+        },
+        {
+            "id": "sp_235",
+            "name": "Retreat Helicopter",
+            "type": "special",
+            "inputs": [
+                "dash backward la"
+            ]
+        },
+        {
+            "id": "sp_239",
+            "name": "Containment Blast",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha"
+            ]
+        },
+        {
+            "id": "sp_240",
+            "name": "Powered Wrecker",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "la",
+                "claw",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_241",
+            "name": "Wrecker Slam",
+            "type": "throw",
+            "inputs": [
+                "P"
+            ]
+        },
+        {
+            "id": "sp_242",
+            "name": "Wrecker Missiles",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_243",
+            "name": "Diagonal Wrecker",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ha",
+                "claw",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_246",
+            "name": "Upward Wrecker",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "la",
+                "ha",
+                "claw",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_249",
+            "name": "Air Powered Wrecker",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "forward",
+                "down-forward",
+                "la",
+                "in",
+                "[[air]]",
+                "/",
+                "down-forward",
+                "claw",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_252",
+            "name": "Air Diagonal Wrecker",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ha",
+                "in",
+                "[[air]]",
+                "claw",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_257",
+            "name": "Air Upward Wrecker",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "la",
+                "ha",
+                "in",
+                "[[air]]",
+                "claw",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_260",
+            "name": "Air Downward Wrecker",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "la",
+                "ha",
+                "in",
+                "[[air]]",
+                "claw",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_263",
+            "name": "Rising Tornado",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "a",
+                "la=long",
+                "and",
+                "low",
+                "ha=LK"
+            ]
+        },
+        {
+            "id": "sp_264",
+            "name": "Falling Winds",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "down-back",
+                "a",
+                "la=LK",
+                "and",
+                "steep"
+            ]
+        },
+        {
+            "id": "sp_265",
+            "name": "Tarantula Stamp",
+            "type": "special",
+            "inputs": [
+                "2",
+                "[charge]",
+                "for",
+                "1",
+                "second",
+                "la=4",
+                "hits",
+                "ha=6",
+                "hits;"
+            ]
+        },
+        {
+            "id": "sp_273",
+            "name": "Air Toss",
+            "type": "throw",
+            "inputs": [
+                "8",
+                "any",
+                "direction",
+                "except",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sp_277",
+            "name": "Down Slash",
+            "type": "special",
+            "inputs": [
+                "la                          2 hits; will not work if"
+            ]
+        },
+        {
+            "id": "sp_279",
+            "name": "Mega Sword Thrust",
+            "type": "special",
+            "inputs": [
+                "ha                          side slash must touch the"
+            ]
+        },
+        {
+            "id": "sp_280",
+            "name": "Mega Sword Thrust",
+            "type": "special",
+            "inputs": [
+                "ha                          first part must touch the"
+            ]
+        },
+        {
+            "id": "sp_281",
+            "name": "Heavy Down Slash",
+            "type": "special",
+            "inputs": [
+                "ha                          2 hits"
+            ]
+        },
+        {
+            "id": "sp_284",
+            "name": "Roller Hop",
+            "type": "special",
+            "inputs": [
+                "dash MK ha"
+            ]
+        },
+        {
+            "id": "sp_285",
+            "name": "Trick Roller Hop",
+            "type": "special",
+            "inputs": [
+                "dash backward ha"
+            ]
+        },
+        {
+            "id": "sp_287",
+            "name": "Low Flame Wheel",
+            "type": "special",
+            "inputs": [
+                "2",
+                "la",
+                "must",
+                "be",
+                "blocked",
+                "low"
+            ]
+        },
+        {
+            "id": "sp_289",
+            "name": "Killer Screw Straight",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "la",
+                "can",
+                "hit",
+                "an",
+                "oPPonent",
+                "who's"
+            ]
+        },
+        {
+            "id": "sp_290",
+            "name": "Extend Straight",
+            "type": "special",
+            "inputs": [
+                "6",
+                "a",
+                "can",
+                "hit",
+                "an",
+                "oPPonent",
+                "who's"
+            ]
+        },
+        {
+            "id": "sp_291",
+            "name": "Extend Diagonal",
+            "type": "special",
+            "inputs": [
+                "up-forward a"
+            ]
+        },
+        {
+            "id": "sp_292",
+            "name": "Extend Upward",
+            "type": "special",
+            "inputs": [
+                "8",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_293",
+            "name": "Killer Screw Diagonal",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ha"
+            ]
+        },
+        {
+            "id": "sp_294",
+            "name": "Extend Straight",
+            "type": "special",
+            "inputs": [
+                "6",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_295",
+            "name": "Extend Diagonal Down",
+            "type": "special",
+            "inputs": [
+                "down-forward a                      can hit an oPPonent who's"
+            ]
+        },
+        {
+            "id": "sp_296",
+            "name": "Extend Downward",
+            "type": "special",
+            "inputs": [
+                "2",
+                "a",
+                "can",
+                "hit",
+                "an",
+                "oPPonent",
+                "who's"
+            ]
+        },
+        {
+            "id": "sp_297",
+            "name": "Killer Screw Upward",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "la",
+                "ha"
+            ]
+        },
+        {
+            "id": "sp_305",
+            "name": "Extend Diagonal Up",
+            "type": "special",
+            "inputs": [
+                "up-forward a"
+            ]
+        },
+        {
+            "id": "sp_310",
+            "name": "Killer Bee Strike",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "a",
+                "la=reaPPears",
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_313",
+            "name": "Killer Eye",
+            "type": "special",
+            "inputs": [
+                "4",
+                "[charge]",
+                "for",
+                "1",
+                "second"
+            ]
+        },
+        {
+            "id": "sp_314",
+            "name": "Killer Eye Trio",
+            "type": "special",
+            "inputs": [
+                "4",
+                "[charge]",
+                "for",
+                "1",
+                "second"
+            ]
+        },
+        {
+            "id": "sp_317",
+            "name": "Lifting Press",
+            "type": "special",
+            "inputs": [
+                "f/b la close              shake joystick and tap"
+            ]
+        },
+        {
+            "id": "sp_321",
+            "name": "Tread Fire",
+            "type": "special",
+            "inputs": [
+                "ha in [[air]]                   this is not an oveHKead;"
+            ]
+        },
+        {
+            "id": "sp_324",
+            "name": "Double Hammer",
+            "type": "special",
+            "inputs": [
+                "ha                          two must touch the"
+            ]
+        },
+        {
+            "id": "sp_325",
+            "name": "Double Hammer",
+            "type": "special",
+            "inputs": [
+                "ha                          first part must touch the"
+            ]
+        },
+        {
+            "id": "sp_326",
+            "name": "Hidden Spike",
+            "type": "special",
+            "inputs": [
+                "ha                          2 hits"
+            ]
+        },
+        {
+            "id": "sp_327",
+            "name": "Low Tread Blades",
+            "type": "special",
+            "inputs": [
+                "dash MK la"
+            ]
+        },
+        {
+            "id": "sp_328",
+            "name": "Retreat Tread Blades",
+            "type": "special",
+            "inputs": [
+                "dash backward la"
+            ]
+        },
+        {
+            "id": "sp_329",
+            "name": "Crunch Charge",
+            "type": "special",
+            "inputs": [
+                "dash MK ha"
+            ]
+        },
+        {
+            "id": "sp_330",
+            "name": "Trick Crunch Charge",
+            "type": "special",
+            "inputs": [
+                "dash backward ha"
+            ]
+        },
+        {
+            "id": "sp_331",
+            "name": "Mega Drop",
+            "type": "throw",
+            "inputs": [
+                "2",
+                "ha",
+                "in",
+                "[[air]]",
+                "can",
+                "perform",
+                "another",
+                "[[air]]"
+            ]
+        },
+        {
+            "id": "sp_332",
+            "name": "Mid Tread Blades",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha"
+            ]
+        },
+        {
+            "id": "sp_333",
+            "name": "Gul Lariat",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "la",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sp_334",
+            "name": "Double Gul Lariat",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ha",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sp_335",
+            "name": "Gul Wheel",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "la",
+                "can",
+                "juggle",
+                "oPPonent",
+                "after"
+            ]
+        },
+        {
+            "id": "sp_336",
+            "name": "Double Gul Wheel",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "ha"
+            ]
+        },
+        {
+            "id": "sp_337",
+            "name": "Sky Gul Lariat",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "a",
+                "la=low",
+                "ha=high;",
+                "will",
+                "not"
+            ]
+        },
+        {
+            "id": "sp_338",
+            "name": "Heavy Dive",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "in",
+                "[[air]]",
+                "ha"
+            ]
+        },
+        {
+            "id": "sp_340",
+            "name": "Giga Ring",
+            "type": "special",
+            "inputs": [
+                "la ha when super meter is   can hit an oPPonent who's"
+            ]
+        },
+        {
+            "id": "sp_347",
+            "name": "Spiked Wheel",
+            "type": "special",
+            "inputs": [
+                "ha in [[air]]                   oveHKead"
+            ]
+        },
+        {
+            "id": "sp_348",
+            "name": "Quick Claw",
+            "type": "special",
+            "inputs": [
+                "la                          will not work if you are"
+            ]
+        },
+        {
+            "id": "sp_349",
+            "name": "Poke",
+            "type": "special",
+            "inputs": [
+                "la                          first part must touch the"
+            ]
+        },
+        {
+            "id": "sp_350",
+            "name": "Claw Uppercut",
+            "type": "special",
+            "inputs": [
+                "ha                          poke must touch the"
+            ]
+        },
+        {
+            "id": "sp_351",
+            "name": "Claw Uppercut",
+            "type": "special",
+            "inputs": [
+                "ha                          first part must touch the"
+            ]
+        },
+        {
+            "id": "sp_352",
+            "name": "Straight Claw",
+            "type": "special",
+            "inputs": [
+                "ha                          2 hits"
+            ]
+        },
+        {
+            "id": "sp_355",
+            "name": "Claw Upper",
+            "type": "special",
+            "inputs": [
+                "dash MK ha            becomes e slicer if you"
+            ]
+        },
+        {
+            "id": "sp_356",
+            "name": "Retreat Claw Upper",
+            "type": "special",
+            "inputs": [
+                "dash backward ha           becomes retreat e slicer"
+            ]
+        },
+        {
+            "id": "sp_359",
+            "name": "Capture Device",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "la",
+                "claw",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_360",
+            "name": "E Typhoon",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_361",
+            "name": "Diagonal Capture Device",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ha",
+                "claw",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_363",
+            "name": "Upward Capture Device",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "la",
+                "ha",
+                "claw",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_364",
+            "name": "E-Typhoon",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_365",
+            "name": "Charge Capture",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "forward",
+                "down-back",
+                "down-forward",
+                "la",
+                "claw",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_367",
+            "name": "Charge Diagonal Capture",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "forward",
+                "down-back",
+                "down-forward",
+                "ha",
+                "claw",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_369",
+            "name": "Charge Upward Capture",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "forward",
+                "down-back",
+                "down-forward",
+                "la",
+                "ha",
+                "claw",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_371",
+            "name": "Body Scrap",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "a",
+                "close",
+                "unblockable;",
+                "will",
+                "not"
+            ]
+        },
+        {
+            "id": "sp_372",
+            "name": "G Splasher",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "la",
+                "move",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_373",
+            "name": "E Pressure",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ha",
+                "move",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sp_378",
+            "name": "Drilling",
+            "type": "special",
+            "inputs": [
+                "f/b la close              shake joystick and tap"
+            ]
+        },
+        {
+            "id": "sp_382",
+            "name": "Chain Spike Smasher",
+            "type": "special",
+            "inputs": [
+                "la ha in [[air]]                oveHKead"
+            ]
+        },
+        {
+            "id": "sp_383",
+            "name": "Quick Drill",
+            "type": "special",
+            "inputs": [
+                "la                          will not work if you are"
+            ]
+        },
+        {
+            "id": "sp_384",
+            "name": "Drill Swipe",
+            "type": "special",
+            "inputs": [
+                "la                          first part must touch the"
+            ]
+        },
+        {
+            "id": "sp_385",
+            "name": "Final Drill",
+            "type": "special",
+            "inputs": [
+                "ha                          drill swipe must touch"
+            ]
+        },
+        {
+            "id": "sp_386",
+            "name": "Final Drill",
+            "type": "special",
+            "inputs": [
+                "ha                          first part must touch the"
+            ]
+        },
+        {
+            "id": "sp_392",
+            "name": "Containment Blast",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha",
+                "must",
+                "be",
+                "blocked",
+                "low"
+            ]
+        },
+        {
+            "id": "sp_393",
+            "name": "Drill Cannon",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "la",
+                "(hold",
+                "a",
+                "to",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sp_394",
+            "name": "delay and empower)",
+            "type": "special",
+            "inputs": [
+                "missing your critical"
+            ]
+        },
+        {
+            "id": "sp_395",
+            "name": "High Drill Cannon",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ha",
+                "(hold",
+                "a",
+                "to",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sp_397",
+            "name": "Air Drill Cannon",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "la",
+                "in",
+                "[[air]]",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sp_398",
+            "name": "Down Air Drill Cannon",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ha",
+                "in",
+                "[[air]]",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sp_399",
+            "name": "Hyper Death Drill",
+            "type": "super",
+            "inputs": [
+                "forward",
+                "back",
+                "forward",
+                "a",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sp_400",
+            "name": "Drill Power",
+            "type": "special",
+            "inputs": [
+                "tap a rapidly"
+            ]
+        },
+        {
+            "id": "sp_401",
+            "name": "Cyclone Stamp",
+            "type": "special",
+            "inputs": [
+                "2",
+                "[charge]",
+                "for",
+                "1",
+                "second",
+                "la=4",
+                "hits",
+                "ha=6",
+                "hits;"
+            ]
+        },
+        {
+            "id": "sp_404",
+            "name": "Plasma Destroyer",
+            "type": "special",
+            "inputs": [
+                "f/b a close"
+            ]
+        },
+        {
+            "id": "sp_405",
+            "name": "Plasma Destroyer D",
+            "type": "special",
+            "inputs": [
+                "f/b a to"
+            ]
+        },
+        {
+            "id": "sp_406",
+            "name": "Bomb Trio",
+            "type": "special",
+            "inputs": [
+                "ha in [[air]]                   the bombs will either"
+            ]
+        },
+        {
+            "id": "sp_407",
+            "name": "One Two Poke",
+            "type": "special",
+            "inputs": [
+                "la                          2 hits"
+            ]
+        },
+        {
+            "id": "sp_408",
+            "name": "Raging Rise",
+            "type": "special",
+            "inputs": [
+                "ha                          4 hits"
+            ]
+        },
+        {
+            "id": "sp_409",
+            "name": "Super Twirl",
+            "type": "super",
+            "inputs": [
+                "dash MK la"
+            ]
+        },
+        {
+            "id": "sp_410",
+            "name": "Trick Twirl",
+            "type": "special",
+            "inputs": [
+                "dash backward la"
+            ]
+        },
+        {
+            "id": "sp_411",
+            "name": "Collapse Slide",
+            "type": "special",
+            "inputs": [
+                "dash MK ha"
+            ]
+        },
+        {
+            "id": "sp_412",
+            "name": "Trick Collapse Slide",
+            "type": "special",
+            "inputs": [
+                "dash backward ha"
+            ]
+        },
+        {
+            "id": "sp_413",
+            "name": "Spider Drill",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha",
+                "in",
+                "[[air]]",
+                "oveHKead"
+            ]
+        },
+        {
+            "id": "sp_414",
+            "name": "Low Arm",
+            "type": "special",
+            "inputs": [
+                "2",
+                "la",
+                "must",
+                "be",
+                "blocked",
+                "low"
+            ]
+        },
+        {
+            "id": "sp_415",
+            "name": "Red Omega",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "forward",
+                "down-back",
+                "down-forward",
+                "a",
+                "ha",
+                "version",
+                "has",
+                "the",
+                "magnet"
+            ]
+        },
+        {
+            "id": "sp_416",
+            "name": "Devil X",
+            "type": "special",
+            "inputs": [
+                "down",
+                "up",
+                "la",
+                "must",
+                "be",
+                "blocked",
+                "low;",
+                "can"
+            ]
+        },
+        {
+            "id": "sp_417",
+            "name": "Final Omicron",
+            "type": "special",
+            "inputs": [
+                "down",
+                "up",
+                "ha",
+                "can",
+                "hit",
+                "an",
+                "oPPonent",
+                "who's"
+            ]
+        },
+        {
+            "id": "sp_418",
+            "name": "Giga Laser",
+            "type": "special",
+            "inputs": [
+                "la ha when super meter is   can hit an oPPonent who's"
+            ]
+        },
+        {
+            "id": "sp_424",
+            "name": "Saw Blades",
+            "type": "special",
+            "inputs": [
+                "la in [[air]]                   all hits are oveHKeads"
+            ]
+        },
+        {
+            "id": "sp_425",
+            "name": "Blast Boots",
+            "type": "special",
+            "inputs": [
+                "ha in [[air]]                   this is not an oveHKead"
+            ]
+        },
+        {
+            "id": "sp_426",
+            "name": "Blast Away",
+            "type": "special",
+            "inputs": [
+                "tap ha rapidly in [[air]]       this is not an oveHKead"
+            ]
+        },
+        {
+            "id": "sp_428",
+            "name": "Down Punch",
+            "type": "special",
+            "inputs": [
+                "la                          first part must touch the"
+            ]
+        },
+        {
+            "id": "sp_429",
+            "name": "Jawing Punch",
+            "type": "special",
+            "inputs": [
+                "dash MK la            becomes energy kick if"
+            ]
+        },
+        {
+            "id": "sp_430",
+            "name": "Trick Jawing Punch",
+            "type": "special",
+            "inputs": [
+                "dash backward la           becomes trick energy kick"
+            ]
+        },
+        {
+            "id": "sp_431",
+            "name": "Energy Kick",
+            "type": "special",
+            "inputs": [
+                "dash MK ha"
+            ]
+        },
+        {
+            "id": "sp_432",
+            "name": "Trick Energy Kick",
+            "type": "special",
+            "inputs": [
+                "dash backward ha"
+            ]
+        },
+        {
+            "id": "sp_433",
+            "name": "Plate Bounce",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha",
+                "in",
+                "[[air]]",
+                "can",
+                "perform",
+                "another",
+                "[[air]]"
+            ]
+        },
+        {
+            "id": "sp_434",
+            "name": "Ikki Tousen",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "a",
+                "la=small",
+                "projectile",
+                "that"
+            ]
+        },
+        {
+            "id": "sp_435",
+            "name": "Air Ikki Tousen",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "a",
+                "in",
+                "[[air]]",
+                "la=small",
+                "projectile",
+                "that"
+            ]
+        },
+        {
+            "id": "sp_436",
+            "name": "Mondou Muyou",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "a",
+                "la=low",
+                "ha=high"
+            ]
+        },
+        {
+            "id": "sp_437",
+            "name": "Ichimou Dajin",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "a",
+                "close",
+                "unblockable"
+            ]
+        },
+        {
+            "id": "sp_438",
+            "name": "Shogyou Mujou",
+            "type": "special",
+            "inputs": [
+                "4",
+                "[charge]",
+                "for",
+                "1",
+                "second",
+                "teleports",
+                "behind"
+            ]
+        },
+        {
+            "id": "sp_439",
+            "name": "Short Shogyou Mujou",
+            "type": "special",
+            "inputs": [
+                "4",
+                "[charge]",
+                "for",
+                "1",
+                "second",
+                "la=far",
+                "ha=LK;"
+            ]
+        },
+        {
+            "id": "sp_440",
+            "name": "Air Shogyou Mujou",
+            "type": "special",
+            "inputs": [
+                "4",
+                "[charge]",
+                "for",
+                "1",
+                "second",
+                "teleports",
+                "behind",
+                "oPPonent"
+            ]
+        },
+        {
+            "id": "sp_442",
+            "name": "Giga Split",
+            "type": "special",
+            "inputs": [
+                "la ha when super meter is   can hit an oPPonent who's"
+            ]
+        },
+        {
+            "id": "sp_444",
+            "name": "Full On Laser",
+            "type": "special",
+            "inputs": [
+                "f/b a close"
+            ]
+        },
+        {
+            "id": "sp_445",
+            "name": "Eagle Dive",
+            "type": "special",
+            "inputs": [
+                "la in [[air]]                   all hits are oveHKeads"
+            ]
+        },
+        {
+            "id": "sp_446",
+            "name": "Helicopter Fire",
+            "type": "special",
+            "inputs": [
+                "ha in [[air]]                   this is not an oveHKead;"
+            ]
+        },
+        {
+            "id": "sp_447",
+            "name": "Bird Shot",
+            "type": "special",
+            "inputs": [
+                "ha"
+            ]
+        },
+        {
+            "id": "sp_448",
+            "name": "Robo Slaps",
+            "type": "special",
+            "inputs": [
+                "dash MK la"
+            ]
+        },
+        {
+            "id": "sp_449",
+            "name": "Retreat Robo Slaps",
+            "type": "special",
+            "inputs": [
+                "dash backward la"
+            ]
+        },
+        {
+            "id": "sp_450",
+            "name": "Dash Laser",
+            "type": "special",
+            "inputs": [
+                "dash MK ha"
+            ]
+        },
+        {
+            "id": "sp_451",
+            "name": "Retreat Laser",
+            "type": "special",
+            "inputs": [
+                "dash backward ha"
+            ]
+        },
+        {
+            "id": "sp_452",
+            "name": "Flight Down",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha",
+                "in",
+                "[[air]]",
+                "oveHKead"
+            ]
+        },
+        {
+            "id": "sp_453",
+            "name": "Terrain Swipe",
+            "type": "special",
+            "inputs": [
+                "2",
+                "la",
+                "must",
+                "be",
+                "blocked",
+                "low"
+            ]
+        },
+        {
+            "id": "sp_454",
+            "name": "Ground Laser",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha"
+            ]
+        },
+        {
+            "id": "sp_455",
+            "name": "Gott Kugel",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "a",
+                "la=LK",
+                "bomb",
+                "ha=long"
+            ]
+        },
+        {
+            "id": "sp_456",
+            "name": "Flugel Bogen",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "back",
+                "down-forward",
+                "down-back",
+                "a",
+                "hp",
+                "version",
+                "hits",
+                "3",
+                "times"
+            ]
+        },
+        {
+            "id": "sp_457",
+            "name": "Himmel Fangel",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "a",
+                "in",
+                "[[air]]",
+                "must",
+                "connect",
+                "with"
+            ]
+        },
+        {
+            "id": "sp_458",
+            "name": "Giga Spin",
+            "type": "special",
+            "inputs": [
+                "la ha when super meter is   can hit an oPPonent who's"
+            ]
+        },
+        {
+            "id": "sp_460",
+            "name": "Thrust Aside",
+            "type": "special",
+            "inputs": [
+                "f/b a close"
+            ]
+        },
+        {
+            "id": "sp_461",
+            "name": "Explosive Toss",
+            "type": "throw",
+            "inputs": [
+                "la in [[air]]                   this is not an oveHKead;"
+            ]
+        },
+        {
+            "id": "sp_462",
+            "name": "Rapid Digger",
+            "type": "special",
+            "inputs": [
+                "ha in [[air]]                   all hits are oveHKeads"
+            ]
+        },
+        {
+            "id": "sp_463",
+            "name": "One Two",
+            "type": "special",
+            "inputs": [
+                "la                          2 hits"
+            ]
+        },
+        {
+            "id": "sp_464",
+            "name": "High Laser Kick",
+            "type": "special",
+            "inputs": [
+                "ha"
+            ]
+        },
+        {
+            "id": "sp_465",
+            "name": "Claw Upper",
+            "type": "special",
+            "inputs": [
+                "dash MK la"
+            ]
+        },
+        {
+            "id": "sp_466",
+            "name": "Retreat Claw Upper",
+            "type": "special",
+            "inputs": [
+                "dash backward la"
+            ]
+        },
+        {
+            "id": "sp_467",
+            "name": "Cross Cutter",
+            "type": "special",
+            "inputs": [
+                "dash MK ha"
+            ]
+        },
+        {
+            "id": "sp_468",
+            "name": "Retreat Cross Cutter",
+            "type": "special",
+            "inputs": [
+                "dash backward ha"
+            ]
+        },
+        {
+            "id": "sp_469",
+            "name": "Low Digging",
+            "type": "special",
+            "inputs": [
+                "2",
+                "la"
+            ]
+        },
+        {
+            "id": "sp_470",
+            "name": "Blade Extend",
+            "type": "special",
+            "inputs": [
+                "2",
+                "ha",
+                "must",
+                "be",
+                "blocked",
+                "low"
+            ]
+        },
+        {
+            "id": "sp_471",
+            "name": "Sacred Stare",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "a",
+                "the",
+                "blade",
+                "must",
+                "connect"
+            ]
+        },
+        {
+            "id": "sp_472",
+            "name": "Forbidden Force",
+            "type": "special",
+            "inputs": [
+                "4",
+                "[charge]",
+                "for",
+                "1",
+                "second",
+                "la=long",
+                "and",
+                "straight"
+            ]
+        },
+        {
+            "id": "sp_473",
+            "name": "Air Forbidden Force",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "[charge]",
+                "for",
+                "1",
+                "second",
+                "la=LK",
+                "and"
+            ]
+        },
+        {
+            "id": "sp_474",
+            "name": "Energy Drain",
+            "type": "special",
+            "inputs": [
+                "360 a close               unblockable"
+            ]
+        },
+        {
+            "id": "sp_475",
+            "name": "Imitation Alpha",
+            "type": "special",
+            "inputs": [
+                "back",
+                "back",
+                "back",
+                "forward",
+                "forward",
+                "back",
+                "motion",
+                "must",
+                "be",
+                "done"
+            ]
+        },
+        {
+            "id": "sp_476",
+            "name": "Imitation Beta",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "back",
+                "la",
+                "ha",
+                "la",
+                "doPPelganger",
+                "lasts",
+                "for",
+                "8"
+            ]
+        },
+        {
+            "id": "sp_477",
+            "name": "Giga Rising",
+            "type": "special",
+            "inputs": [
+                "la ha when super meter is   can hit an oPPonent who's"
+            ]
+        },
+        {
+            "id": "sup_0",
+            "name": "Planet Smasher",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a",
+                "dash",
+                "in",
+                "must",
+                "touch",
+                "the"
+            ]
+        },
+        {
+            "id": "sup_1",
+            "name": "Crescent Tornado",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sup_2",
+            "name": "Graviton Field",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a",
+                "can",
+                "hit",
+                "a",
+                "ground",
+                "oPPonent"
+            ]
+        },
+        {
+            "id": "sup_3",
+            "name": "Full Verniern Hurricane",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a",
+                "dash",
+                "in",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sup_4",
+            "name": "Thunder Shaking",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sup_5",
+            "name": "Assault Bits",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a",
+                "whip",
+                "must",
+                "connect",
+                "(not"
+            ]
+        },
+        {
+            "id": "sup_6",
+            "name": "Nebulous Dream",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a"
+            ]
+        },
+        {
+            "id": "sup_7",
+            "name": "Falling Destroy",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a",
+                "jump",
+                "in",
+                "must",
+                "connect",
+                "to"
+            ]
+        },
+        {
+            "id": "sup_8",
+            "name": "Delta Blast",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sup_9",
+            "name": "Gul Burning",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a"
+            ]
+        },
+        {
+            "id": "sup_10",
+            "name": "G Typhoon",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a",
+                "claw",
+                "must",
+                "connect",
+                "to"
+            ]
+        },
+        {
+            "id": "sup_11",
+            "name": "Final Death Drill",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a",
+                "will",
+                "not",
+                "work",
+                "if",
+                "you",
+                "are"
+            ]
+        },
+        {
+            "id": "sup_12",
+            "name": "Death Satan Sigma",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a",
+                "missiles",
+                "will",
+                "either"
+            ]
+        },
+        {
+            "id": "sup_13",
+            "name": "Kuuzen Zetsugo",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a"
+            ]
+        },
+        {
+            "id": "sup_14",
+            "name": "Schlachtfeld Kaval",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a"
+            ]
+        },
+        {
+            "id": "um_0",
+            "name": "BIT High Blast",
+            "type": "unique",
+            "inputs": [
+                "w"
+            ]
+        },
+        {
+            "id": "um_1",
+            "name": "BIT Low Blast",
+            "type": "unique",
+            "inputs": [
+                "2",
+                "w",
+                "can",
+                "hit",
+                "an",
+                "oPPonent",
+                "who's"
+            ]
+        },
+        {
+            "id": "um_2",
+            "name": "BIT Upward Blast",
+            "type": "unique",
+            "inputs": [
+                "6",
+                "w"
+            ]
+        },
+        {
+            "id": "um_3",
+            "name": "BIT Straight Air Blast",
+            "type": "unique",
+            "inputs": [
+                "w in [[air]]"
+            ]
+        },
+        {
+            "id": "um_4",
+            "name": "BIT Downward Air Blast",
+            "type": "unique",
+            "inputs": [
+                "2",
+                "w",
+                "in",
+                "[[air]]",
+                "can",
+                "hit",
+                "an",
+                "oPPonent",
+                "who's"
+            ]
+        },
+        {
+            "id": "um_5",
+            "name": "BIT Upward Air Blast",
+            "type": "unique",
+            "inputs": [
+                "8",
+                "w",
+                "in",
+                "[[air]]"
+            ]
+        },
+        {
+            "id": "um_6",
+            "name": "Mid Trap Launcher",
+            "type": "unique",
+            "inputs": [
+                "w                           can be destroyed at it's"
+            ]
+        },
+        {
+            "id": "um_7",
+            "name": "Short Trap Launcher",
+            "type": "unique",
+            "inputs": [
+                "2",
+                "w",
+                "can",
+                "be",
+                "destroyed",
+                "at",
+                "it's"
+            ]
+        },
+        {
+            "id": "um_8",
+            "name": "Far Trap Launcher",
+            "type": "normal",
+            "inputs": [
+                "w in [[air]]                    can be destroyed at it's"
+            ]
+        },
+        {
+            "id": "um_9",
+            "name": "Pulse Laser Rain",
+            "type": "unique",
+            "inputs": [
+                "w                           can hit an oPPonent who's"
+            ]
+        },
+        {
+            "id": "um_10",
+            "name": "Sky Pulse Laser",
+            "type": "unique",
+            "inputs": [
+                "6",
+                "w"
+            ]
+        },
+        {
+            "id": "um_11",
+            "name": "Ducking Pulse Laser",
+            "type": "unique",
+            "inputs": [
+                "2",
+                "w",
+                "can",
+                "hit",
+                "an",
+                "oPPonent",
+                "who's"
+            ]
+        },
+        {
+            "id": "um_12",
+            "name": "High Pulse Laser Rain",
+            "type": "unique",
+            "inputs": [
+                "w in [[air]]                    can hit an oPPonent who's"
+            ]
+        },
+        {
+            "id": "um_13",
+            "name": "Thin Laser Cannon",
+            "type": "unique",
+            "inputs": [
+                "tap w"
+            ]
+        },
+        {
+            "id": "um_14",
+            "name": "Thick Laser Cannon",
+            "type": "unique",
+            "inputs": [
+                "w"
+            ]
+        },
+        {
+            "id": "um_15",
+            "name": "Thin Low Laser Cannon",
+            "type": "unique",
+            "inputs": [
+                "2",
+                "quick",
+                "tap",
+                "of",
+                "w"
+            ]
+        },
+        {
+            "id": "um_16",
+            "name": "Thick Low Laser Cannon",
+            "type": "unique",
+            "inputs": [
+                "2",
+                "w"
+            ]
+        },
+        {
+            "id": "um_17",
+            "name": "Thin Air Laser Cannon",
+            "type": "unique",
+            "inputs": [
+                "tap w in [[air]]"
+            ]
+        },
+        {
+            "id": "um_18",
+            "name": "Thick Air Laser Cannon",
+            "type": "unique",
+            "inputs": [
+                "w in [[air]]"
+            ]
+        },
+        {
+            "id": "um_19",
+            "name": "Missile Launcher",
+            "type": "unique",
+            "inputs": [
+                "w"
+            ]
+        },
+        {
+            "id": "um_20",
+            "name": "Ducking Missiles",
+            "type": "unique",
+            "inputs": [
+                "2",
+                "w"
+            ]
+        },
+        {
+            "id": "um_21",
+            "name": "Air Missiles",
+            "type": "unique",
+            "inputs": [
+                "w in [[air]]"
+            ]
+        },
+        {
+            "id": "um_28",
+            "name": "Laser Screen High",
+            "type": "unique",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "w"
+            ]
+        },
+        {
+            "id": "um_29",
+            "name": "Laser Screen Low",
+            "type": "unique",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "w",
+                "if",
+                "projectile",
+                "hits",
+                "(not"
+            ]
+        },
+        {
+            "id": "um_30",
+            "name": "Homing Missile",
+            "type": "unique",
+            "inputs": [
+                "w                           tracks oPPonent slightly;"
+            ]
+        },
+        {
+            "id": "um_31",
+            "name": "Low Homing Missile",
+            "type": "unique",
+            "inputs": [
+                "2",
+                "w",
+                "tracks",
+                "oPPonent",
+                "slightly;"
+            ]
+        },
+        {
+            "id": "um_32",
+            "name": "Air Homing Missile",
+            "type": "unique",
+            "inputs": [
+                "w in [[air]]                    tracks oPPonent slightly;"
+            ]
+        },
+        {
+            "id": "um_33",
+            "name": "Dual Homing Missile",
+            "type": "unique",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "w",
+                "tracks",
+                "oPPonent",
+                "slightly;"
+            ]
+        },
+        {
+            "id": "um_34",
+            "name": "Dual Air Homing Missile",
+            "type": "unique",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "w",
+                "in",
+                "[[air]]",
+                "tracks",
+                "oPPonent",
+                "slightly;"
+            ]
+        },
+        {
+            "id": "um_36",
+            "name": "Missile Rain",
+            "type": "unique",
+            "inputs": [
+                "2",
+                "w"
+            ]
+        },
+        {
+            "id": "um_38",
+            "name": "High Mine Launch",
+            "type": "unique",
+            "inputs": [
+                "w                           if oPPonent touches the"
+            ]
+        },
+        {
+            "id": "um_39",
+            "name": "Far Mine Launch",
+            "type": "normal",
+            "inputs": [
+                "6",
+                "w",
+                "if",
+                "oPPonent",
+                "touches",
+                "the"
+            ]
+        },
+        {
+            "id": "um_40",
+            "name": "Ducking Mine Launch",
+            "type": "unique",
+            "inputs": [
+                "2",
+                "w",
+                "if",
+                "oPPonent",
+                "touches",
+                "the"
+            ]
+        },
+        {
+            "id": "um_41",
+            "name": "Air Mine Launch",
+            "type": "unique",
+            "inputs": [
+                "w in [[air]]                    if oPPonent touches the"
+            ]
+        },
+        {
+            "id": "um_42",
+            "name": "Flame Thrower",
+            "type": "throw",
+            "inputs": [
+                "w"
+            ]
+        },
+        {
+            "id": "um_43",
+            "name": "High Flame Thrower",
+            "type": "throw",
+            "inputs": [
+                "w when oPPonent is in [[air]]"
+            ]
+        },
+        {
+            "id": "um_44",
+            "name": "Flame Thrower Rise",
+            "type": "throw",
+            "inputs": [
+                "press and hold w"
+            ]
+        },
+        {
+            "id": "um_45",
+            "name": "Flame Thrower Lower",
+            "type": "throw",
+            "inputs": [
+                "press and hold w when"
+            ]
+        },
+        {
+            "id": "um_46",
+            "name": "Low Flame Thrower",
+            "type": "throw",
+            "inputs": [
+                "2",
+                "w"
+            ]
+        },
+        {
+            "id": "um_47",
+            "name": "Duck High Flame Thrower",
+            "type": "throw",
+            "inputs": [
+                "2",
+                "w",
+                "when",
+                "oPPonent",
+                "is",
+                "in"
+            ]
+        },
+        {
+            "id": "um_48",
+            "name": "Low Flame Thrower Rise",
+            "type": "throw",
+            "inputs": [
+                "2",
+                "hold",
+                "and",
+                "press",
+                "and",
+                "hold"
+            ]
+        },
+        {
+            "id": "um_49",
+            "name": "Air Flame Thrower",
+            "type": "throw",
+            "inputs": [
+                "w in [[air]]"
+            ]
+        },
+        {
+            "id": "um_50",
+            "name": "Air High Flame Thrower",
+            "type": "throw",
+            "inputs": [
+                "w in [[air]] when oPPonent is"
+            ]
+        },
+        {
+            "id": "um_51",
+            "name": "Air Flame Thrower Rise",
+            "type": "throw",
+            "inputs": [
+                "press and hold w in [[air]]"
+            ]
+        },
+        {
+            "id": "um_52",
+            "name": "Air Flame Thrower Lower",
+            "type": "throw",
+            "inputs": [
+                "press and hold w in [[air]]"
+            ]
+        },
+        {
+            "id": "um_58",
+            "name": "High Mines Launch",
+            "type": "unique",
+            "inputs": [
+                "w                           if oPPonent touches the"
+            ]
+        },
+        {
+            "id": "um_59",
+            "name": "Ducking Mines Launch",
+            "type": "unique",
+            "inputs": [
+                "2",
+                "w",
+                "if",
+                "oPPonent",
+                "touches",
+                "the"
+            ]
+        },
+        {
+            "id": "um_61",
+            "name": "Missile Barrage",
+            "type": "unique",
+            "inputs": [
+                "2",
+                "w",
+                "/",
+                "w"
+            ]
+        },
+        {
+            "id": "um_62",
+            "name": "Air Missile Barrage",
+            "type": "unique",
+            "inputs": [
+                "w in [[air]]"
+            ]
+        },
+        {
+            "id": "um_63",
+            "name": "Super Gamma",
+            "type": "super",
+            "inputs": [
+                "down",
+                "up",
+                "w",
+                "if",
+                "move",
+                "connects",
+                "(not"
+            ]
+        },
+        {
+            "id": "um_64",
+            "name": "Double Missile Barrage",
+            "type": "unique",
+            "inputs": [
+                "2",
+                "w",
+                "/",
+                "w"
+            ]
+        },
+        {
+            "id": "um_65",
+            "name": "Retreat Bombing",
+            "type": "unique",
+            "inputs": [
+                "w in [[air]]                    can hit an oPPonent who's"
+            ]
+        },
+        {
+            "id": "um_66",
+            "name": "Vulcan Cannon",
+            "type": "unique",
+            "inputs": [
+                "w                           can hit an oPPonent who's"
+            ]
+        },
+        {
+            "id": "um_67",
+            "name": "Short Vulcan Cannon",
+            "type": "unique",
+            "inputs": [
+                "2",
+                "w",
+                "can",
+                "hit",
+                "an",
+                "oPPonent",
+                "who's"
+            ]
+        },
+        {
+            "id": "um_68",
+            "name": "Far Vulcan Cannon",
+            "type": "normal",
+            "inputs": [
+                "6",
+                "w",
+                "can",
+                "hit",
+                "an",
+                "oPPonent",
+                "who's"
+            ]
+        },
+        {
+            "id": "um_69",
+            "name": "Ascension Black",
+            "type": "unique",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "w",
+                "can",
+                "hit",
+                "an",
+                "oPPonent",
+                "who's"
+            ]
+        },
+        {
+            "id": "um_70",
+            "name": "Final Sacrifice",
+            "type": "unique",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a",
+                "can",
+                "hit",
+                "a",
+                "ground",
+                "oPPonent"
+            ]
+        },
+        {
+            "id": "um_71",
+            "name": "Air Final Sacrifice",
+            "type": "unique",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "forward",
+                "down-forward",
+                "down-forward",
+                "a",
+                "in",
+                "[[air]]",
+                "can",
+                "hit",
+                "a",
+                "ground",
+                "oPPonent"
+            ]
+        }
+    ],
+    "combosList": []
+}

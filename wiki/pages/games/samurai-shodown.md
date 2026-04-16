@@ -1,21 +1,22 @@
 ---
 title: "Samurai Shodown"
 type: game
-tags: [samurai-shodown, snk]
-games: [samurai-shodown]
+tags: [samurai-shodown]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Samurai Shodown
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (2 characters)
+## Characters (2 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Haohmaru, Ukyo Tachibana
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/samurai-shodown/{character}.json` — parsed from `samurai_shodown_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

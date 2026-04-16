@@ -1,21 +1,22 @@
 ---
 title: "Waku Waku 7"
 type: game
-tags: [waku-waku-7, snk]
-games: [waku-waku-7]
+tags: [waku-waku-7]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Waku Waku 7
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Arina Makihara
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/waku-waku-7/{character}.json` — parsed from `neogeo_remaining_fighters.json`.
+## Meta
+*No meta/tier lists loaded.*

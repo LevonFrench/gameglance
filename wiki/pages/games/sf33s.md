@@ -1,21 +1,22 @@
 ---
 title: "Street Fighter III: 3rd Strike - Fight for the Future"
 type: game
-tags: [sf33s, capcom]
-games: [sf33s]
+tags: [sf33s]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Street Fighter III: 3rd Strike - Fight for the Future
 
-A classic Capcom fighting game.
+## Overview
+*No overview generated yet.*
 
-## Roster (3 characters parsed here)
+## Characters (3 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Makoto, Chun-Li, Q
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/sf33s/{character}.json` — parsed from `faqs/sf3_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

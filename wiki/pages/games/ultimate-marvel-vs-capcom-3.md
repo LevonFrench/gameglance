@@ -1,21 +1,22 @@
 ---
 title: "Ultimate Marvel vs. Capcom 3"
 type: game
-tags: [ultimate-marvel-vs-capcom-3, capcom]
-games: [ultimate-marvel-vs-capcom-3]
+tags: [ultimate-marvel-vs-capcom-3]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Ultimate Marvel vs. Capcom 3
 
-A classic fighting game by Capcom.
+## Overview
+*No overview generated yet.*
 
-## Roster (2 characters)
+## Characters (10 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Magneto, Vergil
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/ultimate-marvel-vs-capcom-3/{character}.json` — parsed from `crossover_modern_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

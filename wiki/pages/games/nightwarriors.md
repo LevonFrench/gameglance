@@ -1,32 +1,22 @@
 ---
-title: "Night Warriors: Darkstalkers' Revenge"
+title: "Night Warriors: Darkstalkers"
 type: game
-tags: [nightwarriors, classic, capcom, darkstalkers-series]
-games: [nightwarriors]
+tags: [nightwarriors]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Night Warriors: Darkstalkers' Revenge
+# Night Warriors: Darkstalkers
 
-Second entry in the Darkstalkers series, released 1995. Expanded roster with
-Donovan Baine, Hsien-Ko, and Pyron as playable.
+## Overview
+*No overview generated yet.*
 
-## Roster (13 characters)
+## Characters (31 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Anakaris, Bishamon, Demitri Maximov, Donovan Baine, Felicia, Morrigan Aensland,
-Pyron, Sasquatch, Victor von Geldenheim, Donovan, Hsien-Ko, Jon Talbain, Victor.
+## Mechanics
+*No mechanics mapped.*
 
-## Move Categories
-
-**Normal Moves**, **Special Moves**, **Super Arts**.
-
-## Data Source
-
-Character data: `public/data/nightwarriors/{character}.json` — 13 characters.
-
-## See Also
-
-- [[darkstalkers]] — predecessor
-- [[vampiresavior]] — third entry
+## Meta
+*No meta/tier lists loaded.*

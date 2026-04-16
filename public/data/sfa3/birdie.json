@@ -1,255 +1,226 @@
 {
-  "game": "Street Fighter Alpha 3",
-  "character": "Birdie",
-  "theme_colors": {
-    "normal": "#60a5fa",
-    "special": "#f59e0b",
-    "super_fatality": "#ef4444"
-  },
-  "movesList": [
-    {
-      "id": "birdie_normal_0",
-      "name": "Standing Light Punch",
-      "type": "normal",
-      "inputs": [
-        "LP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_1",
-      "name": "Standing Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "MP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_2",
-      "name": "Standing Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "HP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_3",
-      "name": "Standing Light Kick",
-      "type": "normal",
-      "inputs": [
-        "LK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_4",
-      "name": "Standing Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "MK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_5",
-      "name": "Standing Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "HK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_6",
-      "name": "Crouching Light Punch",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "LP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_7",
-      "name": "Crouching Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "MP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_8",
-      "name": "Crouching Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "HP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_9",
-      "name": "Crouching Light Kick",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "LK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_10",
-      "name": "Crouching Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "MK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_11",
-      "name": "Crouching Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "HK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_12",
-      "name": "Jumping Light Punch",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "LP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_13",
-      "name": "Jumping Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "MP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_14",
-      "name": "Jumping Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "HP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_15",
-      "name": "Jumping Light Kick",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "LK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_16",
-      "name": "Jumping Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "MK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_normal_17",
-      "name": "Jumping Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "HK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_bull_head_0",
-      "name": "Bull Head",
-      "type": "special",
-      "inputs": [
-        "l([charge])",
-        "r",
-        "P"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_bull_horn_1",
-      "name": "Bull Horn",
-      "type": "special",
-      "inputs": [
-        "PP",
-        "or KK([charge])",
-        "then release"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_murderer_chain_2",
-      "name": "Murderer Chain",
-      "type": "special",
-      "inputs": [
-        "360°",
-        "P"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_bandit_chain_3",
-      "name": "Bandit Chain",
-      "type": "special",
-      "inputs": [
-        "360°",
-        "K"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_the_birdie_4",
-      "name": "The Birdie",
-      "type": "super",
-      "inputs": [
-        "l([charge])",
-        "r",
-        "l",
-        "r",
-        "P"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "birdie_bull_revenger_5",
-      "name": "Bull Revenger",
-      "type": "super",
-      "inputs": [
-        "d",
-        "dr",
-        "r",
-        "d",
-        "dr",
-        "P or K"
-      ],
-      "frameData": {}
-    }
-  ],
-  "combosList": []
+    "game": "Street Fighter Alpha 3",
+    "character": "Birdie",
+    "movesList": [
+        {
+            "id": "sp_0",
+            "name": "Bull Head",
+            "type": "special",
+            "inputs": [
+                "back",
+                "forward",
+                "P (Hold P to charge)"
+            ]
+        },
+        {
+            "id": "sp_1",
+            "name": "Bull Horn",
+            "type": "special",
+            "inputs": [
+                "Hold P or K and release"
+            ]
+        },
+        {
+            "id": "sp_2",
+            "name": "Murderer Chain",
+            "type": "special",
+            "inputs": [
+                "360",
+                "P"
+            ]
+        },
+        {
+            "id": "sp_3",
+            "name": "Bandit Chain",
+            "type": "special",
+            "inputs": [
+                "360",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_0",
+            "name": "Standing Light Punch",
+            "type": "normal",
+            "inputs": [
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_1",
+            "name": "Standing Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_2",
+            "name": "Standing Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_3",
+            "name": "Standing Light Kick",
+            "type": "normal",
+            "inputs": [
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_4",
+            "name": "Standing Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_5",
+            "name": "Standing Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_6",
+            "name": "Crouching Light Punch",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_7",
+            "name": "Crouching Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_8",
+            "name": "Crouching Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_9",
+            "name": "Crouching Light Kick",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_10",
+            "name": "Crouching Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_11",
+            "name": "Crouching Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_12",
+            "name": "Jumping Light Punch",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_13",
+            "name": "Jumping Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_14",
+            "name": "Jumping Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_15",
+            "name": "Jumping Light Kick",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_16",
+            "name": "Jumping Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_17",
+            "name": "Jumping Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "HK"
+            ]
+        },
+        {
+            "id": "sup_0",
+            "name": "The Birdie",
+            "type": "super",
+            "inputs": [
+                "forward",
+                "back",
+                "forward",
+                "l([charge])",
+                "P"
+            ]
+        },
+        {
+            "id": "sup_1",
+            "name": "Bull Revenger",
+            "type": "super",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "down",
+                "down-forward",
+                "P",
+                "or",
+                "K"
+            ]
+        }
+    ],
+    "combosList": []
 }

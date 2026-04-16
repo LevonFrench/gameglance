@@ -1,21 +1,22 @@
 ---
 title: "Killer Instinct (2013)"
 type: game
-tags: [killer-instinct-(2013), rare]
-games: [killer-instinct-(2013)]
+tags: [killer-instinct-(2013)]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Killer Instinct (2013)
 
-A classic fighting game by Rare.
+## Overview
+*No overview generated yet.*
 
-## Roster (3 characters)
+## Characters (2 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Fulgore, Hisako, System Mechanics
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/killer-instinct-(2013)/{character}.json` — parsed from `killer_instinct_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

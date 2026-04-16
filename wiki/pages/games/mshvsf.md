@@ -1,21 +1,22 @@
 ---
 title: "Marvel Super Heroes vs. Street Fighter"
 type: game
-tags: [mshvsf, crossover, capcom]
-games: [mshvsf]
+tags: [mshvsf]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Marvel Super Heroes vs. Street Fighter
 
-A classic Capcom fighting game.
+## Overview
+*No overview generated yet.*
 
-## Roster (2 characters parsed here)
+## Characters (17 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Ken, Blackheart
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/mshvsf/{character}.json` — parsed from `faqs/capcom_crossover_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

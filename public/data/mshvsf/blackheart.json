@@ -1,27 +1,68 @@
 {
-    "name": "Blackheart",
-    "special_moves": [
+    "game": "Marvel Super Heroes vs. Street Fighter",
+    "character": "Blackheart",
+    "movesList": [
         {
+            "id": "sp_0",
             "name": "Dark Thunder",
-            "input": "41236 + P"
+            "type": "special",
+            "inputs": [
+                "back",
+                "down-back",
+                "down",
+                "down-forward",
+                "forward",
+                "P"
+            ]
         },
         {
+            "id": "sp_1",
             "name": "Inferno",
-            "input": "63214 + P"
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down-forward",
+                "down",
+                "down-back",
+                "back",
+                "P"
+            ]
         },
         {
-            "name": "Demon Dash",
-            "input": "214 + P (Ground or Air)"
+            "id": "sp_2",
+            "name": "Darkness",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down-forward",
+                "down",
+                "down-back",
+                "back",
+                "K"
+            ]
+        },
+        {
+            "id": "sup_0",
+            "name": "Armageddon",
+            "type": "super",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "PP"
+            ]
+        },
+        {
+            "id": "sup_1",
+            "name": "Heart of Darkness",
+            "type": "super",
+            "inputs": [
+                "down",
+                "down-back",
+                "back",
+                "PP"
+            ]
         }
     ],
-    "hyper_combos": [
-        {
-            "name": "Armageddon",
-            "input": "236 + PP"
-        },
-        {
-            "name": "Heart of Darkness",
-            "input": "236 + KK"
-        }
-    ]
+    "combosList": []
 }

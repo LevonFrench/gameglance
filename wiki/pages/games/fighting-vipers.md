@@ -1,21 +1,22 @@
 ---
 title: "Fighting Vipers"
 type: game
-tags: [fighting-vipers, sega]
-games: [fighting-vipers]
+tags: [fighting-vipers]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Fighting Vipers
 
-A classic fighting game by Sega.
+## Overview
+*No overview generated yet.*
 
-## Roster (2 characters)
+## Characters (2 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Bahn, Grace
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/fighting-vipers/{character}.json` — parsed from `sega_arcade_fighters.json`.
+## Meta
+*No meta/tier lists loaded.*

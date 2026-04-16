@@ -1,243 +1,259 @@
 {
-  "game": "Super Street Fighter II Turbo",
-  "character": "Balrog",
-  "theme_colors": {
-    "normal": "#60a5fa",
-    "special": "#f59e0b",
-    "super_fatality": "#ef4444"
-  },
-  "movesList": [
-    {
-      "id": "balrog_normal_0",
-      "name": "Standing Light Punch",
-      "type": "normal",
-      "inputs": [
-        "LP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_1",
-      "name": "Standing Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "MP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_2",
-      "name": "Standing Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "HP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_3",
-      "name": "Standing Light Kick",
-      "type": "normal",
-      "inputs": [
-        "LK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_4",
-      "name": "Standing Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "MK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_5",
-      "name": "Standing Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "HK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_6",
-      "name": "Crouching Light Punch",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "LP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_7",
-      "name": "Crouching Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "MP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_8",
-      "name": "Crouching Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "HP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_9",
-      "name": "Crouching Light Kick",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "LK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_10",
-      "name": "Crouching Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "MK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_11",
-      "name": "Crouching Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "down",
-        "HK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_12",
-      "name": "Jumping Light Punch",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "LP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_13",
-      "name": "Jumping Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "MP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_14",
-      "name": "Jumping Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "HP"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_15",
-      "name": "Jumping Light Kick",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "LK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_16",
-      "name": "Jumping Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "MK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_normal_17",
-      "name": "Jumping Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "up",
-        "HK"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_dash_straight_0",
-      "name": "Dash Straight",
-      "type": "special",
-      "inputs": [
-        "[charge] back for 2 secs",
-        "MK",
-        "any punch"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_dash_uppercut_1",
-      "name": "Dash Uppercut",
-      "type": "special",
-      "inputs": [
-        "[charge] back for 2 secs",
-        "MK",
-        "any kick"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_buffalo_headbutt_2",
-      "name": "Buffalo Headbutt",
-      "type": "special",
-      "inputs": [
-        "[charge] down for 2 secs",
-        "up",
-        "any punch"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_dash_low_3",
-      "name": "Dash Low",
-      "type": "special",
-      "inputs": [
-        "[charge] back for 2 secs",
-        "down-forward",
-        "any punch"
-      ],
-      "frameData": {}
-    },
-    {
-      "id": "balrog_crazy_buffalo_4",
-      "name": "Crazy Buffalo",
-      "type": "special",
-      "inputs": [
-        "[charge] back for 2 secs",
-        "MK",
-        "back",
-        "MK",
-        "any kick or"
-      ],
-      "frameData": {}
-    }
-  ],
-  "combosList": []
+    "game": "sf2",
+    "character": "Balrog",
+    "movesList": [
+        {
+            "id": "sp_0",
+            "name": "Dash Straight",
+            "type": "special",
+            "inputs": [
+                "4",
+                "[charge]",
+                "for",
+                "2",
+                "secs",
+                "MK",
+                "any",
+                "punch"
+            ]
+        },
+        {
+            "id": "sp_1",
+            "name": "Dash Upper",
+            "type": "special",
+            "inputs": [
+                "back (Charge)",
+                "forward",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_2",
+            "name": "Buffalo Headbutt",
+            "type": "special",
+            "inputs": [
+                "down",
+                "up",
+                "[charge]",
+                "for",
+                "2",
+                "secs",
+                "any",
+                "punch"
+            ]
+        },
+        {
+            "id": "sp_3",
+            "name": "Turn Punch",
+            "type": "special",
+            "inputs": [
+                "Hold PPP or KKK and release"
+            ]
+        },
+        {
+            "id": "sp_0",
+            "name": "Standing Light Punch",
+            "type": "normal",
+            "inputs": [
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_1",
+            "name": "Standing Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_2",
+            "name": "Standing Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_3",
+            "name": "Standing Light Kick",
+            "type": "normal",
+            "inputs": [
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_4",
+            "name": "Standing Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_5",
+            "name": "Standing Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_6",
+            "name": "Crouching Light Punch",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_7",
+            "name": "Crouching Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_8",
+            "name": "Crouching Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_9",
+            "name": "Crouching Light Kick",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_10",
+            "name": "Crouching Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_11",
+            "name": "Crouching Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "2",
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_12",
+            "name": "Jumping Light Punch",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_13",
+            "name": "Jumping Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_14",
+            "name": "Jumping Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_15",
+            "name": "Jumping Light Kick",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_16",
+            "name": "Jumping Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_17",
+            "name": "Jumping Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "8",
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_19",
+            "name": "Dash Uppercut",
+            "type": "special",
+            "inputs": [
+                "4",
+                "[charge]",
+                "for",
+                "2",
+                "secs",
+                "MK",
+                "any",
+                "kick"
+            ]
+        },
+        {
+            "id": "sp_21",
+            "name": "Dash Low",
+            "type": "special",
+            "inputs": [
+                "4",
+                "[charge]",
+                "for",
+                "2",
+                "secs",
+                "down-forward",
+                "any",
+                "punch"
+            ]
+        },
+        {
+            "id": "sp_22",
+            "name": "Crazy Buffalo",
+            "type": "special",
+            "inputs": [
+                "back",
+                "back",
+                "[charge]",
+                "for",
+                "2",
+                "secs",
+                "MK",
+                "MK",
+                "any",
+                "kick",
+                "or"
+            ]
+        }
+    ],
+    "combosList": []
 }

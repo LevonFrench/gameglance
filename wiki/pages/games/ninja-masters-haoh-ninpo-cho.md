@@ -1,21 +1,22 @@
 ---
-title: "Ninja Master's: Haoh Ninpo Cho"
+title: "Ninja Master"
 type: game
-tags: [ninja-masters-haoh-ninpo-cho, snk]
-games: [ninja-masters-haoh-ninpo-cho]
+tags: [ninja-masters-haoh-ninpo-cho]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
-# Ninja Master's: Haoh Ninpo Cho
+# Ninja Master
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Sasuke
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/ninja-masters-haoh-ninpo-cho/{character}.json` — parsed from `neogeo_remaining_fighters.json`.
+## Meta
+*No meta/tier lists loaded.*

@@ -1,21 +1,22 @@
 ---
 title: "SNK vs. Capcom: SVC Chaos"
 type: game
-tags: [snk-vs-capcom-svc-chaos, capcom]
-games: [snk-vs-capcom-svc-chaos]
+tags: [snk-vs-capcom-svc-chaos]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # SNK vs. Capcom: SVC Chaos
 
-A classic fighting game by Capcom.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Geese Howard
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/snk-vs-capcom-svc-chaos/{character}.json` — parsed from `neogeo_remaining_fighters.json`.
+## Meta
+*No meta/tier lists loaded.*

@@ -1,21 +1,22 @@
 ---
 title: "Rage of the Dragons"
 type: game
-tags: [rage-of-the-dragons, snk]
-games: [rage-of-the-dragons]
+tags: [rage-of-the-dragons]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Rage of the Dragons
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Billy Lewis
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/rage-of-the-dragons/{character}.json` — parsed from `neogeo_remaining_fighters.json`.
+## Meta
+*No meta/tier lists loaded.*

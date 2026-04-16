@@ -1,27 +1,53 @@
 {
-    "name": "Spider-Man",
-    "special_moves": [
+    "game": "Marvel Super Heroes",
+    "character": "Spider-Man",
+    "movesList": [
         {
+            "id": "sp_0",
             "name": "Web Ball",
-            "input": "236 + P (Ground or Air)"
+            "type": "special",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "P (Air OK)"
+            ]
         },
         {
+            "id": "sp_1",
             "name": "Spider Sting",
-            "input": "623 + P, then P"
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "P, then P"
+            ]
         },
         {
-            "name": "Web Throw",
-            "input": "63214 + P"
-        },
-        {
+            "id": "sp_2",
             "name": "Web Swing",
-            "input": "214 + K (Ground or Air)"
+            "type": "special",
+            "inputs": [
+                "down",
+                "down-back",
+                "back",
+                "K (Air OK)"
+            ]
+        },
+        {
+            "id": "sp_3",
+            "name": "Web Throw",
+            "type": "throw",
+            "inputs": [
+                "forward",
+                "down-forward",
+                "down",
+                "down-back",
+                "back",
+                "P"
+            ]
         }
     ],
-    "super_combos": [
-        {
-            "name": "Maximum Spider",
-            "input": "236 + PP (Ground or Air)"
-        }
-    ]
+    "combosList": []
 }

@@ -1,1359 +1,1179 @@
 {
-  "game": "Street Fighter 6",
-  "character": "Elena",
-  "theme_colors": {
-    "normal": "#FFFFFF",
-    "special": "#FFD700",
-    "super_fatality": "#FF0000"
-  },
-  "movesList": [
-    {
-      "id": "m_elena_0",
-      "name": "Standing Light Punch",
-      "type": "normal",
-      "inputs": [
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-8",
-        "recovery": "8",
-        "advantage": "4"
-      }
-    },
-    {
-      "id": "m_elena_1",
-      "name": "Standing Light Kick",
-      "type": "normal",
-      "inputs": [
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-7",
-        "recovery": "11",
-        "advantage": "2"
-      }
-    },
-    {
-      "id": "m_elena_2",
-      "name": "Standing Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "8",
-        "active": "8-12",
-        "recovery": "15",
-        "advantage": "3"
-      }
-    },
-    {
-      "id": "m_elena_3",
-      "name": "Standing Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "6",
-        "active": "6-9",
-        "recovery": "13",
-        "advantage": "5"
-      }
-    },
-    {
-      "id": "m_elena_4",
-      "name": "Standing Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "12-15",
-        "recovery": "20",
-        "advantage": "2"
-      }
-    },
-    {
-      "id": "m_elena_5",
-      "name": "Standing Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "12-15",
-        "recovery": "19",
-        "advantage": "2"
-      }
-    },
-    {
-      "id": "m_elena_6",
-      "name": "Crouching Light Punch",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "4",
-        "active": "4-6",
-        "recovery": "8",
-        "advantage": "5"
-      }
-    },
-    {
-      "id": "m_elena_7",
-      "name": "Crouching Light Kick",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-7",
-        "recovery": "8",
-        "advantage": "3"
-      }
-    },
-    {
-      "id": "m_elena_8",
-      "name": "Crouching Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "8",
-        "active": "8-10",
-        "recovery": "20",
-        "advantage": "1"
-      }
-    },
-    {
-      "id": "m_elena_9",
-      "name": "Crouching Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "9",
-        "active": "9-11",
-        "recovery": "18",
-        "advantage": "4"
-      }
-    },
-    {
-      "id": "m_elena_10",
-      "name": "Crouching Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "9",
-        "active": "9-189-11, 16-18",
-        "recovery": "20",
-        "advantage": "6"
-      }
-    },
-    {
-      "id": "m_elena_11",
-      "name": "Crouching Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "11",
-        "active": "11-13",
-        "recovery": "24",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_12",
-      "name": "Jumping Light Punch",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-10",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_13",
-      "name": "Jumping Light Kick",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-10",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_14",
-      "name": "Jumping Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "8",
-        "active": "8-12",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_15",
-      "name": "Jumping Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "7",
-        "active": "7-11",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_16",
-      "name": "Jumping Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-16",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_17",
-      "name": "Jumping Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-2010-11, 13-20",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_18",
-      "name": "Slide",
-      "type": "special",
-      "inputs": [
-        "[Down-Forward]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "14",
-        "active": "14-22",
-        "recovery": "22",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_19",
-      "name": "Round Arch",
-      "type": "special",
-      "inputs": [
-        "[Back]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "14",
-        "active": "14-17",
-        "recovery": "17",
-        "advantage": "3"
-      }
-    },
-    {
-      "id": "m_elena_20",
-      "name": "Starling Beak(2)",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "17",
-        "active": "17-21",
-        "recovery": "20",
-        "advantage": "-4"
-      }
-    },
-    {
-      "id": "m_elena_21",
-      "name": "Handstand Whip(1)",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "+",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "20",
-        "active": "20-22",
-        "recovery": "19",
-        "advantage": "2"
-      }
-    },
-    {
-      "id": "m_elena_22",
-      "name": "Handstand Whip(2)",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "+",
-        "[MK]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "14",
-        "active": "14-16",
-        "recovery": "26",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_23",
-      "name": "Hind Kick(2)",
-      "type": "special",
-      "inputs": [
-        "[MK]",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "12-14",
-        "recovery": "24",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_24",
-      "name": "Fluttering Lark(2)",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[MK]",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "15",
-        "active": "15",
-        "recovery": "24",
-        "advantage": "4"
-      }
-    },
-    {
-      "id": "m_elena_25",
-      "name": "Turning Tail(2)",
-      "type": "special",
-      "inputs": [
-        "[HP]",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "17",
-        "active": "17-2717-20, 24-27",
-        "recovery": "17",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_26",
-      "name": "Trunk Slap(1)",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "16",
-        "active": "16-19",
-        "recovery": "20",
-        "advantage": "1"
-      }
-    },
-    {
-      "id": "m_elena_27",
-      "name": "Trunk Slap(2)",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "+",
-        "[HP]",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "13",
-        "active": "13-15",
-        "recovery": "26",
-        "advantage": "-2"
-      }
-    },
-    {
-      "id": "m_elena_28",
-      "name": "Trunk Slap(3)",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "+",
-        "[HP]",
-        "[HP]",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "7",
-        "active": "7-177-9, 15-17",
-        "recovery": "27",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_29",
-      "name": "Soaring Raid",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[LP]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "6",
-        "active": "6-10",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_30",
-      "name": "Raptor Range",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[MP]",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "12-16",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_31",
-      "name": "L Rhino Horn",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "13",
-        "active": "13-3313-17, 28-33",
-        "recovery": "19",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_32",
-      "name": "M Rhino Horn",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "17",
-        "active": "17-3817-21, 33-38",
-        "recovery": "20",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_33",
-      "name": "H Rhino Horn",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "21",
-        "active": "21-4221-25, 37-42",
-        "recovery": "20",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_34",
-      "name": "OD Rhino Horn",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LK]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "11",
-        "active": "11-3511-17, 25-35",
-        "recovery": "19",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_35",
-      "name": "L Scratch Wheel",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-9",
-        "recovery": "25+14 frame(s) after landing",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_36",
-      "name": "M Scratch Wheel",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "+",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "6",
-        "active": "6-11",
-        "recovery": "30+14 frame(s) after landing",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_37",
-      "name": "H Scratch Wheel",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "7",
-        "active": "7-12",
-        "recovery": "34+14 frame(s) after landing",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_38",
-      "name": "OD Scratch Wheel",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "+",
-        "[LK]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "6",
-        "active": "6-286-11, 24-25, 27-28",
-        "recovery": "25+19 frame(s) after landing",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_39",
-      "name": "L Lynx Song",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "28 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_40",
-      "name": "M Lynx Song",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "36 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_41",
-      "name": "H Lynx Song",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "38 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_42",
-      "name": "OD Lynx Song",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LP]",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "34 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_43",
-      "name": "Leopard Snap",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-14",
-        "recovery": "22",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_44",
-      "name": "[Boosted]Leopard Snap",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "+",
-        "[MP]",
-        "[Forward]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-2210-14, 20-22",
-        "recovery": "15",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_45",
-      "name": "Harvest Circle",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "+",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "8",
-        "active": "8-10",
-        "recovery": "23",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_46",
-      "name": "[Boosted]Harvest Circle",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "+",
-        "[MP]",
-        "[Forward]",
-        "+",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "8",
-        "active": "8-198-10, 17-19",
-        "recovery": "16",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_47",
-      "name": "Mallet Smash",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "22",
-        "active": "22-24",
-        "recovery": "19",
-        "advantage": "2"
-      }
-    },
-    {
-      "id": "m_elena_48",
-      "name": "[Boosted]Mallet Smash",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "+",
-        "[MP]",
-        "[Forward]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "22",
-        "active": "22-2722-23, 26-27",
-        "recovery": "16",
-        "advantage": "4"
-      }
-    },
-    {
-      "id": "m_elena_49",
-      "name": "L Lynx Whirl",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "28 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_50",
-      "name": "M Lynx Whirl",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[Forward]",
-        "+",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "36 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_51",
-      "name": "H Lynx Whirl",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[Forward]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "38 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_52",
-      "name": "OD Lynx Whirl",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "+",
-        "[MP]",
-        "[Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "34 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_53",
-      "name": "L Spinning Scythe",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "15",
-        "active": "15-6715-18, 33-35, 60-61, 65-67",
-        "recovery": "24",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_54",
-      "name": "M Spinning Scythe",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "20",
-        "active": "20-7620-23, 43-45, 68-72, 75-76",
-        "recovery": "27",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_55",
-      "name": "H Spinning Scythe",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "24",
-        "active": "24-7824-27, 45-47, 70-74, 77-78",
-        "recovery": "23",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_56",
-      "name": "OD Spinning Scythe",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LK]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "18",
-        "active": "18-6818-21, 34-36, 61-62, 66-68",
-        "recovery": "22",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_57",
-      "name": "L Moon Glider(1)",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "20",
-        "active": "20-22",
-        "recovery": "20",
-        "advantage": "1"
-      }
-    },
-    {
-      "id": "m_elena_58",
-      "name": "M Moon Glider(1)",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "24",
-        "active": "24-26",
-        "recovery": "19",
-        "advantage": "2"
-      }
-    },
-    {
-      "id": "m_elena_59",
-      "name": "H Moon Glider(1)",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "28",
-        "active": "28-30",
-        "recovery": "20",
-        "advantage": "2"
-      }
-    },
-    {
-      "id": "m_elena_60",
-      "name": "Moon Glider(2)",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LP]",
-        "[Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "16",
-        "active": "16-2516-17, 22-25",
-        "recovery": "25",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_61",
-      "name": "OD Moon Glider(1)",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LP]",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "23",
-        "active": "23-25",
-        "recovery": "20",
-        "advantage": "1"
-      }
-    },
-    {
-      "id": "m_elena_62",
-      "name": "OD Moon Glider(2)",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LP]",
-        "[LP]",
-        "[Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "16",
-        "active": "16-4716-17, 22-25, 45-47",
-        "recovery": "35",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_63",
-      "name": "SA1 Meteor Volley",
-      "type": "super",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "7",
-        "active": "7-397-11, 18-21, 38-39",
-        "recovery": "55",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_64",
-      "name": "SA2 Revival Dance",
-      "type": "super",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "12-17",
-        "recovery": "62",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_65",
-      "name": "SA3 Song of the Grasslands",
-      "type": "super",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "8",
-        "active": "8-11",
-        "recovery": "68",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_66",
-      "name": "CA Song of the Grasslands",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "8",
-        "active": "8-11",
-        "recovery": "68",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_67",
-      "name": "Leg Tackle",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[LP]",
-        "[Forward]",
-        "+",
-        "[LP]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-7",
-        "recovery": "23",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_68",
-      "name": "Leg Lift Throw",
-      "type": "throw",
-      "inputs": [
-        "[LP]",
-        "[LP]",
-        "[Back]",
-        "+",
-        "[LP]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-7",
-        "recovery": "23",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_69",
-      "name": "Forward Dash",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Forward]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "20 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_70",
-      "name": "Backward Dash",
-      "type": "special",
-      "inputs": [
-        "[Back]",
-        "[Back]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "23 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_71",
-      "name": "Drive Impact: Giraffe Neck",
-      "type": "special",
-      "inputs": [
-        "[HP]",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "26",
-        "active": "26-27",
-        "recovery": "35",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_72",
-      "name": "Drive Reversal (while blocking): Boar Charge",
-      "type": "special",
-      "inputs": [
-        "[LK]",
-        "[LP]",
-        "[Forward]",
-        "+",
-        "[HP]",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "20",
-        "active": "20-22",
-        "recovery": "26",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_73",
-      "name": "Drive Reversal (while recovering): Boar Charge",
-      "type": "special",
-      "inputs": [
-        "[LK]",
-        "[LK]",
-        "[Forward]",
-        "+",
-        "[HP]",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "18",
-        "active": "18-20",
-        "recovery": "26",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_elena_74",
-      "name": "Drive Parry",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "1",
-        "active": "[*2] 1-12",
-        "recovery": "33",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_75",
-      "name": "Perfect Parry (strike)",
-      "type": "special",
-      "inputs": [
-        "[LK]",
-        "+",
-        "[MP]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "1",
-        "active": "",
-        "recovery": "1",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_76",
-      "name": "Perfect Parry (projectile)",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "1",
-        "active": "",
-        "recovery": "10",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_77",
-      "name": "Parry Drive Rush",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[Forward]",
-        "[Forward]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "45 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_elena_78",
-      "name": "Cancel Drive Rush",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[Forward]",
-        "[Forward]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "46 total frames",
-        "advantage": ""
-      }
+    "game": "sf6",
+    "character": "Elena",
+    "movesList": [
+        {
+            "id": "m_elena_0",
+            "name": "Standing Light Punch",
+            "type": "normal",
+            "inputs": [
+                "[LP]"
+            ],
+            "frameData": {
+                "startup": "5",
+                "active": "5-8",
+                "recovery": "8",
+                "advantage": "4"
+            }
+        },
+        {
+            "id": "m_elena_1",
+            "name": "Standing Light Kick",
+            "type": "normal",
+            "inputs": [
+                "[LK]"
+            ],
+            "frameData": {
+                "startup": "5",
+                "active": "5-7",
+                "recovery": "11",
+                "advantage": "2"
+            }
+        },
+        {
+            "id": "m_elena_2",
+            "name": "Standing Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "[MP]"
+            ],
+            "frameData": {
+                "startup": "8",
+                "active": "8-12",
+                "recovery": "15",
+                "advantage": "3"
+            }
+        },
+        {
+            "id": "m_elena_3",
+            "name": "Standing Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "[MK]"
+            ],
+            "frameData": {
+                "startup": "6",
+                "active": "6-9",
+                "recovery": "13",
+                "advantage": "5"
+            }
+        },
+        {
+            "id": "m_elena_4",
+            "name": "Standing Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "[HP]"
+            ],
+            "frameData": {
+                "startup": "12",
+                "active": "12-15",
+                "recovery": "20",
+                "advantage": "2"
+            }
+        },
+        {
+            "id": "m_elena_5",
+            "name": "Standing Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "[HK]"
+            ],
+            "frameData": {
+                "startup": "12",
+                "active": "12-15",
+                "recovery": "19",
+                "advantage": "2"
+            }
+        },
+        {
+            "id": "m_elena_6",
+            "name": "Crouching Light Punch",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[LP]"
+            ],
+            "frameData": {
+                "startup": "4",
+                "active": "4-6",
+                "recovery": "8",
+                "advantage": "5"
+            }
+        },
+        {
+            "id": "m_elena_7",
+            "name": "Crouching Light Kick",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[LK]"
+            ],
+            "frameData": {
+                "startup": "5",
+                "active": "5-7",
+                "recovery": "8",
+                "advantage": "3"
+            }
+        },
+        {
+            "id": "m_elena_8",
+            "name": "Crouching Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[MP]"
+            ],
+            "frameData": {
+                "startup": "8",
+                "active": "8-10",
+                "recovery": "20",
+                "advantage": "1"
+            }
+        },
+        {
+            "id": "m_elena_9",
+            "name": "Crouching Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[MK]"
+            ],
+            "frameData": {
+                "startup": "9",
+                "active": "9-11",
+                "recovery": "18",
+                "advantage": "4"
+            }
+        },
+        {
+            "id": "m_elena_10",
+            "name": "Crouching Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[HP]"
+            ],
+            "frameData": {
+                "startup": "9",
+                "active": "9-189-11, 16-18",
+                "recovery": "20",
+                "advantage": "6"
+            }
+        },
+        {
+            "id": "m_elena_11",
+            "name": "Crouching Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[HK]"
+            ],
+            "frameData": {
+                "startup": "11",
+                "active": "11-13",
+                "recovery": "24",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_12",
+            "name": "Jumping Light Punch",
+            "type": "normal",
+            "inputs": [
+                "[MP] [LP]"
+            ],
+            "frameData": {
+                "startup": "5",
+                "active": "5-10",
+                "recovery": "3 frame(s) after landing",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_13",
+            "name": "Jumping Light Kick",
+            "type": "normal",
+            "inputs": [
+                "[MP] [LK]"
+            ],
+            "frameData": {
+                "startup": "5",
+                "active": "5-10",
+                "recovery": "3 frame(s) after landing",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_14",
+            "name": "Jumping Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "[MP] [MP]"
+            ],
+            "frameData": {
+                "startup": "8",
+                "active": "8-12",
+                "recovery": "3 frame(s) after landing",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_15",
+            "name": "Jumping Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "[MP] [MK]"
+            ],
+            "frameData": {
+                "startup": "7",
+                "active": "7-11",
+                "recovery": "3 frame(s) after landing",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_16",
+            "name": "Jumping Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "[MP] [HP]"
+            ],
+            "frameData": {
+                "startup": "10",
+                "active": "10-16",
+                "recovery": "3 frame(s) after landing",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_17",
+            "name": "Jumping Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "[MP] [HK]"
+            ],
+            "frameData": {
+                "startup": "10",
+                "active": "10-2010-11, 13-20",
+                "recovery": "3 frame(s) after landing",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_18",
+            "name": "Slide",
+            "type": "special",
+            "inputs": [
+                "[Down-Forward]",
+                "[HK]"
+            ],
+            "frameData": {
+                "startup": "14",
+                "active": "14-22",
+                "recovery": "22",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_19",
+            "name": "Round Arch",
+            "type": "special",
+            "inputs": [
+                "[Back]",
+                "[HK]"
+            ],
+            "frameData": {
+                "startup": "14",
+                "active": "14-17",
+                "recovery": "17",
+                "advantage": "3"
+            }
+        },
+        {
+            "id": "m_elena_20",
+            "name": "Starling Beak(2)",
+            "type": "special",
+            "inputs": [
+                "[MP] [MP]"
+            ],
+            "frameData": {
+                "startup": "17",
+                "active": "17-21",
+                "recovery": "20",
+                "advantage": "-4"
+            }
+        },
+        {
+            "id": "m_elena_21",
+            "name": "Handstand Whip(1)",
+            "type": "special",
+            "inputs": [
+                "[Forward]",
+                "[MK]"
+            ],
+            "frameData": {
+                "startup": "20",
+                "active": "20-22",
+                "recovery": "19",
+                "advantage": "2"
+            }
+        },
+        {
+            "id": "m_elena_22",
+            "name": "Handstand Whip(2)",
+            "type": "special",
+            "inputs": [
+                "[Forward]",
+                "[MK] [MK]"
+            ],
+            "frameData": {
+                "startup": "14",
+                "active": "14-16",
+                "recovery": "26",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_23",
+            "name": "Hind Kick(2)",
+            "type": "special",
+            "inputs": [
+                "[MK] [HK]"
+            ],
+            "frameData": {
+                "startup": "12",
+                "active": "12-14",
+                "recovery": "24",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_24",
+            "name": "Fluttering Lark(2)",
+            "type": "special",
+            "inputs": [
+                "[Down]",
+                "[MK] [HK]"
+            ],
+            "frameData": {
+                "startup": "15",
+                "active": "15",
+                "recovery": "24",
+                "advantage": "4"
+            }
+        },
+        {
+            "id": "m_elena_25",
+            "name": "Turning Tail(2)",
+            "type": "special",
+            "inputs": [
+                "[HP] [HP]"
+            ],
+            "frameData": {
+                "startup": "17",
+                "active": "17-2717-20, 24-27",
+                "recovery": "17",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_26",
+            "name": "Trunk Slap(1)",
+            "type": "special",
+            "inputs": [
+                "[Forward]",
+                "[HP]"
+            ],
+            "frameData": {
+                "startup": "16",
+                "active": "16-19",
+                "recovery": "20",
+                "advantage": "1"
+            }
+        },
+        {
+            "id": "m_elena_27",
+            "name": "Trunk Slap(2)",
+            "type": "special",
+            "inputs": [
+                "[Forward]",
+                "[HP] [HP]"
+            ],
+            "frameData": {
+                "startup": "13",
+                "active": "13-15",
+                "recovery": "26",
+                "advantage": "-2"
+            }
+        },
+        {
+            "id": "m_elena_28",
+            "name": "Trunk Slap(3)",
+            "type": "special",
+            "inputs": [
+                "[Forward]",
+                "[HP] [HP] [HP]"
+            ],
+            "frameData": {
+                "startup": "7",
+                "active": "7-177-9, 15-17",
+                "recovery": "27",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_29",
+            "name": "Soaring Raid",
+            "type": "special",
+            "inputs": [
+                "[MP] [LP] [MK]"
+            ],
+            "frameData": {
+                "startup": "6",
+                "active": "6-10",
+                "recovery": "3 frame(s) after landing",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_30",
+            "name": "Raptor Range",
+            "type": "special",
+            "inputs": [
+                "[MP] [MP] [HP]"
+            ],
+            "frameData": {
+                "startup": "12",
+                "active": "12-16",
+                "recovery": "3 frame(s) after landing",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_31",
+            "name": "L Rhino Horn",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[LK]"
+            ],
+            "frameData": {
+                "startup": "13",
+                "active": "13-3313-17, 28-33",
+                "recovery": "19",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_32",
+            "name": "M Rhino Horn",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[MK]"
+            ],
+            "frameData": {
+                "startup": "17",
+                "active": "17-3817-21, 33-38",
+                "recovery": "20",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_33",
+            "name": "H Rhino Horn",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[HK]"
+            ],
+            "frameData": {
+                "startup": "21",
+                "active": "21-4221-25, 37-42",
+                "recovery": "20",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_34",
+            "name": "OD Rhino Horn",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[LK] [LK]"
+            ],
+            "frameData": {
+                "startup": "11",
+                "active": "11-3511-17, 25-35",
+                "recovery": "19",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_35",
+            "name": "L Scratch Wheel",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Down] [Down-Forward]",
+                "[LK]"
+            ],
+            "frameData": {
+                "startup": "5",
+                "active": "5-9",
+                "recovery": "25+14 frame(s) after landing",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_36",
+            "name": "M Scratch Wheel",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Down] [Down-Forward]",
+                "[MK]"
+            ],
+            "frameData": {
+                "startup": "6",
+                "active": "6-11",
+                "recovery": "30+14 frame(s) after landing",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_37",
+            "name": "H Scratch Wheel",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Down] [Down-Forward]",
+                "[HK]"
+            ],
+            "frameData": {
+                "startup": "7",
+                "active": "7-12",
+                "recovery": "34+14 frame(s) after landing",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_38",
+            "name": "OD Scratch Wheel",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Down] [Down-Forward]",
+                "[LK] [LK]"
+            ],
+            "frameData": {
+                "startup": "6",
+                "active": "6-286-11, 24-25, 27-28",
+                "recovery": "25+19 frame(s) after landing",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_39",
+            "name": "L Lynx Song",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[LP]"
+            ],
+            "frameData": {
+                "startup": "",
+                "active": "",
+                "recovery": "28 total frames",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_40",
+            "name": "M Lynx Song",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[MP]"
+            ],
+            "frameData": {
+                "startup": "",
+                "active": "",
+                "recovery": "36 total frames",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_41",
+            "name": "H Lynx Song",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[HP]"
+            ],
+            "frameData": {
+                "startup": "",
+                "active": "",
+                "recovery": "38 total frames",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_42",
+            "name": "OD Lynx Song",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[LP] [LP]"
+            ],
+            "frameData": {
+                "startup": "",
+                "active": "",
+                "recovery": "34 total frames",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_43",
+            "name": "Leopard Snap",
+            "type": "special",
+            "inputs": [
+                "[Forward]",
+                "[LK]"
+            ],
+            "frameData": {
+                "startup": "10",
+                "active": "10-14",
+                "recovery": "22",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_44",
+            "name": "[Boosted]Leopard Snap",
+            "type": "special",
+            "inputs": [
+                "[LP]",
+                "[MP] [Forward]",
+                "[LK]"
+            ],
+            "frameData": {
+                "startup": "10",
+                "active": "10-2210-14, 20-22",
+                "recovery": "15",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_45",
+            "name": "Harvest Circle",
+            "type": "special",
+            "inputs": [
+                "[Forward]",
+                "[MK]"
+            ],
+            "frameData": {
+                "startup": "8",
+                "active": "8-10",
+                "recovery": "23",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_46",
+            "name": "[Boosted]Harvest Circle",
+            "type": "special",
+            "inputs": [
+                "[LP]",
+                "[MP] [Forward]",
+                "[MK]"
+            ],
+            "frameData": {
+                "startup": "8",
+                "active": "8-198-10, 17-19",
+                "recovery": "16",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_47",
+            "name": "Mallet Smash",
+            "type": "special",
+            "inputs": [
+                "[Forward]",
+                "[HK]"
+            ],
+            "frameData": {
+                "startup": "22",
+                "active": "22-24",
+                "recovery": "19",
+                "advantage": "2"
+            }
+        },
+        {
+            "id": "m_elena_48",
+            "name": "[Boosted]Mallet Smash",
+            "type": "special",
+            "inputs": [
+                "[LP]",
+                "[MP] [Forward]",
+                "[HK]"
+            ],
+            "frameData": {
+                "startup": "22",
+                "active": "22-2722-23, 26-27",
+                "recovery": "16",
+                "advantage": "4"
+            }
+        },
+        {
+            "id": "m_elena_49",
+            "name": "L Lynx Whirl",
+            "type": "special",
+            "inputs": [
+                "[LP] [Forward]",
+                "[LP]"
+            ],
+            "frameData": {
+                "startup": "",
+                "active": "",
+                "recovery": "28 total frames",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_50",
+            "name": "M Lynx Whirl",
+            "type": "special",
+            "inputs": [
+                "[LP] [Forward]",
+                "[MP]"
+            ],
+            "frameData": {
+                "startup": "",
+                "active": "",
+                "recovery": "36 total frames",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_51",
+            "name": "H Lynx Whirl",
+            "type": "special",
+            "inputs": [
+                "[LP] [Forward]",
+                "[HP]"
+            ],
+            "frameData": {
+                "startup": "",
+                "active": "",
+                "recovery": "38 total frames",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_52",
+            "name": "OD Lynx Whirl",
+            "type": "special",
+            "inputs": [
+                "[LP]",
+                "[MP] [Forward]",
+                "[LP]"
+            ],
+            "frameData": {
+                "startup": "",
+                "active": "",
+                "recovery": "34 total frames",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_53",
+            "name": "L Spinning Scythe",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Back] [Back]",
+                "[LK]"
+            ],
+            "frameData": {
+                "startup": "15",
+                "active": "15-6715-18, 33-35, 60-61, 65-67",
+                "recovery": "24",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_54",
+            "name": "M Spinning Scythe",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Back] [Back]",
+                "[MK]"
+            ],
+            "frameData": {
+                "startup": "20",
+                "active": "20-7620-23, 43-45, 68-72, 75-76",
+                "recovery": "27",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_55",
+            "name": "H Spinning Scythe",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Back] [Back]",
+                "[HK]"
+            ],
+            "frameData": {
+                "startup": "24",
+                "active": "24-7824-27, 45-47, 70-74, 77-78",
+                "recovery": "23",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_56",
+            "name": "OD Spinning Scythe",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Back] [Back]",
+                "[LK] [LK]"
+            ],
+            "frameData": {
+                "startup": "18",
+                "active": "18-6818-21, 34-36, 61-62, 66-68",
+                "recovery": "22",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_57",
+            "name": "L Moon Glider(1)",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Back] [Back]",
+                "[LP]"
+            ],
+            "frameData": {
+                "startup": "20",
+                "active": "20-22",
+                "recovery": "20",
+                "advantage": "1"
+            }
+        },
+        {
+            "id": "m_elena_58",
+            "name": "M Moon Glider(1)",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Back] [Back]",
+                "[MP]"
+            ],
+            "frameData": {
+                "startup": "24",
+                "active": "24-26",
+                "recovery": "19",
+                "advantage": "2"
+            }
+        },
+        {
+            "id": "m_elena_59",
+            "name": "H Moon Glider(1)",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Back] [Back]",
+                "[HP]"
+            ],
+            "frameData": {
+                "startup": "28",
+                "active": "28-30",
+                "recovery": "20",
+                "advantage": "2"
+            }
+        },
+        {
+            "id": "m_elena_60",
+            "name": "Moon Glider(2)",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Back] [Back]",
+                "[LP] [Forward]",
+                "[LP]"
+            ],
+            "frameData": {
+                "startup": "16",
+                "active": "16-2516-17, 22-25",
+                "recovery": "25",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_61",
+            "name": "OD Moon Glider(1)",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Back] [Back]",
+                "[LP] [LP]"
+            ],
+            "frameData": {
+                "startup": "23",
+                "active": "23-25",
+                "recovery": "20",
+                "advantage": "1"
+            }
+        },
+        {
+            "id": "m_elena_62",
+            "name": "OD Moon Glider(2)",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Back] [Back]",
+                "[LP] [LP] [Forward]",
+                "[LP]"
+            ],
+            "frameData": {
+                "startup": "16",
+                "active": "16-4716-17, 22-25, 45-47",
+                "recovery": "35",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_63",
+            "name": "SA1 Meteor Volley",
+            "type": "super",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+                "[LK]"
+            ],
+            "frameData": {
+                "startup": "7",
+                "active": "7-397-11, 18-21, 38-39",
+                "recovery": "55",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_64",
+            "name": "SA2 Revival Dance",
+            "type": "super",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+                "[LP]"
+            ],
+            "frameData": {
+                "startup": "12",
+                "active": "12-17",
+                "recovery": "62",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_65",
+            "name": "SA3 Song of the Grasslands",
+            "type": "super",
+            "inputs": [
+                "[Down] [Down-Back] [Back] [Down] [Down-Back] [Back]",
+                "[LK]"
+            ],
+            "frameData": {
+                "startup": "8",
+                "active": "8-11",
+                "recovery": "68",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_66",
+            "name": "CA Song of the Grasslands",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Back] [Back] [Down] [Down-Back] [Back]",
+                "[LK]"
+            ],
+            "frameData": {
+                "startup": "8",
+                "active": "8-11",
+                "recovery": "68",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_67",
+            "name": "Leg Tackle",
+            "type": "special",
+            "inputs": [
+                "[LP] [LP] [Forward]",
+                "[LP] [LK]"
+            ],
+            "frameData": {
+                "startup": "5",
+                "active": "5-7",
+                "recovery": "23",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_68",
+            "name": "Leg Lift Throw",
+            "type": "throw",
+            "inputs": [
+                "[LP] [LP] [Back]",
+                "[LP] [LK]"
+            ],
+            "frameData": {
+                "startup": "5",
+                "active": "5-7",
+                "recovery": "23",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_69",
+            "name": "Forward Dash",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Forward]"
+            ],
+            "frameData": {
+                "startup": "",
+                "active": "",
+                "recovery": "20 total frames",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_70",
+            "name": "Backward Dash",
+            "type": "special",
+            "inputs": [
+                "[Back] [Back]"
+            ],
+            "frameData": {
+                "startup": "",
+                "active": "",
+                "recovery": "23 total frames",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_71",
+            "name": "Drive Impact: Giraffe Neck",
+            "type": "special",
+            "inputs": [
+                "[HP] [HK]"
+            ],
+            "frameData": {
+                "startup": "26",
+                "active": "26-27",
+                "recovery": "35",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_72",
+            "name": "Drive Reversal (while blocking): Boar Charge",
+            "type": "special",
+            "inputs": [
+                "[LK] [LP] [Forward]",
+                "[HP] [HK]"
+            ],
+            "frameData": {
+                "startup": "20",
+                "active": "20-22",
+                "recovery": "26",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_73",
+            "name": "Drive Reversal (while recovering): Boar Charge",
+            "type": "special",
+            "inputs": [
+                "[LK] [LK] [Forward]",
+                "[HP] [HK]"
+            ],
+            "frameData": {
+                "startup": "18",
+                "active": "18-20",
+                "recovery": "26",
+                "advantage": "D"
+            }
+        },
+        {
+            "id": "m_elena_74",
+            "name": "Drive Parry",
+            "type": "special",
+            "inputs": [
+                "[MP] [MK]"
+            ],
+            "frameData": {
+                "startup": "1",
+                "active": "[*2] 1-12",
+                "recovery": "33",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_75",
+            "name": "Perfect Parry (strike)",
+            "type": "special",
+            "inputs": [
+                "[LK]",
+                "[MP] [MK]"
+            ],
+            "frameData": {
+                "startup": "1",
+                "active": "",
+                "recovery": "1",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_76",
+            "name": "Perfect Parry (projectile)",
+            "type": "special",
+            "inputs": [
+                "[MP] [MK]"
+            ],
+            "frameData": {
+                "startup": "1",
+                "active": "",
+                "recovery": "10",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_77",
+            "name": "Parry Drive Rush",
+            "type": "special",
+            "inputs": [
+                "[LP] [Forward] [Forward]"
+            ],
+            "frameData": {
+                "startup": "",
+                "active": "",
+                "recovery": "45 total frames",
+                "advantage": ""
+            }
+        },
+        {
+            "id": "m_elena_78",
+            "name": "Cancel Drive Rush",
+            "type": "special",
+            "inputs": [
+                "[LP] [Forward] [Forward]"
+            ],
+            "frameData": {
+                "startup": "",
+                "active": "",
+                "recovery": "46 total frames",
+                "advantage": ""
+            }
+        }
+    ],
+    "combosList": [],
+    "theme_colors": {
+        "normal": "#FFFFFF",
+        "special": "#FFD700",
+        "super_fatality": "#FF0000"
     }
-  ],
-  "combosList": []
 }

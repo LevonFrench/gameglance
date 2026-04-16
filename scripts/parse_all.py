@@ -10,6 +10,55 @@ WIKI_CHARS_DIR = 'wiki/pages/characters'
 
 def slugify(text):
     text = text.lower().replace(" ", "-").replace(":", "").replace("'", "").replace(".", "").replace("!", "")
+    
+    # Internal canonical mapping
+    mapping = {
+        'marvel-super-heroes-vs-street-fighter': 'mshvsf',
+        'marvel-super-heroes': 'msh',
+        'street-fighter-alpha-1': 'sfa1',
+        'street-fighter-alpha-2': 'sfa2',
+        'street-fighter-alpha-3': 'sfa3',
+        'marvel-vs-capcom-1': 'mvc1',
+        'marvel-vs-capcom-2': 'mvc2',
+        'marvel-vs-capcom-infinite': 'mvci',
+        'ultimate-marvel-vs-capcom-3': 'umvc3',
+        'x-men-children-of-the-atom': 'xmcoa',
+        'x-men-vs-street-fighter': 'xmvsf',
+        'mortal-kombat-11': 'mk11',
+        'mortal-kombat-1': 'mk1',
+        'mortal-kombat-2': 'mk2',
+        'tekken-1': 'tekken1',
+        'tekken-2': 'tekken2',
+        'tekken-3': 'tekken3',
+        'tekken-8': 't8',
+        'battle-arena-toshinden-3': 'toshinden3',
+        'virtua-fighter-1': 'vf1',
+        'virtua-fighter-2': 'vf2',
+        'virtua-fighter-3': 'vf3',
+        'virtua-fighter-4': 'vf4',
+        'virtua-fighter-5': 'vf5',
+        'soulcalibur-1': 'sc1',
+        'soulcalibur-2': 'sc2',
+        'soulcalibur-3': 'sc3',
+        'soul-edge': 'souledge',
+        'dead-or-alive-6': 'doa6',
+        'capcom-vs-snk-2': 'cvs2',
+        'capcom-fighting-jam': 'cfj',
+        'darkstalkers-the-night-warriors': 'darkstalkers',
+        'night-warriors-darkstalkers-revenge': 'nightwarriors',
+        'vampire-savior-the-lord-of-vampire': 'vampiresavior',
+        'vampire-savior': 'vampiresavior',
+        'pocket-fighter': 'pocketfighter',
+        'project-justice': 'projectjustice',
+        'plasma-sword': 'plasmasword',
+        'street-fighter-6': 'sf6',
+    }
+    
+    # Check if text starts with any key and canonicalize
+    for k, v in mapping.items():
+        if text.startswith(k):
+            return v
+
     text = text.replace("/", "").replace("\\", "")
     return text
 
@@ -32,19 +81,41 @@ GAME_DEVS = {
 
 today_str = date.today().isoformat()
 
+NUMPAD_MAP = {
+    '1': 'down-back', '2': 'down', '3': 'down-forward',
+    '4': 'back', '5': 'neutral', '6': 'forward',
+    '7': 'up-back', '8': 'up', '9': 'up-forward'
+}
+
 def parse_input_string(input_str):
-    # This takes "236 + Attack" and makes ['down', 'down-forward', 'forward', 'P']
-    # If it's a simple split by ' + ' or ' , ', we return an array.
-    # We won't map strings to inputs natively if we just split by +/,. We can just split.
     inps = []
     # If there's a + or ,, split them up
-    # A bit naive but close enough to the simple structure.
     parts = re.split(r' \+ ', input_str)
     if len(parts) == 1:
         parts = re.split(r', ', input_str)
     
     for p in parts:
-        inps.append(p.strip())
+        p = p.strip()
+        
+        # Handle (In Air) prefix
+        prefix = ""
+        if "(In Air)" in p:
+            inps.append("(In Air)")
+            p = p.replace("(In Air)", "").strip()
+            
+        if re.match(r'^[1-9]+$', p) and len(p) >= 2:
+            # Expand '236' to ['down', 'down-forward', 'forward']
+            for char in p:
+                if char in NUMPAD_MAP:
+                    inps.append(NUMPAD_MAP[char])
+        elif re.match(r'^\[([1-9])\]([1-9])$', p):
+            # Charge motions like [4]6 or [2]8
+            m = re.match(r'^\[([1-9])\]([1-9])$', p)
+            inps.append(NUMPAD_MAP[m.group(1)] + ' (Charge)')
+            inps.append(NUMPAD_MAP[m.group(2)])
+        else:
+            inps.append(p)
+
     return inps
 
 for filename in os.listdir(FAQS_DIR):
@@ -59,8 +130,10 @@ for filename in os.listdir(FAQS_DIR):
     # Normalize data into a flat list of (game_name, character_list) tuples
     games_to_process = []
     
-    # Check if the root has "title" and "characters"
-    if "title" in data and "characters" in data:
+    if isinstance(data, list):
+        game_name = filename.replace(" Complete Move List.json", "").replace(" Move List.json", "").replace(".json", "")
+        games_to_process.append((game_name, data))
+    elif "title" in data and "characters" in data:
         games_to_process.append((data["title"], data))
     else:
         for key, value in data.items():
@@ -217,6 +290,36 @@ Character data: `public/data/{game_slug}/{{character}}.json` — parsed from `{f
             }
             if len(export_data["movesList"]) == 0 and ("moves" in char):
                  export_data["movesList"] = char["moves"]
+            
+            # Intelligent Merge Logic
+            if os.path.exists(char_data_path):
+                with open(char_data_path, 'r', encoding='utf-8') as f:
+                    try:
+                        existing_data = json.load(f)
+                        existing_moves = existing_data.get("movesList", [])
+                        new_moves = export_data["movesList"]
+                        
+                        # Build dictionary of existing moves by normalized name
+                        existing_move_names = { m.get("name", "").lower(): m for m in existing_moves }
+                        
+                        for nm in new_moves:
+                            n_name = nm.get("name", "").lower()
+                            if n_name in existing_move_names:
+                                # Overwrite just the input properties, preserving other existing manual edits
+                                existing_move_names[n_name]["inputs"] = nm.get("inputs", nm.get("input", []))
+                            else:
+                                existing_moves.append(nm)
+                        
+                        export_data["movesList"] = existing_moves
+                        
+                        # Preserve existing combo list
+                        export_data["combosList"] = existing_data.get("combosList", export_data["combosList"])
+                        
+                        # Preserve all other legacy parameters (frame data, notes, videos)
+                        for k, v in existing_data.items():
+                            if k not in export_data:
+                                export_data[k] = v
+                    except Exception: pass
             
             with open(char_data_path, 'w', encoding='utf-8') as f:
                 json.dump(export_data, f, indent=4)

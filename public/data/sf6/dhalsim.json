@@ -1,1596 +1,890 @@
 {
-  "game": "Street Fighter 6",
-  "character": "Dhalsim",
-  "theme_colors": {
-    "normal": "#FFFFFF",
-    "special": "#FFD700",
-    "super_fatality": "#FF0000"
-  },
-  "movesList": [
-    {
-      "id": "m_dhalsim_0",
-      "name": "Standing Light Punch",
-      "type": "normal",
-      "inputs": [
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "4",
-        "active": "4-6",
-        "recovery": "8",
-        "advantage": "4"
-      }
-    },
-    {
-      "id": "m_dhalsim_1",
-      "name": "Standing Light Kick",
-      "type": "normal",
-      "inputs": [
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "9",
-        "active": "9-12",
-        "recovery": "11",
-        "advantage": "2"
-      }
-    },
-    {
-      "id": "m_dhalsim_2",
-      "name": "Standing Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "14",
-        "active": "14-16",
-        "recovery": "19",
-        "advantage": "0"
-      }
-    },
-    {
-      "id": "m_dhalsim_3",
-      "name": "Standing Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "12-14",
-        "recovery": "18",
-        "advantage": "-2"
-      }
-    },
-    {
-      "id": "m_dhalsim_4",
-      "name": "Standing Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "16",
-        "active": "16-19",
-        "recovery": "27",
-        "advantage": "-6"
-      }
-    },
-    {
-      "id": "m_dhalsim_5",
-      "name": "Standing Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "17",
-        "active": "17-19",
-        "recovery": "20",
-        "advantage": "3"
-      }
-    },
-    {
-      "id": "m_dhalsim_6",
-      "name": "Crouching Light Punch",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-7",
-        "recovery": "9",
-        "advantage": "4"
-      }
-    },
-    {
-      "id": "m_dhalsim_7",
-      "name": "Crouching Light Kick",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "4",
-        "active": "4-10",
-        "recovery": "16",
-        "advantage": "-5"
-      }
-    },
-    {
-      "id": "m_dhalsim_8",
-      "name": "Crouching Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "12-14",
-        "recovery": "16",
-        "advantage": "0"
-      }
-    },
-    {
-      "id": "m_dhalsim_9",
-      "name": "Crouching Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-22",
-        "recovery": "14",
-        "advantage": "-3"
-      }
-    },
-    {
-      "id": "m_dhalsim_10",
-      "name": "Crouching Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "19",
-        "active": "19-22",
-        "recovery": "20",
-        "advantage": "3"
-      }
-    },
-    {
-      "id": "m_dhalsim_11",
-      "name": "Crouching Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "12-27",
-        "recovery": "20",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_12",
-      "name": "Jumping Light Punch",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "4",
-        "active": "4-7",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_13",
-      "name": "Jumping Light Kick",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "6",
-        "active": "6-9",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_14",
-      "name": "Jumping Medium Punch",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "9",
-        "active": "9-14",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_15",
-      "name": "Jumping Medium Kick",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "11",
-        "active": "11-16",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_16",
-      "name": "Jumping Heavy Punch",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "13",
-        "active": "13-16",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_17",
-      "name": "Jumping Heavy Kick",
-      "type": "normal",
-      "inputs": [
-        "[MP]",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-19",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_18",
-      "name": "Yoga Uppercut",
-      "type": "special",
-      "inputs": [
-        "[Back]",
-        "+",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "8",
-        "active": "8-13",
-        "recovery": "16",
-        "advantage": "2"
-      }
-    },
-    {
-      "id": "m_dhalsim_19",
-      "name": "Yoga Lance",
-      "type": "special",
-      "inputs": [
-        "[Back]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "14",
-        "active": "14-20",
-        "recovery": "29",
-        "advantage": "-9"
-      }
-    },
-    {
-      "id": "m_dhalsim_20",
-      "name": "Nirvana Punch",
-      "type": "special",
-      "inputs": [
-        "[Down-Back]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-13",
-        "recovery": "20",
-        "advantage": "3"
-      }
-    },
-    {
-      "id": "m_dhalsim_21",
-      "name": "Agile Kick",
-      "type": "special",
-      "inputs": [
-        "[Down-Back]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-7",
-        "recovery": "10",
-        "advantage": "1"
-      }
-    },
-    {
-      "id": "m_dhalsim_22",
-      "name": "Divine Kick",
-      "type": "special",
-      "inputs": [
-        "[Back]",
-        "+",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "7",
-        "active": "7-10",
-        "recovery": "17",
-        "advantage": "3"
-      }
-    },
-    {
-      "id": "m_dhalsim_23",
-      "name": "Thrust Kick",
-      "type": "special",
-      "inputs": [
-        "[Down-Back]",
-        "+",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "8",
-        "active": "8-10",
-        "recovery": "20",
-        "advantage": "-3"
-      }
-    },
-    {
-      "id": "m_dhalsim_24",
-      "name": "Yoga Mountain",
-      "type": "special",
-      "inputs": [
-        "[Back]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "14",
-        "active": "14-19",
-        "recovery": "20",
-        "advantage": "0"
-      }
-    },
-    {
-      "id": "m_dhalsim_25",
-      "name": "Karma Kick",
-      "type": "special",
-      "inputs": [
-        "[Down-Back]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "9",
-        "active": "9-11",
-        "recovery": "22",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_26",
-      "name": "Yoga Mummy",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[Down]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-until landing",
-        "recovery": "9 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_27",
-      "name": "L Drill Kick",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[Down]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "9",
-        "active": "9-until landing",
-        "recovery": "11 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_28",
-      "name": "M Drill Kick",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[Down]",
-        "+",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "9",
-        "active": "9-until landing",
-        "recovery": "11 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_29",
-      "name": "H Drill Kick",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[Down]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "9",
-        "active": "9-until landing",
-        "recovery": "11 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_30",
-      "name": "Long Sliding Kick",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "12-27",
-        "recovery": "20",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_31",
-      "name": "L Yoga Fire",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "15",
-        "active": "",
-        "recovery": "48 total frames",
-        "advantage": "-2"
-      }
-    },
-    {
-      "id": "m_dhalsim_32",
-      "name": "L Yoga Fire(Charged)",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "43",
-        "active": "",
-        "recovery": "73 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_33",
-      "name": "M Yoga Fire",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "15",
-        "active": "",
-        "recovery": "48 total frames",
-        "advantage": "-2"
-      }
-    },
-    {
-      "id": "m_dhalsim_34",
-      "name": "M Yoga Fire(Charged)",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "43",
-        "active": "",
-        "recovery": "73 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_35",
-      "name": "H Yoga Fire",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "15",
-        "active": "",
-        "recovery": "48 total frames",
-        "advantage": "-2"
-      }
-    },
-    {
-      "id": "m_dhalsim_36",
-      "name": "H Yoga Fire(Charged)",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "43",
-        "active": "",
-        "recovery": "73 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_37",
-      "name": "OD L Yoga Fire",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LP]",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "",
-        "recovery": "45 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_38",
-      "name": "OD M Yoga Fire",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LP]",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "",
-        "recovery": "45 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_39",
-      "name": "OD H Yoga Fire",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[MP]",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "",
-        "recovery": "45 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_40",
-      "name": "L Yoga Arch",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "18",
-        "active": "",
-        "recovery": "45 total frames",
-        "advantage": "1"
-      }
-    },
-    {
-      "id": "m_dhalsim_41",
-      "name": "M Yoga Arch",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "18",
-        "active": "",
-        "recovery": "45 total frames",
-        "advantage": "1"
-      }
-    },
-    {
-      "id": "m_dhalsim_42",
-      "name": "H Yoga Arch",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "18",
-        "active": "",
-        "recovery": "45 total frames",
-        "advantage": "1"
-      }
-    },
-    {
-      "id": "m_dhalsim_43",
-      "name": "OD L Yoga Arch",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LK]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "18",
-        "active": "",
-        "recovery": "45 total frames",
-        "advantage": "1"
-      }
-    },
-    {
-      "id": "m_dhalsim_44",
-      "name": "OD M Yoga Arch",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LK]",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "18",
-        "active": "",
-        "recovery": "45 total frames",
-        "advantage": "1"
-      }
-    },
-    {
-      "id": "m_dhalsim_45",
-      "name": "OD H Yoga Arch",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[MK]",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "18",
-        "active": "",
-        "recovery": "45 total frames",
-        "advantage": "1"
-      }
-    },
-    {
-      "id": "m_dhalsim_46",
-      "name": "L Yoga Flame",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Down-Forward]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "16",
-        "active": "16-30",
-        "recovery": "45 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_47",
-      "name": "M Yoga Flame",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Down-Forward]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "20",
-        "active": "19-34",
-        "recovery": "51 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_48",
-      "name": "H Yoga Flame",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Down-Forward]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "26",
-        "active": "26-42",
-        "recovery": "58 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_49",
-      "name": "OD Yoga Flame",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Down-Forward]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LP]",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "18",
-        "active": "18-42",
-        "recovery": "66 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_50",
-      "name": "L Yoga Blast",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Down-Forward]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "12-21",
-        "recovery": "44 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_51",
-      "name": "M Yoga Blast",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Down-Forward]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "15",
-        "active": "15-24",
-        "recovery": "44 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_52",
-      "name": "H Yoga Blast",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Down-Forward]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "17",
-        "active": "17-26",
-        "recovery": "44 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_53",
-      "name": "OD Yoga Blast",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Down-Forward]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LK]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "12",
-        "active": "12-21",
-        "recovery": "41 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_54",
-      "name": "L Yoga Comet",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[Forward]",
-        "[Down-Forward]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "30",
-        "active": "",
-        "recovery": "8 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_55",
-      "name": "M Yoga Comet",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[Forward]",
-        "[Down-Forward]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "30",
-        "active": "",
-        "recovery": "8 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_56",
-      "name": "H Yoga Comet",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[Forward]",
-        "[Down-Forward]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "30",
-        "active": "",
-        "recovery": "8 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_57",
-      "name": "OD Yoga Comet",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[Forward]",
-        "[Down-Forward]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LP]",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "30",
-        "active": "",
-        "recovery": "3 frame(s) after landing",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_58",
-      "name": "Yoga Float(immediately)",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "+",
-        "[LK]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "35 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_59",
-      "name": "Yoga Float(Forward)",
-      "type": "special",
-      "inputs": [
-        "[Down-Forward]",
-        "+",
-        "[LK]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "35 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_60",
-      "name": "Aerial Yoga Float",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[Down]",
-        "+",
-        "[LK]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "15 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_61",
-      "name": "P Yoga Teleport (Forward)",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "+",
-        "[LP]",
-        "[LP]",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "39 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_62",
-      "name": "K Yoga Teleport (Forward)",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "+",
-        "[LK]",
-        "[LK]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "39 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_63",
-      "name": "P Aerial Yoga Teleport (Forward)",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[Forward]",
-        "+",
-        "[LP]",
-        "[LP]",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "29 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_64",
-      "name": "K Aerial Yoga Teleport (Forward)",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[Forward]",
-        "+",
-        "[LK]",
-        "[LK]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "29 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_65",
-      "name": "Yoga Teleport (Backward)",
-      "type": "special",
-      "inputs": [
-        "[Back]",
-        "+",
-        "[LP]",
-        "[LP]",
-        "[LP]",
-        "[Back]",
-        "+",
-        "[LK]",
-        "[LK]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "46 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_66",
-      "name": "P Aerial Yoga Teleport (Backward)",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[Back]",
-        "+",
-        "[LP]",
-        "[LP]",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "34 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_67",
-      "name": "K Aerial Yoga Teleport (Backward)",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[Back]",
-        "+",
-        "[LK]",
-        "[LK]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "34 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_68",
-      "name": "SA1 L Yoga Inferno",
-      "type": "super",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LP]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-93",
-        "recovery": "128 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_69",
-      "name": "SA1 M Yoga Inferno",
-      "type": "super",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[MP]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-93",
-        "recovery": "128 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_70",
-      "name": "SA1 H Yoga Inferno",
-      "type": "super",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[HP]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-93",
-        "recovery": "133 total frames",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_71",
-      "name": "SA2 Yoga Sunburst(Lv1)",
-      "type": "super",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "7",
-        "active": "",
-        "recovery": "67 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_72",
-      "name": "SA2 Yoga Sunburst(Lv2)",
-      "type": "super",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "7",
-        "active": "",
-        "recovery": "80 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_73",
-      "name": "SA2 Yoga Sunburst(Lv3)",
-      "type": "super",
-      "inputs": [
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "[Down]",
-        "[Down-Back]",
-        "[Back]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "7",
-        "active": "",
-        "recovery": "128 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_74",
-      "name": "SA3 Merciless Yoga",
-      "type": "super",
-      "inputs": [
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-14",
-        "recovery": "75",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_75",
-      "name": "CA Merciless Yoga",
-      "type": "special",
-      "inputs": [
-        "[Down]",
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "[Down]",
-        "[Down-Forward]",
-        "[Forward]",
-        "+",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "10",
-        "active": "10-14",
-        "recovery": "75",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_76",
-      "name": "Yoga Smash",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[LP]",
-        "[Forward]",
-        "+",
-        "[LP]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-7",
-        "recovery": "23",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_77",
-      "name": "Yoga Throw",
-      "type": "throw",
-      "inputs": [
-        "[LP]",
-        "[LP]",
-        "[Back]",
-        "+",
-        "[LP]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-7",
-        "recovery": "23",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_78",
-      "name": "Yoga Splash",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[LP]",
-        "[Down]",
-        "+",
-        "[LP]",
-        "[LK]"
-      ],
-      "frameData": {
-        "startup": "5",
-        "active": "5-7",
-        "recovery": "23",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_79",
-      "name": "Forward Dash",
-      "type": "special",
-      "inputs": [
-        "[Forward]",
-        "[Forward]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "25 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_80",
-      "name": "Backward Dash",
-      "type": "special",
-      "inputs": [
-        "[Back]",
-        "[Back]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "23 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_81",
-      "name": "Drive Impact: Yoga Rise",
-      "type": "special",
-      "inputs": [
-        "[HP]",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "26",
-        "active": "26-27",
-        "recovery": "35",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_82",
-      "name": "Drive Reversal (while blocking): Yoga Illusion",
-      "type": "special",
-      "inputs": [
-        "[LK]",
-        "[LP]",
-        "[Forward]",
-        "+",
-        "[HP]",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "20",
-        "active": "20-3120-22, 29-31",
-        "recovery": "26",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_83",
-      "name": "Drive Reversal (while recovering): Yoga Illusion",
-      "type": "special",
-      "inputs": [
-        "[LK]",
-        "[LK]",
-        "[Forward]",
-        "+",
-        "[HP]",
-        "[HK]"
-      ],
-      "frameData": {
-        "startup": "18",
-        "active": "18-2918-20, 27-29",
-        "recovery": "26",
-        "advantage": "D"
-      }
-    },
-    {
-      "id": "m_dhalsim_84",
-      "name": "Drive Parry",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "1",
-        "active": "[*2] 1-12",
-        "recovery": "33",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_85",
-      "name": "Perfect Parry (strike)",
-      "type": "special",
-      "inputs": [
-        "[LK]",
-        "+",
-        "[MP]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "1",
-        "active": "",
-        "recovery": "1",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_86",
-      "name": "Perfect Parry (projectile)",
-      "type": "special",
-      "inputs": [
-        "[MP]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "1",
-        "active": "",
-        "recovery": "10",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_87",
-      "name": "Parry Drive Rush",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[Forward]",
-        "[Forward]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "45 total frames",
-        "advantage": ""
-      }
-    },
-    {
-      "id": "m_dhalsim_88",
-      "name": "Cancel Drive Rush",
-      "type": "special",
-      "inputs": [
-        "[LP]",
-        "[Forward]",
-        "[Forward]",
-        "[Forward]",
-        "+",
-        "[MP]",
-        "[MK]"
-      ],
-      "frameData": {
-        "startup": "",
-        "active": "",
-        "recovery": "46 total frames",
-        "advantage": ""
-      }
-    }
-  ],
-  "combosList": []
+    "game": "Street Fighter 6",
+    "character": "Dhalsim",
+    "movesList": [
+        {
+            "id": "sp_0",
+            "name": "Yoga Fire",
+            "type": "special",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "P"
+            ]
+        },
+        {
+            "id": "sp_1",
+            "name": "Yoga Arch",
+            "type": "special",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_2",
+            "name": "Yoga Flame",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down-forward",
+                "down",
+                "down-back",
+                "back",
+                "P"
+            ]
+        },
+        {
+            "id": "sp_3",
+            "name": "Yoga Blast",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down-forward",
+                "down",
+                "down-back",
+                "back",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_4",
+            "name": "Yoga Teleport",
+            "type": "special",
+            "inputs": [
+                "623 or 421",
+                "PPP or KKK"
+            ]
+        },
+        {
+            "id": "sup_0",
+            "name": "Yoga Inferno (Lv.1)",
+            "type": "super",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "down",
+                "down-forward",
+                "forward",
+                "P"
+            ]
+        },
+        {
+            "id": "sup_1",
+            "name": "Yoga Sunburst (Lv.2)",
+            "type": "super",
+            "inputs": [
+                "down",
+                "down-forward",
+                "forward",
+                "down",
+                "down-forward",
+                "forward",
+                "K"
+            ]
+        },
+        {
+            "id": "sup_2",
+            "name": "Yoga Merciless (Lv.3)",
+            "type": "super",
+            "inputs": [
+                "down",
+                "down-back",
+                "back",
+                "down",
+                "down-back",
+                "back",
+                "P"
+            ]
+        },
+        {
+            "id": "sp_0",
+            "name": "Standing Light Punch",
+            "type": "normal",
+            "inputs": [
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_1",
+            "name": "Standing Light Kick",
+            "type": "normal",
+            "inputs": [
+                "[LK]"
+            ]
+        },
+        {
+            "id": "sp_2",
+            "name": "Standing Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "[MP]"
+            ]
+        },
+        {
+            "id": "sp_3",
+            "name": "Standing Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "[MK]"
+            ]
+        },
+        {
+            "id": "sp_4",
+            "name": "Standing Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_5",
+            "name": "Standing Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "[HK]"
+            ]
+        },
+        {
+            "id": "sp_6",
+            "name": "Crouching Light Punch",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_7",
+            "name": "Crouching Light Kick",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[LK]"
+            ]
+        },
+        {
+            "id": "sp_8",
+            "name": "Crouching Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[MP]"
+            ]
+        },
+        {
+            "id": "sp_9",
+            "name": "Crouching Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[MK]"
+            ]
+        },
+        {
+            "id": "sp_10",
+            "name": "Crouching Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_11",
+            "name": "Crouching Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "[Down]",
+                "[HK]"
+            ]
+        },
+        {
+            "id": "sp_12",
+            "name": "Jumping Light Punch",
+            "type": "normal",
+            "inputs": [
+                "[MP] [LP]"
+            ]
+        },
+        {
+            "id": "sp_13",
+            "name": "Jumping Light Kick",
+            "type": "normal",
+            "inputs": [
+                "[MP] [LK]"
+            ]
+        },
+        {
+            "id": "sp_14",
+            "name": "Jumping Medium Punch",
+            "type": "normal",
+            "inputs": [
+                "[MP] [MP]"
+            ]
+        },
+        {
+            "id": "sp_15",
+            "name": "Jumping Medium Kick",
+            "type": "normal",
+            "inputs": [
+                "[MP] [MK]"
+            ]
+        },
+        {
+            "id": "sp_16",
+            "name": "Jumping Heavy Punch",
+            "type": "normal",
+            "inputs": [
+                "[MP] [HP]"
+            ]
+        },
+        {
+            "id": "sp_17",
+            "name": "Jumping Heavy Kick",
+            "type": "normal",
+            "inputs": [
+                "[MP] [HK]"
+            ]
+        },
+        {
+            "id": "sp_18",
+            "name": "Yoga Uppercut",
+            "type": "special",
+            "inputs": [
+                "[Back]",
+                "[MP]"
+            ]
+        },
+        {
+            "id": "sp_19",
+            "name": "Yoga Lance",
+            "type": "special",
+            "inputs": [
+                "[Back]",
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_20",
+            "name": "Nirvana Punch",
+            "type": "special",
+            "inputs": [
+                "[Down-Back]",
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_21",
+            "name": "Agile Kick",
+            "type": "special",
+            "inputs": [
+                "[Down-Back]",
+                "[LK]"
+            ]
+        },
+        {
+            "id": "sp_22",
+            "name": "Divine Kick",
+            "type": "special",
+            "inputs": [
+                "[Back]",
+                "[MK]"
+            ]
+        },
+        {
+            "id": "sp_23",
+            "name": "Thrust Kick",
+            "type": "special",
+            "inputs": [
+                "[Down-Back]",
+                "[MK]"
+            ]
+        },
+        {
+            "id": "sp_24",
+            "name": "Yoga Mountain",
+            "type": "special",
+            "inputs": [
+                "[Back]",
+                "[HK]"
+            ]
+        },
+        {
+            "id": "sp_25",
+            "name": "Karma Kick",
+            "type": "special",
+            "inputs": [
+                "[Down-Back]",
+                "[HK]"
+            ]
+        },
+        {
+            "id": "sp_26",
+            "name": "Yoga Mummy",
+            "type": "special",
+            "inputs": [
+                "[MP] [Down]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_27",
+            "name": "L Drill Kick",
+            "type": "special",
+            "inputs": [
+                "[MP] [Down]",
+                "[LK]"
+            ]
+        },
+        {
+            "id": "sp_28",
+            "name": "M Drill Kick",
+            "type": "special",
+            "inputs": [
+                "[MP] [Down]",
+                "[MK]"
+            ]
+        },
+        {
+            "id": "sp_29",
+            "name": "H Drill Kick",
+            "type": "special",
+            "inputs": [
+                "[MP] [Down]",
+                "[HK]"
+            ]
+        },
+        {
+            "id": "sp_30",
+            "name": "Long Sliding Kick",
+            "type": "special",
+            "inputs": [
+                "[Down]",
+                "[HK]"
+            ]
+        },
+        {
+            "id": "sp_31",
+            "name": "L Yoga Fire",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_32",
+            "name": "L Yoga Fire(Charged)",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_33",
+            "name": "M Yoga Fire",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[MP]"
+            ]
+        },
+        {
+            "id": "sp_34",
+            "name": "M Yoga Fire(Charged)",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[MP]"
+            ]
+        },
+        {
+            "id": "sp_35",
+            "name": "H Yoga Fire",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_36",
+            "name": "H Yoga Fire(Charged)",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_37",
+            "name": "OD L Yoga Fire",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[LP] [MP]"
+            ]
+        },
+        {
+            "id": "sp_38",
+            "name": "OD M Yoga Fire",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[LP] [HP]"
+            ]
+        },
+        {
+            "id": "sp_39",
+            "name": "OD H Yoga Fire",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[MP] [HP]"
+            ]
+        },
+        {
+            "id": "sp_40",
+            "name": "L Yoga Arch",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[LK]"
+            ]
+        },
+        {
+            "id": "sp_41",
+            "name": "M Yoga Arch",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[MK]"
+            ]
+        },
+        {
+            "id": "sp_42",
+            "name": "H Yoga Arch",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[HK]"
+            ]
+        },
+        {
+            "id": "sp_43",
+            "name": "OD L Yoga Arch",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[LK] [MK]"
+            ]
+        },
+        {
+            "id": "sp_44",
+            "name": "OD M Yoga Arch",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[LK] [HK]"
+            ]
+        },
+        {
+            "id": "sp_45",
+            "name": "OD H Yoga Arch",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward]",
+                "[MK] [HK]"
+            ]
+        },
+        {
+            "id": "sp_46",
+            "name": "L Yoga Flame",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Down-Forward] [Down] [Down-Back] [Back]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_47",
+            "name": "M Yoga Flame",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Down-Forward] [Down] [Down-Back] [Back]",
+                "[MP]"
+            ]
+        },
+        {
+            "id": "sp_48",
+            "name": "H Yoga Flame",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Down-Forward] [Down] [Down-Back] [Back]",
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_49",
+            "name": "OD Yoga Flame",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Down-Forward] [Down] [Down-Back] [Back]",
+                "[LP] [LP]"
+            ]
+        },
+        {
+            "id": "sp_50",
+            "name": "L Yoga Blast",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Down-Forward] [Down] [Down-Back] [Back]",
+                "[LK]"
+            ]
+        },
+        {
+            "id": "sp_51",
+            "name": "M Yoga Blast",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Down-Forward] [Down] [Down-Back] [Back]",
+                "[MK]"
+            ]
+        },
+        {
+            "id": "sp_52",
+            "name": "H Yoga Blast",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Down-Forward] [Down] [Down-Back] [Back]",
+                "[HK]"
+            ]
+        },
+        {
+            "id": "sp_53",
+            "name": "OD Yoga Blast",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Down-Forward] [Down] [Down-Back] [Back]",
+                "[LK] [LK]"
+            ]
+        },
+        {
+            "id": "sp_54",
+            "name": "L Yoga Comet",
+            "type": "special",
+            "inputs": [
+                "[MP] [Forward] [Down-Forward] [Down] [Down-Back] [Back]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sp_55",
+            "name": "M Yoga Comet",
+            "type": "special",
+            "inputs": [
+                "[MP] [Forward] [Down-Forward] [Down] [Down-Back] [Back]",
+                "[MP]"
+            ]
+        },
+        {
+            "id": "sp_56",
+            "name": "H Yoga Comet",
+            "type": "special",
+            "inputs": [
+                "[MP] [Forward] [Down-Forward] [Down] [Down-Back] [Back]",
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sp_57",
+            "name": "OD Yoga Comet",
+            "type": "special",
+            "inputs": [
+                "[MP] [Forward] [Down-Forward] [Down] [Down-Back] [Back]",
+                "[LP] [LP]"
+            ]
+        },
+        {
+            "id": "sp_58",
+            "name": "Yoga Float(immediately)",
+            "type": "special",
+            "inputs": [
+                "[Down]",
+                "[LK] [LK]"
+            ]
+        },
+        {
+            "id": "sp_59",
+            "name": "Yoga Float(Forward)",
+            "type": "special",
+            "inputs": [
+                "[Down-Forward]",
+                "[LK] [LK]"
+            ]
+        },
+        {
+            "id": "sp_60",
+            "name": "Aerial Yoga Float",
+            "type": "special",
+            "inputs": [
+                "[MP] [Down]",
+                "[LK] [LK]"
+            ]
+        },
+        {
+            "id": "sp_61",
+            "name": "P Yoga Teleport (Forward)",
+            "type": "special",
+            "inputs": [
+                "[Forward]",
+                "[LP] [LP] [LP]"
+            ]
+        },
+        {
+            "id": "sp_62",
+            "name": "K Yoga Teleport (Forward)",
+            "type": "special",
+            "inputs": [
+                "[Forward]",
+                "[LK] [LK] [LK]"
+            ]
+        },
+        {
+            "id": "sp_63",
+            "name": "P Aerial Yoga Teleport (Forward)",
+            "type": "special",
+            "inputs": [
+                "[MP] [Forward]",
+                "[LP] [LP] [LP]"
+            ]
+        },
+        {
+            "id": "sp_64",
+            "name": "K Aerial Yoga Teleport (Forward)",
+            "type": "special",
+            "inputs": [
+                "[MP] [Forward]",
+                "[LK] [LK] [LK]"
+            ]
+        },
+        {
+            "id": "sp_65",
+            "name": "Yoga Teleport (Backward)",
+            "type": "special",
+            "inputs": [
+                "[Back]",
+                "[LP] [LP] [LP] [Back]",
+                "[LK] [LK] [LK]"
+            ]
+        },
+        {
+            "id": "sp_66",
+            "name": "P Aerial Yoga Teleport (Backward)",
+            "type": "special",
+            "inputs": [
+                "[MP] [Back]",
+                "[LP] [LP] [LP]"
+            ]
+        },
+        {
+            "id": "sp_67",
+            "name": "K Aerial Yoga Teleport (Backward)",
+            "type": "special",
+            "inputs": [
+                "[MP] [Back]",
+                "[LK] [LK] [LK]"
+            ]
+        },
+        {
+            "id": "sp_68",
+            "name": "CA Merciless Yoga",
+            "type": "special",
+            "inputs": [
+                "[Down] [Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+                "[LK]"
+            ]
+        },
+        {
+            "id": "sp_69",
+            "name": "Yoga Smash",
+            "type": "special",
+            "inputs": [
+                "[LP] [LP] [Forward]",
+                "[LP] [LK]"
+            ]
+        },
+        {
+            "id": "sp_70",
+            "name": "Yoga Throw",
+            "type": "throw",
+            "inputs": [
+                "[LP] [LP] [Back]",
+                "[LP] [LK]"
+            ]
+        },
+        {
+            "id": "sp_71",
+            "name": "Yoga Splash",
+            "type": "special",
+            "inputs": [
+                "[LP] [LP] [Down]",
+                "[LP] [LK]"
+            ]
+        },
+        {
+            "id": "sp_72",
+            "name": "Forward Dash",
+            "type": "special",
+            "inputs": [
+                "[Forward] [Forward]"
+            ]
+        },
+        {
+            "id": "sp_73",
+            "name": "Backward Dash",
+            "type": "special",
+            "inputs": [
+                "[Back] [Back]"
+            ]
+        },
+        {
+            "id": "sp_74",
+            "name": "Drive Impact: Yoga Rise",
+            "type": "special",
+            "inputs": [
+                "[HP] [HK]"
+            ]
+        },
+        {
+            "id": "sp_75",
+            "name": "Drive Reversal (while blocking): Yoga Illusion",
+            "type": "special",
+            "inputs": [
+                "[LK] [LP] [Forward]",
+                "[HP] [HK]"
+            ]
+        },
+        {
+            "id": "sp_76",
+            "name": "Drive Reversal (while recovering): Yoga Illusion",
+            "type": "special",
+            "inputs": [
+                "[LK] [LK] [Forward]",
+                "[HP] [HK]"
+            ]
+        },
+        {
+            "id": "sp_77",
+            "name": "Drive Parry",
+            "type": "special",
+            "inputs": [
+                "[MP] [MK]"
+            ]
+        },
+        {
+            "id": "sp_78",
+            "name": "Perfect Parry (strike)",
+            "type": "special",
+            "inputs": [
+                "[LK]",
+                "[MP] [MK]"
+            ]
+        },
+        {
+            "id": "sp_79",
+            "name": "Perfect Parry (projectile)",
+            "type": "special",
+            "inputs": [
+                "[MP] [MK]"
+            ]
+        },
+        {
+            "id": "sp_80",
+            "name": "Parry Drive Rush",
+            "type": "special",
+            "inputs": [
+                "[LP] [Forward] [Forward]"
+            ]
+        },
+        {
+            "id": "sp_81",
+            "name": "Cancel Drive Rush",
+            "type": "special",
+            "inputs": [
+                "[LP] [Forward] [Forward] [Forward]",
+                "[MP] [MK]"
+            ]
+        },
+        {
+            "id": "sup_0",
+            "name": "SA1 L Yoga Inferno",
+            "type": "super",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+                "[LP]"
+            ]
+        },
+        {
+            "id": "sup_1",
+            "name": "SA1 M Yoga Inferno",
+            "type": "super",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+                "[MP]"
+            ]
+        },
+        {
+            "id": "sup_2",
+            "name": "SA1 H Yoga Inferno",
+            "type": "super",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+                "[HP]"
+            ]
+        },
+        {
+            "id": "sup_3",
+            "name": "SA2 Yoga Sunburst(Lv1)",
+            "type": "super",
+            "inputs": [
+                "[Down] [Down-Back] [Back] [Down] [Down-Back] [Back]",
+                "[LK]"
+            ]
+        },
+        {
+            "id": "sup_4",
+            "name": "SA2 Yoga Sunburst(Lv2)",
+            "type": "super",
+            "inputs": [
+                "[Down] [Down-Back] [Back] [Down] [Down-Back] [Back]",
+                "[LK]"
+            ]
+        },
+        {
+            "id": "sup_5",
+            "name": "SA2 Yoga Sunburst(Lv3)",
+            "type": "super",
+            "inputs": [
+                "[Down] [Down-Back] [Back] [Down] [Down-Back] [Back]",
+                "[LK]"
+            ]
+        },
+        {
+            "id": "sup_6",
+            "name": "SA3 Merciless Yoga",
+            "type": "super",
+            "inputs": [
+                "[Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+                "[LK]"
+            ]
+        }
+    ],
+    "combosList": []
 }

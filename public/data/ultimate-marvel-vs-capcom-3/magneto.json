@@ -7,17 +7,21 @@
             "name": "EM Disruptor",
             "type": "special",
             "inputs": [
-                "236",
-                "L, M, or H (Ground or Air)"
+                "down",
+                "down-forward",
+                "forward",
+                "L or M or H (Air OK)"
             ]
         },
         {
             "id": "sp_1",
             "name": "Hyper Grav",
-            "type": "special",
+            "type": "super",
             "inputs": [
-                "214",
-                "L, M, or H (Ground or Air)"
+                "down",
+                "down-back",
+                "back",
+                "L or M or H (Air OK)"
             ]
         },
         {
@@ -25,8 +29,11 @@
             "name": "Magnetic Blast",
             "type": "special",
             "inputs": [
-                "8, 8, 236",
-                "L, M, or H (In Air)"
+                "(In Air)",
+                "down",
+                "down-forward",
+                "forward",
+                "L or M or H"
             ]
         },
         {
@@ -34,52 +41,44 @@
             "name": "Flight",
             "type": "special",
             "inputs": [
-                "214",
+                "down",
+                "down-back",
+                "back",
                 "S"
             ]
         },
         {
-            "id": "hc_0",
+            "id": "sup_0",
             "name": "Magnetic Shockwave",
             "type": "super",
             "inputs": [
-                "236",
-                "Any two Attacks"
+                "down",
+                "down-forward",
+                "forward",
+                "AT"
             ]
         },
         {
-            "id": "hc_1",
+            "id": "sup_1",
             "name": "Magnetic Tempest",
             "type": "super",
             "inputs": [
-                "236",
-                "Any two Attacks (In Air)"
+                "down",
+                "down-forward",
+                "forward",
+                "(In Air)",
+                "AT"
             ]
         },
         {
-            "id": "hc_2",
+            "id": "sup_2",
             "name": "Gravity Squeeze",
             "type": "super",
             "inputs": [
-                "214",
-                "Any two Attacks (Level 3)"
-            ]
-        },
-        {
-            "id": "um_0",
-            "name": "X-Factor",
-            "type": "unique",
-            "inputs": [
-                "L+M+H+S (Activation)"
-            ]
-        },
-        {
-            "id": "um_1",
-            "name": "Team Aerial Combo",
-            "type": "unique",
-            "inputs": [
-                "Direction",
-                "S (During Air Combo)"
+                "down",
+                "down-back",
+                "back",
+                "AT (Level 3)"
             ]
         }
     ],

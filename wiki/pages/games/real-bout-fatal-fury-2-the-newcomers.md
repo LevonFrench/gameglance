@@ -1,21 +1,22 @@
 ---
 title: "Real Bout Fatal Fury 2: The Newcomers"
 type: game
-tags: [real-bout-fatal-fury-2-the-newcomers, snk]
-games: [real-bout-fatal-fury-2-the-newcomers]
+tags: [real-bout-fatal-fury-2-the-newcomers]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Real Bout Fatal Fury 2: The Newcomers
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Rick Strowd
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/real-bout-fatal-fury-2-the-newcomers/{character}.json` — parsed from `fatal_fury_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

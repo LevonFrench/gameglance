@@ -1,47 +1,73 @@
 {
-  "game": "Street Fighter II",
-  "character": "Ryu",
-  "theme_colors": {
-    "normal": "#FFFFFF",
-    "special": "#FFD700",
-    "super_fatality": "#FF0000"
-  },
-  "movesList": [
-    {
-      "id": "sf2_ryu_seoi_nage",
-      "name": "Seoi Nage",
-      "type": "throw",
-      "inputs": ["[Forward]", "[HP]"],
-      "frameData": {}
+    "game": "Street Fighter II",
+    "character": "Ryu",
+    "theme_colors": {
+        "normal": "#FFFFFF",
+        "special": "#FFD700",
+        "super_fatality": "#FF0000"
     },
-    {
-      "id": "sf2_ryu_hadouken",
-      "name": "Hadouken",
-      "type": "special",
-      "inputs": ["[Down]", "[Down-Forward]", "[Forward]", "[P]"],
-      "frameData": {}
-    },
-    {
-      "id": "sf2_ryu_shoryuken",
-      "name": "Shoryuken",
-      "type": "special",
-      "inputs": ["[Forward]", "[Down]", "[Down-Forward]", "[P]"],
-      "frameData": {}
-    },
-    {
-      "id": "sf2_ryu_tatsumaki",
-      "name": "Tatsumaki Senpuukyaku",
-      "type": "special",
-      "inputs": ["[Down]", "[Down-Back]", "[Back]", "[K]"],
-      "frameData": {}
-    },
-    {
-      "id": "sf2_ryu_shinkuu",
-      "name": "Shinkuu Hadouken",
-      "type": "super",
-      "inputs": ["[Down]", "[Down-Forward]", "[Forward]", "[Down]", "[Down-Forward]", "[Forward]", "[P]"],
-      "frameData": {}
-    }
-  ],
-  "combosList": []
+    "movesList": [
+        {
+            "id": "sf2_ryu_seoi_nage",
+            "name": "Seoi Nage",
+            "type": "throw",
+            "inputs": [
+                "[Forward]",
+                "[HP]"
+            ],
+            "frameData": {}
+        },
+        {
+            "id": "sf2_ryu_hadouken",
+            "name": "Hadouken",
+            "type": "special",
+            "inputs": [
+                "[Down]",
+                "[Down-Forward]",
+                "[Forward]",
+                "[P]"
+            ],
+            "frameData": {}
+        },
+        {
+            "id": "sf2_ryu_shoryuken",
+            "name": "Shoryuken",
+            "type": "special",
+            "inputs": [
+                "[Forward]",
+                "[Down]",
+                "[Down-Forward]",
+                "[P]"
+            ],
+            "frameData": {}
+        },
+        {
+            "id": "sf2_ryu_tatsumaki",
+            "name": "Tatsumaki Senpuukyaku",
+            "type": "special",
+            "inputs": [
+                "[Down]",
+                "[Down-Back]",
+                "[Back]",
+                "[K]"
+            ],
+            "frameData": {}
+        },
+        {
+            "id": "sf2_ryu_shinkuu",
+            "name": "Shinkuu Hadouken",
+            "type": "super",
+            "inputs": [
+                "[Down]",
+                "[Down-Forward]",
+                "[Forward]",
+                "[Down]",
+                "[Down-Forward]",
+                "[Forward]",
+                "[P]"
+            ],
+            "frameData": {}
+        }
+    ],
+    "combosList": []
 }

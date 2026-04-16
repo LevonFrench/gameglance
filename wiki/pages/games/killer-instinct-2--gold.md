@@ -1,21 +1,22 @@
 ---
 title: "Killer Instinct 2 / Gold"
 type: game
-tags: [killer-instinct-2--gold, rare]
-games: [killer-instinct-2--gold]
+tags: [killer-instinct-2--gold]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # Killer Instinct 2 / Gold
 
-A classic fighting game by Rare.
+## Overview
+*No overview generated yet.*
 
-## Roster (2 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-B. Orchid, System Mechanics
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/killer-instinct-2--gold/{character}.json` — parsed from `killer_instinct_series_movelists.json`.
+## Meta
+*No meta/tier lists loaded.*

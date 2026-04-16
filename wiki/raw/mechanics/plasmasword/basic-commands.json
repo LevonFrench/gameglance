@@ -1,0 +1,2530 @@
+{
+    "game": "plasmasword",
+    "character": "BASIC COMMANDS",
+    "movesList": [
+        {
+            "id": "sp_0",
+            "name": "Standing Light Punch",
+            "type": "special",
+            "inputs": [
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_1",
+            "name": "Standing Medium Punch",
+            "type": "special",
+            "inputs": [
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_2",
+            "name": "Standing Heavy Punch",
+            "type": "special",
+            "inputs": [
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_3",
+            "name": "Standing Light Kick",
+            "type": "special",
+            "inputs": [
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_4",
+            "name": "Standing Medium Kick",
+            "type": "special",
+            "inputs": [
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_5",
+            "name": "Standing Heavy Kick",
+            "type": "special",
+            "inputs": [
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_6",
+            "name": "Crouching Light Punch",
+            "type": "special",
+            "inputs": [
+                "2",
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_7",
+            "name": "Crouching Medium Punch",
+            "type": "special",
+            "inputs": [
+                "2",
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_8",
+            "name": "Crouching Heavy Punch",
+            "type": "special",
+            "inputs": [
+                "2",
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_9",
+            "name": "Crouching Light Kick",
+            "type": "special",
+            "inputs": [
+                "2",
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_10",
+            "name": "Crouching Medium Kick",
+            "type": "special",
+            "inputs": [
+                "2",
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_11",
+            "name": "Crouching Heavy Kick",
+            "type": "special",
+            "inputs": [
+                "2",
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_12",
+            "name": "Jumping Light Punch",
+            "type": "special",
+            "inputs": [
+                "8",
+                "LP"
+            ]
+        },
+        {
+            "id": "sp_13",
+            "name": "Jumping Medium Punch",
+            "type": "special",
+            "inputs": [
+                "8",
+                "MP"
+            ]
+        },
+        {
+            "id": "sp_14",
+            "name": "Jumping Heavy Punch",
+            "type": "special",
+            "inputs": [
+                "8",
+                "HP"
+            ]
+        },
+        {
+            "id": "sp_15",
+            "name": "Jumping Light Kick",
+            "type": "special",
+            "inputs": [
+                "8",
+                "LK"
+            ]
+        },
+        {
+            "id": "sp_16",
+            "name": "Jumping Medium Kick",
+            "type": "special",
+            "inputs": [
+                "8",
+                "MK"
+            ]
+        },
+        {
+            "id": "sp_17",
+            "name": "Jumping Heavy Kick",
+            "type": "special",
+            "inputs": [
+                "8",
+                "HK"
+            ]
+        },
+        {
+            "id": "sp_18",
+            "name": "Standing Guard",
+            "type": "special",
+            "inputs": [
+                "4",
+                "hold",
+                "when",
+                "attacked"
+            ]
+        },
+        {
+            "id": "sp_19",
+            "name": "Crouching Guard",
+            "type": "special",
+            "inputs": [
+                "hold down-back when attacked"
+            ]
+        },
+        {
+            "id": "sp_20",
+            "name": "Dash Backwards",
+            "type": "special",
+            "inputs": [
+                "back",
+                "back",
+                "back",
+                "tap",
+                "/",
+                "m"
+            ]
+        },
+        {
+            "id": "sp_21",
+            "name": "Dash Forwards",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "forward",
+                "forward",
+                "tap",
+                "/",
+                "m"
+            ]
+        },
+        {
+            "id": "sp_22",
+            "name": "Run Forward",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "forward",
+                "forward",
+                "forward",
+                "forward",
+                "tap",
+                "hold",
+                "/",
+                "m",
+                "hold"
+            ]
+        },
+        {
+            "id": "sp_23",
+            "name": "Dashing Jump",
+            "type": "special",
+            "inputs": [
+                "press up-forward while dashing or running"
+            ]
+        },
+        {
+            "id": "sp_24",
+            "name": "Move into Background",
+            "type": "special",
+            "inputs": [
+                "press m"
+            ]
+        },
+        {
+            "id": "sp_25",
+            "name": "Move into Foreground",
+            "type": "special",
+            "inputs": [
+                "2",
+                "press",
+                "m"
+            ]
+        },
+        {
+            "id": "sp_26",
+            "name": "Safe Fall",
+            "type": "special",
+            "inputs": [
+                "press any button when you hit the ground"
+            ]
+        },
+        {
+            "id": "sp_27",
+            "name": "Throw / Crouching Throw",
+            "type": "special",
+            "inputs": [
+                "press ab when standing or crouching"
+            ]
+        },
+        {
+            "id": "sp_28",
+            "name": "Throw From Behind",
+            "type": "special",
+            "inputs": [
+                "press ab when standing behind your enemy"
+            ]
+        },
+        {
+            "id": "sp_29",
+            "name": "Get-Up and Flip Away",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press",
+                "when",
+                "lying",
+                "on",
+                "the",
+                "ground"
+            ]
+        },
+        {
+            "id": "sp_30",
+            "name": "Get-Up and Roll Forward",
+            "type": "special",
+            "inputs": [
+                "up",
+                "forward",
+                "press",
+                "or",
+                "when",
+                "lying",
+                "on",
+                "the",
+                "ground"
+            ]
+        },
+        {
+            "id": "sp_31",
+            "name": "Quick Get-Up",
+            "type": "special",
+            "inputs": [
+                "2",
+                "press",
+                "when",
+                "lying",
+                "on",
+                "the",
+                "ground"
+            ]
+        },
+        {
+            "id": "sp_32",
+            "name": "Roll into Background",
+            "type": "special",
+            "inputs": [
+                "press m when lying on the ground"
+            ]
+        },
+        {
+            "id": "sp_33",
+            "name": "Roll into Foreground",
+            "type": "special",
+            "inputs": [
+                "2",
+                "press",
+                "m",
+                "when",
+                "lying",
+                "on",
+                "the",
+                "ground"
+            ]
+        },
+        {
+            "id": "sp_34",
+            "name": "Vertical Attack",
+            "type": "special",
+            "inputs": [
+                "press a  (can't be blocked crouching)"
+            ]
+        },
+        {
+            "id": "sp_35",
+            "name": "Horizontal Attack",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press"
+            ]
+        },
+        {
+            "id": "sp_36",
+            "name": "Kick Attack",
+            "type": "special",
+            "inputs": [
+                "press K"
+            ]
+        },
+        {
+            "id": "sp_37",
+            "name": "Jumping Attack (Going Up)",
+            "type": "special",
+            "inputs": [
+                "up",
+                "back",
+                "press",
+                "a",
+                "/",
+                "/",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_38",
+            "name": "Jumping Attack (Going Down)",
+            "type": "special",
+            "inputs": [
+                "4",
+                "after",
+                "apex",
+                "of",
+                "jump",
+                "press",
+                "a",
+                "/",
+                "/",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_39",
+            "name": "Weak Pursuit Attack",
+            "type": "special",
+            "inputs": [
+                "8",
+                "press",
+                "K",
+                "when",
+                "enemy",
+                "is",
+                "downed"
+            ]
+        },
+        {
+            "id": "sp_40",
+            "name": "Strong Pursuit Attack",
+            "type": "special",
+            "inputs": [
+                "up",
+                "back",
+                "press",
+                "a",
+                "/",
+                "when",
+                "enemy",
+                "is",
+                "downed"
+            ]
+        },
+        {
+            "id": "sp_41",
+            "name": "Plasma Reverse: Revenge",
+            "type": "special",
+            "inputs": [
+                "press am          (costs 0.5 levels)"
+            ]
+        },
+        {
+            "id": "sp_42",
+            "name": "Plasma Reverse: Reflect",
+            "type": "special",
+            "inputs": [
+                "press bm          (costs 0.5 levels)"
+            ]
+        },
+        {
+            "id": "sp_43",
+            "name": "Plasma Strike",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "back",
+                "down-forward",
+                "/",
+                "down-back",
+                "ab",
+                "(costs",
+                "1",
+                "level)"
+            ]
+        },
+        {
+            "id": "sp_44",
+            "name": "Blaze Sword",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_45",
+            "name": "Double Blaze",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "back",
+                "down-forward"
+            ]
+        },
+        {
+            "id": "sp_46",
+            "name": "Kieru",
+            "type": "special",
+            "inputs": [
+                "back",
+                "down",
+                "down-back",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_47",
+            "name": "Dark Vortex",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_48",
+            "name": "Hell Wind Sword",
+            "type": "special",
+            "inputs": [
+                "back",
+                "forward",
+                "back",
+                "(direction",
+                "depends",
+                "on",
+                "stance)"
+            ]
+        },
+        {
+            "id": "sp_49",
+            "name": "Final Bilstein",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "back",
+                "down-forward",
+                "down-back",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_50",
+            "name": "Gigant Armored",
+            "type": "special",
+            "inputs": [
+                "down",
+                "down",
+                "down",
+                "tap"
+            ]
+        },
+        {
+            "id": "sp_51",
+            "name": "Fuyuu",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press",
+                "provocation",
+                "(can",
+                "then",
+                "move",
+                "/",
+                "f)"
+            ]
+        },
+        {
+            "id": "sp_52",
+            "name": "Kuuchuu Yoku Idou",
+            "type": "special",
+            "inputs": [
+                "hold g during fuyuu  (can move in / out)"
+            ]
+        },
+        {
+            "id": "sp_53",
+            "name": "Calamity Dive",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press",
+                "a",
+                "/",
+                "/",
+                "K",
+                "during",
+                "fuyuu"
+            ]
+        },
+        {
+            "id": "sp_54",
+            "name": "Fear Rise Sword",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press",
+                "a",
+                "/",
+                "while",
+                "dashing"
+            ]
+        },
+        {
+            "id": "sp_55",
+            "name": "Slide Centipede",
+            "type": "special",
+            "inputs": [
+                "press K while dashing"
+            ]
+        },
+        {
+            "id": "sp_56",
+            "name": "Dark Surprise",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "a",
+                "tap",
+                "a",
+                "rapidly"
+            ]
+        },
+        {
+            "id": "sp_57",
+            "name": "Evil Storm",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_58",
+            "name": "Teleportation",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down",
+                "back",
+                "down-forward",
+                "m",
+                "/",
+                "down-back",
+                "m"
+            ]
+        },
+        {
+            "id": "sp_59",
+            "name": "Kuuchuu Teleportation",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "back",
+                "down",
+                "down-forward",
+                "m",
+                "/",
+                "down-back",
+                "m"
+            ]
+        },
+        {
+            "id": "sp_60",
+            "name": "Fatal Edge",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_61",
+            "name": "Fake Blade",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_62",
+            "name": "Hell Wind Sword",
+            "type": "special",
+            "inputs": [
+                "back",
+                "forward",
+                "back",
+                "(direction",
+                "depends",
+                "on",
+                "stance)"
+            ]
+        },
+        {
+            "id": "sp_63",
+            "name": "Fear Rise Sword",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press",
+                "a",
+                "/",
+                "while",
+                "dashing"
+            ]
+        },
+        {
+            "id": "sp_64",
+            "name": "Slide Centipede",
+            "type": "special",
+            "inputs": [
+                "press K while dashing"
+            ]
+        },
+        {
+            "id": "sp_65",
+            "name": "Gamo Tackle",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "back",
+                "down-forward"
+            ]
+        },
+        {
+            "id": "sp_66",
+            "name": "Gamo Tornado",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "back",
+                "back",
+                "down-back",
+                "tap",
+                "rapidly"
+            ]
+        },
+        {
+            "id": "sp_67",
+            "name": "Gamo Screw",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "back",
+                "down-forward",
+                "down-back",
+                "K",
+                "(hits",
+                ")"
+            ]
+        },
+        {
+            "id": "sp_68",
+            "name": "Gamo Giant Swing",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "back",
+                "back",
+                "down-forward",
+                "down-back",
+                "K",
+                "when",
+                "foe's",
+                "is",
+                "towards",
+                "you"
+            ]
+        },
+        {
+            "id": "sp_69",
+            "name": "Zenten",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "m"
+            ]
+        },
+        {
+            "id": "sp_70",
+            "name": "Gamo Kick",
+            "type": "special",
+            "inputs": [
+                "4",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_71",
+            "name": "Gamo Head",
+            "type": "special",
+            "inputs": [
+                "down-forward K"
+            ]
+        },
+        {
+            "id": "sp_72",
+            "name": "Gamo Ride",
+            "type": "special",
+            "inputs": [
+                "down-forward a"
+            ]
+        },
+        {
+            "id": "sp_73",
+            "name": "Gamo Sliding",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press",
+                "a",
+                "/",
+                "when",
+                "dashing"
+            ]
+        },
+        {
+            "id": "sp_74",
+            "name": "Gamo Running Kick",
+            "type": "special",
+            "inputs": [
+                "press K when dashing"
+            ]
+        },
+        {
+            "id": "sp_75",
+            "name": "Gamo Fall",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press",
+                "during",
+                "gamo",
+                "running",
+                "kick"
+            ]
+        },
+        {
+            "id": "sp_76",
+            "name": "Gamo Swing",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press",
+                "a",
+                "/",
+                "/",
+                "K",
+                "and",
+                "miss"
+            ]
+        },
+        {
+            "id": "sp_77",
+            "name": "Gamo Home Run",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press",
+                "a",
+                "/",
+                "/",
+                "K",
+                "with",
+                "good",
+                "timing"
+            ]
+        },
+        {
+            "id": "sp_78",
+            "name": "Gamo Chip",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press",
+                "a",
+                "/",
+                "/",
+                "K",
+                "with",
+                "bad",
+                "timing"
+            ]
+        },
+        {
+            "id": "sp_79",
+            "name": "Andelucia Storm",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "a",
+                "tap",
+                "a",
+                "rapidly"
+            ]
+        },
+        {
+            "id": "sp_80",
+            "name": "Andelucia Crawl",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press",
+                "during",
+                "andelucia",
+                "storm"
+            ]
+        },
+        {
+            "id": "sp_81",
+            "name": "Andelucia Arrow",
+            "type": "special",
+            "inputs": [
+                "press K during andelucia storm"
+            ]
+        },
+        {
+            "id": "sp_82",
+            "name": "Flying Matador",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_83",
+            "name": "Bloody Flamenco",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_84",
+            "name": "Naname Zenten",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "m"
+            ]
+        },
+        {
+            "id": "sp_85",
+            "name": "Spanish Dance",
+            "type": "special",
+            "inputs": [
+                "back",
+                "forward",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_86",
+            "name": "Rapid Elbow (to knock kick)",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "forward",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_87",
+            "name": "Secret Combo",
+            "type": "special",
+            "inputs": [
+                "4",
+                "down-forward",
+                "a",
+                "then",
+                "press",
+                "a",
+                "K",
+                "tap",
+                "K",
+                "rapidly"
+            ]
+        },
+        {
+            "id": "sp_88",
+            "name": "Just Stab",
+            "type": "special",
+            "inputs": [
+                "4",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_89",
+            "name": "Black Heaven",
+            "type": "special",
+            "inputs": [
+                "down-forward a"
+            ]
+        },
+        {
+            "id": "sp_90",
+            "name": "Sharp Crawl",
+            "type": "special",
+            "inputs": [
+                "4",
+                "down-forward"
+            ]
+        },
+        {
+            "id": "sp_91",
+            "name": "Killing Bull",
+            "type": "special",
+            "inputs": [
+                "down-back a"
+            ]
+        },
+        {
+            "id": "sp_92",
+            "name": "Dead Slide",
+            "type": "special",
+            "inputs": [
+                "press K while dashing"
+            ]
+        },
+        {
+            "id": "sp_93",
+            "name": "Kick del Sol",
+            "type": "special",
+            "inputs": [
+                "press km while dashing"
+            ]
+        },
+        {
+            "id": "sp_94",
+            "name": "Baku'en Tousha",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_95",
+            "name": "Sosei Henkan",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "back",
+                "down-forward"
+            ]
+        },
+        {
+            "id": "sp_96",
+            "name": "Kyakubu Kaiten",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_97",
+            "name": "Enshin Bunri",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "K",
+                "when",
+                "enemy",
+                "is",
+                "floored"
+            ]
+        },
+        {
+            "id": "sp_98",
+            "name": "Katsu Tou'nyuu",
+            "type": "special",
+            "inputs": [
+                "down",
+                "down",
+                "K",
+                "when",
+                "enemy",
+                "is",
+                "floored"
+            ]
+        },
+        {
+            "id": "sp_99",
+            "name": "Shukushou",
+            "type": "special",
+            "inputs": [
+                "down",
+                "down",
+                "forward",
+                "back",
+                "provocation"
+            ]
+        },
+        {
+            "id": "sp_100",
+            "name": "Zettai Ansei",
+            "type": "special",
+            "inputs": [
+                "down",
+                "down",
+                "down",
+                "tap",
+                "then",
+                "do",
+                "any",
+                "move",
+                "listed",
+                "below"
+            ]
+        },
+        {
+            "id": "sp_101",
+            "name": "Shin Dash",
+            "type": "special",
+            "inputs": [
+                "back",
+                "back",
+                "forward",
+                "forward",
+                "tap",
+                "/"
+            ]
+        },
+        {
+            "id": "sp_102",
+            "name": "Shindou Ryouhou",
+            "type": "special",
+            "inputs": [
+                "press ab  (hits )"
+            ]
+        },
+        {
+            "id": "sp_103",
+            "name": "Okiru",
+            "type": "special",
+            "inputs": [
+                "press m"
+            ]
+        },
+        {
+            "id": "sp_104",
+            "name": "Temae-shin Idou",
+            "type": "special",
+            "inputs": [
+                "2",
+                "press",
+                "m"
+            ]
+        },
+        {
+            "id": "sp_105",
+            "name": "Ou-shin Idou",
+            "type": "special",
+            "inputs": [
+                "8",
+                "press",
+                "m"
+            ]
+        },
+        {
+            "id": "sp_106",
+            "name": "Okiagari Kougeki",
+            "type": "special",
+            "inputs": [
+                "press K"
+            ]
+        },
+        {
+            "id": "sp_107",
+            "name": "Okiagari Gedan Kougeki",
+            "type": "special",
+            "inputs": [
+                "2",
+                "press",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_108",
+            "name": "Okiagari Taikuu Kougeki",
+            "type": "special",
+            "inputs": [
+                "down",
+                "up",
+                "press",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_109",
+            "name": "Atama Kyodaika",
+            "type": "special",
+            "inputs": [
+                "press and hold provocation"
+            ]
+        },
+        {
+            "id": "sp_110",
+            "name": "Hiyaku Youkyoku",
+            "type": "special",
+            "inputs": [
+                "4",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_111",
+            "name": "Kou Kaiten Shuu",
+            "type": "special",
+            "inputs": [
+                "4",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_112",
+            "name": "Tsubo Shiatsu-zuki",
+            "type": "special",
+            "inputs": [
+                "down-forward a"
+            ]
+        },
+        {
+            "id": "sp_113",
+            "name": "Kaiten Keizan",
+            "type": "special",
+            "inputs": [
+                "4",
+                "down-forward"
+            ]
+        },
+        {
+            "id": "sp_114",
+            "name": "Haikotsu Shinchou",
+            "type": "special",
+            "inputs": [
+                "2",
+                "down-forward",
+                "K",
+                "(then",
+                "hold",
+                "for",
+                "zettai",
+                "ansei)"
+            ]
+        },
+        {
+            "id": "sp_115",
+            "name": "Kinou Shinshuu",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press",
+                "a",
+                "/",
+                "while",
+                "dashing"
+            ]
+        },
+        {
+            "id": "sp_116",
+            "name": "Kacchi-men Shuu",
+            "type": "special",
+            "inputs": [
+                "press K while dashing"
+            ]
+        },
+        {
+            "id": "sp_117",
+            "name": "Ara-ryouji",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_118",
+            "name": "Naizou Appaku",
+            "type": "special",
+            "inputs": [
+                "press K K K"
+            ]
+        },
+        {
+            "id": "sp_119",
+            "name": "Shiden",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "back",
+                "down-forward"
+            ]
+        },
+        {
+            "id": "sp_120",
+            "name": "Shiden: Kai",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "back",
+                "down-back"
+            ]
+        },
+        {
+            "id": "sp_121",
+            "name": "Byakko Hou",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "back",
+                "K",
+                "(hits",
+                ")"
+            ]
+        },
+        {
+            "id": "sp_122",
+            "name": "Guren",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "back",
+                "down-forward",
+                "a",
+                "/"
+            ]
+        },
+        {
+            "id": "sp_123",
+            "name": "Ashura",
+            "type": "special",
+            "inputs": [
+                "down",
+                "down",
+                "down",
+                "tap"
+            ]
+        },
+        {
+            "id": "sp_124",
+            "name": "Tsuki Kage",
+            "type": "special",
+            "inputs": [
+                "down-forward a"
+            ]
+        },
+        {
+            "id": "sp_125",
+            "name": "Jajin",
+            "type": "special",
+            "inputs": [
+                "4",
+                "down-forward"
+            ]
+        },
+        {
+            "id": "sp_126",
+            "name": "Jatai",
+            "type": "special",
+            "inputs": [
+                "down-forward K"
+            ]
+        },
+        {
+            "id": "sp_127",
+            "name": "Hien",
+            "type": "special",
+            "inputs": [
+                "4",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_128",
+            "name": "Hayagake-Zuki",
+            "type": "special",
+            "inputs": [
+                "press a while dashing"
+            ]
+        },
+        {
+            "id": "sp_129",
+            "name": "Shippuu Geki Kyaku",
+            "type": "special",
+            "inputs": [
+                "press K while dashing"
+            ]
+        },
+        {
+            "id": "sp_130",
+            "name": "Dokuryuu",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press",
+                "while",
+                "dashing"
+            ]
+        },
+        {
+            "id": "sp_131",
+            "name": "Souryuu",
+            "type": "special",
+            "inputs": [
+                "back",
+                "back",
+                "press",
+                "while",
+                "dashing"
+            ]
+        },
+        {
+            "id": "sp_132",
+            "name": "Starlight Shoot",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_133",
+            "name": "Air Starlight Shoot",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "back",
+                "in",
+                "[[air]]",
+                "down-forward",
+                "a",
+                "/"
+            ]
+        },
+        {
+            "id": "sp_134",
+            "name": "North Star Combo",
+            "type": "special",
+            "inputs": [
+                "back",
+                "forward",
+                "back",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_135",
+            "name": "Sokuten",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "g"
+            ]
+        },
+        {
+            "id": "sp_136",
+            "name": "Comet Kick",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_137",
+            "name": "Shine Dream (Somersault)",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_138",
+            "name": "Shine Dream (Command Attack)",
+            "type": "special",
+            "inputs": [
+                "press a shine dream (somersault)"
+            ]
+        },
+        {
+            "id": "sp_139",
+            "name": "Moonsault Kick",
+            "type": "special",
+            "inputs": [
+                "press K when facing away"
+            ]
+        },
+        {
+            "id": "sp_140",
+            "name": "Moonshine Kick",
+            "type": "special",
+            "inputs": [
+                "press kg during moonsault kick"
+            ]
+        },
+        {
+            "id": "sp_141",
+            "name": "Camel Clutch",
+            "type": "special",
+            "inputs": [
+                "2",
+                "press",
+                "ab",
+                "(enemy",
+                "face",
+                "legs",
+                "towards)"
+            ]
+        },
+        {
+            "id": "sp_142",
+            "name": "Turn Shot",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "back",
+                "(direction",
+                "depends",
+                "on",
+                "stance)"
+            ]
+        },
+        {
+            "id": "sp_143",
+            "name": "Shine Dream",
+            "type": "special",
+            "inputs": [
+                "down-forward a"
+            ]
+        },
+        {
+            "id": "sp_144",
+            "name": "Stardust Shot",
+            "type": "special",
+            "inputs": [
+                "4",
+                "down-forward"
+            ]
+        },
+        {
+            "id": "sp_145",
+            "name": "Scream Flash",
+            "type": "special",
+            "inputs": [
+                "down-forward K"
+            ]
+        },
+        {
+            "id": "sp_146",
+            "name": "Ground Gyro Shoot",
+            "type": "special",
+            "inputs": [
+                "down-back K"
+            ]
+        },
+        {
+            "id": "sp_147",
+            "name": "Prominent Kick",
+            "type": "special",
+            "inputs": [
+                "press a while dashing"
+            ]
+        },
+        {
+            "id": "sp_148",
+            "name": "Cosmo Stream",
+            "type": "special",
+            "inputs": [
+                "press K while dashing"
+            ]
+        },
+        {
+            "id": "sp_149",
+            "name": "Inu no Sambo",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "a",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_150",
+            "name": "Firecracker",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "K",
+                "([[air]])"
+            ]
+        },
+        {
+            "id": "sp_151",
+            "name": "Tapping Attack",
+            "type": "special",
+            "inputs": [
+                "back",
+                "forward",
+                "back",
+                "(direction",
+                "depends",
+                "on",
+                "stance)"
+            ]
+        },
+        {
+            "id": "sp_152",
+            "name": "Acrobat Combo",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "back",
+                "back",
+                "down-back",
+                "tap",
+                "rapidly"
+            ]
+        },
+        {
+            "id": "sp_153",
+            "name": "Sendout Sky",
+            "type": "special",
+            "inputs": [
+                "down-forward a"
+            ]
+        },
+        {
+            "id": "sp_154",
+            "name": "Roll Slash",
+            "type": "special",
+            "inputs": [
+                "4",
+                "down-forward"
+            ]
+        },
+        {
+            "id": "sp_155",
+            "name": "Sailing Hit",
+            "type": "special",
+            "inputs": [
+                "down-forward K"
+            ]
+        },
+        {
+            "id": "sp_156",
+            "name": "Firecracker",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press",
+                "a",
+                "/",
+                "while",
+                "dashing"
+            ]
+        },
+        {
+            "id": "sp_157",
+            "name": "Ground Rush",
+            "type": "special",
+            "inputs": [
+                "press K while dashing"
+            ]
+        },
+        {
+            "id": "sp_158",
+            "name": "Beam Bazooka",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "forward",
+                "down-forward",
+                "a",
+                "(down",
+                "down-forward",
+                "provocation",
+                "to",
+                "fake)"
+            ]
+        },
+        {
+            "id": "sp_159",
+            "name": "Lower Beam Bazooka",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "back",
+                "down-back",
+                "a",
+                "(down",
+                "down-back",
+                "provocation",
+                "to",
+                "fake)"
+            ]
+        },
+        {
+            "id": "sp_160",
+            "name": "Horizontal Laser",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "back",
+                "down-forward"
+            ]
+        },
+        {
+            "id": "sp_161",
+            "name": "Lower Horizontal Laser",
+            "type": "special",
+            "inputs": [
+                "down",
+                "back",
+                "back",
+                "down-back"
+            ]
+        },
+        {
+            "id": "sp_162",
+            "name": "Mad Blit",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "back",
+                "forward",
+                "down-forward",
+                "K",
+                "move",
+                "/",
+                "at",
+                "apex",
+                "of",
+                "jump"
+            ]
+        },
+        {
+            "id": "sp_163",
+            "name": "Flying Drill",
+            "type": "special",
+            "inputs": [
+                "2",
+                "K",
+                "during",
+                "mad",
+                "blit"
+            ]
+        },
+        {
+            "id": "sp_164",
+            "name": "Last Shooting",
+            "type": "special",
+            "inputs": [
+                "press a after throwing foe from behind"
+            ]
+        },
+        {
+            "id": "sp_165",
+            "name": "Vertical Laser",
+            "type": "special",
+            "inputs": [
+                "press K when facing away  (unblockable)"
+            ]
+        },
+        {
+            "id": "sp_166",
+            "name": "Back Roller Dash",
+            "type": "special",
+            "inputs": [
+                "back",
+                "back",
+                "back",
+                "tap",
+                "hold"
+            ]
+        },
+        {
+            "id": "sp_167",
+            "name": "Leg Cut",
+            "type": "special",
+            "inputs": [
+                "4",
+                "down-forward"
+            ]
+        },
+        {
+            "id": "sp_168",
+            "name": "Drill Kick",
+            "type": "special",
+            "inputs": [
+                "down-forward K"
+            ]
+        },
+        {
+            "id": "sp_169",
+            "name": "Death Express",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press",
+                "a",
+                "/",
+                "while",
+                "dashing"
+            ]
+        },
+        {
+            "id": "sp_170",
+            "name": "Sliding Drill",
+            "type": "special",
+            "inputs": [
+                "press K while dashing"
+            ]
+        },
+        {
+            "id": "sp_171",
+            "name": "Rising Blade",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "down",
+                "down-forward",
+                "a",
+                "tap",
+                "a",
+                "rapidly"
+            ]
+        },
+        {
+            "id": "sp_172",
+            "name": "Sky Destruction",
+            "type": "special",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "K"
+            ]
+        },
+        {
+            "id": "sp_173",
+            "name": "Thunder Blade",
+            "type": "special",
+            "inputs": [
+                "back",
+                "forward",
+                "back",
+                "(depends",
+                "on",
+                "flip",
+                "stance)"
+            ]
+        },
+        {
+            "id": "sp_174",
+            "name": "Thunder Wheel Combo",
+            "type": "special",
+            "inputs": [
+                "back",
+                "forward",
+                "back",
+                "K",
+                "tap",
+                "K",
+                "rapidly"
+            ]
+        },
+        {
+            "id": "sp_175",
+            "name": "Sky Javelin",
+            "type": "special",
+            "inputs": [
+                "press in any direction ak x2 ([[air]])"
+            ]
+        },
+        {
+            "id": "sp_176",
+            "name": "Blue Storm (Taunt)",
+            "type": "special",
+            "inputs": [
+                "press and hold provocation"
+            ]
+        },
+        {
+            "id": "sp_177",
+            "name": "Super Jump",
+            "type": "special",
+            "inputs": [
+                "2",
+                "tap",
+                "up-back~up-forward"
+            ]
+        },
+        {
+            "id": "sp_178",
+            "name": "Kuuchuu Nage",
+            "type": "special",
+            "inputs": [
+                "press ab when in [[air]]"
+            ]
+        },
+        {
+            "id": "sp_179",
+            "name": "Kuuchuu Fuyuu",
+            "type": "special",
+            "inputs": [
+                "tap up-back~up-forward when in [[air]]"
+            ]
+        },
+        {
+            "id": "sp_180",
+            "name": "Kuuchuu Yoko Idou",
+            "type": "special",
+            "inputs": [
+                "press g during kuuchuu fuyuu"
+            ]
+        },
+        {
+            "id": "sp_181",
+            "name": "Kuuchuu Dash",
+            "type": "special",
+            "inputs": [
+                "forward",
+                "forward",
+                "forward",
+                "tap",
+                "/",
+                "m"
+            ]
+        },
+        {
+            "id": "sp_182",
+            "name": "Kyuu Rakka",
+            "type": "special",
+            "inputs": [
+                "2",
+                "press",
+                "after",
+                "kuuchuu",
+                "fuyuu"
+            ]
+        },
+        {
+            "id": "sp_183",
+            "name": "Sky Snipe",
+            "type": "special",
+            "inputs": [
+                "4",
+                "a"
+            ]
+        },
+        {
+            "id": "sp_184",
+            "name": "Rising Blade",
+            "type": "special",
+            "inputs": [
+                "down-forward a"
+            ]
+        },
+        {
+            "id": "sp_185",
+            "name": "Sliding Blade",
+            "type": "special",
+            "inputs": [
+                "4",
+                "down-forward"
+            ]
+        },
+        {
+            "id": "sp_186",
+            "name": "Hammer Kick",
+            "type": "special",
+            "inputs": [
+                "down-forward K"
+            ]
+        },
+        {
+            "id": "sp_187",
+            "name": "Dash Thunder Blade",
+            "type": "special",
+            "inputs": [
+                "4",
+                "press",
+                "a",
+                "/",
+                "while",
+                "dashing"
+            ]
+        },
+        {
+            "id": "sp_188",
+            "name": "Spring Missile",
+            "type": "special",
+            "inputs": [
+                "press K while dashing"
+            ]
+        },
+        {
+            "id": "sup_0",
+            "name": "Dark Vortex: End",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_1",
+            "name": "Nightmare Blaze",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_2",
+            "name": "Gigantic Explosion",
+            "type": "super",
+            "inputs": [
+                "down",
+                "down",
+                "ab",
+                "(requires",
+                "3",
+                "levels)"
+            ]
+        },
+        {
+            "id": "sup_3",
+            "name": "Deadly Break",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_4",
+            "name": "Nightmare Blaze",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_5",
+            "name": "Gigantic Explosion",
+            "type": "super",
+            "inputs": [
+                "down",
+                "down",
+                "ab",
+                "(requires",
+                "3",
+                "levels)"
+            ]
+        },
+        {
+            "id": "sup_6",
+            "name": "Rising Tornado",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_7",
+            "name": "Bloody Blade",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_8",
+            "name": "Murderous Vulcan",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_9",
+            "name": "Darkness Arm",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_10",
+            "name": "Super Gamo Tornado",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_11",
+            "name": "Plasma Giant Swing",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_12",
+            "name": "Flying Gantetsu Buster",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_13",
+            "name": "Spiral End",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_14",
+            "name": "Final Ecstasy",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab",
+                "tap",
+                "a",
+                "rapidly"
+            ]
+        },
+        {
+            "id": "sup_15",
+            "name": "Thousand Burst",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_16",
+            "name": "Scarlet Del Sol",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_17",
+            "name": "Ryuusei Shourai",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab",
+                "(hold",
+                "provocation",
+                "for",
+                "big",
+                "head)"
+            ]
+        },
+        {
+            "id": "sup_18",
+            "name": "Ankoku Kyuuin",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab",
+                "(hold",
+                "provocation",
+                "for",
+                "big",
+                "head)"
+            ]
+        },
+        {
+            "id": "sup_19",
+            "name": "Ganseki Houraku",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_20",
+            "name": "Goku'en Shoukyaku",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down",
+                "up",
+                "down-back",
+                "ab",
+                "direct",
+                "/"
+            ]
+        },
+        {
+            "id": "sup_21",
+            "name": "Engetsu",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_22",
+            "name": "Rasetsu Zan",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_23",
+            "name": "Guren Tenpa",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_24",
+            "name": "Kegon",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_25",
+            "name": "Big Bang",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_26",
+            "name": "Happy Black Hole",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab",
+                "(changes",
+                "when",
+                "used",
+                "as",
+                "anti-[[air]])"
+            ]
+        },
+        {
+            "id": "sup_27",
+            "name": "Shooting Star",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_28",
+            "name": "Meteor Step",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_29",
+            "name": "Infinity Yo-yo",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_30",
+            "name": "Dance With Me",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_31",
+            "name": "Trick Superball",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_32",
+            "name": "Rolling My Way",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_33",
+            "name": "Mega Horizontal Laser",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_34",
+            "name": "Satellite Shoot",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_35",
+            "name": "Omega Shockwave",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_36",
+            "name": "Mad Spin Burst",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab"
+            ]
+        },
+        {
+            "id": "sup_37",
+            "name": "Crimson Phoenix",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab",
+                "([[air]])"
+            ]
+        },
+        {
+            "id": "sup_38",
+            "name": "Blue Storm",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab",
+                "([[air]])"
+            ]
+        },
+        {
+            "id": "sup_39",
+            "name": "Kaiser Sky Destruction",
+            "type": "super",
+            "inputs": [
+                "down",
+                "forward",
+                "down-forward",
+                "ab",
+                "([[air]])"
+            ]
+        },
+        {
+            "id": "sup_40",
+            "name": "Judgment Phaser",
+            "type": "super",
+            "inputs": [
+                "down",
+                "back",
+                "down-back",
+                "ab",
+                "([[air]])"
+            ]
+        }
+    ],
+    "combosList": []
+}

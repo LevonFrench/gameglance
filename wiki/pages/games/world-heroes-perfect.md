@@ -1,21 +1,22 @@
 ---
 title: "World Heroes Perfect"
 type: game
-tags: [world-heroes-perfect, snk]
-games: [world-heroes-perfect]
+tags: [world-heroes-perfect]
 created: 2026-04-15
 updated: 2026-04-15
-sources: 1
+sources: 0
 ---
 
 # World Heroes Perfect
 
-A classic fighting game by SNK.
+## Overview
+*No overview generated yet.*
 
-## Roster (1 characters)
+## Characters (1 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
-Hanzo
+## Mechanics
+*No mechanics mapped.*
 
-## Data Source
-
-Character data: `public/data/world-heroes-perfect/{character}.json` — parsed from `neogeo_remaining_fighters.json`.
+## Meta
+*No meta/tier lists loaded.*
