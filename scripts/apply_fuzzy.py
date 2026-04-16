@@ -105,21 +105,40 @@ for file in os.listdir('faqs/old'):
     if not game_title: game_title = file.replace('.json', '')
     game_title = str(game_title).replace('_', ' ')
     
-    roster = data.get('roster', data.get('characters', data.get('fighters', [])))
+    def get_ci(d, keys, default=None):
+        keys = [str(k).lower() for k in keys]
+        for k, v in d.items():
+            if str(k).lower() in keys: return v
+        return default
+    roster = get_ci(data, ['roster', 'characters', 'fighters', 'character'], [])
+    game_title = get_ci(data.get('game_metadata', {}), ['title'],
+                 get_ci(data, ['game_title', 'title', 'game'], file.replace('.json', '')))
+
     if isinstance(roster, dict):
         roster = [{'character': k, **v} for k,v in roster.items() if isinstance(v, dict)]
     if not isinstance(roster, list): continue
     
     for char in roster:
         if not isinstance(char, dict): continue
-        cname = char.get('character', char.get('name', char.get('character_name', '')))
+        cname = get_ci(char, ['character', 'name', 'character_name'], '')
         if not cname: continue
         
         moves = []
-        if isinstance(char.get('moves'), list): moves.extend(char['moves'])
-        if isinstance(char.get('movesList'), list): moves.extend(char['movesList'])
+        for k, v in char.items():
+            if str(k).lower() in ['moves', 'moveslist', 'move_list', 'specialmoves', 'commandmoves']:
+                if isinstance(v, list):
+                    for m in v:
+                        moves.append({
+                            'name': get_ci(m, ['name', 'move_name'], ''),
+                            'input': get_ci(m, ['input', 'numpad_input', 'command'], ''),
+                            'type': get_ci(m, ['type', 'move_type'], 'common').lower()
+                        })
+        if isinstance(char.get('moves'), list):
+            pass # already handled
+        if isinstance(char.get('movesList'), list):
+            pass # already handled
         if isinstance(char.get('move_list'), list):
-            for m in char['move_list']:
+            for m in []:
                 moves.append({
                     'name': m.get('move_name', ''),
                     'input': m.get('numpad_input', m.get('input', m.get('command', ''))),
