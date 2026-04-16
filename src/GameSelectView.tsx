@@ -93,6 +93,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
   const [developerFilter, setDeveloperFilter] = useState<string>('All');
   const [sortBy, setSortBy] = useState<'alpha' | 'date'>('date');
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [showCards, setShowCards] = useState(false);
   const { theme } = useTheme();
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
   
@@ -218,22 +219,61 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
 
         {/* Controls Container */}
         <div style={{
-          display: 'flex',
+          display: 'grid',
+          gridTemplateColumns: '1fr minmax(250px, 2fr) 1fr',
           gap: '1rem',
-          justifyContent: 'center',
-          flexWrap: 'wrap',
           maxWidth: '800px',
           margin: '0 auto',
+          alignItems: 'center',
         }}>
+
+          {/* Platform / Developer Pill */}
+          <select
+            value={developerFilter}
+            onChange={(e) => {
+              setDeveloperFilter(e.target.value);
+              setShowCards(true);
+            }}
+            style={{
+              padding: '0.6rem 1.25rem',
+              borderRadius: 'var(--radius-full)',
+              border: '1px solid var(--border-subtle)',
+              background: 'var(--bg-glass)',
+              color: 'var(--text-primary)',
+              fontSize: '0.9rem',
+              fontWeight: 600,
+              cursor: 'pointer',
+              outline: 'none',
+              backdropFilter: 'blur(12px)',
+              transition: 'all 0.3s ease',
+              appearance: 'none',
+              WebkitAppearance: 'none',
+              MozAppearance: 'none',
+              textAlign: 'center',
+              textAlignLast: 'center',
+              width: '100%',
+            }}
+          >
+            {allDevelopers.map(dev => (
+              <option key={dev} value={dev} style={{ background: 'var(--bg-card)', color: 'var(--text-primary)' }}>
+                {dev === 'All' ? 'All Platforms' : dev}
+              </option>
+            ))}
+          </select>
+
           {/* Search Pill */}
-          <div style={{ position: 'relative' }}>
+          <div style={{ position: 'relative', width: '100%' }}>
             <input
               type="text"
               list="game-search-list"
               placeholder="Search games..."
               value={searchQuery}
-              onChange={(e) => setSearchQuery(e.target.value)}
+              onChange={(e) => {
+                setSearchQuery(e.target.value);
+                setShowCards(true);
+              }}
               style={{
+                width: '100%',
                 padding: '0.6rem 1.25rem',
                 borderRadius: 'var(--radius-full)',
                 border: '1px solid var(--border-subtle)',
@@ -242,11 +282,15 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
                 fontSize: '0.9rem',
                 fontWeight: 600,
                 outline: 'none',
-                minWidth: '220px',
                 backdropFilter: 'blur(12px)',
                 transition: 'all 0.3s ease',
+                textAlign: 'center',
+                boxSizing: 'border-box',
               }}
-              onFocus={(e) => e.target.style.borderColor = 'var(--accent-indigo)'}
+              onFocus={(e) => {
+                 e.target.style.borderColor = 'var(--accent-indigo)';
+                 setShowCards(true);
+              }}
               onBlur={(e) => e.target.style.borderColor = 'var(--border-subtle)'}
             />
             <datalist id="game-search-list">
@@ -283,7 +327,10 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
           {/* Sort Pill */}
           <select
             value={sortBy}
-            onChange={(e) => setSortBy(e.target.value as 'alpha' | 'date')}
+            onChange={(e) => {
+              setSortBy(e.target.value as 'alpha' | 'date');
+              setShowCards(true);
+            }}
             style={{
               padding: '0.6rem 1.25rem',
               borderRadius: 'var(--radius-full)',
@@ -297,6 +344,11 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
               backdropFilter: 'blur(12px)',
               transition: 'all 0.3s ease',
               appearance: 'none',
+              WebkitAppearance: 'none',
+              MozAppearance: 'none',
+              textAlign: 'center',
+              textAlignLast: 'center',
+              width: '100%',
             }}
           >
             <option value="date" style={{ background: 'var(--bg-card)', color: 'var(--text-primary)' }}>Sort: Date</option>
@@ -314,7 +366,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
         width: '100%',
         margin: '0 auto',
       }}>
-        {filteredAndSortedGames.map((game, index) => {
+        {showCards && filteredAndSortedGames.map((game, index) => {
           const theme = getGameTheme(game);
           const isFavorite = favorites.includes(game.id);
           return (
