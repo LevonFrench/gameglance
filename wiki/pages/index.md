@@ -20,11 +20,12 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ---
 
-## 🎮 Games (140)
+## 🎮 Games (141)
 
 ### Complete Roster
 | Page | Game | Characters |
 |------|------|-----------|
+| [[art-of-fighting-2]] | Art of Fighting 2 | 0 |
 | [[art-of-fighting]] | Art of Fighting | 1 |
 | [[art-of-fighting-3-the-path-of-the-warrior]] | Art of Fighting 3: The Path of the Warrior | 1 |
 | [[astra-superstars]] | Astra Superstars | 3 |
@@ -212,6 +213,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ## Statistics
 
-- **Total pages**: 142 (140 games)
-- **Games covered**: 140
+- **Total pages**: 143 (141 games)
+- **Games covered**: 141
 - **Last updated**: 2026-04-15

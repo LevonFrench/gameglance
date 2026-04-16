@@ -2,6 +2,13 @@ import type { GameDefinition } from './types';
 
 export const SUPPORTED_GAMES: GameDefinition[] = [
   {
+    id: 'art-of-fighting-2',
+    name: 'Art of Fighting 2',
+    developer: 'SNK',
+    releaseYear: 1994
+  },
+
+  {
     id: 'art-of-fighting',
     name: "Art of Fighting",
     developer: "SNK",
