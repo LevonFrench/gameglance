@@ -20,7 +20,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ---
 
-## 🎮 Games (156)
+## 🎮 Games (157)
 
 ### Complete Roster
 | Page | Game | Characters |
@@ -122,12 +122,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[the-king-of-fighters-2002]] | The King of Fighters 2002 | 0 |
 | [[the-king-of-fighters-2003]] | The King of Fighters 2003 | 0 |
 | [[the-king-of-fighters-94]] | The King of Fighters '94 | 0 |
-| [[the-king-of-fighters-95]] | The King of Fighters 2002 | 0 |
-| [[the-king-of-fighters-96]] | The King of Fighters '96 | 0 |
-| [[the-king-of-fighters-97]] | The King of Fighters '97 | 0 |
-| [[the-king-of-fighters-98]] | The King of Fighters '98 | 0 |
-| [[the-king-of-fighters-98-ultimate-match]] | The King of Fighters '98 Ultimate Match | 0 |
-| [[the-king-of-fighters-99]] | The King of Fighters '99 | 0 |
 | [[the-king-of-fighters-xiii]] | The King of Fighters XIII | 0 |
 | [[the-king-of-fighters-xiv]] | The King of Fighters XIV | 0 |
 | [[the-king-of-fighters-xv]] | The King of Fighters XV | 0 |
@@ -181,6 +175,13 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[kasumi-ninja]] | Kasumi Ninja | 0 |
 | [[tao-feng-fist-of-the-lotus]] | Tao Feng: Fist of the Lotus | 0 |
 | [[way-of-the-warrior]] | Way of the Warrior | 0 |
+| [[bio-f.r.e.a.k.s.]] | Bio F.R.E.A.K.S. | 0 |
+| [[fatal-fury-wild-ambition]] | Fatal Fury: Wild Ambition | 14 |
+| [[fighters-impact]] | Fighters | 0 |
+| [[heavens-gate]] | Heaven | 0 |
+| [[tobal-2]] | Tobal 2 | 0 |
+| [[ultraman-fighting-evolution]] | Ultraman Fighting Evolution | 0 |
+| [[war-gods]] | War Gods | 0 |
 
 ---
 
@@ -228,6 +229,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ## Statistics
 
-- **Total pages**: 158 (156 games)
-- **Games covered**: 156
+- **Total pages**: 159 (157 games)
+- **Games covered**: 157
 - **Last updated**: 2026-04-16
