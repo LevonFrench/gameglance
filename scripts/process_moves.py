@@ -115,7 +115,8 @@ def main():
             
             # append to games.ts statically
             char_list_entries = []
-            for roster_char in data.get('roster', []):
+            roster_source = data.get('roster', []) or data.get('characters', []) or data.get('characterList', []) or []
+            for roster_char in roster_source:
                 cname_new = roster_char.get('character') or roster_char.get('name', 'Unknown')
                 cid_new = clean_id(cname_new)
                 char_list_entries.append(f"      {{ id: '{cid_new}', name: '{cname_new.replace(chr(39), chr(92)+chr(39))}' }}")
@@ -147,8 +148,10 @@ def main():
         game_folder = f"public/data/{gid}"
         os.makedirs(game_folder, exist_ok=True)
         
+        roster_list = data.get('roster', []) or data.get('characters', []) or data.get('characterList', []) or []
+        
         # map characters
-        for roster_char in data.get('roster', []):
+        for roster_char in roster_list:
             cname = roster_char.get('character') or roster_char.get('name', 'Unknown')
             # fuzzy match against expected characters
             matched_cid = None
