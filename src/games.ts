@@ -280,13 +280,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   
-  {
-    id: 'cfj',
-    name: "Capcom Fighting Jam",
-    developer: "Capcom",
-    releaseYear: 2004,
-    characters: [
-      { id: 'alex-(sf3-style)', name: 'Alex (SF3 Style)' },
+  
       { id: 'alex-(street-fighter-iii-style)', name: 'Alex (Street Fighter III Style)' },
       { id: 'alex', name: 'ALEX' },
       { id: 'anakaris-(darkstalkers-style)', name: 'Anakaris (Darkstalkers Style)' },
@@ -590,13 +584,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   
-  {
-    id: 'darkstalkers',
-    name: "Darkstalkers: The Night Warriors",
-    developer: "Capcom",
-    releaseYear: 1994,
-    characters: [
-      { id: 'anakaris', name: 'ANAKARIS' },
+  
       { id: 'bishamon', name: 'BISHAMON' },
       { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
       { id: 'demitri-maximov', name: 'DEMITRI MAXIMOV' },
@@ -1155,7 +1143,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'mk1',
-    name: "mk1",
+    name: "Mortal Kombat 1",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -1166,7 +1154,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'mk2',
-    name: "Mk2",
+    name: "Mortal Kombat II",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -1261,7 +1249,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'mvc2',
-    name: "Mvc2",
+    name: "Marvel vs. Capcom 2",
     developer: "SNK",
     releaseYear: 2000,
     characters: [
@@ -1289,13 +1277,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   
-  {
-    id: 'mvci',
-    name: "Marvel vs. Capcom: Infinite",
-    developer: "Capcom",
-    releaseYear: 1998,
-    characters: [
-      { id: 'captain-marvel', name: 'Captain Marvel' },
+  
       { id: 'iron-man', name: 'Iron Man' },
       { id: 'mega-man-x', name: 'Mega Man X' },
       { id: 'morrigan', name: 'Morrigan' },
@@ -1318,13 +1300,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   
-  {
-    id: 'nightwarriors',
-    name: "Night Warriors: Darkstalkers",
-    developer: "Capcom",
-    releaseYear: 1998,
-    characters: [
-      { id: 'anakaris', name: 'ANAKARIS' },
+  
       { id: 'automatic-(auto)-mode', name: 'AUTOMATIC (AUTO) MODE' },
       { id: 'bishamon', name: 'BISHAMON' },
       { id: 'blocking', name: 'BLOCKING' },
@@ -1580,13 +1556,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   
-  {
-    id: 'roster',
-    name: "roster",
-    developer: "SNK",
-    releaseYear: 1998,
-    characters: [
-      { id: 'akari-ichijou', name: 'Akari Ichijou' },
+  
       { id: 'akari', name: 'Akari' },
       { id: 'amakusa', name: 'Amakusa' },
       { id: 'amano', name: 'Amano' },
@@ -1771,13 +1741,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   
-  {
-    id: 'roster_highlights',
-    name: "roster_highlights",
-    developer: "SNK",
-    releaseYear: 1998,
-    characters: [
-      { id: 'adelheid-bernstein-(boss)', name: 'Adelheid Bernstein (Boss)' },
+  
       { id: 'angel', name: 'Angel' },
       { id: 'ash-crimson', name: 'Ash Crimson' },
       { id: 'chris', name: 'Chris' },
@@ -1890,13 +1854,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   
-  {
-    id: 'sf2',
-    name: "Super Street Fighter II Turbo",
-    developer: "Capcom",
-    releaseYear: 1991,
-    characters: [
-      { id: 'akuma', name: 'Akuma' },
+  
       { id: 'alex', name: 'Alex' },
       { id: 'balrog', name: 'Balrog' },
       { id: 'blanka', name: 'Blanka' },
@@ -1979,13 +1937,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   
-  {
-    id: 'sf6',
-    name: "Street Fighter 6",
-    developer: "Capcom",
-    releaseYear: 2023,
-    characters: [
-      { id: 'aki', name: 'A.K.I.' },
+  
       { id: 'akuma', name: 'Akuma' },
       { id: 'blanka', name: 'Blanka' },
       { id: 'cammy', name: 'Cammy' },
@@ -2046,13 +1998,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   
-  {
-    id: 'sfa3',
-    name: "Street Fighter Alpha 3",
-    developer: "Capcom",
-    releaseYear: 1998,
-    characters: [
-      { id: 'adon', name: 'Adon' },
+  
       { id: 'akuma-(gouki)', name: 'Akuma (Gouki)' },
       { id: 'akuma', name: 'Akuma' },
       { id: 'arcade', name: 'Arcade' },
@@ -2308,7 +2254,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 't8',
-    name: "t8",
+    name: "Tekken 8",
     developer: "SNK",
     releaseYear: 2024,
     characters: [
@@ -2417,7 +2363,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'the-king-of-fighters-94',
-    name: "The King of Fighters ",
+    name: "The King of Fighters '94",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2428,7 +2374,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'the-king-of-fighters-95',
-    name: "The King of Fighters ",
+    name: "The King of Fighters '95",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2439,7 +2385,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'the-king-of-fighters-96',
-    name: "The King of Fighters ",
+    name: "The King of Fighters '96",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2450,7 +2396,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'the-king-of-fighters-97',
-    name: "The King of Fighters ",
+    name: "The King of Fighters '97",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2461,7 +2407,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'the-king-of-fighters-98',
-    name: "The King of Fighters ",
+    name: "The King of Fighters '98",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2472,7 +2418,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'the-king-of-fighters-98-ultimate-match',
-    name: "The King of Fighters ",
+    name: "The King of Fighters '98 Ultimate Match",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2490,7 +2436,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'the-king-of-fighters-99',
-    name: "The King of Fighters ",
+    name: "The King of Fighters '99",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2562,7 +2508,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'toshinden3',
-    name: "Toshinden3",
+    name: "Battle Arena Toshinden 3",
     developer: "Tamsoft",
     releaseYear: 1998,
     characters: [
@@ -2642,13 +2588,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   
-  {
-    id: 'umvc3',
-    name: "Ultimate Marvel vs. Capcom 3",
-    developer: "Capcom",
-    releaseYear: 1998,
-    characters: [
-      { id: 'dante', name: 'Dante' },
+  
       { id: 'doctor-doom', name: 'Doctor Doom' },
       { id: 'magneto', name: 'Magneto' },
       { id: 'sentinel', name: 'Sentinel' },
@@ -2814,7 +2754,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'vf2',
-    name: "Vf2",
+    name: "Virtua Fighter 2",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2834,7 +2774,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'vf3',
-    name: "Vf3",
+    name: "Virtua Fighter 3",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2852,7 +2792,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'vf4',
-    name: "Vf4",
+    name: "Virtua Fighter 4",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2930,13 +2870,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   
-  {
-    id: 'xmcoa',
-    name: "Xmcoa",
-    developer: "SNK",
-    releaseYear: 1998,
-    characters: [
-      { id: 'colossus', name: 'Colossus' },
+  
       { id: 'cyclops', name: 'Cyclops' },
       { id: 'psylocke', name: 'Psylocke' },
       { id: 'wolverine', name: 'Wolverine' }

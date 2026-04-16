@@ -1,0 +1,142 @@
+# Complete FGC Game Registry
+
+- Art of Fighting
+- Art of Fighting 3: The Path of the Warrior
+- Astra Superstars
+- Asuka 120% Burning Fest Limited
+- Battle Arena Toshinden 3
+- BlazBlue: Central Fiction
+- BlazBlue: Cross Tag Battle
+- Bloody Roar
+- Bloody Roar 2: Bringer of the New Age
+- Bloody Roar 3
+- Bloody Roar 4
+- Bloody Roar: Primal Fury / Extreme
+- Breakers Revenge
+- Capcom Fighting Jam
+- Capcom Fighting Jam (Capcom Fighting Evolution)
+- Capcom vs SNK 2
+- Capcom vs. SNK
+- Capcom vs. SNK 2: Mark of the Millennium 2001
+- Capcom vs. SNK: Millennium Fight 2000
+- Capcom vs. SNK: Millennium Fight 2000 Pro
+- Cyberbots
+- Cyberbots: Full Metal Madness
+- Darkstalkers: The Night Warriors
+- Darkstalkers: The Night Warriors (Vampire: The Night Warriors)
+- Dead or Alive
+- Dead or Alive 2
+- Dead or Alive 3
+- Dead or Alive 4
+- Dead or Alive 5
+- Dead or Alive 6 - Complete Move List (Exhaustive)
+- DNF Duel
+- Dragon Ball FighterZ
+- Fatal Fury 2
+- Fatal Fury 3: Road to the Final Victory
+- Fatal Fury Special
+- Fatal Fury: City of the Wolves
+- Fatal Fury: King of Fighters
+- Fighters Megamix
+- Fighting EX Layer
+- Fighting Vipers
+- Fighting Vipers 2
+- Galaxy Fight: Universal Warriors
+- Garou: Mark of the Wolves
+- Golden Axe: The Duel
+- Granblue Fantasy Versus: Rising
+- Groove on Fight
+- Guilty Gear (1998)
+- Guilty Gear -Strive- (Ver. 2.00)
+- Guilty Gear X
+- Guilty Gear Xrd REV 2
+- Guilty Gear XX Accent Core Plus R
+- Hyper Street Fighter II
+- Killer Instinct (1994)
+- Killer Instinct (2013)
+- Killer Instinct 2 / Gold
+- Kizuna Encounter: Super Tag Battle
+- Last Bronx
+- Marvel Super Heroes
+- Marvel Super Heroes vs. Street Fighter
+- Marvel vs. Capcom 2
+- Marvel vs. Capcom: Clash of Super Heroes
+- Marvel vs. Capcom: Infinite
+- Matrimelee (Power Instinct Matrimelee)
+- Mortal Kombat (2011)
+- Mortal Kombat 1
+- Mortal Kombat II
+- Mortal Kombat X
+- Mortal Kombat: Deception
+- Night Warriors: Darkstalkers
+- Ninja Master
+- Persona 4 Arena Ultimax
+- Plasma Sword
+- Plasma Sword: Nightmare of Bilstein
+- Pocket Fighter
+- Pocket Fighter (Super Gem Fighter Mini Mix)
+- Project Justice
+- Project Justice (Rival Schools 2)
+- Rage of the Dragons
+- Real Bout Fatal Fury
+- Real Bout Fatal Fury 2: The Newcomers
+- Real Bout Fatal Fury Special
+- Samurai Shodown
+- Samurai Shodown (2019)
+- Samurai Shodown II
+- Samurai Shodown III: Blades of Blood
+- Samurai Shodown IV: Amakusa
+- Samurai Shodown V
+- Samurai Shodown V Special
+- SNK Heroines: Tag Team Frenzy
+- SNK vs. Capcom: SVC Chaos
+- Street Fighter 6
+- Street Fighter Alpha 1
+- Street Fighter Alpha 2
+- Street Fighter Alpha 3
+- Street Fighter EX3
+- Street Fighter III: 2nd Impact - Giant Attack
+- Street Fighter III: 3rd Strike
+- Street Fighter III: 3rd Strike - Fight for the Future
+- Street Fighter III: New Generation
+- Street Fighter V: Champion Edition
+- Super Street Fighter II Turbo
+- Super Street Fighter II: The New Challengers
+- Tatsunoko vs. Capcom: Ultimate All-Stars
+- Tekken 8
+- The King of Fighters '94
+- The King of Fighters '95
+- The King of Fighters '96
+- The King of Fighters '97
+- The King of Fighters '98
+- The King of Fighters '98 Ultimate Match
+- The King of Fighters '99
+- The King of Fighters 2000
+- The King of Fighters 2001
+- The King of Fighters 2002
+- The King of Fighters 2003
+- The King of Fighters XIII
+- The King of Fighters XIV
+- The King of Fighters XV
+- The Last Blade
+- The Last Blade 2
+- Ultimate Marvel vs. Capcom 3
+- Ultimate Mortal Kombat 3
+- Ultra Street Fighter IV
+- Under Night In-Birth II [Sys:Celes]
+- Vampire Hunter 2
+- Vampire Hunter 2: Darkstalkers
+- Vampire Savior
+- Vampire Savior 2
+- Vampire Savior 2: The Lord of Vampire
+- Vampire Savior: The Lord of Vampire
+- Virtua Fighter
+- Virtua Fighter 1 - Complete Move List (Exhaustive)
+- Virtua Fighter 2
+- Virtua Fighter 3
+- Virtua Fighter 4
+- Virtua Fighter 5 Ultimate Showdown - Complete Move List (Exhaustive)
+- Waku Waku 7
+- World Heroes Perfect
+- X-Men vs. Street Fighter
+- X-Men: Children of the Atom
