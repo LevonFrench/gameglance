@@ -1,25 +1,27 @@
 {
-  "game": "Guilty Gear XX Accent Core Plus R",
+  "name": "Johnny",
   "character": "Johnny",
+  "game": "Guilty Gear XX Accent Core Plus R",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
-      "inputs": [
-        "P"
-      ]
+      "name": "Mist Finer",
+      "input": "214P / K / S",
+      "type": "special"
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
-      "type": "special",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "P"
-      ]
+      "name": "Bacchus Sigh",
+      "input": "214P (during Mist Finer)",
+      "type": "follow-up"
+    },
+    {
+      "name": "Glitter Is Gold",
+      "input": "236HS",
+      "type": "special"
+    },
+    {
+      "name": "That's My Name",
+      "input": "632146HS",
+      "type": "overdrive"
     }
   ]
 }
