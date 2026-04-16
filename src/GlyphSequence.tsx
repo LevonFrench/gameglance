@@ -28,7 +28,7 @@ const tokenizeInputs = (inputs: string[]): string[] => {
       continue;
     }
     const tokens = raw.split(/(\+| |,|~|\[Cancel\]|-|\/)/g).filter(Boolean);
-    for (let t of tokens) {
+    for (const t of tokens) {
       if (t === ' ') { result.push('[Cancel]'); continue; }
       if (t === ',') { result.push('[Cancel]'); continue; }
       if (t === '-') { result.push('[Cancel]'); continue; }

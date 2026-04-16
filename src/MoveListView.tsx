@@ -600,7 +600,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         ) : (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
             {orderedTabs.map(tab => {
-              let baseList = TAB_FILTER[tab] ? TAB_FILTER[tab](characterData) : (characterData.movesList || []);
+              const baseList = TAB_FILTER[tab] ? TAB_FILTER[tab](characterData) : (characterData.movesList || []);
               
               const displayList = searchQuery.trim() ? baseList.filter(m => m.name.toLowerCase().includes(searchQuery.toLowerCase())) : baseList;
               
