@@ -7,7 +7,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     developer: 'SNK',
     releaseYear: 1994
   },
-
   {
     id: 'art-of-fighting',
     name: "Art of Fighting",
@@ -18,7 +17,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'art-of-fighting-3-the-path-of-the-warrior',
     name: "Art of Fighting 3: The Path of the Warrior",
@@ -29,7 +27,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'astra-superstars',
     name: "Astra Superstars",
@@ -42,7 +39,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'asuka-120%-burning-fest-limited',
     name: "Asuka 120% Burning Fest Limited",
@@ -56,7 +52,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'blazblue-central-fiction',
     name: "BlazBlue: Central Fiction",
@@ -69,7 +64,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'blazblue-cross-tag-battle',
     name: "BlazBlue: Cross Tag Battle",
@@ -80,7 +74,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'bloody-roar',
     name: "Bloody Roar",
@@ -94,7 +87,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'bloody-roar-2-bringer-of-the-new-age',
     name: "Bloody Roar 2: Bringer of the New Age",
@@ -108,7 +100,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'bloody-roar-3',
     name: "Bloody Roar 3",
@@ -120,7 +111,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'bloody-roar-4',
     name: "Bloody Roar 4",
@@ -131,7 +121,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'bloody-roar-primal-fury--extreme',
     name: "Bloody Roar: Primal Fury / Extreme",
@@ -142,7 +131,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'breakers-revenge',
     name: "Breakers Revenge",
@@ -153,7 +141,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'capcom-fighting-jam',
     name: "Capcom Fighting Jam",
@@ -169,7 +156,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'capcom-fighting-jam-(capcom-fighting-evolution)',
     name: "Capcom Fighting Jam (Capcom Fighting Evolution)",
@@ -203,7 +189,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'capcom-vs-snk-2-mark-of-the-millennium-2001',
     name: "Capcom vs. SNK 2: Mark of the Millennium 2001",
@@ -229,7 +214,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'capcom-vs-snk-millennium-fight-2000',
     name: "Capcom vs. SNK: Millennium Fight 2000",
@@ -244,7 +228,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'capcom-vs-snk-millennium-fight-2000-pro',
     name: "Capcom vs. SNK: Millennium Fight 2000 Pro",
@@ -286,73 +269,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
-  
-      { id: 'alex-(street-fighter-iii-style)', name: 'Alex (Street Fighter III Style)' },
-      { id: 'alex', name: 'ALEX' },
-      { id: 'anakaris-(darkstalkers-style)', name: 'Anakaris (Darkstalkers Style)' },
-      { id: 'anakaris', name: 'ANAKARIS' },
-      { id: 'chun-li-(street-fighter-iii-style)', name: 'Chun-Li (Street Fighter III Style)' },
-      { id: 'classic-character-themes', name: 'CLASSIC CHARACTER THEMES' },
-      { id: 'demitri-(darkstalkers-style)', name: 'Demitri (Darkstalkers Style)' },
-      { id: 'demitri-maximoff-(darkstalkers-style)', name: 'Demitri Maximoff (Darkstalkers Style)' },
-      { id: 'demitri', name: 'DEMITRI' },
-      { id: 'felicia-(darkstalkers-style)', name: 'Felicia (Darkstalkers Style)' },
-      { id: 'felicia', name: 'FELICIA' },
-      { id: 'fight-ingrid', name: 'FIGHT INGRID' },
-      { id: 'fight_ingrid', name: 'FIGHT INGRID' },
-      { id: 'guile-(street-fighter-ii-style)', name: 'Guile (Street Fighter II Style)' },
-      { id: 'guile', name: 'GUILE' },
-      { id: 'guy-(alpha-style)', name: 'Guy (Alpha Style)' },
-      { id: 'guy-(street-fighter-alpha-style)', name: 'Guy (Street Fighter Alpha Style)' },
-      { id: 'guy', name: 'GUY' },
-      { id: 'hauzer-(red-earth-style)', name: 'Hauzer (Red Earth Style)' },
-      { id: 'hauzer', name: 'HAUZER' },
-      { id: 'hydron-(nool)-(red-earth-style)', name: 'Hydron (Nool) (Red Earth Style)' },
-      { id: 'ingrid', name: 'INGRID' },
-      { id: 'jedah-dohma-(darkstalkers-style)', name: 'Jedah Dohma (Darkstalkers Style)' },
-      { id: 'jedah', name: 'JEDAH' },
-      { id: 'karin-kanzuki-(street-fighter-alpha-style)', name: 'Karin Kanzuki (Street Fighter Alpha Style)' },
-      { id: 'karin', name: 'KARIN' },
-      { id: 'kenji-(mukuro)-(red-earth-style)', name: 'Kenji (Mukuro) (Red Earth Style)' },
-      { id: 'leo-(red-earth-style)', name: 'Leo (Red Earth Style)' },
-      { id: 'leo', name: 'LEO' },
-      { id: 'm-bison-(vega)-(street-fighter-ii-style)', name: 'M. Bison (Vega) (Street Fighter II Style)' },
-      { id: 'mukuro-(kenji)', name: 'MUKURO (KENJI)' },
-      { id: 'mukuro_kenji', name: 'MUKURO (KENJI)' },
-      { id: 'nool-(hydron)', name: 'NOOL (HYDRON)' },
-      { id: 'nool_hydron', name: 'NOOL (HYDRON)' },
-      { id: 'pyron', name: 'PYRON' },
-      { id: 'rolento-f-schugerg-(street-fighter-alpha-style)', name: 'Rolento F. Schugerg (Street Fighter Alpha Style)' },
-      { id: 'rose-(street-fighter-alpha-style)', name: 'Rose (Street Fighter Alpha Style)' },
-      { id: 'rose', name: 'ROSE' },
-      { id: 'ryu-(sf2-style)', name: 'Ryu (SF2 Style)' },
-      { id: 'ryu-(street-fighter-ii-style)', name: 'Ryu (Street Fighter II Style)' },
-      { id: 'ryu', name: 'RYU' },
-      { id: 'sakura-kasugano-(street-fighter-alpha-style)', name: 'Sakura Kasugano (Street Fighter Alpha Style)' },
-      { id: 'sakura', name: 'SAKURA' },
-      { id: 'shin-akuma', name: 'Shin Akuma' },
-      { id: 'street-fighter-ii', name: 'STREET FIGHTER II' },
-      { id: 'street-fighter-iii', name: 'STREET FIGHTER III' },
-      { id: 'street-fighter-zero-(alpha)', name: 'STREET FIGHTER ZERO (ALPHA)' },
-      { id: 'street_fighter_ii', name: 'STREET FIGHTER II' },
-      { id: 'street_fighter_iii', name: 'STREET FIGHTER III' },
-      { id: 'street_fighter_zero_alpha', name: 'STREET FIGHTER ZERO (ALPHA)' },
-      { id: 'unlock-pyron', name: 'UNLOCK PYRON' },
-      { id: 'urien-(street-fighter-iii-style)', name: 'Urien (Street Fighter III Style)' },
-      { id: 'urien', name: 'URIEN' },
-      { id: 'vampire-(darkstalkers)', name: 'VAMPIRE (DARKSTALKERS)' },
-      { id: 'vampire_darkstalkers', name: 'VAMPIRE (DARKSTALKERS)' },
-      { id: 'warzard-(red-earth)', name: 'WARZARD (RED EARTH)' },
-      { id: 'warzard_red_earth', name: 'WARZARD (RED EARTH)' },
-      { id: 'yun-(street-fighter-iii-style)', name: 'Yun (Street Fighter III Style)' },
-      { id: 'yun', name: 'YUN' },
-      { id: 'zangief-(street-fighter-ii-style)', name: 'Zangief (Street Fighter II Style)' },
-      { id: 'zangief', name: 'ZANGIEF' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
   {
     id: 'cota',
     name: "X-Men: Children of the Atom",
@@ -364,7 +280,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'cotw',
     name: "Fatal Fury: City of the Wolves",
@@ -426,7 +341,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'cvs1',
     name: "Capcom vs. SNK",
@@ -471,7 +385,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'cvs2',
     name: "Capcom vs SNK 2",
@@ -551,7 +464,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'cyberbots',
     name: "Cyberbots",
@@ -571,7 +483,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'cyberbots-full-metal-madness',
     name: "Cyberbots: Full Metal Madness",
@@ -590,34 +501,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
-  
-      { id: 'bishamon', name: 'BISHAMON' },
-      { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
-      { id: 'demitri-maximov', name: 'DEMITRI MAXIMOV' },
-      { id: 'demitri_maximov', name: 'DEMITRI MAXIMOV' },
-      { id: 'felicia', name: 'FELICIA' },
-      { id: 'huitzil-(phobos)', name: 'Huitzil (Phobos)' },
-      { id: 'john-talbain', name: 'JOHN TALBAIN' },
-      { id: 'john_talbain', name: 'JOHN TALBAIN' },
-      { id: 'jon-talbain-(gallon)', name: 'Jon Talbain (Gallon)' },
-      { id: 'jon-talbain', name: 'Jon Talbain' },
-      { id: 'lord-raptor-(zabel-zarock)', name: 'Lord Raptor (Zabel Zarock)' },
-      { id: 'lord-raptor', name: 'LORD RAPTOR' },
-      { id: 'lord_raptor', name: 'LORD RAPTOR' },
-      { id: 'morrigan-aensland', name: 'Morrigan Aensland' },
-      { id: 'morrigan-arnsland', name: 'MORRIGAN ARNSLAND' },
-      { id: 'morrigan_arnsland', name: 'MORRIGAN ARNSLAND' },
-      { id: 'pyron', name: 'Pyron' },
-      { id: 'rikuo-(aulbath)', name: 'Rikuo (Aulbath)' },
-      { id: 'rikuo', name: 'RIKUO' },
-      { id: 'sasquatch', name: 'SASQUATCH' },
-      { id: 'victor-von-gerdenheim', name: 'VICTOR VON GERDENHEIM' },
-      { id: 'victor_von_gerdenheim', name: 'VICTOR VON GERDENHEIM' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
   {
     id: 'darkstalkers-the-night-warriors',
     name: "Darkstalkers: The Night Warriors",
@@ -631,7 +514,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'darkstalkers-the-night-warriors-(vampire-the-night-warriors)',
     name: "Darkstalkers: The Night Warriors (Vampire: The Night Warriors)",
@@ -653,7 +535,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'dead-or-alive',
     name: "Dead or Alive",
@@ -665,7 +546,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'dead-or-alive-2',
     name: "Dead or Alive 2",
@@ -677,7 +557,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'dead-or-alive-3',
     name: "Dead or Alive 3",
@@ -689,7 +568,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'dead-or-alive-4',
     name: "Dead or Alive 4",
@@ -701,7 +579,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'dead-or-alive-5',
     name: "Dead or Alive 5",
@@ -713,7 +590,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'dnf-duel',
     name: "DNF Duel",
@@ -727,7 +603,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'doa6',
     name: "Dead or Alive 6",
@@ -761,7 +636,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'dragon-ball-fighterz',
     name: "Dragon Ball FighterZ",
@@ -775,7 +649,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'fatal-fury-2',
     name: "Fatal Fury 2",
@@ -787,7 +660,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'fatal-fury-3-road-to-the-final-victory',
     name: "Fatal Fury 3: Road to the Final Victory",
@@ -799,7 +671,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'fatal-fury-king-of-fighters',
     name: "Fatal Fury: King of Fighters",
@@ -811,7 +682,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'fatal-fury-special',
     name: "Fatal Fury Special",
@@ -823,7 +693,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'fighters-megamix',
     name: "Fighters Megamix",
@@ -839,7 +708,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'fighting-ex-layer',
     name: "Fighting EX Layer",
@@ -852,7 +720,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'fighting-vipers',
     name: "Fighting Vipers",
@@ -864,7 +731,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'fighting-vipers-2',
     name: "Fighting Vipers 2",
@@ -876,7 +742,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'galaxy-fight-universal-warriors',
     name: "Galaxy Fight: Universal Warriors",
@@ -894,7 +759,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'garou-mark-of-the-wolves',
     name: "Garou: Mark of the Wolves",
@@ -906,7 +770,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'golden-axe-the-duel',
     name: "Golden Axe: The Duel",
@@ -926,7 +789,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'granblue-fantasy-versus-rising',
     name: "Granblue Fantasy Versus: Rising",
@@ -939,7 +801,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'groove-on-fight',
     name: "Groove on Fight",
@@ -960,7 +821,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'guilty-gear',
     name: "Guilty Gear (1998)",
@@ -971,7 +831,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'guilty-gear--strive-',
     name: "Guilty Gear -Strive- (Ver. 2.00)",
@@ -985,7 +844,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'guilty-gear-x',
     name: "Guilty Gear X",
@@ -996,7 +854,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'guilty-gear-xrd-rev-2',
     name: "Guilty Gear Xrd REV 2",
@@ -1010,7 +867,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'guilty-gear-xx-accent-core-plus-r',
     name: "Guilty Gear XX Accent Core Plus R",
@@ -1021,7 +877,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'hypersf2',
     name: "Hyper Street Fighter II",
@@ -1034,7 +889,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'killer-instinct-(1994)',
     name: "Killer Instinct (1994)",
@@ -1045,7 +899,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'killer-instinct-(2013)',
     name: "Killer Instinct (2013)",
@@ -1057,7 +910,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'killer-instinct-2--gold',
     name: "Killer Instinct 2 / Gold",
@@ -1068,7 +920,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'kizuna-encounter-super-tag-battle',
     name: "Kizuna Encounter: Super Tag Battle",
@@ -1079,7 +930,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'last-bronx',
     name: "Last Bronx",
@@ -1098,7 +948,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'marvel-vs-capcom-clash-of-super-heroes',
     name: "Marvel vs. Capcom: Clash of Super Heroes",
@@ -1119,7 +968,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'marvel-vs-capcom-infinite',
     name: "Marvel vs. Capcom: Infinite",
@@ -1136,7 +984,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'matrimelee',
     name: "Matrimelee (Power Instinct Matrimelee)",
@@ -1147,7 +994,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'mortal-kombat-1',
     name: "Mortal Kombat 1",
@@ -1158,7 +1004,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'mortal-kombat-ii',
     name: "Mortal Kombat II",
@@ -1170,7 +1015,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'mortal-kombat-(2011)',
     name: "Mortal Kombat (2011)",
@@ -1181,7 +1025,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'mortal-kombat-deception',
     name: "Mortal Kombat: Deception",
@@ -1193,7 +1036,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'mortal-kombat-x',
     name: "Mortal Kombat X",
@@ -1204,7 +1046,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'msh',
     name: "Marvel Super Heroes",
@@ -1226,7 +1067,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'mshvsf',
     name: "Marvel Super Heroes vs. Street Fighter",
@@ -1253,7 +1093,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'marvel-vs-capcom-2',
     name: "Marvel vs. Capcom 2",
@@ -1283,16 +1122,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
-  
-      { id: 'iron-man', name: 'Iron Man' },
-      { id: 'mega-man-x', name: 'Mega Man X' },
-      { id: 'morrigan', name: 'Morrigan' },
-      { id: 'ryu', name: 'Ryu' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
   {
     id: 'night-warriors-darkstalkers-revenge',
     name: "Night Warriors: Darkstalkers",
@@ -1306,42 +1135,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
-  
-      { id: 'automatic-(auto)-mode', name: 'AUTOMATIC (AUTO) MODE' },
-      { id: 'bishamon', name: 'BISHAMON' },
-      { id: 'blocking', name: 'BLOCKING' },
-      { id: 'chain-combos', name: 'CHAIN COMBOS' },
-      { id: 'chain_combos', name: 'CHAIN COMBOS' },
-      { id: 'change-your-button-configuration', name: 'CHANGE YOUR BUTTON CONFIGURATION' },
-      { id: 'change_your_button_configuration', name: 'CHANGE YOUR BUTTON CONFIGURATION' },
-      { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
-      { id: 'demitri-maximov', name: 'DEMITRI MAXIMOV' },
-      { id: 'demitri_maximov', name: 'DEMITRI MAXIMOV' },
-      { id: 'donovan-baine', name: 'DONOVAN BAINE' },
-      { id: 'donovan', name: 'DONOVAN' },
-      { id: 'donovan_baine', name: 'DONOVAN BAINE' },
-      { id: 'enable-the-debug-mode', name: 'ENABLE THE DEBUG MODE' },
-      { id: 'faq-abbreviations', name: 'FAQ ABBREVIATIONS' },
-      { id: 'felicia', name: 'FELICIA' },
-      { id: 'frog-trick', name: 'FROG TRICK' },
-      { id: 'frog_trick', name: 'FROG TRICK' },
-      { id: 'hsien-ko-(lei-lei)', name: 'Hsien-Ko (Lei-Lei)' },
-      { id: 'hsien-ko', name: 'HSIEN-KO' },
-      { id: 'hsien_ko', name: 'HSIEN-KO' },
-      { id: 'jon-talbain', name: 'JON TALBAIN' },
-      { id: 'jon_talbain', name: 'JON TALBAIN' },
-      { id: 'morrigan-aensland', name: 'MORRIGAN AENSLAND' },
-      { id: 'morrigan_aensland', name: 'MORRIGAN AENSLAND' },
-      { id: 'pyron', name: 'PYRON' },
-      { id: 'sasquatch', name: 'SASQUATCH' },
-      { id: 'victor-von-geldenheim', name: 'VICTOR VON GELDENHEIM' },
-      { id: 'victor', name: 'VICTOR' },
-      { id: 'victor_von_geldenheim', name: 'VICTOR VON GELDENHEIM' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
   {
     id: 'ninja-masters-haoh-ninpo-cho',
     name: "Ninja Master",
@@ -1352,7 +1145,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'persona-4-arena-ultimax',
     name: "Persona 4 Arena Ultimax",
@@ -1365,7 +1157,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'plasma-sword-nightmare-of-bilstein',
     name: "Plasma Sword: Nightmare of Bilstein",
@@ -1378,7 +1169,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'plasmasword',
     name: "Plasma Sword",
@@ -1399,7 +1189,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'pocket-fighter-(super-gem-fighter-mini-mix)',
     name: "Pocket Fighter (Super Gem Fighter Mini Mix)",
@@ -1412,7 +1201,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'pocketfighter',
     name: "Pocket Fighter",
@@ -1439,7 +1227,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'project-justice-(rival-schools-2)',
     name: "Project Justice (Rival Schools 2)",
@@ -1452,7 +1239,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'projectjustice',
     name: "Project Justice",
@@ -1518,7 +1304,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'rage-of-the-dragons',
     name: "Rage of the Dragons",
@@ -1529,7 +1314,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'real-bout-fatal-fury',
     name: "Real Bout Fatal Fury",
@@ -1540,7 +1324,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'real-bout-fatal-fury-2-the-newcomers',
     name: "Real Bout Fatal Fury 2: The Newcomers",
@@ -1551,7 +1334,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'real-bout-fatal-fury-special',
     name: "Real Bout Fatal Fury Special",
@@ -1562,220 +1344,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
-  
-      { id: 'akari', name: 'Akari' },
-      { id: 'amakusa', name: 'Amakusa' },
-      { id: 'amano', name: 'Amano' },
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'arina-makihara', name: 'Arina Makihara' },
-      { id: 'athena-asamiya', name: 'Athena Asamiya' },
-      { id: 'basara', name: 'Basara' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'billy-kane', name: 'Billy Kane' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'brider', name: 'Brider' },
-      { id: 'brocken', name: 'Brocken' },
-      { id: 'captain-atlantis', name: 'Captain Atlantis' },
-      { id: 'captain-kidd', name: 'Captain Kidd' },
-      { id: 'cham-cham', name: 'Cham Cham' },
-      { id: 'chang-koehan', name: 'Chang Koehan' },
-      { id: 'charlotte', name: 'Charlotte' },
-      { id: 'chin-gentsai', name: 'Chin Gentsai' },
-      { id: 'chizuru-kagura-(boss)', name: 'Chizuru Kagura (Boss)' },
-      { id: 'chizuru-kagura-(mid-boss)', name: 'Chizuru Kagura (Mid-Boss)' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'choi-bounge', name: 'Choi Bounge' },
-      { id: 'clark-still', name: 'Clark Still' },
-      { id: 'clown', name: 'Clown' },
-      { id: 'dandy-j', name: 'Dandy J' },
-      { id: 'earthquake', name: 'Earthquake' },
-      { id: 'eiji-kisaragi', name: 'Eiji Kisaragi' },
-      { id: 'enja', name: 'Enja' },
-      { id: 'fudomaru', name: 'Fudomaru' },
-      { id: 'fuuma', name: 'Fuuma' },
-      { id: 'gaira-caffeine', name: 'Gaira Caffeine' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'gaoh', name: 'Gaoh' },
-      { id: 'geese-howard-(boss)', name: 'Geese Howard (Boss)' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'gen-an-shiranui', name: 'Gen-an Shiranui' },
-      { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' },
-      { id: 'goenitz-(boss)', name: 'Goenitz (Boss)' },
-      { id: 'goenitz-(final-boss)', name: 'Goenitz (Final Boss)' },
-      { id: 'gokuraku-taro', name: 'Gokuraku Taro' },
-      { id: 'goro-daimon', name: 'Goro Daimon' },
-      { id: 'gowcaizer', name: 'Gowcaizer' },
-      { id: 'hanzo-hattori', name: 'Hanzo Hattori' },
-      { id: 'hanzo', name: 'Hanzo' },
-      { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'hellstinger', name: 'Hellstinger' },
-      { id: 'hibiki-takane', name: 'Hibiki Takane' },
-      { id: 'hyo', name: 'Hyo' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'jack-turner', name: 'Jack Turner' },
-      { id: 'janne-darc', name: 'Janne D\'Arc' },
-      { id: 'jean-pierre', name: 'Jean Pierre' },
-      { id: 'jin-fu-ha', name: 'Jin Fu-Ha' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'john-crawley', name: 'John Crawley' },
-      { id: 'johnny-maximum', name: 'Johnny Maximum' },
-      { id: 'jubei-yagyu', name: 'Jubei Yagyu' },
-      { id: 'julius-carn', name: 'Julius Carn' },
-      { id: 'juzoh-kanzaki', name: 'Juzoh Kanzaki' },
-      { id: 'juzoh', name: 'Juzoh' },
-      { id: 'k', name: 'K\'' },
-      { id: 'kabuki-danjuro', name: 'Kabuki Danjuro' },
-      { id: 'kaede-(awakened)', name: 'Kaede (Awakened)' },
-      { id: 'kaede', name: 'Kaede' },
-      { id: 'kagami', name: 'Kagami' },
-      { id: 'karin-son', name: 'Karin Son' },
-      { id: 'karman-cole', name: 'Karman Cole' },
-      { id: 'karnov-(final-boss)', name: 'Karnov (Final Boss)' },
-      { id: 'kazuki-kazama', name: 'Kazuki Kazama' },
-      { id: 'keiichiro-washizuka', name: 'Keiichiro Washizuka' },
-      { id: 'kim-dragon', name: 'Kim Dragon' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'king', name: 'King' },
-      { id: 'kinu', name: 'Kinu' },
-      { id: 'kojiroh-sanada', name: 'Kojiroh Sanada' },
-      { id: 'krizalid-(boss)', name: 'Krizalid (Boss)' },
-      { id: 'krizalid-(final-boss)', name: 'Krizalid (Final Boss)' },
-      { id: 'kula-diamond-(hidden-boss)', name: 'Kula Diamond (Hidden Boss)' },
-      { id: 'kula-diamond', name: 'Kula Diamond' },
-      { id: 'kusaregedo', name: 'Kusaregedo' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'kyoshiro-senryo', name: 'Kyoshiro Senryo' },
-      { id: 'kyosuke-shigure', name: 'Kyosuke Shigure' },
-      { id: 'laurence-blood', name: 'Laurence Blood' },
-      { id: 'lee-diendo', name: 'Lee Diendo' },
-      { id: 'lee-pai-long', name: 'Lee Pai Long' },
-      { id: 'lee', name: 'Lee' },
-      { id: 'lenny-creston', name: 'Lenny Creston' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'li-xiangfei', name: 'Li Xiangfei' },
-      { id: 'liu-feilin', name: 'Liu Feilin' },
-      { id: 'liu-yungmie', name: 'Liu Yungmie' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'makoto-mizoguchi', name: 'Makoto Mizoguchi' },
-      { id: 'manjimaru-sengoku', name: 'Manjimaru Sengoku' },
-      { id: 'marion', name: 'Marion' },
-      { id: 'marstorius', name: 'Marstorius' },
-      { id: 'matlok-jade', name: 'Matlok Jade' },
-      { id: 'mature', name: 'Mature' },
-      { id: 'mauru', name: 'Mauru' },
-      { id: 'maxima', name: 'Maxima' },
-      { id: 'micky-rogers', name: 'Micky Rogers' },
-      { id: 'mina-majikina', name: 'Mina Majikina' },
-      { id: 'mizuki-rashojin', name: 'Mizuki Rashojin' },
-      { id: 'moriya-minakata', name: 'Moriya Minakata' },
-      { id: 'mr-big', name: 'Mr. Big' },
-      { id: 'mr-karate', name: 'Mr. Karate' },
-      { id: 'mudman', name: 'Mudman' },
-      { id: 'mukuro', name: 'Mukuro' },
-      { id: 'musashi-akatsuki-(boss)', name: 'Musashi Akatsuki (Boss)' },
-      { id: 'muscle-power', name: 'Muscle Power' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'neinhalt-sieger', name: 'Neinhalt Sieger' },
-      { id: 'nicotine-caffeine', name: 'Nicotine Caffeine' },
-      { id: 'okina', name: 'Okina' },
-      { id: 'omega-rugal-(final-boss)', name: 'Omega Rugal (Final Boss)' },
-      { id: 'omega-rugal', name: 'Omega Rugal' },
-      { id: 'orochi-(boss)', name: 'Orochi (Boss)' },
-      { id: 'orochi-iori', name: 'Orochi Iori' },
-      { id: 'orochi-leona', name: 'Orochi Leona' },
-      { id: 'orochimaru', name: 'Orochimaru' },
-      { id: 'politank-z', name: 'Politank-Z' },
-      { id: 'rai-bakuoh', name: 'Rai Bakuoh' },
-      { id: 'ralf-jones', name: 'Ralf Jones' },
-      { id: 'rasetsumaru', name: 'Rasetsumaru' },
-      { id: 'rasputin', name: 'Rasputin' },
-      { id: 'ray-mcdougal', name: 'Ray McDougal' },
-      { id: 'rera', name: 'Rera' },
-      { id: 'rick-strowd', name: 'Rick Strowd' },
-      { id: 'rimururu', name: 'Rimururu' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'rodmy-bohnen', name: 'Rodmy Bohnen' },
-      { id: 'rugal-bernstein-(boss)', name: 'Rugal Bernstein (Boss)' },
-      { id: 'rugal-bernstein', name: 'Rugal Bernstein' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'ryoko-izumo', name: 'Ryoko Izumo' },
-      { id: 'ryoko-kano', name: 'Ryoko Kano' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'saisyu-kusanagi-(mid-boss)', name: 'Saisyu Kusanagi (Mid-Boss)' },
-      { id: 'saisyu-kusanagi', name: 'Saisyu Kusanagi' },
-      { id: 'samchay-tomyamkun', name: 'Samchay Tomyamkun' },
-      { id: 'setsuna', name: 'Setsuna' },
-      { id: 'shaia-hishizaki', name: 'Shaia Hishizaki' },
-      { id: 'shenlong', name: 'Shenlong' },
-      { id: 'shigen-naoe', name: 'Shigen Naoe' },
-      { id: 'shigen', name: 'Shigen' },
-      { id: 'shingo-yabuki', name: 'Shingo Yabuki' },
-      { id: 'shinnosuke-kagami-(boss)', name: 'Shinnosuke Kagami (Boss)' },
-      { id: 'shizumaru-hisame', name: 'Shizumaru Hisame' },
-      { id: 'sie-kensou', name: 'Sie Kensou' },
-      { id: 'sinclair', name: 'Sinclair' },
-      { id: 'slash', name: 'Slash' },
-      { id: 'sogetsu-kazama', name: 'Sogetsu Kazama' },
-      { id: 'suija', name: 'Suija' },
-      { id: 'sun-wukong', name: 'Sun Wukong' },
-      { id: 'takuma-sakazaki', name: 'Takuma Sakazaki' },
-      { id: 'tam-tam', name: 'Tam Tam' },
-      { id: 'temjin', name: 'Temjin' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'tites', name: 'Tites' },
-      { id: 'tsunade', name: 'Tsunade' },
-      { id: 'tung-fu-rue', name: 'Tung Fu Rue' },
-      { id: 'ukyo-tachibana', name: 'Ukyo Tachibana' },
-      { id: 'unknown', name: 'Unknown' },
-      { id: 'vice', name: 'Vice' },
-      { id: 'wan-fu', name: 'Wan-Fu' },
-      { id: 'wang-koh-san', name: 'Wang Koh-San' },
-      { id: 'washizuka', name: 'Washizuka' },
-      { id: 'whip', name: 'Whip' },
-      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' },
-      { id: 'wyler-(boss)', name: 'Wyler (Boss)' },
-      { id: 'yagumo', name: 'Yagumo' },
-      { id: 'yoshitora-tokugawa', name: 'Yoshitora Tokugawa' },
-      { id: 'yuki', name: 'Yuki' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'zantetsu', name: 'Zantetsu' },
-      { id: 'zazie-muhaba', name: 'Zazie Muhaba' },
-      { id: 'zero-(boss)', name: 'Zero (Boss)' },
-      { id: 'zero-(final-boss)', name: 'Zero (Final Boss)' },
-      { id: 'ziria', name: 'Ziria' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  
-      { id: 'angel', name: 'Angel' },
-      { id: 'ash-crimson', name: 'Ash Crimson' },
-      { id: 'chris', name: 'Chris' },
-      { id: 'duo-lon', name: 'Duo Lon' },
-      { id: 'foxy', name: 'Foxy' },
-      { id: 'igniz-(final-boss)', name: 'Igniz (Final Boss)' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'k-', name: 'K\' ' },
-      { id: 'k', name: 'K\'' },
-      { id: 'k9999', name: 'K9999' },
-      { id: 'kula-diamond', name: 'Kula Diamond' },
-      { id: 'kusanagi-(clone)', name: 'Kusanagi (Clone)' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'maki-kagura-(boss)', name: 'Maki Kagura (Boss)' },
-      { id: 'may-lee', name: 'May Lee' },
-      { id: 'mukai-(final-boss)', name: 'Mukai (Final Boss)' },
-      { id: 'omega-rugal-(boss)', name: 'Omega Rugal (Boss)' },
-      { id: 'orochi-(final-boss)', name: 'Orochi (Final Boss)' },
-      { id: 'orochi-team-(yashiro,-shermie,-chris)', name: 'Orochi Team (Yashiro, Shermie, Chris)' },
-      { id: 'shen-woo', name: 'Shen Woo' },
-      { id: 'shermie', name: 'Shermie' },
-      { id: 'tizoc', name: 'Tizoc' },
-      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
   {
     id: 'samurai-shodown',
     name: "Samurai Shodown",
@@ -1787,7 +1355,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'samurai-shodown-(2019)',
     name: "Samurai Shodown (2019)",
@@ -1802,7 +1369,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'samurai-shodown-ii',
     name: "Samurai Shodown II",
@@ -1814,7 +1380,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'samurai-shodown-iii-blades-of-blood',
     name: "Samurai Shodown III: Blades of Blood",
@@ -1825,7 +1390,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'samurai-shodown-iv-amakusas-revenge',
     name: "Samurai Shodown IV: Amakusa",
@@ -1837,7 +1401,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'samurai-shodown-v',
     name: "Samurai Shodown V",
@@ -1848,7 +1411,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'samurai-shodown-v-special',
     name: "Samurai Shodown V Special",
@@ -1860,53 +1422,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
-  
-      { id: 'alex', name: 'Alex' },
-      { id: 'balrog', name: 'Balrog' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'cammy', name: 'Cammy' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'chun_li', name: 'Chun-Li' },
-      { id: 'dee-jay', name: 'Dee Jay' },
-      { id: 'dee_jay', name: 'Dee Jay' },
-      { id: 'dhalsim', name: 'Dhalsim' },
-      { id: 'dudley', name: 'Dudley' },
-      { id: 'e-honda', name: 'E. Honda' },
-      { id: 'ehonda', name: 'E.Honda' },
-      { id: 'elena', name: 'Elena' },
-      { id: 'e_honda', name: 'E.Honda' },
-      { id: 'fei-long', name: 'Fei Long' },
-      { id: 'fei_long', name: 'Fei Long' },
-      { id: 'gill', name: 'Gill' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'm-bison', name: 'M. Bison' },
-      { id: 'makoto', name: 'Makoto' },
-      { id: 'mbison', name: 'M.Bison' },
-      { id: 'm_bison', name: 'M.Bison' },
-      { id: 'necro', name: 'Necro' },
-      { id: 'oro', name: 'Oro' },
-      { id: 'q', name: 'Q' },
-      { id: 'remy', name: 'Remy' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'sagat', name: 'Sagat' },
-      { id: 'sean', name: 'Sean' },
-      { id: 'sf2_ryu', name: 'Ryu' },
-      { id: 't-hawk', name: 'T. Hawk' },
-      { id: 'thawk', name: 'T.Hawk' },
-      { id: 'twelve', name: 'Twelve' },
-      { id: 't_hawk', name: 'T.Hawk' },
-      { id: 'urien', name: 'Urien' },
-      { id: 'vega', name: 'Vega' },
-      { id: 'yang', name: 'Yang' },
-      { id: 'yun', name: 'Yun' },
-      { id: 'zangief', name: 'Zangief' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
   {
     id: 'sf31',
     name: "Street Fighter III: New Generation",
@@ -1918,7 +1433,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'sf32i',
     name: "Street Fighter III: 2nd Impact - Giant Attack",
@@ -1930,7 +1444,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'sf33s',
     name: "Street Fighter III: 3rd Strike - Fight for the Future",
@@ -1943,40 +1456,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
-  
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'cammy', name: 'Cammy' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'chunli', name: 'Chunli' },
-      { id: 'dee-jay', name: 'Dee Jay' },
-      { id: 'deejay', name: 'Deejay' },
-      { id: 'dhalsim', name: 'Dhalsim' },
-      { id: 'e-honda', name: 'E. Honda' },
-      { id: 'ed', name: 'Ed' },
-      { id: 'ehonda', name: 'Ehonda' },
-      { id: 'elena', name: 'Elena' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'jamie', name: 'Jamie' },
-      { id: 'jp', name: 'JP' },
-      { id: 'juri', name: 'Juri' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'kimberly', name: 'Kimberly' },
-      { id: 'lily', name: 'Lily' },
-      { id: 'luke', name: 'Luke' },
-      { id: 'mai', name: 'Mai' },
-      { id: 'manon', name: 'Manon' },
-      { id: 'marisa', name: 'Marisa' },
-      { id: 'rashid', name: 'Rashid' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'zangief', name: 'Zangief' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
   {
     id: 'sfa1',
     name: "Street Fighter Alpha 1",
@@ -1991,7 +1470,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'sfa2',
     name: "Street Fighter Alpha 2",
@@ -2004,75 +1482,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
-  
-      { id: 'akuma-(gouki)', name: 'Akuma (Gouki)' },
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'arcade', name: 'Arcade' },
-      { id: 'balrog-(m-bison-jp)', name: 'Balrog (M. Bison JP)' },
-      { id: 'balrog', name: 'Balrog' },
-      { id: 'birdie', name: 'Birdie' },
-      { id: 'bison', name: 'Bison' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'cammy', name: 'Cammy' },
-      { id: 'charlie-(nash)', name: 'Charlie (Nash)' },
-      { id: 'charlie', name: 'Charlie' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'chun_li', name: 'Chun-Li' },
-      { id: 'classic-characters', name: 'Classic Characters' },
-      { id: 'cody', name: 'Cody' },
-      { id: 'dan', name: 'Dan' },
-      { id: 'dee-jay', name: 'Dee Jay' },
-      { id: 'dee_jay', name: 'Dee Jay' },
-      { id: 'dhalsim', name: 'Dhalsim' },
-      { id: 'dhalsims-wife', name: 'Dhalsim\'s Wife' },
-      { id: 'dhalsim_s_wife', name: 'Dhalsim\'s Wife' },
-      { id: 'e-honda', name: 'E. Honda' },
-      { id: 'entry-mode', name: 'Entry Mode' },
-      { id: 'evil-ryu', name: 'Evil Ryu' },
-      { id: 'evil_ryu', name: 'Evil Ryu' },
-      { id: 'fei-long', name: 'Fei-Long' },
-      { id: 'fei_long', name: 'Fei-Long' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'guy', name: 'Guy' },
-      { id: 'hidden-fighters', name: 'Hidden Fighters' },
-      { id: 'hidden_fighters', name: 'Hidden Fighters' },
-      { id: 'honda', name: 'Honda' },
-      { id: 'ism-quick-reference-chart', name: 'Ism Quick Reference Chart' },
-      { id: 'ism_quick_reference_chart', name: 'Ism Quick Reference Chart' },
-      { id: 'juli', name: 'Juli' },
-      { id: 'juni', name: 'Juni' },
-      { id: 'karin-kanzuki', name: 'Karin Kanzuki' },
-      { id: 'karin', name: 'Karin' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'm-bison-(vega-jp)', name: 'M. Bison (Vega JP)' },
-      { id: 'play-as-shin-gouki', name: 'Play as Shin Gouki' },
-      { id: 'play_as_shin_gouki', name: 'Play as Shin Gouki' },
-      { id: 'r-mika', name: 'R. Mika' },
-      { id: 'rolento', name: 'Rolento' },
-      { id: 'rose', name: 'Rose' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'r_mika', name: 'R. Mika' },
-      { id: 'sagart', name: 'Sagart' },
-      { id: 'sagat', name: 'Sagat' },
-      { id: 'sakura', name: 'Sakura' },
-      { id: 'shin-akuma', name: 'Shin Akuma' },
-      { id: 'shin_akuma', name: 'Shin Akuma' },
-      { id: 'sodom', name: 'Sodom' },
-      { id: 't-hawk', name: 'T. Hawk' },
-      { id: 'training-mode', name: 'Training Mode' },
-      { id: 't_hawk', name: 'T. Hawk' },
-      { id: 'vega-(balrog-jp)', name: 'Vega (Balrog JP)' },
-      { id: 'vega', name: 'Vega' },
-      { id: 'versus', name: 'Versus' },
-      { id: 'world-tour', name: 'World Tour' },
-      { id: 'world_tour', name: 'World Tour' },
-      { id: 'zangief', name: 'Zangief' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
   {
     id: 'snk-heroines-tag-team-frenzy',
     name: "SNK Heroines: Tag Team Frenzy",
@@ -2083,7 +1492,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'snk-vs-capcom-svc-chaos',
     name: "SNK vs. Capcom: SVC Chaos",
@@ -2094,7 +1502,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'ssf2',
     name: "Super Street Fighter II: The New Challengers",
@@ -2108,7 +1515,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'street-fighter-6',
     name: "Street Fighter 6",
@@ -2140,7 +1546,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'street-fighter-alpha-3',
     name: "Street Fighter Alpha 3",
@@ -2175,7 +1580,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'street-fighter-ex3',
     name: "Street Fighter EX3",
@@ -2188,7 +1592,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'street-fighter-iii-3rd-strike',
     name: "Street Fighter III: 3rd Strike",
@@ -2217,7 +1620,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'street-fighter-v-champion-edition',
     name: "Street Fighter V: Champion Edition",
@@ -2231,7 +1633,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'super-street-fighter-ii-turbo',
     name: "Super Street Fighter II Turbo",
@@ -2258,7 +1659,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'tekken-8',
     name: "Tekken 8",
@@ -2308,7 +1708,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'tatsunoko-vs-capcom-ultimate-all-stars',
     name: "Tatsunoko vs. Capcom: Ultimate All-Stars",
@@ -2323,7 +1722,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'the-king-of-fighters-2000',
     name: "The King of Fighters 2000",
@@ -2334,7 +1732,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'the-king-of-fighters-2001',
     name: "The King of Fighters 2001",
@@ -2345,7 +1742,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'the-king-of-fighters-2002',
     name: "The King of Fighters 2002",
@@ -2356,7 +1752,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'the-king-of-fighters-2003',
     name: "The King of Fighters 2003",
@@ -2367,7 +1762,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'the-king-of-fighters-94',
     name: "The King of Fighters'94",
@@ -2378,7 +1772,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'the-king-of-fighters-95',
     name: "The King of Fighters'95",
@@ -2389,7 +1782,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'the-king-of-fighters-96',
     name: "The King of Fighters'96",
@@ -2400,7 +1792,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'the-king-of-fighters-97',
     name: "The King of Fighters'97",
@@ -2411,7 +1802,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'the-king-of-fighters-98',
     name: "The King of Fighters'98",
@@ -2422,7 +1812,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'the-king-of-fighters-98-ultimate-match',
     name: "The King of Fighters'98 Ultimate Match",
@@ -2440,7 +1829,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'the-king-of-fighters-99',
     name: "The King of Fighters'99",
@@ -2451,7 +1839,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'the-king-of-fighters-xiii',
     name: "The King of Fighters XIII",
@@ -2462,7 +1849,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'the-king-of-fighters-xiv',
     name: "The King of Fighters XIV",
@@ -2473,7 +1859,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'the-king-of-fighters-xv',
     name: "The King of Fighters XV",
@@ -2487,7 +1872,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'the-last-blade',
     name: "The Last Blade",
@@ -2498,7 +1882,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'the-last-blade-2',
     name: "The Last Blade 2",
@@ -2512,7 +1895,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'battle-arena-toshinden-3',
     name: "Battle Arena Toshinden 3",
@@ -2548,7 +1930,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'ultimate-marvel-vs-capcom-3',
     name: "Ultimate Marvel vs. Capcom 3",
@@ -2568,7 +1949,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'ultimate-mortal-kombat-3',
     name: "Ultimate Mortal Kombat 3",
@@ -2579,7 +1959,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'ultra-street-fighter-iv',
     name: "Ultra Street Fighter IV",
@@ -2594,21 +1973,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
-  
-      { id: 'doctor-doom', name: 'Doctor Doom' },
-      { id: 'magneto', name: 'Magneto' },
-      { id: 'sentinel', name: 'Sentinel' },
-      { id: 'spider-man', name: 'Spider-Man' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'vergil', name: 'Vergil' },
-      { id: 'wesker', name: 'Wesker' },
-      { id: 'wolverine', name: 'Wolverine' },
-      { id: 'zero', name: 'Zero' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
   {
     id: 'under-night-in-birth-ii-[sysceles]',
     name: "Under Night In-Birth II [Sys:Celes]",
@@ -2621,7 +1985,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'vampire-hunter-2-darkstalkers-revenge',
     name: "Vampire Hunter 2: Darkstalkers",
@@ -2634,7 +1997,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'vampire-savior-2-the-lord-of-vampire',
     name: "Vampire Savior 2: The Lord of Vampire",
@@ -2647,7 +2009,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'vampire-savior-the-lord-of-vampire',
     name: "Vampire Savior: The Lord of Vampire",
@@ -2672,7 +2033,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'vampirehunter2',
     name: "Vampire Hunter 2",
@@ -2684,7 +2044,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'vampiresavior',
     name: "Vampire Savior",
@@ -2727,7 +2086,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'vampiresavior2',
     name: "Vampire Savior 2",
@@ -2739,7 +2097,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'vf1',
     name: "Virtua Fighter 1",
@@ -2758,7 +2115,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'virtua-fighter-2',
     name: "Virtua Fighter 2",
@@ -2778,7 +2134,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'virtua-fighter-3',
     name: "Virtua Fighter 3",
@@ -2796,7 +2151,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'virtua-fighter-4',
     name: "Virtua Fighter 4",
@@ -2813,7 +2167,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'vf5',
     name: "Virtua Fighter 5 Ultimate Showdown",
@@ -2842,7 +2195,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'virtua-fighter',
     name: "Virtua Fighter",
@@ -2854,7 +2206,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'waku-waku-7',
     name: "Waku Waku 7",
@@ -2865,7 +2216,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'world-heroes-perfect',
     name: "World Heroes Perfect",
@@ -2876,15 +2226,6 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
-  
-      { id: 'cyclops', name: 'Cyclops' },
-      { id: 'psylocke', name: 'Psylocke' },
-      { id: 'wolverine', name: 'Wolverine' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
   {
     id: 'xmvsf',
     name: "X-Men vs. Street Fighter",
