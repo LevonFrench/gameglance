@@ -1,10 +1,14 @@
-# Complete FGC Game Registry
+# Supported Games
+
+GameGlance currently supports the following titles:
 
 - Art of Fighting
+- Art of Fighting 2
 - Art of Fighting 3: The Path of the Warrior
 - Astra Superstars
 - Asuka 120% Burning Fest Limited
 - Battle Arena Toshinden 3
+- Battle Monsters
 - BlazBlue: Central Fiction
 - BlazBlue: Cross Tag Battle
 - Bloody Roar
@@ -14,23 +18,17 @@
 - Bloody Roar: Primal Fury / Extreme
 - Breakers Revenge
 - Capcom Fighting Jam
-- Capcom Fighting Jam (Capcom Fighting Evolution)
-- Capcom vs SNK 2
-- Capcom vs. SNK
 - Capcom vs. SNK 2: Mark of the Millennium 2001
-- Capcom vs. SNK: Millennium Fight 2000
 - Capcom vs. SNK: Millennium Fight 2000 Pro
-- Cyberbots
 - Cyberbots: Full Metal Madness
+- DNF Duel
 - Darkstalkers: The Night Warriors
-- Darkstalkers: The Night Warriors (Vampire: The Night Warriors)
 - Dead or Alive
 - Dead or Alive 2
 - Dead or Alive 3
 - Dead or Alive 4
 - Dead or Alive 5
 - Dead or Alive 6
-- DNF Duel
 - Dragon Ball FighterZ
 - Fatal Fury 2
 - Fatal Fury 3: Road to the Final Victory
@@ -45,13 +43,14 @@
 - Garou: Mark of the Wolves
 - Golden Axe: The Duel
 - Granblue Fantasy Versus: Rising
+- Groove On Fight (Power Instinct 3)
 - Groove on Fight
 - Guilty Gear (1998)
-- Guilty Gear -Strive- (Ver. 2.00)
 - Guilty Gear X
-- Guilty Gear Xrd REV 2
 - Guilty Gear XX Accent Core Plus R
+- Guilty Gear Xrd REV 2
 - Hyper Street Fighter II
+- JoJo's Bizarre Adventure: Heritage for the Future (JJBA: HFTF)
 - Killer Instinct (1994)
 - Killer Instinct (2013)
 - Killer Instinct 2 / Gold
@@ -71,16 +70,18 @@
 - Night Warriors: Darkstalkers
 - Ninja Master
 - Persona 4 Arena Ultimax
-- Plasma Sword
 - Plasma Sword: Nightmare of Bilstein
 - Pocket Fighter
-- Pocket Fighter (Super Gem Fighter Mini Mix)
 - Project Justice
-- Project Justice (Rival Schools 2)
+- Psychic Force
+- Psychic Force 2012 (Psychic Force 2)
 - Rage of the Dragons
+- Ragnagard (Shin-Oh-Ken)
 - Real Bout Fatal Fury
 - Real Bout Fatal Fury 2: The Newcomers
 - Real Bout Fatal Fury Special
+- SNK Heroines: Tag Team Frenzy
+- SNK vs. Capcom: SVC Chaos
 - Samurai Shodown
 - Samurai Shodown (2019)
 - Samurai Shodown II
@@ -88,16 +89,15 @@
 - Samurai Shodown IV: Amakusa
 - Samurai Shodown V
 - Samurai Shodown V Special
-- SNK Heroines: Tag Team Frenzy
-- SNK vs. Capcom: SVC Chaos
+- Savage Reign (Fu'un Mokushiroku: Kakutou Sousei)
+- Soul Calibur
+- Soul Edge (Soul Blade)
 - Street Fighter 6
 - Street Fighter Alpha 1
 - Street Fighter Alpha 2
 - Street Fighter Alpha 3
 - Street Fighter EX3
 - Street Fighter III: 2nd Impact - Giant Attack
-- Street Fighter III: 3rd Strike
-- Street Fighter III: 3rd Strike - Fight for the Future
 - Street Fighter III: New Generation
 - Street Fighter V: Champion Edition
 - Super Street Fighter II Turbo
@@ -118,6 +118,9 @@
 - The King of Fighters'98
 - The King of Fighters'98 Ultimate Match
 - The King of Fighters'99
+- The King of Fighters: Maximum Impact
+- The King of Fighters: Maximum Impact 2 (KOF 2006)
+- The King of Fighters: Maximum Impact Regulation 'A'
 - The Last Blade
 - The Last Blade 2
 - Ultimate Marvel vs. Capcom 3
@@ -125,18 +128,17 @@
 - Ultra Street Fighter IV
 - Under Night In-Birth II [Sys:Celes]
 - Vampire Hunter 2
-- Vampire Hunter 2: Darkstalkers
 - Vampire Savior
 - Vampire Savior 2
-- Vampire Savior 2: The Lord of Vampire
-- Vampire Savior: The Lord of Vampire
-- Virtua Fighter
 - Virtua Fighter 1
 - Virtua Fighter 2
 - Virtua Fighter 3
 - Virtua Fighter 4
 - Virtua Fighter 5 Ultimate Showdown
+- Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer)
 - Waku Waku 7
 - World Heroes Perfect
 - X-Men vs. Street Fighter
 - X-Men: Children of the Atom
+- Zero Divide
+- Zero Divide 2: The Secret Wish

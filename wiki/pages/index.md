@@ -20,7 +20,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ---
 
-## 🎮 Games (124)
+## 🎮 Games (140)
 
 ### Complete Roster
 | Page | Game | Characters |
@@ -149,6 +149,22 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[waku-waku-7]] | Waku Waku 7 | 0 |
 | [[world-heroes-perfect]] | World Heroes Perfect | 0 |
 | [[x-men-vs-street-fighter]] | X-Men vs. Street Fighter | 0 |
+| [[art-of-fighting-2]] | Art of Fighting 2 | 0 |
+| [[battle-monsters]] | Battle Monsters | 0 |
+| [[groove-on-fight-power-instinct-3]] | Groove On Fight (Power Instinct 3) | 0 |
+| [[jojo-s-bizarre-adventure-heritage-for-the-future-jjba-hftf]] | JoJo | 0 |
+| [[the-king-of-fighters-maximum-impact]] | The King of Fighters: Maximum Impact | 0 |
+| [[the-king-of-fighters-maximum-impact-2-kof-2006]] | The King of Fighters: Maximum Impact 2 (KOF 2006) | 0 |
+| [[the-king-of-fighters-maximum-impact-regulation-a]] | The King of Fighters: Maximum Impact Regulation  | 0 |
+| [[psychic-force-2012-psychic-force-2]] | Psychic Force 2012 (Psychic Force 2) | 0 |
+| [[psychic-force]] | Psychic Force | 0 |
+| [[ragnagard-shin-oh-ken]] | Ragnagard (Shin-Oh-Ken) | 0 |
+| [[savage-reign-fu-un-mokushiroku-kakutou-sousei]] | Savage Reign (Fu | 0 |
+| [[soul-calibur]] | Soul Calibur | 0 |
+| [[soul-edge-soul-blade]] | Soul Edge (Soul Blade) | 0 |
+| [[voltage-fighter-gowcaizer-choujin-gakuen-gowcaizer]] | Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer) | 0 |
+| [[zero-divide]] | Zero Divide | 0 |
+| [[zero-divide-2-the-secret-wish]] | Zero Divide 2: The Secret Wish | 0 |
 
 ---
 
@@ -196,6 +212,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ## Statistics
 
-- **Total pages**: 126 (124 games)
-- **Games covered**: 124
+- **Total pages**: 142 (140 games)
+- **Games covered**: 140
 - **Last updated**: 2026-04-15

@@ -922,54 +922,9 @@ rosterCount: 31,
     name: "Dragon Ball FighterZ",
     developer: "Arc System Works",
     releaseYear: 2018,
-rosterCount: 44,
+rosterCount: 0,
         characters: [
       
-      { id: 'frieza', name: 'Frieza' },
-      { id: 'goku-(super-saiyan)', name: 'Goku (Super Saiyan)' },
-      { id: 'goku', name: 'Goku (Super Saiyan)' },
-      { id: 'vegeta-(super-saiyan)', name: 'Vegeta (Super Saiyan)' },
-      { id: 'unknown-5', name: 'Unknown' },
-      { id: 'unknown-6', name: 'Unknown' },
-      { id: 'unknown-7', name: 'Unknown' },
-      { id: 'unknown-8', name: 'Unknown' },
-      { id: 'unknown-9', name: 'Unknown' },
-      { id: 'unknown-10', name: 'Unknown' },
-      { id: 'unknown-11', name: 'Unknown' },
-      { id: 'unknown-12', name: 'Unknown' },
-      { id: 'unknown-13', name: 'Unknown' },
-      { id: 'unknown-14', name: 'Unknown' },
-      { id: 'unknown-15', name: 'Unknown' },
-      { id: 'unknown-16', name: 'Unknown' },
-      { id: 'unknown-17', name: 'Unknown' },
-      { id: 'unknown-18', name: 'Unknown' },
-      { id: 'unknown-19', name: 'Unknown' },
-      { id: 'unknown-20', name: 'Unknown' },
-      { id: 'unknown-21', name: 'Unknown' },
-      { id: 'unknown-22', name: 'Unknown' },
-      { id: 'unknown-23', name: 'Unknown' },
-      { id: 'unknown-24', name: 'Unknown' },
-      { id: 'unknown-25', name: 'Unknown' },
-      { id: 'unknown-26', name: 'Unknown' },
-      { id: 'unknown-27', name: 'Unknown' },
-      { id: 'unknown-28', name: 'Unknown' },
-      { id: 'unknown-29', name: 'Unknown' },
-      { id: 'unknown-30', name: 'Unknown' },
-      { id: 'unknown-31', name: 'Unknown' },
-      { id: 'unknown-32', name: 'Unknown' },
-      { id: 'unknown-33', name: 'Unknown' },
-      { id: 'unknown-34', name: 'Unknown' },
-      { id: 'unknown-35', name: 'Unknown' },
-      { id: 'unknown-36', name: 'Unknown' },
-      { id: 'unknown-37', name: 'Unknown' },
-      { id: 'unknown-38', name: 'Unknown' },
-      { id: 'unknown-39', name: 'Unknown' },
-      { id: 'unknown-40', name: 'Unknown' },
-      { id: 'unknown-41', name: 'Unknown' },
-      { id: 'unknown-42', name: 'Unknown' },
-      { id: 'unknown-43', name: 'Unknown' },
-      { id: 'unknown-44', name: 'Unknown' }
-    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -4652,3 +4607,195 @@ rosterCount: 17,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
+  {
+    id: 'art-of-fighting-2',
+    name: "Art of Fighting 2",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 0,
+        characters: [
+      
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+
+  {
+    id: 'battle-monsters',
+    name: "Battle Monsters",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 10,
+        characters: [
+      { id: 'death-bane', name: 'Death-Bane' }, { id: 'kapuru', name: 'Kapuru' }, { id: 'shell-sera', name: 'Shell-Sera' }, { id: 'chilli-billy', name: 'Chilli & Billy' }, { id: 'shura', name: 'Shura' }, { id: 'kyle', name: 'Kyle' }, { id: 'headless', name: 'Headless' }, { id: 'la-peth', name: 'La-Peth' }, { id: 'dreid', name: 'Dreid' }, { id: 'makiba', name: 'Makiba' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+
+  {
+    id: 'groove-on-fight-power-instinct-3',
+    name: "Groove On Fight (Power Instinct 3)",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 0,
+        characters: [
+      
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+
+  {
+    id: 'jojo-s-bizarre-adventure-heritage-for-the-future-jjba-hftf',
+    name: "JoJo's Bizarre Adventure: Heritage for the Future (JJBA: HFTF)",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 0,
+        characters: [
+      
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+
+  {
+    id: 'the-king-of-fighters-maximum-impact',
+    name: "The King of Fighters: Maximum Impact",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 0,
+        characters: [
+      
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+
+  {
+    id: 'the-king-of-fighters-maximum-impact-2-kof-2006',
+    name: "The King of Fighters: Maximum Impact 2 (KOF 2006)",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 0,
+        characters: [
+      
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+
+  {
+    id: 'the-king-of-fighters-maximum-impact-regulation-a',
+    name: "The King of Fighters: Maximum Impact Regulation 'A'",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 0,
+        characters: [
+      
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+
+  {
+    id: 'psychic-force-2012-psychic-force-2',
+    name: "Psychic Force 2012 (Psychic Force 2)",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 0,
+        characters: [
+      
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+
+  {
+    id: 'psychic-force',
+    name: "Psychic Force",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 0,
+        characters: [
+      
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+
+  {
+    id: 'ragnagard-shin-oh-ken',
+    name: "Ragnagard (Shin-Oh-Ken)",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 0,
+        characters: [
+      
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+
+  {
+    id: 'savage-reign-fu-un-mokushiroku-kakutou-sousei',
+    name: "Savage Reign (Fu'un Mokushiroku: Kakutou Sousei)",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 0,
+        characters: [
+      
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+
+  {
+    id: 'soul-calibur',
+    name: "Soul Calibur",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 0,
+        characters: [
+      
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+
+  {
+    id: 'soul-edge-soul-blade',
+    name: "Soul Edge (Soul Blade)",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 10,
+        characters: [
+      { id: 'heishiro-mitsurugi', name: 'Heishiro Mitsurugi' }, { id: 'taki', name: 'Taki' }, { id: 'siegfried-schtauffen', name: 'Siegfried Schtauffen' }, { id: 'sophitia-alexandra', name: 'Sophitia Alexandra' }, { id: 'voldo', name: 'Voldo' }, { id: 'seong-mi-na', name: 'Seong Mi-na' }, { id: 'rock', name: 'Rock' }, { id: 'hwang-seong-gyeong', name: 'Hwang Seong-gyeong' }, { id: 'li-long', name: 'Li Long' }, { id: 'cervantes-de-leon', name: 'Cervantes de Leon' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+
+  {
+    id: 'voltage-fighter-gowcaizer-choujin-gakuen-gowcaizer',
+    name: "Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer)",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 0,
+        characters: [
+      
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+
+  {
+    id: 'zero-divide',
+    name: "Zero Divide",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 0,
+        characters: [
+      
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+
+  {
+    id: 'zero-divide-2-the-secret-wish',
+    name: "Zero Divide 2: The Secret Wish",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 0,
+        characters: [
+      
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+];
