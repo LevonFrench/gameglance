@@ -40,6 +40,7 @@ GameGlance currently supports the following titles:
 - Fighting EX Layer
 - Fighting Vipers
 - Fighting Vipers 2
+- Fist of the North Star (Hokuto no Ken)
 - Galaxy Fight: Universal Warriors
 - Garou: Mark of the Wolves
 - Golden Axe: The Duel
@@ -54,6 +55,8 @@ GameGlance currently supports the following titles:
 - Hyper Street Fighter II
 - Invincible VS Beta
 - JoJo's Bizarre Adventure: Heritage for the Future (JJBA: HFTF)
+- Kakuto Chojin: Back Alley Brutal
+- Kasumi Ninja
 - Killer Instinct (1994)
 - Killer Instinct (2013)
 - Killer Instinct 2 / Gold
@@ -108,6 +111,7 @@ GameGlance currently supports the following titles:
 - Street Fighter V: Champion Edition
 - Super Street Fighter II Turbo
 - Super Street Fighter II: The New Challengers
+- Tao Feng: Fist of the Lotus
 - Tatsunoko vs. Capcom: Ultimate All-Stars
 - Tekken 1
 - Tekken 2
@@ -145,6 +149,7 @@ GameGlance currently supports the following titles:
 - Virtua Fighter 5 Ultimate Showdown
 - Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer)
 - Waku Waku 7
+- Way of the Warrior
 - World Heroes
 - World Heroes 2
 - World Heroes 2 Jet

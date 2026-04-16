@@ -5039,7 +5039,17 @@ rosterCount: 11,
     platform: "Arcade PlayStation",
 rosterCount: 11,
         characters: [
-      { id: 'yugo-the-wolf', name: 'Yugo the Wolf' }, { id: 'stun-the-insect', name: 'Stun the Insect' }, { id: 'jenny-the-bat', name: 'Jenny the Bat' }, { id: 'busuzima-the-chameleon', name: 'Busuzima the Chameleon' }, { id: 'shina-the-leopard', name: 'Shina the Leopard' }, { id: 'shenlong-the-tiger', name: 'Shenlong the Tiger' }, { id: 'bakuryu-the-mole-new', name: 'Bakuryu the Mole (New)' }, { id: 'alice-the-rabbit', name: 'Alice the Rabbit' }, { id: 'long-the-tiger', name: 'Long the Tiger' }, { id: 'uriko-the-cat', name: 'Uriko the Cat' }, { id: 'gado-the-lion', name: 'Gado the Lion' }
+      { id: 'yugo-the-wolf', name: 'Yugo the Wolf' },
+      { id: 'stun-the-insect', name: 'Stun the Insect' },
+      { id: 'jenny-the-bat', name: 'Jenny the Bat' },
+      { id: 'busuzima-the-chameleon', name: 'Busuzima the Chameleon' },
+      { id: 'shina-the-leopard', name: 'Shina the Leopard' },
+      { id: 'shenlong-the-tiger', name: 'Shenlong the Tiger' },
+      { id: 'bakuryu-the-mole-new', name: 'Bakuryu the Mole (New)' },
+      { id: 'alice-the-rabbit', name: 'Alice the Rabbit' },
+      { id: 'long-the-tiger', name: 'Long the Tiger' },
+      { id: 'uriko-the-cat', name: 'Uriko the Cat' },
+      { id: 'gado-the-lion', name: 'Gado the Lion' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -5051,7 +5061,15 @@ rosterCount: 11,
     platform: "PlayStation",
 rosterCount: 9,
         characters: [
-      { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' }, { id: 'sol-badguy', name: 'Sol Badguy' }, { id: 'ky-kiske', name: 'Ky Kiske' }, { id: 'may', name: 'May' }, { id: 'venom', name: 'Venom' }, { id: 'queen-dizzy', name: 'Queen Dizzy' }, { id: 'unika', name: 'Unika' }, { id: 'lucy', name: 'Lucy' }, { id: 'potemkin', name: 'Potemkin' }
+      { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' },
+      { id: 'sol-badguy', name: 'Sol Badguy' },
+      { id: 'ky-kiske', name: 'Ky Kiske' },
+      { id: 'may', name: 'May' },
+      { id: 'venom', name: 'Venom' },
+      { id: 'queen-dizzy', name: 'Queen Dizzy' },
+      { id: 'unika', name: 'Unika' },
+      { id: 'lucy', name: 'Lucy' },
+      { id: 'potemkin', name: 'Potemkin' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -5063,7 +5081,16 @@ rosterCount: 9,
     platform: "Windows Xbox Series X/S PlayStation 5",
 rosterCount: 10,
         characters: [
-      { id: 'mark-grayson-invincible', name: 'Mark Grayson (Invincible)' }, { id: 'nolan-grayson-omni-man', name: 'Nolan Grayson (Omni-Man)' }, { id: 'samantha-eve-wilkins-atom-eve', name: 'Samantha Eve Wilkins (Atom Eve)' }, { id: 'allen-the-alien', name: 'Allen the Alien' }, { id: 'thokk-battle-beast', name: 'Thokk (Battle Beast)' }, { id: 'rex-splode', name: 'Rex Splode' }, { id: 'robot', name: 'Robot' }, { id: 'amanda-monster-girl', name: 'Amanda (Monster Girl)' }, { id: 'thula', name: 'Thula' }, { id: 'zandale-randolph-bulletproof', name: 'Zandale Randolph (Bulletproof)' }
+      { id: 'mark-grayson-invincible', name: 'Mark Grayson (Invincible)' },
+      { id: 'nolan-grayson-omni-man', name: 'Nolan Grayson (Omni-Man)' },
+      { id: 'samantha-eve-wilkins-atom-eve', name: 'Samantha Eve Wilkins (Atom Eve)' },
+      { id: 'allen-the-alien', name: 'Allen the Alien' },
+      { id: 'thokk-battle-beast', name: 'Thokk (Battle Beast)' },
+      { id: 'rex-splode', name: 'Rex Splode' },
+      { id: 'robot', name: 'Robot' },
+      { id: 'amanda-monster-girl', name: 'Amanda (Monster Girl)' },
+      { id: 'thula', name: 'Thula' },
+      { id: 'zandale-randolph-bulletproof', name: 'Zandale Randolph (Bulletproof)' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -5075,7 +5102,15 @@ rosterCount: 10,
     platform: "PlayStation 5 Windows",
 rosterCount: 9,
         characters: [
-      { id: 'spider-man-peter-parker', name: 'Spider-Man (Peter Parker)' }, { id: 'captain-america-steve-rogers', name: 'Captain America (Steve Rogers)' }, { id: 'iron-man-tony-stark', name: 'Iron Man (Tony Stark)' }, { id: 'doctor-doom-victor-von-doom', name: 'Doctor Doom (Victor von Doom)' }, { id: 'storm-ororo-munroe', name: 'Storm (Ororo Munroe)' }, { id: 'star-lord-peter-quill', name: 'Star-Lord (Peter Quill)' }, { id: 'ms-marvel-kamala-khan', name: 'Ms. Marvel (Kamala Khan)' }, { id: 'hulk-bruce-banner', name: 'Hulk (Bruce Banner)' }, { id: 'phoenix-jean-grey', name: 'Phoenix (Jean Grey)' }
+      { id: 'spider-man-peter-parker', name: 'Spider-Man (Peter Parker)' },
+      { id: 'captain-america-steve-rogers', name: 'Captain America (Steve Rogers)' },
+      { id: 'iron-man-tony-stark', name: 'Iron Man (Tony Stark)' },
+      { id: 'doctor-doom-victor-von-doom', name: 'Doctor Doom (Victor von Doom)' },
+      { id: 'storm-ororo-munroe', name: 'Storm (Ororo Munroe)' },
+      { id: 'star-lord-peter-quill', name: 'Star-Lord (Peter Quill)' },
+      { id: 'ms-marvel-kamala-khan', name: 'Ms. Marvel (Kamala Khan)' },
+      { id: 'hulk-bruce-banner', name: 'Hulk (Bruce Banner)' },
+      { id: 'phoenix-jean-grey', name: 'Phoenix (Jean Grey)' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -5087,7 +5122,13 @@ rosterCount: 9,
     platform: "Arcade Sega Genesis SNES PlayStation Sega Saturn 3DO Game Gear Game Boy Atari Jaguar PC",
 rosterCount: 7,
         characters: [
-      { id: 'armadon', name: 'Armadon' }, { id: 'blizzard', name: 'Blizzard' }, { id: 'chaos', name: 'Chaos' }, { id: 'diablo', name: 'Diablo' }, { id: 'sauron', name: 'Sauron' }, { id: 'talon', name: 'Talon' }, { id: 'vertigo', name: 'Vertigo' }
+      { id: 'armadon', name: 'Armadon' },
+      { id: 'blizzard', name: 'Blizzard' },
+      { id: 'chaos', name: 'Chaos' },
+      { id: 'diablo', name: 'Diablo' },
+      { id: 'sauron', name: 'Sauron' },
+      { id: 'talon', name: 'Talon' },
+      { id: 'vertigo', name: 'Vertigo' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -5099,7 +5140,16 @@ rosterCount: 7,
     platform: "Arcade Sega Genesis SNES PlayStation Sega Saturn 3DO Game Gear Game Boy Atari Jaguar PC",
 rosterCount: 10,
         characters: [
-      { id: 'kaze', name: 'Kaze' }, { id: 'arik', name: 'Arik' }, { id: 'keena', name: 'Keena' }, { id: 'xiao-ming', name: 'Xiao Ming' }, { id: 'sinjin', name: 'Sinjin' }, { id: 'malyssa', name: 'Malyssa' }, { id: 'shank', name: 'Shank' }, { id: 'tor', name: 'Tor' }, { id: 'slashfang', name: 'Slashfang' }, { id: 'necrosan', name: 'Necrosan' }
+      { id: 'kaze', name: 'Kaze' },
+      { id: 'arik', name: 'Arik' },
+      { id: 'keena', name: 'Keena' },
+      { id: 'xiao-ming', name: 'Xiao Ming' },
+      { id: 'sinjin', name: 'Sinjin' },
+      { id: 'malyssa', name: 'Malyssa' },
+      { id: 'shank', name: 'Shank' },
+      { id: 'tor', name: 'Tor' },
+      { id: 'slashfang', name: 'Slashfang' },
+      { id: 'necrosan', name: 'Necrosan' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -5111,7 +5161,23 @@ rosterCount: 10,
     platform: "Arcade PlayStation",
 rosterCount: 17,
         characters: [
-      { id: 'kazuya-mishima', name: 'Kazuya Mishima' }, { id: 'paul-phoenix', name: 'Paul Phoenix' }, { id: 'marshall-law', name: 'Marshall Law' }, { id: 'king', name: 'King' }, { id: 'nina-williams', name: 'Nina Williams' }, { id: 'jack', name: 'Jack' }, { id: 'michelle-chang', name: 'Michelle Chang' }, { id: 'yoshimitsu', name: 'Yoshimitsu' }, { id: 'heihachi-mishima', name: 'Heihachi Mishima' }, { id: 'lee-chaolan', name: 'Lee Chaolan' }, { id: 'kuma-i', name: 'Kuma I' }, { id: 'wang-jinrei', name: 'Wang Jinrei' }, { id: 'armor-king-i', name: 'Armor King I' }, { id: 'anna-williams', name: 'Anna Williams' }, { id: 'prototype-jack', name: 'Prototype Jack' }, { id: 'ganryu', name: 'Ganryu' }, { id: 'kunimitsu-i', name: 'Kunimitsu I' }
+      { id: 'kazuya-mishima', name: 'Kazuya Mishima' },
+      { id: 'paul-phoenix', name: 'Paul Phoenix' },
+      { id: 'marshall-law', name: 'Marshall Law' },
+      { id: 'king', name: 'King' },
+      { id: 'nina-williams', name: 'Nina Williams' },
+      { id: 'jack', name: 'Jack' },
+      { id: 'michelle-chang', name: 'Michelle Chang' },
+      { id: 'yoshimitsu', name: 'Yoshimitsu' },
+      { id: 'heihachi-mishima', name: 'Heihachi Mishima' },
+      { id: 'lee-chaolan', name: 'Lee Chaolan' },
+      { id: 'kuma-i', name: 'Kuma I' },
+      { id: 'wang-jinrei', name: 'Wang Jinrei' },
+      { id: 'armor-king-i', name: 'Armor King I' },
+      { id: 'anna-williams', name: 'Anna Williams' },
+      { id: 'prototype-jack', name: 'Prototype Jack' },
+      { id: 'ganryu', name: 'Ganryu' },
+      { id: 'kunimitsu-i', name: 'Kunimitsu I' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -5123,7 +5189,30 @@ rosterCount: 17,
     platform: "Arcade PlayStation",
 rosterCount: 24,
         characters: [
-      { id: 'jun-kazama', name: 'Jun Kazama' }, { id: 'lei-wulong', name: 'Lei Wulong' }, { id: 'jack-2', name: 'Jack-2' }, { id: 'michelle-chang', name: 'Michelle Chang' }, { id: 'king', name: 'King' }, { id: 'yoshimitsu', name: 'Yoshimitsu' }, { id: 'nina-williams', name: 'Nina Williams' }, { id: 'marshall-law', name: 'Marshall Law' }, { id: 'paul-phoenix', name: 'Paul Phoenix' }, { id: 'kazuya-mishima', name: 'Kazuya Mishima' }, { id: 'baek-doo-san', name: 'Baek Doo San' }, { id: 'bruce-irvin', name: 'Bruce Irvin' }, { id: 'roger', name: 'Roger' }, { id: 'alex', name: 'Alex' }, { id: 'wang-jinrei', name: 'Wang Jinrei' }, { id: 'kuma-i', name: 'Kuma I' }, { id: 'armor-king-i', name: 'Armor King I' }, { id: 'kunimitsu-i', name: 'Kunimitsu I' }, { id: 'anna-williams', name: 'Anna Williams' }, { id: 'prototype-jack', name: 'Prototype Jack' }, { id: 'ganryu', name: 'Ganryu' }, { id: 'heihachi-mishima', name: 'Heihachi Mishima' }, { id: 'devil', name: 'Devil' }, { id: 'angel', name: 'Angel' }
+      { id: 'jun-kazama', name: 'Jun Kazama' },
+      { id: 'lei-wulong', name: 'Lei Wulong' },
+      { id: 'jack-2', name: 'Jack-2' },
+      { id: 'michelle-chang', name: 'Michelle Chang' },
+      { id: 'king', name: 'King' },
+      { id: 'yoshimitsu', name: 'Yoshimitsu' },
+      { id: 'nina-williams', name: 'Nina Williams' },
+      { id: 'marshall-law', name: 'Marshall Law' },
+      { id: 'paul-phoenix', name: 'Paul Phoenix' },
+      { id: 'kazuya-mishima', name: 'Kazuya Mishima' },
+      { id: 'baek-doo-san', name: 'Baek Doo San' },
+      { id: 'bruce-irvin', name: 'Bruce Irvin' },
+      { id: 'roger', name: 'Roger' },
+      { id: 'alex', name: 'Alex' },
+      { id: 'wang-jinrei', name: 'Wang Jinrei' },
+      { id: 'kuma-i', name: 'Kuma I' },
+      { id: 'armor-king-i', name: 'Armor King I' },
+      { id: 'kunimitsu-i', name: 'Kunimitsu I' },
+      { id: 'anna-williams', name: 'Anna Williams' },
+      { id: 'prototype-jack', name: 'Prototype Jack' },
+      { id: 'ganryu', name: 'Ganryu' },
+      { id: 'heihachi-mishima', name: 'Heihachi Mishima' },
+      { id: 'devil', name: 'Devil' },
+      { id: 'angel', name: 'Angel' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -5135,7 +5224,14 @@ rosterCount: 24,
     platform: "Arcade Neo Geo SNES Sega Genesis",
 rosterCount: 8,
         characters: [
-      { id: 'hanzo', name: 'Hanzo' }, { id: 'fuuma', name: 'Fuuma' }, { id: 'dragon', name: 'Dragon' }, { id: 'janne', name: 'Janne' }, { id: 'j-carn', name: 'J. Carn' }, { id: 'muscle-power', name: 'Muscle Power' }, { id: 'brocken', name: 'Brocken' }, { id: 'rasputin', name: 'Rasputin' }
+      { id: 'hanzo', name: 'Hanzo' },
+      { id: 'fuuma', name: 'Fuuma' },
+      { id: 'dragon', name: 'Dragon' },
+      { id: 'janne', name: 'Janne' },
+      { id: 'j-carn', name: 'J. Carn' },
+      { id: 'muscle-power', name: 'Muscle Power' },
+      { id: 'brocken', name: 'Brocken' },
+      { id: 'rasputin', name: 'Rasputin' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -5147,7 +5243,20 @@ rosterCount: 8,
     platform: "Arcade Neo Geo SNES Sega Genesis",
 rosterCount: 14,
         characters: [
-      { id: 'captain-kidd', name: 'Captain Kidd' }, { id: 'erick', name: 'Erick' }, { id: 'johnny-maximum', name: 'Johnny Maximum' }, { id: 'mudman', name: 'Mudman' }, { id: 'ryoko', name: 'Ryoko' }, { id: 'shura', name: 'Shura' }, { id: 'hanzo', name: 'Hanzo' }, { id: 'fuuma', name: 'Fuuma' }, { id: 'dragon', name: 'Dragon' }, { id: 'janne', name: 'Janne' }, { id: 'j-carn', name: 'J. Carn' }, { id: 'muscle-power', name: 'Muscle Power' }, { id: 'brocken', name: 'Brocken' }, { id: 'rasputin', name: 'Rasputin' }
+      { id: 'captain-kidd', name: 'Captain Kidd' },
+      { id: 'erick', name: 'Erick' },
+      { id: 'johnny-maximum', name: 'Johnny Maximum' },
+      { id: 'mudman', name: 'Mudman' },
+      { id: 'ryoko', name: 'Ryoko' },
+      { id: 'shura', name: 'Shura' },
+      { id: 'hanzo', name: 'Hanzo' },
+      { id: 'fuuma', name: 'Fuuma' },
+      { id: 'dragon', name: 'Dragon' },
+      { id: 'janne', name: 'Janne' },
+      { id: 'j-carn', name: 'J. Carn' },
+      { id: 'muscle-power', name: 'Muscle Power' },
+      { id: 'brocken', name: 'Brocken' },
+      { id: 'rasputin', name: 'Rasputin' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -5159,7 +5268,94 @@ rosterCount: 14,
     platform: "Arcade Neo Geo SNES Sega Genesis",
 rosterCount: 7,
         characters: [
-      { id: 'jack', name: 'Jack' }, { id: 'ryofu', name: 'Ryofu' }, { id: 'zeus-boss', name: 'Zeus (Boss)' }, { id: 'hanzo', name: 'Hanzo' }, { id: 'fuuma', name: 'Fuuma' }, { id: 'dragon', name: 'Dragon' }, { id: 'captain-kidd', name: 'Captain Kidd' }
+      { id: 'jack', name: 'Jack' },
+      { id: 'ryofu', name: 'Ryofu' },
+      { id: 'zeus-boss', name: 'Zeus (Boss)' },
+      { id: 'hanzo', name: 'Hanzo' },
+      { id: 'fuuma', name: 'Fuuma' },
+      { id: 'dragon', name: 'Dragon' },
+      { id: 'captain-kidd', name: 'Captain Kidd' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'fist-of-the-north-star-hokuto-no-ken',
+    name: "Fist of the North Star (Hokuto no Ken)",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 9,
+        characters: [
+      { id: 'kenshiro', name: 'Kenshiro' }, { id: 'raoh', name: 'Raoh' }, { id: 'toki', name: 'Toki' }, { id: 'shin', name: 'Shin' }, { id: 'rei', name: 'Rei' }, { id: 'juda', name: 'Juda' }, { id: 'thouther', name: 'Thouther' }, { id: 'mamiya', name: 'Mamiya' }, { id: 'heart', name: 'Heart' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'kakuto-chojin-back-alley-brutal',
+    name: "Kakuto Chojin: Back Alley Brutal",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 12,
+        characters: [
+      { id: 'asad', name: 'Asad' },
+      { id: 'crusher-ramirez', name: 'Crusher Ramirez' },
+      { id: 'reiji', name: 'Reiji' },
+      { id: 'vittoria', name: 'Vittoria' },
+      { id: 'shadow', name: 'Shadow' },
+      { id: 'sabre', name: 'Sabre' },
+      { id: 'rena', name: 'Rena' },
+      { id: 'kahn', name: 'Kahn' },
+      { id: 'roxy', name: 'Roxy' },
+      { id: 'vegard', name: 'Vegard' },
+      { id: 'yin-kai-li', name: 'Yin Kai Li' },
+      { id: 'daeva', name: 'Daeva' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'kasumi-ninja',
+    name: "Kasumi Ninja",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 9,
+        characters: [
+      { id: 'habaki', name: 'Habaki' }, { id: 'senzo', name: 'Senzo' }, { id: 'alaric', name: 'Alaric' }, { id: 'angus', name: 'Angus' }, { id: 'chagi', name: 'Chagi' }, { id: 'danja', name: 'Danja' }, { id: 'pakawa', name: 'Pakawa' }, { id: 'thundra', name: 'Thundra' }, { id: 'lord-gyaku', name: 'Lord Gyaku' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'tao-feng-fist-of-the-lotus',
+    name: "Tao Feng: Fist of the Lotus",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 7,
+        characters: [
+      { id: 'pale-lotus-master-sage', name: 'Pale Lotus: Master Sage' },
+      { id: 'pale-lotus-fiery-phoenix', name: 'Pale Lotus: Fiery Phoenix' },
+      { id: 'pale-lotus-fierce-tiger', name: 'Pale Lotus: Fierce Tiger' },
+      { id: 'pale-lotus-iron-monk', name: 'Pale Lotus: Iron Monk' },
+      { id: 'black-mantis-exile', name: 'Black Mantis: Exile' },
+      { id: 'black-mantis-divinity', name: 'Black Mantis: Divinity' },
+      { id: 'black-mantis-geist', name: 'Black Mantis: Geist' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'way-of-the-warrior',
+    name: "Way of the Warrior",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 10,
+        characters: [
+      { id: 'major-ruption', name: 'Major_Ruption' },
+      { id: 'shogun', name: 'Shogun' },
+      { id: 'crimson-glory', name: 'Crimson Glory' },
+      { id: 'dragon', name: 'Dragon' },
+      { id: 'nikki-chan', name: 'Nikki Chan' },
+      { id: 'konotori', name: 'Konotori' },
+      { id: 'the-ninja', name: 'The Ninja' },
+      { id: 'malcolm-fox', name: 'Malcolm Fox' },
+      { id: 'gulliver', name: 'Gulliver' },
+      { id: 'high-abbot', name: 'High Abbot' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   }

@@ -20,7 +20,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ---
 
-## 🎮 Games (151)
+## 🎮 Games (156)
 
 ### Complete Roster
 | Page | Game | Characters |
@@ -176,6 +176,11 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[world-heroes]] | World Heroes | 0 |
 | [[world-heroes-2]] | World Heroes 2 | 0 |
 | [[world-heroes-2-jet]] | World Heroes 2 Jet | 0 |
+| [[fist-of-the-north-star-hokuto-no-ken]] | Fist of the North Star (Hokuto no Ken) | 0 |
+| [[kakuto-chojin-back-alley-brutal]] | Kakuto Chojin: Back Alley Brutal | 0 |
+| [[kasumi-ninja]] | Kasumi Ninja | 0 |
+| [[tao-feng-fist-of-the-lotus]] | Tao Feng: Fist of the Lotus | 0 |
+| [[way-of-the-warrior]] | Way of the Warrior | 0 |
 
 ---
 
@@ -223,6 +228,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ## Statistics
 
-- **Total pages**: 153 (151 games)
-- **Games covered**: 151
+- **Total pages**: 158 (156 games)
+- **Games covered**: 156
 - **Last updated**: 2026-04-15
