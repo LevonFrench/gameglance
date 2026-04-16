@@ -25,52 +25,52 @@ function getGameTheme(game: GameDefinition) {
   
   // Franchises
   if (name.includes('mortal kombat') || name.includes('mk')) return {
-    gradient: 'linear-gradient(135deg, #b91c1c 0%, #450a0a 100%)', icon: '🐉', tagline: 'Finish Him!', glowColor: 'rgba(185, 28, 28, 0.25)'
+    gradient: 'linear-gradient(135deg, #b91c1c 0%, #450a0a 100%)', icon: '🐉', tagline: game.tagline || 'Finish Him!', glowColor: 'rgba(185, 28, 28, 0.25)'
   };
   if (name.includes('guilty gear')) return {
-    gradient: 'linear-gradient(135deg, #ea580c 0%, #7c2d12 100%)', icon: '🎸', tagline: 'Heaven or Hell... Duel!', glowColor: 'rgba(234, 88, 12, 0.25)'
+    gradient: 'linear-gradient(135deg, #ea580c 0%, #7c2d12 100%)', icon: '🎸', tagline: game.tagline || 'Heaven or Hell... Duel!', glowColor: 'rgba(234, 88, 12, 0.25)'
   };
   if (name.includes('blazblue')) return {
-    gradient: 'linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%)', icon: '🌀', tagline: 'The Wheel of Fate is Turning', glowColor: 'rgba(37, 99, 235, 0.25)'
+    gradient: 'linear-gradient(135deg, #2563eb 0%, #1e3a8a 100%)', icon: '🌀', tagline: game.tagline || 'The Wheel of Fate is Turning', glowColor: 'rgba(37, 99, 235, 0.25)'
   };
   if (name.includes('tekken')) return {
-    gradient: 'linear-gradient(135deg, #f59e0b 0%, #b45309 100%)', icon: '⚡', tagline: 'The King of Iron Fist', glowColor: 'rgba(245, 158, 11, 0.25)'
+    gradient: 'linear-gradient(135deg, #f59e0b 0%, #b45309 100%)', icon: '⚡', tagline: game.tagline || 'The King of Iron Fist', glowColor: 'rgba(245, 158, 11, 0.25)'
   };
   if (name.includes('virtua fighter')) return {
-    gradient: 'linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%)', icon: '🥋', tagline: 'Ten Years Too Early!', glowColor: 'rgba(14, 165, 233, 0.25)'
+    gradient: 'linear-gradient(135deg, #0ea5e9 0%, #0369a1 100%)', icon: '🥋', tagline: game.tagline || 'Ten Years Too Early!', glowColor: 'rgba(14, 165, 233, 0.25)'
   };
   if (name.includes('dead or alive')) return {
-    gradient: 'linear-gradient(135deg, #db2777 0%, #831843 100%)', icon: '🌸', tagline: 'I am a Fighter', glowColor: 'rgba(219, 39, 119, 0.25)'
+    gradient: 'linear-gradient(135deg, #db2777 0%, #831843 100%)', icon: '🌸', tagline: game.tagline || 'I am a Fighter', glowColor: 'rgba(219, 39, 119, 0.25)'
   };
   if (name.includes('king of fighters')) return {
-    gradient: 'linear-gradient(135deg, #fb923c 0%, #c2410c 100%)', icon: '👑', tagline: 'The Ultimate Match', glowColor: 'rgba(251, 146, 60, 0.25)'
+    gradient: 'linear-gradient(135deg, #fb923c 0%, #c2410c 100%)', icon: '👑', tagline: game.tagline || 'The Ultimate Match', glowColor: 'rgba(251, 146, 60, 0.25)'
   };
   if (name.includes('fatal fury') || name.includes('garou')) return {
-    gradient: 'linear-gradient(135deg, #ef4444 0%, #991b1b 100%)', icon: '🐺', tagline: 'The Legend of the Hungry Wolf', glowColor: 'rgba(239, 68, 68, 0.25)'
+    gradient: 'linear-gradient(135deg, #ef4444 0%, #991b1b 100%)', icon: '🐺', tagline: game.tagline || 'The Legend of the Hungry Wolf', glowColor: 'rgba(239, 68, 68, 0.25)'
   };
   if (name.includes('samurai shodown')) return {
-    gradient: 'linear-gradient(135deg, #dc2626 0%, #111827 100%)', icon: '⚔️', tagline: 'Embrace Death', glowColor: 'rgba(220, 38, 38, 0.25)'
+    gradient: 'linear-gradient(135deg, #dc2626 0%, #111827 100%)', icon: '⚔️', tagline: game.tagline || 'Embrace Death', glowColor: 'rgba(220, 38, 38, 0.25)'
   };
   if (name.includes('killer instinct')) return {
-    gradient: 'linear-gradient(135deg, #10b981 0%, #047857 100%)', icon: '🩸', tagline: 'C-C-C-Combo Breaker!', glowColor: 'rgba(16, 185, 129, 0.25)'
+    gradient: 'linear-gradient(135deg, #10b981 0%, #047857 100%)', icon: '🩸', tagline: game.tagline || 'C-C-C-Combo Breaker!', glowColor: 'rgba(16, 185, 129, 0.25)'
   };
   if (name.includes('marvel vs capcom') || name.includes('msh') || name.includes('cota') || name.includes('xmvsf')) return {
-    gradient: 'linear-gradient(135deg, #8b5cf6 0%, #4338ca 100%)', icon: '🦸', tagline: 'Let\'s Go Crazy!', glowColor: 'rgba(139, 92, 246, 0.25)'
+    gradient: 'linear-gradient(135deg, #8b5cf6 0%, #4338ca 100%)', icon: '🦸', tagline: game.tagline || 'Let\'s Go Crazy!', glowColor: 'rgba(139, 92, 246, 0.25)'
   };
   if (name.includes('bloody roar')) return {
-    gradient: 'linear-gradient(135deg, #ca8a04 0%, #854d0e 100%)', icon: '🐾', tagline: 'Awaken the Beast', glowColor: 'rgba(202, 138, 4, 0.25)'
+    gradient: 'linear-gradient(135deg, #ca8a04 0%, #854d0e 100%)', icon: '🐾', tagline: game.tagline || 'Awaken the Beast', glowColor: 'rgba(202, 138, 4, 0.25)'
   };
   if (name.includes('art of fighting')) return {
-    gradient: 'linear-gradient(135deg, #eab308 0%, #a16207 100%)', icon: '👊', tagline: 'The Path of the Warrior', glowColor: 'rgba(234, 179, 8, 0.25)'
+    gradient: 'linear-gradient(135deg, #eab308 0%, #a16207 100%)', icon: '👊', tagline: game.tagline || 'The Path of the Warrior', glowColor: 'rgba(234, 179, 8, 0.25)'
   };
   if (name.includes('last blade')) return {
-    gradient: 'linear-gradient(135deg, #64748b 0%, #334155 100%)', icon: '🍂', tagline: 'A Romance of Swords', glowColor: 'rgba(100, 116, 139, 0.25)'
+    gradient: 'linear-gradient(135deg, #64748b 0%, #334155 100%)', icon: '🍂', tagline: game.tagline || 'A Romance of Swords', glowColor: 'rgba(100, 116, 139, 0.25)'
   };
   if (name.includes('dragon ball')) return {
-    gradient: 'linear-gradient(135deg, #f59e0b 0%, #ea580c 100%)', icon: '🐉', tagline: 'Sparking!', glowColor: 'rgba(245, 158, 11, 0.25)'
+    gradient: 'linear-gradient(135deg, #f59e0b 0%, #ea580c 100%)', icon: '🐉', tagline: game.tagline || 'Sparking!', glowColor: 'rgba(245, 158, 11, 0.25)'
   };
   if (name.includes('vampire') || name.includes('nightwarriors')) return {
-    gradient: 'linear-gradient(135deg, #a21caf 0%, #4a044e 100%)', icon: '🦇', tagline: 'Creatures of the Night', glowColor: 'rgba(162, 28, 175, 0.25)'
+    gradient: 'linear-gradient(135deg, #a21caf 0%, #4a044e 100%)', icon: '🦇', tagline: game.tagline || 'Creatures of the Night', glowColor: 'rgba(162, 28, 175, 0.25)'
   };
 
   // Fallback generation based on hash so game is consistently styled
@@ -82,7 +82,7 @@ function getGameTheme(game: GameDefinition) {
   return {
     gradient: `linear-gradient(135deg, hsl(${hue1}, 70%, 50%) 0%, hsl(${hue2}, 80%, 40%) 100%)`,
     icon: '🕹️',
-    tagline: 'Ready to Fight',
+    tagline: game.tagline || 'Ready to Fight',
     glowColor: `hsla(${hue1}, 70%, 50%, 0.25)`
   };
 }
