@@ -2,8 +2,8 @@
 title: "Street Fighter III: 2nd Impact - Giant Attack"
 type: game
 tags: [street-fighter-iii-2nd-impact]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

@@ -2,8 +2,8 @@
 title: "SNK vs. Capcom: SVC Chaos"
 type: game
 tags: [snk-vs-capcom-svc-chaos]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

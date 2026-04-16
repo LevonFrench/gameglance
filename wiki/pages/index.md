@@ -2,7 +2,7 @@
 title: "Wiki Index"
 type: index
 created: 2026-04-15
-updated: 2026-04-15
+updated: 2026-04-16
 ---
 
 # GameGlance Wiki — Index
@@ -230,4 +230,4 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 - **Total pages**: 158 (156 games)
 - **Games covered**: 156
-- **Last updated**: 2026-04-15
+- **Last updated**: 2026-04-16

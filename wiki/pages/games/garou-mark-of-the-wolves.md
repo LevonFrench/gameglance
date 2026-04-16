@@ -2,8 +2,8 @@
 title: "Garou: Mark of the Wolves"
 type: game
 tags: [garou-mark-of-the-wolves]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

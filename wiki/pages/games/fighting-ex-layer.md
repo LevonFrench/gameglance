@@ -2,8 +2,8 @@
 title: "Fighting EX Layer"
 type: game
 tags: [fighting-ex-layer]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

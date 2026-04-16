@@ -2,8 +2,8 @@
 title: "BlazBlue: Cross Tag Battle"
 type: game
 tags: [blazblue-cross-tag-battle]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

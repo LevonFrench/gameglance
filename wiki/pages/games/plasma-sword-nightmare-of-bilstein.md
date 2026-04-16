@@ -2,8 +2,8 @@
 title: "Plasma Sword: Nightmare of Bilstein"
 type: game
 tags: [plasma-sword-nightmare-of-bilstein]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

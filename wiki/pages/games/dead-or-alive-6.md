@@ -2,8 +2,8 @@
 title: "Dead or Alive 6"
 type: game
 tags: [dead-or-alive-6]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

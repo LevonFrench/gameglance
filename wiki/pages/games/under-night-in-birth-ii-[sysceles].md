@@ -2,8 +2,8 @@
 title: "Under Night In-Birth II [Sys:Celes]"
 type: game
 tags: [under-night-in-birth-ii-[sysceles]]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

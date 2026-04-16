@@ -2,8 +2,8 @@
 title: "Ultimate Marvel vs. Capcom 3"
 type: game
 tags: [ultimate-marvel-vs-capcom-3]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

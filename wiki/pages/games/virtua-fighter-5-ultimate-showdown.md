@@ -2,8 +2,8 @@
 title: "Virtua Fighter 5 Ultimate Showdown"
 type: game
 tags: [virtua-fighter-5-ultimate-showdown]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

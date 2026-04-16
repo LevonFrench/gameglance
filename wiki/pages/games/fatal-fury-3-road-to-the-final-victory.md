@@ -2,8 +2,8 @@
 title: "Fatal Fury 3: Road to the Final Victory"
 type: game
 tags: [fatal-fury-3-road-to-the-final-victory]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

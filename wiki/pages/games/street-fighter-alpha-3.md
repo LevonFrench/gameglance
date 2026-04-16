@@ -2,8 +2,8 @@
 title: "Street Fighter Alpha 3"
 type: game
 tags: [street-fighter-alpha-3]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

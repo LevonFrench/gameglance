@@ -2,8 +2,8 @@
 title: "Fighters Megamix"
 type: game
 tags: [fighters-megamix]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

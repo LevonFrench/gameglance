@@ -2,8 +2,8 @@
 title: "Samurai Shodown III: Blades of Blood"
 type: game
 tags: [samurai-shodown-iii-blades-of-blood]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

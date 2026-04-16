@@ -2,8 +2,8 @@
 title: "Capcom vs. SNK: Millennium Fight 2000 Pro"
 type: game
 tags: [capcom-vs-snk-millennium-fight-2000-pro]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

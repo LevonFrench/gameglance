@@ -2,8 +2,8 @@
 title: "Ultra Street Fighter IV"
 type: game
 tags: [ultra-street-fighter-iv]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

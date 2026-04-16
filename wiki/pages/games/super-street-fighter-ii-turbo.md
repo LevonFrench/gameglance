@@ -2,8 +2,8 @@
 title: "Super Street Fighter II Turbo"
 type: game
 tags: [super-street-fighter-ii-turbo]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

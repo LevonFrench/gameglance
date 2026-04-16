@@ -2,8 +2,8 @@
 title: "Guilty Gear (1998)"
 type: game
 tags: [guilty-gear]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

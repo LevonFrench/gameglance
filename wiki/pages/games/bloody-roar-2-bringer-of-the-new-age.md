@@ -2,8 +2,8 @@
 title: "Bloody Roar 2: Bringer of the New Age"
 type: game
 tags: [bloody-roar-2-bringer-of-the-new-age]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 

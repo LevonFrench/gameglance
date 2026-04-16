@@ -2,8 +2,8 @@
 title: "Persona 4 Arena Ultimax"
 type: game
 tags: [persona-4-arena-ultimax]
-created: 2026-04-15
-updated: 2026-04-15
+created: 2026-04-16
+updated: 2026-04-16
 sources: 0
 ---
 
