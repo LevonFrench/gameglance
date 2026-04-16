@@ -196,7 +196,7 @@ GameGlance currently supports the following titles:
 - Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer)
 - Waku Waku 7
 - Way of the Warrior
-- Weaponlord
+- WeaponLord
 - World Heroes
 - World Heroes 2
 - World Heroes 2 Jet
