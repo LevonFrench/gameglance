@@ -37,10 +37,21 @@ const tokenizeInputs = (inputs: string[]): string[] => {
       if (t === '+') { result.push('+'); continue; }
       if (t === '[Cancel]') { result.push(t); continue; }
 
-      if (/^[1-46-9]+$/.test(t)) {
-        for (const digit of t) {
-          result.push(NUMPAD_MAP[digit]);
+      const specMatch = t.match(/^(.*?)(360|720)([a-zA-Z]*)$/);
+      if (specMatch) {
+        if (specMatch[1]) result.push(specMatch[1]);
+        result.push(specMatch[2]);
+        if (specMatch[3]) result.push(specMatch[3]);
+        continue;
+      }
+
+      const match = t.match(/^([a-zA-Z\.\+]*?)([1-46-9]+)([a-zA-Z]*)$/);
+      if (match) {
+        if (match[1]) result.push(match[1]);
+        for (const digit of match[2]) {
+          if (NUMPAD_MAP[digit]) result.push(NUMPAD_MAP[digit]);
         }
+        if (match[3]) result.push(match[3]);
       } else {
         result.push(t);
       }
