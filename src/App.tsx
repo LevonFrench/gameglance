@@ -61,11 +61,6 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem('gg_card_theme', cardTheme);
-    if (cardTheme === 'default-light') {
-      setTheme('light');
-    } else {
-      setTheme('dark');
-    }
   }, [cardTheme, setTheme]);
 
   // Navigation handlers

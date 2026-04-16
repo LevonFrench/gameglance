@@ -325,7 +325,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
       return a.name.localeCompare(b.name);
     });
 
-  const isDark = theme === 'dark';
+  const isDark = theme !== 'light';
   const developerCounts = VISIBLE_GAMES.reduce((acc, game) => {
     if (game.developer) {
       acc[game.developer] = (acc[game.developer] || 0) + 1;
