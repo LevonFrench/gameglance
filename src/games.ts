@@ -922,9 +922,12 @@ rosterCount: 31,
     name: "Dragon Ball FighterZ",
     developer: "Arc System Works",
     releaseYear: 2018,
-rosterCount: 0,
+rosterCount: 4,
         characters: [
-      
+      { id: 'frieza', name: 'Frieza' },
+      { id: 'goku-super-saiyan', name: 'Goku (Super Saiyan)' },
+      { id: 'goku', name: 'Goku' },
+      { id: 'vegeta-super-saiyan', name: 'Vegeta (Super Saiyan)' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
