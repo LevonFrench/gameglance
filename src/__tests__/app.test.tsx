@@ -1,6 +1,6 @@
 import { render, screen } from '@testing-library/react';
 import App from '../App';
-import { expect, it, describe, vi } from 'vitest';
+import { expect, it, describe } from 'vitest';
 
 // No longer mocking GameSelectView to ensure we catch mapping errors over SUPPORTED_GAMES
 
