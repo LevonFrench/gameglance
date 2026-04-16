@@ -1,18 +1,18 @@
 ---
-title: "Vf4"
+title: "Tekken 8"
 type: game
-tags: [vf4]
+tags: [tekken-8]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Vf4
+# Tekken 8
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (7 registered)
+## Characters (40 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

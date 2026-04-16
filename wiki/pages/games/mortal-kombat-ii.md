@@ -1,18 +1,18 @@
 ---
-title: "Vf2"
+title: "Mortal Kombat II"
 type: game
-tags: [vf2]
+tags: [mortal-kombat-ii]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Vf2
+# Mortal Kombat II
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (10 registered)
+## Characters (2 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

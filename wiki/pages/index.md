@@ -20,7 +20,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ---
 
-## 🎮 Games (151)
+## 🎮 Games (140)
 
 ### Complete Roster
 | Page | Game | Characters |
@@ -42,14 +42,12 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[capcom-vs-snk-2-mark-of-the-millennium-2001]] | Capcom vs. SNK 2: Mark of the Millennium 2001 | 16 |
 | [[capcom-vs-snk-millennium-fight-2000]] | Capcom vs. SNK: Millennium Fight 2000 | 5 |
 | [[capcom-vs-snk-millennium-fight-2000-pro]] | Capcom vs. SNK: Millennium Fight 2000 Pro | 32 |
-| [[cfj]] | Capcom Fighting Jam | 62 |
 | [[cota]] | X-Men: Children of the Atom | 2 |
 | [[cotw]] | Fatal Fury: City of the Wolves | 52 |
 | [[cvs1]] | Capcom vs. SNK | 35 |
 | [[cvs2]] | Capcom vs SNK 2 | 70 |
 | [[cyberbots]] | Cyberbots | 10 |
 | [[cyberbots-full-metal-madness]] | Cyberbots: Full Metal Madness | 9 |
-| [[darkstalkers]] | Darkstalkers: The Night Warriors | 23 |
 | [[darkstalkers-the-night-warriors]] | Darkstalkers: The Night Warriors | 4 |
 | [[darkstalkers-the-night-warriors-(vampire-the-night-warriors)]] | Darkstalkers: The Night Warriors (Vampire: The Night Warriors) | 12 |
 | [[dead-or-alive]] | Dead or Alive | 2 |
@@ -87,17 +85,15 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[marvel-vs-capcom-clash-of-super-heroes]] | Marvel vs. Capcom: Clash of Super Heroes | 11 |
 | [[marvel-vs-capcom-infinite]] | Marvel vs. Capcom: Infinite | 7 |
 | [[matrimelee]] | Matrimelee (Power Instinct Matrimelee) | 1 |
-| [[mk1]] | mk1 | 1 |
-| [[mk2]] | Mk2 | 2 |
+| [[mortal-kombat-1]] | Mortal Kombat 1 | 1 |
+| [[mortal-kombat-ii]] | Mortal Kombat II | 2 |
 | [[mortal-kombat-(2011)]] | Mortal Kombat (2011) | 1 |
 | [[mortal-kombat-deception]] | Mortal Kombat: Deception | 2 |
 | [[mortal-kombat-x]] | Mortal Kombat X | 1 |
 | [[msh]] | Marvel Super Heroes | 12 |
 | [[mshvsf]] | Marvel Super Heroes vs. Street Fighter | 17 |
-| [[mvc2]] | Mvc2 | 20 |
-| [[mvci]] | Marvel vs. Capcom: Infinite | 5 |
+| [[marvel-vs-capcom-2]] | Marvel vs. Capcom 2 | 20 |
 | [[night-warriors-darkstalkers-revenge]] | Night Warriors: Darkstalkers | 4 |
-| [[nightwarriors]] | Night Warriors: Darkstalkers | 31 |
 | [[ninja-masters-haoh-ninpo-cho]] | Ninja Master | 1 |
 | [[persona-4-arena-ultimax]] | Persona 4 Arena Ultimax | 3 |
 | [[plasma-sword-nightmare-of-bilstein]] | Plasma Sword: Nightmare of Bilstein | 3 |
@@ -110,8 +106,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[real-bout-fatal-fury]] | Real Bout Fatal Fury | 1 |
 | [[real-bout-fatal-fury-2-the-newcomers]] | Real Bout Fatal Fury 2: The Newcomers | 1 |
 | [[real-bout-fatal-fury-special]] | Real Bout Fatal Fury Special | 1 |
-| [[roster]] | roster | 181 |
-| [[roster_highlights]] | roster_highlights | 24 |
 | [[samurai-shodown]] | Samurai Shodown | 2 |
 | [[samurai-shodown-(2019)]] | Samurai Shodown (2019) | 5 |
 | [[samurai-shodown-ii]] | Samurai Shodown II | 2 |
@@ -119,14 +113,11 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[samurai-shodown-iv-amakusas-revenge]] | Samurai Shodown IV: Amakusa | 2 |
 | [[samurai-shodown-v]] | Samurai Shodown V | 1 |
 | [[samurai-shodown-v-special]] | Samurai Shodown V Special | 2 |
-| [[sf2]] | Super Street Fighter II Turbo | 42 |
 | [[sf31]] | Street Fighter III: New Generation | 2 |
 | [[sf32i]] | Street Fighter III: 2nd Impact - Giant Attack | 2 |
 | [[sf33s]] | Street Fighter III: 3rd Strike - Fight for the Future | 3 |
-| [[sf6]] | Street Fighter 6 | 29 |
 | [[sfa1]] | Street Fighter Alpha 1 | 5 |
 | [[sfa2]] | Street Fighter Alpha 2 | 3 |
-| [[sfa3]] | Street Fighter Alpha 3 | 64 |
 | [[snk-heroines-tag-team-frenzy]] | SNK Heroines: Tag Team Frenzy | 1 |
 | [[snk-vs-capcom-svc-chaos]] | SNK vs. Capcom: SVC Chaos | 1 |
 | [[ssf2]] | Super Street Fighter II: The New Challengers | 4 |
@@ -136,7 +127,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[street-fighter-iii-3rd-strike]] | Street Fighter III: 3rd Strike | 19 |
 | [[street-fighter-v-champion-edition]] | Street Fighter V: Champion Edition | 4 |
 | [[super-street-fighter-ii-turbo]] | Super Street Fighter II Turbo | 17 |
-| [[t8]] | t8 | 40 |
+| [[tekken-8]] | Tekken 8 | 40 |
 | [[tatsunoko-vs-capcom-ultimate-all-stars]] | Tatsunoko vs. Capcom: Ultimate All-Stars | 5 |
 | [[the-king-of-fighters-2000]] | The King of Fighters 2000 | 1 |
 | [[the-king-of-fighters-2001]] | The King of Fighters 2001 | 1 |
@@ -154,11 +145,10 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[the-king-of-fighters-xv]] | The King of Fighters XV | 4 |
 | [[the-last-blade]] | The Last Blade | 1 |
 | [[the-last-blade-2]] | The Last Blade 2 | 4 |
-| [[toshinden3]] | Toshinden3 | 26 |
+| [[battle-arena-toshinden-3]] | Battle Arena Toshinden 3 | 26 |
 | [[ultimate-marvel-vs-capcom-3]] | Ultimate Marvel vs. Capcom 3 | 10 |
 | [[ultimate-mortal-kombat-3]] | Ultimate Mortal Kombat 3 | 1 |
 | [[ultra-street-fighter-iv]] | Ultra Street Fighter IV | 5 |
-| [[umvc3]] | Ultimate Marvel vs. Capcom 3 | 10 |
 | [[under-night-in-birth-ii-[sysceles]]] | Under Night In-Birth II [Sys:Celes] | 3 |
 | [[vampire-hunter-2-darkstalkers-revenge]] | Vampire Hunter 2: Darkstalkers | 3 |
 | [[vampire-savior-2-the-lord-of-vampire]] | Vampire Savior 2: The Lord of Vampire | 3 |
@@ -167,14 +157,13 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[vampiresavior]] | Vampire Savior | 33 |
 | [[vampiresavior2]] | Vampire Savior 2 | 2 |
 | [[vf1]] | Virtua Fighter 1 - Complete Move List (Exhaustive) | 9 |
-| [[vf2]] | Vf2 | 10 |
-| [[vf3]] | Vf3 | 8 |
-| [[vf4]] | Vf4 | 7 |
+| [[virtua-fighter-2]] | Virtua Fighter 2 | 10 |
+| [[virtua-fighter-3]] | Virtua Fighter 3 | 8 |
+| [[virtua-fighter-4]] | Virtua Fighter 4 | 7 |
 | [[vf5]] | Virtua Fighter 5 Ultimate Showdown - Complete Move List (Exhaustive) | 19 |
 | [[virtua-fighter]] | Virtua Fighter | 2 |
 | [[waku-waku-7]] | Waku Waku 7 | 1 |
 | [[world-heroes-perfect]] | World Heroes Perfect | 1 |
-| [[xmcoa]] | Xmcoa | 4 |
 | [[xmvsf]] | X-Men vs. Street Fighter | 5 |
 
 ---
@@ -223,6 +212,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ## Statistics
 
-- **Total pages**: 153 (151 games)
-- **Games covered**: 151
+- **Total pages**: 142 (140 games)
+- **Games covered**: 140
 - **Last updated**: 2026-04-15

@@ -1,18 +1,18 @@
 ---
-title: "Street Fighter 6"
+title: "Mortal Kombat 1"
 type: game
-tags: [sf6]
+tags: [mortal-kombat-1]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Street Fighter 6
+# Mortal Kombat 1
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (29 registered)
+## Characters (1 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

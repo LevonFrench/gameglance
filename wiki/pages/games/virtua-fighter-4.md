@@ -1,18 +1,18 @@
 ---
-title: "Mk2"
+title: "Virtua Fighter 4"
 type: game
-tags: [mk2]
+tags: [virtua-fighter-4]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Mk2
+# Virtua Fighter 4
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (2 registered)
+## Characters (7 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

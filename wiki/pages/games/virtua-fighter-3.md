@@ -1,18 +1,18 @@
 ---
-title: "roster_highlights"
+title: "Virtua Fighter 3"
 type: game
-tags: [roster_highlights]
+tags: [virtua-fighter-3]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# roster_highlights
+# Virtua Fighter 3
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (24 registered)
+## Characters (8 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

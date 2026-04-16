@@ -1,18 +1,18 @@
 ---
-title: "Darkstalkers: The Night Warriors"
+title: "Virtua Fighter 2"
 type: game
-tags: [darkstalkers]
+tags: [virtua-fighter-2]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Darkstalkers: The Night Warriors
+# Virtua Fighter 2
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (23 registered)
+## Characters (10 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

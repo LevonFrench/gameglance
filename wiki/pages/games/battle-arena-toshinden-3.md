@@ -1,18 +1,18 @@
 ---
-title: "Night Warriors: Darkstalkers"
+title: "Battle Arena Toshinden 3"
 type: game
-tags: [nightwarriors]
+tags: [battle-arena-toshinden-3]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Night Warriors: Darkstalkers
+# Battle Arena Toshinden 3
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (31 registered)
+## Characters (26 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

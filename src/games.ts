@@ -1142,7 +1142,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 'mk1',
+    id: 'mortal-kombat-1',
     name: "Mortal Kombat 1",
     developer: "SNK",
     releaseYear: 1998,
@@ -1153,7 +1153,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 'mk2',
+    id: 'mortal-kombat-ii',
     name: "Mortal Kombat II",
     developer: "SNK",
     releaseYear: 1998,
@@ -1248,7 +1248,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 'mvc2',
+    id: 'marvel-vs-capcom-2',
     name: "Marvel vs. Capcom 2",
     developer: "SNK",
     releaseYear: 2000,
@@ -2253,7 +2253,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 't8',
+    id: 'tekken-8',
     name: "Tekken 8",
     developer: "SNK",
     releaseYear: 2024,
@@ -2507,7 +2507,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 'toshinden3',
+    id: 'battle-arena-toshinden-3',
     name: "Battle Arena Toshinden 3",
     developer: "Tamsoft",
     releaseYear: 1998,
@@ -2753,7 +2753,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 'vf2',
+    id: 'virtua-fighter-2',
     name: "Virtua Fighter 2",
     developer: "SNK",
     releaseYear: 1998,
@@ -2773,7 +2773,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 'vf3',
+    id: 'virtua-fighter-3',
     name: "Virtua Fighter 3",
     developer: "SNK",
     releaseYear: 1998,
@@ -2791,7 +2791,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 'vf4',
+    id: 'virtua-fighter-4',
     name: "Virtua Fighter 4",
     developer: "SNK",
     releaseYear: 1998,
