@@ -50,7 +50,7 @@ def process_file(docx_path):
         return None
 
 def main():
-    docx_files = glob.glob("faqs/old/*.docx") + glob.glob("faqs/*.json.docx")
+    docx_files = glob.glob("faqs/*.docx")
     if not docx_files:
         print("No .docx files found in faqs/old/ or faqs/")
         return

@@ -1253,7 +1253,7 @@ rosterCount: 16,
 
     id: 'fatal-fury-city-of-the-wolves',
 
-    name: "Fatal Fury: City of the Wolves",
+    name: "City Of The Wolves",
 
     developer: "SNK",
 
@@ -7940,6 +7940,143 @@ rosterCount: 8,
     isDraft: true,
     characters: [
 
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  }
+
+  {
+    id: 'aggressors-of-dark-kombat',
+    name: "Aggressors of Dark Kombat",
+    isDraft: true,
+    characters: [
+      { id: 'joe-kusanagi', name: 'Joe Kusanagi' },
+      { id: 'leonhard-domador', name: 'Leonhard Domador' },
+      { id: 'kisarah-westfield', name: 'Kisarah Westfield' },
+      { id: 'bobby-nelson', name: 'Bobby Nelson' },
+      { id: 'sheen-genus', name: 'Sheen Genus' },
+      { id: 'fuuma-kotaro', name: 'Fuuma Kotaro' },
+      { id: 'lee-hae-gwon', name: 'Lee Hae Gwon' },
+      { id: 'ganzagawa', name: 'Ganzagawa' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  }
+
+  {
+    id: 'chaos-code-new-sign-of-catastrophe',
+    name: "Chaos Code: New Sign of Catastrophe",
+    isDraft: true,
+    characters: [
+      { id: 'hikaru', name: 'Hikaru' },
+      { id: 'kagari', name: 'Kagari' },
+      { id: 'celia', name: 'Celia' },
+      { id: 'bravo', name: 'Bravo' },
+      { id: 'hermes', name: 'Hermes' },
+      { id: 'catherine', name: 'Catherine' },
+      { id: 'ray', name: 'Ray' },
+      { id: 'cthylla', name: 'Cthylla' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  }
+
+  {
+    id: 'rival-schools-united-by-fate',
+    name: "Rival Schools United by Fate",
+    isDraft: true,
+    characters: [
+      { id: 'batsu-ichimonji', name: 'Batsu Ichimonji' },
+      { id: 'hinata-wakaba', name: 'Hinata Wakaba' },
+      { id: 'kyosuke-kagami', name: 'Kyosuke Kagami' },
+      { id: 'shoma-sawamura', name: 'Shoma Sawamura' },
+      { id: 'natsu-ayuhara', name: 'Natsu Ayuhara' },
+      { id: 'roberto-miura', name: 'Roberto Miura' },
+      { id: 'akira-kazama', name: 'Akira Kazama' },
+      { id: 'edge-eiji-yamada', name: 'Edge (Eiji Yamada)' },
+      { id: 'gan-isurugi', name: 'Gan Isurugi' },
+      { id: 'roy-bromwell', name: 'Roy Bromwell' },
+      { id: 'tiffany-lords', name: 'Tiffany Lords' },
+      { id: 'boman-delgado', name: 'Boman Delgado' },
+      { id: 'hideo-shimazu', name: 'Hideo Shimazu' },
+      { id: 'kyoko-minazuki', name: 'Kyoko Minazuki' },
+      { id: 'raizo-imawano', name: 'Raizo Imawano' },
+      { id: 'hyo-imawano', name: 'Hyo Imawano' },
+      { id: 'sakura-kasugano', name: 'Sakura Kasugano' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  }
+
+  {
+    id: 'star-gladiator-episode-i-final-crusade',
+    name: "Star Gladiator Episode I Final Crusade",
+    isDraft: true,
+    characters: [
+      { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
+      { id: 'june-lin-milliam', name: 'June Lin Milliam' },
+      { id: 'saturn', name: 'Saturn' },
+      { id: 'gamof-gohone', name: 'Gamof Gohone' },
+      { id: 'gerelt', name: 'Gerelt' },
+      { id: 'vector', name: 'Vector' },
+      { id: 'zelkin-fiskekrogen', name: 'Zelkin Fiskekrogen' },
+      { id: 'gore-ghalahad', name: 'Gore Ghalahad' },
+      { id: 'edward-bilstein', name: 'Edward Bilstein' },
+      { id: 'blood', name: 'Blood' },
+      { id: 'kappah', name: 'Kappah' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  }
+
+  {
+    id: 'tmnt-tournament-fighters-genesis',
+    name: "TMNT Tournament Fighters (Genesis)",
+    isDraft: true,
+    characters: [
+      { id: 'leonardo', name: 'Leonardo' },
+      { id: 'donatello', name: 'Donatello' },
+      { id: 'raphael', name: 'Raphael' },
+      { id: 'michelangelo', name: 'Michelangelo' },
+      { id: 'april-oneil', name: 'April O\'Neil' },
+      { id: 'casey-jones', name: 'Casey Jones' },
+      { id: 'ray-fillet', name: 'Ray Fillet' },
+      { id: 'triceraton', name: 'Triceraton' },
+      { id: 'sisyphus', name: 'Sisyphus' },
+      { id: 'krang', name: 'Krang' },
+      { id: 'karai', name: 'Karai' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  }
+
+  {
+    id: 'tmnt-tournament-fighters-nes',
+    name: "TMNT Tournament Fighters (NES)",
+    isDraft: true,
+    characters: [
+      { id: 'leonardo', name: 'Leonardo' },
+      { id: 'michaelangelo', name: 'Michaelangelo' },
+      { id: 'donatello', name: 'Donatello' },
+      { id: 'raphael', name: 'Raphael' },
+      { id: 'casey-jones', name: 'Casey Jones' },
+      { id: 'hothead', name: 'Hothead' },
+      { id: 'shredder', name: 'Shredder' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  }
+
+  {
+    id: 'tmnt-tournament-fighters-snes',
+    name: "TMNT Tournament Fighters (SNES)",
+    isDraft: true,
+    characters: [
+      { id: 'leonardo', name: 'Leonardo' },
+      { id: 'donatello', name: 'Donatello' },
+      { id: 'michelangelo', name: 'Michelangelo' },
+      { id: 'raphael', name: 'Raphael' },
+      { id: 'aska', name: 'Aska' },
+      { id: 'armaggon', name: 'Armaggon' },
+      { id: 'chrome-dome', name: 'Chrome Dome' },
+      { id: 'war', name: 'War' },
+      { id: 'wingnut', name: 'Wingnut' },
+      { id: 'cyber-shredder', name: 'Cyber Shredder' },
+      { id: 'rat-king', name: 'Rat King' },
+      { id: 'karai', name: 'Karai' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   }

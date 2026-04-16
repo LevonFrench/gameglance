@@ -358,9 +358,6 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         >
           {characterData.character}
         </button>
-        <span style={{ color: 'var(--text-muted)' }}>›</span>
-        <span style={{ color: 'var(--text-muted)' }}>›</span>
-        <span style={{ color: 'var(--text-primary)', fontWeight: 700 }}>MOVES</span>
 
         {/* Right tools: Social links, Controller, & Theme toggle */}
         <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
