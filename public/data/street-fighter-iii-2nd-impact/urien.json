@@ -3,21 +3,91 @@
   "character": "Urien",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "spartanbomb",
+      "name": "(-/\u2500\u2500) Spartan Bomb",
+      "type": "throw",
       "inputs": [
-        "P"
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "destroyclaw",
+      "name": "(-/\u2500\u2500) Destroy Claw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "maulpunch",
+      "name": "(-/\u2500\u2500) Maul Punch",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "stepkick",
+      "name": "(-/\u2500\u2500) Step Kick",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "exmetallicsphere",
+      "name": "(!/ex) Metallic Sphere",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "exchariottackle",
+      "name": "(!/ex) Chariot Tackle",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "K",
+        "(\"!\"",
+        "on",
+        "1st",
+        "hit)"
+      ]
+    },
+    {
+      "id": "exviolencekneedrop",
+      "name": "(-/ex) Violence Knee Drop",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "K"
+      ]
+    },
+    {
+      "id": "exdangerousheadbutt",
+      "name": "(-/ex) Dangerous Headbutt",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
         "P"
       ]
     }

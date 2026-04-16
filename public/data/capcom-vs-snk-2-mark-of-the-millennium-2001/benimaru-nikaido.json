@@ -3,20 +3,155 @@
   "character": "Benimaru Nikaido",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "frontsuplex",
+      "name": "Front Suplex",
+      "type": "throw",
       "inputs": [
-        "P"
+        "back",
+        "or",
+        "forward",
+        "HP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "catchandshoot",
+      "name": "Catch And Shoot",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "spinningkneedrop",
+      "name": "Spinning Knee Drop",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "jackknifekick",
+      "name": "Jackknife Kick",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "alternativekick",
+      "name": "Alternative Kick",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "flyingdrill",
+      "name": "Flying Drill",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HK"
+      ]
+    },
+    {
+      "id": "raijinken",
+      "name": "Raijin Ken",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "taikuuraijinken",
+      "name": "Taikuu Raijin Ken",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "shinkuukatategoma",
+      "name": "Shinkuu Katategoma",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "cancel",
+      "name": "^!cancel",
+      "type": "special",
+      "inputs": [
+        "^V"
+      ]
+    },
+    {
+      "id": "iaigeri",
+      "name": "Iai Geri",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "handousandangeri",
+      "name": "^!handou Sandan Geri",
+      "type": "special",
+      "inputs": [
+        "down",
+        "up",
+        "K"
+      ]
+    },
+    {
+      "id": "superinazumakick",
+      "name": "Super Inazuma Kick",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "benimarucollider",
+      "name": "Benimaru Collider",
+      "type": "special",
+      "inputs": [
+        "close",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
         "forward",
         "P"
       ]

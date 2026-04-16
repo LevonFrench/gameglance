@@ -3,16 +3,78 @@
   "character": "Mr. Jones",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "tosstoground",
+      "name": "Toss To Ground",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "airtosstoground",
+      "name": "Air Toss To Ground",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "downelbow",
+      "name": "Down Elbow",
       "type": "normal",
       "inputs": [
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "slidedouble",
+      "name": "Slide Double",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "gaudypunch",
+      "name": "Gaudy Punch",
+      "type": "special",
+      "inputs": [
+        "^*",
+        "P"
+      ]
+    },
+    {
+      "id": "retroknuckle",
+      "name": "Retro Knuckle",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "arcfliegen",
+      "name": "Arc Fliegen",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "funkyimpact",
+      "name": "Funky Impact",
       "type": "special",
       "inputs": [
         "down",

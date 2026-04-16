@@ -3,22 +3,160 @@
   "character": "Dudley",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "livercrusher",
+      "name": "(-/\u2500\u2500) Liver Crusher",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "dynamitethrow",
+      "name": "(-/\u2500\u2500) Dynamite Throw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "slippingjab",
+      "name": "(-/\u2500\u2500) Slipping Jab",
       "type": "normal",
+      "inputs": [
+        "forward",
+        "LP"
+      ]
+    },
+    {
+      "id": "stepstraight",
+      "name": "(!/\u2500\u2500) Step Straight",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "liverblow",
+      "name": "(-/\u2500\u2500) Liver Blow",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "dartshot",
+      "name": "(-/\u2500\u2500) Dart Shot",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "exmachinegunblow",
+      "name": "(-/ex) Machine Gun Blow",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "exjetupper",
+      "name": "(!/ex) Jet Upper",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P",
+        "(\"!\"",
+        "on",
+        "normal",
+        "version)"
+      ]
+    },
+    {
+      "id": "ducking",
+      "name": "(!/\u2500\u2500) Ducking",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(!/\u2500\u2500)",
+      "type": "special",
       "inputs": [
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "",
+      "name": "(!/\u2500\u2500)",
+      "type": "special",
+      "inputs": [
+        "K"
+      ]
+    },
+    {
+      "id": "excrosscounter",
+      "name": "(-/ex) Cross Counter",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "P",
+        "(reverse",
+        "jump/high/Specials)"
+      ]
+    },
+    {
+      "id": "expunchandcrosscounter",
+      "name": "(-/ex) Punch And Cross Counter",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "forward",
+        "P",
+        "(reverse",
+        "jump/high/Specials)"
+      ]
+    },
+    {
+      "id": "exthunderbolt",
+      "name": "(-/ex) Thunderbolt",
       "type": "special",
       "inputs": [
         "down",
-        "down-forward",
-        "forward",
-        "P"
+        "down-back",
+        "back",
+        "K"
       ]
     }
   ]

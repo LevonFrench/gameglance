@@ -3,11 +3,74 @@
   "character": "Terry Bogard",
   "movesList": [
     {
-      "id": "general-attack",
-      "name": "Basic Attack",
+      "id": "busterthrow",
+      "name": "(\u2500) Buster Throw",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "bbackspinkick",
+      "name": "(b) Backspin Kick",
       "type": "normal",
       "inputs": [
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "risingupper",
+      "name": "(\u2500) Rising Upper",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        "HP"
+      ]
+    },
+    {
+      "id": "powerwave",
+      "name": "(\u2500) Power Wave",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
         "P"
+      ]
+    },
+    {
+      "id": "powerdunk",
+      "name": "(\u2500) Power Dunk",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "burnknuckle",
+      "name": "(\u2500) Burn Knuckle",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "crackshoot",
+      "name": "(\u2500) Crack Shoot",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
       ]
     }
   ]

@@ -3,22 +3,383 @@
   "character": "Ryu",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "seoinage",
+      "name": "Seoi Nage",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "tomoenage",
+      "name": "Tomoe Nage",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "kuuchuutomoenage",
+      "name": "Kuuchuu Tomoe Nage",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "sakotsuwari",
+      "name": "Sakotsu Wari",
       "type": "normal",
       "inputs": [
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "senpuukyaku",
+      "name": "Senpuu Kyaku",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "maegeri",
+      "name": "Mae Geri",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "up",
+        "MK"
+      ]
+    },
+    {
+      "id": "senpuukyaku",
+      "name": "Senpuu Kyaku",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "up",
+        "HK"
+      ]
+    },
+    {
+      "id": "hadouken",
+      "name": "Hadou Ken",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "shouryuuken",
+      "name": "Shouryuu Ken",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "tatsumakisenpuukyaku",
+      "name": "Tatsumaki Senpuu Kyaku",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "jigokuguruma",
+      "name": "Jigoku Guruma",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "tsukamihizageri",
+      "name": "Tsukami Hiza Geri",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "jigokufuusha",
+      "name": "Jigoku Fuusha",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "inazumakakatowari",
+      "name": "Inazuma Kakato Wari",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "maegeri",
+      "name": "Mae Geri",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "up",
+        "MK"
+      ]
+    },
+    {
+      "id": "senpuukyaku",
+      "name": "Senpuu Kyaku",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "up",
+        "HK"
+      ]
+    },
+    {
+      "id": "hadouken",
+      "name": "Hadou Ken",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "shouryuuken",
+      "name": "Shouryuu Ken",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "tatsumakisenpuukyaku",
+      "name": "Tatsumaki Senpuu Kyaku",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "seoinage",
+      "name": "Seoi Nage",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "jigokuguruma",
+      "name": "Jigoku Guruma",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "kuuchuujigokuguruma",
+      "name": "Kuuchuu Jigoku Guruma",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "zugaihassatsu",
+      "name": "Zugai Hassatsu",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "senpuukyaku",
+      "name": "Senpuu Kyaku",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "maegeri",
+      "name": "Mae Geri",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "up",
+        "MK"
+      ]
+    },
+    {
+      "id": "senpuukyaku",
+      "name": "Senpuu Kyaku",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "up",
+        "HK"
+      ]
+    },
+    {
+      "id": "gouhadouken",
+      "name": "Gou Hadou Ken",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "zankuuhadouken",
+      "name": "Zankuu Hadou Ken",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "goushouryuuken",
+      "name": "Gou Shouryuu Ken",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "tatsumakizankuukyaku",
+      "name": "Tatsumaki Zankuu Kyaku",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "tenmakuujinkyaku",
+      "name": "Tenma Kuujin Kyaku",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "ashurasenkuuzenpou",
+      "name": "Ashura Senkuu: Zenpou",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "^U",
+        "or",
+        "^T"
+      ]
+    },
+    {
+      "id": "ashurasenkuukouhou",
+      "name": "Ashura Senkuu: Kouhou",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down",
+        "down-back",
+        "^U",
+        "or",
+        "^T"
       ]
     }
   ]

@@ -3,36 +3,52 @@
   "character": "Kage-Maru",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "shoulderthrow",
+      "name": "Shoulder Throw",
+      "type": "throw",
       "inputs": [
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "turnovertokathrow",
+      "name": "Turnover Toka Throw",
+      "type": "throw",
+      "inputs": [
+        "P",
+        "K",
+        "_G"
+      ]
+    },
+    {
+      "id": "tenfoottoss",
+      "name": "Ten-foot Toss",
+      "type": "throw",
+      "inputs": [
+        "back",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
-      "type": "special",
+      "id": "reapingthrow",
+      "name": "Reaping Throw",
+      "type": "throw",
       "inputs": [
-        "down",
-        "down-forward",
+        "back",
         "forward",
         "P"
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "torsotakedown",
+      "name": "Torso Takedown",
+      "type": "throw",
       "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "down",
-        "down-forward",
-        "forward",
-        "P"
+        "from",
+        "behind",
+        "P",
+        "_G"
       ]
     }
   ]

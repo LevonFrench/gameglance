@@ -3,22 +3,116 @@
   "character": "Sabrewulf",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "flamingbat",
+      "name": "Flaming Bat",
+      "type": "special",
       "inputs": [
+        "down",
+        "down-back",
+        "back",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "sabrewheel",
+      "name": "Sabre Wheel",
       "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
+        "^4",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "sabrewheel",
+      "name": "Sabre Wheel",
+      "type": "special",
+      "inputs": [
+        "^6",
+        "back",
+        "MP"
+      ]
+    },
+    {
+      "id": "rollingclaw",
+      "name": "Rolling Claw",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "LK"
+      ]
+    },
+    {
+      "id": "chargingclaw",
+      "name": "Charging Claw",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "sabrepounce",
+      "name": "Sabrepounce",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "sabrehowl",
+      "name": "Sabrehowl",
+      "type": "special",
+      "inputs": [
+        "down-forward",
+        "down",
+        "down-back",
+        "HK"
+      ]
+    },
+    {
+      "id": "overhead",
+      "name": "Overhead",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "airjuggle",
+      "name": "Air Juggle",
+      "type": "normal",
+      "inputs": [
+        "^4",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "retaliation",
+      "name": "Retaliation",
+      "type": "normal",
+      "inputs": [
+        "knocked",
+        "down",
+        "back",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "combobreaker",
+      "name": "Combo Breaker",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "forward",
+        "K"
       ]
     }
   ]

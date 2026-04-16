@@ -3,22 +3,103 @@
   "character": "Sheik Maherl",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "roughtoss",
+      "name": "Rough Toss",
+      "type": "throw",
       "inputs": [
-        "P"
+        "back",
+        "or",
+        "forward",
+        "HP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "slaps",
+      "name": "Slaps",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "bellyhit",
+      "name": "Belly Hit",
+      "type": "normal",
+      "inputs": [
+        "P",
+        "HP"
+      ]
+    },
+    {
+      "id": "buttdrop",
+      "name": "Butt Drop",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "bellydrop",
+      "name": "Belly Drop",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "mahrelbomb",
+      "name": "Mahrel Bomb",
       "type": "special",
       "inputs": [
+        "P",
+        "K",
+        "HP",
+        "or",
+        "K",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "firebreath",
+      "name": "Fire Breath",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
         "down",
         "down-forward",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "slashsword",
+      "name": "Slash Sword",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "punishsword",
+      "name": "Punish Sword",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
       ]
     }
   ]

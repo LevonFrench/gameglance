@@ -3,16 +3,119 @@
   "character": "Slash",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "kickturnthrow",
+      "name": "(\u2500\u2500) Kick Turn Throw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "airkickturnthrow",
+      "name": "(\u2500\u2500) Air Kick Turn Throw",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "tsuki",
+      "name": "(\u2500\u2500) Tsuki",
       "type": "normal",
       "inputs": [
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "renzoukugeri",
+      "name": "(\u2500\u2500) Renzouku Geri",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "gedantsuki",
+      "name": "(\u2500\u2500) Gedan Tsuki",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "hizakyaku",
+      "name": "(\u2500\u2500) Hiza Kyaku",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "zanrijouge",
+      "name": "(\u2500\u2500) Zanri Jouge",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "P"
+      ]
+    },
+    {
+      "id": "zanrigeroshi",
+      "name": "(\u2500\u2500) Zanri Geroshi",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "kabutowari",
+      "name": "(\u2500\u2500) Kabuto Wari",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "highkick",
+      "name": "(\u2500\u2500) High Kick",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HK"
+      ]
+    },
+    {
+      "id": "sankakutobi",
+      "name": "(\u2500\u2500) Sankaku Tobi",
+      "type": "normal",
+      "inputs": [
+        "jump",
+        "against",
+        "the",
+        "wall",
+        "up-forward"
+      ]
+    },
+    {
+      "id": "esslashshot",
+      "name": "(es) Slash Shot",
       "type": "special",
       "inputs": [
         "down",
@@ -22,17 +125,43 @@
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "esslashbarrier",
+      "name": "(es) Slash Barrier",
+      "type": "special",
       "inputs": [
         "down",
-        "down-forward",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "esslashdynamic",
+      "name": "(es) Slash Dynamic",
+      "type": "special",
+      "inputs": [
         "forward",
         "down",
         "down-forward",
-        "forward",
         "P"
+      ]
+    },
+    {
+      "id": "slashteleport",
+      "name": "(\u2500\u2500) Slash Teleport",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "back",
+        "down",
+        "down-back",
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP",
+        "or",
+        "HK"
       ]
     }
   ]

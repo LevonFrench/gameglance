@@ -3,32 +3,151 @@
   "character": "Muscle Power",
   "movesList": [
     {
+      "id": "verticalsuplex",
+      "name": "Vertical Suplex",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "kneedrop",
+      "name": "Knee Drop",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "P",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "powerbomb",
+      "name": "Powerbomb",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "chokehold",
+      "name": "Choke Hold",
+      "type": "throw",
+      "inputs": [
+        "within",
+        "throw",
+        "range",
+        "back",
+        "or",
+        "forward",
+        "P",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "headbutt",
+      "name": "Headbutt",
+      "type": "throw",
+      "inputs": [
+        "within",
+        "throw",
+        "range",
+        "back",
+        "or",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "firemanscarry",
+      "name": "Fireman's Carry",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "P"
+      ]
+    },
+    {
+      "id": "onetwoaxle",
+      "name": "One-two-axle",
+      "type": "normal",
+      "inputs": [
+        "P",
+        "P",
+        "P"
+      ]
+    },
+    {
+      "id": "elbowdrop",
+      "name": "Elbow Drop",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "P"
+      ]
+    },
+    {
+      "id": "musclebomber",
       "name": "Muscle Bomber",
       "type": "special",
       "inputs": [
-        "[",
-        "back",
-        "]",
+        "^4",
         "forward",
-        "+A"
-      ],
-      "id": "muscle-bomber"
+        "P"
+      ]
     },
     {
-      "name": "Tornado Breaker",
+      "id": "tornadobodysmash",
+      "name": "Tornado Body Smash",
       "type": "special",
       "inputs": [
-        "360+A"
-      ],
-      "id": "tornado-breaker"
+        "close",
+        "_x",
+        "P"
+      ]
     },
     {
+      "id": "giantswing",
+      "name": "Giant Swing",
+      "type": "special",
+      "inputs": [
+        "close",
+        "_x",
+        "K"
+      ]
+    },
+    {
+      "id": "superdropkick",
       "name": "Super Drop Kick",
       "type": "special",
       "inputs": [
-        "Hold B, release"
-      ],
-      "id": "super-drop-kick"
+        "down",
+        "down-forward",
+        "forward",
+        "up-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "antiaircraftjumpswing",
+      "name": "Anti-aircraft Jump Swing",
+      "type": "special",
+      "inputs": [
+        "opponent",
+        "in",
+        "air",
+        "P",
+        "K",
+        "HP"
+      ]
     }
   ]
 }

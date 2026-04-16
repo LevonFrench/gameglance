@@ -3,22 +3,152 @@
   "character": "Pyron",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "coronawhip",
+      "name": "(\u2500\u2500/\u2500) Corona Whip",
+      "type": "throw",
       "inputs": [
-        "P"
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "galacticthrow",
+      "name": "(\u2500\u2500/\u2500) Galactic Throw",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "flamehead",
+      "name": "(\u2500\u2500/\u2500) Flame Head",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "LP"
+      ]
+    },
+    {
+      "id": "blastblaze",
+      "name": "(\u2500\u2500/\u2500) Blast Blaze",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "meteordestroy",
+      "name": "(\u2500\u2500/\u2500) Meteor Destroy",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "meteorattack",
+      "name": "(\u2500\u2500/\u2500) Meteor Attack",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "LP"
+      ]
+    },
+    {
+      "id": "meteorbastard",
+      "name": "(\u2500\u2500/\u2500) Meteor Bastard",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "MP"
+      ]
+    },
+    {
+      "id": "meteormagnify",
+      "name": "(\u2500\u2500/\u2500) Meteor Magnify",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "essolsmasher",
+      "name": "(es/\u2500) Sol Smasher",
       "type": "special",
       "inputs": [
+        "(_^)",
         "down",
         "down-forward",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "esgzodiacfire",
+      "name": "(es/g) Zodiac Fire",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "esorbiterblaze",
+      "name": "(es/\u2500) Orbiter Blaze",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "galaxytrip",
+      "name": "(\u2500\u2500/\u2500) Galaxy Trip",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "back",
+        "down",
+        "down-back",
+        "P",
+        "or",
+        "K"
+      ]
+    },
+    {
+      "id": "esplanetburning",
+      "name": "(es/\u2500) Planet Burning",
+      "type": "special",
+      "inputs": [
+        "close",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "MP",
+        "or",
+        "HP"
       ]
     }
   ]

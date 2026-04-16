@@ -3,36 +3,202 @@
   "character": "Spiral",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "grabandtoss",
+      "name": "Grab And Toss",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "grabandpunches",
+      "name": "Grab And Punches",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "legtoss",
+      "name": "Leg Toss",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "airgrabandtoss",
+      "name": "Air Grab And Toss",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "airlegtoss",
+      "name": "Air Leg Toss",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "triplearmstrike",
+      "name": "Triple Arm Strike",
       "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "MP"
+      ]
+    },
+    {
+      "id": "downwardpunch",
+      "name": "Downward Punch",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "dancingsword",
+      "name": "Dancing Sword",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "^W"
+      ]
+    },
+    {
+      "id": "swordthrow",
+      "name": "^!sword Throw",
+      "type": "special",
       "inputs": [
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "tsurugitobashidown",
+      "name": "^!tsurugi Tobashi: Down",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-forward",
+        "forward",
+        "LP"
+      ]
+    },
+    {
+      "id": "tsurugitobashizen",
+      "name": "^!tsurugi Tobashi: Zen",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "tsurugitobashiue",
+      "name": "^!tsurugi Tobashi: Ue",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "tsurugitobashiexplosion",
+      "name": "^!tsurugi Tobashi: Explosion",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "LK"
+      ]
+    },
+    {
+      "id": "tsurugitobashisenkai",
+      "name": "^!tsurugi Tobashi: Senkai",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "tsurugitobashi6houkou",
+      "name": "^!tsurugi Tobashi: 6 Houkou",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "sixhandgrapple",
+      "name": "Six-hand Grapple",
       "type": "special",
       "inputs": [
         "down",
-        "down-forward",
-        "forward",
+        "up",
         "P"
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "kyuukoukadance",
+      "name": "Kyuukouka Dance",
+      "type": "special",
       "inputs": [
+        "_^",
         "down",
-        "down-forward",
-        "forward",
-        "down",
-        "down-forward",
-        "forward",
-        "P"
+        "down-back",
+        "back",
+        "HP"
       ]
     }
   ]

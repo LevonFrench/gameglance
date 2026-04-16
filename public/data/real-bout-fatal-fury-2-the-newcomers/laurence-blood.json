@@ -3,11 +3,76 @@
   "character": "Laurence Blood",
   "movesList": [
     {
-      "id": "general-attack",
-      "name": "Basic Attack",
+      "id": "flyingbuster",
+      "name": "(\u2500/\u2500\u2500) Flying Buster",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "oledodge",
+      "name": "(\u2500/\u2500\u2500) Ole Dodge",
       "type": "normal",
       "inputs": [
+        "K",
+        "HP"
+      ]
+    },
+    {
+      "id": "pspinkick",
+      "name": "(p/\u2500\u2500) Spin Kick",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "bloodymixer",
+      "name": "(\u2500/\u2500\u2500) Bloody Mixer",
+      "type": "special",
+      "inputs": [
+        "^*",
         "P"
+      ]
+    },
+    {
+      "id": "bsbloodyspin",
+      "name": "(\u2500/bs) Bloody Spin",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "P",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "bloodysaber",
+      "name": "(\u2500/\u2500\u2500) Bloody Saber",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "bsbloodycutter",
+      "name": "(\u2500/bs) Bloody Cutter",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "HP"
       ]
     }
   ]

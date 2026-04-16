@@ -3,18 +3,67 @@
   "character": "Iceman",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "grabandfreeze",
+      "name": "Grab And Freeze",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "groundslam",
+      "name": "Ground Slam",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "airgrabandfreeze",
+      "name": "Air Grab And Freeze",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "iceboulder",
+      "name": "Ice Boulder",
       "type": "normal",
       "inputs": [
-        "P"
+        "_^",
+        "down",
+        "HP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "downwardkick",
+      "name": "Downward Kick",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HK"
+      ]
+    },
+    {
+      "id": "icebeam",
+      "name": "Ice Beam",
       "type": "special",
       "inputs": [
+        "(_^)",
         "down",
         "down-forward",
         "forward",
@@ -22,17 +71,19 @@
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "iceavalanche",
+      "name": "Ice Avalanche",
+      "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "down",
-        "down-forward",
-        "forward",
-        "P"
+        "(_^)",
+        "LP",
+        "LK",
+        "or",
+        "MP",
+        "MK",
+        "or",
+        "HP",
+        "HK"
       ]
     }
   ]

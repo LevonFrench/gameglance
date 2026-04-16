@@ -1,40 +1,126 @@
 {
-    "game": "Golden Axe: The Duel",
-    "character": "Zoma",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Poison Mist",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-forward",
-                "forward",
-                "Slash"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Shadow Warp",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down",
-                "down-forward",
-                "Slash"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Skull Toss",
-            "type": "throw",
-            "inputs": [
-                "down",
-                "down-back",
-                "back",
-                "Slash"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Golden Axe: The Duel",
+  "character": "Zoma",
+  "movesList": [
+    {
+      "id": "stafflaunch",
+      "name": "Staff Launch",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "headcrusher",
+      "name": "Head Crusher",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "circleofdeath",
+      "name": "Circle Of Death",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "quickstaff",
+      "name": "Quick Staff",
+      "type": "special",
+      "inputs": [
+        "^*",
+        "P"
+      ]
+    },
+    {
+      "id": "changeling",
+      "name": "Changeling",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "skullcharge",
+      "name": "Skull Charge",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "up-back",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "levitation",
+      "name": "Levitation",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "airdash",
+      "name": "^!air Dash",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "forward"
+      ]
+    },
+    {
+      "id": "airlongdash",
+      "name": "^!air Long Dash",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "^6"
+      ]
+    },
+    {
+      "id": "airretreat",
+      "name": "^!air Retreat",
+      "type": "special",
+      "inputs": [
+        "back",
+        "back"
+      ]
+    },
+    {
+      "id": "dropdown",
+      "name": "^!drop Down",
+      "type": "special",
+      "inputs": [
+        "down"
+      ]
+    },
+    {
+      "id": "skullcharge",
+      "name": "^!skull Charge",
+      "type": "special",
+      "inputs": [
+        "up-back",
+        "down-forward",
+        "P"
+      ]
+    }
+  ],
+  "combosList": []
 }

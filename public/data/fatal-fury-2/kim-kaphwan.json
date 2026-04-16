@@ -3,8 +3,27 @@
   "character": "Kim Kaphwan",
   "movesList": [
     {
-      "id": "sp_0",
-      "name": "Hangetsu Zan",
+      "id": "sakkyakunage",
+      "name": "(\u2500) Sakkyaku Nage",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "hishoukyaku",
+      "name": "(\u2500) Hishou Kyaku",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "hangetsuzan",
+      "name": "(\u2500) Hangetsu Zan",
       "type": "special",
       "inputs": [
         "down",
@@ -14,29 +33,12 @@
       ]
     },
     {
-      "id": "sp_1",
-      "name": "Hien Zan",
+      "id": "hienzan",
+      "name": "(\u2500) Hien Zan",
       "type": "special",
       "inputs": [
-        "[",
-        "down",
-        "]",
+        "^2",
         "up",
-        "K"
-      ]
-    },
-    {
-      "id": "sp_2",
-      "name": "Hishou Kyaku",
-      "type": "special",
-      "inputs": [
-        "(",
-        "In",
-        " ",
-        "Air",
-        ")",
-        " ",
-        "down",
         "K"
       ]
     }

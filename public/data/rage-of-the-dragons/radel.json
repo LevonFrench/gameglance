@@ -3,21 +3,82 @@
   "character": "Radel",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "legcyclone",
+      "name": "Leg Cyclone",
+      "type": "throw",
       "inputs": [
-        "P"
+        "back",
+        "or",
+        "forward",
+        "HP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "doublespike",
+      "name": "Double Spike",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "glassescape",
+      "name": "Glass Escape",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "deaddragon",
+      "name": "Dead Dragon",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "screwback",
+      "name": "Screw Back",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "headexecution",
+      "name": "Head Execution",
+      "type": "special",
+      "inputs": [
+        "close",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "glasssmash",
+      "name": "^!glass Smash",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
         "P"
       ]
     }

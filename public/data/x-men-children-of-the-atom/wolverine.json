@@ -3,36 +3,162 @@
   "character": "Wolverine",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "shouldermountadamantiumhell",
+      "name": "Shoulder Mount Adamantium Hell",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "groundmountadamantiumhell",
+      "name": "Ground Mount Adamantium Hell",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "airborneadamantiumhell",
+      "name": "Airborne Adamantium Hell",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "taunt",
+      "name": "Taunt",
       "type": "normal",
       "inputs": [
-        "P"
+        "LP",
+        "MK",
+        "MK",
+        "HP",
+        "MP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "doubleclaw",
+      "name": "Double Claw",
+      "type": "normal",
+      "inputs": [
+        "MP",
+        "MP"
+      ]
+    },
+    {
+      "id": "doublekick",
+      "name": "Double Kick",
+      "type": "normal",
+      "inputs": [
+        "MK",
+        "MK"
+      ]
+    },
+    {
+      "id": "slidingclaw",
+      "name": "Sliding Claw",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "repetedclaw",
+      "name": "Repeted Claw",
+      "type": "normal",
+      "inputs": [
+        "_^^*",
+        "MP"
+      ]
+    },
+    {
+      "id": "dartkick",
+      "name": "Dart Kick",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "MK"
+      ]
+    },
+    {
+      "id": "sankakutobi",
+      "name": "Sankaku Tobi",
+      "type": "normal",
+      "inputs": [
+        "jump",
+        "against",
+        "the",
+        "wall",
+        "up-forward"
+      ]
+    },
+    {
+      "id": "tornadoclaw",
+      "name": "Tornado Claw",
       "type": "special",
       "inputs": [
+        "forward",
         "down",
         "down-forward",
-        "forward",
-        "P"
+        "P",
+        "(^*)"
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "drillclaw",
+      "name": "Drill Claw",
+      "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "down",
-        "down-forward",
-        "forward",
-        "P"
+        "(_^)",
+        "LP",
+        "LK",
+        "or",
+        "MP",
+        "MK",
+        "or",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "kabetsukidrillclaw",
+      "name": "Kabetsuki Drill Claw",
+      "type": "special",
+      "inputs": [
+        "jump",
+        "against",
+        "the",
+        "wall",
+        "back",
+        "LP",
+        "LK",
+        "or",
+        "MP",
+        "MK",
+        "or",
+        "HP",
+        "HK",
+        ",",
+        "_?",
+        "P",
+        "or",
+        "K"
       ]
     }
   ]

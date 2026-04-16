@@ -3,22 +3,114 @@
   "character": "Potemkin",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "tossup",
+      "name": "Toss Up",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "headbutt",
+      "name": "Headbutt",
       "type": "normal",
       "inputs": [
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "knucklesandwich",
+      "name": "Knuckle Sandwich",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "megafistzenpou",
+      "name": "Mega Fist: Zenpou",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "megafistkouhou",
+      "name": "Mega Fist: Kouhou",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "slidehead",
+      "name": "Slide Head",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "_a"
+      ]
+    },
+    {
+      "id": "hammerfall",
+      "name": "Hammer Fall",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "potemkinbuster",
+      "name": "Potemkin Buster",
+      "type": "special",
+      "inputs": [
+        "close",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "heatknuckle",
+      "name": "Heat Knuckle",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "heatextend",
+      "name": "^!heat Extend",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "_b"
       ]
     }
   ]

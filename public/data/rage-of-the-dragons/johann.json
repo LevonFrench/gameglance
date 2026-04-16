@@ -3,22 +3,59 @@
   "character": "Johann",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "painfulscream",
+      "name": "Painful Scream",
+      "type": "throw",
       "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "surgeofanger",
+      "name": "Surge Of Anger",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "signsofdoom",
+      "name": "Signs Of Doom",
       "type": "special",
       "inputs": [
         "down",
-        "down-forward",
-        "forward",
-        "P"
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "silentsorrow",
+      "name": "Silent Sorrow",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "painfulscream",
+      "name": "Painful Scream",
+      "type": "special",
+      "inputs": [
+        "close",
+        "down",
+        "down-back",
+        "back",
+        "HK"
       ]
     }
   ]

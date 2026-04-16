@@ -3,22 +3,78 @@
   "character": "Jax",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "missile",
+      "name": "Missile",
+      "type": "special",
       "inputs": [
-        "P"
+        "back",
+        "forward",
+        "HP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "doublemissile",
+      "name": "Double Missile",
       "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
         "forward",
-        "P"
+        "forward",
+        "back",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "groundsmash",
+      "name": "Ground Smash",
+      "type": "special",
+      "inputs": [
+        "_O",
+        "LK",
+        "for",
+        "2",
+        "seconds"
+      ]
+    },
+    {
+      "id": "dashingpound",
+      "name": "Dashing Pound",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "gotchagrab",
+      "name": "Gotcha Grab",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "forward",
+        "LP",
+        "(^*)"
+      ]
+    },
+    {
+      "id": "quadslam",
+      "name": "Quad Slam",
+      "type": "special",
+      "inputs": [
+        "Throw",
+        "^*",
+        "HP"
+      ]
+    },
+    {
+      "id": "backbreaker",
+      "name": "Backbreaker",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "close",
+        "_G"
       ]
     }
   ]

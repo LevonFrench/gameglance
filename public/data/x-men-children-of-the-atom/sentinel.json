@@ -3,36 +3,198 @@
   "character": "Sentinel",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "grabandmissile",
+      "name": "Grab And Missile",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "grabandrocketpunch",
+      "name": "Grab And Rocket Punch",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "airgrabandmissile",
+      "name": "Air Grab And Missile",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "airgrabandrocketpunch",
+      "name": "Air Grab And Rocket Punch",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "hardpunch",
+      "name": "Hard Punch",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "MP"
+      ]
+    },
+    {
+      "id": "helicopterkick",
+      "name": "Helicopter Kick",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HK"
+      ]
+    },
+    {
+      "id": "groundgrab",
+      "name": "Ground Grab",
+      "type": "normal",
+      "inputs": [
+        "opponent",
+        "knocked",
+        "down",
+        "down",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "grabandmissile",
+      "name": "^!grab And Missile",
       "type": "normal",
       "inputs": [
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "rocketpunchdownwards",
+      "name": "Rocket Punch: Downwards",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "LP"
+      ]
+    },
+    {
+      "id": "retract",
+      "name": "^!retract",
+      "type": "special",
+      "inputs": [
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "rocketpunchforward",
+      "name": "Rocket Punch: Forward",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "retract",
+      "name": "^!retract",
+      "type": "special",
+      "inputs": [
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "rocketpunchupwards",
+      "name": "Rocket Punch: Upwards",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "retract",
+      "name": "^!retract",
+      "type": "special",
+      "inputs": [
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "sentinelforcecontrol",
+      "name": "Sentinel Force: Control",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "LK"
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "control",
+      "name": "^!control",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "or",
+        "^8"
+      ]
+    },
+    {
+      "id": "sentinelforcestraight",
+      "name": "Sentinel Force: Straight",
+      "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "sentinelforcecarpetbomb",
+      "name": "Sentinel Force: Carpet Bomb",
+      "type": "special",
+      "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "HK",
+        "(_O)"
       ]
     }
   ]

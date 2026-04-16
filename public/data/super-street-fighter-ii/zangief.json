@@ -3,11 +3,188 @@
   "character": "Zangief",
   "movesList": [
     {
-      "id": "general-attack",
-      "name": "Basic Attack",
+      "id": "piledriver",
+      "name": "Piledriver",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "ironclaw",
+      "name": "Iron Claw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "brainbuster",
+      "name": "Brainbuster",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "kamitsuki",
+      "name": "Kamitsuki",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "stomachclaw",
+      "name": "Stomach Claw",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "airdeadlydriver",
+      "name": "Air Deadly Driver",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "airlegthrow",
+      "name": "Air Leg Throw",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "flyingbodypress",
+      "name": "Flying Body Press",
       "type": "normal",
       "inputs": [
+        "diagonal",
+        "jump",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "doublekneedrop",
+      "name": "Double Knee Drop",
+      "type": "normal",
+      "inputs": [
+        "diagonal",
+        "jump",
+        "down",
+        "LK",
+        "or",
+        "MK"
+      ]
+    },
+    {
+      "id": "airheadbutt",
+      "name": "Air Headbutt",
+      "type": "normal",
+      "inputs": [
+        "vertical",
+        "jump",
+        "up",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "doublelariat",
+      "name": "Double Lariat",
+      "type": "special",
+      "inputs": [
+        "^U"
+      ]
+    },
+    {
+      "id": "move",
+      "name": "^!move",
+      "type": "special",
+      "inputs": [
+        "back",
+        "or",
+        "forward"
+      ]
+    },
+    {
+      "id": "quickdoublelariat",
+      "name": "Quick Double Lariat",
+      "type": "special",
+      "inputs": [
+        "^T"
+      ]
+    },
+    {
+      "id": "move",
+      "name": "^!move",
+      "type": "special",
+      "inputs": [
+        "back",
+        "or",
+        "forward"
+      ]
+    },
+    {
+      "id": "spinningpiledriver",
+      "name": "Spinning Piledriver",
+      "type": "special",
+      "inputs": [
+        "close",
+        "_x",
         "P"
+      ]
+    },
+    {
+      "id": "atomicsuplex",
+      "name": "Atomic Suplex",
+      "type": "special",
+      "inputs": [
+        "close",
+        "_x",
+        "K"
+      ]
+    },
+    {
+      "id": "flyingpowerbomb",
+      "name": "Flying Powerbomb",
+      "type": "special",
+      "inputs": [
+        "_x",
+        "K"
       ]
     }
   ]

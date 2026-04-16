@@ -3,22 +3,219 @@
   "character": "Dhalsim",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "wchnsyogasmash",
+      "name": "(w/c/h/n/s) Yoga Smash",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "wchnsyogathrow",
+      "name": "(w/c/h/n/s) Yoga Throw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "sstretchpunt",
+      "name": "(\u2500/\u2500/\u2500/\u2500/s) Stretch Punt",
       "type": "normal",
       "inputs": [
+        "forward",
+        "LK"
+      ]
+    },
+    {
+      "id": "syogashock",
+      "name": "(\u2500/\u2500/\u2500/\u2500/s) Yoga Shock",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "LP"
+      ]
+    },
+    {
+      "id": "sshutouchop",
+      "name": "(\u2500/\u2500/\u2500/\u2500/s) Shutou Chop",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "MP"
+      ]
+    },
+    {
+      "id": "syogaheadbutt",
+      "name": "(\u2500/\u2500/\u2500/\u2500/s) Yoga Headbutt",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "sshorthighkick",
+      "name": "(\u2500/\u2500/\u2500/\u2500/s) Short High Kick",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "MK"
+      ]
+    },
+    {
+      "id": "syogakneekick",
+      "name": "(\u2500/\u2500/\u2500/\u2500/s) Yoga Knee Kick",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "HK"
+      ]
+    },
+    {
+      "id": "sshortmidpunch",
+      "name": "(\u2500/\u2500/\u2500/\u2500/s) Short Mid Punch",
+      "type": "normal",
+      "inputs": [
+        "down-back",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "sshortlowkick",
+      "name": "(\u2500/\u2500/\u2500/\u2500/s) Short Low Kick",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        "LK"
+      ]
+    },
+    {
+      "id": "sshortsweep",
+      "name": "(\u2500/\u2500/\u2500/\u2500/s) Short Sweep",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "wdrillkick",
+      "name": "(w/\u2500/\u2500/\u2500/\u2500) Drill Kick",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "HK"
+      ]
+    },
+    {
+      "id": "chndrillkick",
+      "name": "(\u2500/c/h/n/\u2500) Drill Kick",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HK"
+      ]
+    },
+    {
+      "id": "sdrillkick",
+      "name": "(\u2500/\u2500/\u2500/\u2500/s) Drill Kick",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "wdrillzutsuki",
+      "name": "(w/\u2500/\u2500/\u2500/\u2500) Drill Zutsuki",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "HP"
+      ]
+    },
+    {
+      "id": "chnsdrillzutsuki",
+      "name": "(\u2500/c/h/n/s) Drill Zutsuki",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "wchnsyogafire",
+      "name": "(w/c/h/n/s) Yoga Fire",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "wchnsyogaflame",
+      "name": "(w/c/h/n/s) Yoga Flame",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "syogablast",
+      "name": "(\u2500/\u2500/\u2500/\u2500/s) Yoga Blast",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "hnsyogateleportzenpou",
+      "name": "(\u2500/\u2500/h/n/s) Yoga Teleport: Zenpou",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "^U",
+        "or",
+        "^T"
+      ]
+    },
+    {
+      "id": "hnsyogateleportkouhou",
+      "name": "(\u2500/\u2500/h/n/s) Yoga Teleport: Kouhou",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down",
+        "down-back",
+        "^U",
+        "or",
+        "^T"
       ]
     }
   ]

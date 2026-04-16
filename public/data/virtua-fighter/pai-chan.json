@@ -3,34 +3,41 @@
   "character": "Pai Chan",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "wristtwist",
+      "name": "Wrist Twist",
+      "type": "throw",
       "inputs": [
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "reapingthrow",
+      "name": "Reaping Throw",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "forward",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "ddt",
+      "name": "D.d.t.",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "down",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
-      "type": "special",
+      "id": "pushover",
+      "name": "Pushover",
+      "type": "throw",
       "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "P"
-      ]
-    },
-    {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "down",
-        "down-forward",
+        "back",
         "forward",
         "P"
       ]

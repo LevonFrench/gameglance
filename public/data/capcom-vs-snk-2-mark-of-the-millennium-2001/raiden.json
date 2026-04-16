@@ -3,21 +3,129 @@
   "character": "Raiden",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "piledriver",
+      "name": "Piledriver",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "bearhug",
+      "name": "Bear Hug",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "stampkick",
+      "name": "Stamp Kick",
       "type": "normal",
       "inputs": [
+        "down-forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "flyingbodypress",
+      "name": "Flying Body Press",
+      "type": "normal",
+      "inputs": [
+        "diagonal",
+        "jump",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "dokugiri",
+      "name": "Dokugiri",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "giantbomb",
+      "name": "Giant Bomb",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "superdropkick",
+      "name": "Super Drop Kick",
+      "type": "special",
+      "inputs": [
+        "_O^V"
+      ]
+    },
+    {
+      "id": "thundercrushbomb",
+      "name": "Thunder Crush Bomb",
+      "type": "special",
+      "inputs": [
+        "close",
+        "_x",
+        "K"
+      ]
+    },
+    {
+      "id": "combinationbodyblow",
+      "name": "Combination Body Blow",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down",
+        "down-back",
+        "P"
+      ]
+    },
+    {
+      "id": "headbutt",
+      "name": "^!headbutt",
       "type": "special",
       "inputs": [
         "down",
-        "down-forward",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "frontsuplex",
+      "name": "^!front Suplex",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "jumpinglariatdrop",
+      "name": "Jumping Lariat Drop",
+      "type": "special",
+      "inputs": [
         "forward",
+        "down",
+        "down-forward",
         "P"
       ]
     }

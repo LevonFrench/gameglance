@@ -3,21 +3,78 @@
   "character": "Elias Patrick",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "heartpunch",
+      "name": "Heart Punch",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "punchdown",
+      "name": "Punch Down",
       "type": "normal",
       "inputs": [
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "doublelow",
+      "name": "Double Low",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "holyflare",
+      "name": "Holy Flare",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "magnus",
+      "name": "Magnus",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "hellorheaven",
+      "name": "Hell Or Heaven",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "sinful",
+      "name": "Sinful",
+      "type": "special",
+      "inputs": [
+        "close",
+        "forward",
+        "down",
+        "down-forward",
         "P"
       ]
     }

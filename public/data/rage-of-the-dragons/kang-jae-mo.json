@@ -3,21 +3,86 @@
   "character": "Kang Jae-Mo",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "somersaulttoss",
+      "name": "Somersault Toss",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "sumostomp",
+      "name": "Sumo Stomp",
       "type": "normal",
       "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "sumocharge",
+      "name": "Sumo Charge",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "stomachset",
+      "name": "Stomach Set",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "firebomb",
+      "name": "Fire Bomb",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "kangscrew",
+      "name": "Kang Screw",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "kanganger",
+      "name": "Kang Anger",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "rollingfire",
+      "name": "Rolling Fire",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
         "P"
       ]
     }

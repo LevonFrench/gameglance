@@ -1,40 +1,78 @@
 {
-    "game": "Golden Axe: The Duel",
-    "character": "Jamm",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Claw Slash",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-forward",
-                "forward",
-                "Slash"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Wild Leap",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down",
-                "down-forward",
-                "Kick"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Spirit Summon",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-back",
-                "back",
-                "Slash"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Golden Axe: The Duel",
+  "character": "Jamm",
+  "movesList": [
+    {
+      "id": "headbite",
+      "name": "Head Bite",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "droppingcannonball",
+      "name": "Dropping Cannonball",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "snappingtail",
+      "name": "Snapping Tail",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "mulekick",
+      "name": "Mule Kick",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "catspaw",
+      "name": "Cat's Paw",
+      "type": "special",
+      "inputs": [
+        "^*",
+        "K"
+      ]
+    },
+    {
+      "id": "beastblast",
+      "name": "Beast Blast",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P",
+        "(_O)"
+      ]
+    },
+    {
+      "id": "thunderingherd",
+      "name": "Thundering Herd",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "P"
+      ]
+    }
+  ],
+  "combosList": []
 }

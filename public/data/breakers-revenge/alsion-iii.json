@@ -3,22 +3,159 @@
   "character": "Alsion III",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "quicktoss",
+      "name": "Quick Toss",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "piledriver",
+      "name": "Piledriver",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "HP",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "flyingslap",
+      "name": "Flying Slap",
       "type": "normal",
       "inputs": [
+        "P",
+        "HP"
+      ]
+    },
+    {
+      "id": "crescentkick",
+      "name": "Crescent Kick",
+      "type": "normal",
+      "inputs": [
+        "K",
+        "HK"
+      ]
+    },
+    {
+      "id": "claw",
+      "name": "Claw",
+      "type": "normal",
+      "inputs": [
+        "back",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "shinkick",
+      "name": "Shin Kick",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "lowpalmstrike",
+      "name": "Low Palm Strike",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "retreatingdoublekick",
+      "name": "Retreating Double Kick",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "HK"
+      ]
+    },
+    {
+      "id": "downpalm",
+      "name": "Down Palm",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "P"
+      ]
+    },
+    {
+      "id": "quickkick",
+      "name": "Quick Kick",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "stretchstrike",
+      "name": "Stretch Strike",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "knee",
+      "name": "Knee",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HK"
+      ]
+    },
+    {
+      "id": "dashknee",
+      "name": "Dash Knee",
       "type": "special",
       "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "poisonfang",
+      "name": "Poison Fang",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
         "down",
         "down-forward",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "deadlyclaw",
+      "name": "Deadly Claw",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-back",
+        "back",
+        "K"
       ]
     }
   ]

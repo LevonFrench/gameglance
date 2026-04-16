@@ -1,31 +1,51 @@
 {
-    "game": "mk1",
-    "character": "Scorpion",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Spear",
-            "type": "special",
-            "inputs": [
-                "[Back] [Forward] [Front Punch]"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Hell Port",
-            "type": "special",
-            "inputs": [
-                "[Down] [Back] [Back Kick]"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Quick Poke (D1)",
-            "type": "special",
-            "inputs": [
-                "[Down] [Front Punch]"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "mk1",
+  "character": "Scorpion",
+  "movesList": [
+    {
+      "id": "spear",
+      "name": "Spear",
+      "type": "special",
+      "inputs": [
+        "back",
+        "back",
+        "LP"
+      ]
+    },
+    {
+      "id": "teleportpunch",
+      "name": "Teleport Punch",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "leggrab",
+      "name": "Leg Grab",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "LK"
+      ]
+    },
+    {
+      "id": "airthrow",
+      "name": "Air Throw",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "close",
+        "_G"
+      ]
+    }
+  ],
+  "combosList": []
 }

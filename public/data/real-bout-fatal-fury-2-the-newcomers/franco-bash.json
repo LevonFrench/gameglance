@@ -3,11 +3,98 @@
   "character": "Franco Bash",
   "movesList": [
     {
-      "id": "general-attack",
-      "name": "Basic Attack",
+      "id": "gorillarush",
+      "name": "(\u2500/\u2500\u2500) Gorilla Rush",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "barompunch",
+      "name": "(\u2500/\u2500\u2500) Barom Punch",
       "type": "normal",
       "inputs": [
+        "K",
+        "HP"
+      ]
+    },
+    {
+      "id": "pbashtornado",
+      "name": "(p/\u2500\u2500) Bash Tornado",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "poweruppercut",
+      "name": "(\u2500/\u2500\u2500) Power Uppercut",
+      "type": "normal",
+      "inputs": [
+        "knocked",
+        "down",
+        "^*",
+        "HP"
+      ]
+    },
+    {
+      "id": "bsdoublekong",
+      "name": "(\u2500/bs) Double Kong",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
         "P"
+      ]
+    },
+    {
+      "id": "bspowerstomp",
+      "name": "(\u2500/bs) Power Stomp",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "up-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "bsmeteoshot",
+      "name": "(\u2500/bs) Meteo Shot",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "bsmeteotackle",
+      "name": "(\u2500/bs) Meteo Tackle",
+      "type": "special",
+      "inputs": [
+        "^1",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "wavingblow",
+      "name": "(\u2500/\u2500\u2500) Waving Blow",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "HK"
       ]
     }
   ]

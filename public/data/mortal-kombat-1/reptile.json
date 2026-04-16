@@ -3,22 +3,46 @@
   "character": "Reptile",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "acidspit",
+      "name": "Acid Spit",
+      "type": "special",
       "inputs": [
-        "P"
+        "forward",
+        "forward",
+        "HP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "forceball",
+      "name": "Forceball",
       "type": "special",
       "inputs": [
+        "back",
+        "back",
+        "HP",
+        "LP"
+      ]
+    },
+    {
+      "id": "slide",
+      "name": "Slide",
+      "type": "special",
+      "inputs": [
+        "back",
+        "LP",
+        "_G",
+        "LK"
+      ]
+    },
+    {
+      "id": "invisibility",
+      "name": "Invisibility",
+      "type": "special",
+      "inputs": [
+        "up",
+        "up",
         "down",
-        "down-forward",
-        "forward",
-        "P"
+        "HP"
       ]
     }
   ]

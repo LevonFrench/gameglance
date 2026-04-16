@@ -1,40 +1,82 @@
 {
-    "game": "Galaxy Fight: Universal Warriors",
-    "character": "Roomi",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Heart Shot",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-forward",
-                "forward",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Rolling Kick",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-back",
-                "back",
-                "K"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Bunny Hop",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down",
-                "down-forward",
-                "K"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Galaxy Fight: Universal Warriors",
+  "character": "Roomi",
+  "movesList": [
+    {
+      "id": "supercollider",
+      "name": "Super Collider",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "starpunch",
+      "name": "Star Punch",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "rabbitblow",
+      "name": "Rabbit Blow",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP",
+        "(x3)"
+      ]
+    },
+    {
+      "id": "rollingcrush",
+      "name": "Rolling Crush",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "rollingbomber",
+      "name": "Rolling Bomber",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "P",
+        "K",
+        "HP"
+      ]
+    },
+    {
+      "id": "giantknuckle",
+      "name": "Giant Knuckle",
+      "type": "special",
+      "inputs": [
+        "_x",
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP"
+      ]
+    }
+  ],
+  "combosList": []
 }

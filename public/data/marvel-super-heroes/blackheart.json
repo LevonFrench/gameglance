@@ -1,46 +1,136 @@
 {
-    "game": "Marvel Super Heroes",
-    "character": "Blackheart",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Dark Thunder",
-            "type": "special",
-            "inputs": [
-                "back",
-                "down-back",
-                "down",
-                "down-forward",
-                "forward",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Inferno",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down-forward",
-                "down",
-                "down-back",
-                "back",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Darkness",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down-forward",
-                "down",
-                "down-back",
-                "back",
-                "K"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Marvel Super Heroes",
+  "character": "Blackheart",
+  "movesList": [
+    {
+      "id": "soulabsorb",
+      "name": "Soul Absorb",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "MK"
+      ]
+    },
+    {
+      "id": "energysurge",
+      "name": "Energy Surge",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "airenergysurge",
+      "name": "Air Energy Surge",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "MK",
+        "or",
+        "HP",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "longdash",
+      "name": "Long Dash",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "^6"
+      ]
+    },
+    {
+      "id": "longretreat",
+      "name": "Long Retreat",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "^4"
+      ]
+    },
+    {
+      "id": "airdash",
+      "name": "Air Dash",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "forward",
+        "forward",
+        "or",
+        "^U"
+      ]
+    },
+    {
+      "id": "airretreat",
+      "name": "Air Retreat",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "back",
+        "back",
+        "or",
+        "back",
+        "^U"
+      ]
+    },
+    {
+      "id": "darkthunder",
+      "name": "Dark Thunder",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "inferno",
+      "name": "Inferno",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "changetoiceattack",
+      "name": "^!change To Ice Attack",
+      "type": "special",
+      "inputs": [
+        "MP"
+      ]
+    },
+    {
+      "id": "changedofireattack",
+      "name": "^!change Do Fire Attack",
+      "type": "special",
+      "inputs": [
+        "HP"
+      ]
+    }
+  ],
+  "combosList": []
 }

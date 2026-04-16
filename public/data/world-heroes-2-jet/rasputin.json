@@ -3,37 +3,105 @@
   "character": "Rasputin",
   "movesList": [
     {
+      "id": "auragrip",
+      "name": "Aura Grip",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "handshake",
+      "name": "Handshake",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "bigfists",
+      "name": "Big Fists",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "fireball",
       "name": "Fireball",
       "type": "special",
       "inputs": [
+        "(_^)",
         "down",
         "down-forward",
         "forward",
-        "+A"
-      ],
-      "id": "fireball"
+        "P"
+      ]
     },
     {
-      "name": "Thunder Pitch",
+      "id": "thunderball",
+      "name": "Thunder Ball",
       "type": "special",
       "inputs": [
-        "forward",
+        "back",
+        "down-back",
         "down",
         "down-forward",
-        "+A"
-      ],
-      "id": "thunder-pitch"
+        "forward",
+        "P"
+      ]
     },
     {
-      "name": "Axel Spin",
+      "id": "axlespin",
+      "name": "Axle Spin",
       "type": "special",
       "inputs": [
+        "(_^)",
         "down",
         "down-back",
         "back",
-        "+B"
-      ],
-      "id": "axel-spin"
+        "K"
+      ]
+    },
+    {
+      "id": "move",
+      "name": "^!move",
+      "type": "special",
+      "inputs": [
+        "back",
+        "or",
+        "forward"
+      ]
+    },
+    {
+      "id": "kossakdance",
+      "name": "Kossak Dance",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "move",
+      "name": "^!move",
+      "type": "special",
+      "inputs": [
+        "back",
+        "or",
+        "forward"
+      ]
     }
   ]
 }

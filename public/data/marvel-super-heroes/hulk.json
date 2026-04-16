@@ -1,40 +1,107 @@
 {
-    "game": "Marvel Super Heroes",
-    "character": "Hulk",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Gamma Tornado",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down-forward",
-                "down",
-                "down-back",
-                "back",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Gamma Charge",
-            "type": "special",
-            "inputs": [
-                "back (Charge)",
-                "forward",
-                "K (Follow up with 6+K or 8+K)"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Gamma Slam",
-            "type": "throw",
-            "inputs": [
-                "back (Charge)",
-                "forward",
-                "P"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Marvel Super Heroes",
+  "character": "Hulk",
+  "movesList": [
+    {
+      "id": "onehanddrop",
+      "name": "One-hand Drop",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "dropslam",
+      "name": "Drop Slam",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "gammaslam",
+      "name": "Gamma Slam",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "gammachargetaichi",
+      "name": "Gamma Charge: Taichi",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "K",
+        ",",
+        "_?",
+        "K"
+      ]
+    },
+    {
+      "id": "gammachargetaikuu",
+      "name": "Gamma Charge: Taikuu",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "K",
+        ",",
+        "_?",
+        "K"
+      ]
+    },
+    {
+      "id": "gammatornado",
+      "name": "Gamma Tornado",
+      "type": "special",
+      "inputs": [
+        "close",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "gammalift",
+      "name": "Gamma Lift",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down",
+        "^W"
+      ]
+    },
+    {
+      "id": "throw",
+      "name": "^!throw",
+      "type": "special",
+      "inputs": [
+        "P",
+        "or",
+        "K"
+      ]
+    }
+  ],
+  "combosList": []
 }

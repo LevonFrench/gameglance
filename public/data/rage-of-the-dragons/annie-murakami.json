@@ -3,18 +3,89 @@
   "character": "Annie Murakami",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "backfliptoss",
+      "name": "Backflip Toss",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "airbackfliptoss",
+      "name": "Air Backflip Toss",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "doubleknee",
+      "name": "Double Knee",
       "type": "normal",
       "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "zuum",
+      "name": "Zuum",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "zuumcross",
+      "name": "Zuum Cross",
       "type": "special",
       "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "ichinizan",
+      "name": "Ichi Ni Zan",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "catleap",
+      "name": "Cat Leap",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "magicalcomet",
+      "name": "Magical Comet",
+      "type": "special",
+      "inputs": [
+        "_^",
         "down",
         "down-forward",
         "forward",

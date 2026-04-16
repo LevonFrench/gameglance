@@ -3,19 +3,192 @@
   "character": "Jane",
   "movesList": [
     {
-      "id": "unknown-1",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "clinchpunch",
+      "name": "Clinch Punch",
+      "type": "throw",
+      "inputs": [
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "doubleclinchpunch",
+      "name": "^!double Clinch Punch",
+      "type": "throw",
       "inputs": [
         "P"
       ]
     },
     {
-      "id": "unknown-2",
-      "name": "Special Attack",
-      "type": "special",
+      "id": "knee",
+      "name": "^!knee",
+      "type": "throw",
       "inputs": [
-        "QCF+P"
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "punchingclinchknee",
+      "name": "Punching Clinch Knee",
+      "type": "throw",
+      "inputs": [
+        "P",
+        "P",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "clinchknee",
+      "name": "Clinch Knee",
+      "type": "throw",
+      "inputs": [
+        "K",
+        "_G"
+      ]
+    },
+    {
+      "id": "brainbuster",
+      "name": "Brainbuster",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "back",
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "backbreaker",
+      "name": "Backbreaker",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "down",
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "doubleclinchknee",
+      "name": "Double Clinch Knee",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "K",
+        "_G"
+      ]
+    },
+    {
+      "id": "tripleclinchknee",
+      "name": "^!triple Clinch Knee",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "wallscrape",
+      "name": "Wall Scrape",
+      "type": "throw",
+      "inputs": [
+        "opponent",
+        "close",
+        "to",
+        "wall",
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "punchingwallpress",
+      "name": "Punching Wall Press",
+      "type": "throw",
+      "inputs": [
+        "opponent",
+        "close",
+        "to",
+        "wall",
+        "P",
+        "P",
+        "P"
+      ]
+    },
+    {
+      "id": "wallknee",
+      "name": "Wall Knee",
+      "type": "throw",
+      "inputs": [
+        "opponent",
+        "close",
+        "to",
+        "wall",
+        "K",
+        "_G"
+      ]
+    },
+    {
+      "id": "doublewallknee",
+      "name": "^!double Wall Knee",
+      "type": "throw",
+      "inputs": [
+        "K",
+        "_G"
+      ]
+    },
+    {
+      "id": "wallexchange",
+      "name": "Wall Exchange",
+      "type": "throw",
+      "inputs": [
+        "against",
+        "the",
+        "wall",
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "neckbreaker",
+      "name": "Neck Breaker",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "tigersuplex",
+      "name": "Tiger Suplex",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "P",
+        "K",
+        "_G"
+      ]
+    },
+    {
+      "id": "wallclimb",
+      "name": "Wall Climb",
+      "type": "normal",
+      "inputs": [
+        "jump",
+        "against",
+        "the",
+        "wall",
+        "up",
+        "P"
       ]
     }
   ]

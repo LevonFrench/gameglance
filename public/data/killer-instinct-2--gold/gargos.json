@@ -3,36 +3,139 @@
   "character": "Gargos",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
-      "inputs": [
-        "P"
-      ]
-    },
-    {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "flamestream",
+      "name": "Flame Stream",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "LP"
+      ]
+    },
+    {
+      "id": "dashingshoulder",
+      "name": "Dashing Shoulder",
+      "type": "special",
+      "inputs": [
+        "down-forward",
+        "down",
+        "down-back",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "clawuppercut",
+      "name": "Claw Uppercut",
+      "type": "special",
+      "inputs": [
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "clawuppercut",
+      "name": "Claw Uppercut",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "airfireball",
+      "name": "Air Fireball",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-forward",
+        "forward",
         "P"
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "gargostremor",
+      "name": "Gargos Tremor",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down-back",
+        "down",
+        "down-forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "fly",
+      "name": "Fly",
+      "type": "special",
+      "inputs": [
+        "^8",
+        "HP"
+      ]
+    },
+    {
+      "id": "laugh",
+      "name": "Laugh",
+      "type": "special",
       "inputs": [
         "down",
-        "down-forward",
+        "down-back",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "doubleattack",
+      "name": "Double Attack",
+      "type": "normal",
+      "inputs": [
         "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "airjuggle",
+      "name": "Air Juggle",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "down-back",
         "down",
         "down-forward",
         "forward",
-        "P"
+        "HK"
+      ]
+    },
+    {
+      "id": "retaliation",
+      "name": "Retaliation",
+      "type": "normal",
+      "inputs": [
+        "knocked",
+        "down",
+        "forward",
+        "down",
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "combobreaker",
+      "name": "Combo Breaker",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P",
+        "or",
+        "K"
       ]
     }
   ]

@@ -1,39 +1,62 @@
 {
-    "game": "Golden Axe: The Duel",
-    "character": "Death Adder",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Earth Shaker",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-back",
-                "back",
-                "Slash"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Shield Charge",
-            "type": "special",
-            "inputs": [
-                "back",
-                "forward",
-                "Slash"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Flame Breath",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-forward",
-                "forward",
-                "Slash"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Golden Axe: The Duel",
+  "character": "Death Adder",
+  "movesList": [
+    {
+      "id": "heavyslam",
+      "name": "Heavy Slam",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "flingtoss",
+      "name": "Fling Toss",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "fallingsky",
+      "name": "Falling Sky",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "dragonbreath",
+      "name": "Dragon Breath",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "deathwave",
+      "name": "Death Wave",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "P"
+      ]
+    }
+  ],
+  "combosList": []
 }

@@ -3,22 +3,46 @@
   "character": "Nightwolf",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
-      "inputs": [
-        "P"
-      ]
-    },
-    {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "arrow",
+      "name": "Arrow",
       "type": "special",
       "inputs": [
         "down",
-        "down-forward",
+        "back",
+        "LP"
+      ]
+    },
+    {
+      "id": "hatchetuppercut",
+      "name": "Hatchet Uppercut",
+      "type": "special",
+      "inputs": [
+        "down",
         "forward",
-        "P"
+        "HP"
+      ]
+    },
+    {
+      "id": "shadowcharge",
+      "name": "Shadow Charge",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "forward",
+        "LK"
+      ]
+    },
+    {
+      "id": "reflectshield",
+      "name": "Reflect Shield",
+      "type": "special",
+      "inputs": [
+        "back",
+        "back",
+        "back",
+        "HK",
+        "(reflect",
+        "projectile)"
       ]
     }
   ]

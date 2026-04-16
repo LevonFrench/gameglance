@@ -3,19 +3,139 @@
   "character": "Duck King",
   "movesList": [
     {
-      "id": "unknown-1",
-      "name": "Basic Attack",
+      "id": "rollingneckthrow",
+      "name": "(\u2500/\u2500) Rolling Neck Throw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "nreversebreaker",
+      "name": "(\u2500/\u2500) N \u30fb Reverse Breaker",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "madspinhammer",
+      "name": "(\u2500/\u2500) Mad Spin Hammer",
       "type": "normal",
       "inputs": [
+        "back",
         "P"
       ]
     },
     {
-      "id": "unknown-2",
-      "name": "Special Attack",
+      "id": "needlelow",
+      "name": "(\u2500/\u2500) Needle Low",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "duckfeintair",
+      "name": "(\u2500/\u2500) Duck Feint: Air",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "down"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500/\u2500)",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward"
+      ]
+    },
+    {
+      "id": "duckfeintground",
+      "name": "(\u2500/\u2500) Duck Feint: Ground",
+      "type": "normal",
+      "inputs": [
+        "dashing",
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "shockingball",
+      "name": "(\u2500/\u2500) Shocking Ball",
+      "type": "normal",
+      "inputs": [
+        "opponent",
+        "knocked",
+        "down",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "headspinattack",
+      "name": "(\u2500/\u2500) Head Spin Attack",
       "type": "special",
       "inputs": [
-        "QCF+P"
+        "down",
+        "down-forward",
+        "forward",
+        "P",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500/\u2500)",
+      "type": "special",
+      "inputs": [
+        "HP"
+      ]
+    },
+    {
+      "id": "neobreakstorm",
+      "name": "(\u2500/\u2500) Neo Break Storm",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "gdancingdive",
+      "name": "(\u2500/g) Dancing Dive",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "flyingspinattack",
+      "name": "(\u2500/\u2500) Flying Spin Attack",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-back",
+        "back",
+        "P"
       ]
     }
   ]

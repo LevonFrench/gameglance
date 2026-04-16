@@ -3,11 +3,71 @@
   "character": "Dee Jay",
   "movesList": [
     {
-      "id": "general-attack",
-      "name": "Basic Attack",
+      "id": "funkyshoutthrow",
+      "name": "Funky Shout Throw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "monkeyflip",
+      "name": "Monkey Flip",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "kneeshot",
+      "name": "Knee Shot",
       "type": "normal",
       "inputs": [
+        "diagonal",
+        "jump",
+        "down",
+        "LK"
+      ]
+    },
+    {
+      "id": "maxout",
+      "name": "Max Out",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
         "P"
+      ]
+    },
+    {
+      "id": "doublerollingsobat",
+      "name": "Double Rolling Sobat",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "machinegunupper",
+      "name": "Machine Gun Upper",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "P",
+        "(^*)"
       ]
     }
   ]

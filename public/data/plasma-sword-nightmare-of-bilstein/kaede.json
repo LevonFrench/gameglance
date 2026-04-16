@@ -3,22 +3,100 @@
   "character": "Kaede",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "standingthrow",
+      "name": "Standing Throw",
+      "type": "throw",
       "inputs": [
-        "P"
+        "_a_b"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "crouchingthrow",
+      "name": "Crouching Throw",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "_a_b"
+      ]
+    },
+    {
+      "id": "bopperstaff",
+      "name": "Bopper Staff",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "_a"
+      ]
+    },
+    {
+      "id": "sweeperstaff",
+      "name": "Sweeper Staff",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "sliderstaff",
+      "name": "Slider Staff",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "chinrub",
+      "name": "Chin Rub",
+      "type": "normal",
+      "inputs": [
+        "_O",
+        "START"
+      ]
+    },
+    {
+      "id": "ichinojutsukagehou",
+      "name": "Ichi No Jutsu: Kage Hou",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "_a"
+      ]
+    },
+    {
+      "id": "ninojutsuhasaikourin",
+      "name": "Ni No Jutsu: Hasai Kourin",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "sannojutsukaenkyaku",
+      "name": "San No Jutsu: Kaen Kyaku",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "yonnojutsusoukanei",
+      "name": "Yon No Jutsu: Sou Kan'ei",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "_a"
       ]
     }
   ]

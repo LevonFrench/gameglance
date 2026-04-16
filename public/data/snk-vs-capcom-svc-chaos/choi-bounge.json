@@ -3,22 +3,145 @@
   "character": "Choi Bounge",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "zujousashi",
+      "name": "(-/-/\u2500) Zujou Sashi",
+      "type": "throw",
+      "inputs": [
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "geketsuzuki",
+      "name": "(-/-/\u2500) Geketsu Zuki",
+      "type": "throw",
+      "inputs": [
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "toorimageri",
+      "name": "(-/-/\u2500) Toorima Geri",
       "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "sankakutobi",
+      "name": "(-/-/\u2500) Sankaku Tobi",
+      "type": "normal",
+      "inputs": [
+        "jump",
+        "against",
+        "the",
+        "wall",
+        "up-forward"
+      ]
+    },
+    {
+      "id": "ikaitenhienzan",
+      "name": "(-/i/\u2500) Kaiten Hien Zan",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(-/-/\u2500)",
+      "type": "special",
       "inputs": [
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "iotatsumakishippuuzan",
+      "name": "(!/i/o) Tatsumaki Shippuu Zan",
       "type": "special",
       "inputs": [
+        "^2",
+        "up",
+        "P",
+        "(\"!\"",
+        "on",
+        "1st",
+        "hit)"
+      ]
+    },
+    {
+      "id": "isenpuuhiensashi",
+      "name": "(-/i/\u2500) Senpuu Hien Sashi",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(-/-/\u2500)",
+      "type": "special",
+      "inputs": [
+        "_?",
+        "P",
+        "or",
+        "K",
+        "(x3)"
+      ]
+    },
+    {
+      "id": "ihishoukuuretsuzan",
+      "name": "(-/i/\u2500) Hishou Kuuretsu Zan",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "_O",
+        "K"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(-/-/\u2500)",
+      "type": "special",
+      "inputs": [
+        "_?",
+        "P",
+        "or",
+        "K",
+        "(x3)"
+      ]
+    },
+    {
+      "id": "iohienzan",
+      "name": "(-/i/o) Hien Zan",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "hishoukyaku",
+      "name": "(-/-/\u2500) Hishou Kyaku",
+      "type": "special",
+      "inputs": [
+        "_^",
         "down",
         "down-forward",
         "forward",
-        "P"
+        "K"
       ]
     }
   ]

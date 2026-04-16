@@ -3,22 +3,62 @@
   "character": "Cyrax",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "closegrenade",
+      "name": "Close Grenade",
+      "type": "special",
       "inputs": [
-        "P"
+        "_O",
+        "LK",
+        "back",
+        "back",
+        "HK"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "fargrenade",
+      "name": "Far Grenade",
       "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
+        "_O",
+        "LK",
         "forward",
-        "P"
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "net",
+      "name": "Net",
+      "type": "special",
+      "inputs": [
+        "back",
+        "back",
+        "LK"
+      ]
+    },
+    {
+      "id": "teleport",
+      "name": "Teleport",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "forward",
+        "down",
+        "_G"
+      ]
+    },
+    {
+      "id": "airthrow",
+      "name": "Air Throw",
+      "type": "special",
+      "inputs": [
+        "opponent",
+        "in",
+        "air",
+        "down",
+        "forward",
+        "_G",
+        "LP"
       ]
     }
   ]

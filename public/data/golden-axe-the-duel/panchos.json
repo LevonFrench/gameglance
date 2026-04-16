@@ -1,39 +1,56 @@
 {
-    "game": "Golden Axe: The Duel",
-    "character": "Panchos",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Bomb Toss",
-            "type": "throw",
-            "inputs": [
-                "down",
-                "down-forward",
-                "forward",
-                "Slash"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Rolling Attack",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down",
-                "down-forward",
-                "Slash"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Mega Punch",
-            "type": "special",
-            "inputs": [
-                "back",
-                "forward",
-                "Slash"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Golden Axe: The Duel",
+  "character": "Panchos",
+  "movesList": [
+    {
+      "id": "bombsaway",
+      "name": "Bombs Away",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "minibomb",
+      "name": "Mini Bomb",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "megabomb",
+      "name": "Mega Bomb",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K",
+        "(_O)"
+      ]
+    },
+    {
+      "id": "dynamight",
+      "name": "Dyna Might",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    }
+  ],
+  "combosList": []
 }

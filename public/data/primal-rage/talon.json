@@ -3,19 +3,95 @@
   "character": "Talon",
   "movesList": [
     {
-      "id": "unknown-1",
-      "name": "Basic Attack",
+      "id": "slide",
+      "name": "Slide",
       "type": "normal",
       "inputs": [
-        "P"
+        "down",
+        "_c_d"
       ]
     },
     {
-      "id": "unknown-2",
-      "name": "Special Attack",
+      "id": "brainbasher",
+      "name": "Brain Basher",
       "type": "special",
       "inputs": [
-        "QCF+P"
+        "_O_b_c",
+        "back",
+        "up",
+        "forward"
+      ]
+    },
+    {
+      "id": "pounceandflip",
+      "name": "Pounce And Flip",
+      "type": "special",
+      "inputs": [
+        "_O_b_c",
+        "forward",
+        "down",
+        "down-forward"
+      ]
+    },
+    {
+      "id": "franticfury",
+      "name": "Frantic Fury",
+      "type": "special",
+      "inputs": [
+        "_O_a_d",
+        "down",
+        "forward"
+      ]
+    },
+    {
+      "id": "slasher",
+      "name": "Slasher",
+      "type": "special",
+      "inputs": [
+        "_O_a_c_d",
+        "down",
+        "forward"
+      ]
+    },
+    {
+      "id": "faceripper",
+      "name": "Face Ripper",
+      "type": "special",
+      "inputs": [
+        "_O_b_d",
+        "down",
+        "forward"
+      ]
+    },
+    {
+      "id": "jugularbite",
+      "name": "Jugular Bite",
+      "type": "special",
+      "inputs": [
+        "_O_b_d",
+        "back",
+        "forward"
+      ]
+    },
+    {
+      "id": "run",
+      "name": "Run",
+      "type": "special",
+      "inputs": [
+        "_O_a_c",
+        "back",
+        "or",
+        "forward"
+      ]
+    },
+    {
+      "id": "humanchomp",
+      "name": "Human Chomp",
+      "type": "special",
+      "inputs": [
+        "_O_a_b_c_d",
+        "forward",
+        "down"
       ]
     }
   ]

@@ -3,11 +3,33 @@
   "character": "Sarah Bryant",
   "movesList": [
     {
-      "id": "general-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "flipover",
+      "name": "Flipover",
+      "type": "throw",
       "inputs": [
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "clothesline",
+      "name": "Clothesline",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "forward",
         "P"
+      ]
+    },
+    {
+      "id": "backfallsuplex",
+      "name": "Backfall Suplex",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "P",
+        "_G"
       ]
     }
   ]

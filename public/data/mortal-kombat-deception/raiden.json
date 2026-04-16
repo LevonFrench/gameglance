@@ -3,22 +3,32 @@
   "character": "Raiden",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
-      "inputs": [
-        "P"
-      ]
-    },
-    {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "lightning",
+      "name": "Lightning",
       "type": "special",
       "inputs": [
         "down",
-        "down-forward",
         "forward",
-        "P"
+        "LP"
+      ]
+    },
+    {
+      "id": "superman",
+      "name": "Superman",
+      "type": "special",
+      "inputs": [
+        "back",
+        "back",
+        "forward"
+      ]
+    },
+    {
+      "id": "teleport",
+      "name": "Teleport",
+      "type": "special",
+      "inputs": [
+        "down",
+        "up"
       ]
     }
   ]

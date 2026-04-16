@@ -3,35 +3,481 @@
   "character": "Ryu Hayabusa",
   "movesList": [
     {
-      "id": "sp_0",
-      "name": "Ren Kuu Zan",
-      "type": "special",
+      "id": "juuji",
+      "name": "Juuji",
+      "type": "throw",
       "inputs": [
-        "P",
-        "P",
+        "_H",
         "P"
       ]
     },
     {
-      "id": "sp_1",
-      "name": "Ongyoin (Stance)",
-      "type": "special",
-      "inputs": [
-        "down",
-        "P+K"
-      ]
-    },
-    {
-      "id": "sp_2",
-      "name": "Izuna Drop (Combo Throw)",
+      "id": "kubikiri",
+      "name": "Kubi Kiri",
       "type": "throw",
       "inputs": [
         "forward",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "hayabusa",
+      "name": "Hayabusa",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "forward",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "yama",
+      "name": "Yama",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "genei",
+      "name": "Genei",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "forward",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "izuna",
+      "name": "Izuna",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
         "down-forward",
+        "forward",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "kamaitachi",
+      "name": "^!kama-itachi",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "up-back",
+        "up",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "hankoudrop",
+      "name": "^!hankou Drop",
+      "type": "throw",
+      "inputs": [
+        "_x_H",
+        "P"
+      ]
+    },
+    {
+      "id": "rakujinsho",
+      "name": "Rakujinsho",
+      "type": "throw",
+      "inputs": [
         "down",
         "down-back",
         "back",
-        "T (During launch or specific stun)"
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "shiho",
+      "name": "Shiho",
+      "type": "throw",
+      "inputs": [
+        "down-forward",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "shoro",
+      "name": "Shoro",
+      "type": "throw",
+      "inputs": [
+        "close",
+        "to",
+        "wall",
+        "forward",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "uranage",
+      "name": "Ura Nage",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "rakuryu",
+      "name": "Rakuryu",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "forward",
+        "forward",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "kandachi",
+      "name": "Kandachi",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "back",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "zanshu",
+      "name": "Zanshu",
+      "type": "throw",
+      "inputs": [
+        "crouching",
+        "opponent",
+        "down",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "hane",
+      "name": "Hane",
+      "type": "throw",
+      "inputs": [
+        "crouching",
+        "opponent",
+        "down-back",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "takitsubo",
+      "name": "Takitsubo",
+      "type": "throw",
+      "inputs": [
+        "crouching",
+        "opponent,",
+        "from",
+        "behind",
+        "down",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "senizuna",
+      "name": "Sen Izuna",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "up",
+        "_H",
+        "(reverse",
+        "high",
+        "punch)"
+      ]
+    },
+    {
+      "id": "kamaitachi",
+      "name": "^!kama-itachi",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "up-back",
+        "up",
+        "_H"
+      ]
+    },
+    {
+      "id": "hankoudrop",
+      "name": "^!hankou Drop",
+      "type": "throw",
+      "inputs": [
+        "_x_H"
+      ]
+    },
+    {
+      "id": "kagedoro",
+      "name": "Kagedoro",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "up",
+        "_H",
+        "(reverse",
+        "high",
+        "kick)"
+      ]
+    },
+    {
+      "id": "rekko",
+      "name": "Rekko",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "back",
+        "_H",
+        "(reverse",
+        "mid",
+        "punch)"
+      ]
+    },
+    {
+      "id": "kamaitachi",
+      "name": "^!kama-itachi",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "up-back",
+        "up",
+        "_H"
+      ]
+    },
+    {
+      "id": "hankoudrop",
+      "name": "^!hankou Drop",
+      "type": "throw",
+      "inputs": [
+        "_x_H"
+      ]
+    },
+    {
+      "id": "shugeki",
+      "name": "Shugeki",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "forward",
+        "_H",
+        "(reverse",
+        "mid",
+        "kick)"
+      ]
+    },
+    {
+      "id": "yoko",
+      "name": "Yoko",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "back",
+        "_H",
+        "(reverse",
+        "low",
+        "punch)"
+      ]
+    },
+    {
+      "id": "kamaitachi",
+      "name": "^!kama-itachi",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "up-back",
+        "up",
+        "_H"
+      ]
+    },
+    {
+      "id": "hankoudrop",
+      "name": "^!hankou Drop",
+      "type": "throw",
+      "inputs": [
+        "_x_H"
+      ]
+    },
+    {
+      "id": "koken",
+      "name": "Koken",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "back",
+        "_H",
+        "(reverse",
+        "low",
+        "kick)"
+      ]
+    },
+    {
+      "id": "kazagurumawithkasumi",
+      "name": "Kazaguruma (with Kasumi)",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "forward",
+        "_H",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "senizunawithothers",
+      "name": "Sen Izuna (with Others)",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "forward",
+        "_H",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "kamaitachi",
+      "name": "^!kama-itachi",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "up-back",
+        "up",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "hankoudrop",
+      "name": "^!hankou Drop",
+      "type": "throw",
+      "inputs": [
+        "_x_H",
+        "P"
+      ]
+    },
+    {
+      "id": "appealnin",
+      "name": "Appeal: Nin",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "forward",
+        "back",
+        "_H",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "appealrin",
+      "name": "Appeal: Rin",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "back",
+        "forward",
+        "_H",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "appealrei",
+      "name": "Appeal: Rei",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "down",
+        "_H",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "tenchihsp",
+      "name": "Tenchi: Hsp",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "urakaze",
+      "name": "Urakaze",
+      "type": "normal",
+      "inputs": [
+        "up-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "kirimomi",
+      "name": "Kirimomi",
+      "type": "throw",
+      "inputs": [
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "kabuto",
+      "name": "Kabuto",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "korobi",
+      "name": "Korobi",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "back"
+      ]
+    },
+    {
+      "id": "koten",
+      "name": "Koten",
+      "type": "normal",
+      "inputs": [
+        "down"
       ]
     }
   ],

@@ -3,22 +3,32 @@
   "character": "Johnny Cage",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "greenbolt",
+      "name": "Green Bolt",
+      "type": "special",
       "inputs": [
-        "P"
+        "back",
+        "forward",
+        "LP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "shadowkick",
+      "name": "Shadow Kick",
       "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
+        "back",
         "forward",
-        "P"
+        "LK"
+      ]
+    },
+    {
+      "id": "nutpunch",
+      "name": "Nut Punch",
+      "type": "special",
+      "inputs": [
+        "LP",
+        "_G"
       ]
     }
   ]

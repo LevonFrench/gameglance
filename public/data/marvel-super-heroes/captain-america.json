@@ -1,42 +1,122 @@
 {
-    "game": "Marvel Super Heroes",
-    "character": "Captain America",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Shield Slash",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-forward",
-                "forward",
-                "P (Air OK)"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Stars & Stripes",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down",
-                "down-forward",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Charging Star",
-            "type": "special",
-            "inputs": [
-                "back",
-                "down-back",
-                "down",
-                "down-forward",
-                "forward",
-                "K"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Marvel Super Heroes",
+  "character": "Captain America",
+  "movesList": [
+    {
+      "id": "onehandslam",
+      "name": "One-hand Slam",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "groundlaunch",
+      "name": "Ground Launch",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "onehanddrop",
+      "name": "One-hand Drop",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "doublekick",
+      "name": "Double Kick",
+      "type": "normal",
+      "inputs": [
+        "MK",
+        "MK"
+      ]
+    },
+    {
+      "id": "hellkick",
+      "name": "Hell Kick",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HK"
+      ]
+    },
+    {
+      "id": "2danjump",
+      "name": "2 Dan Jump",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "up"
+      ]
+    },
+    {
+      "id": "shieldslash",
+      "name": "Shield Slash",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "starsstripes",
+      "name": "Stars & Stripes",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "chargingstar",
+      "name": "Charging Star",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "cartwheel",
+      "name": "Cartwheel",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    }
+  ],
+  "combosList": []
 }

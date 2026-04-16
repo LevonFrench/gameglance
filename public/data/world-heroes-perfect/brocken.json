@@ -3,34 +3,114 @@
   "character": "Brocken",
   "movesList": [
     {
-      "name": "Hurricane Arm",
+      "id": "highdropsuplex",
+      "name": "(\u2500) High Drop Suplex",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "suplex",
+      "name": "(\u2500) Suplex",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "gasattack",
+      "name": "(\u2500) Gas Attack",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "stretchroundhouse",
+      "name": "(\u2500) Stretch Roundhouse",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "metalknee",
+      "name": "(\u2500) Metal Knee",
+      "type": "normal",
+      "inputs": [
+        "close",
+        "back",
+        "or",
+        "forward",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "rollingheelkick",
+      "name": "(\u2500) Rolling Heel Kick",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down-forward",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "sparkthunder",
+      "name": "(\u2500) Spark Thunder",
+      "type": "special",
+      "inputs": [
+        "^*",
+        "P"
+      ]
+    },
+    {
+      "id": "rocketpunch",
+      "name": "(\u2500) Rocket Punch",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "+A"
-      ],
-      "id": "hurricane-arm"
+        "P"
+      ]
     },
     {
-      "name": "Spark Thunder",
-      "type": "special",
-      "inputs": [
-        "Tap A rapidly"
-      ],
-      "id": "spark-thunder"
-    },
-    {
-      "name": "Grenade Launcher",
+      "id": "germanmissile",
+      "name": "(\u2500) German Missile",
       "type": "special",
       "inputs": [
         "down",
-        "down-back",
-        "back",
-        "+A"
-      ],
-      "id": "grenade-launcher"
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "mhurricanearm",
+      "name": "(m) Hurricane Arm",
+      "type": "special",
+      "inputs": [
+        "down",
+        "forward",
+        "down-forward",
+        "P"
+      ]
     }
   ]
 }

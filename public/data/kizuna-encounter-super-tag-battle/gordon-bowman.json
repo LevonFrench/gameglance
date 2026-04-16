@@ -3,16 +3,63 @@
   "character": "Gordon Bowman",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "backbreaker",
+      "name": "Backbreaker",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "tossaway",
+      "name": "^!toss Away",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "hardpressure",
+      "name": "Hard Pressure",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "hipbomber",
+      "name": "Hip Bomber",
       "type": "normal",
       "inputs": [
+        "_^",
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "frictionheater",
+      "name": "Friction Heater",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "moonshotupper",
+      "name": "Moon-shot Upper",
       "type": "special",
       "inputs": [
         "down",
@@ -22,17 +69,47 @@
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "crater",
+      "name": "^!crater",
+      "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "cancel",
+      "name": "^!cancel",
+      "type": "special",
+      "inputs": [
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "sparkbolt",
+      "name": "Spark Bolt",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "HP"
+      ]
+    },
+    {
+      "id": "cyclonetonfa",
+      "name": "Cyclone Tonfa",
+      "type": "special",
+      "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "HP"
       ]
     }
   ]

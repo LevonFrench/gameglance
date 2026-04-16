@@ -3,21 +3,315 @@
   "character": "Zangief",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "wchnspiledriver",
+      "name": "(w/c/h/n/s) Piledriver",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "wchbrainbuster",
+      "name": "(w/c/h/\u2500/\u2500) Brainbuster",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "nsbrainbuster",
+      "name": "(\u2500/\u2500/\u2500/n/s) Brainbuster",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "wchgermansuplex",
+      "name": "(w/c/h/\u2500/\u2500) German Suplex",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "wchthunderfirepowerbomb",
+      "name": "(w/c/h/\u2500/\u2500) Thunder Fire Powerbomb",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "wchironclaw",
+      "name": "(w/c/h/\u2500/\u2500) Iron Claw",
+      "type": "throw",
+      "inputs": [
+        "within",
+        "throw",
+        "range",
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "nsironclaw",
+      "name": "(\u2500/\u2500/\u2500/n/s) Iron Claw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "wchkamitsuki",
+      "name": "(w/c/h/\u2500/\u2500) Kamitsuki",
+      "type": "throw",
+      "inputs": [
+        "within",
+        "throw",
+        "range",
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "nskamitsuki",
+      "name": "(\u2500/\u2500/\u2500/n/s) Kamitsuki",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "wchdeadlydriver",
+      "name": "(w/c/h/\u2500/\u2500) Deadly Driver",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "MP"
+      ]
+    },
+    {
+      "id": "wchlegthrow",
+      "name": "(w/c/h/\u2500/\u2500) Leg Throw",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "wchstomachclaw",
+      "name": "(w/c/h/\u2500/\u2500) Stomach Claw",
+      "type": "throw",
+      "inputs": [
+        "within",
+        "throw",
+        "range",
+        "down",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "nsstomachclaw",
+      "name": "(\u2500/\u2500/\u2500/n/s) Stomach Claw",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "nsairdeadlydriver",
+      "name": "(\u2500/\u2500/\u2500/n/s) Air Deadly Driver",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "nsairlegthrow",
+      "name": "(\u2500/\u2500/\u2500/n/s) Air Leg Throw",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "sheadbutt",
+      "name": "(\u2500/\u2500/\u2500/\u2500/s) Headbutt",
       "type": "normal",
       "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "wchnsflyingbodypress",
+      "name": "(w/c/h/n/s) Flying Body Press",
+      "type": "normal",
+      "inputs": [
+        "diagonal",
+        "jump",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "hdoublekneedrop",
+      "name": "(\u2500/\u2500/h/\u2500/\u2500) Double Knee Drop",
+      "type": "normal",
+      "inputs": [
+        "diagonal",
+        "jump",
+        "down",
+        "LK"
+      ]
+    },
+    {
+      "id": "nsdoublekneedrop",
+      "name": "(\u2500/\u2500/\u2500/n/s) Double Knee Drop",
+      "type": "normal",
+      "inputs": [
+        "diagonal",
+        "jump",
+        "down",
+        "LK",
+        "or",
+        "MK"
+      ]
+    },
+    {
+      "id": "wchnsairheadbutt",
+      "name": "(w/c/h/n/s) Air Headbutt",
+      "type": "normal",
+      "inputs": [
+        "vertical",
+        "jump",
+        "up",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "wchnsdoublelariat",
+      "name": "(w/c/h/n/s) Double Lariat",
+      "type": "special",
+      "inputs": [
+        "^U"
+      ]
+    },
+    {
+      "id": "chns",
+      "name": "(\u2500/c/h/n/s)",
+      "type": "special",
+      "inputs": [
+        "back",
+        "or",
+        "forward"
+      ]
+    },
+    {
+      "id": "hnsquickdoublelariat",
+      "name": "(\u2500/\u2500/h/n/s) Quick Double Lariat",
+      "type": "special",
+      "inputs": [
+        "^T"
+      ]
+    },
+    {
+      "id": "hns",
+      "name": "(\u2500/\u2500/h/n/s)",
+      "type": "special",
+      "inputs": [
+        "back",
+        "or",
+        "forward"
+      ]
+    },
+    {
+      "id": "wchnsspinningpiledriver",
+      "name": "(w/c/h/n/s) Spinning Piledriver",
+      "type": "special",
+      "inputs": [
+        "close",
+        "_x",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "nsatomicsuplex",
+      "name": "(\u2500/\u2500/\u2500/n/s) Atomic Suplex",
       "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
+        "close",
+        "_x",
+        "K"
+      ]
+    },
+    {
+      "id": "nsflyingpowerbomb",
+      "name": "(\u2500/\u2500/\u2500/n/s) Flying Powerbomb",
+      "type": "special",
+      "inputs": [
+        "_x",
+        "K"
+      ]
+    },
+    {
+      "id": "sbanishingflat",
+      "name": "(\u2500/\u2500/\u2500/\u2500/s) Banishing Flat",
+      "type": "special",
+      "inputs": [
         "forward",
+        "down-forward",
+        "down",
         "P"
       ]
     }

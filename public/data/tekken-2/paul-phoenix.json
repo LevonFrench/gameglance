@@ -3,20 +3,131 @@
   "character": "Paul Phoenix",
   "movesList": [
     {
-      "name": "Deathfist",
-      "type": "special",
+      "id": "shoulderflip",
+      "name": "Shoulder Flip",
+      "type": "throw",
+      "inputs": [
+        "_a_c"
+      ]
+    },
+    {
+      "id": "footlaunch",
+      "name": "Foot Launch",
+      "type": "throw",
+      "inputs": [
+        "^4_a_c"
+      ]
+    },
+    {
+      "id": "armbarrollover",
+      "name": "Arm Bar Rollover",
+      "type": "throw",
+      "inputs": [
+        "_b_d",
+        "(FU-FT)"
+      ]
+    },
+    {
+      "id": "deathpushaway",
+      "name": "Death Push Away",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "forward",
+        "_a_b"
+      ]
+    },
+    {
+      "id": "facesmash",
+      "name": "Face Smash",
+      "type": "throw",
+      "inputs": [
+        "down-forward",
+        "_a_b"
+      ]
+    },
+    {
+      "id": "reverseneckthrow",
+      "name": "Reverse Neck Throw",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "_a_c",
+        "or",
+        "_b_d"
+      ]
+    },
+    {
+      "id": "tackle",
+      "name": "Tackle",
+      "type": "throw",
+      "inputs": [
+        "run",
+        "for",
+        "11",
+        "steps"
+      ]
+    },
+    {
+      "id": "punches",
+      "name": "^!punches",
+      "type": "throw",
+      "inputs": [
+        "_a_b_a_b_a",
+        "or",
+        "_b_a_b_a_b"
+      ]
+    },
+    {
+      "id": "choke",
+      "name": "^!choke",
+      "type": "throw",
       "inputs": [
         "down",
-        ",",
-        " ",
-        "down-forward",
-        ",",
-        " ",
-        "forward",
-        "+",
-        "down"
-      ],
-      "id": "deathfist"
+        "_b_a_a_N_d_a_a_b"
+      ]
+    },
+    {
+      "id": "tackle",
+      "name": "Tackle",
+      "type": "throw",
+      "inputs": [
+        "down-back",
+        "_a_b"
+      ]
+    },
+    {
+      "id": "punches",
+      "name": "^!punches",
+      "type": "throw",
+      "inputs": [
+        "_a_b_a_b_a",
+        "or",
+        "_b_a_b_a_b"
+      ]
+    },
+    {
+      "id": "choke",
+      "name": "^!choke",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "_b_a_a_N_d_a_a_b"
+      ]
+    },
+    {
+      "id": "attackreversal",
+      "name": "Attack Reversal",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "_a_c",
+        "or",
+        "_b_d",
+        "(reverse",
+        "high/mid)"
+      ]
     }
   ]
 }

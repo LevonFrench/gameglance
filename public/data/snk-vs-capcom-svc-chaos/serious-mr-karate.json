@@ -3,18 +3,383 @@
   "character": "Serious Mr. Karate",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "oosotogari",
+      "name": "(-/-/\u2500) Oosotogari",
+      "type": "throw",
+      "inputs": [
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "ipponseoi",
+      "name": "(-/-/\u2500) Ippon Seoi",
+      "type": "throw",
+      "inputs": [
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "oyokemigiseikenzuki",
+      "name": "(-/-/o) Yoke Migi Seiken Zuki",
       "type": "normal",
       "inputs": [
+        "back",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "oduckingshitemawashigeri",
+      "name": "(-/-/o) Ducking Shite Mawashi Geri",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "ojigokuzuki",
+      "name": "(-/-/o) Jigoku Zuki",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "osokugatana",
+      "name": "(-/-/o) Soku Gatana",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "kiryokutame",
+      "name": "(-/-/\u2500) Kiryoku Tame",
+      "type": "normal",
+      "inputs": [
+        "_O",
+        "P",
+        "K",
+        "HP"
+      ]
+    },
+    {
+      "id": "sankakutobi",
+      "name": "(-/-/\u2500) Sankaku Tobi",
+      "type": "normal",
+      "inputs": [
+        "jump",
+        "against",
+        "the",
+        "wall",
+        "up-forward"
+      ]
+    },
+    {
+      "id": "ikoouken02",
+      "name": "(-/i/\u2500) Ko'ou Ken '02",
       "type": "special",
       "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "iokohou",
+      "name": "(-/i/o) Kohou",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "ihienshippuukyaku",
+      "name": "(-/i/\u2500) Hien Shippuu Kyaku",
+      "type": "special",
+      "inputs": [
+        "^1",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "zanretsuken",
+      "name": "(-/-/\u2500) Zanretsu Ken",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "back",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "iokyokugenkohou",
+      "name": "(-/i/o) Kyokugen Kohou",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "oshinkishingeki",
+      "name": "(-/-/o) Shin Kishin Geki",
+      "type": "special",
+      "inputs": [
+        "close",
+        "down",
+        "down-back",
+        "back",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "ihaohshikouken",
+      "name": "(-/i/\u2500) Haoh Shikou Ken",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "P",
+        "(_O)"
+      ]
+    },
+    {
+      "id": "chouhaohshikouken",
+      "name": "(-/-/\u2500) Chou Haoh Shikou Ken",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "P",
+        "HP",
+        "(_O)"
+      ]
+    },
+    {
+      "id": "seoinage",
+      "name": "(-/-/\u2500) Seoi Nage",
+      "type": "throw",
+      "inputs": [
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "tomoenage",
+      "name": "(-/-/\u2500) Tomoe Nage",
+      "type": "throw",
+      "inputs": [
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "ozugaihassatsu",
+      "name": "(-/-/o) Zugai Hassatsu",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "ihizageri",
+      "name": "(-/i/\u2500) Hiza Geri",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "kurubushikick",
+      "name": "(-/-/\u2500) Kurubushi Kick",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        "HK"
+      ]
+    },
+    {
+      "id": "tenmakuujinkyaku",
+      "name": "(-/-/\u2500) Tenma Kuujin Kyaku",
+      "type": "normal",
+      "inputs": [
+        "jump",
+        "forward",
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "gouhadouken",
+      "name": "(-/-/\u2500) Gou Hadou Ken",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "doublezankuuhadouken",
+      "name": "(-/-/\u2500) Double Zankuu Hadou Ken",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "shakunetsuhadouken",
+      "name": "(-/-/\u2500) Shakunetsu Hadou Ken",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "iogoushouryuuken",
+      "name": "(-/i/o) Gou Shouryuu Ken",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P",
+        "(\"O\"",
+        "on",
+        "1st/2nd",
+        "hit)"
+      ]
+    },
+    {
+      "id": "itatsumakizankuukyaku",
+      "name": "(-/i/\u2500) Tatsumaki Zankuu Kyaku",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-back",
+        "back",
+        "K",
+        "(\"I\"",
+        "on",
+        "ground",
+        "version)"
+      ]
+    },
+    {
+      "id": "ashurasenkuuzenpou",
+      "name": "(-/-/\u2500) Ashura Senkuu: Zenpou",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P",
+        "HP",
+        "or",
+        "K",
+        "HK"
+      ]
+    },
+    {
+      "id": "ashurasenkuukouhou",
+      "name": "(-/-/\u2500) Ashura Senkuu: Kouhou",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down",
+        "down-back",
+        "P",
+        "HP",
+        "or",
+        "K",
+        "HK"
+      ]
+    },
+    {
+      "id": "omessatsugoushouryuu",
+      "name": "(-/-/o) Messatsu Gou Shouryuu",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward",
+        "P",
+        "(\"O\"",
+        "on",
+        "1st/2nd/3rd/4th/5th/6th",
+        "hit)"
+      ]
+    },
+    {
+      "id": "messatsugouhadou",
+      "name": "(-/-/\u2500) Messatsu Gou Hadou",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "tenmagouzanku",
+      "name": "(-/-/\u2500) Tenma Gou Zanku",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-forward",
+        "forward",
         "down",
         "down-forward",
         "forward",

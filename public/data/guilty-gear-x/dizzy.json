@@ -3,22 +3,92 @@
   "character": "Dizzy",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "demongrab",
+      "name": "Demon Grab",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "dragonwing",
+      "name": "Dragon Wing",
       "type": "normal",
       "inputs": [
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "demontounge",
+      "name": "Demon Tounge",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "3danjump",
+      "name": "3 Dan Jump",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "up",
+        "up"
+      ]
+    },
+    {
+      "id": "hajimewatadanoakaridattandesu",
+      "name": "Hajime Wa Tada No Akari Datta N Desu",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "_a"
+      ]
+    },
+    {
+      "id": "sakanawokarutokinitsukattandesu",
+      "name": "Sakana Wo Karu Toki Ni Tsukatta N Desu",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "kinomiwotorutokinitsukattandesu",
+      "name": "Ki No Mi Wo Toru Toki Ni Tsukatta N Desu",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down",
+        "down-back",
+        "_a"
+      ]
+    },
+    {
+      "id": "yokuhanashiaiteninattekuremasu",
+      "name": "Yoku Hanashi Aite Ni Natte Kuremasu",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P",
+        "or",
+        "K",
+        "or",
+        "_a",
+        "or",
+        "_b"
       ]
     }
   ]

@@ -3,22 +3,139 @@
   "character": "Guile",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "wchnsjudothrow",
+      "name": "(w/c/h/n/s) Judo Throw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "wchnsdragonsuplex",
+      "name": "(w/c/h/n/s) Dragon Suplex",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "wchnsflyingmayor",
+      "name": "(w/c/h/n/s) Flying Mayor",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "wchnsflyingbusterdrop",
+      "name": "(w/c/h/n/s) Flying Buster Drop",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "sspinningbackknuckle",
+      "name": "(\u2500/\u2500/\u2500/\u2500/s) Spinning Back Knuckle",
       "type": "normal",
       "inputs": [
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "wkneebazooka",
+      "name": "(w/\u2500/\u2500/\u2500/\u2500) Knee Bazooka",
+      "type": "normal",
+      "inputs": [
+        "close",
+        "back",
+        "or",
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "chnkneebazooka",
+      "name": "(\u2500/c/h/n/\u2500) Knee Bazooka",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "skneebazooka",
+      "name": "(\u2500/\u2500/\u2500/\u2500/s) Knee Bazooka",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "LK"
+      ]
+    },
+    {
+      "id": "srollingsobat",
+      "name": "(\u2500/\u2500/\u2500/\u2500/s) Rolling Sobat",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "wchnsreversespinkick",
+      "name": "(w/c/h/n/s) Reverse Spin Kick",
+      "type": "normal",
+      "inputs": [
+        "close",
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "wchnssonicboom",
+      "name": "(w/c/h/n/s) Sonic Boom",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "wchnssomersaultkick",
+      "name": "(w/c/h/n/s) Somersault Kick",
       "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "P"
+        "^2",
+        "up",
+        "K"
       ]
     }
   ]

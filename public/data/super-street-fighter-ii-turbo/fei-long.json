@@ -1,42 +1,121 @@
 {
-    "game": "Super Street Fighter II Turbo",
-    "character": "Fei Long",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Rekkaken",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-forward",
-                "forward",
-                "P (Up to 3 times)"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Shienkyaku",
-            "type": "special",
-            "inputs": [
-                "back",
-                "down",
-                "down-back",
-                "K"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Tenshin",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down-forward",
-                "down",
-                "down-back",
-                "back",
-                "K"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Super Street Fighter II Turbo",
+  "character": "Fei Long",
+  "movesList": [
+    {
+      "id": "nsgankaihou",
+      "name": "(n/s) Gankai Hou",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "nsshuukubikari",
+      "name": "(n/s) Shuu Kubi Kari",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "sshuukubiraku",
+      "name": "(\u2500/s) Shuu Kubi Raku",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "nchokkarakushuu",
+      "name": "(n/\u2500) Chokka Raku Shuu",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "schokkarakushuu",
+      "name": "(\u2500/s) Chokka Raku Shuu",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "MK"
+      ]
+    },
+    {
+      "id": "schokkarakushuuleap",
+      "name": "(\u2500/s) Chokka Raku Shuu Leap",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "nsengekishuu",
+      "name": "(n/s) Engeki Shuu",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "nsrekkaken",
+      "name": "(n/s) Rekka Ken",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P",
+        "(x3)"
+      ]
+    },
+    {
+      "id": "nsshienkyaku",
+      "name": "(n/s) Shien Kyaku",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down",
+        "down-back",
+        "K"
+      ]
+    },
+    {
+      "id": "srekkuukyaku",
+      "name": "(\u2500/s) Rekkuu Kyaku",
+      "type": "special",
+      "inputs": [
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "up-forward",
+        "K"
+      ]
+    }
+  ],
+  "combosList": []
 }

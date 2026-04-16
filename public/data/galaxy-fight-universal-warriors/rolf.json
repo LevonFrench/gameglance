@@ -1,42 +1,140 @@
 {
-    "game": "Galaxy Fight: Universal Warriors",
-    "character": "Rolf",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Vulcan Wave",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-forward",
-                "forward",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Rapid Dash",
-            "type": "special",
-            "inputs": [
-                "back",
-                "down-back",
-                "down",
-                "down-forward",
-                "forward",
-                "K"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Planet Breaker",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down",
-                "down-forward",
-                "P"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Galaxy Fight: Universal Warriors",
+  "character": "Rolf",
+  "movesList": [
+    {
+      "id": "boostoverdrop",
+      "name": "Boost Overdrop",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "boostpressure",
+      "name": "Boost Pressure",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "comettail",
+      "name": "Comet Tail",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "stardustarrow",
+      "name": "Stardust Arrow",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "metrolauncher",
+      "name": "Metro Launcher",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "2danjump",
+      "name": "2 Dan Jump",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "up"
+      ]
+    },
+    {
+      "id": "rolfshot",
+      "name": "Rolf Shot",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "kneelingrolfshot",
+      "name": "Kneeling Rolf Shot",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "planetbreaker",
+      "name": "Planet Breaker",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "rapidcrush",
+      "name": "Rapid Crush",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "strikingnapalm",
+      "name": "Striking Napalm",
+      "type": "special",
+      "inputs": [
+        "_x",
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP"
+      ]
+    }
+  ],
+  "combosList": []
 }

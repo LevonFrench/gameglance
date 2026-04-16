@@ -3,35 +3,221 @@
   "character": "Joker",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "rollerrage",
+      "name": "Roller Rage",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "rollerscrape",
+      "name": "^!roller Scrape",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "scareclaw",
+      "name": "Scare Claw",
       "type": "normal",
       "inputs": [
+        "down-back",
+        "K"
+      ]
+    },
+    {
+      "id": "bloodparasol",
+      "name": "Blood Parasol",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "crazytoy",
+      "name": "Crazy Toy",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "rollerdash",
+      "name": "Roller Dash",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "risingparasol",
+      "name": "^!rising Parasol",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "transporter",
+      "name": "Transporter",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "transporterdive",
+      "name": "Transporter Dive",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "murderhatheave",
+      "name": "Murder Hat Heave",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "magicianscard",
+      "name": "Magician's Card",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "hangingupper",
+      "name": "Hanging Upper",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "beastblow",
+      "name": "Beast Blow",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
         "P"
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "minimumupper",
+      "name": "Minimum Upper",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "silentstorm",
+      "name": "Silent Storm",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "godbreath",
+      "name": "God Breath",
+      "type": "special",
+      "inputs": [
+        "down",
+        "up",
+        "HP"
+      ]
+    },
+    {
+      "id": "earthchopper",
+      "name": "Earth Chopper",
+      "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "nightmareknocker",
+      "name": "Nightmare Knocker",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
         "down",
         "down-forward",
         "forward",
+        "P",
+        "(reverse",
+        "high)"
+      ]
+    },
+    {
+      "id": "groundchopper",
+      "name": "^!ground Chopper",
+      "type": "special",
+      "inputs": [
+        "down",
         "P"
       ]
     }

@@ -3,22 +3,152 @@
   "character": "Vector",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "standingthrow",
+      "name": "Standing Throw",
+      "type": "throw",
       "inputs": [
-        "P"
+        "_a_b"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "crouchingthrow",
+      "name": "Crouching Throw",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "_a_b"
+      ]
+    },
+    {
+      "id": "lowerattack",
+      "name": "Lower Attack",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "_a"
+      ]
+    },
+    {
+      "id": "legcut",
+      "name": "Leg Cut",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "drillkick",
+      "name": "Drill Kick",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "beambazooka",
+      "name": "Beam Bazooka",
       "type": "special",
       "inputs": [
         "down",
+        "down-back",
+        "back",
+        "or",
+        "down",
         "down-forward",
         "forward",
-        "P"
+        "_a"
+      ]
+    },
+    {
+      "id": "fakebeambazooka",
+      "name": "Fake Beam Bazooka",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "or",
+        "down",
+        "down-forward",
+        "forward",
+        "START"
+      ]
+    },
+    {
+      "id": "horizontallaser",
+      "name": "Horizontal Laser",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "or",
+        "down",
+        "down-forward",
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "madblit",
+      "name": "Mad Blit",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "move",
+      "name": "^!move",
+      "type": "special",
+      "inputs": [
+        "back",
+        "or",
+        "forward"
+      ]
+    },
+    {
+      "id": "flyingdrill",
+      "name": "^!flying Drill",
+      "type": "special",
+      "inputs": [
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "lastshooting",
+      "name": "Last Shooting",
+      "type": "special",
+      "inputs": [
+        "throw",
+        "from",
+        "behind",
+        "_a"
+      ]
+    },
+    {
+      "id": "verticallaser",
+      "name": "Vertical Laser",
+      "type": "special",
+      "inputs": [
+        "back",
+        "turned",
+        "K"
+      ]
+    },
+    {
+      "id": "backrollerdash",
+      "name": "Back Roller Dash",
+      "type": "special",
+      "inputs": [
+        "back",
+        "^4"
       ]
     }
   ]

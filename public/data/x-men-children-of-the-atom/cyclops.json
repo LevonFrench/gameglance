@@ -3,11 +3,163 @@
   "character": "Cyclops",
   "movesList": [
     {
-      "id": "general-attack",
-      "name": "Basic Attack",
+      "id": "opticdrill",
+      "name": "Optic Drill",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "control",
+      "name": "^!control",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward"
+      ]
+    },
+    {
+      "id": "groundslam",
+      "name": "Ground Slam",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "legthrow",
+      "name": "Leg Throw",
+      "type": "throw",
+      "inputs": [
+        "down-back",
+        "or",
+        "down-forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "downwardopticdrill",
+      "name": "Downward Optic Drill",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "quadrupleattacks",
+      "name": "Quadruple Attacks",
       "type": "normal",
       "inputs": [
+        "LP",
+        "LP",
+        "LP",
+        "LP",
+        "or",
+        "LK",
+        "LK",
+        "LK",
+        "LK"
+      ]
+    },
+    {
+      "id": "doublekick",
+      "name": "Double Kick",
+      "type": "normal",
+      "inputs": [
+        "HK",
+        "HK"
+      ]
+    },
+    {
+      "id": "alternativeattacks",
+      "name": "Alternative Attacks",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "MP",
+        "or",
+        "HP",
+        "or",
+        "LK",
+        "or",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "2danjump",
+      "name": "2 Dan Jump",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "up"
+      ]
+    },
+    {
+      "id": "opticblast",
+      "name": "Optic Blast",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
         "P"
+      ]
+    },
+    {
+      "id": "genesplice",
+      "name": "Gene Splice",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P",
+        "(^*)"
+      ]
+    },
+    {
+      "id": "rapidpunches",
+      "name": "Rapid Punches",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "forward",
+        "LP",
+        "LK",
+        ",",
+        "^*",
+        "P"
+      ]
+    },
+    {
+      "id": "runningneckbreakerdrop",
+      "name": "Running Neck Breaker Drop",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "forward",
+        "HP",
+        "HK"
       ]
     }
   ]

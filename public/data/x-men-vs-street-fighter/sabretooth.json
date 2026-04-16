@@ -3,16 +3,47 @@
   "character": "Sabretooth",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "grabandmultipleslams",
+      "name": "Grab And Multiple Slams",
+      "type": "throw",
       "inputs": [
-        "P"
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "grabandslam",
+      "name": "Grab And Slam",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "sankakutobi",
+      "name": "Sankaku Tobi",
+      "type": "normal",
+      "inputs": [
+        "jump",
+        "against",
+        "the",
+        "wall",
+        "up-forward"
+      ]
+    },
+    {
+      "id": "berserkerclaw",
+      "name": "Berserker Claw",
       "type": "special",
       "inputs": [
         "down",
@@ -22,17 +53,29 @@
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "wildfang",
+      "name": "Wild Fang",
+      "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
         "forward",
-        "down",
         "down-forward",
-        "forward",
+        "down",
+        "down-back",
+        "back",
         "P"
+      ]
+    },
+    {
+      "id": "armedbirdie",
+      "name": "Armed Birdie",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
       ]
     }
   ]

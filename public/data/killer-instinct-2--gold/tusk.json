@@ -3,36 +3,189 @@
   "character": "Tusk",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
-      "inputs": [
-        "P"
-      ]
-    },
-    {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "backstab",
+      "name": "Back Stab",
       "type": "special",
       "inputs": [
+        "close",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "LP"
+      ]
+    },
+    {
+      "id": "bootkick",
+      "name": "Boot Kick",
+      "type": "special",
+      "inputs": [
+        "down-forward",
+        "down",
+        "down-back",
+        "K"
+      ]
+    },
+    {
+      "id": "webofdeath",
+      "name": "Web Of Death",
+      "type": "special",
+      "inputs": [
+        "down-forward",
+        "down",
+        "down-back",
+        "HP"
+      ]
+    },
+    {
+      "id": "skullsplitter",
+      "name": "Skull Splitter",
+      "type": "special",
+      "inputs": [
+        "down-back",
         "down",
         "down-forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "fakeskullsplitter",
+      "name": "Fake Skull Splitter",
+      "type": "special",
+      "inputs": [
+        "down-back",
+        "down",
+        "down-forward",
+        "LK"
+      ]
+    },
+    {
+      "id": "conquerer",
+      "name": "Conquerer",
+      "type": "special",
+      "inputs": [
         "forward",
+        "down",
+        "down-forward",
         "P"
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "throw",
+      "name": "Throw",
+      "type": "normal",
+      "inputs": [
+        "close",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "overhead",
+      "name": "Overhead",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "doubleattack",
+      "name": "Double Attack",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "airjuggle",
+      "name": "Air Juggle",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        "down",
+        "down-forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "airjugglex2",
+      "name": "Air Jugglex2",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "LP",
+        "forward",
+        "down",
+        "down-forward",
+        "LP"
+      ]
+    },
+    {
+      "id": "retaliation",
+      "name": "Retaliation",
+      "type": "normal",
+      "inputs": [
+        "knocked",
+        "down",
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "combobreaker",
+      "name": "Combo Breaker",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P",
+        "or",
+        "K"
+      ]
+    },
+    {
+      "id": "ultrabreaker",
+      "name": "Ultra Breaker",
+      "type": "normal",
       "inputs": [
         "down",
-        "down-forward",
-        "forward",
+        "down-back",
+        "back",
+        "down-back",
         "down",
         "down-forward",
         "forward",
-        "P"
+        "HP"
+      ]
+    },
+    {
+      "id": "counterattack",
+      "name": "Counter Attack",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "down",
+        "down-back",
+        "HP"
+      ]
+    },
+    {
+      "id": "counterdizzy",
+      "name": "Counter Dizzy",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "LP"
       ]
     }
   ]

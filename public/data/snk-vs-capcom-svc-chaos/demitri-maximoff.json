@@ -3,11 +3,255 @@
   "character": "Demitri Maximoff",
   "movesList": [
     {
-      "id": "pressd",
-      "name": "Press D",
+      "id": "batdive",
+      "name": "(-/-/\u2500) Bat Dive",
+      "type": "throw",
+      "inputs": [
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "lightpleasure",
+      "name": "(-/-/\u2500) Light Pleasure",
+      "type": "throw",
+      "inputs": [
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "ostandinglp",
+      "name": "(-/-/o) Standing Lp",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "ostandingmp",
+      "name": "(-/-/o) Standing Mp",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "ostandinghp",
+      "name": "(-/-/o) Standing Hp",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "ostandinglk",
+      "name": "(-/-/o) Standing Lk",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "ostandingmk",
+      "name": "(-/-/o) Standing Mk",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "standinghk",
+      "name": "(-/-/\u2500) Standing Hk",
+      "type": "normal",
+      "inputs": [
+        "HK"
+      ]
+    },
+    {
+      "id": "crouchinglp",
+      "name": "(-/-/\u2500) Crouching Lp",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "P"
+      ]
+    },
+    {
+      "id": "crouchingmp",
+      "name": "(-/-/\u2500) Crouching Mp",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "crouchinghp",
+      "name": "(-/-/\u2500) Crouching Hp",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "crouchinglk",
+      "name": "(-/-/\u2500) Crouching Lk",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "ocrouchingmk",
+      "name": "(-/-/o) Crouching Mk",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        "K"
+      ]
+    },
+    {
+      "id": "ocrouchinghk",
+      "name": "(-/-/o) Crouching Hk",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "HK"
+      ]
+    },
+    {
+      "id": "hunterchain",
+      "name": "(-/-/\u2500) Hunter Chain",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "or",
+        "down-forward",
+        "P",
+        "K",
+        "P",
+        "K",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "hellride",
+      "name": "(-/-/\u2500) Hell Ride",
+      "type": "normal",
+      "inputs": [
+        "opponent",
+        "knocked",
+        "down",
+        "up",
+        "K"
+      ]
+    },
+    {
+      "id": "ichaosflare",
+      "name": "(-/i/\u2500) Chaos Flare",
       "type": "special",
       "inputs": [
-        "Standing HK"
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "eschaosflare1lv",
+      "name": "(-/-/\u2500) Es Chaos Flare (1lv)",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "P",
+        "HP"
+      ]
+    },
+    {
+      "id": "iodemoncradle",
+      "name": "(!/i/o) Demon Cradle",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P",
+        "(\"O\"",
+        "on",
+        "1st/2nd",
+        "hit)"
+      ]
+    },
+    {
+      "id": "ibatspin",
+      "name": "(-/i/\u2500) Bat Spin",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-back",
+        "back",
+        "K",
+        "or",
+        "K",
+        "HK"
+      ]
+    },
+    {
+      "id": "itokushuidouforward",
+      "name": "(-/i/\u2500) Tokushu Idou: Forward",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "K",
+        "HP"
+      ]
+    },
+    {
+      "id": "o",
+      "name": "(!/-/o)",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "itokushuidoubackward",
+      "name": "(-/i/\u2500) Tokushu Idou: Backward",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "back",
+        "K",
+        "HP"
+      ]
+    },
+    {
+      "id": "o",
+      "name": "(!/-/o)",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
       ]
     }
   ],

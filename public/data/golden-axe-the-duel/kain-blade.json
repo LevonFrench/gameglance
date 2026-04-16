@@ -1,40 +1,52 @@
 {
-    "game": "Golden Axe: The Duel",
-    "character": "Kain Blade",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Splitting Fireball",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-forward",
-                "forward",
-                "Slash"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Rising Fire",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down",
-                "down-forward",
-                "Slash"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Slide Kick",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-forward",
-                "forward",
-                "Kick"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Golden Axe: The Duel",
+  "character": "Kain Blade",
+  "movesList": [
+    {
+      "id": "catapulttoss",
+      "name": "Catapult Toss",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "powerblast",
+      "name": "Power Blast",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "fireedge",
+      "name": "Fire Edge",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "rushingkick",
+      "name": "Rushing Kick",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K",
+        "(^*)"
+      ]
+    }
+  ],
+  "combosList": []
 }

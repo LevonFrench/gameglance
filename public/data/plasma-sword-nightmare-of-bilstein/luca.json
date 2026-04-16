@@ -3,22 +3,287 @@
   "character": "Luca",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "standingthrow",
+      "name": "Standing Throw",
+      "type": "throw",
       "inputs": [
-        "P"
+        "_a_b"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "crouchingthrow",
+      "name": "Crouching Throw",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "_a_b"
+      ]
+    },
+    {
+      "id": "hiyakuyoukyoku",
+      "name": "Hiyaku Youkyoku",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "_a"
+      ]
+    },
+    {
+      "id": "staffattack",
+      "name": "Staff Attack",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "_b"
+      ]
+    },
+    {
+      "id": "koukaitenshuu",
+      "name": "Kou Kaiten Shuu",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "tsuboshiatsuzuki",
+      "name": "Tsubo Shiatsu Zuki",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "_a"
+      ]
+    },
+    {
+      "id": "kaitenkeizan",
+      "name": "Kaiten Keizan",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "haikotsushinchou",
+      "name": "Haikotsu Shinchou",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "zettaiansei",
+      "name": "^!zettai Ansei",
+      "type": "normal",
+      "inputs": [
+        "^2"
+      ]
+    },
+    {
+      "id": "zettaiansei",
+      "name": "Zettai Ansei",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "down",
+        "down"
+      ]
+    },
+    {
+      "id": "shindash",
+      "name": "^!shin Dash",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "back",
+        "or",
+        "forward",
+        "forward"
+      ]
+    },
+    {
+      "id": "lyingdownmovement",
+      "name": "^!lying Down Movement",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward"
+      ]
+    },
+    {
+      "id": "shindouryouhou",
+      "name": "^!shindou Ryouhou",
+      "type": "normal",
+      "inputs": [
+        "close",
+        "_a_b"
+      ]
+    },
+    {
+      "id": "okiru",
+      "name": "^!okiru",
+      "type": "normal",
+      "inputs": [
+        "@M-button"
+      ]
+    },
+    {
+      "id": "temaeshinidou",
+      "name": "^!temae Shin Idou",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "@M-button"
+      ]
+    },
+    {
+      "id": "oushinidou",
+      "name": "^!ou Shin Idou",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "@M-button"
+      ]
+    },
+    {
+      "id": "okiagarikougeki",
+      "name": "^!okiagari Kougeki",
+      "type": "normal",
+      "inputs": [
+        "K"
+      ]
+    },
+    {
+      "id": "okiagarigedankougeki",
+      "name": "^!okiagari Gedan Kougeki",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "okiagaritaikuukougeki",
+      "name": "^!okiagari Taikuu Kougeki",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "up",
+        "K"
+      ]
+    },
+    {
+      "id": "getupjumpattack",
+      "name": "^!get Up Jump Attack",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "_a"
+      ]
+    },
+    {
+      "id": "getupleapslide",
+      "name": "^!get Up Leap Slide",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "atamakyodaika",
+      "name": "^!atama Kyodaika",
+      "type": "normal",
+      "inputs": [
+        "_O",
+        "START"
+      ]
+    },
+    {
+      "id": "bakuentousha",
+      "name": "Baku'en Tousha",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "_a"
+      ]
+    },
+    {
+      "id": "soseihenkan",
+      "name": "Sosei Henkan",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "kyakubukaiten",
+      "name": "Kyakubu Kaiten",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "enshinbunri",
+      "name": "Enshin Bunri",
+      "type": "special",
+      "inputs": [
+        "opponent",
+        "knocked",
+        "down",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "katsutounyuu",
+      "name": "Katsu Tou'nyuu",
+      "type": "special",
+      "inputs": [
+        "opponent",
+        "knocked",
+        "down",
+        "down",
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "shukushou",
+      "name": "Shukushou",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down",
+        "forward",
+        "back",
+        "START"
+      ]
+    },
+    {
+      "id": "returntonormalsize",
+      "name": "^!return To Normal Size",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down",
+        "forward",
+        "back",
+        "START"
       ]
     }
   ]

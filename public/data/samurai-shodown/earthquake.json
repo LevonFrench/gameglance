@@ -3,19 +3,60 @@
   "character": "Earthquake",
   "movesList": [
     {
-      "id": "unknown-1",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "deaththrow",
+      "name": "(\u2500) Death Throw",
+      "type": "throw",
       "inputs": [
-        "P"
+        "back",
+        "or",
+        "forward",
+        "K",
+        "or",
+        "HK"
       ]
     },
     {
-      "id": "unknown-2",
-      "name": "Special Attack",
+      "id": "fatbuster",
+      "name": "(\u2500) Fat Buster",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "sankakutobi",
+      "name": "(\u2500) Sankaku Tobi",
+      "type": "normal",
+      "inputs": [
+        "jump",
+        "against",
+        "the",
+        "wall",
+        "up-forward"
+      ]
+    },
+    {
+      "id": "wfatchainsaw",
+      "name": "(w) Fat Chainsaw",
       "type": "special",
       "inputs": [
-        "QCF+P"
+        "^*",
+        "SELECT"
+      ]
+    },
+    {
+      "id": "fatbound",
+      "name": "(\u2500) Fat Bound",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "HP",
+        "HK"
       ]
     }
   ]

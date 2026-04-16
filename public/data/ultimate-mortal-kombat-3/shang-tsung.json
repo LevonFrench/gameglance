@@ -3,22 +3,47 @@
   "character": "Shang Tsung",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "singleflamingskull",
+      "name": "Single Flaming Skull",
+      "type": "special",
       "inputs": [
-        "P"
+        "back",
+        "back",
+        "HP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "doubleflamingskull",
+      "name": "Double Flaming Skull",
       "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
+        "back",
+        "back",
         "forward",
-        "P"
+        "HP"
+      ]
+    },
+    {
+      "id": "tripleflamingskull",
+      "name": "Triple Flaming Skull",
+      "type": "special",
+      "inputs": [
+        "back",
+        "back",
+        "forward",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "volcaniceruption",
+      "name": "Volcanic Eruption",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "back",
+        "back",
+        "LK"
       ]
     }
   ]

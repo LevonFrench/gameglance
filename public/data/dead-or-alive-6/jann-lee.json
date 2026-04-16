@@ -3,22 +3,86 @@
   "character": "Jann Lee",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "faceslam",
+      "name": "Face Slam",
+      "type": "throw",
       "inputs": [
+        "_H",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
-      "type": "special",
+      "id": "spinningsideslam",
+      "name": "Spinning Side Slam",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "_H",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "bodytoss",
+      "name": "Body Toss",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "headslam",
+      "name": "Head Slam",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "facesmack",
+      "name": "Face Smack",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "_H"
+      ]
+    },
+    {
+      "id": "neckwringer",
+      "name": "Neck Wringer",
+      "type": "throw",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "_H"
+      ]
+    },
+    {
+      "id": "bulldog",
+      "name": "^!bulldog",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "back",
+        "_H"
+      ]
+    },
+    {
+      "id": "spinepunch",
+      "name": "Spine Punch",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "forward",
+        "_H"
       ]
     }
   ]

@@ -3,22 +3,154 @@
   "character": "Hanzo Hattori",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "kuutennage",
+      "name": "(\u2500) Kuuten Nage",
+      "type": "throw",
       "inputs": [
-        "P"
+        "back",
+        "or",
+        "forward",
+        "K",
+        "or",
+        "P",
+        "K"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "wkubinagekiri",
+      "name": "(w) Kubinage Kiri",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK",
+        "or",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "kubinage",
+      "name": "(\u2500) Kubinage",
+      "type": "throw",
+      "inputs": [
+        "unarmed",
+        "back",
+        "or",
+        "forward",
+        "HK",
+        "or",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "kuutengeki",
+      "name": "(\u2500) Kuuten Geki",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "K",
+        "or",
+        "P",
+        "K",
+        "or",
+        "HK",
+        "or",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "sankakutobi",
+      "name": "(\u2500) Sankaku Tobi",
+      "type": "normal",
+      "inputs": [
+        "jump",
+        "against",
+        "the",
+        "wall",
+        "up-forward"
+      ]
+    },
+    {
+      "id": "ninpoureppuushuriken",
+      "name": "(\u2500) Ninpou Reppuu Shuriken",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "SELECT"
+      ]
+    },
+    {
+      "id": "ninpoubakuenryuu",
+      "name": "(\u2500) Ninpou Baku'en Ryuu",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "SELECT"
+      ]
+    },
+    {
+      "id": "ninpoumozuotoshi",
+      "name": "(\u2500) Ninpou Mozu Otoshi",
+      "type": "special",
+      "inputs": [
+        "close",
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "ninpoukagebunshin",
+      "name": "(\u2500) Ninpou Kage Bunshin",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "SELECT",
+        "or",
+        "K"
+      ]
+    },
+    {
+      "id": "ninpouutsusemitenbu",
+      "name": "(\u2500) Ninpou Utsusemi Tenbu",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "ninpoumigawarinojutsuhotoke",
+      "name": "(\u2500) Ninpou Migawari No Jutsu: Hotoke",
+      "type": "special",
+      "inputs": [
+        "being",
+        "hit",
+        "K",
+        "HP",
+        "HK"
       ]
     }
   ]

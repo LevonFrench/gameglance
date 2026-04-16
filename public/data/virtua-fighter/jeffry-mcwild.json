@@ -3,36 +3,89 @@
   "character": "Jeffry McWild",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "firemanscarry",
+      "name": "Fireman's Carry",
+      "type": "throw",
       "inputs": [
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "powerslam",
+      "name": "Power Slam",
+      "type": "throw",
+      "inputs": [
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
-      "type": "special",
+      "id": "militarypress",
+      "name": "Military Press",
+      "type": "throw",
       "inputs": [
-        "down",
-        "down-forward",
-        "forward",
+        "back",
+        "back",
         "P"
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "crucifixpiledriver",
+      "name": "Crucifix Piledriver",
+      "type": "throw",
       "inputs": [
-        "down",
         "down-forward",
-        "forward",
-        "down",
         "down-forward",
-        "forward",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "backbreaker",
+      "name": "Backbreaker",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "ironclaw",
+      "name": "Iron Claw",
+      "type": "throw",
+      "inputs": [
+        "crouching",
+        "opponent",
+        "down",
         "P"
+      ]
+    },
+    {
+      "id": "powerbomb",
+      "name": "Powerbomb",
+      "type": "throw",
+      "inputs": [
+        "crouching",
+        "opponent",
+        "down-forward",
+        "P",
+        "K",
+        "_G"
+      ]
+    },
+    {
+      "id": "tripleknee",
+      "name": "Triple Knee",
+      "type": "throw",
+      "inputs": [
+        "crouching",
+        "opponent",
+        "down",
+        "forward",
+        "K"
       ]
     }
   ]

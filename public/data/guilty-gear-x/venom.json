@@ -3,22 +3,115 @@
   "character": "Venom",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "encapsulate",
+      "name": "Encapsulate",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "hiltbash",
+      "name": "Hilt Bash",
       "type": "normal",
       "inputs": [
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "bigslash",
+      "name": "Big Slash",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "stingeraim",
+      "name": "Stinger Aim",
       "type": "special",
       "inputs": [
+        "^4",
+        "forward",
+        "_a",
+        "or",
+        "_b",
+        "(_O)"
+      ]
+    },
+    {
+      "id": "carcassride",
+      "name": "Carcass Ride",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "_a",
+        "or",
+        "_b"
+      ]
+    },
+    {
+      "id": "ballseisei",
+      "name": "Ball Seisei",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "P",
+        "or",
+        "K",
+        "or",
+        "_a",
+        "or",
+        "_b",
+        "(x4)"
+      ]
+    },
+    {
+      "id": "doubleheadmorbid",
+      "name": "Double Head Morbid",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "_a",
+        "or",
+        "_b"
+      ]
+    },
+    {
+      "id": "shuukanidou",
+      "name": "Shuukan Idou",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "madstruggle",
+      "name": "Mad Struggle",
+      "type": "special",
+      "inputs": [
+        "_^",
         "down",
         "down-forward",
         "forward",
-        "P"
+        "_a",
+        "or",
+        "_b"
       ]
     }
   ]

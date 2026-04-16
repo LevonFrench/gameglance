@@ -3,8 +3,112 @@
   "character": "Sho Kamui",
   "movesList": [
     {
-      "id": "sp_0",
-      "name": "Sho Ryu Ha",
+      "id": "shouldertoss",
+      "name": "Shoulder Toss",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "fallingdrop",
+      "name": "Falling Drop",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "HP",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "overheadpunch",
+      "name": "Overhead Punch",
+      "type": "normal",
+      "inputs": [
+        "P",
+        "HP"
+      ]
+    },
+    {
+      "id": "lungeknee",
+      "name": "Lunge Knee",
+      "type": "normal",
+      "inputs": [
+        "K",
+        "HP"
+      ]
+    },
+    {
+      "id": "shinkick",
+      "name": "Shin Kick",
+      "type": "normal",
+      "inputs": [
+        "K",
+        "HK"
+      ]
+    },
+    {
+      "id": "rapidjabs",
+      "name": "Rapid Jabs",
+      "type": "normal",
+      "inputs": [
+        "P",
+        "P",
+        "P",
+        "P",
+        "P"
+      ]
+    },
+    {
+      "id": "elbowuppersequence",
+      "name": "Elbow-upper Sequence",
+      "type": "normal",
+      "inputs": [
+        "HP",
+        "HP",
+        "HP"
+      ]
+    },
+    {
+      "id": "divestomp",
+      "name": "Dive Stomp",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "divekick",
+      "name": "Dive Kick",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HK"
+      ]
+    },
+    {
+      "id": "uppercut",
+      "name": "Uppercut",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "up",
+        "HP"
+      ]
+    },
+    {
+      "id": "rekkoha",
+      "name": "Rekko Ha",
       "type": "special",
       "inputs": [
         "down",
@@ -14,31 +118,38 @@
       ]
     },
     {
-      "id": "sp_1",
-      "name": "Guren Ken",
+      "id": "midarekiryuukeri",
+      "name": "Midare Kiryuu Keri",
       "type": "special",
       "inputs": [
-        "forward",
         "down",
         "down-forward",
-        "P"
+        "forward",
+        "K"
       ]
     },
     {
-      "id": "sp_2",
-      "name": "Ryuu Kusei",
+      "id": "kurenaisandankeri",
+      "name": "Kurenai Sandan Keri",
       "type": "special",
       "inputs": [
-        "(",
-        "In",
-        " ",
-        "Air",
-        ")",
-        " ",
         "down",
         "down-back",
         "back",
+        "K",
+        "K",
         "K"
+      ]
+    },
+    {
+      "id": "shippuushokentsuki",
+      "name": "Shippuu Shoken Tsuki",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "back",
+        "forward",
+        "P"
       ]
     }
   ],

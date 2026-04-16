@@ -3,10 +3,52 @@
   "character": "Jin Chonshu",
   "movesList": [
     {
-      "id": "general-attack",
-      "name": "Basic Attack",
+      "id": "hatsugeitatsu",
+      "name": "(\u2500) Hatsugei Tatsu",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "tatsukaitou",
+      "name": "(\u2500) Tatsu Kaitou",
       "type": "normal",
       "inputs": [
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "teioujinsokuken",
+      "name": "(\u2500) Teiou Jinsoku Ken",
+      "type": "special",
+      "inputs": [
+        "down-back",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "teioutengenken",
+      "name": "(\u2500) Teiou Tengen Ken",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "teioutenjiken",
+      "name": "(\u2500) Teiou Tenji Ken",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
         "P"
       ]
     }

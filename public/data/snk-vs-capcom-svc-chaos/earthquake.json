@@ -3,22 +3,124 @@
   "character": "Earthquake",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "fatbuster",
+      "name": "(-/-/\u2500) Fat Buster",
+      "type": "throw",
       "inputs": [
-        "P"
+        "P",
+        "K"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "gotoheaven",
+      "name": "(-/-/\u2500) Go To Heaven",
+      "type": "throw",
+      "inputs": [
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "fatbound",
+      "name": "(-/-/\u2500) Fat Bound",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "sankakutobi",
+      "name": "(-/-/\u2500) Sankaku Tobi",
+      "type": "normal",
+      "inputs": [
+        "jump",
+        "against",
+        "the",
+        "wall",
+        "up-forward"
+      ]
+    },
+    {
+      "id": "ifatburst",
+      "name": "(-/i/\u2500) Fat Burst",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "chainsawdive",
+      "name": "(-/-/\u2500) Chainsaw Dive",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "ifatchainsaw",
+      "name": "(-/i/\u2500) Fat Chainsaw",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "ifatbreath",
+      "name": "(-/i/\u2500) Fat Breath",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(-/-/\u2500)",
+      "type": "special",
+      "inputs": [
+        "down",
+        "or",
+        "up"
+      ]
+    },
+    {
+      "id": "ifatfake",
+      "name": "(-/i/\u2500) Fat Fake",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "ifatreplicaattack",
+      "name": "(-/i/\u2500) Fat Replica Attack",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "HK"
       ]
     }
   ]

@@ -1,40 +1,115 @@
 {
-    "game": "Marvel Super Heroes",
-    "character": "Shuma-Gorath",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Mystic Stare",
-            "type": "special",
-            "inputs": [
-                "back (Charge)",
-                "forward",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Mystic Smash",
-            "type": "special",
-            "inputs": [
-                "back (Charge)",
-                "forward",
-                "K (Air OK)"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Devitalization",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down-forward",
-                "down",
-                "down-back",
-                "back",
-                "K (Close)"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Marvel Super Heroes",
+  "character": "Shuma-Gorath",
+  "movesList": [
+    {
+      "id": "bitandthrow",
+      "name": "Bit And Throw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "energydrain",
+      "name": "Energy Drain",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "blobdrop",
+      "name": "Blob Drop",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "airenergydrain",
+      "name": "Air Energy Drain",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "sekika",
+      "name": "Sekika",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "MK"
+      ]
+    },
+    {
+      "id": "upwardblast",
+      "name": "Upward Blast",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "up",
+        "HP"
+      ]
+    },
+    {
+      "id": "mysticstare",
+      "name": "Mystic Stare",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "mysticsmash",
+      "name": "Mystic Smash",
+      "type": "special",
+      "inputs": [
+        "(_^)^4",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "devitalization",
+      "name": "Devitalization",
+      "type": "special",
+      "inputs": [
+        "close",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    }
+  ],
+  "combosList": []
 }

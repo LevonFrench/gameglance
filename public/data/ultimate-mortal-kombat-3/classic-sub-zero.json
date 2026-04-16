@@ -3,22 +3,34 @@
   "character": "Classic Sub-Zero",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
-      "inputs": [
-        "P"
-      ]
-    },
-    {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "freeze",
+      "name": "Freeze",
       "type": "special",
       "inputs": [
         "down",
-        "down-forward",
         "forward",
-        "P"
+        "LP"
+      ]
+    },
+    {
+      "id": "groundfreeze",
+      "name": "Ground Freeze",
+      "type": "special",
+      "inputs": [
+        "down",
+        "back",
+        "LK"
+      ]
+    },
+    {
+      "id": "slide",
+      "name": "Slide",
+      "type": "special",
+      "inputs": [
+        "back",
+        "LP",
+        "_G",
+        "LK"
       ]
     }
   ]

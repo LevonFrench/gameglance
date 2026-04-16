@@ -3,22 +3,33 @@
   "character": "Sheeva",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
-      "inputs": [
-        "P"
-      ]
-    },
-    {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "fireball",
+      "name": "Fireball",
       "type": "special",
       "inputs": [
         "down",
-        "down-forward",
         "forward",
-        "P"
+        "HP"
+      ]
+    },
+    {
+      "id": "teleportstomp",
+      "name": "Teleport Stomp",
+      "type": "special",
+      "inputs": [
+        "down",
+        "up"
+      ]
+    },
+    {
+      "id": "groundstomp",
+      "name": "Ground Stomp",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down",
+        "back",
+        "HK"
       ]
     }
   ]

@@ -3,21 +3,140 @@
   "character": "Anji Mito",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "fantakedown",
+      "name": "Fan Takedown",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "fanbonk",
+      "name": "Fan Bonk",
       "type": "normal",
       "inputs": [
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "fanswing",
+      "name": "Fan Swing",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "spinningfans",
+      "name": "Spinning Fans",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "shitsu",
+      "name": "Shitsu",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "fuujin",
+      "name": "Fuu Jin",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "_a",
+        "or",
+        "_b"
+      ]
+    },
+    {
+      "id": "shinichishiki",
+      "name": "^!shin: Ichi Shiki",
+      "type": "special",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "shinnishiki",
+      "name": "^!shin: Ni Shiki",
+      "type": "special",
+      "inputs": [
+        "K"
+      ]
+    },
+    {
+      "id": "nagiha",
+      "name": "^!nagi Ha",
+      "type": "special",
+      "inputs": [
+        "_a"
+      ]
+    },
+    {
+      "id": "shinnishiki",
+      "name": "Shin: Ni Shiki",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "on",
+      "name": "On",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "kai",
+      "name": "Kai",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P",
+        "or",
+        "K"
+      ]
+    },
+    {
+      "id": "kou",
+      "name": "Kou",
+      "type": "special",
+      "inputs": [
+        "during",
+        "a",
+        "autoblock",
+        "of",
+        "_a",
+        "or",
+        "_b,",
+        "press",
         "P"
       ]
     }

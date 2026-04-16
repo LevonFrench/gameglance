@@ -3,36 +3,224 @@
   "character": "T.J. Combo",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
-      "inputs": [
-        "P"
-      ]
-    },
-    {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "spinfist",
+      "name": "Spinfist",
       "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
+        "^4",
         "forward",
-        "P"
+        "LP"
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "doublespinfist",
+      "name": "Double Spinfist",
+      "type": "special",
       "inputs": [
+        "^6",
+        "back",
+        "LP"
+      ]
+    },
+    {
+      "id": "doublerollercoaster",
+      "name": "Double Rollercoaster",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "or",
+        "^6",
+        "back",
+        "MP"
+      ]
+    },
+    {
+      "id": "triplerollercoaster",
+      "name": "Triple Rollercoaster",
+      "type": "special",
+      "inputs": [
+        "^1",
         "down",
         "down-forward",
         "forward",
-        "down",
-        "down-forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "powerline",
+      "name": "Powerline",
+      "type": "special",
+      "inputs": [
+        "^4",
         "forward",
-        "P"
+        "HP"
+      ]
+    },
+    {
+      "id": "tjtremor",
+      "name": "Tj Tremor",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "or",
+        "^6",
+        "back",
+        "MK"
+      ]
+    },
+    {
+      "id": "skullcrusher",
+      "name": "Skull Crusher",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "cyclone",
+      "name": "Cyclone",
+      "type": "special",
+      "inputs": [
+        "_O",
+        "HP",
+        ",",
+        "HP"
+      ]
+    },
+    {
+      "id": "fakedizzy",
+      "name": "Fake Dizzy",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "LK"
+      ]
+    },
+    {
+      "id": "sneakbehind",
+      "name": "Sneak Behind",
+      "type": "special",
+      "inputs": [
+        "close",
+        "^4",
+        "forward",
+        "or",
+        "^6",
+        "back",
+        "LK"
+      ]
+    },
+    {
+      "id": "throw",
+      "name": "Throw",
+      "type": "normal",
+      "inputs": [
+        "close",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "overhead",
+      "name": "Overhead",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "MP"
+      ]
+    },
+    {
+      "id": "doubleattack",
+      "name": "Double Attack",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "airjuggle",
+      "name": "Air Juggle",
+      "type": "normal",
+      "inputs": [
+        "^4",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "airjugglex2",
+      "name": "Air Jugglex2",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "retaliation",
+      "name": "Retaliation",
+      "type": "normal",
+      "inputs": [
+        "knocked",
+        "down",
+        "^4",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "combobreaker",
+      "name": "Combo Breaker",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "forward",
+        "P",
+        "or",
+        "K"
+      ]
+    },
+    {
+      "id": "ultrabreaker",
+      "name": "Ultra Breaker",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "counterattack",
+      "name": "Counter Attack",
+      "type": "normal",
+      "inputs": [
+        "^4",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "counterdizzy",
+      "name": "Counter Dizzy",
+      "type": "normal",
+      "inputs": [
+        "^6",
+        "back",
+        "HP"
       ]
     }
   ]

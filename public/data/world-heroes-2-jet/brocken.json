@@ -3,34 +3,152 @@
   "character": "Brocken",
   "movesList": [
     {
-      "name": "Hurricane Arm",
+      "id": "highdropsuplex",
+      "name": "High Drop Suplex",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "suplex",
+      "name": "Suplex",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "stretcharm",
+      "name": "Stretch Arm",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "stretchroundhouse",
+      "name": "Stretch Roundhouse",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "metalknee",
+      "name": "Metal Knee",
+      "type": "normal",
+      "inputs": [
+        "close",
+        "back",
+        "or",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "rocketjump",
+      "name": "Rocket Jump",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "control",
+      "name": "^!control",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "or",
+        "up"
+      ]
+    },
+    {
+      "id": "rollingheelkick",
+      "name": "Rolling Heel Kick",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "sparkthunder",
+      "name": "Spark Thunder",
+      "type": "special",
+      "inputs": [
+        "^*",
+        "P"
+      ]
+    },
+    {
+      "id": "longsparkthunder",
+      "name": "Long Spark Thunder",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "rocketpunch",
+      "name": "Rocket Punch",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "+A"
-      ],
-      "id": "hurricane-arm"
+        "P"
+      ]
     },
     {
-      "name": "Spark Thunder",
+      "id": "germanmissile",
+      "name": "German Missile",
       "type": "special",
       "inputs": [
-        "Tap A rapidly"
-      ],
-      "id": "spark-thunder"
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
     },
     {
-      "name": "Grenade Launcher",
+      "id": "hurricanearm",
+      "name": "Hurricane Arm",
+      "type": "special",
+      "inputs": [
+        "down",
+        "forward",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "jackhammer",
+      "name": "Jack Hammer",
       "type": "special",
       "inputs": [
         "down",
         "down-back",
         "back",
-        "+A"
-      ],
-      "id": "grenade-launcher"
+        "P"
+      ]
     }
   ]
 }

@@ -3,44 +3,119 @@
   "character": "Mudman",
   "movesList": [
     {
-      "name": "Mud Attack",
+      "id": "dakitsukipunch",
+      "name": "(\u2500) Dakitsuki Punch",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "maskhooking",
+      "name": "(\u2500) Mask Hooking",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "mudmandance",
+      "name": "(\u2500) Mudman Dance",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "mudkick",
+      "name": "(\u2500) Mud Kick",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "doublekick",
+      "name": "(\u2500) Double Kick",
+      "type": "normal",
+      "inputs": [
+        "close",
+        "forward",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "mudslider",
+      "name": "(\u2500) Mud Slider",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "mmudattack",
+      "name": "(m) Mud Attack",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "+A",
-        "/",
-        "C"
-      ],
-      "id": "mud-attack"
+        "P"
+      ]
     },
     {
-      "name": "Mud Cutter",
+      "id": "mudlauncher",
+      "name": "(\u2500) Mud Launcher",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "mudcutter",
+      "name": "(\u2500) Mud Cutter",
       "type": "special",
       "inputs": [
         "down",
         "down-back",
         "back",
-        "+B",
-        "/",
-        "D"
-      ],
-      "id": "mud-cutter"
+        "P"
+      ]
     },
     {
-      "name": "Mud Gyro",
+      "id": "",
+      "name": "(\u2500)",
       "type": "special",
       "inputs": [
-        "[",
+        "back",
+        "or",
+        "forward"
+      ]
+    },
+    {
+      "id": "mudgyro",
+      "name": "(\u2500) Mud Gyro",
+      "type": "special",
+      "inputs": [
         "down",
-        "]",
         "up",
-        "+A",
-        "/",
-        "C"
-      ],
-      "id": "mud-gyro"
+        "P"
+      ]
     }
   ]
 }

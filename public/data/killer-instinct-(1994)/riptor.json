@@ -3,11 +3,136 @@
   "character": "Riptor",
   "movesList": [
     {
-      "id": "changestoknockoffmodethis",
-      "name": "Changes To Knockoff Mode. This",
+      "id": "clawuppercut",
+      "name": "Claw Uppercut",
       "type": "special",
       "inputs": [
-        "will trigger the Health Bar and make it"
+        "down-forward",
+        "down",
+        "down-back",
+        "LP"
+      ]
+    },
+    {
+      "id": "chargeattack",
+      "name": "Charge Attack",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "fireball",
+      "name": "Fireball",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "flamejet",
+      "name": "Flame Jet",
+      "type": "special",
+      "inputs": [
+        "down-forward",
+        "down",
+        "down-back",
+        "HP"
+      ]
+    },
+    {
+      "id": "leapingkick",
+      "name": "Leaping Kick",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "leapingkick",
+      "name": "Leaping Kick",
+      "type": "special",
+      "inputs": [
+        "^6",
+        "back",
+        "LK",
+        "or",
+        "MK"
+      ]
+    },
+    {
+      "id": "tailflip",
+      "name": "Tail Flip",
+      "type": "special",
+      "inputs": [
+        "down-forward",
+        "down",
+        "down-back",
+        "K"
+      ]
+    },
+    {
+      "id": "airtailflip",
+      "name": "Air Tail Flip",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down-forward",
+        "down",
+        "down-back",
+        "HK"
+      ]
+    },
+    {
+      "id": "overhead",
+      "name": "Overhead",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "airjuggle",
+      "name": "Air Juggle",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "LP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "retaliation",
+      "name": "Retaliation",
+      "type": "normal",
+      "inputs": [
+        "knocked",
+        "down",
+        "back",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "combobreaker",
+      "name": "Combo Breaker",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "forward",
+        "K"
       ]
     }
   ]

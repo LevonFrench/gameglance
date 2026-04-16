@@ -3,19 +3,179 @@
   "character": "Geese Howard",
   "movesList": [
     {
-      "id": "unknown-1",
-      "name": "Basic Attack",
+      "id": "shinkuunage",
+      "name": "(\u2500/\u2500) Shinkuu Nage",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "kosatsunage",
+      "name": "(\u2500/\u2500) Kosatsu Nage",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500/\u2500)",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "urakumokakushii",
+      "name": "(\u2500/\u2500) Ura Kumo Kakushii",
+      "type": "throw",
+      "inputs": [
+        "down-back",
+        "HP"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500/\u2500)",
+      "type": "throw",
+      "inputs": [
+        "up-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "kosatsusho",
+      "name": "(\u2500/\u2500) Kosatsu Sho",
+      "type": "throw",
+      "inputs": [
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "braikoumawashigeri",
+      "name": "(b/\u2500) Raikou Mawashi Geri",
       "type": "normal",
       "inputs": [
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "shoutenmyoujouuchi",
+      "name": "(\u2500/\u2500) Shouten Myoujou Uchi",
+      "type": "normal",
+      "inputs": [
+        "down-back",
         "P"
       ]
     },
     {
-      "id": "unknown-2",
-      "name": "Special Attack",
+      "id": "raimeigouhanage",
+      "name": "(\u2500/\u2500) Raimei Gouha Nage",
+      "type": "normal",
+      "inputs": [
+        "opponent",
+        "knocked",
+        "down",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "reppuuken",
+      "name": "(\u2500/\u2500) Reppuu Ken",
       "type": "special",
       "inputs": [
-        "QCF+P"
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "doublereppuuken",
+      "name": "(\u2500/\u2500) Double Reppuu Ken",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "shippuuken",
+      "name": "(\u2500/\u2500) Shippuu Ken",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "doubleshippuuken",
+      "name": "(\u2500/\u2500) Double Shippuu Ken",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-back",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "gjaeiken",
+      "name": "(\u2500/g) Ja'ei Ken",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "K",
+        "or",
+        "HP",
+        "(\"G\"",
+        "with",
+        "HP",
+        ")"
+      ]
+    },
+    {
+      "id": "joudanateminage",
+      "name": "(\u2500/\u2500) Joudan Atemi Nage",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "K",
+        "(reverse",
+        "jump/Specials)"
+      ]
+    },
+    {
+      "id": "gchuudanateminage",
+      "name": "(\u2500/g) Chuudan Atemi Nage",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "HP",
+        "(reverse",
+        "high/mid)"
       ]
     }
   ]

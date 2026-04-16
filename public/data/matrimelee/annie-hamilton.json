@@ -3,18 +3,69 @@
   "character": "Annie Hamilton",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "ostrichthrow",
+      "name": "Ostrich Throw",
+      "type": "throw",
       "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "airostrichthrow",
+      "name": "Air Ostrich Throw",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "anniedynamic",
+      "name": "Annie Dynamic",
+      "type": "special",
+      "inputs": [
+        "_O",
+        "HK",
+        "for",
+        "4",
+        "seconds"
+      ]
+    },
+    {
+      "id": "swannyclash",
+      "name": "Swanny Clash",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "rainbowbarrier",
+      "name": "Rainbow Barrier",
       "type": "special",
       "inputs": [
+        "^4",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "photonburst",
+      "name": "Photon Burst",
+      "type": "special",
+      "inputs": [
+        "_^",
         "down",
         "down-forward",
         "forward",

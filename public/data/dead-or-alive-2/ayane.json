@@ -3,40 +3,435 @@
   "character": "Ayane",
   "movesList": [
     {
-      "id": "sp_0",
-      "name": "Jinpu",
-      "type": "special",
+      "id": "momiji",
+      "name": "Momiji",
+      "type": "throw",
       "inputs": [
-        "P",
-        ",",
-        " ",
-        "P",
-        ",",
-        " ",
-        "forward",
-        "P",
-        ",",
-        " ",
-        "back",
-        "K"
+        "_H",
+        "P"
       ]
     },
     {
-      "id": "sp_1",
-      "name": "Haoujin",
-      "type": "special",
+      "id": "hembu",
+      "name": "H. Embu",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "tsurara",
+      "name": "Tsurara",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "forward",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "icepillardrop",
+      "name": "^!ice Pillar Drop",
+      "type": "throw",
       "inputs": [
         "up",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "kirimadoi",
+      "name": "Kirimadoi",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "tosenka",
+      "name": "Tosenka",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "forward",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "kgengi",
+      "name": "K. Gengi",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "_H",
+        "P",
+        "(BK)"
+      ]
+    },
+    {
+      "id": "kranmu",
+      "name": "K. Ranmu",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "hikari",
+      "name": "Hikari",
+      "type": "throw",
+      "inputs": [
+        "close",
+        "to",
+        "wall",
+        "forward",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "baisenka",
+      "name": "Baisenka",
+      "type": "throw",
+      "inputs": [
+        "close",
+        "to",
+        "wall",
+        "back",
+        "forward",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "ryusa",
+      "name": "Ryusa",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "tsubaki",
+      "name": "Tsubaki",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "forward",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "setsuna",
+      "name": "Setsuna",
+      "type": "throw",
+      "inputs": [
+        "crouching",
+        "opponent",
+        "down",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "kamiyo",
+      "name": "Kamiyo",
+      "type": "throw",
+      "inputs": [
+        "crouching",
+        "opponent",
+        "down-back",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "muso",
+      "name": "Muso",
+      "type": "throw",
+      "inputs": [
+        "crouching",
+        "opponent,",
+        "from",
+        "behind",
+        "down",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "tenbujin",
+      "name": "Tenbujin",
+      "type": "throw",
+      "inputs": [
+        "crouching",
+        "opponent,",
+        "from",
+        "behind",
+        "down-back",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "kamiyoi",
+      "name": "Kamiyoi",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "up",
+        "_H",
+        "(reverse",
+        "high",
+        "punch)"
+      ]
+    },
+    {
+      "id": "hyorin",
+      "name": "Hyorin",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "up",
+        "_H",
+        "(reverse",
+        "high",
+        "kick)"
+      ]
+    },
+    {
+      "id": "ayase",
+      "name": "Ayase",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "back",
+        "_H",
+        "(reverse",
+        "mid",
+        "punch)"
+      ]
+    },
+    {
+      "id": "fubujin",
+      "name": "Fubujin",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "forward",
+        "_H",
+        "(reverse",
+        "mid",
+        "kick)"
+      ]
+    },
+    {
+      "id": "kogarashi",
+      "name": "Kogarashi",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "back",
+        "_H",
+        "(reverse",
+        "low",
+        "punch)"
+      ]
+    },
+    {
+      "id": "futenro",
+      "name": "Futenro",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "back",
+        "_H",
+        "(reverse",
+        "low",
+        "kick)"
+      ]
+    },
+    {
+      "id": "mtenshowithein",
+      "name": "M. Tensho (with Ein)",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "forward",
+        "_H",
+        "P",
         "K"
       ]
     },
     {
-      "id": "sp_2",
-      "name": "Turn Around (Stance)",
-      "type": "special",
+      "id": "ayase2withothers",
+      "name": "Ayase 2 (with Others)",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "forward",
+        "_H",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "appealnokidding",
+      "name": "Appeal: \"no, Kidding\"",
+      "type": "normal",
       "inputs": [
         "back",
-        "P+K"
+        "forward",
+        "back",
+        "_H",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "appealsilly",
+      "name": "Appeal: \"silly\"",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "down",
+        "_H",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "haijinbk",
+      "name": "Haijin: Bk",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "P"
+      ]
+    },
+    {
+      "id": "kazemaibk",
+      "name": "Kazemai: Bk",
+      "type": "normal",
+      "inputs": [
+        "up-back",
+        "P"
+      ]
+    },
+    {
+      "id": "namigatana",
+      "name": "Namigatana",
+      "type": "throw",
+      "inputs": [
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "yamigarasu",
+      "name": "Yamigarasu",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "_H",
+        "P",
+        "(BK)"
+      ]
+    },
+    {
+      "id": "urayami",
+      "name": "Urayami",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "forward",
+        "_H",
+        "P",
+        "(BK)"
+      ]
+    },
+    {
+      "id": "syusui",
+      "name": "Syusui",
+      "type": "throw",
+      "inputs": [
+        "crouching",
+        "opponent",
+        "down",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "furo",
+      "name": "Furo",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "forward"
+      ]
+    },
+    {
+      "id": "renpul",
+      "name": "Renpul",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "^6"
+      ]
+    },
+    {
+      "id": "oroshi",
+      "name": "Oroshi",
+      "type": "normal",
+      "inputs": [
+        "down-forward"
+      ]
+    },
+    {
+      "id": "shimo",
+      "name": "Shimo",
+      "type": "normal",
+      "inputs": [
+        "^3"
+      ]
+    },
+    {
+      "id": "oroshiryu",
+      "name": "Oroshiryu",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "^4",
+        "(BK)"
+      ]
+    },
+    {
+      "id": "soroshi",
+      "name": "S. Oroshi",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "^1",
+        "(BK)"
       ]
     }
   ],

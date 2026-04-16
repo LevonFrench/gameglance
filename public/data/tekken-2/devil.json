@@ -3,14 +3,42 @@
   "character": "Devil",
   "movesList": [
     {
-      "name": "Devil Blaster",
-      "type": "special",
+      "id": "bitchkicks",
+      "name": "Bitch Kicks",
+      "type": "throw",
       "inputs": [
-        "down-back",
-        "+",
-        "down"
-      ],
-      "id": "devil-blaster"
+        "_a_c"
+      ]
+    },
+    {
+      "id": "shoulderthrow",
+      "name": "Shoulder Throw",
+      "type": "throw",
+      "inputs": [
+        "_b_d"
+      ]
+    },
+    {
+      "id": "stonehead",
+      "name": "Stonehead",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "forward",
+        "_a_b"
+      ]
+    },
+    {
+      "id": "atomicdrop",
+      "name": "Atomic Drop",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "_a_c",
+        "or",
+        "_b_d"
+      ]
     }
   ]
 }

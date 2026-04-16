@@ -3,33 +3,110 @@
   "character": "Yoshimitsu",
   "movesList": [
     {
+      "id": "jumpingbodyslam",
+      "name": "Jumping Body Slam",
+      "type": "throw",
+      "inputs": [
+        "_a_c"
+      ]
+    },
+    {
+      "id": "jawsmash",
+      "name": "Jaw Smash",
+      "type": "throw",
+      "inputs": [
+        "_b_d"
+      ]
+    },
+    {
+      "id": "rainbowdrop",
       "name": "Rainbow Drop",
       "type": "throw",
       "inputs": [
         "down",
-        "+",
-        "back"
-      ],
-      "id": "rainbow-drop"
+        "down-back",
+        "back",
+        "_a_b"
+      ]
     },
     {
-      "name": "Shark Attack",
-      "type": "special",
+      "id": "tornadodropbk",
+      "name": "Tornado Drop: Bk",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "_a_c",
+        "or",
+        "_b_d"
+      ]
+    },
+    {
+      "id": "tackle",
+      "name": "Tackle",
+      "type": "throw",
+      "inputs": [
+        "run",
+        "for",
+        "11",
+        "steps"
+      ]
+    },
+    {
+      "id": "cheststab",
+      "name": "^!chest Stab",
+      "type": "throw",
+      "inputs": [
+        "_a",
+        "or",
+        "_b"
+      ]
+    },
+    {
+      "id": "faketurningsuicidebk",
+      "name": "Fake Turning Suicide: Bk",
+      "type": "normal",
       "inputs": [
         "forward",
-        ",",
-        " ",
         "forward",
-        "+",
-        "down-back",
-        ",",
-        " ",
-        "down-back",
-        ",",
-        " ",
-        "down-back"
-      ],
-      "id": "shark-attack"
+        "_a_d"
+      ]
+    },
+    {
+      "id": "teleportfuft",
+      "name": "Teleport: Fu-ft",
+      "type": "normal",
+      "inputs": [
+        "^4_c_d",
+        "(x5)"
+      ]
+    },
+    {
+      "id": "sitstancesit",
+      "name": "Sit Stance: Sit",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "_c_d"
+      ]
+    },
+    {
+      "id": "gainlife",
+      "name": "Gain Life",
+      "type": "normal",
+      "inputs": [
+        "_N"
+      ]
+    },
+    {
+      "id": "teleportbk",
+      "name": "Teleport: Bk",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward"
+      ]
     }
   ]
 }

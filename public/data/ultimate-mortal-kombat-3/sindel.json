@@ -3,22 +3,54 @@
   "character": "Sindel",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "fireball",
+      "name": "Fireball",
+      "type": "special",
       "inputs": [
-        "P"
+        "forward",
+        "forward",
+        "LP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "airfireball",
+      "name": "Air Fireball",
       "type": "special",
       "inputs": [
+        "_^",
         "down",
-        "down-forward",
         "forward",
-        "P"
+        "LK"
+      ]
+    },
+    {
+      "id": "scream",
+      "name": "Scream",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "forward",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "fly",
+      "name": "Fly",
+      "type": "special",
+      "inputs": [
+        "back",
+        "back",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "cancel",
+      "name": "^!cancel",
+      "type": "special",
+      "inputs": [
+        "_G"
       ]
     }
   ]

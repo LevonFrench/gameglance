@@ -3,22 +3,101 @@
   "character": "Prince",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "standingthrow",
+      "name": "Standing Throw",
+      "type": "throw",
       "inputs": [
-        "P"
+        "_a_b"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "crouchingthrow",
+      "name": "Crouching Throw",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "_a_b"
+      ]
+    },
+    {
+      "id": "stancechangeattack",
+      "name": "Stance Change Attack",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "_b"
+      ]
+    },
+    {
+      "id": "sendoutsky",
+      "name": "Sendout Sky",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "_a"
+      ]
+    },
+    {
+      "id": "rollslash",
+      "name": "Roll Slash",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "sailinghit",
+      "name": "Sailing Hit",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "inunosambo",
+      "name": "Inu No Sambo",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "_a_a"
+      ]
+    },
+    {
+      "id": "firecracker",
+      "name": "Firecracker",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "tappingattack",
+      "name": "Tapping Attack",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "acrobatcombo",
+      "name": "Acrobat Combo",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "_b",
+        "(^*)"
       ]
     }
   ]

@@ -3,19 +3,148 @@
   "character": "Arina Makihara",
   "movesList": [
     {
-      "id": "sp_0",
-      "name": "Arina Beam",
+      "id": "backthrow",
+      "name": "(\u2500\u2500) Back Throw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "hipslinger",
+      "name": "(\u2500\u2500) Hip Slinger",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "arinatangle",
+      "name": "(\u2500\u2500) Arina Tangle",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "renzokupunch",
+      "name": "(\u2500\u2500) Renzoku Punch",
+      "type": "normal",
+      "inputs": [
+        "^*",
+        "P"
+      ]
+    },
+    {
+      "id": "renzokushagamijakupunch",
+      "name": "(\u2500\u2500) Renzoku Shagami Jaku Punch",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "^*",
+        "P"
+      ]
+    },
+    {
+      "id": "renzokushagamikyoupunch",
+      "name": "(\u2500\u2500) Renzoku Shagami Kyou Punch",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "K",
+        "K"
+      ]
+    },
+    {
+      "id": "nidankick",
+      "name": "(\u2500\u2500) Nidan Kick",
+      "type": "normal",
+      "inputs": [
+        "HK",
+        "HK"
+      ]
+    },
+    {
+      "id": "renzokujumpjakupunch",
+      "name": "(\u2500\u2500) Renzoku Jump Jaku Punch",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "P",
+        "P"
+      ]
+    },
+    {
+      "id": "renzokujumpkyoupunch",
+      "name": "(\u2500\u2500) Renzoku Jump Kyou Punch",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "K",
+        "K"
+      ]
+    },
+    {
+      "id": "hehen",
+      "name": "(\u2500\u2500) Hehe~n",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "HP",
+        "HP"
+      ]
+    },
+    {
+      "id": "eshorizontalarinabeam",
+      "name": "(es) Horizontal Arina Beam",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "P",
+        "(_O)"
+      ]
+    },
+    {
+      "id": "upwardarinabeam",
+      "name": "(\u2500\u2500) Upward Arina Beam",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "K",
+        "(_O)"
       ]
     },
     {
-      "id": "sp_1",
-      "name": "Arina Crash",
+      "id": "airdownwardarinabeam",
+      "name": "(\u2500\u2500) Air Downward Arina Beam",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-forward",
+        "forward",
+        "K",
+        "(_O)"
+      ]
+    },
+    {
+      "id": "esarinauppercut",
+      "name": "(es) Arina Uppercut",
       "type": "special",
       "inputs": [
         "forward",
@@ -25,14 +154,24 @@
       ]
     },
     {
-      "id": "sp_2",
-      "name": "Arina Tornado",
+      "id": "",
+      "name": "(\u2500\u2500)",
+      "type": "special",
+      "inputs": [
+        "^*",
+        "P"
+      ]
+    },
+    {
+      "id": "esarinatornado",
+      "name": "(es) Arina Tornado",
       "type": "special",
       "inputs": [
         "down",
         "down-back",
         "back",
-        "K"
+        "K",
+        "(^*)"
       ]
     }
   ],

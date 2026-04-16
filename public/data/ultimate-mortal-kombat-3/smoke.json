@@ -3,22 +3,44 @@
   "character": "Smoke",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "harpoon",
+      "name": "Harpoon",
+      "type": "special",
       "inputs": [
-        "P"
+        "back",
+        "back",
+        "LP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "teleportpunch",
+      "name": "Teleport Punch",
       "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
+        "(_^)",
         "forward",
-        "P"
+        "forward",
+        "LK"
+      ]
+    },
+    {
+      "id": "invisibility",
+      "name": "Invisibility",
+      "type": "special",
+      "inputs": [
+        "up",
+        "up",
+        "@R-button"
+      ]
+    },
+    {
+      "id": "airthrow",
+      "name": "Air Throw",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "close",
+        "_G"
       ]
     }
   ]

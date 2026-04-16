@@ -3,22 +3,97 @@
   "character": "Joe Higashi",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "nihonnage",
+      "name": "Nihon Nage",
+      "type": "throw",
       "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "hizajigoku",
+      "name": "Hiza Jigoku",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "bakuretsuken",
+      "name": "Bakuretsu Ken",
+      "type": "special",
+      "inputs": [
+        "^*",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "hurricaneupper",
+      "name": "Hurricane Upper",
       "type": "special",
       "inputs": [
+        "back",
+        "down-back",
         "down",
         "down-forward",
         "forward",
-        "P"
+        "LP"
+      ]
+    },
+    {
+      "id": "bakuretsuhurricane",
+      "name": "Bakuretsu Hurricane",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "tigerkick",
+      "name": "Tiger Kick",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "slashkick",
+      "name": "Slash Kick",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "ougonnokakato",
+      "name": "Ougon No Kakato",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
       ]
     }
   ]

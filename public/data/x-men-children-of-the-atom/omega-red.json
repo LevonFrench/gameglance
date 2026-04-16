@@ -3,11 +3,210 @@
   "character": "Omega Red",
   "movesList": [
     {
-      "id": "general-attack",
-      "name": "Basic Attack",
+      "id": "coiltoss",
+      "name": "Coil Toss",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "powerbomb",
+      "name": "Powerbomb",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "airpowerbomb",
+      "name": "Air Powerbomb",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "taunt",
+      "name": "Taunt",
       "type": "normal",
       "inputs": [
+        "MK",
+        "LP",
+        "down",
+        "LK",
+        "MP"
+      ]
+    },
+    {
+      "id": "groundcoilstrike",
+      "name": "Ground Coil Strike",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        "or",
+        "down-forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "airdash",
+      "name": "Air Dash",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "forward",
+        "forward",
+        "or",
+        "^W"
+      ]
+    },
+    {
+      "id": "cancel",
+      "name": "^!cancel",
+      "type": "normal",
+      "inputs": [
+        "back"
+      ]
+    },
+    {
+      "id": "carbonadiumcoil",
+      "name": "Carbonadium Coil",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
         "P"
+      ]
+    },
+    {
+      "id": "coilretract",
+      "name": "^!coil Retract",
+      "type": "special",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "flailsmash",
+      "name": "^!flail Smash",
+      "type": "special",
+      "inputs": [
+        "_?",
+        "P",
+        "(x2)"
+      ]
+    },
+    {
+      "id": "deathfactor",
+      "name": "^!death Factor",
+      "type": "special",
+      "inputs": [
+        "^*",
+        "P"
+      ]
+    },
+    {
+      "id": "energydrain",
+      "name": "^!energy Drain",
+      "type": "special",
+      "inputs": [
+        "^*",
+        "K"
+      ]
+    },
+    {
+      "id": "aircarbonadiumcoil",
+      "name": "Air Carbonadium Coil",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-forward",
+        "forward",
+        "P",
+        "or",
+        "K"
+      ]
+    },
+    {
+      "id": "coilretract",
+      "name": "^!coil Retract",
+      "type": "special",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "flailsmash",
+      "name": "^!flail Smash",
+      "type": "special",
+      "inputs": [
+        "_?",
+        "P",
+        "or",
+        "K",
+        "(x2)"
+      ]
+    },
+    {
+      "id": "deathfactor",
+      "name": "^!death Factor",
+      "type": "special",
+      "inputs": [
+        "^*",
+        "P"
+      ]
+    },
+    {
+      "id": "energydrain",
+      "name": "^!energy Drain",
+      "type": "special",
+      "inputs": [
+        "^*",
+        "K"
+      ]
+    },
+    {
+      "id": "omegastrike",
+      "name": "Omega Strike",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "strikerecall",
+      "name": "^!strike Recall",
+      "type": "special",
+      "inputs": [
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "strikecancel",
+      "name": "^!strike Cancel",
+      "type": "special",
+      "inputs": [
+        "down",
+        "K"
       ]
     }
   ]

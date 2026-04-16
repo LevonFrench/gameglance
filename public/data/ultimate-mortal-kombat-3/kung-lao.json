@@ -3,22 +3,44 @@
   "character": "Kung Lao",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "hatthrow",
+      "name": "Hat Throw",
+      "type": "special",
       "inputs": [
-        "P"
+        "back",
+        "forward",
+        "LP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "spinattack",
+      "name": "Spin Attack",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "forward",
+        "@R-button",
+        "(^*)"
+      ]
+    },
+    {
+      "id": "teleport",
+      "name": "Teleport",
       "type": "special",
       "inputs": [
         "down",
-        "down-forward",
-        "forward",
-        "P"
+        "up"
+      ]
+    },
+    {
+      "id": "torpedokick",
+      "name": "Torpedo Kick",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "HK"
       ]
     }
   ]

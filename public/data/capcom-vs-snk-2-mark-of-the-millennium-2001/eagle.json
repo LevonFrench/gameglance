@@ -3,21 +3,82 @@
   "character": "Eagle",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "takedowncheststab",
+      "name": "Take Down & Chest Stab",
+      "type": "throw",
       "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "neckstickpress",
+      "name": "Neck Stick Press",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "manchesterblack",
+      "name": "Manchester Black",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "canterburyblue",
+      "name": "Canterbury Blue",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "P",
+        "(_O)"
+      ]
+    },
+    {
+      "id": "oxfordred",
+      "name": "Oxford Red",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "liverpoolwhite",
+      "name": "Liverpool White",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "standrewsgreen",
+      "name": "St. Andrew's Green",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
         "P"
       ]
     }

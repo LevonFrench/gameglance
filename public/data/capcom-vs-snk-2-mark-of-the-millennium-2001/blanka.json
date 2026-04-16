@@ -3,22 +3,102 @@
   "character": "Blanka",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "wildfang",
+      "name": "Wild Fang",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "beastroll",
+      "name": "Beast Roll",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "rockcrush",
+      "name": "Rock Crush",
       "type": "normal",
       "inputs": [
+        "close",
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "amazonriverrun",
+      "name": "Amazon River Run",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "electricthunder",
+      "name": "Electric Thunder",
+      "type": "special",
+      "inputs": [
+        "^*",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "rollingattack",
+      "name": "Rolling Attack",
       "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
+        "^4",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "backsteprolling",
+      "name": "Backstep Rolling",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "verticalrolling",
+      "name": "Vertical Rolling",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "K"
+      ]
+    },
+    {
+      "id": "surpriseforward",
+      "name": "Surprise Forward",
+      "type": "special",
+      "inputs": [
+        "^V"
+      ]
+    },
+    {
+      "id": "surprisebackward",
+      "name": "Surprise Backward",
+      "type": "special",
+      "inputs": [
+        "back",
+        "^V"
       ]
     }
   ]

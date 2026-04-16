@@ -3,20 +3,129 @@
   "character": "Iori Yagami",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "sakahagi",
+      "name": "(-/-/\u2500) Sakahagi",
+      "type": "throw",
       "inputs": [
-        "P"
+        "P",
+        "K"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "sakasakahagi",
+      "name": "(-/-/\u2500) Saka Sakahagi",
+      "type": "throw",
+      "inputs": [
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "ogeshikiyumebiki",
+      "name": "(-/-/o) Ge Shiki: Yumebiki",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "P",
+        "P",
+        "(\"O\"",
+        "on",
+        "1st",
+        "hit)"
+      ]
+    },
+    {
+      "id": "ogeshikigoufuinshinigame",
+      "name": "(-/-/o) Ge Shiki: Goufu In \"shinigame\"",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "geshikiyuriori",
+      "name": "(-/-/\u2500) Ge Shiki: Yuri Ori",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "i108shikiyamibarai",
+      "name": "(-/i/\u2500) 108 Shiki: Yami Barai",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "io100shikioniyaki",
+      "name": "(!/i/o) 100 Shiki: Oniyaki",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "io127shikiaoihana",
+      "name": "(-/i/o) 127 Shiki: Aoi Hana",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P",
+        "(x3)"
+      ]
+    },
+    {
+      "id": "io212shikikototsukiin",
+      "name": "(!/i/o) 212 Shiki: Kototsuki In",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K",
+        "(\"!\"",
+        "on",
+        "1st",
+        "hit)"
+      ]
+    },
+    {
+      "id": "io311shikitsumagushi",
+      "name": "(-/i/o) 311 Shiki: Tsumagushi",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "kuzukaze",
+      "name": "(-/-/\u2500) Kuzukaze",
+      "type": "special",
+      "inputs": [
+        "close",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
         "forward",
         "P"
       ]

@@ -3,22 +3,37 @@
   "character": "Sektor",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "missile",
+      "name": "Missile",
+      "type": "special",
       "inputs": [
-        "P"
+        "forward",
+        "forward",
+        "LP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "homingmissile",
+      "name": "Homing Missile",
       "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
         "forward",
-        "P"
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "teleportpunch",
+      "name": "Teleport Punch",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "forward",
+        "forward",
+        "LK"
       ]
     }
   ]

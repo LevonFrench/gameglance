@@ -3,16 +3,40 @@
   "character": "Mauru",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "poi",
+      "name": "(\u2500\u2500) Poi",
+      "type": "throw",
       "inputs": [
-        "P"
+        "back",
+        "or",
+        "forward",
+        "K"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "kuuchuupoi",
+      "name": "(\u2500\u2500) Kuuchuu Poi",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "wakuwakuupper",
+      "name": "(\u2500\u2500) Wakuwaku Upper",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "esgurugurupunch",
+      "name": "(es) Guruguru Punch",
       "type": "special",
       "inputs": [
         "down",
@@ -22,16 +46,25 @@
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "esbodypress",
+      "name": "(es) Body Press",
+      "type": "special",
       "inputs": [
         "down",
-        "down-forward",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "esbunbuncopter",
+      "name": "(es) Bunbun Copter",
+      "type": "special",
+      "inputs": [
+        "(_^)",
         "forward",
         "down",
         "down-forward",
-        "forward",
         "P"
       ]
     }

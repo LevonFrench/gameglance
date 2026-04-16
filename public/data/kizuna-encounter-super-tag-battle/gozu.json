@@ -3,16 +3,50 @@
   "character": "Gozu",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "flippingtigerbomb",
+      "name": "Flipping Tiger Bomb",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "2danjump",
+      "name": "2 Dan Jump",
       "type": "normal",
       "inputs": [
+        "_^",
+        "up"
+      ]
+    },
+    {
+      "id": "mudoutenrinsou",
+      "name": "Mudou Tenrin Sou",
+      "type": "normal",
+      "inputs": [
+        "jump",
+        "against",
+        "the",
+        "wall",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "youenken",
+      "name": "Youen Ken",
+      "type": "special",
+      "inputs": [
+        "^*",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "lowpalmdigging",
+      "name": "^!low Palm Digging",
       "type": "special",
       "inputs": [
         "down",
@@ -22,17 +56,74 @@
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "gouten",
+      "name": "Gouten",
+      "type": "special",
       "inputs": [
         "down",
-        "down-forward",
+        "down-back",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "mudougoenha",
+      "name": "Mudou Goenha",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "P"
+      ]
+    },
+    {
+      "id": "metsusassou",
+      "name": "Metsu Sassou",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "HP"
+      ]
+    },
+    {
+      "id": "gouendan",
+      "name": "Gouen Dan",
+      "type": "special",
+      "inputs": [
         "forward",
+        "down",
+        "down-forward",
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "gokuenkai",
+      "name": "Gokuenkai",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
         "down",
         "down-forward",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "mikazuki",
+      "name": "Mikazuki",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "HP"
       ]
     }
   ]

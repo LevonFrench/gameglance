@@ -1,42 +1,261 @@
 {
-    "game": "Street Fighter Alpha 3",
-    "character": "Adon",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Jaguar Tooth",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down-forward",
-                "down",
-                "down-back",
-                "back",
-                "K"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Jaguar Kick",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down",
-                "down-forward",
-                "K"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Rising Jaguar",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down",
-                "down-forward",
-                "K (Tap K rapidly)"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Street Fighter Alpha 3",
+  "character": "Adon",
+  "movesList": [
+    {
+      "id": "xavjaguarcarry",
+      "name": "(x/a/v) Jaguar Carry",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "^W"
+      ]
+    },
+    {
+      "id": "xavjaguarslam",
+      "name": "(x/a/v) Jaguar Slam",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "^V"
+      ]
+    },
+    {
+      "id": "xavjaguarstab",
+      "name": "(x/a/v) Jaguar Stab",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "^W"
+      ]
+    },
+    {
+      "id": "xavjaguarthrow",
+      "name": "(x/a/v) Jaguar Throw",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "^V"
+      ]
+    },
+    {
+      "id": "xavjaguarcrunch",
+      "name": "(x/a/v) Jaguar Crunch",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "xdoujioshisp",
+      "name": "(x/\u2500/\u2500) Doujioshi Sp",
+      "type": "normal",
+      "inputs": [
+        "LP",
+        "LK",
+        "HP"
+      ]
+    },
+    {
+      "id": "vvariableattacks",
+      "name": "(\u2500/\u2500/v) Variable Attacks",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "HK"
+      ]
+    },
+    {
+      "id": "xjaguarkick",
+      "name": "(x/\u2500/\u2500) Jaguar Kick",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "K"
+      ]
+    },
+    {
+      "id": "avjaguarkick",
+      "name": "(\u2500/a/v) Jaguar Kick",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down",
+        "down-back",
+        "K"
+      ]
+    },
+    {
+      "id": "xavrisingjaguar",
+      "name": "(x/a/v) Rising Jaguar",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "xavjaguartooth",
+      "name": "(x/a/v) Jaguar Tooth",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "xavdragonsuplex",
+      "name": "(x/a/v) Dragon Suplex",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "^W"
+      ]
+    },
+    {
+      "id": "xavkneegatling",
+      "name": "(x/a/v) Knee Gatling",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "^V"
+      ]
+    },
+    {
+      "id": "xavflyingbusterdrop",
+      "name": "(x/a/v) Flying Buster Drop",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "^W"
+      ]
+    },
+    {
+      "id": "xavairjack",
+      "name": "(x/a/v) Airjack",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "^V"
+      ]
+    },
+    {
+      "id": "avdash",
+      "name": "(\u2500/a/v) Dash",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "forward"
+      ]
+    },
+    {
+      "id": "av",
+      "name": "(\u2500/a/v)",
+      "type": "normal",
+      "inputs": [
+        "K"
+      ]
+    },
+    {
+      "id": "xkneebazzoka",
+      "name": "(x/\u2500/\u2500) Knee Bazzoka",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "LK"
+      ]
+    },
+    {
+      "id": "xavrollingsobat",
+      "name": "(x/a/v) Rolling Sobat",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "xavstepkick",
+      "name": "(x/a/v) Step Kick",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "avalternativetaunt",
+      "name": "(\u2500/a/v) Alternative Taunt",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "START"
+      ]
+    },
+    {
+      "id": "vvariableattacks",
+      "name": "(\u2500/\u2500/v) Variable Attacks",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "xavsonicboom",
+      "name": "(x/a/v) Sonic Boom",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "xavsomersaultshell",
+      "name": "(x/a/v) Somersault Shell",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "K"
+      ]
+    }
+  ],
+  "combosList": []
 }

@@ -3,22 +3,122 @@
   "character": "Kasumi Todoh",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "makiage",
+      "name": "(-/-/\u2500) Maki Age",
+      "type": "throw",
+      "inputs": [
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "aikinage",
+      "name": "(-/-/\u2500) Aiki Nage",
+      "type": "throw",
+      "inputs": [
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "ohijiate",
+      "name": "(-/-/o) Hiji Ate",
       "type": "normal",
       "inputs": [
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "kasaneate",
+      "name": "(-/-/\u2500) Kasane Ate",
       "type": "special",
       "inputs": [
+        "(_^)",
         "down",
         "down-forward",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "ohakusantoudagekibougyo",
+      "name": "(!/-/o) Hakusan Tou: Dageki Bougyo",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "iotatsumakisoudanagedageki",
+      "name": "(!/i/o) Tatsumaki Souda: Nage Dageki",
+      "type": "special",
+      "inputs": [
+        "close",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "iosenkounagashi",
+      "name": "(-/i/o) Senkou Nagashi",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P",
+        "(x3)"
+      ]
+    },
+    {
+      "id": "imesshinmutoujoudanatemi",
+      "name": "(-/i/\u2500) Messhin Mutou: Joudan Atemi",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "K",
+        "(reverse",
+        "jump/Specials)"
+      ]
+    },
+    {
+      "id": "isasshouinshuuchuudanatemi",
+      "name": "(-/i/\u2500) Sasshou Inshuu: Chuudan Atemi",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "HK",
+        "(reverse",
+        "high/mid)"
+      ]
+    },
+    {
+      "id": "ihanshinmorotegaeshi",
+      "name": "(-/i/\u2500) Hanshin: Morote Gaeshi",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down",
+        "K",
+        "(reverse",
+        "low)"
       ]
     }
   ]

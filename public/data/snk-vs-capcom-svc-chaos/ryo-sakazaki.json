@@ -3,20 +3,118 @@
   "character": "Ryo Sakazaki",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "taniotoshi",
+      "name": "(-/-/\u2500) Tani Otoshi",
+      "type": "throw",
+      "inputs": [
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "tomoenage",
+      "name": "(-/-/\u2500) Tomoe Nage",
+      "type": "throw",
+      "inputs": [
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "ohyouchuuwari",
+      "name": "(-/-/o) Hyouchuu Wari",
       "type": "normal",
       "inputs": [
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "joudanuke",
+      "name": "(!/-/\u2500) Joudan Uke",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "K",
+        "(block",
+        "jump/high)"
+      ]
+    },
+    {
+      "id": "gedanuke",
+      "name": "(!/-/\u2500) Gedan Uke",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "K",
+        "(block",
+        "mid/low)"
+      ]
+    },
+    {
+      "id": "ikoouken",
+      "name": "(-/i/\u2500) Ko'ou Ken",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "iokohou",
+      "name": "(!/i/o) Kohou",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "ihienshippuukyaku",
+      "name": "(-/i/\u2500) Hien Shippuu Kyaku",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "iokohoushippuuken",
+      "name": "(!/i/o) Kohou Shippuu Ken",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "imoukoraijinsetsu",
+      "name": "(-/i/\u2500) Mouko Raijin Setsu",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "zanretsuken",
+      "name": "(-/-/\u2500) Zanretsu Ken",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "back",
         "forward",
         "P"
       ]

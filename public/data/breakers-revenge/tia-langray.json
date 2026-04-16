@@ -3,22 +3,99 @@
   "character": "Tia Langray",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "suplex",
+      "name": "Suplex",
+      "type": "throw",
       "inputs": [
-        "P"
+        "back",
+        "or",
+        "forward",
+        "HP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "kicktoearth",
+      "name": "Kick To Earth",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "HP",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "doubleshot",
+      "name": "Double Shot",
+      "type": "normal",
+      "inputs": [
+        "P",
+        "HP"
+      ]
+    },
+    {
+      "id": "crescentkick",
+      "name": "Crescent Kick",
+      "type": "normal",
+      "inputs": [
+        "K",
+        "HK"
+      ]
+    },
+    {
+      "id": "highfist",
+      "name": "High Fist",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "up",
+        "HP"
+      ]
+    },
+    {
+      "id": "miragespearkick",
+      "name": "Mirage Spear Kick",
+      "type": "special",
+      "inputs": [
+        "^*",
+        "K"
+      ]
+    },
+    {
+      "id": "rapidgale",
+      "name": "Rapid Gale",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "lightningupper",
+      "name": "Lightning Upper",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "soulspike",
+      "name": "Soul Spike",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-back",
+        "back",
+        "K"
       ]
     }
   ]

@@ -3,38 +3,90 @@
   "character": "Ryofu",
   "movesList": [
     {
-      "name": "Flame Breath",
+      "id": "spearintensedestruction",
+      "name": "Spear Intense Destruction",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "pinwheelmurder",
+      "name": "Pinwheel Murder",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "longswipe",
+      "name": "Long Swipe",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "upwardswipe",
+      "name": "Upward Swipe",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "sougekiha",
+      "name": "Sou Geki Ha",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "+A"
-      ],
-      "id": "flame-breath"
+        "K"
+      ]
     },
     {
-      "name": "Spear Boogie",
+      "id": "souranbu",
+      "name": "Sou Ranbu",
       "type": "special",
       "inputs": [
-        "Tap A rapidly"
-      ],
-      "id": "spear-boogie"
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
     },
     {
+      "id": "kaenken",
+      "name": "Kaen Ken",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "psychickick",
       "name": "Psychic Kick",
       "type": "special",
       "inputs": [
-        "j",
-        ".",
-        "back",
-        "down-back",
-        "down",
-        "down-forward",
         "forward",
-        "+B"
-      ],
-      "id": "psychic-kick"
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
     }
   ]
 }

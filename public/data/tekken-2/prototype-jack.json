@@ -3,26 +3,71 @@
   "character": "Prototype Jack",
   "movesList": [
     {
-      "name": "Rocket Punch",
-      "type": "special",
+      "id": "bodypress",
+      "name": "Body Press",
+      "type": "throw",
       "inputs": [
+        "_a_c"
+      ]
+    },
+    {
+      "id": "groundzero",
+      "name": "Ground Zero",
+      "type": "throw",
+      "inputs": [
+        "_b_d"
+      ]
+    },
+    {
+      "id": "liftupmegatonhit",
+      "name": "Lift Up-megaton Hit",
+      "type": "throw",
+      "inputs": [
+        "_b_d",
         "back",
-        ",",
-        " ",
         "down-back",
-        ",",
-        " ",
         "down",
-        ",",
-        " ",
-        "down-forward",
-        ",",
-        " ",
-        "forward",
-        "+",
-        "down-back"
-      ],
-      "id": "rocket-punch"
+        "^3_b"
+      ]
+    },
+    {
+      "id": "bodysmash",
+      "name": "Body Smash",
+      "type": "throw",
+      "inputs": [
+        "^1_b_c"
+      ]
+    },
+    {
+      "id": "reverseslam",
+      "name": "Reverse Slam",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "_a_c",
+        "or",
+        "_b_d"
+      ]
+    },
+    {
+      "id": "sitstancesit",
+      "name": "Sit Stance: Sit",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "_c_d"
+      ]
+    },
+    {
+      "id": "roll",
+      "name": "Roll",
+      "type": "normal",
+      "inputs": [
+        "^4",
+        "or",
+        "^6"
+      ]
     }
   ]
 }

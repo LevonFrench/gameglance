@@ -3,32 +3,109 @@
   "character": "Muscle Power",
   "movesList": [
     {
-      "name": "Muscle Bomber",
-      "type": "special",
+      "id": "headbutt",
+      "name": "(\u2500) Headbutt",
+      "type": "throw",
       "inputs": [
-        "[",
-        "back",
-        "]",
         "forward",
-        "+A"
-      ],
-      "id": "muscle-bomber"
+        "P",
+        "K"
+      ]
     },
     {
-      "name": "Tornado Breaker",
-      "type": "special",
+      "id": "kneedrop",
+      "name": "(\u2500) Knee Drop",
+      "type": "throw",
       "inputs": [
-        "360+A"
-      ],
-      "id": "tornado-breaker"
+        "forward",
+        "HP",
+        "HK"
+      ]
     },
     {
-      "name": "Super Drop Kick",
+      "id": "verticalsuplex",
+      "name": "(\u2500) Vertical Suplex",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "chokehold",
+      "name": "(\u2500) Choke Hold",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "firemanscarry",
+      "name": "(\u2500) Fireman's Carry",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "fullaxle",
+      "name": "(\u2500) Full Axle",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "guillotinedrop",
+      "name": "(\u2500) Guillotine Drop",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "musclebomber",
+      "name": "(\u2500) Muscle Bomber",
       "type": "special",
       "inputs": [
-        "Hold B, release"
-      ],
-      "id": "super-drop-kick"
+        "^4",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "mtornadobodysmash",
+      "name": "(m) Tornado Body Smash",
+      "type": "special",
+      "inputs": [
+        "close",
+        "_x",
+        "P"
+      ]
+    },
+    {
+      "id": "superdropkick",
+      "name": "(\u2500) Super Drop Kick",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "up-forward",
+        "K"
+      ]
     }
   ]
 }

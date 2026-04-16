@@ -3,19 +3,137 @@
   "character": "Ryuji Yamazaki",
   "movesList": [
     {
-      "id": "unknown-1",
-      "name": "Basic Attack",
+      "id": "bunnage",
+      "name": "(\u2500/\u2500) Bun Nage",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "pachiki",
+      "name": "(\u2500/\u2500) Pachiki",
+      "type": "throw",
+      "inputs": [
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "bussashi",
+      "name": "(\u2500/\u2500) Bussashi",
       "type": "normal",
+      "inputs": [
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "shouten",
+      "name": "(\u2500/\u2500) Shouten",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        "P"
+      ]
+    },
+    {
+      "id": "tetsunotsume",
+      "name": "(\u2500/\u2500) Tetsu No Tsume",
+      "type": "normal",
+      "inputs": [
+        "opponent",
+        "knocked",
+        "down",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "metsubushi",
+      "name": "(\u2500/\u2500) Metsubushi",
+      "type": "normal",
+      "inputs": [
+        "knocked",
+        "down",
+        "^*",
+        "HP"
+      ]
+    },
+    {
+      "id": "hebitsukaichuudan",
+      "name": "(\u2500/\u2500) Hebi Tsukai: Chuudan",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "HP",
+        "(_O)"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500/\u2500)",
+      "type": "special",
+      "inputs": [
+        "up-forward"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500/\u2500)",
+      "type": "special",
       "inputs": [
         "P"
       ]
     },
     {
-      "id": "unknown-2",
-      "name": "Special Attack",
+      "id": "gsabakinoaikuchi",
+      "name": "(\u2500/g) Sabaki No Aikuchi",
       "type": "special",
       "inputs": [
-        "QCF+P"
+        "forward",
+        "down-back",
+        "forward",
+        "P",
+        "or",
+        "HP",
+        "(\"G\"",
+        "with",
+        "HP",
+        ")"
+      ]
+    },
+    {
+      "id": "baigaeshi",
+      "name": "(\u2500/\u2500) Bai Gaeshi",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "HP",
+        "(reflect",
+        "projectile)"
+      ]
+    },
+    {
+      "id": "sadomazo",
+      "name": "(\u2500/\u2500) Sadomazo",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "K",
+        "(reverse",
+        "jump/high/mid/Specials)"
       ]
     }
   ]

@@ -3,22 +3,167 @@
   "character": "Hugo",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "bodyslam",
+      "name": "(-/-/\u2500) Body Slam",
+      "type": "throw",
+      "inputs": [
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "neckhangingthree",
+      "name": "(-/-/\u2500) Neck Hanging Three",
+      "type": "throw",
+      "inputs": [
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "oelbow",
+      "name": "(-/-/o) Elbow",
       "type": "normal",
       "inputs": [
+        "close",
+        "HP"
+      ]
+    },
+    {
+      "id": "islap",
+      "name": "(-/i/\u2500) Slap",
+      "type": "normal",
+      "inputs": [
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "ihippress",
+      "name": "(-/i/\u2500) Hip Press",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "idoudropkick",
+      "name": "(-/-/\u2500) Idou Drop Kick",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "ohighparry",
+      "name": "(!/-/o) High Parry",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "P",
+        "HP",
+        "(\"O\"",
+        "in",
+        "Slap",
+        "or",
+        "Hip",
+        "Press)"
+      ]
+    },
+    {
+      "id": "olowparry",
+      "name": "(!/-/o) Low Parry",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "K",
+        "HK",
+        "(\"O\"",
+        "in",
+        "Slap",
+        "or",
+        "Hip",
+        "Press)"
+      ]
+    },
+    {
+      "id": "bodypress",
+      "name": "(-/-/\u2500) Body Press",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "iogiantpalmbomber",
+      "name": "(-/i/o) Giant Palm Bomber",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "iomonsterlariat",
+      "name": "(-/i/o) Monster Lariat",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "ultrathrow",
+      "name": "(-/-/\u2500) Ultra Throw",
+      "type": "special",
+      "inputs": [
+        "close",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "moonsaultpress",
+      "name": "(-/-/\u2500) Moonsault Press",
+      "type": "special",
+      "inputs": [
+        "close",
+        "_x",
         "P"
+      ]
+    },
+    {
+      "id": "meatsquasher",
+      "name": "(-/-/\u2500) Meat Squasher",
+      "type": "special",
+      "inputs": [
+        "_x",
+        "K"
+      ]
+    },
+    {
+      "id": "ishootdownbackbreaker",
+      "name": "(-/i/\u2500) Shootdown Backbreaker",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "K"
       ]
     }
   ]

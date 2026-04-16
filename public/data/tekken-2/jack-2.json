@@ -3,50 +3,119 @@
   "character": "Jack-2",
   "movesList": [
     {
-      "name": "Gorilla Press",
+      "id": "bodypress",
+      "name": "Body Press",
+      "type": "throw",
+      "inputs": [
+        "_a_c"
+      ]
+    },
+    {
+      "id": "hammer",
+      "name": "^!hammer",
+      "type": "throw",
+      "inputs": [
+        "_a_b"
+      ]
+    },
+    {
+      "id": "liftslam",
+      "name": "Lift Slam",
+      "type": "throw",
+      "inputs": [
+        "_b_d"
+      ]
+    },
+    {
+      "id": "backbreaker",
+      "name": "Backbreaker",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "_b"
+      ]
+    },
+    {
+      "id": "pyramiddriver",
+      "name": "Pyramid Driver",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "_a"
+      ]
+    },
+    {
+      "id": "piledriver",
+      "name": "Piledriver",
       "type": "throw",
       "inputs": [
         "down-back",
-        "+",
-        "down-forward"
-      ],
-      "id": "gorilla-press"
+        "forward",
+        "_a_b"
+      ]
     },
     {
-      "name": "Hammer Rush",
-      "type": "special",
+      "id": "volcano",
+      "name": "Volcano",
+      "type": "throw",
       "inputs": [
-        "down-back",
-        ",",
-        " ",
-        "down-back",
-        ",",
-        " ",
-        "down-back"
-      ],
-      "id": "hammer-rush"
+        "down-forward",
+        "_b_d"
+      ]
     },
     {
-      "name": "Megaton Punch",
-      "type": "special",
+      "id": "volcanoblaster",
+      "name": "Volcano Blaster",
+      "type": "throw",
+      "inputs": [
+        "down-forward",
+        "down-forward",
+        "_a"
+      ]
+    },
+    {
+      "id": "throwaway",
+      "name": "Throw Away",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "_a_c",
+        "or",
+        "_b_d"
+      ]
+    },
+    {
+      "id": "sitstancesit",
+      "name": "Sit Stance: Sit",
+      "type": "normal",
+      "inputs": [
+        "_c_d"
+      ]
+    },
+    {
+      "id": "windup",
+      "name": "Windup",
+      "type": "normal",
       "inputs": [
         "back",
-        ",",
-        " ",
-        "down-back",
-        ",",
-        " ",
-        "down",
-        ",",
-        " ",
-        "down-forward",
-        ",",
-        " ",
-        "forward",
-        "+",
-        "down-back"
-      ],
-      "id": "megaton-punch"
+        "back",
+        "_a"
+      ]
+    },
+    {
+      "id": "roll",
+      "name": "Roll",
+      "type": "normal",
+      "inputs": [
+        "^4",
+        "or",
+        "^6"
+      ]
     }
   ]
 }

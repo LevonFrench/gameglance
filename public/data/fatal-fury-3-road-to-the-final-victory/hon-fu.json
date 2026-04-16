@@ -3,36 +3,82 @@
   "character": "Hon-Fu",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "backflip",
+      "name": "(\u2500) Back Flip",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "keirakuranda",
+      "name": "(\u2500) Keiraku Randa",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "HK"
+      ]
+    },
+    {
+      "id": "fumisomisokukeri",
+      "name": "(\u2500) Fumi Somi Sokukeri",
       "type": "normal",
       "inputs": [
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "seikuurekkakon",
+      "name": "(\u2500) Seikuu Rekka Kon",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "kyuryunoyomi",
+      "name": "(\u2500) Kyu Ryu No Yomi",
+      "type": "special",
+      "inputs": [
+        "blocking",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "denkousekkanochi",
+      "name": "(\u2500) Denkou Sekka No Chi",
+      "type": "special",
+      "inputs": [
+        "^1",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500)",
+      "type": "special",
+      "inputs": [
+        "^*",
+        "K"
+      ]
+    },
+    {
+      "id": "denkousekkanoten",
+      "name": "(\u2500) Denkou Sekka No Ten",
       "type": "special",
       "inputs": [
         "down",
-        "down-forward",
-        "forward",
-        "P"
-      ]
-    },
-    {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "down",
-        "down-forward",
-        "forward",
-        "P"
+        "down-back",
+        "back",
+        "up-back",
+        "K"
       ]
     }
   ]

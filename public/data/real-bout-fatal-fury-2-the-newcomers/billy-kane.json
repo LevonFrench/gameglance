@@ -3,11 +3,108 @@
   "character": "Billy Kane",
   "movesList": [
     {
-      "id": "general-attack",
-      "name": "Basic Attack",
+      "id": "ipponzurinage",
+      "name": "(\u2500/\u2500\u2500) Ippon Zuri Nage",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "jigokuotoshi",
+      "name": "(\u2500/\u2500\u2500) Jigoku Otoshi",
+      "type": "throw",
+      "inputs": [
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "atamakahougeki",
+      "name": "(\u2500/\u2500\u2500) Atama Kahou Geki",
       "type": "normal",
       "inputs": [
+        "opponent",
+        "knocked",
+        "down",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "senpuukon",
+      "name": "(\u2500/\u2500\u2500) Senpuu Kon",
+      "type": "special",
+      "inputs": [
+        "^*",
         "P"
+      ]
+    },
+    {
+      "id": "sansetsukonchuudanuchi",
+      "name": "(\u2500/\u2500\u2500) Sansetsu Kon: Chuudan Uchi",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500/\u2500\u2500)",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "bskyoushuuhishoukon",
+      "name": "(\u2500/bs) Kyoushuu Hishou Kon",
+      "type": "special",
+      "inputs": [
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500/\u2500\u2500)",
+      "type": "special",
+      "inputs": [
+        "back",
+        "or",
+        "forward"
+      ]
+    },
+    {
+      "id": "bssuzumeotoshi",
+      "name": "(\u2500/bs) Suzume Otoshi",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "bskaryuutsuigekikon",
+      "name": "(\u2500/bs) Karyuu Tsuigeki Kon",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
       ]
     }
   ]

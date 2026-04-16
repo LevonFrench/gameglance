@@ -3,22 +3,115 @@
   "character": "Mr. Karate",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "oosotogari",
+      "name": "(-/-/\u2500) Oosotogari",
+      "type": "throw",
+      "inputs": [
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "ipponseoi",
+      "name": "(-/-/\u2500) Ippon Seoi",
+      "type": "throw",
+      "inputs": [
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "oniguruma",
+      "name": "(-/-/\u2500) Oni Guruma",
       "type": "normal",
       "inputs": [
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "okawarawari",
+      "name": "(-/-/o) Kawara Wari",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "ohishaotoshidantsubushi",
+      "name": "(-/-/o) Hisha Otoshi: Dan Tsubushi",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "ikoouken",
+      "name": "(-/i/\u2500) Ko'ou Ken",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "iokohou",
+      "name": "(-/i/o) Kohou",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "iomoukoburaigan",
+      "name": "(!/i/o) Mouko Burai Gan",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "ihienshippuukyaku",
+      "name": "(-/i/\u2500) Hien Shippuu Kyaku",
+      "type": "special",
+      "inputs": [
+        "^1",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "zanretsuken",
+      "name": "(-/-/\u2500) Zanretsu Ken",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "back",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "ishourankyaku",
+      "name": "(-/i/\u2500) Shouran Kyaku",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
       ]
     }
   ]

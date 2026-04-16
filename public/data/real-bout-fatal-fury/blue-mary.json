@@ -3,19 +3,205 @@
   "character": "Blue Mary",
   "movesList": [
     {
-      "id": "unknown-1",
-      "name": "Basic Attack",
+      "id": "headthrow",
+      "name": "(\u2500/\u2500) Head Throw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500/\u2500)",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "doublerolling",
+      "name": "(\u2500/\u2500) Double Rolling",
       "type": "normal",
       "inputs": [
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "lowstraight",
+      "name": "(\u2500/\u2500) Low Straight",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
         "P"
       ]
     },
     {
-      "id": "unknown-2",
-      "name": "Special Attack",
+      "id": "hoppingpress",
+      "name": "(\u2500/\u2500) Hopping Press",
+      "type": "normal",
+      "inputs": [
+        "opponent",
+        "knocked",
+        "down",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "spinheelattack",
+      "name": "(\u2500/\u2500) Spin Heel Attack",
+      "type": "normal",
+      "inputs": [
+        "opponent",
+        "knocked",
+        "down",
+        "up",
+        "HP"
+      ]
+    },
+    {
+      "id": "firekick",
+      "name": "(\u2500/\u2500) Fire Kick",
+      "type": "normal",
+      "inputs": [
+        "knocked",
+        "down",
+        "down",
+        "up",
+        "HP"
+      ]
+    },
+    {
+      "id": "spinfall",
+      "name": "(\u2500/\u2500) Spin Fall",
       "type": "special",
       "inputs": [
-        "QCF+P"
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "mspider",
+      "name": "(\u2500/\u2500) M. Spider",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "verticalarrow",
+      "name": "(\u2500/\u2500) Vertical Arrow",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500/\u2500)",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "gstraightslicer",
+      "name": "(\u2500/g) Straight Slicer",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500/\u2500)",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "crabclutch",
+      "name": "(\u2500/\u2500) Crab Clutch",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "realcounter",
+      "name": "(\u2500/\u2500) Real Counter",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500/\u2500)",
+      "type": "special",
+      "inputs": [
+        "close",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500/\u2500)",
+      "type": "special",
+      "inputs": [
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "mheadbuster",
+      "name": "(\u2500/\u2500) M. Head Buster",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K",
+        "(reverse",
+        "high/mid)"
+      ]
+    },
+    {
+      "id": "stungunsmasher",
+      "name": "(\u2500/\u2500) Stun Gun Smasher",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "HP",
+        "(reverse",
+        "jump/Specials)"
       ]
     }
   ]

@@ -3,37 +3,62 @@
   "character": "Rasputin",
   "movesList": [
     {
+      "id": "auragrip",
+      "name": "Aura Grip",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "P",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "kneeattack",
+      "name": "Knee Attack",
+      "type": "normal",
+      "inputs": [
+        "close",
+        "back",
+        "or",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "fireball",
       "name": "Fireball",
       "type": "special",
       "inputs": [
+        "(_^)",
         "down",
         "down-forward",
         "forward",
-        "+A"
-      ],
-      "id": "fireball"
+        "P"
+      ]
     },
     {
-      "name": "Thunder Pitch",
-      "type": "special",
-      "inputs": [
-        "forward",
-        "down",
-        "down-forward",
-        "+A"
-      ],
-      "id": "thunder-pitch"
-    },
-    {
-      "name": "Axel Spin",
+      "id": "axlespin",
+      "name": "Axle Spin",
       "type": "special",
       "inputs": [
         "down",
         "down-back",
         "back",
-        "+B"
-      ],
-      "id": "axel-spin"
+        "K"
+      ]
+    },
+    {
+      "id": "move",
+      "name": "^!move",
+      "type": "special",
+      "inputs": [
+        "back",
+        "or",
+        "forward"
+      ]
     }
   ]
 }

@@ -3,32 +3,87 @@
   "character": "Muscle Power",
   "movesList": [
     {
+      "id": "kneedrop",
+      "name": "Knee Drop",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "P",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "chokehold",
+      "name": "Choke Hold",
+      "type": "throw",
+      "inputs": [
+        "within",
+        "throw",
+        "range",
+        "back",
+        "or",
+        "forward",
+        "P",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "verticalsuplex",
+      "name": "Vertical Suplex",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "headbutt",
+      "name": "Headbutt",
+      "type": "throw",
+      "inputs": [
+        "within",
+        "throw",
+        "range",
+        "back",
+        "or",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "powerbomb",
+      "name": "Powerbomb",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "musclebomber",
       "name": "Muscle Bomber",
       "type": "special",
       "inputs": [
-        "[",
-        "back",
-        "]",
+        "^4",
         "forward",
-        "+A"
-      ],
-      "id": "muscle-bomber"
+        "P"
+      ]
     },
     {
-      "name": "Tornado Breaker",
+      "id": "tornadobodysmash",
+      "name": "Tornado Body Smash",
       "type": "special",
       "inputs": [
-        "360+A"
-      ],
-      "id": "tornado-breaker"
-    },
-    {
-      "name": "Super Drop Kick",
-      "type": "special",
-      "inputs": [
-        "Hold B, release"
-      ],
-      "id": "super-drop-kick"
+        "close",
+        "_x",
+        "P"
+      ]
     }
   ]
 }

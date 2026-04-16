@@ -3,23 +3,52 @@
   "character": "Heihachi Mishima",
   "movesList": [
     {
-      "name": "Electric Wind God Fist",
-      "type": "special",
+      "id": "neckbreaker",
+      "name": "Neck Breaker",
+      "type": "throw",
+      "inputs": [
+        "_a_c"
+      ]
+    },
+    {
+      "id": "powerbomb",
+      "name": "Powerbomb",
+      "type": "throw",
+      "inputs": [
+        "_b_d"
+      ]
+    },
+    {
+      "id": "stonehead",
+      "name": "Stonehead",
+      "type": "throw",
       "inputs": [
         "forward",
-        ",",
-        " ",
-        "neutral",
-        ",",
-        " ",
-        "down",
-        ",",
-        " ",
-        "down-forward",
-        "+",
-        "down"
-      ],
-      "id": "electric-wind-god-fist"
+        "forward",
+        "_a_b"
+      ]
+    },
+    {
+      "id": "atomicdrop",
+      "name": "Atomic Drop",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "_a_c",
+        "or",
+        "_b_d"
+      ]
+    },
+    {
+      "id": "shadowstep",
+      "name": "Shadow Step",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "back",
+        "_N_c_d"
+      ]
     }
   ]
 }

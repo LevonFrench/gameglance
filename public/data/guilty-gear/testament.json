@@ -3,22 +3,95 @@
   "character": "Testament",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "demonproof",
+      "name": "Demon Proof",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "posestrike",
+      "name": "Pose Strike",
       "type": "normal",
       "inputs": [
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "bigsickledown",
+      "name": "Big Sickle Down",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "phantomsoul",
+      "name": "Phantom Soul",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "P",
+        "or",
+        "K"
+      ]
+    },
+    {
+      "id": "gravedigger",
+      "name": "Grave Digger",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
         "P"
+      ]
+    },
+    {
+      "id": "exebeastbehind",
+      "name": "Exe Beast Behind",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "_a"
+      ]
+    },
+    {
+      "id": "exebeastfront",
+      "name": "Exe Beast Front",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "warrant",
+      "name": "Warrant",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "_a",
+        "(reverse",
+        "high/mid)"
       ]
     }
   ]

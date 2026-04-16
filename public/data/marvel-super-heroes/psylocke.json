@@ -1,40 +1,169 @@
 {
-    "game": "Marvel Super Heroes",
-    "character": "Psylocke",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Psi-Blast",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-forward",
-                "forward",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Psi-Blade",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-forward",
-                "forward",
-                "K"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Psi-Spin",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-back",
-                "back",
-                "K (Air OK)"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Marvel Super Heroes",
+  "character": "Psylocke",
+  "movesList": [
+    {
+      "id": "verticallaunch",
+      "name": "Vertical Launch",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "rollingslam",
+      "name": "Rolling Slam",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "rolldrop",
+      "name": "Roll Drop",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "flipkick",
+      "name": "Flip Kick",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "crossoverrollingroundhouse",
+      "name": "Crossover Rolling Roundhouse",
+      "type": "normal",
+      "inputs": [
+        "HK",
+        "forward"
+      ]
+    },
+    {
+      "id": "delayedrollingroundhouse",
+      "name": "Delayed Rolling Roundhouse",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "HK"
+      ]
+    },
+    {
+      "id": "moonsaultkick",
+      "name": "Moonsault Kick",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "up",
+        "HK"
+      ]
+    },
+    {
+      "id": "3danjump",
+      "name": "3 Dan Jump",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "up",
+        "up"
+      ]
+    },
+    {
+      "id": "psiblade",
+      "name": "Psi-blade",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "psispin",
+      "name": "Psi-spin",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "psispinarc",
+      "name": "Psi-spin Arc",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "LK",
+        "MK",
+        "HK"
+      ]
+    },
+    {
+      "id": "psispincurve",
+      "name": "Psi-spin Curve",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "HK",
+        "MK",
+        "LK"
+      ]
+    },
+    {
+      "id": "ninjitsu",
+      "name": "Ninjitsu",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "P",
+        "or",
+        "K"
+      ]
+    },
+    {
+      "id": "psidrill",
+      "name": "^!psi-drill",
+      "type": "special",
+      "inputs": [
+        "_?",
+        "P",
+        "or",
+        "K"
+      ]
+    }
+  ],
+  "combosList": []
 }

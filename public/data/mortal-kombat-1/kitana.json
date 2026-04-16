@@ -3,22 +3,48 @@
   "character": "Kitana",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "fanthrow",
+      "name": "Fan Throw",
+      "type": "special",
       "inputs": [
-        "P"
+        "(_^)",
+        "forward",
+        "forward",
+        "HP",
+        "LP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "fanlift",
+      "name": "Fan Lift",
       "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
+        "back",
+        "back",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "squarewavepunch",
+      "name": "Square Wave Punch",
+      "type": "special",
+      "inputs": [
         "forward",
-        "P"
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "fanswipe",
+      "name": "Fan Swipe",
+      "type": "special",
+      "inputs": [
+        "back",
+        "HP"
       ]
     }
   ]

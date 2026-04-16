@@ -3,22 +3,108 @@
   "character": "Mars People",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "marsback",
+      "name": "(-/-/\u2500) Mars Back",
+      "type": "throw",
       "inputs": [
-        "P"
+        "P",
+        "K"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "millionleglariat",
+      "name": "(-/-/\u2500) Million Leg Lariat",
+      "type": "throw",
+      "inputs": [
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "oslidehead",
+      "name": "(-/-/o) Slide Head",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "hoppingknee",
+      "name": "(-/-/\u2500) Hopping Knee",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "HK"
+      ]
+    },
+    {
+      "id": "omarsslider",
+      "name": "(-/-/o) Mars Slider",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "imarsshot",
+      "name": "(-/i/\u2500) Mars Shot",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "iarea801",
+      "name": "(-/i/\u2500) Area 801",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "iplasmaspin",
+      "name": "(-/i/\u2500) Plasma Spin",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "plasmaabduction",
+      "name": "(-/-/\u2500) Plasma Abduction",
+      "type": "special",
+      "inputs": [
+        "close",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "ioroswellvanish",
+      "name": "(-/i/o) Roswell Vanish",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
       ]
     }
   ]

@@ -3,22 +3,129 @@
   "character": "Shiki",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "zebu",
+      "name": "(-/-/\u2500) Zebu",
+      "type": "throw",
       "inputs": [
-        "P"
+        "P",
+        "K"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "kokuu",
+      "name": "(-/-/\u2500) Kokuu",
+      "type": "throw",
+      "inputs": [
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "otsuranegiritensei",
+      "name": "(-/-/o) Tsurane Giri: Tensei",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "P",
+        "P",
+        "P",
+        "P",
+        "(\"O\"",
+        "on",
+        "2nd/3rd/4th/5th",
+        "hit)"
+      ]
+    },
+    {
+      "id": "otsuranegiririnne",
+      "name": "(-/-/o) Tsurane Giri: Rinne",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "K",
+        "K",
+        "K",
+        "K"
+      ]
+    },
+    {
+      "id": "iotsuyuharai",
+      "name": "(!/i/o) Tsuyuharai",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(-/-/\u2500)",
+      "type": "special",
+      "inputs": [
+        "K"
+      ]
+    },
+    {
+      "id": "otenhourin",
+      "name": "(-/-/o) Tenhourin",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "iomeika",
+      "name": "(-/i/o) Meika",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "iokourin",
+      "name": "(-/i/o) Kourin",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "mumyou",
+      "name": "(-/-/\u2500) Mumyou",
+      "type": "special",
+      "inputs": [
+        "close",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "isetsuna",
+      "name": "(-/i/\u2500) Setsuna",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down",
+        "P",
+        "or",
+        "K"
       ]
     }
   ]

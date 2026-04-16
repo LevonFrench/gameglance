@@ -3,11 +3,117 @@
   "character": "Blizzard",
   "movesList": [
     {
-      "id": "general-attack",
-      "name": "Basic Attack",
+      "id": "slide",
+      "name": "Slide",
       "type": "normal",
       "inputs": [
-        "P"
+        "down",
+        "_c_d"
+      ]
+    },
+    {
+      "id": "quickmegapunch",
+      "name": "Quick Mega Punch",
+      "type": "special",
+      "inputs": [
+        "_O_a_c",
+        "back",
+        "forward"
+      ]
+    },
+    {
+      "id": "shortmegapunch",
+      "name": "Short Mega Punch",
+      "type": "special",
+      "inputs": [
+        "_O_a_b_c_d",
+        "back",
+        "forward"
+      ]
+    },
+    {
+      "id": "longmegapunch",
+      "name": "Long Mega Punch",
+      "type": "special",
+      "inputs": [
+        "_O_b_d",
+        "back",
+        "forward"
+      ]
+    },
+    {
+      "id": "fakemegapunch",
+      "name": "Fake Mega Punch",
+      "type": "special",
+      "inputs": [
+        "_O_a_c",
+        "down",
+        "up"
+      ]
+    },
+    {
+      "id": "freezebreath",
+      "name": "Freeze Breath",
+      "type": "special",
+      "inputs": [
+        "_O_a_b_d",
+        "back",
+        "forward"
+      ]
+    },
+    {
+      "id": "icegeyser",
+      "name": "Ice Geyser",
+      "type": "special",
+      "inputs": [
+        "_O_a_b_d",
+        "down",
+        "up"
+      ]
+    },
+    {
+      "id": "punchingbag",
+      "name": "Punching Bag",
+      "type": "special",
+      "inputs": [
+        "_O_a_d",
+        "forward",
+        "down",
+        "back",
+        "up"
+      ]
+    },
+    {
+      "id": "throw",
+      "name": "Throw",
+      "type": "special",
+      "inputs": [
+        "_O_b_c",
+        "forward",
+        "down",
+        "back",
+        "up"
+      ]
+    },
+    {
+      "id": "airthrow",
+      "name": "Air Throw",
+      "type": "special",
+      "inputs": [
+        "_O_b_c",
+        "up"
+      ]
+    },
+    {
+      "id": "humanchomp",
+      "name": "Human Chomp",
+      "type": "special",
+      "inputs": [
+        "_O_a_b_c_d",
+        "back",
+        "up",
+        "forward",
+        "down"
       ]
     }
   ]

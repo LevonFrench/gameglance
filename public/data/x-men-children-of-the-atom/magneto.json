@@ -3,36 +3,133 @@
   "character": "Magneto",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "scraphold",
+      "name": "Scrap Hold",
+      "type": "throw",
       "inputs": [
-        "P"
+        "back",
+        "or",
+        "forward",
+        "MP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "emrepulse",
+      "name": "E-m Repulse",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "airscraphold",
+      "name": "Air Scrap Hold",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "airemrepulse",
+      "name": "Air E-m Repulse",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "emdisruptor",
+      "name": "E-m Disruptor",
+      "type": "normal",
+      "inputs": [
+        "HP"
+      ]
+    },
+    {
+      "id": "airemdisruptor",
+      "name": "Air E-m Disruptor",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "MP"
+      ]
+    },
+    {
+      "id": "magneticblast",
+      "name": "Magnetic Blast",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "HP"
+      ]
+    },
+    {
+      "id": "taunt",
+      "name": "Taunt",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "hypergravity",
+      "name": "Hyper Gravity",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "LK"
+      ]
+    },
+    {
+      "id": "emshock",
+      "name": "E-m Shock",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "MP"
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "magnetictempest",
+      "name": "Magnetic Tempest",
+      "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "LP",
+        "(on",
+        "Magneto's",
+        "stage)"
+      ]
+    },
+    {
+      "id": "release",
+      "name": "^!release",
+      "type": "special",
+      "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "MK"
       ]
     }
   ]

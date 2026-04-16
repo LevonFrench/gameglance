@@ -3,34 +3,29 @@
   "character": "Lau Chan",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "waterwheeldrop",
+      "name": "Waterwheel Drop",
+      "type": "throw",
       "inputs": [
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "piggybackdrop",
+      "name": "Piggyback Drop",
+      "type": "throw",
+      "inputs": [
+        "back",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
-      "type": "special",
+      "id": "facegrab",
+      "name": "Face Grab",
+      "type": "throw",
       "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "P"
-      ]
-    },
-    {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "down",
-        "down-forward",
+        "back",
         "forward",
         "P"
       ]

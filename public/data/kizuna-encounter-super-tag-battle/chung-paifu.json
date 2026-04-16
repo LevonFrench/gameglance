@@ -3,36 +3,129 @@
   "character": "Chung Paifu",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "canetoss",
+      "name": "Cane Toss",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "angrymode",
+      "name": "Angry Mode",
       "type": "normal",
       "inputs": [
+        "FLASHING",
+        "Life",
+        "Bar"
+      ]
+    },
+    {
+      "id": "senpuuenbu",
+      "name": "Senpuu Enbu",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HP",
+        "(Angry",
+        "Mode",
+        "only)"
+      ]
+    },
+    {
+      "id": "2danjump",
+      "name": "2 Dan Jump",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "up",
+        "(Angry",
+        "Mode",
+        "only)"
+      ]
+    },
+    {
+      "id": "senshushouuchi",
+      "name": "Sen Shushou Uchi",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "hakukohdan",
+      "name": "Hakukoh Dan",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "kidendama",
+      "name": "Kiden Dama",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "heavenkick",
+      "name": "^!heaven Kick",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "shienryu",
+      "name": "Shien Ryu",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "chinkaen",
+      "name": "Chin Kaen",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "HP"
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "chochohenka",
+      "name": "Chocho Henka",
+      "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
         "forward",
-        "down",
-        "down-forward",
+        "back",
         "forward",
-        "P"
+        "HP",
+        "(Angry",
+        "Mode",
+        "only)"
       ]
     }
   ]

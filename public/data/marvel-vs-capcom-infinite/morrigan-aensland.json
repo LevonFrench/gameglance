@@ -3,22 +3,292 @@
   "character": "Morrigan Aensland",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "moontracer",
+      "name": "Moon Tracer",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "breastanguish",
+      "name": "Breast Anguish",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "sexualembrace",
+      "name": "Sexual Embrace",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "necrodesire",
+      "name": "Necro Desire",
       "type": "normal",
       "inputs": [
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "mysteriousarc",
+      "name": "Mysterious Arc",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "shellkick",
+      "name": "Shell Kick",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "MK"
+      ]
+    },
+    {
+      "id": "shellpierce",
+      "name": "Shell Pierce",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HK"
+      ]
+    },
+    {
+      "id": "vaniadash",
+      "name": "Vania Dash",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "forward",
+        "forward",
+        "or",
+        "^U"
+      ]
+    },
+    {
+      "id": "vaniadashue",
+      "name": "Vania Dash: Ue",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "forward",
+        "up-forward",
+        "or",
+        "up",
+        "^U"
+      ]
+    },
+    {
+      "id": "vaniadashshimo",
+      "name": "Vania Dash: Shimo",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "forward",
+        "down-forward",
+        "or",
+        "down",
+        "^U"
+      ]
+    },
+    {
+      "id": "soulfist",
+      "name": "Soul Fist",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "shadowblade",
+      "name": "Shadow Blade",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "vectordrain",
+      "name": "Vector Drain",
+      "type": "special",
+      "inputs": [
+        "close",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "shoulderthrow",
+      "name": "Shoulder Throw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "airshoulderthrow",
+      "name": "Air Shoulder Throw",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "sankakutobi",
+      "name": "Sankaku Tobi",
+      "type": "normal",
+      "inputs": [
+        "jump",
+        "against",
+        "the",
+        "wall",
+        "up-forward"
+      ]
+    },
+    {
+      "id": "megabuster",
+      "name": "Mega Buster",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "HP"
+      ]
+    },
+    {
+      "id": "chargeshot",
+      "name": "Charge Shot",
+      "type": "special",
+      "inputs": [
+        "(_^)_O",
+        "HP"
+      ]
+    },
+    {
+      "id": "megaupper",
+      "name": "Mega Upper",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "eddieyobirockball",
+      "name": "Eddie Yobi: Rockball",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "LK"
+      ]
+    },
+    {
+      "id": "itemkougeki",
+      "name": "^!item Kougeki",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "eddieyobitornadohold",
+      "name": "Eddie Yobi: Tornado Hold",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "MK"
+      ]
+    },
+    {
+      "id": "itemkougeki",
+      "name": "^!item Kougeki",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "eddieyobileafshield",
+      "name": "Eddie Yobi: Leaf Shield",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "HK"
+      ]
+    },
+    {
+      "id": "itemkougeki",
+      "name": "^!item Kougeki",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P",
+        "(x2)"
       ]
     }
   ]

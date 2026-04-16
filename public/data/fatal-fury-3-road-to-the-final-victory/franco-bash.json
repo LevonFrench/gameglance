@@ -3,11 +3,82 @@
   "character": "Franco Bash",
   "movesList": [
     {
-      "id": "general-attack",
-      "name": "Basic Attack",
+      "id": "sandbuster",
+      "name": "(\u2500) Sand Buster",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "fchoppingroundhouse",
+      "name": "(f) Chopping Roundhouse",
       "type": "normal",
       "inputs": [
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "doublekong",
+      "name": "(\u2500) Double Kong",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
         "P"
+      ]
+    },
+    {
+      "id": "reapingblow",
+      "name": "(\u2500) Reaping Blow",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "wavingblow",
+      "name": "(\u2500) Waving Blow",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500)",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "powerbicycle",
+      "name": "(\u2500) Power Bicycle",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K"
       ]
     }
   ]

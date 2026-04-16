@@ -1,39 +1,112 @@
 {
-    "game": "Golden Axe: The Duel",
-    "character": "Doc",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Medicine Toss",
-            "type": "throw",
-            "inputs": [
-                "down",
-                "down-forward",
-                "forward",
-                "Slash"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Scalpel Strike",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down",
-                "down-forward",
-                "Slash"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Surgical Dash",
-            "type": "special",
-            "inputs": [
-                "back",
-                "forward",
-                "Slash"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Golden Axe: The Duel",
+  "character": "Doc",
+  "movesList": [
+    {
+      "id": "shoulderslam",
+      "name": "Shoulder Slam",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "sankakutobi",
+      "name": "Sankaku Tobi",
+      "type": "normal",
+      "inputs": [
+        "jump",
+        "against",
+        "the",
+        "wall",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "slidingknee",
+      "name": "Sliding Knee",
+      "type": "normal",
+      "inputs": [
+        "jump",
+        "against",
+        "the",
+        "wall",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "rekkuzan",
+      "name": "Rekkuzan",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "P"
+      ]
+    },
+    {
+      "id": "raitessen",
+      "name": "Raitessen",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "shockpalm",
+      "name": "^!shock Palm",
+      "type": "special",
+      "inputs": [
+        "_O",
+        "P"
+      ]
+    },
+    {
+      "id": "noborisangeri",
+      "name": "Noborisangeri",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "raigekishou",
+      "name": "Raigekishou",
+      "type": "special",
+      "inputs": [
+        "close",
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "ryusuisen",
+      "name": "Ryusuisen",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    }
+  ],
+  "combosList": []
 }

@@ -3,21 +3,153 @@
   "character": "Nakoruru",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "rutenmunegekiha",
+      "name": "Ruten Mune Gekiha",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "jitensanrenkyaku",
+      "name": "Jiten Sanren Kyaku",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "chitenzan",
+      "name": "Chitenzan",
       "type": "normal",
       "inputs": [
+        "down-forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "annumutsube",
+      "name": "Annu Mutsube",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "lelamutsube",
+      "name": "Lela Mutsube",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "amubeyatoro",
+      "name": "Amube Yatoro",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "takanitsukamaru",
+      "name": "Taka Ni Tsukamaru",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "takanitsukamarikougeki",
+      "name": "^!taka Ni Tsukamari Kougeki",
+      "type": "special",
+      "inputs": [
+        "LP",
+        "or",
+        "LK",
+        "or",
+        "MP",
+        "or",
+        "MK"
+      ]
+    },
+    {
+      "id": "yatoropok",
+      "name": "^!yatoro Pok",
+      "type": "special",
+      "inputs": [
+        "HP"
+      ]
+    },
+    {
+      "id": "kamuimutsube",
+      "name": "^!kamui Mutsube",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "amubeyatoro",
+      "name": "^!amube Yatoro",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "takanioriru",
+      "name": "^!taka Ni Oriru",
+      "type": "special",
+      "inputs": [
+        "HK"
+      ]
+    },
+    {
+      "id": "kamuirimse",
+      "name": "Kamui Rimse",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down",
+        "down-back",
+        "P",
+        "(reflect",
+        "projectile)"
+      ]
+    },
+    {
+      "id": "finalflick",
+      "name": "^!final Flick",
+      "type": "special",
+      "inputs": [
+        "^*",
         "P"
       ]
     }

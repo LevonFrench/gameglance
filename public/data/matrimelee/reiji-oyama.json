@@ -3,22 +3,66 @@
   "character": "Reiji Oyama",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "tomoenage",
+      "name": "Tomoe Nage",
+      "type": "throw",
       "inputs": [
-        "P"
+        "back",
+        "or",
+        "forward",
+        "HP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "airtomoenage",
+      "name": "Air Tomoe Nage",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "raikoukyaku",
+      "name": "Raikou Kyaku",
+      "type": "special",
+      "inputs": [
+        "^*",
+        "K"
+      ]
+    },
+    {
+      "id": "gekishouhadouha",
+      "name": "Geki Shou Hadou Ha",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "ryuenshou",
+      "name": "Ryuen Shou",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "shouenbu",
+      "name": "Shou Enbu",
+      "type": "special",
+      "inputs": [
+        "_^_x",
+        "K"
       ]
     }
   ]

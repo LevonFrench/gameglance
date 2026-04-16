@@ -3,36 +3,121 @@
   "character": "Silver Samurai",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "backtoss",
+      "name": "Back Toss",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "swordstab",
+      "name": "Sword Stab",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "airbacktoss",
+      "name": "Air Back Toss",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "endlessslashes",
+      "name": "Endless Slashes",
       "type": "normal",
       "inputs": [
+        "LP",
+        "LP",
+        "LP",
+        "..."
+      ]
+    },
+    {
+      "id": "lowslash",
+      "name": "Low Slash",
+      "type": "normal",
+      "inputs": [
+        "HP",
+        "HP"
+      ]
+    },
+    {
+      "id": "shuriken",
+      "name": "Shuriken",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "move",
+      "name": "^!move",
       "type": "special",
       "inputs": [
         "down",
-        "down-forward",
+        "or",
+        "up"
+      ]
+    },
+    {
+      "id": "hyakuretsutoh",
+      "name": "Hyakuretsu Toh",
+      "type": "special",
+      "inputs": [
         "forward",
+        "down",
+        "down-forward",
+        "P",
+        "(^*)"
+      ]
+    },
+    {
+      "id": "fumikomihyakuretsutou",
+      "name": "^!fumikomi Hyakuretsu Tou",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "forward"
+      ]
+    },
+    {
+      "id": "hyakuretsutoh",
+      "name": "Hyakuretsu Toh",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "^*",
         "P"
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "fumikomihyakuretsutou",
+      "name": "^!fumikomi Hyakuretsu Tou",
+      "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
         "forward",
-        "down",
-        "down-forward",
-        "forward",
-        "P"
+        "forward"
       ]
     }
   ]

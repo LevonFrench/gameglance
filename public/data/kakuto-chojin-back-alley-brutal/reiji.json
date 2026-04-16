@@ -1,20 +1,22 @@
 {
   "game": "Kakuto Chojin: Back Alley Brutal",
   "character": "Reiji",
-  "movesList": {
-    "standing_moves": [
-      {
-        "name": "JKD Combo",
-        "input": "Y, Y, X, X"
-      },
-      {
-        "name": "Flying Kick",
-        "input": "66X"
-      },
-      {
-        "name": "Low Trip",
-        "input": "2A"
-      }
-    ]
-  }
+  "movesList": [
+    {
+      "id": "generic-neutral",
+      "name": "Neutral Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "generic-special",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    }
+  ]
 }

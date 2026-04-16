@@ -3,19 +3,132 @@
   "character": "Billy Kane",
   "movesList": [
     {
-      "id": "unknown-1",
-      "name": "Basic Attack",
+      "id": "ipponzurinage",
+      "name": "(\u2500/\u2500) Ippon Zuri Nage",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "jigokuotoshi",
+      "name": "(\u2500/\u2500) Jigoku Otoshi",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "kyouisamuchuddantsuki",
+      "name": "(\u2500/\u2500) Kyou Isamu Chuddan Tsuki",
       "type": "normal",
       "inputs": [
+        "forward",
         "P"
       ]
     },
     {
-      "id": "unknown-2",
-      "name": "Special Attack",
+      "id": "atamakahougeki",
+      "name": "(\u2500/\u2500) Atama Kahou Geki",
+      "type": "normal",
+      "inputs": [
+        "opponent",
+        "knocked",
+        "down",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "senpuukon",
+      "name": "(\u2500/\u2500) Senpuu Kon",
       "type": "special",
       "inputs": [
-        "QCF+P"
+        "^*",
+        "P"
+      ]
+    },
+    {
+      "id": "sansetsukonchuudanuchi",
+      "name": "(\u2500/\u2500) Sansetsu Kon: Chuudan Uchi",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500/\u2500)",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "kyoushuuhishoukon",
+      "name": "(\u2500/\u2500) Kyoushuu Hishou Kon",
+      "type": "special",
+      "inputs": [
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "",
+      "name": "(\u2500/\u2500)",
+      "type": "special",
+      "inputs": [
+        "back",
+        "or",
+        "forward"
+      ]
+    },
+    {
+      "id": "suzumeotoshi",
+      "name": "(\u2500/\u2500) Suzume Otoshi",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "gkaryuutsuigekikon",
+      "name": "(\u2500/g) Karyuu Tsuigeki Kon",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K",
+        "(reverse",
+        "high/mid)"
+      ]
+    },
+    {
+      "id": "gsuiryuutsuigekikon",
+      "name": "(\u2500/g) Suiryuu Tsuigeki Kon",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "HP",
+        "(reverse",
+        "jump/Specials)"
       ]
     }
   ]

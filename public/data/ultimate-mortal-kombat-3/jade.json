@@ -3,22 +3,67 @@
   "character": "Jade",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "boomerang",
+      "name": "Boomerang",
+      "type": "special",
       "inputs": [
-        "P"
+        "back",
+        "forward",
+        "LP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "upwardboomerang",
+      "name": "Upward Boomerang",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "downwardboomerang",
+      "name": "Downward Boomerang",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "LK"
+      ]
+    },
+    {
+      "id": "projectileinvisibility",
+      "name": "Projectile Invisibility",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "returningboomerang",
+      "name": "Returning Boomerang",
+      "type": "special",
+      "inputs": [
+        "back",
+        "back",
+        "forward",
+        "LP",
+        "(2P",
+        "Game",
+        "only)"
+      ]
+    },
+    {
+      "id": "shadowkick",
+      "name": "Shadow Kick",
       "type": "special",
       "inputs": [
         "down",
-        "down-forward",
         "forward",
-        "P"
+        "LK"
       ]
     }
   ]

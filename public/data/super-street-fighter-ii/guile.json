@@ -3,11 +3,96 @@
   "character": "Guile",
   "movesList": [
     {
-      "id": "general-attack",
-      "name": "Basic Attack",
+      "id": "judothrow",
+      "name": "Judo Throw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "dragonsuplex",
+      "name": "Dragon Suplex",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "flyingmayor",
+      "name": "Flying Mayor",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "flyingbusterdrop",
+      "name": "Flying Buster Drop",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "kneebazooka",
+      "name": "Knee Bazooka",
       "type": "normal",
       "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "reversespinkick",
+      "name": "Reverse Spin Kick",
+      "type": "normal",
+      "inputs": [
+        "close",
+        "back",
+        "or",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "sonicboom",
+      "name": "Sonic Boom",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
         "P"
+      ]
+    },
+    {
+      "id": "somersaultkick",
+      "name": "Somersault Kick",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "K"
       ]
     }
   ]

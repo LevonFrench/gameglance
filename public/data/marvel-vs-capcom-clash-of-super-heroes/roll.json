@@ -3,22 +3,131 @@
   "character": "Roll",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "shouldertoss",
+      "name": "Shoulder Toss",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "airshouldertoss",
+      "name": "Air Shoulder Toss",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "swipekick",
+      "name": "Swipe Kick",
       "type": "normal",
       "inputs": [
+        "_^",
+        "up",
+        "HK"
+      ]
+    },
+    {
+      "id": "rollbuster",
+      "name": "Roll Buster",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "hanatababakudan",
+      "name": "Hana-taba Bakudan",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "eddieyobirockball",
+      "name": "Eddie Yobi: Rockball",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "LK"
+      ]
+    },
+    {
+      "id": "itemkougeki",
+      "name": "^!item Kougeki",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "K"
+      ]
+    },
+    {
+      "id": "eddieyobitornadohold",
+      "name": "Eddie Yobi: Tornado Hold",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "MK"
+      ]
+    },
+    {
+      "id": "itemkougeki",
+      "name": "^!item Kougeki",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "eddieyobileafshield",
+      "name": "Eddie Yobi: Leaf Shield",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "HK"
+      ]
+    },
+    {
+      "id": "itemkougeki",
+      "name": "^!item Kougeki",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K",
+        "(x2)"
       ]
     }
   ]

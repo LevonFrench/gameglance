@@ -3,22 +3,189 @@
   "character": "Rai-On",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "standingthrow",
+      "name": "Standing Throw",
+      "type": "throw",
       "inputs": [
-        "P"
+        "_a_b"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "crouchingthrow",
+      "name": "Crouching Throw",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "_a_b"
+      ]
+    },
+    {
+      "id": "spinslash",
+      "name": "Spin Slash",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "_b"
+      ]
+    },
+    {
+      "id": "flipkick",
+      "name": "Flip Kick",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "slashswing",
+      "name": "Slash Swing",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "_a"
+      ]
+    },
+    {
+      "id": "spreadclaw",
+      "name": "Spread Claw",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "slide",
+      "name": "Slide",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "leapingkick",
+      "name": "Leaping Kick",
+      "type": "normal",
+      "inputs": [
+        "running",
+        "_a",
+        "or",
+        "_b"
+      ]
+    },
+    {
+      "id": "spinningattack",
+      "name": "^!spinning Attack",
+      "type": "normal",
+      "inputs": [
+        "_a",
+        "or",
+        "_b"
+      ]
+    },
+    {
+      "id": "tenshinraigeki",
+      "name": "Tenshin Raigeki",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "_a",
+        "or",
+        "_b",
+        "or",
+        "K"
+      ]
+    },
+    {
+      "id": "raionshou",
+      "name": "Raion Shou",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "hougeki",
+      "name": "Hougeki",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "@M-button",
+        ",",
+        "_a",
+        "or",
+        "_b",
+        "or",
+        "K"
+      ]
+    },
+    {
+      "id": "hougekimanji",
+      "name": "Hougeki: Manji",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "@M-button",
+        ",",
+        "_a",
+        "or",
+        "_b",
+        "or",
+        "K"
+      ]
+    },
+    {
+      "id": "jinraishuu",
+      "name": "Jinrai Shuu",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "shikkuusou",
+      "name": "Shikkuu Sou",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "forward",
+        "forward",
+        "or",
+        "forward",
+        "@M-button"
+      ]
+    },
+    {
+      "id": "nidanchouyaku",
+      "name": "Nidan Chouyaku",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "up"
+      ]
+    },
+    {
+      "id": "purazumatako",
+      "name": "^!purazuma Tako",
+      "type": "special",
+      "inputs": [
+        "_O@M-button",
+        "back",
+        "or",
+        "forward"
       ]
     }
   ]

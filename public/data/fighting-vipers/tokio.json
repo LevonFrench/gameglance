@@ -3,19 +3,121 @@
   "character": "Tokio",
   "movesList": [
     {
-      "id": "unknown-1",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "wallrush",
+      "name": "Wall Rush",
+      "type": "throw",
       "inputs": [
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "neckthrow",
+      "name": "Neck Throw",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "back",
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "rollingthrow",
+      "name": "Rolling Throw",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "back",
+        "P",
+        "K",
+        "_G"
+      ]
+    },
+    {
+      "id": "armcrutchslam",
+      "name": "Arm Crutch Slam",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "wallpress",
+      "name": "Wall Press",
+      "type": "throw",
+      "inputs": [
+        "opponent",
+        "close",
+        "to",
+        "wall",
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "punchingwallpress",
+      "name": "Punching Wall Press",
+      "type": "throw",
+      "inputs": [
+        "opponent",
+        "close",
+        "to",
+        "wall",
+        "P",
+        "P",
         "P"
       ]
     },
     {
-      "id": "unknown-2",
-      "name": "Special Attack",
-      "type": "special",
+      "id": "doubleknee",
+      "name": "Double Knee",
+      "type": "throw",
       "inputs": [
-        "QCF+P"
+        "opponent",
+        "close",
+        "to",
+        "wall",
+        "back",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "wallexchange",
+      "name": "Wall Exchange",
+      "type": "throw",
+      "inputs": [
+        "against",
+        "the",
+        "wall",
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "backdrop",
+      "name": "Back Drop",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "bellyflop",
+      "name": "Bellyflop",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "down",
+        "P",
+        "K",
+        "_G"
       ]
     }
   ]

@@ -3,22 +3,176 @@
   "character": "Claire",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "standingthrow",
+      "name": "Standing Throw",
+      "type": "throw",
       "inputs": [
-        "P"
+        "_a_b"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "crouchingthrow",
+      "name": "Crouching Throw",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "_a_b"
+      ]
+    },
+    {
+      "id": "juststab",
+      "name": "Just Stab",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "_a"
+      ]
+    },
+    {
+      "id": "stancechangeattack",
+      "name": "Stance Change Attack",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "_b"
+      ]
+    },
+    {
+      "id": "killingbull",
+      "name": "Killing Bull",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        "_a"
+      ]
+    },
+    {
+      "id": "blackheaven",
+      "name": "Black Heaven",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "_a"
+      ]
+    },
+    {
+      "id": "sharpcrawl",
+      "name": "Sharp Crawl",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "kickdelsol",
+      "name": "Kick Del Sol",
+      "type": "normal",
+      "inputs": [
+        "running",
+        "K",
+        "@M-button"
+      ]
+    },
+    {
+      "id": "andeluciastorm",
+      "name": "Andelucia Storm",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "_a",
+        "(^*)"
+      ]
+    },
+    {
+      "id": "andeluciacrawl",
+      "name": "^!andelucia Crawl",
+      "type": "special",
+      "inputs": [
+        "_b"
+      ]
+    },
+    {
+      "id": "andeluciaarrow",
+      "name": "^!andelucia Arrow",
+      "type": "special",
+      "inputs": [
+        "K"
+      ]
+    },
+    {
+      "id": "flyingmatador",
+      "name": "Flying Matador",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "_a"
+      ]
+    },
+    {
+      "id": "bloodyflamenco",
+      "name": "Bloody Flamenco",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "nanamezenten",
+      "name": "Naname Zenten",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "@M-button"
+      ]
+    },
+    {
+      "id": "spanishdance",
+      "name": "Spanish Dance",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "_a"
+      ]
+    },
+    {
+      "id": "rapidelbow",
+      "name": "Rapid Elbow",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "secretcombo",
+      "name": "Secret Combo",
+      "type": "special",
+      "inputs": [
+        "down-forward",
+        "_a_a_b,",
+        "^*",
+        "K"
+      ]
+    },
+    {
+      "id": "endlesstaunt",
+      "name": "Endless Taunt",
+      "type": "special",
+      "inputs": [
+        "^*",
+        "START"
       ]
     }
   ]

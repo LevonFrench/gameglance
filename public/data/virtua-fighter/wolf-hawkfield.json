@@ -3,11 +3,69 @@
   "character": "Wolf Hawkfield",
   "movesList": [
     {
-      "id": "general-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "backfallsuplex",
+      "name": "Backfall Suplex",
+      "type": "throw",
       "inputs": [
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "bodyslam",
+      "name": "Body Slam",
+      "type": "throw",
+      "inputs": [
+        "forward",
         "P"
+      ]
+    },
+    {
+      "id": "giantswing",
+      "name": "Giant Swing",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "crucifixpiledriver",
+      "name": "Crucifix Piledriver",
+      "type": "throw",
+      "inputs": [
+        "down-forward",
+        "^3",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "germansuplex",
+      "name": "German Suplex",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "P",
+        "_G"
+      ]
+    },
+    {
+      "id": "doublearmsuplex",
+      "name": "Double Arm Suplex",
+      "type": "throw",
+      "inputs": [
+        "crouching",
+        "opponent",
+        "down-back",
+        "P",
+        "K",
+        "_G"
       ]
     }
   ]

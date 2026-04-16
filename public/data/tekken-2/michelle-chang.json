@@ -3,43 +3,51 @@
   "character": "Michelle Chang",
   "movesList": [
     {
-      "name": "Front Suplex",
+      "id": "waistsuplex",
+      "name": "Waist Suplex",
       "type": "throw",
       "inputs": [
-        "down-back",
-        "+",
-        "down-forward"
-      ],
-      "id": "front-suplex"
+        "_a_c"
+      ]
     },
     {
-      "name": "Dash Elbow",
-      "type": "special",
+      "id": "kneesuplex",
+      "name": "Knee Suplex",
+      "type": "throw",
       "inputs": [
-        "forward",
-        ",",
-        " ",
-        "forward",
-        "+",
-        "down-back"
-      ],
-      "id": "dash-elbow"
+        "_b_d"
+      ]
     },
     {
-      "name": "Bow and Arrow",
-      "type": "special",
+      "id": "punchspingermansuplex",
+      "name": "Punch-spin-german Suplex",
+      "type": "throw",
       "inputs": [
-        "FC",
-        ",",
-        " ",
-        "down-forward",
-        "+",
+        "_b",
         "back",
-        ",",
-        " ",
-        "down-forward"
-      ],
-      "id": "bow-and-arrow"
+        "_a_b"
+      ]
+    },
+    {
+      "id": "armlocksuplex",
+      "name": "Arm Lock Suplex",
+      "type": "throw",
+      "inputs": [
+        "down-forward",
+        "_a_b"
+      ]
+    },
+    {
+      "id": "germansuplex",
+      "name": "German Suplex",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "_a_c",
+        "or",
+        "_b_d"
+      ]
     }
   ]
 }

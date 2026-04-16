@@ -1,38 +1,90 @@
 {
-    "game": "Galaxy Fight: Universal Warriors",
-    "character": "Gunter",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Hammer Punch",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-forward",
-                "forward",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Earthquake",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Wild Charge",
-            "type": "special",
-            "inputs": [
-                "back",
-                "forward",
-                "P"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Galaxy Fight: Universal Warriors",
+  "character": "Gunter",
+  "movesList": [
+    {
+      "id": "bullsmash",
+      "name": "Bull Smash",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "bullbomber",
+      "name": "Bull Bomber",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "bullbreath",
+      "name": "Bull Breath",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "bullshoulder",
+      "name": "Bull Shoulder",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "wildshake",
+      "name": "Wild Shake",
+      "type": "special",
+      "inputs": [
+        "close",
+        "_x",
+        "P",
+        "or",
+        "K",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "hammerbreak",
+      "name": "Hammer Break",
+      "type": "special",
+      "inputs": [
+        "close",
+        "_x",
+        "P",
+        "K",
+        "HP"
+      ]
+    }
+  ],
+  "combosList": []
 }

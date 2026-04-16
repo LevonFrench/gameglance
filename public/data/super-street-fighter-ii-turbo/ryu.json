@@ -1,40 +1,98 @@
 {
-    "game": "Super Street Fighter II Turbo",
-    "character": "Ryu",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Hadouken",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-forward",
-                "forward",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Shoryuken",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down",
-                "down-forward",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Tatsumaki Senpukyaku",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-back",
-                "back",
-                "K"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Super Street Fighter II Turbo",
+  "character": "Ryu",
+  "movesList": [
+    {
+      "id": "nsseoinage",
+      "name": "(n/s) Seoi Nage",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP",
+        "or",
+        "HP"
+      ]
+    },
+    {
+      "id": "nstomoenage",
+      "name": "(n/s) Tomoe Nage",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "ssakotsuwari",
+      "name": "(\u2500/s) Sakotsu Wari",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "sseichuunidantsuki",
+      "name": "(\u2500/s) Seichuu Nidan Tsuki",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "nshadouken",
+      "name": "(n/s) Hadou Ken",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "nsshakunetsuhadouken",
+      "name": "(n/s) Shakunetsu Hadou Ken",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "nsshouryuuken",
+      "name": "(n/s) Shouryuu Ken",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "nstatsumakisenpuukyaku",
+      "name": "(n/s) Tatsumaki Senpuu Kyaku",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    }
+  ],
+  "combosList": []
 }

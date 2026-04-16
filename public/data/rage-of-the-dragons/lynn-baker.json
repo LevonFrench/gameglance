@@ -3,21 +3,106 @@
   "character": "Lynn Baker",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "tossover",
+      "name": "Toss Over",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "airtossover",
+      "name": "Air Toss Over",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "downpalm",
+      "name": "Down Palm",
       "type": "normal",
       "inputs": [
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "crossupkick",
+      "name": "Crossup Kick",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "koryushozan",
+      "name": "Ko Ryu Sho Zan",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "koryukyaku",
+      "name": "Ko Ryu Kyaku",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "K"
+      ]
+    },
+    {
+      "id": "ryuenhou",
+      "name": "Ryu En Hou",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "karasukyaku",
+      "name": "^!karasu Kyaku",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "kyakubinta",
+      "name": "^!kyaku Binta",
+      "type": "special",
+      "inputs": [
+        "K"
+      ]
+    },
+    {
+      "id": "enretsuken",
+      "name": "Enretsu Ken",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
         "P"
       ]
     }

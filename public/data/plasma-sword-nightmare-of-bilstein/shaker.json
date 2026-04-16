@@ -3,22 +3,146 @@
   "character": "Shaker",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "standingthrow",
+      "name": "Standing Throw",
+      "type": "throw",
       "inputs": [
-        "P"
+        "_a_b"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "crouchingthrow",
+      "name": "Crouching Throw",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "_a_b"
+      ]
+    },
+    {
+      "id": "stancechangeattack",
+      "name": "Stance Change Attack",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "_b"
+      ]
+    },
+    {
+      "id": "lowshinknock",
+      "name": "Low Shin Knock",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "lowpierceblade",
+      "name": "Low Pierce Blade",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "_a"
+      ]
+    },
+    {
+      "id": "darksurprise",
+      "name": "Dark Surprise",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "_a",
+        "(^*)"
+      ]
+    },
+    {
+      "id": "evilstorm",
+      "name": "Evil Storm",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "teleportation",
+      "name": "Teleportation",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "or",
+        "down",
+        "down-forward",
+        "forward",
+        "@M-button"
+      ]
+    },
+    {
+      "id": "airteleportation",
+      "name": "Air Teleportation",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down",
+        "down-back",
+        "or",
+        "forward",
+        "down",
+        "down-forward",
+        "@M-button"
+      ]
+    },
+    {
+      "id": "fataledge",
+      "name": "Fatal Edge",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "_a"
+      ]
+    },
+    {
+      "id": "fakeblade",
+      "name": "Fake Blade",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "_a"
+      ]
+    },
+    {
+      "id": "hellwindsword",
+      "name": "Hell Wind Sword",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "flipthrow",
+      "name": "Flip Throw",
+      "type": "special",
+      "inputs": [
+        "close",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
       ]
     }
   ]

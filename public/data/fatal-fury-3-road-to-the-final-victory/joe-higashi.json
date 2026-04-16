@@ -3,11 +3,94 @@
   "character": "Joe Higashi",
   "movesList": [
     {
-      "id": "general-attack",
-      "name": "Basic Attack",
+      "id": "joespecial",
+      "name": "(\u2500) Joe Special",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "hizajigoku",
+      "name": "(\u2500) Hiza Jigoku",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "verticalupper",
+      "name": "(\u2500) Vertical Upper",
       "type": "normal",
       "inputs": [
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "fjoesobat",
+      "name": "(f) Joe Sobat",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "HK"
+      ]
+    },
+    {
+      "id": "sliding",
+      "name": "(\u2500) Sliding",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "hurricaneupper",
+      "name": "(\u2500) Hurricane Upper",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
         "P"
+      ]
+    },
+    {
+      "id": "tigerkick",
+      "name": "(\u2500) Tiger Kick",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "up-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "slashkick",
+      "name": "(\u2500) Slash Kick",
+      "type": "special",
+      "inputs": [
+        "down-back",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "ougonnokakato",
+      "name": "(\u2500) Ougon No Kakato",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
       ]
     }
   ]

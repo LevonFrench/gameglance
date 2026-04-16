@@ -3,18 +3,86 @@
   "character": "Storm",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "grabandshock",
+      "name": "Grab And Shock",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "grabandwhirlwind",
+      "name": "Grab And Whirlwind",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "airgrabandshock",
+      "name": "Air Grab And Shock",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "airgrabandwhirlwind",
+      "name": "Air Grab And Whirlwind",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "lightningball",
+      "name": "Lightning Ball",
       "type": "normal",
       "inputs": [
-        "P"
+        "_^",
+        "_?",
+        "MP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "float",
+      "name": "Float",
+      "type": "normal",
+      "inputs": [
+        "_^^8"
+      ]
+    },
+    {
+      "id": "airdash",
+      "name": "Air Dash",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "_?^W",
+        "or",
+        "^V"
+      ]
+    },
+    {
+      "id": "whirlwind",
+      "name": "Whirlwind",
       "type": "special",
       "inputs": [
+        "(_^)",
         "down",
         "down-forward",
         "forward",
@@ -22,17 +90,20 @@
       ]
     },
     {
-      "id": "super-art",
-      "name": "Super Art",
-      "type": "super",
+      "id": "lightningattack",
+      "name": "Lightning Attack",
+      "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "down",
-        "down-forward",
-        "forward",
-        "P"
+        "(_^)",
+        "LP",
+        "LK",
+        "or",
+        "MP",
+        "MK",
+        "or",
+        "HP",
+        "HK",
+        "(x2)"
       ]
     }
   ]

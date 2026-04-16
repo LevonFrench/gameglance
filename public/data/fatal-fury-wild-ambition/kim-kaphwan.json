@@ -3,40 +3,152 @@
   "character": "Kim Kaphwan",
   "movesList": [
     {
-      "name": "Hienzan",
-      "type": "special",
+      "id": "karataotoshi",
+      "name": "Karata Otoshi",
+      "type": "throw",
       "inputs": [
-        "[",
-        "down",
-        "]",
-        "up",
-        "B"
-      ],
-      "id": "hienzan"
+        "forward",
+        "HP"
+      ]
     },
     {
-      "name": "Hangetsuzan",
+      "id": "engetsushuu",
+      "name": "Engetsu Shuu",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "nerichagi",
+      "name": "Neri Chagi",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "bandaichagi",
+      "name": "Bandai Chagi",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "myondokaichagi",
+      "name": "^!myondokai Chagi",
+      "type": "normal",
+      "inputs": [
+        "HP"
+      ]
+    },
+    {
+      "id": "bakkan",
+      "name": "Bakkan",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "down"
+      ]
+    },
+    {
+      "id": "windwheellegs",
+      "name": "Wind Wheel Legs",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "turned",
+        "K",
+        "HP"
+      ]
+    },
+    {
+      "id": "souryukyaku",
+      "name": "Souryu Kyaku",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "K",
+        "HP"
+      ]
+    },
+    {
+      "id": "hangetsuzan",
+      "name": "Hangetsu Zan",
       "type": "special",
       "inputs": [
         "down",
         "down-back",
         "back",
-        "B"
-      ],
-      "id": "hangetsuzan"
+        "K",
+        "or",
+        "HP"
+      ]
     },
     {
+      "id": "hienzan",
+      "name": "Hien Zan",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "K"
+      ]
+    },
+    {
+      "id": "kuusajin",
+      "name": "Kuu Sajin",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "P"
+      ]
+    },
+    {
+      "id": "tenshoukyaku",
+      "name": "^!tenshou Kyaku",
+      "type": "special",
+      "inputs": [
+        "down",
+        "P"
+      ]
+    },
+    {
+      "id": "hakikyaku",
+      "name": "Haki Kyaku",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "hishoukyaku",
       "name": "Hishou Kyaku",
       "type": "special",
       "inputs": [
-        "j",
-        ".",
+        "_^",
         "down",
-        "down-back",
-        "back",
-        "B"
-      ],
-      "id": "hishou-kyaku"
+        "K"
+      ]
+    },
+    {
+      "id": "hasseiwaza",
+      "name": "^!hassei Waza",
+      "type": "special",
+      "inputs": [
+        "down-forward",
+        "K"
+      ]
     }
   ]
 }

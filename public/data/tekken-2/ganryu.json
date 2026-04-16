@@ -3,16 +3,67 @@
   "character": "Ganryu",
   "movesList": [
     {
-      "name": "Choke Slam",
+      "id": "jizohug",
+      "name": "Jizo Hug",
       "type": "throw",
       "inputs": [
-        "down",
-        "down-forward",
+        "_a_c"
+      ]
+    },
+    {
+      "id": "bodydrop",
+      "name": "Body Drop",
+      "type": "throw",
+      "inputs": [
+        "_b_d"
+      ]
+    },
+    {
+      "id": "liftingtoss",
+      "name": "Lifting Toss",
+      "type": "throw",
+      "inputs": [
+        "^6_b_d"
+      ]
+    },
+    {
+      "id": "jawbreaker",
+      "name": "Jaw Breaker",
+      "type": "throw",
+      "inputs": [
         "forward",
-        "+",
-        "down-back"
-      ],
-      "id": "choke-slam"
+        "^6_b_c"
+      ]
+    },
+    {
+      "id": "upsidedowndrop",
+      "name": "Upside-down Drop",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "_a_c",
+        "or",
+        "_b_d"
+      ]
+    },
+    {
+      "id": "sitstancesit",
+      "name": "Sit Stance: Sit",
+      "type": "normal",
+      "inputs": [
+        "_c_d"
+      ]
+    },
+    {
+      "id": "roll",
+      "name": "Roll",
+      "type": "normal",
+      "inputs": [
+        "^4",
+        "or",
+        "^6"
+      ]
     }
   ]
 }
