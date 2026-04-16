@@ -1,27 +1,51 @@
 {
-    "name": "Charlie (Nash)",
-    "special_moves": [
-        {
-            "name": "Sonic Boom",
-            "input": "[4]6 + P"
-        },
-        {
-            "name": "Somersault Shell",
-            "input": "[2]8 + K"
-        }
-    ],
-    "super_combos": [
-        {
-            "name": "Sonic Break",
-            "input": "[4]646 + P (Press P for extra projectiles)"
-        },
-        {
-            "name": "Somersault Justice",
-            "input": "[1]319 + K"
-        },
-        {
-            "name": "Crossfire Blitz",
-            "input": "[4]646 + K"
-        }
-    ]
+  "game": "Street Fighter Alpha",
+  "character": "Charlie",
+  "movesList": [
+    {
+      "id": "sp_0",
+      "name": "Sonic Boom",
+      "type": "special",
+      "inputs": [
+        "4",
+        "6P"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Somersault Shell",
+      "type": "special",
+      "inputs": [
+        "2",
+        "8K"
+      ]
+    },
+    {
+      "id": "su_2",
+      "name": "Crossfire Blitz",
+      "type": "super",
+      "inputs": [
+        "4",
+        "646K"
+      ]
+    },
+    {
+      "id": "su_3",
+      "name": "Sonic Break",
+      "type": "super",
+      "inputs": [
+        "4",
+        "646P"
+      ]
+    },
+    {
+      "id": "su_4",
+      "name": "Somersault Strike",
+      "type": "super",
+      "inputs": [
+        "2",
+        "828K"
+      ]
+    }
+  ]
 }

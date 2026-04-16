@@ -1,51 +1,76 @@
 {
-    "name": "Akuma (Gouki)",
-    "special_moves": [
-        {
-            "name": "Gou Hadouken",
-            "input": "236 + P"
-        },
-        {
-            "name": "Zankuu Hadouken",
-            "input": "(In Air) 236 + P"
-        },
-        {
-            "name": "Shakunetsu Hadouken",
-            "input": "41236 + P"
-        },
-        {
-            "name": "Gou Shoryuken",
-            "input": "623 + P"
-        },
-        {
-            "name": "Tatsumaki Zankukyaku",
-            "input": "214 + K"
-        },
-        {
-            "name": "Air Tatsumaki Zankukyaku",
-            "input": "(In Air) 214 + K"
-        },
-        {
-            "name": "Ashura Senkuu (Forward)",
-            "input": "623 + PPP or KKK"
-        },
-        {
-            "name": "Ashura Senkuu (Backward)",
-            "input": "421 + PPP or KKK"
-        }
-    ],
-    "super_combos": [
-        {
-            "name": "Messatsu Gou Hadou",
-            "input": "4123641236 + P"
-        },
-        {
-            "name": "Messatsu Gou Shoryu",
-            "input": "236236 + P"
-        },
-        {
-            "name": "Shun Goku Satsu",
-            "input": "LP, LP, 6, LK, HP (Max Level Only)"
-        }
-    ]
+  "game": "Street Fighter Alpha",
+  "character": "Akuma",
+  "movesList": [
+    {
+      "id": "sp_0",
+      "name": "Gou Hadouken",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Zankuu Hadouken",
+      "type": "special",
+      "inputs": [
+        "236P (Air OK)"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Gou Shoryuken",
+      "type": "special",
+      "inputs": [
+        "623P"
+      ]
+    },
+    {
+      "id": "sp_3",
+      "name": "Tatsumaki Zankukyaku",
+      "type": "special",
+      "inputs": [
+        "214K (Air OK)"
+      ]
+    },
+    {
+      "id": "sp_4",
+      "name": "Ashura Senku",
+      "type": "special",
+      "inputs": [
+        "623P",
+        "or",
+        "623K"
+      ]
+    },
+    {
+      "id": "su_5",
+      "name": "Messatsu Gou Hadou",
+      "type": "super",
+      "inputs": [
+        "236236P"
+      ]
+    },
+    {
+      "id": "su_6",
+      "name": "Messatsu Gou Shoryu",
+      "type": "super",
+      "inputs": [
+        "236236K"
+      ]
+    },
+    {
+      "id": "su_7",
+      "name": "Shun Goku Satsu",
+      "type": "super",
+      "inputs": [
+        "LP",
+        "LP",
+        "6",
+        "LK",
+        "HP"
+      ]
+    }
+  ]
 }

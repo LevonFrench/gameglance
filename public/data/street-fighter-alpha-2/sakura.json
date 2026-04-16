@@ -1,31 +1,54 @@
 {
-    "name": "Sakura",
-    "special_moves": [
-        {
-            "name": "Hadouken",
-            "input": "236 + P (Press P again to increase size)"
-        },
-        {
-            "name": "Shououken",
-            "input": "623 + P"
-        },
-        {
-            "name": "Shunpuukyaku",
-            "input": "214 + K"
-        }
-    ],
-    "super_combos": [
-        {
-            "name": "Shinku Hadouken",
-            "input": "236236 + P"
-        },
-        {
-            "name": "Midare Zakura",
-            "input": "236236 + K"
-        },
-        {
-            "name": "Haru Ichiban",
-            "input": "214214 + K"
-        }
-    ]
+  "game": "Street Fighter Alpha",
+  "character": "Sakura",
+  "movesList": [
+    {
+      "id": "sp_0",
+      "name": "Hadouken",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Shououken",
+      "type": "special",
+      "inputs": [
+        "623P"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Shunpukyaku",
+      "type": "special",
+      "inputs": [
+        "214K"
+      ]
+    },
+    {
+      "id": "su_3",
+      "name": "Shinku Hadouken",
+      "type": "super",
+      "inputs": [
+        "236236P"
+      ]
+    },
+    {
+      "id": "su_4",
+      "name": "Midare Zakura",
+      "type": "super",
+      "inputs": [
+        "236236K"
+      ]
+    },
+    {
+      "id": "su_5",
+      "name": "Haru Ichiban",
+      "type": "super",
+      "inputs": [
+        "214214K"
+      ]
+    }
+  ]
 }
