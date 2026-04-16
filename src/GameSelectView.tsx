@@ -305,8 +305,10 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
     el.style.setProperty('--mouse-y', `${y}%`);
   };
   
+  const VISIBLE_GAMES = SUPPORTED_GAMES.filter(g => !g.isDraft);
+  
   // Sort favorites first, then apply selected sort order
-  const filteredAndSortedGames = [...SUPPORTED_GAMES]
+  const filteredAndSortedGames = [...VISIBLE_GAMES]
     .filter(g => developerFilter === 'All' || g.developer === developerFilter)
     .filter(g => searchQuery.trim() === '' || g.name.toLowerCase().includes(searchQuery.toLowerCase()))
     .sort((a, b) => {
@@ -324,7 +326,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
     });
 
   const isDark = theme === 'dark';
-  const developerCounts = SUPPORTED_GAMES.reduce((acc, game) => {
+  const developerCounts = VISIBLE_GAMES.reduce((acc, game) => {
     if (game.developer) {
       acc[game.developer] = (acc[game.developer] || 0) + 1;
     }
@@ -425,7 +427,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
               setSearchQuery(val);
               setShowCards(true);
             }}
-            games={SUPPORTED_GAMES}
+            games={VISIBLE_GAMES}
             onSelectGame={onSelectGame}
           />
 

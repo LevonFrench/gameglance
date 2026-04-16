@@ -4,7 +4,7 @@ import json
 import re
 
 def main():
-    doc = zipfile.ZipFile('faqs/Fighting Game Roster Master List.docx')
+    doc = zipfile.ZipFile('faqs/Fighting Game Roster Master List V2.docx')
     xml_content = doc.read('word/document.xml')
     tree = ET.fromstring(xml_content)
     ns = {'w': 'http://schemas.openxmlformats.org/wordprocessingml/2006/main'}

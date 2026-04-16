@@ -30,6 +30,7 @@ export interface GameDefinition {
   tagline?: string;
   rosterCount?: number;
   tabs?: string[];
+  isDraft?: boolean;
   characters: { id: string, name: string }[];
 }
 
