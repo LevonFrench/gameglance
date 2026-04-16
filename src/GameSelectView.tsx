@@ -88,6 +88,184 @@ function getGameTheme(game: GameDefinition) {
   };
 }
 
+const CustomDropdown = ({ value, options, onChange, labelExtractor = (o: any) => o }: any) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const triggerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (triggerRef.current && !triggerRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  return (
+    <div ref={triggerRef} style={{ position: 'relative', width: '100%', zIndex: isOpen ? 100 : 10 }}>
+      <div 
+        onClick={() => setIsOpen(!isOpen)}
+        style={{
+          padding: '0.6rem 1.25rem',
+          borderRadius: 'var(--radius-full)',
+          border: '1px solid',
+          borderColor: isOpen ? 'var(--accent-indigo)' : 'var(--border-subtle)',
+          background: 'var(--bg-glass)',
+          color: 'var(--text-primary)',
+          fontSize: '0.9rem',
+          fontWeight: 600,
+          cursor: 'pointer',
+          backdropFilter: 'blur(12px)',
+          textAlign: 'center',
+          userSelect: 'none',
+          transition: 'all 0.3s ease',
+          display: 'flex',
+          justifyContent: 'center',
+          alignItems: 'center',
+          gap: '0.5rem',
+        }}
+        onMouseOver={(e) => { if (!isOpen) e.currentTarget.style.borderColor = 'var(--accent-indigo)'; }}
+        onMouseOut={(e) => { if (!isOpen) e.currentTarget.style.borderColor = 'var(--border-subtle)'; }}
+      >
+        <span>{labelExtractor(value)}</span>
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
+      </div>
+      {isOpen && (
+        <div style={{
+          position: 'absolute',
+          top: 'calc(100% + 0.5rem)',
+          left: 0,
+          right: 0,
+          background: 'var(--bg-card)',
+          border: '1px solid var(--border-subtle)',
+          borderRadius: 'var(--radius-lg)',
+          maxHeight: '300px',
+          overflowY: 'auto',
+          boxShadow: '0 10px 25px -5px rgba(0,0,0,0.3)',
+          padding: '0.5rem',
+          display: 'flex',
+          flexDirection: 'column',
+          gap: '2px',
+        }}>
+           {options.map((opt: any, i: number) => (
+             <div 
+               key={i}
+               onClick={() => { onChange(opt); setIsOpen(false); }}
+               style={{
+                 padding: '0.6rem 1rem',
+                 cursor: 'pointer',
+                 color: value === opt ? 'var(--accent-indigo)' : 'var(--text-secondary)',
+                 background: value === opt ? 'var(--bg-input)' : 'transparent',
+                 borderRadius: 'var(--radius-md)',
+                 transition: 'all 0.2s ease',
+                 textAlign: 'center',
+                 fontWeight: value === opt ? 700 : 500,
+               }}
+               onMouseOver={(e) => { e.currentTarget.style.background = 'var(--bg-input)'; e.currentTarget.style.color = 'var(--text-primary)'; }}
+               onMouseOut={(e) => { e.currentTarget.style.background = value === opt ? 'var(--bg-input)' : 'transparent'; e.currentTarget.style.color = value === opt ? 'var(--accent-indigo)' : 'var(--text-secondary)'; }}
+             >
+                {labelExtractor(opt)}
+             </div>
+           ))}
+        </div>
+      )}
+    </div>
+  );
+};
+
+const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: any) => {
+  const [isOpen, setIsOpen] = useState(false);
+  const triggerRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (triggerRef.current && !triggerRef.current.contains(event.target as Node)) {
+        setIsOpen(false);
+      }
+    };
+    document.addEventListener('mousedown', handleClickOutside);
+    return () => document.removeEventListener('mousedown', handleClickOutside);
+  }, []);
+
+  const matches = value ? games.filter((g: any) => g.name.toLowerCase().includes(value.toLowerCase())) : [];
+
+  return (
+    <div ref={triggerRef} style={{ position: 'relative', width: '100%', zIndex: isOpen ? 100 : 10 }}>
+        <input
+          type="text"
+          placeholder="Search games..."
+          value={value}
+          onChange={(e) => {
+             onChange(e.target.value);
+             setIsOpen(true);
+          }}
+          onFocus={() => setIsOpen(true)}
+          style={{
+            width: '100%',
+            padding: '0.6rem 1.25rem',
+            borderRadius: 'var(--radius-full)',
+            border: '1px solid',
+            borderColor: isOpen ? 'var(--accent-indigo)' : 'var(--border-subtle)',
+            background: 'var(--bg-glass)',
+            color: 'var(--text-primary)',
+            fontSize: '0.9rem',
+            fontWeight: 600,
+            outline: 'none',
+            backdropFilter: 'blur(12px)',
+            transition: 'all 0.3s ease',
+            textAlign: 'center',
+            boxSizing: 'border-box',
+          }}
+          onMouseOver={(e) => { if (!isOpen) e.currentTarget.style.borderColor = 'var(--accent-indigo)'; }}
+          onMouseOut={(e) => { if (!isOpen) e.currentTarget.style.borderColor = 'var(--border-subtle)'; }}
+        />
+       {isOpen && value && matches.length > 0 && (
+         <div style={{
+            position: 'absolute',
+            top: 'calc(100% + 0.5rem)',
+            left: 0,
+            right: 0,
+            background: 'var(--bg-card)',
+            border: '1px solid var(--border-subtle)',
+            borderRadius: 'var(--radius-lg)',
+            maxHeight: '300px',
+            overflowY: 'auto',
+            boxShadow: '0 10px 25px -5px rgba(0,0,0,0.3)',
+            padding: '0.5rem',
+            display: 'flex',
+            flexDirection: 'column',
+            gap: '2px',
+         }}>
+           {matches.map((g: any) => (
+              <div 
+                key={g.id}
+                onClick={() => { 
+                   onChange(g.name); 
+                   setIsOpen(false); 
+                   if(onSelectGame) onSelectGame(g);
+                }}
+                style={{
+                   padding: '0.6rem 1rem',
+                   cursor: 'pointer',
+                   color: 'var(--text-secondary)',
+                   borderRadius: 'var(--radius-md)',
+                   transition: 'all 0.2s ease',
+                   textAlign: 'center',
+                   fontWeight: 500,
+                }}
+                onMouseOver={(e) => { e.currentTarget.style.background = 'var(--bg-input)'; e.currentTarget.style.color = 'var(--text-primary)'; }}
+                onMouseOut={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--text-secondary)'; }}
+              >
+                 {g.name}
+              </div>
+           ))}
+         </div>
+       )}
+    </div>
+  )
+}
+
 export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
   const [favorites, setFavorites] = useState<string[]>([]);
   const [developerFilter, setDeveloperFilter] = useState<string>('All');
@@ -228,106 +406,37 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
         }}>
 
           {/* Platform / Developer Pill */}
-          <select
+          <CustomDropdown 
             value={developerFilter}
-            onChange={(e) => {
-              setDeveloperFilter(e.target.value);
+            options={allDevelopers}
+            onChange={(val: string) => {
+              setDeveloperFilter(val);
               setShowCards(true);
             }}
-            style={{
-              padding: '0.6rem 1.25rem',
-              borderRadius: 'var(--radius-full)',
-              border: '1px solid var(--border-subtle)',
-              background: 'var(--bg-glass)',
-              color: 'var(--text-primary)',
-              fontSize: '0.9rem',
-              fontWeight: 600,
-              cursor: 'pointer',
-              outline: 'none',
-              backdropFilter: 'blur(12px)',
-              transition: 'all 0.3s ease',
-              appearance: 'none',
-              WebkitAppearance: 'none',
-              MozAppearance: 'none',
-              textAlign: 'center',
-              textAlignLast: 'center',
-              width: '100%',
-            }}
-          >
-            {allDevelopers.map(dev => (
-              <option key={dev} value={dev} style={{ background: 'var(--bg-card)', color: 'var(--text-primary)' }}>
-                {dev === 'All' ? 'All Platforms' : dev}
-              </option>
-            ))}
-          </select>
+            labelExtractor={(v: string) => v === 'All' ? 'All Platforms' : v}
+          />
 
           {/* Search Pill */}
-          <div style={{ position: 'relative', width: '100%' }}>
-            <input
-              type="text"
-              list="game-search-list"
-              placeholder="Search games..."
-              value={searchQuery}
-              onChange={(e) => {
-                setSearchQuery(e.target.value);
-                setShowCards(true);
-              }}
-              style={{
-                width: '100%',
-                padding: '0.6rem 1.25rem',
-                borderRadius: 'var(--radius-full)',
-                border: '1px solid var(--border-subtle)',
-                background: 'var(--bg-glass)',
-                color: 'var(--text-primary)',
-                fontSize: '0.9rem',
-                fontWeight: 600,
-                outline: 'none',
-                backdropFilter: 'blur(12px)',
-                transition: 'all 0.3s ease',
-                textAlign: 'center',
-                boxSizing: 'border-box',
-              }}
-              onFocus={(e) => {
-                 e.target.style.borderColor = 'var(--accent-indigo)';
-                 setShowCards(true);
-              }}
-              onBlur={(e) => e.target.style.borderColor = 'var(--border-subtle)'}
-            />
-            <datalist id="game-search-list">
-              {SUPPORTED_GAMES.map(g => <option key={g.id} value={g.name} />)}
-            </datalist>
-          </div>
-
-          {/* Sort Pill */}
-          <select
-            value={sortBy}
-            onChange={(e) => {
-              setSortBy(e.target.value as 'alpha' | 'date');
+          <CustomAutocomplete 
+            value={searchQuery}
+            onChange={(val: string) => {
+              setSearchQuery(val);
               setShowCards(true);
             }}
-            style={{
-              padding: '0.6rem 1.25rem',
-              borderRadius: 'var(--radius-full)',
-              border: '1px solid var(--border-subtle)',
-              background: 'var(--bg-glass)',
-              color: 'var(--text-primary)',
-              fontSize: '0.9rem',
-              fontWeight: 600,
-              cursor: 'pointer',
-              outline: 'none',
-              backdropFilter: 'blur(12px)',
-              transition: 'all 0.3s ease',
-              appearance: 'none',
-              WebkitAppearance: 'none',
-              MozAppearance: 'none',
-              textAlign: 'center',
-              textAlignLast: 'center',
-              width: '100%',
+            games={SUPPORTED_GAMES}
+            onSelectGame={onSelectGame}
+          />
+
+          {/* Sort Pill */}
+          <CustomDropdown 
+            value={sortBy}
+            options={['date', 'alpha']}
+            onChange={(val: string) => {
+              setSortBy(val as 'date' | 'alpha');
+              setShowCards(true);
             }}
-          >
-            <option value="date" style={{ background: 'var(--bg-card)', color: 'var(--text-primary)' }}>Sort: Date</option>
-            <option value="alpha" style={{ background: 'var(--bg-card)', color: 'var(--text-primary)' }}>Sort: A-Z</option>
-          </select>
+            labelExtractor={(v: string) => v === 'date' ? 'Sort: Date' : 'Sort: A-Z'}
+          />
         </div>
       </header>
 
