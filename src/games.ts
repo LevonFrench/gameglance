@@ -8276,4 +8276,20 @@ rosterCount: 10,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   }
+
+  {
+    id: 'weaponlord',
+    name: "Weaponlord",
+    isDraft: true,
+    characters: [
+      { id: 'korr', name: 'Korr' },
+      { id: 'bane', name: 'Bane' },
+      { id: 'zorn', name: 'Zorn' },
+      { id: 'talazia', name: 'Talazia' },
+      { id: 'divada', name: 'Divada' },
+      { id: 'jen-tai', name: 'Jen-Tai' },
+      { id: 'zarak', name: 'Zarak' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  }
 ];
