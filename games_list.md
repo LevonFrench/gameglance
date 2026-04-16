@@ -116,15 +116,15 @@ GameGlance currently supports the following titles:
 - Tekken 1
 - Tekken 2
 - Tekken 8
-- The King of Fighters '94'94
-- The King of Fighters '95'95
-- The King of Fighters '96'96
-- The King of Fighters '97'97
-- The King of Fighters '98 Ultimate Match'98 Ultimate Match
-- The King of Fighters '98'98
-- The King of Fighters '99'99
+- The King of Fighters '94
+- The King of Fighters '96
+- The King of Fighters '97
+- The King of Fighters '98
+- The King of Fighters '98 Ultimate Match
+- The King of Fighters '99
 - The King of Fighters 2000
 - The King of Fighters 2001
+- The King of Fighters 2002
 - The King of Fighters 2002
 - The King of Fighters 2003
 - The King of Fighters XIII
@@ -132,7 +132,7 @@ GameGlance currently supports the following titles:
 - The King of Fighters XV
 - The King of Fighters: Maximum Impact
 - The King of Fighters: Maximum Impact 2 (KOF 2006)
-- The King of Fighters: Maximum Impact Regulation 'A''A'
+- The King of Fighters: Maximum Impact Regulation 'A'
 - The Last Blade
 - The Last Blade 2
 - Ultimate Marvel vs. Capcom 3
