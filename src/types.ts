@@ -29,7 +29,7 @@ export interface GameDefinition {
   platform?: string;
   tagline?: string;
   rosterCount?: number;
-  tabs: string[];
+  tabs?: string[];
   characters: { id: string, name: string }[];
 }
 

@@ -215,7 +215,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, controller, disable
             <option value="xbox" style={{ background: 'var(--option-bg)' }}>🎮 Xbox</option>
             <option value="switch" style={{ background: 'var(--option-bg)' }}>🎮 Switch</option>
             <option value="arcade" style={{ background: 'var(--option-bg)' }}>🕹️ Arcade</option>
-            <option value="neogeo" style={{ background: 'var(--option-bg)' }}>🕹️ Neo Geo</option>
+            {game.developer?.toUpperCase() === 'SNK' && <option value="neogeo" style={{ background: 'var(--option-bg)' }}>🕹️ Neo Geo</option>}
           </select>
 
           <div style={{ width: '1px', height: '20px', background: 'var(--border-subtle)', margin: '0 0.25rem' }}></div>

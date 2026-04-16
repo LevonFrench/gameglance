@@ -50,7 +50,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     if (stored) {
       try {
         const pref = JSON.parse(stored);
-        const sorted = [...game.tabs].sort((a,b) => {
+        const sorted = [...(game.tabs || [])].sort((a,b) => {
           let idxA = pref.indexOf(a);
           let idxB = pref.indexOf(b);
           if (idxA === -1) idxA = 999;
@@ -59,10 +59,10 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         });
         setOrderedTabs(sorted);
       } catch (e) {
-        setOrderedTabs(game.tabs);
+        setOrderedTabs(game.tabs || []);
       }
     } else {
-      setOrderedTabs(game.tabs);
+      setOrderedTabs(game.tabs || []);
     }
   }, [game.tabs]);
 
@@ -103,7 +103,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
   const tabCounts = React.useMemo(() => {
     if (!characterData) return {} as Record<string, number>;
     const counts: Record<string, number> = {};
-    game.tabs.forEach(tab => {
+    (game.tabs || []).forEach(tab => {
       const fn = TAB_FILTER[tab];
       counts[tab] = fn ? fn(characterData).length : 0;
     });
@@ -397,7 +397,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
             <option value="xbox" style={{ background: 'var(--option-bg)' }}>🎮 Xbox</option>
             <option value="switch" style={{ background: 'var(--option-bg)' }}>🎮 Switch</option>
             <option value="arcade" style={{ background: 'var(--option-bg)' }}>🕹️ Arcade</option>
-            <option value="neogeo" style={{ background: 'var(--option-bg)' }}>🕹️ Neo Geo</option>
+            {game.developer?.toUpperCase() === 'SNK' && <option value="neogeo" style={{ background: 'var(--option-bg)' }}>🕹️ Neo Geo</option>}
           </select>
 
           <div style={{ width: '1px', height: '20px', background: 'var(--border-subtle)', margin: '0 0.25rem' }}></div>

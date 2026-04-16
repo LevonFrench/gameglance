@@ -188,7 +188,7 @@ const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: any) => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const matches = value ? games.filter((g: any) => g.name.toLowerCase().includes(value.toLowerCase())) : games;
+  const matches = (value ? games.filter((g: any) => g.name.toLowerCase().includes(value.toLowerCase())) : games).sort((a: any, b: any) => a.name.localeCompare(b.name));
 
   return (
     <div ref={triggerRef} style={{ position: 'relative', width: '100%', zIndex: isOpen ? 100 : 10 }}>
@@ -451,7 +451,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
         width: '100%',
         margin: '0 auto',
       }}>
-        {showCards && filteredAndSortedGames.map((game, index) => {
+        {(showCards ? filteredAndSortedGames : filteredAndSortedGames.filter(g => favorites.includes(g.id))).map((game, index) => {
           const theme = getGameTheme(game);
           const isFavorite = favorites.includes(game.id);
           return (

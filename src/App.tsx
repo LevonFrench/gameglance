@@ -52,6 +52,9 @@ function App() {
   // Navigation handlers
   const handleSelectGame = (game: GameDefinition) => {
     setReturningFromMoveList(false);
+    if (controller === 'neogeo' && game.developer?.toUpperCase() !== 'SNK') {
+      setController('arcade');
+    }
     navigate('char_select', game);
   };
 
@@ -120,6 +123,7 @@ function App() {
       viewComponent = <GameGlanceMainView 
          playlist={selectedPlaylist} 
          gameName={selectedGame?.name || 'GAMES'}
+         gameDeveloper={selectedGame?.developer || ''}
          characterName={charName}
          controller={controller}
          onSetController={setController}

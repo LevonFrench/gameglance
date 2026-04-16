@@ -7,13 +7,14 @@ import { useTheme } from './ThemeContext';
 interface Props {
   playlist: Move[];
   gameName: string;
+  gameDeveloper: string;
   characterName: string;
   controller: ControllerType;
   onSetController: (c: ControllerType) => void;
   onExit: () => void;
 }
 
-export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, characterName, controller, onSetController, onExit }) => {
+export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, gameDeveloper, characterName, controller, onSetController, onExit }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
@@ -229,7 +230,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
             <option value="xbox" style={{ background: 'var(--option-bg)' }}>Xbox</option>
             <option value="switch" style={{ background: 'var(--option-bg)' }}>Switch</option>
             <option value="arcade" style={{ background: 'var(--option-bg)' }}>Arcade</option>
-            <option value="neogeo" style={{ background: 'var(--option-bg)' }}>Neo Geo</option>
+            {gameDeveloper.toUpperCase() === 'SNK' && <option value="neogeo" style={{ background: 'var(--option-bg)' }}>Neo Geo</option>}
           </select>
 
           <button
