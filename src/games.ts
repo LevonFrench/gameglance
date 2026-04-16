@@ -5,7 +5,9 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'art-of-fighting-2',
     name: 'Art of Fighting 2',
     developer: 'SNK',
-    releaseYear: 1994
+    releaseYear: 1994,
+    characters: [],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
     id: 'art-of-fighting',
