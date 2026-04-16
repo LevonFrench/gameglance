@@ -1,0 +1,338 @@
+{
+  "game_title": "Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer)",
+  "system": "Neo Geo MVS/AES",
+  "nomenclature": {
+    "buttons": {
+      "A": "Weak Punch",
+      "B": "Weak Kick",
+      "C": "Strong Punch",
+      "D": "Strong Kick",
+      "ABC": "Taunt"
+    },
+    "notation": "Numpad (1-9). 236=QCF, 214=QCB, 623=DP, 421=RDP",
+    "mechanics": {
+      "Copy_Attack_System": "After defeating an opponent in Story Mode, the player can choose to 'copy' one of their special moves. This move is performed using a character-specific command (usually involving the special meter).",
+      "Ultimate_Power_Attack": "Super move available when the life gauge flashes red."
+    }
+  },
+  "universal_moves": [
+    {
+      "name": "Forward Dash",
+      "input": "66"
+    },
+    {
+      "name": "Backward Dash",
+      "input": "44"
+    },
+    {
+      "name": "High Jump",
+      "input": "Tap 2 then 8"
+    },
+    {
+      "name": "Throw",
+      "input": "Near foe, 6+C/D or 4+C/D"
+    }
+  ],
+  "roster": [
+    {
+      "name": "Gowcaizer (Isato Kaiza)",
+      "special_moves": [
+        {
+          "name": "Caizer Strike",
+          "input": "236+A/C"
+        },
+        {
+          "name": "Running Blaze",
+          "input": "623+A/C"
+        },
+        {
+          "name": "Trickstar Kick",
+          "input": "[2]8+B/D"
+        },
+        {
+          "name": "Burning Dragon Dive",
+          "input": "j.236+A/C"
+        }
+      ],
+      "ultimate_power_attack": {
+        "name": "Caizer Rage",
+        "input": "2141236+BC"
+      }
+    },
+    {
+      "name": "Karin Son",
+      "special_moves": [
+        {
+          "name": "Staff Attack",
+          "input": "Tap A/C rapidly"
+        },
+        {
+          "name": "Cloud Driver",
+          "input": "63214+A/C"
+        },
+        {
+          "name": "Swallow Kick",
+          "input": "214+B/D"
+        },
+        {
+          "name": "Spirit Hair",
+          "input": "623+C"
+        }
+      ],
+      "ultimate_power_attack": {
+        "name": "Fire Pillars",
+        "input": "236236+AC"
+      }
+    },
+    {
+      "name": "Kyosuke Shigure",
+      "special_moves": [
+        {
+          "name": "Fudojin Ten",
+          "input": "236+A"
+        },
+        {
+          "name": "Fudojin Chi",
+          "input": "236+B"
+        },
+        {
+          "name": "Fudojin Mei",
+          "input": "236+C"
+        },
+        {
+          "name": "Kasumi Giri",
+          "input": "[4]6+A/C"
+        },
+        {
+          "name": "Thunder/Fire Tube",
+          "input": "623+A/C"
+        }
+      ],
+      "ultimate_power_attack": {
+        "name": "Blades of Death",
+        "input": "2141236+AC"
+      }
+    },
+    {
+      "name": "Shaia Hany\u016b",
+      "special_moves": [
+        {
+          "name": "Ground Washer",
+          "input": "236+A/C"
+        },
+        {
+          "name": "Gliding Blow",
+          "input": "214+B/D"
+        },
+        {
+          "name": "Ambush Lifter",
+          "input": "623+A/C"
+        },
+        {
+          "name": "Ambush Skynet",
+          "input": "236+CD"
+        }
+      ],
+      "ultimate_power_attack": {
+        "name": "Ground Ripper",
+        "input": "236236+BC"
+      }
+    },
+    {
+      "name": "Hellstinger (Kash Gywnne)",
+      "special_moves": [
+        {
+          "name": "Wryneck Swinger",
+          "input": "[4]6+A/C"
+        },
+        {
+          "name": "Voltage Crack",
+          "input": "[2]8+B/D"
+        },
+        {
+          "name": "Beat It Needle",
+          "input": "j.360+A/C"
+        },
+        {
+          "name": "Voltage Explosion",
+          "input": "[2]8+CD"
+        }
+      ],
+      "ultimate_power_attack": {
+        "name": "Nightmare Gig",
+        "input": "2141236+BD"
+      }
+    },
+    {
+      "name": "Marion",
+      "special_moves": [
+        {
+          "name": "Summon Kubira",
+          "input": "236+A"
+        },
+        {
+          "name": "Summon Makora",
+          "input": "236+B"
+        },
+        {
+          "name": "Summon Basara",
+          "input": "236+C"
+        },
+        {
+          "name": "Bite Attack",
+          "input": "During Summon, B"
+        },
+        {
+          "name": "Blitz Attack",
+          "input": "During Summon, D"
+        }
+      ],
+      "ultimate_power_attack": {
+        "name": "Aura Blast",
+        "input": "2141236+AC"
+      }
+    },
+    {
+      "name": "Fudomaru",
+      "special_moves": [
+        {
+          "name": "Shuriken",
+          "input": "236+A/C"
+        },
+        {
+          "name": "Ninja Warp",
+          "input": "623+A/B/C/D"
+        },
+        {
+          "name": "Spider Drop",
+          "input": "63214+A/C"
+        },
+        {
+          "name": "Shadow Strike",
+          "input": "Tap A/C rapidly"
+        }
+      ],
+      "ultimate_power_attack": {
+        "name": "Secret Arts: Darkness",
+        "input": "236236+AC"
+      }
+    },
+    {
+      "name": "Captain Atlantis (Randy Riggs)",
+      "special_moves": [
+        {
+          "name": "Captain Shooter",
+          "input": "[4]6+A/C"
+        },
+        {
+          "name": "Captain Cyclone",
+          "input": "[4]6+B/D"
+        },
+        {
+          "name": "Captain Splash",
+          "input": "[2]8+A/C"
+        },
+        {
+          "name": "Captain Nitro Smasher",
+          "input": "[2]8+CD"
+        }
+      ],
+      "ultimate_power_attack": {
+        "name": "Hyper Captain Splash",
+        "input": "[2]8+BC"
+      }
+    },
+    {
+      "name": "Brider (Ikkyu Saeba)",
+      "special_moves": [
+        {
+          "name": "Brider Hurricane",
+          "input": "236+A/C"
+        },
+        {
+          "name": "Brider Manji Kick",
+          "input": "214+B/D"
+        },
+        {
+          "name": "Brider Lightning Punch",
+          "input": "623+A/C"
+        },
+        {
+          "name": "Double Brider Manji Kick",
+          "input": "214+CD"
+        }
+      ],
+      "ultimate_power_attack": {
+        "name": "Final Brider Assault",
+        "input": "236236+BC"
+      }
+    },
+    {
+      "name": "Shen Long (Goujiro Inagaki)",
+      "special_moves": [
+        {
+          "name": "Rising Buster Kick",
+          "input": "623+B/D"
+        },
+        {
+          "name": "Illusion Warrior",
+          "input": "214+A/C"
+        },
+        {
+          "name": "Illusion Grapple",
+          "input": "236+A/C"
+        },
+        {
+          "name": "Illusion Bind",
+          "input": "236+CD"
+        }
+      ],
+      "ultimate_power_attack": {
+        "name": "Double Buster Kick",
+        "input": "2141236+BC"
+      }
+    },
+    {
+      "name": "Ran/Ryo (Platonic Twins)",
+      "special_moves": [
+        {
+          "name": "Twin Spark",
+          "input": "236+A/C"
+        },
+        {
+          "name": "Twin Rising",
+          "input": "623+A/C"
+        },
+        {
+          "name": "Twin Slide",
+          "input": "214+B/D"
+        }
+      ],
+      "ultimate_power_attack": {
+        "name": "Platonic Judgment",
+        "input": "236236+AC"
+      }
+    },
+    {
+      "name": "Ohga (Final Boss)",
+      "special_moves": [
+        {
+          "name": "Void Sphere",
+          "input": "236+A/C"
+        },
+        {
+          "name": "Dark Pillar",
+          "input": "623+A/C"
+        },
+        {
+          "name": "Gravity Well",
+          "input": "214+A/C"
+        }
+      ],
+      "ultimate_power_attack": {
+        "name": "Judgment of the Gods",
+        "input": "2141236+AC"
+      }
+    }
+  ]
+}

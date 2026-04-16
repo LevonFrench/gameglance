@@ -7,7 +7,9 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     developer: 'SNK',
     releaseYear: 1994,
 rosterCount: 10,
-        characters: [],
+        characters: [
+      { id: 'hsien_ko', name: 'Hsien_Ko' }
+    ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
@@ -17,7 +19,18 @@ rosterCount: 10,
     releaseYear: 1992,
 rosterCount: 10,
         characters: [
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' }
+      
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'benimaru', name: 'Benimaru' },
+      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
+      { id: 'chain_combos', name: 'Chain_Combos' },
+      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
+      { id: 'cotw_nightmaregeese', name: 'Cotw_Nightmaregeese' },
+      { id: 'dnf-duel', name: 'Dnf Duel' },
+      { id: 'ed', name: 'Ed' },
+      { id: 'fatal-fury-special', name: 'Fatal Fury Special' },
+      { id: 'final_battle', name: 'Final_Battle' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -28,7 +41,9 @@ rosterCount: 10,
     releaseYear: 1996,
 rosterCount: 10,
         characters: [
+      
       { id: 'robert-garcia', name: 'Robert Garcia' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -39,9 +54,11 @@ rosterCount: 10,
     releaseYear: 1998,
 rosterCount: 8,
         characters: [
+      
       { id: 'lettas', name: 'Lettas' },
       { id: 'salsa', name: 'Salsa' },
       { id: 'stella', name: 'Stella' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -52,10 +69,12 @@ rosterCount: 8,
     releaseYear: 1997,
 rosterCount: 11,
         characters: [
+      
       { id: 'asuka-honda', name: 'Asuka Honda' },
       { id: 'kumi-okuyama', name: 'Kumi Okuyama' },
       { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
       { id: 'tamaki-shindo', name: 'Tamaki Shindo' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -66,9 +85,11 @@ rosterCount: 11,
     releaseYear: 2015,
 rosterCount: 36,
         characters: [
+      
       { id: 'jin-kisaragi', name: 'Jin Kisaragi' },
       { id: 'noel-vermillion', name: 'Noel Vermillion' },
       { id: 'ragna-the-bloodedge', name: 'Ragna the Bloodedge' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -79,7 +100,9 @@ rosterCount: 36,
     releaseYear: 2018,
 rosterCount: 53,
         characters: [
+      
       { id: 'ruby-rose', name: 'Ruby Rose' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -90,10 +113,14 @@ rosterCount: 53,
     releaseYear: 1997,
 rosterCount: 8,
         characters: [
+      
       { id: 'alice-(rabbit)', name: 'Alice (Rabbit)' },
       { id: 'alice', name: 'Alice (Rabbit)' },
       { id: 'yugo-(wolf)', name: 'Yugo (Wolf)' },
-      { id: 'yugo', name: 'Yugo (Wolf)' }
+      { id: 'yugo', name: 'Yugo (Wolf)' },
+      { id: 'bloody-roar', name: 'Bloody Roar' },
+      { id: 'bloody-roar-primal-fury-', name: 'Bloody Roar Primal Fury ' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -104,10 +131,12 @@ rosterCount: 8,
     releaseYear: 1999,
 rosterCount: 11,
         characters: [
+      
       { id: 'bakuryu-(mole)', name: 'Bakuryu (Mole)' },
       { id: 'bakuryu', name: 'Bakuryu (Mole)' },
       { id: 'shenlong-(tiger)', name: 'Shenlong (Tiger)' },
       { id: 'shenlong', name: 'Shenlong (Tiger)' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -118,8 +147,10 @@ rosterCount: 11,
     releaseYear: 2000,
 rosterCount: 14,
         characters: [
+      
       { id: 'xion-(unborn)', name: 'Xion (Unborn)' },
       { id: 'xion', name: 'Xion (Unborn)' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -130,7 +161,9 @@ rosterCount: 14,
     releaseYear: 2003,
 rosterCount: 18,
         characters: [
+      
       { id: 'nagi-(spurious)', name: 'Nagi (Spurious)' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -141,7 +174,9 @@ rosterCount: 18,
     releaseYear: 2002,
 rosterCount: 17,
         characters: [
+      
       { id: 'gado-(lion)', name: 'Gado (Lion)' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -152,7 +187,9 @@ rosterCount: 17,
     releaseYear: 1998,
 rosterCount: 10,
         characters: [
+      
       { id: 'sho-kamui', name: 'Sho Kamui' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -163,12 +200,17 @@ rosterCount: 10,
     releaseYear: 2004,
 rosterCount: 23,
         characters: [
+      
       { id: 'alex-(sf3-style)', name: 'Alex (SF3 Style)' },
       { id: 'demitri-(darkstalkers-style)', name: 'Demitri (Darkstalkers Style)' },
       { id: 'guy-(alpha-style)', name: 'Guy (Alpha Style)' },
       { id: 'ingrid', name: 'Ingrid' },
       { id: 'leo-(red-earth-style)', name: 'Leo (Red Earth Style)' },
-      { id: 'ryu-(sf2-style)', name: 'Ryu (SF2 Style)' }
+      { id: 'ryu-(sf2-style)', name: 'Ryu (SF2 Style)' },
+      { id: 'fight_ingrid', name: 'Fight_Ingrid' },
+      { id: 'pyron', name: 'Pyron' },
+      { id: 'unlock_pyron', name: 'Unlock_Pyron' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -179,6 +221,7 @@ rosterCount: 23,
     releaseYear: 2004,
 rosterCount: 23,
         characters: [
+      
       { id: 'alex-(street-fighter-iii-style)', name: 'Alex (Street Fighter III Style)' },
       { id: 'anakaris-(darkstalkers-style)', name: 'Anakaris (Darkstalkers Style)' },
       { id: 'chun-li-(street-fighter-iii-style)', name: 'Chun-Li (Street Fighter III Style)' },
@@ -203,6 +246,7 @@ rosterCount: 23,
       { id: 'urien-(street-fighter-iii-style)', name: 'Urien (Street Fighter III Style)' },
       { id: 'yun-(street-fighter-iii-style)', name: 'Yun (Street Fighter III Style)' },
       { id: 'zangief-(street-fighter-ii-style)', name: 'Zangief (Street Fighter II Style)' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -213,6 +257,7 @@ rosterCount: 23,
     releaseYear: 2001,
 rosterCount: 48,
         characters: [
+      
       { id: 'akuma-(gouki)', name: 'Akuma (Gouki)' },
       { id: 'chang-koehan-&-choi-bounge', name: 'Chang Koehan & Choi Bounge' },
       { id: 'chun-li', name: 'Chun-Li' },
@@ -229,6 +274,7 @@ rosterCount: 48,
       { id: 'sagat', name: 'Sagat' },
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'yun', name: 'Yun' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -239,11 +285,15 @@ rosterCount: 48,
     releaseYear: 2000,
 rosterCount: 30,
         characters: [
+      
       { id: 'chun-li', name: 'Chun-Li' },
       { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
       { id: 'mai-shiranui', name: 'Mai Shiranui' },
       { id: 'ryu', name: 'Ryu' },
-      { id: 'terry-bogard', name: 'Terry Bogard' }
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'nakoruru', name: 'Nakoruru' },
+      { id: 'the-king-of-fighters-2003', name: 'The King Of Fighters 2003' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -254,6 +304,7 @@ rosterCount: 30,
     releaseYear: 2001,
 rosterCount: 30,
         characters: [
+      
       { id: 'akuma-(gouki)', name: 'Akuma (Gouki)' },
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'balrog-(vega-jp)', name: 'Balrog (Vega JP)' },
@@ -286,6 +337,7 @@ rosterCount: 30,
       { id: 'vice', name: 'Vice' },
       { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
       { id: 'zangief', name: 'Zangief' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -296,8 +348,10 @@ rosterCount: 30,
     releaseYear: 1994,
 rosterCount: 12,
         characters: [
+      
       { id: 'cyclops', name: 'Cyclops' },
       { id: 'silver-samurai', name: 'Silver Samurai' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -308,6 +362,7 @@ rosterCount: 12,
     releaseYear: 2025,
 rosterCount: 17,
         characters: [
+      
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'b-jenet', name: 'B. Jenet' },
       { id: 'billy-kane', name: 'Billy Kane' },
@@ -360,6 +415,7 @@ rosterCount: 17,
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'tizoc', name: 'Tizoc' },
       { id: 'vox-reaper', name: 'Vox Reaper' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -370,6 +426,7 @@ rosterCount: 17,
     releaseYear: 2000,
 rosterCount: 30,
         characters: [
+      
       { id: 'akuma', name: 'Akuma' },
       { id: 'balrog', name: 'Balrog' },
       { id: 'cammy', name: 'Cammy' },
@@ -405,6 +462,7 @@ rosterCount: 30,
       { id: 'yamazaki', name: 'Yamazaki' },
       { id: 'yuri', name: 'Yuri' },
       { id: 'zangief', name: 'Zangief' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -414,6 +472,7 @@ rosterCount: 30,
     developer: "Capcom",
     releaseYear: 2001,
     characters: [
+      
       { id: 'akuma-(gouki)', name: 'Akuma (Gouki)' },
       { id: 'akuma-(shin)', name: 'Akuma (Shin)' },
       { id: 'akuma', name: 'Akuma' },
@@ -484,6 +543,7 @@ rosterCount: 30,
       { id: 'yun', name: 'Yun' },
       { id: 'yuri', name: 'Yuri' },
       { id: 'zangief', name: 'Zangief' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -494,6 +554,7 @@ rosterCount: 30,
     releaseYear: 1995,
 rosterCount: 12,
         characters: [
+      
       { id: 'blodia', name: 'Blodia' },
       { id: 'fordy', name: 'Fordy' },
       { id: 'jackal', name: 'Jackal' },
@@ -504,6 +565,7 @@ rosterCount: 12,
       { id: 'riot', name: 'Riot' },
       { id: 'swordsman', name: 'Swordsman' },
       { id: 'tarantula', name: 'Tarantula' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -514,6 +576,7 @@ rosterCount: 12,
     releaseYear: 1995,
 rosterCount: 12,
         characters: [
+      
       { id: 'blodia-(jin-saotome)', name: 'Blodia (Jin Saotome)' },
       { id: 'fordy-(mary)', name: 'Fordy (Mary)' },
       { id: 'golyat-(gawaine-murdock)', name: 'Golyat (Gawaine Murdock)' },
@@ -523,6 +586,7 @@ rosterCount: 12,
       { id: 'super-8-(devilotte)', name: 'Super-8 (Devilotte)' },
       { id: 'tarkos-(shade)', name: 'Tarkos (Shade)' },
       { id: 'warlock-(shade)', name: 'Warlock (SHADE)' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -533,10 +597,12 @@ rosterCount: 12,
     releaseYear: 1994,
 rosterCount: 10,
         characters: [
+      
       { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
       { id: 'felicia', name: 'Felicia' },
       { id: 'jon-talbain', name: 'Jon Talbain' },
       { id: 'morrigan-aensland', name: 'Morrigan Aensland' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -547,6 +613,7 @@ rosterCount: 10,
     releaseYear: 1994,
 rosterCount: 10,
         characters: [
+      
       { id: 'anakaris', name: 'Anakaris' },
       { id: 'bishamon', name: 'Bishamon' },
       { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
@@ -559,6 +626,7 @@ rosterCount: 10,
       { id: 'rikuo-(aulbath)', name: 'Rikuo (Aulbath)' },
       { id: 'sasquatch', name: 'Sasquatch' },
       { id: 'victor-von-gerdenheim', name: 'Victor von Gerdenheim' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -569,8 +637,19 @@ rosterCount: 10,
     releaseYear: 1996,
 rosterCount: 11,
         characters: [
+      
       { id: 'kasumi', name: 'Kasumi' },
-      { id: 'zack', name: 'Zack' }
+      { id: 'zack', name: 'Zack' },
+      { id: 'ayane', name: 'Ayane' },
+      { id: 'bass-armstrong', name: 'Bass Armstrong' },
+      { id: 'bayman', name: 'Bayman' },
+      { id: 'brad-wong', name: 'Brad Wong' },
+      { id: 'dead-or-alive', name: 'Dead Or Alive' },
+      { id: 'helena', name: 'Helena' },
+      { id: 'helena-douglas', name: 'Helena Douglas' },
+      { id: 'hitomi', name: 'Hitomi' },
+      { id: 'lau-chan', name: 'Lau Chan' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -581,8 +660,10 @@ rosterCount: 11,
     releaseYear: 1999,
 rosterCount: 14,
         characters: [
+      
       { id: 'ayane', name: 'Ayane' },
       { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -593,8 +674,10 @@ rosterCount: 14,
     releaseYear: 2001,
 rosterCount: 18,
         characters: [
+      
       { id: 'brad-wong', name: 'Brad Wong' },
       { id: 'christie', name: 'Christie' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -605,8 +688,10 @@ rosterCount: 18,
     releaseYear: 2005,
 rosterCount: 22,
         characters: [
+      
       { id: 'eliot', name: 'Eliot' },
       { id: 'kokoro', name: 'Kokoro' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -617,8 +702,10 @@ rosterCount: 22,
     releaseYear: 2012,
 rosterCount: 34,
         characters: [
+      
       { id: 'mila', name: 'Mila' },
       { id: 'rig', name: 'Rig' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -629,10 +716,12 @@ rosterCount: 34,
     releaseYear: 1998,
 rosterCount: 21,
         characters: [
+      
       { id: 'berserker', name: 'Berserker' },
       { id: 'grappler', name: 'Grappler' },
       { id: 'inquisitor', name: 'Inquisitor' },
       { id: 'striker', name: 'Striker' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -643,6 +732,7 @@ rosterCount: 21,
     releaseYear: 1998,
 rosterCount: 31,
         characters: [
+      
       { id: 'ayane', name: 'Ayane' },
       { id: 'bass-armstrong', name: 'Bass Armstrong' },
       { id: 'bayman', name: 'Bayman' },
@@ -667,6 +757,7 @@ rosterCount: 31,
       { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
       { id: 'tina-armstrong', name: 'Tina Armstrong' },
       { id: 'zack', name: 'Zack' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -677,10 +768,12 @@ rosterCount: 31,
     releaseYear: 2018,
 rosterCount: 44,
         characters: [
+      
       { id: 'frieza', name: 'Frieza' },
       { id: 'goku-(super-saiyan)', name: 'Goku (Super Saiyan)' },
       { id: 'goku', name: 'Goku (Super Saiyan)' },
       { id: 'vegeta-(super-saiyan)', name: 'Vegeta (Super Saiyan)' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -691,8 +784,10 @@ rosterCount: 44,
     releaseYear: 1992,
 rosterCount: 12,
         characters: [
+      
       { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
       { id: 'mai-shiranui', name: 'Mai Shiranui' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -703,8 +798,10 @@ rosterCount: 12,
     releaseYear: 1995,
 rosterCount: 13,
         characters: [
+      
       { id: 'blue-mary', name: 'Blue Mary' },
       { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -715,8 +812,10 @@ rosterCount: 13,
     releaseYear: 1998,
 rosterCount: 11,
         characters: [
+      
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'terry-bogard', name: 'Terry Bogard' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -727,8 +826,11 @@ rosterCount: 11,
     releaseYear: 1993,
 rosterCount: 15,
         characters: [
+      
       { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' }
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'cotw_kimdonghwan', name: 'Cotw_Kimdonghwan' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -739,12 +841,16 @@ rosterCount: 15,
     releaseYear: 1996,
 rosterCount: 32,
         characters: [
+      
       { id: 'akira-yuki-(vf)', name: 'Akira Yuki (VF)' },
       { id: 'bahn-(vipers)', name: 'Bahn (Vipers)' },
       { id: 'honey-(vipers)', name: 'Honey (Vipers)' },
       { id: 'hornet-(daytona-usa)', name: 'Hornet (Daytona USA)' },
       { id: 'hornet', name: 'Hornet' },
-      { id: 'janet', name: 'Janet' }
+      { id: 'janet', name: 'Janet' },
+      { id: 'fighters-megamix', name: 'Fighters Megamix' },
+      { id: 'fighting-vipers', name: 'Fighting Vipers' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -755,9 +861,11 @@ rosterCount: 32,
     releaseYear: 1998,
 rosterCount: 23,
         characters: [
+      
       { id: 'garuda', name: 'Garuda' },
       { id: 'kairi', name: 'Kairi' },
       { id: 'shirase', name: 'Shirase' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -768,8 +876,10 @@ rosterCount: 23,
     releaseYear: 1995,
 rosterCount: 11,
         characters: [
+      
       { id: 'bahn', name: 'Bahn' },
       { id: 'grace', name: 'Grace' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -780,8 +890,10 @@ rosterCount: 11,
     releaseYear: 1998,
 rosterCount: 13,
         characters: [
+      
       { id: 'charlie', name: 'Charlie' },
       { id: 'emi', name: 'Emi' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -792,6 +904,7 @@ rosterCount: 13,
     releaseYear: 1998,
 rosterCount: 8,
         characters: [
+      
       { id: 'alvan', name: 'Alvan' },
       { id: 'g-done', name: 'G-Done' },
       { id: 'gunter', name: 'Gunter' },
@@ -800,6 +913,7 @@ rosterCount: 8,
       { id: 'musar', name: 'Musar' },
       { id: 'rolf', name: 'Rolf' },
       { id: 'roomi', name: 'Roomi' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -810,8 +924,14 @@ rosterCount: 8,
     releaseYear: 1999,
 rosterCount: 14,
         characters: [
+      
       { id: 'b-jenet', name: 'B. Jenet' },
-      { id: 'rock-howard', name: 'Rock Howard' }
+      { id: 'rock-howard', name: 'Rock Howard' },
+      { id: 'cotw_hokutomaru', name: 'Cotw_Hokutomaru' },
+      { id: 'cotw_hotarufutaba', name: 'Cotw_Hotarufutaba' },
+      { id: 'cotw_kevinrian', name: 'Cotw_Kevinrian' },
+      { id: 'cotw_tizoc', name: 'Cotw_Tizoc' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -822,6 +942,7 @@ rosterCount: 14,
     releaseYear: 1998,
 rosterCount: 10,
         characters: [
+      
       { id: 'death-adder', name: 'Death Adder' },
       { id: 'doc', name: 'Doc' },
       { id: 'duel', name: 'Duel' },
@@ -832,6 +953,7 @@ rosterCount: 10,
       { id: 'milan-flare', name: 'Milan Flare' },
       { id: 'panchos', name: 'Panchos' },
       { id: 'zoma', name: 'Zoma' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -842,9 +964,11 @@ rosterCount: 10,
     releaseYear: 1998,
 rosterCount: 39,
         characters: [
+      
       { id: 'gran', name: 'Gran' },
       { id: 'katalina', name: 'Katalina' },
       { id: 'siegfried', name: 'Siegfried' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -855,6 +979,7 @@ rosterCount: 39,
     releaseYear: 1998,
 rosterCount: 11,
         characters: [
+      
       { id: 'chris-wayne', name: 'Chris Wayne' },
       { id: 'dame', name: 'Dame' },
       { id: 'falco', name: 'Falco' },
@@ -866,6 +991,7 @@ rosterCount: 11,
       { id: 'remi-otogiri', name: 'Remi Otogiri' },
       { id: 'rudolph-gartheimer', name: 'Rudolph Gartheimer' },
       { id: 'solis-r-albus', name: 'Solis R. Albus' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -876,7 +1002,9 @@ rosterCount: 11,
     releaseYear: 1998,
 rosterCount: 13,
         characters: [
+      
       { id: 'sol-badguy', name: 'Sol Badguy' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -887,10 +1015,12 @@ rosterCount: 13,
     releaseYear: 2021,
 rosterCount: 32,
         characters: [
+      
       { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' },
       { id: 'ky-kiske', name: 'Ky Kiske' },
       { id: 'ramlethal-valentine', name: 'Ramlethal Valentine' },
       { id: 'sol-badguy', name: 'Sol Badguy' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -901,7 +1031,13 @@ rosterCount: 32,
     releaseYear: 1998,
 rosterCount: 16,
         characters: [
-      { id: 'ky-kiske', name: 'Ky Kiske' }
+      
+      { id: 'ky-kiske', name: 'Ky Kiske' },
+      { id: 'baiken', name: 'Baiken' },
+      { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' },
+      { id: 'millia-rage', name: 'Millia Rage' },
+      { id: 'sol-badguy', name: 'Sol Badguy' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -912,10 +1048,12 @@ rosterCount: 16,
     releaseYear: 2017,
 rosterCount: 25,
         characters: [
+      
       { id: 'elphelt-valentine', name: 'Elphelt Valentine' },
       { id: 'johnny', name: 'Johnny' },
       { id: 'millia-rage', name: 'Millia Rage' },
       { id: 'sol-badguy', name: 'Sol Badguy' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -926,7 +1064,9 @@ rosterCount: 25,
     releaseYear: 1998,
 rosterCount: 25,
         characters: [
+      
       { id: 'baiken', name: 'Baiken' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -937,9 +1077,11 @@ rosterCount: 25,
     releaseYear: 1987,
 rosterCount: 17,
         characters: [
+      
       { id: 'chun-li', name: 'Chun Li' },
       { id: 'ryu', name: 'Ryu' },
       { id: 'vega', name: 'Vega' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -950,7 +1092,9 @@ rosterCount: 17,
     releaseYear: 1994,
 rosterCount: 11,
         characters: [
+      
       { id: 'jago', name: 'Jago' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -961,8 +1105,10 @@ rosterCount: 11,
     releaseYear: 2013,
 rosterCount: 29,
         characters: [
+      
       { id: 'fulgore', name: 'Fulgore' },
       { id: 'hisako', name: 'Hisako' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -973,7 +1119,9 @@ rosterCount: 29,
     releaseYear: 1994,
 rosterCount: 11,
         characters: [
+      
       { id: 'b-orchid', name: 'B. Orchid' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -984,7 +1132,9 @@ rosterCount: 11,
     releaseYear: 1996,
 rosterCount: 10,
         characters: [
+      
       { id: 'sho-hayate', name: 'Sho Hayate' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -995,6 +1145,7 @@ rosterCount: 10,
     releaseYear: 1998,
 rosterCount: 11,
         characters: [
+      
       { id: 'joe', name: 'Joe' },
       { id: 'kurosawa', name: 'Kurosawa' },
       { id: 'lisa', name: 'Lisa' },
@@ -1004,6 +1155,7 @@ rosterCount: 11,
       { id: 'yoko', name: 'Yoko' },
       { id: 'yusaku', name: 'Yusaku' },
       { id: 'zaimoku', name: 'Zaimoku' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1014,6 +1166,7 @@ rosterCount: 11,
     releaseYear: 1998,
 rosterCount: 22,
         characters: [
+      
       { id: 'captain-america', name: 'Captain America' },
       { id: 'gambit', name: 'Gambit' },
       { id: 'hulk', name: 'Hulk' },
@@ -1025,6 +1178,7 @@ rosterCount: 22,
       { id: 'venom', name: 'Venom' },
       { id: 'war-machine', name: 'War Machine' },
       { id: 'wolverine', name: 'Wolverine' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1035,6 +1189,7 @@ rosterCount: 22,
     releaseYear: 2017,
 rosterCount: 36,
         characters: [
+      
       { id: 'captain-marvel', name: 'Captain Marvel' },
       { id: 'dante', name: 'Dante' },
       { id: 'iron-man', name: 'Iron Man' },
@@ -1042,6 +1197,7 @@ rosterCount: 36,
       { id: 'morrigan', name: 'Morrigan' },
       { id: 'ryu', name: 'Ryu' },
       { id: 'zero', name: 'Zero' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1052,7 +1208,9 @@ rosterCount: 36,
     releaseYear: 1998,
 rosterCount: 17,
         characters: [
+      
       { id: 'keith-wayne', name: 'Keith Wayne' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1063,7 +1221,9 @@ rosterCount: 17,
     releaseYear: 1998,
 rosterCount: 35,
         characters: [
+      
       { id: 'scorpion', name: 'Scorpion' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1074,8 +1234,10 @@ rosterCount: 35,
     releaseYear: 1998,
 rosterCount: 12,
         characters: [
+      
       { id: 'scorpion', name: 'Scorpion' },
       { id: 'sub-zero', name: 'Sub-Zero' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1086,7 +1248,9 @@ rosterCount: 12,
     releaseYear: 1998,
 rosterCount: 32,
         characters: [
+      
       { id: 'sub-zero', name: 'Sub-Zero' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1097,8 +1261,11 @@ rosterCount: 32,
     releaseYear: 1998,
 rosterCount: 26,
         characters: [
+      
       { id: 'scorpion', name: 'Scorpion' },
-      { id: 'sub-zero', name: 'Sub-Zero' }
+      { id: 'sub-zero', name: 'Sub-Zero' },
+      { id: 'mortal-kombat-1', name: 'Mortal Kombat 1' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1109,7 +1276,9 @@ rosterCount: 26,
     releaseYear: 1998,
 rosterCount: 33,
         characters: [
+      
       { id: 'scorpion', name: 'Scorpion' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1120,6 +1289,7 @@ rosterCount: 33,
     releaseYear: 1995,
 rosterCount: 12,
         characters: [
+      
       { id: 'blackheart', name: 'Blackheart' },
       { id: 'captain-america', name: 'Captain America' },
       { id: 'dr-doom-(boss)', name: 'Dr. Doom (Boss)' },
@@ -1132,6 +1302,7 @@ rosterCount: 12,
       { id: 'spider-man', name: 'Spider-Man' },
       { id: 'thanos-(boss)', name: 'Thanos (Boss)' },
       { id: 'wolverine', name: 'Wolverine' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1142,6 +1313,7 @@ rosterCount: 12,
     releaseYear: 1997,
 rosterCount: 18,
         characters: [
+      
       { id: 'akuma', name: 'Akuma' },
       { id: 'blackheart', name: 'Blackheart' },
       { id: 'captain-america', name: 'Captain America' },
@@ -1159,6 +1331,7 @@ rosterCount: 18,
       { id: 'spider-man', name: 'Spider-Man' },
       { id: 'wolverine', name: 'Wolverine' },
       { id: 'zangief', name: 'Zangief' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1169,6 +1342,7 @@ rosterCount: 18,
     releaseYear: 2000,
 rosterCount: 56,
         characters: [
+      
       { id: 'akuma', name: 'Akuma' },
       { id: 'cable', name: 'Cable' },
       { id: 'captain-america', name: 'Captain America' },
@@ -1188,7 +1362,30 @@ rosterCount: 56,
       { id: 'storm', name: 'Storm' },
       { id: 'strider-hiryu', name: 'Strider Hiryu' },
       { id: 'venom', name: 'Venom' },
-      { id: 'wolverine', name: 'Wolverine' }
+      { id: 'wolverine', name: 'Wolverine' },
+      { id: 'alternate_intro', name: 'Alternate_Intro' },
+      { id: 'anakaris', name: 'Anakaris' },
+      { id: 'blodia', name: 'Blodia' },
+      { id: 'bulleta', name: 'Bulleta' },
+      { id: 'captain-commando', name: 'Captain Commando' },
+      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
+      { id: 'hypersf2', name: 'Hypersf2' },
+      { id: 'jin-saotome', name: 'Jin Saotome' },
+      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
+      { id: 'msh', name: 'Msh' },
+      { id: 'omega-red', name: 'Omega Red' },
+      { id: 'plasma-sword-nightmare-of-bilstein', name: 'Plasma Sword Nightmare Of Bilstein' },
+      { id: 'players', name: 'Players' },
+      { id: 'pocketfighter', name: 'Pocketfighter' },
+      { id: 'sf32i', name: 'Sf32I' },
+      { id: 'sf33s', name: 'Sf33S' },
+      { id: 'shuma-gorath', name: 'Shuma Gorath' },
+      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
+      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
+      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
+      { id: 'the_plasma_moves', name: 'The_Plasma_Moves' },
+      { id: 'types_of_throws', name: 'Types_Of_Throws' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1199,10 +1396,20 @@ rosterCount: 56,
     releaseYear: 1995,
 rosterCount: 14,
         characters: [
+      
       { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
       { id: 'donovan-baine', name: 'Donovan Baine' },
       { id: 'hsien-ko-(lei-lei)', name: 'Hsien-Ko (Lei-Lei)' },
-      { id: 'morrigan-aensland', name: 'Morrigan Aensland' }
+      { id: 'morrigan-aensland', name: 'Morrigan Aensland' },
+      { id: 'aulbath', name: 'Aulbath' },
+      { id: 'donovan_baine', name: 'Donovan_Baine' },
+      { id: 'jedah-dohma', name: 'Jedah Dohma' },
+      { id: 'jon-talbain', name: 'Jon Talbain' },
+      { id: 'jon_talbain', name: 'Jon_Talbain' },
+      { id: 'morrigan_arnsland', name: 'Morrigan_Arnsland' },
+      { id: 'rikuo', name: 'Rikuo' },
+      { id: 'victor_von_geldenheim', name: 'Victor_Von_Geldenheim' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1213,7 +1420,9 @@ rosterCount: 14,
     releaseYear: 1998,
 rosterCount: 12,
         characters: [
+      
       { id: 'sasuke', name: 'Sasuke' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1224,9 +1433,11 @@ rosterCount: 12,
     releaseYear: 1998,
 rosterCount: 22,
         characters: [
+      
       { id: 'chie-satonaka', name: 'Chie Satonaka' },
       { id: 'yosuke-hanamura', name: 'Yosuke Hanamura' },
       { id: 'yu-narukami', name: 'Yu Narukami' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1237,9 +1448,12 @@ rosterCount: 22,
     releaseYear: 1998,
 rosterCount: 24,
         characters: [
+      
       { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
       { id: 'june-lin-milliam', name: 'June Lin Milliam' },
-      { id: 'saturn', name: 'Saturn' }
+      { id: 'saturn', name: 'Saturn' },
+      { id: 'byakko', name: 'Byakko' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1250,6 +1464,7 @@ rosterCount: 24,
     releaseYear: 1998,
 rosterCount: 24,
         characters: [
+      
       { id: 'byakko', name: 'BYAKKO' },
       { id: 'fighting-on-the-ground', name: 'FIGHTING ON THE GROUND' },
       { id: 'fighting_on_the_ground', name: 'FIGHTING ON THE GROUND' },
@@ -1261,6 +1476,7 @@ rosterCount: 24,
       { id: 'table-of-contents', name: 'TABLE OF CONTENTS' },
       { id: 'the-plasma-moves', name: 'THE PLASMA MOVES' },
       { id: 'the_plasma_moves', name: 'THE PLASMA MOVES' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1271,9 +1487,11 @@ rosterCount: 24,
     releaseYear: 1997,
 rosterCount: 12,
         characters: [
+      
       { id: 'felicia', name: 'Felicia' },
       { id: 'ryu', name: 'Ryu' },
       { id: 'sakura-kasugano', name: 'Sakura Kasugano' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1284,6 +1502,7 @@ rosterCount: 12,
     releaseYear: 1998,
 rosterCount: 12,
         characters: [
+      
       { id: 'akuma(gouki)', name: 'Akuma(Gouki)' },
       { id: 'akuma_gouki', name: 'Akuma(Gouki)' },
       { id: 'chun-li', name: 'Chun-Li' },
@@ -1301,6 +1520,7 @@ rosterCount: 12,
       { id: 'sakura', name: 'Sakura' },
       { id: 'tessa', name: 'Tessa' },
       { id: 'zangief', name: 'Zangief' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1311,9 +1531,16 @@ rosterCount: 12,
     releaseYear: 2000,
 rosterCount: 27,
         characters: [
+      
       { id: 'batsu-ichimonji', name: 'Batsu Ichimonji' },
       { id: 'kyosuke-kagami', name: 'Kyosuke Kagami' },
-      { id: 'roberto-miura', name: 'Roberto Miura' }
+      { id: 'roberto-miura', name: 'Roberto Miura' },
+      { id: 'burning_batsu', name: 'Burning_Batsu' },
+      { id: 'kurow', name: 'Kurow' },
+      { id: 'kyoko', name: 'Kyoko' },
+      { id: 'vatsu', name: 'Vatsu' },
+      { id: 'wild_daigo', name: 'Wild_Daigo' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1324,6 +1551,7 @@ rosterCount: 27,
     releaseYear: 1998,
 rosterCount: 27,
         characters: [
+      
       { id: 'akira', name: 'AKIRA' },
       { id: 'alec', name: 'ALEC' },
       { id: 'anna', name: 'ANNA' },
@@ -1380,6 +1608,7 @@ rosterCount: 27,
       { id: 'wild_daigo', name: 'WILD DAIGO' },
       { id: 'yurika', name: 'YURIKA' },
       { id: 'zaki', name: 'ZAKI' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1390,7 +1619,9 @@ rosterCount: 27,
     releaseYear: 1998,
 rosterCount: 14,
         characters: [
+      
       { id: 'billy-lewis', name: 'Billy Lewis' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1401,7 +1632,9 @@ rosterCount: 14,
     releaseYear: 1995,
 rosterCount: 16,
         characters: [
+      
       { id: 'terry-bogard', name: 'Terry Bogard' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1412,7 +1645,9 @@ rosterCount: 16,
     releaseYear: 1992,
 rosterCount: 22,
         characters: [
+      
       { id: 'rick-strowd', name: 'Rick Strowd' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1423,7 +1658,9 @@ rosterCount: 22,
     releaseYear: 1997,
 rosterCount: 19,
         characters: [
+      
       { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1434,8 +1671,19 @@ rosterCount: 19,
     releaseYear: 1993,
 rosterCount: 12,
         characters: [
+      
       { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'ukyo-tachibana', name: 'Ukyo Tachibana' }
+      { id: 'ukyo-tachibana', name: 'Ukyo Tachibana' },
+      { id: 'breakers-revenge', name: 'Breakers Revenge' },
+      { id: 'dudley', name: 'Dudley' },
+      { id: 'galford', name: 'Galford' },
+      { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' },
+      { id: 'mina-majikina', name: 'Mina Majikina' },
+      { id: 'samurai-shodown-iv-amakusas-revenge', name: 'Samurai Shodown Iv Amakusas Revenge' },
+      { id: 'sean', name: 'Sean' },
+      { id: 'sodom', name: 'Sodom' },
+      { id: 'yoshitora-tokugawa', name: 'Yoshitora Tokugawa' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1446,11 +1694,13 @@ rosterCount: 12,
     releaseYear: 2019,
 rosterCount: 31,
         characters: [
+      
       { id: 'galford', name: 'Galford' },
       { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' },
       { id: 'haohmaru', name: 'Haohmaru' },
       { id: 'nakoruru', name: 'Nakoruru' },
       { id: 'ukyo-tachibana', name: 'Ukyo Tachibana' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1461,8 +1711,10 @@ rosterCount: 31,
     releaseYear: 1993,
 rosterCount: 15,
         characters: [
+      
       { id: 'cham-cham', name: 'Cham Cham' },
       { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1473,7 +1725,9 @@ rosterCount: 15,
     releaseYear: 1993,
 rosterCount: 12,
         characters: [
+      
       { id: 'haohmaru', name: 'Haohmaru (Bust Style / Rasetsu)' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1484,8 +1738,10 @@ rosterCount: 12,
     releaseYear: 1993,
 rosterCount: 17,
         characters: [
+      
       { id: 'kazuki-kazama', name: 'Kazuki Kazama (Slash)' },
       { id: 'sogetsu-kazama', name: 'Sogetsu Kazama (Slash)' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1496,7 +1752,9 @@ rosterCount: 17,
     releaseYear: 1993,
 rosterCount: 24,
         characters: [
+      
       { id: 'yoshitora-tokugawa', name: 'Yoshitora Tokugawa' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1507,8 +1765,10 @@ rosterCount: 24,
     releaseYear: 1993,
 rosterCount: 28,
         characters: [
+      
       { id: 'galford', name: 'Galford' },
       { id: 'mina-majikina', name: 'Mina Majikina' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1519,8 +1779,10 @@ rosterCount: 28,
     releaseYear: 1987,
 rosterCount: 11,
         characters: [
+      
       { id: 'alex', name: 'Alex' },
       { id: 'ryu', name: 'Ryu' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1531,8 +1793,10 @@ rosterCount: 11,
     releaseYear: 1997,
 rosterCount: 14,
         characters: [
+      
       { id: 'hugo', name: 'Hugo' },
       { id: 'urien', name: 'Urien' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1543,9 +1807,11 @@ rosterCount: 14,
     releaseYear: 1999,
 rosterCount: 20,
         characters: [
+      
       { id: 'chun-li', name: 'Chun Li' },
       { id: 'makoto', name: 'Makoto' },
       { id: 'q', name: 'Q' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1556,11 +1822,17 @@ rosterCount: 20,
     releaseYear: 1995,
 rosterCount: 13,
         characters: [
+      
       { id: 'akuma', name: 'Akuma' },
       { id: 'charlie', name: 'Charlie' },
       { id: 'chun-li', name: 'Chun Li' },
       { id: 'ken', name: 'Ken' },
-      { id: 'ryu', name: 'Ryu' }
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'cammy', name: 'Cammy' },
+      { id: 'decapre', name: 'Decapre' },
+      { id: 'maki-genryusai', name: 'Maki Genryusai' },
+      { id: 'sagat', name: 'Sagat' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1571,9 +1843,11 @@ rosterCount: 13,
     releaseYear: 1996,
 rosterCount: 28,
         characters: [
+      
       { id: 'rolento', name: 'Rolento' },
       { id: 'ryu', name: 'Ryu' },
       { id: 'sakura', name: 'Sakura' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1584,7 +1858,9 @@ rosterCount: 28,
     releaseYear: 1998,
 rosterCount: 18,
         characters: [
+      
       { id: 'athena-asamiya', name: 'Athena Asamiya' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1595,7 +1871,9 @@ rosterCount: 18,
     releaseYear: 2003,
 rosterCount: 36,
         characters: [
+      
       { id: 'geese-howard', name: 'Geese Howard' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1606,10 +1884,15 @@ rosterCount: 36,
     releaseYear: 1993,
 rosterCount: 16,
         characters: [
+      
       { id: 'cammy', name: 'Cammy' },
       { id: 'dee-jay', name: 'Dee Jay' },
       { id: 'fei-long', name: 'Fei Long' },
-      { id: 't-hawk', name: 'T Hawk' }
+      { id: 't-hawk', name: 'T Hawk' },
+      { id: 'sf2', name: 'Sf2' },
+      { id: 'ssf2', name: 'Ssf2' },
+      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1620,6 +1903,7 @@ rosterCount: 16,
     releaseYear: 2023,
 rosterCount: 26,
         characters: [
+      
       { id: 'aki', name: 'A.K.I.' },
       { id: 'akuma', name: 'Akuma' },
       { id: 'blanka', name: 'Blanka' },
@@ -1642,6 +1926,7 @@ rosterCount: 26,
       { id: 'ryu', name: 'Ryu' },
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'zangief', name: 'Zangief' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1652,6 +1937,7 @@ rosterCount: 26,
     releaseYear: 1998,
 rosterCount: 40,
         characters: [
+      
       { id: 'adon', name: 'Adon' },
       { id: 'akuma-(gouki)', name: 'Akuma (Gouki)' },
       { id: 'balrog-(m-bison-jp)', name: 'Balrog (M. Bison JP)' },
@@ -1676,7 +1962,16 @@ rosterCount: 40,
       { id: 'sakura', name: 'Sakura' },
       { id: 'sodom', name: 'Sodom' },
       { id: 'vega-(balrog-jp)', name: 'Vega (Balrog JP)' },
-      { id: 'zangief', name: 'Zangief' }
+      { id: 'zangief', name: 'Zangief' },
+      { id: 'bison', name: 'Bison' },
+      { id: 'charlie', name: 'Charlie' },
+      { id: 'dee-jay', name: 'Dee Jay' },
+      { id: 'deejay', name: 'Deejay' },
+      { id: 'dee_jay', name: 'Dee_Jay' },
+      { id: 'dramatic_battle', name: 'Dramatic_Battle' },
+      { id: 'dramatic_battle_mode', name: 'Dramatic_Battle_Mode' },
+      { id: 'other_special_poses', name: 'Other_Special_Poses' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1687,9 +1982,11 @@ rosterCount: 40,
     releaseYear: 1998,
 rosterCount: 24,
         characters: [
+      
       { id: 'kairi', name: 'Kairi' },
       { id: 'ryu', name: 'Ryu' },
       { id: 'skullomania', name: 'Skullomania' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1700,6 +1997,7 @@ rosterCount: 24,
     releaseYear: 1998,
 rosterCount: 20,
         characters: [
+      
       { id: 'akuma', name: 'Akuma' },
       { id: 'alex', name: 'Alex' },
       { id: 'chun-li', name: 'Chun-Li' },
@@ -1718,7 +2016,9 @@ rosterCount: 20,
       { id: 'twelve', name: 'Twelve' },
       { id: 'urien', name: 'Urien' },
       { id: 'yang', name: 'Yang' },
-      { id: 'yun', name: 'Yun' }
+      { id: 'yun', name: 'Yun' },
+      { id: 'hayate', name: 'Hayate' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1729,10 +2029,12 @@ rosterCount: 20,
     releaseYear: 1998,
 rosterCount: 45,
         characters: [
+      
       { id: 'chun-li', name: 'Chun-Li' },
       { id: 'luke', name: 'Luke' },
       { id: 'rashid', name: 'Rashid' },
       { id: 'ryu', name: 'Ryu' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1743,6 +2045,7 @@ rosterCount: 45,
     releaseYear: 1994,
 rosterCount: 17,
         characters: [
+      
       { id: 'akuma', name: 'Akuma' },
       { id: 'balrog', name: 'Balrog' },
       { id: 'blanka', name: 'Blanka' },
@@ -1760,6 +2063,7 @@ rosterCount: 17,
       { id: 't-hawk', name: 'T. Hawk' },
       { id: 'vega', name: 'Vega' },
       { id: 'zangief', name: 'Zangief' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1770,6 +2074,7 @@ rosterCount: 17,
     releaseYear: 2024,
 rosterCount: 40,
         characters: [
+      
       { id: 'alisa', name: 'Alisa' },
       { id: 'anna-williams', name: 'ANNA WILLIAMS' },
       { id: 'armor-king', name: 'ARMOR KING' },
@@ -1810,6 +2115,7 @@ rosterCount: 40,
       { id: 'victor-chevalier', name: 'VICTOR CHEVALIER' },
       { id: 'yoshimitsu', name: 'Yoshimitsu' },
       { id: 'zafina', name: 'Zafina' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1820,11 +2126,13 @@ rosterCount: 40,
     releaseYear: 1998,
 rosterCount: 26,
         characters: [
+      
       { id: 'casshern', name: 'Casshern' },
       { id: 'chun-li', name: 'Chun-Li' },
       { id: 'ryu', name: 'Ryu' },
       { id: 'tekkaman-blade', name: 'Tekkaman Blade' },
       { id: 'tekkaman', name: 'Tekkaman' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1835,7 +2143,9 @@ rosterCount: 26,
     releaseYear: 1998,
 rosterCount: 35,
         characters: [
+      
       { id: 'vanessa', name: 'Vanessa' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1846,7 +2156,9 @@ rosterCount: 35,
     releaseYear: 1998,
 rosterCount: 42,
         characters: [
+      
       { id: 'k9999', name: 'K9999' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1857,7 +2169,9 @@ rosterCount: 42,
     releaseYear: 1998,
 rosterCount: 44,
         characters: [
+      
       { id: 'kula-diamond', name: 'Kula Diamond' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1868,7 +2182,9 @@ rosterCount: 44,
     releaseYear: 1998,
 rosterCount: 37,
         characters: [
+      
       { id: 'ash-crimson', name: 'Ash Crimson' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1879,7 +2195,14 @@ rosterCount: 37,
     releaseYear: 1998,
 rosterCount: 35,
         characters: [
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' }
+      
+      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
+      { id: 'athena-asamiya', name: 'Athena Asamiya' },
+      { id: 'kula-diamond', name: 'Kula Diamond' },
+      { id: 'rugal-bernstein', name: 'Rugal Bernstein' },
+      { id: 'striker', name: 'Striker' },
+      { id: 'the-king-of-fighters-2002', name: 'The King Of Fighters 2002' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1890,7 +2213,9 @@ rosterCount: 35,
     releaseYear: 1998,
 rosterCount: 35,
         characters: [
+      
       { id: 'iori-yagami', name: 'Iori Yagami' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1901,7 +2226,9 @@ rosterCount: 35,
     releaseYear: 1998,
 rosterCount: 35,
         characters: [
+      
       { id: 'chizuru-kagura', name: 'Chizuru Kagura' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1912,7 +2239,9 @@ rosterCount: 35,
     releaseYear: 1998,
 rosterCount: 35,
         characters: [
+      
       { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1923,7 +2252,9 @@ rosterCount: 35,
     releaseYear: 1998,
 rosterCount: 35,
         characters: [
+      
       { id: 'rugal-bernstein', name: 'Rugal Bernstein' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1934,6 +2265,7 @@ rosterCount: 35,
     releaseYear: 1998,
 rosterCount: 35,
         characters: [
+      
       { id: 'athena-asamiya', name: 'Athena Asamiya' },
       { id: 'chris', name: 'Chris' },
       { id: 'iori-yagami', name: 'Iori Yagami' },
@@ -1942,6 +2274,7 @@ rosterCount: 35,
       { id: 'mai-shiranui', name: 'Mai Shiranui' },
       { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
       { id: 'terry-bogard', name: 'Terry Bogard' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1952,7 +2285,9 @@ rosterCount: 35,
     releaseYear: 1998,
 rosterCount: 35,
         characters: [
-      { id: 'k', name: 'K\'' }
+      
+      
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1963,7 +2298,9 @@ rosterCount: 35,
     releaseYear: 1998,
 rosterCount: 36,
         characters: [
+      
       { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1974,7 +2311,9 @@ rosterCount: 36,
     releaseYear: 1998,
 rosterCount: 58,
         characters: [
-      { id: 'shunei', name: 'Shun\'ei' }
+      
+      
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1985,10 +2324,10 @@ rosterCount: 58,
     releaseYear: 1998,
 rosterCount: 59,
         characters: [
+      
       { id: 'ash-crimson', name: 'Ash Crimson' },
-      { id: 'isla', name: 'Isla' },
-      { id: 'k', name: 'K\'' },
-      { id: 'shunei', name: 'Shun\'ei' }
+      { id: 'isla', name: 'Isla' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -1999,7 +2338,10 @@ rosterCount: 59,
     releaseYear: 1997,
 rosterCount: 15,
         characters: [
-      { id: 'kaede', name: 'Kaede' }
+      
+      { id: 'kaede', name: 'Kaede' },
+      { id: 'moriya-minakata', name: 'Moriya Minakata' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2010,10 +2352,12 @@ rosterCount: 15,
     releaseYear: 1997,
 rosterCount: 18,
         characters: [
+      
       { id: 'kaede-(awakened)', name: 'Kaede (Awakened)' },
       { id: 'moriya-minakata', name: 'Moriya Minakata' },
       { id: 'setsuna', name: 'Setsuna' },
       { id: 'yuki', name: 'Yuki' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2024,6 +2368,7 @@ rosterCount: 18,
     releaseYear: 1998,
 rosterCount: 32,
         characters: [
+      
       { id: 'abel', name: 'Abel' },
       { id: 'adam', name: 'Adam' },
       { id: 'ataru', name: 'Ataru' },
@@ -2050,6 +2395,7 @@ rosterCount: 32,
       { id: 'veil', name: 'Veil' },
       { id: 'vermilion', name: 'Vermilion' },
       { id: 'zola', name: 'Zola' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2060,6 +2406,7 @@ rosterCount: 32,
     releaseYear: 1998,
 rosterCount: 50,
         characters: [
+      
       { id: 'dante', name: 'Dante' },
       { id: 'doctor-doom', name: 'Doctor Doom' },
       { id: 'magneto', name: 'Magneto' },
@@ -2070,6 +2417,7 @@ rosterCount: 50,
       { id: 'wesker', name: 'Wesker' },
       { id: 'wolverine', name: 'Wolverine' },
       { id: 'zero', name: 'Zero' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2080,7 +2428,9 @@ rosterCount: 50,
     releaseYear: 1998,
 rosterCount: 23,
         characters: [
+      
       { id: 'smoke-(human)', name: 'Smoke (Human)' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2091,11 +2441,13 @@ rosterCount: 23,
     releaseYear: 1998,
 rosterCount: 44,
         characters: [
+      
       { id: 'akuma', name: 'Akuma' },
       { id: 'chun-li', name: 'Chun-Li' },
       { id: 'decapre', name: 'Decapre' },
       { id: 'ken', name: 'Ken' },
       { id: 'ryu', name: 'Ryu' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2106,9 +2458,11 @@ rosterCount: 44,
     releaseYear: 1998,
 rosterCount: 27,
         characters: [
+      
       { id: 'hyde', name: 'Hyde' },
       { id: 'linne', name: 'Linne' },
       { id: 'waldstein', name: 'Waldstein' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2119,9 +2473,15 @@ rosterCount: 27,
     releaseYear: 1997,
 rosterCount: 18,
         characters: [
+      
       { id: 'donovan-baine', name: 'Donovan Baine' },
       { id: 'huitzil-(phobos)', name: 'Huitzil (Phobos)' },
-      { id: 'pyron', name: 'Pyron' }
+      { id: 'pyron', name: 'Pyron' },
+      { id: 'darkstalkers', name: 'Darkstalkers' },
+      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
+      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
+      { id: 'nightwarriors', name: 'Nightwarriors' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2132,9 +2492,11 @@ rosterCount: 18,
     releaseYear: 1997,
 rosterCount: 15,
         characters: [
+      
       { id: 'bb-hood-(bulleta)', name: 'B.B. Hood (Bulleta)' },
       { id: 'jedah-dohma', name: 'Jedah Dohma' },
       { id: 'lilith', name: 'Lilith' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2145,6 +2507,7 @@ rosterCount: 15,
     releaseYear: 1997,
 rosterCount: 15,
         characters: [
+      
       { id: 'anakaris', name: 'Anakaris' },
       { id: 'bb-hood-(bulleta)', name: 'B.B. Hood (Bulleta)' },
       { id: 'bishamon', name: 'Bishamon' },
@@ -2160,6 +2523,7 @@ rosterCount: 15,
       { id: 'q-bee', name: 'Q-Bee' },
       { id: 'sasquatch', name: 'Sasquatch' },
       { id: 'victor-von-gerdenheim', name: 'Victor von Gerdenheim' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2170,8 +2534,10 @@ rosterCount: 15,
     releaseYear: 1998,
 rosterCount: 18,
         characters: [
+      
       { id: 'donovan', name: 'Donovan' },
       { id: 'pyron', name: 'Pyron' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2182,6 +2548,7 @@ rosterCount: 18,
     releaseYear: 1998,
 rosterCount: 15,
         characters: [
+      
       { id: 'anakaris', name: 'ANAKARIS' },
       { id: 'aulbath', name: 'AULBATH' },
       { id: 'bb-hood-(bulleta)', name: 'B.B. Hood (Bulleta)' },
@@ -2215,6 +2582,7 @@ rosterCount: 15,
       { id: 'victor-gerdenheim', name: 'VICTOR GERDENHEIM' },
       { id: 'victor-von-gerdenheim', name: 'Victor von Gerdenheim' },
       { id: 'victor_gerdenheim', name: 'VICTOR GERDENHEIM' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2225,8 +2593,10 @@ rosterCount: 15,
     releaseYear: 1998,
 rosterCount: 18,
         characters: [
+      
       { id: 'bb-hood', name: 'Bb Hood' },
       { id: 'jedah', name: 'Jedah' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2237,6 +2607,7 @@ rosterCount: 18,
     releaseYear: 1998,
 rosterCount: 9,
         characters: [
+      
       { id: 'akira-yuki', name: 'Akira Yuki' },
       { id: 'dural', name: 'Dural' },
       { id: 'jacky-bryant', name: 'Jacky Bryant' },
@@ -2246,6 +2617,7 @@ rosterCount: 9,
       { id: 'pai-chan', name: 'Pai Chan' },
       { id: 'sarah-bryant', name: 'Sarah Bryant' },
       { id: 'wolf-hawkfield', name: 'Wolf Hawkfield' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2256,6 +2628,7 @@ rosterCount: 9,
     releaseYear: 1998,
 rosterCount: 11,
         characters: [
+      
       { id: 'akira-yuki', name: 'Akira Yuki' },
       { id: 'jacky-bryant', name: 'Jacky Bryant' },
       { id: 'jeffry-mcwild', name: 'Jeffry McWild' },
@@ -2265,7 +2638,9 @@ rosterCount: 11,
       { id: 'pai-chan', name: 'Pai Chan' },
       { id: 'sarah-bryant', name: 'Sarah Bryant' },
       { id: 'shun-di', name: 'Shun Di' },
-      { id: 'wolf-hawkfield', name: 'Wolf Hawkfield' }
+      { id: 'wolf-hawkfield', name: 'Wolf Hawkfield' },
+      { id: 'virtua-fighter-2', name: 'Virtua Fighter 2' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2276,6 +2651,7 @@ rosterCount: 11,
     releaseYear: 1998,
 rosterCount: 13,
         characters: [
+      
       { id: 'akira-yuki', name: 'Akira Yuki' },
       { id: 'aoi-umenokoji', name: 'Aoi Umenokoji' },
       { id: 'aoi-umenokouji', name: 'Aoi Umenokouji' },
@@ -2283,7 +2659,9 @@ rosterCount: 13,
       { id: 'kage-maru', name: 'Kage-Maru' },
       { id: 'sarah-bryant', name: 'Sarah Bryant' },
       { id: 'taka-arashi', name: 'Taka-Arashi' },
-      { id: 'wolf-hawkfield', name: 'Wolf Hawkfield' }
+      { id: 'wolf-hawkfield', name: 'Wolf Hawkfield' },
+      { id: 'kage-maru', name: 'Kage Maru' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2294,13 +2672,21 @@ rosterCount: 13,
     releaseYear: 1998,
 rosterCount: 18,
         characters: [
+      
       { id: 'akira-yuki', name: 'Akira Yuki' },
       { id: 'brad-burns', name: 'Brad Burns' },
       { id: 'goh-hinogami', name: 'Goh Hinogami' },
       { id: 'jacky-bryant', name: 'Jacky Bryant' },
       { id: 'lei-fei', name: 'Lei-Fei' },
       { id: 'vanessa-lewis', name: 'Vanessa Lewis' },
-      { id: 'wolf-hawkfield', name: 'Wolf Hawkfield' }
+      { id: 'wolf-hawkfield', name: 'Wolf Hawkfield' },
+      { id: 'akira', name: 'Akira' },
+      { id: 'jeffry-mcwild', name: 'Jeffry Mcwild' },
+      { id: 'lion-rafale', name: 'Lion Rafale' },
+      { id: 'sarah-bryant', name: 'Sarah Bryant' },
+      { id: 'virtua-fighter-3', name: 'Virtua Fighter 3' },
+      { id: 'virtua-fighter-4', name: 'Virtua Fighter 4' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2311,6 +2697,7 @@ rosterCount: 18,
     releaseYear: 1998,
 rosterCount: 20,
         characters: [
+      
       { id: 'akira-yuki', name: 'Akira Yuki' },
       { id: 'aoi-umenokouji', name: 'Aoi Umenokouji' },
       { id: 'brad-burns', name: 'Brad Burns' },
@@ -2330,6 +2717,7 @@ rosterCount: 20,
       { id: 'taka-arashi', name: 'Taka-Arashi' },
       { id: 'vanessa-lewis', name: 'Vanessa Lewis' },
       { id: 'wolf-hawkfield', name: 'Wolf Hawkfield' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2340,8 +2728,12 @@ rosterCount: 20,
     releaseYear: 1998,
 rosterCount: 9,
         characters: [
+      
       { id: 'akira-yuki', name: 'Akira Yuki' },
-      { id: 'jacky-bryant', name: 'Jacky Bryant' }
+      { id: 'jacky-bryant', name: 'Jacky Bryant' },
+      { id: 'kids-akira', name: 'Kids Akira' },
+      { id: 'kids-sarah', name: 'Kids Sarah' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2352,7 +2744,9 @@ rosterCount: 9,
     releaseYear: 1996,
 rosterCount: 9,
         characters: [
+      
       { id: 'arina-makihara', name: 'Arina Makihara' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2363,7 +2757,9 @@ rosterCount: 9,
     releaseYear: 1995,
 rosterCount: 19,
         characters: [
+      
       { id: 'hanzo', name: 'Hanzo' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -2374,12 +2770,67 @@ rosterCount: 19,
     releaseYear: 1996,
 rosterCount: 17,
         characters: [
+      
       { id: 'chun-li', name: 'Chun-Li' },
       { id: 'cyclops', name: 'Cyclops' },
       { id: 'ryu', name: 'Ryu' },
       { id: 'sabretooth', name: 'Sabretooth' },
       { id: 'wolverine', name: 'Wolverine' }
+    
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'jojo-s-bizarre-adventure-hftf',
+    name: "JoJo’s Bizarre Adventure_ HFTF",
+    developer: "Unknown",
+    releaseYear: 1995,
+    rosterCount: 15,
+    characters: [
+      
+      { id: 'unknown', name: 'Unknown' },
+      { id: 'unknown', name: 'Unknown' },
+      { id: 'unknown', name: 'Unknown' },
+      { id: 'unknown', name: 'Unknown' },
+      { id: 'unknown', name: 'Unknown' },
+      { id: 'unknown', name: 'Unknown' },
+      { id: 'unknown', name: 'Unknown' },
+      { id: 'unknown', name: 'Unknown' },
+      { id: 'unknown', name: 'Unknown' },
+      { id: 'unknown', name: 'Unknown' },
+      { id: 'unknown', name: 'Unknown' },
+      { id: 'unknown', name: 'Unknown' },
+      { id: 'unknown', name: 'Unknown' },
+      { id: 'unknown', name: 'Unknown' },
+      { id: 'unknown', name: 'Unknown' }
+    
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Throws']
+  },
+  {
+    id: 'savage-reign',
+    name: "Savage Reign",
+    developer: "Unknown",
+    releaseYear: 1995,
+    rosterCount: 1,
+    characters: [
+      
+      { id: 'unknown', name: 'Unknown' }
+    
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Throws']
+  },
+  {
+    id: 'voltage-fighter-gowcaizer',
+    name: "Voltage Fighter Gowcaizer",
+    developer: "Unknown",
+    releaseYear: 1995,
+    rosterCount: 1,
+    characters: [
+      
+      { id: 'unknown', name: 'Unknown' }
+    
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Throws']
   }
 ];

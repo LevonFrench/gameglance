@@ -1,0 +1,312 @@
+{
+  "game_title": "Savage Reign (Fu'un Mokushiroku: Kakutou Sousei)",
+  "system": "Neo Geo MVS/AES",
+  "nomenclature": {
+    "buttons": {
+      "A": "Punch (Tap: Weak, Hold: Strong)",
+      "B": "Kick (Tap: Weak, Hold: Strong)",
+      "C": "Weapon Attack",
+      "D": "Plane Shift (Foreground/Background)",
+      "AB": "A+B (Universal Sway / Alternative Plane Shift)",
+      "BC": "B+C (Short Range Weapon Throw)",
+      "ABC": "A+B+C (Long Range Weapon Throw)"
+    },
+    "notation": "Numpad (1-9). 236=QCF, 214=QCB, 623=DP, 421=RDP",
+    "mechanics": {
+      "Plane_System": "Players can fight on two separate planes. Moves change based on plane orientation.",
+      "Weapon_Throw": "Characters can disarm themselves temporarily to throw weapons as projectiles.",
+      "Fatal_Attack": "Super move available when life bar is flashing red."
+    }
+  },
+  "universal_moves": [
+    {
+      "name": "Forward Dash",
+      "input": "66"
+    },
+    {
+      "name": "Back Dash",
+      "input": "44"
+    },
+    {
+      "name": "Throw",
+      "input": "Near foe, 6+C or 4+C"
+    },
+    {
+      "name": "Dodge",
+      "input": "A+B"
+    },
+    {
+      "name": "High Plane Shift",
+      "input": "8+D"
+    },
+    {
+      "name": "Low Plane Shift",
+      "input": "2+D"
+    }
+  ],
+  "roster": [
+    {
+      "name": "Sho Hayate",
+      "command_normals": [
+        {
+          "name": "Heel Drop",
+          "input": "j.2+B"
+        }
+      ],
+      "special_moves": [
+        {
+          "name": "Kyoretsu Zan",
+          "input": "236+A/B"
+        },
+        {
+          "name": "Hishou Zan",
+          "input": "623+A/B"
+        },
+        {
+          "name": "Rekku Zan",
+          "input": "214+A/B"
+        },
+        {
+          "name": "Nidan Kyoretsu Zan",
+          "input": "236+A/B (During Kyoretsu Zan)"
+        }
+      ],
+      "fatal_attack": {
+        "name": "Musou Ranbu",
+        "input": "236236+A"
+      }
+    },
+    {
+      "name": "Max Eagle",
+      "special_moves": [
+        {
+          "name": "American Screw",
+          "input": "214+A/B"
+        },
+        {
+          "name": "Flash Wing",
+          "input": "623+A/B"
+        },
+        {
+          "name": "Axe Boom",
+          "input": "41236+BC"
+        },
+        {
+          "name": "Eagle Step",
+          "input": "j.2+B"
+        }
+      ],
+      "fatal_attack": {
+        "name": "Eagle Special",
+        "input": "236236+B"
+      }
+    },
+    {
+      "name": "Carol Stanzack",
+      "special_moves": [
+        {
+          "name": "Carol Ball",
+          "input": "236+A/B"
+        },
+        {
+          "name": "Swan Lariat",
+          "input": "623+A/B"
+        },
+        {
+          "name": "Carol Blow",
+          "input": "214+A/B"
+        }
+      ],
+      "fatal_attack": {
+        "name": "Naughty Ball",
+        "input": "236236+B"
+      }
+    },
+    {
+      "name": "Gordon Bowman",
+      "special_moves": [
+        {
+          "name": "Gordon Strike",
+          "input": "236+A/B"
+        },
+        {
+          "name": "Police Tackle",
+          "input": "46+A/B"
+        },
+        {
+          "name": "Gordon Blast",
+          "input": "623+A/B"
+        }
+      ],
+      "fatal_attack": {
+        "name": "Mad Police",
+        "input": "236236+A"
+      }
+    },
+    {
+      "name": "Joker",
+      "special_moves": [
+        {
+          "name": "Murder Shot",
+          "input": "236+A/B"
+        },
+        {
+          "name": "Blowout",
+          "input": "214+A/B"
+        },
+        {
+          "name": "Joker Murder",
+          "input": "623+A/B"
+        }
+      ],
+      "fatal_attack": {
+        "name": "Good Face",
+        "input": "236236+A"
+      }
+    },
+    {
+      "name": "Chung Paifu",
+      "special_moves": [
+        {
+          "name": "Hakkyou-ken",
+          "input": "236+A/B"
+        },
+        {
+          "name": "Flame Kick",
+          "input": "623+A/B"
+        },
+        {
+          "name": "Sennin-shou",
+          "input": "214+A/B"
+        }
+      ],
+      "fatal_attack": {
+        "name": "Sennin da Ha",
+        "input": "236236+A"
+      }
+    },
+    {
+      "name": "Nicola Zaza",
+      "special_moves": [
+        {
+          "name": "Nicola Blast",
+          "input": "236+A/B"
+        },
+        {
+          "name": "Nicola Kick",
+          "input": "623+A/B"
+        },
+        {
+          "name": "Flying Disc",
+          "input": "214+A/B"
+        }
+      ],
+      "fatal_attack": {
+        "name": "Hell Raiser",
+        "input": "236236+A"
+      }
+    },
+    {
+      "name": "Gozu",
+      "special_moves": [
+        {
+          "name": "Kagerou Ken",
+          "input": "Tap A rapidly"
+        },
+        {
+          "name": "Gouten",
+          "input": "623+A/B"
+        },
+        {
+          "name": "Mudou Gyuu-en Ha",
+          "input": "236+A/B"
+        },
+        {
+          "name": "Gouendan",
+          "input": "214+A/B"
+        }
+      ],
+      "fatal_attack": {
+        "name": "Jaguar Rangekishou",
+        "input": "236236+A"
+      }
+    },
+    {
+      "name": "Mezu",
+      "special_moves": [
+        {
+          "name": "Kagerou Ken",
+          "input": "Tap A rapidly"
+        },
+        {
+          "name": "Meisou-en",
+          "input": "623+A/B"
+        },
+        {
+          "name": "Mudou Sui-ryu Ha",
+          "input": "236+A/B"
+        },
+        {
+          "name": "Hyouen-dan",
+          "input": "214+A/B"
+        }
+      ],
+      "fatal_attack": {
+        "name": "Jaguar Rangeki Kyaku",
+        "input": "236236+B"
+      }
+    },
+    {
+      "name": "King Lion (Kage Shishioh)",
+      "special_moves": [
+        {
+          "name": "Silent Storm",
+          "input": "623+A/B"
+        },
+        {
+          "name": "Earth Chopper",
+          "input": "214+A/B"
+        },
+        {
+          "name": "Beast Blow",
+          "input": "236+A/B"
+        }
+      ],
+      "fatal_attack": {
+        "name": "King Straight",
+        "input": "236236+A"
+      }
+    },
+    {
+      "name": "Shin Shishioh (King Leo)",
+      "special_moves": [
+        {
+          "name": "Silent Storm",
+          "input": "623+A/B"
+        },
+        {
+          "name": "Earth Chopper",
+          "input": "214+A/B"
+        },
+        {
+          "name": "Beast Blow",
+          "input": "236+A/B"
+        },
+        {
+          "name": "Nightmare",
+          "input": "63214+C"
+        }
+      ],
+      "fatal_attack": [
+        {
+          "name": "King Straight",
+          "input": "236236+A"
+        },
+        {
+          "name": "King Uppercut",
+          "input": "236236+B"
+        }
+      ]
+    }
+  ]
+}
