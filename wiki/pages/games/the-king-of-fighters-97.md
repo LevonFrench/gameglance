@@ -1,5 +1,5 @@
 ---
-title: "The King of Fighters "
+title: "The King of Fighters '97"
 type: game
 tags: [the-king-of-fighters-97]
 created: 2026-04-15
@@ -7,7 +7,7 @@ updated: 2026-04-15
 sources: 0
 ---
 
-# The King of Fighters 
+# The King of Fighters '97
 
 ## Overview
 *No overview generated yet.*

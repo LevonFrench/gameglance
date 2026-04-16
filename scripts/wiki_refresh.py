@@ -28,11 +28,11 @@ def main():
             current_game = {'char_count': 0}
         elif current_game is not None:
             if line.startswith('    id:'):
-                m = re.search(r"['\"](.*?)['\"]", line)
-                if m: current_game['id'] = m.group(1)
+                m = re.search(r'(?:"([^"]+)"|\'([^\']+)\')', line)
+                if m: current_game['id'] = m.group(1) or m.group(2)
             elif line.startswith('    name:'):
-                m = re.search(r"['\"](.*?)['\"]", line)
-                if m: current_game['name'] = m.group(1)
+                m = re.search(r'(?:"([^"]+)"|\'([^\']+)\')', line)
+                if m: current_game['name'] = m.group(1) or m.group(2)
             elif line.startswith('    characters: ['):
                 in_characters_block = True
             elif line.startswith('    ]') and in_characters_block:

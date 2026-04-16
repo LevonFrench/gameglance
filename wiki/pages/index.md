@@ -121,13 +121,13 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[the-king-of-fighters-2001]] | The King of Fighters 2001 | 0 |
 | [[the-king-of-fighters-2002]] | The King of Fighters 2002 | 0 |
 | [[the-king-of-fighters-2003]] | The King of Fighters 2003 | 0 |
-| [[the-king-of-fighters-94]] | The King of Fighters  | 0 |
+| [[the-king-of-fighters-94]] | The King of Fighters '94 | 0 |
 | [[the-king-of-fighters-95]] | The King of Fighters 2002 | 0 |
-| [[the-king-of-fighters-96]] | The King of Fighters  | 0 |
-| [[the-king-of-fighters-97]] | The King of Fighters  | 0 |
-| [[the-king-of-fighters-98]] | The King of Fighters  | 0 |
-| [[the-king-of-fighters-98-ultimate-match]] | The King of Fighters  | 0 |
-| [[the-king-of-fighters-99]] | The King of Fighters  | 0 |
+| [[the-king-of-fighters-96]] | The King of Fighters '96 | 0 |
+| [[the-king-of-fighters-97]] | The King of Fighters '97 | 0 |
+| [[the-king-of-fighters-98]] | The King of Fighters '98 | 0 |
+| [[the-king-of-fighters-98-ultimate-match]] | The King of Fighters '98 Ultimate Match | 0 |
+| [[the-king-of-fighters-99]] | The King of Fighters '99 | 0 |
 | [[the-king-of-fighters-xiii]] | The King of Fighters XIII | 0 |
 | [[the-king-of-fighters-xiv]] | The King of Fighters XIV | 0 |
 | [[the-king-of-fighters-xv]] | The King of Fighters XV | 0 |
@@ -152,14 +152,14 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[art-of-fighting-2]] | Art of Fighting 2 | 0 |
 | [[battle-monsters]] | Battle Monsters | 0 |
 | [[groove-on-fight-power-instinct-3]] | Groove On Fight (Power Instinct 3) | 0 |
-| [[jojo-s-bizarre-adventure-heritage-for-the-future-jjba-hftf]] | JoJo | 0 |
+| [[jojo-s-bizarre-adventure-heritage-for-the-future-jjba-hftf]] | JoJo's Bizarre Adventure: Heritage for the Future (JJBA: HFTF) | 0 |
 | [[the-king-of-fighters-maximum-impact]] | The King of Fighters: Maximum Impact | 0 |
 | [[the-king-of-fighters-maximum-impact-2-kof-2006]] | The King of Fighters: Maximum Impact 2 (KOF 2006) | 0 |
-| [[the-king-of-fighters-maximum-impact-regulation-a]] | The King of Fighters: Maximum Impact Regulation  | 0 |
+| [[the-king-of-fighters-maximum-impact-regulation-a]] | The King of Fighters: Maximum Impact Regulation 'A' | 0 |
 | [[psychic-force-2012-psychic-force-2]] | Psychic Force 2012 (Psychic Force 2) | 0 |
 | [[psychic-force]] | Psychic Force | 0 |
 | [[ragnagard-shin-oh-ken]] | Ragnagard (Shin-Oh-Ken) | 0 |
-| [[savage-reign-fu-un-mokushiroku-kakutou-sousei]] | Savage Reign (Fu | 0 |
+| [[savage-reign-fu-un-mokushiroku-kakutou-sousei]] | Savage Reign (Fu'un Mokushiroku: Kakutou Sousei) | 0 |
 | [[soul-calibur]] | Soul Calibur | 0 |
 | [[soul-edge-soul-blade]] | Soul Edge (Soul Blade) | 0 |
 | [[voltage-fighter-gowcaizer-choujin-gakuen-gowcaizer]] | Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer) | 0 |
