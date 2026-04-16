@@ -121,13 +121,13 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[the-king-of-fighters-2001]] | The King of Fighters 2001 | 0 |
 | [[the-king-of-fighters-2002]] | The King of Fighters 2002 | 0 |
 | [[the-king-of-fighters-2003]] | The King of Fighters 2003 | 0 |
-| [[the-king-of-fighters-94]] | The King of Fighters | 0 |
-| [[the-king-of-fighters-95]] | The King of Fighters | 0 |
-| [[the-king-of-fighters-96]] | The King of Fighters | 0 |
-| [[the-king-of-fighters-97]] | The King of Fighters | 0 |
-| [[the-king-of-fighters-98]] | The King of Fighters | 0 |
-| [[the-king-of-fighters-98-ultimate-match]] | The King of Fighters | 0 |
-| [[the-king-of-fighters-99]] | The King of Fighters | 0 |
+| [[the-king-of-fighters-94]] | The King of Fighters  | 0 |
+| [[the-king-of-fighters-95]] | The King of Fighters  | 0 |
+| [[the-king-of-fighters-96]] | The King of Fighters  | 0 |
+| [[the-king-of-fighters-97]] | The King of Fighters  | 0 |
+| [[the-king-of-fighters-98]] | The King of Fighters  | 0 |
+| [[the-king-of-fighters-98-ultimate-match]] | The King of Fighters  | 0 |
+| [[the-king-of-fighters-99]] | The King of Fighters  | 0 |
 | [[the-king-of-fighters-xiii]] | The King of Fighters XIII | 0 |
 | [[the-king-of-fighters-xiv]] | The King of Fighters XIV | 0 |
 | [[the-king-of-fighters-xv]] | The King of Fighters XV | 0 |

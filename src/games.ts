@@ -5269,7 +5269,15 @@ rosterCount: 7,
     platform: "Arcade PlayStation 2",
 rosterCount: 9,
         characters: [
-      { id: 'kenshiro', name: 'Kenshiro' }, { id: 'raoh', name: 'Raoh' }, { id: 'toki', name: 'Toki' }, { id: 'shin', name: 'Shin' }, { id: 'rei', name: 'Rei' }, { id: 'juda', name: 'Juda' }, { id: 'thouther', name: 'Thouther' }, { id: 'mamiya', name: 'Mamiya' }, { id: 'heart', name: 'Heart' }
+      { id: 'kenshiro', name: 'Kenshiro' },
+      { id: 'raoh', name: 'Raoh' },
+      { id: 'toki', name: 'Toki' },
+      { id: 'shin', name: 'Shin' },
+      { id: 'rei', name: 'Rei' },
+      { id: 'juda', name: 'Juda' },
+      { id: 'thouther', name: 'Thouther' },
+      { id: 'mamiya', name: 'Mamiya' },
+      { id: 'heart', name: 'Heart' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -5304,7 +5312,15 @@ rosterCount: 12,
     platform: "Atari Jaguar",
 rosterCount: 9,
         characters: [
-      { id: 'habaki', name: 'Habaki' }, { id: 'senzo', name: 'Senzo' }, { id: 'alaric', name: 'Alaric' }, { id: 'angus', name: 'Angus' }, { id: 'chagi', name: 'Chagi' }, { id: 'danja', name: 'Danja' }, { id: 'pakawa', name: 'Pakawa' }, { id: 'thundra', name: 'Thundra' }, { id: 'lord-gyaku', name: 'Lord Gyaku' }
+      { id: 'habaki', name: 'Habaki' },
+      { id: 'senzo', name: 'Senzo' },
+      { id: 'alaric', name: 'Alaric' },
+      { id: 'angus', name: 'Angus' },
+      { id: 'chagi', name: 'Chagi' },
+      { id: 'danja', name: 'Danja' },
+      { id: 'pakawa', name: 'Pakawa' },
+      { id: 'thundra', name: 'Thundra' },
+      { id: 'lord-gyaku', name: 'Lord Gyaku' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
