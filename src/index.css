@@ -727,62 +727,61 @@ h1, h2, h3, h4, h5, h6 {
 [data-card-theme="mvs"] button[id^="game-card-"],
 [data-card-theme="mvs"] button[id^="char-card-"],
 [data-card-theme="mvs"] div[id^="move-"] {
-  background: #a9cc18 !important; /* MVS Translucent Green/Yellow */
-  border: 2px solid #5a6b0c !important;
+  background: #0f0f0f !important; /* MVS Black Plastic */
+  border: 2px solid #222 !important;
   border-radius: 4px !important;
   box-shadow: 
-    inset 2px 2px 0px rgba(255,255,255,0.4),
-    inset -4px -4px 6px rgba(0,0,0,0.4),
-    0 8px 15px rgba(0,0,0,0.5) !important;
+    inset 0 2px 5px rgba(255,255,255,0.1),
+    inset -2px -4px 6px rgba(0,0,0,0.9),
+    0 8px 15px rgba(0,0,0,0.8) !important;
   position: relative !important;
   backdrop-filter: none !important;
   color: #111 !important;
   overflow: hidden !important;
   transform: translateY(0) scale(1) !important;
+  justify-content: flex-start !important; /* Move content to the top sticker area */
+  padding-top: 15% !important; /* Start inside the sticker */
 }
 
 [data-card-theme="mvs"] div[id^="move-"][data-selected="true"] {
-  background: #e5ff4d !important; /* Brighter neon when selected */
+  background: #1a1a1a !important; /* slightly brighter plastic */
+  border-color: #555 !important;
   box-shadow: 
-    inset 2px 2px 0px rgba(255,255,255,0.6),
-    inset -4px -4px 6px rgba(0,0,0,0.3),
-    0 8px 20px rgba(169, 204, 24, 0.5) !important;
+    inset 0 2px 5px rgba(255,255,255,0.15),
+    inset -2px -4px 6px rgba(0,0,0,0.8),
+    0 8px 20px rgba(0, 0, 0, 0.9) !important;
 }
 
-/* Ribbed grips on the sides */
+/* Ribbed grips heavily on the bottom half */
 [data-card-theme="mvs"] button[id^="game-card-"]::before,
 [data-card-theme="mvs"] button[id^="char-card-"]::before,
 [data-card-theme="mvs"] div[id^="move-"]::before {
   content: '';
   position: absolute;
-  top: 10%;
-  bottom: 10%;
+  top: 55%;
+  bottom: 8%;
   left: 0;
   right: 0;
   background-image: 
-    repeating-linear-gradient(0deg, transparent 0px, transparent 8px, rgba(0,0,0,0.3) 8px, rgba(0,0,0,0.3) 12px),
-    repeating-linear-gradient(0deg, transparent 0px, transparent 8px, rgba(0,0,0,0.3) 8px, rgba(0,0,0,0.3) 12px);
-  background-size: 15px 100%, 15px 100%;
-  background-position: left center, right center;
-  background-repeat: no-repeat, no-repeat;
+    repeating-linear-gradient(180deg, transparent 0px, transparent 6px, rgba(0,0,0,0.8) 6px, rgba(0,0,0,0.8) 12px);
   pointer-events: none;
   z-index: 0;
 }
 
-/* White sticker label */
+/* White sticker label on top half */
 [data-card-theme="mvs"] button[id^="game-card-"]::after,
 [data-card-theme="mvs"] button[id^="char-card-"]::after,
 [data-card-theme="mvs"] div[id^="move-"]::after {
   content: '';
   position: absolute;
-  top: 12%;
-  bottom: 12%;
-  left: 12%;
-  right: 12%;
-  background: #fdfdfc;
-  border: 1px solid #999;
-  border-radius: 4px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  top: 6%;
+  height: 45%;
+  left: 3%;
+  right: 3%;
+  background: linear-gradient(100deg, #fdfdfc, #f5f5f5 40%, #e8e8e8 60%, #fafafa);
+  border: 1px solid rgba(0,0,0,0.5);
+  border-radius: 2px;
+  box-shadow: inset 0 0 10px rgba(255,255,255,0.8), 0 1px 4px rgba(0,0,0,0.8);
   pointer-events: none;
   z-index: 0;
 }
@@ -797,9 +796,14 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [data-card-theme="mvs"] h2 {
-  font-style: italic;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 900 !important;
+  font-style: normal !important;
   text-transform: uppercase;
   letter-spacing: -0.02em;
+  margin: 0 !important;
+  margin-top: 0.5rem !important;
+  font-size: 1.1rem !important; /* Emulate the bold title on the sticker */
 }
 
 [data-card-theme="mvs"] button[id^="game-card-"]:hover,
@@ -807,15 +811,18 @@ h1, h2, h3, h4, h5, h6 {
 [data-card-theme="mvs"] div[id^="move-"]:hover {
   transform: translateY(-4px) scale(1.02) !important;
   box-shadow: 
-    inset 2px 2px 0px rgba(255,255,255,0.4),
-    inset -4px -4px 6px rgba(0,0,0,0.4),
-    0 12px 18px rgba(0,0,0,0.6) !important;
+    inset 0 2px 5px rgba(255,255,255,0.1),
+    inset -2px -4px 6px rgba(0,0,0,0.9),
+    0 12px 18px rgba(0,0,0,0.9) !important;
 }
 
 [data-card-theme="mvs"] .text-muted,
 [data-card-theme="mvs"] .text-tertiary {
-  color: #555 !important;
+  color: #333 !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-size: 0.7rem !important;
 }
+
 [data-card-theme="mvs"] svg { color: #111 !important; }
 [data-card-theme="mvs"] .gradient-overlay { display: none !important; }
 
@@ -933,8 +940,8 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .app-container[data-card-theme="mvs"] {
-  background: radial-gradient(circle at top right, rgba(169, 204, 24, 0.15) 0%, transparent 60%),
-              radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.2) 0%, transparent 50%);
+  background: radial-gradient(circle at top right, rgba(200, 20, 20, 0.15) 0%, transparent 60%),
+              radial-gradient(circle at bottom left, rgba(30, 30, 35, 0.5) 0%, transparent 50%);
 }
 
 .app-container[data-card-theme="aes"] {
