@@ -1,16 +1,22 @@
 {
   "game": "Kakuto Chojin: Back Alley Brutal",
   "character": "Rena",
-  "movesList": {
-    "standing_moves": [
-      {
-        "name": "Capoeira Spin",
-        "input": "X, A, X"
-      },
-      {
-        "name": "Handstand Kick",
-        "input": "4B"
-      }
-    ]
-  }
+  "movesList": [
+    {
+      "id": "generic-neutral",
+      "name": "Neutral Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "generic-special",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    }
+  ]
 }

@@ -6,7 +6,9 @@
       "name": "Coconuts Crush",
       "type": "throw",
       "inputs": [
-        "1+3"
+        "down-back",
+        "+",
+        "down-forward"
       ],
       "id": "coconuts-crush"
     },
@@ -14,7 +16,9 @@
       "name": "Suplex",
       "type": "throw",
       "inputs": [
-        "2+4"
+        "down",
+        "+",
+        "back"
       ],
       "id": "suplex"
     },
@@ -30,7 +34,14 @@
       "name": "DDT",
       "type": "throw",
       "inputs": [
-        "1, 1+1+2"
+        "down-back",
+        ",",
+        " ",
+        "down-back",
+        "+",
+        "down-back",
+        "+",
+        "down"
       ],
       "id": "ddt"
     },
@@ -38,7 +49,17 @@
       "name": "Ali Kick",
       "type": "special",
       "inputs": [
-        "2+3+4, 4, 4"
+        "down",
+        "+",
+        "down-forward",
+        "+",
+        "back",
+        ",",
+        " ",
+        "back",
+        ",",
+        " ",
+        "back"
       ],
       "id": "ali-kick"
     },
@@ -46,7 +67,14 @@
       "name": "Exploder",
       "type": "special",
       "inputs": [
-        "6, 6+3+4"
+        "forward",
+        ",",
+        " ",
+        "forward",
+        "+",
+        "down-forward",
+        "+",
+        "back"
       ],
       "id": "exploder"
     },
@@ -54,7 +82,11 @@
       "name": "Frankensteiner",
       "type": "special",
       "inputs": [
-        "3+3+4"
+        "down-forward",
+        "+",
+        "down-forward",
+        "+",
+        "back"
       ],
       "id": "frankensteiner"
     },

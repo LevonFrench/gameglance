@@ -1,152 +1,187 @@
 {
-    "game": "cotw",
-    "character": "Hotaru Futaba",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Aerial Turn",
-            "type": "special",
-            "inputs": [
-                "j."
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Hanten Tou",
-            "type": "special",
-            "inputs": [
-                "4",
-                "j.",
-                "A"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Koushuu Da",
-            "type": "special",
-            "inputs": [
-                "4",
-                "j.",
-                "2"
-            ]
-        },
-        {
-            "id": "sp_3",
-            "name": "Hakki Shou \u25c6",
-            "type": "special",
-            "inputs": [
-                "236+P"
-            ]
-        },
-        {
-            "id": "sp_4",
-            "name": "Soushou Shin \u2605",
-            "type": "special",
-            "inputs": [
-                "214+P"
-            ]
-        },
-        {
-            "id": "sp_5",
-            "name": "Kobi Kyaku \u25c6",
-            "type": "special",
-            "inputs": [
-                "214+K"
-            ]
-        },
-        {
-            "id": "sp_6",
-            "name": "Tenshin Shou \u2605\u25c6",
-            "type": "special",
-            "inputs": [
-                "623+P"
-            ]
-        },
-        {
-            "id": "sp_7",
-            "name": "Rengeki Shuu",
-            "type": "special",
-            "inputs": [
-                "214+K"
-            ]
-        },
-        {
-            "id": "sp_8",
-            "name": "Shajou Tai",
-            "type": "special",
-            "inputs": [
-                "236+K"
-            ]
-        },
-        {
-            "id": "sup_0",
-            "name": "Soushou Tenrenge",
-            "type": "super",
-            "inputs": [
-                "236 236+A C"
-            ]
-        },
-        {
-            "id": "sup_1",
-            "name": "Tenshou Ranki",
-            "type": "super",
-            "inputs": [
-                "back",
-                "down",
-                "down",
-                "down-forward",
-                "forward",
-                "down",
-                "down-forward",
-                "forward"
-            ]
-        },
-        {
-            "id": "sup_2",
-            "name": "Freeze Fang:Soushou Chihigiri",
-            "type": "super",
-            "inputs": [
-                "236 236 +"
-            ]
-        },
-        {
-            "id": "um_0",
-            "name": "Shoushou Da",
-            "type": "unique",
-            "inputs": [
-                "2",
-                "C"
-            ]
-        },
-        {
-            "id": "um_1",
-            "name": "Rakuei Kyaku",
-            "type": "unique",
-            "inputs": [
-                "2",
-                "C"
-            ]
-        },
-        {
-            "id": "um_2",
-            "name": "Command Combo 1",
-            "type": "unique",
-            "inputs": [
-                "down",
-                "down",
-                "C"
-            ]
-        },
-        {
-            "id": "um_3",
-            "name": "Command Combo 2",
-            "type": "unique",
-            "inputs": [
-                "4",
-                "j.",
-                "A"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "cotw",
+  "character": "Hotaru Futaba",
+  "movesList": [
+    {
+      "id": "sp_0",
+      "name": "Aerial Turn",
+      "type": "special",
+      "inputs": [
+        "j."
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Hanten Tou",
+      "type": "special",
+      "inputs": [
+        "back",
+        "j.",
+        "A"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Koushuu Da",
+      "type": "special",
+      "inputs": [
+        "back",
+        "j.",
+        "down"
+      ]
+    },
+    {
+      "id": "sp_3",
+      "name": "Hakki Shou \u25c6",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_4",
+      "name": "Soushou Shin \u2605",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_5",
+      "name": "Kobi Kyaku \u25c6",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+K"
+      ]
+    },
+    {
+      "id": "sp_6",
+      "name": "Tenshin Shou \u2605\u25c6",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_7",
+      "name": "Rengeki Shuu",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+K"
+      ]
+    },
+    {
+      "id": "sp_8",
+      "name": "Shajou Tai",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "+K"
+      ]
+    },
+    {
+      "id": "sup_0",
+      "name": "Soushou Tenrenge",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        "+A",
+        " ",
+        "C"
+      ]
+    },
+    {
+      "id": "sup_1",
+      "name": "Tenshou Ranki",
+      "type": "super",
+      "inputs": [
+        "back",
+        "down",
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward"
+      ]
+    },
+    {
+      "id": "sup_2",
+      "name": "Freeze Fang:Soushou Chihigiri",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "+"
+      ]
+    },
+    {
+      "id": "um_0",
+      "name": "Shoushou Da",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "C"
+      ]
+    },
+    {
+      "id": "um_1",
+      "name": "Rakuei Kyaku",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "C"
+      ]
+    },
+    {
+      "id": "um_2",
+      "name": "Command Combo 1",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "down",
+        "C"
+      ]
+    },
+    {
+      "id": "um_3",
+      "name": "Command Combo 2",
+      "type": "unique",
+      "inputs": [
+        "back",
+        "j.",
+        "A"
+      ]
+    }
+  ],
+  "combosList": []
 }

@@ -1,103 +1,144 @@
 {
-    "game": "Fatal Fury: City Of The Wolves",
-    "character": "Kain R. Heinlein",
-    "movesList": [
-        {
-            "id": "move_1_schwarzersto",
-            "name": "Schwarzer Sto\u00df",
-            "type": "unique",
-            "inputs": [
-                "C+D"
-            ]
-        },
-        {
-            "id": "move_2_schwarzerstoluft",
-            "name": "Schwarzer Sto\u00df - Luft",
-            "type": "unique",
-            "inputs": [
-                "C+D"
-            ]
-        },
-        {
-            "id": "move_3_commandcombo1",
-            "name": "Command Combo 1",
-            "type": "unique",
-            "inputs": [
-                "2+A B 2+C"
-            ]
-        },
-        {
-            "id": "move_4_commandcombo2",
-            "name": "Command Combo 2",
-            "type": "unique",
-            "inputs": [
-                "C+C"
-            ]
-        },
-        {
-            "id": "move_5_commandcombo3",
-            "name": "Command Combo 3",
-            "type": "unique",
-            "inputs": [
-                "j. A B"
-            ]
-        },
-        {
-            "id": "move_6_schwarzeflamme",
-            "name": "Schwarze Flamme \u25c6",
-            "type": "special",
-            "inputs": [
-                "236+P"
-            ]
-        },
-        {
-            "id": "move_7_schwarzerpanzer",
-            "name": "Schwarzer Panzer \u2605",
-            "type": "special",
-            "inputs": [
-                "236+K"
-            ]
-        },
-        {
-            "id": "move_8_schwarzelanze",
-            "name": "Schwarze Lanze \u2605\u25c6",
-            "type": "special",
-            "inputs": [
-                "+ K"
-            ]
-        },
-        {
-            "id": "move_9_schwarzesrondo",
-            "name": "Schwarzes Rondo",
-            "type": "special",
-            "inputs": [
-                "214+P"
-            ]
-        },
-        {
-            "id": "move_10_himmlischeratemneo",
-            "name": "HimmlischerAtem Neo",
-            "type": "super",
-            "inputs": [
-                "236 236+A C"
-            ]
-        },
-        {
-            "id": "move_11_himmlischeseele",
-            "name": "Himmlische Seele",
-            "type": "super",
-            "inputs": [
-                "236 236+B D"
-            ]
-        },
-        {
-            "id": "move_12_himmlischeredelstein",
-            "name": "Himmlischer Edelstein",
-            "type": "super",
-            "inputs": [
-                "236 236 +"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Fatal Fury: City Of The Wolves",
+  "character": "Kain R. Heinlein",
+  "movesList": [
+    {
+      "id": "move_1_schwarzersto",
+      "name": "Schwarzer Sto\u00df",
+      "type": "unique",
+      "inputs": [
+        "C+D"
+      ]
+    },
+    {
+      "id": "move_2_schwarzerstoluft",
+      "name": "Schwarzer Sto\u00df - Luft",
+      "type": "unique",
+      "inputs": [
+        "C+D"
+      ]
+    },
+    {
+      "id": "move_3_commandcombo1",
+      "name": "Command Combo 1",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "+A",
+        " ",
+        "B",
+        " ",
+        "down",
+        "+C"
+      ]
+    },
+    {
+      "id": "move_4_commandcombo2",
+      "name": "Command Combo 2",
+      "type": "unique",
+      "inputs": [
+        "C+C"
+      ]
+    },
+    {
+      "id": "move_5_commandcombo3",
+      "name": "Command Combo 3",
+      "type": "unique",
+      "inputs": [
+        "j. A B"
+      ]
+    },
+    {
+      "id": "move_6_schwarzeflamme",
+      "name": "Schwarze Flamme \u25c6",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "+P"
+      ]
+    },
+    {
+      "id": "move_7_schwarzerpanzer",
+      "name": "Schwarzer Panzer \u2605",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "+K"
+      ]
+    },
+    {
+      "id": "move_8_schwarzelanze",
+      "name": "Schwarze Lanze \u2605\u25c6",
+      "type": "special",
+      "inputs": [
+        "+ K"
+      ]
+    },
+    {
+      "id": "move_9_schwarzesrondo",
+      "name": "Schwarzes Rondo",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+P"
+      ]
+    },
+    {
+      "id": "move_10_himmlischeratemneo",
+      "name": "HimmlischerAtem Neo",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        "+A",
+        " ",
+        "C"
+      ]
+    },
+    {
+      "id": "move_11_himmlischeseele",
+      "name": "Himmlische Seele",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        "+B",
+        " ",
+        "D"
+      ]
+    },
+    {
+      "id": "move_12_himmlischeredelstein",
+      "name": "Himmlischer Edelstein",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "+"
+      ]
+    }
+  ],
+  "combosList": []
 }

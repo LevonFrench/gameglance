@@ -1,20 +1,22 @@
 {
   "game": "Way of the Warrior",
   "character": "Malcolm Fox",
-  "movesList": {
-    "special_moves": [
-      {
-        "name": "Uppercut",
-        "input": "1LS"
-      },
-      {
-        "name": "Knife Attack",
-        "input": "AC"
-      },
-      {
-        "name": "Forward Leaping Kick",
-        "input": "6RS"
-      }
-    ]
-  }
+  "movesList": [
+    {
+      "id": "generic-neutral",
+      "name": "Neutral Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "generic-special",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    }
+  ]
 }

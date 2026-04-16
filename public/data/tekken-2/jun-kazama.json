@@ -6,7 +6,9 @@
       "name": "Arm Bar",
       "type": "throw",
       "inputs": [
-        "1+3"
+        "down-back",
+        "+",
+        "down-forward"
       ],
       "id": "arm-bar"
     },
@@ -14,7 +16,18 @@
       "name": "White Heron",
       "type": "special",
       "inputs": [
-        "1+4, 2, 4, 3"
+        "down-back",
+        "+",
+        "back",
+        ",",
+        " ",
+        "down",
+        ",",
+        " ",
+        "back",
+        ",",
+        " ",
+        "down-forward"
       ],
       "id": "white-heron"
     },
@@ -22,7 +35,12 @@
       "name": "Can-can Kicks",
       "type": "special",
       "inputs": [
-        "3+3, 4"
+        "down-forward",
+        "+",
+        "down-forward",
+        ",",
+        " ",
+        "back"
       ],
       "id": "can-can-kicks"
     },
@@ -30,7 +48,12 @@
       "name": "Charging Strike",
       "type": "special",
       "inputs": [
-        "6, 6+2"
+        "forward",
+        ",",
+        " ",
+        "forward",
+        "+",
+        "down"
       ],
       "id": "charging-strike"
     }

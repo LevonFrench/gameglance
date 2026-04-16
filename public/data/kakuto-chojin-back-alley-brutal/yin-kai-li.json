@@ -1,16 +1,22 @@
 {
   "game": "Kakuto Chojin: Back Alley Brutal",
   "character": "Yin Kai Li",
-  "movesList": {
-    "standing_moves": [
-      {
-        "name": "Palm Strike",
-        "input": "6Y"
-      },
-      {
-        "name": "Triple Kick",
-        "input": "X, X, X"
-      }
-    ]
-  }
+  "movesList": [
+    {
+      "id": "generic-neutral",
+      "name": "Neutral Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "generic-special",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    }
+  ]
 }

@@ -6,7 +6,8 @@
       "name": "Gamma Charge",
       "type": "normal",
       "inputs": [
-        "6H"
+        "forward",
+        "H"
       ],
       "id": "gamma-charge"
     },
@@ -14,7 +15,8 @@
       "name": "Seismic Hammer",
       "type": "normal",
       "inputs": [
-        "3H"
+        "down-forward",
+        "H"
       ],
       "id": "seismic-hammer"
     },
@@ -22,7 +24,14 @@
       "name": "Gamma Wave",
       "type": "special",
       "inputs": [
-        "236+L/M/H"
+        "down",
+        "down-forward",
+        "forward",
+        "+L",
+        "/",
+        "M",
+        "/",
+        "H"
       ],
       "id": "gamma-wave"
     },
@@ -30,7 +39,16 @@
       "name": "Gamma Tornado",
       "type": "special",
       "inputs": [
-        "63214+L/M/H"
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "+L",
+        "/",
+        "M",
+        "/",
+        "H"
       ],
       "id": "gamma-tornado"
     },
@@ -38,7 +56,14 @@
       "name": "Gamma Impact",
       "type": "special",
       "inputs": [
-        "623+L/M/H"
+        "forward",
+        "down",
+        "down-forward",
+        "+L",
+        "/",
+        "M",
+        "/",
+        "H"
       ],
       "id": "gamma-impact"
     },
@@ -46,7 +71,9 @@
       "name": "Hulk Armor",
       "type": "special",
       "inputs": [
-        "22+S"
+        "down",
+        "down",
+        "+S"
       ],
       "id": "hulk-armor"
     },
@@ -54,7 +81,12 @@
       "name": "Gamma Tsunami",
       "type": "super",
       "inputs": [
-        "236+LM/HS"
+        "down",
+        "down-forward",
+        "forward",
+        "+LM",
+        "/",
+        "HS"
       ],
       "id": "gamma-tsunami"
     },
@@ -62,7 +94,12 @@
       "name": "Gamma Quake",
       "type": "super",
       "inputs": [
-        "214+LM/HS"
+        "down",
+        "down-back",
+        "back",
+        "+LM",
+        "/",
+        "HS"
       ],
       "id": "gamma-quake"
     },
@@ -70,7 +107,10 @@
       "name": "World Breaker",
       "type": "super",
       "inputs": [
-        "236+S+H"
+        "down",
+        "down-forward",
+        "forward",
+        "+S+H"
       ],
       "id": "world-breaker"
     }

@@ -1,53 +1,25 @@
 {
-    "name": "Hugo",
-    "special_moves": [
-        {
-            "name": "Giant Palm Bomber",
-            "input": "214 + P"
-        },
-        {
-            "name": "Moonsault Press",
-            "input": "360 + P"
-        },
-        {
-            "name": "Shootdown Backbreaker",
-            "input": "623 + K"
-        },
-        {
-            "name": "Meat Squasher",
-            "input": "360 + K"
-        }
-    ],
-    "ex_moves": [
-        {
-            "name": "EX Giant Palm Bomber",
-            "input": "214 + PP"
-        },
-        {
-            "name": "EX Moonsault Press",
-            "input": "360 + PP"
-        },
-        {
-            "name": "EX Shootdown Backbreaker",
-            "input": "623 + KK"
-        },
-        {
-            "name": "EX Meat Squasher",
-            "input": "360 + KK"
-        }
-    ],
-    "super_arts": [
-        {
-            "name": "Gigas Breaker",
-            "input": "720 + P"
-        },
-        {
-            "name": "Megaton Press",
-            "input": "236236 + K"
-        },
-        {
-            "name": "Hammer Mountain",
-            "input": "236236 + P"
-        }
-    ]
+  "game": "Street Fighter III: 2nd Impact - Giant Attack",
+  "character": "Hugo",
+  "movesList": [
+    {
+      "id": "basic-attack",
+      "name": "Basic Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "special-attack",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    }
+  ]
 }

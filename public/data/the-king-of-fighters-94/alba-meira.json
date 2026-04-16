@@ -6,7 +6,8 @@
       "name": "Hishou-Ken",
       "type": "normal",
       "inputs": [
-        "6+A"
+        "forward",
+        "+A"
       ],
       "id": "hishou-ken"
     },
@@ -14,7 +15,8 @@
       "name": "Sou-Shou",
       "type": "normal",
       "inputs": [
-        "6+C"
+        "forward",
+        "+C"
       ],
       "id": "sou-shou"
     },
@@ -30,7 +32,12 @@
       "name": "Fuuhou Ken",
       "type": "special",
       "inputs": [
-        "623+A/C"
+        "forward",
+        "down",
+        "down-forward",
+        "+A",
+        "/",
+        "C"
       ],
       "id": "fuuhou-ken"
     },
@@ -38,7 +45,12 @@
       "name": "Raihou Ken",
       "type": "special",
       "inputs": [
-        "214+A/C"
+        "down",
+        "down-back",
+        "back",
+        "+A",
+        "/",
+        "C"
       ],
       "id": "raihou-ken"
     },
@@ -46,7 +58,14 @@
       "name": "Kakuryuu Joudan",
       "type": "special",
       "inputs": [
-        "421+B (Sabaki)"
+        "back",
+        "down",
+        "down-back",
+        "+B",
+        " ",
+        "(",
+        "Sabaki",
+        ")"
       ],
       "id": "kakuryuu-joudan"
     },
@@ -54,7 +73,14 @@
       "name": "Kakuryuu Gedan",
       "type": "special",
       "inputs": [
-        "421+D (Sabaki)"
+        "back",
+        "down",
+        "down-back",
+        "+D",
+        " ",
+        "(",
+        "Sabaki",
+        ")"
       ],
       "id": "kakuryuu-gedan"
     },

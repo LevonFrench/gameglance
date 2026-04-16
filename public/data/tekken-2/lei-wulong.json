@@ -6,7 +6,9 @@
       "name": "Neck Breaker",
       "type": "throw",
       "inputs": [
-        "1+3"
+        "down-back",
+        "+",
+        "down-forward"
       ],
       "id": "neck-breaker"
     },
@@ -14,7 +16,10 @@
       "name": "Rushing Step",
       "type": "Stance",
       "inputs": [
-        "6, 5"
+        "forward",
+        ",",
+        " ",
+        "neutral"
       ],
       "id": "rushing-step"
     },
@@ -22,7 +27,16 @@
       "name": "Rave Sweep",
       "type": "special",
       "inputs": [
-        "6, 5, 4, 1"
+        "forward",
+        ",",
+        " ",
+        "neutral",
+        ",",
+        " ",
+        "back",
+        ",",
+        " ",
+        "down-back"
       ],
       "id": "rave-sweep"
     },
@@ -30,7 +44,12 @@
       "name": "Crescent Kick",
       "type": "special",
       "inputs": [
-        "6, 6+3"
+        "forward",
+        ",",
+        " ",
+        "forward",
+        "+",
+        "down-forward"
       ],
       "id": "crescent-kick"
     }

@@ -6,7 +6,8 @@
       "name": "Shield Bash",
       "type": "normal",
       "inputs": [
-        "6M"
+        "forward",
+        "M"
       ],
       "id": "shield-bash"
     },
@@ -14,7 +15,8 @@
       "name": "Cartwheel",
       "type": "normal",
       "inputs": [
-        "3H"
+        "down-forward",
+        "H"
       ],
       "id": "cartwheel"
     },
@@ -30,7 +32,14 @@
       "name": "Stars & Stripes",
       "type": "special",
       "inputs": [
-        "623+L/M/H"
+        "forward",
+        "down",
+        "down-forward",
+        "+L",
+        "/",
+        "M",
+        "/",
+        "H"
       ],
       "id": "stars-&-stripes"
     },
@@ -38,7 +47,14 @@
       "name": "Charging Star",
       "type": "special",
       "inputs": [
-        "214+L/M/H"
+        "down",
+        "down-back",
+        "back",
+        "+L",
+        "/",
+        "M",
+        "/",
+        "H"
       ],
       "id": "charging-star"
     },
@@ -46,7 +62,13 @@
       "name": "Shield Strike",
       "type": "special",
       "inputs": [
-        "22+L/M/H"
+        "down",
+        "down",
+        "+L",
+        "/",
+        "M",
+        "/",
+        "H"
       ],
       "id": "shield-strike"
     },
@@ -54,7 +76,12 @@
       "name": "Final Justice",
       "type": "super",
       "inputs": [
-        "236+LM/HS"
+        "down",
+        "down-forward",
+        "forward",
+        "+LM",
+        "/",
+        "HS"
       ],
       "id": "final-justice"
     },
@@ -62,7 +89,12 @@
       "name": "Hyper Charging Star",
       "type": "super",
       "inputs": [
-        "214+LM/HS"
+        "down",
+        "down-back",
+        "back",
+        "+LM",
+        "/",
+        "HS"
       ],
       "id": "hyper-charging-star"
     },
@@ -70,7 +102,10 @@
       "name": "Liberty Strike",
       "type": "super",
       "inputs": [
-        "236+S+H"
+        "down",
+        "down-forward",
+        "forward",
+        "+S+H"
       ],
       "id": "liberty-strike"
     }

@@ -6,7 +6,10 @@
       "name": "Bluff Shuffle",
       "type": "special",
       "inputs": [
-        "236+LP+HP"
+        "down",
+        "down-forward",
+        "forward",
+        "+LP+HP"
       ],
       "id": "bluff-shuffle"
     },
@@ -14,7 +17,10 @@
       "name": "Face or Tail",
       "type": "special",
       "inputs": [
-        "623+LP+HP"
+        "forward",
+        "down",
+        "down-forward",
+        "+LP+HP"
       ],
       "id": "face-or-tail"
     },
@@ -30,7 +36,10 @@
       "name": "Three Characters",
       "type": "special",
       "inputs": [
-        "214+LP"
+        "down",
+        "down-back",
+        "back",
+        "+LP"
       ],
       "id": "three-characters"
     },
@@ -38,7 +47,11 @@
       "name": "Stormy Poker",
       "type": "Stress Shot",
       "inputs": [
-        "22+LK/HK"
+        "down",
+        "down",
+        "+LK",
+        "/",
+        "HK"
       ],
       "id": "stormy-poker"
     }

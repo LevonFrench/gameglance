@@ -33,42 +33,79 @@
     {
       "name": "Beat Knuckle",
       "input": "236 + P",
-      "inputs": "236 + P",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "+",
+        " ",
+        "P"
+      ],
       "type": "special",
       "id": "beat-knuckle"
     },
     {
       "name": "Somersault Kick",
       "input": "7 + K",
-      "inputs": "7 + K",
+      "inputs": [
+        "up-back",
+        " ",
+        "+",
+        " ",
+        "K"
+      ],
       "type": "special",
       "id": "somersault-kick"
     },
     {
       "name": "Side Hook Kick",
       "input": "6 + K",
-      "inputs": "6 + K",
+      "inputs": [
+        "forward",
+        " ",
+        "+",
+        " ",
+        "K"
+      ],
       "type": "special",
       "id": "side-hook-kick"
     },
     {
       "name": "Spinning Back Knuckle",
       "input": "4 + P",
-      "inputs": "4 + P",
+      "inputs": [
+        "back",
+        " ",
+        "+",
+        " ",
+        "P"
+      ],
       "type": "special",
       "id": "spinning-back-knuckle"
     },
     {
       "name": "Low Spin Kick",
       "input": "2 + K+G",
-      "inputs": "2 + K+G",
+      "inputs": [
+        "down",
+        " ",
+        "+",
+        " ",
+        "K",
+        "+",
+        "G"
+      ],
       "type": "special",
       "id": "low-spin-kick"
     },
     {
       "name": "Crouch Dash",
       "input": "33",
-      "inputs": "33",
+      "inputs": [
+        "down-forward",
+        "down-forward"
+      ],
       "type": "special",
       "id": "crouch-dash"
     }

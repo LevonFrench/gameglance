@@ -1,164 +1,217 @@
 {
-    "game": "cotw",
-    "character": "Hokutomaru",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Sliding",
-            "type": "special",
-            "inputs": [
-                "4"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Kuuten Geri",
-            "type": "special",
-            "inputs": [
-                "2"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Nomen Zokuri",
-            "type": "special",
-            "inputs": [
-                "4",
-                "A"
-            ]
-        },
-        {
-            "id": "sp_3",
-            "name": "Nidan Jump",
-            "type": "special",
-            "inputs": [
-                "j. 8"
-            ]
-        },
-        {
-            "id": "sp_4",
-            "name": "Shuriken \u25c6",
-            "type": "special",
-            "inputs": [
-                "214+P"
-            ]
-        },
-        {
-            "id": "sp_5",
-            "name": "Naname Shuriken",
-            "type": "special",
-            "inputs": [
-                "214+K"
-            ]
-        },
-        {
-            "id": "sp_6",
-            "name": "Air Shuriken \u25c6",
-            "type": "special",
-            "inputs": [
-                "j. 214+P"
-            ]
-        },
-        {
-            "id": "sp_7",
-            "name": "Air Naname Shuriken",
-            "type": "special",
-            "inputs": [
-                "j. 214+K"
-            ]
-        },
-        {
-            "id": "sp_8",
-            "name": "Kuuha Dan \u2605",
-            "type": "special",
-            "inputs": [
-                "236+2 +"
-            ]
-        },
-        {
-            "id": "sp_9",
-            "name": "Zan'ei Ken",
-            "type": "special",
-            "inputs": [
-                "236+P"
-            ]
-        },
-        {
-            "id": "sp_10",
-            "name": "Karakusa Wari",
-            "type": "special",
-            "inputs": [
-                "623+K"
-            ]
-        },
-        {
-            "id": "sp_11",
-            "name": "Rakka Zan: Kai",
-            "type": "special",
-            "inputs": [
-                "2 2+P"
-            ]
-        },
-        {
-            "id": "sup_0",
-            "name": "Zetsu: Hishou Ken",
-            "type": "super",
-            "inputs": [
-                "236 236+A C"
-            ]
-        },
-        {
-            "id": "sup_1",
-            "name": "Ougi: Chou HissatsuTatsumaki",
-            "type": "super",
-            "inputs": [
-                "back",
-                "down",
-                "down",
-                "down-forward",
-                "forward",
-                "down",
-                "down-forward",
-                "forward"
-            ]
-        },
-        {
-            "id": "sup_2",
-            "name": "Hiougi: Shiranui Ryu",
-            "type": "super",
-            "inputs": [
-                "236 236 +"
-            ]
-        },
-        {
-            "id": "um_0",
-            "name": "Ninpo Bakuen Punch",
-            "type": "unique",
-            "inputs": [
-                "2",
-                "C"
-            ]
-        },
-        {
-            "id": "um_1",
-            "name": "Ninpo Bakuen Kick",
-            "type": "unique",
-            "inputs": [
-                "2",
-                "C"
-            ]
-        },
-        {
-            "id": "um_2",
-            "name": "CommandCombo",
-            "type": "unique",
-            "inputs": [
-                "down",
-                "down",
-                "C",
-                "C"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "cotw",
+  "character": "Hokutomaru",
+  "movesList": [
+    {
+      "id": "sp_0",
+      "name": "Sliding",
+      "type": "special",
+      "inputs": [
+        "back"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Kuuten Geri",
+      "type": "special",
+      "inputs": [
+        "down"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Nomen Zokuri",
+      "type": "special",
+      "inputs": [
+        "back",
+        "A"
+      ]
+    },
+    {
+      "id": "sp_3",
+      "name": "Nidan Jump",
+      "type": "special",
+      "inputs": [
+        "j",
+        ".",
+        " ",
+        "up"
+      ]
+    },
+    {
+      "id": "sp_4",
+      "name": "Shuriken \u25c6",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_5",
+      "name": "Naname Shuriken",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+K"
+      ]
+    },
+    {
+      "id": "sp_6",
+      "name": "Air Shuriken \u25c6",
+      "type": "special",
+      "inputs": [
+        "j",
+        ".",
+        " ",
+        "down",
+        "down-back",
+        "back",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_7",
+      "name": "Air Naname Shuriken",
+      "type": "special",
+      "inputs": [
+        "j",
+        ".",
+        " ",
+        "down",
+        "down-back",
+        "back",
+        "+K"
+      ]
+    },
+    {
+      "id": "sp_8",
+      "name": "Kuuha Dan \u2605",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "+",
+        "down",
+        " ",
+        "+"
+      ]
+    },
+    {
+      "id": "sp_9",
+      "name": "Zan'ei Ken",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_10",
+      "name": "Karakusa Wari",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "+K"
+      ]
+    },
+    {
+      "id": "sp_11",
+      "name": "Rakka Zan: Kai",
+      "type": "special",
+      "inputs": [
+        "down",
+        " ",
+        "down",
+        "+P"
+      ]
+    },
+    {
+      "id": "sup_0",
+      "name": "Zetsu: Hishou Ken",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        "+A",
+        " ",
+        "C"
+      ]
+    },
+    {
+      "id": "sup_1",
+      "name": "Ougi: Chou HissatsuTatsumaki",
+      "type": "super",
+      "inputs": [
+        "back",
+        "down",
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward"
+      ]
+    },
+    {
+      "id": "sup_2",
+      "name": "Hiougi: Shiranui Ryu",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "+"
+      ]
+    },
+    {
+      "id": "um_0",
+      "name": "Ninpo Bakuen Punch",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "C"
+      ]
+    },
+    {
+      "id": "um_1",
+      "name": "Ninpo Bakuen Kick",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "C"
+      ]
+    },
+    {
+      "id": "um_2",
+      "name": "CommandCombo",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "down",
+        "C",
+        "C"
+      ]
+    }
+  ],
+  "combosList": []
 }

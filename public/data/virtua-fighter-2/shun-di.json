@@ -7,7 +7,8 @@
       "name": "Chouwan Hakkyuu Sou",
       "type": "special",
       "inputs": [
-        "46",
+        "back",
+        "forward",
         "P"
       ]
     },
@@ -16,7 +17,8 @@
       "name": "Tenshin Souka",
       "type": "special",
       "inputs": [
-        "22",
+        "down",
+        "down",
         "P"
       ]
     },
@@ -25,7 +27,9 @@
       "name": "Oshu Haida (Drinking)",
       "type": "special",
       "inputs": [
-        "214",
+        "down",
+        "down-back",
+        "back",
         "P"
       ]
     },
@@ -41,63 +45,124 @@
     {
       "name": "Chuuken",
       "input": "P",
-      "inputs": "P",
+      "inputs": [
+        "P"
+      ],
       "type": "special",
       "id": "chuuken"
     },
     {
       "name": "Souchuuken",
       "input": "2 + P",
-      "inputs": "2 + P",
+      "inputs": [
+        "down",
+        " ",
+        "+",
+        " ",
+        "P"
+      ],
       "type": "special",
       "id": "souchuuken"
     },
     {
       "name": "Koushu",
       "input": "6 + P",
-      "inputs": "6 + P",
+      "inputs": [
+        "forward",
+        " ",
+        "+",
+        " ",
+        "P"
+      ],
       "type": "special",
       "id": "koushu"
     },
     {
       "name": "Zensoutai",
       "input": "2 + K+G",
-      "inputs": "2 + K+G",
+      "inputs": [
+        "down",
+        " ",
+        "+",
+        " ",
+        "K",
+        "+",
+        "G"
+      ],
       "type": "special",
       "id": "zensoutai"
     },
     {
       "name": "Drink",
       "input": "2 + P+K+G",
-      "inputs": "2 + P+K+G",
+      "inputs": [
+        "down",
+        " ",
+        "+",
+        " ",
+        "P",
+        "+",
+        "K",
+        "+",
+        "G"
+      ],
       "type": "special",
       "id": "drink"
     },
     {
       "name": "Drunken Fist",
       "input": "P, P, P",
-      "inputs": "P, P, P",
+      "inputs": [
+        "P",
+        ",",
+        " ",
+        "P",
+        ",",
+        " ",
+        "P"
+      ],
       "type": "special",
       "id": "drunken-fist"
     },
     {
       "name": "Rolling Attack",
       "input": "66 + P",
-      "inputs": "66 + P",
+      "inputs": [
+        "forward",
+        "forward",
+        " ",
+        "+",
+        " ",
+        "P"
+      ],
       "type": "special",
       "id": "rolling-attack"
     },
     {
       "name": "Lay Down",
       "input": "2 + P+K",
-      "inputs": "2 + P+K",
+      "inputs": [
+        "down",
+        " ",
+        "+",
+        " ",
+        "P",
+        "+",
+        "K"
+      ],
       "type": "special",
       "id": "lay-down"
     },
     {
       "name": "Cartwheel Kick",
       "input": "6 + K",
-      "inputs": "6 + K",
+      "inputs": [
+        "forward",
+        " ",
+        "+",
+        " ",
+        "K"
+      ],
       "type": "special",
       "id": "cartwheel-kick"
     }

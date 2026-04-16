@@ -6,7 +6,12 @@
       "name": "Hurray Magic",
       "type": "special",
       "inputs": [
-        "623+LP/HP"
+        "forward",
+        "down",
+        "down-forward",
+        "+LP",
+        "/",
+        "HP"
       ],
       "id": "hurray-magic"
     },
@@ -14,7 +19,12 @@
       "name": "Rose Flash",
       "type": "special",
       "inputs": [
-        "236+LP/HP"
+        "down",
+        "down-forward",
+        "forward",
+        "+LP",
+        "/",
+        "HP"
       ],
       "id": "rose-flash"
     },
@@ -22,7 +32,12 @@
       "name": "Damian Body Attack",
       "type": "special",
       "inputs": [
-        "236+LK/HK"
+        "down",
+        "down-forward",
+        "forward",
+        "+LK",
+        "/",
+        "HK"
       ],
       "id": "damian-body-attack"
     },
@@ -30,7 +45,15 @@
       "name": "Poison Zone",
       "type": "special",
       "inputs": [
-        "214+LP (x3)"
+        "down",
+        "down-back",
+        "back",
+        "+LP",
+        " ",
+        "(",
+        "x",
+        "down-forward",
+        ")"
       ],
       "id": "poison-zone"
     },
@@ -38,7 +61,11 @@
       "name": "Pinch Crusher",
       "type": "Stress Shot",
       "inputs": [
-        "22+LP/HP"
+        "down",
+        "down",
+        "+LP",
+        "/",
+        "HP"
       ],
       "id": "pinch-crusher"
     }

@@ -22,7 +22,10 @@
       "name": "Moko Mouretsu Hasaidan",
       "type": "special",
       "inputs": [
-        "236+A"
+        "down",
+        "down-forward",
+        "forward",
+        "+A"
       ],
       "id": "moko-mouretsu-hasaidan"
     },
@@ -30,7 +33,10 @@
       "name": "Tatsumaki Geki",
       "type": "special",
       "inputs": [
-        "623+A"
+        "forward",
+        "down",
+        "down-forward",
+        "+A"
       ],
       "id": "tatsumaki-geki"
     },
@@ -38,7 +44,10 @@
       "name": "Kidan Heki",
       "type": "special",
       "inputs": [
-        "214+A"
+        "down",
+        "down-back",
+        "back",
+        "+A"
       ],
       "id": "kidan-heki"
     },
@@ -46,7 +55,16 @@
       "name": "Mouko Rengeki Kenkyaku",
       "type": "special",
       "inputs": [
-        "63214+A (Close)"
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "+A",
+        " ",
+        "(",
+        "Close",
+        ")"
       ],
       "id": "mouko-rengeki-kenkyaku"
     },
@@ -54,7 +72,16 @@
       "name": "Raigeki Dan",
       "type": "special",
       "inputs": [
-        "63214+B (Close)"
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "+B",
+        " ",
+        "(",
+        "Close",
+        ")"
       ],
       "id": "raigeki-dan"
     },
@@ -62,7 +89,14 @@
       "name": "Mouko Temjin Ranbu",
       "type": "super",
       "inputs": [
-        "2363214+B"
+        "down",
+        "down-forward",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "+B"
       ],
       "id": "mouko-temjin-ranbu"
     }

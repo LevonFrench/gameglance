@@ -1,54 +1,62 @@
 {
-    "game": "Mortal Kombat 2",
-    "character": "Sub-Zero",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Ice Freeze",
-            "type": "special",
-            "inputs": [
-                "236",
-                "LP"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Slide",
-            "type": "special",
-            "inputs": [
-                "4",
-                "LP+BL+LK"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Ground Ice",
-            "type": "special",
-            "inputs": [
-                "214",
-                "LK"
-            ]
-        },
-        {
-            "id": "fin_0",
-            "name": "Deep Freeze",
-            "type": "unique",
-            "inputs": [
-                "662",
-                "HK (Close), then 6266",
-                "HP"
-            ]
-        },
-        {
-            "id": "fin_1",
-            "name": "Ice Shatter",
-            "type": "unique",
-            "inputs": [
-                "662",
-                "HK (Close), then 6266",
-                "HK"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Mortal Kombat 2",
+  "character": "Sub-Zero",
+  "movesList": [
+    {
+      "id": "sp_0",
+      "name": "Ice Freeze",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "LP"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Slide",
+      "type": "special",
+      "inputs": [
+        "back",
+        "LP+BL+LK"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Ground Ice",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "LK"
+      ]
+    },
+    {
+      "id": "fin_0",
+      "name": "Deep Freeze",
+      "type": "unique",
+      "inputs": [
+        "forward",
+        "forward",
+        "down",
+        "HK (Close), then 6266",
+        "HP"
+      ]
+    },
+    {
+      "id": "fin_1",
+      "name": "Ice Shatter",
+      "type": "unique",
+      "inputs": [
+        "forward",
+        "forward",
+        "down",
+        "HK (Close), then 6266",
+        "HK"
+      ]
+    }
+  ],
+  "combosList": []
 }

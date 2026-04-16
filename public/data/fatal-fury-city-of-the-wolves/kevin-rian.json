@@ -1,146 +1,184 @@
 {
-    "game": "cotw",
-    "character": "Kevin Rian",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Poli-Kick",
-            "type": "special",
-            "inputs": [
-                "4",
-                "6"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Creeper",
-            "type": "special",
-            "inputs": [
-                "2 2+K"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Punch",
-            "type": "special",
-            "inputs": [
-                "C"
-            ]
-        },
-        {
-            "id": "sp_3",
-            "name": "Kick",
-            "type": "special",
-            "inputs": [
-                "2"
-            ]
-        },
-        {
-            "id": "sp_4",
-            "name": "Rise",
-            "type": "special",
-            "inputs": [
-                "4",
-                "A"
-            ]
-        },
-        {
-            "id": "sp_5",
-            "name": "Avoid Mine",
-            "type": "special",
-            "inputs": [
-                "214+K"
-            ]
-        },
-        {
-            "id": "sp_6",
-            "name": "Hell Rotor \u2605",
-            "type": "special",
-            "inputs": [
-                "214+P"
-            ]
-        },
-        {
-            "id": "sp_7",
-            "name": "Hell Snipe \u25c6",
-            "type": "special",
-            "inputs": [
-                "236+P"
-            ]
-        },
-        {
-            "id": "sp_8",
-            "name": "Hell Trap \u2605",
-            "type": "special",
-            "inputs": [
-                "236+K"
-            ]
-        },
-        {
-            "id": "sp_9",
-            "name": "Hell Arrest",
-            "type": "special",
-            "inputs": [
-                "623+K"
-            ]
-        },
-        {
-            "id": "sp_10",
-            "name": "Hell Drop",
-            "type": "throw",
-            "inputs": [
-                "623+P"
-            ]
-        },
-        {
-            "id": "sup_0",
-            "name": "Lucky Strike",
-            "type": "super",
-            "inputs": [
-                "236 236+A C"
-            ]
-        },
-        {
-            "id": "sup_1",
-            "name": "Gatling Freezer",
-            "type": "super",
-            "inputs": [
-                "back",
-                "down",
-                "down",
-                "down-forward",
-                "forward",
-                "down",
-                "down-forward",
-                "forward"
-            ]
-        },
-        {
-            "id": "sup_2",
-            "name": "Big Bang Arrest",
-            "type": "super",
-            "inputs": [
-                "236 236 +"
-            ]
-        },
-        {
-            "id": "um_0",
-            "name": "Blast Charge",
-            "type": "unique",
-            "inputs": [
-                "2",
-                "C"
-            ]
-        },
-        {
-            "id": "um_1",
-            "name": "Air Raid",
-            "type": "unique",
-            "inputs": [
-                "2",
-                "C"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "cotw",
+  "character": "Kevin Rian",
+  "movesList": [
+    {
+      "id": "sp_0",
+      "name": "Poli-Kick",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Creeper",
+      "type": "special",
+      "inputs": [
+        "down",
+        " ",
+        "down",
+        "+K"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Punch",
+      "type": "special",
+      "inputs": [
+        "C"
+      ]
+    },
+    {
+      "id": "sp_3",
+      "name": "Kick",
+      "type": "special",
+      "inputs": [
+        "down"
+      ]
+    },
+    {
+      "id": "sp_4",
+      "name": "Rise",
+      "type": "special",
+      "inputs": [
+        "back",
+        "A"
+      ]
+    },
+    {
+      "id": "sp_5",
+      "name": "Avoid Mine",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+K"
+      ]
+    },
+    {
+      "id": "sp_6",
+      "name": "Hell Rotor \u2605",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_7",
+      "name": "Hell Snipe \u25c6",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_8",
+      "name": "Hell Trap \u2605",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "+K"
+      ]
+    },
+    {
+      "id": "sp_9",
+      "name": "Hell Arrest",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "+K"
+      ]
+    },
+    {
+      "id": "sp_10",
+      "name": "Hell Drop",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "+P"
+      ]
+    },
+    {
+      "id": "sup_0",
+      "name": "Lucky Strike",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        "+A",
+        " ",
+        "C"
+      ]
+    },
+    {
+      "id": "sup_1",
+      "name": "Gatling Freezer",
+      "type": "super",
+      "inputs": [
+        "back",
+        "down",
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward"
+      ]
+    },
+    {
+      "id": "sup_2",
+      "name": "Big Bang Arrest",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "+"
+      ]
+    },
+    {
+      "id": "um_0",
+      "name": "Blast Charge",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "C"
+      ]
+    },
+    {
+      "id": "um_1",
+      "name": "Air Raid",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "C"
+      ]
+    }
+  ],
+  "combosList": []
 }

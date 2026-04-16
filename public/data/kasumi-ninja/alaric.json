@@ -1,30 +1,22 @@
 {
   "game": "Kasumi Ninja",
   "character": "Alaric",
-  "movesList": {
-    "special_moves": [
-      {
-        "name": "Power Slide",
-        "input": "C, 41236"
-      },
-      {
-        "name": "Goth Hammer",
-        "input": "C, 68"
-      },
-      {
-        "name": "Dynamite Toss",
-        "input": "C, 21478"
-      },
-      {
-        "name": "Throw",
-        "input": "B+4"
-      }
-    ],
-    "death_moves": [
-      {
-        "name": "Dynamite Mouth",
-        "input": "C, 4643+B"
-      }
-    ]
-  }
+  "movesList": [
+    {
+      "id": "generic-neutral",
+      "name": "Neutral Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "generic-special",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    }
+  ]
 }

@@ -5,42 +5,98 @@
     {
       "name": "Osoto Gari (Throw)",
       "input": "6 + P+G",
-      "inputs": "6 + P+G",
+      "inputs": [
+        "forward",
+        " ",
+        "+",
+        " ",
+        "P",
+        "+",
+        "G"
+      ],
       "type": "throw",
       "id": "osoto-gari-(throw)"
     },
     {
       "name": "Uchi Mata (Throw)",
       "input": "4 + P+G",
-      "inputs": "4 + P+G",
+      "inputs": [
+        "back",
+        " ",
+        "+",
+        " ",
+        "P",
+        "+",
+        "G"
+      ],
       "type": "throw",
       "id": "uchi-mata-(throw)"
     },
     {
       "name": "Shoulder Thrust",
       "input": "6 + P",
-      "inputs": "6 + P",
+      "inputs": [
+        "forward",
+        " ",
+        "+",
+        " ",
+        "P"
+      ],
       "type": "special",
       "id": "shoulder-thrust"
     },
     {
       "name": "Low Kick",
       "input": "2 + K",
-      "inputs": "2 + K",
+      "inputs": [
+        "down",
+        " ",
+        "+",
+        " ",
+        "K"
+      ],
       "type": "special",
       "id": "low-kick"
     },
     {
       "name": "Ground Pound",
       "input": "2 + P (Opponent down)",
-      "inputs": "2 + P (Opponent down)",
+      "inputs": [
+        "down",
+        " ",
+        "+",
+        " ",
+        "P",
+        " ",
+        "(",
+        "O",
+        "p",
+        "p",
+        "o",
+        "n",
+        "e",
+        "n",
+        "t",
+        " ",
+        "d",
+        "o",
+        "w",
+        "n",
+        ")"
+      ],
       "type": "special",
       "id": "ground-pound"
     },
     {
       "name": "Side Kick",
       "input": "3 + K",
-      "inputs": "3 + K",
+      "inputs": [
+        "down-forward",
+        " ",
+        "+",
+        " ",
+        "K"
+      ],
       "type": "special",
       "id": "side-kick"
     }

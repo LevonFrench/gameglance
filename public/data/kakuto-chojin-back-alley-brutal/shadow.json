@@ -1,16 +1,22 @@
 {
   "game": "Kakuto Chojin: Back Alley Brutal",
   "character": "Shadow",
-  "movesList": {
-    "standing_moves": [
-      {
-        "name": "Ninja Blade",
-        "input": "Y, Y, B"
-      },
-      {
-        "name": "Teleport Strike",
-        "input": "22B"
-      }
-    ]
-  }
+  "movesList": [
+    {
+      "id": "generic-neutral",
+      "name": "Neutral Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "generic-special",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    }
+  ]
 }

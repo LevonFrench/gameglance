@@ -1,16 +1,22 @@
 {
   "game": "Kakuto Chojin: Back Alley Brutal",
   "character": "Vegard",
-  "movesList": {
-    "standing_moves": [
-      {
-        "name": "Leg Lock",
-        "input": "R+Y, A"
-      },
-      {
-        "name": "Choke",
-        "input": "R+Y, Y"
-      }
-    ]
-  }
+  "movesList": [
+    {
+      "id": "generic-neutral",
+      "name": "Neutral Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "generic-special",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    }
+  ]
 }

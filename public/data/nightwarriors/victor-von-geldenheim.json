@@ -1,445 +1,483 @@
 {
-    "game": "nightwarriors",
-    "character": "VICTOR VON GELDENHEIM",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Standing Light Punch",
-            "type": "normal",
-            "inputs": [
-                "LP"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Standing Medium Punch",
-            "type": "normal",
-            "inputs": [
-                "MP"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Standing Heavy Punch",
-            "type": "normal",
-            "inputs": [
-                "HP"
-            ]
-        },
-        {
-            "id": "sp_3",
-            "name": "Standing Light Kick",
-            "type": "normal",
-            "inputs": [
-                "LK"
-            ]
-        },
-        {
-            "id": "sp_4",
-            "name": "Standing Medium Kick",
-            "type": "normal",
-            "inputs": [
-                "MK"
-            ]
-        },
-        {
-            "id": "sp_5",
-            "name": "Standing Heavy Kick",
-            "type": "normal",
-            "inputs": [
-                "HK"
-            ]
-        },
-        {
-            "id": "sp_6",
-            "name": "Crouching Light Punch",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "LP"
-            ]
-        },
-        {
-            "id": "sp_7",
-            "name": "Crouching Medium Punch",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "MP"
-            ]
-        },
-        {
-            "id": "sp_8",
-            "name": "Crouching Heavy Punch",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "HP"
-            ]
-        },
-        {
-            "id": "sp_9",
-            "name": "Crouching Light Kick",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "LK"
-            ]
-        },
-        {
-            "id": "sp_10",
-            "name": "Crouching Medium Kick",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "MK"
-            ]
-        },
-        {
-            "id": "sp_11",
-            "name": "Crouching Heavy Kick",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "HK"
-            ]
-        },
-        {
-            "id": "sp_12",
-            "name": "Jumping Light Punch",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "LP"
-            ]
-        },
-        {
-            "id": "sp_13",
-            "name": "Jumping Medium Punch",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "MP"
-            ]
-        },
-        {
-            "id": "sp_14",
-            "name": "Jumping Heavy Punch",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "HP"
-            ]
-        },
-        {
-            "id": "sp_15",
-            "name": "Jumping Light Kick",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "LK"
-            ]
-        },
-        {
-            "id": "sp_16",
-            "name": "Jumping Medium Kick",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "MK"
-            ]
-        },
-        {
-            "id": "sp_17",
-            "name": "Jumping Heavy Kick",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "HK"
-            ]
-        },
-        {
-            "id": "sp_18",
-            "name": "Birthplace",
-            "type": "special",
-            "inputs": [
-                "germany"
-            ]
-        },
-        {
-            "id": "sp_19",
-            "name": "Birthdate",
-            "type": "special",
-            "inputs": [
-                "1830"
-            ]
-        },
-        {
-            "id": "sp_20",
-            "name": "Height",
-            "type": "special",
-            "inputs": [
-                "8 feet 1 inch"
-            ]
-        },
-        {
-            "id": "sp_21",
-            "name": "Weight",
-            "type": "special",
-            "inputs": [
-                "507 lbs."
-            ]
-        },
-        {
-            "id": "sp_22",
-            "name": "Cursed",
-            "type": "special",
-            "inputs": [
-                "miniature frankenstein"
-            ]
-        },
-        {
-            "id": "sp_23",
-            "name": "Basketball",
-            "type": "special",
-            "inputs": [
-                "mechanical face"
-            ]
-        },
-        {
-            "id": "sp_24",
-            "name": "Jaw Slugger",
-            "type": "special",
-            "inputs": [
-                "back",
-                "forward",
-                "/",
-                "mp",
-                "/",
-                "hp",
-                "then..."
-            ]
-        },
-        {
-            "id": "sp_25",
-            "name": "Graviton Knuckle",
-            "type": "special",
-            "inputs": [
-                "8",
-                "...d",
-                "P",
-                "before",
-                "jaw",
-                "slugger",
-                "begins"
-            ]
-        },
-        {
-            "id": "sp_26",
-            "name": "Mega Strangle",
-            "type": "special",
-            "inputs": [
-                "back",
-                "forward",
-                "/",
-                "mk",
-                "/",
-                "hk"
-            ]
-        },
-        {
-            "id": "sp_27",
-            "name": "Mega Throw",
-            "type": "throw",
-            "inputs": [
-                "8",
-                "any",
-                "dir.",
-                "but",
-                "mp",
-                "/",
-                "hp",
-                "in",
-                "[[air]]"
-            ]
-        },
-        {
-            "id": "sp_28",
-            "name": "Gyro Crush",
-            "type": "special",
-            "inputs": [
-                "down",
-                "back",
-                "down-back",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_29",
-            "name": "Giga Burn",
-            "type": "special",
-            "inputs": [
-                "down",
-                "back",
-                "down-back",
-                "K"
-            ]
-        },
-        {
-            "id": "sp_30",
-            "name": "Giga Hammer",
-            "type": "special",
-            "inputs": [
-                "back",
-                "forward",
-                "[charge]",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_31",
-            "name": "Giga Buster",
-            "type": "special",
-            "inputs": [
-                "back",
-                "forward",
-                "[charge]",
-                "K"
-            ]
-        },
-        {
-            "id": "sp_32",
-            "name": "Mega Shock",
-            "type": "special",
-            "inputs": [
-                "down",
-                "forward",
-                "down-forward",
-                "mk",
-                "/",
-                "hk"
-            ]
-        },
-        {
-            "id": "sp_33",
-            "name": "Mega Spike",
-            "type": "special",
-            "inputs": [
-                "rotate 360 mp / hp"
-            ]
-        },
-        {
-            "id": "sp_34",
-            "name": "Dengeki Touki",
-            "type": "special",
-            "inputs": [
-                "press and hold mp / mk / hp / hk"
-            ]
-        },
-        {
-            "id": "sp_35",
-            "name": "Double Meteor Knuckle",
-            "type": "special",
-            "inputs": [
-                "[[[air]]] ump up-back / up-forward press hp"
-            ]
-        },
-        {
-            "id": "sp_36",
-            "name": "Thunder Break",
-            "type": "special",
-            "inputs": [
-                "down",
-                "up",
-                "[charge]",
-                "PP"
-            ]
-        },
-        {
-            "id": "sp_37",
-            "name": "Great Geldenheim",
-            "type": "special",
-            "inputs": [
-                "back",
-                "down",
-                "forward",
-                "forward",
-                "forward",
-                "down-back",
-                "down-forward",
-                "KK",
-                "(dash",
-                "with",
-                "/",
-                "grab",
-                "with",
-                "P)"
-            ]
-        },
-        {
-            "id": "sp_38",
-            "name": "Gyro Crush",
-            "type": "special",
-            "inputs": [
-                "1 2 3 (4)"
-            ]
-        },
-        {
-            "id": "sp_39",
-            "name": "Giga Burn",
-            "type": "special",
-            "inputs": [
-                "1 1 1 (3)"
-            ]
-        },
-        {
-            "id": "sp_40",
-            "name": "Giga Hammer",
-            "type": "special",
-            "inputs": [
-                "1 1 1 (3)"
-            ]
-        },
-        {
-            "id": "sp_41",
-            "name": "Giga Buster",
-            "type": "special",
-            "inputs": [
-                "1 1 1 (3)"
-            ]
-        },
-        {
-            "id": "sp_42",
-            "name": "Standing",
-            "type": "normal",
-            "inputs": [
-                "c       n       n       c       n       n"
-            ]
-        },
-        {
-            "id": "sp_43",
-            "name": "Far Standing",
-            "type": "normal",
-            "inputs": [
-                "c       n       n       c       n       n"
-            ]
-        },
-        {
-            "id": "sp_44",
-            "name": "Crouching",
-            "type": "normal",
-            "inputs": [
-                "c       n       n       c       n       n"
-            ]
-        },
-        {
-            "id": "sp_45",
-            "name": "Jumping",
-            "type": "normal",
-            "inputs": [
-                "c       n       n       c       n       n"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "nightwarriors",
+  "character": "VICTOR VON GELDENHEIM",
+  "movesList": [
+    {
+      "id": "sp_0",
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "inputs": [
+        "LP"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "MP"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "HP"
+      ]
+    },
+    {
+      "id": "sp_3",
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "inputs": [
+        "LK"
+      ]
+    },
+    {
+      "id": "sp_4",
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "MK"
+      ]
+    },
+    {
+      "id": "sp_5",
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "HK"
+      ]
+    },
+    {
+      "id": "sp_6",
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "LP"
+      ]
+    },
+    {
+      "id": "sp_7",
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "MP"
+      ]
+    },
+    {
+      "id": "sp_8",
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "sp_9",
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "LK"
+      ]
+    },
+    {
+      "id": "sp_10",
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "MK"
+      ]
+    },
+    {
+      "id": "sp_11",
+      "name": "Crouching Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "HK"
+      ]
+    },
+    {
+      "id": "sp_12",
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "LP"
+      ]
+    },
+    {
+      "id": "sp_13",
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "MP"
+      ]
+    },
+    {
+      "id": "sp_14",
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "HP"
+      ]
+    },
+    {
+      "id": "sp_15",
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "LK"
+      ]
+    },
+    {
+      "id": "sp_16",
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "MK"
+      ]
+    },
+    {
+      "id": "sp_17",
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "HK"
+      ]
+    },
+    {
+      "id": "sp_18",
+      "name": "Birthplace",
+      "type": "special",
+      "inputs": [
+        "germany"
+      ]
+    },
+    {
+      "id": "sp_19",
+      "name": "Birthdate",
+      "type": "special",
+      "inputs": [
+        "1830"
+      ]
+    },
+    {
+      "id": "sp_20",
+      "name": "Height",
+      "type": "special",
+      "inputs": [
+        "up",
+        " ",
+        "feet",
+        " ",
+        "down-back",
+        " ",
+        "inch"
+      ]
+    },
+    {
+      "id": "sp_21",
+      "name": "Weight",
+      "type": "special",
+      "inputs": [
+        "507 lbs."
+      ]
+    },
+    {
+      "id": "sp_22",
+      "name": "Cursed",
+      "type": "special",
+      "inputs": [
+        "miniature frankenstein"
+      ]
+    },
+    {
+      "id": "sp_23",
+      "name": "Basketball",
+      "type": "special",
+      "inputs": [
+        "mechanical face"
+      ]
+    },
+    {
+      "id": "sp_24",
+      "name": "Jaw Slugger",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "/",
+        "mp",
+        "/",
+        "hp",
+        "then..."
+      ]
+    },
+    {
+      "id": "sp_25",
+      "name": "Graviton Knuckle",
+      "type": "special",
+      "inputs": [
+        "up",
+        "...d",
+        "P",
+        "before",
+        "jaw",
+        "slugger",
+        "begins"
+      ]
+    },
+    {
+      "id": "sp_26",
+      "name": "Mega Strangle",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "/",
+        "mk",
+        "/",
+        "hk"
+      ]
+    },
+    {
+      "id": "sp_27",
+      "name": "Mega Throw",
+      "type": "throw",
+      "inputs": [
+        "up",
+        "any",
+        "dir.",
+        "but",
+        "mp",
+        "/",
+        "hp",
+        "in",
+        "[[air]]"
+      ]
+    },
+    {
+      "id": "sp_28",
+      "name": "Gyro Crush",
+      "type": "special",
+      "inputs": [
+        "down",
+        "back",
+        "down-back",
+        "P"
+      ]
+    },
+    {
+      "id": "sp_29",
+      "name": "Giga Burn",
+      "type": "special",
+      "inputs": [
+        "down",
+        "back",
+        "down-back",
+        "K"
+      ]
+    },
+    {
+      "id": "sp_30",
+      "name": "Giga Hammer",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "[charge]",
+        "P"
+      ]
+    },
+    {
+      "id": "sp_31",
+      "name": "Giga Buster",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "[charge]",
+        "K"
+      ]
+    },
+    {
+      "id": "sp_32",
+      "name": "Mega Shock",
+      "type": "special",
+      "inputs": [
+        "down",
+        "forward",
+        "down-forward",
+        "mk",
+        "/",
+        "hk"
+      ]
+    },
+    {
+      "id": "sp_33",
+      "name": "Mega Spike",
+      "type": "special",
+      "inputs": [
+        "rotate 360 mp / hp"
+      ]
+    },
+    {
+      "id": "sp_34",
+      "name": "Dengeki Touki",
+      "type": "special",
+      "inputs": [
+        "press and hold mp / mk / hp / hk"
+      ]
+    },
+    {
+      "id": "sp_35",
+      "name": "Double Meteor Knuckle",
+      "type": "special",
+      "inputs": [
+        "[[[air]]] ump up-back / up-forward press hp"
+      ]
+    },
+    {
+      "id": "sp_36",
+      "name": "Thunder Break",
+      "type": "special",
+      "inputs": [
+        "down",
+        "up",
+        "[charge]",
+        "PP"
+      ]
+    },
+    {
+      "id": "sp_37",
+      "name": "Great Geldenheim",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down",
+        "forward",
+        "forward",
+        "forward",
+        "down-back",
+        "down-forward",
+        "KK",
+        "(dash",
+        "with",
+        "/",
+        "grab",
+        "with",
+        "P)"
+      ]
+    },
+    {
+      "id": "sp_38",
+      "name": "Gyro Crush",
+      "type": "special",
+      "inputs": [
+        "down-back",
+        " ",
+        "down",
+        " ",
+        "down-forward",
+        " ",
+        "(",
+        "back",
+        ")"
+      ]
+    },
+    {
+      "id": "sp_39",
+      "name": "Giga Burn",
+      "type": "special",
+      "inputs": [
+        "down-back",
+        " ",
+        "down-back",
+        " ",
+        "down-back",
+        " ",
+        "(",
+        "down-forward",
+        ")"
+      ]
+    },
+    {
+      "id": "sp_40",
+      "name": "Giga Hammer",
+      "type": "special",
+      "inputs": [
+        "down-back",
+        " ",
+        "down-back",
+        " ",
+        "down-back",
+        " ",
+        "(",
+        "down-forward",
+        ")"
+      ]
+    },
+    {
+      "id": "sp_41",
+      "name": "Giga Buster",
+      "type": "special",
+      "inputs": [
+        "down-back",
+        " ",
+        "down-back",
+        " ",
+        "down-back",
+        " ",
+        "(",
+        "down-forward",
+        ")"
+      ]
+    },
+    {
+      "id": "sp_42",
+      "name": "Standing",
+      "type": "normal",
+      "inputs": [
+        "c       n       n       c       n       n"
+      ]
+    },
+    {
+      "id": "sp_43",
+      "name": "Far Standing",
+      "type": "normal",
+      "inputs": [
+        "c       n       n       c       n       n"
+      ]
+    },
+    {
+      "id": "sp_44",
+      "name": "Crouching",
+      "type": "normal",
+      "inputs": [
+        "c       n       n       c       n       n"
+      ]
+    },
+    {
+      "id": "sp_45",
+      "name": "Jumping",
+      "type": "normal",
+      "inputs": [
+        "c       n       n       c       n       n"
+      ]
+    }
+  ],
+  "combosList": []
 }

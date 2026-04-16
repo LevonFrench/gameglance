@@ -6,7 +6,13 @@
       "name": "Floating",
       "type": "normal",
       "inputs": [
-        "j.8 (Hold)"
+        "j",
+        ".",
+        "up",
+        " ",
+        "(",
+        "Hold",
+        ")"
       ],
       "id": "floating"
     },
@@ -14,7 +20,8 @@
       "name": "Wind Gust",
       "type": "normal",
       "inputs": [
-        "6H"
+        "forward",
+        "H"
       ],
       "id": "wind-gust"
     },
@@ -38,7 +45,14 @@
       "name": "Double Typhoon",
       "type": "special",
       "inputs": [
-        "623+L/M/H"
+        "forward",
+        "down",
+        "down-forward",
+        "+L",
+        "/",
+        "M",
+        "/",
+        "H"
       ],
       "id": "double-typhoon"
     },
@@ -46,7 +60,13 @@
       "name": "Mist Form",
       "type": "special",
       "inputs": [
-        "22+L/M/H"
+        "down",
+        "down",
+        "+L",
+        "/",
+        "M",
+        "/",
+        "H"
       ],
       "id": "mist-form"
     },
@@ -54,7 +74,12 @@
       "name": "Elemental Rage",
       "type": "super",
       "inputs": [
-        "236+LM/HS"
+        "down",
+        "down-forward",
+        "forward",
+        "+LM",
+        "/",
+        "HS"
       ],
       "id": "elemental-rage"
     },
@@ -62,7 +87,12 @@
       "name": "Hail Storm",
       "type": "super",
       "inputs": [
-        "214+LM/HS"
+        "down",
+        "down-back",
+        "back",
+        "+LM",
+        "/",
+        "HS"
       ],
       "id": "hail-storm"
     },
@@ -70,7 +100,10 @@
       "name": "Goddess of the Storm",
       "type": "super",
       "inputs": [
-        "236+S+H"
+        "down",
+        "down-forward",
+        "forward",
+        "+S+H"
       ],
       "id": "goddess-of-the-storm"
     }

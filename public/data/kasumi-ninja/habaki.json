@@ -1,34 +1,22 @@
 {
   "game": "Kasumi Ninja",
   "character": "Habaki",
-  "movesList": {
-    "special_moves": [
-      {
-        "name": "Fireball",
-        "input": "C, 41236"
-      },
-      {
-        "name": "Ninja Teleport",
-        "input": "C, 88"
-      },
-      {
-        "name": "Whirlwind Kick",
-        "input": "C, 4466"
-      },
-      {
-        "name": "Throw",
-        "input": "A+4"
-      }
-    ],
-    "death_moves": [
-      {
-        "name": "Power Head Smash",
-        "input": "C, 8"
-      },
-      {
-        "name": "Death Move 2",
-        "input": "C+48"
-      }
-    ]
-  }
+  "movesList": [
+    {
+      "id": "generic-neutral",
+      "name": "Neutral Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "generic-special",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    }
+  ]
 }

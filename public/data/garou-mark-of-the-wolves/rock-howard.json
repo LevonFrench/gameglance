@@ -1,77 +1,90 @@
 {
-    "game": "Garou: Mark of the Wolves",
-    "character": "Rock Howard",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Reppuken",
-            "type": "special",
-            "inputs": [
-                "236",
-                "LP"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Double Reppuken",
-            "type": "special",
-            "inputs": [
-                "236",
-                "HP"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Hard Edge",
-            "type": "special",
-            "inputs": [
-                "214",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_3",
-            "name": "Rising Tackle",
-            "type": "special",
-            "inputs": [
-                "[2]8",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_4",
-            "name": "Crack Counter (High)",
-            "type": "special",
-            "inputs": [
-                "236",
-                "LK"
-            ]
-        },
-        {
-            "id": "sp_5",
-            "name": "Crack Counter (Low)",
-            "type": "special",
-            "inputs": [
-                "236",
-                "HK"
-            ]
-        },
-        {
-            "id": "um_0",
-            "name": "T.O.P. Attack",
-            "type": "unique",
-            "inputs": [
-                "HP+HK (While in T.O.P. mode)"
-            ]
-        },
-        {
-            "id": "um_1",
-            "name": "Just Defend",
-            "type": "unique",
-            "inputs": [
-                "Block right before attack hits"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Garou: Mark of the Wolves",
+  "character": "Rock Howard",
+  "movesList": [
+    {
+      "id": "sp_0",
+      "name": "Reppuken",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "LP"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Double Reppuken",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Hard Edge",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "sp_3",
+      "name": "Rising Tackle",
+      "type": "special",
+      "inputs": [
+        "[",
+        "down",
+        "]",
+        "up",
+        "P"
+      ]
+    },
+    {
+      "id": "sp_4",
+      "name": "Crack Counter (High)",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "LK"
+      ]
+    },
+    {
+      "id": "sp_5",
+      "name": "Crack Counter (Low)",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "um_0",
+      "name": "T.O.P. Attack",
+      "type": "unique",
+      "inputs": [
+        "HP+HK (While in T.O.P. mode)"
+      ]
+    },
+    {
+      "id": "um_1",
+      "name": "Just Defend",
+      "type": "unique",
+      "inputs": [
+        "Block right before attack hits"
+      ]
+    }
+  ],
+  "combosList": []
 }

@@ -1,382 +1,405 @@
 {
-    "game": "vampiresavior",
-    "character": "GALLON",
-    "movesList": [
-        {
-            "id": "gallon_normal_0",
-            "name": "Standing Light Punch",
-            "type": "normal",
-            "inputs": [
-                "LP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_1",
-            "name": "Standing Medium Punch",
-            "type": "normal",
-            "inputs": [
-                "MP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_2",
-            "name": "Standing Heavy Punch",
-            "type": "normal",
-            "inputs": [
-                "HP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_3",
-            "name": "Standing Light Kick",
-            "type": "normal",
-            "inputs": [
-                "LK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_4",
-            "name": "Standing Medium Kick",
-            "type": "normal",
-            "inputs": [
-                "MK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_5",
-            "name": "Standing Heavy Kick",
-            "type": "normal",
-            "inputs": [
-                "HK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_6",
-            "name": "Crouching Light Punch",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "LP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_7",
-            "name": "Crouching Medium Punch",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "MP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_8",
-            "name": "Crouching Heavy Punch",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "HP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_9",
-            "name": "Crouching Light Kick",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "LK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_10",
-            "name": "Crouching Medium Kick",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "MK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_11",
-            "name": "Crouching Heavy Kick",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "HK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_12",
-            "name": "Jumping Light Punch",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "LP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_13",
-            "name": "Jumping Medium Punch",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "MP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_14",
-            "name": "Jumping Heavy Punch",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "HP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_15",
-            "name": "Jumping Light Kick",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "LK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_16",
-            "name": "Jumping Medium Kick",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "MK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_normal_17",
-            "name": "Jumping Heavy Kick",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "HK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_beast_cannon_0",
-            "name": "Beast Cannon",
-            "type": "special",
-            "inputs": [
-                "[es 1] d",
-                "down-forward",
-                "f",
-                "P [[[air]]/ground]"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_beast_cannon_ii_1",
-            "name": "Beast Cannon II",
-            "type": "special",
-            "inputs": [
-                "f",
-                "d",
-                "down-forward",
-                "P"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_climb_razor_2",
-            "name": "Climb Razor",
-            "type": "special",
-            "inputs": [
-                "[es 2]d",
-                "u",
-                "K"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_million_flicker_3",
-            "name": "Million Flicker",
-            "type": "special",
-            "inputs": [
-                "d",
-                "down-back",
-                "b",
-                "P (press P repeatedly for more hits)"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_special_throw_4",
-            "name": "SPECIAL THROW",
-            "type": "throw",
-            "inputs": [
-                "[es 4]f",
-                "fd",
-                "d",
-                "down-back",
-                "b",
-                "K"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_ducking_5",
-            "name": "DUCKING",
-            "type": "special",
-            "inputs": [
-                "d",
-                "3k"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_guard_cancel_6",
-            "name": "GUARD CANCEL",
-            "type": "special",
-            "inputs": [
-                "f",
-                "d",
-                "down-forward",
-                "P"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_dark_force_7",
-            "name": "DARK FORCE",
-            "type": "special",
-            "inputs": [
-                "same strength P",
-                "K"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_beast_cannon_8",
-            "name": "Beast Cannon",
-            "type": "special",
-            "inputs": [
-                "down",
-                "forward",
-                "[es",
-                "1]",
-                "down-forward",
-                "P",
-                "[[[air]]/ground]"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_beast_cannon_ii_9",
-            "name": "Beast Cannon II",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down",
-                "down-forward",
-                "P"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_climb_razor_10",
-            "name": "Climb Razor",
-            "type": "special",
-            "inputs": [
-                "8",
-                "[es",
-                "2]d",
-                "K"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_million_flicker_11",
-            "name": "Million Flicker",
-            "type": "special",
-            "inputs": [
-                "down",
-                "back",
-                "down-back",
-                "P",
-                "(press",
-                "P",
-                "repeatedly",
-                "for",
-                "more",
-                "hits)"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_special_throw_12",
-            "name": "SPECIAL THROW",
-            "type": "throw",
-            "inputs": [
-                "down",
-                "back",
-                "[es",
-                "4]f",
-                "fd",
-                "down-back",
-                "K"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_ducking_13",
-            "name": "DUCKING",
-            "type": "special",
-            "inputs": [
-                "2",
-                "3k"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_guard_cancel_14",
-            "name": "GUARD CANCEL",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down",
-                "down-forward",
-                "P"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "gallon_dark_force_15",
-            "name": "DARK FORCE",
-            "type": "special",
-            "inputs": [
-                "same strength P K"
-            ],
-            "frameData": {}
-        }
-    ],
-    "combosList": [],
-    "theme_colors": {
-        "normal": "#818cf8",
-        "special": "#e879f9",
-        "super_fatality": "#f43f5e"
+  "game": "vampiresavior",
+  "character": "GALLON",
+  "movesList": [
+    {
+      "id": "gallon_normal_0",
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "inputs": [
+        "LP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_1",
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "MP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_2",
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "HP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_3",
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "inputs": [
+        "LK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_4",
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "MK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_5",
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "HK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_6",
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "LP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_7",
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "MP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_8",
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "HP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_9",
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "LK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_10",
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "MK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_11",
+      "name": "Crouching Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "HK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_12",
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "LP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_13",
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "MP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_14",
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "HP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_15",
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "LK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_16",
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "MK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_normal_17",
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "HK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_beast_cannon_0",
+      "name": "Beast Cannon",
+      "type": "special",
+      "inputs": [
+        "[",
+        "es",
+        " ",
+        "down-back",
+        "]",
+        " ",
+        "d",
+        "down-forward",
+        "f",
+        "P [[[air]]/ground]"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_beast_cannon_ii_1",
+      "name": "Beast Cannon II",
+      "type": "special",
+      "inputs": [
+        "f",
+        "d",
+        "down-forward",
+        "P"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_climb_razor_2",
+      "name": "Climb Razor",
+      "type": "special",
+      "inputs": [
+        "[",
+        "es",
+        " ",
+        "down",
+        "]",
+        "d",
+        "u",
+        "K"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_million_flicker_3",
+      "name": "Million Flicker",
+      "type": "special",
+      "inputs": [
+        "d",
+        "down-back",
+        "b",
+        "P (press P repeatedly for more hits)"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_special_throw_4",
+      "name": "SPECIAL THROW",
+      "type": "throw",
+      "inputs": [
+        "[",
+        "es",
+        " ",
+        "back",
+        "]",
+        "f",
+        "fd",
+        "d",
+        "down-back",
+        "b",
+        "K"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_ducking_5",
+      "name": "DUCKING",
+      "type": "special",
+      "inputs": [
+        "d",
+        "down-forward",
+        "k"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_guard_cancel_6",
+      "name": "GUARD CANCEL",
+      "type": "special",
+      "inputs": [
+        "f",
+        "d",
+        "down-forward",
+        "P"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_dark_force_7",
+      "name": "DARK FORCE",
+      "type": "special",
+      "inputs": [
+        "same strength P",
+        "K"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_beast_cannon_8",
+      "name": "Beast Cannon",
+      "type": "special",
+      "inputs": [
+        "down",
+        "forward",
+        "[es",
+        "down-back",
+        "]",
+        "down-forward",
+        "P",
+        "[[[air]]/ground]"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_beast_cannon_ii_9",
+      "name": "Beast Cannon II",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_climb_razor_10",
+      "name": "Climb Razor",
+      "type": "special",
+      "inputs": [
+        "up",
+        "[es",
+        "down",
+        "]",
+        "d",
+        "K"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_million_flicker_11",
+      "name": "Million Flicker",
+      "type": "special",
+      "inputs": [
+        "down",
+        "back",
+        "down-back",
+        "P",
+        "(press",
+        "P",
+        "repeatedly",
+        "for",
+        "more",
+        "hits)"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_special_throw_12",
+      "name": "SPECIAL THROW",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "back",
+        "[es",
+        "back",
+        "]",
+        "f",
+        "fd",
+        "down-back",
+        "K"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_ducking_13",
+      "name": "DUCKING",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "k"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_guard_cancel_14",
+      "name": "GUARD CANCEL",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "gallon_dark_force_15",
+      "name": "DARK FORCE",
+      "type": "special",
+      "inputs": [
+        "same strength P K"
+      ],
+      "frameData": {}
     }
+  ],
+  "combosList": [],
+  "theme_colors": {
+    "normal": "#818cf8",
+    "special": "#e879f9",
+    "super_fatality": "#f43f5e"
+  }
 }

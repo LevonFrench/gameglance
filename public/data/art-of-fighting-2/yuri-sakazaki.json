@@ -6,7 +6,10 @@
       "name": "En-yoku",
       "type": "normal",
       "inputs": [
-        "623+B"
+        "forward",
+        "down",
+        "down-forward",
+        "+B"
       ],
       "id": "en-yoku"
     },
@@ -30,7 +33,10 @@
       "name": "Ko-ou Ken",
       "type": "special",
       "inputs": [
-        "236+A"
+        "down",
+        "down-forward",
+        "forward",
+        "+A"
       ],
       "id": "ko-ou-ken"
     },
@@ -38,7 +44,10 @@
       "name": "Kyokugenryu Saiha",
       "type": "special",
       "inputs": [
-        "214+A"
+        "down",
+        "down-back",
+        "back",
+        "+A"
       ],
       "id": "kyokugenryu-saiha"
     },
@@ -46,7 +55,10 @@
       "name": "Raikoh Ken",
       "type": "special",
       "inputs": [
-        "236+B"
+        "down",
+        "down-forward",
+        "forward",
+        "+B"
       ],
       "id": "raikoh-ken"
     },
@@ -54,7 +66,16 @@
       "name": "Hyakuretsu Bin-ta",
       "type": "special",
       "inputs": [
-        "63214+A (Close)"
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "+A",
+        " ",
+        "(",
+        "Close",
+        ")"
       ],
       "id": "hyakuretsu-bin-ta"
     },
@@ -62,7 +83,13 @@
       "name": "Haoh Shokoken",
       "type": "super",
       "inputs": [
-        "641236+A"
+        "forward",
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "+A"
       ],
       "id": "haoh-shokoken"
     },
@@ -70,7 +97,14 @@
       "name": "Hien Hou-ou Kyaku",
       "type": "super",
       "inputs": [
-        "2363214+B"
+        "down",
+        "down-forward",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "+B"
       ],
       "id": "hien-hou-ou-kyaku"
     }

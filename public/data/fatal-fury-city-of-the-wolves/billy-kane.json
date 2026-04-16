@@ -1,155 +1,190 @@
 {
-    "game": "cotw",
-    "character": "Billy Kane",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Dai Kaiten Geri",
-            "type": "special",
-            "inputs": [
-                "6+A"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Bou Takatobi Geri",
-            "type": "special",
-            "inputs": [
-                "4",
-                "6"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Senpu Kon \u25c6",
-            "type": "special",
-            "inputs": [
-                "623+P"
-            ]
-        },
-        {
-            "id": "sp_3",
-            "name": "Senpu Kon Renda",
-            "type": "special",
-            "inputs": [
-                "P"
-            ]
-        },
-        {
-            "id": "sp_4",
-            "name": "Sansetsu Kon Chuudan Uchi \u25c6",
-            "type": "special",
-            "inputs": [
-                "236+P"
-            ]
-        },
-        {
-            "id": "sp_5",
-            "name": "Kaen SansetsuKon Chuudan Uchi",
-            "type": "special",
-            "inputs": [
-                "6+P"
-            ]
-        },
-        {
-            "id": "sp_6",
-            "name": "Tsurigome SansetsuKon Chuudan Uchi",
-            "type": "special",
-            "inputs": [
-                "4+P"
-            ]
-        },
-        {
-            "id": "sp_7",
-            "name": "Suzume Otoshi \u25c6",
-            "type": "special",
-            "inputs": [
-                "214+P"
-            ]
-        },
-        {
-            "id": "sp_8",
-            "name": "Kaen Suzume Otoshi",
-            "type": "special",
-            "inputs": [
-                "4 6+P"
-            ]
-        },
-        {
-            "id": "sp_9",
-            "name": "Kyoushuu Hishou Kon \u2605",
-            "type": "special",
-            "inputs": [
-                "236+K"
-            ]
-        },
-        {
-            "id": "sp_10",
-            "name": "Sandan Shoujou",
-            "type": "special",
-            "inputs": [
-                "214+K 6 4+K 6 4+K"
-            ]
-        },
-        {
-            "id": "sup_0",
-            "name": "Chou KaenSenpuu Kon",
-            "type": "super",
-            "inputs": [
-                "236 236+A C"
-            ]
-        },
-        {
-            "id": "sup_1",
-            "name": "Guren Sakkon",
-            "type": "super",
-            "inputs": [
-                "back",
-                "down",
-                "down",
-                "down-forward",
-                "forward",
-                "down",
-                "down-forward",
-                "forward"
-            ]
-        },
-        {
-            "id": "sup_2",
-            "name": "Dai Gouen Senpuu Kon",
-            "type": "super",
-            "inputs": [
-                "236 236 +"
-            ]
-        },
-        {
-            "id": "um_0",
-            "name": "Raimei Uchi",
-            "type": "unique",
-            "inputs": [
-                "2",
-                "C"
-            ]
-        },
-        {
-            "id": "um_1",
-            "name": "Dai Tenkyuu Otoshi",
-            "type": "unique",
-            "inputs": [
-                "2",
-                "C"
-            ]
-        },
-        {
-            "id": "um_2",
-            "name": "Command Combo",
-            "type": "unique",
-            "inputs": [
-                "back",
-                "down",
-                "j."
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "cotw",
+  "character": "Billy Kane",
+  "movesList": [
+    {
+      "id": "sp_0",
+      "name": "Dai Kaiten Geri",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "+A"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Bou Takatobi Geri",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Senpu Kon \u25c6",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_3",
+      "name": "Senpu Kon Renda",
+      "type": "special",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "sp_4",
+      "name": "Sansetsu Kon Chuudan Uchi \u25c6",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_5",
+      "name": "Kaen SansetsuKon Chuudan Uchi",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_6",
+      "name": "Tsurigome SansetsuKon Chuudan Uchi",
+      "type": "special",
+      "inputs": [
+        "back",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_7",
+      "name": "Suzume Otoshi \u25c6",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_8",
+      "name": "Kaen Suzume Otoshi",
+      "type": "special",
+      "inputs": [
+        "back",
+        " ",
+        "forward",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_9",
+      "name": "Kyoushuu Hishou Kon \u2605",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "+K"
+      ]
+    },
+    {
+      "id": "sp_10",
+      "name": "Sandan Shoujou",
+      "type": "special",
+      "inputs": [
+        "214+K 6 4+K 6 4+K"
+      ]
+    },
+    {
+      "id": "sup_0",
+      "name": "Chou KaenSenpuu Kon",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        "+A",
+        " ",
+        "C"
+      ]
+    },
+    {
+      "id": "sup_1",
+      "name": "Guren Sakkon",
+      "type": "super",
+      "inputs": [
+        "back",
+        "down",
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward"
+      ]
+    },
+    {
+      "id": "sup_2",
+      "name": "Dai Gouen Senpuu Kon",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "+"
+      ]
+    },
+    {
+      "id": "um_0",
+      "name": "Raimei Uchi",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "C"
+      ]
+    },
+    {
+      "id": "um_1",
+      "name": "Dai Tenkyuu Otoshi",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "C"
+      ]
+    },
+    {
+      "id": "um_2",
+      "name": "Command Combo",
+      "type": "unique",
+      "inputs": [
+        "back",
+        "down",
+        "j."
+      ]
+    }
+  ],
+  "combosList": []
 }

@@ -6,7 +6,10 @@
       "name": "Foot Dive",
       "type": "normal",
       "inputs": [
-        "j.2H"
+        "j",
+        ".",
+        "down",
+        "H"
       ],
       "id": "foot-dive"
     },
@@ -14,7 +17,8 @@
       "name": "Hidden Missile",
       "type": "normal",
       "inputs": [
-        "6H"
+        "forward",
+        "H"
       ],
       "id": "hidden-missile"
     },
@@ -30,7 +34,14 @@
       "name": "Molecular Shield",
       "type": "special",
       "inputs": [
-        "214+L/M/H"
+        "down",
+        "down-back",
+        "back",
+        "+L",
+        "/",
+        "M",
+        "/",
+        "H"
       ],
       "id": "molecular-shield"
     },
@@ -46,7 +57,9 @@
       "name": "Doom Flight",
       "type": "special",
       "inputs": [
-        "22+S"
+        "down",
+        "down",
+        "+S"
       ],
       "id": "doom-flight"
     },
@@ -54,7 +67,12 @@
       "name": "Sphere Flame",
       "type": "super",
       "inputs": [
-        "236+LM/HS"
+        "down",
+        "down-forward",
+        "forward",
+        "+LM",
+        "/",
+        "HS"
       ],
       "id": "sphere-flame"
     },
@@ -70,7 +88,10 @@
       "name": "Doom's Day",
       "type": "super",
       "inputs": [
-        "236+S+H"
+        "down",
+        "down-forward",
+        "forward",
+        "+S+H"
       ],
       "id": "dooms-day"
     }

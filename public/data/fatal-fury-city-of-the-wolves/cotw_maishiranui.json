@@ -1,151 +1,195 @@
 {
-    "game": "Fatal Fury: City Of The Wolves",
-    "character": "Mai Shiranui",
-    "movesList": [
-        {
-            "id": "move_1_homuraniren",
-            "name": "Homura Niren",
-            "type": "unique",
-            "inputs": [
-                "C+D"
-            ]
-        },
-        {
-            "id": "move_2_yumiharinomai",
-            "name": "Yumihari no Mai",
-            "type": "unique",
-            "inputs": [
-                "C+D"
-            ]
-        },
-        {
-            "id": "move_3_commandcombo1",
-            "name": "Command Combo 1",
-            "type": "unique",
-            "inputs": [
-                "C+D D"
-            ]
-        },
-        {
-            "id": "move_4_ukihane",
-            "name": "Ukihane",
-            "type": "normal",
-            "inputs": [
-                "B"
-            ]
-        },
-        {
-            "id": "move_5_koukakunomai",
-            "name": "Koukaku no Mai",
-            "type": "normal",
-            "inputs": [
-                "D"
-            ]
-        },
-        {
-            "id": "move_6_yumekachou",
-            "name": "Yume Kachou",
-            "type": "normal",
-            "inputs": [
-                "A+B"
-            ]
-        },
-        {
-            "id": "move_7_sankakutobi",
-            "name": "Sankaku Tobi",
-            "type": "normal",
-            "inputs": [
-                "j."
-            ]
-        },
-        {
-            "id": "move_8_kachousen",
-            "name": "Kachousen \u25c6",
-            "type": "special",
-            "inputs": [
-                "236+P"
-            ]
-        },
-        {
-            "id": "move_9_ryuuenbu",
-            "name": "Ryuuenbu",
-            "type": "special",
-            "inputs": [
-                "214+P"
-            ]
-        },
-        {
-            "id": "move_10_hissatsushinobibachi",
-            "name": "Hissatsu Shinobi Bachi \u2605",
-            "type": "special",
-            "inputs": [
-                "236+K"
-            ]
-        },
-        {
-            "id": "move_11_sayochidori",
-            "name": "Sayo Chidori \u25c6",
-            "type": "special",
-            "inputs": [
-                "214+K"
-            ]
-        },
-        {
-            "id": "move_12_hanaarashi",
-            "name": "Hana Arashi \u2605\u25c6",
-            "type": "special",
-            "inputs": [
-                "623+K"
-            ]
-        },
-        {
-            "id": "move_13_musasabinomaimove",
-            "name": "Musasabi no Mai (Move)",
-            "type": "special",
-            "inputs": [
-                "+ P"
-            ]
-        },
-        {
-            "id": "move_14_musasabinomaifall",
-            "name": "Musasabi no Mai (Fall)",
-            "type": "special",
-            "inputs": [
-                "P"
-            ]
-        },
-        {
-            "id": "move_15_airmusasabinomai",
-            "name": "Air Musasabi no Mai",
-            "type": "special",
-            "inputs": [
-                "214+P"
-            ]
-        },
-        {
-            "id": "move_16_kagerounomai",
-            "name": "Kagerou no Mai",
-            "type": "super",
-            "inputs": [
-                "236 236+A C"
-            ]
-        },
-        {
-            "id": "move_17_chouhissatsushinobibachi",
-            "name": "Chou HissatsuShinobi Bachi",
-            "type": "super",
-            "inputs": [
-                "236 236+B D"
-            ]
-        },
-        {
-            "id": "move_18_ourannomaiakasuzumi",
-            "name": "Ouran no Mai: Akasuzumi",
-            "type": "super",
-            "inputs": [
-                "236 236 +"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Fatal Fury: City Of The Wolves",
+  "character": "Mai Shiranui",
+  "movesList": [
+    {
+      "id": "move_1_homuraniren",
+      "name": "Homura Niren",
+      "type": "unique",
+      "inputs": [
+        "C+D"
+      ]
+    },
+    {
+      "id": "move_2_yumiharinomai",
+      "name": "Yumihari no Mai",
+      "type": "unique",
+      "inputs": [
+        "C+D"
+      ]
+    },
+    {
+      "id": "move_3_commandcombo1",
+      "name": "Command Combo 1",
+      "type": "unique",
+      "inputs": [
+        "C+D D"
+      ]
+    },
+    {
+      "id": "move_4_ukihane",
+      "name": "Ukihane",
+      "type": "normal",
+      "inputs": [
+        "B"
+      ]
+    },
+    {
+      "id": "move_5_koukakunomai",
+      "name": "Koukaku no Mai",
+      "type": "normal",
+      "inputs": [
+        "D"
+      ]
+    },
+    {
+      "id": "move_6_yumekachou",
+      "name": "Yume Kachou",
+      "type": "normal",
+      "inputs": [
+        "A+B"
+      ]
+    },
+    {
+      "id": "move_7_sankakutobi",
+      "name": "Sankaku Tobi",
+      "type": "normal",
+      "inputs": [
+        "j."
+      ]
+    },
+    {
+      "id": "move_8_kachousen",
+      "name": "Kachousen \u25c6",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "+P"
+      ]
+    },
+    {
+      "id": "move_9_ryuuenbu",
+      "name": "Ryuuenbu",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+P"
+      ]
+    },
+    {
+      "id": "move_10_hissatsushinobibachi",
+      "name": "Hissatsu Shinobi Bachi \u2605",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "+K"
+      ]
+    },
+    {
+      "id": "move_11_sayochidori",
+      "name": "Sayo Chidori \u25c6",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+K"
+      ]
+    },
+    {
+      "id": "move_12_hanaarashi",
+      "name": "Hana Arashi \u2605\u25c6",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "+K"
+      ]
+    },
+    {
+      "id": "move_13_musasabinomaimove",
+      "name": "Musasabi no Mai (Move)",
+      "type": "special",
+      "inputs": [
+        "+ P"
+      ]
+    },
+    {
+      "id": "move_14_musasabinomaifall",
+      "name": "Musasabi no Mai (Fall)",
+      "type": "special",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "move_15_airmusasabinomai",
+      "name": "Air Musasabi no Mai",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+P"
+      ]
+    },
+    {
+      "id": "move_16_kagerounomai",
+      "name": "Kagerou no Mai",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        "+A",
+        " ",
+        "C"
+      ]
+    },
+    {
+      "id": "move_17_chouhissatsushinobibachi",
+      "name": "Chou HissatsuShinobi Bachi",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        "+B",
+        " ",
+        "D"
+      ]
+    },
+    {
+      "id": "move_18_ourannomaiakasuzumi",
+      "name": "Ouran no Mai: Akasuzumi",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "+"
+      ]
+    }
+  ],
+  "combosList": []
 }

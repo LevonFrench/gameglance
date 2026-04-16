@@ -17,7 +17,8 @@
       "name": "Senpuu Ga",
       "type": "special",
       "inputs": [
-        "66",
+        "forward",
+        "forward",
         "K"
       ]
     },
@@ -26,49 +27,95 @@
       "name": "Toukuu Hishou Geki",
       "type": "special",
       "inputs": [
-        "8",
+        "up",
         "P+K"
       ]
     },
     {
       "name": "Chuuken",
       "input": "P",
-      "inputs": "P",
+      "inputs": [
+        "P"
+      ],
       "type": "special",
       "id": "chuuken"
     },
     {
       "name": "Raigekishou",
       "input": "P, P, P",
-      "inputs": "P, P, P",
+      "inputs": [
+        "P",
+        ",",
+        " ",
+        "P",
+        ",",
+        " ",
+        "P"
+      ],
       "type": "special",
       "id": "raigekishou"
     },
     {
       "name": "Renkan Tenshinkyaku",
       "input": "3 + P, P, P, K",
-      "inputs": "3 + P, P, P, K",
+      "inputs": [
+        "down-forward",
+        " ",
+        "+",
+        " ",
+        "P",
+        ",",
+        " ",
+        "P",
+        ",",
+        " ",
+        "P",
+        ",",
+        " ",
+        "K"
+      ],
       "type": "special",
       "id": "renkan-tenshinkyaku"
     },
     {
       "name": "Koshuutai",
       "input": "46 + K",
-      "inputs": "46 + K",
+      "inputs": [
+        "back",
+        "forward",
+        " ",
+        "+",
+        " ",
+        "K"
+      ],
       "type": "special",
       "id": "koshuutai"
     },
     {
       "name": "Senpuuga",
       "input": "K+G",
-      "inputs": "K+G",
+      "inputs": [
+        "K",
+        "+",
+        "G"
+      ],
       "type": "special",
       "id": "senpuuga"
     },
     {
       "name": "Chisoutai",
       "input": "6 + 2 + K",
-      "inputs": "6 + 2 + K",
+      "inputs": [
+        "forward",
+        " ",
+        "+",
+        " ",
+        "down",
+        " ",
+        "+",
+        " ",
+        "K"
+      ],
       "type": "special",
       "id": "chisoutai"
     }

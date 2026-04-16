@@ -6,7 +6,11 @@
       "name": "Head Crash",
       "type": "special",
       "inputs": [
-        "[2]8+A"
+        "[",
+        "down",
+        "]",
+        "up",
+        "+A"
       ],
       "id": "head-crash"
     },
@@ -14,7 +18,10 @@
       "name": "Shoulder Tackle",
       "type": "special",
       "inputs": [
-        "236+A"
+        "down",
+        "down-forward",
+        "forward",
+        "+A"
       ],
       "id": "shoulder-tackle"
     },
@@ -22,7 +29,12 @@
       "name": "Johnny Special",
       "type": "special",
       "inputs": [
-        "41236+B"
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "+B"
       ],
       "id": "johnny-special"
     },
@@ -30,7 +42,10 @@
       "name": "Touchdown",
       "type": "special",
       "inputs": [
-        "j.2+A"
+        "j",
+        ".",
+        "down",
+        "+A"
       ],
       "id": "touchdown"
     }

@@ -1,52 +1,71 @@
 {
-    "game": "Mortal Kombat: Deception",
-    "character": "Scorpion",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Bloody Spear",
-            "type": "special",
-            "inputs": [
-                "46",
-                "1"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Hellfire",
-            "type": "special",
-            "inputs": [
-                "214",
-                "2"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Teleport Kick",
-            "type": "special",
-            "inputs": [
-                "214",
-                "3"
-            ]
-        },
-        {
-            "id": "fin_0",
-            "name": "Spine Rip",
-            "type": "unique",
-            "inputs": [
-                "6266",
-                "1 (Close)"
-            ]
-        },
-        {
-            "id": "fin_1",
-            "name": "Spear Head",
-            "type": "unique",
-            "inputs": [
-                "6466",
-                "1 (Close)"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Mortal Kombat: Deception",
+  "character": "Scorpion",
+  "movesList": [
+    {
+      "id": "sp_0",
+      "name": "Bloody Spear",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "down-back"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Hellfire",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "down"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Teleport Kick",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "down-forward"
+      ]
+    },
+    {
+      "id": "fin_0",
+      "name": "Spine Rip",
+      "type": "unique",
+      "inputs": [
+        "forward",
+        "down",
+        "forward",
+        "forward",
+        "down-back",
+        " ",
+        "(",
+        "Close",
+        ")"
+      ]
+    },
+    {
+      "id": "fin_1",
+      "name": "Spear Head",
+      "type": "unique",
+      "inputs": [
+        "forward",
+        "back",
+        "forward",
+        "forward",
+        "down-back",
+        " ",
+        "(",
+        "Close",
+        ")"
+      ]
+    }
+  ],
+  "combosList": []
 }

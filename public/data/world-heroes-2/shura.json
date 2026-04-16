@@ -6,7 +6,11 @@
       "name": "Tiger Straight",
       "type": "special",
       "inputs": [
-        "[4]6+A"
+        "[",
+        "back",
+        "]",
+        "forward",
+        "+A"
       ],
       "id": "tiger-straight"
     },
@@ -14,7 +18,10 @@
       "name": "Tiger Upper",
       "type": "special",
       "inputs": [
-        "623+A"
+        "forward",
+        "down",
+        "down-forward",
+        "+A"
       ],
       "id": "tiger-upper"
     },
@@ -22,7 +29,10 @@
       "name": "Muay Thai Kick",
       "type": "special",
       "inputs": [
-        "214+B"
+        "down",
+        "down-back",
+        "back",
+        "+B"
       ],
       "id": "muay-thai-kick"
     },
@@ -30,7 +40,10 @@
       "name": "Tiger Knee",
       "type": "special",
       "inputs": [
-        "236+B"
+        "down",
+        "down-forward",
+        "forward",
+        "+B"
       ],
       "id": "tiger-knee"
     }

@@ -1,20 +1,22 @@
 {
   "game": "Kasumi Ninja",
   "character": "Lord Gyaku",
-  "movesList": {
-    "special_moves": [
-      {
-        "name": "Demon Fire",
-        "input": "C, 41236"
-      },
-      {
-        "name": "Tail Swipe",
-        "input": "C, 42"
-      },
-      {
-        "name": "Shockwave",
-        "input": "C, 26"
-      }
-    ]
-  }
+  "movesList": [
+    {
+      "id": "generic-neutral",
+      "name": "Neutral Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "generic-special",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    }
+  ]
 }

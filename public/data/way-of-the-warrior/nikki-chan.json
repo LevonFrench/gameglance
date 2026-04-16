@@ -1,28 +1,22 @@
 {
   "game": "Way of the Warrior",
   "character": "Nikki Chan",
-  "movesList": {
-    "special_moves": [
-      {
-        "name": "Throw from Flip",
-        "input": "Close RS"
-      },
-      {
-        "name": "Ball Attack",
-        "input": "j.LS (Mid-flip)"
-      },
-      {
-        "name": "Flying Kick",
-        "input": "j.8RS (From flip)"
-      },
-      {
-        "name": "Slide",
-        "input": "62C"
-      },
-      {
-        "name": "Hair Spin",
-        "input": "Hold B, LS"
-      }
-    ]
-  }
+  "movesList": [
+    {
+      "id": "generic-neutral",
+      "name": "Neutral Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "generic-special",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    }
+  ]
 }

@@ -1,215 +1,246 @@
 {
-    "game": "cotw",
-    "character": "Gato",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Chinbreaker",
-            "type": "special",
-            "inputs": [
-                "6+A"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Tranquil Kick",
-            "type": "special",
-            "inputs": [
-                "4",
-                "6"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Aerial Turn",
-            "type": "special",
-            "inputs": [
-                "j."
-            ]
-        },
-        {
-            "id": "sp_3",
-            "name": "Quaking Fang \u25c6",
-            "type": "special",
-            "inputs": [
-                "236+P"
-            ]
-        },
-        {
-            "id": "sp_4",
-            "name": "Piercing Fang",
-            "type": "special",
-            "inputs": [
-                "6+P"
-            ]
-        },
-        {
-            "id": "sp_5",
-            "name": "Lull",
-            "type": "special",
-            "inputs": [
-                "P"
-            ]
-        },
-        {
-            "id": "sp_6",
-            "name": "Lightning Fang \u2605",
-            "type": "special",
-            "inputs": [
-                "623+K"
-            ]
-        },
-        {
-            "id": "sp_7",
-            "name": "Wind Fang \u2605",
-            "type": "special",
-            "inputs": [
-                "214+K"
-            ]
-        },
-        {
-            "id": "sp_8",
-            "name": "Vortex Fang",
-            "type": "special",
-            "inputs": [
-                "A"
-            ]
-        },
-        {
-            "id": "sp_9",
-            "name": "Whirling Fang",
-            "type": "special",
-            "inputs": [
-                "4"
-            ]
-        },
-        {
-            "id": "sp_10",
-            "name": "Arrow Fang",
-            "type": "special",
-            "inputs": [
-                "C"
-            ]
-        },
-        {
-            "id": "sp_11",
-            "name": "Sliding Fang",
-            "type": "special",
-            "inputs": [
-                "2"
-            ]
-        },
-        {
-            "id": "sp_12",
-            "name": "Lull",
-            "type": "special",
-            "inputs": [
-                "214+P"
-            ]
-        },
-        {
-            "id": "sp_13",
-            "name": "Return",
-            "type": "special",
-            "inputs": [
-                "A"
-            ]
-        },
-        {
-            "id": "sp_14",
-            "name": "Black Fang",
-            "type": "special",
-            "inputs": [
-                "4"
-            ]
-        },
-        {
-            "id": "sp_15",
-            "name": "Soaring Fang",
-            "type": "special",
-            "inputs": [
-                "C"
-            ]
-        },
-        {
-            "id": "sp_16",
-            "name": "White Fang",
-            "type": "special",
-            "inputs": [
-                "2"
-            ]
-        },
-        {
-            "id": "sup_0",
-            "name": "Freeze Fang",
-            "type": "super",
-            "inputs": [
-                "236 236+A C"
-            ]
-        },
-        {
-            "id": "sup_1",
-            "name": "Dragon Fang",
-            "type": "super",
-            "inputs": [
-                "back",
-                "down",
-                "down",
-                "down-forward",
-                "forward",
-                "down",
-                "down-forward",
-                "forward"
-            ]
-        },
-        {
-            "id": "sup_2",
-            "name": "Shin: Tenryuu Retsuga",
-            "type": "super",
-            "inputs": [
-                "236 236 +"
-            ]
-        },
-        {
-            "id": "um_0",
-            "name": "Mouko Kou Hazan",
-            "type": "unique",
-            "inputs": [
-                "2",
-                "C"
-            ]
-        },
-        {
-            "id": "um_1",
-            "name": "Ryuujin Kyaku",
-            "type": "unique",
-            "inputs": [
-                "2",
-                "C"
-            ]
-        },
-        {
-            "id": "um_2",
-            "name": "Command Combo 1",
-            "type": "unique",
-            "inputs": [
-                "back",
-                "down",
-                "down",
-                "C",
-                "C"
-            ]
-        },
-        {
-            "id": "um_3",
-            "name": "Command Combo 2",
-            "type": "unique",
-            "inputs": [
-                "4",
-                "j.",
-                "A"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "cotw",
+  "character": "Gato",
+  "movesList": [
+    {
+      "id": "sp_0",
+      "name": "Chinbreaker",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "+A"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Tranquil Kick",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Aerial Turn",
+      "type": "special",
+      "inputs": [
+        "j."
+      ]
+    },
+    {
+      "id": "sp_3",
+      "name": "Quaking Fang \u25c6",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_4",
+      "name": "Piercing Fang",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_5",
+      "name": "Lull",
+      "type": "special",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "sp_6",
+      "name": "Lightning Fang \u2605",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "+K"
+      ]
+    },
+    {
+      "id": "sp_7",
+      "name": "Wind Fang \u2605",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+K"
+      ]
+    },
+    {
+      "id": "sp_8",
+      "name": "Vortex Fang",
+      "type": "special",
+      "inputs": [
+        "A"
+      ]
+    },
+    {
+      "id": "sp_9",
+      "name": "Whirling Fang",
+      "type": "special",
+      "inputs": [
+        "back"
+      ]
+    },
+    {
+      "id": "sp_10",
+      "name": "Arrow Fang",
+      "type": "special",
+      "inputs": [
+        "C"
+      ]
+    },
+    {
+      "id": "sp_11",
+      "name": "Sliding Fang",
+      "type": "special",
+      "inputs": [
+        "down"
+      ]
+    },
+    {
+      "id": "sp_12",
+      "name": "Lull",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_13",
+      "name": "Return",
+      "type": "special",
+      "inputs": [
+        "A"
+      ]
+    },
+    {
+      "id": "sp_14",
+      "name": "Black Fang",
+      "type": "special",
+      "inputs": [
+        "back"
+      ]
+    },
+    {
+      "id": "sp_15",
+      "name": "Soaring Fang",
+      "type": "special",
+      "inputs": [
+        "C"
+      ]
+    },
+    {
+      "id": "sp_16",
+      "name": "White Fang",
+      "type": "special",
+      "inputs": [
+        "down"
+      ]
+    },
+    {
+      "id": "sup_0",
+      "name": "Freeze Fang",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        "+A",
+        " ",
+        "C"
+      ]
+    },
+    {
+      "id": "sup_1",
+      "name": "Dragon Fang",
+      "type": "super",
+      "inputs": [
+        "back",
+        "down",
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward"
+      ]
+    },
+    {
+      "id": "sup_2",
+      "name": "Shin: Tenryuu Retsuga",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "+"
+      ]
+    },
+    {
+      "id": "um_0",
+      "name": "Mouko Kou Hazan",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "C"
+      ]
+    },
+    {
+      "id": "um_1",
+      "name": "Ryuujin Kyaku",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "C"
+      ]
+    },
+    {
+      "id": "um_2",
+      "name": "Command Combo 1",
+      "type": "unique",
+      "inputs": [
+        "back",
+        "down",
+        "down",
+        "C",
+        "C"
+      ]
+    },
+    {
+      "id": "um_3",
+      "name": "Command Combo 2",
+      "type": "unique",
+      "inputs": [
+        "back",
+        "j.",
+        "A"
+      ]
+    }
+  ],
+  "combosList": []
 }

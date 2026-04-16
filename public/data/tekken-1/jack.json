@@ -6,7 +6,9 @@
       "name": "Gorilla Press",
       "type": "throw",
       "inputs": [
-        "1+3"
+        "down-back",
+        "+",
+        "down-forward"
       ],
       "id": "gorilla-press"
     },
@@ -14,7 +16,9 @@
       "name": "Hell Press",
       "type": "throw",
       "inputs": [
-        "2+4"
+        "down",
+        "+",
+        "back"
       ],
       "id": "hell-press"
     },
@@ -22,7 +26,13 @@
       "name": "Hammer Rush",
       "type": "special",
       "inputs": [
-        "1, 1, 1"
+        "down-back",
+        ",",
+        " ",
+        "down-back",
+        ",",
+        " ",
+        "down-back"
       ],
       "id": "hammer-rush"
     },
@@ -30,7 +40,9 @@
       "name": "Power Shovel",
       "type": "special",
       "inputs": [
-        "3+2"
+        "down-forward",
+        "+",
+        "down"
       ],
       "id": "power-shovel"
     },
@@ -38,7 +50,21 @@
       "name": "Megaton Punch",
       "type": "special",
       "inputs": [
-        "4, 1, 2, 3, 6+1"
+        "back",
+        ",",
+        " ",
+        "down-back",
+        ",",
+        " ",
+        "down",
+        ",",
+        " ",
+        "down-forward",
+        ",",
+        " ",
+        "forward",
+        "+",
+        "down-back"
       ],
       "id": "megaton-punch"
     },

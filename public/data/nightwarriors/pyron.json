@@ -1,831 +1,897 @@
 {
-    "game": "nightwarriors",
-    "character": "PYRON",
-    "movesList": [
-        {
-            "id": "pyron_normal_0",
-            "name": "Standing Light Punch",
-            "type": "normal",
-            "inputs": [
-                "LP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_1",
-            "name": "Standing Medium Punch",
-            "type": "normal",
-            "inputs": [
-                "MP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_2",
-            "name": "Standing Heavy Punch",
-            "type": "normal",
-            "inputs": [
-                "HP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_3",
-            "name": "Standing Light Kick",
-            "type": "normal",
-            "inputs": [
-                "LK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_4",
-            "name": "Standing Medium Kick",
-            "type": "normal",
-            "inputs": [
-                "MK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_5",
-            "name": "Standing Heavy Kick",
-            "type": "normal",
-            "inputs": [
-                "HK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_6",
-            "name": "Crouching Light Punch",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "LP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_7",
-            "name": "Crouching Medium Punch",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "MP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_8",
-            "name": "Crouching Heavy Punch",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "HP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_9",
-            "name": "Crouching Light Kick",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "LK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_10",
-            "name": "Crouching Medium Kick",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "MK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_11",
-            "name": "Crouching Heavy Kick",
-            "type": "normal",
-            "inputs": [
-                "2",
-                "HK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_12",
-            "name": "Jumping Light Punch",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "LP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_13",
-            "name": "Jumping Medium Punch",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "MP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_14",
-            "name": "Jumping Heavy Punch",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "HP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_15",
-            "name": "Jumping Light Kick",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "LK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_16",
-            "name": "Jumping Medium Kick",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "MK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_normal_17",
-            "name": "Jumping Heavy Kick",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "HK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_birthplace_0",
-            "name": "Birthplace",
-            "type": "special",
-            "inputs": [
-                "planet hellstorm"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_birthdate_1",
-            "name": "Birthdate",
-            "type": "special",
-            "inputs": [
-                "1991"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_height_2",
-            "name": "Height",
-            "type": "special",
-            "inputs": [
-                "???"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_weight_3",
-            "name": "Weight",
-            "type": "special",
-            "inputs": [
-                "???"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_cursed_4",
-            "name": "Cursed",
-            "type": "special",
-            "inputs": [
-                "floating fireball"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_basketball_5",
-            "name": "Basketball",
-            "type": "special",
-            "inputs": [
-                "angry ball of flame"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_sol_smasher_6",
-            "name": "Sol Smasher",
-            "type": "special",
-            "inputs": [
-                "down",
-                "down-forward",
-                "forward",
-                "P"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_kuuchuu_sol_smasher_7",
-            "name": "Kuuchuu Sol Smasher",
-            "type": "special",
-            "inputs": [
-                "up",
-                "forward",
-                "in",
-                "[[air]]",
-                "up-forward",
-                "P"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_orbiter_blaze_8",
-            "name": "Orbiter Blaze",
-            "type": "special",
-            "inputs": [
-                "in [[air]]",
-                "down",
-                "down-back",
-                "back",
-                "K"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_zodiac_fire_9",
-            "name": "Zodiac Fire",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down",
-                "down-forward",
-                "P"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_galaxy_trip_10",
-            "name": "Galaxy Trip",
-            "type": "special",
-            "inputs": [
-                "back",
-                "down",
-                "down-back",
-                "P",
-                "/",
-                "K",
-                "([[air]])"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_planet_burning_11",
-            "name": "Planet Burning",
-            "type": "special",
-            "inputs": [
-                "forward",
-                "down",
-                "back",
-                "down-forward",
-                "down-back",
-                "mp",
-                "/",
-                "hp"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_cosmo_disruption__close__12",
-            "name": "Cosmo Disruption (Close)",
-            "type": "normal",
-            "inputs": [
-                "back",
-                "down",
-                "forward",
-                "down-back",
-                "down-forward",
-                "PP",
-                "(hold",
-                "and",
-                "release",
-                "PP)"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_cosmo_disruption__far__13",
-            "name": "Cosmo Disruption (Far)",
-            "type": "normal",
-            "inputs": [
-                "back",
-                "down",
-                "forward",
-                "down-back",
-                "down-forward",
-                "KK",
-                "(hold",
-                "and",
-                "release",
-                "KK)"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_sol_smasher_14",
-            "name": "Sol Smasher",
-            "type": "normal",
-            "inputs": [
-                "1 1 1 (3)"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_orbiter_blaze_15",
-            "name": "Orbiter Blaze",
-            "type": "normal",
-            "inputs": [
-                "1 1 1 (5)"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_zodiac_fire_16",
-            "name": "Zodiac Fire",
-            "type": "normal",
-            "inputs": [
-                "1 1 1 (4)"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_cosmo_disruption_17",
-            "name": "Cosmo Disruption",
-            "type": "normal",
-            "inputs": [
-                "down-forward",
-                "up",
-                "back",
-                "up-back",
-                "up-back"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_standing_18",
-            "name": "Standing",
-            "type": "normal",
-            "inputs": [
-                "c       c       n:2     c       n       n"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_far_standing_19",
-            "name": "Far Standing",
-            "type": "normal",
-            "inputs": [
-                "c       c       n:2     c       n       n"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_crouching_20",
-            "name": "Crouching",
-            "type": "normal",
-            "inputs": [
-                "c       c       n       c       c       n"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_jumping_21",
-            "name": "Jumping",
-            "type": "normal",
-            "inputs": [
-                "c       c       n       c       c       n"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_makes_the_constellations_appear_close_to_22",
-            "name": "makes the constellations appear close to",
-            "type": "normal",
-            "inputs": [
-                "PP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_press_or_briefly_hold_23",
-            "name": "Press or briefly hold",
-            "type": "normal",
-            "inputs": [
-                "casseiopeia  (w-shaped)"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_hold_for_one_second_24",
-            "name": "Hold for one second",
-            "type": "normal",
-            "inputs": [
-                "orion        (h-shaped)"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_rikuo_25",
-            "name": "RIKUO",
-            "type": "normal",
-            "inputs": [
-                "(aulbath in japan)"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_birthplace_26",
-            "name": "Birthplace",
-            "type": "normal",
-            "inputs": [
-                "brazil"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_birthdate_27",
-            "name": "Birthdate",
-            "type": "normal",
-            "inputs": [
-                "down-back",
-                "up-forward",
-                "neutral",
-                "down-forward"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_height_28",
-            "name": "Height",
-            "type": "normal",
-            "inputs": [
-                "6 feet"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_weight_29",
-            "name": "Weight",
-            "type": "normal",
-            "inputs": [
-                "137 lbs."
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_cursed_30",
-            "name": "Cursed",
-            "type": "normal",
-            "inputs": [
-                "[[[air]]] apanese salamander"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_basketball_31",
-            "name": "Basketball",
-            "type": "normal",
-            "inputs": [
-                "tiny frog"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_land_fisher_32",
-            "name": "Land Fisher",
-            "type": "normal",
-            "inputs": [
-                "back",
-                "forward",
-                "/",
-                "mp",
-                "/",
-                "hp",
-                "then..."
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_cataract_cry_33",
-            "name": "Cataract Cry",
-            "type": "normal",
-            "inputs": [
-                "8",
-                "any",
-                "dir.",
-                "but",
-                "mp",
-                "/",
-                "hp",
-                "in",
-                "[[air]]"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_riverside_drop_34",
-            "name": "Riverside Drop",
-            "type": "throw",
-            "inputs": [
-                "press u",
-                "K when your enemy is down"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_sonic_wave_35",
-            "name": "Sonic Wave",
-            "type": "normal",
-            "inputs": [
-                "down",
-                "forward",
-                "down-forward",
-                "P"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_poison_breath_36",
-            "name": "Poison Breath",
-            "type": "normal",
-            "inputs": [
-                "down",
-                "forward",
-                "down-forward",
-                "K"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_screw_jet_37",
-            "name": "Screw Jet",
-            "type": "normal",
-            "inputs": [
-                "b",
-                "f",
-                "P"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_crystal_lancer_38",
-            "name": "Crystal Lancer",
-            "type": "normal",
-            "inputs": [
-                "forward",
-                "down-forward",
-                "down",
-                "down-back",
-                "back",
-                "mp / hp"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_sky_neptune_39",
-            "name": "Sky Neptune",
-            "type": "normal",
-            "inputs": [
-                "forward",
-                "down-forward",
-                "down",
-                "down-back",
-                "back",
-                "mk / hk"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_spinning_current_40",
-            "name": "Spinning Current",
-            "type": "normal",
-            "inputs": [
-                "press hp during a continuous dash"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_trick_fish_41",
-            "name": "Trick Fish",
-            "type": "normal",
-            "inputs": [
-                "b",
-                "b",
-                "K / press K during a backstep"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_trick_fish_42",
-            "name": "Trick Fish",
-            "type": "normal",
-            "inputs": [
-                "hold K",
-                "backstep",
-                "release K"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_killer_vortex_43",
-            "name": "Killer Vortex",
-            "type": "normal",
-            "inputs": [
-                "in [[air]] press hk"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_aqua_spread_44",
-            "name": "Aqua Spread",
-            "type": "normal",
-            "inputs": [
-                "forward",
-                "down",
-                "down-forward",
-                "PP",
-                "/",
-                "KK"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_water_jail_45",
-            "name": "Water Jail",
-            "type": "normal",
-            "inputs": [
-                "forward",
-                "down",
-                "down-forward",
-                "PP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_sea_rage_46",
-            "name": "Sea Rage",
-            "type": "normal",
-            "inputs": [
-                "back",
-                "down-back",
-                "down",
-                "down-forward",
-                "forward",
-                "PP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_direct_scissors_47",
-            "name": "Direct Scissors",
-            "type": "normal",
-            "inputs": [
-                "down",
-                "down",
-                "PP"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_riverside_drop_48",
-            "name": "Riverside Drop",
-            "type": "throw",
-            "inputs": [
-                "1 1 1 (3)"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_screw_jet_49",
-            "name": "Screw Jet",
-            "type": "normal",
-            "inputs": [
-                "4 3 3 (8)"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_trick_fish_50",
-            "name": "Trick Fish",
-            "type": "normal",
-            "inputs": [
-                "1 1 1 (3)"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_crystal_lancer_51",
-            "name": "Crystal Lancer",
-            "type": "normal",
-            "inputs": [
-                "1 (1)"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_sky_neptune_52",
-            "name": "Sky Neptune",
-            "type": "normal",
-            "inputs": [
-                "1 (1)"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_spinning_current_53",
-            "name": "Spinning Current",
-            "type": "normal",
-            "inputs": [
-                "3"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_sea_rage_54",
-            "name": "Sea Rage",
-            "type": "normal",
-            "inputs": [
-                "8"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_standing_55",
-            "name": "Standing",
-            "type": "normal",
-            "inputs": [
-                "c       c1:2    n       c       c       n"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_far_standing_56",
-            "name": "Far Standing",
-            "type": "normal",
-            "inputs": [
-                "c       c1:2    n       c       c       n"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_crouching_57",
-            "name": "Crouching",
-            "type": "normal",
-            "inputs": [
-                "c       c1:2    n:2     c       n:2     n"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_jumping_58",
-            "name": "Jumping",
-            "type": "normal",
-            "inputs": [
-                "n       n       n       n       n       n"
-            ],
-            "frameData": {}
-        },
-        {
-            "id": "pyron_for_a_while__59",
-            "name": "for a while.",
-            "type": "normal",
-            "inputs": [
-                "PP"
-            ],
-            "frameData": {}
-        }
-    ],
-    "combosList": [],
-    "theme_colors": {
-        "normal": "#818cf8",
-        "special": "#a78bfa",
-        "super_fatality": "#fb7185"
+  "game": "nightwarriors",
+  "character": "PYRON",
+  "movesList": [
+    {
+      "id": "pyron_normal_0",
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "inputs": [
+        "LP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_1",
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "MP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_2",
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "HP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_3",
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "inputs": [
+        "LK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_4",
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "MK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_5",
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "HK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_6",
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "LP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_7",
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "MP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_8",
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "HP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_9",
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "LK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_10",
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "MK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_11",
+      "name": "Crouching Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "HK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_12",
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "LP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_13",
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "MP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_14",
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "HP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_15",
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "LK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_16",
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "MK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_normal_17",
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "HK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_birthplace_0",
+      "name": "Birthplace",
+      "type": "special",
+      "inputs": [
+        "planet hellstorm"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_birthdate_1",
+      "name": "Birthdate",
+      "type": "special",
+      "inputs": [
+        "down-back",
+        "up-forward",
+        "up-forward",
+        "down-back"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_height_2",
+      "name": "Height",
+      "type": "special",
+      "inputs": [
+        "???"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_weight_3",
+      "name": "Weight",
+      "type": "special",
+      "inputs": [
+        "???"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_cursed_4",
+      "name": "Cursed",
+      "type": "special",
+      "inputs": [
+        "floating fireball"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_basketball_5",
+      "name": "Basketball",
+      "type": "special",
+      "inputs": [
+        "angry ball of flame"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_sol_smasher_6",
+      "name": "Sol Smasher",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_kuuchuu_sol_smasher_7",
+      "name": "Kuuchuu Sol Smasher",
+      "type": "special",
+      "inputs": [
+        "up",
+        "forward",
+        "in",
+        "[[air]]",
+        "up-forward",
+        "P"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_orbiter_blaze_8",
+      "name": "Orbiter Blaze",
+      "type": "special",
+      "inputs": [
+        "in [[air]]",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_zodiac_fire_9",
+      "name": "Zodiac Fire",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_galaxy_trip_10",
+      "name": "Galaxy Trip",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down",
+        "down-back",
+        "P",
+        "/",
+        "K",
+        "([[air]])"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_planet_burning_11",
+      "name": "Planet Burning",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "back",
+        "down-forward",
+        "down-back",
+        "mp",
+        "/",
+        "hp"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_cosmo_disruption__close__12",
+      "name": "Cosmo Disruption (Close)",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "down",
+        "forward",
+        "down-back",
+        "down-forward",
+        "PP",
+        "(hold",
+        "and",
+        "release",
+        "PP)"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_cosmo_disruption__far__13",
+      "name": "Cosmo Disruption (Far)",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "down",
+        "forward",
+        "down-back",
+        "down-forward",
+        "KK",
+        "(hold",
+        "and",
+        "release",
+        "KK)"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_sol_smasher_14",
+      "name": "Sol Smasher",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        " ",
+        "down-back",
+        " ",
+        "down-back",
+        " ",
+        "(",
+        "down-forward",
+        ")"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_orbiter_blaze_15",
+      "name": "Orbiter Blaze",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        " ",
+        "down-back",
+        " ",
+        "down-back",
+        " ",
+        "(",
+        "neutral",
+        ")"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_zodiac_fire_16",
+      "name": "Zodiac Fire",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        " ",
+        "down-back",
+        " ",
+        "down-back",
+        " ",
+        "(",
+        "back",
+        ")"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_cosmo_disruption_17",
+      "name": "Cosmo Disruption",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "up",
+        "back",
+        "up-back",
+        "up-back"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_standing_18",
+      "name": "Standing",
+      "type": "normal",
+      "inputs": [
+        "c       c       n:2     c       n       n"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_far_standing_19",
+      "name": "Far Standing",
+      "type": "normal",
+      "inputs": [
+        "c       c       n:2     c       n       n"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_crouching_20",
+      "name": "Crouching",
+      "type": "normal",
+      "inputs": [
+        "c       c       n       c       c       n"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_jumping_21",
+      "name": "Jumping",
+      "type": "normal",
+      "inputs": [
+        "c       c       n       c       c       n"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_makes_the_constellations_appear_close_to_22",
+      "name": "makes the constellations appear close to",
+      "type": "normal",
+      "inputs": [
+        "PP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_press_or_briefly_hold_23",
+      "name": "Press or briefly hold",
+      "type": "normal",
+      "inputs": [
+        "casseiopeia  (w-shaped)"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_hold_for_one_second_24",
+      "name": "Hold for one second",
+      "type": "normal",
+      "inputs": [
+        "orion        (h-shaped)"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_rikuo_25",
+      "name": "RIKUO",
+      "type": "normal",
+      "inputs": [
+        "(aulbath in japan)"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_birthplace_26",
+      "name": "Birthplace",
+      "type": "normal",
+      "inputs": [
+        "brazil"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_birthdate_27",
+      "name": "Birthdate",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        "up-forward",
+        "neutral",
+        "down-forward"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_height_28",
+      "name": "Height",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        " ",
+        "feet"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_weight_29",
+      "name": "Weight",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        "down-forward",
+        "up-back",
+        " ",
+        "lbs",
+        "."
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_cursed_30",
+      "name": "Cursed",
+      "type": "normal",
+      "inputs": [
+        "[[[air]]] apanese salamander"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_basketball_31",
+      "name": "Basketball",
+      "type": "normal",
+      "inputs": [
+        "tiny frog"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_land_fisher_32",
+      "name": "Land Fisher",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "forward",
+        "/",
+        "mp",
+        "/",
+        "hp",
+        "then..."
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_cataract_cry_33",
+      "name": "Cataract Cry",
+      "type": "normal",
+      "inputs": [
+        "up",
+        "any",
+        "dir.",
+        "but",
+        "mp",
+        "/",
+        "hp",
+        "in",
+        "[[air]]"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_riverside_drop_34",
+      "name": "Riverside Drop",
+      "type": "throw",
+      "inputs": [
+        "press u",
+        "K when your enemy is down"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_sonic_wave_35",
+      "name": "Sonic Wave",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "forward",
+        "down-forward",
+        "P"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_poison_breath_36",
+      "name": "Poison Breath",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "forward",
+        "down-forward",
+        "K"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_screw_jet_37",
+      "name": "Screw Jet",
+      "type": "normal",
+      "inputs": [
+        "b",
+        "f",
+        "P"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_crystal_lancer_38",
+      "name": "Crystal Lancer",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "mp / hp"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_sky_neptune_39",
+      "name": "Sky Neptune",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "mk / hk"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_spinning_current_40",
+      "name": "Spinning Current",
+      "type": "normal",
+      "inputs": [
+        "press hp during a continuous dash"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_trick_fish_41",
+      "name": "Trick Fish",
+      "type": "normal",
+      "inputs": [
+        "b",
+        "b",
+        "K / press K during a backstep"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_trick_fish_42",
+      "name": "Trick Fish",
+      "type": "normal",
+      "inputs": [
+        "hold K",
+        "backstep",
+        "release K"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_killer_vortex_43",
+      "name": "Killer Vortex",
+      "type": "normal",
+      "inputs": [
+        "in [[air]] press hk"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_aqua_spread_44",
+      "name": "Aqua Spread",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "PP",
+        "/",
+        "KK"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_water_jail_45",
+      "name": "Water Jail",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "PP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_sea_rage_46",
+      "name": "Sea Rage",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "PP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_direct_scissors_47",
+      "name": "Direct Scissors",
+      "type": "normal",
+      "inputs": [
+        "down",
+        "down",
+        "PP"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_riverside_drop_48",
+      "name": "Riverside Drop",
+      "type": "throw",
+      "inputs": [
+        "down-back",
+        " ",
+        "down-back",
+        " ",
+        "down-back",
+        " ",
+        "(",
+        "down-forward",
+        ")"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_screw_jet_49",
+      "name": "Screw Jet",
+      "type": "normal",
+      "inputs": [
+        "back",
+        " ",
+        "down-forward",
+        " ",
+        "down-forward",
+        " ",
+        "(",
+        "up",
+        ")"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_trick_fish_50",
+      "name": "Trick Fish",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        " ",
+        "down-back",
+        " ",
+        "down-back",
+        " ",
+        "(",
+        "down-forward",
+        ")"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_crystal_lancer_51",
+      "name": "Crystal Lancer",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        " ",
+        "(",
+        "down-back",
+        ")"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_sky_neptune_52",
+      "name": "Sky Neptune",
+      "type": "normal",
+      "inputs": [
+        "down-back",
+        " ",
+        "(",
+        "down-back",
+        ")"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_spinning_current_53",
+      "name": "Spinning Current",
+      "type": "normal",
+      "inputs": [
+        "down-forward"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_sea_rage_54",
+      "name": "Sea Rage",
+      "type": "normal",
+      "inputs": [
+        "up"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_standing_55",
+      "name": "Standing",
+      "type": "normal",
+      "inputs": [
+        "c       c1:2    n       c       c       n"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_far_standing_56",
+      "name": "Far Standing",
+      "type": "normal",
+      "inputs": [
+        "c       c1:2    n       c       c       n"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_crouching_57",
+      "name": "Crouching",
+      "type": "normal",
+      "inputs": [
+        "c       c1:2    n:2     c       n:2     n"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_jumping_58",
+      "name": "Jumping",
+      "type": "normal",
+      "inputs": [
+        "n       n       n       n       n       n"
+      ],
+      "frameData": {}
+    },
+    {
+      "id": "pyron_for_a_while__59",
+      "name": "for a while.",
+      "type": "normal",
+      "inputs": [
+        "PP"
+      ],
+      "frameData": {}
     }
+  ],
+  "combosList": [],
+  "theme_colors": {
+    "normal": "#818cf8",
+    "special": "#a78bfa",
+    "super_fatality": "#fb7185"
+  }
 }

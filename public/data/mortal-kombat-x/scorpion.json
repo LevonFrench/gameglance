@@ -1,62 +1,86 @@
 {
-    "game": "Mortal Kombat X",
-    "character": "Scorpion",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Spear",
-            "type": "special",
-            "inputs": [
-                "46",
-                "1"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Teleport",
-            "type": "special",
-            "inputs": [
-                "214",
-                "3 (Air OK)"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Takedown",
-            "type": "special",
-            "inputs": [
-                "46",
-                "4"
-            ]
-        },
-        {
-            "id": "fin_0",
-            "name": "Stop Ahead",
-            "type": "unique",
-            "inputs": [
-                "246",
-                "2 (Mid)"
-            ]
-        },
-        {
-            "id": "fin_1",
-            "name": "Who's Next?",
-            "type": "unique",
-            "inputs": [
-                "2464",
-                "4 (Mid)"
-            ]
-        },
-        {
-            "id": "fin_2",
-            "name": "Get Over Here",
-            "type": "unique",
-            "inputs": [
-                "46",
-                "1",
-                "BL (Final hit must be Spear, over 50% health)"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Mortal Kombat X",
+  "character": "Scorpion",
+  "movesList": [
+    {
+      "id": "sp_0",
+      "name": "Spear",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "down-back"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Teleport",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "down-forward",
+        " ",
+        "(",
+        "Air",
+        " ",
+        "OK",
+        ")"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Takedown",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "back"
+      ]
+    },
+    {
+      "id": "fin_0",
+      "name": "Stop Ahead",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "back",
+        "forward",
+        "down",
+        " ",
+        "(",
+        "Mid",
+        ")"
+      ]
+    },
+    {
+      "id": "fin_1",
+      "name": "Who's Next?",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "back",
+        "forward",
+        "back",
+        "back",
+        " ",
+        "(",
+        "Mid",
+        ")"
+      ]
+    },
+    {
+      "id": "fin_2",
+      "name": "Get Over Here",
+      "type": "unique",
+      "inputs": [
+        "back",
+        "forward",
+        "down-back",
+        "BL (Final hit must be Spear, over 50% health)"
+      ]
+    }
+  ],
+  "combosList": []
 }

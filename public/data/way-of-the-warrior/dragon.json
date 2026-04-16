@@ -1,54 +1,22 @@
 {
   "game": "Way of the Warrior",
   "character": "Dragon",
-  "movesList": {
-    "special_moves": [
-      {
-        "name": "Fireball",
-        "input": "236LS"
-      },
-      {
-        "name": "Dragon Kick",
-        "input": "236RS"
-      },
-      {
-        "name": "Uppercut",
-        "input": "623LS"
-      },
-      {
-        "name": "Turbo Hands",
-        "input": "A (Rapid)"
-      },
-      {
-        "name": "Turbo Kick",
-        "input": "C (Rapid)"
-      },
-      {
-        "name": "Forward Hop Kick",
-        "input": "66RS"
-      },
-      {
-        "name": "Flying Kick",
-        "input": "j.8RS"
-      }
-    ],
-    "fatalities": [
-      {
-        "name": "Your Heart is Mine!",
-        "input": "Close 6ABC"
-      },
-      {
-        "name": "Blown Away",
-        "input": "Taunt, [4]6RS+C"
-      },
-      {
-        "name": "Stage Fatality (Dojo/Bridge/Roof)",
-        "input": "C+RS"
-      },
-      {
-        "name": "Stage Fatality (Cliffs)",
-        "input": "Flying Punch"
-      }
-    ]
-  }
+  "movesList": [
+    {
+      "id": "generic-neutral",
+      "name": "Neutral Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "generic-special",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    }
+  ]
 }

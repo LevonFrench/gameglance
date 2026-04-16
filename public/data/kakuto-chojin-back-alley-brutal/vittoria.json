@@ -1,16 +1,22 @@
 {
   "game": "Kakuto Chojin: Back Alley Brutal",
   "character": "Vittoria",
-  "movesList": {
-    "standing_moves": [
-      {
-        "name": "Savate Combo",
-        "input": "X, X, X"
-      },
-      {
-        "name": "High Roundhouse",
-        "input": "8Y"
-      }
-    ]
-  }
+  "movesList": [
+    {
+      "id": "generic-neutral",
+      "name": "Neutral Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "generic-special",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    }
+  ]
 }

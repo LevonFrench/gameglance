@@ -6,7 +6,9 @@
       "name": "Bear Hug",
       "type": "throw",
       "inputs": [
-        "1+3"
+        "down-back",
+        "+",
+        "down-forward"
       ],
       "id": "bear-hug"
     },
@@ -14,7 +16,9 @@
       "name": "Bear Bite",
       "type": "throw",
       "inputs": [
-        "2+4"
+        "down",
+        "+",
+        "back"
       ],
       "id": "bear-bite"
     },
@@ -22,7 +26,11 @@
       "name": "Bear Sit",
       "type": "special",
       "inputs": [
-        "2+3+4"
+        "down",
+        "+",
+        "down-forward",
+        "+",
+        "back"
       ],
       "id": "bear-sit"
     }

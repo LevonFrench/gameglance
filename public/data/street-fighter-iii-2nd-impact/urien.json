@@ -1,53 +1,25 @@
 {
-    "name": "Urien",
-    "special_moves": [
-        {
-            "name": "Metallic Sphere",
-            "input": "236 + P"
-        },
-        {
-            "name": "Chariot Tackle",
-            "input": "[4]6 + K"
-        },
-        {
-            "name": "Violence Knee Drop",
-            "input": "[2]8 + K"
-        },
-        {
-            "name": "Dangerous Headbutt",
-            "input": "[2]8 + P"
-        }
-    ],
-    "ex_moves": [
-        {
-            "name": "EX Metallic Sphere",
-            "input": "236 + PP"
-        },
-        {
-            "name": "EX Chariot Tackle",
-            "input": "[4]6 + KK"
-        },
-        {
-            "name": "EX Violence Knee Drop",
-            "input": "[2]8 + KK"
-        },
-        {
-            "name": "EX Dangerous Headbutt",
-            "input": "[2]8 + PP"
-        }
-    ],
-    "super_arts": [
-        {
-            "name": "Tyrant Slaughter",
-            "input": "236236 + P"
-        },
-        {
-            "name": "Jupiter Thunder",
-            "input": "236236 + P"
-        },
-        {
-            "name": "Aegis Reflector",
-            "input": "236236 + P or PP"
-        }
-    ]
+  "game": "Street Fighter III: 2nd Impact - Giant Attack",
+  "character": "Urien",
+  "movesList": [
+    {
+      "id": "basic-attack",
+      "name": "Basic Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "special-attack",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    }
+  ]
 }

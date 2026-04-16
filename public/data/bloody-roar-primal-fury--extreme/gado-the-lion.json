@@ -22,7 +22,10 @@
       "name": "Fire Blast",
       "type": "special",
       "inputs": [
-        "236+P"
+        "down",
+        "down-forward",
+        "forward",
+        "+P"
       ],
       "id": "fire-blast"
     },
@@ -30,7 +33,12 @@
       "name": "Pressure Drop",
       "type": "special",
       "inputs": [
-        "63214+P"
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "+P"
       ],
       "id": "pressure-drop"
     },
@@ -46,7 +54,10 @@
       "name": "Absolute Zero",
       "type": "special",
       "inputs": [
-        "214+B"
+        "down",
+        "down-back",
+        "back",
+        "+B"
       ],
       "id": "absolute-zero"
     }

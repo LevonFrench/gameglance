@@ -6,7 +6,9 @@
       "name": "Arm Turn",
       "type": "throw",
       "inputs": [
-        "1+3"
+        "down-back",
+        "+",
+        "down-forward"
       ],
       "id": "arm-turn"
     },
@@ -14,7 +16,9 @@
       "name": "Lifting Toss",
       "type": "throw",
       "inputs": [
-        "2+4"
+        "down",
+        "+",
+        "back"
       ],
       "id": "lifting-toss"
     },
@@ -22,7 +26,14 @@
       "name": "Blonde Bomb",
       "type": "special",
       "inputs": [
-        "6, 6+1+2"
+        "forward",
+        ",",
+        " ",
+        "forward",
+        "+",
+        "down-back",
+        "+",
+        "down"
       ],
       "id": "blonde-bomb"
     },
@@ -30,7 +41,12 @@
       "name": "Divine Cannon",
       "type": "special",
       "inputs": [
-        "1+3, 4"
+        "down-back",
+        "+",
+        "down-forward",
+        ",",
+        " ",
+        "back"
       ],
       "id": "divine-cannon"
     },
@@ -38,7 +54,9 @@
       "name": "Ivory Cutter",
       "type": "special",
       "inputs": [
-        "1+4"
+        "down-back",
+        "+",
+        "back"
       ],
       "id": "ivory-cutter"
     },
@@ -46,7 +64,12 @@
       "name": "Can-opener",
       "type": "special",
       "inputs": [
-        "9+3, 4"
+        "up-forward",
+        "+",
+        "down-forward",
+        ",",
+        " ",
+        "back"
       ],
       "id": "can-opener"
     },

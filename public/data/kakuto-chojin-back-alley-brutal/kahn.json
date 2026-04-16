@@ -1,16 +1,22 @@
 {
   "game": "Kakuto Chojin: Back Alley Brutal",
   "character": "Kahn",
-  "movesList": {
-    "standing_moves": [
-      {
-        "name": "Brutal Combo",
-        "input": "Y, Y, Y, X"
-      },
-      {
-        "name": "Stomp",
-        "input": "2A (Close)"
-      }
-    ]
-  }
+  "movesList": [
+    {
+      "id": "generic-neutral",
+      "name": "Neutral Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "generic-special",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    }
+  ]
 }

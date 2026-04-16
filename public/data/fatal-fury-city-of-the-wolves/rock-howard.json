@@ -1,164 +1,206 @@
 {
-    "game": "cotw",
-    "character": "Rock Howard",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Reppuu Ken \u25c6",
-            "type": "special",
-            "inputs": [
-                "236+P"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Shippuu Ken",
-            "type": "special",
-            "inputs": [
-                "214+P"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Rising Tackle \u2605\u25c6",
-            "type": "special",
-            "inputs": [
-                "623+P"
-            ]
-        },
-        {
-            "id": "sp_3",
-            "name": "Hard Edge \u2605\u25c6",
-            "type": "special",
-            "inputs": [
-                "214+P"
-            ]
-        },
-        {
-            "id": "sp_4",
-            "name": "Crack Counter",
-            "type": "special",
-            "inputs": [
-                "236+K"
-            ]
-        },
-        {
-            "id": "sp_5",
-            "name": "Rage Run",
-            "type": "special",
-            "inputs": [
-                "214+K"
-            ]
-        },
-        {
-            "id": "sp_6",
-            "name": "Type: Layup",
-            "type": "special",
-            "inputs": [
-                "A"
-            ]
-        },
-        {
-            "id": "sp_7",
-            "name": "Type: Cut",
-            "type": "special",
-            "inputs": [
-                "4"
-            ]
-        },
-        {
-            "id": "sp_8",
-            "name": "Type: Dunk",
-            "type": "special",
-            "inputs": [
-                "C"
-            ]
-        },
-        {
-            "id": "sp_9",
-            "name": "Type: Shift \u2460",
-            "type": "special",
-            "inputs": [
-                "2"
-            ]
-        },
-        {
-            "id": "sp_10",
-            "name": "Shinkuu Nage \u2605",
-            "type": "throw",
-            "inputs": [
-                "63214+P P"
-            ]
-        },
-        {
-            "id": "sup_0",
-            "name": "Raging Storm",
-            "type": "super",
-            "inputs": [
-                "236 236+A C"
-            ]
-        },
-        {
-            "id": "sup_1",
-            "name": "Shining Knuckle",
-            "type": "super",
-            "inputs": [
-                "back",
-                "down",
-                "down",
-                "down-forward",
-                "forward",
-                "down",
-                "down-forward",
-                "forward"
-            ]
-        },
-        {
-            "id": "sup_2",
-            "name": "Power Geyser \"R\"",
-            "type": "super",
-            "inputs": [
-                "236 236 +"
-            ]
-        },
-        {
-            "id": "um_0",
-            "name": "Overhead Kick",
-            "type": "unique",
-            "inputs": [
-                "2",
-                "C"
-            ]
-        },
-        {
-            "id": "um_1",
-            "name": "Hishou Getsurin Zan",
-            "type": "unique",
-            "inputs": [
-                "2",
-                "C"
-            ]
-        },
-        {
-            "id": "um_2",
-            "name": "CommandCombo 1",
-            "type": "unique",
-            "inputs": [
-                "down",
-                "down",
-                "6"
-            ]
-        },
-        {
-            "id": "um_3",
-            "name": "Command Combo 2",
-            "type": "unique",
-            "inputs": [
-                "4",
-                "j.",
-                "A"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "cotw",
+  "character": "Rock Howard",
+  "movesList": [
+    {
+      "id": "sp_0",
+      "name": "Reppuu Ken \u25c6",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Shippuu Ken",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Rising Tackle \u2605\u25c6",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_3",
+      "name": "Hard Edge \u2605\u25c6",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+P"
+      ]
+    },
+    {
+      "id": "sp_4",
+      "name": "Crack Counter",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "+K"
+      ]
+    },
+    {
+      "id": "sp_5",
+      "name": "Rage Run",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+K"
+      ]
+    },
+    {
+      "id": "sp_6",
+      "name": "Type: Layup",
+      "type": "special",
+      "inputs": [
+        "A"
+      ]
+    },
+    {
+      "id": "sp_7",
+      "name": "Type: Cut",
+      "type": "special",
+      "inputs": [
+        "back"
+      ]
+    },
+    {
+      "id": "sp_8",
+      "name": "Type: Dunk",
+      "type": "special",
+      "inputs": [
+        "C"
+      ]
+    },
+    {
+      "id": "sp_9",
+      "name": "Type: Shift \u2460",
+      "type": "special",
+      "inputs": [
+        "down"
+      ]
+    },
+    {
+      "id": "sp_10",
+      "name": "Shinkuu Nage \u2605",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "+P",
+        " ",
+        "P"
+      ]
+    },
+    {
+      "id": "sup_0",
+      "name": "Raging Storm",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        "+A",
+        " ",
+        "C"
+      ]
+    },
+    {
+      "id": "sup_1",
+      "name": "Shining Knuckle",
+      "type": "super",
+      "inputs": [
+        "back",
+        "down",
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward"
+      ]
+    },
+    {
+      "id": "sup_2",
+      "name": "Power Geyser \"R\"",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "down",
+        "down-forward",
+        "forward",
+        " ",
+        "+"
+      ]
+    },
+    {
+      "id": "um_0",
+      "name": "Overhead Kick",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "C"
+      ]
+    },
+    {
+      "id": "um_1",
+      "name": "Hishou Getsurin Zan",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "C"
+      ]
+    },
+    {
+      "id": "um_2",
+      "name": "CommandCombo 1",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "down",
+        "forward"
+      ]
+    },
+    {
+      "id": "um_3",
+      "name": "Command Combo 2",
+      "type": "unique",
+      "inputs": [
+        "back",
+        "j.",
+        "A"
+      ]
+    }
+  ],
+  "combosList": []
 }

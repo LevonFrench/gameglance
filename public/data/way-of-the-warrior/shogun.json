@@ -1,58 +1,22 @@
 {
   "game": "Way of the Warrior",
   "character": "Shogun",
-  "movesList": {
-    "special_moves": [
-      {
-        "name": "Sword Slice",
-        "input": "236LS"
-      },
-      {
-        "name": "Double Slash",
-        "input": "236A"
-      },
-      {
-        "name": "Teleport",
-        "input": "2ABC"
-      },
-      {
-        "name": "Hurricane Kick",
-        "input": "214RS"
-      },
-      {
-        "name": "Spin Kick",
-        "input": "4RS"
-      },
-      {
-        "name": "Flying Spin Kick",
-        "input": "j.4RS"
-      },
-      {
-        "name": "Slide",
-        "input": "3C"
-      },
-      {
-        "name": "Diving Kick",
-        "input": "j.3C"
-      }
-    ],
-    "fatalities": [
-      {
-        "name": "Spin Decap",
-        "input": "Taunt, 214LS+RS"
-      },
-      {
-        "name": "Slice in Half",
-        "input": "[4]6LS"
-      },
-      {
-        "name": "Stage Fatality (Dojo/Bridge/Roof)",
-        "input": "214LS"
-      },
-      {
-        "name": "Stage Fatality (Cliffs)",
-        "input": "j.3C"
-      }
-    ]
-  }
+  "movesList": [
+    {
+      "id": "generic-neutral",
+      "name": "Neutral Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "generic-special",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    }
+  ]
 }

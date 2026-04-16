@@ -6,7 +6,9 @@
       "name": "Angel Step",
       "type": "Movement",
       "inputs": [
-        "236"
+        "down",
+        "down-forward",
+        "forward"
       ],
       "id": "angel-step"
     },
@@ -14,7 +16,10 @@
       "name": "Angel Strike",
       "type": "special",
       "inputs": [
-        "236B"
+        "down",
+        "down-forward",
+        "forward",
+        "B"
       ],
       "id": "angel-strike"
     },
@@ -22,7 +27,8 @@
       "name": "Shield Bash",
       "type": "normal",
       "inputs": [
-        "6A"
+        "forward",
+        "A"
       ],
       "id": "shield-bash"
     },
@@ -30,7 +36,12 @@
       "name": "Heaven Strike",
       "type": "normal",
       "inputs": [
-        "5B, 5B"
+        "neutral",
+        "B",
+        ",",
+        " ",
+        "neutral",
+        "B"
       ],
       "id": "heaven-strike"
     },

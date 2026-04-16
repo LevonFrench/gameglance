@@ -1,52 +1,75 @@
 {
-    "game": "Fatal Fury Special",
-    "character": "Geese Howard",
-    "movesList": [
-        {
-            "id": "sp_0",
-            "name": "Reppuu Ken",
-            "type": "special",
-            "inputs": [
-                "236",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_1",
-            "name": "Double Reppuu Ken",
-            "type": "special",
-            "inputs": [
-                "236236",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_2",
-            "name": "Shippuu Ken",
-            "type": "special",
-            "inputs": [
-                "(In Air) 214",
-                "P"
-            ]
-        },
-        {
-            "id": "sp_3",
-            "name": "Joudan Atemi Nage (High Counter)",
-            "type": "throw",
-            "inputs": [
-                "41236",
-                "LK"
-            ]
-        },
-        {
-            "id": "sp_4",
-            "name": "Chudan Atemi Nage (Mid Counter)",
-            "type": "throw",
-            "inputs": [
-                "41236",
-                "HP"
-            ]
-        }
-    ],
-    "combosList": []
+  "game": "Fatal Fury Special",
+  "character": "Geese Howard",
+  "movesList": [
+    {
+      "id": "sp_0",
+      "name": "Reppuu Ken",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Double Reppuu Ken",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Shippuu Ken",
+      "type": "special",
+      "inputs": [
+        "(",
+        "In",
+        " ",
+        "Air",
+        ")",
+        " ",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "sp_3",
+      "name": "Joudan Atemi Nage (High Counter)",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "LK"
+      ]
+    },
+    {
+      "id": "sp_4",
+      "name": "Chudan Atemi Nage (Mid Counter)",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "HP"
+      ]
+    }
+  ],
+  "combosList": []
 }

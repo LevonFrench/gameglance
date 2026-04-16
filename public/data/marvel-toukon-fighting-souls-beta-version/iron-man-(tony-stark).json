@@ -6,7 +6,8 @@
       "name": "Repulsor Shot",
       "type": "normal",
       "inputs": [
-        "6H"
+        "forward",
+        "H"
       ],
       "id": "repulsor-shot"
     },
@@ -14,7 +15,10 @@
       "name": "Aero Dash",
       "type": "normal",
       "inputs": [
-        "j.66"
+        "j",
+        ".",
+        "forward",
+        "forward"
       ],
       "id": "aero-dash"
     },
@@ -30,7 +34,14 @@
       "name": "Repulsor Blast",
       "type": "special",
       "inputs": [
-        "214+L/M/H"
+        "down",
+        "down-back",
+        "back",
+        "+L",
+        "/",
+        "M",
+        "/",
+        "H"
       ],
       "id": "repulsor-blast"
     },
@@ -38,7 +49,14 @@
       "name": "Smart Missiles",
       "type": "special",
       "inputs": [
-        "623+L/M/H"
+        "forward",
+        "down",
+        "down-forward",
+        "+L",
+        "/",
+        "M",
+        "/",
+        "H"
       ],
       "id": "smart-missiles"
     },
@@ -46,7 +64,15 @@
       "name": "Flight",
       "type": "special",
       "inputs": [
-        "22+S (Air OK)"
+        "down",
+        "down",
+        "+S",
+        " ",
+        "(",
+        "Air",
+        " ",
+        "OK",
+        ")"
       ],
       "id": "flight"
     },
@@ -54,7 +80,12 @@
       "name": "Proton Cannon",
       "type": "super",
       "inputs": [
-        "236+LM/HS"
+        "down",
+        "down-forward",
+        "forward",
+        "+LM",
+        "/",
+        "HS"
       ],
       "id": "proton-cannon"
     },
@@ -62,7 +93,12 @@
       "name": "Iron Avenger",
       "type": "super",
       "inputs": [
-        "214+LM/HS"
+        "down",
+        "down-back",
+        "back",
+        "+LM",
+        "/",
+        "HS"
       ],
       "id": "iron-avenger"
     },
@@ -70,7 +106,10 @@
       "name": "House Party Protocol",
       "type": "super",
       "inputs": [
-        "236+S+H"
+        "down",
+        "down-forward",
+        "forward",
+        "+S+H"
       ],
       "id": "house-party-protocol"
     }
