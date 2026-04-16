@@ -27,6 +27,7 @@ export interface GameDefinition {
   developer?: string;
   releaseYear?: number;
   tagline?: string;
+  rosterCount?: number;
   tabs: string[];
   characters: { id: string, name: string }[];
 }
