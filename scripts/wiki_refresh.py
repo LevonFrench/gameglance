@@ -113,6 +113,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 |------|---------|
 | [[overview]] | High-level synthesis of the entire knowledge base |
 | [[log]] | Chronological record of all wiki operations |
+| [[underpopulated-characters]] | Automatically updated tracker for characters with < 2 moves |
 
 ---
 

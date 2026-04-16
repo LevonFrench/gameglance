@@ -7,6 +7,8 @@ import { CharacterSelectView } from './CharacterSelectView';
 import { MoveListView } from './MoveListView';
 import { GameGlanceMainView } from './GameGlanceView';
 import type { ControllerType } from './glyphMap';
+import { BottomHeader } from './BottomHeader';
+import type { CardTheme } from './BottomHeader';
 
 function App() {
   const [currentView, setCurrentView] = useState<AppView>('game_select');
@@ -14,7 +16,11 @@ function App() {
   const [selectedCharacter, setSelectedCharacter] = useState<string | null>(null);
   const [selectedPlaylist, setSelectedPlaylist] = useState<Move[]>([]);
   const [controller, setController] = useState<ControllerType>('playstation');
+  const [cardTheme, setCardTheme] = useState<CardTheme>(() => {
+    return (localStorage.getItem('gg_card_theme') as CardTheme) || 'default';
+  });
   const [returningFromMoveList, setReturningFromMoveList] = useState(false);
+  const [disableGameSelectAnimation, setDisableGameSelectAnimation] = useState(false);
 
   const navigate = (view: AppView, game: GameDefinition | null = selectedGame, char: string | null = selectedCharacter) => {
     window.history.pushState({ view, gameId: game?.id, charId: char }, '', '');
@@ -49,9 +55,14 @@ function App() {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
+  useEffect(() => {
+    localStorage.setItem('gg_card_theme', cardTheme);
+  }, [cardTheme]);
+
   // Navigation handlers
   const handleSelectGame = (game: GameDefinition) => {
     setReturningFromMoveList(false);
+    setDisableGameSelectAnimation(false);
     if (controller === 'neogeo' && game.developer?.toUpperCase() !== 'SNK') {
       setController('arcade');
     }
@@ -81,7 +92,7 @@ function App() {
   let viewComponent;
   switch (currentView) {
     case 'game_select':
-      viewComponent = <GameSelectView onSelectGame={handleSelectGame} />;
+      viewComponent = <GameSelectView onSelectGame={handleSelectGame} disableInitialAnimation={disableGameSelectAnimation} />;
       break;
     case 'char_select':
       if (!selectedGame) {
@@ -94,8 +105,14 @@ function App() {
          disableInitialAnimation={returningFromMoveList}
          onSetController={setController}
          onSelectCharacter={handleSelectCharacter} 
-         onBack={() => window.history.back()} 
-         onHome={() => navigate('game_select', null, null)}
+         onBack={() => {
+           setDisableGameSelectAnimation(true);
+           window.history.back();
+         }} 
+         onHome={() => {
+           setDisableGameSelectAnimation(true);
+           navigate('game_select', null, null);
+         }}
       />;
       break;
     case 'move_list':
@@ -115,7 +132,10 @@ function App() {
            setReturningFromMoveList(true);
            window.history.back();
          }}
-         onHome={() => navigate('game_select', null, null)}
+         onHome={() => {
+           setDisableGameSelectAnimation(true);
+           navigate('game_select', null, null);
+         }}
       />;
       break;
     case 'main_screen':
@@ -135,8 +155,15 @@ function App() {
   }
 
   return (
-    <div className="app-container">
+    <div className="app-container" data-card-theme={cardTheme} style={{ paddingBottom: '70px' }}>
       {viewComponent}
+      <BottomHeader 
+        controller={controller}
+        onSetController={setController}
+        cardTheme={cardTheme}
+        onSetCardTheme={setCardTheme}
+        gameDeveloper={selectedGame?.developer}
+      />
     </div>
   );
 }

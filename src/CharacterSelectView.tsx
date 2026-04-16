@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from 'react';
 import type { GameDefinition } from './types';
-import { ThemeToggle } from './ThemeToggle';
+
 import { useTheme } from './ThemeContext';
 import { getCardColor } from './palette';
 import { AmbientMesh } from './AmbientMesh';
@@ -16,7 +16,7 @@ interface Props {
   onHome: () => void;
 }
 
-export const CharacterSelectView: React.FC<Props> = ({ game, controller, disableInitialAnimation, onSetController, onSelectCharacter, onBack, onHome }) => {
+export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnimation, onSelectCharacter, onBack, onHome }) => {
   const [favorites, setFavorites] = useState<string[]>([]);
   const { theme } = useTheme();
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
@@ -177,8 +177,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, controller, disable
         >
           {game.name}
         </button>
-        <span style={{ color: 'var(--text-muted)' }}>›</span>
-        <span style={{ color: 'var(--text-primary)', fontWeight: 700 }}>SELECT CHARACTER</span>
+
 
         {/* Right tools: Social links & Theme toggle */}
         <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
@@ -195,31 +194,6 @@ export const CharacterSelectView: React.FC<Props> = ({ game, controller, disable
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v3a3 3 0 0 1-3-3v11a7 7 0 1 1-7-7z"></path></svg>
           </a>
           
-          <select
-            value={controller}
-            onChange={(e) => onSetController(e.target.value as ControllerType)}
-            style={{
-              padding: '0.35rem 0.65rem',
-              background: 'var(--bg-input)',
-              border: '1px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-md)',
-              color: 'var(--text-primary)',
-              fontSize: '0.8rem',
-              fontFamily: 'inherit',
-              cursor: 'pointer',
-              outline: 'none',
-              transition: 'border-color 0.2s',
-            }}
-          >
-            <option value="playstation" style={{ background: 'var(--option-bg)' }}>🎮 PS</option>
-            <option value="xbox" style={{ background: 'var(--option-bg)' }}>🎮 Xbox</option>
-            <option value="switch" style={{ background: 'var(--option-bg)' }}>🎮 Switch</option>
-            <option value="arcade" style={{ background: 'var(--option-bg)' }}>🕹️ Arcade</option>
-            {game.developer?.toUpperCase() === 'SNK' && <option value="neogeo" style={{ background: 'var(--option-bg)' }}>🕹️ Neo Geo</option>}
-          </select>
-
-          <div style={{ width: '1px', height: '20px', background: 'var(--border-subtle)', margin: '0 0.25rem' }}></div>
-          <ThemeToggle />
         </div>
       </nav>
 
@@ -366,6 +340,19 @@ export const CharacterSelectView: React.FC<Props> = ({ game, controller, disable
               }}>
                 {character.name.replace(/ \(Coming Soon\)/, '')}
               </div>
+
+              {/* Move count */}
+              {!isComingSoon && character.moveCount !== undefined && character.moveCount > 0 && (
+                <div style={{
+                  marginTop: '0.4rem',
+                  fontSize: '0.85rem',
+                  color: 'var(--text-tertiary)',
+                  fontWeight: 500,
+                  zIndex: 1,
+                }}>
+                  {character.moveCount} Moves
+                </div>
+              )}
 
               {/* Coming soon badge */}
               {isComingSoon && (

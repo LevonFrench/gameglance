@@ -1,45 +1,39 @@
 {
-  "game": "Battle Arena Toshinden 3",
-  "character": "Veil",
-  "movesList": [
-    {
-      "name": "Veil Slice",
-      "input": "236 + WS/SS",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        " ",
-        "+",
-        " ",
-        "W",
-        "S",
-        "/",
-        "S",
-        "S"
-      ],
-      "type": "special",
-      "id": "veil-slice"
+  "name": "Veil",
+  "type": "Boss / Katars",
+  "moves": {
+    "specials": [
+      {
+        "name": "Hakidan",
+        "input": "236A/B",
+        "type": "Projectile"
+      },
+      {
+        "name": "Soumakidan",
+        "input": "623A/B",
+        "type": "Uppercut"
+      },
+      {
+        "name": "Hell's Tornado",
+        "input": "214C/D",
+        "type": "Special Kick"
+      },
+      {
+        "name": "Invisible Move",
+        "input": "421A/B",
+        "type": "Teleport"
+      }
+    ],
+    "overdrive": {
+      "name": "Meteor Blow",
+      "input": "236236A",
+      "type": "Super"
     },
-    {
-      "name": "Shadow (OD)",
-      "input": "236236 + SS",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "down",
-        "down-forward",
-        "forward",
-        " ",
-        "+",
-        " ",
-        "S",
-        "S"
-      ],
-      "type": "special",
-      "id": "shadow-(od)"
+    "desperation": {
+      "name": "Fanatic Illusion",
+      "input": "632141236A",
+      "type": "Desperation"
     }
-  ],
-  "combosList": []
+  },
+  "character": "Veil"
 }

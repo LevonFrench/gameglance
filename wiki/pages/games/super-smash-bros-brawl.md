@@ -1,0 +1,22 @@
+---
+title: "Super Smash Bros. Brawl"
+type: game
+tags: [super-smash-bros-brawl]
+created: 2026-04-16
+updated: 2026-04-16
+sources: 0
+---
+
+# Super Smash Bros. Brawl
+
+## Overview
+*No overview generated yet.*
+
+## Characters (38 registered)
+*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+## Mechanics
+*No mechanics mapped.*
+
+## Meta
+*No meta/tier lists loaded.*

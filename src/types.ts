@@ -31,7 +31,8 @@ export interface GameDefinition {
   rosterCount?: number;
   tabs?: string[];
   isDraft?: boolean;
-  characters: { id: string, name: string }[];
+  isHidden?: boolean;
+  characters: { id: string, name: string, isHidden?: boolean, moveCount?: number }[];
 }
 
 export type AppView = 'game_select' | 'char_select' | 'move_list' | 'main_screen';

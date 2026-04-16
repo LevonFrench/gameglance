@@ -1,5 +1,5 @@
 ---
-title: "Fatal Fury: City of the Wolves"
+title: "City Of The Wolves"
 type: game
 tags: [fatal-fury-city-of-the-wolves]
 created: 2026-04-16
@@ -7,7 +7,7 @@ updated: 2026-04-16
 sources: 0
 ---
 
-# Fatal Fury: City of the Wolves
+# City Of The Wolves
 
 ## Overview
 *No overview generated yet.*

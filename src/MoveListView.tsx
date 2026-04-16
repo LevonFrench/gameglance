@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import type { GameDefinition, CharacterExport, Move } from './types';
 import { GlyphSequence } from './GlyphSequence';
 import type { ControllerType } from './glyphMap';
-import { ThemeToggle } from './ThemeToggle';
 import { useTheme } from './ThemeContext';
 import { AmbientMesh } from './AmbientMesh';
 
@@ -27,7 +26,7 @@ const TYPE_COLORS: Record<string, string> = {
   common: '#10b981',
 };
 
-export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, onSetController, onToggleMove, onLaunchMainScreen, onBack, onHome }) => {
+export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, onToggleMove, onLaunchMainScreen, onBack, onHome }) => {
   const [characterData, setCharacterData] = useState<CharacterExport | null>(null);
   const [orderedTabs, setOrderedTabs] = useState<string[]>([]);
   const [loadingError, setLoadingError] = useState<string>('');
@@ -374,31 +373,6 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
             <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v3a3 3 0 0 1-3-3v11a7 7 0 1 1-7-7z"></path></svg>
           </a>
 
-          <select
-            value={controller}
-            onChange={(e) => onSetController(e.target.value as ControllerType)}
-            style={{
-              padding: '0.35rem 0.65rem',
-              background: 'var(--bg-input)',
-              border: '1px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-md)',
-              color: 'var(--text-primary)',
-              fontSize: '0.8rem',
-              fontFamily: 'inherit',
-              cursor: 'pointer',
-              outline: 'none',
-              transition: 'border-color 0.2s',
-            }}
-          >
-            <option value="playstation" style={{ background: 'var(--option-bg)' }}>🎮 PS</option>
-            <option value="xbox" style={{ background: 'var(--option-bg)' }}>🎮 Xbox</option>
-            <option value="switch" style={{ background: 'var(--option-bg)' }}>🎮 Switch</option>
-            <option value="arcade" style={{ background: 'var(--option-bg)' }}>🕹️ Arcade</option>
-            {game.developer?.toUpperCase() === 'SNK' && <option value="neogeo" style={{ background: 'var(--option-bg)' }}>🕹️ Neo Geo</option>}
-          </select>
-
-          <div style={{ width: '1px', height: '20px', background: 'var(--border-subtle)', margin: '0 0.25rem' }}></div>
-          <ThemeToggle />
         </div>
       </nav>
 
@@ -622,6 +596,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                 <div
                   key={move.id}
                   id={`move-${move.id}`}
+                  data-selected={isSelected ? 'true' : 'false'}
                   onClick={() => onToggleMove(move)}
                   style={{
                     padding: '1rem 1.25rem',

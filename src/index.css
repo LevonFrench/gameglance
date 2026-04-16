@@ -428,3 +428,488 @@ h1, h2, h3, h4, h5, h6 {
   outline: 2px solid var(--accent-indigo);
   outline-offset: 2px;
 }
+
+/* ═══════════════════════════════════════════════════════════════
+   CARD THEMES
+   ═══════════════════════════════════════════════════════════════ */
+
+/* ── Sega Genesis Cartridge Theme ──────────────────────────── */
+[data-card-theme="genesis"] button[id^="game-card-"],
+[data-card-theme="genesis"] button[id^="char-card-"],
+[data-card-theme="genesis"] div[id^="move-"] {
+  background: #111111 !important;
+  border: 2px solid #2a2a2a !important;
+  border-radius: 8px 8px 4px 4px !important; /* Slightly curved top like a cart */
+  box-shadow: 
+    inset 2px 2px 0px rgba(255,255,255,0.08),
+    inset -4px -4px 6px rgba(0,0,0,0.9),
+    0 8px 20px rgba(0,0,0,0.6) !important;
+  position: relative !important;
+  backdrop-filter: none !important;
+  color: #fff !important;
+  overflow: hidden !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+/* Selected state override for moves */
+[data-card-theme="genesis"] div[id^="move-"][data-selected="true"] {
+  background: #2a1111 !important; /* Dark crimson tint */
+  border-color: #6a1a1a !important;
+  box-shadow: 
+    inset 2px 2px 0px rgba(255,255,255,0.1),
+    inset -4px -4px 6px rgba(0,0,0,0.9),
+    0 8px 20px rgba(220,38,38,0.2) !important;
+}
+
+/* Add the inner label sticker */
+[data-card-theme="genesis"] button[id^="game-card-"]::after,
+[data-card-theme="genesis"] button[id^="char-card-"]::after,
+[data-card-theme="genesis"] div[id^="move-"]::after {
+  content: '';
+  position: absolute;
+  top: 15%;
+  bottom: 8%;
+  left: 8%;
+  right: 8%;
+  background-color: #000;
+  background-image: 
+    linear-gradient(rgba(255,255,255,0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,0.15) 1px, transparent 1px);
+  background-size: 8px 8px; /* The iconic grid */
+  border: 1px solid #444;
+  border-top: 18px solid #b71c1c; /* The red Sega Genesis stripe */
+  border-radius: 2px;
+  z-index: 0;
+  pointer-events: none;
+  box-shadow: 0 0 10px rgba(0,0,0,0.8) inset;
+}
+
+/* Ensure text stays visible on top of the label */
+[data-card-theme="genesis"] button[id^="game-card-"] > *,
+[data-card-theme="genesis"] button[id^="char-card-"] > *,
+[data-card-theme="genesis"] div[id^="move-"] > * {
+  z-index: 1;
+  position: relative;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+}
+
+[data-card-theme="genesis"] button[id^="game-card-"]:hover,
+[data-card-theme="genesis"] button[id^="char-card-"]:hover,
+[data-card-theme="genesis"] div[id^="move-"]:hover {
+  transform: translateY(-4px) scale(1.02) !important;
+  border-color: #444 !important;
+  box-shadow: 
+    inset 2px 2px 0px rgba(255,255,255,0.15),
+    inset -4px -4px 6px rgba(0,0,0,0.9),
+    0 12px 25px rgba(0,0,0,0.8) !important;
+}
+
+/* Tweak the text colors inside Genesis theme to look cool on black grid */
+[data-card-theme="genesis"] .text-muted,
+[data-card-theme="genesis"] .text-tertiary {
+  color: #ccc !important;
+}
+
+[data-card-theme="genesis"] h2,
+[data-card-theme="genesis"] .font-mono {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+  color: #fff !important;
+}
+
+[data-card-theme="genesis"] .gradient-overlay {
+  display: none !important; /* Hide standard gradients */
+}
+
+
+/* ── SNES Cartridge Theme ──────────────────────────── */
+[data-card-theme="snes"] button[id^="game-card-"],
+[data-card-theme="snes"] button[id^="char-card-"],
+[data-card-theme="snes"] div[id^="move-"] {
+  background: #bdc1c6 !important; /* Classic SNES gray */
+  border: 1px solid #77818c !important;
+  border-radius: 6px !important;
+  box-shadow: 
+    inset 2px 2px 4px rgba(255,255,255,0.7),
+    inset -2px -2px 4px rgba(0,0,0,0.3),
+    0 6px 12px rgba(0,0,0,0.3) !important;
+  position: relative !important;
+  backdrop-filter: none !important;
+  color: #111 !important;
+  overflow: hidden !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+[data-card-theme="snes"] div[id^="move-"][data-selected="true"] {
+  background: #cbc3cd !important; /* Light purple-ish gray tint */
+  border-color: #8c778c !important;
+  box-shadow: 
+    inset 2px 2px 4px rgba(255,255,255,0.8),
+    inset -2px -2px 4px rgba(0,0,0,0.4),
+    0 6px 12px rgba(90,75,134,0.4) !important; /* Using SNES purple shadow */
+}
+
+/* Grooved top indent */
+[data-card-theme="snes"] button[id^="game-card-"]::before,
+[data-card-theme="snes"] button[id^="char-card-"]::before,
+[data-card-theme="snes"] div[id^="move-"]::before {
+  content: '';
+  position: absolute;
+  top: 8px;
+  left: 10%;
+  right: 10%;
+  height: 4px;
+  background: #aab;
+  border-radius: 6px;
+  box-shadow: inset 0 2px 2px rgba(0,0,0,0.4), inset 0 -1px 1px rgba(255,255,255,0.8);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Rounded glossy label */
+[data-card-theme="snes"] button[id^="game-card-"]::after,
+[data-card-theme="snes"] button[id^="char-card-"]::after,
+[data-card-theme="snes"] div[id^="move-"]::after {
+  content: '';
+  position: absolute;
+  top: 18%;
+  bottom: 8%;
+  left: 8%;
+  right: 8%;
+  background: linear-gradient(135deg, #111 0%, #2a2a2a 100%);
+  border: 1px solid #000;
+  border-top: 10px solid #5a4b86; /* Purple banding */
+  border-bottom: 2px solid #555;
+  border-radius: 4px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.8);
+  pointer-events: none;
+  z-index: 1;
+}
+
+[data-card-theme="snes"] button[id^="game-card-"] > *,
+[data-card-theme="snes"] button[id^="char-card-"] > *,
+[data-card-theme="snes"] div[id^="move-"] > * {
+  z-index: 2;
+  position: relative;
+  text-shadow: 1px 1px 2px rgba(0,0,0,0.9), -1px -1px 0 rgba(0,0,0,0.5);
+  color: #fff !important;
+}
+
+[data-card-theme="snes"] h2 {
+  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
+  font-weight: 800;
+  font-style: italic; /* Dynamic 90s aesthetic slant */
+  letter-spacing: -0.02em;
+}
+
+[data-card-theme="snes"] button[id^="game-card-"]:hover,
+[data-card-theme="snes"] button[id^="char-card-"]:hover,
+[data-card-theme="snes"] div[id^="move-"]:hover {
+  transform: translateY(-4px) scale(1.02) !important;
+  box-shadow: 
+    inset 2px 2px 4px rgba(255,255,255,0.8),
+    inset -2px -2px 4px rgba(0,0,0,0.3),
+    0 12px 20px rgba(0,0,0,0.5) !important;
+}
+
+[data-card-theme="snes"] .text-muted,
+[data-card-theme="snes"] .text-tertiary {
+  color: #c0c0c0 !important;
+}
+[data-card-theme="snes"] .gradient-overlay { display: none !important; }
+
+
+/* ── CPS2 Arcade Board Theme ───────────────────────── */
+[data-card-theme="cps2"] button[id^="game-card-"],
+[data-card-theme="cps2"] button[id^="char-card-"],
+[data-card-theme="cps2"] div[id^="move-"] {
+  background: #005bb5 !important; /* Bright Capcom Blue */
+  border: 2px solid #003366 !important;
+  border-radius: 4px !important;
+  box-shadow: 
+    inset 4px 4px 0px rgba(255,255,255,0.2),
+    inset -4px -4px 0px rgba(0,0,0,0.3),
+    0 8px 15px rgba(0,0,0,0.8) !important;
+  position: relative !important;
+  backdrop-filter: none !important;
+  color: #fff !important;
+  overflow: hidden !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+[data-card-theme="cps2"] div[id^="move-"][data-selected="true"] {
+  background: #0077e6 !important; /* Vivid Blue tint */
+  box-shadow: 
+    inset 4px 4px 0px rgba(255,255,255,0.4),
+    inset -4px -4px 0px rgba(0,0,0,0.2),
+    0 8px 20px rgba(0,119,230,0.5) !important;
+}
+
+/* Side Cooling Vents */
+[data-card-theme="cps2"] button[id^="game-card-"]::before,
+[data-card-theme="cps2"] button[id^="char-card-"]::before,
+[data-card-theme="cps2"] div[id^="move-"]::before {
+  content: '';
+  position: absolute;
+  top: 12px;
+  bottom: 12px;
+  left: 0;
+  right: 0;
+  background-image: 
+    repeating-linear-gradient(0deg, transparent 0px, transparent 10px, rgba(0,0,0,0.4) 10px, rgba(0,0,0,0.4) 16px),
+    repeating-linear-gradient(0deg, transparent 0px, transparent 10px, rgba(0,0,0,0.4) 10px, rgba(0,0,0,0.4) 16px);
+  background-size: 24px 100%, 24px 100%;
+  background-position: left center, right center;
+  background-repeat: no-repeat, no-repeat;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Small central warning label */
+[data-card-theme="cps2"] button[id^="game-card-"]::after,
+[data-card-theme="cps2"] button[id^="char-card-"]::after,
+[data-card-theme="cps2"] div[id^="move-"]::after {
+  content: '';
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  left: 15%;
+  right: 15%;
+  background: linear-gradient(135deg, #222, #111);
+  border: 1px solid #000;
+  border-top: 5px solid #ffcc00; /* Yellow hazard edge */
+  border-radius: 2px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.8);
+  pointer-events: none;
+  z-index: 1;
+}
+
+[data-card-theme="cps2"] button[id^="game-card-"] > *,
+[data-card-theme="cps2"] button[id^="char-card-"] > *,
+[data-card-theme="cps2"] div[id^="move-"] > * {
+  z-index: 2;
+  position: relative;
+  text-shadow: 2px 2px 0 rgba(0,0,0,1);
+  color: #fff !important;
+}
+
+[data-card-theme="cps2"] h2 {
+  font-family: 'Impact', 'Arial Black', sans-serif !important;
+  text-transform: uppercase;
+  font-style: italic;
+  letter-spacing: 0.05em;
+}
+
+[data-card-theme="cps2"] button[id^="game-card-"]:hover,
+[data-card-theme="cps2"] button[id^="char-card-"]:hover,
+[data-card-theme="cps2"] div[id^="move-"]:hover {
+  transform: translateY(-4px) scale(1.02) !important;
+  box-shadow: 
+    inset 4px 4px 0px rgba(255,255,255,0.4),
+    inset -4px -4px 0px rgba(0,0,0,0.1),
+    0 12px 18px rgba(0,0,0,0.7) !important;
+}
+
+[data-card-theme="cps2"] .text-muted,
+[data-card-theme="cps2"] .text-tertiary {
+  color: #ccc !important;
+}
+[data-card-theme="cps2"] .gradient-overlay { display: none !important; }
+
+
+/* ── Neo Geo MVS Cartridge Theme ───────────────────── */
+[data-card-theme="mvs"] button[id^="game-card-"],
+[data-card-theme="mvs"] button[id^="char-card-"],
+[data-card-theme="mvs"] div[id^="move-"] {
+  background: #a9cc18 !important; /* MVS Translucent Green/Yellow */
+  border: 2px solid #5a6b0c !important;
+  border-radius: 4px !important;
+  box-shadow: 
+    inset 2px 2px 0px rgba(255,255,255,0.4),
+    inset -4px -4px 6px rgba(0,0,0,0.4),
+    0 8px 15px rgba(0,0,0,0.5) !important;
+  position: relative !important;
+  backdrop-filter: none !important;
+  color: #111 !important;
+  overflow: hidden !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+[data-card-theme="mvs"] div[id^="move-"][data-selected="true"] {
+  background: #e5ff4d !important; /* Brighter neon when selected */
+  box-shadow: 
+    inset 2px 2px 0px rgba(255,255,255,0.6),
+    inset -4px -4px 6px rgba(0,0,0,0.3),
+    0 8px 20px rgba(169, 204, 24, 0.5) !important;
+}
+
+/* Ribbed grips on the sides */
+[data-card-theme="mvs"] button[id^="game-card-"]::before,
+[data-card-theme="mvs"] button[id^="char-card-"]::before,
+[data-card-theme="mvs"] div[id^="move-"]::before {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  background-image: 
+    repeating-linear-gradient(0deg, transparent 0px, transparent 8px, rgba(0,0,0,0.3) 8px, rgba(0,0,0,0.3) 12px),
+    repeating-linear-gradient(0deg, transparent 0px, transparent 8px, rgba(0,0,0,0.3) 8px, rgba(0,0,0,0.3) 12px);
+  background-size: 15px 100%, 15px 100%;
+  background-position: left center, right center;
+  background-repeat: no-repeat, no-repeat;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* White sticker label */
+[data-card-theme="mvs"] button[id^="game-card-"]::after,
+[data-card-theme="mvs"] button[id^="char-card-"]::after,
+[data-card-theme="mvs"] div[id^="move-"]::after {
+  content: '';
+  position: absolute;
+  top: 12%;
+  bottom: 12%;
+  left: 12%;
+  right: 12%;
+  background: #fdfdfc;
+  border: 1px solid #999;
+  border-radius: 4px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
+  pointer-events: none;
+  z-index: 1;
+}
+
+[data-card-theme="mvs"] button[id^="game-card-"] > *,
+[data-card-theme="mvs"] button[id^="char-card-"] > *,
+[data-card-theme="mvs"] div[id^="move-"] > * {
+  z-index: 2;
+  position: relative;
+  color: #111 !important;
+  text-shadow: none !important;
+  font-family: 'Arial Black', sans-serif !important;
+}
+
+[data-card-theme="mvs"] h2 {
+  font-style: italic;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+}
+
+[data-card-theme="mvs"] button[id^="game-card-"]:hover,
+[data-card-theme="mvs"] button[id^="char-card-"]:hover,
+[data-card-theme="mvs"] div[id^="move-"]:hover {
+  transform: translateY(-4px) scale(1.02) !important;
+  box-shadow: 
+    inset 2px 2px 0px rgba(255,255,255,0.4),
+    inset -4px -4px 6px rgba(0,0,0,0.4),
+    0 12px 18px rgba(0,0,0,0.6) !important;
+}
+
+[data-card-theme="mvs"] .text-muted,
+[data-card-theme="mvs"] .text-tertiary {
+  color: #555 !important;
+}
+[data-card-theme="mvs"] svg { color: #111 !important; }
+[data-card-theme="mvs"] .gradient-overlay { display: none !important; }
+
+
+/* ── Neo Geo AES Cartridge Theme ───────────────────── */
+[data-card-theme="aes"] button[id^="game-card-"],
+[data-card-theme="aes"] button[id^="char-card-"],
+[data-card-theme="aes"] div[id^="move-"] {
+  background: #0f0f0f !important; /* Premium gloss black */
+  border: 2px solid #222 !important;
+  border-radius: 6px !important;
+  box-shadow: 
+    inset 0 2px 5px rgba(255,255,255,0.1),
+    inset -2px -4px 6px rgba(0,0,0,0.9),
+    0 8px 15px rgba(0,0,0,0.8) !important;
+  position: relative !important;
+  backdrop-filter: none !important;
+  color: #fff !important;
+  overflow: hidden !important;
+  transform: translateY(0) scale(1) !important;
+}
+
+[data-card-theme="aes"] div[id^="move-"][data-selected="true"] {
+  background: #1a1a1a !important; /* Slightly lighter premium black */
+  border-color: #d4af37 !important; /* Gold border when selected */
+  box-shadow: 
+    inset 0 2px 5px rgba(255,255,255,0.15),
+    inset -2px -4px 6px rgba(0,0,0,0.9),
+    0 8px 25px rgba(212, 175, 55, 0.2) !important;
+}
+
+/* Gold bordered inner label */
+[data-card-theme="aes"] button[id^="game-card-"]::after,
+[data-card-theme="aes"] button[id^="char-card-"]::after,
+[data-card-theme="aes"] div[id^="move-"]::after {
+  content: '';
+  position: absolute;
+  top: 10%;
+  bottom: 10%;
+  left: 8%;
+  right: 8%;
+  background: linear-gradient(180deg, #181818 0%, #0a0a0a 100%);
+  border: 2px solid #d4af37; /* Metallic Gold */
+  border-radius: 4px;
+  box-shadow: 
+    0 0 0 2px #0f0f0f,
+    0 0 0 3px #d4af37,
+    inset 0 2px 10px rgba(0,0,0,0.9);
+  pointer-events: none;
+  z-index: 1;
+}
+
+[data-card-theme="aes"] button[id^="game-card-"] > *,
+[data-card-theme="aes"] button[id^="char-card-"] > *,
+[data-card-theme="aes"] div[id^="move-"] > * {
+  z-index: 2;
+  position: relative;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
+  color: #fff !important;
+}
+
+[data-card-theme="aes"] h2 {
+  font-family: 'Times New Roman', Times, serif !important; /* AES labels often used classic serifs for titles */
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  color: #fff !important;
+}
+
+/* Subtle gloss reflection */
+[data-card-theme="aes"] button[id^="game-card-"]::before,
+[data-card-theme="aes"] button[id^="char-card-"]::before,
+[data-card-theme="aes"] div[id^="move-"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 50%;
+  background: linear-gradient(to bottom, rgba(255,255,255,0.05) 0%, transparent 100%);
+  z-index: 1;
+  pointer-events: none;
+}
+
+[data-card-theme="aes"] button[id^="game-card-"]:hover,
+[data-card-theme="aes"] button[id^="char-card-"]:hover,
+[data-card-theme="aes"] div[id^="move-"]:hover {
+  transform: translateY(-4px) scale(1.02) !important;
+  box-shadow: 
+    inset 0 2px 5px rgba(255,255,255,0.1),
+    inset -2px -4px 6px rgba(0,0,0,0.9),
+    0 12px 20px rgba(0,0,0,0.9) !important;
+}
+
+[data-card-theme="aes"] .text-muted,
+[data-card-theme="aes"] .text-tertiary {
+  color: #d4af37 !important; /* Gold tertiary text */
+}
+[data-card-theme="aes"] .gradient-overlay { display: none !important; }
+

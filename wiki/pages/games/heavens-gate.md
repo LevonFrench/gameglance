@@ -1,5 +1,5 @@
 ---
-title: "Heaven"
+title: "Heaven's Gate"
 type: game
 tags: [heavens-gate]
 created: 2026-04-16
@@ -7,7 +7,7 @@ updated: 2026-04-16
 sources: 0
 ---
 
-# Heaven
+# Heaven's Gate
 
 ## Overview
 *No overview generated yet.*

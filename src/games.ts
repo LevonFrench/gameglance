@@ -1292,7 +1292,7 @@ rosterCount: 18,
 
     id: 'fatal-fury-king-of-fighters',
 
-    name: "Fatal Fury: King of Fighters",
+    name: "Fatal Fury",
 
     developer: "SNK",
 
@@ -2660,7 +2660,7 @@ rosterCount: 32,
       { id: 'dvorah', name: 'D\'Vorah' },
       { id: 'ermac', name: 'Ermac' },
       { id: 'erron-black', name: 'Erron Black' },
-      { id: 'ferratorr', name: 'Ferra/Torr' },
+      { id: 'ferratorr', name: 'Ferra Torr' },
       { id: 'goro', name: 'Goro' },
       { id: 'jacqui-briggs', name: 'Jacqui Briggs' },
       { id: 'jason-voorhees', name: 'Jason Voorhees' },
@@ -7942,8 +7942,7 @@ rosterCount: 8,
 
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  }
-
+  },
   {
     id: 'aggressors-of-dark-kombat',
     name: "Aggressors of Dark Kombat",
@@ -7959,8 +7958,7 @@ rosterCount: 8,
       { id: 'ganzagawa', name: 'Ganzagawa' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  }
-
+  },
   {
     id: 'chaos-code-new-sign-of-catastrophe',
     name: "Chaos Code: New Sign of Catastrophe",
@@ -7976,8 +7974,7 @@ rosterCount: 8,
       { id: 'cthylla', name: 'Cthylla' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  }
-
+  },
   {
     id: 'rival-schools-united-by-fate',
     name: "Rival Schools United by Fate",
@@ -8002,8 +7999,7 @@ rosterCount: 8,
       { id: 'sakura-kasugano', name: 'Sakura Kasugano' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  }
-
+  },
   {
     id: 'star-gladiator-episode-i-final-crusade',
     name: "Star Gladiator Episode I Final Crusade",
@@ -8022,8 +8018,7 @@ rosterCount: 8,
       { id: 'kappah', name: 'Kappah' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  }
-
+  },
   {
     id: 'tmnt-tournament-fighters-genesis',
     name: "TMNT Tournament Fighters (Genesis)",
@@ -8042,8 +8037,7 @@ rosterCount: 8,
       { id: 'karai', name: 'Karai' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  }
-
+  },
   {
     id: 'tmnt-tournament-fighters-nes',
     name: "TMNT Tournament Fighters (NES)",
@@ -8058,8 +8052,7 @@ rosterCount: 8,
       { id: 'shredder', name: 'Shredder' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  }
-
+  },
   {
     id: 'tmnt-tournament-fighters-snes',
     name: "TMNT Tournament Fighters (SNES)",

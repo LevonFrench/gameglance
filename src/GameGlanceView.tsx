@@ -7,14 +7,14 @@ import { useTheme } from './ThemeContext';
 interface Props {
   playlist: Move[];
   gameName: string;
-  gameDeveloper: string;
+  gameDeveloper?: string;
   characterName: string;
   controller: ControllerType;
-  onSetController: (c: ControllerType) => void;
+  onSetController?: (c: ControllerType) => void;
   onExit: () => void;
 }
 
-export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, gameDeveloper, characterName, controller, onSetController, onExit }) => {
+export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, characterName, controller, onExit }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
@@ -237,28 +237,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, gameDe
 
         {/* Right side: controls */}
         <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-          <select
-            id="gameglance-controller"
-            value={controller}
-            onChange={(e) => onSetController(e.target.value as ControllerType)}
-            style={{
-              padding: '0.45rem 0.65rem',
-              background: 'var(--bg-input)',
-              border: '1px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-md)',
-              color: 'var(--text-primary)',
-              fontSize: '0.8rem',
-              fontFamily: 'inherit',
-              cursor: 'pointer',
-              outline: 'none',
-            }}
-          >
-            <option value="playstation" style={{ background: 'var(--option-bg)' }}>PS</option>
-            <option value="xbox" style={{ background: 'var(--option-bg)' }}>Xbox</option>
-            <option value="switch" style={{ background: 'var(--option-bg)' }}>Switch</option>
-            <option value="arcade" style={{ background: 'var(--option-bg)' }}>Arcade</option>
-            {gameDeveloper.toUpperCase() === 'SNK' && <option value="neogeo" style={{ background: 'var(--option-bg)' }}>Neo Geo</option>}
-          </select>
+
 
           <button
             id="gameglance-play-pause"

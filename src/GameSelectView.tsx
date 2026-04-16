@@ -1,12 +1,12 @@
 import React, { useState, useEffect, useRef } from 'react';
 import type { GameDefinition } from './types';
 import { SUPPORTED_GAMES } from './games';
-import { ThemeToggle } from './ThemeToggle';
 import { useTheme } from './ThemeContext';
 import { AmbientMesh } from './AmbientMesh';
 
 interface Props {
   onSelectGame: (game: GameDefinition) => void;
+  disableInitialAnimation?: boolean;
 }
 
 const GAME_THEMES: Record<string, { gradient: string; icon: string; tagline: string; glowColor: string }> = {
@@ -266,12 +266,12 @@ const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: any) => {
   )
 }
 
-export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
+export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAnimation }) => {
   const [favorites, setFavorites] = useState<string[]>([]);
   const [developerFilter, setDeveloperFilter] = useState<string>('All');
   const [sortBy, setSortBy] = useState<'alpha' | 'date'>('date');
   const [searchQuery, setSearchQuery] = useState<string>('');
-  const [showCards, setShowCards] = useState(false);
+  const [showCards, setShowCards] = useState(disableInitialAnimation || false);
   const { theme } = useTheme();
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
   
@@ -360,21 +360,12 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
         speed={1.0} 
       />
 
-      {/* Theme toggle — top right */}
-      <div style={{
-        position: 'fixed',
-        top: '1.25rem',
-        right: '1.25rem',
-        zIndex: 200,
-      }}>
-        <ThemeToggle />
-      </div>
 
-      {/* Header */}
+
       <header style={{
         textAlign: 'center',
         marginBottom: '3rem',
-        animation: 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both',
+        animation: disableInitialAnimation ? 'none' : 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both',
         position: 'sticky',
         top: 0,
         zIndex: 50,

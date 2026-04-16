@@ -1,5 +1,5 @@
 ---
-title: "Samurai Shodown IV: Amakusa"
+title: "Samurai Shodown IV: Amakusa's Revenge"
 type: game
 tags: [samurai-shodown-iv-amakusas-revenge]
 created: 2026-04-16
@@ -7,12 +7,12 @@ updated: 2026-04-16
 sources: 0
 ---
 
-# Samurai Shodown IV: Amakusa
+# Samurai Shodown IV: Amakusa's Revenge
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (0 registered)
+## Characters (16 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

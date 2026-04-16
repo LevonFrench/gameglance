@@ -1,14 +1,30 @@
 {
-  "game": "Battle Arena Toshinden 3",
-  "character": "Schultz",
-  "movesList": [
-    {
-      "id": "general-attack",
-      "name": "Basic Attack",
-      "type": "normal",
-      "inputs": [
-        "P"
-      ]
+  "name": "Schultz",
+  "type": "Rungo Counterpart / Power",
+  "note": "Clone of Rungo Iron.",
+  "moves": {
+    "specials": [
+      {
+        "name": "Power Blast",
+        "input": "236A/B",
+        "type": "Projectile"
+      },
+      {
+        "name": "Batter Up",
+        "input": "623A/B",
+        "type": "Anti-Air"
+      }
+    ],
+    "overdrive": {
+      "name": "Mega Fire Strike",
+      "input": "236236B",
+      "type": "Super"
+    },
+    "desperation": {
+      "name": "Daichi Hyakusai",
+      "input": "412363214C",
+      "type": "Desperation"
     }
-  ]
+  },
+  "character": "Schultz"
 }
