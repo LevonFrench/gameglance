@@ -29,7 +29,7 @@
 - Dead or Alive 3
 - Dead or Alive 4
 - Dead or Alive 5
-- Dead or Alive 6 - Complete Move List (Exhaustive)
+- Dead or Alive 6
 - DNF Duel
 - Dragon Ball FighterZ
 - Fatal Fury 2
@@ -104,13 +104,6 @@
 - Super Street Fighter II: The New Challengers
 - Tatsunoko vs. Capcom: Ultimate All-Stars
 - Tekken 8
-- The King of Fighters '94
-- The King of Fighters '95
-- The King of Fighters '96
-- The King of Fighters '97
-- The King of Fighters '98
-- The King of Fighters '98 Ultimate Match
-- The King of Fighters '99
 - The King of Fighters 2000
 - The King of Fighters 2001
 - The King of Fighters 2002
@@ -118,6 +111,13 @@
 - The King of Fighters XIII
 - The King of Fighters XIV
 - The King of Fighters XV
+- The King of Fighters'94
+- The King of Fighters'95
+- The King of Fighters'96
+- The King of Fighters'97
+- The King of Fighters'98
+- The King of Fighters'98 Ultimate Match
+- The King of Fighters'99
 - The Last Blade
 - The Last Blade 2
 - Ultimate Marvel vs. Capcom 3
@@ -131,11 +131,11 @@
 - Vampire Savior 2: The Lord of Vampire
 - Vampire Savior: The Lord of Vampire
 - Virtua Fighter
-- Virtua Fighter 1 - Complete Move List (Exhaustive)
+- Virtua Fighter 1
 - Virtua Fighter 2
 - Virtua Fighter 3
 - Virtua Fighter 4
-- Virtua Fighter 5 Ultimate Showdown - Complete Move List (Exhaustive)
+- Virtua Fighter 5 Ultimate Showdown
 - Waku Waku 7
 - World Heroes Perfect
 - X-Men vs. Street Fighter
