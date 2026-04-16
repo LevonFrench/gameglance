@@ -1,5 +1,5 @@
 ---
-title: "Mortal Kombat (2011)"
+title: "Mortal Kombat"
 type: game
 tags: [mortal-kombat-(2011)]
 created: 2026-04-15
@@ -7,7 +7,7 @@ updated: 2026-04-15
 sources: 0
 ---
 
-# Mortal Kombat (2011)
+# Mortal Kombat
 
 ## Overview
 *No overview generated yet.*

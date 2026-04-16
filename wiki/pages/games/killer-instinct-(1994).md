@@ -1,5 +1,5 @@
 ---
-title: "Killer Instinct (1994)"
+title: "Killer Instinct"
 type: game
 tags: [killer-instinct-(1994)]
 created: 2026-04-15
@@ -7,7 +7,7 @@ updated: 2026-04-15
 sources: 0
 ---
 
-# Killer Instinct (1994)
+# Killer Instinct
 
 ## Overview
 *No overview generated yet.*

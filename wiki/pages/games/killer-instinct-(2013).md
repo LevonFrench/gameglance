@@ -1,5 +1,5 @@
 ---
-title: "Killer Instinct (2013)"
+title: "Killer Instinct"
 type: game
 tags: [killer-instinct-(2013)]
 created: 2026-04-15
@@ -7,7 +7,7 @@ updated: 2026-04-15
 sources: 0
 ---
 
-# Killer Instinct (2013)
+# Killer Instinct
 
 ## Overview
 *No overview generated yet.*

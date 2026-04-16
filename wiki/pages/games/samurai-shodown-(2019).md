@@ -1,5 +1,5 @@
 ---
-title: "Samurai Shodown (2019)"
+title: "Samurai Shodown"
 type: game
 tags: [samurai-shodown-(2019)]
 created: 2026-04-15
@@ -7,7 +7,7 @@ updated: 2026-04-15
 sources: 0
 ---
 
-# Samurai Shodown (2019)
+# Samurai Shodown
 
 ## Overview
 *No overview generated yet.*
