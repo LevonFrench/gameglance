@@ -9,7 +9,9 @@ def clean_id(name):
     cid = name.lower()
     cid = re.sub(r'[^a-z0-9\s-]', '', cid)
     cid = re.sub(r'\s+', '-', cid)
-    return cid
+    cid = re.sub(r'-+', '-', cid)
+    return cid.strip('-')
+
 
 def get_docx_text(path):
     try:
