@@ -20,7 +20,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ---
 
-## 🎮 Games (144)
+## 🎮 Games (139)
 
 ### Complete Roster
 | Page | Game | Characters |
@@ -46,9 +46,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[x-men-children-of-the-atom]] | X-Men: Children of the Atom | 0 |
 | [[fatal-fury-city-of-the-wolves]] | Fatal Fury: City of the Wolves | 0 |
 | [[capcom-vs-snk]] | Capcom vs. SNK | 0 |
-| [[capcom-vs-snk-2]] | Capcom vs SNK 2 | 70 |
-| [[cyberbots]] | Cyberbots | 0 |
-| [[cyberbots-full-metal-madness]] | Cyberbots: Full Metal Madness | 0 |
+| [[cyberbots-full-metal-madness]] | Cyberbots: Full Metal Madness | 128 |
 | [[darkstalkers-the-night-warriors]] | Darkstalkers: The Night Warriors | 0 |
 | [[darkstalkers-the-night-warriors-(vampire-the-night-warriors)]] | Darkstalkers: The Night Warriors (Vampire: The Night Warriors) | 0 |
 | [[dead-or-alive]] | Dead or Alive | 0 |
@@ -166,9 +164,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[waku-waku-7]] | Waku Waku 7 | 0 |
 | [[world-heroes-perfect]] | World Heroes Perfect | 0 |
 | [[x-men-vs-street-fighter]] | X-Men vs. Street Fighter | 0 |
-| [[jojo-s-bizarre-adventure-hftf]] | JoJo’s Bizarre Adventure_ HFTF | 999 |
-| [[savage-reign]] | Savage Reign | 999 |
-| [[voltage-fighter-gowcaizer]] | Voltage Fighter Gowcaizer | 999 |
 
 ---
 
@@ -216,6 +211,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ## Statistics
 
-- **Total pages**: 146 (144 games)
-- **Games covered**: 144
+- **Total pages**: 141 (139 games)
+- **Games covered**: 139
 - **Last updated**: 2026-04-15
