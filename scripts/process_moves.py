@@ -168,10 +168,18 @@ def main():
             def add_moves(source_list, mtype):
                 if not source_list: return
                 for m in source_list:
-                    keys = list(m.keys())
-                    name_key = next((k for k in keys if k.lower() == 'name'), 'Unknown')
+                    if isinstance(m, str):
+                        movesList.append({"name": m, "type": mtype, "inputs": ["Unknown"]})
+                        continue
+                        
+                    keys = list(m.keys()) if isinstance(m, dict) else []
+                    name_key = next((k for k in keys if 'name' in k.lower() or 'move' in k.lower() or 'attack' in k.lower() or 'action' in k.lower()), None)
                     input_key = next((k for k in keys if 'input' in k.lower() or 'command' in k.lower()), None)
                     
+                    if not name_key:
+                        name_key = keys[0] if keys else None
+                        
+                    if not name_key or name_key not in m: continue
                     m_name = m[name_key]
                     m_input = m[input_key] if input_key and input_key in m else "Unknown"
                     if isinstance(m_input, str):
@@ -179,18 +187,34 @@ def main():
                         
                     movesList.append({"name": m_name, "type": mtype, "inputs": m_input})
 
-            add_moves(roster_char.get('command_normals', []) or roster_char.get('commandNormals', []), "command_normal")
-            add_moves(roster_char.get('special_moves', []) or roster_char.get('specialMoves', []), "special")
+            add_moves(roster_char.get('command_normals', []) or roster_char.get('commandNormals', []) or roster_char.get('common_strings', []), "command_normal")
             
-            supers = roster_char.get('super_moves', []) or roster_char.get('superMoves', []) or roster_char.get('super_combos', []) or roster_char.get('desperation_moves', [])
+            specials = (roster_char.get('special_moves', []) or roster_char.get('specialMoves', []) or 
+                        roster_char.get('specials', []) or roster_char.get('stand_off_specials', []) or 
+                        roster_char.get('stand_on_specials', []) or roster_char.get('blast_1', []) or 
+                        roster_char.get('blast_2', []) or roster_char.get('moves', []) or 
+                        roster_char.get('boosted_specials', []) or roster_char.get('abc_special', []) or 
+                        roster_char.get('aura_arts', []))
+            add_moves(specials, "special")
+            
+            supers = (roster_char.get('super_moves', []) or roster_char.get('superMoves', []) or 
+                      roster_char.get('super_combos', []) or roster_char.get('desperation_moves', []) or 
+                      roster_char.get('supers', []) or roster_char.get('super', []) or 
+                      roster_char.get('ultimate', []) or roster_char.get('super_desperation_moves', []) or 
+                      roster_char.get('overdrives', []) or roster_char.get('ultimate_power_attack', []) or 
+                      roster_char.get('super_power_attacks', []) or roster_char.get('blockbusters', []))
             add_moves(supers, "super")
             
-            add_moves(roster_char.get('unique_attacks', []) or roster_char.get('uniqueAttacks', []), "unique")
+            uniques = (roster_char.get('unique_attacks', []) or roster_char.get('uniqueAttacks', []) or 
+                       roster_char.get('trait', []) or roster_char.get('stylish_moves', []) or 
+                       roster_char.get('overdrive_power', []))
+            add_moves(uniques, "unique")
+            
             add_moves(roster_char.get('normals', []) or roster_char.get('normal_moves', []), "normal")
             add_moves(roster_char.get('throws', []), "throw")
             
-            # Fatalities / finishers
-            finishers = roster_char.get('fatalities', []) or roster_char.get('finishers', [])
+            finishers = (roster_char.get('fatalities', []) or roster_char.get('finishers', []) or 
+                         roster_char.get('fatal_attack', []) or roster_char.get('fatal_ko', []))
             add_moves(finishers, "finisher")
 
             out_doc = {
