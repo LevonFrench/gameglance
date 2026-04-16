@@ -298,32 +298,6 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
             </datalist>
           </div>
 
-          {/* Platform / Developer Pill */}
-          <select
-            value={developerFilter}
-            onChange={(e) => setDeveloperFilter(e.target.value)}
-            style={{
-              padding: '0.6rem 1.25rem',
-              borderRadius: 'var(--radius-full)',
-              border: '1px solid var(--border-subtle)',
-              background: 'var(--bg-glass)',
-              color: 'var(--text-primary)',
-              fontSize: '0.9rem',
-              fontWeight: 600,
-              cursor: 'pointer',
-              outline: 'none',
-              backdropFilter: 'blur(12px)',
-              transition: 'all 0.3s ease',
-              appearance: 'none',
-            }}
-          >
-            {allDevelopers.map(dev => (
-              <option key={dev} value={dev} style={{ background: 'var(--bg-card)', color: 'var(--text-primary)' }}>
-                {dev === 'All' ? 'All Platforms' : dev}
-              </option>
-            ))}
-          </select>
-
           {/* Sort Pill */}
           <select
             value={sortBy}
