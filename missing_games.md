@@ -1,0 +1,1719 @@
+# Missing Move Lists
+
+The following games are registered in `games.ts` but have zero parsed character JSONs inside `public/data`:
+
+- (All previous) + Banjo & Kazooie
+- (Same as Samurai Shodown V)
+- 2014 - Arcade
+- 2B
+- A.B.A
+- A.K.I.
+- ARIA
+- Abel
+- Abelia
+- Abigail
+- Abubo
+- Ace
+- Adachi
+- Adelheid
+- Adon
+- Adult
+- Adult)
+- Aeon
+- Aganos
+- Akari Ichijou
+- Akatsuki
+- Akiha Tohno
+- Akiha Tohno (Seifuku)
+- Akiha Vermilion
+- Akihiko
+- Akira
+- Akira Yuki
+- Akuma
+- Alaric
+- Alba Meira
+- Aleksander
+- Alessy
+- Alex
+- Algol
+- Alice
+- Alien
+- Alisa
+- Alisa Bosconovitch
+- Allen Snider
+- Alsion III
+- Alvan
+- Amakusa
+- Amane Nishiki
+- Amaterasu
+- Amy
+- Anakaris
+- Android 13
+- Android 16
+- Android 17
+- Android 18
+- Android 19
+- Android 21 (Lab Coat)
+- Android 21 (Majin)
+- Andy Bogard
+- Angel
+- Angus
+- Anila
+- Anji Mito
+- Anna
+- Anna Williams
+- Annie
+- Annie Hamilton
+- Answer
+- Antonov
+- Aoi
+- Aoko Aozaki
+- Apprentice
+- Appule
+- Aquaman
+- Arakune
+- Archetype:Earth
+- Arcueid Brunestud
+- Area
+- Ares
+- Arieta
+- Arik
+- Arina
+- Aris
+- Arizona
+- Armadon
+- Armor King
+- Armor King II
+- Arthur
+- Ash
+- Ash Crimson
+- Ashrah
+- Astaroth
+- Asuka
+- Asuka Karashima
+- Asuka Kazama
+- Athena
+- Athena Asamiya
+- Atom Eve
+- Atrocitus
+- Atwiki
+- Aulbath
+- Aurelia
+- Awakened Kaede
+- Axel Hawk
+- Axl Low
+- Ayane
+- Azrael
+- Azucena
+- Azwel
+- B. Jenet
+- B. Orchid
+- B.B. Hood
+- Babidi
+- Baby Vegeta
+- Bad Mr. Frosty
+- Baek
+- Baek Doo San
+- Bahn
+- Baiken
+- Bakuryu
+- Balido
+- Balrog
+- Bandeiras Hattori
+- Bane
+- Bang Shishigami
+- Bao
+- Bao & Mao
+- Baraka
+- Bardock
+- Basara
+- Bass
+- Batgirl
+- Batman
+- Batsu
+- Battle Beast
+- Bayhou
+- Bayman
+- Bayonetta
+- Bean
+- Bedman
+- Beelzebub
+- Beerus
+- Belial
+- Benimaru
+- Benimaru Nikaido
+- Benten
+- Beowulf
+- Berserker
+- Big Band
+- Big Bear
+- Billy
+- Billy Kane
+- Bilstein
+- Bio F.R.E.A.K.S.
+- Birdie
+- Bishamon
+- Black
+- Black Adam
+- Black Canary
+- Black Dahlia
+- Black Heart
+- Black Manta
+- Black Panther
+- Blair Dame
+- Blake
+- Blanka
+- Blaze
+- Blizzard
+- Blob
+- Blue Beetle
+- Blue Mary
+- Blue Suede Goo
+- Bo\
+- Bob Richards
+- Bob Wilson
+- Bojack
+- Bonker
+- Bonus - Kun
+- Bowser
+- Bowser Jr.
+- Brad
+- Brad Wong
+- Brainiac
+- Brider
+- Bridget
+- Bristol Weller
+- Brocken
+- Broly
+- Broly (DBS)
+- Broly (Z)
+- Bruce
+- Bruce Irvin
+- Bryan
+- Bryan Fury
+- Bullet
+- Bulleta
+- Buntaro Kudo
+- Burn
+- Burter
+- Busuzima
+- Byakuya
+- Byleth
+- C. Viper
+- Cable
+- Caffeine Nicotine
+- Cammy
+- Candy
+- Captain America
+- Captain Atlantis
+- Captain Cold
+- Captain Falcon
+- Captain Ginyu
+- Captain Kidd
+- Captain Marvel
+- Captain Olimar
+- Carl Clover
+- Carlo
+- Carmine
+- Carol
+- Cass
+- Cassandra
+- Casshan
+- Cassie Cage
+- Catwoman
+- Celica A. Mercury
+- Cell
+- Cell Jr
+- Cerebella
+- Cervantes
+- Cetrion
+- Chae Lim
+- Chagi
+- Chaka
+- Cham Cham
+- Chameleon
+- Chang
+- Chang Koehan
+- Chaos
+- Charlie
+- Charlotte
+- Cheetah
+- Cheng Sinzan
+- Chester
+- Chi-Chi
+- Chiaotzu
+- Chie
+- Chief Thunder
+- Chilli & Pepper
+- Chin Gentsai
+- Chin Wo
+- Chipp Zanuff
+- Chiyomaru
+- Chizuru Kagura
+- Choi Bounge
+- Chok
+- Chonrei
+- Chonshu
+- Chris
+- Chris Redfield
+- Chris Wayne
+- Christie
+- Christie Monteiro
+- Chun - Li
+- Chun-Li
+- Chung
+- Chung Paifu
+- Ciel
+- Cinder
+- Clara Hananokoji
+- Clark
+- Clark Still
+- Claudio
+- Claudio Serafino
+- Cloud Strife
+- Coco
+- Cody
+- Colossus
+- Combot
+- Condor
+- Cooler
+- Corrin
+- Count of Monte Cristo
+- Cracker Jack
+- Craig Marduk
+- Crimson Glory
+- Crimson Viper
+- Crispy
+- Cristiano Ronaldo
+- Cronos
+- Crusader
+- Crusher
+- Cui
+- Cuila
+- Cupe
+- Cybershell
+- Cyborg
+- Cyclops
+- Cyrax
+- D\
+- Dabura
+- Daegon
+- Dairou
+- Daisuke
+- Damian Shade
+- Dan
+- Dandy - J
+- Dante
+- Dao - Long
+- Dark Pit
+- Darkseid
+- Darkstalkers
+- Darli Dagger
+- Darrius
+- Darth Vader
+- Darun Mister
+- David
+- Dawson McShane
+- Dead Apostle Noel
+- Deadpool
+- Deadshot
+- Death Adder
+- Death Mask
+- Deathstroke
+- Decapre
+- Dee Jay
+- Deku
+- Demitri
+- Demitri Maximoff
+- Demon King Piccolo
+- Demuth
+- Devil
+- Devil Jin
+- Devilman
+- Devilotte
+- Dhalsim
+- Diablo
+- Diddy Kong
+- Diego
+- Dinosaur
+- Dio
+- Dio Brando
+- Divada
+- Divine Fist
+- Dizzy
+- Doc
+- Doc Strange
+- Doctor Doom
+- Doctor Fate
+- Doctor Strange
+- Doctrine Dark
+- Dodoria
+- Dolores
+- Donatello
+- Dong Hwan
+- Donkey Kong
+- Donovan
+- Donovan Baine
+- Doomsday
+- Dormammu
+- Doronjo
+- Double
+- Dr. Baldhead
+- Dr. Bosconovitch
+- Dr. Doom
+- Dr. Gero
+- Dr. Mario
+- Dr. Paradigm
+- Dr. Wheelo
+- Draco
+- Dragon
+- Dragon Knight
+- Dragunov
+- Drahmin
+- Duck Hunt
+- Duck King
+- Dudley
+- Duke
+- Duo Lon
+- Duolon
+- Dupli - Kate
+- E. Honda
+- Eagle
+- Early
+- Earthquake
+- Ebi
+- Ed
+- Eddie
+- Eddy Gordo
+- Edge
+- Edge Master
+- Eiji
+- Eiji Kisaragi
+- Eileen
+- Ein
+- El Blaze
+- El Fuerte
+- Ele
+- Elena
+- Elias
+- Elias Patrick
+- Eliot
+- Elisabeth
+- Elisabeth Blanctorche
+- Eliza
+- Elizabeth
+- Ellis
+- Elphelt
+- Elphelt Valentine
+- Eltnum
+- Elysium
+- Emi
+- Emilio
+- Enchantress
+- End
+- Enja
+- Enkidu
+- Eos
+- Erik
+- Ermac
+- Erron Black
+- Es
+- Eternal Champion
+- Eustace
+- Evil Ryu
+- Exile
+- Eyedol
+- Ezio Auditore
+- F.A.N.G
+- Fahkumram
+- Falco
+- Falco Lombardi
+- Falkie
+- Fang
+- Fasha
+- Faust
+- Fei Long
+- Felden
+- Felicia
+- Feng
+- Feng Wei
+- Fernandez
+- Ferra/Torr
+- Fiery Phoenix
+- Fighters
+- Fighting
+- Filia
+- Fiolina Germi
+- Firebrand
+- Firestorm
+- Flash
+- Fo
+- Forest Law
+- Fox
+- Fox McCloud
+- Foxy
+- Franco Bash
+- Frank West
+- Freddy Krueger
+- Freeman
+- Freeza
+- Frieza
+- Frost
+- Fudomaru
+- Fujin
+- Fukua
+- Fulgore
+- Future
+- Future)
+- Fuuma
+- G
+- G.O.D.
+- GT)
+- Gado
+- Gaedel
+- Gai
+- Gaia
+- Gaira
+- Galdon
+- Galford
+- Gambit
+- Gamof
+- Gamora
+- Gan
+- Ganesha
+- Gang - Il
+- Ganondorf
+- Ganryu
+- Gantz
+- Gargos
+- Garlic Jr.
+- Garuda
+- Gates
+- Gato
+- Gawaine
+- Geese
+- Geese Howard
+- Gen
+- Gen Fu
+- Genbu no Okina
+- General Blue
+- General RAAM
+- General Zod
+- Genichirou Shindo
+- Genjuro
+- Genjuro Kibagami
+- Genma
+- Geralt of Rivia
+- Geras
+- Gerelt
+- Ghost Rider
+- Gigas
+- Gill
+- Gillius
+- Ginyu
+- Giovanna
+- Girardot
+- Glacius
+- Goemon
+- Goenitz
+- Gogeta (SS4)
+- Gogeta (SSGSS)
+- Goh
+- Gohan (Adult)
+- Gohan (Kid
+- Gohan (Teen)
+- Goku
+- Goku (Blue)
+- Goku (GT)
+- Goku (Kid
+- Goku (SS)
+- Goku (Ultra Instinct)
+- Goku Black
+- Gold Lightan
+- Goldlewis Dickinson
+- Gon
+- Gongsun Li
+- Gordeau
+- Gordon
+- Gorilla Grodd
+- Goro
+- Goro Daimon
+- Goten
+- Gotenks
+- Gouken
+- Gowcaizer
+- Gozu
+- Gozumaru
+- Grandpa Gohan
+- Grant
+- Grappler
+- Great Ape
+- Greed
+- Green Arrow
+- Green Lantern
+- Greg
+- Greninja
+- Griffon
+- Grimnir
+- Grøh
+- Guile
+- Guldo
+- Gun Jack
+- Gunter
+- Guy
+- Habaki
+- Hadassa
+- Haggar
+- Hagure Hitogata
+- Hakan
+- Hakumen
+- Hakushon Daimao
+- Hanzo
+- Hanzo Hattori
+- Haohmaru
+- Happy Chaos
+- Harley Quinn
+- Hauzer
+- Havik
+- Hawkeye
+- Hawkgirl
+- Hayate
+- Hazama
+- Heart
+- Heaven
+- Heavy D!
+- Heidern
+- Heihachi
+- Heihachi Mishima
+- Hein
+- Helena
+- Helga
+- Hellboy
+- Hellstinger
+- Hercule
+- Hero
+- Hibiki
+- Hibiki Kohaku
+- Hibiki Takane
+- High Five
+- Hikaru Jomon
+- Hilda
+- Hilde
+- Hinako Shijou
+- Hinata
+- Hirudegarn
+- Hisako
+- Hisui
+- Hisui & Kohaku
+- Hit
+- Hitman
+- Hitomi
+- Hizumi Yukinoue
+- Hokuto
+- Hokutomaru
+- Hol Horse
+- Hon - Fu
+- Honey
+- Honoka
+- Hooter
+- Hotaru
+- Hotaru Futaba
+- Houoh
+- Hsien - Ko
+- Hsien-Ko
+- Hsu Hao
+- Hualin
+- Hugo
+- Huitzil
+- Hulk
+- Hwa Jai
+- Hwang
+- Hwoarang
+- Hyde
+- Hydron
+- Hyo
+- Hyo Amano
+- I - No
+- I-No
+- Ibuki
+- Ice Climbers
+- Iceman
+- Ickybod Clay
+- Iggy
+- Igret
+- Ike
+- Ike - Du
+- Incineroar
+- Inferno
+- Ingrid
+- Inkling
+- Inquisitor
+- Invincible
+- Iori
+- Iori Yagami
+- Ippatsuman
+- Iroha
+- Iron Fist
+- Iron Man
+- Iron Monk
+- Iron Tager
+- Isabelle
+- Isla
+- Ivy
+- Ivysaur
+- Izayoi
+- Izumi
+- Izuna
+- J. Carn
+- J.D. Stone
+- JP
+- Jaba
+- Jack
+- Jack - 2
+- Jack - 5
+- Jack - 6
+- Jack - 7
+- Jack - 8
+- Jack - O\
+- Jack Turner
+- Jack-O\
+- Jacky
+- Jacky Bryant
+- Jacqui Briggs
+- Jade
+- Jade Dragon
+- Jae Hoon
+- Jagi
+- Jago
+- Jam Kuradoberi
+- Jamie
+- Jamm
+- Jane
+- Janemba
+- Janet
+- Jann Lee
+- Janne
+- Jarek
+- Jason Voorhees
+- Jax
+- Jean
+- Jean Pierre Polnareff
+- Jeanne d\
+- Jedah
+- Jedah Dohma
+- Jeffry
+- Jeice
+- Jen-Tai
+- Jenny
+- Jetta Maxx
+- Jhun Hoon
+- Jigglypuff
+- Jill Valentine
+- Jin
+- Jin Chonrei
+- Jin Chonshu
+- Jin Fu - Ha
+- Jin Kazama
+- Jin Kisaragi
+- Jin Saotome
+- Jinpachi Mishima
+- Jiren
+- Joe
+- Joe Higashi
+- Joe the Condor
+- John Crawley
+- Johnny
+- Johnny Cage
+- Johnny Maximum
+- Joker
+- Jon Talbain
+- Jonathan Blade
+- Jorge
+- Joseph Joestar
+- Jotaro Kujo
+- Jubei
+- Jubei Yamada
+- Judas
+- Judgement
+- Juggernaut
+- Juli
+- Julia Chang
+- Julia Chang (Jaycee)
+- Jun
+- Jun Kazama
+- Jun the Swan
+- June
+- Juni
+- Junpei
+- Juri
+- Justice
+- Juzoh Kanzaki
+- Jyazu
+- KOF 2001
+- K\
+- Kabal
+- Kaede
+- Kage
+- Kagura Mutsuki
+- Kaguya
+- Kai
+- Kain
+- Kairi
+- Kamui
+- Kan-Ra
+- Kang
+- Kanji
+- Kanji Kokuin
+- Kano
+- Kaori Sanada
+- Kapila
+- Karas
+- Karasu
+- Karin
+- Karin Son
+- Karman Cole
+- Kasumi
+- Kasumi Todoh
+- Katarina Alves
+- Kaumi
+- Kayin
+- Kazuki
+- Kazuma
+- Kazumi Mishima
+- Kazuya
+- Kazuya Mishima
+- Kefla
+- Keiichiro Washizuka
+- Keith
+- Keith Wayne
+- Ken
+- Ken Masters
+- Ken Saotome
+- Ken the Eagle
+- Kendo
+- Kenji
+- Kenshi
+- Kenshiro
+- Kensou
+- Kevin
+- Khameleon
+- Khan
+- Kid Buu
+- Kid Chi - Chi
+- Kid Trunks
+- Kid)
+- Kids Akira
+- Kids Sarah
+- Kilgore
+- Kilik
+- Killer Frost
+- Kim
+- Kim Kaphwan
+- Kim Sue Il
+- Kim Wu
+- Kimberly
+- King
+- King Cold
+- King Dedede
+- King II
+- King K. Rool
+- King Lion
+- King Vegeta
+- Kinta Kokuin
+- Kintaro
+- Kira
+- Kirby
+- Kitana
+- Kiyoko Mitarai
+- Kliff Undersn
+- Kobra
+- Kof XV
+- Kohaku
+- Kohaku & Mech - Hisui
+- Kohryu
+- Kokonoe
+- Kokoro
+- Kolin
+- Kollector
+- Kongou
+- Koromaru
+- Korr
+- Kotal Kahn
+- Kouma Kishima
+- Kouryu
+- Kratos
+- Krillin
+- Krohnen McDougall
+- Kuhn
+- Kula
+- Kula Diamond
+- Kum Haehyun
+- Kuma
+- Kuma II
+- Kumachan
+- Kumi Kubota
+- Kung Jin
+- Kung Lao
+- Kunimitsu
+- Kunimitsu II
+- Kunoichi
+- Kuon
+- Kurama Yashamaru
+- Kurosawa
+- Kusanagi
+- Ky Kiske
+- Kyo
+- Kyo Kusanagi
+- Kyoshiro
+- Kyosuke
+- Kyosuke Shigure
+- La Mariposa
+- Labrys
+- Larcen Tyler
+- Larry Light
+- Lars
+- Lars Alexandersson
+- Lau
+- Launcher
+- Laura
+- Laurence Blood
+- Lavia
+- Law
+- Leatherface
+- Lee
+- Lee Chaolan
+- Lee Pai Long
+- Lee Recca
+- Lei
+- Lei - Fei
+- Lei Fang
+- Lei Wulong
+- Leifang
+- Leixia
+- Lenny Creston
+- Leo
+- Leo Kliesen
+- Leo Whitefang
+- Leon
+- Leona Heidern
+- Leonardo
+- Leroy
+- Leroy Smith
+- Lettas
+- Lex Luther
+- Li Long
+- Li Mei
+- Li Xiangfei
+- Lidia Sobieska
+- Lien Neville
+- Lili
+- Lili Rochefort
+- Lilith
+- Lily
+- Lin
+- Ling Xiaoyu
+- Link
+- Linne
+- Lion
+- Lisa
+- Litchi Faye - Ling
+- Little Mac
+- Liu Kang
+- Lizardman
+- Lobo
+- Londrekia
+- Long
+- Lord Raptor
+- Lord Slug
+- Lost Warrior
+- Love Heart
+- Luca
+- Lucario
+- Lucas
+- Lucia
+- Lucilius
+- Lucina
+- Lucky Chloe
+- Lucky Glauber
+- Luigi
+- Luise Meyrink
+- Luke
+- Luna
+- Luong
+- Lynn
+- M. Bison
+- M.A.D
+- MODOK
+- Magaki
+- Magneto
+- Maherl
+- Mai
+- Mai - Ling
+- Mai Natsume
+- Mai Shiranui
+- Majin Buu
+- Major Benson
+- Maki
+- Makoto
+- Makoto Mizoguchi
+- Makoto Nanaya
+- Malice
+- Malika
+- Malin
+- Malys
+- Mamiya
+- Mana
+- Manon
+- Marco
+- Marco Rodrigues
+- Margaret
+- Mariah
+- Marie
+- Marie Rose
+- Mario
+- Mario Gallo Bestino
+- Marion
+- Marisa
+- Marron
+- Mars People
+- Marshall Law
+- Marth
+- Martian Manhunter
+- Marvel
+- Marvel vs. Capcom: Infinite
+- Mary
+- Mash Kyrielight
+- Master Raven
+- Master Roshi
+- Master Sage
+- Mature
+- Mauru
+- Mavado
+- Max Eagle
+- Maxi
+- Maxima
+- May
+- May Lee
+- Maya
+- Meat
+- Mech - Hisui
+- Mecha Frieza
+- Mega Man
+- Mega Man Volnutt
+- Mega Man X
+- Megumi Suzuki
+- Meitenkun
+- Menat
+- Merkava
+- Meta - Cooler
+- Meta Knight
+- Metera
+- Mewtwo
+- Mezu
+- Mian
+- Michael Max
+- Michael Roa Valdamjong
+- Michelangelo
+- Michelle
+- Michelle Chang
+- Micky Rogers
+- Mid
+- Midler
+- Might
+- Mignon Beart
+- Miguel Caballero Rojo
+- Miharu Hirano
+- Mii Brawler/Gunner/Swordfighter
+- Mika
+- Mila
+- Milan
+- Mileena
+- Millia Rage
+- Min Min
+- Mina
+- Mingmei
+- Mira
+- Miser
+- Miss Til
+- Mitchell Middleton Knight (MidKnight)
+- Mitsuko
+- Mitsuru
+- Mitsurugi
+- Miyako Arima
+- Mokap
+- Mokujin
+- Moloch
+- Momiji
+- Momo
+- Momoko
+- Mondo
+- Monster Zarbon
+- Moriya Minakata
+- Morrigan
+- Morrigan Aensland
+- Motaro
+- Mr. Big
+- Mr. Game & Watch
+- Mr. Jones
+- Mr. Karate
+- Mr. Karate II
+- Ms. Fortune
+- Mu - 12
+- Mudman
+- Muhammad Avdol
+- Mui Mui
+- Mukuro
+- Musashi
+- Muscle Power
+- Mushira
+- Naga
+- Nagase
+- Nagi
+- Nagisa
+- Nagoriyuki
+- Nail
+- Nakoruru
+- Nana Hidaka
+- Nanase
+- Naoto
+- Naoto Kurogane
+- Naoto Shirogane
+- Nappa
+- Naru
+- Nash
+- Natsu
+- Natsume
+- Ndidi
+- Necalli
+- Neco - Arc
+- Neco - Arc Chaos
+- Necrid
+- Necro
+- Negan
+- Neinhalt Sieger
+- Nelson
+- Nemesis
+- Nereid
+- Ness
+- NiCO
+- Nicola
+- Nicole - 458
+- Nier
+- Night Terror
+- Night of Wallachia
+- Nightmare
+- Nightmare Geese
+- Nightwarriors
+- Nightwing
+- Nightwolf
+- Nina
+- Nina Williams
+- Nine
+- Nine the Phantom
+- Ninja
+- Ninon Beart
+- Nitara
+- Nobunaga
+- Noctis Lucis Caelum
+- Noel
+- Noel Vermillion
+- Noob - Smoke
+- Noob Saibot
+- Noriaki Kakyoin
+- Nova
+- Nrvnqsr Chaos
+- Nu - 13
+- Nuno
+- Nuova Shenron
+- Nyotengu
+- Ogre
+- Ohga
+- Olcadan
+- Oleander
+- Omega Red
+- Omega Shenron
+- Omen
+- Omni - Man
+- Onaga
+- Oni
+- Order - Sol
+- Orie
+- Oro
+- Orochi Chris
+- Orochi Iori
+- Orochi Leona
+- Orochi Shermie
+- Orochi Yashiro
+- Orochimaru
+- Oswald
+- Otane Goketsuji
+- Oume & Otane
+- Oume Goketsuji
+- PC - Axl Low
+- PS3
+- PS4
+- Pac - Man
+- Pai
+- Pai Chan
+- Painwheel
+- Pakawa
+- Palutena
+- Pan
+- Panchos
+- Panda
+- Paprika
+- Parasoul
+- Patricia
+- Patroklos
+- Paul
+- Paul Phoenix
+- Peacemaker
+- Peach
+- Peacock
+- Pepe
+- Percival
+- Petshop
+- Phase 4
+- Phoenix
+- Phoenix Wright
+- Phonon
+- Piccolo
+- Pichu
+- Picky
+- Piela
+- Pikachu
+- Pikkon
+- Pilaf Machine
+- Piranha Plant
+- Pit
+- Platinum
+- Platinum the Trinity
+- Poison
+- Poison Ivy
+- Pokémon Trainer (Charizard
+- Polimar
+- Politank - Z
+- Pom
+- Poochy
+- Popura Hananokoji
+- Potemkin
+- Powered Ciel
+- Predator
+- Preecha
+- Prince
+- Princess Devilotte
+- Princess Sissy
+- Prototype Jack
+- Psylocke
+- Pullum Purna
+- Pupa
+- Pyra
+- Pyra/Mythra
+- Pyron
+- Pyrrha
+- Q
+- Q-Bee
+- Quan Chi
+- R. Mika
+- R.A.X. Coswell
+- R.O.B.
+- Rachael
+- Rachel
+- Rachel Alucard
+- Radel
+- Raditz
+- Ragna
+- Ragna the Bloodedge
+- Rai
+- Raiden
+- Raiga
+- Rain
+- Rakshasa
+- Ralf
+- Ralf Jones
+- Rambo
+- Ramlethal Valentine
+- Ramon
+- Ramses III
+- Ran
+- Ran/Ryo
+- Ranger
+- Ranmaru
+- Raoh
+- Raphael
+- Rash
+- Rashid
+- Rasputin
+- Ravange
+- Raven
+- Raven Gindhar
+- Recoome
+- Red Arcueid
+- Red Arremer
+- Red Hood
+- Redeye
+- Regina
+- Rei
+- Reiji
+- Reiji Oyama
+- Reiko
+- Reina
+- Relius Clover
+- Remi Otogiri
+- Remy
+- Rena
+- Rent - A - Hero
+- Reptile
+- Revenant
+- Rex Splode
+- Richard
+- Richard Meyer
+- Richter Belmont
+- Rick Strowd
+- Ridley
+- Riesbyfe Stridberg
+- Rig
+- Rikuo
+- Rila
+- Rimururu
+- Riptide
+- Riptor
+- Rise
+- Roa
+- Robert
+- Robert Garcia
+- Roberto
+- Robin
+- Robo - Fortune
+- Robo - Ky
+- RoboCop
+- Robot
+- Rock
+- Rock Howard
+- Rocket Raccoon
+- Roger
+- Roger Jr.
+- Rogue
+- Rokkan
+- Rolento
+- Rolf
+- Roomi
+- Rosa
+- Rosalina & Luma
+- Rose
+- Rouge
+- Roy
+- Ruby
+- Rufus
+- Rugal Bernstein
+- Rungo
+- Ryo
+- Ryo Sakazaki
+- Ryofu
+- Ryoho
+- Ryoko
+- Ryoko Owada
+- Ryougi Shiki
+- Ryu
+- Ryu Hayabusa
+- Ryuhaku Todoh
+- Ryuji Yamazaki
+- Saber
+- Sabretooth
+- Sabrewulf
+- Sadira
+- Sagat
+- Saibaman
+- Saiki
+- Saisyu Kusanagi
+- Saizo
+- Saizo Hattori
+- Saki
+- Sakura
+- Sakura Kasugano
+- Salvatore Ganacci
+- Salza
+- Samurai Shodown V Special
+- Samus Aran
+- Samus Aran / Zero Suit Samus
+- Sanane
+- Sanman
+- Santana
+- Sarah
+- Sarah Bryant
+- Sareena
+- Sasquatch
+- Satoru
+- Satsuki Yumizuka
+- Saturn
+- Sauron
+- Scarecrow
+- Schultz
+- Scion
+- Scorpion
+- Sean
+- Sebastian
+- Sektor
+- Senator
+- Sentinel
+- Senzo
+- Seong Mi - na
+- Seong Mi-na
+- Seox
+- Sephiroth
+- Sergei Dragunov
+- Serious Mr. Karate
+- Servbot
+- Seth
+- Setsuka
+- Setsuna
+- Shade
+- Shadow
+- Shadow Dio
+- Shadow Jago
+- Shadow Yamoto
+- Shadowgeist
+- Shaheen
+- Shaia Hanyū
+- Shang Tsung
+- Shank
+- Shanty
+- Shao Kahn
+- Sharon
+- Shazam
+- She - Hulk
+- Sheeva
+- Sheik
+- Sheik Maherl
+- Shen
+- Shen Long
+- Shen Woo
+- Shermie
+- Shiba
+- Shigen Naoe
+- Shiki
+- Shiki Tohno
+- Shikyoh
+- Shin
+- Shin Akuma
+- Shin Hisako
+- Shina
+- Shingo
+- Shingo Yabuki
+- Shinnok
+- Shinnosuke Kagami
+- Shinobu Kawasaki
+- Shintaro Kudo
+- Shion
+- Shiranui Genan
+- Shirase
+- Shizuku
+- Shizumaru
+- Sho
+- Sho Hayate
+- Shogun
+- Shoma
+- Shujinko
+- Shulk
+- Shuma - Gorath
+- Shuma-Gorath
+- Shun
+- Shun\
+- Shura
+- Sie Kensou
+- Siegfried
+- Silber
+- Silver Samurai
+- Silvie Paula Paula
+- Simon Belmont
+- Sin Kiske
+- Sinclair
+- Sindel
+- Sinestro
+- Sinjin
+- Sion Eltnam Atlasia
+- Sion TATARI
+- Skarlet
+- Skullomania
+- Sky High
+- Slash
+- Slayer
+- Slither
+- Smoke
+- Sodom
+- Sofia
+- Sogetsu
+- Soiree Meira
+- Sokaku Mochizuki
+- Sol Badguy
+- Solid Snake
+- Solis R8000
+- Solomon Grundy
+- Son Goku
+- SonSon
+- Sonia
+- Sonic the Hedgehog
+- Sonya Blade
+- Sophitia
+- Sora
+- Souther
+- Spartan - 458
+- Spawn
+- Spencer
+- Spider - Man
+- Spider-Man
+- Spinal
+- Spiral
+- Spopovitch
+- Squigly
+- Squirtle)
+- Starfire
+- Stella
+- Steve
+- Steve Fox
+- Storm
+- Strider Hiryu
+- Strife
+- Striker
+- Stryker
+- Stun
+- Sub - Zero
+- Sub-Zero
+- Suija
+- Super - Skrull
+- Super 17
+- Super Buu
+- Supergirl
+- Superman
+- Supreme Kai
+- Susano
+- Susano\
+- Swamp Thing
+- Swift Master
+- Sylvie Paula Paula
+- Syn Shenron
+- Syuten-Dozi
+- T. Hawk
+- T.J. Combo
+- Tabasa
+- Taffy
+- Taka - Arashi
+- Takeda Takahashi
+- Taki
+- Takuma Sakazaki
+- Talazia
+- Talim
+- Talon
+- Tam Tam
+- Tamaki
+- Tamaki Shindo
+- Tambourine
+- Tanya
+- Tao Pai Pai
+- Taokaka
+- Tapion
+- Taskmaster
+- Tau
+- Taven
+- Teddie
+- Teen
+- Tekkaman
+- Tekkaman Blade
+- Temjin
+- Ten Count
+- Tengu
+- Tenho
+- Tenjinbashi Sujiroku
+- Tenshinhan
+- Terminator
+- Terry
+- Terry Bogard
+- Tessa
+- Test - Kun
+- Testament
+- Tetsuko Yoshioka
+- Thanatos
+- Thanos
+- Them
+- Thief Arthur
+- Thomas 
+- Thor
+- Thoth
+- Thunder
+- Tia
+- Tianhuo
+- Tien Shinhan
+- Tiffany
+- Tiger Jackson
+- Tina
+- Tina Armstrong
+- Tiny
+- Tiptops
+- Tira
+- Tizoc
+- Tobal 2
+- Todo
+- Tohru
+- Toki
+- Tokio
+- Tommy
+- Toon Link
+- Torami Hojo
+- Touji Sakata
+- Toujin
+- Tremor
+- Trident
+- Trish
+- Tron Bonne
+- Troubleshooter
+- True Ogre
+- Trunks
+- Trunks (Future)
+- Trunks (Sword
+- Tsubaki Yayoi
+- Tsugumi Sendo
+- Tsurugi
+- Tung
+- Tung Fu Rue
+- Turles
+- Tusk
+- Twelve
+- Ukyo
+- Ultimate Gohan
+- Ultimate Rugal
+- Ultraman Fighting Evolution
+- Ultron
+- Umbrella
+- Unknown
+- Uranus
+- Urien
+- Uriko
+- Ushiwakamaru
+- Uub
+- Uzuki
+- Valentine
+- Valeria
+- Valkenhayn R. Hellsing
+- Vane
+- Vanessa
+- Vanguard
+- Vanilla Ice
+- Vapor
+- Vatista
+- Vector
+- Vega
+- Vegeta
+- Vegeta (Scouter
+- Vegito
+- Veil
+- Velvet
+- Venom
+- Vergil
+- Vermilion
+- Vertigo
+- Vice
+- Victor
+- Victor Von Gerdenheim
+- Victor von Gerdenheim
+- Videl
+- Viewtiful Joe
+- Villager
+- Viola
+- Violent Ken
+- Violet
+- Vira
+- Vittoria
+- Vlov Arkhangel
+- Voldo
+- Vox Reaper
+- Vulcano Rosso
+- Wagner
+- Waldstein
+- Wang
+- Wang Jinrei
+- Wang Koh - San
+- War Gods
+- War Machine
+- Warden
+- Wario
+- Weiss
+- Wendy
+- Wesker
+- Whip
+- White Buffalo
+- Wii Fit Trainer
+- Wild 3
+- Wind Walker
+- Wolf
+- Wolf O\
+- Wolfgang Krauser
+- Wolverine
+- Wonder Woman
+- Wu - Ruixiang
+- Wu-Ruixiang
+- Wuji
+- Wyler
+- X - 23
+- Xanadu
+- Xavier Pendragon
+- Xianghua
+- Xiao
+- Xiao Lon
+- Xiaoyu
+- Xiba
+- Ximena
+- Xion
+- Yajirobe
+- Yamcha
+- Yang
+- Yappy
+- Yashiro Nanakase
+- Yatterman-1
+- Yatterman-2
+- Yoda
+- Yoshi
+- Yoshimitsu
+- Yoshitora
+- Yosuke
+- Young Link
+- Yu
+- Yugo
+- Yukari
+- Yuki
+- Yukiko
+- Yumi
+- Yun
+- Yun - seong
+- Yuri
+- Yuri Sakazaki
+- Yurika
+- Yusaku
+- Yuuki Terumi
+- Yuzuriha
+- Z.W.E.I.
+- Zack
+- Zafina
+- Zaimoku
+- Zaki
+- Zamasu (Fused)
+- Zangief
+- Zangya
+- Zantetsu
+- Zappa
+- Zarina
+- Zasalamel
+- Zatanna
+- Zato - 1
+- Zato-1
+- Zeku
+- Zelda
+- Zelkin
+- Zen
+- Zero
+- Zeta
+- Zeus
+- Zoma
+- Zorn
+- Zuni
+- Zyx
+- [Email: Rumor: Full Roster Of Marvel Vs. Capcom 3 Fighters Revealed?] (Gmail)
