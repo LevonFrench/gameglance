@@ -188,7 +188,7 @@ const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: any) => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const matches = value ? games.filter((g: any) => g.name.toLowerCase().includes(value.toLowerCase())) : [];
+  const matches = value ? games.filter((g: any) => g.name.toLowerCase().includes(value.toLowerCase())) : games;
 
   return (
     <div ref={triggerRef} style={{ position: 'relative', width: '100%', zIndex: isOpen ? 100 : 10 }}>
@@ -220,7 +220,7 @@ const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: any) => {
           onMouseOver={(e) => { if (!isOpen) e.currentTarget.style.borderColor = 'var(--accent-indigo)'; }}
           onMouseOut={(e) => { if (!isOpen) e.currentTarget.style.borderColor = 'var(--border-subtle)'; }}
         />
-       {isOpen && value && matches.length > 0 && (
+       {isOpen && matches.length > 0 && (
          <div style={{
             position: 'absolute',
             top: 'calc(100% + 0.5rem)',
@@ -373,6 +373,8 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
         textAlign: 'center',
         marginBottom: '3rem',
         animation: 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both',
+        position: 'relative',
+        zIndex: 50,
       }}>
         <div style={{
           fontSize: '0.8rem',
@@ -413,7 +415,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
               setDeveloperFilter(val);
               setShowCards(true);
             }}
-            labelExtractor={(v: string) => v === 'All' ? 'All Platforms' : v}
+            labelExtractor={(v: string) => v === 'All' ? 'Platforms' : v}
           />
 
           {/* Search Pill */}
