@@ -3754,7 +3754,7 @@ rosterCount: 22,
       { id: 'zangief', name: 'Zangief' }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    
 
   },
 
@@ -5854,7 +5854,7 @@ rosterCount: 8,
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
-  }
+  },
 
   {
     id: 'red-earth-warzard',
@@ -7839,7 +7839,8 @@ rosterCount: 8,
       { id: 'email-rumor-full-roster-of-marvel-vs-capcom-3-fighters-revealed-gmail', name: '[Email: Rumor: Full Roster Of Marvel Vs. Capcom 3 Fighters Revealed?] (Gmail)' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  }
+  },
+
   {
     id: 'weaponlord',
     name: "WeaponLord",
@@ -7858,7 +7859,7 @@ rosterCount: 8,
       { id: 'zyx', name: 'Zyx' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  }
+  },
 
   {
     id: 'bio-freaks',
@@ -7868,7 +7869,7 @@ rosterCount: 8,
 
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  }
+  },
 
   {
     id: 'fatal-fury-wild-ambition',
@@ -7891,7 +7892,7 @@ rosterCount: 8,
       { id: 'mr-karate-ii', name: 'Mr. Karate II' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  }
+  },
 
   {
     id: 'fighters-impact',
@@ -7901,7 +7902,7 @@ rosterCount: 8,
 
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  }
+  },
 
   {
     id: 'heavens-gate',
@@ -7911,7 +7912,7 @@ rosterCount: 8,
 
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  }
+  },
 
   {
     id: 'tobal-2',
@@ -7921,7 +7922,7 @@ rosterCount: 8,
 
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  }
+  },
 
   {
     id: 'ultraman-fighting-evolution',
@@ -7931,7 +7932,7 @@ rosterCount: 8,
 
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  }
+  },
 
   {
     id: 'war-gods',
