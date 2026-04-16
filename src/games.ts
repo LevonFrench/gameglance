@@ -2562,7 +2562,7 @@ rosterCount: 999,
 
     id: 'mortal-kombat-1',
 
-    name: "Mortal Kombat 1 (1992)",
+    name: "Mortal Kombat",
 
     developer: "NetherRealm Studios",
 
