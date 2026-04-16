@@ -166,6 +166,7 @@ html {
 }
 
 body {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   overflow-x: hidden;
@@ -192,11 +193,13 @@ body::before {
 
 /* ── Typography ────────────────────────────────────── */
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Inter', system-ui, sans-serif;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
 .font-mono {
+  font-family: 'JetBrains Mono', 'Courier New', monospace;
 }
 
 /* ── Scrollbar ─────────────────────────────────────── */
