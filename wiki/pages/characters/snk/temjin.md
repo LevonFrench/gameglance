@@ -13,4 +13,4 @@ Temjin is a character in roster.
 
 ## roster
 
-Moves added from `Art of Fighting 2 Complete Move List (Exhaustive).json`.
+Moves added from `Art of Fighting 2 Complete Move List .json`.

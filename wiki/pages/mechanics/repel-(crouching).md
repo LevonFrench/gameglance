@@ -13,4 +13,4 @@ Repel (Crouching) is a character in universal_mechanics.
 
 ## universal_mechanics
 
-Moves added from `The Last Blade Complete Move List (Exhaustive).json`.
+Moves added from `The Last Blade Complete Move List .json`.

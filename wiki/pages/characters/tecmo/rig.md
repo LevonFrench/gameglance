@@ -2,7 +2,7 @@
 title: "Rig"
 type: character
 tags: [character]
-games: [doa6, dead-or-alive-5-last-round---complete-move-list-(exhaustive), dead-or-alive-5]
+games: [doa6, dead-or-alive-5-last-round--, dead-or-alive-5]
 created: 2026-04-15
 updated: 2026-04-15
 ---

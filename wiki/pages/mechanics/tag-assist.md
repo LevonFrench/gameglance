@@ -13,4 +13,4 @@ Tag Assist is a character in universal_mechanics.
 
 ## universal_mechanics
 
-Moves added from `The King of Fighters _94 Complete Move List (Exhaustive).json`.
+Moves added from `The King of Fighters _94 Complete Move List .json`.

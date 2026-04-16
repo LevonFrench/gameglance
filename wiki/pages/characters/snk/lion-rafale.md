@@ -9,8 +9,8 @@ updated: 2026-04-15
 
 # Lion Rafale
 
-Lion Rafale is a character in Virtua Fighter 2 - Complete Move List (Exhaustive).
+Lion Rafale is a character in Virtua Fighter 2 - Complete Move List .
 
-## Virtua Fighter 2 - Complete Move List (Exhaustive)
+## Virtua Fighter 2 - Complete Move List 
 
-Moves added from `Virtua Fighter 2 - Complete Move List (Exhaustive)(1).json`.
+Moves added from `Virtua Fighter 2 - Complete Move List (1).json`.

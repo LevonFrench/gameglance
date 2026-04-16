@@ -13,4 +13,4 @@ Karman Cole is a character in roster.
 
 ## roster
 
-Moves added from `Art of Fighting 3 Complete Move List (Exhaustive).json`.
+Moves added from `Art of Fighting 3 Complete Move List .json`.

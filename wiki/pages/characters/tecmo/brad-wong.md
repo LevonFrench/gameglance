@@ -2,7 +2,7 @@
 title: "Brad Wong"
 type: character
 tags: [character]
-games: [doa6, dead-or-alive-3---complete-move-list-(exhaustive), dead-or-alive-3]
+games: [doa6, dead-or-alive-3--, dead-or-alive-3]
 created: 2026-04-15
 updated: 2026-04-15
 ---

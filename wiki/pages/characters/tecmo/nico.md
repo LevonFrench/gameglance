@@ -9,8 +9,8 @@ updated: 2026-04-15
 
 # NiCO
 
-NiCO is a character in Dead or Alive 6 - Complete Move List (Exhaustive).
+NiCO is a character in Dead or Alive 6 - Complete Move List .
 
-## Dead or Alive 6 - Complete Move List (Exhaustive)
+## Dead or Alive 6 - Complete Move List 
 
-Moves added from `Dead or Alive 6 - Complete Move List (Exhaustive).json`.
+Moves added from `Dead or Alive 6 - Complete Move List .json`.

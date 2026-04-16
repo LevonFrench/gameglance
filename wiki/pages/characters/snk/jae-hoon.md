@@ -13,4 +13,4 @@ Jae Hoon is a character in characters.
 
 ## characters
 
-Moves added from `Garou Mark of the Wolves Complete Move List (Exhaustive).json`.
+Moves added from `Garou Mark of the Wolves Complete Move List .json`.

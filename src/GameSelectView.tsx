@@ -10,12 +10,12 @@ interface Props {
 }
 
 const GAME_THEMES: Record<string, { gradient: string; icon: string; tagline: string; glowColor: string }> = {
-  sf6: { gradient: 'linear-gradient(135deg, #e8363c 0%, #fbbf24 100%)', icon: '🥊', tagline: 'World Warriors Await', glowColor: 'rgba(232, 54, 60, 0.25)' },
-  sf2: { gradient: 'linear-gradient(135deg, #1d4ed8 0%, #ef4444 100%)', icon: '🥋', tagline: 'The Grand Master Challenge', glowColor: 'rgba(29, 78, 216, 0.25)' },
-  cvs2: { gradient: 'linear-gradient(135deg, #fbbf24 0%, #ea580c 100%)', icon: '⚔️', tagline: 'Mark of the Millennium', glowColor: 'rgba(251, 191, 36, 0.25)' },
-  cfj: { gradient: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)', icon: '🌟', tagline: 'Worlds Collide', glowColor: 'rgba(139, 92, 246, 0.25)' },
-  darkstalkers: { gradient: 'linear-gradient(135deg, #4c1d95 0%, #1e1b4b 100%)', icon: '🦇', tagline: 'The Night Warriors', glowColor: 'rgba(76, 29, 149, 0.25)' },
-  sfa3: { gradient: 'linear-gradient(135deg, #14b8a6 0%, #0369a1 100%)', icon: '🔥', tagline: 'Go For Broke!', glowColor: 'rgba(20, 184, 166, 0.25)' },
+  'street-fighter-6': { gradient: 'linear-gradient(135deg, #e8363c 0%, #fbbf24 100%)', icon: '🥊', tagline: 'World Warriors Await', glowColor: 'rgba(232, 54, 60, 0.25)' },
+  'street-fighter-ii': { gradient: 'linear-gradient(135deg, #1d4ed8 0%, #ef4444 100%)', icon: '🥋', tagline: 'The Grand Master Challenge', glowColor: 'rgba(29, 78, 216, 0.25)' },
+  'capcom-vs-snk-2': { gradient: 'linear-gradient(135deg, #fbbf24 0%, #ea580c 100%)', icon: '⚔️', tagline: 'Mark of the Millennium', glowColor: 'rgba(251, 191, 36, 0.25)' },
+  'capcom-fighting-jam': { gradient: 'linear-gradient(135deg, #8b5cf6 0%, #ec4899 100%)', icon: '🌟', tagline: 'Worlds Collide', glowColor: 'rgba(139, 92, 246, 0.25)' },
+  'darkstalkers-the-night-warriors': { gradient: 'linear-gradient(135deg, #4c1d95 0%, #1e1b4b 100%)', icon: '🦇', tagline: 'The Night Warriors', glowColor: 'rgba(76, 29, 149, 0.25)' },
+  'street-fighter-alpha-3': { gradient: 'linear-gradient(135deg, #14b8a6 0%, #0369a1 100%)', icon: '🔥', tagline: 'Go For Broke!', glowColor: 'rgba(20, 184, 166, 0.25)' },
 };
 
 function getGameTheme(game: GameDefinition) {

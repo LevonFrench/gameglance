@@ -13,4 +13,4 @@ Avoidance Attack is a character in universal_mechanics.
 
 ## universal_mechanics
 
-Moves added from `Fatal Fury 1 Complete Move List (Exhaustive).json`.
+Moves added from `Fatal Fury 1 Complete Move List .json`.

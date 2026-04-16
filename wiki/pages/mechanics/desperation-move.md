@@ -13,4 +13,4 @@ Desperation Move is a character in universal_mechanics.
 
 ## universal_mechanics
 
-Moves added from `Art of Fighting 1 Complete Move List (Exhaustive).json`.
+Moves added from `Art of Fighting 1 Complete Move List .json`.

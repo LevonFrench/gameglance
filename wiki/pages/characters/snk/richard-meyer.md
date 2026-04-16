@@ -13,4 +13,4 @@ Richard Meyer is a character in characters.
 
 ## characters
 
-Moves added from `Fatal Fury 1 Complete Move List (Exhaustive).json`.
+Moves added from `Fatal Fury 1 Complete Move List .json`.

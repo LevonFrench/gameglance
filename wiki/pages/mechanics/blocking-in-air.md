@@ -13,4 +13,4 @@ Blocking in Air is a character in universal_mechanics.
 
 ## universal_mechanics
 
-Moves added from `Samurai Shodown III Complete Move List (Exhaustive).json`.
+Moves added from `Samurai Shodown III Complete Move List .json`.

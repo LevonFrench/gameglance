@@ -13,4 +13,4 @@ Amakusa Shiro Tokisada is a character in characters.
 
 ## characters
 
-Moves added from `Samurai Shodown V Special Complete Move List (Exhaustive).json`.
+Moves added from `Samurai Shodown V Special Complete Move List .json`.

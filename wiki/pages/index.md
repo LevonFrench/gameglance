@@ -57,7 +57,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[dead-or-alive-4]] | Dead or Alive 4 | 2 |
 | [[dead-or-alive-5]] | Dead or Alive 5 | 2 |
 | [[dnf-duel]] | DNF Duel | 4 |
-| [[doa6]] | Dead or Alive 6 - Complete Move List (Exhaustive) | 24 |
+| [[doa6]] | Dead or Alive 6 - Complete Move List  | 24 |
 | [[dragon-ball-fighterz]] | Dragon Ball FighterZ | 4 |
 | [[fatal-fury-2]] | Fatal Fury 2 | 2 |
 | [[fatal-fury-3-road-to-the-final-victory]] | Fatal Fury 3: Road to the Final Victory | 2 |
@@ -157,11 +157,11 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[vampirehunter2]] | Vampire Hunter 2 | 2 |
 | [[vampiresavior]] | Vampire Savior | 33 |
 | [[vampiresavior2]] | Vampire Savior 2 | 2 |
-| [[vf1]] | Virtua Fighter 1 - Complete Move List (Exhaustive) | 9 |
+| [[vf1]] | Virtua Fighter 1 - Complete Move List  | 9 |
 | [[virtua-fighter-2]] | Virtua Fighter 2 | 10 |
 | [[virtua-fighter-3]] | Virtua Fighter 3 | 8 |
 | [[virtua-fighter-4]] | Virtua Fighter 4 | 7 |
-| [[vf5]] | Virtua Fighter 5 Ultimate Showdown - Complete Move List (Exhaustive) | 19 |
+| [[vf5]] | Virtua Fighter 5 Ultimate Showdown - Complete Move List  | 19 |
 | [[virtua-fighter]] | Virtua Fighter | 2 |
 | [[waku-waku-7]] | Waku Waku 7 | 1 |
 | [[world-heroes-perfect]] | World Heroes Perfect | 1 |

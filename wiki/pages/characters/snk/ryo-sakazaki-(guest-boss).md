@@ -13,4 +13,4 @@ Ryo Sakazaki (Guest Boss) is a character in characters.
 
 ## characters
 
-Moves added from `Fatal Fury Special Complete Move List (Exhaustive).json`.
+Moves added from `Fatal Fury Special Complete Move List .json`.

@@ -13,4 +13,4 @@ Jubei Yamada is a character in characters.
 
 ## characters
 
-Moves added from `Fatal Fury 2 Complete Move List (Exhaustive).json`.
+Moves added from `Fatal Fury 2 Complete Move List .json`.

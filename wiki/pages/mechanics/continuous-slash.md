@@ -13,4 +13,4 @@ Continuous Slash is a character in universal_mechanics.
 
 ## universal_mechanics
 
-Moves added from `Samurai Shodown IV Complete Move List (Exhaustive).json`.
+Moves added from `Samurai Shodown IV Complete Move List .json`.

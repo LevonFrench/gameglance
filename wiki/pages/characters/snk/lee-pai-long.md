@@ -13,4 +13,4 @@ Lee Pai Long is a character in roster.
 
 ## roster
 
-Moves added from `Art of Fighting 1 Complete Move List (Exhaustive).json`.
+Moves added from `Art of Fighting 1 Complete Move List .json`.

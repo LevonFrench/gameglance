@@ -13,4 +13,4 @@ Zetsumei Ougi is a character in universal_mechanics.
 
 ## universal_mechanics
 
-Moves added from `Samurai Shodown V Special Complete Move List (Exhaustive).json`.
+Moves added from `Samurai Shodown V Special Complete Move List .json`.

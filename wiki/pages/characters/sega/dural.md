@@ -9,8 +9,8 @@ updated: 2026-04-15
 
 # Dural
 
-Dural is a character in Virtua Fighter 1 - Complete Move List (Exhaustive).
+Dural is a character in Virtua Fighter 1 - Complete Move List .
 
-## Virtua Fighter 1 - Complete Move List (Exhaustive)
+## Virtua Fighter 1 - Complete Move List 
 
-Moves added from `Virtua Fighter 1 - Complete Move List (Exhaustive).json`.
+Moves added from `Virtua Fighter 1 - Complete Move List .json`.

@@ -1,5 +1,5 @@
 ---
-title: "Dead or Alive 6 - Complete Move List (Exhaustive)"
+title: "Dead or Alive 6 - Complete Move List "
 type: game
 tags: [doa6]
 created: 2026-04-15
@@ -7,7 +7,7 @@ updated: 2026-04-15
 sources: 0
 ---
 
-# Dead or Alive 6 - Complete Move List (Exhaustive)
+# Dead or Alive 6 - Complete Move List 
 
 ## Overview
 *No overview generated yet.*

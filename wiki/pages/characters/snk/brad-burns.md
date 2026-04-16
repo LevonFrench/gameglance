@@ -9,8 +9,8 @@ updated: 2026-04-15
 
 # Brad Burns
 
-Brad Burns is a character in Virtua Fighter 4 Evolution - Complete Move List (Exhaustive).
+Brad Burns is a character in Virtua Fighter 4 Evolution - Complete Move List .
 
-## Virtua Fighter 4 Evolution - Complete Move List (Exhaustive)
+## Virtua Fighter 4 Evolution - Complete Move List 
 
-Moves added from `Virtua Fighter 4 Evolution - Complete Move List (Exhaustive)(1).json`.
+Moves added from `Virtua Fighter 4 Evolution - Complete Move List (1).json`.

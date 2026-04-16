@@ -2,7 +2,7 @@
 title: "Kokoro"
 type: character
 tags: [character]
-games: [doa6, dead-or-alive-5-last-round---complete-move-list-(exhaustive), dead-or-alive-4---complete-move-list-(exhaustive), dead-or-alive-4]
+games: [doa6, dead-or-alive-5-last-round--, dead-or-alive-4--, dead-or-alive-4]
 created: 2026-04-15
 updated: 2026-04-15
 ---

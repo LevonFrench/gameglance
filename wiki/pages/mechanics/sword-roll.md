@@ -13,4 +13,4 @@ Sword Roll is a character in universal_mechanics.
 
 ## universal_mechanics
 
-Moves added from `Samurai Shodown V Complete Move List (Exhaustive).json`.
+Moves added from `Samurai Shodown V Complete Move List .json`.

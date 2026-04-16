@@ -8,7 +8,19 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     releaseYear: 1994,
 rosterCount: 10,
         characters: [
-      { id: 'hsien_ko', name: 'Hsien_Ko' }
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'robert-garcia', name: 'Robert Garcia' },
+      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
+      { id: 'takuma-sakazaki', name: 'Takuma Sakazaki' },
+      { id: 'eiji-kisaragi', name: 'Eiji Kisaragi' },
+      { id: 'king', name: 'King' },
+      { id: 'temjin', name: 'Temjin' },
+      { id: 'jack-turner', name: 'Jack Turner' },
+      { id: 'lee-pai-long', name: 'Lee Pai Long' },
+      { id: 'micky-rogers', name: 'Micky Rogers' },
+      { id: 'john-crawley', name: 'John Crawley' },
+      { id: 'mr.-big', name: 'Mr. Big' },
+      { id: 'geese-howard-(boss)', name: 'Geese Howard (Boss)' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -19,18 +31,19 @@ rosterCount: 10,
     releaseYear: 1992,
 rosterCount: 10,
         characters: [
-      
       { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'chain_combos', name: 'Chain_Combos' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'cotw_nightmaregeese', name: 'Cotw_Nightmaregeese' },
-      { id: 'dnf-duel', name: 'Dnf Duel' },
-      { id: 'ed', name: 'Ed' },
-      { id: 'fatal-fury-special', name: 'Fatal Fury Special' },
-      { id: 'final_battle', name: 'Final_Battle' }
-    
+      { id: 'robert-garcia', name: 'Robert Garcia' },
+      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
+      { id: 'takuma-sakazaki', name: 'Takuma Sakazaki' },
+      { id: 'eiji-kisaragi', name: 'Eiji Kisaragi' },
+      { id: 'king', name: 'King' },
+      { id: 'temjin', name: 'Temjin' },
+      { id: 'jack-turner', name: 'Jack Turner' },
+      { id: 'lee-pai-long', name: 'Lee Pai Long' },
+      { id: 'micky-rogers', name: 'Micky Rogers' },
+      { id: 'john-crawley', name: 'John Crawley' },
+      { id: 'mr.-big', name: 'Mr. Big' },
+      { id: 'geese-howard-(boss)', name: 'Geese Howard (Boss)' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -342,7 +355,7 @@ rosterCount: 30,
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
-    id: 'cota',
+    id: 'x-men-children-of-the-atom',
     name: "X-Men: Children of the Atom",
     developer: "Capcom",
     releaseYear: 1994,
@@ -356,7 +369,7 @@ rosterCount: 12,
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
-    id: 'cotw',
+    id: 'fatal-fury-city-of-the-wolves',
     name: "Fatal Fury: City of the Wolves",
     developer: "SNK",
     releaseYear: 2025,
@@ -420,7 +433,7 @@ rosterCount: 17,
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
-    id: 'cvs1',
+    id: 'capcom-vs-snk',
     name: "Capcom vs. SNK",
     developer: "Capcom",
     releaseYear: 2000,
@@ -467,7 +480,7 @@ rosterCount: 30,
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
-    id: 'cvs2',
+    id: 'capcom-vs-snk-2',
     name: "Capcom vs SNK 2",
     developer: "Capcom",
     releaseYear: 2001,
@@ -726,7 +739,7 @@ rosterCount: 21,
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
-    id: 'doa6',
+    id: 'dead-or-alive-6',
     name: "Dead or Alive 6",
     developer: "Tecmo",
     releaseYear: 1998,
@@ -1071,7 +1084,7 @@ rosterCount: 25,
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
-    id: 'hypersf2',
+    id: 'hyper-street-fighter-ii',
     name: "Hyper Street Fighter II",
     developer: "Capcom",
     releaseYear: 1987,
@@ -1283,7 +1296,7 @@ rosterCount: 33,
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
-    id: 'msh',
+    id: 'marvel-super-heroes',
     name: "Marvel Super Heroes",
     developer: "Capcom",
     releaseYear: 1995,
@@ -1369,16 +1382,20 @@ rosterCount: 56,
       { id: 'bulleta', name: 'Bulleta' },
       { id: 'captain-commando', name: 'Captain Commando' },
       { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'hypersf2', name: 'Hypersf2' },
+      { id: 'hyper-street-fighter-ii',
+    name: 'Hypersf2' },
       { id: 'jin-saotome', name: 'Jin Saotome' },
       { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'msh', name: 'Msh' },
+      { id: 'marvel-super-heroes',
+    name: 'Msh' },
       { id: 'omega-red', name: 'Omega Red' },
       { id: 'plasma-sword-nightmare-of-bilstein', name: 'Plasma Sword Nightmare Of Bilstein' },
       { id: 'players', name: 'Players' },
       { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
+      { id: 'street-fighter-iii-2nd-impact',
+    name: 'Sf32I' },
+      { id: 'street-fighter-iii-3rd-strike',
+    name: 'Sf33S' },
       { id: 'shuma-gorath', name: 'Shuma Gorath' },
       { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
       { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
@@ -1773,7 +1790,7 @@ rosterCount: 28,
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
-    id: 'sf31',
+    id: 'street-fighter-iii-new-generation',
     name: "Street Fighter III: New Generation",
     developer: "Capcom",
     releaseYear: 1987,
@@ -1787,7 +1804,7 @@ rosterCount: 11,
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
-    id: 'sf32i',
+    id: 'street-fighter-iii-2nd-impact',
     name: "Street Fighter III: 2nd Impact - Giant Attack",
     developer: "Capcom",
     releaseYear: 1997,
@@ -1801,7 +1818,7 @@ rosterCount: 14,
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
-    id: 'sf33s',
+    id: 'street-fighter-iii-3rd-strike',
     name: "Street Fighter III: 3rd Strike - Fight for the Future",
     developer: "Capcom",
     releaseYear: 1999,
@@ -1816,7 +1833,7 @@ rosterCount: 20,
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
-    id: 'sfa1',
+    id: 'street-fighter-alpha',
     name: "Street Fighter Alpha 1",
     developer: "Capcom",
     releaseYear: 1995,
@@ -1837,7 +1854,7 @@ rosterCount: 13,
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
-    id: 'sfa2',
+    id: 'street-fighter-alpha-2',
     name: "Street Fighter Alpha 2",
     developer: "Capcom",
     releaseYear: 1996,
@@ -1878,7 +1895,7 @@ rosterCount: 36,
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
-    id: 'ssf2',
+    id: 'super-street-fighter-ii',
     name: "Super Street Fighter II: The New Challengers",
     developer: "Capcom",
     releaseYear: 1993,
@@ -1889,8 +1906,10 @@ rosterCount: 16,
       { id: 'dee-jay', name: 'Dee Jay' },
       { id: 'fei-long', name: 'Fei Long' },
       { id: 't-hawk', name: 'T Hawk' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'ssf2', name: 'Ssf2' },
+      { id: 'street-fighter-ii',
+    name: 'Sf2' },
+      { id: 'super-street-fighter-ii',
+    name: 'Ssf2' },
       { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' }
     
     ],
@@ -2477,7 +2496,8 @@ rosterCount: 18,
       { id: 'donovan-baine', name: 'Donovan Baine' },
       { id: 'huitzil-(phobos)', name: 'Huitzil (Phobos)' },
       { id: 'pyron', name: 'Pyron' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
+      { id: 'darkstalkers-the-night-warriors',
+    name: 'Darkstalkers' },
       { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
       { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
       { id: 'nightwarriors', name: 'Nightwarriors' }
@@ -2601,7 +2621,7 @@ rosterCount: 18,
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
-    id: 'vf1',
+    id: 'virtua-fighter',
     name: "Virtua Fighter 1",
     developer: "Sega",
     releaseYear: 1998,
@@ -2691,7 +2711,7 @@ rosterCount: 18,
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
-    id: 'vf5',
+    id: 'virtua-fighter-5-ultimate-showdown',
     name: "Virtua Fighter 5 Ultimate Showdown",
     developer: "Sega",
     releaseYear: 1998,
@@ -2764,7 +2784,7 @@ rosterCount: 19,
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
-    id: 'xmvsf',
+    id: 'x-men-vs-street-fighter',
     name: "X-Men vs. Street Fighter",
     developer: "Capcom",
     releaseYear: 1996,
@@ -2787,23 +2807,21 @@ rosterCount: 17,
     releaseYear: 1995,
     rosterCount: 15,
     characters: [
-      
-      { id: 'unknown', name: 'Unknown' },
-      { id: 'unknown', name: 'Unknown' },
-      { id: 'unknown', name: 'Unknown' },
-      { id: 'unknown', name: 'Unknown' },
-      { id: 'unknown', name: 'Unknown' },
-      { id: 'unknown', name: 'Unknown' },
-      { id: 'unknown', name: 'Unknown' },
-      { id: 'unknown', name: 'Unknown' },
-      { id: 'unknown', name: 'Unknown' },
-      { id: 'unknown', name: 'Unknown' },
-      { id: 'unknown', name: 'Unknown' },
-      { id: 'unknown', name: 'Unknown' },
-      { id: 'unknown', name: 'Unknown' },
-      { id: 'unknown', name: 'Unknown' },
-      { id: 'unknown', name: 'Unknown' }
-    
+      { id: 'jotaro-kujo', name: 'Jotaro Kujo' },
+      { id: 'dio-brando', name: 'Dio Brando' },
+      { id: 'noriaki-kakyoin', name: 'Noriaki Kakyoin' },
+      { id: 'muhammad-avdol', name: 'Muhammad Avdol' },
+      { id: 'jean-pierre-polnareff', name: 'Jean Pierre Polnareff' },
+      { id: 'joseph-joestar', name: 'Joseph Joestar' },
+      { id: 'iggy', name: 'Iggy' },
+      { id: 'vanilla-ice', name: 'Vanilla Ice' },
+      { id: 'hol-horse', name: 'Hol Horse' },
+      { id: 'midler', name: 'Midler' },
+      { id: 'alessy', name: 'Alessy' },
+      { id: 'chaka', name: 'Chaka' },
+      { id: 'mariah', name: 'Mariah' },
+      { id: 'petshop', name: 'Petshop' },
+      { id: 'shadow-dio', name: 'Shadow Dio' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Throws']
   },
@@ -2814,9 +2832,17 @@ rosterCount: 17,
     releaseYear: 1995,
     rosterCount: 1,
     characters: [
-      
-      { id: 'unknown', name: 'Unknown' }
-    
+      { id: 'sho-hayate', name: 'Sho Hayate' },
+      { id: 'max-eagle', name: 'Max Eagle' },
+      { id: 'carol-stanzack', name: 'Carol Stanzack' },
+      { id: 'gordon-bowman', name: 'Gordon Bowman' },
+      { id: 'joker', name: 'Joker' },
+      { id: 'chung-paifu', name: 'Chung Paifu' },
+      { id: 'nicola-zaza', name: 'Nicola Zaza' },
+      { id: 'gozu', name: 'Gozu' },
+      { id: 'mezu', name: 'Mezu' },
+      { id: 'king-lion-(kage-shishioh)', name: 'King Lion (Kage Shishioh)' },
+      { id: 'shin-shishioh-(king-leo)', name: 'Shin Shishioh (King Leo)' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Throws']
   },
@@ -2827,9 +2853,18 @@ rosterCount: 17,
     releaseYear: 1995,
     rosterCount: 1,
     characters: [
-      
-      { id: 'unknown', name: 'Unknown' }
-    
+      { id: 'gowcaizer-(isato-kaiza)', name: 'Gowcaizer (Isato Kaiza)' },
+      { id: 'karin-son', name: 'Karin Son' },
+      { id: 'kyosuke-shigure', name: 'Kyosuke Shigure' },
+      { id: 'shaia-hanyū', name: 'Shaia Hanyū' },
+      { id: 'hellstinger-(kash-gywnne)', name: 'Hellstinger (Kash Gywnne)' },
+      { id: 'marion', name: 'Marion' },
+      { id: 'fudomaru', name: 'Fudomaru' },
+      { id: 'captain-atlantis-(randy-riggs)', name: 'Captain Atlantis (Randy Riggs)' },
+      { id: 'brider-(ikkyu-saeba)', name: 'Brider (Ikkyu Saeba)' },
+      { id: 'shen-long-(goujiro-inagaki)', name: 'Shen Long (Goujiro Inagaki)' },
+      { id: 'ran-ryo-(platonic-twins)', name: 'Ran/Ryo (Platonic Twins)' },
+      { id: 'ohga-(final-boss)', name: 'Ohga (Final Boss)' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Throws']
   }

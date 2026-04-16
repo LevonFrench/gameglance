@@ -13,4 +13,4 @@ Breaking is a character in universal_mechanics.
 
 ## universal_mechanics
 
-Moves added from `Garou Mark of the Wolves Complete Move List (Exhaustive).json`.
+Moves added from `Garou Mark of the Wolves Complete Move List .json`.

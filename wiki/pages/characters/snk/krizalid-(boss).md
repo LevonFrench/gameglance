@@ -13,4 +13,4 @@ Krizalid (Boss) is a character in roster.
 
 ## roster
 
-Moves added from `The King of Fighters _99 Complete Move List (Exhaustive).json`.
+Moves added from `The King of Fighters _99 Complete Move List .json`.

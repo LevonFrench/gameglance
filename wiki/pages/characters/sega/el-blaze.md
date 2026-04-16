@@ -9,8 +9,8 @@ updated: 2026-04-15
 
 # El Blaze
 
-El Blaze is a character in Virtua Fighter 5 Ultimate Showdown - Complete Move List (Exhaustive).
+El Blaze is a character in Virtua Fighter 5 Ultimate Showdown - Complete Move List .
 
-## Virtua Fighter 5 Ultimate Showdown - Complete Move List (Exhaustive)
+## Virtua Fighter 5 Ultimate Showdown - Complete Move List 
 
-Moves added from `Virtua Fighter 5 Ultimate Showdown - Complete Move List (Exhaustive).json`.
+Moves added from `Virtua Fighter 5 Ultimate Showdown - Complete Move List .json`.

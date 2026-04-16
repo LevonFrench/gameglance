@@ -13,4 +13,4 @@ Wolf Hawkfield is a character in characters.
 
 ## characters
 
-Moves added from `Virtua Fighter 1 - Complete Move List (Exhaustive)(1).json`.
+Moves added from `Virtua Fighter 1 - Complete Move List (1).json`.
