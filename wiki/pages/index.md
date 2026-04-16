@@ -20,7 +20,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ---
 
-## 🎮 Games (140)
+## 🎮 Games (151)
 
 ### Complete Roster
 | Page | Game | Characters |
@@ -165,6 +165,17 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[voltage-fighter-gowcaizer-choujin-gakuen-gowcaizer]] | Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer) | 0 |
 | [[zero-divide]] | Zero Divide | 0 |
 | [[zero-divide-2-the-secret-wish]] | Zero Divide 2: The Secret Wish | 0 |
+| [[bloody-roar-2]] | Bloody Roar 2 | 0 |
+| [[guilty-gear-strive]] | Guilty Gear -Strive- | 0 |
+| [[invincible-vs-beta]] | Invincible VS Beta | 0 |
+| [[marvel-toukon-fighting-souls-beta-version]] | Marvel Toukon: Fighting Souls (Beta Version) | 0 |
+| [[primal-rage]] | Primal Rage | 0 |
+| [[primal-rage-2]] | Primal Rage 2 | 0 |
+| [[tekken-1]] | Tekken 1 | 0 |
+| [[tekken-2]] | Tekken 2 | 0 |
+| [[world-heroes]] | World Heroes | 0 |
+| [[world-heroes-2]] | World Heroes 2 | 0 |
+| [[world-heroes-2-jet]] | World Heroes 2 Jet | 0 |
 
 ---
 
@@ -212,6 +223,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ## Statistics
 
-- **Total pages**: 142 (140 games)
-- **Games covered**: 140
+- **Total pages**: 153 (151 games)
+- **Games covered**: 151
 - **Last updated**: 2026-04-15

@@ -4653,29 +4653,15 @@ rosterCount: 9,
     name: "World Heroes Perfect",
     developer: "SNK",
     releaseYear: 1995,
-rosterCount: 19,
+rosterCount: 7,
         characters: [
-      
       { id: 'hanzo', name: 'Hanzo' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'cotw_bluemary', name: 'Cotw_Bluemary' },
-      { id: 'cotw_nightmaregeese', name: 'Cotw_Nightmaregeese' },
-      { id: 'final_battle', name: 'Final_Battle' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'janet', name: 'Janet' },
-      { id: 'k9999', name: 'K9999' },
-      { id: 'keel', name: 'Keel' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'king', name: 'King' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'manon', name: 'Manon' }
-    
+      { id: 'fuuma', name: 'Fuuma' },
+      { id: 'son-goku', name: 'Son Goku' },
+      { id: 'dio', name: 'Dio' },
+      { id: 'zeus', name: 'Zeus' },
+      { id: 'mudman', name: 'Mudman' },
+      { id: 'ryoko', name: 'Ryoko' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -5041,6 +5027,127 @@ rosterCount: 11,
       { id: 'eos', name: 'Eos' },
       { id: 'neco', name: 'Neco' },
       { id: 'modoki', name: 'Modoki' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'bloody-roar-2',
+    name: "Bloody Roar 2",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 11,
+        characters: [
+      { id: 'yugo-the-wolf', name: 'Yugo the Wolf' }, { id: 'stun-the-insect', name: 'Stun the Insect' }, { id: 'jenny-the-bat', name: 'Jenny the Bat' }, { id: 'busuzima-the-chameleon', name: 'Busuzima the Chameleon' }, { id: 'shina-the-leopard', name: 'Shina the Leopard' }, { id: 'shenlong-the-tiger', name: 'Shenlong the Tiger' }, { id: 'bakuryu-the-mole-new', name: 'Bakuryu the Mole (New)' }, { id: 'alice-the-rabbit', name: 'Alice the Rabbit' }, { id: 'long-the-tiger', name: 'Long the Tiger' }, { id: 'uriko-the-cat', name: 'Uriko the Cat' }, { id: 'gado-the-lion', name: 'Gado the Lion' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'guilty-gear-strive',
+    name: "Guilty Gear -Strive-",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 9,
+        characters: [
+      { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' }, { id: 'sol-badguy', name: 'Sol Badguy' }, { id: 'ky-kiske', name: 'Ky Kiske' }, { id: 'may', name: 'May' }, { id: 'venom', name: 'Venom' }, { id: 'queen-dizzy', name: 'Queen Dizzy' }, { id: 'unika', name: 'Unika' }, { id: 'lucy', name: 'Lucy' }, { id: 'potemkin', name: 'Potemkin' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'invincible-vs-beta',
+    name: "Invincible VS Beta",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 10,
+        characters: [
+      { id: 'mark-grayson-invincible', name: 'Mark Grayson (Invincible)' }, { id: 'nolan-grayson-omni-man', name: 'Nolan Grayson (Omni-Man)' }, { id: 'samantha-eve-wilkins-atom-eve', name: 'Samantha Eve Wilkins (Atom Eve)' }, { id: 'allen-the-alien', name: 'Allen the Alien' }, { id: 'thokk-battle-beast', name: 'Thokk (Battle Beast)' }, { id: 'rex-splode', name: 'Rex Splode' }, { id: 'robot', name: 'Robot' }, { id: 'amanda-monster-girl', name: 'Amanda (Monster Girl)' }, { id: 'thula', name: 'Thula' }, { id: 'zandale-randolph-bulletproof', name: 'Zandale Randolph (Bulletproof)' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'marvel-toukon-fighting-souls-beta-version',
+    name: "Marvel Toukon: Fighting Souls (Beta Version)",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 9,
+        characters: [
+      { id: 'spider-man-peter-parker', name: 'Spider-Man (Peter Parker)' }, { id: 'captain-america-steve-rogers', name: 'Captain America (Steve Rogers)' }, { id: 'iron-man-tony-stark', name: 'Iron Man (Tony Stark)' }, { id: 'doctor-doom-victor-von-doom', name: 'Doctor Doom (Victor von Doom)' }, { id: 'storm-ororo-munroe', name: 'Storm (Ororo Munroe)' }, { id: 'star-lord-peter-quill', name: 'Star-Lord (Peter Quill)' }, { id: 'ms-marvel-kamala-khan', name: 'Ms. Marvel (Kamala Khan)' }, { id: 'hulk-bruce-banner', name: 'Hulk (Bruce Banner)' }, { id: 'phoenix-jean-grey', name: 'Phoenix (Jean Grey)' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'primal-rage',
+    name: "Primal Rage",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 7,
+        characters: [
+      { id: 'armadon', name: 'Armadon' }, { id: 'blizzard', name: 'Blizzard' }, { id: 'chaos', name: 'Chaos' }, { id: 'diablo', name: 'Diablo' }, { id: 'sauron', name: 'Sauron' }, { id: 'talon', name: 'Talon' }, { id: 'vertigo', name: 'Vertigo' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'primal-rage-2',
+    name: "Primal Rage 2",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 10,
+        characters: [
+      { id: 'kaze', name: 'Kaze' }, { id: 'arik', name: 'Arik' }, { id: 'keena', name: 'Keena' }, { id: 'xiao-ming', name: 'Xiao Ming' }, { id: 'sinjin', name: 'Sinjin' }, { id: 'malyssa', name: 'Malyssa' }, { id: 'shank', name: 'Shank' }, { id: 'tor', name: 'Tor' }, { id: 'slashfang', name: 'Slashfang' }, { id: 'necrosan', name: 'Necrosan' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'tekken-1',
+    name: "Tekken 1",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 17,
+        characters: [
+      { id: 'kazuya-mishima', name: 'Kazuya Mishima' }, { id: 'paul-phoenix', name: 'Paul Phoenix' }, { id: 'marshall-law', name: 'Marshall Law' }, { id: 'king', name: 'King' }, { id: 'nina-williams', name: 'Nina Williams' }, { id: 'jack', name: 'Jack' }, { id: 'michelle-chang', name: 'Michelle Chang' }, { id: 'yoshimitsu', name: 'Yoshimitsu' }, { id: 'heihachi-mishima', name: 'Heihachi Mishima' }, { id: 'lee-chaolan', name: 'Lee Chaolan' }, { id: 'kuma-i', name: 'Kuma I' }, { id: 'wang-jinrei', name: 'Wang Jinrei' }, { id: 'armor-king-i', name: 'Armor King I' }, { id: 'anna-williams', name: 'Anna Williams' }, { id: 'prototype-jack', name: 'Prototype Jack' }, { id: 'ganryu', name: 'Ganryu' }, { id: 'kunimitsu-i', name: 'Kunimitsu I' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'tekken-2',
+    name: "Tekken 2",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 24,
+        characters: [
+      { id: 'jun-kazama', name: 'Jun Kazama' }, { id: 'lei-wulong', name: 'Lei Wulong' }, { id: 'jack-2', name: 'Jack-2' }, { id: 'michelle-chang', name: 'Michelle Chang' }, { id: 'king', name: 'King' }, { id: 'yoshimitsu', name: 'Yoshimitsu' }, { id: 'nina-williams', name: 'Nina Williams' }, { id: 'marshall-law', name: 'Marshall Law' }, { id: 'paul-phoenix', name: 'Paul Phoenix' }, { id: 'kazuya-mishima', name: 'Kazuya Mishima' }, { id: 'baek-doo-san', name: 'Baek Doo San' }, { id: 'bruce-irvin', name: 'Bruce Irvin' }, { id: 'roger', name: 'Roger' }, { id: 'alex', name: 'Alex' }, { id: 'wang-jinrei', name: 'Wang Jinrei' }, { id: 'kuma-i', name: 'Kuma I' }, { id: 'armor-king-i', name: 'Armor King I' }, { id: 'kunimitsu-i', name: 'Kunimitsu I' }, { id: 'anna-williams', name: 'Anna Williams' }, { id: 'prototype-jack', name: 'Prototype Jack' }, { id: 'ganryu', name: 'Ganryu' }, { id: 'heihachi-mishima', name: 'Heihachi Mishima' }, { id: 'devil', name: 'Devil' }, { id: 'angel', name: 'Angel' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'world-heroes',
+    name: "World Heroes",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 8,
+        characters: [
+      { id: 'hanzo', name: 'Hanzo' }, { id: 'fuuma', name: 'Fuuma' }, { id: 'dragon', name: 'Dragon' }, { id: 'janne', name: 'Janne' }, { id: 'j-carn', name: 'J. Carn' }, { id: 'muscle-power', name: 'Muscle Power' }, { id: 'brocken', name: 'Brocken' }, { id: 'rasputin', name: 'Rasputin' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'world-heroes-2',
+    name: "World Heroes 2",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 14,
+        characters: [
+      { id: 'captain-kidd', name: 'Captain Kidd' }, { id: 'erick', name: 'Erick' }, { id: 'johnny-maximum', name: 'Johnny Maximum' }, { id: 'mudman', name: 'Mudman' }, { id: 'ryoko', name: 'Ryoko' }, { id: 'shura', name: 'Shura' }, { id: 'hanzo', name: 'Hanzo' }, { id: 'fuuma', name: 'Fuuma' }, { id: 'dragon', name: 'Dragon' }, { id: 'janne', name: 'Janne' }, { id: 'j-carn', name: 'J. Carn' }, { id: 'muscle-power', name: 'Muscle Power' }, { id: 'brocken', name: 'Brocken' }, { id: 'rasputin', name: 'Rasputin' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  },
+  {
+    id: 'world-heroes-2-jet',
+    name: "World Heroes 2 Jet",
+    developer: "Unknown",
+    releaseYear: 2000,
+rosterCount: 7,
+        characters: [
+      { id: 'jack', name: 'Jack' }, { id: 'ryofu', name: 'Ryofu' }, { id: 'zeus-boss', name: 'Zeus (Boss)' }, { id: 'hanzo', name: 'Hanzo' }, { id: 'fuuma', name: 'Fuuma' }, { id: 'dragon', name: 'Dragon' }, { id: 'captain-kidd', name: 'Captain Kidd' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   }

@@ -12,6 +12,7 @@ GameGlance currently supports the following titles:
 - BlazBlue: Central Fiction
 - BlazBlue: Cross Tag Battle
 - Bloody Roar
+- Bloody Roar 2
 - Bloody Roar 2: Bringer of the New Age
 - Bloody Roar 3
 - Bloody Roar 4
@@ -46,10 +47,12 @@ GameGlance currently supports the following titles:
 - Groove On Fight (Power Instinct 3)
 - Groove on Fight
 - Guilty Gear (1998)
+- Guilty Gear -Strive-
 - Guilty Gear X
 - Guilty Gear XX Accent Core Plus R
 - Guilty Gear Xrd REV 2
 - Hyper Street Fighter II
+- Invincible VS Beta
 - JoJo's Bizarre Adventure: Heritage for the Future (JJBA: HFTF)
 - Killer Instinct (1994)
 - Killer Instinct (2013)
@@ -58,6 +61,7 @@ GameGlance currently supports the following titles:
 - Last Bronx
 - Marvel Super Heroes
 - Marvel Super Heroes vs. Street Fighter
+- Marvel Toukon: Fighting Souls (Beta Version)
 - Marvel vs. Capcom 2
 - Marvel vs. Capcom: Clash of Super Heroes
 - Marvel vs. Capcom: Infinite
@@ -72,6 +76,8 @@ GameGlance currently supports the following titles:
 - Persona 4 Arena Ultimax
 - Plasma Sword: Nightmare of Bilstein
 - Pocket Fighter
+- Primal Rage
+- Primal Rage 2
 - Project Justice
 - Psychic Force
 - Psychic Force 2012 (Psychic Force 2)
@@ -103,6 +109,8 @@ GameGlance currently supports the following titles:
 - Super Street Fighter II Turbo
 - Super Street Fighter II: The New Challengers
 - Tatsunoko vs. Capcom: Ultimate All-Stars
+- Tekken 1
+- Tekken 2
 - Tekken 8
 - The King of Fighters 2000
 - The King of Fighters 2001
@@ -137,6 +145,9 @@ GameGlance currently supports the following titles:
 - Virtua Fighter 5 Ultimate Showdown
 - Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer)
 - Waku Waku 7
+- World Heroes
+- World Heroes 2
+- World Heroes 2 Jet
 - World Heroes Perfect
 - X-Men vs. Street Fighter
 - X-Men: Children of the Atom
