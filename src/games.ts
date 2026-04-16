@@ -10,15 +10,13 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
 
     developer: "SNK",
 
-    releaseYear: 1994,
+    releaseYear: 1992,
 
-    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
+    platform: "Arcade, NeoGeo, SNES, Genesis",
 
 rosterCount: 10,
 
         characters: [
-
-      
       { id: 'jack-turner', name: 'Jack Turner' },
       { id: 'john-crawley', name: 'John Crawley' },
       { id: 'king', name: 'King' },
@@ -29,8 +27,6 @@ rosterCount: 10,
       { id: 'robert-garcia', name: 'Robert Garcia' },
       { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
       { id: 'ryuhaku-todoh', name: 'Ryuhaku Todoh' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -47,13 +43,11 @@ rosterCount: 10,
 
     releaseYear: 1994,
 
-    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
+    platform: "Arcade, NeoGeo, SNES",
 
-rosterCount: 0,
+rosterCount: 13,
 
         characters: [
-
-    
       { id: 'eiji-kisaragi', name: 'Eiji Kisaragi' },
       { id: 'geese-howard', name: 'Geese Howard' },
       { id: 'jack-turner', name: 'Jack Turner' },
@@ -81,26 +75,22 @@ rosterCount: 0,
 
     developer: "SNK",
 
-    releaseYear: 1994,
+    releaseYear: 1996,
 
-    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
+    platform: "Arcade, NeoGeo",
 
-rosterCount: 999,
+rosterCount: 9,
 
         characters: [
-
-      
-      { id: 'jin-fu-ha', name: 'Jin Fu-Ha' },
+      { id: 'jin-fu---ha', name: 'Jin Fu - Ha' },
       { id: 'karman-cole', name: 'Karman Cole' },
       { id: 'kasumi-todoh', name: 'Kasumi Todoh' },
       { id: 'lenny-creston', name: 'Lenny Creston' },
       { id: 'robert-garcia', name: 'Robert Garcia' },
       { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
       { id: 'sinclair', name: 'Sinclair' },
-      { id: 'wang-koh-san', name: 'Wang Koh-San' },
+      { id: 'wang-koh---san', name: 'Wang Koh - San' },
       { id: 'wyler', name: 'Wyler' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -117,23 +107,19 @@ rosterCount: 999,
 
     releaseYear: 1998,
 
-    platform: "Arcade Sega Saturn",
+    platform: "Arcade",
 
-rosterCount: 999,
+rosterCount: 8,
 
         characters: [
-
-      
       { id: 'coco', name: 'Coco' },
       { id: 'cupe', name: 'Cupe' },
-      { id: 'ike-du', name: 'Ike-Du' },
+      { id: 'ike---du', name: 'Ike - Du' },
       { id: 'lettas', name: 'Lettas' },
       { id: 'marron', name: 'Marron' },
       { id: 'rouge', name: 'Rouge' },
       { id: 'stella', name: 'Stella' },
-      { id: 'test-kun', name: 'Test-Kun' }
-    
-
+      { id: 'test---kun', name: 'Test - Kun' }
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -184,13 +170,11 @@ rosterCount: 999,
 
     releaseYear: 1996,
 
-    platform: "PlayStation",
+    platform: "Arcade, PS1",
 
-rosterCount: 999,
+rosterCount: 30,
 
         characters: [
-
-      
       { id: 'abel', name: 'Abel' },
       { id: 'atwiki', name: 'Atwiki' },
       { id: 'balido', name: 'Balido' },
@@ -221,8 +205,6 @@ rosterCount: 999,
       { id: 'uranus', name: 'Uranus' },
       { id: 'veil', name: 'Veil' },
       { id: 'vermilion', name: 'Vermilion' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -239,13 +221,11 @@ rosterCount: 999,
 
     releaseYear: 1995,
 
-    platform: "Sega Saturn",
+    platform: "Arcade, Saturn",
 
-rosterCount: 0,
+rosterCount: 7,
 
         characters: [
-
-    
       { id: 'chilli-pepper', name: 'Chilli & Pepper' },
       { id: 'death-mask', name: 'Death Mask' },
       { id: 'kapila', name: 'Kapila' },
@@ -268,12 +248,11 @@ rosterCount: 0,
     developer: "Arc System Works",
 
     releaseYear: 2015,
+    platform: "Arcade, PS3, PS4, PC, Switch",
 
-rosterCount: 999,
+rosterCount: 35,
 
         characters: [
-
-      
       { id: 'amane-nishiki', name: 'Amane Nishiki' },
       { id: 'arakune', name: 'Arakune' },
       { id: 'azrael', name: 'Azrael' },
@@ -291,14 +270,14 @@ rosterCount: 999,
       { id: 'jubei', name: 'Jubei' },
       { id: 'kagura-mutsuki', name: 'Kagura Mutsuki' },
       { id: 'kokonoe', name: 'Kokonoe' },
-      { id: 'litchi-faye-ling', name: 'Litchi Faye-Ling' },
+      { id: 'litchi-faye---ling', name: 'Litchi Faye - Ling' },
       { id: 'mai-natsume', name: 'Mai Natsume' },
       { id: 'makoto-nanaya', name: 'Makoto Nanaya' },
-      { id: 'mu-12', name: 'Mu-12' },
+      { id: 'mu---12', name: 'Mu - 12' },
       { id: 'naoto-kurogane', name: 'Naoto Kurogane' },
       { id: 'nine-the-phantom', name: 'Nine the Phantom' },
       { id: 'noel-vermillion', name: 'Noel Vermillion' },
-      { id: 'nu-13', name: 'Nu-13' },
+      { id: 'nu---13', name: 'Nu - 13' },
       { id: 'platinum-the-trinity', name: 'Platinum the Trinity' },
       { id: 'rachel-alucard', name: 'Rachel Alucard' },
       { id: 'ragna-the-bloodedge', name: 'Ragna the Bloodedge' },
@@ -309,8 +288,6 @@ rosterCount: 999,
       { id: 'tsubaki-yayoi', name: 'Tsubaki Yayoi' },
       { id: 'valkenhayn-r-hellsing', name: 'Valkenhayn R. Hellsing' },
       { id: 'yuuki-terumi', name: 'Yuuki Terumi' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -326,12 +303,11 @@ rosterCount: 999,
     developer: "Arc System Works",
 
     releaseYear: 2018,
+    platform: "PS4, PC, Switch",
 
-rosterCount: 999,
+rosterCount: 40,
 
         characters: [
-
-      
       { id: 'adachi', name: 'Adachi' },
       { id: 'akatsuki', name: 'Akatsuki' },
       { id: 'akihiko', name: 'Akihiko' },
@@ -358,7 +334,7 @@ rosterCount: 999,
       { id: 'naoto-shirogane', name: 'Naoto Shirogane' },
       { id: 'nine', name: 'Nine' },
       { id: 'noel', name: 'Noel' },
-      { id: 'nu-13', name: 'Nu-13' },
+      { id: 'nu---13', name: 'Nu - 13' },
       { id: 'orie', name: 'Orie' },
       { id: 'platinum', name: 'Platinum' },
       { id: 'rachel', name: 'Rachel' },
@@ -372,8 +348,6 @@ rosterCount: 999,
       { id: 'yosuke', name: 'Yosuke' },
       { id: 'yu', name: 'Yu' },
       { id: 'yumi', name: 'Yumi' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -390,13 +364,11 @@ rosterCount: 999,
 
     releaseYear: 1997,
 
-    platform: "Arcade PlayStation",
+    platform: "Arcade, PS1",
 
 rosterCount: 8,
 
         characters: [
-
-      
       { id: 'alice', name: 'Alice' },
       { id: 'bakuryu', name: 'Bakuryu' },
       { id: 'fox', name: 'Fox' },
@@ -405,8 +377,6 @@ rosterCount: 8,
       { id: 'long', name: 'Long' },
       { id: 'mitsuko', name: 'Mitsuko' },
       { id: 'yugo', name: 'Yugo' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -454,15 +424,13 @@ rosterCount: 8,
 
     developer: "Hudson Soft",
 
-    releaseYear: 1997,
+    releaseYear: 1999,
 
-    platform: "Arcade PlayStation",
+    platform: "Arcade, PS1",
 
-rosterCount: 8,
+rosterCount: 10,
 
         characters: [
-
-      
       { id: 'alice', name: 'Alice' },
       { id: 'bakuryu', name: 'Bakuryu' },
       { id: 'busuzima', name: 'Busuzima' },
@@ -473,8 +441,6 @@ rosterCount: 8,
       { id: 'stun', name: 'Stun' },
       { id: 'uriko', name: 'Uriko' },
       { id: 'yugo', name: 'Yugo' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -489,15 +455,13 @@ rosterCount: 8,
 
     developer: "Hudson Soft",
 
-    releaseYear: 1997,
+    releaseYear: 2001,
 
-    platform: "Arcade PlayStation",
+    platform: "Arcade, PS2",
 
-rosterCount: 8,
+rosterCount: 13,
 
         characters: [
-
-      
       { id: 'alice', name: 'Alice' },
       { id: 'bakuryu', name: 'Bakuryu' },
       { id: 'busuzima', name: 'Busuzima' },
@@ -511,8 +475,6 @@ rosterCount: 8,
       { id: 'uranus', name: 'Uranus' },
       { id: 'xion', name: 'Xion' },
       { id: 'yugo', name: 'Yugo' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -527,15 +489,13 @@ rosterCount: 8,
 
     developer: "Hudson Soft",
 
-    releaseYear: 1997,
+    releaseYear: 2003,
 
-    platform: "Arcade PlayStation",
+    platform: "PS2",
 
-rosterCount: 8,
+rosterCount: 17,
 
         characters: [
-
-      
       { id: 'alice', name: 'Alice' },
       { id: 'bakuryu', name: 'Bakuryu' },
       { id: 'busuzima', name: 'Busuzima' },
@@ -553,8 +513,6 @@ rosterCount: 8,
       { id: 'uranus', name: 'Uranus' },
       { id: 'xion', name: 'Xion' },
       { id: 'yugo', name: 'Yugo' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -612,16 +570,14 @@ rosterCount: 8,
 
     releaseYear: 1998,
 
-    platform: "Arcade Neo Geo",
+    platform: "Arcade",
 
-rosterCount: 999,
+rosterCount: 10,
 
         characters: [
-
-      
       { id: 'alsion-iii', name: 'Alsion III' },
       { id: 'condor', name: 'Condor' },
-      { id: 'dao-long', name: 'Dao-Long' },
+      { id: 'dao---long', name: 'Dao - Long' },
       { id: 'maherl', name: 'Maherl' },
       { id: 'piela', name: 'Piela' },
       { id: 'rila', name: 'Rila' },
@@ -629,8 +585,6 @@ rosterCount: 999,
       { id: 'sheik-maherl', name: 'Sheik Maherl' },
       { id: 'sho', name: 'Sho' },
       { id: 'tia', name: 'Tia' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -646,12 +600,11 @@ rosterCount: 999,
     developer: "Capcom",
 
     releaseYear: 2004,
+    platform: "Arcade, PS2, Xbox",
 
-rosterCount: 999,
+rosterCount: 19,
 
         characters: [
-
-      
       { id: 'anakaris', name: 'Anakaris' },
       { id: 'demitri', name: 'Demitri' },
       { id: 'felicia', name: 'Felicia' },
@@ -671,8 +624,6 @@ rosterCount: 999,
       { id: 'urien', name: 'Urien' },
       { id: 'yun', name: 'Yun' },
       { id: 'zangief', name: 'Zangief' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -688,12 +639,11 @@ rosterCount: 999,
     developer: "Capcom",
 
     releaseYear: 2001,
+    platform: "Arcade, PS2, GC, Xbox, DC",
 
-rosterCount: 999,
+rosterCount: 44,
 
         characters: [
-
-      
       { id: 'akuma', name: 'Akuma' },
       { id: 'athena', name: 'Athena' },
       { id: 'balrog', name: 'Balrog' },
@@ -701,7 +651,7 @@ rosterCount: 999,
       { id: 'blanka', name: 'Blanka' },
       { id: 'cammy', name: 'Cammy' },
       { id: 'chang', name: 'Chang' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'dan', name: 'Dan' },
       { id: 'dhalsim', name: 'Dhalsim' },
       { id: 'eagle', name: 'Eagle' },
@@ -738,8 +688,6 @@ rosterCount: 999,
       { id: 'yun', name: 'Yun' },
       { id: 'yuri', name: 'Yuri' },
       { id: 'zangief', name: 'Zangief' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -755,18 +703,17 @@ rosterCount: 999,
     developer: "Capcom",
 
     releaseYear: 2001,
+    platform: "Arcade, PS1, DC",
 
-rosterCount: 999,
+rosterCount: 29,
 
         characters: [
-
-      
       { id: 'akuma', name: 'Akuma' },
       { id: 'balrog', name: 'Balrog' },
       { id: 'benimaru', name: 'Benimaru' },
       { id: 'blanka', name: 'Blanka' },
       { id: 'cammy', name: 'Cammy' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'dan', name: 'Dan' },
       { id: 'dhalsim', name: 'Dhalsim' },
       { id: 'e-honda', name: 'E. Honda' },
@@ -790,8 +737,6 @@ rosterCount: 999,
       { id: 'vice', name: 'Vice' },
       { id: 'yuri', name: 'Yuri' },
       { id: 'zangief', name: 'Zangief' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -807,12 +752,11 @@ rosterCount: 999,
     developer: "Capcom",
 
     releaseYear: 1995,
+    platform: "Arcade, Saturn, PS1",
 
-rosterCount: 999,
+rosterCount: 12,
 
         characters: [
-
-      
       { id: 'arieta', name: 'Arieta' },
       { id: 'bao-mao', name: 'Bao & Mao' },
       { id: 'chiyomaru', name: 'Chiyomaru' },
@@ -825,8 +769,6 @@ rosterCount: 999,
       { id: 'princess-devilotte', name: 'Princess Devilotte' },
       { id: 'santana', name: 'Santana' },
       { id: 'shade', name: 'Shade' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -842,12 +784,11 @@ rosterCount: 999,
     developer: "Capcom",
 
     releaseYear: 1994,
+    platform: "Arcade, PS1",
 
-rosterCount: 999,
+rosterCount: 11,
 
         characters: [
-
-      
       { id: 'anakaris', name: 'Anakaris' },
       { id: 'bishamon', name: 'Bishamon' },
       { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
@@ -859,8 +800,6 @@ rosterCount: 999,
       { id: 'rikuo', name: 'Rikuo' },
       { id: 'sasquatch', name: 'Sasquatch' },
       { id: 'victor-von-gerdenheim', name: 'Victor von Gerdenheim' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -875,15 +814,13 @@ rosterCount: 999,
 
     developer: "Tecmo",
 
-    releaseYear: 2019,
+    releaseYear: 1996,
 
-    platform: "Windows PlayStation 4 Xbox One",
+    platform: "Arcade, Saturn, PS1",
 
-rosterCount: 999,
+rosterCount: 10,
 
         characters: [
-
-      
       { id: 'ayane', name: 'Ayane' },
       { id: 'bayman', name: 'Bayman' },
       { id: 'gen-fu', name: 'Gen Fu' },
@@ -894,8 +831,6 @@ rosterCount: 999,
       { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
       { id: 'tina-armstrong', name: 'Tina Armstrong' },
       { id: 'zack', name: 'Zack' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -910,15 +845,13 @@ rosterCount: 999,
 
     developer: "Tecmo",
 
-    releaseYear: 2019,
+    releaseYear: 1999,
 
-    platform: "Windows PlayStation 4 Xbox One",
+    platform: "Arcade, DC, PS2",
 
-rosterCount: 999,
+rosterCount: 14,
 
         characters: [
-
-      
       { id: 'ayane', name: 'Ayane' },
       { id: 'bass', name: 'Bass' },
       { id: 'bayman', name: 'Bayman' },
@@ -933,8 +866,6 @@ rosterCount: 999,
       { id: 'tengu', name: 'Tengu' },
       { id: 'tina', name: 'Tina' },
       { id: 'zack', name: 'Zack' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -949,15 +880,13 @@ rosterCount: 999,
 
     developer: "Tecmo",
 
-    releaseYear: 2019,
+    releaseYear: 2001,
 
-    platform: "Windows PlayStation 4 Xbox One",
+    platform: "Xbox",
 
-rosterCount: 999,
+rosterCount: 17,
 
         characters: [
-
-      
       { id: 'ayane', name: 'Ayane' },
       { id: 'bass', name: 'Bass' },
       { id: 'bayman', name: 'Bayman' },
@@ -975,8 +904,6 @@ rosterCount: 999,
       { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
       { id: 'tina', name: 'Tina' },
       { id: 'zack', name: 'Zack' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -991,15 +918,13 @@ rosterCount: 999,
 
     developer: "Tecmo",
 
-    releaseYear: 2019,
+    releaseYear: 2005,
 
-    platform: "Windows PlayStation 4 Xbox One",
+    platform: "Xbox 360",
 
-rosterCount: 999,
+rosterCount: 22,
 
         characters: [
-
-      
       { id: 'ayane', name: 'Ayane' },
       { id: 'bass', name: 'Bass' },
       { id: 'bayman', name: 'Bayman' },
@@ -1017,13 +942,11 @@ rosterCount: 999,
       { id: 'la-mariposa', name: 'La Mariposa' },
       { id: 'leon', name: 'Leon' },
       { id: 'lei-fang', name: 'Lei Fang' },
-      { id: 'nicole-458', name: 'Nicole-458' },
+      { id: 'nicole---458', name: 'Nicole - 458' },
       { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
-      { id: 'spartan-458', name: 'Spartan-458' },
+      { id: 'spartan---458', name: 'Spartan - 458' },
       { id: 'tina', name: 'Tina' },
       { id: 'zack', name: 'Zack' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1038,15 +961,13 @@ rosterCount: 999,
 
     developer: "Tecmo",
 
-    releaseYear: 2019,
+    releaseYear: 2012,
 
-    platform: "Windows PlayStation 4 Xbox One",
+    platform: "PS3, Xbox 360",
 
-rosterCount: 999,
+rosterCount: 29,
 
         characters: [
-
-      
       { id: 'akira-yuki', name: 'Akira Yuki' },
       { id: 'ayane', name: 'Ayane' },
       { id: 'bass', name: 'Bass' },
@@ -1076,8 +997,6 @@ rosterCount: 999,
       { id: 'sarah-bryant', name: 'Sarah Bryant' },
       { id: 'tina', name: 'Tina' },
       { id: 'zack', name: 'Zack' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1094,13 +1013,11 @@ rosterCount: 999,
 
     releaseYear: 2019,
 
-    platform: "Windows PlayStation 4 Xbox One",
+    platform: "PS4, Xbox One, PC",
 
-rosterCount: 999,
+rosterCount: 29,
 
         characters: [
-
-      
       { id: 'ayane', name: 'Ayane' },
       { id: 'bass', name: 'Bass' },
       { id: 'bayman', name: 'Bayman' },
@@ -1130,8 +1047,6 @@ rosterCount: 999,
       { id: 'tamaki', name: 'Tamaki' },
       { id: 'tina', name: 'Tina' },
       { id: 'zack', name: 'Zack' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1148,13 +1063,11 @@ rosterCount: 999,
 
     releaseYear: 2022,
 
-    platform: "Windows PlayStation 4 PlayStation 5",
+    platform: "PS4, PS5, PC, Xbox One, Switch",
 
-rosterCount: 999,
+rosterCount: 16,
 
         characters: [
-
-      
       { id: 'berserker', name: 'Berserker' },
       { id: 'crusader', name: 'Crusader' },
       { id: 'dragon-knight', name: 'Dragon Knight' },
@@ -1171,8 +1084,6 @@ rosterCount: 999,
       { id: 'troubleshooter', name: 'Troubleshooter' },
       { id: 'vanguard', name: 'Vanguard' },
       { id: 'wind-walker', name: 'Wind Walker' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1188,12 +1099,11 @@ rosterCount: 999,
     developer: "Arc System Works",
 
     releaseYear: 2018,
+    platform: "PS4, Xbox One, PC, Switch",
 
-rosterCount: 25,
+rosterCount: 37,
 
         characters: [
-
-      
       { id: 'android-16', name: 'Android 16' },
       { id: 'android-17', name: 'Android 17' },
       { id: 'android-18', name: 'Android 18' },
@@ -1231,8 +1141,6 @@ rosterCount: 25,
       { id: 'videl', name: 'Videl' },
       { id: 'yamcha', name: 'Yamcha' },
       { id: 'zamasu-fused', name: 'Zamasu (Fused)' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1247,15 +1155,13 @@ rosterCount: 25,
 
     developer: "SNK",
 
-    releaseYear: 1991,
+    releaseYear: 1992,
 
-    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
+    platform: "Arcade, NeoGeo, SNES, Genesis",
 
-rosterCount: 999,
+rosterCount: 11,
 
         characters: [
-
-      
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'axel-hawk', name: 'Axel Hawk' },
       { id: 'big-bear', name: 'Big Bear' },
@@ -1267,8 +1173,6 @@ rosterCount: 999,
       { id: 'mai-shiranui', name: 'Mai Shiranui' },
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1283,20 +1187,18 @@ rosterCount: 999,
 
     developer: "SNK",
 
-    releaseYear: 1991,
+    releaseYear: 1995,
 
-    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
+    platform: "Arcade, NeoGeo, Saturn",
 
-rosterCount: 999,
+rosterCount: 12,
 
         characters: [
-
-      
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'blue-mary', name: 'Blue Mary' },
       { id: 'bob-wilson', name: 'Bob Wilson' },
       { id: 'franco-bash', name: 'Franco Bash' },
-      { id: 'hon-fu', name: 'Hon-Fu' },
+      { id: 'hon---fu', name: 'Hon - Fu' },
       { id: 'jin-chonrei', name: 'Jin Chonrei' },
       { id: 'jin-chonshu', name: 'Jin Chonshu' },
       { id: 'joe-higashi', name: 'Joe Higashi' },
@@ -1304,8 +1206,6 @@ rosterCount: 999,
       { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
       { id: 'sokaku-mochizuki', name: 'Sokaku Mochizuki' },
       { id: 'terry-bogard', name: 'Terry Bogard' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1320,15 +1220,13 @@ rosterCount: 999,
 
     developer: "SNK",
 
-    releaseYear: 1991,
+    releaseYear: 1993,
 
-    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
+    platform: "Arcade, NeoGeo, SNES, Genesis",
 
-rosterCount: 999,
+rosterCount: 16,
 
         characters: [
-
-      
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'axel-hawk', name: 'Axel Hawk' },
       { id: 'big-bear', name: 'Big Bear' },
@@ -1345,8 +1243,6 @@ rosterCount: 999,
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'tung-fu-rue', name: 'Tung Fu Rue' },
       { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1361,19 +1257,17 @@ rosterCount: 999,
 
     developer: "SNK",
 
-    releaseYear: 1991,
+    releaseYear: 2025,
 
-    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
+    platform: "PS4, PS5, PC, Xbox Series X/S",
 
-rosterCount: 999,
+rosterCount: 18,
 
         characters: [
-
-      
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'b-jenet', name: 'B. Jenet' },
       { id: 'billy-kane', name: 'Billy Kane' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'cristiano-ronaldo', name: 'Cristiano Ronaldo' },
       { id: 'gato', name: 'Gato' },
       { id: 'hotaru-futaba', name: 'Hotaru Futaba' },
@@ -1388,8 +1282,6 @@ rosterCount: 999,
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'tizoc', name: 'Tizoc' },
       { id: 'vox-reaper', name: 'Vox Reaper' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1406,13 +1298,11 @@ rosterCount: 999,
 
     releaseYear: 1991,
 
-    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
+    platform: "Arcade, NeoGeo, SNES, Genesis",
 
-rosterCount: 999,
+rosterCount: 11,
 
         characters: [
-
-      
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'billy-kane', name: 'Billy Kane' },
       { id: 'duck-king', name: 'Duck King' },
@@ -1424,8 +1314,6 @@ rosterCount: 999,
       { id: 'richard-meyer', name: 'Richard Meyer' },
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'tung-fu-rue', name: 'Tung Fu Rue' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1441,12 +1329,11 @@ rosterCount: 999,
     developer: "Sega",
 
     releaseYear: 1996,
+    platform: "Saturn",
 
-rosterCount: 999,
+rosterCount: 14,
 
         characters: [
-
-      
       { id: 'akira', name: 'Akira' },
       { id: 'bean', name: 'Bean' },
       { id: 'candy', name: 'Candy' },
@@ -1457,12 +1344,10 @@ rosterCount: 999,
       { id: 'kids-sarah', name: 'Kids Sarah' },
       { id: 'kumachan', name: 'Kumachan' },
       { id: 'pai', name: 'Pai' },
-      { id: 'rent-a-hero', name: 'Rent-A-Hero' },
+      { id: 'rent---a---hero', name: 'Rent - A - Hero' },
       { id: 'satoru', name: 'Satoru' },
       { id: 'shiba', name: 'Shiba' },
       { id: 'wolf', name: 'Wolf' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1479,13 +1364,11 @@ rosterCount: 999,
 
     releaseYear: 2018,
 
-    platform: "PlayStation 4 Windows Nintendo Switch",
+    platform: "PS4, PC, Switch, Xbox One",
 
-rosterCount: 999,
+rosterCount: 14,
 
         characters: [
-
-      
       { id: 'allen-snider', name: 'Allen Snider' },
       { id: 'blair-dame', name: 'Blair Dame' },
       { id: 'darun-mister', name: 'Darun Mister' },
@@ -1500,8 +1383,6 @@ rosterCount: 999,
       { id: 'shirase', name: 'Shirase' },
       { id: 'skullomania', name: 'Skullomania' },
       { id: 'terry-bogard', name: 'Terry Bogard' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1518,13 +1399,11 @@ rosterCount: 999,
 
     releaseYear: 1995,
 
-    platform: "Arcade Sega Saturn",
+    platform: "Arcade, Saturn",
 
-rosterCount: 999,
+rosterCount: 7,
 
         characters: [
-
-      
       { id: 'bahn', name: 'Bahn' },
       { id: 'candy', name: 'Candy' },
       { id: 'honey', name: 'Honey' },
@@ -1532,8 +1411,6 @@ rosterCount: 999,
       { id: 'picky', name: 'Picky' },
       { id: 'sanman', name: 'Sanman' },
       { id: 'tokio', name: 'Tokio' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1548,15 +1425,13 @@ rosterCount: 999,
 
     developer: "Sega",
 
-    releaseYear: 1995,
+    releaseYear: 1998,
 
-    platform: "Arcade Sega Saturn",
+    platform: "Arcade, DC",
 
-rosterCount: 999,
+rosterCount: 9,
 
         characters: [
-
-      
       { id: 'bahn', name: 'Bahn' },
       { id: 'charlie', name: 'Charlie' },
       { id: 'emi', name: 'Emi' },
@@ -1566,8 +1441,6 @@ rosterCount: 999,
       { id: 'picky', name: 'Picky' },
       { id: 'sanman', name: 'Sanman' },
       { id: 'tokio', name: 'Tokio' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1584,13 +1457,11 @@ rosterCount: 999,
 
     releaseYear: 2005,
 
-    platform: "Arcade PlayStation 2",
+    platform: "Arcade, PS2",
 
-rosterCount: 9,
+rosterCount: 10,
 
         characters: [
-
-      
       { id: 'heart', name: 'Heart' },
       { id: 'jagi', name: 'Jagi' },
       { id: 'judas', name: 'Judas' },
@@ -1601,8 +1472,6 @@ rosterCount: 9,
       { id: 'shin', name: 'Shin' },
       { id: 'souther', name: 'Souther' },
       { id: 'toki', name: 'Toki' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1619,15 +1488,13 @@ rosterCount: 9,
 
     releaseYear: 1995,
 
-    platform: "Neo Geo Arcade Sega Saturn PlayStation",
+    platform: "Arcade, NeoGeo, Saturn, PS1",
 
-rosterCount: 999,
+rosterCount: 9,
 
         characters: [
-
-      
       { id: 'alvan', name: 'Alvan' },
-      { id: 'bonus-kun', name: 'Bonus-Kun' },
+      { id: 'bonus---kun', name: 'Bonus - Kun' },
       { id: 'felden', name: 'Felden' },
       { id: 'gunter', name: 'Gunter' },
       { id: 'jaba', name: 'Jaba' },
@@ -1635,8 +1502,6 @@ rosterCount: 999,
       { id: 'musashi', name: 'Musashi' },
       { id: 'rolf', name: 'Rolf' },
       { id: 'roomi', name: 'Roomi' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1652,12 +1517,11 @@ rosterCount: 999,
     developer: "SNK",
 
     releaseYear: 1999,
+    platform: "Arcade, NeoGeo, DC, PS2",
 
-rosterCount: 999,
+rosterCount: 14,
 
         characters: [
-
-      
       { id: 'b-jenet', name: 'B. Jenet' },
       { id: 'dong-hwan', name: 'Dong Hwan' },
       { id: 'freeman', name: 'Freeman' },
@@ -1672,8 +1536,6 @@ rosterCount: 999,
       { id: 'rock-howard', name: 'Rock Howard' },
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'tizoc', name: 'Tizoc' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1690,13 +1552,11 @@ rosterCount: 999,
 
     releaseYear: 1995,
 
-    platform: "Arcade Sega Saturn",
+    platform: "Arcade, Saturn",
 
-rosterCount: 999,
+rosterCount: 8,
 
         characters: [
-
-      
       { id: 'death-adder', name: 'Death Adder' },
       { id: 'doc', name: 'Doc' },
       { id: 'gillius', name: 'Gillius' },
@@ -1705,8 +1565,6 @@ rosterCount: 999,
       { id: 'milan', name: 'Milan' },
       { id: 'panchos', name: 'Panchos' },
       { id: 'zoma', name: 'Zoma' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1723,13 +1581,11 @@ rosterCount: 999,
 
     releaseYear: 2023,
 
-    platform: "Windows PlayStation 4 PlayStation 5",
+    platform: "PS4, PS5, PC",
 
-rosterCount: 999,
+rosterCount: 14,
 
         characters: [
-
-      
       { id: 'anila', name: 'Anila' },
       { id: 'belial', name: 'Belial' },
       { id: 'beelzebub', name: 'Beelzebub' },
@@ -1744,8 +1600,6 @@ rosterCount: 999,
       { id: 'vane', name: 'Vane' },
       { id: 'vira', name: 'Vira' },
       { id: 'zeta', name: 'Zeta' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1799,13 +1653,11 @@ rosterCount: 14,
 
     releaseYear: 1997,
 
-    platform: "Arcade Sega Saturn",
+    platform: "Arcade, Saturn",
 
-rosterCount: 14,
+rosterCount: 12,
 
         characters: [
-
-      
       { id: 'bristol-weller', name: 'Bristol Weller' },
       { id: 'chris-wayne', name: 'Chris Wayne' },
       { id: 'damian-shade', name: 'Damian Shade' },
@@ -1818,8 +1670,6 @@ rosterCount: 14,
       { id: 'remi-otogiri', name: 'Remi Otogiri' },
       { id: 'solis-r8000', name: 'Solis R8000' },
       { id: 'tenjinbashi-sujiroku', name: 'Tenjinbashi Sujiroku' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1836,13 +1686,11 @@ rosterCount: 14,
 
     releaseYear: 1998,
 
-    platform: "PlayStation",
+    platform: "PS1",
 
-rosterCount: 999,
+rosterCount: 12,
 
         characters: [
-
-      
       { id: 'axl-low', name: 'Axl Low' },
       { id: 'baiken', name: 'Baiken' },
       { id: 'chipp-zanuff', name: 'Chipp Zanuff' },
@@ -1854,9 +1702,7 @@ rosterCount: 999,
       { id: 'potemkin', name: 'Potemkin' },
       { id: 'sol-badguy', name: 'Sol Badguy' },
       { id: 'testament', name: 'Testament' },
-      { id: 'zato-1', name: 'Zato-1' }
-    
-
+      { id: 'zato---1', name: 'Zato - 1' }
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1920,15 +1766,13 @@ rosterCount: 9,
 
     developer: "Arc System Works",
 
-    releaseYear: 1998,
+    releaseYear: 2000,
 
-    platform: "PlayStation",
+    platform: "Arcade, DC, PS2",
 
-rosterCount: 999,
+rosterCount: 16,
 
         characters: [
-
-      
       { id: 'anji-mito', name: 'Anji Mito' },
       { id: 'axl-low', name: 'Axl Low' },
       { id: 'baiken', name: 'Baiken' },
@@ -1944,9 +1788,7 @@ rosterCount: 999,
       { id: 'sol-badguy', name: 'Sol Badguy' },
       { id: 'testament', name: 'Testament' },
       { id: 'venom', name: 'Venom' },
-      { id: 'zato-1', name: 'Zato-1' }
-    
-
+      { id: 'zato---1', name: 'Zato - 1' }
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1961,15 +1803,13 @@ rosterCount: 999,
 
     developer: "Arc System Works",
 
-    releaseYear: 1998,
+    releaseYear: 2017,
 
-    platform: "PlayStation",
+    platform: "Arcade, PS3, PS4, PC",
 
-rosterCount: 999,
+rosterCount: 23,
 
         characters: [
-
-      
       { id: 'answer', name: 'Answer' },
       { id: 'baiken', name: 'Baiken' },
       { id: 'bedman', name: 'Bedman' },
@@ -1977,8 +1817,8 @@ rosterCount: 999,
       { id: 'dizzy', name: 'Dizzy' },
       { id: 'elphelt-valentine', name: 'Elphelt Valentine' },
       { id: 'faust', name: 'Faust' },
-      { id: 'i-no', name: 'I-No' },
-      { id: 'jack-o', name: 'Jack-O\'' },
+      { id: 'i---no', name: 'I - No' },
+      { id: 'jack---o', name: 'Jack - O\'' },
       { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' },
       { id: 'johnny', name: 'Johnny' },
       { id: 'kum-haehyun', name: 'Kum Haehyun' },
@@ -1993,8 +1833,6 @@ rosterCount: 999,
       { id: 'slayer', name: 'Slayer' },
       { id: 'sol-badguy', name: 'Sol Badguy' },
       { id: 'venom', name: 'Venom' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2009,15 +1847,13 @@ rosterCount: 999,
 
     developer: "Arc System Works",
 
-    releaseYear: 1998,
+    releaseYear: 2012,
 
-    platform: "PlayStation",
+    platform: "Arcade, PS3, Xbox 360, Vita, PC, Switch",
 
-rosterCount: 999,
+rosterCount: 25,
 
         characters: [
-
-      
       { id: 'aba', name: 'A.B.A' },
       { id: 'anji-mito', name: 'Anji Mito' },
       { id: 'axl-low', name: 'Axl Low' },
@@ -2027,7 +1863,7 @@ rosterCount: 999,
       { id: 'dizzy', name: 'Dizzy' },
       { id: 'eddie', name: 'Eddie' },
       { id: 'faust', name: 'Faust' },
-      { id: 'i-no', name: 'I-No' },
+      { id: 'i---no', name: 'I - No' },
       { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' },
       { id: 'johnny', name: 'Johnny' },
       { id: 'justice', name: 'Justice' },
@@ -2035,16 +1871,14 @@ rosterCount: 999,
       { id: 'ky-kiske', name: 'Ky Kiske' },
       { id: 'may', name: 'May' },
       { id: 'millia-rage', name: 'Millia Rage' },
-      { id: 'order-sol', name: 'Order-Sol' },
+      { id: 'order---sol', name: 'Order - Sol' },
       { id: 'potemkin', name: 'Potemkin' },
-      { id: 'robo-ky', name: 'Robo-Ky' },
+      { id: 'robo---ky', name: 'Robo - Ky' },
       { id: 'slayer', name: 'Slayer' },
       { id: 'sol-badguy', name: 'Sol Badguy' },
       { id: 'testament', name: 'Testament' },
       { id: 'venom', name: 'Venom' },
       { id: 'zappa', name: 'Zappa' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2098,24 +1932,20 @@ rosterCount: 999,
 
     developer: "Unknown",
 
-    releaseYear: 2026,
+    releaseYear: 2023,
 
-    platform: "Windows Xbox Series X/S PlayStation 5",
+    platform: "PC",
 
-rosterCount: 10,
+rosterCount: 7,
 
         characters: [
-
-      
       { id: 'atom-eve', name: 'Atom Eve' },
       { id: 'battle-beast', name: 'Battle Beast' },
-      { id: 'dupli-kate', name: 'Dupli-Kate' },
+      { id: 'dupli---kate', name: 'Dupli - Kate' },
       { id: 'invincible', name: 'Invincible' },
-      { id: 'omni-man', name: 'Omni-Man' },
+      { id: 'omni---man', name: 'Omni - Man' },
       { id: 'rex-splode', name: 'Rex Splode' },
       { id: 'robot', name: 'Robot' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2174,11 +2004,9 @@ rosterCount: 15,
 
     platform: "Xbox",
 
-rosterCount: 12,
+rosterCount: 8,
 
         characters: [
-
-      
       { id: 'asuka', name: 'Asuka' },
       { id: 'crusher', name: 'Crusher' },
       { id: 'jd-stone', name: 'J.D. Stone' },
@@ -2187,8 +2015,6 @@ rosterCount: 12,
       { id: 'rena', name: 'Rena' },
       { id: 'shadow', name: 'Shadow' },
       { id: 'vittoria', name: 'Vittoria' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2205,13 +2031,11 @@ rosterCount: 12,
 
     releaseYear: 1994,
 
-    platform: "Atari Jaguar",
+    platform: "Jaguar",
 
 rosterCount: 9,
 
         characters: [
-
-      
       { id: 'alaric', name: 'Alaric' },
       { id: 'angus', name: 'Angus' },
       { id: 'chagi', name: 'Chagi' },
@@ -2221,8 +2045,6 @@ rosterCount: 9,
       { id: 'pakawa', name: 'Pakawa' },
       { id: 'senzo', name: 'Senzo' },
       { id: 'thoth', name: 'Thoth' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2356,12 +2178,11 @@ rosterCount: 999,
     developer: "SNK",
 
     releaseYear: 1996,
+    platform: "Arcade, NeoGeo",
 
-rosterCount: 999,
+rosterCount: 8,
 
         characters: [
-
-      
       { id: 'chung-paifu', name: 'Chung Paifu' },
       { id: 'gozu', name: 'Gozu' },
       { id: 'kim-sue-il', name: 'Kim Sue Il' },
@@ -2370,8 +2191,6 @@ rosterCount: 999,
       { id: 'mezu', name: 'Mezu' },
       { id: 'rosa', name: 'Rosa' },
       { id: 'sho-hayate', name: 'Sho Hayate' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2388,13 +2207,11 @@ rosterCount: 999,
 
     releaseYear: 1996,
 
-    platform: "Arcade Sega Saturn Windows",
+    platform: "Arcade, Saturn, PS1",
 
-rosterCount: 999,
+rosterCount: 8,
 
         characters: [
-
-      
       { id: 'joe', name: 'Joe' },
       { id: 'kurosawa', name: 'Kurosawa' },
       { id: 'lisa', name: 'Lisa' },
@@ -2403,8 +2220,6 @@ rosterCount: 999,
       { id: 'tommy', name: 'Tommy' },
       { id: 'yusaku', name: 'Yusaku' },
       { id: 'zaimoku', name: 'Zaimoku' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2420,12 +2235,11 @@ rosterCount: 999,
     developer: "Capcom",
 
     releaseYear: 1995,
+    platform: "Arcade, Saturn, PS1",
 
-rosterCount: 999,
+rosterCount: 12,
 
         characters: [
-
-      
       { id: 'black-heart', name: 'Black Heart' },
       { id: 'captain-america', name: 'Captain America' },
       { id: 'doctor-doom', name: 'Doctor Doom' },
@@ -2434,12 +2248,10 @@ rosterCount: 999,
       { id: 'juggernaut', name: 'Juggernaut' },
       { id: 'magneto', name: 'Magneto' },
       { id: 'psylocke', name: 'Psylocke' },
-      { id: 'shuma-gorath', name: 'Shuma-Gorath' },
-      { id: 'spider-man', name: 'Spider-Man' },
+      { id: 'shuma---gorath', name: 'Shuma - Gorath' },
+      { id: 'spider---man', name: 'Spider - Man' },
       { id: 'thanos', name: 'Thanos' },
       { id: 'wolverine', name: 'Wolverine' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2494,24 +2306,20 @@ rosterCount: 999,
 
     developer: "Unknown",
 
-    releaseYear: 2025,
+    releaseYear: 2024,
 
-    platform: "PlayStation 5 Windows",
+    platform: "PS5, PC",
 
-rosterCount: 9,
+rosterCount: 7,
 
         characters: [
-
-      
       { id: 'captain-america', name: 'Captain America' },
       { id: 'hulk', name: 'Hulk' },
       { id: 'iron-man', name: 'Iron Man' },
-      { id: 'spider-man', name: 'Spider-Man' },
+      { id: 'spider---man', name: 'Spider - Man' },
       { id: 'thanos', name: 'Thanos' },
       { id: 'thor', name: 'Thor' },
       { id: 'wolverine', name: 'Wolverine' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2528,20 +2336,18 @@ rosterCount: 9,
 
     releaseYear: 2000,
 
-    platform: "Arcade Sega Dreamcast PlayStation 2 Xbox",
+    platform: "Arcade, DC, PS2, Xbox",
 
-rosterCount: 999,
+rosterCount: 38,
 
         characters: [
-
-      
       { id: 'akuma', name: 'Akuma' },
       { id: 'amaterasu', name: 'Amaterasu' },
       { id: 'arthur', name: 'Arthur' },
       { id: 'bb-hood', name: 'B.B. Hood' },
       { id: 'cable', name: 'Cable' },
       { id: 'captain-america', name: 'Captain America' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'cyclops', name: 'Cyclops' },
       { id: 'dan', name: 'Dan' },
       { id: 'dhalsim', name: 'Dhalsim' },
@@ -2561,10 +2367,10 @@ rosterCount: 999,
       { id: 'sakura', name: 'Sakura' },
       { id: 'sentinel', name: 'Sentinel' },
       { id: 'servbot', name: 'Servbot' },
-      { id: 'shuma-gorath', name: 'Shuma-Gorath' },
+      { id: 'shuma---gorath', name: 'Shuma - Gorath' },
       { id: 'silver-samurai', name: 'Silver Samurai' },
       { id: 'sonson', name: 'SonSon' },
-      { id: 'spider-man', name: 'Spider-Man' },
+      { id: 'spider---man', name: 'Spider - Man' },
       { id: 'storm', name: 'Storm' },
       { id: 'strider-hiryu', name: 'Strider Hiryu' },
       { id: 'thanos', name: 'Thanos' },
@@ -2573,8 +2379,6 @@ rosterCount: 999,
       { id: 'war-machine', name: 'War Machine' },
       { id: 'wolverine', name: 'Wolverine' },
       { id: 'zangief', name: 'Zangief' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2589,31 +2393,27 @@ rosterCount: 999,
 
     developer: "Capcom",
 
-    releaseYear: 2000,
+    releaseYear: 1998,
 
-    platform: "Arcade Sega Dreamcast PlayStation 2 Xbox",
+    platform: "Arcade, PS1, DC",
 
-rosterCount: 999,
+rosterCount: 14,
 
         characters: [
-
-      
       { id: 'captain-america', name: 'Captain America' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'gambit', name: 'Gambit' },
       { id: 'hulk', name: 'Hulk' },
       { id: 'jin', name: 'Jin' },
       { id: 'mega-man', name: 'Mega Man' },
       { id: 'morrigan', name: 'Morrigan' },
       { id: 'ryu', name: 'Ryu' },
-      { id: 'spider-man', name: 'Spider-Man' },
+      { id: 'spider---man', name: 'Spider - Man' },
       { id: 'strider-hiryu', name: 'Strider Hiryu' },
       { id: 'venom', name: 'Venom' },
       { id: 'war-machine', name: 'War Machine' },
       { id: 'wolverine', name: 'Wolverine' },
       { id: 'zangief', name: 'Zangief' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2628,27 +2428,37 @@ rosterCount: 999,
 
     developer: "Capcom",
 
-    releaseYear: 2000,
+    releaseYear: 2017,
 
-    platform: "Arcade Sega Dreamcast PlayStation 2 Xbox",
+    platform: "PS4, Xbox One, PC",
 
-rosterCount: 999,
+rosterCount: 24,
 
         characters: [
-
-      
-      { id: 'matrimelee-power-instinct-matrimelee---annie', name: '**Matrimelee (Power Instinct Matrimelee) ** - Annie' },
-      { id: 'bobby', name: 'Bobby' },
-      { id: 'choy', name: 'Choy' },
-      { id: 'keith', name: 'Keith' },
-      { id: 'olof', name: 'Olof' },
-      { id: 'oume', name: 'Oume' },
-      { id: 'otane', name: 'Otane' },
-      { id: 'reiko', name: 'Reiko' },
-      { id: 'saizo', name: 'Saizo' },
-      { id: 'white', name: 'White' }
-    
-
+      { id: 'black-panther', name: 'Black Panther' },
+      { id: 'captain-america', name: 'Captain America' },
+      { id: 'captain-marvel', name: 'Captain Marvel' },
+      { id: 'chun---li', name: 'Chun - Li' },
+      { id: 'dante', name: 'Dante' },
+      { id: 'doctor-strange', name: 'Doctor Strange' },
+      { id: 'gamora', name: 'Gamora' },
+      { id: 'ghost-rider', name: 'Ghost Rider' },
+      { id: 'hulk', name: 'Hulk' },
+      { id: 'iron-man', name: 'Iron Man' },
+      { id: 'jedah', name: 'Jedah' },
+      { id: 'marvel', name: 'Marvel' },
+      { id: 'mega-man-x', name: 'Mega Man X' },
+      { id: 'morrigan', name: 'Morrigan' },
+      { id: 'nemesis', name: 'Nemesis' },
+      { id: 'nova', name: 'Nova' },
+      { id: 'rocket-raccoon', name: 'Rocket Raccoon' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'spider---man', name: 'Spider - Man' },
+      { id: 'strider-hiryu', name: 'Strider Hiryu' },
+      { id: 'thanos', name: 'Thanos' },
+      { id: 'thor', name: 'Thor' },
+      { id: 'ultron', name: 'Ultron' },
+      { id: 'zero', name: 'Zero' }
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2760,15 +2570,13 @@ rosterCount: 999,
 
     developer: "NetherRealm Studios",
 
-    releaseYear: 2011,
+    releaseYear: 2023,
 
-    platform: "PlayStation 3 Xbox 360 Windows",
+    platform: "PS5, Xbox Series X/S, Switch, PC",
 
-rosterCount: 999,
+rosterCount: 25,
 
         characters: [
-
-      
       { id: 'ashrah', name: 'Ashrah' },
       { id: 'baraka', name: 'Baraka' },
       { id: 'geras', name: 'Geras' },
@@ -2781,7 +2589,7 @@ rosterCount: 999,
       { id: 'liu-kang', name: 'Liu Kang' },
       { id: 'mileena', name: 'Mileena' },
       { id: 'nitara', name: 'Nitara' },
-      { id: 'omni-man', name: 'Omni-Man' },
+      { id: 'omni---man', name: 'Omni - Man' },
       { id: 'peacemaker', name: 'Peacemaker' },
       { id: 'quan-chi', name: 'Quan Chi' },
       { id: 'raiden', name: 'Raiden' },
@@ -2792,10 +2600,8 @@ rosterCount: 999,
       { id: 'shang-tsung', name: 'Shang Tsung' },
       { id: 'sindel', name: 'Sindel' },
       { id: 'smoke', name: 'Smoke' },
-      { id: 'sub-zero', name: 'Sub-Zero' },
+      { id: 'sub---zero', name: 'Sub - Zero' },
       { id: 'tanya', name: 'Tanya' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2810,15 +2616,13 @@ rosterCount: 999,
 
     developer: "Midway",
 
-    releaseYear: 2011,
+    releaseYear: 1993,
 
-    platform: "PlayStation 3 Xbox 360 Windows",
+    platform: "Arcade, SNES, Genesis, PS1",
 
-rosterCount: 999,
+rosterCount: 14,
 
         characters: [
-
-      
       { id: 'baraka', name: 'Baraka' },
       { id: 'jax', name: 'Jax' },
       { id: 'johnny-cage', name: 'Johnny Cage' },
@@ -2832,9 +2636,7 @@ rosterCount: 999,
       { id: 'scorpion', name: 'Scorpion' },
       { id: 'shang-tsung', name: 'Shang Tsung' },
       { id: 'smoke', name: 'Smoke' },
-      { id: 'sub-zero', name: 'Sub-Zero' }
-    
-
+      { id: 'sub---zero', name: 'Sub - Zero' }
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2849,15 +2651,13 @@ rosterCount: 999,
 
     developer: "NetherRealm Studios",
 
-    releaseYear: 2011,
+    releaseYear: 2015,
 
-    platform: "PlayStation 3 Xbox 360 Windows",
+    platform: "PS4, Xbox One, PC",
 
-rosterCount: 999,
+rosterCount: 32,
 
         characters: [
-
-      
       { id: 'alien', name: 'Alien' },
       { id: 'bo-rai-cho', name: 'Bo\' Rai Cho' },
       { id: 'cassie-cage', name: 'Cassie Cage' },
@@ -2886,12 +2686,10 @@ rosterCount: 999,
       { id: 'scorpion', name: 'Scorpion' },
       { id: 'shinnok', name: 'Shinnok' },
       { id: 'sonya-blade', name: 'Sonya Blade' },
-      { id: 'sub-zero', name: 'Sub-Zero' },
+      { id: 'sub---zero', name: 'Sub - Zero' },
       { id: 'takeda-takahashi', name: 'Takeda Takahashi' },
       { id: 'tanya', name: 'Tanya' },
       { id: 'tremor', name: 'Tremor' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2906,15 +2704,13 @@ rosterCount: 999,
 
     developer: "NetherRealm Studios",
 
-    releaseYear: 2011,
+    releaseYear: 2004,
 
-    platform: "PlayStation 3 Xbox 360 Windows",
+    platform: "PS2, Xbox, GC",
 
-rosterCount: 999,
+rosterCount: 21,
 
         characters: [
-
-      
       { id: 'ashrah', name: 'Ashrah' },
       { id: 'baraka', name: 'Baraka' },
       { id: 'bo-rai-cho', name: 'Bo\' Rai Cho' },
@@ -2929,15 +2725,13 @@ rosterCount: 999,
       { id: 'liu-kang', name: 'Liu Kang' },
       { id: 'mileena', name: 'Mileena' },
       { id: 'nightwolf', name: 'Nightwolf' },
-      { id: 'noob-smoke', name: 'Noob-Smoke' },
+      { id: 'noob---smoke', name: 'Noob - Smoke' },
       { id: 'raiden', name: 'Raiden' },
       { id: 'scorpion', name: 'Scorpion' },
       { id: 'shujinko', name: 'Shujinko' },
       { id: 'sindel', name: 'Sindel' },
-      { id: 'sub-zero', name: 'Sub-Zero' },
+      { id: 'sub---zero', name: 'Sub - Zero' },
       { id: 'tanya', name: 'Tanya' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2953,18 +2747,17 @@ rosterCount: 999,
     developer: "Capcom",
 
     releaseYear: 1995,
+    platform: "Arcade, Saturn",
 
-rosterCount: 999,
+rosterCount: 14,
 
         characters: [
-
-      
       { id: 'anakaris', name: 'Anakaris' },
       { id: 'bishamon', name: 'Bishamon' },
       { id: 'demitri', name: 'Demitri' },
       { id: 'donovan', name: 'Donovan' },
       { id: 'felicia', name: 'Felicia' },
-      { id: 'hsien-ko', name: 'Hsien-Ko' },
+      { id: 'hsien---ko', name: 'Hsien - Ko' },
       { id: 'huitzil', name: 'Huitzil' },
       { id: 'jon-talbain', name: 'Jon Talbain' },
       { id: 'lord-raptor', name: 'Lord Raptor' },
@@ -2973,8 +2766,6 @@ rosterCount: 999,
       { id: 'rikuo', name: 'Rikuo' },
       { id: 'sasquatch', name: 'Sasquatch' },
       { id: 'victor', name: 'Victor' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3026,13 +2817,11 @@ rosterCount: 999,
 
     releaseYear: 2013,
 
-    platform: "Arcade PlayStation 3 Xbox 360",
+    platform: "Arcade, PS3, PS4, PC, Switch",
 
-rosterCount: 999,
+rosterCount: 20,
 
         characters: [
-
-      
       { id: 'adachi', name: 'Adachi' },
       { id: 'akihiko', name: 'Akihiko' },
       { id: 'chie', name: 'Chie' },
@@ -3053,8 +2842,6 @@ rosterCount: 999,
       { id: 'yukari', name: 'Yukari' },
       { id: 'yukiko', name: 'Yukiko' },
       { id: 'yu', name: 'Yu' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3071,13 +2858,11 @@ rosterCount: 999,
 
     releaseYear: 1998,
 
-    platform: "Arcade Sega Dreamcast",
+    platform: "Arcade, DC",
 
-rosterCount: 999,
+rosterCount: 13,
 
         characters: [
-
-      
       { id: 'bilstein', name: 'Bilstein' },
       { id: 'black', name: 'Black' },
       { id: 'ele', name: 'Ele' },
@@ -3091,8 +2876,6 @@ rosterCount: 999,
       { id: 'saturn', name: 'Saturn' },
       { id: 'vector', name: 'Vector' },
       { id: 'zelkin', name: 'Zelkin' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3146,13 +2929,11 @@ rosterCount: 999,
 
     releaseYear: 1994,
 
-    platform: "Arcade Sega Genesis SNES PlayStation Sega Saturn 3DO Game Gear Game Boy Atari Jaguar PC",
+    platform: "Arcade, Genesis, SNES",
 
 rosterCount: 7,
 
         characters: [
-
-      
       { id: 'armadon', name: 'Armadon' },
       { id: 'blizzard', name: 'Blizzard' },
       { id: 'chaos', name: 'Chaos' },
@@ -3160,8 +2941,6 @@ rosterCount: 7,
       { id: 'sauron', name: 'Sauron' },
       { id: 'talon', name: 'Talon' },
       { id: 'vertigo', name: 'Vertigo' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3249,13 +3028,11 @@ rosterCount: 999,
 
     releaseYear: 1996,
 
-    platform: "Arcade PlayStation",
+    platform: "Arcade, PS1",
 
-rosterCount: 11,
+rosterCount: 10,
 
         characters: [
-
-      
       { id: 'brad', name: 'Brad' },
       { id: 'burn', name: 'Burn' },
       { id: 'emilio', name: 'Emilio' },
@@ -3266,8 +3043,6 @@ rosterCount: 11,
       { id: 'rokkan', name: 'Rokkan' },
       { id: 'sonia', name: 'Sonia' },
       { id: 'wendy', name: 'Wendy' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3282,15 +3057,13 @@ rosterCount: 11,
 
     developer: "Unknown",
 
-    releaseYear: 1996,
+    releaseYear: 1998,
 
-    platform: "Arcade PlayStation",
+    platform: "Arcade, DC",
 
-rosterCount: 11,
+rosterCount: 13,
 
         characters: [
-
-      
       { id: 'burn', name: 'Burn' },
       { id: 'carlo', name: 'Carlo' },
       { id: 'emilio', name: 'Emilio' },
@@ -3304,8 +3077,6 @@ rosterCount: 11,
       { id: 'setsuna', name: 'Setsuna' },
       { id: 'sonia', name: 'Sonia' },
       { id: 'wendy', name: 'Wendy' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3322,13 +3093,11 @@ rosterCount: 11,
 
     releaseYear: 2002,
 
-    platform: "Neo Geo Arcade",
+    platform: "Arcade, NeoGeo",
 
-rosterCount: 999,
+rosterCount: 13,
 
         characters: [
-
-      
       { id: 'abubo', name: 'Abubo' },
       { id: 'alice', name: 'Alice' },
       { id: 'billy', name: 'Billy' },
@@ -3342,8 +3111,6 @@ rosterCount: 999,
       { id: 'pupa', name: 'Pupa' },
       { id: 'radel', name: 'Radel' },
       { id: 'sonia', name: 'Sonia' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3392,12 +3159,11 @@ rosterCount: 10,
     developer: "SNK",
 
     releaseYear: 1995,
+    platform: "Arcade, NeoGeo, Saturn, PS1",
 
-rosterCount: 999,
+rosterCount: 16,
 
         characters: [
-
-      
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'billy-kane', name: 'Billy Kane' },
       { id: 'blue-mary', name: 'Blue Mary' },
@@ -3407,15 +3173,13 @@ rosterCount: 999,
       { id: 'duck-king', name: 'Duck King' },
       { id: 'franco-bash', name: 'Franco Bash' },
       { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'hon-fu', name: 'Hon-Fu' },
+      { id: 'hon---fu', name: 'Hon - Fu' },
       { id: 'joe-higashi', name: 'Joe Higashi' },
       { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
       { id: 'mai-shiranui', name: 'Mai Shiranui' },
       { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
       { id: 'sokaku-mochizuki', name: 'Sokaku Mochizuki' },
       { id: 'terry-bogard', name: 'Terry Bogard' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3430,13 +3194,12 @@ rosterCount: 999,
 
     developer: "SNK",
 
-    releaseYear: 1992,
+    releaseYear: 1998,
+    platform: "Arcade, NeoGeo, DC, PS2",
 
-rosterCount: 999,
+rosterCount: 19,
 
         characters: [
-
-      
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'billy-kane', name: 'Billy Kane' },
       { id: 'blue-mary', name: 'Blue Mary' },
@@ -3446,7 +3209,7 @@ rosterCount: 999,
       { id: 'duck-king', name: 'Duck King' },
       { id: 'franco-bash', name: 'Franco Bash' },
       { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'hon-fu', name: 'Hon-Fu' },
+      { id: 'hon---fu', name: 'Hon - Fu' },
       { id: 'joe-higashi', name: 'Joe Higashi' },
       { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
       { id: 'li-xiangfei', name: 'Li Xiangfei' },
@@ -3456,8 +3219,6 @@ rosterCount: 999,
       { id: 'sokaku-mochizuki', name: 'Sokaku Mochizuki' },
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'tung-fu-rue', name: 'Tung Fu Rue' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3473,12 +3234,11 @@ rosterCount: 999,
     developer: "SNK",
 
     releaseYear: 1997,
+    platform: "Arcade, NeoGeo, Saturn, PS1",
 
-rosterCount: 999,
+rosterCount: 19,
 
         characters: [
-
-      
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'billy-kane', name: 'Billy Kane' },
       { id: 'blue-mary', name: 'Blue Mary' },
@@ -3488,7 +3248,7 @@ rosterCount: 999,
       { id: 'duck-king', name: 'Duck King' },
       { id: 'franco-bash', name: 'Franco Bash' },
       { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'hon-fu', name: 'Hon-Fu' },
+      { id: 'hon---fu', name: 'Hon - Fu' },
       { id: 'joe-higashi', name: 'Joe Higashi' },
       { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
       { id: 'laurence-blood', name: 'Laurence Blood' },
@@ -3498,8 +3258,6 @@ rosterCount: 999,
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'tung-fu-rue', name: 'Tung Fu Rue' },
       { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3514,28 +3272,37 @@ rosterCount: 999,
 
     developer: "SNK",
 
-    releaseYear: 1993,
+    releaseYear: 2019,
+    platform: "PS4, Xbox One, PC, Switch",
 
-rosterCount: 999,
+rosterCount: 25,
 
         characters: [
-
-      
-      { id: 'amakusa', name: 'Amakusa' },
+      { id: 'baiken', name: 'Baiken' },
+      { id: 'basara', name: 'Basara' },
       { id: 'charlotte', name: 'Charlotte' },
+      { id: 'darli-dagger', name: 'Darli Dagger' },
       { id: 'earthquake', name: 'Earthquake' },
       { id: 'galford', name: 'Galford' },
-      { id: 'genan', name: 'Genan' },
+      { id: 'genjuro', name: 'Genjuro' },
+      { id: 'gongsun-li', name: 'Gongsun Li' },
       { id: 'hanzo', name: 'Hanzo' },
       { id: 'haohmaru', name: 'Haohmaru' },
+      { id: 'hibiki-takane', name: 'Hibiki Takane' },
+      { id: 'iroha', name: 'Iroha' },
       { id: 'jubei', name: 'Jubei' },
+      { id: 'kazuki', name: 'Kazuki' },
+      { id: 'kurama-yashamaru', name: 'Kurama Yashamaru' },
       { id: 'kyoshiro', name: 'Kyoshiro' },
       { id: 'nakoruru', name: 'Nakoruru' },
+      { id: 'rimururu', name: 'Rimururu' },
+      { id: 'shizumaru', name: 'Shizumaru' },
+      { id: 'sogetsu', name: 'Sogetsu' },
       { id: 'tam-tam', name: 'Tam Tam' },
       { id: 'ukyo', name: 'Ukyo' },
-      { id: 'wan-fu', name: 'Wan-Fu' }
-    
-
+      { id: 'warden', name: 'Warden' },
+      { id: 'wu---ruixiang', name: 'Wu - Ruixiang' },
+      { id: 'yoshitora', name: 'Yoshitora' }
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3598,13 +3365,12 @@ rosterCount: 999,
 
     developer: "SNK",
 
-    releaseYear: 1993,
+    releaseYear: 1994,
+    platform: "Arcade, NeoGeo, Saturn, PS1",
 
-rosterCount: 999,
+rosterCount: 15,
 
         characters: [
-
-      
       { id: 'caffeine-nicotine', name: 'Caffeine Nicotine' },
       { id: 'cham-cham', name: 'Cham Cham' },
       { id: 'charlotte', name: 'Charlotte' },
@@ -3620,8 +3386,6 @@ rosterCount: 999,
       { id: 'shiranui-genan', name: 'Shiranui Genan' },
       { id: 'tam-tam', name: 'Tam Tam' },
       { id: 'ukyo', name: 'Ukyo' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3636,13 +3400,12 @@ rosterCount: 999,
 
     developer: "SNK",
 
-    releaseYear: 1993,
+    releaseYear: 1995,
+    platform: "Arcade, NeoGeo, Saturn, PS1",
 
-rosterCount: 999,
+rosterCount: 11,
 
         characters: [
-
-      
       { id: 'amakusa', name: 'Amakusa' },
       { id: 'basara', name: 'Basara' },
       { id: 'galford', name: 'Galford' },
@@ -3654,8 +3417,6 @@ rosterCount: 999,
       { id: 'rimururu', name: 'Rimururu' },
       { id: 'shizumaru', name: 'Shizumaru' },
       { id: 'ukyo', name: 'Ukyo' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3670,13 +3431,12 @@ rosterCount: 999,
 
     developer: "SNK",
 
-    releaseYear: 1993,
+    releaseYear: 1996,
+    platform: "Arcade, NeoGeo, Saturn, PS1",
 
-rosterCount: 999,
+rosterCount: 16,
 
         characters: [
-
-      
       { id: 'amakusa', name: 'Amakusa' },
       { id: 'basara', name: 'Basara' },
       { id: 'charlotte', name: 'Charlotte' },
@@ -3693,8 +3453,6 @@ rosterCount: 999,
       { id: 'sogetsu', name: 'Sogetsu' },
       { id: 'tam-tam', name: 'Tam Tam' },
       { id: 'ukyo', name: 'Ukyo' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3709,13 +3467,12 @@ rosterCount: 999,
 
     developer: "SNK",
 
-    releaseYear: 1993,
+    releaseYear: 2003,
+    platform: "Arcade, NeoGeo, PS2, Xbox",
 
-rosterCount: 999,
+rosterCount: 19,
 
         characters: [
-
-      
       { id: 'basara', name: 'Basara' },
       { id: 'charlotte', name: 'Charlotte' },
       { id: 'enja', name: 'Enja' },
@@ -3735,8 +3492,6 @@ rosterCount: 999,
       { id: 'tam-tam', name: 'Tam Tam' },
       { id: 'ukyo', name: 'Ukyo' },
       { id: 'yoshitora', name: 'Yoshitora' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3751,28 +3506,13 @@ rosterCount: 999,
 
     developer: "SNK",
 
-    releaseYear: 1993,
+    releaseYear: 2004,
+    platform: "Arcade, NeoGeo",
 
-rosterCount: 999,
+rosterCount: 1,
 
         characters: [
-
-      
-      { id: 'amakusa', name: 'Amakusa' },
-      { id: 'charlotte', name: 'Charlotte' },
-      { id: 'earthquake', name: 'Earthquake' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'genan', name: 'Genan' },
-      { id: 'hanzo', name: 'Hanzo' },
-      { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'jubei', name: 'Jubei' },
-      { id: 'kyoshiro', name: 'Kyoshiro' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'tam-tam', name: 'Tam Tam' },
-      { id: 'ukyo', name: 'Ukyo' },
-      { id: 'wan-fu', name: 'Wan-Fu' }
-    
-
+      { id: 'same-as-samurai-shodown-v', name: '(Same as Samurai Shodown V)' }
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3824,13 +3564,11 @@ rosterCount: 11,
 
     releaseYear: 2018,
 
-    platform: "PlayStation 4 Nintendo Switch Windows",
+    platform: "Switch, PS4, PC",
 
-rosterCount: 999,
+rosterCount: 16,
 
         characters: [
-
-      
       { id: 'athena-asamiya', name: 'Athena Asamiya' },
       { id: 'jeanne-darc', name: 'Jeanne d\'Arc' },
       { id: 'kula-diamond', name: 'Kula Diamond' },
@@ -3847,8 +3585,6 @@ rosterCount: 999,
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'thief-arthur', name: 'Thief Arthur' },
       { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3864,16 +3600,15 @@ rosterCount: 999,
     developer: "Capcom",
 
     releaseYear: 2003,
+    platform: "Arcade, PS2, Xbox",
 
-rosterCount: 999,
+rosterCount: 37,
 
         characters: [
-
-      
       { id: 'akuma', name: 'Akuma' },
       { id: 'athena', name: 'Athena' },
       { id: 'balrog', name: 'Balrog' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'dan', name: 'Dan' },
       { id: 'demitri', name: 'Demitri' },
       { id: 'dhalsim', name: 'Dhalsim' },
@@ -3907,8 +3642,6 @@ rosterCount: 999,
       { id: 'vega', name: 'Vega' },
       { id: 'violent-ken', name: 'Violent Ken' },
       { id: 'zero', name: 'Zero' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3967,19 +3700,17 @@ rosterCount: 10,
 
     releaseYear: 1995,
 
-    platform: "Arcade PlayStation",
+    platform: "Arcade, PS1",
 
-rosterCount: 0,
+rosterCount: 10,
 
         characters: [
-
-    
       { id: 'cervantes', name: 'Cervantes' },
       { id: 'hwang', name: 'Hwang' },
       { id: 'li-long', name: 'Li Long' },
       { id: 'mitsurugi', name: 'Mitsurugi' },
       { id: 'rock', name: 'Rock' },
-      { id: 'seong-mi-na', name: 'Seong Mi-na' },
+      { id: 'seong-mi---na', name: 'Seong Mi - na' },
       { id: 'siegfried', name: 'Siegfried' },
       { id: 'sophitia', name: 'Sophitia' },
       { id: 'taki', name: 'Taki' },
@@ -4000,20 +3731,18 @@ rosterCount: 0,
 
     releaseYear: 2023,
 
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
+    platform: "PS4, PS5, Xbox One, Xbox Series X/S, PC",
 
     tabs: ['Normal Moves', 'Unique Attacks', 'Special Moves', 'Super Arts', 'Throws', 'Common Moves'],
 
-rosterCount: 26,
+rosterCount: 22,
 
         characters: [
-
-      
       { id: 'aki', name: 'A.K.I.' },
       { id: 'akuma', name: 'Akuma' },
       { id: 'blanka', name: 'Blanka' },
       { id: 'cammy', name: 'Cammy' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'dee-jay', name: 'Dee Jay' },
       { id: 'dhalsim', name: 'Dhalsim' },
       { id: 'e-honda', name: 'E. Honda' },
@@ -4031,8 +3760,6 @@ rosterCount: 26,
       { id: 'rashid', name: 'Rashid' },
       { id: 'ryu', name: 'Ryu' },
       { id: 'zangief', name: 'Zangief' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4084,20 +3811,18 @@ rosterCount: 999,
 
     developer: "Capcom",
 
-    releaseYear: 2023,
+    releaseYear: 1996,
 
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
+    platform: "Arcade, PS1, Saturn, SNES",
 
-rosterCount: 999,
+rosterCount: 19,
 
         characters: [
-
-      
       { id: 'adon', name: 'Adon' },
       { id: 'akuma', name: 'Akuma' },
       { id: 'birdie', name: 'Birdie' },
       { id: 'charlie', name: 'Charlie' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'dan', name: 'Dan' },
       { id: 'dhalsim', name: 'Dhalsim' },
       { id: 'evil-ryu', name: 'Evil Ryu' },
@@ -4112,8 +3837,6 @@ rosterCount: 999,
       { id: 'sakura', name: 'Sakura' },
       { id: 'sodom', name: 'Sodom' },
       { id: 'zangief', name: 'Zangief' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4128,15 +3851,13 @@ rosterCount: 999,
 
     developer: "Capcom",
 
-    releaseYear: 2023,
+    releaseYear: 1998,
 
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
+    platform: "Arcade, PS1, Saturn, DC, PSP, GBA",
 
-rosterCount: 999,
+rosterCount: 37,
 
         characters: [
-
-      
       { id: 'adon', name: 'Adon' },
       { id: 'akuma', name: 'Akuma' },
       { id: 'balrog', name: 'Balrog' },
@@ -4144,7 +3865,7 @@ rosterCount: 999,
       { id: 'blanka', name: 'Blanka' },
       { id: 'cammy', name: 'Cammy' },
       { id: 'charlie', name: 'Charlie' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'cody', name: 'Cody' },
       { id: 'dan', name: 'Dan' },
       { id: 'dee-jay', name: 'Dee Jay' },
@@ -4174,8 +3895,6 @@ rosterCount: 999,
       { id: 'vega', name: 'Vega' },
       { id: 'yun', name: 'Yun' },
       { id: 'zangief', name: 'Zangief' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4190,19 +3909,17 @@ rosterCount: 999,
 
     developer: "Capcom",
 
-    releaseYear: 2023,
+    releaseYear: 2000,
 
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
+    platform: "PS2",
 
-rosterCount: 999,
+rosterCount: 21,
 
         characters: [
-
-      
       { id: 'ace', name: 'Ace' },
       { id: 'area', name: 'Area' },
       { id: 'blanka', name: 'Blanka' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'cracker-jack', name: 'Cracker Jack' },
       { id: 'darun-mister', name: 'Darun Mister' },
       { id: 'dhalsim', name: 'Dhalsim' },
@@ -4220,8 +3937,6 @@ rosterCount: 999,
       { id: 'vega', name: 'Vega' },
       { id: 'vulcano-rosso', name: 'Vulcano Rosso' },
       { id: 'zangief', name: 'Zangief' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4274,15 +3989,13 @@ rosterCount: 999,
 
     developer: "Capcom",
 
-    releaseYear: 2023,
+    releaseYear: 1997,
 
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
+    platform: "Arcade",
 
-rosterCount: 999,
+rosterCount: 11,
 
         characters: [
-
-      
       { id: 'alex', name: 'Alex' },
       { id: 'dudley', name: 'Dudley' },
       { id: 'elena', name: 'Elena' },
@@ -4294,8 +4007,6 @@ rosterCount: 999,
       { id: 'sean', name: 'Sean' },
       { id: 'yang', name: 'Yang' },
       { id: 'yun', name: 'Yun' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4310,15 +4021,13 @@ rosterCount: 999,
 
     developer: "Capcom",
 
-    releaseYear: 2023,
+    releaseYear: 2016,
 
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
+    platform: "PS4, PC",
 
-rosterCount: 999,
+rosterCount: 43,
 
         characters: [
-
-      
       { id: 'abigail', name: 'Abigail' },
       { id: 'akuma', name: 'Akuma' },
       { id: 'alex', name: 'Alex' },
@@ -4326,7 +4035,7 @@ rosterCount: 999,
       { id: 'birdie', name: 'Birdie' },
       { id: 'blanka', name: 'Blanka' },
       { id: 'cammy', name: 'Cammy' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'cody', name: 'Cody' },
       { id: 'dan', name: 'Dan' },
       { id: 'dhalsim', name: 'Dhalsim' },
@@ -4362,8 +4071,6 @@ rosterCount: 999,
       { id: 'urien', name: 'Urien' },
       { id: 'vega', name: 'Vega' },
       { id: 'zeku', name: 'Zeku' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4379,17 +4086,16 @@ rosterCount: 999,
     developer: "Capcom",
 
     releaseYear: 1994,
+    platform: "Arcade, 3DO",
 
-rosterCount: 999,
+rosterCount: 17,
 
         characters: [
-
-      
       { id: 'akuma', name: 'Akuma' },
       { id: 'balrog', name: 'Balrog' },
       { id: 'blanka', name: 'Blanka' },
       { id: 'cammy', name: 'Cammy' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'dee-jay', name: 'Dee Jay' },
       { id: 'dhalsim', name: 'Dhalsim' },
       { id: 'e-honda', name: 'E. Honda' },
@@ -4402,8 +4108,6 @@ rosterCount: 999,
       { id: 't-hawk', name: 'T. Hawk' },
       { id: 'vega', name: 'Vega' },
       { id: 'zangief', name: 'Zangief' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4461,11 +4165,9 @@ rosterCount: 999,
 
     platform: "Xbox",
 
-rosterCount: 7,
+rosterCount: 8,
 
         characters: [
-
-      
       { id: 'divine-fist', name: 'Divine Fist' },
       { id: 'exile', name: 'Exile' },
       { id: 'fiery-phoenix', name: 'Fiery Phoenix' },
@@ -4474,8 +4176,6 @@ rosterCount: 7,
       { id: 'master-sage', name: 'Master Sage' },
       { id: 'vapor', name: 'Vapor' },
       { id: 'wuji', name: 'Wuji' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4580,13 +4280,11 @@ rosterCount: 17,
 
     releaseYear: 1995,
 
-    platform: "Arcade PlayStation",
+    platform: "Arcade, PS1",
 
-rosterCount: 24,
+rosterCount: 21,
 
         characters: [
-
-      
       { id: 'alex', name: 'Alex' },
       { id: 'anna', name: 'Anna' },
       { id: 'armor-king', name: 'Armor King' },
@@ -4594,7 +4292,7 @@ rosterCount: 24,
       { id: 'bruce', name: 'Bruce' },
       { id: 'ganryu', name: 'Ganryu' },
       { id: 'heihachi', name: 'Heihachi' },
-      { id: 'jack-2', name: 'Jack-2' },
+      { id: 'jack---2', name: 'Jack - 2' },
       { id: 'jun-kazama', name: 'Jun Kazama' },
       { id: 'kazuya', name: 'Kazuya' },
       { id: 'king', name: 'King' },
@@ -4608,8 +4306,6 @@ rosterCount: 24,
       { id: 'roger', name: 'Roger' },
       { id: 'wang', name: 'Wang' },
       { id: 'yoshimitsu', name: 'Yoshimitsu' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4625,12 +4321,11 @@ rosterCount: 24,
     developer: "Bandai Namco",
 
     releaseYear: 2024,
+    platform: "PS5, Xbox Series X/S, PC",
 
-rosterCount: 999,
+rosterCount: 31,
 
         characters: [
-
-      
       { id: 'alisa', name: 'Alisa' },
       { id: 'asuka', name: 'Asuka' },
       { id: 'azucena', name: 'Azucena' },
@@ -4639,7 +4334,7 @@ rosterCount: 999,
       { id: 'dragunov', name: 'Dragunov' },
       { id: 'feng', name: 'Feng' },
       { id: 'hwoarang', name: 'Hwoarang' },
-      { id: 'jack-8', name: 'Jack-8' },
+      { id: 'jack---8', name: 'Jack - 8' },
       { id: 'jin', name: 'Jin' },
       { id: 'jun', name: 'Jun' },
       { id: 'kazuya', name: 'Kazuya' },
@@ -4662,8 +4357,6 @@ rosterCount: 999,
       { id: 'xiaoyu', name: 'Xiaoyu' },
       { id: 'yoshimitsu', name: 'Yoshimitsu' },
       { id: 'zafina', name: 'Zafina' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4680,13 +4373,11 @@ rosterCount: 999,
 
     releaseYear: 1994,
 
-    platform: "Neo Geo Arcade",
+    platform: "Arcade, NeoGeo",
 
-rosterCount: 20,
+rosterCount: 24,
 
         characters: [
-
-      
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'athena-asamiya', name: 'Athena Asamiya' },
       { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
@@ -4711,8 +4402,6 @@ rosterCount: 20,
       { id: 'takuma-sakazaki', name: 'Takuma Sakazaki' },
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4729,13 +4418,11 @@ rosterCount: 20,
 
     releaseYear: 2000,
 
-    platform: "Neo Geo Arcade",
+    platform: "Arcade, NeoGeo, PS2, DC",
 
-rosterCount: 999,
+rosterCount: 33,
 
         characters: [
-
-      
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'athena-asamiya', name: 'Athena Asamiya' },
       { id: 'bao', name: 'Bao' },
@@ -4769,8 +4456,6 @@ rosterCount: 999,
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'vanessa', name: 'Vanessa' },
       { id: 'whip', name: 'Whip' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4787,13 +4472,11 @@ rosterCount: 999,
 
     releaseYear: 2001,
 
-    platform: "Neo Geo Arcade",
+    platform: "Arcade, NeoGeo, PS2, DC",
 
-rosterCount: 999,
+rosterCount: 34,
 
         characters: [
-
-      
       { id: 'angel', name: 'Angel' },
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'athena-asamiya', name: 'Athena Asamiya' },
@@ -4828,8 +4511,6 @@ rosterCount: 999,
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'vanessa', name: 'Vanessa' },
       { id: 'whip', name: 'Whip' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4846,13 +4527,11 @@ rosterCount: 999,
 
     releaseYear: 2002,
 
-    platform: "Neo Geo Arcade",
+    platform: "Arcade, NeoGeo, PS2, DC, Xbox",
 
-rosterCount: 999,
+rosterCount: 38,
 
         characters: [
-
-      
       { id: 'angel', name: 'Angel' },
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'athena-asamiya', name: 'Athena Asamiya' },
@@ -4891,8 +4570,6 @@ rosterCount: 999,
       { id: 'vice', name: 'Vice' },
       { id: 'whip', name: 'Whip' },
       { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4909,13 +4586,11 @@ rosterCount: 999,
 
     releaseYear: 2003,
 
-    platform: "Neo Geo Arcade",
+    platform: "Arcade, NeoGeo, PS2, Xbox",
 
-rosterCount: 999,
+rosterCount: 30,
 
         characters: [
-
-      
       { id: 'ash-crimson', name: 'Ash Crimson' },
       { id: 'athena-asamiya', name: 'Athena Asamiya' },
       { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
@@ -4946,8 +4621,6 @@ rosterCount: 999,
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'tizoc', name: 'Tizoc' },
       { id: 'whip', name: 'Whip' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4964,13 +4637,11 @@ rosterCount: 999,
 
     releaseYear: 2010,
 
-    platform: "PlayStation 2 Arcade",
+    platform: "Arcade, PS3, Xbox 360, PC",
 
-rosterCount: 999,
+rosterCount: 32,
 
         characters: [
-
-      
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'ash-crimson', name: 'Ash Crimson' },
       { id: 'athena-asamiya', name: 'Athena Asamiya' },
@@ -5003,8 +4674,6 @@ rosterCount: 999,
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'vice', name: 'Vice' },
       { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5021,13 +4690,11 @@ rosterCount: 999,
 
     releaseYear: 2016,
 
-    platform: "PlayStation 4 Windows",
+    platform: "PS4, PC",
 
-rosterCount: 999,
+rosterCount: 47,
 
         characters: [
-
-      
       { id: 'alice', name: 'Alice' },
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'angel', name: 'Angel' },
@@ -5040,7 +4707,7 @@ rosterCount: 999,
       { id: 'choi-bounge', name: 'Choi Bounge' },
       { id: 'clark-still', name: 'Clark Still' },
       { id: 'dinosaur', name: 'Dinosaur' },
-      { id: 'gang-il', name: 'Gang-Il' },
+      { id: 'gang---il', name: 'Gang - Il' },
       { id: 'geese-howard', name: 'Geese Howard' },
       { id: 'goro-daimon', name: 'Goro Daimon' },
       { id: 'hein', name: 'Hein' },
@@ -5075,8 +4742,6 @@ rosterCount: 999,
       { id: 'xanadu', name: 'Xanadu' },
       { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
       { id: 'zarina', name: 'Zarina' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5093,13 +4758,11 @@ rosterCount: 999,
 
     releaseYear: 2022,
 
-    platform: "PlayStation 4 Windows",
+    platform: "PS4, PS5, Xbox Series X/S, PC",
 
-rosterCount: 999,
+rosterCount: 48,
 
         characters: [
-
-      
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'angel', name: 'Angel' },
       { id: 'antonov', name: 'Antonov' },
@@ -5148,8 +4811,6 @@ rosterCount: 999,
       { id: 'whip', name: 'Whip' },
       { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
       { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5166,13 +4827,11 @@ rosterCount: 999,
 
     releaseYear: 2004,
 
-    platform: "PlayStation 2 Arcade",
+    platform: "PS2, Xbox",
 
-rosterCount: 20,
+rosterCount: 19,
 
         characters: [
-
-      
       { id: 'alba-meira', name: 'Alba Meira' },
       { id: 'athena-asamiya', name: 'Athena Asamiya' },
       { id: 'chae-lim', name: 'Chae Lim' },
@@ -5192,8 +4851,6 @@ rosterCount: 20,
       { id: 'soiree-meira', name: 'Soiree Meira' },
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5210,13 +4867,11 @@ rosterCount: 20,
 
     releaseYear: 2006,
 
-    platform: "PlayStation 2 Arcade",
+    platform: "PS2",
 
-rosterCount: 20,
+rosterCount: 17,
 
         characters: [
-
-      
       { id: 'alba-meira', name: 'Alba Meira' },
       { id: 'billy-kane', name: 'Billy Kane' },
       { id: 'chae-lim', name: 'Chae Lim' },
@@ -5234,8 +4889,6 @@ rosterCount: 20,
       { id: 'rock-howard', name: 'Rock Howard' },
       { id: 'soiree-meira', name: 'Soiree Meira' },
       { id: 'terry-bogard', name: 'Terry Bogard' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5252,34 +4905,16 @@ rosterCount: 20,
 
     releaseYear: 2007,
 
-    platform: "PlayStation 2 Arcade",
+    platform: "Arcade, PS2",
 
-rosterCount: 20,
+rosterCount: 5,
 
         characters: [
-
-      
-      { id: 'alba-meira', name: 'Alba Meira' },
-      { id: 'athena-asamiya', name: 'Athena Asamiya' },
-      { id: 'chae-lim', name: 'Chae Lim' },
-      { id: 'clark-still', name: 'Clark Still' },
-      { id: 'duke', name: 'Duke' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'k', name: 'K\'' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'lien-neville', name: 'Lien Neville' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'maxima', name: 'Maxima' },
-      { id: 'mignon-beart', name: 'Mignon Beart' },
-      { id: 'ralf-jones', name: 'Ralf Jones' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'seth', name: 'Seth' },
-      { id: 'soiree-meira', name: 'Soiree Meira' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' }
-    
-
+      { id: 'ash-crimson', name: 'Ash Crimson' },
+      { id: 'blue-mary', name: 'Blue Mary' },
+      { id: 'makoto-mizoguchi', name: 'Makoto Mizoguchi' },
+      { id: 'nightmare-geese', name: 'Nightmare Geese' },
+      { id: 'xiao-lon', name: 'Xiao Lon' }
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5295,12 +4930,11 @@ rosterCount: 20,
     developer: "SNK",
 
     releaseYear: 1997,
+    platform: "Arcade, NeoGeo, PS1, Saturn",
 
-rosterCount: 999,
+rosterCount: 12,
 
         characters: [
-
-      
       { id: 'akari-ichijou', name: 'Akari Ichijou' },
       { id: 'genbu-no-okina', name: 'Genbu no Okina' },
       { id: 'hyo-amano', name: 'Hyo Amano' },
@@ -5313,8 +4947,6 @@ rosterCount: 999,
       { id: 'shikyoh', name: 'Shikyoh' },
       { id: 'yuki', name: 'Yuki' },
       { id: 'zantetsu', name: 'Zantetsu' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5329,13 +4961,12 @@ rosterCount: 999,
 
     developer: "SNK",
 
-    releaseYear: 1997,
+    releaseYear: 1998,
+    platform: "Arcade, NeoGeo, DC, PS2",
 
-rosterCount: 999,
+rosterCount: 19,
 
         characters: [
-
-      
       { id: 'akari-ichijou', name: 'Akari Ichijou' },
       { id: 'awakened-kaede', name: 'Awakened Kaede' },
       { id: 'genbu-no-okina', name: 'Genbu no Okina' },
@@ -5355,8 +4986,6 @@ rosterCount: 999,
       { id: 'shinnosuke-kagami', name: 'Shinnosuke Kagami' },
       { id: 'yuki', name: 'Yuki' },
       { id: 'zantetsu', name: 'Zantetsu' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5373,20 +5002,18 @@ rosterCount: 999,
 
     releaseYear: 2011,
 
-    platform: "PlayStation 3 Xbox 360 Windows",
+    platform: "PS3, Xbox 360, Vita, PS4, Xbox One, PC",
 
-rosterCount: 999,
+rosterCount: 50,
 
         characters: [
-
-      
       { id: 'akuma', name: 'Akuma' },
       { id: 'amaterasu', name: 'Amaterasu' },
       { id: 'arthur', name: 'Arthur' },
       { id: 'c-viper', name: 'C. Viper' },
       { id: 'captain-america', name: 'Captain America' },
       { id: 'chris-redfield', name: 'Chris Redfield' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'dante', name: 'Dante' },
       { id: 'deadpool', name: 'Deadpool' },
       { id: 'doc-strange', name: 'Doc Strange' },
@@ -5397,7 +5024,7 @@ rosterCount: 999,
       { id: 'ghost-rider', name: 'Ghost Rider' },
       { id: 'haggar', name: 'Haggar' },
       { id: 'hawkeye', name: 'Hawkeye' },
-      { id: 'hsien-ko', name: 'Hsien-Ko' },
+      { id: 'hsien---ko', name: 'Hsien - Ko' },
       { id: 'hulk', name: 'Hulk' },
       { id: 'iron-fist', name: 'Iron Fist' },
       { id: 'iron-man', name: 'Iron Man' },
@@ -5412,13 +5039,13 @@ rosterCount: 999,
       { id: 'rocket-raccoon', name: 'Rocket Raccoon' },
       { id: 'ryu', name: 'Ryu' },
       { id: 'sentinel', name: 'Sentinel' },
-      { id: 'she-hulk', name: 'She-Hulk' },
-      { id: 'shuma-gorath', name: 'Shuma-Gorath' },
+      { id: 'she---hulk', name: 'She - Hulk' },
+      { id: 'shuma---gorath', name: 'Shuma - Gorath' },
       { id: 'spencer', name: 'Spencer' },
-      { id: 'spider-man', name: 'Spider-Man' },
+      { id: 'spider---man', name: 'Spider - Man' },
       { id: 'storm', name: 'Storm' },
       { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'super-skrull', name: 'Super-Skrull' },
+      { id: 'super---skrull', name: 'Super - Skrull' },
       { id: 'taskmaster', name: 'Taskmaster' },
       { id: 'thor', name: 'Thor' },
       { id: 'trish', name: 'Trish' },
@@ -5428,10 +5055,8 @@ rosterCount: 999,
       { id: 'war-machine', name: 'War Machine' },
       { id: 'wesker', name: 'Wesker' },
       { id: 'wolverine', name: 'Wolverine' },
-      { id: 'x-23', name: 'X-23' },
+      { id: 'x---23', name: 'X - 23' },
       { id: 'zero', name: 'Zero' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5446,15 +5071,13 @@ rosterCount: 999,
 
     developer: "NetherRealm Studios",
 
-    releaseYear: 2011,
+    releaseYear: 1995,
 
-    platform: "PlayStation 3 Xbox 360 Windows",
+    platform: "Arcade, SNES, Genesis, Saturn",
 
-rosterCount: 999,
+rosterCount: 22,
 
         characters: [
-
-      
       { id: 'cyrax', name: 'Cyrax' },
       { id: 'ermac', name: 'Ermac' },
       { id: 'jade', name: 'Jade' },
@@ -5476,9 +5099,7 @@ rosterCount: 999,
       { id: 'smoke', name: 'Smoke' },
       { id: 'sonya-blade', name: 'Sonya Blade' },
       { id: 'stryker', name: 'Stryker' },
-      { id: 'sub-zero', name: 'Sub-Zero' }
-    
-
+      { id: 'sub---zero', name: 'Sub - Zero' }
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5495,39 +5116,52 @@ rosterCount: 999,
 
     releaseYear: 2014,
 
-    platform: "Windows PlayStation 3 Xbox 360",
+    platform: "Arcade, PS3, Xbox 360, PS4, PC",
 
-rosterCount: 999,
+rosterCount: 41,
 
         characters: [
-
-      
-      { id: 'akatsuki', name: 'Akatsuki' },
-      { id: 'byakuya', name: 'Byakuya' },
-      { id: 'carmine', name: 'Carmine' },
-      { id: 'chaos', name: 'Chaos' },
-      { id: 'eltnum', name: 'Eltnum' },
-      { id: 'enkidu', name: 'Enkidu' },
-      { id: 'gordeau', name: 'Gordeau' },
-      { id: 'hilda', name: 'Hilda' },
-      { id: 'hyde', name: 'Hyde' },
-      { id: 'kaguya', name: 'Kaguya' },
-      { id: 'kuon', name: 'Kuon' },
-      { id: 'linne', name: 'Linne' },
-      { id: 'londrekia', name: 'Londrekia' },
-      { id: 'mika', name: 'Mika' },
-      { id: 'nanase', name: 'Nanase' },
-      { id: 'orie', name: 'Orie' },
-      { id: 'phonon', name: 'Phonon' },
+      { id: 'abel', name: 'Abel' },
+      { id: 'adon', name: 'Adon' },
+      { id: 'akuma', name: 'Akuma' },
+      { id: 'balrog', name: 'Balrog' },
+      { id: 'blanka', name: 'Blanka' },
+      { id: 'cammy', name: 'Cammy' },
+      { id: 'chun---li', name: 'Chun - Li' },
+      { id: 'cody', name: 'Cody' },
+      { id: 'dan', name: 'Dan' },
+      { id: 'decapre', name: 'Decapre' },
+      { id: 'dee-jay', name: 'Dee Jay' },
+      { id: 'dhalsim', name: 'Dhalsim' },
+      { id: 'e-honda', name: 'E. Honda' },
+      { id: 'elena', name: 'Elena' },
+      { id: 'el-fuerte', name: 'El Fuerte' },
+      { id: 'evil-ryu', name: 'Evil Ryu' },
+      { id: 'fei-long', name: 'Fei Long' },
+      { id: 'gen', name: 'Gen' },
+      { id: 'gouken', name: 'Gouken' },
+      { id: 'guile', name: 'Guile' },
+      { id: 'guy', name: 'Guy' },
+      { id: 'hugo', name: 'Hugo' },
+      { id: 'ibuki', name: 'Ibuki' },
+      { id: 'juri', name: 'Juri' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'm-bison', name: 'M. Bison' },
+      { id: 'makoto', name: 'Makoto' },
+      { id: 'oni', name: 'Oni' },
+      { id: 'poison', name: 'Poison' },
+      { id: 'rolento', name: 'Rolento' },
+      { id: 'rose', name: 'Rose' },
+      { id: 'rufus', name: 'Rufus' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sagat', name: 'Sagat' },
+      { id: 'sakura', name: 'Sakura' },
       { id: 'seth', name: 'Seth' },
-      { id: 'tsurugi', name: 'Tsurugi' },
-      { id: 'uzuki', name: 'Uzuki' },
-      { id: 'vatista', name: 'Vatista' },
-      { id: 'wagner', name: 'Wagner' },
-      { id: 'waldstein', name: 'Waldstein' },
-      { id: 'yuzuriha', name: 'Yuzuriha' }
-    
-
+      { id: 't-hawk', name: 'T. Hawk' },
+      { id: 'vega', name: 'Vega' },
+      { id: 'yang', name: 'Yang' },
+      { id: 'yun', name: 'Yun' },
+      { id: 'zangief', name: 'Zangief' }
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5760,15 +5394,13 @@ rosterCount: 999,
 
     developer: "Sega",
 
-    releaseYear: 1993,
+    releaseYear: 1994,
 
-    platform: "Arcade Sega Saturn Sega 32X",
+    platform: "Arcade, Saturn, PS1",
 
-rosterCount: 999,
+rosterCount: 10,
 
         characters: [
-
-      
       { id: 'akira', name: 'Akira' },
       { id: 'jacky', name: 'Jacky' },
       { id: 'jeffry', name: 'Jeffry' },
@@ -5779,8 +5411,6 @@ rosterCount: 999,
       { id: 'sarah', name: 'Sarah' },
       { id: 'shun', name: 'Shun' },
       { id: 'wolf', name: 'Wolf' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5795,15 +5425,13 @@ rosterCount: 999,
 
     developer: "Sega",
 
-    releaseYear: 1993,
+    releaseYear: 1996,
 
-    platform: "Arcade Sega Saturn Sega 32X",
+    platform: "Arcade, Saturn",
 
-rosterCount: 999,
+rosterCount: 12,
 
         characters: [
-
-      
       { id: 'akira', name: 'Akira' },
       { id: 'aoi', name: 'Aoi' },
       { id: 'jacky', name: 'Jacky' },
@@ -5814,10 +5442,8 @@ rosterCount: 999,
       { id: 'pai', name: 'Pai' },
       { id: 'sarah', name: 'Sarah' },
       { id: 'shun', name: 'Shun' },
-      { id: 'taka-arashi', name: 'Taka-Arashi' },
+      { id: 'taka---arashi', name: 'Taka - Arashi' },
       { id: 'wolf', name: 'Wolf' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5832,15 +5458,13 @@ rosterCount: 999,
 
     developer: "Sega",
 
-    releaseYear: 1993,
+    releaseYear: 2001,
 
-    platform: "Arcade Sega Saturn Sega 32X",
+    platform: "Arcade, PS2",
 
-rosterCount: 18,
+rosterCount: 14,
 
         characters: [
-
-      
       { id: 'akira', name: 'Akira' },
       { id: 'aoi', name: 'Aoi' },
       { id: 'brad', name: 'Brad' },
@@ -5848,15 +5472,13 @@ rosterCount: 18,
       { id: 'jeffry', name: 'Jeffry' },
       { id: 'kage', name: 'Kage' },
       { id: 'lau', name: 'Lau' },
-      { id: 'lei-fei', name: 'Lei-Fei' },
+      { id: 'lei---fei', name: 'Lei - Fei' },
       { id: 'lion', name: 'Lion' },
       { id: 'pai', name: 'Pai' },
       { id: 'sarah', name: 'Sarah' },
       { id: 'shun', name: 'Shun' },
       { id: 'vanessa', name: 'Vanessa' },
       { id: 'wolf', name: 'Wolf' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5871,15 +5493,13 @@ rosterCount: 18,
 
     developer: "Sega",
 
-    releaseYear: 1993,
+    releaseYear: 2021,
 
-    platform: "Arcade Sega Saturn Sega 32X",
+    platform: "PS4",
 
-rosterCount: 20,
+rosterCount: 19,
 
         characters: [
-
-      
       { id: 'akira', name: 'Akira' },
       { id: 'aoi', name: 'Aoi' },
       { id: 'brad', name: 'Brad' },
@@ -5891,16 +5511,14 @@ rosterCount: 20,
       { id: 'jeffry', name: 'Jeffry' },
       { id: 'kage', name: 'Kage' },
       { id: 'lau', name: 'Lau' },
-      { id: 'lei-fei', name: 'Lei-Fei' },
+      { id: 'lei---fei', name: 'Lei - Fei' },
       { id: 'lion', name: 'Lion' },
       { id: 'pai', name: 'Pai' },
       { id: 'sarah', name: 'Sarah' },
       { id: 'shun', name: 'Shun' },
-      { id: 'taka-arashi', name: 'Taka-Arashi' },
+      { id: 'taka---arashi', name: 'Taka - Arashi' },
       { id: 'vanessa', name: 'Vanessa' },
       { id: 'wolf', name: 'Wolf' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5953,23 +5571,20 @@ rosterCount: 12,
     developer: "Sunsoft",
 
     releaseYear: 1996,
+    platform: "Arcade, NeoGeo, Saturn",
 
 rosterCount: 9,
 
         characters: [
-
-      
       { id: 'arina', name: 'Arina' },
-      { id: 'bonus-kun', name: 'Bonus-Kun' },
-      { id: 'dandy-j', name: 'Dandy-J' },
+      { id: 'bonus---kun', name: 'Bonus - Kun' },
+      { id: 'dandy---j', name: 'Dandy - J' },
       { id: 'fernandez', name: 'Fernandez' },
       { id: 'mauru', name: 'Mauru' },
-      { id: 'politank-z', name: 'Politank-Z' },
+      { id: 'politank---z', name: 'Politank - Z' },
       { id: 'rai', name: 'Rai' },
       { id: 'slash', name: 'Slash' },
       { id: 'tiptops', name: 'Tiptops' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5988,11 +5603,9 @@ rosterCount: 9,
 
     platform: "3DO",
 
-rosterCount: 10,
+rosterCount: 8,
 
         characters: [
-
-      
       { id: 'crimson-glory', name: 'Crimson Glory' },
       { id: 'dragon', name: 'Dragon' },
       { id: 'fox', name: 'Fox' },
@@ -6001,8 +5614,6 @@ rosterCount: 10,
       { id: 'ninja', name: 'Ninja' },
       { id: 'nobunaga', name: 'Nobunaga' },
       { id: 'shogun', name: 'Shogun' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -6019,13 +5630,11 @@ rosterCount: 10,
 
     releaseYear: 1992,
 
-    platform: "Arcade Neo Geo SNES Sega Genesis",
+    platform: "Arcade, NeoGeo",
 
 rosterCount: 8,
 
         characters: [
-
-      
       { id: 'brocken', name: 'Brocken' },
       { id: 'dragon', name: 'Dragon' },
       { id: 'fuuma', name: 'Fuuma' },
@@ -6034,8 +5643,6 @@ rosterCount: 8,
       { id: 'janne', name: 'Janne' },
       { id: 'muscle-power', name: 'Muscle Power' },
       { id: 'rasputin', name: 'Rasputin' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -6050,15 +5657,13 @@ rosterCount: 8,
 
     developer: "Unknown",
 
-    releaseYear: 1992,
+    releaseYear: 1993,
 
-    platform: "Arcade Neo Geo SNES Sega Genesis",
+    platform: "Arcade, NeoGeo",
 
-rosterCount: 8,
+rosterCount: 14,
 
         characters: [
-
-      
       { id: 'brocken', name: 'Brocken' },
       { id: 'captain-kidd', name: 'Captain Kidd' },
       { id: 'dragon', name: 'Dragon' },
@@ -6073,8 +5678,6 @@ rosterCount: 8,
       { id: 'rasputin', name: 'Rasputin' },
       { id: 'ryoko', name: 'Ryoko' },
       { id: 'shura', name: 'Shura' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -6089,15 +5692,13 @@ rosterCount: 8,
 
     developer: "Unknown",
 
-    releaseYear: 1992,
+    releaseYear: 1994,
 
-    platform: "Arcade Neo Geo SNES Sega Genesis",
+    platform: "Arcade, NeoGeo, GB",
 
-rosterCount: 8,
+rosterCount: 7,
 
         characters: [
-
-      
       { id: 'captain-kidd', name: 'Captain Kidd' },
       { id: 'dragon', name: 'Dragon' },
       { id: 'fuuma', name: 'Fuuma' },
@@ -6105,8 +5706,6 @@ rosterCount: 8,
       { id: 'jack', name: 'Jack' },
       { id: 'ryofu', name: 'Ryofu' },
       { id: 'zeus', name: 'Zeus' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -6121,15 +5720,13 @@ rosterCount: 8,
 
     developer: "ADK",
 
-    releaseYear: 1992,
+    releaseYear: 1995,
 
-    platform: "Arcade Neo Geo SNES Sega Genesis",
+    platform: "Arcade, NeoGeo, Saturn",
 
-rosterCount: 8,
+rosterCount: 7,
 
         characters: [
-
-      
       { id: 'dio', name: 'Dio' },
       { id: 'fuuma', name: 'Fuuma' },
       { id: 'hanzo', name: 'Hanzo' },
@@ -6137,8 +5734,6 @@ rosterCount: 8,
       { id: 'ryoko', name: 'Ryoko' },
       { id: 'son-goku', name: 'Son Goku' },
       { id: 'zeus', name: 'Zeus' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -6231,13 +5826,11 @@ rosterCount: 999,
 
     releaseYear: 1995,
 
-    platform: "PlayStation",
+    platform: "Arcade, PS1",
 
-rosterCount: 10,
+rosterCount: 8,
 
         characters: [
-
-      
       { id: 'cybershell', name: 'Cybershell' },
       { id: 'draco', name: 'Draco' },
       { id: 'eos', name: 'Eos' },
@@ -6246,8 +5839,6 @@ rosterCount: 10,
       { id: 'tau', name: 'Tau' },
       { id: 'wild-3', name: 'Wild 3' },
       { id: 'zero', name: 'Zero' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -6262,15 +5853,13 @@ rosterCount: 10,
 
     developer: "Unknown",
 
-    releaseYear: 1995,
+    releaseYear: 1997,
 
-    platform: "PlayStation",
+    platform: "PS1",
 
-rosterCount: 10,
+rosterCount: 8,
 
         characters: [
-
-      
       { id: 'cybershell', name: 'Cybershell' },
       { id: 'draco', name: 'Draco' },
       { id: 'eos', name: 'Eos' },
@@ -6279,8 +5868,6 @@ rosterCount: 10,
       { id: 'tau', name: 'Tau' },
       { id: 'wild-3', name: 'Wild 3' },
       { id: 'zero', name: 'Zero' }
-    
-
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -6289,17 +5876,19 @@ rosterCount: 10,
 
   {
     id: 'red-earth-warzard',
+    releaseYear: 1996,
+    platform: "Arcade",
     name: "Red Earth (Warzard)",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 10,
     characters: [
-      { id: '1996---arcade---hauzer', name: '1996 - Arcade - Hauzer' },
+      { id: 'hauzer', name: 'Hauzer' },
       { id: 'hydron', name: 'Hydron' },
       { id: 'kenji', name: 'Kenji' },
       { id: 'kongou', name: 'Kongou' },
       { id: 'lavia', name: 'Lavia' },
       { id: 'leo', name: 'Leo' },
-      { id: 'mai-ling', name: 'Mai-Ling' },
+      { id: 'mai---ling', name: 'Mai - Ling' },
       { id: 'ravange', name: 'Ravange' },
       { id: 'scion', name: 'Scion' },
       { id: 'tessa', name: 'Tessa' }
@@ -6308,11 +5897,13 @@ rosterCount: 10,
   },
   {
     id: 'dragon-ball-z-budokai-3',
+    releaseYear: 2004,
+    platform: "PS2",
     name: "Dragon Ball Z: Budokai 3",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 37,
     characters: [
-      { id: '2004---ps2---android-16', name: '2004 - PS2 - Android 16' },
+      { id: 'android-16', name: 'Android 16' },
       { id: 'android-17', name: 'Android 17' },
       { id: 'android-18', name: 'Android 18' },
       { id: 'bardock', name: 'Bardock' },
@@ -6354,12 +5945,13 @@ rosterCount: 10,
   },
   {
     id: 'dragon-ball-z-budokai-tenkaichi-3',
+    releaseYear: 2007,
+    platform: "PS2, Wii",
     name: "Dragon Ball Z: Budokai Tenkaichi 3",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 95,
     characters: [
-      { id: '2007---ps2', name: '2007 - PS2' },
-      { id: 'wii---android-13', name: 'Wii - Android 13' },
+      { id: 'android-13', name: 'Android 13' },
       { id: 'android-16', name: 'Android 16' },
       { id: 'android-17', name: 'Android 17' },
       { id: 'android-18', name: 'Android 18' },
@@ -6406,7 +5998,7 @@ rosterCount: 10,
       { id: 'janemba', name: 'Janemba' },
       { id: 'jeice', name: 'Jeice' },
       { id: 'kid-buu', name: 'Kid Buu' },
-      { id: 'kid-chi-chi', name: 'Kid Chi-Chi' },
+      { id: 'kid-chi---chi', name: 'Kid Chi - Chi' },
       { id: 'king-cold', name: 'King Cold' },
       { id: 'king-vegeta', name: 'King Vegeta' },
       { id: 'krillin', name: 'Krillin' },
@@ -6414,7 +6006,7 @@ rosterCount: 10,
       { id: 'majin-buu', name: 'Majin Buu' },
       { id: 'master-roshi', name: 'Master Roshi' },
       { id: 'mecha-frieza', name: 'Mecha Frieza' },
-      { id: 'meta-cooler', name: 'Meta-Cooler' },
+      { id: 'meta---cooler', name: 'Meta - Cooler' },
       { id: 'monster-zarbon', name: 'Monster Zarbon' },
       { id: 'nappa', name: 'Nappa' },
       { id: 'nail', name: 'Nail' },
@@ -6459,11 +6051,13 @@ rosterCount: 10,
   },
   {
     id: 'guilty-gear-2-overture',
+    releaseYear: 2007,
+    platform: "Xbox 360",
     name: "Guilty Gear 2: Overture",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 7,
     characters: [
-      { id: '2007---xbox-360---dr-paradigm', name: '2007 - Xbox 360 - Dr. Paradigm' },
+      { id: 'dr-paradigm', name: 'Dr. Paradigm' },
       { id: 'izuna', name: 'Izuna' },
       { id: 'ky-kiske', name: 'Ky Kiske' },
       { id: 'raven', name: 'Raven' },
@@ -6504,14 +6098,13 @@ rosterCount: 10,
   },
   {
     id: 'injustice-gods-among-us',
+    releaseYear: 2013,
+    platform: "PS3, Xbox 360, Wii U, PC",
     name: "Injustice: Gods Among Us",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 30,
     characters: [
-      { id: '2013---ps3', name: '2013 - PS3' },
-      { id: 'xbox-360', name: 'Xbox 360' },
-      { id: 'wii-u', name: 'Wii U' },
-      { id: 'pc---aquaman', name: 'PC - Aquaman' },
+      { id: 'aquaman', name: 'Aquaman' },
       { id: 'ares', name: 'Ares' },
       { id: 'bane', name: 'Bane' },
       { id: 'batgirl', name: 'Batgirl' },
@@ -6546,13 +6139,13 @@ rosterCount: 10,
   },
   {
     id: 'injustice-2',
+    releaseYear: 2017,
+    platform: "PS4, Xbox One, PC",
     name: "Injustice 2",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 40,
     characters: [
-      { id: '2017---ps4', name: '2017 - PS4' },
-      { id: 'xbox-one', name: 'Xbox One' },
-      { id: 'pc---aquaman', name: 'PC - Aquaman' },
+      { id: 'aquaman', name: 'Aquaman' },
       { id: 'atrocitus', name: 'Atrocitus' },
       { id: 'bane', name: 'Bane' },
       { id: 'batman', name: 'Batman' },
@@ -6587,7 +6180,7 @@ rosterCount: 10,
       { id: 'robin', name: 'Robin' },
       { id: 'scarecrow', name: 'Scarecrow' },
       { id: 'starfire', name: 'Starfire' },
-      { id: 'sub-zero', name: 'Sub-Zero' },
+      { id: 'sub---zero', name: 'Sub - Zero' },
       { id: 'supergirl', name: 'Supergirl' },
       { id: 'superman', name: 'Superman' },
       { id: 'swamp-thing', name: 'Swamp Thing' },
@@ -6597,14 +6190,13 @@ rosterCount: 10,
   },
   {
     id: 'mortal-kombat-3',
+    releaseYear: 1995,
+    platform: "Arcade, SNES, Genesis, PS1",
     name: "Mortal Kombat 3",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 15,
     characters: [
-      { id: '1995---arcade', name: '1995 - Arcade' },
-      { id: 'snes', name: 'SNES' },
-      { id: 'genesis', name: 'Genesis' },
-      { id: 'ps1---cyrax', name: 'PS1 - Cyrax' },
+      { id: 'cyrax', name: 'Cyrax' },
       { id: 'jax', name: 'Jax' },
       { id: 'kabal', name: 'Kabal' },
       { id: 'kano', name: 'Kano' },
@@ -6618,19 +6210,19 @@ rosterCount: 10,
       { id: 'smoke', name: 'Smoke' },
       { id: 'sonya-blade', name: 'Sonya Blade' },
       { id: 'stryker', name: 'Stryker' },
-      { id: 'sub-zero', name: 'Sub-Zero' }
+      { id: 'sub---zero', name: 'Sub - Zero' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
     id: 'mortal-kombat-4',
+    releaseYear: 1997,
+    platform: "Arcade, PS1, N64",
     name: "Mortal Kombat 4",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 18,
     characters: [
-      { id: '1997---arcade', name: '1997 - Arcade' },
-      { id: 'ps1', name: 'PS1' },
-      { id: 'n64---fujin', name: 'N64 - Fujin' },
+      { id: 'fujin', name: 'Fujin' },
       { id: 'goro', name: 'Goro' },
       { id: 'jarek', name: 'Jarek' },
       { id: 'jax', name: 'Jax' },
@@ -6646,20 +6238,20 @@ rosterCount: 10,
       { id: 'scorpion', name: 'Scorpion' },
       { id: 'shinnok', name: 'Shinnok' },
       { id: 'sonya-blade', name: 'Sonya Blade' },
-      { id: 'sub-zero', name: 'Sub-Zero' },
+      { id: 'sub---zero', name: 'Sub - Zero' },
       { id: 'tanya', name: 'Tanya' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
     id: 'mortal-kombat-deadly-alliance',
+    releaseYear: 2002,
+    platform: "PS2, Xbox, GC",
     name: "Mortal Kombat: Deadly Alliance",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 24,
     characters: [
-      { id: '2002---ps2', name: '2002 - PS2' },
-      { id: 'xbox', name: 'Xbox' },
-      { id: 'gc---blaze', name: 'GC - Blaze' },
+      { id: 'blaze', name: 'Blaze' },
       { id: 'bo-rai-cho', name: 'Bo\' Rai Cho' },
       { id: 'cyrax', name: 'Cyrax' },
       { id: 'drahmin', name: 'Drahmin' },
@@ -6682,19 +6274,19 @@ rosterCount: 10,
       { id: 'scorpion', name: 'Scorpion' },
       { id: 'shang-tsung', name: 'Shang Tsung' },
       { id: 'sonya-blade', name: 'Sonya Blade' },
-      { id: 'sub-zero', name: 'Sub-Zero' }
+      { id: 'sub---zero', name: 'Sub - Zero' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
     id: 'mortal-kombat-armageddon',
+    releaseYear: 2006,
+    platform: "PS2, Xbox, Wii",
     name: "Mortal Kombat: Armageddon",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 63,
     characters: [
-      { id: '2006---ps2', name: '2006 - PS2' },
-      { id: 'xbox', name: 'Xbox' },
-      { id: 'wii---ashrah', name: 'Wii - Ashrah' },
+      { id: 'ashrah', name: 'Ashrah' },
       { id: 'baraka', name: 'Baraka' },
       { id: 'blaze', name: 'Blaze' },
       { id: 'bo-rai-cho', name: 'Bo\' Rai Cho' },
@@ -6754,7 +6346,7 @@ rosterCount: 10,
       { id: 'smoke', name: 'Smoke' },
       { id: 'sonya-blade', name: 'Sonya Blade' },
       { id: 'stryker', name: 'Stryker' },
-      { id: 'sub-zero', name: 'Sub-Zero' },
+      { id: 'sub---zero', name: 'Sub - Zero' },
       { id: 'tanya', name: 'Tanya' },
       { id: 'taven', name: 'Taven' }
     ],
@@ -6762,14 +6354,13 @@ rosterCount: 10,
   },
   {
     id: 'mortal-kombat-11',
+    releaseYear: 2019,
+    platform: "PS4, Xbox One, Switch, PC",
     name: "Mortal Kombat 11",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 37,
     characters: [
-      { id: '2019---ps4', name: '2019 - PS4' },
-      { id: 'xbox-one', name: 'Xbox One' },
-      { id: 'switch', name: 'Switch' },
-      { id: 'pc---baraka', name: 'PC - Baraka' },
+      { id: 'baraka', name: 'Baraka' },
       { id: 'cassie-cage', name: 'Cassie Cage' },
       { id: 'cetrion', name: 'Cetrion' },
       { id: 'dvorah', name: 'D\'Vorah' },
@@ -6804,21 +6395,20 @@ rosterCount: 10,
       { id: 'skarlet', name: 'Skarlet' },
       { id: 'sonya-blade', name: 'Sonya Blade' },
       { id: 'spawn', name: 'Spawn' },
-      { id: 'sub-zero', name: 'Sub-Zero' },
+      { id: 'sub---zero', name: 'Sub - Zero' },
       { id: 'terminator', name: 'Terminator' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
     id: 'samurai-shodown-iv-amakusas-revenge',
+    releaseYear: 1996,
+    platform: "Arcade, NeoGeo, Saturn, PS1",
     name: "Samurai Shodown IV: Amakusa's Revenge",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 16,
     characters: [
-      { id: '1996---arcade', name: '1996 - Arcade' },
-      { id: 'neogeo', name: 'NeoGeo' },
-      { id: 'saturn', name: 'Saturn' },
-      { id: 'ps1---amakusa', name: 'PS1 - Amakusa' },
+      { id: 'amakusa', name: 'Amakusa' },
       { id: 'basara', name: 'Basara' },
       { id: 'charlotte', name: 'Charlotte' },
       { id: 'galford', name: 'Galford' },
@@ -6839,12 +6429,13 @@ rosterCount: 10,
   },
   {
     id: 'soulcalibur',
+    releaseYear: 1998,
+    platform: "Arcade, DC",
     name: "SoulCalibur",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 17,
     characters: [
-      { id: '1998---arcade', name: '1998 - Arcade' },
-      { id: 'dc---astaroth', name: 'DC - Astaroth' },
+      { id: 'astaroth', name: 'Astaroth' },
       { id: 'cervantes', name: 'Cervantes' },
       { id: 'edge-master', name: 'Edge Master' },
       { id: 'heihachi', name: 'Heihachi' },
@@ -6854,7 +6445,7 @@ rosterCount: 10,
       { id: 'maxi', name: 'Maxi' },
       { id: 'mitsurugi', name: 'Mitsurugi' },
       { id: 'nightmare', name: 'Nightmare' },
-      { id: 'seong-mi-na', name: 'Seong Mi-na' },
+      { id: 'seong-mi---na', name: 'Seong Mi - na' },
       { id: 'siegfried', name: 'Siegfried' },
       { id: 'sophitia', name: 'Sophitia' },
       { id: 'taki', name: 'Taki' },
@@ -6866,14 +6457,13 @@ rosterCount: 10,
   },
   {
     id: 'soulcalibur-ii',
+    releaseYear: 2002,
+    platform: "Arcade, PS2, Xbox, GC",
     name: "SoulCalibur II",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 21,
     characters: [
-      { id: '2002---arcade', name: '2002 - Arcade' },
-      { id: 'ps2', name: 'PS2' },
-      { id: 'xbox', name: 'Xbox' },
-      { id: 'gc---astaroth', name: 'GC - Astaroth' },
+      { id: 'astaroth', name: 'Astaroth' },
       { id: 'cassandra', name: 'Cassandra' },
       { id: 'cervantes', name: 'Cervantes' },
       { id: 'heihachi-mishima', name: 'Heihachi Mishima' },
@@ -6885,7 +6475,7 @@ rosterCount: 10,
       { id: 'necrid', name: 'Necrid' },
       { id: 'nightmare', name: 'Nightmare' },
       { id: 'raphael', name: 'Raphael' },
-      { id: 'seong-mi-na', name: 'Seong Mi-na' },
+      { id: 'seong-mi---na', name: 'Seong Mi - na' },
       { id: 'sophitia', name: 'Sophitia' },
       { id: 'spawn', name: 'Spawn' },
       { id: 'taki', name: 'Taki' },
@@ -6893,17 +6483,19 @@ rosterCount: 10,
       { id: 'voldo', name: 'Voldo' },
       { id: 'xianghua', name: 'Xianghua' },
       { id: 'yoshimitsu', name: 'Yoshimitsu' },
-      { id: 'yun-seong', name: 'Yun-seong' }
+      { id: 'yun---seong', name: 'Yun - seong' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
     id: 'soulcalibur-iii',
+    releaseYear: 2005,
+    platform: "PS2",
     name: "SoulCalibur III",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 40,
     characters: [
-      { id: '2005---ps2---abelia', name: '2005 - PS2 - Abelia' },
+      { id: 'abelia', name: 'Abelia' },
       { id: 'amy', name: 'Amy' },
       { id: 'arthur', name: 'Arthur' },
       { id: 'astaroth', name: 'Astaroth' },
@@ -6929,7 +6521,7 @@ rosterCount: 10,
       { id: 'raphael', name: 'Raphael' },
       { id: 'revenant', name: 'Revenant' },
       { id: 'rock', name: 'Rock' },
-      { id: 'seong-mi-na', name: 'Seong Mi-na' },
+      { id: 'seong-mi---na', name: 'Seong Mi - na' },
       { id: 'setsuka', name: 'Setsuka' },
       { id: 'siegfried', name: 'Siegfried' },
       { id: 'sophitia', name: 'Sophitia' },
@@ -6941,19 +6533,20 @@ rosterCount: 10,
       { id: 'voldo', name: 'Voldo' },
       { id: 'xianghua', name: 'Xianghua' },
       { id: 'yoshimitsu', name: 'Yoshimitsu' },
-      { id: 'yun-seong', name: 'Yun-seong' },
+      { id: 'yun---seong', name: 'Yun - seong' },
       { id: 'zasalamel', name: 'Zasalamel' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
     id: 'soulcalibur-iv',
+    releaseYear: 2008,
+    platform: "PS3, Xbox 360",
     name: "SoulCalibur IV",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 28,
     characters: [
-      { id: '2008---ps3', name: '2008 - PS3' },
-      { id: 'xbox-360---algol', name: 'Xbox 360 - Algol' },
+      { id: 'algol', name: 'Algol' },
       { id: 'amy', name: 'Amy' },
       { id: 'apprentice', name: 'Apprentice' },
       { id: 'astaroth', name: 'Astaroth' },
@@ -6969,7 +6562,7 @@ rosterCount: 10,
       { id: 'nightmare', name: 'Nightmare' },
       { id: 'raphael', name: 'Raphael' },
       { id: 'rock', name: 'Rock' },
-      { id: 'seong-mi-na', name: 'Seong Mi-na' },
+      { id: 'seong-mi---na', name: 'Seong Mi - na' },
       { id: 'siegfried', name: 'Siegfried' },
       { id: 'sophitia', name: 'Sophitia' },
       { id: 'taki', name: 'Taki' },
@@ -6979,19 +6572,20 @@ rosterCount: 10,
       { id: 'xianghua', name: 'Xianghua' },
       { id: 'yoda', name: 'Yoda' },
       { id: 'yoshimitsu', name: 'Yoshimitsu' },
-      { id: 'yun-seong', name: 'Yun-seong' },
+      { id: 'yun---seong', name: 'Yun - seong' },
       { id: 'zasalamel', name: 'Zasalamel' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
     id: 'soulcalibur-v',
+    releaseYear: 2012,
+    platform: "PS3, Xbox 360",
     name: "SoulCalibur V",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 25,
     characters: [
-      { id: '2012---ps3', name: '2012 - PS3' },
-      { id: 'xbox-360---aeon', name: 'Xbox 360 - Aeon' },
+      { id: 'aeon', name: 'Aeon' },
       { id: 'algol', name: 'Algol' },
       { id: 'astaroth', name: 'Astaroth' },
       { id: 'cervantes', name: 'Cervantes' },
@@ -7021,13 +6615,13 @@ rosterCount: 10,
   },
   {
     id: 'soulcalibur-vi',
+    releaseYear: 2018,
+    platform: "PS4, Xbox One, PC",
     name: "SoulCalibur VI",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 29,
     characters: [
-      { id: '2018---ps4', name: '2018 - PS4' },
-      { id: 'xbox-one', name: 'Xbox One' },
-      { id: 'pc---2b', name: 'PC - 2B' },
+      { id: '2b', name: '2B' },
       { id: 'amy', name: 'Amy' },
       { id: 'astaroth', name: 'Astaroth' },
       { id: 'azwel', name: 'Azwel' },
@@ -7045,7 +6639,7 @@ rosterCount: 10,
       { id: 'mitsurugi', name: 'Mitsurugi' },
       { id: 'nightmare', name: 'Nightmare' },
       { id: 'raphael', name: 'Raphael' },
-      { id: 'seong-mi-na', name: 'Seong Mi-na' },
+      { id: 'seong-mi---na', name: 'Seong Mi - na' },
       { id: 'setsuka', name: 'Setsuka' },
       { id: 'siegfried', name: 'Siegfried' },
       { id: 'sophitia', name: 'Sophitia' },
@@ -7061,15 +6655,15 @@ rosterCount: 10,
   },
   {
     id: 'street-fighter-ii-champion-edition',
+    releaseYear: 1992,
+    platform: "Arcade, SNES, Genesis",
     name: "Street Fighter II: Champion Edition",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 12,
     characters: [
-      { id: '1992---arcade', name: '1992 - Arcade' },
-      { id: 'snes', name: 'SNES' },
-      { id: 'genesis---balrog', name: 'Genesis - Balrog' },
+      { id: 'balrog', name: 'Balrog' },
       { id: 'blanka', name: 'Blanka' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'dhalsim', name: 'Dhalsim' },
       { id: 'e-honda', name: 'E. Honda' },
       { id: 'guile', name: 'Guile' },
@@ -7084,15 +6678,15 @@ rosterCount: 10,
   },
   {
     id: 'street-fighter-ii-hyper-fighting',
+    releaseYear: 1992,
+    platform: "Arcade, SNES, Genesis",
     name: "Street Fighter II: Hyper Fighting",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 12,
     characters: [
-      { id: '1992---arcade', name: '1992 - Arcade' },
-      { id: 'snes', name: 'SNES' },
-      { id: 'genesis---balrog', name: 'Genesis - Balrog' },
+      { id: 'balrog', name: 'Balrog' },
       { id: 'blanka', name: 'Blanka' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'dhalsim', name: 'Dhalsim' },
       { id: 'e-honda', name: 'E. Honda' },
       { id: 'guile', name: 'Guile' },
@@ -7107,15 +6701,16 @@ rosterCount: 10,
   },
   {
     id: 'hyper-street-fighter-ii-the-anniversary-edition',
+    releaseYear: 2003,
+    platform: "Arcade, PS2",
     name: "Hyper Street Fighter II: The Anniversary Edition",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 16,
     characters: [
-      { id: '2003---arcade', name: '2003 - Arcade' },
-      { id: 'ps2---balrog', name: 'PS2 - Balrog' },
+      { id: 'balrog', name: 'Balrog' },
       { id: 'blanka', name: 'Blanka' },
       { id: 'cammy', name: 'Cammy' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'dee-jay', name: 'Dee Jay' },
       { id: 'dhalsim', name: 'Dhalsim' },
       { id: 'e-honda', name: 'E. Honda' },
@@ -7133,17 +6728,17 @@ rosterCount: 10,
   },
   {
     id: 'street-fighter-alpha-warriors-dreams',
+    releaseYear: 1995,
+    platform: "Arcade, PS1, Saturn",
     name: "Street Fighter Alpha: Warriors' Dreams",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 12,
     characters: [
-      { id: '1995---arcade', name: '1995 - Arcade' },
-      { id: 'ps1', name: 'PS1' },
-      { id: 'saturn---adon', name: 'Saturn - Adon' },
+      { id: 'adon', name: 'Adon' },
       { id: 'akuma', name: 'Akuma' },
       { id: 'birdie', name: 'Birdie' },
       { id: 'charlie', name: 'Charlie' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'dan', name: 'Dan' },
       { id: 'guy', name: 'Guy' },
       { id: 'ken', name: 'Ken' },
@@ -7156,16 +6751,15 @@ rosterCount: 10,
   },
   {
     id: 'street-fighter-iii-3rd-strike---fight-for-the-future',
+    releaseYear: 1999,
+    platform: "Arcade, DC, PS2, Xbox",
     name: "Street Fighter III: 3rd Strike - Fight for the Future",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 19,
     characters: [
-      { id: '1999---arcade', name: '1999 - Arcade' },
-      { id: 'dc', name: 'DC' },
-      { id: 'ps2', name: 'PS2' },
-      { id: 'xbox---akuma', name: 'Xbox - Akuma' },
+      { id: 'akuma', name: 'Akuma' },
       { id: 'alex', name: 'Alex' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'dudley', name: 'Dudley' },
       { id: 'elena', name: 'Elena' },
       { id: 'hugo', name: 'Hugo' },
@@ -7187,19 +6781,18 @@ rosterCount: 10,
   },
   {
     id: 'street-fighter-iv',
+    releaseYear: 2008,
+    platform: "Arcade, PS3, Xbox 360, PC",
     name: "Street Fighter IV",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 25,
     characters: [
-      { id: '2008---arcade', name: '2008 - Arcade' },
-      { id: 'ps3', name: 'PS3' },
-      { id: 'xbox-360', name: 'Xbox 360' },
-      { id: 'pc---abel', name: 'PC - Abel' },
+      { id: 'abel', name: 'Abel' },
       { id: 'akuma', name: 'Akuma' },
       { id: 'balrog', name: 'Balrog' },
       { id: 'blanka', name: 'Blanka' },
       { id: 'cammy', name: 'Cammy' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'crimson-viper', name: 'Crimson Viper' },
       { id: 'dan', name: 'Dan' },
       { id: 'dhalsim', name: 'Dhalsim' },
@@ -7224,19 +6817,19 @@ rosterCount: 10,
   },
   {
     id: 'super-street-fighter-iv',
+    releaseYear: 2010,
+    platform: "PS3, Xbox 360, 3DS",
     name: "Super Street Fighter IV",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 35,
     characters: [
-      { id: '2010---ps3', name: '2010 - PS3' },
-      { id: 'xbox-360', name: 'Xbox 360' },
-      { id: '3ds---abel', name: '3DS - Abel' },
+      { id: 'abel', name: 'Abel' },
       { id: 'adon', name: 'Adon' },
       { id: 'akuma', name: 'Akuma' },
       { id: 'balrog', name: 'Balrog' },
       { id: 'blanka', name: 'Blanka' },
       { id: 'cammy', name: 'Cammy' },
-      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'chun---li', name: 'Chun - Li' },
       { id: 'cody', name: 'Cody' },
       { id: 'crimson-viper', name: 'Crimson Viper' },
       { id: 'dan', name: 'Dan' },
@@ -7270,12 +6863,13 @@ rosterCount: 10,
   },
   {
     id: 'tekken-3',
+    releaseYear: 1997,
+    platform: "Arcade, PS1",
     name: "Tekken 3",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 22,
     characters: [
-      { id: '1997---arcade', name: '1997 - Arcade' },
-      { id: 'ps1---anna-williams', name: 'PS1 - Anna Williams' },
+      { id: 'anna-williams', name: 'Anna Williams' },
       { id: 'bryan-fury', name: 'Bryan Fury' },
       { id: 'dr-bosconovitch', name: 'Dr. Bosconovitch' },
       { id: 'eddy-gordo', name: 'Eddy Gordo' },
@@ -7302,12 +6896,13 @@ rosterCount: 10,
   },
   {
     id: 'tekken-tag-tournament',
+    releaseYear: 1999,
+    platform: "Arcade, PS2",
     name: "Tekken Tag Tournament",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 34,
     characters: [
-      { id: '1999---arcade', name: '1999 - Arcade' },
-      { id: 'ps2---anna-williams', name: 'PS2 - Anna Williams' },
+      { id: 'anna-williams', name: 'Anna Williams' },
       { id: 'armor-king', name: 'Armor King' },
       { id: 'baek-doo-san', name: 'Baek Doo San' },
       { id: 'bruce-irvin', name: 'Bruce Irvin' },
@@ -7318,7 +6913,7 @@ rosterCount: 10,
       { id: 'gun-jack', name: 'Gun Jack' },
       { id: 'heihachi-mishima', name: 'Heihachi Mishima' },
       { id: 'hwoarang', name: 'Hwoarang' },
-      { id: 'jack-2', name: 'Jack-2' },
+      { id: 'jack---2', name: 'Jack - 2' },
       { id: 'jin-kazama', name: 'Jin Kazama' },
       { id: 'julia-chang', name: 'Julia Chang' },
       { id: 'jun-kazama', name: 'Jun Kazama' },
@@ -7346,11 +6941,13 @@ rosterCount: 10,
   },
   {
     id: 'tekken-4',
+    releaseYear: 2001,
+    platform: "PS2",
     name: "Tekken 4",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 22,
     characters: [
-      { id: '2001---ps2---bryan-fury', name: '2001 - PS2 - Bryan Fury' },
+      { id: 'bryan-fury', name: 'Bryan Fury' },
       { id: 'christie-monteiro', name: 'Christie Monteiro' },
       { id: 'combot', name: 'Combot' },
       { id: 'eddy-gordo', name: 'Eddy Gordo' },
@@ -7377,11 +6974,13 @@ rosterCount: 10,
   },
   {
     id: 'tekken-5',
+    releaseYear: 2004,
+    platform: "PS2",
     name: "Tekken 5",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 32,
     characters: [
-      { id: '2004---ps2---anna-williams', name: '2004 - PS2 - Anna Williams' },
+      { id: 'anna-williams', name: 'Anna Williams' },
       { id: 'asuka-kazama', name: 'Asuka Kazama' },
       { id: 'baek-doo-san', name: 'Baek Doo San' },
       { id: 'bruce-irvin', name: 'Bruce Irvin' },
@@ -7394,7 +6993,7 @@ rosterCount: 10,
       { id: 'ganryu', name: 'Ganryu' },
       { id: 'heihachi-mishima', name: 'Heihachi Mishima' },
       { id: 'hwoarang', name: 'Hwoarang' },
-      { id: 'jack-5', name: 'Jack-5' },
+      { id: 'jack---5', name: 'Jack - 5' },
       { id: 'jin-kazama', name: 'Jin Kazama' },
       { id: 'julia-chang', name: 'Julia Chang' },
       { id: 'kazuya-mishima', name: 'Kazuya Mishima' },
@@ -7418,13 +7017,13 @@ rosterCount: 10,
   },
   {
     id: 'tekken-6',
+    releaseYear: 2007,
+    platform: "Arcade, PS3, Xbox 360",
     name: "Tekken 6",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 41,
     characters: [
-      { id: '2007---arcade', name: '2007 - Arcade' },
-      { id: 'ps3', name: 'PS3' },
-      { id: 'xbox-360---alisa-bosconovitch', name: 'Xbox 360 - Alisa Bosconovitch' },
+      { id: 'alisa-bosconovitch', name: 'Alisa Bosconovitch' },
       { id: 'anna-williams', name: 'Anna Williams' },
       { id: 'armor-king-ii', name: 'Armor King II' },
       { id: 'asuka-kazama', name: 'Asuka Kazama' },
@@ -7441,7 +7040,7 @@ rosterCount: 10,
       { id: 'ganryu', name: 'Ganryu' },
       { id: 'heihachi-mishima', name: 'Heihachi Mishima' },
       { id: 'hwoarang', name: 'Hwoarang' },
-      { id: 'jack-6', name: 'Jack-6' },
+      { id: 'jack---6', name: 'Jack - 6' },
       { id: 'jin-kazama', name: 'Jin Kazama' },
       { id: 'julia-chang', name: 'Julia Chang' },
       { id: 'kazuya-mishima', name: 'Kazuya Mishima' },
@@ -7470,14 +7069,13 @@ rosterCount: 10,
   },
   {
     id: 'tekken-tag-tournament-2',
+    releaseYear: 2011,
+    platform: "Arcade, PS3, Xbox 360, Wii U",
     name: "Tekken Tag Tournament 2",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 52,
     characters: [
-      { id: '2011---arcade', name: '2011 - Arcade' },
-      { id: 'ps3', name: 'PS3' },
-      { id: 'xbox-360', name: 'Xbox 360' },
-      { id: 'wii-u---alisa-bosconovitch', name: 'Wii U - Alisa Bosconovitch' },
+      { id: 'alisa-bosconovitch', name: 'Alisa Bosconovitch' },
       { id: 'angel', name: 'Angel' },
       { id: 'anna-williams', name: 'Anna Williams' },
       { id: 'armor-king', name: 'Armor King' },
@@ -7496,7 +7094,7 @@ rosterCount: 10,
       { id: 'ganryu', name: 'Ganryu' },
       { id: 'heihachi-mishima', name: 'Heihachi Mishima' },
       { id: 'hwoarang', name: 'Hwoarang' },
-      { id: 'jack-6', name: 'Jack-6' },
+      { id: 'jack---6', name: 'Jack - 6' },
       { id: 'jin-kazama', name: 'Jin Kazama' },
       { id: 'jinpachi-mishima', name: 'Jinpachi Mishima' },
       { id: 'julia-chang-jaycee', name: 'Julia Chang (Jaycee)' },
@@ -7534,14 +7132,13 @@ rosterCount: 10,
   },
   {
     id: 'tekken-7',
+    releaseYear: 2015,
+    platform: "Arcade, PS4, Xbox One, PC",
     name: "Tekken 7",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 51,
     characters: [
-      { id: '2015---arcade', name: '2015 - Arcade' },
-      { id: 'ps4', name: 'PS4' },
-      { id: 'xbox-one', name: 'Xbox One' },
-      { id: 'pc---akuma', name: 'PC - Akuma' },
+      { id: 'akuma', name: 'Akuma' },
       { id: 'alisa-bosconovitch', name: 'Alisa Bosconovitch' },
       { id: 'anna-williams', name: 'Anna Williams' },
       { id: 'armor-king-ii', name: 'Armor King II' },
@@ -7561,7 +7158,7 @@ rosterCount: 10,
       { id: 'gigas', name: 'Gigas' },
       { id: 'heihachi-mishima', name: 'Heihachi Mishima' },
       { id: 'hwoarang', name: 'Hwoarang' },
-      { id: 'jack-7', name: 'Jack-7' },
+      { id: 'jack---7', name: 'Jack - 7' },
       { id: 'jin-kazama', name: 'Jin Kazama' },
       { id: 'julia-chang', name: 'Julia Chang' },
       { id: 'katarina-alves', name: 'Katarina Alves' },
@@ -7597,14 +7194,13 @@ rosterCount: 10,
   },
   {
     id: 'the-king-of-fighters-95',
+    releaseYear: 1995,
+    platform: "Arcade, NeoGeo, PS1, Saturn",
     name: "The King of Fighters '95",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 27,
     characters: [
-      { id: '1995---arcade', name: '1995 - Arcade' },
-      { id: 'neogeo', name: 'NeoGeo' },
-      { id: 'ps1', name: 'PS1' },
-      { id: 'saturn---andy-bogard', name: 'Saturn - Andy Bogard' },
+      { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'athena-asamiya', name: 'Athena Asamiya' },
       { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
       { id: 'billy-kane', name: 'Billy Kane' },
@@ -7636,14 +7232,13 @@ rosterCount: 10,
   },
   {
     id: 'the-king-of-fighters-96',
+    releaseYear: 1996,
+    platform: "Arcade, NeoGeo, PS1, Saturn",
     name: "The King of Fighters '96",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 26,
     characters: [
-      { id: '1996---arcade', name: '1996 - Arcade' },
-      { id: 'neogeo', name: 'NeoGeo' },
-      { id: 'ps1', name: 'PS1' },
-      { id: 'saturn---andy-bogard', name: 'Saturn - Andy Bogard' },
+      { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'athena-asamiya', name: 'Athena Asamiya' },
       { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
       { id: 'chang-koehan', name: 'Chang Koehan' },
@@ -7674,14 +7269,13 @@ rosterCount: 10,
   },
   {
     id: 'the-king-of-fighters-97',
+    releaseYear: 1997,
+    platform: "Arcade, NeoGeo, PS1, Saturn",
     name: "The King of Fighters '97",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 31,
     characters: [
-      { id: '1997---arcade', name: '1997 - Arcade' },
-      { id: 'neogeo', name: 'NeoGeo' },
-      { id: 'ps1', name: 'PS1' },
-      { id: 'saturn---andy-bogard', name: 'Saturn - Andy Bogard' },
+      { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'athena-asamiya', name: 'Athena Asamiya' },
       { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
       { id: 'billy-kane', name: 'Billy Kane' },
@@ -7717,14 +7311,13 @@ rosterCount: 10,
   },
   {
     id: 'the-king-of-fighters-98',
+    releaseYear: 1998,
+    platform: "Arcade, NeoGeo, PS1, Saturn",
     name: "The King of Fighters '98",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 34,
     characters: [
-      { id: '1998---arcade', name: '1998 - Arcade' },
-      { id: 'neogeo', name: 'NeoGeo' },
-      { id: 'ps1', name: 'PS1' },
-      { id: 'saturn---andy-bogard', name: 'Saturn - Andy Bogard' },
+      { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'athena-asamiya', name: 'Athena Asamiya' },
       { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
       { id: 'billy-kane', name: 'Billy Kane' },
@@ -7763,14 +7356,13 @@ rosterCount: 10,
   },
   {
     id: 'the-king-of-fighters-99',
+    releaseYear: 1999,
+    platform: "Arcade, NeoGeo, PS1, DC",
     name: "The King of Fighters '99",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 28,
     characters: [
-      { id: '1999---arcade', name: '1999 - Arcade' },
-      { id: 'neogeo', name: 'NeoGeo' },
-      { id: 'ps1', name: 'PS1' },
-      { id: 'dc---andy-bogard', name: 'DC - Andy Bogard' },
+      { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'athena-asamiya', name: 'Athena Asamiya' },
       { id: 'bao', name: 'Bao' },
       { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
@@ -7803,12 +7395,13 @@ rosterCount: 10,
   },
   {
     id: 'the-king-of-fighters-xi',
+    releaseYear: 2005,
+    platform: "Arcade, PS2",
     name: "The King of Fighters XI",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 45,
     characters: [
-      { id: '2005---arcade', name: '2005 - Arcade' },
-      { id: 'ps2---adelheid', name: 'PS2 - Adelheid' },
+      { id: 'adelheid', name: 'Adelheid' },
       { id: 'ash', name: 'Ash' },
       { id: 'athena', name: 'Athena' },
       { id: 'b-jenet', name: 'B. Jenet' },
@@ -7858,13 +7451,13 @@ rosterCount: 10,
   },
   {
     id: 'the-king-of-fighters-xii',
+    releaseYear: 2009,
+    platform: "Arcade, PS3, Xbox 360",
     name: "The King of Fighters XII",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 22,
     characters: [
-      { id: '2009---arcade', name: '2009 - Arcade' },
-      { id: 'ps3', name: 'PS3' },
-      { id: 'xbox-360---andy-bogard', name: 'Xbox 360 - Andy Bogard' },
+      { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'ash-crimson', name: 'Ash Crimson' },
       { id: 'athena-asamiya', name: 'Athena Asamiya' },
       { id: 'chin-gentsai', name: 'Chin Gentsai' },
@@ -7891,12 +7484,13 @@ rosterCount: 10,
   },
   {
     id: 'the-king-of-fighters-maximum-impact-regulation-a',
+    releaseYear: 2007,
+    platform: "Arcade, PS2",
     name: "The King of Fighters: Maximum Impact Regulation 'A'",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 5,
     characters: [
-      { id: '2007---arcade', name: '2007 - Arcade' },
-      { id: 'ps2---ash-crimson', name: 'PS2 - Ash Crimson' },
+      { id: 'ash-crimson', name: 'Ash Crimson' },
       { id: 'blue-mary', name: 'Blue Mary' },
       { id: 'makoto-mizoguchi', name: 'Makoto Mizoguchi' },
       { id: 'nightmare-geese', name: 'Nightmare Geese' },
@@ -7906,12 +7500,13 @@ rosterCount: 10,
   },
   {
     id: 'clayfighter',
+    releaseYear: 1993,
+    platform: "SNES, Genesis",
     name: "ClayFighter",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 8,
     characters: [
-      { id: '1993---snes', name: '1993 - SNES' },
-      { id: 'genesis---bad-mr-frosty', name: 'Genesis - Bad Mr. Frosty' },
+      { id: 'bad-mr-frosty', name: 'Bad Mr. Frosty' },
       { id: 'blob', name: 'Blob' },
       { id: 'blue-suede-goo', name: 'Blue Suede Goo' },
       { id: 'bonker', name: 'Bonker' },
@@ -7924,11 +7519,13 @@ rosterCount: 10,
   },
   {
     id: 'eternal-champions',
+    releaseYear: 1993,
+    platform: "Genesis",
     name: "Eternal Champions",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 23,
     characters: [
-      { id: '1993---genesis---chin-wo', name: '1993 - Genesis - Chin Wo' },
+      { id: 'chin-wo', name: 'Chin Wo' },
       { id: 'crispy', name: 'Crispy' },
       { id: 'dawson-mcshane', name: 'Dawson McShane' },
       { id: 'eternal-champion', name: 'Eternal Champion' },
@@ -7956,13 +7553,13 @@ rosterCount: 10,
   },
   {
     id: 'melty-blood-actress-again-current-code',
+    releaseYear: 2008,
+    platform: "Arcade, PS2, PC",
     name: "Melty Blood: Actress Again Current Code",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 25,
     characters: [
-      { id: '2008---arcade', name: '2008 - Arcade' },
-      { id: 'ps2', name: 'PS2' },
-      { id: 'pc---akiha-tohno', name: 'PC - Akiha Tohno' },
+      { id: 'akiha-tohno', name: 'Akiha Tohno' },
       { id: 'akiha-tohno-seifuku', name: 'Akiha Tohno (Seifuku)' },
       { id: 'akiha-vermilion', name: 'Akiha Vermilion' },
       { id: 'aoko-aozaki', name: 'Aoko Aozaki' },
@@ -7972,13 +7569,13 @@ rosterCount: 10,
       { id: 'hisui', name: 'Hisui' },
       { id: 'hisui-kohaku', name: 'Hisui & Kohaku' },
       { id: 'kohaku', name: 'Kohaku' },
-      { id: 'kohaku-mech-hisui', name: 'Kohaku & Mech-Hisui' },
+      { id: 'kohaku-mech---hisui', name: 'Kohaku & Mech - Hisui' },
       { id: 'kouma-kishima', name: 'Kouma Kishima' },
-      { id: 'mech-hisui', name: 'Mech-Hisui' },
+      { id: 'mech---hisui', name: 'Mech - Hisui' },
       { id: 'michael-roa-valdamjong', name: 'Michael Roa Valdamjong' },
       { id: 'miyako-arima', name: 'Miyako Arima' },
-      { id: 'neco-arc', name: 'Neco-Arc' },
-      { id: 'neco-arc-chaos', name: 'Neco-Arc Chaos' },
+      { id: 'neco---arc', name: 'Neco - Arc' },
+      { id: 'neco---arc-chaos', name: 'Neco - Arc Chaos' },
       { id: 'night-of-wallachia', name: 'Night of Wallachia' },
       { id: 'nrvnqsr-chaos', name: 'Nrvnqsr Chaos' },
       { id: 'red-arcueid', name: 'Red Arcueid' },
@@ -7992,14 +7589,13 @@ rosterCount: 10,
   },
   {
     id: 'melty-blood-type-lumina',
+    releaseYear: 2021,
+    platform: "PS4, Xbox One, Switch, PC",
     name: "Melty Blood: Type Lumina",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 21,
     characters: [
-      { id: '2021---ps4', name: '2021 - PS4' },
-      { id: 'xbox-one', name: 'Xbox One' },
-      { id: 'switch', name: 'Switch' },
-      { id: 'pc---akiha-tohno', name: 'PC - Akiha Tohno' },
+      { id: 'akiha-tohno', name: 'Akiha Tohno' },
       { id: 'aoko-aozaki', name: 'Aoko Aozaki' },
       { id: 'arcueid-brunestud', name: 'Arcueid Brunestud' },
       { id: 'ciel', name: 'Ciel' },
@@ -8011,7 +7607,7 @@ rosterCount: 10,
       { id: 'mario-gallo-bestino', name: 'Mario Gallo Bestino' },
       { id: 'mash-kyrielight', name: 'Mash Kyrielight' },
       { id: 'miyako-arima', name: 'Miyako Arima' },
-      { id: 'neco-arc', name: 'Neco-Arc' },
+      { id: 'neco---arc', name: 'Neco - Arc' },
       { id: 'noel', name: 'Noel' },
       { id: 'powered-ciel', name: 'Powered Ciel' },
       { id: 'red-arcueid', name: 'Red Arcueid' },
@@ -8025,14 +7621,13 @@ rosterCount: 10,
   },
   {
     id: 'pocket-bravery',
+    releaseYear: 2023,
+    platform: "PC, Switch, PS4, Xbox One",
     name: "Pocket Bravery",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 12,
     characters: [
-      { id: '2023---pc', name: '2023 - PC' },
-      { id: 'switch', name: 'Switch' },
-      { id: 'ps4', name: 'PS4' },
-      { id: 'xbox-one---aleksander', name: 'Xbox One - Aleksander' },
+      { id: 'aleksander', name: 'Aleksander' },
       { id: 'aris', name: 'Aris' },
       { id: 'daisuke', name: 'Daisuke' },
       { id: 'hadassa', name: 'Hadassa' },
@@ -8049,16 +7644,13 @@ rosterCount: 10,
   },
   {
     id: 'skullgirls-2nd-encore',
+    releaseYear: 2011,
+    platform: "PS3, Xbox 360, Vita, PS4, Switch, PC",
     name: "Skullgirls: 2nd Encore",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 18,
     characters: [
-      { id: '2011---ps3', name: '2011 - PS3' },
-      { id: 'xbox-360', name: 'Xbox 360' },
-      { id: 'vita', name: 'Vita' },
-      { id: 'ps4', name: 'PS4' },
-      { id: 'switch', name: 'Switch' },
-      { id: 'pc---annie', name: 'PC - Annie' },
+      { id: 'annie', name: 'Annie' },
       { id: 'beowulf', name: 'Beowulf' },
       { id: 'big-band', name: 'Big Band' },
       { id: 'black-dahlia', name: 'Black Dahlia' },
@@ -8072,7 +7664,7 @@ rosterCount: 10,
       { id: 'painwheel', name: 'Painwheel' },
       { id: 'parasoul', name: 'Parasoul' },
       { id: 'peacock', name: 'Peacock' },
-      { id: 'robo-fortune', name: 'Robo-Fortune' },
+      { id: 'robo---fortune', name: 'Robo - Fortune' },
       { id: 'squigly', name: 'Squigly' },
       { id: 'umbrella', name: 'Umbrella' },
       { id: 'valentine', name: 'Valentine' }
@@ -8081,11 +7673,13 @@ rosterCount: 10,
   },
   {
     id: 'super-smash-bros',
+    releaseYear: 1999,
+    platform: "N64",
     name: "Super Smash Bros.",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 12,
     characters: [
-      { id: '1999---n64---captain-falcon', name: '1999 - N64 - Captain Falcon' },
+      { id: 'captain-falcon', name: 'Captain Falcon' },
       { id: 'donkey-kong', name: 'Donkey Kong' },
       { id: 'fox', name: 'Fox' },
       { id: 'jigglypuff', name: 'Jigglypuff' },
@@ -8102,11 +7696,13 @@ rosterCount: 10,
   },
   {
     id: 'super-smash-bros-melee',
+    releaseYear: 2001,
+    platform: "GC",
     name: "Super Smash Bros. Melee",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 26,
     characters: [
-      { id: '2001---gc---bowser', name: '2001 - GC - Bowser' },
+      { id: 'bowser', name: 'Bowser' },
       { id: 'captain-falcon', name: 'Captain Falcon' },
       { id: 'donkey-kong', name: 'Donkey Kong' },
       { id: 'dr-mario', name: 'Dr. Mario' },
@@ -8137,11 +7733,13 @@ rosterCount: 10,
   },
   {
     id: 'super-smash-bros-brawl',
+    releaseYear: 2008,
+    platform: "Wii",
     name: "Super Smash Bros. Brawl",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 38,
     characters: [
-      { id: '2008---wii---bowser', name: '2008 - Wii - Bowser' },
+      { id: 'bowser', name: 'Bowser' },
       { id: 'captain-falcon', name: 'Captain Falcon' },
       { id: 'king-dedede', name: 'King Dedede' },
       { id: 'diddy-kong', name: 'Diddy Kong' },
@@ -8184,11 +7782,13 @@ rosterCount: 10,
   },
   {
     id: 'super-smash-bros-ultimate',
+    releaseYear: 2018,
+    platform: "Switch",
     name: "Super Smash Bros. Ultimate",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 39,
     characters: [
-      { id: '2018---switch---all-previous-banjo-kazooie', name: '2018 - Switch - (All previous) + Banjo & Kazooie' },
+      { id: 'all-previous-banjo-kazooie', name: '(All previous) + Banjo & Kazooie' },
       { id: 'bayonetta', name: 'Bayonetta' },
       { id: 'byleth', name: 'Byleth' },
       { id: 'bowser-jr', name: 'Bowser Jr.' },
@@ -8210,7 +7810,7 @@ rosterCount: 10,
       { id: 'mega-man', name: 'Mega Man' },
       { id: 'mii-brawlergunnerswordfighter', name: 'Mii Brawler/Gunner/Swordfighter' },
       { id: 'min-min', name: 'Min Min' },
-      { id: 'pac-man', name: 'Pac-Man' },
+      { id: 'pac---man', name: 'Pac - Man' },
       { id: 'palutena', name: 'Palutena' },
       { id: 'piranha-plant', name: 'Piranha Plant' },
       { id: 'pyramythra', name: 'Pyra/Mythra' },
@@ -8232,37 +7832,19 @@ rosterCount: 10,
   },
   {
     id: 'thems-fightin-herds',
+    releaseYear: 2020,
+    platform: "PC, Switch, PS4, Xbox One",
     name: "Them's Fightin' Herds",
     isDraft: true,
-    rosterCount: 999,
+    rosterCount: 7,
     characters: [
-      { id: '2024---ps4', name: '2024 - PS4' },
-      { id: 'ps5', name: 'PS5' },
-      { id: 'switch', name: 'Switch' },
-      { id: 'pc---akatsuki', name: 'PC - Akatsuki' },
-      { id: 'byakuya', name: 'Byakuya' },
-      { id: 'carmine', name: 'Carmine' },
-      { id: 'chaos', name: 'Chaos' },
-      { id: 'eltnum', name: 'Eltnum' },
-      { id: 'enkidu', name: 'Enkidu' },
-      { id: 'gordeau', name: 'Gordeau' },
-      { id: 'hilda', name: 'Hilda' },
-      { id: 'hyde', name: 'Hyde' },
-      { id: 'kaguya', name: 'Kaguya' },
-      { id: 'kuon', name: 'Kuon' },
-      { id: 'linne', name: 'Linne' },
-      { id: 'londrekia', name: 'Londrekia' },
-      { id: 'mika', name: 'Mika' },
-      { id: 'nanase', name: 'Nanase' },
-      { id: 'orie', name: 'Orie' },
-      { id: 'phonon', name: 'Phonon' },
-      { id: 'seth', name: 'Seth' },
-      { id: 'tsurugi', name: 'Tsurugi' },
-      { id: 'uzuki', name: 'Uzuki' },
-      { id: 'vatista', name: 'Vatista' },
-      { id: 'wagner', name: 'Wagner' },
-      { id: 'waldstein', name: 'Waldstein' },
-      { id: 'yuzuriha', name: 'Yuzuriha' }
+      { id: 'arizona', name: 'Arizona' },
+      { id: 'oleander', name: 'Oleander' },
+      { id: 'paprika', name: 'Paprika' },
+      { id: 'pom', name: 'Pom' },
+      { id: 'shanty', name: 'Shanty' },
+      { id: 'tianhuo', name: 'Tianhuo' },
+      { id: 'velvet', name: 'Velvet' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
