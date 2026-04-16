@@ -91,6 +91,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
   const [favorites, setFavorites] = useState<string[]>([]);
   const [developerFilter, setDeveloperFilter] = useState<string>('All');
   const [sortBy, setSortBy] = useState<'alpha' | 'date'>('date');
+  const [searchQuery, setSearchQuery] = useState<string>('');
   const { theme } = useTheme();
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
   
@@ -127,6 +128,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
   // Sort favorites first, then apply selected sort order
   const filteredAndSortedGames = [...SUPPORTED_GAMES]
     .filter(g => developerFilter === 'All' || g.developer === developerFilter)
+    .filter(g => searchQuery.trim() === '' || g.name.toLowerCase().includes(searchQuery.toLowerCase()))
     .sort((a, b) => {
       const aFav = favorites.includes(a.id);
       const bFav = favorites.includes(b.id);
@@ -213,81 +215,92 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
           SELECT GAME
         </h1>
 
-        {/* Developer Filter */}
+        {/* Controls Container */}
         <div style={{
           display: 'flex',
-          gap: '0.75rem',
+          gap: '1rem',
           justifyContent: 'center',
           flexWrap: 'wrap',
           maxWidth: '800px',
           margin: '0 auto',
-          marginBottom: '1.25rem',
         }}>
-          {allDevelopers.map(dev => {
-            const isActive = developerFilter === dev;
-            return (
-              <button
-                key={dev}
-                onClick={() => setDeveloperFilter(dev)}
-                style={{
-                  padding: '0.5rem 1.25rem',
-                  borderRadius: 'var(--radius-full)',
-                  border: `1px solid ${isActive ? 'var(--accent-indigo)' : 'var(--border-subtle)'}`,
-                  background: isActive ? 'var(--accent-indigo)' : 'var(--bg-glass)',
-                  color: isActive ? '#ffffff' : 'var(--text-secondary)',
-                  fontSize: '0.9rem',
-                  fontWeight: 600,
-                  cursor: 'pointer',
-                  transition: 'all 0.3s ease',
-                  backdropFilter: 'blur(12px)',
-                }}
-                onMouseOver={e => {
-                  if (!isActive) {
-                    e.currentTarget.style.borderColor = 'var(--text-secondary)';
-                    e.currentTarget.style.color = 'var(--text-primary)';
-                  }
-                }}
-                onMouseOut={e => {
-                  if (!isActive) {
-                    e.currentTarget.style.borderColor = 'var(--border-subtle)';
-                    e.currentTarget.style.color = 'var(--text-secondary)';
-                  }
-                }}
-              >
-                {dev}
-              </button>
-            );
-          })}
-        </div>
+          {/* Search Pill */}
+          <div style={{ position: 'relative' }}>
+            <input
+              type="text"
+              list="game-search-list"
+              placeholder="Search games..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)}
+              style={{
+                padding: '0.6rem 1.25rem',
+                borderRadius: 'var(--radius-full)',
+                border: '1px solid var(--border-subtle)',
+                background: 'var(--bg-glass)',
+                color: 'var(--text-primary)',
+                fontSize: '0.9rem',
+                fontWeight: 600,
+                outline: 'none',
+                minWidth: '220px',
+                backdropFilter: 'blur(12px)',
+                transition: 'all 0.3s ease',
+              }}
+              onFocus={(e) => e.target.style.borderColor = 'var(--accent-indigo)'}
+              onBlur={(e) => e.target.style.borderColor = 'var(--border-subtle)'}
+            />
+            <datalist id="game-search-list">
+              {SUPPORTED_GAMES.map(g => <option key={g.id} value={g.name} />)}
+            </datalist>
+          </div>
 
-        {/* Sort Controls */}
-        <div style={{
-          display: 'flex',
-          gap: '0.5rem',
-          justifyContent: 'center',
-        }}>
-          {['alpha', 'date'].map((sortType) => {
-            const isActive = sortBy === sortType;
-            return (
-              <button
-                key={sortType}
-                onClick={() => setSortBy(sortType as 'alpha' | 'date')}
-                style={{
-                  padding: '0.4rem 1.25rem',
-                  borderRadius: 'var(--radius-full)',
-                  border: `1px solid ${isActive ? 'var(--accent-indigo)' : 'transparent'}`,
-                  background: isActive ? 'var(--accent-indigo)' : 'var(--bg-glass)',
-                  color: isActive ? '#ffffff' : 'var(--text-secondary)',
-                  fontSize: '0.85rem',
-                  fontWeight: 600,
-                  cursor: 'pointer',
-                  transition: 'all 0.3s ease',
-                }}
-              >
-                {sortType === 'alpha' ? 'Sort A-Z' : 'Sort by Date'}
-              </button>
-            )
-          })}
+          {/* Platform / Developer Pill */}
+          <select
+            value={developerFilter}
+            onChange={(e) => setDeveloperFilter(e.target.value)}
+            style={{
+              padding: '0.6rem 1.25rem',
+              borderRadius: 'var(--radius-full)',
+              border: '1px solid var(--border-subtle)',
+              background: 'var(--bg-glass)',
+              color: 'var(--text-primary)',
+              fontSize: '0.9rem',
+              fontWeight: 600,
+              cursor: 'pointer',
+              outline: 'none',
+              backdropFilter: 'blur(12px)',
+              transition: 'all 0.3s ease',
+              appearance: 'none',
+            }}
+          >
+            {allDevelopers.map(dev => (
+              <option key={dev} value={dev} style={{ background: 'var(--bg-card)', color: 'var(--text-primary)' }}>
+                {dev === 'All' ? 'All Platforms' : dev}
+              </option>
+            ))}
+          </select>
+
+          {/* Sort Pill */}
+          <select
+            value={sortBy}
+            onChange={(e) => setSortBy(e.target.value as 'alpha' | 'date')}
+            style={{
+              padding: '0.6rem 1.25rem',
+              borderRadius: 'var(--radius-full)',
+              border: '1px solid var(--border-subtle)',
+              background: 'var(--bg-glass)',
+              color: 'var(--text-primary)',
+              fontSize: '0.9rem',
+              fontWeight: 600,
+              cursor: 'pointer',
+              outline: 'none',
+              backdropFilter: 'blur(12px)',
+              transition: 'all 0.3s ease',
+              appearance: 'none',
+            }}
+          >
+            <option value="date" style={{ background: 'var(--bg-card)', color: 'var(--text-primary)' }}>Sort: Date</option>
+            <option value="alpha" style={{ background: 'var(--bg-card)', color: 'var(--text-primary)' }}>Sort: A-Z</option>
+          </select>
         </div>
       </header>
 
@@ -315,14 +328,14 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
                 background: 'var(--bg-card)',
                 border: '1px solid var(--border-subtle)',
                 borderRadius: 'var(--radius-xl)',
-                padding: '1.5rem 1.25rem',
+                padding: '1.25rem 1rem',
                 display: 'flex',
                 flexDirection: 'column',
                 alignItems: 'center',
                 justifyContent: 'center',
                 cursor: 'pointer',
                 transition: 'all 0.45s cubic-bezier(0.16, 1, 0.3, 1)',
-                minHeight: '150px',
+                minHeight: '110px',
                 overflow: 'hidden',
                 color: 'var(--text-primary)',
                 animation: `fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${100 + index * 80}ms both`,
@@ -429,21 +442,10 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
                 </svg>
               </button>
 
-              {/* Game icon */}
-              <div style={{
-                fontSize: '2.8rem',
-                marginBottom: '0.75rem',
-                filter: 'drop-shadow(0 4px 8px rgba(0,0,0,0.3))',
-                position: 'relative',
-                zIndex: 1,
-              }}>
-                {theme.icon}
-              </div>
-
               {/* Game name */}
               <h2 style={{
                 margin: 0,
-                fontSize: '1.65rem',
+                fontSize: '1.35rem',
                 fontWeight: 800,
                 letterSpacing: '-0.02em',
                 position: 'relative',
@@ -467,7 +469,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
 
               {/* Fighter count badge */}
               <div style={{
-                marginTop: '1.25rem',
+                marginTop: '0.85rem',
                 padding: '0.35rem 1.1rem',
                 borderRadius: 'var(--radius-full)',
                 background: 'var(--bg-badge)',

@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import type { AppView, GameDefinition, Move } from './types';
 import './index.css';
 
@@ -16,16 +16,47 @@ function App() {
   const [controller, setController] = useState<ControllerType>('playstation');
   const [returningFromMoveList, setReturningFromMoveList] = useState(false);
 
+  const navigate = (view: AppView, game: GameDefinition | null = selectedGame, char: string | null = selectedCharacter) => {
+    window.history.pushState({ view, gameId: game?.id, charId: char }, '', '');
+    setSelectedGame(game);
+    setSelectedCharacter(char);
+    setCurrentView(view);
+  };
+
+  useEffect(() => {
+    // Set initial state on load
+    window.history.replaceState({ view: 'game_select', gameId: null, charId: null }, '', '');
+
+    const handlePopState = (event: PopStateEvent) => {
+      if (event.state) {
+        const { view, gameId, charId } = event.state;
+        setCurrentView(view);
+        if (gameId) {
+           import('./games').then(module => {
+             const g = module.SUPPORTED_GAMES.find(g => g.id === gameId);
+             if (g) setSelectedGame(g);
+           });
+        } else {
+           setSelectedGame(null);
+        }
+        if (charId) setSelectedCharacter(charId);
+        else setSelectedCharacter(null);
+      } else {
+        setCurrentView('game_select');
+      }
+    };
+    window.addEventListener('popstate', handlePopState);
+    return () => window.removeEventListener('popstate', handlePopState);
+  }, []);
+
   // Navigation handlers
   const handleSelectGame = (game: GameDefinition) => {
-    setSelectedGame(game);
     setReturningFromMoveList(false);
-    setCurrentView('char_select');
+    navigate('char_select', game);
   };
 
   const handleSelectCharacter = (charId: string) => {
-    setSelectedCharacter(charId);
-    setCurrentView('move_list');
+    navigate('move_list', selectedGame, charId);
   };
 
   const handleToggleMove = (move: Move) => {
@@ -40,11 +71,11 @@ function App() {
   };
 
   const handleLaunchMainScreen = () => {
-    setCurrentView('main_screen');
+    navigate('main_screen');
   };
 
   const handleExitMainScreen = () => {
-    setCurrentView('move_list');
+    navigate('move_list');
   };
 
   // Router switch
@@ -64,8 +95,8 @@ function App() {
          disableInitialAnimation={returningFromMoveList}
          onSetController={setController}
          onSelectCharacter={handleSelectCharacter} 
-         onBack={() => setCurrentView('game_select')} 
-         onHome={() => setCurrentView('game_select')}
+         onBack={() => window.history.back()} 
+         onHome={() => navigate('game_select', null, null)}
       />;
       break;
     case 'move_list':
@@ -83,9 +114,9 @@ function App() {
          onLaunchMainScreen={handleLaunchMainScreen}
          onBack={() => {
            setReturningFromMoveList(true);
-           setCurrentView('char_select');
+           window.history.back();
          }}
-         onHome={() => setCurrentView('game_select')}
+         onHome={() => navigate('game_select', null, null)}
       />;
       break;
     case 'main_screen':
@@ -96,7 +127,7 @@ function App() {
          characterName={charName}
          controller={controller}
          onSetController={setController}
-         onExit={handleExitMainScreen} 
+         onExit={() => window.history.back()} 
       />;
       break;
     default:
