@@ -1,24 +1,130 @@
 {
-  "game": "Guilty Gear (1998)",
+  "name": "Kliff Undersn",
   "character": "Kliff Undersn",
+  "game": "Guilty Gear (1998)",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "id": "hairspear",
+      "name": "Hair Spear",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "hairflower",
+      "name": "Hair Flower",
       "type": "normal",
       "inputs": [
+        "forward",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "flipforward",
+      "name": "Flip Forward",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "hairslapdown",
+      "name": "Hair Slapdown",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "_b"
+      ]
+    },
+    {
+      "id": "lustshaker",
+      "name": "Lust Shaker",
+      "type": "special",
+      "inputs": [
+        "^*_a"
+      ]
+    },
+    {
+      "id": "tandemtop",
+      "name": "Tandem Top",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "_a",
+        "or",
+        "_b"
+      ]
+    },
+    {
+      "id": "badmoon",
+      "name": "Bad Moon",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-forward",
+        "forward",
         "P"
+      ]
+    },
+    {
+      "id": "kousokurakka",
+      "name": "Kousoku Rakka",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "ironsavior",
+      "name": "Iron Savior",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "zenten",
+      "name": "Zen Ten",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "secretgarden",
+      "name": "Secret Garden",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "_b"
+      ]
+    },
+    {
+      "id": "changedirection",
+      "name": "^!change Direction",
+      "type": "special",
+      "inputs": [
+        "_?_b"
       ]
     }
   ]

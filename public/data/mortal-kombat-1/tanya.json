@@ -1,24 +1,62 @@
 {
-  "game": "Mortal Kombat 1",
+  "name": "Tanya",
   "character": "Tanya",
+  "game": "Mortal Kombat 1",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "highgreenbolt",
+      "name": "High Green Bolt",
+      "type": "special",
       "inputs": [
-        "P"
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "HP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "lowgreenbolt",
+      "name": "Low Green Bolt",
       "type": "special",
       "inputs": [
+        "back",
+        "down-back",
         "down",
         "down-forward",
         "forward",
-        "P"
+        "LP"
+      ]
+    },
+    {
+      "id": "shadowuppercut",
+      "name": "Shadow Uppercut",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "shadowkick",
+      "name": "Shadow Kick",
+      "type": "special",
+      "inputs": [
+        "back",
+        "forward",
+        "LK"
+      ]
+    },
+    {
+      "id": "nutpunch",
+      "name": "Nut Punch",
+      "type": "special",
+      "inputs": [
+        "LP",
+        "_G"
       ]
     }
   ]

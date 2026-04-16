@@ -1,5 +1,55 @@
 {
+  "name": "Tina",
   "character": "Tina",
-  "movesList": [],
-  "game": "Dead or Alive 5"
+  "game": "Dead or Alive 5",
+  "movesList": [
+    {
+      "id": "sp_0",
+      "name": "Double Leg Takedown",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "forward",
+        "T"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Mount Position",
+      "type": "special",
+      "inputs": [
+        "down",
+        "T (During Takedown)"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Jab Cross",
+      "type": "special",
+      "inputs": [
+        "P",
+        ",",
+        " ",
+        "P",
+        ",",
+        " ",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "sup_0",
+      "name": "Power Blow",
+      "type": "super",
+      "inputs": [
+        "down-back",
+        "P+K",
+        " ",
+        "or",
+        " ",
+        "back",
+        "P+K (Hold to charge, requires under 50% HP)"
+      ]
+    }
+  ]
 }

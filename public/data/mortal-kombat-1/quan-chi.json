@@ -1,24 +1,56 @@
 {
-  "game": "Mortal Kombat 1",
+  "name": "Quan Chi",
   "character": "Quan Chi",
+  "game": "Mortal Kombat 1",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "hatthrow",
+      "name": "Hat Throw",
+      "type": "special",
       "inputs": [
-        "P"
+        "back",
+        "forward",
+        "LP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "control",
+      "name": "^!control",
       "type": "special",
       "inputs": [
         "down",
-        "down-forward",
-        "forward",
-        "P"
+        "or",
+        "up"
+      ]
+    },
+    {
+      "id": "spinattack",
+      "name": "Spin Attack",
+      "type": "special",
+      "inputs": [
+        "up",
+        "up",
+        "LK",
+        "(^*)"
+      ]
+    },
+    {
+      "id": "teleport",
+      "name": "Teleport",
+      "type": "special",
+      "inputs": [
+        "down",
+        "up"
+      ]
+    },
+    {
+      "id": "torpedokick",
+      "name": "Torpedo Kick",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "HK"
       ]
     }
   ]

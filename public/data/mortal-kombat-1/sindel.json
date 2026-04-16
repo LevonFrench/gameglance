@@ -1,24 +1,50 @@
 {
-  "game": "Mortal Kombat 1",
+  "name": "Sindel",
   "character": "Sindel",
+  "game": "Mortal Kombat 1",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "spear",
+      "name": "Spear",
+      "type": "special",
       "inputs": [
-        "P"
+        "back",
+        "back",
+        "LP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "teleportpunch",
+      "name": "Teleport Punch",
       "type": "special",
       "inputs": [
+        "(_^)",
         "down",
-        "down-forward",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "leggrab",
+      "name": "Leg Grab",
+      "type": "special",
+      "inputs": [
         "forward",
-        "P"
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "LK"
+      ]
+    },
+    {
+      "id": "airthrow",
+      "name": "Air Throw",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "close",
+        "_G"
       ]
     }
   ]

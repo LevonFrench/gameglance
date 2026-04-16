@@ -1,24 +1,85 @@
 {
+  "name": "Bo\\' Rai Cho",
+  "character": "Bo\\' Rai Cho",
   "game": "Mortal Kombat X",
-  "character": "Bo' Rai Cho",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "sp_0",
+      "name": "Spear",
+      "type": "special",
       "inputs": [
-        "P"
+        "back",
+        "forward",
+        "down-back"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "sp_1",
+      "name": "Teleport",
       "type": "special",
       "inputs": [
         "down",
+        "down-back",
+        "back",
         "down-forward",
+        " ",
+        "(",
+        "Air",
+        " ",
+        "OK",
+        ")"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Takedown",
+      "type": "special",
+      "inputs": [
+        "back",
         "forward",
-        "P"
+        "back"
+      ]
+    },
+    {
+      "id": "fin_0",
+      "name": "Stop Ahead",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "back",
+        "forward",
+        "down",
+        " ",
+        "(",
+        "Mid",
+        ")"
+      ]
+    },
+    {
+      "id": "fin_1",
+      "name": "Who's Next?",
+      "type": "unique",
+      "inputs": [
+        "down",
+        "back",
+        "forward",
+        "back",
+        "back",
+        " ",
+        "(",
+        "Mid",
+        ")"
+      ]
+    },
+    {
+      "id": "fin_2",
+      "name": "Get Over Here",
+      "type": "unique",
+      "inputs": [
+        "back",
+        "forward",
+        "down-back",
+        "BL (Final hit must be Spear, over 50% health)"
       ]
     }
   ]

@@ -1,12 +1,38 @@
 {
-  "game": "Virtua Fighter 5 Ultimate Showdown",
+  "name": "Aoi",
   "character": "Aoi",
+  "game": "Virtua Fighter 5 Ultimate Showdown",
   "movesList": [
     {
-      "id": "general-attack",
+      "id": "basic-attack",
       "name": "Basic Attack",
       "type": "normal",
       "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "special-attack",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "super-art",
+      "name": "Super Art",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward",
         "P"
       ]
     }

@@ -1,13 +1,95 @@
 {
-  "game": "Fighting EX Layer",
+  "name": "Doctrine Dark",
   "character": "Doctrine Dark",
+  "game": "Fighting EX Layer",
   "movesList": [
     {
-      "id": "generic-neutral",
-      "name": "Neutral Attack",
+      "id": "neckthrow",
+      "name": "Neck Throw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
+    },
+    {
+      "id": "tsukamihizakick",
+      "name": "Tsukami Hiza Kick",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "lightningknee",
+      "name": "^!lightning Knee",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "surgingrush",
+      "name": "Surging Rush",
       "type": "normal",
       "inputs": [
-        "P"
+        "LP",
+        "LP",
+        "LP",
+        "LP",
+        "LP"
+      ]
+    },
+    {
+      "id": "stepsidekick",
+      "name": "Step Side Kick",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "MK"
+      ]
+    },
+    {
+      "id": "slidingarrow",
+      "name": "Sliding Arrow",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "shootkick",
+      "name": "Shoot Kick",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K",
+        "(x3)"
+      ]
+    },
+    {
+      "id": "crescentkick",
+      "name": "Crescent Kick",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "down",
+        "down-back",
+        "back",
+        "K"
       ]
     }
   ]

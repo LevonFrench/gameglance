@@ -1,39 +1,37 @@
 {
+  "name": "Alice",
+  "character": "Alice",
   "game": "Bloody Roar",
-  "character": "Alice (Rabbit)",
   "movesList": [
     {
-      "id": "sp_0",
-      "name": "Somersault Kick",
-      "type": "special",
-      "inputs": [
-        "down",
-        "up",
-        "K"
-      ]
+      "name": "Rapid Slap",
+      "input": "P, P, P",
+      "type": "Normal"
     },
     {
-      "id": "sp_1",
+      "name": "Alice Kick",
+      "input": "K, K, K",
+      "type": "Normal"
+    },
+    {
+      "name": "Somersault",
+      "input": "28+K",
+      "type": "Special"
+    },
+    {
       "name": "Rabbit Flip",
-      "type": "special",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "P"
-      ]
+      "input": "214+K",
+      "type": "Special"
     },
     {
-      "id": "sp_2",
-      "name": "Bunny Hop",
-      "type": "special",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "K"
-      ]
+      "name": "Beast Claw",
+      "input": "B, B",
+      "type": "Beast"
+    },
+    {
+      "name": "Spiral Rabbit",
+      "input": "236+B",
+      "type": "Beast Special"
     }
-  ],
-  "combosList": []
+  ]
 }

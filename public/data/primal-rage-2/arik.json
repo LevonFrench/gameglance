@@ -1,41 +1,42 @@
 {
-  "game": "Primal Rage 2",
+  "name": "Arik",
   "character": "Arik",
+  "game": "Primal Rage 2",
   "movesList": [
     {
       "name": "Earthquake Stomp",
-      "type": "special",
-      "inputs": [
-        "22+LQ/LF/LP"
-      ]
+      "input": "2, 2 + 4/5/6",
+      "type": "special"
     },
     {
       "name": "Stun Roar",
-      "type": "special",
-      "inputs": [
-        "236+HQ/HF/HP"
-      ]
+      "input": "2, 3, 6 + 1/2/3",
+      "type": "special"
     },
     {
       "name": "Leaping Bone Bash",
-      "type": "special",
-      "inputs": [
-        "28+LQ+LF"
-      ]
+      "input": "2, 8 + 4+5",
+      "type": "special"
     },
     {
       "name": "Cranium Crusher",
-      "type": "special",
-      "inputs": [
-        "623+HQ/HF/HP"
-      ]
+      "input": "2, 6, 3 + 1/2/3",
+      "type": "special"
+    },
+    {
+      "name": "Air Neck Throw",
+      "input": "2+5 in air",
+      "type": "throw"
+    },
+    {
+      "name": "Neck Throw",
+      "input": "6, 4, 2+5",
+      "type": "special"
     },
     {
       "name": "Flesh Eating",
-      "type": "finisher",
-      "inputs": [
-        "HQ+LQ+LF, 2, 8, 2"
-      ]
+      "input": "1+4+5, 2, 8, 2",
+      "type": "extinction"
     }
   ]
 }

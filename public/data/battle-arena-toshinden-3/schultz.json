@@ -1,30 +1,32 @@
 {
   "name": "Schultz",
-  "type": "Rungo Counterpart / Power",
-  "note": "Clone of Rungo Iron.",
-  "moves": {
-    "specials": [
-      {
-        "name": "Power Blast",
-        "input": "236A/B",
-        "type": "Projectile"
-      },
-      {
-        "name": "Batter Up",
-        "input": "623A/B",
-        "type": "Anti-Air"
-      }
-    ],
-    "overdrive": {
-      "name": "Mega Fire Strike",
-      "input": "236236B",
-      "type": "Super"
+  "character": "Schultz",
+  "game": "Battle Arena Toshinden 3",
+  "movesList": [
+    {
+      "name": "Shield Spin",
+      "input": "236+WS/SS",
+      "type": "Special"
     },
-    "desperation": {
-      "name": "Daichi Hyakusai",
-      "input": "412363214C",
+    {
+      "name": "Hover Strike",
+      "input": "214+WS/SS",
+      "type": "Special"
+    },
+    {
+      "name": "Eye Laser",
+      "input": "623+WS/SS",
+      "type": "Special"
+    },
+    {
+      "name": "Grand Laser",
+      "input": "236236+WS",
+      "type": "Overdrive"
+    },
+    {
+      "name": "Chaos Force",
+      "input": "412364+SS",
       "type": "Desperation"
     }
-  },
-  "character": "Schultz"
+  ]
 }

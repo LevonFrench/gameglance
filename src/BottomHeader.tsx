@@ -1,8 +1,7 @@
 import React from 'react';
-import { ThemeToggle } from './ThemeToggle';
 import type { ControllerType } from './glyphMap';
 
-export type CardTheme = 'default' | 'genesis' | 'snes' | 'cps2' | 'mvs' | 'aes';
+export type CardTheme = 'default-dark' | 'default-light' | 'genesis' | 'snes' | 'cps2' | 'mvs' | 'aes';
 
 interface Props {
   controller: ControllerType;
@@ -58,7 +57,8 @@ export const BottomHeader: React.FC<Props> = ({
               transition: 'border-color 0.2s',
             }}
           >
-            <option value="default" style={{ background: 'var(--option-bg)' }}>Default Theme</option>
+            <option value="default-dark" style={{ background: 'var(--option-bg)' }}>Default Dark</option>
+            <option value="default-light" style={{ background: 'var(--option-bg)' }}>Default Light</option>
             <option value="genesis" style={{ background: 'var(--option-bg)' }}>Sega Genesis</option>
             <option value="snes" style={{ background: 'var(--option-bg)' }}>SNES Cart</option>
             <option value="cps2" style={{ background: 'var(--option-bg)' }}>CPS2 Board</option>
@@ -96,13 +96,7 @@ export const BottomHeader: React.FC<Props> = ({
           </select>
         </div>
 
-        <div style={{ width: '1px', height: '20px', background: 'var(--border-subtle)' }} />
 
-        {/* App Theme Setting */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-           <label style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', fontWeight: 500 }}>App Mode:</label>
-           <ThemeToggle />
-        </div>
 
       </div>
 

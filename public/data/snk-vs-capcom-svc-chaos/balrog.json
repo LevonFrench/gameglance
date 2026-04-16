@@ -1,15 +1,273 @@
 {
-  "game": "SNK vs. Capcom: SVC Chaos",
+  "name": "Balrog",
   "character": "Balrog",
+  "game": "SNK vs. Capcom: SVC Chaos",
   "movesList": [
     {
-      "id": "unknown-1",
-      "name": "Coming Soon",
+      "id": "upper",
+      "name": "(- - \u2500) Upper",
+      "type": "throw",
+      "inputs": [
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "tensoubustershot",
+      "name": "(- - \u2500) Tensou Buster Shot",
+      "type": "throw",
+      "inputs": [
+        "HP",
+        "HK"
+      ]
+    },
+    {
+      "id": "3danzuki",
+      "name": "(- - \u2500) 3-dan Zuki",
+      "type": "normal",
+      "inputs": [
+        "forward",
+        "K",
+        "K",
+        "K"
+      ]
+    },
+    {
+      "id": "ojouhouzuki",
+      "name": "(- - o) Jouhou Zuki",
+      "type": "normal",
+      "inputs": [
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "onanameshitazuki",
+      "name": "(- - o) Naname Shitazuki",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "iosliding",
+      "name": "(- i o) Sliding",
+      "type": "normal",
+      "inputs": [
+        "down-forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "jumpkahouzuki",
+      "name": "(- - \u2500) Jump Kahou Zuki",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "K"
+      ]
+    },
+    {
+      "id": "sankakutobi",
+      "name": "(- - \u2500) Sankaku Tobi",
+      "type": "normal",
+      "inputs": [
+        "jump",
+        "against",
+        "the",
+        "wall",
+        "up-forward"
+      ]
+    },
+    {
+      "id": "ibustershot",
+      "name": "(- i \u2500) Buster Shot",
       "type": "special",
       "inputs": [
-        "?"
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "ichargeshot",
+      "name": "(- i \u2500) Charge Shot",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "down",
+        "down-forward",
+        "forward",
+        "_O",
+        "HP"
+      ]
+    },
+    {
+      "id": "iozedsaber",
+      "name": "(! i o) Zed Saber",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "iochargezedsaber",
+      "name": "(! i o) Charge Zed Saber",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "_O",
+        "HK",
+        "(\"O\"",
+        "in",
+        "Sliding)"
+      ]
+    },
+    {
+      "id": "iotriplesaber",
+      "name": "(- i o) Triple Saber",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P",
+        "(x3)"
+      ]
+    },
+    {
+      "id": "shieldboomerang",
+      "name": "(- - \u2500) Shield Boomerang",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "itriplerod",
+      "name": "(- i \u2500) Triple Rod",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "forward",
+        "down",
+        "down-forward",
+        "K"
+      ]
+    },
+    {
+      "id": "ichargetriplerod",
+      "name": "(- i \u2500) Charge Triple Rod",
+      "type": "special",
+      "inputs": [
+        "(_^)",
+        "forward",
+        "down",
+        "down-forward",
+        "_O",
+        "HK"
+      ]
+    },
+    {
+      "id": "irregularhunt",
+      "name": "(- - \u2500) Irregular Hunt",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "cyberelfsupport",
+      "name": "(- - \u2500) Cyber Elf: Support",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "P",
+        "(3",
+        "for",
+        "match)"
+      ]
+    },
+    {
+      "id": "cyberelfsupport",
+      "name": "(- - \u2500) Cyber Elf: Support",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "K",
+        "(absorb",
+        "projectile)",
+        "(3",
+        "for",
+        "match)"
+      ]
+    },
+    {
+      "id": "cyberelfsupport",
+      "name": "(- - \u2500) Cyber Elf: Support",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "HP",
+        "(3",
+        "for",
+        "match)"
+      ]
+    },
+    {
+      "id": "cyberelfsupport",
+      "name": "(- - \u2500) Cyber Elf: Support",
+      "type": "special",
+      "inputs": [
+        "^4",
+        "forward",
+        "HK",
+        "(3",
+        "for",
+        "match)"
+      ]
+    },
+    {
+      "id": "cyberelfbakudansetchi",
+      "name": "(- - \u2500) Cyber Elf: Bakudan Setchi",
+      "type": "special",
+      "inputs": [
+        "^2",
+        "up",
+        "P",
+        "or",
+        "K",
+        "(3",
+        "for",
+        "match)"
       ]
     }
-  ],
-  "combosList": []
+  ]
 }

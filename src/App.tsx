@@ -9,15 +9,19 @@ import { GameGlanceMainView } from './GameGlanceView';
 import type { ControllerType } from './glyphMap';
 import { BottomHeader } from './BottomHeader';
 import type { CardTheme } from './BottomHeader';
+import { useTheme } from './ThemeContext';
 
 function App() {
+  const { setTheme } = useTheme();
   const [currentView, setCurrentView] = useState<AppView>('game_select');
   const [selectedGame, setSelectedGame] = useState<GameDefinition | null>(null);
   const [selectedCharacter, setSelectedCharacter] = useState<string | null>(null);
   const [selectedPlaylist, setSelectedPlaylist] = useState<Move[]>([]);
   const [controller, setController] = useState<ControllerType>('playstation');
   const [cardTheme, setCardTheme] = useState<CardTheme>(() => {
-    return (localStorage.getItem('gg_card_theme') as CardTheme) || 'default';
+    const val = localStorage.getItem('gg_card_theme') as string;
+    if (val === 'default' || !val) return 'default-dark';
+    return val as CardTheme;
   });
   const [returningFromMoveList, setReturningFromMoveList] = useState(false);
   const [disableGameSelectAnimation, setDisableGameSelectAnimation] = useState(false);
@@ -57,7 +61,12 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem('gg_card_theme', cardTheme);
-  }, [cardTheme]);
+    if (cardTheme === 'default-light') {
+      setTheme('light');
+    } else {
+      setTheme('dark');
+    }
+  }, [cardTheme, setTheme]);
 
   // Navigation handlers
   const handleSelectGame = (game: GameDefinition) => {

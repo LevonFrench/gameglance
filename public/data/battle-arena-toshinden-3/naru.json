@@ -1,10 +1,11 @@
 {
-  "game": "Battle Arena Toshinden 3",
+  "name": "Naru",
   "character": "Naru",
+  "game": "Battle Arena Toshinden 3",
   "movesList": [
     {
-      "name": "Naru Kick",
-      "input": "236 + WK/SK",
+      "name": "Blade Dash",
+      "input": "236 + WS/SS",
       "inputs": [
         "down",
         "down-forward",
@@ -13,16 +14,35 @@
         "+",
         " ",
         "W",
-        "K",
+        "S",
         "/",
         "S",
-        "K"
+        "S"
       ],
       "type": "special",
-      "id": "naru-kick"
+      "id": "blade-dash"
     },
     {
-      "name": "Naru Special (OD)",
+      "name": "Rising Blade",
+      "input": "623 + WS/SS",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        " ",
+        "+",
+        " ",
+        "W",
+        "S",
+        "/",
+        "S",
+        "S"
+      ],
+      "type": "special",
+      "id": "rising-blade"
+    },
+    {
+      "name": "Nagisa Special (OD)",
       "input": "236236 + SS",
       "inputs": [
         "down",
@@ -38,8 +58,7 @@
         "S"
       ],
       "type": "special",
-      "id": "naru-special-(od)"
+      "id": "nagisa-special-(od)"
     }
-  ],
-  "combosList": []
+  ]
 }

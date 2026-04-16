@@ -1,69 +1,32 @@
 {
-  "game": "Eternal Champions",
+  "name": "Jonathan Blade",
   "character": "Jonathan Blade",
+  "game": "Eternal Champions",
   "movesList": [
     {
       "name": "Stun Beam",
-      "type": "special",
-      "inputs": [
-        "[4]6+Z"
-      ]
-    },
-    {
-      "name": "Tracking Blade",
-      "type": "special",
-      "inputs": [
-        "[4]6+X+Y"
-      ]
+      "input": "46+Z",
+      "type": "Special"
     },
     {
       "name": "Straight Blade",
-      "type": "special",
-      "inputs": [
-        "[4]6+Y+Z"
-      ]
+      "input": "46+YZ",
+      "type": "Special"
     },
     {
       "name": "Wild Fury Attack",
-      "type": "special",
-      "inputs": [
-        "A+B+C"
-      ]
+      "input": "A+B+C",
+      "type": "Special"
     },
     {
-      "name": "Personal Shield",
-      "type": "special",
-      "inputs": [
-        "X+Y+Z"
-      ]
+      "name": "Tracking Blade",
+      "input": "C, 46+XY",
+      "type": "Special"
     },
     {
-      "name": "Projectile Containment Field",
-      "type": "special",
-      "inputs": [
-        "A+B"
-      ]
-    },
-    {
-      "name": "Backfire",
-      "type": "special",
-      "inputs": [
-        "A+C"
-      ]
-    },
-    {
-      "name": "Power Drain",
-      "type": "special",
-      "inputs": [
-        "[4]6+C"
-      ]
-    },
-    {
-      "name": "Vendetta",
-      "type": "special",
-      "inputs": [
-        "2,2,6,6,X"
-      ]
+      "name": "Slice n Dice",
+      "input": "236+C",
+      "type": "Skill"
     }
   ]
 }

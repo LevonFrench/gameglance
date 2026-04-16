@@ -1,24 +1,49 @@
 {
-  "game": "Mortal Kombat 1",
+  "name": "Li Mei",
   "character": "Li Mei",
+  "game": "Mortal Kombat 1",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "highfireball",
+      "name": "High Fireball",
+      "type": "special",
       "inputs": [
-        "P"
+        "(_^)",
+        "forward",
+        "forward",
+        "HP"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "lowfireball",
+      "name": "Low Fireball",
       "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
         "forward",
-        "P"
+        "forward",
+        "LP"
+      ]
+    },
+    {
+      "id": "flyingkick",
+      "name": "Flying Kick",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "bicyclekick",
+      "name": "Bicycle Kick",
+      "type": "special",
+      "inputs": [
+        "_O",
+        "LK",
+        "for",
+        "3",
+        "seconds"
       ]
     }
   ]

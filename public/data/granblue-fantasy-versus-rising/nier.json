@@ -1,24 +1,64 @@
 {
-  "game": "Granblue Fantasy Versus: Rising",
+  "name": "Nier",
   "character": "Nier",
+  "game": "Granblue Fantasy Versus: Rising",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "sp_0",
+      "name": "Verpanzer",
+      "type": "special",
       "inputs": [
-        "P"
+        "neutral",
+        "S"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "sp_1",
+      "name": "Schwarze Faenge",
       "type": "special",
+      "inputs": [
+        "forward",
+        "S"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Manigance",
+      "type": "special",
+      "inputs": [
+        "back",
+        "S (Attack buff)"
+      ]
+    },
+    {
+      "id": "sp_3",
+      "name": "Orkan",
+      "type": "special",
+      "inputs": [
+        "down",
+        "S"
+      ]
+    },
+    {
+      "id": "sup_0",
+      "name": "Schwarzer Regen",
+      "type": "super",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "S"
+      ]
+    },
+    {
+      "id": "sup_1",
+      "name": "Galatine",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "S+U"
       ]
     }
   ]

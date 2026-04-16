@@ -1,35 +1,37 @@
 {
   "name": "Atwiki",
-  "type": "Leon Counterpart / Katana",
-  "note": "Clone of Leon with enhanced mobility.",
-  "moves": {
-    "specials": [
-      {
-        "name": "Nitrogen Breath",
-        "input": "236A/B",
-        "type": "Projectile"
-      },
-      {
-        "name": "Midnight Beyond",
-        "input": "623A/B",
-        "type": "Anti-Air"
-      },
-      {
-        "name": "Skull Crush",
-        "input": "214A/B",
-        "type": "Overhead"
-      }
-    ],
-    "overdrive": {
-      "name": "Nitrogen Blast",
-      "input": "236236B",
-      "type": "Super"
+  "character": "Atwiki",
+  "game": "Battle Arena Toshinden 3",
+  "movesList": [
+    {
+      "name": "Tornado Toss",
+      "input": "236+WS/SS",
+      "type": "Special"
     },
-    "desperation": {
-      "name": "Desperate Knuckle",
-      "input": "632141236B",
+    {
+      "name": "Windmill Kick",
+      "input": "623+WK/SK",
+      "type": "Special"
+    },
+    {
+      "name": "Flying Ribbon",
+      "input": "214+WS/SS",
+      "type": "Special"
+    },
+    {
+      "name": "Air Dive",
+      "input": "j.236+WK/SK",
+      "type": "Special"
+    },
+    {
+      "name": "French Kiss",
+      "input": "236236+WS",
+      "type": "Overdrive"
+    },
+    {
+      "name": "Grand Finale",
+      "input": "412364+SS",
       "type": "Desperation"
     }
-  },
-  "character": "Atwiki"
+  ]
 }

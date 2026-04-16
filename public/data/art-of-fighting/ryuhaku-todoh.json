@@ -1,14 +1,114 @@
 {
-  "game": "Art of Fighting",
+  "name": "Ryuhaku Todoh",
   "character": "Ryuhaku Todoh",
+  "game": "Art of Fighting",
   "movesList": [
     {
-      "id": "kasane-ate",
-      "name": "Kasane Ate",
+      "name": "Uppercut",
+      "type": "normal",
+      "inputs": [
+        "A+C"
+      ],
+      "id": "uppercut"
+    },
+    {
+      "name": "Low Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "B+C"
+      ],
+      "id": "low-heavy-kick"
+    },
+    {
+      "name": "Super Drop Kick",
       "type": "special",
       "inputs": [
-        "236A"
-      ]
+        "[B] (Hold B, Release)"
+      ],
+      "id": "super-drop-kick"
+    },
+    {
+      "name": "Knuckle Part",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "+A"
+      ],
+      "id": "knuckle-part"
+    },
+    {
+      "name": "Dynamic Dive",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "+A"
+      ],
+      "id": "dynamic-dive"
+    },
+    {
+      "name": "Bomber Dance",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "+A"
+      ],
+      "id": "bomber-dance"
+    },
+    {
+      "name": "Dynamite Lariat",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "back",
+        "forward",
+        "+A"
+      ],
+      "id": "dynamite-lariat"
+    },
+    {
+      "name": "Brain Shocker Butt",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "back",
+        "forward",
+        "+B"
+      ],
+      "id": "brain-shocker-butt"
+    },
+    {
+      "name": "Super Hip Attack",
+      "type": "super",
+      "inputs": [
+        "back",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "+B"
+      ],
+      "id": "super-hip-attack"
+    },
+    {
+      "name": "Hell Dive",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward",
+        "+A"
+      ],
+      "id": "hell-dive"
     }
   ]
 }

@@ -1,5 +1,56 @@
 {
+  "name": "Kain",
   "character": "Kain",
-  "movesList": [],
-  "game": "Golden Axe: The Duel"
+  "game": "Golden Axe: The Duel",
+  "movesList": [
+    {
+      "id": "bombsaway",
+      "name": "Bombs Away",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP",
+        "or",
+        "HK"
+      ]
+    },
+    {
+      "id": "minibomb",
+      "name": "Mini Bomb",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "megabomb",
+      "name": "Mega Bomb",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "K",
+        "(_O)"
+      ]
+    },
+    {
+      "id": "dynamight",
+      "name": "Dyna Might",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    }
+  ]
 }

@@ -21,8 +21,9 @@ GameGlance currently supports the following titles:
 - Capcom Fighting Jam
 - Capcom vs. SNK 2: Mark of the Millennium 2001
 - Capcom vs. SNK: Millennium Fight 2000 Pro
-- ClayFighter
+- City Of The Wolves
 - Cyberbots: Full Metal Madness
+- DNF Duel
 - Darkstalkers: The Night Warriors
 - Dead or Alive
 - Dead or Alive 2
@@ -30,16 +31,11 @@ GameGlance currently supports the following titles:
 - Dead or Alive 4
 - Dead or Alive 5
 - Dead or Alive 6
-- DNF Duel
 - Dragon Ball FighterZ
-- Dragon Ball Z: Budokai 3
-- Dragon Ball Z: Budokai Tenkaichi 3
-- Eternal Champions
+- Fatal Fury
 - Fatal Fury 2
 - Fatal Fury 3: Road to the Final Victory
 - Fatal Fury Special
-- Fatal Fury: City of the Wolves
-- Fatal Fury: King of Fighters
 - Fighters Megamix
 - Fighting EX Layer
 - Fighting Vipers
@@ -49,52 +45,44 @@ GameGlance currently supports the following titles:
 - Garou: Mark of the Wolves
 - Golden Axe: The Duel
 - Granblue Fantasy Versus: Rising
-- Groove on Fight
 - Groove On Fight (Power Instinct 3)
+- Groove on Fight
 - Guilty Gear (1998)
 - Guilty Gear -Strive-
-- Guilty Gear 2: Overture
 - Guilty Gear X
-- Guilty Gear Xrd -SIGN-
-- Guilty Gear Xrd REV 2
 - Guilty Gear XX Accent Core Plus R
+- Guilty Gear Xrd REV 2
 - Hyper Street Fighter II
-- Hyper Street Fighter II: The Anniversary Edition
-- Injustice 2
-- Injustice: Gods Among Us
 - Invincible VS Beta
-- JoJo
+- JoJo's Bizarre Adventure: Heritage for the Future (JJBA: HFTF)
 - Kakuto Chojin: Back Alley Brutal
 - Kasumi Ninja
 - Killer Instinct (1994)
 - Killer Instinct (2013)
+- Killer Instinct 1994
 - Killer Instinct 2 / Gold
+- Killer Instinct 2 Gold
+- Killer Instinct 2013
 - Kizuna Encounter: Super Tag Battle
 - Last Bronx
+- MSH vs Street Fighter
 - Marvel Super Heroes
 - Marvel Super Heroes vs. Street Fighter
 - Marvel Toukon: Fighting Souls (Beta Version)
 - Marvel vs. Capcom 2
+- Marvel vs. Capcom 2: New Age of Heroes
 - Marvel vs. Capcom: Clash of Super Heroes
 - Marvel vs. Capcom: Infinite
 - Matrimelee (Power Instinct Matrimelee)
-- Melty Blood: Actress Again Current Code
-- Melty Blood: Type Lumina
 - Mortal Kombat (2011)
 - Mortal Kombat 1
-- Mortal Kombat 11
-- Mortal Kombat 3
-- Mortal Kombat 4
 - Mortal Kombat II
 - Mortal Kombat X
-- Mortal Kombat: Armageddon
-- Mortal Kombat: Deadly Alliance
 - Mortal Kombat: Deception
 - Night Warriors: Darkstalkers
 - Ninja Master
 - Persona 4 Arena Ultimax
 - Plasma Sword: Nightmare of Bilstein
-- Pocket Bravery
 - Pocket Fighter
 - Primal Rage
 - Primal Rage 2
@@ -106,81 +94,46 @@ GameGlance currently supports the following titles:
 - Real Bout Fatal Fury
 - Real Bout Fatal Fury 2: The Newcomers
 - Real Bout Fatal Fury Special
-- Red Earth (Warzard)
+- SNK Heroines: Tag Team Frenzy
+- SNK vs. Capcom: SVC Chaos
 - Samurai Shodown
 - Samurai Shodown (2019)
 - Samurai Shodown II
 - Samurai Shodown III: Blades of Blood
 - Samurai Shodown IV: Amakusa
-- Samurai Shodown IV: Amakusa
 - Samurai Shodown V
 - Samurai Shodown V Special
-- Savage Reign (Fu
-- Skullgirls: 2nd Encore
-- SNK Heroines: Tag Team Frenzy
-- SNK vs. Capcom: SVC Chaos
+- Savage Reign (Fu'un Mokushiroku: Kakutou Sousei)
 - Soul Calibur
 - Soul Edge (Soul Blade)
-- SoulCalibur
-- SoulCalibur II
-- SoulCalibur III
-- SoulCalibur IV
-- SoulCalibur V
-- SoulCalibur VI
 - Street Fighter 6
 - Street Fighter Alpha 1
 - Street Fighter Alpha 2
 - Street Fighter Alpha 3
-- Street Fighter Alpha: Warriors
 - Street Fighter EX3
-- Street Fighter II: Champion Edition
-- Street Fighter II: Hyper Fighting
 - Street Fighter III: 2nd Impact - Giant Attack
-- Street Fighter III: 3rd Strike - Fight for the Future
 - Street Fighter III: New Generation
-- Street Fighter IV
 - Street Fighter V: Champion Edition
-- Super Smash Bros.
-- Super Smash Bros. Brawl
-- Super Smash Bros. Melee
-- Super Smash Bros. Ultimate
 - Super Street Fighter II Turbo
 - Super Street Fighter II: The New Challengers
-- Super Street Fighter IV
 - Tao Feng: Fist of the Lotus
 - Tatsunoko vs. Capcom: Ultimate All-Stars
 - Tekken 1
 - Tekken 2
-- Tekken 3
-- Tekken 4
-- Tekken 5
-- Tekken 6
-- Tekken 7
 - Tekken 8
-- Tekken Tag Tournament
-- Tekken Tag Tournament 2
-- The King of Fighters
-- The King of Fighters
-- The King of Fighters
-- The King of Fighters
-- The King of Fighters
-- The King of Fighters
+- The King of Fighters '94
 - The King of Fighters 2000
 - The King of Fighters 2001
 - The King of Fighters 2002
 - The King of Fighters 2003
-- The King of Fighters XI
-- The King of Fighters XII
 - The King of Fighters XIII
 - The King of Fighters XIV
 - The King of Fighters XV
 - The King of Fighters: Maximum Impact
 - The King of Fighters: Maximum Impact 2 (KOF 2006)
-- The King of Fighters: Maximum Impact Regulation
-- The King of Fighters: Maximum Impact Regulation
+- The King of Fighters: Maximum Impact Regulation 'A'
 - The Last Blade
 - The Last Blade 2
-- Them
 - Ultimate Marvel vs. Capcom 3
 - Ultimate Mortal Kombat 3
 - Ultra Street Fighter IV
@@ -196,7 +149,6 @@ GameGlance currently supports the following titles:
 - Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer)
 - Waku Waku 7
 - Way of the Warrior
-- WeaponLord
 - World Heroes
 - World Heroes 2
 - World Heroes 2 Jet

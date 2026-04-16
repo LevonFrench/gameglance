@@ -1,24 +1,69 @@
 {
-  "game": "Ultimate Mortal Kombat 3",
+  "name": "Rain",
   "character": "Rain",
+  "game": "Ultimate Mortal Kombat 3",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
-      "inputs": [
-        "P"
-      ]
-    },
-    {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "knifethrow",
+      "name": "Knife Throw",
       "type": "special",
       "inputs": [
         "down",
-        "down-forward",
+        "back",
+        "HP"
+      ]
+    },
+    {
+      "id": "knifeuppercut",
+      "name": "Knife Uppercut",
+      "type": "special",
+      "inputs": [
+        "down",
         "forward",
-        "P"
+        "HP"
+      ]
+    },
+    {
+      "id": "cannonball",
+      "name": "Cannonball",
+      "type": "special",
+      "inputs": [
+        "_O",
+        "LK",
+        "for",
+        "2",
+        "seconds"
+      ]
+    },
+    {
+      "id": "upwardcannonball",
+      "name": "Upward Cannonball",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "forward",
+        "HK"
+      ]
+    },
+    {
+      "id": "neckchoke",
+      "name": "Neck Choke",
+      "type": "special",
+      "inputs": [
+        "down",
+        "forward",
+        "LP"
+      ]
+    },
+    {
+      "id": "airthrow",
+      "name": "Air Throw",
+      "type": "special",
+      "inputs": [
+        "_^",
+        "close",
+        "_G"
       ]
     }
   ]

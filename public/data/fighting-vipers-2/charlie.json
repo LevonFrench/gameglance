@@ -1,26 +1,40 @@
 {
-  "game": "Fighting Vipers 2",
+  "name": "Charlie",
   "character": "Charlie",
+  "game": "Fighting Vipers 2",
   "movesList": [
     {
-      "id": "sp_0",
-      "name": "BMX Bash",
-      "type": "special",
+      "id": "basic-attack",
+      "name": "Basic Attack",
+      "type": "normal",
       "inputs": [
-        "forward",
-        "forward",
-        "K"
+        "P"
       ]
     },
     {
-      "id": "sp_1",
-      "name": "Wheelie",
+      "id": "special-attack",
+      "name": "Special Attack",
       "type": "special",
       "inputs": [
         "down",
-        "P+K"
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "super-art",
+      "name": "Super Art",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
       ]
     }
-  ],
-  "combosList": []
+  ]
 }

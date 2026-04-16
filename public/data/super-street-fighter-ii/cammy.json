@@ -1,18 +1,99 @@
 {
   "name": "Cammy",
-  "special_moves": [
+  "character": "Cammy",
+  "game": "Super Street Fighter II: The New Challengers",
+  "movesList": [
     {
-      "name": "Spiral Arrow",
-      "input": "236 + K"
+      "id": "yogasmash",
+      "name": "Yoga Smash",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "MP"
+      ]
     },
     {
-      "name": "Cannon Spike",
-      "input": "623 + K"
+      "id": "yogathrow",
+      "name": "Yoga Throw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
     },
     {
-      "name": "Spin Knuckle",
-      "input": "41236 + P"
+      "id": "drillzutsuki",
+      "name": "Drill Zutsuki",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HP"
+      ]
+    },
+    {
+      "id": "drillkick",
+      "name": "Drill Kick",
+      "type": "normal",
+      "inputs": [
+        "_^",
+        "down",
+        "HK"
+      ]
+    },
+    {
+      "id": "yogafire",
+      "name": "Yoga Fire",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "yogaflame",
+      "name": "Yoga Flame",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "yogateleportzenpou",
+      "name": "Yoga Teleport: Zenpou",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "^U",
+        "or",
+        "^T"
+      ]
+    },
+    {
+      "id": "yogateleportkouhou",
+      "name": "Yoga Teleport: Kouhou",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down",
+        "down-back",
+        "^U",
+        "or",
+        "^T"
+      ]
     }
-  ],
-  "game": "Super Street Fighter II: The New Challengers"
+  ]
 }

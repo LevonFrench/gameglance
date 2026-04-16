@@ -1,23 +1,72 @@
 {
-  "game": "Matrimelee (Power Instinct Matrimelee)",
+  "name": "Clara Hananokoji",
   "character": "Clara Hananokoji",
+  "game": "Matrimelee (Power Instinct Matrimelee)",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "katatedepoi",
+      "name": "Katate De Poi",
+      "type": "throw",
       "inputs": [
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "kubiotoshi",
+      "name": "Kubi Otoshi",
+      "type": "throw",
+      "inputs": [
+        "_^",
+        "back",
+        "or",
+        "forward",
+        "HP"
+      ]
+    },
+    {
+      "id": "gokuenshouryudan",
+      "name": "Gokuen Shou Ryudan",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
         "P"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "ryuuenha",
+      "name": "Ryuu En Ha",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "seienreshouzan",
+      "name": "Seien Reshou Zan",
+      "type": "special",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "shinkuusenpuuzan",
+      "name": "Shinkuu Senpuu Zan",
+      "type": "special",
+      "inputs": [
+        "_^_x",
         "P"
       ]
     }

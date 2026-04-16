@@ -1,21 +1,39 @@
 {
-  "game": "Battle Arena Toshinden 3",
+  "name": "Abel",
   "character": "Abel",
+  "game": "Battle Arena Toshinden 3",
   "movesList": [
     {
-      "id": "gravity-blast",
-      "name": "Gravity Blast",
-      "type": "special",
+      "id": "basic-attack",
+      "name": "Basic Attack",
+      "type": "normal",
       "inputs": [
-        "236A"
+        "P"
       ]
     },
     {
-      "id": "death-grip",
-      "name": "Death Grip",
+      "id": "special-attack",
+      "name": "Special Attack",
       "type": "special",
       "inputs": [
-        "623A"
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "super-art",
+      "name": "Super Art",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
       ]
     }
   ]

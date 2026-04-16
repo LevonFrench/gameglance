@@ -1,24 +1,78 @@
 {
-  "game": "Tatsunoko vs. Capcom: Ultimate All-Stars",
+  "name": "Hakushon Daimao",
   "character": "Hakushon Daimao",
+  "game": "Tatsunoko vs. Capcom: Ultimate All-Stars",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
-      "inputs": [
-        "P"
-      ]
-    },
-    {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "sp_0",
+      "name": "Space Lancer",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
-        "P"
+        "Attack"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Tekka Winch",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "Attack"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Gatling Lancer",
+      "type": "special",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "Attack"
+      ]
+    },
+    {
+      "id": "sup_0",
+      "name": "Voltekka",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "AT"
+      ]
+    },
+    {
+      "id": "sup_1",
+      "name": "Twin Lancer",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "AT"
+      ]
+    },
+    {
+      "id": "sup_2",
+      "name": "Space Lancer Dash",
+      "type": "super",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "AT",
+        " ",
+        "(",
+        "Level",
+        " ",
+        "down-forward",
+        ")"
       ]
     }
   ]

@@ -1,13 +1,39 @@
 {
-  "game": "Fighting EX Layer",
+  "name": "Sanane",
   "character": "Sanane",
+  "game": "Fighting EX Layer",
   "movesList": [
     {
-      "id": "generic-neutral",
-      "name": "Neutral Attack",
-      "type": "normal",
+      "id": "sp_0",
+      "name": "Shisou Ken",
+      "type": "special",
       "inputs": [
+        "down",
+        "down-forward",
+        "forward",
         "P"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Shinkuu Geki",
+      "type": "super",
+      "inputs": [
+        "forward",
+        "down",
+        "down-forward",
+        "P"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Ryuusui",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
       ]
     }
   ]

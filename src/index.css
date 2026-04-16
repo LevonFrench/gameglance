@@ -166,7 +166,6 @@ html {
 }
 
 body {
-  font-family: 'Outfit', system-ui, -apple-system, sans-serif;
   background-color: var(--bg-primary);
   color: var(--text-primary);
   overflow-x: hidden;
@@ -193,13 +192,11 @@ body::before {
 
 /* ── Typography ────────────────────────────────────── */
 h1, h2, h3, h4, h5, h6 {
-  font-family: 'Outfit', system-ui, sans-serif;
   font-weight: 700;
   letter-spacing: -0.02em;
 }
 
 .font-mono {
-  font-family: 'JetBrains Mono', 'Courier New', monospace;
 }
 
 /* ── Scrollbar ─────────────────────────────────────── */
@@ -486,7 +483,9 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Ensure text stays visible on top of the label */
 [data-card-theme="genesis"] button[id^="game-card-"] > *,
-[data-card-theme="genesis"] button[id^="char-card-"] > *,
+[data-card-theme="genesis"] button[id^="game-card-"] > *,
+[data-card-theme="genesis"] button[id^="game-card-"] > *,
+  [data-card-theme="genesis"] button[id^="char-card-"] > *,
 [data-card-theme="genesis"] div[id^="move-"] > * {
   z-index: 1;
   position: relative;
@@ -512,7 +511,6 @@ h1, h2, h3, h4, h5, h6 {
 
 [data-card-theme="genesis"] h2,
 [data-card-theme="genesis"] .font-mono {
-  font-family: 'JetBrains Mono', 'Courier New', monospace;
   font-weight: 800;
   letter-spacing: 0.05em;
   color: #fff !important;
@@ -564,7 +562,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 6px;
   box-shadow: inset 0 2px 2px rgba(0,0,0,0.4), inset 0 -1px 1px rgba(255,255,255,0.8);
   pointer-events: none;
-  z-index: 1;
+  z-index: 0;
 }
 
 /* Rounded glossy label */
@@ -586,11 +584,13 @@ h1, h2, h3, h4, h5, h6 {
   border-bottom-right-radius: 12px;
   box-shadow: 0 1px 3px rgba(0,0,0,0.8);
   pointer-events: none;
-  z-index: 1;
+  z-index: 0;
 }
 
 [data-card-theme="snes"] button[id^="game-card-"] > *,
-[data-card-theme="snes"] button[id^="char-card-"] > *,
+[data-card-theme="snes"] button[id^="game-card-"] > *,
+[data-card-theme="snes"] button[id^="game-card-"] > *,
+  [data-card-theme="snes"] button[id^="char-card-"] > *,
 [data-card-theme="snes"] div[id^="move-"] > * {
   z-index: 2;
   position: relative;
@@ -599,7 +599,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [data-card-theme="snes"] h2 {
-  font-family: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !important;
   font-weight: 800;
   font-style: italic; /* Dynamic 90s aesthetic slant */
   letter-spacing: -0.02em;
@@ -665,7 +664,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: left center, right center;
   background-repeat: no-repeat, no-repeat;
   pointer-events: none;
-  z-index: 1;
+  z-index: 0;
 }
 
 /* Small central warning label */
@@ -684,11 +683,13 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 2px;
   box-shadow: 0 2px 6px rgba(0,0,0,0.8);
   pointer-events: none;
-  z-index: 1;
+  z-index: 0;
 }
 
 [data-card-theme="cps2"] button[id^="game-card-"] > *,
-[data-card-theme="cps2"] button[id^="char-card-"] > *,
+[data-card-theme="cps2"] button[id^="game-card-"] > *,
+[data-card-theme="cps2"] button[id^="game-card-"] > *,
+  [data-card-theme="cps2"] button[id^="char-card-"] > *,
 [data-card-theme="cps2"] div[id^="move-"] > * {
   z-index: 2;
   position: relative;
@@ -697,7 +698,6 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [data-card-theme="cps2"] h2 {
-  font-family: 'Impact', 'Arial Black', sans-serif !important;
   text-transform: uppercase;
   font-style: italic;
   letter-spacing: 0.05em;
@@ -763,7 +763,7 @@ h1, h2, h3, h4, h5, h6 {
   background-position: left center, right center;
   background-repeat: no-repeat, no-repeat;
   pointer-events: none;
-  z-index: 1;
+  z-index: 0;
 }
 
 /* White sticker label */
@@ -781,7 +781,7 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   box-shadow: 0 1px 4px rgba(0,0,0,0.3);
   pointer-events: none;
-  z-index: 1;
+  z-index: 0;
 }
 
 [data-card-theme="mvs"] button[id^="game-card-"] > *,
@@ -791,7 +791,6 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   color: #111 !important;
   text-shadow: none !important;
-  font-family: 'Arial Black', sans-serif !important;
 }
 
 [data-card-theme="mvs"] h2 {
@@ -863,7 +862,7 @@ h1, h2, h3, h4, h5, h6 {
     0 0 0 3px #d4af37,
     inset 0 2px 10px rgba(0,0,0,0.9);
   pointer-events: none;
-  z-index: 1;
+  z-index: 0;
 }
 
 [data-card-theme="aes"] button[id^="game-card-"] > *,
@@ -876,7 +875,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 [data-card-theme="aes"] h2 {
-  font-family: 'Times New Roman', Times, serif !important; /* AES labels often used classic serifs for titles */
+ /* AES labels often used classic serifs for titles */
   font-weight: 700;
   letter-spacing: 0.05em;
   color: #fff !important;
@@ -893,7 +892,7 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
   height: 50%;
   background: linear-gradient(to bottom, rgba(255,255,255,0.05) 0%, transparent 100%);
-  z-index: 1;
+  z-index: 0;
   pointer-events: none;
 }
 
@@ -913,3 +912,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 [data-card-theme="aes"] .gradient-overlay { display: none !important; }
 
+
+/* Themed App Container Backgrounds */
+.app-container[data-card-theme="genesis"] {
+  background: radial-gradient(circle at top right, rgba(183, 28, 28, 0.15) 0%, transparent 60%),
+              radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.2) 0%, transparent 50%);
+}
+
+.app-container[data-card-theme="snes"] {
+  background: radial-gradient(circle at top right, rgba(96, 77, 240, 0.15) 0%, transparent 60%),
+              radial-gradient(circle at bottom left, rgba(207, 205, 210, 0.05) 0%, transparent 50%);
+}
+
+.app-container[data-card-theme="cps2"] {
+  background: radial-gradient(circle at top right, rgba(45, 120, 191, 0.15) 0%, transparent 60%),
+              radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.2) 0%, transparent 50%);
+}
+
+.app-container[data-card-theme="mvs"] {
+  background: radial-gradient(circle at top right, rgba(169, 204, 24, 0.15) 0%, transparent 60%),
+              radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.2) 0%, transparent 50%);
+}
+
+.app-container[data-card-theme="aes"] {
+  background: radial-gradient(circle at top right, rgba(212, 175, 55, 0.1) 0%, transparent 60%),
+              radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.2) 0%, transparent 50%);
+}

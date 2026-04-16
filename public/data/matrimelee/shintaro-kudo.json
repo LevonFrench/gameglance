@@ -1,24 +1,370 @@
 {
-  "game": "Matrimelee (Power Instinct Matrimelee)",
+  "name": "Shintaro Kudo",
   "character": "Shintaro Kudo",
+  "game": "Matrimelee (Power Instinct Matrimelee)",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "doesntbecome",
+      "name": "Doesn't Become",
+      "type": "special",
       "inputs": [
-        "P"
+        "DOWN!  When two or more buttons are typed beside each other,"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "alight",
+      "name": "A Light",
+      "type": "special",
+      "inputs": [
+        "Punch"
+      ]
+    },
+    {
+      "id": "blight",
+      "name": "B Light",
+      "type": "special",
+      "inputs": [
+        "Kick"
+      ]
+    },
+    {
+      "id": "chard",
+      "name": "C Hard",
+      "type": "special",
+      "inputs": [
+        "Punch"
+      ]
+    },
+    {
+      "id": "dhard",
+      "name": "D Hard",
+      "type": "special",
+      "inputs": [
+        "Kick"
+      ]
+    },
+    {
+      "id": "ddirection",
+      "name": "D Direction",
+      "type": "special",
+      "inputs": [
+        "DOWN = Crouch"
+      ]
+    },
+    {
+      "id": "counter",
+      "name": "Counter",
+      "type": "special",
+      "inputs": [
+        "down-back",
+        " ",
+        "METER"
+      ]
+    },
+    {
+      "id": "stressshot",
+      "name": "Stress Shot",
+      "type": "special",
+      "inputs": [
+        "down-back",
+        " ",
+        "METER"
+      ]
+    },
+    {
+      "id": "ippatsuougi",
+      "name": "Ippatsu Ougi",
       "type": "special",
       "inputs": [
         "down",
+        " ",
+        "METERS"
+      ]
+    },
+    {
+      "id": "kinjite",
+      "name": "Kinjite",
+      "type": "special",
+      "inputs": [
         "down-forward",
-        "forward",
-        "P"
+        " ",
+        "METERS"
+      ]
+    },
+    {
+      "id": "qcfquartercircle",
+      "name": "Qcf - Quarter Circle",
+      "type": "special",
+      "inputs": [
+        "forward - d,df,f"
+      ]
+    },
+    {
+      "id": "qcbquartercircle",
+      "name": "Qcb - Quarter Circle",
+      "type": "special",
+      "inputs": [
+        "back   - d,db,b"
+      ]
+    },
+    {
+      "id": "fdp",
+      "name": "Fdp",
+      "type": "special",
+      "inputs": [
+        "forward dragon punch  - f,d,df"
+      ]
+    },
+    {
+      "id": "rdpreversedragon",
+      "name": "Rdp - Reverse Dragon",
+      "type": "special",
+      "inputs": [
+        "punch  - b,d,db"
+      ]
+    },
+    {
+      "id": "hcfhalfcircle",
+      "name": "Hcf - Half Circle",
+      "type": "special",
+      "inputs": [
+        "forward   - b,db,d,df,f"
+      ]
+    },
+    {
+      "id": "hcbhalfcircle",
+      "name": "Hcb - Half Circle",
+      "type": "special",
+      "inputs": [
+        "back    - f,df,d,db,b"
+      ]
+    },
+    {
+      "id": "bthrustingside",
+      "name": "B - Thrusting Side",
+      "type": "special",
+      "inputs": [
+        "kick"
+      ]
+    },
+    {
+      "id": "droundhouse",
+      "name": "D - Roundhouse",
+      "type": "special",
+      "inputs": [
+        "kick"
+      ]
+    },
+    {
+      "id": "cdjumpingreverseturn",
+      "name": "Cd - Jumping Reverse Turn",
+      "type": "special",
+      "inputs": [
+        "kick"
+      ]
+    },
+    {
+      "id": "closec",
+      "name": "Close C",
+      "type": "special",
+      "inputs": [
+        "down",
+        " ",
+        "hit",
+        " ",
+        "uppercut"
+      ]
+    },
+    {
+      "id": "closed",
+      "name": "Close D",
+      "type": "special",
+      "inputs": [
+        "forward somersault axe kick"
+      ]
+    },
+    {
+      "id": "aird45degreesreverse",
+      "name": "Air D - 45 Degrees Reverse",
+      "type": "special",
+      "inputs": [
+        "kick"
+      ]
+    },
+    {
+      "id": "dholdfor",
+      "name": "D Hold - For",
+      "type": "special",
+      "inputs": [
+        "3 seconds for overhead leg crush"
+      ]
+    },
+    {
+      "id": "for",
+      "name": "For",
+      "type": "special",
+      "inputs": [
+        "6 seconds for strong overhead leg crush"
+      ]
+    },
+    {
+      "id": "air",
+      "name": "Air",
+      "type": "special",
+      "inputs": [
+        "QCF + A - 30 degrees aerial projectile"
+      ]
+    },
+    {
+      "id": "bside",
+      "name": "B - Side",
+      "type": "special",
+      "inputs": [
+        "kick to the hips"
+      ]
+    },
+    {
+      "id": "creverse",
+      "name": "C - Reverse",
+      "type": "special",
+      "inputs": [
+        "punch to chest"
+      ]
+    },
+    {
+      "id": "dreversehorizontalspin",
+      "name": "D - Reverse Horizontal Spin",
+      "type": "special",
+      "inputs": [
+        "kick"
+      ]
+    },
+    {
+      "id": "cdstrongthrust",
+      "name": "Cd - Strong Thrust",
+      "type": "special",
+      "inputs": [
+        "kick to hips"
+      ]
+    },
+    {
+      "id": "closedreverseturn",
+      "name": "Close D - Reverse Turn",
+      "type": "special",
+      "inputs": [
+        "kick to head"
+      ]
+    },
+    {
+      "id": "airchorizontalstraight",
+      "name": "Air C - Horizontal Straight",
+      "type": "special",
+      "inputs": [
+        "punch"
+      ]
+    },
+    {
+      "id": "airdreversehorizontalspin",
+      "name": "Air D - Reverse Horizontal Spin",
+      "type": "special",
+      "inputs": [
+        "kick"
+      ]
+    },
+    {
+      "id": "reverseturn",
+      "name": "Reverse Turn",
+      "type": "special",
+      "inputs": [
+        "kick"
+      ]
+    },
+    {
+      "id": "reversehorizontalspin",
+      "name": "Reverse Horizontal Spin",
+      "type": "special",
+      "inputs": [
+        "kick,"
+      ]
+    },
+    {
+      "id": "low",
+      "name": "Low",
+      "type": "special",
+      "inputs": [
+        "back somersault kick"
+      ]
+    },
+    {
+      "id": "horizontalteleport",
+      "name": "Horizontal Teleport",
+      "type": "special",
+      "inputs": [
+        "kick, combs hair"
+      ]
+    },
+    {
+      "id": "afinisheswithstraight",
+      "name": "A Finishes With Straight",
+      "type": "special",
+      "inputs": [
+        "punch"
+      ]
+    },
+    {
+      "id": "bquickstepwith",
+      "name": "B - Quick Step With",
+      "type": "special",
+      "inputs": [
+        "back leg,"
+      ]
+    },
+    {
+      "id": "airc",
+      "name": "Air C",
+      "type": "special",
+      "inputs": [
+        "downward staff swing"
+      ]
+    },
+    {
+      "id": "runs",
+      "name": "Runs",
+      "type": "special",
+      "inputs": [
+        "1/2 screen forwards,"
+      ]
+    },
+    {
+      "id": "downwarddive",
+      "name": "Downward Dive",
+      "type": "special",
+      "inputs": [
+        "kick,"
+      ]
+    },
+    {
+      "id": "followswitha",
+      "name": "Follows With A",
+      "type": "special",
+      "inputs": [
+        "kick rush,"
+      ]
+    },
+    {
+      "id": "catchesshadesandputsthem",
+      "name": "Catches Shades And Puts Them",
+      "type": "special",
+      "inputs": [
+        "back on"
+      ]
+    },
+    {
+      "id": "close",
+      "name": "Close",
+      "type": "special",
+      "inputs": [
+        "HCB + D - Judo back throw into a mounted punch barrage"
       ]
     }
   ]

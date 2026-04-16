@@ -5,7 +5,8 @@ import re
 with open('src/games.ts', 'r', encoding='utf-8') as f:
     ts_txt = f.read()
 
-game_blocks = re.finditer(r"(id:\s*['\"]([^'\"]+)['\"]\s*,\s*name:\s*['\"]([^'\"]+)['\"].*?characters:\s*\[(.*?)\])", ts_txt, re.DOTALL)
+# Instead of one massive regex, split by 'characters: [' to get each game's base info before it, and characters after it
+game_chunks = ts_txt.split('characters: [')
 
 output_lines = []
 output_lines.append("# Underpopulated Characters (Clean)")
@@ -13,16 +14,32 @@ output_lines.append("")
 
 total_chars = 0
 
-for g_match in game_blocks:
-    gid = g_match.group(2)
-    gname = g_match.group(3)
-    char_array = g_match.group(4)
+# chunk 0 is before the first characters array.
+for i in range(1, len(game_chunks)):
+    prev_chunk = game_chunks[i-1]
+    curr_chunk = game_chunks[i]
+    
+    # Extract id and name from the END of prev_chunk
+    # Reverse search for id: and name:
+    id_match = re.findall(r"id:\s*['\"]([^'\"]+)['\"]", prev_chunk)
+    name_match = re.findall(r"name:\s*(['\"])(.*?)\1", prev_chunk)
+    
+    if not id_match or not name_match: continue
+    
+    gid = id_match[-1]
+    gname = name_match[-1][1] # Get the content of the last matched name
+    
+    # Now extract the characters from the START of curr_chunk until the first matching ']'
+    # Since characters array can't contain nested arrays of characters in this structure, we just take everything up to the first ']' which might be risky if a name has ']'. But name shouldn't.
+    char_array_end = curr_chunk.find(']')
+    char_array = curr_chunk[:char_array_end] if char_array_end != -1 else curr_chunk
     
     underpopulated_names = []
     
-    for c_match in re.finditer(r"id:\s*['\"]([^'\"]+)['\"]\s*,\s*name:\s*['\"]([^'\"]+)['\"]", char_array):
+    # Extract characters
+    for c_match in re.finditer(r"id:\s*['\"]([^'\"]+)['\"]\s*,\s*name:\s*(['\"])(.*?)\2", char_array):
         cid = c_match.group(1)
-        cname = c_match.group(2).replace(' (Coming Soon)', '')
+        cname = c_match.group(3).replace(' (Coming Soon)', '')
         
         json_path = os.path.join('public', 'data', gid, f"{cid}.json")
         is_under = False

@@ -1,24 +1,45 @@
 {
-  "game": "Mortal Kombat X",
+  "name": "Jason Voorhees",
   "character": "Jason Voorhees",
+  "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "knifethrow",
+      "name": "Knife Throw",
+      "type": "special",
       "inputs": [
-        "P"
+        "_O_G",
+        "back",
+        "forward"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "cannonball",
+      "name": "Cannonball",
       "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
         "forward",
-        "P"
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "up-back",
+        "up"
+      ]
+    },
+    {
+      "id": "delayedcannonball",
+      "name": "Delayed Cannonball",
+      "type": "special",
+      "inputs": [
+        "_O_G",
+        "forward",
+        "down-forward",
+        "down",
+        "down-back",
+        "back",
+        "up-back",
+        "up"
       ]
     }
   ]

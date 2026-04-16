@@ -1,12 +1,233 @@
 {
-  "game": "Dead or Alive 6",
+  "name": "La Mariposa",
   "character": "La Mariposa",
+  "game": "Dead or Alive 6",
   "movesList": [
     {
-      "id": "generic-neutral",
-      "name": "Neutral Attack",
+      "id": "armflip",
+      "name": "Arm Flip",
+      "type": "throw",
+      "inputs": [
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "leveragethrow",
+      "name": "Leverage Throw",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "forward",
+        "back",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "waistlocksuplex",
+      "name": "Waistlock Suplex",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "_H",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "chokethrow",
+      "name": "Choke Throw",
+      "type": "throw",
+      "inputs": [
+        "back",
+        "down-back",
+        "down",
+        "down-forward",
+        "forward",
+        "_H",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "ninjacatch",
+      "name": "^!ninja Catch",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "up-forward",
+        "up",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "upsidedownspd",
+      "name": "^!upside Down Spd",
+      "type": "throw",
+      "inputs": [
+        "_x_H",
+        "K"
+      ]
+    },
+    {
+      "id": "headflipthrow",
+      "name": "Head Flip Throw",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "rollingddt",
+      "name": "Rolling D.d.t.",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "backsuplex",
+      "name": "Back Suplex",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "reverseddt",
+      "name": "Reverse D.d.t.",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "_H",
+        "P",
+        "K"
+      ]
+    },
+    {
+      "id": "neckbreaker",
+      "name": "Neckbreaker",
+      "type": "throw",
+      "inputs": [
+        "crouching",
+        "opponent",
+        "down",
+        "_H",
+        "P"
+      ]
+    },
+    {
+      "id": "armsnap",
+      "name": "Arm Snap",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "_H"
+      ]
+    },
+    {
+      "id": "flipover",
+      "name": "Flip Over",
+      "type": "throw",
+      "inputs": [
+        "forward",
+        "forward",
+        "_H"
+      ]
+    },
+    {
+      "id": "kickstep",
+      "name": "Kick Step",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "_H"
+      ]
+    },
+    {
+      "id": "armsnap",
+      "name": "Arm Snap",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "forward",
+        "_H"
+      ]
+    },
+    {
+      "id": "legtrip",
+      "name": "Leg Trip",
+      "type": "throw",
+      "inputs": [
+        "from",
+        "behind",
+        "forward",
+        "forward",
+        "_H"
+      ]
+    },
+    {
+      "id": "flipover",
+      "name": "Flip Over",
+      "type": "throw",
+      "inputs": [
+        "crouching",
+        "opponent",
+        "down-forward",
+        "_H"
+      ]
+    },
+    {
+      "id": "spinalpunch",
+      "name": "Spinal Punch",
+      "type": "throw",
+      "inputs": [
+        "crouching",
+        "opponent,",
+        "from",
+        "behind",
+        "down-forward",
+        "_H"
+      ]
+    },
+    {
+      "id": "leghooksuplex",
+      "name": "Leg Hook Suplex",
+      "type": "throw",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "_H",
+        "(reverse",
+        "mid",
+        "kick)"
+      ]
+    },
+    {
+      "id": "ninjaroll",
+      "name": "Ninja Roll",
       "type": "normal",
       "inputs": [
+        "up-forward",
         "P"
       ]
     }

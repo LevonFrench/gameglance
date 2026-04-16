@@ -1,40 +1,52 @@
 {
+  "name": "Yugo",
+  "character": "Yugo",
   "game": "Bloody Roar",
-  "character": "Yugo (Wolf)",
   "movesList": [
     {
-      "id": "sp_0",
-      "name": "Knuckle Drop",
-      "type": "throw",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "P"
-      ]
+      "name": "One-Two Punch",
+      "input": "P, P",
+      "type": "Normal"
     },
     {
-      "id": "sp_1",
-      "name": "Silver Wolf",
-      "type": "special",
-      "inputs": [
-        "down",
-        "down-back",
-        "back",
-        "P"
-      ]
+      "name": "Triple Punch",
+      "input": "P, P, P",
+      "type": "Normal"
     },
     {
-      "id": "sp_2",
-      "name": "Overhead Smash",
-      "type": "special",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "K"
-      ]
+      "name": "Punch Kick Combo",
+      "input": "P, P, P, K",
+      "type": "Normal"
+    },
+    {
+      "name": "Flicker Jab",
+      "input": "6+P",
+      "type": "Command Normal"
+    },
+    {
+      "name": "Body Blow",
+      "input": "3+P",
+      "type": "Command Normal"
+    },
+    {
+      "name": "Upper",
+      "input": "623+P",
+      "type": "Special"
+    },
+    {
+      "name": "Crescent Kick",
+      "input": "214+K",
+      "type": "Special"
+    },
+    {
+      "name": "Beast Rush",
+      "input": "B, B, B",
+      "type": "Beast"
+    },
+    {
+      "name": "Wolf Fang",
+      "input": "236+B",
+      "type": "Beast Special"
     }
-  ],
-  "combosList": []
+  ]
 }

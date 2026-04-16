@@ -1,24 +1,57 @@
 {
-  "game": "Matrimelee (Power Instinct Matrimelee)",
+  "name": "Otane Goketsuji",
   "character": "Otane Goketsuji",
+  "game": "Matrimelee (Power Instinct Matrimelee)",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
-      "inputs": [
-        "P"
-      ]
-    },
-    {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "sp_0",
+      "name": "Lightning Slash",
       "type": "special",
       "inputs": [
         "down",
         "down-forward",
         "forward",
         "P"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Knuckle Bomber",
+      "type": "special",
+      "inputs": [
+        "[",
+        "back",
+        "]",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Spiral Kick",
+      "type": "special",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "um_0",
+      "name": "Bloodline Call",
+      "type": "unique",
+      "inputs": [
+        "Call Kuroko in background to interfere"
+      ]
+    },
+    {
+      "id": "um_1",
+      "name": "Stress Roar",
+      "type": "unique",
+      "inputs": [
+        "Activates when Stress gauge fills",
+        "launching opponent"
       ]
     }
   ]

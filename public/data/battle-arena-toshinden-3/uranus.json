@@ -1,29 +1,37 @@
 {
   "name": "Uranus",
-  "type": "Final Boss",
-  "moves": {
-    "specials": [
-      {
-        "name": "Lightning Bolt",
-        "input": "236A/B",
-        "type": "Projectile"
-      },
-      {
-        "name": "Eagle Dive",
-        "input": "j.236A/B",
-        "type": "Aerial Dive"
-      }
-    ],
-    "overdrive": {
-      "name": "Lightning Storm",
-      "input": "236236B",
-      "type": "Super"
+  "character": "Uranus",
+  "game": "Battle Arena Toshinden 3",
+  "movesList": [
+    {
+      "name": "Fire Arrow",
+      "input": "236+WS/SS",
+      "type": "Special"
     },
-    "desperation": {
-      "name": "Angelic Judgment",
-      "input": "6321463214B",
+    {
+      "name": "Flight",
+      "input": "214+WK/SK",
+      "type": "Special"
+    },
+    {
+      "name": "Wing Blade",
+      "input": "623+WS/SS",
+      "type": "Special"
+    },
+    {
+      "name": "Angel Ring",
+      "input": "41236+WS/SS",
+      "type": "Special"
+    },
+    {
+      "name": "Heavenly Arrow",
+      "input": "236236+WS",
+      "type": "Overdrive"
+    },
+    {
+      "name": "Fallen Angel",
+      "input": "412364+SS",
       "type": "Desperation"
     }
-  },
-  "character": "Uranus"
+  ]
 }

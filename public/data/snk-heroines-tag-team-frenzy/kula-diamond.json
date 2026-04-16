@@ -1,24 +1,73 @@
 {
-  "game": "SNK Heroines: Tag Team Frenzy",
+  "name": "Kula Diamond",
   "character": "Kula Diamond",
+  "game": "SNK Heroines: Tag Team Frenzy",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
+      "id": "sp_0",
+      "name": "Psycho Ball",
+      "type": "special",
       "inputs": [
-        "P"
+        "neutral",
+        "S (Special Button)"
       ]
     },
     {
-      "id": "special-attack",
-      "name": "Special Attack",
+      "id": "sp_1",
+      "name": "Psycho Sword",
       "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
         "forward",
-        "P"
+        "S"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Phoenix Arrow",
+      "type": "special",
+      "inputs": [
+        "(",
+        "In",
+        " ",
+        "Air",
+        ")",
+        " ",
+        "neutral",
+        "S"
+      ]
+    },
+    {
+      "id": "sup_0",
+      "name": "Crystal Shoot",
+      "type": "super",
+      "inputs": [
+        "neutral",
+        "DF (Dream Finish Button)"
+      ]
+    },
+    {
+      "id": "sup_1",
+      "name": "Shining Crystal Bit",
+      "type": "super",
+      "inputs": [
+        "down",
+        "DF"
+      ]
+    },
+    {
+      "id": "um_0",
+      "name": "Tag   Assist",
+      "type": "unique",
+      "inputs": [
+        "Tag Button"
+      ]
+    },
+    {
+      "id": "um_1",
+      "name": "Item Use",
+      "type": "unique",
+      "inputs": [
+        "Item Button (Uses currently held item)"
       ]
     }
   ]
