@@ -10,6 +10,7 @@ interface Props {
 }
 
 const GAME_THEMES: Record<string, { gradient: string; icon: string; tagline: string; glowColor: string }> = {
+  'marvel-vs-capcom-2': { gradient: 'linear-gradient(135deg, #4f46e5 0%, #06b6d4 100%)', icon: '🦸', tagline: 'Take You For A Ride', glowColor: 'rgba(79, 70, 229, 0.25)' },
   'street-fighter-6': { gradient: 'linear-gradient(135deg, #e8363c 0%, #fbbf24 100%)', icon: '🥊', tagline: 'World Warriors Await', glowColor: 'rgba(232, 54, 60, 0.25)' },
   'street-fighter-ii': { gradient: 'linear-gradient(135deg, #1d4ed8 0%, #ef4444 100%)', icon: '🥋', tagline: 'The Grand Master Challenge', glowColor: 'rgba(29, 78, 216, 0.25)' },
   'capcom-vs-snk-2': { gradient: 'linear-gradient(135deg, #fbbf24 0%, #ea580c 100%)', icon: '⚔️', tagline: 'Mark of the Millennium', glowColor: 'rgba(251, 191, 36, 0.25)' },

@@ -74,10 +74,6 @@ function App() {
     navigate('main_screen');
   };
 
-  const handleExitMainScreen = () => {
-    navigate('move_list');
-  };
-
   // Router switch
   let viewComponent;
   switch (currentView) {
