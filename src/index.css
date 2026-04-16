@@ -938,3 +938,123 @@ h1, h2, h3, h4, h5, h6 {
   background: radial-gradient(circle at top right, rgba(212, 175, 55, 0.1) 0%, transparent 60%),
               radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.2) 0%, transparent 50%);
 }
+
+/* ── Tournament Theme (Gold/Bronze) ────────── */
+[data-theme="tournament"] {
+  color-scheme: dark;
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #141311;
+  --bg-card: rgba(26, 25, 23, 0.75);
+  --bg-card-hover: rgba(36, 34, 30, 0.85);
+  --bg-glass: rgba(20, 19, 17, 0.65);
+  --bg-glass-heavy: rgba(15, 14, 12, 0.88);
+  --bg-input: rgba(255, 215, 0, 0.04);
+  --bg-elevated: rgba(30, 28, 25, 0.9);
+  --bg-badge: rgba(255, 215, 0, 0.05);
+
+  --border-subtle: rgba(255, 215, 0, 0.1);
+  --border-medium: rgba(255, 215, 0, 0.2);
+  --border-accent: rgba(218, 165, 32, 0.5);
+  --border-focus: rgba(218, 165, 32, 0.8);
+
+  --text-primary: #f8f6f0;
+  --text-secondary: #c0b8a0;
+  --text-muted: #807a60;
+
+  --accent-color: #ffd700;
+  --accent-hover: #ffdf33;
+  --accent-glow: rgba(255, 215, 0, 0.2);
+
+  --gradient-card: linear-gradient(135deg, rgba(218, 165, 32, 0.05), transparent 60%);
+  --gradient-button: linear-gradient(135deg, #ffd700, #daa520);
+}
+
+/* ── Arcade Theme (Neon/Synthwave) ────────── */
+[data-theme="arcade"] {
+  color-scheme: dark;
+  --bg-primary: #0b0216;
+  --bg-secondary: #140529;
+  --bg-card: rgba(28, 9, 56, 0.75);
+  --bg-card-hover: rgba(43, 14, 84, 0.85);
+  --bg-glass: rgba(20, 5, 40, 0.65);
+  --bg-glass-heavy: rgba(15, 3, 30, 0.88);
+  --bg-input: rgba(255, 0, 255, 0.04);
+  --bg-elevated: rgba(38, 12, 74, 0.9);
+  --bg-badge: rgba(255, 0, 255, 0.05);
+
+  --border-subtle: rgba(255, 0, 255, 0.15);
+  --border-medium: rgba(0, 255, 255, 0.3);
+  --border-accent: rgba(255, 0, 255, 0.6);
+  --border-focus: rgba(0, 255, 255, 0.8);
+
+  --text-primary: #f0e6ff;
+  --text-secondary: #bba2e6;
+  --text-muted: #7d60b3;
+
+  --accent-color: #ff00ff;
+  --accent-hover: #ff4dff;
+  --accent-glow: rgba(255, 0, 255, 0.25);
+
+  --gradient-card: linear-gradient(135deg, rgba(255, 0, 255, 0.1), transparent 60%);
+  --gradient-button: linear-gradient(135deg, #ff00ff, #00ffff);
+}
+
+/* ── Cyberpunk Theme (Acid/High Contrast) ────────── */
+[data-theme="cyberpunk"] {
+  color-scheme: dark;
+  --bg-primary: #0a0e12;
+  --bg-secondary: #0f151b;
+  --bg-card: rgba(18, 25, 33, 0.75);
+  --bg-card-hover: rgba(25, 35, 45, 0.85);
+  --bg-glass: rgba(14, 20, 26, 0.65);
+  --bg-glass-heavy: rgba(10, 15, 20, 0.88);
+  --bg-input: rgba(57, 255, 20, 0.04);
+  --bg-elevated: rgba(22, 30, 40, 0.9);
+  --bg-badge: rgba(57, 255, 20, 0.05);
+
+  --border-subtle: rgba(57, 255, 20, 0.15);
+  --border-medium: rgba(57, 255, 20, 0.3);
+  --border-accent: rgba(57, 255, 20, 0.6);
+  --border-focus: rgba(57, 255, 20, 0.9);
+
+  --text-primary: #e6ffe6;
+  --text-secondary: #8ccf8c;
+  --text-muted: #4e804e;
+
+  --accent-color: #39ff14;
+  --accent-hover: #66ff4d;
+  --accent-glow: rgba(57, 255, 20, 0.25);
+
+  --gradient-card: linear-gradient(135deg, rgba(57, 255, 20, 0.1), transparent 60%);
+  --gradient-button: linear-gradient(135deg, #39ff14, #00cc00);
+}
+
+/* ── Blood Oath Theme (Crimson) ────────── */
+[data-theme="blood"] {
+  color-scheme: dark;
+  --bg-primary: #0a0303;
+  --bg-secondary: #120505;
+  --bg-card: rgba(26, 7, 7, 0.75);
+  --bg-card-hover: rgba(38, 10, 10, 0.85);
+  --bg-glass: rgba(18, 5, 5, 0.65);
+  --bg-glass-heavy: rgba(13, 4, 4, 0.88);
+  --bg-input: rgba(239, 68, 68, 0.04);
+  --bg-elevated: rgba(33, 9, 9, 0.9);
+  --bg-badge: rgba(239, 68, 68, 0.05);
+
+  --border-subtle: rgba(239, 68, 68, 0.15);
+  --border-medium: rgba(239, 68, 68, 0.3);
+  --border-accent: rgba(239, 68, 68, 0.6);
+  --border-focus: rgba(239, 68, 68, 0.9);
+
+  --text-primary: #ffe6e6;
+  --text-secondary: #cc8080;
+  --text-muted: #804040;
+
+  --accent-color: #ef4444;
+  --accent-hover: #f87171;
+  --accent-glow: rgba(239, 68, 68, 0.25);
+
+  --gradient-card: linear-gradient(135deg, rgba(239, 68, 68, 0.1), transparent 60%);
+  --gradient-button: linear-gradient(135deg, #ef4444, #991b1b);
+}

@@ -1,6 +1,7 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 
-type Theme = 'dark' | 'light';
+export const ALL_THEMES = ['dark', 'light', 'tournament', 'arcade', 'cyberpunk', 'blood'] as const;
+export type Theme = typeof ALL_THEMES[number];
 
 interface ThemeContextType {
   theme: Theme;
@@ -19,7 +20,7 @@ export const useTheme = () => useContext(ThemeContext);
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
   const [theme, setTheme] = useState<Theme>(() => {
     const stored = localStorage.getItem('gg_theme');
-    if (stored === 'light' || stored === 'dark') return stored;
+    if (ALL_THEMES.includes(stored as Theme)) return stored as Theme;
     return window.matchMedia?.('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
   });
 
@@ -29,7 +30,10 @@ export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ childre
   }, [theme]);
 
   const toggleTheme = useCallback(() => {
-    setTheme(prev => prev === 'dark' ? 'light' : 'dark');
+    setTheme(prev => {
+      const nextIndex = (ALL_THEMES.indexOf(prev) + 1) % ALL_THEMES.length;
+      return ALL_THEMES[nextIndex];
+    });
   }, []);
 
   return (
