@@ -1,86 +1,13 @@
 import type { GameDefinition } from './types';
 
 export const SUPPORTED_GAMES: GameDefinition[] = [
-,
-  
-  {
-    id: 'aggressors-of-dark-kombat---complete-move-list',
-    name: "Aggressors of Dark Kombat - Complete Move List",
-    developer: "SNK",
-    characters: [
-      { id: 'bobby-nelson', name: 'Bobby Nelson' },
-      { id: 'goh-kidokoro', name: 'Goh Kidokoro' },
-      { id: 'joe-kusanagi', name: 'Joe Kusanagi' },
-      { id: 'kisarah-westfield', name: 'Kisarah Westfield' },
-      { id: 'kotaro-fuuma', name: 'Kotaro Fuuma' },
-      { id: 'lee-hae-gwon', name: 'Lee Hae Gwon' },
-      { id: 'leonhalt-domador', name: 'Leonhalt Domador' },
-      { id: 'sheen-genus', name: 'Sheen Genus' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
   {
     id: 'art-of-fighting',
     name: "Art of Fighting",
     developer: "SNK",
+    releaseYear: 1992,
     characters: [
       { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  {
-    id: 'art-of-fighting---complete-move-list',
-    name: "Art of Fighting - Complete Move List",
-    developer: "SNK",
-    characters: [
-      { id: 'jack-turner', name: 'Jack Turner' },
-      { id: 'john-crawley', name: 'John Crawley' },
-      { id: 'king', name: 'King' },
-      { id: 'lee-pai-long', name: 'Lee Pai Long' },
-      { id: 'micky-rogers', name: 'Micky Rogers' },
-      { id: 'mr-big', name: 'Mr. Big' },
-      { id: 'mr-karate', name: 'Mr. Karate' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  {
-    id: 'art-of-fighting-2---complete-move-list',
-    name: "Art of Fighting 2 - Complete Move List",
-    developer: "SNK",
-    characters: [
-      { id: 'eiji-kisaragi', name: 'Eiji Kisaragi' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'john-crawley', name: 'John Crawley' },
-      { id: 'king', name: 'King' },
-      { id: 'mr-big', name: 'Mr. Big' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'takuma-sakazaki', name: 'Takuma Sakazaki' },
-      { id: 'temjin', name: 'Temjin' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  {
-    id: 'art-of-fighting-3---complete-move-list',
-    name: "Art of Fighting 3 - Complete Move List",
-    developer: "SNK",
-    characters: [
-      { id: 'jin-fu-ha', name: 'Jin Fu-Ha' },
-      { id: 'karman-cole', name: 'Karman Cole' },
-      { id: 'lenny-creston', name: 'Lenny Creston' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'rodmy-bohnen', name: 'Rodmy Bohnen' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'sinclair', name: 'Sinclair' },
-      { id: 'wang-koh-san', name: 'Wang Koh-San' },
-      { id: 'wyler', name: 'Wyler' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -89,6 +16,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'art-of-fighting-3-the-path-of-the-warrior',
     name: "Art of Fighting 3: The Path of the Warrior",
     developer: "SNK",
+    releaseYear: 1996,
     characters: [
       { id: 'robert-garcia', name: 'Robert Garcia' }
     ],
@@ -99,6 +27,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'astra-superstars',
     name: "Astra Superstars",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'lettas', name: 'Lettas' },
       { id: 'salsa', name: 'Salsa' },
@@ -108,28 +37,10 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 'astra-superstars---exhaustive-roster-move-list',
-    name: "Astra Superstars - Exhaustive Roster Move List",
-    developer: "SNK",
-    characters: [
-      { id: 'cuper', name: 'Cuper' },
-      { id: 'devil-kun-(hidden)', name: 'Devil-kun (Hidden)' },
-      { id: 'harry', name: 'Harry' },
-      { id: 'lettas', name: 'Lettas' },
-      { id: 'marone', name: 'Marone' },
-      { id: 'rogue', name: 'Rogue' },
-      { id: 'salsa', name: 'Salsa' },
-      { id: 'stella', name: 'Stella' },
-      { id: 'test-kun-(hidden)', name: 'Test-kun (Hidden)' },
-      { id: 'valpala', name: 'Valpala' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  {
     id: 'asuka-120%-burning-fest-limited',
     name: "Asuka 120% Burning Fest Limited",
     developer: "SNK",
+    releaseYear: 1997,
     characters: [
       { id: 'asuka-honda', name: 'Asuka Honda' },
       { id: 'kumi-okuyama', name: 'Kumi Okuyama' },
@@ -143,6 +54,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'blazblue-central-fiction',
     name: "BlazBlue: Central Fiction",
     developer: "Arc System Works",
+    releaseYear: 2015,
     characters: [
       { id: 'jin-kisaragi', name: 'Jin Kisaragi' },
       { id: 'noel-vermillion', name: 'Noel Vermillion' },
@@ -155,6 +67,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'blazblue-cross-tag-battle',
     name: "BlazBlue: Cross Tag Battle",
     developer: "Arc System Works",
+    releaseYear: 2018,
     characters: [
       { id: 'ruby-rose', name: 'Ruby Rose' }
     ],
@@ -165,6 +78,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'bloody-roar',
     name: "Bloody Roar",
     developer: "Hudson Soft",
+    releaseYear: 1997,
     characters: [
       { id: 'alice-(rabbit)', name: 'Alice (Rabbit)' },
       { id: 'alice', name: 'Alice (Rabbit)' },
@@ -178,6 +92,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'bloody-roar-2-bringer-of-the-new-age',
     name: "Bloody Roar 2: Bringer of the New Age",
     developer: "Hudson Soft",
+    releaseYear: 1999,
     characters: [
       { id: 'bakuryu-(mole)', name: 'Bakuryu (Mole)' },
       { id: 'bakuryu', name: 'Bakuryu (Mole)' },
@@ -191,6 +106,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'bloody-roar-3',
     name: "Bloody Roar 3",
     developer: "Hudson Soft",
+    releaseYear: 2000,
     characters: [
       { id: 'xion-(unborn)', name: 'Xion (Unborn)' },
       { id: 'xion', name: 'Xion (Unborn)' }
@@ -202,6 +118,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'bloody-roar-4',
     name: "Bloody Roar 4",
     developer: "Hudson Soft",
+    releaseYear: 2003,
     characters: [
       { id: 'nagi-(spurious)', name: 'Nagi (Spurious)' }
     ],
@@ -212,25 +129,9 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'bloody-roar-primal-fury--extreme',
     name: "Bloody Roar: Primal Fury / Extreme",
     developer: "Hudson Soft",
+    releaseYear: 2002,
     characters: [
       { id: 'gado-(lion)', name: 'Gado (Lion)' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  {
-    id: 'breakers---complete-move-list',
-    name: "Breakers - Complete Move List",
-    developer: "SNK",
-    characters: [
-      { id: 'alsion-iii', name: 'Alsion III' },
-      { id: 'condor', name: 'Condor' },
-      { id: 'lee-dao-lung', name: 'Lee Dao-Lung' },
-      { id: 'maher', name: 'Maher' },
-      { id: 'preecha', name: 'Preecha' },
-      { id: 'rila', name: 'Rila' },
-      { id: 'sho-kamui', name: 'Sho Kamui' },
-      { id: 'tia-langray', name: 'Tia Langray' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -239,27 +140,9 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'breakers-revenge',
     name: "Breakers Revenge",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'sho-kamui', name: 'Sho Kamui' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  {
-    id: 'breakers-revenge---complete-move-list',
-    name: "Breakers Revenge - Complete Move List",
-    developer: "SNK",
-    characters: [
-      { id: 'alsion-iii', name: 'Alsion III' },
-      { id: 'bai-hu', name: 'Bai-Hu' },
-      { id: 'condor', name: 'Condor' },
-      { id: 'lee-dao-lung', name: 'Lee Dao-Lung' },
-      { id: 'maher', name: 'Maher' },
-      { id: 'preecha', name: 'Preecha' },
-      { id: 'rila', name: 'Rila' },
-      { id: 'sho-kamui', name: 'Sho Kamui' },
-      { id: 'tia-langray', name: 'Tia Langray' },
-      { id: 'tobari-saizo', name: 'Tobari Saizo' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -268,6 +151,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'capcom-fighting-jam',
     name: "Capcom Fighting Jam",
     developer: "Capcom",
+    releaseYear: 2004,
     characters: [
       { id: 'alex-(sf3-style)', name: 'Alex (SF3 Style)' },
       { id: 'demitri-(darkstalkers-style)', name: 'Demitri (Darkstalkers Style)' },
@@ -283,6 +167,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'capcom-fighting-jam-(capcom-fighting-evolution)',
     name: "Capcom Fighting Jam (Capcom Fighting Evolution)",
     developer: "Capcom",
+    releaseYear: 2004,
     characters: [
       { id: 'alex-(street-fighter-iii-style)', name: 'Alex (Street Fighter III Style)' },
       { id: 'anakaris-(darkstalkers-style)', name: 'Anakaris (Darkstalkers Style)' },
@@ -316,6 +201,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'capcom-vs-snk-2-mark-of-the-millennium-2001',
     name: "Capcom vs. SNK 2: Mark of the Millennium 2001",
     developer: "Capcom",
+    releaseYear: 2001,
     characters: [
       { id: 'akuma-(gouki)', name: 'Akuma (Gouki)' },
       { id: 'chang-koehan-&-choi-bounge', name: 'Chang Koehan & Choi Bounge' },
@@ -341,6 +227,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'capcom-vs-snk-millennium-fight-2000',
     name: "Capcom vs. SNK: Millennium Fight 2000",
     developer: "Capcom",
+    releaseYear: 2000,
     characters: [
       { id: 'chun-li', name: 'Chun-Li' },
       { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
@@ -355,6 +242,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'capcom-vs-snk-millennium-fight-2000-pro',
     name: "Capcom vs. SNK: Millennium Fight 2000 Pro",
     developer: "Capcom",
+    releaseYear: 2001,
     characters: [
       { id: 'akuma-(gouki)', name: 'Akuma (Gouki)' },
       { id: 'andy-bogard', name: 'Andy Bogard' },
@@ -396,6 +284,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'cfj',
     name: "Capcom Fighting Jam",
     developer: "Capcom",
+    releaseYear: 2004,
     characters: [
       { id: 'alex-(sf3-style)', name: 'Alex (SF3 Style)' },
       { id: 'alex-(street-fighter-iii-style)', name: 'Alex (Street Fighter III Style)' },
@@ -464,257 +353,10 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 'characters',
-    name: "characters",
-    developer: "SNK",
-    characters: [
-      { id: 'akari-ichijou', name: 'Akari Ichijou' },
-      { id: 'akira-yuki', name: 'Akira Yuki' },
-      { id: 'akuma-(gouki)', name: 'Akuma (Gouki)' },
-      { id: 'amakusa-shiro-tokisada', name: 'Amakusa Shiro Tokisada' },
-      { id: 'amakusa', name: 'Amakusa' },
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'aoi-umenokouji', name: 'Aoi Umenokouji' },
-      { id: 'athena-asamiya', name: 'Athena Asamiya' },
-      { id: 'axel-hawk', name: 'Axel Hawk' },
-      { id: 'b-jenet', name: 'B. Jenet' },
-      { id: 'bao', name: 'Bao' },
-      { id: 'basara', name: 'Basara' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'big-bear', name: 'Big Bear' },
-      { id: 'billy-kane', name: 'Billy Kane' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'bob-wilson', name: 'Bob Wilson' },
-      { id: 'brad-burns', name: 'Brad Burns' },
-      { id: 'carol', name: 'Carol' },
-      { id: 'cham-cham', name: 'Cham Cham' },
-      { id: 'chang-koehan', name: 'Chang Koehan' },
-      { id: 'charlotte', name: 'Charlotte' },
-      { id: 'cheng-sinzan', name: 'Cheng Sinzan' },
-      { id: 'chin-gentsai', name: 'Chin Gentsai' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'choi-bounge', name: 'Choi Bounge' },
-      { id: 'chris', name: 'Chris' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'chung-paifu', name: 'Chung Paifu' },
-      { id: 'chung', name: 'Chung' },
-      { id: 'clark-still', name: 'Clark Still' },
-      { id: 'dhalsim', name: 'Dhalsim' },
-      { id: 'dong-hwan', name: 'Dong Hwan' },
-      { id: 'duck-king', name: 'Duck King' },
-      { id: 'eagle', name: 'Eagle' },
-      { id: 'earthquake', name: 'Earthquake' },
-      { id: 'eiji-kisaragi', name: 'Eiji Kisaragi' },
-      { id: 'enja', name: 'Enja' },
-      { id: 'franco-bash', name: 'Franco Bash' },
-      { id: 'gaira-caffeine', name: 'Gaira Caffeine' },
-      { id: 'gaira', name: 'Gaira' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'gaoh-kyogoku-hinowanokami', name: 'Gaoh Kyogoku Hinowanokami' },
-      { id: 'gaoh', name: 'Gaoh' },
-      { id: 'gato', name: 'Gato' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'gen-an-shiranui', name: 'Gen-an Shiranui' },
-      { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' },
-      { id: 'genjuro', name: 'Genjuro' },
-      { id: 'goemon', name: 'Goemon' },
-      { id: 'goenitz-(boss)', name: 'Goenitz (Boss)' },
-      { id: 'goh-hinogami', name: 'Goh Hinogami' },
-      { id: 'gordon-bowman', name: 'Gordon Bowman' },
-      { id: 'gordon', name: 'Gordon' },
-      { id: 'goro-daimon', name: 'Goro Daimon' },
-      { id: 'gozu', name: 'Gozu' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'hanzo-hattori', name: 'Hanzo Hattori' },
-      { id: 'hanzo', name: 'Hanzo' },
-      { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'hayate', name: 'Hayate' },
-      { id: 'heavy-d', name: 'Heavy D!' },
-      { id: 'heidern-(ex)', name: 'Heidern (EX)' },
-      { id: 'heidern', name: 'Heidern' },
-      { id: 'hibiki-takane', name: 'Hibiki Takane' },
-      { id: 'hinako-shijou', name: 'Hinako Shijou' },
-      { id: 'hon-fu', name: 'Hon Fu' },
-      { id: 'houoh', name: 'Houoh' },
-      { id: 'hugo', name: 'Hugo' },
-      { id: 'hwa-jai', name: 'Hwa Jai' },
-      { id: 'hyo-amano', name: 'Hyo Amano' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'jacky-bryant', name: 'Jacky Bryant' },
-      { id: 'jae-hoon', name: 'Jae Hoon' },
-      { id: 'jeffry-mcwild', name: 'Jeffry McWild' },
-      { id: 'jhun-hoon', name: 'Jhun Hoon' },
-      { id: 'jin-chonrei', name: 'Jin Chonrei' },
-      { id: 'jin-chonshu', name: 'Jin Chonshu' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'joker', name: 'Joker' },
-      { id: 'jubei-yagyu', name: 'Jubei Yagyu' },
-      { id: 'jubei-yamada', name: 'Jubei Yamada' },
-      { id: 'jubei', name: 'Jubei' },
-      { id: 'juzoh-kanzaki', name: 'Juzoh Kanzaki' },
-      { id: 'jyazu', name: 'Jyazu' },
-      { id: 'k', name: 'K\'' },
-      { id: 'kaede-(awakened)', name: 'Kaede (Awakened)' },
-      { id: 'kaede', name: 'Kaede' },
-      { id: 'kage-maru', name: 'Kage-Maru' },
-      { id: 'kamui', name: 'Kamui' },
-      { id: 'karasu', name: 'Karasu' },
-      { id: 'kasumi', name: 'Kasumi' },
-      { id: 'kazuki-kazama', name: 'Kazuki Kazama' },
-      { id: 'kazuki', name: 'Kazuki' },
-      { id: 'keiichiro-washizuka', name: 'Keiichiro Washizuka' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'kim-eagle', name: 'Kim Eagle' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'king-lion', name: 'King Lion' },
-      { id: 'king', name: 'King' },
-      { id: 'kojiroh-sanada', name: 'Kojiroh Sanada' },
-      { id: 'kouryu', name: 'Kouryu' },
-      { id: 'krizalid', name: 'Krizalid' },
-      { id: 'kula-diamond', name: 'Kula Diamond' },
-      { id: 'kuroko', name: 'Kuroko' },
-      { id: 'kusaregedo', name: 'Kusaregedo' },
-      { id: 'kyo-(ex)', name: 'Kyo (EX)' },
-      { id: 'kyo-kusanagi-(real)', name: 'Kyo Kusanagi (Real)' },
-      { id: 'kyo-kusanagi-1', name: 'Kyo Kusanagi-1' },
-      { id: 'kyo-kusanagi-2', name: 'Kyo Kusanagi-2' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'kyoshiro-senryo', name: 'Kyoshiro Senryo' },
-      { id: 'kyoshiro', name: 'Kyoshiro' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'laurence-blood', name: 'Laurence Blood' },
-      { id: 'lee-rekka', name: 'Lee Rekka' },
-      { id: 'lei-fei', name: 'Lei-Fei' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'li-xiangfei', name: 'Li Xiangfei' },
-      { id: 'lion-rafale', name: 'Lion Rafale' },
-      { id: 'liu-yunfei', name: 'Liu Yunfei' },
-      { id: 'lowe', name: 'Lowe' },
-      { id: 'lucky-glauber', name: 'Lucky Glauber' },
-      { id: 'm-bison-(vega)', name: 'M. Bison (Vega)' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'mary', name: 'Mary' },
-      { id: 'mature', name: 'Mature' },
-      { id: 'max-eagle', name: 'Max Eagle' },
-      { id: 'maxima', name: 'Maxima' },
-      { id: 'mezu', name: 'Mezu' },
-      { id: 'michael-max', name: 'Michael Max' },
-      { id: 'mina-majikina', name: 'Mina Majikina' },
-      { id: 'mizuki-rashojin', name: 'Mizuki Rashojin' },
-      { id: 'mizuki', name: 'Mizuki' },
-      { id: 'moriya-minakata', name: 'Moriya Minakata' },
-      { id: 'mr-big', name: 'Mr. Big' },
-      { id: 'mr-karate', name: 'Mr. Karate' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'natsume', name: 'Natsume' },
-      { id: 'neinhalt-sieger', name: 'Neinhalt Sieger' },
-      { id: 'nicotine-caffeine', name: 'Nicotine Caffeine' },
-      { id: 'nobunaga', name: 'Nobunaga' },
-      { id: 'okina-bakuzan', name: 'Okina Bakuzan' },
-      { id: 'omega-rugal', name: 'Omega Rugal' },
-      { id: 'orochi-(boss)', name: 'Orochi (Boss)' },
-      { id: 'orochi-chris', name: 'Orochi Chris' },
-      { id: 'orochi-iori', name: 'Orochi Iori' },
-      { id: 'orochi-leona', name: 'Orochi Leona' },
-      { id: 'orochi-shermie', name: 'Orochi Shermie' },
-      { id: 'orochi-yashiro', name: 'Orochi Yashiro' },
-      { id: 'pai-chan', name: 'Pai Chan' },
-      { id: 'raiden', name: 'Raiden' },
-      { id: 'raiga', name: 'Raiga' },
-      { id: 'ralf-jones', name: 'Ralf Jones' },
-      { id: 'ramon', name: 'Ramon' },
-      { id: 'ranmaru', name: 'Ranmaru' },
-      { id: 'rasetsumaru', name: 'Rasetsumaru' },
-      { id: 'richard-meyer', name: 'Richard Meyer' },
-      { id: 'rick-strowd', name: 'Rick Strowd' },
-      { id: 'rimururu', name: 'Rimururu' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'rosa', name: 'Rosa' },
-      { id: 'rugal-bernstein-(boss)', name: 'Rugal Bernstein (Boss)' },
-      { id: 'ryo-sakazaki-(guest-boss)', name: 'Ryo Sakazaki (Guest Boss)' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'sagat', name: 'Sagat' },
-      { id: 'saisyu-kusanagi', name: 'Saisyu Kusanagi' },
-      { id: 'sarah-bryant', name: 'Sarah Bryant' },
-      { id: 'sasuke', name: 'Sasuke' },
-      { id: 'setsuna', name: 'Setsuna' },
-      { id: 'shermie', name: 'Shermie' },
-      { id: 'shigen-(ex)', name: 'Shigen (EX)' },
-      { id: 'shigen-naoe', name: 'Shigen Naoe' },
-      { id: 'shiki', name: 'Shiki' },
-      { id: 'shikyo', name: 'Shikyo' },
-      { id: 'shingo-yabuki', name: 'Shingo Yabuki' },
-      { id: 'shiro-tokisada-amakusa', name: 'Shiro Tokisada Amakusa' },
-      { id: 'shizumaru-hisame', name: 'Shizumaru Hisame' },
-      { id: 'shizumaru', name: 'Shizumaru' },
-      { id: 'shun-di', name: 'Shun Di' },
-      { id: 'sie-kensou', name: 'Sie Kensou' },
-      { id: 'sieger', name: 'Sieger' },
-      { id: 'sogetsu-kazama', name: 'Sogetsu Kazama' },
-      { id: 'sogetsu', name: 'Sogetsu' },
-      { id: 'sokaku-mochizuki', name: 'Sokaku Mochizuki' },
-      { id: 'suija', name: 'Suija' },
-      { id: 'taka-arashi', name: 'Taka-Arashi' },
-      { id: 'takuma-sakazaki', name: 'Takuma Sakazaki' },
-      { id: 'tam-tam', name: 'Tam Tam' },
-      { id: 'tenho', name: 'Tenho' },
-      { id: 'terry-(ex)', name: 'Terry (EX)' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'tessa-(tabasa)', name: 'Tessa (Tabasa)' },
-      { id: 'tung-fu-rue', name: 'Tung Fu Rue' },
-      { id: 'ukyo-tachibana', name: 'Ukyo Tachibana' },
-      { id: 'ukyo', name: 'Ukyo' },
-      { id: 'vanessa-lewis', name: 'Vanessa Lewis' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'vice', name: 'Vice' },
-      { id: 'wan-fu', name: 'Wan-Fu' },
-      { id: 'whip', name: 'Whip' },
-      { id: 'wolf-hawkfield', name: 'Wolf Hawkfield' },
-      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' },
-      { id: 'yamazaki', name: 'Yamazaki' },
-      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
-      { id: 'yoshitora-tokugawa', name: 'Yoshitora Tokugawa' },
-      { id: 'yoshitora', name: 'Yoshitora' },
-      { id: 'you-kusaregedo', name: 'You Kusaregedo' },
-      { id: 'yuki', name: 'Yuki' },
-      { id: 'yunfei', name: 'Yunfei' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'zankuro-minazuki', name: 'Zankuro Minazuki' },
-      { id: 'zankuro', name: 'Zankuro' },
-      { id: 'zantetsu', name: 'Zantetsu' },
-      { id: 'zero-(boss)', name: 'Zero (Boss)' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  {
-    id: 'common_normals',
-    name: "common_normals",
-    developer: "SNK",
-    characters: [
-      { id: 'crouching-heavy-kick', name: 'Crouching Heavy Kick' },
-      { id: 'crouching-heavy-punch', name: 'Crouching Heavy Punch' },
-      { id: 'crouching-light-kick', name: 'Crouching Light Kick' },
-      { id: 'crouching-light-punch', name: 'Crouching Light Punch' },
-      { id: 'jumping-heavy-kick', name: 'Jumping Heavy Kick' },
-      { id: 'jumping-heavy-punch', name: 'Jumping Heavy Punch' },
-      { id: 'jumping-light-kick', name: 'Jumping Light Kick' },
-      { id: 'jumping-light-punch', name: 'Jumping Light Punch' },
-      { id: 'standing-heavy-kick', name: 'Standing Heavy Kick' },
-      { id: 'standing-heavy-punch', name: 'Standing Heavy Punch' },
-      { id: 'standing-light-kick', name: 'Standing Light Kick' },
-      { id: 'standing-light-punch', name: 'Standing Light Punch' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  {
     id: 'cota',
     name: "X-Men: Children of the Atom",
     developer: "Capcom",
+    releaseYear: 1994,
     characters: [
       { id: 'cyclops', name: 'Cyclops' },
       { id: 'silver-samurai', name: 'Silver Samurai' }
@@ -726,6 +368,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'cotw',
     name: "Fatal Fury: City of the Wolves",
     developer: "SNK",
+    releaseYear: 2025,
     characters: [
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'b-jenet', name: 'B. Jenet' },
@@ -787,6 +430,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'cvs1',
     name: "Capcom vs. SNK",
     developer: "Capcom",
+    releaseYear: 2000,
     characters: [
       { id: 'akuma', name: 'Akuma' },
       { id: 'balrog', name: 'Balrog' },
@@ -831,6 +475,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'cvs2',
     name: "Capcom vs SNK 2",
     developer: "Capcom",
+    releaseYear: 2001,
     characters: [
       { id: 'akuma-(gouki)', name: 'Akuma (Gouki)' },
       { id: 'akuma-(shin)', name: 'Akuma (Shin)' },
@@ -910,6 +555,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'cyberbots',
     name: "Cyberbots",
     developer: "Capcom",
+    releaseYear: 1995,
     characters: [
       { id: 'blodia', name: 'Blodia' },
       { id: 'fordy', name: 'Fordy' },
@@ -929,6 +575,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'cyberbots-full-metal-madness',
     name: "Cyberbots: Full Metal Madness",
     developer: "SNK",
+    releaseYear: 1995,
     characters: [
       { id: 'blodia-(jin-saotome)', name: 'Blodia (Jin Saotome)' },
       { id: 'fordy-(mary)', name: 'Fordy (Mary)' },
@@ -947,6 +594,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'darkstalkers',
     name: "Darkstalkers: The Night Warriors",
     developer: "Capcom",
+    releaseYear: 1994,
     characters: [
       { id: 'anakaris', name: 'ANAKARIS' },
       { id: 'bishamon', name: 'BISHAMON' },
@@ -979,6 +627,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'darkstalkers-the-night-warriors',
     name: "Darkstalkers: The Night Warriors",
     developer: "Capcom",
+    releaseYear: 1994,
     characters: [
       { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
       { id: 'felicia', name: 'Felicia' },
@@ -992,6 +641,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'darkstalkers-the-night-warriors-(vampire-the-night-warriors)',
     name: "Darkstalkers: The Night Warriors (Vampire: The Night Warriors)",
     developer: "Capcom",
+    releaseYear: 1994,
     characters: [
       { id: 'anakaris', name: 'Anakaris' },
       { id: 'bishamon', name: 'Bishamon' },
@@ -1013,26 +663,9 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'dead-or-alive',
     name: "Dead or Alive",
     developer: "Tecmo",
+    releaseYear: 1996,
     characters: [
       { id: 'kasumi', name: 'Kasumi' },
-      { id: 'zack', name: 'Zack' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  {
-    id: 'dead-or-alive-1---complete-move-list-(exhaustive)',
-    name: "Dead or Alive 1 - Complete Move List (Exhaustive)",
-    developer: "Tecmo",
-    characters: [
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'gen-fu', name: 'Gen Fu' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'kasumi', name: 'Kasumi' },
-      { id: 'leifang', name: 'Leifang' },
-      { id: 'raidou', name: 'Raidou' },
-      { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
       { id: 'zack', name: 'Zack' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1042,6 +675,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'dead-or-alive-2',
     name: "Dead or Alive 2",
     developer: "Tecmo",
+    releaseYear: 1999,
     characters: [
       { id: 'ayane', name: 'Ayane' },
       { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' }
@@ -1050,30 +684,10 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 'dead-or-alive-2---complete-move-list-(exhaustive)',
-    name: "Dead or Alive 2 - Complete Move List (Exhaustive)",
-    developer: "Tecmo",
-    characters: [
-      { id: 'ayane', name: 'Ayane' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'ein', name: 'Ein' },
-      { id: 'gen-fu', name: 'Gen Fu' },
-      { id: 'helena', name: 'Helena' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'kasumi', name: 'Kasumi' },
-      { id: 'leifang', name: 'Leifang' },
-      { id: 'leon', name: 'Leon' },
-      { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'zack', name: 'Zack' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  {
     id: 'dead-or-alive-3',
     name: "Dead or Alive 3",
     developer: "Tecmo",
+    releaseYear: 2001,
     characters: [
       { id: 'brad-wong', name: 'Brad Wong' },
       { id: 'christie', name: 'Christie' }
@@ -1082,32 +696,10 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 'dead-or-alive-3---complete-move-list-(exhaustive)',
-    name: "Dead or Alive 3 - Complete Move List (Exhaustive)",
-    developer: "Tecmo",
-    characters: [
-      { id: 'ayane', name: 'Ayane' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'brad-wong', name: 'Brad Wong' },
-      { id: 'christie', name: 'Christie' },
-      { id: 'ein', name: 'Ein' },
-      { id: 'hayate', name: 'Hayate' },
-      { id: 'helena-douglas', name: 'Helena Douglas' },
-      { id: 'hitomi', name: 'Hitomi' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'kasumi', name: 'Kasumi' },
-      { id: 'leifang', name: 'Leifang' },
-      { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'zack', name: 'Zack' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  {
     id: 'dead-or-alive-4',
     name: "Dead or Alive 4",
     developer: "Tecmo",
+    releaseYear: 2005,
     characters: [
       { id: 'eliot', name: 'Eliot' },
       { id: 'kokoro', name: 'Kokoro' }
@@ -1116,30 +708,10 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 'dead-or-alive-4---complete-move-list-(exhaustive)',
-    name: "Dead or Alive 4 - Complete Move List (Exhaustive)",
-    developer: "Tecmo",
-    characters: [
-      { id: 'ayane', name: 'Ayane' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'elliot', name: 'Elliot' },
-      { id: 'helena', name: 'Helena' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'kasumi', name: 'Kasumi' },
-      { id: 'kokoro', name: 'Kokoro' },
-      { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
-      { id: 'spartan-458-(nicole)', name: 'Spartan-458 (Nicole)' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'zack', name: 'Zack' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  {
     id: 'dead-or-alive-5',
     name: "Dead or Alive 5",
     developer: "Tecmo",
+    releaseYear: 2012,
     characters: [
       { id: 'mila', name: 'Mila' },
       { id: 'rig', name: 'Rig' }
@@ -1148,34 +720,10 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 'dead-or-alive-5-last-round---complete-move-list-(exhaustive)',
-    name: "Dead or Alive 5 Last Round - Complete Move List (Exhaustive)",
-    developer: "Tecmo",
-    characters: [
-      { id: 'akira-yuki-(guest)', name: 'Akira Yuki (Guest)' },
-      { id: 'ayane', name: 'Ayane' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'hitomi', name: 'Hitomi' },
-      { id: 'honoka', name: 'Honoka' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'kasumi', name: 'Kasumi' },
-      { id: 'kokoro', name: 'Kokoro' },
-      { id: 'leifang', name: 'Leifang' },
-      { id: 'marie-rose', name: 'Marie Rose' },
-      { id: 'nyotengu', name: 'Nyotengu' },
-      { id: 'rig', name: 'Rig' },
-      { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'zack', name: 'Zack' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  {
     id: 'dnf-duel',
     name: "DNF Duel",
     developer: "Arc System Works",
+    releaseYear: 1998,
     characters: [
       { id: 'berserker', name: 'Berserker' },
       { id: 'grappler', name: 'Grappler' },
@@ -1189,6 +737,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'doa6',
     name: "Dead or Alive 6 - Complete Move List (Exhaustive)",
     developer: "Tecmo",
+    releaseYear: 1998,
     characters: [
       { id: 'ayane', name: 'Ayane' },
       { id: 'bass-armstrong', name: 'Bass Armstrong' },
@@ -1219,30 +768,10 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 'double-dragon-(neo-geo)---complete-move-list',
-    name: "Double Dragon (Neo Geo) - Complete Move List",
-    developer: "SNK",
-    characters: [
-      { id: 'abobo', name: 'Abobo' },
-      { id: 'amon', name: 'Amon' },
-      { id: 'billy-lee', name: 'Billy Lee' },
-      { id: 'burnov', name: 'Burnov' },
-      { id: 'cheng-fu', name: 'Cheng-Fu' },
-      { id: 'duke', name: 'Duke' },
-      { id: 'dulton', name: 'Dulton' },
-      { id: 'eddie', name: 'Eddie' },
-      { id: 'jimmy-lee', name: 'Jimmy Lee' },
-      { id: 'marian', name: 'Marian' },
-      { id: 'rebecca', name: 'Rebecca' },
-      { id: 'shuko', name: 'Shuko' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  {
     id: 'dragon-ball-fighterz',
     name: "Dragon Ball FighterZ",
     developer: "Arc System Works",
+    releaseYear: 2018,
     characters: [
       { id: 'frieza', name: 'Frieza' },
       { id: 'goku-(super-saiyan)', name: 'Goku (Super Saiyan)' },
@@ -1253,29 +782,10 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 'far-east-of-eden-kabuki-klash---complete-move-list',
-    name: "Far East of Eden: Kabuki Klash - Complete Move List",
-    developer: "SNK",
-    characters: [
-      { id: 'gokuraku', name: 'Gokuraku' },
-      { id: 'jyushiro', name: 'Jyushiro' },
-      { id: 'kabuki', name: 'Kabuki' },
-      { id: 'kinu', name: 'Kinu' },
-      { id: 'lucifeller', name: 'Lucifeller' },
-      { id: 'manjimaru', name: 'Manjimaru' },
-      { id: 'manto-ace', name: 'Manto Ace' },
-      { id: 'orochimaru', name: 'Orochimaru' },
-      { id: 'tsunade', name: 'Tsunade' },
-      { id: 'yagumo', name: 'Yagumo' },
-      { id: 'ziria', name: 'Ziria' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  {
     id: 'fatal-fury-2',
     name: "Fatal Fury 2",
     developer: "SNK",
+    releaseYear: 1992,
     characters: [
       { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
       { id: 'mai-shiranui', name: 'Mai Shiranui' }
@@ -1287,6 +797,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'fatal-fury-3-road-to-the-final-victory',
     name: "Fatal Fury 3: Road to the Final Victory",
     developer: "SNK",
+    releaseYear: 1995,
     characters: [
       { id: 'blue-mary', name: 'Blue Mary' },
       { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' }
@@ -1298,6 +809,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'fatal-fury-king-of-fighters',
     name: "Fatal Fury: King of Fighters",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'andy-bogard', name: 'Andy Bogard' },
       { id: 'terry-bogard', name: 'Terry Bogard' }
@@ -1309,6 +821,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'fatal-fury-special',
     name: "Fatal Fury Special",
     developer: "SNK",
+    releaseYear: 1993,
     characters: [
       { id: 'geese-howard', name: 'Geese Howard' },
       { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' }
@@ -1320,6 +833,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'fighters-megamix',
     name: "Fighters Megamix",
     developer: "Sega",
+    releaseYear: 1996,
     characters: [
       { id: 'akira-yuki-(vf)', name: 'Akira Yuki (VF)' },
       { id: 'bahn-(vipers)', name: 'Bahn (Vipers)' },
@@ -1332,49 +846,10 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   },
   
   {
-    id: 'fighters-megamix---exhaustive-roster-move-list',
-    name: "Fighters Megamix - Exhaustive Roster Move List",
-    developer: "Sega",
-    characters: [
-      { id: 'akira-yuki-(vf)', name: 'Akira Yuki (VF)' },
-      { id: 'bahn-(vipers)', name: 'Bahn (Vipers)' },
-      { id: 'bark-the-polar-bear-(sonic-fighters)', name: 'Bark the Polar Bear (Sonic Fighters)' },
-      { id: 'bean-the-dynamite-(sonic-fighters)', name: 'Bean the Dynamite (Sonic Fighters)' },
-      { id: 'deku-(bean-bag)', name: 'Deku (Bean Bag)' },
-      { id: 'dural-(vf-boss)', name: 'Dural (VF Boss)' },
-      { id: 'grace-(vipers)', name: 'Grace (Vipers)' },
-      { id: 'honey-(vipers)', name: 'Honey (Vipers)' },
-      { id: 'hornet-(daytona-usa)', name: 'Hornet (Daytona USA)' },
-      { id: 'jacky-bryant-(vf)', name: 'Jacky Bryant (VF)' },
-      { id: 'jane-(vipers)', name: 'Jane (Vipers)' },
-      { id: 'janet-marshall-(virtua-cop-2)', name: 'Janet Marshall (Virtua Cop 2)' },
-      { id: 'jeffry-mcwild-(vf)', name: 'Jeffry McWild (VF)' },
-      { id: 'joe-(vipers)', name: 'Joe (Vipers)' },
-      { id: 'kage-maru-(vf)', name: 'Kage-Maru (VF)' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'kids-sarah', name: 'Kids Sarah' },
-      { id: 'kumachan--panda-(fighting-vipers)', name: 'Kumachan / Panda (Fighting Vipers)' },
-      { id: 'lau-chan-(vf)', name: 'Lau Chan (VF)' },
-      { id: 'lion-rafale-(vf)', name: 'Lion Rafale (VF)' },
-      { id: 'pai-chan-(vf)', name: 'Pai Chan (VF)' },
-      { id: 'palm-tree-(sega-logo)', name: 'Palm Tree (Sega Logo)' },
-      { id: 'picky-(vipers)', name: 'Picky (Vipers)' },
-      { id: 'raxel-(vipers)', name: 'Raxel (Vipers)' },
-      { id: 'rent-a-hero', name: 'Rent-A-Hero' },
-      { id: 'sanman-(vipers)', name: 'Sanman (Vipers)' },
-      { id: 'sarah-bryant-(vf)', name: 'Sarah Bryant (VF)' },
-      { id: 'shun-di-(vf)', name: 'Shun Di (VF)' },
-      { id: 'siba-(vf-proto)', name: 'Siba (VF Proto)' },
-      { id: 'tokio-(vipers)', name: 'Tokio (Vipers)' },
-      { id: 'wolf-hawkfield-(vf)', name: 'Wolf Hawkfield (VF)' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  
-  {
     id: 'fighting-ex-layer',
     name: "Fighting EX Layer",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'garuda', name: 'Garuda' },
       { id: 'kairi', name: 'Kairi' },
@@ -1387,6 +862,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'fighting-vipers',
     name: "Fighting Vipers",
     developer: "Sega",
+    releaseYear: 1995,
     characters: [
       { id: 'bahn', name: 'Bahn' },
       { id: 'grace', name: 'Grace' }
@@ -1398,6 +874,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'fighting-vipers-2',
     name: "Fighting Vipers 2",
     developer: "Sega",
+    releaseYear: 1998,
     characters: [
       { id: 'charlie', name: 'Charlie' },
       { id: 'emi', name: 'Emi' }
@@ -1409,6 +886,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'galaxy-fight-universal-warriors',
     name: "Galaxy Fight: Universal Warriors",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'alvan', name: 'Alvan' },
       { id: 'g-done', name: 'G-Done' },
@@ -1426,6 +904,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'garou-mark-of-the-wolves',
     name: "Garou: Mark of the Wolves",
     developer: "SNK",
+    releaseYear: 1999,
     characters: [
       { id: 'b-jenet', name: 'B. Jenet' },
       { id: 'rock-howard', name: 'Rock Howard' }
@@ -1437,6 +916,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'golden-axe-the-duel',
     name: "Golden Axe: The Duel",
     developer: "Sega",
+    releaseYear: 1998,
     characters: [
       { id: 'death-adder', name: 'Death Adder' },
       { id: 'doc', name: 'Doc' },
@@ -1456,6 +936,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'granblue-fantasy-versus-rising',
     name: "Granblue Fantasy Versus: Rising",
     developer: "Arc System Works",
+    releaseYear: 1998,
     characters: [
       { id: 'gran', name: 'Gran' },
       { id: 'katalina', name: 'Katalina' },
@@ -1468,6 +949,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'groove-on-fight',
     name: "Groove on Fight",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'chris-wayne', name: 'Chris Wayne' },
       { id: 'dame', name: 'Dame' },
@@ -1488,6 +970,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'guilty-gear',
     name: "Guilty Gear (1998)",
     developer: "Arc System Works",
+    releaseYear: 1998,
     characters: [
       { id: 'sol-badguy', name: 'Sol Badguy' }
     ],
@@ -1498,6 +981,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'guilty-gear--strive-',
     name: "Guilty Gear -Strive- (Ver. 2.00)",
     developer: "Arc System Works",
+    releaseYear: 2021,
     characters: [
       { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' },
       { id: 'ky-kiske', name: 'Ky Kiske' },
@@ -1511,6 +995,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'guilty-gear-x',
     name: "Guilty Gear X",
     developer: "Arc System Works",
+    releaseYear: 1998,
     characters: [
       { id: 'ky-kiske', name: 'Ky Kiske' }
     ],
@@ -1521,6 +1006,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'guilty-gear-xrd-rev-2',
     name: "Guilty Gear Xrd REV 2",
     developer: "Arc System Works",
+    releaseYear: 2017,
     characters: [
       { id: 'elphelt-valentine', name: 'Elphelt Valentine' },
       { id: 'johnny', name: 'Johnny' },
@@ -1534,6 +1020,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'guilty-gear-xx-accent-core-plus-r',
     name: "Guilty Gear XX Accent Core Plus R",
     developer: "Arc System Works",
+    releaseYear: 1998,
     characters: [
       { id: 'baiken', name: 'Baiken' }
     ],
@@ -1544,6 +1031,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'hypersf2',
     name: "Hyper Street Fighter II",
     developer: "Capcom",
+    releaseYear: 1987,
     characters: [
       { id: 'chun-li', name: 'Chun Li' },
       { id: 'ryu', name: 'Ryu' },
@@ -1556,6 +1044,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'killer-instinct-(1994)',
     name: "Killer Instinct (1994)",
     developer: "Rare",
+    releaseYear: 1994,
     characters: [
       { id: 'jago', name: 'Jago' }
     ],
@@ -1566,6 +1055,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'killer-instinct-(2013)',
     name: "Killer Instinct (2013)",
     developer: "Rare",
+    releaseYear: 2013,
     characters: [
       { id: 'fulgore', name: 'Fulgore' },
       { id: 'hisako', name: 'Hisako' }
@@ -1577,6 +1067,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'killer-instinct-2--gold',
     name: "Killer Instinct 2 / Gold",
     developer: "Rare",
+    releaseYear: 1994,
     characters: [
       { id: 'b-orchid', name: 'B. Orchid' }
     ],
@@ -1587,6 +1078,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'kizuna-encounter-super-tag-battle',
     name: "Kizuna Encounter: Super Tag Battle",
     developer: "SNK",
+    releaseYear: 1996,
     characters: [
       { id: 'sho-hayate', name: 'Sho Hayate' }
     ],
@@ -1597,6 +1089,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'last-bronx',
     name: "Last Bronx",
     developer: "Sega",
+    releaseYear: 1998,
     characters: [
       { id: 'joe', name: 'Joe' },
       { id: 'kurosawa', name: 'Kurosawa' },
@@ -1615,6 +1108,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'marvel-vs-capcom-clash-of-super-heroes',
     name: "Marvel vs. Capcom: Clash of Super Heroes",
     developer: "Capcom",
+    releaseYear: 1998,
     characters: [
       { id: 'captain-america', name: 'Captain America' },
       { id: 'gambit', name: 'Gambit' },
@@ -1635,6 +1129,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'marvel-vs-capcom-infinite',
     name: "Marvel vs. Capcom: Infinite",
     developer: "Capcom",
+    releaseYear: 2017,
     characters: [
       { id: 'captain-marvel', name: 'Captain Marvel' },
       { id: 'dante', name: 'Dante' },
@@ -1651,6 +1146,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'matrimelee',
     name: "Matrimelee (Power Instinct Matrimelee)",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'keith-wayne', name: 'Keith Wayne' }
     ],
@@ -1661,6 +1157,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'mk1',
     name: "mk1",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'scorpion', name: 'Scorpion' }
     ],
@@ -1671,6 +1168,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'mk2',
     name: "Mk2",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'scorpion', name: 'Scorpion' },
       { id: 'sub-zero', name: 'Sub-Zero' }
@@ -1682,6 +1180,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'mortal-kombat-(2011)',
     name: "Mortal Kombat (2011)",
     developer: "NetherRealm Studios",
+    releaseYear: 1998,
     characters: [
       { id: 'sub-zero', name: 'Sub-Zero' }
     ],
@@ -1692,6 +1191,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'mortal-kombat-deception',
     name: "Mortal Kombat: Deception",
     developer: "NetherRealm Studios",
+    releaseYear: 1998,
     characters: [
       { id: 'scorpion', name: 'Scorpion' },
       { id: 'sub-zero', name: 'Sub-Zero' }
@@ -1703,6 +1203,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'mortal-kombat-x',
     name: "Mortal Kombat X",
     developer: "NetherRealm Studios",
+    releaseYear: 1998,
     characters: [
       { id: 'scorpion', name: 'Scorpion' }
     ],
@@ -1713,6 +1214,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'msh',
     name: "Marvel Super Heroes",
     developer: "Capcom",
+    releaseYear: 1995,
     characters: [
       { id: 'blackheart', name: 'Blackheart' },
       { id: 'captain-america', name: 'Captain America' },
@@ -1734,6 +1236,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'mshvsf',
     name: "Marvel Super Heroes vs. Street Fighter",
     developer: "Capcom",
+    releaseYear: 1997,
     characters: [
       { id: 'akuma', name: 'Akuma' },
       { id: 'blackheart', name: 'Blackheart' },
@@ -1760,6 +1263,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'mvc2',
     name: "Mvc2",
     developer: "SNK",
+    releaseYear: 2000,
     characters: [
       { id: 'akuma', name: 'Akuma' },
       { id: 'cable', name: 'Cable' },
@@ -1789,6 +1293,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'mvci',
     name: "Marvel vs. Capcom: Infinite",
     developer: "Capcom",
+    releaseYear: 1998,
     characters: [
       { id: 'captain-marvel', name: 'Captain Marvel' },
       { id: 'iron-man', name: 'Iron Man' },
@@ -1803,6 +1308,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'night-warriors-darkstalkers-revenge',
     name: "Night Warriors: Darkstalkers",
     developer: "Capcom",
+    releaseYear: 1995,
     characters: [
       { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
       { id: 'donovan-baine', name: 'Donovan Baine' },
@@ -1816,6 +1322,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'nightwarriors',
     name: "Night Warriors: Darkstalkers",
     developer: "Capcom",
+    releaseYear: 1998,
     characters: [
       { id: 'anakaris', name: 'ANAKARIS' },
       { id: 'automatic-(auto)-mode', name: 'AUTOMATIC (AUTO) MODE' },
@@ -1856,6 +1363,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'ninja-masters-haoh-ninpo-cho',
     name: "Ninja Master",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'sasuke', name: 'Sasuke' }
     ],
@@ -1866,6 +1374,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'persona-4-arena-ultimax',
     name: "Persona 4 Arena Ultimax",
     developer: "Arc System Works",
+    releaseYear: 1998,
     characters: [
       { id: 'chie-satonaka', name: 'Chie Satonaka' },
       { id: 'yosuke-hanamura', name: 'Yosuke Hanamura' },
@@ -1878,6 +1387,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'plasma-sword-nightmare-of-bilstein',
     name: "Plasma Sword: Nightmare of Bilstein",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
       { id: 'june-lin-milliam', name: 'June Lin Milliam' },
@@ -1890,6 +1400,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'plasmasword',
     name: "Plasma Sword",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'byakko', name: 'BYAKKO' },
       { id: 'fighting-on-the-ground', name: 'FIGHTING ON THE GROUND' },
@@ -1910,6 +1421,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'pocket-fighter-(super-gem-fighter-mini-mix)',
     name: "Pocket Fighter (Super Gem Fighter Mini Mix)",
     developer: "SNK",
+    releaseYear: 1997,
     characters: [
       { id: 'felicia', name: 'Felicia' },
       { id: 'ryu', name: 'Ryu' },
@@ -1922,6 +1434,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'pocketfighter',
     name: "Pocket Fighter",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'akuma(gouki)', name: 'Akuma(Gouki)' },
       { id: 'akuma_gouki', name: 'Akuma(Gouki)' },
@@ -1948,6 +1461,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'project-justice-(rival-schools-2)',
     name: "Project Justice (Rival Schools 2)",
     developer: "SNK",
+    releaseYear: 2000,
     characters: [
       { id: 'batsu-ichimonji', name: 'Batsu Ichimonji' },
       { id: 'kyosuke-kagami', name: 'Kyosuke Kagami' },
@@ -1960,6 +1474,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'projectjustice',
     name: "Project Justice",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'akira', name: 'AKIRA' },
       { id: 'alec', name: 'ALEC' },
@@ -2025,6 +1540,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'rage-of-the-dragons',
     name: "Rage of the Dragons",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'billy-lewis', name: 'Billy Lewis' }
     ],
@@ -2035,6 +1551,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'real-bout-fatal-fury',
     name: "Real Bout Fatal Fury",
     developer: "SNK",
+    releaseYear: 1995,
     characters: [
       { id: 'terry-bogard', name: 'Terry Bogard' }
     ],
@@ -2045,6 +1562,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'real-bout-fatal-fury-2-the-newcomers',
     name: "Real Bout Fatal Fury 2: The Newcomers",
     developer: "SNK",
+    releaseYear: 1992,
     characters: [
       { id: 'rick-strowd', name: 'Rick Strowd' }
     ],
@@ -2055,6 +1573,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'real-bout-fatal-fury-special',
     name: "Real Bout Fatal Fury Special",
     developer: "SNK",
+    releaseYear: 1997,
     characters: [
       { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' }
     ],
@@ -2065,6 +1584,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'roster',
     name: "roster",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'akari-ichijou', name: 'Akari Ichijou' },
       { id: 'akari', name: 'Akari' },
@@ -2255,6 +1775,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'roster_highlights',
     name: "roster_highlights",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'adelheid-bernstein-(boss)', name: 'Adelheid Bernstein (Boss)' },
       { id: 'angel', name: 'Angel' },
@@ -2288,6 +1809,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'samurai-shodown',
     name: "Samurai Shodown",
     developer: "SNK",
+    releaseYear: 1993,
     characters: [
       { id: 'haohmaru', name: 'Haohmaru' },
       { id: 'ukyo-tachibana', name: 'Ukyo Tachibana' }
@@ -2299,6 +1821,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'samurai-shodown-(2019)',
     name: "Samurai Shodown (2019)",
     developer: "SNK",
+    releaseYear: 2019,
     characters: [
       { id: 'galford', name: 'Galford' },
       { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' },
@@ -2313,6 +1836,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'samurai-shodown-ii',
     name: "Samurai Shodown II",
     developer: "SNK",
+    releaseYear: 1993,
     characters: [
       { id: 'cham-cham', name: 'Cham Cham' },
       { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' }
@@ -2324,6 +1848,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'samurai-shodown-iii-blades-of-blood',
     name: "Samurai Shodown III: Blades of Blood",
     developer: "SNK",
+    releaseYear: 1993,
     characters: [
       { id: 'haohmaru', name: 'Haohmaru (Bust Style / Rasetsu)' }
     ],
@@ -2334,6 +1859,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'samurai-shodown-iv-amakusas-revenge',
     name: "Samurai Shodown IV: Amakusa",
     developer: "SNK",
+    releaseYear: 1993,
     characters: [
       { id: 'kazuki-kazama', name: 'Kazuki Kazama (Slash)' },
       { id: 'sogetsu-kazama', name: 'Sogetsu Kazama (Slash)' }
@@ -2345,6 +1871,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'samurai-shodown-v',
     name: "Samurai Shodown V",
     developer: "SNK",
+    releaseYear: 1993,
     characters: [
       { id: 'yoshitora-tokugawa', name: 'Yoshitora Tokugawa' }
     ],
@@ -2355,6 +1882,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'samurai-shodown-v-special',
     name: "Samurai Shodown V Special",
     developer: "SNK",
+    releaseYear: 1993,
     characters: [
       { id: 'galford', name: 'Galford' },
       { id: 'mina-majikina', name: 'Mina Majikina' }
@@ -2366,6 +1894,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'sf2',
     name: "Super Street Fighter II Turbo",
     developer: "Capcom",
+    releaseYear: 1991,
     characters: [
       { id: 'akuma', name: 'Akuma' },
       { id: 'alex', name: 'Alex' },
@@ -2417,6 +1946,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'sf31',
     name: "Street Fighter III: New Generation",
     developer: "Capcom",
+    releaseYear: 1987,
     characters: [
       { id: 'alex', name: 'Alex' },
       { id: 'ryu', name: 'Ryu' }
@@ -2428,6 +1958,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'sf32i',
     name: "Street Fighter III: 2nd Impact - Giant Attack",
     developer: "Capcom",
+    releaseYear: 1997,
     characters: [
       { id: 'hugo', name: 'Hugo' },
       { id: 'urien', name: 'Urien' }
@@ -2439,6 +1970,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'sf33s',
     name: "Street Fighter III: 3rd Strike - Fight for the Future",
     developer: "Capcom",
+    releaseYear: 1999,
     characters: [
       { id: 'chun-li', name: 'Chun Li' },
       { id: 'makoto', name: 'Makoto' },
@@ -2451,6 +1983,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'sf6',
     name: "Street Fighter 6",
     developer: "Capcom",
+    releaseYear: 2023,
     characters: [
       { id: 'aki', name: 'A.K.I.' },
       { id: 'akuma', name: 'Akuma' },
@@ -2489,6 +2022,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'sfa1',
     name: "Street Fighter Alpha 1",
     developer: "Capcom",
+    releaseYear: 1995,
     characters: [
       { id: 'akuma', name: 'Akuma' },
       { id: 'charlie', name: 'Charlie' },
@@ -2503,6 +2037,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'sfa2',
     name: "Street Fighter Alpha 2",
     developer: "Capcom",
+    releaseYear: 1996,
     characters: [
       { id: 'rolento', name: 'Rolento' },
       { id: 'ryu', name: 'Ryu' },
@@ -2515,6 +2050,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'sfa3',
     name: "Street Fighter Alpha 3",
     developer: "Capcom",
+    releaseYear: 1998,
     characters: [
       { id: 'adon', name: 'Adon' },
       { id: 'akuma-(gouki)', name: 'Akuma (Gouki)' },
@@ -2588,6 +2124,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'snk-heroines-tag-team-frenzy',
     name: "SNK Heroines: Tag Team Frenzy",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'athena-asamiya', name: 'Athena Asamiya' }
     ],
@@ -2598,6 +2135,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'snk-vs-capcom-svc-chaos',
     name: "SNK vs. Capcom: SVC Chaos",
     developer: "Capcom",
+    releaseYear: 2003,
     characters: [
       { id: 'geese-howard', name: 'Geese Howard' }
     ],
@@ -2608,6 +2146,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'ssf2',
     name: "Super Street Fighter II: The New Challengers",
     developer: "Capcom",
+    releaseYear: 1993,
     characters: [
       { id: 'cammy', name: 'Cammy' },
       { id: 'dee-jay', name: 'Dee Jay' },
@@ -2621,6 +2160,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'street-fighter-6',
     name: "Street Fighter 6",
     developer: "Capcom",
+    releaseYear: 2023,
     characters: [
       { id: 'aki', name: 'A.K.I.' },
       { id: 'akuma', name: 'Akuma' },
@@ -2652,6 +2192,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'street-fighter-alpha-3',
     name: "Street Fighter Alpha 3",
     developer: "Capcom",
+    releaseYear: 1998,
     characters: [
       { id: 'adon', name: 'Adon' },
       { id: 'akuma-(gouki)', name: 'Akuma (Gouki)' },
@@ -2686,6 +2227,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'street-fighter-ex3',
     name: "Street Fighter EX3",
     developer: "Capcom",
+    releaseYear: 1998,
     characters: [
       { id: 'kairi', name: 'Kairi' },
       { id: 'ryu', name: 'Ryu' },
@@ -2698,6 +2240,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'street-fighter-iii-3rd-strike',
     name: "Street Fighter III: 3rd Strike",
     developer: "Capcom",
+    releaseYear: 1998,
     characters: [
       { id: 'akuma', name: 'Akuma' },
       { id: 'alex', name: 'Alex' },
@@ -2726,6 +2269,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'street-fighter-v-champion-edition',
     name: "Street Fighter V: Champion Edition",
     developer: "Capcom",
+    releaseYear: 1998,
     characters: [
       { id: 'chun-li', name: 'Chun-Li' },
       { id: 'luke', name: 'Luke' },
@@ -2739,6 +2283,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'super-street-fighter-ii-turbo',
     name: "Super Street Fighter II Turbo",
     developer: "Capcom",
+    releaseYear: 1994,
     characters: [
       { id: 'akuma', name: 'Akuma' },
       { id: 'balrog', name: 'Balrog' },
@@ -2765,6 +2310,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 't8',
     name: "t8",
     developer: "SNK",
+    releaseYear: 2024,
     characters: [
       { id: 'alisa', name: 'Alisa' },
       { id: 'anna-williams', name: 'ANNA WILLIAMS' },
@@ -2814,6 +2360,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'tatsunoko-vs-capcom-ultimate-all-stars',
     name: "Tatsunoko vs. Capcom: Ultimate All-Stars",
     developer: "Capcom",
+    releaseYear: 1998,
     characters: [
       { id: 'casshern', name: 'Casshern' },
       { id: 'chun-li', name: 'Chun-Li' },
@@ -2828,6 +2375,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'the-king-of-fighters-2000',
     name: "The King of Fighters 2000",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'vanessa', name: 'Vanessa' }
     ],
@@ -2838,6 +2386,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'the-king-of-fighters-2001',
     name: "The King of Fighters 2001",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'k9999', name: 'K9999' }
     ],
@@ -2848,6 +2397,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'the-king-of-fighters-2002',
     name: "The King of Fighters 2002",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'kula-diamond', name: 'Kula Diamond' }
     ],
@@ -2858,6 +2408,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'the-king-of-fighters-2003',
     name: "The King of Fighters 2003",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'ash-crimson', name: 'Ash Crimson' }
     ],
@@ -2868,6 +2419,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'the-king-of-fighters-94',
     name: "The King of Fighters ",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' }
     ],
@@ -2878,6 +2430,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'the-king-of-fighters-95',
     name: "The King of Fighters ",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'iori-yagami', name: 'Iori Yagami' }
     ],
@@ -2888,6 +2441,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'the-king-of-fighters-96',
     name: "The King of Fighters ",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'chizuru-kagura', name: 'Chizuru Kagura' }
     ],
@@ -2898,6 +2452,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'the-king-of-fighters-97',
     name: "The King of Fighters ",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' }
     ],
@@ -2908,6 +2463,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'the-king-of-fighters-98',
     name: "The King of Fighters ",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'rugal-bernstein', name: 'Rugal Bernstein' }
     ],
@@ -2918,6 +2474,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'the-king-of-fighters-98-ultimate-match',
     name: "The King of Fighters ",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'athena-asamiya', name: 'Athena Asamiya' },
       { id: 'chris', name: 'Chris' },
@@ -2935,6 +2492,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'the-king-of-fighters-99',
     name: "The King of Fighters ",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'k', name: 'K\'' }
     ],
@@ -2945,6 +2503,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'the-king-of-fighters-xiii',
     name: "The King of Fighters XIII",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' }
     ],
@@ -2955,6 +2514,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'the-king-of-fighters-xiv',
     name: "The King of Fighters XIV",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'shunei', name: 'Shun\'ei' }
     ],
@@ -2965,6 +2525,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'the-king-of-fighters-xv',
     name: "The King of Fighters XV",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'ash-crimson', name: 'Ash Crimson' },
       { id: 'isla', name: 'Isla' },
@@ -2978,6 +2539,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'the-last-blade',
     name: "The Last Blade",
     developer: "SNK",
+    releaseYear: 1997,
     characters: [
       { id: 'kaede', name: 'Kaede' }
     ],
@@ -2988,6 +2550,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'the-last-blade-2',
     name: "The Last Blade 2",
     developer: "SNK",
+    releaseYear: 1997,
     characters: [
       { id: 'kaede-(awakened)', name: 'Kaede (Awakened)' },
       { id: 'moriya-minakata', name: 'Moriya Minakata' },
@@ -3001,6 +2564,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'toshinden3',
     name: "Toshinden3",
     developer: "Tamsoft",
+    releaseYear: 1998,
     characters: [
       { id: 'abel', name: 'Abel' },
       { id: 'adam', name: 'Adam' },
@@ -3036,6 +2600,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'ultimate-marvel-vs-capcom-3',
     name: "Ultimate Marvel vs. Capcom 3",
     developer: "Capcom",
+    releaseYear: 1998,
     characters: [
       { id: 'dante', name: 'Dante' },
       { id: 'doctor-doom', name: 'Doctor Doom' },
@@ -3055,6 +2620,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'ultimate-mortal-kombat-3',
     name: "Ultimate Mortal Kombat 3",
     developer: "NetherRealm Studios",
+    releaseYear: 1998,
     characters: [
       { id: 'smoke-(human)', name: 'Smoke (Human)' }
     ],
@@ -3065,6 +2631,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'ultra-street-fighter-iv',
     name: "Ultra Street Fighter IV",
     developer: "Capcom",
+    releaseYear: 1998,
     characters: [
       { id: 'akuma', name: 'Akuma' },
       { id: 'chun-li', name: 'Chun-Li' },
@@ -3079,6 +2646,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'umvc3',
     name: "Ultimate Marvel vs. Capcom 3",
     developer: "Capcom",
+    releaseYear: 1998,
     characters: [
       { id: 'dante', name: 'Dante' },
       { id: 'doctor-doom', name: 'Doctor Doom' },
@@ -3098,6 +2666,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'under-night-in-birth-ii-[sysceles]',
     name: "Under Night In-Birth II [Sys:Celes]",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'hyde', name: 'Hyde' },
       { id: 'linne', name: 'Linne' },
@@ -3110,6 +2679,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'vampire-hunter-2-darkstalkers-revenge',
     name: "Vampire Hunter 2: Darkstalkers",
     developer: "Capcom",
+    releaseYear: 1997,
     characters: [
       { id: 'donovan-baine', name: 'Donovan Baine' },
       { id: 'huitzil-(phobos)', name: 'Huitzil (Phobos)' },
@@ -3122,6 +2692,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'vampire-savior-2-the-lord-of-vampire',
     name: "Vampire Savior 2: The Lord of Vampire",
     developer: "Capcom",
+    releaseYear: 1997,
     characters: [
       { id: 'bb-hood-(bulleta)', name: 'B.B. Hood (Bulleta)' },
       { id: 'jedah-dohma', name: 'Jedah Dohma' },
@@ -3134,6 +2705,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'vampire-savior-the-lord-of-vampire',
     name: "Vampire Savior: The Lord of Vampire",
     developer: "Capcom",
+    releaseYear: 1997,
     characters: [
       { id: 'anakaris', name: 'Anakaris' },
       { id: 'bb-hood-(bulleta)', name: 'B.B. Hood (Bulleta)' },
@@ -3158,6 +2730,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'vampirehunter2',
     name: "Vampire Hunter 2",
     developer: "Capcom",
+    releaseYear: 1998,
     characters: [
       { id: 'donovan', name: 'Donovan' },
       { id: 'pyron', name: 'Pyron' }
@@ -3169,6 +2742,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'vampiresavior',
     name: "Vampire Savior",
     developer: "Capcom",
+    releaseYear: 1998,
     characters: [
       { id: 'anakaris', name: 'ANAKARIS' },
       { id: 'aulbath', name: 'AULBATH' },
@@ -3211,6 +2785,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'vampiresavior2',
     name: "Vampire Savior 2",
     developer: "Capcom",
+    releaseYear: 1998,
     characters: [
       { id: 'bb-hood', name: 'Bb Hood' },
       { id: 'jedah', name: 'Jedah' }
@@ -3222,6 +2797,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'vf1',
     name: "Virtua Fighter 1 - Complete Move List (Exhaustive)",
     developer: "Sega",
+    releaseYear: 1998,
     characters: [
       { id: 'akira-yuki', name: 'Akira Yuki' },
       { id: 'dural', name: 'Dural' },
@@ -3240,6 +2816,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'vf2',
     name: "Vf2",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'akira-yuki', name: 'Akira Yuki' },
       { id: 'jacky-bryant', name: 'Jacky Bryant' },
@@ -3259,6 +2836,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'vf3',
     name: "Vf3",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'akira-yuki', name: 'Akira Yuki' },
       { id: 'aoi-umenokoji', name: 'Aoi Umenokoji' },
@@ -3276,6 +2854,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'vf4',
     name: "Vf4",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'akira-yuki', name: 'Akira Yuki' },
       { id: 'brad-burns', name: 'Brad Burns' },
@@ -3292,6 +2871,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'vf5',
     name: "Virtua Fighter 5 Ultimate Showdown - Complete Move List (Exhaustive)",
     developer: "Sega",
+    releaseYear: 1998,
     characters: [
       { id: 'akira-yuki', name: 'Akira Yuki' },
       { id: 'aoi-umenokouji', name: 'Aoi Umenokouji' },
@@ -3320,6 +2900,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'virtua-fighter',
     name: "Virtua Fighter",
     developer: "Sega",
+    releaseYear: 1998,
     characters: [
       { id: 'akira-yuki', name: 'Akira Yuki' },
       { id: 'jacky-bryant', name: 'Jacky Bryant' }
@@ -3331,6 +2912,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'waku-waku-7',
     name: "Waku Waku 7",
     developer: "SNK",
+    releaseYear: 1996,
     characters: [
       { id: 'arina-makihara', name: 'Arina Makihara' }
     ],
@@ -3341,6 +2923,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'world-heroes-perfect',
     name: "World Heroes Perfect",
     developer: "SNK",
+    releaseYear: 1995,
     characters: [
       { id: 'hanzo', name: 'Hanzo' }
     ],
@@ -3351,6 +2934,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'xmcoa',
     name: "Xmcoa",
     developer: "SNK",
+    releaseYear: 1998,
     characters: [
       { id: 'colossus', name: 'Colossus' },
       { id: 'cyclops', name: 'Cyclops' },
@@ -3364,6 +2948,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'xmvsf',
     name: "X-Men vs. Street Fighter",
     developer: "Capcom",
+    releaseYear: 1996,
     characters: [
       { id: 'chun-li', name: 'Chun-Li' },
       { id: 'cyclops', name: 'Cyclops' },

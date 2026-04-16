@@ -90,6 +90,7 @@ function getGameTheme(game: GameDefinition) {
 export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
   const [favorites, setFavorites] = useState<string[]>([]);
   const [developerFilter, setDeveloperFilter] = useState<string>('All');
+  const [sortBy, setSortBy] = useState<'alpha' | 'date'>('date');
   const { theme } = useTheme();
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
   
@@ -123,7 +124,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
     el.style.setProperty('--mouse-y', `${y}%`);
   };
   
-  // Sort favorites first, then filter by developer
+  // Sort favorites first, then apply selected sort order
   const filteredAndSortedGames = [...SUPPORTED_GAMES]
     .filter(g => developerFilter === 'All' || g.developer === developerFilter)
     .sort((a, b) => {
@@ -131,6 +132,12 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
       const bFav = favorites.includes(b.id);
       if (aFav && !bFav) return -1;
       if (!aFav && bFav) return 1;
+      
+      if (sortBy === 'date') {
+        const yearA = a.releaseYear || 1998;
+        const yearB = b.releaseYear || 1998;
+        if (yearA !== yearB) return yearB - yearA;
+      }
       return a.name.localeCompare(b.name);
     });
 
@@ -214,6 +221,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
           flexWrap: 'wrap',
           maxWidth: '800px',
           margin: '0 auto',
+          marginBottom: '1.25rem',
         }}>
           {allDevelopers.map(dev => {
             const isActive = developerFilter === dev;
@@ -249,6 +257,36 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
                 {dev}
               </button>
             );
+          })}
+        </div>
+
+        {/* Sort Controls */}
+        <div style={{
+          display: 'flex',
+          gap: '0.5rem',
+          justifyContent: 'center',
+        }}>
+          {['alpha', 'date'].map((sortType) => {
+            const isActive = sortBy === sortType;
+            return (
+              <button
+                key={sortType}
+                onClick={() => setSortBy(sortType as 'alpha' | 'date')}
+                style={{
+                  padding: '0.4rem 1.25rem',
+                  borderRadius: 'var(--radius-full)',
+                  border: `1px solid ${isActive ? 'var(--accent-indigo)' : 'transparent'}`,
+                  background: isActive ? 'var(--accent-indigo)' : 'var(--bg-glass)',
+                  color: isActive ? '#ffffff' : 'var(--text-secondary)',
+                  fontSize: '0.85rem',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  transition: 'all 0.3s ease',
+                }}
+              >
+                {sortType === 'alpha' ? 'Sort A-Z' : 'Sort by Date'}
+              </button>
+            )
           })}
         </div>
       </header>
@@ -424,7 +462,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
                 position: 'relative',
                 zIndex: 1,
               }}>
-                {theme.tagline}
+                {theme.tagline} {game.releaseYear && <span style={{opacity:0.6, fontStyle:'normal', marginLeft:'0.25rem'}}>• {game.releaseYear}</span>}
               </div>
 
               {/* Fighter count badge */}

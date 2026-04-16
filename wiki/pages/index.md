@@ -20,19 +20,14 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ---
 
-## 🎮 Games (168)
+## 🎮 Games (151)
 
 ### Complete Roster
 | Page | Game | Characters |
 |------|------|-----------|
-| [[aggressors-of-dark-kombat---complete-move-list]] | Aggressors of Dark Kombat - Complete Move List | 8 |
 | [[art-of-fighting]] | Art of Fighting | 1 |
-| [[art-of-fighting---complete-move-list]] | Art of Fighting - Complete Move List | 9 |
-| [[art-of-fighting-2---complete-move-list]] | Art of Fighting 2 - Complete Move List | 10 |
-| [[art-of-fighting-3---complete-move-list]] | Art of Fighting 3 - Complete Move List | 9 |
 | [[art-of-fighting-3-the-path-of-the-warrior]] | Art of Fighting 3: The Path of the Warrior | 1 |
 | [[astra-superstars]] | Astra Superstars | 3 |
-| [[astra-superstars---exhaustive-roster-move-list]] | Astra Superstars - Exhaustive Roster Move List | 10 |
 | [[asuka-120%-burning-fest-limited]] | Asuka 120% Burning Fest Limited | 4 |
 | [[blazblue-central-fiction]] | BlazBlue: Central Fiction | 3 |
 | [[blazblue-cross-tag-battle]] | BlazBlue: Cross Tag Battle | 1 |
@@ -41,17 +36,13 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[bloody-roar-3]] | Bloody Roar 3 | 2 |
 | [[bloody-roar-4]] | Bloody Roar 4 | 1 |
 | [[bloody-roar-primal-fury--extreme]] | Bloody Roar: Primal Fury / Extreme | 1 |
-| [[breakers---complete-move-list]] | Breakers - Complete Move List | 8 |
 | [[breakers-revenge]] | Breakers Revenge | 1 |
-| [[breakers-revenge---complete-move-list]] | Breakers Revenge - Complete Move List | 10 |
 | [[capcom-fighting-jam]] | Capcom Fighting Jam | 6 |
 | [[capcom-fighting-jam-(capcom-fighting-evolution)]] | Capcom Fighting Jam (Capcom Fighting Evolution) | 24 |
 | [[capcom-vs-snk-2-mark-of-the-millennium-2001]] | Capcom vs. SNK 2: Mark of the Millennium 2001 | 16 |
 | [[capcom-vs-snk-millennium-fight-2000]] | Capcom vs. SNK: Millennium Fight 2000 | 5 |
 | [[capcom-vs-snk-millennium-fight-2000-pro]] | Capcom vs. SNK: Millennium Fight 2000 Pro | 32 |
 | [[cfj]] | Capcom Fighting Jam | 62 |
-| [[characters]] | characters | 218 |
-| [[common_normals]] | common_normals | 12 |
 | [[cota]] | X-Men: Children of the Atom | 2 |
 | [[cotw]] | Fatal Fury: City of the Wolves | 52 |
 | [[cvs1]] | Capcom vs. SNK | 35 |
@@ -62,26 +53,18 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[darkstalkers-the-night-warriors]] | Darkstalkers: The Night Warriors | 4 |
 | [[darkstalkers-the-night-warriors-(vampire-the-night-warriors)]] | Darkstalkers: The Night Warriors (Vampire: The Night Warriors) | 12 |
 | [[dead-or-alive]] | Dead or Alive | 2 |
-| [[dead-or-alive-1---complete-move-list-(exhaustive)]] | Dead or Alive 1 - Complete Move List (Exhaustive) | 9 |
 | [[dead-or-alive-2]] | Dead or Alive 2 | 2 |
-| [[dead-or-alive-2---complete-move-list-(exhaustive)]] | Dead or Alive 2 - Complete Move List (Exhaustive) | 12 |
 | [[dead-or-alive-3]] | Dead or Alive 3 | 2 |
-| [[dead-or-alive-3---complete-move-list-(exhaustive)]] | Dead or Alive 3 - Complete Move List (Exhaustive) | 14 |
 | [[dead-or-alive-4]] | Dead or Alive 4 | 2 |
-| [[dead-or-alive-4---complete-move-list-(exhaustive)]] | Dead or Alive 4 - Complete Move List (Exhaustive) | 12 |
 | [[dead-or-alive-5]] | Dead or Alive 5 | 2 |
-| [[dead-or-alive-5-last-round---complete-move-list-(exhaustive)]] | Dead or Alive 5 Last Round - Complete Move List (Exhaustive) | 16 |
 | [[dnf-duel]] | DNF Duel | 4 |
 | [[doa6]] | Dead or Alive 6 - Complete Move List (Exhaustive) | 24 |
-| [[double-dragon-(neo-geo)---complete-move-list]] | Double Dragon (Neo Geo) - Complete Move List | 12 |
 | [[dragon-ball-fighterz]] | Dragon Ball FighterZ | 4 |
-| [[far-east-of-eden-kabuki-klash---complete-move-list]] | Far East of Eden: Kabuki Klash - Complete Move List | 11 |
 | [[fatal-fury-2]] | Fatal Fury 2 | 2 |
 | [[fatal-fury-3-road-to-the-final-victory]] | Fatal Fury 3: Road to the Final Victory | 2 |
 | [[fatal-fury-king-of-fighters]] | Fatal Fury: King of Fighters | 2 |
 | [[fatal-fury-special]] | Fatal Fury Special | 2 |
 | [[fighters-megamix]] | Fighters Megamix | 6 |
-| [[fighters-megamix---exhaustive-roster-move-list]] | Fighters Megamix - Exhaustive Roster Move List | 31 |
 | [[fighting-ex-layer]] | Fighting EX Layer | 3 |
 | [[fighting-vipers]] | Fighting Vipers | 2 |
 | [[fighting-vipers-2]] | Fighting Vipers 2 | 2 |
@@ -240,6 +223,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ## Statistics
 
-- **Total pages**: 170 (168 games)
-- **Games covered**: 168
+- **Total pages**: 153 (151 games)
+- **Games covered**: 151
 - **Last updated**: 2026-04-15
