@@ -730,7 +730,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'doa6',
-    name: "Dead or Alive 6 - Complete Move List (Exhaustive)",
+    name: "Dead or Alive 6",
     developer: "Tecmo",
     releaseYear: 1998,
     characters: [
@@ -2370,7 +2370,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'the-king-of-fighters-94',
-    name: "The King of Fighters '94",
+    name: "The King of Fighters'94",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2381,7 +2381,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'the-king-of-fighters-95',
-    name: "The King of Fighters '95",
+    name: "The King of Fighters'95",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2392,7 +2392,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'the-king-of-fighters-96',
-    name: "The King of Fighters '96",
+    name: "The King of Fighters'96",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2403,7 +2403,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'the-king-of-fighters-97',
-    name: "The King of Fighters '97",
+    name: "The King of Fighters'97",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2414,7 +2414,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'the-king-of-fighters-98',
-    name: "The King of Fighters '98",
+    name: "The King of Fighters'98",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2425,7 +2425,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'the-king-of-fighters-98-ultimate-match',
-    name: "The King of Fighters '98 Ultimate Match",
+    name: "The King of Fighters'98 Ultimate Match",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2443,7 +2443,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'the-king-of-fighters-99',
-    name: "The King of Fighters '99",
+    name: "The King of Fighters'99",
     developer: "SNK",
     releaseYear: 1998,
     characters: [
@@ -2742,7 +2742,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'vf1',
-    name: "Virtua Fighter 1 - Complete Move List (Exhaustive)",
+    name: "Virtua Fighter 1",
     developer: "Sega",
     releaseYear: 1998,
     characters: [
@@ -2816,7 +2816,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
   
   {
     id: 'vf5',
-    name: "Virtua Fighter 5 Ultimate Showdown - Complete Move List (Exhaustive)",
+    name: "Virtua Fighter 5 Ultimate Showdown",
     developer: "Sega",
     releaseYear: 1998,
     characters: [
