@@ -194,7 +194,7 @@ const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: any) => {
     <div ref={triggerRef} style={{ position: 'relative', width: '100%', zIndex: isOpen ? 100 : 10 }}>
         <input
           type="text"
-          placeholder="Search games"
+          placeholder="Search Games"
           value={value}
           onChange={(e) => {
              onChange(e.target.value);
