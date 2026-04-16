@@ -68,3 +68,9 @@ Parse with: `grep "^## \[" wiki/pages/log.md | tail -10`
 - Programmatically parsed `src/games.ts` matching 1179 fighting games.
 - Auto-generated placeholder markdown shell files locally in `wiki/pages/games/` for any missing game page.
 - Entirely rebuilt `wiki/pages/index.md` rendering the synchronized table list mapping the 1179 titles.
+
+## 2026-04-16
+- Restored missing Movelist Data for SFA series.
+- Redesigned Home UI Header (Pill Menus, TikTok logo).
+- Restored History API App Routing.
+- Cleaned up unused Py scratch files and updated gitignore.
