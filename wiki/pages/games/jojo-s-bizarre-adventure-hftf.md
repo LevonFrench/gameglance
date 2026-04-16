@@ -12,7 +12,7 @@ sources: 0
 ## Overview
 *No overview generated yet.*
 
-## Characters (15 registered)
+## Characters (999 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

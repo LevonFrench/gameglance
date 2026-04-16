@@ -1,5 +1,5 @@
 ---
-title: "Ssf2"
+title: "Super Street Fighter II: The New Challengers"
 type: game
 tags: [super-street-fighter-ii]
 created: 2026-04-15
@@ -7,7 +7,7 @@ updated: 2026-04-15
 sources: 0
 ---
 
-# Ssf2
+# Super Street Fighter II: The New Challengers
 
 ## Overview
 *No overview generated yet.*

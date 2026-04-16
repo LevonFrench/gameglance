@@ -93,7 +93,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[mortal-kombat-x]] | Mortal Kombat X | 0 |
 | [[marvel-super-heroes]] | Marvel Super Heroes | 0 |
 | [[mshvsf]] | Marvel Super Heroes vs. Street Fighter | 0 |
-| [[marvel-vs-capcom-2]] | Sf33S | 0 |
+| [[marvel-vs-capcom-2]] | Marvel vs. Capcom 2 | 0 |
 | [[night-warriors-darkstalkers-revenge]] | Night Warriors: Darkstalkers | 0 |
 | [[ninja-masters-haoh-ninpo-cho]] | Ninja Master | 0 |
 | [[persona-4-arena-ultimax]] | Persona 4 Arena Ultimax | 0 |
@@ -121,7 +121,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[street-fighter-alpha-2]] | Street Fighter Alpha 2 | 0 |
 | [[snk-heroines-tag-team-frenzy]] | SNK Heroines: Tag Team Frenzy | 0 |
 | [[snk-vs-capcom-svc-chaos]] | SNK vs. Capcom: SVC Chaos | 0 |
-| [[super-street-fighter-ii]] | Ssf2 | 0 |
+| [[super-street-fighter-ii]] | Super Street Fighter II: The New Challengers | 0 |
 | [[street-fighter-6]] | Street Fighter 6 | 0 |
 | [[street-fighter-alpha-3]] | Street Fighter Alpha 3 | 0 |
 | [[street-fighter-ex3]] | Street Fighter EX3 | 0 |
@@ -151,7 +151,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[ultimate-mortal-kombat-3]] | Ultimate Mortal Kombat 3 | 0 |
 | [[ultra-street-fighter-iv]] | Ultra Street Fighter IV | 0 |
 | [[under-night-in-birth-ii-[sysceles]]] | Under Night In-Birth II [Sys:Celes] | 0 |
-| [[vampire-hunter-2-darkstalkers-revenge]] | Darkstalkers | 0 |
+| [[vampire-hunter-2-darkstalkers-revenge]] | Vampire Hunter 2: Darkstalkers | 0 |
 | [[vampire-savior-2-the-lord-of-vampire]] | Vampire Savior 2: The Lord of Vampire | 0 |
 | [[vampire-savior-the-lord-of-vampire]] | Vampire Savior: The Lord of Vampire | 0 |
 | [[vampirehunter2]] | Vampire Hunter 2 | 0 |
@@ -166,9 +166,9 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[waku-waku-7]] | Waku Waku 7 | 0 |
 | [[world-heroes-perfect]] | World Heroes Perfect | 0 |
 | [[x-men-vs-street-fighter]] | X-Men vs. Street Fighter | 0 |
-| [[jojo-s-bizarre-adventure-hftf]] | JoJo’s Bizarre Adventure_ HFTF | 15 |
-| [[savage-reign]] | Savage Reign | 11 |
-| [[voltage-fighter-gowcaizer]] | Voltage Fighter Gowcaizer | 12 |
+| [[jojo-s-bizarre-adventure-hftf]] | JoJo’s Bizarre Adventure_ HFTF | 999 |
+| [[savage-reign]] | Savage Reign | 999 |
+| [[voltage-fighter-gowcaizer]] | Voltage Fighter Gowcaizer | 999 |
 
 ---
 

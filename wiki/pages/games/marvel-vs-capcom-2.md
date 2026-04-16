@@ -1,5 +1,5 @@
 ---
-title: "Sf33S"
+title: "Marvel vs. Capcom 2"
 type: game
 tags: [marvel-vs-capcom-2]
 created: 2026-04-15
@@ -7,7 +7,7 @@ updated: 2026-04-15
 sources: 0
 ---
 
-# Sf33S
+# Marvel vs. Capcom 2
 
 ## Overview
 *No overview generated yet.*
