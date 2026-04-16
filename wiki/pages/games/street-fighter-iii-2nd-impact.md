@@ -1,18 +1,18 @@
 ---
-title: "Dead or Alive 6 - Complete Move List "
+title: "Street Fighter III: 2nd Impact - Giant Attack"
 type: game
-tags: [doa6]
+tags: [street-fighter-iii-2nd-impact]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Dead or Alive 6 - Complete Move List 
+# Street Fighter III: 2nd Impact - Giant Attack
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (24 registered)
+## Characters (0 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

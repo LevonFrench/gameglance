@@ -1,13 +1,13 @@
 ---
-title: "Guilty Gear (1998)"
+title: "X-Men vs. Street Fighter"
 type: game
-tags: [guilty-gear]
+tags: [x-men-vs-street-fighter]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Guilty Gear (1998)
+# X-Men vs. Street Fighter
 
 ## Overview
 *No overview generated yet.*

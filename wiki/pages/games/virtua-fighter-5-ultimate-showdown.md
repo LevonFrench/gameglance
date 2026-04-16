@@ -1,18 +1,18 @@
 ---
-title: "Hyper Street Fighter II"
+title: "Virtua Fighter 5 Ultimate Showdown"
 type: game
-tags: [hypersf2]
+tags: [virtua-fighter-5-ultimate-showdown]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Hyper Street Fighter II
+# Virtua Fighter 5 Ultimate Showdown
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (3 registered)
+## Characters (0 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

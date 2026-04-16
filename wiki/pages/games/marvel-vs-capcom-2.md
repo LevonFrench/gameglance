@@ -1,5 +1,5 @@
 ---
-title: "Marvel vs. Capcom 2"
+title: "Sf33S"
 type: game
 tags: [marvel-vs-capcom-2]
 created: 2026-04-15
@@ -7,12 +7,12 @@ updated: 2026-04-15
 sources: 0
 ---
 
-# Marvel vs. Capcom 2
+# Sf33S
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (20 registered)
+## Characters (0 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

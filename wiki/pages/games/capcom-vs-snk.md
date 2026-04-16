@@ -1,18 +1,18 @@
 ---
-title: "Virtua Fighter 1 - Complete Move List "
+title: "Capcom vs. SNK"
 type: game
-tags: [vf1]
+tags: [capcom-vs-snk]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Virtua Fighter 1 - Complete Move List 
+# Capcom vs. SNK
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (9 registered)
+## Characters (0 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

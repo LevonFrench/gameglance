@@ -1,18 +1,18 @@
 ---
-title: "Super Street Fighter II: The New Challengers"
+title: "Street Fighter Alpha 2"
 type: game
-tags: [ssf2]
+tags: [street-fighter-alpha-2]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Super Street Fighter II: The New Challengers
+# Street Fighter Alpha 2
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (4 registered)
+## Characters (0 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

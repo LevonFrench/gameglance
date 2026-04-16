@@ -1,18 +1,18 @@
 ---
-title: "Street Fighter III: 2nd Impact - Giant Attack"
+title: "Voltage Fighter Gowcaizer"
 type: game
-tags: [sf32i]
+tags: [voltage-fighter-gowcaizer]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Street Fighter III: 2nd Impact - Giant Attack
+# Voltage Fighter Gowcaizer
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (2 registered)
+## Characters (12 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

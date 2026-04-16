@@ -1,18 +1,18 @@
 ---
-title: "Street Fighter Alpha 2"
+title: "Fatal Fury: City of the Wolves"
 type: game
-tags: [sfa2]
+tags: [fatal-fury-city-of-the-wolves]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Street Fighter Alpha 2
+# Fatal Fury: City of the Wolves
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (3 registered)
+## Characters (0 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

@@ -1,18 +1,18 @@
 ---
-title: "Capcom vs. SNK"
+title: "Dead or Alive 6"
 type: game
-tags: [cvs1]
+tags: [dead-or-alive-6]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Capcom vs. SNK
+# Dead or Alive 6
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (35 registered)
+## Characters (0 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

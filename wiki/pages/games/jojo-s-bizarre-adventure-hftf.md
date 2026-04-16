@@ -1,18 +1,18 @@
 ---
-title: "Fatal Fury: City of the Wolves"
+title: "JoJo’s Bizarre Adventure_ HFTF"
 type: game
-tags: [cotw]
+tags: [jojo-s-bizarre-adventure-hftf]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Fatal Fury: City of the Wolves
+# JoJo’s Bizarre Adventure_ HFTF
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (52 registered)
+## Characters (15 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

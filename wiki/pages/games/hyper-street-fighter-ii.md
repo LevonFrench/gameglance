@@ -1,18 +1,18 @@
 ---
-title: "Capcom vs SNK 2"
+title: "Hyper Street Fighter II"
 type: game
-tags: [cvs2]
+tags: [hyper-street-fighter-ii]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Capcom vs SNK 2
+# Hyper Street Fighter II
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (70 registered)
+## Characters (0 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

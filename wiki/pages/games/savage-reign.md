@@ -1,18 +1,18 @@
 ---
-title: "Street Fighter Alpha 1"
+title: "Savage Reign"
 type: game
-tags: [sfa1]
+tags: [savage-reign]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# Street Fighter Alpha 1
+# Savage Reign
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (5 registered)
+## Characters (11 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics

@@ -1,18 +1,18 @@
 ---
-title: "X-Men vs. Street Fighter"
+title: "Street Fighter Alpha 1"
 type: game
-tags: [xmvsf]
+tags: [street-fighter-alpha]
 created: 2026-04-15
 updated: 2026-04-15
 sources: 0
 ---
 
-# X-Men vs. Street Fighter
+# Street Fighter Alpha 1
 
 ## Overview
 *No overview generated yet.*
 
-## Characters (5 registered)
+## Characters (0 registered)
 *(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
 
 ## Mechanics
