@@ -65,13 +65,13 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[golden-axe-the-duel]] | Golden Axe: The Duel | 0 |
 | [[granblue-fantasy-versus-rising]] | Granblue Fantasy Versus: Rising | 0 |
 | [[groove-on-fight]] | Groove on Fight | 0 |
-| [[guilty-gear]] | Guilty Gear | 0 |
+| [[guilty-gear]] | Guilty Gear (1998) | 0 |
 | [[guilty-gear-x]] | Guilty Gear X | 0 |
 | [[guilty-gear-xrd-rev-2]] | Guilty Gear Xrd REV 2 | 0 |
 | [[guilty-gear-xx-accent-core-plus-r]] | Guilty Gear XX Accent Core Plus R | 0 |
 | [[hyper-street-fighter-ii]] | Hyper Street Fighter II | 0 |
-| [[killer-instinct-(1994)]] | Killer Instinct | 0 |
-| [[killer-instinct-(2013)]] | Killer Instinct | 0 |
+| [[killer-instinct-(1994)]] | Killer Instinct (1994) | 0 |
+| [[killer-instinct-(2013)]] | Killer Instinct (2013) | 0 |
 | [[killer-instinct-2--gold]] | Killer Instinct 2 / Gold | 0 |
 | [[kizuna-encounter-super-tag-battle]] | Kizuna Encounter: Super Tag Battle | 0 |
 | [[last-bronx]] | Last Bronx | 0 |
@@ -80,7 +80,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[matrimelee]] | Matrimelee (Power Instinct Matrimelee) | 0 |
 | [[mortal-kombat-1]] | Mortal Kombat 1 | 0 |
 | [[mortal-kombat-ii]] | Mortal Kombat II | 0 |
-| [[mortal-kombat-(2011)]] | Mortal Kombat | 0 |
+| [[mortal-kombat-(2011)]] | Mortal Kombat (2011) | 0 |
 | [[mortal-kombat-deception]] | Mortal Kombat: Deception | 0 |
 | [[mortal-kombat-x]] | Mortal Kombat X | 0 |
 | [[marvel-super-heroes]] | Marvel Super Heroes | 0 |
@@ -97,7 +97,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[real-bout-fatal-fury-2-the-newcomers]] | Real Bout Fatal Fury 2: The Newcomers | 0 |
 | [[real-bout-fatal-fury-special]] | Real Bout Fatal Fury Special | 0 |
 | [[samurai-shodown]] | Samurai Shodown | 0 |
-| [[samurai-shodown-(2019)]] | Samurai Shodown | 0 |
+| [[samurai-shodown-(2019)]] | Samurai Shodown (2019) | 0 |
 | [[samurai-shodown-ii]] | Samurai Shodown II | 0 |
 | [[samurai-shodown-iii-blades-of-blood]] | Samurai Shodown III: Blades of Blood | 0 |
 | [[samurai-shodown-iv-amakusas-revenge]] | Samurai Shodown IV: Amakusa | 0 |

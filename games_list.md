@@ -46,7 +46,7 @@ GameGlance currently supports the following titles:
 - Granblue Fantasy Versus: Rising
 - Groove On Fight (Power Instinct 3)
 - Groove on Fight
-- Guilty Gear
+- Guilty Gear (1998)
 - Guilty Gear -Strive-
 - Guilty Gear X
 - Guilty Gear XX Accent Core Plus R
@@ -54,8 +54,8 @@ GameGlance currently supports the following titles:
 - Hyper Street Fighter II
 - Invincible VS Beta
 - JoJo's Bizarre Adventure: Heritage for the Future (JJBA: HFTF)
-- Killer Instinct
-- Killer Instinct
+- Killer Instinct (1994)
+- Killer Instinct (2013)
 - Killer Instinct 2 / Gold
 - Kizuna Encounter: Super Tag Battle
 - Last Bronx
@@ -66,7 +66,7 @@ GameGlance currently supports the following titles:
 - Marvel vs. Capcom: Clash of Super Heroes
 - Marvel vs. Capcom: Infinite
 - Matrimelee (Power Instinct Matrimelee)
-- Mortal Kombat
+- Mortal Kombat (2011)
 - Mortal Kombat 1
 - Mortal Kombat II
 - Mortal Kombat X
@@ -89,7 +89,7 @@ GameGlance currently supports the following titles:
 - SNK Heroines: Tag Team Frenzy
 - SNK vs. Capcom: SVC Chaos
 - Samurai Shodown
-- Samurai Shodown
+- Samurai Shodown (2019)
 - Samurai Shodown II
 - Samurai Shodown III: Blades of Blood
 - Samurai Shodown IV: Amakusa
