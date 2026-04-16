@@ -347,10 +347,10 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
-      justifyContent: 'center',
-      padding: '2rem',
+      justifyContent: (showCards || favorites.length > 0) ? 'flex-start' : 'center',
+      padding: '0 2rem 2rem 2rem',
       position: 'relative',
-      overflow: 'hidden',
+      transition: 'justify-content 0.4s ease',
     }}>
       {/* Glowing Ambient Mesh Background */}
       <AmbientMesh 
@@ -375,8 +375,14 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
         textAlign: 'center',
         marginBottom: '3rem',
         animation: 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) both',
-        position: 'relative',
+        position: 'sticky',
+        top: 0,
         zIndex: 50,
+        backgroundColor: 'var(--bg-primary)',
+        padding: '2rem 1rem 1rem 1rem',
+        width: '100vw',
+        borderBottom: (showCards || favorites.length > 0) ? '1px solid var(--border-subtle)' : 'none',
+        transition: 'all 0.3s ease',
       }}>
         <div style={{
           fontSize: '0.8rem',

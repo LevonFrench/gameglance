@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect, useCallback, useRef } from 'react';
 import type { Move } from './types';
 import { GlyphSequence } from './GlyphSequence';
 import type { ControllerType } from './glyphMap';
@@ -22,11 +22,13 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, gameDe
 
   // Options
   const [showOptions, setShowOptions] = useState(false);
+  const [displayMode, setDisplayMode] = useState<'paged' | 'smooth'>('paged');
   const [flipDelayMs, setFlipDelayMs] = useState(5000);
   const [itemsPerPage, setItemsPerPage] = useState(5);
 
   const totalPages = Math.ceil(playlist.length / itemsPerPage);
   const isDark = theme === 'dark';
+  const listContainerRef = useRef<HTMLDivElement>(null);
 
   // Progress animation
   useEffect(() => {
@@ -34,31 +36,56 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, gameDe
   }, []);
   
   useEffect(() => {
-    if (!isPlaying || totalPages <= 1) {
-      setProgress(0);
+    if (!isPlaying) {
+      if (displayMode === 'paged') setProgress(0);
       return;
     }
 
-    const startTime = Date.now();
     let animFrame: number;
 
-    const tick = () => {
-      const elapsed = Date.now() - startTime;
-      const pct = Math.min((elapsed / flipDelayMs) * 100, 100);
-      setProgress(pct);
+    if (displayMode === 'paged') {
+      if (totalPages <= 1) return;
+      const startTime = Date.now();
+      const tick = () => {
+        const elapsed = Date.now() - startTime;
+        const pct = Math.min((elapsed / flipDelayMs) * 100, 100);
+        setProgress(pct);
 
-      if (elapsed >= flipDelayMs) {
-        setCurrentPage(prev => (prev + 1) % totalPages);
-        setProgress(0);
-        return;
-      }
-
+        if (elapsed >= flipDelayMs) {
+          setCurrentPage(prev => (prev + 1) % totalPages);
+          setProgress(0);
+          return;
+        }
+        animFrame = requestAnimationFrame(tick);
+      };
       animFrame = requestAnimationFrame(tick);
-    };
+    } else {
+      // Smooth scroll mode
+      if (!listContainerRef.current) return;
+      const el = listContainerRef.current;
+      
+      // Speed: How many ms to scroll exactly one viewport height
+      const pxPerMs = el.clientHeight / flipDelayMs;
+      let lastTime = performance.now();
+      let currentScroll = el.scrollTop;
+      
+      const tick = (now: number) => {
+        const dt = now - lastTime;
+        lastTime = now;
+        currentScroll += pxPerMs * dt;
+        
+        // Handle bottom collision (auto loop)
+        if (currentScroll >= (el.scrollHeight - el.clientHeight)) {
+          currentScroll = 0; // Seamless jump back
+        }
+        el.scrollTop = currentScroll;
+        animFrame = requestAnimationFrame(tick);
+      };
+      animFrame = requestAnimationFrame(tick);
+    }
 
-    animFrame = requestAnimationFrame(tick);
     return () => cancelAnimationFrame(animFrame);
-  }, [isPlaying, flipDelayMs, totalPages, currentPage]);
+  }, [isPlaying, flipDelayMs, totalPages, currentPage, displayMode]);
 
   const goToPage = useCallback((page: number) => {
     setCurrentPage(page);
@@ -106,7 +133,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, gameDe
     );
   }
 
-  const currentItems = playlist.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage);
+  const currentItems = displayMode === 'paged' ? playlist.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage) : playlist;
   const effectiveController = gameName.toLowerCase().includes('tatsunoko') ? 'wii' : controller;
 
   return (
@@ -289,8 +316,8 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, gameDe
         </div>
       </div>
 
-      {/* Progress bar */}
-      {totalPages > 1 && isPlaying && (
+      {/* Progress bar (only in paged mode) */}
+      {displayMode === 'paged' && totalPages > 1 && isPlaying && (
         <div style={{
           height: '3px',
           background: isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.04)',
@@ -343,7 +370,38 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, gameDe
               color: 'var(--text-secondary)',
               fontWeight: 500,
             }}>
-              <span>Flip Speed</span>
+              <span>Display Mode</span>
+            </label>
+            <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.5rem' }}>
+              <button 
+                onClick={() => { setDisplayMode('paged'); setProgress(0); }}
+                style={{
+                  flex: 1, padding: '0.4rem', fontSize: '0.75rem', borderRadius: 'var(--radius-md)', background: displayMode === 'paged' ? 'var(--accent-indigo)' : 'var(--bg-input)', color: displayMode === 'paged' ? '#fff' : 'var(--text-secondary)', border: 'none', cursor: 'pointer', transition: 'all 0.2s',
+                }}
+              >
+                Paged
+              </button>
+              <button 
+                onClick={() => { setDisplayMode('smooth'); setProgress(0); }}
+                style={{
+                  flex: 1, padding: '0.4rem', fontSize: '0.75rem', borderRadius: 'var(--radius-md)', background: displayMode === 'smooth' ? 'var(--accent-indigo)' : 'var(--bg-input)', color: displayMode === 'smooth' ? '#fff' : 'var(--text-secondary)', border: 'none', cursor: 'pointer', transition: 'all 0.2s',
+                }}
+              >
+                Smooth Scroll
+              </button>
+            </div>
+          </div>
+
+          <div style={{ marginBottom: '1.25rem' }}>
+            <label style={{
+              display: 'flex',
+              justifyContent: 'space-between',
+              marginBottom: '0.4rem',
+              fontSize: '0.8rem',
+              color: 'var(--text-secondary)',
+              fontWeight: 500,
+            }}>
+              <span>{displayMode === 'paged' ? 'Flip Speed' : 'Scroll Duration'}</span>
               <span style={{ color: 'var(--text-primary)', fontFamily: "'JetBrains Mono', monospace" }}>
                 {flipDelayMs / 1000}s
               </span>
@@ -362,42 +420,45 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, gameDe
             />
           </div>
 
-          <div>
-            <label style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              marginBottom: '0.4rem',
-              fontSize: '0.8rem',
-              color: 'var(--text-secondary)',
-              fontWeight: 500,
-            }}>
-              <span>Moves per Page</span>
-              <span style={{ color: 'var(--text-primary)', fontFamily: "'JetBrains Mono', monospace" }}>
-                {itemsPerPage}
-              </span>
-            </label>
-            <input
-              type="range"
-              min="1"
-              max="15"
-              value={itemsPerPage}
-              onChange={e => {
-                setItemsPerPage(parseInt(e.target.value));
-                setCurrentPage(0);
-              }}
-              style={{
-                width: '100%',
-                accentColor: 'var(--accent-indigo)',
-                height: '4px',
-              }}
-            />
-          </div>
+          {displayMode === 'paged' && (
+            <div>
+              <label style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                marginBottom: '0.4rem',
+                fontSize: '0.8rem',
+                color: 'var(--text-secondary)',
+                fontWeight: 500,
+              }}>
+                <span>Moves per Page</span>
+                <span style={{ color: 'var(--text-primary)', fontFamily: "'JetBrains Mono', monospace" }}>
+                  {itemsPerPage}
+                </span>
+              </label>
+              <input
+                type="range"
+                min="1"
+                max="15"
+                value={itemsPerPage}
+                onChange={e => {
+                  setItemsPerPage(parseInt(e.target.value));
+                  setCurrentPage(0);
+                }}
+                style={{
+                  width: '100%',
+                  accentColor: 'var(--accent-indigo)',
+                  height: '4px',
+                }}
+              />
+            </div>
+          )}
         </div>
       )}
 
       {/* Main content: move cards */}
       <div 
         id="gameglance-list-container"
+        ref={listContainerRef}
         style={{
           flex: 1,
           padding: '0.75rem 1.25rem',
@@ -478,8 +539,8 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, gameDe
         ))}
       </div>
 
-      {/* Bottom: pagination dots */}
-      {totalPages > 1 && (
+      {/* Bottom: pagination dots (only in paged mode) */}
+      {displayMode === 'paged' && totalPages > 1 && (
         <div style={{
           padding: '0.85rem',
           display: 'flex',

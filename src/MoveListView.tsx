@@ -807,7 +807,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           id="floating-action-bar"
           style={{
             position: 'fixed',
-            bottom: 'var(--space-xl)',
+            top: 'calc(var(--space-xl) + 80px)', // Put it just below the sticky header area
             left: '50%',
             transform: 'translateX(-50%)',
             background: isDark ? 'rgba(15, 15, 30, 0.92)' : 'rgba(255, 255, 255, 0.92)',
@@ -821,7 +821,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
             boxShadow: `var(--shadow-lg), 0 0 0 1px ${isDark ? 'rgba(99, 102, 241, 0.2)' : 'rgba(99, 102, 241, 0.15)'}`,
             border: `1px solid ${isDark ? 'rgba(99, 102, 241, 0.25)' : 'rgba(99, 102, 241, 0.2)'}`,
             zIndex: 100,
-            animation: 'slideUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both',
+            animation: 'fadeInDown 0.4s cubic-bezier(0.16, 1, 0.3, 1) both',
           }}
         >
           {/* Count badge */}
