@@ -5,7 +5,8 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'art-of-fighting',
     name: "Art of Fighting",
     developer: "SNK",
-    releaseYear: 1992,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 10,
         characters: [
       { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
@@ -28,7 +29,8 @@ rosterCount: 10,
     id: 'art-of-fighting-3-the-path-of-the-warrior',
     name: "Art of Fighting 3: The Path of the Warrior",
     developer: "SNK",
-    releaseYear: 1996,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 10,
         characters: [
       
@@ -64,6 +66,7 @@ rosterCount: 10,
     name: "Astra Superstars",
     developer: "SNK",
     releaseYear: 1998,
+    platform: "Arcade Sega Saturn",
 rosterCount: 8,
         characters: [
       
@@ -219,7 +222,8 @@ rosterCount: 53,
     id: 'bloody-roar',
     name: "Bloody Roar",
     developer: "Hudson Soft",
-    releaseYear: 1997,
+    releaseYear: 2000,
+    platform: "Arcade PlayStation 2",
 rosterCount: 8,
         characters: [
       { id: 'yugo-the-wolf', name: 'Yugo the Wolf' },
@@ -237,7 +241,8 @@ rosterCount: 8,
     id: 'bloody-roar-2-bringer-of-the-new-age',
     name: "Bloody Roar 2: Bringer of the New Age",
     developer: "Hudson Soft",
-    releaseYear: 1999,
+    releaseYear: 2000,
+    platform: "Arcade PlayStation 2",
 rosterCount: 11,
         characters: [
       
@@ -261,6 +266,7 @@ rosterCount: 11,
     name: "Bloody Roar 3",
     developer: "Hudson Soft",
     releaseYear: 2000,
+    platform: "Arcade PlayStation 2",
 rosterCount: 14,
         characters: [
       { id: 'xion-the-unborn', name: 'Xion the Unborn' },
@@ -284,7 +290,8 @@ rosterCount: 14,
     id: 'bloody-roar-4',
     name: "Bloody Roar 4",
     developer: "Hudson Soft",
-    releaseYear: 2003,
+    releaseYear: 2000,
+    platform: "Arcade PlayStation 2",
 rosterCount: 18,
         characters: [
       { id: 'nagi-the-spurious', name: 'Nagi the Spurious' },
@@ -312,7 +319,8 @@ rosterCount: 18,
     id: 'bloody-roar-primal-fury--extreme',
     name: "Bloody Roar: Primal Fury / Extreme",
     developer: "Hudson Soft",
-    releaseYear: 2002,
+    releaseYear: 2000,
+    platform: "Arcade PlayStation 2",
 rosterCount: 17,
         characters: [
       
@@ -342,6 +350,7 @@ rosterCount: 17,
     name: "Breakers Revenge",
     developer: "SNK",
     releaseYear: 1998,
+    platform: "Arcade Neo Geo",
 rosterCount: 10,
         characters: [
       
@@ -526,7 +535,8 @@ rosterCount: 12,
     id: 'fatal-fury-city-of-the-wolves',
     name: "Fatal Fury: City of the Wolves",
     developer: "SNK",
-    releaseYear: 2025,
+    releaseYear: 1991,
+    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
 rosterCount: 17,
         characters: [
       
@@ -680,7 +690,8 @@ rosterCount: 10,
     id: 'dead-or-alive',
     name: "Dead or Alive",
     developer: "Tecmo",
-    releaseYear: 1996,
+    releaseYear: 2019,
+    platform: "Windows PlayStation 4 Xbox One",
 rosterCount: 11,
         characters: [
       
@@ -703,7 +714,8 @@ rosterCount: 11,
     id: 'dead-or-alive-2',
     name: "Dead or Alive 2",
     developer: "Tecmo",
-    releaseYear: 1999,
+    releaseYear: 2019,
+    platform: "Windows PlayStation 4 Xbox One",
 rosterCount: 14,
         characters: [
       
@@ -729,7 +741,8 @@ rosterCount: 14,
     id: 'dead-or-alive-3',
     name: "Dead or Alive 3",
     developer: "Tecmo",
-    releaseYear: 2001,
+    releaseYear: 2019,
+    platform: "Windows PlayStation 4 Xbox One",
 rosterCount: 18,
         characters: [
       
@@ -759,7 +772,8 @@ rosterCount: 18,
     id: 'dead-or-alive-4',
     name: "Dead or Alive 4",
     developer: "Tecmo",
-    releaseYear: 2005,
+    releaseYear: 2019,
+    platform: "Windows PlayStation 4 Xbox One",
 rosterCount: 22,
         characters: [
       
@@ -793,7 +807,8 @@ rosterCount: 22,
     id: 'dead-or-alive-5',
     name: "Dead or Alive 5",
     developer: "Tecmo",
-    releaseYear: 2012,
+    releaseYear: 2019,
+    platform: "Windows PlayStation 4 Xbox One",
 rosterCount: 34,
         characters: [
       
@@ -839,7 +854,8 @@ rosterCount: 34,
     id: 'dnf-duel',
     name: "DNF Duel",
     developer: "Arc System Works",
-    releaseYear: 1998,
+    releaseYear: 2022,
+    platform: "Windows PlayStation 4 PlayStation 5",
 rosterCount: 21,
         characters: [
       
@@ -872,7 +888,8 @@ rosterCount: 21,
     id: 'dead-or-alive-6',
     name: "Dead or Alive 6",
     developer: "Tecmo",
-    releaseYear: 1998,
+    releaseYear: 2019,
+    platform: "Windows PlayStation 4 Xbox One",
 rosterCount: 31,
         characters: [
       
@@ -950,7 +967,8 @@ rosterCount: 25,
     id: 'fatal-fury-2',
     name: "Fatal Fury 2",
     developer: "SNK",
-    releaseYear: 1992,
+    releaseYear: 1991,
+    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
 rosterCount: 12,
         characters: [
       
@@ -974,7 +992,8 @@ rosterCount: 12,
     id: 'fatal-fury-3-road-to-the-final-victory',
     name: "Fatal Fury 3: Road to the Final Victory",
     developer: "SNK",
-    releaseYear: 1995,
+    releaseYear: 1991,
+    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
 rosterCount: 13,
         characters: [
       
@@ -999,7 +1018,8 @@ rosterCount: 13,
     id: 'fatal-fury-king-of-fighters',
     name: "Fatal Fury: King of Fighters",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1991,
+    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
 rosterCount: 11,
         characters: [
       
@@ -1062,7 +1082,8 @@ rosterCount: 11,
     id: 'fatal-fury-special',
     name: "Fatal Fury Special",
     developer: "SNK",
-    releaseYear: 1993,
+    releaseYear: 1991,
+    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
 rosterCount: 15,
         characters: [
       
@@ -1133,7 +1154,8 @@ rosterCount: 32,
     id: 'fighting-ex-layer',
     name: "Fighting EX Layer",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 2018,
+    platform: "PlayStation 4 Windows Nintendo Switch",
 rosterCount: 23,
         characters: [
       
@@ -1168,7 +1190,8 @@ rosterCount: 23,
     id: 'fighting-vipers',
     name: "Fighting Vipers",
     developer: "Sega",
-    releaseYear: 1995,
+    releaseYear: 1998,
+    platform: "Arcade Sega Dreamcast",
 rosterCount: 11,
         characters: [
       
@@ -1192,6 +1215,7 @@ rosterCount: 11,
     name: "Fighting Vipers 2",
     developer: "Sega",
     releaseYear: 1998,
+    platform: "Arcade Sega Dreamcast",
 rosterCount: 13,
         characters: [
       
@@ -1216,7 +1240,8 @@ rosterCount: 13,
     id: 'galaxy-fight-universal-warriors',
     name: "Galaxy Fight: Universal Warriors",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1995,
+    platform: "Neo Geo Arcade Sega Saturn PlayStation",
 rosterCount: 8,
         characters: [
       
@@ -1270,7 +1295,8 @@ rosterCount: 14,
     id: 'golden-axe-the-duel',
     name: "Golden Axe: The Duel",
     developer: "Sega",
-    releaseYear: 1998,
+    releaseYear: 1995,
+    platform: "Arcade Sega Saturn",
 rosterCount: 10,
         characters: [
       
@@ -1292,7 +1318,8 @@ rosterCount: 10,
     id: 'granblue-fantasy-versus-rising',
     name: "Granblue Fantasy Versus: Rising",
     developer: "Arc System Works",
-    releaseYear: 1998,
+    releaseYear: 2023,
+    platform: "Windows PlayStation 4 PlayStation 5",
 rosterCount: 39,
         characters: [
       
@@ -1343,7 +1370,8 @@ rosterCount: 39,
     id: 'groove-on-fight',
     name: "Groove on Fight",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1997,
+    platform: "Arcade Sega Saturn",
 rosterCount: 11,
         characters: [
       
@@ -1367,6 +1395,7 @@ rosterCount: 11,
     name: "Guilty Gear (1998)",
     developer: "Arc System Works",
     releaseYear: 1998,
+    platform: "PlayStation Windows Nintendo Switch",
 rosterCount: 13,
         characters: [
       
@@ -1392,6 +1421,7 @@ rosterCount: 13,
     name: "Guilty Gear X",
     developer: "Arc System Works",
     releaseYear: 1998,
+    platform: "PlayStation Windows Nintendo Switch",
 rosterCount: 16,
         characters: [
       
@@ -1419,7 +1449,8 @@ rosterCount: 16,
     id: 'guilty-gear-xrd-rev-2',
     name: "Guilty Gear Xrd REV 2",
     developer: "Arc System Works",
-    releaseYear: 2017,
+    releaseYear: 1998,
+    platform: "PlayStation Windows Nintendo Switch",
 rosterCount: 25,
         characters: [
       
@@ -1457,6 +1488,7 @@ rosterCount: 25,
     name: "Guilty Gear XX Accent Core Plus R",
     developer: "Arc System Works",
     releaseYear: 1998,
+    platform: "PlayStation Windows Nintendo Switch",
 rosterCount: 25,
         characters: [
       
@@ -1631,7 +1663,8 @@ rosterCount: 10,
     id: 'last-bronx',
     name: "Last Bronx",
     developer: "Sega",
-    releaseYear: 1998,
+    releaseYear: 1996,
+    platform: "Arcade Sega Saturn Windows",
 rosterCount: 11,
         characters: [
       
@@ -1654,7 +1687,8 @@ rosterCount: 11,
     id: 'marvel-vs-capcom-clash-of-super-heroes',
     name: "Marvel vs. Capcom: Clash of Super Heroes",
     developer: "Capcom",
-    releaseYear: 1998,
+    releaseYear: 2000,
+    platform: "Arcade Sega Dreamcast PlayStation 2",
 rosterCount: 22,
         characters: [
       
@@ -1688,7 +1722,8 @@ rosterCount: 22,
     id: 'marvel-vs-capcom-infinite',
     name: "Marvel vs. Capcom: Infinite",
     developer: "Capcom",
-    releaseYear: 2017,
+    releaseYear: 2000,
+    platform: "Arcade Sega Dreamcast PlayStation 2",
 rosterCount: 36,
         characters: [
       
@@ -1736,7 +1771,8 @@ rosterCount: 36,
     id: 'matrimelee',
     name: "Matrimelee (Power Instinct Matrimelee)",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 2003,
+    platform: "Neo Geo Arcade PlayStation 2",
 rosterCount: 17,
         characters: [
       
@@ -1765,7 +1801,8 @@ rosterCount: 17,
     id: 'mortal-kombat-1',
     name: "Mortal Kombat 1",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 2011,
+    platform: "PlayStation 3 Xbox 360 Windows",
 rosterCount: 35,
         characters: [
       
@@ -1812,7 +1849,8 @@ rosterCount: 35,
     id: 'mortal-kombat-ii',
     name: "Mortal Kombat II",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 2011,
+    platform: "PlayStation 3 Xbox 360 Windows",
 rosterCount: 12,
         characters: [
       
@@ -1836,7 +1874,8 @@ rosterCount: 12,
     id: 'mortal-kombat-(2011)',
     name: "Mortal Kombat (2011)",
     developer: "NetherRealm Studios",
-    releaseYear: 1998,
+    releaseYear: 2011,
+    platform: "PlayStation 3 Xbox 360 Windows",
 rosterCount: 32,
         characters: [
       
@@ -1880,7 +1919,8 @@ rosterCount: 32,
     id: 'mortal-kombat-deception',
     name: "Mortal Kombat: Deception",
     developer: "NetherRealm Studios",
-    releaseYear: 1998,
+    releaseYear: 2011,
+    platform: "PlayStation 3 Xbox 360 Windows",
 rosterCount: 26,
         characters: [
       
@@ -1918,7 +1958,8 @@ rosterCount: 26,
     id: 'mortal-kombat-x',
     name: "Mortal Kombat X",
     developer: "NetherRealm Studios",
-    releaseYear: 1998,
+    releaseYear: 2011,
+    platform: "PlayStation 3 Xbox 360 Windows",
 rosterCount: 33,
         characters: [
       
@@ -2018,6 +2059,7 @@ rosterCount: 18,
     name: "Marvel vs. Capcom 2",
     developer: "SNK",
     releaseYear: 2000,
+    platform: "Arcade Sega Dreamcast PlayStation 2",
 rosterCount: 56,
         characters: [
       
@@ -2126,7 +2168,8 @@ rosterCount: 14,
     id: 'ninja-masters-haoh-ninpo-cho',
     name: "Ninja Master",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1996,
+    platform: "Neo Geo Arcade PlayStation 1",
 rosterCount: 12,
         characters: [
       
@@ -2150,7 +2193,8 @@ rosterCount: 12,
     id: 'persona-4-arena-ultimax',
     name: "Persona 4 Arena Ultimax",
     developer: "Arc System Works",
-    releaseYear: 1998,
+    releaseYear: 2013,
+    platform: "Arcade PlayStation 3 Xbox 360",
 rosterCount: 22,
         characters: [
       
@@ -2185,6 +2229,7 @@ rosterCount: 22,
     name: "Plasma Sword: Nightmare of Bilstein",
     developer: "SNK",
     releaseYear: 1998,
+    platform: "Arcade Sega Dreamcast",
 rosterCount: 24,
         characters: [
       
@@ -2220,7 +2265,8 @@ rosterCount: 24,
     id: 'pocketfighter',
     name: "Pocket Fighter",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1997,
+    platform: "Arcade PlayStation Sega Saturn",
 rosterCount: 12,
         characters: [
       
@@ -2249,7 +2295,8 @@ rosterCount: 12,
     id: 'projectjustice',
     name: "Project Justice",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 2000,
+    platform: "Arcade Sega Dreamcast",
 rosterCount: 27,
         characters: [
       
@@ -2317,7 +2364,8 @@ rosterCount: 27,
     id: 'rage-of-the-dragons',
     name: "Rage of the Dragons",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 2002,
+    platform: "Neo Geo Arcade",
 rosterCount: 14,
         characters: [
       
@@ -2659,7 +2707,8 @@ rosterCount: 28,
     id: 'street-fighter-iii-new-generation',
     name: "Street Fighter III: New Generation",
     developer: "Capcom",
-    releaseYear: 1987,
+    releaseYear: 1998,
+    platform: "Arcade PlayStation Sega Saturn",
 rosterCount: 11,
         characters: [
       
@@ -2694,7 +2743,8 @@ rosterCount: 11,
     id: 'street-fighter-iii-2nd-impact',
     name: "Street Fighter III: 2nd Impact - Giant Attack",
     developer: "Capcom",
-    releaseYear: 1997,
+    releaseYear: 1998,
+    platform: "Arcade PlayStation Sega Saturn",
 rosterCount: 14,
         characters: [
       
@@ -2720,7 +2770,8 @@ rosterCount: 14,
     id: 'street-fighter-alpha',
     name: "Street Fighter Alpha 1",
     developer: "Capcom",
-    releaseYear: 1995,
+    releaseYear: 1998,
+    platform: "Arcade PlayStation Sega Saturn",
 rosterCount: 13,
         characters: [
       
@@ -2745,7 +2796,8 @@ rosterCount: 13,
     id: 'street-fighter-alpha-2',
     name: "Street Fighter Alpha 2",
     developer: "Capcom",
-    releaseYear: 1996,
+    releaseYear: 1998,
+    platform: "Arcade PlayStation Sega Saturn",
 rosterCount: 28,
         characters: [
       
@@ -2785,7 +2837,8 @@ rosterCount: 28,
     id: 'snk-heroines-tag-team-frenzy',
     name: "SNK Heroines: Tag Team Frenzy",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 2018,
+    platform: "PlayStation 4 Nintendo Switch Windows",
 rosterCount: 18,
         characters: [
       
@@ -2891,7 +2944,8 @@ rosterCount: 16,
     id: 'street-fighter-6',
     name: "Street Fighter 6",
     developer: "Capcom",
-    releaseYear: 2023,
+    releaseYear: 1998,
+    platform: "Arcade PlayStation Sega Saturn",
 rosterCount: 26,
         characters: [
       
@@ -2930,6 +2984,7 @@ rosterCount: 26,
     name: "Street Fighter Alpha 3",
     developer: "Capcom",
     releaseYear: 1998,
+    platform: "Arcade PlayStation Sega Saturn",
 rosterCount: 40,
         characters: [
       
@@ -2982,6 +3037,7 @@ rosterCount: 40,
     name: "Street Fighter EX3",
     developer: "Capcom",
     releaseYear: 1998,
+    platform: "Arcade PlayStation Sega Saturn",
 rosterCount: 24,
         characters: [
       
@@ -3013,12 +3069,12 @@ rosterCount: 24,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'street-fighter-v-champion-edition',
     name: "Street Fighter V: Champion Edition",
     developer: "Capcom",
     releaseYear: 1998,
+    platform: "Arcade PlayStation Sega Saturn",
 rosterCount: 45,
         characters: [
       
@@ -3252,7 +3308,8 @@ rosterCount: 40,
     id: 'tatsunoko-vs-capcom-ultimate-all-stars',
     name: "Tatsunoko vs. Capcom: Ultimate All-Stars",
     developer: "Capcom",
-    releaseYear: 1998,
+    releaseYear: 2010,
+    platform: "Wii",
 rosterCount: 26,
         characters: [
       
@@ -3290,7 +3347,8 @@ rosterCount: 26,
     id: 'the-king-of-fighters-2000',
     name: "The King of Fighters 2000",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 35,
         characters: [
       
@@ -3337,7 +3395,8 @@ rosterCount: 35,
     id: 'the-king-of-fighters-2001',
     name: "The King of Fighters 2001",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 42,
         characters: [
       
@@ -3391,7 +3450,8 @@ rosterCount: 42,
     id: 'the-king-of-fighters-2002',
     name: "The King of Fighters 2002",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 44,
         characters: [
       
@@ -3447,7 +3507,8 @@ rosterCount: 44,
     id: 'the-king-of-fighters-2003',
     name: "The King of Fighters 2003",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 37,
         characters: [
       
@@ -3496,7 +3557,8 @@ rosterCount: 37,
     id: 'the-king-of-fighters-94',
     name: "The King of Fighters'94",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 24,
         characters: [
       
@@ -3532,7 +3594,8 @@ rosterCount: 24,
     id: 'the-king-of-fighters-95',
     name: "The King of Fighters'95",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 26,
         characters: [
       
@@ -3570,7 +3633,8 @@ rosterCount: 26,
     id: 'the-king-of-fighters-96',
     name: "The King of Fighters'96",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 29,
         characters: [
       
@@ -3611,7 +3675,8 @@ rosterCount: 29,
     id: 'the-king-of-fighters-97',
     name: "The King of Fighters'97",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 35,
         characters: [
       
@@ -3658,7 +3723,8 @@ rosterCount: 35,
     id: 'the-king-of-fighters-98',
     name: "The King of Fighters'98",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 38,
         characters: [
       
@@ -3708,7 +3774,8 @@ rosterCount: 38,
     id: 'the-king-of-fighters-98-ultimate-match',
     name: "The King of Fighters'98 Ultimate Match",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 64,
         characters: [
       
@@ -3784,7 +3851,8 @@ rosterCount: 64,
     id: 'the-king-of-fighters-99',
     name: "The King of Fighters'99",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 33,
         characters: [
       
@@ -3829,7 +3897,8 @@ rosterCount: 33,
     id: 'the-king-of-fighters-xiii',
     name: "The King of Fighters XIII",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 36,
         characters: [
       
@@ -3877,7 +3946,8 @@ rosterCount: 36,
     id: 'the-king-of-fighters-xiv',
     name: "The King of Fighters XIV",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 58,
         characters: [
       
@@ -3947,7 +4017,8 @@ rosterCount: 58,
     id: 'the-king-of-fighters-xv',
     name: "The King of Fighters XV",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 59,
         characters: [
       
@@ -4075,7 +4146,8 @@ rosterCount: 18,
     id: 'battle-arena-toshinden-3',
     name: "Battle Arena Toshinden 3",
     developer: "Tamsoft",
-    releaseYear: 1998,
+    releaseYear: 1996,
+    platform: "PlayStation",
 rosterCount: 32,
         characters: [
       
@@ -4119,7 +4191,8 @@ rosterCount: 32,
     id: 'ultimate-marvel-vs-capcom-3',
     name: "Ultimate Marvel vs. Capcom 3",
     developer: "Capcom",
-    releaseYear: 1998,
+    releaseYear: 2011,
+    platform: "PlayStation 3 Xbox 360 Windows",
 rosterCount: 50,
         characters: [
       
@@ -4181,7 +4254,8 @@ rosterCount: 50,
     id: 'ultimate-mortal-kombat-3',
     name: "Ultimate Mortal Kombat 3",
     developer: "NetherRealm Studios",
-    releaseYear: 1998,
+    releaseYear: 2011,
+    platform: "PlayStation 3 Xbox 360 Windows",
 rosterCount: 23,
         characters: [
       
@@ -4216,7 +4290,8 @@ rosterCount: 23,
     id: 'ultra-street-fighter-iv',
     name: "Ultra Street Fighter IV",
     developer: "Capcom",
-    releaseYear: 1998,
+    releaseYear: 2014,
+    platform: "Windows PlayStation 3 Xbox 360",
 rosterCount: 44,
         characters: [
       
@@ -4272,7 +4347,8 @@ rosterCount: 44,
     id: 'under-night-in-birth-ii-[sysceles]',
     name: "Under Night In-Birth II [Sys:Celes]",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 2024,
+    platform: "Windows PlayStation 4 PlayStation 5",
 rosterCount: 27,
         characters: [
       
@@ -4311,7 +4387,8 @@ rosterCount: 27,
     id: 'vampirehunter2',
     name: "Vampire Hunter 2",
     developer: "Capcom",
-    releaseYear: 1998,
+    releaseYear: 1997,
+    platform: "Arcade",
 rosterCount: 18,
         characters: [
       
@@ -4341,7 +4418,8 @@ rosterCount: 18,
     id: 'vampiresavior',
     name: "Vampire Savior",
     developer: "Capcom",
-    releaseYear: 1998,
+    releaseYear: 1997,
+    platform: "Arcade Sega Saturn PlayStation",
 rosterCount: 15,
         characters: [
       
@@ -4386,7 +4464,8 @@ rosterCount: 15,
     id: 'vampiresavior2',
     name: "Vampire Savior 2",
     developer: "Capcom",
-    releaseYear: 1998,
+    releaseYear: 1997,
+    platform: "Arcade Sega Saturn PlayStation",
 rosterCount: 18,
         characters: [
       
@@ -4416,7 +4495,8 @@ rosterCount: 18,
     id: 'virtua-fighter',
     name: "Virtua Fighter 1",
     developer: "Sega",
-    releaseYear: 1998,
+    releaseYear: 1993,
+    platform: "Arcade Sega Saturn Sega 32X",
 rosterCount: 9,
         characters: [
       
@@ -4437,7 +4517,8 @@ rosterCount: 9,
     id: 'virtua-fighter-2',
     name: "Virtua Fighter 2",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1993,
+    platform: "Arcade Sega Saturn Sega 32X",
 rosterCount: 11,
         characters: [
       
@@ -4460,7 +4541,8 @@ rosterCount: 11,
     id: 'virtua-fighter-3',
     name: "Virtua Fighter 3",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1993,
+    platform: "Arcade Sega Saturn Sega 32X",
 rosterCount: 13,
         characters: [
       
@@ -4485,7 +4567,8 @@ rosterCount: 13,
     id: 'virtua-fighter-4',
     name: "Virtua Fighter 4",
     developer: "SNK",
-    releaseYear: 1998,
+    releaseYear: 1993,
+    platform: "Arcade Sega Saturn Sega 32X",
 rosterCount: 18,
         characters: [
       
@@ -4515,7 +4598,8 @@ rosterCount: 18,
     id: 'virtua-fighter-5-ultimate-showdown',
     name: "Virtua Fighter 5 Ultimate Showdown",
     developer: "Sega",
-    releaseYear: 1998,
+    releaseYear: 1993,
+    platform: "Arcade Sega Saturn Sega 32X",
 rosterCount: 20,
         characters: [
       
@@ -4543,7 +4627,6 @@ rosterCount: 20,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-  
   {
     id: 'waku-waku-7',
     name: "Waku Waku 7",
@@ -4629,19 +4712,20 @@ rosterCount: 17,
     id: 'art-of-fighting-2',
     name: "Art of Fighting 2",
     developer: "Unknown",
-    releaseYear: 2000,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 0,
         characters: [
       
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-
   {
     id: 'battle-monsters',
     name: "Battle Monsters",
     developer: "Unknown",
-    releaseYear: 2000,
+    releaseYear: 1995,
+    platform: "Sega Saturn",
 rosterCount: 10,
         characters: [
       { id: 'death-bane', name: 'Death-Bane' },
@@ -4657,12 +4741,12 @@ rosterCount: 10,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-
   {
     id: 'groove-on-fight-power-instinct-3',
     name: "Groove On Fight (Power Instinct 3)",
     developer: "Unknown",
-    releaseYear: 2000,
+    releaseYear: 1997,
+    platform: "Arcade Sega Saturn",
 rosterCount: 9,
         characters: [
       { id: 'larry-light', name: 'Larry Light' },
@@ -4677,12 +4761,12 @@ rosterCount: 9,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-
   {
     id: 'jojo-s-bizarre-adventure-heritage-for-the-future-jjba-hftf',
     name: "JoJo's Bizarre Adventure: Heritage for the Future (JJBA: HFTF)",
     developer: "Unknown",
-    releaseYear: 2000,
+    releaseYear: 1999,
+    platform: "Arcade Sega Dreamcast PlayStation",
 rosterCount: 15,
         characters: [
       { id: 'jotaro-kujo', name: 'Jotaro Kujo' },
@@ -4703,12 +4787,12 @@ rosterCount: 15,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-
   {
     id: 'the-king-of-fighters-maximum-impact',
     name: "The King of Fighters: Maximum Impact",
     developer: "Unknown",
-    releaseYear: 2000,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 20,
         characters: [
       { id: 'alba-meira', name: 'Alba Meira' },
@@ -4734,12 +4818,12 @@ rosterCount: 20,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-
   {
     id: 'the-king-of-fighters-maximum-impact-2-kof-2006',
     name: "The King of Fighters: Maximum Impact 2 (KOF 2006)",
     developer: "Unknown",
-    releaseYear: 2000,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 13,
         characters: [
       { id: 'billy-kane', name: 'Billy Kane' },
@@ -4758,12 +4842,12 @@ rosterCount: 13,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-
   {
     id: 'the-king-of-fighters-maximum-impact-regulation-a',
     name: "The King of Fighters: Maximum Impact Regulation 'A'",
     developer: "Unknown",
-    releaseYear: 2000,
+    releaseYear: 1994,
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
 rosterCount: 4,
         characters: [
       { id: 'ash-crimson', name: 'Ash Crimson' },
@@ -4773,12 +4857,12 @@ rosterCount: 4,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-
   {
     id: 'psychic-force-2012-psychic-force-2',
     name: "Psychic Force 2012 (Psychic Force 2)",
     developer: "Unknown",
-    releaseYear: 2000,
+    releaseYear: 1996,
+    platform: "Arcade PlayStation",
 rosterCount: 6,
         characters: [
       { id: 'might', name: 'Might' },
@@ -4790,12 +4874,12 @@ rosterCount: 6,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-
   {
     id: 'psychic-force',
     name: "Psychic Force",
     developer: "Unknown",
-    releaseYear: 2000,
+    releaseYear: 1996,
+    platform: "Arcade PlayStation",
 rosterCount: 8,
         characters: [
       { id: 'burn-griffiths', name: 'Burn Griffiths' },
@@ -4809,12 +4893,12 @@ rosterCount: 8,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-
   {
     id: 'ragnagard-shin-oh-ken',
     name: "Ragnagard (Shin-Oh-Ken)",
     developer: "Unknown",
-    releaseYear: 2000,
+    releaseYear: 1996,
+    platform: "Neo Geo Arcade Sega Saturn PlayStation",
 rosterCount: 10,
         characters: [
       { id: 'susanoo', name: 'Susanoo' },
@@ -4830,12 +4914,12 @@ rosterCount: 10,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-
   {
     id: 'savage-reign-fu-un-mokushiroku-kakutou-sousei',
     name: "Savage Reign (Fu'un Mokushiroku: Kakutou Sousei)",
     developer: "Unknown",
-    releaseYear: 2000,
+    releaseYear: 1995,
+    platform: "Neo Geo Arcade PlayStation",
 rosterCount: 11,
         characters: [
       { id: 'sho-hayate', name: 'Sho Hayate' },
@@ -4852,12 +4936,12 @@ rosterCount: 11,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-
   {
     id: 'soul-calibur',
     name: "Soul Calibur",
     developer: "Unknown",
-    releaseYear: 2000,
+    releaseYear: 1998,
+    platform: "Arcade Sega Dreamcast Xbox 360",
 rosterCount: 10,
         characters: [
       { id: 'mitsurugi', name: 'Mitsurugi' },
@@ -4873,12 +4957,12 @@ rosterCount: 10,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-
   {
     id: 'soul-edge-soul-blade',
     name: "Soul Edge (Soul Blade)",
     developer: "Unknown",
-    releaseYear: 2000,
+    releaseYear: 1995,
+    platform: "Arcade PlayStation",
 rosterCount: 10,
         characters: [
       { id: 'heishiro-mitsurugi', name: 'Heishiro Mitsurugi' },
@@ -4894,12 +4978,12 @@ rosterCount: 10,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-
   {
     id: 'voltage-fighter-gowcaizer-choujin-gakuen-gowcaizer',
     name: "Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer)",
     developer: "Unknown",
-    releaseYear: 2000,
+    releaseYear: 1995,
+    platform: "Neo Geo Arcade PlayStation",
 rosterCount: 12,
         characters: [
       { id: 'gowcaizer-isato-kaiza', name: 'Gowcaizer (Isato Kaiza)' },
@@ -4917,12 +5001,12 @@ rosterCount: 12,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-
   {
     id: 'zero-divide',
     name: "Zero Divide",
     developer: "Unknown",
-    releaseYear: 2000,
+    releaseYear: 1995,
+    platform: "PlayStation",
 rosterCount: 10,
         characters: [
       { id: 'zero', name: 'Zero' },
@@ -4938,12 +5022,12 @@ rosterCount: 10,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
-
   {
     id: 'zero-divide-2-the-secret-wish',
     name: "Zero Divide 2: The Secret Wish",
     developer: "Unknown",
-    releaseYear: 2000,
+    releaseYear: 1995,
+    platform: "PlayStation",
 rosterCount: 11,
         characters: [
       { id: 'zero', name: 'Zero' },
@@ -4959,5 +5043,5 @@ rosterCount: 11,
       { id: 'modoki', name: 'Modoki' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
+  }
 ];
