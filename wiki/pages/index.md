@@ -20,12 +20,11 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ---
 
-## 🎮 Games (139)
+## 🎮 Games (124)
 
 ### Complete Roster
 | Page | Game | Characters |
 |------|------|-----------|
-| [[art-of-fighting-2]] | Art of Fighting 2 | 0 |
 | [[art-of-fighting]] | Art of Fighting | 0 |
 | [[art-of-fighting-3-the-path-of-the-warrior]] | Art of Fighting 3: The Path of the Warrior | 0 |
 | [[astra-superstars]] | Astra Superstars | 0 |
@@ -39,16 +38,12 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[bloody-roar-primal-fury--extreme]] | Bloody Roar: Primal Fury / Extreme | 0 |
 | [[breakers-revenge]] | Breakers Revenge | 0 |
 | [[capcom-fighting-jam]] | Capcom Fighting Jam | 0 |
-| [[capcom-fighting-jam-(capcom-fighting-evolution)]] | Capcom Fighting Jam (Capcom Fighting Evolution) | 0 |
 | [[capcom-vs-snk-2-mark-of-the-millennium-2001]] | Capcom vs. SNK 2: Mark of the Millennium 2001 | 0 |
-| [[capcom-vs-snk-millennium-fight-2000]] | Capcom vs. SNK: Millennium Fight 2000 | 0 |
 | [[capcom-vs-snk-millennium-fight-2000-pro]] | Capcom vs. SNK: Millennium Fight 2000 Pro | 0 |
 | [[x-men-children-of-the-atom]] | X-Men: Children of the Atom | 0 |
 | [[fatal-fury-city-of-the-wolves]] | Fatal Fury: City of the Wolves | 0 |
-| [[capcom-vs-snk]] | Capcom vs. SNK | 0 |
-| [[cyberbots-full-metal-madness]] | Cyberbots: Full Metal Madness | 128 |
+| [[cyberbots-full-metal-madness]] | Cyberbots: Full Metal Madness | 0 |
 | [[darkstalkers-the-night-warriors]] | Darkstalkers: The Night Warriors | 0 |
-| [[darkstalkers-the-night-warriors-(vampire-the-night-warriors)]] | Darkstalkers: The Night Warriors (Vampire: The Night Warriors) | 0 |
 | [[dead-or-alive]] | Dead or Alive | 0 |
 | [[dead-or-alive-2]] | Dead or Alive 2 | 0 |
 | [[dead-or-alive-3]] | Dead or Alive 3 | 0 |
@@ -71,7 +66,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[granblue-fantasy-versus-rising]] | Granblue Fantasy Versus: Rising | 0 |
 | [[groove-on-fight]] | Groove on Fight | 0 |
 | [[guilty-gear]] | Guilty Gear (1998) | 0 |
-| [[guilty-gear--strive-]] | Guilty Gear -Strive- (Ver. 2.00) | 0 |
 | [[guilty-gear-x]] | Guilty Gear X | 0 |
 | [[guilty-gear-xrd-rev-2]] | Guilty Gear Xrd REV 2 | 0 |
 | [[guilty-gear-xx-accent-core-plus-r]] | Guilty Gear XX Accent Core Plus R | 0 |
@@ -96,10 +90,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[ninja-masters-haoh-ninpo-cho]] | Ninja Master | 0 |
 | [[persona-4-arena-ultimax]] | Persona 4 Arena Ultimax | 0 |
 | [[plasma-sword-nightmare-of-bilstein]] | Plasma Sword: Nightmare of Bilstein | 0 |
-| [[plasmasword]] | Plasma Sword | 0 |
-| [[pocket-fighter-(super-gem-fighter-mini-mix)]] | Pocket Fighter (Super Gem Fighter Mini Mix) | 0 |
 | [[pocketfighter]] | Pocket Fighter | 0 |
-| [[project-justice-(rival-schools-2)]] | Project Justice (Rival Schools 2) | 0 |
 | [[projectjustice]] | Project Justice | 0 |
 | [[rage-of-the-dragons]] | Rage of the Dragons | 0 |
 | [[real-bout-fatal-fury]] | Real Bout Fatal Fury | 0 |
@@ -114,7 +105,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[samurai-shodown-v-special]] | Samurai Shodown V Special | 0 |
 | [[street-fighter-iii-new-generation]] | Street Fighter III: New Generation | 0 |
 | [[street-fighter-iii-2nd-impact]] | Street Fighter III: 2nd Impact - Giant Attack | 0 |
-| [[street-fighter-iii-3rd-strike]] | Street Fighter III: 3rd Strike - Fight for the Future | 0 |
 | [[street-fighter-alpha]] | Street Fighter Alpha 1 | 0 |
 | [[street-fighter-alpha-2]] | Street Fighter Alpha 2 | 0 |
 | [[snk-heroines-tag-team-frenzy]] | SNK Heroines: Tag Team Frenzy | 0 |
@@ -123,7 +113,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[street-fighter-6]] | Street Fighter 6 | 0 |
 | [[street-fighter-alpha-3]] | Street Fighter Alpha 3 | 0 |
 | [[street-fighter-ex3]] | Street Fighter EX3 | 0 |
-| [[street-fighter-iii-3rd-strike]] | Street Fighter III: 3rd Strike | 0 |
 | [[street-fighter-v-champion-edition]] | Street Fighter V: Champion Edition | 0 |
 | [[super-street-fighter-ii-turbo]] | Super Street Fighter II Turbo | 0 |
 | [[tekken-8]] | Tekken 8 | 0 |
@@ -149,9 +138,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[ultimate-mortal-kombat-3]] | Ultimate Mortal Kombat 3 | 0 |
 | [[ultra-street-fighter-iv]] | Ultra Street Fighter IV | 0 |
 | [[under-night-in-birth-ii-[sysceles]]] | Under Night In-Birth II [Sys:Celes] | 0 |
-| [[vampire-hunter-2-darkstalkers-revenge]] | Vampire Hunter 2: Darkstalkers | 0 |
-| [[vampire-savior-2-the-lord-of-vampire]] | Vampire Savior 2: The Lord of Vampire | 0 |
-| [[vampire-savior-the-lord-of-vampire]] | Vampire Savior: The Lord of Vampire | 0 |
 | [[vampirehunter2]] | Vampire Hunter 2 | 0 |
 | [[vampiresavior]] | Vampire Savior | 0 |
 | [[vampiresavior2]] | Vampire Savior 2 | 0 |
@@ -160,7 +146,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[virtua-fighter-3]] | Virtua Fighter 3 | 0 |
 | [[virtua-fighter-4]] | Virtua Fighter 4 | 0 |
 | [[virtua-fighter-5-ultimate-showdown]] | Virtua Fighter 5 Ultimate Showdown | 0 |
-| [[virtua-fighter]] | Virtua Fighter | 0 |
 | [[waku-waku-7]] | Waku Waku 7 | 0 |
 | [[world-heroes-perfect]] | World Heroes Perfect | 0 |
 | [[x-men-vs-street-fighter]] | X-Men vs. Street Fighter | 0 |
@@ -211,6 +196,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ## Statistics
 
-- **Total pages**: 141 (139 games)
-- **Games covered**: 139
+- **Total pages**: 126 (124 games)
+- **Games covered**: 124
 - **Last updated**: 2026-04-15

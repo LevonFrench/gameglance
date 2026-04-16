@@ -1,5 +1,5 @@
 ---
-title: "Virtua Fighter"
+title: "Virtua Fighter 1"
 type: game
 tags: [virtua-fighter]
 created: 2026-04-15
@@ -7,7 +7,7 @@ updated: 2026-04-15
 sources: 0
 ---
 
-# Virtua Fighter
+# Virtua Fighter 1
 
 ## Overview
 *No overview generated yet.*
