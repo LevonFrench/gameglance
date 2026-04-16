@@ -4,64 +4,38 @@
   "movesList": [
     {
       "name": "Double Jump",
-      "type": "normal",
+      "type": "command_normal",
       "inputs": [
-        "up",
-        " ",
-        "(",
-        "in",
-        " ",
-        "air",
-        ")"
-      ],
-      "id": "double-jump"
+        "8 (in air)"
+      ]
     },
     {
       "name": "Wall Jump",
-      "type": "normal",
+      "type": "command_normal",
       "inputs": [
-        "up-forward",
-        " ",
-        "(",
-        "at",
-        " ",
-        "wall",
-        ")"
-      ],
-      "id": "wall-jump"
+        "9 (at wall)"
+      ]
     },
     {
       "name": "Rekko Zan",
       "type": "special",
       "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "+A"
-      ],
-      "id": "rekko-zan"
+        "236+A"
+      ]
     },
     {
       "name": "Koh Ryu Ha",
       "type": "special",
       "inputs": [
-        "forward",
-        "down",
-        "down-forward",
-        "+A"
-      ],
-      "id": "koh-ryu-ha"
+        "623+A"
+      ]
     },
     {
       "name": "Ninpo Rin",
       "type": "special",
       "inputs": [
-        "down",
-        "down-back",
-        "back",
-        "+B"
-      ],
-      "id": "ninpo-rin"
+        "214+B"
+      ]
     }
   ]
 }

@@ -8295,4 +8295,87 @@ rosterCount: 10,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   }
+
+  {
+    id: 'bio-freaks',
+    name: "Bio F.R.E.A.K.S.",
+    isDraft: true,
+    characters: [
+
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  }
+
+  {
+    id: 'fatal-fury-wild-ambition',
+    name: "Fatal Fury: Wild Ambition",
+    isDraft: true,
+    characters: [
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'andy-bogard', name: 'Andy Bogard' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
+      { id: 'raiden', name: 'Raiden' },
+      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
+      { id: 'li-xiangfei', name: 'Li Xiangfei' },
+      { id: 'tsugumi-sendo', name: 'Tsugumi Sendo' },
+      { id: 'touji-sakata', name: 'Touji Sakata' },
+      { id: 'geese-howard', name: 'Geese Howard' },
+      { id: 'billy-kane', name: 'Billy Kane' },
+      { id: 'duck-king', name: 'Duck King' },
+      { id: 'mr-karate-ii', name: 'Mr. Karate II' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  }
+
+  {
+    id: 'fighters-impact',
+    name: "Fighters' Impact",
+    isDraft: true,
+    characters: [
+
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  }
+
+  {
+    id: 'heavens-gate',
+    name: "Heaven's Gate",
+    isDraft: true,
+    characters: [
+
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  }
+
+  {
+    id: 'tobal-2',
+    name: "Tobal 2",
+    isDraft: true,
+    characters: [
+
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  }
+
+  {
+    id: 'ultraman-fighting-evolution',
+    name: "Ultraman Fighting Evolution",
+    isDraft: true,
+    characters: [
+
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  }
+
+  {
+    id: 'war-gods',
+    name: "War Gods",
+    isDraft: true,
+    characters: [
+
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+  }
 ];

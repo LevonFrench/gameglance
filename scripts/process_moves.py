@@ -48,9 +48,9 @@ def process_file(docx_path):
         return None
 
 def main():
-    docx_files = glob.glob("faqs/*.json.docx")
+    docx_files = glob.glob("faqs/old/*.docx") + glob.glob("faqs/*.json.docx")
     if not docx_files:
-        print("No .json.docx files found in faqs/")
+        print("No .docx files found in faqs/old/ or faqs/")
         return
 
     # To map properly, let's load truth_roster.json or parse src/games.ts purely for gid mapping
@@ -87,12 +87,25 @@ def main():
         
         # find matching game
         matched_game = None
+        c_dgame = clean_id(dgame)
+        
+        # 1. Try Exact match
         for g in games:
-            c_gname = clean_id(g['name'])
-            c_dgame = clean_id(dgame)
-            if c_gname == c_dgame or c_dgame in c_gname or c_gname in c_dgame:
+            if clean_id(g['name']) == c_dgame:
                 matched_game = g
                 break
+                
+        # 2. Try longest substring match
+        if not matched_game:
+            best_match = None
+            longest_len = -1
+            for g in games:
+                c_gname = clean_id(g['name'])
+                if c_dgame in c_gname or c_gname in c_dgame:
+                    if len(c_gname) > longest_len:
+                        longest_len = len(c_gname)
+                        best_match = g
+            matched_game = best_match
                 
         if not matched_game:
             print(f"Game '{dgame}' is new/missing from games.ts. Auto-adding as draft.")
