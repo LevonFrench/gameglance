@@ -4,34 +4,695 @@
   "movesList": [
     {
       "id": "sp_0",
-      "name": "Psycho Spark",
+      "name": "Psycho Flicker",
       "type": "special",
       "inputs": [
-        "236P"
+        "down",
+        "down-back",
+        "back",
+        "P (Hold to charge)"
       ]
     },
     {
       "id": "sp_1",
-      "name": "Psycho Upper",
+      "name": "Psycho Blitz",
       "type": "special",
       "inputs": [
-        "623P"
+        "down",
+        "down-forward",
+        "forward",
+        "P"
       ]
     },
     {
       "id": "sp_2",
-      "name": "Psycho Blitz",
+      "name": "Psycho Upper",
       "type": "special",
       "inputs": [
-        "214P"
+        "forward",
+        "down",
+        "down-forward",
+        "P"
       ]
     },
     {
       "id": "sp_3",
-      "name": "Psycho Flicker",
+      "name": "Kill Rush",
       "type": "special",
       "inputs": [
-        "236K"
+        "down",
+        "down-forward",
+        "forward",
+        "K or 214",
+        "K"
+      ]
+    },
+    {
+      "id": "sup_0",
+      "name": "Psycho Storm (Lv.1)",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "sup_1",
+      "name": "Psycho Cannon (Lv.2)",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "sup_2",
+      "name": "Psycho Chamber (Lv.3)",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "sp_0",
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "inputs": [
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "inputs": [
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_3",
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "[MK]"
+      ]
+    },
+    {
+      "id": "sp_4",
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_5",
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_6",
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_7",
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_8",
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_9",
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[MK]"
+      ]
+    },
+    {
+      "id": "sp_10",
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_11",
+      "name": "Crouching Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_12",
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP] [LP]"
+      ]
+    },
+    {
+      "id": "sp_13",
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [LK]"
+      ]
+    },
+    {
+      "id": "sp_14",
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP] [MP]"
+      ]
+    },
+    {
+      "id": "sp_15",
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [MK]"
+      ]
+    },
+    {
+      "id": "sp_16",
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP] [HP]"
+      ]
+    },
+    {
+      "id": "sp_17",
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_18",
+      "name": "Psycho Knuckle(Lv1)",
+      "type": "special",
+      "inputs": [
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_19",
+      "name": "Psycho Knuckle(Lv2)",
+      "type": "special",
+      "inputs": [
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_20",
+      "name": "Cobra Punch",
+      "type": "special",
+      "inputs": [
+        "[Forward]",
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_21",
+      "name": "Flicker Combination(2)",
+      "type": "special",
+      "inputs": [
+        "[LK] [LK]"
+      ]
+    },
+    {
+      "id": "sp_22",
+      "name": "Flicker Combination(3)",
+      "type": "special",
+      "inputs": [
+        "[LK] [LK] [LK]"
+      ]
+    },
+    {
+      "id": "sp_23",
+      "name": "Body Blow Combination",
+      "type": "special",
+      "inputs": [
+        "[MP] [HP]"
+      ]
+    },
+    {
+      "id": "sp_24",
+      "name": "Hitman Combination(2)",
+      "type": "special",
+      "inputs": [
+        "[MK] [MK]"
+      ]
+    },
+    {
+      "id": "sp_25",
+      "name": "Hitman Combination(3)",
+      "type": "special",
+      "inputs": [
+        "[MK] [MK] [HP]"
+      ]
+    },
+    {
+      "id": "sp_26",
+      "name": "Low Smash Combination",
+      "type": "special",
+      "inputs": [
+        "[Down]",
+        "[HK] [HP]"
+      ]
+    },
+    {
+      "id": "sp_27",
+      "name": "Psycho Spark",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_28",
+      "name": "OD Psycho Spark",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[LP] [LP]"
+      ]
+    },
+    {
+      "id": "sp_29",
+      "name": "L Psycho Shoot",
+      "type": "special",
+      "inputs": [
+        "[LP] [LP] [LK] [Forward]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_30",
+      "name": "M Psycho Shoot",
+      "type": "special",
+      "inputs": [
+        "[LP] [LP] [LK] [Forward]",
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_31",
+      "name": "H Psycho Shoot",
+      "type": "special",
+      "inputs": [
+        "[LP] [LP] [LK] [Forward]",
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_32",
+      "name": "OD L Psycho Shoot",
+      "type": "special",
+      "inputs": [
+        "[LP]",
+        "[MP] [LP] [LP] [LK] [Forward]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_33",
+      "name": "OD M Psycho Shoot",
+      "type": "special",
+      "inputs": [
+        "[LP]",
+        "[MP] [LP] [LP] [LK] [Forward]",
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_34",
+      "name": "OD H Psycho Shoot",
+      "type": "special",
+      "inputs": [
+        "[LP]",
+        "[MP] [LP] [LP] [LK] [Forward]",
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_35",
+      "name": "L Psycho Uppercut",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Down] [Down-Forward]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_36",
+      "name": "M Psycho Uppercut",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Down] [Down-Forward]",
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_37",
+      "name": "H Psycho Uppercut",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Down] [Down-Forward]",
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_38",
+      "name": "OD Psycho Uppercut",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Down] [Down-Forward]",
+        "[LP] [LP]"
+      ]
+    },
+    {
+      "id": "sp_39",
+      "name": "L Psycho Blitz",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_40",
+      "name": "M Psycho Blitz",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_41",
+      "name": "H Psycho Blitz",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_42",
+      "name": "OD Psycho Blitz",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[LP] [LP]"
+      ]
+    },
+    {
+      "id": "sp_43",
+      "name": "L Psycho Flicker",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_44",
+      "name": "L Psycho Flicker (Charged)",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_45",
+      "name": "M Psycho Flicker",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[MK]"
+      ]
+    },
+    {
+      "id": "sp_46",
+      "name": "M Psycho Flicker (Charged)",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[MK]"
+      ]
+    },
+    {
+      "id": "sp_47",
+      "name": "H Psycho Flicker",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_48",
+      "name": "H Psycho Flicker (Charged)",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_49",
+      "name": "OD Psycho Flicker",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[LK] [LK]"
+      ]
+    },
+    {
+      "id": "sp_50",
+      "name": "Kill Rush (Forward)",
+      "type": "special",
+      "inputs": [
+        "[LK] [LK]"
+      ]
+    },
+    {
+      "id": "sp_51",
+      "name": "Kill Switch Break",
+      "type": "special",
+      "inputs": [
+        "[LK] [Forward]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_52",
+      "name": "Kill Switch Chaser",
+      "type": "special",
+      "inputs": [
+        "[LK] [Forward]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_53",
+      "name": "Kill Rush (Backward)",
+      "type": "special",
+      "inputs": [
+        "[Back]",
+        "[LK] [LK]"
+      ]
+    },
+    {
+      "id": "sp_54",
+      "name": "CA Psycho Chamber",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_55",
+      "name": "Face Buster",
+      "type": "special",
+      "inputs": [
+        "[LP] [LP] [Forward]",
+        "[LP] [LK]"
+      ]
+    },
+    {
+      "id": "sp_56",
+      "name": "Rib Crusher",
+      "type": "special",
+      "inputs": [
+        "[LP] [LP] [Back]",
+        "[LP] [LK]"
+      ]
+    },
+    {
+      "id": "sp_57",
+      "name": "Forward Dash",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Forward]"
+      ]
+    },
+    {
+      "id": "sp_58",
+      "name": "Backward Dash",
+      "type": "special",
+      "inputs": [
+        "[Back] [Back]"
+      ]
+    },
+    {
+      "id": "sp_59",
+      "name": "Drive Impact (Turn Punch)",
+      "type": "special",
+      "inputs": [
+        "[HP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_60",
+      "name": "Drive Reversal (while blocking): Hammer Blow",
+      "type": "special",
+      "inputs": [
+        "[LK] [LP] [Forward]",
+        "[HP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_61",
+      "name": "Drive Reversal (while recovering): Hammer Blow",
+      "type": "special",
+      "inputs": [
+        "[LK] [LK] [Forward]",
+        "[HP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_62",
+      "name": "Drive Parry",
+      "type": "special",
+      "inputs": [
+        "[MP] [MK]"
+      ]
+    },
+    {
+      "id": "sp_63",
+      "name": "Perfect Parry (strike)",
+      "type": "special",
+      "inputs": [
+        "[LK]",
+        "[MP] [MK]"
+      ]
+    },
+    {
+      "id": "sp_64",
+      "name": "Perfect Parry (projectile)",
+      "type": "special",
+      "inputs": [
+        "[MP] [MK]"
+      ]
+    },
+    {
+      "id": "sp_65",
+      "name": "Parry Drive Rush",
+      "type": "special",
+      "inputs": [
+        "[LP] [Forward] [Forward]"
+      ]
+    },
+    {
+      "id": "sp_66",
+      "name": "Cancel Drive Rush",
+      "type": "special",
+      "inputs": [
+        "[LP] [Forward] [Forward]"
+      ]
+    },
+    {
+      "id": "sup_0",
+      "name": "SA1 Psycho Storm",
+      "type": "super",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sup_1",
+      "name": "SA2 Psycho Cannon",
+      "type": "super",
+      "inputs": [
+        "[Down] [Down-Back] [Back] [Down] [Down-Back] [Back]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sup_2",
+      "name": "SA3 Psycho Chamber",
+      "type": "super",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+        "[LP]"
       ]
     }
   ],

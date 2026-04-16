@@ -7,7 +7,10 @@
       "name": "Spiral Arrow",
       "type": "special",
       "inputs": [
-        "236K"
+        "down",
+        "down-forward",
+        "forward",
+        "K"
       ]
     },
     {
@@ -15,7 +18,10 @@
       "name": "Cannon Spike",
       "type": "special",
       "inputs": [
-        "623K"
+        "forward",
+        "down",
+        "down-forward",
+        "K"
       ]
     },
     {
@@ -23,7 +29,10 @@
       "name": "Quick Spin Knuckle",
       "type": "special",
       "inputs": [
-        "236P"
+        "down",
+        "down-back",
+        "back",
+        "P"
       ]
     },
     {
@@ -31,7 +40,682 @@
       "name": "Hooligan Combination",
       "type": "special",
       "inputs": [
-        "214P"
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "sp_4",
+      "name": "Cannon Strike",
+      "type": "special",
+      "inputs": [
+        "(In Air)",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "sup_0",
+      "name": "Spin Drive Smasher (Lv.1)",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "sup_1",
+      "name": "Killer Bee Spin (Lv.2)",
+      "type": "super",
+      "inputs": [
+        "(In Air)",
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "sup_2",
+      "name": "Delta Red Assault (Lv.3)",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "sp_0",
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "inputs": [
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "inputs": [
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_3",
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "[MK]"
+      ]
+    },
+    {
+      "id": "sp_4",
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_5",
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_6",
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_7",
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_8",
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_9",
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[MK]"
+      ]
+    },
+    {
+      "id": "sp_10",
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_11",
+      "name": "Crouching Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_12",
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP] [LP]"
+      ]
+    },
+    {
+      "id": "sp_13",
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [LK]"
+      ]
+    },
+    {
+      "id": "sp_14",
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP] [MP]"
+      ]
+    },
+    {
+      "id": "sp_15",
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [MK]"
+      ]
+    },
+    {
+      "id": "sp_16",
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP] [HP]"
+      ]
+    },
+    {
+      "id": "sp_17",
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_18",
+      "name": "Lift Uppercut",
+      "type": "special",
+      "inputs": [
+        "[Back]",
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_19",
+      "name": "Delayed Ripper",
+      "type": "special",
+      "inputs": [
+        "[Forward]",
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_20",
+      "name": "Assault Blade",
+      "type": "special",
+      "inputs": [
+        "[Back]",
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_21",
+      "name": "Lift Combination",
+      "type": "special",
+      "inputs": [
+        "[Back]",
+        "[MP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_22",
+      "name": "Swing Combination",
+      "type": "special",
+      "inputs": [
+        "[HP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_23",
+      "name": "L Spiral Arrow",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_24",
+      "name": "M Spiral Arrow",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[MK]"
+      ]
+    },
+    {
+      "id": "sp_25",
+      "name": "H Spiral Arrow",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_26",
+      "name": "H Spiral Arrow(Charged)",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_27",
+      "name": "OD Spiral Arrow",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[LK] [LK]"
+      ]
+    },
+    {
+      "id": "sp_28",
+      "name": "L Cannon Spike",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Down] [Down-Forward]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_29",
+      "name": "M Cannon Spike",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Down] [Down-Forward]",
+        "[MK]"
+      ]
+    },
+    {
+      "id": "sp_30",
+      "name": "H Cannon Spike",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Down] [Down-Forward]",
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_31",
+      "name": "H Cannon Spike(Charged)",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Down] [Down-Forward]",
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_32",
+      "name": "OD Cannon Spike",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Down] [Down-Forward]",
+        "[LK] [LK]"
+      ]
+    },
+    {
+      "id": "sp_33",
+      "name": "L Quick Spin Knuckle",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_34",
+      "name": "M Quick Spin Knuckle",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_35",
+      "name": "H Quick Spin Knuckle",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_36",
+      "name": "OD Quick Spin Knuckle",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[LP] [LP]"
+      ]
+    },
+    {
+      "id": "sp_38",
+      "name": "OD Cannon Strike",
+      "type": "special",
+      "inputs": [
+        "[MP] [Down] [Down-Back] [Back]",
+        "[LK] [LK]"
+      ]
+    },
+    {
+      "id": "sp_40",
+      "name": "Hooligan Combination(Charged)",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_41",
+      "name": "OD Hooligan Combination",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[LP] [LP]"
+      ]
+    },
+    {
+      "id": "sp_42",
+      "name": "Razor's Edge Slicer",
+      "type": "special",
+      "inputs": [
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_43",
+      "name": "Razor's Edge Slicer(Charged)",
+      "type": "special",
+      "inputs": [
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_44",
+      "name": "OD Razor's Edge Slicer",
+      "type": "special",
+      "inputs": [
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_46",
+      "name": "Cannon Strike(Charged)",
+      "type": "special",
+      "inputs": [
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_47",
+      "name": "OD Cannon Strike",
+      "type": "special",
+      "inputs": [
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_48",
+      "name": "Reverse Edge",
+      "type": "special",
+      "inputs": [
+        "[Down]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_49",
+      "name": "Reverse Edge(Charged)",
+      "type": "special",
+      "inputs": [
+        "[Down]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_50",
+      "name": "OD Reverse Edge",
+      "type": "special",
+      "inputs": [
+        "[Down]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_51",
+      "name": "Fatal Leg Twister",
+      "type": "special",
+      "inputs": [
+        "[LP] [LP] [LP] [LK]"
+      ]
+    },
+    {
+      "id": "sp_52",
+      "name": "Fatal Leg Twister(Charged)",
+      "type": "special",
+      "inputs": [
+        "[LP] [LP] [LP] [LK]"
+      ]
+    },
+    {
+      "id": "sp_53",
+      "name": "OD Fatal Leg Twister",
+      "type": "special",
+      "inputs": [
+        "[LP] [LP] [LP] [LK]"
+      ]
+    },
+    {
+      "id": "sp_54",
+      "name": "Silent Step",
+      "type": "special",
+      "inputs": [
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_55",
+      "name": "Silent Step(Charged)",
+      "type": "special",
+      "inputs": [
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_56",
+      "name": "OD Silent Step",
+      "type": "special",
+      "inputs": [
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_57",
+      "name": "CA Delta Red Assault",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_58",
+      "name": "Rough Landing",
+      "type": "special",
+      "inputs": [
+        "[LP] [LP] [Forward]",
+        "[LP] [LK]"
+      ]
+    },
+    {
+      "id": "sp_59",
+      "name": "Delta Throw",
+      "type": "throw",
+      "inputs": [
+        "[LP] [LP] [Back]",
+        "[LP] [LK]"
+      ]
+    },
+    {
+      "id": "sp_60",
+      "name": "Leg Scissors Choke",
+      "type": "throw",
+      "inputs": [
+        "[MP] [LP] [LP] [LP] [LK]"
+      ]
+    },
+    {
+      "id": "sp_61",
+      "name": "Forward Dash",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Forward]"
+      ]
+    },
+    {
+      "id": "sp_62",
+      "name": "Backward Dash",
+      "type": "special",
+      "inputs": [
+        "[Back] [Back]"
+      ]
+    },
+    {
+      "id": "sp_63",
+      "name": "Drive Impact: Spin Raider",
+      "type": "special",
+      "inputs": [
+        "[HP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_64",
+      "name": "Drive Reversal (while blocking): Countersnipe",
+      "type": "special",
+      "inputs": [
+        "[LK] [LP] [Forward]",
+        "[HP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_65",
+      "name": "Drive Reversal (while recovering): Countersnipe",
+      "type": "special",
+      "inputs": [
+        "[LK] [LK] [Forward]",
+        "[HP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_66",
+      "name": "Drive Parry",
+      "type": "special",
+      "inputs": [
+        "[MP] [MK]"
+      ]
+    },
+    {
+      "id": "sp_67",
+      "name": "Perfect Parry (strike)",
+      "type": "special",
+      "inputs": [
+        "[LK]",
+        "[MP] [MK]"
+      ]
+    },
+    {
+      "id": "sp_68",
+      "name": "Perfect Parry (projectile)",
+      "type": "special",
+      "inputs": [
+        "[MP] [MK]"
+      ]
+    },
+    {
+      "id": "sp_69",
+      "name": "Parry Drive Rush",
+      "type": "special",
+      "inputs": [
+        "[LP] [Forward] [Forward]"
+      ]
+    },
+    {
+      "id": "sp_70",
+      "name": "Cancel Drive Rush",
+      "type": "special",
+      "inputs": [
+        "[LP] [Forward] [Forward] [Forward]",
+        "[MP] [MK]"
+      ]
+    },
+    {
+      "id": "sup_0",
+      "name": "SA1 Spin Drive Smasher",
+      "type": "super",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sup_1",
+      "name": "SA2 Killer Bee Spin",
+      "type": "super",
+      "inputs": [
+        "[Down] [Down-Back] [Back] [Down] [Down-Back] [Back]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sup_2",
+      "name": "SA2 Aerial Killer Bee Spin",
+      "type": "super",
+      "inputs": [
+        "[MP] [Down] [Down-Back] [Back] [Down] [Down-Back] [Back]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sup_3",
+      "name": "SA3 Delta Red Assault",
+      "type": "super",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+        "[LP]"
       ]
     }
   ],

@@ -7,7 +7,10 @@
       "name": "Fuhajin",
       "type": "special",
       "inputs": [
-        "214K"
+        "down",
+        "down-back",
+        "back",
+        "K"
       ]
     },
     {
@@ -15,23 +18,32 @@
       "name": "Saihashu",
       "type": "special",
       "inputs": [
-        "236LK"
+        "down",
+        "down-forward",
+        "forward",
+        "LK"
       ]
     },
     {
       "id": "sp_2",
-      "name": "Ansenshu",
+      "name": "Ankensatsu",
       "type": "special",
       "inputs": [
-        "236MK"
+        "down",
+        "down-forward",
+        "forward",
+        "MK"
       ]
     },
     {
       "id": "sp_3",
-      "name": "Go-O-Ryu",
+      "name": "Go Ohsatsu",
       "type": "special",
       "inputs": [
-        "236HK"
+        "down",
+        "down-forward",
+        "forward",
+        "HK"
       ]
     },
     {
@@ -39,15 +51,781 @@
       "name": "Tensenrin",
       "type": "special",
       "inputs": [
-        "623K"
+        "forward",
+        "down",
+        "down-forward",
+        "K"
       ]
     },
     {
-      "id": "sup_5",
-      "name": "Satsu-no-Hadou",
+      "id": "sup_0",
+      "name": "Satsu-no-Kyaku (Lv.1)",
       "type": "super",
       "inputs": [
-        "236236K"
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "sup_1",
+      "name": "Feng Shui Engine (Lv.2)",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "sup_2",
+      "name": "Kaisen Dankairaku (Lv.3)",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "down",
+        "down-back",
+        "back",
+        "K"
+      ]
+    },
+    {
+      "id": "sp_0",
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "inputs": [
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_1",
+      "name": "[Chain combo]Standing Light Punch",
+      "type": "normal",
+      "inputs": [
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_2",
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "inputs": [
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_3",
+      "name": "[Chain combo]Standing Light Kick",
+      "type": "normal",
+      "inputs": [
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_4",
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_5",
+      "name": "[Chain combo]Standing Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_6",
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "[MK]"
+      ]
+    },
+    {
+      "id": "sp_7",
+      "name": "[Chain combo]Standing Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "[MK]"
+      ]
+    },
+    {
+      "id": "sp_8",
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_9",
+      "name": "[Chain combo]Standing Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_10",
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_11",
+      "name": "[Chain combo]Standing Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_12",
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_13",
+      "name": "[Chain combo]Crouching Light Punch",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_14",
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_15",
+      "name": "[Chain combo]Crouching Light Kick",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_16",
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_17",
+      "name": "[Chain combo]Crouching Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_18",
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[MK]"
+      ]
+    },
+    {
+      "id": "sp_19",
+      "name": "[Chain combo]Crouching Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[MK]"
+      ]
+    },
+    {
+      "id": "sp_20",
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_21",
+      "name": "[Chain combo]Crouching Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_22",
+      "name": "Crouching Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_23",
+      "name": "[Chain combo]Crouching Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_24",
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP] [LP]"
+      ]
+    },
+    {
+      "id": "sp_25",
+      "name": "[Chain combo]Jumping Light Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP] [LP]"
+      ]
+    },
+    {
+      "id": "sp_26",
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [LK]"
+      ]
+    },
+    {
+      "id": "sp_27",
+      "name": "[Chain combo]Jumping Light Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [LK]"
+      ]
+    },
+    {
+      "id": "sp_28",
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP] [MP]"
+      ]
+    },
+    {
+      "id": "sp_29",
+      "name": "[Chain combo]Jumping Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP] [MP]"
+      ]
+    },
+    {
+      "id": "sp_30",
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [MK]"
+      ]
+    },
+    {
+      "id": "sp_31",
+      "name": "[Chain combo]Jumping Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [MK]"
+      ]
+    },
+    {
+      "id": "sp_32",
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP] [HP]"
+      ]
+    },
+    {
+      "id": "sp_33",
+      "name": "[Chain combo]Neutral Jumping Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [HP]"
+      ]
+    },
+    {
+      "id": "sp_34",
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_35",
+      "name": "[Chain combo]Jumping Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_36",
+      "name": "Neutral Jumping Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_37",
+      "name": "[Chain combo]Neutral Jumping Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_38",
+      "name": "Kyosesho",
+      "type": "special",
+      "inputs": [
+        "[Forward]",
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_39",
+      "name": "[Chain combo]Kyosesho",
+      "type": "special",
+      "inputs": [
+        "[Forward]",
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_40",
+      "name": "Senkai Kick",
+      "type": "special",
+      "inputs": [
+        "[Forward]",
+        "[MK]"
+      ]
+    },
+    {
+      "id": "sp_41",
+      "name": "[Chain combo]Senkai Kick",
+      "type": "special",
+      "inputs": [
+        "[Forward]",
+        "[MK]"
+      ]
+    },
+    {
+      "id": "sp_42",
+      "name": "Renko Kicks",
+      "type": "special",
+      "inputs": [
+        "[Forward]",
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_43",
+      "name": "[Chain combo]Renko Kicks",
+      "type": "special",
+      "inputs": [
+        "[Forward]",
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_44",
+      "name": "Korenzan",
+      "type": "special",
+      "inputs": [
+        "[Back]",
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_45",
+      "name": "[Chain combo]Korenzan",
+      "type": "special",
+      "inputs": [
+        "[Back]",
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_46",
+      "name": "Death Crest(2)",
+      "type": "special",
+      "inputs": [
+        "[MP] [Back]",
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_47",
+      "name": "Death Crest(3)",
+      "type": "special",
+      "inputs": [
+        "[MP] [Back]",
+        "[HP] [HP]"
+      ]
+    },
+    {
+      "id": "sp_48",
+      "name": "L Fuhajin",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_49",
+      "name": "M Fuhajin",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[MK]"
+      ]
+    },
+    {
+      "id": "sp_50",
+      "name": "H Fuhajin",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_51",
+      "name": "OD Fuhajin",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[LK] [LK]"
+      ]
+    },
+    {
+      "id": "sp_52",
+      "name": "Saihasho",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_53",
+      "name": "[Boosted]Saihasho",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_54",
+      "name": "OD Saihasho",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[LK] [MK]"
+      ]
+    },
+    {
+      "id": "sp_56",
+      "name": "[Boosted]Ankensatsu",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[MK]"
+      ]
+    },
+    {
+      "id": "sp_57",
+      "name": "OD Ankensatsu",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[LK] [HK]"
+      ]
+    },
+    {
+      "id": "sp_59",
+      "name": "[Boosted]Go Ohsatsu",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[HK]"
+      ]
+    },
+    {
+      "id": "sp_60",
+      "name": "OD Go Ohsatsu",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[MK] [HK]"
+      ]
+    },
+    {
+      "id": "sp_61",
+      "name": "L Tensenrin",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Down] [Down-Forward]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sp_62",
+      "name": "M Tensenrin",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Down] [Down-Forward]",
+        "[MP]"
+      ]
+    },
+    {
+      "id": "sp_63",
+      "name": "H Tensenrin",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Down] [Down-Forward]",
+        "[HP]"
+      ]
+    },
+    {
+      "id": "sp_64",
+      "name": "OD Tensenrin",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Down] [Down-Forward]",
+        "[LP] [LP]"
+      ]
+    },
+    {
+      "id": "sp_65",
+      "name": "Shiku-sen",
+      "type": "special",
+      "inputs": [
+        "[MP] [Down] [Down-Back] [Back]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_66",
+      "name": "OD Shiku-sen",
+      "type": "special",
+      "inputs": [
+        "[MP] [Down] [Down-Back] [Back]",
+        "[LK] [LK]"
+      ]
+    },
+    {
+      "id": "sp_67",
+      "name": "Shiren-sen",
+      "type": "special",
+      "inputs": [
+        "[LK] [LK]"
+      ]
+    },
+    {
+      "id": "sp_68",
+      "name": "OD Shiren-sen",
+      "type": "special",
+      "inputs": [
+        "[LK] [LK]"
+      ]
+    },
+    {
+      "id": "sp_69",
+      "name": "CA Kaisen Dankai Raku",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down] [Down-Back] [Back] [Down] [Down-Back] [Back]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sp_70",
+      "name": "Spider Fang Throw",
+      "type": "throw",
+      "inputs": [
+        "[LP] [LP] [Forward]",
+        "[LP] [LK]"
+      ]
+    },
+    {
+      "id": "sp_71",
+      "name": "Shadow Kick Throw",
+      "type": "throw",
+      "inputs": [
+        "[LP] [LP] [Back]",
+        "[LP] [LK]"
+      ]
+    },
+    {
+      "id": "sp_72",
+      "name": "Zanka-sen",
+      "type": "special",
+      "inputs": [
+        "[MP] [LP] [LP] [LP] [LK]"
+      ]
+    },
+    {
+      "id": "sp_73",
+      "name": "Forward Dash",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Forward]"
+      ]
+    },
+    {
+      "id": "sp_74",
+      "name": "Backward Dash",
+      "type": "special",
+      "inputs": [
+        "[Back] [Back]"
+      ]
+    },
+    {
+      "id": "sp_75",
+      "name": "Drive Impact: Sekkan Kick",
+      "type": "special",
+      "inputs": [
+        "[HP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_76",
+      "name": "Drive Reversal (while blocking): Kaita Raid",
+      "type": "special",
+      "inputs": [
+        "[LK] [LP] [Forward]",
+        "[HP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_77",
+      "name": "Drive Reversal (while recovering): Kaita Raid",
+      "type": "special",
+      "inputs": [
+        "[LK] [LK] [Forward]",
+        "[HP] [HK]"
+      ]
+    },
+    {
+      "id": "sp_78",
+      "name": "Drive Parry",
+      "type": "special",
+      "inputs": [
+        "[MP] [MK]"
+      ]
+    },
+    {
+      "id": "sp_79",
+      "name": "Perfect Parry (strike)",
+      "type": "special",
+      "inputs": [
+        "[LK]",
+        "[MP] [MK]"
+      ]
+    },
+    {
+      "id": "sp_80",
+      "name": "Perfect Parry (projectile)",
+      "type": "special",
+      "inputs": [
+        "[MP] [MK]"
+      ]
+    },
+    {
+      "id": "sp_81",
+      "name": "Parry Drive Rush",
+      "type": "special",
+      "inputs": [
+        "[LP] [Forward] [Forward]"
+      ]
+    },
+    {
+      "id": "sp_82",
+      "name": "Cancel Drive Rush",
+      "type": "special",
+      "inputs": [
+        "[LP] [Forward] [Forward] [Forward]",
+        "[MP] [MK]"
+      ]
+    },
+    {
+      "id": "sup_0",
+      "name": "SA1 Sakkai Fuhazan",
+      "type": "super",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+        "[LK]"
+      ]
+    },
+    {
+      "id": "sup_1",
+      "name": "SA2 Feng Shui Engine",
+      "type": "super",
+      "inputs": [
+        "[Down] [Down-Back] [Back] [Down] [Down-Back] [Back]",
+        "[LP]"
+      ]
+    },
+    {
+      "id": "sup_2",
+      "name": "SA2 Feng Shui Engine(Rush)",
+      "type": "super",
+      "inputs": [
+        "[LP] [LP]"
+      ]
+    },
+    {
+      "id": "sup_3",
+      "name": "SA3 Kaisen Dankai Raku",
+      "type": "super",
+      "inputs": [
+        "[Down] [Down-Back] [Back] [Down] [Down-Back] [Back]",
+        "[LK]"
       ]
     }
   ],

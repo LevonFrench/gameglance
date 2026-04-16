@@ -1,39 +1,1041 @@
 {
   "game": "Street Fighter 6",
-  "character": "E. Honda",
+  "character": "Ehonda",
   "movesList": [
     {
-      "id": "sp_0",
-      "name": "Hundred Hand Slap",
-      "type": "special",
+      "id": "m_ehonda_0",
+      "name": "Standing Light Punch",
+      "type": "normal",
       "inputs": [
-        "214P"
-      ]
+        "[LP]"
+      ],
+      "frameData": {
+        "startup": "5",
+        "active": "5-7",
+        "recovery": "10",
+        "advantage": "4"
+      }
     },
     {
-      "id": "sp_1",
-      "name": "Sumo Headbutt",
-      "type": "special",
+      "id": "m_ehonda_1",
+      "name": "Standing Light Kick",
+      "type": "normal",
       "inputs": [
-        "[4]6P"
-      ]
+        "[LK]"
+      ],
+      "frameData": {
+        "startup": "4",
+        "active": "4-5",
+        "recovery": "9",
+        "advantage": "5"
+      }
     },
     {
-      "id": "sp_2",
-      "name": "Sumo Smash",
-      "type": "special",
+      "id": "m_ehonda_2",
+      "name": "Standing Medium Punch",
+      "type": "normal",
       "inputs": [
-        "[2]8K"
-      ]
+        "[MP]"
+      ],
+      "frameData": {
+        "startup": "10",
+        "active": "10-13",
+        "recovery": "13",
+        "advantage": "6"
+      }
     },
     {
-      "id": "sp_3",
-      "name": "Oicho Throw",
+      "id": "m_ehonda_3",
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "[MK]"
+      ],
+      "frameData": {
+        "startup": "10",
+        "active": "10-13",
+        "recovery": "16",
+        "advantage": "4"
+      }
+    },
+    {
+      "id": "m_ehonda_4",
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "[HP]"
+      ],
+      "frameData": {
+        "startup": "8",
+        "active": "8-14",
+        "recovery": "20",
+        "advantage": "1"
+      }
+    },
+    {
+      "id": "m_ehonda_5",
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[HK]"
+      ],
+      "frameData": {
+        "startup": "8",
+        "active": "8-148-9, 11-14",
+        "recovery": "22",
+        "advantage": "-1"
+      }
+    },
+    {
+      "id": "m_ehonda_6",
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[LP]"
+      ],
+      "frameData": {
+        "startup": "4",
+        "active": "4-6",
+        "recovery": "10",
+        "advantage": "4"
+      }
+    },
+    {
+      "id": "m_ehonda_7",
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[LK]"
+      ],
+      "frameData": {
+        "startup": "5",
+        "active": "5-6",
+        "recovery": "9",
+        "advantage": "3"
+      }
+    },
+    {
+      "id": "m_ehonda_8",
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[MP]"
+      ],
+      "frameData": {
+        "startup": "8",
+        "active": "8-11",
+        "recovery": "16",
+        "advantage": "3"
+      }
+    },
+    {
+      "id": "m_ehonda_9",
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[MK]"
+      ],
+      "frameData": {
+        "startup": "9",
+        "active": "9-11",
+        "recovery": "17",
+        "advantage": "6"
+      }
+    },
+    {
+      "id": "m_ehonda_10",
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[HP]"
+      ],
+      "frameData": {
+        "startup": "11",
+        "active": "11-14",
+        "recovery": "*17",
+        "advantage": "3"
+      }
+    },
+    {
+      "id": "m_ehonda_11",
+      "name": "Crouching Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[Down]",
+        "[HK]"
+      ],
+      "frameData": {
+        "startup": "11",
+        "active": "11-2411-13,20-24",
+        "recovery": "14",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_12",
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP] [LP]"
+      ],
+      "frameData": {
+        "startup": "5",
+        "active": "5-10",
+        "recovery": "3 frame(s) after landing",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_13",
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [LK]"
+      ],
+      "frameData": {
+        "startup": "6",
+        "active": "6-11",
+        "recovery": "3 frame(s) after landing",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_14",
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP] [MP]"
+      ],
+      "frameData": {
+        "startup": "6",
+        "active": "6-13",
+        "recovery": "3 frame(s) after landing",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_15",
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [MK]"
+      ],
+      "frameData": {
+        "startup": "9",
+        "active": "9-14",
+        "recovery": "3 frame(s) after landing",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_16",
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP] [HP]"
+      ],
+      "frameData": {
+        "startup": "9",
+        "active": "9-12",
+        "recovery": "3 frame(s) after landing",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_17",
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "inputs": [
+        "[MP] [HK]"
+      ],
+      "frameData": {
+        "startup": "10",
+        "active": "10-17",
+        "recovery": "3 frame(s) after landing",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_18",
+      "name": "Neutral Jumping Heavy Punch",
+      "type": "normal",
+      "inputs": [
+        "[MP] [HP]"
+      ],
+      "frameData": {
+        "startup": "10",
+        "active": "10-17",
+        "recovery": "3 frame(s) after landing",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_19",
+      "name": "Harai Kick",
       "type": "special",
       "inputs": [
-        "63214K"
-      ]
+        "[Forward]",
+        "[HK]"
+      ],
+      "frameData": {
+        "startup": "14",
+        "active": "14-16",
+        "recovery": "21",
+        "advantage": "1"
+      }
+    },
+    {
+      "id": "m_ehonda_20",
+      "name": "Power Stomp",
+      "type": "special",
+      "inputs": [
+        "[Down-Forward]",
+        "[HK]"
+      ],
+      "frameData": {
+        "startup": "22",
+        "active": "22-27",
+        "recovery": "18",
+        "advantage": "3"
+      }
+    },
+    {
+      "id": "m_ehonda_21",
+      "name": "Flying Sumo Press",
+      "type": "special",
+      "inputs": [
+        "[MP] [Down]",
+        "[MK]"
+      ],
+      "frameData": {
+        "startup": "11",
+        "active": "11-19",
+        "recovery": "3 frame(s) after landing",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_22",
+      "name": "Double Slaps",
+      "type": "special",
+      "inputs": [
+        "[LP] [MP]"
+      ],
+      "frameData": {
+        "startup": "4",
+        "active": "4-7",
+        "recovery": "20",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_23",
+      "name": "Toko Shizume",
+      "type": "special",
+      "inputs": [
+        "[MP] [Down-Forward]",
+        "[HK]"
+      ],
+      "frameData": {
+        "startup": "22",
+        "active": "22-27",
+        "recovery": "18",
+        "advantage": "3"
+      }
+    },
+    {
+      "id": "m_ehonda_24",
+      "name": "L Hundred Hand Slap",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[LP]"
+      ],
+      "frameData": {
+        "startup": "12",
+        "active": "12-3112-13, 18-19, 22, 25-26, 28, 30-31",
+        "recovery": "14",
+        "advantage": "2"
+      }
+    },
+    {
+      "id": "m_ehonda_25",
+      "name": "[Sumo Spirit]L Hundred Hand Slap",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[LP]"
+      ],
+      "frameData": {
+        "startup": "12",
+        "active": "12-3112-13, 18-19, 22, 25-26, 28, 30-31",
+        "recovery": "14",
+        "advantage": "4"
+      }
+    },
+    {
+      "id": "m_ehonda_26",
+      "name": "M Hundred Hand Slap",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[MP]"
+      ],
+      "frameData": {
+        "startup": "16",
+        "active": "16-4716-17, 22-23, 25, 29, 32, 36, 40, 43, 46-47",
+        "recovery": "17",
+        "advantage": "2"
+      }
+    },
+    {
+      "id": "m_ehonda_27",
+      "name": "[Sumo Spirit]M Hundred Hand Slap",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[MP]"
+      ],
+      "frameData": {
+        "startup": "16",
+        "active": "16-4716-17, 22-23, 25, 29, 32, 36, 40, 43, 46-47",
+        "recovery": "17",
+        "advantage": "4"
+      }
+    },
+    {
+      "id": "m_ehonda_28",
+      "name": "H Hundred Hand Slap",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[HP]"
+      ],
+      "frameData": {
+        "startup": "19",
+        "active": "19-6219-20, 25-26, 30, 34, 38, 42, 46, 50, 53, 56, 59, 61-62",
+        "recovery": "17",
+        "advantage": "2"
+      }
+    },
+    {
+      "id": "m_ehonda_29",
+      "name": "[Sumo Spirit]H Hundred Hand Slap",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[HP]"
+      ],
+      "frameData": {
+        "startup": "19",
+        "active": "19-6219-20, 25-26, 30, 34, 38, 42, 46, 50, 53, 56, 59, 61-62",
+        "recovery": "17",
+        "advantage": "4"
+      }
+    },
+    {
+      "id": "m_ehonda_30",
+      "name": "OD Hundred Hand Slap",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[LP] [LP]"
+      ],
+      "frameData": {
+        "startup": "19",
+        "active": "19-6119-22, 29-30, 34-35, 39-40, 45-46, 49-50, 53-54, 57-58, 60-61",
+        "recovery": "12",
+        "advantage": "4"
+      }
+    },
+    {
+      "id": "m_ehonda_31",
+      "name": "[Sumo Spirit]OD Hundred Hand Slap",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Back] [Back]",
+        "[LP] [LP]"
+      ],
+      "frameData": {
+        "startup": "19",
+        "active": "19-6119-22, 29-30, 34-35, 39-40, 45-46, 49-50, 53-54, 57-58, 60-61",
+        "recovery": "12",
+        "advantage": "6"
+      }
+    },
+    {
+      "id": "m_ehonda_32",
+      "name": "L Sumo Headbutt",
+      "type": "special",
+      "inputs": [
+        "[Forward]",
+        "[LP]"
+      ],
+      "frameData": {
+        "startup": "10",
+        "active": "10-31",
+        "recovery": "20",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_33",
+      "name": "M Sumo Headbutt",
+      "type": "special",
+      "inputs": [
+        "[Forward]",
+        "[MP]"
+      ],
+      "frameData": {
+        "startup": "10",
+        "active": "10-33",
+        "recovery": "20",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_34",
+      "name": "H Sumo Headbutt",
+      "type": "special",
+      "inputs": [
+        "[Forward]",
+        "[HP]"
+      ],
+      "frameData": {
+        "startup": "14",
+        "active": "14-36",
+        "recovery": "20",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_35",
+      "name": "OD Sumo Headbutt",
+      "type": "special",
+      "inputs": [
+        "[Forward]",
+        "[LP] [LP]"
+      ],
+      "frameData": {
+        "startup": "9",
+        "active": "9-569-13, 14-56",
+        "recovery": "20",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_36",
+      "name": "L Sumo Smash",
+      "type": "special",
+      "inputs": [
+        "[Up]",
+        "[LK]"
+      ],
+      "frameData": {
+        "startup": "11",
+        "active": "11-4811-14, 41-48",
+        "recovery": "17 frame(s) after landing",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_37",
+      "name": "M Sumo Smash",
+      "type": "special",
+      "inputs": [
+        "[Up]",
+        "[MK]"
+      ],
+      "frameData": {
+        "startup": "11",
+        "active": "11-4511-14, 39-45",
+        "recovery": "17 frame(s) after landing",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_38",
+      "name": "H Sumo Smash",
+      "type": "special",
+      "inputs": [
+        "[Up]",
+        "[HK]"
+      ],
+      "frameData": {
+        "startup": "11",
+        "active": "11-4211-14, 37-42",
+        "recovery": "17 frame(s) after landing",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_39",
+      "name": "OD Sumo Smash",
+      "type": "special",
+      "inputs": [
+        "[Up]",
+        "[LK] [LK]"
+      ],
+      "frameData": {
+        "startup": "6",
+        "active": "6-396-17, 31-39",
+        "recovery": "17 frame(s) after landing",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_40",
+      "name": "L Oicho Throw",
+      "type": "throw",
+      "inputs": [
+        "[LP] [LP] [Forward] [Down-Forward] [Down] [Down-Back] [Back]",
+        "[LK]"
+      ],
+      "frameData": {
+        "startup": "6",
+        "active": "6-9",
+        "recovery": "52",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_41",
+      "name": "M Oicho Throw",
+      "type": "throw",
+      "inputs": [
+        "[LP] [LP] [Forward] [Down-Forward] [Down] [Down-Back] [Back]",
+        "[MK]"
+      ],
+      "frameData": {
+        "startup": "6",
+        "active": "6-9",
+        "recovery": "52",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_42",
+      "name": "H Oicho Throw",
+      "type": "throw",
+      "inputs": [
+        "[LP] [LP] [Forward] [Down-Forward] [Down] [Down-Back] [Back]",
+        "[HK]"
+      ],
+      "frameData": {
+        "startup": "6",
+        "active": "6-9",
+        "recovery": "52",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_43",
+      "name": "OD Oicho Throw",
+      "type": "throw",
+      "inputs": [
+        "[LP] [LP] [Forward] [Down-Forward] [Down] [Down-Back] [Back]",
+        "[LK] [LK]"
+      ],
+      "frameData": {
+        "startup": "6",
+        "active": "6-9",
+        "recovery": "52",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_44",
+      "name": "Sumo Dash",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[LK]"
+      ],
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "51 total frames",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_45",
+      "name": "OD Sumo Dash",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward]",
+        "[LK] [LK]"
+      ],
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "34 total frames",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_46",
+      "name": "Teppo Triple Slap(1)",
+      "type": "special",
+      "inputs": [
+        "[LP]"
+      ],
+      "frameData": {
+        "startup": "9",
+        "active": "9-279-11, 25-27",
+        "recovery": "22",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_47",
+      "name": "Teppo Triple Slap(2)",
+      "type": "special",
+      "inputs": [
+        "[LP] [LP]"
+      ],
+      "frameData": {
+        "startup": "14",
+        "active": "14-16",
+        "recovery": "38",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_48",
+      "name": "OD Teppo Triple Slap(1)",
+      "type": "special",
+      "inputs": [
+        "[LP]",
+        "[MP] [LP]"
+      ],
+      "frameData": {
+        "startup": "9",
+        "active": "9-279-11, 25-27",
+        "recovery": "17",
+        "advantage": "3"
+      }
+    },
+    {
+      "id": "m_ehonda_49",
+      "name": "OD Teppo Triple Slap(2)",
+      "type": "special",
+      "inputs": [
+        "[LP]",
+        "[MP] [LP] [LP]"
+      ],
+      "frameData": {
+        "startup": "14",
+        "active": "14-16",
+        "recovery": "38",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_50",
+      "name": "Taiho Cannon Lift",
+      "type": "special",
+      "inputs": [
+        "[Down]",
+        "[LP]"
+      ],
+      "frameData": {
+        "startup": "12",
+        "active": "12-3312-13, 31-33",
+        "recovery": "32",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_51",
+      "name": "OD Taiho Cannon Lift",
+      "type": "special",
+      "inputs": [
+        "[LP]",
+        "[MP] [Down]",
+        "[LP]"
+      ],
+      "frameData": {
+        "startup": "12",
+        "active": "12-3312-13, 31-33",
+        "recovery": "32",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_52",
+      "name": "Neko Damashi",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down]",
+        "[LP]"
+      ],
+      "frameData": {
+        "startup": "11",
+        "active": "11-15",
+        "recovery": "14",
+        "advantage": "3"
+      }
+    },
+    {
+      "id": "m_ehonda_53",
+      "name": "Sumo Spirit",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down]",
+        "[LK]"
+      ],
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "52 total frames",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_54",
+      "name": "SA1 Show of Force",
+      "type": "super",
+      "inputs": [
+        "[Down] [Down-Forward] [Forward] [Down] [Down-Forward] [Forward]",
+        "[LP]"
+      ],
+      "frameData": {
+        "startup": "7",
+        "active": "7-11",
+        "recovery": "48",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_55",
+      "name": "SA2 Ultimate Killer Head Ram",
+      "type": "super",
+      "inputs": [
+        "[Forward] [Back] [Forward]",
+        "[LK]"
+      ],
+      "frameData": {
+        "startup": "12",
+        "active": "12-3612-13, 16-36",
+        "recovery": "45",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_56",
+      "name": "SA3 The Final Bout",
+      "type": "super",
+      "inputs": [
+        "[Down] [Down-Back] [Back] [Down] [Down-Back] [Back]",
+        "[LP]"
+      ],
+      "frameData": {
+        "startup": "9",
+        "active": "9-229-11,20-22",
+        "recovery": "51",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_57",
+      "name": "CA The Final Bout",
+      "type": "special",
+      "inputs": [
+        "[Down] [Down] [Down-Back] [Back] [Down] [Down-Back] [Back]",
+        "[LP]"
+      ],
+      "frameData": {
+        "startup": "9",
+        "active": "9-229-11,20-22",
+        "recovery": "51",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_58",
+      "name": "Saba Ori",
+      "type": "special",
+      "inputs": [
+        "[LP] [LP] [Forward]",
+        "[LP] [LK]"
+      ],
+      "frameData": {
+        "startup": "5",
+        "active": "5-7",
+        "recovery": "23",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_59",
+      "name": "Tawara Throw",
+      "type": "throw",
+      "inputs": [
+        "[LP] [LP] [Back]",
+        "[LP] [LK]"
+      ],
+      "frameData": {
+        "startup": "5",
+        "active": "5-7",
+        "recovery": "23",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_60",
+      "name": "Forward Dash",
+      "type": "special",
+      "inputs": [
+        "[Forward] [Forward]"
+      ],
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "19 total frames",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_61",
+      "name": "Backward Dash",
+      "type": "special",
+      "inputs": [
+        "[Back] [Back]"
+      ],
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "23 total frames",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_62",
+      "name": "Drive Impact: Sumo Crunch",
+      "type": "special",
+      "inputs": [
+        "[HP] [HK]"
+      ],
+      "frameData": {
+        "startup": "26",
+        "active": "26-27",
+        "recovery": "35",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_63",
+      "name": "Drive Reversal (while blocking): Raiden-Ho",
+      "type": "special",
+      "inputs": [
+        "[LK] [LP] [Forward]",
+        "[HP] [HK]"
+      ],
+      "frameData": {
+        "startup": "20",
+        "active": "20-22",
+        "recovery": "26",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_64",
+      "name": "Drive Reversal (while recovering): Raiden-Ho",
+      "type": "special",
+      "inputs": [
+        "[LK] [LK] [Forward]",
+        "[HP] [HK]"
+      ],
+      "frameData": {
+        "startup": "18",
+        "active": "18-20",
+        "recovery": "26",
+        "advantage": "D"
+      }
+    },
+    {
+      "id": "m_ehonda_65",
+      "name": "Drive Parry",
+      "type": "special",
+      "inputs": [
+        "[MP] [MK]"
+      ],
+      "frameData": {
+        "startup": "1",
+        "active": "[*2] 1-12",
+        "recovery": "33",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_66",
+      "name": "Perfect Parry (strike)",
+      "type": "special",
+      "inputs": [
+        "[LK]",
+        "[MP] [MK]"
+      ],
+      "frameData": {
+        "startup": "1",
+        "active": "",
+        "recovery": "1",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_67",
+      "name": "Perfect Parry (projectile)",
+      "type": "special",
+      "inputs": [
+        "[MP] [MK]"
+      ],
+      "frameData": {
+        "startup": "1",
+        "active": "",
+        "recovery": "10",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_68",
+      "name": "Parry Drive Rush",
+      "type": "special",
+      "inputs": [
+        "[LP] [Forward] [Forward]"
+      ],
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "45 total frames",
+        "advantage": ""
+      }
+    },
+    {
+      "id": "m_ehonda_69",
+      "name": "Cancel Drive Rush",
+      "type": "special",
+      "inputs": [
+        "[LP] [Forward] [Forward] [Forward]",
+        "[MP] [MK]"
+      ],
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "46 total frames",
+        "advantage": ""
+      }
     }
   ],
-  "combosList": []
+  "combosList": [],
+  "theme_colors": {
+    "normal": "#FFFFFF",
+    "special": "#FFD700",
+    "super_fatality": "#FF0000"
+  }
 }

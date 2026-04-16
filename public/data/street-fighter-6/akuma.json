@@ -4,18 +4,24 @@
   "movesList": [
     {
       "id": "sp_0",
-      "name": "Gohadoken",
+      "name": "Gou Hadouken",
       "type": "special",
       "inputs": [
-        "236P"
+        "down",
+        "down-forward",
+        "forward",
+        "P"
       ]
     },
     {
       "id": "sp_1",
-      "name": "Goshoryuken",
+      "name": "Gou Shoryuken",
       "type": "special",
       "inputs": [
-        "623P"
+        "forward",
+        "down",
+        "down-forward",
+        "P"
       ]
     },
     {
@@ -23,23 +29,73 @@
       "name": "Tatsumaki Zankukyaku",
       "type": "special",
       "inputs": [
-        "214K"
+        "down",
+        "down-back",
+        "back",
+        "K"
       ]
     },
     {
       "id": "sp_3",
-      "name": "Hyakkishu",
+      "name": "Ashura Senku",
       "type": "special",
       "inputs": [
-        "623K"
+        "623 or 421",
+        "PPP or KKK"
       ]
     },
     {
-      "id": "sp_4",
-      "name": "Adamant Flame",
-      "type": "special",
+      "id": "sup_0",
+      "name": "Messatsu Gou Hadou (Lv.1)",
+      "type": "super",
       "inputs": [
-        "214P"
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward",
+        "P"
+      ]
+    },
+    {
+      "id": "sup_1",
+      "name": "Empyrean's End (Lv.2)",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-back",
+        "back",
+        "down",
+        "down-back",
+        "back",
+        "P"
+      ]
+    },
+    {
+      "id": "sup_2",
+      "name": "Sip of the Abyss (Lv.3)",
+      "type": "super",
+      "inputs": [
+        "down",
+        "down-forward",
+        "forward",
+        "down",
+        "down-forward",
+        "forward",
+        "K"
+      ]
+    },
+    {
+      "id": "sup_3",
+      "name": "Shun Goku Satsu (Hidden)",
+      "type": "super",
+      "inputs": [
+        "LP",
+        "LP",
+        "6",
+        "LK",
+        "HP (Requires Lv.3 Gauge and Low HP)"
       ]
     }
   ],
