@@ -1,23 +1,30 @@
 {
-    "name": "Silver Samurai",
-    "special_moves": [
-        {
-            "name": "Shuriken",
-            "input": "236 + P"
-        },
-        {
-            "name": "Hyakuretsutou (Lightning Sword)",
-            "input": "623 + P"
-        },
-        {
-            "name": "Choujin Ken (Sword Power Up)",
-            "input": "214 + P (Envelops sword in ice/fire/lightning)"
-        }
-    ],
-    "x_powers": [
-        {
-            "name": "Raimei Ken",
-            "input": "236 + PP"
-        }
-    ]
+  "game": "X-Men: Children of the Atom",
+  "character": "Silver Samurai",
+  "movesList": [
+    {
+      "id": "basic-attack",
+      "name": "Basic Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "special-attack",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    },
+    {
+      "id": "super-art",
+      "name": "Super Art",
+      "type": "super",
+      "inputs": [
+        "236236P"
+      ]
+    }
+  ]
 }

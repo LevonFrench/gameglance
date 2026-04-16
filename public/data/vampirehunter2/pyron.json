@@ -1,27 +1,22 @@
 {
-    "name": "Pyron",
-    "special_moves": [
-        {
-            "name": "Soul Smasher",
-            "input": "236 + P (Ground or Air)"
-        },
-        {
-            "name": "Zodiac Fire",
-            "input": "623 + P"
-        },
-        {
-            "name": "Orbital Blaze",
-            "input": "(In Air) 214 + K"
-        },
-        {
-            "name": "Galaxy Trip",
-            "input": "421 or 623 + K"
-        }
-    ],
-    "ex_moves": [
-        {
-            "name": "Cosmo Disruption",
-            "input": "41236 + PP or KK"
-        }
-    ]
+  "game": "Vampire Hunter 2",
+  "character": "Pyron",
+  "movesList": [
+    {
+      "id": "basic-attack",
+      "name": "Basic Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "special-attack",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    }
+  ]
 }

@@ -1,27 +1,30 @@
 {
-    "name": "Sabretooth",
-    "special_moves": [
-        {
-            "name": "Berserker Claw",
-            "input": "236 + P"
-        },
-        {
-            "name": "Armed Bird",
-            "input": "623 + K"
-        },
-        {
-            "name": "Wild Fang",
-            "input": "63214 + P (Command Grab)"
-        }
-    ],
-    "hyper_combos": [
-        {
-            "name": "Berserker Claw X",
-            "input": "236 + PP"
-        },
-        {
-            "name": "Weapon X Dash",
-            "input": "623 + PP"
-        }
-    ]
+  "game": "X-Men vs. Street Fighter",
+  "character": "Sabretooth",
+  "movesList": [
+    {
+      "id": "basic-attack",
+      "name": "Basic Attack",
+      "type": "normal",
+      "inputs": [
+        "P"
+      ]
+    },
+    {
+      "id": "special-attack",
+      "name": "Special Attack",
+      "type": "special",
+      "inputs": [
+        "236P"
+      ]
+    },
+    {
+      "id": "super-art",
+      "name": "Super Art",
+      "type": "super",
+      "inputs": [
+        "236236P"
+      ]
+    }
+  ]
 }
