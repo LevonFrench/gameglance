@@ -462,7 +462,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame }) => {
                 position: 'relative',
                 zIndex: 1,
               }}>
-                {theme.tagline} {game.releaseYear && <span style={{opacity:0.6, fontStyle:'normal', marginLeft:'0.25rem'}}>• {game.releaseYear}</span>}{game.platform && <span style={{opacity:0.6, fontStyle:'normal', marginLeft:'0.25rem'}}> • {game.platform}</span>}
+                {theme.tagline}
               </div>
 
               {/* Fighter count badge */}
