@@ -22,7 +22,6 @@ GameGlance currently supports the following titles:
 - Capcom vs. SNK 2: Mark of the Millennium 2001
 - Capcom vs. SNK: Millennium Fight 2000 Pro
 - Cyberbots: Full Metal Madness
-- DNF Duel
 - Darkstalkers: The Night Warriors
 - Dead or Alive
 - Dead or Alive 2
@@ -30,6 +29,7 @@ GameGlance currently supports the following titles:
 - Dead or Alive 4
 - Dead or Alive 5
 - Dead or Alive 6
+- DNF Duel
 - Dragon Ball FighterZ
 - Fatal Fury 2
 - Fatal Fury 3: Road to the Final Victory
@@ -45,16 +45,16 @@ GameGlance currently supports the following titles:
 - Garou: Mark of the Wolves
 - Golden Axe: The Duel
 - Granblue Fantasy Versus: Rising
-- Groove On Fight (Power Instinct 3)
 - Groove on Fight
+- Groove On Fight (Power Instinct 3)
 - Guilty Gear (1998)
 - Guilty Gear -Strive-
 - Guilty Gear X
-- Guilty Gear XX Accent Core Plus R
 - Guilty Gear Xrd REV 2
+- Guilty Gear XX Accent Core Plus R
 - Hyper Street Fighter II
 - Invincible VS Beta
-- JoJo's Bizarre Adventure: Heritage for the Future (JJBA: HFTF)
+- JoJo
 - Kakuto Chojin: Back Alley Brutal
 - Kasumi Ninja
 - Killer Instinct (1994)
@@ -89,8 +89,6 @@ GameGlance currently supports the following titles:
 - Real Bout Fatal Fury
 - Real Bout Fatal Fury 2: The Newcomers
 - Real Bout Fatal Fury Special
-- SNK Heroines: Tag Team Frenzy
-- SNK vs. Capcom: SVC Chaos
 - Samurai Shodown
 - Samurai Shodown (2019)
 - Samurai Shodown II
@@ -98,7 +96,9 @@ GameGlance currently supports the following titles:
 - Samurai Shodown IV: Amakusa
 - Samurai Shodown V
 - Samurai Shodown V Special
-- Savage Reign (Fu'un Mokushiroku: Kakutou Sousei)
+- Savage Reign (Fu
+- SNK Heroines: Tag Team Frenzy
+- SNK vs. Capcom: SVC Chaos
 - Soul Calibur
 - Soul Edge (Soul Blade)
 - Street Fighter 6
@@ -116,15 +116,9 @@ GameGlance currently supports the following titles:
 - Tekken 1
 - Tekken 2
 - Tekken 8
-- The King of Fighters '94
-- The King of Fighters '96
-- The King of Fighters '97
-- The King of Fighters '98
-- The King of Fighters '98 Ultimate Match
-- The King of Fighters '99
+- The King of Fighters
 - The King of Fighters 2000
 - The King of Fighters 2001
-- The King of Fighters 2002
 - The King of Fighters 2002
 - The King of Fighters 2003
 - The King of Fighters XIII
@@ -132,7 +126,7 @@ GameGlance currently supports the following titles:
 - The King of Fighters XV
 - The King of Fighters: Maximum Impact
 - The King of Fighters: Maximum Impact 2 (KOF 2006)
-- The King of Fighters: Maximum Impact Regulation 'A'
+- The King of Fighters: Maximum Impact Regulation
 - The Last Blade
 - The Last Blade 2
 - Ultimate Marvel vs. Capcom 3

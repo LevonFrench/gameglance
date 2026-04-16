@@ -1,7399 +1,6289 @@
-import type { GameDefinition } from './types';
-export const SUPPORTED_GAMES: GameDefinition[] = [
-  {
-    id: 'art-of-fighting',
-    name: "Art of Fighting",
-    developer: "SNK",
-    releaseYear: 1994,
-    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
-rosterCount: 10,
-        characters: [
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'ryuhaku-todoh', name: 'Ryuhaku Todoh' },
-      { id: 'jack-turner', name: 'Jack Turner' },
-      { id: 'lee-pai-long', name: 'Lee Pai Long' },
-      { id: 'king', name: 'King' },
-      { id: 'micky-rogers', name: 'Micky Rogers' },
-      { id: 'john-crawley', name: 'John Crawley' },
-      { id: 'mr.-big', name: 'Mr. Big' },
-      { id: 'mr.-karate', name: 'Mr. Karate' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'art-of-fighting-3-the-path-of-the-warrior',
-    name: "Art of Fighting 3: The Path of the Warrior",
-    developer: "SNK",
-    releaseYear: 1994,
-    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
-rosterCount: 999,
-        characters: [
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'byakko', name: 'Byakko' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'cotw_nightmaregeese', name: 'Cotw_Nightmaregeese' },
-      { id: 'final_battle', name: 'Final_Battle' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'k9999', name: 'K9999' },
-      { id: 'king', name: 'King' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'oro', name: 'Oro' },
-      { id: 'orochi_iori', name: 'Orochi_Iori' },
-      { id: 'rugal', name: 'Rugal' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'world_tour', name: 'World_Tour' },
-      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'fatal-fury-special', name: 'Fatal Fury Special' },
-      { id: 'samurai-shodown-iii-blades-of-blood', name: 'Samurai Shodown Iii Blades Of Blood' },
-      { id: 'the-king-of-fighters-2000', name: 'The King Of Fighters 2000' },
-      { id: 'the-king-of-fighters-2001', name: 'The King Of Fighters 2001' },
-      { id: 'the-king-of-fighters-94', name: 'The King Of Fighters 94' },
-      { id: 'the-king-of-fighters-95', name: 'The King Of Fighters 95' },
-      { id: 'the-king-of-fighters-96', name: 'The King Of Fighters 96' },
-      { id: 'the-king-of-fighters-97', name: 'The King Of Fighters 97' },
-      { id: 'the-king-of-fighters-98', name: 'The King Of Fighters 98' },
-      { id: 'the-king-of-fighters-98-ultimate-match', name: 'The King Of Fighters 98 Ultimate Match' },
-      { id: 'the-king-of-fighters-99', name: 'The King Of Fighters 99' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'astra-superstars',
-    name: "Astra Superstars",
-    developer: "Sunsoft",
-    releaseYear: 1998,
-    platform: "Arcade Sega Saturn",
-rosterCount: 999,
-        characters: [
-      { id: 'lettuce', name: 'Lettuce' },
-      { id: 'marigold', name: 'Marigold' },
-      { id: 'lulli', name: 'Lulli' },
-      { id: 'badababa', name: 'Badababa' },
-      { id: 'cupe', name: 'Cupe' },
-      { id: 'stella', name: 'Stella' },
-      { id: 'sakuro', name: 'Sakuro' },
-      { id: 'rouge', name: 'Rouge' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'asuka-120%-burning-fest-limited',
-    name: "Asuka 120% Burning Fest Limited",
-    developer: "FamilySoft",
-    releaseYear: 1997,
-rosterCount: 999,
-        characters: [
-      { id: 'asuka-honda', name: 'Asuka Honda' },
-      { id: 'kumi-okubo', name: 'Kumi Okubo' },
-      { id: 'tamaki-shindo', name: 'Tamaki Shindo' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'megumi-suzuki', name: 'Megumi Suzuki' },
-      { id: 'torami-hojo', name: 'Torami Hojo' },
-      { id: 'karina-toyota', name: 'Karina Toyota' },
-      { id: 'cathy-wild', name: 'Cathy Wild' },
-      { id: 'kiyoko-mitarai', name: 'Kiyoko Mitarai' },
-      { id: 'nana-owada', name: 'Nana Owada' },
-      { id: 'shinobu-kawasaki', name: 'Shinobu Kawasaki' },
-      { id: 'batsu-ichimonji', name: 'Batsu Ichimonji' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'blazblue-central-fiction',
-    name: "BlazBlue: Central Fiction",
-    developer: "Arc System Works",
-    releaseYear: 2015,
-rosterCount: 999,
-        characters: [
-      { id: 'ragna-the-bloodedge', name: 'Ragna the Bloodedge' },
-      { id: 'jin-kisaragi', name: 'Jin Kisaragi' },
-      { id: 'noel-vermillion', name: 'Noel Vermillion' },
-      { id: 'rachel-alucard', name: 'Rachel Alucard' },
-      { id: 'taokaka', name: 'Taokaka' },
-      { id: 'iron-tager', name: 'Iron Tager' },
-      { id: 'litchi-faye-ling', name: 'Litchi Faye-Ling' },
-      { id: 'arakune', name: 'Arakune' },
-      { id: 'bang-shishigami', name: 'Bang Shishigami' },
-      { id: 'carl-clover', name: 'Carl Clover' },
-      { id: 'hakumen', name: 'Hakumen' },
-      { id: 'nu-13', name: 'Nu-13' },
-      { id: 'tsubaki-yayoi', name: 'Tsubaki Yayoi' },
-      { id: 'hazama', name: 'Hazama' },
-      { id: 'mu-12', name: 'Mu-12' },
-      { id: 'makoto-nanaya', name: 'Makoto Nanaya' },
-      { id: 'valkenhayn-r-hellsing', name: 'Valkenhayn R. Hellsing' },
-      { id: 'platinum-the-trinity', name: 'Platinum the Trinity' },
-      { id: 'relius-clover', name: 'Relius Clover' },
-      { id: 'izayoi', name: 'Izayoi' },
-      { id: 'amane-nishiki', name: 'Amane Nishiki' },
-      { id: 'bullet', name: 'Bullet' },
-      { id: 'azrael', name: 'Azrael' },
-      { id: 'kagura-mutsuki', name: 'Kagura Mutsuki' },
-      { id: 'kokonoe', name: 'Kokonoe' },
-      { id: 'yuki-terumi', name: 'Yuki Terumi' },
-      { id: 'celica-a-mercury', name: 'Celica A. Mercury' },
-      { id: 'lambda-11', name: 'Lambda-11' },
-      { id: 'hibiki-kohaku', name: 'Hibiki Kohaku' },
-      { id: 'nine-the-phantom', name: 'Nine the Phantom' },
-      { id: 'naoto-kurogane', name: 'Naoto Kurogane' },
-      { id: 'hades-izanami', name: 'Hades Izanami' },
-      { id: 'susanoo', name: 'Susanoo' },
-      { id: 'es', name: 'Es' },
-      { id: 'mai-natsume', name: 'Mai Natsume' },
-      { id: 'jubei', name: 'Jubei' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'blazblue-cross-tag-battle',
-    name: "BlazBlue: Cross Tag Battle",
-    developer: "Arc System Works",
-    releaseYear: 2018,
-rosterCount: 999,
-        characters: [
-      { id: 'ragna', name: 'Ragna' },
-      { id: 'jin', name: 'Jin' },
-      { id: 'noel', name: 'Noel' },
-      { id: 'rachel', name: 'Rachel' },
-      { id: 'hazama', name: 'Hazama' },
-      { id: 'nu-13', name: 'Nu-13' },
-      { id: 'tager', name: 'Tager' },
-      { id: 'makoto', name: 'Makoto' },
-      { id: 'hakumen', name: 'Hakumen' },
-      { id: 'platinum', name: 'Platinum' },
-      { id: 'amy', name: 'Amy' },
-      { id: 'izayoi', name: 'Izayoi' },
-      { id: 'azrael', name: 'Azrael' },
-      { id: 'celica', name: 'Celica' },
-      { id: 'nine', name: 'Nine' },
-      { id: 'naoto-k', name: 'Naoto K.' },
-      { id: 'jubei', name: 'Jubei' },
-      { id: 'es', name: 'Es' },
-      { id: 'mai', name: 'Mai' },
-      { id: 'susanoo', name: 'Susanoo' },
-      { id: 'yu', name: 'Yu' },
-      { id: 'yosuke', name: 'Yosuke' },
-      { id: 'chie', name: 'Chie' },
-      { id: 'yukiko', name: 'Yukiko' },
-      { id: 'kanji', name: 'Kanji' },
-      { id: 'teddie', name: 'Teddie' },
-      { id: 'naoto-s', name: 'Naoto S.' },
-      { id: 'mitsuru', name: 'Mitsuru' },
-      { id: 'akihiko', name: 'Akihiko' },
-      { id: 'aegis', name: 'Aegis' },
-      { id: 'elizabeth', name: 'Elizabeth' },
-      { id: 'labrys', name: 'Labrys' },
-      { id: 'adachi', name: 'Adachi' },
-      { id: 'hyde', name: 'Hyde' },
-      { id: 'linne', name: 'Linne' },
-      { id: 'waldstein', name: 'Waldstein' },
-      { id: 'carmine', name: 'Carmine' },
-      { id: 'orie', name: 'Orie' },
-      { id: 'gordeau', name: 'Gordeau' },
-      { id: 'merkava', name: 'Merkava' },
-      { id: 'vatista', name: 'Vatista' },
-      { id: 'seth', name: 'Seth' },
-      { id: 'yuzuriha', name: 'Yuzuriha' },
-      { id: 'mika', name: 'Mika' },
-      { id: 'hilda', name: 'Hilda' },
-      { id: 'ruby', name: 'Ruby' },
-      { id: 'weiss', name: 'Weiss' },
-      { id: 'blake', name: 'Blake' },
-      { id: 'yang', name: 'Yang' },
-      { id: 'heart-aino', name: 'Heart Aino' },
-      { id: 'akatsuki', name: 'Akatsuki' },
-      { id: 'blitztank', name: 'Blitztank' },
-      { id: 'yumi', name: 'Yumi' },
-      { id: 'neo-politan', name: 'Neo Politan' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'bloody-roar',
-    name: "Bloody Roar",
-    developer: "Hudson Soft",
-    releaseYear: 1997,
-    platform: "Arcade PlayStation",
-rosterCount: 8,
-        characters: [
-      { id: 'yugo-the-wolf', name: 'Yugo the Wolf' },
-      { id: 'alice-the-rabbit', name: 'Alice the Rabbit' },
-      { id: 'long-the-tiger', name: 'Long the Tiger' },
-      { id: 'gado-the-lion', name: 'Gado the Lion' },
-      { id: 'bakuryu-the-mole', name: 'Bakuryu the Mole' },
-      { id: 'mitsuko-the-boar', name: 'Mitsuko the Boar' },
-      { id: 'greg-the-gorilla', name: 'Greg the Gorilla' },
-      { id: 'fox-the-fox', name: 'Fox the Fox' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'bloody-roar-2-bringer-of-the-new-age',
-    name: "Bloody Roar 2: Bringer of the New Age",
-    developer: "Hudson Soft",
-    releaseYear: 1997,
-    platform: "Arcade PlayStation",
-rosterCount: 8,
-        characters: [
-      { id: 'yugo-the-wolf', name: 'Yugo the Wolf' },
-      { id: 'alice-the-rabbit', name: 'Alice the Rabbit' },
-      { id: 'long-the-tiger', name: 'Long the Tiger' },
-      { id: 'gado-the-lion', name: 'Gado the Lion' },
-      { id: 'bakuryu-the-mole', name: 'Bakuryu the Mole' },
-      { id: 'mitsuko-the-boar', name: 'Mitsuko the Boar' },
-      { id: 'greg-the-gorilla', name: 'Greg the Gorilla' },
-      { id: 'fox-the-fox', name: 'Fox the Fox' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'bloody-roar-3',
-    name: "Bloody Roar 3",
-    developer: "Hudson Soft",
-    releaseYear: 1997,
-    platform: "Arcade PlayStation",
-rosterCount: 8,
-        characters: [
-      { id: 'yugo-the-wolf', name: 'Yugo the Wolf' },
-      { id: 'alice-the-rabbit', name: 'Alice the Rabbit' },
-      { id: 'long-the-tiger', name: 'Long the Tiger' },
-      { id: 'gado-the-lion', name: 'Gado the Lion' },
-      { id: 'bakuryu-the-mole', name: 'Bakuryu the Mole' },
-      { id: 'mitsuko-the-boar', name: 'Mitsuko the Boar' },
-      { id: 'greg-the-gorilla', name: 'Greg the Gorilla' },
-      { id: 'fox-the-fox', name: 'Fox the Fox' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'bloody-roar-4',
-    name: "Bloody Roar 4",
-    developer: "Hudson Soft",
-    releaseYear: 1997,
-    platform: "Arcade PlayStation",
-rosterCount: 8,
-        characters: [
-      { id: 'yugo-the-wolf', name: 'Yugo the Wolf' },
-      { id: 'alice-the-rabbit', name: 'Alice the Rabbit' },
-      { id: 'long-the-tiger', name: 'Long the Tiger' },
-      { id: 'gado-the-lion', name: 'Gado the Lion' },
-      { id: 'bakuryu-the-mole', name: 'Bakuryu the Mole' },
-      { id: 'mitsuko-the-boar', name: 'Mitsuko the Boar' },
-      { id: 'greg-the-gorilla', name: 'Greg the Gorilla' },
-      { id: 'fox-the-fox', name: 'Fox the Fox' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'bloody-roar-primal-fury--extreme',
-    name: "Bloody Roar: Primal Fury / Extreme",
-    developer: "Hudson Soft",
-    releaseYear: 1997,
-    platform: "Arcade PlayStation",
-rosterCount: 8,
-        characters: [
-      { id: 'yugo-the-wolf', name: 'Yugo the Wolf' },
-      { id: 'alice-the-rabbit', name: 'Alice the Rabbit' },
-      { id: 'long-the-tiger', name: 'Long the Tiger' },
-      { id: 'gado-the-lion', name: 'Gado the Lion' },
-      { id: 'bakuryu-the-mole', name: 'Bakuryu the Mole' },
-      { id: 'mitsuko-the-boar', name: 'Mitsuko the Boar' },
-      { id: 'greg-the-gorilla', name: 'Greg the Gorilla' },
-      { id: 'fox-the-fox', name: 'Fox the Fox' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'breakers-revenge',
-    name: "Breakers Revenge",
-    developer: "Visco",
-    releaseYear: 1998,
-    platform: "Arcade Neo Geo",
-rosterCount: 999,
-        characters: [
-      { id: 'sho-kamui', name: 'Sho Kamui' },
-      { id: 'tia-langray', name: 'Tia Langray' },
-      { id: 'dao-long', name: 'Dao-Long' },
-      { id: 'condor', name: 'Condor' },
-      { id: 'rila-estelante', name: 'Rila Estelante' },
-      { id: 'pielle-montario', name: 'Pielle Montario' },
-      { id: 'alsion-iii', name: 'Alsion III' },
-      { id: 'sheik-maherl', name: 'Sheik Maherl' },
-      { id: 'tobari-saizo', name: 'Tobari Saizo' },
-      { id: 'bai-hu', name: 'Bai-Hu' },
-      { id: 'breakers-revenge', name: 'Breakers Revenge' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'capcom-fighting-jam',
-    name: "Capcom Fighting Jam",
-    developer: "Capcom",
-    releaseYear: 2004,
-rosterCount: 999,
-        characters: [
-      { id: 'alex-(sf3-style)', name: 'Alex (SF3 Style)' },
-      { id: 'demitri-(darkstalkers-style)', name: 'Demitri (Darkstalkers Style)' },
-      { id: 'guy-(alpha-style)', name: 'Guy (Alpha Style)' },
-      { id: 'ingrid', name: 'Ingrid' },
-      { id: 'leo-(red-earth-style)', name: 'Leo (Red Earth Style)' },
-      { id: 'ryu-(sf2-style)', name: 'Ryu (SF2 Style)' },
-      { id: 'fight_ingrid', name: 'Fight_Ingrid' },
-      { id: 'pyron', name: 'Pyron' },
-      { id: 'unlock_pyron', name: 'Unlock_Pyron' },
-      { id: 'anakaris', name: 'Anakaris' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'chun-li', name: 'Chun Li' },
-      { id: 'chunli', name: 'Chunli' },
-      { id: 'chun_li', name: 'Chun_Li' },
-      { id: 'cotw_chunli', name: 'Cotw_Chunli' },
-      { id: 'decapre', name: 'Decapre' },
-      { id: 'demitri', name: 'Demitri' },
-      { id: 'felicia', name: 'Felicia' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'hauzer', name: 'Hauzer' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'jedah', name: 'Jedah' },
-      { id: 'karin', name: 'Karin' },
-      { id: 'links', name: 'Links' },
-      { id: 'players', name: 'Players' },
-      { id: 'urien', name: 'Urien' },
-      { id: 'zangief', name: 'Zangief' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'capcom-vs-snk-2-mark-of-the-millennium-2001',
-    name: "Capcom vs. SNK 2: Mark of the Millennium 2001",
-    developer: "Capcom",
-    releaseYear: 2001,
-rosterCount: 999,
-        characters: [
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'zangief', name: 'Zangief' },
-      { id: 'dhalsim', name: 'Dhalsim' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'e-honda', name: 'E. Honda' },
-      { id: 'sagat', name: 'Sagat' },
-      { id: 'm-bison', name: 'M. Bison' },
-      { id: 'balrog', name: 'Balrog' },
-      { id: 'vega', name: 'Vega' },
-      { id: 'sakura', name: 'Sakura' },
-      { id: 'cammy', name: 'Cammy' },
-      { id: 'morrigan', name: 'Morrigan' },
-      { id: 'dan', name: 'Dan' },
-      { id: 'eagle', name: 'Eagle' },
-      { id: 'maki', name: 'Maki' },
-      { id: 'kyosuke', name: 'Kyosuke' },
-      { id: 'yun', name: 'Yun' },
-      { id: 'rolento', name: 'Rolento' },
-      { id: 'evil-ryu', name: 'Evil Ryu' },
-      { id: 'shin-akuma', name: 'Shin Akuma' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'raiden', name: 'Raiden' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'vice', name: 'Vice' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'king', name: 'King' },
-      { id: 'hibiki-takane', name: 'Hibiki Takane' },
-      { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'ryuhaku-todoh', name: 'Ryuhaku Todoh' },
-      { id: 'athena-asamiya', name: 'Athena Asamiya' },
-      { id: 'rugal-bernstein', name: 'Rugal Bernstein' },
-      { id: 'chang-koehan', name: 'Chang Koehan' },
-      { id: 'choi-bounge', name: 'Choi Bounge' },
-      { id: 'orochi-iori', name: 'Orochi Iori' },
-      { id: 'ultimate-rugal', name: 'Ultimate Rugal' },
-      { id: 'the-king-of-fighters-2003', name: 'The King Of Fighters 2003' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'capcom-vs-snk-millennium-fight-2000-pro',
-    name: "Capcom vs. SNK: Millennium Fight 2000 Pro",
-    developer: "Capcom",
-    releaseYear: 2001,
-rosterCount: 999,
-        characters: [
-      { id: 'akuma-(gouki)', name: 'Akuma (Gouki)' },
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'balrog-(vega-jp)', name: 'Balrog (Vega JP)' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'cammy', name: 'Cammy' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'dhalsim', name: 'Dhalsim' },
-      { id: 'e-honda', name: 'E. Honda' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'ken-masters', name: 'Ken Masters' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'king', name: 'King' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'm-bison-(vega-jp)', name: 'M. Bison (Vega JP)' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'morrigan-aensland', name: 'Morrigan Aensland' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'raiden', name: 'Raiden' },
-      { id: 'rugal-bernstein', name: 'Rugal Bernstein' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'sagat', name: 'Sagat' },
-      { id: 'sakura-kasugano', name: 'Sakura Kasugano' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'vice', name: 'Vice' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'zangief', name: 'Zangief' },
-      { id: 'the-king-of-fighters-2003', name: 'The King Of Fighters 2003' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'x-men-children-of-the-atom',
-    name: "X-Men: Children of the Atom",
-    developer: "Capcom",
-    releaseYear: 1994,
-rosterCount: 999,
-        characters: [
-      { id: 'wolverine', name: 'Wolverine' },
-      { id: 'cyclops', name: 'Cyclops' },
-      { id: 'psylocke', name: 'Psylocke' },
-      { id: 'storm', name: 'Storm' },
-      { id: 'iceman', name: 'Iceman' },
-      { id: 'colossus', name: 'Colossus' },
-      { id: 'omega-red', name: 'Omega Red' },
-      { id: 'sentinel', name: 'Sentinel' },
-      { id: 'silver-samurai', name: 'Silver Samurai' },
-      { id: 'spiral', name: 'Spiral' },
-      { id: 'juggernaut', name: 'Juggernaut' },
-      { id: 'magneto', name: 'Magneto' },
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'fatal-fury-city-of-the-wolves',
-    name: "Fatal Fury: City of the Wolves",
-    developer: "SNK",
-    releaseYear: 1991,
-    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
-rosterCount: 999,
-        characters: [
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'b-jenet', name: 'B. Jenet' },
-      { id: 'billy-kane', name: 'Billy Kane' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'cotw_andybogard', name: 'Andy Bogard' },
-      { id: 'cotw_billykane', name: 'Billy Kane' },
-      { id: 'cotw_bjenet', name: 'B. Jenet' },
-      { id: 'cotw_bluemary', name: 'Blue Mary' },
-      { id: 'cotw_chunli', name: 'Chun-Li' },
-      { id: 'cotw_cristianoronaldo', name: 'Cristiano Ronaldo' },
-      { id: 'cotw_gato', name: 'Gato' },
-      { id: 'cotw_hokutomaru', name: 'Hokutomaru' },
-      { id: 'cotw_hotarufutaba', name: 'Hotaru Futaba' },
-      { id: 'cotw_joehigashi', name: 'Joe Higashi' },
-      { id: 'cotw_kainrheinlein', name: 'Kain R. Heinlein' },
-      { id: 'cotw_kenmasters', name: 'Ken Masters' },
-      { id: 'cotw_kenshiro', name: 'Kenshiro' },
-      { id: 'cotw_kevinrian', name: 'Kevin Rian' },
-      { id: 'cotw_kimdonghwan', name: 'Kim Dong Hwan' },
-      { id: 'cotw_kimjaehoon', name: 'Kim Jae Hoon' },
-      { id: 'cotw_maishiranui', name: 'Mai Shiranui' },
-      { id: 'cotw_marcorodrigues', name: 'Marco Rodrigues' },
-      { id: 'cotw_mrbig', name: 'Mr. Big' },
-      { id: 'cotw_nightmaregeese', name: 'Nightmare Geese' },
-      { id: 'cotw_preecha', name: 'Preecha' },
-      { id: 'cotw_rockhoward', name: 'Rock Howard' },
-      { id: 'cotw_salvatoreganacci', name: 'Salvatore Ganacci' },
-      { id: 'cotw_terrybogard', name: 'Terry Bogard' },
-      { id: 'cotw_tizoc', name: 'Tizoc' },
-      { id: 'cotw_voxreaper', name: 'Vox Reaper' },
-      { id: 'cotw_wolfgangkrauser', name: 'Wolfgang Krauser' },
-      { id: 'cristiano-ronaldo', name: 'Cristiano Ronaldo' },
-      { id: 'gato', name: 'Gato' },
-      { id: 'hokutomaru', name: 'Hokutomaru' },
-      { id: 'hotaru-futaba', name: 'Hotaru Futaba' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'kain-r-heinlein', name: 'Kain R. Heinlein' },
-      { id: 'ken-masters', name: 'Ken Masters' },
-      { id: 'kevin-rian', name: 'Kevin Rian' },
-      { id: 'kim-dong-hwan', name: 'Kim Dong Hwan' },
-      { id: 'kim-jae-hoon', name: 'Kim Jae Hoon' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'marco-rodrigues', name: 'Marco Rodrigues' },
-      { id: 'mr-big', name: 'Mr. Big' },
-      { id: 'nightmare-geese', name: 'Nightmare Geese' },
-      { id: 'preecha', name: 'Preecha' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'salvatore-ganacci', name: 'Salvatore Ganacci' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'tizoc', name: 'Tizoc' },
-      { id: 'vox-reaper', name: 'Vox Reaper' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'cotw', name: 'Cotw' },
-      { id: 'final_battle', name: 'Final_Battle' },
-      { id: 'geese', name: 'Geese' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'k9999', name: 'K9999' },
-      { id: 'king', name: 'King' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'oro', name: 'Oro' },
-      { id: 'orochi_iori', name: 'Orochi_Iori' },
-      { id: 'rick-strowd', name: 'Rick Strowd' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'rugal', name: 'Rugal' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' },
-      { id: 'world_tour', name: 'World_Tour' },
-      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'fatal-fury-king-of-fighters', name: 'Fatal Fury King Of Fighters' },
-      { id: 'fatal-fury-special', name: 'Fatal Fury Special' },
-      { id: 'garou-mark-of-the-wolves', name: 'Garou Mark Of The Wolves' },
-      { id: 'real-bout-fatal-fury', name: 'Real Bout Fatal Fury' },
-      { id: 'real-bout-fatal-fury-special', name: 'Real Bout Fatal Fury Special' },
-      { id: 'samurai-shodown-iii-blades-of-blood', name: 'Samurai Shodown Iii Blades Of Blood' },
-      { id: 'the-king-of-fighters-2000', name: 'The King Of Fighters 2000' },
-      { id: 'the-king-of-fighters-2001', name: 'The King Of Fighters 2001' },
-      { id: 'the-king-of-fighters-94', name: 'The King Of Fighters 94' },
-      { id: 'the-king-of-fighters-95', name: 'The King Of Fighters 95' },
-      { id: 'the-king-of-fighters-96', name: 'The King Of Fighters 96' },
-      { id: 'the-king-of-fighters-97', name: 'The King Of Fighters 97' },
-      { id: 'the-king-of-fighters-98', name: 'The King Of Fighters 98' },
-      { id: 'the-king-of-fighters-98-ultimate-match', name: 'The King Of Fighters 98 Ultimate Match' },
-      { id: 'the-king-of-fighters-99', name: 'The King Of Fighters 99' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'cyberbots-full-metal-madness',
-    name: "Cyberbots: Full Metal Madness",
-    developer: "Capcom",
-    releaseYear: 1995,
-rosterCount: 999,
-        characters: [
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'reptos', name: 'Reptos' },
-      { id: 'guldin', name: 'Guldin' },
-      { id: 'fordy', name: 'Fordy' },
-      { id: 'vise', name: 'Vise' },
-      { id: 'cyclone', name: 'Cyclone' },
-      { id: 'tarantula', name: 'Tarantula' },
-      { id: 'killer-bee', name: 'Killer Bee' },
-      { id: 'jackal', name: 'Jackal' },
-      { id: 'lightning', name: 'Lightning' },
-      { id: 'gaits', name: 'Gaits' },
-      { id: 'helion', name: 'Helion' },
-      { id: 'z-akuma', name: 'Z-Akuma' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'darkstalkers-the-night-warriors',
-    name: "Darkstalkers: The Night Warriors",
-    developer: "Capcom",
-    releaseYear: 1994,
-rosterCount: 999,
-        characters: [
-      { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
-      { id: 'felicia', name: 'Felicia' },
-      { id: 'jon-talbain', name: 'Jon Talbain' },
-      { id: 'morrigan-aensland', name: 'Morrigan Aensland' },
-      { id: 'aulbath', name: 'Aulbath' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'donovan-baine', name: 'Donovan Baine' },
-      { id: 'donovan_baine', name: 'Donovan_Baine' },
-      { id: 'hsien_ko', name: 'Hsien_Ko' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'jedah-dohma', name: 'Jedah Dohma' },
-      { id: 'jon_talbain', name: 'Jon_Talbain' },
-      { id: 'morrigan_arnsland', name: 'Morrigan_Arnsland' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'rikuo', name: 'Rikuo' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'victor-von-gerdenheim', name: 'Victor Von Gerdenheim' },
-      { id: 'victor_von_gerdenheim', name: 'Victor_Von_Gerdenheim' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'dead-or-alive',
-    name: "Dead or Alive",
-    developer: "Tecmo",
-    releaseYear: 2019,
-    platform: "Windows PlayStation 4 Xbox One",
-rosterCount: 999,
-        characters: [
-      { id: 'kasumi', name: 'Kasumi' },
-      { id: 'zack', name: 'Zack' },
-      { id: 'ayane', name: 'Ayane' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'brad-wong', name: 'Brad Wong' },
-      { id: 'dead-or-alive', name: 'Dead Or Alive' },
-      { id: 'helena', name: 'Helena' },
-      { id: 'helena-douglas', name: 'Helena Douglas' },
-      { id: 'hitomi', name: 'Hitomi' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'alec', name: 'Alec' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'berserker', name: 'Berserker' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'brad-burns', name: 'Brad Burns' },
-      { id: 'byakko', name: 'Byakko' },
-      { id: 'capcom-fighting-jam', name: 'Capcom Fighting Jam' },
-      { id: 'cfj', name: 'Cfj' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'cotw_bluemary', name: 'Cotw_Bluemary' },
-      { id: 'cotw_kenshiro', name: 'Cotw_Kenshiro' },
-      { id: 'cotw_nightmaregeese', name: 'Cotw_Nightmaregeese' },
-      { id: 'fatal-fury-special', name: 'Fatal Fury Special' },
-      { id: 'final_battle', name: 'Final_Battle' },
-      { id: 'fulgore', name: 'Fulgore' },
-      { id: 'galaxy-fight-universal-warriors', name: 'Galaxy Fight Universal Warriors' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
-      { id: 'hidden_fighters', name: 'Hidden_Fighters' },
-      { id: 'hisako', name: 'Hisako' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'k9999', name: 'K9999' },
-      { id: 'karin', name: 'Karin' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'king', name: 'King' },
-      { id: 'kurosawa', name: 'Kurosawa' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'lee-chaolan', name: 'Lee Chaolan' },
-      { id: 'leifang', name: 'Leifang' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'links', name: 'Links' },
-      { id: 'manon', name: 'Manon' },
-      { id: 'millia-rage', name: 'Millia Rage' },
-      { id: 'momo', name: 'Momo' },
-      { id: 'musar', name: 'Musar' },
-      { id: 'nina', name: 'Nina' },
-      { id: 'oro', name: 'Oro' },
-      { id: 'orochi_iori', name: 'Orochi_Iori' },
-      { id: 'players', name: 'Players' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'rolf', name: 'Rolf' },
-      { id: 'rugal', name: 'Rugal' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'samurai-shodown-iii-blades-of-blood', name: 'Samurai Shodown Iii Blades Of Blood' },
-      { id: 'sol-badguy', name: 'Sol Badguy' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'striker', name: 'Striker' },
-      { id: 'the-king-of-fighters-2000', name: 'The King Of Fighters 2000' },
-      { id: 'the-king-of-fighters-2001', name: 'The King Of Fighters 2001' },
-      { id: 'the-king-of-fighters-94', name: 'The King Of Fighters 94' },
-      { id: 'the-king-of-fighters-95', name: 'The King Of Fighters 95' },
-      { id: 'the-king-of-fighters-96', name: 'The King Of Fighters 96' },
-      { id: 'the-king-of-fighters-97', name: 'The King Of Fighters 97' },
-      { id: 'the-king-of-fighters-98', name: 'The King Of Fighters 98' },
-      { id: 'the-king-of-fighters-98-ultimate-match', name: 'The King Of Fighters 98 Ultimate Match' },
-      { id: 'the-king-of-fighters-99', name: 'The King Of Fighters 99' },
-      { id: 'the_life_and_plasma_power_gauges', name: 'The_Life_And_Plasma_Power_Gauges' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'victor-chevalier', name: 'Victor Chevalier' },
-      { id: 'virtua-fighter-4', name: 'Virtua Fighter 4' },
-      { id: 'wesker', name: 'Wesker' },
-      { id: 'world_tour', name: 'World_Tour' },
-      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
-      { id: 'yuri', name: 'Yuri' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'zero', name: 'Zero' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'dead-or-alive',
-    name: "Dead or Alive",
-    developer: "Tecmo",
-    releaseYear: 2019,
-    platform: "Windows PlayStation 4 Xbox One",
-rosterCount: 999,
-        characters: [
-      { id: 'kasumi', name: 'Kasumi' },
-      { id: 'zack', name: 'Zack' },
-      { id: 'ayane', name: 'Ayane' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'brad-wong', name: 'Brad Wong' },
-      { id: 'dead-or-alive', name: 'Dead Or Alive' },
-      { id: 'helena', name: 'Helena' },
-      { id: 'helena-douglas', name: 'Helena Douglas' },
-      { id: 'hitomi', name: 'Hitomi' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'alec', name: 'Alec' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'berserker', name: 'Berserker' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'brad-burns', name: 'Brad Burns' },
-      { id: 'byakko', name: 'Byakko' },
-      { id: 'capcom-fighting-jam', name: 'Capcom Fighting Jam' },
-      { id: 'cfj', name: 'Cfj' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'cotw_bluemary', name: 'Cotw_Bluemary' },
-      { id: 'cotw_kenshiro', name: 'Cotw_Kenshiro' },
-      { id: 'cotw_nightmaregeese', name: 'Cotw_Nightmaregeese' },
-      { id: 'fatal-fury-special', name: 'Fatal Fury Special' },
-      { id: 'final_battle', name: 'Final_Battle' },
-      { id: 'fulgore', name: 'Fulgore' },
-      { id: 'galaxy-fight-universal-warriors', name: 'Galaxy Fight Universal Warriors' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
-      { id: 'hidden_fighters', name: 'Hidden_Fighters' },
-      { id: 'hisako', name: 'Hisako' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'k9999', name: 'K9999' },
-      { id: 'karin', name: 'Karin' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'king', name: 'King' },
-      { id: 'kurosawa', name: 'Kurosawa' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'lee-chaolan', name: 'Lee Chaolan' },
-      { id: 'leifang', name: 'Leifang' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'links', name: 'Links' },
-      { id: 'manon', name: 'Manon' },
-      { id: 'millia-rage', name: 'Millia Rage' },
-      { id: 'momo', name: 'Momo' },
-      { id: 'musar', name: 'Musar' },
-      { id: 'nina', name: 'Nina' },
-      { id: 'oro', name: 'Oro' },
-      { id: 'orochi_iori', name: 'Orochi_Iori' },
-      { id: 'players', name: 'Players' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'rolf', name: 'Rolf' },
-      { id: 'rugal', name: 'Rugal' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'samurai-shodown-iii-blades-of-blood', name: 'Samurai Shodown Iii Blades Of Blood' },
-      { id: 'sol-badguy', name: 'Sol Badguy' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'striker', name: 'Striker' },
-      { id: 'the-king-of-fighters-2000', name: 'The King Of Fighters 2000' },
-      { id: 'the-king-of-fighters-2001', name: 'The King Of Fighters 2001' },
-      { id: 'the-king-of-fighters-94', name: 'The King Of Fighters 94' },
-      { id: 'the-king-of-fighters-95', name: 'The King Of Fighters 95' },
-      { id: 'the-king-of-fighters-96', name: 'The King Of Fighters 96' },
-      { id: 'the-king-of-fighters-97', name: 'The King Of Fighters 97' },
-      { id: 'the-king-of-fighters-98', name: 'The King Of Fighters 98' },
-      { id: 'the-king-of-fighters-98-ultimate-match', name: 'The King Of Fighters 98 Ultimate Match' },
-      { id: 'the-king-of-fighters-99', name: 'The King Of Fighters 99' },
-      { id: 'the_life_and_plasma_power_gauges', name: 'The_Life_And_Plasma_Power_Gauges' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'victor-chevalier', name: 'Victor Chevalier' },
-      { id: 'virtua-fighter-4', name: 'Virtua Fighter 4' },
-      { id: 'wesker', name: 'Wesker' },
-      { id: 'world_tour', name: 'World_Tour' },
-      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
-      { id: 'yuri', name: 'Yuri' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'zero', name: 'Zero' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'dead-or-alive-2',
-    name: "Dead or Alive 2",
-    developer: "Tecmo",
-    releaseYear: 2019,
-    platform: "Windows PlayStation 4 Xbox One",
-rosterCount: 999,
-        characters: [
-      { id: 'ayane', name: 'Ayane' },
-      { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
-      { id: 'alec', name: 'Alec' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'berserker', name: 'Berserker' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'brad-burns', name: 'Brad Burns' },
-      { id: 'brad-wong', name: 'Brad Wong' },
-      { id: 'byakko', name: 'Byakko' },
-      { id: 'cfj', name: 'Cfj' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'capcom-fighting-jam', name: 'Capcom Fighting Jam' },
-      { id: 'cotw_bluemary', name: 'Cotw_Bluemary' },
-      { id: 'cotw_kenshiro', name: 'Cotw_Kenshiro' },
-      { id: 'cotw_nightmaregeese', name: 'Cotw_Nightmaregeese' },
-      { id: 'dead-or-alive', name: 'Dead Or Alive' },
-      { id: 'fatal-fury-special', name: 'Fatal Fury Special' },
-      { id: 'final_battle', name: 'Final_Battle' },
-      { id: 'fulgore', name: 'Fulgore' },
-      { id: 'galaxy-fight-universal-warriors', name: 'Galaxy Fight Universal Warriors' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
-      { id: 'helena', name: 'Helena' },
-      { id: 'helena-douglas', name: 'Helena Douglas' },
-      { id: 'hidden_fighters', name: 'Hidden_Fighters' },
-      { id: 'hisako', name: 'Hisako' },
-      { id: 'hitomi', name: 'Hitomi' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'k9999', name: 'K9999' },
-      { id: 'karin', name: 'Karin' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'king', name: 'King' },
-      { id: 'kurosawa', name: 'Kurosawa' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'lee-chaolan', name: 'Lee Chaolan' },
-      { id: 'leifang', name: 'Leifang' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'links', name: 'Links' },
-      { id: 'manon', name: 'Manon' },
-      { id: 'millia-rage', name: 'Millia Rage' },
-      { id: 'momo', name: 'Momo' },
-      { id: 'musar', name: 'Musar' },
-      { id: 'nina', name: 'Nina' },
-      { id: 'oro', name: 'Oro' },
-      { id: 'orochi_iori', name: 'Orochi_Iori' },
-      { id: 'players', name: 'Players' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'rolf', name: 'Rolf' },
-      { id: 'rugal', name: 'Rugal' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'samurai-shodown-iii-blades-of-blood', name: 'Samurai Shodown Iii Blades Of Blood' },
-      { id: 'sol-badguy', name: 'Sol Badguy' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'striker', name: 'Striker' },
-      { id: 'the-king-of-fighters-2000', name: 'The King Of Fighters 2000' },
-      { id: 'the-king-of-fighters-2001', name: 'The King Of Fighters 2001' },
-      { id: 'the-king-of-fighters-94', name: 'The King Of Fighters 94' },
-      { id: 'the-king-of-fighters-95', name: 'The King Of Fighters 95' },
-      { id: 'the-king-of-fighters-96', name: 'The King Of Fighters 96' },
-      { id: 'the-king-of-fighters-97', name: 'The King Of Fighters 97' },
-      { id: 'the-king-of-fighters-98', name: 'The King Of Fighters 98' },
-      { id: 'the-king-of-fighters-98-ultimate-match', name: 'The King Of Fighters 98 Ultimate Match' },
-      { id: 'the-king-of-fighters-99', name: 'The King Of Fighters 99' },
-      { id: 'the_life_and_plasma_power_gauges', name: 'The_Life_And_Plasma_Power_Gauges' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'victor-chevalier', name: 'Victor Chevalier' },
-      { id: 'virtua-fighter-4', name: 'Virtua Fighter 4' },
-      { id: 'wesker', name: 'Wesker' },
-      { id: 'world_tour', name: 'World_Tour' },
-      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
-      { id: 'yuri', name: 'Yuri' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'zero', name: 'Zero' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'dead-or-alive-3',
-    name: "Dead or Alive 3",
-    developer: "Tecmo",
-    releaseYear: 2019,
-    platform: "Windows PlayStation 4 Xbox One",
-rosterCount: 999,
-        characters: [
-      { id: 'brad-wong', name: 'Brad Wong' },
-      { id: 'christie', name: 'Christie' },
-      { id: 'alec', name: 'Alec' },
-      { id: 'ayane', name: 'Ayane' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'berserker', name: 'Berserker' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'brad-burns', name: 'Brad Burns' },
-      { id: 'byakko', name: 'Byakko' },
-      { id: 'cfj', name: 'Cfj' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'cotw_bluemary', name: 'Cotw_Bluemary' },
-      { id: 'cotw_kenshiro', name: 'Cotw_Kenshiro' },
-      { id: 'cotw_nightmaregeese', name: 'Cotw_Nightmaregeese' },
-      { id: 'final_battle', name: 'Final_Battle' },
-      { id: 'capcom-fighting-jam', name: 'Capcom Fighting Jam' },
-      { id: 'dead-or-alive', name: 'Dead Or Alive' },
-      { id: 'fatal-fury-special', name: 'Fatal Fury Special' },
-      { id: 'fulgore', name: 'Fulgore' },
-      { id: 'galaxy-fight-universal-warriors', name: 'Galaxy Fight Universal Warriors' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
-      { id: 'helena', name: 'Helena' },
-      { id: 'helena-douglas', name: 'Helena Douglas' },
-      { id: 'hidden_fighters', name: 'Hidden_Fighters' },
-      { id: 'hisako', name: 'Hisako' },
-      { id: 'hitomi', name: 'Hitomi' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'k9999', name: 'K9999' },
-      { id: 'karin', name: 'Karin' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'king', name: 'King' },
-      { id: 'kurosawa', name: 'Kurosawa' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'lee-chaolan', name: 'Lee Chaolan' },
-      { id: 'leifang', name: 'Leifang' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'links', name: 'Links' },
-      { id: 'manon', name: 'Manon' },
-      { id: 'millia-rage', name: 'Millia Rage' },
-      { id: 'momo', name: 'Momo' },
-      { id: 'musar', name: 'Musar' },
-      { id: 'nina', name: 'Nina' },
-      { id: 'oro', name: 'Oro' },
-      { id: 'orochi_iori', name: 'Orochi_Iori' },
-      { id: 'players', name: 'Players' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'rolf', name: 'Rolf' },
-      { id: 'rugal', name: 'Rugal' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'samurai-shodown-iii-blades-of-blood', name: 'Samurai Shodown Iii Blades Of Blood' },
-      { id: 'sol-badguy', name: 'Sol Badguy' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'striker', name: 'Striker' },
-      { id: 'the-king-of-fighters-2000', name: 'The King Of Fighters 2000' },
-      { id: 'the-king-of-fighters-2001', name: 'The King Of Fighters 2001' },
-      { id: 'the-king-of-fighters-94', name: 'The King Of Fighters 94' },
-      { id: 'the-king-of-fighters-95', name: 'The King Of Fighters 95' },
-      { id: 'the-king-of-fighters-96', name: 'The King Of Fighters 96' },
-      { id: 'the-king-of-fighters-97', name: 'The King Of Fighters 97' },
-      { id: 'the-king-of-fighters-98', name: 'The King Of Fighters 98' },
-      { id: 'the-king-of-fighters-98-ultimate-match', name: 'The King Of Fighters 98 Ultimate Match' },
-      { id: 'the-king-of-fighters-99', name: 'The King Of Fighters 99' },
-      { id: 'the_life_and_plasma_power_gauges', name: 'The_Life_And_Plasma_Power_Gauges' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'victor-chevalier', name: 'Victor Chevalier' },
-      { id: 'virtua-fighter-4', name: 'Virtua Fighter 4' },
-      { id: 'wesker', name: 'Wesker' },
-      { id: 'world_tour', name: 'World_Tour' },
-      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
-      { id: 'yuri', name: 'Yuri' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'zero', name: 'Zero' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'dead-or-alive-4',
-    name: "Dead or Alive 4",
-    developer: "Tecmo",
-    releaseYear: 2019,
-    platform: "Windows PlayStation 4 Xbox One",
-rosterCount: 999,
-        characters: [
-      { id: 'eliot', name: 'Eliot' },
-      { id: 'kokoro', name: 'Kokoro' },
-      { id: 'alec', name: 'Alec' },
-      { id: 'ayane', name: 'Ayane' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'berserker', name: 'Berserker' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'brad-burns', name: 'Brad Burns' },
-      { id: 'brad-wong', name: 'Brad Wong' },
-      { id: 'byakko', name: 'Byakko' },
-      { id: 'cfj', name: 'Cfj' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'cotw_bluemary', name: 'Cotw_Bluemary' },
-      { id: 'cotw_kenshiro', name: 'Cotw_Kenshiro' },
-      { id: 'cotw_nightmaregeese', name: 'Cotw_Nightmaregeese' },
-      { id: 'final_battle', name: 'Final_Battle' },
-      { id: 'fulgore', name: 'Fulgore' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
-      { id: 'capcom-fighting-jam', name: 'Capcom Fighting Jam' },
-      { id: 'dead-or-alive', name: 'Dead Or Alive' },
-      { id: 'fatal-fury-special', name: 'Fatal Fury Special' },
-      { id: 'galaxy-fight-universal-warriors', name: 'Galaxy Fight Universal Warriors' },
-      { id: 'helena', name: 'Helena' },
-      { id: 'helena-douglas', name: 'Helena Douglas' },
-      { id: 'hidden_fighters', name: 'Hidden_Fighters' },
-      { id: 'hisako', name: 'Hisako' },
-      { id: 'hitomi', name: 'Hitomi' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'k9999', name: 'K9999' },
-      { id: 'karin', name: 'Karin' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'king', name: 'King' },
-      { id: 'kurosawa', name: 'Kurosawa' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'lee-chaolan', name: 'Lee Chaolan' },
-      { id: 'leifang', name: 'Leifang' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'links', name: 'Links' },
-      { id: 'manon', name: 'Manon' },
-      { id: 'millia-rage', name: 'Millia Rage' },
-      { id: 'momo', name: 'Momo' },
-      { id: 'musar', name: 'Musar' },
-      { id: 'nina', name: 'Nina' },
-      { id: 'oro', name: 'Oro' },
-      { id: 'orochi_iori', name: 'Orochi_Iori' },
-      { id: 'players', name: 'Players' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'rolf', name: 'Rolf' },
-      { id: 'rugal', name: 'Rugal' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'samurai-shodown-iii-blades-of-blood', name: 'Samurai Shodown Iii Blades Of Blood' },
-      { id: 'sol-badguy', name: 'Sol Badguy' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'striker', name: 'Striker' },
-      { id: 'the-king-of-fighters-2000', name: 'The King Of Fighters 2000' },
-      { id: 'the-king-of-fighters-2001', name: 'The King Of Fighters 2001' },
-      { id: 'the-king-of-fighters-94', name: 'The King Of Fighters 94' },
-      { id: 'the-king-of-fighters-95', name: 'The King Of Fighters 95' },
-      { id: 'the-king-of-fighters-96', name: 'The King Of Fighters 96' },
-      { id: 'the-king-of-fighters-97', name: 'The King Of Fighters 97' },
-      { id: 'the-king-of-fighters-98', name: 'The King Of Fighters 98' },
-      { id: 'the-king-of-fighters-98-ultimate-match', name: 'The King Of Fighters 98 Ultimate Match' },
-      { id: 'the-king-of-fighters-99', name: 'The King Of Fighters 99' },
-      { id: 'the_life_and_plasma_power_gauges', name: 'The_Life_And_Plasma_Power_Gauges' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'victor-chevalier', name: 'Victor Chevalier' },
-      { id: 'virtua-fighter-4', name: 'Virtua Fighter 4' },
-      { id: 'wesker', name: 'Wesker' },
-      { id: 'world_tour', name: 'World_Tour' },
-      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
-      { id: 'yuri', name: 'Yuri' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'zero', name: 'Zero' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'dead-or-alive-5',
-    name: "Dead or Alive 5",
-    developer: "Tecmo",
-    releaseYear: 2019,
-    platform: "Windows PlayStation 4 Xbox One",
-rosterCount: 999,
-        characters: [
-      { id: 'mila', name: 'Mila' },
-      { id: 'rig', name: 'Rig' },
-      { id: 'alec', name: 'Alec' },
-      { id: 'ayane', name: 'Ayane' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'berserker', name: 'Berserker' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'brad-burns', name: 'Brad Burns' },
-      { id: 'brad-wong', name: 'Brad Wong' },
-      { id: 'byakko', name: 'Byakko' },
-      { id: 'cfj', name: 'Cfj' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'cotw_bluemary', name: 'Cotw_Bluemary' },
-      { id: 'cotw_kenshiro', name: 'Cotw_Kenshiro' },
-      { id: 'cotw_nightmaregeese', name: 'Cotw_Nightmaregeese' },
-      { id: 'final_battle', name: 'Final_Battle' },
-      { id: 'fulgore', name: 'Fulgore' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
-      { id: 'helena', name: 'Helena' },
-      { id: 'helena-douglas', name: 'Helena Douglas' },
-      { id: 'hidden_fighters', name: 'Hidden_Fighters' },
-      { id: 'hisako', name: 'Hisako' },
-      { id: 'hitomi', name: 'Hitomi' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'k9999', name: 'K9999' },
-      { id: 'karin', name: 'Karin' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'king', name: 'King' },
-      { id: 'capcom-fighting-jam', name: 'Capcom Fighting Jam' },
-      { id: 'dead-or-alive', name: 'Dead Or Alive' },
-      { id: 'fatal-fury-special', name: 'Fatal Fury Special' },
-      { id: 'galaxy-fight-universal-warriors', name: 'Galaxy Fight Universal Warriors' },
-      { id: 'kurosawa', name: 'Kurosawa' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'lee-chaolan', name: 'Lee Chaolan' },
-      { id: 'leifang', name: 'Leifang' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'links', name: 'Links' },
-      { id: 'manon', name: 'Manon' },
-      { id: 'millia-rage', name: 'Millia Rage' },
-      { id: 'momo', name: 'Momo' },
-      { id: 'musar', name: 'Musar' },
-      { id: 'nina', name: 'Nina' },
-      { id: 'oro', name: 'Oro' },
-      { id: 'orochi_iori', name: 'Orochi_Iori' },
-      { id: 'players', name: 'Players' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'rolf', name: 'Rolf' },
-      { id: 'rugal', name: 'Rugal' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'samurai-shodown-iii-blades-of-blood', name: 'Samurai Shodown Iii Blades Of Blood' },
-      { id: 'sol-badguy', name: 'Sol Badguy' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'striker', name: 'Striker' },
-      { id: 'the-king-of-fighters-2000', name: 'The King Of Fighters 2000' },
-      { id: 'the-king-of-fighters-2001', name: 'The King Of Fighters 2001' },
-      { id: 'the-king-of-fighters-94', name: 'The King Of Fighters 94' },
-      { id: 'the-king-of-fighters-95', name: 'The King Of Fighters 95' },
-      { id: 'the-king-of-fighters-96', name: 'The King Of Fighters 96' },
-      { id: 'the-king-of-fighters-97', name: 'The King Of Fighters 97' },
-      { id: 'the-king-of-fighters-98', name: 'The King Of Fighters 98' },
-      { id: 'the-king-of-fighters-98-ultimate-match', name: 'The King Of Fighters 98 Ultimate Match' },
-      { id: 'the-king-of-fighters-99', name: 'The King Of Fighters 99' },
-      { id: 'the_life_and_plasma_power_gauges', name: 'The_Life_And_Plasma_Power_Gauges' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'victor-chevalier', name: 'Victor Chevalier' },
-      { id: 'virtua-fighter-4', name: 'Virtua Fighter 4' },
-      { id: 'wesker', name: 'Wesker' },
-      { id: 'world_tour', name: 'World_Tour' },
-      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
-      { id: 'yuri', name: 'Yuri' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'zero', name: 'Zero' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'dnf-duel',
-    name: "DNF Duel",
-    developer: "Arc System Works",
-    releaseYear: 2022,
-    platform: "Windows PlayStation 4 PlayStation 5",
-rosterCount: 999,
-        characters: [
-      { id: 'berserker', name: 'Berserker' },
-      { id: 'vanguard', name: 'Vanguard' },
-      { id: 'striker', name: 'Striker' },
-      { id: 'grappler', name: 'Grappler' },
-      { id: 'ranger', name: 'Ranger' },
-      { id: 'dragon-knight', name: 'Dragon Knight' },
-      { id: 'hitman', name: 'Hitman' },
-      { id: 'kunoichi', name: 'Kunoichi' },
-      { id: 'enchantress', name: 'Enchantress' },
-      { id: 'swift-master', name: 'Swift Master' },
-      { id: 'ghostblade', name: 'Ghostblade' },
-      { id: 'troubleshooter', name: 'Troubleshooter' },
-      { id: 'crusader', name: 'Crusader' },
-      { id: 'launcher', name: 'Launcher' },
-      { id: 'inquisitor', name: 'Inquisitor' },
-      { id: 'lost-warrior', name: 'Lost Warrior' },
-      { id: 'spectre', name: 'Spectre' },
-      { id: 'brawler', name: 'Brawler' },
-      { id: 'battle-mage', name: 'Battle Mage' },
-      { id: 'monk', name: 'Monk' },
-      { id: 'nen-master', name: 'Nen Master' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'dead-or-alive-6',
-    name: "Dead or Alive 6",
-    developer: "Tecmo",
-    releaseYear: 2019,
-    platform: "Windows PlayStation 4 Xbox One",
-rosterCount: 999,
-        characters: [
-      { id: 'ayane', name: 'Ayane' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'brad-wong', name: 'Brad Wong' },
-      { id: 'christie', name: 'Christie' },
-      { id: 'diego', name: 'Diego' },
-      { id: 'eliot', name: 'Eliot' },
-      { id: 'helena', name: 'Helena' },
-      { id: 'hitomi', name: 'Hitomi' },
-      { id: 'honoka', name: 'Honoka' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'kasumi', name: 'Kasumi' },
-      { id: 'kokoro', name: 'Kokoro' },
-      { id: 'kula-diamond-(guest)', name: 'Kula Diamond (Guest)' },
-      { id: 'la-mariposa', name: 'La Mariposa' },
-      { id: 'leifang', name: 'Leifang' },
-      { id: 'mai-shiranui-(guest)', name: 'Mai Shiranui (Guest)' },
-      { id: 'marie-rose', name: 'Marie Rose' },
-      { id: 'mila', name: 'Mila' },
-      { id: 'nico', name: 'NiCO' },
-      { id: 'rig', name: 'Rig' },
-      { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'zack', name: 'Zack' },
-      { id: 'alec', name: 'Alec' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'berserker', name: 'Berserker' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'brad-burns', name: 'Brad Burns' },
-      { id: 'byakko', name: 'Byakko' },
-      { id: 'capcom-fighting-jam', name: 'Capcom Fighting Jam' },
-      { id: 'cfj', name: 'Cfj' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'cotw_bluemary', name: 'Cotw_Bluemary' },
-      { id: 'cotw_kenshiro', name: 'Cotw_Kenshiro' },
-      { id: 'cotw_nightmaregeese', name: 'Cotw_Nightmaregeese' },
-      { id: 'dead-or-alive', name: 'Dead Or Alive' },
-      { id: 'fatal-fury-special', name: 'Fatal Fury Special' },
-      { id: 'final_battle', name: 'Final_Battle' },
-      { id: 'fulgore', name: 'Fulgore' },
-      { id: 'galaxy-fight-universal-warriors', name: 'Galaxy Fight Universal Warriors' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
-      { id: 'helena-douglas', name: 'Helena Douglas' },
-      { id: 'hidden_fighters', name: 'Hidden_Fighters' },
-      { id: 'hisako', name: 'Hisako' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'k9999', name: 'K9999' },
-      { id: 'karin', name: 'Karin' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'king', name: 'King' },
-      { id: 'kurosawa', name: 'Kurosawa' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'lee-chaolan', name: 'Lee Chaolan' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'links', name: 'Links' },
-      { id: 'manon', name: 'Manon' },
-      { id: 'millia-rage', name: 'Millia Rage' },
-      { id: 'momo', name: 'Momo' },
-      { id: 'musar', name: 'Musar' },
-      { id: 'nina', name: 'Nina' },
-      { id: 'oro', name: 'Oro' },
-      { id: 'orochi_iori', name: 'Orochi_Iori' },
-      { id: 'players', name: 'Players' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'rolf', name: 'Rolf' },
-      { id: 'rugal', name: 'Rugal' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'samurai-shodown-iii-blades-of-blood', name: 'Samurai Shodown Iii Blades Of Blood' },
-      { id: 'sol-badguy', name: 'Sol Badguy' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'striker', name: 'Striker' },
-      { id: 'the-king-of-fighters-2000', name: 'The King Of Fighters 2000' },
-      { id: 'the-king-of-fighters-2001', name: 'The King Of Fighters 2001' },
-      { id: 'the-king-of-fighters-94', name: 'The King Of Fighters 94' },
-      { id: 'the-king-of-fighters-95', name: 'The King Of Fighters 95' },
-      { id: 'the-king-of-fighters-96', name: 'The King Of Fighters 96' },
-      { id: 'the-king-of-fighters-97', name: 'The King Of Fighters 97' },
-      { id: 'the-king-of-fighters-98', name: 'The King Of Fighters 98' },
-      { id: 'the-king-of-fighters-98-ultimate-match', name: 'The King Of Fighters 98 Ultimate Match' },
-      { id: 'the-king-of-fighters-99', name: 'The King Of Fighters 99' },
-      { id: 'the_life_and_plasma_power_gauges', name: 'The_Life_And_Plasma_Power_Gauges' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'victor-chevalier', name: 'Victor Chevalier' },
-      { id: 'virtua-fighter-4', name: 'Virtua Fighter 4' },
-      { id: 'wesker', name: 'Wesker' },
-      { id: 'world_tour', name: 'World_Tour' },
-      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
-      { id: 'yuri', name: 'Yuri' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'zero', name: 'Zero' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'dragon-ball-fighterz',
-    name: "Dragon Ball FighterZ",
-    developer: "Arc System Works",
-    releaseYear: 2018,
-rosterCount: 25,
-        characters: [
-      { id: 'goku-(super-saiyan)', name: 'Goku (Super Saiyan)' },
-      { id: 'vegeta-(super-saiyan)', name: 'Vegeta (Super Saiyan)' },
-      { id: 'gohan-(teen)', name: 'Gohan (Teen)' },
-      { id: 'freeza', name: 'Freeza' },
-      { id: 'cell', name: 'Cell' },
-      { id: 'majin-buu', name: 'Majin Buu' },
-      { id: 'trunks', name: 'Trunks' },
-      { id: 'piccolo', name: 'Piccolo' },
-      { id: 'krillin', name: 'Krillin' },
-      { id: 'yamcha', name: 'Yamcha' },
-      { id: 'tenshinhan', name: 'Tenshinhan' },
-      { id: 'android-18', name: 'Android 18' },
-      { id: 'android-16', name: 'Android 16' },
-      { id: 'beerus', name: 'Beerus' },
-      { id: 'hit', name: 'Hit' },
-      { id: 'goku-black', name: 'Goku Black' },
-      { id: 'android-21-(majin)', name: 'Android 21 (Majin)' },
-      { id: 'goku-(blue)', name: 'Goku (Blue)' },
-      { id: 'vegeta-(blue)', name: 'Vegeta (Blue)' },
-      { id: 'bardock-(dlc)', name: 'Bardock (DLC)' },
-      { id: 'vegito-(blue)-(dlc)', name: 'Vegito (Blue) (DLC)' },
-      { id: 'broly-(z)-(dlc)', name: 'Broly (Z) (DLC)' },
-      { id: 'zamasu-(fused)-(dlc)', name: 'Zamasu (Fused) (DLC)' },
-      { id: 'gogeta-(ss4)-(dlc)', name: 'Gogeta (SS4) (DLC)' },
-      { id: 'android-21-(lab-coat)-(dlc)', name: 'Android 21 (Lab Coat) (DLC)' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'fatal-fury-2',
-    name: "Fatal Fury 2",
-    developer: "SNK",
-    releaseYear: 1991,
-    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
-rosterCount: 999,
-        characters: [
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'chain_combos', name: 'Chain_Combos' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'cotw', name: 'Cotw' },
-      { id: 'cotw_andybogard', name: 'Cotw_Andybogard' },
-      { id: 'cotw_billykane', name: 'Cotw_Billykane' },
-      { id: 'cotw_gato', name: 'Cotw_Gato' },
-      { id: 'cotw_hokutomaru', name: 'Cotw_Hokutomaru' },
-      { id: 'cotw_hotarufutaba', name: 'Cotw_Hotarufutaba' },
-      { id: 'cotw_joehigashi', name: 'Cotw_Joehigashi' },
-      { id: 'cotw_kimdonghwan', name: 'Cotw_Kimdonghwan' },
-      { id: 'cotw_kimjaehoon', name: 'Cotw_Kimjaehoon' },
-      { id: 'cotw_nightmaregeese', name: 'Cotw_Nightmaregeese' },
-      { id: 'cotw_rockhoward', name: 'Cotw_Rockhoward' },
-      { id: 'cotw_terrybogard', name: 'Cotw_Terrybogard' },
-      { id: 'cotw_tizoc', name: 'Cotw_Tizoc' },
-      { id: 'cotw_wolfgangkrauser', name: 'Cotw_Wolfgangkrauser' },
-      { id: 'dnf-duel', name: 'Dnf Duel' },
-      { id: 'ed', name: 'Ed' },
-      { id: 'fatal-fury-king-of-fighters', name: 'Fatal Fury King Of Fighters' },
-      { id: 'fatal-fury-special', name: 'Fatal Fury Special' },
-      { id: 'final_battle', name: 'Final_Battle' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'garou-mark-of-the-wolves', name: 'Garou Mark Of The Wolves' },
-      { id: 'geese', name: 'Geese' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'hibiki', name: 'Hibiki' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'k9999', name: 'K9999' },
-      { id: 'king', name: 'King' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'oro', name: 'Oro' },
-      { id: 'orochi_iori', name: 'Orochi_Iori' },
-      { id: 'real-bout-fatal-fury', name: 'Real Bout Fatal Fury' },
-      { id: 'real-bout-fatal-fury-special', name: 'Real Bout Fatal Fury Special' },
-      { id: 'rick-strowd', name: 'Rick Strowd' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'rugal', name: 'Rugal' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'sakura-kasugano', name: 'Sakura Kasugano' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'samurai-shodown-iii-blades-of-blood', name: 'Samurai Shodown Iii Blades Of Blood' },
-      { id: 'special_stock_gauge', name: 'Special_Stock_Gauge' },
-      { id: 'striker', name: 'Striker' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'the-king-of-fighters-2000', name: 'The King Of Fighters 2000' },
-      { id: 'the-king-of-fighters-2001', name: 'The King Of Fighters 2001' },
-      { id: 'the-king-of-fighters-2003', name: 'The King Of Fighters 2003' },
-      { id: 'the-king-of-fighters-94', name: 'The King Of Fighters 94' },
-      { id: 'the-king-of-fighters-95', name: 'The King Of Fighters 95' },
-      { id: 'the-king-of-fighters-96', name: 'The King Of Fighters 96' },
-      { id: 'the-king-of-fighters-97', name: 'The King Of Fighters 97' },
-      { id: 'the-king-of-fighters-98', name: 'The King Of Fighters 98' },
-      { id: 'the-king-of-fighters-98-ultimate-match', name: 'The King Of Fighters 98 Ultimate Match' },
-      { id: 'the-king-of-fighters-99', name: 'The King Of Fighters 99' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' },
-      { id: 'world_tour', name: 'World_Tour' },
-      { id: 'yamazaki', name: 'Yamazaki' },
-      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'fatal-fury-3-road-to-the-final-victory',
-    name: "Fatal Fury 3: Road to the Final Victory",
-    developer: "SNK",
-    releaseYear: 1991,
-    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
-rosterCount: 999,
-        characters: [
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'bob-wilson', name: 'Bob Wilson' },
-      { id: 'hon-fu', name: 'Hon-Fu' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'franco-bash', name: 'Franco Bash' },
-      { id: 'sokaku-mochizuki', name: 'Sokaku Mochizuki' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'jin-chonshu', name: 'Jin Chonshu' },
-      { id: 'jin-chonrei', name: 'Jin Chonrei' },
-      { id: 'yamazaki', name: 'Yamazaki' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'fatal-fury-king-of-fighters',
-    name: "Fatal Fury: King of Fighters",
-    developer: "SNK",
-    releaseYear: 1991,
-    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
-rosterCount: 999,
-        characters: [
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'chain_combos', name: 'Chain_Combos' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'cotw', name: 'Cotw' },
-      { id: 'cotw_andybogard', name: 'Cotw_Andybogard' },
-      { id: 'cotw_billykane', name: 'Cotw_Billykane' },
-      { id: 'cotw_gato', name: 'Cotw_Gato' },
-      { id: 'cotw_hotarufutaba', name: 'Cotw_Hotarufutaba' },
-      { id: 'cotw_joehigashi', name: 'Cotw_Joehigashi' },
-      { id: 'cotw_kimdonghwan', name: 'Cotw_Kimdonghwan' },
-      { id: 'cotw_kimjaehoon', name: 'Cotw_Kimjaehoon' },
-      { id: 'cotw_nightmaregeese', name: 'Cotw_Nightmaregeese' },
-      { id: 'cotw_rockhoward', name: 'Cotw_Rockhoward' },
-      { id: 'cotw_terrybogard', name: 'Cotw_Terrybogard' },
-      { id: 'cotw_wolfgangkrauser', name: 'Cotw_Wolfgangkrauser' },
-      { id: 'ed', name: 'Ed' },
-      { id: 'final_battle', name: 'Final_Battle' },
-      { id: 'geese', name: 'Geese' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'hibiki', name: 'Hibiki' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'k9999', name: 'K9999' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'king', name: 'King' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'oro', name: 'Oro' },
-      { id: 'orochi_iori', name: 'Orochi_Iori' },
-      { id: 'rick-strowd', name: 'Rick Strowd' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'rugal', name: 'Rugal' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'special_stock_gauge', name: 'Special_Stock_Gauge' },
-      { id: 'striker', name: 'Striker' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' },
-      { id: 'world_tour', name: 'World_Tour' },
-      { id: 'yamazaki', name: 'Yamazaki' },
-      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'dnf-duel', name: 'Dnf Duel' },
-      { id: 'fatal-fury-king-of-fighters', name: 'Fatal Fury King Of Fighters' },
-      { id: 'fatal-fury-special', name: 'Fatal Fury Special' },
-      { id: 'garou-mark-of-the-wolves', name: 'Garou Mark Of The Wolves' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'real-bout-fatal-fury', name: 'Real Bout Fatal Fury' },
-      { id: 'real-bout-fatal-fury-special', name: 'Real Bout Fatal Fury Special' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'samurai-shodown-iii-blades-of-blood', name: 'Samurai Shodown Iii Blades Of Blood' },
-      { id: 'the-king-of-fighters-2000', name: 'The King Of Fighters 2000' },
-      { id: 'the-king-of-fighters-2001', name: 'The King Of Fighters 2001' },
-      { id: 'the-king-of-fighters-2003', name: 'The King Of Fighters 2003' },
-      { id: 'the-king-of-fighters-94', name: 'The King Of Fighters 94' },
-      { id: 'the-king-of-fighters-95', name: 'The King Of Fighters 95' },
-      { id: 'the-king-of-fighters-96', name: 'The King Of Fighters 96' },
-      { id: 'the-king-of-fighters-97', name: 'The King Of Fighters 97' },
-      { id: 'the-king-of-fighters-98', name: 'The King Of Fighters 98' },
-      { id: 'the-king-of-fighters-98-ultimate-match', name: 'The King Of Fighters 98 Ultimate Match' },
-      { id: 'the-king-of-fighters-99', name: 'The King Of Fighters 99' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'fatal-fury-special',
-    name: "Fatal Fury Special",
-    developer: "SNK",
-    releaseYear: 1991,
-    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
-rosterCount: 999,
-        characters: [
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'cotw_kimdonghwan', name: 'Cotw_Kimdonghwan' },
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'chain_combos', name: 'Chain_Combos' },
-      { id: 'cotw', name: 'Cotw' },
-      { id: 'cotw_andybogard', name: 'Cotw_Andybogard' },
-      { id: 'cotw_billykane', name: 'Cotw_Billykane' },
-      { id: 'cotw_gato', name: 'Cotw_Gato' },
-      { id: 'cotw_hotarufutaba', name: 'Cotw_Hotarufutaba' },
-      { id: 'cotw_joehigashi', name: 'Cotw_Joehigashi' },
-      { id: 'cotw_kimjaehoon', name: 'Cotw_Kimjaehoon' },
-      { id: 'cotw_rockhoward', name: 'Cotw_Rockhoward' },
-      { id: 'cotw_terrybogard', name: 'Cotw_Terrybogard' },
-      { id: 'cotw_wolfgangkrauser', name: 'Cotw_Wolfgangkrauser' },
-      { id: 'dnf-duel', name: 'Dnf Duel' },
-      { id: 'ed', name: 'Ed' },
-      { id: 'fatal-fury-king-of-fighters', name: 'Fatal Fury King Of Fighters' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'garou-mark-of-the-wolves', name: 'Garou Mark Of The Wolves' },
-      { id: 'geese', name: 'Geese' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'real-bout-fatal-fury', name: 'Real Bout Fatal Fury' },
-      { id: 'real-bout-fatal-fury-special', name: 'Real Bout Fatal Fury Special' },
-      { id: 'rick-strowd', name: 'Rick Strowd' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'sakura-kasugano', name: 'Sakura Kasugano' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'special_stock_gauge', name: 'Special_Stock_Gauge' },
-      { id: 'striker', name: 'Striker' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'the-king-of-fighters-2003', name: 'The King Of Fighters 2003' },
-      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' },
-      { id: 'yamazaki', name: 'Yamazaki' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'fighters-megamix',
-    name: "Fighters Megamix",
-    developer: "Sega",
-    releaseYear: 1996,
-rosterCount: 999,
-        characters: [
-      { id: 'akira', name: 'Akira' },
-      { id: 'pai', name: 'Pai' },
-      { id: 'lau', name: 'Lau' },
-      { id: 'wolf', name: 'Wolf' },
-      { id: 'jeffry', name: 'Jeffry' },
-      { id: 'kage', name: 'Kage' },
-      { id: 'sarah', name: 'Sarah' },
-      { id: 'jacky', name: 'Jacky' },
-      { id: 'shun', name: 'Shun' },
-      { id: 'lion', name: 'Lion' },
-      { id: 'dural', name: 'Dural' },
-      { id: 'tokio', name: 'Tokio' },
-      { id: 'raxel', name: 'Raxel' },
-      { id: 'bahn', name: 'Bahn' },
-      { id: 'grace', name: 'Grace' },
-      { id: 'candy', name: 'Candy' },
-      { id: 'picky', name: 'Picky' },
-      { id: 'jane', name: 'Jane' },
-      { id: 'sanman', name: 'Sanman' },
-      { id: 'mahler', name: 'Mahler' },
-      { id: 'kumachan', name: 'Kumachan' },
-      { id: 'janet', name: 'Janet' },
-      { id: 'bark', name: 'Bark' },
-      { id: 'bean', name: 'Bean' },
-      { id: 'deku', name: 'Deku' },
-      { id: 'siba', name: 'Siba' },
-      { id: 'rent-a-hero', name: 'Rent-A-Hero' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'kids-sarah', name: 'Kids Sarah' },
-      { id: 'hornet', name: 'Hornet' },
-      { id: 'palm-tree', name: 'Palm Tree' },
-      { id: 'am2-bunny', name: 'AM2 Bunny' },
-      { id: 'fighters-megamix', name: 'Fighters Megamix' },
-      { id: 'fighting-vipers', name: 'Fighting Vipers' },
-      { id: 'virtua-fighter-3', name: 'Virtua Fighter 3' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'fighting-ex-layer',
-    name: "Fighting EX Layer",
-    developer: "Arika",
-    releaseYear: 2018,
-    platform: "PlayStation 4 Windows Nintendo Switch",
-rosterCount: 999,
-        characters: [
-      { id: 'kairi', name: 'Kairi' },
-      { id: 'shirase', name: 'Shirase' },
-      { id: 'hokuto', name: 'Hokuto' },
-      { id: 'garuda', name: 'Garuda' },
-      { id: 'skullomania', name: 'Skullomania' },
-      { id: 'darun-mister', name: 'Darun Mister' },
-      { id: 'allen-snider', name: 'Allen Snider' },
-      { id: 'doctrine-dark', name: 'Doctrine Dark' },
-      { id: 'blair-dame', name: 'Blair Dame' },
-      { id: 'jack', name: 'Jack' },
-      { id: 'shadowgeist', name: 'Shadowgeist' },
-      { id: 'sanane', name: 'Sanane' },
-      { id: 'hayate', name: 'Hayate' },
-      { id: 'pullum-purna', name: 'Pullum Purna' },
-      { id: 'vulcano-rosso', name: 'Vulcano Rosso' },
-      { id: 'sharon', name: 'Sharon' },
-      { id: 'area', name: 'Area' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'nanase', name: 'Nanase' },
-      { id: 'area', name: 'Area' },
-      { id: 'v-rosso', name: 'V.Rosso' },
-      { id: 'bloody-hokuto', name: 'Bloody Hokuto' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'fighting-vipers',
-    name: "Fighting Vipers",
-    developer: "Sega",
-    releaseYear: 1995,
-    platform: "Arcade Sega Saturn",
-rosterCount: 999,
-        characters: [
-      { id: 'bahn', name: 'Bahn' },
-      { id: 'candy', name: 'Candy' },
-      { id: 'grace', name: 'Grace' },
-      { id: 'jane', name: 'Jane' },
-      { id: 'picky', name: 'Picky' },
-      { id: 'raxel', name: 'Raxel' },
-      { id: 'sanman', name: 'Sanman' },
-      { id: 'tokio', name: 'Tokio' },
-      { id: 'mahler', name: 'Mahler' },
-      { id: 'kumachan', name: 'Kumachan' },
-      { id: 'pepsiman', name: 'Pepsiman' },
-      { id: 'fighters-megamix', name: 'Fighters Megamix' },
-      { id: 'fighting-vipers', name: 'Fighting Vipers' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'fighting-vipers-2',
-    name: "Fighting Vipers 2",
-    developer: "Sega",
-    releaseYear: 1995,
-    platform: "Arcade Sega Saturn",
-rosterCount: 999,
-        characters: [
-      { id: 'bahn', name: 'Bahn' },
-      { id: 'candy', name: 'Candy' },
-      { id: 'grace', name: 'Grace' },
-      { id: 'jane', name: 'Jane' },
-      { id: 'picky', name: 'Picky' },
-      { id: 'raxel', name: 'Raxel' },
-      { id: 'sanman', name: 'Sanman' },
-      { id: 'tokio', name: 'Tokio' },
-      { id: 'mahler', name: 'Mahler' },
-      { id: 'charlie', name: 'Charlie' },
-      { id: 'emi', name: 'Emi' },
-      { id: 'kuhn', name: 'Kuhn' },
-      { id: 'del-sol', name: 'Del Sol' },
-      { id: 'fighters-megamix', name: 'Fighters Megamix' },
-      { id: 'fighting-vipers', name: 'Fighting Vipers' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'galaxy-fight-universal-warriors',
-    name: "Galaxy Fight: Universal Warriors",
-    developer: "Sunsoft",
-    releaseYear: 1995,
-    platform: "Neo Geo Arcade Sega Saturn PlayStation",
-rosterCount: 999,
-        characters: [
-      { id: 'alvan', name: 'Alvan' },
-      { id: 'g-done', name: 'G-Done' },
-      { id: 'gunter', name: 'Gunter' },
-      { id: 'juras', name: 'Juras' },
-      { id: 'kazuma', name: 'Kazuma' },
-      { id: 'musar', name: 'Musar' },
-      { id: 'rolf', name: 'Rolf' },
-      { id: 'roomi', name: 'Roomi' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'garou-mark-of-the-wolves',
-    name: "Garou: Mark of the Wolves",
-    developer: "SNK",
-    releaseYear: 1999,
-rosterCount: 999,
-        characters: [
-      { id: 'b-jenet', name: 'B. Jenet' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'cotw_hokutomaru', name: 'Cotw_Hokutomaru' },
-      { id: 'cotw_hotarufutaba', name: 'Cotw_Hotarufutaba' },
-      { id: 'cotw_kevinrian', name: 'Cotw_Kevinrian' },
-      { id: 'cotw_tizoc', name: 'Cotw_Tizoc' },
-      { id: 'athena-asamiya', name: 'Athena Asamiya' },
-      { id: 'batsu-ichimonji', name: 'Batsu Ichimonji' },
-      { id: 'boman', name: 'Boman' },
-      { id: 'burning_batsu', name: 'Burning_Batsu' },
-      { id: 'cotw_kimdonghwan', name: 'Cotw_Kimdonghwan' },
-      { id: 'hyo_imawano', name: 'Hyo_Imawano' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'kula-diamond', name: 'Kula Diamond' },
-      { id: 'kurow', name: 'Kurow' },
-      { id: 'kyoko', name: 'Kyoko' },
-      { id: 'kyosuke-kagami', name: 'Kyosuke Kagami' },
-      { id: 'roy_bromwell', name: 'Roy_Bromwell' },
-      { id: 'rugal-bernstein', name: 'Rugal Bernstein' },
-      { id: 'shoma', name: 'Shoma' },
-      { id: 'vatsu', name: 'Vatsu' },
-      { id: 'wild_daigo', name: 'Wild_Daigo' },
-      { id: 'the-king-of-fighters-2002', name: 'The King Of Fighters 2002' },
-      { id: 'the-king-of-fighters-2003', name: 'The King Of Fighters 2003' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'golden-axe-the-duel',
-    name: "Golden Axe: The Duel",
-    developer: "Sega",
-    releaseYear: 1995,
-    platform: "Arcade Sega Saturn",
-rosterCount: 999,
-        characters: [
-      { id: 'death-adder', name: 'Death Adder' },
-      { id: 'doc', name: 'Doc' },
-      { id: 'duel', name: 'Duel' },
-      { id: 'gilius-rockhead', name: 'Gilius Rockhead' },
-      { id: 'jamm', name: 'Jamm' },
-      { id: 'kain-blade', name: 'Kain Blade' },
-      { id: 'keel', name: 'Keel' },
-      { id: 'milan-flare', name: 'Milan Flare' },
-      { id: 'panchos', name: 'Panchos' },
-      { id: 'zoma', name: 'Zoma' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'granblue-fantasy-versus-rising',
-    name: "Granblue Fantasy Versus: Rising",
-    developer: "Arc System Works",
-    releaseYear: 2023,
-    platform: "Windows PlayStation 4 PlayStation 5",
-rosterCount: 999,
-        characters: [
-      { id: 'gran', name: 'Gran' },
-      { id: 'djeeta', name: 'Djeeta' },
-      { id: 'katalina', name: 'Katalina' },
-      { id: 'charlotta', name: 'Charlotta' },
-      { id: 'lancelot', name: 'Lancelot' },
-      { id: 'percival', name: 'Percival' },
-      { id: 'ladiva', name: 'Ladiva' },
-      { id: 'metera', name: 'Metera' },
-      { id: 'lowain', name: 'Lowain' },
-      { id: 'ferry', name: 'Ferry' },
-      { id: 'zeta', name: 'Zeta' },
-      { id: 'vaseraga', name: 'Vaseraga' },
-      { id: 'narmaya', name: 'Narmaya' },
-      { id: 'soriz', name: 'Soriz' },
-      { id: 'zooey', name: 'Zooey' },
-      { id: 'cagliostro', name: 'Cagliostro' },
-      { id: 'yuel', name: 'Yuel' },
-      { id: 'anre', name: 'Anre' },
-      { id: 'eustace', name: 'Eustace' },
-      { id: 'seox', name: 'Seox' },
-      { id: 'vira', name: 'Vira' },
-      { id: 'belial', name: 'Belial' },
-      { id: 'avatar-belial', name: 'Avatar Belial' },
-      { id: 'beelzebub', name: 'Beelzebub' },
-      { id: 'siegfried', name: 'Siegfried' },
-      { id: 'anila', name: 'Anila' },
-      { id: 'grimnir', name: 'Grimnir' },
-      { id: 'nier', name: 'Nier' },
-      { id: 'lucilius', name: 'Lucilius' },
-      { id: '2b', name: '2B' },
-      { id: 'vane', name: 'Vane' },
-      { id: 'beatrix', name: 'Beatrix' },
-      { id: 'versusia', name: 'Versusia' },
-      { id: 'vikala', name: 'Vikala' },
-      { id: 'sandalphon', name: 'Sandalphon' },
-      { id: 'fenrir', name: 'Fenrir' },
-      { id: 'heles', name: 'Heles' },
-      { id: 'lunalu', name: 'Lunalu' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'groove-on-fight',
-    name: "Groove on Fight",
-    developer: "Atlus",
-    releaseYear: 1997,
-    platform: "Arcade Sega Saturn",
-rosterCount: 14,
-        characters: [
-      { id: 'larry-light', name: 'Larry Light' },
-      { id: 'chris-wayne', name: 'Chris Wayne' },
-      { id: 'solis-r8000', name: 'Solis R8000' },
-      { id: 'popura-hananokoji', name: 'Popura Hananokoji' },
-      { id: 'tenjinbashi-sujiroku', name: 'Tenjinbashi Sujiroku' },
-      { id: 'hizumi-yukinoue', name: 'Hizumi Yukinoue' },
-      { id: 'm.a.d', name: 'M.A.D' },
-      { id: 'falco', name: 'Falco' },
-      { id: 'oume-&-otane', name: 'Oume & Otane' },
-      { id: 'rudolph-gartheimer', name: 'Rudolph Gartheimer' },
-      { id: 'remi-otogiri', name: 'Remi Otogiri' },
-      { id: 'damian-shade', name: 'Damian Shade' },
-      { id: 'bristol-weller', name: 'Bristol Weller' },
-      { id: 'bristol-d', name: 'Bristol-D' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'guilty-gear',
-    name: "Guilty Gear (1998)",
-    developer: "Arc System Works",
-    releaseYear: 1998,
-    platform: "PlayStation",
-rosterCount: 999,
-        characters: [
-      { id: 'sol-badguy', name: 'Sol Badguy' },
-      { id: 'ky-kiske', name: 'Ky Kiske' },
-      { id: 'may', name: 'May' },
-      { id: 'millia-rage', name: 'Millia Rage' },
-      { id: 'zato-1', name: 'Zato-1' },
-      { id: 'potemkin', name: 'Potemkin' },
-      { id: 'chipp-zanuff', name: 'Chipp Zanuff' },
-      { id: 'dr-baldhead', name: 'Dr. Baldhead' },
-      { id: 'kliff-undersn', name: 'Kliff Undersn' },
-      { id: 'axl-low', name: 'Axl Low' },
-      { id: 'testament', name: 'Testament' },
-      { id: 'justice', name: 'Justice' },
-      { id: 'baiken', name: 'Baiken' },
-      { id: 'blazblue-central-fiction', name: 'Blazblue Central Fiction' },
-      { id: 'blazblue-cross-tag-battle', name: 'Blazblue Cross Tag Battle' },
-      { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' },
-      { id: 'jin-kisaragi', name: 'Jin Kisaragi' },
-      { id: 'makoto', name: 'Makoto' },
-      { id: 'noel-vermillion', name: 'Noel Vermillion' },
-      { id: 'ragna-the-bloodedge', name: 'Ragna The Bloodedge' },
-      { id: 'versus', name: 'Versus' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'guilty-gear-x',
-    name: "Guilty Gear X",
-    developer: "Arc System Works",
-    releaseYear: 1998,
-    platform: "PlayStation",
-rosterCount: 999,
-        characters: [
-      { id: 'sol-badguy', name: 'Sol Badguy' },
-      { id: 'ky-kiske', name: 'Ky Kiske' },
-      { id: 'may', name: 'May' },
-      { id: 'millia-rage', name: 'Millia Rage' },
-      { id: 'zato-1', name: 'Zato-1' },
-      { id: 'potemkin', name: 'Potemkin' },
-      { id: 'chipp-zanuff', name: 'Chipp Zanuff' },
-      { id: 'faust', name: 'Faust' },
-      { id: 'axl-low', name: 'Axl Low' },
-      { id: 'testament', name: 'Testament' },
-      { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' },
-      { id: 'anji-mito', name: 'Anji Mito' },
-      { id: 'johnny', name: 'Johnny' },
-      { id: 'venom', name: 'Venom' },
-      { id: 'baiken', name: 'Baiken' },
-      { id: 'dizzy', name: 'Dizzy' },
-      { id: 'blazblue-central-fiction', name: 'Blazblue Central Fiction' },
-      { id: 'blazblue-cross-tag-battle', name: 'Blazblue Cross Tag Battle' },
-      { id: 'jin-kisaragi', name: 'Jin Kisaragi' },
-      { id: 'makoto', name: 'Makoto' },
-      { id: 'noel-vermillion', name: 'Noel Vermillion' },
-      { id: 'ragna-the-bloodedge', name: 'Ragna The Bloodedge' },
-      { id: 'versus', name: 'Versus' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'guilty-gear-xrd-rev-2',
-    name: "Guilty Gear Xrd REV 2",
-    developer: "Arc System Works",
-    releaseYear: 1998,
-    platform: "PlayStation",
-rosterCount: 999,
-        characters: [
-      { id: 'sol-badguy', name: 'Sol Badguy' },
-      { id: 'ky-kiske', name: 'Ky Kiske' },
-      { id: 'may', name: 'May' },
-      { id: 'millia-rage', name: 'Millia Rage' },
-      { id: 'zato-1', name: 'Zato-1' },
-      { id: 'potemkin', name: 'Potemkin' },
-      { id: 'chipp-zanuff', name: 'Chipp Zanuff' },
-      { id: 'faust', name: 'Faust' },
-      { id: 'axl-low', name: 'Axl Low' },
-      { id: 'venom', name: 'Venom' },
-      { id: 'slayer', name: 'Slayer' },
-      { id: 'i-no', name: 'I-No' },
-      { id: 'bedman', name: 'Bedman' },
-      { id: 'ramlethal-valentine', name: 'Ramlethal Valentine' },
-      { id: 'elphelt-valentine', name: 'Elphelt Valentine' },
-      { id: 'leo-whitefang', name: 'Leo Whitefang' },
-      { id: 'sin-kiske', name: 'Sin Kiske' },
-      { id: 'johnny', name: 'Johnny' },
-      { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' },
-      { id: 'kum-haehyun', name: 'Kum Haehyun' },
-      { id: 'raven', name: 'Raven' },
-      { id: 'dizzy', name: 'Dizzy' },
-      { id: 'baiken', name: 'Baiken' },
-      { id: 'answer', name: 'Answer' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'guilty-gear-xx-accent-core-plus-r',
-    name: "Guilty Gear XX Accent Core Plus R",
-    developer: "Arc System Works",
-    releaseYear: 1998,
-    platform: "PlayStation",
-rosterCount: 999,
-        characters: [
-      { id: 'sol-badguy', name: 'Sol Badguy' },
-      { id: 'ky-kiske', name: 'Ky Kiske' },
-      { id: 'may', name: 'May' },
-      { id: 'millia-rage', name: 'Millia Rage' },
-      { id: 'eddie-zato-1', name: 'Eddie (Zato-1)' },
-      { id: 'potemkin', name: 'Potemkin' },
-      { id: 'chipp-zanuff', name: 'Chipp Zanuff' },
-      { id: 'faust', name: 'Faust' },
-      { id: 'axl-low', name: 'Axl Low' },
-      { id: 'testament', name: 'Testament' },
-      { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' },
-      { id: 'anji-mito', name: 'Anji Mito' },
-      { id: 'johnny', name: 'Johnny' },
-      { id: 'venom', name: 'Venom' },
-      { id: 'baiken', name: 'Baiken' },
-      { id: 'dizzy', name: 'Dizzy' },
-      { id: 'slayer', name: 'Slayer' },
-      { id: 'bridget', name: 'Bridget' },
-      { id: 'zappa', name: 'Zappa' },
-      { id: 'i-no', name: 'I-No' },
-      { id: 'robo-ky', name: 'Robo-Ky' },
-      { id: 'a-b-a', name: 'A.B.A' },
-      { id: 'order-sol', name: 'Order-Sol' },
-      { id: 'kliff-undersn', name: 'Kliff Undersn' },
-      { id: 'justice', name: 'Justice' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'hyper-street-fighter-ii',
-    name: "Hyper Street Fighter II",
-    developer: "Capcom",
-    releaseYear: 1987,
-rosterCount: 999,
-        characters: [
-      { id: 'chun-li', name: 'Chun Li' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'vega', name: 'Vega' },
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'captain-america', name: 'Captain America' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'deejay', name: 'Deejay' },
-      { id: 'dramatic_battle', name: 'Dramatic_Battle' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'jin-saotome', name: 'Jin Saotome' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'play_as_shin_gouki', name: 'Play_As_Shin_Gouki' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'killer-instinct-(1994)',
-    name: "Killer Instinct (1994)",
-    developer: "Rare",
-    releaseYear: 1994,
-rosterCount: 999,
-        characters: [
-      { id: 'jago', name: 'Jago' },
-      { id: 'b-orchid', name: 'B. Orchid' },
-      { id: 't-j-combo', name: 'T.J. Combo' },
-      { id: 'chief-thunder', name: 'Chief Thunder' },
-      { id: 'glacius', name: 'Glacius' },
-      { id: 'sabrewulf', name: 'Sabrewulf' },
-      { id: 'spinal', name: 'Spinal' },
-      { id: 'riptor', name: 'Riptor' },
-      { id: 'cinder', name: 'Cinder' },
-      { id: 'fulgore', name: 'Fulgore' },
-      { id: 'eyedol', name: 'Eyedol' },
-      { id: 'cuper', name: 'Cuper' },
-      { id: 'elena', name: 'Elena' },
-      { id: 'juggernaut', name: 'Juggernaut' },
-      { id: 'psylocke', name: 'Psylocke' },
-      { id: 'remy', name: 'Remy' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'yamazaki', name: 'Yamazaki' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'killer-instinct-(2013)',
-    name: "Killer Instinct (2013)",
-    developer: "Rare",
-    releaseYear: 2013,
-rosterCount: 999,
-        characters: [
-      { id: 'jago', name: 'Jago' },
-      { id: 'sabrewulf', name: 'Sabrewulf' },
-      { id: 'glacius', name: 'Glacius' },
-      { id: 'chief-thunder', name: 'Chief Thunder' },
-      { id: 'sadira', name: 'Sadira' },
-      { id: 'orchid', name: 'Orchid' },
-      { id: 'spinal', name: 'Spinal' },
-      { id: 'fulgore', name: 'Fulgore' },
-      { id: 't-j-combo', name: 'T.J. Combo' },
-      { id: 'maya', name: 'Maya' },
-      { id: 'kan-ra', name: 'Kan-Ra' },
-      { id: 'riptor', name: 'Riptor' },
-      { id: 'omen', name: 'Omen' },
-      { id: 'aganos', name: 'Aganos' },
-      { id: 'hisako', name: 'Hisako' },
-      { id: 'cinder', name: 'Cinder' },
-      { id: 'aria', name: 'Aria' },
-      { id: 'shadow-jago', name: 'Shadow Jago' },
-      { id: 'rash', name: 'Rash' },
-      { id: 'kim-wu', name: 'Kim Wu' },
-      { id: 'arbiter', name: 'Arbiter' },
-      { id: 'tusk', name: 'Tusk' },
-      { id: 'mira', name: 'Mira' },
-      { id: 'gargos', name: 'Gargos' },
-      { id: 'general-raam', name: 'General RAAM' },
-      { id: 'eyedol', name: 'Eyedol' },
-      { id: 'kilgore', name: 'Kilgore' },
-      { id: 'shin-hisako', name: 'Shin Hisako' },
-      { id: 'eagle', name: 'Eagle' },
-      { id: 'cuper', name: 'Cuper' },
-      { id: 'elena', name: 'Elena' },
-      { id: 'juggernaut', name: 'Juggernaut' },
-      { id: 'psylocke', name: 'Psylocke' },
-      { id: 'remy', name: 'Remy' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'yamazaki', name: 'Yamazaki' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'killer-instinct-2--gold',
-    name: "Killer Instinct 2 / Gold",
-    developer: "Rare",
-    releaseYear: 1994,
-rosterCount: 999,
-        characters: [
-      { id: 'jago', name: 'Jago' },
-      { id: 'b-orchid', name: 'B. Orchid' },
-      { id: 't-j-combo', name: 'T.J. Combo' },
-      { id: 'sabrewulf', name: 'Sabrewulf' },
-      { id: 'spinal', name: 'Spinal' },
-      { id: 'fulgore', name: 'Fulgore' },
-      { id: 'glacius', name: 'Glacius' },
-      { id: 'kim-wu', name: 'Kim Wu' },
-      { id: 'maya', name: 'Maya' },
-      { id: 'tusk', name: 'Tusk' },
-      { id: 'gargos', name: 'Gargos' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'kizuna-encounter-super-tag-battle',
-    name: "Kizuna Encounter: Super Tag Battle",
-    developer: "SNK",
-    releaseYear: 1996,
-rosterCount: 999,
-        characters: [
-      { id: 'rosa', name: 'Rosa' },
-      { id: 'hayate', name: 'Hayate' },
-      { id: 'kim-eagle', name: 'Kim Eagle' },
-      { id: 'max-eagle', name: 'Max Eagle' },
-      { id: 'gozu', name: 'Gozu' },
-      { id: 'mezu', name: 'Mezu' },
-      { id: 'joker', name: 'Joker' },
-      { id: 'gordon-bowman', name: 'Gordon Bowman' },
-      { id: 'chung-paifu', name: 'Chung Paifu' },
-      { id: 'king-lion', name: 'King Lion' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'last-bronx',
-    name: "Last Bronx",
-    developer: "Sega",
-    releaseYear: 1996,
-    platform: "Arcade Sega Saturn Windows",
-rosterCount: 999,
-        characters: [
-      { id: 'yusaku-kudo', name: 'Yusaku Kudo' },
-      { id: 'joe-inagaki', name: 'Joe Inagaki' },
-      { id: 'yoko-kono', name: 'Yoko Kono' },
-      { id: 'hiroshi-tomiie-tommy', name: 'Hiroshi Tomiie (Tommy)' },
-      { id: 'lisa-kusanami', name: 'Lisa Kusanami' },
-      { id: 'saburo-zaimoku', name: 'Saburo Zaimoku' },
-      { id: 'nagi-hojo', name: 'Nagi Hojo' },
-      { id: 'toru-kurosawa', name: 'Toru Kurosawa' },
-      { id: 'redeye', name: 'Redeye' },
-      { id: 'hana', name: 'Hana' },
-      { id: 'ken-kudo', name: 'Ken Kudo' },
-      { id: 'last-bronx', name: 'Last Bronx' },
-      { id: 'yusaku', name: 'Yusaku' },
-      { id: 'zaimoku', name: 'Zaimoku' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'marvel-vs-capcom-clash-of-super-heroes',
-    name: "Marvel vs. Capcom: Clash of Super Heroes",
-    developer: "Capcom",
-    releaseYear: 2000,
-    platform: "Arcade Sega Dreamcast PlayStation 2 Xbox",
-rosterCount: 999,
-        characters: [
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'zangief', name: 'Zangief' },
-      { id: 'morrigan-aensland', name: 'Morrigan Aensland' },
-      { id: 'captain-commando', name: 'Captain Commando' },
-      { id: 'mega-man', name: 'Mega Man' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'spider-man', name: 'Spider-Man' },
-      { id: 'captain-america', name: 'Captain America' },
-      { id: 'hulk', name: 'Hulk' },
-      { id: 'venom', name: 'Venom' },
-      { id: 'war-machine', name: 'War Machine' },
-      { id: 'gambit', name: 'Gambit' },
-      { id: 'wolverine', name: 'Wolverine' },
-      { id: 'onslaught', name: 'Onslaught' },
-      { id: 'roll', name: 'Roll' },
-      { id: 'shadow-lady', name: 'Shadow Lady' },
-      { id: 'lilith', name: 'Lilith' },
-      { id: 'orange-hulk', name: 'Orange Hulk' },
-      { id: 'red-venom', name: 'Red Venom' },
-      { id: 'gold-war-machine', name: 'Gold War Machine' },
-      { id: 'sega-saturn-fighting-games', name: 'Sega Saturn Fighting Games' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'marvel-vs-capcom-infinite',
-    name: "Marvel vs. Capcom: Infinite",
-    developer: "Capcom",
-    releaseYear: 2000,
-    platform: "Arcade Sega Dreamcast PlayStation 2 Xbox",
-rosterCount: 999,
-        characters: [
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'dante', name: 'Dante' },
-      { id: 'chris-redfield', name: 'Chris Redfield' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'mega-man-x', name: 'Mega Man X' },
-      { id: 'zero', name: 'Zero' },
-      { id: 'sir-arthur', name: 'Sir Arthur' },
-      { id: 'nathan-spencer', name: 'Nathan Spencer' },
-      { id: 'mike-haggar', name: 'Mike Haggar' },
-      { id: 'firebrand', name: 'Firebrand' },
-      { id: 'jedah-dohma', name: 'Jedah Dohma' },
-      { id: 'morrigan-aensland', name: 'Morrigan Aensland' },
-      { id: 'nemesis', name: 'Nemesis' },
-      { id: 'captain-america', name: 'Captain America' },
-      { id: 'iron-man', name: 'Iron Man' },
-      { id: 'spider-man', name: 'Spider-Man' },
-      { id: 'hulk', name: 'Hulk' },
-      { id: 'thor', name: 'Thor' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'nova', name: 'Nova' },
-      { id: 'doctor-strange', name: 'Doctor Strange' },
-      { id: 'rocket-raccoon', name: 'Rocket Raccoon' },
-      { id: 'ghost-rider', name: 'Ghost Rider' },
-      { id: 'hawkeye', name: 'Hawkeye' },
-      { id: 'gamora', name: 'Gamora' },
-      { id: 'ultron', name: 'Ultron' },
-      { id: 'thanos', name: 'Thanos' },
-      { id: 'black-panther', name: 'Black Panther' },
-      { id: 'sigma', name: 'Sigma' },
-      { id: 'monster-hunter', name: 'Monster Hunter' },
-      { id: 'winter-soldier', name: 'Winter Soldier' },
-      { id: 'black-widow', name: 'Black Widow' },
-      { id: 'venom', name: 'Venom' },
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'cable', name: 'Cable' },
-      { id: 'captain-commando', name: 'Captain Commando' },
-      { id: 'juggernaut', name: 'Juggernaut' },
-      { id: 'psylocke', name: 'Psylocke' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'matrimelee',
-    name: "Matrimelee (Power Instinct Matrimelee)",
-    developer: "Noise Factory",
-    releaseYear: 2003,
-    platform: "Neo Geo Arcade PlayStation 2",
-rosterCount: 999,
-        characters: [
-      { id: 'keith-wayne', name: 'Keith Wayne' },
-      { id: 'annie-hamilton', name: 'Annie Hamilton' },
-      { id: 'otane-goketsuji', name: 'Otane Goketsuji' },
-      { id: 'oume-goketsuji', name: 'Oume Goketsuji' },
-      { id: 'kanji-kokuin', name: 'Kanji Kokuin' },
-      { id: 'chok', name: 'Chok' },
-      { id: 'saizo-hattori', name: 'Saizo Hattori' },
-      { id: 'white-buffalo', name: 'White Buffalo' },
-      { id: 'buntaro-kudo', name: 'Buntaro Kudo' },
-      { id: 'shintaro-kudo', name: 'Shintaro Kudo' },
-      { id: 'hikaru-jomon', name: 'Hikaru Jomon' },
-      { id: 'reiji-oyama', name: 'Reiji Oyama' },
-      { id: 'poochy', name: 'Poochy' },
-      { id: 'clara-hananokoji', name: 'Clara Hananokoji' },
-      { id: 'kinta-kokuin', name: 'Kinta Kokuin' },
-      { id: 'elias-patrick', name: 'Elias Patrick' },
-      { id: 'princess-sissy', name: 'Princess Sissy' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'mortal-kombat-1',
-    name: "Mortal Kombat 1",
-    developer: "NetherRealm Studios",
-    releaseYear: 2011,
-    platform: "PlayStation 3 Xbox 360 Windows",
-rosterCount: 999,
-        characters: [
-      { id: 'ashrah', name: 'Ashrah' },
-      { id: 'baraka', name: 'Baraka' },
-      { id: 'general-shao', name: 'General Shao' },
-      { id: 'geras', name: 'Geras' },
-      { id: 'havik', name: 'Havik' },
-      { id: 'johnny-cage', name: 'Johnny Cage' },
-      { id: 'kenshi', name: 'Kenshi' },
-      { id: 'kitana', name: 'Kitana' },
-      { id: 'kung-lao', name: 'Kung Lao' },
-      { id: 'li-mei', name: 'Li Mei' },
-      { id: 'liu-kang', name: 'Liu Kang' },
-      { id: 'mileena', name: 'Mileena' },
-      { id: 'nitara', name: 'Nitara' },
-      { id: 'raiden', name: 'Raiden' },
-      { id: 'rain', name: 'Rain' },
-      { id: 'reiko', name: 'Reiko' },
-      { id: 'reptile', name: 'Reptile' },
-      { id: 'scorpion', name: 'Scorpion' },
-      { id: 'shang-tsung', name: 'Shang Tsung' },
-      { id: 'sindel', name: 'Sindel' },
-      { id: 'smoke', name: 'Smoke' },
-      { id: 'sub-zero', name: 'Sub-Zero' },
-      { id: 'tanya', name: 'Tanya' },
-      { id: 'omni-man', name: 'Omni-Man' },
-      { id: 'quan-chi', name: 'Quan Chi' },
-      { id: 'peacemaker', name: 'Peacemaker' },
-      { id: 'ermac', name: 'Ermac' },
-      { id: 'homelander', name: 'Homelander' },
-      { id: 'takeda', name: 'Takeda' },
-      { id: 'cyrax', name: 'Cyrax' },
-      { id: 'sektor', name: 'Sektor' },
-      { id: 'noob-saibot', name: 'Noob Saibot' },
-      { id: 'ghostface', name: 'Ghostface' },
-      { id: 't-1000', name: 'T-1000' },
-      { id: 'conan-the-barbarian', name: 'Conan the Barbarian' },
-      { id: 'art-of-fighting', name: 'Art Of Fighting' },
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'hsien_ko', name: 'Hsien_Ko' },
-      { id: 'jin-saotome', name: 'Jin Saotome' },
-      { id: 'links', name: 'Links' },
-      { id: 'mortal-kombat-1', name: 'Mortal Kombat 1' },
-      { id: 'mortal-kombat-deception', name: 'Mortal Kombat Deception' },
-      { id: 'players', name: 'Players' },
-      { id: 'revision_history', name: 'Revision_History' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'mortal-kombat-ii',
-    name: "Mortal Kombat II",
-    developer: "Midway",
-    releaseYear: 2011,
-    platform: "PlayStation 3 Xbox 360 Windows",
-rosterCount: 999,
-        characters: [
-      { id: 'scorpion', name: 'Scorpion' },
-      { id: 'sub-zero', name: 'Sub-Zero' },
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'jin-saotome', name: 'Jin Saotome' },
-      { id: 'links', name: 'Links' },
-      { id: 'players', name: 'Players' },
-      { id: 'revision_history', name: 'Revision_History' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'art-of-fighting', name: 'Art Of Fighting' },
-      { id: 'mortal-kombat-1', name: 'Mortal Kombat 1' },
-      { id: 'mortal-kombat-deception', name: 'Mortal Kombat Deception' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'mortal-kombat-(2011)',
-    name: "Mortal Kombat (2011)",
-    developer: "NetherRealm Studios",
-    releaseYear: 2011,
-    platform: "PlayStation 3 Xbox 360 Windows",
-rosterCount: 999,
-        characters: [
-      { id: 'scorpion', name: 'Scorpion' },
-      { id: 'liu-kang', name: 'Liu Kang' },
-      { id: 'kung-lao', name: 'Kung Lao' },
-      { id: 'sub-zero', name: 'Sub-Zero' },
-      { id: 'sindel', name: 'Sindel' },
-      { id: 'ermac', name: 'Ermac' },
-      { id: 'reptile', name: 'Reptile' },
-      { id: 'kitana', name: 'Kitana' },
-      { id: 'johnny-cage', name: 'Johnny Cage' },
-      { id: 'jade', name: 'Jade' },
-      { id: 'mileena', name: 'Mileena' },
-      { id: 'nightwolf', name: 'Nightwolf' },
-      { id: 'cyrax', name: 'Cyrax' },
-      { id: 'noob-saibot', name: 'Noob Saibot' },
-      { id: 'smoke', name: 'Smoke' },
-      { id: 'sektor', name: 'Sektor' },
-      { id: 'sonya-blade', name: 'Sonya Blade' },
-      { id: 'jax', name: 'Jax' },
-      { id: 'kano', name: 'Kano' },
-      { id: 'stryker', name: 'Stryker' },
-      { id: 'shang-tsung', name: 'Shang Tsung' },
-      { id: 'baraka', name: 'Baraka' },
-      { id: 'kabal', name: 'Kabal' },
-      { id: 'raiden', name: 'Raiden' },
-      { id: 'goro', name: 'Goro' },
-      { id: 'kintaro', name: 'Kintaro' },
-      { id: 'shao-kahn', name: 'Shao Kahn' },
-      { id: 'skarlet', name: 'Skarlet' },
-      { id: 'kenshi', name: 'Kenshi' },
-      { id: 'rain', name: 'Rain' },
-      { id: 'freddy-krueger', name: 'Freddy Krueger' },
-      { id: 'kratos', name: 'Kratos' },
-      { id: 'art-of-fighting', name: 'Art Of Fighting' },
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'hsien_ko', name: 'Hsien_Ko' },
-      { id: 'jin-saotome', name: 'Jin Saotome' },
-      { id: 'links', name: 'Links' },
-      { id: 'mortal-kombat-1', name: 'Mortal Kombat 1' },
-      { id: 'mortal-kombat-deception', name: 'Mortal Kombat Deception' },
-      { id: 'players', name: 'Players' },
-      { id: 'revision_history', name: 'Revision_History' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'mortal-kombat-deception',
-    name: "Mortal Kombat: Deception",
-    developer: "NetherRealm Studios",
-    releaseYear: 2011,
-    platform: "PlayStation 3 Xbox 360 Windows",
-rosterCount: 999,
-        characters: [
-      { id: 'ashrah', name: 'Ashrah' },
-      { id: 'baraka', name: 'Baraka' },
-      { id: 'ermac', name: 'Ermac' },
-      { id: 'havik', name: 'Havik' },
-      { id: 'hotaru', name: 'Hotaru' },
-      { id: 'jade', name: 'Jade' },
-      { id: 'kabal', name: 'Kabal' },
-      { id: 'kira', name: 'Kira' },
-      { id: 'kenshi', name: 'Kenshi' },
-      { id: 'li-mei', name: 'Li Mei' },
-      { id: 'liu-kang', name: 'Liu Kang' },
-      { id: 'mileena', name: 'Mileena' },
-      { id: 'nightwolf', name: 'Nightwolf' },
-      { id: 'noob-smoke', name: 'Noob-Smoke' },
-      { id: 'raiden', name: 'Raiden' },
-      { id: 'scorpion', name: 'Scorpion' },
-      { id: 'shujinko', name: 'Shujinko' },
-      { id: 'sindel', name: 'Sindel' },
-      { id: 'sub-zero', name: 'Sub-Zero' },
-      { id: 'tanya', name: 'Tanya' },
-      { id: 'goro', name: 'Goro' },
-      { id: 'shao-kahn', name: 'Shao Kahn' },
-      { id: 'frost', name: 'Frost' },
-      { id: 'jax', name: 'Jax' },
-      { id: 'kitana', name: 'Kitana' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'links', name: 'Links' },
-      { id: 'mortal-kombat-1', name: 'Mortal Kombat 1' },
-      { id: 'mortal-kombat-deception', name: 'Mortal Kombat Deception' },
-      { id: 'players', name: 'Players' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'mortal-kombat-x',
-    name: "Mortal Kombat X",
-    developer: "NetherRealm Studios",
-    releaseYear: 2011,
-    platform: "PlayStation 3 Xbox 360 Windows",
-rosterCount: 999,
-        characters: [
-      { id: 'cassie-cage', name: 'Cassie Cage' },
-      { id: 'ermac', name: 'Ermac' },
-      { id: 'erron-black', name: 'Erron Black' },
-      { id: 'ferra-torr', name: 'Ferra/Torr' },
-      { id: 'goro', name: 'Goro' },
-      { id: 'jacqui-briggs', name: 'Jacqui Briggs' },
-      { id: 'jason-voorhees', name: 'Jason Voorhees' },
-      { id: 'jax', name: 'Jax' },
-      { id: 'johnny-cage', name: 'Johnny Cage' },
-      { id: 'kano', name: 'Kano' },
-      { id: 'kenshi', name: 'Kenshi' },
-      { id: 'kitana', name: 'Kitana' },
-      { id: 'kotal-kahn', name: 'Kotal Kahn' },
-      { id: 'kung-jin', name: 'Kung Jin' },
-      { id: 'kung-lao', name: 'Kung Lao' },
-      { id: 'liu-kang', name: 'Liu Kang' },
-      { id: 'mileena', name: 'Mileena' },
-      { id: 'predator', name: 'Predator' },
-      { id: 'quan-chi', name: 'Quan Chi' },
-      { id: 'raiden', name: 'Raiden' },
-      { id: 'reptile', name: 'Reptile' },
-      { id: 'scorpion', name: 'Scorpion' },
-      { id: 'shinnok', name: 'Shinnok' },
-      { id: 'sonya-blade', name: 'Sonya Blade' },
-      { id: 'sub-zero', name: 'Sub-Zero' },
-      { id: 'takeda', name: 'Takeda' },
-      { id: 'tanya', name: 'Tanya' },
-      { id: 'tremor', name: 'Tremor' },
-      { id: 'alien', name: 'Alien' },
-      { id: 'leatherface', name: 'Leatherface' },
-      { id: 'triborg', name: 'Triborg' },
-      { id: 'art-of-fighting', name: 'Art Of Fighting' },
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'hsien_ko', name: 'Hsien_Ko' },
-      { id: 'jin-saotome', name: 'Jin Saotome' },
-      { id: 'links', name: 'Links' },
-      { id: 'mortal-kombat-1', name: 'Mortal Kombat 1' },
-      { id: 'mortal-kombat-deception', name: 'Mortal Kombat Deception' },
-      { id: 'players', name: 'Players' },
-      { id: 'revision_history', name: 'Revision_History' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'marvel-super-heroes',
-    name: "Marvel Super Heroes",
-    developer: "Capcom",
-    releaseYear: 1995,
-rosterCount: 999,
-        characters: [
-      { id: 'blackheart', name: 'Blackheart' },
-      { id: 'captain-america', name: 'Captain America' },
-      { id: 'dr-doom-(boss)', name: 'Dr. Doom (Boss)' },
-      { id: 'hulk', name: 'Hulk' },
-      { id: 'iron-man', name: 'Iron Man' },
-      { id: 'juggernaut', name: 'Juggernaut' },
-      { id: 'magneto', name: 'Magneto' },
-      { id: 'psylocke', name: 'Psylocke' },
-      { id: 'shuma-gorath', name: 'Shuma-Gorath' },
-      { id: 'spider-man', name: 'Spider-Man' },
-      { id: 'thanos-(boss)', name: 'Thanos (Boss)' },
-      { id: 'wolverine', name: 'Wolverine' },
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'bulleta', name: 'Bulleta' },
-      { id: 'captain-commando', name: 'Captain Commando' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'cotw_bluemary', name: 'Cotw_Bluemary' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'cyclops', name: 'Cyclops' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'jin-saotome', name: 'Jin Saotome' },
-      { id: 'john_talbain', name: 'John_Talbain' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'mega-man', name: 'Mega Man' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'omega-red', name: 'Omega Red' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'sabretooth', name: 'Sabretooth' },
-      { id: 'sega-saturn-fighting-games', name: 'Sega Saturn Fighting Games' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'shin-akuma', name: 'Shin Akuma' },
-      { id: 'shin_akuma', name: 'Shin_Akuma' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-      { id: 'zangief', name: 'Zangief' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'mshvsf',
-    name: "Marvel Super Heroes vs. Street Fighter",
-    developer: "Capcom",
-    releaseYear: 1997,
-rosterCount: 999,
-        characters: [
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'blackheart', name: 'Blackheart' },
-      { id: 'captain-america', name: 'Captain America' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'cyber-akuma-(boss)', name: 'Cyber-Akuma (Boss)' },
-      { id: 'cyclops', name: 'Cyclops' },
-      { id: 'dan-hibiki', name: 'Dan Hibiki' },
-      { id: 'dhalsim', name: 'Dhalsim' },
-      { id: 'hulk', name: 'Hulk' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'omega-red', name: 'Omega Red' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'sakura', name: 'Sakura' },
-      { id: 'shuma-gorath', name: 'Shuma-Gorath' },
-      { id: 'spider-man', name: 'Spider-Man' },
-      { id: 'wolverine', name: 'Wolverine' },
-      { id: 'zangief', name: 'Zangief' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'juggernaut', name: 'Juggernaut' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'psylocke', name: 'Psylocke' },
-      { id: 'sabretooth', name: 'Sabretooth' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'shin-akuma', name: 'Shin Akuma' },
-      { id: 'shin_akuma', name: 'Shin_Akuma' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'marvel-vs-capcom-2',
-    name: "Marvel vs. Capcom 2",
-    developer: "Capcom",
-    releaseYear: 2000,
-    platform: "Arcade Sega Dreamcast PlayStation 2 Xbox",
-rosterCount: 999,
-        characters: [
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'cable', name: 'Cable' },
-      { id: 'captain-america', name: 'Captain America' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'cyclops', name: 'Cyclops' },
-      { id: 'doctor-doom', name: 'Doctor Doom' },
-      { id: 'hayato', name: 'Hayato' },
-      { id: 'iron-man', name: 'Iron Man' },
-      { id: 'jill-valentine', name: 'Jill Valentine' },
-      { id: 'magneto', name: 'Magneto' },
-      { id: 'mega-man', name: 'Mega Man' },
-      { id: 'morrigan-aensland', name: 'Morrigan Aensland' },
-      { id: 'psylocke', name: 'Psylocke' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'sentinel', name: 'Sentinel' },
-      { id: 'spider-man', name: 'Spider-Man' },
-      { id: 'storm', name: 'Storm' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'venom', name: 'Venom' },
-      { id: 'wolverine', name: 'Wolverine' },
-      { id: 'anakaris', name: 'Anakaris' },
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'bulleta', name: 'Bulleta' },
-      { id: 'captain-commando', name: 'Captain Commando' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'hyper-street-fighter-ii', name: 'Hypersf2' },
-      { id: 'jin-saotome', name: 'Jin Saotome' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'marvel-super-heroes', name: 'Msh' },
-      { id: 'omega-red', name: 'Omega Red' },
-      { id: 'plasma-sword-nightmare-of-bilstein', name: 'Plasma Sword Nightmare Of Bilstein' },
-      { id: 'players', name: 'Players' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'street-fighter-iii-2nd-impact', name: 'Sf32I' },
-      { id: 'street-fighter-iii-3rd-strike', name: 'Sf33S' },
-      { id: 'shuma-gorath', name: 'Shuma Gorath' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'the_plasma_moves', name: 'The_Plasma_Moves' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-      { id: 'batsu', name: 'Batsu' },
-      { id: 'blackheart', name: 'Blackheart' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'boman', name: 'Boman' },
-      { id: 'burning_batsu', name: 'Burning_Batsu' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
-      { id: 'demitri_maximoff', name: 'Demitri_Maximoff' },
-      { id: 'fight_ingrid', name: 'Fight_Ingrid' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
-      { id: 'hsien_ko', name: 'Hsien_Ko' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'ingrid', name: 'Ingrid' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'juggernaut', name: 'Juggernaut' },
-      { id: 'kurow', name: 'Kurow' },
-      { id: 'links', name: 'Links' },
-      { id: 'morrigan', name: 'Morrigan' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'powered_akira', name: 'Powered_Akira' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'pyron', name: 'Pyron' },
-      { id: 'reptos', name: 'Reptos' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'sabretooth', name: 'Sabretooth' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'sega-saturn-fighting-games', name: 'Sega Saturn Fighting Games' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'shin-akuma', name: 'Shin Akuma' },
-      { id: 'shin_akuma', name: 'Shin_Akuma' },
-      { id: 'shoma', name: 'Shoma' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'vatsu', name: 'Vatsu' },
-      { id: 'wild_daigo', name: 'Wild_Daigo' },
-      { id: 'zangief', name: 'Zangief' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'cyberbots-full-metal-madness',
-    name: "Cyberbots: Full Metal Madness",
-    developer: "Capcom",
-    releaseYear: 1995,
-rosterCount: 999,
-        characters: [
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'reptos', name: 'Reptos' },
-      { id: 'guldin', name: 'Guldin' },
-      { id: 'fordy', name: 'Fordy' },
-      { id: 'vise', name: 'Vise' },
-      { id: 'cyclone', name: 'Cyclone' },
-      { id: 'tarantula', name: 'Tarantula' },
-      { id: 'killer-bee', name: 'Killer Bee' },
-      { id: 'jackal', name: 'Jackal' },
-      { id: 'lightning', name: 'Lightning' },
-      { id: 'gaits', name: 'Gaits' },
-      { id: 'helion', name: 'Helion' },
-      { id: 'z-akuma', name: 'Z-Akuma' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'hyper-street-fighter-ii',
-    name: "Hyper Street Fighter II",
-    developer: "Capcom",
-    releaseYear: 1987,
-rosterCount: 999,
-        characters: [
-      { id: 'chun-li', name: 'Chun Li' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'vega', name: 'Vega' },
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'captain-america', name: 'Captain America' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'deejay', name: 'Deejay' },
-      { id: 'dramatic_battle', name: 'Dramatic_Battle' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'jin-saotome', name: 'Jin Saotome' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'play_as_shin_gouki', name: 'Play_As_Shin_Gouki' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'marvel-vs-capcom-2',
-    name: "Marvel vs. Capcom 2",
-    developer: "Capcom",
-    releaseYear: 2000,
-    platform: "Arcade Sega Dreamcast PlayStation 2 Xbox",
-rosterCount: 999,
-        characters: [
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'cable', name: 'Cable' },
-      { id: 'captain-america', name: 'Captain America' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'cyclops', name: 'Cyclops' },
-      { id: 'doctor-doom', name: 'Doctor Doom' },
-      { id: 'hayato', name: 'Hayato' },
-      { id: 'iron-man', name: 'Iron Man' },
-      { id: 'jill-valentine', name: 'Jill Valentine' },
-      { id: 'magneto', name: 'Magneto' },
-      { id: 'mega-man', name: 'Mega Man' },
-      { id: 'morrigan-aensland', name: 'Morrigan Aensland' },
-      { id: 'psylocke', name: 'Psylocke' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'sentinel', name: 'Sentinel' },
-      { id: 'spider-man', name: 'Spider-Man' },
-      { id: 'storm', name: 'Storm' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'venom', name: 'Venom' },
-      { id: 'wolverine', name: 'Wolverine' },
-      { id: 'anakaris', name: 'Anakaris' },
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'bulleta', name: 'Bulleta' },
-      { id: 'captain-commando', name: 'Captain Commando' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'hyper-street-fighter-ii', name: 'Hypersf2' },
-      { id: 'jin-saotome', name: 'Jin Saotome' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'marvel-super-heroes', name: 'Msh' },
-      { id: 'omega-red', name: 'Omega Red' },
-      { id: 'plasma-sword-nightmare-of-bilstein', name: 'Plasma Sword Nightmare Of Bilstein' },
-      { id: 'players', name: 'Players' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'street-fighter-iii-2nd-impact', name: 'Sf32I' },
-      { id: 'street-fighter-iii-3rd-strike', name: 'Sf33S' },
-      { id: 'shuma-gorath', name: 'Shuma Gorath' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'the_plasma_moves', name: 'The_Plasma_Moves' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-      { id: 'batsu', name: 'Batsu' },
-      { id: 'blackheart', name: 'Blackheart' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'boman', name: 'Boman' },
-      { id: 'burning_batsu', name: 'Burning_Batsu' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
-      { id: 'demitri_maximoff', name: 'Demitri_Maximoff' },
-      { id: 'fight_ingrid', name: 'Fight_Ingrid' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
-      { id: 'hsien_ko', name: 'Hsien_Ko' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'ingrid', name: 'Ingrid' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'juggernaut', name: 'Juggernaut' },
-      { id: 'kurow', name: 'Kurow' },
-      { id: 'links', name: 'Links' },
-      { id: 'morrigan', name: 'Morrigan' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'powered_akira', name: 'Powered_Akira' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'pyron', name: 'Pyron' },
-      { id: 'reptos', name: 'Reptos' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'sabretooth', name: 'Sabretooth' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'sega-saturn-fighting-games', name: 'Sega Saturn Fighting Games' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'shin-akuma', name: 'Shin Akuma' },
-      { id: 'shin_akuma', name: 'Shin_Akuma' },
-      { id: 'shoma', name: 'Shoma' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'vatsu', name: 'Vatsu' },
-      { id: 'wild_daigo', name: 'Wild_Daigo' },
-      { id: 'zangief', name: 'Zangief' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'marvel-super-heroes',
-    name: "Marvel Super Heroes",
-    developer: "Capcom",
-    releaseYear: 1995,
-rosterCount: 999,
-        characters: [
-      { id: 'blackheart', name: 'Blackheart' },
-      { id: 'captain-america', name: 'Captain America' },
-      { id: 'dr-doom-(boss)', name: 'Dr. Doom (Boss)' },
-      { id: 'hulk', name: 'Hulk' },
-      { id: 'iron-man', name: 'Iron Man' },
-      { id: 'juggernaut', name: 'Juggernaut' },
-      { id: 'magneto', name: 'Magneto' },
-      { id: 'psylocke', name: 'Psylocke' },
-      { id: 'shuma-gorath', name: 'Shuma-Gorath' },
-      { id: 'spider-man', name: 'Spider-Man' },
-      { id: 'thanos-(boss)', name: 'Thanos (Boss)' },
-      { id: 'wolverine', name: 'Wolverine' },
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'bulleta', name: 'Bulleta' },
-      { id: 'captain-commando', name: 'Captain Commando' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'cotw_bluemary', name: 'Cotw_Bluemary' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'cyclops', name: 'Cyclops' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'jin-saotome', name: 'Jin Saotome' },
-      { id: 'john_talbain', name: 'John_Talbain' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'mega-man', name: 'Mega Man' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'omega-red', name: 'Omega Red' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'sabretooth', name: 'Sabretooth' },
-      { id: 'sega-saturn-fighting-games', name: 'Sega Saturn Fighting Games' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'shin-akuma', name: 'Shin Akuma' },
-      { id: 'shin_akuma', name: 'Shin_Akuma' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-      { id: 'zangief', name: 'Zangief' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'plasma-sword-nightmare-of-bilstein',
-    name: "Plasma Sword: Nightmare of Bilstein",
-    developer: "Capcom",
-    releaseYear: 1998,
-    platform: "Arcade Sega Dreamcast",
-rosterCount: 999,
-        characters: [
-      { id: 'hayato', name: 'Hayato' },
-      { id: 'june', name: 'June' },
-      { id: 'saturn', name: 'Saturn' },
-      { id: 'gamof', name: 'Gamof' },
-      { id: 'gerelt', name: 'Gerelt' },
-      { id: 'vector', name: 'Vector' },
-      { id: 'bilstein', name: 'Bilstein' },
-      { id: 'blood', name: 'Blood' },
-      { id: 'zelkin', name: 'Zelkin' },
-      { id: 'gore', name: 'Gore' },
-      { id: 'luca', name: 'Luca' },
-      { id: 'rain', name: 'Rain' },
-      { id: 'byakko', name: 'Byakko' },
-      { id: 'rai-on', name: 'Rai-On' },
-      { id: 'kaede', name: 'Kaede' },
-      { id: 'black-hayato', name: 'Black Hayato' },
-      { id: 'ele', name: 'Ele' },
-      { id: 'prince', name: 'Prince' },
-      { id: 'gantetsu', name: 'Gantetsu' },
-      { id: 'claire', name: 'Claire' },
-      { id: 'omega', name: 'Omega' },
-      { id: 'ghost-bilstein', name: 'Ghost Bilstein' },
-      { id: 'shaker', name: 'Shaker' },
-      { id: 'eagle', name: 'Eagle' },
-      { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
-      { id: 'plasma-sword-nightmare-of-bilstein', name: 'Plasma Sword Nightmare Of Bilstein' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'pocketfighter',
-    name: "Pocket Fighter",
-    developer: "SNK",
-    releaseYear: 1997,
-    platform: "Arcade PlayStation Sega Saturn",
-rosterCount: 999,
-        characters: [
-      { id: 'akuma(gouki)', name: 'Akuma(Gouki)' },
-      { id: 'akuma_gouki', name: 'Akuma(Gouki)' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'chun_li', name: 'Chun-Li' },
-      { id: 'dan', name: 'DAN' },
-      { id: 'felicia', name: 'Felicia' },
-      { id: 'gameplay', name: 'GamePlay' },
-      { id: 'hsien-ko(lei-lei)', name: 'Hsien-Ko(lei Lei)' },
-      { id: 'hsien_ko_lei_lei', name: 'Hsien-Ko(lei Lei)' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'morrigan', name: 'Morrigan' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'sakura-kasugano', name: 'Sakura Kasugano' },
-      { id: 'sakura', name: 'Sakura' },
-      { id: 'tessa', name: 'Tessa' },
-      { id: 'zangief', name: 'Zangief' },
-      { id: 'akira-yuki', name: 'Akira Yuki' },
-      { id: 'breakers-revenge', name: 'Breakers Revenge' },
-      { id: 'bulleta', name: 'Bulleta' },
-      { id: 'hsien_ko', name: 'Hsien_Ko' },
-      { id: 'jamm', name: 'Jamm' },
-      { id: 'mega-man', name: 'Mega Man' },
-      { id: 'moriya-minakata', name: 'Moriya Minakata' },
-      { id: 'play_as_shin_gouki', name: 'Play_As_Shin_Gouki' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'sega-saturn-fighting-games', name: 'Sega Saturn Fighting Games' },
-      { id: 'select_cpu_opponent_and_cpu_costume_color', name: 'Select_Cpu_Opponent_And_Cpu_Costume_Color' },
-      { id: 'tiffany_rose', name: 'Tiffany_Rose' },
-      { id: 'unlock_pyron', name: 'Unlock_Pyron' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'street-fighter-iii-2nd-impact',
-    name: "Street Fighter III: 2nd Impact - Giant Attack",
-    developer: "Capcom",
-    releaseYear: 2023,
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
-rosterCount: 999,
-        characters: [
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'sean', name: 'Sean' },
-      { id: 'yun', name: 'Yun' },
-      { id: 'yang', name: 'Yang' },
-      { id: 'necro', name: 'Necro' },
-      { id: 'oro', name: 'Oro' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'elena', name: 'Elena' },
-      { id: 'dudley', name: 'Dudley' },
-      { id: 'alex', name: 'Alex' },
-      { id: 'hugo', name: 'Hugo' },
-      { id: 'urien', name: 'Urien' },
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'play_as_shin_gouki', name: 'Play_As_Shin_Gouki' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'street-fighter-ex3',
-    name: "Street Fighter EX3",
-    developer: "Capcom",
-    releaseYear: 2023,
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
-rosterCount: 999,
-        characters: [
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'zangief', name: 'Zangief' },
-      { id: 'dhalsim', name: 'Dhalsim' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'sakura', name: 'Sakura' },
-      { id: 'vega', name: 'Vega' },
-      { id: 'doctrine-dark', name: 'Doctrine Dark' },
-      { id: 'hokuto', name: 'Hokuto' },
-      { id: 'cracker-jack', name: 'Cracker Jack' },
-      { id: 'skullomania', name: 'Skullomania' },
-      { id: 'sharon', name: 'Sharon' },
-      { id: 'nanase', name: 'Nanase' },
-      { id: 'ace', name: 'Ace' },
-      { id: 'm-bison', name: 'M. Bison' },
-      { id: 'sagat', name: 'Sagat' },
-      { id: 'garuda', name: 'Garuda' },
-      { id: 'shadow-geist', name: 'Shadow Geist' },
-      { id: 'kairi', name: 'Kairi' },
-      { id: 'vulcano-rosso', name: 'Vulcano Rosso' },
-      { id: 'area', name: 'Area' },
-      { id: 'evil-ryu', name: 'Evil Ryu' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'night-warriors-darkstalkers-revenge',
-    name: "Night Warriors: Darkstalkers",
-    developer: "Capcom",
-    releaseYear: 1995,
-rosterCount: 999,
-        characters: [
-      { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
-      { id: 'donovan-baine', name: 'Donovan Baine' },
-      { id: 'hsien-ko-(lei-lei)', name: 'Hsien-Ko (Lei-Lei)' },
-      { id: 'morrigan-aensland', name: 'Morrigan Aensland' },
-      { id: 'aulbath', name: 'Aulbath' },
-      { id: 'donovan_baine', name: 'Donovan_Baine' },
-      { id: 'jedah-dohma', name: 'Jedah Dohma' },
-      { id: 'jon-talbain', name: 'Jon Talbain' },
-      { id: 'jon_talbain', name: 'Jon_Talbain' },
-      { id: 'morrigan_arnsland', name: 'Morrigan_Arnsland' },
-      { id: 'rikuo', name: 'Rikuo' },
-      { id: 'victor_von_geldenheim', name: 'Victor_Von_Geldenheim' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'hsien_ko', name: 'Hsien_Ko' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'victor-von-gerdenheim', name: 'Victor Von Gerdenheim' },
-      { id: 'victor_von_gerdenheim', name: 'Victor_Von_Gerdenheim' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'ninja-masters-haoh-ninpo-cho',
-    name: "Ninja Master",
-    developer: "SNK",
-    releaseYear: 1996,
-    platform: "Neo Geo Arcade PlayStation 1",
-rosterCount: 999,
-        characters: [
-      { id: 'sasuke', name: 'Sasuke' },
-      { id: 'alvan', name: 'Alvan' },
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'armor-king', name: 'Armor King' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'cotw', name: 'Cotw' },
-      { id: 'cotw_andybogard', name: 'Cotw_Andybogard' },
-      { id: 'cotw_billykane', name: 'Cotw_Billykane' },
-      { id: 'cotw_gato', name: 'Cotw_Gato' },
-      { id: 'breakers-revenge', name: 'Breakers Revenge' },
-      { id: 'cotw_hokutomaru', name: 'Cotw_Hokutomaru' },
-      { id: 'cotw_joehigashi', name: 'Cotw_Joehigashi' },
-      { id: 'cotw_kimdonghwan', name: 'Cotw_Kimdonghwan' },
-      { id: 'cotw_kimjaehoon', name: 'Cotw_Kimjaehoon' },
-      { id: 'cotw_nightmaregeese', name: 'Cotw_Nightmaregeese' },
-      { id: 'cotw_rockhoward', name: 'Cotw_Rockhoward' },
-      { id: 'cotw_terrybogard', name: 'Cotw_Terrybogard' },
-      { id: 'cotw_wolfgangkrauser', name: 'Cotw_Wolfgangkrauser' },
-      { id: 'dan-hibiki', name: 'Dan Hibiki' },
-      { id: 'demon_hyo', name: 'Demon_Hyo' },
-      { id: 'eagle', name: 'Eagle' },
-      { id: 'emi', name: 'Emi' },
-      { id: 'es_and_ex_attacks', name: 'Es_And_Ex_Attacks' },
-      { id: 'fatal-fury-king-of-fighters', name: 'Fatal Fury King Of Fighters' },
-      { id: 'fatal-fury-special', name: 'Fatal Fury Special' },
-      { id: 'final_battle', name: 'Final_Battle' },
-      { id: 'fo-fai', name: 'Fo Fai' },
-      { id: 'frog_trick', name: 'Frog_Trick' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'garou-mark-of-the-wolves', name: 'Garou Mark Of The Wolves' },
-      { id: 'geese', name: 'Geese' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'hibiki', name: 'Hibiki' },
-      { id: 'hinata', name: 'Hinata' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'jago', name: 'Jago' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'k9999', name: 'K9999' },
-      { id: 'kaede', name: 'Kaede' },
-      { id: 'king', name: 'King' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'lily', name: 'Lily' },
-      { id: 'naru', name: 'Naru' },
-      { id: 'ninja-masters-haoh-ninpo-cho', name: 'Ninja Masters Haoh Ninpo Cho' },
-      { id: 'oro', name: 'Oro' },
-      { id: 'orochi_iori', name: 'Orochi_Iori' },
-      { id: 'panda', name: 'Panda' },
-      { id: 'plasmasword', name: 'Plasmasword' },
-      { id: 'rain', name: 'Rain' },
-      { id: 'real-bout-fatal-fury', name: 'Real Bout Fatal Fury' },
-      { id: 'real-bout-fatal-fury-special', name: 'Real Bout Fatal Fury Special' },
-      { id: 'red-eye', name: 'Red Eye' },
-      { id: 'rick-strowd', name: 'Rick Strowd' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'rock', name: 'Rock' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'rugal', name: 'Rugal' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'samurai-shodown-iii-blades-of-blood', name: 'Samurai Shodown Iii Blades Of Blood' },
-      { id: 'scorpion', name: 'Scorpion' },
-      { id: 'sodom', name: 'Sodom' },
-      { id: 'spider-man', name: 'Spider Man' },
-      { id: 'stages', name: 'Stages' },
-      { id: 'swordsman', name: 'Swordsman' },
-      { id: 'ten-count', name: 'Ten Count' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'the-king-of-fighters-2000', name: 'The King Of Fighters 2000' },
-      { id: 'the-king-of-fighters-2001', name: 'The King Of Fighters 2001' },
-      { id: 'the-king-of-fighters-94', name: 'The King Of Fighters 94' },
-      { id: 'the-king-of-fighters-95', name: 'The King Of Fighters 95' },
-      { id: 'the-king-of-fighters-96', name: 'The King Of Fighters 96' },
-      { id: 'the-king-of-fighters-97', name: 'The King Of Fighters 97' },
-      { id: 'the-king-of-fighters-98', name: 'The King Of Fighters 98' },
-      { id: 'the-king-of-fighters-98-ultimate-match', name: 'The King Of Fighters 98 Ultimate Match' },
-      { id: 'the-king-of-fighters-99', name: 'The King Of Fighters 99' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'vermilion', name: 'Vermilion' },
-      { id: 'war-machine', name: 'War Machine' },
-      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' },
-      { id: 'world_tour', name: 'World_Tour' },
-      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'persona-4-arena-ultimax',
-    name: "Persona 4 Arena Ultimax",
-    developer: "Arc System Works",
-    releaseYear: 2013,
-    platform: "Arcade PlayStation 3 Xbox 360",
-rosterCount: 999,
-        characters: [
-      { id: 'yu-narukami', name: 'Yu Narukami' },
-      { id: 'yosuke-hanamura', name: 'Yosuke Hanamura' },
-      { id: 'chie-satonaka', name: 'Chie Satonaka' },
-      { id: 'yukiko-amagi', name: 'Yukiko Amagi' },
-      { id: 'kanji-tatsumi', name: 'Kanji Tatsumi' },
-      { id: 'teddie', name: 'Teddie' },
-      { id: 'naoto-shirogane', name: 'Naoto Shirogane' },
-      { id: 'mitsuru-kirijo', name: 'Mitsuru Kirijo' },
-      { id: 'akihiko-sanada', name: 'Akihiko Sanada' },
-      { id: 'aigis', name: 'Aigis' },
-      { id: 'elizabeth', name: 'Elizabeth' },
-      { id: 'labrys', name: 'Labrys' },
-      { id: 'shadow-labrys', name: 'Shadow Labrys' },
-      { id: 'yukari-takeba', name: 'Yukari Takeba' },
-      { id: 'junpei-iori', name: 'Junpei Iori' },
-      { id: 'sho-minazuki', name: 'Sho Minazuki' },
-      { id: 'rise-kujikawa', name: 'Rise Kujikawa' },
-      { id: 'ken-amada-koromaru', name: 'Ken Amada & Koromaru' },
-      { id: 'tohru-adachi', name: 'Tohru Adachi' },
-      { id: 'marie', name: 'Marie' },
-      { id: 'margaret', name: 'Margaret' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'plasma-sword-nightmare-of-bilstein',
-    name: "Plasma Sword: Nightmare of Bilstein",
-    developer: "Capcom",
-    releaseYear: 1998,
-    platform: "Arcade Sega Dreamcast",
-rosterCount: 999,
-        characters: [
-      { id: 'hayato', name: 'Hayato' },
-      { id: 'june', name: 'June' },
-      { id: 'saturn', name: 'Saturn' },
-      { id: 'gamof', name: 'Gamof' },
-      { id: 'gerelt', name: 'Gerelt' },
-      { id: 'vector', name: 'Vector' },
-      { id: 'bilstein', name: 'Bilstein' },
-      { id: 'blood', name: 'Blood' },
-      { id: 'zelkin', name: 'Zelkin' },
-      { id: 'gore', name: 'Gore' },
-      { id: 'luca', name: 'Luca' },
-      { id: 'rain', name: 'Rain' },
-      { id: 'byakko', name: 'Byakko' },
-      { id: 'rai-on', name: 'Rai-On' },
-      { id: 'kaede', name: 'Kaede' },
-      { id: 'black-hayato', name: 'Black Hayato' },
-      { id: 'ele', name: 'Ele' },
-      { id: 'prince', name: 'Prince' },
-      { id: 'gantetsu', name: 'Gantetsu' },
-      { id: 'claire', name: 'Claire' },
-      { id: 'omega', name: 'Omega' },
-      { id: 'ghost-bilstein', name: 'Ghost Bilstein' },
-      { id: 'shaker', name: 'Shaker' },
-      { id: 'eagle', name: 'Eagle' },
-      { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
-      { id: 'plasma-sword-nightmare-of-bilstein', name: 'Plasma Sword Nightmare Of Bilstein' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'pocketfighter',
-    name: "Pocket Fighter",
-    developer: "SNK",
-    releaseYear: 1997,
-    platform: "Arcade PlayStation Sega Saturn",
-rosterCount: 999,
-        characters: [
-      { id: 'akuma(gouki)', name: 'Akuma(Gouki)' },
-      { id: 'akuma_gouki', name: 'Akuma(Gouki)' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'chun_li', name: 'Chun-Li' },
-      { id: 'dan', name: 'DAN' },
-      { id: 'felicia', name: 'Felicia' },
-      { id: 'gameplay', name: 'GamePlay' },
-      { id: 'hsien-ko(lei-lei)', name: 'Hsien-Ko(lei Lei)' },
-      { id: 'hsien_ko_lei_lei', name: 'Hsien-Ko(lei Lei)' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'morrigan', name: 'Morrigan' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'sakura-kasugano', name: 'Sakura Kasugano' },
-      { id: 'sakura', name: 'Sakura' },
-      { id: 'tessa', name: 'Tessa' },
-      { id: 'zangief', name: 'Zangief' },
-      { id: 'akira-yuki', name: 'Akira Yuki' },
-      { id: 'breakers-revenge', name: 'Breakers Revenge' },
-      { id: 'bulleta', name: 'Bulleta' },
-      { id: 'hsien_ko', name: 'Hsien_Ko' },
-      { id: 'jamm', name: 'Jamm' },
-      { id: 'mega-man', name: 'Mega Man' },
-      { id: 'moriya-minakata', name: 'Moriya Minakata' },
-      { id: 'play_as_shin_gouki', name: 'Play_As_Shin_Gouki' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'sega-saturn-fighting-games', name: 'Sega Saturn Fighting Games' },
-      { id: 'select_cpu_opponent_and_cpu_costume_color', name: 'Select_Cpu_Opponent_And_Cpu_Costume_Color' },
-      { id: 'tiffany_rose', name: 'Tiffany_Rose' },
-      { id: 'unlock_pyron', name: 'Unlock_Pyron' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'projectjustice',
-    name: "Project Justice",
-    developer: "SNK",
-    releaseYear: 2000,
-    platform: "Arcade Sega Dreamcast",
-rosterCount: 999,
-        characters: [
-      { id: 'akira', name: 'AKIRA' },
-      { id: 'alec', name: 'ALEC' },
-      { id: 'anna', name: 'ANNA' },
-      { id: 'barbara', name: 'BARBARA' },
-      { id: 'batsu-ichimonji', name: 'Batsu Ichimonji' },
-      { id: 'batsu', name: 'BATSU' },
-      { id: 'boman', name: 'BOMAN' },
-      { id: 'burning-batsu', name: 'BURNING BATSU' },
-      { id: 'burning_batsu', name: 'BURNING BATSU' },
-      { id: 'chair-person', name: 'CHAIR PERSON' },
-      { id: 'chair_person', name: 'CHAIR PERSON' },
-      { id: 'claudia', name: 'CLAUDIA' },
-      { id: 'daigo', name: 'DAIGO' },
-      { id: 'david', name: 'DAVID' },
-      { id: 'demon-hyo', name: 'DEMON HYO' },
-      { id: 'demon_hyo', name: 'DEMON HYO' },
-      { id: 'edge', name: 'EDGE' },
-      { id: 'eliza', name: 'ELIZA' },
-      { id: 'frank', name: 'FRANK' },
-      { id: 'gan', name: 'GAN' },
-      { id: 'george', name: 'GEORGE' },
-      { id: 'grace', name: 'GRACE' },
-      { id: 'hayato', name: 'HAYATO' },
-      { id: 'hideo', name: 'HIDEO' },
-      { id: 'hilary', name: 'HILARY' },
-      { id: 'hinata', name: 'HINATA' },
-      { id: 'hyo-imawano', name: 'HYO IMAWANO' },
-      { id: 'hyo_imawano', name: 'HYO IMAWANO' },
-      { id: 'john', name: 'JOHN' },
-      { id: 'kurow', name: 'KUROW' },
-      { id: 'kyoko', name: 'KYOKO' },
-      { id: 'kyosuke-kagami', name: 'Kyosuke Kagami' },
-      { id: 'kyosuke', name: 'KYOSUKE' },
-      { id: 'mark', name: 'MARK' },
-      { id: 'momo', name: 'MOMO' },
-      { id: 'nagare', name: 'NAGARE' },
-      { id: 'nancy', name: 'NANCY' },
-      { id: 'natsu', name: 'NATSU' },
-      { id: 'peter', name: 'PETER' },
-      { id: 'powered-akira', name: 'POWERED AKIRA' },
-      { id: 'powered_akira', name: 'POWERED AKIRA' },
-      { id: 'ran', name: 'RAN' },
-      { id: 'roberto-miura', name: 'Roberto Miura' },
-      { id: 'roberto', name: 'ROBERTO' },
-      { id: 'roy-bromwell', name: 'ROY BROMWELL' },
-      { id: 'roy_bromwell', name: 'ROY BROMWELL' },
-      { id: 'shoma', name: 'SHOMA' },
-      { id: 'thelma', name: 'THELMA' },
-      { id: 'tiffany-rose', name: 'TIFFANY ROSE' },
-      { id: 'tiffany_rose', name: 'TIFFANY ROSE' },
-      { id: 'tony', name: 'TONY' },
-      { id: 'vatsu', name: 'VATSU' },
-      { id: 'wild-daigo', name: 'WILD DAIGO' },
-      { id: 'wild_daigo', name: 'WILD DAIGO' },
-      { id: 'yurika', name: 'YURIKA' },
-      { id: 'zaki', name: 'ZAKI' },
-      { id: 'chie-satonaka', name: 'Chie Satonaka' },
-      { id: 'yosuke-hanamura', name: 'Yosuke Hanamura' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'rage-of-the-dragons',
-    name: "Rage of the Dragons",
-    developer: "Evoga",
-    releaseYear: 2002,
-    platform: "Neo Geo Arcade",
-rosterCount: 999,
-        characters: [
-      { id: 'billy-lewis', name: 'Billy Lewis' },
-      { id: 'lynn-baker', name: 'Lynn Baker' },
-      { id: 'radel', name: 'Radel' },
-      { id: 'annie-murakami', name: 'Annie Murakami' },
-      { id: 'cassandra', name: 'Cassandra' },
-      { id: 'oni', name: 'Oni' },
-      { id: 'pepe', name: 'Pepe' },
-      { id: 'pupa-salgueiro', name: 'Pupa Salgueiro' },
-      { id: 'alice-carroll', name: 'Alice Carroll' },
-      { id: 'elias-patrick', name: 'Elias Patrick' },
-      { id: 'mr-jones', name: 'Mr. Jones' },
-      { id: 'kang-jae-mo', name: 'Kang Jae-Mo' },
-      { id: 'abubo-rao', name: 'Abubo Rao' },
-      { id: 'johann', name: 'Johann' },
-      { id: 'fighting_on_the_ground', name: 'Fighting_On_The_Ground' },
-      { id: 'hulk', name: 'Hulk' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'yamazaki', name: 'Yamazaki' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'real-bout-fatal-fury',
-    name: "Real Bout Fatal Fury",
-    developer: "SNK",
-    releaseYear: 1995,
-rosterCount: 999,
-        characters: [
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'duck-king', name: 'Duck King' },
-      { id: 'billy-kane', name: 'Billy Kane' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' },
-      { id: 'laurence-blood', name: 'Laurence Blood' },
-      { id: 'cheng-sinzan', name: 'Cheng Sinzan' },
-      { id: 'tung-fu-rue', name: 'Tung Fu Rue' },
-      { id: 'bob-wilson', name: 'Bob Wilson' },
-      { id: 'hon-fu', name: 'Hon-Fu' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'sokaku-mochizuki', name: 'Sokaku Mochizuki' },
-      { id: 'franco-bash', name: 'Franco Bash' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'li-xiangfei', name: 'Li Xiangfei' },
-      { id: 'rick-strowd', name: 'Rick Strowd' },
-      { id: 'alfred', name: 'Alfred' },
-      { id: 'cotw', name: 'Cotw' },
-      { id: 'cotw_andybogard', name: 'Cotw_Andybogard' },
-      { id: 'cotw_billykane', name: 'Cotw_Billykane' },
-      { id: 'cotw_gato', name: 'Cotw_Gato' },
-      { id: 'cotw_hokutomaru', name: 'Cotw_Hokutomaru' },
-      { id: 'cotw_hotarufutaba', name: 'Cotw_Hotarufutaba' },
-      { id: 'cotw_joehigashi', name: 'Cotw_Joehigashi' },
-      { id: 'cotw_kimdonghwan', name: 'Cotw_Kimdonghwan' },
-      { id: 'cotw_kimjaehoon', name: 'Cotw_Kimjaehoon' },
-      { id: 'cotw_rockhoward', name: 'Cotw_Rockhoward' },
-      { id: 'cotw_terrybogard', name: 'Cotw_Terrybogard' },
-      { id: 'cotw_tizoc', name: 'Cotw_Tizoc' },
-      { id: 'cotw_wolfgangkrauser', name: 'Cotw_Wolfgangkrauser' },
-      { id: 'fatal-fury-king-of-fighters', name: 'Fatal Fury King Of Fighters' },
-      { id: 'garou-mark-of-the-wolves', name: 'Garou Mark Of The Wolves' },
-      { id: 'geese', name: 'Geese' },
-      { id: 'real-bout-fatal-fury', name: 'Real Bout Fatal Fury' },
-      { id: 'real-bout-fatal-fury-special', name: 'Real Bout Fatal Fury Special' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'the-king-of-fighters-2003', name: 'The King Of Fighters 2003' },
-      { id: 'yamazaki', name: 'Yamazaki' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'real-bout-fatal-fury-2-the-newcomers',
-    name: "Real Bout Fatal Fury 2: The Newcomers",
-    developer: "SNK",
-    releaseYear: 1992,
-rosterCount: 999,
-        characters: [
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'duck-king', name: 'Duck King' },
-      { id: 'billy-kane', name: 'Billy Kane' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' },
-      { id: 'laurence-blood', name: 'Laurence Blood' },
-      { id: 'cheng-sinzan', name: 'Cheng Sinzan' },
-      { id: 'tung-fu-rue', name: 'Tung Fu Rue' },
-      { id: 'bob-wilson', name: 'Bob Wilson' },
-      { id: 'hon-fu', name: 'Hon-Fu' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'sokaku-mochizuki', name: 'Sokaku Mochizuki' },
-      { id: 'franco-bash', name: 'Franco Bash' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'li-xiangfei', name: 'Li Xiangfei' },
-      { id: 'rick-strowd', name: 'Rick Strowd' },
-      { id: 'alfred', name: 'Alfred' },
-      { id: 'cotw', name: 'Cotw' },
-      { id: 'cotw_andybogard', name: 'Cotw_Andybogard' },
-      { id: 'cotw_billykane', name: 'Cotw_Billykane' },
-      { id: 'cotw_gato', name: 'Cotw_Gato' },
-      { id: 'cotw_joehigashi', name: 'Cotw_Joehigashi' },
-      { id: 'cotw_kimdonghwan', name: 'Cotw_Kimdonghwan' },
-      { id: 'cotw_kimjaehoon', name: 'Cotw_Kimjaehoon' },
-      { id: 'cotw_rockhoward', name: 'Cotw_Rockhoward' },
-      { id: 'cotw_terrybogard', name: 'Cotw_Terrybogard' },
-      { id: 'cotw_wolfgangkrauser', name: 'Cotw_Wolfgangkrauser' },
-      { id: 'fatal-fury-king-of-fighters', name: 'Fatal Fury King Of Fighters' },
-      { id: 'garou-mark-of-the-wolves', name: 'Garou Mark Of The Wolves' },
-      { id: 'geese', name: 'Geese' },
-      { id: 'real-bout-fatal-fury', name: 'Real Bout Fatal Fury' },
-      { id: 'real-bout-fatal-fury-special', name: 'Real Bout Fatal Fury Special' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'terry', name: 'Terry' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'real-bout-fatal-fury-special',
-    name: "Real Bout Fatal Fury Special",
-    developer: "SNK",
-    releaseYear: 1997,
-rosterCount: 999,
-        characters: [
-      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' },
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'cotw', name: 'Cotw' },
-      { id: 'cotw_andybogard', name: 'Cotw_Andybogard' },
-      { id: 'cotw_billykane', name: 'Cotw_Billykane' },
-      { id: 'cotw_gato', name: 'Cotw_Gato' },
-      { id: 'cotw_hotarufutaba', name: 'Cotw_Hotarufutaba' },
-      { id: 'cotw_joehigashi', name: 'Cotw_Joehigashi' },
-      { id: 'cotw_kimdonghwan', name: 'Cotw_Kimdonghwan' },
-      { id: 'cotw_kimjaehoon', name: 'Cotw_Kimjaehoon' },
-      { id: 'cotw_rockhoward', name: 'Cotw_Rockhoward' },
-      { id: 'cotw_terrybogard', name: 'Cotw_Terrybogard' },
-      { id: 'cotw_wolfgangkrauser', name: 'Cotw_Wolfgangkrauser' },
-      { id: 'geese', name: 'Geese' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'rick-strowd', name: 'Rick Strowd' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'fatal-fury-king-of-fighters', name: 'Fatal Fury King Of Fighters' },
-      { id: 'garou-mark-of-the-wolves', name: 'Garou Mark Of The Wolves' },
-      { id: 'real-bout-fatal-fury', name: 'Real Bout Fatal Fury' },
-      { id: 'real-bout-fatal-fury-special', name: 'Real Bout Fatal Fury Special' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'the-king-of-fighters-2003', name: 'The King Of Fighters 2003' },
-      { id: 'yamazaki', name: 'Yamazaki' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'samurai-shodown',
-    name: "Samurai Shodown",
-    developer: "SNK",
-    releaseYear: 1993,
-rosterCount: 999,
-        characters: [
-      { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'hanzo-hattori', name: 'Hanzo Hattori' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'ukyo-tachibana', name: 'Ukyo Tachibana' },
-      { id: 'kyoshiro-senryo', name: 'Kyoshiro Senryo' },
-      { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' },
-      { id: 'earthquake', name: 'Earthquake' },
-      { id: 'jubei-yagyu', name: 'Jubei Yagyu' },
-      { id: 'tam-tam', name: 'Tam Tam' },
-      { id: 'charlotte', name: 'Charlotte' },
-      { id: 'yoshitora-tokugawa', name: 'Yoshitora Tokugawa' },
-      { id: 'shiki', name: 'Shiki' },
-      { id: 'darli-dagger', name: 'Darli Dagger' },
-      { id: 'wu-ruixiang', name: 'Wu-Ruixiang' },
-      { id: 'yashamaru-kurama', name: 'Yashamaru Kurama' },
-      { id: 'rimururu', name: 'Rimururu' },
-      { id: 'basara', name: 'Basara' },
-      { id: 'kazuki-kazama', name: 'Kazuki Kazama' },
-      { id: 'wan-fu', name: 'Wan-Fu' },
-      { id: 'mina-majikina', name: 'Mina Majikina' },
-      { id: 'sogetsu-kazama', name: 'Sogetsu Kazama' },
-      { id: 'iroha', name: 'Iroha' },
-      { id: 'warden', name: 'Warden' },
-      { id: 'gongsun-li', name: 'Gongsun Li' },
-      { id: 'cham-cham', name: 'Cham Cham' },
-      { id: 'hibiki-takane', name: 'Hibiki Takane' },
-      { id: 'shizumaru-hisame', name: 'Shizumaru Hisame' },
-      { id: 'shiro-tokisada-amakusa', name: 'Shiro Tokisada Amakusa' },
-      { id: 'baiken', name: 'Baiken' },
-      { id: 'ba-xian', name: 'Ba-Xian' },
-      { id: 'breakers-revenge', name: 'Breakers Revenge' },
-      { id: 'dudley', name: 'Dudley' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'hyo_imawano', name: 'Hyo_Imawano' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'kyosuke', name: 'Kyosuke' },
-      { id: 'panchos', name: 'Panchos' },
-      { id: 'rolento', name: 'Rolento' },
-      { id: 'roomi', name: 'Roomi' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'samurai-shodown', name: 'Samurai Shodown' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'samurai-shodown-iv-amakusas-revenge', name: 'Samurai Shodown Iv Amakusas Revenge' },
-      { id: 'sean', name: 'Sean' },
-      { id: 'sodom', name: 'Sodom' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'samurai-shodown-(2019)',
-    name: "Samurai Shodown (2019)",
-    developer: "SNK",
-    releaseYear: 2019,
-rosterCount: 999,
-        characters: [
-      { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'hanzo-hattori', name: 'Hanzo Hattori' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'ukyo-tachibana', name: 'Ukyo Tachibana' },
-      { id: 'kyoshiro-senryo', name: 'Kyoshiro Senryo' },
-      { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' },
-      { id: 'earthquake', name: 'Earthquake' },
-      { id: 'jubei-yagyu', name: 'Jubei Yagyu' },
-      { id: 'tam-tam', name: 'Tam Tam' },
-      { id: 'charlotte', name: 'Charlotte' },
-      { id: 'yoshitora-tokugawa', name: 'Yoshitora Tokugawa' },
-      { id: 'shiki', name: 'Shiki' },
-      { id: 'darli-dagger', name: 'Darli Dagger' },
-      { id: 'wu-ruixiang', name: 'Wu-Ruixiang' },
-      { id: 'yashamaru-kurama', name: 'Yashamaru Kurama' },
-      { id: 'rimururu', name: 'Rimururu' },
-      { id: 'basara', name: 'Basara' },
-      { id: 'kazuki-kazama', name: 'Kazuki Kazama' },
-      { id: 'wan-fu', name: 'Wan-Fu' },
-      { id: 'mina-majikina', name: 'Mina Majikina' },
-      { id: 'sogetsu-kazama', name: 'Sogetsu Kazama' },
-      { id: 'iroha', name: 'Iroha' },
-      { id: 'warden', name: 'Warden' },
-      { id: 'gongsun-li', name: 'Gongsun Li' },
-      { id: 'cham-cham', name: 'Cham Cham' },
-      { id: 'hibiki-takane', name: 'Hibiki Takane' },
-      { id: 'shizumaru-hisame', name: 'Shizumaru Hisame' },
-      { id: 'shiro-tokisada-amakusa', name: 'Shiro Tokisada Amakusa' },
-      { id: 'baiken', name: 'Baiken' },
-      { id: 'ba-xian', name: 'Ba-Xian' },
-      { id: 'breakers-revenge', name: 'Breakers Revenge' },
-      { id: 'dudley', name: 'Dudley' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'hyo_imawano', name: 'Hyo_Imawano' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'kyosuke', name: 'Kyosuke' },
-      { id: 'panchos', name: 'Panchos' },
-      { id: 'rolento', name: 'Rolento' },
-      { id: 'roomi', name: 'Roomi' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'samurai-shodown', name: 'Samurai Shodown' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'samurai-shodown-iv-amakusas-revenge', name: 'Samurai Shodown Iv Amakusas Revenge' },
-      { id: 'sean', name: 'Sean' },
-      { id: 'sodom', name: 'Sodom' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'samurai-shodown-ii',
-    name: "Samurai Shodown II",
-    developer: "SNK",
-    releaseYear: 1993,
-rosterCount: 999,
-        characters: [
-      { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'hanzo-hattori', name: 'Hanzo Hattori' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'ukyo-tachibana', name: 'Ukyo Tachibana' },
-      { id: 'kyoshiro-senryo', name: 'Kyoshiro Senryo' },
-      { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' },
-      { id: 'earthquake', name: 'Earthquake' },
-      { id: 'jubei-yagyu', name: 'Jubei Yagyu' },
-      { id: 'tam-tam', name: 'Tam Tam' },
-      { id: 'charlotte', name: 'Charlotte' },
-      { id: 'neinhalt-sieger', name: 'Neinhalt Sieger' },
-      { id: 'cham-cham', name: 'Cham Cham' },
-      { id: 'mizuki-rashojin', name: 'Mizuki Rashojin' },
-      { id: 'nicotine-caffeine', name: 'Nicotine Caffeine' },
-      { id: 'dudley', name: 'Dudley' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'mina-majikina', name: 'Mina Majikina' },
-      { id: 'roomi', name: 'Roomi' },
-      { id: 'samurai-shodown', name: 'Samurai Shodown' },
-      { id: 'samurai-shodown-iv-amakusas-revenge', name: 'Samurai Shodown Iv Amakusas Revenge' },
-      { id: 'sean', name: 'Sean' },
-      { id: 'yoshitora-tokugawa', name: 'Yoshitora Tokugawa' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'samurai-shodown-iii-blades-of-blood',
-    name: "Samurai Shodown III: Blades of Blood",
-    developer: "SNK",
-    releaseYear: 1993,
-rosterCount: 999,
-        characters: [
-      { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'hanzo-hattori', name: 'Hanzo Hattori' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'ukyo-tachibana', name: 'Ukyo Tachibana' },
-      { id: 'kyoshiro-senryo', name: 'Kyoshiro Senryo' },
-      { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' },
-      { id: 'basara-kubikiri', name: 'Basara Kubikiri' },
-      { id: 'shizumaru-hisame', name: 'Shizumaru Hisame' },
-      { id: 'gaira-caffeine', name: 'Gaira Caffeine' },
-      { id: 'rimururu', name: 'Rimururu' },
-      { id: 'minazuki-zankuro', name: 'Minazuki Zankuro' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'samurai-shodown-iv-amakusas-revenge',
-    name: "Samurai Shodown IV: Amakusa",
-    developer: "SNK",
-    releaseYear: 1993,
-rosterCount: 999,
-        characters: [
-      { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'hanzo-hattori', name: 'Hanzo Hattori' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'ukyo-tachibana', name: 'Ukyo Tachibana' },
-      { id: 'kyoshiro-senryo', name: 'Kyoshiro Senryo' },
-      { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' },
-      { id: 'basara', name: 'Basara' },
-      { id: 'shizumaru', name: 'Shizumaru' },
-      { id: 'gaira', name: 'Gaira' },
-      { id: 'rimururu', name: 'Rimururu' },
-      { id: 'kazuki', name: 'Kazuki' },
-      { id: 'sogetsu', name: 'Sogetsu' },
-      { id: 'tam-tam', name: 'Tam Tam' },
-      { id: 'charlotte', name: 'Charlotte' },
-      { id: 'jubei', name: 'Jubei' },
-      { id: 'shiro-tokisada-amakusa', name: 'Shiro Tokisada Amakusa' },
-      { id: 'mina-majikina', name: 'Mina Majikina' },
-      { id: 'samurai-shodown-iv-amakusas-revenge', name: 'Samurai Shodown Iv Amakusas Revenge' },
-      { id: 'yoshitora-tokugawa', name: 'Yoshitora Tokugawa' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'samurai-shodown-v',
-    name: "Samurai Shodown V",
-    developer: "SNK",
-    releaseYear: 1993,
-rosterCount: 999,
-        characters: [
-      { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'hanzo', name: 'Hanzo' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'ukyo', name: 'Ukyo' },
-      { id: 'kyoshiro', name: 'Kyoshiro' },
-      { id: 'genjuro', name: 'Genjuro' },
-      { id: 'basara', name: 'Basara' },
-      { id: 'shizumaru', name: 'Shizumaru' },
-      { id: 'gaira', name: 'Gaira' },
-      { id: 'rimururu', name: 'Rimururu' },
-      { id: 'kazuki', name: 'Kazuki' },
-      { id: 'sogetsu', name: 'Sogetsu' },
-      { id: 'tam-tam', name: 'Tam Tam' },
-      { id: 'charlotte', name: 'Charlotte' },
-      { id: 'jubei', name: 'Jubei' },
-      { id: 'yoshitora', name: 'Yoshitora' },
-      { id: 'mina', name: 'Mina' },
-      { id: 'liu-yunfei', name: 'Liu Yunfei' },
-      { id: 'kusaregedo', name: 'Kusaregedo' },
-      { id: 'enja', name: 'Enja' },
-      { id: 'suija', name: 'Suija' },
-      { id: 'rera', name: 'Rera' },
-      { id: 'sankuro', name: 'Sankuro' },
-      { id: 'breakers-revenge', name: 'Breakers Revenge' },
-      { id: 'dudley', name: 'Dudley' },
-      { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'hyo_imawano', name: 'Hyo_Imawano' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'kyosuke', name: 'Kyosuke' },
-      { id: 'mina-majikina', name: 'Mina Majikina' },
-      { id: 'panchos', name: 'Panchos' },
-      { id: 'rolento', name: 'Rolento' },
-      { id: 'roomi', name: 'Roomi' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'samurai-shodown', name: 'Samurai Shodown' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'samurai-shodown-iv-amakusas-revenge', name: 'Samurai Shodown Iv Amakusas Revenge' },
-      { id: 'sean', name: 'Sean' },
-      { id: 'sodom', name: 'Sodom' },
-      { id: 'yoshitora-tokugawa', name: 'Yoshitora Tokugawa' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'samurai-shodown-v-special',
-    name: "Samurai Shodown V Special",
-    developer: "SNK",
-    releaseYear: 1993,
-rosterCount: 999,
-        characters: [
-      { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'hanzo', name: 'Hanzo' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'ukyo', name: 'Ukyo' },
-      { id: 'kyoshiro', name: 'Kyoshiro' },
-      { id: 'genjuro', name: 'Genjuro' },
-      { id: 'basara', name: 'Basara' },
-      { id: 'shizumaru', name: 'Shizumaru' },
-      { id: 'gaira', name: 'Gaira' },
-      { id: 'rimururu', name: 'Rimururu' },
-      { id: 'kazuki', name: 'Kazuki' },
-      { id: 'sogetsu', name: 'Sogetsu' },
-      { id: 'tam-tam', name: 'Tam Tam' },
-      { id: 'charlotte', name: 'Charlotte' },
-      { id: 'jubei', name: 'Jubei' },
-      { id: 'yoshitora', name: 'Yoshitora' },
-      { id: 'mina', name: 'Mina' },
-      { id: 'liu-yunfei', name: 'Liu Yunfei' },
-      { id: 'kusaregedo', name: 'Kusaregedo' },
-      { id: 'enja', name: 'Enja' },
-      { id: 'suija', name: 'Suija' },
-      { id: 'rera', name: 'Rera' },
-      { id: 'amakusa', name: 'Amakusa' },
-      { id: 'mizuki', name: 'Mizuki' },
-      { id: 'zankuro', name: 'Zankuro' },
-      { id: 'gaoh', name: 'Gaoh' },
-      { id: 'dudley', name: 'Dudley' },
-      { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'hyo_imawano', name: 'Hyo_Imawano' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'kyosuke', name: 'Kyosuke' },
-      { id: 'mina-majikina', name: 'Mina Majikina' },
-      { id: 'panchos', name: 'Panchos' },
-      { id: 'rolento', name: 'Rolento' },
-      { id: 'roomi', name: 'Roomi' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'samurai-shodown', name: 'Samurai Shodown' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'samurai-shodown-iv-amakusas-revenge', name: 'Samurai Shodown Iv Amakusas Revenge' },
-      { id: 'sean', name: 'Sean' },
-      { id: 'sodom', name: 'Sodom' },
-      { id: 'yoshitora-tokugawa', name: 'Yoshitora Tokugawa' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'street-fighter-iii-new-generation',
-    name: "Street Fighter III: New Generation",
-    developer: "Capcom",
-    releaseYear: 2023,
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
-rosterCount: 999,
-        characters: [
-      { id: 'alex', name: 'Alex' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'anakaris', name: 'Anakaris' },
-      { id: 'chun-li', name: 'Chun Li' },
-      { id: 'chunli', name: 'Chunli' },
-      { id: 'chun_li', name: 'Chun_Li' },
-      { id: 'cotw_chunli', name: 'Cotw_Chunli' },
-      { id: 'decapre', name: 'Decapre' },
-      { id: 'demitri', name: 'Demitri' },
-      { id: 'dudley', name: 'Dudley' },
-      { id: 'felicia', name: 'Felicia' },
-      { id: 'fight_ingrid', name: 'Fight_Ingrid' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'hauzer', name: 'Hauzer' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'ingrid', name: 'Ingrid' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'jedah', name: 'Jedah' },
-      { id: 'karin', name: 'Karin' },
-      { id: 'play_as_shin_gouki', name: 'Play_As_Shin_Gouki' },
-      { id: 'sean', name: 'Sean' },
-      { id: 'urien', name: 'Urien' },
-      { id: 'zangief', name: 'Zangief' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'street-fighter-iii-2nd-impact',
-    name: "Street Fighter III: 2nd Impact - Giant Attack",
-    developer: "Capcom",
-    releaseYear: 2023,
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
-rosterCount: 999,
-        characters: [
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'sean', name: 'Sean' },
-      { id: 'yun', name: 'Yun' },
-      { id: 'yang', name: 'Yang' },
-      { id: 'necro', name: 'Necro' },
-      { id: 'oro', name: 'Oro' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'elena', name: 'Elena' },
-      { id: 'dudley', name: 'Dudley' },
-      { id: 'alex', name: 'Alex' },
-      { id: 'hugo', name: 'Hugo' },
-      { id: 'urien', name: 'Urien' },
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'play_as_shin_gouki', name: 'Play_As_Shin_Gouki' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'street-fighter-alpha',
-    name: "Street Fighter Alpha 1",
-    developer: "Capcom",
-    releaseYear: 2023,
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
-rosterCount: 999,
-        characters: [
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'charlie', name: 'Charlie' },
-      { id: 'chun-li', name: 'Chun Li' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'cammy', name: 'Cammy' },
-      { id: 'decapre', name: 'Decapre' },
-      { id: 'maki-genryusai', name: 'Maki Genryusai' },
-      { id: 'sagat', name: 'Sagat' },
-      { id: 'adon', name: 'Adon' },
-      { id: 'anakaris', name: 'Anakaris' },
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'art-of-fighting', name: 'Art Of Fighting' },
-      { id: 'asuka-honda', name: 'Asuka Honda' },
-      { id: 'aulbath', name: 'Aulbath' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'batsu', name: 'Batsu' },
-      { id: 'batsu-ichimonji', name: 'Batsu Ichimonji' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'birdie', name: 'Birdie' },
-      { id: 'bison', name: 'Bison' },
-      { id: 'blackheart', name: 'Blackheart' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'boman', name: 'Boman' },
-      { id: 'breakers-revenge', name: 'Breakers Revenge' },
-      { id: 'captain-america', name: 'Captain America' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'chunli', name: 'Chunli' },
-      { id: 'chun_li', name: 'Chun_Li' },
-      { id: 'cody', name: 'Cody' },
-      { id: 'cotw', name: 'Cotw' },
-      { id: 'cotw_andybogard', name: 'Cotw_Andybogard' },
-      { id: 'cotw_billykane', name: 'Cotw_Billykane' },
-      { id: 'cotw_chunli', name: 'Cotw_Chunli' },
-      { id: 'cotw_gato', name: 'Cotw_Gato' },
-      { id: 'cotw_joehigashi', name: 'Cotw_Joehigashi' },
-      { id: 'cotw_kimdonghwan', name: 'Cotw_Kimdonghwan' },
-      { id: 'cotw_kimjaehoon', name: 'Cotw_Kimjaehoon' },
-      { id: 'cotw_rockhoward', name: 'Cotw_Rockhoward' },
-      { id: 'cotw_terrybogard', name: 'Cotw_Terrybogard' },
-      { id: 'cotw_wolfgangkrauser', name: 'Cotw_Wolfgangkrauser' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'cyclops', name: 'Cyclops' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'dee-jay', name: 'Dee Jay' },
-      { id: 'deejay', name: 'Deejay' },
-      { id: 'dee_jay', name: 'Dee_Jay' },
-      { id: 'demitri', name: 'Demitri' },
-      { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
-      { id: 'demitri_maximoff', name: 'Demitri_Maximoff' },
-      { id: 'donovan-baine', name: 'Donovan Baine' },
-      { id: 'donovan_baine', name: 'Donovan_Baine' },
-      { id: 'dramatic_battle', name: 'Dramatic_Battle' },
-      { id: 'dramatic_battle_mode', name: 'Dramatic_Battle_Mode' },
-      { id: 'dudley', name: 'Dudley' },
-      { id: 'ehonda', name: 'Ehonda' },
-      { id: 'faq_notation', name: 'Faq_Notation' },
-      { id: 'fatal-fury-king-of-fighters', name: 'Fatal Fury King Of Fighters' },
-      { id: 'felicia', name: 'Felicia' },
-      { id: 'fighters-megamix', name: 'Fighters Megamix' },
-      { id: 'fighting-vipers', name: 'Fighting Vipers' },
-      { id: 'fight_ingrid', name: 'Fight_Ingrid' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'garou-mark-of-the-wolves', name: 'Garou Mark Of The Wolves' },
-      { id: 'geese', name: 'Geese' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'gill', name: 'Gill' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'hauzer', name: 'Hauzer' },
-      { id: 'hayate', name: 'Hayate' },
-      { id: 'helena-douglas', name: 'Helena Douglas' },
-      { id: 'hibiki', name: 'Hibiki' },
-      { id: 'hsien_ko', name: 'Hsien_Ko' },
-      { id: 'hyo_imawano', name: 'Hyo_Imawano' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'ingrid', name: 'Ingrid' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'jacky-bryant', name: 'Jacky Bryant' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'jedah', name: 'Jedah' },
-      { id: 'jedah-dohma', name: 'Jedah Dohma' },
-      { id: 'jin-saotome', name: 'Jin Saotome' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'juggernaut', name: 'Juggernaut' },
-      { id: 'juli', name: 'Juli' },
-      { id: 'karin', name: 'Karin' },
-      { id: 'karin-kanzuki', name: 'Karin Kanzuki' },
-      { id: 'kyosuke', name: 'Kyosuke' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'links', name: 'Links' },
-      { id: 'makoto', name: 'Makoto' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'mina-majikina', name: 'Mina Majikina' },
-      { id: 'morrigan', name: 'Morrigan' },
-      { id: 'mortal-kombat-deception', name: 'Mortal Kombat Deception' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'notation', name: 'Notation' },
-      { id: 'omega-red', name: 'Omega Red' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'panchos', name: 'Panchos' },
-      { id: 'plasma-sword-nightmare-of-bilstein', name: 'Plasma Sword Nightmare Of Bilstein' },
-      { id: 'players', name: 'Players' },
-      { id: 'play_as_shin_gouki', name: 'Play_As_Shin_Gouki' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'psylocke', name: 'Psylocke' },
-      { id: 'pyron', name: 'Pyron' },
-      { id: 'real-bout-fatal-fury', name: 'Real Bout Fatal Fury' },
-      { id: 'real-bout-fatal-fury-special', name: 'Real Bout Fatal Fury Special' },
-      { id: 'remy', name: 'Remy' },
-      { id: 'rick-strowd', name: 'Rick Strowd' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'rolento', name: 'Rolento' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'sabretooth', name: 'Sabretooth' },
-      { id: 'sakura-kasugano', name: 'Sakura Kasugano' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'sean', name: 'Sean' },
-      { id: 'select_cpu_opponent_and_cpu_costume_color', name: 'Select_Cpu_Opponent_And_Cpu_Costume_Color' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'shin-akuma', name: 'Shin Akuma' },
-      { id: 'shin_akuma', name: 'Shin_Akuma' },
-      { id: 'sho-hayate', name: 'Sho Hayate' },
-      { id: 'shoma', name: 'Shoma' },
-      { id: 'shuma-gorath', name: 'Shuma Gorath' },
-      { id: 'sodom', name: 'Sodom' },
-      { id: 'spider-man', name: 'Spider Man' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'stages', name: 'Stages' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-      { id: 'tamaki-shindo', name: 'Tamaki Shindo' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'twelve', name: 'Twelve' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-      { id: 'unlock_pyron', name: 'Unlock_Pyron' },
-      { id: 'urien', name: 'Urien' },
-      { id: 'vanessa-lewis', name: 'Vanessa Lewis' },
-      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' },
-      { id: 'yoshitora-tokugawa', name: 'Yoshitora Tokugawa' },
-      { id: 'yusaku', name: 'Yusaku' },
-      { id: 'zaimoku', name: 'Zaimoku' },
-      { id: 'zangief', name: 'Zangief' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'street-fighter-alpha-2',
-    name: "Street Fighter Alpha 2",
-    developer: "Capcom",
-    releaseYear: 2023,
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
-rosterCount: 999,
-        characters: [
-      { id: 'rolento', name: 'Rolento' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'sakura', name: 'Sakura' },
-      { id: 'adon', name: 'Adon' },
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'anakaris', name: 'Anakaris' },
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'asuka-honda', name: 'Asuka Honda' },
-      { id: 'aulbath', name: 'Aulbath' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'batsu', name: 'Batsu' },
-      { id: 'batsu-ichimonji', name: 'Batsu Ichimonji' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'birdie', name: 'Birdie' },
-      { id: 'bison', name: 'Bison' },
-      { id: 'blackheart', name: 'Blackheart' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'boman', name: 'Boman' },
-      { id: 'cammy', name: 'Cammy' },
-      { id: 'captain-america', name: 'Captain America' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'charlie', name: 'Charlie' },
-      { id: 'chun-li', name: 'Chun Li' },
-      { id: 'chunli', name: 'Chunli' },
-      { id: 'chun_li', name: 'Chun_Li' },
-      { id: 'cody', name: 'Cody' },
-      { id: 'art-of-fighting', name: 'Art Of Fighting' },
-      { id: 'breakers-revenge', name: 'Breakers Revenge' },
-      { id: 'cotw', name: 'Cotw' },
-      { id: 'cotw_andybogard', name: 'Cotw_Andybogard' },
-      { id: 'cotw_billykane', name: 'Cotw_Billykane' },
-      { id: 'cotw_chunli', name: 'Cotw_Chunli' },
-      { id: 'cotw_gato', name: 'Cotw_Gato' },
-      { id: 'cotw_joehigashi', name: 'Cotw_Joehigashi' },
-      { id: 'cotw_kimdonghwan', name: 'Cotw_Kimdonghwan' },
-      { id: 'cotw_kimjaehoon', name: 'Cotw_Kimjaehoon' },
-      { id: 'cotw_rockhoward', name: 'Cotw_Rockhoward' },
-      { id: 'cotw_terrybogard', name: 'Cotw_Terrybogard' },
-      { id: 'cotw_wolfgangkrauser', name: 'Cotw_Wolfgangkrauser' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'cyclops', name: 'Cyclops' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'decapre', name: 'Decapre' },
-      { id: 'dee-jay', name: 'Dee Jay' },
-      { id: 'deejay', name: 'Deejay' },
-      { id: 'dee_jay', name: 'Dee_Jay' },
-      { id: 'demitri', name: 'Demitri' },
-      { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
-      { id: 'demitri_maximoff', name: 'Demitri_Maximoff' },
-      { id: 'donovan-baine', name: 'Donovan Baine' },
-      { id: 'donovan_baine', name: 'Donovan_Baine' },
-      { id: 'dramatic_battle', name: 'Dramatic_Battle' },
-      { id: 'dramatic_battle_mode', name: 'Dramatic_Battle_Mode' },
-      { id: 'dudley', name: 'Dudley' },
-      { id: 'ehonda', name: 'Ehonda' },
-      { id: 'faq_notation', name: 'Faq_Notation' },
-      { id: 'fatal-fury-king-of-fighters', name: 'Fatal Fury King Of Fighters' },
-      { id: 'felicia', name: 'Felicia' },
-      { id: 'fighters-megamix', name: 'Fighters Megamix' },
-      { id: 'fighting-vipers', name: 'Fighting Vipers' },
-      { id: 'fight_ingrid', name: 'Fight_Ingrid' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'garou-mark-of-the-wolves', name: 'Garou Mark Of The Wolves' },
-      { id: 'geese', name: 'Geese' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'gill', name: 'Gill' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'hauzer', name: 'Hauzer' },
-      { id: 'hayate', name: 'Hayate' },
-      { id: 'helena-douglas', name: 'Helena Douglas' },
-      { id: 'hibiki', name: 'Hibiki' },
-      { id: 'hsien_ko', name: 'Hsien_Ko' },
-      { id: 'hyo_imawano', name: 'Hyo_Imawano' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'ingrid', name: 'Ingrid' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'jacky-bryant', name: 'Jacky Bryant' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'jedah', name: 'Jedah' },
-      { id: 'jedah-dohma', name: 'Jedah Dohma' },
-      { id: 'jin-saotome', name: 'Jin Saotome' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'juggernaut', name: 'Juggernaut' },
-      { id: 'juli', name: 'Juli' },
-      { id: 'karin', name: 'Karin' },
-      { id: 'karin-kanzuki', name: 'Karin Kanzuki' },
-      { id: 'kyosuke', name: 'Kyosuke' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'links', name: 'Links' },
-      { id: 'maki-genryusai', name: 'Maki Genryusai' },
-      { id: 'makoto', name: 'Makoto' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'mina-majikina', name: 'Mina Majikina' },
-      { id: 'morrigan', name: 'Morrigan' },
-      { id: 'mortal-kombat-deception', name: 'Mortal Kombat Deception' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'notation', name: 'Notation' },
-      { id: 'omega-red', name: 'Omega Red' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'panchos', name: 'Panchos' },
-      { id: 'plasma-sword-nightmare-of-bilstein', name: 'Plasma Sword Nightmare Of Bilstein' },
-      { id: 'players', name: 'Players' },
-      { id: 'play_as_shin_gouki', name: 'Play_As_Shin_Gouki' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'psylocke', name: 'Psylocke' },
-      { id: 'pyron', name: 'Pyron' },
-      { id: 'real-bout-fatal-fury', name: 'Real Bout Fatal Fury' },
-      { id: 'real-bout-fatal-fury-special', name: 'Real Bout Fatal Fury Special' },
-      { id: 'remy', name: 'Remy' },
-      { id: 'rick-strowd', name: 'Rick Strowd' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'sabretooth', name: 'Sabretooth' },
-      { id: 'sagat', name: 'Sagat' },
-      { id: 'sakura-kasugano', name: 'Sakura Kasugano' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'sean', name: 'Sean' },
-      { id: 'select_cpu_opponent_and_cpu_costume_color', name: 'Select_Cpu_Opponent_And_Cpu_Costume_Color' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'shin-akuma', name: 'Shin Akuma' },
-      { id: 'shin_akuma', name: 'Shin_Akuma' },
-      { id: 'sho-hayate', name: 'Sho Hayate' },
-      { id: 'shoma', name: 'Shoma' },
-      { id: 'shuma-gorath', name: 'Shuma Gorath' },
-      { id: 'sodom', name: 'Sodom' },
-      { id: 'spider-man', name: 'Spider Man' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'stages', name: 'Stages' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-      { id: 'tamaki-shindo', name: 'Tamaki Shindo' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'twelve', name: 'Twelve' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-      { id: 'unlock_pyron', name: 'Unlock_Pyron' },
-      { id: 'urien', name: 'Urien' },
-      { id: 'vanessa-lewis', name: 'Vanessa Lewis' },
-      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' },
-      { id: 'yoshitora-tokugawa', name: 'Yoshitora Tokugawa' },
-      { id: 'yusaku', name: 'Yusaku' },
-      { id: 'zaimoku', name: 'Zaimoku' },
-      { id: 'zangief', name: 'Zangief' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'snk-heroines-tag-team-frenzy',
-    name: "SNK Heroines: Tag Team Frenzy",
-    developer: "SNK",
-    releaseYear: 2018,
-    platform: "PlayStation 4 Nintendo Switch Windows",
-rosterCount: 999,
-        characters: [
-      { id: 'athena-asamiya', name: 'Athena Asamiya' },
-      { id: 'kula-diamond', name: 'Kula Diamond' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'shermie', name: 'Shermie' },
-      { id: 'sylvie-paula-paula', name: 'Sylvie Paula Paula' },
-      { id: 'zarina', name: 'Zarina' },
-      { id: 'love-heart', name: 'Love Heart' },
-      { id: 'mian', name: 'Mian' },
-      { id: 'luong', name: 'Luong' },
-      { id: 'mui-mui', name: 'Mui Mui' },
-      { id: 'kukri', name: 'Kukri' },
-      { id: 'thief-arthur', name: 'Thief Arthur' },
-      { id: 'skullo-mania', name: 'Skullo Mania' },
-      { id: 'miss-x', name: 'Miss X' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'snk-vs-capcom-svc-chaos',
-    name: "SNK vs. Capcom: SVC Chaos",
-    developer: "Capcom",
-    releaseYear: 2003,
-rosterCount: 999,
-        characters: [
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'mr-karate', name: 'Mr. Karate' },
-      { id: 'choi-bounge', name: 'Choi Bounge' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'kasumi-todoh', name: 'Kasumi Todoh' },
-      { id: 'earthquake', name: 'Earthquake' },
-      { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' },
-      { id: 'shiki', name: 'Shiki' },
-      { id: 'sagat', name: 'Sagat' },
-      { id: 'dhalsim', name: 'Dhalsim' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'ken-masters', name: 'Ken Masters' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'balrog', name: 'Balrog' },
-      { id: 'vega', name: 'Vega' },
-      { id: 'm-bison', name: 'M. Bison' },
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'hugo', name: 'Hugo' },
-      { id: 'tessa', name: 'Tessa' },
-      { id: 'serious-mr-karate', name: 'Serious Mr. Karate' },
-      { id: 'wild-iori', name: 'Wild Iori' },
-      { id: 'honki-ni-natta-ryo', name: 'Honki ni Natta Ryo' },
-      { id: 'mars-people', name: 'Mars People' },
-      { id: 'zero', name: 'Zero' },
-      { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
-      { id: 'dan-hibiki', name: 'Dan Hibiki' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'red-arremer', name: 'Red Arremer' },
-      { id: 'athena', name: 'Athena' },
-      { id: 'violent-ken', name: 'Violent Ken' },
-      { id: 'shin-akuma', name: 'Shin Akuma' },
-      { id: 'demitri_maximoff', name: 'Demitri_Maximoff' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'kasumi', name: 'Kasumi' },
-      { id: 'mega-man', name: 'Mega Man' },
-      { id: 'riot', name: 'Riot' },
-      { id: 'sega-saturn-fighting-games', name: 'Sega Saturn Fighting Games' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'super-street-fighter-ii',
-    name: "Super Street Fighter II: The New Challengers",
-    developer: "Capcom",
-    releaseYear: 1993,
-rosterCount: 999,
-        characters: [
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'zangief', name: 'Zangief' },
-      { id: 'dhalsim', name: 'Dhalsim' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'e-honda', name: 'E. Honda' },
-      { id: 'sagat', name: 'Sagat' },
-      { id: 'm-bison', name: 'M. Bison' },
-      { id: 'balrog', name: 'Balrog' },
-      { id: 'vega', name: 'Vega' },
-      { id: 't-hawk', name: 'T. Hawk' },
-      { id: 'cammy-white', name: 'Cammy White' },
-      { id: 'fei-long', name: 'Fei Long' },
-      { id: 'dee-jay', name: 'Dee Jay' },
-      { id: 'bison', name: 'Bison' },
-      { id: 'charlie', name: 'Charlie' },
-      { id: 'dee_jay', name: 'Dee_Jay' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'street-fighter-6',
-    name: "Street Fighter 6",
-    developer: "Capcom",
-    releaseYear: 2023,
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
-    tabs: ['Normal Moves', 'Unique Attacks', 'Special Moves', 'Super Arts', 'Throws', 'Common Moves'],
-rosterCount: 26,
-        characters: [
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'luke', name: 'Luke' },
-      { id: 'jamie', name: 'Jamie' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'kimberly', name: 'Kimberly' },
-      { id: 'juri', name: 'Juri' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'dhalsim', name: 'Dhalsim' },
-      { id: 'e.-honda', name: 'E. Honda' },
-      { id: 'dee-jay', name: 'Dee Jay' },
-      { id: 'manon', name: 'Manon' },
-      { id: 'marisa', name: 'Marisa' },
-      { id: 'jp', name: 'JP' },
-      { id: 'zangief', name: 'Zangief' },
-      { id: 'lily', name: 'Lily' },
-      { id: 'cammy', name: 'Cammy' },
-      { id: 'rashid', name: 'Rashid' },
-      { id: 'a.k.i.', name: 'A.K.I.' },
-      { id: 'ed', name: 'Ed' },
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'm.-bison', name: 'M. Bison' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'mai', name: 'Mai' },
-      { id: 'elena', name: 'Elena' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'street-fighter-alpha-3',
-    name: "Street Fighter Alpha 3",
-    developer: "Capcom",
-    releaseYear: 2023,
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
-rosterCount: 999,
-        characters: [
-      { id: 'adon', name: 'Adon' },
-      { id: 'akuma-(gouki)', name: 'Akuma (Gouki)' },
-      { id: 'balrog-(m-bison-jp)', name: 'Balrog (M. Bison JP)' },
-      { id: 'birdie', name: 'Birdie' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'cammy', name: 'Cammy' },
-      { id: 'charlie-(nash)', name: 'Charlie (Nash)' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'cody', name: 'Cody' },
-      { id: 'dhalsim', name: 'Dhalsim' },
-      { id: 'e-honda', name: 'E. Honda' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'guy', name: 'Guy' },
-      { id: 'karin-kanzuki', name: 'Karin Kanzuki' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'm-bison-(vega-jp)', name: 'M. Bison (Vega JP)' },
-      { id: 'rolento', name: 'Rolento' },
-      { id: 'rose', name: 'Rose' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'sagart', name: 'Sagart' },
-      { id: 'sakura', name: 'Sakura' },
-      { id: 'sodom', name: 'Sodom' },
-      { id: 'vega-(balrog-jp)', name: 'Vega (Balrog JP)' },
-      { id: 'zangief', name: 'Zangief' },
-      { id: 'bison', name: 'Bison' },
-      { id: 'charlie', name: 'Charlie' },
-      { id: 'dee-jay', name: 'Dee Jay' },
-      { id: 'deejay', name: 'Deejay' },
-      { id: 'dee_jay', name: 'Dee_Jay' },
-      { id: 'dramatic_battle', name: 'Dramatic_Battle' },
-      { id: 'dramatic_battle_mode', name: 'Dramatic_Battle_Mode' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'anakaris', name: 'Anakaris' },
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'asuka-honda', name: 'Asuka Honda' },
-      { id: 'aulbath', name: 'Aulbath' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'art-of-fighting', name: 'Art Of Fighting' },
-      { id: 'batsu', name: 'Batsu' },
-      { id: 'batsu-ichimonji', name: 'Batsu Ichimonji' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'blackheart', name: 'Blackheart' },
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'boman', name: 'Boman' },
-      { id: 'breakers-revenge', name: 'Breakers Revenge' },
-      { id: 'captain-america', name: 'Captain America' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'chunli', name: 'Chunli' },
-      { id: 'chun_li', name: 'Chun_Li' },
-      { id: 'cotw', name: 'Cotw' },
-      { id: 'cotw_andybogard', name: 'Cotw_Andybogard' },
-      { id: 'cotw_billykane', name: 'Cotw_Billykane' },
-      { id: 'cotw_chunli', name: 'Cotw_Chunli' },
-      { id: 'cotw_gato', name: 'Cotw_Gato' },
-      { id: 'cotw_joehigashi', name: 'Cotw_Joehigashi' },
-      { id: 'cotw_kimdonghwan', name: 'Cotw_Kimdonghwan' },
-      { id: 'cotw_kimjaehoon', name: 'Cotw_Kimjaehoon' },
-      { id: 'cotw_rockhoward', name: 'Cotw_Rockhoward' },
-      { id: 'cotw_terrybogard', name: 'Cotw_Terrybogard' },
-      { id: 'cotw_wolfgangkrauser', name: 'Cotw_Wolfgangkrauser' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'cyclops', name: 'Cyclops' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'decapre', name: 'Decapre' },
-      { id: 'demitri', name: 'Demitri' },
-      { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
-      { id: 'demitri_maximoff', name: 'Demitri_Maximoff' },
-      { id: 'donovan-baine', name: 'Donovan Baine' },
-      { id: 'donovan_baine', name: 'Donovan_Baine' },
-      { id: 'dudley', name: 'Dudley' },
-      { id: 'ehonda', name: 'Ehonda' },
-      { id: 'faq_notation', name: 'Faq_Notation' },
-      { id: 'fatal-fury-king-of-fighters', name: 'Fatal Fury King Of Fighters' },
-      { id: 'felicia', name: 'Felicia' },
-      { id: 'fighters-megamix', name: 'Fighters Megamix' },
-      { id: 'fighting-vipers', name: 'Fighting Vipers' },
-      { id: 'fight_ingrid', name: 'Fight_Ingrid' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'garou-mark-of-the-wolves', name: 'Garou Mark Of The Wolves' },
-      { id: 'geese', name: 'Geese' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'gill', name: 'Gill' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'hauzer', name: 'Hauzer' },
-      { id: 'hayate', name: 'Hayate' },
-      { id: 'helena-douglas', name: 'Helena Douglas' },
-      { id: 'hibiki', name: 'Hibiki' },
-      { id: 'hsien_ko', name: 'Hsien_Ko' },
-      { id: 'hyo_imawano', name: 'Hyo_Imawano' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'ingrid', name: 'Ingrid' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'jacky-bryant', name: 'Jacky Bryant' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'jedah', name: 'Jedah' },
-      { id: 'jedah-dohma', name: 'Jedah Dohma' },
-      { id: 'jin-saotome', name: 'Jin Saotome' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'juggernaut', name: 'Juggernaut' },
-      { id: 'juli', name: 'Juli' },
-      { id: 'karin', name: 'Karin' },
-      { id: 'kyosuke', name: 'Kyosuke' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'links', name: 'Links' },
-      { id: 'maki-genryusai', name: 'Maki Genryusai' },
-      { id: 'makoto', name: 'Makoto' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'mina-majikina', name: 'Mina Majikina' },
-      { id: 'morrigan', name: 'Morrigan' },
-      { id: 'mortal-kombat-deception', name: 'Mortal Kombat Deception' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'notation', name: 'Notation' },
-      { id: 'omega-red', name: 'Omega Red' },
-      { id: 'panchos', name: 'Panchos' },
-      { id: 'plasma-sword-nightmare-of-bilstein', name: 'Plasma Sword Nightmare Of Bilstein' },
-      { id: 'players', name: 'Players' },
-      { id: 'play_as_shin_gouki', name: 'Play_As_Shin_Gouki' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'psylocke', name: 'Psylocke' },
-      { id: 'pyron', name: 'Pyron' },
-      { id: 'real-bout-fatal-fury', name: 'Real Bout Fatal Fury' },
-      { id: 'real-bout-fatal-fury-special', name: 'Real Bout Fatal Fury Special' },
-      { id: 'remy', name: 'Remy' },
-      { id: 'rick-strowd', name: 'Rick Strowd' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'sabretooth', name: 'Sabretooth' },
-      { id: 'sagat', name: 'Sagat' },
-      { id: 'sakura-kasugano', name: 'Sakura Kasugano' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'sean', name: 'Sean' },
-      { id: 'select_cpu_opponent_and_cpu_costume_color', name: 'Select_Cpu_Opponent_And_Cpu_Costume_Color' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'shin-akuma', name: 'Shin Akuma' },
-      { id: 'shin_akuma', name: 'Shin_Akuma' },
-      { id: 'sho-hayate', name: 'Sho Hayate' },
-      { id: 'shoma', name: 'Shoma' },
-      { id: 'shuma-gorath', name: 'Shuma Gorath' },
-      { id: 'spider-man', name: 'Spider Man' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'stages', name: 'Stages' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-      { id: 'tamaki-shindo', name: 'Tamaki Shindo' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'twelve', name: 'Twelve' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-      { id: 'unlock_pyron', name: 'Unlock_Pyron' },
-      { id: 'urien', name: 'Urien' },
-      { id: 'vanessa-lewis', name: 'Vanessa Lewis' },
-      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' },
-      { id: 'yoshitora-tokugawa', name: 'Yoshitora Tokugawa' },
-      { id: 'yusaku', name: 'Yusaku' },
-      { id: 'zaimoku', name: 'Zaimoku' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'street-fighter-ex3',
-    name: "Street Fighter EX3",
-    developer: "Capcom",
-    releaseYear: 2023,
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
-rosterCount: 999,
-        characters: [
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'zangief', name: 'Zangief' },
-      { id: 'dhalsim', name: 'Dhalsim' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'sakura', name: 'Sakura' },
-      { id: 'vega', name: 'Vega' },
-      { id: 'doctrine-dark', name: 'Doctrine Dark' },
-      { id: 'hokuto', name: 'Hokuto' },
-      { id: 'cracker-jack', name: 'Cracker Jack' },
-      { id: 'skullomania', name: 'Skullomania' },
-      { id: 'sharon', name: 'Sharon' },
-      { id: 'nanase', name: 'Nanase' },
-      { id: 'ace', name: 'Ace' },
-      { id: 'm-bison', name: 'M. Bison' },
-      { id: 'sagat', name: 'Sagat' },
-      { id: 'garuda', name: 'Garuda' },
-      { id: 'shadow-geist', name: 'Shadow Geist' },
-      { id: 'kairi', name: 'Kairi' },
-      { id: 'vulcano-rosso', name: 'Vulcano Rosso' },
-      { id: 'area', name: 'Area' },
-      { id: 'evil-ryu', name: 'Evil Ryu' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'street-fighter-v-champion-edition',
-    name: "Street Fighter V: Champion Edition",
-    developer: "Capcom",
-    releaseYear: 2023,
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
-rosterCount: 999,
-        characters: [
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'luke', name: 'Luke' },
-      { id: 'rashid', name: 'Rashid' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'adon', name: 'Adon' },
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'anakaris', name: 'Anakaris' },
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'asuka-honda', name: 'Asuka Honda' },
-      { id: 'aulbath', name: 'Aulbath' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'batsu', name: 'Batsu' },
-      { id: 'batsu-ichimonji', name: 'Batsu Ichimonji' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'birdie', name: 'Birdie' },
-      { id: 'bison', name: 'Bison' },
-      { id: 'blackheart', name: 'Blackheart' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'boman', name: 'Boman' },
-      { id: 'cammy', name: 'Cammy' },
-      { id: 'captain-america', name: 'Captain America' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'charlie', name: 'Charlie' },
-      { id: 'chunli', name: 'Chunli' },
-      { id: 'chun_li', name: 'Chun_Li' },
-      { id: 'cody', name: 'Cody' },
-      { id: 'cotw', name: 'Cotw' },
-      { id: 'cotw_andybogard', name: 'Cotw_Andybogard' },
-      { id: 'cotw_billykane', name: 'Cotw_Billykane' },
-      { id: 'cotw_chunli', name: 'Cotw_Chunli' },
-      { id: 'cotw_gato', name: 'Cotw_Gato' },
-      { id: 'cotw_joehigashi', name: 'Cotw_Joehigashi' },
-      { id: 'cotw_kimdonghwan', name: 'Cotw_Kimdonghwan' },
-      { id: 'cotw_kimjaehoon', name: 'Cotw_Kimjaehoon' },
-      { id: 'cotw_rockhoward', name: 'Cotw_Rockhoward' },
-      { id: 'cotw_terrybogard', name: 'Cotw_Terrybogard' },
-      { id: 'cotw_wolfgangkrauser', name: 'Cotw_Wolfgangkrauser' },
-      { id: 'cyclops', name: 'Cyclops' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'decapre', name: 'Decapre' },
-      { id: 'dee-jay', name: 'Dee Jay' },
-      { id: 'deejay', name: 'Deejay' },
-      { id: 'dee_jay', name: 'Dee_Jay' },
-      { id: 'demitri', name: 'Demitri' },
-      { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
-      { id: 'demitri_maximoff', name: 'Demitri_Maximoff' },
-      { id: 'donovan-baine', name: 'Donovan Baine' },
-      { id: 'donovan_baine', name: 'Donovan_Baine' },
-      { id: 'dramatic_battle', name: 'Dramatic_Battle' },
-      { id: 'dramatic_battle_mode', name: 'Dramatic_Battle_Mode' },
-      { id: 'dudley', name: 'Dudley' },
-      { id: 'ehonda', name: 'Ehonda' },
-      { id: 'faq_notation', name: 'Faq_Notation' },
-      { id: 'felicia', name: 'Felicia' },
-      { id: 'fight_ingrid', name: 'Fight_Ingrid' },
-      { id: 'galford', name: 'Galford' },
-      { id: 'geese', name: 'Geese' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'gill', name: 'Gill' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'hauzer', name: 'Hauzer' },
-      { id: 'hayate', name: 'Hayate' },
-      { id: 'helena-douglas', name: 'Helena Douglas' },
-      { id: 'hibiki', name: 'Hibiki' },
-      { id: 'hsien_ko', name: 'Hsien_Ko' },
-      { id: 'hyo_imawano', name: 'Hyo_Imawano' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'ingrid', name: 'Ingrid' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'jacky-bryant', name: 'Jacky Bryant' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'jedah', name: 'Jedah' },
-      { id: 'jedah-dohma', name: 'Jedah Dohma' },
-      { id: 'jin-saotome', name: 'Jin Saotome' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'juggernaut', name: 'Juggernaut' },
-      { id: 'juli', name: 'Juli' },
-      { id: 'karin', name: 'Karin' },
-      { id: 'karin-kanzuki', name: 'Karin Kanzuki' },
-      { id: 'kyosuke', name: 'Kyosuke' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'links', name: 'Links' },
-      { id: 'maki-genryusai', name: 'Maki Genryusai' },
-      { id: 'makoto', name: 'Makoto' },
-      { id: 'mina-majikina', name: 'Mina Majikina' },
-      { id: 'morrigan', name: 'Morrigan' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'notation', name: 'Notation' },
-      { id: 'omega-red', name: 'Omega Red' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'panchos', name: 'Panchos' },
-      { id: 'players', name: 'Players' },
-      { id: 'play_as_shin_gouki', name: 'Play_As_Shin_Gouki' },
-      { id: 'psylocke', name: 'Psylocke' },
-      { id: 'pyron', name: 'Pyron' },
-      { id: 'remy', name: 'Remy' },
-      { id: 'rick-strowd', name: 'Rick Strowd' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'rolento', name: 'Rolento' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'sabretooth', name: 'Sabretooth' },
-      { id: 'sagat', name: 'Sagat' },
-      { id: 'sakura-kasugano', name: 'Sakura Kasugano' },
-      { id: 'sean', name: 'Sean' },
-      { id: 'select_cpu_opponent_and_cpu_costume_color', name: 'Select_Cpu_Opponent_And_Cpu_Costume_Color' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'shin-akuma', name: 'Shin Akuma' },
-      { id: 'shin_akuma', name: 'Shin_Akuma' },
-      { id: 'sho-hayate', name: 'Sho Hayate' },
-      { id: 'shoma', name: 'Shoma' },
-      { id: 'shuma-gorath', name: 'Shuma Gorath' },
-      { id: 'sodom', name: 'Sodom' },
-      { id: 'spider-man', name: 'Spider Man' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'stages', name: 'Stages' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'tamaki-shindo', name: 'Tamaki Shindo' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'twelve', name: 'Twelve' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-      { id: 'unlock_pyron', name: 'Unlock_Pyron' },
-      { id: 'urien', name: 'Urien' },
-      { id: 'vanessa-lewis', name: 'Vanessa Lewis' },
-      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' },
-      { id: 'yoshitora-tokugawa', name: 'Yoshitora Tokugawa' },
-      { id: 'yusaku', name: 'Yusaku' },
-      { id: 'zaimoku', name: 'Zaimoku' },
-      { id: 'zangief', name: 'Zangief' },
-      { id: 'art-of-fighting', name: 'Art Of Fighting' },
-      { id: 'breakers-revenge', name: 'Breakers Revenge' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'fatal-fury-king-of-fighters', name: 'Fatal Fury King Of Fighters' },
-      { id: 'fighters-megamix', name: 'Fighters Megamix' },
-      { id: 'fighting-vipers', name: 'Fighting Vipers' },
-      { id: 'garou-mark-of-the-wolves', name: 'Garou Mark Of The Wolves' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'mortal-kombat-deception', name: 'Mortal Kombat Deception' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'plasma-sword-nightmare-of-bilstein', name: 'Plasma Sword Nightmare Of Bilstein' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'real-bout-fatal-fury', name: 'Real Bout Fatal Fury' },
-      { id: 'real-bout-fatal-fury-special', name: 'Real Bout Fatal Fury Special' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'super-street-fighter-ii-turbo',
-    name: "Super Street Fighter II Turbo",
-    developer: "Capcom",
-    releaseYear: 1994,
-rosterCount: 999,
-        characters: [
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'balrog', name: 'Balrog' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'cammy', name: 'Cammy' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'dee-jay', name: 'Dee Jay' },
-      { id: 'dhalsim', name: 'Dhalsim' },
-      { id: 'e-honda', name: 'E. Honda' },
-      { id: 'fei-long', name: 'Fei Long' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'm-bison', name: 'M. Bison' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'sagat', name: 'Sagat' },
-      { id: 't-hawk', name: 'T. Hawk' },
-      { id: 'vega', name: 'Vega' },
-      { id: 'zangief', name: 'Zangief' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'tekken-8',
-    name: "Tekken 8",
-    developer: "Bandai Namco",
-    releaseYear: 2024,
-rosterCount: 999,
-        characters: [
-      { id: 'alisa', name: 'Alisa' },
-      { id: 'anna-williams', name: 'ANNA WILLIAMS' },
-      { id: 'armor-king', name: 'ARMOR KING' },
-      { id: 'asuka-kazama', name: 'ASUKA KAZAMA' },
-      { id: 'azucena-milagros', name: 'AZUCENA MILAGROS' },
-      { id: 'azucena', name: 'Azucena' },
-      { id: 'bryan-fury', name: 'BRYAN FURY' },
-      { id: 'claudio-serafino', name: 'CLAUDIO SERAFINO' },
-      { id: 'clive-rosfield', name: 'CLIVE ROSFIELD' },
-      { id: 'devil-jin', name: 'DEVIL JIN' },
-      { id: 'eddy-gordo', name: 'EDDY GORDO' },
-      { id: 'fahkumram', name: 'FAHKUMRAM' },
-      { id: 'feng-wei', name: 'FENG WEI' },
-      { id: 'heihachi-mishima', name: 'HEIHACHI MISHIMA' },
-      { id: 'hwoarang', name: 'Hwoarang' },
-      { id: 'jack-8', name: 'JACK 8' },
-      { id: 'jin-kazama', name: 'JIN KAZAMA' },
-      { id: 'jun', name: 'Jun' },
-      { id: 'kazuya-mishima', name: 'KAZUYA MISHIMA' },
-      { id: 'king', name: 'KING' },
-      { id: 'kuma-ii', name: 'KUMA II' },
-      { id: 'lars', name: 'Lars' },
-      { id: 'lee-chaolan', name: 'LEE CHAOLAN' },
-      { id: 'leo', name: 'Leo' },
-      { id: 'leroy-smith', name: 'LEROY SMITH' },
-      { id: 'lidia-sobieska', name: 'LIDIA SOBIESKA' },
-      { id: 'lili-de-rochefort', name: 'LILI DE ROCHEFORT' },
-      { id: 'ling-xiaoyu', name: 'LING XIAOYU' },
-      { id: 'marshall-law', name: 'MARSHALL LAW' },
-      { id: 'nina', name: 'Nina' },
-      { id: 'panda', name: 'PANDA' },
-      { id: 'paul-phoenix', name: 'PAUL PHOENIX' },
-      { id: 'raven', name: 'Raven' },
-      { id: 'reina', name: 'REINA' },
-      { id: 'sergei-dragunov', name: 'SERGEI DRAGUNOV' },
-      { id: 'shaheen', name: 'SHAHEEN' },
-      { id: 'steve', name: 'Steve' },
-      { id: 'victor-chevalier', name: 'VICTOR CHEVALIER' },
-      { id: 'yoshimitsu', name: 'Yoshimitsu' },
-      { id: 'zafina', name: 'Zafina' },
-      { id: 'akira', name: 'Akira' },
-      { id: 'art-of-fighting', name: 'Art Of Fighting' },
-      { id: 'ayane', name: 'Ayane' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'batsu', name: 'Batsu' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'birdie', name: 'Birdie' },
-      { id: 'bison', name: 'Bison' },
-      { id: 'bloody-roar', name: 'Bloody Roar' },
-      { id: 'bloody-roar-primal-fury-', name: 'Bloody Roar Primal Fury ' },
-      { id: 'boman', name: 'Boman' },
-      { id: 'cammy', name: 'Cammy' },
-      { id: 'christie', name: 'Christie' },
-      { id: 'costume_colors', name: 'Costume_Colors' },
-      { id: 'decapre', name: 'Decapre' },
-      { id: 'faq_notation', name: 'Faq_Notation' },
-      { id: 'fight_ingrid', name: 'Fight_Ingrid' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'hinata', name: 'Hinata' },
-      { id: 'hyo_imawano', name: 'Hyo_Imawano' },
-      { id: 'ingrid', name: 'Ingrid' },
-      { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'juli', name: 'Juli' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'links', name: 'Links' },
-      { id: 'maki-genryusai', name: 'Maki Genryusai' },
-      { id: 'mortal-kombat-deception', name: 'Mortal Kombat Deception' },
-      { id: 'musar', name: 'Musar' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'notation', name: 'Notation' },
-      { id: 'players', name: 'Players' },
-      { id: 'pyron', name: 'Pyron' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'sagat', name: 'Sagat' },
-      { id: 'shoma', name: 'Shoma' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-      { id: 'virtua-fighter-4', name: 'Virtua Fighter 4' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'tatsunoko-vs-capcom-ultimate-all-stars',
-    name: "Tatsunoko vs. Capcom: Ultimate All-Stars",
-    developer: "Capcom",
-    releaseYear: 2010,
-    platform: "Wii",
-rosterCount: 999,
-        characters: [
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'morrigan', name: 'Morrigan' },
-      { id: 'alex', name: 'Alex' },
-      { id: 'batsu', name: 'Batsu' },
-      { id: 'mega-man-volnutt', name: 'Mega Man Volnutt' },
-      { id: 'roll', name: 'Roll' },
-      { id: 'saki-omokane', name: 'Saki Omokane' },
-      { id: 'viewtiful-joe', name: 'Viewtiful Joe' },
-      { id: 'ptx-40a', name: 'PTX-40A' },
-      { id: 'kaijin-no-soki', name: 'Kaijin no Soki' },
-      { id: 'zero', name: 'Zero' },
-      { id: 'frank-west', name: 'Frank West' },
-      { id: 'ken-the-eagle', name: 'Ken the Eagle' },
-      { id: 'jun-the-swan', name: 'Jun the Swan' },
-      { id: 'casshan', name: 'Casshan' },
-      { id: 'tekkaman', name: 'Tekkaman' },
-      { id: 'hurricane-polimar', name: 'Hurricane Polimar' },
-      { id: 'yatterman-1', name: 'Yatterman-1' },
-      { id: 'karas', name: 'Karas' },
-      { id: 'doronjo', name: 'Doronjo' },
-      { id: 'gold-lightan', name: 'Gold Lightan' },
-      { id: 'ippatsuman', name: 'Ippatsuman' },
-      { id: 'hakushon-daimao', name: 'Hakushon Daimao' },
-      { id: 'tekkaman-blade', name: 'Tekkaman Blade' },
-      { id: 'joe-the-condor', name: 'Joe the Condor' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'the-king-of-fighters-2000',
-    name: "The King of Fighters 2000",
-    developer: "SNK",
-    releaseYear: 2000,
-    platform: "Neo Geo Arcade",
-rosterCount: 999,
-        characters: [
-      { id: 'maxima', name: 'Maxima' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'ramon', name: 'Ramon' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'lin', name: 'Lin' },
-      { id: 'shingo', name: 'Shingo' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'andy', name: 'Andy' },
-      { id: 'joe', name: 'Joe' },
-      { id: 'mary', name: 'Mary' },
-      { id: 'ryo', name: 'Ryo' },
-      { id: 'robert', name: 'Robert' },
-      { id: 'king', name: 'King' },
-      { id: 'takuma', name: 'Takuma' },
-      { id: 'leona', name: 'Leona' },
-      { id: 'ralf', name: 'Ralf' },
-      { id: 'clark', name: 'Clark' },
-      { id: 'whip', name: 'Whip' },
-      { id: 'athena', name: 'Athena' },
-      { id: 'kensou', name: 'Kensou' },
-      { id: 'chin', name: 'Chin' },
-      { id: 'bao', name: 'Bao' },
-      { id: 'mai', name: 'Mai' },
-      { id: 'yuri', name: 'Yuri' },
-      { id: 'kasumi', name: 'Kasumi' },
-      { id: 'hinako', name: 'Hinako' },
-      { id: 'kim', name: 'Kim' },
-      { id: 'chang', name: 'Chang' },
-      { id: 'choi', name: 'Choi' },
-      { id: 'jhun', name: 'Jhun' },
-      { id: 'kula', name: 'Kula' },
-      { id: 'zero', name: 'Zero' },
-      { id: 'astra-superstars', name: 'Astra Superstars' },
-      { id: 'athena-asamiya', name: 'Athena Asamiya' },
-      { id: 'baiken', name: 'Baiken' },
-      { id: 'captain-america', name: 'Captain America' },
-      { id: 'cotw_hokutomaru', name: 'Cotw_Hokutomaru' },
-      { id: 'cotw_hotarufutaba', name: 'Cotw_Hotarufutaba' },
-      { id: 'evil_ryu', name: 'Evil_Ryu' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'kula-diamond', name: 'Kula Diamond' },
-      { id: 'lee-chaolan', name: 'Lee Chaolan' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'rugal-bernstein', name: 'Rugal Bernstein' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'saturn', name: 'Saturn' },
-      { id: 'sf31', name: 'Sf31' },
-      { id: 'shun-di', name: 'Shun Di' },
-      { id: 'striker', name: 'Striker' },
-      { id: 'the-king-of-fighters-2002', name: 'The King Of Fighters 2002' },
-      { id: 'the-king-of-fighters-2003', name: 'The King Of Fighters 2003' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-      { id: 'ultra-street-fighter-iv', name: 'Ultra Street Fighter Iv' },
-      { id: 'virtua-fighter', name: 'Virtua Fighter' },
-      { id: 'yamazaki', name: 'Yamazaki' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'the-king-of-fighters-2001',
-    name: "The King of Fighters 2001",
-    developer: "SNK",
-    releaseYear: 2001,
-    platform: "Neo Geo Arcade",
-rosterCount: 999,
-        characters: [
-      { id: 'maxima', name: 'Maxima' },
-      { id: 'whip', name: 'Whip' },
-      { id: 'lin', name: 'Lin' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'daimon', name: 'Daimon' },
-      { id: 'shingo', name: 'Shingo' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'andy', name: 'Andy' },
-      { id: 'joe', name: 'Joe' },
-      { id: 'mary', name: 'Mary' },
-      { id: 'ryo', name: 'Ryo' },
-      { id: 'robert', name: 'Robert' },
-      { id: 'takuma', name: 'Takuma' },
-      { id: 'yuri', name: 'Yuri' },
-      { id: 'leona', name: 'Leona' },
-      { id: 'ralf', name: 'Ralf' },
-      { id: 'clark', name: 'Clark' },
-      { id: 'heidern', name: 'Heidern' },
-      { id: 'athena', name: 'Athena' },
-      { id: 'kensou', name: 'Kensou' },
-      { id: 'chin', name: 'Chin' },
-      { id: 'bao', name: 'Bao' },
-      { id: 'king', name: 'King' },
-      { id: 'mai', name: 'Mai' },
-      { id: 'hinako', name: 'Hinako' },
-      { id: 'xiangfei', name: 'Xiangfei' },
-      { id: 'kim', name: 'Kim' },
-      { id: 'chang', name: 'Chang' },
-      { id: 'choi', name: 'Choi' },
-      { id: 'may-lee', name: 'May Lee' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'mature', name: 'Mature' },
-      { id: 'vice', name: 'Vice' },
-      { id: 'seth', name: 'Seth' },
-      { id: 'ramon', name: 'Ramon' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'angel', name: 'Angel' },
-      { id: 'kula', name: 'Kula' },
-      { id: 'foxy', name: 'Foxy' },
-      { id: 'k9999', name: 'K9999' },
-      { id: 'igniz', name: 'Igniz' },
-      { id: 'athena-asamiya', name: 'Athena Asamiya' },
-      { id: 'evil_ryu', name: 'Evil_Ryu' },
-      { id: 'hyo_imawano', name: 'Hyo_Imawano' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'kula-diamond', name: 'Kula Diamond' },
-      { id: 'kyosuke', name: 'Kyosuke' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'rolento', name: 'Rolento' },
-      { id: 'rugal-bernstein', name: 'Rugal Bernstein' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'shun-di', name: 'Shun Di' },
-      { id: 'special_stock_gauge', name: 'Special_Stock_Gauge' },
-      { id: 'the-king-of-fighters-2002', name: 'The King Of Fighters 2002' },
-      { id: 'the-king-of-fighters-2003', name: 'The King Of Fighters 2003' },
-      { id: 'yamazaki', name: 'Yamazaki' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'the-king-of-fighters-2002',
-    name: "The King of Fighters 2002",
-    developer: "SNK",
-    releaseYear: 2002,
-    platform: "Neo Geo Arcade",
-rosterCount: 999,
-        characters: [
-      { id: 'maxima', name: 'Maxima' },
-      { id: 'whip', name: 'Whip' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'daimon', name: 'Daimon' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'andy', name: 'Andy' },
-      { id: 'joe', name: 'Joe' },
-      { id: 'ryo', name: 'Ryo' },
-      { id: 'robert', name: 'Robert' },
-      { id: 'takuma', name: 'Takuma' },
-      { id: 'leona', name: 'Leona' },
-      { id: 'ralf', name: 'Ralf' },
-      { id: 'clark', name: 'Clark' },
-      { id: 'athena', name: 'Athena' },
-      { id: 'kensou', name: 'Kensou' },
-      { id: 'chin', name: 'Chin' },
-      { id: 'mai', name: 'Mai' },
-      { id: 'yuri', name: 'Yuri' },
-      { id: 'may-lee', name: 'May Lee' },
-      { id: 'kim', name: 'Kim' },
-      { id: 'chang', name: 'Chang' },
-      { id: 'choi', name: 'Choi' },
-      { id: 'yashiro', name: 'Yashiro' },
-      { id: 'shermie', name: 'Shermie' },
-      { id: 'chris', name: 'Chris' },
-      { id: 'yamazaki', name: 'Yamazaki' },
-      { id: 'mary', name: 'Mary' },
-      { id: 'billy', name: 'Billy' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'mature', name: 'Mature' },
-      { id: 'vice', name: 'Vice' },
-      { id: 'kula', name: 'Kula' },
-      { id: 'k9999', name: 'K9999' },
-      { id: 'angel', name: 'Angel' },
-      { id: 'rugal', name: 'Rugal' },
-      { id: 'shingo', name: 'Shingo' },
-      { id: 'king', name: 'King' },
-      { id: 'orochi-yashiro', name: 'Orochi Yashiro' },
-      { id: 'orochi-shermie', name: 'Orochi Shermie' },
-      { id: 'orochi-chris', name: 'Orochi Chris' },
-      { id: 'athena-asamiya', name: 'Athena Asamiya' },
-      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
-      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
-      { id: 'cotw_nightmaregeese', name: 'Cotw_Nightmaregeese' },
-      { id: 'fatal-fury-special', name: 'Fatal Fury Special' },
-      { id: 'final_battle', name: 'Final_Battle' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'kula-diamond', name: 'Kula Diamond' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'mortal-kombat-deception', name: 'Mortal Kombat Deception' },
-      { id: 'oro', name: 'Oro' },
-      { id: 'orochi_iori', name: 'Orochi_Iori' },
-      { id: 'robert-garcia', name: 'Robert Garcia' },
-      { id: 'rugal-bernstein', name: 'Rugal Bernstein' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'samurai-shodown-iii-blades-of-blood', name: 'Samurai Shodown Iii Blades Of Blood' },
-      { id: 'the-king-of-fighters-2000', name: 'The King Of Fighters 2000' },
-      { id: 'the-king-of-fighters-2001', name: 'The King Of Fighters 2001' },
-      { id: 'the-king-of-fighters-2002', name: 'The King Of Fighters 2002' },
-      { id: 'the-king-of-fighters-2003', name: 'The King Of Fighters 2003' },
-      { id: 'the-king-of-fighters-94', name: 'The King Of Fighters 94' },
-      { id: 'the-king-of-fighters-95', name: 'The King Of Fighters 95' },
-      { id: 'the-king-of-fighters-96', name: 'The King Of Fighters 96' },
-      { id: 'the-king-of-fighters-97', name: 'The King Of Fighters 97' },
-      { id: 'the-king-of-fighters-98', name: 'The King Of Fighters 98' },
-      { id: 'the-king-of-fighters-98-ultimate-match', name: 'The King Of Fighters 98 Ultimate Match' },
-      { id: 'the-king-of-fighters-99', name: 'The King Of Fighters 99' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'world_tour', name: 'World_Tour' },
-      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'the-king-of-fighters-2003',
-    name: "The King of Fighters 2003",
-    developer: "SNK",
-    releaseYear: 2003,
-    platform: "Neo Geo Arcade",
-rosterCount: 999,
-        characters: [
-      { id: 'ash-crimson', name: 'Ash Crimson' },
-      { id: 'duo-lon', name: 'Duo Lon' },
-      { id: 'shen-woo', name: 'Shen Woo' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'joe', name: 'Joe' },
-      { id: 'tizoc', name: 'Tizoc' },
-      { id: 'ryo', name: 'Ryo' },
-      { id: 'robert', name: 'Robert' },
-      { id: 'yuri', name: 'Yuri' },
-      { id: 'kim', name: 'Kim' },
-      { id: 'chang', name: 'Chang' },
-      { id: 'jhun', name: 'Jhun' },
-      { id: 'leona', name: 'Leona' },
-      { id: 'ralf', name: 'Ralf' },
-      { id: 'clark', name: 'Clark' },
-      { id: 'gato', name: 'Gato' },
-      { id: 'billy', name: 'Billy' },
-      { id: 'yamazaki', name: 'Yamazaki' },
-      { id: 'king', name: 'King' },
-      { id: 'mai', name: 'Mai' },
-      { id: 'mary', name: 'Mary' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'shingo', name: 'Shingo' },
-      { id: 'daimon', name: 'Daimon' },
-      { id: 'athena', name: 'Athena' },
-      { id: 'kensou', name: 'Kensou' },
-      { id: 'hinako', name: 'Hinako' },
-      { id: 'maxima', name: 'Maxima' },
-      { id: 'whip', name: 'Whip' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'chizuru', name: 'Chizuru' },
-      { id: 'maki', name: 'Maki' },
-      { id: 'adelheid', name: 'Adelheid' },
-      { id: 'mukai', name: 'Mukai' },
-      { id: 'athena-asamiya', name: 'Athena Asamiya' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'cable', name: 'Cable' },
-      { id: 'costume_colors', name: 'Costume_Colors' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'kula-diamond', name: 'Kula Diamond' },
-      { id: 'plasma-sword-nightmare-of-bilstein', name: 'Plasma Sword Nightmare Of Bilstein' },
-      { id: 'rugal-bernstein', name: 'Rugal Bernstein' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'the-king-of-fighters-2002', name: 'The King Of Fighters 2002' },
-      { id: 'the-king-of-fighters-2003', name: 'The King Of Fighters 2003' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'the-king-of-fighters-94',
-    name: "The King of Fighters '94",
-    developer: "SNK",
-    releaseYear: 1994,
-    platform: "Neo Geo Arcade",
-rosterCount: 20,
-        characters: [
-      { id: 'alba-meira', name: 'Alba Meira' },
-      { id: 'soiree-meira', name: 'Soiree Meira' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'athena-asamiya', name: 'Athena Asamiya' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'ralf-jones', name: 'Ralf Jones' },
-      { id: 'clark-still', name: 'Clark Still' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'maxima', name: 'Maxima' },
-      { id: 'seth', name: 'Seth' },
-      { id: 'mignon-beart', name: 'Mignon Beart' },
-      { id: 'lien-neville', name: 'Lien Neville' },
-      { id: 'chae-lim', name: 'Chae Lim' },
-      { id: 'duke-(boss)', name: 'Duke (Boss)' },
-      { id: 'akuma', name: 'Akuma' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'the-king-of-fighters-xiii',
-    name: "The King of Fighters XIII",
-    developer: "SNK",
-    releaseYear: 2010,
-    platform: "PlayStation 2 Arcade",
-rosterCount: 999,
-        characters: [
-      { id: 'elisabeth', name: 'Elisabeth' },
-      { id: 'duo-lon', name: 'Duo Lon' },
-      { id: 'shen-woo', name: 'Shen Woo' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'daimon', name: 'Daimon' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'andy', name: 'Andy' },
-      { id: 'joe', name: 'Joe' },
-      { id: 'ryo', name: 'Ryo' },
-      { id: 'robert', name: 'Robert' },
-      { id: 'takuma', name: 'Takuma' },
-      { id: 'ralf', name: 'Ralf' },
-      { id: 'clark', name: 'Clark' },
-      { id: 'leona', name: 'Leona' },
-      { id: 'athena', name: 'Athena' },
-      { id: 'kensou', name: 'Kensou' },
-      { id: 'chin', name: 'Chin' },
-      { id: 'king', name: 'King' },
-      { id: 'mai', name: 'Mai' },
-      { id: 'yuri', name: 'Yuri' },
-      { id: 'kim', name: 'Kim' },
-      { id: 'hwa-jai', name: 'Hwa Jai' },
-      { id: 'raiden', name: 'Raiden' },
-      { id: 'maxima', name: 'Maxima' },
-      { id: 'kula', name: 'Kula' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'mature', name: 'Mature' },
-      { id: 'vice', name: 'Vice' },
-      { id: 'ash', name: 'Ash' },
-      { id: 'billy', name: 'Billy' },
-      { id: 'saiki', name: 'Saiki' },
-      { id: 'mr-karate', name: 'Mr. Karate' },
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'astra-superstars', name: 'Astra Superstars' },
-      { id: 'balrog', name: 'Balrog' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'cammy', name: 'Cammy' },
-      { id: 'dan-hibiki', name: 'Dan Hibiki' },
-      { id: 'evil_ryu', name: 'Evil_Ryu' },
-      { id: 'frieza', name: 'Frieza' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'kyosuke', name: 'Kyosuke' },
-      { id: 'maki', name: 'Maki' },
-      { id: 'mortal-kombat-deception', name: 'Mortal Kombat Deception' },
-      { id: 'rolento', name: 'Rolento' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'saturn', name: 'Saturn' },
-      { id: 'sf31', name: 'Sf31' },
-      { id: 'shun-di', name: 'Shun Di' },
-      { id: 'the-king-of-fighters-xv', name: 'The King Of Fighters Xv' },
-      { id: 'ultra-street-fighter-iv', name: 'Ultra Street Fighter Iv' },
-      { id: 'virtua-fighter', name: 'Virtua Fighter' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'the-king-of-fighters-xiv',
-    name: "The King of Fighters XIV",
-    developer: "SNK",
-    releaseYear: 2016,
-    platform: "PlayStation 4 Windows",
-rosterCount: 999,
-        characters: [
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'goro', name: 'Goro' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'andy', name: 'Andy' },
-      { id: 'joe', name: 'Joe' },
-      { id: 'ryo', name: 'Ryo' },
-      { id: 'robert', name: 'Robert' },
-      { id: 'yuri', name: 'Yuri' },
-      { id: 'leona', name: 'Leona' },
-      { id: 'ralf', name: 'Ralf' },
-      { id: 'clark', name: 'Clark' },
-      { id: 'athena', name: 'Athena' },
-      { id: 'kensou', name: 'Kensou' },
-      { id: 'chin', name: 'Chin' },
-      { id: 'king', name: 'King' },
-      { id: 'mai', name: 'Mai' },
-      { id: 'alice', name: 'Alice' },
-      { id: 'kim', name: 'Kim' },
-      { id: 'luong', name: 'Luong' },
-      { id: 'gang-il', name: 'Gang-il' },
-      { id: 'maxima', name: 'Maxima' },
-      { id: 'kula', name: 'Kula' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'mature', name: 'Mature' },
-      { id: 'vice', name: 'Vice' },
-      { id: 'sylvie', name: 'Sylvie' },
-      { id: 'mian', name: 'Mian' },
-      { id: 'kukri', name: 'Kukri' },
-      { id: 'nelson', name: 'Nelson' },
-      { id: 'zarina', name: 'Zarina' },
-      { id: 'bandeiras', name: 'Bandeiras' },
-      { id: 'meitenkun', name: 'Meitenkun' },
-      { id: 'tung', name: 'Tung' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'muimui', name: 'Muimui' },
-      { id: 'love-heart', name: 'Love Heart' },
-      { id: 'xanadu', name: 'Xanadu' },
-      { id: 'chang', name: 'Chang' },
-      { id: 'choi', name: 'Choi' },
-      { id: 'geese', name: 'Geese' },
-      { id: 'billy', name: 'Billy' },
-      { id: 'hein', name: 'Hein' },
-      { id: 'ramon', name: 'Ramon' },
-      { id: 'angel', name: 'Angel' },
-      { id: 'tizoc', name: 'Tizoc' },
-      { id: 'antonov', name: 'Antonov' },
-      { id: 'verse', name: 'Verse' },
-      { id: 'whip', name: 'Whip' },
-      { id: 'yamazaki', name: 'Yamazaki' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'rock', name: 'Rock' },
-      { id: 'heidern', name: 'Heidern' },
-      { id: 'oswald', name: 'Oswald' },
-      { id: 'najd', name: 'Najd' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'astra-superstars', name: 'Astra Superstars' },
-      { id: 'balrog', name: 'Balrog' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'cammy', name: 'Cammy' },
-      { id: 'dan-hibiki', name: 'Dan Hibiki' },
-      { id: 'evil_ryu', name: 'Evil_Ryu' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'kyosuke', name: 'Kyosuke' },
-      { id: 'maki', name: 'Maki' },
-      { id: 'mortal-kombat-deception', name: 'Mortal Kombat Deception' },
-      { id: 'rolento', name: 'Rolento' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'saturn', name: 'Saturn' },
-      { id: 'sf31', name: 'Sf31' },
-      { id: 'shun-di', name: 'Shun Di' },
-      { id: 'the-king-of-fighters-xv', name: 'The King Of Fighters Xv' },
-      { id: 'ultra-street-fighter-iv', name: 'Ultra Street Fighter Iv' },
-      { id: 'virtua-fighter', name: 'Virtua Fighter' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'the-king-of-fighters-xv',
-    name: "The King of Fighters XV",
-    developer: "SNK",
-    releaseYear: 2022,
-    platform: "PlayStation 4 Windows",
-rosterCount: 999,
-        characters: [
-      { id: 'meitenkun', name: 'Meitenkun' },
-      { id: 'benimaru', name: 'Benimaru' },
-      { id: 'kyo', name: 'Kyo' },
-      { id: 'iori', name: 'Iori' },
-      { id: 'chizuru', name: 'Chizuru' },
-      { id: 'terry', name: 'Terry' },
-      { id: 'andy', name: 'Andy' },
-      { id: 'joe', name: 'Joe' },
-      { id: 'ryo', name: 'Ryo' },
-      { id: 'robert', name: 'Robert' },
-      { id: 'king', name: 'King' },
-      { id: 'yashiro', name: 'Yashiro' },
-      { id: 'shermie', name: 'Shermie' },
-      { id: 'chris', name: 'Chris' },
-      { id: 'ralf', name: 'Ralf' },
-      { id: 'clark', name: 'Clark' },
-      { id: 'leona', name: 'Leona' },
-      { id: 'mai', name: 'Mai' },
-      { id: 'yuri', name: 'Yuri' },
-      { id: 'athena', name: 'Athena' },
-      { id: 'antonov', name: 'Antonov' },
-      { id: 'ramon', name: 'Ramon' },
-      { id: 'king-of-dinosaurs', name: 'King of Dinosaurs' },
-      { id: 'isla', name: 'Isla' },
-      { id: 'heidern', name: 'Heidern' },
-      { id: 'dolores', name: 'Dolores' },
-      { id: 'maxima', name: 'Maxima' },
-      { id: 'kula', name: 'Kula' },
-      { id: 'elisabeth', name: 'Elisabeth' },
-      { id: 'ash', name: 'Ash' },
-      { id: 'kukri', name: 'Kukri' },
-      { id: 'krohnen', name: 'Krohnen' },
-      { id: 'angel', name: 'Angel' },
-      { id: 'blue-mary', name: 'Blue Mary' },
-      { id: 'rugal', name: 'Rugal' },
-      { id: 'rock', name: 'Rock' },
-      { id: 'gato', name: 'Gato' },
-      { id: 'jenet', name: 'Jenet' },
-      { id: 'geese', name: 'Geese' },
-      { id: 'billy', name: 'Billy' },
-      { id: 'yamazaki', name: 'Yamazaki' },
-      { id: 'orochi-yashiro', name: 'Orochi Yashiro' },
-      { id: 'orochi-shermie', name: 'Orochi Shermie' },
-      { id: 'orochi-chris', name: 'Orochi Chris' },
-      { id: 'haohmaru', name: 'Haohmaru' },
-      { id: 'nakoruru', name: 'Nakoruru' },
-      { id: 'darli', name: 'Darli' },
-      { id: 'shingo', name: 'Shingo' },
-      { id: 'kim', name: 'Kim' },
-      { id: 'sylvie', name: 'Sylvie' },
-      { id: 'najd', name: 'Najd' },
-      { id: 'duo-lon', name: 'Duo Lon' },
-      { id: 'hinako', name: 'Hinako' },
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'astra-superstars', name: 'Astra Superstars' },
-      { id: 'balrog', name: 'Balrog' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'cammy', name: 'Cammy' },
-      { id: 'dan-hibiki', name: 'Dan Hibiki' },
-      { id: 'evil_ryu', name: 'Evil_Ryu' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'kyosuke', name: 'Kyosuke' },
-      { id: 'maki', name: 'Maki' },
-      { id: 'mortal-kombat-deception', name: 'Mortal Kombat Deception' },
-      { id: 'rolento', name: 'Rolento' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'saturn', name: 'Saturn' },
-      { id: 'sf31', name: 'Sf31' },
-      { id: 'shun-di', name: 'Shun Di' },
-      { id: 'the-king-of-fighters-xv', name: 'The King Of Fighters Xv' },
-      { id: 'ultra-street-fighter-iv', name: 'Ultra Street Fighter Iv' },
-      { id: 'virtua-fighter', name: 'Virtua Fighter' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'the-last-blade',
-    name: "The Last Blade",
-    developer: "SNK",
-    releaseYear: 1997,
-rosterCount: 999,
-        characters: [
-      { id: 'kaede', name: 'Kaede' },
-      { id: 'moriya-minakata', name: 'Moriya Minakata' },
-      { id: 'akira-yuki', name: 'Akira Yuki' },
-      { id: 'armor-king', name: 'Armor King' },
-      { id: 'attack_and_defense', name: 'Attack_And_Defense' },
-      { id: 'basic_commands', name: 'Basic_Commands' },
-      { id: 'bb-hood', name: 'Bb Hood' },
-      { id: 'blackheart', name: 'Blackheart' },
-      { id: 'chair_person', name: 'Chair_Person' },
-      { id: 'cotw_kenmasters', name: 'Cotw_Kenmasters' },
-      { id: 'daigo', name: 'Daigo' },
-      { id: 'dan-hibiki', name: 'Dan Hibiki' },
-      { id: 'demitri_maximov', name: 'Demitri_Maximov' },
-      { id: 'donovan-baine', name: 'Donovan Baine' },
-      { id: 'donovan_baine', name: 'Donovan_Baine' },
-      { id: 'bloody-roar', name: 'Bloody Roar' },
-      { id: 'breakers-revenge', name: 'Breakers Revenge' },
-      { id: 'eiji-shinjo', name: 'Eiji Shinjo' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'hibiki', name: 'Hibiki' },
-      { id: 'hibiki-takane', name: 'Hibiki Takane' },
-      { id: 'hyde', name: 'Hyde' },
-      { id: 'isla', name: 'Isla' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'jin-kazama', name: 'Jin Kazama' },
-      { id: 'john_talbain', name: 'John_Talbain' },
-      { id: 'kasumi', name: 'Kasumi' },
-      { id: 'kayin-amoh', name: 'Kayin Amoh' },
-      { id: 'ken-masters', name: 'Ken Masters' },
-      { id: 'kim', name: 'Kim' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'kyoko', name: 'Kyoko' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'marisa', name: 'Marisa' },
-      { id: 'rage-of-the-dragons', name: 'Rage Of The Dragons' },
-      { id: 'roberto', name: 'Roberto' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'samurai-shodown', name: 'Samurai Shodown' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'sf31', name: 'Sf31' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'special_stock_gauge', name: 'Special_Stock_Gauge' },
-      { id: 'spider-man', name: 'Spider Man' },
-      { id: 'street-fighter-iii-3rd-strike', name: 'Street Fighter Iii 3Rd Strike' },
-      { id: 'tekkaman-blade', name: 'Tekkaman Blade' },
-      { id: 'the-last-blade', name: 'The Last Blade' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-      { id: 'ukyo-tachibana', name: 'Ukyo Tachibana' },
-      { id: 'victor-von-gerdenheim', name: 'Victor Von Gerdenheim' },
-      { id: 'victor_von_gerdenheim', name: 'Victor_Von_Gerdenheim' },
-      { id: 'wild_daigo', name: 'Wild_Daigo' },
-      { id: 'zaki', name: 'Zaki' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'the-last-blade-2',
-    name: "The Last Blade 2",
-    developer: "SNK",
-    releaseYear: 1997,
-rosterCount: 999,
-        characters: [
-      { id: 'kaede-(awakened)', name: 'Kaede (Awakened)' },
-      { id: 'moriya-minakata', name: 'Moriya Minakata' },
-      { id: 'setsuna', name: 'Setsuna' },
-      { id: 'yuki', name: 'Yuki' },
-      { id: 'akira-yuki', name: 'Akira Yuki' },
-      { id: 'armor-king', name: 'Armor King' },
-      { id: 'attack_and_defense', name: 'Attack_And_Defense' },
-      { id: 'basic_commands', name: 'Basic_Commands' },
-      { id: 'bb-hood', name: 'Bb Hood' },
-      { id: 'blackheart', name: 'Blackheart' },
-      { id: 'chair_person', name: 'Chair_Person' },
-      { id: 'cotw_kenmasters', name: 'Cotw_Kenmasters' },
-      { id: 'daigo', name: 'Daigo' },
-      { id: 'dan-hibiki', name: 'Dan Hibiki' },
-      { id: 'demitri_maximov', name: 'Demitri_Maximov' },
-      { id: 'donovan-baine', name: 'Donovan Baine' },
-      { id: 'donovan_baine', name: 'Donovan_Baine' },
-      { id: 'eiji-shinjo', name: 'Eiji Shinjo' },
-      { id: 'bloody-roar', name: 'Bloody Roar' },
-      { id: 'breakers-revenge', name: 'Breakers Revenge' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'hibiki', name: 'Hibiki' },
-      { id: 'hibiki-takane', name: 'Hibiki Takane' },
-      { id: 'hyde', name: 'Hyde' },
-      { id: 'isla', name: 'Isla' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'jin-kazama', name: 'Jin Kazama' },
-      { id: 'john_talbain', name: 'John_Talbain' },
-      { id: 'kasumi', name: 'Kasumi' },
-      { id: 'kayin-amoh', name: 'Kayin Amoh' },
-      { id: 'ken-masters', name: 'Ken Masters' },
-      { id: 'kim', name: 'Kim' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'kyoko', name: 'Kyoko' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'marisa', name: 'Marisa' },
-      { id: 'rage-of-the-dragons', name: 'Rage Of The Dragons' },
-      { id: 'roberto', name: 'Roberto' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'samurai-shodown', name: 'Samurai Shodown' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'sf31', name: 'Sf31' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'special_stock_gauge', name: 'Special_Stock_Gauge' },
-      { id: 'spider-man', name: 'Spider Man' },
-      { id: 'street-fighter-iii-3rd-strike', name: 'Street Fighter Iii 3Rd Strike' },
-      { id: 'tekkaman-blade', name: 'Tekkaman Blade' },
-      { id: 'the-last-blade', name: 'The Last Blade' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-      { id: 'ukyo-tachibana', name: 'Ukyo Tachibana' },
-      { id: 'victor-von-gerdenheim', name: 'Victor Von Gerdenheim' },
-      { id: 'victor_von_gerdenheim', name: 'Victor_Von_Gerdenheim' },
-      { id: 'wild_daigo', name: 'Wild_Daigo' },
-      { id: 'zaki', name: 'Zaki' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'battle-arena-toshinden-3',
-    name: "Battle Arena Toshinden 3",
-    developer: "Tamsoft",
-    releaseYear: 1996,
-    platform: "PlayStation",
-rosterCount: 999,
-        characters: [
-      { id: 'eiji-shinjo', name: 'Eiji Shinjo' },
-      { id: 'kayin-amoh', name: 'Kayin Amoh' },
-      { id: 'sofia', name: 'Sofia' },
-      { id: 'rungo-iron', name: 'Rungo Iron' },
-      { id: 'mondo', name: 'Mondo' },
-      { id: 'duke-b-rambert', name: 'Duke B. Rambert' },
-      { id: 'ellis', name: 'Ellis' },
-      { id: 'gaia', name: 'Gaia' },
-      { id: 'sho-shinjo', name: 'Sho Shinjo' },
-      { id: 'tracy', name: 'Tracy' },
-      { id: 'chaos', name: 'Chaos' },
-      { id: 'vermilion', name: 'Vermilion' },
-      { id: 'david', name: 'David' },
-      { id: 'shizuku-fuji', name: 'Shizuku Fuji' },
-      { id: 'nagisa-iwashiro', name: 'Nagisa Iwashiro' },
-      { id: 'bayhou', name: 'Bayhou' },
-      { id: 'cuiling', name: 'Cuiling' },
-      { id: 'toujin', name: 'Toujin' },
-      { id: 'leon', name: 'Leon' },
-      { id: 'ten-count', name: 'Ten Count' },
-      { id: 'zola', name: 'Zola' },
-      { id: 'adam', name: 'Adam' },
-      { id: 'schultz', name: 'Schultz' },
-      { id: 'rachael', name: 'Rachael' },
-      { id: 'judgement', name: 'Judgement' },
-      { id: 'miss-til', name: 'Miss Til' },
-      { id: 'tau', name: 'Tau' },
-      { id: 'atago', name: 'Atago' },
-      { id: 'mizuki', name: 'Mizuki' },
-      { id: 'abel', name: 'Abel' },
-      { id: 'veil', name: 'Veil' },
-      { id: 'naru-amoh', name: 'Naru Amoh' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'ultimate-marvel-vs-capcom-3',
-    name: "Ultimate Marvel vs. Capcom 3",
-    developer: "Capcom",
-    releaseYear: 2011,
-    platform: "PlayStation 3 Xbox 360 Windows",
-rosterCount: 999,
-        characters: [
-      { id: 'dante', name: 'Dante' },
-      { id: 'doctor-doom', name: 'Doctor Doom' },
-      { id: 'magneto', name: 'Magneto' },
-      { id: 'sentinel', name: 'Sentinel' },
-      { id: 'spider-man', name: 'Spider-Man' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'vergil', name: 'Vergil' },
-      { id: 'wesker', name: 'Wesker' },
-      { id: 'wolverine', name: 'Wolverine' },
-      { id: 'zero', name: 'Zero' },
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'anakaris', name: 'Anakaris' },
-      { id: 'batsu', name: 'Batsu' },
-      { id: 'blackheart', name: 'Blackheart' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'boman', name: 'Boman' },
-      { id: 'bulleta', name: 'Bulleta' },
-      { id: 'burning_batsu', name: 'Burning_Batsu' },
-      { id: 'cable', name: 'Cable' },
-      { id: 'captain-america', name: 'Captain America' },
-      { id: 'captain-commando', name: 'Captain Commando' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'cyclops', name: 'Cyclops' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
-      { id: 'demitri_maximoff', name: 'Demitri_Maximoff' },
-      { id: 'fight_ingrid', name: 'Fight_Ingrid' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'hayato', name: 'Hayato' },
-      { id: 'hayato-kanzaki', name: 'Hayato Kanzaki' },
-      { id: 'hsien_ko', name: 'Hsien_Ko' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'ingrid', name: 'Ingrid' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'jin-saotome', name: 'Jin Saotome' },
-      { id: 'juggernaut', name: 'Juggernaut' },
-      { id: 'kurow', name: 'Kurow' },
-      { id: 'links', name: 'Links' },
-      { id: 'mega-man', name: 'Mega Man' },
-      { id: 'morrigan', name: 'Morrigan' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'omega-red', name: 'Omega Red' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'players', name: 'Players' },
-      { id: 'powered_akira', name: 'Powered_Akira' },
-      { id: 'psylocke', name: 'Psylocke' },
-      { id: 'pyron', name: 'Pyron' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'plasma-sword-nightmare-of-bilstein', name: 'Plasma Sword Nightmare Of Bilstein' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'projectjustice', name: 'Projectjustice' },
-      { id: 'reptos', name: 'Reptos' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'sabretooth', name: 'Sabretooth' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'sega-saturn-fighting-games', name: 'Sega Saturn Fighting Games' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'shin-akuma', name: 'Shin Akuma' },
-      { id: 'shin_akuma', name: 'Shin_Akuma' },
-      { id: 'shoma', name: 'Shoma' },
-      { id: 'shuma-gorath', name: 'Shuma Gorath' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-      { id: 'the_plasma_moves', name: 'The_Plasma_Moves' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'types_of_throws', name: 'Types_Of_Throws' },
-      { id: 'vatsu', name: 'Vatsu' },
-      { id: 'wild_daigo', name: 'Wild_Daigo' },
-      { id: 'zangief', name: 'Zangief' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'ultimate-mortal-kombat-3',
-    name: "Ultimate Mortal Kombat 3",
-    developer: "NetherRealm Studios",
-    releaseYear: 2011,
-    platform: "PlayStation 3 Xbox 360 Windows",
-rosterCount: 999,
-        characters: [
-      { id: 'kitana', name: 'Kitana' },
-      { id: 'reptile', name: 'Reptile' },
-      { id: 'sonya', name: 'Sonya' },
-      { id: 'jax', name: 'Jax' },
-      { id: 'nightwolf', name: 'Nightwolf' },
-      { id: 'jade', name: 'Jade' },
-      { id: 'scorpion', name: 'Scorpion' },
-      { id: 'kano', name: 'Kano' },
-      { id: 'sub-zero', name: 'Sub-Zero' },
-      { id: 'sektor', name: 'Sektor' },
-      { id: 'sindel', name: 'Sindel' },
-      { id: 'cyrax', name: 'Cyrax' },
-      { id: 'kung-lao', name: 'Kung Lao' },
-      { id: 'kabal', name: 'Kabal' },
-      { id: 'sheeva', name: 'Sheeva' },
-      { id: 'shang-tsung', name: 'Shang Tsung' },
-      { id: 'liu-kang', name: 'Liu Kang' },
-      { id: 'smoke', name: 'Smoke' },
-      { id: 'noob-saibot', name: 'Noob Saibot' },
-      { id: 'rain', name: 'Rain' },
-      { id: 'mileena', name: 'Mileena' },
-      { id: 'ermac', name: 'Ermac' },
-      { id: 'classic-sub-zero', name: 'Classic Sub-Zero' },
-      { id: 'art-of-fighting', name: 'Art Of Fighting' },
-      { id: 'blodia', name: 'Blodia' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'hsien_ko', name: 'Hsien_Ko' },
-      { id: 'jin-saotome', name: 'Jin Saotome' },
-      { id: 'links', name: 'Links' },
-      { id: 'mortal-kombat-1', name: 'Mortal Kombat 1' },
-      { id: 'mortal-kombat-deception', name: 'Mortal Kombat Deception' },
-      { id: 'players', name: 'Players' },
-      { id: 'revision_history', name: 'Revision_History' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'ultra-street-fighter-iv',
-    name: "Ultra Street Fighter IV",
-    developer: "Capcom",
-    releaseYear: 2014,
-    platform: "Windows PlayStation 3 Xbox 360",
-rosterCount: 999,
-        characters: [
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'ken', name: 'Ken' },
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'honda', name: 'Honda' },
-      { id: 'blanka', name: 'Blanka' },
-      { id: 'zangief', name: 'Zangief' },
-      { id: 'guile', name: 'Guile' },
-      { id: 'dhalsim', name: 'Dhalsim' },
-      { id: 'balrog', name: 'Balrog' },
-      { id: 'vega', name: 'Vega' },
-      { id: 'sagat', name: 'Sagat' },
-      { id: 'bison', name: 'Bison' },
-      { id: 'viper', name: 'Viper' },
-      { id: 'rufus', name: 'Rufus' },
-      { id: 'fuerte', name: 'Fuerte' },
-      { id: 'abel', name: 'Abel' },
-      { id: 'seth', name: 'Seth' },
-      { id: 'akuma', name: 'Akuma' },
-      { id: 'gouken', name: 'Gouken' },
-      { id: 'sakura', name: 'Sakura' },
-      { id: 'rose', name: 'Rose' },
-      { id: 'dan', name: 'Dan' },
-      { id: 'cammy', name: 'Cammy' },
-      { id: 'fei-long', name: 'Fei Long' },
-      { id: 'gen', name: 'Gen' },
-      { id: 'hawk', name: 'Hawk' },
-      { id: 'dee-jay', name: 'Dee Jay' },
-      { id: 'guy', name: 'Guy' },
-      { id: 'cody', name: 'Cody' },
-      { id: 'adon', name: 'Adon' },
-      { id: 'ibuki', name: 'Ibuki' },
-      { id: 'makoto', name: 'Makoto' },
-      { id: 'dudley', name: 'Dudley' },
-      { id: 'hakan', name: 'Hakan' },
-      { id: 'juri', name: 'Juri' },
-      { id: 'yun', name: 'Yun' },
-      { id: 'yang', name: 'Yang' },
-      { id: 'evil-ryu', name: 'Evil Ryu' },
-      { id: 'oni', name: 'Oni' },
-      { id: 'hugo', name: 'Hugo' },
-      { id: 'poison', name: 'Poison' },
-      { id: 'elena', name: 'Elena' },
-      { id: 'rolento', name: 'Rolento' },
-      { id: 'decapre', name: 'Decapre' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'under-night-in-birth-ii-[sysceles]',
-    name: "Under Night In-Birth II [Sys:Celes]",
-    developer: "French-Bread",
-    releaseYear: 2024,
-    platform: "Windows PlayStation 4 PlayStation 5",
-rosterCount: 999,
-        characters: [
-      { id: 'hyde', name: 'Hyde' },
-      { id: 'linne', name: 'Linne' },
-      { id: 'waldstein', name: 'Waldstein' },
-      { id: 'carmine', name: 'Carmine' },
-      { id: 'orie', name: 'Orie' },
-      { id: 'gordeau', name: 'Gordeau' },
-      { id: 'merkava', name: 'Merkava' },
-      { id: 'vatista', name: 'Vatista' },
-      { id: 'seth', name: 'Seth' },
-      { id: 'yuzuriha', name: 'Yuzuriha' },
-      { id: 'hilda', name: 'Hilda' },
-      { id: 'eltnum', name: 'Eltnum' },
-      { id: 'chaos', name: 'Chaos' },
-      { id: 'nanase', name: 'Nanase' },
-      { id: 'byakuya', name: 'Byakuya' },
-      { id: 'phonon', name: 'Phonon' },
-      { id: 'mika', name: 'Mika' },
-      { id: 'enkidu', name: 'Enkidu' },
-      { id: 'wagner', name: 'Wagner' },
-      { id: 'londrekia', name: 'Londrekia' },
-      { id: 'tsurugi', name: 'Tsurugi' },
-      { id: 'kaguya', name: 'Kaguya' },
-      { id: 'kuon', name: 'Kuon' },
-      { id: 'uzuki', name: 'Uzuki' },
-      { id: 'ogre', name: 'Ogre' },
-      { id: 'izumi', name: 'Izumi' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'vampirehunter2',
-    name: "Vampire Hunter 2",
-    developer: "Capcom",
-    releaseYear: 1997,
-    platform: "Arcade",
-rosterCount: 999,
-        characters: [
-      { id: 'donovan', name: 'Donovan' },
-      { id: 'pyron', name: 'Pyron' },
-      { id: 'aulbath', name: 'Aulbath' },
-      { id: 'bishamon', name: 'Bishamon' },
-      { id: 'bulleta', name: 'Bulleta' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
-      { id: 'demitri_maximoff', name: 'Demitri_Maximoff' },
-      { id: 'demitri_maximov', name: 'Demitri_Maximov' },
-      { id: 'donovan-baine', name: 'Donovan Baine' },
-      { id: 'donovan_baine', name: 'Donovan_Baine' },
-      { id: 'jedah-dohma', name: 'Jedah Dohma' },
-      { id: 'john_talbain', name: 'John_Talbain' },
-      { id: 'lord_zabel', name: 'Lord_Zabel' },
-      { id: 'morrigan-aensland', name: 'Morrigan Aensland' },
-      { id: 'morrigan_aensland', name: 'Morrigan_Aensland' },
-      { id: 'morrigan_arnsland', name: 'Morrigan_Arnsland' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'rikuo', name: 'Rikuo' },
-      { id: 'sakura-kasugano', name: 'Sakura Kasugano' },
-      { id: 'sasquatch', name: 'Sasquatch' },
-      { id: 'select_cpu_opponent_and_cpu_costume_color', name: 'Select_Cpu_Opponent_And_Cpu_Costume_Color' },
-      { id: 'vampiresavior', name: 'Vampiresavior' },
-      { id: 'victor-von-gerdenheim', name: 'Victor Von Gerdenheim' },
-      { id: 'victor_gerdenheim', name: 'Victor_Gerdenheim' },
-      { id: 'victor_von_geldenheim', name: 'Victor_Von_Geldenheim' },
-      { id: 'victor_von_gerdenheim', name: 'Victor_Von_Gerdenheim' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'vampiresavior',
-    name: "Vampire Savior",
-    developer: "Capcom",
-    releaseYear: 1997,
-    platform: "Arcade Sega Saturn PlayStation",
-rosterCount: 999,
-        characters: [
-      { id: 'anakaris', name: 'ANAKARIS' },
-      { id: 'aulbath', name: 'AULBATH' },
-      { id: 'bb-hood-(bulleta)', name: 'B.B. Hood (Bulleta)' },
-      { id: 'bishamon', name: 'BISHAMON' },
-      { id: 'bulleta', name: 'BULLETA' },
-      { id: 'common-moves', name: 'COMMON MOVES' },
-      { id: 'common_moves', name: 'COMMON MOVES' },
-      { id: 'demitri-maximoff', name: 'DEMITRI MAXIMOFF' },
-      { id: 'demitri_maximoff', name: 'DEMITRI MAXIMOFF' },
-      { id: 'donovan', name: 'DONOVAN' },
-      { id: 'es', name: 'ES' },
-      { id: 'ex', name: 'EX' },
-      { id: 'felicia', name: 'FELICIA' },
-      { id: 'gallon', name: 'GALLON' },
-      { id: 'huitzil-(phobos)', name: 'Huitzil (Phobos)' },
-      { id: 'jedah-dohma', name: 'Jedah Dohma' },
-      { id: 'jedah', name: 'JEDAH' },
-      { id: 'jon-talbain', name: 'Jon Talbain' },
-      { id: 'lei-lei', name: 'LEI-LEI' },
-      { id: 'lei_lei', name: 'LEI-LEI' },
-      { id: 'lilith', name: 'LILITH' },
-      { id: 'lord-raptor-(zabel)', name: 'Lord Raptor (Zabel)' },
-      { id: 'lord-zabel', name: 'LORD ZABEL' },
-      { id: 'lord_zabel', name: 'LORD ZABEL' },
-      { id: 'morrigan-aensland', name: 'MORRIGAN AENSLAND' },
-      { id: 'morrigan_aensland', name: 'MORRIGAN AENSLAND' },
-      { id: 'pyron', name: 'PYRON' },
-      { id: 'q-bee', name: 'Q-BEE' },
-      { id: 'q_bee', name: 'Q-BEE' },
-      { id: 'sasquatch', name: 'SASQUATCH' },
-      { id: 'victor-gerdenheim', name: 'VICTOR GERDENHEIM' },
-      { id: 'victor-von-gerdenheim', name: 'Victor von Gerdenheim' },
-      { id: 'victor_gerdenheim', name: 'VICTOR GERDENHEIM' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'john_talbain', name: 'John_Talbain' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'reptos', name: 'Reptos' },
-      { id: 'rikuo', name: 'Rikuo' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'select_cpu_opponent_and_cpu_costume_color', name: 'Select_Cpu_Opponent_And_Cpu_Costume_Color' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-      { id: 'vampiresavior', name: 'Vampiresavior' },
-      { id: 'victor_von_geldenheim', name: 'Victor_Von_Geldenheim' },
-      { id: 'victor_von_gerdenheim', name: 'Victor_Von_Gerdenheim' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'vampiresavior2',
-    name: "Vampire Savior 2",
-    developer: "Capcom",
-    releaseYear: 1997,
-    platform: "Arcade Sega Saturn PlayStation",
-rosterCount: 999,
-        characters: [
-      { id: 'bb-hood', name: 'Bb Hood' },
-      { id: 'jedah', name: 'Jedah' },
-      { id: 'anakaris', name: 'Anakaris' },
-      { id: 'aulbath', name: 'Aulbath' },
-      { id: 'bishamon', name: 'Bishamon' },
-      { id: 'bulleta', name: 'Bulleta' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'hypersf2', name: 'Hypersf2' },
-      { id: 'ism_quick_reference_chart', name: 'Ism_Quick_Reference_Chart' },
-      { id: 'jedah-dohma', name: 'Jedah Dohma' },
-      { id: 'john_talbain', name: 'John_Talbain' },
-      { id: 'lord_zabel', name: 'Lord_Zabel' },
-      { id: 'morrigan-aensland', name: 'Morrigan Aensland' },
-      { id: 'morrigan_aensland', name: 'Morrigan_Aensland' },
-      { id: 'msh', name: 'Msh' },
-      { id: 'nightwarriors', name: 'Nightwarriors' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'cyberbots-full-metal-madness', name: 'Cyberbots Full Metal Madness' },
-      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
-      { id: 'groove-on-fight', name: 'Groove On Fight' },
-      { id: 'marvel-vs-capcom-2', name: 'Marvel Vs Capcom 2' },
-      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
-      { id: 'other_special_poses', name: 'Other_Special_Poses' },
-      { id: 'pocketfighter', name: 'Pocketfighter' },
-      { id: 'reptos', name: 'Reptos' },
-      { id: 'rikuo', name: 'Rikuo' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'samurai-shodown-ii', name: 'Samurai Shodown Ii' },
-      { id: 'sasquatch', name: 'Sasquatch' },
-      { id: 'select_cpu_opponent_and_cpu_costume_color', name: 'Select_Cpu_Opponent_And_Cpu_Costume_Color' },
-      { id: 'sf2', name: 'Sf2' },
-      { id: 'sf32i', name: 'Sf32I' },
-      { id: 'sf33s', name: 'Sf33S' },
-      { id: 'ssf2', name: 'Ssf2' },
-      { id: 'street-fighter-ex3', name: 'Street Fighter Ex3' },
-      { id: 'street_fighter_ii', name: 'Street_Fighter_Ii' },
-      { id: 'street_fighter_iii', name: 'Street_Fighter_Iii' },
-      { id: 'strider-hiryu', name: 'Strider Hiryu' },
-      { id: 'super-street-fighter-ii-turbo', name: 'Super Street Fighter Ii Turbo' },
-      { id: 'vampiresavior', name: 'Vampiresavior' },
-      { id: 'victor-von-gerdenheim', name: 'Victor Von Gerdenheim' },
-      { id: 'victor_gerdenheim', name: 'Victor_Gerdenheim' },
-      { id: 'victor_von_geldenheim', name: 'Victor_Von_Geldenheim' },
-      { id: 'victor_von_gerdenheim', name: 'Victor_Von_Gerdenheim' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'virtua-fighter',
-    name: "Virtua Fighter 1",
-    developer: "Sega",
-    releaseYear: 1993,
-    platform: "Arcade Sega Saturn Sega 32X",
-rosterCount: 999,
-        characters: [
-      { id: 'akira-yuki', name: 'Akira Yuki' },
-      { id: 'dural', name: 'Dural' },
-      { id: 'jacky-bryant', name: 'Jacky Bryant' },
-      { id: 'jeffry-mcwild', name: 'Jeffry McWild' },
-      { id: 'kage-maru', name: 'Kage-Maru' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'pai-chan', name: 'Pai Chan' },
-      { id: 'sarah-bryant', name: 'Sarah Bryant' },
-      { id: 'wolf-hawkfield', name: 'Wolf Hawkfield' },
-      { id: 'akira', name: 'Akira' },
-      { id: 'aoi-umenokoji', name: 'Aoi Umenokoji' },
-      { id: 'aoi-umenokouji', name: 'Aoi Umenokouji' },
-      { id: 'bahn', name: 'Bahn' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'bloody-roar', name: 'Bloody Roar' },
-      { id: 'bloody-roar-primal-fury-', name: 'Bloody Roar Primal Fury ' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'fighters-megamix', name: 'Fighters Megamix' },
-      { id: 'fighting-vipers', name: 'Fighting Vipers' },
-      { id: 'goh-hinogami', name: 'Goh Hinogami' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'kids-sarah', name: 'Kids Sarah' },
-      { id: 'lion-rafale', name: 'Lion Rafale' },
-      { id: 'raven', name: 'Raven' },
-      { id: 'ryo', name: 'Ryo' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'saturn', name: 'Saturn' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'training_mode', name: 'Training_Mode' },
-      { id: 'vanessa-lewis', name: 'Vanessa Lewis' },
-      { id: 'virtua-fighter-2', name: 'Virtua Fighter 2' },
-      { id: 'virtua-fighter-3', name: 'Virtua Fighter 3' },
-      { id: 'virtua-fighter-4', name: 'Virtua Fighter 4' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'virtua-fighter-2',
-    name: "Virtua Fighter 2",
-    developer: "Sega",
-    releaseYear: 1993,
-    platform: "Arcade Sega Saturn Sega 32X",
-rosterCount: 999,
-        characters: [
-      { id: 'akira-yuki', name: 'Akira Yuki' },
-      { id: 'jacky-bryant', name: 'Jacky Bryant' },
-      { id: 'jeffry-mcwild', name: 'Jeffry McWild' },
-      { id: 'kage-maru', name: 'Kage-Maru' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'lion-rafale', name: 'Lion Rafale' },
-      { id: 'pai-chan', name: 'Pai Chan' },
-      { id: 'sarah-bryant', name: 'Sarah Bryant' },
-      { id: 'shun-di', name: 'Shun Di' },
-      { id: 'wolf-hawkfield', name: 'Wolf Hawkfield' },
-      { id: 'virtua-fighter-2', name: 'Virtua Fighter 2' },
-      { id: 'akira', name: 'Akira' },
-      { id: 'aoi-umenokoji', name: 'Aoi Umenokoji' },
-      { id: 'aoi-umenokouji', name: 'Aoi Umenokouji' },
-      { id: 'bahn', name: 'Bahn' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'bloody-roar', name: 'Bloody Roar' },
-      { id: 'bloody-roar-primal-fury-', name: 'Bloody Roar Primal Fury ' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'dural', name: 'Dural' },
-      { id: 'fighters-megamix', name: 'Fighters Megamix' },
-      { id: 'fighting-vipers', name: 'Fighting Vipers' },
-      { id: 'goh-hinogami', name: 'Goh Hinogami' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'kids-sarah', name: 'Kids Sarah' },
-      { id: 'raven', name: 'Raven' },
-      { id: 'ryo', name: 'Ryo' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'saturn', name: 'Saturn' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'training_mode', name: 'Training_Mode' },
-      { id: 'vanessa-lewis', name: 'Vanessa Lewis' },
-      { id: 'virtua-fighter-3', name: 'Virtua Fighter 3' },
-      { id: 'virtua-fighter-4', name: 'Virtua Fighter 4' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'virtua-fighter-2',
-    name: "Virtua Fighter 2",
-    developer: "Sega",
-    releaseYear: 1993,
-    platform: "Arcade Sega Saturn Sega 32X",
-rosterCount: 999,
-        characters: [
-      { id: 'akira-yuki', name: 'Akira Yuki' },
-      { id: 'jacky-bryant', name: 'Jacky Bryant' },
-      { id: 'jeffry-mcwild', name: 'Jeffry McWild' },
-      { id: 'kage-maru', name: 'Kage-Maru' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'lion-rafale', name: 'Lion Rafale' },
-      { id: 'pai-chan', name: 'Pai Chan' },
-      { id: 'sarah-bryant', name: 'Sarah Bryant' },
-      { id: 'shun-di', name: 'Shun Di' },
-      { id: 'wolf-hawkfield', name: 'Wolf Hawkfield' },
-      { id: 'virtua-fighter-2', name: 'Virtua Fighter 2' },
-      { id: 'akira', name: 'Akira' },
-      { id: 'aoi-umenokoji', name: 'Aoi Umenokoji' },
-      { id: 'aoi-umenokouji', name: 'Aoi Umenokouji' },
-      { id: 'bahn', name: 'Bahn' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'bloody-roar', name: 'Bloody Roar' },
-      { id: 'bloody-roar-primal-fury-', name: 'Bloody Roar Primal Fury ' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'dural', name: 'Dural' },
-      { id: 'fighters-megamix', name: 'Fighters Megamix' },
-      { id: 'fighting-vipers', name: 'Fighting Vipers' },
-      { id: 'goh-hinogami', name: 'Goh Hinogami' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'kids-sarah', name: 'Kids Sarah' },
-      { id: 'raven', name: 'Raven' },
-      { id: 'ryo', name: 'Ryo' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'saturn', name: 'Saturn' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'training_mode', name: 'Training_Mode' },
-      { id: 'vanessa-lewis', name: 'Vanessa Lewis' },
-      { id: 'virtua-fighter-3', name: 'Virtua Fighter 3' },
-      { id: 'virtua-fighter-4', name: 'Virtua Fighter 4' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'virtua-fighter-3',
-    name: "Virtua Fighter 3",
-    developer: "Sega",
-    releaseYear: 1993,
-    platform: "Arcade Sega Saturn Sega 32X",
-rosterCount: 999,
-        characters: [
-      { id: 'akira-yuki', name: 'Akira Yuki' },
-      { id: 'aoi-umenokoji', name: 'Aoi Umenokoji' },
-      { id: 'aoi-umenokouji', name: 'Aoi Umenokouji' },
-      { id: 'jacky-bryant', name: 'Jacky Bryant' },
-      { id: 'kage-maru', name: 'Kage-Maru' },
-      { id: 'sarah-bryant', name: 'Sarah Bryant' },
-      { id: 'taka-arashi', name: 'Taka-Arashi' },
-      { id: 'wolf-hawkfield', name: 'Wolf Hawkfield' },
-      { id: 'kage-maru', name: 'Kage Maru' },
-      { id: 'akira', name: 'Akira' },
-      { id: 'bahn', name: 'Bahn' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'bloody-roar', name: 'Bloody Roar' },
-      { id: 'bloody-roar-primal-fury-', name: 'Bloody Roar Primal Fury ' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'dural', name: 'Dural' },
-      { id: 'fighters-megamix', name: 'Fighters Megamix' },
-      { id: 'fighting-vipers', name: 'Fighting Vipers' },
-      { id: 'goh-hinogami', name: 'Goh Hinogami' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'jeffry-mcwild', name: 'Jeffry Mcwild' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'kids-sarah', name: 'Kids Sarah' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'lion-rafale', name: 'Lion Rafale' },
-      { id: 'raven', name: 'Raven' },
-      { id: 'ryo', name: 'Ryo' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'saturn', name: 'Saturn' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'training_mode', name: 'Training_Mode' },
-      { id: 'vanessa-lewis', name: 'Vanessa Lewis' },
-      { id: 'virtua-fighter-2', name: 'Virtua Fighter 2' },
-      { id: 'virtua-fighter-3', name: 'Virtua Fighter 3' },
-      { id: 'virtua-fighter-4', name: 'Virtua Fighter 4' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'virtua-fighter-4',
-    name: "Virtua Fighter 4",
-    developer: "Sega",
-    releaseYear: 1993,
-    platform: "Arcade Sega Saturn Sega 32X",
-rosterCount: 18,
-        characters: [
-      { id: 'akira-yuki', name: 'Akira Yuki' },
-      { id: 'brad-burns', name: 'Brad Burns' },
-      { id: 'goh-hinogami', name: 'Goh Hinogami' },
-      { id: 'jacky-bryant', name: 'Jacky Bryant' },
-      { id: 'lei-fei', name: 'Lei-Fei' },
-      { id: 'vanessa-lewis', name: 'Vanessa Lewis' },
-      { id: 'wolf-hawkfield', name: 'Wolf Hawkfield' },
-      { id: 'akira', name: 'Akira' },
-      { id: 'jeffry-mcwild', name: 'Jeffry Mcwild' },
-      { id: 'lion-rafale', name: 'Lion Rafale' },
-      { id: 'sarah-bryant', name: 'Sarah Bryant' },
-      { id: 'virtua-fighter-3', name: 'Virtua Fighter 3' },
-      { id: 'virtua-fighter-4', name: 'Virtua Fighter 4' },
-      { id: 'aoi-umenokoji', name: 'Aoi Umenokoji' },
-      { id: 'aoi-umenokouji', name: 'Aoi Umenokouji' },
-      { id: 'bahn', name: 'Bahn' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'virtua-fighter-3',
-    name: "Virtua Fighter 3",
-    developer: "Sega",
-    releaseYear: 1993,
-    platform: "Arcade Sega Saturn Sega 32X",
-rosterCount: 999,
-        characters: [
-      { id: 'akira-yuki', name: 'Akira Yuki' },
-      { id: 'aoi-umenokoji', name: 'Aoi Umenokoji' },
-      { id: 'aoi-umenokouji', name: 'Aoi Umenokouji' },
-      { id: 'jacky-bryant', name: 'Jacky Bryant' },
-      { id: 'kage-maru', name: 'Kage-Maru' },
-      { id: 'sarah-bryant', name: 'Sarah Bryant' },
-      { id: 'taka-arashi', name: 'Taka-Arashi' },
-      { id: 'wolf-hawkfield', name: 'Wolf Hawkfield' },
-      { id: 'kage-maru', name: 'Kage Maru' },
-      { id: 'akira', name: 'Akira' },
-      { id: 'bahn', name: 'Bahn' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' },
-      { id: 'bloody-roar', name: 'Bloody Roar' },
-      { id: 'bloody-roar-primal-fury-', name: 'Bloody Roar Primal Fury ' },
-      { id: 'cyberbots', name: 'Cyberbots' },
-      { id: 'dural', name: 'Dural' },
-      { id: 'fighters-megamix', name: 'Fighters Megamix' },
-      { id: 'fighting-vipers', name: 'Fighting Vipers' },
-      { id: 'goh-hinogami', name: 'Goh Hinogami' },
-      { id: 'jann-lee', name: 'Jann Lee' },
-      { id: 'jeffry-mcwild', name: 'Jeffry Mcwild' },
-      { id: 'kids-akira', name: 'Kids Akira' },
-      { id: 'kids-sarah', name: 'Kids Sarah' },
-      { id: 'lau-chan', name: 'Lau Chan' },
-      { id: 'lion-rafale', name: 'Lion Rafale' },
-      { id: 'raven', name: 'Raven' },
-      { id: 'ryo', name: 'Ryo' },
-      { id: 'ryuko-yamazaki', name: 'Ryuko Yamazaki' },
-      { id: 'saturn', name: 'Saturn' },
-      { id: 'throws_and_holds', name: 'Throws_And_Holds' },
-      { id: 'tina-armstrong', name: 'Tina Armstrong' },
-      { id: 'training_mode', name: 'Training_Mode' },
-      { id: 'vanessa-lewis', name: 'Vanessa Lewis' },
-      { id: 'virtua-fighter-2', name: 'Virtua Fighter 2' },
-      { id: 'virtua-fighter-3', name: 'Virtua Fighter 3' },
-      { id: 'virtua-fighter-4', name: 'Virtua Fighter 4' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'virtua-fighter-4',
-    name: "Virtua Fighter 4",
-    developer: "Sega",
-    releaseYear: 1993,
-    platform: "Arcade Sega Saturn Sega 32X",
-rosterCount: 18,
-        characters: [
-      { id: 'akira-yuki', name: 'Akira Yuki' },
-      { id: 'brad-burns', name: 'Brad Burns' },
-      { id: 'goh-hinogami', name: 'Goh Hinogami' },
-      { id: 'jacky-bryant', name: 'Jacky Bryant' },
-      { id: 'lei-fei', name: 'Lei-Fei' },
-      { id: 'vanessa-lewis', name: 'Vanessa Lewis' },
-      { id: 'wolf-hawkfield', name: 'Wolf Hawkfield' },
-      { id: 'akira', name: 'Akira' },
-      { id: 'jeffry-mcwild', name: 'Jeffry Mcwild' },
-      { id: 'lion-rafale', name: 'Lion Rafale' },
-      { id: 'sarah-bryant', name: 'Sarah Bryant' },
-      { id: 'virtua-fighter-3', name: 'Virtua Fighter 3' },
-      { id: 'virtua-fighter-4', name: 'Virtua Fighter 4' },
-      { id: 'aoi-umenokoji', name: 'Aoi Umenokoji' },
-      { id: 'aoi-umenokouji', name: 'Aoi Umenokouji' },
-      { id: 'bahn', name: 'Bahn' },
-      { id: 'bass-armstrong', name: 'Bass Armstrong' },
-      { id: 'bayman', name: 'Bayman' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'virtua-fighter-5-ultimate-showdown',
-    name: "Virtua Fighter 5 Ultimate Showdown",
-    developer: "Sega",
-    releaseYear: 1993,
-    platform: "Arcade Sega Saturn Sega 32X",
-rosterCount: 20,
-        characters: [
-      { id: 'akira', name: 'Akira' },
-      { id: 'pai', name: 'Pai' },
-      { id: 'lau', name: 'Lau' },
-      { id: 'wolf', name: 'Wolf' },
-      { id: 'jeffry', name: 'Jeffry' },
-      { id: 'kage', name: 'Kage' },
-      { id: 'sarah', name: 'Sarah' },
-      { id: 'jacky', name: 'Jacky' },
-      { id: 'shun', name: 'Shun' },
-      { id: 'lion', name: 'Lion' },
-      { id: 'aoi', name: 'Aoi' },
-      { id: 'lei-fei', name: 'Lei-Fei' },
-      { id: 'vanessa', name: 'Vanessa' },
-      { id: 'brad', name: 'Brad' },
-      { id: 'goh', name: 'Goh' },
-      { id: 'eileen', name: 'Eileen' },
-      { id: 'el-blaze', name: 'El Blaze' },
-      { id: 'taka-arashi', name: 'Taka-Arashi' },
-      { id: 'jean', name: 'Jean' },
-      { id: 'dural', name: 'Dural' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'waku-waku-7',
-    name: "Waku Waku 7",
-    developer: "Sunsoft",
-    releaseYear: 1996,
-rosterCount: 9,
-        characters: [
-      { id: 'rai', name: 'Rai' },
-      { id: 'arina', name: 'Arina' },
-      { id: 'dandy-j', name: 'Dandy J' },
-      { id: 'mauru', name: 'Mauru' },
-      { id: 'politank-z', name: 'Politank Z' },
-      { id: 'tish', name: 'Tish' },
-      { id: 'slash', name: 'Slash' },
-      { id: 'bonus-kun', name: 'Bonus-kun' },
-      { id: 'fernandez', name: 'Fernandez' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'world-heroes-perfect',
-    name: "World Heroes Perfect",
-    developer: "ADK",
-    releaseYear: 1992,
-    platform: "Arcade Neo Geo SNES Sega Genesis",
-rosterCount: 8,
-        characters: [
-      { id: 'hanzo', name: 'Hanzo' },
-      { id: 'fuuma', name: 'Fuuma' },
-      { id: 'dragon', name: 'Dragon' },
-      { id: 'janne', name: 'Janne' },
-      { id: 'j.-carn', name: 'J. Carn' },
-      { id: 'muscle-power', name: 'Muscle Power' },
-      { id: 'brocken', name: 'Brocken' },
-      { id: 'rasputin', name: 'Rasputin' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'x-men-vs-street-fighter',
-    name: "X-Men vs. Street Fighter",
-    developer: "Capcom",
-    releaseYear: 1996,
-rosterCount: 17,
-        characters: [
-      { id: 'chun-li', name: 'Chun-Li' },
-      { id: 'cyclops', name: 'Cyclops' },
-      { id: 'ryu', name: 'Ryu' },
-      { id: 'sabretooth', name: 'Sabretooth' },
-      { id: 'wolverine', name: 'Wolverine' },
-      { id: 'adon', name: 'Adon' },
-      { id: 'batsu', name: 'Batsu' },
-      { id: 'birdie', name: 'Birdie' },
-      { id: 'boman', name: 'Boman' },
-      { id: 'captain-america', name: 'Captain America' },
-      { id: 'captain-marvel', name: 'Captain Marvel' },
-      { id: 'charlie', name: 'Charlie' },
-      { id: 'darkstalkers', name: 'Darkstalkers' },
-      { id: 'dudley', name: 'Dudley' },
-      { id: 'hyo_imawano', name: 'Hyo_Imawano' },
-      { id: 'hypersf2', name: 'Hypersf2' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'art-of-fighting-2',
-    name: "Art of Fighting 2",
-    developer: "Unknown",
-    releaseYear: 1994,
-    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
-rosterCount: 0,
-        characters: [
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'battle-monsters',
-    name: "Battle Monsters",
-    developer: "Unknown",
-    releaseYear: 1995,
-    platform: "Sega Saturn",
-rosterCount: 0,
-        characters: [
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'groove-on-fight-power-instinct-3',
-    name: "Groove On Fight (Power Instinct 3)",
-    developer: "Unknown",
-    releaseYear: 1997,
-    platform: "Arcade Sega Saturn",
-rosterCount: 14,
-        characters: [
-      { id: 'larry-light', name: 'Larry Light' },
-      { id: 'chris-wayne', name: 'Chris Wayne' },
-      { id: 'solis-r8000', name: 'Solis R8000' },
-      { id: 'popura-hananokoji', name: 'Popura Hananokoji' },
-      { id: 'tenjinbashi-sujiroku', name: 'Tenjinbashi Sujiroku' },
-      { id: 'hizumi-yukinoue', name: 'Hizumi Yukinoue' },
-      { id: 'm.a.d', name: 'M.A.D' },
-      { id: 'falco', name: 'Falco' },
-      { id: 'oume-&-otane', name: 'Oume & Otane' },
-      { id: 'rudolph-gartheimer', name: 'Rudolph Gartheimer' },
-      { id: 'remi-otogiri', name: 'Remi Otogiri' },
-      { id: 'damian-shade', name: 'Damian Shade' },
-      { id: 'bristol-weller', name: 'Bristol Weller' },
-      { id: 'bristol-d', name: 'Bristol-D' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'jojo-s-bizarre-adventure-heritage-for-the-future-jjba-hftf',
-    name: "JoJo's Bizarre Adventure: Heritage for the Future (JJBA: HFTF)",
-    developer: "Unknown",
-    releaseYear: 1999,
-    platform: "Arcade Sega Dreamcast PlayStation",
-rosterCount: 15,
-        characters: [
-      { id: 'jotaro-kujo', name: 'Jotaro Kujo' },
-      { id: 'dio-brando', name: 'Dio Brando' },
-      { id: 'noriaki-kakyoin', name: 'Noriaki Kakyoin' },
-      { id: 'muhammad-avdol', name: 'Muhammad Avdol' },
-      { id: 'jean-pierre-polnareff', name: 'Jean Pierre Polnareff' },
-      { id: 'joseph-joestar', name: 'Joseph Joestar' },
-      { id: 'iggy', name: 'Iggy' },
-      { id: 'vanilla-ice', name: 'Vanilla Ice' },
-      { id: 'hol-horse', name: 'Hol Horse' },
-      { id: 'midler', name: 'Midler' },
-      { id: 'alessy', name: 'Alessy' },
-      { id: 'chaka', name: 'Chaka' },
-      { id: 'mariah', name: 'Mariah' },
-      { id: 'petshop', name: 'Petshop' },
-      { id: 'shadow-dio', name: 'Shadow Dio' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'the-king-of-fighters-maximum-impact',
-    name: "The King of Fighters: Maximum Impact",
-    developer: "Unknown",
-    releaseYear: 2004,
-    platform: "PlayStation 2 Arcade",
-rosterCount: 20,
-        characters: [
-      { id: 'alba-meira', name: 'Alba Meira' },
-      { id: 'soiree-meira', name: 'Soiree Meira' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'athena-asamiya', name: 'Athena Asamiya' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'ralf-jones', name: 'Ralf Jones' },
-      { id: 'clark-still', name: 'Clark Still' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'maxima', name: 'Maxima' },
-      { id: 'seth', name: 'Seth' },
-      { id: 'mignon-beart', name: 'Mignon Beart' },
-      { id: 'lien-neville', name: 'Lien Neville' },
-      { id: 'chae-lim', name: 'Chae Lim' },
-      { id: 'duke-(boss)', name: 'Duke (Boss)' },
-      { id: 'the-king-of-fighters-2003', name: 'The King Of Fighters 2003' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'the-king-of-fighters-maximum-impact-2-kof-2006',
-    name: "The King of Fighters: Maximum Impact 2 (KOF 2006)",
-    developer: "Unknown",
-    releaseYear: 2006,
-    platform: "PlayStation 2 Arcade",
-rosterCount: 20,
-        characters: [
-      { id: 'alba-meira', name: 'Alba Meira' },
-      { id: 'soiree-meira', name: 'Soiree Meira' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'athena-asamiya', name: 'Athena Asamiya' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'ralf-jones', name: 'Ralf Jones' },
-      { id: 'clark-still', name: 'Clark Still' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'maxima', name: 'Maxima' },
-      { id: 'seth', name: 'Seth' },
-      { id: 'mignon-beart', name: 'Mignon Beart' },
-      { id: 'lien-neville', name: 'Lien Neville' },
-      { id: 'chae-lim', name: 'Chae Lim' },
-      { id: 'duke-(boss)', name: 'Duke (Boss)' },
-      { id: 'the-king-of-fighters-2003', name: 'The King Of Fighters 2003' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'the-king-of-fighters-maximum-impact-regulation-a',
-    name: "The King of Fighters: Maximum Impact Regulation 'A'",
-    developer: "Unknown",
-    releaseYear: 2007,
-    platform: "PlayStation 2 Arcade",
-rosterCount: 20,
-        characters: [
-      { id: 'alba-meira', name: 'Alba Meira' },
-      { id: 'soiree-meira', name: 'Soiree Meira' },
-      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
-      { id: 'iori-yagami', name: 'Iori Yagami' },
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'rock-howard', name: 'Rock Howard' },
-      { id: 'athena-asamiya', name: 'Athena Asamiya' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
-      { id: 'ralf-jones', name: 'Ralf Jones' },
-      { id: 'clark-still', name: 'Clark Still' },
-      { id: 'leona-heidern', name: 'Leona Heidern' },
-      { id: 'maxima', name: 'Maxima' },
-      { id: 'seth', name: 'Seth' },
-      { id: 'mignon-beart', name: 'Mignon Beart' },
-      { id: 'lien-neville', name: 'Lien Neville' },
-      { id: 'chae-lim', name: 'Chae Lim' },
-      { id: 'duke-(boss)', name: 'Duke (Boss)' },
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'psychic-force-2012-psychic-force-2',
-    name: "Psychic Force 2012 (Psychic Force 2)",
-    developer: "Unknown",
-    releaseYear: 1996,
-    platform: "Arcade PlayStation",
-rosterCount: 11,
-        characters: [
-      { id: 'might', name: 'Might' },
-      { id: 'patty-myers', name: 'Patty Myers' },
-      { id: 'setsuna', name: 'Setsuna' },
-      { id: 'carlo-belfrond', name: 'Carlo Belfrond' },
-      { id: 'regina-belfrond', name: 'Regina Belfrond' },
-      { id: 'gudeath-(gantz)', name: 'Gudeath (Gantz)' },
-      { id: 'emilio-michaelov', name: 'Emilio Michaelov' },
-      { id: 'burn-griffiths', name: 'Burn Griffiths' },
-      { id: 'keith-evans', name: 'Keith Evans' },
-      { id: 'wendy-ryan', name: 'Wendy Ryan' },
-      { id: 'gates-oltsman', name: 'Gates Oltsman' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'psychic-force',
-    name: "Psychic Force",
-    developer: "Unknown",
-    releaseYear: 1996,
-    platform: "Arcade PlayStation",
-rosterCount: 11,
-        characters: [
-      { id: 'might', name: 'Might' },
-      { id: 'patty-myers', name: 'Patty Myers' },
-      { id: 'setsuna', name: 'Setsuna' },
-      { id: 'carlo-belfrond', name: 'Carlo Belfrond' },
-      { id: 'regina-belfrond', name: 'Regina Belfrond' },
-      { id: 'gudeath-(gantz)', name: 'Gudeath (Gantz)' },
-      { id: 'emilio-michaelov', name: 'Emilio Michaelov' },
-      { id: 'burn-griffiths', name: 'Burn Griffiths' },
-      { id: 'keith-evans', name: 'Keith Evans' },
-      { id: 'wendy-ryan', name: 'Wendy Ryan' },
-      { id: 'gates-oltsman', name: 'Gates Oltsman' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'ragnagard-shin-oh-ken',
-    name: "Ragnagard (Shin-Oh-Ken)",
-    developer: "Unknown",
-    releaseYear: 1996,
-    platform: "Neo Geo Arcade Sega Saturn PlayStation",
-rosterCount: 10,
-        characters: [
-      { id: 'susanoo', name: 'Susanoo' },
-      { id: 'bentensora', name: 'Bentensora' },
-      { id: 'chiyou', name: 'Chiyou' },
-      { id: 'syuten-dozi', name: 'Syuten-Dozi' },
-      { id: 'lucifer', name: 'Lucifer' },
-      { id: 'beelzebub', name: 'Beelzebub' },
-      { id: 'son-goku', name: 'Son-Goku' },
-      { id: 'seiryu', name: 'Seiryu' },
-      { id: 'eris-(boss)', name: 'Eris (Boss)' },
-      { id: 'behemoth-(boss)', name: 'Behemoth (Boss)' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'savage-reign-fu-un-mokushiroku-kakutou-sousei',
-    name: "Savage Reign (Fu'un Mokushiroku: Kakutou Sousei)",
-    developer: "Unknown",
-    releaseYear: 1995,
-    platform: "Neo Geo Arcade PlayStation",
-rosterCount: 11,
-        characters: [
-      { id: 'sho-hayate', name: 'Sho Hayate' },
-      { id: 'max-eagle', name: 'Max Eagle' },
-      { id: 'carol-stanzack', name: 'Carol Stanzack' },
-      { id: 'gordon-bowman', name: 'Gordon Bowman' },
-      { id: 'joker', name: 'Joker' },
-      { id: 'chung-paifu', name: 'Chung Paifu' },
-      { id: 'nicola-zaza', name: 'Nicola Zaza' },
-      { id: 'gozu', name: 'Gozu' },
-      { id: 'mezu', name: 'Mezu' },
-      { id: 'king-lion-(kage-shishioh)', name: 'King Lion (Kage Shishioh)' },
-      { id: 'shin-shishioh-(king-leo)', name: 'Shin Shishioh (King Leo)' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'soul-calibur',
-    name: "Soul Calibur",
-    developer: "Unknown",
-    releaseYear: 1998,
-    platform: "Arcade Sega Dreamcast",
-rosterCount: 10,
-        characters: [
-      { id: 'mitsurugi', name: 'Mitsurugi' },
-      { id: 'kilik', name: 'Kilik' },
-      { id: 'ivy-valentine', name: 'Ivy Valentine' },
-      { id: 'nightmare', name: 'Nightmare' },
-      { id: 'maxi', name: 'Maxi' },
-      { id: 'xianghua', name: 'Xianghua' },
-      { id: 'taki', name: 'Taki' },
-      { id: 'astaroth', name: 'Astaroth' },
-      { id: 'sophitia', name: 'Sophitia' },
-      { id: 'voldo', name: 'Voldo' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'soul-edge-soul-blade',
-    name: "Soul Edge (Soul Blade)",
-    developer: "Unknown",
-    releaseYear: 1995,
-    platform: "Arcade PlayStation",
-rosterCount: 0,
-        characters: [
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'voltage-fighter-gowcaizer-choujin-gakuen-gowcaizer',
-    name: "Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer)",
-    developer: "Unknown",
-    releaseYear: 1995,
-    platform: "Neo Geo Arcade PlayStation",
-rosterCount: 12,
-        characters: [
-      { id: 'gowcaizer-(isato-kaiza)', name: 'Gowcaizer (Isato Kaiza)' },
-      { id: 'karin-son', name: 'Karin Son' },
-      { id: 'kyosuke-shigure', name: 'Kyosuke Shigure' },
-      { id: 'shaia-hanyū', name: 'Shaia Hanyū' },
-      { id: 'hellstinger-(kash-gywnne)', name: 'Hellstinger (Kash Gywnne)' },
-      { id: 'marion', name: 'Marion' },
-      { id: 'fudomaru', name: 'Fudomaru' },
-      { id: 'captain-atlantis-(randy-riggs)', name: 'Captain Atlantis (Randy Riggs)' },
-      { id: 'brider-(ikkyu-saeba)', name: 'Brider (Ikkyu Saeba)' },
-      { id: 'shen-long-(goujiro-inagaki)', name: 'Shen Long (Goujiro Inagaki)' },
-      { id: 'ran-ryo-(platonic-twins)', name: 'Ran/Ryo (Platonic Twins)' },
-      { id: 'ohga-(final-boss)', name: 'Ohga (Final Boss)' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'zero-divide',
-    name: "Zero Divide",
-    developer: "Unknown",
-    releaseYear: 1995,
-    platform: "PlayStation",
-rosterCount: 10,
-        characters: [
-      { id: 'zero', name: 'Zero' },
-      { id: 'tau', name: 'Tau' },
-      { id: 'io', name: 'Io' },
-      { id: 'cygnus', name: 'Cygnus' },
-      { id: 'wild-3', name: 'Wild 3' },
-      { id: 'nereid', name: 'Nereid' },
-      { id: 'eraser', name: 'Eraser' },
-      { id: 'draco', name: 'Draco' },
-      { id: 'zulu', name: 'Zulu' },
-      { id: 'x-0', name: 'X-0' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'zero-divide-2-the-secret-wish',
-    name: "Zero Divide 2: The Secret Wish",
-    developer: "Unknown",
-    releaseYear: 1995,
-    platform: "PlayStation",
-rosterCount: 10,
-        characters: [
-      { id: 'zero', name: 'Zero' },
-      { id: 'tau', name: 'Tau' },
-      { id: 'io', name: 'Io' },
-      { id: 'cygnus', name: 'Cygnus' },
-      { id: 'wild-3', name: 'Wild 3' },
-      { id: 'nereid', name: 'Nereid' },
-      { id: 'eraser', name: 'Eraser' },
-      { id: 'draco', name: 'Draco' },
-      { id: 'zulu', name: 'Zulu' },
-      { id: 'x-0', name: 'X-0' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'bloody-roar-2',
-    name: "Bloody Roar 2",
-    developer: "Unknown",
-    releaseYear: 1997,
-    platform: "Arcade PlayStation",
-rosterCount: 8,
-        characters: [
-      { id: 'yugo-the-wolf', name: 'Yugo the Wolf' },
-      { id: 'alice-the-rabbit', name: 'Alice the Rabbit' },
-      { id: 'long-the-tiger', name: 'Long the Tiger' },
-      { id: 'gado-the-lion', name: 'Gado the Lion' },
-      { id: 'bakuryu-the-mole', name: 'Bakuryu the Mole' },
-      { id: 'mitsuko-the-boar', name: 'Mitsuko the Boar' },
-      { id: 'greg-the-gorilla', name: 'Greg the Gorilla' },
-      { id: 'fox-the-fox', name: 'Fox the Fox' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'guilty-gear-strive',
-    name: "Guilty Gear -Strive-",
-    developer: "Unknown",
-    releaseYear: 1998,
-    platform: "PlayStation",
-rosterCount: 9,
-        characters: [
-      { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' },
-      { id: 'sol-badguy', name: 'Sol Badguy' },
-      { id: 'ky-kiske', name: 'Ky Kiske' },
-      { id: 'may', name: 'May' },
-      { id: 'venom', name: 'Venom' },
-      { id: 'queen-dizzy', name: 'Queen Dizzy' },
-      { id: 'unika', name: 'Unika' },
-      { id: 'lucy', name: 'Lucy' },
-      { id: 'potemkin', name: 'Potemkin' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'invincible-vs-beta',
-    name: "Invincible VS Beta",
-    developer: "Unknown",
-    releaseYear: 2026,
-    platform: "Windows Xbox Series X/S PlayStation 5",
-rosterCount: 10,
-        characters: [
-      { id: 'mark-grayson-(invincible)', name: 'Mark Grayson (Invincible)' },
-      { id: 'nolan-grayson-(omni-man)', name: 'Nolan Grayson (Omni-Man)' },
-      { id: 'samantha-eve-wilkins-(atom-eve)', name: 'Samantha Eve Wilkins (Atom Eve)' },
-      { id: 'allen-the-alien', name: 'Allen the Alien' },
-      { id: 'thokk-(battle-beast)', name: 'Thokk (Battle Beast)' },
-      { id: 'rex-splode', name: 'Rex Splode' },
-      { id: 'robot', name: 'Robot' },
-      { id: 'amanda-(monster-girl)', name: 'Amanda (Monster Girl)' },
-      { id: 'thula', name: 'Thula' },
-      { id: 'zandale-randolph-(bulletproof)', name: 'Zandale Randolph (Bulletproof)' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'marvel-toukon-fighting-souls-beta-version',
-    name: "Marvel Toukon: Fighting Souls (Beta Version)",
-    developer: "Unknown",
-    releaseYear: 2025,
-    platform: "PlayStation 5 Windows",
-rosterCount: 9,
-        characters: [
-      { id: 'spider-man-(peter-parker)', name: 'Spider-Man (Peter Parker)' },
-      { id: 'captain-america-(steve-rogers)', name: 'Captain America (Steve Rogers)' },
-      { id: 'iron-man-(tony-stark)', name: 'Iron Man (Tony Stark)' },
-      { id: 'doctor-doom-(victor-von-doom)', name: 'Doctor Doom (Victor von Doom)' },
-      { id: 'storm-(ororo-munroe)', name: 'Storm (Ororo Munroe)' },
-      { id: 'star-lord-(peter-quill)', name: 'Star-Lord (Peter Quill)' },
-      { id: 'ms.-marvel-(kamala-khan)', name: 'Ms. Marvel (Kamala Khan)' },
-      { id: 'hulk-(bruce-banner)', name: 'Hulk (Bruce Banner)' },
-      { id: 'phoenix-(jean-grey)', name: 'Phoenix (Jean Grey)' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'primal-rage',
-    name: "Primal Rage",
-    developer: "Unknown",
-    releaseYear: 1994,
-    platform: "Arcade Sega Genesis SNES PlayStation Sega Saturn 3DO Game Gear Game Boy Atari Jaguar PC",
-rosterCount: 7,
-        characters: [
-      { id: 'armadon', name: 'Armadon' },
-      { id: 'blizzard', name: 'Blizzard' },
-      { id: 'chaos', name: 'Chaos' },
-      { id: 'diablo', name: 'Diablo' },
-      { id: 'sauron', name: 'Sauron' },
-      { id: 'talon', name: 'Talon' },
-      { id: 'vertigo', name: 'Vertigo' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'primal-rage-2',
-    name: "Primal Rage 2",
-    developer: "Unknown",
-    releaseYear: 1994,
-    platform: "Arcade Sega Genesis SNES PlayStation Sega Saturn 3DO Game Gear Game Boy Atari Jaguar PC",
-rosterCount: 7,
-        characters: [
-      { id: 'armadon', name: 'Armadon' },
-      { id: 'blizzard', name: 'Blizzard' },
-      { id: 'chaos', name: 'Chaos' },
-      { id: 'diablo', name: 'Diablo' },
-      { id: 'sauron', name: 'Sauron' },
-      { id: 'talon', name: 'Talon' },
-      { id: 'vertigo', name: 'Vertigo' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'tekken-1',
-    name: "Tekken 1",
-    developer: "Unknown",
-    releaseYear: 1994,
-    platform: "Arcade PlayStation",
-rosterCount: 17,
-        characters: [
-      { id: 'kazuya-mishima', name: 'Kazuya Mishima' },
-      { id: 'paul-phoenix', name: 'Paul Phoenix' },
-      { id: 'marshall-law', name: 'Marshall Law' },
-      { id: 'king', name: 'King' },
-      { id: 'nina-williams', name: 'Nina Williams' },
-      { id: 'jack', name: 'Jack' },
-      { id: 'michelle-chang', name: 'Michelle Chang' },
-      { id: 'yoshimitsu', name: 'Yoshimitsu' },
-      { id: 'heihachi-mishima', name: 'Heihachi Mishima' },
-      { id: 'lee-chaolan', name: 'Lee Chaolan' },
-      { id: 'kuma-i', name: 'Kuma I' },
-      { id: 'wang-jinrei', name: 'Wang Jinrei' },
-      { id: 'armor-king-i', name: 'Armor King I' },
-      { id: 'anna-williams', name: 'Anna Williams' },
-      { id: 'prototype-jack', name: 'Prototype Jack' },
-      { id: 'ganryu', name: 'Ganryu' },
-      { id: 'kunimitsu-i', name: 'Kunimitsu I' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'tekken-2',
-    name: "Tekken 2",
-    developer: "Unknown",
-    releaseYear: 1995,
-    platform: "Arcade PlayStation",
-rosterCount: 24,
-        characters: [
-      { id: 'jun-kazama', name: 'Jun Kazama' },
-      { id: 'lei-wulong', name: 'Lei Wulong' },
-      { id: 'jack-2', name: 'Jack-2' },
-      { id: 'michelle-chang', name: 'Michelle Chang' },
-      { id: 'king', name: 'King' },
-      { id: 'yoshimitsu', name: 'Yoshimitsu' },
-      { id: 'nina-williams', name: 'Nina Williams' },
-      { id: 'marshall-law', name: 'Marshall Law' },
-      { id: 'paul-phoenix', name: 'Paul Phoenix' },
-      { id: 'kazuya-mishima', name: 'Kazuya Mishima' },
-      { id: 'baek-doo-san', name: 'Baek Doo San' },
-      { id: 'bruce-irvin', name: 'Bruce Irvin' },
-      { id: 'roger', name: 'Roger' },
-      { id: 'alex', name: 'Alex' },
-      { id: 'wang-jinrei', name: 'Wang Jinrei' },
-      { id: 'kuma-i', name: 'Kuma I' },
-      { id: 'armor-king-i', name: 'Armor King I' },
-      { id: 'kunimitsu-i', name: 'Kunimitsu I' },
-      { id: 'anna-williams', name: 'Anna Williams' },
-      { id: 'prototype-jack', name: 'Prototype Jack' },
-      { id: 'ganryu', name: 'Ganryu' },
-      { id: 'heihachi-mishima', name: 'Heihachi Mishima' },
-      { id: 'devil', name: 'Devil' },
-      { id: 'angel', name: 'Angel' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'world-heroes',
-    name: "World Heroes",
-    developer: "Unknown",
-    releaseYear: 1992,
-    platform: "Arcade Neo Geo SNES Sega Genesis",
-rosterCount: 8,
-        characters: [
-      { id: 'hanzo', name: 'Hanzo' },
-      { id: 'fuuma', name: 'Fuuma' },
-      { id: 'dragon', name: 'Dragon' },
-      { id: 'janne', name: 'Janne' },
-      { id: 'j.-carn', name: 'J. Carn' },
-      { id: 'muscle-power', name: 'Muscle Power' },
-      { id: 'brocken', name: 'Brocken' },
-      { id: 'rasputin', name: 'Rasputin' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'world-heroes-2',
-    name: "World Heroes 2",
-    developer: "Unknown",
-    releaseYear: 1992,
-    platform: "Arcade Neo Geo SNES Sega Genesis",
-rosterCount: 8,
-        characters: [
-      { id: 'hanzo', name: 'Hanzo' },
-      { id: 'fuuma', name: 'Fuuma' },
-      { id: 'dragon', name: 'Dragon' },
-      { id: 'janne', name: 'Janne' },
-      { id: 'j.-carn', name: 'J. Carn' },
-      { id: 'muscle-power', name: 'Muscle Power' },
-      { id: 'brocken', name: 'Brocken' },
-      { id: 'rasputin', name: 'Rasputin' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'world-heroes-2-jet',
-    name: "World Heroes 2 Jet",
-    developer: "Unknown",
-    releaseYear: 1992,
-    platform: "Arcade Neo Geo SNES Sega Genesis",
-rosterCount: 8,
-        characters: [
-      { id: 'hanzo', name: 'Hanzo' },
-      { id: 'fuuma', name: 'Fuuma' },
-      { id: 'dragon', name: 'Dragon' },
-      { id: 'janne', name: 'Janne' },
-      { id: 'j.-carn', name: 'J. Carn' },
-      { id: 'muscle-power', name: 'Muscle Power' },
-      { id: 'brocken', name: 'Brocken' },
-      { id: 'rasputin', name: 'Rasputin' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'fist-of-the-north-star-hokuto-no-ken',
-    name: "Fist of the North Star (Hokuto no Ken)",
-    developer: "Unknown",
-    releaseYear: 2005,
-    platform: "Arcade PlayStation 2",
-rosterCount: 9,
-        characters: [
-      { id: 'kenshiro', name: 'Kenshiro' },
-      { id: 'raoh', name: 'Raoh' },
-      { id: 'toki', name: 'Toki' },
-      { id: 'shin', name: 'Shin' },
-      { id: 'rei', name: 'Rei' },
-      { id: 'juda', name: 'Juda' },
-      { id: 'thouther', name: 'Thouther' },
-      { id: 'mamiya', name: 'Mamiya' },
-      { id: 'heart', name: 'Heart' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'kakuto-chojin-back-alley-brutal',
-    name: "Kakuto Chojin: Back Alley Brutal",
-    developer: "Unknown",
-    releaseYear: 2002,
-    platform: "Xbox",
-rosterCount: 12,
-        characters: [
-      { id: 'asad', name: 'Asad' },
-      { id: 'crusher-ramirez', name: 'Crusher Ramirez' },
-      { id: 'reiji', name: 'Reiji' },
-      { id: 'vittoria', name: 'Vittoria' },
-      { id: 'shadow', name: 'Shadow' },
-      { id: 'sabre', name: 'Sabre' },
-      { id: 'rena', name: 'Rena' },
-      { id: 'kahn', name: 'Kahn' },
-      { id: 'roxy', name: 'Roxy' },
-      { id: 'vegard', name: 'Vegard' },
-      { id: 'yin-kai-li', name: 'Yin Kai Li' },
-      { id: 'daeva', name: 'Daeva' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'kasumi-ninja',
-    name: "Kasumi Ninja",
-    developer: "Unknown",
-    releaseYear: 1994,
-    platform: "Atari Jaguar",
-rosterCount: 9,
-        characters: [
-      { id: 'habaki', name: 'Habaki' },
-      { id: 'senzo', name: 'Senzo' },
-      { id: 'alaric', name: 'Alaric' },
-      { id: 'angus', name: 'Angus' },
-      { id: 'chagi', name: 'Chagi' },
-      { id: 'danja', name: 'Danja' },
-      { id: 'pakawa', name: 'Pakawa' },
-      { id: 'thundra', name: 'Thundra' },
-      { id: 'lord-gyaku', name: 'Lord Gyaku' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'tao-feng-fist-of-the-lotus',
-    name: "Tao Feng: Fist of the Lotus",
-    developer: "Unknown",
-    releaseYear: 2003,
-    platform: "Xbox",
-rosterCount: 7,
-        characters: [
-      { id: 'pale-lotus:-master-sage', name: 'Pale Lotus: Master Sage' },
-      { id: 'pale-lotus:-fiery-phoenix', name: 'Pale Lotus: Fiery Phoenix' },
-      { id: 'pale-lotus:-fierce-tiger', name: 'Pale Lotus: Fierce Tiger' },
-      { id: 'pale-lotus:-iron-monk', name: 'Pale Lotus: Iron Monk' },
-      { id: 'black-mantis:-exile', name: 'Black Mantis: Exile' },
-      { id: 'black-mantis:-divinity', name: 'Black Mantis: Divinity' },
-      { id: 'black-mantis:-geist', name: 'Black Mantis: Geist' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'way-of-the-warrior',
-    name: "Way of the Warrior",
-    developer: "Unknown",
-    releaseYear: 1994,
-    platform: "3DO",
-rosterCount: 10,
-        characters: [
-      { id: 'major_ruption', name: 'Major_Ruption' },
-      { id: 'shogun', name: 'Shogun' },
-      { id: 'crimson-glory', name: 'Crimson Glory' },
-      { id: 'dragon', name: 'Dragon' },
-      { id: 'nikki-chan', name: 'Nikki Chan' },
-      { id: 'konotori', name: 'Konotori' },
-      { id: 'the-ninja', name: 'The Ninja' },
-      { id: 'malcolm-fox', name: 'Malcolm Fox' },
-      { id: 'gulliver', name: 'Gulliver' },
-      { id: 'high-abbot', name: 'High Abbot' }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-  },
-  {
-    id: 'bio-f.r.e.a.k.s.',
-    name: 'Bio F.R.E.A.K.S.',
-    developer: 'Unknown',
-    releaseYear: 2024,
-    platform: 'Various',
-    rosterCount: 0,
-    characters: [
-    ]
-  },
-  {
-    id: 'fatal-fury-wild-ambition',
-    name: 'Fatal Fury: Wild Ambition',
-    developer: 'Unknown',
-    releaseYear: 2024,
-    platform: 'Various',
-    rosterCount: 14,
-    characters: [
-      { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'andy-bogard', name: 'Andy Bogard' },
-      { id: 'joe-higashi', name: 'Joe Higashi' },
-      { id: 'mai-shiranui', name: 'Mai Shiranui' },
-      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
-      { id: 'raiden', name: 'Raiden' },
-      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
-      { id: 'li-xiangfei', name: 'Li Xiangfei' },
-      { id: 'tsugumi-sendo', name: 'Tsugumi Sendo' },
-      { id: 'touji-sakata', name: 'Touji Sakata' },
-      { id: 'geese-howard', name: 'Geese Howard' },
-      { id: 'billy-kane', name: 'Billy Kane' },
-      { id: 'duck-king', name: 'Duck King' },
-      { id: 'mr.-karate-ii', name: 'Mr. Karate II' }
-    ]
-  },
-  {
-    id: 'fighters-impact',
-    name: 'Fighters\' Impact',
-    developer: 'Unknown',
-    releaseYear: 2024,
-    platform: 'Various',
-    rosterCount: 0,
-    characters: [
-    ]
-  },
-  {
-    id: 'heavens-gate',
-    name: 'Heaven\'s Gate',
-    developer: 'Unknown',
-    releaseYear: 2024,
-    platform: 'Various',
-    rosterCount: 0,
-    characters: [
-    ]
-  },
-  {
-    id: 'tobal-2',
-    name: 'Tobal 2',
-    developer: 'Unknown',
-    releaseYear: 2024,
-    platform: 'Various',
-    rosterCount: 0,
-    characters: [
-    ]
-  },
-  {
-    id: 'ultraman-fighting-evolution',
-    name: 'Ultraman Fighting Evolution',
-    developer: 'Unknown',
-    releaseYear: 2024,
-    platform: 'Various',
-    rosterCount: 0,
-    characters: [
-    ]
-  },
-  {
-    id: 'war-gods',
-    name: 'War Gods',
-    developer: 'Unknown',
-    releaseYear: 2024,
-    platform: 'Various',
-    rosterCount: 0,
-    characters: [
-    ]
-  }];
+import type { GameDefinition } from './types';
+
+export const SUPPORTED_GAMES: GameDefinition[] = [
+
+  {
+
+    id: 'art-of-fighting',
+
+    name: "Art of Fighting",
+
+    developer: "SNK",
+
+    releaseYear: 1994,
+
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
+
+rosterCount: 10,
+
+        characters: [
+
+      
+      { id: 'jack-turner', name: 'Jack Turner' },
+      { id: 'john-crawley', name: 'John Crawley' },
+      { id: 'king', name: 'King' },
+      { id: 'lee-pai-long', name: 'Lee Pai Long' },
+      { id: 'micky-rogers', name: 'Micky Rogers' },
+      { id: 'mr-big', name: 'Mr. Big' },
+      { id: 'mr-karate', name: 'Mr. Karate' },
+      { id: 'robert-garcia', name: 'Robert Garcia' },
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'ryuhaku-todoh', name: 'Ryuhaku Todoh' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'art-of-fighting-2',
+
+    name: "Art of Fighting 2",
+
+    developer: "Unknown",
+
+    releaseYear: 1994,
+
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
+
+rosterCount: 0,
+
+        characters: [
+
+    
+      { id: 'eiji-kisaragi', name: 'Eiji Kisaragi' },
+      { id: 'geese-howard', name: 'Geese Howard' },
+      { id: 'jack-turner', name: 'Jack Turner' },
+      { id: 'john-crawley', name: 'John Crawley' },
+      { id: 'king', name: 'King' },
+      { id: 'lee-pai-long', name: 'Lee Pai Long' },
+      { id: 'micky-rogers', name: 'Micky Rogers' },
+      { id: 'mr-big', name: 'Mr. Big' },
+      { id: 'robert-garcia', name: 'Robert Garcia' },
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'takuma-sakazaki', name: 'Takuma Sakazaki' },
+      { id: 'temjin', name: 'Temjin' },
+      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' }
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'art-of-fighting-3-the-path-of-the-warrior',
+
+    name: "Art of Fighting 3: The Path of the Warrior",
+
+    developer: "SNK",
+
+    releaseYear: 1994,
+
+    platform: "Neo Geo Arcade PlayStation 4 Xbox One",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'jin-fu-ha', name: 'Jin Fu-Ha' },
+      { id: 'karman-cole', name: 'Karman Cole' },
+      { id: 'kasumi-todoh', name: 'Kasumi Todoh' },
+      { id: 'lenny-creston', name: 'Lenny Creston' },
+      { id: 'robert-garcia', name: 'Robert Garcia' },
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'sinclair', name: 'Sinclair' },
+      { id: 'wang-koh-san', name: 'Wang Koh-San' },
+      { id: 'wyler', name: 'Wyler' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'astra-superstars',
+
+    name: "Astra Superstars",
+
+    developer: "Sunsoft",
+
+    releaseYear: 1998,
+
+    platform: "Arcade Sega Saturn",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'coco', name: 'Coco' },
+      { id: 'cupe', name: 'Cupe' },
+      { id: 'ike-du', name: 'Ike-Du' },
+      { id: 'lettas', name: 'Lettas' },
+      { id: 'marron', name: 'Marron' },
+      { id: 'rouge', name: 'Rouge' },
+      { id: 'stella', name: 'Stella' },
+      { id: 'test-kun', name: 'Test-Kun' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'asuka-120%-burning-fest-limited',
+
+    name: "Asuka 120% Burning Fest Limited",
+
+    developer: "FamilySoft",
+
+    releaseYear: 1997,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'asuka-karashima', name: 'Asuka Karashima' },
+      { id: 'genichirou-shindo', name: 'Genichirou Shindo' },
+      { id: 'kiyoko-mitarai', name: 'Kiyoko Mitarai' },
+      { id: 'kumi-kubota', name: 'Kumi Kubota' },
+      { id: 'megumi-suzuki', name: 'Megumi Suzuki' },
+      { id: 'nana-hidaka', name: 'Nana Hidaka' },
+      { id: 'ryoko-owada', name: 'Ryoko Owada' },
+      { id: 'shinobu-kawasaki', name: 'Shinobu Kawasaki' },
+      { id: 'tamaki-shindo', name: 'Tamaki Shindo' },
+      { id: 'tetsuko-yoshioka', name: 'Tetsuko Yoshioka' },
+      { id: 'torami-hojo', name: 'Torami Hojo' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'battle-arena-toshinden-3',
+
+    name: "Battle Arena Toshinden 3",
+
+    developer: "Tamsoft",
+
+    releaseYear: 1996,
+
+    platform: "PlayStation",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'abel', name: 'Abel' },
+      { id: 'atwiki', name: 'Atwiki' },
+      { id: 'balido', name: 'Balido' },
+      { id: 'bayhou', name: 'Bayhou' },
+      { id: 'chaos', name: 'Chaos' },
+      { id: 'cuila', name: 'Cuila' },
+      { id: 'david', name: 'David' },
+      { id: 'duke', name: 'Duke' },
+      { id: 'eiji', name: 'Eiji' },
+      { id: 'ellis', name: 'Ellis' },
+      { id: 'fo', name: 'Fo' },
+      { id: 'gaia', name: 'Gaia' },
+      { id: 'judgement', name: 'Judgement' },
+      { id: 'kayin', name: 'Kayin' },
+      { id: 'leon', name: 'Leon' },
+      { id: 'miss-til', name: 'Miss Til' },
+      { id: 'mondo', name: 'Mondo' },
+      { id: 'nagisa', name: 'Nagisa' },
+      { id: 'naru', name: 'Naru' },
+      { id: 'rachael', name: 'Rachael' },
+      { id: 'rungo', name: 'Rungo' },
+      { id: 'schultz', name: 'Schultz' },
+      { id: 'shizuku', name: 'Shizuku' },
+      { id: 'sho', name: 'Sho' },
+      { id: 'sofia', name: 'Sofia' },
+      { id: 'ten-count', name: 'Ten Count' },
+      { id: 'toujin', name: 'Toujin' },
+      { id: 'uranus', name: 'Uranus' },
+      { id: 'veil', name: 'Veil' },
+      { id: 'vermilion', name: 'Vermilion' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'battle-monsters',
+
+    name: "Battle Monsters",
+
+    developer: "Unknown",
+
+    releaseYear: 1995,
+
+    platform: "Sega Saturn",
+
+rosterCount: 0,
+
+        characters: [
+
+    
+      { id: 'chilli-pepper', name: 'Chilli & Pepper' },
+      { id: 'death-mask', name: 'Death Mask' },
+      { id: 'kapila', name: 'Kapila' },
+      { id: 'mushira', name: 'Mushira' },
+      { id: 'naga', name: 'Naga' },
+      { id: 'orochimaru', name: 'Orochimaru' },
+      { id: 'sky-high', name: 'Sky High' }
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'blazblue-central-fiction',
+
+    name: "BlazBlue: Central Fiction",
+
+    developer: "Arc System Works",
+
+    releaseYear: 2015,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'amane-nishiki', name: 'Amane Nishiki' },
+      { id: 'arakune', name: 'Arakune' },
+      { id: 'azrael', name: 'Azrael' },
+      { id: 'bang-shishigami', name: 'Bang Shishigami' },
+      { id: 'bullet', name: 'Bullet' },
+      { id: 'carl-clover', name: 'Carl Clover' },
+      { id: 'celica-a-mercury', name: 'Celica A. Mercury' },
+      { id: 'es', name: 'Es' },
+      { id: 'hakumen', name: 'Hakumen' },
+      { id: 'hazama', name: 'Hazama' },
+      { id: 'hibiki-kohaku', name: 'Hibiki Kohaku' },
+      { id: 'iron-tager', name: 'Iron Tager' },
+      { id: 'izayoi', name: 'Izayoi' },
+      { id: 'jin-kisaragi', name: 'Jin Kisaragi' },
+      { id: 'jubei', name: 'Jubei' },
+      { id: 'kagura-mutsuki', name: 'Kagura Mutsuki' },
+      { id: 'kokonoe', name: 'Kokonoe' },
+      { id: 'litchi-faye-ling', name: 'Litchi Faye-Ling' },
+      { id: 'mai-natsume', name: 'Mai Natsume' },
+      { id: 'makoto-nanaya', name: 'Makoto Nanaya' },
+      { id: 'mu-12', name: 'Mu-12' },
+      { id: 'naoto-kurogane', name: 'Naoto Kurogane' },
+      { id: 'nine-the-phantom', name: 'Nine the Phantom' },
+      { id: 'noel-vermillion', name: 'Noel Vermillion' },
+      { id: 'nu-13', name: 'Nu-13' },
+      { id: 'platinum-the-trinity', name: 'Platinum the Trinity' },
+      { id: 'rachel-alucard', name: 'Rachel Alucard' },
+      { id: 'ragna-the-bloodedge', name: 'Ragna the Bloodedge' },
+      { id: 'rakshasa', name: 'Rakshasa' },
+      { id: 'relius-clover', name: 'Relius Clover' },
+      { id: 'susanoo', name: 'Susano\'o' },
+      { id: 'taokaka', name: 'Taokaka' },
+      { id: 'tsubaki-yayoi', name: 'Tsubaki Yayoi' },
+      { id: 'valkenhayn-r-hellsing', name: 'Valkenhayn R. Hellsing' },
+      { id: 'yuuki-terumi', name: 'Yuuki Terumi' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'blazblue-cross-tag-battle',
+
+    name: "BlazBlue: Cross Tag Battle",
+
+    developer: "Arc System Works",
+
+    releaseYear: 2018,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'adachi', name: 'Adachi' },
+      { id: 'akatsuki', name: 'Akatsuki' },
+      { id: 'akihiko', name: 'Akihiko' },
+      { id: 'blake', name: 'Blake' },
+      { id: 'carmine', name: 'Carmine' },
+      { id: 'chie', name: 'Chie' },
+      { id: 'elizabeth', name: 'Elizabeth' },
+      { id: 'gordeau', name: 'Gordeau' },
+      { id: 'hakumen', name: 'Hakumen' },
+      { id: 'hazama', name: 'Hazama' },
+      { id: 'heart', name: 'Heart' },
+      { id: 'hilda', name: 'Hilda' },
+      { id: 'hyde', name: 'Hyde' },
+      { id: 'iron-tager', name: 'Iron Tager' },
+      { id: 'izayoi', name: 'Izayoi' },
+      { id: 'jubei', name: 'Jubei' },
+      { id: 'kanji', name: 'Kanji' },
+      { id: 'labrys', name: 'Labrys' },
+      { id: 'linne', name: 'Linne' },
+      { id: 'mai', name: 'Mai' },
+      { id: 'makoto', name: 'Makoto' },
+      { id: 'merkava', name: 'Merkava' },
+      { id: 'mitsuru', name: 'Mitsuru' },
+      { id: 'naoto-shirogane', name: 'Naoto Shirogane' },
+      { id: 'nine', name: 'Nine' },
+      { id: 'noel', name: 'Noel' },
+      { id: 'nu-13', name: 'Nu-13' },
+      { id: 'orie', name: 'Orie' },
+      { id: 'platinum', name: 'Platinum' },
+      { id: 'rachel', name: 'Rachel' },
+      { id: 'ragna', name: 'Ragna' },
+      { id: 'ruby', name: 'Ruby' },
+      { id: 'seth', name: 'Seth' },
+      { id: 'vatista', name: 'Vatista' },
+      { id: 'waldstein', name: 'Waldstein' },
+      { id: 'weiss', name: 'Weiss' },
+      { id: 'yang', name: 'Yang' },
+      { id: 'yosuke', name: 'Yosuke' },
+      { id: 'yu', name: 'Yu' },
+      { id: 'yumi', name: 'Yumi' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'bloody-roar',
+
+    name: "Bloody Roar",
+
+    developer: "Hudson Soft",
+
+    releaseYear: 1997,
+
+    platform: "Arcade PlayStation",
+
+rosterCount: 8,
+
+        characters: [
+
+      
+      { id: 'alice', name: 'Alice' },
+      { id: 'bakuryu', name: 'Bakuryu' },
+      { id: 'fox', name: 'Fox' },
+      { id: 'gado', name: 'Gado' },
+      { id: 'greg', name: 'Greg' },
+      { id: 'long', name: 'Long' },
+      { id: 'mitsuko', name: 'Mitsuko' },
+      { id: 'yugo', name: 'Yugo' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'bloody-roar-2',
+
+    name: "Bloody Roar 2",
+
+    developer: "Unknown",
+
+    releaseYear: 1997,
+
+    platform: "Arcade PlayStation",
+
+rosterCount: 8,
+
+        characters: [
+
+      
+      { id: 'alice', name: 'Alice' },
+      { id: 'bakuryu', name: 'Bakuryu' },
+      { id: 'fox', name: 'Fox' },
+      { id: 'gado', name: 'Gado' },
+      { id: 'greg', name: 'Greg' },
+      { id: 'long', name: 'Long' },
+      { id: 'mitsuko', name: 'Mitsuko' },
+      { id: 'yugo', name: 'Yugo' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'bloody-roar-2-bringer-of-the-new-age',
+
+    name: "Bloody Roar 2: Bringer of the New Age",
+
+    developer: "Hudson Soft",
+
+    releaseYear: 1997,
+
+    platform: "Arcade PlayStation",
+
+rosterCount: 8,
+
+        characters: [
+
+      
+      { id: 'alice', name: 'Alice' },
+      { id: 'bakuryu', name: 'Bakuryu' },
+      { id: 'busuzima', name: 'Busuzima' },
+      { id: 'gado', name: 'Gado' },
+      { id: 'jenny', name: 'Jenny' },
+      { id: 'long', name: 'Long' },
+      { id: 'shina', name: 'Shina' },
+      { id: 'stun', name: 'Stun' },
+      { id: 'uriko', name: 'Uriko' },
+      { id: 'yugo', name: 'Yugo' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'bloody-roar-3',
+
+    name: "Bloody Roar 3",
+
+    developer: "Hudson Soft",
+
+    releaseYear: 1997,
+
+    platform: "Arcade PlayStation",
+
+rosterCount: 8,
+
+        characters: [
+
+      
+      { id: 'alice', name: 'Alice' },
+      { id: 'bakuryu', name: 'Bakuryu' },
+      { id: 'busuzima', name: 'Busuzima' },
+      { id: 'gado', name: 'Gado' },
+      { id: 'jenny', name: 'Jenny' },
+      { id: 'kohryu', name: 'Kohryu' },
+      { id: 'long', name: 'Long' },
+      { id: 'shina', name: 'Shina' },
+      { id: 'stun', name: 'Stun' },
+      { id: 'uriko', name: 'Uriko' },
+      { id: 'uranus', name: 'Uranus' },
+      { id: 'xion', name: 'Xion' },
+      { id: 'yugo', name: 'Yugo' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'bloody-roar-4',
+
+    name: "Bloody Roar 4",
+
+    developer: "Hudson Soft",
+
+    releaseYear: 1997,
+
+    platform: "Arcade PlayStation",
+
+rosterCount: 8,
+
+        characters: [
+
+      
+      { id: 'alice', name: 'Alice' },
+      { id: 'bakuryu', name: 'Bakuryu' },
+      { id: 'busuzima', name: 'Busuzima' },
+      { id: 'gado', name: 'Gado' },
+      { id: 'jenny', name: 'Jenny' },
+      { id: 'kohryu', name: 'Kohryu' },
+      { id: 'long', name: 'Long' },
+      { id: 'mana', name: 'Mana' },
+      { id: 'nagi', name: 'Nagi' },
+      { id: 'reiji', name: 'Reiji' },
+      { id: 'ryoho', name: 'Ryoho' },
+      { id: 'shina', name: 'Shina' },
+      { id: 'stun', name: 'Stun' },
+      { id: 'uriko', name: 'Uriko' },
+      { id: 'uranus', name: 'Uranus' },
+      { id: 'xion', name: 'Xion' },
+      { id: 'yugo', name: 'Yugo' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'bloody-roar-primal-fury--extreme',
+
+    name: "Bloody Roar: Primal Fury / Extreme",
+
+    developer: "Hudson Soft",
+
+    releaseYear: 1997,
+
+    platform: "Arcade PlayStation",
+
+rosterCount: 8,
+
+        characters: [
+
+      
+      { id: 'alice', name: 'Alice' },
+      { id: 'bakuryu', name: 'Bakuryu' },
+      { id: 'busuzima', name: 'Busuzima' },
+      { id: 'cronos', name: 'Cronos' },
+      { id: 'fang', name: 'Fang' },
+      { id: 'gado', name: 'Gado' },
+      { id: 'ganesha', name: 'Ganesha' },
+      { id: 'jenny', name: 'Jenny' },
+      { id: 'kohryu', name: 'Kohryu' },
+      { id: 'long', name: 'Long' },
+      { id: 'shina', name: 'Shina' },
+      { id: 'stun', name: 'Stun' },
+      { id: 'uriko', name: 'Uriko' },
+      { id: 'uranus', name: 'Uranus' },
+      { id: 'xion', name: 'Xion' },
+      { id: 'yugo', name: 'Yugo' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'breakers-revenge',
+
+    name: "Breakers Revenge",
+
+    developer: "Visco",
+
+    releaseYear: 1998,
+
+    platform: "Arcade Neo Geo",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'alsion-iii', name: 'Alsion III' },
+      { id: 'condor', name: 'Condor' },
+      { id: 'dao-long', name: 'Dao-Long' },
+      { id: 'maherl', name: 'Maherl' },
+      { id: 'piela', name: 'Piela' },
+      { id: 'rila', name: 'Rila' },
+      { id: 'saizo', name: 'Saizo' },
+      { id: 'sheik-maherl', name: 'Sheik Maherl' },
+      { id: 'sho', name: 'Sho' },
+      { id: 'tia', name: 'Tia' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'capcom-fighting-jam',
+
+    name: "Capcom Fighting Jam",
+
+    developer: "Capcom",
+
+    releaseYear: 2004,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'anakaris', name: 'Anakaris' },
+      { id: 'demitri', name: 'Demitri' },
+      { id: 'felicia', name: 'Felicia' },
+      { id: 'guy', name: 'Guy' },
+      { id: 'hauzer', name: 'Hauzer' },
+      { id: 'hydron', name: 'Hydron' },
+      { id: 'ingrid', name: 'Ingrid' },
+      { id: 'jedah', name: 'Jedah' },
+      { id: 'karin', name: 'Karin' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'leo', name: 'Leo' },
+      { id: 'm-bison', name: 'M. Bison' },
+      { id: 'rose', name: 'Rose' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sakura', name: 'Sakura' },
+      { id: 'shin-akuma', name: 'Shin Akuma' },
+      { id: 'urien', name: 'Urien' },
+      { id: 'yun', name: 'Yun' },
+      { id: 'zangief', name: 'Zangief' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'capcom-vs-snk-2-mark-of-the-millennium-2001',
+
+    name: "Capcom vs. SNK 2: Mark of the Millennium 2001",
+
+    developer: "Capcom",
+
+    releaseYear: 2001,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akuma', name: 'Akuma' },
+      { id: 'athena', name: 'Athena' },
+      { id: 'balrog', name: 'Balrog' },
+      { id: 'benimaru', name: 'Benimaru' },
+      { id: 'blanka', name: 'Blanka' },
+      { id: 'cammy', name: 'Cammy' },
+      { id: 'chang', name: 'Chang' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'dan', name: 'Dan' },
+      { id: 'dhalsim', name: 'Dhalsim' },
+      { id: 'eagle', name: 'Eagle' },
+      { id: 'e-honda', name: 'E. Honda' },
+      { id: 'evil-ryu', name: 'Evil Ryu' },
+      { id: 'geese', name: 'Geese' },
+      { id: 'guile', name: 'Guile' },
+      { id: 'haohmaru', name: 'Haohmaru' },
+      { id: 'hibiki', name: 'Hibiki' },
+      { id: 'iori', name: 'Iori' },
+      { id: 'joe', name: 'Joe' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'king', name: 'King' },
+      { id: 'kyo', name: 'Kyo' },
+      { id: 'kyosuke', name: 'Kyosuke' },
+      { id: 'm-bison', name: 'M. Bison' },
+      { id: 'mai', name: 'Mai' },
+      { id: 'maki', name: 'Maki' },
+      { id: 'morrigan', name: 'Morrigan' },
+      { id: 'nakoruru', name: 'Nakoruru' },
+      { id: 'orochi-iori', name: 'Orochi Iori' },
+      { id: 'raiden', name: 'Raiden' },
+      { id: 'rock', name: 'Rock' },
+      { id: 'rolento', name: 'Rolento' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sagat', name: 'Sagat' },
+      { id: 'sakura', name: 'Sakura' },
+      { id: 'shin-akuma', name: 'Shin Akuma' },
+      { id: 'terry', name: 'Terry' },
+      { id: 'todo', name: 'Todo' },
+      { id: 'ultimate-rugal', name: 'Ultimate Rugal' },
+      { id: 'vega', name: 'Vega' },
+      { id: 'vice', name: 'Vice' },
+      { id: 'yun', name: 'Yun' },
+      { id: 'yuri', name: 'Yuri' },
+      { id: 'zangief', name: 'Zangief' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'capcom-vs-snk-millennium-fight-2000-pro',
+
+    name: "Capcom vs. SNK: Millennium Fight 2000 Pro",
+
+    developer: "Capcom",
+
+    releaseYear: 2001,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akuma', name: 'Akuma' },
+      { id: 'balrog', name: 'Balrog' },
+      { id: 'benimaru', name: 'Benimaru' },
+      { id: 'blanka', name: 'Blanka' },
+      { id: 'cammy', name: 'Cammy' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'dan', name: 'Dan' },
+      { id: 'dhalsim', name: 'Dhalsim' },
+      { id: 'e-honda', name: 'E. Honda' },
+      { id: 'geese', name: 'Geese' },
+      { id: 'guile', name: 'Guile' },
+      { id: 'iori', name: 'Iori' },
+      { id: 'joe', name: 'Joe' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'king', name: 'King' },
+      { id: 'kyo', name: 'Kyo' },
+      { id: 'm-bison', name: 'M. Bison' },
+      { id: 'mai', name: 'Mai' },
+      { id: 'morrigan', name: 'Morrigan' },
+      { id: 'nakoruru', name: 'Nakoruru' },
+      { id: 'raiden', name: 'Raiden' },
+      { id: 'robert', name: 'Robert' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sagat', name: 'Sagat' },
+      { id: 'sakura', name: 'Sakura' },
+      { id: 'terry', name: 'Terry' },
+      { id: 'vice', name: 'Vice' },
+      { id: 'yuri', name: 'Yuri' },
+      { id: 'zangief', name: 'Zangief' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'cyberbots-full-metal-madness',
+
+    name: "Cyberbots: Full Metal Madness",
+
+    developer: "Capcom",
+
+    releaseYear: 1995,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'arieta', name: 'Arieta' },
+      { id: 'bao-mao', name: 'Bao & Mao' },
+      { id: 'chiyomaru', name: 'Chiyomaru' },
+      { id: 'devilotte', name: 'Devilotte' },
+      { id: 'god', name: 'G.O.D.' },
+      { id: 'gawaine', name: 'Gawaine' },
+      { id: 'jin-saotome', name: 'Jin Saotome' },
+      { id: 'ken-saotome', name: 'Ken Saotome' },
+      { id: 'mary', name: 'Mary' },
+      { id: 'princess-devilotte', name: 'Princess Devilotte' },
+      { id: 'santana', name: 'Santana' },
+      { id: 'shade', name: 'Shade' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'darkstalkers-the-night-warriors',
+
+    name: "Darkstalkers: The Night Warriors",
+
+    developer: "Capcom",
+
+    releaseYear: 1994,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'anakaris', name: 'Anakaris' },
+      { id: 'bishamon', name: 'Bishamon' },
+      { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
+      { id: 'felicia', name: 'Felicia' },
+      { id: 'huitzil', name: 'Huitzil' },
+      { id: 'jon-talbain', name: 'Jon Talbain' },
+      { id: 'lord-raptor', name: 'Lord Raptor' },
+      { id: 'morrigan-aensland', name: 'Morrigan Aensland' },
+      { id: 'rikuo', name: 'Rikuo' },
+      { id: 'sasquatch', name: 'Sasquatch' },
+      { id: 'victor-von-gerdenheim', name: 'Victor von Gerdenheim' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'dead-or-alive',
+
+    name: "Dead or Alive",
+
+    developer: "Tecmo",
+
+    releaseYear: 2019,
+
+    platform: "Windows PlayStation 4 Xbox One",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'ayane', name: 'Ayane' },
+      { id: 'bayman', name: 'Bayman' },
+      { id: 'gen-fu', name: 'Gen Fu' },
+      { id: 'jann-lee', name: 'Jann Lee' },
+      { id: 'kasumi', name: 'Kasumi' },
+      { id: 'lei-fang', name: 'Lei Fang' },
+      { id: 'leon', name: 'Leon' },
+      { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
+      { id: 'tina-armstrong', name: 'Tina Armstrong' },
+      { id: 'zack', name: 'Zack' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'dead-or-alive-2',
+
+    name: "Dead or Alive 2",
+
+    developer: "Tecmo",
+
+    releaseYear: 2019,
+
+    platform: "Windows PlayStation 4 Xbox One",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'ayane', name: 'Ayane' },
+      { id: 'bass', name: 'Bass' },
+      { id: 'bayman', name: 'Bayman' },
+      { id: 'ein', name: 'Ein' },
+      { id: 'gen-fu', name: 'Gen Fu' },
+      { id: 'helena', name: 'Helena' },
+      { id: 'jann-lee', name: 'Jann Lee' },
+      { id: 'kasumi', name: 'Kasumi' },
+      { id: 'leon', name: 'Leon' },
+      { id: 'lei-fang', name: 'Lei Fang' },
+      { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
+      { id: 'tengu', name: 'Tengu' },
+      { id: 'tina', name: 'Tina' },
+      { id: 'zack', name: 'Zack' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'dead-or-alive-3',
+
+    name: "Dead or Alive 3",
+
+    developer: "Tecmo",
+
+    releaseYear: 2019,
+
+    platform: "Windows PlayStation 4 Xbox One",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'ayane', name: 'Ayane' },
+      { id: 'bass', name: 'Bass' },
+      { id: 'bayman', name: 'Bayman' },
+      { id: 'brad-wong', name: 'Brad Wong' },
+      { id: 'christie', name: 'Christie' },
+      { id: 'ein', name: 'Ein' },
+      { id: 'gen-fu', name: 'Gen Fu' },
+      { id: 'hayate', name: 'Hayate' },
+      { id: 'helena', name: 'Helena' },
+      { id: 'hitomi', name: 'Hitomi' },
+      { id: 'jann-lee', name: 'Jann Lee' },
+      { id: 'kasumi', name: 'Kasumi' },
+      { id: 'leon', name: 'Leon' },
+      { id: 'lei-fang', name: 'Lei Fang' },
+      { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
+      { id: 'tina', name: 'Tina' },
+      { id: 'zack', name: 'Zack' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'dead-or-alive-4',
+
+    name: "Dead or Alive 4",
+
+    developer: "Tecmo",
+
+    releaseYear: 2019,
+
+    platform: "Windows PlayStation 4 Xbox One",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'ayane', name: 'Ayane' },
+      { id: 'bass', name: 'Bass' },
+      { id: 'bayman', name: 'Bayman' },
+      { id: 'brad-wong', name: 'Brad Wong' },
+      { id: 'christie', name: 'Christie' },
+      { id: 'ein', name: 'Ein' },
+      { id: 'eliot', name: 'Eliot' },
+      { id: 'gen-fu', name: 'Gen Fu' },
+      { id: 'hayate', name: 'Hayate' },
+      { id: 'helena', name: 'Helena' },
+      { id: 'hitomi', name: 'Hitomi' },
+      { id: 'jann-lee', name: 'Jann Lee' },
+      { id: 'kasumi', name: 'Kasumi' },
+      { id: 'kokoro', name: 'Kokoro' },
+      { id: 'la-mariposa', name: 'La Mariposa' },
+      { id: 'leon', name: 'Leon' },
+      { id: 'lei-fang', name: 'Lei Fang' },
+      { id: 'nicole-458', name: 'Nicole-458' },
+      { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
+      { id: 'spartan-458', name: 'Spartan-458' },
+      { id: 'tina', name: 'Tina' },
+      { id: 'zack', name: 'Zack' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'dead-or-alive-5',
+
+    name: "Dead or Alive 5",
+
+    developer: "Tecmo",
+
+    releaseYear: 2019,
+
+    platform: "Windows PlayStation 4 Xbox One",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akira-yuki', name: 'Akira Yuki' },
+      { id: 'ayane', name: 'Ayane' },
+      { id: 'bass', name: 'Bass' },
+      { id: 'bayman', name: 'Bayman' },
+      { id: 'brad-wong', name: 'Brad Wong' },
+      { id: 'christie', name: 'Christie' },
+      { id: 'eliot', name: 'Eliot' },
+      { id: 'gen-fu', name: 'Gen Fu' },
+      { id: 'hayate', name: 'Hayate' },
+      { id: 'helena', name: 'Helena' },
+      { id: 'hitomi', name: 'Hitomi' },
+      { id: 'jacky-bryant', name: 'Jacky Bryant' },
+      { id: 'jann-lee', name: 'Jann Lee' },
+      { id: 'kasumi', name: 'Kasumi' },
+      { id: 'kokoro', name: 'Kokoro' },
+      { id: 'la-mariposa', name: 'La Mariposa' },
+      { id: 'leifang', name: 'Leifang' },
+      { id: 'marie-rose', name: 'Marie Rose' },
+      { id: 'mila', name: 'Mila' },
+      { id: 'momiji', name: 'Momiji' },
+      { id: 'nyotengu', name: 'Nyotengu' },
+      { id: 'pai-chan', name: 'Pai Chan' },
+      { id: 'phase-4', name: 'Phase 4' },
+      { id: 'rachel', name: 'Rachel' },
+      { id: 'rig', name: 'Rig' },
+      { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
+      { id: 'sarah-bryant', name: 'Sarah Bryant' },
+      { id: 'tina', name: 'Tina' },
+      { id: 'zack', name: 'Zack' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'dead-or-alive-6',
+
+    name: "Dead or Alive 6",
+
+    developer: "Tecmo",
+
+    releaseYear: 2019,
+
+    platform: "Windows PlayStation 4 Xbox One",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'ayane', name: 'Ayane' },
+      { id: 'bass', name: 'Bass' },
+      { id: 'bayman', name: 'Bayman' },
+      { id: 'brad-wong', name: 'Brad Wong' },
+      { id: 'christie', name: 'Christie' },
+      { id: 'diego', name: 'Diego' },
+      { id: 'eliot', name: 'Eliot' },
+      { id: 'hayate', name: 'Hayate' },
+      { id: 'helena', name: 'Helena' },
+      { id: 'hitomi', name: 'Hitomi' },
+      { id: 'honoka', name: 'Honoka' },
+      { id: 'jann-lee', name: 'Jann Lee' },
+      { id: 'kasumi', name: 'Kasumi' },
+      { id: 'kokoro', name: 'Kokoro' },
+      { id: 'kula-diamond', name: 'Kula Diamond' },
+      { id: 'la-mariposa', name: 'La Mariposa' },
+      { id: 'leifang', name: 'Leifang' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'marie-rose', name: 'Marie Rose' },
+      { id: 'mila', name: 'Mila' },
+      { id: 'nico', name: 'NiCO' },
+      { id: 'nyotengu', name: 'Nyotengu' },
+      { id: 'phase-4', name: 'Phase 4' },
+      { id: 'rachel', name: 'Rachel' },
+      { id: 'rig', name: 'Rig' },
+      { id: 'ryu-hayabusa', name: 'Ryu Hayabusa' },
+      { id: 'tamaki', name: 'Tamaki' },
+      { id: 'tina', name: 'Tina' },
+      { id: 'zack', name: 'Zack' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'dnf-duel',
+
+    name: "DNF Duel",
+
+    developer: "Arc System Works",
+
+    releaseYear: 2022,
+
+    platform: "Windows PlayStation 4 PlayStation 5",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'berserker', name: 'Berserker' },
+      { id: 'crusader', name: 'Crusader' },
+      { id: 'dragon-knight', name: 'Dragon Knight' },
+      { id: 'enchantress', name: 'Enchantress' },
+      { id: 'grappler', name: 'Grappler' },
+      { id: 'hitman', name: 'Hitman' },
+      { id: 'inquisitor', name: 'Inquisitor' },
+      { id: 'kunoichi', name: 'Kunoichi' },
+      { id: 'launcher', name: 'Launcher' },
+      { id: 'lost-warrior', name: 'Lost Warrior' },
+      { id: 'ranger', name: 'Ranger' },
+      { id: 'striker', name: 'Striker' },
+      { id: 'swift-master', name: 'Swift Master' },
+      { id: 'troubleshooter', name: 'Troubleshooter' },
+      { id: 'vanguard', name: 'Vanguard' },
+      { id: 'wind-walker', name: 'Wind Walker' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'dragon-ball-fighterz',
+
+    name: "Dragon Ball FighterZ",
+
+    developer: "Arc System Works",
+
+    releaseYear: 2018,
+
+rosterCount: 25,
+
+        characters: [
+
+      
+      { id: 'android-16', name: 'Android 16' },
+      { id: 'android-17', name: 'Android 17' },
+      { id: 'android-18', name: 'Android 18' },
+      { id: 'android-21-lab-coat', name: 'Android 21 (Lab Coat)' },
+      { id: 'android-21-majin', name: 'Android 21 (Majin)' },
+      { id: 'bardock', name: 'Bardock' },
+      { id: 'beerus', name: 'Beerus' },
+      { id: 'broly-dbs', name: 'Broly (DBS)' },
+      { id: 'broly-z', name: 'Broly (Z)' },
+      { id: 'cell', name: 'Cell' },
+      { id: 'cooler', name: 'Cooler' },
+      { id: 'freeza', name: 'Freeza' },
+      { id: 'ginyu', name: 'Ginyu' },
+      { id: 'gogeta-ss4', name: 'Gogeta (SS4)' },
+      { id: 'gogeta-ssgss', name: 'Gogeta (SSGSS)' },
+      { id: 'gohan-adult', name: 'Gohan (Adult)' },
+      { id: 'gohan-teen', name: 'Gohan (Teen)' },
+      { id: 'goku-blue', name: 'Goku (Blue)' },
+      { id: 'goku-gt', name: 'Goku (GT)' },
+      { id: 'goku-ss', name: 'Goku (SS)' },
+      { id: 'goku-ultra-instinct', name: 'Goku (Ultra Instinct)' },
+      { id: 'goku-black', name: 'Goku Black' },
+      { id: 'gotenks', name: 'Gotenks' },
+      { id: 'hit', name: 'Hit' },
+      { id: 'janemba', name: 'Janemba' },
+      { id: 'jiren', name: 'Jiren' },
+      { id: 'kefla', name: 'Kefla' },
+      { id: 'krillin', name: 'Krillin' },
+      { id: 'majin-buu', name: 'Majin Buu' },
+      { id: 'master-roshi', name: 'Master Roshi' },
+      { id: 'nappa', name: 'Nappa' },
+      { id: 'piccolo', name: 'Piccolo' },
+      { id: 'tenshinhan', name: 'Tenshinhan' },
+      { id: 'trunks', name: 'Trunks' },
+      { id: 'videl', name: 'Videl' },
+      { id: 'yamcha', name: 'Yamcha' },
+      { id: 'zamasu-fused', name: 'Zamasu (Fused)' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'fatal-fury-2',
+
+    name: "Fatal Fury 2",
+
+    developer: "SNK",
+
+    releaseYear: 1991,
+
+    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'andy-bogard', name: 'Andy Bogard' },
+      { id: 'axel-hawk', name: 'Axel Hawk' },
+      { id: 'big-bear', name: 'Big Bear' },
+      { id: 'cheng-sinzan', name: 'Cheng Sinzan' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'jubei-yamada', name: 'Jubei Yamada' },
+      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
+      { id: 'laurence-blood', name: 'Laurence Blood' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'fatal-fury-3-road-to-the-final-victory',
+
+    name: "Fatal Fury 3: Road to the Final Victory",
+
+    developer: "SNK",
+
+    releaseYear: 1991,
+
+    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'andy-bogard', name: 'Andy Bogard' },
+      { id: 'blue-mary', name: 'Blue Mary' },
+      { id: 'bob-wilson', name: 'Bob Wilson' },
+      { id: 'franco-bash', name: 'Franco Bash' },
+      { id: 'hon-fu', name: 'Hon-Fu' },
+      { id: 'jin-chonrei', name: 'Jin Chonrei' },
+      { id: 'jin-chonshu', name: 'Jin Chonshu' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
+      { id: 'sokaku-mochizuki', name: 'Sokaku Mochizuki' },
+      { id: 'terry-bogard', name: 'Terry Bogard' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'fatal-fury-special',
+
+    name: "Fatal Fury Special",
+
+    developer: "SNK",
+
+    releaseYear: 1991,
+
+    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'andy-bogard', name: 'Andy Bogard' },
+      { id: 'axel-hawk', name: 'Axel Hawk' },
+      { id: 'big-bear', name: 'Big Bear' },
+      { id: 'billy-kane', name: 'Billy Kane' },
+      { id: 'cheng-sinzan', name: 'Cheng Sinzan' },
+      { id: 'duck-king', name: 'Duck King' },
+      { id: 'geese-howard', name: 'Geese Howard' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'jubei-yamada', name: 'Jubei Yamada' },
+      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
+      { id: 'laurence-blood', name: 'Laurence Blood' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'tung-fu-rue', name: 'Tung Fu Rue' },
+      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'fatal-fury-city-of-the-wolves',
+
+    name: "Fatal Fury: City of the Wolves",
+
+    developer: "SNK",
+
+    releaseYear: 1991,
+
+    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'andy-bogard', name: 'Andy Bogard' },
+      { id: 'b-jenet', name: 'B. Jenet' },
+      { id: 'billy-kane', name: 'Billy Kane' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'cristiano-ronaldo', name: 'Cristiano Ronaldo' },
+      { id: 'gato', name: 'Gato' },
+      { id: 'hotaru-futaba', name: 'Hotaru Futaba' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'ken-masters', name: 'Ken Masters' },
+      { id: 'kenshiro', name: 'Kenshiro' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'marco-rodrigues', name: 'Marco Rodrigues' },
+      { id: 'preecha', name: 'Preecha' },
+      { id: 'rock-howard', name: 'Rock Howard' },
+      { id: 'salvatore-ganacci', name: 'Salvatore Ganacci' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'tizoc', name: 'Tizoc' },
+      { id: 'vox-reaper', name: 'Vox Reaper' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'fatal-fury-king-of-fighters',
+
+    name: "Fatal Fury: King of Fighters",
+
+    developer: "SNK",
+
+    releaseYear: 1991,
+
+    platform: "Neo Geo Arcade Super Nintendo Entertainment System Sega Genesis",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'andy-bogard', name: 'Andy Bogard' },
+      { id: 'billy-kane', name: 'Billy Kane' },
+      { id: 'duck-king', name: 'Duck King' },
+      { id: 'geese-howard', name: 'Geese Howard' },
+      { id: 'hwa-jai', name: 'Hwa Jai' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'michael-max', name: 'Michael Max' },
+      { id: 'raiden', name: 'Raiden' },
+      { id: 'richard-meyer', name: 'Richard Meyer' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'tung-fu-rue', name: 'Tung Fu Rue' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'fighters-megamix',
+
+    name: "Fighters Megamix",
+
+    developer: "Sega",
+
+    releaseYear: 1996,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akira', name: 'Akira' },
+      { id: 'bean', name: 'Bean' },
+      { id: 'candy', name: 'Candy' },
+      { id: 'deku', name: 'Deku' },
+      { id: 'honey', name: 'Honey' },
+      { id: 'janet', name: 'Janet' },
+      { id: 'kids-akira', name: 'Kids Akira' },
+      { id: 'kids-sarah', name: 'Kids Sarah' },
+      { id: 'kumachan', name: 'Kumachan' },
+      { id: 'pai', name: 'Pai' },
+      { id: 'rent-a-hero', name: 'Rent-A-Hero' },
+      { id: 'satoru', name: 'Satoru' },
+      { id: 'shiba', name: 'Shiba' },
+      { id: 'wolf', name: 'Wolf' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'fighting-ex-layer',
+
+    name: "Fighting EX Layer",
+
+    developer: "Arika",
+
+    releaseYear: 2018,
+
+    platform: "PlayStation 4 Windows Nintendo Switch",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'allen-snider', name: 'Allen Snider' },
+      { id: 'blair-dame', name: 'Blair Dame' },
+      { id: 'darun-mister', name: 'Darun Mister' },
+      { id: 'doctrine-dark', name: 'Doctrine Dark' },
+      { id: 'garuda', name: 'Garuda' },
+      { id: 'hokuto', name: 'Hokuto' },
+      { id: 'jack', name: 'Jack' },
+      { id: 'kairi', name: 'Kairi' },
+      { id: 'pullum-purna', name: 'Pullum Purna' },
+      { id: 'sanane', name: 'Sanane' },
+      { id: 'shadowgeist', name: 'Shadowgeist' },
+      { id: 'shirase', name: 'Shirase' },
+      { id: 'skullomania', name: 'Skullomania' },
+      { id: 'terry-bogard', name: 'Terry Bogard' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'fighting-vipers',
+
+    name: "Fighting Vipers",
+
+    developer: "Sega",
+
+    releaseYear: 1995,
+
+    platform: "Arcade Sega Saturn",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'bahn', name: 'Bahn' },
+      { id: 'candy', name: 'Candy' },
+      { id: 'honey', name: 'Honey' },
+      { id: 'jane', name: 'Jane' },
+      { id: 'picky', name: 'Picky' },
+      { id: 'sanman', name: 'Sanman' },
+      { id: 'tokio', name: 'Tokio' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'fighting-vipers-2',
+
+    name: "Fighting Vipers 2",
+
+    developer: "Sega",
+
+    releaseYear: 1995,
+
+    platform: "Arcade Sega Saturn",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'bahn', name: 'Bahn' },
+      { id: 'charlie', name: 'Charlie' },
+      { id: 'emi', name: 'Emi' },
+      { id: 'honey', name: 'Honey' },
+      { id: 'jane', name: 'Jane' },
+      { id: 'kuhn', name: 'Kuhn' },
+      { id: 'picky', name: 'Picky' },
+      { id: 'sanman', name: 'Sanman' },
+      { id: 'tokio', name: 'Tokio' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'fist-of-the-north-star-hokuto-no-ken',
+
+    name: "Fist of the North Star (Hokuto no Ken)",
+
+    developer: "Unknown",
+
+    releaseYear: 2005,
+
+    platform: "Arcade PlayStation 2",
+
+rosterCount: 9,
+
+        characters: [
+
+      
+      { id: 'heart', name: 'Heart' },
+      { id: 'jagi', name: 'Jagi' },
+      { id: 'judas', name: 'Judas' },
+      { id: 'kenshiro', name: 'Kenshiro' },
+      { id: 'mamiya', name: 'Mamiya' },
+      { id: 'raoh', name: 'Raoh' },
+      { id: 'rei', name: 'Rei' },
+      { id: 'shin', name: 'Shin' },
+      { id: 'souther', name: 'Souther' },
+      { id: 'toki', name: 'Toki' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'galaxy-fight-universal-warriors',
+
+    name: "Galaxy Fight: Universal Warriors",
+
+    developer: "Sunsoft",
+
+    releaseYear: 1995,
+
+    platform: "Neo Geo Arcade Sega Saturn PlayStation",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'alvan', name: 'Alvan' },
+      { id: 'bonus-kun', name: 'Bonus-Kun' },
+      { id: 'felden', name: 'Felden' },
+      { id: 'gunter', name: 'Gunter' },
+      { id: 'jaba', name: 'Jaba' },
+      { id: 'kazuma', name: 'Kazuma' },
+      { id: 'musashi', name: 'Musashi' },
+      { id: 'rolf', name: 'Rolf' },
+      { id: 'roomi', name: 'Roomi' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'garou-mark-of-the-wolves',
+
+    name: "Garou: Mark of the Wolves",
+
+    developer: "SNK",
+
+    releaseYear: 1999,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'b-jenet', name: 'B. Jenet' },
+      { id: 'dong-hwan', name: 'Dong Hwan' },
+      { id: 'freeman', name: 'Freeman' },
+      { id: 'gato', name: 'Gato' },
+      { id: 'grant', name: 'Grant' },
+      { id: 'hokutomaru', name: 'Hokutomaru' },
+      { id: 'hotaru', name: 'Hotaru' },
+      { id: 'jae-hoon', name: 'Jae Hoon' },
+      { id: 'kain', name: 'Kain' },
+      { id: 'kevin', name: 'Kevin' },
+      { id: 'marco', name: 'Marco' },
+      { id: 'rock-howard', name: 'Rock Howard' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'tizoc', name: 'Tizoc' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'golden-axe-the-duel',
+
+    name: "Golden Axe: The Duel",
+
+    developer: "Sega",
+
+    releaseYear: 1995,
+
+    platform: "Arcade Sega Saturn",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'death-adder', name: 'Death Adder' },
+      { id: 'doc', name: 'Doc' },
+      { id: 'gillius', name: 'Gillius' },
+      { id: 'jamm', name: 'Jamm' },
+      { id: 'kain', name: 'Kain' },
+      { id: 'milan', name: 'Milan' },
+      { id: 'panchos', name: 'Panchos' },
+      { id: 'zoma', name: 'Zoma' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'granblue-fantasy-versus-rising',
+
+    name: "Granblue Fantasy Versus: Rising",
+
+    developer: "Arc System Works",
+
+    releaseYear: 2023,
+
+    platform: "Windows PlayStation 4 PlayStation 5",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'anila', name: 'Anila' },
+      { id: 'belial', name: 'Belial' },
+      { id: 'beelzebub', name: 'Beelzebub' },
+      { id: 'eustace', name: 'Eustace' },
+      { id: 'grimnir', name: 'Grimnir' },
+      { id: 'lucilius', name: 'Lucilius' },
+      { id: 'metera', name: 'Metera' },
+      { id: 'nier', name: 'Nier' },
+      { id: 'percival', name: 'Percival' },
+      { id: 'seox', name: 'Seox' },
+      { id: 'siegfried', name: 'Siegfried' },
+      { id: 'vane', name: 'Vane' },
+      { id: 'vira', name: 'Vira' },
+      { id: 'zeta', name: 'Zeta' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'groove-on-fight',
+
+    name: "Groove on Fight",
+
+    developer: "Atlus",
+
+    releaseYear: 1997,
+
+    platform: "Arcade Sega Saturn",
+
+rosterCount: 14,
+
+        characters: [
+
+      
+      { id: 'bristol-weller', name: 'Bristol Weller' },
+      { id: 'chris-wayne', name: 'Chris Wayne' },
+      { id: 'damian-shade', name: 'Damian Shade' },
+      { id: 'falco', name: 'Falco' },
+      { id: 'hizumi-yukinoue', name: 'Hizumi Yukinoue' },
+      { id: 'larry-light', name: 'Larry Light' },
+      { id: 'mad', name: 'M.A.D' },
+      { id: 'oume-otane', name: 'Oume & Otane' },
+      { id: 'popura-hananokoji', name: 'Popura Hananokoji' },
+      { id: 'remi-otogiri', name: 'Remi Otogiri' },
+      { id: 'solis-r8000', name: 'Solis R8000' },
+      { id: 'tenjinbashi-sujiroku', name: 'Tenjinbashi Sujiroku' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'groove-on-fight-power-instinct-3',
+
+    name: "Groove On Fight (Power Instinct 3)",
+
+    developer: "Unknown",
+
+    releaseYear: 1997,
+
+    platform: "Arcade Sega Saturn",
+
+rosterCount: 14,
+
+        characters: [
+
+      
+      { id: 'bristol-weller', name: 'Bristol Weller' },
+      { id: 'chris-wayne', name: 'Chris Wayne' },
+      { id: 'damian-shade', name: 'Damian Shade' },
+      { id: 'falco', name: 'Falco' },
+      { id: 'hizumi-yukinoue', name: 'Hizumi Yukinoue' },
+      { id: 'larry-light', name: 'Larry Light' },
+      { id: 'mad', name: 'M.A.D' },
+      { id: 'oume-otane', name: 'Oume & Otane' },
+      { id: 'popura-hananokoji', name: 'Popura Hananokoji' },
+      { id: 'remi-otogiri', name: 'Remi Otogiri' },
+      { id: 'solis-r8000', name: 'Solis R8000' },
+      { id: 'tenjinbashi-sujiroku', name: 'Tenjinbashi Sujiroku' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'guilty-gear',
+
+    name: "Guilty Gear (1998)",
+
+    developer: "Arc System Works",
+
+    releaseYear: 1998,
+
+    platform: "PlayStation",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'axl-low', name: 'Axl Low' },
+      { id: 'baiken', name: 'Baiken' },
+      { id: 'chipp-zanuff', name: 'Chipp Zanuff' },
+      { id: 'dr-baldhead', name: 'Dr. Baldhead' },
+      { id: 'kliff-undersn', name: 'Kliff Undersn' },
+      { id: 'ky-kiske', name: 'Ky Kiske' },
+      { id: 'may', name: 'May' },
+      { id: 'millia-rage', name: 'Millia Rage' },
+      { id: 'potemkin', name: 'Potemkin' },
+      { id: 'sol-badguy', name: 'Sol Badguy' },
+      { id: 'testament', name: 'Testament' },
+      { id: 'zato-1', name: 'Zato-1' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'guilty-gear-strive',
+
+    name: "Guilty Gear -Strive-",
+
+    developer: "Unknown",
+
+    releaseYear: 1998,
+
+    platform: "PlayStation",
+
+rosterCount: 9,
+
+        characters: [
+
+      
+      { id: 'anji-mito', name: 'Anji Mito' },
+      { id: 'axl-low', name: 'Axl Low' },
+      { id: 'baiken', name: 'Baiken' },
+      { id: 'bridget', name: 'Bridget' },
+      { id: 'chipp-zanuff', name: 'Chipp Zanuff' },
+      { id: 'elphelt', name: 'Elphelt' },
+      { id: 'faust', name: 'Faust' },
+      { id: 'giovanna', name: 'Giovanna' },
+      { id: 'goldlewis-dickinson', name: 'Goldlewis Dickinson' },
+      { id: 'happy-chaos', name: 'Happy Chaos' },
+      { id: 'i-no', name: 'I-No' },
+      { id: 'jack-o', name: 'Jack-O\'' },
+      { id: 'johnny', name: 'Johnny' },
+      { id: 'ky-kiske', name: 'Ky Kiske' },
+      { id: 'leo-whitefang', name: 'Leo Whitefang' },
+      { id: 'may', name: 'May' },
+      { id: 'millia-rage', name: 'Millia Rage' },
+      { id: 'nagoriyuki', name: 'Nagoriyuki' },
+      { id: 'potemkin', name: 'Potemkin' },
+      { id: 'ramlethal-valentine', name: 'Ramlethal Valentine' },
+      { id: 'sin-kiske', name: 'Sin Kiske' },
+      { id: 'sol-badguy', name: 'Sol Badguy' },
+      { id: 'testament', name: 'Testament' },
+      { id: 'zato-1', name: 'Zato-1' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'guilty-gear-x',
+
+    name: "Guilty Gear X",
+
+    developer: "Arc System Works",
+
+    releaseYear: 1998,
+
+    platform: "PlayStation",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'anji-mito', name: 'Anji Mito' },
+      { id: 'axl-low', name: 'Axl Low' },
+      { id: 'baiken', name: 'Baiken' },
+      { id: 'chipp-zanuff', name: 'Chipp Zanuff' },
+      { id: 'dizzy', name: 'Dizzy' },
+      { id: 'faust', name: 'Faust' },
+      { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' },
+      { id: 'johnny', name: 'Johnny' },
+      { id: 'ky-kiske', name: 'Ky Kiske' },
+      { id: 'may', name: 'May' },
+      { id: 'millia-rage', name: 'Millia Rage' },
+      { id: 'potemkin', name: 'Potemkin' },
+      { id: 'sol-badguy', name: 'Sol Badguy' },
+      { id: 'testament', name: 'Testament' },
+      { id: 'venom', name: 'Venom' },
+      { id: 'zato-1', name: 'Zato-1' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'guilty-gear-xrd-rev-2',
+
+    name: "Guilty Gear Xrd REV 2",
+
+    developer: "Arc System Works",
+
+    releaseYear: 1998,
+
+    platform: "PlayStation",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'answer', name: 'Answer' },
+      { id: 'baiken', name: 'Baiken' },
+      { id: 'bedman', name: 'Bedman' },
+      { id: 'chipp-zanuff', name: 'Chipp Zanuff' },
+      { id: 'dizzy', name: 'Dizzy' },
+      { id: 'elphelt-valentine', name: 'Elphelt Valentine' },
+      { id: 'faust', name: 'Faust' },
+      { id: 'i-no', name: 'I-No' },
+      { id: 'jack-o', name: 'Jack-O\'' },
+      { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' },
+      { id: 'johnny', name: 'Johnny' },
+      { id: 'kum-haehyun', name: 'Kum Haehyun' },
+      { id: 'ky-kiske', name: 'Ky Kiske' },
+      { id: 'leo-whitefang', name: 'Leo Whitefang' },
+      { id: 'may', name: 'May' },
+      { id: 'millia-rage', name: 'Millia Rage' },
+      { id: 'potemkin', name: 'Potemkin' },
+      { id: 'ramlethal-valentine', name: 'Ramlethal Valentine' },
+      { id: 'raven', name: 'Raven' },
+      { id: 'sin-kiske', name: 'Sin Kiske' },
+      { id: 'slayer', name: 'Slayer' },
+      { id: 'sol-badguy', name: 'Sol Badguy' },
+      { id: 'venom', name: 'Venom' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'guilty-gear-xx-accent-core-plus-r',
+
+    name: "Guilty Gear XX Accent Core Plus R",
+
+    developer: "Arc System Works",
+
+    releaseYear: 1998,
+
+    platform: "PlayStation",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'aba', name: 'A.B.A' },
+      { id: 'anji-mito', name: 'Anji Mito' },
+      { id: 'axl-low', name: 'Axl Low' },
+      { id: 'baiken', name: 'Baiken' },
+      { id: 'bridget', name: 'Bridget' },
+      { id: 'chipp-zanuff', name: 'Chipp Zanuff' },
+      { id: 'dizzy', name: 'Dizzy' },
+      { id: 'eddie', name: 'Eddie' },
+      { id: 'faust', name: 'Faust' },
+      { id: 'i-no', name: 'I-No' },
+      { id: 'jam-kuradoberi', name: 'Jam Kuradoberi' },
+      { id: 'johnny', name: 'Johnny' },
+      { id: 'justice', name: 'Justice' },
+      { id: 'kliff-undersn', name: 'Kliff Undersn' },
+      { id: 'ky-kiske', name: 'Ky Kiske' },
+      { id: 'may', name: 'May' },
+      { id: 'millia-rage', name: 'Millia Rage' },
+      { id: 'order-sol', name: 'Order-Sol' },
+      { id: 'potemkin', name: 'Potemkin' },
+      { id: 'robo-ky', name: 'Robo-Ky' },
+      { id: 'slayer', name: 'Slayer' },
+      { id: 'sol-badguy', name: 'Sol Badguy' },
+      { id: 'testament', name: 'Testament' },
+      { id: 'venom', name: 'Venom' },
+      { id: 'zappa', name: 'Zappa' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'hyper-street-fighter-ii',
+
+    name: "Hyper Street Fighter II",
+
+    developer: "Capcom",
+
+    releaseYear: 1987,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'balrog', name: 'Balrog' },
+      { id: 'blanka', name: 'Blanka' },
+      { id: 'cammy', name: 'Cammy' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'dee-jay', name: 'Dee Jay' },
+      { id: 'dhalsim', name: 'Dhalsim' },
+      { id: 'e-honda', name: 'E. Honda' },
+      { id: 'fei-long', name: 'Fei Long' },
+      { id: 'guile', name: 'Guile' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'm-bison', name: 'M. Bison' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sagat', name: 'Sagat' },
+      { id: 't-hawk', name: 'T. Hawk' },
+      { id: 'vega', name: 'Vega' },
+      { id: 'zangief', name: 'Zangief' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'invincible-vs-beta',
+
+    name: "Invincible VS Beta",
+
+    developer: "Unknown",
+
+    releaseYear: 2026,
+
+    platform: "Windows Xbox Series X/S PlayStation 5",
+
+rosterCount: 10,
+
+        characters: [
+
+      
+      { id: 'atom-eve', name: 'Atom Eve' },
+      { id: 'battle-beast', name: 'Battle Beast' },
+      { id: 'dupli-kate', name: 'Dupli-Kate' },
+      { id: 'invincible', name: 'Invincible' },
+      { id: 'omni-man', name: 'Omni-Man' },
+      { id: 'rex-splode', name: 'Rex Splode' },
+      { id: 'robot', name: 'Robot' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'jojo-s-bizarre-adventure-heritage-for-the-future-jjba-hftf',
+
+    name: "JoJo's Bizarre Adventure: Heritage for the Future (JJBA: HFTF)",
+
+    developer: "Unknown",
+
+    releaseYear: 1999,
+
+    platform: "Arcade Sega Dreamcast PlayStation",
+
+rosterCount: 15,
+
+        characters: [
+
+      
+      { id: 'alessy', name: 'Alessy' },
+      { id: 'chaka', name: 'Chaka' },
+      { id: 'dio-brando', name: 'Dio Brando' },
+      { id: 'hol-horse', name: 'Hol Horse' },
+      { id: 'iggy', name: 'Iggy' },
+      { id: 'jean-pierre-polnareff', name: 'Jean Pierre Polnareff' },
+      { id: 'joseph-joestar', name: 'Joseph Joestar' },
+      { id: 'jotaro-kujo', name: 'Jotaro Kujo' },
+      { id: 'mariah', name: 'Mariah' },
+      { id: 'midler', name: 'Midler' },
+      { id: 'muhammad-avdol', name: 'Muhammad Avdol' },
+      { id: 'noriaki-kakyoin', name: 'Noriaki Kakyoin' },
+      { id: 'petshop', name: 'Petshop' },
+      { id: 'shadow-dio', name: 'Shadow Dio' },
+      { id: 'vanilla-ice', name: 'Vanilla Ice' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'kakuto-chojin-back-alley-brutal',
+
+    name: "Kakuto Chojin: Back Alley Brutal",
+
+    developer: "Unknown",
+
+    releaseYear: 2002,
+
+    platform: "Xbox",
+
+rosterCount: 12,
+
+        characters: [
+
+      
+      { id: 'asuka', name: 'Asuka' },
+      { id: 'crusher', name: 'Crusher' },
+      { id: 'jd-stone', name: 'J.D. Stone' },
+      { id: 'khan', name: 'Khan' },
+      { id: 'malice', name: 'Malice' },
+      { id: 'rena', name: 'Rena' },
+      { id: 'shadow', name: 'Shadow' },
+      { id: 'vittoria', name: 'Vittoria' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'kasumi-ninja',
+
+    name: "Kasumi Ninja",
+
+    developer: "Unknown",
+
+    releaseYear: 1994,
+
+    platform: "Atari Jaguar",
+
+rosterCount: 9,
+
+        characters: [
+
+      
+      { id: 'alaric', name: 'Alaric' },
+      { id: 'angus', name: 'Angus' },
+      { id: 'chagi', name: 'Chagi' },
+      { id: 'habaki', name: 'Habaki' },
+      { id: 'kaumi', name: 'Kaumi' },
+      { id: 'kendo', name: 'Kendo' },
+      { id: 'pakawa', name: 'Pakawa' },
+      { id: 'senzo', name: 'Senzo' },
+      { id: 'thoth', name: 'Thoth' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'killer-instinct-(1994)',
+
+    name: "Killer Instinct (1994)",
+
+    developer: "Rare",
+
+    releaseYear: 1994,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'b-orchid', name: 'B. Orchid' },
+      { id: 'chief-thunder', name: 'Chief Thunder' },
+      { id: 'cinder', name: 'Cinder' },
+      { id: 'fulgore', name: 'Fulgore' },
+      { id: 'glacius', name: 'Glacius' },
+      { id: 'jago', name: 'Jago' },
+      { id: 'riptor', name: 'Riptor' },
+      { id: 'sabrewulf', name: 'Sabrewulf' },
+      { id: 'spinal', name: 'Spinal' },
+      { id: 'tj-combo', name: 'T.J. Combo' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'killer-instinct-(2013)',
+
+    name: "Killer Instinct (2013)",
+
+    developer: "Rare",
+
+    releaseYear: 2013,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'aganos', name: 'Aganos' },
+      { id: 'aria', name: 'ARIA' },
+      { id: 'b-orchid', name: 'B. Orchid' },
+      { id: 'cinder', name: 'Cinder' },
+      { id: 'eagle', name: 'Eagle' },
+      { id: 'eyedol', name: 'Eyedol' },
+      { id: 'fulgore', name: 'Fulgore' },
+      { id: 'gargos', name: 'Gargos' },
+      { id: 'general-raam', name: 'General RAAM' },
+      { id: 'glacius', name: 'Glacius' },
+      { id: 'hisako', name: 'Hisako' },
+      { id: 'jago', name: 'Jago' },
+      { id: 'kan-ra', name: 'Kan-Ra' },
+      { id: 'kilgore', name: 'Kilgore' },
+      { id: 'kim-wu', name: 'Kim Wu' },
+      { id: 'maya', name: 'Maya' },
+      { id: 'mira', name: 'Mira' },
+      { id: 'omen', name: 'Omen' },
+      { id: 'rash', name: 'Rash' },
+      { id: 'riptor', name: 'Riptor' },
+      { id: 'sabrewulf', name: 'Sabrewulf' },
+      { id: 'sadira', name: 'Sadira' },
+      { id: 'shadow-jago', name: 'Shadow Jago' },
+      { id: 'shin-hisako', name: 'Shin Hisako' },
+      { id: 'spinal', name: 'Spinal' },
+      { id: 'tj-combo', name: 'T.J. Combo' },
+      { id: 'thunder', name: 'Thunder' },
+      { id: 'tusk', name: 'Tusk' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'killer-instinct-2--gold',
+
+    name: "Killer Instinct 2 / Gold",
+
+    developer: "Rare",
+
+    releaseYear: 1994,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'b-orchid', name: 'B. Orchid' },
+      { id: 'fulgore', name: 'Fulgore' },
+      { id: 'gargos', name: 'Gargos' },
+      { id: 'glacius', name: 'Glacius' },
+      { id: 'jago', name: 'Jago' },
+      { id: 'kim-wu', name: 'Kim Wu' },
+      { id: 'maya', name: 'Maya' },
+      { id: 'sabrewulf', name: 'Sabrewulf' },
+      { id: 'spinal', name: 'Spinal' },
+      { id: 'tj-combo', name: 'T.J. Combo' },
+      { id: 'tusk', name: 'Tusk' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'kizuna-encounter-super-tag-battle',
+
+    name: "Kizuna Encounter: Super Tag Battle",
+
+    developer: "SNK",
+
+    releaseYear: 1996,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'chung-paifu', name: 'Chung Paifu' },
+      { id: 'gozu', name: 'Gozu' },
+      { id: 'kim-sue-il', name: 'Kim Sue Il' },
+      { id: 'king-lion', name: 'King Lion' },
+      { id: 'max-eagle', name: 'Max Eagle' },
+      { id: 'mezu', name: 'Mezu' },
+      { id: 'rosa', name: 'Rosa' },
+      { id: 'sho-hayate', name: 'Sho Hayate' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'last-bronx',
+
+    name: "Last Bronx",
+
+    developer: "Sega",
+
+    releaseYear: 1996,
+
+    platform: "Arcade Sega Saturn Windows",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'joe', name: 'Joe' },
+      { id: 'kurosawa', name: 'Kurosawa' },
+      { id: 'lisa', name: 'Lisa' },
+      { id: 'nagi', name: 'Nagi' },
+      { id: 'redeye', name: 'Redeye' },
+      { id: 'tommy', name: 'Tommy' },
+      { id: 'yusaku', name: 'Yusaku' },
+      { id: 'zaimoku', name: 'Zaimoku' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'marvel-super-heroes',
+
+    name: "Marvel Super Heroes",
+
+    developer: "Capcom",
+
+    releaseYear: 1995,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'black-heart', name: 'Black Heart' },
+      { id: 'captain-america', name: 'Captain America' },
+      { id: 'doctor-doom', name: 'Doctor Doom' },
+      { id: 'hulk', name: 'Hulk' },
+      { id: 'iron-man', name: 'Iron Man' },
+      { id: 'juggernaut', name: 'Juggernaut' },
+      { id: 'magneto', name: 'Magneto' },
+      { id: 'psylocke', name: 'Psylocke' },
+      { id: 'shuma-gorath', name: 'Shuma-Gorath' },
+      { id: 'spider-man', name: 'Spider-Man' },
+      { id: 'thanos', name: 'Thanos' },
+      { id: 'wolverine', name: 'Wolverine' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'mshvsf',
+
+    name: "Marvel Super Heroes vs. Street Fighter",
+
+    developer: "Capcom",
+
+    releaseYear: 1997,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akuma', name: 'Akuma' },
+      { id: 'black-heart', name: 'Black Heart' },
+      { id: 'captain-america', name: 'Captain America' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'cyclops', name: 'Cyclops' },
+      { id: 'dan', name: 'Dan' },
+      { id: 'dhalsim', name: 'Dhalsim' },
+      { id: 'hulk', name: 'Hulk' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'm-bison', name: 'M. Bison' },
+      { id: 'omega-red', name: 'Omega Red' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sakura', name: 'Sakura' },
+      { id: 'shuma-gorath', name: 'Shuma-Gorath' },
+      { id: 'spider-man', name: 'Spider-Man' },
+      { id: 'wolverine', name: 'Wolverine' },
+      { id: 'zangief', name: 'Zangief' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'marvel-toukon-fighting-souls-beta-version',
+
+    name: "Marvel Toukon: Fighting Souls (Beta Version)",
+
+    developer: "Unknown",
+
+    releaseYear: 2025,
+
+    platform: "PlayStation 5 Windows",
+
+rosterCount: 9,
+
+        characters: [
+
+      
+      { id: 'captain-america', name: 'Captain America' },
+      { id: 'hulk', name: 'Hulk' },
+      { id: 'iron-man', name: 'Iron Man' },
+      { id: 'spider-man', name: 'Spider-Man' },
+      { id: 'thanos', name: 'Thanos' },
+      { id: 'thor', name: 'Thor' },
+      { id: 'wolverine', name: 'Wolverine' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'marvel-vs-capcom-2',
+
+    name: "Marvel vs. Capcom 2",
+
+    developer: "Capcom",
+
+    releaseYear: 2000,
+
+    platform: "Arcade Sega Dreamcast PlayStation 2 Xbox",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akuma', name: 'Akuma' },
+      { id: 'amaterasu', name: 'Amaterasu' },
+      { id: 'arthur', name: 'Arthur' },
+      { id: 'bb-hood', name: 'B.B. Hood' },
+      { id: 'cable', name: 'Cable' },
+      { id: 'captain-america', name: 'Captain America' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'cyclops', name: 'Cyclops' },
+      { id: 'dan', name: 'Dan' },
+      { id: 'dhalsim', name: 'Dhalsim' },
+      { id: 'doctor-doom', name: 'Doctor Doom' },
+      { id: 'felicia', name: 'Felicia' },
+      { id: 'gambit', name: 'Gambit' },
+      { id: 'guile', name: 'Guile' },
+      { id: 'hulk', name: 'Hulk' },
+      { id: 'iron-man', name: 'Iron Man' },
+      { id: 'jill-valentine', name: 'Jill Valentine' },
+      { id: 'juggernaut', name: 'Juggernaut' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'magneto', name: 'Magneto' },
+      { id: 'morrigan', name: 'Morrigan' },
+      { id: 'psylocke', name: 'Psylocke' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sakura', name: 'Sakura' },
+      { id: 'sentinel', name: 'Sentinel' },
+      { id: 'servbot', name: 'Servbot' },
+      { id: 'shuma-gorath', name: 'Shuma-Gorath' },
+      { id: 'silver-samurai', name: 'Silver Samurai' },
+      { id: 'sonson', name: 'SonSon' },
+      { id: 'spider-man', name: 'Spider-Man' },
+      { id: 'storm', name: 'Storm' },
+      { id: 'strider-hiryu', name: 'Strider Hiryu' },
+      { id: 'thanos', name: 'Thanos' },
+      { id: 'tron-bonne', name: 'Tron Bonne' },
+      { id: 'venom', name: 'Venom' },
+      { id: 'war-machine', name: 'War Machine' },
+      { id: 'wolverine', name: 'Wolverine' },
+      { id: 'zangief', name: 'Zangief' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'marvel-vs-capcom-clash-of-super-heroes',
+
+    name: "Marvel vs. Capcom: Clash of Super Heroes",
+
+    developer: "Capcom",
+
+    releaseYear: 2000,
+
+    platform: "Arcade Sega Dreamcast PlayStation 2 Xbox",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'captain-america', name: 'Captain America' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'gambit', name: 'Gambit' },
+      { id: 'hulk', name: 'Hulk' },
+      { id: 'jin', name: 'Jin' },
+      { id: 'mega-man', name: 'Mega Man' },
+      { id: 'morrigan', name: 'Morrigan' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'spider-man', name: 'Spider-Man' },
+      { id: 'strider-hiryu', name: 'Strider Hiryu' },
+      { id: 'venom', name: 'Venom' },
+      { id: 'war-machine', name: 'War Machine' },
+      { id: 'wolverine', name: 'Wolverine' },
+      { id: 'zangief', name: 'Zangief' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'marvel-vs-capcom-infinite',
+
+    name: "Marvel vs. Capcom: Infinite",
+
+    developer: "Capcom",
+
+    releaseYear: 2000,
+
+    platform: "Arcade Sega Dreamcast PlayStation 2 Xbox",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'matrimelee-power-instinct-matrimelee---annie', name: '**Matrimelee (Power Instinct Matrimelee) ** - Annie' },
+      { id: 'bobby', name: 'Bobby' },
+      { id: 'choy', name: 'Choy' },
+      { id: 'keith', name: 'Keith' },
+      { id: 'olof', name: 'Olof' },
+      { id: 'oume', name: 'Oume' },
+      { id: 'otane', name: 'Otane' },
+      { id: 'reiko', name: 'Reiko' },
+      { id: 'saizo', name: 'Saizo' },
+      { id: 'white', name: 'White' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'matrimelee',
+
+    name: "Matrimelee (Power Instinct Matrimelee)",
+
+    developer: "Noise Factory",
+
+    releaseYear: 2003,
+
+    platform: "Neo Geo Arcade PlayStation 2",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'keith-wayne', name: 'Keith Wayne' },
+      { id: 'annie-hamilton', name: 'Annie Hamilton' },
+      { id: 'otane-goketsuji', name: 'Otane Goketsuji' },
+      { id: 'oume-goketsuji', name: 'Oume Goketsuji' },
+      { id: 'kanji-kokuin', name: 'Kanji Kokuin' },
+      { id: 'chok', name: 'Chok' },
+      { id: 'saizo-hattori', name: 'Saizo Hattori' },
+      { id: 'white-buffalo', name: 'White Buffalo' },
+      { id: 'buntaro-kudo', name: 'Buntaro Kudo' },
+      { id: 'shintaro-kudo', name: 'Shintaro Kudo' },
+      { id: 'hikaru-jomon', name: 'Hikaru Jomon' },
+      { id: 'reiji-oyama', name: 'Reiji Oyama' },
+      { id: 'poochy', name: 'Poochy' },
+      { id: 'clara-hananokoji', name: 'Clara Hananokoji' },
+      { id: 'kinta-kokuin', name: 'Kinta Kokuin' },
+      { id: 'elias-patrick', name: 'Elias Patrick' },
+      { id: 'princess-sissy', name: 'Princess Sissy' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'mortal-kombat-(2011)',
+
+    name: "Mortal Kombat (2011)",
+
+    developer: "NetherRealm Studios",
+
+    releaseYear: 2011,
+
+    platform: "PlayStation 3 Xbox 360 Windows",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'baraka', name: 'Baraka' },
+      { id: 'cyrax', name: 'Cyrax' },
+      { id: 'ermac', name: 'Ermac' },
+      { id: 'freddy-krueger', name: 'Freddy Krueger' },
+      { id: 'jade', name: 'Jade' },
+      { id: 'jax', name: 'Jax' },
+      { id: 'johnny-cage', name: 'Johnny Cage' },
+      { id: 'kabal', name: 'Kabal' },
+      { id: 'kano', name: 'Kano' },
+      { id: 'kitana', name: 'Kitana' },
+      { id: 'kratos', name: 'Kratos' },
+      { id: 'kung-lao', name: 'Kung Lao' },
+      { id: 'liu-kang', name: 'Liu Kang' },
+      { id: 'mileena', name: 'Mileena' },
+      { id: 'nightwolf', name: 'Nightwolf' },
+      { id: 'noob-saibot', name: 'Noob Saibot' },
+      { id: 'quan-chi', name: 'Quan Chi' },
+      { id: 'raiden', name: 'Raiden' },
+      { id: 'rain', name: 'Rain' },
+      { id: 'reptile', name: 'Reptile' },
+      { id: 'scorpion', name: 'Scorpion' },
+      { id: 'sektor', name: 'Sektor' },
+      { id: 'shang-tsung', name: 'Shang Tsung' },
+      { id: 'sheeva', name: 'Sheeva' },
+      { id: 'sindel', name: 'Sindel' },
+      { id: 'skarlet', name: 'Skarlet' },
+      { id: 'smoke', name: 'Smoke' },
+      { id: 'sonya-blade', name: 'Sonya Blade' },
+      { id: 'stryker', name: 'Stryker' },
+      { id: 'sub-zero', name: 'Sub-Zero' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'mortal-kombat-1',
+
+    name: "Mortal Kombat 1",
+
+    developer: "NetherRealm Studios",
+
+    releaseYear: 2011,
+
+    platform: "PlayStation 3 Xbox 360 Windows",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'ashrah', name: 'Ashrah' },
+      { id: 'baraka', name: 'Baraka' },
+      { id: 'geras', name: 'Geras' },
+      { id: 'havik', name: 'Havik' },
+      { id: 'johnny-cage', name: 'Johnny Cage' },
+      { id: 'kenshi', name: 'Kenshi' },
+      { id: 'kitana', name: 'Kitana' },
+      { id: 'kung-lao', name: 'Kung Lao' },
+      { id: 'li-mei', name: 'Li Mei' },
+      { id: 'liu-kang', name: 'Liu Kang' },
+      { id: 'mileena', name: 'Mileena' },
+      { id: 'nitara', name: 'Nitara' },
+      { id: 'omni-man', name: 'Omni-Man' },
+      { id: 'peacemaker', name: 'Peacemaker' },
+      { id: 'quan-chi', name: 'Quan Chi' },
+      { id: 'raiden', name: 'Raiden' },
+      { id: 'rain', name: 'Rain' },
+      { id: 'reiko', name: 'Reiko' },
+      { id: 'reptile', name: 'Reptile' },
+      { id: 'scorpion', name: 'Scorpion' },
+      { id: 'shang-tsung', name: 'Shang Tsung' },
+      { id: 'sindel', name: 'Sindel' },
+      { id: 'smoke', name: 'Smoke' },
+      { id: 'sub-zero', name: 'Sub-Zero' },
+      { id: 'tanya', name: 'Tanya' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'mortal-kombat-ii',
+
+    name: "Mortal Kombat II",
+
+    developer: "Midway",
+
+    releaseYear: 2011,
+
+    platform: "PlayStation 3 Xbox 360 Windows",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'baraka', name: 'Baraka' },
+      { id: 'jax', name: 'Jax' },
+      { id: 'johnny-cage', name: 'Johnny Cage' },
+      { id: 'kitana', name: 'Kitana' },
+      { id: 'kung-lao', name: 'Kung Lao' },
+      { id: 'liu-kang', name: 'Liu Kang' },
+      { id: 'mileena', name: 'Mileena' },
+      { id: 'noob-saibot', name: 'Noob Saibot' },
+      { id: 'raiden', name: 'Raiden' },
+      { id: 'reptile', name: 'Reptile' },
+      { id: 'scorpion', name: 'Scorpion' },
+      { id: 'shang-tsung', name: 'Shang Tsung' },
+      { id: 'smoke', name: 'Smoke' },
+      { id: 'sub-zero', name: 'Sub-Zero' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'mortal-kombat-x',
+
+    name: "Mortal Kombat X",
+
+    developer: "NetherRealm Studios",
+
+    releaseYear: 2011,
+
+    platform: "PlayStation 3 Xbox 360 Windows",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'alien', name: 'Alien' },
+      { id: 'bo-rai-cho', name: 'Bo\' Rai Cho' },
+      { id: 'cassie-cage', name: 'Cassie Cage' },
+      { id: 'dvorah', name: 'D\'Vorah' },
+      { id: 'ermac', name: 'Ermac' },
+      { id: 'erron-black', name: 'Erron Black' },
+      { id: 'ferratorr', name: 'Ferra/Torr' },
+      { id: 'goro', name: 'Goro' },
+      { id: 'jacqui-briggs', name: 'Jacqui Briggs' },
+      { id: 'jason-voorhees', name: 'Jason Voorhees' },
+      { id: 'jax', name: 'Jax' },
+      { id: 'johnny-cage', name: 'Johnny Cage' },
+      { id: 'kano', name: 'Kano' },
+      { id: 'kenshi', name: 'Kenshi' },
+      { id: 'kitana', name: 'Kitana' },
+      { id: 'kotal-kahn', name: 'Kotal Kahn' },
+      { id: 'kung-jin', name: 'Kung Jin' },
+      { id: 'kung-lao', name: 'Kung Lao' },
+      { id: 'leatherface', name: 'Leatherface' },
+      { id: 'liu-kang', name: 'Liu Kang' },
+      { id: 'mileena', name: 'Mileena' },
+      { id: 'predator', name: 'Predator' },
+      { id: 'quan-chi', name: 'Quan Chi' },
+      { id: 'raiden', name: 'Raiden' },
+      { id: 'reptile', name: 'Reptile' },
+      { id: 'scorpion', name: 'Scorpion' },
+      { id: 'shinnok', name: 'Shinnok' },
+      { id: 'sonya-blade', name: 'Sonya Blade' },
+      { id: 'sub-zero', name: 'Sub-Zero' },
+      { id: 'takeda-takahashi', name: 'Takeda Takahashi' },
+      { id: 'tanya', name: 'Tanya' },
+      { id: 'tremor', name: 'Tremor' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'mortal-kombat-deception',
+
+    name: "Mortal Kombat: Deception",
+
+    developer: "NetherRealm Studios",
+
+    releaseYear: 2011,
+
+    platform: "PlayStation 3 Xbox 360 Windows",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'ashrah', name: 'Ashrah' },
+      { id: 'baraka', name: 'Baraka' },
+      { id: 'bo-rai-cho', name: 'Bo\' Rai Cho' },
+      { id: 'ermac', name: 'Ermac' },
+      { id: 'havik', name: 'Havik' },
+      { id: 'hotaru', name: 'Hotaru' },
+      { id: 'jade', name: 'Jade' },
+      { id: 'kabal', name: 'Kabal' },
+      { id: 'kira', name: 'Kira' },
+      { id: 'kobra', name: 'Kobra' },
+      { id: 'li-mei', name: 'Li Mei' },
+      { id: 'liu-kang', name: 'Liu Kang' },
+      { id: 'mileena', name: 'Mileena' },
+      { id: 'nightwolf', name: 'Nightwolf' },
+      { id: 'noob-smoke', name: 'Noob-Smoke' },
+      { id: 'raiden', name: 'Raiden' },
+      { id: 'scorpion', name: 'Scorpion' },
+      { id: 'shujinko', name: 'Shujinko' },
+      { id: 'sindel', name: 'Sindel' },
+      { id: 'sub-zero', name: 'Sub-Zero' },
+      { id: 'tanya', name: 'Tanya' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'night-warriors-darkstalkers-revenge',
+
+    name: "Night Warriors: Darkstalkers",
+
+    developer: "Capcom",
+
+    releaseYear: 1995,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'anakaris', name: 'Anakaris' },
+      { id: 'bishamon', name: 'Bishamon' },
+      { id: 'demitri', name: 'Demitri' },
+      { id: 'donovan', name: 'Donovan' },
+      { id: 'felicia', name: 'Felicia' },
+      { id: 'hsien-ko', name: 'Hsien-Ko' },
+      { id: 'huitzil', name: 'Huitzil' },
+      { id: 'jon-talbain', name: 'Jon Talbain' },
+      { id: 'lord-raptor', name: 'Lord Raptor' },
+      { id: 'morrigan', name: 'Morrigan' },
+      { id: 'pyron', name: 'Pyron' },
+      { id: 'rikuo', name: 'Rikuo' },
+      { id: 'sasquatch', name: 'Sasquatch' },
+      { id: 'victor', name: 'Victor' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'ninja-masters-haoh-ninpo-cho',
+
+    name: "Ninja Master",
+
+    developer: "SNK",
+
+    releaseYear: 1996,
+
+    platform: "Neo Geo Arcade PlayStation 1",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'goemon', name: 'Goemon' },
+      { id: 'houoh', name: 'Houoh' },
+      { id: 'kamui', name: 'Kamui' },
+      { id: 'karasu', name: 'Karasu' },
+      { id: 'kasumi', name: 'Kasumi' },
+      { id: 'natsume', name: 'Natsume' },
+      { id: 'nobunaga', name: 'Nobunaga' },
+      { id: 'ranmaru', name: 'Ranmaru' },
+      { id: 'raiga', name: 'Raiga' },
+      { id: 'tenho', name: 'Tenho' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'persona-4-arena-ultimax',
+
+    name: "Persona 4 Arena Ultimax",
+
+    developer: "Arc System Works",
+
+    releaseYear: 2013,
+
+    platform: "Arcade PlayStation 3 Xbox 360",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'adachi', name: 'Adachi' },
+      { id: 'akihiko', name: 'Akihiko' },
+      { id: 'chie', name: 'Chie' },
+      { id: 'elizabeth', name: 'Elizabeth' },
+      { id: 'junpei', name: 'Junpei' },
+      { id: 'kanji', name: 'Kanji' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'koromaru', name: 'Koromaru' },
+      { id: 'labrys', name: 'Labrys' },
+      { id: 'margaret', name: 'Margaret' },
+      { id: 'marie', name: 'Marie' },
+      { id: 'mitsuru', name: 'Mitsuru' },
+      { id: 'naoto', name: 'Naoto' },
+      { id: 'rise', name: 'Rise' },
+      { id: 'sho', name: 'Sho' },
+      { id: 'teddie', name: 'Teddie' },
+      { id: 'tohru', name: 'Tohru' },
+      { id: 'yukari', name: 'Yukari' },
+      { id: 'yukiko', name: 'Yukiko' },
+      { id: 'yu', name: 'Yu' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'plasma-sword-nightmare-of-bilstein',
+
+    name: "Plasma Sword: Nightmare of Bilstein",
+
+    developer: "Capcom",
+
+    releaseYear: 1998,
+
+    platform: "Arcade Sega Dreamcast",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'bilstein', name: 'Bilstein' },
+      { id: 'black', name: 'Black' },
+      { id: 'ele', name: 'Ele' },
+      { id: 'gamof', name: 'Gamof' },
+      { id: 'gerelt', name: 'Gerelt' },
+      { id: 'june', name: 'June' },
+      { id: 'kaede', name: 'Kaede' },
+      { id: 'luca', name: 'Luca' },
+      { id: 'prince', name: 'Prince' },
+      { id: 'rain', name: 'Rain' },
+      { id: 'saturn', name: 'Saturn' },
+      { id: 'vector', name: 'Vector' },
+      { id: 'zelkin', name: 'Zelkin' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'pocketfighter',
+
+    name: "Pocket Fighter",
+
+    developer: "SNK",
+
+    releaseYear: 1997,
+
+    platform: "Arcade PlayStation Sega Saturn",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akuma', name: 'Akuma' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'dan', name: 'Dan' },
+      { id: 'felicia', name: 'Felicia' },
+      { id: 'hsien-ko', name: 'Hsien-Ko' },
+      { id: 'ibuki', name: 'Ibuki' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'morrigan', name: 'Morrigan' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sakura', name: 'Sakura' },
+      { id: 'tessa', name: 'Tessa' },
+      { id: 'zangief', name: 'Zangief' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'primal-rage',
+
+    name: "Primal Rage",
+
+    developer: "Unknown",
+
+    releaseYear: 1994,
+
+    platform: "Arcade Sega Genesis SNES PlayStation Sega Saturn 3DO Game Gear Game Boy Atari Jaguar PC",
+
+rosterCount: 7,
+
+        characters: [
+
+      
+      { id: 'armadon', name: 'Armadon' },
+      { id: 'blizzard', name: 'Blizzard' },
+      { id: 'chaos', name: 'Chaos' },
+      { id: 'diablo', name: 'Diablo' },
+      { id: 'sauron', name: 'Sauron' },
+      { id: 'talon', name: 'Talon' },
+      { id: 'vertigo', name: 'Vertigo' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'primal-rage-2',
+
+    name: "Primal Rage 2",
+
+    developer: "Unknown",
+
+    releaseYear: 1994,
+
+    platform: "Arcade Sega Genesis SNES PlayStation Sega Saturn 3DO Game Gear Game Boy Atari Jaguar PC",
+
+rosterCount: 7,
+
+        characters: [
+
+      
+      { id: 'arik', name: 'Arik' },
+      { id: 'malys', name: 'Malys' },
+      { id: 'shank', name: 'Shank' },
+      { id: 'sinjin', name: 'Sinjin' },
+      { id: 'xiao', name: 'Xiao' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'projectjustice',
+
+    name: "Project Justice",
+
+    developer: "SNK",
+
+    releaseYear: 2000,
+
+    platform: "Arcade Sega Dreamcast",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akira', name: 'Akira' },
+      { id: 'batsu', name: 'Batsu' },
+      { id: 'edge', name: 'Edge' },
+      { id: 'gan', name: 'Gan' },
+      { id: 'hinata', name: 'Hinata' },
+      { id: 'hyo', name: 'Hyo' },
+      { id: 'kyosuke', name: 'Kyosuke' },
+      { id: 'momo', name: 'Momo' },
+      { id: 'natsu', name: 'Natsu' },
+      { id: 'ran', name: 'Ran' },
+      { id: 'roberto', name: 'Roberto' },
+      { id: 'roy', name: 'Roy' },
+      { id: 'shoma', name: 'Shoma' },
+      { id: 'tiffany', name: 'Tiffany' },
+      { id: 'yurika', name: 'Yurika' },
+      { id: 'zaki', name: 'Zaki' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'psychic-force',
+
+    name: "Psychic Force",
+
+    developer: "Unknown",
+
+    releaseYear: 1996,
+
+    platform: "Arcade PlayStation",
+
+rosterCount: 11,
+
+        characters: [
+
+      
+      { id: 'brad', name: 'Brad' },
+      { id: 'burn', name: 'Burn' },
+      { id: 'emilio', name: 'Emilio' },
+      { id: 'gates', name: 'Gates' },
+      { id: 'genma', name: 'Genma' },
+      { id: 'keith', name: 'Keith' },
+      { id: 'richard', name: 'Richard' },
+      { id: 'rokkan', name: 'Rokkan' },
+      { id: 'sonia', name: 'Sonia' },
+      { id: 'wendy', name: 'Wendy' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'psychic-force-2012-psychic-force-2',
+
+    name: "Psychic Force 2012 (Psychic Force 2)",
+
+    developer: "Unknown",
+
+    releaseYear: 1996,
+
+    platform: "Arcade PlayStation",
+
+rosterCount: 11,
+
+        characters: [
+
+      
+      { id: 'burn', name: 'Burn' },
+      { id: 'carlo', name: 'Carlo' },
+      { id: 'emilio', name: 'Emilio' },
+      { id: 'gantz', name: 'Gantz' },
+      { id: 'genma', name: 'Genma' },
+      { id: 'keith', name: 'Keith' },
+      { id: 'might', name: 'Might' },
+      { id: 'patricia', name: 'Patricia' },
+      { id: 'regina', name: 'Regina' },
+      { id: 'rokkan', name: 'Rokkan' },
+      { id: 'setsuna', name: 'Setsuna' },
+      { id: 'sonia', name: 'Sonia' },
+      { id: 'wendy', name: 'Wendy' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'rage-of-the-dragons',
+
+    name: "Rage of the Dragons",
+
+    developer: "Evoga",
+
+    releaseYear: 2002,
+
+    platform: "Neo Geo Arcade",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'abubo', name: 'Abubo' },
+      { id: 'alice', name: 'Alice' },
+      { id: 'billy', name: 'Billy' },
+      { id: 'cass', name: 'Cass' },
+      { id: 'elias', name: 'Elias' },
+      { id: 'kang', name: 'Kang' },
+      { id: 'lynn', name: 'Lynn' },
+      { id: 'mr-jones', name: 'Mr. Jones' },
+      { id: 'oni', name: 'Oni' },
+      { id: 'pepe', name: 'Pepe' },
+      { id: 'pupa', name: 'Pupa' },
+      { id: 'radel', name: 'Radel' },
+      { id: 'sonia', name: 'Sonia' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'ragnagard-shin-oh-ken',
+
+    name: "Ragnagard (Shin-Oh-Ken)",
+
+    developer: "Unknown",
+
+    releaseYear: 1996,
+
+    platform: "Neo Geo Arcade Sega Saturn PlayStation",
+
+rosterCount: 10,
+
+        characters: [
+
+      
+      { id: 'benten', name: 'Benten' },
+      { id: 'chi-chi', name: 'Chi-Chi' },
+      { id: 'ebi', name: 'Ebi' },
+      { id: 'gozumaru', name: 'Gozumaru' },
+      { id: 'igret', name: 'Igret' },
+      { id: 'susano', name: 'Susano' },
+      { id: 'syuten-dozi', name: 'Syuten-Dozi' },
+      { id: 'zen', name: 'Zen' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'real-bout-fatal-fury',
+
+    name: "Real Bout Fatal Fury",
+
+    developer: "SNK",
+
+    releaseYear: 1995,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'andy-bogard', name: 'Andy Bogard' },
+      { id: 'billy-kane', name: 'Billy Kane' },
+      { id: 'blue-mary', name: 'Blue Mary' },
+      { id: 'bob-wilson', name: 'Bob Wilson' },
+      { id: 'chonrei', name: 'Chonrei' },
+      { id: 'chonshu', name: 'Chonshu' },
+      { id: 'duck-king', name: 'Duck King' },
+      { id: 'franco-bash', name: 'Franco Bash' },
+      { id: 'geese-howard', name: 'Geese Howard' },
+      { id: 'hon-fu', name: 'Hon-Fu' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
+      { id: 'sokaku-mochizuki', name: 'Sokaku Mochizuki' },
+      { id: 'terry-bogard', name: 'Terry Bogard' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'real-bout-fatal-fury-2-the-newcomers',
+
+    name: "Real Bout Fatal Fury 2: The Newcomers",
+
+    developer: "SNK",
+
+    releaseYear: 1992,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'andy-bogard', name: 'Andy Bogard' },
+      { id: 'billy-kane', name: 'Billy Kane' },
+      { id: 'blue-mary', name: 'Blue Mary' },
+      { id: 'bob-wilson', name: 'Bob Wilson' },
+      { id: 'chonrei', name: 'Chonrei' },
+      { id: 'chonshu', name: 'Chonshu' },
+      { id: 'duck-king', name: 'Duck King' },
+      { id: 'franco-bash', name: 'Franco Bash' },
+      { id: 'geese-howard', name: 'Geese Howard' },
+      { id: 'hon-fu', name: 'Hon-Fu' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
+      { id: 'li-xiangfei', name: 'Li Xiangfei' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'rick-strowd', name: 'Rick Strowd' },
+      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
+      { id: 'sokaku-mochizuki', name: 'Sokaku Mochizuki' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'tung-fu-rue', name: 'Tung Fu Rue' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'real-bout-fatal-fury-special',
+
+    name: "Real Bout Fatal Fury Special",
+
+    developer: "SNK",
+
+    releaseYear: 1997,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'andy-bogard', name: 'Andy Bogard' },
+      { id: 'billy-kane', name: 'Billy Kane' },
+      { id: 'blue-mary', name: 'Blue Mary' },
+      { id: 'bob-wilson', name: 'Bob Wilson' },
+      { id: 'chonrei', name: 'Chonrei' },
+      { id: 'chonshu', name: 'Chonshu' },
+      { id: 'duck-king', name: 'Duck King' },
+      { id: 'franco-bash', name: 'Franco Bash' },
+      { id: 'geese-howard', name: 'Geese Howard' },
+      { id: 'hon-fu', name: 'Hon-Fu' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
+      { id: 'laurence-blood', name: 'Laurence Blood' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
+      { id: 'sokaku-mochizuki', name: 'Sokaku Mochizuki' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'tung-fu-rue', name: 'Tung Fu Rue' },
+      { id: 'wolfgang-krauser', name: 'Wolfgang Krauser' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'samurai-shodown',
+
+    name: "Samurai Shodown",
+
+    developer: "SNK",
+
+    releaseYear: 1993,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'amakusa', name: 'Amakusa' },
+      { id: 'charlotte', name: 'Charlotte' },
+      { id: 'earthquake', name: 'Earthquake' },
+      { id: 'galford', name: 'Galford' },
+      { id: 'genan', name: 'Genan' },
+      { id: 'hanzo', name: 'Hanzo' },
+      { id: 'haohmaru', name: 'Haohmaru' },
+      { id: 'jubei', name: 'Jubei' },
+      { id: 'kyoshiro', name: 'Kyoshiro' },
+      { id: 'nakoruru', name: 'Nakoruru' },
+      { id: 'tam-tam', name: 'Tam Tam' },
+      { id: 'ukyo', name: 'Ukyo' },
+      { id: 'wan-fu', name: 'Wan-Fu' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'samurai-shodown-(2019)',
+
+    name: "Samurai Shodown (2019)",
+
+    developer: "SNK",
+
+    releaseYear: 2019,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'baiken', name: 'Baiken' },
+      { id: 'basara', name: 'Basara' },
+      { id: 'charlotte', name: 'Charlotte' },
+      { id: 'darli-dagger', name: 'Darli Dagger' },
+      { id: 'earthquake', name: 'Earthquake' },
+      { id: 'galford', name: 'Galford' },
+      { id: 'genjuro', name: 'Genjuro' },
+      { id: 'gongsun-li', name: 'Gongsun Li' },
+      { id: 'hanzo', name: 'Hanzo' },
+      { id: 'haohmaru', name: 'Haohmaru' },
+      { id: 'hibiki-takane', name: 'Hibiki Takane' },
+      { id: 'iroha', name: 'Iroha' },
+      { id: 'jubei', name: 'Jubei' },
+      { id: 'kazuki', name: 'Kazuki' },
+      { id: 'kurama-yashamaru', name: 'Kurama Yashamaru' },
+      { id: 'kyoshiro', name: 'Kyoshiro' },
+      { id: 'nakoruru', name: 'Nakoruru' },
+      { id: 'rimururu', name: 'Rimururu' },
+      { id: 'shizumaru', name: 'Shizumaru' },
+      { id: 'sogetsu', name: 'Sogetsu' },
+      { id: 'tam-tam', name: 'Tam Tam' },
+      { id: 'ukyo', name: 'Ukyo' },
+      { id: 'warden', name: 'Warden' },
+      { id: 'wu-ruixiang', name: 'Wu-Ruixiang' },
+      { id: 'yoshitora', name: 'Yoshitora' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'samurai-shodown-ii',
+
+    name: "Samurai Shodown II",
+
+    developer: "SNK",
+
+    releaseYear: 1993,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'caffeine-nicotine', name: 'Caffeine Nicotine' },
+      { id: 'cham-cham', name: 'Cham Cham' },
+      { id: 'charlotte', name: 'Charlotte' },
+      { id: 'earthquake', name: 'Earthquake' },
+      { id: 'galford', name: 'Galford' },
+      { id: 'genjuro', name: 'Genjuro' },
+      { id: 'hanzo', name: 'Hanzo' },
+      { id: 'haohmaru', name: 'Haohmaru' },
+      { id: 'jubei', name: 'Jubei' },
+      { id: 'kyoshiro', name: 'Kyoshiro' },
+      { id: 'nakoruru', name: 'Nakoruru' },
+      { id: 'neinhalt-sieger', name: 'Neinhalt Sieger' },
+      { id: 'shiranui-genan', name: 'Shiranui Genan' },
+      { id: 'tam-tam', name: 'Tam Tam' },
+      { id: 'ukyo', name: 'Ukyo' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'samurai-shodown-iii-blades-of-blood',
+
+    name: "Samurai Shodown III: Blades of Blood",
+
+    developer: "SNK",
+
+    releaseYear: 1993,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'amakusa', name: 'Amakusa' },
+      { id: 'basara', name: 'Basara' },
+      { id: 'galford', name: 'Galford' },
+      { id: 'gaira', name: 'Gaira' },
+      { id: 'hanzo', name: 'Hanzo' },
+      { id: 'haohmaru', name: 'Haohmaru' },
+      { id: 'kyoshiro', name: 'Kyoshiro' },
+      { id: 'nakoruru', name: 'Nakoruru' },
+      { id: 'rimururu', name: 'Rimururu' },
+      { id: 'shizumaru', name: 'Shizumaru' },
+      { id: 'ukyo', name: 'Ukyo' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'samurai-shodown-iv-amakusas-revenge',
+
+    name: "Samurai Shodown IV: Amakusa",
+
+    developer: "SNK",
+
+    releaseYear: 1993,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'amakusa', name: 'Amakusa' },
+      { id: 'basara', name: 'Basara' },
+      { id: 'charlotte', name: 'Charlotte' },
+      { id: 'galford', name: 'Galford' },
+      { id: 'gaira', name: 'Gaira' },
+      { id: 'hanzo', name: 'Hanzo' },
+      { id: 'haohmaru', name: 'Haohmaru' },
+      { id: 'jubei', name: 'Jubei' },
+      { id: 'kazuki', name: 'Kazuki' },
+      { id: 'kyoshiro', name: 'Kyoshiro' },
+      { id: 'nakoruru', name: 'Nakoruru' },
+      { id: 'rimururu', name: 'Rimururu' },
+      { id: 'shizumaru', name: 'Shizumaru' },
+      { id: 'sogetsu', name: 'Sogetsu' },
+      { id: 'tam-tam', name: 'Tam Tam' },
+      { id: 'ukyo', name: 'Ukyo' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'samurai-shodown-v',
+
+    name: "Samurai Shodown V",
+
+    developer: "SNK",
+
+    releaseYear: 1993,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'basara', name: 'Basara' },
+      { id: 'charlotte', name: 'Charlotte' },
+      { id: 'enja', name: 'Enja' },
+      { id: 'gaira', name: 'Gaira' },
+      { id: 'galford', name: 'Galford' },
+      { id: 'hanzo', name: 'Hanzo' },
+      { id: 'haohmaru', name: 'Haohmaru' },
+      { id: 'jubei', name: 'Jubei' },
+      { id: 'kazuki', name: 'Kazuki' },
+      { id: 'kyoshiro', name: 'Kyoshiro' },
+      { id: 'mina', name: 'Mina' },
+      { id: 'nakoruru', name: 'Nakoruru' },
+      { id: 'rimururu', name: 'Rimururu' },
+      { id: 'shizumaru', name: 'Shizumaru' },
+      { id: 'sogetsu', name: 'Sogetsu' },
+      { id: 'suija', name: 'Suija' },
+      { id: 'tam-tam', name: 'Tam Tam' },
+      { id: 'ukyo', name: 'Ukyo' },
+      { id: 'yoshitora', name: 'Yoshitora' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'samurai-shodown-v-special',
+
+    name: "Samurai Shodown V Special",
+
+    developer: "SNK",
+
+    releaseYear: 1993,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'amakusa', name: 'Amakusa' },
+      { id: 'charlotte', name: 'Charlotte' },
+      { id: 'earthquake', name: 'Earthquake' },
+      { id: 'galford', name: 'Galford' },
+      { id: 'genan', name: 'Genan' },
+      { id: 'hanzo', name: 'Hanzo' },
+      { id: 'haohmaru', name: 'Haohmaru' },
+      { id: 'jubei', name: 'Jubei' },
+      { id: 'kyoshiro', name: 'Kyoshiro' },
+      { id: 'nakoruru', name: 'Nakoruru' },
+      { id: 'tam-tam', name: 'Tam Tam' },
+      { id: 'ukyo', name: 'Ukyo' },
+      { id: 'wan-fu', name: 'Wan-Fu' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'savage-reign-fu-un-mokushiroku-kakutou-sousei',
+
+    name: "Savage Reign (Fu'un Mokushiroku: Kakutou Sousei)",
+
+    developer: "Unknown",
+
+    releaseYear: 1995,
+
+    platform: "Neo Geo Arcade PlayStation",
+
+rosterCount: 11,
+
+        characters: [
+
+      
+      { id: 'carol', name: 'Carol' },
+      { id: 'chung', name: 'Chung' },
+      { id: 'gordon', name: 'Gordon' },
+      { id: 'gozu', name: 'Gozu' },
+      { id: 'joker', name: 'Joker' },
+      { id: 'king-lion', name: 'King Lion' },
+      { id: 'max-eagle', name: 'Max Eagle' },
+      { id: 'mezu', name: 'Mezu' },
+      { id: 'nicola', name: 'Nicola' },
+      { id: 'sho-hayate', name: 'Sho Hayate' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'snk-heroines-tag-team-frenzy',
+
+    name: "SNK Heroines: Tag Team Frenzy",
+
+    developer: "SNK",
+
+    releaseYear: 2018,
+
+    platform: "PlayStation 4 Nintendo Switch Windows",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'athena-asamiya', name: 'Athena Asamiya' },
+      { id: 'jeanne-darc', name: 'Jeanne d\'Arc' },
+      { id: 'kula-diamond', name: 'Kula Diamond' },
+      { id: 'leona-heidern', name: 'Leona Heidern' },
+      { id: 'love-heart', name: 'Love Heart' },
+      { id: 'luong', name: 'Luong' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'mian', name: 'Mian' },
+      { id: 'mui-mui', name: 'Mui Mui' },
+      { id: 'nakoruru', name: 'Nakoruru' },
+      { id: 'shermie', name: 'Shermie' },
+      { id: 'silvie-paula-paula', name: 'Silvie Paula Paula' },
+      { id: 'skullomania', name: 'Skullomania' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'thief-arthur', name: 'Thief Arthur' },
+      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'snk-vs-capcom-svc-chaos',
+
+    name: "SNK vs. Capcom: SVC Chaos",
+
+    developer: "Capcom",
+
+    releaseYear: 2003,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akuma', name: 'Akuma' },
+      { id: 'athena', name: 'Athena' },
+      { id: 'balrog', name: 'Balrog' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'dan', name: 'Dan' },
+      { id: 'demitri', name: 'Demitri' },
+      { id: 'dhalsim', name: 'Dhalsim' },
+      { id: 'earthquake', name: 'Earthquake' },
+      { id: 'evil-ryu', name: 'Evil Ryu' },
+      { id: 'gaedel', name: 'Gaedel' },
+      { id: 'geese-howard', name: 'Geese Howard' },
+      { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' },
+      { id: 'goenitz', name: 'Goenitz' },
+      { id: 'guile', name: 'Guile' },
+      { id: 'haohmaru', name: 'Haohmaru' },
+      { id: 'hugo', name: 'Hugo' },
+      { id: 'iori-yagami', name: 'Iori Yagami' },
+      { id: 'kasumi-todoh', name: 'Kasumi Todoh' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
+      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
+      { id: 'm-bison', name: 'M. Bison' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'mars-people', name: 'Mars People' },
+      { id: 'mr-karate', name: 'Mr. Karate' },
+      { id: 'red-arremer', name: 'Red Arremer' },
+      { id: 'rock-howard', name: 'Rock Howard' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sagat', name: 'Sagat' },
+      { id: 'serious-mr-karate', name: 'Serious Mr. Karate' },
+      { id: 'shiki', name: 'Shiki' },
+      { id: 'shin-akuma', name: 'Shin Akuma' },
+      { id: 'tabasa', name: 'Tabasa' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'vega', name: 'Vega' },
+      { id: 'violent-ken', name: 'Violent Ken' },
+      { id: 'zero', name: 'Zero' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'soul-calibur',
+
+    name: "Soul Calibur",
+
+    developer: "Unknown",
+
+    releaseYear: 1998,
+
+    platform: "Arcade Sega Dreamcast",
+
+rosterCount: 10,
+
+        characters: [
+
+      
+      { id: 'astaroth', name: 'Astaroth' },
+      { id: 'cervantes', name: 'Cervantes' },
+      { id: 'edge-master', name: 'Edge Master' },
+      { id: 'heihachi', name: 'Heihachi' },
+      { id: 'ivy', name: 'Ivy' },
+      { id: 'kilik', name: 'Kilik' },
+      { id: 'lizardman', name: 'Lizardman' },
+      { id: 'maxi', name: 'Maxi' },
+      { id: 'mitsurugi', name: 'Mitsurugi' },
+      { id: 'nightmare', name: 'Nightmare' },
+      { id: 'seong-mi-na', name: 'Seong Mi-na' },
+      { id: 'siegfried', name: 'Siegfried' },
+      { id: 'sophitia', name: 'Sophitia' },
+      { id: 'taki', name: 'Taki' },
+      { id: 'voldo', name: 'Voldo' },
+      { id: 'xianghua', name: 'Xianghua' },
+      { id: 'yoshimitsu', name: 'Yoshimitsu' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'soul-edge-soul-blade',
+
+    name: "Soul Edge (Soul Blade)",
+
+    developer: "Unknown",
+
+    releaseYear: 1995,
+
+    platform: "Arcade PlayStation",
+
+rosterCount: 0,
+
+        characters: [
+
+    
+      { id: 'cervantes', name: 'Cervantes' },
+      { id: 'hwang', name: 'Hwang' },
+      { id: 'li-long', name: 'Li Long' },
+      { id: 'mitsurugi', name: 'Mitsurugi' },
+      { id: 'rock', name: 'Rock' },
+      { id: 'seong-mi-na', name: 'Seong Mi-na' },
+      { id: 'siegfried', name: 'Siegfried' },
+      { id: 'sophitia', name: 'Sophitia' },
+      { id: 'taki', name: 'Taki' },
+      { id: 'voldo', name: 'Voldo' }
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'street-fighter-6',
+
+    name: "Street Fighter 6",
+
+    developer: "Capcom",
+
+    releaseYear: 2023,
+
+    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
+
+    tabs: ['Normal Moves', 'Unique Attacks', 'Special Moves', 'Super Arts', 'Throws', 'Common Moves'],
+
+rosterCount: 26,
+
+        characters: [
+
+      
+      { id: 'aki', name: 'A.K.I.' },
+      { id: 'akuma', name: 'Akuma' },
+      { id: 'blanka', name: 'Blanka' },
+      { id: 'cammy', name: 'Cammy' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'dee-jay', name: 'Dee Jay' },
+      { id: 'dhalsim', name: 'Dhalsim' },
+      { id: 'e-honda', name: 'E. Honda' },
+      { id: 'ed', name: 'Ed' },
+      { id: 'guile', name: 'Guile' },
+      { id: 'jamie', name: 'Jamie' },
+      { id: 'jp', name: 'JP' },
+      { id: 'juri', name: 'Juri' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'kimberly', name: 'Kimberly' },
+      { id: 'lily', name: 'Lily' },
+      { id: 'luke', name: 'Luke' },
+      { id: 'manon', name: 'Manon' },
+      { id: 'marisa', name: 'Marisa' },
+      { id: 'rashid', name: 'Rashid' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'zangief', name: 'Zangief' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'street-fighter-alpha',
+
+    name: "Street Fighter Alpha 1",
+
+    developer: "Capcom",
+
+    releaseYear: 2023,
+
+    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'adon', name: 'Adon' },
+      { id: 'akuma', name: 'Akuma' },
+      { id: 'birdie', name: 'Birdie' },
+      { id: 'charlie', name: 'Charlie' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'dan', name: 'Dan' },
+      { id: 'guy', name: 'Guy' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'rose', name: 'Rose' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sagat', name: 'Sagat' },
+      { id: 'sodom', name: 'Sodom' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'street-fighter-alpha-2',
+
+    name: "Street Fighter Alpha 2",
+
+    developer: "Capcom",
+
+    releaseYear: 2023,
+
+    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'adon', name: 'Adon' },
+      { id: 'akuma', name: 'Akuma' },
+      { id: 'birdie', name: 'Birdie' },
+      { id: 'charlie', name: 'Charlie' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'dan', name: 'Dan' },
+      { id: 'dhalsim', name: 'Dhalsim' },
+      { id: 'evil-ryu', name: 'Evil Ryu' },
+      { id: 'gen', name: 'Gen' },
+      { id: 'guy', name: 'Guy' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'm-bison', name: 'M. Bison' },
+      { id: 'rolento', name: 'Rolento' },
+      { id: 'rose', name: 'Rose' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sagat', name: 'Sagat' },
+      { id: 'sakura', name: 'Sakura' },
+      { id: 'sodom', name: 'Sodom' },
+      { id: 'zangief', name: 'Zangief' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'street-fighter-alpha-3',
+
+    name: "Street Fighter Alpha 3",
+
+    developer: "Capcom",
+
+    releaseYear: 2023,
+
+    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'adon', name: 'Adon' },
+      { id: 'akuma', name: 'Akuma' },
+      { id: 'balrog', name: 'Balrog' },
+      { id: 'birdie', name: 'Birdie' },
+      { id: 'blanka', name: 'Blanka' },
+      { id: 'cammy', name: 'Cammy' },
+      { id: 'charlie', name: 'Charlie' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'cody', name: 'Cody' },
+      { id: 'dan', name: 'Dan' },
+      { id: 'dee-jay', name: 'Dee Jay' },
+      { id: 'dhalsim', name: 'Dhalsim' },
+      { id: 'e-honda', name: 'E. Honda' },
+      { id: 'eagle', name: 'Eagle' },
+      { id: 'evil-ryu', name: 'Evil Ryu' },
+      { id: 'fei-long', name: 'Fei Long' },
+      { id: 'gen', name: 'Gen' },
+      { id: 'guile', name: 'Guile' },
+      { id: 'guy', name: 'Guy' },
+      { id: 'juli', name: 'Juli' },
+      { id: 'juni', name: 'Juni' },
+      { id: 'karin', name: 'Karin' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'm-bison', name: 'M. Bison' },
+      { id: 'maki', name: 'Maki' },
+      { id: 'mika', name: 'Mika' },
+      { id: 'rolento', name: 'Rolento' },
+      { id: 'rose', name: 'Rose' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sagat', name: 'Sagat' },
+      { id: 'sakura', name: 'Sakura' },
+      { id: 'shin-akuma', name: 'Shin Akuma' },
+      { id: 'sodom', name: 'Sodom' },
+      { id: 't-hawk', name: 'T. Hawk' },
+      { id: 'vega', name: 'Vega' },
+      { id: 'yun', name: 'Yun' },
+      { id: 'zangief', name: 'Zangief' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'street-fighter-ex3',
+
+    name: "Street Fighter EX3",
+
+    developer: "Capcom",
+
+    releaseYear: 2023,
+
+    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'ace', name: 'Ace' },
+      { id: 'area', name: 'Area' },
+      { id: 'blanka', name: 'Blanka' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'cracker-jack', name: 'Cracker Jack' },
+      { id: 'darun-mister', name: 'Darun Mister' },
+      { id: 'dhalsim', name: 'Dhalsim' },
+      { id: 'doctrine-dark', name: 'Doctrine Dark' },
+      { id: 'guile', name: 'Guile' },
+      { id: 'hokuto', name: 'Hokuto' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'nanase', name: 'Nanase' },
+      { id: 'pullum-purna', name: 'Pullum Purna' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sagat', name: 'Sagat' },
+      { id: 'sakura', name: 'Sakura' },
+      { id: 'sharon', name: 'Sharon' },
+      { id: 'skullomania', name: 'Skullomania' },
+      { id: 'vega', name: 'Vega' },
+      { id: 'vulcano-rosso', name: 'Vulcano Rosso' },
+      { id: 'zangief', name: 'Zangief' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'street-fighter-iii-2nd-impact',
+
+    name: "Street Fighter III: 2nd Impact - Giant Attack",
+
+    developer: "Capcom",
+
+    releaseYear: 2023,
+
+    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'alex', name: 'Alex' },
+      { id: 'dudley', name: 'Dudley' },
+      { id: 'elena', name: 'Elena' },
+      { id: 'hugo', name: 'Hugo' },
+      { id: 'ibuki', name: 'Ibuki' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'necro', name: 'Necro' },
+      { id: 'oro', name: 'Oro' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sean', name: 'Sean' },
+      { id: 'urien', name: 'Urien' },
+      { id: 'yang', name: 'Yang' },
+      { id: 'yun', name: 'Yun' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'street-fighter-iii-new-generation',
+
+    name: "Street Fighter III: New Generation",
+
+    developer: "Capcom",
+
+    releaseYear: 2023,
+
+    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'alex', name: 'Alex' },
+      { id: 'dudley', name: 'Dudley' },
+      { id: 'elena', name: 'Elena' },
+      { id: 'ibuki', name: 'Ibuki' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'necro', name: 'Necro' },
+      { id: 'oro', name: 'Oro' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sean', name: 'Sean' },
+      { id: 'yang', name: 'Yang' },
+      { id: 'yun', name: 'Yun' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'street-fighter-v-champion-edition',
+
+    name: "Street Fighter V: Champion Edition",
+
+    developer: "Capcom",
+
+    releaseYear: 2023,
+
+    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'abigail', name: 'Abigail' },
+      { id: 'akuma', name: 'Akuma' },
+      { id: 'alex', name: 'Alex' },
+      { id: 'balrog', name: 'Balrog' },
+      { id: 'birdie', name: 'Birdie' },
+      { id: 'blanka', name: 'Blanka' },
+      { id: 'cammy', name: 'Cammy' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'cody', name: 'Cody' },
+      { id: 'dan', name: 'Dan' },
+      { id: 'dhalsim', name: 'Dhalsim' },
+      { id: 'e-honda', name: 'E. Honda' },
+      { id: 'ed', name: 'Ed' },
+      { id: 'fang', name: 'F.A.N.G' },
+      { id: 'falkie', name: 'Falkie' },
+      { id: 'g', name: 'G' },
+      { id: 'gill', name: 'Gill' },
+      { id: 'guile', name: 'Guile' },
+      { id: 'ibuki', name: 'Ibuki' },
+      { id: 'juri', name: 'Juri' },
+      { id: 'kage', name: 'Kage' },
+      { id: 'karin', name: 'Karin' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'kolin', name: 'Kolin' },
+      { id: 'laura', name: 'Laura' },
+      { id: 'lucia', name: 'Lucia' },
+      { id: 'luke', name: 'Luke' },
+      { id: 'm-bison', name: 'M. Bison' },
+      { id: 'menat', name: 'Menat' },
+      { id: 'nash', name: 'Nash' },
+      { id: 'necalli', name: 'Necalli' },
+      { id: 'oro', name: 'Oro' },
+      { id: 'poison', name: 'Poison' },
+      { id: 'r-mika', name: 'R. Mika' },
+      { id: 'rashid', name: 'Rashid' },
+      { id: 'rose', name: 'Rose' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sagat', name: 'Sagat' },
+      { id: 'sakura', name: 'Sakura' },
+      { id: 'seth', name: 'Seth' },
+      { id: 'urien', name: 'Urien' },
+      { id: 'vega', name: 'Vega' },
+      { id: 'zeku', name: 'Zeku' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'super-street-fighter-ii-turbo',
+
+    name: "Super Street Fighter II Turbo",
+
+    developer: "Capcom",
+
+    releaseYear: 1994,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akuma', name: 'Akuma' },
+      { id: 'balrog', name: 'Balrog' },
+      { id: 'blanka', name: 'Blanka' },
+      { id: 'cammy', name: 'Cammy' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'dee-jay', name: 'Dee Jay' },
+      { id: 'dhalsim', name: 'Dhalsim' },
+      { id: 'e-honda', name: 'E. Honda' },
+      { id: 'fei-long', name: 'Fei Long' },
+      { id: 'guile', name: 'Guile' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'm-bison', name: 'M. Bison' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sagat', name: 'Sagat' },
+      { id: 't-hawk', name: 'T. Hawk' },
+      { id: 'vega', name: 'Vega' },
+      { id: 'zangief', name: 'Zangief' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'super-street-fighter-ii',
+
+    name: "Super Street Fighter II: The New Challengers",
+
+    developer: "Capcom",
+
+    releaseYear: 1993,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'balrog', name: 'Balrog' },
+      { id: 'blanka', name: 'Blanka' },
+      { id: 'cammy', name: 'Cammy' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'dee-jay', name: 'Dee Jay' },
+      { id: 'dhalsim', name: 'Dhalsim' },
+      { id: 'e-honda', name: 'E. Honda' },
+      { id: 'fei-long', name: 'Fei Long' },
+      { id: 'guile', name: 'Guile' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'm-bison', name: 'M. Bison' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sagat', name: 'Sagat' },
+      { id: 't-hawk', name: 'T. Hawk' },
+      { id: 'vega', name: 'Vega' },
+      { id: 'zangief', name: 'Zangief' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'tao-feng-fist-of-the-lotus',
+
+    name: "Tao Feng: Fist of the Lotus",
+
+    developer: "Unknown",
+
+    releaseYear: 2003,
+
+    platform: "Xbox",
+
+rosterCount: 7,
+
+        characters: [
+
+      
+      { id: 'divine-fist', name: 'Divine Fist' },
+      { id: 'exile', name: 'Exile' },
+      { id: 'fiery-phoenix', name: 'Fiery Phoenix' },
+      { id: 'iron-monk', name: 'Iron Monk' },
+      { id: 'jade-dragon', name: 'Jade Dragon' },
+      { id: 'master-sage', name: 'Master Sage' },
+      { id: 'vapor', name: 'Vapor' },
+      { id: 'wuji', name: 'Wuji' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'tatsunoko-vs-capcom-ultimate-all-stars',
+
+    name: "Tatsunoko vs. Capcom: Ultimate All-Stars",
+
+    developer: "Capcom",
+
+    releaseYear: 2010,
+
+    platform: "Wii",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'alex', name: 'Alex' },
+      { id: 'casshan', name: 'Casshan' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'doronjo', name: 'Doronjo' },
+      { id: 'frank-west', name: 'Frank West' },
+      { id: 'gold-lightan', name: 'Gold Lightan' },
+      { id: 'hakushon-daimao', name: 'Hakushon Daimao' },
+      { id: 'ippatsuman', name: 'Ippatsuman' },
+      { id: 'joe-the-condor', name: 'Joe the Condor' },
+      { id: 'jun-the-swan', name: 'Jun the Swan' },
+      { id: 'karas', name: 'Karas' },
+      { id: 'ken-the-eagle', name: 'Ken the Eagle' },
+      { id: 'mega-man-volnutt', name: 'Mega Man Volnutt' },
+      { id: 'morrigan', name: 'Morrigan' },
+      { id: 'polimar', name: 'Polimar' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'saki', name: 'Saki' },
+      { id: 'tekkaman', name: 'Tekkaman' },
+      { id: 'tekkaman-blade', name: 'Tekkaman Blade' },
+      { id: 'viewtiful-joe', name: 'Viewtiful Joe' },
+      { id: 'yatterman-1', name: 'Yatterman-1' },
+      { id: 'yatterman-2', name: 'Yatterman-2' },
+      { id: 'zero', name: 'Zero' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'tekken-1',
+
+    name: "Tekken 1",
+
+    developer: "Unknown",
+
+    releaseYear: 1994,
+
+    platform: "Arcade PlayStation",
+
+rosterCount: 17,
+
+        characters: [
+
+      
+      { id: 'anna', name: 'Anna' },
+      { id: 'armor-king', name: 'Armor King' },
+      { id: 'ganryu', name: 'Ganryu' },
+      { id: 'heihachi', name: 'Heihachi' },
+      { id: 'jack', name: 'Jack' },
+      { id: 'kazuya', name: 'Kazuya' },
+      { id: 'king', name: 'King' },
+      { id: 'kuma', name: 'Kuma' },
+      { id: 'kunimitsu', name: 'Kunimitsu' },
+      { id: 'lee', name: 'Lee' },
+      { id: 'michelle', name: 'Michelle' },
+      { id: 'nina', name: 'Nina' },
+      { id: 'paul', name: 'Paul' },
+      { id: 'wang', name: 'Wang' },
+      { id: 'yoshimitsu', name: 'Yoshimitsu' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'tekken-2',
+
+    name: "Tekken 2",
+
+    developer: "Unknown",
+
+    releaseYear: 1995,
+
+    platform: "Arcade PlayStation",
+
+rosterCount: 24,
+
+        characters: [
+
+      
+      { id: 'alex', name: 'Alex' },
+      { id: 'anna', name: 'Anna' },
+      { id: 'armor-king', name: 'Armor King' },
+      { id: 'baek', name: 'Baek' },
+      { id: 'bruce', name: 'Bruce' },
+      { id: 'ganryu', name: 'Ganryu' },
+      { id: 'heihachi', name: 'Heihachi' },
+      { id: 'jack-2', name: 'Jack-2' },
+      { id: 'jun-kazama', name: 'Jun Kazama' },
+      { id: 'kazuya', name: 'Kazuya' },
+      { id: 'king', name: 'King' },
+      { id: 'kuma', name: 'Kuma' },
+      { id: 'kunimitsu', name: 'Kunimitsu' },
+      { id: 'lee', name: 'Lee' },
+      { id: 'lei', name: 'Lei' },
+      { id: 'michelle', name: 'Michelle' },
+      { id: 'nina', name: 'Nina' },
+      { id: 'paul', name: 'Paul' },
+      { id: 'roger', name: 'Roger' },
+      { id: 'wang', name: 'Wang' },
+      { id: 'yoshimitsu', name: 'Yoshimitsu' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'tekken-8',
+
+    name: "Tekken 8",
+
+    developer: "Bandai Namco",
+
+    releaseYear: 2024,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'alisa', name: 'Alisa' },
+      { id: 'asuka', name: 'Asuka' },
+      { id: 'azucena', name: 'Azucena' },
+      { id: 'bryan', name: 'Bryan' },
+      { id: 'claudio', name: 'Claudio' },
+      { id: 'dragunov', name: 'Dragunov' },
+      { id: 'feng', name: 'Feng' },
+      { id: 'hwoarang', name: 'Hwoarang' },
+      { id: 'jack-8', name: 'Jack-8' },
+      { id: 'jin', name: 'Jin' },
+      { id: 'jun', name: 'Jun' },
+      { id: 'kazuya', name: 'Kazuya' },
+      { id: 'king', name: 'King' },
+      { id: 'kuma', name: 'Kuma' },
+      { id: 'lars', name: 'Lars' },
+      { id: 'law', name: 'Law' },
+      { id: 'lee', name: 'Lee' },
+      { id: 'leo', name: 'Leo' },
+      { id: 'leroy', name: 'Leroy' },
+      { id: 'lili', name: 'Lili' },
+      { id: 'nina', name: 'Nina' },
+      { id: 'panda', name: 'Panda' },
+      { id: 'paul', name: 'Paul' },
+      { id: 'raven', name: 'Raven' },
+      { id: 'reina', name: 'Reina' },
+      { id: 'shaheen', name: 'Shaheen' },
+      { id: 'steve', name: 'Steve' },
+      { id: 'victor', name: 'Victor' },
+      { id: 'xiaoyu', name: 'Xiaoyu' },
+      { id: 'yoshimitsu', name: 'Yoshimitsu' },
+      { id: 'zafina', name: 'Zafina' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'the-king-of-fighters-94',
+
+    name: "The King of Fighters '94",
+
+    developer: "SNK",
+
+    releaseYear: 1994,
+
+    platform: "Neo Geo Arcade",
+
+rosterCount: 20,
+
+        characters: [
+
+      
+      { id: 'andy-bogard', name: 'Andy Bogard' },
+      { id: 'athena-asamiya', name: 'Athena Asamiya' },
+      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
+      { id: 'chang-koehan', name: 'Chang Koehan' },
+      { id: 'chin-gentsai', name: 'Chin Gentsai' },
+      { id: 'choi-bounge', name: 'Choi Bounge' },
+      { id: 'clark-still', name: 'Clark Still' },
+      { id: 'goro-daimon', name: 'Goro Daimon' },
+      { id: 'heidern', name: 'Heidern' },
+      { id: 'heavy-d', name: 'Heavy D!' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
+      { id: 'king', name: 'King' },
+      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
+      { id: 'lucky-glauber', name: 'Lucky Glauber' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'ralf-jones', name: 'Ralf Jones' },
+      { id: 'robert-garcia', name: 'Robert Garcia' },
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'rugal-bernstein', name: 'Rugal Bernstein' },
+      { id: 'sie-kensou', name: 'Sie Kensou' },
+      { id: 'takuma-sakazaki', name: 'Takuma Sakazaki' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'the-king-of-fighters-2000',
+
+    name: "The King of Fighters 2000",
+
+    developer: "SNK",
+
+    releaseYear: 2000,
+
+    platform: "Neo Geo Arcade",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'andy-bogard', name: 'Andy Bogard' },
+      { id: 'athena-asamiya', name: 'Athena Asamiya' },
+      { id: 'bao', name: 'Bao' },
+      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
+      { id: 'blue-mary', name: 'Blue Mary' },
+      { id: 'chang-koehan', name: 'Chang Koehan' },
+      { id: 'chin-gentsai', name: 'Chin Gentsai' },
+      { id: 'choi-bounge', name: 'Choi Bounge' },
+      { id: 'clark-still', name: 'Clark Still' },
+      { id: 'hinako-shijou', name: 'Hinako Shijou' },
+      { id: 'iori-yagami', name: 'Iori Yagami' },
+      { id: 'jhun-hoon', name: 'Jhun Hoon' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'k', name: 'K\'' },
+      { id: 'kasumi-todoh', name: 'Kasumi Todoh' },
+      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
+      { id: 'king', name: 'King' },
+      { id: 'kula-diamond', name: 'Kula Diamond' },
+      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
+      { id: 'leona-heidern', name: 'Leona Heidern' },
+      { id: 'lin', name: 'Lin' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'maxima', name: 'Maxima' },
+      { id: 'ramon', name: 'Ramon' },
+      { id: 'ralf-jones', name: 'Ralf Jones' },
+      { id: 'robert-garcia', name: 'Robert Garcia' },
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'seth', name: 'Seth' },
+      { id: 'shingo-yabuki', name: 'Shingo Yabuki' },
+      { id: 'sie-kensou', name: 'Sie Kensou' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'vanessa', name: 'Vanessa' },
+      { id: 'whip', name: 'Whip' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'the-king-of-fighters-2001',
+
+    name: "The King of Fighters 2001",
+
+    developer: "SNK",
+
+    releaseYear: 2001,
+
+    platform: "Neo Geo Arcade",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'angel', name: 'Angel' },
+      { id: 'andy-bogard', name: 'Andy Bogard' },
+      { id: 'athena-asamiya', name: 'Athena Asamiya' },
+      { id: 'bao', name: 'Bao' },
+      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
+      { id: 'blue-mary', name: 'Blue Mary' },
+      { id: 'chang-koehan', name: 'Chang Koehan' },
+      { id: 'chin-gentsai', name: 'Chin Gentsai' },
+      { id: 'choi-bounge', name: 'Choi Bounge' },
+      { id: 'clark-still', name: 'Clark Still' },
+      { id: 'foxy', name: 'Foxy' },
+      { id: 'heidern', name: 'Heidern' },
+      { id: 'hinako-shijou', name: 'Hinako Shijou' },
+      { id: 'iori-yagami', name: 'Iori Yagami' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'k', name: 'K\'' },
+      { id: 'kof-2001', name: 'KOF 2001' },
+      { id: 'kula-diamond', name: 'Kula Diamond' },
+      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
+      { id: 'leona-heidern', name: 'Leona Heidern' },
+      { id: 'li-xiangfei', name: 'Li Xiangfei' },
+      { id: 'lin', name: 'Lin' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'maxima', name: 'Maxima' },
+      { id: 'may-lee', name: 'May Lee' },
+      { id: 'ralf-jones', name: 'Ralf Jones' },
+      { id: 'robert-garcia', name: 'Robert Garcia' },
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'seth', name: 'Seth' },
+      { id: 'shingo-yabuki', name: 'Shingo Yabuki' },
+      { id: 'sie-kensou', name: 'Sie Kensou' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'vanessa', name: 'Vanessa' },
+      { id: 'whip', name: 'Whip' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'the-king-of-fighters-2002',
+
+    name: "The King of Fighters 2002",
+
+    developer: "SNK",
+
+    releaseYear: 2002,
+
+    platform: "Neo Geo Arcade",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'angel', name: 'Angel' },
+      { id: 'andy-bogard', name: 'Andy Bogard' },
+      { id: 'athena-asamiya', name: 'Athena Asamiya' },
+      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
+      { id: 'billy-kane', name: 'Billy Kane' },
+      { id: 'blue-mary', name: 'Blue Mary' },
+      { id: 'chang-koehan', name: 'Chang Koehan' },
+      { id: 'chin-gentsai', name: 'Chin Gentsai' },
+      { id: 'choi-bounge', name: 'Choi Bounge' },
+      { id: 'chris', name: 'Chris' },
+      { id: 'clark-still', name: 'Clark Still' },
+      { id: 'goro-daimon', name: 'Goro Daimon' },
+      { id: 'iori-yagami', name: 'Iori Yagami' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'k', name: 'K\'' },
+      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
+      { id: 'kula-diamond', name: 'Kula Diamond' },
+      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
+      { id: 'leona-heidern', name: 'Leona Heidern' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'mature', name: 'Mature' },
+      { id: 'maxima', name: 'Maxima' },
+      { id: 'may-lee', name: 'May Lee' },
+      { id: 'ralf-jones', name: 'Ralf Jones' },
+      { id: 'ramon', name: 'Ramon' },
+      { id: 'robert-garcia', name: 'Robert Garcia' },
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
+      { id: 'seth', name: 'Seth' },
+      { id: 'shermie', name: 'Shermie' },
+      { id: 'shingo-yabuki', name: 'Shingo Yabuki' },
+      { id: 'sie-kensou', name: 'Sie Kensou' },
+      { id: 'takuma-sakazaki', name: 'Takuma Sakazaki' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'vanessa', name: 'Vanessa' },
+      { id: 'vice', name: 'Vice' },
+      { id: 'whip', name: 'Whip' },
+      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'the-king-of-fighters-2003',
+
+    name: "The King of Fighters 2003",
+
+    developer: "SNK",
+
+    releaseYear: 2003,
+
+    platform: "Neo Geo Arcade",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'ash-crimson', name: 'Ash Crimson' },
+      { id: 'athena-asamiya', name: 'Athena Asamiya' },
+      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
+      { id: 'billy-kane', name: 'Billy Kane' },
+      { id: 'blue-mary', name: 'Blue Mary' },
+      { id: 'chang-koehan', name: 'Chang Koehan' },
+      { id: 'clark-still', name: 'Clark Still' },
+      { id: 'duolon', name: 'Duolon' },
+      { id: 'gato', name: 'Gato' },
+      { id: 'goro-daimon', name: 'Goro Daimon' },
+      { id: 'hinako-shijou', name: 'Hinako Shijou' },
+      { id: 'iori-yagami', name: 'Iori Yagami' },
+      { id: 'jhun-hoon', name: 'Jhun Hoon' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'k', name: 'K\'' },
+      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
+      { id: 'kusanagi', name: 'Kusanagi' },
+      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
+      { id: 'leona-heidern', name: 'Leona Heidern' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'malin', name: 'Malin' },
+      { id: 'maxima', name: 'Maxima' },
+      { id: 'ralf-jones', name: 'Ralf Jones' },
+      { id: 'robert-garcia', name: 'Robert Garcia' },
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'shen-woo', name: 'Shen Woo' },
+      { id: 'shingo-yabuki', name: 'Shingo Yabuki' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'tizoc', name: 'Tizoc' },
+      { id: 'whip', name: 'Whip' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'the-king-of-fighters-xiii',
+
+    name: "The King of Fighters XIII",
+
+    developer: "SNK",
+
+    releaseYear: 2010,
+
+    platform: "PlayStation 2 Arcade",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'andy-bogard', name: 'Andy Bogard' },
+      { id: 'ash-crimson', name: 'Ash Crimson' },
+      { id: 'athena-asamiya', name: 'Athena Asamiya' },
+      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
+      { id: 'billy-kane', name: 'Billy Kane' },
+      { id: 'chin-gentsai', name: 'Chin Gentsai' },
+      { id: 'clark-still', name: 'Clark Still' },
+      { id: 'duo-lon', name: 'Duo Lon' },
+      { id: 'elisabeth-blanctorche', name: 'Elisabeth Blanctorche' },
+      { id: 'hwa-jai', name: 'Hwa Jai' },
+      { id: 'iori-yagami', name: 'Iori Yagami' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'k', name: 'K\'' },
+      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
+      { id: 'king', name: 'King' },
+      { id: 'kula-diamond', name: 'Kula Diamond' },
+      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
+      { id: 'leona-heidern', name: 'Leona Heidern' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'mature', name: 'Mature' },
+      { id: 'maxima', name: 'Maxima' },
+      { id: 'mr-karate', name: 'Mr. Karate' },
+      { id: 'ralf-jones', name: 'Ralf Jones' },
+      { id: 'raiden', name: 'Raiden' },
+      { id: 'robert-garcia', name: 'Robert Garcia' },
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'saiki', name: 'Saiki' },
+      { id: 'shen-woo', name: 'Shen Woo' },
+      { id: 'sie-kensou', name: 'Sie Kensou' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'vice', name: 'Vice' },
+      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'the-king-of-fighters-xiv',
+
+    name: "The King of Fighters XIV",
+
+    developer: "SNK",
+
+    releaseYear: 2016,
+
+    platform: "PlayStation 4 Windows",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'alice', name: 'Alice' },
+      { id: 'andy-bogard', name: 'Andy Bogard' },
+      { id: 'angel', name: 'Angel' },
+      { id: 'antonov', name: 'Antonov' },
+      { id: 'athena-asamiya', name: 'Athena Asamiya' },
+      { id: 'bandeiras-hattori', name: 'Bandeiras Hattori' },
+      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
+      { id: 'billy-kane', name: 'Billy Kane' },
+      { id: 'chin-gentsai', name: 'Chin Gentsai' },
+      { id: 'choi-bounge', name: 'Choi Bounge' },
+      { id: 'clark-still', name: 'Clark Still' },
+      { id: 'dinosaur', name: 'Dinosaur' },
+      { id: 'gang-il', name: 'Gang-Il' },
+      { id: 'geese-howard', name: 'Geese Howard' },
+      { id: 'goro-daimon', name: 'Goro Daimon' },
+      { id: 'hein', name: 'Hein' },
+      { id: 'iori-yagami', name: 'Iori Yagami' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'k', name: 'K\'' },
+      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
+      { id: 'king', name: 'King' },
+      { id: 'kula-diamond', name: 'Kula Diamond' },
+      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
+      { id: 'leona-heidern', name: 'Leona Heidern' },
+      { id: 'love-heart', name: 'Love Heart' },
+      { id: 'luong', name: 'Luong' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'mature', name: 'Mature' },
+      { id: 'maxima', name: 'Maxima' },
+      { id: 'meitenkun', name: 'Meitenkun' },
+      { id: 'mian', name: 'Mian' },
+      { id: 'mui-mui', name: 'Mui Mui' },
+      { id: 'nakoruru', name: 'Nakoruru' },
+      { id: 'nelson', name: 'Nelson' },
+      { id: 'ralf-jones', name: 'Ralf Jones' },
+      { id: 'ramon', name: 'Ramon' },
+      { id: 'robert-garcia', name: 'Robert Garcia' },
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'shunei', name: 'Shun\'ei' },
+      { id: 'sie-kensou', name: 'Sie Kensou' },
+      { id: 'sylvie-paula-paula', name: 'Sylvie Paula Paula' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'tung-fu-rue', name: 'Tung Fu Rue' },
+      { id: 'vice', name: 'Vice' },
+      { id: 'xanadu', name: 'Xanadu' },
+      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
+      { id: 'zarina', name: 'Zarina' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'the-king-of-fighters-xv',
+
+    name: "The King of Fighters XV",
+
+    developer: "SNK",
+
+    releaseYear: 2022,
+
+    platform: "PlayStation 4 Windows",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'andy-bogard', name: 'Andy Bogard' },
+      { id: 'angel', name: 'Angel' },
+      { id: 'antonov', name: 'Antonov' },
+      { id: 'ash-crimson', name: 'Ash Crimson' },
+      { id: 'athena-asamiya', name: 'Athena Asamiya' },
+      { id: 'b-jenet', name: 'B. Jenet' },
+      { id: 'benimaru-nikaido', name: 'Benimaru Nikaido' },
+      { id: 'billy-kane', name: 'Billy Kane' },
+      { id: 'blue-mary', name: 'Blue Mary' },
+      { id: 'chizuru-kagura', name: 'Chizuru Kagura' },
+      { id: 'chris', name: 'Chris' },
+      { id: 'clark-still', name: 'Clark Still' },
+      { id: 'dolores', name: 'Dolores' },
+      { id: 'elisabeth-blanctorche', name: 'Elisabeth Blanctorche' },
+      { id: 'gato', name: 'Gato' },
+      { id: 'geese-howard', name: 'Geese Howard' },
+      { id: 'haohmaru', name: 'Haohmaru' },
+      { id: 'heidern', name: 'Heidern' },
+      { id: 'iori-yagami', name: 'Iori Yagami' },
+      { id: 'isla', name: 'Isla' },
+      { id: 'joe-higashi', name: 'Joe Higashi' },
+      { id: 'k', name: 'K\'' },
+      { id: 'king', name: 'King' },
+      { id: 'kof-xv', name: 'Kof XV' },
+      { id: 'krohnen-mcdougall', name: 'Krohnen McDougall' },
+      { id: 'kula-diamond', name: 'Kula Diamond' },
+      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
+      { id: 'leona-heidern', name: 'Leona Heidern' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'maxima', name: 'Maxima' },
+      { id: 'meitenkun', name: 'Meitenkun' },
+      { id: 'nakoruru', name: 'Nakoruru' },
+      { id: 'orochi-chris', name: 'Orochi Chris' },
+      { id: 'orochi-shermie', name: 'Orochi Shermie' },
+      { id: 'orochi-yashiro', name: 'Orochi Yashiro' },
+      { id: 'ralf-jones', name: 'Ralf Jones' },
+      { id: 'ramon', name: 'Ramon' },
+      { id: 'robert-garcia', name: 'Robert Garcia' },
+      { id: 'rock-howard', name: 'Rock Howard' },
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'ryuji-yamazaki', name: 'Ryuji Yamazaki' },
+      { id: 'shermie', name: 'Shermie' },
+      { id: 'shunei', name: 'Shun\'ei' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'vanessa', name: 'Vanessa' },
+      { id: 'whip', name: 'Whip' },
+      { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
+      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'the-king-of-fighters-maximum-impact',
+
+    name: "The King of Fighters: Maximum Impact",
+
+    developer: "Unknown",
+
+    releaseYear: 2004,
+
+    platform: "PlayStation 2 Arcade",
+
+rosterCount: 20,
+
+        characters: [
+
+      
+      { id: 'alba-meira', name: 'Alba Meira' },
+      { id: 'athena-asamiya', name: 'Athena Asamiya' },
+      { id: 'chae-lim', name: 'Chae Lim' },
+      { id: 'clark-still', name: 'Clark Still' },
+      { id: 'duke', name: 'Duke' },
+      { id: 'iori-yagami', name: 'Iori Yagami' },
+      { id: 'k', name: 'K\'' },
+      { id: 'leona-heidern', name: 'Leona Heidern' },
+      { id: 'lien-neville', name: 'Lien Neville' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'maxima', name: 'Maxima' },
+      { id: 'mignon-beart', name: 'Mignon Beart' },
+      { id: 'ralf-jones', name: 'Ralf Jones' },
+      { id: 'rock-howard', name: 'Rock Howard' },
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'seth', name: 'Seth' },
+      { id: 'soiree-meira', name: 'Soiree Meira' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'the-king-of-fighters-maximum-impact-2-kof-2006',
+
+    name: "The King of Fighters: Maximum Impact 2 (KOF 2006)",
+
+    developer: "Unknown",
+
+    releaseYear: 2006,
+
+    platform: "PlayStation 2 Arcade",
+
+rosterCount: 20,
+
+        characters: [
+
+      
+      { id: 'alba-meira', name: 'Alba Meira' },
+      { id: 'billy-kane', name: 'Billy Kane' },
+      { id: 'chae-lim', name: 'Chae Lim' },
+      { id: 'duke', name: 'Duke' },
+      { id: 'fiolina-germi', name: 'Fiolina Germi' },
+      { id: 'hanzo-hattori', name: 'Hanzo Hattori' },
+      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
+      { id: 'lien-neville', name: 'Lien Neville' },
+      { id: 'luise-meyrink', name: 'Luise Meyrink' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'mignon-beart', name: 'Mignon Beart' },
+      { id: 'nagase', name: 'Nagase' },
+      { id: 'ninon-beart', name: 'Ninon Beart' },
+      { id: 'richard-meyer', name: 'Richard Meyer' },
+      { id: 'rock-howard', name: 'Rock Howard' },
+      { id: 'soiree-meira', name: 'Soiree Meira' },
+      { id: 'terry-bogard', name: 'Terry Bogard' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'the-king-of-fighters-maximum-impact-regulation-a',
+
+    name: "The King of Fighters: Maximum Impact Regulation 'A'",
+
+    developer: "Unknown",
+
+    releaseYear: 2007,
+
+    platform: "PlayStation 2 Arcade",
+
+rosterCount: 20,
+
+        characters: [
+
+      
+      { id: 'alba-meira', name: 'Alba Meira' },
+      { id: 'athena-asamiya', name: 'Athena Asamiya' },
+      { id: 'chae-lim', name: 'Chae Lim' },
+      { id: 'clark-still', name: 'Clark Still' },
+      { id: 'duke', name: 'Duke' },
+      { id: 'iori-yagami', name: 'Iori Yagami' },
+      { id: 'k', name: 'K\'' },
+      { id: 'leona-heidern', name: 'Leona Heidern' },
+      { id: 'lien-neville', name: 'Lien Neville' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'maxima', name: 'Maxima' },
+      { id: 'mignon-beart', name: 'Mignon Beart' },
+      { id: 'ralf-jones', name: 'Ralf Jones' },
+      { id: 'rock-howard', name: 'Rock Howard' },
+      { id: 'ryo-sakazaki', name: 'Ryo Sakazaki' },
+      { id: 'seth', name: 'Seth' },
+      { id: 'soiree-meira', name: 'Soiree Meira' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'the-last-blade',
+
+    name: "The Last Blade",
+
+    developer: "SNK",
+
+    releaseYear: 1997,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akari-ichijou', name: 'Akari Ichijou' },
+      { id: 'genbu-no-okina', name: 'Genbu no Okina' },
+      { id: 'hyo-amano', name: 'Hyo Amano' },
+      { id: 'juzoh-kanzaki', name: 'Juzoh Kanzaki' },
+      { id: 'kaede', name: 'Kaede' },
+      { id: 'keiichiro-washizuka', name: 'Keiichiro Washizuka' },
+      { id: 'lee-recca', name: 'Lee Recca' },
+      { id: 'moriya-minakata', name: 'Moriya Minakata' },
+      { id: 'shigen-naoe', name: 'Shigen Naoe' },
+      { id: 'shikyoh', name: 'Shikyoh' },
+      { id: 'yuki', name: 'Yuki' },
+      { id: 'zantetsu', name: 'Zantetsu' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'the-last-blade-2',
+
+    name: "The Last Blade 2",
+
+    developer: "SNK",
+
+    releaseYear: 1997,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akari-ichijou', name: 'Akari Ichijou' },
+      { id: 'awakened-kaede', name: 'Awakened Kaede' },
+      { id: 'genbu-no-okina', name: 'Genbu no Okina' },
+      { id: 'hagure-hitogata', name: 'Hagure Hitogata' },
+      { id: 'hibiki-takane', name: 'Hibiki Takane' },
+      { id: 'hyo-amano', name: 'Hyo Amano' },
+      { id: 'juzoh-kanzaki', name: 'Juzoh Kanzaki' },
+      { id: 'kaede', name: 'Kaede' },
+      { id: 'kaori-sanada', name: 'Kaori Sanada' },
+      { id: 'keiichiro-washizuka', name: 'Keiichiro Washizuka' },
+      { id: 'kouryu', name: 'Kouryu' },
+      { id: 'lee-recca', name: 'Lee Recca' },
+      { id: 'moriya-minakata', name: 'Moriya Minakata' },
+      { id: 'mukuro', name: 'Mukuro' },
+      { id: 'setsuna', name: 'Setsuna' },
+      { id: 'shigen-naoe', name: 'Shigen Naoe' },
+      { id: 'shinnosuke-kagami', name: 'Shinnosuke Kagami' },
+      { id: 'yuki', name: 'Yuki' },
+      { id: 'zantetsu', name: 'Zantetsu' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'ultimate-marvel-vs-capcom-3',
+
+    name: "Ultimate Marvel vs. Capcom 3",
+
+    developer: "Capcom",
+
+    releaseYear: 2011,
+
+    platform: "PlayStation 3 Xbox 360 Windows",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akuma', name: 'Akuma' },
+      { id: 'amaterasu', name: 'Amaterasu' },
+      { id: 'arthur', name: 'Arthur' },
+      { id: 'c-viper', name: 'C. Viper' },
+      { id: 'captain-america', name: 'Captain America' },
+      { id: 'chris-redfield', name: 'Chris Redfield' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'dante', name: 'Dante' },
+      { id: 'deadpool', name: 'Deadpool' },
+      { id: 'doc-strange', name: 'Doc Strange' },
+      { id: 'dormammu', name: 'Dormammu' },
+      { id: 'dr-doom', name: 'Dr. Doom' },
+      { id: 'felicia', name: 'Felicia' },
+      { id: 'firebrand', name: 'Firebrand' },
+      { id: 'ghost-rider', name: 'Ghost Rider' },
+      { id: 'haggar', name: 'Haggar' },
+      { id: 'hawkeye', name: 'Hawkeye' },
+      { id: 'hsien-ko', name: 'Hsien-Ko' },
+      { id: 'hulk', name: 'Hulk' },
+      { id: 'iron-fist', name: 'Iron Fist' },
+      { id: 'iron-man', name: 'Iron Man' },
+      { id: 'jill-valentine', name: 'Jill Valentine' },
+      { id: 'magneto', name: 'Magneto' },
+      { id: 'modok', name: 'MODOK' },
+      { id: 'morrigan', name: 'Morrigan' },
+      { id: 'nemesis', name: 'Nemesis' },
+      { id: 'nova', name: 'Nova' },
+      { id: 'phoenix', name: 'Phoenix' },
+      { id: 'phoenix-wright', name: 'Phoenix Wright' },
+      { id: 'rocket-raccoon', name: 'Rocket Raccoon' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sentinel', name: 'Sentinel' },
+      { id: 'she-hulk', name: 'She-Hulk' },
+      { id: 'shuma-gorath', name: 'Shuma-Gorath' },
+      { id: 'spencer', name: 'Spencer' },
+      { id: 'spider-man', name: 'Spider-Man' },
+      { id: 'storm', name: 'Storm' },
+      { id: 'strider-hiryu', name: 'Strider Hiryu' },
+      { id: 'super-skrull', name: 'Super-Skrull' },
+      { id: 'taskmaster', name: 'Taskmaster' },
+      { id: 'thor', name: 'Thor' },
+      { id: 'trish', name: 'Trish' },
+      { id: 'tron-bonne', name: 'Tron Bonne' },
+      { id: 'vergil', name: 'Vergil' },
+      { id: 'viewtiful-joe', name: 'Viewtiful Joe' },
+      { id: 'war-machine', name: 'War Machine' },
+      { id: 'wesker', name: 'Wesker' },
+      { id: 'wolverine', name: 'Wolverine' },
+      { id: 'x-23', name: 'X-23' },
+      { id: 'zero', name: 'Zero' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'ultimate-mortal-kombat-3',
+
+    name: "Ultimate Mortal Kombat 3",
+
+    developer: "NetherRealm Studios",
+
+    releaseYear: 2011,
+
+    platform: "PlayStation 3 Xbox 360 Windows",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'cyrax', name: 'Cyrax' },
+      { id: 'ermac', name: 'Ermac' },
+      { id: 'jade', name: 'Jade' },
+      { id: 'jax', name: 'Jax' },
+      { id: 'kabal', name: 'Kabal' },
+      { id: 'kano', name: 'Kano' },
+      { id: 'kitana', name: 'Kitana' },
+      { id: 'kung-lao', name: 'Kung Lao' },
+      { id: 'liu-kang', name: 'Liu Kang' },
+      { id: 'mileena', name: 'Mileena' },
+      { id: 'nightwolf', name: 'Nightwolf' },
+      { id: 'rain', name: 'Rain' },
+      { id: 'reptile', name: 'Reptile' },
+      { id: 'scorpion', name: 'Scorpion' },
+      { id: 'sektor', name: 'Sektor' },
+      { id: 'shang-tsung', name: 'Shang Tsung' },
+      { id: 'sheeva', name: 'Sheeva' },
+      { id: 'sindel', name: 'Sindel' },
+      { id: 'smoke', name: 'Smoke' },
+      { id: 'sonya-blade', name: 'Sonya Blade' },
+      { id: 'stryker', name: 'Stryker' },
+      { id: 'sub-zero', name: 'Sub-Zero' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'ultra-street-fighter-iv',
+
+    name: "Ultra Street Fighter IV",
+
+    developer: "Capcom",
+
+    releaseYear: 2014,
+
+    platform: "Windows PlayStation 3 Xbox 360",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akatsuki', name: 'Akatsuki' },
+      { id: 'byakuya', name: 'Byakuya' },
+      { id: 'carmine', name: 'Carmine' },
+      { id: 'chaos', name: 'Chaos' },
+      { id: 'eltnum', name: 'Eltnum' },
+      { id: 'enkidu', name: 'Enkidu' },
+      { id: 'gordeau', name: 'Gordeau' },
+      { id: 'hilda', name: 'Hilda' },
+      { id: 'hyde', name: 'Hyde' },
+      { id: 'kaguya', name: 'Kaguya' },
+      { id: 'kuon', name: 'Kuon' },
+      { id: 'linne', name: 'Linne' },
+      { id: 'londrekia', name: 'Londrekia' },
+      { id: 'mika', name: 'Mika' },
+      { id: 'nanase', name: 'Nanase' },
+      { id: 'orie', name: 'Orie' },
+      { id: 'phonon', name: 'Phonon' },
+      { id: 'seth', name: 'Seth' },
+      { id: 'tsurugi', name: 'Tsurugi' },
+      { id: 'uzuki', name: 'Uzuki' },
+      { id: 'vatista', name: 'Vatista' },
+      { id: 'wagner', name: 'Wagner' },
+      { id: 'waldstein', name: 'Waldstein' },
+      { id: 'yuzuriha', name: 'Yuzuriha' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'under-night-in-birth-ii-[sysceles]',
+
+    name: "Under Night In-Birth II [Sys:Celes]",
+
+    developer: "French-Bread",
+
+    releaseYear: 2024,
+
+    platform: "Windows PlayStation 4 PlayStation 5",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'hyde', name: 'Hyde' },
+      { id: 'linne', name: 'Linne' },
+      { id: 'waldstein', name: 'Waldstein' },
+      { id: 'carmine', name: 'Carmine' },
+      { id: 'orie', name: 'Orie' },
+      { id: 'gordeau', name: 'Gordeau' },
+      { id: 'merkava', name: 'Merkava' },
+      { id: 'vatista', name: 'Vatista' },
+      { id: 'seth', name: 'Seth' },
+      { id: 'yuzuriha', name: 'Yuzuriha' },
+      { id: 'hilda', name: 'Hilda' },
+      { id: 'eltnum', name: 'Eltnum' },
+      { id: 'chaos', name: 'Chaos' },
+      { id: 'nanase', name: 'Nanase' },
+      { id: 'byakuya', name: 'Byakuya' },
+      { id: 'phonon', name: 'Phonon' },
+      { id: 'mika', name: 'Mika' },
+      { id: 'enkidu', name: 'Enkidu' },
+      { id: 'wagner', name: 'Wagner' },
+      { id: 'londrekia', name: 'Londrekia' },
+      { id: 'tsurugi', name: 'Tsurugi' },
+      { id: 'kaguya', name: 'Kaguya' },
+      { id: 'kuon', name: 'Kuon' },
+      { id: 'uzuki', name: 'Uzuki' },
+      { id: 'ogre', name: 'Ogre' },
+      { id: 'izumi', name: 'Izumi' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'vampirehunter2',
+
+    name: "Vampire Hunter 2",
+
+    developer: "Capcom",
+
+    releaseYear: 1997,
+
+    platform: "Arcade",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'donovan', name: 'Donovan' },
+      { id: 'pyron', name: 'Pyron' },
+      { id: 'aulbath', name: 'Aulbath' },
+      { id: 'bishamon', name: 'Bishamon' },
+      { id: 'bulleta', name: 'Bulleta' },
+      { id: 'darkstalkers', name: 'Darkstalkers' },
+      { id: 'demitri-maximoff', name: 'Demitri Maximoff' },
+      { id: 'demitri_maximoff', name: 'Demitri_Maximoff' },
+      { id: 'demitri_maximov', name: 'Demitri_Maximov' },
+      { id: 'donovan-baine', name: 'Donovan Baine' },
+      { id: 'donovan_baine', name: 'Donovan_Baine' },
+      { id: 'jedah-dohma', name: 'Jedah Dohma' },
+      { id: 'john_talbain', name: 'John_Talbain' },
+      { id: 'lord_zabel', name: 'Lord_Zabel' },
+      { id: 'morrigan-aensland', name: 'Morrigan Aensland' },
+      { id: 'morrigan_aensland', name: 'Morrigan_Aensland' },
+      { id: 'morrigan_arnsland', name: 'Morrigan_Arnsland' },
+      { id: 'nightwarriors', name: 'Nightwarriors' },
+      { id: 'darkstalkers-the-night-warriors', name: 'Darkstalkers The Night Warriors' },
+      { id: 'night-warriors-darkstalkers-revenge', name: 'Night Warriors Darkstalkers Revenge' },
+      { id: 'rikuo', name: 'Rikuo' },
+      { id: 'sakura-kasugano', name: 'Sakura Kasugano' },
+      { id: 'sasquatch', name: 'Sasquatch' },
+      { id: 'select_cpu_opponent_and_cpu_costume_color', name: 'Select_Cpu_Opponent_And_Cpu_Costume_Color' },
+      { id: 'vampiresavior', name: 'Vampiresavior' },
+      { id: 'victor-von-gerdenheim', name: 'Victor Von Gerdenheim' },
+      { id: 'victor_gerdenheim', name: 'Victor_Gerdenheim' },
+      { id: 'victor_von_geldenheim', name: 'Victor_Von_Geldenheim' },
+      { id: 'victor_von_gerdenheim', name: 'Victor_Von_Gerdenheim' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'vampiresavior',
+
+    name: "Vampire Savior",
+
+    developer: "Capcom",
+
+    releaseYear: 1997,
+
+    platform: "Arcade Sega Saturn PlayStation",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'anakaris', name: 'Anakaris' },
+      { id: 'bb-hood', name: 'B.B. Hood' },
+      { id: 'bishamon', name: 'Bishamon' },
+      { id: 'demitri', name: 'Demitri' },
+      { id: 'felicia', name: 'Felicia' },
+      { id: 'hsien-ko', name: 'Hsien-Ko' },
+      { id: 'jedah', name: 'Jedah' },
+      { id: 'jon-talbain', name: 'Jon Talbain' },
+      { id: 'lilith', name: 'Lilith' },
+      { id: 'lord-raptor', name: 'Lord Raptor' },
+      { id: 'morrigan', name: 'Morrigan' },
+      { id: 'q-bee', name: 'Q-Bee' },
+      { id: 'rikuo', name: 'Rikuo' },
+      { id: 'sasquatch', name: 'Sasquatch' },
+      { id: 'victor', name: 'Victor' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'vampiresavior2',
+
+    name: "Vampire Savior 2",
+
+    developer: "Capcom",
+
+    releaseYear: 1997,
+
+    platform: "Arcade Sega Saturn PlayStation",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'anakaris', name: 'Anakaris' },
+      { id: 'bb-hood', name: 'B.B. Hood' },
+      { id: 'bishamon', name: 'Bishamon' },
+      { id: 'demitri', name: 'Demitri' },
+      { id: 'felicia', name: 'Felicia' },
+      { id: 'hsien-ko', name: 'Hsien-Ko' },
+      { id: 'jedah', name: 'Jedah' },
+      { id: 'jon-talbain', name: 'Jon Talbain' },
+      { id: 'lilith', name: 'Lilith' },
+      { id: 'lord-raptor', name: 'Lord Raptor' },
+      { id: 'morrigan', name: 'Morrigan' },
+      { id: 'q-bee', name: 'Q-Bee' },
+      { id: 'rikuo', name: 'Rikuo' },
+      { id: 'sasquatch', name: 'Sasquatch' },
+      { id: 'victor', name: 'Victor' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'virtua-fighter',
+
+    name: "Virtua Fighter 1",
+
+    developer: "Sega",
+
+    releaseYear: 1993,
+
+    platform: "Arcade Sega Saturn Sega 32X",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akira', name: 'Akira' },
+      { id: 'jacky', name: 'Jacky' },
+      { id: 'jeffry', name: 'Jeffry' },
+      { id: 'kage', name: 'Kage' },
+      { id: 'lau', name: 'Lau' },
+      { id: 'pai', name: 'Pai' },
+      { id: 'sarah', name: 'Sarah' },
+      { id: 'wolf', name: 'Wolf' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'virtua-fighter-2',
+
+    name: "Virtua Fighter 2",
+
+    developer: "Sega",
+
+    releaseYear: 1993,
+
+    platform: "Arcade Sega Saturn Sega 32X",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akira', name: 'Akira' },
+      { id: 'jacky', name: 'Jacky' },
+      { id: 'jeffry', name: 'Jeffry' },
+      { id: 'kage', name: 'Kage' },
+      { id: 'lau', name: 'Lau' },
+      { id: 'lion', name: 'Lion' },
+      { id: 'pai', name: 'Pai' },
+      { id: 'sarah', name: 'Sarah' },
+      { id: 'shun', name: 'Shun' },
+      { id: 'wolf', name: 'Wolf' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'virtua-fighter-3',
+
+    name: "Virtua Fighter 3",
+
+    developer: "Sega",
+
+    releaseYear: 1993,
+
+    platform: "Arcade Sega Saturn Sega 32X",
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'akira', name: 'Akira' },
+      { id: 'aoi', name: 'Aoi' },
+      { id: 'jacky', name: 'Jacky' },
+      { id: 'jeffry', name: 'Jeffry' },
+      { id: 'kage', name: 'Kage' },
+      { id: 'lau', name: 'Lau' },
+      { id: 'lion', name: 'Lion' },
+      { id: 'pai', name: 'Pai' },
+      { id: 'sarah', name: 'Sarah' },
+      { id: 'shun', name: 'Shun' },
+      { id: 'taka-arashi', name: 'Taka-Arashi' },
+      { id: 'wolf', name: 'Wolf' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'virtua-fighter-4',
+
+    name: "Virtua Fighter 4",
+
+    developer: "Sega",
+
+    releaseYear: 1993,
+
+    platform: "Arcade Sega Saturn Sega 32X",
+
+rosterCount: 18,
+
+        characters: [
+
+      
+      { id: 'akira', name: 'Akira' },
+      { id: 'aoi', name: 'Aoi' },
+      { id: 'brad', name: 'Brad' },
+      { id: 'jacky', name: 'Jacky' },
+      { id: 'jeffry', name: 'Jeffry' },
+      { id: 'kage', name: 'Kage' },
+      { id: 'lau', name: 'Lau' },
+      { id: 'lei-fei', name: 'Lei-Fei' },
+      { id: 'lion', name: 'Lion' },
+      { id: 'pai', name: 'Pai' },
+      { id: 'sarah', name: 'Sarah' },
+      { id: 'shun', name: 'Shun' },
+      { id: 'vanessa', name: 'Vanessa' },
+      { id: 'wolf', name: 'Wolf' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'virtua-fighter-5-ultimate-showdown',
+
+    name: "Virtua Fighter 5 Ultimate Showdown",
+
+    developer: "Sega",
+
+    releaseYear: 1993,
+
+    platform: "Arcade Sega Saturn Sega 32X",
+
+rosterCount: 20,
+
+        characters: [
+
+      
+      { id: 'akira', name: 'Akira' },
+      { id: 'aoi', name: 'Aoi' },
+      { id: 'brad', name: 'Brad' },
+      { id: 'eileen', name: 'Eileen' },
+      { id: 'el-blaze', name: 'El Blaze' },
+      { id: 'goh', name: 'Goh' },
+      { id: 'jacky', name: 'Jacky' },
+      { id: 'jean', name: 'Jean' },
+      { id: 'jeffry', name: 'Jeffry' },
+      { id: 'kage', name: 'Kage' },
+      { id: 'lau', name: 'Lau' },
+      { id: 'lei-fei', name: 'Lei-Fei' },
+      { id: 'lion', name: 'Lion' },
+      { id: 'pai', name: 'Pai' },
+      { id: 'sarah', name: 'Sarah' },
+      { id: 'shun', name: 'Shun' },
+      { id: 'taka-arashi', name: 'Taka-Arashi' },
+      { id: 'vanessa', name: 'Vanessa' },
+      { id: 'wolf', name: 'Wolf' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'voltage-fighter-gowcaizer-choujin-gakuen-gowcaizer',
+
+    name: "Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer)",
+
+    developer: "Unknown",
+
+    releaseYear: 1995,
+
+    platform: "Neo Geo Arcade PlayStation",
+
+rosterCount: 12,
+
+        characters: [
+
+      
+      { id: 'brider', name: 'Brider' },
+      { id: 'captain-atlantis', name: 'Captain Atlantis' },
+      { id: 'fudomaru', name: 'Fudomaru' },
+      { id: 'gowcaizer', name: 'Gowcaizer' },
+      { id: 'hellstinger', name: 'Hellstinger' },
+      { id: 'karin-son', name: 'Karin Son' },
+      { id: 'kyosuke-shigure', name: 'Kyosuke Shigure' },
+      { id: 'marion', name: 'Marion' },
+      { id: 'ohga', name: 'Ohga' },
+      { id: 'ranryo', name: 'Ran/Ryo' },
+      { id: 'shaia-hany', name: 'Shaia Hanyū' },
+      { id: 'shen-long', name: 'Shen Long' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'waku-waku-7',
+
+    name: "Waku Waku 7",
+
+    developer: "Sunsoft",
+
+    releaseYear: 1996,
+
+rosterCount: 9,
+
+        characters: [
+
+      
+      { id: 'arina', name: 'Arina' },
+      { id: 'bonus-kun', name: 'Bonus-Kun' },
+      { id: 'dandy-j', name: 'Dandy-J' },
+      { id: 'fernandez', name: 'Fernandez' },
+      { id: 'mauru', name: 'Mauru' },
+      { id: 'politank-z', name: 'Politank-Z' },
+      { id: 'rai', name: 'Rai' },
+      { id: 'slash', name: 'Slash' },
+      { id: 'tiptops', name: 'Tiptops' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'way-of-the-warrior',
+
+    name: "Way of the Warrior",
+
+    developer: "Unknown",
+
+    releaseYear: 1994,
+
+    platform: "3DO",
+
+rosterCount: 10,
+
+        characters: [
+
+      
+      { id: 'crimson-glory', name: 'Crimson Glory' },
+      { id: 'dragon', name: 'Dragon' },
+      { id: 'fox', name: 'Fox' },
+      { id: 'high-five', name: 'High Five' },
+      { id: 'major-benson', name: 'Major Benson' },
+      { id: 'ninja', name: 'Ninja' },
+      { id: 'nobunaga', name: 'Nobunaga' },
+      { id: 'shogun', name: 'Shogun' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'world-heroes',
+
+    name: "World Heroes",
+
+    developer: "Unknown",
+
+    releaseYear: 1992,
+
+    platform: "Arcade Neo Geo SNES Sega Genesis",
+
+rosterCount: 8,
+
+        characters: [
+
+      
+      { id: 'brocken', name: 'Brocken' },
+      { id: 'dragon', name: 'Dragon' },
+      { id: 'fuuma', name: 'Fuuma' },
+      { id: 'hanzo', name: 'Hanzo' },
+      { id: 'j-carn', name: 'J. Carn' },
+      { id: 'janne', name: 'Janne' },
+      { id: 'muscle-power', name: 'Muscle Power' },
+      { id: 'rasputin', name: 'Rasputin' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'world-heroes-2',
+
+    name: "World Heroes 2",
+
+    developer: "Unknown",
+
+    releaseYear: 1992,
+
+    platform: "Arcade Neo Geo SNES Sega Genesis",
+
+rosterCount: 8,
+
+        characters: [
+
+      
+      { id: 'brocken', name: 'Brocken' },
+      { id: 'captain-kidd', name: 'Captain Kidd' },
+      { id: 'dragon', name: 'Dragon' },
+      { id: 'erik', name: 'Erik' },
+      { id: 'fuuma', name: 'Fuuma' },
+      { id: 'hanzo', name: 'Hanzo' },
+      { id: 'j-carn', name: 'J. Carn' },
+      { id: 'janne', name: 'Janne' },
+      { id: 'johnny-maximum', name: 'Johnny Maximum' },
+      { id: 'mudman', name: 'Mudman' },
+      { id: 'muscle-power', name: 'Muscle Power' },
+      { id: 'rasputin', name: 'Rasputin' },
+      { id: 'ryoko', name: 'Ryoko' },
+      { id: 'shura', name: 'Shura' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'world-heroes-2-jet',
+
+    name: "World Heroes 2 Jet",
+
+    developer: "Unknown",
+
+    releaseYear: 1992,
+
+    platform: "Arcade Neo Geo SNES Sega Genesis",
+
+rosterCount: 8,
+
+        characters: [
+
+      
+      { id: 'captain-kidd', name: 'Captain Kidd' },
+      { id: 'dragon', name: 'Dragon' },
+      { id: 'fuuma', name: 'Fuuma' },
+      { id: 'hanzo', name: 'Hanzo' },
+      { id: 'jack', name: 'Jack' },
+      { id: 'ryofu', name: 'Ryofu' },
+      { id: 'zeus', name: 'Zeus' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'world-heroes-perfect',
+
+    name: "World Heroes Perfect",
+
+    developer: "ADK",
+
+    releaseYear: 1992,
+
+    platform: "Arcade Neo Geo SNES Sega Genesis",
+
+rosterCount: 8,
+
+        characters: [
+
+      
+      { id: 'dio', name: 'Dio' },
+      { id: 'fuuma', name: 'Fuuma' },
+      { id: 'hanzo', name: 'Hanzo' },
+      { id: 'mudman', name: 'Mudman' },
+      { id: 'ryoko', name: 'Ryoko' },
+      { id: 'son-goku', name: 'Son Goku' },
+      { id: 'zeus', name: 'Zeus' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'x-men-vs-street-fighter',
+
+    name: "X-Men vs. Street Fighter",
+
+    developer: "Capcom",
+
+    releaseYear: 1996,
+
+rosterCount: 17,
+
+        characters: [
+
+      
+      { id: 'akuma', name: 'Akuma' },
+      { id: 'cammy', name: 'Cammy' },
+      { id: 'charlie', name: 'Charlie' },
+      { id: 'chun-li', name: 'Chun-Li' },
+      { id: 'cyclops', name: 'Cyclops' },
+      { id: 'dhalsim', name: 'Dhalsim' },
+      { id: 'gambit', name: 'Gambit' },
+      { id: 'juggernaut', name: 'Juggernaut' },
+      { id: 'ken', name: 'Ken' },
+      { id: 'magneto', name: 'Magneto' },
+      { id: 'm-bison', name: 'M. Bison' },
+      { id: 'nash', name: 'Nash' },
+      { id: 'rogue', name: 'Rogue' },
+      { id: 'ryu', name: 'Ryu' },
+      { id: 'sabretooth', name: 'Sabretooth' },
+      { id: 'storm', name: 'Storm' },
+      { id: 'wolverine', name: 'Wolverine' },
+      { id: 'zangief', name: 'Zangief' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'x-men-children-of-the-atom',
+
+    name: "X-Men: Children of the Atom",
+
+    developer: "Capcom",
+
+    releaseYear: 1994,
+
+rosterCount: 999,
+
+        characters: [
+
+      
+      { id: 'colossus', name: 'Colossus' },
+      { id: 'cyclops', name: 'Cyclops' },
+      { id: 'iceman', name: 'Iceman' },
+      { id: 'juggernaut', name: 'Juggernaut' },
+      { id: 'magneto', name: 'Magneto' },
+      { id: 'omega-red', name: 'Omega Red' },
+      { id: 'psylocke', name: 'Psylocke' },
+      { id: 'sentinel', name: 'Sentinel' },
+      { id: 'silver-samurai', name: 'Silver Samurai' },
+      { id: 'spiral', name: 'Spiral' },
+      { id: 'storm', name: 'Storm' },
+      { id: 'wolverine', name: 'Wolverine' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'zero-divide',
+
+    name: "Zero Divide",
+
+    developer: "Unknown",
+
+    releaseYear: 1995,
+
+    platform: "PlayStation",
+
+rosterCount: 10,
+
+        characters: [
+
+      
+      { id: 'cybershell', name: 'Cybershell' },
+      { id: 'draco', name: 'Draco' },
+      { id: 'eos', name: 'Eos' },
+      { id: 'galdon', name: 'Galdon' },
+      { id: 'nereid', name: 'Nereid' },
+      { id: 'tau', name: 'Tau' },
+      { id: 'wild-3', name: 'Wild 3' },
+      { id: 'zero', name: 'Zero' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  },
+
+  {
+
+    id: 'zero-divide-2-the-secret-wish',
+
+    name: "Zero Divide 2: The Secret Wish",
+
+    developer: "Unknown",
+
+    releaseYear: 1995,
+
+    platform: "PlayStation",
+
+rosterCount: 10,
+
+        characters: [
+
+      
+      { id: 'cybershell', name: 'Cybershell' },
+      { id: 'draco', name: 'Draco' },
+      { id: 'eos', name: 'Eos' },
+      { id: 'galdon', name: 'Galdon' },
+      { id: 'nereid', name: 'Nereid' },
+      { id: 'tau', name: 'Tau' },
+      { id: 'wild-3', name: 'Wild 3' },
+      { id: 'zero', name: 'Zero' }
+    
+
+    ],
+
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
+  }
+];
