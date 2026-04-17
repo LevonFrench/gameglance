@@ -12,7 +12,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
 
     releaseYear: 1992,
 
-    platform: "Arcade, NeoGeo, SNES, Genesis",
+    platform: "Arcade, NeoGeo, SNES, Genesis, PC",
 
 rosterCount: 10,
 
@@ -43,7 +43,7 @@ rosterCount: 10,
 
     releaseYear: 1994,
 
-    platform: "Arcade, NeoGeo, SNES",
+    platform: "Arcade, NeoGeo, SNES, PC",
 
 rosterCount: 13,
 
@@ -77,7 +77,7 @@ rosterCount: 13,
 
     releaseYear: 1996,
 
-    platform: "Arcade, NeoGeo",
+    platform: "Arcade, NeoGeo, PC",
 
 rosterCount: 9,
 
@@ -107,7 +107,7 @@ rosterCount: 9,
 
     releaseYear: 1998,
 
-    platform: "Arcade",
+    platform: "Arcade, PC",
 
 rosterCount: 8,
 
@@ -170,7 +170,7 @@ rosterCount: 999,
 
     releaseYear: 1996,
 
-    platform: "Arcade, PS1",
+    platform: "Arcade, PS1, PC",
 
 rosterCount: 30,
 
@@ -221,7 +221,7 @@ rosterCount: 30,
 
     releaseYear: 1995,
 
-    platform: "Arcade, Saturn",
+    platform: "Arcade, Saturn, PC",
 
 rosterCount: 7,
 
@@ -364,7 +364,7 @@ rosterCount: 40,
 
     releaseYear: 1997,
 
-    platform: "Arcade, PS1",
+    platform: "Arcade, PS1, PC",
 
 rosterCount: 8,
 
@@ -393,7 +393,7 @@ rosterCount: 8,
 
     releaseYear: 1997,
 
-    platform: "Arcade PlayStation",
+    platform: "Arcade PlayStation, PC",
 
 rosterCount: 8,
 
@@ -426,7 +426,7 @@ rosterCount: 8,
 
     releaseYear: 1999,
 
-    platform: "Arcade, PS1",
+    platform: "Arcade, PS1, PC",
 
 rosterCount: 10,
 
@@ -457,7 +457,7 @@ rosterCount: 10,
 
     releaseYear: 2001,
 
-    platform: "Arcade, PS2",
+    platform: "Arcade, PS2, PC",
 
 rosterCount: 13,
 
@@ -491,7 +491,7 @@ rosterCount: 13,
 
     releaseYear: 2003,
 
-    platform: "PS2",
+    platform: "PS2, PC",
 
 rosterCount: 17,
 
@@ -529,7 +529,7 @@ rosterCount: 17,
 
     releaseYear: 1997,
 
-    platform: "Arcade PlayStation",
+    platform: "Arcade PlayStation, PC",
 
 rosterCount: 8,
 
@@ -570,7 +570,7 @@ rosterCount: 8,
 
     releaseYear: 1998,
 
-    platform: "Arcade",
+    platform: "Arcade, PC",
 
 rosterCount: 10,
 
@@ -600,7 +600,7 @@ rosterCount: 10,
     developer: "Capcom",
 
     releaseYear: 2004,
-    platform: "Arcade, PS2, Xbox",
+    platform: "Arcade, PS2, Xbox, PC",
 
 rosterCount: 19,
 
@@ -639,7 +639,7 @@ rosterCount: 19,
     developer: "Capcom",
 
     releaseYear: 2001,
-    platform: "Arcade, PS2, GC, Xbox, DC",
+    platform: "Arcade, PS2, GC, Xbox, DC, PC",
 
 rosterCount: 44,
 
@@ -703,7 +703,7 @@ rosterCount: 44,
     developer: "Capcom",
 
     releaseYear: 2001,
-    platform: "Arcade, PS1, DC",
+    platform: "Arcade, PS1, DC, PC",
 
 rosterCount: 29,
 
@@ -752,7 +752,7 @@ rosterCount: 29,
     developer: "Capcom",
 
     releaseYear: 1995,
-    platform: "Arcade, Saturn, PS1",
+    platform: "Arcade, Saturn, PS1, PC",
 
 rosterCount: 12,
 
@@ -784,7 +784,7 @@ rosterCount: 12,
     developer: "Capcom",
 
     releaseYear: 1994,
-    platform: "Arcade, PS1",
+    platform: "Arcade, PS1, PC",
 
 rosterCount: 11,
 
@@ -816,7 +816,7 @@ rosterCount: 11,
 
     releaseYear: 1996,
 
-    platform: "Arcade, Saturn, PS1",
+    platform: "Arcade, Saturn, PS1, PC",
 
 rosterCount: 10,
 
@@ -847,7 +847,7 @@ rosterCount: 10,
 
     releaseYear: 1999,
 
-    platform: "Arcade, DC, PS2",
+    platform: "Arcade, DC, PS2, PC",
 
 rosterCount: 14,
 
@@ -882,7 +882,7 @@ rosterCount: 14,
 
     releaseYear: 2001,
 
-    platform: "Xbox",
+    platform: "Xbox, PC",
 
 rosterCount: 17,
 
@@ -920,7 +920,7 @@ rosterCount: 17,
 
     releaseYear: 2005,
 
-    platform: "Xbox 360",
+    platform: "Xbox 360, PC",
 
 rosterCount: 22,
 
@@ -963,7 +963,7 @@ rosterCount: 22,
 
     releaseYear: 2012,
 
-    platform: "PS3, Xbox 360",
+    platform: "PS3, Xbox 360, PC",
 
 rosterCount: 29,
 
@@ -1157,7 +1157,7 @@ rosterCount: 37,
 
     releaseYear: 1992,
 
-    platform: "Arcade, NeoGeo, SNES, Genesis",
+    platform: "Arcade, NeoGeo, SNES, Genesis, PC",
 
 rosterCount: 11,
 
@@ -1189,7 +1189,7 @@ rosterCount: 11,
 
     releaseYear: 1995,
 
-    platform: "Arcade, NeoGeo, Saturn",
+    platform: "Arcade, NeoGeo, Saturn, PC",
 
 rosterCount: 12,
 
@@ -1222,7 +1222,7 @@ rosterCount: 12,
 
     releaseYear: 1993,
 
-    platform: "Arcade, NeoGeo, SNES, Genesis",
+    platform: "Arcade, NeoGeo, SNES, Genesis, PC",
 
 rosterCount: 16,
 
@@ -1298,7 +1298,7 @@ rosterCount: 18,
 
     releaseYear: 1991,
 
-    platform: "Arcade, NeoGeo, SNES, Genesis",
+    platform: "Arcade, NeoGeo, SNES, Genesis, PC",
 
 rosterCount: 11,
 
@@ -1329,7 +1329,7 @@ rosterCount: 11,
     developer: "Sega",
 
     releaseYear: 1996,
-    platform: "Saturn",
+    platform: "Saturn, PC",
 
 rosterCount: 14,
 
@@ -1399,7 +1399,7 @@ rosterCount: 14,
 
     releaseYear: 1995,
 
-    platform: "Arcade, Saturn",
+    platform: "Arcade, Saturn, PC",
 
 rosterCount: 7,
 
@@ -1427,7 +1427,7 @@ rosterCount: 7,
 
     releaseYear: 1998,
 
-    platform: "Arcade, DC",
+    platform: "Arcade, DC, PC",
 
 rosterCount: 9,
 
@@ -1457,7 +1457,7 @@ rosterCount: 9,
 
     releaseYear: 2005,
 
-    platform: "Arcade, PS2",
+    platform: "Arcade, PS2, PC",
 
 rosterCount: 10,
 
@@ -1488,7 +1488,7 @@ rosterCount: 10,
 
     releaseYear: 1995,
 
-    platform: "Arcade, NeoGeo, Saturn, PS1",
+    platform: "Arcade, NeoGeo, Saturn, PS1, PC",
 
 rosterCount: 9,
 
@@ -1517,7 +1517,7 @@ rosterCount: 9,
     developer: "SNK",
 
     releaseYear: 1999,
-    platform: "Arcade, NeoGeo, DC, PS2",
+    platform: "Arcade, NeoGeo, DC, PS2, PC",
 
 rosterCount: 14,
 
@@ -1552,7 +1552,7 @@ rosterCount: 14,
 
     releaseYear: 1995,
 
-    platform: "Arcade, Saturn",
+    platform: "Arcade, Saturn, PC",
 
 rosterCount: 8,
 
@@ -1616,7 +1616,7 @@ rosterCount: 14,
 
     releaseYear: 1997,
 
-    platform: "Arcade Sega Saturn",
+    platform: "Arcade Sega Saturn, PC",
 
 rosterCount: 14,
 
@@ -1653,7 +1653,7 @@ rosterCount: 14,
 
     releaseYear: 1997,
 
-    platform: "Arcade, Saturn",
+    platform: "Arcade, Saturn, PC",
 
 rosterCount: 12,
 
@@ -1686,7 +1686,7 @@ rosterCount: 12,
 
     releaseYear: 1998,
 
-    platform: "PS1",
+    platform: "PS1, PC",
 
 rosterCount: 12,
 
@@ -1764,7 +1764,7 @@ rosterCount: 24,
 
     releaseYear: 2000,
 
-    platform: "Arcade, DC, PS2",
+    platform: "Arcade, DC, PS2, PC",
 
 rosterCount: 16,
 
@@ -1958,7 +1958,7 @@ rosterCount: 7,
 
     releaseYear: 1999,
 
-    platform: "Arcade Sega Dreamcast PlayStation",
+    platform: "Arcade Sega Dreamcast PlayStation, PC",
 
 rosterCount: 15,
 
@@ -1998,7 +1998,7 @@ rosterCount: 15,
 
     releaseYear: 2002,
 
-    platform: "Xbox",
+    platform: "Xbox, PC",
 
 rosterCount: 8,
 
@@ -2027,7 +2027,7 @@ rosterCount: 8,
 
     releaseYear: 1994,
 
-    platform: "Jaguar",
+    platform: "Jaguar, PC",
 
 rosterCount: 9,
 
@@ -2174,7 +2174,7 @@ rosterCount: 999,
     developer: "SNK",
 
     releaseYear: 1996,
-    platform: "Arcade, NeoGeo",
+    platform: "Arcade, NeoGeo, PC",
 
 rosterCount: 8,
 
@@ -2203,7 +2203,7 @@ rosterCount: 8,
 
     releaseYear: 1996,
 
-    platform: "Arcade, Saturn, PS1",
+    platform: "Arcade, Saturn, PS1, PC",
 
 rosterCount: 8,
 
@@ -2231,7 +2231,7 @@ rosterCount: 8,
     developer: "Capcom",
 
     releaseYear: 1995,
-    platform: "Arcade, Saturn, PS1",
+    platform: "Arcade, Saturn, PS1, PC",
 
 rosterCount: 12,
 
@@ -2331,7 +2331,7 @@ rosterCount: 7,
 
     releaseYear: 2000,
 
-    platform: "Arcade, DC, PS2, Xbox",
+    platform: "Arcade, DC, PS2, Xbox, PC",
 
 rosterCount: 39,
 
@@ -2390,7 +2390,7 @@ rosterCount: 39,
 
     releaseYear: 1998,
 
-    platform: "Arcade, PS1, DC",
+    platform: "Arcade, PS1, DC, PC",
 
 rosterCount: 14,
 
@@ -2470,7 +2470,7 @@ rosterCount: 24,
 
     releaseYear: 2003,
 
-    platform: "Neo Geo Arcade PlayStation 2",
+    platform: "Neo Geo Arcade PlayStation 2, PC",
 
 rosterCount: 999,
 
@@ -2513,7 +2513,7 @@ rosterCount: 999,
 
     releaseYear: 2011,
 
-    platform: "PlayStation 3 Xbox 360 Windows",
+    platform: "PlayStation 3 Xbox 360 Windows, PC",
 
 rosterCount: 999,
 
@@ -2616,7 +2616,7 @@ rosterCount: 25,
 
     releaseYear: 1993,
 
-    platform: "Arcade, SNES, Genesis, PS1",
+    platform: "Arcade, SNES, Genesis, PS1, PC",
 
 rosterCount: 14,
 
@@ -2706,7 +2706,7 @@ rosterCount: 32,
 
     releaseYear: 2004,
 
-    platform: "PS2, Xbox, GC",
+    platform: "PS2, Xbox, GC, PC",
 
 rosterCount: 21,
 
@@ -2747,7 +2747,7 @@ rosterCount: 21,
     developer: "Capcom",
 
     releaseYear: 1995,
-    platform: "Arcade, Saturn",
+    platform: "Arcade, Saturn, PC",
 
 rosterCount: 14,
 
@@ -2782,7 +2782,7 @@ rosterCount: 14,
 
     releaseYear: 1996,
 
-    platform: "Neo Geo Arcade PlayStation 1",
+    platform: "Neo Geo Arcade PlayStation 1, PC",
 
 rosterCount: 999,
 
@@ -2858,7 +2858,7 @@ rosterCount: 20,
 
     releaseYear: 1998,
 
-    platform: "Arcade, DC",
+    platform: "Arcade, DC, PC",
 
 rosterCount: 13,
 
@@ -2892,7 +2892,7 @@ rosterCount: 13,
 
     releaseYear: 1997,
 
-    platform: "Arcade PlayStation Sega Saturn",
+    platform: "Arcade PlayStation Sega Saturn, PC",
 
 rosterCount: 999,
 
@@ -2929,7 +2929,7 @@ rosterCount: 999,
 
     releaseYear: 1994,
 
-    platform: "Arcade, Genesis, SNES",
+    platform: "Arcade, Genesis, SNES, PC",
 
 rosterCount: 7,
 
@@ -2987,7 +2987,7 @@ rosterCount: 7,
 
     releaseYear: 2000,
 
-    platform: "Arcade Sega Dreamcast",
+    platform: "Arcade Sega Dreamcast, PC",
 
 rosterCount: 999,
 
@@ -3028,7 +3028,7 @@ rosterCount: 999,
 
     releaseYear: 1996,
 
-    platform: "Arcade, PS1",
+    platform: "Arcade, PS1, PC",
 
 rosterCount: 10,
 
@@ -3059,7 +3059,7 @@ rosterCount: 10,
 
     releaseYear: 1998,
 
-    platform: "Arcade, DC",
+    platform: "Arcade, DC, PC",
 
 rosterCount: 13,
 
@@ -3093,7 +3093,7 @@ rosterCount: 13,
 
     releaseYear: 2002,
 
-    platform: "Arcade, NeoGeo",
+    platform: "Arcade, NeoGeo, PC",
 
 rosterCount: 13,
 
@@ -3127,7 +3127,7 @@ rosterCount: 13,
 
     releaseYear: 1996,
 
-    platform: "Arcade, NeoGeo, Saturn",
+    platform: "Arcade, NeoGeo, Saturn, PC",
 
 rosterCount: 8,
 
@@ -3155,7 +3155,7 @@ rosterCount: 8,
     developer: "SNK",
 
     releaseYear: 1995,
-    platform: "Arcade, NeoGeo, Saturn, PS1",
+    platform: "Arcade, NeoGeo, Saturn, PS1, PC",
 
 rosterCount: 16,
 
@@ -3191,7 +3191,7 @@ rosterCount: 16,
     developer: "SNK",
 
     releaseYear: 1998,
-    platform: "Arcade, NeoGeo, DC, PS2",
+    platform: "Arcade, NeoGeo, DC, PS2, PC",
 
 rosterCount: 19,
 
@@ -3230,7 +3230,7 @@ rosterCount: 19,
     developer: "SNK",
 
     releaseYear: 1997,
-    platform: "Arcade, NeoGeo, Saturn, PS1",
+    platform: "Arcade, NeoGeo, Saturn, PS1, PC",
 
 rosterCount: 19,
 
@@ -3362,7 +3362,7 @@ rosterCount: 999,
     developer: "SNK",
 
     releaseYear: 1994,
-    platform: "Arcade, NeoGeo, Saturn, PS1",
+    platform: "Arcade, NeoGeo, Saturn, PS1, PC",
 
 rosterCount: 15,
 
@@ -3397,7 +3397,7 @@ rosterCount: 15,
     developer: "SNK",
 
     releaseYear: 1995,
-    platform: "Arcade, NeoGeo, Saturn, PS1",
+    platform: "Arcade, NeoGeo, Saturn, PS1, PC",
 
 rosterCount: 11,
 
@@ -3422,7 +3422,7 @@ rosterCount: 11,
   {
     id: 'samurai-shodown-iv-amakusas-revenge',
     releaseYear: 1996,
-    platform: "Arcade, NeoGeo, Saturn, PS1",
+    platform: "Arcade, NeoGeo, Saturn, PS1, PC",
     name: "Samurai Shodown IV: Amakusa's Revenge",
     isDraft: true,
     rosterCount: 16,
@@ -3455,7 +3455,7 @@ rosterCount: 11,
     developer: "SNK",
 
     releaseYear: 2003,
-    platform: "Arcade, NeoGeo, PS2, Xbox",
+    platform: "Arcade, NeoGeo, PS2, Xbox, PC",
 
 rosterCount: 19,
 
@@ -3494,7 +3494,7 @@ rosterCount: 19,
     developer: "SNK",
 
     releaseYear: 2004,
-    platform: "Arcade, NeoGeo",
+    platform: "Arcade, NeoGeo, PC",
 
 rosterCount: 1,
 
@@ -3516,7 +3516,7 @@ rosterCount: 1,
 
     releaseYear: 1995,
 
-    platform: "Neo Geo Arcade PlayStation",
+    platform: "Neo Geo Arcade PlayStation, PC",
 
 rosterCount: 11,
 
@@ -3587,7 +3587,7 @@ rosterCount: 16,
     developer: "Capcom",
 
     releaseYear: 2003,
-    platform: "Arcade, PS2, Xbox",
+    platform: "Arcade, PS2, Xbox, PC",
 
 rosterCount: 37,
 
@@ -3645,7 +3645,7 @@ rosterCount: 37,
 
     releaseYear: 1998,
 
-    platform: "Arcade Sega Dreamcast",
+    platform: "Arcade Sega Dreamcast, PC",
 
 rosterCount: 10,
 
@@ -3687,7 +3687,7 @@ rosterCount: 10,
 
     releaseYear: 1995,
 
-    platform: "Arcade, PS1",
+    platform: "Arcade, PS1, PC",
 
 rosterCount: 10,
 
@@ -3763,7 +3763,7 @@ rosterCount: 22,
 
     releaseYear: 2023,
 
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
+    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade, PC",
 
 rosterCount: 999,
 
@@ -3800,7 +3800,7 @@ rosterCount: 999,
 
     releaseYear: 1996,
 
-    platform: "Arcade, PS1, Saturn, SNES",
+    platform: "Arcade, PS1, Saturn, SNES, PC",
 
 rosterCount: 19,
 
@@ -3840,7 +3840,7 @@ rosterCount: 19,
 
     releaseYear: 1998,
 
-    platform: "Arcade, PS1, Saturn, DC, PSP, GBA",
+    platform: "Arcade, PS1, Saturn, DC, PSP, GBA, PC",
 
 rosterCount: 37,
 
@@ -3898,7 +3898,7 @@ rosterCount: 37,
 
     releaseYear: 2000,
 
-    platform: "PS2",
+    platform: "PS2, PC",
 
 rosterCount: 21,
 
@@ -3940,7 +3940,7 @@ rosterCount: 21,
 
     releaseYear: 2023,
 
-    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade",
+    platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade, PC",
 
 rosterCount: 999,
 
@@ -3978,7 +3978,7 @@ rosterCount: 999,
 
     releaseYear: 1997,
 
-    platform: "Arcade",
+    platform: "Arcade, PC",
 
 rosterCount: 11,
 
@@ -4073,7 +4073,7 @@ rosterCount: 43,
     developer: "Capcom",
 
     releaseYear: 1994,
-    platform: "Arcade, 3DO",
+    platform: "Arcade, 3DO, PC",
 
 rosterCount: 17,
 
@@ -4150,7 +4150,7 @@ rosterCount: 999,
 
     releaseYear: 2003,
 
-    platform: "Xbox",
+    platform: "Xbox, PC",
 
 rosterCount: 8,
 
@@ -4179,7 +4179,7 @@ rosterCount: 8,
 
     releaseYear: 2010,
 
-    platform: "Arcade, Wii",
+    platform: "Arcade, Wii, PC",
 
 rosterCount: 23,
 
@@ -4223,7 +4223,7 @@ rosterCount: 23,
 
     releaseYear: 1994,
 
-    platform: "Arcade PlayStation",
+    platform: "Arcade PlayStation, PC",
 
 rosterCount: 17,
 
@@ -4263,7 +4263,7 @@ rosterCount: 17,
 
     releaseYear: 1995,
 
-    platform: "Arcade, PS1",
+    platform: "Arcade, PS1, PC",
 
 rosterCount: 21,
 
@@ -4452,7 +4452,7 @@ rosterCount: 31,
 
     releaseYear: 1994,
 
-    platform: "Arcade, NeoGeo",
+    platform: "Arcade, NeoGeo, PC",
 
 rosterCount: 24,
 
@@ -4497,7 +4497,7 @@ rosterCount: 24,
 
     releaseYear: 2000,
 
-    platform: "Arcade, NeoGeo, PS2, DC",
+    platform: "Arcade, NeoGeo, PS2, DC, PC",
 
 rosterCount: 33,
 
@@ -4551,7 +4551,7 @@ rosterCount: 33,
 
     releaseYear: 2001,
 
-    platform: "Arcade, NeoGeo, PS2, DC",
+    platform: "Arcade, NeoGeo, PS2, DC, PC",
 
 rosterCount: 34,
 
@@ -4605,7 +4605,7 @@ rosterCount: 34,
 
     releaseYear: 2002,
 
-    platform: "Arcade, NeoGeo, PS2, DC, Xbox",
+    platform: "Arcade, NeoGeo, PS2, DC, Xbox, PC",
 
 rosterCount: 39,
 
@@ -4664,7 +4664,7 @@ rosterCount: 39,
 
     releaseYear: 2003,
 
-    platform: "Arcade, NeoGeo, PS2, Xbox",
+    platform: "Arcade, NeoGeo, PS2, Xbox, PC",
 
 rosterCount: 30,
 
@@ -4904,7 +4904,7 @@ rosterCount: 48,
 
     releaseYear: 2004,
 
-    platform: "PS2, Xbox",
+    platform: "PS2, Xbox, PC",
 
 rosterCount: 19,
 
@@ -4944,7 +4944,7 @@ rosterCount: 19,
 
     releaseYear: 2006,
 
-    platform: "PS2",
+    platform: "PS2, PC",
 
 rosterCount: 17,
 
@@ -4975,7 +4975,7 @@ rosterCount: 17,
   {
     id: 'the-king-of-fighters-maximum-impact-regulation-a',
     releaseYear: 2007,
-    platform: "Arcade, PS2",
+    platform: "Arcade, PS2, PC",
     name: "The King of Fighters: Maximum Impact Regulation 'A'",
     isDraft: true,
     rosterCount: 5,
@@ -4997,7 +4997,7 @@ rosterCount: 17,
     developer: "SNK",
 
     releaseYear: 1997,
-    platform: "Arcade, NeoGeo, PS1, Saturn",
+    platform: "Arcade, NeoGeo, PS1, Saturn, PC",
 
 rosterCount: 12,
 
@@ -5029,7 +5029,7 @@ rosterCount: 12,
     developer: "SNK",
 
     releaseYear: 1998,
-    platform: "Arcade, NeoGeo, DC, PS2",
+    platform: "Arcade, NeoGeo, DC, PS2, PC",
 
 rosterCount: 19,
 
@@ -5140,7 +5140,7 @@ rosterCount: 50,
 
     releaseYear: 1995,
 
-    platform: "Arcade, SNES, Genesis, Saturn",
+    platform: "Arcade, SNES, Genesis, Saturn, PC",
 
 rosterCount: 22,
 
@@ -5245,7 +5245,7 @@ rosterCount: 41,
 
     releaseYear: 2024,
 
-    platform: "Windows PlayStation 4 PlayStation 5",
+    platform: "Windows PlayStation 4 PlayStation 5, PC",
 
 rosterCount: 999,
 
@@ -5296,7 +5296,7 @@ rosterCount: 999,
 
     releaseYear: 1997,
 
-    platform: "Arcade",
+    platform: "Arcade, PC",
 
 rosterCount: 999,
 
@@ -5333,7 +5333,7 @@ rosterCount: 999,
 
     releaseYear: 1997,
 
-    platform: "Arcade Sega Saturn PlayStation",
+    platform: "Arcade Sega Saturn PlayStation, PC",
 
 rosterCount: 999,
 
@@ -5373,7 +5373,7 @@ rosterCount: 999,
 
     releaseYear: 1997,
 
-    platform: "Arcade Sega Saturn PlayStation",
+    platform: "Arcade Sega Saturn PlayStation, PC",
 
 rosterCount: 999,
 
@@ -5413,7 +5413,7 @@ rosterCount: 999,
 
     releaseYear: 1993,
 
-    platform: "Arcade Sega Saturn Sega 32X",
+    platform: "Arcade Sega Saturn Sega 32X, PC",
 
 rosterCount: 999,
 
@@ -5446,7 +5446,7 @@ rosterCount: 999,
 
     releaseYear: 1994,
 
-    platform: "Arcade, Saturn, PS1",
+    platform: "Arcade, Saturn, PS1, PC",
 
 rosterCount: 10,
 
@@ -5477,7 +5477,7 @@ rosterCount: 10,
 
     releaseYear: 1996,
 
-    platform: "Arcade, Saturn",
+    platform: "Arcade, Saturn, PC",
 
 rosterCount: 12,
 
@@ -5510,7 +5510,7 @@ rosterCount: 12,
 
     releaseYear: 2001,
 
-    platform: "Arcade, PS2",
+    platform: "Arcade, PS2, PC",
 
 rosterCount: 14,
 
@@ -5545,7 +5545,7 @@ rosterCount: 14,
 
     releaseYear: 2021,
 
-    platform: "PS4",
+    platform: "PS4, PC",
 
 rosterCount: 19,
 
@@ -5585,7 +5585,7 @@ rosterCount: 19,
 
     releaseYear: 1995,
 
-    platform: "Neo Geo Arcade PlayStation",
+    platform: "Neo Geo Arcade PlayStation, PC",
 
 rosterCount: 12,
 
@@ -5621,7 +5621,7 @@ rosterCount: 12,
     developer: "Sunsoft",
 
     releaseYear: 1996,
-    platform: "Arcade, NeoGeo, Saturn",
+    platform: "Arcade, NeoGeo, Saturn, PC",
 
 rosterCount: 9,
 
@@ -5651,7 +5651,7 @@ rosterCount: 9,
 
     releaseYear: 1994,
 
-    platform: "3DO",
+    platform: "3DO, PC",
 
 rosterCount: 8,
 
@@ -5680,7 +5680,7 @@ rosterCount: 8,
 
     releaseYear: 1992,
 
-    platform: "Arcade, NeoGeo",
+    platform: "Arcade, NeoGeo, PC",
 
 rosterCount: 8,
 
@@ -5709,7 +5709,7 @@ rosterCount: 8,
 
     releaseYear: 1993,
 
-    platform: "Arcade, NeoGeo",
+    platform: "Arcade, NeoGeo, PC",
 
 rosterCount: 14,
 
@@ -5744,7 +5744,7 @@ rosterCount: 14,
 
     releaseYear: 1994,
 
-    platform: "Arcade, NeoGeo, GB",
+    platform: "Arcade, NeoGeo, GB, PC",
 
 rosterCount: 7,
 
@@ -5772,7 +5772,7 @@ rosterCount: 7,
 
     releaseYear: 1995,
 
-    platform: "Arcade, NeoGeo, Saturn",
+    platform: "Arcade, NeoGeo, Saturn, PC",
 
 rosterCount: 7,
 
@@ -5799,7 +5799,7 @@ rosterCount: 7,
     developer: "Capcom",
 
     releaseYear: 1996,
-    platform: "Arcade, Saturn, PS1",
+    platform: "Arcade, Saturn, PS1, PC",
 
 rosterCount: 18,
 
@@ -5837,7 +5837,7 @@ rosterCount: 18,
     developer: "Capcom",
 
     releaseYear: 1994,
-    platform: "Arcade, Saturn, PS1",
+    platform: "Arcade, Saturn, PS1, PC",
 
 rosterCount: 12,
 
@@ -5870,7 +5870,7 @@ rosterCount: 12,
 
     releaseYear: 1995,
 
-    platform: "Arcade, PS1",
+    platform: "Arcade, PS1, PC",
 
 rosterCount: 8,
 
@@ -5899,7 +5899,7 @@ rosterCount: 8,
 
     releaseYear: 1997,
 
-    platform: "PS1",
+    platform: "PS1, PC",
 
 rosterCount: 8,
 
@@ -5921,7 +5921,7 @@ rosterCount: 8,
   {
     id: 'red-earth-warzard',
     releaseYear: 1996,
-    platform: "Arcade",
+    platform: "Arcade, PC",
     name: "Red Earth (Warzard)",
     isDraft: true,
     rosterCount: 10,
@@ -5942,7 +5942,7 @@ rosterCount: 8,
   {
     id: 'dragon-ball-z-budokai-3',
     releaseYear: 2004,
-    platform: "PS2",
+    platform: "PS2, PC",
     name: "Dragon Ball Z: Budokai 3",
     isDraft: true,
     rosterCount: 37,
@@ -5990,7 +5990,7 @@ rosterCount: 8,
   {
     id: 'dragon-ball-z-budokai-tenkaichi-3',
     releaseYear: 2007,
-    platform: "PS2, Wii",
+    platform: "PS2, Wii, PC",
     name: "Dragon Ball Z: Budokai Tenkaichi 3",
     isDraft: true,
     rosterCount: 95,
@@ -6098,7 +6098,7 @@ rosterCount: 8,
   {
     id: 'guilty-gear-2-overture',
     releaseYear: 2007,
-    platform: "Xbox 360",
+    platform: "Xbox 360, PC",
     name: "Guilty Gear 2: Overture",
     isDraft: true,
     rosterCount: 7,
@@ -6234,7 +6234,7 @@ rosterCount: 8,
   {
     id: 'mortal-kombat-3',
     releaseYear: 1995,
-    platform: "Arcade, SNES, Genesis, PS1",
+    platform: "Arcade, SNES, Genesis, PS1, PC",
     notationSystem: 'mk',
     name: 'Mortal Kombat 3",
     isDraft: true,
@@ -6261,7 +6261,7 @@ rosterCount: 8,
   {
     id: 'mortal-kombat-4',
     releaseYear: 1997,
-    platform: "Arcade, PS1, N64",
+    platform: "Arcade, PS1, N64, PC",
     notationSystem: 'mk',
     name: 'Mortal Kombat 4",
     isDraft: true,
@@ -6291,7 +6291,7 @@ rosterCount: 8,
   {
     id: 'mortal-kombat-deadly-alliance',
     releaseYear: 2002,
-    platform: "PS2, Xbox, GC",
+    platform: "PS2, Xbox, GC, PC",
     notationSystem: 'mk',
     name: 'Mortal Kombat: Deadly Alliance",
     isDraft: true,
@@ -6327,7 +6327,7 @@ rosterCount: 8,
   {
     id: 'mortal-kombat-armageddon',
     releaseYear: 2006,
-    platform: "PS2, Xbox, Wii",
+    platform: "PS2, Xbox, Wii, PC",
     notationSystem: 'mk',
     name: 'Mortal Kombat: Armageddon",
     isDraft: true,
@@ -6451,7 +6451,7 @@ rosterCount: 8,
   {
     id: 'samurai-shodown-iv-amakusas-revenge',
     releaseYear: 1996,
-    platform: "Arcade, NeoGeo, Saturn, PS1",
+    platform: "Arcade, NeoGeo, Saturn, PS1, PC",
     name: "Samurai Shodown IV: Amakusa's Revenge",
     isDraft: true,
     rosterCount: 16,
@@ -6478,7 +6478,7 @@ rosterCount: 8,
   {
     id: 'soulcalibur',
     releaseYear: 1998,
-    platform: "Arcade, DC",
+    platform: "Arcade, DC, PC",
     name: "SoulCalibur",
     isDraft: true,
     rosterCount: 17,
@@ -6506,7 +6506,7 @@ rosterCount: 8,
   {
     id: 'soulcalibur-ii',
     releaseYear: 2002,
-    platform: "Arcade, PS2, Xbox, GC",
+    platform: "Arcade, PS2, Xbox, GC, PC",
     name: "SoulCalibur II",
     isDraft: true,
     rosterCount: 21,
@@ -6538,7 +6538,7 @@ rosterCount: 8,
   {
     id: 'soulcalibur-iii',
     releaseYear: 2005,
-    platform: "PS2",
+    platform: "PS2, PC",
     name: "SoulCalibur III",
     isDraft: true,
     rosterCount: 40,
@@ -6589,7 +6589,7 @@ rosterCount: 8,
   {
     id: 'soulcalibur-iv',
     releaseYear: 2008,
-    platform: "PS3, Xbox 360",
+    platform: "PS3, Xbox 360, PC",
     name: "SoulCalibur IV",
     isDraft: true,
     rosterCount: 28,
@@ -6628,7 +6628,7 @@ rosterCount: 8,
   {
     id: 'soulcalibur-v',
     releaseYear: 2012,
-    platform: "PS3, Xbox 360",
+    platform: "PS3, Xbox 360, PC",
     name: "SoulCalibur V",
     isDraft: true,
     rosterCount: 25,
@@ -6704,7 +6704,7 @@ rosterCount: 8,
   {
     id: 'street-fighter-ii-champion-edition',
     releaseYear: 1992,
-    platform: "Arcade, SNES, Genesis",
+    platform: "Arcade, SNES, Genesis, PC",
     name: "Street Fighter II: Champion Edition",
     isDraft: true,
     rosterCount: 12,
@@ -6727,7 +6727,7 @@ rosterCount: 8,
   {
     id: 'street-fighter-ii-hyper-fighting',
     releaseYear: 1992,
-    platform: "Arcade, SNES, Genesis",
+    platform: "Arcade, SNES, Genesis, PC",
     name: "Street Fighter II: Hyper Fighting",
     isDraft: true,
     rosterCount: 12,
@@ -6750,7 +6750,7 @@ rosterCount: 8,
   {
     id: 'hyper-street-fighter-ii-the-anniversary-edition',
     releaseYear: 2003,
-    platform: "Arcade, PS2",
+    platform: "Arcade, PS2, PC",
     name: "Hyper Street Fighter II: The Anniversary Edition",
     isDraft: true,
     rosterCount: 16,
@@ -6777,7 +6777,7 @@ rosterCount: 8,
   {
     id: 'street-fighter-alpha-warriors-dreams',
     releaseYear: 1995,
-    platform: "Arcade, PS1, Saturn",
+    platform: "Arcade, PS1, Saturn, PC",
     name: "Street Fighter Alpha: Warriors' Dreams",
     isDraft: true,
     rosterCount: 12,
@@ -6800,7 +6800,7 @@ rosterCount: 8,
   {
     id: 'street-fighter-iii-3rd-strike---fight-for-the-future',
     releaseYear: 1999,
-    platform: "Arcade, DC, PS2, Xbox",
+    platform: "Arcade, DC, PS2, Xbox, PC",
     name: "Street Fighter III: 3rd Strike - Fight for the Future",
     isDraft: true,
     rosterCount: 19,
@@ -6866,7 +6866,7 @@ rosterCount: 8,
   {
     id: 'super-street-fighter-iv',
     releaseYear: 2010,
-    platform: "PS3, Xbox 360, 3DS",
+    platform: "PS3, Xbox 360, 3DS, PC",
     name: "Super Street Fighter IV",
     isDraft: true,
     rosterCount: 35,
@@ -6912,7 +6912,7 @@ rosterCount: 8,
   {
     id: 'tekken-3',
     releaseYear: 1997,
-    platform: "Arcade, PS1",
+    platform: "Arcade, PS1, PC",
     name: 'Tekken 3",
     isDraft: true,
     rosterCount: 22,
@@ -6945,7 +6945,7 @@ rosterCount: 8,
   {
     id: 'tekken-tag-tournament',
     releaseYear: 1999,
-    platform: "Arcade, PS2",
+    platform: "Arcade, PS2, PC",
     name: 'Tekken Tag Tournament",
     isDraft: true,
     rosterCount: 34,
@@ -6990,7 +6990,7 @@ rosterCount: 8,
   {
     id: 'tekken-4',
     releaseYear: 2001,
-    platform: "PS2",
+    platform: "PS2, PC",
     name: 'Tekken 4",
     isDraft: true,
     rosterCount: 22,
@@ -7023,7 +7023,7 @@ rosterCount: 8,
   {
     id: 'tekken-5',
     releaseYear: 2004,
-    platform: "PS2",
+    platform: "PS2, PC",
     name: 'Tekken 5",
     isDraft: true,
     rosterCount: 32,
@@ -7066,7 +7066,7 @@ rosterCount: 8,
   {
     id: 'tekken-6',
     releaseYear: 2007,
-    platform: "Arcade, PS3, Xbox 360",
+    platform: "Arcade, PS3, Xbox 360, PC",
     name: 'Tekken 6",
     isDraft: true,
     rosterCount: 41,
@@ -7118,7 +7118,7 @@ rosterCount: 8,
   {
     id: 'tekken-tag-tournament-2',
     releaseYear: 2011,
-    platform: "Arcade, PS3, Xbox 360, Wii U",
+    platform: "Arcade, PS3, Xbox 360, Wii U, PC",
     name: 'Tekken Tag Tournament 2",
     isDraft: true,
     rosterCount: 52,
@@ -7243,7 +7243,7 @@ rosterCount: 8,
   {
     id: 'the-king-of-fighters-95',
     releaseYear: 1995,
-    platform: "Arcade, NeoGeo, PS1, Saturn",
+    platform: "Arcade, NeoGeo, PS1, Saturn, PC",
     name: "The King of Fighters '95",
     isDraft: true,
     rosterCount: 27,
@@ -7281,7 +7281,7 @@ rosterCount: 8,
   {
     id: 'the-king-of-fighters-96',
     releaseYear: 1996,
-    platform: "Arcade, NeoGeo, PS1, Saturn",
+    platform: "Arcade, NeoGeo, PS1, Saturn, PC",
     name: "The King of Fighters '96",
     isDraft: true,
     rosterCount: 26,
@@ -7318,7 +7318,7 @@ rosterCount: 8,
   {
     id: 'the-king-of-fighters-97',
     releaseYear: 1997,
-    platform: "Arcade, NeoGeo, PS1, Saturn",
+    platform: "Arcade, NeoGeo, PS1, Saturn, PC",
     name: "The King of Fighters '97",
     isDraft: true,
     rosterCount: 31,
@@ -7360,7 +7360,7 @@ rosterCount: 8,
   {
     id: 'the-king-of-fighters-98',
     releaseYear: 1998,
-    platform: "Arcade, NeoGeo, PS1, Saturn",
+    platform: "Arcade, NeoGeo, PS1, Saturn, PC",
     name: "The King of Fighters '98",
     isDraft: true,
     rosterCount: 34,
@@ -7405,7 +7405,7 @@ rosterCount: 8,
   {
     id: 'the-king-of-fighters-99',
     releaseYear: 1999,
-    platform: "Arcade, NeoGeo, PS1, DC",
+    platform: "Arcade, NeoGeo, PS1, DC, PC",
     name: "The King of Fighters '99",
     isDraft: true,
     rosterCount: 28,
@@ -7444,7 +7444,7 @@ rosterCount: 8,
   {
     id: 'the-king-of-fighters-xi',
     releaseYear: 2005,
-    platform: "Arcade, PS2",
+    platform: "Arcade, PS2, PC",
     name: "The King of Fighters XI",
     isDraft: true,
     rosterCount: 45,
@@ -7500,7 +7500,7 @@ rosterCount: 8,
   {
     id: 'the-king-of-fighters-xii',
     releaseYear: 2009,
-    platform: "Arcade, PS3, Xbox 360",
+    platform: "Arcade, PS3, Xbox 360, PC",
     name: "The King of Fighters XII",
     isDraft: true,
     rosterCount: 22,
@@ -7533,7 +7533,7 @@ rosterCount: 8,
   {
     id: 'the-king-of-fighters-maximum-impact-regulation-a',
     releaseYear: 2007,
-    platform: "Arcade, PS2",
+    platform: "Arcade, PS2, PC",
     name: "The King of Fighters: Maximum Impact Regulation 'A'",
     isDraft: true,
     rosterCount: 5,
@@ -7549,7 +7549,7 @@ rosterCount: 8,
   {
     id: 'clayfighter',
     releaseYear: 1993,
-    platform: "SNES, Genesis",
+    platform: "SNES, Genesis, PC",
     name: "ClayFighter",
     isDraft: true,
     rosterCount: 8,
@@ -7568,7 +7568,7 @@ rosterCount: 8,
   {
     id: 'eternal-champions',
     releaseYear: 1993,
-    platform: "Genesis",
+    platform: "Genesis, PC",
     name: "Eternal Champions",
     isDraft: true,
     rosterCount: 23,
@@ -7722,7 +7722,7 @@ rosterCount: 8,
   {
     id: 'super-smash-bros',
     releaseYear: 1999,
-    platform: "N64",
+    platform: "N64, PC",
     name: "Super Smash Bros.",
     isDraft: true,
     rosterCount: 12,
@@ -7745,7 +7745,7 @@ rosterCount: 8,
   {
     id: 'super-smash-bros-melee',
     releaseYear: 2001,
-    platform: "GC",
+    platform: "GC, PC",
     name: "Super Smash Bros. Melee",
     isDraft: true,
     rosterCount: 26,
@@ -7782,7 +7782,7 @@ rosterCount: 8,
   {
     id: 'super-smash-bros-brawl',
     releaseYear: 2008,
-    platform: "Wii",
+    platform: "Wii, PC",
     name: "Super Smash Bros. Brawl",
     isDraft: true,
     rosterCount: 39,
@@ -7864,7 +7864,7 @@ rosterCount: 8,
     name: "WeaponLord",
     isDraft: true,
     releaseYear: 1995,
-    platform: "SNES, Genesis",
+    platform: "SNES, Genesis, PC",
     rosterCount: 8,
     characters: [
       { id: 'bane', name: 'Bane' },
@@ -7995,8 +7995,11 @@ rosterCount: 8,
   },
   {
     id: 'rival-schools-united-by-fate',
-    name: "Rival Schools United by Fate",
-    isDraft: true,
+    name: 'Rival Schools: United by Fate',
+    developer: 'Capcom',
+    releaseYear: 1997,
+    platform: 'Arcade, PlayStation, PC',
+    rosterCount: 20,
     characters: [
       { id: 'batsu-ichimonji', name: 'Batsu Ichimonji' },
       { id: 'hinata-wakaba', name: 'Hinata Wakaba' },
@@ -8004,17 +8007,20 @@ rosterCount: 8,
       { id: 'shoma-sawamura', name: 'Shoma Sawamura' },
       { id: 'natsu-ayuhara', name: 'Natsu Ayuhara' },
       { id: 'roberto-miura', name: 'Roberto Miura' },
-      { id: 'akira-kazama', name: 'Akira Kazama' },
-      { id: 'edge-eiji-yamada', name: 'Edge (Eiji Yamada)' },
-      { id: 'gan-isurugi', name: 'Gan Isurugi' },
       { id: 'roy-bromwell', name: 'Roy Bromwell' },
       { id: 'tiffany-lords', name: 'Tiffany Lords' },
+      { id: 'akira-kazama', name: 'Akira Kazama' },
+      { id: 'sakura-kasugano', name: 'Sakura Kasugano' },
+      { id: 'edge', name: 'Edge' },
+      { id: 'gan-isurugi', name: 'Gan Isurugi' },
+      { id: 'daigo-kazama', name: 'Daigo Kazama' },
       { id: 'boman-delgado', name: 'Boman Delgado' },
       { id: 'hideo-shimazu', name: 'Hideo Shimazu' },
       { id: 'kyoko-minazuki', name: 'Kyoko Minazuki' },
       { id: 'raizo-imawano', name: 'Raizo Imawano' },
       { id: 'hyo-imawano', name: 'Hyo Imawano' },
-      { id: 'sakura-kasugano', name: 'Sakura Kasugano' }
+      { id: 'chairperson', name: 'Chairperson' },
+      { id: 'hayato-nekketsu', name: 'Hayato Nekketsu' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -8097,8 +8103,8 @@ rosterCount: 8,
     name: 'Neo Geo Battle Coliseum',
     developer: 'SNK',
     releaseYear: 2005,
-    platform: 'Arcade, PlayStation 2',
-    rosterCount: 9,
+    platform: 'Arcade, PlayStation 2, PC',
+    rosterCount: 40,
     characters: [
       { id: 'ai', name: 'Ai' },
       { id: 'geese-howard', name: 'Geese Howard' },
@@ -8108,7 +8114,38 @@ rosterCount: 8,
       { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
       { id: 'rock-howard', name: 'Rock Howard' },
       { id: 'terry-bogard', name: 'Terry Bogard' },
-      { id: 'yuki', name: 'Yuki' }
+      { id: 'yuki', name: 'Yuki' },
+      { id: 'k-dash', name: "K'" },
+      { id: 'shermie', name: 'Shermie' },
+      { id: 'mai-shiranui', name: 'Mai Shiranui' },
+      { id: 'kim-kaphwan', name: 'Kim Kaphwan' },
+      { id: 'tung-fu-rue', name: 'Tung Fu Rue' },
+      { id: 'jin-chonrei', name: 'Jin Chonrei' },
+      { id: 'jin-chonshu', name: 'Jin Chonshu' },
+      { id: 'hotaru-futaba', name: 'Hotaru Futaba' },
+      { id: 'mr-karate', name: 'Mr. Karate' },
+      { id: 'robert-garcia', name: 'Robert Garcia' },
+      { id: 'mr-big', name: 'Mr. Big' },
+      { id: 'lee-pai-long', name: 'Lee Pai Long' },
+      { id: 'nakoruru', name: 'Nakoruru' },
+      { id: 'shiki', name: 'Shiki' },
+      { id: 'asura', name: 'Asura' },
+      { id: 'kaede', name: 'Kaede' },
+      { id: 'moriya-minakata', name: 'Moriya Minakata' },
+      { id: 'akari-ichijou', name: 'Akari Ichijou' },
+      { id: 'keiichiro-washizuka', name: 'Keiichiro Washizuka' },
+      { id: 'hattori-hanzo', name: 'Hattori Hanzo' },
+      { id: 'fuuma-kotaro', name: 'Fuuma Kotaro' },
+      { id: 'mudman', name: 'Mudman' },
+      { id: 'marco-rossi', name: 'Marco Rossi' },
+      { id: 'mars-people', name: 'Mars People' },
+      { id: 'athena', name: 'Athena' },
+      { id: 'cyber-woo', name: 'Cyber Woo' },
+      { id: 'kisarah-westfield', name: 'Kisarah Westfield' },
+      { id: 'king-lion', name: 'King Lion' },
+      { id: 'mizuchi', name: 'Mizuchi' },
+      { id: 'neo-dio', name: 'Neo-Dio' },
+      { id: 'goodman', name: 'Goodman' }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Throws', 'Unique Attacks']
   },
@@ -8117,7 +8154,7 @@ rosterCount: 8,
     name: 'Rival Schools: United by Fate',
     developer: 'Capcom',
     releaseYear: 1997,
-    platform: 'Arcade, PlayStation',
+    platform: "Arcade, PlayStation, PC",
     rosterCount: 10,
     characters: [
       { id: 'batsu-ichimonji', name: 'Batsu Ichimonji' },
