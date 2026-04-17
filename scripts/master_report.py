@@ -19,10 +19,9 @@ def main():
     parts = re.split(r'(\n  \{\n\s*id:\s*[\'"][^\'"]+[\'"])', ts_content)
 
     total_chars = 0
-    unpopulated_chars = 0
+    unpopulated_chars_count = 0
 
-    unpopulated_lines = ["# Unpopulated Characters Registry\n"]
-    clean_lines = ["# Underpopulated Characters Quick List\n"]
+    game_reports = {}
 
     for i in range(1, len(parts), 2):
         delim = parts[i]
@@ -35,7 +34,6 @@ def main():
         name_match = re.search(r"name:\s*['\"]([^'\"]+)['\"]", body)
         game_name = name_match.group(1) if name_match else game_id
         
-        # find characters array
         char_start = body.find('characters: [')
         if char_start == -1: continue
         char_end = body.find(']', char_start)
@@ -49,7 +47,6 @@ def main():
             
             c_block = c_match.group(0)
             
-            # Check move count
             count_match = re.search(r"moveCount:\s*(\d+)", c_block)
             reg_count = int(count_match.group(1)) if count_match else 0
             
@@ -57,18 +54,30 @@ def main():
             
             total_chars += 1
             if actual_count == 0:
-                unpopulated_chars += 1
+                unpopulated_chars_count += 1
                 game_unpop.append(c_name)
                 
         if game_unpop:
-            unpopulated_lines.append(f"\n## {game_name} ({game_id})")
-            clean_lines.append(f"\n## {game_name}")
-            for c in game_unpop:
-                unpopulated_lines.append(f"- {c} (0 moves)")
-                clean_lines.append(c)
+            game_reports[game_name] = (game_id, game_unpop)
 
-    # Write full report
-    unpopulated_lines.insert(1, f"\n**Total Unpopulated:** {unpopulated_chars} / {total_chars}\n")
+    unpopulated_lines = ["# Unpopulated Characters Registry\n"]
+    clean_lines = ["# Underpopulated Characters Quick List\n"]
+
+    sorted_games = sorted(game_reports.keys(), key=lambda x: x.lower())
+    
+    for game_name in sorted_games:
+        game_id, unpop_chars = game_reports[game_name]
+        
+        unpopulated_lines.append(f"\n## {game_name} ({game_id})")
+        clean_lines.append(f"\n## {game_name}")
+        
+        unpop_chars.sort(key=lambda x: x.lower())
+        
+        for c in unpop_chars:
+            unpopulated_lines.append(f"- {c} (0 moves)")
+            clean_lines.append(c)
+
+    unpopulated_lines.insert(1, f"\n**Total Unpopulated:** {unpopulated_chars_count} / {total_chars}\n")
     
     with open('unpopulated_characters.md', 'w', encoding='utf-8') as f:
         f.write('\n'.join(unpopulated_lines))
@@ -76,7 +85,7 @@ def main():
     with open('underpopulated_clean.md', 'w', encoding='utf-8') as f:
         f.write('\n'.join(clean_lines))
 
-    print(f"Generated reports! Unpopulated: {unpopulated_chars}/{total_chars}")
+    print(f"Generated reports! Unpopulated: {unpopulated_chars_count}/{total_chars}")
 
 if __name__ == '__main__':
     main()
