@@ -37,7 +37,6 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
   
   useEffect(() => {
     if (!isPlaying) {
-      if (displayMode === 'paged') setProgress(0);
       return;
     }
 
@@ -241,7 +240,10 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
 
           <button
             id="gameglance-play-pause"
-            onClick={() => setIsPlaying(!isPlaying)}
+            onClick={() => {
+              if (isPlaying && displayMode === 'paged') setProgress(0);
+              setIsPlaying(!isPlaying);
+            }}
             style={{
               padding: '0.45rem 0.85rem',
               background: isPlaying

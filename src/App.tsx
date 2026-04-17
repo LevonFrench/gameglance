@@ -142,7 +142,7 @@ function App() {
          }}
       />;
       break;
-    case 'main_screen':
+    case 'main_screen': {
       const charName = selectedGame?.characters.find(c => c.id === selectedCharacter)?.name || String(selectedCharacter);
       viewComponent = <GameGlanceMainView 
          playlist={selectedPlaylist} 
@@ -154,6 +154,7 @@ function App() {
          onExit={() => window.history.back()} 
       />;
       break;
+    }
     default:
       viewComponent = <div>Unknown View Error</div>;
   }

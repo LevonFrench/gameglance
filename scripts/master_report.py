@@ -1,97 +1,82 @@
 import os
-import json
 import re
+import json
 
-with open('src/games.ts', 'r', encoding='utf-8') as f:
-    ts_txt = f.read()
+def get_moves_count(game_id, char_id):
+    path = f"public/data/{game_id}/{char_id}.json"
+    if not os.path.exists(path):
+        return 0
+    try:
+        data = json.load(open(path, 'r', encoding='utf-8'))
+        return len(data.get('movesList', []))
+    except:
+        return 0
 
-game_blocks = re.finditer(r"(id:\s*['\"]([^'\"]+)['\"]\s*,\s*name:\s*['\"]([^'\"]+)['\"].*?characters:\s*\[(.*?)\])", ts_txt, re.DOTALL)
+def main():
+    with open('src/games.ts', 'r', encoding='utf-8') as f:
+        ts_content = f.read()
 
-clean_lines = []
-verbose_lines = []
+    parts = re.split(r'(\n  \{\n\s*id:\s*[\'"][^\'"]+[\'"])', ts_content)
 
-total_chars = 0
+    total_chars = 0
+    unpopulated_chars = 0
 
-for g_match in game_blocks:
-    gid = g_match.group(2)
-    gname = g_match.group(3)
-    char_array = g_match.group(4)
-    
-    underpopulated = []
-    
-    for c_match in re.finditer(r"id:\s*['\"]([^'\"]+)['\"][^}]*?name:\s*['\"]([^'\"]+)['\"]", char_array, re.DOTALL):
-        cid = c_match.group(1)
-        cname = c_match.group(2).replace(' (Coming Soon)', '')
+    unpopulated_lines = ["# Unpopulated Characters Registry\n"]
+    clean_lines = ["# Underpopulated Characters Quick List\n"]
+
+    for i in range(1, len(parts), 2):
+        delim = parts[i]
+        body = parts[i+1]
         
-        json_path = os.path.join('public', 'data', gid, f"{cid}.json")
-        is_under = False
-        status_text = ""
+        id_match = re.search(r"id:\s*['\"]([^'\"]+)['\"]", delim)
+        if not id_match: continue
+        game_id = id_match.group(1)
         
-        if not os.path.exists(json_path):
-            is_under = True
-            status_text = "**Missing File**"
-        else:
-            try:
-                with open(json_path, 'r', encoding='utf-8') as jf:
-                    data = json.load(jf)
-                moves = data.get('movesList', [])
-                if len(moves) < 2:
-                    is_under = True
-                    status_text = f"**{len(moves)} Moves**"
-            except:
-                is_under = True
-                status_text = "**Parse Error**"
-
-        if is_under:
-            underpopulated.append((cid, cname, status_text))
-            total_chars += 1
+        name_match = re.search(r"name:\s*['\"]([^'\"]+)['\"]", body)
+        game_name = name_match.group(1) if name_match else game_id
+        
+        # find characters array
+        char_start = body.find('characters: [')
+        if char_start == -1: continue
+        char_end = body.find(']', char_start)
+        char_array = body[char_start:char_end]
+        
+        game_unpop = []
+        
+        for c_match in re.finditer(r"\{\s*id:\s*['\"]([^'\"]+)['\"][^}]*?name:\s*['\"]([^'\"]+)['\"][^}]*?\}", char_array):
+            c_id = c_match.group(1)
+            c_name = c_match.group(2)
             
-    if underpopulated:
-        # For clean
-        clean_lines.append(f"## {gname}")
-        for _, cname, _ in underpopulated:
-            clean_lines.append(cname)
-        clean_lines.append("")
-        
-        # For verbose
-        verbose_lines.append(f"## {gname}")
-        for cid, cname, status in underpopulated:
-            verbose_lines.append(f"- [ ] {cname} (`{cid}`) - {status}")
-        verbose_lines.append("")
+            c_block = c_match.group(0)
+            
+            # Check move count
+            count_match = re.search(r"moveCount:\s*(\d+)", c_block)
+            reg_count = int(count_match.group(1)) if count_match else 0
+            
+            actual_count = get_moves_count(game_id, c_id)
+            
+            total_chars += 1
+            if actual_count == 0:
+                unpopulated_chars += 1
+                game_unpop.append(c_name)
+                
+        if game_unpop:
+            unpopulated_lines.append(f"\n## {game_name} ({game_id})")
+            clean_lines.append(f"\n## {game_name}")
+            for c in game_unpop:
+                unpopulated_lines.append(f"- {c} (0 moves)")
+                clean_lines.append(c)
 
-# Prepend the headers
-wiki_game_table = ""
-try:
-    with open('wiki/pages/index.md', 'r', encoding='utf-8') as f:
-        wiki_txt = f.read()
-    m = re.search(r'(## 🎮 Games.*?)\n---', wiki_txt, re.DOTALL)
-    if m:
-        wiki_game_table = m.group(1).strip()
-except:
-    pass
-
-info_block = f"""# Underpopulated Characters Report
-
-> **Registry Sync Protocol Executed**: 
-> - **{total_chars} characters** across the database have `< 2` moves stored. 
-> - They have automatically been flagged with the `(Coming Soon)` suffix in the primary `src/games.ts` config.
-> - Games in which *every* character is flagged have been assigned `isHidden: true` to prevent rendering empty shells in the UI.
-
-{wiki_game_table}
-
----
-
-The following games and characters lack complete move list payloads (fewer than 2 moves) or are missing entirely:
-
-"""
-
-# Write verbose
-with open('unpopulated_characters.md', 'w', encoding='utf-8') as f:
-    f.write(info_block + "\n".join(verbose_lines))
+    # Write full report
+    unpopulated_lines.insert(1, f"\n**Total Unpopulated:** {unpopulated_chars} / {total_chars}\n")
     
-# Write Clean
-clean_header = f"# Underpopulated Characters (Clean)\n\nTotal Underpopulated: {total_chars}\n\n"
-with open('underpopulated_clean.md', 'w', encoding='utf-8') as f:
-    f.write(clean_header + "\n".join(clean_lines))
+    with open('unpopulated_characters.md', 'w', encoding='utf-8') as f:
+        f.write('\n'.join(unpopulated_lines))
+        
+    with open('underpopulated_clean.md', 'w', encoding='utf-8') as f:
+        f.write('\n'.join(clean_lines))
 
-print("Both reports completely regenerated from src/games.ts ground truth!")
+    print(f"Generated reports! Unpopulated: {unpopulated_chars}/{total_chars}")
+
+if __name__ == '__main__':
+    main()

@@ -88,7 +88,14 @@ function getGameTheme(game: GameDefinition) {
   };
 }
 
-const CustomDropdown = ({ value, options, onChange, labelExtractor = (o: any) => o }: any) => {
+interface DropdownProps {
+  value: string;
+  options: string[];
+  onChange: (val: string) => void;
+  labelExtractor?: (o: string) => string;
+}
+
+const CustomDropdown = ({ value, options, onChange, labelExtractor = (o: string) => o }: DropdownProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const triggerRef = useRef<HTMLDivElement>(null);
 
@@ -148,7 +155,7 @@ const CustomDropdown = ({ value, options, onChange, labelExtractor = (o: any) =>
           flexDirection: 'column',
           gap: '2px',
         }}>
-           {options.map((opt: any, i: number) => (
+           {options.map((opt: string, i: number) => (
              <div 
                key={i}
                onClick={() => { onChange(opt); setIsOpen(false); }}
@@ -174,7 +181,14 @@ const CustomDropdown = ({ value, options, onChange, labelExtractor = (o: any) =>
   );
 };
 
-const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: any) => {
+interface AutocompleteProps {
+  value: string;
+  onChange: (val: string) => void;
+  games: GameDefinition[];
+  onSelectGame?: (game: GameDefinition) => void;
+}
+
+const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: AutocompleteProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const triggerRef = useRef<HTMLDivElement>(null);
 
@@ -188,7 +202,7 @@ const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: any) => {
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const matches = (value ? games.filter((g: any) => g.name.toLowerCase().includes(value.toLowerCase())) : games).sort((a: any, b: any) => a.name.localeCompare(b.name));
+  const matches = (value ? games.filter((g: GameDefinition) => g.name.toLowerCase().includes(value.toLowerCase())) : games).sort((a: GameDefinition, b: GameDefinition) => a.name.localeCompare(b.name));
 
   return (
     <div ref={triggerRef} style={{ position: 'relative', width: '100%', zIndex: isOpen ? 100 : 10 }}>
@@ -237,7 +251,7 @@ const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: any) => {
             flexDirection: 'column',
             gap: '2px',
          }}>
-           {matches.map((g: any) => (
+           {matches.map((g: GameDefinition) => (
               <div 
                 key={g.id}
                 onClick={() => { 
@@ -267,7 +281,17 @@ const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: any) => {
 }
 
 export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAnimation }) => {
-  const [favorites, setFavorites] = useState<string[]>([]);
+  const [favorites, setFavorites] = useState<string[]>(() => {
+    const storedFavs = localStorage.getItem('fgc_game_favorites');
+    if (storedFavs) {
+      try {
+        return JSON.parse(storedFavs);
+      } catch {
+        return [];
+      }
+    }
+    return [];
+  });
   const [developerFilter, setDeveloperFilter] = useState<string>('All');
   const [sortBy, setSortBy] = useState<'alpha' | 'date'>('date');
   const [searchQuery, setSearchQuery] = useState<string>('');
@@ -277,12 +301,6 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
   
   useEffect(() => {
     window.scrollTo(0,0);
-    const storedFavs = localStorage.getItem('fgc_game_favorites');
-    if (storedFavs) {
-      try {
-        setFavorites(JSON.parse(storedFavs));
-      } catch (e) {}
-    }
   }, []);
 
   const toggleFavorite = (e: React.MouseEvent, id: string) => {
@@ -336,7 +354,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
   const allDevelopers = [
     'All',
     ...Object.entries(developerCounts)
-      .filter(([_, count]) => count >= 5)
+      .filter(([, count]) => count >= 5)
       .map(([dev]) => dev)
       .sort()
   ];

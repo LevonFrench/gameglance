@@ -1,8 +1,8 @@
 export type ControllerType = 'playstation' | 'xbox' | 'arcade' | 'switch' | 'neogeo' | 'wii' | 'mk';
 
 export const getGlyphLabel = (input: string, controller: ControllerType): string => {
-  const normInput = input.replace(/[\[\]]/g, '').toUpperCase();
-  const lowerInput = input.replace(/[\[\]]/g, '').toLowerCase();
+  const normInput = input.replace(/[\][]/g, '').toUpperCase();
+  const lowerInput = input.replace(/[\][]/g, '').toLowerCase();
 
   const map: Record<string, Record<ControllerType, string>> = {
     'LP': { playstation: '▢', xbox: 'X', arcade: 'LP', switch: 'Y', neogeo: 'A', wii: '1', mk: 'LP' },
@@ -50,11 +50,11 @@ export const getGlyphLabel = (input: string, controller: ControllerType): string
 
   if (map[normInput]) return map[normInput][controller];
   if (map[lowerInput]) return map[lowerInput][controller];
-  return input.replace(/[\[\]]/g, '');
+  return input.replace(/[\][]/g, '');
 };
 
 export const getGlyphColor = (input: string, controller: ControllerType): string => {
-  const normInput = input.replace(/[\[\]]/g, '').toUpperCase();
+  const normInput = input.replace(/[\][]/g, '').toUpperCase();
 
   if (controller === 'mk') {
     if (normInput === 'BL') return '#94a3b8';

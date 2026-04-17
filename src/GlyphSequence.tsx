@@ -45,7 +45,7 @@ const tokenizeInputs = (inputs: string[]): string[] => {
         continue;
       }
 
-      const match = t.match(/^([a-zA-Z\.\+]*?)([1-46-9]+)([a-zA-Z]*)$/);
+      const match = t.match(/^([a-zA-Z.+]*?)([1-46-9]+)([a-zA-Z]*)$/);
       if (match) {
         if (match[1]) result.push(match[1]);
         for (const digit of match[2]) {

@@ -3416,19 +3416,13 @@ rosterCount: 11,
   },
 
   {
-
     id: 'samurai-shodown-iv-amakusas-revenge',
-
-    name: "Samurai Shodown IV: Amakusa",
-
-    developer: "SNK",
-
     releaseYear: 1996,
     platform: "Arcade, NeoGeo, Saturn, PS1",
-
-rosterCount: 16,
-
-        characters: [
+    name: "Samurai Shodown IV: Amakusa's Revenge",
+    isDraft: true,
+    rosterCount: 16,
+    characters: [
       { id: 'amakusa', name: 'Amakusa' },
       { id: 'basara', name: 'Basara' },
       { id: 'charlotte', name: 'Charlotte' },
@@ -3446,11 +3440,8 @@ rosterCount: 16,
       { id: 'tam-tam', name: 'Tam Tam' },
       { id: 'ukyo', name: 'Ukyo' }
     ],
-
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-
   },
-
   {
 
     id: 'samurai-shodown-v',
@@ -4884,31 +4875,21 @@ rosterCount: 17,
   },
 
   {
-
     id: 'the-king-of-fighters-maximum-impact-regulation-a',
-
-    name: "The King of Fighters: Maximum Impact Regulation 'A'",
-
-    developer: "Unknown",
-
     releaseYear: 2007,
-
     platform: "Arcade, PS2",
-
-rosterCount: 5,
-
-        characters: [
+    name: "The King of Fighters: Maximum Impact Regulation 'A'",
+    isDraft: true,
+    rosterCount: 5,
+    characters: [
       { id: 'ash-crimson', name: 'Ash Crimson' },
       { id: 'blue-mary', name: 'Blue Mary' },
       { id: 'makoto-mizoguchi', name: 'Makoto Mizoguchi' },
       { id: 'nightmare-geese', name: 'Nightmare Geese' },
       { id: 'xiao-lon', name: 'Xiao Lon' }
     ],
-
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-
   },
-
   {
 
     id: 'the-last-blade',

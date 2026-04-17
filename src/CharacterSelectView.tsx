@@ -17,18 +17,22 @@ interface Props {
 }
 
 export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnimation, onSelectCharacter, onBack, onHome }) => {
-  const [favorites, setFavorites] = useState<string[]>([]);
+  const [favorites, setFavorites] = useState<string[]>(() => {
+    const storedFavs = localStorage.getItem('fgc_favorites');
+    if (storedFavs) {
+      try {
+        return JSON.parse(storedFavs);
+      } catch {
+        return [];
+      }
+    }
+    return [];
+  });
   const { theme } = useTheme();
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
   
   useEffect(() => {
     window.scrollTo(0,0);
-    const storedFavs = localStorage.getItem('fgc_favorites');
-    if (storedFavs) {
-      try {
-        setFavorites(JSON.parse(storedFavs));
-      } catch (e) {}
-    }
   }, []);
 
   const toggleFavorite = (e: React.MouseEvent, id: string) => {

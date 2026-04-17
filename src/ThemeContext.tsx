@@ -1,5 +1,6 @@
 import React, { createContext, useContext, useState, useEffect, useCallback } from 'react';
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const ALL_THEMES = ['dark', 'light', 'tournament', 'arcade', 'cyberpunk', 'blood'] as const;
 export type Theme = typeof ALL_THEMES[number];
 
@@ -15,6 +16,7 @@ const ThemeContext = createContext<ThemeContextType>({
   setTheme: () => {},
 });
 
+// eslint-disable-next-line react-refresh/only-export-components
 export const useTheme = () => useContext(ThemeContext);
 
 export const ThemeProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {

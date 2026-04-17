@@ -57,7 +57,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           return idxA - idxB;
         });
         setOrderedTabs(sorted);
-      } catch (e) {
+      } catch {
         setOrderedTabs(game.tabs || []);
       }
     } else {
@@ -146,7 +146,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     
     const stored = localStorage.getItem('fgc_tab_order');
     let pref: string[] = [];
-    if (stored) { try { pref = JSON.parse(stored); } catch(e) {} }
+    if (stored) { try { pref = JSON.parse(stored); } catch { pref = []; } }
     const newPref = Array.from(new Set([...newTabs, ...pref]));
     localStorage.setItem('fgc_tab_order', JSON.stringify(newPref));
   };
