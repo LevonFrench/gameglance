@@ -89,9 +89,30 @@ function App() {
   const handleSelectGame = (game: GameDefinition) => {
     setReturningFromMoveList(false);
     setDisableGameSelectAnimation(false);
-    if (controller === 'neogeo' && game.developer?.toUpperCase() !== 'SNK') {
-      setController('arcade');
+    
+    const dev = game.developer?.toUpperCase() || '';
+    const name = game.name.toLowerCase();
+    
+    if (dev === 'SNK') {
+      setController('neogeo');
+    } else if (name.includes('mortal kombat') || name.includes('mk')) {
+      setController('mk');
+    } else if (name.includes('tatsunoko') && name.includes('capcom')) {
+      setController('wii');
+    } else if (name.includes('alpha') || name.includes('vampire') || name.includes('darkstalkers') || name.includes('vs capcom') || name.includes('msh') || name.includes('cota') || name.includes('xmvsf') || name.includes('pocket fighter')) {
+      setController('cps');
+    } else if (name.includes('street fighter ii') && !name.includes('alpha')) {
+      if (cardTheme === 'genesis' || cardTheme === 'sf2gen') {
+        setController('genesis');
+      } else {
+        setController('snes');
+      }
+    } else if (name.includes('street fighter 6') || name.includes('tekken') || name.includes('guilty gear') || name.includes('blazblue')) {
+       if (['snes', 'genesis', 'neogeo', 'sfami', 'wii', 'cps'].includes(controller)) {
+         setController('playstation');
+       }
     }
+
     navigate('char_select', game);
   };
 
@@ -169,7 +190,6 @@ function App() {
       viewComponent = <GameGlanceMainView 
          playlist={selectedPlaylist} 
          gameName={selectedGame?.name || 'GAMES'}
-         gameDeveloper={selectedGame?.developer || ''}
          characterName={charName}
          controller={controller}
          notationSystem={selectedGame?.notationSystem}
@@ -190,7 +210,6 @@ function App() {
         onSetController={setController}
         cardTheme={cardTheme}
         onSetCardTheme={setCardTheme}
-        gameDeveloper={selectedGame?.developer}
       />
     </div>
   );

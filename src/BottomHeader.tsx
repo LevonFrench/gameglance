@@ -7,15 +7,13 @@ interface Props {
   onSetController: (c: ControllerType) => void;
   cardTheme: CardTheme;
   onSetCardTheme: (t: CardTheme) => void;
-  gameDeveloper?: string;
 }
 
 export const BottomHeader: React.FC<Props> = ({ 
   controller, 
   onSetController, 
   cardTheme, 
-  onSetCardTheme,
-  gameDeveloper
+  onSetCardTheme
 }) => {
   return (
     <div style={{
@@ -82,14 +80,27 @@ export const BottomHeader: React.FC<Props> = ({
               fontFamily: 'inherit',
               cursor: 'pointer',
               outline: 'none',
-              transition: 'border-color 0.2s',
             }}
           >
-            <option value="playstation" style={{ background: 'var(--option-bg)' }}>🎮 PS</option>
-            <option value="xbox" style={{ background: 'var(--option-bg)' }}>🎮 Xbox</option>
-            <option value="switch" style={{ background: 'var(--option-bg)' }}>🎮 Switch</option>
-            <option value="arcade" style={{ background: 'var(--option-bg)' }}>🕹️ Arcade</option>
-            {gameDeveloper?.toUpperCase() === 'SNK' && <option value="neogeo" style={{ background: 'var(--option-bg)' }}>🕹️ Neo Geo</option>}
+            <optgroup label="Modern" style={{ background: 'var(--bg-card)' }}>
+              <option value="playstation" style={{ background: 'var(--option-bg)' }}>🎮 PlayStation</option>
+              <option value="xbox" style={{ background: 'var(--option-bg)' }}>🎮 Xbox</option>
+              <option value="switch" style={{ background: 'var(--option-bg)' }}>🎮 Switch</option>
+            </optgroup>
+            <optgroup label="Arcade" style={{ background: 'var(--bg-card)' }}>
+              <option value="arcade" style={{ background: 'var(--option-bg)' }}>🕹️ Generic 6-Button</option>
+              <option value="cps" style={{ background: 'var(--option-bg)' }}>🕹️ Capcom (CPS)</option>
+              <option value="neogeo" style={{ background: 'var(--option-bg)' }}>🕹️ Neo Geo</option>
+            </optgroup>
+            <optgroup label="Retro Consoles" style={{ background: 'var(--bg-card)' }}>
+              <option value="genesis" style={{ background: 'var(--option-bg)' }}>📼 Sega Genesis</option>
+              <option value="snes" style={{ background: 'var(--option-bg)' }}>📼 SNES (NA)</option>
+              <option value="sfami" style={{ background: 'var(--option-bg)' }}>📼 Super Famicom</option>
+              <option value="wii" style={{ background: 'var(--option-bg)' }}>🎮 Wii</option>
+            </optgroup>
+            <optgroup label="Specific Games" style={{ background: 'var(--bg-card)' }}>
+              <option value="mk" style={{ background: 'var(--option-bg)' }}>🐉 Mortal Kombat</option>
+            </optgroup>
           </select>
         </div>
 
