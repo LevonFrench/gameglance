@@ -5,7 +5,8 @@ export interface FrameData {
   advantage?: string;
 }
 
-export type MoveType = 'normal' | 'special' | 'super' | 'throw' | 'unique' | 'common' | 'finisher' | 'system';
+export const MOVE_TYPES = ['normal', 'special', 'super', 'throw', 'unique', 'common', 'finisher', 'system'] as const;
+export type MoveType = typeof MOVE_TYPES[number];
 
 export interface Move {
   id: string;
@@ -23,7 +24,21 @@ export interface CharacterExport {
   combosList: { id: string, name: string, input: string }[];
 }
 
-export type CardTheme = 'default-dark' | 'default-light' | 'genesis' | 'sf2gen' | 'snes' | 'cps2' | 'mvs' | 'aes' | 'mvscab' | 'cps2cab';
+export const CARD_THEMES = ['default-dark', 'default-light', 'genesis', 'sf2gen', 'snes', 'cps2', 'mvs', 'aes', 'mvscab', 'cps2cab'] as const;
+export type CardTheme = typeof CARD_THEMES[number];
+
+export const THEME_DISPLAY_NAMES: Record<CardTheme, string> = {
+  'default-dark': 'Default',
+  'default-light': 'Light',
+  'genesis': 'Genesis',
+  'sf2gen': 'SF2GEN',
+  'snes': 'SNES',
+  'cps2': 'CPS2',
+  'cps2cab': 'CPS2 CAB',
+  'mvs': 'MVS',
+  'mvscab': 'MVS CAB',
+  'aes': 'AES'
+};
 
 export interface GameDefinition {
   id: string;
@@ -40,4 +55,5 @@ export interface GameDefinition {
   characters?: { id: string, name: string, isHidden?: boolean, moveCount?: number }[];
 }
 
-export type AppView = 'game_select' | 'char_select' | 'move_list' | 'main_screen';
+export const APP_VIEWS = ['game_select', 'char_select', 'move_list', 'main_screen'] as const;
+export type AppView = typeof APP_VIEWS[number];

@@ -1,6 +1,6 @@
-import React from 'react';
 import type { ControllerType } from './glyphMap';
 import type { CardTheme } from './types';
+import { CARD_THEMES, THEME_DISPLAY_NAMES } from './types';
 
 interface Props {
   controller: ControllerType;
@@ -56,16 +56,11 @@ export const BottomHeader: React.FC<Props> = ({
               transition: 'border-color 0.2s',
             }}
           >
-            <option value="default-dark" style={{ background: 'var(--option-bg)' }}>Default</option>
-            <option value="default-light" style={{ background: 'var(--option-bg)' }}>Light</option>
-            <option value="sf2gen" style={{ background: 'var(--option-bg)' }}>SF2GEN</option>
-            <option value="genesis" style={{ background: 'var(--option-bg)' }}>Genesis</option>
-            <option value="snes" style={{ background: 'var(--option-bg)' }}>SNES</option>
-            <option value="cps2" style={{ background: 'var(--option-bg)' }}>CPS2</option>
-            <option value="cps2cab" style={{ background: 'var(--option-bg)' }}>CPS2 CAB</option>
-            <option value="mvs" style={{ background: 'var(--option-bg)' }}>MVS</option>
-            <option value="mvscab" style={{ background: 'var(--option-bg)' }}>MVS CAB</option>
-            <option value="aes" style={{ background: 'var(--option-bg)' }}>AES</option>
+            {CARD_THEMES.map(theme => (
+              <option key={theme} value={theme} style={{ background: 'var(--option-bg)' }}>
+                {THEME_DISPLAY_NAMES[theme]}
+              </option>
+            ))}
           </select>
         </div>
 

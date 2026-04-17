@@ -1,6 +1,6 @@
 import type { GameDefinition } from './types';
 
-export const SUPPORTED_GAMES: GameDefinition[] = [
+export const SUPPORTED_GAMES: ReadonlyArray<Readonly<GameDefinition>> = [
 
   {
 
