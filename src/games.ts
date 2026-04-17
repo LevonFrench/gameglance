@@ -8091,4 +8091,46 @@ rosterCount: 8,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   }
+  ,
+  {
+    id: 'neo-geo-battle-coliseum',
+    name: 'Neo Geo Battle Coliseum',
+    developer: 'SNK',
+    releaseYear: 2005,
+    platform: 'Arcade, PlayStation 2',
+    rosterCount: 9,
+    characters: [
+      { id: 'ai', name: 'Ai' },
+      { id: 'geese-howard', name: 'Geese Howard' },
+      { id: 'genjuro-kibagami', name: 'Genjuro Kibagami' },
+      { id: 'haohmaru', name: 'Haohmaru' },
+      { id: 'iori-yagami', name: 'Iori Yagami' },
+      { id: 'kyo-kusanagi', name: 'Kyo Kusanagi' },
+      { id: 'rock-howard', name: 'Rock Howard' },
+      { id: 'terry-bogard', name: 'Terry Bogard' },
+      { id: 'yuki', name: 'Yuki' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Throws', 'Unique Attacks']
+  },
+  {
+    id: 'rival-schools-united-by-fate',
+    name: 'Rival Schools: United by Fate',
+    developer: 'Capcom',
+    releaseYear: 1997,
+    platform: 'Arcade, PlayStation',
+    rosterCount: 10,
+    characters: [
+      { id: 'batsu-ichimonji', name: 'Batsu Ichimonji' },
+      { id: 'hinata-wakaba', name: 'Hinata Wakaba' },
+      { id: 'kyosuke-kagami', name: 'Kyosuke Kagami' },
+      { id: 'shoma-sawamura', name: 'Shoma Sawamura' },
+      { id: 'natsu-ayuhara', name: 'Natsu Ayuhara' },
+      { id: 'roberto-miura', name: 'Roberto Miura' },
+      { id: 'roy-bromwell', name: 'Roy Bromwell' },
+      { id: 'tiffany-lords', name: 'Tiffany Lords' },
+      { id: 'akira-kazama', name: 'Akira Kazama' },
+      { id: 'sakura-kasugano', name: 'Sakura Kasugano' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Throws', 'Unique Attacks']
+  }
 ];
