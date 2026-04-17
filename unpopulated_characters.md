@@ -1,14 +1,13 @@
 # Unpopulated Characters Registry
 
 
-**Total Unpopulated:** 445 / 4129
+**Total Unpopulated:** 443 / 4129
 
+
+## Capcom Fighting Jam (capcom-fighting-jam)
+- Leo Kliesen (0 moves)
 
 ## Tekken 8 (tekken-8)
-- Alisa (0 moves)
-- Azucena (0 moves)
-- Lars (0 moves)
-- Leo (0 moves)
 - Leroy (0 moves)
 - Lili (0 moves)
 - Victor (0 moves)
@@ -18,6 +17,9 @@
 
 ## The King of Fighters XV (the-king-of-fighters-xv)
 - Kof XV (0 moves)
+
+## Red Earth (Warzard) (red-earth-warzard)
+- Leo Kliesen (0 moves)
 
 ## Dragon Ball Z: Budokai 3 (dragon-ball-z-budokai-3)
 - Captain Ginyu (0 moves)
