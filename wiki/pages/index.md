@@ -21,7 +21,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ---
 
-## 🕹️ Games (224)
+## 🕹️ Games (225)
 
 ### Complete Roster
 | Page | Game | Platform | Year | Characters |
@@ -216,6 +216,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[samurai-shodown]] | Samurai Shodown | PS4, Xbox One, PC, Switch | 2019 | 0 |
 | [[samurai-shodown-(2019)]] | Samurai Shodown (2019) | N/A | 2019 | 0 |
 | [[thems-fightin-herds]] | Them's Fightin' Herds | PC, Switch, PS4, Xbox One | 2020 | 7 |
+| [[arcana-heart-3-lovemax-sixstars-xtend]] | Arcana Heart 3: LOVEMAX SIXSTARS!!!!!! XTEND | Arcade, PC | 2021 | 27 |
 | [[guilty-gear-strive]] | Guilty Gear -Strive- | PS4, PS5, PC, Xbox One, Xbox Series X/S | 2021 | 0 |
 | [[melty-blood-type-lumina]] | Melty Blood: Type Lumina | PS4, Xbox One, Switch, PC | 2021 | 21 |
 | [[virtua-fighter-5-ultimate-showdown]] | Virtua Fighter 5 Ultimate Showdown | PS4, PC | 2021 | 0 |
@@ -297,7 +298,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ## Statistics
 
-- **Total pages**: 226 (224 games)
-- **Games covered**: 224
-- **Total characters**: sum total across games is 1666
+- **Total pages**: 227 (225 games)
+- **Games covered**: 225
+- **Total characters**: sum total across games is 1693
 - **Last updated**: 2026-04-17
