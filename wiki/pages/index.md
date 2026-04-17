@@ -21,7 +21,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ---
 
-## 🕹️ Games (220)
+## 🕹️ Games (219)
 
 ### Complete Roster
 | Page | Game | Platform | Year | Characters |
@@ -206,7 +206,6 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[fighting-ex-layer]] | Fighting EX Layer | PS4, PC, Switch, Xbox One | 2018 | 0 |
 | [[snk-heroines-tag-team-frenzy]] | SNK Heroines: Tag Team Frenzy | Switch, PS4, PC | 2018 | 0 |
 | [[soulcalibur-vi]] | SoulCalibur VI | PS4, Xbox One, PC | 2018 | 29 |
-| [[super-smash-bros-ultimate]] | Super Smash Bros. Ultimate | Switch | 2018 | 39 |
 | [[dead-or-alive-6]] | Dead or Alive 6 | PS4, Xbox One, PC | 2019 | 0 |
 | [[mortal-kombat-11]] | Mortal Kombat 11 | PS4, Xbox One, Switch, PC | 2019 | 37 |
 | [[samurai-shodown]] | Samurai Shodown | PS4, Xbox One, PC, Switch | 2019 | 0 |
@@ -293,7 +292,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ## Statistics
 
-- **Total pages**: 222 (220 games)
-- **Games covered**: 220
-- **Total characters**: sum total across games is 1602
+- **Total pages**: 221 (219 games)
+- **Games covered**: 219
+- **Total characters**: sum total across games is 1563
 - **Last updated**: 2026-04-17
