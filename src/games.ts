@@ -2317,6 +2317,9 @@ rosterCount: 7,
       { id: 'thanos', name: 'Thanos' },
       { id: 'thor', name: 'Thor' },
       { id: 'wolverine', name: 'Wolverine' }
+      { id: 'doctor-doom', name: 'Doctor Doom' },
+      { id: 'star-lord', name: 'Star-Lord' },
+      { id: 'storm', name: 'Storm' },
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']

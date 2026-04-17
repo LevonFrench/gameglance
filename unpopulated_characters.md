@@ -1,7 +1,7 @@
 # Unpopulated Characters Registry
 
 
-**Total Unpopulated:** 447 / 4130
+**Total Unpopulated:** 445 / 4133
 
 
 ## Capcom Fighting Jam (capcom-fighting-jam)
@@ -89,9 +89,7 @@
 - Axl Low (0 moves)
 
 ## Marvel Toukon: Fighting Souls (Beta Version) (marvel-toukon-fighting-souls-beta-version)
-- Captain America (0 moves)
 - Hulk (0 moves)
-- Iron Man (0 moves)
 - Spider-Man (0 moves)
 - Thanos (0 moves)
 - Thor (0 moves)
