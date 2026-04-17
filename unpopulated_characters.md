@@ -1,7 +1,7 @@
 # Unpopulated Characters Registry
 
 
-**Total Unpopulated:** 447 / 4129
+**Total Unpopulated:** 447 / 4130
 
 
 ## Capcom Fighting Jam (capcom-fighting-jam)
