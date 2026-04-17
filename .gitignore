@@ -81,11 +81,40 @@ wiki/raw/guides/
 # All processing scripts
 *.docx
 master_rosters.txt
-underpopulated_clean.md
-underpopulated_raw.md
-unpopulated_characters.md
+/underpopulated_clean.md
+/underpopulated_raw.md
+/unpopulated_characters.md
+/data_health_report.md
 needy.json
 tmp_*.py
 
 # Ignore raw ingested documents
 faqs/
+ 
+# Script Cleanup
+scripts/tmp_*.py
+scripts/test_*.py
+scripts/temp*.py
+scripts/clean_*.py
+scripts/purge_*.py
+scripts/add_*.py
+scripts/wipe_*.py
+scripts/fix_*.py
+scripts/inject_*.py
+scripts/map_*.py
+/*.json
+!/package.json
+!/tsconfig.json
+# Root level markdown reports
+/*.md
+!/README.md
+!/Rhythm_Shooter_Guide.md
+!/Rhythm_Game_Architecture.md
+!/master_list.md
+ 
+!/package-lock.json
+!/tsconfig.app.json
+!/tsconfig.node.json
+!/eslint.json
+!/AGENTS.md
+
