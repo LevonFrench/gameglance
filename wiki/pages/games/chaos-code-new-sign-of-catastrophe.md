@@ -10,10 +10,25 @@ sources: 0
 # Chaos Code: New Sign of Catastrophe
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Unknown
+- **Release Year:** Unknown
+- **Roster Count:** 8
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (8 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/chaos-code-new-sign-of-catastrophe/`.
+
+- `hikaru`: **Hikaru**
+- `kagari`: **Kagari**
+- `celia`: **Celia**
+- `bravo`: **Bravo**
+- `hermes`: **Hermes**
+- `catherine`: **Catherine**
+- `ray`: **Ray**
+- `cthylla`: **Cthylla**
+
 
 ## Mechanics
 *No mechanics mapped.*

@@ -10,10 +10,33 @@ sources: 0
 # Hyper Street Fighter II: The Anniversary Edition
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Arcade, PS2
+- **Release Year:** 2003
+- **Roster Count:** 16
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (16 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/hyper-street-fighter-ii-the-anniversary-edition/`.
+
+- `balrog`: **Balrog**
+- `blanka`: **Blanka**
+- `cammy`: **Cammy**
+- `chun-li`: **Chun-Li**
+- `dee-jay`: **Dee Jay**
+- `dhalsim`: **Dhalsim**
+- `e-honda`: **E. Honda**
+- `fei-long`: **Fei Long**
+- `guile`: **Guile**
+- `ken`: **Ken**
+- `m-bison`: **M. Bison**
+- `ryu`: **Ryu**
+- `sagat`: **Sagat**
+- `t-hawk`: **T. Hawk**
+- `vega`: **Vega**
+- `zangief`: **Zangief**
+
 
 ## Mechanics
 *No mechanics mapped.*

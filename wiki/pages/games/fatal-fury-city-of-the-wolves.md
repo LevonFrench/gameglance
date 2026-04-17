@@ -10,10 +10,18 @@ sources: 0
 # City Of The Wolves
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** PS4, PS5, PC, Xbox Series X/S
+- **Release Year:** 2025
+- **Roster Count:** 0
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (0 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/fatal-fury-city-of-the-wolves/`.
+
+*No characters mapped in registry.*
+
 
 ## Mechanics
 *No mechanics mapped.*

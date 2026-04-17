@@ -10,10 +10,18 @@ sources: 0
 # Under Night In-Birth II [Sys:Celes]
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Windows PlayStation 4 PlayStation 5
+- **Release Year:** 2024
+- **Roster Count:** 0
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (0 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/under-night-in-birth-ii-[sysceles]/`.
+
+*No characters mapped in registry.*
+
 
 ## Mechanics
 *No mechanics mapped.*

@@ -10,10 +10,24 @@ sources: 0
 # Them's Fightin' Herds
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** PC, Switch, PS4, Xbox One
+- **Release Year:** 2020
+- **Roster Count:** 7
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (7 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/thems-fightin-herds/`.
+
+- `arizona`: **Arizona**
+- `oleander`: **Oleander**
+- `paprika`: **Paprika**
+- `pom`: **Pom**
+- `shanty`: **Shanty**
+- `tianhuo`: **Tianhuo**
+- `velvet`: **Velvet**
+
 
 ## Mechanics
 *No mechanics mapped.*

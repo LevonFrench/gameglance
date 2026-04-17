@@ -10,10 +10,24 @@ sources: 0
 # Guilty Gear 2: Overture
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Xbox 360
+- **Release Year:** 2007
+- **Roster Count:** 7
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (7 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/guilty-gear-2-overture/`.
+
+- `dr-paradigm`: **Dr. Paradigm**
+- `izuna`: **Izuna**
+- `ky-kiske`: **Ky Kiske**
+- `raven`: **Raven**
+- `sin-kiske`: **Sin Kiske**
+- `sol-badguy`: **Sol Badguy**
+- `valentine`: **Valentine**
+
 
 ## Mechanics
 *No mechanics mapped.*

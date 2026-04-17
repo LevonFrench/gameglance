@@ -25,7 +25,7 @@ def main():
         stripped = line.strip()
         # Top-level game objects are usually indented exactly 2 spaces
         if line.startswith('  {') and not in_characters_block:
-            current_game = {'char_count': 0}
+            current_game = {'char_count': 0, 'characters': []}
         elif current_game is not None:
             if line.startswith('    id:'):
                 m = re.search(r'(?:"([^"]+)"|\'([^\']+)\')', line)
@@ -33,6 +33,12 @@ def main():
             elif line.startswith('    name:'):
                 m = re.search(r'(?:"([^"]+)"|\'([^\']+)\')', line)
                 if m: current_game['name'] = m.group(1) or m.group(2)
+            elif line.startswith('    releaseYear:'):
+                m = re.search(r'releaseYear:\s*(\d+)', line)
+                if m: current_game['releaseYear'] = m.group(1)
+            elif line.startswith('    platform:'):
+                m = re.search(r'(?:"([^"]+)"|\'([^\']+)\')', line)
+                if m: current_game['platform'] = m.group(1) or m.group(2)
             elif line.startswith('    characters: ['):
                 in_characters_block = True
             elif line.startswith('    ]') and in_characters_block:
@@ -43,8 +49,18 @@ def main():
                 current_game = None
             elif in_characters_block and '{' in line and 'id:' in line:
                 current_game['char_count'] += 1
+                # Try to extract character id and name
+                m_id = re.search(r'id:\s*(?:"([^"]+)"|\'([^\']+)\')', line)
+                m_name = re.search(r'name:\s*(?:"([^"]+)"|\'([^\']+)\')', line)
+                if m_id and m_name:
+                    c_id = m_id.group(1) or m_id.group(2)
+                    c_name = m_name.group(1) or m_name.group(2)
+                    current_game['characters'].append((c_id, c_name))
 
     print(f"Correctly parsed {len(games_catalog)} top-level games from the registry.")
+
+    # Sort games by release year if available, otherwise by name
+    games_catalog.sort(key=lambda x: (int(x.get('releaseYear', 9999)), x.get('name', '')))
 
     # 2. Cleanup bloated wiki/pages/games directory
     GAMES_MD_DIR = 'wiki/pages/games'
@@ -62,6 +78,16 @@ def main():
     for g in games_catalog:
         filepath = os.path.join(GAMES_MD_DIR, f"{g['id']}.md")
         
+        platform_info = f"**Platform:** {g.get('platform', 'Unknown')}"
+        year_info = f"**Release Year:** {g.get('releaseYear', 'Unknown')}"
+        
+        char_list = ""
+        for c_id, c_name in g['characters']:
+            char_list += f"- `{c_id}`: **{c_name}**\n"
+        
+        if not char_list:
+            char_list = "*No characters mapped in registry.*\n"
+            
         md_content = f"""---
 title: "{g['name']}"
 type: game
@@ -74,10 +100,17 @@ sources: 0
 # {g['name']}
 
 ## Overview
-*No overview generated yet.*
+- {platform_info}
+- {year_info}
+- **Roster Count:** {g['char_count']}
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters ({g['char_count']} registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/{g['id']}/`.
+
+{char_list}
 
 ## Mechanics
 *No mechanics mapped.*
@@ -101,13 +134,13 @@ created: 2026-04-15
 updated: {today}
 ---
 
-# GameGlance Wiki — Index
+# GameGlance Wiki - Index
 
 Master catalog of all wiki pages. The LLM reads this first when answering queries.
 
 ---
 
-## 📋 Meta Pages
+## 📚 Meta Pages
 
 | Page | Summary |
 |------|---------|
@@ -117,21 +150,23 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ---
 
-## 🎮 Games ({len(games_catalog)})
+## 🕹️ Games ({len(games_catalog)})
 
 ### Complete Roster
-| Page | Game | Characters |
-|------|------|-----------|
+| Page | Game | Platform | Year | Characters |
+|------|------|----------|------|-----------|
 """
 
     index_mid = ""
     for g in games_catalog:
-        index_mid += f"| [[{g['id']}]] | {g['name']} | {g['char_count']} |\n"
+        platform = g.get('platform', 'N/A')
+        year = g.get('releaseYear', 'N/A')
+        index_mid += f"| [[{g['id']}]] | {g['name']} | {platform} | {year} | {g['char_count']} |\n"
 
     index_footer = f"""
 ---
 
-## 🥊 Characters
+## 👥 Characters
 
 *See individual game pages for raw character pointers. Character wiki pages are initialized dynamically during targeted source ingest to avoid empty namespace clustering.*
 
@@ -143,13 +178,13 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ---
 
-## 🗡️ Matchups
+## ⚔️ Matchups
 
 *No pages yet.*
 
 ---
 
-## 🏛️ Archetypes
+## 🧠 Archetypes
 
 *No pages yet.*
 
@@ -177,6 +212,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 - **Total pages**: {len(games_catalog) + 2} ({len(games_catalog)} games)
 - **Games covered**: {len(games_catalog)}
+- **Total characters**: sum total across games is {sum([g['char_count'] for g in games_catalog])}
 - **Last updated**: {today}
 """
 

@@ -10,10 +10,29 @@ sources: 0
 # Super Smash Bros.
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** N64
+- **Release Year:** 1999
+- **Roster Count:** 12
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (12 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/super-smash-bros/`.
+
+- `captain-falcon`: **Captain Falcon**
+- `donkey-kong`: **Donkey Kong**
+- `fox`: **Fox**
+- `jigglypuff`: **Jigglypuff**
+- `kirby`: **Kirby**
+- `link`: **Link**
+- `luigi`: **Luigi**
+- `mario`: **Mario**
+- `ness`: **Ness**
+- `pikachu`: **Pikachu**
+- `samus-aran`: **Samus Aran**
+- `yoshi`: **Yoshi**
+
 
 ## Mechanics
 *No mechanics mapped.*

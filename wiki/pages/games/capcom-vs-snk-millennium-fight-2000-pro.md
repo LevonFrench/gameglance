@@ -10,10 +10,18 @@ sources: 0
 # Capcom vs. SNK: Millennium Fight 2000 Pro
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Arcade, PS1, DC
+- **Release Year:** 2001
+- **Roster Count:** 0
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (0 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/capcom-vs-snk-millennium-fight-2000-pro/`.
+
+*No characters mapped in registry.*
+
 
 ## Mechanics
 *No mechanics mapped.*

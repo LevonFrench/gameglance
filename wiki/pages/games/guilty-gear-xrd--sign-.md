@@ -10,10 +10,34 @@ sources: 0
 # Guilty Gear Xrd -SIGN-
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Unknown
+- **Release Year:** Unknown
+- **Roster Count:** 17
 
-## Characters (20 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+*Overview and metadata to be expanded based on future guide ingestion.*
+
+## Characters (17 registered)
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/guilty-gear-xrd--sign-/`.
+
+- `axl-low`: **Axl Low**
+- `bedman`: **Bedman**
+- `chipp-zanuff`: **Chipp Zanuff**
+- `elphelt-valentine`: **Elphelt Valentine**
+- `faust`: **Faust**
+- `i-no`: **I-No**
+- `ky-kiske`: **Ky Kiske**
+- `leo-whitefang`: **Leo Whitefang**
+- `may`: **May**
+- `millia-rage`: **Millia Rage**
+- `potemkin`: **Potemkin**
+- `ramlethal-valentine`: **Ramlethal Valentine**
+- `sin-kiske`: **Sin Kiske**
+- `slayer`: **Slayer**
+- `sol-badguy`: **Sol Badguy**
+- `venom`: **Venom**
+- `zato-1`: **Zato-1**
+
 
 ## Mechanics
 *No mechanics mapped.*

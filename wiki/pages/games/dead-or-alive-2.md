@@ -10,10 +10,18 @@ sources: 0
 # Dead or Alive 2
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Arcade, DC, PS2
+- **Release Year:** 1999
+- **Roster Count:** 0
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (0 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/dead-or-alive-2/`.
+
+*No characters mapped in registry.*
+
 
 ## Mechanics
 *No mechanics mapped.*

@@ -10,10 +10,29 @@ sources: 0
 # Street Fighter II: Hyper Fighting
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Arcade, SNES, Genesis
+- **Release Year:** 1992
+- **Roster Count:** 12
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (12 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/street-fighter-ii-hyper-fighting/`.
+
+- `balrog`: **Balrog**
+- `blanka`: **Blanka**
+- `chun-li`: **Chun-Li**
+- `dhalsim`: **Dhalsim**
+- `e-honda`: **E. Honda**
+- `guile`: **Guile**
+- `ken`: **Ken**
+- `m-bison`: **M. Bison**
+- `ryu`: **Ryu**
+- `sagat`: **Sagat**
+- `vega`: **Vega**
+- `zangief`: **Zangief**
+
 
 ## Mechanics
 *No mechanics mapped.*

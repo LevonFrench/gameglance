@@ -10,10 +10,18 @@ sources: 0
 # Fatal Fury 3: Road to the Final Victory
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Arcade, NeoGeo, Saturn
+- **Release Year:** 1995
+- **Roster Count:** 0
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (0 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/fatal-fury-3-road-to-the-final-victory/`.
+
+*No characters mapped in registry.*
+
 
 ## Mechanics
 *No mechanics mapped.*

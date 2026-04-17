@@ -10,10 +10,27 @@ sources: 0
 # Red Earth (Warzard)
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Arcade
+- **Release Year:** 1996
+- **Roster Count:** 10
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (10 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/red-earth-warzard/`.
+
+- `hauzer`: **Hauzer**
+- `hydron`: **Hydron**
+- `kenji`: **Kenji**
+- `kongou`: **Kongou**
+- `lavia`: **Lavia**
+- `leo`: **Leo**
+- `mai-ling`: **Mai-Ling**
+- `ravange`: **Ravange**
+- `scion`: **Scion**
+- `tessa`: **Tessa**
+
 
 ## Mechanics
 *No mechanics mapped.*

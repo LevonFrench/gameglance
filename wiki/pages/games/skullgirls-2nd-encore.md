@@ -10,10 +10,35 @@ sources: 0
 # Skullgirls: 2nd Encore
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** PS3, Xbox 360, Vita, PS4, Switch, PC
+- **Release Year:** 2011
+- **Roster Count:** 18
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (18 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/skullgirls-2nd-encore/`.
+
+- `annie`: **Annie**
+- `beowulf`: **Beowulf**
+- `big-band`: **Big Band**
+- `black-dahlia`: **Black Dahlia**
+- `cerebella`: **Cerebella**
+- `double`: **Double**
+- `eliza`: **Eliza**
+- `filia`: **Filia**
+- `fukua`: **Fukua**
+- `marie`: **Marie**
+- `ms-fortune`: **Ms. Fortune**
+- `painwheel`: **Painwheel**
+- `parasoul`: **Parasoul**
+- `peacock`: **Peacock**
+- `robo-fortune`: **Robo-Fortune**
+- `squigly`: **Squigly**
+- `umbrella`: **Umbrella**
+- `valentine`: **Valentine**
+
 
 ## Mechanics
 *No mechanics mapped.*

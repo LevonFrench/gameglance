@@ -10,10 +10,38 @@ sources: 0
 # SoulCalibur II
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Arcade, PS2, Xbox, GC
+- **Release Year:** 2002
+- **Roster Count:** 21
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (21 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/soulcalibur-ii/`.
+
+- `astaroth`: **Astaroth**
+- `cassandra`: **Cassandra**
+- `cervantes`: **Cervantes**
+- `heihachi-mishima`: **Heihachi Mishima**
+- `ivy`: **Ivy**
+- `kilik`: **Kilik**
+- `link`: **Link**
+- `maxi`: **Maxi**
+- `mitsurugi`: **Mitsurugi**
+- `necrid`: **Necrid**
+- `nightmare`: **Nightmare**
+- `raphael`: **Raphael**
+- `seong-mi-na`: **Seong Mi-na**
+- `sophitia`: **Sophitia**
+- `spawn`: **Spawn**
+- `taki`: **Taki**
+- `talim`: **Talim**
+- `voldo`: **Voldo**
+- `xianghua`: **Xianghua**
+- `yoshimitsu`: **Yoshimitsu**
+- `yun-seong`: **Yun-seong**
+
 
 ## Mechanics
 *No mechanics mapped.*

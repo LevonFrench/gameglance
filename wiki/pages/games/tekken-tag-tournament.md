@@ -10,10 +10,49 @@ sources: 0
 # Tekken Tag Tournament
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Unknown
+- **Release Year:** Unknown
+- **Roster Count:** 32
 
-## Characters (34 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+*Overview and metadata to be expanded based on future guide ingestion.*
+
+## Characters (32 registered)
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/tekken-tag-tournament/`.
+
+- `armor-king`: **Armor King**
+- `baek-doo-san`: **Baek Doo San**
+- `bruce-irvin`: **Bruce Irvin**
+- `bryan-fury`: **Bryan Fury**
+- `devil`: **Devil**
+- `eddy-gordo`: **Eddy Gordo**
+- `ganryu`: **Ganryu**
+- `gun-jack`: **Gun Jack**
+- `heihachi-mishima`: **Heihachi Mishima**
+- `hwoarang`: **Hwoarang**
+- `jin-kazama`: **Jin Kazama**
+- `julia-chang`: **Julia Chang**
+- `jun-kazama`: **Jun Kazama**
+- `kazuya-mishima`: **Kazuya Mishima**
+- `king`: **King**
+- `kuma`: **Kuma**
+- `kunimitsu`: **Kunimitsu**
+- `lee-chaolan`: **Lee Chaolan**
+- `lei-wulong`: **Lei Wulong**
+- `ling-xiaoyu`: **Ling Xiaoyu**
+- `michelle-chang`: **Michelle Chang**
+- `mokujin`: **Mokujin**
+- `nina-williams`: **Nina Williams**
+- `ogre`: **Ogre**
+- `panda`: **Panda**
+- `paul-phoenix`: **Paul Phoenix**
+- `prototype-jack`: **Prototype Jack**
+- `roger`: **Roger**
+- `true-ogre`: **True Ogre**
+- `unknown`: **Unknown**
+- `wang-jinrei`: **Wang Jinrei**
+- `yoshimitsu`: **Yoshimitsu**
+
 
 ## Mechanics
 *No mechanics mapped.*

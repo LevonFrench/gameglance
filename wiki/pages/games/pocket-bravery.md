@@ -10,10 +10,29 @@ sources: 0
 # Pocket Bravery
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** PC, Switch, PS4, Xbox One
+- **Release Year:** 2023
+- **Roster Count:** 12
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (12 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/pocket-bravery/`.
+
+- `aleksander`: **Aleksander**
+- `aris`: **Aris**
+- `daisuke`: **Daisuke**
+- `hadassa`: **Hadassa**
+- `jorge`: **Jorge**
+- `kimberly`: **Kimberly**
+- `malika`: **Malika**
+- `mingmei`: **Mingmei**
+- `ndidi`: **Ndidi**
+- `nuno`: **Nuno**
+- `sebastian`: **Sebastian**
+- `ximena`: **Ximena**
+
 
 ## Mechanics
 *No mechanics mapped.*

@@ -10,10 +10,28 @@ sources: 0
 # Star Gladiator Episode I Final Crusade
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Unknown
+- **Release Year:** Unknown
+- **Roster Count:** 11
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (11 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/star-gladiator-episode-i-final-crusade/`.
+
+- `hayato-kanzaki`: **Hayato Kanzaki**
+- `june-lin-milliam`: **June Lin Milliam**
+- `saturn`: **Saturn**
+- `gamof-gohone`: **Gamof Gohone**
+- `gerelt`: **Gerelt**
+- `vector`: **Vector**
+- `zelkin-fiskekrogen`: **Zelkin Fiskekrogen**
+- `gore-ghalahad`: **Gore Ghalahad**
+- `edward-bilstein`: **Edward Bilstein**
+- `blood`: **Blood**
+- `kappah`: **Kappah**
+
 
 ## Mechanics
 *No mechanics mapped.*

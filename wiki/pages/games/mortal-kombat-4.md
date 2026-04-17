@@ -10,10 +10,35 @@ sources: 0
 # Mortal Kombat 4
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Arcade, PS1, N64
+- **Release Year:** 1997
+- **Roster Count:** 18
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (18 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/mortal-kombat-4/`.
+
+- `fujin`: **Fujin**
+- `goro`: **Goro**
+- `jarek`: **Jarek**
+- `jax`: **Jax**
+- `johnny-cage`: **Johnny Cage**
+- `kai`: **Kai**
+- `liu-kang`: **Liu Kang**
+- `meat`: **Meat**
+- `noob-saibot`: **Noob Saibot**
+- `quan-chi`: **Quan Chi**
+- `raiden`: **Raiden**
+- `reiko`: **Reiko**
+- `reptile`: **Reptile**
+- `scorpion`: **Scorpion**
+- `shinnok`: **Shinnok**
+- `sonya-blade`: **Sonya Blade**
+- `sub-zero`: **Sub-Zero**
+- `tanya`: **Tanya**
+
 
 ## Mechanics
 *No mechanics mapped.*

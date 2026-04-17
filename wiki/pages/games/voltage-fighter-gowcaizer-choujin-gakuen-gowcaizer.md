@@ -10,10 +10,18 @@ sources: 0
 # Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer)
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Neo Geo Arcade PlayStation
+- **Release Year:** 1995
+- **Roster Count:** 0
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (0 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/voltage-fighter-gowcaizer-choujin-gakuen-gowcaizer/`.
+
+*No characters mapped in registry.*
+
 
 ## Mechanics
 *No mechanics mapped.*

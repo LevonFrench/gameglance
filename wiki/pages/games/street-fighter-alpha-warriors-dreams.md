@@ -10,10 +10,29 @@ sources: 0
 # Street Fighter Alpha: Warriors' Dreams
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Arcade, PS1, Saturn
+- **Release Year:** 1995
+- **Roster Count:** 12
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (12 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/street-fighter-alpha-warriors-dreams/`.
+
+- `adon`: **Adon**
+- `akuma`: **Akuma**
+- `birdie`: **Birdie**
+- `charlie`: **Charlie**
+- `chun-li`: **Chun-Li**
+- `dan`: **Dan**
+- `guy`: **Guy**
+- `ken`: **Ken**
+- `rose`: **Rose**
+- `ryu`: **Ryu**
+- `sagat`: **Sagat**
+- `sodom`: **Sodom**
+
 
 ## Mechanics
 *No mechanics mapped.*

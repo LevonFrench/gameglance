@@ -10,10 +10,18 @@ sources: 0
 # Primal Rage 2
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Arcade Sega Genesis SNES PlayStation Sega Saturn 3DO Game Gear Game Boy Atari Jaguar PC
+- **Release Year:** 1994
+- **Roster Count:** 0
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (0 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/primal-rage-2/`.
+
+*No characters mapped in registry.*
+
 
 ## Mechanics
 *No mechanics mapped.*

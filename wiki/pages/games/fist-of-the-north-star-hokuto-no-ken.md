@@ -10,10 +10,18 @@ sources: 0
 # Fist of the North Star (Hokuto no Ken)
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Arcade, PS2
+- **Release Year:** 2005
+- **Roster Count:** 0
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (0 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/fist-of-the-north-star-hokuto-no-ken/`.
+
+*No characters mapped in registry.*
+
 
 ## Mechanics
 *No mechanics mapped.*

@@ -10,10 +10,28 @@ sources: 0
 # TMNT Tournament Fighters (Genesis)
 
 ## Overview
-*No overview generated yet.*
+- **Platform:** Unknown
+- **Release Year:** Unknown
+- **Roster Count:** 11
+
+*Overview and metadata to be expanded based on future guide ingestion.*
 
 ## Characters (11 registered)
-*(Data mapped from registry but wiki character pages remain uninitialized - run specific character ingestion to flesh out connections).*
+
+The following characters are registered in `src/games.ts`. JSON payloads are stored in `public/data/tmnt-tournament-fighters-genesis/`.
+
+- `leonardo`: **Leonardo**
+- `donatello`: **Donatello**
+- `raphael`: **Raphael**
+- `michelangelo`: **Michelangelo**
+- `april-oneil`: **April O\**
+- `casey-jones`: **Casey Jones**
+- `ray-fillet`: **Ray Fillet**
+- `triceraton`: **Triceraton**
+- `sisyphus`: **Sisyphus**
+- `krang`: **Krang**
+- `karai`: **Karai**
+
 
 ## Mechanics
 *No mechanics mapped.*
