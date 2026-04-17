@@ -4381,25 +4381,6 @@ rosterCount: 31,
   },
 
   {
-    id: 'super-smash-bros-64',
-    name: 'Super Smash Bros. (64)',
-    characters: [
-      { id: 'captain-falcon', name: 'Captain Falcon' },
-      { id: 'donkey-kong', name: 'Donkey Kong' },
-      { id: 'fox', name: 'Fox' },
-      { id: 'jigglypuff', name: 'Jigglypuff' },
-      { id: 'kirby', name: 'Kirby' },
-      { id: 'link', name: 'Link' },
-      { id: 'luigi', name: 'Luigi' },
-      { id: 'mario', name: 'Mario' },
-      { id: 'ness', name: 'Ness' },
-      { id: 'pikachu', name: 'Pikachu' },
-      { id: 'samus-aran', name: 'Samus Aran' },
-      { id: 'yoshi', name: 'Yoshi' }
-    ]
-  },
-
-  {
     id: 'tekken-tag-tournament-2',
     name: 'Tekken Tag Tournament 2',
     characters: [
