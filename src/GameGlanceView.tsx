@@ -29,11 +29,12 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
 
   // Options
   const [showOptions, setShowOptions] = useState(false);
-  const [displayMode, setDisplayMode] = useState<'paged' | 'smooth'>('paged');
+  const [displayMode, setDisplayMode] = useState<'paged' | 'smooth' | 'stadium'>('paged');
   const [flipDelayMs, setFlipDelayMs] = useState(5000);
   const [itemsPerPage, setItemsPerPage] = useState(5);
 
-  const totalPages = Math.ceil(playlist.length / itemsPerPage);
+  const effectiveItemsPerPage = displayMode === 'stadium' ? 1 : itemsPerPage;
+  const totalPages = Math.ceil(playlist.length / effectiveItemsPerPage);
   const isDark = theme === 'dark';
   const listContainerRef = useRef<HTMLDivElement>(null);
 
@@ -73,7 +74,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
 
     let animFrame: number;
 
-    if (displayMode === 'paged') {
+    if (displayMode === 'paged' || displayMode === 'stadium') {
       if (totalPages <= 1) return;
       const startTime = Date.now();
       const tick = () => {
@@ -163,7 +164,9 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
     );
   }
 
-  const currentItems = displayMode === 'paged' ? playlist.slice(currentPage * itemsPerPage, (currentPage + 1) * itemsPerPage) : playlist;
+  const currentItems = (displayMode === 'paged' || displayMode === 'stadium') 
+    ? playlist.slice(currentPage * effectiveItemsPerPage, (currentPage + 1) * effectiveItemsPerPage) 
+    : playlist;
   const effectiveController = gameName.toLowerCase().includes('tatsunoko') ? 'wii' : controller;
 
   return (
@@ -173,7 +176,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
       flexDirection: 'column',
       width: '100vw',
       height: '100vh',
-      backgroundColor: 'var(--bg-primary)',
+      backgroundColor: displayMode === 'stadium' ? (isDark ? '#000000' : '#f0f0f0') : 'var(--bg-primary)',
       overflow: 'hidden',
       transition: 'background-color 0.4s ease',
     }}>
@@ -356,8 +359,8 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
         </div>
       </div>
 
-      {/* Progress bar (only in paged mode) */}
-      {displayMode === 'paged' && totalPages > 1 && isPlaying && (
+      {/* Progress bar (only in paged or stadium mode) */}
+      {(displayMode === 'paged' || displayMode === 'stadium') && totalPages > 1 && isPlaying && (
         <div style={{
           height: '3px',
           background: isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.04)',
@@ -414,20 +417,28 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
             </label>
             <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.5rem' }}>
               <button 
-                onClick={() => { setDisplayMode('paged'); setProgress(0); }}
-                style={{
-                  flex: 1, padding: '0.4rem', fontSize: '0.75rem', borderRadius: 'var(--radius-md)', background: displayMode === 'paged' ? 'var(--accent-indigo)' : 'var(--bg-input)', color: displayMode === 'paged' ? '#fff' : 'var(--text-secondary)', border: 'none', cursor: 'pointer', transition: 'all 0.2s',
-                }}
-              >
-                Paged
-              </button>
-              <button 
                 onClick={() => { setDisplayMode('smooth'); setProgress(0); }}
                 style={{
                   flex: 1, padding: '0.4rem', fontSize: '0.75rem', borderRadius: 'var(--radius-md)', background: displayMode === 'smooth' ? 'var(--accent-indigo)' : 'var(--bg-input)', color: displayMode === 'smooth' ? '#fff' : 'var(--text-secondary)', border: 'none', cursor: 'pointer', transition: 'all 0.2s',
                 }}
               >
-                Smooth Scroll
+                Scroll
+              </button>
+              <button 
+                onClick={() => { setDisplayMode('paged'); setProgress(0); }}
+                style={{
+                  flex: 1, padding: '0.4rem', fontSize: '0.75rem', borderRadius: 'var(--radius-md)', background: displayMode === 'paged' ? 'var(--accent-indigo)' : 'var(--bg-input)', color: displayMode === 'paged' ? '#fff' : 'var(--text-secondary)', border: 'none', cursor: 'pointer', transition: 'all 0.2s',
+                }}
+              >
+                Page
+              </button>
+              <button 
+                onClick={() => { setDisplayMode('stadium'); setProgress(0); setCurrentPage(0); }}
+                style={{
+                  flex: 1, padding: '0.4rem', fontSize: '0.75rem', borderRadius: 'var(--radius-md)', background: displayMode === 'stadium' ? 'var(--accent-indigo)' : 'var(--bg-input)', color: displayMode === 'stadium' ? '#fff' : 'var(--text-secondary)', border: 'none', cursor: 'pointer', transition: 'all 0.2s',
+                }}
+              >
+                Stadium
               </button>
             </div>
           </div>
@@ -441,7 +452,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
               color: 'var(--text-secondary)',
               fontWeight: 500,
             }}>
-              <span>{displayMode === 'paged' ? 'Flip Speed' : 'Scroll Duration'}</span>
+              <span>{displayMode === 'smooth' ? 'Scroll Speed' : 'Flip Speed'}</span>
               <span style={{ color: 'var(--text-primary)', fontFamily: "'JetBrains Mono', monospace" }}>
                 {flipDelayMs / 1000}s
               </span>
@@ -506,7 +517,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
           flexDirection: 'column',
           gap: '0.75rem',
           overflowY: 'auto',
-          justifyContent: currentItems.length <= 3 ? 'center' : 'flex-start',
+          justifyContent: displayMode === 'stadium' || currentItems.length <= 3 ? 'center' : 'flex-start',
           alignItems: 'center',
         }}>
         {currentItems.map((move, idx) => (
@@ -514,26 +525,29 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
             key={`${currentPage}-${idx}`}
             style={{
               display: 'flex',
-              justifyContent: 'space-between',
+              flexDirection: displayMode === 'stadium' ? 'column' : 'row',
+              justifyContent: displayMode === 'stadium' ? 'center' : 'space-between',
               alignItems: 'center',
               width: '100%',
-              maxWidth: '1200px',
-              background: 'var(--bg-card)',
-              padding: '1.35rem 1.75rem',
+              maxWidth: displayMode === 'stadium' ? '100%' : '1200px',
+              background: displayMode === 'stadium' ? 'transparent' : 'var(--bg-card)',
+              padding: displayMode === 'stadium' ? '0' : '1.35rem 1.75rem',
               borderRadius: 'var(--radius-xl)',
-              border: '1px solid var(--border-subtle)',
+              border: displayMode === 'stadium' ? 'none' : '1px solid var(--border-subtle)',
               animation: `fadeInUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) ${idx * 50}ms both`,
               transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
-              gap: '1.5rem',
-              backdropFilter: 'blur(8px)',
+              gap: displayMode === 'stadium' ? '3rem' : '1.5rem',
+              backdropFilter: displayMode === 'stadium' ? 'none' : 'blur(8px)',
             }}
             onMouseOver={e => {
+              if (displayMode === 'stadium') return;
               e.currentTarget.style.borderColor = 'var(--border-medium)';
               e.currentTarget.style.background = 'var(--bg-card-hover)';
               e.currentTarget.style.transform = 'translateX(4px) scale(1.01)';
               e.currentTarget.style.boxShadow = 'var(--shadow-sm)';
             }}
             onMouseOut={e => {
+              if (displayMode === 'stadium') return;
               e.currentTarget.style.borderColor = 'var(--border-subtle)';
               e.currentTarget.style.background = 'var(--bg-card)';
               e.currentTarget.style.transform = 'translateX(0) scale(1)';
@@ -541,27 +555,29 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
             }}
           >
             {/* Move name + index */}
-            <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', minWidth: 0 }}>
+            <div style={{ display: 'flex', flexDirection: displayMode === 'stadium' ? 'column' : 'row', alignItems: 'center', gap: '1rem', minWidth: 0 }}>
               <span style={{
                 fontFamily: "'JetBrains Mono', monospace",
-                fontSize: '0.7rem',
+                fontSize: displayMode === 'stadium' ? '1.5rem' : '0.7rem',
                 fontWeight: 700,
-                color: 'var(--text-muted)',
-                width: '32px',
+                color: displayMode === 'stadium' ? 'var(--accent-indigo)' : 'var(--text-muted)',
+                width: displayMode === 'stadium' ? 'auto' : '32px',
                 textAlign: 'center',
                 flexShrink: 0,
+                marginBottom: displayMode === 'stadium' ? '1rem' : '0',
               }}>
-                {String(currentPage * itemsPerPage + idx + 1).padStart(2, '0')}
+                {displayMode === 'stadium' ? `MOVE ${String(currentPage * effectiveItemsPerPage + idx + 1).padStart(2, '0')}` : String(currentPage * effectiveItemsPerPage + idx + 1).padStart(2, '0')}
               </span>
               <h2 style={{
-                fontSize: 'clamp(1.2rem, 3vw, 1.8rem)',
+                fontSize: displayMode === 'stadium' ? 'clamp(3rem, 6vw, 6rem)' : 'clamp(1.2rem, 3vw, 1.8rem)',
                 color: isDark ? '#ffffff' : '#000000',
                 margin: 0,
                 fontWeight: 900,
                 letterSpacing: '-0.01em',
-                whiteSpace: 'nowrap',
-                overflow: 'hidden',
-                textOverflow: 'ellipsis',
+                whiteSpace: displayMode === 'stadium' ? 'normal' : 'nowrap',
+                textAlign: 'center',
+                overflow: displayMode === 'stadium' ? 'visible' : 'hidden',
+                textOverflow: displayMode === 'stadium' ? 'clip' : 'ellipsis',
                 textShadow: isDark ? '0 2px 10px rgba(0,0,0,0.5)' : 'none',
               }}>
                 {move.name}
@@ -572,7 +588,11 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
             <div style={{
               display: 'flex',
               alignItems: 'center',
+              justifyContent: 'center',
               flexShrink: 0,
+              transform: displayMode === 'stadium' ? 'scale(2)' : 'none',
+              transformOrigin: 'center',
+              marginTop: displayMode === 'stadium' ? '2.5rem' : '0',
             }}>
               <GlyphSequence inputs={[move.input]} controller={effectiveController} notationSystem={notationSystem} large={true} />
             </div>
@@ -580,8 +600,8 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
         ))}
       </div>
 
-      {/* Bottom: pagination dots (only in paged mode) */}
-      {displayMode === 'paged' && totalPages > 1 && (
+      {/* Bottom: pagination dots (only in paged or stadium mode) */}
+      {(displayMode === 'paged' || displayMode === 'stadium') && totalPages > 1 && (
         <div style={{
           padding: '0.85rem',
           display: 'flex',
