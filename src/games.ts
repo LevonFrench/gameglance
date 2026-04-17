@@ -2507,7 +2507,7 @@ rosterCount: 999,
     id: 'mortal-kombat-(2011)',
 
     notationSystem: 'mk',
-    name: 'Mortal Kombat (2011)",
+    name: "Mortal Kombat (2011)",
 
     developer: "NetherRealm Studios",
 
@@ -2563,7 +2563,7 @@ rosterCount: 999,
     id: 'mortal-kombat-1',
 
     notationSystem: 'mk',
-    name: 'Mortal Kombat",
+    name: "Mortal Kombat",
 
     developer: "NetherRealm Studios",
 
@@ -2610,7 +2610,7 @@ rosterCount: 25,
     id: 'mortal-kombat-ii',
 
     notationSystem: 'mk',
-    name: 'Mortal Kombat II",
+    name: "Mortal Kombat II",
 
     developer: "Midway",
 
@@ -2646,7 +2646,7 @@ rosterCount: 14,
     id: 'mortal-kombat-x',
 
     notationSystem: 'mk',
-    name: 'Mortal Kombat X",
+    name: "Mortal Kombat X",
 
     developer: "NetherRealm Studios",
 
@@ -2700,7 +2700,7 @@ rosterCount: 32,
     id: 'mortal-kombat-deception',
 
     notationSystem: 'mk',
-    name: 'Mortal Kombat: Deception",
+    name: "Mortal Kombat: Deception",
 
     developer: "NetherRealm Studios",
 
@@ -4217,7 +4217,7 @@ rosterCount: 23,
 
     id: 'tekken-1',
 
-    name: 'Tekken 1",
+    name: "Tekken 1",
 
     developer: "Unknown",
 
@@ -4257,7 +4257,7 @@ rosterCount: 17,
 
     id: 'tekken-2',
 
-    name: 'Tekken 2",
+    name: "Tekken 2",
 
     developer: "Unknown",
 
@@ -4299,7 +4299,7 @@ rosterCount: 21,
 
     id: 'tekken-8',
 
-    name: 'Tekken 8",
+    name: "Tekken 8",
 
     developer: "Bandai Namco",
 
@@ -6236,7 +6236,7 @@ rosterCount: 8,
     releaseYear: 1995,
     platform: "Arcade, SNES, Genesis, PS1, PC",
     notationSystem: 'mk',
-    name: 'Mortal Kombat 3",
+    name: "Mortal Kombat 3",
     isDraft: true,
     rosterCount: 15,
     characters: [
@@ -6263,7 +6263,7 @@ rosterCount: 8,
     releaseYear: 1997,
     platform: "Arcade, PS1, N64, PC",
     notationSystem: 'mk',
-    name: 'Mortal Kombat 4",
+    name: "Mortal Kombat 4",
     isDraft: true,
     rosterCount: 18,
     characters: [
@@ -6293,7 +6293,7 @@ rosterCount: 8,
     releaseYear: 2002,
     platform: "PS2, Xbox, GC, PC",
     notationSystem: 'mk',
-    name: 'Mortal Kombat: Deadly Alliance",
+    name: "Mortal Kombat: Deadly Alliance",
     isDraft: true,
     rosterCount: 24,
     characters: [
@@ -6329,7 +6329,7 @@ rosterCount: 8,
     releaseYear: 2006,
     platform: "PS2, Xbox, Wii, PC",
     notationSystem: 'mk',
-    name: 'Mortal Kombat: Armageddon",
+    name: "Mortal Kombat: Armageddon",
     isDraft: true,
     rosterCount: 63,
     characters: [
@@ -6404,7 +6404,7 @@ rosterCount: 8,
     releaseYear: 2019,
     platform: "PS4, Xbox One, Switch, PC",
     notationSystem: 'mk',
-    name: 'Mortal Kombat 11",
+    name: "Mortal Kombat 11",
     isDraft: true,
     rosterCount: 37,
     characters: [
@@ -6913,7 +6913,7 @@ rosterCount: 8,
     id: 'tekken-3',
     releaseYear: 1997,
     platform: "Arcade, PS1, PC",
-    name: 'Tekken 3",
+    name: "Tekken 3",
     isDraft: true,
     rosterCount: 22,
     characters: [
@@ -6946,7 +6946,7 @@ rosterCount: 8,
     id: 'tekken-tag-tournament',
     releaseYear: 1999,
     platform: "Arcade, PS2, PC",
-    name: 'Tekken Tag Tournament",
+    name: "Tekken Tag Tournament",
     isDraft: true,
     rosterCount: 34,
     characters: [
@@ -6991,7 +6991,7 @@ rosterCount: 8,
     id: 'tekken-4',
     releaseYear: 2001,
     platform: "PS2, PC",
-    name: 'Tekken 4",
+    name: "Tekken 4",
     isDraft: true,
     rosterCount: 22,
     characters: [
@@ -7024,7 +7024,7 @@ rosterCount: 8,
     id: 'tekken-5',
     releaseYear: 2004,
     platform: "PS2, PC",
-    name: 'Tekken 5",
+    name: "Tekken 5",
     isDraft: true,
     rosterCount: 32,
     characters: [
@@ -7067,7 +7067,7 @@ rosterCount: 8,
     id: 'tekken-6',
     releaseYear: 2007,
     platform: "Arcade, PS3, Xbox 360, PC",
-    name: 'Tekken 6",
+    name: "Tekken 6",
     isDraft: true,
     rosterCount: 41,
     characters: [
@@ -7119,7 +7119,7 @@ rosterCount: 8,
     id: 'tekken-tag-tournament-2',
     releaseYear: 2011,
     platform: "Arcade, PS3, Xbox 360, Wii U, PC",
-    name: 'Tekken Tag Tournament 2",
+    name: "Tekken Tag Tournament 2",
     isDraft: true,
     rosterCount: 52,
     characters: [
@@ -7182,7 +7182,7 @@ rosterCount: 8,
     id: 'tekken-7',
     releaseYear: 2015,
     platform: "Arcade, PS4, Xbox One, PC",
-    name: 'Tekken 7",
+    name: "Tekken 7",
     isDraft: true,
     rosterCount: 51,
     characters: [
