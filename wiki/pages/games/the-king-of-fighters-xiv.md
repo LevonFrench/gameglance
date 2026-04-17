@@ -2,8 +2,8 @@
 title: "The King of Fighters XIV"
 type: game
 tags: [the-king-of-fighters-xiv]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

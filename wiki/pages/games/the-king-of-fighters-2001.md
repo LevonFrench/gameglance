@@ -2,8 +2,8 @@
 title: "The King of Fighters 2001"
 type: game
 tags: [the-king-of-fighters-2001]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

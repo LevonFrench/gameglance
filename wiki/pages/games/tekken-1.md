@@ -2,8 +2,8 @@
 title: "Tekken 1"
 type: game
 tags: [tekken-1]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

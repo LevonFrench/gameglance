@@ -2,8 +2,8 @@
 title: "Tatsunoko vs. Capcom: Ultimate All-Stars"
 type: game
 tags: [tatsunoko-vs-capcom-ultimate-all-stars]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

@@ -2,8 +2,8 @@
 title: "Marvel vs. Capcom: Infinite"
 type: game
 tags: [marvel-vs-capcom-infinite]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

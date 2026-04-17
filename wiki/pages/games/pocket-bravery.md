@@ -2,8 +2,8 @@
 title: "Pocket Bravery"
 type: game
 tags: [pocket-bravery]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

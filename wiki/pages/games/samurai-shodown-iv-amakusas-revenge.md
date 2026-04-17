@@ -2,8 +2,8 @@
 title: "Samurai Shodown IV: Amakusa's Revenge"
 type: game
 tags: [samurai-shodown-iv-amakusas-revenge]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

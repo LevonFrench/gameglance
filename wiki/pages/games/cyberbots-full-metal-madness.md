@@ -2,8 +2,8 @@
 title: "Cyberbots: Full Metal Madness"
 type: game
 tags: [cyberbots-full-metal-madness]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

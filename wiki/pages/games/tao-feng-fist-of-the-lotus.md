@@ -2,8 +2,8 @@
 title: "Tao Feng: Fist of the Lotus"
 type: game
 tags: [tao-feng-fist-of-the-lotus]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

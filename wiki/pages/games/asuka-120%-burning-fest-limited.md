@@ -2,8 +2,8 @@
 title: "Asuka 120% Burning Fest Limited"
 type: game
 tags: [asuka-120%-burning-fest-limited]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

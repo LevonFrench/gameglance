@@ -2,8 +2,8 @@
 title: "X-Men: Children of the Atom"
 type: game
 tags: [x-men-children-of-the-atom]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

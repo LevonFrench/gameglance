@@ -2,8 +2,8 @@
 title: "Real Bout Fatal Fury 2: The Newcomers"
 type: game
 tags: [real-bout-fatal-fury-2-the-newcomers]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

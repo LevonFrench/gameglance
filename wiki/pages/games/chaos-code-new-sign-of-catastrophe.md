@@ -2,8 +2,8 @@
 title: "Chaos Code: New Sign of Catastrophe"
 type: game
 tags: [chaos-code-new-sign-of-catastrophe]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

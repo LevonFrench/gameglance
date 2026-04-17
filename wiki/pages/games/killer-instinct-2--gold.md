@@ -2,8 +2,8 @@
 title: "Killer Instinct 2 / Gold"
 type: game
 tags: [killer-instinct-2--gold]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

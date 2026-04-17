@@ -2,8 +2,8 @@
 title: "Marvel Toukon: Fighting Souls (Beta Version)"
 type: game
 tags: [marvel-toukon-fighting-souls-beta-version]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

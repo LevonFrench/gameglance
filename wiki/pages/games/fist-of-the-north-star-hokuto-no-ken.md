@@ -2,8 +2,8 @@
 title: "Fist of the North Star (Hokuto no Ken)"
 type: game
 tags: [fist-of-the-north-star-hokuto-no-ken]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

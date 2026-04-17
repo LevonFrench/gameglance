@@ -2,8 +2,8 @@
 title: "Hyper Street Fighter II: The Anniversary Edition"
 type: game
 tags: [hyper-street-fighter-ii-the-anniversary-edition]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

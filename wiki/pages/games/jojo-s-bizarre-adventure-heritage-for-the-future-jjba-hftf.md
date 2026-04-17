@@ -2,8 +2,8 @@
 title: "JoJo's Bizarre Adventure: Heritage for the Future (JJBA: HFTF)"
 type: game
 tags: [jojo-s-bizarre-adventure-heritage-for-the-future-jjba-hftf]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

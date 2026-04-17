@@ -2,8 +2,8 @@
 title: "Red Earth (Warzard)"
 type: game
 tags: [red-earth-warzard]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

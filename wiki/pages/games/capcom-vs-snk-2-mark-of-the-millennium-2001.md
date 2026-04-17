@@ -2,8 +2,8 @@
 title: "Capcom vs. SNK 2: Mark of the Millennium 2001"
 type: game
 tags: [capcom-vs-snk-2-mark-of-the-millennium-2001]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

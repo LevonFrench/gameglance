@@ -2,8 +2,8 @@
 title: "The King of Fighters: Maximum Impact 2 (KOF 2006)"
 type: game
 tags: [the-king-of-fighters-maximum-impact-2-kof-2006]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

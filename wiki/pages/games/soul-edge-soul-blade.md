@@ -2,8 +2,8 @@
 title: "Soul Edge (Soul Blade)"
 type: game
 tags: [soul-edge-soul-blade]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

@@ -2,8 +2,8 @@
 title: "Dragon Ball Z: Budokai Tenkaichi 3"
 type: game
 tags: [dragon-ball-z-budokai-tenkaichi-3]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 

@@ -2,8 +2,8 @@
 title: "Street Fighter II: Hyper Fighting"
 type: game
 tags: [street-fighter-ii-hyper-fighting]
-created: 2026-04-16
-updated: 2026-04-16
+created: 2026-04-17
+updated: 2026-04-17
 sources: 0
 ---
 
