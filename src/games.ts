@@ -2333,7 +2333,7 @@ rosterCount: 7,
 
     platform: "Arcade, DC, PS2, Xbox",
 
-rosterCount: 38,
+rosterCount: 39,
 
         characters: [
       { id: 'akuma', name: 'Akuma' },
@@ -4622,7 +4622,7 @@ rosterCount: 34,
 
     platform: "Arcade, NeoGeo, PS2, DC, Xbox",
 
-rosterCount: 38,
+rosterCount: 39,
 
         characters: [
       { id: 'angel', name: 'Angel' },
@@ -7813,7 +7813,7 @@ rosterCount: 8,
     platform: "Wii",
     name: "Super Smash Bros. Brawl",
     isDraft: true,
-    rosterCount: 38,
+    rosterCount: 39,
     characters: [
       { id: 'bowser', name: 'Bowser' },
       { id: 'captain-falcon', name: 'Captain Falcon' },
@@ -7841,10 +7841,11 @@ rosterCount: 8,
       { id: 'pikachu', name: 'Pikachu' },
       { id: 'pit', name: 'Pit' },
       { id: 'pokmon-trainer-charizard', name: 'Pokémon Trainer (Charizard' },
-      { id: 'ivysaur', name: 'Ivysaur' },
-      { id: 'squirtle', name: 'Squirtle)' },
+      { id: 'pokemon-trainer-ivysaur', name: 'Pokemon Trainer (Ivysaur)' },
+      { id: 'pokemon-trainer-squirtle', name: 'Pokemon Trainer (Squirtle)' },
       { id: 'rob', name: 'R.O.B.' },
-      { id: 'samus-aran-zero-suit-samus', name: 'Samus Aran / Zero Suit Samus' },
+      { id: 'samus-aran', name: 'Samus Aran' },
+      { id: 'zero-suit-samus', name: 'Zero Suit Samus' },
       { id: 'sheik', name: 'Sheik' },
       { id: 'solid-snake', name: 'Solid Snake' },
       { id: 'sonic-the-hedgehog', name: 'Sonic the Hedgehog' },
