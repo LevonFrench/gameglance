@@ -32,6 +32,7 @@ export interface GameDefinition {
   tabs?: string[];
   isDraft?: boolean;
   isHidden?: boolean;
+  notationSystem?: 'numpad' | 'traditional' | 'mk';
   characters: { id: string, name: string, isHidden?: boolean, moveCount?: number }[];
 }
 

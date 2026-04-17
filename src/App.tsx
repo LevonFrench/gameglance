@@ -150,6 +150,7 @@ function App() {
          gameDeveloper={selectedGame?.developer || ''}
          characterName={charName}
          controller={controller}
+         notationSystem={selectedGame?.notationSystem}
          onSetController={setController}
          onExit={() => window.history.back()} 
       />;

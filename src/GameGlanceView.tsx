@@ -12,9 +12,10 @@ interface Props {
   controller: ControllerType;
   onSetController?: (c: ControllerType) => void;
   onExit: () => void;
+  notationSystem?: 'numpad' | 'traditional' | 'mk';
 }
 
-export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, characterName, controller, onExit }) => {
+export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, characterName, controller, notationSystem, onExit }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
@@ -514,7 +515,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
               alignItems: 'center',
               flexShrink: 0,
             }}>
-              <GlyphSequence inputs={move.inputs} controller={effectiveController} large={true} />
+              <GlyphSequence inputs={move.inputs} controller={effectiveController} notationSystem={notationSystem} large={true} />
             </div>
           </div>
         ))}

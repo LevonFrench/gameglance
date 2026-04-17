@@ -678,7 +678,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
 
                       {/* Input glyphs inline */}
                       <div style={{ marginTop: '0.4rem' }}>
-                        <GlyphSequence inputs={move.inputs} controller={effectiveController} />
+                        <GlyphSequence inputs={move.inputs} controller={effectiveController} notationSystem={game.notationSystem} />
                       </div>
                     </div>
                   </div>

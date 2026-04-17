@@ -7,6 +7,7 @@ interface GlyphSequenceProps {
   inputs: string[];
   controller: ControllerType;
   large?: boolean;
+  notationSystem?: 'numpad' | 'traditional' | 'mk';
 }
 
 const DIRECTION_ROTATIONS: Record<string, string> = {
@@ -16,14 +17,14 @@ const DIRECTION_ROTATIONS: Record<string, string> = {
 
 const NUMPAD_MAP: Record<string, string> = {
   '1': 'down-back', '2': 'down', '3': 'down-forward',
-  '4': 'back', '6': 'forward', '7': 'up-back',
+  '4': 'back', '5': 'neutral', '6': 'forward', '7': 'up-back',
   '8': 'up', '9': 'up-forward'
 };
 
-const tokenizeInputs = (inputs: string[]): string[] => {
+const tokenizeInputs = (inputs: string[], notationSystem: string = 'numpad'): string[] => {
   const result: string[] = [];
   for (const raw of inputs) {
-    if (['down', 'forward', 'back', 'up', 'down-forward', 'down-back', 'up-forward', 'up-back', '360', '720', '[Cancel]'].includes(raw)) {
+    if (['neutral', 'down', 'forward', 'back', 'up', 'down-forward', 'down-back', 'up-forward', 'up-back', '360', '720', '[Cancel]'].includes(raw)) {
       result.push(raw);
       continue;
     }
@@ -45,13 +46,17 @@ const tokenizeInputs = (inputs: string[]): string[] => {
         continue;
       }
 
-      const match = t.match(/^([a-zA-Z.+]*?)([1-46-9]+)([a-zA-Z]*)$/);
-      if (match) {
-        if (match[1]) result.push(match[1]);
-        for (const digit of match[2]) {
-          if (NUMPAD_MAP[digit]) result.push(NUMPAD_MAP[digit]);
+      if (notationSystem === 'numpad') {
+        const match = t.match(/^([a-zA-Z.+]*?)([1-9]+)([a-zA-Z]*)$/);
+        if (match) {
+          if (match[1]) result.push(match[1]);
+          for (const digit of match[2]) {
+            if (NUMPAD_MAP[digit]) result.push(NUMPAD_MAP[digit]);
+          }
+          if (match[3]) result.push(match[3]);
+        } else {
+          result.push(t);
         }
-        if (match[3]) result.push(match[3]);
       } else {
         result.push(t);
       }
@@ -61,6 +66,16 @@ const tokenizeInputs = (inputs: string[]): string[] => {
 };
 
 const renderDirectionalSVG = (label: string, large: boolean, isDark: boolean) => {
+  if (label === 'neutral') {
+    const size = large ? 44 : 32;
+    return (
+      <svg width={size} height={size} viewBox="0 0 24 24">
+        <circle cx="12" cy="12" r="10.5" fill={isDark ? '#161625' : '#1a1a2e'} stroke={isDark ? '#2a2a40' : '#2a2a40'} strokeWidth="1.5" />
+        <path d="M12 6.5 l1.5 4 h4.5 l-3.5 2.5 l1.5 4.5 l-4 -3 l-4 3 l1.5 -4.5 l-3.5 -2.5 h4.5 z" fill={isDark ? '#e0e0f0' : '#e0e0f0'} />
+      </svg>
+    );
+  }
+
   const deg = DIRECTION_ROTATIONS[label];
   if (deg === undefined) return null;
 
