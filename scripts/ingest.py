@@ -5,7 +5,10 @@ import argparse
 import subprocess
 
 def slugify(text):
+    if text == "Z.W.E.I.": return "zwei"
     text = text.lower()
+    if "grøh" in text or "groh" in text: return "grh"
+    text = text.replace("'", "")
     text = re.sub(r'[^a-z0-9]+', '-', text)
     return text.strip('-')
 
