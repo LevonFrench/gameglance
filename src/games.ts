@@ -7,7 +7,7 @@ export const SUPPORTED_GAMES: GameDefinition[] = [
     id: 'art-of-fighting',
 
     name: "Art of Fighting",
-    tagline: 'The 100 Mega Shock',
+    tagline: "The 100 Mega Shock",
 
     developer: "SNK",
 
@@ -28,7 +28,7 @@ rosterCount: 10,
     id: 'art-of-fighting-2',
 
     name: "Art of Fighting 2",
-    tagline: 'The Ultimate Blow',
+    tagline: "The Ultimate Blow",
 
     developer: "Unknown",
 
@@ -49,7 +49,7 @@ rosterCount: 13,
     id: 'art-of-fighting-3-the-path-of-the-warrior',
 
     name: "Art of Fighting 3: The Path of the Warrior",
-    tagline: 'The Path of the Warrior',
+    tagline: "The Path of the Warrior",
 
     developer: "SNK",
 
@@ -70,7 +70,7 @@ rosterCount: 9,
     id: 'astra-superstars',
 
     name: "Astra Superstars",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Sunsoft",
 
@@ -91,7 +91,7 @@ rosterCount: 8,
     id: 'asuka-120%-burning-fest-limited',
 
     name: "Asuka 120% Burning Fest Limited",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "FamilySoft",
 
@@ -110,7 +110,7 @@ rosterCount: 999,
     id: 'battle-arena-toshinden-3',
 
     name: "Battle Arena Toshinden 3",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Tamsoft",
 
@@ -131,7 +131,7 @@ rosterCount: 30,
     id: 'battle-monsters',
 
     name: "Battle Monsters",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -152,7 +152,7 @@ rosterCount: 7,
     id: 'blazblue-central-fiction',
 
     name: "BlazBlue: Central Fiction",
-    tagline: 'Rebel 1, Action!',
+    tagline: "Rebel 1, Action!",
 
     developer: "Arc System Works",
 
@@ -172,7 +172,7 @@ rosterCount: 35,
     id: 'blazblue-cross-tag-battle',
 
     name: "BlazBlue: Cross Tag Battle",
-    tagline: 'Can't Escape From Crossing Fate',
+    tagline: "Can't Escape From Crossing Fate",
 
     developer: "Arc System Works",
 
@@ -192,7 +192,7 @@ rosterCount: 40,
     id: 'bloody-roar',
 
     name: "Bloody Roar",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Hudson Soft",
 
@@ -213,7 +213,7 @@ rosterCount: 8,
     id: 'bloody-roar-2',
 
     name: "Bloody Roar 2",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -234,7 +234,7 @@ rosterCount: 8,
     id: 'bloody-roar-2-bringer-of-the-new-age',
 
     name: "Bloody Roar 2: Bringer of the New Age",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Hudson Soft",
 
@@ -255,7 +255,7 @@ rosterCount: 10,
     id: 'bloody-roar-3',
 
     name: "Bloody Roar 3",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Hudson Soft",
 
@@ -276,7 +276,7 @@ rosterCount: 13,
     id: 'bloody-roar-4',
 
     name: "Bloody Roar 4",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Hudson Soft",
 
@@ -297,7 +297,7 @@ rosterCount: 17,
     id: 'bloody-roar-primal-fury--extreme',
 
     name: "Bloody Roar: Primal Fury / Extreme",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Hudson Soft",
 
@@ -318,7 +318,7 @@ rosterCount: 8,
     id: 'breakers-revenge',
 
     name: "Breakers Revenge",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Visco",
 
@@ -339,7 +339,7 @@ rosterCount: 10,
     id: 'capcom-fighting-jam',
 
     name: "Capcom Fighting Jam",
-    tagline: 'Worlds Collide',
+    tagline: "Worlds Collide",
 
     developer: "Capcom",
 
@@ -359,7 +359,7 @@ rosterCount: 19,
     id: 'capcom-vs-snk-2-mark-of-the-millennium-2001',
 
     name: "Capcom vs. SNK 2: Mark of the Millennium 2001",
-    tagline: 'It's Mahvel Baby!',
+    tagline: "It's Mahvel Baby!",
 
     developer: "Capcom",
 
@@ -379,7 +379,7 @@ rosterCount: 44,
     id: 'capcom-vs-snk-millennium-fight-2000-pro',
 
     name: "Capcom vs. SNK: Millennium Fight 2000 Pro",
-    tagline: 'It's Mahvel Baby!',
+    tagline: "It's Mahvel Baby!",
 
     developer: "Capcom",
 
@@ -399,7 +399,7 @@ rosterCount: 29,
     id: 'cyberbots-full-metal-madness',
 
     name: "Cyberbots: Full Metal Madness",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Capcom",
 
@@ -419,7 +419,7 @@ rosterCount: 12,
     id: 'darkstalkers-the-night-warriors',
 
     name: "Darkstalkers: The Night Warriors",
-    tagline: 'The Night Warriors',
+    tagline: "The Night Warriors",
 
     developer: "Capcom",
 
@@ -439,7 +439,7 @@ rosterCount: 11,
     id: 'dead-or-alive',
 
     name: "Dead or Alive",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Tecmo",
 
@@ -460,7 +460,7 @@ rosterCount: 10,
     id: 'dead-or-alive-2',
 
     name: "Dead or Alive 2",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Tecmo",
 
@@ -481,7 +481,7 @@ rosterCount: 14,
     id: 'dead-or-alive-3',
 
     name: "Dead or Alive 3",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Tecmo",
 
@@ -502,7 +502,7 @@ rosterCount: 17,
     id: 'dead-or-alive-4',
 
     name: "Dead or Alive 4",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Tecmo",
 
@@ -523,7 +523,7 @@ rosterCount: 22,
     id: 'dead-or-alive-5',
 
     name: "Dead or Alive 5",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Tecmo",
 
@@ -544,7 +544,7 @@ rosterCount: 29,
     id: 'dead-or-alive-6',
 
     name: "Dead or Alive 6",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Tecmo",
 
@@ -565,7 +565,7 @@ rosterCount: 29,
     id: 'dnf-duel',
 
     name: "DNF Duel",
-    tagline: 'Action RPG Meets Fighting',
+    tagline: "Action RPG Meets Fighting",
 
     developer: "Arc System Works",
 
@@ -586,7 +586,7 @@ rosterCount: 16,
     id: 'dragon-ball-fighterz',
 
     name: "Dragon Ball FighterZ",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Arc System Works",
 
@@ -606,7 +606,7 @@ rosterCount: 37,
     id: 'fatal-fury-2',
 
     name: "Fatal Fury 2",
-    tagline: 'Hey, c'mon c'mon!',
+    tagline: "Hey, c'mon c'mon!",
 
     developer: "SNK",
 
@@ -627,7 +627,7 @@ rosterCount: 11,
     id: 'fatal-fury-3-road-to-the-final-victory',
 
     name: "Fatal Fury 3: Road to the Final Victory",
-    tagline: 'Hey, c'mon c'mon!',
+    tagline: "Hey, c'mon c'mon!",
 
     developer: "SNK",
 
@@ -648,7 +648,7 @@ rosterCount: 12,
     id: 'fatal-fury-special',
 
     name: "Fatal Fury Special",
-    tagline: 'The Special Bout',
+    tagline: "The Special Bout",
 
     developer: "SNK",
 
@@ -669,7 +669,7 @@ rosterCount: 16,
     id: 'fatal-fury-city-of-the-wolves',
 
     name: "City Of The Wolves",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "SNK",
 
@@ -690,7 +690,7 @@ rosterCount: 18,
     id: 'fatal-fury-king-of-fighters',
 
     name: "Fatal Fury",
-    tagline: 'Hey, c'mon c'mon!',
+    tagline: "Hey, c'mon c'mon!",
 
     developer: "SNK",
 
@@ -711,7 +711,7 @@ rosterCount: 11,
     id: 'fighters-megamix',
 
     name: "Fighters Megamix",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Sega",
 
@@ -731,7 +731,7 @@ rosterCount: 14,
     id: 'fighting-ex-layer',
 
     name: "Fighting EX Layer",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Arika",
 
@@ -752,7 +752,7 @@ rosterCount: 14,
     id: 'fighting-vipers',
 
     name: "Fighting Vipers",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Sega",
 
@@ -773,7 +773,7 @@ rosterCount: 7,
     id: 'fighting-vipers-2',
 
     name: "Fighting Vipers 2",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Sega",
 
@@ -794,7 +794,7 @@ rosterCount: 9,
     id: 'fist-of-the-north-star-hokuto-no-ken',
 
     name: "Fist of the North Star (Hokuto no Ken)",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -815,7 +815,7 @@ rosterCount: 10,
     id: 'galaxy-fight-universal-warriors',
 
     name: "Galaxy Fight: Universal Warriors",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Sunsoft",
 
@@ -836,7 +836,7 @@ rosterCount: 9,
     id: 'garou-mark-of-the-wolves',
 
     name: "Garou: Mark of the Wolves",
-    tagline: 'Mark of the Wolves',
+    tagline: "Mark of the Wolves",
 
     developer: "SNK",
 
@@ -856,7 +856,7 @@ rosterCount: 14,
     id: 'golden-axe-the-duel',
 
     name: "Golden Axe: The Duel",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Sega",
 
@@ -877,7 +877,7 @@ rosterCount: 8,
     id: 'granblue-fantasy-versus-rising',
 
     name: "Granblue Fantasy Versus: Rising",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Arc System Works",
 
@@ -898,7 +898,7 @@ rosterCount: 14,
     id: 'groove-on-fight',
 
     name: "Groove on Fight",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Atlus",
 
@@ -919,7 +919,7 @@ rosterCount: 14,
     id: 'groove-on-fight-power-instinct-3',
 
     name: "Groove On Fight (Power Instinct 3)",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -940,7 +940,7 @@ rosterCount: 12,
     id: 'guilty-gear',
 
     name: "Guilty Gear (1998)",
-    tagline: 'The Missing Link',
+    tagline: "The Missing Link",
 
     developer: "Arc System Works",
 
@@ -961,7 +961,7 @@ rosterCount: 12,
     id: 'guilty-gear-strive',
 
     name: "Guilty Gear -Strive-",
-    tagline: 'Smell of the Game',
+    tagline: "Smell of the Game",
 
     developer: "Unknown",
 
@@ -982,7 +982,7 @@ rosterCount: 24,
     id: 'guilty-gear-x',
 
     name: "Guilty Gear X",
-    tagline: 'By Your Side',
+    tagline: "By Your Side",
 
     developer: "Arc System Works",
 
@@ -1003,7 +1003,7 @@ rosterCount: 16,
     id: 'guilty-gear-xrd-rev-2',
 
     name: "Guilty Gear Xrd REV 2",
-    tagline: 'Revelations',
+    tagline: "Revelations",
 
     developer: "Arc System Works",
 
@@ -1024,7 +1024,7 @@ rosterCount: 23,
     id: 'guilty-gear-xx-accent-core-plus-r',
 
     name: "Guilty Gear XX Accent Core Plus R",
-    tagline: 'Accent Core Plus R',
+    tagline: "Accent Core Plus R",
 
     developer: "Arc System Works",
 
@@ -1045,7 +1045,7 @@ rosterCount: 25,
     id: 'hyper-street-fighter-ii',
 
     name: "Hyper Street Fighter II",
-    tagline: 'The Anniversary Edition',
+    tagline: "The Anniversary Edition",
 
     developer: "Capcom",
 
@@ -1064,7 +1064,7 @@ rosterCount: 999,
     id: 'invincible-vs-beta',
 
     name: "Invincible VS Beta",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -1105,7 +1105,7 @@ rosterCount: 15,
     id: 'kakuto-chojin-back-alley-brutal',
 
     name: "Kakuto Chojin: Back Alley Brutal",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -1126,7 +1126,7 @@ rosterCount: 8,
     id: 'kasumi-ninja',
 
     name: "Kasumi Ninja",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -1147,7 +1147,7 @@ rosterCount: 9,
     id: 'killer-instinct-(1994)',
 
     name: "Killer Instinct (1994)",
-    tagline: 'Play With Fire',
+    tagline: "Play With Fire",
 
     developer: "Rare",
 
@@ -1166,7 +1166,7 @@ rosterCount: 999,
     id: 'killer-instinct-(2013)',
 
     name: "Killer Instinct (2013)",
-    tagline: 'Fight On',
+    tagline: "Fight On",
 
     developer: "Rare",
 
@@ -1185,7 +1185,7 @@ rosterCount: 999,
     id: 'killer-instinct-2--gold',
 
     name: "Killer Instinct 2 / Gold",
-    tagline: 'The Instinct Returns',
+    tagline: "The Instinct Returns",
 
     developer: "Rare",
 
@@ -1204,7 +1204,7 @@ rosterCount: 999,
     id: 'kizuna-encounter-super-tag-battle',
 
     name: "Kizuna Encounter: Super Tag Battle",
-    tagline: 'Super Tag Battle',
+    tagline: "Super Tag Battle",
 
     developer: "SNK",
 
@@ -1224,7 +1224,7 @@ rosterCount: 8,
     id: 'last-bronx',
 
     name: "Last Bronx",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Sega",
 
@@ -1245,7 +1245,7 @@ rosterCount: 8,
     id: 'marvel-super-heroes',
 
     name: "Marvel Super Heroes",
-    tagline: 'War of the Gems',
+    tagline: "War of the Gems",
 
     developer: "Capcom",
 
@@ -1265,7 +1265,7 @@ rosterCount: 12,
     id: 'mshvsf',
 
     name: "Marvel Super Heroes vs. Street Fighter",
-    tagline: 'Super Heroes meet Street Fighters',
+    tagline: "Super Heroes meet Street Fighters",
 
     developer: "Capcom",
 
@@ -1284,7 +1284,7 @@ rosterCount: 999,
     id: 'marvel-toukon-fighting-souls-beta-version',
 
     name: "Marvel Toukon: Fighting Souls (Beta Version)",
-    tagline: 'The Beta Battle',
+    tagline: "The Beta Battle",
 
     developer: "Unknown",
 
@@ -1305,7 +1305,7 @@ rosterCount: 7,
     id: 'marvel-vs-capcom-2',
 
     name: "Marvel vs. Capcom 2",
-    tagline: 'Take You For A Ride',
+    tagline: "Take You For A Ride",
 
     developer: "Capcom",
 
@@ -1326,7 +1326,7 @@ rosterCount: 39,
     id: 'marvel-vs-capcom-clash-of-super-heroes',
 
     name: "Marvel vs. Capcom: Clash of Super Heroes",
-    tagline: 'Two Worlds, One Dream',
+    tagline: "Two Worlds, One Dream",
 
     developer: "Capcom",
 
@@ -1347,7 +1347,7 @@ rosterCount: 14,
     id: 'marvel-vs-capcom-infinite',
 
     name: "Marvel vs. Capcom: Infinite",
-    tagline: 'Return of the Stones',
+    tagline: "Return of the Stones",
 
     developer: "Capcom",
 
@@ -1368,7 +1368,7 @@ rosterCount: 24,
     id: 'matrimelee',
 
     name: "Matrimelee (Power Instinct Matrimelee)",
-    tagline: 'Power Instinct Matrimelee',
+    tagline: "Power Instinct Matrimelee",
 
     developer: "Noise Factory",
 
@@ -1390,7 +1390,7 @@ rosterCount: 999,
 
     notationSystem: 'mk',
     name: "Mortal Kombat (2011)",
-    tagline: 'A Time to Kombat',
+    tagline: "A Time to Kombat",
 
     developer: "NetherRealm Studios",
 
@@ -1412,7 +1412,7 @@ rosterCount: 999,
 
     notationSystem: 'mk',
     name: "Mortal Kombat",
-    tagline: 'It's In Our Blood',
+    tagline: "It's In Our Blood",
 
     developer: "NetherRealm Studios",
 
@@ -1434,7 +1434,7 @@ rosterCount: 25,
 
     notationSystem: 'mk',
     name: "Mortal Kombat II",
-    tagline: 'Nothing Can Stop It',
+    tagline: "Nothing Can Stop It",
 
     developer: "Midway",
 
@@ -1456,7 +1456,7 @@ rosterCount: 14,
 
     notationSystem: 'mk',
     name: "Mortal Kombat X",
-    tagline: 'Who's Next?',
+    tagline: "Who's Next?",
 
     developer: "NetherRealm Studios",
 
@@ -1478,7 +1478,7 @@ rosterCount: 32,
 
     notationSystem: 'mk',
     name: "Mortal Kombat: Deception",
-    tagline: 'Deception is Everywhere',
+    tagline: "Deception is Everywhere",
 
     developer: "NetherRealm Studios",
 
@@ -1499,7 +1499,7 @@ rosterCount: 21,
     id: 'night-warriors-darkstalkers-revenge',
 
     name: "Night Warriors: Darkstalkers",
-    tagline: 'Darkstalkers' Revenge',
+    tagline: "Darkstalkers' Revenge",
 
     developer: "Capcom",
 
@@ -1519,7 +1519,7 @@ rosterCount: 14,
     id: 'ninja-masters-haoh-ninpo-cho',
 
     name: "Ninja Master",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "SNK",
 
@@ -1540,7 +1540,7 @@ rosterCount: 999,
     id: 'persona-4-arena-ultimax',
 
     name: "Persona 4 Arena Ultimax",
-    tagline: 'The P-1 Climax',
+    tagline: "The P-1 Climax",
 
     developer: "Arc System Works",
 
@@ -1561,7 +1561,7 @@ rosterCount: 20,
     id: 'plasma-sword-nightmare-of-bilstein',
 
     name: "Plasma Sword: Nightmare of Bilstein",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Capcom",
 
@@ -1582,7 +1582,7 @@ rosterCount: 13,
     id: 'pocketfighter',
 
     name: "Pocket Fighter",
-    tagline: 'Super Gem Fighter Mini Mix',
+    tagline: "Super Gem Fighter Mini Mix",
 
     developer: "SNK",
 
@@ -1603,7 +1603,7 @@ rosterCount: 999,
     id: 'primal-rage',
 
     name: "Primal Rage",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -1624,7 +1624,7 @@ rosterCount: 7,
     id: 'primal-rage-2',
 
     name: "Primal Rage 2",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -1645,7 +1645,7 @@ rosterCount: 7,
     id: 'projectjustice',
 
     name: "Project Justice",
-    tagline: 'Project Justice',
+    tagline: "Project Justice",
 
     developer: "SNK",
 
@@ -1666,7 +1666,7 @@ rosterCount: 999,
     id: 'psychic-force',
 
     name: "Psychic Force",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -1687,7 +1687,7 @@ rosterCount: 10,
     id: 'psychic-force-2012-psychic-force-2',
 
     name: "Psychic Force 2012 (Psychic Force 2)",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -1708,7 +1708,7 @@ rosterCount: 13,
     id: 'rage-of-the-dragons',
 
     name: "Rage of the Dragons",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Evoga",
 
@@ -1729,7 +1729,7 @@ rosterCount: 13,
     id: 'ragnagard-shin-oh-ken',
 
     name: "Ragnagard (Shin-Oh-Ken)",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -1750,7 +1750,7 @@ rosterCount: 8,
     id: 'real-bout-fatal-fury',
 
     name: "Real Bout Fatal Fury",
-    tagline: 'The Real Bout',
+    tagline: "The Real Bout",
 
     developer: "SNK",
 
@@ -1770,7 +1770,7 @@ rosterCount: 16,
     id: 'real-bout-fatal-fury-2-the-newcomers',
 
     name: "Real Bout Fatal Fury 2: The Newcomers",
-    tagline: 'The Newcomers',
+    tagline: "The Newcomers",
 
     developer: "SNK",
 
@@ -1790,7 +1790,7 @@ rosterCount: 19,
     id: 'real-bout-fatal-fury-special',
 
     name: "Real Bout Fatal Fury Special",
-    tagline: 'Real Bout Special',
+    tagline: "Real Bout Special",
 
     developer: "SNK",
 
@@ -1810,7 +1810,7 @@ rosterCount: 19,
     id: 'samurai-shodown',
 
     name: "Samurai Shodown",
-    tagline: 'Way of the Sword',
+    tagline: "Way of the Sword",
 
     developer: "SNK",
 
@@ -1830,7 +1830,7 @@ rosterCount: 25,
     id: 'samurai-shodown-(2019)',
 
     name: "Samurai Shodown (2019)",
-    tagline: 'Embrace Death',
+    tagline: "Embrace Death",
 
     developer: "SNK",
 
@@ -1849,7 +1849,7 @@ rosterCount: 999,
     id: 'samurai-shodown-ii',
 
     name: "Samurai Shodown II",
-    tagline: 'The Blade Returns',
+    tagline: "The Blade Returns",
 
     developer: "SNK",
 
@@ -1869,7 +1869,7 @@ rosterCount: 15,
     id: 'samurai-shodown-iii-blades-of-blood',
 
     name: "Samurai Shodown III: Blades of Blood",
-    tagline: 'Blades of Blood',
+    tagline: "Blades of Blood",
 
     developer: "SNK",
 
@@ -1899,7 +1899,7 @@ rosterCount: 11,
     id: 'samurai-shodown-v',
 
     name: "Samurai Shodown V",
-    tagline: 'The Sword of the Warrior',
+    tagline: "The Sword of the Warrior",
 
     developer: "SNK",
 
@@ -1919,7 +1919,7 @@ rosterCount: 19,
     id: 'samurai-shodown-v-special',
 
     name: "Samurai Shodown V Special",
-    tagline: 'The Special Edition',
+    tagline: "The Special Edition",
 
     developer: "SNK",
 
@@ -1959,7 +1959,7 @@ rosterCount: 11,
     id: 'snk-heroines-tag-team-frenzy',
 
     name: "SNK Heroines: Tag Team Frenzy",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "SNK",
 
@@ -1980,7 +1980,7 @@ rosterCount: 16,
     id: 'snk-vs-capcom-svc-chaos',
 
     name: "SNK vs. Capcom: SVC Chaos",
-    tagline: 'The Ultimate Collision',
+    tagline: "The Ultimate Collision",
 
     developer: "Capcom",
 
@@ -2000,7 +2000,7 @@ rosterCount: 37,
     id: 'soul-calibur',
 
     name: "Soul Calibur",
-    tagline: 'Transcending History',
+    tagline: "Transcending History",
 
     developer: "Unknown",
 
@@ -2021,7 +2021,7 @@ rosterCount: 10,
     id: 'soul-edge-soul-blade',
 
     name: "Soul Edge (Soul Blade)",
-    tagline: 'A Tale of Souls and Swords',
+    tagline: "A Tale of Souls and Swords",
 
     developer: "Unknown",
 
@@ -2042,7 +2042,7 @@ rosterCount: 10,
     id: 'street-fighter-6',
 
     name: "Street Fighter 6",
-    tagline: 'Your Moment. Your Fight.',
+    tagline: "Your Moment. Your Fight.",
 
     developer: "Capcom",
 
@@ -2065,7 +2065,7 @@ rosterCount: 22,
     id: 'street-fighter-alpha',
 
     name: "Street Fighter Alpha 1",
-    tagline: 'The Alpha Generation',
+    tagline: "The Alpha Generation",
 
     developer: "Capcom",
 
@@ -2086,7 +2086,7 @@ rosterCount: 999,
     id: 'street-fighter-alpha-2',
 
     name: "Street Fighter Alpha 2",
-    tagline: 'The Custom Combo Era',
+    tagline: "The Custom Combo Era",
 
     developer: "Capcom",
 
@@ -2107,7 +2107,7 @@ rosterCount: 19,
     id: 'street-fighter-alpha-3',
 
     name: "Street Fighter Alpha 3",
-    tagline: 'Go For Broke!',
+    tagline: "Go For Broke!",
 
     developer: "Capcom",
 
@@ -2128,7 +2128,7 @@ rosterCount: 37,
     id: 'street-fighter-ex3',
 
     name: "Street Fighter EX3",
-    tagline: 'The 3D Bout',
+    tagline: "The 3D Bout",
 
     developer: "Capcom",
 
@@ -2149,7 +2149,7 @@ rosterCount: 21,
     id: 'street-fighter-iii-2nd-impact',
 
     name: "Street Fighter III: 2nd Impact - Giant Attack",
-    tagline: 'Giant Attack',
+    tagline: "Giant Attack",
 
     developer: "Capcom",
 
@@ -2170,7 +2170,7 @@ rosterCount: 999,
     id: 'street-fighter-iii-new-generation',
 
     name: "Street Fighter III: New Generation",
-    tagline: 'A New Generation',
+    tagline: "A New Generation",
 
     developer: "Capcom",
 
@@ -2191,7 +2191,7 @@ rosterCount: 11,
     id: 'street-fighter-v-champion-edition',
 
     name: "Street Fighter V: Champion Edition",
-    tagline: 'Rise Up',
+    tagline: "Rise Up",
 
     developer: "Capcom",
 
@@ -2212,7 +2212,7 @@ rosterCount: 43,
     id: 'super-street-fighter-ii-turbo',
 
     name: "Super Street Fighter II Turbo",
-    tagline: 'The Grand Master Challenge',
+    tagline: "The Grand Master Challenge",
 
     developer: "Capcom",
 
@@ -2232,7 +2232,7 @@ rosterCount: 17,
     id: 'super-street-fighter-ii',
 
     name: "Super Street Fighter II: The New Challengers",
-    tagline: 'The New Challengers',
+    tagline: "The New Challengers",
 
     developer: "Capcom",
 
@@ -2251,7 +2251,7 @@ rosterCount: 999,
     id: 'tao-feng-fist-of-the-lotus',
 
     name: "Tao Feng: Fist of the Lotus",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -2272,7 +2272,7 @@ rosterCount: 8,
     id: 'tatsunoko-vs-capcom-ultimate-all-stars',
 
     name: "Tatsunoko vs. Capcom: Ultimate All-Stars",
-    tagline: 'Cross Generation of Heroes',
+    tagline: "Cross Generation of Heroes",
 
     developer: "Capcom",
 
@@ -2293,7 +2293,7 @@ rosterCount: 23,
     id: 'tekken-1',
 
     name: "Tekken 1",
-    tagline: 'The King of Iron Fist Tournament',
+    tagline: "The King of Iron Fist Tournament",
 
     developer: "Unknown",
 
@@ -2314,7 +2314,7 @@ rosterCount: 17,
     id: 'tekken-2',
 
     name: "Tekken 2",
-    tagline: 'The Iron Fist Returns',
+    tagline: "The Iron Fist Returns",
 
     developer: "Unknown",
 
@@ -2335,7 +2335,7 @@ rosterCount: 21,
     id: 'tekken-8',
 
     name: "Tekken 8",
-    tagline: 'Fist Meets Fate',
+    tagline: "Fist Meets Fate",
 
     developer: "Bandai Namco",
 
@@ -2353,14 +2353,14 @@ rosterCount: 31,
   {
     id: 'tekken-tag-tournament',
     name: 'Tekken Tag Tournament',
-    tagline: 'The Tag Battle',
+    tagline: "The Tag Battle",
     characters: []
   },
 
   {
     id: 'tekken-tag-tournament-2',
     name: 'Tekken Tag Tournament 2',
-    tagline: 'We Are Tekken',
+    tagline: "We Are Tekken",
     characters: []
   },
 
@@ -2389,7 +2389,7 @@ rosterCount: 24,
     id: 'the-king-of-fighters-2000',
 
     name: "The King of Fighters 2000",
-    tagline: 'The NESTS Crisis',
+    tagline: "The NESTS Crisis",
 
     developer: "SNK",
 
@@ -2410,7 +2410,7 @@ rosterCount: 33,
     id: 'the-king-of-fighters-2001',
 
     name: "The King of Fighters 2001",
-    tagline: 'The NESTS Conclusion',
+    tagline: "The NESTS Conclusion",
 
     developer: "SNK",
 
@@ -2431,7 +2431,7 @@ rosterCount: 34,
     id: 'the-king-of-fighters-2002',
 
     name: "The King of Fighters 2002",
-    tagline: 'Challenge to Ultimate Battle',
+    tagline: "Challenge to Ultimate Battle",
 
     developer: "SNK",
 
@@ -2452,7 +2452,7 @@ rosterCount: 39,
     id: 'the-king-of-fighters-2003',
 
     name: "The King of Fighters 2003",
-    tagline: 'The Ash Saga Begins',
+    tagline: "The Ash Saga Begins",
 
     developer: "SNK",
 
@@ -2473,7 +2473,7 @@ rosterCount: 30,
     id: 'the-king-of-fighters-xiii',
 
     name: "The King of Fighters XIII",
-    tagline: 'The Ash Conclusion',
+    tagline: "The Ash Conclusion",
 
     developer: "SNK",
 
@@ -2494,7 +2494,7 @@ rosterCount: 32,
     id: 'the-king-of-fighters-xiv',
 
     name: "The King of Fighters XIV",
-    tagline: 'Burn to Fight',
+    tagline: "Burn to Fight",
 
     developer: "SNK",
 
@@ -2515,7 +2515,7 @@ rosterCount: 47,
     id: 'the-king-of-fighters-xv',
 
     name: "The King of Fighters XV",
-    tagline: 'Shatter All Expectations',
+    tagline: "Shatter All Expectations",
 
     developer: "SNK",
 
@@ -2536,7 +2536,7 @@ rosterCount: 48,
     id: 'the-king-of-fighters-maximum-impact',
 
     name: "The King of Fighters: Maximum Impact",
-    tagline: 'Maximum Impact',
+    tagline: "Maximum Impact",
 
     developer: "Unknown",
 
@@ -2557,7 +2557,7 @@ rosterCount: 19,
     id: 'the-king-of-fighters-maximum-impact-2-kof-2006',
 
     name: "The King of Fighters: Maximum Impact 2 (KOF 2006)",
-    tagline: 'KOF 2006',
+    tagline: "KOF 2006",
 
     developer: "Unknown",
 
@@ -2588,7 +2588,7 @@ rosterCount: 17,
     id: 'the-last-blade',
 
     name: "The Last Blade",
-    tagline: 'Romance of the Bakumatsu',
+    tagline: "Romance of the Bakumatsu",
 
     developer: "SNK",
 
@@ -2608,7 +2608,7 @@ rosterCount: 12,
     id: 'the-last-blade-2',
 
     name: "The Last Blade 2",
-    tagline: 'Heart of the Samurai',
+    tagline: "Heart of the Samurai",
 
     developer: "SNK",
 
@@ -2628,7 +2628,7 @@ rosterCount: 19,
     id: 'ultimate-marvel-vs-capcom-3',
 
     name: "Ultimate Marvel vs. Capcom 3",
-    tagline: 'Two Worlds. One Fate.',
+    tagline: "Two Worlds. One Fate.",
 
     developer: "Capcom",
 
@@ -2649,7 +2649,7 @@ rosterCount: 50,
     id: 'ultimate-mortal-kombat-3',
 
     name: "Ultimate Mortal Kombat 3",
-    tagline: 'The Ultimate Kombat',
+    tagline: "The Ultimate Kombat",
 
     developer: "NetherRealm Studios",
 
@@ -2670,7 +2670,7 @@ rosterCount: 22,
     id: 'ultra-street-fighter-iv',
 
     name: "Ultra Street Fighter IV",
-    tagline: 'The Final Battle',
+    tagline: "The Final Battle",
 
     developer: "Capcom",
 
@@ -2691,7 +2691,7 @@ rosterCount: 41,
     id: 'under-night-in-birth-ii-[sysceles]',
 
     name: "Under Night In-Birth II [Sys:Celes]",
-    tagline: 'The Hollow Night Returns',
+    tagline: "The Hollow Night Returns",
 
     developer: "French-Bread",
 
@@ -2712,7 +2712,7 @@ rosterCount: 999,
     id: 'vampirehunter2',
 
     name: "Vampire Hunter 2",
-    tagline: 'Darkstalkers' Revenge (Japan)',
+    tagline: "Darkstalkers' Revenge (Japan)",
 
     developer: "Capcom",
 
@@ -2733,7 +2733,7 @@ rosterCount: 999,
     id: 'vampiresavior',
 
     name: "Vampire Savior",
-    tagline: 'The Lord of Vampire',
+    tagline: "The Lord of Vampire",
 
     developer: "Capcom",
 
@@ -2754,7 +2754,7 @@ rosterCount: 999,
     id: 'vampiresavior2',
 
     name: "Vampire Savior 2",
-    tagline: 'The Lord of Vampire (Update)',
+    tagline: "The Lord of Vampire (Update)",
 
     developer: "Capcom",
 
@@ -2775,7 +2775,7 @@ rosterCount: 999,
     id: 'virtua-fighter',
 
     name: "Virtua Fighter 1",
-    tagline: 'The Original 3D Fighter',
+    tagline: "The Original 3D Fighter",
 
     developer: "Sega",
 
@@ -2796,7 +2796,7 @@ rosterCount: 999,
     id: 'virtua-fighter-2',
 
     name: "Virtua Fighter 2",
-    tagline: 'The Legend Returns',
+    tagline: "The Legend Returns",
 
     developer: "Sega",
 
@@ -2817,7 +2817,7 @@ rosterCount: 10,
     id: 'virtua-fighter-3',
 
     name: "Virtua Fighter 3",
-    tagline: 'The Third Bout',
+    tagline: "The Third Bout",
 
     developer: "Sega",
 
@@ -2838,7 +2838,7 @@ rosterCount: 12,
     id: 'virtua-fighter-4',
 
     name: "Virtua Fighter 4",
-    tagline: 'Evolution of Combat',
+    tagline: "Evolution of Combat",
 
     developer: "Sega",
 
@@ -2859,7 +2859,7 @@ rosterCount: 14,
     id: 'virtua-fighter-5-ultimate-showdown',
 
     name: "Virtua Fighter 5 Ultimate Showdown",
-    tagline: 'Ultimate Showdown',
+    tagline: "Ultimate Showdown",
 
     developer: "Sega",
 
@@ -2880,7 +2880,7 @@ rosterCount: 19,
     id: 'voltage-fighter-gowcaizer-choujin-gakuen-gowcaizer',
 
     name: "Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer)",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -2901,7 +2901,7 @@ rosterCount: 12,
     id: 'waku-waku-7',
 
     name: "Waku Waku 7",
-    tagline: 'Waku Waku!',
+    tagline: "Waku Waku!",
 
     developer: "Sunsoft",
 
@@ -2921,7 +2921,7 @@ rosterCount: 9,
     id: 'way-of-the-warrior',
 
     name: "Way of the Warrior",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -2942,7 +2942,7 @@ rosterCount: 8,
     id: 'world-heroes',
 
     name: "World Heroes",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -2963,7 +2963,7 @@ rosterCount: 8,
     id: 'world-heroes-2',
 
     name: "World Heroes 2",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -2984,7 +2984,7 @@ rosterCount: 14,
     id: 'world-heroes-2-jet',
 
     name: "World Heroes 2 Jet",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -3005,7 +3005,7 @@ rosterCount: 7,
     id: 'world-heroes-perfect',
 
     name: "World Heroes Perfect",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "ADK",
 
@@ -3026,7 +3026,7 @@ rosterCount: 7,
     id: 'x-men-vs-street-fighter',
 
     name: "X-Men vs. Street Fighter",
-    tagline: 'The Crossover Begins',
+    tagline: "The Crossover Begins",
 
     developer: "Capcom",
 
@@ -3046,7 +3046,7 @@ rosterCount: 18,
     id: 'x-men-children-of-the-atom',
 
     name: "X-Men: Children of the Atom",
-    tagline: 'Mutants Unleashed',
+    tagline: "Mutants Unleashed",
 
     developer: "Capcom",
 
@@ -3066,7 +3066,7 @@ rosterCount: 12,
     id: 'zero-divide',
 
     name: "Zero Divide",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -3087,7 +3087,7 @@ rosterCount: 8,
     id: 'zero-divide-2-the-secret-wish',
 
     name: "Zero Divide 2: The Secret Wish",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
 
     developer: "Unknown",
 
@@ -3108,7 +3108,7 @@ rosterCount: 8,
     releaseYear: 1996,
     platform: "Arcade, PC",
     name: "Red Earth (Warzard)",
-    tagline: 'Fantasy RPG Fighter',
+    tagline: "Fantasy RPG Fighter",
     isDraft: true,
     rosterCount: 10,
     characters: [],
@@ -3119,7 +3119,7 @@ rosterCount: 8,
     releaseYear: 2004,
     platform: "PS2, PC",
     name: "Dragon Ball Z: Budokai 3",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     isDraft: true,
     rosterCount: 37,
     characters: [],
@@ -3130,7 +3130,7 @@ rosterCount: 8,
     releaseYear: 2007,
     platform: "PS2, Wii, PC",
     name: "Dragon Ball Z: Budokai Tenkaichi 3",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     isDraft: true,
     rosterCount: 95,
     characters: [],
@@ -3141,7 +3141,7 @@ rosterCount: 8,
     releaseYear: 2007,
     platform: "Xbox 360, PC",
     name: "Guilty Gear 2: Overture",
-    tagline: 'Let's Rock!',
+    tagline: "Let's Rock!",
     isDraft: true,
     rosterCount: 7,
     characters: [],
@@ -3150,7 +3150,7 @@ rosterCount: 8,
   {
     id: 'guilty-gear-xrd--sign-',
     name: "Guilty Gear Xrd -SIGN-",
-    tagline: 'Heaven or Hell',
+    tagline: "Heaven or Hell",
     isDraft: true,
     rosterCount: 999,
     characters: [],
@@ -3161,7 +3161,7 @@ rosterCount: 8,
     releaseYear: 2013,
     platform: "PS3, Xbox 360, Wii U, PC",
     name: "Injustice: Gods Among Us",
-    tagline: 'Gods Among Us',
+    tagline: "Gods Among Us",
     isDraft: true,
     rosterCount: 30,
     characters: [],
@@ -3172,7 +3172,7 @@ rosterCount: 8,
     releaseYear: 2017,
     platform: "PS4, Xbox One, PC",
     name: "Injustice 2",
-    tagline: 'Every Battle Defines You',
+    tagline: "Every Battle Defines You",
     isDraft: true,
     rosterCount: 40,
     characters: [],
@@ -3184,7 +3184,7 @@ rosterCount: 8,
     platform: "Arcade, SNES, Genesis, PS1, PC",
     notationSystem: 'mk',
     name: "Mortal Kombat 3",
-    tagline: 'There Is No Knowledge That Is Not Power',
+    tagline: "There Is No Knowledge That Is Not Power",
     isDraft: true,
     rosterCount: 15,
     characters: [],
@@ -3196,7 +3196,7 @@ rosterCount: 8,
     platform: "Arcade, PS1, N64, PC",
     notationSystem: 'mk',
     name: "Mortal Kombat 4",
-    tagline: 'Even Your Soul is Not Safe',
+    tagline: "Even Your Soul is Not Safe",
     isDraft: true,
     rosterCount: 18,
     characters: [],
@@ -3208,7 +3208,7 @@ rosterCount: 8,
     platform: "PS2, Xbox, GC, PC",
     notationSystem: 'mk',
     name: "Mortal Kombat: Deadly Alliance",
-    tagline: 'A Deadly Alliance',
+    tagline: "A Deadly Alliance",
     isDraft: true,
     rosterCount: 24,
     characters: [],
@@ -3220,7 +3220,7 @@ rosterCount: 8,
     platform: "PS2, Xbox, Wii, PC",
     notationSystem: 'mk',
     name: "Mortal Kombat: Armageddon",
-    tagline: 'The End is Near',
+    tagline: "The End is Near",
     isDraft: true,
     rosterCount: 63,
     characters: [],
@@ -3232,7 +3232,7 @@ rosterCount: 8,
     platform: "PS4, Xbox One, Switch, PC",
     notationSystem: 'mk',
     name: "Mortal Kombat 11",
-    tagline: 'You're Next',
+    tagline: "You're Next",
     isDraft: true,
     rosterCount: 37,
     characters: [],
@@ -3253,7 +3253,7 @@ rosterCount: 8,
     releaseYear: 1998,
     platform: "Arcade, DC, PC",
     name: "SoulCalibur",
-    tagline: 'The Legend Will Never Die',
+    tagline: "The Legend Will Never Die",
     isDraft: true,
     rosterCount: 17,
     characters: [],
@@ -3264,7 +3264,7 @@ rosterCount: 8,
     releaseYear: 2002,
     platform: "Arcade, PS2, Xbox, GC, PC",
     name: "SoulCalibur II",
-    tagline: 'The Weapon Master',
+    tagline: "The Weapon Master",
     isDraft: true,
     rosterCount: 21,
     characters: [],
@@ -3275,7 +3275,7 @@ rosterCount: 8,
     releaseYear: 2005,
     platform: "PS2, PC",
     name: "SoulCalibur III",
-    tagline: 'What Lies Ahead?',
+    tagline: "What Lies Ahead?",
     isDraft: true,
     rosterCount: 40,
     characters: [],
@@ -3286,7 +3286,7 @@ rosterCount: 8,
     releaseYear: 2008,
     platform: "PS3, Xbox 360, PC",
     name: "SoulCalibur IV",
-    tagline: 'The Two Swords',
+    tagline: "The Two Swords",
     isDraft: true,
     rosterCount: 28,
     characters: [],
@@ -3297,7 +3297,7 @@ rosterCount: 8,
     releaseYear: 2012,
     platform: "PS3, Xbox 360, PC",
     name: "SoulCalibur V",
-    tagline: 'A New Generation',
+    tagline: "A New Generation",
     isDraft: true,
     rosterCount: 25,
     characters: [],
@@ -3308,7 +3308,7 @@ rosterCount: 8,
     releaseYear: 2018,
     platform: "PS4, Xbox One, PC",
     name: "SoulCalibur VI",
-    tagline: 'Welcome Back to the Stage of History',
+    tagline: "Welcome Back to the Stage of History",
     isDraft: true,
     rosterCount: 29,
     characters: [],
@@ -3319,7 +3319,7 @@ rosterCount: 8,
     releaseYear: 1992,
     platform: "Arcade, SNES, Genesis, PC",
     name: "Street Fighter II: Champion Edition",
-    tagline: 'The Champion is Here',
+    tagline: "The Champion is Here",
     isDraft: true,
     rosterCount: 12,
     characters: [],
@@ -3330,7 +3330,7 @@ rosterCount: 8,
     releaseYear: 1992,
     platform: "Arcade, SNES, Genesis, PC",
     name: "Street Fighter II: Hyper Fighting",
-    tagline: 'Faster and Furious',
+    tagline: "Faster and Furious",
     isDraft: true,
     rosterCount: 12,
     characters: [],
@@ -3341,7 +3341,7 @@ rosterCount: 8,
     releaseYear: 2003,
     platform: "Arcade, PS2, PC",
     name: "Hyper Street Fighter II: The Anniversary Edition",
-    tagline: '15 Years of Fighting',
+    tagline: "15 Years of Fighting",
     isDraft: true,
     rosterCount: 16,
     characters: [],
@@ -3362,7 +3362,7 @@ rosterCount: 8,
     releaseYear: 1999,
     platform: "Arcade, DC, PS2, Xbox, PC",
     name: "Street Fighter III: 3rd Strike - Fight for the Future",
-    tagline: 'Fight for the Future',
+    tagline: "Fight for the Future",
     isDraft: true,
     rosterCount: 19,
     characters: [],
@@ -3373,7 +3373,7 @@ rosterCount: 8,
     releaseYear: 2008,
     platform: "Arcade, PS3, Xbox 360, PC",
     name: "Street Fighter IV",
-    tagline: 'The Revival',
+    tagline: "The Revival",
     isDraft: true,
     rosterCount: 25,
     characters: [],
@@ -3384,7 +3384,7 @@ rosterCount: 8,
     releaseYear: 2010,
     platform: "PS3, Xbox 360, 3DS, PC",
     name: "Super Street Fighter IV",
-    tagline: 'The Ultimate Evolution',
+    tagline: "The Ultimate Evolution",
     isDraft: true,
     rosterCount: 35,
     characters: [],
@@ -3395,7 +3395,7 @@ rosterCount: 8,
     releaseYear: 1997,
     platform: "Arcade, PS1, PC",
     name: "Tekken 3",
-    tagline: 'A New Era of Combat',
+    tagline: "A New Era of Combat",
     isDraft: true,
     rosterCount: 22,
     characters: [],
@@ -3406,7 +3406,7 @@ rosterCount: 8,
     releaseYear: 1999,
     platform: "Arcade, PS2, PC",
     name: "Tekken Tag Tournament",
-    tagline: 'The Tag Battle',
+    tagline: "The Tag Battle",
     isDraft: true,
     rosterCount: 34,
     characters: [],
@@ -3417,7 +3417,7 @@ rosterCount: 8,
     releaseYear: 2001,
     platform: "PS2, PC",
     name: "Tekken 4",
-    tagline: 'Return of the King',
+    tagline: "Return of the King",
     isDraft: true,
     rosterCount: 22,
     characters: [],
@@ -3428,7 +3428,7 @@ rosterCount: 8,
     releaseYear: 2004,
     platform: "PS2, PC",
     name: "Tekken 5",
-    tagline: 'The Iron Fist Awakening',
+    tagline: "The Iron Fist Awakening",
     isDraft: true,
     rosterCount: 32,
     characters: [],
@@ -3439,7 +3439,7 @@ rosterCount: 8,
     releaseYear: 2007,
     platform: "Arcade, PS3, Xbox 360, PC",
     name: "Tekken 6",
-    tagline: 'Bloodline Rebellion',
+    tagline: "Bloodline Rebellion",
     isDraft: true,
     rosterCount: 41,
     characters: [],
@@ -3450,7 +3450,7 @@ rosterCount: 8,
     releaseYear: 2011,
     platform: "Arcade, PS3, Xbox 360, Wii U, PC",
     name: "Tekken Tag Tournament 2",
-    tagline: 'We Are Tekken',
+    tagline: "We Are Tekken",
     isDraft: true,
     rosterCount: 52,
     characters: [],
@@ -3461,7 +3461,7 @@ rosterCount: 8,
     releaseYear: 2015,
     platform: "Arcade, PS4, Xbox One, PC",
     name: "Tekken 7",
-    tagline: 'The Mishima Saga Ends',
+    tagline: "The Mishima Saga Ends",
     isDraft: true,
     rosterCount: 51,
     characters: [],
@@ -3522,7 +3522,7 @@ rosterCount: 8,
     releaseYear: 2005,
     platform: "Arcade, PS2, PC",
     name: "The King of Fighters XI",
-    tagline: 'The 11th Tournament',
+    tagline: "The 11th Tournament",
     isDraft: true,
     rosterCount: 45,
     characters: [],
@@ -3533,7 +3533,7 @@ rosterCount: 8,
     releaseYear: 2009,
     platform: "Arcade, PS3, Xbox 360, PC",
     name: "The King of Fighters XII",
-    tagline: 'Rebirth of the King',
+    tagline: "Rebirth of the King",
     isDraft: true,
     rosterCount: 22,
     characters: [],
@@ -3554,7 +3554,7 @@ rosterCount: 8,
     releaseYear: 1993,
     platform: "SNES, Genesis, PC",
     name: "ClayFighter",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     isDraft: true,
     rosterCount: 8,
     characters: [],
@@ -3565,7 +3565,7 @@ rosterCount: 8,
     releaseYear: 1993,
     platform: "Genesis, PC",
     name: "Eternal Champions",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     isDraft: true,
     rosterCount: 23,
     characters: [],
@@ -3576,7 +3576,7 @@ rosterCount: 8,
     releaseYear: 2008,
     platform: "Arcade, PS2, PC",
     name: "Melty Blood: Actress Again Current Code",
-    tagline: 'Actress Again',
+    tagline: "Actress Again",
     isDraft: true,
     rosterCount: 25,
     characters: [],
@@ -3587,7 +3587,7 @@ rosterCount: 8,
     releaseYear: 2021,
     platform: "PS4, Xbox One, Switch, PC",
     name: "Melty Blood: Type Lumina",
-    tagline: 'Type Lumina',
+    tagline: "Type Lumina",
     isDraft: true,
     rosterCount: 21,
     characters: [],
@@ -3598,7 +3598,7 @@ rosterCount: 8,
     releaseYear: 2023,
     platform: "PC, Switch, PS4, Xbox One",
     name: "Pocket Bravery",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     isDraft: true,
     rosterCount: 12,
     characters: [],
@@ -3609,7 +3609,7 @@ rosterCount: 8,
     releaseYear: 2011,
     platform: "PS3, Xbox 360, Vita, PS4, Switch, PC",
     name: "Skullgirls: 2nd Encore",
-    tagline: 'The Encore',
+    tagline: "The Encore",
     isDraft: true,
     rosterCount: 18,
     characters: [],
@@ -3620,7 +3620,7 @@ rosterCount: 8,
     releaseYear: 1999,
     platform: "N64, PC",
     name: "Super Smash Bros.",
-    tagline: 'Choose Your Character!',
+    tagline: "Choose Your Character!",
     isDraft: true,
     rosterCount: 12,
     characters: [],
@@ -3631,7 +3631,7 @@ rosterCount: 8,
     releaseYear: 2001,
     platform: "GC, PC",
     name: "Super Smash Bros. Melee",
-    tagline: 'The Melee',
+    tagline: "The Melee",
     isDraft: true,
     rosterCount: 26,
     characters: [],
@@ -3642,7 +3642,7 @@ rosterCount: 8,
     releaseYear: 2008,
     platform: "Wii, PC",
     name: "Super Smash Bros. Brawl",
-    tagline: 'The Brawl Begins',
+    tagline: "The Brawl Begins",
     isDraft: true,
     rosterCount: 39,
     characters: [],
@@ -3662,7 +3662,7 @@ rosterCount: 8,
   {
     id: 'melty-blood-type-lumina---wikipedia',
     name: "Melty Blood: Type Lumina - Wikipedia",
-    tagline: 'Type Lumina (Wiki)',
+    tagline: "Type Lumina (Wiki)",
     isDraft: true,
     rosterCount: 999,
     characters: [],
@@ -3672,7 +3672,7 @@ rosterCount: 8,
   {
     id: 'weaponlord',
     name: "WeaponLord",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     isDraft: true,
     releaseYear: 1995,
     platform: "SNES, Genesis, PC",
@@ -3684,7 +3684,7 @@ rosterCount: 8,
   {
     id: 'bio-freaks',
     name: "Bio F.R.E.A.K.S.",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3693,7 +3693,7 @@ rosterCount: 8,
   {
     id: 'fatal-fury-wild-ambition',
     name: "Fatal Fury: Wild Ambition",
-    tagline: 'Wild Ambition',
+    tagline: "Wild Ambition",
     isDraft: true,
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3718,7 +3718,7 @@ rosterCount: 8,
   {
     id: 'tobal-2',
     name: "Tobal 2",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3727,7 +3727,7 @@ rosterCount: 8,
   {
     id: 'ultraman-fighting-evolution',
     name: "Ultraman Fighting Evolution",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3736,7 +3736,7 @@ rosterCount: 8,
   {
     id: 'war-gods',
     name: "War Gods",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3744,7 +3744,7 @@ rosterCount: 8,
   {
     id: 'aggressors-of-dark-kombat',
     name: "Aggressors of Dark Kombat",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3752,7 +3752,7 @@ rosterCount: 8,
   {
     id: 'chaos-code-new-sign-of-catastrophe',
     name: "Chaos Code: New Sign of Catastrophe",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3760,7 +3760,7 @@ rosterCount: 8,
   {
     id: 'rival-schools-united-by-fate',
     name: 'Rival Schools: United by Fate',
-    tagline: 'United by Fate',
+    tagline: "United by Fate",
     developer: 'Capcom',
     releaseYear: 1997,
     platform: 'Arcade, PlayStation, PC',
@@ -3771,7 +3771,7 @@ rosterCount: 8,
   {
     id: 'star-gladiator-episode-i-final-crusade',
     name: "Star Gladiator Episode I Final Crusade",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3779,7 +3779,7 @@ rosterCount: 8,
   {
     id: 'tmnt-tournament-fighters-genesis',
     name: "TMNT Tournament Fighters (Genesis)",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3787,7 +3787,7 @@ rosterCount: 8,
   {
     id: 'tmnt-tournament-fighters-nes',
     name: "TMNT Tournament Fighters (NES)",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3795,7 +3795,7 @@ rosterCount: 8,
   {
     id: 'tmnt-tournament-fighters-snes',
     name: "TMNT Tournament Fighters (SNES)",
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -3804,7 +3804,7 @@ rosterCount: 8,
   {
     id: 'neo-geo-battle-coliseum',
     name: 'Neo Geo Battle Coliseum',
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     developer: 'SNK',
     releaseYear: 2005,
     platform: 'Arcade, PlayStation 2, PC',
@@ -3815,7 +3815,7 @@ rosterCount: 8,
   {
     id: 'rival-schools-united-by-fate',
     name: 'Rival Schools: United by Fate',
-    tagline: 'United by Fate',
+    tagline: "United by Fate",
     developer: 'Capcom',
     releaseYear: 1997,
     platform: "Arcade, PlayStation, PC",
@@ -3827,7 +3827,7 @@ rosterCount: 8,
   {
     id: 'idol-showdown',
     name: 'Idol Showdown',
-    tagline: 'VTuber Battle',
+    tagline: "VTuber Battle",
     developer: 'Besto Game Team',
     releaseYear: 2023,
     platform: 'PC',
@@ -3839,7 +3839,7 @@ rosterCount: 8,
   {
     id: 'chaos-code-new-sign-of-catastrophe',
     name: 'Chaos Code: New Sign of Catastrophe',
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     developer: 'FK Digital',
     releaseYear: 2013,
     platform: 'Arcade, PlayStation 4, PC',
@@ -3852,7 +3852,7 @@ rosterCount: 8,
     id: 'mortal-kombat-vs-dc-universe',
     notationSystem: 'mk',
     name: 'Mortal Kombat vs. DC Universe',
-    tagline: 'Worlds Collide',
+    tagline: "Worlds Collide",
     developer: 'Midway',
     releaseYear: 2008,
     platform: 'PlayStation 3, Xbox 360, PC',
@@ -3865,7 +3865,7 @@ rosterCount: 8,
     id: 'arcana-heart-3-lovemax-sixstars-xtend',
     notationSystem: 'numpad',
     name: 'Arcana Heart 3: LOVEMAX SIXSTARS!!!!!! XTEND',
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     developer: 'Examu',
     releaseYear: 2021,
     platform: 'Arcade, PC',
@@ -3878,7 +3878,7 @@ rosterCount: 8,
     id: 'the-rumble-fish',
     notationSystem: 'numpad',
     name: 'The Rumble Fish',
-    tagline: 'Enter the Arena',
+    tagline: "Enter the Arena",
     developer: 'Dimps',
     releaseYear: 2004,
     platform: 'Arcade, PlayStation 2',

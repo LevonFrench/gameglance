@@ -56,13 +56,14 @@ export const BottomHeader: React.FC<Props> = ({
               transition: 'border-color 0.2s',
             }}
           >
-            <option value="default-dark" style={{ background: 'var(--option-bg)' }}>Default Dark</option>
-            <option value="default-light" style={{ background: 'var(--option-bg)' }}>Default Light</option>
-            <option value="genesis" style={{ background: 'var(--option-bg)' }}>Sega Genesis</option>
-            <option value="snes" style={{ background: 'var(--option-bg)' }}>SNES Cart</option>
-            <option value="cps2" style={{ background: 'var(--option-bg)' }}>CPS2 Board</option>
-            <option value="mvs" style={{ background: 'var(--option-bg)' }}>Neo Geo MVS</option>
-            <option value="aes" style={{ background: 'var(--option-bg)' }}>Neo Geo AES</option>
+            <option value="default-dark" style={{ background: 'var(--option-bg)' }}>Default</option>
+            <option value="default-light" style={{ background: 'var(--option-bg)' }}>Light</option>
+            <option value="sf2gen" style={{ background: 'var(--option-bg)' }}>SF2GEN</option>
+            <option value="genesis" style={{ background: 'var(--option-bg)' }}>Genesis</option>
+            <option value="snes" style={{ background: 'var(--option-bg)' }}>SNES</option>
+            <option value="cps2" style={{ background: 'var(--option-bg)' }}>CPS2</option>
+            <option value="mvs" style={{ background: 'var(--option-bg)' }}>MVS</option>
+            <option value="aes" style={{ background: 'var(--option-bg)' }}>AES</option>
           </select>
         </div>
 

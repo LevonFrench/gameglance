@@ -434,9 +434,9 @@ h1, h2, h3, h4, h5, h6 {
    ═══════════════════════════════════════════════════════════════ */
 
 /* ── Sega Genesis Cartridge Theme ──────────────────────────── */
-[data-card-theme="genesis"] button[id^="game-card-"],
-[data-card-theme="genesis"] button[id^="char-card-"],
-[data-card-theme="genesis"] div[id^="move-"] {
+[data-card-theme="sf2gen"] button[id^="game-card-"],
+[data-card-theme="sf2gen"] button[id^="char-card-"],
+[data-card-theme="sf2gen"] div[id^="move-"] {
   /* background: #0f0f0f !important; */
   /* border: 1px solid #222 !important; */
   /* border-radius: 12px 12px 2px 2px !important; */
@@ -453,7 +453,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Selected state override for moves */
-/* [data-card-theme="genesis"] div[id^="move-"][data-selected="true"] {
+/* [data-card-theme="sf2gen"] div[id^="move-"][data-selected="true"] {
   background: #1a1a1a !important; 
   border-color: #00c3b6 !important;
   box-shadow: 
@@ -463,9 +463,9 @@ h1, h2, h3, h4, h5, h6 {
 } */
 
 /* Add the inner label sticker */
-/* [data-card-theme="genesis"] button[id^="game-card-"]::after,
-[data-card-theme="genesis"] button[id^="char-card-"]::after,
-[data-card-theme="genesis"] div[id^="move-"]::after {
+/* [data-card-theme="sf2gen"] button[id^="game-card-"]::after,
+[data-card-theme="sf2gen"] button[id^="char-card-"]::after,
+[data-card-theme="sf2gen"] div[id^="move-"]::after {
   content: '';
   position: absolute;
   top: 6%;
@@ -484,17 +484,17 @@ h1, h2, h3, h4, h5, h6 {
 } */
 
 /* Ensure text stays visible on top of the label */
-[data-card-theme="genesis"] button[id^="game-card-"] > *,
-[data-card-theme="genesis"] button[id^="char-card-"] > *,
-[data-card-theme="genesis"] div[id^="move-"] > * {
+[data-card-theme="sf2gen"] button[id^="game-card-"] > *,
+[data-card-theme="sf2gen"] button[id^="char-card-"] > *,
+[data-card-theme="sf2gen"] div[id^="move-"] > * {
   /* z-index: 1; */
   /* position: relative; */
   text-shadow: 2px 2px 4px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
 }
 
-/* [data-card-theme="genesis"] button[id^="game-card-"]:hover,
-[data-card-theme="genesis"] button[id^="char-card-"]:hover,
-[data-card-theme="genesis"] div[id^="move-"]:hover {
+/* [data-card-theme="sf2gen"] button[id^="game-card-"]:hover,
+[data-card-theme="sf2gen"] button[id^="char-card-"]:hover,
+[data-card-theme="sf2gen"] div[id^="move-"]:hover {
   transform: translateY(-4px) scale(1.02) !important;
   border-color: #444 !important;
   box-shadow: 
@@ -504,8 +504,8 @@ h1, h2, h3, h4, h5, h6 {
 } */
 
 /* Tweak the text colors inside Genesis theme to look cool on black grid */
-[data-card-theme="genesis"] .text-muted,
-[data-card-theme="genesis"] .text-tertiary {
+[data-card-theme="sf2gen"] .text-muted,
+[data-card-theme="sf2gen"] .text-tertiary {
   color: #ccc !important;
   font-family: Arial, Helvetica, sans-serif !important;
   font-weight: bold !important;
@@ -514,8 +514,8 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 2px;
 }
 
-[data-card-theme="genesis"] h2,
-[data-card-theme="genesis"] .font-mono {
+[data-card-theme="sf2gen"] h2,
+[data-card-theme="sf2gen"] .font-mono {
   font-weight: 900 !important;
   letter-spacing: 0.05em;
   color: #facc15 !important;
@@ -523,7 +523,7 @@ h1, h2, h3, h4, h5, h6 {
   /* transform: skew(-5deg); */
 }
 
-/* [data-card-theme="genesis"] .gradient-overlay {
+/* [data-card-theme="sf2gen"] .gradient-overlay {
   display: none !important; 
 } */
 
@@ -936,7 +936,7 @@ h1, h2, h3, h4, h5, h6 {
 
 
 /* Themed App Container Backgrounds */
-.app-container[data-card-theme="genesis"] {
+.app-container[data-card-theme="sf2gen"] {
   background: radial-gradient(circle at top right, rgba(183, 28, 28, 0.15) 0%, transparent 60%),
               radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.2) 0%, transparent 50%);
 }
@@ -1079,4 +1079,67 @@ h1, h2, h3, h4, h5, h6 {
 
   --gradient-card: linear-gradient(135deg, rgba(239, 68, 68, 0.1), transparent 60%);
   --gradient-button: linear-gradient(135deg, #ef4444, #991b1b);
+}
+
+/* ── Sega Genesis Grid Theme (New) ──────────────────────────── */
+[data-card-theme="genesis"] button[id^="game-card-"],
+[data-card-theme="genesis"] button[id^="char-card-"],
+[data-card-theme="genesis"] div[id^="move-"] {
+  background-color: #000000;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
+  background-size: 24px 24px;
+  background-position: center;
+  border: 1px solid #333;
+  color: #fff;
+  box-shadow: inset 0 0 40px rgba(0,0,0,0.9);
+  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+[data-card-theme="genesis"] button[id^="game-card-"]:hover,
+[data-card-theme="genesis"] button[id^="char-card-"]:hover,
+[data-card-theme="genesis"] div[id^="move-"]:hover {
+  background-color: #111;
+  border-color: #666;
+  background-image: 
+    linear-gradient(rgba(255, 255, 255, 0.25) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.25) 1px, transparent 1px);
+  box-shadow: inset 0 0 20px rgba(0,0,0,0.8), 0 4px 12px rgba(0,0,0,0.5);
+  transform: translateY(-2px);
+}
+
+[data-card-theme="genesis"] button[id^="game-card-"][data-selected="true"],
+[data-card-theme="genesis"] button[id^="char-card-"][data-selected="true"],
+[data-card-theme="genesis"] div[id^="move-"][data-selected="true"] {
+  background-color: #1a1a1a;
+  border-color: #e60012; /* Red accent for selected state */
+  box-shadow: inset 0 0 20px rgba(230, 0, 18, 0.2), 0 0 10px rgba(230, 0, 18, 0.3);
+}
+
+[data-card-theme="genesis"] .text-muted,
+[data-card-theme="genesis"] .text-tertiary {
+  color: #a3a3a3 !important;
+}
+
+[data-card-theme="genesis"] h2,
+[data-card-theme="genesis"] .font-mono {
+  color: #ffffff !important;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Add a subtle red power-light accent to the top edge */
+[data-card-theme="genesis"] button[id^="game-card-"]::before,
+[data-card-theme="genesis"] button[id^="char-card-"]::before,
+[data-card-theme="genesis"] div[id^="move-"]::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #e60012, transparent);
+  opacity: 0.5;
 }
