@@ -10,7 +10,7 @@ sources: 0
 # Fist of the North Star (Hokuto no Ken)
 
 ## Overview
-- **Platform:** Arcade, PS2
+- **Platform:** Arcade, PS2, PC
 - **Release Year:** 2005
 - **Roster Count:** 0
 

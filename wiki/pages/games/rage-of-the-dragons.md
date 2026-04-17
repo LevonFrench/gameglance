@@ -10,7 +10,7 @@ sources: 0
 # Rage of the Dragons
 
 ## Overview
-- **Platform:** Arcade, NeoGeo
+- **Platform:** Arcade, NeoGeo, PC
 - **Release Year:** 2002
 - **Roster Count:** 0
 

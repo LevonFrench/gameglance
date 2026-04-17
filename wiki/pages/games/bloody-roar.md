@@ -10,7 +10,7 @@ sources: 0
 # Bloody Roar
 
 ## Overview
-- **Platform:** Arcade, PS1
+- **Platform:** Arcade, PS1, PC
 - **Release Year:** 1997
 - **Roster Count:** 0
 

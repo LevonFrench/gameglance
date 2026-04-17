@@ -10,7 +10,7 @@ sources: 0
 # Virtua Fighter 5 Ultimate Showdown
 
 ## Overview
-- **Platform:** PS4
+- **Platform:** PS4, PC
 - **Release Year:** 2021
 - **Roster Count:** 0
 

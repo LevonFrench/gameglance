@@ -10,7 +10,7 @@ sources: 0
 # Project Justice
 
 ## Overview
-- **Platform:** Arcade Sega Dreamcast
+- **Platform:** Arcade Sega Dreamcast, PC
 - **Release Year:** 2000
 - **Roster Count:** 0
 

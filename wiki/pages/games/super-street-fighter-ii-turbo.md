@@ -10,7 +10,7 @@ sources: 0
 # Super Street Fighter II Turbo
 
 ## Overview
-- **Platform:** Arcade, 3DO
+- **Platform:** Arcade, 3DO, PC
 - **Release Year:** 1994
 - **Roster Count:** 0
 

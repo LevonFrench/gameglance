@@ -10,7 +10,7 @@ sources: 0
 # Marvel vs. Capcom 2
 
 ## Overview
-- **Platform:** Arcade, DC, PS2, Xbox
+- **Platform:** Arcade, DC, PS2, Xbox, PC
 - **Release Year:** 2000
 - **Roster Count:** 0
 

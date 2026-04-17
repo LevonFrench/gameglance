@@ -10,7 +10,7 @@ sources: 0
 # Dead or Alive 4
 
 ## Overview
-- **Platform:** Xbox 360
+- **Platform:** Xbox 360, PC
 - **Release Year:** 2005
 - **Roster Count:** 0
 

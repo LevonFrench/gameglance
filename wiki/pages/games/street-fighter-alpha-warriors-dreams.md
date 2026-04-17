@@ -10,7 +10,7 @@ sources: 0
 # Street Fighter Alpha: Warriors' Dreams
 
 ## Overview
-- **Platform:** Arcade, PS1, Saturn
+- **Platform:** Arcade, PS1, Saturn, PC
 - **Release Year:** 1995
 - **Roster Count:** 12
 

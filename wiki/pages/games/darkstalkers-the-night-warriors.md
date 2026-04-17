@@ -10,7 +10,7 @@ sources: 0
 # Darkstalkers: The Night Warriors
 
 ## Overview
-- **Platform:** Arcade, PS1
+- **Platform:** Arcade, PS1, PC
 - **Release Year:** 1994
 - **Roster Count:** 0
 

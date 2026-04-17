@@ -10,7 +10,7 @@ sources: 0
 # The King of Fighters '94
 
 ## Overview
-- **Platform:** Arcade, NeoGeo
+- **Platform:** Arcade, NeoGeo, PC
 - **Release Year:** 1994
 - **Roster Count:** 0
 

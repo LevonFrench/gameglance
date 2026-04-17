@@ -10,7 +10,7 @@ sources: 0
 # SNK vs. Capcom: SVC Chaos
 
 ## Overview
-- **Platform:** Arcade, PS2, Xbox
+- **Platform:** Arcade, PS2, Xbox, PC
 - **Release Year:** 2003
 - **Roster Count:** 0
 

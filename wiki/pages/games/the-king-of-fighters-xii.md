@@ -10,7 +10,7 @@ sources: 0
 # The King of Fighters XII
 
 ## Overview
-- **Platform:** Arcade, PS3, Xbox 360
+- **Platform:** Arcade, PS3, Xbox 360, PC
 - **Release Year:** 2009
 - **Roster Count:** 22
 

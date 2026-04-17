@@ -10,7 +10,7 @@ sources: 0
 # Super Smash Bros.
 
 ## Overview
-- **Platform:** N64
+- **Platform:** N64, PC
 - **Release Year:** 1999
 - **Roster Count:** 12
 

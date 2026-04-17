@@ -10,7 +10,7 @@ sources: 0
 # Way of the Warrior
 
 ## Overview
-- **Platform:** 3DO
+- **Platform:** 3DO, PC
 - **Release Year:** 1994
 - **Roster Count:** 0
 

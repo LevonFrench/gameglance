@@ -10,7 +10,7 @@ sources: 0
 # Real Bout Fatal Fury 2: The Newcomers
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, DC, PS2
+- **Platform:** Arcade, NeoGeo, DC, PS2, PC
 - **Release Year:** 1998
 - **Roster Count:** 0
 

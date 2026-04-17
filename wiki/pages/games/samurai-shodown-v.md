@@ -10,7 +10,7 @@ sources: 0
 # Samurai Shodown V
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, PS2, Xbox
+- **Platform:** Arcade, NeoGeo, PS2, Xbox, PC
 - **Release Year:** 2003
 - **Roster Count:** 0
 

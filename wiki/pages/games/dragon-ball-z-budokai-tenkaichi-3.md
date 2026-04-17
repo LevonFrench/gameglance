@@ -10,7 +10,7 @@ sources: 0
 # Dragon Ball Z: Budokai Tenkaichi 3
 
 ## Overview
-- **Platform:** PS2, Wii
+- **Platform:** PS2, Wii, PC
 - **Release Year:** 2007
 - **Roster Count:** 95
 

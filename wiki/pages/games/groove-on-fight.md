@@ -10,7 +10,7 @@ sources: 0
 # Groove on Fight
 
 ## Overview
-- **Platform:** Arcade Sega Saturn
+- **Platform:** Arcade Sega Saturn, PC
 - **Release Year:** 1997
 - **Roster Count:** 0
 

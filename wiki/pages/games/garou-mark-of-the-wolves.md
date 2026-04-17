@@ -10,7 +10,7 @@ sources: 0
 # Garou: Mark of the Wolves
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, DC, PS2
+- **Platform:** Arcade, NeoGeo, DC, PS2, PC
 - **Release Year:** 1999
 - **Roster Count:** 0
 

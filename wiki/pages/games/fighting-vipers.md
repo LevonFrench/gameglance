@@ -10,7 +10,7 @@ sources: 0
 # Fighting Vipers
 
 ## Overview
-- **Platform:** Arcade, Saturn
+- **Platform:** Arcade, Saturn, PC
 - **Release Year:** 1995
 - **Roster Count:** 0
 

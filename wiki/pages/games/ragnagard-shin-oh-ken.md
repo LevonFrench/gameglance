@@ -10,7 +10,7 @@ sources: 0
 # Ragnagard (Shin-Oh-Ken)
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, Saturn
+- **Platform:** Arcade, NeoGeo, Saturn, PC
 - **Release Year:** 1996
 - **Roster Count:** 0
 

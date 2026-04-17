@@ -10,7 +10,7 @@ sources: 0
 # The Last Blade
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, PS1, Saturn
+- **Platform:** Arcade, NeoGeo, PS1, Saturn, PC
 - **Release Year:** 1997
 - **Roster Count:** 0
 

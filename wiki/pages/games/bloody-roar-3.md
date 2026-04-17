@@ -10,7 +10,7 @@ sources: 0
 # Bloody Roar 3
 
 ## Overview
-- **Platform:** Arcade, PS2
+- **Platform:** Arcade, PS2, PC
 - **Release Year:** 2001
 - **Roster Count:** 0
 

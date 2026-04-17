@@ -10,7 +10,7 @@ sources: 0
 # Psychic Force 2012 (Psychic Force 2)
 
 ## Overview
-- **Platform:** Arcade, DC
+- **Platform:** Arcade, DC, PC
 - **Release Year:** 1998
 - **Roster Count:** 0
 

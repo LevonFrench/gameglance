@@ -10,7 +10,7 @@ sources: 0
 # Hyper Street Fighter II: The Anniversary Edition
 
 ## Overview
-- **Platform:** Arcade, PS2
+- **Platform:** Arcade, PS2, PC
 - **Release Year:** 2003
 - **Roster Count:** 16
 

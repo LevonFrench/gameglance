@@ -10,7 +10,7 @@ sources: 0
 # Eternal Champions
 
 ## Overview
-- **Platform:** Genesis
+- **Platform:** Genesis, PC
 - **Release Year:** 1993
 - **Roster Count:** 23
 

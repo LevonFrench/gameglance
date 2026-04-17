@@ -10,7 +10,7 @@ sources: 0
 # Super Smash Bros. Melee
 
 ## Overview
-- **Platform:** GC
+- **Platform:** GC, PC
 - **Release Year:** 2001
 - **Roster Count:** 26
 

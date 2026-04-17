@@ -10,7 +10,7 @@ sources: 0
 # Virtua Fighter 3
 
 ## Overview
-- **Platform:** Arcade, Saturn
+- **Platform:** Arcade, Saturn, PC
 - **Release Year:** 1996
 - **Roster Count:** 0
 

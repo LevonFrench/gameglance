@@ -10,7 +10,7 @@ sources: 0
 # Zero Divide
 
 ## Overview
-- **Platform:** Arcade, PS1
+- **Platform:** Arcade, PS1, PC
 - **Release Year:** 1995
 - **Roster Count:** 0
 

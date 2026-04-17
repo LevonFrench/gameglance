@@ -10,7 +10,7 @@ sources: 0
 # Art of Fighting 3: The Path of the Warrior
 
 ## Overview
-- **Platform:** Arcade, NeoGeo
+- **Platform:** Arcade, NeoGeo, PC
 - **Release Year:** 1996
 - **Roster Count:** 0
 

@@ -10,7 +10,7 @@ sources: 0
 # Bloody Roar 2: Bringer of the New Age
 
 ## Overview
-- **Platform:** Arcade, PS1
+- **Platform:** Arcade, PS1, PC
 - **Release Year:** 1999
 - **Roster Count:** 0
 

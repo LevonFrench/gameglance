@@ -10,7 +10,7 @@ sources: 0
 # Street Fighter III: 2nd Impact - Giant Attack
 
 ## Overview
-- **Platform:** Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade
+- **Platform:** Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade, PC
 - **Release Year:** 2023
 - **Roster Count:** 0
 

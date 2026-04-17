@@ -10,7 +10,7 @@ sources: 0
 # World Heroes 2 Jet
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, GB
+- **Platform:** Arcade, NeoGeo, GB, PC
 - **Release Year:** 1994
 - **Roster Count:** 0
 

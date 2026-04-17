@@ -10,7 +10,7 @@ sources: 0
 # The King of Fighters XI
 
 ## Overview
-- **Platform:** Arcade, PS2
+- **Platform:** Arcade, PS2, PC
 - **Release Year:** 2005
 - **Roster Count:** 45
 

@@ -10,7 +10,7 @@ sources: 0
 # Dead or Alive 5
 
 ## Overview
-- **Platform:** PS3, Xbox 360
+- **Platform:** PS3, Xbox 360, PC
 - **Release Year:** 2012
 - **Roster Count:** 0
 

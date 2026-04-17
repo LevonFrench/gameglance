@@ -10,7 +10,7 @@ sources: 0
 # Kakuto Chojin: Back Alley Brutal
 
 ## Overview
-- **Platform:** Xbox
+- **Platform:** Xbox, PC
 - **Release Year:** 2002
 - **Roster Count:** 0
 

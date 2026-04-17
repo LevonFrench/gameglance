@@ -10,7 +10,7 @@ sources: 0
 # Virtua Fighter 2
 
 ## Overview
-- **Platform:** Arcade, Saturn, PS1
+- **Platform:** Arcade, Saturn, PS1, PC
 - **Release Year:** 1994
 - **Roster Count:** 0
 

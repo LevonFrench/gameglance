@@ -10,7 +10,7 @@ sources: 0
 # Under Night In-Birth II [Sys:Celes]
 
 ## Overview
-- **Platform:** Windows PlayStation 4 PlayStation 5
+- **Platform:** Windows PlayStation 4 PlayStation 5, PC
 - **Release Year:** 2024
 - **Roster Count:** 0
 

@@ -10,7 +10,7 @@ sources: 0
 # Capcom vs. SNK: Millennium Fight 2000 Pro
 
 ## Overview
-- **Platform:** Arcade, PS1, DC
+- **Platform:** Arcade, PS1, DC, PC
 - **Release Year:** 2001
 - **Roster Count:** 0
 

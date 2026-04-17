@@ -10,7 +10,7 @@ sources: 0
 # Marvel vs. Capcom: Clash of Super Heroes
 
 ## Overview
-- **Platform:** Arcade, PS1, DC
+- **Platform:** Arcade, PS1, DC, PC
 - **Release Year:** 1998
 - **Roster Count:** 0
 

@@ -10,7 +10,7 @@ sources: 0
 # The King of Fighters '98
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, PS1, Saturn
+- **Platform:** Arcade, NeoGeo, PS1, Saturn, PC
 - **Release Year:** 1998
 - **Roster Count:** 34
 

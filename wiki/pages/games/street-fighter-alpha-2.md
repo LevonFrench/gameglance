@@ -10,7 +10,7 @@ sources: 0
 # Street Fighter Alpha 2
 
 ## Overview
-- **Platform:** Arcade, PS1, Saturn, SNES
+- **Platform:** Arcade, PS1, Saturn, SNES, PC
 - **Release Year:** 1996
 - **Roster Count:** 0
 

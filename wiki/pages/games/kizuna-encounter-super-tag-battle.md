@@ -10,7 +10,7 @@ sources: 0
 # Kizuna Encounter: Super Tag Battle
 
 ## Overview
-- **Platform:** Arcade, NeoGeo
+- **Platform:** Arcade, NeoGeo, PC
 - **Release Year:** 1996
 - **Roster Count:** 0
 

@@ -10,7 +10,7 @@ sources: 0
 # Guilty Gear (1998)
 
 ## Overview
-- **Platform:** PS1
+- **Platform:** PS1, PC
 - **Release Year:** 1998
 - **Roster Count:** 0
 

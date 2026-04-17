@@ -10,7 +10,7 @@ sources: 0
 # Street Fighter EX3
 
 ## Overview
-- **Platform:** PS2
+- **Platform:** PS2, PC
 - **Release Year:** 2000
 - **Roster Count:** 0
 

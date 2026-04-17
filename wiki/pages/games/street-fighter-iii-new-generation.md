@@ -10,7 +10,7 @@ sources: 0
 # Street Fighter III: New Generation
 
 ## Overview
-- **Platform:** Arcade
+- **Platform:** Arcade, PC
 - **Release Year:** 1997
 - **Roster Count:** 0
 

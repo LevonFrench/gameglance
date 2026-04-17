@@ -10,7 +10,7 @@ sources: 0
 # Pocket Fighter
 
 ## Overview
-- **Platform:** Arcade PlayStation Sega Saturn
+- **Platform:** Arcade PlayStation Sega Saturn, PC
 - **Release Year:** 1997
 - **Roster Count:** 0
 

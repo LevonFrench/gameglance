@@ -10,7 +10,7 @@ sources: 0
 # Fatal Fury Special
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, SNES, Genesis
+- **Platform:** Arcade, NeoGeo, SNES, Genesis, PC
 - **Release Year:** 1993
 - **Roster Count:** 0
 

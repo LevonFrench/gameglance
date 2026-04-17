@@ -10,7 +10,7 @@ sources: 0
 # Primal Rage
 
 ## Overview
-- **Platform:** Arcade, Genesis, SNES
+- **Platform:** Arcade, Genesis, SNES, PC
 - **Release Year:** 1994
 - **Roster Count:** 0
 

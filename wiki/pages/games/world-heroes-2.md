@@ -10,7 +10,7 @@ sources: 0
 # World Heroes 2
 
 ## Overview
-- **Platform:** Arcade, NeoGeo
+- **Platform:** Arcade, NeoGeo, PC
 - **Release Year:** 1993
 - **Roster Count:** 0
 

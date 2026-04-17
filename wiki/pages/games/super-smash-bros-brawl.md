@@ -10,7 +10,7 @@ sources: 0
 # Super Smash Bros. Brawl
 
 ## Overview
-- **Platform:** Wii
+- **Platform:** Wii, PC
 - **Release Year:** 2008
 - **Roster Count:** 39
 

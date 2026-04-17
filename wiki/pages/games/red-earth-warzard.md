@@ -10,7 +10,7 @@ sources: 0
 # Red Earth (Warzard)
 
 ## Overview
-- **Platform:** Arcade
+- **Platform:** Arcade, PC
 - **Release Year:** 1996
 - **Roster Count:** 10
 

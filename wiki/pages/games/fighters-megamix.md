@@ -10,7 +10,7 @@ sources: 0
 # Fighters Megamix
 
 ## Overview
-- **Platform:** Saturn
+- **Platform:** Saturn, PC
 - **Release Year:** 1996
 - **Roster Count:** 0
 

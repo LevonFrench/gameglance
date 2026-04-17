@@ -10,7 +10,7 @@ sources: 0
 # The King of Fighters: Maximum Impact
 
 ## Overview
-- **Platform:** PS2, Xbox
+- **Platform:** PS2, Xbox, PC
 - **Release Year:** 2004
 - **Roster Count:** 0
 

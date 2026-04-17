@@ -10,7 +10,7 @@ sources: 0
 # Street Fighter Alpha 3
 
 ## Overview
-- **Platform:** Arcade, PS1, Saturn, DC, PSP, GBA
+- **Platform:** Arcade, PS1, Saturn, DC, PSP, GBA, PC
 - **Release Year:** 1998
 - **Roster Count:** 0
 

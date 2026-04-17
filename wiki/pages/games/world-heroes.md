@@ -10,7 +10,7 @@ sources: 0
 # World Heroes
 
 ## Overview
-- **Platform:** Arcade, NeoGeo
+- **Platform:** Arcade, NeoGeo, PC
 - **Release Year:** 1992
 - **Roster Count:** 0
 

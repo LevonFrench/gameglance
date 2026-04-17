@@ -10,7 +10,7 @@ sources: 0
 # Guilty Gear X
 
 ## Overview
-- **Platform:** Arcade, DC, PS2
+- **Platform:** Arcade, DC, PS2, PC
 - **Release Year:** 2000
 - **Roster Count:** 0
 

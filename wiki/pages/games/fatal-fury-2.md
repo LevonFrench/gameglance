@@ -10,7 +10,7 @@ sources: 0
 # Fatal Fury 2
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, SNES, Genesis
+- **Platform:** Arcade, NeoGeo, SNES, Genesis, PC
 - **Release Year:** 1992
 - **Roster Count:** 0
 

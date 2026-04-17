@@ -10,7 +10,7 @@ sources: 0
 # Super Street Fighter IV
 
 ## Overview
-- **Platform:** PS3, Xbox 360, 3DS
+- **Platform:** PS3, Xbox 360, 3DS, PC
 - **Release Year:** 2010
 - **Roster Count:** 35
 

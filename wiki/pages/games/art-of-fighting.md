@@ -10,7 +10,7 @@ sources: 0
 # Art of Fighting
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, SNES, Genesis
+- **Platform:** Arcade, NeoGeo, SNES, Genesis, PC
 - **Release Year:** 1992
 - **Roster Count:** 0
 

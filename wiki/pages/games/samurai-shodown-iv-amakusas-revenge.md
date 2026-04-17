@@ -10,7 +10,7 @@ sources: 0
 # Samurai Shodown IV: Amakusa's Revenge
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, Saturn, PS1
+- **Platform:** Arcade, NeoGeo, Saturn, PS1, PC
 - **Release Year:** 1996
 - **Roster Count:** 16
 

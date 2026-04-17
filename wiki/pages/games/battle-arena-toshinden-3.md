@@ -10,7 +10,7 @@ sources: 0
 # Battle Arena Toshinden 3
 
 ## Overview
-- **Platform:** Arcade, PS1
+- **Platform:** Arcade, PS1, PC
 - **Release Year:** 1996
 - **Roster Count:** 0
 

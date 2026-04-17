@@ -10,7 +10,7 @@ sources: 0
 # Capcom Fighting Jam
 
 ## Overview
-- **Platform:** Arcade, PS2, Xbox
+- **Platform:** Arcade, PS2, Xbox, PC
 - **Release Year:** 2004
 - **Roster Count:** 0
 

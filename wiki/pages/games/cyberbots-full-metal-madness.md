@@ -10,7 +10,7 @@ sources: 0
 # Cyberbots: Full Metal Madness
 
 ## Overview
-- **Platform:** Arcade, Saturn, PS1
+- **Platform:** Arcade, Saturn, PS1, PC
 - **Release Year:** 1995
 - **Roster Count:** 0
 

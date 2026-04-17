@@ -10,7 +10,7 @@ sources: 0
 # Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer)
 
 ## Overview
-- **Platform:** Neo Geo Arcade PlayStation
+- **Platform:** Neo Geo Arcade PlayStation, PC
 - **Release Year:** 1995
 - **Roster Count:** 0
 

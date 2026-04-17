@@ -10,7 +10,7 @@ sources: 0
 # Dead or Alive 2
 
 ## Overview
-- **Platform:** Arcade, DC, PS2
+- **Platform:** Arcade, DC, PS2, PC
 - **Release Year:** 1999
 - **Roster Count:** 0
 

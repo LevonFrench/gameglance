@@ -10,7 +10,7 @@ sources: 0
 # Matrimelee (Power Instinct Matrimelee)
 
 ## Overview
-- **Platform:** Neo Geo Arcade PlayStation 2
+- **Platform:** Neo Geo Arcade PlayStation 2, PC
 - **Release Year:** 2003
 - **Roster Count:** 0
 

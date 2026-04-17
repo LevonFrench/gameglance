@@ -10,7 +10,7 @@ sources: 0
 # Fatal Fury 3: Road to the Final Victory
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, Saturn
+- **Platform:** Arcade, NeoGeo, Saturn, PC
 - **Release Year:** 1995
 - **Roster Count:** 0
 

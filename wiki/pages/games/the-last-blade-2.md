@@ -10,7 +10,7 @@ sources: 0
 # The Last Blade 2
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, DC, PS2
+- **Platform:** Arcade, NeoGeo, DC, PS2, PC
 - **Release Year:** 1998
 - **Roster Count:** 0
 

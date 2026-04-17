@@ -10,7 +10,7 @@ sources: 0
 # Capcom vs. SNK 2: Mark of the Millennium 2001
 
 ## Overview
-- **Platform:** Arcade, PS2, GC, Xbox, DC
+- **Platform:** Arcade, PS2, GC, Xbox, DC, PC
 - **Release Year:** 2001
 - **Roster Count:** 0
 

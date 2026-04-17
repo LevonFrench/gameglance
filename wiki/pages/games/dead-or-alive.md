@@ -10,7 +10,7 @@ sources: 0
 # Dead or Alive
 
 ## Overview
-- **Platform:** Arcade, Saturn, PS1
+- **Platform:** Arcade, Saturn, PS1, PC
 - **Release Year:** 1996
 - **Roster Count:** 0
 

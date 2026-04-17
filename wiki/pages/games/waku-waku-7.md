@@ -10,7 +10,7 @@ sources: 0
 # Waku Waku 7
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, Saturn
+- **Platform:** Arcade, NeoGeo, Saturn, PC
 - **Release Year:** 1996
 - **Roster Count:** 0
 

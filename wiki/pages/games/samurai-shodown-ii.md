@@ -10,7 +10,7 @@ sources: 0
 # Samurai Shodown II
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, Saturn, PS1
+- **Platform:** Arcade, NeoGeo, Saturn, PS1, PC
 - **Release Year:** 1994
 - **Roster Count:** 0
 

@@ -10,7 +10,7 @@ sources: 0
 # Bloody Roar 2
 
 ## Overview
-- **Platform:** Arcade PlayStation
+- **Platform:** Arcade PlayStation, PC
 - **Release Year:** 1997
 - **Roster Count:** 0
 

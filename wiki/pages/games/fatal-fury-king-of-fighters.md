@@ -10,7 +10,7 @@ sources: 0
 # Fatal Fury
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, SNES, Genesis
+- **Platform:** Arcade, NeoGeo, SNES, Genesis, PC
 - **Release Year:** 1991
 - **Roster Count:** 0
 

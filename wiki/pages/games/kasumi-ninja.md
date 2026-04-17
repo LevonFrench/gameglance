@@ -10,7 +10,7 @@ sources: 0
 # Kasumi Ninja
 
 ## Overview
-- **Platform:** Jaguar
+- **Platform:** Jaguar, PC
 - **Release Year:** 1994
 - **Roster Count:** 0
 

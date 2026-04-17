@@ -10,7 +10,7 @@ sources: 0
 # SoulCalibur IV
 
 ## Overview
-- **Platform:** PS3, Xbox 360
+- **Platform:** PS3, Xbox 360, PC
 - **Release Year:** 2008
 - **Roster Count:** 28
 

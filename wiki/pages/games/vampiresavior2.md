@@ -10,7 +10,7 @@ sources: 0
 # Vampire Savior 2
 
 ## Overview
-- **Platform:** Arcade Sega Saturn PlayStation
+- **Platform:** Arcade Sega Saturn PlayStation, PC
 - **Release Year:** 1997
 - **Roster Count:** 0
 

@@ -10,7 +10,7 @@ sources: 0
 # WeaponLord
 
 ## Overview
-- **Platform:** SNES, Genesis
+- **Platform:** SNES, Genesis, PC
 - **Release Year:** 1995
 - **Roster Count:** 8
 

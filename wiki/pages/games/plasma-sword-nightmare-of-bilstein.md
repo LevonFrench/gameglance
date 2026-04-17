@@ -10,7 +10,7 @@ sources: 0
 # Plasma Sword: Nightmare of Bilstein
 
 ## Overview
-- **Platform:** Arcade, DC
+- **Platform:** Arcade, DC, PC
 - **Release Year:** 1998
 - **Roster Count:** 0
 

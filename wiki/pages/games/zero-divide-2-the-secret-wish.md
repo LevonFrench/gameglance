@@ -10,7 +10,7 @@ sources: 0
 # Zero Divide 2: The Secret Wish
 
 ## Overview
-- **Platform:** PS1
+- **Platform:** PS1, PC
 - **Release Year:** 1997
 - **Roster Count:** 0
 

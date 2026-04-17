@@ -10,7 +10,7 @@ sources: 0
 # Psychic Force
 
 ## Overview
-- **Platform:** Arcade, PS1
+- **Platform:** Arcade, PS1, PC
 - **Release Year:** 1996
 - **Roster Count:** 0
 

@@ -10,7 +10,7 @@ sources: 0
 # Vampire Hunter 2
 
 ## Overview
-- **Platform:** Arcade
+- **Platform:** Arcade, PC
 - **Release Year:** 1997
 - **Roster Count:** 0
 

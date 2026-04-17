@@ -10,7 +10,7 @@ sources: 0
 # Groove On Fight (Power Instinct 3)
 
 ## Overview
-- **Platform:** Arcade, Saturn
+- **Platform:** Arcade, Saturn, PC
 - **Release Year:** 1997
 - **Roster Count:** 0
 

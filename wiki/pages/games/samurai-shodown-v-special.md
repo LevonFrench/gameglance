@@ -10,7 +10,7 @@ sources: 0
 # Samurai Shodown V Special
 
 ## Overview
-- **Platform:** Arcade, NeoGeo
+- **Platform:** Arcade, NeoGeo, PC
 - **Release Year:** 2004
 - **Roster Count:** 0
 

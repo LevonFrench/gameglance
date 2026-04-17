@@ -10,7 +10,7 @@ sources: 0
 # The King of Fighters: Maximum Impact Regulation 'A'
 
 ## Overview
-- **Platform:** Arcade, PS2
+- **Platform:** Arcade, PS2, PC
 - **Release Year:** 2007
 - **Roster Count:** 5
 

@@ -10,7 +10,7 @@ sources: 0
 # Dead or Alive 3
 
 ## Overview
-- **Platform:** Xbox
+- **Platform:** Xbox, PC
 - **Release Year:** 2001
 - **Roster Count:** 0
 

@@ -10,7 +10,7 @@ sources: 0
 # Street Fighter II: Champion Edition
 
 ## Overview
-- **Platform:** Arcade, SNES, Genesis
+- **Platform:** Arcade, SNES, Genesis, PC
 - **Release Year:** 1992
 - **Roster Count:** 12
 

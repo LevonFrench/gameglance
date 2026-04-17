@@ -10,7 +10,7 @@ sources: 0
 # JoJo's Bizarre Adventure: Heritage for the Future (JJBA: HFTF)
 
 ## Overview
-- **Platform:** Arcade Sega Dreamcast PlayStation
+- **Platform:** Arcade Sega Dreamcast PlayStation, PC
 - **Release Year:** 1999
 - **Roster Count:** 0
 

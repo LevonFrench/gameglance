@@ -10,7 +10,7 @@ sources: 0
 # Tatsunoko vs. Capcom: Ultimate All-Stars
 
 ## Overview
-- **Platform:** Arcade, Wii
+- **Platform:** Arcade, Wii, PC
 - **Release Year:** 2010
 - **Roster Count:** 0
 

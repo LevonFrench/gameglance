@@ -10,7 +10,7 @@ sources: 0
 # Fighting Vipers 2
 
 ## Overview
-- **Platform:** Arcade, DC
+- **Platform:** Arcade, DC, PC
 - **Release Year:** 1998
 - **Roster Count:** 0
 

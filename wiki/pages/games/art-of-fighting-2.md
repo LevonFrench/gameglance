@@ -10,7 +10,7 @@ sources: 0
 # Art of Fighting 2
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, SNES
+- **Platform:** Arcade, NeoGeo, SNES, PC
 - **Release Year:** 1994
 - **Roster Count:** 0
 

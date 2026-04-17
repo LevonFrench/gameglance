@@ -10,7 +10,7 @@ sources: 0
 # Dragon Ball Z: Budokai 3
 
 ## Overview
-- **Platform:** PS2
+- **Platform:** PS2, PC
 - **Release Year:** 2004
 - **Roster Count:** 37
 

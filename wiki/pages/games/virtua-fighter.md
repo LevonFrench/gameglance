@@ -10,7 +10,7 @@ sources: 0
 # Virtua Fighter 1
 
 ## Overview
-- **Platform:** Arcade Sega Saturn Sega 32X
+- **Platform:** Arcade Sega Saturn Sega 32X, PC
 - **Release Year:** 1993
 - **Roster Count:** 0
 

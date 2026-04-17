@@ -10,7 +10,7 @@ sources: 0
 # The King of Fighters '99
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, PS1, DC
+- **Platform:** Arcade, NeoGeo, PS1, DC, PC
 - **Release Year:** 1999
 - **Roster Count:** 28
 

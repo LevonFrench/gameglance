@@ -10,7 +10,7 @@ sources: 0
 # ClayFighter
 
 ## Overview
-- **Platform:** SNES, Genesis
+- **Platform:** SNES, Genesis, PC
 - **Release Year:** 1993
 - **Roster Count:** 8
 

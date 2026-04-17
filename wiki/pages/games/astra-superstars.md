@@ -10,7 +10,7 @@ sources: 0
 # Astra Superstars
 
 ## Overview
-- **Platform:** Arcade
+- **Platform:** Arcade, PC
 - **Release Year:** 1998
 - **Roster Count:** 0
 

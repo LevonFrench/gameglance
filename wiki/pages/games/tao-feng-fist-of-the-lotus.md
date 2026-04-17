@@ -10,7 +10,7 @@ sources: 0
 # Tao Feng: Fist of the Lotus
 
 ## Overview
-- **Platform:** Xbox
+- **Platform:** Xbox, PC
 - **Release Year:** 2003
 - **Roster Count:** 0
 

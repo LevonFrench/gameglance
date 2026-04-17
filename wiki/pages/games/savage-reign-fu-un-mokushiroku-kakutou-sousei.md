@@ -10,7 +10,7 @@ sources: 0
 # Savage Reign (Fu'un Mokushiroku: Kakutou Sousei)
 
 ## Overview
-- **Platform:** Neo Geo Arcade PlayStation
+- **Platform:** Neo Geo Arcade PlayStation, PC
 - **Release Year:** 1995
 - **Roster Count:** 0
 

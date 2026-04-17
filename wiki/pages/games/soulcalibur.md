@@ -10,7 +10,7 @@ sources: 0
 # SoulCalibur
 
 ## Overview
-- **Platform:** Arcade, DC
+- **Platform:** Arcade, DC, PC
 - **Release Year:** 1998
 - **Roster Count:** 17
 

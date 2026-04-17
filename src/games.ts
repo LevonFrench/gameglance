@@ -8170,4 +8170,28 @@ rosterCount: 8,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Throws', 'Unique Attacks']
   }
+  ,
+  {
+    id: 'idol-showdown',
+    name: 'Idol Showdown',
+    developer: 'Besto Game Team',
+    releaseYear: 2023,
+    platform: 'PC',
+    rosterCount: 12,
+    characters: [
+      { id: 'shirakami-fubuki', name: 'Shirakami Fubuki' },
+      { id: 'inugami-korone', name: 'Inugami Korone' },
+      { id: 'hoshimachi-suisei', name: 'Hoshimachi Suisei' },
+      { id: 'aki-rosenthal', name: 'Aki Rosenthal' },
+      { id: 'kiryu-coco', name: 'Kiryu Coco' },
+      { id: 'nakiri-ayame', name: 'Nakiri Ayame' },
+      { id: 'shishiro-botan', name: 'Shishiro Botan' },
+      { id: 'tokino-sora', name: 'Tokino Sora' },
+      { id: 'usada-pekora', name: 'Usada Pekora' },
+      { id: 'kureiji-ollie', name: 'Kureiji Ollie' },
+      { id: 'ninomae-inanis', name: "Ninomae Ina'nis" },
+      { id: 'hakui-koyori', name: 'Hakui Koyori' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Throws', 'Unique Attacks']
+  }
 ];

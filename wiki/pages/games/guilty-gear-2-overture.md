@@ -10,7 +10,7 @@ sources: 0
 # Guilty Gear 2: Overture
 
 ## Overview
-- **Platform:** Xbox 360
+- **Platform:** Xbox 360, PC
 - **Release Year:** 2007
 - **Roster Count:** 7
 

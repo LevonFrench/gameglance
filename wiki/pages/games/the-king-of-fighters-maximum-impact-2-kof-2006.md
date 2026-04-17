@@ -10,7 +10,7 @@ sources: 0
 # The King of Fighters: Maximum Impact 2 (KOF 2006)
 
 ## Overview
-- **Platform:** PS2
+- **Platform:** PS2, PC
 - **Release Year:** 2006
 - **Roster Count:** 0
 

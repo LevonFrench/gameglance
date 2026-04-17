@@ -10,7 +10,7 @@ sources: 0
 # Soul Calibur
 
 ## Overview
-- **Platform:** Arcade Sega Dreamcast
+- **Platform:** Arcade Sega Dreamcast, PC
 - **Release Year:** 1998
 - **Roster Count:** 0
 

@@ -10,7 +10,7 @@ sources: 0
 # Ninja Master
 
 ## Overview
-- **Platform:** Neo Geo Arcade PlayStation 1
+- **Platform:** Neo Geo Arcade PlayStation 1, PC
 - **Release Year:** 1996
 - **Roster Count:** 0
 

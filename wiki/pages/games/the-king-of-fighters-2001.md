@@ -10,7 +10,7 @@ sources: 0
 # The King of Fighters 2001
 
 ## Overview
-- **Platform:** Arcade, NeoGeo, PS2, DC
+- **Platform:** Arcade, NeoGeo, PS2, DC, PC
 - **Release Year:** 2001
 - **Roster Count:** 0
 

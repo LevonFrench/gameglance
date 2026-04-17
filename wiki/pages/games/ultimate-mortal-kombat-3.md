@@ -10,7 +10,7 @@ sources: 0
 # Ultimate Mortal Kombat 3
 
 ## Overview
-- **Platform:** Arcade, SNES, Genesis, Saturn
+- **Platform:** Arcade, SNES, Genesis, Saturn, PC
 - **Release Year:** 1995
 - **Roster Count:** 0
 

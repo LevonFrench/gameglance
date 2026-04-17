@@ -10,7 +10,7 @@ sources: 0
 # SoulCalibur II
 
 ## Overview
-- **Platform:** Arcade, PS2, Xbox, GC
+- **Platform:** Arcade, PS2, Xbox, GC, PC
 - **Release Year:** 2002
 - **Roster Count:** 21
 

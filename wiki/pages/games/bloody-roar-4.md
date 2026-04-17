@@ -10,7 +10,7 @@ sources: 0
 # Bloody Roar 4
 
 ## Overview
-- **Platform:** PS2
+- **Platform:** PS2, PC
 - **Release Year:** 2003
 - **Roster Count:** 0
 

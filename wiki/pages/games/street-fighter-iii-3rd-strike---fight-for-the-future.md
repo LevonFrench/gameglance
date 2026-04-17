@@ -10,7 +10,7 @@ sources: 0
 # Street Fighter III: 3rd Strike - Fight for the Future
 
 ## Overview
-- **Platform:** Arcade, DC, PS2, Xbox
+- **Platform:** Arcade, DC, PS2, Xbox, PC
 - **Release Year:** 1999
 - **Roster Count:** 19
 
