@@ -568,7 +568,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
       <main style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-        gap: '1.5rem',
+        gap: 'calc(1.5rem * var(--spacing-scale, 1))',
         maxWidth: '1400px',
         width: '100%',
         margin: '0 auto',

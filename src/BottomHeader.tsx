@@ -7,13 +7,17 @@ interface Props {
   onSetController: (c: ControllerType) => void;
   cardTheme: CardTheme;
   onSetCardTheme: (t: CardTheme) => void;
+  notationSystem: string;
+  onSetNotationSystem: (n: string) => void;
 }
 
 export const BottomHeader: React.FC<Props> = ({ 
   controller, 
   onSetController, 
   cardTheme, 
-  onSetCardTheme
+  onSetCardTheme,
+  notationSystem,
+  onSetNotationSystem
 }) => {
   return (
     <div style={{
@@ -23,7 +27,7 @@ export const BottomHeader: React.FC<Props> = ({
       width: '100%',
       backgroundColor: 'var(--bg-elevated)',
       borderTop: '1px solid var(--border-medium)',
-      padding: '0.75rem var(--space-xl)',
+      padding: 'calc(0.75rem * var(--spacing-scale)) calc(var(--space-xl) * var(--spacing-scale))',
       display: 'flex',
       flexDirection: 'column',
       alignItems: 'center',
@@ -37,17 +41,17 @@ export const BottomHeader: React.FC<Props> = ({
         
         {/* Card Theme Setting */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <label style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', fontWeight: 500 }}>Cards:</label>
+          <label style={{ fontSize: 'calc(0.8rem * var(--font-scale))', color: 'var(--text-secondary)', fontWeight: 500 }}>Cards:</label>
           <select
             value={cardTheme}
             onChange={(e) => onSetCardTheme(e.target.value as CardTheme)}
             style={{
-              padding: '0.35rem 0.65rem',
+              padding: 'calc(0.35rem * var(--spacing-scale)) calc(0.65rem * var(--spacing-scale))',
               background: 'var(--bg-input)',
               border: '1px solid var(--border-subtle)',
               borderRadius: 'var(--radius-md)',
               color: 'var(--text-primary)',
-              fontSize: '0.8rem',
+              fontSize: 'calc(0.8rem * var(--font-scale))',
               fontFamily: 'inherit',
               cursor: 'pointer',
               outline: 'none',
@@ -66,17 +70,17 @@ export const BottomHeader: React.FC<Props> = ({
 
         {/* Glyph Setting */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <label style={{ fontSize: '0.8rem', color: 'var(--text-secondary)', fontWeight: 500 }}>Glyphs:</label>
+          <label style={{ fontSize: 'calc(0.8rem * var(--font-scale))', color: 'var(--text-secondary)', fontWeight: 500 }}>Glyphs:</label>
           <select
             value={controller}
             onChange={(e) => onSetController(e.target.value as ControllerType)}
             style={{
-              padding: '0.35rem 0.65rem',
+              padding: 'calc(0.35rem * var(--spacing-scale)) calc(0.65rem * var(--spacing-scale))',
               background: 'var(--bg-input)',
               border: '1px solid var(--border-subtle)',
               borderRadius: 'var(--radius-md)',
               color: 'var(--text-primary)',
-              fontSize: '0.8rem',
+              fontSize: 'calc(0.8rem * var(--font-scale))',
               fontFamily: 'inherit',
               cursor: 'pointer',
               outline: 'none',
@@ -104,7 +108,31 @@ export const BottomHeader: React.FC<Props> = ({
           </select>
         </div>
 
+        <div style={{ width: '1px', height: '20px', background: 'var(--border-subtle)' }} />
 
+        {/* Notation Setting */}
+        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+          <label style={{ fontSize: 'calc(0.8rem * var(--font-scale))', color: 'var(--text-secondary)', fontWeight: 500 }}>Notation:</label>
+          <select
+            value={notationSystem}
+            onChange={(e) => onSetNotationSystem(e.target.value)}
+            style={{
+              padding: 'calc(0.35rem * var(--spacing-scale)) calc(0.65rem * var(--spacing-scale))',
+              background: 'var(--bg-input)',
+              border: '1px solid var(--border-subtle)',
+              borderRadius: 'var(--radius-md)',
+              color: 'var(--text-primary)',
+              fontSize: 'calc(0.8rem * var(--font-scale))',
+              fontFamily: 'inherit',
+              cursor: 'pointer',
+              outline: 'none',
+            }}
+          >
+            <option value="auto" style={{ background: 'var(--option-bg)' }}>Auto</option>
+            <option value="numpad" style={{ background: 'var(--option-bg)' }}>Numpad (236)</option>
+            <option value="traditional" style={{ background: 'var(--option-bg)' }}>Arrows (↓↘→)</option>
+          </select>
+        </div>
 
       </div>
 

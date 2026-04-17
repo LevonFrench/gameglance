@@ -31,7 +31,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
   const [showOptions, setShowOptions] = useState(false);
   const [displayMode, setDisplayMode] = useState<'paged' | 'smooth' | 'stadium'>('paged');
   const [flipDelayMs, setFlipDelayMs] = useState(5000);
-  const [itemsPerPage, setItemsPerPage] = useState(5);
+  const [itemsPerPage, setItemsPerPage] = useState(() => window.innerWidth <= 480 ? 3 : 5);
 
   const effectiveItemsPerPage = displayMode === 'stadium' ? 1 : itemsPerPage;
   const totalPages = Math.ceil(playlist.length / effectiveItemsPerPage);
@@ -590,7 +590,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
               alignItems: 'center',
               justifyContent: 'center',
               flexShrink: 0,
-              transform: displayMode === 'stadium' ? 'scale(2)' : 'none',
+              transform: displayMode === 'stadium' ? 'scale(calc(2 * var(--icon-scale, 1)))' : 'scale(var(--icon-scale, 1))',
               transformOrigin: 'center',
               marginTop: displayMode === 'stadium' ? '2.5rem' : '0',
             }}>
@@ -620,13 +620,19 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
               border: 'none',
               color: 'var(--text-tertiary)',
               cursor: 'pointer',
-              fontSize: '0.9rem',
-              padding: '0.25rem 0.5rem',
+              fontSize: '1.2rem',
+              minWidth: '48px',
+              minHeight: '48px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: 0,
               fontFamily: 'inherit',
               transition: 'color 0.2s',
             }}
             onMouseOver={e => e.currentTarget.style.color = 'var(--text-primary)'}
             onMouseOut={e => e.currentTarget.style.color = 'var(--text-tertiary)'}
+            aria-label="Previous page"
           >
             ‹
           </button>
@@ -635,19 +641,33 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
           {Array.from({ length: totalPages }).map((_, i) => (
             <button
               key={i}
+              className="pagination-dot"
               onClick={() => goToPage(i)}
+              aria-label={`Go to page ${i + 1}`}
               style={{
+                width: i === currentPage ? '28px' : '8px',
+                height: '8px',
+                minWidth: '48px',
+                minHeight: '48px',
+                position: 'relative',
+                background: 'transparent',
+                border: 'none',
+                cursor: 'pointer',
+                padding: 0,
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center'
+              }}
+            >
+              <div style={{
                 width: i === currentPage ? '28px' : '8px',
                 height: '8px',
                 borderRadius: 'var(--radius-full)',
                 backgroundColor: i === currentPage ? 'var(--accent-indigo)' : (isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'),
-                border: 'none',
-                cursor: 'pointer',
                 transition: 'all 0.35s cubic-bezier(0.16, 1, 0.3, 1)',
-                padding: 0,
                 boxShadow: i === currentPage ? '0 0 8px rgba(99, 102, 241, 0.3)' : 'none',
-              }}
-            />
+              }} />
+            </button>
           ))}
 
           {/* Next button */}
@@ -658,13 +678,19 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
               border: 'none',
               color: 'var(--text-tertiary)',
               cursor: 'pointer',
-              fontSize: '0.9rem',
-              padding: '0.25rem 0.5rem',
+              fontSize: '1.2rem',
+              minWidth: '48px',
+              minHeight: '48px',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              padding: 0,
               fontFamily: 'inherit',
               transition: 'color 0.2s',
             }}
             onMouseOver={e => e.currentTarget.style.color = 'var(--text-primary)'}
             onMouseOut={e => e.currentTarget.style.color = 'var(--text-tertiary)'}
+            aria-label="Next page"
           >
             ›
           </button>

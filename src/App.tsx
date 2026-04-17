@@ -31,6 +31,9 @@ function App() {
     const val = localStorage.getItem('gg_card_theme');
     return (CARD_THEMES as readonly string[]).includes(val || '') ? (val as CardTheme) : 'default-dark';
   });
+  const [notationOverride, setNotationOverride] = useState<string>(() => {
+    return localStorage.getItem('gg_notation_override') || 'auto';
+  });
   const [returningFromMoveList, setReturningFromMoveList] = useState(false);
   const [disableGameSelectAnimation, setDisableGameSelectAnimation] = useState(false);
 
@@ -192,7 +195,7 @@ function App() {
          gameName={selectedGame?.name || 'GAMES'}
          characterName={charName}
          controller={controller}
-         notationSystem={selectedGame?.notationSystem}
+         notationSystem={notationOverride === 'auto' ? selectedGame?.notationSystem : notationOverride}
          onSetController={setController}
          onExit={() => window.history.back()} 
       />;
@@ -210,6 +213,11 @@ function App() {
         onSetController={setController}
         cardTheme={cardTheme}
         onSetCardTheme={setCardTheme}
+        notationSystem={notationOverride}
+        onSetNotationSystem={(val) => {
+          setNotationOverride(val);
+          localStorage.setItem('gg_notation_override', val);
+        }}
       />
     </div>
   );

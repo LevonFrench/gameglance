@@ -58,6 +58,40 @@
 
   /* Noise opacity */
   --noise-opacity: 0.015;
+} 
+
+/* Responsive scaling variables */
+:root {
+  --font-scale: 1;
+  --icon-scale: 1;
+  --spacing-scale: 1;
+}
+
+/* Mobile – up to 480px */
+@media (max-width: 480px) {
+  :root {
+    --font-scale: 0.85;
+    --icon-scale: 0.75;
+    --spacing-scale: 0.8;
+  }
+}
+
+/* Tablet – 600‑900px */
+@media (min-width: 600px) and (max-width: 900px) {
+  :root {
+    --font-scale: 0.95;
+    --icon-scale: 0.9;
+    --spacing-scale: 0.9;
+  }
+}
+
+/* Optional large‑phone – 481‑599px */
+@media (min-width: 481px) and (max-width: 599px) {
+  :root {
+    --font-scale: 0.9;
+    --icon-scale: 0.85;
+    --spacing-scale: 0.85;
+  }
 }
 
 /* ── Light Theme ──────────────────────────────────── */
@@ -163,6 +197,10 @@ html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+}
+
+button, a, select, input, .pagination-dot {
+  touch-action: manipulation;
 }
 
 body {
