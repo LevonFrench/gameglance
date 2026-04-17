@@ -2310,13 +2310,8 @@ rosterCount: 7,
 
         characters: [
       { id: 'captain-america', name: 'Captain America' },
-      { id: 'hulk', name: 'Hulk' },
       { id: 'iron-man', name: 'Iron Man' },
             { id: 'ms-marvel', name: 'Ms. Marvel' },
-      { id: 'spider-man', name: 'Spider-Man' },
-      { id: 'thanos', name: 'Thanos' },
-      { id: 'thor', name: 'Thor' },
-      { id: 'wolverine', name: 'Wolverine' }
       { id: 'doctor-doom', name: 'Doctor Doom' },
       { id: 'star-lord', name: 'Star-Lord' },
       { id: 'storm', name: 'Storm' },
