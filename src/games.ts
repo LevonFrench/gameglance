@@ -4342,6 +4342,45 @@ rosterCount: 31,
   },
 
   {
+    id: 'tekken-tag-tournament',
+    name: 'Tekken Tag Tournament',
+    characters: [
+      { id: 'armor-king', name: 'Armor King' },
+      { id: 'baek-doo-san', name: 'Baek Doo San' },
+      { id: 'bruce-irvin', name: 'Bruce Irvin' },
+      { id: 'bryan-fury', name: 'Bryan Fury' },
+      { id: 'devil', name: 'Devil' },
+      { id: 'eddy-gordo', name: 'Eddy Gordo' },
+      { id: 'ganryu', name: 'Ganryu' },
+      { id: 'gun-jack', name: 'Gun Jack' },
+      { id: 'heihachi-mishima', name: 'Heihachi Mishima' },
+      { id: 'hwoarang', name: 'Hwoarang' },
+      { id: 'jin-kazama', name: 'Jin Kazama' },
+      { id: 'julia-chang', name: 'Julia Chang' },
+      { id: 'jun-kazama', name: 'Jun Kazama' },
+      { id: 'kazuya-mishima', name: 'Kazuya Mishima' },
+      { id: 'king', name: 'King' },
+      { id: 'kuma', name: 'Kuma' },
+      { id: 'kunimitsu', name: 'Kunimitsu' },
+      { id: 'lee-chaolan', name: 'Lee Chaolan' },
+      { id: 'lei-wulong', name: 'Lei Wulong' },
+      { id: 'ling-xiaoyu', name: 'Ling Xiaoyu' },
+      { id: 'michelle-chang', name: 'Michelle Chang' },
+      { id: 'mokujin', name: 'Mokujin' },
+      { id: 'nina-williams', name: 'Nina Williams' },
+      { id: 'ogre', name: 'Ogre' },
+      { id: 'panda', name: 'Panda' },
+      { id: 'paul-phoenix', name: 'Paul Phoenix' },
+      { id: 'prototype-jack', name: 'Prototype Jack' },
+      { id: 'roger', name: 'Roger' },
+      { id: 'true-ogre', name: 'True Ogre' },
+      { id: 'unknown', name: 'Unknown' },
+      { id: 'wang-jinrei', name: 'Wang Jinrei' },
+      { id: 'yoshimitsu', name: 'Yoshimitsu' }
+    ]
+  },
+
+  {
 
     id: 'the-king-of-fighters-94',
 
