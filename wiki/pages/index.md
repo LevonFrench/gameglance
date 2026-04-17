@@ -21,7 +21,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ---
 
-## 🕹️ Games (225)
+## 🕹️ Games (226)
 
 ### Complete Roster
 | Page | Game | Platform | Year | Characters |
@@ -165,6 +165,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 | [[samurai-shodown-v-special]] | Samurai Shodown V Special | Arcade, NeoGeo, PC | 2004 | 0 |
 | [[tekken-5]] | Tekken 5 | PS2, PC | 2004 | 32 |
 | [[the-king-of-fighters-maximum-impact]] | The King of Fighters: Maximum Impact | PS2, Xbox, PC | 2004 | 0 |
+| [[the-rumble-fish]] | The Rumble Fish | Arcade, PlayStation 2 | 2004 | 10 |
 | [[dead-or-alive-4]] | Dead or Alive 4 | Xbox 360, PC | 2005 | 0 |
 | [[fist-of-the-north-star-hokuto-no-ken]] | Fist of the North Star (Hokuto no Ken) | Arcade, PS2, PC | 2005 | 0 |
 | [[neo-geo-battle-coliseum]] | Neo Geo Battle Coliseum | Arcade, PlayStation 2, PC | 2005 | 40 |
@@ -298,7 +299,7 @@ Master catalog of all wiki pages. The LLM reads this first when answering querie
 
 ## Statistics
 
-- **Total pages**: 227 (225 games)
-- **Games covered**: 225
-- **Total characters**: sum total across games is 1693
+- **Total pages**: 228 (226 games)
+- **Games covered**: 226
+- **Total characters**: sum total across games is 1703
 - **Last updated**: 2026-04-17

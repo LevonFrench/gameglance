@@ -8297,4 +8297,27 @@ rosterCount: 8,
     ],
     tabs: ['Special Moves', 'Arcana Moves', 'Super Moves', 'Critical Heart', 'Normal Moves', 'Throws', 'Unique Attacks']
   }
+  ,
+  {
+    id: 'the-rumble-fish',
+    notationSystem: 'numpad',
+    name: 'The Rumble Fish',
+    developer: 'Dimps',
+    releaseYear: 2004,
+    platform: 'Arcade, PlayStation 2',
+    rosterCount: 10,
+    characters: [
+      { id: 'zen', name: 'Zen' },
+      { id: 'hikari', name: 'Hikari' },
+      { id: 'typhon', name: 'Typhon' },
+      { id: 'garnet', name: 'Garnet' },
+      { id: 'orville', name: 'Orville' },
+      { id: 'boyd', name: 'Boyd' },
+      { id: 'viren', name: 'Viren' },
+      { id: 'kaya', name: 'Kaya' },
+      { id: 'aran', name: 'Aran' },
+      { id: 'greed', name: 'Greed' }
+    ],
+    tabs: ['Special Moves', 'Offensive Art', 'Defensive Art', 'Critical Art', 'Normal Moves', 'Throws', 'Unique Attacks']
+  }
 ];
