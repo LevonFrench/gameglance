@@ -1,33 +1,40 @@
 {
-  "name": "Leo",
-  "notation": "Numpad (1-9), P=Punch, K=Kick",
-  "special_moves": [
+  "character": "Leo",
+  "movesList": [
     {
       "name": "Chronos Rush",
-      "input": "236P"
+      "input": "236P",
+      "type": "Special"
     },
     {
       "name": "Mars Slash",
-      "input": "214P"
+      "input": "214P",
+      "type": "Special"
     },
     {
       "name": "Hercules Rush",
-      "input": "623P"
+      "input": "623P",
+      "type": "Special"
     },
     {
       "name": "Achilles Rush",
-      "input": "41236K"
-    }
-  ],
-  "super_special_moves": [
+      "input": "41236K",
+      "type": "Special"
+    },
+    {
+      "name": "Achilles Revenge",
+      "input": "During Ultimate Guard, 236P",
+      "type": "Special"
+    },
     {
       "name": "Gaia Driver",
-      "input": "360P (Close)"
+      "input": "360P (Close)",
+      "type": "Super Art"
     },
     {
       "name": "Gigas Driver",
-      "input": "720P (Close)"
+      "input": "720P (Close)",
+      "type": "Super Art"
     }
-  ],
-  "character": "Leo"
+  ]
 }

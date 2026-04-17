@@ -1,16 +1,30 @@
 {
-  "name": "King Cold",
-  "moves": {
-    "Blast 1": [
-      "False Courage",
-      "Finish Sign"
-    ],
-    "Blast 2": [
-      "Full Power Energy Wave",
-      "Death Beam"
-    ],
-    "Ultimate Blast": [
-      "Full Power Death Beam"
-    ]
-  }
+  "character": "King Cold",
+  "movesList": [
+    {
+      "name": "False Courage",
+      "input": "L2+5+G",
+      "type": "Blast 1"
+    },
+    {
+      "name": "Finish Sign",
+      "input": "L2+8+G",
+      "type": "Blast 1"
+    },
+    {
+      "name": "Full Power Energy Wave",
+      "input": "L2+5+E",
+      "type": "Blast 2"
+    },
+    {
+      "name": "Death Beam",
+      "input": "L2+8+E",
+      "type": "Blast 2"
+    },
+    {
+      "name": "Full Power Death Beam",
+      "input": "L2+2+E",
+      "type": "Ultimate"
+    }
+  ]
 }

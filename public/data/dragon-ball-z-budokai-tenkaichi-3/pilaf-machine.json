@@ -1,16 +1,30 @@
 {
-  "name": "Pilaf Machine",
-  "moves": {
-    "Blast 1": [
-      "Pilaf's Call",
-      "Sleep"
-    ],
-    "Blast 2": [
-      "Pilaf's Missiles",
-      "Pilaf's Flame Thrower"
-    ],
-    "Ultimate Blast": [
-      "Pilaf's Ultimate Power"
-    ]
-  }
+  "character": "Pilaf Machine",
+  "movesList": [
+    {
+      "name": "Pilaf's Call",
+      "input": "L2+5+G",
+      "type": "Blast 1"
+    },
+    {
+      "name": "Sleep",
+      "input": "L2+8+G",
+      "type": "Blast 1"
+    },
+    {
+      "name": "Pilaf's Missiles",
+      "input": "L2+5+E",
+      "type": "Blast 2"
+    },
+    {
+      "name": "Pilaf's Flame Thrower",
+      "input": "L2+8+E",
+      "type": "Blast 2"
+    },
+    {
+      "name": "Pilaf's Ultimate Power",
+      "input": "L2+2+E",
+      "type": "Ultimate"
+    }
+  ]
 }

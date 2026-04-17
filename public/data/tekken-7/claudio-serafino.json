@@ -1,25 +1,30 @@
 {
-  "name": "Claudio Serafino",
-  "moves": [
-    {
-      "name": "Rage Art",
-      "input": "1+2"
-    },
-    {
-      "name": "Rage Drive",
-      "input": "6,6+1+2"
-    },
+  "character": "Claudio Serafino",
+  "movesList": [
     {
       "name": "Ira",
-      "input": "6,6,6+2"
+      "input": "6, 6, 2",
+      "type": "Move"
     },
     {
       "name": "Sky End",
-      "input": "6,6+4"
+      "input": "6, 2",
+      "type": "Move"
     },
     {
-      "name": "Starburst Stance",
-      "input": "Automatic on hit"
+      "name": "Dispel",
+      "input": "4, 2",
+      "type": "Move"
+    },
+    {
+      "name": "Starburst (Buff)",
+      "input": "On Hit (various)",
+      "type": "Move"
+    },
+    {
+      "name": "Gravity Press",
+      "input": "Starburst: 1+2",
+      "type": "Move"
     }
   ]
 }

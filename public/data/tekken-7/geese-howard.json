@@ -1,39 +1,45 @@
 {
-  "name": "Geese Howard",
-  "special_moves": [
+  "character": "Geese Howard",
+  "movesList": [
     {
       "name": "Reppuken",
-      "input": "236A"
+      "input": "236+1",
+      "type": "Move"
     },
     {
       "name": "Double Reppuken",
-      "input": "236C"
+      "input": "236+2",
+      "type": "Move"
     },
     {
       "name": "Shippuken",
-      "input": "j.214A/C"
+      "input": "j.214+1 or 2",
+      "type": "Move"
     },
     {
-      "name": "Jaeiken",
-      "input": "41236A/C"
+      "name": "Jaei Ken",
+      "input": "63214+1, 2, or 3",
+      "type": "Move"
     },
     {
-      "name": "Atemi Nage",
-      "input": "63214B/D"
+      "name": "Fudo Ken",
+      "input": "214+1, 2, or 3",
+      "type": "Move"
+    },
+    {
+      "name": "Raigou Reppuken (Rage Art)",
+      "input": "236, 236+1+2",
+      "type": "Move"
+    },
+    {
+      "name": "Deadly Rave",
+      "input": "632146+1+2",
+      "type": "Move"
+    },
+    {
+      "name": "Raising Storm",
+      "input": "1, 6, 3, 2, 1, 4, 3+1+2",
+      "type": "Move"
     }
-  ],
-  "super_special_moves": [
-    {
-      "name": "Raging Storm",
-      "input": "1632143A/C"
-    },
-    {
-      "name": "Rashomon",
-      "input": "6321463214A/C (Close)"
-    }
-  ],
-  "leader_super_special_move": {
-    "name": "Deadly Rave",
-    "input": "632146E, A, A, B, B, C, C, D, D, 214E"
-  }
+  ]
 }

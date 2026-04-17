@@ -1,16 +1,30 @@
 {
-  "name": "Tapion",
-  "moves": {
-    "Blast 1": [
-      "Hero's Flute",
-      "Afterimage"
-    ],
-    "Blast 2": [
-      "Brave Sword Attack",
-      "Brave Slash"
-    ],
-    "Ultimate Blast": [
-      "Brave Cannon"
-    ]
-  }
+  "character": "Tapion",
+  "movesList": [
+    {
+      "name": "Hero's Flute",
+      "input": "L2+5+G",
+      "type": "Blast 1"
+    },
+    {
+      "name": "Afterimage",
+      "input": "L2+8+G",
+      "type": "Blast 1"
+    },
+    {
+      "name": "Brave Sword Attack",
+      "input": "L2+5+E",
+      "type": "Blast 2"
+    },
+    {
+      "name": "Brave Slash",
+      "input": "L2+8+E",
+      "type": "Blast 2"
+    },
+    {
+      "name": "Brave Cannon",
+      "input": "L2+2+E",
+      "type": "Ultimate"
+    }
+  ]
 }
