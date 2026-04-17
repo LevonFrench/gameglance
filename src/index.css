@@ -467,1178 +467,134 @@ h1, h2, h3, h4, h5, h6 {
   outline-offset: 2px;
 }
 
+
 /* ═══════════════════════════════════════════════════════════════
-   CARD THEMES
+   CARD THEMES (Precision Utility / Arcade Modern)
    ═══════════════════════════════════════════════════════════════ */
 
-/* ── Sega Genesis Cartridge Theme ──────────────────────────── */
-[data-card-theme="sf2gen"] button[id^="game-card-"],
-[data-card-theme="sf2gen"] button[id^="char-card-"],
-[data-card-theme="sf2gen"] div[id^="move-"] {
-  /* background: #0f0f0f !important; */
-  /* border: 1px solid #222 !important; */
-  /* border-radius: 12px 12px 2px 2px !important; */
-  /* box-shadow: 
-    inset 0 4px 6px rgba(255,255,255,0.05),
-    inset -4px -4px 6px rgba(0,0,0,0.9),
-    0 8px 20px rgba(0,0,0,0.8) !important; */
-  /* position: relative !important; */
-  /* backdrop-filter: none !important; */
-  color: #fff !important;
-  /* overflow: hidden !important; */
-  /* transform: translateY(0) scale(1) !important; */
-  /* padding: 15% 15% !important; */
+/* ── Base Theme Application (Deep Slate background is global via --bg-primary in dark mode) ── */
+/* All hardware themes will inherit the deep slate and glassmorphism. We only override accents. */
+
+/* ── Sega Genesis Theme ──────────────────────────── */
+.app-container[data-card-theme="sf2gen"],
+.app-container[data-card-theme="genesis"] {
+  /* Genesis Red Accent: #d92b38 */
 }
-
-/* Selected state override for moves */
-[data-card-theme="sf2gen"] div[id^="move-"][data-selected="true"] {
-  background: #1a1a1a !important; 
-  border-color: #00c3b6 !important;
-  box-shadow: 
-    inset 0 4px 6px rgba(255,255,255,0.1),
-    inset -4px -4px 6px rgba(0,0,0,0.9),
-    0 8px 20px rgba(0, 195, 182, 0.4) !important;
-} 
-
-/* Add the inner label sticker */
-[data-card-theme="sf2gen"] button[id^="game-card-"]::after,
-[data-card-theme="sf2gen"] button[id^="char-card-"]::after,
-[data-card-theme="sf2gen"] div[id^="move-"]::after {
-  content: '';
-  position: absolute;
-  top: 6%;
-  bottom: 8%;
-  left: 6%;
-  right: 6%;
-  background-color: #000;
-  background-image: 
-    linear-gradient(to right, transparent 18%, #000 18%, #000 82%, transparent 82%),
-    repeating-linear-gradient(180deg, #00c3b6 0px, #00c3b6 2px, #000 2px, #000 4px);
-  border: 1px solid rgba(180, 180, 180, 0.8);
-  border-radius: 3px;
-  z-index: 0;
-  pointer-events: none;
-  box-shadow: 0 0 10px rgba(0,0,0,0.8) inset, 0 1px 4px rgba(0,0,0,0.4);
-} 
-
-/* Ensure text stays visible on top of the label */
-[data-card-theme="sf2gen"] button[id^="game-card-"] > *,
-[data-card-theme="sf2gen"] button[id^="char-card-"] > *,
-[data-card-theme="sf2gen"] div[id^="move-"] > * {
-  /* z-index: 1; */
-  /* position: relative; */
-  text-shadow: 2px 2px 4px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-}
-
 [data-card-theme="sf2gen"] button[id^="game-card-"]:hover,
 [data-card-theme="sf2gen"] button[id^="char-card-"]:hover,
-[data-card-theme="sf2gen"] div[id^="move-"]:hover {
-  transform: translateY(-4px) scale(1.02) !important;
-  border-color: #444 !important;
-  box-shadow: 
-    inset 0 4px 6px rgba(255,255,255,0.05),
-    inset -4px -4px 6px rgba(0,0,0,0.9),
-    0 12px 25px rgba(0,0,0,0.9) !important;
-} 
-
-/* Tweak the text colors inside Genesis theme to look cool on black grid */
-[data-card-theme="sf2gen"] .text-muted,
-[data-card-theme="sf2gen"] .text-tertiary {
-  color: #ccc !important;
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-weight: bold !important;
-  background-color: rgba(239, 68, 68, 0.2);
-  padding: 0.1rem 0.5rem;
-  border-radius: 2px;
-}
-
-[data-card-theme="sf2gen"] h2,
-[data-card-theme="sf2gen"] .font-mono {
-  font-weight: 900 !important;
-  letter-spacing: 0.05em;
-  color: #facc15 !important;
-  font-style: italic;
-  /* transform: skew(-5deg); */
-}
-
-[data-card-theme="sf2gen"] .gradient-overlay {
-  display: none !important; 
-} 
-
-
-/* ── SNES Cartridge Theme ──────────────────────────── */
-[data-card-theme="snes"] button[id^="game-card-"],
-[data-card-theme="snes"] button[id^="char-card-"],
-[data-card-theme="snes"] div[id^="move-"] {
-  /* background: #bdc1c6 !important; */
-  /* border: 1px solid #77818c !important; */
-  /* border-radius: 6px !important; */
-  /* box-shadow: 
-    inset 2px 2px 4px rgba(255,255,255,0.7),
-    inset -2px -2px 4px rgba(0,0,0,0.3),
-    0 6px 12px rgba(0,0,0,0.3) !important; */
-  /* position: relative !important; */
-  /* backdrop-filter: none !important; */
-  color: #111 !important;
-  /* overflow: hidden !important; */
-  /* transform: translateY(0) scale(1) !important; */
-}
-
-[data-card-theme="snes"] div[id^="move-"][data-selected="true"] {
-  background: #cbc3cd !important; 
-  border-color: #8c778c !important;
-  box-shadow: 
-    inset 2px 2px 4px rgba(255,255,255,0.8),
-    inset -2px -2px 4px rgba(0,0,0,0.4),
-    0 6px 12px rgba(90,75,134,0.4) !important;
-} 
-
-/* Grooved top indent */
-[data-card-theme="snes"] button[id^="game-card-"]::before,
-[data-card-theme="snes"] button[id^="char-card-"]::before,
-[data-card-theme="snes"] div[id^="move-"]::before {
-  content: '';
-  position: absolute;
-  top: 8px;
-  left: 10%;
-  right: 10%;
-  height: 4px;
-  background: #aab;
-  border-radius: 6px;
-  box-shadow: inset 0 2px 2px rgba(0,0,0,0.4), inset 0 -1px 1px rgba(255,255,255,0.8);
-  pointer-events: none;
-  z-index: 0;
-} 
-
-/* Rounded glossy label */
-[data-card-theme="snes"] button[id^="game-card-"]::after,
-[data-card-theme="snes"] button[id^="char-card-"]::after,
-[data-card-theme="snes"] div[id^="move-"]::after {
-  content: '';
-  position: absolute;
-  top: 18%;
-  bottom: 8%;
-  left: 8%;
-  right: 8%;
-  background: linear-gradient(135deg, #111 0%, #2a2a2a 100%);
-  border: 1px solid #000;
-  border-top: 10px solid #5a4b86; 
-  border-bottom: 2px solid #555;
-  border-radius: 4px;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  box-shadow: 0 1px 3px rgba(0,0,0,0.8);
-  pointer-events: none;
-  z-index: 0;
-} 
-
-[data-card-theme="snes"] button[id^="game-card-"] > *,
-[data-card-theme="snes"] button[id^="game-card-"] > *,
-[data-card-theme="snes"] button[id^="game-card-"] > *,
-  [data-card-theme="snes"] button[id^="char-card-"] > *,
-[data-card-theme="snes"] div[id^="move-"] > * {
-  /* z-index: 2; */
-  /* position: relative; */
-  text-shadow: 1px 1px 2px rgba(0,0,0,0.9), -1px -1px 0 rgba(0,0,0,0.5);
-  color: #fff !important;
-}
-
-[data-card-theme="snes"] h2 {
-  font-weight: 800;
-  font-style: italic;
-  letter-spacing: -0.02em;
-}
-
-[data-card-theme="snes"] button[id^="game-card-"]:hover,
-[data-card-theme="snes"] button[id^="char-card-"]:hover,
-[data-card-theme="snes"] div[id^="move-"]:hover {
-  transform: translateY(-4px) scale(1.02) !important;
-  box-shadow: 
-    inset 2px 2px 4px rgba(255,255,255,0.8),
-    inset -2px -2px 4px rgba(0,0,0,0.3),
-    0 12px 20px rgba(0,0,0,0.5) !important;
-} 
-
-[data-card-theme="snes"] .text-muted,
-[data-card-theme="snes"] .text-tertiary {
-  color: #c0c0c0 !important;
-}
-[data-card-theme="snes"] .gradient-overlay { display: none !important; } 
-
-
-/* ── CPS2 Arcade Board Theme ──────────────────────────── */
-[data-card-theme="cps2"] button[id^="game-card-"],
-[data-card-theme="cps2"] button[id^="char-card-"],
-[data-card-theme="cps2"] div[id^="move-"] {
-  /* background: #234ca1 !important; */
-  /* border: 1px solid #173473 !important; */
-  /* border-radius: 24px 24px 4px 4px !important; */
-  /* box-shadow: 
-    inset 0 4px 8px rgba(255,255,255,0.2),
-    inset -6px -6px 12px rgba(0,0,0,0.4),
-    0 8px 15px rgba(0,0,0,0.6) !important; */
-  /* position: relative !important; */
-  /* backdrop-filter: none !important; */
-  color: #fff !important;
-  /* overflow: hidden !important; */
-  /* transform: translateY(0) scale(1) !important; */
-}
-
-/* Green CPS2 Variant for Selected items */
-[data-card-theme="cps2"] div[id^="move-"][data-selected="true"] {
-  background: #1ba034 !important; 
-  border-color: #126e23 !important;
-  box-shadow: 
-    inset 0 4px 8px rgba(255,255,255,0.3),
-    inset -6px -6px 12px rgba(0,0,0,0.4),
-    0 8px 15px rgba(27, 160, 52, 0.4) !important;
-} 
-
-/* Side Cooling Vents (lower-middle edges) */
-[data-card-theme="cps2"] button[id^="game-card-"]::before,
-[data-card-theme="cps2"] button[id^="char-card-"]::before,
-[data-card-theme="cps2"] div[id^="move-"]::before {
-  content: '';
-  position: absolute;
-  bottom: 25%;
-  height: 35%;
-  left: 0;
-  right: 0;
-  background-image: 
-    repeating-linear-gradient(180deg, transparent 0px, transparent 5px, rgba(0,0,0,0.7) 5px, rgba(0,0,0,0.7) 9px),
-    repeating-linear-gradient(180deg, transparent 0px, transparent 5px, rgba(0,0,0,0.7) 5px, rgba(0,0,0,0.7) 9px);
-  background-size: 15% 100%, 15% 100%;
-  background-position: left center, right center;
-  background-repeat: no-repeat, no-repeat;
-  pointer-events: none;
-  z-index: 0;
-} 
-
-/* White Title Sticker (Top Left) */
-[data-card-theme="cps2"] button[id^="game-card-"]::after,
-[data-card-theme="cps2"] button[id^="char-card-"]::after,
-[data-card-theme="cps2"] div[id^="move-"]::after {
-  content: '';
-  position: absolute;
-  top: 10%;
-  left: 15%;
-  width: 45%;
-  height: 40%;
-  background: #fdfdfc;
-  border: 1px solid #aaa;
-  border-radius: 2px;
-  box-shadow: 0 1px 4px rgba(0,0,0,0.3);
-  pointer-events: none;
-  z-index: 0;
-} 
-
-/* Ensure text is readable over the board and sticker */
-[data-card-theme="cps2"] button[id^="game-card-"] > *,
-[data-card-theme="cps2"] button[id^="char-card-"] > *,
-[data-card-theme="cps2"] div[id^="move-"] > * {
-  z-index: 2;
-  position: relative;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8), -1px -1px 0 rgba(0,0,0,0.5), 1px -1px 0 rgba(0,0,0,0.5), -1px 1px 0 rgba(0,0,0,0.5);
-  color: #fff !important;
-}
-
-[data-card-theme="cps2"] h2 {
-  text-transform: uppercase;
-  font-style: italic;
-  font-weight: 800;
-  letter-spacing: 0.05em;
-  color: #facc15 !important;
-}
-
-[data-card-theme="cps2"] button[id^="game-card-"]:hover,
-[data-card-theme="cps2"] button[id^="char-card-"]:hover,
-[data-card-theme="cps2"] div[id^="move-"]:hover {
-  transform: translateY(-4px) scale(1.02) !important;
-  box-shadow: 
-    inset 0 4px 8px rgba(255,255,255,0.2),
-    inset -6px -6px 12px rgba(0,0,0,0.4),
-    0 12px 20px rgba(0,0,0,0.7) !important;
-}
-
-[data-card-theme="cps2"] .text-muted,
-[data-card-theme="cps2"] .text-tertiary {
-  color: #e0e0e0 !important;
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-weight: bold;
-}
-[data-card-theme="cps2"] .gradient-overlay { display: none !important; }
-
-
-
-/* ── Neo Geo MVS Cartridge Theme ───────────────────── */
-[data-card-theme="mvs"] button[id^="game-card-"],
-[data-card-theme="mvs"] button[id^="char-card-"],
-[data-card-theme="mvs"] div[id^="move-"] {
-  background-color: #1a1a1a !important;
-  border: 1px solid #000 !important;
-  border-radius: 4px !important;
-  box-shadow: 
-    inset 0 2px 4px rgba(255,255,255,0.15),
-    inset -4px -4px 8px rgba(0,0,0,0.8),
-    0 8px 20px rgba(0,0,0,0.6) !important;
-  color: #111 !important;
-  position: relative !important;
-  overflow: hidden !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: flex-start !important;
-}
-
-[data-card-theme="mvs"] button[id^="game-card-"]:hover,
-[data-card-theme="mvs"] button[id^="char-card-"]:hover,
-[data-card-theme="mvs"] div[id^="move-"]:hover {
-  transform: translateY(-4px) scale(1.02) !important;
-  box-shadow: 
-    inset 0 2px 4px rgba(255,255,255,0.15),
-    inset -4px -4px 8px rgba(0,0,0,0.8),
-    0 12px 25px rgba(0,0,0,0.8) !important;
-  border-color: #333 !important;
-}
-
-/* Ribbed grips heavily on the bottom half */
-[data-card-theme="mvs"] button[id^="game-card-"]::before,
-[data-card-theme="mvs"] button[id^="char-card-"]::before,
-[data-card-theme="mvs"] div[id^="move-"]::before {
-  content: '';
-  position: absolute;
-  top: 55%;
-  bottom: 10%;
-  left: 5%;
-  right: 5%;
-  background-image: 
-    repeating-linear-gradient(180deg, transparent 0px, transparent 6px, rgba(0,0,0,0.9) 6px, rgba(0,0,0,0.9) 10px);
-  pointer-events: none;
-  z-index: 0;
-  opacity: 0.8;
-}
-
-/* White sticker label on top half */
-[data-card-theme="mvs"] button[id^="game-card-"]::after,
-[data-card-theme="mvs"] button[id^="char-card-"]::after,
-[data-card-theme="mvs"] div[id^="move-"]::after {
-  content: '';
-  position: absolute;
-  top: 6%;
-  height: 40%;
-  left: 3%;
-  right: 3%;
-  background: #f4f4f4;
-  border: 2px solid #000;
-  border-radius: 2px;
-  box-shadow: inset 0 0 15px rgba(0,0,0,0.1), 0 2px 6px rgba(0,0,0,0.6);
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Arrow triangle at the bottom center */
-[data-card-theme="mvs"] button[id^="game-card-"] .mvs-arrow,
-[data-card-theme="mvs"] button[id^="char-card-"] .mvs-arrow,
-[data-card-theme="mvs"] div[id^="move-"] .mvs-arrow {
-  content: '▼';
-  position: absolute;
-  bottom: 2%;
-  left: 50%;
-  transform: translateX(-50%);
-  color: #d1d5db;
-  font-size: 0.8rem;
-  z-index: 1;
-}
-
-/* Ensure text is readable over the white sticker */
-[data-card-theme="mvs"] button[id^="game-card-"] > *,
-[data-card-theme="mvs"] button[id^="char-card-"] > *,
-[data-card-theme="mvs"] div[id^="move-"] > * {
-  z-index: 2;
-  position: relative;
-  text-shadow: none !important;
-}
-
-[data-card-theme="mvs"] h2 {
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-weight: 900 !important;
-  font-style: normal !important;
-  text-transform: uppercase;
-  letter-spacing: 0.02em;
-  color: #000 !important;
-  margin: 0 !important;
-  margin-top: 1.5rem !important;
-  font-size: 1.6rem !important;
-  text-align: center;
-  width: 100%;
-}
-
-[data-card-theme="mvs"] .text-muted,
-[data-card-theme="mvs"] .text-tertiary {
-  color: #555 !important;
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-weight: bold;
-  font-size: 0.75rem !important;
-  position: absolute;
-  top: 8%;
-  left: 6%;
-}
-
-[data-card-theme="mvs"] .gradient-overlay { display: none !important; }
-
-
-
-/* ── Neo Geo MVS Cabinet Theme (mvscab) ───────────────────── */
-[data-card-theme="mvscab"] button[id^="game-card-"],
-[data-card-theme="mvscab"] button[id^="char-card-"],
-[data-card-theme="mvscab"] div[id^="move-"] {
-  background-color: #e80000 !important;
-  border: 2px solid #000 !important;
-  border-radius: 6px !important;
-  box-shadow: 
-    inset 0 2px 5px rgba(255,255,255,0.3),
-    inset -4px -4px 10px rgba(0,0,0,0.5),
-    0 8px 15px rgba(0,0,0,0.5) !important;
-  color: #fff !important;
-  position: relative !important;
-  overflow: hidden !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: flex-start !important;
-}
-
-[data-card-theme="mvscab"] button[id^="game-card-"]:hover,
-[data-card-theme="mvscab"] button[id^="char-card-"]:hover,
-[data-card-theme="mvscab"] div[id^="move-"]:hover {
-  transform: translateY(-4px) scale(1.02) !important;
-  box-shadow: 
-    inset 0 2px 5px rgba(255,255,255,0.4),
-    inset -4px -4px 10px rgba(0,0,0,0.5),
-    0 12px 20px rgba(0,0,0,0.7) !important;
-  background-color: #f00 !important;
-}
-
-/* Control Panel Base (black strip separating red body and stripes) */
-[data-card-theme="mvscab"] button[id^="game-card-"]::before,
-[data-card-theme="mvscab"] button[id^="char-card-"]::before,
-[data-card-theme="mvscab"] div[id^="move-"]::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 25%;
-  background-color: #000;
-  background-image: 
-    repeating-linear-gradient(
-      -45deg,
-      #fff,
-      #fff 10px,
-      #e80000 10px,
-      #e80000 20px
-    );
-  border-top: 4px solid #111;
-  pointer-events: none;
-  z-index: 0;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.8);
-}
-
-/* Arcade Buttons (Red, Yellow, Green, Blue) sitting on the control panel */
-[data-card-theme="mvscab"] button[id^="game-card-"]::after,
-[data-card-theme="mvscab"] button[id^="char-card-"]::after,
-[data-card-theme="mvscab"] div[id^="move-"]::after {
-  content: '';
-  position: absolute;
-  bottom: 8%;
-  right: 15%;
-  width: 12px;
-  height: 12px;
-  border-radius: 50%;
-  background-color: #0050c9; /* Blue button (D) */
-  box-shadow: 
-    -20px 4px 0 #009030,  /* Green button (C) */
-    -40px 6px 0 #ffd700,  /* Yellow button (B) */
-    -60px 10px 0 #d90000, /* Red button (A) */
-    inset -2px -2px 4px rgba(0,0,0,0.5),
-    0 2px 2px rgba(0,0,0,0.8);
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* Ensure text is readable over the bright red */
-[data-card-theme="mvscab"] button[id^="game-card-"] > *,
-[data-card-theme="mvscab"] button[id^="char-card-"] > *,
-[data-card-theme="mvscab"] div[id^="move-"] > * {
-  z-index: 2;
-  position: relative;
-  text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000 !important;
-}
-
-[data-card-theme="mvscab"] h2 {
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-weight: 900 !important;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #fff !important;
-  margin: 0 !important;
-  margin-top: 1rem !important;
-  font-size: 1.4rem !important;
-  text-align: center;
-  width: 100%;
-}
-
-[data-card-theme="mvscab"] .text-muted,
-[data-card-theme="mvscab"] .text-tertiary {
-  color: #fff !important;
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-weight: bold;
-  font-size: 0.8rem !important;
-  text-align: center;
-}
-
-[data-card-theme="mvscab"] .gradient-overlay { display: none !important; }
-
-
-
-/* ── Capcom CPS2 Cabinet Theme (cps2cab) ───────────────────── */
-[data-card-theme="cps2cab"] button[id^="game-card-"],
-[data-card-theme="cps2cab"] button[id^="char-card-"],
-[data-card-theme="cps2cab"] div[id^="move-"] {
-  background-color: #1b3c75 !important; /* Classic Big Blue */
-  border: 2px solid #0b1a36 !important;
-  border-radius: 6px !important;
-  box-shadow: 
-    inset 0 4px 10px rgba(255,255,255,0.15),
-    inset -4px -4px 10px rgba(0,0,0,0.6),
-    0 8px 15px rgba(0,0,0,0.5) !important;
-  color: #fff !important;
-  position: relative !important;
-  overflow: hidden !important;
-  display: flex !important;
-  flex-direction: column !important;
-  justify-content: flex-start !important;
-}
-
-[data-card-theme="cps2cab"] button[id^="game-card-"]:hover,
-[data-card-theme="cps2cab"] button[id^="char-card-"]:hover,
-[data-card-theme="cps2cab"] div[id^="move-"]:hover {
-  transform: translateY(-4px) scale(1.02) !important;
-  box-shadow: 
-    inset 0 4px 10px rgba(255,255,255,0.25),
-    inset -4px -4px 10px rgba(0,0,0,0.6),
-    0 12px 20px rgba(0,0,0,0.7) !important;
-  background-color: #21488c !important;
-}
-
-/* Control Panel Base (Silver Diamond Plate) */
-[data-card-theme="cps2cab"] button[id^="game-card-"]::before,
-[data-card-theme="cps2cab"] button[id^="char-card-"]::before,
-[data-card-theme="cps2cab"] div[id^="move-"]::before {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 30%;
-  background-color: #b0b4b8;
-  background-image: 
-    linear-gradient(135deg, rgba(0,0,0,0.1) 25%, transparent 25%, transparent 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1) 75%, transparent 75%, transparent),
-    linear-gradient(45deg, rgba(255,255,255,0.3) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.3) 75%, transparent 75%, transparent);
-  background-size: 12px 12px;
-  border-top: 4px solid #000;
-  pointer-events: none;
-  z-index: 0;
-  box-shadow: inset 0 2px 5px rgba(255,255,255,0.5), inset 0 -4px 6px rgba(0,0,0,0.5);
-}
-
-/* Arcade Buttons (6-button Capcom Layout: Punches & Kicks) */
-[data-card-theme="cps2cab"] button[id^="game-card-"]::after,
-[data-card-theme="cps2cab"] button[id^="char-card-"]::after,
-[data-card-theme="cps2cab"] div[id^="move-"]::after {
-  content: '';
-  position: absolute;
-  bottom: 14%;
-  right: 12%;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  background-color: #0050c9; /* Top right Blue */
-  box-shadow: 
-    -16px 0 0 #009030,     /* Top center Green */
-    -32px 0 0 #cc0000,     /* Top left Red */
-    0 14px 0 #0050c9,      /* Bottom right Blue */
-    -16px 14px 0 #009030,  /* Bottom center Green */
-    -32px 14px 0 #cc0000,  /* Bottom left Red */
-    inset -1px -1px 2px rgba(0,0,0,0.5), /* Inner shadow for main button */
-    0 1px 2px rgba(0,0,0,0.8);          /* Drop shadow for main button */
-  pointer-events: none;
-  z-index: 1;
-}
-
-/* Typography on the Marquee */
-[data-card-theme="cps2cab"] button[id^="game-card-"] > *,
-[data-card-theme="cps2cab"] button[id^="char-card-"] > *,
-[data-card-theme="cps2cab"] div[id^="move-"] > * {
-  z-index: 2;
-  position: relative;
-  text-shadow: 2px 2px 0 #0a1b38, -1px -1px 0 #0a1b38, 1px -1px 0 #0a1b38, -1px 1px 0 #0a1b38, 1px 1px 0 #0a1b38, 0 4px 6px rgba(0,0,0,0.6) !important;
-}
-
-[data-card-theme="cps2cab"] h2 {
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-weight: 900 !important;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
-  color: #ffd700 !important; /* Golden Yellow */
-  margin: 0 !important;
-  margin-top: 1rem !important;
-  font-size: 1.4rem !important;
-  text-align: center;
-  width: 100%;
-}
-
-[data-card-theme="cps2cab"] .text-muted,
-[data-card-theme="cps2cab"] .text-tertiary {
-  color: #60a5fa !important;
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-weight: bold;
-  font-size: 0.8rem !important;
-  text-align: center;
-}
-
-[data-card-theme="cps2cab"] .gradient-overlay { display: none !important; }
-
-
-/* ── Neo Geo AES Cartridge Theme ───────────────────── */
-[data-card-theme="aes"] button[id^="game-card-"],
-[data-card-theme="aes"] button[id^="char-card-"],
-[data-card-theme="aes"] div[id^="move-"] {
-  /* background: #0a0a0a !important; */
-  /* border: 1px solid #1a1a1a !important; */
-  /* border-radius: 8px !important; */
-  /* box-shadow: 
-    inset 0 4px 6px rgba(255,255,255,0.1),
-    inset -4px -4px 6px rgba(0,0,0,0.9),
-    0 8px 15px rgba(0,0,0,0.8) !important; */
-  /* position: relative !important; */
-  /* backdrop-filter: none !important; */
-  color: #fff !important;
-  /* overflow: hidden !important; */
-  /* transform: translateY(0) scale(1) !important; */
-  /* justify-content: flex-start !important; */
-  /* padding-top: 20% !important; */
-}
-
-/* Selected State */
-[data-card-theme="aes"] div[id^="move-"][data-selected="true"] {
-  background: #111 !important; 
-  border-color: #d4af37 !important; 
-  box-shadow: 
-    inset 0 4px 6px rgba(255,255,255,0.15),
-    inset -4px -4px 6px rgba(0,0,0,0.9),
-    0 8px 25px rgba(212, 175, 55, 0.2) !important;
-} 
-
-/* High-Gloss Top Sticker */
-[data-card-theme="aes"] button[id^="game-card-"]::after,
-[data-card-theme="aes"] button[id^="char-card-"]::after,
-[data-card-theme="aes"] div[id^="move-"]::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  height: 60%; 
-  left: 15%;
-  right: 15%;
-  background: linear-gradient(180deg, #0f0f0f 0%, #050505 100%);
-  border-bottom: 1px solid #333;
-  border-radius: 0 0 6px 6px;
-  box-shadow: 
-    inset 0 0 10px rgba(255,255,255,0.05),
-    0 2px 5px rgba(0,0,0,0.8);
-  pointer-events: none;
-  z-index: 0;
-} 
-
-/* Bottom Edge Grip Vents */
-[data-card-theme="aes"] button[id^="game-card-"]::before,
-[data-card-theme="aes"] button[id^="char-card-"]::before,
-[data-card-theme="aes"] div[id^="move-"]::before {
-  content: '';
-  position: absolute;
-  bottom: 0%;
-  left: 5%;
-  right: 5%;
-  height: 15%;
-  background-image: repeating-linear-gradient(180deg, transparent 0px, transparent 4px, rgba(0,0,0,0.8) 4px, rgba(0,0,0,0.8) 8px);
-  z-index: 0;
-  pointer-events: none;
-} 
-
-[data-card-theme="aes"] button[id^="game-card-"] > *,
-[data-card-theme="aes"] button[id^="char-card-"] > *,
-[data-card-theme="aes"] div[id^="move-"] > * {
-  /* z-index: 2; */
-  /* position: relative; */
-  text-shadow: 1px 1px 3px rgba(0,0,0,0.9);
-  color: #fff !important;
-}
-
-[data-card-theme="aes"] h2 {
-  font-family: Arial, Helvetica, sans-serif !important;
-  font-weight: 800 !important;
-  letter-spacing: 0.05em;
-  color: #f8f8f8 !important;
-  margin: 0 !important;
-}
-
-[data-card-theme="aes"] button[id^="game-card-"]:hover,
-[data-card-theme="aes"] button[id^="char-card-"]:hover,
-[data-card-theme="aes"] div[id^="move-"]:hover {
-  transform: translateY(-4px) scale(1.02) !important;
-  box-shadow: 
-    inset 0 4px 6px rgba(255,255,255,0.1),
-    inset -4px -4px 6px rgba(0,0,0,0.9),
-    0 12px 20px rgba(0,0,0,0.9) !important;
-} 
-
-[data-card-theme="aes"] .text-muted,
-[data-card-theme="aes"] .text-tertiary {
-  color: #d4af37 !important; /* Gold tertiary text */
-  margin-top: 0.5rem;
-}
-[data-card-theme="aes"] .gradient-overlay { display: none !important; }
-
-
-/* Themed App Container Backgrounds */
-.app-container[data-card-theme="sf2gen"] {
-  background: radial-gradient(circle at top right, rgba(183, 28, 28, 0.15) 0%, transparent 60%),
-              radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.2) 0%, transparent 50%);
-}
-
-.app-container[data-card-theme="snes"] {
-  background: radial-gradient(circle at top right, rgba(96, 77, 240, 0.15) 0%, transparent 60%),
-              radial-gradient(circle at bottom left, rgba(207, 205, 210, 0.05) 0%, transparent 50%);
-}
-
-.app-container[data-card-theme="cps2"] {
-  background: radial-gradient(circle at top right, rgba(45, 120, 191, 0.15) 0%, transparent 60%),
-              radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.2) 0%, transparent 50%);
-}
-
-.app-container
-
-.app-container[data-card-theme="aes"] {
-  background: radial-gradient(circle at top right, rgba(212, 175, 55, 0.1) 0%, transparent 60%),
-              radial-gradient(circle at bottom left, rgba(0, 0, 0, 0.2) 0%, transparent 50%);
-}
-
-/* ── Tournament Theme (Gold/Bronze) ────────── */
-[data-theme="tournament"] {
-  color-scheme: dark;
-  --bg-primary: #0a0a0a;
-  --bg-secondary: #141311;
-  --bg-card: rgba(26, 25, 23, 0.75);
-  --bg-card-hover: rgba(36, 34, 30, 0.85);
-  --bg-glass: rgba(20, 19, 17, 0.65);
-  --bg-glass-heavy: rgba(15, 14, 12, 0.88);
-  --bg-input: rgba(255, 215, 0, 0.04);
-  --bg-elevated: rgba(30, 28, 25, 0.9);
-  --bg-badge: rgba(255, 215, 0, 0.05);
-
-  --border-subtle: rgba(255, 215, 0, 0.1);
-  --border-medium: rgba(255, 215, 0, 0.2);
-  --border-accent: rgba(218, 165, 32, 0.5);
-  --border-focus: rgba(218, 165, 32, 0.8);
-
-  --text-primary: #f8f6f0;
-  --text-secondary: #c0b8a0;
-  --text-muted: #807a60;
-
-  --accent-color: #ffd700;
-  --accent-hover: #ffdf33;
-  --accent-glow: rgba(255, 215, 0, 0.2);
-
-  --gradient-card: linear-gradient(135deg, rgba(218, 165, 32, 0.05), transparent 60%);
-  --gradient-button: linear-gradient(135deg, #ffd700, #daa520);
-}
-
-/* ── Arcade Theme (Neon/Synthwave) ────────── */
-[data-theme="arcade"] {
-  color-scheme: dark;
-  --bg-primary: #0b0216;
-  --bg-secondary: #140529;
-  --bg-card: rgba(28, 9, 56, 0.75);
-  --bg-card-hover: rgba(43, 14, 84, 0.85);
-  --bg-glass: rgba(20, 5, 40, 0.65);
-  --bg-glass-heavy: rgba(15, 3, 30, 0.88);
-  --bg-input: rgba(255, 0, 255, 0.04);
-  --bg-elevated: rgba(38, 12, 74, 0.9);
-  --bg-badge: rgba(255, 0, 255, 0.05);
-
-  --border-subtle: rgba(255, 0, 255, 0.15);
-  --border-medium: rgba(0, 255, 255, 0.3);
-  --border-accent: rgba(255, 0, 255, 0.6);
-  --border-focus: rgba(0, 255, 255, 0.8);
-
-  --text-primary: #f0e6ff;
-  --text-secondary: #bba2e6;
-  --text-muted: #7d60b3;
-
-  --accent-color: #ff00ff;
-  --accent-hover: #ff4dff;
-  --accent-glow: rgba(255, 0, 255, 0.25);
-
-  --gradient-card: linear-gradient(135deg, rgba(255, 0, 255, 0.1), transparent 60%);
-  --gradient-button: linear-gradient(135deg, #ff00ff, #00ffff);
-}
-
-/* ── Cyberpunk Theme (Acid/High Contrast) ────────── */
-[data-theme="cyberpunk"] {
-  color-scheme: dark;
-  --bg-primary: #0a0e12;
-  --bg-secondary: #0f151b;
-  --bg-card: rgba(18, 25, 33, 0.75);
-  --bg-card-hover: rgba(25, 35, 45, 0.85);
-  --bg-glass: rgba(14, 20, 26, 0.65);
-  --bg-glass-heavy: rgba(10, 15, 20, 0.88);
-  --bg-input: rgba(57, 255, 20, 0.04);
-  --bg-elevated: rgba(22, 30, 40, 0.9);
-  --bg-badge: rgba(57, 255, 20, 0.05);
-
-  --border-subtle: rgba(57, 255, 20, 0.15);
-  --border-medium: rgba(57, 255, 20, 0.3);
-  --border-accent: rgba(57, 255, 20, 0.6);
-  --border-focus: rgba(57, 255, 20, 0.9);
-
-  --text-primary: #e6ffe6;
-  --text-secondary: #8ccf8c;
-  --text-muted: #4e804e;
-
-  --accent-color: #39ff14;
-  --accent-hover: #66ff4d;
-  --accent-glow: rgba(57, 255, 20, 0.25);
-
-  --gradient-card: linear-gradient(135deg, rgba(57, 255, 20, 0.1), transparent 60%);
-  --gradient-button: linear-gradient(135deg, #39ff14, #00cc00);
-}
-
-/* ── Blood Oath Theme (Crimson) ────────── */
-[data-theme="blood"] {
-  color-scheme: dark;
-  --bg-primary: #0a0303;
-  --bg-secondary: #120505;
-  --bg-card: rgba(26, 7, 7, 0.75);
-  --bg-card-hover: rgba(38, 10, 10, 0.85);
-  --bg-glass: rgba(18, 5, 5, 0.65);
-  --bg-glass-heavy: rgba(13, 4, 4, 0.88);
-  --bg-input: rgba(239, 68, 68, 0.04);
-  --bg-elevated: rgba(33, 9, 9, 0.9);
-  --bg-badge: rgba(239, 68, 68, 0.05);
-
-  --border-subtle: rgba(239, 68, 68, 0.15);
-  --border-medium: rgba(239, 68, 68, 0.3);
-  --border-accent: rgba(239, 68, 68, 0.6);
-  --border-focus: rgba(239, 68, 68, 0.9);
-
-  --text-primary: #ffe6e6;
-  --text-secondary: #cc8080;
-  --text-muted: #804040;
-
-  --accent-color: #ef4444;
-  --accent-hover: #f87171;
-  --accent-glow: rgba(239, 68, 68, 0.25);
-
-  --gradient-card: linear-gradient(135deg, rgba(239, 68, 68, 0.1), transparent 60%);
-  --gradient-button: linear-gradient(135deg, #ef4444, #991b1b);
-}
-
-/* ── Sega Genesis Grid Theme (New) ──────────────────────────── */
-[data-card-theme="genesis"] button[id^="game-card-"],
-[data-card-theme="genesis"] button[id^="char-card-"],
-[data-card-theme="genesis"] div[id^="move-"] {
-  background-color: #000000;
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.15) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.15) 1px, transparent 1px);
-  background-size: 24px 24px;
-  background-position: center;
-  border: 1px solid #333;
-  color: #fff;
-  box-shadow: inset 0 0 40px rgba(0,0,0,0.9);
-  transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
-  position: relative;
-  overflow: hidden;
-}
-
+[data-card-theme="sf2gen"] div[id^="move-"]:hover,
 [data-card-theme="genesis"] button[id^="game-card-"]:hover,
 [data-card-theme="genesis"] button[id^="char-card-"]:hover,
 [data-card-theme="genesis"] div[id^="move-"]:hover {
-  background-color: #111;
-  border-color: #666;
-  background-image: 
-    linear-gradient(rgba(255, 255, 255, 0.25) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.25) 1px, transparent 1px);
-  box-shadow: inset 0 0 20px rgba(0,0,0,0.8), 0 4px 12px rgba(0,0,0,0.5);
-  transform: translateY(-2px);
+  border-color: #d92b38 !important;
+  box-shadow: 0 12px 30px rgba(217, 43, 56, 0.15) !important;
+  transform: translateY(-4px) scale(1.02);
 }
-
-[data-card-theme="genesis"] button[id^="game-card-"][data-selected="true"],
-[data-card-theme="genesis"] button[id^="char-card-"][data-selected="true"],
+[data-card-theme="sf2gen"] div[id^="move-"][data-selected="true"],
 [data-card-theme="genesis"] div[id^="move-"][data-selected="true"] {
-  background-color: #1a1a1a;
-  border-color: #e60012; /* Red accent for selected state */
-  box-shadow: inset 0 0 20px rgba(230, 0, 18, 0.2), 0 0 10px rgba(230, 0, 18, 0.3);
+  border-color: #d92b38 !important;
+  background: rgba(217, 43, 56, 0.1) !important;
+  box-shadow: 0 8px 25px rgba(217, 43, 56, 0.2) !important;
 }
-
-[data-card-theme="genesis"] .text-muted,
-[data-card-theme="genesis"] .text-tertiary {
-  color: #a3a3a3 !important;
-}
-
-[data-card-theme="genesis"] h2,
-[data-card-theme="genesis"] .font-mono {
-  color: #ffffff !important;
-  text-shadow: 2px 2px 4px rgba(0,0,0,0.8);
-}
-
-/* Add a subtle red power-light accent to the top edge */
-[data-card-theme="genesis"] button[id^="game-card-"]::before,
-[data-card-theme="genesis"] button[id^="char-card-"]::before,
-[data-card-theme="genesis"] div[id^="move-"]::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, #e60012, transparent);
-  opacity: 0.5;
-}
-
-
-/* Focus outlines for keyboard navigation */
-[id^="game-card-"]:focus,
-[id^="char-card-"]:focus,
-[id^="move-"]:focus {
-  outline: 3px solid var(--accent-indigo) !important;
-  outline-offset: 4px !important;
-}
-
-
-
-
-/* =========================================
-   HARDWARE & CONSOLE THEMES 
-   ========================================= */
-
-/* 1. SNES (North American) 
-   Two-tone grey, Light Lavender / Dark Purple buttons
-*/
-[data-card-theme="snes"] button[id^="game-card-"],
-[data-card-theme="snes"] button[id^="char-card-"],
-[data-card-theme="snes"] div[id^="move-"] {
-  background: 
-    linear-gradient(to bottom, #d8d8e0 0%, #d8d8e0 60%, #b8b8c0 60%) !important;
-  border: 2px solid #a8a8b0 !important;
-  border-radius: 12px;
-  box-shadow: inset 0 2px 4px rgba(255,255,255,0.8), 0 8px 15px -3px rgba(0,0,0,0.15);
-  color: #333 !important;
-}
-
-[data-card-theme="snes"] button[id^="game-card-"]::after,
-[data-card-theme="snes"] button[id^="char-card-"]::after,
-[data-card-theme="snes"] div[id^="move-"]::after {
-  content: '';
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  width: 44px;
-  height: 44px;
-  background-color: #d0d0d8;
-  border-radius: 50%;
-  box-shadow: inset 0 2px 6px rgba(0,0,0,0.2), 0 1px 2px rgba(255,255,255,0.9);
-  background-image: 
-    radial-gradient(circle at 14px 14px, #a0a0e0 4px, transparent 4px), /* Top-Left / Y / Lavender */
-    radial-gradient(circle at 30px 14px, #a0a0e0 4px, transparent 4px), /* Top-Right / X / Lavender */
-    radial-gradient(circle at 14px 30px, #503080 4px, transparent 4px), /* Bottom-Left / B / Purple */
-    radial-gradient(circle at 30px 30px, #503080 4px, transparent 4px); /* Bottom-Right / A / Purple */
-  transform: rotate(-45deg);
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  z-index: 0;
-}
-
-[data-card-theme="snes"] button[id^="game-card-"]:hover::after,
-[data-card-theme="snes"] button[id^="char-card-"]:hover::after,
-[data-card-theme="snes"] div[id^="move-"]:hover::after {
-  transform: rotate(-45deg) scale(1.1);
-}
-
-[data-card-theme="snes"] .tagline { color: #503080 !important; font-weight: 800; }
-[data-card-theme="snes"] h2 { color: #333 !important; }
-
-/* 2. SUPER FAMICOM (sfami)
-   Rounded grey, Green/Blue/Yellow/Red
-*/
-[data-card-theme="sfami"] button[id^="game-card-"],
-[data-card-theme="sfami"] button[id^="char-card-"],
-[data-card-theme="sfami"] div[id^="move-"] {
-  background: 
-    linear-gradient(to bottom, #94949a 0%, #94949a 20%, transparent 20%) no-repeat,
-    linear-gradient(145deg, #e4e4e8, #cfcfd5) !important;
-  border: 2px solid #b0b0ba !important;
-  border-radius: 16px;
-  box-shadow: inset 0 3px 5px rgba(255,255,255,0.9), inset 0 -2px 5px rgba(0,0,0,0.1);
-  color: #2d2d32 !important;
-}
-
-[data-card-theme="sfami"] button[id^="game-card-"]::before,
-[data-card-theme="sfami"] button[id^="char-card-"]::before,
-[data-card-theme="sfami"] div[id^="move-"]::before {
-  content: '';
-  position: absolute;
-  top: -5%;
-  left: 15%;
-  right: 15%;
-  height: 25%;
-  background: #7a7a80;
-  border-radius: 0 0 16px 16px;
-  box-shadow: inset 0 -4px 8px rgba(0,0,0,0.4), 0 2px 2px rgba(255,255,255,0.3);
-  z-index: 0;
-}
-
-[data-card-theme="sfami"] button[id^="game-card-"]::after,
-[data-card-theme="sfami"] button[id^="char-card-"]::after,
-[data-card-theme="sfami"] div[id^="move-"]::after {
-  content: '';
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  width: 44px;
-  height: 44px;
-  background-color: #2b2b30;
-  border-radius: 50%;
-  box-shadow: inset 0 2px 6px rgba(0,0,0,0.6), 0 2px 4px rgba(255,255,255,0.8);
-  background-image: 
-    radial-gradient(circle at 14px 14px, #00a650 4.5px, transparent 4.5px), /* Green */
-    radial-gradient(circle at 30px 14px, #00599c 4.5px, transparent 4.5px), /* Blue */
-    radial-gradient(circle at 14px 30px, #ffd100 4.5px, transparent 4.5px), /* Yellow */
-    radial-gradient(circle at 30px 30px, #e3001b 4.5px, transparent 4.5px); /* Red */
-  transform: rotate(-45deg);
-  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
-  z-index: 0;
-}
-
-[data-card-theme="sfami"] button[id^="game-card-"]:hover::after,
-[data-card-theme="sfami"] button[id^="char-card-"]:hover::after,
-[data-card-theme="sfami"] div[id^="move-"]:hover::after {
-  transform: rotate(-45deg) scale(1.1);
-}
-
-[data-card-theme="sfami"] .tagline { color: #e3001b !important; font-weight: 800; }
-[data-card-theme="sfami"] h2 { color: #2d2d32 !important; }
-
-/* 3. CPS2 / CPS2CAB (Capcom Arcade)
-   Bright Green/Blue industrial board styling, 6-button layout
-*/
-[data-card-theme="cps2"] button[id^="game-card-"],
-[data-card-theme="cps2"] button[id^="char-card-"],
-[data-card-theme="cps2"] div[id^="move-"],
-[data-card-theme="cps2cab"] button[id^="game-card-"],
-[data-card-theme="cps2cab"] button[id^="char-card-"],
-[data-card-theme="cps2cab"] div[id^="move-"] {
-  background: 
-    linear-gradient(rgba(255,255,255,0.05) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.05) 1px, transparent 1px),
-    linear-gradient(145deg, #0f172a, #020617) !important;
-  background-size: 10px 10px, 10px 10px, 100% 100%;
-  border: 1px solid #1e293b !important;
-  color: #f8fafc !important;
-  box-shadow: inset 0 0 20px rgba(14, 165, 233, 0.1);
-}
-
-[data-card-theme="cps2"] button[id^="game-card-"]::after,
-[data-card-theme="cps2cab"] button[id^="game-card-"]::after {
-  content: '';
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  width: 50px;
-  height: 35px;
-  /* 6 Arcade Buttons: P1, P2, P3 (Red, Yellow, Blue) and K1, K2, K3 */
-  background-image: 
-    radial-gradient(circle at 10px 10px, #ef4444 4px, transparent 4px),
-    radial-gradient(circle at 25px 8px, #eab308 4px, transparent 4px),
-    radial-gradient(circle at 40px 10px, #3b82f6 4px, transparent 4px),
-    radial-gradient(circle at 10px 25px, #ef4444 4px, transparent 4px),
-    radial-gradient(circle at 25px 23px, #eab308 4px, transparent 4px),
-    radial-gradient(circle at 40px 25px, #3b82f6 4px, transparent 4px);
-  background-color: rgba(255,255,255,0.03);
-  border-radius: 8px;
-  border: 1px solid rgba(255,255,255,0.1);
-  transform: rotate(-5deg);
-  transition: transform 0.3s;
-}
-
-[data-card-theme="cps2"] button[id^="game-card-"]:hover::after,
-[data-card-theme="cps2cab"] button[id^="game-card-"]:hover::after {
-  transform: rotate(-5deg) scale(1.1);
-}
-
-[data-card-theme="cps2"] .tagline, [data-card-theme="cps2cab"] .tagline { color: #38bdf8 !important; }
-
-/* 4. MVS / MVS CAB / AES (Neo Geo)
-   Red / Gold / Black styling, 4-button arc layout
-*/
-[data-card-theme="mvs"] button[id^="game-card-"],
-[data-card-theme="mvs"] button[id^="char-card-"],
-[data-card-theme="mvs"] div[id^="move-"],
-[data-card-theme="mvscab"] button[id^="game-card-"],
-[data-card-theme="mvscab"] button[id^="char-card-"],
-[data-card-theme="mvscab"] div[id^="move-"],
-[data-card-theme="aes"] button[id^="game-card-"],
-[data-card-theme="aes"] button[id^="char-card-"],
-[data-card-theme="aes"] div[id^="move-"] {
-  background: linear-gradient(135deg, #b91c1c 0%, #7f1d1d 100%) !important;
-  border: 2px solid #fcd34d !important; /* Gold border */
-  border-radius: 8px;
+[data-card-theme="sf2gen"] h2, [data-card-theme="genesis"] h2 {
   color: #fff !important;
-  box-shadow: inset 0 0 15px rgba(0,0,0,0.5);
+}
+[data-card-theme="sf2gen"] .tagline, [data-card-theme="genesis"] .tagline {
+  color: #d92b38 !important;
 }
 
-[data-card-theme="mvs"] button[id^="game-card-"]::after,
-[data-card-theme="mvscab"] button[id^="game-card-"]::after,
-[data-card-theme="aes"] button[id^="game-card-"]::after {
-  content: '';
-  position: absolute;
-  bottom: 15px;
-  right: 15px;
-  width: 60px;
-  height: 35px;
-  /* 4 Buttons in an arc: Red, Yellow, Green, Blue */
-  background-image: 
-    radial-gradient(circle at 10px 20px, #ef4444 5px, transparent 5px), /* A - Red */
-    radial-gradient(circle at 25px 12px, #eab308 5px, transparent 5px), /* B - Yellow */
-    radial-gradient(circle at 40px 12px, #22c55e 5px, transparent 5px), /* C - Green */
-    radial-gradient(circle at 55px 20px, #3b82f6 5px, transparent 5px); /* D - Blue */
-  background-color: #111;
-  border-radius: 20px;
-  border: 1px solid #444;
-  transition: transform 0.3s;
+/* ── SNES / Super Famicom Theme ──────────────────────────── */
+.app-container[data-card-theme="snes"],
+.app-container[data-card-theme="sfami"] {
+  /* SNES Purple: #8162b7, SFC Red: #e3001b */
+}
+[data-card-theme="snes"] button[id^="game-card-"]:hover,
+[data-card-theme="snes"] button[id^="char-card-"]:hover,
+[data-card-theme="snes"] div[id^="move-"]:hover {
+  border-color: #8162b7 !important;
+  box-shadow: 0 12px 30px rgba(129, 98, 183, 0.15) !important;
+  transform: translateY(-4px) scale(1.02);
+}
+[data-card-theme="snes"] div[id^="move-"][data-selected="true"] {
+  border-color: #8162b7 !important;
+  background: rgba(129, 98, 183, 0.1) !important;
+  box-shadow: 0 8px 25px rgba(129, 98, 183, 0.2) !important;
+}
+[data-card-theme="snes"] h2 { color: #fff !important; }
+[data-card-theme="snes"] .tagline { color: #8162b7 !important; }
+
+[data-card-theme="sfami"] button[id^="game-card-"]:hover,
+[data-card-theme="sfami"] button[id^="char-card-"]:hover,
+[data-card-theme="sfami"] div[id^="move-"]:hover {
+  border-color: #e3001b !important;
+  box-shadow: 0 12px 30px rgba(227, 0, 27, 0.15) !important;
+  transform: translateY(-4px) scale(1.02);
+}
+[data-card-theme="sfami"] div[id^="move-"][data-selected="true"] {
+  border-color: #e3001b !important;
+  background: rgba(227, 0, 27, 0.1) !important;
+  box-shadow: 0 8px 25px rgba(227, 0, 27, 0.2) !important;
+}
+[data-card-theme="sfami"] h2 { color: #fff !important; }
+[data-card-theme="sfami"] .tagline { color: #ffcc00 !important; }
+
+/* ── Neo Geo MVS / AES Theme ──────────────────────────── */
+.app-container[data-card-theme="mvs"],
+.app-container[data-card-theme="mvscab"],
+.app-container[data-card-theme="aes"] {
+  /* MVS Red: #ff003c, Blue: #0066ff */
+}
+[data-card-theme="mvs"] button[id^="game-card-"]:hover,
+[data-card-theme="mvs"] button[id^="char-card-"]:hover,
+[data-card-theme="mvs"] div[id^="move-"]:hover,
+[data-card-theme="mvscab"] button[id^="game-card-"]:hover,
+[data-card-theme="mvscab"] button[id^="char-card-"]:hover,
+[data-card-theme="mvscab"] div[id^="move-"]:hover,
+[data-card-theme="aes"] button[id^="game-card-"]:hover,
+[data-card-theme="aes"] button[id^="char-card-"]:hover,
+[data-card-theme="aes"] div[id^="move-"]:hover {
+  border-color: #ff003c !important;
+  box-shadow: 0 12px 30px rgba(255, 0, 60, 0.15) !important;
+  transform: translateY(-4px) scale(1.02);
+}
+[data-card-theme="mvs"] div[id^="move-"][data-selected="true"],
+[data-card-theme="mvscab"] div[id^="move-"][data-selected="true"],
+[data-card-theme="aes"] div[id^="move-"][data-selected="true"] {
+  border-color: #ff003c !important;
+  background: rgba(255, 0, 60, 0.1) !important;
+  box-shadow: 0 8px 25px rgba(255, 0, 60, 0.2) !important;
+}
+[data-card-theme="mvs"] h2, [data-card-theme="mvscab"] h2, [data-card-theme="aes"] h2 {
+  color: #fff !important;
+}
+[data-card-theme="mvs"] .tagline, [data-card-theme="mvscab"] .tagline, [data-card-theme="aes"] .tagline {
+  color: #0066ff !important;
 }
 
-[data-card-theme="mvs"] button[id^="game-card-"]:hover::after,
-[data-card-theme="mvscab"] button[id^="game-card-"]:hover::after,
-[data-card-theme="aes"] button[id^="game-card-"]:hover::after {
-  transform: scale(1.1);
+/* ── Capcom CPS2 Theme ──────────────────────────── */
+.app-container[data-card-theme="cps2"],
+.app-container[data-card-theme="cps2cab"] {
+  /* Arcade Cyan: #38bdf8 */
 }
-
-[data-card-theme="mvs"] .tagline, [data-card-theme="mvscab"] .tagline, [data-card-theme="aes"] .tagline { color: #fcd34d !important; font-weight: 800; }
-[data-card-theme="mvs"] h2, [data-card-theme="mvscab"] h2, [data-card-theme="aes"] h2 { color: #fff !important; }
-
-/* Ensure z-index layering inside buttons so pseudo-elements don't overlap text */
-[data-card-theme] button[id^="game-card-"] > *,
-[data-card-theme] button[id^="char-card-"] > *,
-[data-card-theme] div[id^="move-"] > * {
-  position: relative;
-  z-index: 10;
+[data-card-theme="cps2"] button[id^="game-card-"]:hover,
+[data-card-theme="cps2"] button[id^="char-card-"]:hover,
+[data-card-theme="cps2"] div[id^="move-"]:hover,
+[data-card-theme="cps2cab"] button[id^="game-card-"]:hover,
+[data-card-theme="cps2cab"] button[id^="char-card-"]:hover,
+[data-card-theme="cps2cab"] div[id^="move-"]:hover {
+  border-color: #38bdf8 !important;
+  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.15) !important;
+  transform: translateY(-4px) scale(1.02);
 }
-
+[data-card-theme="cps2"] div[id^="move-"][data-selected="true"],
+[data-card-theme="cps2cab"] div[id^="move-"][data-selected="true"] {
+  border-color: #38bdf8 !important;
+  background: rgba(56, 189, 248, 0.1) !important;
+  box-shadow: 0 8px 25px rgba(56, 189, 248, 0.2) !important;
+}
+[data-card-theme="cps2"] h2, [data-card-theme="cps2cab"] h2 {
+  color: #fff !important;
+}
+[data-card-theme="cps2"] .tagline, [data-card-theme="cps2cab"] .tagline {
+  color: #38bdf8 !important;
+}

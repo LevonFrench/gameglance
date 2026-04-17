@@ -195,7 +195,7 @@ function App() {
          gameName={selectedGame?.name || 'GAMES'}
          characterName={charName}
          controller={controller}
-         notationSystem={notationOverride === 'auto' ? selectedGame?.notationSystem : notationOverride}
+         notationSystem={(notationOverride === 'auto' ? selectedGame?.notationSystem : notationOverride) as any}
          onSetController={setController}
          onExit={() => window.history.back()} 
       />;
