@@ -1,7 +1,7 @@
 # Unpopulated Characters Registry
 
 
-**Total Unpopulated:** 443 / 4129
+**Total Unpopulated:** 447 / 4129
 
 
 ## Capcom Fighting Jam (capcom-fighting-jam)
@@ -13,9 +13,13 @@
 - Victor (0 moves)
 
 ## The King of Fighters 2001 (the-king-of-fighters-2001)
+- Angel (0 moves)
+- K\ (0 moves)
 - KOF 2001 (0 moves)
+- Kula Diamond (0 moves)
 
 ## The King of Fighters XV (the-king-of-fighters-xv)
+- Isla (0 moves)
 - Kof XV (0 moves)
 
 ## Red Earth (Warzard) (red-earth-warzard)

@@ -623,7 +623,7 @@ rosterCount: 19,
       { id: 'shin-akuma', name: 'Shin Akuma' },
       { id: 'urien', name: 'Urien' },
       { id: 'yun', name: 'Yun' },
-      { id: 'zangief', name: 'Zangief' }
+      { id: 'zangief', name: 'Zangief' },
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4335,7 +4335,7 @@ rosterCount: 31,
       { id: 'victor', name: 'Victor' },
       { id: 'xiaoyu', name: 'Xiaoyu' },
       { id: 'yoshimitsu', name: 'Yoshimitsu' },
-      { id: 'zafina', name: 'Zafina' }
+      { id: 'zafina', name: 'Zafina' },
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4489,7 +4489,7 @@ rosterCount: 34,
       { id: 'sie-kensou', name: 'Sie Kensou' },
       { id: 'terry-bogard', name: 'Terry Bogard' },
       { id: 'vanessa', name: 'Vanessa' },
-      { id: 'whip', name: 'Whip' }
+      { id: 'whip', name: 'Whip' },
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -4789,7 +4789,7 @@ rosterCount: 48,
       { id: 'vanessa', name: 'Vanessa' },
       { id: 'whip', name: 'Whip' },
       { id: 'yashiro-nanakase', name: 'Yashiro Nanakase' },
-      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' }
+      { id: 'yuri-sakazaki', name: 'Yuri Sakazaki' },
     ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -5854,7 +5854,7 @@ rosterCount: 8,
       { id: 'mai-ling', name: 'Mai-Ling' },
       { id: 'ravange', name: 'Ravange' },
       { id: 'scion', name: 'Scion' },
-      { id: 'tessa', name: 'Tessa' }
+      { id: 'tessa', name: 'Tessa' },
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -6569,7 +6569,7 @@ rosterCount: 8,
       { id: 'voldo', name: 'Voldo' },
       { id: 'xiba', name: 'Xiba' },
       { id: 'yoshimitsu', name: 'Yoshimitsu' },
-      { id: 'zwei', name: 'Z.W.E.I.' }
+      { id: 'zwei', name: 'Z.W.E.I.' },
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -6609,7 +6609,7 @@ rosterCount: 8,
       { id: 'voldo', name: 'Voldo' },
       { id: 'xianghua', name: 'Xianghua' },
       { id: 'yoshimitsu', name: 'Yoshimitsu' },
-      { id: 'zasalamel', name: 'Zasalamel' }
+      { id: 'zasalamel', name: 'Zasalamel' },
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
