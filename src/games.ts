@@ -8222,4 +8222,39 @@ rosterCount: 8,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Throws', 'Unique Attacks']
   }
+  ,
+  {
+    id: 'mortal-kombat-vs-dc-universe',
+    notationSystem: 'mk',
+    name: 'Mortal Kombat vs. DC Universe',
+    developer: 'Midway',
+    releaseYear: 2008,
+    platform: 'PlayStation 3, Xbox 360, PC',
+    rosterCount: 22,
+    characters: [
+      { id: 'batman', name: 'Batman' },
+      { id: 'superman', name: 'Superman' },
+      { id: 'the-flash', name: 'The Flash' },
+      { id: 'wonder-woman', name: 'Wonder Woman' },
+      { id: 'green-lantern', name: 'Green Lantern' },
+      { id: 'captain-marvel', name: 'Captain Marvel' },
+      { id: 'the-joker', name: 'The Joker' },
+      { id: 'catwoman', name: 'Catwoman' },
+      { id: 'deathstroke', name: 'Deathstroke' },
+      { id: 'lex-luthor', name: 'Lex Luthor' },
+      { id: 'darkseid', name: 'Darkseid' },
+      { id: 'scorpion', name: 'Scorpion' },
+      { id: 'sub-zero', name: 'Sub-Zero' },
+      { id: 'sonya', name: 'Sonya' },
+      { id: 'shang-tsung', name: 'Shang Tsung' },
+      { id: 'kitana', name: 'Kitana' },
+      { id: 'jax', name: 'Jax' },
+      { id: 'liu-kang', name: 'Liu Kang' },
+      { id: 'raiden', name: 'Raiden' },
+      { id: 'kano', name: 'Kano' },
+      { id: 'baraka', name: 'Baraka' },
+      { id: 'shao-kahn', name: 'Shao Kahn' }
+    ],
+    tabs: ['Special Moves', 'Heroic Brutality', 'Fatality', 'Super Combos', 'Normal Moves', 'Throws', 'Unique Attacks']
+  }
 ];
