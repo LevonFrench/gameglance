@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { useArrowNavigation } from './useArrowNavigation';
 import type { GameDefinition, CharacterExport, Move } from './types';
 import { GlyphSequence } from './GlyphSequence';
 import type { ControllerType } from './glyphMap';
@@ -27,6 +28,8 @@ const TYPE_COLORS: Record<string, string> = {
 };
 
 export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, onToggleMove, onLaunchMainScreen, onBack, onHome }) => {
+  useArrowNavigation('[id^="move-"]');
+
   const [characterData, setCharacterData] = useState<CharacterExport | null>(null);
   const [orderedTabs, setOrderedTabs] = useState<string[]>([]);
   const [loadingError, setLoadingError] = useState<string>('');
@@ -605,6 +608,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                 <div
                   key={move.id}
                   id={`move-${move.id}`}
+                  tabIndex={0}
                   data-selected={isSelected ? 'true' : 'false'}
                   onClick={() => onToggleMove(move)}
                   style={{

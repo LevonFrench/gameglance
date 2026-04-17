@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useArrowNavigation } from './useArrowNavigation';
 import type { GameDefinition } from './types';
 import { SUPPORTED_GAMES } from './games';
 import { useTheme } from './ThemeContext';
@@ -135,7 +136,7 @@ const CustomDropdown = ({ value, options, onChange, labelExtractor = (o: string)
         onMouseOver={(e) => { if (!isOpen) e.currentTarget.style.borderColor = 'var(--accent-indigo)'; }}
         onMouseOut={(e) => { if (!isOpen) e.currentTarget.style.borderColor = 'var(--border-subtle)'; }}
       >
-        <span>{labelExtractor(value)}</span>
+        <span style={{ whiteSpace: 'nowrap' }}>{labelExtractor(value)}</span>
         <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" style={{ transform: isOpen ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.3s ease' }}><polyline points="6 9 12 15 18 9"></polyline></svg>
       </div>
       {isOpen && (
@@ -281,6 +282,8 @@ const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: Autocomple
 }
 
 export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAnimation }) => {
+  useArrowNavigation('[id^="game-card-"]');
+
   const [favorites, setFavorites] = useState<string[]>(() => {
     const storedFavs = localStorage.getItem('fgc_game_favorites');
     if (storedFavs) {
@@ -417,7 +420,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
         {/* Controls Container */}
         <div style={{
           display: 'grid',
-          gridTemplateColumns: '1fr minmax(250px, 2fr) 1fr',
+          gridTemplateColumns: 'min-content 1fr min-content',
           gap: '1rem',
           maxWidth: '800px',
           margin: '0 auto',
@@ -432,7 +435,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
               setDeveloperFilter(val);
               setShowCards(true);
             }}
-            labelExtractor={(v: string) => v === 'All' ? 'Platforms' : v}
+            labelExtractor={(v: string) => v === 'All' ? 'Platforms' : v === 'Arc System Works' ? 'Arc Sys Works' : v}
           />
 
           {/* Search Pill */}

@@ -1375,3 +1375,12 @@ h1, h2, h3, h4, h5, h6 {
   background: linear-gradient(90deg, transparent, #e60012, transparent);
   opacity: 0.5;
 }
+
+
+/* Focus outlines for keyboard navigation */
+[id^="game-card-"]:focus,
+[id^="char-card-"]:focus,
+[id^="move-"]:focus {
+  outline: 3px solid var(--accent-indigo) !important;
+  outline-offset: 4px !important;
+}

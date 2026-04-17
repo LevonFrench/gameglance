@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
+import { useArrowNavigation } from './useArrowNavigation';
 import type { GameDefinition } from './types';
 
 import { useTheme } from './ThemeContext';
@@ -17,6 +18,8 @@ interface Props {
 }
 
 export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnimation, onSelectCharacter, onBack, onHome }) => {
+  useArrowNavigation('[id^="char-card-"]');
+
   const [favorites, setFavorites] = useState<string[]>(() => {
     const storedFavs = localStorage.getItem('fgc_favorites');
     if (storedFavs) {
