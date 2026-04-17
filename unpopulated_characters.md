@@ -1,7 +1,7 @@
 # Unpopulated Characters Registry
 
 
-**Total Unpopulated:** 440 / 4129
+**Total Unpopulated:** 447 / 4129
 
 
 ## Capcom Fighting Jam (capcom-fighting-jam)
@@ -87,6 +87,15 @@
 
 ## Guilty Gear Xrd -SIGN- (guilty-gear-xrd--sign-)
 - Axl Low (0 moves)
+
+## Marvel Toukon: Fighting Souls (Beta Version) (marvel-toukon-fighting-souls-beta-version)
+- Captain America (0 moves)
+- Hulk (0 moves)
+- Iron Man (0 moves)
+- Spider-Man (0 moves)
+- Thanos (0 moves)
+- Thor (0 moves)
+- Wolverine (0 moves)
 
 ## Red Earth (Warzard) (red-earth-warzard)
 - Leo (0 moves)
