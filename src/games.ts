@@ -8194,4 +8194,32 @@ rosterCount: 8,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Throws', 'Unique Attacks']
   }
+  ,
+  {
+    id: 'chaos-code-new-sign-of-catastrophe',
+    name: 'Chaos Code: New Sign of Catastrophe',
+    developer: 'FK Digital',
+    releaseYear: 2013,
+    platform: 'Arcade, PlayStation 4, PC',
+    rosterCount: 16,
+    characters: [
+      { id: 'bravo', name: 'Bravo' },
+      { id: 'cait-sith', name: 'Cait & Sith' },
+      { id: 'catherine', name: 'Catherine' },
+      { id: 'celia', name: 'Celia' },
+      { id: 'celia-ii-kai', name: 'Celia II Kai' },
+      { id: 'cerberus', name: 'Cerberus' },
+      { id: 'cthylla', name: 'Cthylla' },
+      { id: 'hermes', name: 'Hermes' },
+      { id: 'hikaru', name: 'Hikaru' },
+      { id: 'kagari', name: 'Kagari' },
+      { id: 'kudlak-sin', name: 'Kudlak-Sin' },
+      { id: 'lupinus', name: 'Lupinus' },
+      { id: 'mg-hikaru', name: 'MG Hikaru' },
+      { id: 'ray', name: 'Ray' },
+      { id: 'rui', name: 'Rui' },
+      { id: 'vein', name: 'Vein' }
+    ],
+    tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Throws', 'Unique Attacks']
+  }
 ];
