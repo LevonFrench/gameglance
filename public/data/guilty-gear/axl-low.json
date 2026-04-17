@@ -6,140 +6,79 @@
       "id": "chainslam",
       "name": "Chain Slam",
       "type": "throw",
-      "inputs": [
-        "back",
-        "or",
-        "forward",
-        "_b"
-      ]
+      "input": "4or6_b"
     },
     {
       "id": "backhand",
       "name": "Backhand",
       "type": "normal",
-      "inputs": [
-        "forward",
-        "P"
-      ]
+      "input": "6P"
     },
     {
       "id": "leaphook",
       "name": "Leap Hook",
       "type": "normal",
-      "inputs": [
-        "forward",
-        "_b"
-      ]
+      "input": "6_b"
     },
     {
       "id": "rensengeki",
       "name": "Ren Sen Geki",
       "type": "special",
-      "inputs": [
-        "^4",
-        "forward",
-        "_a"
-      ]
+      "input": "^46_a"
     },
     {
       "id": "kyokusageki",
-      "name": "^!kyoku Sa Geki",
+      "name": "Kyoku Sa Geki",
       "type": "special",
-      "inputs": [
-        "^8"
-      ]
+      "input": "^8"
     },
     {
       "id": "sensageki",
-      "name": "^!sen Sa Geki",
+      "name": "Sen Sa Geki",
       "type": "special",
-      "inputs": [
-        "^2"
-      ]
+      "input": "^2"
     },
     {
       "id": "rashousen",
       "name": "Ra Shou Sen",
       "type": "special",
-      "inputs": [
-        "^4",
-        "forward",
-        "_b"
-      ]
+      "input": "^46_b"
     },
     {
       "id": "bentenkari",
       "name": "Ben Ten Kari",
       "type": "special",
-      "inputs": [
-        "forward",
-        "down",
-        "down-forward",
-        "_a",
-        "or",
-        "_b"
-      ]
+      "input": "623_aor_b"
     },
     {
       "id": "axlbomberwithb",
-      "name": "^!axl Bomber (with _b)",
+      "name": "Axl Bomber (with b)",
       "type": "special",
-      "inputs": [
-        "forward",
-        "down",
-        "down-forward",
-        "_b"
-      ]
+      "input": "623_b"
     },
     {
       "id": "tenhouseki",
       "name": "Ten Hou Seki",
       "type": "special",
-      "inputs": [
-        "down",
-        "down-back",
-        "back",
-        "P",
-        "(reverse",
-        "all)"
-      ]
+      "input": "214P(reverseall)"
     },
     {
       "id": "raieisageki",
       "name": "Rai Ei Sa Geki",
       "type": "special",
-      "inputs": [
-        "forward",
-        "down-forward",
-        "down",
-        "down-back",
-        "back",
-        "_a",
-        "or",
-        "_b"
-      ]
+      "input": "63214_aor_b"
     },
     {
       "id": "movewithb",
-      "name": "^!move (with _b)",
+      "name": "Move (with b)",
       "type": "special",
-      "inputs": [
-        "back",
-        "or",
-        "forward"
-      ]
+      "input": "4or6"
     },
     {
       "id": "axlbomber",
       "name": "Axl Bomber",
       "type": "special",
-      "inputs": [
-        "_^",
-        "forward",
-        "down",
-        "down-forward",
-        "_b"
-      ]
+      "input": "_^623_b"
     }
   ]
 }

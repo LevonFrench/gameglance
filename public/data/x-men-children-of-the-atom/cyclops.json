@@ -6,161 +6,79 @@
       "id": "opticdrill",
       "name": "Optic Drill",
       "type": "throw",
-      "inputs": [
-        "back",
-        "or",
-        "forward",
-        "MP"
-      ]
+      "input": "4or6MP"
     },
     {
       "id": "control",
-      "name": "^!control",
+      "name": "Control",
       "type": "throw",
-      "inputs": [
-        "back",
-        "or",
-        "forward"
-      ]
+      "input": "4or6"
     },
     {
       "id": "groundslam",
       "name": "Ground Slam",
       "type": "throw",
-      "inputs": [
-        "back",
-        "or",
-        "forward",
-        "HP"
-      ]
+      "input": "4or6HP"
     },
     {
       "id": "legthrow",
       "name": "Leg Throw",
       "type": "throw",
-      "inputs": [
-        "down-back",
-        "or",
-        "down-forward",
-        "MK",
-        "or",
-        "HK"
-      ]
+      "input": "1or3MKorHK"
     },
     {
       "id": "downwardopticdrill",
       "name": "Downward Optic Drill",
       "type": "throw",
-      "inputs": [
-        "_^",
-        "back",
-        "or",
-        "forward",
-        "MP",
-        "or",
-        "HP"
-      ]
+      "input": "_^4or6MPorHP"
     },
     {
       "id": "quadrupleattacks",
       "name": "Quadruple Attacks",
       "type": "normal",
-      "inputs": [
-        "LP",
-        "LP",
-        "LP",
-        "LP",
-        "or",
-        "LK",
-        "LK",
-        "LK",
-        "LK"
-      ]
+      "input": "LPLPLPLPorLKLKLKLK"
     },
     {
       "id": "doublekick",
       "name": "Double Kick",
       "type": "normal",
-      "inputs": [
-        "HK",
-        "HK"
-      ]
+      "input": "HKHK"
     },
     {
       "id": "alternativeattacks",
       "name": "Alternative Attacks",
       "type": "normal",
-      "inputs": [
-        "_^",
-        "down",
-        "MP",
-        "or",
-        "HP",
-        "or",
-        "LK",
-        "or",
-        "MK",
-        "or",
-        "HK"
-      ]
+      "input": "_^2MPorHPorLKorMKorHK"
     },
     {
       "id": "2danjump",
       "name": "2 Dan Jump",
       "type": "normal",
-      "inputs": [
-        "_^",
-        "up"
-      ]
+      "input": "_^8"
     },
     {
       "id": "opticblast",
       "name": "Optic Blast",
       "type": "special",
-      "inputs": [
-        "(_^)",
-        "down",
-        "down-forward",
-        "forward",
-        "P"
-      ]
+      "input": "(_^)236P"
     },
     {
       "id": "genesplice",
       "name": "Gene Splice",
       "type": "special",
-      "inputs": [
-        "forward",
-        "down",
-        "down-forward",
-        "P",
-        "(^*)"
-      ]
+      "input": "623P(^*)"
     },
     {
       "id": "rapidpunches",
       "name": "Rapid Punches",
       "type": "special",
-      "inputs": [
-        "forward",
-        "forward",
-        "LP",
-        "LK",
-        ",",
-        "^*",
-        "P"
-      ]
+      "input": "66LPLK,^*P"
     },
     {
       "id": "runningneckbreakerdrop",
       "name": "Running Neck Breaker Drop",
       "type": "special",
-      "inputs": [
-        "forward",
-        "forward",
-        "HP",
-        "HK"
-      ]
+      "input": "66HPHK"
     }
   ]
 }

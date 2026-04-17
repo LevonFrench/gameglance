@@ -5,11 +5,13 @@ export interface FrameData {
   advantage?: string;
 }
 
+export type MoveType = 'normal' | 'special' | 'super' | 'throw' | 'unique' | 'common' | 'finisher' | 'system';
+
 export interface Move {
   id: string;
   name: string;
-  type: 'normal' | 'special' | 'super' | 'throw' | 'unique' | 'common' | string;
-  inputs: string[];
+  type: MoveType;
+  input: string;
   frameData?: FrameData;
 }
 
@@ -18,8 +20,10 @@ export interface CharacterExport {
   character: string;
   theme_colors: { special: string, super_fatality: string, normal: string };
   movesList: Move[];
-  combosList: { id: string, name: string, inputs: string[] }[];
+  combosList: { id: string, name: string, input: string }[];
 }
+
+export type CardTheme = 'default-dark' | 'default-light' | 'genesis' | 'snes' | 'cps2' | 'mvs' | 'aes';
 
 export interface GameDefinition {
   id: string;
@@ -33,7 +37,7 @@ export interface GameDefinition {
   isDraft?: boolean;
   isHidden?: boolean;
   notationSystem?: 'numpad' | 'traditional' | 'mk';
-  characters: { id: string, name: string, isHidden?: boolean, moveCount?: number }[];
+  characters?: { id: string, name: string, isHidden?: boolean, moveCount?: number }[];
 }
 
 export type AppView = 'game_select' | 'char_select' | 'move_list' | 'main_screen';

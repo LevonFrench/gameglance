@@ -634,9 +634,8 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                 color: 'var(--text-secondary)',
                 position: 'relative',
                 zIndex: 1,
-                backdropFilter: 'blur(6px)',
               }}>
-                {game.characters.length} Fighter{game.characters.length !== 1 ? 's' : ''}
+                {game.rosterCount || game.characters?.length || 0} Fighter{(game.rosterCount || game.characters?.length || 0) !== 1 ? 's' : ''}
               </div>
             </button>
           );

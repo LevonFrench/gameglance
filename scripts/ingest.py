@@ -4,77 +4,9 @@ import json
 import argparse
 import subprocess
 
-def slugify(text):
-    if text == "Z.W.E.I.": return "zwei"
-    text = text.lower()
-    if "grøh" in text or "groh" in text: return "grh"
-    text = text.replace("'", "")
-    text = re.sub(r'[^a-z0-9]+', '-', text)
-    return text.strip('-')
-
-def get_game_registry():
-    """Reads src/games.ts to build a map of official game names to their slug IDs."""
-    game_map = {}
-    ts_path = 'src/games.ts'
-    if not os.path.exists(ts_path):
-        return game_map
-    
-    with open(ts_path, 'r', encoding='utf-8') as f:
-        lines = f.readlines()
-        
-    current_id = None
-    for line in lines:
-        stripped = line.strip()
-        
-        m_id = re.search(r'id:\s*(?:"([^"]+)"|\'([^\']+)\')', stripped)
-        if m_id:
-            current_id = m_id.group(1) or m_id.group(2)
-            
-        m_name = re.search(r'name:\s*(?:"([^"]+)"|\'([^\']+)\')', stripped)
-        if m_name and current_id:
-            name = m_name.group(1) or m_name.group(2)
-            game_map[name.lower()] = current_id
-            current_id = None # reset
-            
-    return game_map
-
-def classify_move(move_name, index, total_moves):
-    """Universal heuristic classifier for fighting game moves."""
-    name_lower = move_name.lower()
-    
-    # 1. Positional Priority (First 4 normals, Last is super if sufficiently long)
-    if index < 4 and total_moves >= 8:
-        return "Normal"
-    if index == total_moves - 1 and total_moves >= 8:
-        return "Super"
-        
-    # 2. Smash Bros schema overrides
-    if "smash" in name_lower and "forward" not in name_lower and "up" not in name_lower and "down" not in name_lower:
-        # e.g., "Smash Attacks" category parsed as name
-        return "Smash"
-    if "aerial" in name_lower or "air" in name_lower:
-        return "Aerial"
-
-    # 3. Keyword matching
-    if "punch" in name_lower or "kick" in name_lower or "combo" in name_lower or "knuckle" in name_lower or "jab" in name_lower or "tilt" in name_lower:
-        # Avoid tagging special kicks as normals
-        if "dragon kick" in name_lower and "double" not in name_lower and "jab" not in name_lower:
-            return "Special"
-        if "dragon uppercut" in name_lower:
-            return "Special"
-        return "Normal"
-        
-    if "throw" in name_lower or "hug" in name_lower or "drop" in name_lower or "suplex" in name_lower or "powerbomb" in name_lower or "piledriver" in name_lower or "stolen" in name_lower or "nage" in name_lower:
-        return "Throw"
-        
-    if "taunt" in name_lower or "recover" in name_lower or "hold" in name_lower:
-        return "System"
-        
-    if "pharaoh magic" in name_lower or "midnight bliss" in name_lower or "demon blast" in name_lower or "please help me!" in name_lower or "finale" in name_lower or "dancing flash" in name_lower or "shinpikaibyaku" in name_lower or "aegis reflector" in name_lower or "tyrant slaughter" in name_lower or "final atomic buster" in name_lower or "delos spark" in name_lower or "prova=di=cervo" in name_lower or "deadly rave" in name_lower or "mega" in name_lower or "gyro" in name_lower or "art" in name_lower:
-        return "Super"
-
-    # Default
-    return "Special"
+import sys
+sys.path.append(os.path.dirname(__file__))
+from lib.gameglance import slugify, get_game_registry, classify_move
 
 def parse_docx(filepath):
     try:

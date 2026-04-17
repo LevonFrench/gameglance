@@ -5,60 +5,33 @@
   "movesList": [
     {
       "id": "deaththrow",
-      "name": "(\u2500) Death Throw",
+      "name": "Death Throw",
       "type": "throw",
-      "inputs": [
-        "back",
-        "or",
-        "forward",
-        "K",
-        "or",
-        "HK"
-      ]
+      "input": "4or6KorHK"
     },
     {
       "id": "fatbuster",
-      "name": "(\u2500) Fat Buster",
+      "name": "Fat Buster",
       "type": "throw",
-      "inputs": [
-        "back",
-        "or",
-        "forward",
-        "HP",
-        "HK"
-      ]
+      "input": "4or6HPHK"
     },
     {
       "id": "sankakutobi",
-      "name": "(\u2500) Sankaku Tobi",
+      "name": "Sankaku Tobi",
       "type": "normal",
-      "inputs": [
-        "jump",
-        "against",
-        "the",
-        "wall",
-        "up-forward"
-      ]
+      "input": "jumpagainstthewall9"
     },
     {
       "id": "wfatchainsaw",
-      "name": "(w) Fat Chainsaw",
+      "name": "Fat Chainsaw",
       "type": "special",
-      "inputs": [
-        "^*",
-        "SELECT"
-      ]
+      "input": "^*SELECT"
     },
     {
       "id": "fatbound",
-      "name": "(\u2500) Fat Bound",
+      "name": "Fat Bound",
       "type": "special",
-      "inputs": [
-        "_^",
-        "down",
-        "HP",
-        "HK"
-      ]
+      "input": "_^2HPHK"
     }
   ]
 }

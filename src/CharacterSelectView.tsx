@@ -28,12 +28,30 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
     }
     return [];
   });
+  const [characters, setCharacters] = useState(game.characters || []);
+  const [loadingRoster, setLoadingRoster] = useState(false);
   const { theme } = useTheme();
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
   
   useEffect(() => {
     window.scrollTo(0,0);
   }, []);
+
+  useEffect(() => {
+    if (characters.length === 0) {
+      setLoadingRoster(true);
+      fetch(`/data/${game.id}/_roster.json`)
+        .then(res => res.json())
+        .then(data => {
+          setCharacters(data);
+          setLoadingRoster(false);
+        })
+        .catch(err => {
+          console.error("Failed to load roster:", err);
+          setLoadingRoster(false);
+        });
+    }
+  }, [game.id, characters.length]);
 
   const toggleFavorite = (e: React.MouseEvent, id: string) => {
     e.stopPropagation();
@@ -56,7 +74,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
   };
   
   // Sort favorites first, then alphabetical
-  const sortedCharacters = [...game.characters].sort((a, b) => {
+  const sortedCharacters = [...characters].sort((a, b) => {
     const aFav = favorites.includes(a.id) ? 1 : 0;
     const bFav = favorites.includes(b.id) ? 1 : 0;
     if (aFav !== bFav) return bFav - aFav;
@@ -220,7 +238,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
           marginTop: '0.5rem',
           fontWeight: 300,
         }}>
-          {game.characters.length} fighter{game.characters.length !== 1 ? 's' : ''} available
+          {loadingRoster ? 'Loading roster...' : `${characters.length} fighter${characters.length !== 1 ? 's' : ''} available`}
         </p>
       </header>
         </div>

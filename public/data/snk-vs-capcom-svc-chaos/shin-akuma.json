@@ -5,129 +5,69 @@
   "movesList": [
     {
       "id": "zebu",
-      "name": "(- - \u2500) Zebu",
+      "name": "(- - ) Zebu",
       "type": "throw",
-      "inputs": [
-        "P",
-        "K"
-      ]
+      "input": "PK"
     },
     {
       "id": "kokuu",
-      "name": "(- - \u2500) Kokuu",
+      "name": "(- - ) Kokuu",
       "type": "throw",
-      "inputs": [
-        "HP",
-        "HK"
-      ]
+      "input": "HPHK"
     },
     {
       "id": "otsuranegiritensei",
       "name": "(- - o) Tsurane Giri: Tensei",
       "type": "normal",
-      "inputs": [
-        "forward",
-        "P",
-        "P",
-        "P",
-        "P",
-        "(\"O\"",
-        "on",
-        "2nd/3rd/4th/5th",
-        "hit)"
-      ]
+      "input": "6PPPP(\"O\"on2nd/3rd/4th/5thhit)"
     },
     {
       "id": "otsuranegiririnne",
       "name": "(- - o) Tsurane Giri: Rinne",
       "type": "normal",
-      "inputs": [
-        "forward",
-        "K",
-        "K",
-        "K",
-        "K"
-      ]
+      "input": "6KKKK"
     },
     {
       "id": "iotsuyuharai",
       "name": "(! i o) Tsuyuharai",
       "type": "special",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "P"
-      ]
+      "input": "236P"
     },
     {
       "id": "",
-      "name": "(- - \u2500)",
+      "name": "(- - )",
       "type": "special",
-      "inputs": [
-        "K"
-      ]
+      "input": "K"
     },
     {
       "id": "otenhourin",
       "name": "(- - o) Tenhourin",
       "type": "special",
-      "inputs": [
-        "(_^)",
-        "forward",
-        "down",
-        "down-forward",
-        "P"
-      ]
+      "input": "(_^)623P"
     },
     {
       "id": "iomeika",
       "name": "(- i o) Meika",
       "type": "special",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "K"
-      ]
+      "input": "236K"
     },
     {
       "id": "iokourin",
       "name": "(- i o) Kourin",
       "type": "special",
-      "inputs": [
-        "_^",
-        "down",
-        "down-forward",
-        "forward",
-        "K"
-      ]
+      "input": "_^236K"
     },
     {
       "id": "mumyou",
-      "name": "(- - \u2500) Mumyou",
+      "name": "(- - ) Mumyou",
       "type": "special",
-      "inputs": [
-        "close",
-        "forward",
-        "down-forward",
-        "down",
-        "down-back",
-        "back",
-        "K"
-      ]
+      "input": "close63214K"
     },
     {
       "id": "isetsuna",
-      "name": "(- i \u2500) Setsuna",
+      "name": "(- i ) Setsuna",
       "type": "special",
-      "inputs": [
-        "down",
-        "down",
-        "P",
-        "or",
-        "K"
-      ]
+      "input": "22PorK"
     }
   ]
 }

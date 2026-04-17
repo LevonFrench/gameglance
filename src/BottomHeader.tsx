@@ -1,7 +1,6 @@
 import React from 'react';
 import type { ControllerType } from './glyphMap';
-
-export type CardTheme = 'default-dark' | 'default-light' | 'genesis' | 'snes' | 'cps2' | 'mvs' | 'aes';
+import type { CardTheme } from './types';
 
 interface Props {
   controller: ControllerType;

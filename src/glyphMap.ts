@@ -1,55 +1,55 @@
 export type ControllerType = 'playstation' | 'xbox' | 'arcade' | 'switch' | 'neogeo' | 'wii' | 'mk';
 
+const GLYPH_LABEL_MAP: Record<string, Record<ControllerType, string>> = {
+  'LP': { playstation: '▢', xbox: 'X', arcade: 'LP', switch: 'Y', neogeo: 'A', wii: '1', mk: 'LP' },
+  'RP': { playstation: '△', xbox: 'Y', arcade: 'RP', switch: 'X', neogeo: 'C', wii: '2', mk: 'BL' },
+  'MP': { playstation: '△', xbox: 'Y', arcade: 'MP', switch: 'X', neogeo: 'C', wii: '2', mk: 'BL' },
+  'HP': { playstation: 'R1', xbox: 'RB', arcade: 'HP', switch: 'R', neogeo: 'C', wii: 'A', mk: 'HP' },
+  'LK': { playstation: '✕', xbox: 'A', arcade: 'LK', switch: 'B', neogeo: 'B', wii: 'B', mk: 'LK' },
+  'RK': { playstation: '◯', xbox: 'B', arcade: 'RK', switch: 'A', neogeo: 'D', wii: '-', mk: 'R' },
+  'MK': { playstation: '◯', xbox: 'B', arcade: 'MK', switch: 'A', neogeo: 'D', wii: '-', mk: 'R' },
+  'HK': { playstation: 'R2', xbox: 'RT', arcade: 'HK', switch: 'ZR', neogeo: 'D', wii: '+', mk: 'HK' },
+  '1': { playstation: '▢', xbox: 'X', arcade: 'LP', switch: 'Y', neogeo: 'A', wii: '1', mk: '1' },
+  '2': { playstation: '△', xbox: 'Y', arcade: 'MP', switch: 'X', neogeo: 'C', wii: '2', mk: '2' },
+  '3': { playstation: '✕', xbox: 'A', arcade: 'LK', switch: 'B', neogeo: 'B', wii: 'B', mk: '3' },
+  '4': { playstation: '◯', xbox: 'B', arcade: 'RK', switch: 'A', neogeo: 'D', wii: '-', mk: '4' },
+  'BL': { playstation: 'R2', xbox: 'RT', arcade: 'BL', switch: 'ZR', neogeo: 'D', wii: '+', mk: 'BL' },
+  'R': { playstation: 'L2', xbox: 'LT', arcade: 'R', switch: 'ZL', neogeo: 'D', wii: '-', mk: 'R' },
+  'EN': { playstation: 'R1', xbox: 'RB', arcade: 'EN', switch: 'R', neogeo: 'A', wii: '1', mk: 'EN' },
+  'P': { playstation: 'P', xbox: 'P', arcade: 'P', switch: 'P', neogeo: 'P', wii: 'P', mk: 'P' },
+  'K': { playstation: 'K', xbox: 'K', arcade: 'K', switch: 'K', neogeo: 'K', wii: 'K', mk: 'K' },
+  'PP': { playstation: 'PP', xbox: 'PP', arcade: 'PP', switch: 'PP', neogeo: 'PP', wii: 'PP', mk: 'PP' },
+  'KK': { playstation: 'KK', xbox: 'KK', arcade: 'KK', switch: 'KK', neogeo: 'KK', wii: 'KK', mk: 'KK' },
+  'PPP': { playstation: 'PPP', xbox: 'PPP', arcade: 'PPP', switch: 'PPP', neogeo: 'PPP', wii: 'PPP', mk: 'PPP' },
+  'KKK': { playstation: 'KKK', xbox: 'KKK', arcade: 'KKK', switch: 'KKK', neogeo: 'KKK', wii: 'KKK', mk: 'KKK' },
+  'LIGHT PUNCH': { playstation: '▢', xbox: 'X', arcade: 'LP', switch: 'Y', neogeo: 'A', wii: '1', mk: 'LP' },
+  'MEDIUM PUNCH': { playstation: '△', xbox: 'Y', arcade: 'MP', switch: 'X', neogeo: 'C', wii: '2', mk: 'BL' },
+  'HEAVY PUNCH': { playstation: 'R1', xbox: 'RB', arcade: 'HP', switch: 'R', neogeo: 'C', wii: 'A', mk: 'HP' },
+  'LIGHT KICK': { playstation: '✕', xbox: 'A', arcade: 'LK', switch: 'B', neogeo: 'B', wii: 'B', mk: 'LK' },
+  'MEDIUM KICK': { playstation: '◯', xbox: 'B', arcade: 'MK', switch: 'A', neogeo: 'D', wii: '-', mk: 'R' },
+  'HEAVY KICK': { playstation: 'R2', xbox: 'RT', arcade: 'HK', switch: 'ZR', neogeo: 'D', wii: '+', mk: 'HK' },
+  'PUNCH': { playstation: 'P', xbox: 'P', arcade: 'P', switch: 'P', neogeo: 'P', wii: 'P', mk: 'P' },
+  'KICK': { playstation: 'K', xbox: 'K', arcade: 'K', switch: 'K', neogeo: 'K', wii: 'K', mk: 'K' },
+  'CANCEL': { playstation: '~', xbox: '~', arcade: '~', switch: '~', neogeo: '~', wii: '~', mk: '~' },
+  // Directionals
+  'back': { playstation: '←', xbox: '←', arcade: '←', switch: '←', neogeo: '←', wii: '←', mk: '←' },
+  'forward': { playstation: '→', xbox: '→', arcade: '→', switch: '→', neogeo: '→', wii: '→', mk: '→' },
+  'down': { playstation: '↓', xbox: '↓', arcade: '↓', switch: '↓', neogeo: '↓', wii: '↓', mk: '↓' },
+  'up': { playstation: '↑', xbox: '↑', arcade: '↑', switch: '↑', neogeo: '↑', wii: '↑', mk: '↑' },
+  'down-forward': { playstation: '↘', xbox: '↘', arcade: '↘', switch: '↘', neogeo: '↘', wii: '↘', mk: '↘' },
+  'down-back': { playstation: '↙', xbox: '↙', arcade: '↙', switch: '↙', neogeo: '↙', wii: '↙', mk: '↙' },
+  'up-forward': { playstation: '↗', xbox: '↗', arcade: '↗', switch: '↗', neogeo: '↗', wii: '↗', mk: '↗' },
+  'up-back': { playstation: '↖', xbox: '↖', arcade: '↖', switch: '↖', neogeo: '↖', wii: '↖', mk: '↖' },
+  '360': { playstation: '↻', xbox: '↻', arcade: '↻', switch: '↻', neogeo: '↻', wii: '↻', mk: '↻' },
+  '720': { playstation: '↻↻', xbox: '↻↻', arcade: '↻↻', switch: '↻↻', neogeo: '↻↻', wii: '↻↻', mk: '↻↻' },
+};
+
 export const getGlyphLabel = (input: string, controller: ControllerType): string => {
-  const normInput = input.replace(/[\][]/g, '').toUpperCase();
-  const lowerInput = input.replace(/[\][]/g, '').toLowerCase();
+  const normInput = input.replace(/[\][]]/g, '').toUpperCase();
+  const lowerInput = input.replace(/[\][]]/g, '').toLowerCase();
 
-  const map: Record<string, Record<ControllerType, string>> = {
-    'LP': { playstation: '▢', xbox: 'X', arcade: 'LP', switch: 'Y', neogeo: 'A', wii: '1', mk: 'LP' },
-    'RP': { playstation: '△', xbox: 'Y', arcade: 'RP', switch: 'X', neogeo: 'C', wii: '2', mk: 'BL' },
-    'MP': { playstation: '△', xbox: 'Y', arcade: 'MP', switch: 'X', neogeo: 'C', wii: '2', mk: 'BL' },
-    'HP': { playstation: 'R1', xbox: 'RB', arcade: 'HP', switch: 'R', neogeo: 'C', wii: 'A', mk: 'HP' },
-    'LK': { playstation: '✕', xbox: 'A', arcade: 'LK', switch: 'B', neogeo: 'B', wii: 'B', mk: 'LK' },
-    'RK': { playstation: '◯', xbox: 'B', arcade: 'RK', switch: 'A', neogeo: 'D', wii: '-', mk: 'R' },
-    'MK': { playstation: '◯', xbox: 'B', arcade: 'MK', switch: 'A', neogeo: 'D', wii: '-', mk: 'R' },
-    'HK': { playstation: 'R2', xbox: 'RT', arcade: 'HK', switch: 'ZR', neogeo: 'D', wii: '+', mk: 'HK' },
-    '1': { playstation: '▢', xbox: 'X', arcade: 'LP', switch: 'Y', neogeo: 'A', wii: '1', mk: '1' },
-    '2': { playstation: '△', xbox: 'Y', arcade: 'MP', switch: 'X', neogeo: 'C', wii: '2', mk: '2' },
-    '3': { playstation: '✕', xbox: 'A', arcade: 'LK', switch: 'B', neogeo: 'B', wii: 'B', mk: '3' },
-    '4': { playstation: '◯', xbox: 'B', arcade: 'RK', switch: 'A', neogeo: 'D', wii: '-', mk: '4' },
-    'BL': { playstation: 'R2', xbox: 'RT', arcade: 'BL', switch: 'ZR', neogeo: 'D', wii: '+', mk: 'BL' },
-    'R': { playstation: 'L2', xbox: 'LT', arcade: 'R', switch: 'ZL', neogeo: 'D', wii: '-', mk: 'R' },
-    'EN': { playstation: 'R1', xbox: 'RB', arcade: 'EN', switch: 'R', neogeo: 'A', wii: '1', mk: 'EN' },
-    'P': { playstation: 'P', xbox: 'P', arcade: 'P', switch: 'P', neogeo: 'P', wii: 'P', mk: 'P' },
-    'K': { playstation: 'K', xbox: 'K', arcade: 'K', switch: 'K', neogeo: 'K', wii: 'K', mk: 'K' },
-    'PP': { playstation: 'PP', xbox: 'PP', arcade: 'PP', switch: 'PP', neogeo: 'PP', wii: 'PP', mk: 'PP' },
-    'KK': { playstation: 'KK', xbox: 'KK', arcade: 'KK', switch: 'KK', neogeo: 'KK', wii: 'KK', mk: 'KK' },
-    'PPP': { playstation: 'PPP', xbox: 'PPP', arcade: 'PPP', switch: 'PPP', neogeo: 'PPP', wii: 'PPP', mk: 'PPP' },
-    'KKK': { playstation: 'KKK', xbox: 'KKK', arcade: 'KKK', switch: 'KKK', neogeo: 'KKK', wii: 'KKK', mk: 'KKK' },
-    'LIGHT PUNCH': { playstation: '▢', xbox: 'X', arcade: 'LP', switch: 'Y', neogeo: 'A', wii: '1', mk: 'LP' },
-    'MEDIUM PUNCH': { playstation: '△', xbox: 'Y', arcade: 'MP', switch: 'X', neogeo: 'C', wii: '2', mk: 'BL' },
-    'HEAVY PUNCH': { playstation: 'R1', xbox: 'RB', arcade: 'HP', switch: 'R', neogeo: 'C', wii: 'A', mk: 'HP' },
-    'LIGHT KICK': { playstation: '✕', xbox: 'A', arcade: 'LK', switch: 'B', neogeo: 'B', wii: 'B', mk: 'LK' },
-    'MEDIUM KICK': { playstation: '◯', xbox: 'B', arcade: 'MK', switch: 'A', neogeo: 'D', wii: '-', mk: 'R' },
-    'HEAVY KICK': { playstation: 'R2', xbox: 'RT', arcade: 'HK', switch: 'ZR', neogeo: 'D', wii: '+', mk: 'HK' },
-    'PUNCH': { playstation: 'P', xbox: 'P', arcade: 'P', switch: 'P', neogeo: 'P', wii: 'P', mk: 'P' },
-    'KICK': { playstation: 'K', xbox: 'K', arcade: 'K', switch: 'K', neogeo: 'K', wii: 'K', mk: 'K' },
-    'CANCEL': { playstation: '~', xbox: '~', arcade: '~', switch: '~', neogeo: '~', wii: '~', mk: '~' },
-    // Directionals
-    'back': { playstation: '←', xbox: '←', arcade: '←', switch: '←', neogeo: '←', wii: '←', mk: '←' },
-    'forward': { playstation: '→', xbox: '→', arcade: '→', switch: '→', neogeo: '→', wii: '→', mk: '→' },
-    'down': { playstation: '↓', xbox: '↓', arcade: '↓', switch: '↓', neogeo: '↓', wii: '↓', mk: '↓' },
-    'up': { playstation: '↑', xbox: '↑', arcade: '↑', switch: '↑', neogeo: '↑', wii: '↑', mk: '↑' },
-    'down-forward': { playstation: '↘', xbox: '↘', arcade: '↘', switch: '↘', neogeo: '↘', wii: '↘', mk: '↘' },
-    'down-back': { playstation: '↙', xbox: '↙', arcade: '↙', switch: '↙', neogeo: '↙', wii: '↙', mk: '↙' },
-    'up-forward': { playstation: '↗', xbox: '↗', arcade: '↗', switch: '↗', neogeo: '↗', wii: '↗', mk: '↗' },
-    'up-back': { playstation: '↖', xbox: '↖', arcade: '↖', switch: '↖', neogeo: '↖', wii: '↖', mk: '↖' },
-    '360': { playstation: '↻', xbox: '↻', arcade: '↻', switch: '↻', neogeo: '↻', wii: '↻', mk: '↻' },
-    '720': { playstation: '↻↻', xbox: '↻↻', arcade: '↻↻', switch: '↻↻', neogeo: '↻↻', wii: '↻↻', mk: '↻↻' },
-  };
-
-  if (map[normInput]) return map[normInput][controller];
-  if (map[lowerInput]) return map[lowerInput][controller];
+  if (GLYPH_LABEL_MAP[normInput]) return GLYPH_LABEL_MAP[normInput][controller];
+  if (GLYPH_LABEL_MAP[lowerInput]) return GLYPH_LABEL_MAP[lowerInput][controller];
   return input.replace(/[\][]/g, '');
 };
 

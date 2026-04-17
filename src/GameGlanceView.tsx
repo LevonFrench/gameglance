@@ -19,6 +19,8 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
   const [currentPage, setCurrentPage] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
+  const [isFullscreen, setIsFullscreen] = useState(false);
+  const wakeLockRef = useRef<any>(null);
   const { theme } = useTheme();
 
   // Options
@@ -31,10 +33,34 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
   const isDark = theme === 'dark';
   const listContainerRef = useRef<HTMLDivElement>(null);
 
-  // Progress animation
+  // Progress animation and Wake Lock
   useEffect(() => {
     window.scrollTo(0, 0);
   }, []);
+
+  useEffect(() => {
+    const requestWakeLock = async () => {
+      try {
+        if ('wakeLock' in navigator && isPlaying) {
+          wakeLockRef.current = await (navigator as any).wakeLock.request('screen');
+        }
+      } catch (err) {
+        console.warn('Wake Lock error:', err);
+      }
+    };
+    const releaseWakeLock = () => {
+      if (wakeLockRef.current) {
+        wakeLockRef.current.release().then(() => {
+          wakeLockRef.current = null;
+        }).catch(() => {});
+      }
+    };
+
+    if (isPlaying) requestWakeLock();
+    else releaseWakeLock();
+
+    return () => releaseWakeLock();
+  }, [isPlaying]);
   
   useEffect(() => {
     if (!isPlaying) {
@@ -270,6 +296,34 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
           </button>
 
           <button
+            onClick={() => {
+              if (!document.fullscreenElement) {
+                document.documentElement.requestFullscreen().catch(() => {});
+                setIsFullscreen(true);
+              } else {
+                if (document.exitFullscreen) {
+                  document.exitFullscreen();
+                  setIsFullscreen(false);
+                }
+              }
+            }}
+            style={{
+              padding: '0.45rem 0.85rem',
+              background: 'var(--bg-input)',
+              border: '1px solid var(--border-subtle)',
+              color: 'var(--text-secondary)',
+              borderRadius: 'var(--radius-md)',
+              fontSize: '0.8rem',
+              fontWeight: 600,
+              cursor: 'pointer',
+              fontFamily: 'inherit',
+              transition: 'all 0.25s ease',
+            }}
+          >
+            {isFullscreen ? '⛶ Exit' : '⛶ Full'}
+          </button>
+
+          <button
             id="gameglance-options"
             onClick={() => setShowOptions(!showOptions)}
             style={{
@@ -496,14 +550,15 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
                 {String(currentPage * itemsPerPage + idx + 1).padStart(2, '0')}
               </span>
               <h2 style={{
-                fontSize: 'clamp(1.1rem, 2.5vw, 1.6rem)',
-                color: 'var(--text-primary)',
+                fontSize: 'clamp(1.2rem, 3vw, 1.8rem)',
+                color: isDark ? '#ffffff' : '#000000',
                 margin: 0,
-                fontWeight: 700,
-                letterSpacing: '-0.02em',
+                fontWeight: 900,
+                letterSpacing: '-0.01em',
                 whiteSpace: 'nowrap',
                 overflow: 'hidden',
                 textOverflow: 'ellipsis',
+                textShadow: isDark ? '0 2px 10px rgba(0,0,0,0.5)' : 'none',
               }}>
                 {move.name}
               </h2>
@@ -515,7 +570,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
               alignItems: 'center',
               flexShrink: 0,
             }}>
-              <GlyphSequence inputs={move.inputs} controller={effectiveController} notationSystem={notationSystem} large={true} />
+              <GlyphSequence inputs={[move.input]} controller={effectiveController} notationSystem={notationSystem} large={true} />
             </div>
           </div>
         ))}

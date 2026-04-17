@@ -5,86 +5,45 @@
   "movesList": [
     {
       "id": "flowoflife",
-      "name": "(- - \u2500) Flow Of Life",
+      "name": "(- - ) Flow Of Life",
       "type": "throw",
-      "inputs": [
-        "P",
-        "K",
-        "or",
-        "HP",
-        "HK"
-      ]
+      "input": "PKorHPHK"
     },
     {
       "id": "sliding",
-      "name": "(- - \u2500) Sliding",
+      "name": "(- - ) Sliding",
       "type": "normal",
-      "inputs": [
-        "down-forward",
-        "HK"
-      ]
+      "input": "3HK"
     },
     {
       "id": "ioheavensgate",
       "name": "(- i o) Heaven's Gate",
       "type": "special",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "P",
-        "(\"O\"",
-        "if",
-        "lion's",
-        "body",
-        "hits)"
-      ]
+      "input": "236P(\"O\"iflion'sbodyhits)"
     },
     {
       "id": "iposeidonrage",
-      "name": "(- i \u2500) Poseidon Rage",
+      "name": "(- i ) Poseidon Rage",
       "type": "special",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "K"
-      ]
+      "input": "236K"
     },
     {
       "id": "milkcrown",
-      "name": "(- - \u2500) Milk Crown",
+      "name": "(- - ) Milk Crown",
       "type": "special",
-      "inputs": [
-        "down",
-        "down-back",
-        "back",
-        "P"
-      ]
+      "input": "214P"
     },
     {
       "id": "ibowofjudgement",
-      "name": "(- i \u2500) Bow Of Judgement",
+      "name": "(- i ) Bow Of Judgement",
       "type": "special",
-      "inputs": [
-        "^4",
-        "forward",
-        "P"
-      ]
+      "input": "^46P"
     },
     {
       "id": "ioendofthetripornight",
       "name": "(- i o) End Of The Trip Or Night",
       "type": "special",
-      "inputs": [
-        "^4",
-        "forward",
-        "K",
-        "(\"O\"",
-        "on",
-        "2nd",
-        "hit)"
-      ]
+      "input": "^46K(\"O\"on2ndhit)"
     }
   ]
 }

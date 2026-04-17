@@ -8,20 +8,28 @@ import { MoveListView } from './MoveListView';
 import { GameGlanceMainView } from './GameGlanceView';
 import type { ControllerType } from './glyphMap';
 import { BottomHeader } from './BottomHeader';
-import type { CardTheme } from './BottomHeader';
-import { useTheme } from './ThemeContext';
+import type { CardTheme } from './types';
+
+import { SUPPORTED_GAMES } from './games';
 
 function App() {
-  const { setTheme } = useTheme();
+
   const [currentView, setCurrentView] = useState<AppView>('game_select');
   const [selectedGame, setSelectedGame] = useState<GameDefinition | null>(null);
   const [selectedCharacter, setSelectedCharacter] = useState<string | null>(null);
-  const [selectedPlaylist, setSelectedPlaylist] = useState<Move[]>([]);
+  const [selectedPlaylist, setSelectedPlaylist] = useState<Move[]>(() => {
+    try {
+      const saved = localStorage.getItem('gg_playlist');
+      return saved ? JSON.parse(saved) : [];
+    } catch {
+      return [];
+    }
+  });
   const [controller, setController] = useState<ControllerType>('playstation');
   const [cardTheme, setCardTheme] = useState<CardTheme>(() => {
-    const val = localStorage.getItem('gg_card_theme') as string;
-    if (val === 'default' || !val) return 'default-dark';
-    return val as CardTheme;
+    const val = localStorage.getItem('gg_card_theme');
+    const validThemes: CardTheme[] = ['default-dark', 'default-light', 'genesis', 'snes', 'cps2', 'mvs', 'aes'];
+    return validThemes.includes(val as CardTheme) ? (val as CardTheme) : 'default-dark';
   });
   const [returningFromMoveList, setReturningFromMoveList] = useState(false);
   const [disableGameSelectAnimation, setDisableGameSelectAnimation] = useState(false);
@@ -42,10 +50,8 @@ function App() {
         const { view, gameId, charId } = event.state;
         setCurrentView(view);
         if (gameId) {
-           import('./games').then(module => {
-             const g = module.SUPPORTED_GAMES.find(g => g.id === gameId);
-             if (g) setSelectedGame(g);
-           });
+           const g = SUPPORTED_GAMES.find(g => g.id === gameId);
+           if (g) setSelectedGame(g);
         } else {
            setSelectedGame(null);
         }
@@ -61,7 +67,23 @@ function App() {
 
   useEffect(() => {
     localStorage.setItem('gg_card_theme', cardTheme);
-  }, [cardTheme, setTheme]);
+  }, [cardTheme]);
+
+  useEffect(() => {
+    localStorage.setItem('gg_playlist', JSON.stringify(selectedPlaylist));
+  }, [selectedPlaylist]);
+
+  // Guard against invalid routes
+  useEffect(() => {
+    if (currentView === 'char_select' && !selectedGame) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setCurrentView('game_select');
+    }
+    if (currentView === 'move_list' && (!selectedGame || !selectedCharacter)) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
+      setCurrentView('game_select');
+    }
+  }, [currentView, selectedGame, selectedCharacter]);
 
   // Navigation handlers
   const handleSelectGame = (game: GameDefinition) => {
@@ -100,8 +122,8 @@ function App() {
       break;
     case 'char_select':
       if (!selectedGame) {
-         setCurrentView('game_select');
-         return null;
+         viewComponent = null;
+         break;
       }
       viewComponent = <CharacterSelectView 
          game={selectedGame} 
@@ -121,8 +143,8 @@ function App() {
       break;
     case 'move_list':
       if (!selectedGame || !selectedCharacter) {
-         setCurrentView('game_select');
-         return null;
+         viewComponent = null;
+         break;
       }
       viewComponent = <MoveListView 
          game={selectedGame}
@@ -143,7 +165,7 @@ function App() {
       />;
       break;
     case 'main_screen': {
-      const charName = selectedGame?.characters.find(c => c.id === selectedCharacter)?.name || String(selectedCharacter);
+      const charName = selectedGame?.characters?.find(c => c.id === selectedCharacter)?.name || String(selectedCharacter);
       viewComponent = <GameGlanceMainView 
          playlist={selectedPlaylist} 
          gameName={selectedGame?.name || 'GAMES'}

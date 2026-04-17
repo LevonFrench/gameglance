@@ -6,125 +6,67 @@
       "id": "pileriver",
       "name": "Pileriver",
       "type": "throw",
-      "inputs": [
-        "back",
-        "or",
-        "forward",
-        "MP"
-      ]
+      "input": "4or6MP"
     },
     {
       "id": "backtoss",
       "name": "Back Toss",
       "type": "throw",
-      "inputs": [
-        "back",
-        "or",
-        "forward",
-        "HP"
-      ]
+      "input": "4or6HP"
     },
     {
       "id": "airpiledriver",
       "name": "Air Piledriver",
       "type": "throw",
-      "inputs": [
-        "_^",
-        "back",
-        "or",
-        "forward",
-        "MP",
-        "or",
-        "HP"
-      ]
+      "input": "_^4or6MPorHP"
     },
     {
       "id": "combinationkick",
       "name": "Combination Kick",
       "type": "normal",
-      "inputs": [
-        "LP",
-        "MK",
-        "HP"
-      ]
+      "input": "LPMKHP"
     },
     {
       "id": "backpunch",
       "name": "Back Punch",
       "type": "normal",
-      "inputs": [
-        "forward",
-        "HP"
-      ]
+      "input": "6HP"
     },
     {
       "id": "downwardpunch",
       "name": "Downward Punch",
       "type": "normal",
-      "inputs": [
-        "_^",
-        "down",
-        "HP"
-      ]
+      "input": "_^2HP"
     },
     {
       "id": "groundgrab",
       "name": "Ground Grab",
       "type": "normal",
-      "inputs": [
-        "opponent",
-        "knocked",
-        "down",
-        "down",
-        "MP",
-        "or",
-        "HP"
-      ]
+      "input": "opponentknocked22MPorHP"
     },
     {
       "id": "throw",
-      "name": "^!throw",
+      "name": "Throw",
       "type": "normal",
-      "inputs": [
-        "P"
-      ]
+      "input": "P"
     },
     {
       "id": "giantswing",
       "name": "Giant Swing",
       "type": "special",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "P",
-        ",",
-        "_X_x"
-      ]
+      "input": "236P,_X_x"
     },
     {
       "id": "powertackleforward",
       "name": "Power Tackle: Forward",
       "type": "special",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "LK"
-      ]
+      "input": "236LK"
     },
     {
       "id": "powertacklediagonal",
       "name": "Power Tackle: Diagonal",
       "type": "special",
-      "inputs": [
-        "down",
-        "down-forward",
-        "forward",
-        "MK",
-        "or",
-        "HK"
-      ]
+      "input": "236MKorHK"
     }
   ]
 }

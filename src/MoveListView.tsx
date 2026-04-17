@@ -74,7 +74,16 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         if (!res.ok) throw new Error("File not found");
         return res.json();
       })
-      .then(data => setCharacterData(data))
+      .then(data => {
+        // Normalize move type to lowercase to match tab filter expectations
+        if (data.movesList) {
+          data.movesList = data.movesList.map((m: Record<string, unknown>) => ({
+            ...m,
+            type: typeof m.type === 'string' ? m.type.toLowerCase() : m.type,
+          }));
+        }
+        setCharacterData(data);
+      })
       .catch(e => {
         console.error(e);
         setLoadingError(`Could not load data for ${characterId}. Ensure the data ingestion script was run.`);
@@ -92,7 +101,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     'Common Moves':   (d) => (d.movesList || []).filter(m => m.type === 'common'),
     'Moves':          (d) => d.movesList || [],
     'Combos':         (d) => (d.combosList || []).map(c => ({
-      id: c.id, name: c.name, type: 'normal' as const, inputs: c.inputs, frameData: {},
+      id: c.id, name: c.name, type: 'normal' as const, input: c.input, frameData: {},
     })),
     'Fatalities':     (d) => (d.movesList || []).filter(m => m.type === 'super'),
     'Finishers':      (d) => (d.movesList || []).filter(m => m.type === 'finisher'),
@@ -678,7 +687,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
 
                       {/* Input glyphs inline */}
                       <div style={{ marginTop: '0.4rem' }}>
-                        <GlyphSequence inputs={move.inputs} controller={effectiveController} notationSystem={game.notationSystem} />
+                        <GlyphSequence inputs={[move.input]} controller={effectiveController} notationSystem={game.notationSystem} />
                       </div>
                     </div>
                   </div>

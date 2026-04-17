@@ -106,7 +106,7 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
   const { theme } = useTheme();
   const isDark = theme === 'dark';
 
-  const expandedInputs = tokenizeInputs(inputs);
+  const expandedInputs = React.useMemo(() => tokenizeInputs(inputs), [inputs]);
 
   return (
     <div style={{

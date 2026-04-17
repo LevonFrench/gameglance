@@ -6,85 +6,43 @@
       "id": "grabandfreeze",
       "name": "Grab And Freeze",
       "type": "throw",
-      "inputs": [
-        "back",
-        "or",
-        "forward",
-        "MP"
-      ]
+      "input": "4or6MP"
     },
     {
       "id": "groundslam",
       "name": "Ground Slam",
       "type": "throw",
-      "inputs": [
-        "back",
-        "or",
-        "forward",
-        "HP"
-      ]
+      "input": "4or6HP"
     },
     {
       "id": "airgrabandfreeze",
       "name": "Air Grab And Freeze",
       "type": "throw",
-      "inputs": [
-        "_^",
-        "back",
-        "or",
-        "forward",
-        "MP",
-        "or",
-        "HP"
-      ]
+      "input": "_^4or6MPorHP"
     },
     {
       "id": "iceboulder",
       "name": "Ice Boulder",
       "type": "normal",
-      "inputs": [
-        "_^",
-        "down",
-        "HP"
-      ]
+      "input": "_^2HP"
     },
     {
       "id": "downwardkick",
       "name": "Downward Kick",
       "type": "normal",
-      "inputs": [
-        "_^",
-        "down",
-        "HK"
-      ]
+      "input": "_^2HK"
     },
     {
       "id": "icebeam",
       "name": "Ice Beam",
       "type": "special",
-      "inputs": [
-        "(_^)",
-        "down",
-        "down-forward",
-        "forward",
-        "P"
-      ]
+      "input": "(_^)236P"
     },
     {
       "id": "iceavalanche",
       "name": "Ice Avalanche",
       "type": "special",
-      "inputs": [
-        "(_^)",
-        "LP",
-        "LK",
-        "or",
-        "MP",
-        "MK",
-        "or",
-        "HP",
-        "HK"
-      ]
+      "input": "(_^)LPLKorMPMKorHPHK"
     }
   ]
 }
