@@ -15,12 +15,16 @@ interface Props {
   notationSystem?: 'numpad' | 'traditional' | 'mk';
 }
 
+interface WakeLockSentinel {
+  release: () => Promise<void>;
+}
+
 export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, characterName, controller, notationSystem, onExit }) => {
   const [currentPage, setCurrentPage] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
-  const wakeLockRef = useRef<any>(null);
+  const wakeLockRef = useRef<WakeLockSentinel | null>(null);
   const { theme } = useTheme();
 
   // Options
@@ -42,7 +46,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
     const requestWakeLock = async () => {
       try {
         if ('wakeLock' in navigator && isPlaying) {
-          wakeLockRef.current = await (navigator as any).wakeLock.request('screen');
+          wakeLockRef.current = await (navigator as unknown as { wakeLock: { request: (type: string) => Promise<WakeLockSentinel> } }).wakeLock.request('screen');
         }
       } catch (err) {
         console.warn('Wake Lock error:', err);

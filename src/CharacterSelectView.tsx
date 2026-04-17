@@ -32,7 +32,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
     return [];
   });
   const [characters, setCharacters] = useState(game.characters || []);
-  const [loadingRoster, setLoadingRoster] = useState(false);
+  const [loadingRoster, setLoadingRoster] = useState(() => characters.length === 0);
   const { theme } = useTheme();
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
   
@@ -42,7 +42,6 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
 
   useEffect(() => {
     if (characters.length === 0) {
-      setLoadingRoster(true);
       fetch(`/data/${game.id}/_roster.json`)
         .then(res => res.json())
         .then(data => {

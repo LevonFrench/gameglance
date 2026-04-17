@@ -76,12 +76,12 @@ function App() {
   // Guard against invalid routes
   useEffect(() => {
     if (currentView === 'char_select' && !selectedGame) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
+      /* eslint-disable react-hooks/set-state-in-effect */
       setCurrentView('game_select');
     }
     if (currentView === 'move_list' && (!selectedGame || !selectedCharacter)) {
-      // eslint-disable-next-line react-hooks/set-state-in-effect
       setCurrentView('game_select');
+      /* eslint-enable react-hooks/set-state-in-effect */
     }
   }, [currentView, selectedGame, selectedCharacter]);
 

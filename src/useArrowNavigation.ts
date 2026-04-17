@@ -11,7 +11,7 @@ export function useArrowNavigation(selector: string) {
       const elements = Array.from(document.querySelectorAll(selector)) as HTMLElement[];
       if (elements.length === 0) return;
 
-      let currentIndex = elements.indexOf(activeEl as HTMLElement);
+      const currentIndex = elements.indexOf(activeEl as HTMLElement);
       
       if (currentIndex === -1) {
         // If we press an arrow key and nothing is focused, focus the first item
