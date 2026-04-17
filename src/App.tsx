@@ -28,7 +28,7 @@ function App() {
   const [controller, setController] = useState<ControllerType>('playstation');
   const [cardTheme, setCardTheme] = useState<CardTheme>(() => {
     const val = localStorage.getItem('gg_card_theme');
-    const validThemes: CardTheme[] = ['default-dark', 'default-light', 'genesis', 'sf2gen', 'snes', 'cps2', 'mvs', 'aes', 'mvscab'];
+    const validThemes: CardTheme[] = ['default-dark', 'default-light', 'genesis', 'sf2gen', 'snes', 'cps2', 'mvs', 'aes', 'mvscab', 'cps2cab'];
     return validThemes.includes(val as CardTheme) ? (val as CardTheme) : 'default-dark';
   });
   const [returningFromMoveList, setReturningFromMoveList] = useState(false);

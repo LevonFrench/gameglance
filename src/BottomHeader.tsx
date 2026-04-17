@@ -62,6 +62,7 @@ export const BottomHeader: React.FC<Props> = ({
             <option value="genesis" style={{ background: 'var(--option-bg)' }}>Genesis</option>
             <option value="snes" style={{ background: 'var(--option-bg)' }}>SNES</option>
             <option value="cps2" style={{ background: 'var(--option-bg)' }}>CPS2</option>
+            <option value="cps2cab" style={{ background: 'var(--option-bg)' }}>CPS2 CAB</option>
             <option value="mvs" style={{ background: 'var(--option-bg)' }}>MVS</option>
             <option value="mvscab" style={{ background: 'var(--option-bg)' }}>MVS CAB</option>
             <option value="aes" style={{ background: 'var(--option-bg)' }}>AES</option>

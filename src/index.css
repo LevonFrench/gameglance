@@ -960,6 +960,116 @@ h1, h2, h3, h4, h5, h6 {
 [data-card-theme="mvscab"] .gradient-overlay { display: none !important; }
 
 
+
+/* ── Capcom CPS2 Cabinet Theme (cps2cab) ───────────────────── */
+[data-card-theme="cps2cab"] button[id^="game-card-"],
+[data-card-theme="cps2cab"] button[id^="char-card-"],
+[data-card-theme="cps2cab"] div[id^="move-"] {
+  background-color: #1b3c75 !important; /* Classic Big Blue */
+  border: 2px solid #0b1a36 !important;
+  border-radius: 6px !important;
+  box-shadow: 
+    inset 0 4px 10px rgba(255,255,255,0.15),
+    inset -4px -4px 10px rgba(0,0,0,0.6),
+    0 8px 15px rgba(0,0,0,0.5) !important;
+  color: #fff !important;
+  position: relative !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+
+[data-card-theme="cps2cab"] button[id^="game-card-"]:hover,
+[data-card-theme="cps2cab"] button[id^="char-card-"]:hover,
+[data-card-theme="cps2cab"] div[id^="move-"]:hover {
+  transform: translateY(-4px) scale(1.02) !important;
+  box-shadow: 
+    inset 0 4px 10px rgba(255,255,255,0.25),
+    inset -4px -4px 10px rgba(0,0,0,0.6),
+    0 12px 20px rgba(0,0,0,0.7) !important;
+  background-color: #21488c !important;
+}
+
+/* Control Panel Base (Silver Diamond Plate) */
+[data-card-theme="cps2cab"] button[id^="game-card-"]::before,
+[data-card-theme="cps2cab"] button[id^="char-card-"]::before,
+[data-card-theme="cps2cab"] div[id^="move-"]::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 30%;
+  background-color: #b0b4b8;
+  background-image: 
+    linear-gradient(135deg, rgba(0,0,0,0.1) 25%, transparent 25%, transparent 50%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.1) 75%, transparent 75%, transparent),
+    linear-gradient(45deg, rgba(255,255,255,0.3) 25%, transparent 25%, transparent 50%, rgba(255,255,255,0.3) 50%, rgba(255,255,255,0.3) 75%, transparent 75%, transparent);
+  background-size: 12px 12px;
+  border-top: 4px solid #000;
+  pointer-events: none;
+  z-index: 0;
+  box-shadow: inset 0 2px 5px rgba(255,255,255,0.5), inset 0 -4px 6px rgba(0,0,0,0.5);
+}
+
+/* Arcade Buttons (6-button Capcom Layout: Punches & Kicks) */
+[data-card-theme="cps2cab"] button[id^="game-card-"]::after,
+[data-card-theme="cps2cab"] button[id^="char-card-"]::after,
+[data-card-theme="cps2cab"] div[id^="move-"]::after {
+  content: '';
+  position: absolute;
+  bottom: 14%;
+  right: 12%;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #0050c9; /* Top right Blue */
+  box-shadow: 
+    -16px 0 0 #009030,     /* Top center Green */
+    -32px 0 0 #cc0000,     /* Top left Red */
+    0 14px 0 #0050c9,      /* Bottom right Blue */
+    -16px 14px 0 #009030,  /* Bottom center Green */
+    -32px 14px 0 #cc0000,  /* Bottom left Red */
+    inset -1px -1px 2px rgba(0,0,0,0.5), /* Inner shadow for main button */
+    0 1px 2px rgba(0,0,0,0.8);          /* Drop shadow for main button */
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Typography on the Marquee */
+[data-card-theme="cps2cab"] button[id^="game-card-"] > *,
+[data-card-theme="cps2cab"] button[id^="char-card-"] > *,
+[data-card-theme="cps2cab"] div[id^="move-"] > * {
+  z-index: 2;
+  position: relative;
+  text-shadow: 2px 2px 0 #0a1b38, -1px -1px 0 #0a1b38, 1px -1px 0 #0a1b38, -1px 1px 0 #0a1b38, 1px 1px 0 #0a1b38, 0 4px 6px rgba(0,0,0,0.6) !important;
+}
+
+[data-card-theme="cps2cab"] h2 {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 900 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #ffd700 !important; /* Golden Yellow */
+  margin: 0 !important;
+  margin-top: 1rem !important;
+  font-size: 1.4rem !important;
+  text-align: center;
+  width: 100%;
+}
+
+[data-card-theme="cps2cab"] .text-muted,
+[data-card-theme="cps2cab"] .text-tertiary {
+  color: #60a5fa !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: bold;
+  font-size: 0.8rem !important;
+  text-align: center;
+}
+
+[data-card-theme="cps2cab"] .gradient-overlay { display: none !important; }
+
+
 /* ── Neo Geo AES Cartridge Theme ───────────────────── */
 [data-card-theme="aes"] button[id^="game-card-"],
 [data-card-theme="aes"] button[id^="char-card-"],
