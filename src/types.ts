@@ -23,7 +23,7 @@ export interface CharacterExport {
   combosList: { id: string, name: string, input: string }[];
 }
 
-export type CardTheme = 'default-dark' | 'default-light' | 'genesis' | 'sf2gen' | 'snes' | 'cps2' | 'mvs' | 'aes';
+export type CardTheme = 'default-dark' | 'default-light' | 'genesis' | 'sf2gen' | 'snes' | 'cps2' | 'mvs' | 'aes' | 'mvscab';
 
 export interface GameDefinition {
   id: string;

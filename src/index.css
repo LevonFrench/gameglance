@@ -848,6 +848,118 @@ h1, h2, h3, h4, h5, h6 {
 [data-card-theme="mvs"] .gradient-overlay { display: none !important; }
 
 
+
+/* ── Neo Geo MVS Cabinet Theme (mvscab) ───────────────────── */
+[data-card-theme="mvscab"] button[id^="game-card-"],
+[data-card-theme="mvscab"] button[id^="char-card-"],
+[data-card-theme="mvscab"] div[id^="move-"] {
+  background-color: #e80000 !important;
+  border: 2px solid #000 !important;
+  border-radius: 6px !important;
+  box-shadow: 
+    inset 0 2px 5px rgba(255,255,255,0.3),
+    inset -4px -4px 10px rgba(0,0,0,0.5),
+    0 8px 15px rgba(0,0,0,0.5) !important;
+  color: #fff !important;
+  position: relative !important;
+  overflow: hidden !important;
+  display: flex !important;
+  flex-direction: column !important;
+  justify-content: flex-start !important;
+}
+
+[data-card-theme="mvscab"] button[id^="game-card-"]:hover,
+[data-card-theme="mvscab"] button[id^="char-card-"]:hover,
+[data-card-theme="mvscab"] div[id^="move-"]:hover {
+  transform: translateY(-4px) scale(1.02) !important;
+  box-shadow: 
+    inset 0 2px 5px rgba(255,255,255,0.4),
+    inset -4px -4px 10px rgba(0,0,0,0.5),
+    0 12px 20px rgba(0,0,0,0.7) !important;
+  background-color: #f00 !important;
+}
+
+/* Control Panel Base (black strip separating red body and stripes) */
+[data-card-theme="mvscab"] button[id^="game-card-"]::before,
+[data-card-theme="mvscab"] button[id^="char-card-"]::before,
+[data-card-theme="mvscab"] div[id^="move-"]::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 25%;
+  background-color: #000;
+  background-image: 
+    repeating-linear-gradient(
+      -45deg,
+      #fff,
+      #fff 10px,
+      #e80000 10px,
+      #e80000 20px
+    );
+  border-top: 4px solid #111;
+  pointer-events: none;
+  z-index: 0;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.8);
+}
+
+/* Arcade Buttons (Red, Yellow, Green, Blue) sitting on the control panel */
+[data-card-theme="mvscab"] button[id^="game-card-"]::after,
+[data-card-theme="mvscab"] button[id^="char-card-"]::after,
+[data-card-theme="mvscab"] div[id^="move-"]::after {
+  content: '';
+  position: absolute;
+  bottom: 8%;
+  right: 15%;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #0050c9; /* Blue button (D) */
+  box-shadow: 
+    -20px 4px 0 #009030,  /* Green button (C) */
+    -40px 6px 0 #ffd700,  /* Yellow button (B) */
+    -60px 10px 0 #d90000, /* Red button (A) */
+    inset -2px -2px 4px rgba(0,0,0,0.5),
+    0 2px 2px rgba(0,0,0,0.8);
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Ensure text is readable over the bright red */
+[data-card-theme="mvscab"] button[id^="game-card-"] > *,
+[data-card-theme="mvscab"] button[id^="char-card-"] > *,
+[data-card-theme="mvscab"] div[id^="move-"] > * {
+  z-index: 2;
+  position: relative;
+  text-shadow: 2px 2px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000 !important;
+}
+
+[data-card-theme="mvscab"] h2 {
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: 900 !important;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #fff !important;
+  margin: 0 !important;
+  margin-top: 1rem !important;
+  font-size: 1.4rem !important;
+  text-align: center;
+  width: 100%;
+}
+
+[data-card-theme="mvscab"] .text-muted,
+[data-card-theme="mvscab"] .text-tertiary {
+  color: #fff !important;
+  font-family: Arial, Helvetica, sans-serif !important;
+  font-weight: bold;
+  font-size: 0.8rem !important;
+  text-align: center;
+}
+
+[data-card-theme="mvscab"] .gradient-overlay { display: none !important; }
+
+
 /* ── Neo Geo AES Cartridge Theme ───────────────────── */
 [data-card-theme="aes"] button[id^="game-card-"],
 [data-card-theme="aes"] button[id^="char-card-"],
