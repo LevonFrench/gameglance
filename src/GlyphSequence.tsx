@@ -130,18 +130,17 @@ const renderDirectionalSVG = (label: string, large: boolean, isDark: boolean) =>
   );
 };
 
-const expandMacroInput = (input: string, controller: ControllerType): string[] => {
-  const norm = input.toUpperCase().trim();
-  const isSNK = controller === 'neogeo';
+const getMacroSubButtons = (macro: string, isSNK: boolean): string[] => {
+  const norm = macro.toUpperCase().trim();
+  if (['P', 'PUNCH'].includes(norm)) return ['P']; // Render as single P
+  if (['PP'].includes(norm)) return isSNK ? ['LP', 'HP'] : ['LP', 'MP'];
+  if (['PPP'].includes(norm)) return isSNK ? ['LP', 'HP'] : ['LP', 'MP', 'HP'];
   
-  if (['P', 'PUNCH', 'PP', 'PPP'].includes(norm)) {
-    return isSNK ? ['LP', 'HP'] : ['LP', 'MP', 'HP'];
-  }
-  if (['K', 'KICK', 'KK', 'KKK'].includes(norm)) {
-    return isSNK ? ['LK', 'HK'] : ['LK', 'MK', 'HK'];
-  }
+  if (['K', 'KICK'].includes(norm)) return ['K']; // Render as single K
+  if (['KK'].includes(norm)) return isSNK ? ['LK', 'HK'] : ['LK', 'MK'];
+  if (['KKK'].includes(norm)) return isSNK ? ['LK', 'HK'] : ['LK', 'MK', 'HK'];
   
-  return [input];
+  return [];
 };
 
 export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller, large = false, notationSystem = 'numpad' }) => {
@@ -151,11 +150,168 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
   const expandedInputs = React.useMemo(() => {
     // Tekken uses 1234 for buttons, so we bypass numpad parsing for it.
     const effectiveSystem = controller === 'tekken' ? 'traditional' : notationSystem;
-    const tokens = tokenizeInputs(inputs, effectiveSystem);
-    
-    // Expand macros
-    return tokens.flatMap(token => expandMacroInput(token, controller));
+    // We NO LONGER expand macros here. We keep 'PP' as a single token so we can stack it.
+    return tokenizeInputs(inputs, effectiveSystem);
   }, [inputs, notationSystem, controller]);
+
+  const renderSingleGlyph = (input: string, idx: React.Key, styleOverrides: React.CSSProperties = {}) => {
+    // Cancel / link separator
+    if (input === '[Cancel]') {
+      return (
+        <span
+          key={idx}
+          style={{
+            color: 'var(--text-muted)',
+            fontWeight: 700,
+            fontSize: large ? '1.2rem' : '0.8rem',
+            margin: `0 ${large ? '2px' : '1px'}`,
+            opacity: 0.6,
+            ...styleOverrides
+          }}
+        >
+          ›
+        </span>
+      );
+    }
+
+    if (input === '+') {
+      return (
+        <span
+          key={idx}
+          style={{
+            color: 'var(--text-muted)',
+            fontWeight: 800,
+            fontSize: large ? '1.5rem' : '1rem',
+            margin: `0 ${large ? '4px' : '2px'}`,
+            ...styleOverrides
+          }}
+        >
+          +
+        </span>
+      );
+    }
+
+    const label = getGlyphLabel(input, controller);
+    const iconColor = getGlyphColor(input, controller);
+
+    // Direction
+    const svgImage = renderDirectionalSVG(label, large, isDark);
+    if (svgImage) {
+      return (
+        <div
+          key={idx}
+          style={{
+            display: 'flex',
+            filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))',
+            ...styleOverrides
+          }}
+        >
+          {svgImage}
+        </div>
+      );
+    }
+
+    // Named multi-char label (like "Spear", "Teleport") — render as text pill
+    if (label.length > 2 && !['ALL', 'TAG'].includes(label)) {
+      return (
+        <div
+          key={idx}
+          style={{
+            padding: large ? '0.25rem 0.6rem' : '0.15rem 0.4rem',
+            borderRadius: 'var(--radius-sm)',
+            background: 'var(--bg-badge)',
+            border: '1px solid var(--border-subtle)',
+            color: 'var(--text-secondary)',
+            fontSize: large ? '0.7rem' : '0.6rem',
+            fontWeight: 600,
+            letterSpacing: '0.03em',
+            fontFamily: "'JetBrains Mono', monospace",
+            ...styleOverrides
+          }}
+        >
+          {label}
+        </div>
+      );
+    }
+
+    // Attack button glyphs
+    const btnSize = large ? 48 : 30;
+    const isPlayStation = controller === 'playstation';
+    const isArcade = controller === 'arcade';
+
+    if (isArcade) {
+      // Custom beautiful Vewlix style Recessed Buttons for arcade
+      let bgColor = '#ef4444'; // Red default
+      if (['MP', 'MK', 'RP'].includes(label)) bgColor = '#eab308'; // Yellow
+      if (['HP', 'HK'].includes(label)) bgColor = '#3b82f6'; // Blue
+
+      return (
+        <div
+          key={idx}
+          style={{
+            width: `${btnSize}px`,
+            height: `${btnSize}px`,
+            borderRadius: '50%',
+            background: `radial-gradient(circle at 30% 30%, #ffffff 0%, ${bgColor} 20%, ${bgColor} 80%, #000000 100%)`,
+            border: `1.5px solid ${isDark ? '#111' : '#ddd'}`,
+            boxShadow: '0 3px 5px rgba(0,0,0,0.6), inset 0 -4px 6px rgba(0,0,0,0.5)',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            color: '#fff',
+            fontSize: large ? '0.9rem' : '0.65rem',
+            fontWeight: 900,
+            textShadow: '0 1px 3px rgba(0,0,0,0.9), 0 -1px 0 rgba(0,0,0,0.4)',
+            letterSpacing: '-0.05em',
+            flexShrink: 0,
+            ...styleOverrides
+          }}
+        >
+          {label}
+        </div>
+      );
+    }
+
+    return (
+      <div
+        key={idx}
+        style={{
+          width: `${btnSize}px`,
+          height: `${btnSize}px`,
+          backgroundColor: isPlayStation ? (isDark ? '#161625' : '#1a1a2e') : iconColor,
+          borderRadius: '50%',
+          color: isPlayStation ? iconColor : '#fff',
+          fontWeight: 900,
+          fontSize: large ? '1.3rem' : '0.75rem',
+          boxShadow: `
+            0 3px 6px rgba(0,0,0,${isDark ? '0.4' : '0.15'}),
+            inset 0 -3px 0 rgba(0,0,0,0.2),
+            inset 0 2px 0 rgba(255,255,255,${isDark ? '0.06' : (isPlayStation ? '0.08' : '0.3')}),
+            0 0 0 1.5px ${isPlayStation ? iconColor + '25' : 'rgba(0,0,0,0.2)'}
+          `,
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'center',
+          textShadow: isPlayStation
+            ? `0 0 10px ${iconColor}50, 0 1px 3px rgba(0,0,0,0.8)`
+            : '0 1px 3px rgba(0,0,0,0.6)',
+          flexShrink: 0,
+          ...styleOverrides
+        }}
+      >
+        <span style={{
+          transform: isPlayStation
+            ? (['▢', '△', '✕', '◯'].includes(label) ? 'scale(1.4)' : 'scale(1.1)')
+            : (label.length > 1 ? 'scale(0.95)' : 'scale(1.2)'),
+          display: 'inline-block',
+          lineHeight: 1,
+          marginTop: isPlayStation && ['▢', '△', '✕', '◯'].includes(label) ? '-2px' : '0',
+        }}>
+          {label}
+        </span>
+      </div>
+    );
+  };
 
   return (
     <div style={{
@@ -165,156 +321,29 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
       flexWrap: 'wrap',
     }}>
       {expandedInputs.map((input, idx) => {
-        // Cancel / link separator
-        if (input === '[Cancel]') {
+        const norm = input.toUpperCase().trim();
+        const subButtons = getMacroSubButtons(norm, controller === 'neogeo');
+        
+        // If it's a multi-button macro (PP, PPP, KK, KKK), render them stacked!
+        if (subButtons.length > 1) {
+          const overlap = large ? '-18px' : '-12px';
           return (
-            <span
-              key={idx}
-              style={{
-                color: 'var(--text-muted)',
-                fontWeight: 700,
-                fontSize: large ? '1.2rem' : '0.8rem',
-                margin: `0 ${large ? '2px' : '1px'}`,
-                opacity: 0.6,
-              }}
-            >
-              ›
-            </span>
-          );
-        }
-
-        if (input === '+') {
-          return (
-            <span
-              key={idx}
-              style={{
-                color: 'var(--text-muted)',
-                fontWeight: 800,
-                fontSize: large ? '1.5rem' : '1rem',
-                margin: `0 ${large ? '4px' : '2px'}`,
-              }}
-            >
-              +
-            </span>
-          );
-        }
-
-        const label = getGlyphLabel(input, controller);
-        const iconColor = getGlyphColor(input, controller);
-
-        // Direction
-        const svgImage = renderDirectionalSVG(label, large, isDark);
-        if (svgImage) {
-          return (
-            <div
-              key={idx}
-              style={{
-                display: 'flex',
-                filter: 'drop-shadow(0 2px 4px rgba(0,0,0,0.3))',
-              }}
-            >
-              {svgImage}
+            <div key={idx} style={{ display: 'flex', alignItems: 'center' }}>
+              {subButtons.map((btn, subIdx) => {
+                return renderSingleGlyph(btn, `${idx}-${subIdx}`, {
+                  marginLeft: subIdx > 0 ? overlap : '0',
+                  zIndex: 10 - subIdx, // first button on top
+                  position: 'relative',
+                  filter: subIdx > 0 ? 'brightness(0.7)' : 'none', // dim the ones in back slightly
+                });
+              })}
             </div>
           );
         }
 
-        // Named multi-char label (like "Spear", "Teleport") — render as text pill
-        if (label.length > 2) {
-          return (
-            <div
-              key={idx}
-              style={{
-                padding: large ? '0.25rem 0.6rem' : '0.15rem 0.4rem',
-                borderRadius: 'var(--radius-sm)',
-                background: 'var(--bg-badge)',
-                border: '1px solid var(--border-subtle)',
-                color: 'var(--text-secondary)',
-                fontSize: large ? '0.7rem' : '0.6rem',
-                fontWeight: 600,
-                letterSpacing: '0.03em',
-                fontFamily: "'JetBrains Mono', monospace",
-              }}
-            >
-              {label}
-            </div>
-          );
-        }
-
-        // Attack button glyphs
-        const btnSize = large ? 48 : 30;
-        const isPlayStation = controller === 'playstation';
-        const isArcade = controller === 'arcade';
-
-        if (isArcade) {
-          // Custom beautiful Vewlix style Recessed Buttons for arcade
-          let bgColor = '#ef4444'; // Red default
-          if (['MP', 'MK'].includes(label)) bgColor = '#eab308'; // Yellow
-          if (['HP', 'HK'].includes(label)) bgColor = '#3b82f6'; // Blue
-
-          return (
-            <div
-              key={idx}
-              style={{
-                width: `${btnSize}px`,
-                height: `${btnSize}px`,
-                borderRadius: '50%',
-                background: `radial-gradient(circle at 30% 30%, #ffffff 0%, ${bgColor} 20%, ${bgColor} 80%, #000000 100%)`,
-                border: `1.5px solid ${isDark ? '#111' : '#ddd'}`,
-                boxShadow: '0 3px 5px rgba(0,0,0,0.6), inset 0 -4px 6px rgba(0,0,0,0.5)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
-                color: '#fff',
-                fontSize: large ? '0.9rem' : '0.65rem',
-                fontWeight: 900,
-                textShadow: '0 1px 3px rgba(0,0,0,0.9), 0 -1px 0 rgba(0,0,0,0.4)',
-                letterSpacing: '-0.05em',
-                flexShrink: 0,
-              }}
-            >
-              {label}
-            </div>
-          );
-        }
-
-        return (
-          <div
-            key={idx}
-            style={{
-              width: `${btnSize}px`,
-              height: `${btnSize}px`,
-              backgroundColor: isPlayStation ? (isDark ? '#161625' : '#1a1a2e') : iconColor,
-              borderRadius: '50%',
-              color: isPlayStation ? iconColor : '#fff',
-              fontWeight: 900,
-              fontSize: large ? '1.3rem' : '0.75rem',
-              boxShadow: `
-                0 3px 6px rgba(0,0,0,${isDark ? '0.4' : '0.15'}),
-                inset 0 -3px 0 rgba(0,0,0,0.2),
-                inset 0 2px 0 rgba(255,255,255,${isDark ? '0.06' : (isPlayStation ? '0.08' : '0.3')}),
-                0 0 0 1.5px ${isPlayStation ? iconColor + '25' : 'rgba(0,0,0,0.2)'}
-              `,
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              textShadow: isPlayStation
-                ? `0 0 10px ${iconColor}50, 0 1px 3px rgba(0,0,0,0.8)`
-                : '0 1px 3px rgba(0,0,0,0.6)',
-              flexShrink: 0,
-            }}
-          >
-            <span style={{
-              transform: isPlayStation
-                ? (['▢', '△', '✕', '◯'].includes(label) ? 'scale(1.4)' : 'scale(1.1)')
-                : (label.length > 1 ? 'scale(0.95)' : 'scale(1.2)'),
-              display: 'inline-block',
-              lineHeight: 1,
-              marginTop: isPlayStation && ['▢', '△', '✕', '◯'].includes(label) ? '-2px' : '0',
-            }}>
-              {label}
-            </span>
-          </div>
-        );
+        // Otherwise, render normally (this includes P and K which return array of length 1)
+        const finalInput = subButtons.length === 1 ? subButtons[0] : input;
+        return renderSingleGlyph(finalInput, idx);
       })}
     </div>
   );

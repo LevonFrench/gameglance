@@ -714,7 +714,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                   </div>
 
                   {/* Bottom: Frame data */}
-                  {move.frameData && (move.frameData.startup || move.frameData.active || move.frameData.advantage) && (
+                  {/* move.frameData && (move.frameData.startup || move.frameData.active || move.frameData.advantage) && (
                     <div style={{
                       display: 'flex',
                       gap: '1.25rem',
@@ -793,7 +793,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                         </div>
                       )}
                     </div>
-                  )}
+                  )} */}
                 </div>
               );
             })}
