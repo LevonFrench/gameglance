@@ -2855,7 +2855,7 @@ rosterCount: 11,
     mameRomset: "",
     releaseYear: 1996,
     platform: "Arcade, NeoGeo, Saturn, PS1, PC",
-    name: "Samurai Shodown IV: Amakusa's Revenge",
+    name: "Samurai Shodown IV: Amakusa's Revenge (1996)",
     isDraft: true,
     rosterCount: 16,
     characters: [
@@ -3149,12 +3149,12 @@ rosterCount: 25,
 
     mameRomset: "",
 
-    name: "Street Fighter Alpha 1",
+    name: "Street Fighter Alpha",
     tagline: "The Alpha Generation",
 
     developer: "Capcom",
 
-    releaseYear: 2023,
+    releaseYear: 1995,
 
     platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade, PC",
 
@@ -4074,7 +4074,7 @@ rosterCount: 17,
     mameRomset: "",
     releaseYear: 2007,
     platform: "Arcade, PS2, PC",
-    name: "The King of Fighters: Maximum Impact Regulation 'A'",
+    name: "The King of Fighters: Maximum Impact Regulation 'A' (2007)",
     isDraft: true,
     rosterCount: 5,
     characters: [
@@ -6399,7 +6399,7 @@ rosterCount: 8,
     id: 'rival-schools-united-by-fate',
 
     mameRomset: "",
-    name: 'Rival Schools: United by Fate',
+    name: 'Rival Schools: United by Fate (1997)',
     tagline: "United by Fate",
     developer: 'Capcom',
     releaseYear: 1997,

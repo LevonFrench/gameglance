@@ -4,6 +4,9 @@ import json
 import zipfile
 import xml.etree.ElementTree as ET
 import re
+import sys
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from scripts.lib.validator import is_valid_notation
 
 def clean_id(name):
     cid = name.lower()
@@ -190,7 +193,8 @@ def main():
                     if isinstance(m_input, str):
                         m_input = [m_input]
                         
-                    movesList.append({"name": m_name, "type": mtype, "inputs": m_input})
+                    if m_input and len(m_input) > 0 and is_valid_notation(m_input[0]):
+                        movesList.append({"name": m_name, "type": mtype, "input": m_input[0]})
 
             add_moves(roster_char.get('command_normals', []) or roster_char.get('commandNormals', []) or roster_char.get('common_strings', []), "command_normal")
             

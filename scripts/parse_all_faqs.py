@@ -4,6 +4,10 @@ import os
 import json
 import re
 import glob
+import sys
+import os
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from scripts.lib.validator import is_valid_notation
 
 TS_FILE = 'src/games.ts'
 DATA_DIR = 'public/data'
@@ -145,13 +149,17 @@ def main():
             if not movesList:
                 movesList = []
                 for m in roster_char.get('command_normals', []):
-                    movesList.append({"name": m['name'], "type": "command_normal", "inputs": [m['input']]})
+                    if is_valid_notation(m['input']):
+                        movesList.append({"name": m['name'], "type": "command_normal", "input": m['input']})
                 for m in roster_char.get('special_moves', []):
-                    movesList.append({"name": m['name'], "type": "special", "inputs": [m['input']]})
+                    if is_valid_notation(m['input']):
+                        movesList.append({"name": m['name'], "type": "special", "input": m['input']})
                 for m in roster_char.get('super_moves', []) + roster_char.get('desperation_moves', []) + roster_char.get('super_combos', []):
-                    movesList.append({"name": m['name'], "type": "super", "inputs": [m['input']]})
+                    if is_valid_notation(m['input']):
+                        movesList.append({"name": m['name'], "type": "super", "input": m['input']})
                 for m in roster_char.get('unique_attacks', []):
-                    movesList.append({"name": m['name'], "type": "unique", "inputs": [m['input']]})
+                    if is_valid_notation(m['input']):
+                        movesList.append({"name": m['name'], "type": "unique", "input": m['input']})
                 
             out_doc = {
                 "game": matched_doc.get('game') or matched_doc.get('game_title'),

@@ -1,3 +1,4 @@
+import React, { useState } from 'react';
 import type { ControllerType } from './glyphMap';
 
 interface Props {
@@ -7,6 +8,7 @@ interface Props {
   onSetNotationSystem: (n: string) => void;
   onOpenFightcadeSync?: () => void;
   syncConnected?: boolean;
+  onOpenAdmin?: () => void;
 }
 
 export const BottomHeader: React.FC<Props> = ({ 
@@ -15,8 +17,25 @@ export const BottomHeader: React.FC<Props> = ({
   notationSystem,
   onSetNotationSystem,
   onOpenFightcadeSync,
-  syncConnected
+  syncConnected,
+  onOpenAdmin
 }) => {
+  const [adminClicks, setAdminClicks] = useState(0);
+
+  const handleAdminClick = () => {
+    const newClicks = adminClicks + 1;
+    if (newClicks >= 10) {
+      if (onOpenAdmin) onOpenAdmin();
+      setAdminClicks(0);
+    } else {
+      setAdminClicks(newClicks);
+    }
+    // reset after 2 seconds of inactivity
+    setTimeout(() => {
+      setAdminClicks(curr => curr === newClicks ? 0 : curr);
+    }, 2000);
+  };
+
   return (
     <div style={{
       position: 'fixed',
@@ -117,7 +136,7 @@ export const BottomHeader: React.FC<Props> = ({
         color: 'var(--text-tertiary)',
         marginTop: '0.5rem'
       }}>
-        <span>© {new Date().getFullYear()} GameGlance. FGC Second Screen App.</span>
+        <span onClick={handleAdminClick} style={{ cursor: 'pointer' }}>© {new Date().getFullYear()} GameGlance. FGC Second Screen App.</span>
         <div style={{ width: '1px', height: '12px', background: 'var(--border-subtle)' }} />
         <a href="mailto:contact@gameglance.app" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }} 
            onMouseEnter={e => e.currentTarget.style.color = 'var(--text-primary)'}
