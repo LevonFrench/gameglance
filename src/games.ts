@@ -6,6 +6,8 @@ export const SUPPORTED_GAMES: ReadonlyArray<Readonly<GameDefinition>> = [
 
     id: 'art-of-fighting',
 
+    mameRomset: "",
+
     name: "Art of Fighting",
     tagline: "The 100 Mega Shock",
 
@@ -26,6 +28,8 @@ rosterCount: 10,
   {
 
     id: 'art-of-fighting-2',
+
+    mameRomset: "",
 
     name: "Art of Fighting 2",
     tagline: "The Ultimate Blow",
@@ -48,6 +52,8 @@ rosterCount: 13,
 
     id: 'art-of-fighting-3-the-path-of-the-warrior',
 
+    mameRomset: "",
+
     name: "Art of Fighting 3: The Path of the Warrior",
     tagline: "The Path of the Warrior",
 
@@ -68,6 +74,8 @@ rosterCount: 9,
   {
 
     id: 'astra-superstars',
+
+    mameRomset: "",
 
     name: "Astra Superstars",
     tagline: "Enter the Arena",
@@ -90,6 +98,8 @@ rosterCount: 8,
 
     id: 'asuka-120%-burning-fest-limited',
 
+    mameRomset: "",
+
     name: "Asuka 120% Burning Fest Limited",
     tagline: "Enter the Arena",
 
@@ -106,6 +116,8 @@ rosterCount: 8,
   {
 
     id: 'battle-arena-toshinden-3',
+
+    mameRomset: "",
 
     name: "Battle Arena Toshinden 3",
     tagline: "Enter the Arena",
@@ -128,6 +140,8 @@ rosterCount: 30,
 
     id: 'battle-monsters',
 
+    mameRomset: "",
+
     name: "Battle Monsters",
     tagline: "Enter the Arena",
 
@@ -148,6 +162,8 @@ rosterCount: 7,
   {
 
     id: 'blazblue-central-fiction',
+
+    mameRomset: "",
 
     name: "BlazBlue: Central Fiction",
     tagline: "Rebel 1, Action!",
@@ -171,6 +187,8 @@ rosterCount: 35,
 
     id: 'blazblue-cross-tag-battle',
 
+    mameRomset: "",
+
     name: "BlazBlue: Cross Tag Battle",
     tagline: "Can't Escape From Crossing Fate",
 
@@ -190,6 +208,8 @@ rosterCount: 40,
   {
 
     id: 'bloody-roar',
+
+    mameRomset: "",
 
     name: "Bloody Roar",
     tagline: "Enter the Arena",
@@ -212,6 +232,8 @@ rosterCount: 8,
 
     id: 'bloody-roar-2',
 
+    mameRomset: "",
+
     name: "Bloody Roar 2",
     tagline: "Enter the Arena",
 
@@ -232,6 +254,8 @@ rosterCount: 8,
   {
 
     id: 'bloody-roar-2-bringer-of-the-new-age',
+
+    mameRomset: "",
 
     name: "Bloody Roar 2: Bringer of the New Age",
     tagline: "Enter the Arena",
@@ -254,6 +278,8 @@ rosterCount: 10,
 
     id: 'bloody-roar-3',
 
+    mameRomset: "",
+
     name: "Bloody Roar 3",
     tagline: "Enter the Arena",
 
@@ -274,6 +300,8 @@ rosterCount: 13,
   {
 
     id: 'bloody-roar-4',
+
+    mameRomset: "",
 
     name: "Bloody Roar 4",
     tagline: "Enter the Arena",
@@ -296,6 +324,8 @@ rosterCount: 17,
 
     id: 'bloody-roar-primal-fury--extreme',
 
+    mameRomset: "",
+
     name: "Bloody Roar: Primal Fury / Extreme",
     tagline: "Enter the Arena",
 
@@ -316,6 +346,8 @@ rosterCount: 8,
   {
 
     id: 'breakers-revenge',
+
+    mameRomset: "",
 
     name: "Breakers Revenge",
     tagline: "Enter the Arena",
@@ -338,6 +370,8 @@ rosterCount: 10,
 
     id: 'capcom-fighting-jam',
 
+    mameRomset: "",
+
     name: "Capcom Fighting Jam",
     tagline: "Worlds Collide",
 
@@ -357,6 +391,8 @@ rosterCount: 19,
   {
 
     id: 'capcom-vs-snk-2-mark-of-the-millennium-2001',
+
+    mameRomset: "",
 
     name: "Capcom vs. SNK 2: Mark of the Millennium 2001",
     tagline: "It's Mahvel Baby!",
@@ -380,6 +416,8 @@ rosterCount: 44,
 
     id: 'capcom-vs-snk-millennium-fight-2000-pro',
 
+    mameRomset: "",
+
     name: "Capcom vs. SNK: Millennium Fight 2000 Pro",
     tagline: "It's Mahvel Baby!",
 
@@ -399,6 +437,8 @@ rosterCount: 29,
   {
 
     id: 'cyberbots-full-metal-madness',
+
+    mameRomset: "",
 
     name: "Cyberbots: Full Metal Madness",
     tagline: "Enter the Arena",
@@ -420,6 +460,8 @@ rosterCount: 12,
 
     id: 'darkstalkers-the-night-warriors',
 
+    mameRomset: "",
+
     name: "Darkstalkers: The Night Warriors",
     tagline: "The Night Warriors",
 
@@ -439,6 +481,8 @@ rosterCount: 11,
   {
 
     id: 'dead-or-alive',
+
+    mameRomset: "",
 
     name: "Dead or Alive",
     tagline: "Enter the Arena",
@@ -461,6 +505,8 @@ rosterCount: 10,
 
     id: 'dead-or-alive-2',
 
+    mameRomset: "",
+
     name: "Dead or Alive 2",
     tagline: "Enter the Arena",
 
@@ -481,6 +527,8 @@ rosterCount: 14,
   {
 
     id: 'dead-or-alive-3',
+
+    mameRomset: "",
 
     name: "Dead or Alive 3",
     tagline: "Enter the Arena",
@@ -503,6 +551,8 @@ rosterCount: 17,
 
     id: 'dead-or-alive-4',
 
+    mameRomset: "",
+
     name: "Dead or Alive 4",
     tagline: "Enter the Arena",
 
@@ -512,7 +562,7 @@ rosterCount: 17,
 
     platform: "Xbox 360, PC",
 
-rosterCount: 22,
+rosterCount: 25,
 
         characters: [],
 
@@ -523,6 +573,8 @@ rosterCount: 22,
   {
 
     id: 'dead-or-alive-5',
+
+    mameRomset: "",
 
     name: "Dead or Alive 5",
     tagline: "Enter the Arena",
@@ -545,6 +597,8 @@ rosterCount: 29,
 
     id: 'dead-or-alive-6',
 
+    mameRomset: "",
+
     name: "Dead or Alive 6",
     tagline: "Enter the Arena",
 
@@ -566,6 +620,8 @@ rosterCount: 29,
 
     id: 'dnf-duel',
 
+    mameRomset: "",
+
     name: "DNF Duel",
     tagline: "Action RPG Meets Fighting",
 
@@ -586,6 +642,8 @@ rosterCount: 16,
   {
 
     id: 'dragon-ball-fighterz',
+
+    mameRomset: "",
 
     name: "Dragon Ball FighterZ",
     tagline: "Enter the Arena",
@@ -609,6 +667,8 @@ rosterCount: 37,
 
     id: 'fatal-fury-2',
 
+    mameRomset: "",
+
     name: "Fatal Fury 2",
     tagline: "Hey, c'mon c'mon!",
 
@@ -629,6 +689,8 @@ rosterCount: 11,
   {
 
     id: 'fatal-fury-3-road-to-the-final-victory',
+
+    mameRomset: "",
 
     name: "Fatal Fury 3: Road to the Final Victory",
     tagline: "Hey, c'mon c'mon!",
@@ -651,6 +713,8 @@ rosterCount: 12,
 
     id: 'fatal-fury-special',
 
+    mameRomset: "",
+
     name: "Fatal Fury Special",
     tagline: "The Special Bout",
 
@@ -671,6 +735,8 @@ rosterCount: 16,
   {
 
     id: 'fatal-fury-city-of-the-wolves',
+
+    mameRomset: "",
 
     name: "City Of The Wolves",
     tagline: "Enter the Arena",
@@ -693,6 +759,8 @@ rosterCount: 18,
 
     id: 'fatal-fury-king-of-fighters',
 
+    mameRomset: "",
+
     name: "Fatal Fury",
     tagline: "Hey, c'mon c'mon!",
 
@@ -714,6 +782,8 @@ rosterCount: 11,
 
     id: 'fighters-megamix',
 
+    mameRomset: "",
+
     name: "Fighters Megamix",
     tagline: "Enter the Arena",
 
@@ -733,6 +803,8 @@ rosterCount: 14,
   {
 
     id: 'fighting-ex-layer',
+
+    mameRomset: "",
 
     name: "Fighting EX Layer",
     tagline: "Enter the Arena",
@@ -755,6 +827,8 @@ rosterCount: 14,
 
     id: 'fighting-vipers',
 
+    mameRomset: "",
+
     name: "Fighting Vipers",
     tagline: "Enter the Arena",
 
@@ -775,6 +849,8 @@ rosterCount: 7,
   {
 
     id: 'fighting-vipers-2',
+
+    mameRomset: "",
 
     name: "Fighting Vipers 2",
     tagline: "Enter the Arena",
@@ -797,6 +873,8 @@ rosterCount: 9,
 
     id: 'fist-of-the-north-star-hokuto-no-ken',
 
+    mameRomset: "",
+
     name: "Fist of the North Star (Hokuto no Ken)",
     tagline: "Enter the Arena",
 
@@ -817,6 +895,8 @@ rosterCount: 10,
   {
 
     id: 'galaxy-fight-universal-warriors',
+
+    mameRomset: "",
 
     name: "Galaxy Fight: Universal Warriors",
     tagline: "Enter the Arena",
@@ -839,6 +919,8 @@ rosterCount: 9,
 
     id: 'garou-mark-of-the-wolves',
 
+    mameRomset: "garou",
+
     name: "Garou: Mark of the Wolves",
     tagline: "Mark of the Wolves",
 
@@ -858,6 +940,8 @@ rosterCount: 14,
   {
 
     id: 'golden-axe-the-duel',
+
+    mameRomset: "",
 
     name: "Golden Axe: The Duel",
     tagline: "Enter the Arena",
@@ -880,6 +964,8 @@ rosterCount: 8,
 
     id: 'granblue-fantasy-versus-rising',
 
+    mameRomset: "",
+
     name: "Granblue Fantasy Versus: Rising",
     tagline: "Enter the Arena",
 
@@ -900,6 +986,8 @@ rosterCount: 14,
   {
 
     id: 'groove-on-fight',
+
+    mameRomset: "",
 
     name: "Groove on Fight",
     tagline: "Enter the Arena",
@@ -922,6 +1010,8 @@ rosterCount: 14,
 
     id: 'groove-on-fight-power-instinct-3',
 
+    mameRomset: "",
+
     name: "Groove On Fight (Power Instinct 3)",
     tagline: "Enter the Arena",
 
@@ -943,6 +1033,8 @@ rosterCount: 12,
 
     id: 'guilty-gear',
 
+    mameRomset: "",
+
     name: "Guilty Gear (1998)",
     tagline: "The Missing Link",
 
@@ -963,6 +1055,8 @@ rosterCount: 12,
   {
 
     id: 'guilty-gear-strive',
+
+    mameRomset: "",
 
     name: "Guilty Gear -Strive-",
     tagline: "Smell of the Game",
@@ -987,6 +1081,8 @@ rosterCount: 24,
 
     id: 'guilty-gear-x',
 
+    mameRomset: "",
+
     name: "Guilty Gear X",
     tagline: "By Your Side",
 
@@ -1007,6 +1103,8 @@ rosterCount: 16,
   {
 
     id: 'guilty-gear-xrd-rev-2',
+
+    mameRomset: "",
 
     name: "Guilty Gear Xrd REV 2",
     tagline: "Revelations",
@@ -1029,6 +1127,8 @@ rosterCount: 23,
 
     id: 'guilty-gear-xx-accent-core-plus-r',
 
+    mameRomset: "",
+
     name: "Guilty Gear XX Accent Core Plus R",
     tagline: "Accent Core Plus R",
 
@@ -1050,6 +1150,8 @@ rosterCount: 25,
 
     id: 'hyper-street-fighter-ii',
 
+    mameRomset: "",
+
     name: "Hyper Street Fighter II",
     tagline: "The Anniversary Edition",
 
@@ -1066,6 +1168,8 @@ rosterCount: 25,
   {
 
     id: 'invincible-vs-beta',
+
+    mameRomset: "",
 
     name: "Invincible VS Beta",
     tagline: "Enter the Arena",
@@ -1088,6 +1192,8 @@ rosterCount: 7,
 
     id: 'jojo-s-bizarre-adventure-heritage-for-the-future-jjba-hftf',
 
+    mameRomset: "",
+
     name: "JoJo's Bizarre Adventure: Heritage for the Future",
 
     developer: "Unknown",
@@ -1107,6 +1213,8 @@ rosterCount: 15,
   {
 
     id: 'kakuto-chojin-back-alley-brutal',
+
+    mameRomset: "",
 
     name: "Kakuto Chojin: Back Alley Brutal",
     tagline: "Enter the Arena",
@@ -1129,6 +1237,8 @@ rosterCount: 8,
 
     id: 'kasumi-ninja',
 
+    mameRomset: "",
+
     name: "Kasumi Ninja",
     tagline: "Enter the Arena",
 
@@ -1150,6 +1260,8 @@ rosterCount: 9,
 
     id: 'killer-instinct-(1994)',
 
+    mameRomset: "",
+
     name: "Killer Instinct (1994)",
     tagline: "Play With Fire",
 
@@ -1166,6 +1278,8 @@ rosterCount: 9,
   {
 
     id: 'killer-instinct-(2013)',
+
+    mameRomset: "",
 
     name: "Killer Instinct (2013)",
     tagline: "Fight On",
@@ -1184,6 +1298,8 @@ rosterCount: 9,
 
     id: 'killer-instinct-2--gold',
 
+    mameRomset: "",
+
     name: "Killer Instinct 2",
     tagline: "The Instinct Returns",
 
@@ -1200,6 +1316,8 @@ rosterCount: 9,
   {
 
     id: 'kizuna-encounter-super-tag-battle',
+
+    mameRomset: "",
 
     name: "Kizuna Encounter: Super Tag Battle",
     tagline: "Super Tag Battle",
@@ -1220,6 +1338,8 @@ rosterCount: 8,
   {
 
     id: 'last-bronx',
+
+    mameRomset: "",
 
     name: "Last Bronx",
     tagline: "Enter the Arena",
@@ -1242,6 +1362,8 @@ rosterCount: 8,
 
     id: 'marvel-super-heroes',
 
+    mameRomset: "",
+
     name: "Marvel Super Heroes",
     tagline: "War of the Gems",
 
@@ -1262,6 +1384,8 @@ rosterCount: 12,
 
     id: 'mshvsf',
 
+    mameRomset: "",
+
     name: "Marvel Super Heroes vs. Street Fighter",
     tagline: "Super Heroes meet Street Fighters",
 
@@ -1278,6 +1402,8 @@ rosterCount: 12,
   {
 
     id: 'marvel-toukon-fighting-souls-beta-version',
+
+    mameRomset: "",
 
     name: "Marvel Toukon: Fighting Souls (Beta Version)",
     tagline: "The Beta Battle",
@@ -1299,6 +1425,8 @@ rosterCount: 7,
   {
 
     id: 'marvel-vs-capcom-2',
+
+    mameRomset: "mvc2",
 
     name: "Marvel vs. Capcom 2",
     tagline: "Take You For A Ride",
@@ -1323,6 +1451,8 @@ rosterCount: 39,
 
     id: 'marvel-vs-capcom-clash-of-super-heroes',
 
+    mameRomset: "",
+
     name: "Marvel vs. Capcom: Clash of Super Heroes",
     tagline: "Two Worlds, One Dream",
 
@@ -1343,6 +1473,8 @@ rosterCount: 14,
   {
 
     id: 'marvel-vs-capcom-infinite',
+
+    mameRomset: "",
 
     name: "Marvel vs. Capcom: Infinite",
     tagline: "Return of the Stones",
@@ -1365,6 +1497,8 @@ rosterCount: 24,
 
     id: 'matrimelee',
 
+    mameRomset: "",
+
     name: "Matrimelee (Power Instinct Matrimelee)",
     tagline: "Power Instinct Matrimelee",
 
@@ -1383,6 +1517,8 @@ rosterCount: 24,
   {
 
     id: 'mortal-kombat-(2011)',
+
+    mameRomset: "",
 
     notationSystem: 'mk',
     name: "Mortal Kombat (2011)",
@@ -1403,6 +1539,8 @@ rosterCount: 24,
   {
 
     id: 'mortal-kombat-1',
+
+    mameRomset: "",
 
     notationSystem: 'mk',
     name: "Mortal Kombat",
@@ -1428,6 +1566,8 @@ rosterCount: 25,
 
     id: 'mortal-kombat-ii',
 
+    mameRomset: "mk2",
+
     notationSystem: 'mk',
     name: "Mortal Kombat II",
     tagline: "Nothing Can Stop It",
@@ -1449,6 +1589,8 @@ rosterCount: 14,
   {
 
     id: 'mortal-kombat-x',
+
+    mameRomset: "",
 
     notationSystem: 'mk',
     name: "Mortal Kombat X",
@@ -1472,6 +1614,8 @@ rosterCount: 32,
 
     id: 'mortal-kombat-deception',
 
+    mameRomset: "",
+
     notationSystem: 'mk',
     name: "Mortal Kombat: Deception",
     tagline: "Deception is Everywhere",
@@ -1494,6 +1638,8 @@ rosterCount: 21,
 
     id: 'night-warriors-darkstalkers-revenge',
 
+    mameRomset: "",
+
     name: "Night Warriors: Darkstalkers",
     tagline: "Darkstalkers' Revenge",
 
@@ -1514,6 +1660,8 @@ rosterCount: 14,
 
     id: 'ninja-masters-haoh-ninpo-cho',
 
+    mameRomset: "",
+
     name: "Ninja Master",
     tagline: "Enter the Arena",
 
@@ -1532,6 +1680,8 @@ rosterCount: 14,
   {
 
     id: 'persona-4-arena-ultimax',
+
+    mameRomset: "",
 
     name: "Persona 4 Arena Ultimax",
     tagline: "The P-1 Climax",
@@ -1554,6 +1704,8 @@ rosterCount: 20,
 
     id: 'plasma-sword-nightmare-of-bilstein',
 
+    mameRomset: "",
+
     name: "Plasma Sword: Nightmare of Bilstein",
     tagline: "Enter the Arena",
 
@@ -1575,6 +1727,8 @@ rosterCount: 13,
 
     id: 'pocketfighter',
 
+    mameRomset: "",
+
     name: "Pocket Fighter",
     tagline: "Super Gem Fighter Mini Mix",
 
@@ -1593,6 +1747,8 @@ rosterCount: 13,
   {
 
     id: 'primal-rage',
+
+    mameRomset: "",
 
     name: "Primal Rage",
     tagline: "Enter the Arena",
@@ -1615,6 +1771,8 @@ rosterCount: 7,
 
     id: 'primal-rage-2',
 
+    mameRomset: "",
+
     name: "Primal Rage 2",
     tagline: "Enter the Arena",
 
@@ -1636,6 +1794,8 @@ rosterCount: 7,
 
     id: 'projectjustice',
 
+    mameRomset: "",
+
     name: "Project Justice",
     tagline: "Project Justice",
 
@@ -1654,6 +1814,8 @@ rosterCount: 7,
   {
 
     id: 'psychic-force',
+
+    mameRomset: "",
 
     name: "Psychic Force",
     tagline: "Enter the Arena",
@@ -1676,6 +1838,8 @@ rosterCount: 10,
 
     id: 'psychic-force-2012-psychic-force-2',
 
+    mameRomset: "",
+
     name: "Psychic Force 2012 (Psychic Force 2)",
     tagline: "Enter the Arena",
 
@@ -1696,6 +1860,8 @@ rosterCount: 13,
   {
 
     id: 'rage-of-the-dragons',
+
+    mameRomset: "",
 
     name: "Rage of the Dragons",
     tagline: "Enter the Arena",
@@ -1718,6 +1884,8 @@ rosterCount: 13,
 
     id: 'ragnagard-shin-oh-ken',
 
+    mameRomset: "",
+
     name: "Ragnagard (Shin-Oh-Ken)",
     tagline: "Enter the Arena",
 
@@ -1739,6 +1907,8 @@ rosterCount: 8,
 
     id: 'real-bout-fatal-fury',
 
+    mameRomset: "",
+
     name: "Real Bout Fatal Fury",
     tagline: "The Real Bout",
 
@@ -1758,6 +1928,8 @@ rosterCount: 16,
   {
 
     id: 'real-bout-fatal-fury-2-the-newcomers',
+
+    mameRomset: "",
 
     name: "Real Bout Fatal Fury 2: The Newcomers",
     tagline: "The Newcomers",
@@ -1779,6 +1951,8 @@ rosterCount: 19,
 
     id: 'real-bout-fatal-fury-special',
 
+    mameRomset: "",
+
     name: "Real Bout Fatal Fury Special",
     tagline: "Real Bout Special",
 
@@ -1798,6 +1972,8 @@ rosterCount: 19,
   {
 
     id: 'samurai-shodown',
+
+    mameRomset: "",
 
     name: "Samurai Shodown",
     tagline: "Way of the Sword",
@@ -1821,6 +1997,8 @@ rosterCount: 25,
 
     id: 'samurai-shodown-(2019)',
 
+    mameRomset: "",
+
     name: "Samurai Shodown (2019)",
     tagline: "Embrace Death",
 
@@ -1837,6 +2015,8 @@ rosterCount: 25,
   {
 
     id: 'samurai-shodown-ii',
+
+    mameRomset: "",
 
     name: "Samurai Shodown II",
     tagline: "The Blade Returns",
@@ -1858,6 +2038,8 @@ rosterCount: 15,
 
     id: 'samurai-shodown-iii-blades-of-blood',
 
+    mameRomset: "",
+
     name: "Samurai Shodown III: Blades of Blood",
     tagline: "Blades of Blood",
 
@@ -1876,6 +2058,8 @@ rosterCount: 11,
 
   {
     id: 'samurai-shodown-iv-amakusas-revenge',
+
+    mameRomset: "",
     releaseYear: 1996,
     platform: "Arcade, NeoGeo, Saturn, PS1, PC",
     name: "Samurai Shodown IV: Amakusa's Revenge",
@@ -1887,6 +2071,8 @@ rosterCount: 11,
   {
 
     id: 'samurai-shodown-v',
+
+    mameRomset: "",
 
     name: "Samurai Shodown V",
     tagline: "The Sword of the Warrior",
@@ -1908,6 +2094,8 @@ rosterCount: 19,
 
     id: 'samurai-shodown-v-special',
 
+    mameRomset: "samsho5sp",
+
     name: "Samurai Shodown V Special",
     tagline: "The Special Edition",
 
@@ -1928,6 +2116,8 @@ rosterCount: 1,
 
     id: 'savage-reign-fu-un-mokushiroku-kakutou-sousei',
 
+    mameRomset: "",
+
     name: "Savage Reign",
 
     developer: "Unknown",
@@ -1947,6 +2137,8 @@ rosterCount: 11,
   {
 
     id: 'snk-heroines-tag-team-frenzy',
+
+    mameRomset: "",
 
     name: "SNK Heroines: Tag Team Frenzy",
     tagline: "Enter the Arena",
@@ -1969,6 +2161,8 @@ rosterCount: 16,
 
     id: 'snk-vs-capcom-svc-chaos',
 
+    mameRomset: "",
+
     name: "SNK vs. Capcom: SVC Chaos",
     tagline: "The Ultimate Collision",
 
@@ -1988,6 +2182,8 @@ rosterCount: 37,
   {
 
     id: 'soul-calibur',
+
+    mameRomset: "",
 
     name: "Soul Calibur",
     tagline: "Transcending History",
@@ -2010,6 +2206,8 @@ rosterCount: 10,
 
     id: 'soul-edge-soul-blade',
 
+    mameRomset: "",
+
     name: "Soul Edge (Soul Blade)",
     tagline: "A Tale of Souls and Swords",
 
@@ -2031,6 +2229,8 @@ rosterCount: 10,
 
     id: 'street-fighter-6',
 
+    mameRomset: "",
+
     name: "Street Fighter 6",
     tagline: "Your Moment. Your Fight.",
 
@@ -2042,7 +2242,7 @@ rosterCount: 10,
 
     tabs: ['Normal Moves', 'Unique Attacks', 'Special Moves', 'Super Arts', 'Throws', 'Common Moves'],
 
-rosterCount: 22,
+rosterCount: 25,
 
             tags: ['3D', 'Modern'],
 
@@ -2055,6 +2255,8 @@ rosterCount: 22,
   {
 
     id: 'street-fighter-alpha',
+
+    mameRomset: "",
 
     name: "Street Fighter Alpha 1",
     tagline: "The Alpha Generation",
@@ -2074,6 +2276,8 @@ rosterCount: 22,
   {
 
     id: 'street-fighter-alpha-2',
+
+    mameRomset: "sfa2",
 
     name: "Street Fighter Alpha 2",
     tagline: "The Custom Combo Era",
@@ -2096,6 +2300,8 @@ rosterCount: 19,
 
     id: 'street-fighter-alpha-3',
 
+    mameRomset: "sfa3",
+
     name: "Street Fighter Alpha 3",
     tagline: "Go For Broke!",
 
@@ -2116,6 +2322,8 @@ rosterCount: 37,
   {
 
     id: 'street-fighter-ex3',
+
+    mameRomset: "",
 
     name: "Street Fighter EX3",
     tagline: "The 3D Bout",
@@ -2138,6 +2346,8 @@ rosterCount: 21,
 
     id: 'street-fighter-iii-2nd-impact',
 
+    mameRomset: "",
+
     name: "Street Fighter III: 2nd Impact - Giant Attack",
     tagline: "Giant Attack",
 
@@ -2156,6 +2366,8 @@ rosterCount: 21,
   {
 
     id: 'street-fighter-iii-new-generation',
+
+    mameRomset: "",
 
     name: "Street Fighter III: New Generation",
     tagline: "A New Generation",
@@ -2177,6 +2389,8 @@ rosterCount: 11,
   {
 
     id: 'street-fighter-v-champion-edition',
+
+    mameRomset: "",
 
     name: "Street Fighter V: Champion Edition",
     tagline: "Rise Up",
@@ -2201,6 +2415,8 @@ rosterCount: 43,
 
     id: 'super-street-fighter-ii-turbo',
 
+    mameRomset: "ssf2t",
+
     name: "Super Street Fighter II Turbo",
     tagline: "The Grand Master Challenge",
 
@@ -2223,6 +2439,8 @@ rosterCount: 17,
 
     id: 'super-street-fighter-ii',
 
+    mameRomset: "",
+
     name: "Super Street Fighter II: The New Challengers",
     tagline: "The New Challengers",
 
@@ -2239,6 +2457,8 @@ rosterCount: 17,
   {
 
     id: 'tao-feng-fist-of-the-lotus',
+
+    mameRomset: "",
 
     name: "Tao Feng: Fist of the Lotus",
     tagline: "Enter the Arena",
@@ -2261,6 +2481,8 @@ rosterCount: 8,
 
     id: 'tatsunoko-vs-capcom-ultimate-all-stars',
 
+    mameRomset: "",
+
     name: "Tatsunoko vs. Capcom: Ultimate All-Stars",
     tagline: "Cross Generation of Heroes",
 
@@ -2281,6 +2503,8 @@ rosterCount: 23,
   {
 
     id: 'tekken-1',
+
+    mameRomset: "",
 
     name: "Tekken 1",
     tagline: "The King of Iron Fist Tournament",
@@ -2303,6 +2527,8 @@ rosterCount: 17,
 
     id: 'tekken-2',
 
+    mameRomset: "",
+
     name: "Tekken 2",
     tagline: "The Iron Fist Returns",
 
@@ -2324,6 +2550,8 @@ rosterCount: 21,
 
     id: 'tekken-8',
 
+    mameRomset: "",
+
     name: "Tekken 8",
     tagline: "Fist Meets Fate",
 
@@ -2342,6 +2570,8 @@ rosterCount: 31,
 
   {
     id: 'tekken-tag-tournament',
+
+    mameRomset: "",
     name: 'Tekken Tag Tournament',
     tagline: "The Tag Battle",
     characters: []
@@ -2349,6 +2579,8 @@ rosterCount: 31,
 
   {
     id: 'tekken-tag-tournament-2',
+
+    mameRomset: "",
     name: 'Tekken Tag Tournament 2',
     tagline: "We Are Tekken",
     characters: []
@@ -2357,6 +2589,8 @@ rosterCount: 31,
   {
 
     id: 'the-king-of-fighters-94',
+
+    mameRomset: "",
 
     name: "The King of Fighters '94",
 
@@ -2377,6 +2611,8 @@ rosterCount: 24,
   {
 
     id: 'the-king-of-fighters-2000',
+
+    mameRomset: "",
 
     name: "The King of Fighters 2000",
     tagline: "The NESTS Crisis",
@@ -2399,6 +2635,8 @@ rosterCount: 33,
 
     id: 'the-king-of-fighters-2001',
 
+    mameRomset: "",
+
     name: "The King of Fighters 2001",
     tagline: "The NESTS Conclusion",
 
@@ -2419,6 +2657,8 @@ rosterCount: 34,
   {
 
     id: 'the-king-of-fighters-2002',
+
+    mameRomset: "kof2002",
 
     name: "The King of Fighters 2002",
     tagline: "Challenge to Ultimate Battle",
@@ -2441,6 +2681,8 @@ rosterCount: 39,
 
     id: 'the-king-of-fighters-2003',
 
+    mameRomset: "",
+
     name: "The King of Fighters 2003",
     tagline: "The Ash Saga Begins",
 
@@ -2461,6 +2703,8 @@ rosterCount: 30,
   {
 
     id: 'the-king-of-fighters-xiii',
+
+    mameRomset: "",
 
     name: "The King of Fighters XIII",
     tagline: "The Ash Conclusion",
@@ -2483,6 +2727,8 @@ rosterCount: 32,
 
     id: 'the-king-of-fighters-xiv',
 
+    mameRomset: "",
+
     name: "The King of Fighters XIV",
     tagline: "Burn to Fight",
 
@@ -2503,6 +2749,8 @@ rosterCount: 47,
   {
 
     id: 'the-king-of-fighters-xv',
+
+    mameRomset: "",
 
     name: "The King of Fighters XV",
     tagline: "Shatter All Expectations",
@@ -2527,6 +2775,8 @@ rosterCount: 48,
 
     id: 'the-king-of-fighters-maximum-impact',
 
+    mameRomset: "",
+
     name: "The King of Fighters: Maximum Impact",
     tagline: "Maximum Impact",
 
@@ -2548,6 +2798,8 @@ rosterCount: 19,
 
     id: 'the-king-of-fighters-maximum-impact-2-kof-2006',
 
+    mameRomset: "",
+
     name: "The King of Fighters: Maximum Impact 2 (KOF 2006)",
     tagline: "KOF 2006",
 
@@ -2567,6 +2819,8 @@ rosterCount: 17,
 
   {
     id: 'the-king-of-fighters-maximum-impact-regulation-a',
+
+    mameRomset: "",
     releaseYear: 2007,
     platform: "Arcade, PS2, PC",
     name: "The King of Fighters: Maximum Impact Regulation 'A'",
@@ -2578,6 +2832,8 @@ rosterCount: 17,
   {
 
     id: 'the-last-blade',
+
+    mameRomset: "",
 
     name: "The Last Blade",
     tagline: "Romance of the Bakumatsu",
@@ -2599,6 +2855,8 @@ rosterCount: 12,
 
     id: 'the-last-blade-2',
 
+    mameRomset: "",
+
     name: "The Last Blade 2",
     tagline: "Heart of the Samurai",
 
@@ -2618,6 +2876,8 @@ rosterCount: 19,
   {
 
     id: 'ultimate-marvel-vs-capcom-3',
+
+    mameRomset: "",
 
     name: "Ultimate Marvel vs. Capcom 3",
     tagline: "Two Worlds. One Fate.",
@@ -2642,6 +2902,8 @@ rosterCount: 50,
 
     id: 'ultimate-mortal-kombat-3',
 
+    mameRomset: "umk3",
+
     name: "Ultimate Mortal Kombat 3",
     tagline: "The Ultimate Kombat",
 
@@ -2651,7 +2913,7 @@ rosterCount: 50,
 
     platform: "Arcade, SNES, Genesis, Saturn, PC",
 
-rosterCount: 22,
+rosterCount: 25,
 
         characters: [],
 
@@ -2662,6 +2924,8 @@ rosterCount: 22,
   {
 
     id: 'ultra-street-fighter-iv',
+
+    mameRomset: "",
 
     name: "Ultra Street Fighter IV",
     tagline: "The Final Battle",
@@ -2684,6 +2948,8 @@ rosterCount: 41,
 
     id: 'under-night-in-birth-ii-[sysceles]',
 
+    mameRomset: "",
+
     name: "Under Night In-Birth II [Sys:Celes]",
     tagline: "The Hollow Night Returns",
 
@@ -2705,6 +2971,8 @@ rosterCount: 41,
 
     id: 'vampirehunter2',
 
+    mameRomset: "",
+
     name: "Vampire Hunter 2",
     tagline: "Darkstalkers' Revenge (Japan)",
 
@@ -2723,6 +2991,8 @@ rosterCount: 41,
   {
 
     id: 'vampiresavior',
+
+    mameRomset: "",
 
     name: "Vampire Savior",
     tagline: "The Lord of Vampire",
@@ -2743,6 +3013,8 @@ rosterCount: 41,
 
     id: 'vampiresavior2',
 
+    mameRomset: "",
+
     name: "Vampire Savior 2",
     tagline: "The Lord of Vampire (Update)",
 
@@ -2762,6 +3034,8 @@ rosterCount: 41,
 
     id: 'virtua-fighter',
 
+    mameRomset: "",
+
     name: "Virtua Fighter 1",
     tagline: "The Original 3D Fighter",
 
@@ -2780,6 +3054,8 @@ rosterCount: 41,
   {
 
     id: 'virtua-fighter-2',
+
+    mameRomset: "",
 
     name: "Virtua Fighter 2",
     tagline: "The Legend Returns",
@@ -2802,6 +3078,8 @@ rosterCount: 10,
 
     id: 'virtua-fighter-3',
 
+    mameRomset: "",
+
     name: "Virtua Fighter 3",
     tagline: "The Third Bout",
 
@@ -2822,6 +3100,8 @@ rosterCount: 12,
   {
 
     id: 'virtua-fighter-4',
+
+    mameRomset: "",
 
     name: "Virtua Fighter 4",
     tagline: "Evolution of Combat",
@@ -2844,6 +3124,8 @@ rosterCount: 14,
 
     id: 'virtua-fighter-5-ultimate-showdown',
 
+    mameRomset: "",
+
     name: "Virtua Fighter 5 Ultimate Showdown",
     tagline: "Ultimate Showdown",
 
@@ -2864,6 +3146,8 @@ rosterCount: 19,
   {
 
     id: 'voltage-fighter-gowcaizer-choujin-gakuen-gowcaizer',
+
+    mameRomset: "",
 
     name: "Voltage Fighter Gowcaizer (Choujin Gakuen Gowcaizer)",
     tagline: "Enter the Arena",
@@ -2886,6 +3170,8 @@ rosterCount: 12,
 
     id: 'waku-waku-7',
 
+    mameRomset: "",
+
     name: "Waku Waku 7",
     tagline: "Waku Waku!",
 
@@ -2905,6 +3191,8 @@ rosterCount: 9,
   {
 
     id: 'way-of-the-warrior',
+
+    mameRomset: "",
 
     name: "Way of the Warrior",
     tagline: "Enter the Arena",
@@ -2927,6 +3215,8 @@ rosterCount: 8,
 
     id: 'world-heroes',
 
+    mameRomset: "",
+
     name: "World Heroes",
     tagline: "Enter the Arena",
 
@@ -2947,6 +3237,8 @@ rosterCount: 8,
   {
 
     id: 'world-heroes-2',
+
+    mameRomset: "",
 
     name: "World Heroes 2",
     tagline: "Enter the Arena",
@@ -2969,6 +3261,8 @@ rosterCount: 14,
 
     id: 'world-heroes-2-jet',
 
+    mameRomset: "",
+
     name: "World Heroes 2 Jet",
     tagline: "Enter the Arena",
 
@@ -2989,6 +3283,8 @@ rosterCount: 7,
   {
 
     id: 'world-heroes-perfect',
+
+    mameRomset: "",
 
     name: "World Heroes Perfect",
     tagline: "Enter the Arena",
@@ -3011,6 +3307,8 @@ rosterCount: 7,
 
     id: 'x-men-vs-street-fighter',
 
+    mameRomset: "xmvsf",
+
     name: "X-Men vs. Street Fighter",
     tagline: "The Crossover Begins",
 
@@ -3031,6 +3329,8 @@ rosterCount: 18,
 
     id: 'x-men-children-of-the-atom',
 
+    mameRomset: "",
+
     name: "X-Men: Children of the Atom",
     tagline: "Mutants Unleashed",
 
@@ -3050,6 +3350,8 @@ rosterCount: 12,
   {
 
     id: 'zero-divide',
+
+    mameRomset: "",
 
     name: "Zero Divide",
     tagline: "Enter the Arena",
@@ -3072,6 +3374,8 @@ rosterCount: 8,
 
     id: 'zero-divide-2-the-secret-wish',
 
+    mameRomset: "",
+
     name: "Zero Divide 2: The Secret Wish",
     tagline: "Enter the Arena",
 
@@ -3091,6 +3395,8 @@ rosterCount: 8,
 
   {
     id: 'red-earth-warzard',
+
+    mameRomset: "",
     releaseYear: 1996,
     platform: "Arcade, PC",
     name: "Red Earth (Warzard)",
@@ -3102,6 +3408,8 @@ rosterCount: 8,
   },
   {
     id: 'dragon-ball-z-budokai-3',
+
+    mameRomset: "",
     releaseYear: 2004,
     platform: "PS2, PC",
     name: "Dragon Ball Z: Budokai 3",
@@ -3113,6 +3421,8 @@ rosterCount: 8,
   },
   {
     id: 'dragon-ball-z-budokai-tenkaichi-3',
+
+    mameRomset: "",
     releaseYear: 2007,
     platform: "PS2, Wii, PC",
     name: "Dragon Ball Z: Budokai Tenkaichi 3",
@@ -3124,6 +3434,8 @@ rosterCount: 8,
   },
   {
     id: 'guilty-gear-2-overture',
+
+    mameRomset: "",
     releaseYear: 2007,
     platform: "Xbox 360, PC",
     name: "Guilty Gear 2: Overture",
@@ -3135,6 +3447,8 @@ rosterCount: 8,
   },
   {
     id: 'guilty-gear-xrd--sign-',
+
+    mameRomset: "",
     name: "Guilty Gear Xrd -SIGN-",
     tagline: "Heaven or Hell",
     isDraft: true,
@@ -3143,6 +3457,8 @@ rosterCount: 8,
   },
   {
     id: 'injustice-gods-among-us',
+
+    mameRomset: "",
     releaseYear: 2013,
     platform: "PS3, Xbox 360, Wii U, PC",
     name: "Injustice: Gods Among Us",
@@ -3154,6 +3470,8 @@ rosterCount: 8,
   },
   {
     id: 'injustice-2',
+
+    mameRomset: "",
     releaseYear: 2017,
     platform: "PS4, Xbox One, PC",
     name: "Injustice 2",
@@ -3165,6 +3483,8 @@ rosterCount: 8,
   },
   {
     id: 'mortal-kombat-3',
+
+    mameRomset: "",
     releaseYear: 1995,
     platform: "Arcade, SNES, Genesis, PS1, PC",
     notationSystem: 'mk',
@@ -3177,6 +3497,8 @@ rosterCount: 8,
   },
   {
     id: 'mortal-kombat-4',
+
+    mameRomset: "",
     releaseYear: 1997,
     platform: "Arcade, PS1, N64, PC",
     notationSystem: 'mk',
@@ -3189,6 +3511,8 @@ rosterCount: 8,
   },
   {
     id: 'mortal-kombat-deadly-alliance',
+
+    mameRomset: "",
     releaseYear: 2002,
     platform: "PS2, Xbox, GC, PC",
     notationSystem: 'mk',
@@ -3201,6 +3525,8 @@ rosterCount: 8,
   },
   {
     id: 'mortal-kombat-armageddon',
+
+    mameRomset: "",
     releaseYear: 2006,
     platform: "PS2, Xbox, Wii, PC",
     notationSystem: 'mk',
@@ -3213,6 +3539,8 @@ rosterCount: 8,
   },
   {
     id: 'mortal-kombat-11',
+
+    mameRomset: "",
     releaseYear: 2019,
     platform: "PS4, Xbox One, Switch, PC",
     notationSystem: 'mk',
@@ -3227,6 +3555,8 @@ rosterCount: 8,
   },
   {
     id: 'samurai-shodown-iv-amakusas-revenge',
+
+    mameRomset: "",
     releaseYear: 1996,
     platform: "Arcade, NeoGeo, Saturn, PS1, PC",
     name: "Samurai Shodown IV: Amakusa's Revenge",
@@ -3237,6 +3567,8 @@ rosterCount: 8,
   },
   {
     id: 'soulcalibur',
+
+    mameRomset: "",
     releaseYear: 1998,
     platform: "Arcade, DC, PC",
     name: "SoulCalibur",
@@ -3248,6 +3580,8 @@ rosterCount: 8,
   },
   {
     id: 'soulcalibur-ii',
+
+    mameRomset: "",
     releaseYear: 2002,
     platform: "Arcade, PS2, Xbox, GC, PC",
     name: "SoulCalibur II",
@@ -3259,6 +3593,8 @@ rosterCount: 8,
   },
   {
     id: 'soulcalibur-iii',
+
+    mameRomset: "",
     releaseYear: 2005,
     platform: "PS2, PC",
     name: "SoulCalibur III",
@@ -3270,6 +3606,8 @@ rosterCount: 8,
   },
   {
     id: 'soulcalibur-iv',
+
+    mameRomset: "",
     releaseYear: 2008,
     platform: "PS3, Xbox 360, PC",
     name: "SoulCalibur IV",
@@ -3281,6 +3619,8 @@ rosterCount: 8,
   },
   {
     id: 'soulcalibur-v',
+
+    mameRomset: "",
     releaseYear: 2012,
     platform: "PS3, Xbox 360, PC",
     name: "SoulCalibur V",
@@ -3292,6 +3632,8 @@ rosterCount: 8,
   },
   {
     id: 'soulcalibur-vi',
+
+    mameRomset: "",
     releaseYear: 2018,
     platform: "PS4, Xbox One, PC",
     name: "SoulCalibur VI",
@@ -3303,6 +3645,8 @@ rosterCount: 8,
   },
   {
     id: 'street-fighter-ii-champion-edition',
+
+    mameRomset: "sf2ce",
     releaseYear: 1992,
     platform: "Arcade, SNES, Genesis, PC",
     name: "Street Fighter II: Champion Edition",
@@ -3314,6 +3658,8 @@ rosterCount: 8,
   },
   {
     id: 'street-fighter-ii-hyper-fighting',
+
+    mameRomset: "",
     releaseYear: 1992,
     platform: "Arcade, SNES, Genesis, PC",
     name: "Street Fighter II: Hyper Fighting",
@@ -3325,6 +3671,8 @@ rosterCount: 8,
   },
   {
     id: 'hyper-street-fighter-ii-the-anniversary-edition',
+
+    mameRomset: "",
     releaseYear: 2003,
     platform: "Arcade, PS2, PC",
     name: "Hyper Street Fighter II: The Anniversary Edition",
@@ -3336,6 +3684,8 @@ rosterCount: 8,
   },
   {
     id: 'street-fighter-alpha-warriors-dreams',
+
+    mameRomset: "",
     releaseYear: 1995,
     platform: "Arcade, PS1, Saturn, PC",
     name: "Street Fighter Alpha: Warriors' Dreams",
@@ -3346,6 +3696,8 @@ rosterCount: 8,
   },
   {
     id: 'street-fighter-iii-3rd-strike---fight-for-the-future',
+
+    mameRomset: "",
     releaseYear: 1999,
     platform: "Arcade, DC, PS2, Xbox, PC",
     name: "Street Fighter III: 3rd Strike - Fight for the Future",
@@ -3357,6 +3709,8 @@ rosterCount: 8,
   },
   {
     id: 'street-fighter-iv',
+
+    mameRomset: "",
     releaseYear: 2008,
     platform: "Arcade, PS3, Xbox 360, PC",
     name: "Street Fighter IV",
@@ -3368,6 +3722,8 @@ rosterCount: 8,
   },
   {
     id: 'super-street-fighter-iv',
+
+    mameRomset: "",
     releaseYear: 2010,
     platform: "PS3, Xbox 360, 3DS, PC",
     name: "Super Street Fighter IV",
@@ -3379,17 +3735,21 @@ rosterCount: 8,
   },
   {
     id: 'tekken-3',
+
+    mameRomset: "",
     releaseYear: 1997,
     platform: "Arcade, PS1, PC",
     name: "Tekken 3",
     tagline: "A New Era of Combat",
     isDraft: true,
-    rosterCount: 22,
+    rosterCount: 25,
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
     id: 'tekken-tag-tournament',
+
+    mameRomset: "",
     releaseYear: 1999,
     platform: "Arcade, PS2, PC",
     name: "Tekken Tag Tournament",
@@ -3401,17 +3761,21 @@ rosterCount: 8,
   },
   {
     id: 'tekken-4',
+
+    mameRomset: "",
     releaseYear: 2001,
     platform: "PS2, PC",
     name: "Tekken 4",
     tagline: "Return of the King",
     isDraft: true,
-    rosterCount: 22,
+    rosterCount: 25,
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
     id: 'tekken-5',
+
+    mameRomset: "",
     releaseYear: 2004,
     platform: "PS2, PC",
     name: "Tekken 5",
@@ -3423,6 +3787,8 @@ rosterCount: 8,
   },
   {
     id: 'tekken-6',
+
+    mameRomset: "",
     releaseYear: 2007,
     platform: "Arcade, PS3, Xbox 360, PC",
     name: "Tekken 6",
@@ -3434,6 +3800,8 @@ rosterCount: 8,
   },
   {
     id: 'tekken-tag-tournament-2',
+
+    mameRomset: "",
     releaseYear: 2011,
     platform: "Arcade, PS3, Xbox 360, Wii U, PC",
     name: "Tekken Tag Tournament 2",
@@ -3445,6 +3813,8 @@ rosterCount: 8,
   },
   {
     id: 'tekken-7',
+
+    mameRomset: "",
     releaseYear: 2015,
     platform: "Arcade, PS4, Xbox One, PC",
     name: "Tekken 7",
@@ -3456,6 +3826,8 @@ rosterCount: 8,
   },
   {
     id: 'the-king-of-fighters-95',
+
+    mameRomset: "",
     releaseYear: 1995,
     platform: "Arcade, NeoGeo, PS1, Saturn, PC",
     name: "The King of Fighters '95",
@@ -3466,6 +3838,8 @@ rosterCount: 8,
   },
   {
     id: 'the-king-of-fighters-96',
+
+    mameRomset: "",
     releaseYear: 1996,
     platform: "Arcade, NeoGeo, PS1, Saturn, PC",
     name: "The King of Fighters '96",
@@ -3476,6 +3850,8 @@ rosterCount: 8,
   },
   {
     id: 'the-king-of-fighters-97',
+
+    mameRomset: "",
     releaseYear: 1997,
     platform: "Arcade, NeoGeo, PS1, Saturn, PC",
     name: "The King of Fighters '97",
@@ -3486,6 +3862,8 @@ rosterCount: 8,
   },
   {
     id: 'the-king-of-fighters-98',
+
+    mameRomset: "kof98",
     releaseYear: 1998,
     platform: "Arcade, NeoGeo, PS1, Saturn, PC",
     name: "The King of Fighters '98",
@@ -3496,6 +3874,8 @@ rosterCount: 8,
   },
   {
     id: 'the-king-of-fighters-99',
+
+    mameRomset: "",
     releaseYear: 1999,
     platform: "Arcade, NeoGeo, PS1, DC, PC",
     name: "The King of Fighters '99",
@@ -3506,6 +3886,8 @@ rosterCount: 8,
   },
   {
     id: 'the-king-of-fighters-xi',
+
+    mameRomset: "",
     releaseYear: 2005,
     platform: "Arcade, PS2, PC",
     name: "The King of Fighters XI",
@@ -3517,17 +3899,21 @@ rosterCount: 8,
   },
   {
     id: 'the-king-of-fighters-xii',
+
+    mameRomset: "",
     releaseYear: 2009,
     platform: "Arcade, PS3, Xbox 360, PC",
     name: "The King of Fighters XII",
     tagline: "Rebirth of the King",
     isDraft: true,
-    rosterCount: 22,
+    rosterCount: 25,
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
   {
     id: 'the-king-of-fighters-maximum-impact-regulation-a',
+
+    mameRomset: "",
     releaseYear: 2007,
     platform: "Arcade, PS2, PC",
     name: "The King of Fighters: Maximum Impact Regulation 'A'",
@@ -3538,6 +3924,8 @@ rosterCount: 8,
   },
   {
     id: 'clayfighter',
+
+    mameRomset: "",
     releaseYear: 1993,
     platform: "SNES, Genesis, PC",
     name: "ClayFighter",
@@ -3549,6 +3937,8 @@ rosterCount: 8,
   },
   {
     id: 'eternal-champions',
+
+    mameRomset: "",
     releaseYear: 1993,
     platform: "Genesis, PC",
     name: "Eternal Champions",
@@ -3560,6 +3950,8 @@ rosterCount: 8,
   },
   {
     id: 'melty-blood-actress-again-current-code',
+
+    mameRomset: "",
     releaseYear: 2008,
     platform: "Arcade, PS2, PC",
     name: "Melty Blood: Actress Again Current Code",
@@ -3571,6 +3963,8 @@ rosterCount: 8,
   },
   {
     id: 'melty-blood-type-lumina',
+
+    mameRomset: "",
     releaseYear: 2021,
     platform: "PS4, Xbox One, Switch, PC",
     name: "Melty Blood: Type Lumina",
@@ -3582,6 +3976,8 @@ rosterCount: 8,
   },
   {
     id: 'pocket-bravery',
+
+    mameRomset: "",
     releaseYear: 2023,
     platform: "PC, Switch, PS4, Xbox One",
     name: "Pocket Bravery",
@@ -3593,6 +3989,8 @@ rosterCount: 8,
   },
   {
     id: 'skullgirls-2nd-encore',
+
+    mameRomset: "",
     releaseYear: 2011,
     platform: "PS3, Xbox 360, Vita, PS4, Switch, PC",
     name: "Skullgirls: 2nd Encore",
@@ -3604,6 +4002,8 @@ rosterCount: 8,
   },
   {
     id: 'super-smash-bros',
+
+    mameRomset: "",
     releaseYear: 1999,
     platform: "N64, PC",
     name: "Super Smash Bros.",
@@ -3615,6 +4015,8 @@ rosterCount: 8,
   },
   {
     id: 'super-smash-bros-melee',
+
+    mameRomset: "",
     releaseYear: 2001,
     platform: "GC, PC",
     name: "Super Smash Bros. Melee",
@@ -3626,6 +4028,8 @@ rosterCount: 8,
   },
   {
     id: 'super-smash-bros-brawl',
+
+    mameRomset: "",
     releaseYear: 2008,
     platform: "Wii, PC",
     name: "Super Smash Bros. Brawl",
@@ -3638,6 +4042,8 @@ rosterCount: 8,
 
   {
     id: 'thems-fightin-herds',
+
+    mameRomset: "",
     releaseYear: 2020,
     platform: "PC, Switch, PS4, Xbox One",
     name: "Them's Fightin' Herds",
@@ -3648,6 +4054,8 @@ rosterCount: 8,
   },
   {
     id: 'melty-blood-type-lumina---wikipedia',
+
+    mameRomset: "",
     name: "Melty Blood: Type Lumina - Wikipedia",
     tagline: "Type Lumina (Wiki)",
     isDraft: true,
@@ -3657,6 +4065,8 @@ rosterCount: 8,
 
   {
     id: 'weaponlord',
+
+    mameRomset: "",
     name: "WeaponLord",
     tagline: "Enter the Arena",
     isDraft: true,
@@ -3669,6 +4079,8 @@ rosterCount: 8,
 
   {
     id: 'bio-freaks',
+
+    mameRomset: "",
     name: "Bio F.R.E.A.K.S.",
     tagline: "Enter the Arena",
     isDraft: true,
@@ -3678,6 +4090,8 @@ rosterCount: 8,
 
   {
     id: 'fatal-fury-wild-ambition',
+
+    mameRomset: "",
     name: "Fatal Fury: Wild Ambition",
     tagline: "Wild Ambition",
     isDraft: true,
@@ -3687,6 +4101,8 @@ rosterCount: 8,
 
   {
     id: 'fighters-impact',
+
+    mameRomset: "",
     name: "Fighters' Impact",
     isDraft: true,
     characters: [],
@@ -3695,6 +4111,8 @@ rosterCount: 8,
 
   {
     id: 'heavens-gate',
+
+    mameRomset: "",
     name: "Heaven's Gate",
     isDraft: true,
     characters: [],
@@ -3703,6 +4121,8 @@ rosterCount: 8,
 
   {
     id: 'tobal-2',
+
+    mameRomset: "",
     name: "Tobal 2",
     tagline: "Enter the Arena",
     isDraft: true,
@@ -3712,6 +4132,8 @@ rosterCount: 8,
 
   {
     id: 'ultraman-fighting-evolution',
+
+    mameRomset: "",
     name: "Ultraman Fighting Evolution",
     tagline: "Enter the Arena",
     isDraft: true,
@@ -3721,6 +4143,8 @@ rosterCount: 8,
 
   {
     id: 'war-gods',
+
+    mameRomset: "",
     name: "War Gods",
     tagline: "Enter the Arena",
     isDraft: true,
@@ -3729,6 +4153,8 @@ rosterCount: 8,
   },
   {
     id: 'aggressors-of-dark-kombat',
+
+    mameRomset: "",
     name: "Aggressors of Dark Kombat",
     tagline: "Enter the Arena",
     isDraft: true,
@@ -3737,6 +4163,8 @@ rosterCount: 8,
   },
   {
     id: 'chaos-code-new-sign-of-catastrophe',
+
+    mameRomset: "",
     name: "Chaos Code: New Sign of Catastrophe",
     tagline: "Enter the Arena",
     isDraft: true,
@@ -3745,6 +4173,8 @@ rosterCount: 8,
   },
   {
     id: 'rival-schools-united-by-fate',
+
+    mameRomset: "",
     name: 'Rival Schools: United by Fate',
     tagline: "United by Fate",
     developer: 'Capcom',
@@ -3756,6 +4186,8 @@ rosterCount: 8,
   },
   {
     id: 'star-gladiator-episode-i-final-crusade',
+
+    mameRomset: "",
     name: "Star Gladiator Episode I Final Crusade",
     tagline: "Enter the Arena",
     isDraft: true,
@@ -3764,6 +4196,8 @@ rosterCount: 8,
   },
   {
     id: 'tmnt-tournament-fighters-genesis',
+
+    mameRomset: "",
     name: "TMNT Tournament Fighters (Genesis)",
     tagline: "Enter the Arena",
     isDraft: true,
@@ -3772,6 +4206,8 @@ rosterCount: 8,
   },
   {
     id: 'tmnt-tournament-fighters-nes',
+
+    mameRomset: "",
     name: "TMNT Tournament Fighters (NES)",
     tagline: "Enter the Arena",
     isDraft: true,
@@ -3780,6 +4216,8 @@ rosterCount: 8,
   },
   {
     id: 'tmnt-tournament-fighters-snes',
+
+    mameRomset: "",
     name: "TMNT Tournament Fighters (SNES)",
     tagline: "Enter the Arena",
     isDraft: true,
@@ -3789,6 +4227,8 @@ rosterCount: 8,
   ,
   {
     id: 'neo-geo-battle-coliseum',
+
+    mameRomset: "",
     name: 'Neo Geo Battle Coliseum',
     tagline: "Enter the Arena",
     developer: 'SNK',
@@ -3800,6 +4240,8 @@ rosterCount: 8,
   },
   {
     id: 'rival-schools-united-by-fate',
+
+    mameRomset: "",
     name: 'Rival Schools: United by Fate',
     tagline: "United by Fate",
     developer: 'Capcom',
@@ -3812,6 +4254,8 @@ rosterCount: 8,
   ,
   {
     id: 'idol-showdown',
+
+    mameRomset: "",
     name: 'Idol Showdown',
     tagline: "VTuber Battle",
     developer: 'Besto Game Team',
@@ -3824,6 +4268,8 @@ rosterCount: 8,
   ,
   {
     id: 'chaos-code-new-sign-of-catastrophe',
+
+    mameRomset: "",
     name: 'Chaos Code: New Sign of Catastrophe',
     tagline: "Enter the Arena",
     developer: 'FK Digital',
@@ -3836,19 +4282,23 @@ rosterCount: 8,
   ,
   {
     id: 'mortal-kombat-vs-dc-universe',
+
+    mameRomset: "",
     notationSystem: 'mk',
     name: 'Mortal Kombat vs. DC Universe',
     tagline: "Worlds Collide",
     developer: 'Midway',
     releaseYear: 2008,
     platform: 'PlayStation 3, Xbox 360, PC',
-    rosterCount: 22,
+    rosterCount: 25,
     characters: [],
     tabs: ['Special Moves', 'Heroic Brutality', 'Fatality', 'Super Combos', 'Normal Moves', 'Throws', 'Unique Attacks']
   }
   ,
   {
     id: 'arcana-heart-3-lovemax-sixstars-xtend',
+
+    mameRomset: "",
     notationSystem: 'numpad',
     name: 'Arcana Heart 3: LOVEMAX SIXSTARS!!!!!! XTEND',
     tagline: "Enter the Arena",
@@ -3862,6 +4312,8 @@ rosterCount: 8,
   ,
   {
     id: 'the-rumble-fish',
+
+    mameRomset: "",
     notationSystem: 'numpad',
     name: 'The Rumble Fish',
     tagline: "Enter the Arena",

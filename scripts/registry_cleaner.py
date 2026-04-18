@@ -63,6 +63,8 @@ def clean_input_string(inp):
     return inp
 
 def process_file(filepath, dry_run=True):
+    if filepath.endswith('_roster.json'):
+        return False, 0
     with open(filepath, 'r', encoding='utf-8') as f:
         try:
             data = json.load(f)

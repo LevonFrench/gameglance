@@ -7,15 +7,17 @@ import { CharacterSelectView } from './CharacterSelectView';
 import { MoveListView } from './MoveListView';
 import { GameGlanceMainView } from './GameGlanceView';
 import type { ControllerType } from './glyphMap';
+import { FightcadeSyncView } from './FightcadeSyncView';
+import { useFightcadeSync } from './useFightcadeSync';
 import { BottomHeader } from './BottomHeader';
 import type { CardTheme } from './types';
 import { CARD_THEMES } from './types';
 
 import { SUPPORTED_GAMES } from './games';
 
-function App() {
+export const App: React.FC = () => {
 
-  const [currentView, setCurrentView] = useState<AppView>('game_select');
+  const [currentView, setCurrentView] = useState<'game_select' | 'char_select' | 'move_list' | 'fightcade_sync' | 'main_screen'>('game_select');
   const [selectedGame, setSelectedGame] = useState<GameDefinition | null>(null);
   const [selectedCharacter, setSelectedCharacter] = useState<string | null>(null);
   const [selectedPlaylist, setSelectedPlaylist] = useState<Move[]>(() => {
@@ -37,7 +39,39 @@ function App() {
   const [returningFromMoveList, setReturningFromMoveList] = useState(false);
   const [disableGameSelectAnimation, setDisableGameSelectAnimation] = useState(false);
 
-  const navigate = (view: AppView, game: GameDefinition | null = selectedGame, char: string | null = selectedCharacter) => {
+  // Fightcade Auto-Sync
+  const { syncState, connect, disconnect } = useFightcadeSync();
+
+  useEffect(() => {
+    if (syncState.connected && syncState.gameId && syncState.p1CharId) {
+      const game = SUPPORTED_GAMES.find(g => g.mameRomset === syncState.gameId);
+      if (game && game.id !== selectedGame?.id) {
+        setSelectedGame(game);
+      }
+      if (game) {
+        // Fetch roster to find character ID
+        fetch(`/data/${game.id}/_roster.json`)
+          .then(res => res.json())
+          .then(roster => {
+            // Find character by ramId. Note that ramId might be string or number.
+            const char = roster.find((c: any) => c.ramId?.toString() === syncState.p1CharId?.toString());
+            if (char) {
+              if (selectedCharacter !== char.id) {
+                setSelectedCharacter(char.id);
+                // Wait for state to settle then navigate
+                setTimeout(() => {
+                  setCurrentView('move_list');
+                  window.scrollTo({ top: 0, behavior: 'smooth' });
+                }, 50);
+              }
+            }
+          })
+          .catch(err => console.error("Failed to load roster for sync", err));
+      }
+    }
+  }, [syncState, selectedGame, selectedCharacter]);
+
+  const navigate = (view: 'game_select' | 'char_select' | 'move_list' | 'fightcade_sync' | 'main_screen', game: GameDefinition | null = selectedGame, char: string | null = selectedCharacter) => {
     window.history.pushState({ view, gameId: game?.id, charId: char }, '', '');
     setSelectedGame(game);
     setSelectedCharacter(char);
@@ -79,12 +113,10 @@ function App() {
   // Guard against invalid routes
   useEffect(() => {
     if (currentView === 'char_select' && !selectedGame) {
-      /* eslint-disable react-hooks/set-state-in-effect */
       setCurrentView('game_select');
     }
     if (currentView === 'move_list' && (!selectedGame || !selectedCharacter)) {
       setCurrentView('game_select');
-      /* eslint-enable react-hooks/set-state-in-effect */
     }
   }, [currentView, selectedGame, selectedCharacter]);
 
@@ -134,6 +166,17 @@ function App() {
     });
   };
 
+  const handleToggleCategory = (moves: Move[], select: boolean) => {
+    setSelectedPlaylist(prev => {
+      if (select) {
+        const newMoves = moves.filter(m => !prev.find(pm => pm.id === m.id));
+        return [...prev, ...newMoves];
+      } else {
+        return prev.filter(pm => !moves.find(m => m.id === pm.id));
+      }
+    });
+  };
+
   const handleLaunchMainScreen = () => {
     navigate('main_screen');
   };
@@ -175,17 +218,21 @@ function App() {
          characterId={selectedCharacter}
          selectedPlaylist={selectedPlaylist}
          controller={controller}
+         notationSystem={(notationOverride === 'auto' ? selectedGame.notationSystem : notationOverride) as 'numpad' | 'traditional' | 'mk' | undefined}
          onSetController={setController}
          onToggleMove={handleToggleMove}
+         onToggleCategory={handleToggleCategory}
          onLaunchMainScreen={handleLaunchMainScreen}
-         onBack={() => {
-           setReturningFromMoveList(true);
-           window.history.back();
-         }}
-         onHome={() => {
-           setDisableGameSelectAnimation(true);
-           navigate('game_select', null, null);
-         }}
+         onBack={() => navigate('char_select', selectedGame)}
+         onHome={() => navigate('game_select')}
+      />;
+      break;
+    case 'fightcade_sync':
+      viewComponent = <FightcadeSyncView 
+        syncState={syncState}
+        onConnect={connect}
+        onDisconnect={disconnect}
+        onBack={() => navigate('game_select')}
       />;
       break;
     case 'main_screen': {
@@ -207,6 +254,42 @@ function App() {
 
   return (
     <div className="app-container" data-card-theme={cardTheme} style={{ paddingBottom: '70px' }}>
+      
+      {/* Fightcade Sync Button */}
+      {currentView !== 'fightcade_sync' && (
+        <button
+          onClick={() => navigate('fightcade_sync')}
+          style={{
+            position: 'fixed',
+            top: '1rem',
+            right: '1rem',
+            zIndex: 1000,
+            background: syncState.connected ? '#10b981' : 'var(--bg-elevated)',
+            color: syncState.connected ? '#fff' : 'var(--text-primary)',
+            border: '1px solid var(--border-medium)',
+            padding: '0.5rem 1rem',
+            borderRadius: 'var(--radius-full)',
+            fontSize: '0.85rem',
+            fontWeight: 600,
+            cursor: 'pointer',
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.5rem',
+            boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+            transition: 'all 0.2s'
+          }}
+          onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
+          onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
+        >
+          <div style={{
+            width: '8px', height: '8px', borderRadius: '50%',
+            background: syncState.connected ? '#fff' : '#ef4444',
+            boxShadow: syncState.connected ? '0 0 8px #fff' : 'none'
+          }} />
+          Fightcade Sync
+        </button>
+      )}
+
       {viewComponent}
       <BottomHeader 
         controller={controller}

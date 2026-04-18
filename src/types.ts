@@ -19,6 +19,7 @@ export interface Move {
 export interface CharacterExport {
   game: string;
   character: string;
+  ramId?: string | number;
   theme_colors: { special: string, super_fatality: string, normal: string };
   movesList: Move[];
   combosList: { id: string, name: string, input: string }[];
@@ -44,10 +45,15 @@ export const THEME_DISPLAY_NAMES: Record<CardTheme, string> = {
 
 export interface GameDefinition {
   id: string;
+  mameRomset?: string;
   name: string;
   developer?: string;
   releaseYear?: number;
   platform?: string;
+  ramAddresses?: {
+    p1CharacterId: string;
+    p2CharacterId: string;
+  };
   tagline?: string;
   rosterCount?: number;
   tabs?: string[];

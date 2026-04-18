@@ -11,8 +11,10 @@ interface Props {
   characterId: string;
   selectedPlaylist: Move[];
   controller: ControllerType;
+  notationSystem?: 'numpad' | 'traditional' | 'mk';
   onSetController: (c: ControllerType) => void;
   onToggleMove: (move: Move) => void;
+  onToggleCategory?: (moves: Move[], select: boolean) => void;
   onLaunchMainScreen: () => void;
   onBack: () => void;
   onHome: () => void;
@@ -27,7 +29,7 @@ const TYPE_COLORS: Record<string, string> = {
   common: '#10b981',
 };
 
-export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, onToggleMove, onLaunchMainScreen, onBack, onHome }) => {
+export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, notationSystem, onToggleMove, onToggleCategory, onLaunchMainScreen, onBack, onHome }) => {
   useArrowNavigation('[id^="move-"]');
 
   const [characterData, setCharacterData] = useState<CharacterExport | null>(null);
@@ -591,14 +593,30 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
 
               return (
                 <section key={tab} id={`section-${tab.replace(/\s+/g, '-').toLowerCase()}`}>
-                  <h2 style={{
-                    fontSize: '1.5rem',
-                    fontWeight: 800,
-                    marginBottom: '1rem',
-                    color: 'var(--text-primary)',
-                    borderBottom: '2px solid var(--border-subtle)',
-                    paddingBottom: '0.5rem',
-                  }}>{tab}</h2>
+                  <h2 
+                    onDoubleClick={() => {
+                      if (onToggleCategory) {
+                        const allSelected = displayList.every(m => selectedPlaylist.some(sm => sm.id === m.id));
+                        onToggleCategory(displayList, !allSelected);
+                      }
+                    }}
+                    style={{ 
+                      fontSize: '1.75rem', 
+                      letterSpacing: '-0.02em', 
+                      marginBottom: '1.5rem', 
+                      color: 'var(--text-primary)',
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.75rem',
+                      borderBottom: '2px solid var(--border-subtle)',
+                      paddingBottom: '0.5rem',
+                      cursor: onToggleCategory ? 'pointer' : 'default',
+                      userSelect: 'none',
+                    }}
+                    title={onToggleCategory ? "Double-click to select/deselect all" : undefined}
+                  >
+                    {tab}
+                  </h2>
                   <div style={{ 
                     display: 'grid', 
                     gridTemplateColumns: 'repeat(auto-fill, minmax(380px, 1fr))', 
@@ -692,7 +710,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
 
                   {/* Middle: Inputs */}
                   <div style={{ flex: 1, marginBottom: '1.25rem' }}>
-                    <GlyphSequence inputs={[move.input]} controller={effectiveController} notationSystem={game.notationSystem} />
+                    <GlyphSequence inputs={[move.input]} controller={effectiveController} notationSystem={notationSystem || game.notationSystem} />
                   </div>
 
                   {/* Bottom: Frame data */}

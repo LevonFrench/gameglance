@@ -38,8 +38,8 @@ for m in soup.select('.movedata-container'):
     move_input = ""
     
     if len(name_items) >= 2:
-        name = name_items[0].text.strip().replace('\n', ' ')
-        for child in name_items[1].descendants:
+        name = name_items[1].text.strip().replace('\n', ' ')
+        for child in name_items[0].descendants:
             if child.name == 'img' and child.get('alt'):
                 move_input += child['alt'] + ' '
             elif isinstance(child, str) and child.strip():
