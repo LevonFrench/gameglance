@@ -1184,7 +1184,7 @@ rosterCount: 9,
 
     id: 'killer-instinct-2--gold',
 
-    name: "Killer Instinct 2 / Gold",
+    name: "Killer Instinct 2",
     tagline: "The Instinct Returns",
 
     developer: "Rare",
@@ -1928,7 +1928,7 @@ rosterCount: 1,
 
     id: 'savage-reign-fu-un-mokushiroku-kakutou-sousei',
 
-    name: "Savage Reign (Fu'un Mokushiroku: Kakutou Sousei)",
+    name: "Savage Reign",
 
     developer: "Unknown",
 
