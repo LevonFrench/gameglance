@@ -24,7 +24,7 @@ export interface CharacterExport {
   combosList: { id: string, name: string, input: string }[];
 }
 
-export const CARD_THEMES = ['default-dark', 'default-light', 'genesis', 'sf2gen', 'snes', 'cps2', 'mvs', 'aes', 'mvscab', 'cps2cab', 'sfami'] as const;
+export const CARD_THEMES = ['default-dark', 'default-light', 'genesis', 'sf2gen', 'snes', 'cps2', 'mvs', 'aes', 'mvscab', 'cps2cab', 'sfami', 'tekken'] as const;
 export type CardTheme = typeof CARD_THEMES[number];
 
 export const THEME_DISPLAY_NAMES: Record<CardTheme, string> = {
@@ -38,7 +38,8 @@ export const THEME_DISPLAY_NAMES: Record<CardTheme, string> = {
   'mvs': 'MVS',
   'mvscab': 'MVS CAB',
   'aes': 'AES',
-  'sfami': 'Super Famicom'
+  'sfami': 'Super Famicom',
+  'tekken': 'Tekken Cabinet'
 };
 
 export interface GameDefinition {

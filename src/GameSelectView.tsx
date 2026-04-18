@@ -425,13 +425,16 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
         }}>
           GameGlance
         </div>
-        <h1 style={{
+        <h1 
+          onClick={() => setShowCards(true)}
+          style={{
           fontSize: 'clamp(2.5rem, 6vw, 4rem)',
           fontWeight: 900,
           margin: 0,
           color: isDark ? '#f0f0f8' : '#1a1a2e',
           lineHeight: 1.1,
           marginBottom: '1.5rem',
+          cursor: 'pointer',
         }}>
           SELECT GAME
         </h1>

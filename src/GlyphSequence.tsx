@@ -102,11 +102,15 @@ const renderDirectionalSVG = (label: string, large: boolean, isDark: boolean) =>
   );
 };
 
-export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller, large = false }) => {
+export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller, large = false, notationSystem = 'numpad' }) => {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
 
-  const expandedInputs = React.useMemo(() => tokenizeInputs(inputs), [inputs]);
+  const expandedInputs = React.useMemo(() => {
+    // Tekken uses 1234 for buttons, so we bypass numpad parsing for it.
+    const effectiveSystem = controller === 'tekken' ? 'traditional' : notationSystem;
+    return tokenizeInputs(inputs, effectiveSystem);
+  }, [inputs, notationSystem, controller]);
 
   return (
     <div style={{

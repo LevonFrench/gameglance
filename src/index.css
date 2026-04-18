@@ -598,3 +598,28 @@ h1, h2, h3, h4, h5, h6 {
 [data-card-theme="cps2"] .tagline, [data-card-theme="cps2cab"] .tagline {
   color: #38bdf8 !important;
 }
+
+/* ── Tekken Theme ──────────────────────────── */
+.app-container[data-card-theme="tekken"] {
+  background: radial-gradient(circle at center, #2e1505 0%, #0a0502 100%);
+}
+[data-card-theme="tekken"] button[id^="game-card-"]:hover,
+[data-card-theme="tekken"] button[id^="char-card-"]:hover,
+[data-card-theme="tekken"] div[id^="move-"]:hover {
+  border-color: #f59e0b !important;
+  box-shadow: 0 12px 30px rgba(245, 158, 11, 0.15) !important;
+  transform: translateY(-4px) scale(1.02);
+}
+[data-card-theme="tekken"] div[id^="move-"][data-selected="true"] {
+  border-color: #f59e0b !important;
+  background: rgba(245, 158, 11, 0.1) !important;
+  box-shadow: 0 8px 25px rgba(245, 158, 11, 0.2) !important;
+}
+[data-card-theme="tekken"] h2 {
+  color: #f59e0b !important;
+  text-transform: uppercase;
+  font-style: italic;
+}
+[data-card-theme="tekken"] .tagline {
+  color: #ef4444 !important;
+}
