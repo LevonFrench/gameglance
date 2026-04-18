@@ -74,3 +74,13 @@ Parse with: `grep "^## \[" wiki/pages/log.md | tail -10`
 - Redesigned Home UI Header (Pill Menus, TikTok logo).
 - Restored History API App Routing.
 - Cleaned up unused Py scratch files and updated gitignore.
+
+## [2026-04-17] feature | Isolated Combo Approval System & Root Cleanup
+
+**Operation**: Engineered a standalone data curation pipeline and cleaned up the root directory.
+
+**What happened**:
+- Built the **Combo Approval System** as a completely isolated Vite sub-application (`approval.html`) so it does not pollute the public `App.tsx`.
+- Refactored project directory by moving python scripts to `scripts/`, report markdowns to `wiki/pages/`, and test artifacts to `scratch/`.
+- Updated `wiki/pages/index.md` with new tracker pages.
+- Created `wiki/pages/combo-approval-system.md` to document the curation architecture.

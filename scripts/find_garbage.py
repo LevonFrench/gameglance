@@ -1,89 +1,50 @@
-import os
 import json
+import glob
 import re
+import os
 
-def analyze_garbage():
-    garbage_files = []
-    
-    suspicious_patterns = [
-        re.compile(r'^unknown$', re.IGNORECASE),
-        re.compile(r'^move\s*\d+$', re.IGNORECASE),
-        re.compile(r'^special\s*\d+$', re.IGNORECASE),
-        re.compile(r'^super\s*\d+$', re.IGNORECASE),
-        re.compile(r'\{.*\}') # raw json
-    ]
+garbage_files = []
+total_moves = 0
+anomalies = []
 
-    total_files = 0
-    empty_inputs = 0
-    empty_names = 0
-    suspicious_names = 0
-    long_names = 0
-    
-    for root, dirs, files in os.walk('public/data'):
-        for file in files:
-            if file.endswith('.json'):
-                total_files += 1
-                path = os.path.join(root, file)
-                try:
-                    with open(path, 'r', encoding='utf-8') as f:
-                        data = json.load(f)
-                except Exception as e:
-                    print(f"Error parsing {path}: {e}")
-                    continue
-                
-                moves = data.get('movesList', [])
-                file_flags = []
-                
-                for m in moves:
-                    name = str(m.get('name', ''))
-                    input_cmd = str(m.get('input', ''))
-                    
-                    if not name.strip():
-                        empty_names += 1
-                        file_flags.append(f"Empty move name (Input: {input_cmd})")
-                        
-                    if not input_cmd.strip() and name.lower() != "mimic":
-                        empty_inputs += 1
-                        file_flags.append(f"Empty input for '{name}'")
-                        
-                    if len(name) > 80:
-                        long_names += 1
-                        file_flags.append(f"Extremely long name ({len(name)} chars): {name[:50]}...")
-                        
-                    for pat in suspicious_patterns:
-                        if pat.match(name):
-                            suspicious_names += 1
-                            file_flags.append(f"Suspicious generated name: '{name}'")
-                            break
-                            
-                if file_flags:
-                    garbage_files.append({
-                        'path': path,
-                        'char': data.get('character', file),
-                        'flags': file_flags
-                    })
-
-    # Generate Markdown Report
-    with open('garbage_report.md', 'w', encoding='utf-8') as f:
-        f.write("# Garbage & Auto-Generated Moves Report\n\n")
-        f.write(f"**Total Files Scanned:** {total_files}\n")
-        f.write(f"**Files with issues:** {len(garbage_files)}\n\n")
-        f.write("### Issue Breakdown\n")
-        f.write(f"- Empty Inputs: {empty_inputs}\n")
-        f.write(f"- Empty Names: {empty_names}\n")
-        f.write(f"- Suspicious Names (e.g. 'Unknown', 'Move 1'): {suspicious_names}\n")
-        f.write(f"- Abnormally Long Names: {long_names}\n\n")
+for file in glob.glob('public/data/*/*.json'):
+    with open(file, 'r', encoding='utf-8') as f:
+        try:
+            data = json.load(f)
+        except json.JSONDecodeError:
+            anomalies.append(f"{file} is not valid JSON.")
+            continue
+            
+    moves = data.get('movesList', [])
+    for move in moves:
+        total_moves += 1
+        name = move.get('name', 'UNKNOWN')
         
-        f.write("### Affected Characters\n")
-        for gf in garbage_files[:100]: # Limit to first 100 for brevity if large
-            f.write(f"#### {gf['char']} (`{gf['path']}`)\n")
-            # Only list unique flags to prevent huge files
-            unique_flags = list(set(gf['flags']))
-            for flag in unique_flags[:5]:
-                f.write(f"- {flag}\n")
-            if len(unique_flags) > 5:
-                f.write(f"- ... and {len(unique_flags) - 5} more issues.\n")
-            f.write("\n")
+        # Check for array format
+        if 'inputs' in move:
+            anomalies.append(f"[{file}] '{name}' uses 'inputs' array instead of 'input' string: {move['inputs']}")
+            continue
+            
+        input_val = move.get('input', '')
+        
+        # Check for non-string
+        if not isinstance(input_val, str):
+            anomalies.append(f"[{file}] '{name}' has non-string input: {input_val}")
+            continue
+            
+        # Check for commas
+        # if ',' in input_val:
+        #     anomalies.append(f"[{file}] '{name}' contains comma in input: {input_val}")
+            
+        # Check for english directional words
+        lower_input = input_val.lower()
+        if re.search(r'\b(down|up|forward|back|quarter circle|half circle)\b', lower_input):
+            anomalies.append(f"[{file}] '{name}' contains English directional word in input: {input_val}")
+            
+with open('garbage_report.txt', 'w', encoding='utf-8') as f:
+    f.write(f"Total moves scanned: {total_moves}\n")
+    f.write(f"Anomalies found: {len(anomalies)}\n\n")
+    for a in anomalies:
+        f.write(f"{a}\n")
 
-if __name__ == '__main__':
-    analyze_garbage()
+print(f"Scanned {total_moves} moves. Found {len(anomalies)} anomalies. Saved to garbage_report.txt")
