@@ -769,18 +769,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                 ))}
               </h2>
 
-              {/* Tagline */}
-              <div style={{
-                marginTop: '0.5rem',
-                color: 'var(--text-tertiary)',
-                fontSize: '0.85rem',
-                fontWeight: 400,
-                fontStyle: 'italic',
-                position: 'relative',
-                zIndex: 1,
-              }}>
-                {theme.tagline}
-              </div>
+
 
               {/* Fighter count badge */}
               <div style={{
