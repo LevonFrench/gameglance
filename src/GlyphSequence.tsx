@@ -21,13 +21,32 @@ const NUMPAD_MAP: Record<string, string> = {
   '8': 'up', '9': 'up-forward'
 };
 
-const tokenizeInputs = (inputs: string[], notationSystem: string = 'numpad'): string[] => {
+const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'): string[] => {
   const result: string[] = [];
+
+  const REVERSE_NUMPAD_MAP: Record<string, string> = {
+    'down-back': '1', 'down': '2', 'down-forward': '3',
+    'back': '4', 'neutral': '5', 'forward': '6',
+    'up-back': '7', 'up': '8', 'up-forward': '9'
+  };
+
+  const isDirectionWord = (w: string) => ['neutral', 'down', 'forward', 'back', 'up', 'down-forward', 'down-back', 'up-forward', 'up-back'].includes(w);
+
   for (const raw of inputs) {
-    if (['neutral', 'down', 'forward', 'back', 'up', 'down-forward', 'down-back', 'up-forward', 'up-back', '360', '720', '[Cancel]'].includes(raw)) {
+    if (['360', '720', '[Cancel]'].includes(raw)) {
       result.push(raw);
       continue;
     }
+    
+    if (isDirectionWord(raw)) {
+      if (notationSystem === 'numpad') {
+        result.push(REVERSE_NUMPAD_MAP[raw] || raw);
+      } else {
+        result.push(raw);
+      }
+      continue;
+    }
+
     const tokens = raw.split(/(\+| |,|~|\[Cancel\]|-|\/)/g).filter(Boolean);
     for (const t of tokens) {
       if (t === ' ') { result.push('[Cancel]'); continue; }
@@ -38,6 +57,12 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'numpad'): st
       if (t === '+') { result.push('+'); continue; }
       if (t === '[Cancel]') { result.push(t); continue; }
 
+      if (isDirectionWord(t)) {
+        if (notationSystem === 'numpad') result.push(REVERSE_NUMPAD_MAP[t] || t);
+        else result.push(t);
+        continue;
+      }
+
       const specMatch = t.match(/^(.*?)(360|720)([a-zA-Z]*)$/);
       if (specMatch) {
         if (specMatch[1]) result.push(specMatch[1]);
@@ -46,17 +71,20 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'numpad'): st
         continue;
       }
 
-      if (notationSystem === 'numpad') {
-        const match = t.match(/^([a-zA-Z.+]*?)([1-9]+)([a-zA-Z]*)$/);
-        if (match) {
-          if (match[1]) result.push(match[1]);
-          for (const digit of match[2]) {
+      const match = t.match(/^([a-zA-Z.+]*?)([1-9]+)([a-zA-Z]*)$/);
+      if (match) {
+        if (match[1]) result.push(match[1]);
+        
+        for (const digit of match[2]) {
+          if (notationSystem === 'numpad') {
+            result.push(digit);
+          } else {
             if (NUMPAD_MAP[digit]) result.push(NUMPAD_MAP[digit]);
+            else result.push(digit);
           }
-          if (match[3]) result.push(match[3]);
-        } else {
-          result.push(t);
         }
+        
+        if (match[3]) result.push(match[3]);
       } else {
         result.push(t);
       }
