@@ -473,14 +473,15 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
               >
                 {!isEmpty && (
                   <span style={{
-                    opacity: 0.3,
+                    opacity: 0.65,
+                    color: 'var(--text-tertiary)',
                     fontSize: '1rem',
-                    marginRight: '2px',
+                    marginRight: '4px',
                     display: 'flex',
                     alignItems: 'center',
                     cursor: 'inherit',
                   }}>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
                       <line x1="8" y1="6" x2="8" y2="6"></line>
                       <line x1="8" y1="12" x2="8" y2="12"></line>
                       <line x1="8" y1="18" x2="8" y2="18"></line>
@@ -560,6 +561,51 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
               }}
             />
           </div>
+
+          {selectedCount > 0 && (
+            <button
+              id="launch-main-screen"
+              onClick={onLaunchMainScreen}
+              style={{
+                background: 'linear-gradient(135deg, var(--accent-indigo), var(--accent-purple))',
+                color: '#fff',
+                border: '1px solid rgba(255,255,255,0.1)',
+                padding: '0.45rem 1rem 0.45rem 0.5rem',
+                borderRadius: 'var(--radius-full)',
+                fontWeight: 600,
+                cursor: 'pointer',
+                fontSize: '0.85rem',
+                fontFamily: 'inherit',
+                transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                boxShadow: '0 2px 10px rgba(99, 102, 241, 0.25)',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+              }}
+              onMouseOver={e => {
+                e.currentTarget.style.transform = 'translateY(-1px)';
+                e.currentTarget.style.boxShadow = '0 4px 14px rgba(99, 102, 241, 0.35)';
+              }}
+              onMouseOut={e => {
+                e.currentTarget.style.transform = 'translateY(0)';
+                e.currentTarget.style.boxShadow = '0 2px 10px rgba(99, 102, 241, 0.25)';
+              }}
+            >
+              <span style={{
+                background: 'rgba(255,255,255,0.2)',
+                color: '#fff',
+                padding: '0.1rem 0.5rem',
+                borderRadius: 'var(--radius-full)',
+                fontSize: '0.75rem',
+                fontWeight: 700,
+                boxShadow: 'inset 0 1px 2px rgba(0,0,0,0.1)',
+              }}>
+                {selectedCount}
+              </span>
+              <span>Launch</span>
+              <span style={{ fontSize: '1rem', marginLeft: '-2px' }}>→</span>
+            </button>
+          )}
         </div>
       </div>
       </div>
@@ -804,91 +850,6 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           </div>
         )}
       </main>
-
-      {/* Floating action bar */}
-      {selectedCount > 0 && (
-        <div
-          id="floating-action-bar"
-          style={{
-            position: 'fixed',
-            top: 'calc(var(--space-xl) + 80px)', // Put it just below the sticky header area
-            left: '50%',
-            transform: 'translateX(-50%)',
-            background: isDark ? 'rgba(15, 15, 30, 0.92)' : 'rgba(255, 255, 255, 0.92)',
-            backdropFilter: 'blur(24px) saturate(200%)',
-            WebkitBackdropFilter: 'blur(24px) saturate(200%)',
-            padding: '0.9rem 1.75rem',
-            borderRadius: 'var(--radius-2xl)',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '1.5rem',
-            boxShadow: `var(--shadow-lg), 0 0 0 1px ${isDark ? 'rgba(99, 102, 241, 0.2)' : 'rgba(99, 102, 241, 0.15)'}`,
-            border: `1px solid ${isDark ? 'rgba(99, 102, 241, 0.25)' : 'rgba(99, 102, 241, 0.2)'}`,
-            zIndex: 100,
-            animation: 'fadeInDown 0.4s cubic-bezier(0.16, 1, 0.3, 1) both',
-          }}
-        >
-          {/* Count badge */}
-          <div style={{
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            fontWeight: 600,
-            color: 'var(--text-secondary)',
-            fontSize: '0.9rem',
-          }}>
-            <span style={{
-              width: '30px',
-              height: '30px',
-              borderRadius: '50%',
-              background: 'linear-gradient(135deg, var(--accent-indigo), var(--accent-purple))',
-              color: '#fff',
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-              fontSize: '0.8rem',
-              fontWeight: 800,
-              boxShadow: '0 2px 8px rgba(99, 102, 241, 0.3)',
-            }}>
-              {selectedCount}
-            </span>
-            <span>selected</span>
-          </div>
-
-          {/* Launch button */}
-          <button
-            id="launch-main-screen"
-            onClick={onLaunchMainScreen}
-            style={{
-              background: 'linear-gradient(135deg, var(--accent-indigo), var(--accent-purple))',
-              color: '#fff',
-              border: 'none',
-              padding: '0.7rem 1.75rem',
-              borderRadius: 'var(--radius-full)',
-              fontWeight: 700,
-              cursor: 'pointer',
-              fontSize: '0.9rem',
-              fontFamily: 'inherit',
-              transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
-              boxShadow: '0 4px 18px rgba(99, 102, 241, 0.35)',
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.4rem',
-            }}
-            onMouseOver={e => {
-              e.currentTarget.style.transform = 'scale(1.06)';
-              e.currentTarget.style.boxShadow = '0 8px 28px rgba(99, 102, 241, 0.45)';
-            }}
-            onMouseOut={e => {
-              e.currentTarget.style.transform = 'scale(1)';
-              e.currentTarget.style.boxShadow = '0 4px 18px rgba(99, 102, 241, 0.35)';
-            }}
-          >
-            Launch GameGlance
-            <span style={{ fontSize: '1.1rem' }}>→</span>
-          </button>
-        </div>
-      )}
 
       {/* Back to Top */}
       {showScrollTop && (
