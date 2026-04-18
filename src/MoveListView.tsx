@@ -599,7 +599,11 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                     borderBottom: '2px solid var(--border-subtle)',
                     paddingBottom: '0.5rem',
                   }}>{tab}</h2>
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: '0.5rem' }}>
+                  <div style={{ 
+                    display: 'grid', 
+                    gridTemplateColumns: 'repeat(auto-fill, minmax(380px, 1fr))', 
+                    gap: '1rem' 
+                  }}>
                     {displayList.map((move, idx) => {
               const isSelected = selectedPlaylist.some(m => m.id === move.id);
               const typeColor = TYPE_COLORS[move.type] || '#6366f1';
@@ -618,8 +622,9 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                       : 'var(--bg-card)',
                     borderRadius: 'var(--radius-lg)',
                     display: 'flex',
+                    flexDirection: 'column',
                     justifyContent: 'space-between',
-                    alignItems: 'center',
+                    alignItems: 'stretch',
                     cursor: 'pointer',
                     border: isSelected
                       ? `1px solid ${typeColor}40`
@@ -647,8 +652,8 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                     e.currentTarget.style.boxShadow = 'none';
                   }}
                 >
-                  {/* Left: checkbox + info */}
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '1rem', flex: 1, minWidth: 0 }}>
+                  {/* Top: Header (checkbox + name) */}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
                     {/* Checkbox */}
                     <div style={{
                       width: '24px',
@@ -671,45 +676,41 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                       {isSelected && '✓'}
                     </div>
 
-                    {/* Move info */}
-                    <div style={{ minWidth: 0, flex: 1 }}>
-                      <div style={{
-                        display: 'flex',
-                        alignItems: 'center',
-                        gap: '0.6rem',
-                        flexWrap: 'wrap',
-                      }}>
-                        <span style={{
-                          fontSize: '1.05rem',
-                          fontWeight: 700,
-                          color: isSelected ? 'var(--text-primary)' : (isDark ? '#d0d0e0' : '#2a2a40'),
-                          letterSpacing: '-0.01em',
-                        }}>
-                          {move.name}
-                        </span>
-                      </div>
-
-                      {/* Input glyphs inline */}
-                      <div style={{ marginTop: '0.4rem' }}>
-                        <GlyphSequence inputs={[move.input]} controller={effectiveController} notationSystem={game.notationSystem} />
-                      </div>
-                    </div>
+                    <span style={{
+                      fontSize: '1.05rem',
+                      fontWeight: 700,
+                      color: isSelected ? 'var(--text-primary)' : (isDark ? '#d0d0e0' : '#2a2a40'),
+                      letterSpacing: '-0.01em',
+                      flex: 1,
+                      whiteSpace: 'nowrap',
+                      overflow: 'hidden',
+                      textOverflow: 'ellipsis',
+                    }}>
+                      {move.name}
+                    </span>
                   </div>
 
-                  {/* Right: frame data */}
-                  {move.frameData && (move.frameData.startup || move.frameData.active) && (
+                  {/* Middle: Inputs */}
+                  <div style={{ flex: 1, marginBottom: '1.25rem' }}>
+                    <GlyphSequence inputs={[move.input]} controller={effectiveController} notationSystem={game.notationSystem} />
+                  </div>
+
+                  {/* Bottom: Frame data */}
+                  {move.frameData && (move.frameData.startup || move.frameData.active || move.frameData.advantage) && (
                     <div style={{
                       display: 'flex',
-                      gap: '1rem',
+                      gap: '1.25rem',
                       fontFamily: "'JetBrains Mono', monospace",
                       fontSize: '0.75rem',
-                      flexShrink: 0,
+                      borderTop: '1px solid var(--border-subtle)',
+                      paddingTop: '0.75rem',
+                      marginTop: 'auto',
                     }}>
                       {move.frameData.startup && (
                         <div style={{
                           display: 'flex',
                           flexDirection: 'column',
-                          alignItems: 'center',
+                          alignItems: 'flex-start',
                           gap: '0.15rem',
                         }}>
                           <span style={{
@@ -731,7 +732,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                         <div style={{
                           display: 'flex',
                           flexDirection: 'column',
-                          alignItems: 'center',
+                          alignItems: 'flex-start',
                           gap: '0.15rem',
                         }}>
                           <span style={{
@@ -753,7 +754,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                         <div style={{
                           display: 'flex',
                           flexDirection: 'column',
-                          alignItems: 'center',
+                          alignItems: 'flex-start',
                           gap: '0.15rem',
                         }}>
                           <span style={{

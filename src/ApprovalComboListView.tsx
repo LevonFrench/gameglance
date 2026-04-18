@@ -154,7 +154,7 @@ export const ApprovalComboListView: React.FC<Props> = ({
         </button>
       </header>
 
-      <main style={{ padding: '2rem', maxWidth: '1400px', margin: '0 auto', width: '100%', flex: 1 }}>
+      <main style={{ padding: '2rem', maxWidth: '900px', margin: '0 auto', width: '100%', flex: 1 }}>
         {loading ? (
           <div style={{ textAlign: 'center', padding: '4rem', color: 'var(--text-muted)' }}>Loading...</div>
         ) : error ? (
@@ -183,11 +183,6 @@ export const ApprovalComboListView: React.FC<Props> = ({
               </button>
             </div>
 
-            <div style={{ 
-              display: 'grid', 
-              gridTemplateColumns: 'repeat(auto-fill, minmax(350px, 1fr))', 
-              gap: '1.25rem' 
-            }}>
             {combos.map((combo, index) => {
               const isApproved = approvedIndices.has(index);
               return (
@@ -241,7 +236,6 @@ export const ApprovalComboListView: React.FC<Props> = ({
                 </div>
               );
             })}
-            </div>
           </div>
         )}
       </main>
