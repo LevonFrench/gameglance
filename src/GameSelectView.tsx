@@ -759,7 +759,14 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                 position: 'relative',
                 zIndex: 1,
               }}>
-                {game.name}
+                {game.name.split(': ').map((part, i, arr) => (
+                  <React.Fragment key={i}>
+                    <span style={{ display: 'inline-block' }}>
+                      {part}{i < arr.length - 1 ? ':' : ''}
+                    </span>
+                    {i < arr.length - 1 ? ' ' : ''}
+                  </React.Fragment>
+                ))}
               </h2>
 
               {/* Tagline */}
