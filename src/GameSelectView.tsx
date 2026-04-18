@@ -203,7 +203,10 @@ const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: Autocomple
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const matches = (value ? games.filter((g: GameDefinition) => g.name.toLowerCase().includes(value.toLowerCase())) : games).sort((a: GameDefinition, b: GameDefinition) => a.name.localeCompare(b.name));
+  const matches = (value ? games.filter((g: GameDefinition) => 
+    g.name.toLowerCase().includes(value.toLowerCase()) || 
+    (g.searchAliases && g.searchAliases.some(alias => alias.toLowerCase().includes(value.toLowerCase())))
+  ) : games).sort((a: GameDefinition, b: GameDefinition) => a.name.localeCompare(b.name));
 
   return (
     <div ref={triggerRef} style={{ position: 'relative', width: '100%', zIndex: isOpen ? 100 : 10 }}>
@@ -404,7 +407,9 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
     const filteredAndSortedGames = [...VISIBLE_GAMES]
     .filter(g => developerFilter === 'All' || g.developer === developerFilter)
     .filter(g => tagFilter === 'All' || (g.tags && g.tags.includes(tagFilter)))
-    .filter(g => searchQuery.trim() === '' || g.name.toLowerCase().includes(searchQuery.toLowerCase()))
+    .filter(g => searchQuery.trim() === '' || 
+                 g.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
+                 (g.searchAliases && g.searchAliases.some(alias => alias.toLowerCase().includes(searchQuery.toLowerCase()))))
     .filter(g => !showFavoritesOnly || favorites.includes(g.id))
     .sort((a, b) => {
       const aFav = favorites.includes(a.id);

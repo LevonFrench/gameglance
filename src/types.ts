@@ -47,6 +47,7 @@ export interface GameDefinition {
   id: string;
   mameRomset?: string;
   name: string;
+  searchAliases?: string[];
   developer?: string;
   releaseYear?: number;
   platform?: string;

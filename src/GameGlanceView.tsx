@@ -523,75 +523,66 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
         {currentItems.map((move, idx) => (
           <div
             key={`${currentPage}-${idx}`}
+            className="move-card"
             style={{
               display: 'flex',
-              flexDirection: displayMode === 'stadium' ? 'column' : 'row',
-              justifyContent: displayMode === 'stadium' ? 'center' : 'space-between',
-              alignItems: 'center',
+              flexDirection: 'column',
+              justifyContent: 'flex-start',
+              alignItems: 'stretch',
               width: '100%',
               maxWidth: displayMode === 'stadium' ? '100%' : '1200px',
-              background: displayMode === 'stadium' ? 'transparent' : 'var(--bg-card)',
-              padding: displayMode === 'stadium' ? '0' : '1.35rem 1.75rem',
-              borderRadius: 'var(--radius-xl)',
-              border: displayMode === 'stadium' ? 'none' : '1px solid var(--border-subtle)',
+              padding: displayMode === 'stadium' ? '0' : '1rem',
               animation: `fadeInUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) ${idx * 50}ms both`,
-              transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
-              gap: displayMode === 'stadium' ? '3rem' : '1.5rem',
-              backdropFilter: displayMode === 'stadium' ? 'none' : 'blur(8px)',
-            }}
-            onMouseOver={e => {
-              if (displayMode === 'stadium') return;
-              e.currentTarget.style.borderColor = 'var(--border-medium)';
-              e.currentTarget.style.background = 'var(--bg-card-hover)';
-              e.currentTarget.style.transform = 'translateX(4px) scale(1.01)';
-              e.currentTarget.style.boxShadow = 'var(--shadow-sm)';
-            }}
-            onMouseOut={e => {
-              if (displayMode === 'stadium') return;
-              e.currentTarget.style.borderColor = 'var(--border-subtle)';
-              e.currentTarget.style.background = 'var(--bg-card)';
-              e.currentTarget.style.transform = 'translateX(0) scale(1)';
-              e.currentTarget.style.boxShadow = 'none';
+              gap: displayMode === 'stadium' ? '3rem' : '0.75rem',
+              // Note: Stadium mode overrides the background and border completely
+              ...(displayMode === 'stadium' ? {
+                background: 'transparent',
+                border: 'none',
+                backdropFilter: 'none',
+                boxShadow: 'none',
+              } : {})
             }}
           >
-            {/* Move name + index */}
-            <div style={{ display: 'flex', flexDirection: displayMode === 'stadium' ? 'column' : 'row', alignItems: 'center', gap: '1rem', minWidth: 0 }}>
-              <span style={{
-                fontFamily: "'JetBrains Mono', monospace",
-                fontSize: displayMode === 'stadium' ? '1.5rem' : '0.7rem',
-                fontWeight: 700,
-                color: displayMode === 'stadium' ? 'var(--accent-indigo)' : 'var(--text-muted)',
-                width: displayMode === 'stadium' ? 'auto' : '32px',
-                textAlign: 'center',
-                flexShrink: 0,
-                marginBottom: displayMode === 'stadium' ? '1rem' : '0',
-              }}>
-                {displayMode === 'stadium' ? `MOVE ${String(currentPage * effectiveItemsPerPage + idx + 1).padStart(2, '0')}` : String(currentPage * effectiveItemsPerPage + idx + 1).padStart(2, '0')}
-              </span>
-              <h2 style={{
-                fontSize: displayMode === 'stadium' ? 'clamp(3rem, 6vw, 6rem)' : 'clamp(1.2rem, 3vw, 1.8rem)',
-                color: isDark ? '#ffffff' : '#000000',
-                margin: 0,
-                fontWeight: 900,
-                letterSpacing: '-0.01em',
-                whiteSpace: displayMode === 'stadium' ? 'normal' : 'nowrap',
-                textAlign: 'center',
-                overflow: displayMode === 'stadium' ? 'visible' : 'hidden',
-                textOverflow: displayMode === 'stadium' ? 'clip' : 'ellipsis',
-                textShadow: isDark ? '0 2px 10px rgba(0,0,0,0.5)' : 'none',
-              }}>
-                {move.name}
-              </h2>
+            {/* Move Header: Type + Name */}
+            <div style={{ display: 'flex', flexDirection: 'column', alignItems: displayMode === 'stadium' ? 'center' : 'flex-start' }}>
+              {displayMode !== 'stadium' && (
+                <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--accent-yellow, #ffcc00)', fontWeight: 600 }}>
+                  {move.type}
+                </div>
+              )}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                <span style={{
+                  fontFamily: "'JetBrains Mono', monospace",
+                  fontSize: displayMode === 'stadium' ? '1.5rem' : '0.7rem',
+                  fontWeight: 700,
+                  color: displayMode === 'stadium' ? 'var(--accent-indigo)' : 'var(--text-muted)',
+                  display: displayMode === 'stadium' ? 'block' : 'none',
+                }}>
+                  {displayMode === 'stadium' ? `MOVE ${String(currentPage * effectiveItemsPerPage + idx + 1).padStart(2, '0')}` : ''}
+                </span>
+                <h2 style={{
+                  fontSize: displayMode === 'stadium' ? 'clamp(3rem, 6vw, 6rem)' : '1.1rem',
+                  fontFamily: "'Outfit', sans-serif",
+                  color: isDark ? '#ffffff' : '#000000',
+                  margin: 0,
+                  fontWeight: 700,
+                  textShadow: isDark && displayMode === 'stadium' ? '0 2px 10px rgba(0,0,0,0.5)' : 'none',
+                }}>
+                  {move.name}
+                </h2>
+              </div>
             </div>
 
             {/* Input glyphs */}
             <div style={{
               display: 'flex',
               alignItems: 'center',
-              justifyContent: 'center',
-              flexShrink: 0,
-              transform: displayMode === 'stadium' ? 'scale(calc(2 * var(--icon-scale, 1)))' : 'scale(var(--icon-scale, 1))',
-              transformOrigin: 'center',
+              justifyContent: displayMode === 'stadium' ? 'center' : 'flex-start',
+              background: displayMode === 'stadium' ? 'transparent' : 'rgba(0,0,0,0.4)',
+              padding: displayMode === 'stadium' ? '0' : '0.75rem',
+              borderRadius: displayMode === 'stadium' ? '0' : '12px',
+              border: displayMode === 'stadium' ? 'none' : '1px inset rgba(255,255,255,0.05)',
+              transformOrigin: displayMode === 'stadium' ? 'center' : 'left center',
               marginTop: displayMode === 'stadium' ? '2.5rem' : '0',
             }}>
               <GlyphSequence inputs={[move.input]} controller={effectiveController} notationSystem={notationSystem} large={true} />

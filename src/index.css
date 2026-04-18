@@ -472,6 +472,34 @@ h1, h2, h3, h4, h5, h6 {
    CARD THEMES (Precision Utility / Arcade Modern)
    ═══════════════════════════════════════════════════════════════ */
 
+/* ── Base Move Card ───────────────────────────────── */
+.move-card {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  background: var(--bg-card);
+  border: 1px solid var(--border-subtle);
+  border-radius: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.move-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--border-medium);
+  transform: translateY(-2px) scale(1.01);
+  box-shadow: var(--shadow-md);
+}
+
+.move-card[data-selected="true"] {
+  border-color: var(--accent-indigo);
+  background: rgba(99, 102, 241, 0.1);
+}
+
+.move-card[data-selected="true"] .select-btn {
+  background: var(--accent-indigo);
+  border-color: var(--accent-indigo);
+  color: #000;
+}
+
+
 /* ── Base Theme Application (Deep Slate background is global via --bg-primary in dark mode) ── */
 /* All hardware themes will inherit the deep slate and glassmorphism. We only override accents. */
 
@@ -482,19 +510,22 @@ h1, h2, h3, h4, h5, h6 {
 }
 [data-card-theme="sf2gen"] button[id^="game-card-"]:hover,
 [data-card-theme="sf2gen"] button[id^="char-card-"]:hover,
-[data-card-theme="sf2gen"] div[id^="move-"]:hover,
-[data-card-theme="genesis"] button[id^="game-card-"]:hover,
-[data-card-theme="genesis"] button[id^="char-card-"]:hover,
-[data-card-theme="genesis"] div[id^="move-"]:hover {
+[data-card-theme="sf2gen"] div.move-card:hover,
+[data-card-theme="genesis"] div.move-card:hover {
   border-color: #d92b38 !important;
   box-shadow: 0 12px 30px rgba(217, 43, 56, 0.15) !important;
   transform: translateY(-4px) scale(1.02);
 }
-[data-card-theme="sf2gen"] div[id^="move-"][data-selected="true"],
-[data-card-theme="genesis"] div[id^="move-"][data-selected="true"] {
+[data-card-theme="sf2gen"] div.move-card[data-selected="true"],
+[data-card-theme="genesis"] div.move-card[data-selected="true"] {
   border-color: #d92b38 !important;
   background: rgba(217, 43, 56, 0.1) !important;
   box-shadow: 0 8px 25px rgba(217, 43, 56, 0.2) !important;
+}
+[data-card-theme="sf2gen"] div.move-card[data-selected="true"] .select-btn,
+[data-card-theme="genesis"] div.move-card[data-selected="true"] .select-btn {
+  background: #d92b38 !important;
+  border-color: #d92b38 !important;
 }
 [data-card-theme="sf2gen"] h2, [data-card-theme="genesis"] h2 {
   color: #fff !important;
@@ -510,30 +541,38 @@ h1, h2, h3, h4, h5, h6 {
 }
 [data-card-theme="snes"] button[id^="game-card-"]:hover,
 [data-card-theme="snes"] button[id^="char-card-"]:hover,
-[data-card-theme="snes"] div[id^="move-"]:hover {
+[data-card-theme="snes"] div.move-card:hover {
   border-color: #8162b7 !important;
   box-shadow: 0 12px 30px rgba(129, 98, 183, 0.15) !important;
   transform: translateY(-4px) scale(1.02);
 }
-[data-card-theme="snes"] div[id^="move-"][data-selected="true"] {
+[data-card-theme="snes"] div.move-card[data-selected="true"] {
   border-color: #8162b7 !important;
   background: rgba(129, 98, 183, 0.1) !important;
   box-shadow: 0 8px 25px rgba(129, 98, 183, 0.2) !important;
+}
+[data-card-theme="snes"] div.move-card[data-selected="true"] .select-btn {
+  background: #8162b7 !important;
+  border-color: #8162b7 !important;
 }
 [data-card-theme="snes"] h2 { color: #fff !important; }
 [data-card-theme="snes"] .tagline { color: #8162b7 !important; }
 
 [data-card-theme="sfami"] button[id^="game-card-"]:hover,
 [data-card-theme="sfami"] button[id^="char-card-"]:hover,
-[data-card-theme="sfami"] div[id^="move-"]:hover {
+[data-card-theme="sfami"] div.move-card:hover {
   border-color: #e3001b !important;
   box-shadow: 0 12px 30px rgba(227, 0, 27, 0.15) !important;
   transform: translateY(-4px) scale(1.02);
 }
-[data-card-theme="sfami"] div[id^="move-"][data-selected="true"] {
+[data-card-theme="sfami"] div.move-card[data-selected="true"] {
   border-color: #e3001b !important;
   background: rgba(227, 0, 27, 0.1) !important;
   box-shadow: 0 8px 25px rgba(227, 0, 27, 0.2) !important;
+}
+[data-card-theme="sfami"] div.move-card[data-selected="true"] .select-btn {
+  background: #e3001b !important;
+  border-color: #e3001b !important;
 }
 [data-card-theme="sfami"] h2 { color: #fff !important; }
 [data-card-theme="sfami"] .tagline { color: #ffcc00 !important; }
@@ -546,23 +585,29 @@ h1, h2, h3, h4, h5, h6 {
 }
 [data-card-theme="mvs"] button[id^="game-card-"]:hover,
 [data-card-theme="mvs"] button[id^="char-card-"]:hover,
-[data-card-theme="mvs"] div[id^="move-"]:hover,
+[data-card-theme="mvs"] div.move-card:hover,
 [data-card-theme="mvscab"] button[id^="game-card-"]:hover,
 [data-card-theme="mvscab"] button[id^="char-card-"]:hover,
-[data-card-theme="mvscab"] div[id^="move-"]:hover,
+[data-card-theme="mvscab"] div.move-card:hover,
 [data-card-theme="aes"] button[id^="game-card-"]:hover,
 [data-card-theme="aes"] button[id^="char-card-"]:hover,
-[data-card-theme="aes"] div[id^="move-"]:hover {
+[data-card-theme="aes"] div.move-card:hover {
   border-color: #ff003c !important;
   box-shadow: 0 12px 30px rgba(255, 0, 60, 0.15) !important;
   transform: translateY(-4px) scale(1.02);
 }
-[data-card-theme="mvs"] div[id^="move-"][data-selected="true"],
-[data-card-theme="mvscab"] div[id^="move-"][data-selected="true"],
-[data-card-theme="aes"] div[id^="move-"][data-selected="true"] {
+[data-card-theme="mvs"] div.move-card[data-selected="true"],
+[data-card-theme="mvscab"] div.move-card[data-selected="true"],
+[data-card-theme="aes"] div.move-card[data-selected="true"] {
   border-color: #ff003c !important;
   background: rgba(255, 0, 60, 0.1) !important;
   box-shadow: 0 8px 25px rgba(255, 0, 60, 0.2) !important;
+}
+[data-card-theme="mvs"] div.move-card[data-selected="true"] .select-btn,
+[data-card-theme="mvscab"] div.move-card[data-selected="true"] .select-btn,
+[data-card-theme="aes"] div.move-card[data-selected="true"] .select-btn {
+  background: #ff003c !important;
+  border-color: #ff003c !important;
 }
 [data-card-theme="mvs"] h2, [data-card-theme="mvscab"] h2, [data-card-theme="aes"] h2 {
   color: #fff !important;
@@ -578,19 +623,24 @@ h1, h2, h3, h4, h5, h6 {
 }
 [data-card-theme="cps2"] button[id^="game-card-"]:hover,
 [data-card-theme="cps2"] button[id^="char-card-"]:hover,
-[data-card-theme="cps2"] div[id^="move-"]:hover,
+[data-card-theme="cps2"] div.move-card:hover,
 [data-card-theme="cps2cab"] button[id^="game-card-"]:hover,
 [data-card-theme="cps2cab"] button[id^="char-card-"]:hover,
-[data-card-theme="cps2cab"] div[id^="move-"]:hover {
+[data-card-theme="cps2cab"] div.move-card:hover {
   border-color: #38bdf8 !important;
   box-shadow: 0 12px 30px rgba(56, 189, 248, 0.15) !important;
   transform: translateY(-4px) scale(1.02);
 }
-[data-card-theme="cps2"] div[id^="move-"][data-selected="true"],
-[data-card-theme="cps2cab"] div[id^="move-"][data-selected="true"] {
+[data-card-theme="cps2"] div.move-card[data-selected="true"],
+[data-card-theme="cps2cab"] div.move-card[data-selected="true"] {
   border-color: #38bdf8 !important;
   background: rgba(56, 189, 248, 0.1) !important;
   box-shadow: 0 8px 25px rgba(56, 189, 248, 0.2) !important;
+}
+[data-card-theme="cps2"] div.move-card[data-selected="true"] .select-btn,
+[data-card-theme="cps2cab"] div.move-card[data-selected="true"] .select-btn {
+  background: #38bdf8 !important;
+  border-color: #38bdf8 !important;
 }
 [data-card-theme="cps2"] h2, [data-card-theme="cps2cab"] h2 {
   color: #fff !important;
@@ -605,15 +655,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 [data-card-theme="tekken"] button[id^="game-card-"]:hover,
 [data-card-theme="tekken"] button[id^="char-card-"]:hover,
-[data-card-theme="tekken"] div[id^="move-"]:hover {
+[data-card-theme="tekken"] div.move-card:hover {
   border-color: #f59e0b !important;
   box-shadow: 0 12px 30px rgba(245, 158, 11, 0.15) !important;
   transform: translateY(-4px) scale(1.02);
 }
-[data-card-theme="tekken"] div[id^="move-"][data-selected="true"] {
+[data-card-theme="tekken"] div.move-card[data-selected="true"] {
   border-color: #f59e0b !important;
   background: rgba(245, 158, 11, 0.1) !important;
   box-shadow: 0 8px 25px rgba(245, 158, 11, 0.2) !important;
+}
+[data-card-theme="tekken"] div.move-card[data-selected="true"] .select-btn {
+  background: #f59e0b !important;
+  border-color: #f59e0b !important;
 }
 [data-card-theme="tekken"] h2 {
   color: #f59e0b !important;
@@ -622,4 +676,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 [data-card-theme="tekken"] .tagline {
   color: #ef4444 !important;
+}
+
+/* Custom scrollbar class to hide default scrollbars but keep scrollability */
+.hide-scrollbar {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
 }

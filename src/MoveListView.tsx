@@ -244,7 +244,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     <div style={{
       minHeight: '100vh',
       padding: 'var(--space-xl)',
-      paddingBottom: selectedCount > 0 ? '120px' : 'var(--space-xl)',
+      paddingBottom: '120px',
       position: 'relative',
     }}>
       {/* Glowing Ambient Mesh Background */}
@@ -400,12 +400,12 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         {/* Tabs */}
         <div style={{
           display: 'flex',
-          gap: '0.3rem',
+          flexWrap: 'wrap',
+          gap: '0.4rem',
           background: 'var(--bg-input)',
-          padding: '5px',
+          padding: '0.5rem',
           borderRadius: 'var(--radius-lg)',
           border: '1px solid var(--border-subtle)',
-          overflow: 'auto',
         }}>
           {orderedTabs.map((tab, idx) => {
             const isEmpty = tabCounts[tab] === 0;
@@ -676,86 +676,61 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                 <div
                   key={move.id}
                   id={`move-${move.id}`}
+                  className="move-card"
                   tabIndex={0}
                   data-selected={isSelected ? 'true' : 'false'}
                   onClick={() => onToggleMove(move)}
                   style={{
-                    padding: '1rem 1.25rem',
-                    background: isSelected
-                      ? `linear-gradient(135deg, ${typeColor}${isDark ? '12' : '10'}, ${typeColor}${isDark ? '08' : '08'})`
-                      : 'var(--bg-card)',
-                    borderRadius: 'var(--radius-lg)',
                     display: 'flex',
                     flexDirection: 'column',
-                    justifyContent: 'space-between',
-                    alignItems: 'stretch',
                     cursor: 'pointer',
-                    border: isSelected
-                      ? `1px solid ${typeColor}40`
-                      : '1px solid var(--border-subtle)',
-                    transition: 'all 0.3s cubic-bezier(0.16, 1, 0.3, 1)',
                     animation: `fadeInUp 0.3s ease ${Math.min(idx * 20, 300)}ms both`,
-                    gap: '1rem',
-                    backdropFilter: 'blur(6px)',
-                    boxShadow: isDark ? 'none' : 'var(--shadow-xs)',
-                  }}
-                  onMouseOver={e => {
-                    if (!isSelected) {
-                      e.currentTarget.style.background = 'var(--bg-card-hover)';
-                      e.currentTarget.style.borderColor = 'var(--border-medium)';
-                    }
-                    e.currentTarget.style.transform = 'translateX(6px)';
-                    e.currentTarget.style.boxShadow = `var(--shadow-sm)`;
-                  }}
-                  onMouseOut={e => {
-                    if (!isSelected) {
-                      e.currentTarget.style.background = 'var(--bg-card)';
-                      e.currentTarget.style.borderColor = 'var(--border-subtle)';
-                    }
-                    e.currentTarget.style.transform = 'translateX(0)';
-                    e.currentTarget.style.boxShadow = 'none';
+                    gap: '0.75rem',
                   }}
                 >
-                  {/* Top: Header (checkbox + name) */}
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginBottom: '1rem' }}>
-                    {/* Checkbox */}
-                    <div style={{
-                      width: '24px',
-                      height: '24px',
-                      borderRadius: 'var(--radius-sm)',
-                      border: isSelected ? 'none' : `2px solid var(--text-muted)`,
-                      background: isSelected
-                        ? `linear-gradient(135deg, ${typeColor}, ${typeColor}cc)`
-                        : 'transparent',
+                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                    <div style={{ display: 'flex', flexDirection: 'column' }}>
+                      <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--accent-yellow, #ffcc00)', fontWeight: 600 }}>
+                        {move.type}
+                      </div>
+                      <h2 style={{
+                        fontFamily: "'Outfit', sans-serif",
+                        fontSize: '1.1rem',
+                        fontWeight: 700,
+                        color: isDark ? '#ffffff' : '#000000',
+                        margin: 0,
+                      }}>
+                        {move.name}
+                      </h2>
+                    </div>
+
+                    <div className="select-btn" style={{
+                      width: '32px',
+                      height: '32px',
+                      borderRadius: '50%',
+                      background: isSelected ? typeColor : 'rgba(255, 255, 255, 0.08)',
+                      border: isSelected ? 'none' : '1px solid var(--border-medium)',
                       display: 'flex',
                       alignItems: 'center',
                       justifyContent: 'center',
-                      color: '#fff',
-                      fontSize: '0.7rem',
-                      fontWeight: 800,
-                      transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
-                      flexShrink: 0,
-                      boxShadow: isSelected ? `0 2px 8px ${typeColor}40` : 'none',
-                    }}>
-                      {isSelected && '✓'}
-                    </div>
-
-                    <span style={{
-                      fontSize: '1.05rem',
+                      color: isSelected ? '#000' : 'var(--text-primary)',
+                      fontSize: '1.2rem',
                       fontWeight: 700,
-                      color: isSelected ? 'var(--text-primary)' : (isDark ? '#d0d0e0' : '#2a2a40'),
-                      letterSpacing: '-0.01em',
-                      flex: 1,
-                      whiteSpace: 'nowrap',
-                      overflow: 'hidden',
-                      textOverflow: 'ellipsis',
+                      transition: 'all 0.2s ease',
+                      flexShrink: 0,
                     }}>
-                      {move.name}
-                    </span>
+                      {isSelected ? '✓' : '+'}
+                    </div>
                   </div>
 
-                  {/* Middle: Inputs */}
-                  <div style={{ flex: 1, marginBottom: '1.25rem' }}>
+                  <div style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    background: 'rgba(0,0,0,0.4)',
+                    padding: '0.75rem',
+                    borderRadius: '12px',
+                    border: '1px inset rgba(255,255,255,0.05)',
+                  }}>
                     <GlyphSequence inputs={[move.input]} controller={effectiveController} notationSystem={notationSystem || game.notationSystem} />
                   </div>
 

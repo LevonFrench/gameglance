@@ -3,17 +3,63 @@ import time
 import json
 import os
 
-TARGETS = [
-    {"game": "street-fighter-6", "character": "ryu", "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ryu/Combos"},
-    {"game": "street-fighter-6", "character": "ken", "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Ken/Combos"},
-    {"game": "street-fighter-6", "character": "luke", "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Luke/Combos"},
-    {"game": "street-fighter-6", "character": "cammy", "url": "https://wiki.supercombo.gg/w/Street_Fighter_6/Cammy/Combos"},
-    {"game": "street-fighter-iii-3rd-strike", "character": "chun-li", "url": "https://wiki.supercombo.gg/w/Street_Fighter_3:_3rd_Strike/Chun-Li/Combos"},
-    {"game": "street-fighter-iii-3rd-strike", "character": "yun", "url": "https://wiki.supercombo.gg/w/Street_Fighter_3:_3rd_Strike/Yun/Combos"},
-    {"game": "capcom-vs-snk-2", "character": "ryu", "url": "https://wiki.supercombo.gg/w/Capcom_vs_SNK_2/Ryu/Combos"}
+GAMES = [
+    {
+        "local_folder": "street-fighter-6",
+        "wiki_slug": "Street_Fighter_6"
+    },
+    {
+        "local_folder": "street-fighter-iii-3rd-strike---fight-for-the-future",
+        "wiki_slug": "Street_Fighter_3:_3rd_Strike"
+    },
+    {
+        "local_folder": "capcom-vs-snk-2-mark-of-the-millennium-2001",
+        "wiki_slug": "Capcom_vs_SNK_2"
+    }
 ]
 
+def get_targets():
+    targets = []
+    for game in GAMES:
+        roster_path = f"public/data/{game['local_folder']}/_roster.json"
+        if not os.path.exists(roster_path):
+            continue
+            
+        with open(roster_path, 'r', encoding='utf-8') as f:
+            roster = json.load(f)
+            
+        for char in roster:
+            char_id = char['id']
+            char_name = char['name']
+            
+            # Clean up names for wiki URLs
+            # "Chun - Li" -> "Chun-Li"
+            clean_name = char_name.replace(" - ", "-")
+            url_name = clean_name.replace(" ", "_")
+            
+            # Special case for A.K.I.
+            if url_name == "A.K.I.":
+                url_name = "A.K.I."
+                
+            out_path = f"public/data/scraped_combos/{game['local_folder']}/{char_id}_supercombo.json"
+            
+            if not os.path.exists(out_path):
+                targets.append({
+                    "game": game['local_folder'],
+                    "char_id": char_id,
+                    "url": f"https://wiki.supercombo.gg/w/{game['wiki_slug']}/{url_name}/Combos",
+                    "out_path": out_path
+                })
+    return targets
+
 def main():
+    targets = get_targets()
+    print(f"Found {len(targets)} characters left to scrape across {len(GAMES)} games.")
+    
+    if not targets:
+        print("Everything is already scraped!")
+        return
+
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=False)
         context = browser.new_context(
@@ -21,16 +67,17 @@ def main():
         )
         page = context.new_page()
         
-        for target in TARGETS:
+        for target in targets:
             game = target["game"]
-            char = target["character"]
+            char = target["char_id"]
             url = target["url"]
+            out_path = target["out_path"]
             
             print(f"\\n[{game} - {char}] Navigating to {url}...")
             try:
                 page.goto(url)
                 # Wait for cloudflare / page load
-                time.sleep(8)
+                time.sleep(6)
                 
                 print("Parsing tables...")
                 combos = page.evaluate("""
@@ -79,12 +126,14 @@ def main():
                 
                 if combos:
                     print(f"Found {len(combos)} combos for {char}!")
-                    out_path = f"public/data/scraped_combos/{game}/{char}_supercombo.json"
                     os.makedirs(os.path.dirname(out_path), exist_ok=True)
                     with open(out_path, "w", encoding="utf-8") as f:
                         json.dump(combos, f, indent=2)
                 else:
-                    print(f"No combos found for {char}.")
+                    print(f"No combos found for {char}. Generating empty file to skip next time.")
+                    os.makedirs(os.path.dirname(out_path), exist_ok=True)
+                    with open(out_path, "w", encoding="utf-8") as f:
+                        json.dump([], f, indent=2)
                     
             except Exception as e:
                 print(f"Error scraping {url}: {e}")
