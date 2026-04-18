@@ -97,8 +97,6 @@ rosterCount: 8,
 
     releaseYear: 1997,
 
-rosterCount: 999,
-
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1059,8 +1057,6 @@ rosterCount: 25,
 
     releaseYear: 1987,
 
-rosterCount: 999,
-
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1092,7 +1088,7 @@ rosterCount: 7,
 
     id: 'jojo-s-bizarre-adventure-heritage-for-the-future-jjba-hftf',
 
-    name: "JoJo's Bizarre Adventure: Heritage for the Future (JJBA: HFTF)",
+    name: "JoJo's Bizarre Adventure: Heritage for the Future",
 
     developer: "Unknown",
 
@@ -1161,8 +1157,6 @@ rosterCount: 9,
 
     releaseYear: 1994,
 
-rosterCount: 999,
-
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1180,8 +1174,6 @@ rosterCount: 999,
 
     releaseYear: 2013,
 
-rosterCount: 999,
-
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1198,8 +1190,6 @@ rosterCount: 999,
     developer: "Rare",
 
     releaseYear: 1994,
-
-rosterCount: 999,
 
         characters: [],
 
@@ -1278,8 +1268,6 @@ rosterCount: 12,
     developer: "Capcom",
 
     releaseYear: 1997,
-
-rosterCount: 999,
 
         characters: [],
 
@@ -1386,8 +1374,6 @@ rosterCount: 24,
 
     platform: "Neo Geo Arcade PlayStation 2, PC",
 
-rosterCount: 999,
-
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1407,8 +1393,6 @@ rosterCount: 999,
     releaseYear: 2011,
 
     platform: "PlayStation 3 Xbox 360 Windows, PC",
-
-rosterCount: 999,
 
         characters: [],
 
@@ -1539,8 +1523,6 @@ rosterCount: 14,
 
     platform: "Neo Geo Arcade PlayStation 1, PC",
 
-rosterCount: 999,
-
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1602,8 +1584,6 @@ rosterCount: 13,
 
     platform: "Arcade PlayStation Sega Saturn, PC",
 
-rosterCount: 999,
-
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -1664,8 +1644,6 @@ rosterCount: 7,
     releaseYear: 2000,
 
     platform: "Arcade Sega Dreamcast, PC",
-
-rosterCount: 999,
 
         characters: [],
 
@@ -1849,8 +1827,6 @@ rosterCount: 25,
     developer: "SNK",
 
     releaseYear: 2019,
-
-rosterCount: 999,
 
         characters: [],
 
@@ -2089,8 +2065,6 @@ rosterCount: 22,
 
     platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade, PC",
 
-rosterCount: 999,
-
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2172,8 +2146,6 @@ rosterCount: 21,
     releaseYear: 2023,
 
     platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade, PC",
-
-rosterCount: 999,
 
         characters: [],
 
@@ -2257,8 +2229,6 @@ rosterCount: 17,
     developer: "Capcom",
 
     releaseYear: 1993,
-
-rosterCount: 999,
 
         characters: [],
 
@@ -2723,8 +2693,6 @@ rosterCount: 41,
 
     platform: "Windows PlayStation 4 PlayStation 5, PC",
 
-rosterCount: 999,
-
             tags: ['Anime', '2D', 'Modern'],
 
     characters: [],
@@ -2746,8 +2714,6 @@ rosterCount: 999,
 
     platform: "Arcade, PC",
 
-rosterCount: 999,
-
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2766,8 +2732,6 @@ rosterCount: 999,
     releaseYear: 1997,
 
     platform: "Arcade Sega Saturn PlayStation, PC",
-
-rosterCount: 999,
 
         characters: [],
 
@@ -2788,8 +2752,6 @@ rosterCount: 999,
 
     platform: "Arcade Sega Saturn PlayStation, PC",
 
-rosterCount: 999,
-
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -2808,8 +2770,6 @@ rosterCount: 999,
     releaseYear: 1993,
 
     platform: "Arcade Sega Saturn Sega 32X, PC",
-
-rosterCount: 999,
 
         characters: [],
 
@@ -3178,7 +3138,6 @@ rosterCount: 8,
     name: "Guilty Gear Xrd -SIGN-",
     tagline: "Heaven or Hell",
     isDraft: true,
-    rosterCount: 999,
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -3692,7 +3651,6 @@ rosterCount: 8,
     name: "Melty Blood: Type Lumina - Wikipedia",
     tagline: "Type Lumina (Wiki)",
     isDraft: true,
-    rosterCount: 999,
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
