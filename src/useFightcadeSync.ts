@@ -22,6 +22,7 @@ export function useFightcadeSync() {
   const connect = async () => {
     try {
       // Prompt user to select directory
+      // @ts-ignore
       const handle = await window.showDirectoryPicker({
         mode: 'read',
       });

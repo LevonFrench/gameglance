@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import type { AppView, GameDefinition, Move } from './types';
+import type { GameDefinition, Move } from './types';
 import './index.css';
 
 import { GameSelectView } from './GameSelectView';
