@@ -52,9 +52,18 @@ export interface GameDefinition {
   tabs?: string[];
   isDraft?: boolean;
   isHidden?: boolean;
+  tags?: string[];
   notationSystem?: 'numpad' | 'traditional' | 'mk';
   characters?: { id: string, name: string, isHidden?: boolean, moveCount?: number }[];
 }
 
 export const APP_VIEWS = ['game_select', 'char_select', 'move_list', 'main_screen'] as const;
 export type AppView = typeof APP_VIEWS[number];
+
+export interface GameSystemData {
+  gameId: string;
+  buttons?: { id: string, name: string, description?: string }[];
+  mechanics?: { name: string, description: string, input?: string }[];
+  modes?: { name: string, description: string }[];
+  faqs?: { question: string, answer: string }[];
+}

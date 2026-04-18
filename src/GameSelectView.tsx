@@ -300,6 +300,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
   const [isFilterPanelOpen, setIsFilterPanelOpen] = useState<boolean>(false);
   const [sortBy, setSortBy] = useState<'alpha' | 'date'>('date');
   const [searchQuery, setSearchQuery] = useState<string>('');
+  const [tagFilter, setTagFilter] = useState<string>('All');
   const [showCards, setShowCards] = useState(disableInitialAnimation || false);
   const { theme } = useTheme();
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
@@ -333,6 +334,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
   // Sort favorites first, then apply selected sort order
     const filteredAndSortedGames = [...VISIBLE_GAMES]
     .filter(g => developerFilter === 'All' || g.developer === developerFilter)
+    .filter(g => tagFilter === 'All' || (g.tags && g.tags.includes(tagFilter)))
     .filter(g => searchQuery.trim() === '' || g.name.toLowerCase().includes(searchQuery.toLowerCase()))
     .filter(g => !showFavoritesOnly || favorites.includes(g.id))
     .sort((a, b) => {
@@ -363,6 +365,20 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
       .filter(([, count]) => count >= 5)
       .map(([dev]) => dev)
       .sort()
+  ];
+
+  const tagCounts = VISIBLE_GAMES.reduce((acc, game) => {
+    if (game.tags) {
+      game.tags.forEach(t => {
+        acc[t] = (acc[t] || 0) + 1;
+      });
+    }
+    return acc;
+  }, {} as Record<string, number>);
+
+  const allTags = [
+    'All',
+    ...Object.keys(tagCounts).sort()
   ];
 
   return (
@@ -441,9 +457,9 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                 padding: '0.6rem 1.25rem',
                 borderRadius: 'var(--radius-full)',
                 border: '1px solid',
-                borderColor: isFilterPanelOpen || developerFilter !== 'All' || showFavoritesOnly ? 'var(--accent-indigo)' : 'var(--border-subtle)',
-                background: isFilterPanelOpen || developerFilter !== 'All' || showFavoritesOnly ? 'rgba(99, 102, 241, 0.1)' : 'var(--bg-glass)',
-                color: isFilterPanelOpen || developerFilter !== 'All' || showFavoritesOnly ? 'var(--accent-indigo)' : 'var(--text-primary)',
+                borderColor: isFilterPanelOpen || developerFilter !== 'All' || tagFilter !== 'All' || showFavoritesOnly ? 'var(--accent-indigo)' : 'var(--border-subtle)',
+                background: isFilterPanelOpen || developerFilter !== 'All' || tagFilter !== 'All' || showFavoritesOnly ? 'rgba(99, 102, 241, 0.1)' : 'var(--bg-glass)',
+                color: isFilterPanelOpen || developerFilter !== 'All' || tagFilter !== 'All' || showFavoritesOnly ? 'var(--accent-indigo)' : 'var(--text-primary)',
                 fontSize: '0.9rem',
                 fontWeight: 600,
                 cursor: 'pointer',
@@ -454,12 +470,12 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                 transition: 'all 0.3s ease',
                 whiteSpace: 'nowrap',
               }}
-              onMouseOver={(e) => { if (!isFilterPanelOpen && developerFilter === 'All' && !showFavoritesOnly) e.currentTarget.style.borderColor = 'var(--accent-indigo)'; }}
-              onMouseOut={(e) => { if (!isFilterPanelOpen && developerFilter === 'All' && !showFavoritesOnly) e.currentTarget.style.borderColor = 'var(--border-subtle)'; }}
+              onMouseOver={(e) => { if (!isFilterPanelOpen && developerFilter === 'All' && tagFilter === 'All' && !showFavoritesOnly) e.currentTarget.style.borderColor = 'var(--accent-indigo)'; }}
+              onMouseOut={(e) => { if (!isFilterPanelOpen && developerFilter === 'All' && tagFilter === 'All' && !showFavoritesOnly) e.currentTarget.style.borderColor = 'var(--border-subtle)'; }}
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
               <span>Filters</span>
-              {(developerFilter !== 'All' || showFavoritesOnly) && (
+              {(developerFilter !== 'All' || tagFilter !== 'All' || showFavoritesOnly) && (
                 <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'currentColor', marginLeft: '0.25rem' }} />
               )}
             </button>
@@ -555,6 +571,35 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                         onMouseOut={(e) => { if (developerFilter !== dev) e.currentTarget.style.borderColor = 'var(--border-subtle)'; }}
                       >
                         {dev === 'Arc System Works' ? 'Arc Sys Works' : dev}
+                      </button>
+                    ))}
+                 </div>
+               </div>
+
+               {/* Tags */}
+               <div>
+                 <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Tags</div>
+                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+                    {allTags.map(tag => (
+                      <button
+                        key={tag}
+                        onClick={() => { setTagFilter(tag); setShowCards(true); }}
+                        style={{
+                          padding: '0.5rem 1rem',
+                          borderRadius: 'var(--radius-full)',
+                          border: '1px solid',
+                          borderColor: tagFilter === tag ? 'var(--accent-indigo)' : 'var(--border-subtle)',
+                          background: tagFilter === tag ? 'rgba(99, 102, 241, 0.15)' : 'transparent',
+                          color: tagFilter === tag ? 'var(--accent-indigo)' : 'var(--text-primary)',
+                          fontSize: '0.85rem',
+                          fontWeight: 600,
+                          cursor: 'pointer',
+                          transition: 'all 0.2s',
+                        }}
+                        onMouseOver={(e) => { if (tagFilter !== tag) e.currentTarget.style.borderColor = 'var(--accent-indigo)'; }}
+                        onMouseOut={(e) => { if (tagFilter !== tag) e.currentTarget.style.borderColor = 'var(--border-subtle)'; }}
+                      >
+                        {tag}
                       </button>
                     ))}
                  </div>

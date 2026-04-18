@@ -40,5 +40,12 @@
 
 ## Safe Choices vs. Creative Risks
 - **SAFE:** Dark mode default (prevents eye strain between matches), Inter body text, and standard top-app-bar navigation structure (Home/Back/Title) for immediate familiarity.
-- **RISK 1: Opinionated Discovery:** Filtering by Tier Lists and Meta applications rather than just alphabetical lists. Shifts the app from a passive wiki to an active coaching tool.
+- **RISK 1: Opinionated Discovery & Passive Wiki:** While the app functions perfectly as a highly-structured, passive data wiki (with tons of sources for moves), it goes further by filtering via Tier Lists and Meta applications. This unique display shifts the app from *just* a passive wiki to an active coaching tool.
 - **RISK 2: Aggressive Visual Notation:** Bypassing text descriptions entirely in favor of highly-styled, hardware-authentic visual glyphs and toggleable arrows/numpads. Faster visual parsing mid-match.
+
+## Future Concepts
+### "How To Play" (Instruction Cards)
+- **Concept**: A dedicated UI layer displaying game systems, button mappings, modes, and FAQs, styled like the instructional marquees and control panel stickers found on Japanese candy cabs (e.g., Vewlix, Astro City).
+- **Placement**: Accessed via a prominent button (e.g., "i" or "How to Play") injected into the main header between the Game Name and Character Select in the main views.
+- **Interaction**: Triggering the card will execute a glassmorphic pop-in or a slide-down drawer that covers the character/move list but retains the top navigation header for easy dismissal.
+- **Aesthetic Focus**: Bold, high-contrast typography, isometric joystick/button diagrams, and strict structural gridding to emulate physical arcade cabinet art.

@@ -1,0 +1,57 @@
+{
+  "gameId": "street-fighter-6",
+  "buttons": [
+    { "id": "LP", "name": "Light Punch", "description": "Fastest and weakest punch." },
+    { "id": "MP", "name": "Medium Punch", "description": "Standard punch." },
+    { "id": "HP", "name": "Heavy Punch", "description": "Slowest but strongest punch." },
+    { "id": "LK", "name": "Light Kick", "description": "Fastest and weakest kick." },
+    { "id": "MK", "name": "Medium Kick", "description": "Standard kick." },
+    { "id": "HK", "name": "Heavy Kick", "description": "Slowest but strongest kick." }
+  ],
+  "mechanics": [
+    {
+      "name": "Drive Impact",
+      "input": "HP+HK",
+      "description": "A powerful forward strike that absorbs up to two incoming hits. Costs 1 Drive bar."
+    },
+    {
+      "name": "Drive Parry",
+      "input": "MP+MK",
+      "description": "Automatically repels incoming attacks. Slowly drains Drive gauge while held. A Perfect Parry occurs if tapped right before the attack hits."
+    },
+    {
+      "name": "Drive Rush",
+      "input": "Dash out of Parry OR Dash out of cancellable normal",
+      "description": "A rapid dash forward. Costs 1 bar from parry, or 3 bars when cancelled from a normal attack."
+    },
+    {
+      "name": "Overdrive (OD) Arts",
+      "input": "Two Punch/Kick buttons",
+      "description": "Enhanced versions of Special Moves. Formerly known as EX moves. Costs 2 Drive bars."
+    }
+  ],
+  "modes": [
+    {
+      "name": "World Tour",
+      "description": "Single-player story mode where you create an avatar and learn from masters."
+    },
+    {
+      "name": "Battle Hub",
+      "description": "Online lobby system styled as an arcade. Play casual matches, extreme battles, or retro games."
+    },
+    {
+      "name": "Fighting Ground",
+      "description": "Traditional modes including Arcade, Training, Ranked Match, and Combo Trials."
+    }
+  ],
+  "faqs": [
+    {
+      "question": "What happens when my Drive Gauge is empty?",
+      "answer": "You enter 'Burnout'. You take chip damage when blocking, suffer 4 additional frames of blockstun, and cannot use any Drive mechanics."
+    },
+    {
+      "question": "What is the difference between Modern and Classic controls?",
+      "answer": "Modern controls simplify special move inputs to a single button and direction, but deal 20% less damage on those simplified specials and lock you out of some normal attacks. Classic requires traditional motion inputs but gives full access to the character's kit at 100% damage."
+    }
+  ]
+}

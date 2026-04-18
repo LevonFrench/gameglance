@@ -161,7 +161,9 @@ rosterCount: 7,
 
 rosterCount: 35,
 
-        characters: [],
+            tags: ['Anime', '2D'],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
@@ -368,7 +370,9 @@ rosterCount: 19,
 
 rosterCount: 44,
 
-        characters: [],
+            tags: ['Golden', '2D'],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
@@ -595,7 +599,9 @@ rosterCount: 16,
 
 rosterCount: 37,
 
-        characters: [],
+            tags: ['Anime', 'Vs.'],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
@@ -971,7 +977,9 @@ rosterCount: 12,
 
 rosterCount: 24,
 
-        characters: [],
+            tags: ['Anime', 'Modern'],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
@@ -1315,7 +1323,9 @@ rosterCount: 7,
 
 rosterCount: 39,
 
-        characters: [],
+            tags: ['Golden', '2D', 'Vs.'],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
@@ -1422,7 +1432,9 @@ rosterCount: 999,
 
 rosterCount: 25,
 
-        characters: [],
+            tags: ['3D', 'Modern'],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
@@ -1819,7 +1831,9 @@ rosterCount: 19,
 
 rosterCount: 25,
 
-        characters: [],
+            tags: ['3D'],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
@@ -2054,7 +2068,9 @@ rosterCount: 10,
 
 rosterCount: 22,
 
-        characters: [],
+            tags: ['3D', 'Modern'],
+
+    characters: [],
 
     
 
@@ -2201,7 +2217,9 @@ rosterCount: 11,
 
 rosterCount: 43,
 
-        characters: [],
+            tags: ['3D'],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
@@ -2221,7 +2239,9 @@ rosterCount: 43,
 
 rosterCount: 17,
 
-        characters: [],
+            tags: ['Golden', '2D'],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
@@ -2525,7 +2545,9 @@ rosterCount: 47,
 
 rosterCount: 48,
 
-        characters: [],
+            tags: ['3D', 'Modern'],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
@@ -2638,7 +2660,9 @@ rosterCount: 19,
 
 rosterCount: 50,
 
-        characters: [],
+            tags: ['3D', 'Vs.'],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
@@ -2701,7 +2725,9 @@ rosterCount: 41,
 
 rosterCount: 999,
 
-        characters: [],
+            tags: ['Anime', '2D', 'Modern'],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
@@ -3235,6 +3261,8 @@ rosterCount: 8,
     tagline: "You're Next",
     isDraft: true,
     rosterCount: 37,
+        tags: ['3D'],
+
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
