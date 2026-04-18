@@ -239,15 +239,16 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
     const isPlayStation = controller === 'playstation';
     const isArcade = controller === 'arcade';
 
+    let buttonJSX;
+
     if (isArcade) {
       // Custom beautiful Vewlix style Recessed Buttons for arcade
       let bgColor = '#ef4444'; // Red default
       if (['MP', 'MK', 'RP'].includes(label)) bgColor = '#eab308'; // Yellow
       if (['HP', 'HK'].includes(label)) bgColor = '#3b82f6'; // Blue
 
-      return (
+      buttonJSX = (
         <div
-          key={idx}
           style={{
             width: `${btnSize}px`,
             height: `${btnSize}px`,
@@ -264,51 +265,72 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
             textShadow: '0 1px 3px rgba(0,0,0,0.9), 0 -1px 0 rgba(0,0,0,0.4)',
             letterSpacing: '-0.05em',
             flexShrink: 0,
-            ...styleOverrides
           }}
         >
           {label}
         </div>
       );
+    } else {
+      buttonJSX = (
+        <div
+          style={{
+            width: `${btnSize}px`,
+            height: `${btnSize}px`,
+            backgroundColor: isPlayStation ? (isDark ? '#161625' : '#1a1a2e') : iconColor,
+            borderRadius: '50%',
+            color: isPlayStation ? iconColor : '#fff',
+            fontWeight: 900,
+            fontSize: large ? '1.3rem' : '0.75rem',
+            boxShadow: `
+              0 3px 6px rgba(0,0,0,${isDark ? '0.4' : '0.15'}),
+              inset 0 -3px 0 rgba(0,0,0,0.2),
+              inset 0 2px 0 rgba(255,255,255,${isDark ? '0.06' : (isPlayStation ? '0.08' : '0.3')}),
+              0 0 0 1.5px ${isPlayStation ? iconColor + '25' : 'rgba(0,0,0,0.2)'}
+            `,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textShadow: isPlayStation
+              ? `0 0 10px ${iconColor}50, 0 1px 3px rgba(0,0,0,0.8)`
+              : '0 1px 3px rgba(0,0,0,0.6)',
+            flexShrink: 0,
+          }}
+        >
+          <span style={{
+            transform: isPlayStation
+              ? (['▢', '△', '✕', '◯'].includes(label) ? 'scale(1.4)' : 'scale(1.1)')
+              : (label.length > 1 ? 'scale(0.95)' : 'scale(1.2)'),
+            display: 'inline-block',
+            lineHeight: 1,
+            marginTop: isPlayStation && ['▢', '△', '✕', '◯'].includes(label) ? '-2px' : '0',
+          }}>
+            {label}
+          </span>
+        </div>
+      );
+    }
+
+    if (input === 'P' || input === 'K') {
+      return (
+        <div key={idx} style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', ...styleOverrides }}>
+          <div style={{
+            position: 'absolute',
+            top: large ? '-14px' : '-11px',
+            fontSize: large ? '0.65rem' : '0.45rem',
+            fontWeight: 900,
+            color: 'var(--text-muted)',
+            letterSpacing: '0.05em'
+          }}>
+            ANY
+          </div>
+          {buttonJSX}
+        </div>
+      );
     }
 
     return (
-      <div
-        key={idx}
-        style={{
-          width: `${btnSize}px`,
-          height: `${btnSize}px`,
-          backgroundColor: isPlayStation ? (isDark ? '#161625' : '#1a1a2e') : iconColor,
-          borderRadius: '50%',
-          color: isPlayStation ? iconColor : '#fff',
-          fontWeight: 900,
-          fontSize: large ? '1.3rem' : '0.75rem',
-          boxShadow: `
-            0 3px 6px rgba(0,0,0,${isDark ? '0.4' : '0.15'}),
-            inset 0 -3px 0 rgba(0,0,0,0.2),
-            inset 0 2px 0 rgba(255,255,255,${isDark ? '0.06' : (isPlayStation ? '0.08' : '0.3')}),
-            0 0 0 1.5px ${isPlayStation ? iconColor + '25' : 'rgba(0,0,0,0.2)'}
-          `,
-          display: 'flex',
-          alignItems: 'center',
-          justifyContent: 'center',
-          textShadow: isPlayStation
-            ? `0 0 10px ${iconColor}50, 0 1px 3px rgba(0,0,0,0.8)`
-            : '0 1px 3px rgba(0,0,0,0.6)',
-          flexShrink: 0,
-          ...styleOverrides
-        }}
-      >
-        <span style={{
-          transform: isPlayStation
-            ? (['▢', '△', '✕', '◯'].includes(label) ? 'scale(1.4)' : 'scale(1.1)')
-            : (label.length > 1 ? 'scale(0.95)' : 'scale(1.2)'),
-          display: 'inline-block',
-          lineHeight: 1,
-          marginTop: isPlayStation && ['▢', '△', '✕', '◯'].includes(label) ? '-2px' : '0',
-        }}>
-          {label}
-        </span>
+      <div key={idx} style={{ ...styleOverrides }}>
+        {buttonJSX}
       </div>
     );
   };
