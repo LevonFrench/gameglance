@@ -66,17 +66,6 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
   };
 
   // Mouse-reactive glow
-  const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>, charId: string) => {
-    const el = cardRefs.current.get(charId);
-    if (!el) return;
-    const rect = el.getBoundingClientRect();
-    const x = ((e.clientX - rect.left) / rect.width) * 100;
-    const y = ((e.clientY - rect.top) / rect.height) * 100;
-    el.style.setProperty('--mouse-x', `${x}%`);
-    el.style.setProperty('--mouse-y', `${y}%`);
-  };
-  
-  // Sort favorites first, then alphabetical
   const sortedCharacters = [...characters].sort((a, b) => {
     const aFav = favorites.includes(a.id) ? 1 : 0;
     const bFav = favorites.includes(b.id) ? 1 : 0;
@@ -290,7 +279,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
         margin: '2rem auto',
         animation: disableInitialAnimation ? 'none' : 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both',
       }}>
-        {sortedCharacters.map((character, index) => {
+        {sortedCharacters.map((character) => {
           const isComingSoon = character.name.includes('Coming Soon');
           const isHovered = hoveredCharacterId === character.id;
           const rawName = character.name.replace(/ \(Coming Soon\)/, '');
@@ -349,7 +338,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
         border: '4px solid #b81c22', // Deep red border for SNK vibe
         animation: disableInitialAnimation ? 'none' : 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both',
       }}>
-        {sortedCharacters.map((character, index) => {
+        {sortedCharacters.map((character) => {
           const isComingSoon = character.name.includes('Coming Soon');
           const isHovered = hoveredCharacterId === character.id;
           const rawName = character.name.replace(/ \(Coming Soon\)/, '');
@@ -470,7 +459,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
         boxShadow: '0 0 20px rgba(0, 85, 255, 0.4)',
         animation: disableInitialAnimation ? 'none' : 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both',
       }}>
-        {sortedCharacters.map((character, index) => {
+        {sortedCharacters.map((character) => {
           const isComingSoon = character.name.includes('Coming Soon');
           const isHovered = hoveredCharacterId === character.id;
           const rawName = character.name.replace(/ \(Coming Soon\)/, '');
@@ -546,7 +535,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
         animation: disableInitialAnimation ? 'none' : 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both',
       }}>
         <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', width: '100%' }}>
-          {sortedCharacters.map((character, index) => {
+          {sortedCharacters.map((character) => {
             const isComingSoon = character.name.includes('Coming Soon');
             const isHovered = hoveredCharacterId === character.id;
             const rawName = character.name.replace(/ \(Coming Soon\)/, '');
@@ -603,7 +592,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
         padding: '1rem',
         animation: disableInitialAnimation ? 'none' : 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both',
       }}>
-        {sortedCharacters.map((character, index) => {
+        {sortedCharacters.map((character) => {
           const isComingSoon = character.name.includes('Coming Soon');
           const isHovered = hoveredCharacterId === character.id;
           const rawName = character.name.replace(/ \(Coming Soon\)/, '');

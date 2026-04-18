@@ -29,7 +29,7 @@ export const App: React.FC = () => {
     }
   });
   const [controller, setController] = useState<ControllerType>('playstation');
-  const [cardTheme, setCardTheme] = useState<CardTheme>(() => {
+  const [cardTheme] = useState<CardTheme>(() => {
     const val = localStorage.getItem('gg_card_theme');
     return (CARD_THEMES as readonly string[]).includes(val || '') ? (val as CardTheme) : 'default-dark';
   });
@@ -173,22 +173,7 @@ export const App: React.FC = () => {
     });
   };
 
-  const handleToggleCategory = (moves: Move[], select: boolean) => {
-    if (!selectedGame || !selectedCharacter) return;
-    setSelectedPlaylist(prev => {
-      if (select) {
-        const newMoves = moves
-          .filter(m => !prev.find(pm => pm.move.id === m.id && pm.gameId === selectedGame.id && pm.characterId === selectedCharacter))
-          .map(move => ({ gameId: selectedGame.id, characterId: selectedCharacter, move }));
-        return [...prev, ...newMoves];
-      } else {
-        return prev.filter(pm => {
-          if (pm.gameId !== selectedGame.id || pm.characterId !== selectedCharacter) return true;
-          return !moves.find(m => m.id === pm.move.id);
-        });
-      }
-    });
-  };
+  
 
   const handleLaunchMainScreen = () => {
     navigate('main_screen');
@@ -240,7 +225,6 @@ export const App: React.FC = () => {
          notationSystem={(notationOverride === 'auto' ? selectedGame.notationSystem : notationOverride) as 'numpad' | 'traditional' | 'mk' | undefined}
          onSetController={setController}
          onToggleMove={handleToggleMove}
-         onToggleCategory={handleToggleCategory}
          onLaunchMainScreen={handleLaunchMainScreen}
          onBack={() => navigate('char_select', selectedGame)}
          onHome={() => navigate('game_select')}
@@ -280,8 +264,6 @@ export const App: React.FC = () => {
       <BottomHeader 
         controller={controller}
         onSetController={setController}
-        cardTheme={cardTheme}
-        onSetCardTheme={setCardTheme}
         notationSystem={notationOverride}
         onSetNotationSystem={(val) => {
           setNotationOverride(val);

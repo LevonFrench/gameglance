@@ -44,13 +44,18 @@ const GLYPH_LABEL_MAP: Record<string, Record<ControllerType, string>> = {
   '720': { playstation: '↻↻', xbox: '↻↻', arcade: '↻↻', switch: '↻↻', neogeo: '↻↻', wii: '↻↻', mk: '↻↻', genesis: '↻↻', snes: '↻↻', sfami: '↻↻', cps: '↻↻', tekken: '↻↻' },
 };
 
-export const getGlyphLabel = (input: string, controller: ControllerType): string => {
+export const getGlyphLabel = (input: string, controller: ControllerType, notationSystem: string = 'traditional'): string => {
   const normInput = input.replace(/[\][]]/g, '').toUpperCase();
   const lowerInput = input.replace(/[\][]]/g, '').toLowerCase();
 
+  // If numpad notation is explicitly requested and we are mapping digits, don't map to face buttons unless playing tekken/mk
+  if (notationSystem === 'numpad' && /^[12346789]$/.test(normInput) && !['tekken', 'mk'].includes(controller)) {
+    return normInput;
+  }
+
   if (GLYPH_LABEL_MAP[normInput]) return GLYPH_LABEL_MAP[normInput][controller];
   if (GLYPH_LABEL_MAP[lowerInput]) return GLYPH_LABEL_MAP[lowerInput][controller];
-  return input.replace(/[\][]/g, '');
+  return input.replace(/[\][]]/g, '');
 };
 
 export const getGlyphColor = (input: string, controller: ControllerType): string => {

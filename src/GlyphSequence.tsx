@@ -37,8 +37,9 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
       result.push(raw);
       continue;
     }
-    
+
     if (isDirectionWord(raw)) {
+      if (raw === 'neutral') continue;
       if (notationSystem === 'numpad') {
         result.push(REVERSE_NUMPAD_MAP[raw] || raw);
       } else {
@@ -56,8 +57,10 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
       if (t === '/') { result.push('or'); continue; }
       if (t === '+') { result.push('+'); continue; }
       if (t === '[Cancel]') { result.push(t); continue; }
+      if (t === '5') { continue; } // Skip standalone 5
 
       if (isDirectionWord(t)) {
+        if (t === 'neutral') continue;
         if (notationSystem === 'numpad') result.push(REVERSE_NUMPAD_MAP[t] || t);
         else result.push(t);
         continue;
@@ -71,11 +74,21 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
         continue;
       }
 
-      const match = t.match(/^([a-zA-Z.+]*?)([1-9]+)([a-zA-Z]*)$/);
+      let processingT = t;
+      let prefix = '';
+      if (processingT.startsWith('j.')) { prefix = 'j.'; processingT = processingT.substring(2); }
+      else if (processingT.startsWith('cr.')) { prefix = 'cr.'; processingT = processingT.substring(3); }
+      else if (processingT.startsWith('st.')) { prefix = 'st.'; processingT = processingT.substring(3); }
+
+      const cleanT = processingT.replace(/\[|\]/g, ''); // Remove charge brackets for parsing
+
+      const match = cleanT.match(/^([a-zA-Z.+]*?)([1-9]+)([a-zA-Z]*)$/);
       if (match) {
+        if (prefix) result.push(prefix);
         if (match[1]) result.push(match[1]);
-        
+
         for (const digit of match[2]) {
+          if (digit === '5') continue; // Filter out 5 from numpad sequences like 656 or 5P
           if (notationSystem === 'numpad') {
             result.push(digit);
           } else {
@@ -83,10 +96,24 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
             else result.push(digit);
           }
         }
-        
-        if (match[3]) result.push(match[3]);
+
+        if (match[3]) {
+          const buttonMatches = match[3].match(/(LP|MP|HP|LK|MK|HK|PP|KK|PPP|KKK|P|K)/g);
+          if (buttonMatches && buttonMatches.join('') === match[3]) {
+            result.push(...buttonMatches);
+          } else {
+            result.push(match[3]);
+          }
+        }
       } else {
-        result.push(t);
+        // No numbers, just text like LPLK
+        if (prefix) result.push(prefix);
+        const buttonMatches = cleanT.match(/(LP|MP|HP|LK|MK|HK|PP|KK|PPP|KKK|P|K)/g);
+        if (buttonMatches && buttonMatches.join('') === cleanT) {
+          result.push(...buttonMatches);
+        } else {
+          result.push(processingT);
+        }
       }
     }
   }
@@ -135,11 +162,11 @@ const getMacroSubButtons = (macro: string, isSNK: boolean): string[] => {
   if (['P', 'PUNCH'].includes(norm)) return ['P']; // Render as single P
   if (['PP'].includes(norm)) return isSNK ? ['LP', 'HP'] : ['LP', 'MP'];
   if (['PPP'].includes(norm)) return isSNK ? ['LP', 'HP'] : ['LP', 'MP', 'HP'];
-  
+
   if (['K', 'KICK'].includes(norm)) return ['K']; // Render as single K
   if (['KK'].includes(norm)) return isSNK ? ['LK', 'HK'] : ['LK', 'MK'];
   if (['KKK'].includes(norm)) return isSNK ? ['LK', 'HK'] : ['LK', 'MK', 'HK'];
-  
+
   return [];
 };
 
@@ -191,7 +218,7 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
       );
     }
 
-    const label = getGlyphLabel(input, controller);
+    const label = getGlyphLabel(input, controller, notationSystem);
     const iconColor = getGlyphColor(input, controller);
 
     // Direction
@@ -345,7 +372,7 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
       {expandedInputs.map((input, idx) => {
         const norm = input.toUpperCase().trim();
         const subButtons = getMacroSubButtons(norm, controller === 'neogeo');
-        
+
         // If it's a multi-button macro (PP, PPP, KK, KKK), render them stacked!
         if (subButtons.length > 1) {
           const overlap = large ? '-18px' : '-12px';

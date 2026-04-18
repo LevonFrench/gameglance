@@ -1,12 +1,8 @@
 import type { ControllerType } from './glyphMap';
-import type { CardTheme } from './types';
-import { CARD_THEMES, THEME_DISPLAY_NAMES } from './types';
 
 interface Props {
   controller: ControllerType;
   onSetController: (c: ControllerType) => void;
-  cardTheme: CardTheme;
-  onSetCardTheme: (t: CardTheme) => void;
   notationSystem: string;
   onSetNotationSystem: (n: string) => void;
   onOpenFightcadeSync?: () => void;
@@ -16,8 +12,6 @@ interface Props {
 export const BottomHeader: React.FC<Props> = ({ 
   controller, 
   onSetController, 
-  cardTheme, 
-  onSetCardTheme,
   notationSystem,
   onSetNotationSystem,
   onOpenFightcadeSync,
@@ -43,32 +37,6 @@ export const BottomHeader: React.FC<Props> = ({
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
         
-        {/* Card Theme Setting */}
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-          <label style={{ fontSize: 'calc(0.8rem * var(--font-scale))', color: 'var(--text-secondary)', fontWeight: 500 }}>Cards:</label>
-          <select
-            value={cardTheme}
-            onChange={(e) => onSetCardTheme(e.target.value as CardTheme)}
-            style={{
-              padding: 'calc(0.35rem * var(--spacing-scale)) calc(0.65rem * var(--spacing-scale))',
-              background: 'var(--bg-input)',
-              border: '1px solid var(--border-subtle)',
-              borderRadius: 'var(--radius-md)',
-              color: 'var(--text-primary)',
-              fontSize: 'calc(0.8rem * var(--font-scale))',
-              fontFamily: 'inherit',
-              cursor: 'pointer',
-              outline: 'none',
-              transition: 'border-color 0.2s',
-            }}
-          >
-            {CARD_THEMES.map(theme => (
-              <option key={theme} value={theme} style={{ background: 'var(--option-bg)' }}>
-                {THEME_DISPLAY_NAMES[theme]}
-              </option>
-            ))}
-          </select>
-        </div>
 
         <div style={{ width: '1px', height: '20px', background: 'var(--border-subtle)' }} />
 

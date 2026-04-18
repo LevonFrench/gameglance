@@ -9,27 +9,19 @@ import { AmbientMesh } from './AmbientMesh';
 interface Props {
   game: GameDefinition;
   characterId: string;
-  selectedPlaylist: Move[];
+  selectedPlaylist: any[];
   controller: ControllerType;
   notationSystem?: 'numpad' | 'traditional' | 'mk';
   onSetController: (c: ControllerType) => void;
   onToggleMove: (move: Move) => void;
-  onToggleCategory?: (moves: Move[], select: boolean) => void;
   onLaunchMainScreen: () => void;
   onBack: () => void;
   onHome: () => void;
 }
 
-const TYPE_COLORS: Record<string, string> = {
-  normal: '#6366f1',
-  special: '#f59e0b',
-  super: '#ef4444',
-  throw: '#22d3ee',
-  unique: '#8b5cf6',
-  common: '#10b981',
-};
 
-export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, notationSystem, onToggleMove, onToggleCategory, onLaunchMainScreen, onBack, onHome }) => {
+
+export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, notationSystem, onToggleMove, onLaunchMainScreen, onBack, onHome }) => {
   useArrowNavigation('[id^="move-"]');
 
   const [characterData, setCharacterData] = useState<CharacterExport | null>(null);
@@ -50,24 +42,23 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
   }, []);
 
   useEffect(() => {
+    const GLOBAL_DEFAULT_SORT = ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves'];
     const stored = localStorage.getItem('fgc_tab_order');
+    let pref = GLOBAL_DEFAULT_SORT;
     if (stored) {
       try {
-        const pref = JSON.parse(stored);
-        const sorted = [...(game.tabs || [])].sort((a,b) => {
-          let idxA = pref.indexOf(a);
-          let idxB = pref.indexOf(b);
-          if (idxA === -1) idxA = 999;
-          if (idxB === -1) idxB = 999;
-          return idxA - idxB;
-        });
-        setOrderedTabs(sorted);
-      } catch {
-        setOrderedTabs(game.tabs || []);
-      }
-    } else {
-      setOrderedTabs(game.tabs || []);
+        pref = JSON.parse(stored);
+      } catch {}
     }
+    const combinedTabs = Array.from(new Set([...GLOBAL_DEFAULT_SORT, ...(game.tabs || [])]));
+    const sorted = combinedTabs.sort((a,b) => {
+      let idxA = pref.indexOf(a);
+      let idxB = pref.indexOf(b);
+      if (idxA === -1) idxA = 999;
+      if (idxB === -1) idxB = 999;
+      return idxA - idxB;
+    });
+    setOrderedTabs(sorted);
   }, [game.tabs]);
 
   useEffect(() => {
@@ -237,7 +228,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     );
   }
 
-  const selectedCount = selectedPlaylist.length;
+  const selectedCount = selectedPlaylist.filter(m => m.gameId === game.id && m.characterId === characterId).length;
   const effectiveController = game.id === 'tatsunoko-vs-capcom-ultimate-all-stars' ? 'wii' : controller;
 
   return (
@@ -647,7 +638,6 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                   }}>
                     {displayList.map((move, idx) => {
               const isSelected = selectedPlaylist.some(m => m.id === move.id);
-              const typeColor = TYPE_COLORS[move.type] || '#6366f1';
 
               return (
                 <div
@@ -668,10 +658,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                   }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                    <div style={{ display: 'flex', flexDirection: 'column' }}>
-                      <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--accent-yellow, #ffcc00)', fontWeight: 600 }}>
-                        {move.type}
-                      </div>
+                      <div style={{ display: 'flex', flexDirection: 'column' }}>
                       <h2 style={{
                         fontFamily: "'Outfit', sans-serif",
                         fontSize: '1.1rem',
@@ -721,7 +708,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                             letterSpacing: '0.05em',
                           }}>SU</span>
                           <span style={{
-                            color: isSelected ? typeColor : 'var(--text-secondary)',
+                            color: isSelected ? 'var(--accent-indigo)' : 'var(--text-secondary)',
                             fontWeight: 700,
                           }}>
                             {move.frameData.startup}
@@ -743,7 +730,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                             letterSpacing: '0.05em',
                           }}>ACT</span>
                           <span style={{
-                            color: isSelected ? typeColor : 'var(--text-secondary)',
+                            color: isSelected ? 'var(--accent-indigo)' : 'var(--text-secondary)',
                             fontWeight: 700,
                           }}>
                             {move.frameData.active.split('-')[0]}-{move.frameData.active.split('-')[1] || ''}

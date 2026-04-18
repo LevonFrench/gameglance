@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import type { Move, PlaylistItem } from './types';
+import type { PlaylistItem } from './types';
 import { GlyphSequence } from './GlyphSequence';
 import type { ControllerType } from './glyphMap';
 import { useTheme } from './ThemeContext';
@@ -21,7 +21,7 @@ interface WakeLockSentinel {
   release: () => Promise<void>;
 }
 
-export const GameGlanceMainView: React.FC<Props> = ({ playlist, selectedGameId, gameName, selectedCharacterId, characterName, controller, notationSystem, onExit }) => {
+export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, selectedCharacterId, characterName, controller, notationSystem, onExit }) => {
   const uniqueCharacters = Array.from(new Set(playlist.map(p => p.characterId)));
   const [activeTab, setActiveTab] = useState(
     uniqueCharacters.includes(selectedCharacterId) ? selectedCharacterId : uniqueCharacters[0]
