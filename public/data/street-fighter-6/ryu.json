@@ -4,44 +4,654 @@
   "game": "Street Fighter 6",
   "movesList": [
     {
-      "name": "Power Wave",
-      "input": "236P",
-      "type": "Special"
+      "id": "5lp",
+      "name": "5LP",
+      "type": "normal",
+      "input": "Standing Light Punch",
+      "frameData": {
+        "startup": "4",
+        "active": "3",
+        "recovery": "7",
+        "advantage": "-1"
+      },
+      "damage": "300"
     },
     {
-      "name": "Burn Knuckle",
-      "input": "214P",
-      "type": "Special"
+      "id": "5mp",
+      "name": "5MP",
+      "type": "normal",
+      "input": "Standing Medium Punch",
+      "frameData": {
+        "startup": "6",
+        "active": "4",
+        "recovery": "11(13)",
+        "advantage": "-1"
+      },
+      "damage": "600"
     },
     {
-      "name": "Crack Shoot",
-      "input": "214K",
-      "type": "Special"
+      "id": "5hp",
+      "name": "5HP",
+      "type": "normal",
+      "input": "Standing Heavy Punch",
+      "frameData": {
+        "startup": "10",
+        "active": "5",
+        "recovery": "18",
+        "advantage": "-2"
+      },
+      "damage": "800"
     },
     {
-      "name": "Rising Tackle",
-      "input": "[2]8P",
-      "type": "Special"
+      "id": "5lk",
+      "name": "5LK",
+      "type": "normal",
+      "input": "Standing Light Kick",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "11",
+        "advantage": "-4"
+      },
+      "damage": "300"
     },
     {
-      "name": "Power Charge",
-      "input": "623K",
-      "type": "Special"
+      "id": "5mk",
+      "name": "5MK",
+      "type": "normal",
+      "input": "Standing Medium Kick",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-4"
+      },
+      "damage": "700"
     },
     {
-      "name": "Buster Wolf",
-      "input": "236236K",
-      "type": "Super Art 1"
+      "id": "5hk",
+      "name": "5HK",
+      "type": "normal",
+      "input": "Standing Heavy Kick",
+      "frameData": {
+        "startup": "12",
+        "active": "4",
+        "recovery": "20(22)",
+        "advantage": "+1"
+      },
+      "damage": "900"
     },
     {
-      "name": "Power Geyser",
-      "input": "214214P",
-      "type": "Super Art 2"
+      "id": "2lp",
+      "name": "2LP",
+      "type": "normal",
+      "input": "Crouching Light Punch",
+      "frameData": {
+        "startup": "4",
+        "active": "2",
+        "recovery": "9",
+        "advantage": "-1"
+      },
+      "damage": "300"
     },
     {
-      "name": "Rising Force",
-      "input": "236236P",
-      "type": "Super Art 3"
+      "id": "2mp",
+      "name": "2MP",
+      "type": "normal",
+      "input": "Crouching Medium Punch",
+      "frameData": {
+        "startup": "6",
+        "active": "4",
+        "recovery": "13(15)",
+        "advantage": "0"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "2hp",
+      "name": "2HP",
+      "type": "normal",
+      "input": "Crouching Heavy Punch",
+      "frameData": {
+        "startup": "9",
+        "active": "6",
+        "recovery": "21(22)",
+        "advantage": "-7"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "2lk",
+      "name": "2LK",
+      "type": "normal",
+      "input": "Crouching Light Kick",
+      "frameData": {
+        "startup": "5",
+        "active": "2",
+        "recovery": "10",
+        "advantage": "-1"
+      },
+      "damage": "200"
+    },
+    {
+      "id": "2mk",
+      "name": "2MK",
+      "type": "normal",
+      "input": "Crouching Medium Kick",
+      "frameData": {
+        "startup": "8",
+        "active": "3",
+        "recovery": "19",
+        "advantage": "-6"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "2hk",
+      "name": "2HK",
+      "type": "normal",
+      "input": "Low Spinning Sweep",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "23(29)",
+        "advantage": "-12"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "j-lp",
+      "name": "j.LP",
+      "type": "normal",
+      "input": "Jumping Light Punch",
+      "frameData": {
+        "startup": "4",
+        "active": "10",
+        "recovery": "3 land",
+        "advantage": "0(+5)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "j-mp",
+      "name": "j.MP",
+      "type": "normal",
+      "input": "Jumping Medium Punch",
+      "frameData": {
+        "startup": "8",
+        "active": "2,3",
+        "recovery": "3 land",
+        "advantage": "+6(+9)"
+      },
+      "damage": "350x2"
+    },
+    {
+      "id": "j-hp",
+      "name": "j.HP",
+      "type": "normal",
+      "input": "Jumping Heavy Punch",
+      "frameData": {
+        "startup": "9",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+4(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "j-lk",
+      "name": "j.LK",
+      "type": "normal",
+      "input": "Jumping Light Kick",
+      "frameData": {
+        "startup": "6",
+        "active": "10",
+        "recovery": "3 land",
+        "advantage": "+1(+6)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "j-mk",
+      "name": "j.MK",
+      "type": "normal",
+      "input": "Jumping Medium Kick",
+      "frameData": {
+        "startup": "7",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+4(+9)"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "j-hk",
+      "name": "j.HK",
+      "type": "normal",
+      "input": "Jumping Heavy Kick",
+      "frameData": {
+        "startup": "10",
+        "active": "8",
+        "recovery": "3 land",
+        "advantage": "+5(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "6mp",
+      "name": "6MP",
+      "type": "normal",
+      "input": "Collarbone Breaker",
+      "frameData": {
+        "startup": "20",
+        "active": "1,3",
+        "recovery": "19",
+        "advantage": "-3"
+      },
+      "damage": "300x2"
+    },
+    {
+      "id": "6hp",
+      "name": "6HP",
+      "type": "normal",
+      "input": "Solar Plexus Strike",
+      "frameData": {
+        "startup": "20",
+        "active": "2,3",
+        "recovery": "16",
+        "advantage": "+3"
+      },
+      "damage": "400x2"
+    },
+    {
+      "id": "4hp",
+      "name": "4HP",
+      "type": "normal",
+      "input": "Short Uppercut",
+      "frameData": {
+        "startup": "7",
+        "active": "4",
+        "recovery": "25(26)",
+        "advantage": "-13"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "4hk",
+      "name": "4HK",
+      "type": "normal",
+      "input": "Axe Kick",
+      "frameData": {
+        "startup": "10(20)",
+        "active": "5(5)3",
+        "recovery": "21",
+        "advantage": "-4"
+      },
+      "damage": "400x2"
+    },
+    {
+      "id": "6hk",
+      "name": "6HK",
+      "type": "normal",
+      "input": "Whirlwind Kick",
+      "frameData": {
+        "startup": "16",
+        "active": "4",
+        "recovery": "20",
+        "advantage": "-4"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "6hk-214k",
+      "name": "6HK~214K",
+      "type": "normal",
+      "input": "Aerial Tatsumaki Senpu-kyaku",
+      "frameData": {
+        "startup": "11",
+        "active": "3",
+        "recovery": "13+16 land",
+        "advantage": "-16"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "5hp-hk",
+      "name": "5HP~HK",
+      "type": "unique",
+      "input": "High Double Strike",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "20",
+        "advantage": "-8(-18)"
+      },
+      "damage": "1000"
+    },
+    {
+      "id": "5mp-lk",
+      "name": "5MP~LK",
+      "type": "unique",
+      "input": "Fuwa Triple Strike 1",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "16",
+        "advantage": "-4"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "lplk",
+      "name": "LPLK",
+      "type": "throw",
+      "input": "Shoulder Throw",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "4lplk",
+      "name": "4LPLK",
+      "type": "throw",
+      "input": "Somersault Throw",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "hphk",
+      "name": "HPHK",
+      "type": "common",
+      "input": "Shingeki",
+      "frameData": {
+        "startup": "26",
+        "active": "2",
+        "recovery": "35",
+        "advantage": "-3 / Wall Splat HKD +72"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "6hphk",
+      "name": "6HPHK",
+      "type": "common",
+      "input": "Chest Strike (Block)",
+      "frameData": {
+        "startup": "20",
+        "active": "3",
+        "recovery": "26(31)",
+        "advantage": "-6"
+      },
+      "damage": "500 recoverable"
+    },
+    {
+      "id": "mpmk",
+      "name": "MPMK",
+      "type": "common",
+      "input": "Drive Parry",
+      "frameData": {
+        "startup": "1",
+        "active": "12 or until released",
+        "recovery": "33(1)(11)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "mpmk-66",
+      "name": "MPMK~66",
+      "type": "common",
+      "input": "Parry Drive Rush",
+      "frameData": {
+        "startup": "3+8",
+        "active": "-",
+        "recovery": "15(37)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "22p",
+      "name": "22P",
+      "type": "special",
+      "input": "Denjin Charge",
+      "frameData": {
+        "startup": "50",
+        "active": "-",
+        "recovery": "2",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "236lp",
+      "name": "236LP",
+      "type": "special",
+      "input": "Hadoken",
+      "frameData": {
+        "startup": "16",
+        "active": "-",
+        "recovery": "31",
+        "advantage": "-5"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "236hp",
+      "name": "236HP",
+      "type": "special",
+      "input": "Denjin Charge Hadoken",
+      "frameData": {
+        "startup": "12",
+        "active": "-",
+        "recovery": "28",
+        "advantage": "-1"
+      },
+      "damage": "500x2"
+    },
+    {
+      "id": "623lp",
+      "name": "623LP",
+      "type": "special",
+      "input": "Shoryuken",
+      "frameData": {
+        "startup": "5",
+        "active": "10",
+        "recovery": "21+12 land",
+        "advantage": "-23"
+      },
+      "damage": "1100(800)"
+    },
+    {
+      "id": "214lk",
+      "name": "214LK",
+      "type": "special",
+      "input": "Tatsumaki Senpu-kyaku",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "14+18 land",
+        "advantage": "-15"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "j-214k",
+      "name": "j.214K",
+      "type": "special",
+      "input": "Aerial Tatsumaki Senpu-kyaku",
+      "frameData": {
+        "startup": "11",
+        "active": "2(5)2(6)2",
+        "recovery": "16 land",
+        "advantage": "-6(+3)"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "236lk",
+      "name": "236LK",
+      "type": "special",
+      "input": "High Blade Kick",
+      "frameData": {
+        "startup": "14",
+        "active": "6",
+        "recovery": "22",
+        "advantage": "-11(-7)"
+      },
+      "damage": "1100"
+    },
+    {
+      "id": "214lp",
+      "name": "214LP",
+      "type": "special",
+      "input": "Hashogeki",
+      "frameData": {
+        "startup": "12",
+        "active": "6",
+        "recovery": "18",
+        "advantage": "-3"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "214hp",
+      "name": "214HP",
+      "type": "special",
+      "input": "Denjin Charge Hashogeki",
+      "frameData": {
+        "startup": "20",
+        "active": "6",
+        "recovery": "19(31)",
+        "advantage": "+3"
+      },
+      "damage": "400x2"
+    },
+    {
+      "id": "236236p",
+      "name": "236236P",
+      "type": "super",
+      "input": "Shinku Hadoken",
+      "frameData": {
+        "startup": "7",
+        "active": "-",
+        "recovery": "79",
+        "advantage": "-24"
+      },
+      "damage": "400x5 (2000)"
+    },
+    {
+      "id": "214214p",
+      "name": "214214P",
+      "type": "super",
+      "input": "Shin Hashogeki Lv.1",
+      "frameData": {
+        "startup": "12",
+        "active": "6",
+        "recovery": "39",
+        "advantage": "-20"
+      },
+      "damage": "2800"
+    },
+    {
+      "id": "214214p-hold-lv-2",
+      "name": "214214P (Hold Lv.2)",
+      "type": "super",
+      "input": "Shin Hashogeki Lv.2",
+      "frameData": {
+        "startup": "18~",
+        "active": "6",
+        "recovery": "39",
+        "advantage": "-20"
+      },
+      "damage": "2900"
+    },
+    {
+      "id": "214214p-hold-lv-3",
+      "name": "214214P (Hold Lv.3)",
+      "type": "super",
+      "input": "Shin Hashogeki Lv.3",
+      "frameData": {
+        "startup": "50~",
+        "active": "6",
+        "recovery": "39",
+        "advantage": "-20"
+      },
+      "damage": "3000"
+    },
+    {
+      "id": "236236k",
+      "name": "236236K",
+      "type": "super",
+      "input": "Shin Shoryuken",
+      "frameData": {
+        "startup": "5(2)",
+        "active": "12",
+        "recovery": "32+39 land",
+        "advantage": "-50(-54)"
+      },
+      "damage": "4000 (3600)"
+    },
+    {
+      "id": "5pppkkk",
+      "name": "5PPPKKK",
+      "type": "normal",
+      "input": "Neutral Taunt",
+      "frameData": {
+        "startup": "210 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "6pppkkk",
+      "name": "6PPPKKK",
+      "type": "normal",
+      "input": "Forward Taunt",
+      "frameData": {
+        "startup": "124 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "4pppkkk",
+      "name": "4PPPKKK",
+      "type": "normal",
+      "input": "Back Taunt",
+      "frameData": {
+        "startup": "209 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "2pppkkk",
+      "name": "2PPPKKK",
+      "type": "normal",
+      "input": "Down Taunt",
+      "frameData": {
+        "startup": "154 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
     }
   ]
 }

@@ -102,6 +102,20 @@ const renderDirectionalSVG = (label: string, large: boolean, isDark: boolean) =>
   );
 };
 
+const expandMacroInput = (input: string, controller: ControllerType): string[] => {
+  const norm = input.toUpperCase().trim();
+  const isSNK = controller === 'neogeo';
+  
+  if (['P', 'PUNCH', 'PP', 'PPP'].includes(norm)) {
+    return isSNK ? ['LP', 'HP'] : ['LP', 'MP', 'HP'];
+  }
+  if (['K', 'KICK', 'KK', 'KKK'].includes(norm)) {
+    return isSNK ? ['LK', 'HK'] : ['LK', 'MK', 'HK'];
+  }
+  
+  return [input];
+};
+
 export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller, large = false, notationSystem = 'numpad' }) => {
   const { theme } = useTheme();
   const isDark = theme === 'dark';
@@ -109,7 +123,10 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
   const expandedInputs = React.useMemo(() => {
     // Tekken uses 1234 for buttons, so we bypass numpad parsing for it.
     const effectiveSystem = controller === 'tekken' ? 'traditional' : notationSystem;
-    return tokenizeInputs(inputs, effectiveSystem);
+    const tokens = tokenizeInputs(inputs, effectiveSystem);
+    
+    // Expand macros
+    return tokens.flatMap(token => expandMacroInput(token, controller));
   }, [inputs, notationSystem, controller]);
 
   return (
