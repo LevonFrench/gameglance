@@ -274,8 +274,8 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
                 padding: '1.5rem 1.25rem',
                 display: 'flex',
                 flexDirection: 'column',
-                alignItems: 'center',
-                justifyContent: 'center',
+                alignItems: 'flex-start',
+                justifyContent: 'space-between',
                 cursor: isComingSoon ? 'not-allowed' : 'pointer',
                 transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
                 overflow: 'hidden',
@@ -283,7 +283,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
                 opacity: isComingSoon ? 0.4 : 1,
                 animation: disableInitialAnimation ? 'none' : `fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) ${150 + index * 60}ms both`,
                 fontFamily: 'inherit',
-                textAlign: 'center',
+                textAlign: 'left',
                 backdropFilter: 'blur(8px)',
                 WebkitBackdropFilter: 'blur(8px)',
               }}
@@ -327,9 +327,8 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
                 top: 0,
                 left: 0,
                 right: 0,
-                height: '3px',
+                height: '4px',
                 background: `linear-gradient(90deg, ${accentColor}80, ${accentColor}, ${accentColor}80)`,
-                borderRadius: '0 0 3px 3px',
               }} />
 
               {/* Star toggle */}

@@ -293,9 +293,9 @@ const PlatformIcons = ({ platformString }: { platformString: string }) => {
   const hasPC = pStr.includes('pc') || pStr.includes('steam');
 
   return (
-    <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem', color: 'var(--text-tertiary)' }}>
+    <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', color: 'var(--text-secondary)' }}>
       {hasArcade && (
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <title>Arcade</title>
           <rect x="4" y="2" width="16" height="20" rx="2" ry="2" />
           <path d="M4 8h16" />
@@ -305,7 +305,7 @@ const PlatformIcons = ({ platformString }: { platformString: string }) => {
         </svg>
       )}
       {hasPS && (
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <title>PlayStation</title>
           <path d="M17.32 5H6.68a4 4 0 0 0-3.978 3.59c-.006.052-.01.101-.017.152C2.604 9.416 2 14.456 2 16a3 3 0 0 0 3 3c1 0 1.5-.5 2-1l1.414-1.414A2 2 0 0 1 9.828 16h4.344a2 2 0 0 1 1.414.586L17 18c.5.5 1 1 2 1a3 3 0 0 0 3-3c0-1.545-.604-6.584-.685-7.258-.007-.05-.011-.1-.017-.151A4 4 0 0 0 17.32 5z" />
           <line x1="6" y1="12" x2="10" y2="12" />
@@ -314,7 +314,7 @@ const PlatformIcons = ({ platformString }: { platformString: string }) => {
         </svg>
       )}
       {hasXbox && (
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <title>Xbox</title>
           <circle cx="12" cy="12" r="10" />
           <path d="M8 8l8 8" />
@@ -322,7 +322,7 @@ const PlatformIcons = ({ platformString }: { platformString: string }) => {
         </svg>
       )}
       {hasNintendo && (
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <title>Nintendo</title>
           <rect x="2" y="4" width="20" height="16" rx="4" />
           <line x1="12" y1="4" x2="12" y2="20" />
@@ -331,7 +331,7 @@ const PlatformIcons = ({ platformString }: { platformString: string }) => {
         </svg>
       )}
       {hasSega && (
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <title>Sega</title>
           <ellipse cx="12" cy="12" rx="10" ry="7" />
           <line x1="6" y1="12" x2="10" y2="12" />
@@ -339,7 +339,7 @@ const PlatformIcons = ({ platformString }: { platformString: string }) => {
         </svg>
       )}
       {hasPC && (
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
           <title>PC</title>
           <rect x="2" y="3" width="20" height="14" rx="2" ry="2" />
           <line x1="8" y1="21" x2="16" y2="21" />
@@ -815,16 +815,16 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                   <div style={{
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '0.3rem',
-                    padding: '0.2rem 0.5rem',
+                    gap: '0.4rem',
+                    padding: '0.3rem 0.7rem',
                     borderRadius: 'var(--radius-full)',
                     background: 'var(--bg-badge)',
                     border: '1px solid var(--border-subtle)',
-                    fontSize: '0.75rem',
-                    fontWeight: 600,
-                    color: 'var(--text-secondary)',
+                    fontSize: '0.82rem',
+                    fontWeight: 700,
+                    color: 'var(--text-primary)',
                   }}>
-                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                       <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                       <circle cx="12" cy="7" r="4"></circle>
                     </svg>
@@ -846,9 +846,9 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                     alignItems: 'center',
                     justifyContent: 'center',
                     cursor: 'pointer',
-                    color: isFavorite ? '#ef4444' : 'var(--text-tertiary)',
+                    color: isFavorite ? '#ef4444' : 'var(--text-secondary)',
                     transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
-                    opacity: isFavorite ? 1 : 0.6,
+                    opacity: isFavorite ? 1 : 0.7,
                     padding: 0,
                   }}
                   onMouseOver={e => {
@@ -858,11 +858,11 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                   }}
                   onMouseOut={e => {
                     e.currentTarget.style.transform = 'scale(1)';
-                    e.currentTarget.style.opacity = isFavorite ? '1' : '0.6';
-                    e.currentTarget.style.color = isFavorite ? '#ef4444' : 'var(--text-tertiary)';
+                    e.currentTarget.style.opacity = isFavorite ? '1' : '0.7';
+                    e.currentTarget.style.color = isFavorite ? '#ef4444' : 'var(--text-secondary)';
                   }}
                 >
-                  <svg width="16" height="16" viewBox="0 0 24 24" fill={isFavorite ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill={isFavorite ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                   </svg>
                 </button>
