@@ -1,13 +1,15 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import type { Move } from './types';
+import type { Move, PlaylistItem } from './types';
 import { GlyphSequence } from './GlyphSequence';
 import type { ControllerType } from './glyphMap';
 import { useTheme } from './ThemeContext';
 
 interface Props {
-  playlist: Move[];
+  playlist: PlaylistItem[];
+  selectedGameId: string;
   gameName: string;
   gameDeveloper?: string;
+  selectedCharacterId: string;
   characterName: string;
   controller: ControllerType;
   onSetController?: (c: ControllerType) => void;
@@ -19,7 +21,13 @@ interface WakeLockSentinel {
   release: () => Promise<void>;
 }
 
-export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, characterName, controller, notationSystem, onExit }) => {
+export const GameGlanceMainView: React.FC<Props> = ({ playlist, selectedGameId, gameName, selectedCharacterId, characterName, controller, notationSystem, onExit }) => {
+  const uniqueCharacters = Array.from(new Set(playlist.map(p => p.characterId)));
+  const [activeTab, setActiveTab] = useState(
+    uniqueCharacters.includes(selectedCharacterId) ? selectedCharacterId : uniqueCharacters[0]
+  );
+  const activePlaylist = playlist.filter(p => p.characterId === activeTab).map(p => p.move);
+
   const [currentPage, setCurrentPage] = useState(0);
   const [isPlaying, setIsPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
@@ -34,7 +42,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
   const [itemsPerPage, setItemsPerPage] = useState(() => window.innerWidth <= 480 ? 3 : 5);
 
   const effectiveItemsPerPage = displayMode === 'stadium' ? 1 : itemsPerPage;
-  const totalPages = Math.ceil(playlist.length / effectiveItemsPerPage);
+  const totalPages = Math.ceil(activePlaylist.length / effectiveItemsPerPage);
   const isDark = theme === 'dark';
   const listContainerRef = useRef<HTMLDivElement>(null);
 
@@ -165,8 +173,8 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
   }
 
   const currentItems = (displayMode === 'paged' || displayMode === 'stadium') 
-    ? playlist.slice(currentPage * effectiveItemsPerPage, (currentPage + 1) * effectiveItemsPerPage) 
-    : playlist;
+    ? activePlaylist.slice(currentPage * effectiveItemsPerPage, (currentPage + 1) * effectiveItemsPerPage) 
+    : activePlaylist;
   const effectiveController = gameName.toLowerCase().includes('tatsunoko') ? 'wii' : controller;
 
   return (
@@ -254,7 +262,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
             onMouseOut={e => e.currentTarget.style.color = 'var(--text-primary)'}
             title="Back to Top"
           >
-            {characterName}
+            {activeTab === selectedCharacterId ? characterName : activeTab.replace(/-/g, ' ').toUpperCase()}
           </button>
           <span style={{
             padding: '0.2rem 0.65rem',
@@ -264,7 +272,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
             fontSize: '0.75rem',
             fontWeight: 600,
           }}>
-            {playlist.length} moves
+            {activePlaylist.length} moves
           </span>
         </div>
 
@@ -358,6 +366,38 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, charac
           </button>
         </div>
       </div>
+
+      {/* Character Tabs */}
+      {uniqueCharacters.length > 1 && (
+        <div style={{
+          display: 'flex',
+          gap: '0.5rem',
+          padding: '0.5rem 1.25rem',
+          background: isDark ? 'rgba(0,0,0,0.5)' : 'rgba(255,255,255,0.5)',
+          overflowX: 'auto',
+          borderBottom: '1px solid var(--border-subtle)',
+          zIndex: 9
+        }}>
+          {uniqueCharacters.map(char => (
+            <button
+              key={char}
+              onClick={() => { setActiveTab(char); setCurrentPage(0); }}
+              style={{
+                padding: '0.35rem 1rem',
+                borderRadius: 'var(--radius-full)',
+                background: activeTab === char ? 'var(--accent-indigo)' : 'transparent',
+                color: activeTab === char ? '#fff' : 'var(--text-secondary)',
+                border: activeTab === char ? 'none' : '1px solid var(--border-medium)',
+                cursor: 'pointer',
+                fontWeight: 600,
+                fontSize: '0.85rem'
+              }}
+            >
+              {activeTab === char ? characterName : char.replace(/-/g, ' ').toUpperCase()}
+            </button>
+          ))}
+        </div>
+      )}
 
       {/* Progress bar (only in paged or stadium mode) */}
       {(displayMode === 'paged' || displayMode === 'stadium') && totalPages > 1 && isPlaying && (

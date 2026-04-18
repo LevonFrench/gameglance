@@ -16,6 +16,12 @@ export interface Move {
   frameData?: FrameData;
 }
 
+export interface PlaylistItem {
+  gameId: string;
+  characterId: string;
+  move: Move;
+}
+
 export interface CharacterExport {
   game: string;
   character: string;
@@ -25,10 +31,11 @@ export interface CharacterExport {
   combosList: { id: string, name: string, input: string }[];
 }
 
-export const CARD_THEMES = ['default-dark', 'default-light', 'genesis', 'sf2gen', 'snes', 'cps2', 'mvs', 'aes', 'mvscab', 'cps2cab', 'sfami', 'tekken'] as const;
+export const CARD_THEMES = ['auto', 'default-dark', 'default-light', 'genesis', 'sf2gen', 'snes', 'cps2', 'mvs', 'aes', 'mvscab', 'cps2cab', 'sfami', 'tekken', 'sf6-layout', '3s-layout', 'mvc2-layout', 'samsho-layout', 'kof-layout', 'vampire-layout', 'vf-layout'] as const;
 export type CardTheme = typeof CARD_THEMES[number];
 
 export const THEME_DISPLAY_NAMES: Record<CardTheme, string> = {
+  'auto': 'Per Game (Auto)',
   'default-dark': 'Default',
   'default-light': 'Light',
   'genesis': 'Genesis',
@@ -40,7 +47,14 @@ export const THEME_DISPLAY_NAMES: Record<CardTheme, string> = {
   'mvscab': 'MVS CAB',
   'aes': 'AES',
   'sfami': 'Super Famicom',
-  'tekken': 'Tekken Cabinet'
+  'tekken': 'Tekken Cabinet',
+  'sf6-layout': 'Street Fighter 6',
+  '3s-layout': '3rd Strike',
+  'mvc2-layout': 'MvC 2',
+  'samsho-layout': 'Samurai Shodown',
+  'kof-layout': 'King of Fighters',
+  'vampire-layout': 'Darkstalkers',
+  'vf-layout': 'Virtua Fighter'
 };
 
 export interface GameDefinition {
@@ -51,6 +65,7 @@ export interface GameDefinition {
   developer?: string;
   releaseYear?: number;
   platform?: string;
+  theme?: CardTheme;
   ramAddresses?: {
     p1CharacterId: string;
     p2CharacterId: string;
@@ -62,7 +77,7 @@ export interface GameDefinition {
   isHidden?: boolean;
   tags?: string[];
   notationSystem?: 'numpad' | 'traditional' | 'mk';
-  characters?: { id: string, name: string, isHidden?: boolean, moveCount?: number }[];
+  characters?: { id: string, name: string, isHidden?: boolean, moveCount?: number, comboCount?: number }[];
 }
 
 export const APP_VIEWS = ['game_select', 'char_select', 'move_list', 'main_screen'] as const;

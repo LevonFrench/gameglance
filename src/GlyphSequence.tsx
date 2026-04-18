@@ -318,7 +318,7 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
             top: large ? '-14px' : '-11px',
             fontSize: large ? '0.65rem' : '0.45rem',
             fontWeight: 900,
-            color: 'var(--text-muted)',
+            color: 'rgba(255, 255, 255, 0.95)',
             letterSpacing: '0.05em'
           }}>
             ANY

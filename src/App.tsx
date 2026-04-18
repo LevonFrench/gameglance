@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import type { GameDefinition, Move } from './types';
+import type { GameDefinition, Move, PlaylistItem } from './types';
 import './index.css';
 
 import { GameSelectView } from './GameSelectView';
@@ -20,7 +20,7 @@ export const App: React.FC = () => {
   const [currentView, setCurrentView] = useState<'game_select' | 'char_select' | 'move_list' | 'fightcade_sync' | 'main_screen'>('game_select');
   const [selectedGame, setSelectedGame] = useState<GameDefinition | null>(null);
   const [selectedCharacter, setSelectedCharacter] = useState<string | null>(null);
-  const [selectedPlaylist, setSelectedPlaylist] = useState<Move[]>(() => {
+  const [selectedPlaylist, setSelectedPlaylist] = useState<PlaylistItem[]>(() => {
     try {
       const saved = localStorage.getItem('gg_playlist');
       return saved ? JSON.parse(saved) : [];
@@ -162,23 +162,30 @@ export const App: React.FC = () => {
   };
 
   const handleToggleMove = (move: Move) => {
+    if (!selectedGame || !selectedCharacter) return;
     setSelectedPlaylist(prev => {
-      const exists = prev.find(m => m.id === move.id);
+      const exists = prev.find(pm => pm.move.id === move.id && pm.gameId === selectedGame.id && pm.characterId === selectedCharacter);
       if (exists) {
-        return prev.filter(m => m.id !== move.id);
+        return prev.filter(pm => !(pm.move.id === move.id && pm.gameId === selectedGame.id && pm.characterId === selectedCharacter));
       } else {
-        return [...prev, move];
+        return [...prev, { gameId: selectedGame.id, characterId: selectedCharacter, move }];
       }
     });
   };
 
   const handleToggleCategory = (moves: Move[], select: boolean) => {
+    if (!selectedGame || !selectedCharacter) return;
     setSelectedPlaylist(prev => {
       if (select) {
-        const newMoves = moves.filter(m => !prev.find(pm => pm.id === m.id));
+        const newMoves = moves
+          .filter(m => !prev.find(pm => pm.move.id === m.id && pm.gameId === selectedGame.id && pm.characterId === selectedCharacter))
+          .map(move => ({ gameId: selectedGame.id, characterId: selectedCharacter, move }));
         return [...prev, ...newMoves];
       } else {
-        return prev.filter(pm => !moves.find(m => m.id === pm.id));
+        return prev.filter(pm => {
+          if (pm.gameId !== selectedGame.id || pm.characterId !== selectedCharacter) return true;
+          return !moves.find(m => m.id === pm.move.id);
+        });
       }
     });
   };
@@ -186,6 +193,11 @@ export const App: React.FC = () => {
   const handleLaunchMainScreen = () => {
     navigate('main_screen');
   };
+
+  // Resolve active theme based on auto settings
+  const activeCardTheme = cardTheme === 'auto' 
+    ? (selectedGame?.theme || 'default-dark') 
+    : cardTheme;
 
   // Router switch
   let viewComponent;
@@ -204,6 +216,7 @@ export const App: React.FC = () => {
          disableInitialAnimation={returningFromMoveList}
          onSetController={setController}
          onSelectCharacter={handleSelectCharacter} 
+         cardTheme={activeCardTheme}
          onBack={() => {
            setDisableGameSelectAnimation(true);
            window.history.back();
@@ -222,7 +235,7 @@ export const App: React.FC = () => {
       viewComponent = <MoveListView 
          game={selectedGame}
          characterId={selectedCharacter}
-         selectedPlaylist={selectedPlaylist}
+         selectedPlaylist={selectedPlaylist.filter(p => p.gameId === selectedGame.id).map(p => p.move)}
          controller={controller}
          notationSystem={(notationOverride === 'auto' ? selectedGame.notationSystem : notationOverride) as 'numpad' | 'traditional' | 'mk' | undefined}
          onSetController={setController}
@@ -244,8 +257,10 @@ export const App: React.FC = () => {
     case 'main_screen': {
       const charName = selectedGame?.characters?.find(c => c.id === selectedCharacter)?.name || String(selectedCharacter);
       viewComponent = <GameGlanceMainView 
-         playlist={selectedPlaylist} 
+         playlist={selectedPlaylist.filter(p => p.gameId === selectedGame?.id)} 
+         selectedGameId={selectedGame?.id || ''}
          gameName={selectedGame?.name || 'GAMES'}
+         selectedCharacterId={selectedCharacter || ''}
          characterName={charName}
          controller={controller}
          notationSystem={(notationOverride === 'auto' ? selectedGame?.notationSystem : notationOverride) as 'numpad' | 'traditional' | 'mk' | undefined}

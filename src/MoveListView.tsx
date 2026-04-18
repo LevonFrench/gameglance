@@ -260,7 +260,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         top: 0,
         zIndex: 50,
         backgroundColor: 'var(--bg-primary)',
-        margin: 'calc(-1 * var(--space-xl)) calc(-1 * var(--space-xl)) var(--space-xl)',
+        margin: 'calc(-1 * var(--space-xl)) calc(-1 * var(--space-xl)) var(--space-md)',
         padding: 'var(--space-xl) var(--space-xl) var(--space-md)',
         borderBottom: '1px solid var(--border-subtle)',
         transition: 'background-color 0.4s ease',
@@ -639,30 +639,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
 
               return (
                 <section key={tab} id={`section-${tab.replace(/\s+/g, '-').toLowerCase()}`}>
-                  <h2 
-                    onDoubleClick={() => {
-                      if (onToggleCategory) {
-                        const allSelected = displayList.every(m => selectedPlaylist.some(sm => sm.id === m.id));
-                        onToggleCategory(displayList, !allSelected);
-                      }
-                    }}
-                    style={{ 
-                      fontSize: '1.75rem', 
-                      letterSpacing: '-0.02em', 
-                      marginBottom: '1.5rem', 
-                      color: 'var(--text-primary)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '0.75rem',
-                      borderBottom: '2px solid var(--border-subtle)',
-                      paddingBottom: '0.5rem',
-                      cursor: onToggleCategory ? 'pointer' : 'default',
-                      userSelect: 'none',
-                    }}
-                    title={onToggleCategory ? "Double-click to select/deselect all" : undefined}
-                  >
-                    {tab}
-                  </h2>
+                  {/* <h2> Category Title Removed as it was redundant */}
                   <div style={{ 
                     display: 'grid', 
                     gridTemplateColumns: 'repeat(auto-fill, minmax(380px, 1fr))', 
@@ -686,6 +663,8 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                     cursor: 'pointer',
                     animation: `fadeInUp 0.3s ease ${Math.min(idx * 20, 300)}ms both`,
                     gap: '0.75rem',
+                    padding: '1.25rem',
+                    position: 'relative',
                   }}
                 >
                   <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
@@ -702,24 +681,6 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                       }}>
                         {move.name}
                       </h2>
-                    </div>
-
-                    <div className="select-btn" style={{
-                      width: '32px',
-                      height: '32px',
-                      borderRadius: '50%',
-                      background: isSelected ? typeColor : 'rgba(255, 255, 255, 0.08)',
-                      border: isSelected ? 'none' : '1px solid var(--border-medium)',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      color: isSelected ? '#000' : 'var(--text-primary)',
-                      fontSize: '1.2rem',
-                      fontWeight: 700,
-                      transition: 'all 0.2s ease',
-                      flexShrink: 0,
-                    }}>
-                      {isSelected ? '✓' : '+'}
                     </div>
                   </div>
 

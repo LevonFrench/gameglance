@@ -708,7 +708,8 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
               style={{
                 position: 'relative',
                 background: 'var(--bg-card)',
-                border: '1px solid var(--border-subtle)',
+                border: '1px solid var(--border-medium)',
+                boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
                 borderRadius: 'var(--radius-xl)',
                 padding: '1.25rem 1rem',
                 display: 'flex',
@@ -739,8 +740,8 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
               onMouseOut={(e) => {
                 const el = e.currentTarget;
                 el.style.transform = 'translateY(0) scale(1)';
-                el.style.borderColor = 'var(--border-subtle)';
-                el.style.boxShadow = 'none';
+                el.style.borderColor = 'var(--border-medium)';
+                el.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
                 const gradientOverlay = el.querySelector('.gradient-overlay') as HTMLElement;
                 if (gradientOverlay) gradientOverlay.style.opacity = '0.04';
                 const mouseGlow = el.querySelector('.mouse-glow') as HTMLElement;
