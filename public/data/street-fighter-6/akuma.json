@@ -4,29 +4,797 @@
   "game": "Street Fighter 6",
   "movesList": [
     {
-      "name": "Gohadoken",
-      "input": "236P",
-      "type": "Special"
+      "id": "standing-light-punch",
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "input": "5LP",
+      "frameData": {
+        "startup": "4",
+        "active": "3",
+        "recovery": "7",
+        "advantage": "-1"
+      },
+      "damage": "300"
     },
     {
-      "name": "Goshoryuken",
-      "input": "623P",
-      "type": "Special"
+      "id": "standing-medium-punch",
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "input": "5MP",
+      "frameData": {
+        "startup": "6",
+        "active": "4",
+        "recovery": "11(13)",
+        "advantage": "+1"
+      },
+      "damage": "600"
     },
     {
-      "name": "Tatsumaki Zankukyaku",
-      "input": "214K",
-      "type": "Special"
+      "id": "standing-heavy-punch",
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "input": "5HP",
+      "frameData": {
+        "startup": "9",
+        "active": "5",
+        "recovery": "18",
+        "advantage": "-3"
+      },
+      "damage": "800"
     },
     {
-      "name": "Hyakkishu",
-      "input": "623K",
-      "type": "Special"
+      "id": "standing-light-kick",
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "input": "5LK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "11",
+        "advantage": "-4"
+      },
+      "damage": "300"
     },
     {
+      "id": "standing-medium-kick",
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "input": "5MK",
+      "frameData": {
+        "startup": "7",
+        "active": "5",
+        "recovery": "15",
+        "advantage": "-3"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "standing-heavy-kick",
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "frameData": {
+        "startup": "13(24)",
+        "active": "3(8)4",
+        "recovery": "15(16)",
+        "advantage": "+3(-13)"
+      },
+      "damage": "400x2"
+    },
+    {
+      "id": "crouching-light-punch",
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "input": "2LP",
+      "frameData": {
+        "startup": "4",
+        "active": "2",
+        "recovery": "9",
+        "advantage": "-1"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "crouching-medium-punch",
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "input": "2MP",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "14(16)",
+        "advantage": "-1"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "crouching-heavy-punch",
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "input": "2HP",
+      "frameData": {
+        "startup": "8",
+        "active": "8",
+        "recovery": "19",
+        "advantage": "-8"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "crouching-light-kick",
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "input": "2LK",
+      "frameData": {
+        "startup": "5",
+        "active": "2",
+        "recovery": "10",
+        "advantage": "-3"
+      },
+      "damage": "200"
+    },
+    {
+      "id": "crouching-medium-kick",
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "input": "2MK",
+      "frameData": {
+        "startup": "8",
+        "active": "3",
+        "recovery": "19",
+        "advantage": "-6"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "low-cutter",
+      "name": "Low Cutter",
+      "type": "normal",
+      "input": "2HK",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "23(29)",
+        "advantage": "-12"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "jumping-light-punch",
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "input": "j.LP",
+      "frameData": {
+        "startup": "4",
+        "active": "10",
+        "recovery": "3 land",
+        "advantage": "0(+5)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-punch",
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "input": "j.MP",
+      "frameData": {
+        "startup": "8",
+        "active": "4",
+        "recovery": "3 land",
+        "advantage": "+5(+7)"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "jumping-heavy-punch",
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "input": "j.HP",
+      "frameData": {
+        "startup": "9",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+4(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "jumping-light-kick",
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "input": "j.LK",
+      "frameData": {
+        "startup": "6",
+        "active": "10",
+        "recovery": "3 land",
+        "advantage": "+1(+6)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-kick",
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "input": "j.MK",
+      "frameData": {
+        "startup": "7",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+4(+9)"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "jumping-heavy-kick",
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "input": "j.HK",
+      "frameData": {
+        "startup": "12",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+5(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "skull-splitter",
+      "name": "Skull Splitter",
+      "type": "normal",
+      "input": "6MP",
+      "frameData": {
+        "startup": "20",
+        "active": "1(1)3",
+        "recovery": "18",
+        "advantage": "-3"
+      },
+      "damage": "200,400"
+    },
+    {
+      "id": "resso-snap-kick",
+      "name": "Resso Snap Kick",
+      "type": "normal",
+      "input": "6MK",
+      "frameData": {
+        "startup": "10",
+        "active": "3",
+        "recovery": "15(18/19)",
+        "advantage": "-4"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "kikoku",
+      "name": "Kikoku",
+      "type": "normal",
+      "input": "6HP",
+      "frameData": {
+        "startup": "13",
+        "active": "4",
+        "recovery": "20",
+        "advantage": "-3"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "rago-high-kick",
+      "name": "Rago High Kick",
+      "type": "normal",
+      "input": "4HK",
+      "frameData": {
+        "startup": "12",
+        "active": "5",
+        "recovery": "27",
+        "advantage": "-15"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "tenmaku-blade-kick",
+      "name": "Tenmaku Blade Kick",
+      "type": "normal",
+      "input": "j.2MK",
+      "frameData": {
+        "startup": "16",
+        "active": "until land",
+        "recovery": "7(13) land",
+        "advantage": "-4(+6)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "viscera-piercer",
+      "name": "Viscera Piercer",
+      "type": "unique",
+      "input": "5MP~MP",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "21",
+        "advantage": "-6"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "bone-crusher-axe-kick",
+      "name": "Bone Crusher Axe Kick",
+      "type": "unique",
+      "input": "5MK~HK",
+      "frameData": {
+        "startup": "20",
+        "active": "3",
+        "recovery": "20",
+        "advantage": "-3"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "kikoku-combination-1",
+      "name": "Kikoku Combination 1",
+      "type": "unique",
+      "input": "6HP~6HP",
+      "frameData": {
+        "startup": "10",
+        "active": "3",
+        "recovery": "21(24)",
+        "advantage": "-10"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "goshoha",
+      "name": "Goshoha",
+      "type": "throw",
+      "input": "LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "shuretto",
+      "name": "Shuretto",
+      "type": "throw",
+      "input": "4LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "oni-goroshi",
+      "name": "Oni Goroshi",
+      "type": "common",
+      "input": "HPHK",
+      "frameData": {
+        "startup": "26",
+        "active": "2",
+        "recovery": "35",
+        "advantage": "-3 / Wall Splat HKD +72"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "souha-double-palm-block",
+      "name": "Souha Double Palm (Block)",
+      "type": "common",
+      "input": "6HPHK",
+      "frameData": {
+        "startup": "20",
+        "active": "3",
+        "recovery": "26(31)",
+        "advantage": "-6"
+      },
+      "damage": "500 recoverable"
+    },
+    {
+      "id": "drive-parry",
+      "name": "Drive Parry",
+      "type": "common",
+      "input": "MPMK",
+      "frameData": {
+        "startup": "1",
+        "active": "12 or until released",
+        "recovery": "33(1)(11)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "parry-drive-rush",
+      "name": "Parry Drive Rush",
+      "type": "common",
+      "input": "MPMK~66",
+      "frameData": {
+        "startup": "3+8",
+        "active": "-",
+        "recovery": "15(37)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "gou-hadoken",
+      "name": "Gou Hadoken",
+      "type": "special",
+      "input": "236LP",
+      "frameData": {
+        "startup": "16~32",
+        "active": "-",
+        "recovery": "30",
+        "advantage": "-4"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "gou-hadoken-lv-2",
+      "name": "Gou Hadoken Lv.2",
+      "type": "special",
+      "input": "236{P}",
+      "frameData": {
+        "startup": "(25~48)+6",
+        "active": "-",
+        "recovery": "29",
+        "advantage": "+2"
+      },
+      "damage": "400,600"
+    },
+    {
+      "id": "zanku-hadoken",
+      "name": "Zanku Hadoken",
+      "type": "special",
+      "input": "j.236P",
+      "frameData": {
+        "startup": "13",
+        "active": "-",
+        "recovery": "9(2) land",
+        "advantage": "varies"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "gou-shoryuken",
+      "name": "Gou Shoryuken",
+      "type": "special",
+      "input": "623LP",
+      "frameData": {
+        "startup": "5",
+        "active": "10",
+        "recovery": "21+12 land",
+        "advantage": "-23"
+      },
+      "damage": "1100(800)"
+    },
+    {
+      "id": "tatsumaki-zanku-kyaku",
+      "name": "Tatsumaki Zanku-Kyaku",
+      "type": "special",
+      "input": "214LK",
+      "frameData": {
+        "startup": "12",
+        "active": "2",
+        "recovery": "14+7(13) land",
+        "advantage": "-13"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "aerial-tatsumaki-zanku-kyaku",
+      "name": "Aerial Tatsumaki Zanku-Kyaku",
+      "type": "special",
+      "input": "j.214K",
+      "frameData": {
+        "startup": "11",
+        "active": "2(5)2(5)2",
+        "recovery": "16 land",
+        "advantage": "-2(+3) Front-6(-1) Back"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "adamant-flame",
       "name": "Adamant Flame",
-      "input": "214P",
-      "type": "Special"
+      "type": "special",
+      "input": "214LP",
+      "frameData": {
+        "startup": "15",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-8"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "adamant-flame-follow-up",
+      "name": "Adamant Flame Follow-Up",
+      "type": "special",
+      "input": "214LP~6P",
+      "frameData": {
+        "startup": "7",
+        "active": "4",
+        "recovery": "18(22)",
+        "advantage": "-10"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "demon-raid",
+      "name": "Demon Raid",
+      "type": "special",
+      "input": "236K",
+      "frameData": {
+        "startup": "18~40",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "demon-low-slash",
+      "name": "Demon Low Slash",
+      "type": "special",
+      "input": "236K~No Input",
+      "frameData": {
+        "startup": "53",
+        "active": "4",
+        "recovery": "15(19)",
+        "advantage": "+2(+5)"
+      },
+      "damage": "1000"
+    },
+    {
+      "id": "demon-guillotine",
+      "name": "Demon Guillotine",
+      "type": "special",
+      "input": "236K~P",
+      "frameData": {
+        "startup": "18+16",
+        "active": "until land",
+        "recovery": "9 land",
+        "advantage": "+3(+7)"
+      },
+      "damage": "1300"
+    },
+    {
+      "id": "demon-blade-kick",
+      "name": "Demon Blade Kick",
+      "type": "special",
+      "input": "236K~K",
+      "frameData": {
+        "startup": "18+13",
+        "active": "until land",
+        "recovery": "9(14) land",
+        "advantage": "-5(+5)"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "demon-swoop",
+      "name": "Demon Swoop",
+      "type": "special",
+      "input": "236K~[2]",
+      "frameData": {
+        "startup": "40",
+        "active": "-",
+        "recovery": "2+3(8) land",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "demon-gou-zanku",
+      "name": "Demon Gou Zanku",
+      "type": "special",
+      "input": "236KK~j.236P",
+      "frameData": {
+        "startup": "16+6(21)",
+        "active": "-",
+        "recovery": "9(2) land",
+        "advantage": "-3~ (varies)"
+      },
+      "damage": "300x3 (900)"
+    },
+    {
+      "id": "demon-gou-rasen",
+      "name": "Demon Gou Rasen",
+      "type": "special",
+      "input": "236KK~j.214K",
+      "frameData": {
+        "startup": "16+5",
+        "active": "2(2)3(2)3(1)3(1)2",
+        "recovery": "10 land",
+        "advantage": "-"
+      },
+      "damage": "200x4,500 (1300)"
+    },
+    {
+      "id": "ashura-senku-forward",
+      "name": "Ashura Senku (Forward)",
+      "type": "special",
+      "input": "6KKK",
+      "frameData": {
+        "startup": "(23~)",
+        "active": "-",
+        "recovery": "51",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "oboro-throw",
+      "name": "Oboro Throw",
+      "type": "special",
+      "input": "6KKK~LPLK",
+      "frameData": {
+        "startup": "(23~37)+8",
+        "active": "3",
+        "recovery": "50",
+        "advantage": "-"
+      },
+      "damage": "2200 (2900)"
+    },
+    {
+      "id": "messatsu-gohado",
+      "name": "Messatsu Gohado",
+      "type": "super",
+      "input": "236236P",
+      "frameData": {
+        "startup": "10",
+        "active": "-",
+        "recovery": "96",
+        "advantage": "-41"
+      },
+      "damage": "400x4,600 (2200)"
+    },
+    {
+      "id": "tenma-gozanku",
+      "name": "Tenma Gozanku",
+      "type": "super",
+      "input": "j.236236K",
+      "frameData": {
+        "startup": "14",
+        "active": "-",
+        "recovery": "23(33) land",
+        "advantage": "-28~"
+      },
+      "damage": "400x5 (2000)"
+    },
+    {
+      "id": "empyrean-s-end",
+      "name": "Empyrean\u2019s End",
+      "type": "super",
+      "input": "214214P",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "52",
+        "advantage": "-35"
+      },
+      "damage": "2800"
+    },
+    {
+      "id": "sip-of-calamity",
+      "name": "Sip of Calamity",
+      "type": "super",
+      "input": "236236K",
+      "frameData": {
+        "startup": "8(2)",
+        "active": "4",
+        "recovery": "58",
+        "advantage": "-41"
+      },
+      "damage": "4000"
+    },
+    {
+      "id": "shun-goku-satsu-ca",
+      "name": "Shun Goku Satsu (CA)",
+      "type": "super",
+      "input": "LP~LP~6LK~HP",
+      "frameData": {
+        "startup": "6+0",
+        "active": "21",
+        "recovery": "57",
+        "advantage": "-"
+      },
+      "damage": "4700"
+    },
+    {
+      "id": "neutral-taunt",
+      "name": "Neutral Taunt",
+      "type": "normal",
+      "input": "5PPPKKK",
+      "frameData": {
+        "startup": "433 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "forward-taunt",
+      "name": "Forward Taunt",
+      "type": "normal",
+      "input": "6PPPKKK",
+      "frameData": {
+        "startup": "570(514) (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "back-taunt",
+      "name": "Back Taunt",
+      "type": "normal",
+      "input": "4PPPKKK",
+      "frameData": {
+        "startup": "765 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "down-taunt",
+      "name": "Down Taunt",
+      "type": "normal",
+      "input": "2PPPKKK",
+      "frameData": {
+        "startup": "123 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "double-zanku-hadoken",
+      "name": "Double Zanku Hadoken",
+      "type": "normal",
+      "input": "j.214PP",
+      "frameData": {
+        "startup": "8(21)",
+        "active": "-",
+        "recovery": "9(2) land",
+        "advantage": "varies"
+      },
+      "damage": "600x2"
+    },
+    {
+      "id": "misogi",
+      "name": "Misogi",
+      "type": "normal",
+      "input": "214214K",
+      "frameData": {
+        "startup": "5(9~10)",
+        "active": "7",
+        "recovery": "88(85)",
+        "advantage": "-58(-57)"
+      },
+      "damage": "2900"
+    },
+    {
+      "id": "kongou-kokuretsuzan",
+      "name": "Kongou-Kokuretsuzan",
+      "type": "normal",
+      "input": "22PPP",
+      "frameData": {
+        "startup": "8",
+        "active": "30",
+        "recovery": "41",
+        "advantage": "-39"
+      },
+      "damage": "330x8,360 (3000)"
     }
   ]
 }

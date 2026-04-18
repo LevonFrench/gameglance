@@ -4,24 +4,602 @@
   "game": "Street Fighter 6",
   "movesList": [
     {
-      "name": "Condor Wind",
-      "input": "214P",
-      "type": "Special"
+      "id": "standing-light-punch",
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "input": "5LP",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "8",
+        "advantage": "-1"
+      },
+      "damage": "350"
     },
     {
+      "id": "standing-medium-punch",
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "input": "5MP",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "17",
+        "advantage": "-4"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "standing-heavy-punch",
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "input": "5HP",
+      "frameData": {
+        "startup": "10",
+        "active": "3",
+        "recovery": "22",
+        "advantage": "-5"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "standing-light-kick",
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "input": "5LK",
+      "frameData": {
+        "startup": "4",
+        "active": "3",
+        "recovery": "8",
+        "advantage": "-1"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "standing-medium-kick",
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "input": "5MK",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "15",
+        "advantage": "-1"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "standing-heavy-kick",
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "frameData": {
+        "startup": "14",
+        "active": "4",
+        "recovery": "21",
+        "advantage": "-5"
+      },
+      "damage": "1000"
+    },
+    {
+      "id": "crouching-light-punch",
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "input": "2LP",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "8",
+        "advantage": "-1"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "crouching-medium-punch",
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "input": "2MP",
+      "frameData": {
+        "startup": "8",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-3"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "crouching-heavy-punch",
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "input": "2HP",
+      "frameData": {
+        "startup": "10",
+        "active": "2,4",
+        "recovery": "22",
+        "advantage": "-2"
+      },
+      "damage": "500x2"
+    },
+    {
+      "id": "crouching-light-kick",
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "input": "2LK",
+      "frameData": {
+        "startup": "5",
+        "active": "2",
+        "recovery": "12",
+        "advantage": "-2"
+      },
+      "damage": "200"
+    },
+    {
+      "id": "crouching-medium-kick",
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "input": "2MK",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-5"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "squall-kick",
+      "name": "Squall Kick",
+      "type": "normal",
+      "input": "2HK",
+      "frameData": {
+        "startup": "11",
+        "active": "2(6)2",
+        "recovery": "24",
+        "advantage": "-12"
+      },
+      "damage": "450x2"
+    },
+    {
+      "id": "jumping-light-punch",
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "input": "j.LP",
+      "frameData": {
+        "startup": "5",
+        "active": "9",
+        "recovery": "3 land",
+        "advantage": "+2(+5)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-punch",
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "input": "j.MP",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "3 land",
+        "advantage": "+1(+7)"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "jumping-heavy-punch",
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "input": "j.HP",
+      "frameData": {
+        "startup": "10",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+2(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "jumping-light-kick",
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "input": "j.LK",
+      "frameData": {
+        "startup": "6",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "0(+6)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-kick",
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "input": "j.MK",
+      "frameData": {
+        "startup": "8",
+        "active": "5",
+        "recovery": "3 land",
+        "advantage": "+3(+9)"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "jumping-heavy-kick",
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "input": "j.HK",
+      "frameData": {
+        "startup": "11",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+5(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "desert-storm-1",
+      "name": "Desert Storm 1",
+      "type": "normal",
+      "input": "6HP",
+      "frameData": {
+        "startup": "16",
+        "active": "2",
+        "recovery": "24",
+        "advantage": "-4"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "ridge-thrust",
+      "name": "Ridge Thrust",
+      "type": "normal",
+      "input": "3HP",
+      "frameData": {
+        "startup": "25",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-3"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "horn-breaker",
+      "name": "Horn Breaker",
+      "type": "normal",
+      "input": "4HP",
+      "frameData": {
+        "startup": "14",
+        "active": "4",
+        "recovery": "18",
+        "advantage": "-2"
+      },
+      "damage": "1000"
+    },
+    {
+      "id": "great-spin",
+      "name": "Great Spin",
+      "type": "normal",
+      "input": "j.2HP",
+      "frameData": {
+        "startup": "9",
+        "active": "11",
+        "recovery": "3 land",
+        "advantage": "+7(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "desert-storm-2",
+      "name": "Desert Storm 2",
+      "type": "unique",
+      "input": "6HP~HP",
+      "frameData": {
+        "startup": "20",
+        "active": "2",
+        "recovery": "27",
+        "advantage": "-9"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "double-arrow",
+      "name": "Double Arrow",
+      "type": "unique",
+      "input": "j.MP~MP",
+      "frameData": {
+        "startup": "10",
+        "active": "3",
+        "recovery": "3 land",
+        "advantage": "-"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "canyon-throw",
+      "name": "Canyon Throw",
+      "type": "throw",
+      "input": "LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "falling-cliff",
+      "name": "Falling Cliff",
+      "type": "throw",
+      "input": "4LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "earth-s-rage",
+      "name": "Earth's Rage",
+      "type": "common",
+      "input": "HPHK",
+      "frameData": {
+        "startup": "26",
+        "active": "2",
+        "recovery": "35",
+        "advantage": "-3 / Wall Splat HKD +72"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "cross-hammer-block",
+      "name": "Cross Hammer (Block)",
+      "type": "common",
+      "input": "6HPHK",
+      "frameData": {
+        "startup": "20",
+        "active": "3",
+        "recovery": "26(31)",
+        "advantage": "-6"
+      },
+      "damage": "500 recoverable"
+    },
+    {
+      "id": "drive-parry",
+      "name": "Drive Parry",
+      "type": "common",
+      "input": "MPMK",
+      "frameData": {
+        "startup": "1",
+        "active": "12 or until released",
+        "recovery": "33(1)(11)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "parry-drive-rush",
+      "name": "Parry Drive Rush",
+      "type": "common",
+      "input": "MPMK~66",
+      "frameData": {
+        "startup": "3+8",
+        "active": "-",
+        "recovery": "15(37)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "condor-wind-stock",
+      "name": "Condor Wind (stock)",
+      "type": "special",
+      "input": "214LP",
+      "frameData": {
+        "startup": "46(71/90)",
+        "active": "-",
+        "recovery": "1(19)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "condor-wind-attack",
+      "name": "Condor Wind (attack)",
+      "type": "special",
+      "input": "214MP (HOLD OK)",
+      "frameData": {
+        "startup": "23(4)",
+        "active": "4",
+        "recovery": "25",
+        "advantage": "-8"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "condor-spire",
       "name": "Condor Spire",
-      "input": "236K",
-      "type": "Special"
+      "type": "special",
+      "input": "236LK",
+      "frameData": {
+        "startup": "17",
+        "active": "13",
+        "recovery": "2+14 land",
+        "advantage": "-8(+4)"
+      },
+      "damage": "800"
     },
     {
+      "id": "condor-spire-windclad",
+      "name": "Condor Spire (Windclad)",
+      "type": "special",
+      "input": "W.236LK",
+      "frameData": {
+        "startup": "9",
+        "active": "5(6)11,7",
+        "recovery": "2+12 land",
+        "advantage": "+1(+7)"
+      },
+      "damage": "100x2,800"
+    },
+    {
+      "id": "tomahawk-buster",
       "name": "Tomahawk Buster",
-      "input": "623P",
-      "type": "Special"
+      "type": "special",
+      "input": "623LP",
+      "frameData": {
+        "startup": "6",
+        "active": "11",
+        "recovery": "21+12 land",
+        "advantage": "-27"
+      },
+      "damage": "900"
     },
     {
+      "id": "tomahawk-buster-windclad",
+      "name": "Tomahawk Buster (Windclad)",
+      "type": "special",
+      "input": "W.623LP",
+      "frameData": {
+        "startup": "4",
+        "active": "4,9",
+        "recovery": "21+12 land",
+        "advantage": "-25"
+      },
+      "damage": "400,600"
+    },
+    {
+      "id": "condor-dive",
+      "name": "Condor Dive",
+      "type": "special",
+      "input": "j.PP",
+      "frameData": {
+        "startup": "12",
+        "active": "11(17)",
+        "recovery": "5+19 land",
+        "advantage": "-24(-19)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "condor-dive-windclad",
+      "name": "Condor Dive (Windclad)",
+      "type": "special",
+      "input": "W.j.PP",
+      "frameData": {
+        "startup": "12",
+        "active": "11(17)",
+        "recovery": "5+19 land",
+        "advantage": "-24(-19)"
+      },
+      "damage": "200,800"
+    },
+    {
+      "id": "mexican-typhoon",
       "name": "Mexican Typhoon",
-      "input": "360P",
-      "type": "Special"
+      "type": "special",
+      "input": "360+LP",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "53",
+        "advantage": "-"
+      },
+      "damage": "2000 (2300)"
+    },
+    {
+      "id": "breezing-hawk",
+      "name": "Breezing Hawk",
+      "type": "super",
+      "input": "236236P",
+      "frameData": {
+        "startup": "10",
+        "active": "2(5)2(7)2(8)2(8)2",
+        "recovery": "54",
+        "advantage": "-36"
+      },
+      "damage": "2200 (1840)"
+    },
+    {
+      "id": "thunderbird",
+      "name": "Thunderbird",
+      "type": "super",
+      "input": "236236K",
+      "frameData": {
+        "startup": "9",
+        "active": "4,3x6(9)2",
+        "recovery": "39+24 land",
+        "advantage": "-60(-66)"
+      },
+      "damage": "2600"
+    },
+    {
+      "id": "thunderbird-windclad",
+      "name": "Thunderbird (Windclad)",
+      "type": "super",
+      "input": "236236K",
+      "frameData": {
+        "startup": "9",
+        "active": "2x11,3(6)2",
+        "recovery": "39+24 land",
+        "advantage": "-59(-65)"
+      },
+      "damage": "2900"
+    },
+    {
+      "id": "raging-typhoon",
+      "name": "Raging Typhoon",
+      "type": "super",
+      "input": "214214P",
+      "frameData": {
+        "startup": "5+2",
+        "active": "2",
+        "recovery": "106",
+        "advantage": "-"
+      },
+      "damage": "4500"
+    },
+    {
+      "id": "neutral-taunt",
+      "name": "Neutral Taunt",
+      "type": "normal",
+      "input": "5PPPKKK (HOLD OK)",
+      "frameData": {
+        "startup": "147(17)",
+        "active": "3",
+        "recovery": "217",
+        "advantage": "-206"
+      },
+      "damage": "1"
+    },
+    {
+      "id": "forward-taunt",
+      "name": "Forward Taunt",
+      "type": "normal",
+      "input": "6PPPKKK",
+      "frameData": {
+        "startup": "338 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "back-taunt",
+      "name": "Back Taunt",
+      "type": "normal",
+      "input": "4PPPKKK",
+      "frameData": {
+        "startup": "144 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
     }
   ]
 }

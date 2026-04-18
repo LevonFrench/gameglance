@@ -9,6 +9,8 @@ interface Props {
   onSetCardTheme: (t: CardTheme) => void;
   notationSystem: string;
   onSetNotationSystem: (n: string) => void;
+  onOpenFightcadeSync?: () => void;
+  syncConnected?: boolean;
 }
 
 export const BottomHeader: React.FC<Props> = ({ 
@@ -17,7 +19,9 @@ export const BottomHeader: React.FC<Props> = ({
   cardTheme, 
   onSetCardTheme,
   notationSystem,
-  onSetNotationSystem
+  onSetNotationSystem,
+  onOpenFightcadeSync,
+  syncConnected
 }) => {
   return (
     <div style={{
@@ -158,6 +162,36 @@ export const BottomHeader: React.FC<Props> = ({
            onMouseLeave={e => e.currentTarget.style.color = 'var(--text-secondary)'}>
            GitHub
         </a>
+        {onOpenFightcadeSync && (
+          <>
+            <div style={{ width: '1px', height: '12px', background: 'var(--border-subtle)' }} />
+            <button 
+               onClick={onOpenFightcadeSync}
+               style={{ 
+                 background: 'none',
+                 border: 'none',
+                 padding: 0,
+                 cursor: 'pointer',
+                 color: 'var(--text-secondary)', 
+                 transition: 'color 0.2s',
+                 fontFamily: 'inherit',
+                 fontSize: 'inherit',
+                 display: 'flex',
+                 alignItems: 'center',
+                 gap: '0.4rem'
+               }}
+               onMouseEnter={e => e.currentTarget.style.color = 'var(--text-primary)'}
+               onMouseLeave={e => e.currentTarget.style.color = 'var(--text-secondary)'}
+            >
+               <div style={{
+                 width: '6px', height: '6px', borderRadius: '50%',
+                 background: syncConnected ? '#10b981' : '#ef4444',
+                 boxShadow: syncConnected ? '0 0 6px #10b981' : 'none'
+               }} />
+               Fightcade Sync
+            </button>
+          </>
+        )}
       </div>
     </div>
   );

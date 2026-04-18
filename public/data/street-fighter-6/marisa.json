@@ -4,39 +4,693 @@
   "game": "Street Fighter 6",
   "movesList": [
     {
-      "name": "Kacho Sen",
-      "input": "236P",
-      "type": "Special"
+      "id": "standing-light-punch",
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "input": "5LP",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "11",
+        "advantage": "-2"
+      },
+      "damage": "400"
     },
     {
-      "name": "Ryuu Enbu",
-      "input": "214P",
-      "type": "Special"
+      "id": "standing-medium-punch",
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "input": "5MP",
+      "frameData": {
+        "startup": "7",
+        "active": "4",
+        "recovery": "15(17)",
+        "advantage": "-1"
+      },
+      "damage": "700"
     },
     {
-      "name": "Hishou Ryuuenjin",
-      "input": "623P",
-      "type": "Special"
+      "id": "standing-heavy-punch",
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "input": "5HP",
+      "frameData": {
+        "startup": "12",
+        "active": "2",
+        "recovery": "23",
+        "advantage": "-3"
+      },
+      "damage": "1000"
     },
     {
-      "name": "Musasabi no Mai",
-      "input": "j.214P",
-      "type": "Special"
+      "id": "standing-light-kick",
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "input": "5LK",
+      "frameData": {
+        "startup": "6",
+        "active": "2",
+        "recovery": "14",
+        "advantage": "-2"
+      },
+      "damage": "400"
     },
     {
-      "name": "Kagerou no Mai",
+      "id": "standing-medium-kick",
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "input": "5MK",
+      "frameData": {
+        "startup": "11",
+        "active": "4",
+        "recovery": "16",
+        "advantage": "-2"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "standing-heavy-kick",
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "frameData": {
+        "startup": "15",
+        "active": "2",
+        "recovery": "25",
+        "advantage": "-3"
+      },
+      "damage": "1000"
+    },
+    {
+      "id": "crouching-light-punch",
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "input": "2LP",
+      "frameData": {
+        "startup": "4",
+        "active": "2",
+        "recovery": "10",
+        "advantage": "-1"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "crouching-medium-punch",
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "input": "2MP",
+      "frameData": {
+        "startup": "8",
+        "active": "3",
+        "recovery": "16",
+        "advantage": "-2"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "crouching-heavy-punch",
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "input": "2HP",
+      "frameData": {
+        "startup": "9",
+        "active": "5",
+        "recovery": "23",
+        "advantage": "-6"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "crouching-light-kick",
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "input": "2LK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "12",
+        "advantage": "-3"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "crouching-medium-kick",
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "input": "2MK",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "17(18)",
+        "advantage": "-2"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "gaia-bash",
+      "name": "Gaia Bash",
+      "type": "normal",
+      "input": "2HK",
+      "frameData": {
+        "startup": "11",
+        "active": "3",
+        "recovery": "26",
+        "advantage": "-11"
+      },
+      "damage": "1000"
+    },
+    {
+      "id": "jumping-light-punch",
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "input": "j.LP",
+      "frameData": {
+        "startup": "4",
+        "active": "7",
+        "recovery": "3 land",
+        "advantage": "+6(+8)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-punch",
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "input": "j.MP",
+      "frameData": {
+        "startup": "7",
+        "active": "4",
+        "recovery": "3 land",
+        "advantage": "+4(+7)"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "jumping-heavy-punch",
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "input": "j.HP",
+      "frameData": {
+        "startup": "10",
+        "active": "7",
+        "recovery": "3 land",
+        "advantage": "+5(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "jumping-light-kick",
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "input": "j.LK",
+      "frameData": {
+        "startup": "5",
+        "active": "10",
+        "recovery": "3 land",
+        "advantage": "+1(+8)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-kick",
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "input": "j.MK",
+      "frameData": {
+        "startup": "8",
+        "active": "8",
+        "recovery": "3 land",
+        "advantage": "+6(+11)"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "jumping-heavy-kick",
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "input": "j.HK",
+      "frameData": {
+        "startup": "10",
+        "active": "7",
+        "recovery": "3 land",
+        "advantage": "+6(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "novacula-1",
+      "name": "Novacula 1",
+      "type": "normal",
+      "input": "6MP",
+      "frameData": {
+        "startup": "9",
+        "active": "2",
+        "recovery": "20",
+        "advantage": "-3"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "magna-bunker",
+      "name": "Magna Bunker",
+      "type": "normal",
+      "input": "4HP",
+      "frameData": {
+        "startup": "8",
+        "active": "2",
+        "recovery": "21(24)",
+        "advantage": "-1"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "malleus-breaker-1",
+      "name": "Malleus Breaker 1",
+      "type": "normal",
+      "input": "3HP",
+      "frameData": {
+        "startup": "21",
+        "active": "2",
+        "recovery": "21",
+        "advantage": "-3"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "falx-crusher-1",
+      "name": "Falx Crusher 1",
+      "type": "normal",
+      "input": "6HK",
+      "frameData": {
+        "startup": "14",
+        "active": "4",
+        "recovery": "21",
+        "advantage": "-3"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "caelum-arc",
+      "name": "Caelum Arc",
+      "type": "normal",
+      "input": "nj.2HP",
+      "frameData": {
+        "startup": "9",
+        "active": "9",
+        "recovery": "3 land",
+        "advantage": "+7(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "light-two-hitter",
+      "name": "Light Two Hitter",
+      "type": "unique",
+      "input": "5LP~LP",
+      "frameData": {
+        "startup": "14",
+        "active": "3",
+        "recovery": "22",
+        "advantage": "-6"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "medium-two-hitter",
+      "name": "Medium Two Hitter",
+      "type": "unique",
+      "input": "5MP~MP",
+      "frameData": {
+        "startup": "14",
+        "active": "2",
+        "recovery": "23",
+        "advantage": "-8"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "heavy-two-hitter",
+      "name": "Heavy Two Hitter",
+      "type": "unique",
+      "input": "5HP~HP",
+      "frameData": {
+        "startup": "24",
+        "active": "3",
+        "recovery": "19",
+        "advantage": "+2"
+      },
+      "damage": "1000 (900)"
+    },
+    {
+      "id": "novacula-swipe",
+      "name": "Novacula Swipe",
+      "type": "unique",
+      "input": "6MP~HP",
+      "frameData": {
+        "startup": "11",
+        "active": "2",
+        "recovery": "26",
+        "advantage": "-12"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "novacula-thrust",
+      "name": "Novacula Thrust",
+      "type": "unique",
+      "input": "6MP~HK",
+      "frameData": {
+        "startup": "11",
+        "active": "4",
+        "recovery": "23",
+        "advantage": "-10(-26)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "malleus-breaker-2",
+      "name": "Malleus Breaker 2",
+      "type": "unique",
+      "input": "3HP~3HP",
+      "frameData": {
+        "startup": "18",
+        "active": "2",
+        "recovery": "24",
+        "advantage": "-12 (-24 whiff)"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "falx-crusher-2",
+      "name": "Falx Crusher 2",
+      "type": "unique",
+      "input": "6HK~6HK",
+      "frameData": {
+        "startup": "16",
+        "active": "5",
+        "recovery": "25",
+        "advantage": "-12"
+      },
+      "damage": "1000"
+    },
+    {
+      "id": "volare-combo",
+      "name": "Volare Combo",
+      "type": "unique",
+      "input": "j.MP~MP",
+      "frameData": {
+        "startup": "10",
+        "active": "3",
+        "recovery": "3 land",
+        "advantage": "-"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "mounted-grace",
+      "name": "Mounted Grace",
+      "type": "throw",
+      "input": "LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "ponte-milvio",
+      "name": "Ponte Milvio",
+      "type": "throw",
+      "input": "4LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "secutor",
+      "name": "Secutor",
+      "type": "common",
+      "input": "HPHK",
+      "frameData": {
+        "startup": "26",
+        "active": "2",
+        "recovery": "35",
+        "advantage": "-3 / Wall Splat HKD +72"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "love-tap-block",
+      "name": "Love Tap (Block)",
+      "type": "common",
+      "input": "6HPHK",
+      "frameData": {
+        "startup": "20",
+        "active": "3",
+        "recovery": "26(31)",
+        "advantage": "-6"
+      },
+      "damage": "500 recoverable"
+    },
+    {
+      "id": "drive-parry",
+      "name": "Drive Parry",
+      "type": "common",
+      "input": "MPMK",
+      "frameData": {
+        "startup": "1",
+        "active": "12 or until released",
+        "recovery": "33(1)(11)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "parry-drive-rush",
+      "name": "Parry Drive Rush",
+      "type": "common",
+      "input": "MPMK~66",
+      "frameData": {
+        "startup": "3+8",
+        "active": "-",
+        "recovery": "15(37)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "gladius",
+      "name": "Gladius",
+      "type": "special",
+      "input": "236LP",
+      "frameData": {
+        "startup": "17",
+        "active": "4",
+        "recovery": "21",
+        "advantage": "-5"
+      },
+      "damage": "1200"
+    },
+    {
+      "id": "gladius-hold",
+      "name": "Gladius (Hold)",
+      "type": "special",
+      "input": "236[LP]",
+      "frameData": {
+        "startup": "30",
+        "active": "4",
+        "recovery": "20",
+        "advantage": "+4"
+      },
+      "damage": "1200,1000,200 (2400)"
+    },
+    {
+      "id": "dimachaerus",
+      "name": "Dimachaerus",
+      "type": "special",
+      "input": "214LP",
+      "frameData": {
+        "startup": "12",
+        "active": "4",
+        "recovery": "30",
+        "advantage": "-16"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "lp-dimachaerus-follow-up",
+      "name": "LP Dimachaerus Follow-up",
+      "type": "special",
+      "input": "214LP~6P",
+      "frameData": {
+        "startup": "13",
+        "active": "5",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "phalanx",
+      "name": "Phalanx",
+      "type": "special",
+      "input": "623LP",
+      "frameData": {
+        "startup": "25",
+        "active": "6",
+        "recovery": "15 land",
+        "advantage": "+3(+4)"
+      },
+      "damage": "1500"
+    },
+    {
+      "id": "quadriga",
+      "name": "Quadriga",
+      "type": "special",
+      "input": "236LK",
+      "frameData": {
+        "startup": "20",
+        "active": "4",
+        "recovery": "24",
+        "advantage": "-6"
+      },
+      "damage": "1400"
+    },
+    {
+      "id": "scutum",
+      "name": "Scutum",
+      "type": "special",
+      "input": "214K",
+      "frameData": {
+        "startup": "3(8)",
+        "active": "26(116)",
+        "recovery": "26",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "tonitrus-1",
+      "name": "Tonitrus 1",
+      "type": "special",
+      "input": "214K~P",
+      "frameData": {
+        "startup": "8+15(16)",
+        "active": "3",
+        "recovery": "23(25)",
+        "advantage": "-3"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "procella",
+      "name": "Procella",
+      "type": "special",
+      "input": "214K~K",
+      "frameData": {
+        "startup": "8+16",
+        "active": "3",
+        "recovery": "37",
+        "advantage": "-24"
+      },
+      "damage": "1200"
+    },
+    {
+      "id": "enfold",
+      "name": "Enfold",
+      "type": "special",
+      "input": "214K~LPLK",
+      "frameData": {
+        "startup": "8+5",
+        "active": "3",
+        "recovery": "54",
+        "advantage": "-"
+      },
+      "damage": "2500 (2875)"
+    },
+    {
+      "id": "javelin-of-marisa",
+      "name": "Javelin of Marisa",
+      "type": "super",
       "input": "236236P",
-      "type": "Super Art 1"
+      "frameData": {
+        "startup": "19",
+        "active": "5",
+        "recovery": "60",
+        "advantage": "-43"
+      },
+      "damage": "2200"
     },
     {
-      "name": "Chou Hissatsu Shinobi Bachi",
+      "id": "meteorite",
+      "name": "Meteorite",
+      "type": "super",
+      "input": "214214P",
+      "frameData": {
+        "startup": "9",
+        "active": "8(32)3",
+        "recovery": "59",
+        "advantage": "-44(-77)"
+      },
+      "damage": "3000(2500)"
+    },
+    {
+      "id": "goddess-of-the-hunt",
+      "name": "Goddess of the Hunt",
+      "type": "super",
       "input": "236236K",
-      "type": "Super Art 2"
+      "frameData": {
+        "startup": "13",
+        "active": "7",
+        "recovery": "60",
+        "advantage": "-39(-33)"
+      },
+      "damage": "4000"
     },
     {
-      "name": "Shiranui-ryuu Ougi",
-      "input": "214214K",
-      "type": "Super Art 3"
+      "id": "neutral-taunt",
+      "name": "Neutral Taunt",
+      "type": "normal",
+      "input": "5PPPKKK",
+      "frameData": {
+        "startup": "242 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "forward-taunt",
+      "name": "Forward Taunt",
+      "type": "normal",
+      "input": "6PPPKKK",
+      "frameData": {
+        "startup": "85",
+        "active": "[55]",
+        "recovery": "72",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "back-taunt",
+      "name": "Back Taunt",
+      "type": "normal",
+      "input": "4PPPKKK",
+      "frameData": {
+        "startup": "184 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
     }
   ]
 }

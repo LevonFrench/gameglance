@@ -1,7 +1,6 @@
 {
-  "name": "Dhalsim",
-  "character": "Dhalsim",
   "game": "Street Fighter 6",
+  "character": "Terry",
   "movesList": [
     {
       "id": "standing-light-punch",
@@ -11,7 +10,7 @@
       "frameData": {
         "startup": "4",
         "active": "3",
-        "recovery": "8",
+        "recovery": "7",
         "advantage": "-1"
       },
       "damage": "300"
@@ -22,10 +21,10 @@
       "type": "normal",
       "input": "5MP",
       "frameData": {
-        "startup": "14",
+        "startup": "7",
         "active": "3",
-        "recovery": "19",
-        "advantage": "-5"
+        "recovery": "16",
+        "advantage": "-3"
       },
       "damage": "700"
     },
@@ -35,12 +34,12 @@
       "type": "normal",
       "input": "5HP",
       "frameData": {
-        "startup": "16",
-        "active": "4",
-        "recovery": "27",
-        "advantage": "-11"
+        "startup": "9",
+        "active": "1,3",
+        "recovery": "18(16)",
+        "advantage": "+1"
       },
-      "damage": "1000"
+      "damage": "400x2"
     },
     {
       "id": "standing-light-kick",
@@ -48,10 +47,10 @@
       "type": "normal",
       "input": "5LK",
       "frameData": {
-        "startup": "9",
-        "active": "4",
-        "recovery": "11",
-        "advantage": "-6"
+        "startup": "5",
+        "active": "2",
+        "recovery": "12",
+        "advantage": "-2"
       },
       "damage": "300"
     },
@@ -61,12 +60,12 @@
       "type": "normal",
       "input": "5MK",
       "frameData": {
-        "startup": "12",
+        "startup": "9",
         "active": "3",
         "recovery": "18",
-        "advantage": "-6"
+        "advantage": "-2"
       },
-      "damage": "600"
+      "damage": "700"
     },
     {
       "id": "standing-heavy-kick",
@@ -74,12 +73,12 @@
       "type": "normal",
       "input": "5HK",
       "frameData": {
-        "startup": "17",
-        "active": "3",
-        "recovery": "20",
-        "advantage": "-6"
+        "startup": "12",
+        "active": "4",
+        "recovery": "21",
+        "advantage": "-4"
       },
-      "damage": "800"
+      "damage": "900"
     },
     {
       "id": "crouching-light-punch",
@@ -87,9 +86,9 @@
       "type": "normal",
       "input": "2LP",
       "frameData": {
-        "startup": "5",
+        "startup": "4",
         "active": "3",
-        "recovery": "9",
+        "recovery": "8",
         "advantage": "-1"
       },
       "damage": "300"
@@ -100,10 +99,10 @@
       "type": "normal",
       "input": "2MP",
       "frameData": {
-        "startup": "12",
-        "active": "3",
-        "recovery": "16",
-        "advantage": "-4"
+        "startup": "6",
+        "active": "4",
+        "recovery": "13(14/15)",
+        "advantage": "-1"
       },
       "damage": "600"
     },
@@ -113,10 +112,10 @@
       "type": "normal",
       "input": "2HP",
       "frameData": {
-        "startup": "19",
-        "active": "4",
-        "recovery": "20(24)",
-        "advantage": "-8"
+        "startup": "8",
+        "active": "6(4)",
+        "recovery": "22(20)",
+        "advantage": "-4"
       },
       "damage": "800"
     },
@@ -126,10 +125,10 @@
       "type": "normal",
       "input": "2LK",
       "frameData": {
-        "startup": "4",
-        "active": "7",
-        "recovery": "16",
-        "advantage": "-10(-4)"
+        "startup": "5",
+        "active": "2",
+        "recovery": "11",
+        "advantage": "-2"
       },
       "damage": "200"
     },
@@ -139,23 +138,23 @@
       "type": "normal",
       "input": "2MK",
       "frameData": {
-        "startup": "10",
-        "active": "13",
-        "recovery": "14",
-        "advantage": "-10(+2)"
+        "startup": "8",
+        "active": "3",
+        "recovery": "19",
+        "advantage": "-6"
       },
       "damage": "500"
     },
     {
-      "id": "long-sliding-kick",
-      "name": "Long Sliding Kick",
+      "id": "sliding-kick",
+      "name": "Sliding Kick",
       "type": "normal",
       "input": "2HK",
       "frameData": {
-        "startup": "12",
-        "active": "16",
-        "recovery": "20",
-        "advantage": "-16(-1)"
+        "startup": "10",
+        "active": "3",
+        "recovery": "24",
+        "advantage": "-11"
       },
       "damage": "900"
     },
@@ -166,9 +165,9 @@
       "input": "j.LP",
       "frameData": {
         "startup": "4",
-        "active": "4",
+        "active": "7",
         "recovery": "3 land",
-        "advantage": "0(+5)"
+        "advantage": "+2(+5)"
       },
       "damage": "300"
     },
@@ -178,10 +177,10 @@
       "type": "normal",
       "input": "j.MP",
       "frameData": {
-        "startup": "9",
-        "active": "6",
+        "startup": "7",
+        "active": "4",
         "recovery": "3 land",
-        "advantage": "-1(+7)"
+        "advantage": "+7"
       },
       "damage": "700"
     },
@@ -191,10 +190,10 @@
       "type": "normal",
       "input": "j.HP",
       "frameData": {
-        "startup": "13",
-        "active": "4",
+        "startup": "9",
+        "active": "6",
         "recovery": "3 land",
-        "advantage": "-9(+15)"
+        "advantage": "+5(+11)"
       },
       "damage": "800"
     },
@@ -204,10 +203,10 @@
       "type": "normal",
       "input": "j.LK",
       "frameData": {
-        "startup": "6",
-        "active": "4",
+        "startup": "5",
+        "active": "7",
         "recovery": "3 land",
-        "advantage": "-15(+5)"
+        "advantage": "+3(+5)"
       },
       "damage": "300"
     },
@@ -217,10 +216,10 @@
       "type": "normal",
       "input": "j.MK",
       "frameData": {
-        "startup": "11",
+        "startup": "7",
         "active": "6",
         "recovery": "3 land",
-        "advantage": "-11(+9)"
+        "advantage": "+4(+9)"
       },
       "damage": "500"
     },
@@ -231,145 +230,80 @@
       "input": "j.HK",
       "frameData": {
         "startup": "10",
-        "active": "10",
+        "active": "7",
         "recovery": "3 land",
-        "advantage": "+1(+11)"
+        "advantage": "+5(+11)"
       },
       "damage": "800"
     },
     {
-      "id": "yoga-uppercut",
-      "name": "Yoga Uppercut",
+      "id": "hammer-punch",
+      "name": "Hammer Punch",
       "type": "normal",
-      "input": "4MP",
+      "input": "6HP",
       "frameData": {
-        "startup": "8",
-        "active": "6",
-        "recovery": "16",
+        "startup": "22",
+        "active": "3",
+        "recovery": "19",
         "advantage": "-3"
       },
-      "damage": "700"
+      "damage": "800"
     },
     {
-      "id": "yoga-lance",
-      "name": "Yoga Lance",
-      "type": "normal",
-      "input": "4HP",
+      "id": "power-drive",
+      "name": "Power Drive",
+      "type": "unique",
+      "input": "5MP~HP",
       "frameData": {
-        "startup": "14",
-        "active": "7",
-        "recovery": "29",
-        "advantage": "-16"
+        "startup": "15",
+        "active": "3",
+        "recovery": "22",
+        "advantage": "-5"
       },
-      "damage": "900"
+      "damage": "1100(770)"
     },
     {
-      "id": "divine-kick",
-      "name": "Divine Kick",
-      "type": "normal",
-      "input": "4MK",
+      "id": "power-shoot",
+      "name": "Power Shoot",
+      "type": "unique",
+      "input": "5MP~HK",
       "frameData": {
-        "startup": "7",
-        "active": "4",
-        "recovery": "17",
-        "advantage": "0"
+        "startup": "18",
+        "active": "3",
+        "recovery": "31",
+        "advantage": "-14"
       },
       "damage": "600"
     },
     {
-      "id": "yoga-mountain",
-      "name": "Yoga Mountain",
-      "type": "normal",
-      "input": "4HK",
+      "id": "passing-sway",
+      "name": "Passing Sway",
+      "type": "unique",
+      "input": "5MP~MK",
       "frameData": {
-        "startup": "14",
-        "active": "6",
-        "recovery": "20",
-        "advantage": "-9"
+        "startup": "13",
+        "active": "2",
+        "recovery": "27(38)",
+        "advantage": "-12"
       },
-      "damage": "1000"
+      "damage": "400"
     },
     {
-      "id": "nirvana-punch",
-      "name": "Nirvana Punch",
-      "type": "normal",
-      "input": "1HP",
+      "id": "fire-kick",
+      "name": "Fire Kick",
+      "type": "unique",
+      "input": "2MK~2HK",
       "frameData": {
-        "startup": "10",
-        "active": "4",
-        "recovery": "20",
-        "advantage": "-3"
+        "startup": "13",
+        "active": "2",
+        "recovery": "28",
+        "advantage": "-16"
       },
-      "damage": "800"
+      "damage": "500 (400)"
     },
     {
-      "id": "agile-kick",
-      "name": "Agile Kick",
-      "type": "normal",
-      "input": "1LK",
-      "frameData": {
-        "startup": "5",
-        "active": "3",
-        "recovery": "10",
-        "advantage": "-3"
-      },
-      "damage": "200"
-    },
-    {
-      "id": "thrust-kick",
-      "name": "Thrust Kick",
-      "type": "normal",
-      "input": "1MK",
-      "frameData": {
-        "startup": "8",
-        "active": "3",
-        "recovery": "20",
-        "advantage": "-7"
-      },
-      "damage": "500"
-    },
-    {
-      "id": "karma-kick",
-      "name": "Karma Kick",
-      "type": "normal",
-      "input": "1HK",
-      "frameData": {
-        "startup": "9",
-        "active": "3",
-        "recovery": "22",
-        "advantage": "-7"
-      },
-      "damage": "900"
-    },
-    {
-      "id": "yoga-mummy",
-      "name": "Yoga Mummy",
-      "type": "normal",
-      "input": "j.2LP",
-      "frameData": {
-        "startup": "10",
-        "active": "until land",
-        "recovery": "9 land",
-        "advantage": "-22(+4)"
-      },
-      "damage": "500"
-    },
-    {
-      "id": "drill-kick",
-      "name": "Drill Kick",
-      "type": "normal",
-      "input": "j.2LK",
-      "frameData": {
-        "startup": "9",
-        "active": "until land",
-        "recovery": "6(11) land",
-        "advantage": "-30(+5)"
-      },
-      "damage": "500"
-    },
-    {
-      "id": "yoga-smash",
-      "name": "Yoga Smash",
+      "id": "grasping-upper",
+      "name": "Grasping Upper",
       "type": "throw",
       "input": "LPLK",
       "frameData": {
@@ -381,8 +315,8 @@
       "damage": "1200 (2040)"
     },
     {
-      "id": "yoga-throw",
-      "name": "Yoga Throw",
+      "id": "buster-throw",
+      "name": "Buster Throw",
       "type": "throw",
       "input": "4LPLK",
       "frameData": {
@@ -394,21 +328,8 @@
       "damage": "1200 (2040)"
     },
     {
-      "id": "yoga-splash",
-      "name": "Yoga Splash",
-      "type": "throw",
-      "input": "2LPLK",
-      "frameData": {
-        "startup": "5",
-        "active": "3",
-        "recovery": "23",
-        "advantage": "-"
-      },
-      "damage": "1200 (2040)"
-    },
-    {
-      "id": "yoga-rise",
-      "name": "Yoga Rise",
+      "id": "back-spin-kick",
+      "name": "Back Spin Kick",
       "type": "common",
       "input": "HPHK",
       "frameData": {
@@ -420,17 +341,17 @@
       "damage": "800"
     },
     {
-      "id": "yoga-illusion-block",
-      "name": "Yoga Illusion (Block)",
+      "id": "back-knuckle-block",
+      "name": "Back Knuckle (Block)",
       "type": "common",
       "input": "6HPHK",
       "frameData": {
         "startup": "20",
-        "active": "3(6)3",
-        "recovery": "26(32)",
+        "active": "3",
+        "recovery": "26(31)",
         "advantage": "-6"
       },
-      "damage": "250x2 recoverable"
+      "damage": "500 recoverable"
     },
     {
       "id": "drive-parry",
@@ -459,134 +380,134 @@
       "damage": "-"
     },
     {
-      "id": "yoga-fire",
-      "name": "Yoga Fire",
+      "id": "power-wave",
+      "name": "Power Wave",
       "type": "special",
-      "input": "236P",
+      "input": "236LP",
       "frameData": {
-        "startup": "15(11)",
+        "startup": "14",
         "active": "-",
-        "recovery": "33",
-        "advantage": "-6"
+        "recovery": "35",
+        "advantage": "-9"
       },
       "damage": "600"
     },
     {
-      "id": "yoga-arch",
-      "name": "Yoga Arch",
+      "id": "round-wave",
+      "name": "Round Wave",
       "type": "special",
-      "input": "236LK",
+      "input": "236HP",
       "frameData": {
-        "startup": "18",
-        "active": "[81+10]",
-        "recovery": "27",
-        "advantage": "-1"
+        "startup": "29",
+        "active": "9",
+        "recovery": "14",
+        "advantage": "+5"
       },
-      "damage": "600"
+      "damage": "900"
     },
     {
-      "id": "yoga-flame",
-      "name": "Yoga Flame",
+      "id": "quick-burn",
+      "name": "Quick Burn",
       "type": "special",
-      "input": "63214LP",
+      "input": "214LP",
       "frameData": {
-        "startup": "16",
-        "active": "15",
-        "recovery": "15",
-        "advantage": "-4"
-      },
-      "damage": "800"
-    },
-    {
-      "id": "yoga-blast",
-      "name": "Yoga Blast",
-      "type": "special",
-      "input": "63214LK",
-      "frameData": {
-        "startup": "12",
-        "active": "10",
+        "startup": "10(22)",
+        "active": "2(10)2",
         "recovery": "23",
-        "advantage": "-6"
+        "advantage": "-5"
+      },
+      "damage": "500,400 (900)"
+    },
+    {
+      "id": "burning-knuckle",
+      "name": "Burning Knuckle",
+      "type": "special",
+      "input": "214MP",
+      "frameData": {
+        "startup": "14",
+        "active": "9",
+        "recovery": "20",
+        "advantage": "-6(+2)"
       },
       "damage": "1000"
     },
     {
-      "id": "yoga-comet",
-      "name": "Yoga Comet",
+      "id": "rising-tackle",
+      "name": "Rising Tackle",
       "type": "special",
-      "input": "j.63214LP",
+      "input": "623LP",
       "frameData": {
-        "startup": "30",
-        "active": "[~55]",
-        "recovery": "8 land",
-        "advantage": "-2~"
+        "startup": "5",
+        "active": "10",
+        "recovery": "21+12 land",
+        "advantage": "-23"
       },
-      "damage": "800"
+      "damage": "1000(700)"
     },
     {
-      "id": "yoga-float",
-      "name": "Yoga Float",
+      "id": "power-charge",
+      "name": "Power Charge",
       "type": "special",
-      "input": "2KK or 3KK",
+      "input": "236LK",
       "frameData": {
-        "startup": "30",
-        "active": "(91)",
-        "recovery": "20+3 land",
-        "advantage": "-"
+        "startup": "14",
+        "active": "5",
+        "recovery": "24",
+        "advantage": "-9(-5)"
       },
-      "damage": "-"
+      "damage": "700"
     },
     {
-      "id": "yoga-teleport",
-      "name": "Yoga Teleport",
+      "id": "crack-shoot",
+      "name": "Crack Shoot",
       "type": "special",
-      "input": "4 or 6 + PPP/KKK",
+      "input": "214LK",
       "frameData": {
-        "startup": "4",
-        "active": "-",
-        "recovery": "24(31)",
-        "advantage": "-"
+        "startup": "16(18)",
+        "active": "4",
+        "recovery": "4+14 land",
+        "advantage": "-3"
       },
-      "damage": "-"
+      "damage": "700"
     },
     {
-      "id": "yoga-inferno",
-      "name": "Yoga Inferno",
-      "type": "super",
-      "input": "236236LP",
-      "frameData": {
-        "startup": "10",
-        "active": "104",
-        "recovery": "15",
-        "advantage": "-10"
-      },
-      "damage": "1920(792 rec oB)"
-    },
-    {
-      "id": "yoga-sunburst",
-      "name": "Yoga Sunburst",
-      "type": "super",
-      "input": "214214K",
-      "frameData": {
-        "startup": "7",
-        "active": "[142+20]",
-        "recovery": "60",
-        "advantage": "-4"
-      },
-      "damage": "450x4,1000 (2800)"
-    },
-    {
-      "id": "merciless-yoga",
-      "name": "Merciless Yoga",
+      "id": "buster-wolf",
+      "name": "Buster Wolf",
       "type": "super",
       "input": "236236K",
       "frameData": {
-        "startup": "10",
-        "active": "5",
-        "recovery": "75",
-        "advantage": "-62"
+        "startup": "7",
+        "active": "12",
+        "recovery": "60(45)",
+        "advantage": "-26"
       },
-      "damage": "4000"
+      "damage": "2000"
+    },
+    {
+      "id": "power-geyser",
+      "name": "Power Geyser",
+      "type": "super",
+      "input": "214214P",
+      "frameData": {
+        "startup": "13",
+        "active": "13",
+        "recovery": "54",
+        "advantage": "-27"
+      },
+      "damage": "2600"
+    },
+    {
+      "id": "rising-fang",
+      "name": "Rising Fang",
+      "type": "super",
+      "input": "236236P",
+      "frameData": {
+        "startup": "8(2)",
+        "active": "27",
+        "recovery": "29+28 land",
+        "advantage": "-50(-53)"
+      },
+      "damage": "4000(2650-3000)"
     },
     {
       "id": "neutral-taunt",
@@ -594,7 +515,7 @@
       "type": "normal",
       "input": "5PPPKKK",
       "frameData": {
-        "startup": "190 (total)",
+        "startup": "300 (total)",
         "active": "-",
         "recovery": "-",
         "advantage": "-"
@@ -607,7 +528,7 @@
       "type": "normal",
       "input": "6PPPKKK",
       "frameData": {
-        "startup": "380 (total)",
+        "startup": "205 (total)",
         "active": "-",
         "recovery": "-",
         "advantage": "-"
@@ -620,12 +541,14 @@
       "type": "normal",
       "input": "4PPPKKK",
       "frameData": {
-        "startup": "430 (total)",
+        "startup": "499 (total)",
         "active": "-",
         "recovery": "-",
         "advantage": "-"
       },
       "damage": "-"
     }
-  ]
+  ],
+  "combosList": [],
+  "ramId": "-1"
 }

@@ -4,24 +4,667 @@
   "game": "Street Fighter 6",
   "movesList": [
     {
-      "name": "Screw Pile Driver",
-      "input": "360P",
-      "type": "Special"
+      "id": "standing-light-punch",
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "input": "5LP",
+      "frameData": {
+        "startup": "7(4)",
+        "active": "3",
+        "recovery": "9",
+        "advantage": "+2"
+      },
+      "damage": "400"
     },
     {
-      "name": "Siberian Express",
-      "input": "63214K",
-      "type": "Special"
+      "id": "standing-medium-punch",
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "input": "5MP",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "17",
+        "advantage": "-2"
+      },
+      "damage": "700"
     },
     {
-      "name": "Borscht Dinner",
-      "input": "j.360K",
-      "type": "Special"
+      "id": "standing-heavy-punch",
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "input": "5HP",
+      "frameData": {
+        "startup": "(6~22)+10",
+        "active": "3",
+        "recovery": "22(24)",
+        "advantage": "-3"
+      },
+      "damage": "1000"
     },
     {
+      "id": "standing-light-kick",
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "input": "5LK",
+      "frameData": {
+        "startup": "7",
+        "active": "2",
+        "recovery": "17",
+        "advantage": "-4"
+      },
+      "damage": "400"
+    },
+    {
+      "id": "standing-medium-kick",
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "input": "5MK",
+      "frameData": {
+        "startup": "10",
+        "active": "4",
+        "recovery": "19",
+        "advantage": "-4"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "standing-heavy-kick",
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "frameData": {
+        "startup": "13",
+        "active": "4",
+        "recovery": "21",
+        "advantage": "+1"
+      },
+      "damage": "1000"
+    },
+    {
+      "id": "crouching-light-punch",
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "input": "2LP",
+      "frameData": {
+        "startup": "6(3)",
+        "active": "2",
+        "recovery": "8",
+        "advantage": "+1"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "crouching-medium-punch",
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "input": "2MP",
+      "frameData": {
+        "startup": "8",
+        "active": "3",
+        "recovery": "16",
+        "advantage": "-1"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "crouching-heavy-punch",
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "input": "2HP",
+      "frameData": {
+        "startup": "11",
+        "active": "9",
+        "recovery": "35",
+        "advantage": "-20"
+      },
+      "damage": "1000"
+    },
+    {
+      "id": "crouching-light-kick",
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "input": "2LK",
+      "frameData": {
+        "startup": "4(3)",
+        "active": "3",
+        "recovery": "12",
+        "advantage": "-3"
+      },
+      "damage": "250"
+    },
+    {
+      "id": "crouching-medium-kick",
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "input": "2MK",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-2"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "big-stampede",
+      "name": "Big Stampede",
+      "type": "normal",
+      "input": "2HK",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "27",
+        "advantage": "-13"
+      },
+      "damage": "1000"
+    },
+    {
+      "id": "jumping-light-punch",
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "input": "j.LP",
+      "frameData": {
+        "startup": "5",
+        "active": "7",
+        "recovery": "3 land",
+        "advantage": "+8"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-punch",
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "input": "j.MP",
+      "frameData": {
+        "startup": "8",
+        "active": "5",
+        "recovery": "3 land",
+        "advantage": "+7(+11)"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "jumping-heavy-punch",
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "input": "j.HP",
+      "frameData": {
+        "startup": "9",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+7(+13)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "jumping-light-kick",
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "input": "j.LK",
+      "frameData": {
+        "startup": "5",
+        "active": "10",
+        "recovery": "3 land",
+        "advantage": "-1(+8)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-kick",
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "input": "j.MK",
+      "frameData": {
+        "startup": "8",
+        "active": "8",
+        "recovery": "3 land",
+        "advantage": "+3(+11)"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "jumping-heavy-kick",
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "input": "j.HK",
+      "frameData": {
+        "startup": "10",
+        "active": "7",
+        "recovery": "3 land",
+        "advantage": "+8(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "hellstab",
+      "name": "Hellstab",
+      "type": "normal",
+      "input": "3MP",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "21",
+        "advantage": "-3"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "knee-hammer",
+      "name": "Knee Hammer",
+      "type": "normal",
+      "input": "6MK",
+      "frameData": {
+        "startup": "14",
+        "active": "7",
+        "recovery": "13",
+        "advantage": "-4(+2)"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "headbutt",
+      "name": "Headbutt",
+      "type": "normal",
+      "input": "6HP",
+      "frameData": {
+        "startup": "14",
+        "active": "5",
+        "recovery": "15(17)",
+        "advantage": "+4"
+      },
+      "damage": "1000"
+    },
+    {
+      "id": "cyclone-wheel-kick",
+      "name": "Cyclone Wheel Kick",
+      "type": "normal",
+      "input": "6HK",
+      "frameData": {
+        "startup": "22(24)",
+        "active": "7(5)",
+        "recovery": "25",
+        "advantage": "-9(-5)"
+      },
+      "damage": "1300"
+    },
+    {
+      "id": "smetana-dropkick",
+      "name": "Smetana Dropkick",
+      "type": "normal",
+      "input": "3HK",
+      "frameData": {
+        "startup": "16",
+        "active": "4",
+        "recovery": "40",
+        "advantage": "-18"
+      },
+      "damage": "1000"
+    },
+    {
+      "id": "power-stomp-1",
+      "name": "Power Stomp 1",
+      "type": "normal",
+      "input": "22MK",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "17",
+        "advantage": "-3"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "flying-body-press",
+      "name": "Flying Body Press",
+      "type": "normal",
+      "input": "j.2HP",
+      "frameData": {
+        "startup": "9",
+        "active": "9",
+        "recovery": "8 land",
+        "advantage": "+10(+14)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "flying-headbutt",
+      "name": "Flying Headbutt",
+      "type": "normal",
+      "input": "j.8HP",
+      "frameData": {
+        "startup": "8",
+        "active": "4",
+        "recovery": "3 land",
+        "advantage": "+13(+16)"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "machine-gun-chops-1",
+      "name": "Machine Gun Chops 1",
+      "type": "unique",
+      "input": "5MP~MP",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "20",
+        "advantage": "-6"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "power-stomps-2",
+      "name": "Power Stomps 2",
+      "type": "unique",
+      "input": "22MK~MK",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "19",
+        "advantage": "-4"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "bodyslam",
+      "name": "Bodyslam",
+      "type": "throw",
+      "input": "5LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200,600 (2040,600)"
+    },
+    {
+      "id": "german-suplex",
+      "name": "German Suplex",
+      "type": "throw",
+      "input": "6LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1500 (2550)"
+    },
+    {
+      "id": "capture-suplex",
+      "name": "Capture Suplex",
+      "type": "throw",
+      "input": "4LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1400 (2380)"
+    },
+    {
+      "id": "brain-buster",
+      "name": "Brain Buster",
+      "type": "throw",
+      "input": "2LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1500 (2550)"
+    },
+    {
+      "id": "spinebuster",
+      "name": "Spinebuster",
+      "type": "throw",
+      "input": "3LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "russian-drop",
+      "name": "Russian Drop",
+      "type": "throw",
+      "input": "1LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1500 (2550)"
+    },
+    {
+      "id": "double-russian-chop",
+      "name": "Double Russian Chop",
+      "type": "common",
+      "input": "HPHK",
+      "frameData": {
+        "startup": "26",
+        "active": "2",
+        "recovery": "35",
+        "advantage": "-3 / Wall Splat HKD +72"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "reverse-russian-kick-block",
+      "name": "Reverse Russian Kick (Block)",
+      "type": "common",
+      "input": "6HPHK",
+      "frameData": {
+        "startup": "20",
+        "active": "3",
+        "recovery": "26(31)",
+        "advantage": "-6"
+      },
+      "damage": "500 recoverable"
+    },
+    {
+      "id": "drive-parry",
+      "name": "Drive Parry",
+      "type": "common",
+      "input": "MPMK",
+      "frameData": {
+        "startup": "1",
+        "active": "12 or until released",
+        "recovery": "33(1)(11)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "parry-drive-rush",
+      "name": "Parry Drive Rush",
+      "type": "common",
+      "input": "MPMK~66",
+      "frameData": {
+        "startup": "3+8",
+        "active": "-",
+        "recovery": "15(37)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "double-lariat",
       "name": "Double Lariat",
+      "type": "special",
       "input": "PP",
-      "type": "Special"
+      "frameData": {
+        "startup": "15",
+        "active": "2(3)2(4)2(8)2(6)2",
+        "recovery": "27",
+        "advantage": "-12(-41)"
+      },
+      "damage": "1400"
+    },
+    {
+      "id": "screw-piledriver",
+      "name": "Screw Piledriver",
+      "type": "special",
+      "input": "360+LP",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "54",
+        "advantage": "-"
+      },
+      "damage": "2500 (2875)"
+    },
+    {
+      "id": "borscht-dynamite",
+      "name": "Borscht Dynamite",
+      "type": "special",
+      "input": "j.360+K",
+      "frameData": {
+        "startup": "4",
+        "active": "3",
+        "recovery": "21(36)+16 land",
+        "advantage": "-"
+      },
+      "damage": "2900 (3260)"
+    },
+    {
+      "id": "russian-suplex",
+      "name": "Russian Suplex",
+      "type": "special",
+      "input": "63214K (Close)",
+      "frameData": {
+        "startup": "10",
+        "active": "2",
+        "recovery": "50",
+        "advantage": "-"
+      },
+      "damage": "2900 (3335)"
+    },
+    {
+      "id": "siberian-express",
+      "name": "Siberian Express",
+      "type": "special",
+      "input": "63214K (Mid)",
+      "frameData": {
+        "startup": "28",
+        "active": "2",
+        "recovery": "41",
+        "advantage": "-"
+      },
+      "damage": "2700 (3105)"
+    },
+    {
+      "id": "tundra-storm",
+      "name": "Tundra Storm",
+      "type": "special",
+      "input": "22HK",
+      "frameData": {
+        "startup": "6",
+        "active": "50",
+        "recovery": "24",
+        "advantage": "-"
+      },
+      "damage": "2400"
+    },
+    {
+      "id": "aerial-russian-slam",
+      "name": "Aerial Russian Slam",
+      "type": "super",
+      "input": "236236K",
+      "frameData": {
+        "startup": "11",
+        "active": "7",
+        "recovery": "13+47 land",
+        "advantage": "-"
+      },
+      "damage": "3500"
+    },
+    {
+      "id": "cyclone-lariat",
+      "name": "Cyclone Lariat",
+      "type": "super",
+      "input": "236236P",
+      "frameData": {
+        "startup": "18",
+        "active": "102",
+        "recovery": "52",
+        "advantage": "-35"
+      },
+      "damage": "3160(3060)"
+    },
+    {
+      "id": "bolshoi-storm-buster",
+      "name": "Bolshoi Storm Buster",
+      "type": "super",
+      "input": "720+P",
+      "frameData": {
+        "startup": "6+0",
+        "active": "2",
+        "recovery": "116",
+        "advantage": "-"
+      },
+      "damage": "4800"
+    },
+    {
+      "id": "neutral-taunt",
+      "name": "Neutral Taunt",
+      "type": "normal",
+      "input": "5PPPKKK",
+      "frameData": {
+        "startup": "194 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "forward-taunt",
+      "name": "Forward Taunt",
+      "type": "normal",
+      "input": "6PPPKKK",
+      "frameData": {
+        "startup": "227 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "back-taunt",
+      "name": "Back Taunt",
+      "type": "normal",
+      "input": "4PPPKKK",
+      "frameData": {
+        "startup": "202 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "down-taunt",
+      "name": "Down Taunt",
+      "type": "normal",
+      "input": "2PPPKKK",
+      "frameData": {
+        "startup": "210 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
     }
   ]
 }

@@ -331,28 +331,6 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
                 background: `linear-gradient(90deg, ${accentColor}80, ${accentColor}, ${accentColor}80)`,
               }} />
 
-              {/* Star toggle */}
-              <button 
-                onClick={(e) => toggleFavorite(e, character.id)}
-                style={{
-                  position: 'absolute',
-                  top: '10px',
-                  right: '10px',
-                  background: 'transparent',
-                  border: 'none',
-                  cursor: 'pointer',
-                  fontSize: '1.2rem',
-                  padding: '4px',
-                  color: favorites.includes(character.id) ? '#f59e0b' : 'var(--text-muted)',
-                  transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
-                  zIndex: 2,
-                }}
-                onMouseOver={e => { e.currentTarget.style.transform = 'scale(1.25) rotate(15deg)'; }}
-                onMouseOut={e => { e.currentTarget.style.transform = 'scale(1) rotate(0deg)'; }}
-              >
-                ★
-              </button>
-
               {/* Name */}
               <div style={{
                 fontSize: '1.15rem',
@@ -364,36 +342,77 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
                 {character.name.replace(/ \(Coming Soon\)/, '')}
               </div>
 
-              {/* Move count */}
-              {!isComingSoon && character.moveCount !== undefined && character.moveCount > 0 && (
-                <div style={{
-                  marginTop: '0.4rem',
-                  fontSize: '0.85rem',
-                  color: 'var(--text-tertiary)',
-                  fontWeight: 500,
-                  zIndex: 1,
-                }}>
-                  {character.moveCount} Moves
-                </div>
-              )}
+              {/* Second Row: Move Count Pill & Fave Icon */}
+              <div style={{
+                display: 'flex',
+                justifyContent: 'space-between',
+                alignItems: 'center',
+                width: '100%',
+                marginTop: '1rem',
+                position: 'relative',
+                zIndex: 2,
+              }}>
+                {/* Pill */}
+                {isComingSoon ? (
+                  <div style={{
+                    padding: '0.25rem 0.9rem',
+                    borderRadius: 'var(--radius-full)',
+                    background: 'var(--bg-badge)',
+                    border: '1px solid var(--border-subtle)',
+                    fontSize: '0.7rem',
+                    fontWeight: 600,
+                    color: 'var(--text-tertiary)',
+                    textTransform: 'uppercase',
+                    letterSpacing: '0.1em',
+                  }}>
+                    Coming Soon
+                  </div>
+                ) : (
+                  <div style={{
+                    padding: '0.25rem 0.75rem',
+                    borderRadius: 'var(--radius-full)',
+                    background: 'var(--bg-elevated)',
+                    border: '1px solid var(--border-medium)',
+                    fontSize: '0.75rem',
+                    fontWeight: 600,
+                    color: 'var(--text-secondary)',
+                    opacity: character.moveCount && character.moveCount > 0 ? 1 : 0
+                  }}>
+                    {character.moveCount} Moves
+                  </div>
+                )}
 
-              {/* Coming soon badge */}
-              {isComingSoon && (
-                <div style={{
-                  marginTop: '0.75rem',
-                  padding: '0.25rem 0.9rem',
-                  borderRadius: 'var(--radius-full)',
-                  background: 'var(--bg-badge)',
-                  border: '1px solid var(--border-subtle)',
-                  fontSize: '0.7rem',
-                  fontWeight: 600,
-                  color: 'var(--text-tertiary)',
-                  textTransform: 'uppercase',
-                  letterSpacing: '0.1em',
-                }}>
-                  Coming Soon
-                </div>
-              )}
+                {/* Star toggle */}
+                <button 
+                  onClick={(e) => toggleFavorite(e, character.id)}
+                  style={{
+                    background: 'var(--bg-elevated)',
+                    border: '1px solid var(--border-subtle)',
+                    borderRadius: '50%',
+                    cursor: 'pointer',
+                    fontSize: '0.9rem',
+                    width: '32px',
+                    height: '32px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    color: favorites.includes(character.id) ? '#f59e0b' : 'var(--text-muted)',
+                    transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                  }}
+                  onMouseOver={e => { 
+                    e.currentTarget.style.transform = 'scale(1.1)'; 
+                    e.currentTarget.style.color = favorites.includes(character.id) ? '#fbbf24' : 'var(--text-secondary)';
+                    e.currentTarget.style.borderColor = 'var(--border-medium)';
+                  }}
+                  onMouseOut={e => { 
+                    e.currentTarget.style.transform = 'scale(1)';
+                    e.currentTarget.style.color = favorites.includes(character.id) ? '#f59e0b' : 'var(--text-muted)';
+                    e.currentTarget.style.borderColor = 'var(--border-subtle)';
+                  }}
+                >
+                  ★
+                </button>
+              </div>
             </button>
           );
         })}

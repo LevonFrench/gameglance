@@ -1,31 +1,879 @@
 {
   "game": "Capcom vs. SNK 2: Mark of the Millennium 2001",
   "character": "Ryu",
+  "notationSystem": "numpad",
   "movesList": [
     {
-      "id": "sp_0",
-      "name": "Hadouken",
+      "id": "mv_0",
+      "name": "Vital Data\nHealth\t14400\nStun\t70\nStun Modifier\t+0 Seconds\nCrouch Height\t64 px\nWake-up Speed\t+0f\nThrow Range\tPunch: 52px\nKick: 52px\nMovement Data\nFront Dash Distance\tX: 94 px\nY: 0 px\nBackdash Distance\tX: 65 px\nY: 0 px\nRun Speed\t8.2 px\nRoll Data\nRecovery\t4f\nDistance\t120 px\nDuration\t33f",
       "type": "special",
-      "input": "236P"
+      "input": "HEALTH"
     },
     {
-      "id": "sp_1",
-      "name": "Shoryuken",
+      "id": "mv_1",
+      "name": "Health",
       "type": "special",
-      "input": "623P"
+      "input": "14400"
     },
     {
-      "id": "sp_2",
-      "name": "Tatsumaki Senpukyaku",
+      "id": "mv_2",
+      "name": "Stun",
       "type": "special",
-      "input": "214K(AirOK)"
+      "input": "70"
     },
     {
-      "id": "sp_3",
-      "name": "Shakunetsu Hadouken",
+      "id": "mv_3",
+      "name": "Stun Modifier",
       "type": "special",
-      "input": "41236P"
+      "input": "0SECONDS"
+    },
+    {
+      "id": "mv_4",
+      "name": "Crouch Height",
+      "type": "special",
+      "input": "64PX"
+    },
+    {
+      "id": "mv_5",
+      "name": "Wake-up Speed",
+      "type": "special",
+      "input": "0F"
+    },
+    {
+      "id": "mv_6",
+      "name": "Throw Range",
+      "type": "special",
+      "input": "PUNCH:52PX\nKICK:52PX"
+    },
+    {
+      "id": "mv_7",
+      "name": "Front Dash Distance",
+      "type": "special",
+      "input": "X:94PX\nY:0PX"
+    },
+    {
+      "id": "mv_8",
+      "name": "Backdash Distance",
+      "type": "special",
+      "input": "X:65PX\nY:0PX"
+    },
+    {
+      "id": "mv_9",
+      "name": "Run Speed",
+      "type": "special",
+      "input": "8.2PX"
+    },
+    {
+      "id": "mv_10",
+      "name": "Recovery",
+      "type": "special",
+      "input": "4F"
+    },
+    {
+      "id": "mv_11",
+      "name": "Distance",
+      "type": "special",
+      "input": "120PX"
+    },
+    {
+      "id": "mv_12",
+      "name": "Duration",
+      "type": "special",
+      "input": "33F"
+    },
+    {
+      "id": "mv_13",
+      "name": "Health",
+      "type": "special",
+      "input": "14400"
+    },
+    {
+      "id": "mv_14",
+      "name": "Stun",
+      "type": "special",
+      "input": "70"
+    },
+    {
+      "id": "mv_15",
+      "name": "Stun Modifier",
+      "type": "special",
+      "input": "0SECONDS"
+    },
+    {
+      "id": "mv_16",
+      "name": "Crouch Height",
+      "type": "special",
+      "input": "64PX"
+    },
+    {
+      "id": "mv_17",
+      "name": "Wake-up Speed",
+      "type": "special",
+      "input": "0F"
+    },
+    {
+      "id": "mv_18",
+      "name": "Throw Range",
+      "type": "special",
+      "input": "PUNCH:52PX\nKICK:52PX"
+    },
+    {
+      "id": "mv_19",
+      "name": "Front Dash Distance",
+      "type": "special",
+      "input": "X:94PX\nY:0PX"
+    },
+    {
+      "id": "mv_20",
+      "name": "Backdash Distance",
+      "type": "special",
+      "input": "X:65PX\nY:0PX"
+    },
+    {
+      "id": "mv_21",
+      "name": "Run Speed",
+      "type": "special",
+      "input": "8.2PX"
+    },
+    {
+      "id": "mv_22",
+      "name": "Recovery",
+      "type": "special",
+      "input": "4F"
+    },
+    {
+      "id": "mv_23",
+      "name": "Distance",
+      "type": "special",
+      "input": "120PX"
+    },
+    {
+      "id": "mv_24",
+      "name": "Duration",
+      "type": "special",
+      "input": "33F"
+    },
+    {
+      "id": "mv_25",
+      "name": "Name",
+      "type": "special",
+      "input": "COUNTRY"
+    },
+    {
+      "id": "mv_26",
+      "name": "GAO",
+      "type": "special",
+      "input": "JAPAN"
+    },
+    {
+      "id": "mv_27",
+      "name": "Towel",
+      "type": "special",
+      "input": "JAPAN"
+    },
+    {
+      "id": "mv_28",
+      "name": "Dan",
+      "type": "special",
+      "input": "JAPAN"
+    },
+    {
+      "id": "mv_29",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_30",
+      "name": "Far",
+      "type": "special",
+      "input": "300"
+    },
+    {
+      "id": "mv_31",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_32",
+      "name": "Far",
+      "type": "special",
+      "input": "1000"
+    },
+    {
+      "id": "mv_33",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_34",
+      "name": "Far",
+      "type": "special",
+      "input": "1400"
+    },
+    {
+      "id": "mv_35",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_36",
+      "name": "Far",
+      "type": "special",
+      "input": "500"
+    },
+    {
+      "id": "mv_37",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_38",
+      "name": "Far",
+      "type": "special",
+      "input": "900"
+    },
+    {
+      "id": "mv_39",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_40",
+      "name": "Far",
+      "type": "special",
+      "input": "1200,1300"
+    },
+    {
+      "id": "mv_41",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_42",
+      "name": "Close",
+      "type": "special",
+      "input": "400"
+    },
+    {
+      "id": "mv_43",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_44",
+      "name": "Close",
+      "type": "special",
+      "input": "800"
+    },
+    {
+      "id": "mv_45",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_46",
+      "name": "Close",
+      "type": "special",
+      "input": "1200/1000"
+    },
+    {
+      "id": "mv_47",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_48",
+      "name": "Close",
+      "type": "special",
+      "input": "300"
+    },
+    {
+      "id": "mv_49",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_50",
+      "name": "Close",
+      "type": "special",
+      "input": "900"
+    },
+    {
+      "id": "mv_51",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_52",
+      "name": "Close",
+      "type": "special",
+      "input": "500900"
+    },
+    {
+      "id": "mv_53",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_54",
+      "name": "+",
+      "type": "special",
+      "input": "300"
+    },
+    {
+      "id": "mv_55",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_56",
+      "name": "+",
+      "type": "special",
+      "input": "900"
+    },
+    {
+      "id": "mv_57",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_58",
+      "name": "+",
+      "type": "special",
+      "input": "1200/800"
+    },
+    {
+      "id": "mv_59",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_60",
+      "name": "+",
+      "type": "special",
+      "input": "200"
+    },
+    {
+      "id": "mv_61",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_62",
+      "name": "+",
+      "type": "special",
+      "input": "800"
+    },
+    {
+      "id": "mv_63",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_64",
+      "name": "+",
+      "type": "special",
+      "input": "1300"
+    },
+    {
+      "id": "mv_65",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_66",
+      "name": ",,+",
+      "type": "special",
+      "input": "600"
+    },
+    {
+      "id": "mv_67",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_68",
+      "name": "+",
+      "type": "special",
+      "input": "1000"
+    },
+    {
+      "id": "mv_69",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_70",
+      "name": "/+",
+      "type": "special",
+      "input": "600300"
+    },
+    {
+      "id": "mv_71",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_72",
+      "name": ",,+",
+      "type": "special",
+      "input": "1300(NEUTRAL)/1200(DIAGONAL)"
+    },
+    {
+      "id": "mv_73",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_74",
+      "name": "+",
+      "type": "special",
+      "input": "500"
+    },
+    {
+      "id": "mv_75",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_76",
+      "name": "/+",
+      "type": "special",
+      "input": "500"
+    },
+    {
+      "id": "mv_77",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_78",
+      "name": "+",
+      "type": "special",
+      "input": "900"
+    },
+    {
+      "id": "mv_79",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_80",
+      "name": "/+",
+      "type": "special",
+      "input": "800"
+    },
+    {
+      "id": "mv_81",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_82",
+      "name": "+",
+      "type": "special",
+      "input": "1300,1200"
+    },
+    {
+      "id": "mv_83",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_84",
+      "name": "/+",
+      "type": "special",
+      "input": "1200"
+    },
+    {
+      "id": "mv_85",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_86",
+      "name": "+",
+      "type": "special",
+      "input": "300600"
+    },
+    {
+      "id": "mv_87",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_88",
+      "name": "+",
+      "type": "special",
+      "input": "500900"
+    },
+    {
+      "id": "mv_89",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_90",
+      "name": "+",
+      "type": "special",
+      "input": "700"
+    },
+    {
+      "id": "mv_91",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_92",
+      "name": "Close /+",
+      "type": "special",
+      "input": "1800"
+    },
+    {
+      "id": "mv_93",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_94",
+      "name": "Close /+",
+      "type": "special",
+      "input": "2100"
+    },
+    {
+      "id": "mv_95",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_96",
+      "name": "+",
+      "type": "special",
+      "input": "800"
+    },
+    {
+      "id": "mv_97",
+      "name": "+",
+      "type": "special",
+      "input": "900"
+    },
+    {
+      "id": "mv_98",
+      "name": "+",
+      "type": "special",
+      "input": "1000"
+    },
+    {
+      "id": "mv_99",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_100",
+      "name": "+",
+      "type": "special",
+      "input": "900/1000"
+    },
+    {
+      "id": "mv_101",
+      "name": "+",
+      "type": "special",
+      "input": "1000"
+    },
+    {
+      "id": "mv_102",
+      "name": "+",
+      "type": "special",
+      "input": "1100/1000"
+    },
+    {
+      "id": "mv_103",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_104",
+      "name": "+",
+      "type": "special",
+      "input": "1600/800"
+    },
+    {
+      "id": "mv_105",
+      "name": "+",
+      "type": "special",
+      "input": "1700/800"
+    },
+    {
+      "id": "mv_106",
+      "name": "+",
+      "type": "special",
+      "input": "1900/800"
+    },
+    {
+      "id": "mv_107",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_108",
+      "name": "+",
+      "type": "special",
+      "input": "1200"
+    },
+    {
+      "id": "mv_109",
+      "name": "+",
+      "type": "special",
+      "input": "1300"
+    },
+    {
+      "id": "mv_110",
+      "name": "+",
+      "type": "special",
+      "input": "1400"
+    },
+    {
+      "id": "mv_111",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_112",
+      "name": "In Air, +",
+      "type": "special",
+      "input": "800"
+    },
+    {
+      "id": "mv_113",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_114",
+      "name": "+",
+      "type": "special",
+      "input": "2000"
+    },
+    {
+      "id": "mv_115",
+      "name": "+",
+      "type": "special",
+      "input": "3000"
+    },
+    {
+      "id": "mv_116",
+      "name": "+",
+      "type": "special",
+      "input": "4500"
+    },
+    {
+      "id": "mv_117",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_118",
+      "name": "+",
+      "type": "special",
+      "input": "2600"
+    },
+    {
+      "id": "mv_119",
+      "name": "+",
+      "type": "special",
+      "input": "3800"
+    },
+    {
+      "id": "mv_120",
+      "name": "+",
+      "type": "special",
+      "input": "5500"
+    },
+    {
+      "id": "mv_121",
+      "name": "Version",
+      "type": "special",
+      "input": "DAMAGE"
+    },
+    {
+      "id": "mv_122",
+      "name": "+",
+      "type": "special",
+      "input": "6400"
     }
   ],
-  "combosList": []
+  "combosList": [
+    {
+      "id": "cb_0",
+      "name": "BNB 1",
+      "input": "2LK>2LP,2HK",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_1",
+      "name": "BNB 2",
+      "input": "2LK(1~3)XX214HK",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_2",
+      "name": "BNB 3",
+      "input": "2LK>2LP,2MKXX214HK",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_3",
+      "name": "BNB 4",
+      "input": "2LP,2HP/CL.HPXX214HK",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_4",
+      "name": "BNB 5",
+      "input": "2LP,2HP/CL.HPXX41236P",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_5",
+      "name": "BNB 6",
+      "input": "2LP,2MKXX236HP",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_6",
+      "name": "BNB 7",
+      "input": "2MP,2MPXX214HK",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_7",
+      "name": "BNB 8",
+      "input": "J.HK,623HP",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_8",
+      "name": "BNB 9",
+      "input": "J.HK,CL.HPXX41236HP",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_9",
+      "name": "BNB 10",
+      "input": "J.MK(X-UP),CL.HPXX623HP",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_10",
+      "name": "BNB 11",
+      "input": "2LK(1~3)XX236236P",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_11",
+      "name": "BNB 12",
+      "input": "2LK>2LP,2MKXX236236P",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_12",
+      "name": "BNB 13",
+      "input": "2LP,2HP/CL.HP>236236P",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_13",
+      "name": "BNB 14",
+      "input": "2MP,2MPXX236236P",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_14",
+      "name": "BNB 15",
+      "input": "J.HK,CL.HP>236236P",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_15",
+      "name": "BNB 16",
+      "input": "J.MK(X-UP),CL.MK>236236K",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_16",
+      "name": "BNB 17",
+      "input": "2LK(1~3)XX236236MPXX214HK",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_17",
+      "name": "BNB 18",
+      "input": "2LK(1~3)XX236236MPXX236236P",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_18",
+      "name": "BNB 19",
+      "input": "2LK>2LP,2MK>236236MP>214HK",
+      "notes": "Any"
+    },
+    {
+      "id": "cb_19",
+      "name": "BNB 20",
+      "input": "2LK>2LP,2MK>236236MP>236236LP",
+      "notes": "Corner"
+    },
+    {
+      "id": "cb_20",
+      "name": "BNB 21",
+      "input": "2LK(1~3)XX236236MPXX214LK,214214K",
+      "notes": "Corner"
+    },
+    {
+      "id": "cb_21",
+      "name": "BNB 22",
+      "input": "2LP,2HP/CL.HPXX236236MPXX214LK,214214K",
+      "notes": "Corner"
+    }
+  ]
 }

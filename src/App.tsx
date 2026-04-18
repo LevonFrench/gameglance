@@ -43,30 +43,36 @@ export const App: React.FC = () => {
   const { syncState, connect, disconnect } = useFightcadeSync();
 
   useEffect(() => {
-    if (syncState.connected && syncState.gameId && syncState.p1CharId) {
+    if (syncState.connected && syncState.gameId) {
       const game = SUPPORTED_GAMES.find(g => g.mameRomset === syncState.gameId);
-      if (game && game.id !== selectedGame?.id) {
-        setSelectedGame(game);
-      }
       if (game) {
-        // Fetch roster to find character ID
-        fetch(`/data/${game.id}/_roster.json`)
-          .then(res => res.json())
-          .then(roster => {
-            // Find character by ramId. Note that ramId might be string or number.
-            const char = roster.find((c: any) => c.ramId?.toString() === syncState.p1CharId?.toString());
-            if (char) {
-              if (selectedCharacter !== char.id) {
-                setSelectedCharacter(char.id);
-                // Wait for state to settle then navigate
-                setTimeout(() => {
-                  setCurrentView('move_list');
-                  window.scrollTo({ top: 0, behavior: 'smooth' });
-                }, 50);
+        if (game.id !== selectedGame?.id) {
+          setSelectedGame(game);
+          if (currentView !== 'char_select' && currentView !== 'move_list') {
+            setCurrentView('char_select');
+          }
+        }
+        
+        if (syncState.p1CharId) {
+          // Fetch roster to find character ID
+          fetch(`/data/${game.id}/_roster.json`)
+            .then(res => res.json())
+            .then(roster => {
+              // Find character by ramId. Note that ramId might be string or number.
+              const char = roster.find((c: any) => c.ramId?.toString() === syncState.p1CharId?.toString());
+              if (char) {
+                if (selectedCharacter !== char.id) {
+                  setSelectedCharacter(char.id);
+                  // Wait for state to settle then navigate
+                  setTimeout(() => {
+                    setCurrentView('move_list');
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                  }, 50);
+                }
               }
-            }
-          })
-          .catch(err => console.error("Failed to load roster for sync", err));
+            })
+            .catch(err => console.error("Failed to load roster for sync", err));
+        }
       }
     }
   }, [syncState, selectedGame, selectedCharacter]);
@@ -255,41 +261,6 @@ export const App: React.FC = () => {
   return (
     <div className="app-container" data-card-theme={cardTheme} style={{ paddingBottom: '70px' }}>
       
-      {/* Fightcade Sync Button */}
-      {currentView !== 'fightcade_sync' && (
-        <button
-          onClick={() => navigate('fightcade_sync')}
-          style={{
-            position: 'fixed',
-            top: '1rem',
-            right: '1rem',
-            zIndex: 1000,
-            background: syncState.connected ? '#10b981' : 'var(--bg-elevated)',
-            color: syncState.connected ? '#fff' : 'var(--text-primary)',
-            border: '1px solid var(--border-medium)',
-            padding: '0.5rem 1rem',
-            borderRadius: 'var(--radius-full)',
-            fontSize: '0.85rem',
-            fontWeight: 600,
-            cursor: 'pointer',
-            display: 'flex',
-            alignItems: 'center',
-            gap: '0.5rem',
-            boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-            transition: 'all 0.2s'
-          }}
-          onMouseEnter={e => e.currentTarget.style.transform = 'translateY(-2px)'}
-          onMouseLeave={e => e.currentTarget.style.transform = 'translateY(0)'}
-        >
-          <div style={{
-            width: '8px', height: '8px', borderRadius: '50%',
-            background: syncState.connected ? '#fff' : '#ef4444',
-            boxShadow: syncState.connected ? '0 0 8px #fff' : 'none'
-          }} />
-          Fightcade Sync
-        </button>
-      )}
-
       {viewComponent}
       <BottomHeader 
         controller={controller}
@@ -301,6 +272,8 @@ export const App: React.FC = () => {
           setNotationOverride(val);
           localStorage.setItem('gg_notation_override', val);
         }}
+        onOpenFightcadeSync={currentView !== 'fightcade_sync' ? () => navigate('fightcade_sync') : undefined}
+        syncConnected={syncState.connected}
       />
     </div>
   );

@@ -1,5 +1,6 @@
 import React from 'react';
 import type { SyncState } from './useFightcadeSync';
+import { SUPPORTED_GAMES } from './games';
 
 interface Props {
   syncState: SyncState;
@@ -168,6 +169,30 @@ export const FightcadeSyncView: React.FC<Props> = ({ syncState, onConnect, onDis
             Disconnect
           </button>
         )}
+      </div>
+
+      <div style={{ marginTop: '3rem' }}>
+        <h2 style={{ fontSize: '1.25rem', marginBottom: '1.5rem', color: 'var(--text-primary)' }}>Supported Games</h2>
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+          gap: 'var(--space-xl)'
+        }}>
+          {SUPPORTED_GAMES.filter(g => g.mameRomset).map(game => (
+            <div key={game.id} style={{
+              background: 'var(--bg-elevated)',
+              border: '1px solid var(--border-medium)',
+              borderRadius: 'var(--radius-lg)',
+              padding: '1.5rem',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '0.5rem'
+            }}>
+              <h3 style={{ margin: 0, fontSize: '1.1rem', color: 'var(--text-primary)' }}>{game.name}</h3>
+              <p style={{ margin: 0, fontSize: '0.9rem', color: 'var(--text-secondary)' }}>ROM: <code>{game.mameRomset}</code></p>
+            </div>
+          ))}
+        </div>
       </div>
 
     </div>

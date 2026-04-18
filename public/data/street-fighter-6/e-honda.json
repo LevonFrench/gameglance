@@ -4,39 +4,602 @@
   "game": "Street Fighter 6",
   "movesList": [
     {
-      "name": "Psycho Crusher",
-      "input": "[4]6P",
-      "type": "Special"
+      "id": "standing-light-punch",
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "input": "5LP",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "10",
+        "advantage": "-1"
+      },
+      "damage": "300"
     },
     {
-      "name": "Double Knee Press",
-      "input": "236K",
-      "type": "Special"
+      "id": "standing-medium-punch",
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "input": "5MP",
+      "frameData": {
+        "startup": "10",
+        "active": "4",
+        "recovery": "13(15)",
+        "advantage": "+1"
+      },
+      "damage": "700"
     },
     {
-      "name": "Backfist Combo",
-      "input": "214P",
-      "type": "Special"
+      "id": "standing-heavy-punch",
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "input": "5HP",
+      "frameData": {
+        "startup": "8(9)",
+        "active": "7",
+        "recovery": "20",
+        "advantage": "-6(-3)"
+      },
+      "damage": "900"
     },
     {
-      "name": "Shadow Rise",
+      "id": "standing-light-kick",
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "input": "5LK",
+      "frameData": {
+        "startup": "4",
+        "active": "2",
+        "recovery": "9",
+        "advantage": "-1"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "standing-medium-kick",
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "input": "5MK",
+      "frameData": {
+        "startup": "10",
+        "active": "4",
+        "recovery": "16",
+        "advantage": "-3"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "standing-heavy-kick",
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "frameData": {
+        "startup": "8",
+        "active": "2(1)4",
+        "recovery": "22",
+        "advantage": "-5(-11)"
+      },
+      "damage": "400x2"
+    },
+    {
+      "id": "crouching-light-punch",
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "input": "2LP",
+      "frameData": {
+        "startup": "4",
+        "active": "3",
+        "recovery": "10",
+        "advantage": "-1"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "crouching-medium-punch",
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "input": "2MP",
+      "frameData": {
+        "startup": "8",
+        "active": "4",
+        "recovery": "16",
+        "advantage": "-3"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "crouching-heavy-punch",
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "input": "2HP",
+      "frameData": {
+        "startup": "11",
+        "active": "4",
+        "recovery": "17(19)",
+        "advantage": "-3(-1)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "crouching-light-kick",
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "input": "2LK",
+      "frameData": {
+        "startup": "5",
+        "active": "2",
+        "recovery": "9",
+        "advantage": "-3"
+      },
+      "damage": "200"
+    },
+    {
+      "id": "crouching-medium-kick",
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "input": "2MK",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "17",
+        "advantage": "-2"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "dohyo-sweep",
+      "name": "Dohyo Sweep",
+      "type": "normal",
+      "input": "2HK",
+      "frameData": {
+        "startup": "11",
+        "active": "3(6)5",
+        "recovery": "14",
+        "advantage": "-10(-1)"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "jumping-light-punch",
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "input": "j.LP",
+      "frameData": {
+        "startup": "5",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "-1(+5)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-punch",
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "input": "j.MP",
+      "frameData": {
+        "startup": "6",
+        "active": "8",
+        "recovery": "3 land",
+        "advantage": "+1(+7)"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "jumping-heavy-punch",
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "input": "j.HP",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "3 land",
+        "advantage": "+5(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "neutral-jump-heavy-punch",
+      "name": "Neutral Jump Heavy Punch",
+      "type": "normal",
+      "input": "8HP",
+      "frameData": {
+        "startup": "10",
+        "active": "8",
+        "recovery": "3 land",
+        "advantage": "+8(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "jumping-light-kick",
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "input": "j.LK",
+      "frameData": {
+        "startup": "6",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+1(+6)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-kick",
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "input": "j.MK",
+      "frameData": {
+        "startup": "9",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+4(+9)"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "jumping-heavy-kick",
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "input": "j.HK",
+      "frameData": {
+        "startup": "10",
+        "active": "8",
+        "recovery": "3 land",
+        "advantage": "+4(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "harai-kick",
+      "name": "Harai Kick",
+      "type": "normal",
+      "input": "6HK",
+      "frameData": {
+        "startup": "14",
+        "active": "3",
+        "recovery": "21",
+        "advantage": "-5"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "power-stomp",
+      "name": "Power Stomp",
+      "type": "normal",
+      "input": "3HK",
+      "frameData": {
+        "startup": "22",
+        "active": "6",
+        "recovery": "18",
+        "advantage": "-3"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "flying-sumo-press",
+      "name": "Flying Sumo Press",
+      "type": "normal",
+      "input": "j.2MK",
+      "frameData": {
+        "startup": "11",
+        "active": "9",
+        "recovery": "3 land",
+        "advantage": "+6(+9)"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "double-slaps",
+      "name": "Double Slaps",
+      "type": "unique",
+      "input": "5LP~MP",
+      "frameData": {
+        "startup": "4",
+        "active": "4",
+        "recovery": "20",
+        "advantage": "-10"
+      },
+      "damage": "600(480)"
+    },
+    {
+      "id": "toko-shizume",
+      "name": "Toko Shizume",
+      "type": "unique",
+      "input": "5MP~3HK",
+      "frameData": {
+        "startup": "22",
+        "active": "6",
+        "recovery": "18",
+        "advantage": "-3"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "saba-ori",
+      "name": "Saba Ori",
+      "type": "throw",
+      "input": "LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "tawara-throw",
+      "name": "Tawara Throw",
+      "type": "throw",
+      "input": "4LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "sumo-crunch",
+      "name": "Sumo Crunch",
+      "type": "common",
+      "input": "HPHK",
+      "frameData": {
+        "startup": "26",
+        "active": "2",
+        "recovery": "35",
+        "advantage": "-3 / Wall Splat HKD +72"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "raiden-ho-block",
+      "name": "Raiden-Ho (Block)",
+      "type": "common",
+      "input": "6HPHK",
+      "frameData": {
+        "startup": "20",
+        "active": "3",
+        "recovery": "26(31)",
+        "advantage": "-6"
+      },
+      "damage": "500 recoverable"
+    },
+    {
+      "id": "drive-parry",
+      "name": "Drive Parry",
+      "type": "common",
+      "input": "MPMK",
+      "frameData": {
+        "startup": "1",
+        "active": "12 or until released",
+        "recovery": "33(1)(11)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "parry-drive-rush",
+      "name": "Parry Drive Rush",
+      "type": "common",
+      "input": "MPMK~66",
+      "frameData": {
+        "startup": "3+8",
+        "active": "-",
+        "recovery": "15(37)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "sumo-spirit",
+      "name": "Sumo Spirit",
+      "type": "special",
       "input": "22K",
-      "type": "Special"
+      "frameData": {
+        "startup": "51",
+        "active": "-",
+        "recovery": "1",
+        "advantage": "-"
+      },
+      "damage": "-"
     },
     {
-      "name": "Knee Press Nightmare",
-      "input": "236236K",
-      "type": "Super Art 1"
+      "id": "hundred-hand-slap",
+      "name": "Hundred Hand Slap",
+      "type": "special",
+      "input": "214LP",
+      "frameData": {
+        "startup": "12",
+        "active": "2(4)2(2)1(2)2(1)1(1)2[2(4)2(2)1(1)2(1)1(10)2]",
+        "recovery": "14",
+        "advantage": "-4[0]"
+      },
+      "damage": "80x5,400 (800)[80x5,450 (850)]"
     },
     {
-      "name": "Psycho Punisher",
-      "input": "214214P",
-      "type": "Super Art 2"
+      "id": "sumo-headbutt",
+      "name": "Sumo Headbutt",
+      "type": "special",
+      "input": "[4]6LP",
+      "frameData": {
+        "startup": "10",
+        "active": "1~22",
+        "recovery": "2+18(17) land",
+        "advantage": "-3"
+      },
+      "damage": "1400(1000)"
     },
     {
-      "name": "Unlimited Psycho Crusher",
+      "id": "sumo-smash",
+      "name": "Sumo Smash",
+      "type": "special",
+      "input": "[2]8LK",
+      "frameData": {
+        "startup": "11(45)",
+        "active": "4(26)8",
+        "recovery": "17 land",
+        "advantage": "+1"
+      },
+      "damage": "400,1000 [800]"
+    },
+    {
+      "id": "oicho-throw",
+      "name": "Oicho Throw",
+      "type": "special",
+      "input": "63214LK",
+      "frameData": {
+        "startup": "6",
+        "active": "4",
+        "recovery": "52",
+        "advantage": "-"
+      },
+      "damage": "2000 (2300)"
+    },
+    {
+      "id": "sumo-dash",
+      "name": "Sumo Dash",
+      "type": "special",
+      "input": "236K",
+      "frameData": {
+        "startup": "14",
+        "active": "-",
+        "recovery": "51 total",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "teppo-triple-slap-1",
+      "name": "Teppo Triple Slap 1",
+      "type": "special",
+      "input": "236K~P",
+      "frameData": {
+        "startup": "14+9",
+        "active": "3(13)3",
+        "recovery": "22",
+        "advantage": "-3"
+      },
+      "damage": "400x2"
+    },
+    {
+      "id": "teppo-triple-slap-2",
+      "name": "Teppo Triple Slap 2",
+      "type": "special",
+      "input": "236K~P~P",
+      "frameData": {
+        "startup": "14",
+        "active": "3",
+        "recovery": "38",
+        "advantage": "-24"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "taiho-cannon-lift",
+      "name": "Taiho Cannon Lift",
+      "type": "special",
+      "input": "236K~2P",
+      "frameData": {
+        "startup": "12",
+        "active": "2(17)3",
+        "recovery": "32(15)",
+        "advantage": "-22"
+      },
+      "damage": "400x2"
+    },
+    {
+      "id": "neko-damashi",
+      "name": "Neko Damashi",
+      "type": "special",
+      "input": "22P",
+      "frameData": {
+        "startup": "11",
+        "active": "5",
+        "recovery": "14",
+        "advantage": "-3(+1)"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "show-of-force",
+      "name": "Show of Force",
+      "type": "super",
       "input": "236236P",
-      "type": "Super Art 3"
+      "frameData": {
+        "startup": "7",
+        "active": "5",
+        "recovery": "48",
+        "advantage": "-33"
+      },
+      "damage": "2000"
+    },
+    {
+      "id": "ultimate-killer-head-ram",
+      "name": "Ultimate Killer Head Ram",
+      "type": "super",
+      "input": "[4]646K",
+      "frameData": {
+        "startup": "12",
+        "active": "2(2),1~21",
+        "recovery": "2+43 land",
+        "advantage": "-27"
+      },
+      "damage": "2850(2800)"
+    },
+    {
+      "id": "the-final-bout",
+      "name": "The Final Bout",
+      "type": "super",
+      "input": "214214P",
+      "frameData": {
+        "startup": "9",
+        "active": "3(8)3",
+        "recovery": "51",
+        "advantage": "-34"
+      },
+      "damage": "4000 (2500)"
+    },
+    {
+      "id": "neutral-taunt",
+      "name": "Neutral Taunt",
+      "type": "normal",
+      "input": "5PPPKKK",
+      "frameData": {
+        "startup": "88",
+        "active": "[178]",
+        "recovery": "45",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "forward-taunt",
+      "name": "Forward Taunt",
+      "type": "normal",
+      "input": "6PPPKKK",
+      "frameData": {
+        "startup": "100 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "back-taunt",
+      "name": "Back Taunt",
+      "type": "normal",
+      "input": "4PPPKKK",
+      "frameData": {
+        "startup": "205 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
     }
   ]
 }

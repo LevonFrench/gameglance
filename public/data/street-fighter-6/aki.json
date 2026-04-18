@@ -3,24 +3,615 @@
   "name": "A.K.I.",
   "movesList": [
     {
-      "name": "Serpent Lash",
-      "type": "special",
-      "input": "236P"
+      "id": "standing-light-punch",
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "input": "5LP",
+      "frameData": {
+        "startup": "5",
+        "active": "2",
+        "recovery": "7",
+        "advantage": "-1"
+      },
+      "damage": "300"
     },
     {
+      "id": "standing-medium-punch",
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "input": "5MP",
+      "frameData": {
+        "startup": "6",
+        "active": "5",
+        "recovery": "14(16)",
+        "advantage": "-3"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "standing-heavy-punch",
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "input": "5HP",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "21",
+        "advantage": "-4"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "standing-light-kick",
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "input": "5LK",
+      "frameData": {
+        "startup": "4",
+        "active": "3",
+        "recovery": "12",
+        "advantage": "-3"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "standing-medium-kick",
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "input": "5MK",
+      "frameData": {
+        "startup": "8",
+        "active": "3",
+        "recovery": "15(17)",
+        "advantage": "-2"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "standing-heavy-kick",
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "19",
+        "advantage": "-3"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "crouching-light-punch",
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "input": "2LP",
+      "frameData": {
+        "startup": "4",
+        "active": "2",
+        "recovery": "9",
+        "advantage": "-1"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "crouching-medium-punch",
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "input": "2MP",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-3"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "xiu-she",
+      "name": "Xiu She",
+      "type": "normal",
+      "input": "2HP",
+      "frameData": {
+        "startup": "10",
+        "active": "3",
+        "recovery": "28",
+        "advantage": "-8"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "crouching-light-kick",
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "input": "2LK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "8",
+        "advantage": "-2"
+      },
+      "damage": "200"
+    },
+    {
+      "id": "crouching-medium-kick",
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "input": "2MK",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "16",
+        "advantage": "+1"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "crouching-heavy-kick",
+      "name": "Crouching Heavy Kick",
+      "type": "normal",
+      "input": "2HK",
+      "frameData": {
+        "startup": "10",
+        "active": "6",
+        "recovery": "20",
+        "advantage": "-3"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "jumping-light-punch",
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "input": "j.LP",
+      "frameData": {
+        "startup": "5",
+        "active": "9",
+        "recovery": "3 land",
+        "advantage": "-2(+5)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-punch",
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "input": "j.MP",
+      "frameData": {
+        "startup": "7",
+        "active": "4",
+        "recovery": "3 land",
+        "advantage": "+5(+7)"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "jumping-heavy-punch",
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "input": "j.HP",
+      "frameData": {
+        "startup": "11",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+1(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "jumping-light-kick",
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "input": "j.LK",
+      "frameData": {
+        "startup": "5",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "0(+6)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-kick",
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "input": "j.MK",
+      "frameData": {
+        "startup": "7",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "0(+9)"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "jumping-heavy-kick",
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "input": "j.HK",
+      "frameData": {
+        "startup": "8",
+        "active": "8",
+        "recovery": "3 land",
+        "advantage": "+4(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "pu-lao",
+      "name": "Pu Lao",
+      "type": "normal",
+      "input": "3MP",
+      "frameData": {
+        "startup": "24",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-3"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "chi-wen",
+      "name": "Chi Wen",
+      "type": "normal",
+      "input": "6HP",
+      "frameData": {
+        "startup": "16",
+        "active": "3",
+        "recovery": "20(21)",
+        "advantage": "-4"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "qiu-niu",
+      "name": "Qiu Niu",
+      "type": "normal",
+      "input": "6HK",
+      "frameData": {
+        "startup": "14",
+        "active": "3(5)3",
+        "recovery": "16(24)",
+        "advantage": "+2"
+      },
+      "damage": "400x2"
+    },
+    {
+      "id": "gong-fu",
+      "name": "Gong Fu",
+      "type": "normal",
+      "input": "j.2HP",
+      "frameData": {
+        "startup": "9",
+        "active": "5",
+        "recovery": "3 land",
+        "advantage": "+1(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "hun-dun",
+      "name": "Hun Dun",
+      "type": "unique",
+      "input": "5LP~LP",
+      "frameData": {
+        "startup": "8",
+        "active": "2",
+        "recovery": "15(17)",
+        "advantage": "-3"
+      },
+      "damage": "300(240)"
+    },
+    {
+      "id": "qiong-qi",
+      "name": "Qiong Qi",
+      "type": "unique",
+      "input": "5HP~HP",
+      "frameData": {
+        "startup": "14",
+        "active": "3",
+        "recovery": "24(29)",
+        "advantage": "-15"
+      },
+      "damage": "400"
+    },
+    {
+      "id": "whisper",
+      "name": "Whisper",
+      "type": "throw",
+      "input": "LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "gluttony",
+      "name": "Gluttony",
+      "type": "throw",
+      "input": "4LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "zao-chi",
+      "name": "Zao Chi",
+      "type": "common",
+      "input": "HPHK",
+      "frameData": {
+        "startup": "26",
+        "active": "2",
+        "recovery": "35",
+        "advantage": "-3 / Wall Splat HKD +72"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "feng-shi-block",
+      "name": "Feng Shi (Block)",
+      "type": "common",
+      "input": "6HPHK",
+      "frameData": {
+        "startup": "20",
+        "active": "3",
+        "recovery": "26(31)",
+        "advantage": "-6"
+      },
+      "damage": "500 recoverable"
+    },
+    {
+      "id": "drive-parry",
+      "name": "Drive Parry",
+      "type": "common",
+      "input": "MPMK",
+      "frameData": {
+        "startup": "1",
+        "active": "12 or until released",
+        "recovery": "33(1)(11)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "parry-drive-rush",
+      "name": "Parry Drive Rush",
+      "type": "common",
+      "input": "MPMK~66",
+      "frameData": {
+        "startup": "3+8",
+        "active": "-",
+        "recovery": "15(37)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "nightshade-pulse",
       "name": "Nightshade Pulse",
       "type": "special",
-      "input": "214P"
+      "input": "214LP",
+      "frameData": {
+        "startup": "17",
+        "active": "-",
+        "recovery": "35",
+        "advantage": "-10"
+      },
+      "damage": "500"
     },
     {
-      "name": "Orchid Whip",
+      "id": "nightshade-chaser",
+      "name": "Nightshade Chaser",
       "type": "special",
-      "input": "236K"
+      "input": "214LP~6P",
+      "frameData": {
+        "startup": "13",
+        "active": "2",
+        "recovery": "34",
+        "advantage": "-16(-11)"
+      },
+      "damage": "500[800]"
     },
     {
+      "id": "orchid-spring",
+      "name": "Orchid Spring",
+      "type": "special",
+      "input": "214MP",
+      "frameData": {
+        "startup": "26",
+        "active": "[160]",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "toxic-wreath",
+      "name": "Toxic Wreath",
+      "type": "special",
+      "input": "214HP",
+      "frameData": {
+        "startup": "13",
+        "active": "3(14)9",
+        "recovery": "13",
+        "advantage": "-4"
+      },
+      "damage": "200,600"
+    },
+    {
+      "id": "serpent-lash",
+      "name": "Serpent Lash",
+      "type": "special",
+      "input": "236LP",
+      "frameData": {
+        "startup": "14",
+        "active": "3",
+        "recovery": "20(26)",
+        "advantage": "-8(-6)"
+      },
+      "damage": "500[800]"
+    },
+    {
+      "id": "cruel-fate",
+      "name": "Cruel Fate",
+      "type": "special",
+      "input": "214LK",
+      "frameData": {
+        "startup": "24",
+        "active": "2(5)2(4)2(5)2",
+        "recovery": "18 land",
+        "advantage": "-3"
+      },
+      "damage": "200x4 (800)"
+    },
+    {
+      "id": "snake-step",
       "name": "Snake Step",
       "type": "special",
-      "input": "214K"
+      "input": "236LK",
+      "frameData": {
+        "startup": "37 total",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "sinister-slide",
+      "name": "Sinister Slide",
+      "type": "special",
+      "input": "2PP",
+      "frameData": {
+        "startup": "11(28)",
+        "active": "[185]",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "venomous-fang",
+      "name": "Venomous Fang",
+      "type": "special",
+      "input": "2PP~P",
+      "frameData": {
+        "startup": "11+19",
+        "active": "15",
+        "recovery": "30",
+        "advantage": "-25(-11)"
+      },
+      "damage": "1100"
+    },
+    {
+      "id": "heel-strike",
+      "name": "Heel Strike",
+      "type": "special",
+      "input": "2PP~K",
+      "frameData": {
+        "startup": "11+11",
+        "active": "3(9)3",
+        "recovery": "17(20)",
+        "advantage": "-3"
+      },
+      "damage": "300x2"
+    },
+    {
+      "id": "entrapment",
+      "name": "Entrapment",
+      "type": "special",
+      "input": "2PP~LPLK",
+      "frameData": {
+        "startup": "11+23",
+        "active": "3",
+        "recovery": "55",
+        "advantage": "-"
+      },
+      "damage": "1852 (2222)"
+    },
+    {
+      "id": "deadly-implication",
+      "name": "Deadly Implication",
+      "type": "super",
+      "input": "236236K",
+      "frameData": {
+        "startup": "10",
+        "active": "3",
+        "recovery": "68",
+        "advantage": "-46"
+      },
+      "damage": "850,950 (1800)"
+    },
+    {
+      "id": "tainted-talons",
+      "name": "Tainted Talons",
+      "type": "super",
+      "input": "214214P",
+      "frameData": {
+        "startup": "7",
+        "active": "53(28)12",
+        "recovery": "54",
+        "advantage": "-19~"
+      },
+      "damage": "300,200x6,1000 (2500)"
+    },
+    {
+      "id": "claws-of-ya-zi",
+      "name": "Claws of Ya Zi",
+      "type": "super",
+      "input": "236236P",
+      "frameData": {
+        "startup": "10",
+        "active": "3",
+        "recovery": "58",
+        "advantage": "-36"
+      },
+      "damage": "4000"
+    },
+    {
+      "id": "neutral-taunt",
+      "name": "Neutral Taunt",
+      "type": "normal",
+      "input": "5PPPKKK",
+      "frameData": {
+        "startup": "611 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "forward-taunt",
+      "name": "Forward Taunt",
+      "type": "normal",
+      "input": "6PPPKKK",
+      "frameData": {
+        "startup": "484 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "back-taunt",
+      "name": "Back Taunt",
+      "type": "normal",
+      "input": "4PPPKKK",
+      "frameData": {
+        "startup": "175",
+        "active": "32",
+        "recovery": "258(264)",
+        "advantage": "-239"
+      },
+      "damage": "600"
     }
   ]
 }

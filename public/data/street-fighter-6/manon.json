@@ -4,24 +4,563 @@
   "game": "Street Fighter 6",
   "movesList": [
     {
-      "name": "Manege Dore",
-      "input": "236P",
-      "type": "Special"
+      "id": "standing-light-punch",
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "input": "5LP",
+      "frameData": {
+        "startup": "4",
+        "active": "3",
+        "recovery": "10",
+        "advantage": "-1"
+      },
+      "damage": "300"
     },
     {
-      "name": "Renverse",
-      "input": "236K",
-      "type": "Special"
+      "id": "standing-medium-punch",
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "input": "5MP",
+      "frameData": {
+        "startup": "7",
+        "active": "4",
+        "recovery": "15",
+        "advantage": "-2"
+      },
+      "damage": "600"
     },
     {
-      "name": "Degage",
-      "input": "214K",
-      "type": "Special"
+      "id": "standing-heavy-punch",
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "input": "5HP",
+      "frameData": {
+        "startup": "10",
+        "active": "4",
+        "recovery": "20",
+        "advantage": "-3"
+      },
+      "damage": "800"
     },
     {
-      "name": "Rond-point",
-      "input": "623K",
-      "type": "Special"
+      "id": "standing-light-kick",
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "input": "5LK",
+      "frameData": {
+        "startup": "5",
+        "active": "2",
+        "recovery": "12",
+        "advantage": "-2"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "standing-medium-kick",
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "input": "5MK",
+      "frameData": {
+        "startup": "10",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-5"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "standing-heavy-kick",
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "frameData": {
+        "startup": "15",
+        "active": "3",
+        "recovery": "23(26)",
+        "advantage": "-6"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "crouching-light-punch",
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "input": "2LP",
+      "frameData": {
+        "startup": "4",
+        "active": "2",
+        "recovery": "11",
+        "advantage": "-2"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "crouching-medium-punch",
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "input": "2MP",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "11(15)",
+        "advantage": "-1"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "crouching-heavy-punch",
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "input": "2HP",
+      "frameData": {
+        "startup": "10",
+        "active": "5",
+        "recovery": "21",
+        "advantage": "-8"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "crouching-light-kick",
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "input": "2LK",
+      "frameData": {
+        "startup": "5",
+        "active": "2",
+        "recovery": "13",
+        "advantage": "-3"
+      },
+      "damage": "200"
+    },
+    {
+      "id": "crouching-medium-kick",
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "input": "2MK",
+      "frameData": {
+        "startup": "8",
+        "active": "4",
+        "recovery": "16",
+        "advantage": "-2"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "croisee",
+      "name": "Croisee",
+      "type": "normal",
+      "input": "2HK",
+      "frameData": {
+        "startup": "11",
+        "active": "2",
+        "recovery": "27",
+        "advantage": "-12"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "jumping-light-punch",
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "input": "j.LP",
+      "frameData": {
+        "startup": "5",
+        "active": "10",
+        "recovery": "3 land",
+        "advantage": "+1(+5)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-punch",
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "input": "j.MP",
+      "frameData": {
+        "startup": "8",
+        "active": "4",
+        "recovery": "3 land",
+        "advantage": "+5(+7)"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "jumping-heavy-punch",
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "input": "j.HP",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "3 land",
+        "advantage": "+4(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "jumping-light-kick",
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "input": "j.LK",
+      "frameData": {
+        "startup": "6",
+        "active": "9",
+        "recovery": "3 land",
+        "advantage": "-1(+6)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-kick",
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "input": "j.MK",
+      "frameData": {
+        "startup": "7",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+4(+9)"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "jumping-heavy-kick",
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "input": "j.HK",
+      "frameData": {
+        "startup": "11",
+        "active": "5",
+        "recovery": "3 land",
+        "advantage": "+4(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "back-medium-kick",
+      "name": "Back Medium Kick",
+      "type": "normal",
+      "input": "4MK",
+      "frameData": {
+        "startup": "10",
+        "active": "4",
+        "recovery": "19",
+        "advantage": "-3"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "r-v-rence",
+      "name": "R\u00e9v\u00e9rence",
+      "type": "normal",
+      "input": "4HP",
+      "frameData": {
+        "startup": "8",
+        "active": "6",
+        "recovery": "17",
+        "advantage": "+1"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "tomoe-derri-re",
+      "name": "Tomoe Derri\u00e9re",
+      "type": "normal",
+      "input": "3HK",
+      "frameData": {
+        "startup": "11",
+        "active": "9",
+        "recovery": "32",
+        "advantage": "-23"
+      },
+      "damage": "1000"
+    },
+    {
+      "id": "terre",
+      "name": "\u00c0 Terre",
+      "type": "unique",
+      "input": "5MP~MK",
+      "frameData": {
+        "startup": "10",
+        "active": "2",
+        "recovery": "17",
+        "advantage": "-5"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "en-haut",
+      "name": "En Haut",
+      "type": "unique",
+      "input": "4MK~MK",
+      "frameData": {
+        "startup": "14",
+        "active": "5",
+        "recovery": "21",
+        "advantage": "-11"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "temps-li",
+      "name": "Temps Li\u00e9",
+      "type": "unique",
+      "input": "5HP~HP",
+      "frameData": {
+        "startup": "5",
+        "active": "5",
+        "recovery": "17(19)",
+        "advantage": "-8"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "allong",
+      "name": "Allong\u00e9",
+      "type": "unique",
+      "input": "2HP~HP",
+      "frameData": {
+        "startup": "4",
+        "active": "4",
+        "recovery": "26",
+        "advantage": "-10"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "ouchi-gari",
+      "name": "Ouchi Gari",
+      "type": "throw",
+      "input": "LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "uchi-mata",
+      "name": "Uchi Mata",
+      "type": "throw",
+      "input": "4LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "glissade",
+      "name": "Glissade",
+      "type": "common",
+      "input": "HPHK",
+      "frameData": {
+        "startup": "26",
+        "active": "2",
+        "recovery": "35",
+        "advantage": "-3 / Wall Splat HKD +72"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "cart-block",
+      "name": "\u00c9cart\u00e9 (Block)",
+      "type": "common",
+      "input": "6HPHK",
+      "frameData": {
+        "startup": "20",
+        "active": "3",
+        "recovery": "26(31)",
+        "advantage": "-6"
+      },
+      "damage": "500 recoverable"
+    },
+    {
+      "id": "drive-parry",
+      "name": "Drive Parry",
+      "type": "common",
+      "input": "MPMK",
+      "frameData": {
+        "startup": "1",
+        "active": "12 or until released",
+        "recovery": "33(1)(11)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "parry-drive-rush",
+      "name": "Parry Drive Rush",
+      "type": "common",
+      "input": "MPMK~66",
+      "frameData": {
+        "startup": "3+8",
+        "active": "-",
+        "recovery": "15(37)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "lp-man-ge-dor",
+      "name": "LP Man\u00e8ge Dor\u00e9",
+      "type": "special",
+      "input": "63214LP",
+      "frameData": {
+        "startup": "10",
+        "active": "2",
+        "recovery": "49",
+        "advantage": "-"
+      },
+      "damage": "2000~3700"
+    },
+    {
+      "id": "lp-renvers",
+      "name": "LP Renvers\u00e9",
+      "type": "special",
+      "input": "236LP",
+      "frameData": {
+        "startup": "22",
+        "active": "2",
+        "recovery": "37",
+        "advantage": "-23"
+      },
+      "damage": "50,(1300~1900)"
+    },
+    {
+      "id": "renvers-feint",
+      "name": "Renvers\u00e9 Feint",
+      "type": "special",
+      "input": "236[P]",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "31/32/33",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "grand-fouett",
+      "name": "Grand Fouett\u00e9",
+      "type": "special",
+      "input": "236P~K",
+      "frameData": {
+        "startup": "(16/17/18)+11",
+        "active": "6",
+        "recovery": "22",
+        "advantage": "-5(0)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "lk-rond-point",
+      "name": "LK Rond-point",
+      "type": "special",
+      "input": "236LK",
+      "frameData": {
+        "startup": "9",
+        "active": "3(2)2",
+        "recovery": "29",
+        "advantage": "-15"
+      },
+      "damage": "400,500"
+    },
+    {
+      "id": "lk-d-gag",
+      "name": "LK D\u00e9gag\u00e9",
+      "type": "special",
+      "input": "214LK",
+      "frameData": {
+        "startup": "16",
+        "active": "2(10)4",
+        "recovery": "36",
+        "advantage": "-24"
+      },
+      "damage": "300,700"
+    },
+    {
+      "id": "arabesque",
+      "name": "Arabesque",
+      "type": "super",
+      "input": "236236K",
+      "frameData": {
+        "startup": "10",
+        "active": "4",
+        "recovery": "65",
+        "advantage": "-49(-46)"
+      },
+      "damage": "2000"
+    },
+    {
+      "id": "toile",
+      "name": "\u00c9toile",
+      "type": "super",
+      "input": "214214K",
+      "frameData": {
+        "startup": "7",
+        "active": "3(11)6(45)9",
+        "recovery": "38+34 land",
+        "advantage": "-61(-118)"
+      },
+      "damage": "2800"
+    },
+    {
+      "id": "pas-de-deux",
+      "name": "Pas de Deux",
+      "type": "super",
+      "input": "236236P",
+      "frameData": {
+        "startup": "6+1",
+        "active": "2",
+        "recovery": "72",
+        "advantage": "-"
+      },
+      "damage": "4000~4600"
+    },
+    {
+      "id": "neutral-taunt",
+      "name": "Neutral Taunt",
+      "type": "normal",
+      "input": "5PPPKKK",
+      "frameData": {
+        "startup": "252 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "forward-taunt",
+      "name": "Forward Taunt",
+      "type": "normal",
+      "input": "6PPPKKK",
+      "frameData": {
+        "startup": "364 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "back-taunt",
+      "name": "Back Taunt",
+      "type": "normal",
+      "input": "4PPPKKK",
+      "frameData": {
+        "startup": "582 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
     }
   ]
 }
