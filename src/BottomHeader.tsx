@@ -77,25 +77,24 @@ export const BottomHeader: React.FC<Props> = ({
               cursor: 'pointer',
               outline: 'none',
             }}
-          >
             <optgroup label="Modern" style={{ background: 'var(--bg-card)' }}>
-              <option value="playstation" style={{ background: 'var(--option-bg)' }}>🎮 PlayStation</option>
+              <option value="playstation" style={{ background: 'var(--option-bg)' }}>🎮 PS</option>
               <option value="xbox" style={{ background: 'var(--option-bg)' }}>🎮 Xbox</option>
               <option value="switch" style={{ background: 'var(--option-bg)' }}>🎮 Switch</option>
             </optgroup>
             <optgroup label="Arcade" style={{ background: 'var(--bg-card)' }}>
-              <option value="arcade" style={{ background: 'var(--option-bg)' }}>🕹️ Standard</option>
-              <option value="cps" style={{ background: 'var(--option-bg)' }}>🕹️ Capcom (CPS)</option>
-              <option value="neogeo" style={{ background: 'var(--option-bg)' }}>🕹️ Neo Geo</option>
+              <option value="arcade" style={{ background: 'var(--option-bg)' }}>🕹️ Arcade</option>
+              <option value="cps" style={{ background: 'var(--option-bg)' }}>🕹️ Capcom</option>
+              <option value="neogeo" style={{ background: 'var(--option-bg)' }}>🕹️ NeoGeo</option>
             </optgroup>
             <optgroup label="Retro Consoles" style={{ background: 'var(--bg-card)' }}>
-              <option value="genesis" style={{ background: 'var(--option-bg)' }}>📼 Sega Genesis</option>
-              <option value="snes" style={{ background: 'var(--option-bg)' }}>📼 SNES (NA)</option>
-              <option value="sfami" style={{ background: 'var(--option-bg)' }}>📼 Super Famicom</option>
+              <option value="genesis" style={{ background: 'var(--option-bg)' }}>📼 Genesis</option>
+              <option value="snes" style={{ background: 'var(--option-bg)' }}>📼 SNES</option>
+              <option value="sfami" style={{ background: 'var(--option-bg)' }}>📼 Famicom</option>
               <option value="wii" style={{ background: 'var(--option-bg)' }}>🎮 Wii</option>
             </optgroup>
             <optgroup label="Specific Games" style={{ background: 'var(--bg-card)' }}>
-              <option value="mk" style={{ background: 'var(--option-bg)' }}>🐉 Mortal Kombat</option>
+              <option value="mk" style={{ background: 'var(--option-bg)' }}>🐉 MK</option>
             </optgroup>
           </select>
         </div>
@@ -121,8 +120,8 @@ export const BottomHeader: React.FC<Props> = ({
             }}
           >
             <option value="auto" style={{ background: 'var(--option-bg)' }}>Auto</option>
-            <option value="numpad" style={{ background: 'var(--option-bg)' }}>Numpad (236)</option>
-            <option value="traditional" style={{ background: 'var(--option-bg)' }}>Arrows (↓↘→)</option>
+            <option value="numpad" style={{ background: 'var(--option-bg)' }}>Numpad</option>
+            <option value="traditional" style={{ background: 'var(--option-bg)' }}>Arrows</option>
           </select>
         </div>
 
