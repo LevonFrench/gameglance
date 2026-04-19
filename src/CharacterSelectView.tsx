@@ -644,7 +644,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
       flexDirection: 'column',
       padding: 'var(--space-xl)',
       position: 'relative',
-      overflow: 'clip',
+      overflowX: 'clip',
     }}>
       {/* Glowing Ambient Mesh Background */}
       <AmbientMesh 
@@ -662,50 +662,52 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
         disableInitialAnimation={disableInitialAnimation}
       />
 
-      {/* Section header */}
-      <header style={{
-        marginBottom: 'var(--space-2xl)',
-        animation: disableInitialAnimation ? 'none' : 'fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both',
-        position: 'relative',
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
-        justifyContent: 'center',
-        minHeight: '120px',
-      }}>
-        {/* Giant Watermark text of the Game Name */}
-        <div style={{
-          position: 'absolute',
-          top: '50%',
-          left: '50%',
-          transform: 'translate(-50%, -50%)',
-          fontSize: 'clamp(3rem, 8vw, 10rem)',
-          fontWeight: 900,
-          color: isDark ? 'rgba(255, 255, 255, 0.03)' : 'rgba(0, 0, 0, 0.03)',
-          whiteSpace: 'nowrap',
-          userSelect: 'none',
-          pointerEvents: 'none',
-          letterSpacing: '-0.02em',
-          fontFamily: "'Outfit', sans-serif",
-          zIndex: 0,
-        }}>
-          {game.name.toUpperCase()}
-        </div>
-        
-        {/* Subtle text over the watermark */}
-        <p style={{ 
-          color: 'var(--text-tertiary)', 
-          fontSize: '1.1rem',
-          maxWidth: '600px',
-          margin: '0 auto',
+      <div style={{ maxWidth: '1400px', width: '100%', margin: '0 auto' }}>
+        {/* Section header */}
+        <header style={{
+          marginBottom: 'var(--space-2xl)',
+          animation: disableInitialAnimation ? 'none' : 'fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both',
           position: 'relative',
-          zIndex: 1,
-          fontWeight: 500,
-          letterSpacing: '0.02em',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: 'center',
+          justifyContent: 'center',
+          minHeight: '120px',
         }}>
-          {loadingRoster ? 'Loading roster...' : `${characters.length} fighter${characters.length !== 1 ? 's' : ''} available`}
-        </p>
-      </header>
+          {/* Giant Watermark text of the Game Name */}
+          <div style={{
+            position: 'absolute',
+            top: '50%',
+            left: '50%',
+            transform: 'translate(-50%, -50%)',
+            fontSize: 'clamp(3rem, 8vw, 10rem)',
+            fontWeight: 900,
+            color: isDark ? 'rgba(255, 255, 255, 0.03)' : 'rgba(0, 0, 0, 0.03)',
+            whiteSpace: 'nowrap',
+            userSelect: 'none',
+            pointerEvents: 'none',
+            letterSpacing: '-0.02em',
+            fontFamily: "'Outfit', sans-serif",
+            zIndex: 0,
+          }}>
+            {game.name.toUpperCase()}
+          </div>
+          
+          {/* Subtle text over the watermark */}
+          <p style={{ 
+            color: 'var(--text-tertiary)', 
+            fontSize: '1.1rem',
+            maxWidth: '600px',
+            margin: '0 auto',
+            position: 'relative',
+            zIndex: 1,
+            fontWeight: 500,
+            letterSpacing: '0.02em',
+          }}>
+            {loadingRoster ? 'Loading roster...' : `${characters.length} fighter${characters.length !== 1 ? 's' : ''} available`}
+          </p>
+        </header>
+      </div>
 
 
       
