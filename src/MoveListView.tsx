@@ -89,11 +89,12 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
   }, [game.id, characterId]);
 
   // Tab → move type mapping (defined before early returns so hooks aren't conditional)
+  const isSuperMove = (m: Move) => m.type === 'super' || /\b(super|climax|meteor)\b/i.test(m.name);
   const TAB_FILTER: Record<string, (data: CharacterExport) => Move[]> = {
-    'Normal Moves':   (d) => (d.movesList || []).filter(m => m.type === 'normal'),
-    'Special Moves':  (d) => (d.movesList || []).filter(m => m.type === 'special'),
-    'Super Arts':     (d) => (d.movesList || []).filter(m => m.type === 'super'),
-    'Super Combos':   (d) => (d.movesList || []).filter(m => m.type === 'super'),
+    'Normal Moves':   (d) => (d.movesList || []).filter(m => m.type === 'normal' && !isSuperMove(m)),
+    'Special Moves':  (d) => (d.movesList || []).filter(m => m.type === 'special' && !isSuperMove(m)),
+    'Super Arts':     (d) => (d.movesList || []).filter(m => isSuperMove(m)),
+    'Super Combos':   (d) => (d.movesList || []).filter(m => isSuperMove(m)),
     'Unique Attacks': (d) => (d.movesList || []).filter(m => m.type === 'unique'),
     'Throws':         (d) => (d.movesList || []).filter(m => m.type === 'throw'),
     'Common Moves':   (d) => (d.movesList || []).filter(m => m.type === 'common'),
@@ -265,6 +266,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           onBack={onBack}
           onHome={onHome}
           gameName={characterData.game}
+          characterName={characterData.name}
           disableInitialAnimation={false}
         />
         
