@@ -6,7 +6,7 @@ import type { ControllerType } from './glyphMap';
 import { useTheme } from './ThemeContext';
 import { AmbientMesh } from './AmbientMesh';
 import { TopHeader } from './TopHeader';
-import { ArcadeInfoCard } from './ArcadeInfoCard';
+
 
 interface Props {
   game: GameDefinition;
