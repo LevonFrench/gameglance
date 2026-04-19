@@ -250,6 +250,28 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         speed={0.6} 
       />
 
+      {/* Background Character Watermark */}
+      <div style={{
+        position: 'fixed',
+        top: '55%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        fontSize: 'clamp(6rem, 18vw, 22rem)',
+        fontWeight: 900,
+        color: isDark ? 'rgba(255, 255, 255, 0.025)' : 'rgba(0, 0, 0, 0.025)',
+        whiteSpace: 'nowrap',
+        userSelect: 'none',
+        pointerEvents: 'none',
+        letterSpacing: '-0.03em',
+        fontFamily: "'Outfit', sans-serif",
+        zIndex: 0,
+        width: '100vw',
+        textAlign: 'center',
+        overflow: 'hidden',
+      }}>
+        {characterData.name.toUpperCase()}
+      </div>
+
       <div style={{
         position: 'sticky',
         top: 0,
@@ -279,15 +301,19 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         animation: 'fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both',
       }}>
         {/* Tabs */}
-        <div style={{
-          display: 'flex',
-          flexWrap: 'wrap',
-          gap: '0.4rem',
-          background: 'var(--bg-input)',
-          padding: '0.5rem',
-          borderRadius: 'var(--radius-lg)',
-          border: '1px solid var(--border-subtle)',
-        }}>
+        <div 
+          className="hide-scrollbar"
+          style={{
+            display: 'flex',
+            flexWrap: 'nowrap',
+            overflowX: 'auto',
+            gap: '0.4rem',
+            background: 'var(--bg-input)',
+            padding: '0.5rem',
+            borderRadius: 'var(--radius-lg)',
+            border: '1px solid var(--border-subtle)',
+            WebkitOverflowScrolling: 'touch',
+          }}>
           {orderedTabs.map((tab, idx) => {
             const isEmpty = tabCounts[tab] === 0;
             return (
@@ -321,6 +347,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                   fontFamily: 'inherit',
                   whiteSpace: 'nowrap',
                   opacity: isEmpty ? 0.4 : 1,
+                  outline: 'none',
                   position: 'relative',
                   display: 'flex',
                   alignItems: 'center',
