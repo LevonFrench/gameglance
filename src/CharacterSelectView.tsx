@@ -4,6 +4,7 @@ import type { GameDefinition } from './types';
 
 import { getCardColor } from './palette';
 import { AmbientMesh } from './AmbientMesh';
+import { TopHeader } from './TopHeader';
 import type { ControllerType } from './glyphMap';
 
 interface Props {
@@ -16,7 +17,7 @@ interface Props {
   onHome: () => void;
 }
 
-export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnimation, onSelectCharacter }) => {
+export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnimation, onSelectCharacter, onBack, onHome }) => {
   useArrowNavigation('[id^="char-card-"]');
 
   const [favorites, setFavorites] = useState<string[]>(() => {
@@ -285,7 +286,15 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
         speed={0.8} 
       />
 
-      {/* Centered Header */}
+      {/* Top Header */}
+      <TopHeader 
+        onBack={onBack}
+        onHome={onHome}
+        gameName={game.name}
+        disableInitialAnimation={disableInitialAnimation}
+      />
+
+      {/* Centered Section Header */}
       <header style={{
         textAlign: 'center',
         marginBottom: 'var(--space-2xl)',
