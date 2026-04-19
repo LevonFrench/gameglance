@@ -390,7 +390,7 @@ export const GameSelectView: React.FC<Props> = ({
   }, []);
 
   useEffect(() => {
-    let timeoutId: NodeJS.Timeout;
+    let timeoutId: ReturnType<typeof setTimeout>;
 
     const startGlitchCycle = () => {
       setIsGlitching(true);

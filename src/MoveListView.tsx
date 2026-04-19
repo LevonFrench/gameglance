@@ -160,7 +160,6 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           'ex special': 'super',      // Vampire series
           'beast drive': 'super',     // Bloody Roar
           'hyper beast drive': 'super',
-          'beast drive': 'super',
           'fatal attack': 'super',    // Kizuna Encounter
           'critical edge': 'super',   // SoulCalibur
           'plasma strike': 'super',   // Star Gladiator
@@ -857,7 +856,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                                           )}
                                           {cleanName}
                                         </h3>
-                                        {(move.type || move.driveCost !== undefined || dlMatch) && (
+                                        {(move.type || dlMatch) && (
                                           <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
                                             {move.type && (
                                               <span style={{ 
@@ -882,20 +881,10 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                                                 border: '1px solid rgba(245, 158, 11, 0.3)'
                                               }}>Drink Lvl {dlMatch[1]}</span>
                                             )}
-                                          {move.driveCost !== undefined && (
-                                            <span style={{ 
-                                              fontSize: '0.75rem', 
-                                              color: '#10b981',
-                                              fontWeight: 700,
-                                              background: 'rgba(16, 185, 129, 0.1)',
-                                              padding: '2px 6px',
-                                              borderRadius: '4px'
-                                            }}>Drive: {move.driveCost}</span>
-                                          )}
-                                        </div>
-                                      )}
-                                    </div>
-                                  );
+                                          </div>
+                                        )}
+                                      </div>
+                                    );
                                 })()}
                                   
                                   {/* Explicit Selection Checkbox */}

@@ -284,8 +284,6 @@ export const App: React.FC = () => {
          onLaunchMainScreen={handleLaunchMainScreen}
          onBack={() => navigate('char_select', selectedGame)}
          onHome={() => navigate('game_select')}
-         selectedCount={selectedPlaylist.length}
-         onLaunchGameGlance={handleLaunchMainScreen}
          onClearGameGlance={handleClearPlaylist}
       />;
       break;
