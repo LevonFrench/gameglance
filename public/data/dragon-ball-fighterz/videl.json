@@ -1,27 +1,839 @@
 {
   "name": "Videl",
-  "character": "Videl",
+  "character": "videl",
   "game": "Dragon Ball FighterZ",
   "movesList": [
     {
-      "name": "Eagle Kick",
-      "input": "236L/M/H",
-      "type": "Kick"
+      "id": "1926f3b2-5f32-4636-aa7f-6234f75a234e",
+      "name": "2H",
+      "input": "2H",
+      "damage": "750 / 1000",
+      "frameData": {
+        "startup": "15",
+        "active": "3",
+        "recovery": "30",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-15 Head",
+      "type": "Normal Moves"
     },
     {
-      "name": "Justice Rush",
-      "input": "214L/M/H",
-      "type": "Rekka"
+      "id": "0311a1d7-63a1-4081-a74c-bc8a496cb2e7",
+      "name": "2L",
+      "input": "2L",
+      "damage": "350",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "13",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
     },
     {
-      "name": "Videl Rush",
-      "input": "236LM",
-      "type": "Level 1"
+      "id": "c3dd15f7-f875-43a7-bc99-0f0de3ddc0d3",
+      "name": "2M",
+      "input": "2M",
+      "damage": "600",
+      "frameData": {
+        "startup": "10",
+        "active": "5",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
     },
     {
+      "id": "9b0983c3-e7d4-48d6-8b1a-35412404ae60",
+      "name": "2S",
+      "input": "2S",
+      "damage": "1000 [1200]",
+      "frameData": {
+        "startup": "62",
+        "active": "P",
+        "recovery": "Total 22",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "5bd3edbd-0518-42c7-93c4-dbba55b5d0b8",
+      "name": "5H",
+      "input": "5H",
+      "damage": "750 / 1000",
+      "frameData": {
+        "startup": "15",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "d508b74d-c31e-4074-820e-ffed14bcd543",
+      "name": "5L",
+      "input": "5L",
+      "damage": "350",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "f47cce95-c12c-4f37-8161-f79a88c84678",
+      "name": "5LL",
+      "input": "5LL",
+      "damage": "600",
+      "frameData": {
+        "startup": "10 [15]",
+        "active": "8",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "74b43748-93ca-425e-a35f-7e50d2b0d7db",
+      "name": "5LLL",
+      "input": "5LLL",
+      "damage": "1000",
+      "frameData": {
+        "startup": "9",
+        "active": "1",
+        "recovery": "26",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "1ee551b6-47a5-45f5-9c44-084c03511e91",
+      "name": "5M",
+      "input": "5M",
+      "damage": "600 [500]",
+      "frameData": {
+        "startup": "8 [11]",
+        "active": "2",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "edf351ab-62ce-4984-96f0-2333d6cd5a8f",
+      "name": "5S",
+      "input": "5S",
+      "damage": "1000 [1200]",
+      "frameData": {
+        "startup": "19 [15]",
+        "active": "",
+        "recovery": "Total 42 [38]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "71efac2d-b2bc-450b-92a3-ea0173028607",
+      "name": "6M",
+      "input": "6M",
+      "damage": "850",
+      "frameData": {
+        "startup": "24",
+        "active": "6",
+        "recovery": "4+6L",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "3dd56ea5-a126-4b05-82e2-d8529368bb53",
+      "name": "j.2H",
+      "input": "j.2H",
+      "damage": "750",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "c89eb6fb-e2d6-4d28-904e-d7bdead10385",
+      "name": "j.2S",
+      "input": "j.2S",
+      "damage": "850 [1000]",
+      "frameData": {
+        "startup": "43",
+        "active": "",
+        "recovery": "Total 39+5L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "51aa10dd-0478-427b-86e9-814011c5e3c0",
+      "name": "j.H",
+      "input": "j.H",
+      "damage": "750 / 1000",
+      "frameData": {
+        "startup": "13",
+        "active": "3",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "81911b76-6eeb-49fc-beef-d3102bbe1df7",
+      "name": "j.L",
+      "input": "j.L",
+      "damage": "350",
+      "frameData": {
+        "startup": "6",
+        "active": "4",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "8f10af7b-d05e-49ce-93ef-322b6e1809f2",
+      "name": "j.M",
+      "input": "j.M",
+      "damage": "600",
+      "frameData": {
+        "startup": "8",
+        "active": "4",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "39907726-78fa-4898-a5fb-4e2afa476166",
+      "name": "j.S",
+      "input": "j.S",
+      "damage": "850 [1000]",
+      "frameData": {
+        "startup": "14",
+        "active": "",
+        "recovery": "Total 40+5L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "2919714e-db11-43d8-a30d-7c69b5b8f210",
+      "name": "Air H Frankensteiner",
+      "input": "j.214H",
+      "damage": "800, 850[1000]",
+      "frameData": {
+        "startup": "18",
+        "active": "",
+        "recovery": "15L",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "eea1bd3c-2e2e-4b69-9b10-ca097e595993",
+      "name": "Air H Moonsault Kick",
+      "input": "j.22H",
+      "damage": "800",
+      "frameData": {
+        "startup": "28",
+        "active": "4",
+        "recovery": "5",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "4-16 All, 17-23 Invul*",
+      "type": "Special Moves"
+    },
+    {
+      "id": "90fe4aa2-8c33-465d-b6c4-f13b461cbb32",
+      "name": "Air H Videl Rush",
+      "input": "j.236H",
+      "damage": "600, 600",
+      "frameData": {
+        "startup": "8",
+        "active": "7",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "2fbf06c8-8a74-42c3-929b-1152ccb2fd0f",
+      "name": "Air L Frankensteiner",
+      "input": "j.214L",
+      "damage": "1000",
+      "frameData": {
+        "startup": "18",
+        "active": "",
+        "recovery": "15L",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "7fb2cf80-7838-414b-b07c-e1185f13cb6d",
+      "name": "Air L Moonsault Kick",
+      "input": "j.22L",
+      "damage": "650",
+      "frameData": {
+        "startup": "28",
+        "active": "4",
+        "recovery": "5",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "4-16 All, 17-23 Invul*",
+      "type": "Special Moves"
+    },
+    {
+      "id": "25e0caaa-94be-4a3c-870d-145055da4d05",
+      "name": "Air L Videl Rush",
+      "input": "j.236L",
+      "damage": "450, 500",
+      "frameData": {
+        "startup": "8",
+        "active": "6",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "c5f7497c-6d62-4170-9b7d-cc28ee1e1777",
+      "name": "Air M Frankensteiner",
+      "input": "j.214M",
+      "damage": "700, 850[1000]",
+      "frameData": {
+        "startup": "26",
+        "active": "",
+        "recovery": "15L",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "4eefcef7-6840-4cfd-9245-6c062e6c0f45",
+      "name": "Air M Moonsault Kick",
+      "input": "j.22M",
+      "damage": "700",
+      "frameData": {
+        "startup": "32",
+        "active": "4",
+        "recovery": "7",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "4-19 All, 20-27 Invul*",
+      "type": "Special Moves"
+    },
+    {
+      "id": "545c7bcd-fe96-4730-99c6-bb29c3ba4fae",
+      "name": "Air M Videl Rush",
+      "input": "j.236M",
+      "damage": "500, 550",
+      "frameData": {
+        "startup": "16",
+        "active": "6",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "9823c906-ea81-4547-82c0-5cf90370f134",
+      "name": "Defender of Love & Justice, Great Saiyaman! (Attack)",
+      "input": "236H+S Attack",
+      "damage": "318 [1318]",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Supers"
+    },
+    {
+      "id": "1e631b6b-f4c9-4f29-a15a-b6a637766eba",
+      "name": "Defender of Love & Justice, Great Saiyaman! (Catch)",
+      "input": "236H+S Counter",
+      "damage": "2318 [3180]",
+      "frameData": {
+        "startup": "1",
+        "active": "39",
+        "recovery": "Total 61",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "1-42 Non-throw, Non-Proj.",
+      "type": "Supers"
+    },
+    {
+      "id": "a8f94011-5b7a-4de4-9cd4-9087e3561417",
+      "name": "Eagle Rush",
+      "input": "Assist B",
+      "damage": "675",
+      "frameData": {
+        "startup": "30",
+        "active": "",
+        "recovery": "",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Assists"
+    },
+    {
+      "id": "912d2317-54c9-45ca-8ed9-2dbab53c4fcf",
+      "name": "H Frankensteiner",
+      "input": "214H",
+      "damage": "800, 850[1000]",
+      "frameData": {
+        "startup": "20",
+        "active": "5",
+        "recovery": "15L",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "308531c6-bd86-45f9-b4b5-f2b53fcd0292",
+      "name": "H Moonsault Kick",
+      "input": "22H",
+      "damage": "800",
+      "frameData": {
+        "startup": "27",
+        "active": "4",
+        "recovery": "5",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "4-18 All, 19-23 Invul*",
+      "type": "Special Moves"
+    },
+    {
+      "id": "eecfb610-5d43-492a-b589-55a93b6e4d86",
+      "name": "H Videl Rush",
+      "input": "236H",
+      "damage": "800",
+      "frameData": {
+        "startup": "12",
+        "active": "8",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "e50904b5-72d9-493c-bc7f-3d347f3f8ebb",
       "name": "Justice Combination",
-      "input": "214LM/HS",
-      "type": "Level 3"
+      "input": "6H",
+      "damage": "600\u00d72, 750",
+      "frameData": {
+        "startup": "11",
+        "active": "7 (14) 4 (18) 3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-56 Ki Blast",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "412fb964-9583-41c2-a66a-ebbcc1afe6ed",
+      "name": "Justice Revenge",
+      "input": "Knocked Down > [H+S]",
+      "damage": "240\u00d710 [260\u00d710]",
+      "frameData": {
+        "startup": "38+3",
+        "active": "85",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-49 All",
+      "type": "Supers"
+    },
+    {
+      "id": "685ea4d0-5c2b-407a-adb8-cdbec3d6c378",
+      "name": "Justice Rush",
+      "input": "214L+M",
+      "damage": "4099 [4387]",
+      "frameData": {
+        "startup": "10+3",
+        "active": "3",
+        "recovery": "28",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-15 All",
+      "type": "Supers"
+    },
+    {
+      "id": "555e4a81-140f-4e34-b9e0-d31436a8ee99",
+      "name": "L Frankensteiner",
+      "input": "214L",
+      "damage": "1000",
+      "frameData": {
+        "startup": "24",
+        "active": "2",
+        "recovery": "15L",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "ef585a8c-46d6-44f7-85a9-d451b757a5eb",
+      "name": "L Moonsault Kick",
+      "input": "22L",
+      "damage": "650",
+      "frameData": {
+        "startup": "30",
+        "active": "4",
+        "recovery": "5",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "4-18 All, 19-24 Invul*",
+      "type": "Special Moves"
+    },
+    {
+      "id": "25eeeb7f-3639-4e7c-8452-710473fc58e2",
+      "name": "L Videl Rush",
+      "input": "236L",
+      "damage": "650",
+      "frameData": {
+        "startup": "12",
+        "active": "6",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "fd8d208e-f4e7-4d94-a1d0-62f0add8e59c",
+      "name": "M Frankensteiner",
+      "input": "214M",
+      "damage": "700, 850[1000]",
+      "frameData": {
+        "startup": "25",
+        "active": "11",
+        "recovery": "15L",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "20abf351-1855-4909-84d2-73530f233f10",
+      "name": "M Moonsault Kick",
+      "input": "22M",
+      "damage": "700",
+      "frameData": {
+        "startup": "30",
+        "active": "4",
+        "recovery": "7",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "4-21 All, 22-26 Invul*",
+      "type": "Special Moves"
+    },
+    {
+      "id": "2575312d-1b2f-4091-823b-d6ff3afdc579",
+      "name": "M Videl Rush",
+      "input": "236M",
+      "damage": "700",
+      "frameData": {
+        "startup": "17",
+        "active": "6",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "d5f03541-3375-4a44-9575-02cb9ced92c2",
+      "name": "Rainbow Storm",
+      "input": "236L+M",
+      "damage": "400, 1850",
+      "frameData": {
+        "startup": "7+4",
+        "active": "5",
+        "recovery": "26+7L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-3 Head, 4-15 All",
+      "type": "Supers"
+    },
+    {
+      "id": "099b21bf-6055-4829-a98e-fd56c3ccbf76",
+      "name": "Rising Eagle",
+      "input": "214S",
+      "damage": "700",
+      "frameData": {
+        "startup": "12",
+        "active": "7",
+        "recovery": "30+15L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-14 All",
+      "type": "Special Moves"
+    },
+    {
+      "id": "9e19089c-510f-4e1e-9621-99e315ebf099",
+      "name": "Rising Eagle",
+      "input": "Assist C",
+      "damage": "500,560 (1060)",
+      "frameData": {
+        "startup": "30 [20]",
+        "active": "",
+        "recovery": "",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Assists"
+    },
+    {
+      "id": "2748c7cd-37eb-4eb4-a95f-a7e4e40ab562",
+      "name": "Videl Rush",
+      "input": "Assist A",
+      "damage": "700",
+      "frameData": {
+        "startup": "20",
+        "active": "6",
+        "recovery": "43",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Assists"
+    },
+    {
+      "id": "d54c501d-70fd-42bc-9b60-d0d0b0c9531b",
+      "name": "Videl Rush Followup H",
+      "input": "236X > H",
+      "damage": "800, 850[1000]",
+      "frameData": {
+        "startup": "21-22",
+        "active": "6",
+        "recovery": "14",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "4c0277d9-2c60-4e90-a1a9-446ca62de924",
+      "name": "Videl Rush Followup L",
+      "input": "236X > L",
+      "damage": "650",
+      "frameData": {
+        "startup": "13",
+        "active": "",
+        "recovery": "",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "924dac48-2b33-41be-9d7b-185ff8080152",
+      "name": "Videl Rush Followup LL",
+      "input": "236X > LL",
+      "damage": "300\u00d74",
+      "frameData": {
+        "startup": "8",
+        "active": "",
+        "recovery": "",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "5c7ff6ea-45e4-42d8-80d4-05ecca06d41d",
+      "name": "Videl Rush Followup LLL",
+      "input": "236X > LLL",
+      "damage": "1000",
+      "frameData": {
+        "startup": "13",
+        "active": "",
+        "recovery": "",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-X Full",
+      "type": "Special Moves"
+    },
+    {
+      "id": "37ea90bf-04ce-4753-bf1a-863307fe7d6c",
+      "name": "Videl Rush Followup M",
+      "input": "236X > M",
+      "damage": "700",
+      "frameData": {
+        "startup": "32",
+        "active": "4",
+        "recovery": "5",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "4-X Full",
+      "type": "Special Moves"
+    },
+    {
+      "id": "c729ce9d-73fb-4ff8-b3d4-895fc0cb25de",
+      "name": "Z Reflect",
+      "input": "4S",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Total 35",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "1-22 Non-throw",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "81232513-5666-4ccd-ba5d-555e88517247",
+      "name": "Z Reflect Follow-up",
+      "input": "4S > 5S",
+      "damage": "700",
+      "frameData": {
+        "startup": "7",
+        "active": "7",
+        "recovery": "30+15L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-9 All",
+      "type": "Normal Moves"
+    }
+  ],
+  "combosList": [
+    {
+      "id": "chall_1",
+      "name": "Combo Challenge 1",
+      "input": "5L 5L 5L"
+    },
+    {
+      "id": "chall_2",
+      "name": "Combo Challenge 2",
+      "input": "5M 5M 5M"
+    },
+    {
+      "id": "chall_3",
+      "name": "Combo Challenge 3",
+      "input": "2M 5M j.L j.M"
+    },
+    {
+      "id": "chall_4",
+      "name": "Combo Challenge 4",
+      "input": "5L 5L 5M 5H"
+    },
+    {
+      "id": "chall_5",
+      "name": "Combo Challenge 5",
+      "input": "2M 5M j.L j.M j.2H SD j.L j.M"
+    },
+    {
+      "id": "chall_6",
+      "name": "Combo Challenge 6",
+      "input": "5L 5M 2H SD j.L j.M j.H"
+    },
+    {
+      "id": "chall_7",
+      "name": "Combo Challenge 7",
+      "input": "2M 5M j.L j.M j.2H SD j.L j.M j.2H 236L"
+    },
+    {
+      "id": "chall_8",
+      "name": "Combo Challenge 8",
+      "input": "5L 5L 2M 5M j.L j.M j.2H SD j.L j.M j.H 236S"
+    },
+    {
+      "id": "chall_9",
+      "name": "Combo Challenge 9",
+      "input": "2M 5M j.M j.2H SD j.M j.H A1 5L 5M 2H"
+    },
+    {
+      "id": "chall_10",
+      "name": "Combo Challenge 10",
+      "input": "2M 5M j.M j.2H SD j.L j.M j.2H j.L j.M j.H 236L+M"
     }
   ]
 }

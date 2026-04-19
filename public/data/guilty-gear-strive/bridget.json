@@ -1,52 +1,674 @@
 {
   "name": "Bridget",
-  "character": "Bridget",
+  "character": "bridget",
   "game": "Guilty Gear -Strive-",
   "movesList": [
     {
-      "name": "Gun Flame",
-      "input": "236P",
-      "type": "special"
+      "id": "dace60aa-88ba-491b-be98-1785adcf4bdd",
+      "name": "2H",
+      "input": "2H",
+      "damage": "34",
+      "frameData": {
+        "startup": "11",
+        "active": "11",
+        "recovery": "24",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
     },
     {
-      "name": "Volcanic Viper",
-      "input": "623S or 623HS",
-      "type": "special (air ok)"
+      "id": "169fb4a2-b43f-4a71-9c39-1a14d8ea4096",
+      "name": "2K",
+      "input": "2K",
+      "damage": "18",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "11",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
     },
     {
-      "name": "Bandit Revolver",
+      "id": "e03b3921-a073-4479-9fdb-d4ddb045ef27",
+      "name": "2P",
+      "input": "2P",
+      "damage": "18",
+      "frameData": {
+        "startup": "7",
+        "active": "4",
+        "recovery": "9",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "a921a832-0aa2-46f8-b9e6-6c46a9b9afac",
+      "name": "2S",
+      "input": "2S",
+      "damage": "14\u00d72",
+      "frameData": {
+        "startup": "11",
+        "active": "3, 3",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "a39110c1-65ef-4333-a1f8-88fe748ced40",
+      "name": "5H",
+      "input": "5H",
+      "damage": "38",
+      "frameData": {
+        "startup": "11",
+        "active": "5",
+        "recovery": "29",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "99963bca-1f3b-462b-a485-0b53f7ed4af7",
+      "name": "5K",
+      "input": "5K",
+      "damage": "24",
+      "frameData": {
+        "startup": "6",
+        "active": "5",
+        "recovery": "9",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "558eb298-fe2d-46b9-adc6-908193a0c64b",
+      "name": "5P",
+      "input": "5P",
+      "damage": "20",
+      "frameData": {
+        "startup": "8",
+        "active": "2",
+        "recovery": "14",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "e39f3b36-a95a-41e4-bea4-b06d7afe72b1",
+      "name": "6H",
+      "input": "6H",
+      "damage": "45",
+      "frameData": {
+        "startup": "13",
+        "active": "9",
+        "recovery": "13",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "13-??F Airborne",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "cff20cd9-7915-4fc5-bb2a-b00240985639",
+      "name": "6K",
+      "input": "6K",
+      "damage": "29",
+      "frameData": {
+        "startup": "11",
+        "active": "5",
+        "recovery": "13",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "5d655cf4-6244-427a-9381-d92e40115eaf",
+      "name": "6P",
+      "input": "6P",
+      "damage": "27",
+      "frameData": {
+        "startup": "10",
+        "active": "6",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-3 Below Crouch<br/>4-17 Low Profile",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "1f4eb160-d572-4d23-bfde-2a80da5560bc",
+      "name": "c.S",
+      "input": "c.S",
+      "damage": "18\u00d72",
+      "frameData": {
+        "startup": "7",
+        "active": "3, 3",
+        "recovery": "13",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "a26bbc75-2132-4944-87e1-f6e4c15a435a",
+      "name": "f.S",
+      "input": "f.S",
+      "damage": "30",
+      "frameData": {
+        "startup": "10",
+        "active": "5",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "de7a00ef-b15c-400b-b536-f512ae8d96ea",
+      "name": "f.SS",
+      "input": "f.SS",
+      "damage": "40",
+      "frameData": {
+        "startup": "12",
+        "active": "4",
+        "recovery": "27",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "17ee4cb3-0f8c-47fe-b2fa-2c6ee91d0388",
+      "name": "H",
+      "input": "H",
+      "damage": "40",
+      "frameData": {
+        "startup": "12",
+        "active": "4",
+        "recovery": "26",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "784e9fec-6c17-4462-8401-0f44e1e34a21",
+      "name": "j.D",
+      "input": "j.D",
+      "damage": "16\u00d73",
+      "frameData": {
+        "startup": "15",
+        "active": "18",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "e6377f00-7a53-40a2-afaf-d17a31004dfd",
+      "name": "j.H",
+      "input": "j.H",
+      "damage": "34",
+      "frameData": {
+        "startup": "10",
+        "active": "4",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "08766a6e-2198-46d5-aa4a-79420119f533",
+      "name": "j.K",
+      "input": "j.K",
+      "damage": "20",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "20725b68-aec7-417f-916b-a3bfe7b3034d",
+      "name": "j.P",
+      "input": "j.P",
+      "damage": "15",
+      "frameData": {
+        "startup": "6",
+        "active": "6",
+        "recovery": "10",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "356afa02-ed54-4a63-9f39-f910bff0db5a",
+      "name": "j.S",
+      "input": "j.S",
+      "damage": "14\u00d72",
+      "frameData": {
+        "startup": "10",
+        "active": "6",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "98dba439-494c-493b-81cb-bcc0e686976f",
+      "name": "Air Rock the Baby",
+      "input": "j.63214P",
+      "damage": "90",
+      "frameData": {
+        "startup": "22-32 <br> [or, 7 after landing]",
+        "active": "2",
+        "recovery": "Until Landing + 3 <br> [28]",
+        "advantage": "-"
+      },
+      "guard": "Air Throw <br> [Ground Throw]",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "dc1db6da-57e4-45f7-b1da-2485ff1fb930",
+      "name": "Air Throw",
+      "input": "j.6D or j.4D",
+      "damage": "70",
+      "frameData": {
+        "startup": "2",
+        "active": "3",
+        "recovery": "38 or Until Landing+10",
+        "advantage": "-"
+      },
+      "guard": "Air Throw",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "9a94c9ff-e828-4f9c-9dd0-d9ae6ba95424",
+      "name": "Brake",
+      "input": "236K P",
+      "damage": "21",
+      "frameData": {
+        "startup": "7",
+        "active": "7",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "9ae32d34-fede-4c96-b219-8ddc0921baf6",
+      "name": "Charged Dust Attack",
+      "input": "5[D]",
+      "damage": "62",
+      "frameData": {
+        "startup": "28",
+        "active": "3",
+        "recovery": "26",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "32dc95ad-33f3-4487-9f59-3642982dc5e8",
+      "name": "Charged Wild Assault",
+      "input": "236[D]",
+      "damage": "50",
+      "frameData": {
+        "startup": "32",
+        "active": "3",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "All (Guard Crush)",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "d75959b6-58d3-4923-a01a-8694293f52fd",
+      "name": "Counter Blitz",
+      "input": "ch6D",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "dca44318-4cbe-44ec-8347-7dab8b4c06d4",
+      "name": "Dash Cancel",
+      "input": "66",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Total 22",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "6f30cee1-5e4f-4cad-9788-1cc3c0ee5fae",
+      "name": "Dust Attack",
+      "input": "5D",
+      "damage": "50",
+      "frameData": {
+        "startup": "20",
+        "active": "3",
+        "recovery": "26",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "3da7d742-8665-4ff7-9f83-84b4e3145001",
+      "name": "Finish Blow",
+      "input": "j.XX during Homing Jump",
+      "damage": "80",
+      "frameData": {
+        "startup": "17",
+        "active": "",
+        "recovery": "",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "e0df63a7-1be1-4b64-9a22-147c90bac607",
+      "name": "Ground Throw",
+      "input": "6D or 4D",
+      "damage": "70",
+      "frameData": {
+        "startup": "2",
+        "active": "3",
+        "recovery": "38",
+        "advantage": "-"
+      },
+      "guard": "Ground Throw",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "a6b5de51-334f-4683-974c-411648352ef4",
+      "name": "Kick Start My Heart",
       "input": "236K",
-      "type": "special (air ok)"
+      "damage": "29",
+      "frameData": {
+        "startup": "10",
+        "active": "25",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
     },
     {
-      "name": "Bandit Bringer",
+      "id": "84a7baec-ceed-47cb-a567-fbcec7ed2ec4",
+      "name": "Loop the Loop",
+      "input": "632146S",
+      "damage": "[9, 6]\u00d76, 9, 71",
+      "frameData": {
+        "startup": "9+2",
+        "active": "45",
+        "recovery": "47",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Overdrives"
+    },
+    {
+      "id": "15ab4e9c-61fe-4dd6-8bb5-af707d76862f",
+      "name": "Return of the Killing Machine",
+      "input": "632146H",
+      "damage": "15\u00d77",
+      "frameData": {
+        "startup": "9+1",
+        "active": "~",
+        "recovery": "Total 37",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Overdrives"
+    },
+    {
+      "id": "7697edcf-e3e9-4a4c-9c4d-27fc9cffb6b0",
+      "name": "Rock the Baby",
+      "input": "63214P",
+      "damage": "90",
+      "frameData": {
+        "startup": "27",
+        "active": "2",
+        "recovery": "28",
+        "advantage": "-"
+      },
+      "guard": "Ground Throw",
+      "invuln": "4-20F Airborne",
+      "type": "Special Moves"
+    },
+    {
+      "id": "98c30f68-0c0c-42e8-9118-e48e3b3bf2eb",
+      "name": "Roger Dive",
+      "input": "j.236K",
+      "damage": "25, 35",
+      "frameData": {
+        "startup": "25",
+        "active": "Until Landing, 4",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "Below Crouch landing-(9F after landing)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "fa936b86-6d48-4a4b-841a-8755db496aba",
+      "name": "Rolling Movement",
       "input": "214K",
-      "type": "special (air ok)"
+      "damage": "32 [55]",
+      "frameData": {
+        "startup": "20~38",
+        "active": "Until Landing",
+        "recovery": "0",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "5F onwards Airborne",
+      "type": "Special Moves"
     },
     {
-      "name": "Wild Throw",
-      "input": "623K",
-      "type": "command throw"
+      "id": "73984e8c-7d1f-433f-8fdd-a422263ad05a",
+      "name": "Rolling Movement",
+      "input": "214K (Without Yoyo)",
+      "damage": "",
+      "frameData": {
+        "startup": "26 [44]",
+        "active": "",
+        "recovery": "Total 50 [56]",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "5F onwards Airborne",
+      "type": "Special Moves"
     },
     {
-      "name": "Night Vortex",
-      "input": "214S",
-      "type": "special"
+      "id": "42d3a511-11b2-43a6-b816-3f1b42f172bb",
+      "name": "Shoot",
+      "input": "236K K",
+      "damage": "37",
+      "frameData": {
+        "startup": "3",
+        "active": "20",
+        "recovery": "29",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "3-30F Airborne",
+      "type": "Special Moves"
     },
     {
-      "name": "Fafnir",
-      "input": "41236HS",
-      "type": "special"
+      "id": "efb8c0c0-a1f0-4174-bac4-4005069f9abd",
+      "name": "Starship",
+      "input": "623P",
+      "damage": "16\u00d74",
+      "frameData": {
+        "startup": "9",
+        "active": "3,3,3,3",
+        "recovery": "51",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-11 Full",
+      "type": "Special Moves"
     },
     {
-      "name": "Tyrant Rave",
-      "input": "632146HS",
-      "type": "overdrive"
+      "id": "6485d061-6130-4d49-aea1-ee10f8876d77",
+      "name": "Stop and Dash",
+      "input": "214S/H",
+      "damage": "40",
+      "frameData": {
+        "startup": "130",
+        "active": "~",
+        "recovery": "Total 30",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
     },
     {
-      "name": "Heavy Mob Cemetery",
-      "input": "214214HS",
-      "type": "overdrive"
+      "id": "1c37545b-40e6-4432-95dd-bf6aee0ca32e",
+      "name": "Stop and Dash",
+      "input": "236H",
+      "damage": "40",
+      "frameData": {
+        "startup": "15",
+        "active": "21",
+        "recovery": "Total 38",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "0522e7b8-d021-47e2-bd66-7f136ef94705",
+      "name": "Stop and Dash",
+      "input": "236S",
+      "damage": "40",
+      "frameData": {
+        "startup": "15",
+        "active": "21",
+        "recovery": "Total 46",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "e0c21e22-e948-4751-8d1f-ea675042a4e5",
+      "name": "Sweep",
+      "input": "2D",
+      "damage": "30",
+      "frameData": {
+        "startup": "13",
+        "active": "4",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "7909a3b2-ba77-4462-9c1c-0270845b30ad",
+      "name": "Wild Assault",
+      "input": "236D",
+      "damage": "30",
+      "frameData": {
+        "startup": "20~31",
+        "active": "3",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "All (Guard Crush)",
+      "invuln": "",
+      "type": "System"
+    }
+  ],
+  "combosList": [
+    {
+      "id": "miss_1",
+      "name": "Mission 1",
+      "input": "P P P"
+    },
+    {
+      "id": "miss_2",
+      "name": "Mission 2",
+      "input": "K S H"
+    },
+    {
+      "id": "miss_3",
+      "name": "Mission 3",
+      "input": "c.S f.S 5H 236P"
+    },
+    {
+      "id": "miss_4",
+      "name": "Mission 4",
+      "input": "c.S 2D 236K"
     }
   ]
 }

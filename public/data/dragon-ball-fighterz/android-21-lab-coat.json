@@ -1,32 +1,794 @@
 {
   "name": "Android 21 (Lab Coat)",
-  "character": "Android 21 (Lab Coat)",
+  "character": "android-21-lab-coat",
   "game": "Dragon Ball FighterZ",
   "movesList": [
     {
-      "name": "Savory Slasher",
-      "input": "236L/M/H",
-      "type": "Special"
+      "id": "29cd8880-00c9-47f0-9d39-3672d2ddbc0d",
+      "name": "2H",
+      "input": "2H",
+      "damage": "850 / 1000",
+      "frameData": {
+        "startup": "13",
+        "active": "5",
+        "recovery": "18+10L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-17 Head",
+      "type": "Normal Moves"
     },
     {
-      "name": "Vertigo Spin",
-      "input": "214L/M/H",
-      "type": "Special"
+      "id": "f783be9c-7b49-4c40-a4e9-d20be9a2b7f8",
+      "name": "2L",
+      "input": "2L",
+      "damage": "400",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "13",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
     },
     {
+      "id": "a423b784-c9b6-4dd5-aa08-c15598d45bc9",
+      "name": "2M",
+      "input": "2M",
+      "damage": "550\u00d72",
+      "frameData": {
+        "startup": "8",
+        "active": "6(14)4",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "750fe682-269c-4381-8a80-81238be1e08b",
+      "name": "5H",
+      "input": "5H",
+      "damage": "850 / 1000",
+      "frameData": {
+        "startup": "14",
+        "active": "5",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "c10a0be6-d44d-4a03-b300-1f3567a4cc01",
+      "name": "5L",
+      "input": "5L",
+      "damage": "400",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "13",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "afad97d7-4063-444b-98f3-c6dbe1659da2",
+      "name": "5LL",
+      "input": "5LL",
+      "damage": "700",
+      "frameData": {
+        "startup": "9 [21]",
+        "active": "6 [3]",
+        "recovery": "14",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "adc8b715-37f8-4b2a-a5d4-5e4f0755b170",
+      "name": "5LLL",
+      "input": "5LLL",
+      "damage": "600, 500",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "8bbd4c36-2a4d-4f96-8634-0b0ce477cf45",
+      "name": "5M",
+      "input": "5M",
+      "damage": "550\u00d72",
+      "frameData": {
+        "startup": "10",
+        "active": "4(8)4",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "5b4ae672-c436-4bf0-8211-4bbdca927310",
+      "name": "5S",
+      "input": "5S",
+      "damage": "300\u00d71~5",
+      "frameData": {
+        "startup": "13",
+        "active": "",
+        "recovery": "Total 37",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "cd750a6f-449c-4f85-a746-abdb9a893667",
+      "name": "6M",
+      "input": "6M",
+      "damage": "850",
+      "frameData": {
+        "startup": "24",
+        "active": "6",
+        "recovery": "4+6L",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "166c5fe2-eafc-43c3-b829-513069a055f4",
+      "name": "j.2H",
+      "input": "j.2H",
+      "damage": "850",
+      "frameData": {
+        "startup": "13",
+        "active": "5",
+        "recovery": "28",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "a6c40e1e-d9bf-4789-b8b2-10675b0878aa",
+      "name": "j.H",
+      "input": "j.H",
+      "damage": "850 / 1000",
+      "frameData": {
+        "startup": "11",
+        "active": "6",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "bb265390-c3f2-4556-b853-a99e18be4def",
+      "name": "j.L",
+      "input": "j.L",
+      "damage": "400",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "11",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "dc27b125-7f81-47dd-9c4d-4a4cfb5d0398",
+      "name": "j.M",
+      "input": "j.M",
+      "damage": "600\u00d72",
+      "frameData": {
+        "startup": "8",
+        "active": "2(6)4",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "bec0fd33-49fa-414f-a691-4adc5a347fb3",
+      "name": "j.S",
+      "input": "j.S",
+      "damage": "300\u00d71~4",
+      "frameData": {
+        "startup": "12",
+        "active": "",
+        "recovery": "Total 41+3L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "e7f1a9f3-9353-4eb9-9102-2c33046e9c8c",
+      "name": "Air Appetizing Rush",
+      "input": "j.214L+M",
+      "damage": "4221",
+      "frameData": {
+        "startup": "9+12 [9+0]",
+        "active": "6",
+        "recovery": "Until L+10",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-26 All",
+      "type": "Supers"
+    },
+    {
+      "id": "7e5e3bfb-6e6a-42ef-9c45-905710043d60",
+      "name": "Air Barrier Sphere",
+      "input": "j.22S",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Total 47",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "4-38 Non-throw [39-47 Non-throw]",
+      "type": "Special Moves"
+    },
+    {
+      "id": "30e252b4-9e7a-4221-b376-9baa451f8cfc",
+      "name": "Air Connoisseur Cut",
+      "input": "j.214S",
+      "damage": "1000",
+      "frameData": {
+        "startup": "13",
+        "active": "14",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "bf3fb4da-3fe4-42aa-be2d-bd6a1562c354",
+      "name": "Air Excellent Full Course",
+      "input": "j.214H+S",
+      "damage": "4121",
+      "frameData": {
+        "startup": "11+3 [11+0]",
+        "active": "12",
+        "recovery": "Until L+10",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-30 All",
+      "type": "Supers"
+    },
+    {
+      "id": "1285b9ea-dcb4-410d-b77c-ec9c2d2f145e",
+      "name": "Air H Savory Slicer",
+      "input": "j.236H",
+      "damage": "20\u00d76, 1581",
+      "frameData": {
+        "startup": "13",
+        "active": "2\u00d76,5",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-29 Ki Blasts",
+      "type": "Special Moves"
+    },
+    {
+      "id": "a077f6cf-e7ed-4778-9e09-c2c61c342b74",
+      "name": "Air H Vertical Savory Slicer",
+      "input": "j.214H",
+      "damage": "20\u00d710, 1019",
+      "frameData": {
+        "startup": "9",
+        "active": "2\u00d710(5)6",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-11 Head, 1-39 Ki Blasts",
+      "type": "Special Moves"
+    },
+    {
+      "id": "556f2a2a-f6c8-4085-8f70-a08106d644f2",
+      "name": "Air L Savory Slicer",
+      "input": "j.236L",
+      "damage": "20\u00d76, 912",
+      "frameData": {
+        "startup": "13",
+        "active": "2\u00d76,5",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-29 Ki Blasts",
+      "type": "Special Moves"
+    },
+    {
+      "id": "c68e4e28-4e6d-4546-8adc-c819d5a8ee52",
+      "name": "Air L Vertical Savory Slicer",
+      "input": "j.214L",
+      "damage": "20\u00d74, 847",
+      "frameData": {
+        "startup": "9",
+        "active": "2\u00d74(5)6",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-11 Head, 4-27 Ki Blasts",
+      "type": "Special Moves"
+    },
+    {
+      "id": "08f60d81-a7f9-4ba7-8587-5bddb9e680fe",
+      "name": "Air M Savory Slicer",
+      "input": "j.236M",
+      "damage": "20\u00d76, 1030",
+      "frameData": {
+        "startup": "17",
+        "active": "2\u00d76,5",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-33 Ki Blasts",
+      "type": "Special Moves"
+    },
+    {
+      "id": "fe0df5b1-6da1-45ee-a7dc-0e0f1af93091",
+      "name": "Air M Vertical Savory Slicer",
+      "input": "j.214M",
+      "damage": "20\u00d77, 892",
+      "frameData": {
+        "startup": "14",
+        "active": "2\u00d77(5)6",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-16 Head, 4-38 Ki Blasts",
+      "type": "Special Moves"
+    },
+    {
+      "id": "abce5b92-83e1-4c4f-9f94-3596b78b9044",
+      "name": "Air Photon Swipe",
+      "input": "j.236S",
+      "damage": "262\u00d75",
+      "frameData": {
+        "startup": "17",
+        "active": "25",
+        "recovery": "30",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "2813b4ed-fe8f-4a6e-a03a-cf2266c604dc",
+      "name": "Air Total Detonation Ball",
+      "input": "j.236L+M",
+      "damage": "2121",
+      "frameData": {
+        "startup": "9+4",
+        "active": "",
+        "recovery": "Total 68",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-21 All",
+      "type": "Supers"
+    },
+    {
+      "id": "b93afee3-b617-4e88-bef7-595e4d8c2acc",
+      "name": "Appetizing Rush",
+      "input": "214L+M",
+      "damage": "4221",
+      "frameData": {
+        "startup": "9+12 [9+0]",
+        "active": "6",
+        "recovery": "Until L+10",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-26 All",
+      "type": "Supers"
+    },
+    {
+      "id": "d6632556-f5b2-476c-9b24-5088beeb3932",
+      "name": "Barrier Sphere",
+      "input": "22S",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Total 48",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "4-39 Non-throw [40-48 Non-throw]",
+      "type": "Special Moves"
+    },
+    {
+      "id": "22107eb7-37cf-400d-9dae-19390b38ebbd",
+      "name": "Barrier Sphere",
+      "input": "Assist B",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Total 85",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "9-11 All, 12-46 Non-Super, 47 Non-Super",
+      "type": "Assists"
+    },
+    {
+      "id": "dc42efeb-3571-4c37-b38f-d9b42af48ed4",
       "name": "Connoisseur Cut",
+      "input": "214S",
+      "damage": "1000",
+      "frameData": {
+        "startup": "24~30",
+        "active": "4",
+        "recovery": "24",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "35cbabb5-90d1-49a5-b93c-54083054681e",
+      "name": "Delectable Strike",
+      "input": "6H",
+      "damage": "850",
+      "frameData": {
+        "startup": "27",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "21838211-07c9-47a6-a3ed-bbc041cf37e2",
+      "name": "Excellent Full Course",
+      "input": "214H+S",
+      "damage": "4121",
+      "frameData": {
+        "startup": "11+3 [11+0]",
+        "active": "12",
+        "recovery": "31+10L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-30 All",
+      "type": "Supers"
+    },
+    {
+      "id": "c0a122cb-a936-416f-a4f3-5a895d7fa964",
+      "name": "Granita Edge",
+      "input": "3H",
+      "damage": "750",
+      "frameData": {
+        "startup": "18",
+        "active": "10",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "a99749fd-2e5d-46d3-a6a4-5619567a6ff3",
+      "name": "H Mignardise Heel",
+      "input": "22H",
+      "damage": "800",
+      "frameData": {
+        "startup": "11",
+        "active": "5",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "b2cae48e-047f-4d1a-9af7-be8dd9ca4a8e",
+      "name": "H Savory Slicer",
+      "input": "236H",
+      "damage": "20\u00d76, 1581",
+      "frameData": {
+        "startup": "13",
+        "active": "2\u00d76,5",
+        "recovery": "12+4L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-29 Ki Blasts",
+      "type": "Special Moves"
+    },
+    {
+      "id": "06741490-f7e2-49da-88d8-6398ebe85a34",
+      "name": "H Vertical Savory Slicer",
+      "input": "214H",
+      "damage": "20\u00d710, 1019",
+      "frameData": {
+        "startup": "9",
+        "active": "2\u00d710(5)6",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-11 Head, 1-39 Ki Blasts",
+      "type": "Special Moves"
+    },
+    {
+      "id": "8a776a68-ce82-446d-a591-9d2f0d34ba5b",
+      "name": "L Mignardise Heel",
+      "input": "22L",
+      "damage": "600",
+      "frameData": {
+        "startup": "11",
+        "active": "5",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "a92c3e7e-615a-4728-aed8-1b51142afa6e",
+      "name": "L Savory Slicer",
+      "input": "236L",
+      "damage": "20\u00d76, 912",
+      "frameData": {
+        "startup": "13",
+        "active": "2\u00d76,5",
+        "recovery": "12+4L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-29 Ki Blasts",
+      "type": "Special Moves"
+    },
+    {
+      "id": "9df8ecb3-56e7-4554-9ccf-e05b3555e845",
+      "name": "L Vertical Savory Slicer",
+      "input": "214L",
+      "damage": "20\u00d74, 847",
+      "frameData": {
+        "startup": "9",
+        "active": "2\u00d74(5)6",
+        "recovery": "12+6L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-11 Head, 4-27 Ki Blasts",
+      "type": "Special Moves"
+    },
+    {
+      "id": "dc155934-d1ed-4520-a2ac-47e9755043a5",
+      "name": "M Mignardise Heel",
+      "input": "22M",
+      "damage": "700",
+      "frameData": {
+        "startup": "18",
+        "active": "5",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "5e083bc2-e1db-41ed-9c68-aa2b2d04b3ef",
+      "name": "M Savory Slicer",
+      "input": "236M",
+      "damage": "20\u00d76, 1030",
+      "frameData": {
+        "startup": "17",
+        "active": "2\u00d76,5",
+        "recovery": "12+4L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-33 Ki Blasts",
+      "type": "Special Moves"
+    },
+    {
+      "id": "d32135c9-f250-4cb1-8b9b-b8b0077c706c",
+      "name": "M Vertical Savory Slicer",
+      "input": "214M",
+      "damage": "20\u00d77, 892",
+      "frameData": {
+        "startup": "14",
+        "active": "2\u00d77(5)6",
+        "recovery": "16+6L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-16 Head, 4-38 Ki Blasts",
+      "type": "Special Moves"
+    },
+    {
+      "id": "4a004ef8-f0fb-41d0-9f12-c63a96f48f20",
+      "name": "Photon Pulse",
+      "input": "236H+S",
+      "damage": "2021",
+      "frameData": {
+        "startup": "21",
+        "active": "7",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "20-27 All",
+      "type": "Supers"
+    },
+    {
+      "id": "7d15bca5-2564-4578-a699-7e8bc90d4850",
+      "name": "Photon Swipe",
       "input": "236S",
-      "type": "Command Grab"
+      "damage": "262\u00d75",
+      "frameData": {
+        "startup": "17",
+        "active": "25",
+        "recovery": "29",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
     },
     {
-      "name": "Photon Wave",
-      "input": "236LM/HS",
-      "type": "Level 1"
+      "id": "2af22f21-6a74-4afb-9f30-47e447df7706",
+      "name": "Photon Swipe",
+      "input": "Assist C",
+      "damage": "200\u00d75, 400",
+      "frameData": {
+        "startup": "34 [20]",
+        "active": "25",
+        "recovery": "50",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "[1-94 All]",
+      "type": "Assists"
     },
     {
+      "id": "f2183d41-abde-46ea-a758-ae33b406ddff",
+      "name": "Savory Slicer",
+      "input": "Assist A",
+      "damage": "30\u00d76, 852",
+      "frameData": {
+        "startup": "20",
+        "active": "1,2x5,5",
+        "recovery": "45",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-35 Ki Blasts",
+      "type": "Assists"
+    },
+    {
+      "id": "f997707f-2065-464c-9be5-424598db8531",
       "name": "Total Detonation Ball",
-      "input": "214LM/HS",
-      "type": "Level 3"
+      "input": "236L+M",
+      "damage": "2121",
+      "frameData": {
+        "startup": "9+4",
+        "active": "",
+        "recovery": "Total 69+7L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-21 All",
+      "type": "Supers"
+    },
+    {
+      "id": "4aaf4d93-eef3-4ac0-8eb8-db96a6890ff0",
+      "name": "Total Evasion",
+      "input": "j.236H+S",
+      "damage": "2121",
+      "frameData": {
+        "startup": "19+4 [9+1]",
+        "active": "",
+        "recovery": "Total 78",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-31 All",
+      "type": "Supers"
+    }
+  ],
+  "combosList": [
+    {
+      "id": "chall_1",
+      "name": "Combo Challenge 1",
+      "input": "5L 5L 5L"
+    },
+    {
+      "id": "chall_2",
+      "name": "Combo Challenge 2",
+      "input": "5M 5M 5M"
+    },
+    {
+      "id": "chall_3",
+      "name": "Combo Challenge 3",
+      "input": "2M 5M j.L j.M"
+    },
+    {
+      "id": "chall_4",
+      "name": "Combo Challenge 4",
+      "input": "5L 5L 5M 5H"
+    },
+    {
+      "id": "chall_5",
+      "name": "Combo Challenge 5",
+      "input": "2M 5M j.L j.M j.2H SD j.L j.M"
+    },
+    {
+      "id": "chall_6",
+      "name": "Combo Challenge 6",
+      "input": "5L 5M 2H SD j.L j.M j.H"
+    },
+    {
+      "id": "chall_7",
+      "name": "Combo Challenge 7",
+      "input": "2M 5M j.L j.M j.2H SD j.L j.M j.2H 236L"
+    },
+    {
+      "id": "chall_8",
+      "name": "Combo Challenge 8",
+      "input": "5L 5L 2M 5M j.L j.M j.2H SD j.L j.M j.H 236S"
+    },
+    {
+      "id": "chall_9",
+      "name": "Combo Challenge 9",
+      "input": "2M 5M j.M j.2H SD j.M j.H A1 5L 5M 2H"
+    },
+    {
+      "id": "chall_10",
+      "name": "Combo Challenge 10",
+      "input": "2M 5M j.M j.2H SD j.L j.M j.2H j.L j.M j.H 236L+M"
     }
   ]
 }

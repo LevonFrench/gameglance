@@ -48,9 +48,13 @@ export const getGlyphLabel = (input: string, controller: ControllerType, notatio
   const normInput = input.replace(/[\][]]/g, '').toUpperCase();
   const lowerInput = input.replace(/[\][]]/g, '').toLowerCase();
 
-  // If numpad notation is explicitly requested and we are mapping digits, don't map to face buttons unless playing tekken/mk
   if (notationSystem === 'numpad' && /^[12346789]$/.test(normInput) && !['tekken', 'mk'].includes(controller)) {
-    return normInput;
+    const numpadMap: Record<string, string> = {
+      '1': '↙', '2': '↓', '3': '↘',
+      '4': '←', '6': '→',
+      '7': '↖', '8': '↑', '9': '↗'
+    };
+    return numpadMap[normInput] || normInput;
   }
 
   if (GLYPH_LABEL_MAP[normInput]) return GLYPH_LABEL_MAP[normInput][controller];
@@ -160,10 +164,26 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
     'TAG': '#ef4444', 'EN': '#ef4444' // Red
   };
 
-  if (['P', 'K', 'PP', 'KK', 'PPP', 'KKK', 'ALL'].includes(normInput)) {
+  const animeColors: Record<string, string> = {
+    // DBFZ
+    'L': '#3b82f6', // Blue
+    'M': '#eab308', // Yellow
+    'H': '#ef4444', // Red
+    'S': '#22c55e', // Green
+    'A1': '#9ca3af', // Grey
+    'A2': '#9ca3af',
+    // GGST
+    'P': '#ec4899', // Pink
+    'K': '#3b82f6', // Blue
+    'D': '#f97316', // Orange
+  };
+
+  if (['P', 'K', 'PP', 'KK', 'PPP', 'KKK', 'ALL'].includes(normInput) && !animeColors[normInput]) {
     if (controller === 'playstation' || controller === 'wii') return '#ffffff';
     return '#1f2937';
   }
+
+  if (animeColors[normInput]) return animeColors[normInput];
 
   if (controller === 'playstation') return psColors[normInput] || '#ffffff';
   if (controller === 'xbox') return xboxColors[normInput] || '#1f2937';

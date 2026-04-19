@@ -4,7 +4,7 @@
   <p><strong>A highly-stylized, second-screen fighting game companion app.</strong></p>
 </div>
 
-Browse move lists, build practice playlists, and drill combos for iconic fighting games across fighting game history—from *Street Fighter 6* and *Tekken 8* to *Marvel vs. Capcom 2*, *Darkstalkers*, and *Tatsunoko vs. Capcom*. 
+Browse move lists, build practice playlists, and drill combos for iconic fighting games across fighting game history—from *Street Fighter 6*, *Guilty Gear -Strive-*, and *Dragon Ball FighterZ* to *Marvel vs. Capcom 2*, *Darkstalkers*, and *Tatsunoko vs. Capcom*. 
 
 GameGlance is designed with a heavy focus on **hardware authenticity**, featuring themes, styling, and controller glyphs matching classic arcade cabinets and home consoles.
 

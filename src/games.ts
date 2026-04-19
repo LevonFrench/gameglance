@@ -1,6 +1,17 @@
 import type { GameDefinition } from './types';
 
 export const SUPPORTED_GAMES: ReadonlyArray<Readonly<GameDefinition>> = [
+  {
+    id: 'dragon-ball-fighterz',
+    name: 'Dragon Ball FighterZ',
+    developer: 'Arc System Works',
+    releaseYear: 2018,
+    platform: 'PS4, Xbox One, PC, Switch, PS5, Xbox Series X/S',
+    tagline: '3v3 Tag Team Action',
+    notationSystem: 'numpad',
+    tabs: ['Normal Moves', 'Special Moves', 'Supers', 'Assists', 'System', 'Combos'],
+    characters: []
+  },
 
   {
 
@@ -1518,7 +1529,18 @@ rosterCount: 24,
 
 rosterCount: 16,
 
-        characters: [],
+        characters: [
+      { id: 'aba', name: 'A.B.A', moveCount: 0 },
+      { id: 'anji-mito', name: 'Anji Mito', moveCount: 0 },
+      { id: 'asuka-r', name: 'Asuka R', moveCount: 0 },
+      { id: 'axl-low', name: 'Axl Low', moveCount: 0 },
+      { id: 'baiken', name: 'Baiken', moveCount: 0 },
+      { id: 'bedman', name: 'Bedman', moveCount: 0 },
+      { id: 'bridget', name: 'Bridget', moveCount: 0 },
+      { id: 'chipp-zanuff', name: 'Chipp Zanuff', moveCount: 0 },
+      { id: 'elphelt-valentine', name: 'Elphelt Valentine', moveCount: 0 },
+      { id: 'faust', name: 'Faust', moveCount: 0 },
+    ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
@@ -1587,7 +1609,41 @@ rosterCount: 23,
 
 rosterCount: 25,
 
-        characters: [],
+        characters: [
+      { id: 'aba', name: 'A.B.A', moveCount: 0 },
+      { id: 'anji-mito', name: 'Anji Mito', moveCount: 0 },
+      { id: 'asuka-r', name: 'Asuka R', moveCount: 0 },
+      { id: 'axl-low', name: 'Axl Low', moveCount: 0 },
+      { id: 'baiken', name: 'Baiken', moveCount: 0 },
+      { id: 'bedman', name: 'Bedman', moveCount: 0 },
+      { id: 'bridget', name: 'Bridget', moveCount: 0 },
+      { id: 'chipp-zanuff', name: 'Chipp Zanuff', moveCount: 0 },
+      { id: 'elphelt-valentine', name: 'Elphelt Valentine', moveCount: 0 },
+      { id: 'faust', name: 'Faust', moveCount: 0 },
+      { id: 'giovanna', name: 'Giovanna', moveCount: 0 },
+      { id: 'goldlewis-dickinson', name: 'Goldlewis Dickinson', moveCount: 0 },
+      { id: 'happy-chaos', name: 'Happy Chaos', moveCount: 0 },
+      { id: 'i-no', name: 'I-No', moveCount: 0 },
+      { id: 'jack-o', name: 'Jack-O', moveCount: 0 },
+      { id: 'jam-kuradoberi', name: 'Jam Kuradoberi', moveCount: 0 },
+      { id: 'johnny', name: 'Johnny', moveCount: 0 },
+      { id: 'ky-kiske', name: 'Ky Kiske', moveCount: 0 },
+      { id: 'leo-whitefang', name: 'Leo Whitefang', moveCount: 0 },
+      { id: 'lucy', name: 'Lucy', moveCount: 0 },
+      { id: 'may', name: 'May', moveCount: 0 },
+      { id: 'millia-rage', name: 'Millia Rage', moveCount: 0 },
+      { id: 'nagoriyuki', name: 'Nagoriyuki', moveCount: 0 },
+      { id: 'potemkin', name: 'Potemkin', moveCount: 0 },
+      { id: 'queen-dizzy', name: 'Queen Dizzy', moveCount: 0 },
+      { id: 'ramlethal-valentine', name: 'Ramlethal Valentine', moveCount: 0 },
+      { id: 'sin-kiske', name: 'Sin Kiske', moveCount: 0 },
+      { id: 'slayer', name: 'Slayer', moveCount: 0 },
+      { id: 'sol-badguy', name: 'Sol Badguy', moveCount: 0 },
+      { id: 'testament', name: 'Testament', moveCount: 0 },
+      { id: 'unika', name: 'Unika', moveCount: 0 },
+      { id: 'venom', name: 'Venom', moveCount: 0 },
+      { id: 'zato-1', name: 'Zato-1', moveCount: 0 },
+    ],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
@@ -3137,7 +3193,33 @@ rosterCount: 25,
 
             tags: ['3D', 'Modern'],
 
-    characters: [],
+    characters: [
+      { id: 'aki', name: 'A.K.I.', moveCount: 0 },
+      { id: 'akuma', name: 'Akuma', moveCount: 0 },
+      { id: 'blanka', name: 'Blanka', moveCount: 0 },
+      { id: 'cammy', name: 'Cammy', moveCount: 0 },
+      { id: 'chun-li', name: 'Chun-Li', moveCount: 0 },
+      { id: 'dee-jay', name: 'Dee Jay', moveCount: 0 },
+      { id: 'dhalsim', name: 'Dhalsim', moveCount: 0 },
+      { id: 'e-honda', name: 'E. Honda', moveCount: 0 },
+      { id: 'ed', name: 'Ed', moveCount: 0 },
+      { id: 'guile', name: 'Guile', moveCount: 0 },
+      { id: 'jamie', name: 'Jamie', moveCount: 0 },
+      { id: 'jp', name: 'JP', moveCount: 0 },
+      { id: 'juri', name: 'Juri', moveCount: 0 },
+      { id: 'ken', name: 'Ken', moveCount: 0 },
+      { id: 'kimberly', name: 'Kimberly', moveCount: 0 },
+      { id: 'lily', name: 'Lily', moveCount: 0 },
+      { id: 'luke', name: 'Luke', moveCount: 0 },
+      { id: 'manon', name: 'Manon', moveCount: 0 },
+      { id: 'marisa', name: 'Marisa', moveCount: 0 },
+      { id: 'rashid', name: 'Rashid', moveCount: 0 },
+      { id: 'ryu', name: 'Ryu', moveCount: 0 },
+      { id: 'zangief', name: 'Zangief', moveCount: 0 },
+      { id: 'm-bison', name: 'M. Bison', moveCount: 0 },
+      { id: 'mai', name: 'Mai', moveCount: 0 },
+      { id: 'terry', name: 'Terry', moveCount: 0 },
+    ],
 
     
 

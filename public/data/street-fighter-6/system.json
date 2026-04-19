@@ -1,12 +1,36 @@
 {
   "gameId": "street-fighter-6",
   "buttons": [
-    { "id": "LP", "name": "Light Punch", "description": "Fastest and weakest punch." },
-    { "id": "MP", "name": "Medium Punch", "description": "Standard punch." },
-    { "id": "HP", "name": "Heavy Punch", "description": "Slowest but strongest punch." },
-    { "id": "LK", "name": "Light Kick", "description": "Fastest and weakest kick." },
-    { "id": "MK", "name": "Medium Kick", "description": "Standard kick." },
-    { "id": "HK", "name": "Heavy Kick", "description": "Slowest but strongest kick." }
+    {
+      "id": "LP",
+      "name": "Light Punch",
+      "description": "Fastest and weakest punch."
+    },
+    {
+      "id": "MP",
+      "name": "Medium Punch",
+      "description": "Standard punch."
+    },
+    {
+      "id": "HP",
+      "name": "Heavy Punch",
+      "description": "Slowest but strongest punch."
+    },
+    {
+      "id": "LK",
+      "name": "Light Kick",
+      "description": "Fastest and weakest kick."
+    },
+    {
+      "id": "MK",
+      "name": "Medium Kick",
+      "description": "Standard kick."
+    },
+    {
+      "id": "HK",
+      "name": "Heavy Kick",
+      "description": "Slowest but strongest kick."
+    }
   ],
   "mechanics": [
     {
@@ -52,6 +76,28 @@
     {
       "question": "What is the difference between Modern and Classic controls?",
       "answer": "Modern controls simplify special move inputs to a single button and direction, but deal 20% less damage on those simplified specials and lock you out of some normal attacks. Classic requires traditional motion inputs but gives full access to the character's kit at 100% damage."
+    }
+  ],
+  "combosList": [
+    {
+      "id": "trial_b1",
+      "name": "Beginner 1",
+      "input": "LP LP LP"
+    },
+    {
+      "id": "trial_b2",
+      "name": "Beginner 2",
+      "input": "MK 236P"
+    },
+    {
+      "id": "trial_i1",
+      "name": "Intermediate 1",
+      "input": "HP 236PP"
+    },
+    {
+      "id": "trial_a1",
+      "name": "Advanced 1",
+      "input": "HP 214K 2LP 236236P"
     }
   ]
 }

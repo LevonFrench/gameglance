@@ -630,14 +630,15 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
 
               return (
                 <section key={tab} id={`section-${tab.replace(/\s+/g, '-').toLowerCase()}`}>
-                  {/* <h2> Category Title Removed as it was redundant */}
+                  <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--text-primary)', marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid var(--border-subtle)'}}>{tab}</h2>
                   <div style={{ 
                     display: 'grid', 
                     gridTemplateColumns: 'repeat(auto-fill, minmax(380px, 1fr))', 
                     gap: '1rem' 
                   }}>
                     {displayList.map((move, idx) => {
-              const isSelected = selectedPlaylist.some(m => m.id === move.id);
+              if (!move) return null;
+              const isSelected = selectedPlaylist && selectedPlaylist.some(m => m && m.id === move.id);
 
               return (
                 <div

@@ -1,27 +1,599 @@
 {
   "name": "Kefla",
-  "character": "Kefla",
+  "character": "kefla",
   "game": "Dragon Ball FighterZ",
   "movesList": [
     {
-      "name": "Gigantic Ray",
-      "input": "236L/M/H",
-      "type": "Projectile"
+      "id": "d3a4a140-d858-499a-81fa-b0c826b348f2",
+      "name": "2H",
+      "input": "2H",
+      "damage": "850 / 1000",
+      "frameData": {
+        "startup": "13",
+        "active": "5",
+        "recovery": "20+8L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-17 Head",
+      "type": "Normal Moves"
     },
     {
+      "id": "3889ed88-8ee6-480d-a176-3192520ff788",
+      "name": "2L",
+      "input": "2L",
+      "damage": "400",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "13",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "51724e8a-c52b-4811-9ca2-96739ba3a6eb",
+      "name": "2M",
+      "input": "2M",
+      "damage": "700",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "0ccffc52-330a-4ee0-9a2c-69521018f791",
+      "name": "5H",
+      "input": "5H",
+      "damage": "850 / 1000",
+      "frameData": {
+        "startup": "14",
+        "active": "5",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "c9d56dfc-7fc8-4efc-b6f8-bc14c5a06349",
+      "name": "5L",
+      "input": "5L",
+      "damage": "400",
+      "frameData": {
+        "startup": "6",
+        "active": "4",
+        "recovery": "11",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "b0a5cc5b-e7a1-4a29-885f-d38e534fdce5",
+      "name": "5LL",
+      "input": "5LL",
+      "damage": "180\u00d74",
+      "frameData": {
+        "startup": "11",
+        "active": "3(2)3(2)3(2)5",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "0d413e2d-6287-47ec-8af3-83aec7301432",
+      "name": "5LLL",
+      "input": "5LLL",
+      "damage": "1000",
+      "frameData": {
+        "startup": "13",
+        "active": "8",
+        "recovery": "12+7L [12+5L]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-14 Head",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "971c1fe1-c48f-4dd9-99c3-17494db60765",
+      "name": "5M",
+      "input": "5M",
+      "damage": "180\u00d74",
+      "frameData": {
+        "startup": "10",
+        "active": "3(3)3(3)2(8)5",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "c9af9d95-b7b6-46a0-b59e-8479a6629391",
+      "name": "5S",
+      "input": "5S",
+      "damage": "300\u00d76",
+      "frameData": {
+        "startup": "11",
+        "active": "P{(9)P}\u00d75",
+        "recovery": "Total 36, 93",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "4a6c221d-e7a9-4272-96c3-9b84cce88326",
+      "name": "6M",
+      "input": "6M",
+      "damage": "850",
+      "frameData": {
+        "startup": "24",
+        "active": "6",
+        "recovery": "4+6L",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "6b4bd300-80ec-4b57-8166-bfccbb3c0969",
+      "name": "j.2H",
+      "input": "j.2H",
+      "damage": "850",
+      "frameData": {
+        "startup": "13",
+        "active": "6",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "e470c511-34e4-44ef-b94b-2fcb143c4325",
+      "name": "j.H",
+      "input": "j.H",
+      "damage": "850 / 1000",
+      "frameData": {
+        "startup": "11",
+        "active": "5",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "8c59b215-c646-4c9c-8c09-8e81e475c741",
+      "name": "j.L",
+      "input": "j.L",
+      "damage": "400",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "d9df5ec9-a7a9-4b5b-b74b-82e21016e86c",
+      "name": "j.M",
+      "input": "j.M",
+      "damage": "500\u00d72",
+      "frameData": {
+        "startup": "7",
+        "active": "4(5)4",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "5846796e-a74f-447c-827d-60ab991332be",
+      "name": "j.S",
+      "input": "j.S",
+      "damage": "400\u00d74",
+      "frameData": {
+        "startup": "11",
+        "active": "P{(9)P}\u00d73",
+        "recovery": "Total 37+5L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "963d413c-23e2-4cef-ac08-18f44477896c",
+      "name": "Air Gigantic Breaker",
+      "input": "j.236S",
+      "damage": "30\u00d74, 150, 1100",
+      "frameData": {
+        "startup": "14",
+        "active": "16(12)8(3)P",
+        "recovery": "31+5L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-53 Projectile",
+      "type": "Special Moves"
+    },
+    {
+      "id": "5b711b53-4a71-418d-9d96-80ef83190a08",
+      "name": "Air Gigantic Breaker (Charged)",
+      "input": "j.236[S]",
+      "damage": "30\u00d75~12, 1300",
+      "frameData": {
+        "startup": "14",
+        "active": "17~53(13)P",
+        "recovery": "31+5L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-(44~81) Projectile",
+      "type": "Special Moves"
+    },
+    {
+      "id": "d32ed5e1-5e20-4dfa-a5bf-d0003e089720",
+      "name": "Air Time to test this power out!",
+      "input": "j.214S",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Until L+24",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "4-Until L",
+      "type": "Special Moves"
+    },
+    {
+      "id": "265ae768-a123-4415-891f-87e35c1ec4d4",
+      "name": "Air Ultra Cannonball",
+      "input": "j.236L+M",
+      "damage": "450\u00d76",
+      "frameData": {
+        "startup": "11-18+4",
+        "active": "P(4)P(4)P(14)P(4)P(4)P",
+        "recovery": "Total 87-94",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-(22~29) All",
+      "type": "Supers"
+    },
+    {
+      "id": "1f08b14c-1e1f-4890-9d2d-84370b158ed7",
+      "name": "Double Hammer",
+      "input": "6H",
+      "damage": "850",
+      "frameData": {
+        "startup": "25",
+        "active": "3",
+        "recovery": "24",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "81884ca8-5940-4b50-b6bd-b403654d9282",
       "name": "Gigantic Breaker",
-      "input": "214L/M/H",
-      "type": "Rush"
+      "input": "236S",
+      "damage": "30\u00d74, 150, 1100",
+      "frameData": {
+        "startup": "14",
+        "active": "16(12)8(2)P",
+        "recovery": "22+6L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-52 Projectile",
+      "type": "Special Moves"
     },
     {
+      "id": "31f59ca9-80f6-4513-97eb-cf1469a0089c",
+      "name": "Gigantic Breaker",
+      "input": "Assist C",
+      "damage": "30\u00d74, 800, 400",
+      "frameData": {
+        "startup": "30 [20]",
+        "active": "13(13)P",
+        "recovery": "22+23L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Assists"
+    },
+    {
+      "id": "a3aee62e-2b8d-4b7b-a275-da1588f156e2",
+      "name": "Gigantic Breaker (Charged)",
+      "input": "236[S]",
+      "damage": "30\u00d75~12, 1300",
+      "frameData": {
+        "startup": "14",
+        "active": "17~53(13)P",
+        "recovery": "22+6L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-(44~81) Projectile",
+      "type": "Special Moves"
+    },
+    {
+      "id": "674dc05e-71d4-4db9-90d7-168dc512464d",
       "name": "Gigantic Burst",
-      "input": "236LM/HS",
-      "type": "Level 1"
+      "input": "214L+M",
+      "damage": "3952",
+      "frameData": {
+        "startup": "21+3 [12+3]",
+        "active": "",
+        "recovery": "",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-46 All",
+      "type": "Supers"
     },
     {
+      "id": "7775c7bf-eb62-408e-b827-4ffa7cfa6191",
       "name": "Gigantic Chaser",
-      "input": "214LM/HS",
-      "type": "Level 3"
+      "input": "j.236H+S",
+      "damage": "2085",
+      "frameData": {
+        "startup": "11+4",
+        "active": "P\u00d710",
+        "recovery": "Until L+60",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Supers"
+    },
+    {
+      "id": "570550db-bc7e-4159-bc6e-4603446767c5",
+      "name": "Gigantic Ray",
+      "input": "236H+S",
+      "damage": "280\u00d79, 500",
+      "frameData": {
+        "startup": "11+12",
+        "active": "P(4)P(4)P(4)P(4)P(4)P(4)P(9)P\u00d72(7)P",
+        "recovery": "Total 58",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-15 All",
+      "type": "Supers"
+    },
+    {
+      "id": "a511ef33-81ca-40f4-9e8c-9111063acc20",
+      "name": "H Ain't nobody that can stop me!",
+      "input": "214H",
+      "damage": "1300",
+      "frameData": {
+        "startup": "15",
+        "active": "4",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "1-18 Ki Blast",
+      "type": "Special Moves"
+    },
+    {
+      "id": "7210a02a-fda2-49fd-8a89-56d54a7ec460",
+      "name": "H Super Cannonball",
+      "input": "236H",
+      "damage": "900\u00d72",
+      "frameData": {
+        "startup": "28",
+        "active": "P(16)P",
+        "recovery": "Total 65",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-55 Projectile",
+      "type": "Special Moves"
+    },
+    {
+      "id": "4e51ecc1-381d-4562-ab8b-237b90d26f37",
+      "name": "L Ain't nobody that can stop me!",
+      "input": "214L",
+      "damage": "1000",
+      "frameData": {
+        "startup": "14",
+        "active": "4",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "4-17 Ki Blast",
+      "type": "Special Moves"
+    },
+    {
+      "id": "c5c365b7-f481-4aa5-8f3e-1da8f025a559",
+      "name": "L Super Cannonball",
+      "input": "236L",
+      "damage": "900",
+      "frameData": {
+        "startup": "18",
+        "active": "P",
+        "recovery": "Total 59",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "68707332-3821-43ee-b1e8-b066112426d9",
+      "name": "M Ain't nobody that can stop me!",
+      "input": "214M",
+      "damage": "1100",
+      "frameData": {
+        "startup": "18",
+        "active": "4",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "4-21 Ki Blast",
+      "type": "Special Moves"
+    },
+    {
+      "id": "df3c4da6-3a98-48d5-a059-c8c25da01b4a",
+      "name": "M Super Cannonball",
+      "input": "236M",
+      "damage": "900",
+      "frameData": {
+        "startup": "16",
+        "active": "",
+        "recovery": "Total 50",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "7e447941-d7dc-41b6-a6e3-e7386f22e1d9",
+      "name": "Mighty Kick",
+      "input": "Assist B",
+      "damage": "250\u00d74",
+      "frameData": {
+        "startup": "30",
+        "active": "3(2)3(2)3(2)5",
+        "recovery": "28",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Assists"
+    },
+    {
+      "id": "a40ee65d-453e-4608-b3b5-41a69aed2ae8",
+      "name": "Super Cannonball",
+      "input": "Assist A",
+      "damage": "800",
+      "frameData": {
+        "startup": "25",
+        "active": "P",
+        "recovery": "Total 80",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Assists"
+    },
+    {
+      "id": "cb52091a-ae80-4c13-ae63-3e03615e078c",
+      "name": "Time to test this power out!",
+      "input": "214S",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Total 37",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "4-12 All",
+      "type": "Special Moves"
+    },
+    {
+      "id": "aefd76ab-b05a-4cd5-846c-bd93330a167e",
+      "name": "Ultra Cannonball",
+      "input": "236L+M",
+      "damage": "450\u00d76",
+      "frameData": {
+        "startup": "9+4",
+        "active": "P(4)P(4)P(14)P(4)P(4)P",
+        "recovery": "Total 81",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-20 All",
+      "type": "Supers"
+    }
+  ],
+  "combosList": [
+    {
+      "id": "chall_1",
+      "name": "Combo Challenge 1",
+      "input": "5L 5L 5L"
+    },
+    {
+      "id": "chall_2",
+      "name": "Combo Challenge 2",
+      "input": "5M 5M 5M"
+    },
+    {
+      "id": "chall_3",
+      "name": "Combo Challenge 3",
+      "input": "2M 5M j.L j.M"
+    },
+    {
+      "id": "chall_4",
+      "name": "Combo Challenge 4",
+      "input": "5L 5L 5M 5H"
+    },
+    {
+      "id": "chall_5",
+      "name": "Combo Challenge 5",
+      "input": "2M 5M j.L j.M j.2H SD j.L j.M"
+    },
+    {
+      "id": "chall_6",
+      "name": "Combo Challenge 6",
+      "input": "5L 5M 2H SD j.L j.M j.H"
+    },
+    {
+      "id": "chall_7",
+      "name": "Combo Challenge 7",
+      "input": "2M 5M j.L j.M j.2H SD j.L j.M j.2H 236L"
+    },
+    {
+      "id": "chall_8",
+      "name": "Combo Challenge 8",
+      "input": "5L 5L 2M 5M j.L j.M j.2H SD j.L j.M j.H 236S"
+    },
+    {
+      "id": "chall_9",
+      "name": "Combo Challenge 9",
+      "input": "2M 5M j.M j.2H SD j.M j.H A1 5L 5M 2H"
+    },
+    {
+      "id": "chall_10",
+      "name": "Combo Challenge 10",
+      "input": "2M 5M j.M j.2H SD j.L j.M j.2H j.L j.M j.H 236L+M"
     }
   ]
 }

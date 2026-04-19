@@ -98,7 +98,7 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
         }
 
         if (match[3]) {
-          const buttonMatches = match[3].match(/(LP|MP|HP|LK|MK|HK|PP|KK|PPP|KKK|P|K)/g);
+          const buttonMatches = match[3].match(/(LP|MP|HP|LK|MK|HK|PP|KK|PPP|KKK|P|K|S|H|D|L|M|A1|A2)/g);
           if (buttonMatches && buttonMatches.join('') === match[3]) {
             result.push(...buttonMatches);
           } else {
@@ -108,7 +108,7 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
       } else {
         // No numbers, just text like LPLK
         if (prefix) result.push(prefix);
-        const buttonMatches = cleanT.match(/(LP|MP|HP|LK|MK|HK|PP|KK|PPP|KKK|P|K)/g);
+        const buttonMatches = cleanT.match(/(LP|MP|HP|LK|MK|HK|PP|KK|PPP|KKK|P|K|S|H|D|L|M|A1|A2)/g);
         if (buttonMatches && buttonMatches.join('') === cleanT) {
           result.push(...buttonMatches);
         } else {
@@ -188,11 +188,10 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
         <span
           key={idx}
           style={{
-            color: 'var(--text-muted)',
+            color: '#ffffff',
             fontWeight: 700,
             fontSize: large ? '1.2rem' : '0.8rem',
             margin: `0 ${large ? '2px' : '1px'}`,
-            opacity: 0.6,
             ...styleOverrides
           }}
         >

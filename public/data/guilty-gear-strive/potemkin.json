@@ -1,57 +1,644 @@
 {
   "name": "Potemkin",
-  "character": "Potemkin",
+  "character": "potemkin",
   "game": "Guilty Gear -Strive-",
   "movesList": [
     {
+      "id": "0014d166-20cc-436c-a22f-4925c38690f6",
+      "name": "2H",
+      "input": "2H",
+      "damage": "62",
+      "frameData": {
+        "startup": "13",
+        "active": "5",
+        "recovery": "35",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "db2868ce-7fbe-4cdf-97c3-30aa3e87e33d",
+      "name": "2K",
+      "input": "2K",
+      "damage": "30",
+      "frameData": {
+        "startup": "7",
+        "active": "4",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "bb6a1f9a-ab84-40d1-b16d-58e13e1e390c",
+      "name": "2P",
+      "input": "2P",
+      "damage": "26",
+      "frameData": {
+        "startup": "9",
+        "active": "5",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "3296e2d9-70b5-479f-8f22-fef848745b47",
+      "name": "2S",
+      "input": "2S",
+      "damage": "45",
+      "frameData": {
+        "startup": "14",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "9d1177b0-6fb4-4fd3-8f26-e0c7ad43b215",
+      "name": "5H",
+      "input": "5H",
+      "damage": "60",
+      "frameData": {
+        "startup": "16",
+        "active": "5",
+        "recovery": "25",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "4cd7f317-02c7-4c95-9875-746882e25fd5",
+      "name": "5K",
+      "input": "5K",
+      "damage": "36",
+      "frameData": {
+        "startup": "10",
+        "active": "14",
+        "recovery": "10",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "66509620-c6b0-4a48-a0cb-5f430605950d",
+      "name": "5P",
+      "input": "5P",
+      "damage": "30",
+      "frameData": {
+        "startup": "5",
+        "active": "5",
+        "recovery": "6",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "27f2a540-23fd-4f05-ac4e-22873fd43990",
+      "name": "6H",
+      "input": "6H",
+      "damage": "65",
+      "frameData": {
+        "startup": "23",
+        "active": "7",
+        "recovery": "29",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "ea231e80-82ef-4663-987e-936880eac9f0",
+      "name": "6K",
+      "input": "6K",
+      "damage": "45",
+      "frameData": {
+        "startup": "20",
+        "active": "5",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "1ca98aac-deed-4a07-a13d-1ab949330f11",
+      "name": "6P",
+      "input": "6P",
+      "damage": "42",
+      "frameData": {
+        "startup": "11",
+        "active": "6",
+        "recovery": "25",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-3 Below Crouch<br/>4-17 Low Profile",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "563be58a-e2c3-4fe6-b694-92003f116a32",
+      "name": "c.S",
+      "input": "c.S",
+      "damage": "45",
+      "frameData": {
+        "startup": "8",
+        "active": "4",
+        "recovery": "11",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "1aa29563-b111-4fd7-b288-6d29940d7757",
+      "name": "f.S",
+      "input": "f.S",
+      "damage": "40",
+      "frameData": {
+        "startup": "12",
+        "active": "7",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "9df6f124-f48c-4437-a334-6844e6db9408",
+      "name": "j.D",
+      "input": "j.D",
+      "damage": "50",
+      "frameData": {
+        "startup": "13",
+        "active": "Until Landing",
+        "recovery": "9 After landing",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "77587b84-d421-4988-93c4-06082179a6fd",
+      "name": "j.H",
+      "input": "j.H",
+      "damage": "55",
+      "frameData": {
+        "startup": "12",
+        "active": "4",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "d263e2f6-4503-4e17-b624-b6dd60e6c464",
+      "name": "j.K",
+      "input": "j.K",
+      "damage": "36",
+      "frameData": {
+        "startup": "10",
+        "active": "6",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "d34bb509-5476-4e6e-b62b-e888519be7de",
+      "name": "j.P",
+      "input": "j.P",
+      "damage": "30",
+      "frameData": {
+        "startup": "7",
+        "active": "6",
+        "recovery": "11",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "b3789111-d7f8-4f4e-9305-cc143630fa4d",
+      "name": "j.S",
+      "input": "j.S",
+      "damage": "45",
+      "frameData": {
+        "startup": "14",
+        "active": "5",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "0eed88b9-0f80-42d1-85ee-4e74185d2e49",
+      "name": "Air Throw",
+      "input": "j.6D or j.4D",
+      "damage": "90",
+      "frameData": {
+        "startup": "2",
+        "active": "3",
+        "recovery": "38 or Until Landing + 10",
+        "advantage": "-"
+      },
+      "guard": "Air Throw",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "06d6abb5-6626-4e9d-86a2-ca5012b76cf5",
+      "name": "Backward Mega Fist",
+      "input": "214P",
+      "damage": "50",
+      "frameData": {
+        "startup": "25",
+        "active": "4",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "Airborne 3F",
+      "type": "Special Moves"
+    },
+    {
+      "id": "cf9a589e-7746-4123-8b0a-576915cf3e00",
+      "name": "Charged Dust Attack",
+      "input": "5[D]",
+      "damage": "62",
+      "frameData": {
+        "startup": "28",
+        "active": "8",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "aaa8ca9d-7ad6-4d35-8d2d-ce4978211f13",
+      "name": "Charged Wild Assault",
+      "input": "236[D]",
+      "damage": "50",
+      "frameData": {
+        "startup": "32",
+        "active": "3",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "All (Guard Crush)",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "7bb87602-2863-4f4b-98ef-1371de3fbcda",
+      "name": "Counter Blitz",
+      "input": "ch6D",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "365c404c-966d-4341-9f86-aa3087abc05e",
+      "name": "Dust Attack",
+      "input": "5D",
+      "damage": "50",
+      "frameData": {
+        "startup": "20",
+        "active": "8",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "1a2fd0f1-582b-4abf-9459-a6c168d9c697",
+      "name": "F.D.B.",
+      "input": "214K",
+      "damage": "40",
+      "frameData": {
+        "startup": "18~35",
+        "active": "6",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "Projectile Reflection 4-[18~35]F",
+      "type": "Special Moves"
+    },
+    {
+      "id": "c45d90b9-f17d-440a-bba5-24cdd37ff00c",
+      "name": "F.D.B. (Charged)",
+      "input": "214[K]",
+      "damage": "60",
+      "frameData": {
+        "startup": "36",
+        "active": "6",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "Projectile Reflection 4-35F",
+      "type": "Special Moves"
+    },
+    {
+      "id": "c271b37f-65a2-431a-9a42-e45f4744d9e7",
+      "name": "Finish Blow",
+      "input": "j.XX during Homing Jump",
+      "damage": "80",
+      "frameData": {
+        "startup": "16",
+        "active": "",
+        "recovery": "",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "9e363317-1c6e-4411-8275-9342cc4b78cd",
+      "name": "Forward Mega Fist",
+      "input": "236P",
+      "damage": "50",
+      "frameData": {
+        "startup": "28",
+        "active": "8",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "Airborne 3F",
+      "type": "Special Moves"
+    },
+    {
+      "id": "04ff4422-cd88-47c7-a882-707eabddf282",
+      "name": "Garuda Impact",
+      "input": "214H",
+      "damage": "63",
+      "frameData": {
+        "startup": "28",
+        "active": "11",
+        "recovery": "24",
+        "advantage": "-"
+      },
+      "guard": "All (Guard Crush)",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "6270aad1-4b8a-4149-a1fd-31fa5d332217",
+      "name": "Giganter Kai",
+      "input": "632146H",
+      "damage": "60",
+      "frameData": {
+        "startup": "10+1",
+        "active": "5",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Overdrives"
+    },
+    {
+      "id": "ade6ec80-a7d4-4942-a3f0-bfb18e6abb34",
+      "name": "Giganter Kai (Barrier)",
+      "input": "Mirror",
+      "damage": "15\u00d73",
+      "frameData": {
+        "startup": "10+23",
+        "active": "105",
+        "recovery": "",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Overdrives"
+    },
+    {
+      "id": "d96fdf23-6a56-436a-9fd6-40706985e7bf",
+      "name": "Ground Throw",
+      "input": "6D or 4D",
+      "damage": "90",
+      "frameData": {
+        "startup": "2",
+        "active": "3",
+        "recovery": "38",
+        "advantage": "-"
+      },
+      "guard": "Ground Throw",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "e1372ad1-e18c-49e9-9b3b-9375f8e09316",
+      "name": "Hammer Fall",
+      "input": "[4]6H",
+      "damage": "58",
+      "frameData": {
+        "startup": "18~37",
+        "active": "2",
+        "recovery": "34",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1 Hit Armor Mid/Overhead 5~38F",
+      "type": "Special Moves"
+    },
+    {
+      "id": "835cc18f-1ce6-41ef-9ebd-ff8892ea89cc",
+      "name": "Hammer Fall Break",
+      "input": "[4]6H P",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "1 Hit Armor Mid/Overhead 1~9F",
+      "type": "Special Moves"
+    },
+    {
+      "id": "67a08f98-4f09-42c7-804a-4b2fc1432ddc",
+      "name": "Heat Knuckle",
+      "input": "623H",
+      "damage": "0,7\u00d78,80",
+      "frameData": {
+        "startup": "12",
+        "active": "4",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Air Guard Crush",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "7e69b613-4490-42e0-aaa4-a69e7599b89e",
+      "name": "Heat Tackle",
+      "input": "623K",
+      "damage": "72",
+      "frameData": {
+        "startup": "12",
+        "active": "13~28",
+        "recovery": "32~38",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1 Hit Armor 12~39F",
+      "type": "Special Moves"
+    },
+    {
+      "id": "dbe744e0-db44-42e7-9d1a-e703fa20215a",
+      "name": "Heavenly Potemkin Buster",
+      "input": "632146S",
+      "damage": "220",
+      "frameData": {
+        "startup": "12+0",
+        "active": "15",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Air Throw",
+      "invuln": "1-14F Full",
+      "type": "Overdrives"
+    },
+    {
+      "id": "8b52d95c-7b97-4572-abd0-5309259d5d08",
       "name": "Potemkin Buster",
       "input": "632146P",
-      "type": "command throw"
+      "damage": "175",
+      "frameData": {
+        "startup": "5",
+        "active": "4",
+        "recovery": "37",
+        "advantage": "-"
+      },
+      "guard": "Ground Throw",
+      "invuln": "",
+      "type": "Special Moves"
     },
     {
-      "name": "Mega Fist (Forward)",
-      "input": "236P",
-      "type": "special"
+      "id": "aac61a56-e5b1-4e73-9885-2bb0db24528e",
+      "name": "Reflect Projectile",
+      "input": "Reflect Projectile",
+      "damage": "17, 48",
+      "frameData": {
+        "startup": "1",
+        "active": "30,10",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-18F Full",
+      "type": "Special Moves"
     },
     {
-      "name": "Mega Fist (Back)",
-      "input": "214P",
-      "type": "special"
-    },
-    {
+      "id": "cc8be3c0-6dd4-4f15-8f4b-5e24f2b9c0bb",
       "name": "Slide Head",
       "input": "236S",
-      "type": "special"
+      "damage": "30",
+      "frameData": {
+        "startup": "29",
+        "active": "2",
+        "recovery": "28",
+        "advantage": "-"
+      },
+      "guard": "Low (Guard Crush)",
+      "invuln": "",
+      "type": "Special Moves"
     },
     {
-      "name": "Hammer Fall",
-      "input": "[4]6HS",
-      "type": "special"
+      "id": "6b1be69f-e0fd-4ebe-ade5-586525bcb97c",
+      "name": "Sweep",
+      "input": "2D",
+      "damage": "40",
+      "frameData": {
+        "startup": "13",
+        "active": "7",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
     },
     {
-      "name": "F.D.B.",
-      "input": "623S",
-      "type": "special"
+      "id": "eb1879b5-5395-4fd4-a360-11c3b9ecd090",
+      "name": "Wild Assault",
+      "input": "236D",
+      "damage": "30",
+      "frameData": {
+        "startup": "20~31",
+        "active": "3",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "All (Guard Crush)",
+      "invuln": "",
+      "type": "System"
+    }
+  ],
+  "combosList": [
+    {
+      "id": "miss_1",
+      "name": "Mission 1",
+      "input": "P P P"
     },
     {
-      "name": "Garuda Impact",
-      "input": "623HS",
-      "type": "special"
+      "id": "miss_2",
+      "name": "Mission 2",
+      "input": "K S H"
     },
     {
-      "name": "Heat Knuckle",
-      "input": "623HS",
-      "type": "special"
+      "id": "miss_3",
+      "name": "Mission 3",
+      "input": "c.S f.S 5H 236P"
     },
     {
-      "name": "Heavenly Potemkin Buster",
-      "input": "236236S",
-      "type": "overdrive"
-    },
-    {
-      "name": "Giganter Kai",
-      "input": "632146HS",
-      "type": "overdrive"
+      "id": "miss_4",
+      "name": "Mission 4",
+      "input": "c.S 2D 236K"
     }
   ]
 }
