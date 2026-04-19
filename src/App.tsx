@@ -29,7 +29,7 @@ export const App: React.FC = () => {
       return [];
     }
   });
-  const [controller, setController] = useState<ControllerType>('playstation');
+  const [controller, setController] = useState<ControllerType>(() => { return (localStorage.getItem('gg_controller') as ControllerType) || 'playstation'; });
   const [cardTheme] = useState<CardTheme>(() => {
     const val = localStorage.getItem('gg_card_theme');
     return (CARD_THEMES as readonly string[]).includes(val || '') ? (val as CardTheme) : 'default-dark';
@@ -39,6 +39,14 @@ export const App: React.FC = () => {
   });
   const [returningFromMoveList, setReturningFromMoveList] = useState(false);
   const [disableGameSelectAnimation, setDisableGameSelectAnimation] = useState(false);
+
+  useEffect(() => {
+    localStorage.setItem('gg_controller', controller);
+  }, [controller]);
+
+  useEffect(() => {
+    localStorage.setItem('gg_notation_override', notationOverride);
+  }, [notationOverride]);
 
   // Fightcade Auto-Sync
   const { syncState, connect, disconnect } = useFightcadeSync();
@@ -176,9 +184,9 @@ export const App: React.FC = () => {
   const handleToggleMove = (move: Move) => {
     if (!selectedGame || !selectedCharacter) return;
     setSelectedPlaylist(prev => {
-      const exists = prev.find(pm => pm.move.id === move.id && pm.gameId === selectedGame.id && pm.characterId === selectedCharacter);
+      const exists = prev.find(pm => pm?.move?.id === move.id && pm?.gameId === selectedGame.id && pm?.characterId === selectedCharacter);
       if (exists) {
-        return prev.filter(pm => !(pm.move.id === move.id && pm.gameId === selectedGame.id && pm.characterId === selectedCharacter));
+        return prev.filter(pm => !(pm?.move?.id === move.id && pm?.gameId === selectedGame.id && pm?.characterId === selectedCharacter));
       } else {
         return [...prev, { gameId: selectedGame.id, characterId: selectedCharacter, move }];
       }

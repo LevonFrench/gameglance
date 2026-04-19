@@ -228,7 +228,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     );
   }
 
-  const selectedCount = selectedPlaylist.filter(m => m.gameId === game.id && m.characterId === characterId).length;
+  const selectedCount = selectedPlaylist.length;
   const effectiveController = game.id === 'tatsunoko-vs-capcom-ultimate-all-stars' ? 'wii' : controller;
 
   return (
@@ -654,7 +654,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                   }}>
                     {topLevelMoves.map((topMove, topIdx) => {
                       const renderMoveCard = (move: Move, idx: number, depth: number = 0, isLastChild: boolean = false) => {
-                        const isSelected = selectedPlaylist && selectedPlaylist.some(m => m && m.id === move.id);
+                        const isSelected = selectedPlaylist && selectedPlaylist.some(m => m && move && m.id === move.id);
                         const hasChildren = childrenMap.has(move.id) && childrenMap.get(move.id)!.length > 0;
                         const children = childrenMap.get(move.id) || [];
 

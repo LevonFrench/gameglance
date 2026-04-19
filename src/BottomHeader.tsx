@@ -55,9 +55,6 @@ export const BottomHeader: React.FC<Props> = ({
       WebkitBackdropFilter: 'blur(12px)',
     }}>
       <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-        
-
-        <div style={{ width: '1px', height: '20px', background: 'var(--border-subtle)' }} />
 
         {/* Glyph Setting */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
