@@ -57,3 +57,5 @@ These guidelines are working if: fewer unnecessary changes in diffs, fewer rewri
 when a new prompt interupts a task, unless the new prompt specifically says to stop or start fresh, assume it is a continuation of the previous task and continue working on that task.
 
 anytime you draft a plan or new .md file, open it in editor.
+
+always update the implementation.md and walkthrough.md after changes. 
