@@ -33,8 +33,28 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
       padding: 'var(--space-xl) var(--space-xl) var(--space-md)',
       borderBottom: '1px solid var(--border-subtle)',
       transition: 'background-color 0.4s ease',
+      overflow: 'hidden', // Add overflow hidden for watermark
     }}>
-      <div style={{ maxWidth: '1400px', width: '100%', margin: '0 auto' }}>
+      {/* Background Watermark */}
+      <div style={{
+        position: 'absolute',
+        top: '50%',
+        left: '50%',
+        transform: 'translate(-50%, -50%)',
+        fontSize: 'clamp(5rem, 12vw, 15rem)',
+        fontWeight: 900,
+        color: isDark ? 'rgba(255, 255, 255, 0.02)' : 'rgba(0, 0, 0, 0.02)',
+        whiteSpace: 'nowrap',
+        userSelect: 'none',
+        pointerEvents: 'none',
+        letterSpacing: '-0.02em',
+        fontFamily: "'Outfit', sans-serif",
+        zIndex: 0,
+      }}>
+        GAMEGLANCE
+      </div>
+
+      <div style={{ maxWidth: '1400px', width: '100%', margin: '0 auto', position: 'relative', zIndex: 1 }}>
         <nav style={{
           display: 'flex',
           alignItems: 'center',
