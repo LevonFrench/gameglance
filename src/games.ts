@@ -611,7 +611,7 @@ rosterCount: 19,
         { id: 'rose', name: 'Rose', moveCount: 0 },
         { id: 'ingrid', name: 'Ingrid', moveCount: 0 },
         { id: 'shin-akuma', name: 'Shin Akuma', moveCount: 0 }
-      ]]],
+      ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -696,7 +696,7 @@ rosterCount: 44,
         { id: 'chang', name: 'Chang', moveCount: 0 },
         { id: 'blood-iori', name: 'Blood Iori', moveCount: 0 },
         { id: 'god-rugal', name: 'God Rugal', moveCount: 0 }
-      ]]],
+      ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -765,7 +765,7 @@ rosterCount: 29,
         { id: 'joe', name: 'Joe', moveCount: 0 },
         { id: 'nakoruru', name: 'Nakoruru', moveCount: 0 },
         { id: 'blood-iori', name: 'Blood Iori', moveCount: 0 }
-      ]]],
+      ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -2926,7 +2926,7 @@ rosterCount: 13,
         { id: 'gori', name: 'Gori', moveCount: 0 },
         { id: 'luka', name: 'Luka', moveCount: 0 },
         { id: 'luca', name: 'Luca', moveCount: 0 }
-      ]]],
+      ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -3082,7 +3082,7 @@ rosterCount: 7,
         { id: 'boman', name: 'Boman', moveCount: 0 },
         { id: 'natsu', name: 'Natsu', moveCount: 0 },
         { id: 'roberto', name: 'Roberto', moveCount: 0 }
-      ]]],
+      ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -4050,7 +4050,7 @@ rosterCount: 37,
         { id: 'eagle', name: 'Eagle', moveCount: 0 },
         { id: 'yun', name: 'Yun', moveCount: 0 },
         { id: 'ingrid', name: 'Ingrid', moveCount: 0 }
-      ]]],
+      ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
