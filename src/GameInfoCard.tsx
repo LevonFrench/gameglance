@@ -108,42 +108,42 @@ export const GameInfoCard: React.FC<Props> = ({ game }) => {
         </div>
 
         {/* Tab Content */}
-        <div style={{ padding: 'var(--space-2xl) var(--space-xl)', minHeight: '300px' }}>
+        <div style={{ padding: 'var(--space-xl)', minHeight: '200px' }}>
           {activeTab === 'info' && (
-            <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-lg)', color: 'var(--text-secondary)', animation: 'fadeInUp 0.4s ease' }}>
-              <p style={{ margin: 0, fontSize: '1.1rem', lineHeight: 1.6 }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)', color: 'var(--text-secondary)', animation: 'fadeInUp 0.4s ease' }}>
+              <p style={{ margin: 0, fontSize: '1.05rem', lineHeight: 1.5 }}>
                 The core metadata and technical details for <strong>{game.name}</strong>. 
                 This section serves as a placeholder for deeper integration with external wikis or community frame data repositories.
               </p>
               
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 'var(--space-md)', marginTop: 'var(--space-md)' }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 'var(--space-md)' }}>
                 <div style={{ 
                   background: isDark ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.8)', 
-                  padding: 'var(--space-lg)', 
+                  padding: 'var(--space-md) var(--space-lg)', 
                   borderRadius: 'var(--radius-lg)',
                   border: `1px solid ${isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)'}`
                 }}>
-                  <div style={{ fontSize: '0.8rem', color: 'var(--text-tertiary)', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>Notation System</div>
-                  <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.2rem' }}>{game.notationSystem === 'numpad' ? 'Numpad (Anime)' : game.notationSystem === 'mk' ? 'MK Numbers' : 'Traditional'}</div>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>Notation System</div>
+                  <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.1rem' }}>{game.notationSystem === 'numpad' ? 'Numpad (Anime)' : game.notationSystem === 'mk' ? 'MK Numbers' : 'Traditional'}</div>
                 </div>
                 
                 <div style={{ 
                   background: isDark ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.8)', 
-                  padding: 'var(--space-lg)', 
+                  padding: 'var(--space-md) var(--space-lg)', 
                   borderRadius: 'var(--radius-lg)',
                   border: `1px solid ${isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)'}`
                 }}>
-                  <div style={{ fontSize: '0.8rem', color: 'var(--text-tertiary)', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>Card Layout</div>
-                  <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.2rem' }}>{game.theme || 'Default Modern'}</div>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>Card Layout</div>
+                  <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.1rem' }}>{game.theme || 'Default Modern'}</div>
                 </div>
                 
                 <div style={{ 
                   background: isDark ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.8)', 
-                  padding: 'var(--space-lg)', 
+                  padding: 'var(--space-md) var(--space-lg)', 
                   borderRadius: 'var(--radius-lg)',
                   border: `1px solid ${isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)'}`
                 }}>
-                  <div style={{ fontSize: '0.8rem', color: 'var(--text-tertiary)', marginBottom: '8px', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>Platform</div>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>Platform</div>
                   <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.2rem' }}>{game.platform || 'Arcade'}</div>
                 </div>
               </div>

@@ -502,7 +502,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
           GameGlance
         </div>
         <h1 
-          onClick={() => setShowCards(true)}
+          onClick={() => { setShowCards(true); setExpandedGameId(null); }}
           style={{
           fontSize: 'clamp(2.5rem, 6vw, 4rem)',
           fontWeight: 900,
@@ -741,6 +741,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                   fontFamily: 'inherit',
                   backdropFilter: 'blur(12px)',
                   WebkitBackdropFilter: 'blur(12px)',
+                  transform: expandedGameId === game.id ? 'none' : undefined,
                 }}
                 onMouseOver={(e) => {
                   const el = e.currentTarget;

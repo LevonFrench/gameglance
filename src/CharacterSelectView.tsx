@@ -91,6 +91,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
       width: '100%',
       margin: '0 auto',
       flex: 1,
+      alignContent: 'flex-start',
       animation: disableInitialAnimation ? 'none' : 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both',
     }}>
       {sortedCharacters.map((character, index) => {
@@ -331,20 +332,6 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
           }}>
             {game.name.toUpperCase()}
           </div>
-          
-          {/* Subtle text over the watermark */}
-          <p style={{ 
-            color: 'var(--text-tertiary)', 
-            fontSize: '1.1rem',
-            maxWidth: '600px',
-            margin: '0 auto',
-            position: 'relative',
-            zIndex: 1,
-            fontWeight: 500,
-            letterSpacing: '0.02em',
-          }}>
-            {loadingRoster ? 'Loading roster...' : `${characters.length} fighter${characters.length !== 1 ? 's' : ''} available`}
-          </p>
         </header>
       </div>
 
