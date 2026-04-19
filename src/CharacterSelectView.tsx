@@ -148,7 +148,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
               userSelect: 'none',
               pointerEvents: 'none',
               width: '150%',
-              wordBreak: 'break-all',
+              whiteSpace: 'nowrap',
               letterSpacing: '-0.05em',
               transition: 'all 0.4s cubic-bezier(0.16, 1, 0.3, 1)',
               zIndex: 0,
