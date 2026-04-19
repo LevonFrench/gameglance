@@ -17,6 +17,7 @@ interface Props {
   onHome?: () => void;
   onBack?: () => void;
   onRemoveMove?: (moveId: string) => void;
+  onClearCharacterPlaylist?: (charId: string) => void;
   onCharacterChange?: (charId: string) => void;
   notationSystem?: 'numpad' | 'traditional' | 'mk';
 }
@@ -25,7 +26,7 @@ interface WakeLockSentinel {
   release: () => Promise<void>;
 }
 
-export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, selectedCharacterId, characterName, controller, notationSystem, onExit, onHome, onBack, onRemoveMove, onCharacterChange }) => {
+export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, selectedCharacterId, characterName, controller, notationSystem, onExit, onHome, onBack, onRemoveMove, onClearCharacterPlaylist, onCharacterChange }) => {
   const uniqueCharacters = useMemo(() => Array.from(new Set(playlist.map(p => p.characterId))), [playlist]);
   const [activeTab, setActiveTab] = useState(
     uniqueCharacters.includes(selectedCharacterId) ? selectedCharacterId : uniqueCharacters[0]
@@ -394,7 +395,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
           </nav>
 
           {/* Character Tabs (if multiple) */}
-          {uniqueCharacters.length > 1 && (
+          {uniqueCharacters.length > 0 && (
             <div style={{
               display: 'flex',
               gap: '0.5rem',
@@ -410,6 +411,9 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
                     setCurrentPage(0); 
                   }}
                   style={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.3rem',
                     padding: '0.3rem 0.85rem',
                     borderRadius: 'var(--radius-full)',
                     background: activeTab === char ? 'var(--accent-indigo)' : 'transparent',
@@ -424,7 +428,37 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
                     whiteSpace: 'nowrap',
                   }}
                 >
-                  {char === selectedCharacterId ? characterName : char.replace(/-/g, ' ')}
+                  <span>{char === selectedCharacterId ? characterName : char.replace(/-/g, ' ')}</span>
+                  {onClearCharacterPlaylist && (
+                    <div 
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        if (uniqueCharacters.length === 1) {
+                          onExit();
+                        }
+                        onClearCharacterPlaylist(char);
+                      }}
+                      style={{
+                        display: 'flex',
+                        alignItems: 'center',
+                        justifyContent: 'center',
+                        width: '16px',
+                        height: '16px',
+                        borderRadius: '50%',
+                        background: activeTab === char ? 'rgba(255,255,255,0.2)' : 'var(--border-medium)',
+                        color: activeTab === char ? '#fff' : 'var(--text-primary)',
+                        fontSize: '0.65rem',
+                        lineHeight: 1,
+                        marginLeft: '4px',
+                        transition: 'all 0.2s',
+                      }}
+                      onMouseOver={e => e.currentTarget.style.background = activeTab === char ? 'rgba(255,255,255,0.4)' : '#ef4444'}
+                      onMouseOut={e => e.currentTarget.style.background = activeTab === char ? 'rgba(255,255,255,0.2)' : 'var(--border-medium)'}
+                      title={`Remove ${char.replace(/-/g, ' ')} from playlist`}
+                    >
+                      ✕
+                    </div>
+                  )}
                 </button>
               ))}
             </div>

@@ -313,6 +313,9 @@ export const App: React.FC = () => {
          onRemoveMove={(moveId) => {
            setSelectedPlaylist(prev => prev.filter(p => p.move.id !== moveId));
          }}
+         onClearCharacterPlaylist={(charId) => {
+           setSelectedPlaylist(prev => prev.filter(p => !(p.characterId === charId && p.gameId === selectedGame?.id)));
+         }}
       />;
       break;
     }
