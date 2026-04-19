@@ -31,6 +31,7 @@ Defined in `src/glyphMap.ts` as `ControllerType`:
 | `sfami` | Super Famicom | R |
 | `wii` | Wii | 2 |
 | `mk` | Mortal Kombat | 2 |
+| `tekken` | Tekken | 1 |
 
 ## Notation Systems
 

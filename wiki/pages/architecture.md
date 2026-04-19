@@ -46,7 +46,7 @@ MoveListView renders tabs, GlyphSequence renders inputs
 
 ## Key Design Decisions
 
-- **`games.ts` is the single source of truth** for the game registry (IDs, rosters, tabs, metadata). It's ~218KB and loaded synchronously. Future optimization: move to async JSON.
+- **`games.ts` is the single source of truth** for the game registry (IDs, rosters, tabs, system mechanics, metadata). It's ~297KB and loaded synchronously. System mechanics (8 per game) are stored inline as `systemMechanics[]` on each `GameDefinition` — no separate fetch needed.
 - **Move data is lazy-loaded** per character. Each character's JSON is a separate Vite chunk, fetched only when selected.
 - **Glyphs are controller-aware.** `glyphMap.ts` translates generic inputs (LP, MP, HK) into hardware-specific labels per controller type (PlayStation, Xbox, Neo Geo, etc.).
 - **No server.** Everything is static. Favorites, playlists, and settings persist via `localStorage`.

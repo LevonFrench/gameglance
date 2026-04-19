@@ -40,6 +40,19 @@ export const App: React.FC = () => {
   const [returningFromMoveList, setReturningFromMoveList] = useState(false);
   const [disableGameSelectAnimation, setDisableGameSelectAnimation] = useState(false);
 
+  const [controllerLocked, setControllerLocked] = useState<boolean>(() => {
+    return localStorage.getItem('gg_controller_locked') === 'true';
+  });
+
+  useEffect(() => {
+    localStorage.setItem('gg_controller_locked', controllerLocked.toString());
+  }, [controllerLocked]);
+
+  const handleSetController = (c: ControllerType) => {
+    setController(c);
+    setControllerLocked(true);
+  };
+
   useEffect(() => {
     localStorage.setItem('gg_controller', controller);
   }, [controller]);
@@ -147,27 +160,29 @@ export const App: React.FC = () => {
     setReturningFromMoveList(false);
     setDisableGameSelectAnimation(false);
     
-    const dev = game.developer?.toUpperCase() || '';
-    const name = game.name.toLowerCase();
-    
-    if (dev === 'SNK') {
-      setController('neogeo');
-    } else if (name.includes('mortal kombat') || name.includes('mk')) {
-      setController('mk');
-    } else if (name.includes('tatsunoko') && name.includes('capcom')) {
-      setController('wii');
-    } else if (name.includes('alpha') || name.includes('vampire') || name.includes('darkstalkers') || name.includes('vs capcom') || name.includes('msh') || name.includes('cota') || name.includes('xmvsf') || name.includes('pocket fighter')) {
-      setController('cps');
-    } else if (name.includes('street fighter ii') && !name.includes('alpha')) {
-      if (cardTheme === 'genesis' || cardTheme === 'sf2gen') {
-        setController('genesis');
-      } else {
-        setController('snes');
+    if (!controllerLocked) {
+      const dev = game.developer?.toUpperCase() || '';
+      const name = game.name.toLowerCase();
+      
+      if (dev === 'SNK') {
+        setController('neogeo');
+      } else if (name.includes('mortal kombat') || name.includes('mk')) {
+        setController('mk');
+      } else if (name.includes('tatsunoko') && name.includes('capcom')) {
+        setController('wii');
+      } else if (name.includes('alpha') || name.includes('vampire') || name.includes('darkstalkers') || name.includes('vs capcom') || name.includes('msh') || name.includes('cota') || name.includes('xmvsf') || name.includes('pocket fighter')) {
+        setController('cps');
+      } else if (name.includes('street fighter ii') && !name.includes('alpha')) {
+        if (cardTheme === 'genesis' || cardTheme === 'sf2gen') {
+          setController('genesis');
+        } else {
+          setController('snes');
+        }
+      } else if (name.includes('street fighter 6') || name.includes('tekken') || name.includes('guilty gear') || name.includes('blazblue')) {
+         if (['snes', 'genesis', 'neogeo', 'sfami', 'wii', 'cps'].includes(controller)) {
+           setController('playstation');
+         }
       }
-    } else if (name.includes('street fighter 6') || name.includes('tekken') || name.includes('guilty gear') || name.includes('blazblue')) {
-       if (['snes', 'genesis', 'neogeo', 'sfami', 'wii', 'cps'].includes(controller)) {
-         setController('playstation');
-       }
     }
 
     navigate('char_select', game);
@@ -210,7 +225,7 @@ export const App: React.FC = () => {
          game={selectedGame} 
          controller={controller}
          disableInitialAnimation={returningFromMoveList}
-         onSetController={setController}
+         onSetController={handleSetController}
          onSelectCharacter={handleSelectCharacter} 
 
          onBack={() => {
@@ -234,7 +249,7 @@ export const App: React.FC = () => {
          selectedPlaylist={selectedPlaylist.filter(p => p.gameId === selectedGame.id).map(p => p.move)}
          controller={controller}
          notationSystem={(notationOverride === 'auto' ? selectedGame.notationSystem : notationOverride) as 'numpad' | 'traditional' | 'mk' | undefined}
-         onSetController={setController}
+         onSetController={handleSetController}
          onToggleMove={handleToggleMove}
          onLaunchMainScreen={handleLaunchMainScreen}
          onBack={() => navigate('char_select', selectedGame)}
@@ -259,7 +274,7 @@ export const App: React.FC = () => {
          characterName={charName}
          controller={controller}
          notationSystem={(notationOverride === 'auto' ? selectedGame?.notationSystem : notationOverride) as 'numpad' | 'traditional' | 'mk' | undefined}
-         onSetController={setController}
+         onSetController={handleSetController}
          onExit={() => window.history.back()} 
       />;
       break;
@@ -278,7 +293,7 @@ export const App: React.FC = () => {
       {viewComponent}
       <BottomHeader 
         controller={controller}
-        onSetController={setController}
+        onSetController={handleSetController}
         notationSystem={notationOverride}
         onSetNotationSystem={(val) => {
           setNotationOverride(val);

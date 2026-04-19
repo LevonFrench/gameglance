@@ -3,14 +3,15 @@ import type { GameDefinition } from './types';
 export const SUPPORTED_GAMES: ReadonlyArray<Readonly<GameDefinition>> = [
   {
     id: 'dragon-ball-fighterz',
-    name: 'Dragon Ball FighterZ',
-    developer: 'Arc System Works',
+    mameRomset: "",
+    name: "Dragon Ball FighterZ",
+    tagline: "3v3 Tag Team Action",
+    developer: "Arc System Works",
     releaseYear: 2018,
-    platform: 'PS4, Xbox One, PC, Switch, PS5, Xbox Series X/S',
-    tagline: '3v3 Tag Team Action',
+    platform: "PS4, Xbox One, PC, Switch, PS5, Xbox Series X/S",
+    rosterCount: 37,
+    tags: ['Anime', 'Vs.'],
     notationSystem: 'numpad',
-    tabs: ['Normal Moves', 'Special Moves', 'Supers', 'Assists', 'System', 'Combos'],
-    
     systemMechanics: [
       { name: 'Assists', description: 'Call partner characters for assist attacks. Three assist types (A/B/C) per character.'  },
       { name: 'Dragon Rush', description: 'Universal throw that launches. Can be teched.' , input: 'L+M' },
@@ -21,7 +22,6 @@ export const SUPPORTED_GAMES: ReadonlyArray<Readonly<GameDefinition>> = [
       { name: 'Ki Charge', description: 'Hold to charge ki meter manually. Risky but builds resources.' , input: 'S (hold)' },
       { name: 'Limit Break', description: 'Last character alive gets automatic buffs: extra damage and reduced super costs.'  }
     ],
-
     characters: []
   },
 
@@ -7354,15 +7354,13 @@ rosterCount: 8,
   },
   {
     id: 'rival-schools-united-by-fate',
-
     mameRomset: "",
-    name: 'Rival Schools: United by Fate (1997)',
+    name: 'Rival Schools: United by Fate',
     tagline: "United by Fate",
     developer: 'Capcom',
     releaseYear: 1997,
-    platform: 'Arcade, PlayStation, PC',
+    platform: "Arcade, PlayStation, PC",
     rosterCount: 20,
-    
     systemMechanics: [
       { name: 'Team-Up Attack', description: 'Call your partner for a powerful two-person attack.' , input: 'HP+HK' },
       { name: 'Burning Vigor', description: 'Meter powering supers and team attacks.'  },
@@ -7373,7 +7371,6 @@ rosterCount: 8,
       { name: 'Guard Cancel', description: 'Counter-attack during block.'  },
       { name: 'Guts System', description: 'Reduced damage at low health for comebacks.'  }
     ],
-
     characters: [
       { id: 'batsu-ichimonji', name: 'Batsu Ichimonji', moveCount: 0 },
       { id: 'hinata-wakaba', name: 'Hinata Wakaba', moveCount: 0 },

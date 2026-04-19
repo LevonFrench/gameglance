@@ -20,6 +20,9 @@ Each game is a `GameDefinition` object:
   characters: [
     { id: 'ryu', name: 'Ryu', moveCount: 45 }
   ],
+  systemMechanics: [
+    { name: 'Drive System', description: 'Governs Drive Impact, Drive Rush, Drive Reversal, and Drive Parry.' }
+  ],
   tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 }
 ```
@@ -53,8 +56,8 @@ Each move's `type` field in its character JSON must exactly match one of these t
 
 ## Visibility
 
-All games in `games.ts` are visible in the app. There is no `hidden` or `draft` flag — if a game shouldn't appear, remove it from the array.
+All games in `games.ts` are visible in the app by default. Games with `isDraft: true` are hidden from the game select grid. Remove the flag or the entry entirely to control visibility.
 
 ## Current Scale
 
-~200+ games registered, spanning arcade classics to modern titles. The file is ~218KB — the single largest contributor to the main JS bundle.
+~200+ games registered, spanning arcade classics to modern titles. The file is ~297KB (including inline system mechanics) — the single largest contributor to the main JS bundle.
