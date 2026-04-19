@@ -690,7 +690,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
       <main style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-        gridAutoRows: '1fr',
+        gridAutoRows: '160px',
         gap: 'calc(1.5rem * var(--spacing-scale, 1))',
         maxWidth: '1400px',
         width: '100%',
@@ -941,24 +941,29 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                 ) : (
                   /* Standard Card Layout */
                   <>
-                    {/* Watermark */}
+                    {/* Tiled Watermark */}
                     <div style={{
                       position: 'absolute',
-                      top: '50%',
-                      left: '50%',
-                      transform: 'translate(-50%, -50%) rotate(-15deg)',
-                      fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+                      inset: '-50%',
+                      transform: 'rotate(-15deg)',
+                      display: 'flex',
+                      flexWrap: 'wrap',
+                      gap: '0.5rem 1.5rem',
+                      alignContent: 'center',
+                      justifyContent: 'center',
+                      fontSize: '1.1rem',
                       fontWeight: 900,
-                      color: 'rgba(255, 255, 255, 0.03)',
-                      whiteSpace: 'nowrap',
+                      color: 'rgba(255, 255, 255, 0.02)',
                       userSelect: 'none',
                       pointerEvents: 'none',
                       fontFamily: "'Outfit', sans-serif",
-                      letterSpacing: '-0.03em',
+                      letterSpacing: '-0.02em',
+                      lineHeight: 1.8,
                       zIndex: 0,
-                      lineHeight: 1,
                     }}>
-                      {game.name.toUpperCase()}
+                      {Array.from({ length: 12 }, (_, i) => (
+                        <span key={i} style={{ whiteSpace: 'nowrap' }}>{game.name.toUpperCase()}</span>
+                      ))}
                     </div>
                     <h2 style={{
                       margin: 0,
