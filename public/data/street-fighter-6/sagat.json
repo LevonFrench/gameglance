@@ -2,6 +2,72 @@
   "name": "Sagat",
   "character": "sagat",
   "game": "Street Fighter 6",
-  "movesList": [],
-  "combosList": []
+  "movesList": [
+    {
+      "id": "high_tiger_shot",
+      "name": "High Tiger Shot",
+      "type": "special",
+      "input": "236P",
+      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+    },
+    {
+      "id": "low_tiger_shot",
+      "name": "Low Tiger Shot",
+      "type": "special",
+      "input": "236K",
+      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+    },
+    {
+      "id": "tiger_uppercut",
+      "name": "Tiger Uppercut",
+      "type": "special",
+      "input": "623P",
+      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+    },
+    {
+      "id": "tiger_knee",
+      "name": "Tiger Knee",
+      "type": "special",
+      "input": "623K",
+      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+    },
+    {
+      "id": "tiger_cannon",
+      "name": "Tiger Cannon",
+      "type": "super",
+      "input": "236236P",
+      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+    },
+    {
+      "id": "tiger_raid",
+      "name": "Tiger Raid",
+      "type": "super",
+      "input": "214214K",
+      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+    },
+    {
+      "id": "tiger_rampage",
+      "name": "Tiger Rampage",
+      "type": "super",
+      "input": "236236K",
+      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+    }
+  ],
+  "combosList": [
+    {
+      "id": "sagat_combo_1",
+      "name": "Basic Light Punish",
+      "input": "2LK > 2LP > 623LP"
+    },
+    {
+      "id": "sagat_combo_2",
+      "name": "Heavy Punish into Super",
+      "input": "5HP > 623HP (Cancel) > 236236P"
+    },
+    {
+      "id": "sagat_combo_3",
+      "name": "Corner Carry",
+      "input": "5MP > 2MP > 623HK"
+    }
+  ]
 }

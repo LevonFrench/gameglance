@@ -4,35 +4,70 @@
   "game": "Street Fighter 6",
   "movesList": [
     {
-      "id": "elena_5lp",
-      "name": "Standing Light Punch",
-      "type": "normal",
-      "input": "LP",
-      "frameData": {
-        "startup": "4",
-        "active": "3",
-        "recovery": "10",
-        "advantage": "-2"
-      }
+      "id": "rhino_horn",
+      "name": "Rhino Horn",
+      "type": "special",
+      "input": "41236K",
+      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
     },
     {
-      "id": "elena_scratch",
-      "name": "Scratch",
+      "id": "mallet_smash",
+      "name": "Mallet Smash",
       "type": "special",
-      "input": "236P",
-      "frameData": {
-        "startup": "12",
-        "active": "4",
-        "recovery": "20",
-        "advantage": "-6"
-      }
+      "input": "623P",
+      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+    },
+    {
+      "id": "spin_scythe",
+      "name": "Spin Scythe",
+      "type": "special",
+      "input": "214K",
+      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+    },
+    {
+      "id": "scratch_wheel",
+      "name": "Scratch Wheel",
+      "type": "special",
+      "input": "623K",
+      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+    },
+    {
+      "id": "healing",
+      "name": "Healing",
+      "type": "super",
+      "input": "236236P",
+      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+    },
+    {
+      "id": "brave_dance",
+      "name": "Brave Dance",
+      "type": "super",
+      "input": "236236K",
+      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+    },
+    {
+      "id": "spinning_beat",
+      "name": "Spinning Beat",
+      "type": "super",
+      "input": "214214K",
+      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
     }
   ],
   "combosList": [
     {
-      "id": "elena_combo1",
-      "name": "Beginner 1",
-      "input": "LP LP LP"
+      "id": "elena_combo_1",
+      "name": "Light Confirm",
+      "input": "2LK > 2LP > 623LK"
+    },
+    {
+      "id": "elena_combo_2",
+      "name": "Medium BnB",
+      "input": "5MP > 2MP > 41236HK"
+    },
+    {
+      "id": "elena_combo_3",
+      "name": "Target Combo Setup",
+      "input": "5MP > 5HP > 214K > 214K"
     }
   ]
 }
