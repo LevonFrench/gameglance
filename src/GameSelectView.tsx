@@ -507,11 +507,14 @@ export const GameSelectView: React.FC<Props> = ({
           GameGlance
         </div>
         <h1 
+          className="select-game-pulse"
           onClick={() => { setShowCards(true); setExpandedGameId(null); }}
           style={{
-          fontSize: 'clamp(2.5rem, 6vw, 4rem)',
+          fontSize: 'max(4rem, 8vw)',
           fontWeight: 900,
+          letterSpacing: '-0.04em',
           margin: 0,
+          textTransform: 'uppercase',
           color: isDark ? '#f0f0f8' : '#1a1a2e',
           lineHeight: 1.1,
           marginBottom: '1.5rem',

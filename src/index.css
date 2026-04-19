@@ -810,3 +810,7 @@ html.force-mobile .char-grid-main {
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important;
   gap: 0.75rem !important;
 }
+
+@keyframes selectGlowPulse { 0% { text-shadow: 0 0 10px rgba(99, 102, 241, 0.4); } 50% { text-shadow: 0 0 20px rgba(99, 102, 241, 0.8), 0 0 30px rgba(168, 85, 247, 0.6); transform: scale(1.02); } 100% { text-shadow: 0 0 10px rgba(99, 102, 241, 0.4); } }
+.select-game-pulse { animation: selectGlowPulse 3s infinite ease-in-out; transition: all 0.3s ease; }
+.select-game-pulse:hover { animation-play-state: paused; transform: scale(1.05); text-shadow: 0 0 30px rgba(99, 102, 241, 1), 0 0 50px rgba(168, 85, 247, 0.8); }
