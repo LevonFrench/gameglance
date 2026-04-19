@@ -843,7 +843,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
 
                 {expandedGameId === game.id ? (
                   /* Expanded Header Layout */
-                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem', width: '100%', position: 'relative', zIndex: 1 }}>
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem', width: '100%', position: 'relative', zIndex: 1 }}>
                     {/* Watermark Logo */}
                     <div style={{
                       position: 'absolute',
@@ -880,68 +880,62 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                     
                     <div style={{ 
                       display: 'flex', 
-                      gap: 'var(--space-md)', 
+                      gap: 'var(--space-sm)', 
                       color: 'var(--text-secondary)',
-                      fontSize: '1.1rem',
+                      fontSize: '0.95rem',
                       position: 'relative',
                       zIndex: 1,
                       fontWeight: 600,
-                      letterSpacing: '0.05em',
+                      letterSpacing: '0.03em',
                       textTransform: 'uppercase',
                       flexWrap: 'wrap',
                       justifyContent: 'center',
                       alignItems: 'center'
                     }}>
                       <span>Roster: {game.rosterCount || game.characters?.length || 0}</span>
-                      <span>•</span>
-                      <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                      <span style={{ opacity: 0.5 }}>•</span>
+                      <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
                         Platforms: <PlatformIcons platformString={game.platform || 'Arcade'} />
                       </span>
-                      <span>•</span>
+                      <span style={{ opacity: 0.5 }}>•</span>
                       {game.developer && <span style={{ color: `hsl(${Math.abs(Array.from(game.id).reduce((hash, char) => char.charCodeAt(0) + ((hash << 5) - hash), 0)) % 360}, 70%, 60%)` }}>{game.developer}</span>}
-                      {game.developer && game.releaseYear && <span>•</span>}
+                      {game.developer && game.releaseYear && <span style={{ opacity: 0.5 }}>•</span>}
                       {game.releaseYear && <span>{game.releaseYear}</span>}
-                    </div>
 
-                    {game.tagline && (
-                      <p style={{
-                        color: 'var(--text-tertiary)',
-                        fontStyle: 'italic',
-                        margin: 0,
-                        maxWidth: '600px',
-                        position: 'relative',
-                        zIndex: 1,
-                        fontSize: '1.1rem'
-                      }}>
-                        "{game.tagline}"
-                      </p>
-                    )}
-
-                    {game.tags && game.tags.length > 0 && (
-                      <div style={{ 
-                        display: 'flex', 
-                        gap: 'var(--space-sm)', 
-                        flexWrap: 'wrap',
-                        justifyContent: 'center',
-                        position: 'relative',
-                        zIndex: 1
-                      }}>
-                        {game.tags.map(tag => (
-                          <span key={tag} style={{
-                            background: isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.05)',
-                            padding: '4px 12px',
-                            borderRadius: '16px',
-                            fontSize: '0.8rem',
-                            fontWeight: 600,
-                            color: 'var(--text-primary)',
-                            border: `1px solid ${isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'}`,
-                            backdropFilter: 'blur(4px)'
+                      {game.tagline && (
+                        <>
+                          <span style={{ opacity: 0.5, margin: '0 0.25rem' }}>|</span>
+                          <span style={{
+                            color: 'var(--text-tertiary)',
+                            fontStyle: 'italic',
+                            textTransform: 'none',
                           }}>
-                            {tag}
+                            "{game.tagline}"
                           </span>
-                        ))}
-                      </div>
-                    )}
+                        </>
+                      )}
+
+                      {game.tags && game.tags.length > 0 && (
+                        <>
+                          <span style={{ opacity: 0.5, margin: '0 0.25rem' }}>|</span>
+                          <div style={{ display: 'flex', gap: '6px' }}>
+                            {game.tags.map(tag => (
+                              <span key={tag} style={{
+                                background: isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.04)',
+                                padding: '2px 8px',
+                                borderRadius: '12px',
+                                fontSize: '0.75rem',
+                                color: 'var(--text-primary)',
+                                border: `1px solid ${isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'}`,
+                                backdropFilter: 'blur(4px)'
+                              }}>
+                                {tag}
+                              </span>
+                            ))}
+                          </div>
+                        </>
+                      )}
+                    </div>
                   </div>
                 ) : (
                   /* Standard Card Layout */
@@ -1010,7 +1004,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                       setTimeout(() => {
                         const el = document.getElementById(`game-container-${game.id}`);
                         if (el) {
-                          const y = el.getBoundingClientRect().top + window.scrollY - 100;
+                          const y = el.getBoundingClientRect().top + window.scrollY - 260;
                           window.scrollTo({ top: y, behavior: 'smooth' });
                         }
                       }, 50);
