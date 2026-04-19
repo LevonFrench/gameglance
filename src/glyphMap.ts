@@ -60,134 +60,134 @@ export const getGlyphLabel = (input: string, controller: ControllerType): string
 export const getGlyphColor = (input: string, controller: ControllerType): string => {
   const normInput = input.replace(/[\][]/g, '').toUpperCase();
 
+  // Universal Aliasing Groups
+  const isLp = ['LP', 'LIGHT PUNCH', 'FRONT PUNCH', 'A', 'P', '1', 'L'].includes(normInput);
+  const isMp = ['MP', 'MEDIUM PUNCH', 'BACK PUNCH', 'RP', 'RIGHT PUNCH', 'C', 'S', '2', 'M'].includes(normInput);
+  const isHp = ['HP', 'HEAVY PUNCH', 'R1', 'RB', 'R'].includes(normInput);
+  
+  const isLk = ['LK', 'LIGHT KICK', 'FRONT KICK', 'B', 'K', '3'].includes(normInput);
+  const isMk = ['MK', 'MEDIUM KICK', 'BACK KICK', 'RK', 'RIGHT KICK', 'D', 'H', '4'].includes(normInput);
+  const isHk = ['HK', 'HEAVY KICK', 'R2', 'RT'].includes(normInput);
+
   if (controller === 'mk') {
     if (normInput === 'BL') return '#94a3b8';
     if (normInput === 'R') return '#22c55e';
-    if (['LP', 'HP', '1', '2'].includes(normInput)) return '#ef4444';
-    if (['LK', 'HK', '3', '4'].includes(normInput)) return '#3b82f6';
+    if (isLp || isHp) return '#ef4444'; // Red
+    if (isLk || isMk || isHk) return '#3b82f6'; // Blue
     return '#888888';
   }
 
-  const psColors: Record<string, string> = {
-    'LP': '#ec4899', 'LIGHT PUNCH': '#ec4899', 'FRONT PUNCH': '#ec4899',
-    'RP': '#22c55e', 'RIGHT PUNCH': '#22c55e', 
-    'MP': '#22c55e', 'MEDIUM PUNCH': '#22c55e', 'BACK PUNCH': '#22c55e',
-    'HP': '#e2e8f0', 'HEAVY PUNCH': '#e2e8f0',
-    'LK': '#3b82f6', 'LIGHT KICK': '#3b82f6', 'FRONT KICK': '#3b82f6',
-    'RK': '#ef4444', 'RIGHT KICK': '#ef4444',
-    'MK': '#ef4444', 'MEDIUM KICK': '#ef4444', 'BACK KICK': '#ef4444',
-    'HK': '#94a3b8', 'HEAVY KICK': '#94a3b8',
-  };
+  // --- Controller Specific Color Definitions ---
   
-  const xboxColors: Record<string, string> = {
-    'LP': '#3b82f6', 'LIGHT PUNCH': '#3b82f6', 'FRONT PUNCH': '#3b82f6', 'A': '#3b82f6',
-    'RP': '#eab308', 'RIGHT PUNCH': '#eab308', 'C': '#eab308',
-    'MP': '#eab308', 'MEDIUM PUNCH': '#eab308', 'BACK PUNCH': '#eab308',
-    'HP': '#e2e8f0', 'HEAVY PUNCH': '#e2e8f0',
-    'LK': '#22c55e', 'LIGHT KICK': '#22c55e', 'FRONT KICK': '#22c55e', 'B': '#22c55e',
-    'RK': '#ef4444', 'RIGHT KICK': '#ef4444', 'D': '#ef4444',
-    'MK': '#ef4444', 'MEDIUM KICK': '#ef4444', 'BACK KICK': '#ef4444',
-    'HK': '#94a3b8', 'HEAVY KICK': '#94a3b8',
-  };
-  
-  const switchColors: Record<string, string> = {
-    'LP': '#22c55e', 'LIGHT PUNCH': '#22c55e', 'FRONT PUNCH': '#22c55e', 'A': '#22c55e',
-    'RP': '#3b82f6', 'RIGHT PUNCH': '#3b82f6', 'C': '#3b82f6',
-    'MP': '#3b82f6', 'MEDIUM PUNCH': '#3b82f6', 'BACK PUNCH': '#3b82f6',
-    'HP': '#e2e8f0', 'HEAVY PUNCH': '#e2e8f0',
-    'LK': '#eab308', 'LIGHT KICK': '#eab308', 'FRONT KICK': '#eab308', 'B': '#eab308',
-    'RK': '#ef4444', 'RIGHT KICK': '#ef4444', 'D': '#ef4444',
-    'MK': '#ef4444', 'MEDIUM KICK': '#ef4444', 'BACK KICK': '#ef4444',
-    'HK': '#94a3b8', 'HEAVY KICK': '#94a3b8',
+  const getPsColor = () => {
+    if (isLp) return '#ec4899'; // Pink
+    if (isLk) return '#3b82f6'; // Blue
+    if (isMp) return '#22c55e'; // Green
+    if (isMk) return '#ef4444'; // Red
+    if (isHp || isHk) return '#e2e8f0'; // Grey/White
+    return null;
   };
 
-  const neogeoColors: Record<string, string> = {
-    'LP': '#ef4444', 'LIGHT PUNCH': '#ef4444', // Red A
-    'LK': '#eab308', 'LIGHT KICK': '#eab308', // Yellow B
-    'HP': '#22c55e', 'HEAVY PUNCH': '#22c55e', 'MP': '#22c55e', 'MEDIUM PUNCH': '#22c55e', // Green C
-    'HK': '#3b82f6', 'HEAVY KICK': '#3b82f6', 'MK': '#3b82f6', 'MEDIUM KICK': '#3b82f6', // Blue D
+  const getXboxColor = () => {
+    if (isLp) return '#3b82f6'; // Blue
+    if (isLk) return '#22c55e'; // Green
+    if (isMp) return '#eab308'; // Yellow
+    if (isMk) return '#ef4444'; // Red
+    if (isHp || isHk) return '#e2e8f0'; // Grey/White
+    return null;
   };
 
-  const wiiColors: Record<string, string> = {
-    'LP': '#ffffff', 'LIGHT PUNCH': '#ffffff', 
-    'LK': '#ffffff', 'LIGHT KICK': '#ffffff', 
-    'HP': '#ef4444', 'HEAVY PUNCH': '#ef4444', 'MP': '#ef4444', 'MEDIUM PUNCH': '#ef4444',
-    'HK': '#1f2937', 'HEAVY KICK': '#1f2937', 'MK': '#1f2937', 'MEDIUM KICK': '#1f2937',
+  const getSwitchColor = () => {
+    if (isLp) return '#22c55e'; // Green
+    if (isLk) return '#eab308'; // Yellow
+    if (isMp) return '#3b82f6'; // Blue
+    if (isMk) return '#ef4444'; // Red
+    if (isHp || isHk) return '#e2e8f0'; // Grey/White
+    return null;
   };
 
-  const snesColors: Record<string, string> = {
-    'LP': '#a0a0e0', 'LIGHT PUNCH': '#a0a0e0', // Y Lavender
-    'MP': '#a0a0e0', 'MEDIUM PUNCH': '#a0a0e0', // X Lavender
-    'HP': '#9ca3af', 'HEAVY PUNCH': '#9ca3af', // L Grey
-    'LK': '#503080', 'LIGHT KICK': '#503080', // B Purple
-    'MK': '#503080', 'MEDIUM KICK': '#503080', // A Purple
-    'HK': '#9ca3af', 'HEAVY KICK': '#9ca3af', // R Grey
+  const getNeogeoColor = () => {
+    if (isLp) return '#ef4444'; // Red
+    if (isLk) return '#eab308'; // Yellow
+    if (isMp || isHp) return '#22c55e'; // Green
+    if (isMk || isHk) return '#3b82f6'; // Blue
+    return null;
   };
 
-  const sfamiColors: Record<string, string> = {
-    'LP': '#22c55e', 'LIGHT PUNCH': '#22c55e', // Y Green
-    'MP': '#3b82f6', 'MEDIUM PUNCH': '#3b82f6', // X Blue
-    'HP': '#9ca3af', 'HEAVY PUNCH': '#9ca3af', // L Grey
-    'LK': '#eab308', 'LIGHT KICK': '#eab308', // B Yellow
-    'MK': '#ef4444', 'MEDIUM KICK': '#ef4444', // A Red
-    'HK': '#9ca3af', 'HEAVY KICK': '#9ca3af', // R Grey
+  const getWiiColor = () => {
+    if (isLp || isLk) return '#ffffff'; // White
+    if (isMp || isHp) return '#ef4444'; // Red
+    if (isMk || isHk) return '#1f2937'; // Dark
+    return null;
   };
 
-  const genesisColors: Record<string, string> = {
-    'LP': '#1f2937', 'LIGHT PUNCH': '#1f2937',
-    'MP': '#1f2937', 'MEDIUM PUNCH': '#1f2937',
-    'HP': '#1f2937', 'HEAVY PUNCH': '#1f2937',
-    'LK': '#1f2937', 'LIGHT KICK': '#1f2937',
-    'MK': '#1f2937', 'MEDIUM KICK': '#1f2937',
-    'HK': '#1f2937', 'HEAVY KICK': '#1f2937',
+  const getSnesColor = () => {
+    if (isLp || isMp) return '#a0a0e0'; // Lavender
+    if (isLk || isMk) return '#503080'; // Purple
+    if (isHp || isHk) return '#9ca3af'; // Grey
+    return null;
   };
 
-  const cpsColors: Record<string, string> = {
-    'LP': '#ef4444', 'LIGHT PUNCH': '#ef4444',
-    'MP': '#eab308', 'MEDIUM PUNCH': '#eab308',
-    'HP': '#3b82f6', 'HEAVY PUNCH': '#3b82f6',
-    'LK': '#ef4444', 'LIGHT KICK': '#ef4444',
-    'MK': '#eab308', 'MEDIUM KICK': '#eab308',
-    'HK': '#3b82f6', 'HEAVY KICK': '#3b82f6',
+  const getSfamiColor = () => {
+    if (isLp) return '#22c55e'; // Green
+    if (isLk) return '#eab308'; // Yellow
+    if (isMp) return '#3b82f6'; // Blue
+    if (isMk) return '#ef4444'; // Red
+    if (isHp || isHk) return '#9ca3af'; // Grey
+    return null;
   };
 
-  const tekkenColors: Record<string, string> = {
-    '1': '#3b82f6', 'LP': '#3b82f6', 'LIGHT PUNCH': '#3b82f6', // Blue
-    '2': '#3b82f6', 'RP': '#3b82f6', 'MP': '#3b82f6', 'MEDIUM PUNCH': '#3b82f6', // Blue
-    '3': '#eab308', 'LK': '#eab308', 'LIGHT KICK': '#eab308', // Yellow
-    '4': '#eab308', 'RK': '#eab308', 'MK': '#eab308', 'MEDIUM KICK': '#eab308', // Yellow
-    'TAG': '#ef4444', 'EN': '#ef4444' // Red
+  const getCpsColor = () => {
+    if (isLp || isLk) return '#ef4444'; // Red
+    if (isMp || isMk) return '#eab308'; // Yellow
+    if (isHp || isHk) return '#3b82f6'; // Blue
+    return null;
   };
 
-  const animeColors: Record<string, string> = {
-    // DBFZ
-    'L': '#3b82f6', // Blue
-    'M': '#eab308', // Yellow
-    'H': '#ef4444', // Red
-    'S': '#22c55e', // Green
-    'A1': '#9ca3af', // Grey
-    'A2': '#9ca3af',
-    // GGST
-    'P': '#ec4899', // Pink
-    'K': '#3b82f6', // Blue
-    'D': '#f97316', // Orange
+  const getTekkenColor = () => {
+    if (isLp || isMp) return '#3b82f6'; // Blue
+    if (isLk || isMk) return '#eab308'; // Yellow
+    if (['TAG', 'EN'].includes(normInput)) return '#ef4444'; // Red
+    return null;
   };
 
-  if (['P', 'K', 'PP', 'KK', 'PPP', 'KKK', 'ALL'].includes(normInput) && !animeColors[normInput]) {
+  const getAnimeColor = () => {
+    // DBFZ specific aliases
+    if (normInput === 'A1' || normInput === 'A2') return '#9ca3af'; // Grey
+    // GGST specific Dust
+    if (normInput === 'D') return '#f97316'; // Orange
+    
+    // Generic Anime defaults
+    if (isLp) return '#ec4899'; // Pink (P)
+    if (isLk) return '#3b82f6'; // Blue (K)
+    if (isMp) return '#22c55e'; // Green (S)
+    if (isMk) return '#ef4444'; // Red (H)
+    return null;
+  };
+
+  // Special multi-button inputs
+  if (['P', 'K', 'PP', 'KK', 'PPP', 'KKK', 'ALL'].includes(normInput) && !getAnimeColor()) {
     if (controller === 'playstation' || controller === 'wii') return '#ffffff';
     return '#1f2937';
   }
 
-  if (controller === 'playstation') return psColors[normInput] || animeColors[normInput] || '#ffffff';
-  if (controller === 'xbox') return xboxColors[normInput] || animeColors[normInput] || '#1f2937';
-  if (controller === 'switch') return switchColors[normInput] || animeColors[normInput] || '#1f2937';
-  if (controller === 'neogeo') return neogeoColors[normInput] || animeColors[normInput] || '#1f2937';
-  if (controller === 'wii') return wiiColors[normInput] || animeColors[normInput] || '#ffffff';
-  if (controller === 'snes') return snesColors[normInput] || animeColors[normInput] || '#1f2937';
-  if (controller === 'sfami') return sfamiColors[normInput] || animeColors[normInput] || '#1f2937';
-  if (controller === 'genesis') return genesisColors[normInput] || animeColors[normInput] || '#1f2937';
-  if (controller === 'cps') return cpsColors[normInput] || animeColors[normInput] || '#1f2937';
-  if (controller === 'tekken') return tekkenColors[normInput] || animeColors[normInput] || '#1f2937';
+  // Resolve color based on controller priority
+  let color: string | null = null;
+  if (controller === 'playstation') color = getPsColor();
+  else if (controller === 'xbox') color = getXboxColor();
+  else if (controller === 'switch') color = getSwitchColor();
+  else if (controller === 'neogeo') color = getNeogeoColor();
+  else if (controller === 'wii') color = getWiiColor();
+  else if (controller === 'snes') color = getSnesColor();
+  else if (controller === 'sfami') color = getSfamiColor();
+  else if (controller === 'cps') color = getCpsColor();
+  else if (controller === 'tekken') color = getTekkenColor();
+
+  if (color) return color;
   
-  return animeColors[normInput] || '#1f2937'; // Arcade generic
+  // Fallback to anime color mappings if standard controller didn't catch it
+  const fallback = getAnimeColor();
+  if (fallback) return fallback;
+
+  return '#1f2937'; // Arcade generic
 };
