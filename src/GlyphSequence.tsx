@@ -422,6 +422,10 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
     if (input === '[Cancel]') {
       lines.push(currentLine);
       currentLine = [];
+    } else if (input.toLowerCase() === 'or') {
+      currentLine.push(input);
+      lines.push(currentLine);
+      currentLine = [];
     } else {
       currentLine.push(input);
     }

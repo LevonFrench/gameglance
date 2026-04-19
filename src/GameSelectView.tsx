@@ -382,7 +382,7 @@ export const GameSelectView: React.FC<Props> = ({
   const [tagFilter, setTagFilter] = useState<string>('All');
   const [showCards, setShowCards] = useState(disableInitialAnimation || false);
   const [expandedGameId, setExpandedGameId] = useState<string | null>(null);
-  const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
+  const cardRefs = useRef<Map<string, HTMLDivElement>>(new Map());
   
   useEffect(() => {
     window.scrollTo(0,0);
@@ -398,7 +398,7 @@ export const GameSelectView: React.FC<Props> = ({
   };
 
   // Mouse-reactive gradient glow
-  const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>, gameId: string) => {
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>, gameId: string) => {
     const el = cardRefs.current.get(gameId);
     if (!el) return;
     const rect = el.getBoundingClientRect();
@@ -510,7 +510,7 @@ export const GameSelectView: React.FC<Props> = ({
           className={!showCards ? "select-game-pulse" : ""}
           onClick={() => { setShowCards(true); setExpandedGameId(null); }}
           style={{
-          fontSize: 'max(4rem, 8vw)',
+          fontSize: 'max(2rem, 4vw)',
           fontWeight: 900,
           letterSpacing: '-0.04em',
           margin: 0,
@@ -726,9 +726,9 @@ export const GameSelectView: React.FC<Props> = ({
             >
               <div
                 id={`game-card-${game.id}`}
-                ref={el => { if (el) cardRefs.current.set(game.id, el as any); }}
+                ref={el => { if (el) cardRefs.current.set(game.id, el); }}
                 onClick={() => onSelectGame(game)}
-                onMouseMove={(e) => handleMouseMove(e as any, game.id)}
+                onMouseMove={(e) => handleMouseMove(e, game.id)}
                 role="button"
                 tabIndex={0}
                 style={{

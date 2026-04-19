@@ -69,8 +69,8 @@ export const LegacyCurationView: React.FC = () => {
       setComboName('');
       setComboInput('');
       setTimeout(() => setSaveMessage(''), 2000);
-    } catch (err: any) {
-      setSaveMessage(err.message || 'Error saving');
+    } catch (err: unknown) {
+      setSaveMessage(err instanceof Error ? err.message : 'Error saving');
     } finally {
       setIsSaving(false);
     }

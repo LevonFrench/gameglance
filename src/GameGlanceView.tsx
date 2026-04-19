@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useCallback, useRef } from 'react';
+import React, { useState, useEffect, useCallback, useRef, useMemo } from 'react';
 import type { PlaylistItem } from './types';
 import { GlyphSequence } from './GlyphSequence';
 import { useTheme } from './useTheme';
@@ -26,7 +26,7 @@ interface WakeLockSentinel {
 }
 
 export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, selectedCharacterId, characterName, controller, notationSystem, onExit, onHome, onBack, onRemoveMove, onCharacterChange }) => {
-  const uniqueCharacters = Array.from(new Set(playlist.map(p => p.characterId)));
+  const uniqueCharacters = useMemo(() => Array.from(new Set(playlist.map(p => p.characterId))), [playlist]);
   const [activeTab, setActiveTab] = useState(
     uniqueCharacters.includes(selectedCharacterId) ? selectedCharacterId : uniqueCharacters[0]
   );
@@ -35,11 +35,12 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
 
   useEffect(() => {
     if (uniqueCharacters.length > 0 && !uniqueCharacters.includes(activeTab)) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setActiveTab(uniqueCharacters[0]);
       if (onCharacterChange) onCharacterChange(uniqueCharacters[0]);
       setCurrentPage(0);
     }
-  }, [uniqueCharacters.join(','), activeTab, onCharacterChange]);
+  }, [uniqueCharacters, activeTab, onCharacterChange]);
 
   const activePlaylist = playlist.filter(p => p.characterId === activeTab).map(p => p.move);
   const [isPlaying, setIsPlaying] = useState(true);

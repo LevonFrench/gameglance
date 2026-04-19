@@ -72,6 +72,7 @@ export const App: React.FC = () => {
     if (syncState.connected && syncState.gameId) {
       const game = SUPPORTED_GAMES.find(g => g.mameRomset === syncState.gameId);
       if (game) {
+        // eslint-disable-next-line react-hooks/set-state-in-effect
         setSelectedGame(prev => {
           if (prev?.id === game.id) return prev;
           setCurrentView(v => (v !== 'char_select' && v !== 'move_list') ? 'char_select' : v);
@@ -82,7 +83,7 @@ export const App: React.FC = () => {
           fetch(`/data/${game.id}/_roster.json`)
             .then(res => res.json())
             .then(roster => {
-              const char = roster.find((c: any) => c.ramId?.toString() === syncState.p1CharId?.toString());
+              const char = roster.find((c: { id: string; ramId?: string | number }) => c.ramId?.toString() === syncState.p1CharId?.toString());
               if (char) {
                 setSelectedCharacter(prev => {
                   if (prev === char.id) return prev;
@@ -163,6 +164,7 @@ export const App: React.FC = () => {
   // Guard against invalid routes
   useEffect(() => {
     if (currentView === 'char_select' && !selectedGame) {
+      // eslint-disable-next-line react-hooks/set-state-in-effect
       setCurrentView('game_select');
     }
     if (currentView === 'move_list' && (!selectedGame || !selectedCharacter)) {
