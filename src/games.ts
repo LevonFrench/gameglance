@@ -821,7 +821,7 @@ rosterCount: 29,
     developer: "Capcom",
 
     releaseYear: 1995,
-    platform: "Arcade, Saturn, PS1, PC",
+    platform: "Arcade, Saturn, PS1, PC, PS4, Switch, Xbox One",
 
 rosterCount: 12,
 
@@ -837,7 +837,24 @@ rosterCount: 12,
       { name: 'Parts Damage', description: 'Specific mech parts can be damaged, affecting abilities.'  }
     ],
 
-    characters: [],
+    characters: [
+      { id: 'blodia', name: 'Blodia', moveCount: 0 },
+      { id: 'reptos', name: 'Reptos', moveCount: 0 },
+      { id: 'ford', name: 'Ford', moveCount: 0 },
+      { id: 'lightning', name: 'Lightning', moveCount: 0 },
+      { id: 'swordsman', name: 'Swordsman', moveCount: 0 },
+      { id: 'jackal', name: 'Jackal', moveCount: 0 },
+      { id: 'killer-bee', name: 'Killer Bee', moveCount: 0 },
+      { id: 'tarantula', name: 'Tarantula', moveCount: 0 },
+      { id: 'veritas', name: 'Veritas', moveCount: 0 },
+      { id: 'helion', name: 'Helion', moveCount: 0 },
+      { id: 'super-8', name: 'Super 8', moveCount: 0 },
+      { id: 'gaits', name: 'Gaits', moveCount: 0 },
+      { id: 'warlock', name: 'Warlock', moveCount: 0 },
+      { id: 'vishnu', name: 'Vishnu', moveCount: 0 },
+      { id: 'rioto', name: 'Rioto', moveCount: 0 },
+      { id: 'mech-gouki', name: 'Mech Gouki', moveCount: 0 }
+    ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -855,7 +872,7 @@ rosterCount: 12,
     developer: "Capcom",
 
     releaseYear: 1994,
-    platform: "Arcade, PS1, PC",
+    platform: "Arcade, PS1, PC, PS4, Switch, Xbox One",
 
 rosterCount: 11,
 
@@ -872,17 +889,18 @@ rosterCount: 11,
     ],
 
     characters: [
-      { id: 'anakaris', name: 'Anakaris', moveCount: 0 },
-      { id: 'bishamon', name: 'Bishamon', moveCount: 0 },
-      { id: 'demitri-maximoff', name: 'Demitri Maximoff', moveCount: 0 },
-      { id: 'felicia', name: 'Felicia', moveCount: 0 },
-      { id: 'huitzil', name: 'Huitzil', moveCount: 0 },
+      { id: 'demitri', name: 'Demitri', moveCount: 0 },
+      { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
       { id: 'jon-talbain', name: 'Jon Talbain', moveCount: 0 },
       { id: 'lord-raptor', name: 'Lord Raptor', moveCount: 0 },
-      { id: 'morrigan-aensland', name: 'Morrigan', moveCount: 0 },
+      { id: 'victor', name: 'Victor', moveCount: 0 },
       { id: 'rikuo', name: 'Rikuo', moveCount: 0 },
       { id: 'sasquatch', name: 'Sasquatch', moveCount: 0 },
-      { id: 'victor', name: 'Victor', moveCount: 0 }
+      { id: 'anakaris', name: 'Anakaris', moveCount: 0 },
+      { id: 'bishamon', name: 'Bishamon', moveCount: 0 },
+      { id: 'felicia', name: 'Felicia', moveCount: 0 },
+      { id: 'hutzil', name: 'Hutzil', moveCount: 0 },
+      { id: 'pyron', name: 'Pyron', moveCount: 0 }
     ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -2075,7 +2093,7 @@ rosterCount: 25,
 
     developer: "Capcom",
 
-    releaseYear: 1987,
+    releaseYear: 2003,
 
         
     systemMechanics: [
@@ -2090,22 +2108,23 @@ rosterCount: 25,
     ],
 
     characters: [
-      { id: 'balrog', name: 'Balrog', moveCount: 0 },
-      { id: 'blanka', name: 'Blanka', moveCount: 0 },
-      { id: 'cammy', name: 'Cammy', moveCount: 0 },
-      { id: 'chun-li', name: 'Chun-Li', moveCount: 0 },
-      { id: 'dee-jay', name: 'Dee Jay', moveCount: 0 },
-      { id: 'dhalsim', name: 'Dhalsim', moveCount: 0 },
-      { id: 'e-honda', name: 'E. Honda', moveCount: 0 },
-      { id: 'fei-long', name: 'Fei Long', moveCount: 0 },
-      { id: 'guile', name: 'Guile', moveCount: 0 },
-      { id: 'ken', name: 'Ken', moveCount: 0 },
-      { id: 'm-bison', name: 'M. Bison', moveCount: 0 },
       { id: 'ryu', name: 'Ryu', moveCount: 0 },
-      { id: 'sagat', name: 'Sagat', moveCount: 0 },
-      { id: 't-hawk', name: 'T. Hawk', moveCount: 0 },
+      { id: 'ken', name: 'Ken', moveCount: 0 },
+      { id: 'ehonda', name: 'Ehonda', moveCount: 0 },
+      { id: 'chun-li', name: 'Chun Li', moveCount: 0 },
+      { id: 'blanka', name: 'Blanka', moveCount: 0 },
+      { id: 'zangief', name: 'Zangief', moveCount: 0 },
+      { id: 'guile', name: 'Guile', moveCount: 0 },
+      { id: 'dhalsim', name: 'Dhalsim', moveCount: 0 },
+      { id: 'thawk', name: 'Thawk', moveCount: 0 },
+      { id: 'cammy', name: 'Cammy', moveCount: 0 },
+      { id: 'fei-long', name: 'Fei Long', moveCount: 0 },
+      { id: 'dee-jay', name: 'Dee Jay', moveCount: 0 },
+      { id: 'balrog', name: 'Balrog', moveCount: 0 },
       { id: 'vega', name: 'Vega', moveCount: 0 },
-      { id: 'zangief', name: 'Zangief', moveCount: 0 }
+      { id: 'sagat', name: 'Sagat', moveCount: 0 },
+      { id: 'mbison', name: 'Mbison', moveCount: 0 },
+      { id: 'akuma', name: 'Akuma', moveCount: 0 }
     ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -2125,7 +2144,7 @@ rosterCount: 25,
 
     releaseYear: 1999,
 
-    platform: "Arcade Sega Dreamcast PlayStation, PC",
+    platform: "Arcade Sega Dreamcast PlayStation, PC, PS4, Switch, Xbox One",
 
 rosterCount: 15,
 
@@ -2371,7 +2390,7 @@ rosterCount: 8,
     developer: "Capcom",
 
     releaseYear: 1995,
-    platform: "Arcade, Saturn, PS1, PC",
+    platform: "Arcade, Saturn, PS1, PC, PS4, Switch, Xbox One",
 
 rosterCount: 12,
 
@@ -2388,18 +2407,19 @@ rosterCount: 12,
     ],
 
     characters: [
-      { id: 'black-heart', name: 'Black Heart', moveCount: 0 },
+      { id: 'spider-man', name: 'Spider Man', moveCount: 0 },
       { id: 'captain-america', name: 'Captain America', moveCount: 0 },
-      { id: 'doctor-doom', name: 'Doctor Doom', moveCount: 0 },
-      { id: 'hulk', name: 'Hulk', moveCount: 0 },
       { id: 'iron-man', name: 'Iron Man', moveCount: 0 },
-      { id: 'juggernaut', name: 'Juggernaut', moveCount: 0 },
-      { id: 'magneto', name: 'Magneto', moveCount: 0 },
+      { id: 'hulk', name: 'Hulk', moveCount: 0 },
+      { id: 'wolverine', name: 'Wolverine', moveCount: 0 },
       { id: 'psylocke', name: 'Psylocke', moveCount: 0 },
-      { id: 'shuma-gorath', name: 'Shuma-Gorath', moveCount: 0 },
-      { id: 'spider-man', name: 'Spider-Man', moveCount: 0 },
+      { id: 'magneto', name: 'Magneto', moveCount: 0 },
+      { id: 'juggernaut', name: 'Juggernaut', moveCount: 0 },
+      { id: 'blackheart', name: 'Blackheart', moveCount: 0 },
+      { id: 'shuma-gorath', name: 'Shuma Gorath', moveCount: 0 },
+      { id: 'dr-doom', name: 'Dr Doom', moveCount: 0 },
       { id: 'thanos', name: 'Thanos', moveCount: 0 },
-      { id: 'wolverine', name: 'Wolverine', moveCount: 0 }
+      { id: 'anita', name: 'Anita', moveCount: 0 }
     ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -2431,7 +2451,28 @@ rosterCount: 12,
       { name: 'Cross-Over Combination', description: 'Both characters perform supers simultaneously.'  }
     ],
 
-    characters: [],
+    characters: [
+      { id: 'cyclops', name: 'Cyclops', moveCount: 0 },
+      { id: 'wolverine', name: 'Wolverine', moveCount: 0 },
+      { id: 'spider-man', name: 'Spider Man', moveCount: 0 },
+      { id: 'captain-america', name: 'Captain America', moveCount: 0 },
+      { id: 'hulk', name: 'Hulk', moveCount: 0 },
+      { id: 'blackheart', name: 'Blackheart', moveCount: 0 },
+      { id: 'shuma-gorath', name: 'Shuma Gorath', moveCount: 0 },
+      { id: 'omega-red', name: 'Omega Red', moveCount: 0 },
+      { id: 'ryu', name: 'Ryu', moveCount: 0 },
+      { id: 'ken', name: 'Ken', moveCount: 0 },
+      { id: 'chun-li', name: 'Chun Li', moveCount: 0 },
+      { id: 'dhalsim', name: 'Dhalsim', moveCount: 0 },
+      { id: 'zangief', name: 'Zangief', moveCount: 0 },
+      { id: 'mbison', name: 'Mbison', moveCount: 0 },
+      { id: 'sakura', name: 'Sakura', moveCount: 0 },
+      { id: 'dan', name: 'Dan', moveCount: 0 },
+      { id: 'akuma', name: 'Akuma', moveCount: 0 },
+      { id: 'norimaro', name: 'Norimaro', moveCount: 0 },
+      { id: 'cyber-akuma', name: 'Cyber Akuma', moveCount: 0 },
+      { id: 'apocalypse', name: 'Apocalypse', moveCount: 0 }
+    ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -2451,7 +2492,7 @@ rosterCount: 12,
 
     releaseYear: 2000,
 
-    platform: "Arcade, DC, PS2, Xbox, PC",
+    platform: "Arcade, DC, PS2, Xbox, PC, PS4, Switch, Xbox One",
 
 rosterCount: 39,
 
@@ -2469,7 +2510,63 @@ rosterCount: 39,
       { name: 'Guard Cancel', description: 'Alpha Counter during blockstun to switch characters. Resets pressure at the cost of 1 meter.'  }
     ],
 
-    characters: [],
+    characters: [
+      { id: 'ruby-heart', name: 'Ruby Heart', moveCount: 0 },
+      { id: 'amingo', name: 'Amingo', moveCount: 0 },
+      { id: 'son-son', name: 'Son Son', moveCount: 0 },
+      { id: 'ryu', name: 'Ryu', moveCount: 0 },
+      { id: 'ken', name: 'Ken', moveCount: 0 },
+      { id: 'chun-li', name: 'Chun Li', moveCount: 0 },
+      { id: 'guile', name: 'Guile', moveCount: 0 },
+      { id: 'zangief', name: 'Zangief', moveCount: 0 },
+      { id: 'dhalsim', name: 'Dhalsim', moveCount: 0 },
+      { id: 'mbison', name: 'Mbison', moveCount: 0 },
+      { id: 'akuma', name: 'Akuma', moveCount: 0 },
+      { id: 'charlie', name: 'Charlie', moveCount: 0 },
+      { id: 'sakura', name: 'Sakura', moveCount: 0 },
+      { id: 'dan', name: 'Dan', moveCount: 0 },
+      { id: 'cammy', name: 'Cammy', moveCount: 0 },
+      { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
+      { id: 'anakaris', name: 'Anakaris', moveCount: 0 },
+      { id: 'b-b-hood', name: 'B B Hood', moveCount: 0 },
+      { id: 'felicia', name: 'Felicia', moveCount: 0 },
+      { id: 'megaman', name: 'Megaman', moveCount: 0 },
+      { id: 'roll', name: 'Roll', moveCount: 0 },
+      { id: 'tron-bonne', name: 'Tron Bonne', moveCount: 0 },
+      { id: 'servbot', name: 'Servbot', moveCount: 0 },
+      { id: 'strider', name: 'Strider', moveCount: 0 },
+      { id: 'hayato', name: 'Hayato', moveCount: 0 },
+      { id: 'captain-commando', name: 'Captain Commando', moveCount: 0 },
+      { id: 'jin', name: 'Jin', moveCount: 0 },
+      { id: 'cyclops', name: 'Cyclops', moveCount: 0 },
+      { id: 'wolverine', name: 'Wolverine', moveCount: 0 },
+      { id: 'wolverine-bone', name: 'Wolverine Bone', moveCount: 0 },
+      { id: 'storm', name: 'Storm', moveCount: 0 },
+      { id: 'rogue', name: 'Rogue', moveCount: 0 },
+      { id: 'gambit', name: 'Gambit', moveCount: 0 },
+      { id: 'cable', name: 'Cable', moveCount: 0 },
+      { id: 'marrow', name: 'Marrow', moveCount: 0 },
+      { id: 'psylocke', name: 'Psylocke', moveCount: 0 },
+      { id: 'colossus', name: 'Colossus', moveCount: 0 },
+      { id: 'iceman', name: 'Iceman', moveCount: 0 },
+      { id: 'silver-samurai', name: 'Silver Samurai', moveCount: 0 },
+      { id: 'omega-red', name: 'Omega Red', moveCount: 0 },
+      { id: 'spiral', name: 'Spiral', moveCount: 0 },
+      { id: 'sentinel', name: 'Sentinel', moveCount: 0 },
+      { id: 'magneto', name: 'Magneto', moveCount: 0 },
+      { id: 'juggernaut', name: 'Juggernaut', moveCount: 0 },
+      { id: 'sabretooth', name: 'Sabretooth', moveCount: 0 },
+      { id: 'spider-man', name: 'Spider Man', moveCount: 0 },
+      { id: 'venom', name: 'Venom', moveCount: 0 },
+      { id: 'captain-america', name: 'Captain America', moveCount: 0 },
+      { id: 'iron-man', name: 'Iron Man', moveCount: 0 },
+      { id: 'war-machine', name: 'War Machine', moveCount: 0 },
+      { id: 'hulk', name: 'Hulk', moveCount: 0 },
+      { id: 'dr-doom', name: 'Dr Doom', moveCount: 0 },
+      { id: 'thanos', name: 'Thanos', moveCount: 0 },
+      { id: 'shuma-gorath', name: 'Shuma Gorath', moveCount: 0 },
+      { id: 'blackheart', name: 'Blackheart', moveCount: 0 }
+    ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -2488,7 +2585,7 @@ rosterCount: 39,
 
     releaseYear: 1998,
 
-    platform: "Arcade, PS1, DC, PC",
+    platform: "Arcade, PS1, DC, PC, PS4, Switch, Xbox One",
 
 rosterCount: 14,
 
@@ -2505,20 +2602,27 @@ rosterCount: 14,
     ],
 
     characters: [
-      { id: 'captain-america', name: 'Captain America', moveCount: 0 },
-      { id: 'chun-li', name: 'Chun-Li', moveCount: 0 },
-      { id: 'gambit', name: 'Gambit', moveCount: 0 },
-      { id: 'hulk', name: 'Hulk', moveCount: 0 },
-      { id: 'jin', name: 'Jin', moveCount: 0 },
-      { id: 'mega-man', name: 'Mega Man', moveCount: 0 },
-      { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
       { id: 'ryu', name: 'Ryu', moveCount: 0 },
-      { id: 'spider-man', name: 'Spider-Man', moveCount: 0 },
-      { id: 'strider-hiryu', name: 'Strider Hiryu', moveCount: 0 },
-      { id: 'venom', name: 'Venom', moveCount: 0 },
-      { id: 'war-machine', name: 'War Machine', moveCount: 0 },
+      { id: 'chun-li', name: 'Chun Li', moveCount: 0 },
+      { id: 'zangief', name: 'Zangief', moveCount: 0 },
+      { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
+      { id: 'captain-commando', name: 'Captain Commando', moveCount: 0 },
+      { id: 'megaman', name: 'Megaman', moveCount: 0 },
+      { id: 'strider', name: 'Strider', moveCount: 0 },
+      { id: 'spider-man', name: 'Spider Man', moveCount: 0 },
+      { id: 'captain-america', name: 'Captain America', moveCount: 0 },
+      { id: 'hulk', name: 'Hulk', moveCount: 0 },
       { id: 'wolverine', name: 'Wolverine', moveCount: 0 },
-      { id: 'zangief', name: 'Zangief', moveCount: 0 }
+      { id: 'venom', name: 'Venom', moveCount: 0 },
+      { id: 'gambit', name: 'Gambit', moveCount: 0 },
+      { id: 'war-machine', name: 'War Machine', moveCount: 0 },
+      { id: 'roll', name: 'Roll', moveCount: 0 },
+      { id: 'shadow-lady', name: 'Shadow Lady', moveCount: 0 },
+      { id: 'red-venom', name: 'Red Venom', moveCount: 0 },
+      { id: 'orange-hulk', name: 'Orange Hulk', moveCount: 0 },
+      { id: 'gold-war-machine', name: 'Gold War Machine', moveCount: 0 },
+      { id: 'lilith-aensland', name: 'Lilith Aensland', moveCount: 0 },
+      { id: 'onslaught', name: 'Onslaught', moveCount: 0 }
     ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -2788,7 +2892,7 @@ rosterCount: 21,
     developer: "Capcom",
 
     releaseYear: 1995,
-    platform: "Arcade, Saturn, PC",
+    platform: "Arcade, Saturn, PC, PS4, Switch, Xbox One",
 
 rosterCount: 14,
 
@@ -2805,20 +2909,20 @@ rosterCount: 14,
     ],
 
     characters: [
-      { id: 'anakaris', name: 'Anakaris', moveCount: 0 },
-      { id: 'bishamon', name: 'Bishamon', moveCount: 0 },
       { id: 'demitri', name: 'Demitri', moveCount: 0 },
-      { id: 'donovan', name: 'Donovan', moveCount: 0 },
-      { id: 'felicia', name: 'Felicia', moveCount: 0 },
-      { id: 'hsien-ko', name: 'Hsien-Ko', moveCount: 0 },
-      { id: 'huitzil', name: 'Huitzil', moveCount: 0 },
+      { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
       { id: 'jon-talbain', name: 'Jon Talbain', moveCount: 0 },
       { id: 'lord-raptor', name: 'Lord Raptor', moveCount: 0 },
-      { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
-      { id: 'pyron', name: 'Pyron', moveCount: 0 },
+      { id: 'victor', name: 'Victor', moveCount: 0 },
       { id: 'rikuo', name: 'Rikuo', moveCount: 0 },
       { id: 'sasquatch', name: 'Sasquatch', moveCount: 0 },
-      { id: 'victor', name: 'Victor', moveCount: 0 }
+      { id: 'anakaris', name: 'Anakaris', moveCount: 0 },
+      { id: 'bishamon', name: 'Bishamon', moveCount: 0 },
+      { id: 'felicia', name: 'Felicia', moveCount: 0 },
+      { id: 'hutzil', name: 'Hutzil', moveCount: 0 },
+      { id: 'pyron', name: 'Pyron', moveCount: 0 },
+      { id: 'donovan', name: 'Donovan', moveCount: 0 },
+      { id: 'hsien-ko', name: 'Hsien Ko', moveCount: 0 }
     ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -2983,7 +3087,7 @@ rosterCount: 13,
 
     releaseYear: 1997,
 
-    platform: "Arcade PlayStation Sega Saturn, PC",
+    platform: "Arcade PlayStation Sega Saturn, PC, PS4, Switch, Xbox One",
 
         
     systemMechanics: [
@@ -2998,18 +3102,18 @@ rosterCount: 13,
     ],
 
     characters: [
-      { id: 'akuma', name: 'Akuma', moveCount: 0 },
-      { id: 'chun-li', name: 'Chun-Li', moveCount: 0 },
-      { id: 'dan', name: 'Dan', moveCount: 0 },
-      { id: 'felicia', name: 'Felicia', moveCount: 0 },
-      { id: 'hsien-ko', name: 'Hsien-Ko', moveCount: 0 },
-      { id: 'ibuki', name: 'Ibuki', moveCount: 0 },
-      { id: 'ken', name: 'Ken', moveCount: 0 },
-      { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
       { id: 'ryu', name: 'Ryu', moveCount: 0 },
+      { id: 'ken', name: 'Ken', moveCount: 0 },
+      { id: 'chun-li', name: 'Chun Li', moveCount: 0 },
+      { id: 'zangief', name: 'Zangief', moveCount: 0 },
       { id: 'sakura', name: 'Sakura', moveCount: 0 },
+      { id: 'ibuki', name: 'Ibuki', moveCount: 0 },
+      { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
+      { id: 'felicia', name: 'Felicia', moveCount: 0 },
+      { id: 'hsien-ko', name: 'Hsien Ko', moveCount: 0 },
       { id: 'tessa', name: 'Tessa', moveCount: 0 },
-      { id: 'zangief', name: 'Zangief', moveCount: 0 }
+      { id: 'akuma', name: 'Akuma', moveCount: 0 },
+      { id: 'dan', name: 'Dan', moveCount: 0 }
     ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -5379,7 +5483,7 @@ rosterCount: 41,
 
     releaseYear: 1997,
 
-    platform: "Arcade, PC",
+    platform: "Arcade, PC, PS4, Switch, Xbox One",
 
         
     systemMechanics: [
@@ -5393,7 +5497,22 @@ rosterCount: 41,
       { name: 'Guard Cancel', description: 'Counter from blockstun.'  }
     ],
 
-    characters: [],
+    characters: [
+      { id: 'demitri', name: 'Demitri', moveCount: 0 },
+      { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
+      { id: 'jon-talbain', name: 'Jon Talbain', moveCount: 0 },
+      { id: 'lord-raptor', name: 'Lord Raptor', moveCount: 0 },
+      { id: 'victor', name: 'Victor', moveCount: 0 },
+      { id: 'rikuo', name: 'Rikuo', moveCount: 0 },
+      { id: 'sasquatch', name: 'Sasquatch', moveCount: 0 },
+      { id: 'anakaris', name: 'Anakaris', moveCount: 0 },
+      { id: 'bishamon', name: 'Bishamon', moveCount: 0 },
+      { id: 'felicia', name: 'Felicia', moveCount: 0 },
+      { id: 'donovan', name: 'Donovan', moveCount: 0 },
+      { id: 'hsien-ko', name: 'Hsien Ko', moveCount: 0 },
+      { id: 'hutzil', name: 'Hutzil', moveCount: 0 },
+      { id: 'pyron', name: 'Pyron', moveCount: 0 }
+    ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -5412,7 +5531,7 @@ rosterCount: 41,
 
     releaseYear: 1997,
 
-    platform: "Arcade Sega Saturn PlayStation, PC",
+    platform: "Arcade Sega Saturn PlayStation, PC, PS4, Switch, Xbox One",
 
         
     systemMechanics: [
@@ -5427,21 +5546,21 @@ rosterCount: 41,
     ],
 
     characters: [
-      { id: 'anakaris', name: 'Anakaris', moveCount: 0 },
-      { id: 'bb-hood', name: 'B.B. Hood', moveCount: 0 },
-      { id: 'bishamon', name: 'Bishamon', moveCount: 0 },
       { id: 'demitri', name: 'Demitri', moveCount: 0 },
-      { id: 'felicia', name: 'Felicia', moveCount: 0 },
-      { id: 'hsien-ko', name: 'Hsien-Ko', moveCount: 0 },
-      { id: 'jedah', name: 'Jedah', moveCount: 0 },
-      { id: 'jon-talbain', name: 'Jon Talbain', moveCount: 0 },
-      { id: 'lilith', name: 'Lilith', moveCount: 0 },
-      { id: 'lord-raptor', name: 'Lord Raptor', moveCount: 0 },
       { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
-      { id: 'q-bee', name: 'Q-Bee', moveCount: 0 },
+      { id: 'jon-talbain', name: 'Jon Talbain', moveCount: 0 },
+      { id: 'lord-raptor', name: 'Lord Raptor', moveCount: 0 },
+      { id: 'victor', name: 'Victor', moveCount: 0 },
       { id: 'rikuo', name: 'Rikuo', moveCount: 0 },
       { id: 'sasquatch', name: 'Sasquatch', moveCount: 0 },
-      { id: 'victor', name: 'Victor', moveCount: 0 }
+      { id: 'anakaris', name: 'Anakaris', moveCount: 0 },
+      { id: 'bishamon', name: 'Bishamon', moveCount: 0 },
+      { id: 'felicia', name: 'Felicia', moveCount: 0 },
+      { id: 'jedah', name: 'Jedah', moveCount: 0 },
+      { id: 'q-bee', name: 'Q Bee', moveCount: 0 },
+      { id: 'bb-hood', name: 'Bb Hood', moveCount: 0 },
+      { id: 'lilith', name: 'Lilith', moveCount: 0 },
+      { id: 'dark-talbain', name: 'Dark Talbain', moveCount: 0 }
     ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -5461,7 +5580,7 @@ rosterCount: 41,
 
     releaseYear: 1997,
 
-    platform: "Arcade Sega Saturn PlayStation, PC",
+    platform: "Arcade Sega Saturn PlayStation, PC, PS4, Switch, Xbox One",
 
         
     systemMechanics: [
@@ -5475,7 +5594,25 @@ rosterCount: 41,
       { name: 'Pursuit', description: 'OTG attacks on downed foes.'  }
     ],
 
-    characters: [],
+    characters: [
+      { id: 'demitri', name: 'Demitri', moveCount: 0 },
+      { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
+      { id: 'jon-talbain', name: 'Jon Talbain', moveCount: 0 },
+      { id: 'lord-raptor', name: 'Lord Raptor', moveCount: 0 },
+      { id: 'victor', name: 'Victor', moveCount: 0 },
+      { id: 'rikuo', name: 'Rikuo', moveCount: 0 },
+      { id: 'sasquatch', name: 'Sasquatch', moveCount: 0 },
+      { id: 'anakaris', name: 'Anakaris', moveCount: 0 },
+      { id: 'bishamon', name: 'Bishamon', moveCount: 0 },
+      { id: 'felicia', name: 'Felicia', moveCount: 0 },
+      { id: 'jedah', name: 'Jedah', moveCount: 0 },
+      { id: 'q-bee', name: 'Q Bee', moveCount: 0 },
+      { id: 'bb-hood', name: 'Bb Hood', moveCount: 0 },
+      { id: 'lilith', name: 'Lilith', moveCount: 0 },
+      { id: 'donovan', name: 'Donovan', moveCount: 0 },
+      { id: 'hutzil', name: 'Hutzil', moveCount: 0 },
+      { id: 'pyron', name: 'Pyron', moveCount: 0 }
+    ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -5835,7 +5972,7 @@ rosterCount: 7,
     developer: "Capcom",
 
     releaseYear: 1996,
-    platform: "Arcade, Saturn, PS1, PC",
+    platform: "Arcade, Saturn, PS1, PC, PS4, Switch, Xbox One",
 
 rosterCount: 18,
 
@@ -5852,24 +5989,23 @@ rosterCount: 18,
     ],
 
     characters: [
-      { id: 'akuma', name: 'Akuma', moveCount: 0 },
+      { id: 'cyclops', name: 'Cyclops', moveCount: 0 },
+      { id: 'wolverine', name: 'Wolverine', moveCount: 0 },
+      { id: 'storm', name: 'Storm', moveCount: 0 },
+      { id: 'rogue', name: 'Rogue', moveCount: 0 },
+      { id: 'gambit', name: 'Gambit', moveCount: 0 },
+      { id: 'sabretooth', name: 'Sabretooth', moveCount: 0 },
+      { id: 'juggernaut', name: 'Juggernaut', moveCount: 0 },
+      { id: 'magneto', name: 'Magneto', moveCount: 0 },
+      { id: 'ryu', name: 'Ryu', moveCount: 0 },
+      { id: 'ken', name: 'Ken', moveCount: 0 },
+      { id: 'chun-li', name: 'Chun Li', moveCount: 0 },
+      { id: 'dhalsim', name: 'Dhalsim', moveCount: 0 },
+      { id: 'zangief', name: 'Zangief', moveCount: 0 },
+      { id: 'mbison', name: 'Mbison', moveCount: 0 },
       { id: 'cammy', name: 'Cammy', moveCount: 0 },
       { id: 'charlie', name: 'Charlie', moveCount: 0 },
-      { id: 'chun-li', name: 'Chun-Li', moveCount: 0 },
-      { id: 'cyclops', name: 'Cyclops', moveCount: 0 },
-      { id: 'dhalsim', name: 'Dhalsim', moveCount: 0 },
-      { id: 'gambit', name: 'Gambit', moveCount: 0 },
-      { id: 'juggernaut', name: 'Juggernaut', moveCount: 0 },
-      { id: 'ken', name: 'Ken', moveCount: 0 },
-      { id: 'magneto', name: 'Magneto', moveCount: 0 },
-      { id: 'm-bison', name: 'M. Bison', moveCount: 0 },
-      { id: 'nash', name: 'Nash', moveCount: 0 },
-      { id: 'rogue', name: 'Rogue', moveCount: 0 },
-      { id: 'ryu', name: 'Ryu', moveCount: 0 },
-      { id: 'sabretooth', name: 'Sabretooth', moveCount: 0 },
-      { id: 'storm', name: 'Storm', moveCount: 0 },
-      { id: 'wolverine', name: 'Wolverine', moveCount: 0 },
-      { id: 'zangief', name: 'Zangief', moveCount: 0 }
+      { id: 'akuma', name: 'Akuma', moveCount: 0 }
     ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -5888,7 +6024,7 @@ rosterCount: 18,
     developer: "Capcom",
 
     releaseYear: 1994,
-    platform: "Arcade, Saturn, PS1, PC",
+    platform: "Arcade, Saturn, PS1, PC, PS4, Switch, Xbox One",
 
 rosterCount: 12,
 
@@ -5904,7 +6040,21 @@ rosterCount: 12,
       { name: 'Infinity Gems', description: 'Collect gems for temporary power boosts.'  }
     ],
 
-    characters: [],
+    characters: [
+      { id: 'wolverine', name: 'Wolverine', moveCount: 0 },
+      { id: 'cyclops', name: 'Cyclops', moveCount: 0 },
+      { id: 'storm', name: 'Storm', moveCount: 0 },
+      { id: 'iceman', name: 'Iceman', moveCount: 0 },
+      { id: 'colossus', name: 'Colossus', moveCount: 0 },
+      { id: 'psylocke', name: 'Psylocke', moveCount: 0 },
+      { id: 'omega-red', name: 'Omega Red', moveCount: 0 },
+      { id: 'sentinel', name: 'Sentinel', moveCount: 0 },
+      { id: 'silver-samurai', name: 'Silver Samurai', moveCount: 0 },
+      { id: 'spiral', name: 'Spiral', moveCount: 0 },
+      { id: 'juggernaut', name: 'Juggernaut', moveCount: 0 },
+      { id: 'magneto', name: 'Magneto', moveCount: 0 },
+      { id: 'akuma', name: 'Akuma', moveCount: 0 }
+    ],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -5976,16 +6126,10 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 10,
     characters: [
-      { id: 'hauzer', name: 'Hauzer', moveCount: 0 },
-      { id: 'hydron', name: 'Hydron', moveCount: 0 },
-      { id: 'kenji', name: 'Kenji', moveCount: 0 },
-      { id: 'kongou', name: 'Kongou', moveCount: 0 },
-      { id: 'lavia', name: 'Lavia', moveCount: 0 },
       { id: 'leo', name: 'Leo', moveCount: 0 },
-      { id: 'mai-ling', name: 'Mai-Ling', moveCount: 0 },
-      { id: 'ravange', name: 'Ravange', moveCount: 0 },
-      { id: 'scion', name: 'Scion', moveCount: 0 },
-      { id: 'tessa', name: 'Tessa', moveCount: 0 }
+      { id: 'mukuro', name: 'Mukuro', moveCount: 0 },
+      { id: 'tao', name: 'Tao', moveCount: 0 },
+      { id: 'tabasa', name: 'Tabasa', moveCount: 0 }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
   },
@@ -6617,8 +6761,8 @@ rosterCount: 8,
     id: 'street-fighter-alpha-warriors-dreams',
 
     mameRomset: "",
-    releaseYear: 1995,
-    platform: "Arcade, PS1, Saturn, PC",
+    releaseYear: 2003,
+    platform: "Arcade, PS1, Saturn, PC, PS4, Switch, Xbox One",
     name: "Street Fighter Alpha: Warriors' Dreams",
     isDraft: true,
     rosterCount: 12,

@@ -49,7 +49,7 @@ Users can choose between notation systems via the bottom header:
 
 - Direction words (`down`, `forward`, `down-forward`) → SVG directional arrows
 - Numpad digits (`2`, `3`, `6`) → rendered as styled numbers or converted to arrows
-- Button tokens (`LP`, `MP`, `HP`, `LK`, `MK`, `HK`, `A`, `B`, `C`, `D`) → colored button circles
+- Button tokens (`LP`, `MP`, `HP`, `LK`, `MK`, `HK`, `A`, `B`, `C`, `D`, `AST1`, `AST2`) → colored button circles
 - Macros (`PP`, `KK`, `PPP`, `KKK`) → stacked overlapping button glyphs
 - Separators (`,`, `-`, `~`, ` `) → `›` link arrows
 - Prefixes (`j.`, `cr.`, `st.`) → small labeled pills (IN AIR, CROUCH, STAND)

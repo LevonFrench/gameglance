@@ -46,6 +46,8 @@ const GLYPH_LABEL_MAP: Record<string, Record<ControllerType, string>> = {
   'up-back': { playstation: '↖', xbox: '↖', arcade: '↖', switch: '↖', neogeo: '↖', wii: '↖', mk: '↖', genesis: '↖', snes: '↖', sfami: '↖', cps: '↖', tekken: '↖' },
   '360': { playstation: '↻', xbox: '↻', arcade: '↻', switch: '↻', neogeo: '↻', wii: '↻', mk: '↻', genesis: '↻', snes: '↻', sfami: '↻', cps: '↻', tekken: '↻' },
   '720': { playstation: '↻↻', xbox: '↻↻', arcade: '↻↻', switch: '↻↻', neogeo: '↻↻', wii: '↻↻', mk: '↻↻', genesis: '↻↻', snes: '↻↻', sfami: '↻↻', cps: '↻↻', tekken: '↻↻' },
+  'AST1': { playstation: 'L1', xbox: 'LB', arcade: 'A1', switch: 'L', neogeo: 'A', wii: '1', mk: 'A1', genesis: 'Z', snes: 'L', sfami: 'L', cps: 'A1', tekken: 'A1' },
+  'AST2': { playstation: 'L2', xbox: 'LT', arcade: 'A2', switch: 'ZL', neogeo: 'B', wii: '2', mk: 'A2', genesis: 'C', snes: 'R', sfami: 'R', cps: 'A2', tekken: 'A2' },
 };
 
 export const getGlyphLabel = (input: string, controller: ControllerType): string => {
@@ -61,13 +63,16 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
   const normInput = input.replace(/[\][]/g, '').toUpperCase();
 
   // Universal Aliasing Groups
-  const isLp = ['LP', 'LIGHT PUNCH', 'FRONT PUNCH', 'A', 'P', '1', 'L'].includes(normInput);
-  const isMp = ['MP', 'MEDIUM PUNCH', 'BACK PUNCH', 'RP', 'RIGHT PUNCH', 'C', 'S', '2', 'M'].includes(normInput);
-  const isHp = ['HP', 'HEAVY PUNCH', 'R1', 'RB', 'R', 'SKILL'].includes(normInput);
+  const isLp = ['LP', 'LIGHT PUNCH', 'FRONT PUNCH', 'A', 'A1', 'P', '1', 'L'].includes(normInput);
+  const isMp = ['MP', 'MEDIUM PUNCH', 'BACK PUNCH', 'A2', 'RP', 'RIGHT PUNCH', 'C', 'S', '2', 'M'].includes(normInput);
+  const isHp = ['HP', 'HEAVY PUNCH', 'R1', 'RB', 'R', 'SKILL', 'W'].includes(normInput);
   
   const isLk = ['LK', 'LIGHT KICK', 'FRONT KICK', 'B', 'K', '3', 'U'].includes(normInput);
   const isMk = ['MK', 'MEDIUM KICK', 'BACK KICK', 'RK', 'RIGHT KICK', 'D', 'H', '4'].includes(normInput);
   const isHk = ['HK', 'HEAVY KICK', 'R2', 'RT', 'G'].includes(normInput);
+
+  const isL1 = ['AST1'].includes(normInput);
+  const isL2 = ['AST2'].includes(normInput);
 
   if (controller === 'mk') {
     if (normInput === 'BL') return '#94a3b8';
@@ -84,7 +89,7 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
     if (isLk) return '#3b82f6'; // Blue
     if (isMp) return '#22c55e'; // Green
     if (isMk) return '#ef4444'; // Red
-    if (isHp || isHk) return '#e2e8f0'; // Grey/White
+    if (isHp || isHk || isL1 || isL2) return '#e2e8f0'; // Grey/White
     return null;
   };
 
@@ -93,7 +98,7 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
     if (isLk) return '#22c55e'; // Green
     if (isMp) return '#eab308'; // Yellow
     if (isMk) return '#ef4444'; // Red
-    if (isHp || isHk) return '#e2e8f0'; // Grey/White
+    if (isHp || isHk || isL1 || isL2) return '#e2e8f0'; // Grey/White
     return null;
   };
 
@@ -102,7 +107,7 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
     if (isLk) return '#eab308'; // Yellow
     if (isMp) return '#3b82f6'; // Blue
     if (isMk) return '#ef4444'; // Red
-    if (isHp || isHk) return '#e2e8f0'; // Grey/White
+    if (isHp || isHk || isL1 || isL2) return '#e2e8f0'; // Grey/White
     return null;
   };
 
