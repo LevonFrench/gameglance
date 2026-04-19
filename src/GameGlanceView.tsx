@@ -620,8 +620,10 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
               padding: displayMode === 'stadium' ? '0' : '0.75rem',
               borderRadius: displayMode === 'stadium' ? '0' : '12px',
               border: displayMode === 'stadium' ? 'none' : '1px inset rgba(255,255,255,0.05)',
+              transform: displayMode === 'stadium' ? 'scale(3)' : 'none',
               transformOrigin: displayMode === 'stadium' ? 'center' : 'left center',
-              marginTop: displayMode === 'stadium' ? '2.5rem' : '0',
+              marginTop: displayMode === 'stadium' ? '4rem' : '0',
+              marginBottom: displayMode === 'stadium' ? '4rem' : '0',
             }}>
               <GlyphSequence inputs={[move.input]} controller={effectiveController} notationSystem={notationSystem} large={true} />
             </div>
