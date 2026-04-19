@@ -57,19 +57,38 @@ export const ApprovalComboListView: React.FC<Props> = ({
     });
   };
 
-  const handleExport = () => {
+  const [isSaving, setIsSaving] = useState(false);
+
+  const handleSaveApproved = async () => {
     const approvedCombos = combos.filter((_, i) => approvedIndices.has(i));
-    const dataStr = JSON.stringify(approvedCombos, null, 2);
-    const blob = new Blob([dataStr], { type: 'application/json' });
-    const url = URL.createObjectURL(blob);
-    
-    const a = document.createElement('a');
-    a.href = url;
-    a.download = `${characterId}_approved_combos.json`;
-    document.body.appendChild(a);
-    a.click();
-    document.body.removeChild(a);
-    URL.revokeObjectURL(url);
+    if (approvedCombos.length === 0) return;
+
+    setIsSaving(true);
+    try {
+      const res = await fetch('/api/approve_combos', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          gameId: game.id,
+          charId: characterId,
+          approvedCombos
+        })
+      });
+
+      if (!res.ok) {
+        throw new Error('Failed to save approved combos');
+      }
+
+      // Remove the approved combos from the local UI state so they disappear
+      const remainingCombos = combos.filter((_, i) => !approvedIndices.has(i));
+      setCombos(remainingCombos);
+      setApprovedIndices(new Set());
+    } catch (err) {
+      console.error(err);
+      alert('Failed to save approved combos to the character file.');
+    } finally {
+      setIsSaving(false);
+    }
   };
 
   const isDark = theme !== 'light';
@@ -183,59 +202,95 @@ export const ApprovalComboListView: React.FC<Props> = ({
               </button>
             </div>
 
-            {combos.map((combo, index) => {
-              const isApproved = approvedIndices.has(index);
-              return (
-                <div 
-                  key={index}
-                  onClick={() => toggleApproval(index)}
-                  style={{
-                    background: isApproved ? 'var(--bg-input)' : 'var(--bg-card)',
-                    border: '1px solid',
-                    borderColor: isApproved ? 'var(--accent-orange, #ea580c)' : 'var(--border-subtle)',
-                    borderRadius: 'var(--radius-lg)',
-                    padding: '1.25rem',
-                    cursor: 'pointer',
-                    transition: 'all 0.2s',
-                    position: 'relative',
-                  }}
-                >
-                  <div style={{
-                    position: 'absolute',
-                    top: '1.25rem',
-                    right: '1.25rem',
-                    width: '24px',
-                    height: '24px',
-                    borderRadius: '50%',
-                    border: '2px solid',
-                    borderColor: isApproved ? 'var(--accent-orange, #ea580c)' : 'var(--border-subtle)',
-                    background: isApproved ? 'var(--accent-orange, #ea580c)' : 'transparent',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    color: 'white',
-                  }}>
-                    {isApproved && <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>}
-                  </div>
+            {(() => {
+              const pendingIndices = combos.map((_, i) => i).filter(i => !approvedIndices.has(i));
+              const approvedListIndices = combos.map((_, i) => i).filter(i => approvedIndices.has(i));
 
-                  <div style={{ paddingRight: '2rem' }}>
-                    <div style={{ fontSize: '1.1rem', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '0.5rem', fontFamily: 'monospace' }}>
-                      {combo.route}
+              const renderRow = (index: number) => {
+                const combo = combos[index];
+                const isApproved = approvedIndices.has(index);
+                return (
+                  <div 
+                    key={index}
+                    onClick={() => toggleApproval(index)}
+                    style={{
+                      background: isApproved ? 'var(--bg-input)' : 'var(--bg-card)',
+                      border: '1px solid',
+                      borderColor: isApproved ? 'var(--accent-orange, #ea580c)' : 'var(--border-subtle)',
+                      borderRadius: 'var(--radius-lg)',
+                      padding: '1.25rem',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s',
+                      position: 'relative',
+                      opacity: isApproved ? 0.7 : 1,
+                    }}
+                  >
+                    <div style={{
+                      position: 'absolute',
+                      top: '1.25rem',
+                      right: '1.25rem',
+                      width: '24px',
+                      height: '24px',
+                      borderRadius: '50%',
+                      border: '2px solid',
+                      borderColor: isApproved ? 'var(--accent-orange, #ea580c)' : 'var(--border-subtle)',
+                      background: isApproved ? 'var(--accent-orange, #ea580c)' : 'transparent',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      color: 'white',
+                    }}>
+                      {isApproved && <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round"><polyline points="20 6 9 17 4 12"></polyline></svg>}
                     </div>
-                    {combo.damage && combo.damage !== 'Anywhere' && (
-                      <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.25rem' }}>
-                        <span style={{ fontWeight: 600 }}>Position:</span> {combo.damage}
+
+                    <div style={{ paddingRight: '2rem' }}>
+                      <div style={{ fontSize: '1.1rem', fontWeight: 800, color: 'var(--text-primary)', marginBottom: '0.5rem', fontFamily: 'monospace' }}>
+                        {combo.route}
                       </div>
-                    )}
-                    {combo.notes && (
-                      <div style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', fontStyle: 'italic', marginTop: '0.5rem' }}>
-                        {combo.notes}
-                      </div>
-                    )}
+                      {combo.damage && combo.damage !== 'Anywhere' && (
+                        <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)', marginBottom: '0.25rem' }}>
+                          <span style={{ fontWeight: 600 }}>Position:</span> {combo.damage}
+                        </div>
+                      )}
+                      {combo.notes && (
+                        <div style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', fontStyle: 'italic', marginTop: '0.5rem' }}>
+                          {combo.notes}
+                        </div>
+                      )}
+                    </div>
                   </div>
-                </div>
+                );
+              };
+
+              return (
+                <>
+                  {pendingIndices.length > 0 && (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                      {pendingIndices.map(renderRow)}
+                    </div>
+                  )}
+
+                  {approvedListIndices.length > 0 && (
+                    <div style={{ marginTop: '2rem', paddingTop: '2rem', borderTop: '1px dashed var(--border-subtle)' }}>
+                      <h3 style={{ margin: '0 0 1rem 0', color: 'var(--accent-orange, #ea580c)', fontSize: '1rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                        Approved Combos
+                      </h3>
+                      <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+                        {approvedListIndices.map(renderRow)}
+                      </div>
+                    </div>
+                  )}
+                  
+                  {pendingIndices.length === 0 && approvedListIndices.length > 0 && (
+                    <div style={{ textAlign: 'center', padding: '3rem', color: 'var(--text-secondary)', background: 'var(--bg-input)', borderRadius: 'var(--radius-lg)', marginTop: '1rem' }}>
+                      <div style={{ fontSize: '2rem', marginBottom: '1rem' }}>🎉</div>
+                      <div style={{ fontWeight: 600 }}>All combos reviewed!</div>
+                      <p style={{ fontSize: '0.9rem', marginTop: '0.5rem', color: 'var(--text-muted)' }}>You can now export the approved combos.</p>
+                    </div>
+                  )}
+                </>
               );
-            })}
+            })()}
           </div>
         )}
       </main>
@@ -270,7 +325,8 @@ export const ApprovalComboListView: React.FC<Props> = ({
             {approvedIndices.size} Selected
           </div>
           <button
-            onClick={handleExport}
+            onClick={handleSaveApproved}
+            disabled={isSaving}
             style={{
               background: 'var(--accent-orange, #ea580c)',
               color: 'white',
@@ -279,15 +335,16 @@ export const ApprovalComboListView: React.FC<Props> = ({
               padding: '0.6rem 1.25rem',
               fontSize: '0.9rem',
               fontWeight: 700,
-              cursor: 'pointer',
+              cursor: isSaving ? 'wait' : 'pointer',
               display: 'flex',
               alignItems: 'center',
               gap: '0.5rem',
               boxShadow: '0 4px 12px rgba(234, 88, 12, 0.4)',
+              opacity: isSaving ? 0.7 : 1,
             }}
           >
-            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
-            Export Approved
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"></path><polyline points="17 21 17 13 7 13 7 21"></polyline><polyline points="7 3 7 8 15 8"></polyline></svg>
+            {isSaving ? 'Saving...' : 'Save Approved'}
           </button>
         </div>
       </div>

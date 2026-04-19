@@ -247,6 +247,25 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
       );
     }
 
+    // Numpad directions (1-9) rendered as plain text (Intercept BEFORE getGlyphLabel so '2' doesn't become 'MP')
+    if (notationSystem === 'numpad' && /^[1-9]$/.test(input) && !['tekken', 'mk'].includes(controller)) {
+      return (
+        <span
+          key={idx}
+          style={{
+            color: 'var(--text-primary)',
+            fontWeight: 800,
+            fontSize: large ? '1.5rem' : '1.1rem',
+            fontFamily: "'Outfit', sans-serif",
+            margin: `0 ${large ? '1px' : '0px'}`,
+            ...styleOverrides
+          }}
+        >
+          {input}
+        </span>
+      );
+    }
+
     const label = getGlyphLabel(input, controller);
     const iconColor = getGlyphColor(input, controller);
 
@@ -290,24 +309,6 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
       );
     }
 
-    // Numpad directions (1-9) rendered as plain text
-    if (notationSystem === 'numpad' && /^[1-9]$/.test(label) && !['tekken', 'mk'].includes(controller)) {
-      return (
-        <span
-          key={idx}
-          style={{
-            color: 'var(--text-primary)',
-            fontWeight: 800,
-            fontSize: large ? '1.5rem' : '1.1rem',
-            fontFamily: "'Outfit', sans-serif",
-            margin: `0 ${large ? '1px' : '0px'}`,
-            ...styleOverrides
-          }}
-        >
-          {label}
-        </span>
-      );
-    }
 
     // Attack button glyphs
     const btnSize = large ? 48 : 30;
