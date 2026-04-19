@@ -455,7 +455,6 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
               alignItems: 'stretch',
               width: '100%',
               padding: displayMode === 'stadium' ? '0' : '1rem',
-              animation: `fadeInUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) ${idx * 50}ms both`,
               gap: displayMode === 'stadium' ? '3rem' : '0.75rem',
               // Note: Stadium mode overrides the background and border completely
               ...(displayMode === 'stadium' ? {

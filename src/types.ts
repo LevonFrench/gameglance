@@ -80,6 +80,7 @@ export interface GameDefinition {
   isHidden?: boolean;
   tags?: string[];
   notationSystem?: 'numpad' | 'traditional' | 'mk';
+  systemMechanics?: { name: string, description: string, input?: string }[];
   characters?: { id: string, name: string, isHidden?: boolean, moveCount?: number, comboCount?: number }[];
 }
 

@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import type { GameDefinition, GameSystemData } from './types';
+import React, { useState } from 'react';
+import type { GameDefinition } from './types';
 
 interface Props {
   game: GameDefinition;
@@ -8,31 +8,8 @@ interface Props {
 export const GameInfoCard: React.FC<Props> = ({ game }) => {
   const isDark = true;
   const [activeTab, setActiveTab] = useState<'info' | 'systems'>('systems');
-  const [systemData, setSystemData] = useState<GameSystemData | null>(null);
-  const [loading, setLoading] = useState(true);
-
-  useEffect(() => {
-    setLoading(true);
-    fetch('/data/mechanics.json')
-      .then(res => {
-        if (!res.ok) throw new Error("Failed to fetch");
-        return res.json();
-      })
-      .then(data => {
-        if (data[game.id]) {
-          setSystemData(data[game.id]);
-        } else {
-          setSystemData(null);
-        }
-      })
-      .catch(err => {
-        console.error("Error loading mechanics:", err);
-        setSystemData(null);
-      })
-      .finally(() => {
-        setLoading(false);
-      });
-  }, [game.id]);
+  
+  const mechanics = game.systemMechanics || null;
 
   // Extract a color based on game ID to use for subtle accents
   let hash = 0;
@@ -150,13 +127,9 @@ export const GameInfoCard: React.FC<Props> = ({ game }) => {
 
           {activeTab === 'systems' && (
             <div style={{ animation: 'fadeInUp 0.4s ease' }}>
-              {loading ? (
-                <div style={{ textAlign: 'center', padding: '3rem', color: 'var(--text-tertiary)' }}>
-                  Loading mechanics...
-                </div>
-              ) : systemData && systemData.mechanics ? (
+              {mechanics && mechanics.length > 0 ? (
                 <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 'var(--space-md)' }}>
-                  {systemData.mechanics.map((mech, idx) => (
+                  {mechanics.map((mech, idx) => (
                     <div key={mech.name} style={{ 
                       background: isDark ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.8)', 
                       padding: 'var(--space-lg)', 
