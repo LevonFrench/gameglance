@@ -703,6 +703,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
           return (
             <div
               key={game.id}
+              id={`game-container-${game.id}`}
               style={{
                 gridColumn: expandedGameId === game.id ? '1 / -1' : 'auto',
                 display: 'flex',
@@ -720,21 +721,23 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                 tabIndex={0}
                 style={{
                   position: 'relative',
-                  background: 'var(--bg-card)',
+                  background: expandedGameId === game.id 
+                    ? (isDark ? 'linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(20,20,30,0.8) 100%)' : 'linear-gradient(180deg, rgba(0,0,0,0.02) 0%, rgba(255,255,255,0.9) 100%)')
+                    : 'var(--bg-card)',
                   border: '1px solid var(--border-medium)',
                   boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
                   borderRadius: 'var(--radius-xl)',
-                  padding: '1.25rem 1rem',
+                  padding: expandedGameId === game.id ? '4rem 2rem' : '1.25rem 1rem',
                   display: 'flex',
                   flexDirection: 'column',
-                  alignItems: 'flex-start',
-                  justifyContent: 'space-between',
+                  alignItems: expandedGameId === game.id ? 'center' : 'flex-start',
+                  justifyContent: expandedGameId === game.id ? 'center' : 'space-between',
                   cursor: 'pointer',
                   transition: 'all 0.45s cubic-bezier(0.16, 1, 0.3, 1)',
                   minHeight: '110px',
                   overflow: 'hidden',
                   color: 'var(--text-primary)',
-                  textAlign: 'left',
+                  textAlign: expandedGameId === game.id ? 'center' : 'left',
                   fontFamily: 'inherit',
                   backdropFilter: 'blur(12px)',
                   WebkitBackdropFilter: 'blur(12px)',
@@ -838,106 +841,235 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                   </svg>
                 </button>
 
-                {/* Game name */}
-                <h2 style={{
-                  margin: 0,
-                  fontSize: '1.35rem',
-                  fontWeight: 800,
-                  letterSpacing: '-0.02em',
-                  position: 'relative',
-                  zIndex: 1,
-                  paddingRight: '2rem', // Space for fav button
-                }}>
-                  {game.name.split(': ').map((part, i, arr) => (
-                    <React.Fragment key={i}>
-                      <span style={{ display: 'inline-block' }}>
-                        {part}{i < arr.length - 1 ? ':' : ''}
-                      </span>
-                      {i < arr.length - 1 ? ' ' : ''}
-                    </React.Fragment>
-                  ))}
-                </h2>
-
-                {/* Bottom Info Row */}
-                <div style={{
-                  marginTop: '1.5rem',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'space-between',
-                  width: '100%',
-                  position: 'relative',
-                  zIndex: 1,
-                }}>
-                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                    {/* Fighter Count Pill */}
+                {expandedGameId === game.id ? (
+                  /* Expanded Header Layout */
+                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '1.5rem', width: '100%', position: 'relative', zIndex: 1 }}>
+                    {/* Watermark Logo */}
                     <div style={{
-                      display: 'flex',
-                      alignItems: 'center',
-                      gap: '0.4rem',
-                      padding: '0.3rem 0.7rem',
-                      borderRadius: 'var(--radius-full)',
-                      background: 'var(--bg-badge)',
-                      border: '1px solid var(--border-subtle)',
-                      fontSize: '0.82rem',
-                      fontWeight: 700,
-                      color: 'var(--text-primary)',
+                      position: 'absolute',
+                      top: '50%',
+                      left: '50%',
+                      transform: 'translate(-50%, -50%)',
+                      fontSize: 'clamp(4rem, 12vw, 10rem)',
+                      fontWeight: 900,
+                      color: isDark ? 'rgba(255, 255, 255, 0.02)' : 'rgba(0, 0, 0, 0.03)',
+                      whiteSpace: 'nowrap',
+                      userSelect: 'none',
+                      pointerEvents: 'none',
+                      fontFamily: "'Outfit', sans-serif",
+                      letterSpacing: '-0.03em',
+                      zIndex: 0
                     }}>
-                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                        <circle cx="12" cy="7" r="4"></circle>
-                      </svg>
-                      {game.rosterCount || game.characters?.length || 0}
+                      {game.name.toUpperCase()}
                     </div>
-                    
-                    {/* Platforms */}
-                    {game.platform && <PlatformIcons platformString={game.platform} />}
-                  </div>
 
-                  {/* Info button - Bottom Right */}
-                  <button
-                    className="info-btn"
-                    onClick={(e) => {
-                      e.stopPropagation();
-                      setExpandedGameId(expandedGameId === game.id ? null : game.id);
-                    }}
-                    style={{
-                      background: expandedGameId === game.id ? 'var(--accent-indigo)' : 'transparent',
-                      border: 'none',
+                    <h2 style={{ 
+                      margin: 0, 
+                      fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
+                      fontWeight: 900,
+                      color: 'var(--text-primary)',
+                      position: 'relative',
+                      zIndex: 1,
+                      letterSpacing: '-0.02em',
+                      fontFamily: "'Outfit', sans-serif",
+                      textShadow: isDark ? '0 4px 12px rgba(0,0,0,0.5)' : 'none'
+                    }}>
+                      {game.name}
+                    </h2>
+                    
+                    <div style={{ 
+                      display: 'flex', 
+                      gap: 'var(--space-md)', 
+                      color: 'var(--text-secondary)',
+                      fontSize: '1.1rem',
+                      position: 'relative',
+                      zIndex: 1,
+                      fontWeight: 600,
+                      letterSpacing: '0.05em',
+                      textTransform: 'uppercase',
+                      flexWrap: 'wrap',
+                      justifyContent: 'center',
+                      alignItems: 'center'
+                    }}>
+                      <span>Roster: {game.rosterCount || game.characters?.length || 0}</span>
+                      <span>•</span>
+                      <span style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        Platforms: <PlatformIcons platformString={game.platform || 'Arcade'} />
+                      </span>
+                      <span>•</span>
+                      {game.developer && <span style={{ color: `hsl(${Math.abs(Array.from(game.id).reduce((hash, char) => char.charCodeAt(0) + ((hash << 5) - hash), 0)) % 360}, 70%, 60%)` }}>{game.developer}</span>}
+                      {game.developer && game.releaseYear && <span>•</span>}
+                      {game.releaseYear && <span>{game.releaseYear}</span>}
+                    </div>
+
+                    {game.tagline && (
+                      <p style={{
+                        color: 'var(--text-tertiary)',
+                        fontStyle: 'italic',
+                        margin: 0,
+                        maxWidth: '600px',
+                        position: 'relative',
+                        zIndex: 1,
+                        fontSize: '1.1rem'
+                      }}>
+                        "{game.tagline}"
+                      </p>
+                    )}
+
+                    {game.tags && game.tags.length > 0 && (
+                      <div style={{ 
+                        display: 'flex', 
+                        gap: 'var(--space-sm)', 
+                        flexWrap: 'wrap',
+                        justifyContent: 'center',
+                        position: 'relative',
+                        zIndex: 1
+                      }}>
+                        {game.tags.map(tag => (
+                          <span key={tag} style={{
+                            background: isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.05)',
+                            padding: '4px 12px',
+                            borderRadius: '16px',
+                            fontSize: '0.8rem',
+                            fontWeight: 600,
+                            color: 'var(--text-primary)',
+                            border: `1px solid ${isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'}`,
+                            backdropFilter: 'blur(4px)'
+                          }}>
+                            {tag}
+                          </span>
+                        ))}
+                      </div>
+                    )}
+                  </div>
+                ) : (
+                  /* Standard Card Layout */
+                  <>
+                    <h2 style={{
+                      margin: 0,
+                      fontSize: '1.35rem',
+                      fontWeight: 800,
+                      letterSpacing: '-0.02em',
+                      position: 'relative',
+                      zIndex: 1,
+                      paddingRight: '2rem', // Space for fav button
+                    }}>
+                      {game.name.split(': ').map((part, i, arr) => (
+                        <React.Fragment key={i}>
+                          <span style={{ display: 'inline-block' }}>
+                            {part}{i < arr.length - 1 ? ':' : ''}
+                          </span>
+                          {i < arr.length - 1 ? ' ' : ''}
+                        </React.Fragment>
+                      ))}
+                    </h2>
+
+                    <div style={{
+                      marginTop: '1.5rem',
                       display: 'flex',
                       alignItems: 'center',
-                      justifyContent: 'center',
-                      cursor: 'pointer',
-                      color: expandedGameId === game.id ? '#fff' : 'var(--text-secondary)',
-                      transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
-                      padding: '4px',
-                      borderRadius: '50%',
-                    }}
-                    onMouseOver={e => {
-                      if (expandedGameId !== game.id) {
-                        e.currentTarget.style.color = 'var(--text-primary)';
-                        e.currentTarget.style.transform = 'scale(1.1)';
-                      }
-                    }}
-                    onMouseOut={e => {
-                      if (expandedGameId !== game.id) {
-                        e.currentTarget.style.color = 'var(--text-secondary)';
-                        e.currentTarget.style.transform = 'scale(1)';
-                      }
-                    }}
-                  >
-                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <circle cx="12" cy="12" r="10"></circle>
-                      <line x1="12" y1="16" x2="12" y2="12"></line>
-                      <line x1="12" y1="8" x2="12.01" y2="8"></line>
-                    </svg>
-                  </button>
-                </div>
+                      justifyContent: 'space-between',
+                      width: '100%',
+                      position: 'relative',
+                      zIndex: 1,
+                    }}>
+                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                        <div style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '0.4rem',
+                          padding: '0.3rem 0.7rem',
+                          borderRadius: 'var(--radius-full)',
+                          background: 'var(--bg-badge)',
+                          border: '1px solid var(--border-subtle)',
+                          fontSize: '0.82rem',
+                          fontWeight: 700,
+                          color: 'var(--text-primary)',
+                        }}>
+                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="12" cy="7" r="4"></circle>
+                          </svg>
+                          {game.rosterCount || game.characters?.length || 0}
+                        </div>
+                        {game.platform && <PlatformIcons platformString={game.platform} />}
+                      </div>
+                    </div>
+                  </>
+                )}
+
+                {/* Info button - Bottom Right */}
+                <button
+                  className="info-btn"
+                  onClick={(e) => {
+                    e.stopPropagation();
+                    const isExpanding = expandedGameId !== game.id;
+                    setExpandedGameId(isExpanding ? game.id : null);
+                    if (isExpanding) {
+                      setTimeout(() => {
+                        const el = document.getElementById(`game-container-${game.id}`);
+                        if (el) {
+                          const y = el.getBoundingClientRect().top + window.scrollY - 100;
+                          window.scrollTo({ top: y, behavior: 'smooth' });
+                        }
+                      }, 50);
+                    }
+                  }}
+                  style={{
+                    position: 'absolute',
+                    bottom: '1rem',
+                    right: '1rem',
+                    background: expandedGameId === game.id ? 'var(--accent-indigo)' : 'var(--bg-glass)',
+                    border: '1px solid var(--border-subtle)',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    cursor: 'pointer',
+                    color: expandedGameId === game.id ? '#fff' : 'var(--text-secondary)',
+                    transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                    width: '32px',
+                    height: '32px',
+                    padding: 0,
+                    borderRadius: '50%',
+                    zIndex: 2,
+                    backdropFilter: 'blur(4px)',
+                  }}
+                  onMouseOver={e => {
+                    if (expandedGameId !== game.id) {
+                      e.currentTarget.style.color = 'var(--text-primary)';
+                      e.currentTarget.style.transform = 'scale(1.15)';
+                      e.currentTarget.style.borderColor = 'rgba(255,255,255,0.3)';
+                    }
+                  }}
+                  onMouseOut={e => {
+                    if (expandedGameId !== game.id) {
+                      e.currentTarget.style.color = 'var(--text-secondary)';
+                      e.currentTarget.style.transform = 'scale(1)';
+                      e.currentTarget.style.borderColor = 'var(--border-subtle)';
+                    }
+                  }}
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    {expandedGameId === game.id ? (
+                      <>
+                        <line x1="18" y1="6" x2="6" y2="18"></line>
+                        <line x1="6" y1="6" x2="18" y2="18"></line>
+                      </>
+                    ) : (
+                      <>
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <line x1="12" y1="16" x2="12" y2="12"></line>
+                        <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                      </>
+                    )}
+                  </svg>
+                </button>
               </div>
 
               {/* Expanded Area */}
               {expandedGameId === game.id && (
                 <div style={{ animation: 'fadeInUp 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)' }}>
-                  <GameInfoCard game={game} onSelect={onSelectGame} />
+                  <GameInfoCard game={game} />
                 </div>
               )}
             </div>

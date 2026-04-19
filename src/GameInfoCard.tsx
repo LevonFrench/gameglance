@@ -4,10 +4,9 @@ import { useTheme } from './ThemeContext';
 
 interface Props {
   game: GameDefinition;
-  onSelect?: (game: GameDefinition) => void;
 }
 
-export const GameInfoCard: React.FC<Props> = ({ game, onSelect }) => {
+export const GameInfoCard: React.FC<Props> = ({ game }) => {
   const { theme } = useTheme();
   const isDark = theme === 'dark' || theme !== 'light'; // Default to dark for premium feel
   const [activeTab, setActiveTab] = useState<'info' | 'systems'>('systems');
@@ -65,148 +64,6 @@ export const GameInfoCard: React.FC<Props> = ({ game, onSelect }) => {
 
       <div style={{ display: 'flex', flexDirection: 'column' }}>
         
-        {/* Header Section */}
-        <div style={{ 
-          padding: 'var(--space-2xl) var(--space-xl)',
-          display: 'flex',
-          flexDirection: 'column',
-          alignItems: 'center',
-          textAlign: 'center',
-          position: 'relative',
-          overflow: 'hidden',
-          background: isDark 
-            ? 'linear-gradient(180deg, rgba(255,255,255,0.03) 0%, transparent 100%)' 
-            : 'linear-gradient(180deg, rgba(0,0,0,0.02) 0%, transparent 100%)'
-        }}>
-          {/* Watermark Logo */}
-          <div style={{
-            position: 'absolute',
-            top: '40%',
-            left: '50%',
-            transform: 'translate(-50%, -50%)',
-            fontSize: 'clamp(4rem, 12vw, 10rem)',
-            fontWeight: 900,
-            color: isDark ? 'rgba(255, 255, 255, 0.02)' : 'rgba(0, 0, 0, 0.03)',
-            whiteSpace: 'nowrap',
-            userSelect: 'none',
-            pointerEvents: 'none',
-            fontFamily: "'Outfit', sans-serif",
-            letterSpacing: '-0.03em',
-            zIndex: 0
-          }}>
-            {game.name.toUpperCase()}
-          </div>
-
-          <h2 style={{ 
-            margin: 0, 
-            fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
-            fontWeight: 900,
-            color: 'var(--text-primary)',
-            position: 'relative',
-            zIndex: 1,
-            letterSpacing: '-0.02em',
-            fontFamily: "'Outfit', sans-serif",
-            textShadow: isDark ? '0 4px 12px rgba(0,0,0,0.5)' : 'none'
-          }}>
-            {game.name}
-          </h2>
-          
-          {(game.developer || game.releaseYear) && (
-            <div style={{ 
-              display: 'flex', 
-              gap: 'var(--space-md)', 
-              color: 'var(--text-secondary)',
-              marginTop: 'var(--space-sm)',
-              fontSize: '1.1rem',
-              position: 'relative',
-              zIndex: 1,
-              fontWeight: 600,
-              letterSpacing: '0.05em',
-              textTransform: 'uppercase'
-            }}>
-              {game.developer && <span style={{ color: `hsl(${hue}, 70%, 60%)` }}>{game.developer}</span>}
-              {game.developer && game.releaseYear && <span>•</span>}
-              {game.releaseYear && <span>{game.releaseYear}</span>}
-            </div>
-          )}
-
-          {game.tagline && (
-            <p style={{
-              color: 'var(--text-tertiary)',
-              fontStyle: 'italic',
-              marginTop: 'var(--space-md)',
-              maxWidth: '600px',
-              position: 'relative',
-              zIndex: 1,
-              fontSize: '1.1rem'
-            }}>
-              "{game.tagline}"
-            </p>
-          )}
-
-          {game.tags && game.tags.length > 0 && (
-            <div style={{ 
-              display: 'flex', 
-              gap: 'var(--space-sm)', 
-              marginTop: 'var(--space-lg)',
-              flexWrap: 'wrap',
-              justifyContent: 'center',
-              position: 'relative',
-              zIndex: 1
-            }}>
-              {game.tags.map(tag => (
-                <span key={tag} style={{
-                  background: isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.05)',
-                  padding: '4px 12px',
-                  borderRadius: '16px',
-                  fontSize: '0.8rem',
-                  fontWeight: 600,
-                  color: 'var(--text-primary)',
-                  border: `1px solid ${isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.1)'}`,
-                  backdropFilter: 'blur(4px)'
-                }}>
-                  {tag}
-                </span>
-              ))}
-            </div>
-          )}
-
-          {onSelect && (
-            <div style={{ marginTop: 'var(--space-xl)', position: 'relative', zIndex: 1 }}>
-              <button
-                onClick={(e) => {
-                  e.stopPropagation();
-                  onSelect(game);
-                }}
-                style={{
-                  background: accentGradient,
-                  color: '#fff',
-                  border: 'none',
-                  padding: '1rem 3rem',
-                  borderRadius: 'var(--radius-full)',
-                  fontSize: '1.25rem',
-                  fontWeight: 800,
-                  letterSpacing: '0.05em',
-                  textTransform: 'uppercase',
-                  cursor: 'pointer',
-                  boxShadow: `0 8px 24px ${accentGlow}`,
-                  transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
-                }}
-                onMouseOver={(e) => {
-                  e.currentTarget.style.transform = 'translateY(-2px) scale(1.05)';
-                  e.currentTarget.style.boxShadow = `0 12px 32px ${accentGlow}, inset 0 2px 0 rgba(255,255,255,0.2)`;
-                }}
-                onMouseOut={(e) => {
-                  e.currentTarget.style.transform = 'translateY(0) scale(1)';
-                  e.currentTarget.style.boxShadow = `0 8px 24px ${accentGlow}`;
-                }}
-              >
-                View Roster
-              </button>
-            </div>
-          )}
-        </div>
-
         {/* Info / Systems Tabs */}
         <div style={{ 
           display: 'flex', 
