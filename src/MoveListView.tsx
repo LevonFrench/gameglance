@@ -200,6 +200,10 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           'fatality': 'finisher',     // MK
           'babality': 'finisher',
           'friendship': 'finisher',
+          'animality': 'finisher',
+          'brutality': 'finisher',
+          'kameo fatality': 'finisher',
+          'kameo brutality': 'finisher',
           'stage fatality': 'finisher',
           'no mercy': 'finisher',     // KI
           'death move': 'finisher',   // Weaponlord
