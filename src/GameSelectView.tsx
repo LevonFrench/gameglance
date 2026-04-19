@@ -690,6 +690,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
       <main style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+        gridAutoRows: '1fr',
         gap: 'calc(1.5rem * var(--spacing-scale, 1))',
         maxWidth: '1400px',
         width: '100%',
@@ -733,6 +734,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                   cursor: 'pointer',
                   transition: 'all 0.45s cubic-bezier(0.16, 1, 0.3, 1)',
                   minHeight: '110px',
+                  flex: 1,
                   overflow: 'hidden',
                   color: 'var(--text-primary)',
                   textAlign: expandedGameId === game.id ? 'center' : 'left',
