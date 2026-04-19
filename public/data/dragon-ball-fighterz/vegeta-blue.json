@@ -1,47 +1,699 @@
 {
   "name": "Vegeta Blue",
-  "moves": {
-    "Normal Moves": [
-      {
-        "name": "L",
-        "input": "L"
+  "movesList": [
+    {
+      "name": "L",
+      "input": "L",
+      "type": "normal"
+    },
+    {
+      "name": "M",
+      "input": "M",
+      "type": "normal"
+    },
+    {
+      "name": "H",
+      "input": "H",
+      "type": "normal"
+    },
+    {
+      "name": "S",
+      "input": "S",
+      "type": "normal"
+    },
+    {
+      "name": "A1",
+      "input": "A1",
+      "type": "normal"
+    },
+    {
+      "name": "A2",
+      "input": "A2",
+      "type": "normal"
+    },
+    {
+      "name": "SD",
+      "input": "SD",
+      "type": "normal"
+    },
+    {
+      "name": "DR",
+      "input": "DR",
+      "type": "normal"
+    },
+    {
+      "name": "V",
+      "input": "V",
+      "type": "normal"
+    },
+    {
+      "name": "SP",
+      "input": "SP",
+      "type": "normal"
+    },
+    {
+      "id": "d108bf3c-8b7f-48a7-9fbe-3cd812da9ef9",
+      "name": "2H",
+      "input": "2H",
+      "frameData": {
+        "startup": "13",
+        "active": "3",
+        "recovery": "30",
+        "advantage": "-"
       },
-      {
-        "name": "M",
-        "input": "M"
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "1a72ba48-b21f-4d0c-a8e6-f190e23dfc53",
+      "name": "2L",
+      "input": "2L",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "13",
+        "advantage": "-"
       },
-      {
-        "name": "H",
-        "input": "H"
+      "guard": "Low",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "045fc9e2-7cc3-4d84-95f8-bc17557faeb4",
+      "name": "2M",
+      "input": "2M",
+      "frameData": {
+        "startup": "10",
+        "active": "4",
+        "recovery": "18",
+        "advantage": "-"
       },
-      {
-        "name": "S",
-        "input": "S"
+      "guard": "Low",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "2045bd99-f21f-4585-b712-45c7c9154b04",
+      "name": "2S",
+      "input": "2S",
+      "frameData": {
+        "startup": "13",
+        "active": "P",
+        "recovery": "25",
+        "advantage": "-"
       },
-      {
-        "name": "A1",
-        "input": "A1"
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "6fe89949-8e5e-433d-8d84-7eec39b62a0b",
+      "name": "5H",
+      "input": "5H",
+      "frameData": {
+        "startup": "14",
+        "active": "8",
+        "recovery": "13",
+        "advantage": "-"
       },
-      {
-        "name": "A2",
-        "input": "A2"
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "629a544d-0023-4058-874e-dbf2158d91d4",
+      "name": "5L",
+      "input": "5L",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "12",
+        "advantage": "-"
       },
-      {
-        "name": "SD",
-        "input": "SD"
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "da96eeb6-e726-48c3-92db-36e46697973a",
+      "name": "5LL",
+      "input": "5LL",
+      "frameData": {
+        "startup": "8",
+        "active": "3",
+        "recovery": "17",
+        "advantage": "-"
       },
-      {
-        "name": "DR",
-        "input": "DR"
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "06a57edb-af67-419c-aab5-7c5678c566ee",
+      "name": "5LLL",
+      "input": "5LLL",
+      "frameData": {
+        "startup": "12 [28]",
+        "active": "3",
+        "recovery": "17",
+        "advantage": "-"
       },
-      {
-        "name": "V",
-        "input": "V"
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "7b3b71a0-ded7-4945-9d3d-af0c249d5fa5",
+      "name": "5M",
+      "input": "5M",
+      "frameData": {
+        "startup": "9",
+        "active": "6",
+        "recovery": "15",
+        "advantage": "-"
       },
-      {
-        "name": "SP",
-        "input": "SP"
-      }
-    ]
-  }
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "cb891ba2-792c-40d7-834a-c3388d28954d",
+      "name": "5S",
+      "input": "5S",
+      "frameData": {
+        "startup": "13",
+        "active": "P",
+        "recovery": "25",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "bdb11390-3bb5-418f-b8b4-7e759a2597ac",
+      "name": "6M",
+      "input": "6M",
+      "frameData": {
+        "startup": "24",
+        "active": "6",
+        "recovery": "4+6 After landing",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "4ce5c51f-c715-46a0-9051-4e43bb2c197f",
+      "name": "j.2H",
+      "input": "j.2H",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "9e6f9556-4191-44e2-9c9e-b95599c09d94",
+      "name": "j.2S",
+      "input": "j.2S",
+      "frameData": {
+        "startup": "10",
+        "active": "P",
+        "recovery": "23+7L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "0f1007c9-72f7-46e9-b552-996e70bed854",
+      "name": "j.H",
+      "input": "j.H",
+      "frameData": {
+        "startup": "13",
+        "active": "5",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "41a1db20-42c2-44b7-a31f-7c73136f36ca",
+      "name": "j.L",
+      "input": "j.L",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "13",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "f820cbb4-2fbd-4c38-9669-214b770498f8",
+      "name": "j.M",
+      "input": "j.M",
+      "frameData": {
+        "startup": "10",
+        "active": "5",
+        "recovery": "13",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "fec85cc4-0071-40b5-82a7-1dcab22794d1",
+      "name": "j.S",
+      "input": "j.S",
+      "frameData": {
+        "startup": "12",
+        "active": "P",
+        "recovery": "23+7L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "3d743c3b-93f9-4eea-aa20-221fda43659e",
+      "name": "Air Big Bang Attack",
+      "input": "j.236S",
+      "frameData": {
+        "startup": "9",
+        "active": "20(1)P [whiff: 27(1)P]",
+        "recovery": "42 [whiff: 32]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "47a2ed95-81fb-48b9-a9ac-827275d19ffc",
+      "name": "Air H On a scale of one to ten, I'll give you a three!",
+      "input": "j.214H",
+      "frameData": {
+        "startup": "16",
+        "active": "8",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "1-27 Ki Blasts, 4-23 Guard",
+      "type": "special"
+    },
+    {
+      "id": "5d9c5d65-d61c-4e41-af02-20f2880f349f",
+      "name": "Air L On a scale of one to ten, I'll give you a three!",
+      "input": "j.214L",
+      "frameData": {
+        "startup": "18",
+        "active": "7",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "4-28 Projectiles",
+      "type": "special"
+    },
+    {
+      "id": "5ea95bbf-186c-4247-b14f-c288c3e82837",
+      "name": "Air L Super Dash Kick",
+      "input": "j.236L",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "0cfb82b0-812f-4194-8eb3-38b1ead7752f",
+      "name": "Air M On a scale of one to ten, I'll give you a three!",
+      "input": "j.214M",
+      "frameData": {
+        "startup": "21",
+        "active": "8",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "4-31 Projectiles",
+      "type": "special"
+    },
+    {
+      "id": "4dfaed69-d97c-4b75-8d42-1a6662a009ae",
+      "name": "Air M Super Dash Kick",
+      "input": "j.236H",
+      "frameData": {
+        "startup": "10-18",
+        "active": "3",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "b0f6a894-a854-4af6-aede-ad6bd6772854",
+      "name": "Air M Super Dash Kick",
+      "input": "j.236M",
+      "frameData": {
+        "startup": "15",
+        "active": "3",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "f73ffb39-03d0-478d-8ff4-2299b53dd709",
+      "name": "Big Bang Attack",
+      "input": "236S",
+      "frameData": {
+        "startup": "9",
+        "active": "20(1)P [whiff: 27(1)P]",
+        "recovery": "42 [whiff: 32]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "ea845ede-75d9-4bc4-a799-21980448ac92",
+      "name": "H On a scale of one to ten, I'll give you a three!",
+      "input": "214H",
+      "frameData": {
+        "startup": "20",
+        "active": "8",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "1-31 Ki Blasts, 4-27 Guard",
+      "type": "special"
+    },
+    {
+      "id": "abb6996f-1064-4596-9f27-16a42c3bfc23",
+      "name": "H Super Dash Kick",
+      "input": "236H",
+      "frameData": {
+        "startup": "10-18",
+        "active": "3",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "a08e9840-f273-404b-bd01-d40de735b0b6",
+      "name": "H Super Dash Kick Follow-up 1",
+      "input": "236X > H",
+      "frameData": {
+        "startup": "10",
+        "active": "3",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "1711cc54-329b-426f-be34-c197c8448d64",
+      "name": "H Super Dash Kick Follow-up 2",
+      "input": "236X > X > H",
+      "frameData": {
+        "startup": "13",
+        "active": "8",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "43f13786-b2d5-4911-8b77-38b5a31ef002",
+      "name": "L On a scale of one to ten, I'll give you a three!",
+      "input": "214L",
+      "frameData": {
+        "startup": "20",
+        "active": "7",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "4-30 Projectile",
+      "type": "special"
+    },
+    {
+      "id": "b23adde8-d0c7-49b0-b3c2-e601da45a121",
+      "name": "L Super Dash Kick",
+      "input": "236L",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "6c914eb4-5a84-4179-9e58-7158156227fa",
+      "name": "L Super Dash Kick Follow-up 1",
+      "input": "236X > L",
+      "frameData": {
+        "startup": "10",
+        "active": "3",
+        "recovery": "13+3L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "e8504508-262f-4e5f-a498-bfa15dd25644",
+      "name": "L Super Dash Kick Follow-up 2",
+      "input": "236X > X > L",
+      "frameData": {
+        "startup": "13",
+        "active": "6",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "cd061a93-f0c8-4da5-bec8-01575260e721",
+      "name": "M On a scale of one to ten, I'll give you a three!",
+      "input": "214M",
+      "frameData": {
+        "startup": "23",
+        "active": "8",
+        "recovery": "21 (in air)",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "4-34 Projectiles",
+      "type": "special"
+    },
+    {
+      "id": "5f7f436d-9cc6-47bf-96c5-1e5f6c786ba7",
+      "name": "M Super Dash Kick",
+      "input": "236M",
+      "frameData": {
+        "startup": "17",
+        "active": "3",
+        "recovery": "21 (in air)",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "d9cff16d-af07-4c45-911c-75b446152138",
+      "name": "M Super Dash Kick Follow-up 1",
+      "input": "236X > M",
+      "frameData": {
+        "startup": "18",
+        "active": "3 (7) 3 (7) 3",
+        "recovery": "12+3L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "b3893db9-a7d4-4989-a722-bc1a03ce4d55",
+      "name": "M Super Dash Kick Follow-up 2",
+      "input": "236X > X > M",
+      "frameData": {
+        "startup": "18",
+        "active": "6",
+        "recovery": "13",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "a718a7d9-1338-43df-83ae-640848fc00ac",
+      "name": "Air Final Flash",
+      "input": "j.214L+M",
+      "frameData": {
+        "startup": "12+3",
+        "active": "83",
+        "recovery": "Until L+5",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-26 All",
+      "type": "super"
+    },
+    {
+      "id": "512ca854-6386-40bf-a16f-48b51b47e673",
+      "name": "Final Flash",
+      "input": "214L+M",
+      "frameData": {
+        "startup": "12+3",
+        "active": "80",
+        "recovery": "45+5L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-25 All",
+      "type": "super"
+    },
+    {
+      "id": "ad847ca4-5a50-4cc0-82a5-8e98d26ed46b",
+      "name": "Final Flash Attack",
+      "input": "214L+M > X",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-End All",
+      "type": "super"
+    },
+    {
+      "id": "278f3cec-7503-416e-bd79-a9062dd512f9",
+      "name": "Galick Gun",
+      "input": "236H+S",
+      "frameData": {
+        "startup": "7+5",
+        "active": "45",
+        "recovery": "38",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-20 All",
+      "type": "super"
+    },
+    {
+      "id": "b0a66c78-1e92-4764-a915-a44092ffe4a6",
+      "name": "Niagara Pummel",
+      "input": "236L+M",
+      "frameData": {
+        "startup": "8+7",
+        "active": "4",
+        "recovery": "26+8L [whiff: 30+8L]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-24 All",
+      "type": "super"
+    },
+    {
+      "id": "e00f4f13-c938-4102-9706-7ad6c8c9a96b",
+      "name": "Niagara Pummel (Hold)",
+      "input": "236[L+M]",
+      "frameData": {
+        "startup": "8+7",
+        "active": "4",
+        "recovery": "30+8L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-24 All",
+      "type": "super"
+    },
+    {
+      "id": "3389a160-3629-4b8f-b192-291e93da2cfc",
+      "name": "Big Bang Attack",
+      "input": "Assist A",
+      "frameData": {
+        "startup": "39",
+        "active": "20-27(1)P",
+        "recovery": "137-144",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "unique"
+    },
+    {
+      "id": "19223ff5-059f-46bf-acca-51c15f8bc683",
+      "name": "Infinity Breaker",
+      "input": "Assist B",
+      "frameData": {
+        "startup": "20",
+        "active": "6",
+        "recovery": "33",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "unique"
+    },
+    {
+      "id": "7550d58a-1d92-4ea9-ab33-077d530e7eb4",
+      "name": "Super Dash Kick",
+      "input": "Assist C",
+      "frameData": {
+        "startup": "23 [20]",
+        "active": "6(11)4",
+        "recovery": "12+23L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "unique"
+    }
+  ]
 }

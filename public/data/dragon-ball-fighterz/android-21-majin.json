@@ -1,120 +1,7 @@
 {
   "name": "Android 21 (Majin)",
-  "moves": {
-    "Normal Moves": [
-      {
-        "name": "L",
-        "input": "L"
-      },
-      {
-        "name": "M",
-        "input": "M"
-      },
-      {
-        "name": "H",
-        "input": "H"
-      },
-      {
-        "name": "S",
-        "input": "S"
-      },
-      {
-        "name": "A1",
-        "input": "A1"
-      },
-      {
-        "name": "A2",
-        "input": "A2"
-      },
-      {
-        "name": "SD",
-        "input": "SD"
-      },
-      {
-        "name": "DR",
-        "input": "DR"
-      },
-      {
-        "name": "V",
-        "input": "V"
-      },
-      {
-        "name": "SP",
-        "input": "SP"
-      }
-    ]
-  },
   "character": "Android 21 (Majin)",
   "game": "Dragon Ball FighterZ",
-  "movesList": [
-    {
-      "name": "Connoisseur Cut",
-      "input": "236S (Steal move)",
-      "type": "special"
-    },
-    {
-      "name": "Total Detonation Ball",
-      "input": "214L/M/H (Air OK)",
-      "type": "special"
-    },
-    {
-      "name": "Hors d'Oeuvre Stab",
-      "input": "j.214L/M/H",
-      "type": "special"
-    },
-    {
-      "name": "Photon Wave (Level 1)",
-      "input": "236L+M or 236H+S (Air OK)",
-      "type": "super"
-    },
-    {
-      "name": "Sweet Tooth (Level 3)",
-      "input": "214L+M or 214H+S (Air OK)",
-      "type": "super"
-    },
-    {
-      "id": "n_0",
-      "name": "Punch",
-      "type": "normal",
-      "input": "P"
-    },
-    {
-      "id": "n_1",
-      "name": "Kick",
-      "type": "normal",
-      "input": "K"
-    },
-    {
-      "id": "n_2",
-      "name": "Slash",
-      "type": "normal",
-      "input": "S"
-    },
-    {
-      "id": "n_3",
-      "name": "Heavy Slash",
-      "type": "normal",
-      "input": "H"
-    },
-    {
-      "id": "n_4",
-      "name": "Dust",
-      "type": "normal",
-      "input": "D"
-    },
-    {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "6D"
-    },
-    {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "4D"
-    }
-  ],
   "combosList": [
     {
       "id": "chall_1",
@@ -165,6 +52,866 @@
       "id": "chall_10",
       "name": "Combo Challenge 10",
       "input": "2M 5M j.M j.2H SD j.L j.M j.2H j.L j.M j.H 236L+M"
+    }
+  ],
+  "movesList": [
+    {
+      "name": "L",
+      "input": "L",
+      "type": "normal"
+    },
+    {
+      "name": "M",
+      "input": "M",
+      "type": "normal"
+    },
+    {
+      "name": "H",
+      "input": "H",
+      "type": "normal"
+    },
+    {
+      "name": "S",
+      "input": "S",
+      "type": "normal"
+    },
+    {
+      "name": "A1",
+      "input": "A1",
+      "type": "normal"
+    },
+    {
+      "name": "A2",
+      "input": "A2",
+      "type": "normal"
+    },
+    {
+      "name": "SD",
+      "input": "SD",
+      "type": "normal"
+    },
+    {
+      "name": "DR",
+      "input": "DR",
+      "type": "normal"
+    },
+    {
+      "name": "V",
+      "input": "V",
+      "type": "normal"
+    },
+    {
+      "name": "SP",
+      "input": "SP",
+      "type": "normal"
+    },
+    {
+      "name": "Connoisseur Cut",
+      "input": "236S (Steal move)",
+      "type": "special"
+    },
+    {
+      "id": "ebf01620-8993-41e2-a936-b5a022e5cad9",
+      "name": "Aerial Connoisseur Cut",
+      "input": "214S",
+      "frameData": {
+        "startup": "13",
+        "active": "9",
+        "recovery": "22+3L",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "4-13 Head",
+      "type": "special"
+    },
+    {
+      "id": "b45802ef-4e3d-4af6-851a-a68670852f58",
+      "name": "Air Aerial Connoisseur Cut",
+      "input": "j.214S",
+      "frameData": {
+        "startup": "13",
+        "active": "9",
+        "recovery": "26+3L",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "4-13 Head",
+      "type": "special"
+    },
+    {
+      "id": "e903cc21-0f0f-413d-a9cc-755b570c6390",
+      "name": "Air Connoisseur Cut",
+      "input": "j.236S",
+      "frameData": {
+        "startup": "13",
+        "active": "3",
+        "recovery": "22+3L",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "84b69358-bbb1-4f96-9582-96e05695fb00",
+      "name": "Air H Hors d'Oeuvre Stab",
+      "input": "j.214H",
+      "frameData": {
+        "startup": "13",
+        "active": "Until L,3",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "e973f4d9-9bdb-4c77-8913-49ece9b4ff79",
+      "name": "Air L Hors d'Oeuvre Stab",
+      "input": "j.214L",
+      "frameData": {
+        "startup": "13",
+        "active": "Until L,3",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "3652e045-73e0-4a74-8aec-f1aa1a7a8bba",
+      "name": "Air M Hors d'Oeuvre Stab",
+      "input": "j.214M",
+      "frameData": {
+        "startup": "15",
+        "active": "Until L,3",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "63fd460a-3e97-428c-abe9-c3507c6afb4b",
+      "name": "H Hors d'Oeuvre Stab",
+      "input": "214H",
+      "frameData": {
+        "startup": "14",
+        "active": "4,3",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "fc93d58e-b7f4-4325-9cb7-edb421227c74",
+      "name": "H Total Detonation Ball (Level 0)",
+      "input": "236H Level 0",
+      "frameData": {
+        "startup": "16",
+        "active": "P",
+        "recovery": "Total 38",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "272b28bc-021e-46d5-8956-fad9c75653d6",
+      "name": "H Total Detonation Ball (Level 1)",
+      "input": "236H Level 1",
+      "frameData": {
+        "startup": "16",
+        "active": "P",
+        "recovery": "Total 37",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "4ef7d379-d541-4ee4-8876-5b59a83905f0",
+      "name": "H Total Detonation Ball (Level 2)",
+      "input": "236H Level 2",
+      "frameData": {
+        "startup": "16",
+        "active": "P",
+        "recovery": "Total 37",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "2dc4189f-23d2-4a7c-a0d9-078044341925",
+      "name": "H Total Detonation Ball (Level 3)",
+      "input": "236H Level 3",
+      "frameData": {
+        "startup": "16",
+        "active": "P",
+        "recovery": "Total 37",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "f2a6a60a-d341-4379-9ec5-b703ddc194a6",
+      "name": "H Total Detonation Ball (Level 4)",
+      "input": "236H Level 4",
+      "frameData": {
+        "startup": "16",
+        "active": "P",
+        "recovery": "Total 37",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "2aa321eb-067e-47fc-8fec-5f9a3b55d82e",
+      "name": "L Hors d'Oeuvre Stab",
+      "input": "214L",
+      "frameData": {
+        "startup": "12",
+        "active": "3,3",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "bea63c9e-346b-4b1e-870f-b619ed507125",
+      "name": "L Total Detonation Ball",
+      "input": "236L",
+      "frameData": {
+        "startup": "18",
+        "active": "",
+        "recovery": "Total 51",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "e6299b0b-3491-4cd9-af54-8a35d8b29175",
+      "name": "M Hors d'Oeuvre Stab",
+      "input": "214M",
+      "frameData": {
+        "startup": "14",
+        "active": "4,3",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "63521055-f0cd-4fd6-84be-26d99d9ebac3",
+      "name": "M Total Detonation Ball",
+      "input": "236M",
+      "frameData": {
+        "startup": "16",
+        "active": "",
+        "recovery": "Total 42",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "name": "Photon Wave (Level 1)",
+      "input": "236L+M or 236H+S (Air OK)",
+      "type": "super"
+    },
+    {
+      "id": "d4993746-e876-4ae8-9144-650ef33fb9e7",
+      "name": "Air Photon Wave",
+      "input": "j.236L+M",
+      "frameData": {
+        "startup": "9+4",
+        "active": "20",
+        "recovery": "45+6L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "9-18 All",
+      "type": "super"
+    },
+    {
+      "id": "e198da68-d3cc-4792-b158-345559f2c2aa",
+      "name": "Excellent Full Course",
+      "input": "j.214L+M",
+      "frameData": {
+        "startup": "11+3 [11+0]",
+        "active": "12",
+        "recovery": "Until L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-30 All",
+      "type": "super"
+    },
+    {
+      "id": "f4d4d4c7-0a94-4833-98c5-dbf6f037706a",
+      "name": "Impending Doom",
+      "input": "214H+S",
+      "frameData": {
+        "startup": "224+3",
+        "active": "2\u00d721",
+        "recovery": "38",
+        "advantage": "-"
+      },
+      "guard": "Unblockable",
+      "invuln": "1-223 Guard, 224-272 All",
+      "type": "super"
+    },
+    {
+      "id": "a7b5d4c3-21f8-4c3d-b6cc-bfae68d5f1ff",
+      "name": "Photon Wave",
+      "input": "236L+M",
+      "frameData": {
+        "startup": "9+4",
+        "active": "20",
+        "recovery": "45+6L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-18 All",
+      "type": "super"
+    },
+    {
+      "id": "a438479c-f674-405b-981c-31bf1e46a094",
+      "name": "Sweet Tooth",
+      "input": "214L+M",
+      "frameData": {
+        "startup": "10+3",
+        "active": "30",
+        "recovery": "39",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-20 All",
+      "type": "super"
+    },
+    {
+      "id": "6b5a96cf-338a-457a-b859-315202a1a424",
+      "name": "2H",
+      "input": "2H",
+      "frameData": {
+        "startup": "14",
+        "active": "5",
+        "recovery": "20+10L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-18 Head",
+      "type": "common"
+    },
+    {
+      "id": "92b942cd-eab2-4021-aa74-54d18bbaf011",
+      "name": "2L",
+      "input": "2L",
+      "frameData": {
+        "startup": "7",
+        "active": "2",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "fc1ac6f4-b6e3-452d-a12a-cd9b20c8b650",
+      "name": "2M",
+      "input": "2M",
+      "frameData": {
+        "startup": "11",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "05defa65-17cd-4cc3-95d0-730cadb38a0b",
+      "name": "2S",
+      "input": "2S",
+      "frameData": {
+        "startup": "18",
+        "active": "P\u00d73",
+        "recovery": "Total 35",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "c6a77634-1d7b-4c14-a7ad-cec1be1244a7",
+      "name": "3M",
+      "input": "3M",
+      "frameData": {
+        "startup": "15",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "c6718fb7-5151-4ec0-9d06-4fc352e3f26e",
+      "name": "5H",
+      "input": "5H",
+      "frameData": {
+        "startup": "15",
+        "active": "4",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "5f438030-bcfd-4da8-8987-c588b1017fef",
+      "name": "5L",
+      "input": "5L",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "408cb062-5be2-4377-99f2-e13aa5d51829",
+      "name": "5LL",
+      "input": "5LL",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "ea41b762-7e29-407d-bf32-7ba6a647c543",
+      "name": "5LLL",
+      "input": "5LLL",
+      "frameData": {
+        "startup": "13",
+        "active": "4",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-16 Head",
+      "type": "common"
+    },
+    {
+      "id": "2f42ca18-f704-44a1-a4a0-d7325de42b91",
+      "name": "5M",
+      "input": "5M",
+      "frameData": {
+        "startup": "10",
+        "active": "4",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "712b1dff-42e3-4fb4-ace5-6a081f1f44fa",
+      "name": "5S",
+      "input": "5S",
+      "frameData": {
+        "startup": "13",
+        "active": "P",
+        "recovery": "Total 37",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "9641aaa0-b3c5-4377-97a2-bd3c5c5514c5",
+      "name": "6M",
+      "input": "6M",
+      "frameData": {
+        "startup": "24",
+        "active": "6",
+        "recovery": "4+6L",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "1241d391-2b69-427b-a09e-a56fb28d80bc",
+      "name": "j.2H",
+      "input": "j.2H",
+      "frameData": {
+        "startup": "13",
+        "active": "4",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "aa411ac3-29f0-4fc2-baab-16973f3bd828",
+      "name": "j.H",
+      "input": "j.H",
+      "frameData": {
+        "startup": "14",
+        "active": "5",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "a60def52-c0a5-46c9-8ba4-a5bfc5a9c585",
+      "name": "j.L",
+      "input": "j.L",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "1f8a8a2d-5cf6-4bd4-9157-7143cdf941a4",
+      "name": "j.M",
+      "input": "j.M",
+      "frameData": {
+        "startup": "10",
+        "active": "4",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "6c947154-ec7c-4edb-a6d6-4105d17bc47f",
+      "name": "j.S",
+      "input": "j.S",
+      "frameData": {
+        "startup": "18",
+        "active": "P\u00d73",
+        "recovery": "Total 45+6L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "0b02af19-ae6f-495e-ba8a-14d6d55d42c9",
+      "name": "Air Barrier Sphere",
+      "input": "j.214G",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Total 50+6L",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "1-41 Non-throw, non-Super",
+      "type": "common"
+    },
+    {
+      "id": "14e749d0-d30f-453c-bca1-e65f38af1f6a",
+      "name": "Air Consecutive Energy Blast",
+      "input": "j.236Y",
+      "frameData": {
+        "startup": "12",
+        "active": "P(5)P(5)P(5)P(5)P(5)P(5)P(5)P",
+        "recovery": "Total 73+6L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "a1ef841b-0cc1-4eb8-8087-97c4ae5816f4",
+      "name": "Air Explosive Energy Blast",
+      "input": "j.236G",
+      "frameData": {
+        "startup": "8",
+        "active": "(Until L,5)\u00d72",
+        "recovery": "Total Until L+6",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "bcc718ce-29f8-4918-a3ad-e3e2b70ab4f8",
+      "name": "Air Homing Energy Blast",
+      "input": "j.236P",
+      "frameData": {
+        "startup": "18",
+        "active": "P\u00d72",
+        "recovery": "Total 42",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "adcdb61b-7bc0-40bb-be76-cdba4e71a30a",
+      "name": "Air Kamehameha",
+      "input": "j.236B",
+      "frameData": {
+        "startup": "18",
+        "active": "25",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "af634b0f-df73-40e3-9a87-19e2c0cbad04",
+      "name": "Air Solar Flare",
+      "input": "j.214B",
+      "frameData": {
+        "startup": "10",
+        "active": "5",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-10 Head",
+      "type": "common"
+    },
+    {
+      "id": "3c75253c-2851-49fc-902b-12bbc217b23d",
+      "name": "Air Sonic Warp",
+      "input": "j.214P",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Total 31",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "15-26 All",
+      "type": "common"
+    },
+    {
+      "id": "105c0e93-ccba-4faf-a6cd-03c44d0c7d6a",
+      "name": "Air Sticky Energy Blast",
+      "input": "j.214Y",
+      "frameData": {
+        "startup": "16",
+        "active": "5",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "1-20 Head",
+      "type": "common"
+    },
+    {
+      "id": "2440aecf-57cd-4a80-9d04-1b50fba2029e",
+      "name": "Barrier Sphere",
+      "input": "214G",
+      "frameData": {
+        "startup": "",
+        "active": "41 [54]",
+        "recovery": "Total 50",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "1-41 Non-throw, non-Super",
+      "type": "common"
+    },
+    {
+      "id": "b82331b1-b362-4e8c-8c13-13020781c91a",
+      "name": "Consecutive Energy Blast",
+      "input": "236Y",
+      "frameData": {
+        "startup": "12",
+        "active": "P(5)P(5)P(5)P(5)P(5)P(5)P(5)P",
+        "recovery": "Total 73",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "9ea46c04-770e-4c2d-a87c-6fee16b19bf0",
+      "name": "Explosive Energy Blast",
+      "input": "236G",
+      "frameData": {
+        "startup": "11",
+        "active": "(Until L,5)\u00d72",
+        "recovery": "Total 39",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "d0926423-8ab2-4a1d-b069-f87a6ab2907f",
+      "name": "Homing Energy Blast",
+      "input": "236P",
+      "frameData": {
+        "startup": "18",
+        "active": "P\u00d72",
+        "recovery": "Total 37",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "5a6546bf-9bef-455b-9e96-b520e5686f7d",
+      "name": "Kamehameha",
+      "input": "236B",
+      "frameData": {
+        "startup": "18",
+        "active": "25",
+        "recovery": "25",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "3703fb16-f6ec-45d4-bb90-78ef5fe4f048",
+      "name": "Solar Flare",
+      "input": "214B",
+      "frameData": {
+        "startup": "10",
+        "active": "5",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-10 Head",
+      "type": "common"
+    },
+    {
+      "id": "3de40694-e58c-45a8-be3f-1039291fa994",
+      "name": "Sonic Warp",
+      "input": "214P",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Total 28",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "15-26 All",
+      "type": "common"
+    },
+    {
+      "id": "87c999e7-3dbc-4ca1-aa22-20c109b88e60",
+      "name": "Sticky Energy Blast",
+      "input": "214Y",
+      "frameData": {
+        "startup": "17",
+        "active": "5",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "1-21 Head",
+      "type": "common"
+    },
+    {
+      "id": "e679fd3b-ae23-4f41-9ad7-99490969f358",
+      "name": "Hors d'Oeuvre Stab",
+      "input": "Assist B",
+      "frameData": {
+        "startup": "20",
+        "active": "4,6",
+        "recovery": "33",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "unique"
+    },
+    {
+      "id": "9bbb25a8-f8bd-4d1f-8c34-25a3e78026ac",
+      "name": "Snack Time",
+      "input": "Assist C",
+      "frameData": {
+        "startup": "30 [20]",
+        "active": "6(13)3",
+        "recovery": "23+23L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "?-? Head",
+      "type": "unique"
+    },
+    {
+      "id": "6191cfbe-1ecc-46f6-a4b3-f249db1501e3",
+      "name": "Total Detonation Ball",
+      "input": "Assist A",
+      "frameData": {
+        "startup": "25",
+        "active": "P",
+        "recovery": "Total 74",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "unique"
     }
   ]
 }

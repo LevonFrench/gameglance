@@ -1,47 +1,573 @@
 {
   "name": "Vegeta Base",
-  "moves": {
-    "Normal Moves": [
-      {
-        "name": "L",
-        "input": "L"
+  "movesList": [
+    {
+      "name": "L",
+      "input": "L",
+      "type": "normal"
+    },
+    {
+      "name": "M",
+      "input": "M",
+      "type": "normal"
+    },
+    {
+      "name": "H",
+      "input": "H",
+      "type": "normal"
+    },
+    {
+      "name": "S",
+      "input": "S",
+      "type": "normal"
+    },
+    {
+      "name": "A1",
+      "input": "A1",
+      "type": "normal"
+    },
+    {
+      "name": "A2",
+      "input": "A2",
+      "type": "normal"
+    },
+    {
+      "name": "SD",
+      "input": "SD",
+      "type": "normal"
+    },
+    {
+      "name": "DR",
+      "input": "DR",
+      "type": "normal"
+    },
+    {
+      "name": "V",
+      "input": "V",
+      "type": "normal"
+    },
+    {
+      "name": "SP",
+      "input": "SP",
+      "type": "normal"
+    },
+    {
+      "id": "ecbbec0c-01fd-4d33-8ff3-b950c3a711ed",
+      "name": "2H",
+      "input": "2H",
+      "frameData": {
+        "startup": "13",
+        "active": "5",
+        "recovery": "18+7L",
+        "advantage": "-"
       },
-      {
-        "name": "M",
-        "input": "M"
+      "guard": "All",
+      "invuln": "4-15 Head",
+      "type": "common"
+    },
+    {
+      "id": "5d2de673-dfc2-41f6-8173-b45cd0493ee5",
+      "name": "2L",
+      "input": "2L",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "13",
+        "advantage": "-"
       },
-      {
-        "name": "H",
-        "input": "H"
+      "guard": "Low",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "47ef3e89-3b7b-4ab9-987b-0e29603314bf",
+      "name": "2M",
+      "input": "2M",
+      "frameData": {
+        "startup": "10",
+        "active": "4",
+        "recovery": "18",
+        "advantage": "-"
       },
-      {
-        "name": "S",
-        "input": "S"
+      "guard": "Low",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "0d30775d-9186-46f6-b6a7-1e9d34a42850",
+      "name": "2S",
+      "input": "2S",
+      "frameData": {
+        "startup": "12",
+        "active": "",
+        "recovery": "24",
+        "advantage": "-"
       },
-      {
-        "name": "A1",
-        "input": "A1"
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "52bc2199-f749-4653-8352-a43e235cafed",
+      "name": "5H",
+      "input": "5H",
+      "frameData": {
+        "startup": "13",
+        "active": "6",
+        "recovery": "18",
+        "advantage": "-"
       },
-      {
-        "name": "A2",
-        "input": "A2"
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "55cf1bc9-4cde-4ed9-9666-9a5f73a9fb7b",
+      "name": "5L",
+      "input": "5L",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "11",
+        "advantage": "-"
       },
-      {
-        "name": "SD",
-        "input": "SD"
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "901a69c1-e63a-4f07-a2b1-c25a6715193a",
+      "name": "5LL",
+      "input": "5LL",
+      "frameData": {
+        "startup": "8",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-"
       },
-      {
-        "name": "DR",
-        "input": "DR"
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "12633fba-4b8c-4c3a-9fbb-c0032f9fb737",
+      "name": "5LLL",
+      "input": "5LLL",
+      "frameData": {
+        "startup": "9",
+        "active": "2",
+        "recovery": "18+5L",
+        "advantage": "-"
       },
-      {
-        "name": "V",
-        "input": "V"
+      "guard": "All",
+      "invuln": "1-11 Head",
+      "type": "common"
+    },
+    {
+      "id": "99499fdf-da78-4847-a731-5185e47a59f2",
+      "name": "5M",
+      "input": "5M",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-"
       },
-      {
-        "name": "SP",
-        "input": "SP"
-      }
-    ]
-  }
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "18ee6b28-ae47-4d00-9131-dae0591d638e",
+      "name": "5S",
+      "input": "5S",
+      "frameData": {
+        "startup": "7",
+        "active": "P",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "d7eebba8-97f5-4353-9a81-6fda991636da",
+      "name": "6M",
+      "input": "6M",
+      "frameData": {
+        "startup": "24",
+        "active": "6",
+        "recovery": "4+6L",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "4d2b406e-5b39-412d-9aa7-5c3f0bb67184",
+      "name": "j.2H",
+      "input": "j.2H",
+      "frameData": {
+        "startup": "12",
+        "active": "5",
+        "recovery": "10",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "bd91a81a-2cad-42ff-947c-000f1e165af9",
+      "name": "j.2S",
+      "input": "j.2S",
+      "frameData": {
+        "startup": "12",
+        "active": "P",
+        "recovery": "20+5L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "7d980872-db23-4b3a-8174-5675709572d7",
+      "name": "j.H",
+      "input": "j.H",
+      "frameData": {
+        "startup": "13",
+        "active": "4",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "423cd70d-5aa3-4d9e-8aa3-779da858be64",
+      "name": "j.L",
+      "input": "j.L",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "13",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "174b07dc-8384-4d0e-9172-e07a97e51ea2",
+      "name": "j.M",
+      "input": "j.M",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "e64342eb-6da9-4ed4-8e3f-5da2fa86cd6e",
+      "name": "j.S",
+      "input": "j.S",
+      "frameData": {
+        "startup": "13",
+        "active": "P",
+        "recovery": "19+7L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "f4f53129-0a03-46fc-a4a1-f5c457d8a56f",
+      "name": "Air Galick Gun",
+      "input": "j.236L+M",
+      "frameData": {
+        "startup": "9+4",
+        "active": "41",
+        "recovery": "Until L+10",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-20 All",
+      "type": "super"
+    },
+    {
+      "id": "247d1436-db01-47ef-9aeb-8adec27a7107",
+      "name": "Galaxy Breaker",
+      "input": "214L+M",
+      "frameData": {
+        "startup": "9+3",
+        "active": "105",
+        "recovery": "42",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-20 All",
+      "type": "super"
+    },
+    {
+      "id": "93e69df5-3d79-4f68-a03f-46aa85c198ad",
+      "name": "Galick Gun",
+      "input": "236L+M",
+      "frameData": {
+        "startup": "9+4",
+        "active": "41",
+        "recovery": "38+10L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-20 All",
+      "type": "super"
+    },
+    {
+      "id": "2f92200e-ab01-4f77-8e01-aede7d701bfb",
+      "name": "Air H Deadly Knee Drop",
+      "input": "j.214H",
+      "frameData": {
+        "startup": "22-29 [18]",
+        "active": "Until Landing, 3",
+        "recovery": "14 [17]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "7-(11~18) All (while invisible)",
+      "type": "special"
+    },
+    {
+      "id": "bd82b846-f768-4a5b-9887-37e7355a4afb",
+      "name": "Air H Super Dash Kick",
+      "input": "j.236H",
+      "frameData": {
+        "startup": "29-36",
+        "active": "9",
+        "recovery": "23 [26]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "5~19-26 All (while invisible)",
+      "type": "special"
+    },
+    {
+      "id": "aab26e7f-b6f7-4977-9068-2fa59f16e74f",
+      "name": "Air L Deadly Knee Drop",
+      "input": "j.214L",
+      "frameData": {
+        "startup": "24-31 [18]",
+        "active": "Until Landing, 3",
+        "recovery": "14 [17]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "7-(11~18) All (while invisible)",
+      "type": "special"
+    },
+    {
+      "id": "7bab3918-bc72-4acf-8011-0568eff7c768",
+      "name": "Air L Super Dash Kick",
+      "input": "j.236L",
+      "frameData": {
+        "startup": "11",
+        "active": "4",
+        "recovery": "23 [26]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "c90d8563-4d70-4485-a3b7-07940838ec21",
+      "name": "Air M Deadly Knee Drop",
+      "input": "j.214M",
+      "frameData": {
+        "startup": "27-34 [20]",
+        "active": "Until Landing, 3",
+        "recovery": "14 [17]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "7-(11~18) All (while invisible)",
+      "type": "special"
+    },
+    {
+      "id": "79fd217c-ff81-4de5-b9b4-fbbd4c9bc0f9",
+      "name": "Air M Super Dash Kick",
+      "input": "j.236M",
+      "frameData": {
+        "startup": "12",
+        "active": "9",
+        "recovery": "23 [26+3L]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "1162f571-8c50-4fe8-89a8-485e852faaaf",
+      "name": "Energy Cutter",
+      "input": "236S",
+      "frameData": {
+        "startup": "22",
+        "active": "P",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "08762870-a1a6-4941-9c6a-a1c98a9c3452",
+      "name": "H Deadly Knee Drop",
+      "input": "214H",
+      "frameData": {
+        "startup": "22-29 [18]",
+        "active": "Until Landing, 3",
+        "recovery": "14 [17]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "7-(11~18) All (while invisible)",
+      "type": "special"
+    },
+    {
+      "id": "1cd5dc38-1de1-438e-afa1-c911ebf7e9c3",
+      "name": "H Super Dash Kick",
+      "input": "236H",
+      "frameData": {
+        "startup": "29-36",
+        "active": "9",
+        "recovery": "25+7L [13+7L]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "9~19-26 Full (while invisible)",
+      "type": "special"
+    },
+    {
+      "id": "b861c815-f0a6-4359-aa64-e630c31fdd54",
+      "name": "I have no use for Saiyans that can't move",
+      "input": "214S",
+      "frameData": {
+        "startup": "12",
+        "active": "5",
+        "recovery": "13",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "d8900da0-c163-4570-8a24-2263adae97d4",
+      "name": "L Deadly Knee Drop",
+      "input": "214L",
+      "frameData": {
+        "startup": "24-31 [18]",
+        "active": "Until Landing, 3",
+        "recovery": "14 [17]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "7-(11~18) All (while invisible)",
+      "type": "special"
+    },
+    {
+      "id": "36171b27-d44d-4a53-a220-f90e3380e4df",
+      "name": "L Super Dash Kick",
+      "input": "236L",
+      "frameData": {
+        "startup": "10",
+        "active": "6",
+        "recovery": "12+3L [26]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "dcf06b71-1890-44df-a6b3-abceafacc1ef",
+      "name": "M Deadly Knee Drop",
+      "input": "214M",
+      "frameData": {
+        "startup": "27-34 [20]",
+        "active": "Until Landing, 3",
+        "recovery": "14 [17]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "7-(11~18) All (while invisible)",
+      "type": "special"
+    },
+    {
+      "id": "8c4d9068-16c3-4713-86dd-23ac8c82bbfd",
+      "name": "M Super Dash Kick",
+      "input": "236M",
+      "frameData": {
+        "startup": "12",
+        "active": "9",
+        "recovery": "14+3L [17+3L]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "885232fb-1319-4693-a940-b290711e8462",
+      "name": "Dirty Fireworks",
+      "input": "Assist C",
+      "frameData": {
+        "startup": "28 [20]",
+        "active": "5",
+        "recovery": "22+23L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "unique"
+    },
+    {
+      "id": "f1296274-9fe6-45e6-8a63-6c9460dab4a6",
+      "name": "Energy Cutter",
+      "input": "Assist A",
+      "frameData": {
+        "startup": "25",
+        "active": "P",
+        "recovery": "30+26L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "unique"
+    },
+    {
+      "id": "84dde121-c610-49a1-8a83-7753a74de2d2",
+      "name": "Super Dash Kick",
+      "input": "Assist B",
+      "frameData": {
+        "startup": "20",
+        "active": "12",
+        "recovery": "14+23L [18+23L]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "unique"
+    }
+  ]
 }

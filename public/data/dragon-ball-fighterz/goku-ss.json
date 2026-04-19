@@ -1,120 +1,7 @@
 {
   "name": "Goku (SS)",
-  "moves": {
-    "Normal Moves": [
-      {
-        "name": "L",
-        "input": "L"
-      },
-      {
-        "name": "M",
-        "input": "M"
-      },
-      {
-        "name": "H",
-        "input": "H"
-      },
-      {
-        "name": "S",
-        "input": "S"
-      },
-      {
-        "name": "A1",
-        "input": "A1"
-      },
-      {
-        "name": "A2",
-        "input": "A2"
-      },
-      {
-        "name": "SD",
-        "input": "SD"
-      },
-      {
-        "name": "DR",
-        "input": "DR"
-      },
-      {
-        "name": "V",
-        "input": "V"
-      },
-      {
-        "name": "SP",
-        "input": "SP"
-      }
-    ]
-  },
   "character": "Goku (SS)",
   "game": "Dragon Ball FighterZ",
-  "movesList": [
-    {
-      "name": "Dragon Flash Kick",
-      "input": "236L/M/H",
-      "type": "Special"
-    },
-    {
-      "name": "Flurry Kick",
-      "input": "214L/M/H",
-      "type": "Special"
-    },
-    {
-      "name": "Kamehameha",
-      "input": "236S",
-      "type": "Beam"
-    },
-    {
-      "name": "Super Kamehameha",
-      "input": "236LM",
-      "type": "Level 1"
-    },
-    {
-      "name": "Meteor Smash",
-      "input": "214LM/HS",
-      "type": "Level 3"
-    },
-    {
-      "id": "n_0",
-      "name": "Punch",
-      "type": "normal",
-      "input": "P"
-    },
-    {
-      "id": "n_1",
-      "name": "Kick",
-      "type": "normal",
-      "input": "K"
-    },
-    {
-      "id": "n_2",
-      "name": "Slash",
-      "type": "normal",
-      "input": "S"
-    },
-    {
-      "id": "n_3",
-      "name": "Heavy Slash",
-      "type": "normal",
-      "input": "H"
-    },
-    {
-      "id": "n_4",
-      "name": "Dust",
-      "type": "normal",
-      "input": "D"
-    },
-    {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "6D"
-    },
-    {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "4D"
-    }
-  ],
   "combosList": [
     {
       "id": "chall_1",
@@ -165,6 +52,628 @@
       "id": "chall_10",
       "name": "Combo Challenge 10",
       "input": "2M 5M j.M j.2H SD j.L j.M j.2H j.L j.M j.H 236L+M"
+    }
+  ],
+  "movesList": [
+    {
+      "name": "L",
+      "input": "L",
+      "type": "normal"
+    },
+    {
+      "name": "M",
+      "input": "M",
+      "type": "normal"
+    },
+    {
+      "name": "H",
+      "input": "H",
+      "type": "normal"
+    },
+    {
+      "name": "S",
+      "input": "S",
+      "type": "normal"
+    },
+    {
+      "name": "A1",
+      "input": "A1",
+      "type": "normal"
+    },
+    {
+      "name": "A2",
+      "input": "A2",
+      "type": "normal"
+    },
+    {
+      "name": "SD",
+      "input": "SD",
+      "type": "normal"
+    },
+    {
+      "name": "DR",
+      "input": "DR",
+      "type": "normal"
+    },
+    {
+      "name": "V",
+      "input": "V",
+      "type": "normal"
+    },
+    {
+      "name": "SP",
+      "input": "SP",
+      "type": "normal"
+    },
+    {
+      "name": "Dragon Flash Kick",
+      "input": "236L/M/H",
+      "type": "special"
+    },
+    {
+      "id": "e373ffa8-a146-4249-a95b-641132ea0ecc",
+      "name": "Air H Dragon Flash Fist",
+      "input": "j.236H",
+      "frameData": {
+        "startup": "23~31 [19~27]",
+        "active": "4",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "4-16~24 All [4-12~20 All]",
+      "type": "special"
+    },
+    {
+      "id": "c5046575-d2b4-4e4d-9986-1604af310f85",
+      "name": "Air H Flurry Kick",
+      "input": "j.214H",
+      "frameData": {
+        "startup": "7",
+        "active": "2{(6)2}\u00d75",
+        "recovery": "14",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-48 Head",
+      "type": "special"
+    },
+    {
+      "id": "4c52997b-46bf-45bb-a90d-3353f3491949",
+      "name": "Air Kamehameha",
+      "input": "j.236S",
+      "frameData": {
+        "startup": "18",
+        "active": "25",
+        "recovery": "30",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "b3470345-2b5e-4864-89c7-aa4bbfb06995",
+      "name": "Air L Dragon Flash Fist",
+      "input": "j.236L",
+      "frameData": {
+        "startup": "16",
+        "active": "4",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "d2a4fb20-169c-4a6c-ad3c-1e6c077cc377",
+      "name": "Air L Flurry Kick",
+      "input": "j.214L",
+      "frameData": {
+        "startup": "7",
+        "active": "3(6)3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "d2940511-41b5-4158-8f13-514b9a8904ec",
+      "name": "Air M Dragon Flash Fist",
+      "input": "j.236M",
+      "frameData": {
+        "startup": "18",
+        "active": "4",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "6c220c8a-f492-43a4-b0a7-420d3107ecbe",
+      "name": "Air M Flurry Kick",
+      "input": "j.214M",
+      "frameData": {
+        "startup": "9",
+        "active": "3{(6)3}\u00d73",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-38 Head",
+      "type": "special"
+    },
+    {
+      "id": "046e4ea1-bf0c-4195-b25e-ac2ae3917575",
+      "name": "Air [H] Dragon Flash Fist",
+      "input": "j.236[H]",
+      "frameData": {
+        "startup": "35~43 [19~27]",
+        "active": "4",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "4-28~36 All [4-12~20 All]",
+      "type": "special"
+    },
+    {
+      "id": "c06678b7-a555-4454-a342-e46b79540721",
+      "name": "H Dragon Flash Fist",
+      "input": "236H",
+      "frameData": {
+        "startup": "23~31 [19~27]",
+        "active": "4",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "4-16~24 All [4-12~20 All]",
+      "type": "special"
+    },
+    {
+      "id": "9140ff2c-4f08-4e96-ac60-946b901ae882",
+      "name": "H Flurry Kick",
+      "input": "214H",
+      "frameData": {
+        "startup": "11",
+        "active": "2{(6)2}\u00d75",
+        "recovery": "14 [11]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-52 Head [4-9 Head]",
+      "type": "special"
+    },
+    {
+      "id": "fb38a5a7-f79c-4b8e-9762-83b9da2d445c",
+      "name": "Kamehameha",
+      "input": "236S",
+      "frameData": {
+        "startup": "18",
+        "active": "25 [21]",
+        "recovery": "20 [17]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "646eeb9a-dc26-4554-a3fc-79cf12b45b59",
+      "name": "L Dragon Flash Fist",
+      "input": "236L",
+      "frameData": {
+        "startup": "22",
+        "active": "4",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "7ca76dde-b28b-4f6b-bc74-c4ef3ccacc33",
+      "name": "L Flurry Kick",
+      "input": "214L",
+      "frameData": {
+        "startup": "8",
+        "active": "3(6)3",
+        "recovery": "11",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "a9c1d958-78e4-4cc4-8c3a-d464f607dc0e",
+      "name": "M Dragon Flash Fist",
+      "input": "236M",
+      "frameData": {
+        "startup": "25",
+        "active": "4",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "special"
+    },
+    {
+      "id": "b48179d9-76af-4da5-8d0d-b4d2185e356e",
+      "name": "M Flurry Kick",
+      "input": "214M",
+      "frameData": {
+        "startup": "13",
+        "active": "3{(6)3}\u00d73",
+        "recovery": "21 [11]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-42 Head [4-11 Head]",
+      "type": "special"
+    },
+    {
+      "id": "8ca55595-c8c7-458f-9244-f8e77893d407",
+      "name": "[H] Dragon Flash Fist",
+      "input": "236[H]",
+      "frameData": {
+        "startup": "35~43 [19~27]",
+        "active": "4",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "4-28~36 All [4-12~20 All]",
+      "type": "special"
+    },
+    {
+      "name": "Kamehameha",
+      "input": "236S",
+      "type": "common"
+    },
+    {
+      "id": "8339688a-ff48-4259-b013-88e232706270",
+      "name": "2H",
+      "input": "2H",
+      "frameData": {
+        "startup": "14",
+        "active": "5",
+        "recovery": "21+7L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-18 Head",
+      "type": "common"
+    },
+    {
+      "id": "f41af047-e274-41be-8c73-214a58a666f0",
+      "name": "2L",
+      "input": "2L",
+      "frameData": {
+        "startup": "6",
+        "active": "2",
+        "recovery": "10",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "772ff0fd-e117-4f36-bb8d-cf26391b8827",
+      "name": "2M",
+      "input": "2M",
+      "frameData": {
+        "startup": "10",
+        "active": "9",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "370af924-618b-48d3-bb48-05f00dd4f7da",
+      "name": "2S",
+      "input": "2S",
+      "frameData": {
+        "startup": "13",
+        "active": "P",
+        "recovery": "Total 34",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "f2d4dfe1-4b5f-44e4-8299-1179e758b081",
+      "name": "5H",
+      "input": "5H",
+      "frameData": {
+        "startup": "12~24",
+        "active": "6",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "3f21bae3-52e0-4eb4-b02d-ca9bb315345a",
+      "name": "5L",
+      "input": "5L",
+      "frameData": {
+        "startup": "6",
+        "active": "4",
+        "recovery": "11",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "51bba87e-5959-4416-8c67-cddfda39a2ab",
+      "name": "5LL",
+      "input": "5LL",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "ef43ed41-dfb0-4c47-84f6-91bda83e22fb",
+      "name": "5LLL",
+      "input": "5LLL",
+      "frameData": {
+        "startup": "14 [18]",
+        "active": "3",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "86de3628-2469-4d7b-a9f3-a0b5eabd813a",
+      "name": "5M",
+      "input": "5M",
+      "frameData": {
+        "startup": "9",
+        "active": "9",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "62727341-b559-4291-a5fd-d5fd40306552",
+      "name": "5S",
+      "input": "5S",
+      "frameData": {
+        "startup": "13 [8]",
+        "active": "P",
+        "recovery": "Total 37 [Total 32]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "e20f96c3-9292-4a0a-b270-39926cf7d7e0",
+      "name": "6M",
+      "input": "6M",
+      "frameData": {
+        "startup": "24",
+        "active": "6",
+        "recovery": "4+6L",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "a56519f5-1599-4c20-9408-d4635360b8ad",
+      "name": "j.2H",
+      "input": "j.2H",
+      "frameData": {
+        "startup": "11",
+        "active": "4",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "409d4c0f-bb2e-48fe-ae3e-4dbcd819ffc5",
+      "name": "j.H",
+      "input": "j.H",
+      "frameData": {
+        "startup": "13",
+        "active": "6",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "97d8e850-5c8f-424e-96d9-65959f68b9e6",
+      "name": "j.L",
+      "input": "j.L",
+      "frameData": {
+        "startup": "6",
+        "active": "4",
+        "recovery": "11",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "0b7a01f7-5fe4-48fd-a2d9-81041001fe45",
+      "name": "j.M",
+      "input": "j.M",
+      "frameData": {
+        "startup": "10",
+        "active": "4",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "fd65b2d5-cf72-44ab-8b13-76ca503f61a9",
+      "name": "j.S",
+      "input": "j.S",
+      "frameData": {
+        "startup": "12",
+        "active": "P",
+        "recovery": "Total 32+5L",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "common"
+    },
+    {
+      "id": "b2691b61-c586-49f3-80b6-5121ea3038b7",
+      "name": "Air Super Kamehameha",
+      "input": "j.236L+M",
+      "frameData": {
+        "startup": "9+4",
+        "active": "45",
+        "recovery": "45 [42]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-20 All",
+      "type": "super"
+    },
+    {
+      "id": "7b0004e9-397c-4e87-8b44-a81485525aeb",
+      "name": "Air Warp Kamehameha",
+      "input": "j.236H+S",
+      "frameData": {
+        "startup": "18+4 [8+4]",
+        "active": "45",
+        "recovery": "36",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-29 All [4-19 All]",
+      "type": "super"
+    },
+    {
+      "id": "e7b30fcf-1c03-4115-bac6-d9c787df60c0",
+      "name": "Meteor Smash",
+      "input": "214L+M",
+      "frameData": {
+        "startup": "9+3~9",
+        "active": "6",
+        "recovery": "24",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-17~23 All",
+      "type": "super"
+    },
+    {
+      "id": "667bdddf-e623-4d2b-846c-89d4838933f7",
+      "name": "Super Kamehameha",
+      "input": "236L+M",
+      "frameData": {
+        "startup": "9+4",
+        "active": "45",
+        "recovery": "36",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-20 All",
+      "type": "super"
+    },
+    {
+      "id": "4a3062da-b26d-45c5-b410-4cf7fe21df31",
+      "name": "Warp Kamehameha",
+      "input": "236H+S",
+      "frameData": {
+        "startup": "18+4 [6+4]",
+        "active": "45",
+        "recovery": "36",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "4-29 All [2-19 All]",
+      "type": "super"
+    },
+    {
+      "id": "481df652-4e03-4367-aaf1-28131e26d449",
+      "name": "Dragon Storm",
+      "input": "Assist C",
+      "frameData": {
+        "startup": "23 [20]",
+        "active": "6(11)3",
+        "recovery": "42",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "9-9 All [None]",
+      "type": "unique"
+    },
+    {
+      "id": "e397bef8-835c-46e3-9c83-2370951b8273",
+      "name": "Flurry Kick",
+      "input": "Assist B",
+      "frameData": {
+        "startup": "20",
+        "active": "3(6)5",
+        "recovery": "32",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "unique"
+    },
+    {
+      "id": "04fe00ca-a50a-43c8-9e88-5f8ab6e1cd2f",
+      "name": "Kamehameha",
+      "input": "Assist A",
+      "frameData": {
+        "startup": "34",
+        "active": "25",
+        "recovery": "50 [38]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "unique"
     }
   ]
 }
