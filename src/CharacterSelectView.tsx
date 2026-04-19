@@ -12,14 +12,13 @@ interface Props {
   game: GameDefinition;
   controller: ControllerType;
   disableInitialAnimation?: boolean;
-  cardTheme?: string;
   onSetController: (c: ControllerType) => void;
   onSelectCharacter: (characterId: string) => void;
   onBack: () => void;
   onHome: () => void;
 }
 
-export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnimation, cardTheme, onSelectCharacter, onBack, onHome }) => {
+export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnimation, onSelectCharacter, onBack, onHome }) => {
   useArrowNavigation('[id^="char-card-"]');
 
   const [favorites, setFavorites] = useState<string[]>(() => {
