@@ -37,7 +37,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
   const [showOptions, setShowOptions] = useState(false);
   const [displayMode, setDisplayMode] = useState<'paged' | 'smooth' | 'stadium'>('paged');
   const [flipDelayMs, setFlipDelayMs] = useState(5000);
-  const [itemsPerPage, setItemsPerPage] = useState(() => window.innerWidth <= 480 ? 3 : 5);
+  const [itemsPerPage, setItemsPerPage] = useState(() => window.innerWidth <= 480 ? 3 : 6);
 
   const effectiveItemsPerPage = displayMode === 'stadium' ? 1 : itemsPerPage;
   const totalPages = Math.ceil(activePlaylist.length / effectiveItemsPerPage);
@@ -550,13 +550,18 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
         ref={listContainerRef}
         style={{
           flex: 1,
-          padding: '0.75rem 1.25rem',
-          display: 'flex',
-          flexDirection: 'column',
-          gap: '0.75rem',
+          padding: displayMode === 'stadium' ? '0' : '0.75rem 1.25rem',
+          display: displayMode === 'stadium' ? 'flex' : 'grid',
+          ...(displayMode === 'stadium' ? {
+            flexDirection: 'column' as const,
+            alignItems: 'center',
+            justifyContent: 'center',
+          } : {
+            gridTemplateColumns: displayMode === 'paged' ? 'repeat(auto-fit, minmax(min(100%, 480px), 1fr))' : '1fr',
+            alignContent: currentItems.length <= 4 ? 'center' : 'start',
+          }),
+          gap: displayMode === 'stadium' ? '3rem' : '0.75rem',
           overflowY: 'auto',
-          justifyContent: displayMode === 'stadium' || currentItems.length <= 3 ? 'center' : 'flex-start',
-          alignItems: 'center',
         }}>
         {currentItems.map((move, idx) => (
           <div
@@ -568,7 +573,6 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
               justifyContent: 'flex-start',
               alignItems: 'stretch',
               width: '100%',
-              maxWidth: displayMode === 'stadium' ? '100%' : '1200px',
               padding: displayMode === 'stadium' ? '0' : '1rem',
               animation: `fadeInUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) ${idx * 50}ms both`,
               gap: displayMode === 'stadium' ? '3rem' : '0.75rem',
