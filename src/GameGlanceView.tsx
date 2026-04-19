@@ -34,10 +34,9 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
   const wakeLockRef = useRef<WakeLockSentinel | null>(null);
 
   // Options
-  const [showOptions, setShowOptions] = useState(false);
   const [displayMode, setDisplayMode] = useState<'paged' | 'smooth' | 'stadium'>('paged');
   const [flipDelayMs, setFlipDelayMs] = useState(5000);
-  const [itemsPerPage, setItemsPerPage] = useState(() => window.innerWidth <= 480 ? 3 : 6);
+  const [itemsPerPage] = useState(() => window.innerWidth <= 480 ? 3 : 6);
 
   const effectiveItemsPerPage = displayMode === 'stadium' ? 1 : itemsPerPage;
   const totalPages = Math.ceil(activePlaylist.length / effectiveItemsPerPage);
@@ -187,362 +186,238 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
       transition: 'background-color 0.4s ease',
     }}>
 
-      {/* HUD Header */}
+      {/* Unified Header — matches TopHeader style */}
       <div style={{
-        padding: '0.6rem 1.25rem',
-        display: 'flex',
-        justifyContent: 'space-between',
-        alignItems: 'center',
-        background: isDark ? 'rgba(10, 10, 18, 0.85)' : 'rgba(255, 255, 255, 0.85)',
-        backdropFilter: 'blur(16px) saturate(180%)',
-        WebkitBackdropFilter: 'blur(16px) saturate(180%)',
+        position: 'sticky',
+        top: 0,
+        zIndex: 50,
+        backgroundColor: 'var(--bg-primary)',
         borderBottom: '1px solid var(--border-subtle)',
-        zIndex: 10,
-        animation: 'fadeIn 0.4s ease both',
+        padding: '0.75rem 1.25rem',
       }}>
-        {/* Left side: breadcrumb */}
-        <div style={{
-          display: 'flex',
-          alignItems: 'center',
-          gap: '0.75rem',
-          fontSize: '0.9rem',
-        }}>
-          <button
-            id="gameglance-exit"
-            onClick={onExit}
-            style={{
-              background: 'var(--bg-input)',
-              border: '1px solid var(--border-subtle)',
-              color: 'var(--text-secondary)',
-              fontSize: '0.85rem',
-              cursor: 'pointer',
-              padding: '0.45rem 0.9rem',
-              borderRadius: 'var(--radius-md)',
-              fontFamily: 'inherit',
-              fontWeight: 500,
-              transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
-            }}
-            onMouseOver={e => {
-              e.currentTarget.style.color = 'var(--text-primary)';
-              e.currentTarget.style.background = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)';
-              e.currentTarget.style.transform = 'translateX(-2px)';
-            }}
-            onMouseOut={e => {
-              e.currentTarget.style.color = 'var(--text-secondary)';
-              e.currentTarget.style.background = 'var(--bg-input)';
-              e.currentTarget.style.transform = 'translateX(0)';
-            }}
-          >
-            ← Exit
-          </button>
-          <span style={{ color: 'var(--text-muted)' }}>·</span>
-          <span style={{ color: 'var(--text-secondary)', fontWeight: 500 }}>{gameName}</span>
-          <span style={{ color: 'var(--text-muted)' }}>›</span>
-          <button 
-            onClick={() => {
-              const container = document.getElementById('gameglance-list-container');
-              if (container) {
-                container.scrollTo({ top: 0, behavior: 'smooth' });
-              }
-            }}
-            style={{ 
-              background: 'transparent',
-              border: 'none',
-              color: 'var(--text-primary)', 
-              fontWeight: 700,
-              cursor: 'pointer',
-              padding: '2px 4px',
-              fontFamily: 'inherit',
-              fontSize: 'inherit',
-              transition: 'color 0.2s',
-            }}
-            onMouseOver={e => e.currentTarget.style.color = 'var(--accent-indigo)'}
-            onMouseOut={e => e.currentTarget.style.color = 'var(--text-primary)'}
-            title="Back to Top"
-          >
-            {activeTab === selectedCharacterId ? characterName : activeTab.replace(/-/g, ' ').toUpperCase()}
-          </button>
-          <span style={{
-            padding: '0.2rem 0.65rem',
-            borderRadius: 'var(--radius-full)',
-            background: isDark ? 'rgba(99, 102, 241, 0.12)' : 'rgba(99, 102, 241, 0.1)',
-            color: isDark ? '#a5b4fc' : '#4f46e5',
-            fontSize: '0.75rem',
-            fontWeight: 600,
+        <div style={{ maxWidth: '1400px', width: '100%', margin: '0 auto' }}>
+          {/* Top row: navigation + controls */}
+          <nav style={{
+            display: 'flex',
+            alignItems: 'center',
+            gap: '0.75rem',
+            flexWrap: 'wrap',
           }}>
-            {activePlaylist.length} moves
-          </span>
-        </div>
-
-        {/* Right side: controls */}
-        <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center' }}>
-
-
-          <button
-            id="gameglance-play-pause"
-            onClick={() => {
-              if (isPlaying && displayMode === 'paged') setProgress(0);
-              setIsPlaying(!isPlaying);
-            }}
-            style={{
-              padding: '0.45rem 0.85rem',
-              background: isPlaying
-                ? (isDark ? 'rgba(244, 63, 94, 0.12)' : 'rgba(244, 63, 94, 0.1)')
-                : (isDark ? 'rgba(16, 185, 129, 0.12)' : 'rgba(16, 185, 129, 0.1)'),
-              border: `1px solid ${isPlaying ? 'rgba(244, 63, 94, 0.3)' : 'rgba(16, 185, 129, 0.3)'}`,
-              color: isPlaying ? (isDark ? '#fb7185' : '#e11d48') : (isDark ? '#34d399' : '#059669'),
-              borderRadius: 'var(--radius-md)',
-              fontSize: '0.8rem',
-              fontWeight: 600,
-              cursor: 'pointer',
-              fontFamily: 'inherit',
-              transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
-            }}
-            onMouseOver={e => {
-              e.currentTarget.style.transform = 'scale(1.05)';
-            }}
-            onMouseOut={e => {
-              e.currentTarget.style.transform = 'scale(1)';
-            }}
-          >
-            {isPlaying ? '⏸ Pause' : '▶ Play'}
-          </button>
-
-          <button
-            onClick={() => {
-              if (!document.fullscreenElement) {
-                document.documentElement.requestFullscreen().catch(() => {});
-                setIsFullscreen(true);
-              } else {
-                if (document.exitFullscreen) {
-                  document.exitFullscreen();
-                  setIsFullscreen(false);
-                }
-              }
-            }}
-            style={{
-              padding: '0.45rem 0.85rem',
-              background: 'var(--bg-input)',
-              border: '1px solid var(--border-subtle)',
-              color: 'var(--text-secondary)',
-              borderRadius: 'var(--radius-md)',
-              fontSize: '0.8rem',
-              fontWeight: 600,
-              cursor: 'pointer',
-              fontFamily: 'inherit',
-              transition: 'all 0.25s ease',
-            }}
-          >
-            {isFullscreen ? '⛶ Exit' : '⛶ Full'}
-          </button>
-
-          <button
-            id="gameglance-options"
-            onClick={() => setShowOptions(!showOptions)}
-            style={{
-              padding: '0.45rem 0.85rem',
-              background: showOptions
-                ? (isDark ? 'rgba(99, 102, 241, 0.15)' : 'rgba(99, 102, 241, 0.12)')
-                : 'var(--bg-input)',
-              border: `1px solid ${showOptions ? 'rgba(99, 102, 241, 0.3)' : 'var(--border-subtle)'}`,
-              color: showOptions ? (isDark ? '#a5b4fc' : '#4f46e5') : 'var(--text-secondary)',
-              borderRadius: 'var(--radius-md)',
-              fontSize: '0.8rem',
-              fontWeight: 600,
-              cursor: 'pointer',
-              fontFamily: 'inherit',
-              transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
-            }}
-            onMouseOver={e => {
-              e.currentTarget.style.transform = 'scale(1.05)';
-            }}
-            onMouseOut={e => {
-              e.currentTarget.style.transform = 'scale(1)';
-            }}
-          >
-            ⚙ Settings
-          </button>
-        </div>
-      </div>
-
-      {/* Character Tabs */}
-      {uniqueCharacters.length > 1 && (
-        <div style={{
-          display: 'flex',
-          gap: '0.5rem',
-          padding: '0.5rem 1.25rem',
-          background: isDark ? 'rgba(0,0,0,0.5)' : 'rgba(255,255,255,0.5)',
-          overflowX: 'auto',
-          borderBottom: '1px solid var(--border-subtle)',
-          zIndex: 9
-        }}>
-          {uniqueCharacters.map(char => (
+            {/* Home icon */}
             <button
-              key={char}
-              onClick={() => { setActiveTab(char); setCurrentPage(0); }}
+              onClick={onExit}
+              title="Exit"
               style={{
-                padding: '0.35rem 1rem',
-                borderRadius: 'var(--radius-full)',
-                background: activeTab === char ? 'var(--accent-indigo)' : 'transparent',
-                color: activeTab === char ? '#fff' : 'var(--text-secondary)',
-                border: activeTab === char ? 'none' : '1px solid var(--border-medium)',
+                background: 'transparent',
+                border: 'none',
+                color: 'var(--text-secondary)',
                 cursor: 'pointer',
-                fontWeight: 600,
-                fontSize: '0.85rem'
+                padding: '0.25rem',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                transition: 'all 0.2s ease',
+              }}
+              onMouseOver={e => {
+                e.currentTarget.style.color = 'var(--accent-indigo)';
+                e.currentTarget.style.transform = 'scale(1.15)';
+              }}
+              onMouseOut={e => {
+                e.currentTarget.style.color = 'var(--text-secondary)';
+                e.currentTarget.style.transform = 'scale(1)';
               }}
             >
-              {activeTab === char ? characterName : char.replace(/-/g, ' ').toUpperCase()}
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              </svg>
             </button>
-          ))}
-        </div>
-      )}
 
-      {/* Progress bar (only in paged or stadium mode) */}
-      {(displayMode === 'paged' || displayMode === 'stadium') && totalPages > 1 && isPlaying && (
-        <div style={{
-          height: '3px',
-          background: isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.04)',
-          position: 'relative',
-        }}>
-          <div style={{
-            height: '100%',
-            width: `${progress}%`,
-            background: 'linear-gradient(90deg, var(--accent-indigo), var(--accent-purple))',
-            transition: 'none',
-            borderRadius: '0 3px 3px 0',
-          }} />
-        </div>
-      )}
+            <span style={{ color: 'var(--text-muted)', fontSize: '1.2rem' }}>·</span>
+            <span style={{
+              color: 'var(--text-primary)',
+              fontWeight: 700,
+              fontFamily: "'Outfit', sans-serif",
+              fontSize: '1.2rem',
+              letterSpacing: '-0.02em',
+            }}>{gameName}</span>
+            <span style={{ color: 'var(--text-muted)', fontSize: '1.2rem' }}>›</span>
+            <span style={{
+              color: 'var(--text-primary)',
+              fontWeight: 700,
+              fontFamily: "'Outfit', sans-serif",
+              fontSize: '1.2rem',
+              letterSpacing: '-0.02em',
+            }}>{activeTab === selectedCharacterId ? characterName : activeTab.replace(/-/g, ' ')}</span>
 
-      {/* Options Panel */}
-      {showOptions && (
-        <div style={{
-          position: 'absolute',
-          top: '4rem',
-          right: '1.5rem',
-          background: isDark ? 'rgba(15, 15, 30, 0.96)' : 'rgba(255, 255, 255, 0.96)',
-          backdropFilter: 'blur(24px) saturate(200%)',
-          WebkitBackdropFilter: 'blur(24px) saturate(200%)',
-          border: '1px solid var(--border-accent)',
-          borderRadius: 'var(--radius-xl)',
-          padding: '1.5rem',
-          zIndex: 100,
-          boxShadow: 'var(--shadow-lg)',
-          width: '280px',
-          animation: 'fadeInUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) both',
-        }}>
-          <h3 style={{
-            margin: '0 0 1rem 0',
-            fontSize: '0.85rem',
-            fontWeight: 700,
-            color: isDark ? '#a5b4fc' : '#4f46e5',
-            textTransform: 'uppercase',
-            letterSpacing: '0.1em',
-          }}>
-            Display Settings
-          </h3>
-
-          <div style={{ marginBottom: '1.25rem' }}>
-            <label style={{
-              display: 'flex',
-              justifyContent: 'space-between',
-              marginBottom: '0.4rem',
-              fontSize: '0.8rem',
-              color: 'var(--text-secondary)',
-              fontWeight: 500,
+            <span style={{
+              padding: '0.2rem 0.65rem',
+              borderRadius: 'var(--radius-full)',
+              background: isDark ? 'rgba(99, 102, 241, 0.12)' : 'rgba(99, 102, 241, 0.1)',
+              color: isDark ? '#a5b4fc' : '#4f46e5',
+              fontSize: '0.75rem',
+              fontWeight: 600,
             }}>
-              <span>Display Mode</span>
-            </label>
-            <div style={{ display: 'flex', gap: '0.5rem', marginBottom: '0.5rem' }}>
-              <button 
-                onClick={() => { setDisplayMode('smooth'); setProgress(0); }}
+              {activePlaylist.length} moves
+            </span>
+
+            {/* Right-aligned controls */}
+            <div style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '0.5rem', flexWrap: 'wrap' }}>
+              {/* Mode pills */}
+              <div style={{ display: 'flex', gap: '2px', background: 'var(--bg-input)', borderRadius: 'var(--radius-md)', padding: '2px' }}>
+                {(['paged', 'smooth', 'stadium'] as const).map(mode => (
+                  <button
+                    key={mode}
+                    onClick={() => { setDisplayMode(mode); setProgress(0); if (mode === 'stadium') setCurrentPage(0); }}
+                    style={{
+                      padding: '0.3rem 0.6rem',
+                      fontSize: '0.7rem',
+                      fontWeight: 600,
+                      borderRadius: 'var(--radius-sm)',
+                      background: displayMode === mode ? 'var(--accent-indigo)' : 'transparent',
+                      color: displayMode === mode ? '#fff' : 'var(--text-secondary)',
+                      border: 'none',
+                      cursor: 'pointer',
+                      transition: 'all 0.2s',
+                      fontFamily: 'inherit',
+                      textTransform: 'capitalize',
+                    }}
+                  >
+                    {mode === 'paged' ? 'Page' : mode === 'smooth' ? 'Scroll' : 'Stadium'}
+                  </button>
+                ))}
+              </div>
+
+              {/* Speed control */}
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.35rem' }}>
+                <span style={{ fontSize: '0.7rem', color: 'var(--text-muted)', fontWeight: 500 }}>Speed</span>
+                <input
+                  type="range"
+                  min="1"
+                  max="30"
+                  value={flipDelayMs / 1000}
+                  onChange={e => setFlipDelayMs(parseInt(e.target.value) * 1000)}
+                  style={{
+                    width: '60px',
+                    accentColor: 'var(--accent-indigo)',
+                    height: '3px',
+                  }}
+                />
+                <span style={{ fontSize: '0.7rem', color: 'var(--text-primary)', fontFamily: "'JetBrains Mono', monospace", minWidth: '1.5rem' }}>
+                  {flipDelayMs / 1000}s
+                </span>
+              </div>
+
+              {/* Play/Pause */}
+              <button
+                id="gameglance-play-pause"
+                onClick={() => {
+                  if (isPlaying && displayMode === 'paged') setProgress(0);
+                  setIsPlaying(!isPlaying);
+                }}
                 style={{
-                  flex: 1, padding: '0.4rem', fontSize: '0.75rem', borderRadius: 'var(--radius-md)', background: displayMode === 'smooth' ? 'var(--accent-indigo)' : 'var(--bg-input)', color: displayMode === 'smooth' ? '#fff' : 'var(--text-secondary)', border: 'none', cursor: 'pointer', transition: 'all 0.2s',
+                  padding: '0.35rem 0.7rem',
+                  background: isPlaying
+                    ? (isDark ? 'rgba(244, 63, 94, 0.12)' : 'rgba(244, 63, 94, 0.1)')
+                    : (isDark ? 'rgba(16, 185, 129, 0.12)' : 'rgba(16, 185, 129, 0.1)'),
+                  border: `1px solid ${isPlaying ? 'rgba(244, 63, 94, 0.3)' : 'rgba(16, 185, 129, 0.3)'}`,
+                  color: isPlaying ? (isDark ? '#fb7185' : '#e11d48') : (isDark ? '#34d399' : '#059669'),
+                  borderRadius: 'var(--radius-md)',
+                  fontSize: '0.75rem',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  fontFamily: 'inherit',
+                  transition: 'all 0.2s',
                 }}
               >
-                Scroll
+                {isPlaying ? '⏸' : '▶'}
               </button>
-              <button 
-                onClick={() => { setDisplayMode('paged'); setProgress(0); }}
+
+              {/* Fullscreen */}
+              <button
+                onClick={() => {
+                  if (!document.fullscreenElement) {
+                    document.documentElement.requestFullscreen().catch(() => {});
+                    setIsFullscreen(true);
+                  } else {
+                    if (document.exitFullscreen) {
+                      document.exitFullscreen();
+                      setIsFullscreen(false);
+                    }
+                  }
+                }}
                 style={{
-                  flex: 1, padding: '0.4rem', fontSize: '0.75rem', borderRadius: 'var(--radius-md)', background: displayMode === 'paged' ? 'var(--accent-indigo)' : 'var(--bg-input)', color: displayMode === 'paged' ? '#fff' : 'var(--text-secondary)', border: 'none', cursor: 'pointer', transition: 'all 0.2s',
+                  padding: '0.35rem 0.7rem',
+                  background: 'var(--bg-input)',
+                  border: '1px solid var(--border-subtle)',
+                  color: 'var(--text-secondary)',
+                  borderRadius: 'var(--radius-md)',
+                  fontSize: '0.75rem',
+                  fontWeight: 600,
+                  cursor: 'pointer',
+                  fontFamily: 'inherit',
+                  transition: 'all 0.2s',
                 }}
               >
-                Page
-              </button>
-              <button 
-                onClick={() => { setDisplayMode('stadium'); setProgress(0); setCurrentPage(0); }}
-                style={{
-                  flex: 1, padding: '0.4rem', fontSize: '0.75rem', borderRadius: 'var(--radius-md)', background: displayMode === 'stadium' ? 'var(--accent-indigo)' : 'var(--bg-input)', color: displayMode === 'stadium' ? '#fff' : 'var(--text-secondary)', border: 'none', cursor: 'pointer', transition: 'all 0.2s',
-                }}
-              >
-                Stadium
+                {isFullscreen ? '⛶' : '⛶'}
               </button>
             </div>
-          </div>
+          </nav>
 
-          <div style={{ marginBottom: '1.25rem' }}>
-            <label style={{
+          {/* Character Tabs (if multiple) */}
+          {uniqueCharacters.length > 1 && (
+            <div style={{
               display: 'flex',
-              justifyContent: 'space-between',
-              marginBottom: '0.4rem',
-              fontSize: '0.8rem',
-              color: 'var(--text-secondary)',
-              fontWeight: 500,
+              gap: '0.5rem',
+              paddingTop: '0.5rem',
+              overflowX: 'auto',
             }}>
-              <span>{displayMode === 'smooth' ? 'Scroll Speed' : 'Flip Speed'}</span>
-              <span style={{ color: 'var(--text-primary)', fontFamily: "'JetBrains Mono', monospace" }}>
-                {flipDelayMs / 1000}s
-              </span>
-            </label>
-            <input
-              type="range"
-              min="1"
-              max="30"
-              value={flipDelayMs / 1000}
-              onChange={e => setFlipDelayMs(parseInt(e.target.value) * 1000)}
-              style={{
-                width: '100%',
-                accentColor: 'var(--accent-indigo)',
-                height: '4px',
-              }}
-            />
-          </div>
-
-          {displayMode === 'paged' && (
-            <div>
-              <label style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                marginBottom: '0.4rem',
-                fontSize: '0.8rem',
-                color: 'var(--text-secondary)',
-                fontWeight: 500,
-              }}>
-                <span>Moves per Page</span>
-                <span style={{ color: 'var(--text-primary)', fontFamily: "'JetBrains Mono', monospace" }}>
-                  {itemsPerPage}
-                </span>
-              </label>
-              <input
-                type="range"
-                min="1"
-                max="15"
-                value={itemsPerPage}
-                onChange={e => {
-                  setItemsPerPage(parseInt(e.target.value));
-                  setCurrentPage(0);
-                }}
-                style={{
-                  width: '100%',
-                  accentColor: 'var(--accent-indigo)',
-                  height: '4px',
-                }}
-              />
+              {uniqueCharacters.map(char => (
+                <button
+                  key={char}
+                  onClick={() => { setActiveTab(char); setCurrentPage(0); }}
+                  style={{
+                    padding: '0.3rem 0.85rem',
+                    borderRadius: 'var(--radius-full)',
+                    background: activeTab === char ? 'var(--accent-indigo)' : 'transparent',
+                    color: activeTab === char ? '#fff' : 'var(--text-secondary)',
+                    border: activeTab === char ? 'none' : '1px solid var(--border-medium)',
+                    cursor: 'pointer',
+                    fontWeight: 600,
+                    fontSize: '0.8rem',
+                    fontFamily: 'inherit',
+                    transition: 'all 0.2s',
+                    textTransform: 'capitalize',
+                    whiteSpace: 'nowrap',
+                  }}
+                >
+                  {char === selectedCharacterId ? characterName : char.replace(/-/g, ' ')}
+                </button>
+              ))}
             </div>
           )}
         </div>
-      )}
+
+        {/* Progress bar */}
+        {(displayMode === 'paged' || displayMode === 'stadium') && totalPages > 1 && isPlaying && (
+          <div style={{
+            height: '3px',
+            background: isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.04)',
+            position: 'absolute',
+            bottom: 0,
+            left: 0,
+            right: 0,
+          }}>
+            <div style={{
+              height: '100%',
+              width: `${progress}%`,
+              background: 'linear-gradient(90deg, var(--accent-indigo), var(--accent-purple))',
+              transition: 'none',
+              borderRadius: '0 3px 3px 0',
+            }} />
+          </div>
+        )}
+      </div>
 
       {/* Main content: move cards */}
       <div 
@@ -551,17 +426,23 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
         style={{
           flex: 1,
           padding: displayMode === 'stadium' ? '0' : '0.75rem 1.25rem',
+          overflowY: 'auto',
+        }}>
+        <div style={{
+          maxWidth: '1400px',
+          width: '100%',
+          margin: '0 auto',
           display: displayMode === 'stadium' ? 'flex' : 'grid',
           ...(displayMode === 'stadium' ? {
             flexDirection: 'column' as const,
             alignItems: 'center',
             justifyContent: 'center',
+            minHeight: '100%',
           } : {
             gridTemplateColumns: displayMode === 'paged' ? 'repeat(auto-fit, minmax(min(100%, 480px), 1fr))' : '1fr',
             alignContent: currentItems.length <= 4 ? 'center' : 'start',
           }),
           gap: displayMode === 'stadium' ? '3rem' : '0.75rem',
-          overflowY: 'auto',
         }}>
         {currentItems.map((move, idx) => (
           <div
@@ -633,6 +514,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
             </div>
           </div>
         ))}
+        </div>
       </div>
 
       {/* Bottom: pagination dots (only in paged or stadium mode) */}
