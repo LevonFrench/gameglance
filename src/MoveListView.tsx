@@ -623,10 +623,26 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
             {orderedTabs.map(tab => {
               const baseList = TAB_FILTER[tab] ? TAB_FILTER[tab](characterData) : (characterData.movesList || []);
-              
               const displayList = searchQuery.trim() ? baseList.filter(m => m.name.toLowerCase().includes(searchQuery.toLowerCase())) : baseList;
               
               if (displayList.length === 0) return null;
+
+              // Pre-process displayList to build trees
+              const topLevelMoves: Move[] = [];
+              const childrenMap = new Map<string, Move[]>();
+              
+              displayList.forEach(m => {
+                if (m.parentMoveId) {
+                  if (!childrenMap.has(m.parentMoveId)) childrenMap.set(m.parentMoveId, []);
+                  childrenMap.get(m.parentMoveId)!.push(m);
+                }
+              });
+
+              displayList.forEach(m => {
+                if (!m.parentMoveId || !displayList.some(p => p.id === m.parentMoveId)) {
+                  topLevelMoves.push(m);
+                }
+              });
 
               return (
                 <section key={tab} id={`section-${tab.replace(/\s+/g, '-').toLowerCase()}`}>
@@ -634,139 +650,118 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                   <div style={{ 
                     display: 'grid', 
                     gridTemplateColumns: 'repeat(auto-fill, minmax(380px, 1fr))', 
-                    gap: '1rem' 
+                    gap: '1.5rem' 
                   }}>
-                    {displayList.map((move, idx) => {
-              if (!move) return null;
-              const isSelected = selectedPlaylist && selectedPlaylist.some(m => m && m.id === move.id);
+                    {topLevelMoves.map((topMove, topIdx) => {
+                      const renderMoveCard = (move: Move, idx: number, depth: number = 0, isLastChild: boolean = false) => {
+                        const isSelected = selectedPlaylist && selectedPlaylist.some(m => m && m.id === move.id);
+                        const hasChildren = childrenMap.has(move.id) && childrenMap.get(move.id)!.length > 0;
+                        const children = childrenMap.get(move.id) || [];
 
-              return (
-                <div
-                  key={move.id}
-                  id={`move-${move.id}`}
-                  className="move-card"
-                  tabIndex={0}
-                  data-selected={isSelected ? 'true' : 'false'}
-                  onClick={() => onToggleMove(move)}
-                  style={{
-                    display: 'flex',
-                    flexDirection: 'column',
-                    cursor: 'pointer',
-                    animation: `fadeInUp 0.3s ease ${Math.min(idx * 20, 300)}ms both`,
-                    gap: '0.75rem',
-                    padding: '1.25rem',
-                    position: 'relative',
-                  }}
-                >
-                  <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                      <div style={{ display: 'flex', flexDirection: 'column' }}>
-                      <h2 style={{
-                        fontFamily: "'Outfit', sans-serif",
-                        fontSize: '1.1rem',
-                        fontWeight: 700,
-                        color: isDark ? '#ffffff' : '#000000',
-                        margin: 0,
-                      }}>
-                        {move.name}
-                      </h2>
-                    </div>
-                  </div>
+                        return (
+                          <React.Fragment key={move.id}>
+                            <div style={{ display: 'flex', width: '100%', position: 'relative' }}>
+                              {depth > 0 && (
+                                <div style={{ 
+                                  width: `${depth * 1.5}rem`, 
+                                  position: 'relative',
+                                  flexShrink: 0
+                                }}>
+                                  <div style={{
+                                    position: 'absolute',
+                                    top: '-1rem',
+                                    left: `calc(${(depth - 1) * 1.5}rem + 0.75rem)`,
+                                    height: 'calc(50% + 1rem)',
+                                    width: '2px',
+                                    background: 'var(--border-medium)',
+                                  }} />
+                                  <div style={{
+                                    position: 'absolute',
+                                    top: '50%',
+                                    left: `calc(${(depth - 1) * 1.5}rem + 0.75rem)`,
+                                    width: '0.75rem',
+                                    height: '2px',
+                                    background: 'var(--border-medium)',
+                                  }} />
+                                  {!isLastChild && (
+                                    <div style={{
+                                      position: 'absolute',
+                                      top: '50%',
+                                      left: `calc(${(depth - 1) * 1.5}rem + 0.75rem)`,
+                                      height: '100%',
+                                      width: '2px',
+                                      background: 'var(--border-medium)',
+                                    }} />
+                                  )}
+                                </div>
+                              )}
 
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    background: 'rgba(0,0,0,0.4)',
-                    padding: '0.75rem',
-                    borderRadius: '12px',
-                    border: '1px inset rgba(255,255,255,0.05)',
-                  }}>
-                    <GlyphSequence inputs={[move.input]} controller={effectiveController} notationSystem={notationSystem || game.notationSystem} />
-                  </div>
+                              <div
+                                id={`move-${move.id}`}
+                                className="move-card"
+                                tabIndex={0}
+                                data-selected={isSelected ? 'true' : 'false'}
+                                onClick={() => onToggleMove(move)}
+                                style={{
+                                  display: 'flex',
+                                  flexDirection: 'column',
+                                  flex: 1,
+                                  cursor: 'pointer',
+                                  animation: `fadeInUp 0.3s ease ${Math.min(idx * 20, 300)}ms both`,
+                                  gap: '0.75rem',
+                                  padding: '1.25rem',
+                                  position: 'relative',
+                                  zIndex: 2,
+                                  minWidth: 0,
+                                  background: 'var(--bg-secondary)',
+                                  borderRadius: 'var(--radius-lg)',
+                                  border: isSelected ? '2px solid var(--accent-indigo)' : '1px solid var(--border-subtle)',
+                                }}
+                              >
+                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                                    <div style={{ display: 'flex', flexDirection: 'column' }}>
+                                    <h2 style={{
+                                      fontFamily: "'Outfit', sans-serif",
+                                      fontSize: '1.1rem',
+                                      fontWeight: 700,
+                                      color: isDark ? '#ffffff' : '#000000',
+                                      margin: 0,
+                                    }}>
+                                      {move.name}
+                                    </h2>
+                                  </div>
+                                </div>
 
-                  {/* Bottom: Frame data */}
-                  {/* move.frameData && (move.frameData.startup || move.frameData.active || move.frameData.advantage) && (
-                    <div style={{
-                      display: 'flex',
-                      gap: '1.25rem',
-                      fontFamily: "'JetBrains Mono', monospace",
-                      fontSize: '0.75rem',
-                      borderTop: '1px solid var(--border-subtle)',
-                      paddingTop: '0.75rem',
-                      marginTop: 'auto',
-                    }}>
-                      {move.frameData.startup && (
-                        <div style={{
-                          display: 'flex',
-                          flexDirection: 'column',
-                          alignItems: 'flex-start',
-                          gap: '0.15rem',
-                        }}>
-                          <span style={{
-                            fontSize: '0.6rem',
-                            fontWeight: 600,
-                            color: 'var(--text-tertiary)',
-                            textTransform: 'uppercase',
-                            letterSpacing: '0.05em',
-                          }}>SU</span>
-                          <span style={{
-                            color: isSelected ? 'var(--accent-indigo)' : 'var(--text-secondary)',
-                            fontWeight: 700,
-                          }}>
-                            {move.frameData.startup}
-                          </span>
+                                <div style={{
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  background: 'rgba(0,0,0,0.4)',
+                                  padding: '0.75rem',
+                                  borderRadius: '12px',
+                                  border: '1px inset rgba(255,255,255,0.05)',
+                                }}>
+                                  <GlyphSequence inputs={[move.input]} controller={effectiveController} notationSystem={notationSystem || game.notationSystem} />
+                                </div>
+                              </div>
+                            </div>
+                            
+                            {hasChildren && (
+                              <div style={{ display: 'flex', flexDirection: 'column', width: '100%', gap: '1rem', marginTop: '1rem' }}>
+                                {children.map((child, cIdx) => 
+                                  renderMoveCard(child, topIdx * 100 + cIdx, depth + 1, cIdx === children.length - 1)
+                                )}
+                              </div>
+                            )}
+                          </React.Fragment>
+                        );
+                      };
+
+                      return (
+                        <div key={topMove.id} style={{ display: 'flex', flexDirection: 'column', height: 'fit-content' }}>
+                          {renderMoveCard(topMove, topIdx, 0, false)}
                         </div>
-                      )}
-                      {move.frameData.active && (
-                        <div style={{
-                          display: 'flex',
-                          flexDirection: 'column',
-                          alignItems: 'flex-start',
-                          gap: '0.15rem',
-                        }}>
-                          <span style={{
-                            fontSize: '0.6rem',
-                            fontWeight: 600,
-                            color: 'var(--text-tertiary)',
-                            textTransform: 'uppercase',
-                            letterSpacing: '0.05em',
-                          }}>ACT</span>
-                          <span style={{
-                            color: isSelected ? 'var(--accent-indigo)' : 'var(--text-secondary)',
-                            fontWeight: 700,
-                          }}>
-                            {move.frameData.active.split('-')[0]}-{move.frameData.active.split('-')[1] || ''}
-                          </span>
-                        </div>
-                      )}
-                      {move.frameData.advantage && (
-                        <div style={{
-                          display: 'flex',
-                          flexDirection: 'column',
-                          alignItems: 'flex-start',
-                          gap: '0.15rem',
-                        }}>
-                          <span style={{
-                            fontSize: '0.6rem',
-                            fontWeight: 600,
-                            color: 'var(--text-tertiary)',
-                            textTransform: 'uppercase',
-                            letterSpacing: '0.05em',
-                          }}>ADV</span>
-                          <span style={{
-                            color: move.frameData.advantage === 'D' ? 'var(--accent-rose)'
-                              : parseInt(move.frameData.advantage) >= 0 ? 'var(--accent-emerald)'
-                              : 'var(--accent-rose)',
-                            fontWeight: 700,
-                          }}>
-                            {move.frameData.advantage === 'D' ? 'KD' : (parseInt(move.frameData.advantage) > 0 ? '+' : '') + move.frameData.advantage}
-                          </span>
-                        </div>
-                      )}
-                    </div>
-                  )} */}
-                </div>
-              );
-            })}
+                      );
+                    })}
                   </div>
                 </section>
               );
@@ -774,7 +769,6 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           </div>
         )}
       </main>
-
       {/* Back to Top */}
       {showScrollTop && (
         <button

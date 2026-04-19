@@ -14,6 +14,7 @@ export interface Move {
   type: MoveType;
   input: string;
   frameData?: FrameData;
+  parentMoveId?: string;
 }
 
 export interface PlaylistItem {
