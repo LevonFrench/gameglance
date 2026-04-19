@@ -785,7 +785,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                     position: 'absolute',
                     inset: 0,
                     background: theme.gradient,
-                    opacity: 0.04,
+                    opacity: expandedGameId === game.id ? (isDark ? 0.15 : 0.1) : 0.04,
                     transition: 'opacity 0.4s ease',
                     borderRadius: 'inherit',
                   }}
@@ -852,13 +852,14 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                       transform: 'translate(-50%, -50%)',
                       fontSize: 'clamp(4rem, 12vw, 10rem)',
                       fontWeight: 900,
-                      color: isDark ? 'rgba(255, 255, 255, 0.02)' : 'rgba(0, 0, 0, 0.03)',
+                      color: isDark ? 'rgba(255, 255, 255, 0.04)' : 'rgba(0, 0, 0, 0.05)',
                       whiteSpace: 'nowrap',
                       userSelect: 'none',
                       pointerEvents: 'none',
                       fontFamily: "'Outfit', sans-serif",
                       letterSpacing: '-0.03em',
-                      zIndex: 0
+                      zIndex: 0,
+                      mixBlendMode: isDark ? 'overlay' : 'multiply'
                     }}>
                       {game.name.toUpperCase()}
                     </div>
