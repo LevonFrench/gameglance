@@ -33,7 +33,6 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
     return [];
   });
   const [characters, setCharacters] = useState(game.characters || []);
-  const [loadingRoster, setLoadingRoster] = useState(() => characters.length === 0);
   const { theme } = useTheme();
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
   
@@ -47,11 +46,9 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
         .then(res => res.json())
         .then(data => {
           setCharacters(data);
-          setLoadingRoster(false);
         })
         .catch(err => {
           console.error("Failed to load roster:", err);
-          setLoadingRoster(false);
         });
     }
   }, [game.id, characters.length]);
@@ -86,6 +83,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
     <main style={{
       display: 'grid',
       gridTemplateColumns: `repeat(auto-fill, minmax(${minCardWidth}, 1fr))`,
+      gridAutoRows: 'min-content',
       gap: '1.5rem',
       maxWidth: '1400px',
       width: '100%',

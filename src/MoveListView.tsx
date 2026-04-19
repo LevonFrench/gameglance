@@ -269,7 +269,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         textAlign: 'center',
         overflow: 'hidden',
       }}>
-        {characterData.name.toUpperCase()}
+        {characterData.character.toUpperCase()}
       </div>
 
       <div style={{
@@ -288,7 +288,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           onBack={onBack}
           onHome={onHome}
           gameName={characterData.game}
-          characterName={characterData.name}
+          characterName={characterData.character}
           disableInitialAnimation={false}
         />
         
