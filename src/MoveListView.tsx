@@ -690,11 +690,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                                       paddingTop: '0.5rem',
                                       borderTop: '1px solid rgba(255,255,255,0.1)',
                                     }}>
-                                      {move.damage && move.damage !== 'Anywhere' && (
-                                        <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
-                                          <span style={{ fontWeight: 600 }}>Position:</span> {move.damage}
-                                        </div>
-                                      )}
+
                                       {move.notes && (
                                         <div style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', fontStyle: 'italic' }}>
                                           {move.notes}

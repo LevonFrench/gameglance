@@ -56,46 +56,12 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
         <nav style={{
           display: 'flex',
           alignItems: 'center',
+          justifyContent: 'center',
           gap: '0.75rem',
           marginBottom: 'var(--space-lg)',
           animation: disableInitialAnimation ? 'none' : 'fadeInUp 0.4s cubic-bezier(0.16, 1, 0.3, 1) both',
           flexWrap: 'wrap',
         }}>
-          <button
-            onClick={onBack}
-            style={{
-              background: 'var(--bg-input)',
-              border: '1px solid var(--border-subtle)',
-              color: 'var(--text-secondary)',
-              fontSize: '0.9rem',
-              cursor: 'pointer',
-              padding: '0.5rem 1.1rem',
-              borderRadius: 'var(--radius-md)',
-              transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
-              fontFamily: 'inherit',
-              fontWeight: 500,
-              display: 'flex',
-              alignItems: 'center',
-              gap: '0.4rem',
-            }}
-            onMouseOver={e => {
-              e.currentTarget.style.color = 'var(--text-primary)';
-              e.currentTarget.style.borderColor = 'var(--border-medium)';
-              e.currentTarget.style.background = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)';
-              e.currentTarget.style.transform = 'translateX(-2px)';
-            }}
-            onMouseOut={e => {
-              e.currentTarget.style.color = 'var(--text-secondary)';
-              e.currentTarget.style.borderColor = 'var(--border-subtle)';
-              e.currentTarget.style.background = 'var(--bg-input)';
-              e.currentTarget.style.transform = 'translateX(0)';
-            }}
-          >
-            ← Back
-          </button>
-          
-          <span style={{ color: 'var(--text-muted)' }}>·</span>
-          
           <button
             onClick={onHome}
             title="Home"
@@ -119,7 +85,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
               e.currentTarget.style.transform = 'scale(1)';
             }}
           >
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
               <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
               <polyline points="9 22 9 12 15 12 15 22"></polyline>
             </svg>
@@ -127,22 +93,23 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
 
           {gameName && (
             <>
-              <span style={{ color: 'var(--text-muted)' }}>·</span>
+              <span style={{ color: 'var(--text-muted)', fontSize: '1.2rem' }}>·</span>
               <button 
                 onClick={onGameClick || onBack}
                 style={{ 
                   background: 'transparent',
                   border: 'none',
-                  color: 'var(--text-secondary)', 
-                  fontWeight: 500,
+                  color: 'var(--text-primary)', 
+                  fontWeight: 700,
                   cursor: 'pointer',
                   padding: '2px 4px',
-                  fontFamily: 'inherit',
-                  fontSize: 'inherit',
+                  fontFamily: "'Outfit', sans-serif",
+                  fontSize: '1.2rem',
                   transition: 'color 0.2s',
+                  letterSpacing: '-0.02em',
                 }}
-                onMouseOver={e => e.currentTarget.style.color = 'var(--text-primary)'}
-                onMouseOut={e => e.currentTarget.style.color = 'var(--text-secondary)'}
+                onMouseOver={e => e.currentTarget.style.color = 'var(--accent-indigo)'}
+                onMouseOut={e => e.currentTarget.style.color = 'var(--text-primary)'}
               >
                 {gameName}
               </button>
