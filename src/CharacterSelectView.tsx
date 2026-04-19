@@ -11,13 +11,25 @@ interface Props {
   game: GameDefinition;
   controller: ControllerType;
   disableInitialAnimation?: boolean;
+  selectedCount?: number;
+  onLaunchGameGlance?: () => void;
+  onClearGameGlance?: () => void;
   onSetController: (c: ControllerType) => void;
   onSelectCharacter: (characterId: string) => void;
   onBack: () => void;
   onHome: () => void;
 }
 
-export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnimation, onSelectCharacter, onBack, onHome }) => {
+export const CharacterSelectView: React.FC<Props> = ({ 
+  game, 
+  disableInitialAnimation, 
+  onSelectCharacter, 
+  onBack, 
+  onHome,
+  selectedCount,
+  onLaunchGameGlance,
+  onClearGameGlance
+}) => {
   useArrowNavigation('[id^="char-card-"]');
 
   const [favorites, setFavorites] = useState<string[]>(() => {
@@ -71,7 +83,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
 
 
   const renderCardGrid = () => (
-    <main style={{
+    <main className="char-grid-main" style={{
       display: 'grid',
       gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
       gridAutoRows: 'auto',
@@ -292,6 +304,9 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
         onHome={onHome}
         gameName={game.name}
         disableInitialAnimation={disableInitialAnimation}
+        selectedCount={selectedCount}
+        onLaunchGameGlance={onLaunchGameGlance}
+        onClearGameGlance={onClearGameGlance}
       />
 
       {/* Centered Section Header */}

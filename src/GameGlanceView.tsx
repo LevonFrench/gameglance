@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
 import type { PlaylistItem } from './types';
 import { GlyphSequence } from './GlyphSequence';
+import { useTheme } from './useTheme';
 import type { ControllerType } from './glyphMap';
 
 interface Props {
@@ -13,6 +14,10 @@ interface Props {
   controller: ControllerType;
   onSetController?: (c: ControllerType) => void;
   onExit: () => void;
+  onHome?: () => void;
+  onBack?: () => void;
+  onRemoveMove?: (moveId: string) => void;
+  onCharacterChange?: (charId: string) => void;
   notationSystem?: 'numpad' | 'traditional' | 'mk';
 }
 
@@ -20,14 +25,23 @@ interface WakeLockSentinel {
   release: () => Promise<void>;
 }
 
-export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, selectedCharacterId, characterName, controller, notationSystem, onExit }) => {
+export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, selectedCharacterId, characterName, controller, notationSystem, onExit, onHome, onBack, onRemoveMove, onCharacterChange }) => {
   const uniqueCharacters = Array.from(new Set(playlist.map(p => p.characterId)));
   const [activeTab, setActiveTab] = useState(
     uniqueCharacters.includes(selectedCharacterId) ? selectedCharacterId : uniqueCharacters[0]
   );
-  const activePlaylist = playlist.filter(p => p.characterId === activeTab).map(p => p.move);
-
+  
   const [currentPage, setCurrentPage] = useState(0);
+
+  useEffect(() => {
+    if (uniqueCharacters.length > 0 && !uniqueCharacters.includes(activeTab)) {
+      setActiveTab(uniqueCharacters[0]);
+      if (onCharacterChange) onCharacterChange(uniqueCharacters[0]);
+      setCurrentPage(0);
+    }
+  }, [uniqueCharacters.join(','), activeTab, onCharacterChange]);
+
+  const activePlaylist = playlist.filter(p => p.characterId === activeTab).map(p => p.move);
   const [isPlaying, setIsPlaying] = useState(true);
   const [progress, setProgress] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
@@ -40,7 +54,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
 
   const effectiveItemsPerPage = displayMode === 'stadium' ? 1 : itemsPerPage;
   const totalPages = Math.ceil(activePlaylist.length / effectiveItemsPerPage);
-  const isDark = true;
+  const { isDark } = useTheme();
   const listContainerRef = useRef<HTMLDivElement>(null);
 
   // Progress animation and Wake Lock
@@ -205,8 +219,8 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
           }}>
             {/* Home icon */}
             <button
-              onClick={onExit}
-              title="Exit"
+              onClick={onHome || onExit}
+              title="Home"
               style={{
                 background: 'transparent',
                 border: 'none',
@@ -234,21 +248,35 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
             </button>
 
             <span style={{ color: 'var(--text-muted)', fontSize: '1.2rem' }}>·</span>
-            <span style={{
+            <span 
+              onClick={onBack || onExit}
+              style={{
               color: 'var(--text-primary)',
               fontWeight: 700,
               fontFamily: "'Outfit', sans-serif",
               fontSize: '1.2rem',
               letterSpacing: '-0.02em',
-            }}>{gameName}</span>
+              textTransform: 'capitalize',
+              cursor: 'pointer',
+            }}
+              onMouseOver={e => e.currentTarget.style.color = 'var(--accent-indigo)'}
+              onMouseOut={e => e.currentTarget.style.color = 'var(--text-primary)'}
+            >{gameName}</span>
             <span style={{ color: 'var(--text-muted)', fontSize: '1.2rem' }}>›</span>
-            <span style={{
+            <span 
+              onClick={onExit}
+              style={{
               color: 'var(--text-primary)',
               fontWeight: 700,
               fontFamily: "'Outfit', sans-serif",
               fontSize: '1.2rem',
               letterSpacing: '-0.02em',
-            }}>{activeTab === selectedCharacterId ? characterName : activeTab.replace(/-/g, ' ')}</span>
+              textTransform: 'capitalize',
+              cursor: 'pointer',
+            }}
+              onMouseOver={e => e.currentTarget.style.color = 'var(--accent-indigo)'}
+              onMouseOut={e => e.currentTarget.style.color = 'var(--text-primary)'}
+            >{activeTab === selectedCharacterId ? characterName : activeTab.replace(/-/g, ' ')}</span>
 
             <span style={{
               padding: '0.2rem 0.65rem',
@@ -375,7 +403,11 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
               {uniqueCharacters.map(char => (
                 <button
                   key={char}
-                  onClick={() => { setActiveTab(char); setCurrentPage(0); }}
+                  onClick={() => { 
+                    setActiveTab(char); 
+                    if (onCharacterChange) onCharacterChange(char);
+                    setCurrentPage(0); 
+                  }}
                   style={{
                     padding: '0.3rem 0.85rem',
                     borderRadius: 'var(--radius-full)',
@@ -439,7 +471,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
             justifyContent: 'center',
             minHeight: '100%',
           } : {
-            gridTemplateColumns: displayMode === 'paged' ? 'repeat(auto-fit, minmax(min(100%, 480px), 1fr))' : '1fr',
+            gridTemplateColumns: displayMode === 'paged' ? 'repeat(auto-fill, minmax(min(100%, 480px), 1fr))' : '1fr',
             alignContent: currentItems.length <= 4 ? 'center' : 'start',
           }),
           gap: displayMode === 'stadium' ? '3rem' : '0.75rem',
@@ -466,34 +498,71 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
             }}
           >
             {/* Move Header: Type + Name */}
-            <div style={{ display: 'flex', flexDirection: 'column', alignItems: displayMode === 'stadium' ? 'center' : 'flex-start' }}>
-              {displayMode !== 'stadium' && (
-                <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--accent-yellow, #ffcc00)', fontWeight: 600 }}>
-                  {move.type}
+            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', position: 'relative' }}>
+              <div style={{ display: 'flex', flexDirection: 'column', alignItems: displayMode === 'stadium' ? 'center' : 'flex-start' }}>
+                {displayMode !== 'stadium' && (
+                  <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.05em', color: 'var(--accent-yellow, #ffcc00)', fontWeight: 600 }}>
+                    {move.type}
+                  </div>
+                )}
+                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                  <span style={{
+                    fontFamily: "'JetBrains Mono', monospace",
+                    fontSize: displayMode === 'stadium' ? '1.5rem' : '0.7rem',
+                    fontWeight: 700,
+                    color: displayMode === 'stadium' ? 'var(--accent-indigo)' : 'var(--text-muted)',
+                    display: displayMode === 'stadium' ? 'block' : 'none',
+                  }}>
+                    {displayMode === 'stadium' ? `MOVE ${String(currentPage * effectiveItemsPerPage + idx + 1).padStart(2, '0')}` : ''}
+                  </span>
+                  <h2 style={{
+                    fontSize: displayMode === 'stadium' ? 'clamp(3rem, 6vw, 6rem)' : '1.1rem',
+                    fontFamily: "'Outfit', sans-serif",
+                    color: isDark ? '#ffffff' : '#000000',
+                    margin: 0,
+                    fontWeight: 700,
+                    textShadow: isDark && displayMode === 'stadium' ? '0 2px 10px rgba(0,0,0,0.5)' : 'none',
+                  }}>
+                    {move.name}
+                  </h2>
                 </div>
-              )}
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                <span style={{
-                  fontFamily: "'JetBrains Mono', monospace",
-                  fontSize: displayMode === 'stadium' ? '1.5rem' : '0.7rem',
-                  fontWeight: 700,
-                  color: displayMode === 'stadium' ? 'var(--accent-indigo)' : 'var(--text-muted)',
-                  display: displayMode === 'stadium' ? 'block' : 'none',
-                }}>
-                  {displayMode === 'stadium' ? `MOVE ${String(currentPage * effectiveItemsPerPage + idx + 1).padStart(2, '0')}` : ''}
-                </span>
-                <h2 style={{
-                  fontSize: displayMode === 'stadium' ? 'clamp(3rem, 6vw, 6rem)' : '1.1rem',
-                  fontFamily: "'Outfit', sans-serif",
-                  color: isDark ? '#ffffff' : '#000000',
-                  margin: 0,
-                  fontWeight: 700,
-                  textShadow: isDark && displayMode === 'stadium' ? '0 2px 10px rgba(0,0,0,0.5)' : 'none',
-                }}>
-                  {move.name}
-                </h2>
               </div>
+              
+              {onRemoveMove && displayMode !== 'stadium' && (
+                <button
+                  onClick={() => onRemoveMove(move.id)}
+                  title="Remove from playlist"
+                  style={{
+                    background: 'transparent',
+                    border: 'none',
+                    color: 'var(--text-muted)',
+                    cursor: 'pointer',
+                    padding: '0.3rem',
+                    borderRadius: '50%',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    transition: 'all 0.2s',
+                    marginTop: '-0.2rem',
+                    marginRight: '-0.2rem',
+                  }}
+                  onMouseOver={e => {
+                    e.currentTarget.style.color = '#ef4444';
+                    e.currentTarget.style.background = 'rgba(239, 68, 68, 0.1)';
+                  }}
+                  onMouseOut={e => {
+                    e.currentTarget.style.color = 'var(--text-muted)';
+                    e.currentTarget.style.background = 'transparent';
+                  }}
+                >
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                  </svg>
+                </button>
+              )}
             </div>
+
 
             {/* Input glyphs */}
             <div style={{
@@ -509,7 +578,13 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
               marginTop: displayMode === 'stadium' ? '4rem' : '0',
               marginBottom: displayMode === 'stadium' ? '4rem' : '0',
             }}>
-              <GlyphSequence inputs={[move.input]} controller={effectiveController} notationSystem={notationSystem} large={true} />
+              <GlyphSequence 
+                inputs={[move.input]} 
+                controller={effectiveController} 
+                notationSystem={notationSystem} 
+                large={true} 
+                isCombo={move.type?.toLowerCase() === 'combo'}
+              />
             </div>
           </div>
         ))}

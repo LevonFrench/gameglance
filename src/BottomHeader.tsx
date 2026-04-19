@@ -9,6 +9,8 @@ interface Props {
   onOpenFightcadeSync?: () => void;
   syncConnected?: boolean;
   onOpenAdmin?: () => void;
+  theme?: 'dark' | 'light';
+  onSetTheme?: (t: 'dark' | 'light') => void;
 }
 
 export const BottomHeader: React.FC<Props> = ({ 
@@ -18,7 +20,9 @@ export const BottomHeader: React.FC<Props> = ({
   onSetNotationSystem,
   onOpenFightcadeSync,
   syncConnected,
-  onOpenAdmin
+  onOpenAdmin,
+  theme,
+  onSetTheme
 }) => {
   const [adminClicks, setAdminClicks] = useState(0);
 
@@ -54,7 +58,7 @@ export const BottomHeader: React.FC<Props> = ({
       backdropFilter: 'blur(12px)',
       WebkitBackdropFilter: 'blur(12px)',
     }}>
-      <div style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
+      <div className="bottom-header-controls" style={{ display: 'flex', alignItems: 'center', gap: '1.5rem', flexWrap: 'wrap', justifyContent: 'center' }}>
 
         {/* Glyph Setting */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
@@ -121,6 +125,33 @@ export const BottomHeader: React.FC<Props> = ({
             <option value="traditional" style={{ background: 'var(--option-bg)' }}>Arrows (↓↘→)</option>
           </select>
         </div>
+
+        {onSetTheme && (
+          <>
+            <div style={{ width: '1px', height: '20px', background: 'var(--border-subtle)' }} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <label style={{ fontSize: 'calc(0.8rem * var(--font-scale))', color: 'var(--text-secondary)', fontWeight: 500 }}>Theme:</label>
+              <select
+                value={theme || 'dark'}
+                onChange={(e) => onSetTheme(e.target.value as 'dark' | 'light')}
+                style={{
+                  padding: 'calc(0.35rem * var(--spacing-scale)) calc(0.65rem * var(--spacing-scale))',
+                  background: 'var(--bg-input)',
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: 'var(--radius-md)',
+                  color: 'var(--text-primary)',
+                  fontSize: 'calc(0.8rem * var(--font-scale))',
+                  fontFamily: 'inherit',
+                  cursor: 'pointer',
+                  outline: 'none',
+                }}
+              >
+                <option value="dark" style={{ background: 'var(--option-bg)' }}>🌙 Dark</option>
+                <option value="light" style={{ background: 'var(--option-bg)' }}>☀️ Light</option>
+              </select>
+            </div>
+          </>
+        )}
 
       </div>
 

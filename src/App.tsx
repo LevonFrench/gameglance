@@ -9,6 +9,7 @@ import { GameGlanceMainView } from './GameGlanceView';
 import type { ControllerType } from './glyphMap';
 import { FightcadeSyncView } from './FightcadeSyncView';
 import { useFightcadeSync } from './useFightcadeSync';
+import { useTheme } from './useTheme';
 import { BottomHeader } from './BottomHeader';
 import { AdminDataEntryView } from './AdminDataEntryView';
 import type { CardTheme } from './types';
@@ -61,6 +62,9 @@ export const App: React.FC = () => {
     localStorage.setItem('gg_notation_override', notationOverride);
   }, [notationOverride]);
 
+  // Global Theme
+  const { theme, setTheme } = useTheme();
+
   // Fightcade Auto-Sync
   const { syncState, connect, disconnect } = useFightcadeSync();
 
@@ -95,6 +99,17 @@ export const App: React.FC = () => {
       }
     }
   }, [syncState.connected, syncState.gameId, syncState.p1CharId]);
+
+  // Force-mobile mode: ?mobile=true triggers mobile layout on desktop
+  useEffect(() => {
+    const params = new URLSearchParams(window.location.search);
+    if (params.get('mobile') === 'true') {
+      document.documentElement.classList.add('force-mobile');
+    }
+    return () => {
+      document.documentElement.classList.remove('force-mobile');
+    };
+  }, []);
 
   // Hidden hotkey to enter admin view
   useEffect(() => {
@@ -210,11 +225,21 @@ export const App: React.FC = () => {
     navigate('main_screen');
   };
 
+  const handleClearPlaylist = () => {
+    setSelectedPlaylist([]);
+  };
+
   // Router switch
   let viewComponent;
   switch (currentView) {
     case 'game_select':
-      viewComponent = <GameSelectView onSelectGame={handleSelectGame} disableInitialAnimation={disableGameSelectAnimation} />;
+      viewComponent = <GameSelectView 
+        onSelectGame={handleSelectGame} 
+        disableInitialAnimation={disableGameSelectAnimation} 
+        selectedCount={selectedPlaylist.length}
+        onLaunchGameGlance={handleLaunchMainScreen}
+        onClearGameGlance={handleClearPlaylist}
+      />;
       break;
     case 'char_select':
       if (!selectedGame) {
@@ -233,9 +258,12 @@ export const App: React.FC = () => {
            window.history.back();
          }} 
          onHome={() => {
-           setDisableGameSelectAnimation(true);
-           navigate('game_select', null, null);
+           setDisableGameSelectAnimation(false);
+           navigate('game_select');
          }}
+         selectedCount={selectedPlaylist.length}
+         onLaunchGameGlance={handleLaunchMainScreen}
+         onClearGameGlance={handleClearPlaylist}
       />;
       break;
     case 'move_list':
@@ -254,6 +282,9 @@ export const App: React.FC = () => {
          onLaunchMainScreen={handleLaunchMainScreen}
          onBack={() => navigate('char_select', selectedGame)}
          onHome={() => navigate('game_select')}
+         selectedCount={selectedPlaylist.length}
+         onLaunchGameGlance={handleLaunchMainScreen}
+         onClearGameGlance={handleClearPlaylist}
       />;
       break;
     case 'fightcade_sync':
@@ -275,7 +306,13 @@ export const App: React.FC = () => {
          controller={controller}
          notationSystem={(notationOverride === 'auto' ? selectedGame?.notationSystem : notationOverride) as 'numpad' | 'traditional' | 'mk' | undefined}
          onSetController={handleSetController}
-         onExit={() => window.history.back()} 
+         onExit={() => setCurrentView('move_list')}
+         onBack={() => navigate('char_select', selectedGame)}
+         onHome={() => navigate('game_select')}
+         onCharacterChange={(id) => setSelectedCharacter(id)}
+         onRemoveMove={(moveId) => {
+           setSelectedPlaylist(prev => prev.filter(p => p.move.id !== moveId));
+         }}
       />;
       break;
     }
@@ -302,6 +339,8 @@ export const App: React.FC = () => {
         onOpenFightcadeSync={currentView !== 'fightcade_sync' ? () => navigate('fightcade_sync') : undefined}
         syncConnected={syncState.connected}
         onOpenAdmin={() => setCurrentView("admin")}
+        theme={theme}
+        onSetTheme={setTheme}
       />
     </div>
   );

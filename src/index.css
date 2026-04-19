@@ -58,7 +58,63 @@
 
   /* Noise opacity */
   --noise-opacity: 0.015;
-} 
+}
+
+/* ☀️ Light Theme ☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️☀️ */
+[data-theme="light"] {
+  color-scheme: light;
+
+  /* Core surfaces */
+  --bg-primary: #f0f2f5;
+  --bg-secondary: #ffffff;
+  --bg-card: rgba(255, 255, 255, 0.90);
+  --bg-card-hover: rgba(245, 247, 250, 0.95);
+  --bg-glass: rgba(255, 255, 255, 0.80);
+  --bg-glass-heavy: rgba(245, 247, 250, 0.95);
+  --bg-input: rgba(0, 0, 0, 0.05);
+  --bg-elevated: rgba(255, 255, 255, 0.95);
+  --bg-badge: rgba(0, 0, 0, 0.08);
+
+  /* Borders */
+  --border-subtle: rgba(0, 0, 0, 0.1);
+  --border-medium: rgba(0, 0, 0, 0.2);
+  --border-accent: rgba(79, 70, 229, 0.45);
+  --border-focus: rgba(79, 70, 229, 0.6);
+
+  /* Text */
+  --text-primary: #1e293b;
+  --text-secondary: #475569;
+  --text-tertiary: #64748b;
+  --text-muted: #94a3b8;
+  --text-inverse: #f8fafc;
+
+  /* Accent colors */
+  --accent-indigo: #4f46e5;
+  --accent-indigo-hover: #4338ca;
+  --accent-cyan: #06b6d4;
+  --accent-emerald: #059669;
+  --accent-rose: #e11d48;
+  --accent-amber: #d97706;
+  --accent-purple: #9333ea;
+
+  /* Shadows */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.08);
+  --shadow-md: 0 6px 16px rgba(0, 0, 0, 0.1);
+  --shadow-lg: 0 12px 32px rgba(0, 0, 0, 0.12);
+  --shadow-glow-indigo: 0 0 30px rgba(79, 70, 229, 0.15);
+  --shadow-card-hover: 0 16px 40px rgba(0, 0, 0, 0.15);
+
+  /* Scrollbar */
+  --scrollbar-thumb: rgba(79, 70, 229, 0.2);
+  --scrollbar-thumb-hover: rgba(79, 70, 229, 0.35);
+
+  /* Select option bg */
+  --option-bg: #ffffff;
+
+  /* Noise opacity */
+  --noise-opacity: 0.04;
+}
 
 /* Responsive scaling variables */
 :root {
@@ -689,3 +745,68 @@ h1, h2, h3, h4, h5, h6 {
 }
 .hide-scrollbar::-webkit-scrollbar { display: none; }
 .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+
+/* ═══════════════════════════════════════════════════════════════
+   FORCE-MOBILE MODE
+   Applied via ?mobile=true URL param — mirrors mobile breakpoints
+   regardless of actual viewport width.
+   ═══════════════════════════════════════════════════════════════ */
+
+/* Force-mobile scaling variables */
+html.force-mobile {
+  --font-scale: 0.85;
+  --icon-scale: 0.75;
+  --spacing-scale: 0.8;
+}
+
+/* ── Mobile Layout Overrides (real + forced) ─────────────── */
+@media (max-width: 480px) {
+  .game-grid-main {
+    grid-template-columns: 1fr !important;
+    gap: 1rem !important;
+    padding: 0 0.5rem !important;
+  }
+  .move-grid-main {
+    grid-template-columns: 1fr !important;
+  }
+  .filter-controls-row {
+    grid-template-columns: 1fr !important;
+    gap: 0.75rem !important;
+  }
+  .bottom-header-controls {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
+  .top-header-social {
+    display: none !important;
+  }
+  .char-grid-main {
+    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important;
+    gap: 0.75rem !important;
+  }
+}
+
+/* Force-mobile mirrors the same rules */
+html.force-mobile .game-grid-main {
+  grid-template-columns: 1fr !important;
+  gap: 1rem !important;
+  padding: 0 0.5rem !important;
+}
+html.force-mobile .move-grid-main {
+  grid-template-columns: 1fr !important;
+}
+html.force-mobile .filter-controls-row {
+  grid-template-columns: 1fr !important;
+  gap: 0.75rem !important;
+}
+html.force-mobile .bottom-header-controls {
+  flex-direction: column !important;
+  gap: 0.75rem !important;
+}
+html.force-mobile .top-header-social {
+  display: none !important;
+}
+html.force-mobile .char-grid-main {
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important;
+  gap: 0.75rem !important;
+}

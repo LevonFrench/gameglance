@@ -4,88 +4,602 @@
   "game": "Street Fighter 6",
   "movesList": [
     {
-      "id": "high_tiger_shot",
-      "name": "High Tiger Shot",
-      "type": "special",
-      "input": "236P",
+      "id": "standing-light-punch",
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "input": "5LP",
       "frameData": {
-        "startup": "-",
-        "active": "-",
-        "recovery": "-",
-        "advantage": "-"
-      }
+        "startup": "5",
+        "active": "3",
+        "recovery": "11",
+        "advantage": "-3"
+      },
+      "damage": "300"
     },
     {
-      "id": "low_tiger_shot",
+      "id": "standing-medium-punch",
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "input": "5MP",
+      "frameData": {
+        "startup": "6",
+        "active": "4",
+        "recovery": "15",
+        "advantage": "+2"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "standing-heavy-punch",
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "input": "5HP",
+      "frameData": {
+        "startup": "15",
+        "active": "4",
+        "recovery": "22(25)",
+        "advantage": "-5"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "standing-light-kick",
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "input": "5LK",
+      "frameData": {
+        "startup": "7",
+        "active": "2",
+        "recovery": "15(17)",
+        "advantage": "-4"
+      },
+      "damage": "400"
+    },
+    {
+      "id": "standing-medium-kick",
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "input": "5MK",
+      "frameData": {
+        "startup": "11",
+        "active": "4",
+        "recovery": "19",
+        "advantage": "-3"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "standing-heavy-kick",
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "frameData": {
+        "startup": "10(12)",
+        "active": "2,4",
+        "recovery": "21(25)",
+        "advantage": "-5(-7)"
+      },
+      "damage": "600,300"
+    },
+    {
+      "id": "crouching-light-punch",
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "input": "2LP",
+      "frameData": {
+        "startup": "4",
+        "active": "2",
+        "recovery": "10",
+        "advantage": "-1"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "crouching-medium-punch",
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "input": "2MP",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "16(17/19)",
+        "advantage": "-1"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "crouching-heavy-punch",
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "input": "2HP",
+      "frameData": {
+        "startup": "11",
+        "active": "4",
+        "recovery": "21",
+        "advantage": "-5"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "crouching-light-kick",
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "input": "2LK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "12",
+        "advantage": "-3"
+      },
+      "damage": "200"
+    },
+    {
+      "id": "crouching-medium-kick",
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "input": "2MK",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-2"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "tiger-kick",
+      "name": "Tiger Kick",
+      "type": "normal",
+      "input": "2HK",
+      "frameData": {
+        "startup": "11",
+        "active": "3",
+        "recovery": "26",
+        "advantage": "-12"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "jumping-light-punch",
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "input": "j.LP",
+      "frameData": {
+        "startup": "4",
+        "active": "7",
+        "recovery": "3 land",
+        "advantage": "+2(+5)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-punch",
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "input": "j.MP",
+      "frameData": {
+        "startup": "8",
+        "active": "2,3",
+        "recovery": "3 land",
+        "advantage": "+6(+7)"
+      },
+      "damage": "350x2"
+    },
+    {
+      "id": "jumping-heavy-punch",
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "input": "j.HP",
+      "frameData": {
+        "startup": "10",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+4(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "jumping-light-kick",
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "input": "j.LK",
+      "frameData": {
+        "startup": "5",
+        "active": "10",
+        "recovery": "3 land",
+        "advantage": "+1(+6)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-kick",
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "input": "j.MK",
+      "frameData": {
+        "startup": "8",
+        "active": "8",
+        "recovery": "3 land",
+        "advantage": "+4(+10)"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "jumping-heavy-kick",
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "input": "j.HK",
+      "frameData": {
+        "startup": "10",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+7(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "tiger-heavy-elbow",
+      "name": "Tiger Heavy Elbow",
+      "type": "normal",
+      "input": "6MP",
+      "frameData": {
+        "startup": "22",
+        "active": "3",
+        "recovery": "19",
+        "advantage": "-3"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "tiger-monolith",
+      "name": "Tiger Monolith",
+      "type": "normal",
+      "input": "4HP",
+      "frameData": {
+        "startup": "8",
+        "active": "3,5",
+        "recovery": "25",
+        "advantage": "-10(-13)"
+      },
+      "damage": "200,600"
+    },
+    {
+      "id": "step-low-kick",
+      "name": "Step Low Kick",
+      "type": "normal",
+      "input": "6LK",
+      "frameData": {
+        "startup": "18",
+        "active": "3",
+        "recovery": "18(21)",
+        "advantage": "-3"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "step-high-kick",
+      "name": "Step High Kick",
+      "type": "normal",
+      "input": "6HK",
+      "frameData": {
+        "startup": "16",
+        "active": "4",
+        "recovery": "21(18)",
+        "advantage": "+4"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "step-middle-kick",
+      "name": "Step Middle Kick",
+      "type": "unique",
+      "input": "5MK~HK",
+      "frameData": {
+        "startup": "19",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-8"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "tiger-sting",
+      "name": "Tiger Sting",
+      "type": "unique",
+      "input": "5HP~HK",
+      "frameData": {
+        "startup": "16",
+        "active": "3",
+        "recovery": "27",
+        "advantage": "-12"
+      },
+      "damage": "1200"
+    },
+    {
+      "id": "tiger-slash",
+      "name": "Tiger Slash",
+      "type": "unique",
+      "input": "2MP~HP",
+      "frameData": {
+        "startup": "20",
+        "active": "3",
+        "recovery": "27",
+        "advantage": "-14"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "tiger-rise",
+      "name": "Tiger Rise",
+      "type": "unique",
+      "input": "2MP~HK",
+      "frameData": {
+        "startup": "18",
+        "active": "4",
+        "recovery": "26",
+        "advantage": "-10"
+      },
+      "damage": "1000"
+    },
+    {
+      "id": "tiger-hang",
+      "name": "Tiger Hang",
+      "type": "throw",
+      "input": "LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "tiger-carry",
+      "name": "Tiger Carry",
+      "type": "throw",
+      "input": "4LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "tiger-punishment",
+      "name": "Tiger Punishment",
+      "type": "common",
+      "input": "HPHK",
+      "frameData": {
+        "startup": "26",
+        "active": "2",
+        "recovery": "35",
+        "advantage": "-3 / Wall Splat HKD +72"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "tiger-twin-babel-block",
+      "name": "Tiger Twin Babel (Block)",
+      "type": "common",
+      "input": "6HPHK",
+      "frameData": {
+        "startup": "20",
+        "active": "3",
+        "recovery": "26(31)",
+        "advantage": "-6"
+      },
+      "damage": "500 recoverable"
+    },
+    {
+      "id": "drive-parry",
+      "name": "Drive Parry",
+      "type": "common",
+      "input": "MPMK",
+      "frameData": {
+        "startup": "1",
+        "active": "12 or until released",
+        "recovery": "33(1)(11)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "parry-drive-rush",
+      "name": "Parry Drive Rush",
+      "type": "common",
+      "input": "MPMK~66",
+      "frameData": {
+        "startup": "3+8",
+        "active": "-",
+        "recovery": "15(37)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "low-tiger-shot",
       "name": "Low Tiger Shot",
       "type": "special",
-      "input": "236K",
+      "input": "236LP",
       "frameData": {
-        "startup": "-",
+        "startup": "14",
         "active": "-",
-        "recovery": "-",
-        "advantage": "-"
-      }
+        "recovery": "36",
+        "advantage": "-7"
+      },
+      "damage": "600"
     },
     {
-      "id": "tiger_uppercut",
+      "id": "high-tiger-shot",
+      "name": "High Tiger Shot",
+      "type": "special",
+      "input": "236MP",
+      "frameData": {
+        "startup": "16",
+        "active": "-",
+        "recovery": "26",
+        "advantage": "+3"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "tiger-uppercut",
       "name": "Tiger Uppercut",
       "type": "special",
-      "input": "623P",
+      "input": "623LP",
       "frameData": {
-        "startup": "-",
-        "active": "-",
-        "recovery": "-",
-        "advantage": "-"
-      }
+        "startup": "5",
+        "active": "10",
+        "recovery": "35+12 land",
+        "advantage": "-37"
+      },
+      "damage": "1100 (800)"
     },
     {
-      "id": "tiger_knee",
-      "name": "Tiger Knee",
+      "id": "tiger-knee-crush",
+      "name": "Tiger Knee Crush",
       "type": "special",
-      "input": "623K",
+      "input": "236LK",
       "frameData": {
-        "startup": "-",
-        "active": "-",
-        "recovery": "-",
-        "advantage": "-"
-      }
+        "startup": "14",
+        "active": "11",
+        "recovery": "3+15(18) land",
+        "advantage": "-8(+2)"
+      },
+      "damage": "800"
     },
     {
-      "id": "tiger_cannon",
+      "id": "tiger-nexus",
+      "name": "Tiger Nexus",
+      "type": "special",
+      "input": "214LK",
+      "frameData": {
+        "startup": "17",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-5"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "mighty-tiger",
+      "name": "Mighty Tiger",
+      "type": "special",
+      "input": "214K~6LK",
+      "frameData": {
+        "startup": "15",
+        "active": "3",
+        "recovery": "22",
+        "advantage": "-5"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "greedy-tiger",
+      "name": "Greedy Tiger",
+      "type": "special",
+      "input": "214K~6MK",
+      "frameData": {
+        "startup": "17",
+        "active": "3",
+        "recovery": "17(19)",
+        "advantage": "+4(-26/-24 crouch)"
+      },
+      "damage": "1000"
+    },
+    {
+      "id": "nova-tiger",
+      "name": "Nova Tiger",
+      "type": "special",
+      "input": "214K~6HK",
+      "frameData": {
+        "startup": "21",
+        "active": "3",
+        "recovery": "19",
+        "advantage": "+2"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "tiger-cannon",
       "name": "Tiger Cannon",
       "type": "super",
       "input": "236236P",
       "frameData": {
-        "startup": "-",
+        "startup": "13",
         "active": "-",
-        "recovery": "-",
-        "advantage": "-"
-      }
+        "recovery": "96",
+        "advantage": "-31"
+      },
+      "damage": "200x7,800 (2200)"
     },
     {
-      "id": "tiger_raid",
-      "name": "Tiger Raid",
+      "id": "savage-tiger",
+      "name": "Savage Tiger",
       "type": "super",
       "input": "214214K",
       "frameData": {
-        "startup": "-",
-        "active": "-",
-        "recovery": "-",
-        "advantage": "-"
-      }
+        "startup": "10",
+        "active": "5",
+        "recovery": "73",
+        "advantage": "-58"
+      },
+      "damage": "1700~3000"
     },
     {
-      "id": "tiger_rampage",
-      "name": "Tiger Rampage",
+      "id": "tiger-vanquisher",
+      "name": "Tiger Vanquisher",
       "type": "super",
       "input": "236236K",
       "frameData": {
-        "startup": "-",
+        "startup": "12",
+        "active": "4",
+        "recovery": "67",
+        "advantage": "-51"
+      },
+      "damage": "4000"
+    },
+    {
+      "id": "neutral-taunt",
+      "name": "Neutral Taunt",
+      "type": "normal",
+      "input": "5PPPKKK",
+      "frameData": {
+        "startup": "487 (total)",
         "active": "-",
         "recovery": "-",
         "advantage": "-"
-      }
+      },
+      "damage": "-"
+    },
+    {
+      "id": "forward-taunt",
+      "name": "Forward Taunt",
+      "type": "normal",
+      "input": "6PPPKKK",
+      "frameData": {
+        "startup": "650 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "back-taunt",
+      "name": "Back Taunt",
+      "type": "normal",
+      "input": "4PPPKKK",
+      "frameData": {
+        "startup": "435 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
     }
   ],
   "combosList": [

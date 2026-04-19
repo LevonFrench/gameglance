@@ -5,6 +5,7 @@ import { GlyphSequence } from './GlyphSequence';
 import type { ControllerType } from './glyphMap';
 import { AmbientMesh } from './AmbientMesh';
 import { TopHeader } from './TopHeader';
+import { useTheme } from './useTheme';
 
 
 interface Props {
@@ -16,13 +17,14 @@ interface Props {
   onSetController: (c: ControllerType) => void;
   onToggleMove: (move: Move) => void;
   onLaunchMainScreen: () => void;
+  onClearGameGlance?: () => void;
   onBack: () => void;
   onHome: () => void;
 }
 
 
 
-export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, notationSystem, onToggleMove, onLaunchMainScreen, onBack, onHome }) => {
+export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, notationSystem, onToggleMove, onLaunchMainScreen, onClearGameGlance, onBack, onHome }) => {
   useArrowNavigation('[id^="move-"]');
 
   const [characterData, setCharacterData] = useState<CharacterExport | null>(null);
@@ -31,7 +33,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
   const [searchQuery, setSearchQuery] = useState('');
   const [showScrollTop, setShowScrollTop] = useState(false);
 
-  const isDark = true;
+  const { isDark } = useTheme();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -48,7 +50,9 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     if (stored) {
       try {
         pref = JSON.parse(stored);
-      } catch {}
+      } catch (err) {
+        console.warn('Failed to parse tab preferences', err);
+      }
     }
     const combinedTabs = Array.from(new Set([...GLOBAL_DEFAULT_SORT, ...(game.tabs || [])]));
     const sorted = combinedTabs.sort((a,b) => {
@@ -71,12 +75,199 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         return res.json();
       })
       .then(data => {
-        // Normalize move type to lowercase to match tab filter expectations
+        // ── FGC Type Analog Map ──────────────────────────────────
+        // Every franchise names the same universal concepts differently.
+        // This maps them all to the canonical types the tab system uses.
+        const TYPE_ALIASES: Record<string, string> = {
+          // ── normal: grounded buttons, standing/crouching attacks ──
+          'normal moves': 'normal',
+          'attack': 'normal',         // DOA
+          'light': 'normal',          // DNF Duel
+          'medium': 'normal',         // DNF Duel
+          'crouching light': 'normal',
+          'crouching medium': 'normal',
+          'low': 'normal',            // SoulCalibur
+
+          // ── special: motion inputs, unique character tools ──
+          'special moves': 'special',
+          'special (air ok)': 'special',
+          'special (buffable)': 'special',
+          'skill': 'special',         // P4A, DNF Duel
+          'mp skill': 'special',      // DNF Duel
+          'neutral skill': 'special',
+          'forward skill': 'special',
+          'down skill': 'special',
+          'back skill': 'special',
+          'aerial skill': 'special',
+          'neutral mp skill': 'special',
+          'forward mp skill': 'special',
+          'down mp skill': 'special',
+          'back mp skill': 'special',
+          'aerial mp skill': 'special',
+          'ability': 'special',       // DNF Duel
+          'counter special': 'special',
+          'counter': 'special',       // GG
+          'sp skill': 'special',      // P4A
+          'moon skill': 'special',    // Melty Blood
+          'trap': 'special',          // Marvel
+          'electric strike': 'special',
+          'defensive': 'special',
+          'projectile': 'special',    // Marvel
+          'armor break': 'special',   // Fighting Vipers
+          'beast special': 'special', // Bloody Roar
+          'eddie': 'special',         // GG (Zato)
+          'special / guard reversal': 'special',
+          'special (teleport)': 'special',
+
+          // ── super: meter-burning ultimate attacks ──
+          'overdrives': 'super',      // GG Strive
+          'overdrive': 'super',       // GG classic
+          'overdrive (air ok)': 'super',
+          'overdrive (low hp)': 'super',
+          'overdrive (max meter)': 'super',
+          'super art 1': 'super',     // SF series
+          'super art 2': 'super',
+          'super art 3': 'super',
+          'critical art': 'super',    // SFV/SF6
+          'hyper combo': 'super',     // Marvel
+          'level 3 hyper combo': 'super',
+          'hyper': 'super',           // Marvel/SNK
+          'level 1': 'super',         // Marvel/DBFZ
+          'level 3': 'super',
+          'supers': 'super',          // DBFZ
+          'arc drive': 'super',       // Melty Blood
+          'last arc': 'super',        // Melty Blood
+          'skybound art': 'super',    // GBVSR
+          'super skybound art': 'super',
+          'wft': 'super',             // SamSho (Weapon Flipping Technique)
+          'ssm': 'super',             // SamSho (Super Special Move)
+          's.power': 'super',         // Real Bout Fatal Fury
+          'p.power': 'super',
+          'desperation move': 'super',// Last Blade
+          'super desperation move': 'super',
+          'dream finish': 'super',    // SNK Heroines
+          'ultra 1': 'super',         // SFIV
+          'ultra 2': 'super',
+          'blast 2': 'super',         // DBZ Tenkaichi
+          'ultimate': 'super',        // Psychic Force / DBZ
+          'rev art': 'super',         // FFC:otW
+          'doki doki': 'super',       // Waku Waku 7
+          'hara hara': 'super',
+          'ultimate chaos': 'super',  // Chaos Code
+          'destruction chaos': 'super',
+          'cyber ex': 'super',        // Cyberbots
+          'ex move': 'super',         // Darkstalkers
+          'ex special': 'super',      // Vampire series
+          'beast drive': 'super',     // Bloody Roar
+          'hyper beast drive': 'super',
+          'beast drive': 'super',
+          'fatal attack': 'super',    // Kizuna Encounter
+          'critical edge': 'super',   // SoulCalibur
+          'plasma strike': 'super',   // Star Gladiator
+          'stress shot': 'super',     // Groove on Fight / Matrimelee
+          'ippatsu ougi': 'super',    // Matrimelee
+          'magic': 'super',           // Golden Axe
+          'chi': 'super',             // Tao Feng
+          'psychic': 'super',         // Psychic Force
+          'super (level 1)': 'super',
+          'super (level 2)': 'super',
+          'super (low hp)': 'super',
+          'install (low hp)': 'super',
+          'super move': 'super',      // Fighting Vipers
+          'special throw': 'super',   // Bloody Roar (command super grabs)
+
+          // ── unique: command normals, non-special motion attacks ──
+          'command normal': 'unique',
+          'command_normal': 'unique',
+
+          // ── throw: grabs, command grabs ──
+          'command grab': 'throw',    // universal
+          'command throw': 'throw',   // GG
+          'ground throw': 'throw',
+
+          // ── common: system mechanics, universal tools ──
+          'system': 'common',         // GG Strive / Tekken
+          'movement': 'common',       // Bloody Roar / DOA
+          'wild assault': 'common',
+          'dash': 'common',           // DBFZ
+          'armor dash': 'common',
+          'assist call': 'common',
+          'assists': 'common',
+          'grab': 'common',
+          'beam': 'common',
+          'pursuit (on downed opponent)': 'common',
+
+          // ── finisher: post-match / cinematic kills ──
+          'fatality': 'finisher',     // MK
+          'babality': 'finisher',
+          'friendship': 'finisher',
+          'stage fatality': 'finisher',
+          'no mercy': 'finisher',     // KI
+          'death move': 'finisher',   // Weaponlord
+          'extinction': 'finisher',   // Primal Rage
+          'finisher': 'finisher',     // MK generic
+
+          // ── stance: character-specific modes / transformations ──
+          'stance': 'special',        // Tekken/SC/GG (closest analog)
+          'special action': 'special',// Virtua Fighter
+          'beast': 'special',         // Bloody Roar (beast form)
+          'beast move': 'special',    // Bloody Roar
+
+          // ── strings/combos mapped to normal (sequential attacks) ──
+          'string': 'normal',         // DOA / Tekken
+          'combo': 'normal',          // Tekken
+          'move': 'normal',           // generic fallback
+
+          // ── hold: DOA counter system → unique (defensive tech) ──
+          'hold': 'unique',           // DOA
+
+          // ── aerial: air-specific attacks ──
+          'aerial': 'normal',         // SSB / various
+
+          // ── smash: SSB smash attacks ──
+          'smash': 'special',         // SSB
+
+          // ── SoulCalibur specifics ──
+          'unblockable': 'special',
+          '8wr': 'normal',            // 8-Way Run
+          'launcher': 'unique',
+          'charge': 'special',
+
+          // ── Tekken specifics ──
+          'instant-motion': 'special',
+          'deflect': 'special',
+
+          // ── TMNT ──
+          'desperation': 'super',
+
+          // ── Remaining franchise-specific aliases ──
+          'super moves': 'super',     // Aggressors of Dark Kombat
+          'super desperation': 'super',// Art of Fighting
+          'super special': 'super',   // Art of Fighting
+          'star special': 'super',    // Astra Superstars
+          'astral heat': 'super',     // BlazBlue
+          'distortion drive': 'super',// BlazBlue
+          'drive': 'special',         // BlazBlue
+          'super art': 'super',       // Capcom Fighting Jam
+          'ultimate art': 'super',    // Capcom Fighting Jam
+          'strike': 'normal',         // DOA2 / Marvel
+          'blast 1': 'special',       // DBZ Tenkaichi 3
+          'special / counter': 'special', // HnK
+          'hidden super': 'super',    // Garou
+          'instinct': 'super',        // KI 2013
+          'shadow': 'special',        // KI 2013
+          'anti-air': 'special',      // Marvel vs SF
+          'final attack': 'super',    // Pocket Bravery
+          'team up': 'super',         // Project Justice
+          'boss/special': 'special',  // Red Earth
+          'boss': 'special',          // Red Earth
+        };
+
         if (data.movesList) {
-          data.movesList = data.movesList.map((m: Record<string, unknown>) => ({
-            ...m,
-            type: typeof m.type === 'string' ? m.type.toLowerCase() : m.type,
-          }));
+          data.movesList = data.movesList.map((m: Record<string, unknown>) => {
+            const raw = typeof m.type === 'string' ? m.type.toLowerCase() : String(m.type || 'normal');
+            return { ...m, type: TYPE_ALIASES[raw] || raw };
+          });
         }
         setCharacterData(data);
       })
@@ -248,26 +439,28 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         speed={0.6} 
       />
 
-      {/* Background Character Watermark */}
+      {/* Background Character Watermark (Tiled & Angled) */}
       <div style={{
         position: 'fixed',
-        top: '55%',
-        left: '50%',
-        transform: 'translate(-50%, -50%)',
-        fontSize: 'clamp(6rem, 18vw, 22rem)',
+        inset: '-50%',
+        transform: 'rotate(-15deg)',
+        display: 'flex',
+        flexWrap: 'wrap',
+        gap: '2rem 4rem',
+        alignContent: 'center',
+        justifyContent: 'center',
+        fontSize: 'clamp(4rem, 8vw, 8rem)',
         fontWeight: 900,
         color: isDark ? 'rgba(255, 255, 255, 0.025)' : 'rgba(0, 0, 0, 0.025)',
-        whiteSpace: 'nowrap',
         userSelect: 'none',
         pointerEvents: 'none',
-        letterSpacing: '-0.03em',
         fontFamily: "'Outfit', sans-serif",
         zIndex: 0,
-        width: '100vw',
-        textAlign: 'center',
         overflow: 'hidden',
       }}>
-        {characterData.character.toUpperCase()}
+        {Array(60).fill(characterData.character.toUpperCase()).map((text, i) => (
+          <span key={i} style={{ whiteSpace: 'nowrap' }}>{text}</span>
+        ))}
       </div>
 
       <div style={{
@@ -280,7 +473,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         borderBottom: '1px solid var(--border-subtle)',
         transition: 'background-color 0.4s ease',
       }}>
-        <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
+        <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
         {/* Top Header */}
         <TopHeader 
           onBack={onBack}
@@ -288,10 +481,12 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           gameName={characterData.game}
           characterName={characterData.character}
           disableInitialAnimation={false}
+          selectedCount={selectedCount}
+          onLaunchGameGlance={onLaunchMainScreen}
+          onClearGameGlance={onClearGameGlance}
+          hideGameGlanceControls={true}
         />
-        
-
-      {/* Toolbar: tabs + controller + search */}
+        {/* Toolbar: tabs + controller + search */}
       <div style={{
         display: 'flex',
         flexDirection: 'column',
@@ -518,7 +713,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
       </div>
 
       {/* Move list */}
-      <main style={{ maxWidth: '1200px', width: '100%', margin: '0 auto' }}>
+      <main style={{ maxWidth: '1400px', width: '100%', margin: '0 auto' }}>
         {orderedTabs.every(tab => {
           const list = TAB_FILTER[tab] ? TAB_FILTER[tab](characterData) : (characterData.movesList || []);
           const filtered = searchQuery.trim() ? list.filter(m => m.name.toLowerCase().includes(searchQuery.toLowerCase())) : list;
@@ -562,10 +757,16 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
               return (
                 <section key={tab} id={`section-${tab.replace(/\s+/g, '-').toLowerCase()}`}>
                   <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--text-primary)', marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid var(--border-subtle)'}}>{tab}</h2>
-                  <div style={{ 
-                    display: 'grid', 
-                    gridTemplateColumns: 'repeat(auto-fill, minmax(380px, 1fr))', 
-                    gap: '1.5rem' 
+                  <div className="move-grid-main" style={{ 
+                    display: 'grid',
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(330px, 1fr))',
+                    gridAutoRows: 'auto',
+                    gap: '1rem',
+                    width: '100%',
+                    maxWidth: '1400px',
+                    margin: '0 auto',
+                    alignContent: 'flex-start',
+                    alignItems: 'stretch'
                   }}>
                     {topLevelMoves.map((topMove, topIdx) => {
                       const renderMoveCard = (move: Move, idx: number, depth: number = 0, isLastChild: boolean = false) => {
@@ -575,7 +776,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
 
                         return (
                           <React.Fragment key={move.id}>
-                            <div style={{ display: 'flex', width: '100%', position: 'relative' }}>
+                            <div style={{ display: 'flex', width: '100%', position: 'relative', flex: 1 }}>
                               {depth > 0 && (
                                 <div style={{ 
                                   width: `${depth * 1.5}rem`, 
@@ -620,32 +821,82 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                                 style={{
                                   display: 'flex',
                                   flexDirection: 'column',
-                                  flex: 1,
+                                  justifyContent: 'flex-start',
                                   cursor: 'pointer',
                                   animation: `fadeInUp 0.3s ease ${Math.min(idx * 20, 300)}ms both`,
                                   gap: '0.75rem',
                                   padding: '1.25rem',
                                   position: 'relative',
                                   zIndex: 2,
-                                  minWidth: 0,
+                                  width: '100%',
                                   background: 'var(--bg-secondary)',
                                   borderRadius: 'var(--radius-lg)',
                                   border: isSelected ? '2px solid var(--accent-indigo)' : '1px solid var(--border-subtle)',
                                 }}
                               >
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                                  <div style={{ display: 'flex', flexDirection: 'column', paddingRight: '2.5rem' }}>
-                                    <h2 style={{
-                                      fontFamily: "'Outfit', sans-serif",
-                                      fontSize: '1.1rem',
-                                      fontWeight: 700,
-                                      color: isDark ? '#ffffff' : '#000000',
-                                      margin: 0,
-                                      lineHeight: 1.2,
-                                    }}>
-                                      {move.name}
-                                    </h2>
-                                  </div>
+                                  {tab !== 'Combos' && (() => {
+                                    const dlMatch = move.name.match(/\(DL(\d+)\)/);
+                                    const cleanName = move.name.replace(/\(DL\d+\)/, '').trim();
+                                    const isFollowUp = move.input.includes('~');
+
+                                    return (
+                                      <div style={{ paddingRight: '2rem' }}>
+                                        <h3 style={{ 
+                                          color: 'var(--text-primary)', 
+                                          fontWeight: 700, 
+                                          fontSize: '1.05rem',
+                                          marginBottom: '0.35rem',
+                                          lineHeight: 1.3,
+                                          display: 'flex',
+                                          alignItems: 'center',
+                                          gap: '0.4rem'
+                                        }}>
+                                          {isFollowUp && (
+                                            <span style={{ color: 'var(--text-tertiary)', fontSize: '1.1rem', marginTop: '-2px' }}>↳</span>
+                                          )}
+                                          {cleanName}
+                                        </h3>
+                                        {(move.type || move.driveCost !== undefined || dlMatch) && (
+                                          <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+                                            {move.type && (
+                                              <span style={{ 
+                                                fontSize: '0.75rem', 
+                                                color: 'var(--text-tertiary)',
+                                                textTransform: 'uppercase',
+                                                letterSpacing: '0.05em',
+                                                fontWeight: 600,
+                                                background: 'var(--bg-badge)',
+                                                padding: '2px 6px',
+                                                borderRadius: '4px'
+                                              }}>{move.type}</span>
+                                            )}
+                                            {dlMatch && (
+                                              <span style={{ 
+                                                fontSize: '0.75rem', 
+                                                color: '#f59e0b',
+                                                fontWeight: 700,
+                                                background: 'rgba(245, 158, 11, 0.15)',
+                                                padding: '2px 6px',
+                                                borderRadius: '4px',
+                                                border: '1px solid rgba(245, 158, 11, 0.3)'
+                                              }}>Drink Lvl {dlMatch[1]}</span>
+                                            )}
+                                          {move.driveCost !== undefined && (
+                                            <span style={{ 
+                                              fontSize: '0.75rem', 
+                                              color: '#10b981',
+                                              fontWeight: 700,
+                                              background: 'rgba(16, 185, 129, 0.1)',
+                                              padding: '2px 6px',
+                                              borderRadius: '4px'
+                                            }}>Drive: {move.driveCost}</span>
+                                          )}
+                                        </div>
+                                      )}
+                                    </div>
+                                  );
+                                })()}
                                   
                                   {/* Explicit Selection Checkbox */}
                                   <div style={{
@@ -680,8 +931,15 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                                   padding: '0.75rem',
                                   borderRadius: '12px',
                                   border: '1px inset rgba(255,255,255,0.05)',
+                                  marginTop: 'auto',
+                                  marginBottom: 'auto',
                                 }}>
-                                  <GlyphSequence inputs={[move.input]} controller={effectiveController} notationSystem={notationSystem || game.notationSystem} />
+                                  <GlyphSequence 
+                                    inputs={[move.input]} 
+                                    controller={effectiveController} 
+                                    notationSystem={notationSystem || game.notationSystem} 
+                                    isCombo={move.type?.toLowerCase() === 'combo'}
+                                  />
                                   {(move.damage || move.notes) && (
                                     <div style={{
                                       display: 'flex',
@@ -713,11 +971,11 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                         );
                       };
 
-                      return (
-                        <div key={topMove.id} style={{ display: 'flex', flexDirection: 'column', height: 'fit-content' }}>
-                          {renderMoveCard(topMove, topIdx, 0, false)}
-                        </div>
-                      );
+                        return (
+                          <div key={topMove.id} style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
+                            {renderMoveCard(topMove, topIdx, 0, false)}
+                          </div>
+                        );
                     })}
                   </div>
                 </section>

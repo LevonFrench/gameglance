@@ -21,7 +21,7 @@ def get_move_type(heading):
         return 'super'
     return 'normal'
 
-CHARS = ['Ryu', 'Ken', 'Luke', 'Cammy', 'Juri', 'Chun-Li', 'Guile', 'Zangief', 'Dhalsim', 'E._Honda', 'Blanka', 'Marisa', 'Manon', 'Lily', 'JP', 'Dee_Jay', 'Rashid', 'A.K.I.', 'Ed', 'Akuma', 'Jamie', 'Kimberly', 'M._Bison', 'Terry', 'Mai']
+CHARS = ['Elena', 'Sagat', 'C._Viper', 'Alex', 'Ingrid']
 BASE_URL = "https://wiki.supercombo.gg/w/Street_Fighter_6/"
 
 def sanitize_filename(char_name):

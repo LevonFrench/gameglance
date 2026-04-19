@@ -3,11 +3,15 @@ import { useArrowNavigation } from './useArrowNavigation';
 import type { GameDefinition } from './types';
 import { SUPPORTED_GAMES } from './games';
 import { AmbientMesh } from './AmbientMesh';
+import { useTheme } from './useTheme';
 import { GameInfoCard } from './GameInfoCard';
 
 interface Props {
   onSelectGame: (game: GameDefinition) => void;
   disableInitialAnimation?: boolean;
+  selectedCount?: number;
+  onLaunchGameGlance?: () => void;
+  onClearGameGlance?: () => void;
 }
 
 const GAME_THEMES: Record<string, { gradient: string; icon: string; tagline: string; glowColor: string }> = {
@@ -353,7 +357,10 @@ const PlatformIcons = ({ platformString }: { platformString: string }) => {
   );
 };
 
-export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAnimation }) => {
+export const GameSelectView: React.FC<Props> = ({ 
+  onSelectGame, 
+  disableInitialAnimation = false
+}) => {
   useArrowNavigation('[id^="game-card-"]');
 
   const [favorites, setFavorites] = useState<string[]>(() => {
@@ -425,7 +432,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
       return a.name.localeCompare(b.name);
     });
 
-  const isDark = true;
+  const { isDark } = useTheme();
   const developerCounts = VISIBLE_GAMES.reduce((acc, game) => {
     if (game.developer) {
       acc[game.developer] = (acc[game.developer] || 0) + 1;
@@ -687,7 +694,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
       </header>
 
       {/* Game Grid */}
-      <main style={{
+      <main className="game-grid-main" style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
         gridAutoRows: 'minmax(160px, auto)',

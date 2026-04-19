@@ -4,148 +4,589 @@
   "game": "Street Fighter 6",
   "movesList": [
     {
-      "id": "thunder_dash",
+      "id": "standing-light-punch",
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "input": "5LP",
+      "frameData": {
+        "startup": "4",
+        "active": "3",
+        "recovery": "8",
+        "advantage": "-2"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "standing-medium-punch",
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "input": "5MP",
+      "frameData": {
+        "startup": "8",
+        "active": "4",
+        "recovery": "12",
+        "advantage": "+1"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "standing-heavy-punch",
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "input": "5HP",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "21",
+        "advantage": "-2"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "standing-light-kick",
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "input": "5LK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "11",
+        "advantage": "-2"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "standing-medium-kick",
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "input": "5MK",
+      "frameData": {
+        "startup": "8",
+        "active": "3",
+        "recovery": "18(20)",
+        "advantage": "-3"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "standing-heavy-kick",
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "frameData": {
+        "startup": "10",
+        "active": "4",
+        "recovery": "20",
+        "advantage": "-3"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "crouching-light-punch",
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "input": "2LP",
+      "frameData": {
+        "startup": "4",
+        "active": "3",
+        "recovery": "8",
+        "advantage": "-1"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "crouching-medium-punch",
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "input": "2MP",
+      "frameData": {
+        "startup": "6",
+        "active": "4",
+        "recovery": "16",
+        "advantage": "-2"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "crouching-heavy-punch",
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "input": "2HP",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "20",
+        "advantage": "-5"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "crouching-light-kick",
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "input": "2LK",
+      "frameData": {
+        "startup": "5",
+        "active": "2",
+        "recovery": "9",
+        "advantage": "-1"
+      },
+      "damage": "200"
+    },
+    {
+      "id": "crouching-medium-kick",
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "input": "2MK",
+      "frameData": {
+        "startup": "8",
+        "active": "3",
+        "recovery": "17",
+        "advantage": "-1"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "viper-kick",
+      "name": "Viper Kick",
+      "type": "normal",
+      "input": "2HK",
+      "frameData": {
+        "startup": "10",
+        "active": "3",
+        "recovery": "25(29)",
+        "advantage": "-11"
+      },
+      "damage": "900"
+    },
+    {
+      "id": "jumping-light-punch",
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "input": "j.LP",
+      "frameData": {
+        "startup": "5",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+3(+6)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-punch",
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "input": "j.MP",
+      "frameData": {
+        "startup": "8",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+6(+9)"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "jumping-heavy-punch",
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "input": "j.HP",
+      "frameData": {
+        "startup": "11",
+        "active": "5",
+        "recovery": "3 land",
+        "advantage": "+6(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "jumping-light-kick",
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "input": "j.LK",
+      "frameData": {
+        "startup": "5",
+        "active": "7",
+        "recovery": "3 land",
+        "advantage": "0(+6)"
+      },
+      "damage": "300"
+    },
+    {
+      "id": "jumping-medium-kick",
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "input": "j.MK",
+      "frameData": {
+        "startup": "7",
+        "active": "6",
+        "recovery": "3 land",
+        "advantage": "+3(+9)"
+      },
+      "damage": "500"
+    },
+    {
+      "id": "jumping-heavy-kick",
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "input": "j.HK",
+      "frameData": {
+        "startup": "8",
+        "active": "7",
+        "recovery": "3 land",
+        "advantage": "+6(+11)"
+      },
+      "damage": "700"
+    },
+    {
+      "id": "neutral-jump-heavy-kick",
+      "name": "Neutral Jump Heavy Kick",
+      "type": "normal",
+      "input": "8HK",
+      "frameData": {
+        "startup": "10",
+        "active": "7",
+        "recovery": "3 land",
+        "advantage": "+6(+11)"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "viper-elbow",
+      "name": "Viper Elbow",
+      "type": "normal",
+      "input": "6MP",
+      "frameData": {
+        "startup": "22",
+        "active": "3",
+        "recovery": "20",
+        "advantage": "-3"
+      },
+      "damage": "600"
+    },
+    {
+      "id": "double-kick",
+      "name": "Double Kick",
+      "type": "normal",
+      "input": "6HK",
+      "frameData": {
+        "startup": "11",
+        "active": "3(15)3",
+        "recovery": "16",
+        "advantage": "-2"
+      },
+      "damage": "450x2"
+    },
+    {
+      "id": "high-impulse",
+      "name": "High Impulse",
+      "type": "throw",
+      "input": "LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "thunder-cradle",
+      "name": "Thunder Cradle",
+      "type": "throw",
+      "input": "4LPLK",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "damage": "1200 (2040)"
+    },
+    {
+      "id": "viper-cannon",
+      "name": "Viper Cannon",
+      "type": "common",
+      "input": "HPHK",
+      "frameData": {
+        "startup": "26",
+        "active": "2",
+        "recovery": "35",
+        "advantage": "-3 / Wall Splat HKD +72"
+      },
+      "damage": "800"
+    },
+    {
+      "id": "counter-spark-block",
+      "name": "Counter Spark (Block)",
+      "type": "common",
+      "input": "6HPHK",
+      "frameData": {
+        "startup": "20",
+        "active": "3",
+        "recovery": "26(31)",
+        "advantage": "-6"
+      },
+      "damage": "500 recoverable"
+    },
+    {
+      "id": "drive-parry",
+      "name": "Drive Parry",
+      "type": "common",
+      "input": "MPMK",
+      "frameData": {
+        "startup": "1",
+        "active": "12 or until released",
+        "recovery": "33(1)(11)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "parry-drive-rush",
+      "name": "Parry Drive Rush",
+      "type": "common",
+      "input": "MPMK~66",
+      "frameData": {
+        "startup": "3+8",
+        "active": "-",
+        "recovery": "15(37)",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "high-jump",
+      "name": "High Jump",
+      "type": "special",
+      "input": "2~8",
+      "frameData": {
+        "startup": "6 prejump",
+        "active": "40 air",
+        "recovery": "3 land",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "thunder-dash",
       "name": "Thunder Dash",
       "type": "special",
-      "input": "214P",
+      "input": "214LP",
       "frameData": {
-        "startup": "-",
-        "active": "-",
-        "recovery": "-",
-        "advantage": "-"
-      }
+        "startup": "17",
+        "active": "4",
+        "recovery": "23",
+        "advantage": "-4(-1)"
+      },
+      "damage": "900"
     },
     {
-      "id": "tracer_combination",
+      "id": "tracer-combination",
       "name": "Tracer Combination",
       "type": "special",
-      "input": "6PP",
+      "input": "214LP~6PP",
       "frameData": {
-        "startup": "-",
-        "active": "-",
-        "recovery": "-",
-        "advantage": "-"
-      }
+        "startup": "15",
+        "active": "3",
+        "recovery": "28",
+        "advantage": "-15"
+      },
+      "damage": "600"
     },
     {
-      "id": "feint_(feint)",
-      "name": "Feint (Feint)",
+      "id": "thunder-dash-feint",
+      "name": "Thunder Dash Feint",
       "type": "special",
-      "input": "K",
+      "input": "214P~K",
       "frameData": {
-        "startup": "-",
+        "startup": "12/8/6",
         "active": "-",
-        "recovery": "-",
+        "recovery": "12",
         "advantage": "-"
-      }
+      },
+      "damage": "-"
     },
     {
-      "id": "burning_kick",
+      "id": "burning-kick",
       "name": "Burning Kick",
       "type": "special",
-      "input": "236K",
+      "input": "236LK",
       "frameData": {
-        "startup": "-",
-        "active": "-",
-        "recovery": "-",
-        "advantage": "-"
-      }
+        "startup": "23",
+        "active": "5",
+        "recovery": "7+13 land",
+        "advantage": "-2(+2)"
+      },
+      "damage": "900"
     },
     {
-      "id": "knuckled_pursuit",
+      "id": "knuckled-pursuit",
       "name": "Knuckled Pursuit",
       "type": "special",
-      "input": "PP",
+      "input": "236K~PP",
       "frameData": {
-        "startup": "-",
-        "active": "-",
-        "recovery": "-",
-        "advantage": "-"
-      }
+        "startup": "12",
+        "active": "4",
+        "recovery": "14+20 land",
+        "advantage": "-15"
+      },
+      "damage": "800"
     },
     {
-      "id": "double_burn",
+      "id": "double-burn",
       "name": "Double Burn",
       "type": "special",
-      "input": "KK",
+      "input": "236K~KK",
       "frameData": {
-        "startup": "-",
-        "active": "-",
-        "recovery": "-",
-        "advantage": "-"
-      }
+        "startup": "21",
+        "active": "5",
+        "recovery": "3+17 land",
+        "advantage": "+2"
+      },
+      "damage": "600"
     },
     {
-      "id": "aerial_burning_kick",
+      "id": "aerial-burning-kick",
       "name": "Aerial Burning Kick",
       "type": "special",
-      "input": "j.236K",
+      "input": "j.236LK",
       "frameData": {
-        "startup": "-",
-        "active": "-",
-        "recovery": "-",
-        "advantage": "-"
-      }
+        "startup": "22",
+        "active": "7",
+        "recovery": "13(14/21) land",
+        "advantage": "-5(+2)"
+      },
+      "damage": "900"
     },
     {
-      "id": "seismic_hammer",
+      "id": "seismic-hammer",
       "name": "Seismic Hammer",
       "type": "special",
       "input": "623P",
       "frameData": {
-        "startup": "-",
-        "active": "-",
-        "recovery": "-",
-        "advantage": "-"
-      }
+        "startup": "24",
+        "active": "8",
+        "recovery": "26",
+        "advantage": "-10"
+      },
+      "damage": "700"
     },
     {
-      "id": "focus_force",
-      "name": "Focus Force",
+      "id": "seismic-hammer-feint",
+      "name": "Seismic Hammer Feint",
+      "type": "special",
+      "input": "623P~K",
+      "frameData": {
+        "startup": "11",
+        "active": "-",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "focus-force-lv-1",
+      "name": "Focus Force (Lv.1)",
       "type": "special",
       "input": "214K",
       "frameData": {
-        "startup": "-",
-        "active": "-",
-        "recovery": "-",
-        "advantage": "-"
-      }
+        "startup": "13+10",
+        "active": "4(4)4",
+        "recovery": "36",
+        "advantage": "-16"
+      },
+      "damage": "500x2 (1000)"
     },
     {
-      "id": "limit_decoupler",
+      "id": "focus-force-lv-2",
+      "name": "Focus Force (Lv.2)",
+      "type": "special",
+      "input": "214{K}",
+      "frameData": {
+        "startup": "20~58+10",
+        "active": "4(4)4",
+        "recovery": "36",
+        "advantage": "-16"
+      },
+      "damage": "600x2 (1200)"
+    },
+    {
+      "id": "limit-decoupler",
       "name": "Limit Decoupler",
       "type": "super",
       "input": "236236K",
       "frameData": {
-        "startup": "-",
-        "active": "-",
-        "recovery": "-",
-        "advantage": "-"
-      }
+        "startup": "8",
+        "active": "4(3)6",
+        "recovery": "22+31 land",
+        "advantage": "-34"
+      },
+      "damage": "800,1200 (2000)"
     },
     {
-      "id": "mission_complete",
+      "id": "mission-complete",
       "name": "Mission Complete",
       "type": "super",
       "input": "214214P",
       "frameData": {
-        "startup": "-",
-        "active": "-",
-        "recovery": "-",
-        "advantage": "-"
-      }
+        "startup": "7",
+        "active": "4",
+        "recovery": "45",
+        "advantage": "-29"
+      },
+      "damage": "3000"
     },
     {
-      "id": "hard_luck_rejector",
+      "id": "hard-luck-rejector",
       "name": "Hard Luck Rejector",
       "type": "super",
       "input": "214214K",
       "frameData": {
-        "startup": "-",
+        "startup": "10",
+        "active": "4",
+        "recovery": "54",
+        "advantage": "-38"
+      },
+      "damage": "4000"
+    },
+    {
+      "id": "neutral-taunt",
+      "name": "Neutral Taunt",
+      "type": "normal",
+      "input": "5PPPKKK",
+      "frameData": {
+        "startup": "605 (total)",
         "active": "-",
         "recovery": "-",
         "advantage": "-"
-      }
+      },
+      "damage": "-"
+    },
+    {
+      "id": "forward-taunt",
+      "name": "Forward Taunt",
+      "type": "normal",
+      "input": "6PPPKKK",
+      "frameData": {
+        "startup": "740 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
+    },
+    {
+      "id": "back-taunt",
+      "name": "Back Taunt",
+      "type": "normal",
+      "input": "4PPPKKK",
+      "frameData": {
+        "startup": "965 (total)",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "damage": "-"
     }
   ],
   "combosList": [

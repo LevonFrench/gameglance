@@ -1,12 +1,14 @@
 import React from 'react';
 import { getGlyphLabel, getGlyphColor } from './glyphMap';
 import type { ControllerType } from './glyphMap';
+import { useTheme } from './useTheme';
 
 interface GlyphSequenceProps {
   inputs: string[];
   controller: ControllerType;
   large?: boolean;
   notationSystem?: 'numpad' | 'traditional' | 'mk';
+  isCombo?: boolean;
 }
 
 const DIRECTION_ROTATIONS: Record<string, string> = {
@@ -20,7 +22,7 @@ const NUMPAD_MAP: Record<string, string> = {
   '8': 'up', '9': 'up-forward'
 };
 
-const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'): string[] => {
+const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional', isCombo: boolean = false): string[] => {
   const result: string[] = [];
 
   const REVERSE_NUMPAD_MAP: Record<string, string> = {
@@ -50,12 +52,30 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
       continue;
     }
 
-    const tokens = raw.split(/(\+| |,|~|\[Cancel\]|-|\/)/g).filter(Boolean);
-    for (const t of tokens) {
-      if (t === ' ') { result.push('[Cancel]'); continue; }
+    let skipNextSpace = false;
+    const tokens = raw.split(/(\+| |,|~|\[Cancel\]|-|\/|>)/g).filter(Boolean);
+    for (let i = 0; i < tokens.length; i++) {
+      const t = tokens[i];
+      if (t === ' ') { 
+        if (skipNextSpace) {
+          skipNextSpace = false;
+          continue;
+        }
+        if (isCombo) {
+          result.push('[Cancel]');
+        }
+        continue; 
+      }
+      
+      // If the current token is ANY, skip the next space so ANY P stays together on the same line
+      if (t.toUpperCase() === 'ANY') {
+        skipNextSpace = true;
+      }
+
+      if (t === '-') { continue; } // Ignore hyphens
       if (t === ',') { result.push('[Cancel]'); continue; }
-      if (t === '-') { result.push('[Cancel]'); continue; }
       if (t === '~') { result.push('[Cancel]'); continue; }
+      if (t === '>') { result.push('[Cancel]'); continue; }
       if (t === '/') { result.push('or'); continue; }
       if (t === '+') { result.push('+'); continue; }
       if (t === '[Cancel]') { result.push(t); continue; }
@@ -100,9 +120,9 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
         }
 
         if (match[3]) {
-          const buttonMatches = match[3].match(/(LP|MP|HP|LK|MK|HK|PP|KK|PPP|KKK|P|K|S|H|D|L|M|A1|A2)/g);
+          const buttonMatches = match[3].match(/(LP|MP|HP|LK|MK|HK|PP|KK|PPP|KKK|P|K|S|H|D|L|M|A1|A2|A|B|C|D)/gi);
           if (buttonMatches && buttonMatches.join('') === match[3]) {
-            result.push(...buttonMatches);
+            result.push(...buttonMatches.map(b => b.toUpperCase()));
           } else {
             result.push(match[3]);
           }
@@ -110,9 +130,9 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
       } else {
         // No numbers, just text like LPLK
         if (prefix) result.push(prefix);
-        const buttonMatches = cleanT.match(/(LP|MP|HP|LK|MK|HK|PP|KK|PPP|KKK|P|K|S|H|D|L|M|A1|A2)/g);
+        const buttonMatches = cleanT.match(/(LP|MP|HP|LK|MK|HK|PP|KK|PPP|KKK|P|K|S|H|D|L|M|A1|A2|A|B|C|D)/gi);
         if (buttonMatches && buttonMatches.join('') === cleanT) {
-          result.push(...buttonMatches);
+          result.push(...buttonMatches.map(b => b.toUpperCase()));
         } else {
           result.push(processingT);
         }
@@ -172,32 +192,28 @@ const getMacroSubButtons = (macro: string, isSNK: boolean): string[] => {
   return [];
 };
 
-export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller, large = false, notationSystem = 'numpad' }) => {
-  const isDark = true;
+export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller, large = false, notationSystem = 'numpad', isCombo = false }) => {
+  const { isDark } = useTheme();
 
   const expandedInputs = React.useMemo(() => {
     // Tekken uses 1234 for buttons, so we bypass numpad parsing for it.
     const effectiveSystem = controller === 'tekken' ? 'traditional' : notationSystem;
     // We NO LONGER expand macros here. We keep 'PP' as a single token so we can stack it.
-    return tokenizeInputs(inputs, effectiveSystem);
-  }, [inputs, notationSystem, controller]);
+    return tokenizeInputs(inputs, effectiveSystem, isCombo);
+  }, [inputs, notationSystem, controller, isCombo]);
 
   const renderSingleGlyph = (input: string, idx: React.Key, styleOverrides: React.CSSProperties = {}) => {
     // Cancel / link separator
     if (input === '[Cancel]') {
       return (
-        <span
+        <div
           key={idx}
           style={{
-            color: '#ffffff',
-            fontWeight: 700,
-            fontSize: large ? '1.2rem' : '0.8rem',
-            margin: `0 ${large ? '2px' : '1px'}`,
-            ...styleOverrides
+            flexBasis: '100%',
+            height: '0',
+            margin: large ? '6px 0' : '4px 0',
           }}
-        >
-          ›
-        </span>
+        />
       );
     }
 
@@ -387,16 +403,6 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
     if (input === 'P' || input === 'K') {
       return (
         <div key={idx} style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', ...styleOverrides }}>
-          <div style={{
-            position: 'absolute',
-            top: large ? '-14px' : '-11px',
-            fontSize: large ? '0.65rem' : '0.45rem',
-            fontWeight: 900,
-            color: 'rgba(255, 255, 255, 0.95)',
-            letterSpacing: '0.05em'
-          }}>
-            ANY
-          </div>
           {buttonJSX}
         </div>
       );
@@ -409,37 +415,68 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
     );
   };
 
+  const lines: string[][] = [];
+  let currentLine: string[] = [];
+  
+  expandedInputs.forEach(input => {
+    if (input === '[Cancel]') {
+      lines.push(currentLine);
+      currentLine = [];
+    } else {
+      currentLine.push(input);
+    }
+  });
+  if (currentLine.length > 0) {
+    lines.push(currentLine);
+  }
+
   return (
     <div style={{
       display: 'flex',
-      gap: large ? '8px' : '5px',
-      alignItems: 'center',
-      flexWrap: 'wrap',
+      flexDirection: 'column',
+      gap: large ? '18px' : '14px',
     }}>
-      {expandedInputs.map((input, idx) => {
-        const norm = input.toUpperCase().trim();
-        const subButtons = getMacroSubButtons(norm, controller === 'neogeo');
+      {lines.map((lineInputs, lineIdx) => {
+        // Cap indent to prevent massive diagonal staircases
+        const effectiveIndent = Math.min(lineIdx, 6);
+        
+        return (
+          <div key={lineIdx} style={{ 
+            display: 'flex', 
+            gap: large ? '8px' : '5px', 
+            alignItems: 'center', 
+            flexWrap: 'wrap',
+            paddingLeft: lineIdx > 0 ? `${effectiveIndent * (large ? 24 : 16)}px` : 0
+          }}>
+            {lineIdx > 0 && (
+              <span style={{ color: 'var(--border-medium)', fontSize: large ? '1rem' : '0.8rem', marginRight: '2px' }}>↳</span>
+            )}
+            
+            {lineInputs.map((input, idx) => {
+              const norm = input.toUpperCase().trim();
+              const subButtons = getMacroSubButtons(norm, controller === 'neogeo');
 
-        // If it's a multi-button macro (PP, PPP, KK, KKK), render them stacked!
-        if (subButtons.length > 1) {
-          const overlap = large ? '-18px' : '-12px';
-          return (
-            <div key={idx} style={{ display: 'flex', alignItems: 'center' }}>
-              {subButtons.map((btn, subIdx) => {
-                return renderSingleGlyph(btn, `${idx}-${subIdx}`, {
-                  marginLeft: subIdx > 0 ? overlap : '0',
-                  zIndex: 10 - subIdx, // first button on top
-                  position: 'relative',
-                  filter: subIdx > 0 ? 'brightness(0.7)' : 'none', // dim the ones in back slightly
-                });
-              })}
-            </div>
-          );
-        }
+              if (subButtons.length > 1) {
+                const overlap = large ? '-18px' : '-12px';
+                return (
+                  <div key={idx} style={{ display: 'flex', alignItems: 'center' }}>
+                    {subButtons.map((btn, subIdx) => {
+                      return renderSingleGlyph(btn, `${idx}-${subIdx}`, {
+                        marginLeft: subIdx > 0 ? overlap : '0',
+                        zIndex: 10 - subIdx,
+                        position: 'relative',
+                        filter: subIdx > 0 ? 'brightness(0.7)' : 'none',
+                      });
+                    })}
+                  </div>
+                );
+              }
 
-        // Otherwise, render normally (this includes P and K which return array of length 1)
-        const finalInput = subButtons.length === 1 ? subButtons[0] : input;
-        return renderSingleGlyph(finalInput, idx);
+              const finalInput = subButtons.length === 1 ? subButtons[0] : input;
+              return renderSingleGlyph(finalInput, idx);
+            })}
+          </div>
+        );
       })}
     </div>
   );
