@@ -199,11 +199,6 @@ export const App: React.FC = () => {
     navigate('main_screen');
   };
 
-  // Resolve active theme based on auto settings
-  const activeCardTheme = cardTheme === 'auto' 
-    ? (selectedGame?.theme || 'default-dark') 
-    : cardTheme;
-
   // Router switch
   let viewComponent;
   switch (currentView) {
@@ -221,7 +216,7 @@ export const App: React.FC = () => {
          disableInitialAnimation={returningFromMoveList}
          onSetController={setController}
          onSelectCharacter={handleSelectCharacter} 
-         cardTheme={activeCardTheme}
+
          onBack={() => {
            setDisableGameSelectAnimation(true);
            window.history.back();
