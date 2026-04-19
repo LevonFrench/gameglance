@@ -77,7 +77,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
   const maxNameLength = characters.length > 0 
     ? Math.max(...characters.map(c => c.name.replace(/ \(Coming Soon\)/, '').length)) 
     : 15;
-  const minCardWidth = `calc(${maxNameLength}ch + 4.5rem)`;
+  const minCardWidth = `max(200px, calc(${maxNameLength}ch + 5rem))`;
 
   const renderSf6Layout = () => (
     <main style={{
@@ -126,7 +126,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
               textAlign: 'left',
               backdropFilter: 'blur(12px)',
               WebkitBackdropFilter: 'blur(12px)',
-              minHeight: '110px',
+              minHeight: '120px',
               transform: isHovered ? 'translateY(-4px) scale(1.02)' : 'scale(1)',
               boxShadow: isHovered 
                 ? `0 20px 40px ${accentColor}25, 0 0 0 1px ${accentColor}50` 
