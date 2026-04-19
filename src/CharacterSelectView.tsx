@@ -169,11 +169,50 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
               transition: 'all 0.4s ease',
             }} />
 
+            {/* Star toggle - Top Right */}
+            <button 
+              onClick={(e) => toggleFavorite(e, character.id)}
+              style={{
+                position: 'absolute',
+                top: '1rem',
+                right: '1rem',
+                background: 'var(--bg-glass)',
+                border: '1px solid var(--border-subtle)',
+                borderRadius: '50%',
+                cursor: 'pointer',
+                width: '32px',
+                height: '32px',
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                color: isFav ? '#f59e0b' : 'var(--text-secondary)',
+                transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                zIndex: 10,
+                padding: 0,
+                backdropFilter: 'blur(4px)',
+              }}
+              onMouseOver={e => {
+                e.currentTarget.style.transform = 'scale(1.15)';
+                e.currentTarget.style.color = '#f59e0b';
+                e.currentTarget.style.borderColor = 'rgba(245, 158, 11, 0.5)';
+              }}
+              onMouseOut={e => {
+                e.currentTarget.style.transform = 'scale(1)';
+                e.currentTarget.style.color = isFav ? '#f59e0b' : 'var(--text-secondary)';
+                e.currentTarget.style.borderColor = 'var(--border-subtle)';
+              }}
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill={isFav ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+              </svg>
+            </button>
+
             {/* Foreground Content */}
             <div style={{
               position: 'relative',
               zIndex: 2,
               width: '100%',
+              paddingRight: '2rem', // Space for star
             }}>
               <h2 style={{
                 fontSize: '1.4rem',
@@ -231,37 +270,6 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
                   ].filter(Boolean).join(' | ') || 'No Data'}
                 </div>
               )}
-
-              {/* Star toggle */}
-              <button 
-                onClick={(e) => toggleFavorite(e, character.id)}
-                style={{
-                  background: 'var(--bg-elevated)',
-                  border: '1px solid',
-                  borderColor: isFav ? '#f59e0b' : 'var(--border-subtle)',
-                  borderRadius: '50%',
-                  cursor: 'pointer',
-                  fontSize: '1.25rem',
-                  width: '36px',
-                  height: '36px',
-                  display: 'flex',
-                  alignItems: 'center',
-                  justifyContent: 'center',
-                  color: isFav ? '#f59e0b' : 'var(--text-secondary)',
-                  boxShadow: isFav ? '0 0 15px rgba(245, 158, 11, 0.2)' : 'none',
-                  transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
-                }}
-                onMouseOver={e => { 
-                  e.currentTarget.style.transform = 'scale(1.15)'; 
-                  e.currentTarget.style.color = isFav ? '#fbbf24' : 'var(--text-primary)';
-                }}
-                onMouseOut={e => { 
-                  e.currentTarget.style.transform = 'scale(1)';
-                  e.currentTarget.style.color = isFav ? '#f59e0b' : 'var(--text-secondary)';
-                }}
-              >
-                ★
-              </button>
             </div>
           </button>
         );

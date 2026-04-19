@@ -936,8 +936,8 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
 
               {/* Expanded Area */}
               {expandedGameId === game.id && (
-                <div style={{ animation: 'fadeInUp 0.4s ease' }}>
-                  <GameInfoCard game={game} />
+                <div style={{ animation: 'fadeInUp 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)' }}>
+                  <GameInfoCard game={game} onSelect={onSelectGame} />
                 </div>
               )}
             </div>

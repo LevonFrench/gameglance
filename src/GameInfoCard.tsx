@@ -4,9 +4,10 @@ import { useTheme } from './ThemeContext';
 
 interface Props {
   game: GameDefinition;
+  onSelect?: (game: GameDefinition) => void;
 }
 
-export const GameInfoCard: React.FC<Props> = ({ game }) => {
+export const GameInfoCard: React.FC<Props> = ({ game, onSelect }) => {
   const { theme } = useTheme();
   const isDark = theme === 'dark' || theme !== 'light'; // Default to dark for premium feel
   const [activeTab, setActiveTab] = useState<'info' | 'systems'>('systems');
@@ -167,6 +168,41 @@ export const GameInfoCard: React.FC<Props> = ({ game }) => {
                   {tag}
                 </span>
               ))}
+            </div>
+          )}
+
+          {onSelect && (
+            <div style={{ marginTop: 'var(--space-xl)', position: 'relative', zIndex: 1 }}>
+              <button
+                onClick={(e) => {
+                  e.stopPropagation();
+                  onSelect(game);
+                }}
+                style={{
+                  background: accentGradient,
+                  color: '#fff',
+                  border: 'none',
+                  padding: '1rem 3rem',
+                  borderRadius: 'var(--radius-full)',
+                  fontSize: '1.25rem',
+                  fontWeight: 800,
+                  letterSpacing: '0.05em',
+                  textTransform: 'uppercase',
+                  cursor: 'pointer',
+                  boxShadow: `0 8px 24px ${accentGlow}`,
+                  transition: 'all 0.2s cubic-bezier(0.16, 1, 0.3, 1)',
+                }}
+                onMouseOver={(e) => {
+                  e.currentTarget.style.transform = 'translateY(-2px) scale(1.05)';
+                  e.currentTarget.style.boxShadow = `0 12px 32px ${accentGlow}, inset 0 2px 0 rgba(255,255,255,0.2)`;
+                }}
+                onMouseOut={(e) => {
+                  e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                  e.currentTarget.style.boxShadow = `0 8px 24px ${accentGlow}`;
+                }}
+              >
+                View Roster
+              </button>
             </div>
           )}
         </div>
