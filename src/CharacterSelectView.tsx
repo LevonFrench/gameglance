@@ -210,7 +210,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
               position: 'relative',
               zIndex: 2,
               width: '100%',
-              paddingRight: '2rem', // Space for star
+              paddingRight: '3rem', // Space for star (star is 2rem wide + 1rem right inset)
             }}>
               <h2 style={{
                 fontSize: '1.4rem',
@@ -220,6 +220,8 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
                 color: isHovered ? 'var(--text-primary)' : 'var(--text-secondary)',
                 textShadow: isHovered ? `0 2px 10px ${accentColor}40` : 'none',
                 transition: 'color 0.3s ease',
+                wordBreak: 'break-word',
+                hyphens: 'auto',
               }}>
                 {rawName}
               </h2>
