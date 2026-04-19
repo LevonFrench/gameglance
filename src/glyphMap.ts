@@ -48,6 +48,9 @@ const GLYPH_LABEL_MAP: Record<string, Record<ControllerType, string>> = {
   '720': { playstation: '↻↻', xbox: '↻↻', arcade: '↻↻', switch: '↻↻', neogeo: '↻↻', wii: '↻↻', mk: '↻↻', genesis: '↻↻', snes: '↻↻', sfami: '↻↻', cps: '↻↻', tekken: '↻↻' },
   'AST1': { playstation: 'L1', xbox: 'LB', arcade: 'A1', switch: 'L', neogeo: 'A', wii: '1', mk: 'A1', genesis: 'Z', snes: 'L', sfami: 'L', cps: 'A1', tekken: 'A1' },
   'AST2': { playstation: 'L2', xbox: 'LT', arcade: 'A2', switch: 'ZL', neogeo: 'B', wii: '2', mk: 'A2', genesis: 'C', snes: 'R', sfami: 'R', cps: 'A2', tekken: 'A2' },
+  'KAMEO': { playstation: 'R1', xbox: 'RB', arcade: 'KAMEO', switch: 'R', neogeo: 'A', wii: '1', mk: 'KAMEO', genesis: 'Z', snes: 'L', sfami: 'L', cps: 'A1', tekken: 'R1' },
+  'FS': { playstation: 'L2', xbox: 'LT', arcade: 'FS', switch: 'ZL', neogeo: 'B', wii: '2', mk: 'FS', genesis: 'C', snes: 'R', sfami: 'R', cps: 'A2', tekken: 'L2' },
+  'TH': { playstation: 'L1', xbox: 'LB', arcade: 'TH', switch: 'L', neogeo: 'A', wii: '1', mk: 'TH', genesis: 'X', snes: 'L', sfami: 'L', cps: 'TH', tekken: 'L1' },
 };
 
 export const getGlyphLabel = (input: string, controller: ControllerType): string => {
@@ -71,12 +74,13 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
   const isMk = ['MK', 'MEDIUM KICK', 'BACK KICK', 'RK', 'RIGHT KICK', 'D', 'H', '4'].includes(normInput);
   const isHk = ['HK', 'HEAVY KICK', 'R2', 'RT', 'G'].includes(normInput);
 
-  const isL1 = ['AST1'].includes(normInput);
-  const isL2 = ['AST2'].includes(normInput);
+  const isL1 = ['AST1', 'TH'].includes(normInput);
+  const isL2 = ['AST2', 'FS'].includes(normInput);
+  const isR1 = ['KAMEO'].includes(normInput);
 
   if (controller === 'mk') {
     if (normInput === 'BL') return '#94a3b8';
-    if (normInput === 'R') return '#22c55e';
+    if (normInput === 'R' || isR1) return '#22c55e'; // Green for R/Kameo in MK
     if (isLp || isHp) return '#ef4444'; // Red
     if (isLk || isMk || isHk) return '#3b82f6'; // Blue
     return '#888888';
@@ -89,7 +93,7 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
     if (isLk) return '#3b82f6'; // Blue
     if (isMp) return '#22c55e'; // Green
     if (isMk) return '#ef4444'; // Red
-    if (isHp || isHk || isL1 || isL2) return '#e2e8f0'; // Grey/White
+    if (isHp || isHk || isL1 || isL2 || isR1) return '#e2e8f0'; // Grey/White
     return null;
   };
 
@@ -98,7 +102,7 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
     if (isLk) return '#22c55e'; // Green
     if (isMp) return '#eab308'; // Yellow
     if (isMk) return '#ef4444'; // Red
-    if (isHp || isHk || isL1 || isL2) return '#e2e8f0'; // Grey/White
+    if (isHp || isHk || isL1 || isL2 || isR1) return '#e2e8f0'; // Grey/White
     return null;
   };
 
@@ -107,7 +111,7 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
     if (isLk) return '#eab308'; // Yellow
     if (isMp) return '#3b82f6'; // Blue
     if (isMk) return '#ef4444'; // Red
-    if (isHp || isHk || isL1 || isL2) return '#e2e8f0'; // Grey/White
+    if (isHp || isHk || isL1 || isL2 || isR1) return '#e2e8f0'; // Grey/White
     return null;
   };
 
