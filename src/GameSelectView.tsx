@@ -951,7 +951,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                       gap: '0.5rem 1.5rem',
                       alignContent: 'center',
                       justifyContent: 'center',
-                      fontSize: '1.1rem',
+                      fontSize: '2.2rem',
                       fontWeight: 900,
                       color: 'rgba(255, 255, 255, 0.02)',
                       userSelect: 'none',
