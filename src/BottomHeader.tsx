@@ -84,7 +84,7 @@ export const BottomHeader: React.FC<Props> = ({
               <option value="switch" style={{ background: 'var(--option-bg)' }}>🎮 Switch</option>
             </optgroup>
             <optgroup label="Arcade" style={{ background: 'var(--bg-card)' }}>
-              <option value="arcade" style={{ background: 'var(--option-bg)' }}>🕹️ Generic 6-Button</option>
+              <option value="arcade" style={{ background: 'var(--option-bg)' }}>🕹️ Standard</option>
               <option value="cps" style={{ background: 'var(--option-bg)' }}>🕹️ Capcom (CPS)</option>
               <option value="neogeo" style={{ background: 'var(--option-bg)' }}>🕹️ Neo Geo</option>
             </optgroup>

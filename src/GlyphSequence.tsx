@@ -350,7 +350,7 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
             alignItems: 'center',
             justifyContent: 'center',
             color: '#fff',
-            fontSize: large ? '0.9rem' : '0.65rem',
+            fontSize: large ? '1.2rem' : '0.85rem',
             fontWeight: 900,
             textShadow: '0 1px 3px rgba(0,0,0,0.9), 0 -1px 0 rgba(0,0,0,0.4)',
             letterSpacing: '-0.05em',
