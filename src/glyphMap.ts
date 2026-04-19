@@ -80,23 +80,23 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
   };
   
   const xboxColors: Record<string, string> = {
-    'LP': '#3b82f6', 'LIGHT PUNCH': '#3b82f6', 'FRONT PUNCH': '#3b82f6',
-    'RP': '#eab308', 'RIGHT PUNCH': '#eab308',
+    'LP': '#3b82f6', 'LIGHT PUNCH': '#3b82f6', 'FRONT PUNCH': '#3b82f6', 'A': '#3b82f6',
+    'RP': '#eab308', 'RIGHT PUNCH': '#eab308', 'C': '#eab308',
     'MP': '#eab308', 'MEDIUM PUNCH': '#eab308', 'BACK PUNCH': '#eab308',
     'HP': '#e2e8f0', 'HEAVY PUNCH': '#e2e8f0',
-    'LK': '#22c55e', 'LIGHT KICK': '#22c55e', 'FRONT KICK': '#22c55e',
-    'RK': '#ef4444', 'RIGHT KICK': '#ef4444',
+    'LK': '#22c55e', 'LIGHT KICK': '#22c55e', 'FRONT KICK': '#22c55e', 'B': '#22c55e',
+    'RK': '#ef4444', 'RIGHT KICK': '#ef4444', 'D': '#ef4444',
     'MK': '#ef4444', 'MEDIUM KICK': '#ef4444', 'BACK KICK': '#ef4444',
     'HK': '#94a3b8', 'HEAVY KICK': '#94a3b8',
   };
   
   const switchColors: Record<string, string> = {
-    'LP': '#22c55e', 'LIGHT PUNCH': '#22c55e', 'FRONT PUNCH': '#22c55e',
-    'RP': '#3b82f6', 'RIGHT PUNCH': '#3b82f6',
+    'LP': '#22c55e', 'LIGHT PUNCH': '#22c55e', 'FRONT PUNCH': '#22c55e', 'A': '#22c55e',
+    'RP': '#3b82f6', 'RIGHT PUNCH': '#3b82f6', 'C': '#3b82f6',
     'MP': '#3b82f6', 'MEDIUM PUNCH': '#3b82f6', 'BACK PUNCH': '#3b82f6',
     'HP': '#e2e8f0', 'HEAVY PUNCH': '#e2e8f0',
-    'LK': '#eab308', 'LIGHT KICK': '#eab308', 'FRONT KICK': '#eab308',
-    'RK': '#ef4444', 'RIGHT KICK': '#ef4444',
+    'LK': '#eab308', 'LIGHT KICK': '#eab308', 'FRONT KICK': '#eab308', 'B': '#eab308',
+    'RK': '#ef4444', 'RIGHT KICK': '#ef4444', 'D': '#ef4444',
     'MK': '#ef4444', 'MEDIUM KICK': '#ef4444', 'BACK KICK': '#ef4444',
     'HK': '#94a3b8', 'HEAVY KICK': '#94a3b8',
   };
@@ -178,18 +178,16 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
     return '#1f2937';
   }
 
-  if (animeColors[normInput]) return animeColors[normInput];
-
-  if (controller === 'playstation') return psColors[normInput] || '#ffffff';
-  if (controller === 'xbox') return xboxColors[normInput] || '#1f2937';
-  if (controller === 'switch') return switchColors[normInput] || '#1f2937';
-  if (controller === 'neogeo') return neogeoColors[normInput] || '#1f2937';
-  if (controller === 'wii') return wiiColors[normInput] || '#ffffff';
-  if (controller === 'snes') return snesColors[normInput] || '#1f2937';
-  if (controller === 'sfami') return sfamiColors[normInput] || '#1f2937';
-  if (controller === 'genesis') return genesisColors[normInput] || '#1f2937';
-  if (controller === 'cps') return cpsColors[normInput] || '#1f2937';
-  if (controller === 'tekken') return tekkenColors[normInput] || '#1f2937';
+  if (controller === 'playstation') return psColors[normInput] || animeColors[normInput] || '#ffffff';
+  if (controller === 'xbox') return xboxColors[normInput] || animeColors[normInput] || '#1f2937';
+  if (controller === 'switch') return switchColors[normInput] || animeColors[normInput] || '#1f2937';
+  if (controller === 'neogeo') return neogeoColors[normInput] || animeColors[normInput] || '#1f2937';
+  if (controller === 'wii') return wiiColors[normInput] || animeColors[normInput] || '#ffffff';
+  if (controller === 'snes') return snesColors[normInput] || animeColors[normInput] || '#1f2937';
+  if (controller === 'sfami') return sfamiColors[normInput] || animeColors[normInput] || '#1f2937';
+  if (controller === 'genesis') return genesisColors[normInput] || animeColors[normInput] || '#1f2937';
+  if (controller === 'cps') return cpsColors[normInput] || animeColors[normInput] || '#1f2937';
+  if (controller === 'tekken') return tekkenColors[normInput] || animeColors[normInput] || '#1f2937';
   
-  return '#1f2937'; // Arcade generic
+  return animeColors[normInput] || '#1f2937'; // Arcade generic
 };

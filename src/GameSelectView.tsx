@@ -507,7 +507,7 @@ export const GameSelectView: React.FC<Props> = ({
           GameGlance
         </div>
         <h1 
-          className="select-game-pulse"
+          className={!showCards ? "select-game-pulse" : ""}
           onClick={() => { setShowCards(true); setExpandedGameId(null); }}
           style={{
           fontSize: 'max(4rem, 8vw)',
