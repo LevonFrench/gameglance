@@ -52,6 +52,11 @@ const GLYPH_LABEL_MAP: Record<string, Record<ControllerType, string>> = {
   'FS': { playstation: 'L2', xbox: 'LT', arcade: 'FS', switch: 'ZL', neogeo: 'B', wii: '2', mk: 'FS', genesis: 'C', snes: 'R', sfami: 'R', cps: 'A2', tekken: 'L2' },
   'TH': { playstation: 'L1', xbox: 'LB', arcade: 'TH', switch: 'L', neogeo: 'A', wii: '1', mk: 'TH', genesis: 'X', snes: 'L', sfami: 'L', cps: 'TH', tekken: 'L1' },
   'G': { playstation: '✕', xbox: 'A', arcade: 'G', switch: 'B', neogeo: 'A', wii: 'B', mk: 'BL', genesis: 'A', snes: 'B', sfami: 'B', cps: 'LK', tekken: 'G' },
+  'SD': { playstation: 'SD', xbox: 'SD', arcade: 'SD', switch: 'SD', neogeo: 'SD', wii: 'SD', mk: 'SD', genesis: 'SD', snes: 'SD', sfami: 'SD', cps: 'SD', tekken: 'SD' },
+  'DR': { playstation: 'DR', xbox: 'DR', arcade: 'DR', switch: 'DR', neogeo: 'DR', wii: 'DR', mk: 'DR', genesis: 'DR', snes: 'DR', sfami: 'DR', cps: 'DR', tekken: 'DR' },
+  'V': { playstation: 'V', xbox: 'V', arcade: 'V', switch: 'V', neogeo: 'V', wii: 'V', mk: 'V', genesis: 'V', snes: 'V', sfami: 'V', cps: 'V', tekken: 'V' },
+  'SP': { playstation: 'SP', xbox: 'SP', arcade: 'SP', switch: 'SP', neogeo: 'SP', wii: 'SP', mk: 'SP', genesis: 'SP', snes: 'SP', sfami: 'SP', cps: 'SP', tekken: 'SP' },
+  'IAD': { playstation: 'IAD', xbox: 'IAD', arcade: 'IAD', switch: 'IAD', neogeo: 'IAD', wii: 'IAD', mk: 'IAD', genesis: 'IAD', snes: 'IAD', sfami: 'IAD', cps: 'IAD', tekken: 'IAD' },
 };
 
 export const getGlyphLabel = (input: string, controller: ControllerType): string => {
@@ -79,12 +84,14 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
   const isL1 = ['AST1', 'TH'].includes(normInput);
   const isL2 = ['AST2', 'FS'].includes(normInput);
   const isR1 = ['KAMEO'].includes(normInput);
+  const isMacro = ['SD', 'DR', 'SP', 'V', 'IAD'].includes(normInput);
 
   if (controller === 'mk') {
     if (normInput === 'BL' || isG) return '#94a3b8';
     if (normInput === 'R' || isR1) return '#22c55e'; // Green for R/Kameo in MK
     if (isLp || isHp) return '#ef4444'; // Red
     if (isLk || isMk || isHk) return '#3b82f6'; // Blue
+    if (isMacro) return '#f59e0b'; // Amber/Gold for macros
     return '#888888';
   }
 
@@ -92,6 +99,7 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
   
   const getPsColor = () => {
     if (isG) return '#22c55e'; // Green
+    if (isMacro) return '#f59e0b'; // Amber
     if (isLp) return '#ec4899'; // Pink
     if (isLk) return '#3b82f6'; // Blue
     if (isMp) return '#22c55e'; // Green
@@ -102,6 +110,7 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
 
   const getXboxColor = () => {
     if (isG) return '#22c55e'; // Green
+    if (isMacro) return '#f59e0b'; // Amber
     if (isLp) return '#3b82f6'; // Blue
     if (isLk) return '#22c55e'; // Green
     if (isMp) return '#eab308'; // Yellow
@@ -112,6 +121,7 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
 
   const getSwitchColor = () => {
     if (isG) return '#22c55e'; // Green
+    if (isMacro) return '#f59e0b'; // Amber
     if (isLp) return '#22c55e'; // Green
     if (isLk) return '#eab308'; // Yellow
     if (isMp) return '#3b82f6'; // Blue
@@ -121,6 +131,7 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
   };
 
   const getNeogeoColor = () => {
+    if (isMacro) return '#f59e0b'; // Amber
     if (isLp) return '#ef4444'; // Red
     if (isLk) return '#eab308'; // Yellow
     if (isMp || isHp) return '#22c55e'; // Green

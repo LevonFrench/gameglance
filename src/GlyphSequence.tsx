@@ -98,7 +98,12 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
 
       let processingT = t;
       let prefix = '';
-      if (processingT.startsWith('j.')) { prefix = 'j.'; processingT = processingT.substring(2); }
+      if (processingT === 'jc' || processingT === 'IAD') {
+        result.push(processingT);
+        continue;
+      }
+      if (processingT.startsWith('dj.')) { prefix = 'dj.'; processingT = processingT.substring(3); }
+      else if (processingT.startsWith('j.')) { prefix = 'j.'; processingT = processingT.substring(2); }
       else if (processingT.startsWith('cr.')) { prefix = 'cr.'; processingT = processingT.substring(3); }
       else if (processingT.startsWith('st.')) { prefix = 'st.'; processingT = processingT.substring(3); }
 
@@ -120,7 +125,7 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
         }
 
         if (match[3]) {
-          const buttonMatches = match[3].match(/(LP|MP|HP|LK|MK|HK|PP|KK|PPP|KKK|P|K|S|H|D|L|M|A1|A2|A|B|C|D)/gi);
+          const buttonMatches = match[3].match(/(SD|DR|SP|IAD|V|LP|MP|HP|LK|MK|HK|PP|KK|PPP|KKK|P|K|S|H|D|L|M|A1|A2|A|B|C)/gi);
           if (buttonMatches && buttonMatches.join('') === match[3]) {
             result.push(...buttonMatches.map(b => b.toUpperCase()));
           } else {
@@ -130,7 +135,7 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
       } else {
         // No numbers, just text like LPLK
         if (prefix) result.push(prefix);
-        const buttonMatches = cleanT.match(/(LP|MP|HP|LK|MK|HK|PP|KK|PPP|KKK|P|K|S|H|D|L|M|A1|A2|A|B|C|D)/gi);
+        const buttonMatches = cleanT.match(/(SD|DR|SP|IAD|V|LP|MP|HP|LK|MK|HK|PP|KK|PPP|KKK|P|K|S|H|D|L|M|A1|A2|A|B|C)/gi);
         if (buttonMatches && buttonMatches.join('') === cleanT) {
           result.push(...buttonMatches.map(b => b.toUpperCase()));
         } else {
