@@ -3218,7 +3218,11 @@ rosterCount: 25,
       { id: 'zangief', name: 'Zangief', moveCount: 0 },
       { id: 'm-bison', name: 'M. Bison', moveCount: 0 },
       { id: 'mai', name: 'Mai', moveCount: 0 },
-      { id: 'terry', name: 'Terry', moveCount: 0 },
+      { id: 'elena', name: 'Elena', moveCount: 0 },
+      { id: 'sagat', name: 'Sagat', moveCount: 0 },
+      { id: 'c-viper', name: 'C. Viper', moveCount: 0 },
+      { id: 'alex', name: 'Alex', moveCount: 0 },
+      { id: 'ingrid', name: 'Ingrid', moveCount: 0 },
     ],
 
     
