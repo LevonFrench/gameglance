@@ -77,6 +77,7 @@ export const BottomHeader: React.FC<Props> = ({
               cursor: 'pointer',
               outline: 'none',
             }}
+          >
             <optgroup label="Modern" style={{ background: 'var(--bg-card)' }}>
               <option value="playstation" style={{ background: 'var(--option-bg)' }}>🎮 PS</option>
               <option value="xbox" style={{ background: 'var(--option-bg)' }}>🎮 Xbox</option>
