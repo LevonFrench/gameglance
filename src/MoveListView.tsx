@@ -719,16 +719,41 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                                 }}
                               >
                                 <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                                    <div style={{ display: 'flex', flexDirection: 'column' }}>
+                                  <div style={{ display: 'flex', flexDirection: 'column', paddingRight: '2.5rem' }}>
                                     <h2 style={{
                                       fontFamily: "'Outfit', sans-serif",
                                       fontSize: '1.1rem',
                                       fontWeight: 700,
                                       color: isDark ? '#ffffff' : '#000000',
                                       margin: 0,
+                                      lineHeight: 1.2,
                                     }}>
                                       {move.name}
                                     </h2>
+                                  </div>
+                                  
+                                  {/* Explicit Selection Checkbox */}
+                                  <div style={{
+                                    width: '24px',
+                                    height: '24px',
+                                    borderRadius: '50%',
+                                    border: isSelected ? 'none' : '2px solid var(--border-medium)',
+                                    background: isSelected ? 'var(--accent-indigo)' : 'transparent',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    flexShrink: 0,
+                                    transition: 'all 0.2s ease',
+                                    boxShadow: isSelected ? '0 0 10px rgba(99, 102, 241, 0.4)' : 'none',
+                                    position: 'absolute',
+                                    top: '1.25rem',
+                                    right: '1.25rem'
+                                  }}>
+                                    {isSelected && (
+                                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                                        <polyline points="20 6 9 17 4 12"></polyline>
+                                      </svg>
+                                    )}
                                   </div>
                                 </div>
 

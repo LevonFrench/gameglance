@@ -27,10 +27,13 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
   const REVERSE_NUMPAD_MAP: Record<string, string> = {
     'down-back': '1', 'down': '2', 'down-forward': '3',
     'back': '4', 'neutral': '5', 'forward': '6',
-    'up-back': '7', 'up': '8', 'up-forward': '9'
+    'up-back': '7', 'up': '8', 'up-forward': '9',
+    '↙': '1', '↓': '2', '↘': '3',
+    '←': '4', '→': '6',
+    '↖': '7', '↑': '8', '↗': '9'
   };
 
-  const isDirectionWord = (w: string) => ['neutral', 'down', 'forward', 'back', 'up', 'down-forward', 'down-back', 'up-forward', 'up-back'].includes(w);
+  const isDirectionWord = (w: string) => ['neutral', 'down', 'forward', 'back', 'up', 'down-forward', 'down-back', 'up-forward', 'up-back', '↙', '↓', '↘', '←', '→', '↖', '↑', '↗'].includes(w);
 
   for (const raw of inputs) {
     if (['360', '720', '[Cancel]'].includes(raw)) {
@@ -217,7 +220,34 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
       );
     }
 
-    const label = getGlyphLabel(input, controller, notationSystem);
+    if (input === 'j.' || input === 'cr.' || input === 'st.') {
+      const textMap: Record<string, string> = {
+        'j.': 'IN AIR',
+        'cr.': 'CROUCH',
+        'st.': 'STAND'
+      };
+      return (
+        <div
+          key={idx}
+          style={{
+            color: 'var(--text-tertiary)',
+            fontWeight: 800,
+            fontSize: large ? '0.65rem' : '0.5rem',
+            letterSpacing: '0.05em',
+            margin: `0 ${large ? '4px' : '2px'}`,
+            padding: '0.1rem 0.3rem',
+            border: '1px solid var(--border-subtle)',
+            borderRadius: '4px',
+            background: 'var(--bg-badge)',
+            ...styleOverrides
+          }}
+        >
+          {textMap[input]}
+        </div>
+      );
+    }
+
+    const label = getGlyphLabel(input, controller);
     const iconColor = getGlyphColor(input, controller);
 
     // Direction
@@ -257,6 +287,25 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
         >
           {label}
         </div>
+      );
+    }
+
+    // Numpad directions (1-9) rendered as plain text
+    if (notationSystem === 'numpad' && /^[1-9]$/.test(label) && !['tekken', 'mk'].includes(controller)) {
+      return (
+        <span
+          key={idx}
+          style={{
+            color: 'var(--text-primary)',
+            fontWeight: 800,
+            fontSize: large ? '1.5rem' : '1.1rem',
+            fontFamily: "'Outfit', sans-serif",
+            margin: `0 ${large ? '1px' : '0px'}`,
+            ...styleOverrides
+          }}
+        >
+          {label}
+        </span>
       );
     }
 
