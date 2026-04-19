@@ -8,101 +8,186 @@
       "name": "Thunder Dash",
       "type": "special",
       "input": "214P",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "tracer_combination",
       "name": "Tracer Combination",
       "type": "special",
       "input": "6PP",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "feint_(feint)",
       "name": "Feint (Feint)",
       "type": "special",
       "input": "K",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "burning_kick",
       "name": "Burning Kick",
       "type": "special",
       "input": "236K",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "knuckled_pursuit",
       "name": "Knuckled Pursuit",
       "type": "special",
       "input": "PP",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "double_burn",
       "name": "Double Burn",
       "type": "special",
       "input": "KK",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "aerial_burning_kick",
       "name": "Aerial Burning Kick",
       "type": "special",
       "input": "j.236K",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "seismic_hammer",
       "name": "Seismic Hammer",
       "type": "special",
       "input": "623P",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "focus_force",
       "name": "Focus Force",
       "type": "special",
       "input": "214K",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "limit_decoupler",
       "name": "Limit Decoupler",
       "type": "super",
       "input": "236236K",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "mission_complete",
       "name": "Mission Complete",
       "type": "super",
       "input": "214214P",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "hard_luck_rejector",
       "name": "Hard Luck Rejector",
       "type": "super",
       "input": "214214K",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     }
   ],
   "combosList": [
     {
-      "id": "cviper_combo_1",
-      "name": "Light Confim into Seismic Hammer",
-      "input": "2LK > 2LP > 623LP"
+      "id": "c-viper_combo_1",
+      "name": "Simple light chain that frame traps reversal buttons if blocked. The first 2 hits can be any chained lights (less damage from 2LK).",
+      "input": "L~L~5LP > 214HP(~6PP)"
     },
     {
-      "id": "cviper_combo_2",
-      "name": "Meterless Burning Kick route",
-      "input": "5MP > 2MP > 236MK > PP"
+      "id": "c-viper_combo_2",
+      "name": "The first 2 hits can be any chained lights (less damage from 2LK). Gives more opportunities to hitconfirm and catch the opponent walking back with 2LK. However, the last 2LP will whiff against many reversal standing jabs and get Punish Countered, making it risky to attempt as a blockstring. You can also choose to end the meterless route with 214MP for a standing reset or a cancel to SA3 (but gives weaker oki on 6PP ender).",
+      "input": "L~L~2LP, 5LK ... ... > 214HP(~6PP) ... > 214MP > SA3"
     },
     {
-      "id": "cviper_combo_3",
-      "name": "Thunder Dash extension",
-      "input": "5HP > 214P > 6PP"
+      "id": "c-viper_combo_3",
+      "name": "Simple cashout from a light chain confirm (less damage from 2LK starter). Using 2 lights is stronger when going into SA2, but a 3rd light is slightly better when ending with SA3.",
+      "input": "L~LP > 236KK > SA2/SA3"
+    },
+    {
+      "id": "c-viper_combo_4",
+      "name": "Meterless knockdown route. Forward Dash to become +3 at the edge of throw range (can microwalk back to punish throw tech).",
+      "input": "5MP, 2MP > 214K"
+    },
+    {
+      "id": "c-viper_combo_5",
+      "name": "Good 1-bar damage and sets up a dash for point blank +2 oki (but too close for a shimmy).",
+      "input": "5MP, 2MP > 236LK~PP"
+    },
+    {
+      "id": "c-viper_combo_6",
+      "name": "Same as above, but allows an SA3 cancel to increase its damage. Slightly less 1-bar damage than 236LK route, but opens up more oki options (Dash + Walk to get into throw range or shimmy, or manually timed Drive Rush buttons).",
+      "input": "5MP, 2MP > 214LP~6PP (> SA3)"
+    },
+    {
+      "id": "c-viper_combo_7",
+      "name": "Low hitconfirm starter. At longer ranges vs. crouching opponents, cancel to 214MP instead to avoid whiffing (worse oki on 6PP follow-up)",
+      "input": "2MK, 5LK > 214HP(~6PP)"
+    },
+    {
+      "id": "c-viper_combo_8",
+      "name": "Non-super version isn't optimal due to a lack of oki but makes up for it in damage. Super versions are amazing cashouts that work no matter where you are on the screen.",
+      "input": "5MP, 2MP > 623PP > HJC ~ j.236MK, 5HK (>236KK > SA2/SA3)"
     }
   ]
 }

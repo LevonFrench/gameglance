@@ -8,66 +8,126 @@
       "name": "High Tiger Shot",
       "type": "special",
       "input": "236P",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "low_tiger_shot",
       "name": "Low Tiger Shot",
       "type": "special",
       "input": "236K",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "tiger_uppercut",
       "name": "Tiger Uppercut",
       "type": "special",
       "input": "623P",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "tiger_knee",
       "name": "Tiger Knee",
       "type": "special",
       "input": "623K",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "tiger_cannon",
       "name": "Tiger Cannon",
       "type": "super",
       "input": "236236P",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "tiger_raid",
       "name": "Tiger Raid",
       "type": "super",
       "input": "214214K",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     },
     {
       "id": "tiger_rampage",
       "name": "Tiger Rampage",
       "type": "super",
       "input": "236236K",
-      "frameData": { "startup": "-", "active": "-", "recovery": "-", "advantage": "-" }
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      }
     }
   ],
   "combosList": [
     {
       "id": "sagat_combo_1",
-      "name": "Basic Light Punish",
-      "input": "2LK > 2LP > 623LP"
+      "name": "Better corner carry and oki than the 623MP ender. If starting with a Drive Rush light, can use any 3-light chain ending with 5LP for more hitconfirm time.",
+      "input": "2LP ~ 2LP > 236LK"
     },
     {
       "id": "sagat_combo_2",
-      "name": "Heavy Punish into Super",
-      "input": "5HP > 623HP (Cancel) > 236236P"
+      "name": "Nexus confirm from 2 lights (must cancel from 5LP). Use ~6LK for grounded +3 reset or on crouchers. Use ~6MK for knockdown against standing opponents with better oki than MP Uppercut.",
+      "input": "5LP ~ 5LP > 214LK~(6LK/6MK)"
     },
     {
       "id": "sagat_combo_3",
-      "name": "Corner Carry",
-      "input": "5MP > 2MP > 623HK"
+      "name": "Low starter hitconfirm into a knockdown. This specific sequence works from slightly farther out than any chain involving 2LP, but any 3-light chain can work from the closest distance.",
+      "input": "2LK ~ 5LP ~ 5LP > 623MP"
+    },
+    {
+      "id": "sagat_combo_4",
+      "name": "Decent damage from a light confirm, expensive but worthwhile to kill or improve your positioning. Can start from either LP, but must link into DR~2LP. * requires Sweet Spot connect (auto-timed).",
+      "input": "LP > DRC~2LP, 4HP > 236HK*, 623LP"
+    },
+    {
+      "id": "sagat_combo_5",
+      "name": "Standard Combo",
+      "input": "CH 2LP, 5MP, 5LP > 623MP"
+    },
+    {
+      "id": "sagat_combo_6",
+      "name": "Better corner carry than MP Uppercut ender.",
+      "input": "CH 2LP, 2MP > 236HK"
+    },
+    {
+      "id": "sagat_combo_7",
+      "name": "Better damage than HK Knee route with the option to spend meter for even more.",
+      "input": "CH 2LP, 2MP >  623HP ( > SA3)"
+    },
+    {
+      "id": "sagat_combo_8",
+      "name": "5LP and 2LP are interchangeable, but 5LP has more range.",
+      "input": "CH 6LK, 5LP > 623MP"
     }
   ]
 }
