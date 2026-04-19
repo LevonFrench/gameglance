@@ -1685,28 +1685,6 @@ rosterCount: 25,
 
   },
 
-  {
-
-    id: 'invincible-vs-beta',
-
-    mameRomset: "",
-
-    name: "Invincible VS Beta",
-    tagline: "Enter the Arena",
-
-    developer: "Unknown",
-
-    releaseYear: 2023,
-
-    platform: "PC",
-
-rosterCount: 7,
-
-        characters: [],
-
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-
-  },
 
   {
 
@@ -1996,35 +1974,6 @@ rosterCount: 12,
 
   },
 
-  {
-
-    id: 'marvel-toukon-fighting-souls-beta-version',
-
-    mameRomset: "",
-
-    name: "Marvel Toukon: Fighting Souls (Beta Version)",
-    tagline: "The Beta Battle",
-
-    developer: "Unknown",
-
-    releaseYear: 2024,
-
-    platform: "PS5, PC",
-
-rosterCount: 7,
-
-        characters: [
-      { id: 'captain-america', name: 'Captain America', moveCount: 0 },
-      { id: 'iron-man', name: 'Iron Man', moveCount: 0 },
-      { id: 'ms-marvel', name: 'Ms. Marvel', moveCount: 0 },
-      { id: 'doctor-doom', name: 'Doctor Doom', moveCount: 0 },
-      { id: 'star-lord', name: 'Star-Lord', moveCount: 0 },
-      { id: 'storm', name: 'Storm', moveCount: 0 }
-    ],
-
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
-
-  },
 
   {
 
