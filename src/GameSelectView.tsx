@@ -4,6 +4,7 @@ import type { GameDefinition } from './types';
 import { SUPPORTED_GAMES } from './games';
 import { useTheme } from './ThemeContext';
 import { AmbientMesh } from './AmbientMesh';
+import { GameInfoCard } from './GameInfoCard';
 
 interface Props {
   onSelectGame: (game: GameDefinition) => void;
@@ -367,13 +368,14 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
     }
     return [];
   });
-    const [developerFilter, setDeveloperFilter] = useState<string>('All');
+  const [developerFilter, setDeveloperFilter] = useState<string>('All');
   const [showFavoritesOnly, setShowFavoritesOnly] = useState<boolean>(false);
   const [isFilterPanelOpen, setIsFilterPanelOpen] = useState<boolean>(false);
   const [sortBy, setSortBy] = useState<'alpha' | 'date'>('date');
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [tagFilter, setTagFilter] = useState<string>('All');
   const [showCards, setShowCards] = useState(disableInitialAnimation || false);
+  const [expandedGameId, setExpandedGameId] = useState<string | null>(null);
   const { theme } = useTheme();
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
   
@@ -699,181 +701,246 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
           const theme = getGameTheme(game);
           const isFavorite = favorites.includes(game.id);
           return (
-            <button
+            <div
               key={game.id}
-              id={`game-card-${game.id}`}
-              ref={el => { if (el) cardRefs.current.set(game.id, el); }}
-              onClick={() => onSelectGame(game)}
-              onMouseMove={(e) => handleMouseMove(e, game.id)}
               style={{
-                position: 'relative',
-                background: 'var(--bg-card)',
-                border: '1px solid var(--border-medium)',
-                boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
-                borderRadius: 'var(--radius-xl)',
-                padding: '1.25rem 1rem',
+                gridColumn: expandedGameId === game.id ? '1 / -1' : 'auto',
                 display: 'flex',
                 flexDirection: 'column',
-                alignItems: 'flex-start',
-                justifyContent: 'space-between',
-                cursor: 'pointer',
-                transition: 'all 0.45s cubic-bezier(0.16, 1, 0.3, 1)',
-                minHeight: '110px',
-                overflow: 'hidden',
-                color: 'var(--text-primary)',
+                gap: '1rem',
                 animation: `fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${100 + index * 80}ms both`,
-                textAlign: 'left',
-                fontFamily: 'inherit',
-                backdropFilter: 'blur(12px)',
-                WebkitBackdropFilter: 'blur(12px)',
-              }}
-              onMouseOver={(e) => {
-                const el = e.currentTarget;
-                el.style.transform = 'translateY(-8px) scale(1.03)';
-                el.style.borderColor = isDark ? 'rgba(255,255,255,0.18)' : 'rgba(0,0,0,0.15)';
-                el.style.boxShadow = `0 24px 64px ${theme.glowColor}, var(--shadow-glow-indigo)`;
-                const gradientOverlay = el.querySelector('.gradient-overlay') as HTMLElement;
-                if (gradientOverlay) gradientOverlay.style.opacity = isDark ? '0.15' : '0.10';
-                const mouseGlow = el.querySelector('.mouse-glow') as HTMLElement;
-                if (mouseGlow) mouseGlow.style.opacity = '1';
-              }}
-              onMouseOut={(e) => {
-                const el = e.currentTarget;
-                el.style.transform = 'translateY(0) scale(1)';
-                el.style.borderColor = 'var(--border-medium)';
-                el.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
-                const gradientOverlay = el.querySelector('.gradient-overlay') as HTMLElement;
-                if (gradientOverlay) gradientOverlay.style.opacity = '0.04';
-                const mouseGlow = el.querySelector('.mouse-glow') as HTMLElement;
-                if (mouseGlow) mouseGlow.style.opacity = '0';
               }}
             >
-              {/* Mouse-reactive glow */}
               <div
-                className="mouse-glow"
+                id={`game-card-${game.id}`}
+                ref={el => { if (el) cardRefs.current.set(game.id, el as any); }}
+                onClick={() => onSelectGame(game)}
+                onMouseMove={(e) => handleMouseMove(e as any, game.id)}
+                role="button"
+                tabIndex={0}
                 style={{
-                  position: 'absolute',
-                  inset: 0,
-                  background: `radial-gradient(circle 180px at var(--mouse-x, 50%) var(--mouse-y, 50%), ${theme.glowColor}, transparent 70%)`,
-                  opacity: 0,
-                  transition: 'opacity 0.4s ease',
-                  borderRadius: 'inherit',
-                  pointerEvents: 'none',
-                  zIndex: 0,
+                  position: 'relative',
+                  background: 'var(--bg-card)',
+                  border: '1px solid var(--border-medium)',
+                  boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                  borderRadius: 'var(--radius-xl)',
+                  padding: '1.25rem 1rem',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  alignItems: 'flex-start',
+                  justifyContent: 'space-between',
+                  cursor: 'pointer',
+                  transition: 'all 0.45s cubic-bezier(0.16, 1, 0.3, 1)',
+                  minHeight: '110px',
+                  overflow: 'hidden',
+                  color: 'var(--text-primary)',
+                  textAlign: 'left',
+                  fontFamily: 'inherit',
+                  backdropFilter: 'blur(12px)',
+                  WebkitBackdropFilter: 'blur(12px)',
                 }}
-              />
+                onMouseOver={(e) => {
+                  const el = e.currentTarget;
+                  el.style.transform = 'translateY(-8px) scale(1.03)';
+                  el.style.borderColor = isDark ? 'rgba(255,255,255,0.18)' : 'rgba(0,0,0,0.15)';
+                  el.style.boxShadow = `0 24px 64px ${theme.glowColor}, var(--shadow-glow-indigo)`;
+                  const gradientOverlay = el.querySelector('.gradient-overlay') as HTMLElement;
+                  if (gradientOverlay) gradientOverlay.style.opacity = isDark ? '0.15' : '0.10';
+                  const mouseGlow = el.querySelector('.mouse-glow') as HTMLElement;
+                  if (mouseGlow) mouseGlow.style.opacity = '1';
+                }}
+                onMouseOut={(e) => {
+                  const el = e.currentTarget;
+                  el.style.transform = 'translateY(0) scale(1)';
+                  el.style.borderColor = 'var(--border-medium)';
+                  el.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+                  const gradientOverlay = el.querySelector('.gradient-overlay') as HTMLElement;
+                  if (gradientOverlay) gradientOverlay.style.opacity = '0.04';
+                  const mouseGlow = el.querySelector('.mouse-glow') as HTMLElement;
+                  if (mouseGlow) mouseGlow.style.opacity = '0';
+                }}
+              >
+                {/* Mouse-reactive glow */}
+                <div
+                  className="mouse-glow"
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    background: `radial-gradient(circle 180px at var(--mouse-x, 50%) var(--mouse-y, 50%), ${theme.glowColor}, transparent 70%)`,
+                    opacity: 0,
+                    transition: 'opacity 0.4s ease',
+                    borderRadius: 'inherit',
+                    pointerEvents: 'none',
+                    zIndex: 0,
+                  }}
+                />
 
-              {/* Gradient overlay behind content */}
-              <div
-                className="gradient-overlay"
-                style={{
+                {/* Gradient overlay behind content */}
+                <div
+                  className="gradient-overlay"
+                  style={{
+                    position: 'absolute',
+                    inset: 0,
+                    background: theme.gradient,
+                    opacity: 0.04,
+                    transition: 'opacity 0.4s ease',
+                    borderRadius: 'inherit',
+                  }}
+                />
+
+                {/* Top accent line */}
+                <div style={{
                   position: 'absolute',
-                  inset: 0,
+                  top: 0,
+                  left: 0,
+                  right: 0,
+                  height: '4px',
                   background: theme.gradient,
-                  opacity: 0.04,
-                  transition: 'opacity 0.4s ease',
-                  borderRadius: 'inherit',
-                }}
-              />
+                  opacity: 0.8,
+                }} />
 
-              {/* Top accent line */}
-              <div style={{
-                position: 'absolute',
-                top: 0,
-                left: 0,
-                right: 0,
-                height: '4px',
-                background: theme.gradient,
-                opacity: 0.8,
-              }} />
-
-              {/* Game name */}
-              <h2 style={{
-                margin: 0,
-                fontSize: '1.35rem',
-                fontWeight: 800,
-                letterSpacing: '-0.02em',
-                position: 'relative',
-                zIndex: 1,
-              }}>
-                {game.name.split(': ').map((part, i, arr) => (
-                  <React.Fragment key={i}>
-                    <span style={{ display: 'inline-block' }}>
-                      {part}{i < arr.length - 1 ? ':' : ''}
-                    </span>
-                    {i < arr.length - 1 ? ' ' : ''}
-                  </React.Fragment>
-                ))}
-              </h2>
-
-              {/* Bottom Info Row */}
-              <div style={{
-                marginTop: '1rem',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'space-between',
-                width: '100%',
-                position: 'relative',
-                zIndex: 1,
-              }}>
-                <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                  {/* Fighter Count Pill */}
-                  <div style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    gap: '0.4rem',
-                    padding: '0.3rem 0.7rem',
-                    borderRadius: 'var(--radius-full)',
-                    background: 'var(--bg-badge)',
-                    border: '1px solid var(--border-subtle)',
-                    fontSize: '0.82rem',
-                    fontWeight: 700,
-                    color: 'var(--text-primary)',
-                  }}>
-                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                      <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                      <circle cx="12" cy="7" r="4"></circle>
-                    </svg>
-                    {game.rosterCount || game.characters?.length || 0}
-                  </div>
-                  
-                  {/* Platforms */}
-                  {game.platform && <PlatformIcons platformString={game.platform} />}
-                </div>
-
-                {/* Fav button */}
+                {/* Fav button - Top Right */}
                 <button
                   className="fav-btn"
                   onClick={(e) => toggleFavorite(e, game.id)}
                   style={{
-                    background: 'transparent',
-                    border: 'none',
+                    position: 'absolute',
+                    top: '1rem',
+                    right: '1rem',
+                    background: 'var(--bg-glass)',
+                    border: '1px solid var(--border-subtle)',
+                    borderRadius: '50%',
+                    width: '32px',
+                    height: '32px',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     cursor: 'pointer',
                     color: isFavorite ? '#ef4444' : 'var(--text-secondary)',
                     transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
-                    opacity: isFavorite ? 1 : 0.7,
+                    zIndex: 2,
                     padding: 0,
+                    backdropFilter: 'blur(4px)',
                   }}
                   onMouseOver={e => {
                     e.currentTarget.style.transform = 'scale(1.15)';
-                    e.currentTarget.style.opacity = '1';
                     e.currentTarget.style.color = '#ef4444';
+                    e.currentTarget.style.borderColor = 'rgba(239, 68, 68, 0.5)';
                   }}
                   onMouseOut={e => {
                     e.currentTarget.style.transform = 'scale(1)';
-                    e.currentTarget.style.opacity = isFavorite ? '1' : '0.7';
                     e.currentTarget.style.color = isFavorite ? '#ef4444' : 'var(--text-secondary)';
+                    e.currentTarget.style.borderColor = 'var(--border-subtle)';
                   }}
                 >
-                  <svg width="18" height="18" viewBox="0 0 24 24" fill={isFavorite ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <svg width="14" height="14" viewBox="0 0 24 24" fill={isFavorite ? 'currentColor' : 'none'} stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
                     <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
                   </svg>
                 </button>
+
+                {/* Game name */}
+                <h2 style={{
+                  margin: 0,
+                  fontSize: '1.35rem',
+                  fontWeight: 800,
+                  letterSpacing: '-0.02em',
+                  position: 'relative',
+                  zIndex: 1,
+                  paddingRight: '2rem', // Space for fav button
+                }}>
+                  {game.name.split(': ').map((part, i, arr) => (
+                    <React.Fragment key={i}>
+                      <span style={{ display: 'inline-block' }}>
+                        {part}{i < arr.length - 1 ? ':' : ''}
+                      </span>
+                      {i < arr.length - 1 ? ' ' : ''}
+                    </React.Fragment>
+                  ))}
+                </h2>
+
+                {/* Bottom Info Row */}
+                <div style={{
+                  marginTop: '1.5rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  width: '100%',
+                  position: 'relative',
+                  zIndex: 1,
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+                    {/* Fighter Count Pill */}
+                    <div style={{
+                      display: 'flex',
+                      alignItems: 'center',
+                      gap: '0.4rem',
+                      padding: '0.3rem 0.7rem',
+                      borderRadius: 'var(--radius-full)',
+                      background: 'var(--bg-badge)',
+                      border: '1px solid var(--border-subtle)',
+                      fontSize: '0.82rem',
+                      fontWeight: 700,
+                      color: 'var(--text-primary)',
+                    }}>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                      </svg>
+                      {game.rosterCount || game.characters?.length || 0}
+                    </div>
+                    
+                    {/* Platforms */}
+                    {game.platform && <PlatformIcons platformString={game.platform} />}
+                  </div>
+
+                  {/* Info button - Bottom Right */}
+                  <button
+                    className="info-btn"
+                    onClick={(e) => {
+                      e.stopPropagation();
+                      setExpandedGameId(expandedGameId === game.id ? null : game.id);
+                    }}
+                    style={{
+                      background: expandedGameId === game.id ? 'var(--accent-indigo)' : 'transparent',
+                      border: 'none',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      cursor: 'pointer',
+                      color: expandedGameId === game.id ? '#fff' : 'var(--text-secondary)',
+                      transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
+                      padding: '4px',
+                      borderRadius: '50%',
+                    }}
+                    onMouseOver={e => {
+                      if (expandedGameId !== game.id) {
+                        e.currentTarget.style.color = 'var(--text-primary)';
+                        e.currentTarget.style.transform = 'scale(1.1)';
+                      }
+                    }}
+                    onMouseOut={e => {
+                      if (expandedGameId !== game.id) {
+                        e.currentTarget.style.color = 'var(--text-secondary)';
+                        e.currentTarget.style.transform = 'scale(1)';
+                      }
+                    }}
+                  >
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <line x1="12" y1="16" x2="12" y2="12"></line>
+                      <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                    </svg>
+                  </button>
+                </div>
               </div>
-            </button>
+
+              {/* Expanded Area */}
+              {expandedGameId === game.id && (
+                <div style={{ animation: 'fadeInUp 0.4s ease' }}>
+                  <GameInfoCard game={game} />
+                </div>
+              )}
+            </div>
           );
         })}
       </main>
