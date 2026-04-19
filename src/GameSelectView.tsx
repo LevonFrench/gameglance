@@ -382,10 +382,18 @@ export const GameSelectView: React.FC<Props> = ({
   const [tagFilter, setTagFilter] = useState<string>('All');
   const [showCards, setShowCards] = useState(disableInitialAnimation || false);
   const [expandedGameId, setExpandedGameId] = useState<string | null>(null);
+  const [isGlitching, setIsGlitching] = useState(false);
   const cardRefs = useRef<Map<string, HTMLDivElement>>(new Map());
   
   useEffect(() => {
     window.scrollTo(0,0);
+  }, []);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsGlitching(true);
+    }, 7000);
+    return () => clearTimeout(timer);
   }, []);
 
   const toggleFavorite = (e: React.MouseEvent, id: string) => {
@@ -507,7 +515,8 @@ export const GameSelectView: React.FC<Props> = ({
           GameGlance
         </div>
         <h1 
-          className={!showCards ? "select-game-pulse" : ""}
+          className={`glitch ${isGlitching ? "glitching " : ""}${!showCards ? "select-game-pulse" : ""}`}
+          data-text="SELECT GAME"
           onClick={() => { setShowCards(true); setExpandedGameId(null); }}
           style={{
           fontSize: 'max(2rem, 4vw)',
