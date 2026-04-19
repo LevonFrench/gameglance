@@ -1469,46 +1469,56 @@ rosterCount: 12,
 
     mameRomset: "",
 
-    name: "Guilty Gear -Strive-",
+    name: "Guilty Gear Strive",
     tagline: "Smell of the Game",
 
-    developer: "Unknown",
+    developer: "Arc Sys Works",
 
     releaseYear: 2021,
 
     platform: "PS4, PS5, PC, Xbox One, Xbox Series X/S",
 
-rosterCount: 24,
+rosterCount: 33,
 
             tags: ['Anime', 'Modern'],
 
     characters: [
-      { id: 'anji-mito', name: 'Anji Mito', moveCount: 0 },
-      { id: 'axl-low', name: 'Axl Low', moveCount: 0 },
-      { id: 'baiken', name: 'Baiken', moveCount: 0 },
-      { id: 'bridget', name: 'Bridget', moveCount: 0 },
-      { id: 'chipp-zanuff', name: 'Chipp Zanuff', moveCount: 0 },
-      { id: 'elphelt', name: 'Elphelt', moveCount: 0 },
-      { id: 'faust', name: 'Faust', moveCount: 0 },
-      { id: 'giovanna', name: 'Giovanna', moveCount: 0 },
-      { id: 'goldlewis-dickinson', name: 'Goldlewis Dickinson', moveCount: 0 },
-      { id: 'happy-chaos', name: 'Happy Chaos', moveCount: 0 },
-      { id: 'i-no', name: 'I-No', moveCount: 0 },
-      { id: 'johnny', name: 'Johnny', moveCount: 0 },
-      { id: 'ky-kiske', name: 'Ky Kiske', moveCount: 0 },
-      { id: 'leo-whitefang', name: 'Leo Whitefang', moveCount: 0 },
-      { id: 'may', name: 'May', moveCount: 0 },
-      { id: 'millia-rage', name: 'Millia Rage', moveCount: 0 },
-      { id: 'nagoriyuki', name: 'Nagoriyuki', moveCount: 0 },
-      { id: 'potemkin', name: 'Potemkin', moveCount: 0 },
-      { id: 'ramlethal-valentine', name: 'Ramlethal Valentine', moveCount: 0 },
-      { id: 'sin-kiske', name: 'Sin Kiske', moveCount: 0 },
-      { id: 'sol-badguy', name: 'Sol Badguy', moveCount: 0 },
-      { id: 'testament', name: 'Testament', moveCount: 0 },
-      { id: 'zato-1', name: 'Zato-1', moveCount: 0 }
+      { id: 'aba', name: 'A.B.A', moveCount: 64 },
+      { id: 'anji-mito', name: 'Anji Mito', moveCount: 41 },
+      { id: 'asuka-r', name: 'Asuka R', moveCount: 61 },
+      { id: 'axl-low', name: 'Axl Low', moveCount: 42 },
+      { id: 'baiken', name: 'Baiken', moveCount: 39 },
+      { id: 'bedman', name: 'Bedman', moveCount: 53 },
+      { id: 'bridget', name: 'Bridget', moveCount: 43 },
+      { id: 'chipp-zanuff', name: 'Chipp Zanuff', moveCount: 63 },
+      { id: 'elphelt-valentine', name: 'Elphelt Valentine', moveCount: 43 },
+      { id: 'faust', name: 'Faust', moveCount: 59 },
+      { id: 'giovanna', name: 'Giovanna', moveCount: 38 },
+      { id: 'goldlewis-dickinson', name: 'Goldlewis Dickinson', moveCount: 52 },
+      { id: 'happy-chaos', name: 'Happy Chaos', moveCount: 40 },
+      { id: 'i-no', name: 'I-No', moveCount: 47 },
+      { id: 'jack-o', name: 'Jack-O', moveCount: 45 },
+      { id: 'jam-kuradoberi', name: 'Jam Kuradoberi', moveCount: 46 },
+      { id: 'johnny', name: 'Johnny', moveCount: 46 },
+      { id: 'ky-kiske', name: 'Ky Kiske', moveCount: 57 },
+      { id: 'leo-whitefang', name: 'Leo Whitefang', moveCount: 49 },
+      { id: 'lucy', name: 'Lucy', moveCount: 42 },
+      { id: 'may', name: 'May', moveCount: 41 },
+      { id: 'millia-rage', name: 'Millia Rage', moveCount: 41 },
+      { id: 'nagoriyuki', name: 'Nagoriyuki', moveCount: 69 },
+      { id: 'potemkin', name: 'Potemkin', moveCount: 41 },
+      { id: 'queen-dizzy', name: 'Queen Dizzy', moveCount: 37 },
+      { id: 'ramlethal-valentine', name: 'Ramlethal Valentine', moveCount: 39 },
+      { id: 'sin-kiske', name: 'Sin Kiske', moveCount: 41 },
+      { id: 'slayer', name: 'Slayer', moveCount: 40 },
+      { id: 'sol-badguy', name: 'Sol Badguy', moveCount: 45 },
+      { id: 'testament', name: 'Testament', moveCount: 40 },
+      { id: 'unika', name: 'Unika', moveCount: 51 },
+      { id: 'venom', name: 'Venom', moveCount: 42 },
+      { id: 'zato-1', name: 'Zato-1', moveCount: 56 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Normal Moves', 'Overdrives', 'System']
 
   },
 
