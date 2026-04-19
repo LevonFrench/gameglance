@@ -63,11 +63,11 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
   // Universal Aliasing Groups
   const isLp = ['LP', 'LIGHT PUNCH', 'FRONT PUNCH', 'A', 'P', '1', 'L'].includes(normInput);
   const isMp = ['MP', 'MEDIUM PUNCH', 'BACK PUNCH', 'RP', 'RIGHT PUNCH', 'C', 'S', '2', 'M'].includes(normInput);
-  const isHp = ['HP', 'HEAVY PUNCH', 'R1', 'RB', 'R'].includes(normInput);
+  const isHp = ['HP', 'HEAVY PUNCH', 'R1', 'RB', 'R', 'SKILL'].includes(normInput);
   
-  const isLk = ['LK', 'LIGHT KICK', 'FRONT KICK', 'B', 'K', '3'].includes(normInput);
+  const isLk = ['LK', 'LIGHT KICK', 'FRONT KICK', 'B', 'K', '3', 'U'].includes(normInput);
   const isMk = ['MK', 'MEDIUM KICK', 'BACK KICK', 'RK', 'RIGHT KICK', 'D', 'H', '4'].includes(normInput);
-  const isHk = ['HK', 'HEAVY KICK', 'R2', 'RT'].includes(normInput);
+  const isHk = ['HK', 'HEAVY KICK', 'R2', 'RT', 'G'].includes(normInput);
 
   if (controller === 'mk') {
     if (normInput === 'BL') return '#94a3b8';
