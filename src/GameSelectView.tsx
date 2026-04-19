@@ -941,6 +941,25 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
                 ) : (
                   /* Standard Card Layout */
                   <>
+                    {/* Watermark */}
+                    <div style={{
+                      position: 'absolute',
+                      top: '50%',
+                      left: '50%',
+                      transform: 'translate(-50%, -50%) rotate(-15deg)',
+                      fontSize: 'clamp(2.5rem, 5vw, 4rem)',
+                      fontWeight: 900,
+                      color: 'rgba(255, 255, 255, 0.03)',
+                      whiteSpace: 'nowrap',
+                      userSelect: 'none',
+                      pointerEvents: 'none',
+                      fontFamily: "'Outfit', sans-serif",
+                      letterSpacing: '-0.03em',
+                      zIndex: 0,
+                      lineHeight: 1,
+                    }}>
+                      {game.name.toUpperCase()}
+                    </div>
                     <h2 style={{
                       margin: 0,
                       fontSize: '1.35rem',
