@@ -1,7 +1,6 @@
 import React from 'react';
 import { getGlyphLabel, getGlyphColor } from './glyphMap';
 import type { ControllerType } from './glyphMap';
-import { useTheme } from './ThemeContext';
 
 interface GlyphSequenceProps {
   inputs: string[];
@@ -174,8 +173,7 @@ const getMacroSubButtons = (macro: string, isSNK: boolean): string[] => {
 };
 
 export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller, large = false, notationSystem = 'numpad' }) => {
-  const { theme } = useTheme();
-  const isDark = theme === 'dark';
+  const isDark = true;
 
   const expandedInputs = React.useMemo(() => {
     // Tekken uses 1234 for buttons, so we bypass numpad parsing for it.

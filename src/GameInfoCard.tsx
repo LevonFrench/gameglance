@@ -1,14 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import type { GameDefinition, GameSystemData } from './types';
-import { useTheme } from './ThemeContext';
 
 interface Props {
   game: GameDefinition;
 }
 
 export const GameInfoCard: React.FC<Props> = ({ game }) => {
-  const { theme } = useTheme();
-  const isDark = theme === 'dark' || theme !== 'light'; // Default to dark for premium feel
+  const isDark = true;
   const [activeTab, setActiveTab] = useState<'info' | 'systems'>('systems');
   const [systemData, setSystemData] = useState<GameSystemData | null>(null);
   const [loading, setLoading] = useState(true);

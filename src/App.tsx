@@ -30,10 +30,10 @@ export const App: React.FC = () => {
     }
   });
   const [controller, setController] = useState<ControllerType>(() => { return (localStorage.getItem('gg_controller') as ControllerType) || 'playstation'; });
-  const [cardTheme] = useState<CardTheme>(() => {
+  const cardTheme: CardTheme = (() => {
     const val = localStorage.getItem('gg_card_theme');
     return (CARD_THEMES as readonly string[]).includes(val || '') ? (val as CardTheme) : 'default-dark';
-  });
+  })();
   const [notationOverride, setNotationOverride] = useState<string>(() => {
     return localStorage.getItem('gg_notation_override') || 'auto';
   });
@@ -55,36 +55,33 @@ export const App: React.FC = () => {
     if (syncState.connected && syncState.gameId) {
       const game = SUPPORTED_GAMES.find(g => g.mameRomset === syncState.gameId);
       if (game) {
-        if (game.id !== selectedGame?.id) {
-          setSelectedGame(game);
-          if (currentView !== 'char_select' && currentView !== 'move_list') {
-            setCurrentView('char_select');
-          }
-        }
+        setSelectedGame(prev => {
+          if (prev?.id === game.id) return prev;
+          setCurrentView(v => (v !== 'char_select' && v !== 'move_list') ? 'char_select' : v);
+          return game;
+        });
         
         if (syncState.p1CharId) {
-          // Fetch roster to find character ID
           fetch(`/data/${game.id}/_roster.json`)
             .then(res => res.json())
             .then(roster => {
-              // Find character by ramId. Note that ramId might be string or number.
               const char = roster.find((c: any) => c.ramId?.toString() === syncState.p1CharId?.toString());
               if (char) {
-                if (selectedCharacter !== char.id) {
-                  setSelectedCharacter(char.id);
-                  // Wait for state to settle then navigate
+                setSelectedCharacter(prev => {
+                  if (prev === char.id) return prev;
                   setTimeout(() => {
                     setCurrentView('move_list');
                     window.scrollTo({ top: 0, behavior: 'smooth' });
                   }, 50);
-                }
+                  return char.id;
+                });
               }
             })
             .catch(err => console.error("Failed to load roster for sync", err));
         }
       }
     }
-  }, [syncState, selectedGame, selectedCharacter]);
+  }, [syncState.connected, syncState.gameId, syncState.p1CharId]);
 
   // Hidden hotkey to enter admin view
   useEffect(() => {
@@ -128,9 +125,8 @@ export const App: React.FC = () => {
     return () => window.removeEventListener('popstate', handlePopState);
   }, []);
 
-  useEffect(() => {
-    localStorage.setItem('gg_card_theme', cardTheme);
-  }, [cardTheme]);
+
+
 
   useEffect(() => {
     localStorage.setItem('gg_playlist', JSON.stringify(selectedPlaylist));

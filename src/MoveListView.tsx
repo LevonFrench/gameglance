@@ -3,7 +3,6 @@ import { useArrowNavigation } from './useArrowNavigation';
 import type { GameDefinition, CharacterExport, Move } from './types';
 import { GlyphSequence } from './GlyphSequence';
 import type { ControllerType } from './glyphMap';
-import { useTheme } from './ThemeContext';
 import { AmbientMesh } from './AmbientMesh';
 import { TopHeader } from './TopHeader';
 
@@ -11,7 +10,7 @@ import { TopHeader } from './TopHeader';
 interface Props {
   game: GameDefinition;
   characterId: string;
-  selectedPlaylist: any[];
+  selectedPlaylist: Move[];
   controller: ControllerType;
   notationSystem?: 'numpad' | 'traditional' | 'mk';
   onSetController: (c: ControllerType) => void;
@@ -31,9 +30,8 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
   const [loadingError, setLoadingError] = useState<string>('');
   const [searchQuery, setSearchQuery] = useState('');
   const [showScrollTop, setShowScrollTop] = useState(false);
-  const { theme } = useTheme();
 
-  const isDark = theme === 'dark';
+  const isDark = true;
 
   useEffect(() => {
     const handleScroll = () => {

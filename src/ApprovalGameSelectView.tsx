@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useArrowNavigation } from './useArrowNavigation';
 import type { GameDefinition } from './types';
 import { SUPPORTED_GAMES } from './games';
-import { useTheme } from './ThemeContext';
 import { AmbientMesh } from './AmbientMesh';
 
 interface Props {
@@ -14,7 +13,6 @@ export const ApprovalGameSelectView: React.FC<Props> = ({ onSelectGame, disableI
   useArrowNavigation('[id^="approval-game-card-"]');
 
   const [availableGames, setAvailableGames] = useState<GameDefinition[]>([]);
-  const { theme } = useTheme();
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
   
   useEffect(() => {
@@ -38,7 +36,7 @@ export const ApprovalGameSelectView: React.FC<Props> = ({ onSelectGame, disableI
     setAvailableGames(filteredGames);
   }, []);
 
-  const isDark = theme !== 'light';
+  const isDark = true;
 
   const handleMouseMove = (e: React.MouseEvent<HTMLButtonElement>, gameId: string) => {
     const el = cardRefs.current.get(gameId);

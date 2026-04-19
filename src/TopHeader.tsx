@@ -1,5 +1,4 @@
 import React from 'react';
-import { useTheme } from './ThemeContext';
 
 interface TopHeaderProps {
   onBack: () => void;
@@ -20,8 +19,7 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
   onCharacterClick,
   disableInitialAnimation = false,
 }) => {
-  const { theme } = useTheme();
-  const isDark = theme === 'dark';
+  const isDark = true;
 
   return (
     <div style={{

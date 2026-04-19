@@ -2,7 +2,6 @@ import React, { useState, useEffect, useCallback, useRef } from 'react';
 import type { PlaylistItem } from './types';
 import { GlyphSequence } from './GlyphSequence';
 import type { ControllerType } from './glyphMap';
-import { useTheme } from './ThemeContext';
 
 interface Props {
   playlist: PlaylistItem[];
@@ -33,7 +32,6 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
   const [progress, setProgress] = useState(0);
   const [isFullscreen, setIsFullscreen] = useState(false);
   const wakeLockRef = useRef<WakeLockSentinel | null>(null);
-  const { theme } = useTheme();
 
   // Options
   const [showOptions, setShowOptions] = useState(false);
@@ -43,7 +41,7 @@ export const GameGlanceMainView: React.FC<Props> = ({ playlist, gameName, select
 
   const effectiveItemsPerPage = displayMode === 'stadium' ? 1 : itemsPerPage;
   const totalPages = Math.ceil(activePlaylist.length / effectiveItemsPerPage);
-  const isDark = theme === 'dark';
+  const isDark = true;
   const listContainerRef = useRef<HTMLDivElement>(null);
 
   // Progress animation and Wake Lock

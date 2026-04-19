@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import type { GameDefinition } from './types';
 import { AmbientMesh } from './AmbientMesh';
-import { useTheme } from './ThemeContext';
 
 interface RawCombo {
   game: string;
@@ -24,7 +23,6 @@ export const ApprovalComboListView: React.FC<Props> = ({
   onBack,
   onHome
 }) => {
-  const { theme } = useTheme();
   const [combos, setCombos] = useState<RawCombo[]>([]);
   const [approvedIndices, setApprovedIndices] = useState<Set<number>>(new Set());
   const [loading, setLoading] = useState(true);
@@ -91,7 +89,7 @@ export const ApprovalComboListView: React.FC<Props> = ({
     }
   };
 
-  const isDark = theme !== 'light';
+  const isDark = true;
   const charName = game.characters?.find(c => c.id === characterId)?.name || characterId.replace(/-/g, ' ').toUpperCase();
 
   return (

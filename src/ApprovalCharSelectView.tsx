@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import type { GameDefinition } from './types';
 import { useArrowNavigation } from './useArrowNavigation';
 import { AmbientMesh } from './AmbientMesh';
-import { useTheme } from './ThemeContext';
 
 interface Props {
   game: GameDefinition;
@@ -18,7 +17,6 @@ export const ApprovalCharSelectView: React.FC<Props> = ({
   disableInitialAnimation 
 }) => {
   useArrowNavigation('[id^="approval-char-card-"]');
-  const { theme } = useTheme();
   const [availableChars, setAvailableChars] = useState<{ id: string, name: string }[]>([]);
 
   useEffect(() => {
@@ -47,7 +45,7 @@ export const ApprovalCharSelectView: React.FC<Props> = ({
     setAvailableChars(mapped.sort((a,b) => a.name.localeCompare(b.name)));
   }, [game]);
 
-  const isDark = theme !== 'light';
+  const isDark = true;
 
   return (
     <div style={{

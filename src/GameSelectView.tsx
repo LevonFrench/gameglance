@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useArrowNavigation } from './useArrowNavigation';
 import type { GameDefinition } from './types';
 import { SUPPORTED_GAMES } from './games';
-import { useTheme } from './ThemeContext';
 import { AmbientMesh } from './AmbientMesh';
 import { GameInfoCard } from './GameInfoCard';
 
@@ -376,7 +375,6 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
   const [tagFilter, setTagFilter] = useState<string>('All');
   const [showCards, setShowCards] = useState(disableInitialAnimation || false);
   const [expandedGameId, setExpandedGameId] = useState<string | null>(null);
-  const { theme } = useTheme();
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
   
   useEffect(() => {
@@ -427,7 +425,7 @@ export const GameSelectView: React.FC<Props> = ({ onSelectGame, disableInitialAn
       return a.name.localeCompare(b.name);
     });
 
-  const isDark = theme !== 'light';
+  const isDark = true;
   const developerCounts = VISIBLE_GAMES.reduce((acc, game) => {
     if (game.developer) {
       acc[game.developer] = (acc[game.developer] || 0) + 1;

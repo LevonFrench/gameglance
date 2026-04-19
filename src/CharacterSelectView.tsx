@@ -2,7 +2,6 @@ import React, { useState, useEffect, useRef } from 'react';
 import { useArrowNavigation } from './useArrowNavigation';
 import type { GameDefinition } from './types';
 
-import { useTheme } from './ThemeContext';
 import { getCardColor } from './palette';
 import { AmbientMesh } from './AmbientMesh';
 import { TopHeader } from './TopHeader';
@@ -33,7 +32,6 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
     return [];
   });
   const [characters, setCharacters] = useState(game.characters || []);
-  const { theme } = useTheme();
   const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
   
   useEffect(() => {
@@ -72,7 +70,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
 
   const [hoveredCharacterId, setHoveredCharacterId] = useState<string | null>(null);
 
-  const isDark = theme === 'dark';
+  const isDark = true;
 
   const maxNameLength = characters.length > 0 
     ? Math.max(...characters.map(c => c.name.replace(/ \(Coming Soon\)/, '').length)) 
@@ -106,6 +104,7 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
             ref={el => { if (el) cardRefs.current.set(character.id, el); }}
             onClick={() => !isComingSoon && onSelectCharacter(character.id)}
             onMouseEnter={() => setHoveredCharacterId(character.id)}
+            onMouseLeave={() => setHoveredCharacterId(null)}
             onFocus={() => setHoveredCharacterId(character.id)}
             style={{
               position: 'relative',
