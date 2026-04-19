@@ -64,7 +64,7 @@ const adminApiPlugin = () => ({
     server.middlewares.use('/api/approve_combos', (req: any, res: any) => {
       if (req.method === 'POST') {
         let body = '';
-        req.on('data', chunk => body += chunk.toString());
+        req.on('data', (chunk: any) => body += chunk.toString());
         req.on('end', () => {
           try {
             const data = JSON.parse(body);

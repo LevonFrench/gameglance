@@ -1,541 +1,672 @@
-/**
- * GameGlance Icon Font Generator
- * ──────────────────────────────
- * Converts the GlyphSequence visual system into a real TTF font.
- *
- * Each glyph is drawn with opentype.js Path primitives and assigned
- * to Unicode Private Use Area codepoints (U+E000 – U+E0FF).
- *
- * Run:  node generate-gg-font.mjs
- * Out:  ./GameGlance.ttf  +  ./glyph-table.json (codepoint map)
- */
-
 import opentype from 'opentype.js';
 import { writeFileSync } from 'fs';
 
-const UNITS = 1000;   // unitsPerEm
+// ── Font metrics ─────────────────────────────────────────────────
+const UPM   = 1000;
 const ASC   = 800;
 const DESC  = -200;
-const SIZE  = 900;    // bounding box for most glyphs
-const PAD   = 50;     // centering offset  (1000 - 900) / 2
-const CX    = 500;    // center x
-const CY    = 400;    // center y  (baseline-relative: 0 = baseline, 800 = ascender)
-const R     = 420;    // radius for circles
+const CAP   = 700;   // cap height
+const SW    = 95;    // stroke weight
+const W     = 480;   // standard char width
+const ADV   = 540;   // advance width (char + spacing)
+const CUT   = 70;    // angular cut size on terminals
 
-// ── Helpers ──────────────────────────────────────────────────────────
-
-function circlePath(path, cx, cy, r, clockwise = true) {
-  // Approximate circle with 4 cubic Bézier curves
-  const k = 0.5522847498;  // magic number for cubic circle approx
-  const dx = r * k;
-  const dy = r * k;
-
-  if (clockwise) {
-    path.moveTo(cx, cy - r);
-    path.curveTo(cx + dx, cy - r, cx + r, cy - dy, cx + r, cy);
-    path.curveTo(cx + r, cy + dy, cx + dx, cy + r, cx, cy + r);
-    path.curveTo(cx - dx, cy + r, cx - r, cy + dy, cx - r, cy);
-    path.curveTo(cx - r, cy - dy, cx - dx, cy - r, cx, cy - r);
-  } else {
-    path.moveTo(cx, cy - r);
-    path.curveTo(cx - dx, cy - r, cx - r, cy - dy, cx - r, cy);
-    path.curveTo(cx - r, cy + dy, cx - dx, cy + r, cx, cy + r);
-    path.curveTo(cx + dx, cy + r, cx + r, cy + dy, cx + r, cy);
-    path.curveTo(cx + r, cy - dy, cx + dx, cy - r, cx, cy - r);
-  }
-  path.close();
+// Helper: create a basic rectangular block (for building letters)
+function rect(p, x, y, w, h) {
+  p.moveTo(x, y);
+  p.lineTo(x + w, y);
+  p.lineTo(x + w, y + h);
+  p.lineTo(x, y + h);
+  p.close();
 }
 
-function roundedRect(path, x, y, w, h, radius) {
-  const r = Math.min(radius, w / 2, h / 2);
-  path.moveTo(x + r, y);
-  path.lineTo(x + w - r, y);
-  path.curveTo(x + w, y, x + w, y + r, x + w, y + r);
-  path.lineTo(x + w, y + h - r);
-  path.curveTo(x + w, y + h, x + w - r, y + h, x + w - r, y + h);
-  path.lineTo(x + r, y + h);
-  path.curveTo(x, y + h, x, y + h - r, x, y + h - r);
-  path.lineTo(x, y + r);
-  path.curveTo(x, y, x + r, y, x + r, y);
-  path.close();
+// Helper: parallelogram (sheared rectangle for italic cuts)
+function para(p, x, y, w, h, shearX) {
+  p.moveTo(x + shearX, y);
+  p.lineTo(x + w + shearX, y);
+  p.lineTo(x + w, y + h);
+  p.lineTo(x, y + h);
+  p.close();
 }
 
-// Draw text letters inside a button using simple geometric paths
-// This is a simplified monoline approach for the font glyphs
-function addLetterPaths(path, text, cx, cy, textSize) {
-  const letterWidth = textSize * 0.6;
-  const totalWidth = text.length * letterWidth + (text.length - 1) * (letterWidth * 0.15);
-  let startX = cx - totalWidth / 2;
+// ── Character path definitions ──────────────────────────────────
+// Font coords: Y=0 is baseline, Y=700 is cap height, Y goes UP
+// All paths drawn clockwise for fills
 
-  for (const ch of text) {
-    const lx = startX;
-    const ly = cy - textSize / 2;
-    const lw = letterWidth;
-    const lh = textSize;
-    const sw = textSize * 0.12; // stroke width
-
-    drawLetter(path, ch, lx, ly, lw, lh, sw);
-    startX += letterWidth + letterWidth * 0.15;
-  }
+function charA(p) {
+  // Outer triangle
+  p.moveTo(0, 0);
+  p.lineTo(W/2 - SW/2, CAP);
+  p.lineTo(W/2 + SW/2, CAP);
+  p.lineTo(W, 0);
+  p.lineTo(W - SW, 0);
+  p.lineTo(W/2 + SW/4, CAP - SW*2);
+  p.lineTo(W/2 - SW/4, CAP - SW*2);
+  p.lineTo(SW, 0);
+  p.close();
+  // Crossbar
+  const cbY = CAP * 0.35;
+  const lx1 = (cbY / CAP) * (W/2 - SW/2);
+  const lx2 = W - lx1;
+  rect(p, lx1 + 10, cbY, lx2 - lx1 - 20, SW);
 }
 
-function drawLetter(path, ch, x, y, w, h, sw) {
-  // Simple blocky/geometric letter forms suitable for icon font
-  // TTF fonts: Y-axis goes UP from baseline, but opentype.js paths are in font coordinates
-  // where Y increases upward from baseline (0). We'll draw top-down then flip.
-  const mx = x + w / 2;
-  const my = y + h / 2;
-  const t = y;        // top
-  const b = y + h;    // bottom
-  const l = x;        // left
-  const r = x + w;    // right
-
-  switch (ch.toUpperCase()) {
-    case 'L':
-      // Vertical bar + horizontal bottom
-      path.moveTo(l, t);
-      path.lineTo(l + sw, t);
-      path.lineTo(l + sw, b - sw);
-      path.lineTo(r, b - sw);
-      path.lineTo(r, b);
-      path.lineTo(l, b);
-      path.close();
-      break;
-
-    case 'M':
-      // Left bar
-      path.moveTo(l, t);
-      path.lineTo(l + sw, t);
-      path.lineTo(l + sw, b);
-      path.lineTo(l, b);
-      path.close();
-      // Right bar
-      path.moveTo(r - sw, t);
-      path.lineTo(r, t);
-      path.lineTo(r, b);
-      path.lineTo(r - sw, b);
-      path.close();
-      // Top bar
-      path.moveTo(l, t);
-      path.lineTo(r, t);
-      path.lineTo(r, t + sw);
-      path.lineTo(l, t + sw);
-      path.close();
-      // V center
-      path.moveTo(mx - sw / 2, t + sw);
-      path.lineTo(mx + sw / 2, t + sw);
-      path.lineTo(mx + sw / 2, my + sw);
-      path.lineTo(mx - sw / 2, my + sw);
-      path.close();
-      break;
-
-    case 'H':
-      // Left bar
-      path.moveTo(l, t);
-      path.lineTo(l + sw, t);
-      path.lineTo(l + sw, b);
-      path.lineTo(l, b);
-      path.close();
-      // Right bar
-      path.moveTo(r - sw, t);
-      path.lineTo(r, t);
-      path.lineTo(r, b);
-      path.lineTo(r - sw, b);
-      path.close();
-      // Middle bar
-      path.moveTo(l + sw, my - sw / 2);
-      path.lineTo(r - sw, my - sw / 2);
-      path.lineTo(r - sw, my + sw / 2);
-      path.lineTo(l + sw, my + sw / 2);
-      path.close();
-      break;
-
-    case 'P':
-      // Vertical bar
-      path.moveTo(l, t);
-      path.lineTo(l + sw, t);
-      path.lineTo(l + sw, b);
-      path.lineTo(l, b);
-      path.close();
-      // Top bar
-      path.moveTo(l + sw, t);
-      path.lineTo(r, t);
-      path.lineTo(r, t + sw);
-      path.lineTo(l + sw, t + sw);
-      path.close();
-      // Right side of P
-      path.moveTo(r - sw, t + sw);
-      path.lineTo(r, t + sw);
-      path.lineTo(r, my);
-      path.lineTo(r - sw, my);
-      path.close();
-      // Middle bar
-      path.moveTo(l + sw, my - sw);
-      path.lineTo(r, my - sw);
-      path.lineTo(r, my);
-      path.lineTo(l + sw, my);
-      path.close();
-      break;
-
-    case 'K':
-      // Vertical bar
-      path.moveTo(l, t);
-      path.lineTo(l + sw, t);
-      path.lineTo(l + sw, b);
-      path.lineTo(l, b);
-      path.close();
-      // Upper diagonal
-      path.moveTo(l + sw, my - sw / 2);
-      path.lineTo(l + sw + sw, my - sw / 2);
-      path.lineTo(r, t);
-      path.lineTo(r - sw, t);
-      path.close();
-      // Lower diagonal
-      path.moveTo(l + sw, my + sw / 2);
-      path.lineTo(l + sw + sw, my + sw / 2);
-      path.lineTo(r, b);
-      path.lineTo(r - sw, b);
-      path.close();
-      break;
-
-    default:
-      // Fallback: draw a filled rectangle
-      path.moveTo(l, t);
-      path.lineTo(r, t);
-      path.lineTo(r, b);
-      path.lineTo(l, b);
-      path.close();
-      break;
-  }
+function charB(p) {
+  // Left stem
+  rect(p, 0, 0, SW, CAP);
+  // Top bar
+  rect(p, SW, CAP - SW, W - SW - CUT, SW);
+  // Top-right diagonal cut
+  p.moveTo(W - CUT, CAP);
+  p.lineTo(W, CAP - CUT);
+  p.lineTo(W, CAP - SW);
+  p.lineTo(W - CUT, CAP - SW);
+  p.close();
+  // Right upper stem
+  rect(p, W - SW, CAP/2 + SW/2, SW, CAP/2 - SW - CUT);
+  // Middle bar
+  rect(p, SW, CAP/2 - SW/2, W - SW*2, SW);
+  // Bottom right stem
+  rect(p, W - SW, SW, SW, CAP/2 - SW);
+  // Bottom bar
+  rect(p, SW, 0, W - SW - CUT, SW);
+  // Bottom-right diagonal cut
+  p.moveTo(W - CUT, SW);
+  p.lineTo(W, SW);
+  p.lineTo(W, 0);
+  p.lineTo(W - CUT, 0);
+  p.close();
 }
 
-// ── Arrow glyph builder ─────────────────────────────────────────────
-
-function makeArrowPath(angleDeg) {
-  const path = new opentype.Path();
-
-  // Background circle (outer, clockwise = filled)
-  circlePath(path, CX, CY, R, true);
-  // Inner cutout (counter-clockwise = hole)
-  circlePath(path, CX, CY, R - 60, false);
-
-  // Arrow pointing RIGHT at 0°, then we rotate
-  const rad = (angleDeg * Math.PI) / 180;
-  const cos = Math.cos(rad);
-  const sin = Math.sin(rad);
-
-  // Arrow shape (pointing right, centered on CX,CY)
-  const arrowPts = [
-    // Shaft
-    { x: -200, y: -40 },
-    { x: 100,  y: -40 },
-    // Head
-    { x: 100,  y: -120 },
-    { x: 250,  y: 0 },
-    { x: 100,  y: 120 },
-    { x: 100,  y: 40 },
-    { x: -200, y: 40 },
-  ];
-
-  const transformed = arrowPts.map(p => ({
-    x: CX + p.x * cos - p.y * sin,
-    y: CY + p.x * sin + p.y * cos,
-  }));
-
-  path.moveTo(transformed[0].x, transformed[0].y);
-  for (let i = 1; i < transformed.length; i++) {
-    path.lineTo(transformed[i].x, transformed[i].y);
-  }
-  path.close();
-
-  return path;
+function charC(p) {
+  // Top bar
+  rect(p, SW, CAP - SW, W - SW, SW);
+  // Left stem
+  rect(p, 0, SW, SW, CAP - SW*2);
+  // Top-left join
+  rect(p, 0, CAP - SW, SW, SW);
+  // Bottom bar
+  rect(p, SW, 0, W - SW, SW);
+  // Bottom-left join
+  rect(p, 0, 0, SW, SW);
 }
 
-// ── Button glyph builder ────────────────────────────────────────────
-
-function makeButtonPath(label) {
-  const path = new opentype.Path();
-
-  // Outer circle (filled)
-  circlePath(path, CX, CY, R, true);
-  // Inner cutout to make ring
-  circlePath(path, CX, CY, R - 50, false);
-
-  // Fill center disk
-  circlePath(path, CX, CY, R - 80, true);
-
-  // Add text label
-  const textSize = label.length > 2 ? 200 : (label.length > 1 ? 280 : 350);
-  addLetterPaths(path, label, CX, CY, textSize);
-
-  return path;
+function charD(p) {
+  // Left stem
+  rect(p, 0, 0, SW, CAP);
+  // Top bar
+  rect(p, SW, CAP - SW, W - SW*2, SW);
+  // Right stem
+  rect(p, W - SW, SW, SW, CAP - SW*2);
+  // Bottom bar
+  rect(p, SW, 0, W - SW*2, SW);
+  // Top-right corner cut
+  p.moveTo(W - SW, CAP - SW);
+  p.lineTo(W, CAP - CUT);
+  p.lineTo(W, CAP - SW);
+  p.close();
+  p.moveTo(W - CUT, CAP);
+  p.lineTo(W, CAP - CUT);
+  p.lineTo(W - SW, CAP - SW);
+  p.lineTo(W - CUT, CAP - SW);
+  p.close();
+  // Bottom-right corner cut
+  p.moveTo(W - SW, SW);
+  p.lineTo(W, CUT);
+  p.lineTo(W, SW);
+  p.close();
 }
 
-// ── Special glyphs ──────────────────────────────────────────────────
-
-function makeCircle360Path() {
-  const path = new opentype.Path();
-
-  // Circular arrow (open ring with arrowhead)
-  // Outer ring
-  const outerR = R;
-  const innerR = R - 80;
-
-  // Draw ~300° arc (leaving a gap for the arrowhead)
-  // Using circle minus a wedge
-  circlePath(path, CX, CY, outerR, true);
-  circlePath(path, CX, CY, innerR, false);
-
-  // Small arrowhead at the top of the ring
-  const arrowPts = [
-    { x: CX + 80, y: CY - outerR + 40 },
-    { x: CX + 80, y: CY - outerR - 60 },
-    { x: CX - 60, y: CY - outerR - 10 },
-  ];
-  path.moveTo(arrowPts[0].x, arrowPts[0].y);
-  path.lineTo(arrowPts[1].x, arrowPts[1].y);
-  path.lineTo(arrowPts[2].x, arrowPts[2].y);
-  path.close();
-
-  return path;
+function charE(p) {
+  // Left stem
+  rect(p, 0, 0, SW, CAP);
+  // Top bar with angular cut
+  rect(p, SW, CAP - SW, W - SW, SW);
+  // Middle bar
+  rect(p, SW, CAP/2 - SW/2, W*0.7 - SW, SW);
+  // Bottom bar
+  rect(p, SW, 0, W - SW, SW);
 }
 
-function makeCancelPath() {
-  const path = new opentype.Path();
-
-  // Chevron: ›
-  const sw = 60;
-  const pts = [
-    { x: CX - 60, y: CY - 200 },
-    { x: CX + 100, y: CY },
-    { x: CX - 60, y: CY + 200 },
-    { x: CX - 60 - sw, y: CY + 200 - sw },
-    { x: CX + 100 - sw * 2, y: CY },
-    { x: CX - 60 - sw, y: CY - 200 + sw },
-  ];
-
-  path.moveTo(pts[0].x, pts[0].y);
-  for (let i = 1; i < pts.length; i++) path.lineTo(pts[i].x, pts[i].y);
-  path.close();
-
-  return path;
+function charF(p) {
+  // Left stem
+  rect(p, 0, 0, SW, CAP);
+  // Top bar
+  rect(p, SW, CAP - SW, W - SW, SW);
+  // Middle bar
+  rect(p, SW, CAP/2 - SW/2, W*0.7 - SW, SW);
 }
 
-function makePlusPath() {
-  const path = new opentype.Path();
-  const half = 180;
-  const thick = 60;
-
-  // Horizontal bar
-  path.moveTo(CX - half, CY - thick);
-  path.lineTo(CX + half, CY - thick);
-  path.lineTo(CX + half, CY + thick);
-  path.lineTo(CX - half, CY + thick);
-  path.close();
-
-  // Vertical bar
-  path.moveTo(CX - thick, CY - half);
-  path.lineTo(CX + thick, CY - half);
-  path.lineTo(CX + thick, CY + half);
-  path.lineTo(CX - thick, CY + half);
-  path.close();
-
-  return path;
+function charG(p) {
+  // Top bar
+  rect(p, SW, CAP - SW, W - SW, SW);
+  // Left stem
+  rect(p, 0, 0, SW, CAP);
+  // Bottom bar
+  rect(p, SW, 0, W - SW, SW);
+  // Right lower stem
+  rect(p, W - SW, SW, SW, CAP/2 - SW/2);
+  // Inward bar
+  rect(p, W*0.45, CAP/2 - SW/2, W*0.55 - SW, SW);
 }
 
-function makePillPath(label) {
-  const path = new opentype.Path();
-  const pillW = Math.max(600, label.length * 200 + 120);
-  const pillH = 500;
-  const pillX = CX - pillW / 2;
-  const pillY = CY - pillH / 2;
-
-  roundedRect(path, pillX, pillY, pillW, pillH, pillH / 2);
-
-  // Add text
-  const textSize = Math.min(280, 600 / label.length);
-  addLetterPaths(path, label, CX, CY, textSize);
-
-  return path;
+function charH(p) {
+  // Left stem
+  rect(p, 0, 0, SW, CAP);
+  // Right stem
+  rect(p, W - SW, 0, SW, CAP);
+  // Middle bar
+  rect(p, SW, CAP/2 - SW/2, W - SW*2, SW);
 }
 
-function makeNeutralPath() {
-  const path = new opentype.Path();
-
-  // Circle background
-  circlePath(path, CX, CY, R, true);
-  circlePath(path, CX, CY, R - 60, false);
-
-  // Star shape in center (5-pointed)
-  const outerStar = 180;
-  const innerStar = 80;
-  const starPts = [];
-  for (let i = 0; i < 10; i++) {
-    const angle = (i * 36 - 90) * Math.PI / 180;
-    const rad = i % 2 === 0 ? outerStar : innerStar;
-    starPts.push({
-      x: CX + rad * Math.cos(angle),
-      y: CY + rad * Math.sin(angle),
-    });
-  }
-
-  path.moveTo(starPts[0].x, starPts[0].y);
-  for (let i = 1; i < starPts.length; i++) {
-    path.lineTo(starPts[i].x, starPts[i].y);
-  }
-  path.close();
-
-  return path;
+function charI(p) {
+  const iw = SW + 60;
+  const cx = iw / 2;
+  // Stem
+  rect(p, cx - SW/2, SW, SW, CAP - SW*2);
+  // Top bar
+  rect(p, 0, CAP - SW, iw, SW);
+  // Bottom bar
+  rect(p, 0, 0, iw, SW);
 }
 
-function makeModifierPillPath(label) {
-  const path = new opentype.Path();
-  const pillW = 700;
-  const pillH = 380;
-  const pillX = CX - pillW / 2;
-  const pillY = CY - pillH / 2;
-
-  // Outer pill
-  roundedRect(path, pillX, pillY, pillW, pillH, 60);
-  // Inner cutout
-  roundedRect(path, pillX + 30, pillY + 30, pillW - 60, pillH - 60, 40);
-
-  // Text
-  const textSize = 180;
-  addLetterPaths(path, label, CX, CY, textSize);
-
-  return path;
+function charJ(p) {
+  // Right stem
+  rect(p, W - SW, SW, SW, CAP - SW);
+  // Top bar (serify)
+  rect(p, W*0.3, CAP - SW, W*0.7, SW);
+  // Bottom curve → left
+  rect(p, SW, 0, W - SW*2, SW);
+  // Left lower stub
+  rect(p, 0, 0, SW, CAP * 0.25);
 }
 
-// ── Glyph Registry ──────────────────────────────────────────────────
+function charK(p) {
+  // Left stem
+  rect(p, 0, 0, SW, CAP);
+  // Upper diagonal
+  const mid = CAP / 2;
+  p.moveTo(SW, mid + SW);
+  p.lineTo(SW, mid);
+  p.lineTo(W, CAP);
+  p.lineTo(W - SW - 10, CAP);
+  p.close();
+  // Lower diagonal
+  p.moveTo(SW, mid);
+  p.lineTo(SW, mid - SW);
+  p.lineTo(W - SW - 10, 0);
+  p.lineTo(W, 0);
+  p.close();
+}
 
-const GLYPH_DEFS = [
-  // Directional arrows (0° = right, going clockwise)
-  { name: 'gg-forward',       unicode: 0xE000, label: '→',  builder: () => makeArrowPath(0) },
-  { name: 'gg-down-forward',  unicode: 0xE001, label: '↘',  builder: () => makeArrowPath(45) },
-  { name: 'gg-down',          unicode: 0xE002, label: '↓',  builder: () => makeArrowPath(90) },
-  { name: 'gg-down-back',     unicode: 0xE003, label: '↙',  builder: () => makeArrowPath(135) },
-  { name: 'gg-back',          unicode: 0xE004, label: '←',  builder: () => makeArrowPath(180) },
-  { name: 'gg-up-back',       unicode: 0xE005, label: '↖',  builder: () => makeArrowPath(225) },
-  { name: 'gg-up',            unicode: 0xE006, label: '↑',  builder: () => makeArrowPath(270) },
-  { name: 'gg-up-forward',    unicode: 0xE007, label: '↗',  builder: () => makeArrowPath(315) },
-  { name: 'gg-neutral',       unicode: 0xE008, label: 'N',  builder: () => makeNeutralPath() },
+function charL(p) {
+  // Left stem
+  rect(p, 0, 0, SW, CAP);
+  // Bottom bar with angular cut
+  rect(p, SW, 0, W - SW, SW);
+}
 
-  // Attack buttons
-  { name: 'gg-lp',  unicode: 0xE010, label: 'LP',  builder: () => makeButtonPath('LP') },
-  { name: 'gg-mp',  unicode: 0xE011, label: 'MP',  builder: () => makeButtonPath('MP') },
-  { name: 'gg-hp',  unicode: 0xE012, label: 'HP',  builder: () => makeButtonPath('HP') },
-  { name: 'gg-lk',  unicode: 0xE013, label: 'LK',  builder: () => makeButtonPath('LK') },
-  { name: 'gg-mk',  unicode: 0xE014, label: 'MK',  builder: () => makeButtonPath('MK') },
-  { name: 'gg-hk',  unicode: 0xE015, label: 'HK',  builder: () => makeButtonPath('HK') },
+function charM(p) {
+  const mw = W + 80;
+  // Left stem
+  rect(p, 0, 0, SW, CAP);
+  // Right stem
+  rect(p, mw - SW, 0, SW, CAP);
+  // Top bar
+  rect(p, 0, CAP - SW, mw, SW);
+  // Center V
+  const cx = mw / 2;
+  const vBot = CAP * 0.4;
+  p.moveTo(cx - SW/2, vBot);
+  p.lineTo(SW, CAP - SW);
+  p.lineTo(SW*2, CAP - SW);
+  p.lineTo(cx + SW/2, vBot);
+  p.close();
+  p.moveTo(cx - SW/2, vBot);
+  p.lineTo(cx + SW/2, vBot);
+  p.lineTo(mw - SW*2, CAP - SW);
+  p.lineTo(mw - SW, CAP - SW);
+  p.close();
+}
 
-  // Generic / Any
-  { name: 'gg-p',   unicode: 0xE016, label: 'P',   builder: () => makeButtonPath('P') },
-  { name: 'gg-k',   unicode: 0xE017, label: 'K',   builder: () => makeButtonPath('K') },
+function charN(p) {
+  // Left stem
+  rect(p, 0, 0, SW, CAP);
+  // Right stem
+  rect(p, W - SW, 0, SW, CAP);
+  // Diagonal
+  p.moveTo(0, CAP);
+  p.lineTo(SW, CAP);
+  p.lineTo(W, 0);
+  p.lineTo(W - SW, 0);
+  p.close();
+}
 
-  // Macros
-  { name: 'gg-pp',   unicode: 0xE018, label: 'PP',   builder: () => makeButtonPath('PP') },
-  { name: 'gg-kk',   unicode: 0xE019, label: 'KK',   builder: () => makeButtonPath('KK') },
-  { name: 'gg-ppp',  unicode: 0xE01A, label: 'PPP',  builder: () => makePillPath('PPP') },
-  { name: 'gg-kkk',  unicode: 0xE01B, label: 'KKK',  builder: () => makePillPath('KKK') },
+function charO(p) {
+  // Outer box
+  rect(p, 0, 0, W, CAP);
+  // Inner cutout (counter-clockwise for hole in TTF)
+  p.moveTo(SW, SW);
+  p.lineTo(SW, CAP - SW);
+  p.lineTo(W - SW, CAP - SW);
+  p.lineTo(W - SW, SW);
+  p.close();
+}
 
-  // MK-style buttons
-  { name: 'gg-1',   unicode: 0xE020, label: '1',   builder: () => makeButtonPath('1') },
-  { name: 'gg-2',   unicode: 0xE021, label: '2',   builder: () => makeButtonPath('2') },
-  { name: 'gg-3',   unicode: 0xE022, label: '3',   builder: () => makeButtonPath('3') },
-  { name: 'gg-4',   unicode: 0xE023, label: '4',   builder: () => makeButtonPath('4') },
-  { name: 'gg-bl',  unicode: 0xE024, label: 'BL',  builder: () => makeButtonPath('BL') },
-  { name: 'gg-en',  unicode: 0xE025, label: 'EN',  builder: () => makeButtonPath('EN') },
+function charP(p) {
+  // Left stem
+  rect(p, 0, 0, SW, CAP);
+  // Top bar
+  rect(p, SW, CAP - SW, W - SW, SW);
+  // Right upper stem
+  rect(p, W - SW, CAP/2, SW, CAP/2 - SW);
+  // Middle bar
+  rect(p, SW, CAP/2 - SW/2, W - SW*2, SW);
+}
 
-  // Anime fighters
-  { name: 'gg-l',   unicode: 0xE030, label: 'L',   builder: () => makeButtonPath('L') },
-  { name: 'gg-m',   unicode: 0xE031, label: 'M',   builder: () => makeButtonPath('M') },
-  { name: 'gg-h',   unicode: 0xE032, label: 'H',   builder: () => makeButtonPath('H') },
-  { name: 'gg-s',   unicode: 0xE033, label: 'S',   builder: () => makeButtonPath('S') },
-  { name: 'gg-d',   unicode: 0xE034, label: 'D',   builder: () => makeButtonPath('D') },
+function charQ(p) {
+  // Same as O
+  rect(p, 0, 0, W, CAP);
+  p.moveTo(SW, SW);
+  p.lineTo(SW, CAP - SW);
+  p.lineTo(W - SW, CAP - SW);
+  p.lineTo(W - SW, SW);
+  p.close();
+  // Tail
+  p.moveTo(W*0.5, SW*2);
+  p.lineTo(W*0.5 + SW, SW*2);
+  p.lineTo(W + CUT, -CUT);
+  p.lineTo(W, -CUT);
+  p.close();
+}
 
-  // Separators / special
-  { name: 'gg-cancel',  unicode: 0xE040, label: '›',  builder: () => makeCancelPath() },
-  { name: 'gg-plus',    unicode: 0xE041, label: '+',  builder: () => makePlusPath() },
-  { name: 'gg-360',     unicode: 0xE042, label: '↻',  builder: () => makeCircle360Path() },
-  { name: 'gg-720',     unicode: 0xE043, label: '↻↻', builder: () => makeCircle360Path() }, // Same visual, semantic diff
+function charR(p) {
+  // Same as P base
+  rect(p, 0, 0, SW, CAP);
+  rect(p, SW, CAP - SW, W - SW, SW);
+  rect(p, W - SW, CAP/2, SW, CAP/2 - SW);
+  rect(p, SW, CAP/2 - SW/2, W - SW*2, SW);
+  // Diagonal leg
+  p.moveTo(W*0.4, CAP/2 - SW/2);
+  p.lineTo(W*0.4 + SW, CAP/2 - SW/2);
+  p.lineTo(W, 0);
+  p.lineTo(W - SW, 0);
+  p.close();
+}
 
-  // Stance / modifier pills
-  { name: 'gg-jump',    unicode: 0xE050, label: 'j.',   builder: () => makeModifierPillPath('j.') },
-  { name: 'gg-crouch',  unicode: 0xE051, label: 'cr.',  builder: () => makeModifierPillPath('cr.') },
-  { name: 'gg-stand',   unicode: 0xE052, label: 'st.',  builder: () => makeModifierPillPath('st.') },
-];
+function charS(p) {
+  const mid = CAP / 2;
+  // Top bar
+  rect(p, SW, CAP - SW, W - SW, SW);
+  // Left upper stem
+  rect(p, 0, mid, SW, CAP/2 - SW);
+  // Middle bar
+  rect(p, 0, mid - SW/2, W, SW);
+  // Right lower stem
+  rect(p, W - SW, SW, SW, mid - SW);
+  // Bottom bar
+  rect(p, 0, 0, W - SW, SW);
+}
 
-// ── Build the font ──────────────────────────────────────────────────
+function charT(p) {
+  // Top bar full width
+  rect(p, 0, CAP - SW, W, SW);
+  // Center stem
+  rect(p, W/2 - SW/2, 0, SW, CAP - SW);
+}
+
+function charU(p) {
+  // Left stem
+  rect(p, 0, SW, SW, CAP - SW);
+  // Right stem
+  rect(p, W - SW, SW, SW, CAP - SW);
+  // Bottom bar
+  rect(p, 0, 0, W, SW);
+}
+
+function charV(p) {
+  const cx = W / 2;
+  // Left diagonal
+  p.moveTo(0, CAP);
+  p.lineTo(SW, CAP);
+  p.lineTo(cx + SW/2, 0);
+  p.lineTo(cx - SW/2, 0);
+  p.close();
+  // Right diagonal
+  p.moveTo(W - SW, CAP);
+  p.lineTo(W, CAP);
+  p.lineTo(cx + SW/2, 0);
+  p.lineTo(cx - SW/2, 0);
+  p.close();
+}
+
+function charW(p) {
+  const ww = W + 80;
+  const q = ww / 4;
+  // Left diagonal
+  p.moveTo(0, CAP);
+  p.lineTo(SW, CAP);
+  p.lineTo(q + SW/2, 0);
+  p.lineTo(q - SW/2, 0);
+  p.close();
+  // Center-left
+  p.moveTo(q - SW/2, 0);
+  p.lineTo(q + SW/2, 0);
+  p.lineTo(ww/2 + SW/2, CAP * 0.6);
+  p.lineTo(ww/2 - SW/2, CAP * 0.6);
+  p.close();
+  // Center-right
+  p.moveTo(ww/2 - SW/2, CAP * 0.6);
+  p.lineTo(ww/2 + SW/2, CAP * 0.6);
+  p.lineTo(q*3 + SW/2, 0);
+  p.lineTo(q*3 - SW/2, 0);
+  p.close();
+  // Right diagonal
+  p.moveTo(ww - SW, CAP);
+  p.lineTo(ww, CAP);
+  p.lineTo(q*3 + SW/2, 0);
+  p.lineTo(q*3 - SW/2, 0);
+  p.close();
+}
+
+function charX(p) {
+  const cx = W / 2;
+  const mid = CAP / 2;
+  // Top-left to center
+  p.moveTo(0, CAP);
+  p.lineTo(SW, CAP);
+  p.lineTo(cx + SW/2, mid + SW/2);
+  p.lineTo(cx - SW/2, mid + SW/2);
+  p.close();
+  // Top-right to center
+  p.moveTo(W - SW, CAP);
+  p.lineTo(W, CAP);
+  p.lineTo(cx + SW/2, mid + SW/2);
+  p.lineTo(cx - SW/2, mid + SW/2);
+  p.close();
+  // Bottom-left from center
+  p.moveTo(cx - SW/2, mid - SW/2);
+  p.lineTo(cx + SW/2, mid - SW/2);
+  p.lineTo(SW, 0);
+  p.lineTo(0, 0);
+  p.close();
+  // Bottom-right from center
+  p.moveTo(cx - SW/2, mid - SW/2);
+  p.lineTo(cx + SW/2, mid - SW/2);
+  p.lineTo(W, 0);
+  p.lineTo(W - SW, 0);
+  p.close();
+}
+
+function charY(p) {
+  const cx = W / 2;
+  const mid = CAP / 2;
+  // Left arm
+  p.moveTo(0, CAP);
+  p.lineTo(SW, CAP);
+  p.lineTo(cx + SW/2, mid + SW/2);
+  p.lineTo(cx - SW/2, mid + SW/2);
+  p.close();
+  // Right arm
+  p.moveTo(W - SW, CAP);
+  p.lineTo(W, CAP);
+  p.lineTo(cx + SW/2, mid + SW/2);
+  p.lineTo(cx - SW/2, mid + SW/2);
+  p.close();
+  // Center stem
+  rect(p, cx - SW/2, 0, SW, mid + SW/2);
+}
+
+function charZ(p) {
+  // Top bar
+  rect(p, 0, CAP - SW, W, SW);
+  // Diagonal
+  p.moveTo(0, 0);
+  p.lineTo(0, SW);
+  p.lineTo(W - SW, CAP - SW);
+  p.lineTo(W, CAP - SW);
+  p.close();
+  // Bottom bar
+  rect(p, 0, 0, W, SW);
+}
+
+// ── Digits ──────────────────────────────────────────────────────
+function digit0(p) { charO(p); }
+
+function digit1(p) {
+  const iw = SW + 40;
+  rect(p, (W - iw)/2, 0, iw, CAP);
+  // Base bar
+  rect(p, W*0.15, 0, W*0.7, SW);
+}
+
+function digit2(p) {
+  rect(p, 0, CAP - SW, W, SW);
+  rect(p, W - SW, CAP/2, SW, CAP/2 - SW);
+  rect(p, 0, CAP/2 - SW/2, W, SW);
+  rect(p, 0, SW, SW, CAP/2 - SW);
+  rect(p, 0, 0, W, SW);
+}
+
+function digit3(p) {
+  rect(p, 0, CAP - SW, W, SW);
+  rect(p, W - SW, CAP/2 + SW/2, SW, CAP/2 - SW*1.5);
+  rect(p, W*0.3, CAP/2 - SW/2, W*0.7, SW);
+  rect(p, W - SW, SW, SW, CAP/2 - SW*1.5);
+  rect(p, 0, 0, W, SW);
+}
+
+function digit4(p) {
+  rect(p, 0, CAP/2, SW, CAP/2);
+  rect(p, 0, CAP/2 - SW/2, W, SW);
+  rect(p, W - SW, 0, SW, CAP);
+}
+
+function digit5(p) { charS(p); }
+
+function digit6(p) {
+  rect(p, 0, CAP - SW, W, SW);
+  rect(p, 0, SW, SW, CAP - SW*2);
+  rect(p, 0, CAP/2 - SW/2, W, SW);
+  rect(p, W - SW, SW, SW, CAP/2 - SW);
+  rect(p, 0, 0, W, SW);
+}
+
+function digit7(p) {
+  rect(p, 0, CAP - SW, W, SW);
+  // Diagonal stem
+  p.moveTo(W - SW, CAP - SW);
+  p.lineTo(W, CAP - SW);
+  p.lineTo(W*0.35, 0);
+  p.lineTo(W*0.35 - SW, 0);
+  p.close();
+}
+
+function digit8(p) {
+  rect(p, 0, 0, W, CAP);
+  // Top hole
+  p.moveTo(SW, CAP/2 + SW/2);
+  p.lineTo(SW, CAP - SW);
+  p.lineTo(W - SW, CAP - SW);
+  p.lineTo(W - SW, CAP/2 + SW/2);
+  p.close();
+  // Bottom hole
+  p.moveTo(SW, SW);
+  p.lineTo(SW, CAP/2 - SW/2);
+  p.lineTo(W - SW, CAP/2 - SW/2);
+  p.lineTo(W - SW, SW);
+  p.close();
+}
+
+function digit9(p) {
+  rect(p, 0, CAP - SW, W, SW);
+  rect(p, 0, CAP/2, SW, CAP/2 - SW);
+  rect(p, 0, CAP/2 - SW/2, W, SW);
+  rect(p, W - SW, SW, SW, CAP - SW*2);
+  rect(p, 0, 0, W, SW);
+}
+
+// ── Punctuation ─────────────────────────────────────────────────
+function charSpace() { /* empty */ }
+
+function charPeriod(p) {
+  rect(p, W/2 - SW/2, 0, SW, SW);
+}
+
+function charComma(p) {
+  p.moveTo(W/2 - SW/2, SW);
+  p.lineTo(W/2 + SW/2, SW);
+  p.lineTo(W/2 + SW/2, 0);
+  p.lineTo(W/2 - SW/2 - 15, -SW);
+  p.lineTo(W/2 - SW/2, -SW + 15);
+  p.close();
+}
+
+function charExcl(p) {
+  rect(p, W/2 - SW/2, SW*2, SW, CAP - SW*2);
+  rect(p, W/2 - SW/2, 0, SW, SW);
+}
+
+function charHyphen(p) {
+  rect(p, W*0.15, CAP/2 - SW/2, W*0.7, SW);
+}
+
+function charColon(p) {
+  rect(p, W/2 - SW/2, CAP*0.55, SW, SW);
+  rect(p, W/2 - SW/2, CAP*0.15, SW, SW);
+}
+
+function charGT(p) {
+  const mid = CAP/2;
+  p.moveTo(0, CAP - CUT);
+  p.lineTo(SW, CAP - CUT);
+  p.lineTo(W, mid + SW/2);
+  p.lineTo(W, mid - SW/2);
+  p.lineTo(SW, CUT);
+  p.lineTo(0, CUT);
+  p.lineTo(W - SW*2, mid);
+  p.close();
+}
+
+// ── Build registry ──────────────────────────────────────────────
+
+const CHAR_MAP = {
+  'A': { fn: charA, w: W },
+  'B': { fn: charB, w: W },
+  'C': { fn: charC, w: W },
+  'D': { fn: charD, w: W },
+  'E': { fn: charE, w: W },
+  'F': { fn: charF, w: W },
+  'G': { fn: charG, w: W },
+  'H': { fn: charH, w: W },
+  'I': { fn: charI, w: SW + 60, adv: SW + 120 },
+  'J': { fn: charJ, w: W },
+  'K': { fn: charK, w: W },
+  'L': { fn: charL, w: W },
+  'M': { fn: charM, w: W + 80, adv: W + 140 },
+  'N': { fn: charN, w: W },
+  'O': { fn: charO, w: W },
+  'P': { fn: charP, w: W },
+  'Q': { fn: charQ, w: W },
+  'R': { fn: charR, w: W },
+  'S': { fn: charS, w: W },
+  'T': { fn: charT, w: W },
+  'U': { fn: charU, w: W },
+  'V': { fn: charV, w: W },
+  'W': { fn: charW, w: W + 80, adv: W + 140 },
+  'X': { fn: charX, w: W },
+  'Y': { fn: charY, w: W },
+  'Z': { fn: charZ, w: W },
+  '0': { fn: digit0, w: W },
+  '1': { fn: digit1, w: W },
+  '2': { fn: digit2, w: W },
+  '3': { fn: digit3, w: W },
+  '4': { fn: digit4, w: W },
+  '5': { fn: digit5, w: W },
+  '6': { fn: digit6, w: W },
+  '7': { fn: digit7, w: W },
+  '8': { fn: digit8, w: W },
+  '9': { fn: digit9, w: W },
+  ' ': { fn: charSpace, w: 0, adv: 250 },
+  '.': { fn: charPeriod, w: W, adv: SW + 120 },
+  ',': { fn: charComma, w: W, adv: SW + 120 },
+  '!': { fn: charExcl, w: W, adv: SW + 120 },
+  '-': { fn: charHyphen, w: W },
+  ':': { fn: charColon, w: W, adv: SW + 120 },
+  '>': { fn: charGT, w: W },
+};
+
+// ── Build font ──────────────────────────────────────────────────
 
 function buildFont() {
   const glyphs = [];
 
-  // Required .notdef glyph
+  // .notdef
   const notdefPath = new opentype.Path();
-  roundedRect(notdefPath, 100, 0, 800, 800, 40);
-  roundedRect(notdefPath, 150, 50, 700, 700, 20); // inner cutout
+  rect(notdefPath, 50, 0, 400, 700);
+  notdefPath.moveTo(100, 50);
+  notdefPath.lineTo(100, 650);
+  notdefPath.lineTo(400, 650);
+  notdefPath.lineTo(400, 50);
+  notdefPath.close();
 
   glyphs.push(new opentype.Glyph({
     name: '.notdef',
     unicode: 0,
-    advanceWidth: UNITS,
+    advanceWidth: 500,
     path: notdefPath,
   }));
 
-  // Build each glyph
-  const codepointTable = {};
+  for (const [char, def] of Object.entries(CHAR_MAP)) {
+    const path = new opentype.Path();
+    def.fn(path);
 
-  for (const def of GLYPH_DEFS) {
-    const path = def.builder();
+    const unicode = char.codePointAt(0);
+    const adv = def.adv || (def.w + 60);
 
     glyphs.push(new opentype.Glyph({
-      name: def.name,
-      unicode: def.unicode,
-      advanceWidth: UNITS,
+      name: char === ' ' ? 'space' : `uni${unicode.toString(16).toUpperCase().padStart(4, '0')}`,
+      unicode,
+      advanceWidth: adv,
       path,
     }));
 
-    codepointTable[def.name] = {
-      unicode: `U+${def.unicode.toString(16).toUpperCase().padStart(4, '0')}`,
-      char: String.fromCodePoint(def.unicode),
-      label: def.label,
-    };
+    // Also add lowercase mapping (same glyph)
+    if (char >= 'A' && char <= 'Z') {
+      const lcPath = new opentype.Path();
+      def.fn(lcPath);
+      const lcUnicode = char.toLowerCase().codePointAt(0);
+      glyphs.push(new opentype.Glyph({
+        name: `uni${lcUnicode.toString(16).toUpperCase().padStart(4, '0')}`,
+        unicode: lcUnicode,
+        advanceWidth: adv,
+        path: lcPath,
+      }));
+    }
   }
 
   const font = new opentype.Font({
-    familyName: 'GameGlance',
+    familyName: 'MetalGearSolid',
     styleName: 'Regular',
-    unitsPerEm: UNITS,
+    unitsPerEm: UPM,
     ascender: ASC,
     descender: DESC,
     glyphs,
   });
 
-  // Write .ttf
+  const outPath = './MetalGearSolid.ttf';
   const buffer = Buffer.from(font.toArrayBuffer());
-  writeFileSync('./GameGlance.ttf', buffer);
-  console.log('✓ GameGlance.ttf written (%d bytes, %d glyphs)', buffer.length, glyphs.length);
+  writeFileSync(outPath, buffer);
+  console.log(`✓ ${outPath} — ${buffer.length} bytes, ${glyphs.length} glyphs`);
 
-  // Write codepoint table
-  writeFileSync('./glyph-table.json', JSON.stringify(codepointTable, null, 2));
-  console.log('✓ glyph-table.json written');
-
-  // Print summary
-  console.log('\n┌─────────────────────────────────────────┐');
-  console.log('│         GameGlance Font Summary          │');
-  console.log('├──────────────┬──────────┬────────────────┤');
-  console.log('│ Name         │ Unicode  │ Label          │');
-  console.log('├──────────────┼──────────┼────────────────┤');
-  for (const [name, info] of Object.entries(codepointTable)) {
-    console.log(
-      '│ %s │ %s │ %s │',
-      name.padEnd(12),
-      info.unicode.padEnd(8),
-      info.label.padEnd(14),
-    );
+  // Summary
+  console.log('\nGlyphs:');
+  for (const [char] of Object.entries(CHAR_MAP)) {
+    if (char === ' ') continue;
+    process.stdout.write(`  ${char}`);
   }
-  console.log('└──────────────┴──────────┴────────────────┘');
+  console.log('\n  + lowercase a-z mapped to same forms');
+  console.log('\nDone!');
 }
 
 buildFont();

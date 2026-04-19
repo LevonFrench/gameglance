@@ -8,7 +8,8 @@ interface Props {
 }
 
 export const ArcadeInfoCard: React.FC<Props> = ({ game, systemData }) => {
-  const { isDark } = useTheme();
+  const { theme } = useTheme();
+  const isDark = theme === 'dark';
   const [activeTab, setActiveTab] = useState<'info' | 'systems'>('info');
 
   return (

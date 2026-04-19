@@ -662,10 +662,6 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
         disableInitialAnimation={disableInitialAnimation}
       />
 
-      <div style={{ maxWidth: '1400px', width: '100%', margin: '0 auto' }}>
-        {/* Navigation breadcrumb was here */}
-
-
       {/* Section header */}
       <header style={{
         marginBottom: 'var(--space-2xl)',
@@ -710,8 +706,6 @@ export const CharacterSelectView: React.FC<Props> = ({ game, disableInitialAnima
           {loadingRoster ? 'Loading roster...' : `${characters.length} fighter${characters.length !== 1 ? 's' : ''} available`}
         </p>
       </header>
-        </div>
-      </div>
 
 
       

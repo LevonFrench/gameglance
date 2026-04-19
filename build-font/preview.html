@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>MetalGearSolid Font Preview</title>
+  <style>
+    @font-face {
+      font-family: 'MetalGearSolid';
+      src: url('./MetalGearSolid.ttf') format('truetype');
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background: #0a0a0a;
+      color: #e0e0e0;
+      font-family: system-ui;
+      padding: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    .sample {
+      font-family: 'MetalGearSolid', sans-serif;
+      line-height: 1.2;
+    }
+    .label {
+      font-family: system-ui;
+      font-size: 12px;
+      color: #666;
+      margin-bottom: 8px;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+    }
+    .s-hero { font-size: 96px; color: #fff; }
+    .s-sub { font-size: 48px; color: #c0c0c0; }
+    .s-body { font-size: 32px; color: #999; }
+    .s-small { font-size: 24px; color: #777; }
+    .s-red { color: #cc2222; }
+    .s-grey { color: #666; }
+    .row { display: flex; gap: 20px; align-items: baseline; flex-wrap: wrap; }
+    hr { border: none; border-top: 1px solid #222; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, 80px);
+      gap: 8px;
+    }
+    .grid-cell {
+      width: 80px; height: 80px;
+      background: #151515;
+      border: 1px solid #222;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: 'MetalGearSolid', sans-serif;
+      font-size: 40px;
+      color: #fff;
+      border-radius: 4px;
+    }
+    .grid-cell span {
+      font-family: system-ui;
+      font-size: 10px;
+      color: #555;
+      position: absolute;
+      margin-top: 50px;
+    }
+    .grid-cell { position: relative; }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="label">Hero — 96px</div>
+    <div class="sample s-hero">METAL GEAR</div>
+  </div>
+  <div>
+    <div class="label">Subtitle — 48px</div>
+    <div class="sample s-sub">SOLID</div>
+  </div>
+  <div>
+    <div class="label">Tagline — 32px</div>
+    <div class="sample s-body s-red">TACTICAL ESPIONAGE ACTION</div>
+  </div>
+  <hr>
+  <div>
+    <div class="label">Full Alphabet — 32px</div>
+    <div class="sample s-body">ABCDEFGHIJKLM</div>
+    <div class="sample s-body">NOPQRSTUVWXYZ</div>
+  </div>
+  <div>
+    <div class="label">Digits</div>
+    <div class="sample s-body">0123456789</div>
+  </div>
+  <div>
+    <div class="label">Mixed Case / Punctuation</div>
+    <div class="sample s-small">Metal Gear Solid!</div>
+    <div class="sample s-small">2LK > 2LK > 214LK, 623LP</div>
+  </div>
+  <hr>
+  <div>
+    <div class="label">Glyph Grid</div>
+    <div class="grid">
+      <script>
+        const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.,-:>!'.split('');
+        chars.forEach(c => {
+          document.write(`<div class="grid-cell">${c}<span>${c.codePointAt(0).toString(16).toUpperCase()}</span></div>`);
+        });
+      </script>
+    </div>
+  </div>
+</body>
+</html>
