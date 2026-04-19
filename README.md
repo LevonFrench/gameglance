@@ -11,7 +11,8 @@ Built with hardware-authentic styling: controller glyphs, cabinet palettes, and 
 
 ## ✨ Features
 
-- **200+ Game Registry** — Modern titles (SF6, T8, GGST, MK1, DNF Duel) and classics (3rd Strike, CvS2, SFα3, Garou, Pocket Fighter, Project Justice, Plasma Sword).
+- **200+ Game Registry** — Modern titles (SF6, T8, GGST, MK1, COTW, UNIB2, DNF Duel) and classics (3rd Strike, CvS2, Garou, MVC2).
+- **Universal Color Aliasing Engine** — Flawlessly resolves input notations (like SNK's `A,B,C,D` or Anime's `P,K,S,H`) to physically accurate colors across *any* controller theme.
 - **Dynamic Controller Glyphs** — Inputs render as PlayStation, Xbox, Switch, Neo Geo, CPS, Genesis, SNES, Tekken, or generic arcade buttons. Auto-adapts per game or lets you switch manually.
 - **Practice Playlists** — Isolate specific moves or combos and keep them on your second screen while you play.
 - **Fightcade Sync** — Watches a local log file to auto-navigate to the game and character you're playing in Fightcade.
