@@ -118,22 +118,23 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
 
           {characterName && (
             <>
-              <span style={{ color: 'var(--text-muted)' }}>›</span>
+              <span style={{ color: 'var(--text-muted)', fontSize: '1.2rem' }}>›</span>
               <button 
                 onClick={onCharacterClick || (() => window.scrollTo({ top: 0, behavior: 'smooth' }))}
                 style={{ 
                   background: 'transparent',
                   border: 'none',
-                  color: 'var(--text-secondary)', 
-                  fontWeight: 500,
+                  color: 'var(--text-primary)', 
+                  fontWeight: 700,
                   cursor: 'pointer',
                   padding: '2px 4px',
-                  fontFamily: 'inherit',
-                  fontSize: 'inherit',
+                  fontFamily: "'Outfit', sans-serif",
+                  fontSize: '1.2rem',
                   transition: 'color 0.2s',
+                  letterSpacing: '-0.02em',
                 }}
-                onMouseOver={e => e.currentTarget.style.color = 'var(--text-primary)'}
-                onMouseOut={e => e.currentTarget.style.color = 'var(--text-secondary)'}
+                onMouseOver={e => e.currentTarget.style.color = 'var(--accent-indigo)'}
+                onMouseOut={e => e.currentTarget.style.color = 'var(--text-primary)'}
                 title={onCharacterClick ? "Back to Character Selection" : "Back to Top"}
               >
                 {characterName}
