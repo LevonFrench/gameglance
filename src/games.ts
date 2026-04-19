@@ -22,7 +22,45 @@ export const SUPPORTED_GAMES: ReadonlyArray<Readonly<GameDefinition>> = [
       { name: 'Ki Charge', description: 'Hold to charge ki meter manually. Risky but builds resources.' , input: 'S (hold)' },
       { name: 'Limit Break', description: 'Last character alive gets automatic buffs: extra damage and reduced super costs.'  }
     ],
-    characters: []
+    characters: [
+      { id: 'android-16', name: 'Android 16', moveCount: 0 },
+      { id: 'android-17', name: 'Android 17', moveCount: 0 },
+      { id: 'android-18', name: 'Android 18', moveCount: 0 },
+      { id: 'android-21-lab-coat', name: 'Android 21 (Lab Coat)', moveCount: 0 },
+      { id: 'android-21-majin', name: 'Android 21 (Majin)', moveCount: 0 },
+      { id: 'bardock', name: 'Bardock', moveCount: 0 },
+      { id: 'beerus', name: 'Beerus', moveCount: 0 },
+      { id: 'broly-dbs', name: 'Broly (DBS)', moveCount: 0 },
+      { id: 'broly-z', name: 'Broly (Z)', moveCount: 0 },
+      { id: 'cell', name: 'Cell', moveCount: 0 },
+      { id: 'cooler', name: 'Cooler', moveCount: 0 },
+      { id: 'freeza', name: 'Freeza', moveCount: 0 },
+      { id: 'ginyu', name: 'Ginyu', moveCount: 0 },
+      { id: 'gogeta-ss4', name: 'Gogeta (SS4)', moveCount: 0 },
+      { id: 'gogeta-ssgss', name: 'Gogeta (SSGSS)', moveCount: 0 },
+      { id: 'gohan-adult', name: 'Gohan (Adult)', moveCount: 0 },
+      { id: 'gohan-teen', name: 'Gohan (Teen)', moveCount: 0 },
+      { id: 'goku-blue', name: 'Goku (Blue)', moveCount: 0 },
+      { id: 'goku-gt', name: 'Goku (GT)', moveCount: 0 },
+      { id: 'goku-ss', name: 'Goku (SS)', moveCount: 0 },
+      { id: 'goku-ultra-instinct', name: 'Goku (Ultra Instinct)', moveCount: 0 },
+      { id: 'goku-black', name: 'Goku Black', moveCount: 0 },
+      { id: 'gotenks', name: 'Gotenks', moveCount: 0 },
+      { id: 'hit', name: 'Hit', moveCount: 0 },
+      { id: 'janemba', name: 'Janemba', moveCount: 0 },
+      { id: 'jiren', name: 'Jiren', moveCount: 0 },
+      { id: 'kefla', name: 'Kefla', moveCount: 0 },
+      { id: 'krillin', name: 'Krillin', moveCount: 0 },
+      { id: 'majin-buu', name: 'Majin Buu', moveCount: 0 },
+      { id: 'master-roshi', name: 'Master Roshi', moveCount: 0 },
+      { id: 'nappa', name: 'Nappa', moveCount: 0 },
+      { id: 'piccolo', name: 'Piccolo', moveCount: 0 },
+      { id: 'tenshinhan', name: 'Tenshinhan', moveCount: 0 },
+      { id: 'trunks', name: 'Trunks', moveCount: 0 },
+      { id: 'videl', name: 'Videl', moveCount: 0 },
+      { id: 'yamcha', name: 'Yamcha', moveCount: 0 },
+      { id: 'zamasu-fused', name: 'Zamasu (Fused)', moveCount: 0 }
+    ]
   },
 
   {
@@ -3355,7 +3393,7 @@ rosterCount: 19,
 
     developer: "SNK",
 
-    releaseYear: 2019,
+    releaseYear: 1993,
     platform: "PS4, Xbox One, PC, Switch",
 
 rosterCount: 25,
@@ -4102,7 +4140,7 @@ rosterCount: 21,
 
     developer: "Capcom",
 
-    releaseYear: 2023,
+    releaseYear: 1997,
 
     platform: "Windows PlayStation 4 PlayStation 5 Xbox Series X/S Arcade, PC",
 

@@ -390,10 +390,20 @@ export const GameSelectView: React.FC<Props> = ({
   }, []);
 
   useEffect(() => {
-    const timer = setTimeout(() => {
+    let timeoutId: NodeJS.Timeout;
+
+    const startGlitchCycle = () => {
       setIsGlitching(true);
-    }, 7000);
-    return () => clearTimeout(timer);
+      timeoutId = setTimeout(() => {
+        setIsGlitching(false);
+        const randomWait = Math.random() * (11000 - 3000) + 3000;
+        timeoutId = setTimeout(startGlitchCycle, randomWait);
+      }, 4000);
+    };
+
+    timeoutId = setTimeout(startGlitchCycle, 7000);
+
+    return () => clearTimeout(timeoutId);
   }, []);
 
   const toggleFavorite = (e: React.MouseEvent, id: string) => {
