@@ -10,6 +10,18 @@ export const SUPPORTED_GAMES: ReadonlyArray<Readonly<GameDefinition>> = [
     tagline: '3v3 Tag Team Action',
     notationSystem: 'numpad',
     tabs: ['Normal Moves', 'Special Moves', 'Supers', 'Assists', 'System', 'Combos'],
+    
+    systemMechanics: [
+      { name: 'Assists', description: 'Call partner characters for assist attacks. Three assist types (A/B/C) per character.'  },
+      { name: 'Dragon Rush', description: 'Universal throw that launches. Can be teched.' , input: 'L+M' },
+      { name: 'Super Dash', description: 'Homing aerial dash that tracks the opponent. Beats projectiles.' , input: 'H+S' },
+      { name: 'Vanish', description: 'Teleport behind the opponent with an attack. Costs 1 bar.' , input: 'M+H' },
+      { name: 'Sparking Blast', description: 'Once per game power-up. Health regen, damage boost, combo extensions. Stronger with fewer characters.' , input: 'L+M+H+S' },
+      { name: 'Z Change', description: 'Tag in a partner character. Can be done raw or during combos.'  },
+      { name: 'Ki Charge', description: 'Hold to charge ki meter manually. Risky but builds resources.' , input: 'S (hold)' },
+      { name: 'Limit Break', description: 'Last character alive gets automatic buffs: extra damage and reduced super costs.'  }
+    ],
+
     characters: []
   },
 
@@ -30,7 +42,19 @@ export const SUPPORTED_GAMES: ReadonlyArray<Readonly<GameDefinition>> = [
 
 rosterCount: 10,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Spirit Gauge', description: 'Special moves consume Spirit. When depleted, specials become weak. Recharge by holding a button.'  },
+      { name: 'Desperation Move', description: 'Super available only at critical health. Huge damage.'  },
+      { name: 'Taunts', description: 'Taunt to drain the opponent\'s Spirit gauge.' , input: 'Start' },
+      { name: 'Scaling Damage', description: 'Attacks weaken as Spirit depletes. Resource management is key.'  },
+      { name: 'Zoom Camera', description: 'Camera zooms in/out based on character distance. Pioneering feature.'  },
+      { name: 'Wall Bounce', description: 'Characters bounce off stage edges for follow-up attacks.'  },
+      { name: 'Throw', description: 'Close-range command grabs with unique animations.'  },
+      { name: 'Special Moves', description: 'Fireball and uppercut archetypes with SNK-style inputs.'  }
+    ],
+
+    characters: [
       { id: 'jack-turner', name: 'Jack Turner', moveCount: 0 },
       { id: 'john-crawley', name: 'John Crawley', moveCount: 0 },
       { id: 'king', name: 'King', moveCount: 0 },
@@ -87,7 +111,19 @@ rosterCount: 13,
 
 rosterCount: 9,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Spirit Gauge', description: 'Powers specials. Depletes on use, recharges over time or manually.'  },
+      { name: 'Ultimate KO', description: 'Finish with a super for a special KO animation.'  },
+      { name: 'Chain Combo', description: 'Link normals into specials for combo strings.'  },
+      { name: 'Parry', description: 'Deflect attacks with precise timing for a counter opportunity.'  },
+      { name: 'Pursuit Attack', description: 'Hit downed opponents for extra damage.'  },
+      { name: 'Rush Combo', description: 'Multi-hit auto combo from light attacks.'  },
+      { name: 'Guard Cancel', description: 'Counter from blockstun at meter cost.'  },
+      { name: 'Desperation Move', description: 'Powerful super at low health.'  }
+    ],
+
+    characters: [
       { id: 'jin-fu-ha', name: 'Jin Fu-Ha', moveCount: 0 },
       { id: 'karman-cole', name: 'Karman Cole', moveCount: 0 },
       { id: 'kasumi-todoh', name: 'Kasumi Todoh', moveCount: 0 },
@@ -229,6 +265,18 @@ rosterCount: 35,
 
             tags: ['Anime', '2D'],
 
+    
+    systemMechanics: [
+      { name: 'Overdrive', description: 'Unique power-up per character. Duration scales inversely with remaining health.' , input: 'A+B+C+D' },
+      { name: 'Rapid Cancel', description: 'Cancel any move on hit for 50% Heat gauge.' , input: 'A+B+C' },
+      { name: 'Barrier Guard', description: 'Block without chip damage. Costs Barrier gauge.' , input: '4+A+B' },
+      { name: 'Burst', description: 'Break free from combos. Recharges slowly.' , input: 'A+B+C+D' },
+      { name: 'Counter Assault', description: 'Counter-attack while blocking.' , input: '6+A+B (blocking)' },
+      { name: 'Crush Trigger', description: 'Unblockable attack that costs 25% Heat.' , input: 'A+B' },
+      { name: 'Exceed Accel', description: 'Powerful attack available only during Overdrive.' , input: 'A+B+C+D (in OD)' },
+      { name: 'Distortion Drive', description: 'Super moves costing 50% Heat gauge.'  }
+    ],
+
     characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
@@ -251,7 +299,19 @@ rosterCount: 35,
 
 rosterCount: 40,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Cross Combo', description: 'Both characters attack simultaneously for extended pressure.' , input: '5P (with partner)' },
+      { name: 'Resonance Blaze', description: 'Power-up when one partner is KO\'d. Health regen and enhanced moves.' , input: 'P+Tag' },
+      { name: 'Reject Guard', description: 'Push the opponent away while blocking.' , input: 'A+D (blocking)' },
+      { name: 'Assists', description: 'Call your partner for assist attacks during combos and neutral.'  },
+      { name: 'Cross Burst', description: 'Tag-in reversal that breaks combos.' , input: 'P+Tag (while hit)' },
+      { name: 'Clash Assault', description: 'Universal auto-combo starter.' , input: 'A (mash)' },
+      { name: 'Distortion Skill', description: 'Super moves. Can be chained with partner supers for Duo finishers.'  },
+      { name: 'Tag', description: 'Switch between your two characters freely.'  }
+    ],
+
+    characters: [
       { id: 'adachi', name: 'Adachi', moveCount: 0 },
       { id: 'akatsuki', name: 'Akatsuki', moveCount: 0 },
       { id: 'akihiko', name: 'Akihiko', moveCount: 0 },
@@ -515,7 +575,19 @@ rosterCount: 10,
 
 rosterCount: 19,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Multi-System', description: 'Characters retain mechanics from their original games (SF2, Alpha, SF3, Darkstalkers, Red Earth).'  },
+      { name: 'Parry (SF3 chars)', description: 'SF3 characters can parry. Alpha chars have custom combos. Darkstalkers have chains.'  },
+      { name: 'Super Combo', description: 'Universal super gauge shared across all character types.'  },
+      { name: 'Guard Cancel', description: 'Counter-attack while blocking at meter cost.'  },
+      { name: 'Tag System', description: 'Two characters per team. Switch between rounds.'  },
+      { name: 'Cross-System', description: 'Mix characters from different Capcom universes.'  },
+      { name: 'Chain Combo', description: 'Darkstalkers characters retain chain combo ability.'  },
+      { name: 'Custom Combo', description: 'Alpha characters can activate free-form custom combos.'  }
+    ],
+
+    characters: [
       { id: 'anakaris', name: 'Anakaris', moveCount: 0 },
       { id: 'demitri', name: 'Demitri', moveCount: 0 },
       { id: 'felicia', name: 'Felicia', moveCount: 0 },
@@ -594,7 +666,19 @@ rosterCount: 44,
 
 rosterCount: 29,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Ratio System', description: 'Assign ratio points (1-4) to build a balanced team.'  },
+      { name: 'Groove Select', description: 'Choose Capcom or SNK groove for different meter and defensive systems.'  },
+      { name: 'Capcom Groove', description: 'SF Alpha style. Multi-level supers, air block, alpha counter.'  },
+      { name: 'SNK Groove', description: 'KOF style. Charge meter, MAX mode, dodge/roll.'  },
+      { name: 'Roll', description: 'Invincible evasion roll (SNK groove).' , input: 'AB' },
+      { name: 'Alpha Counter', description: 'Counter from block (Capcom groove).'  },
+      { name: 'Super Combos', description: 'Powerful supers that vary by groove.'  },
+      { name: 'Finest KO', description: 'Special KO animation for finishing with a super.'  }
+    ],
+
+    characters: [
       { id: 'akuma', name: 'Akuma', moveCount: 0 },
       { id: 'balrog', name: 'Balrog', moveCount: 0 },
       { id: 'benimaru', name: 'Benimaru', moveCount: 0 },
@@ -646,7 +730,19 @@ rosterCount: 29,
 
 rosterCount: 12,
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'Mech Combat', description: 'Pilot giant mecha. Each mech has unique weapons and mobility.'  },
+      { name: 'Boost Dash', description: 'Air and ground dashes for fast mech movement.'  },
+      { name: 'Weapon Arms', description: 'Interchangeable arm weapons change your moveset.'  },
+      { name: 'Mega Crash', description: 'Burst out of combos at the cost of health.' , input: 'All buttons' },
+      { name: 'Chain Combo', description: 'Chain normals together for mech combat combos.'  },
+      { name: 'Super Move', description: 'Powerful mech super attacks at full meter.'  },
+      { name: 'Air Combat', description: 'Full air combo and juggle system for mecha.'  },
+      { name: 'Parts Damage', description: 'Specific mech parts can be damaged, affecting abilities.'  }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -921,7 +1017,19 @@ rosterCount: 29,
 
 rosterCount: 16,
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'MP System', description: 'Mana Points power special moves. Depletes on use, regenerates over time.'  },
+      { name: 'Conversion', description: 'Spend white health to instantly recover MP.' , input: 'B+S' },
+      { name: 'Awakening', description: 'At low health, gain access to Awakening Skill — a powerful super move.'  },
+      { name: 'Guard Cancel', description: 'Counter-attack while blocking. Costs MP.' , input: '6+S (blocking)' },
+      { name: 'Simple Inputs', description: 'No motion inputs required. Specials are performed with direction + button.'  },
+      { name: 'White Health', description: 'Blocked attacks create white/recoverable health. Aggressive play recovers it.'  },
+      { name: 'Skill Moves', description: 'Character-specific specials mapped to the S button + directions.'  },
+      { name: 'Dodge', description: 'Quick sidestep with invincibility.' , input: 'B+M' }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
@@ -1006,7 +1114,19 @@ rosterCount: 37,
 
 rosterCount: 11,
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'Line System', description: 'Two-plane fighting. Switch between foreground and background to dodge attacks.' , input: 'A+B' },
+      { name: 'Desperation Move', description: 'Powerful super available only when health is critical (flashing).'  },
+      { name: 'Power Wave', description: 'Projectile attacks and anti-air specials are key to neutral game.'  },
+      { name: 'Knockdown', description: 'Hard knockdowns give okizeme advantage for follow-up pressure.'  },
+      { name: 'Throw', description: 'Close-range throws with character-specific animations and damage.'  },
+      { name: 'Overhead', description: 'Attacks that must be blocked standing.'  },
+      { name: 'Special Moves', description: 'Quarter-circle, charge, and pretzel motion inputs for special attacks.'  },
+      { name: 'Plane Attack', description: 'Attack while switching planes for a surprise strike.'  }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -1029,7 +1149,19 @@ rosterCount: 11,
 
 rosterCount: 12,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Oversway', description: 'Dodge into the background or foreground with invincibility.' , input: 'AB' },
+      { name: 'Combination Arts', description: 'Chain specific normals together for combo strings.'  },
+      { name: 'Desperation Move', description: 'Super available at low health. High damage finisher.'  },
+      { name: 'Hidden Abilities', description: 'Secret supers with specific activation conditions.'  },
+      { name: 'Pursuit Attack', description: 'Attack downed opponents for extra damage.'  },
+      { name: 'Safe Fall', description: 'Recover quickly from knockdowns.'  },
+      { name: 'Just Frame', description: 'Certain moves have enhanced versions with precise timing.'  },
+      { name: 'Guard Cancel', description: 'Counter-attack during blockstun.'  }
+    ],
+
+    characters: [
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
       { id: 'blue-mary', name: 'Blue Mary', moveCount: 0 },
       { id: 'bob-wilson', name: 'Bob Wilson', moveCount: 0 },
@@ -1065,7 +1197,19 @@ rosterCount: 12,
 
 rosterCount: 16,
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'Line System', description: 'Two-plane fighting. Dodge to the background plane to avoid attacks.' , input: 'A+B' },
+      { name: 'Desperation Move', description: 'Powerful super available only when health is flashing red.'  },
+      { name: 'Power Gauge', description: 'Meter that fills over time and from taking damage.'  },
+      { name: 'Plane Attack', description: 'Attack while transitioning between planes.'  },
+      { name: 'Throw', description: 'Character-specific throws with varying range and damage.'  },
+      { name: 'Knockdown Recovery', description: 'Quick recovery from knockdowns to reset neutral.'  },
+      { name: 'Special Moves', description: 'Character-unique specials with traditional motion inputs.'  },
+      { name: 'Boss Characters', description: 'Hidden boss characters playable with specific codes.'  }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -1088,7 +1232,19 @@ rosterCount: 16,
 
 rosterCount: 18,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'REV System', description: 'S.P.G. gauge powers REV Arts, REV Accel, and REV Guard for offense and defense.'  },
+      { name: 'REV Arts', description: 'Enhanced super moves with cinematic damage. Costs REV gauge.'  },
+      { name: 'REV Accel', description: 'Cancel specials into other moves for combo extensions.' , input: 'S+HS' },
+      { name: 'REV Guard', description: 'Advanced blocking technique with reduced blockstun.'  },
+      { name: 'Just Defend', description: 'Precise block timing for meter gain and frame advantage.' , input: '4 (precise)' },
+      { name: 'T.O.P. Attack', description: 'Unique attack available when health is in the T.O.P. zone.'  },
+      { name: 'Guard Cancel', description: 'Counter-attack from blockstun at meter cost.'  },
+      { name: 'Smart Combo', description: 'Simplified auto-combo for accessibility.'  }
+    ],
+
+    characters: [
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
       { id: 'b-jenet', name: 'B. Jenet', moveCount: 0 },
       { id: 'billy-kane', name: 'Billy Kane', moveCount: 0 },
@@ -1130,7 +1286,19 @@ rosterCount: 18,
 
 rosterCount: 11,
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'Line System', description: 'Pioneer of two-plane fighting. Move between foreground and background.' , input: 'A+B' },
+      { name: 'Arm Spinning', description: 'Special throw technique unique to certain characters.'  },
+      { name: 'Plane Switch', description: 'Dodge attacks by switching to the other plane.'  },
+      { name: 'Special Moves', description: 'Character-specific special attacks with motion inputs.'  },
+      { name: 'Throw', description: 'Close-range grabs with character-specific animations.'  },
+      { name: 'Power Charge', description: 'Build meter for enhanced attacks.'  },
+      { name: 'Bonus Games', description: 'Between rounds, bonus stages test timing and skill.'  },
+      { name: 'Boss Battle', description: 'Face Geese Howard in the final boss fight at Geese Tower.'  }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -1190,7 +1358,19 @@ rosterCount: 14,
 
 rosterCount: 14,
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'Gougi System', description: 'Select a Gougi Deck that grants passive and active buffs during the match.'  },
+      { name: 'Gougi Activation', description: 'Meet conditions in-match to unlock powerful Gougi abilities.'  },
+      { name: 'Super Combo', description: 'Standard supers costing meter.'  },
+      { name: 'Meteor Combo', description: 'Ultimate super costing 3 bars.'  },
+      { name: 'Progressive Combo', description: 'Auto-combo system for simplified execution.'  },
+      { name: 'Guard Break', description: 'Unblockable at meter cost.'  },
+      { name: 'Chain Combo', description: 'Link normals into specials.'  },
+      { name: 'Allen Snider', description: 'Returning EX characters with updated movesets from SF EX series.'  }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
 
@@ -1396,7 +1576,19 @@ rosterCount: 8,
 
 rosterCount: 14,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Cooldown Specials', description: 'Simple inputs (direction+button) for specials with cooldown timers. Motion inputs reduce cooldown.'  },
+      { name: 'Skybound Arts (SBA)', description: 'Super moves costing 50% gauge.' , input: '236236+button' },
+      { name: 'Super Skybound Arts (SSBA)', description: 'Ultimate super at 100% gauge with cinematic animation.'  },
+      { name: 'Brave Counter', description: 'Armored counter-attack at meter cost.' , input: '6+MH' },
+      { name: 'Raging Strike', description: 'Guard-crushing attack. Costs 50% SBA gauge.' , input: '5MH' },
+      { name: 'Spot Dodge', description: 'Brief invincibility in place.' , input: '2+G' },
+      { name: 'Cross-Over', description: 'Dodge behind the opponent.' , input: '6+G' },
+      { name: 'Ultimate Skills', description: 'Enhanced specials that override normal cooldowns.'  }
+    ],
+
+    characters: [
       { id: 'anila', name: 'Anila', moveCount: 0 },
       { id: 'belial', name: 'Belial', moveCount: 0 },
       { id: 'beelzebub', name: 'Beelzebub', moveCount: 0 },
@@ -2000,7 +2192,19 @@ rosterCount: 9,
 
 rosterCount: 8,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Tag System', description: 'Two characters per team. Tag between rounds or mid-match.'  },
+      { name: 'Line System', description: 'Two-plane fighting inherited from Fatal Fury series.'  },
+      { name: 'Desperation Move', description: 'Super at low health.'  },
+      { name: 'Power Gauge', description: 'Build meter for supers and enhanced moves.'  },
+      { name: 'Guard Cancel', description: 'Counter-attack from blockstun.'  },
+      { name: 'Chain Combo', description: 'Link normals for combo strings.'  },
+      { name: 'Plane Switch', description: 'Move between foreground and background planes.'  },
+      { name: 'Team Strategy', description: 'Character order and tagging strategy matters for team composition.'  }
+    ],
+
+    characters: [
       { id: 'chung-paifu', name: 'Chung Paifu', moveCount: 0 },
       { id: 'gozu', name: 'Gozu', moveCount: 0 },
       { id: 'kim-sue-il', name: 'Kim Sue Il', moveCount: 0 },
@@ -2054,7 +2258,19 @@ rosterCount: 8,
 
 rosterCount: 12,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Infinity Gems', description: 'Collect and activate gems for temporary power-ups: Power, Time, Space, Reality, Soul, Mind.'  },
+      { name: 'Aerial Rave', description: 'Launch into air combos with the launcher button.'  },
+      { name: 'Super Jump', description: 'Hold down then up for a high jump enabling extended air combos.' , input: '2~8' },
+      { name: 'Infinity Counter', description: 'Counter-attack while blocking at gem cost.'  },
+      { name: 'Chain Combo', description: 'Magic Series chains from light to heavy.'  },
+      { name: 'Hyper Combo', description: 'Super moves costing meter gauge.'  },
+      { name: 'Gem Power', description: 'Each gem grants unique abilities: speed, armor, health drain, etc.'  },
+      { name: 'OTG Attacks', description: 'Off-the-ground attacks for extended combo damage.'  }
+    ],
+
+    characters: [
       { id: 'black-heart', name: 'Black Heart', moveCount: 0 },
       { id: 'captain-america', name: 'Captain America', moveCount: 0 },
       { id: 'doctor-doom', name: 'Doctor Doom', moveCount: 0 },
@@ -2086,7 +2302,19 @@ rosterCount: 12,
 
     releaseYear: 1997,
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'Tag System', description: 'Switch between two characters mid-match.'  },
+      { name: 'Variable Assist', description: 'Call your partner for an assist attack.'  },
+      { name: 'Aerial Rave', description: 'Launch and air combo with Magic Series chains.'  },
+      { name: 'Variable Counter', description: 'Tag in partner while blocking for a reversal.' , input: '6+Assist (blocking)' },
+      { name: 'Hyper Combo', description: 'Super moves. Can DHC into partner supers.'  },
+      { name: 'Advancing Guard', description: 'Push opponent away while blocking.' , input: 'PP (blocking)' },
+      { name: 'Super Jump', description: 'High jump for extended air game.' , input: '2~8' },
+      { name: 'Cross-Over Combination', description: 'Both characters perform supers simultaneously.'  }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -2147,7 +2375,19 @@ rosterCount: 39,
 
 rosterCount: 14,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Assist Characters', description: 'Call a random assist character from a roster of helpers.'  },
+      { name: 'Variable Assist', description: 'Use summoned assist for combo extensions and pressure.'  },
+      { name: 'Duo Team Attack', description: 'Both characters fight simultaneously for a limited time.' , input: 'LP+HP' },
+      { name: 'Hyper Combo', description: 'Super moves. DHC available between partners.'  },
+      { name: 'Aerial Rave', description: 'Launch and air combo with Magic Series.'  },
+      { name: 'Advancing Guard', description: 'Push block to escape pressure.' , input: 'PP (blocking)' },
+      { name: 'Super Jump', description: 'High jump for air approaches.' , input: '2~8' },
+      { name: 'Tag System', description: 'Switch between your two main characters.'  }
+    ],
+
+    characters: [
       { id: 'captain-america', name: 'Captain America', moveCount: 0 },
       { id: 'chun-li', name: 'Chun-Li', moveCount: 0 },
       { id: 'gambit', name: 'Gambit', moveCount: 0 },
@@ -2185,7 +2425,19 @@ rosterCount: 14,
 
 rosterCount: 24,
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'Infinity Stones', description: 'Choose one of 6 Infinity Stones for a unique Surge ability and Storm power-up.'  },
+      { name: 'Infinity Surge', description: 'Free-use ability tied to your stone. Power: wall bounce. Time: teleport dash. Space: pull. etc.'  },
+      { name: 'Infinity Storm', description: 'Activate at 50% stone gauge for a powerful temporary buff.' , input: 'LK+HP' },
+      { name: 'Active Switch', description: 'Tag partner in at any time, even during combos, for free-form tag combos.' , input: 'HP+HK' },
+      { name: 'Hyper Combo', description: 'Super moves. Can chain between partners.'  },
+      { name: 'Counter Switch', description: 'Tag in partner while being hit to escape combos.' , input: '6+HP+HK (while hit)' },
+      { name: 'Auto Combo', description: 'Mash LP for an auto-combo. Simplified execution.'  },
+      { name: 'Advancing Guard', description: 'Push opponent away during blockstun.' , input: 'PP (blocking)' }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -2471,7 +2723,19 @@ rosterCount: 14,
 
     platform: "Neo Geo Arcade PlayStation 1, PC",
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'Weapon Switch', description: 'Toggle between armed and unarmed stances for different movesets.'  },
+      { name: 'Desperation Move', description: 'Super at low health.'  },
+      { name: 'Chain Combo', description: 'Link normals together.'  },
+      { name: 'Guard Cancel', description: 'Counter from blockstun.'  },
+      { name: 'Air Dash', description: 'Dash while airborne.'  },
+      { name: 'Pursuit Attack', description: 'OTG on downed opponents.'  },
+      { name: 'Weapon Break', description: 'Disarm opponent of their weapon.'  },
+      { name: 'Dodge', description: 'Invincible evasion move.'  }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -2494,7 +2758,19 @@ rosterCount: 14,
 
 rosterCount: 20,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Persona Attacks', description: 'Summon your Persona for unique attacks using the C and D buttons.'  },
+      { name: 'Persona Break', description: 'If your Persona takes 4 hits, it breaks — losing access to Persona moves temporarily.'  },
+      { name: 'Burst', description: 'Combo breaker or power-up burst.' , input: 'A+C+D' },
+      { name: 'All-Out Attack', description: 'Unblockable sweep attack.' , input: '5AB' },
+      { name: 'One More Cancel', description: 'Roman Cancel equivalent. Costs 50 SP gauge.' , input: 'A+B+C' },
+      { name: 'Furious Action', description: 'Invincible reversal. Costs health on whiff.' , input: 'B+D' },
+      { name: 'Auto Combo', description: 'Mash A for auto-combo. Easy execution path.'  },
+      { name: 'Shadow Type', description: 'S-Hold characters have shadow versions with different meter and burst mechanics.'  }
+    ],
+
+    characters: [
       { id: 'adachi', name: 'Adachi', moveCount: 0 },
       { id: 'akihiko', name: 'Akihiko', moveCount: 0 },
       { id: 'chie', name: 'Chie', moveCount: 0 },
@@ -2538,7 +2814,19 @@ rosterCount: 20,
 
 rosterCount: 13,
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'Plasma Combo', description: 'Chain light to heavy attacks in sequence.'  },
+      { name: 'Plasma Strike', description: 'Launcher into aerial combos.'  },
+      { name: 'Plasma Field', description: 'Power-up aura that enhances attacks temporarily.'  },
+      { name: 'Super Moves', description: 'Meter-powered supers with cinematic flair.'  },
+      { name: 'Air Combo', description: 'Launch and juggle in the air.'  },
+      { name: 'Guard Cancel', description: 'Counter from blockstun.'  },
+      { name: 'Dash', description: 'Quick forward/back dashes.'  },
+      { name: 'Weapon Combat', description: '3D weapon-based combat with unique character armaments.'  }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -2559,7 +2847,19 @@ rosterCount: 13,
 
     platform: "Arcade PlayStation Sega Saturn, PC",
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Gems', description: 'Collect colored gems from hitting opponents. Gems power up specific special moves.'  },
+      { name: 'Flash Combo', description: 'Auto-combo with costume change animations.' , input: 'PP or KK' },
+      { name: 'Mighty Combo', description: 'Super moves using the gem-powered meter.'  },
+      { name: 'Item Attacks', description: 'Random items drop that can be used as attacks.'  },
+      { name: 'Guard Cancel', description: 'Counter-attack while blocking.'  },
+      { name: 'Chain Combo', description: 'Link normals in sequence.'  },
+      { name: 'Costume Change', description: 'Characters change costumes during Flash Combos for humor.'  },
+      { name: 'Gem Steal', description: 'Hitting the opponent knocks gems from them for you to collect.'  }
+    ],
+
+    characters: [
       { id: 'akuma', name: 'Akuma', moveCount: 0 },
       { id: 'chun-li', name: 'Chun-Li', moveCount: 0 },
       { id: 'dan', name: 'Dan', moveCount: 0 },
@@ -2645,7 +2945,19 @@ rosterCount: 7,
 
     platform: "Arcade Sega Dreamcast, PC",
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'Team-Up Attack', description: 'Call both partners for a devastating 3-person team attack.'  },
+      { name: 'Party-Up Technique', description: 'Tag team attacks with partner characters.'  },
+      { name: 'Burning Vigor', description: 'Meter system powering supers and team attacks.'  },
+      { name: 'Tardy Counter', description: 'Counter-attack from blockstun with partner.' , input: 'Assist (blocking)' },
+      { name: 'Air Combo', description: 'Launch and juggle for aerial damage.'  },
+      { name: 'Team Edit', description: 'Create custom teams of 3 from the full roster.'  },
+      { name: 'Guts System', description: 'Damage reduction at low health.'  },
+      { name: 'Guard Cancel', description: 'Escape pressure with a counter.'  }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -2784,7 +3096,19 @@ rosterCount: 8,
 
 rosterCount: 16,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Ring Out', description: 'Break the barrier behind the opponent for a ring out KO.'  },
+      { name: 'Line System', description: 'Two-plane fighting with foreground and background.'  },
+      { name: 'Desperation Move', description: 'Super at low health.'  },
+      { name: 'Power Gauge', description: 'Build meter for supers.'  },
+      { name: 'Combination Arts', description: 'Chain normals into specials.'  },
+      { name: 'Breakshot', description: 'Counter-attack during blockstun.' , input: '6+C (blocking)' },
+      { name: 'Oversway', description: 'Dodge into the other plane.'  },
+      { name: 'Hidden Ability', description: 'Secret super with specific conditions.'  }
+    ],
+
+    characters: [
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
       { id: 'billy-kane', name: 'Billy Kane', moveCount: 0 },
       { id: 'blue-mary', name: 'Blue Mary', moveCount: 0 },
@@ -2823,7 +3147,19 @@ rosterCount: 16,
 
 rosterCount: 19,
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'Two Planes', description: 'Main line and sway line. Attack while transitioning.'  },
+      { name: 'Desperation Move', description: 'Super available at low health.'  },
+      { name: 'Power Gauge', description: 'Meter for supers and enhanced moves.'  },
+      { name: 'Breakshot', description: 'Guard cancel counter-attack.' , input: '6+C (blocking)' },
+      { name: 'Combination Arts', description: 'Normal chain combos.'  },
+      { name: 'Oversway Attack', description: 'Attack while switching planes.'  },
+      { name: 'Hidden Desperation', description: 'Secret super at critical health.'  },
+      { name: 'Quick Recovery', description: 'Fast getup from knockdowns.'  }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -2845,7 +3181,19 @@ rosterCount: 19,
 
 rosterCount: 19,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Ring Out Removed', description: 'No ring outs — replaced with wall bounces for combos.'  },
+      { name: 'Two Lines', description: 'Foreground/background plane system.'  },
+      { name: 'Desperation Move', description: 'Super at low health.'  },
+      { name: 'Power Gauge', description: 'Meter system for supers.'  },
+      { name: 'Breakshot', description: 'Counter from blockstun.'  },
+      { name: 'Combination Arts', description: 'Chain combo system.'  },
+      { name: 'Oversway', description: 'Plane switching with invincibility.'  },
+      { name: 'Hidden Ability', description: 'Secret super under specific conditions.'  }
+    ],
+
+    characters: [
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
       { id: 'billy-kane', name: 'Billy Kane', moveCount: 0 },
       { id: 'blue-mary', name: 'Blue Mary', moveCount: 0 },
@@ -3014,7 +3362,19 @@ rosterCount: 15,
 
 rosterCount: 11,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Slash/Bust', description: 'Choose Slash or Bust version of each character for different movesets.'  },
+      { name: 'Rage Gauge', description: 'Fills when hit. Full rage boosts damage.'  },
+      { name: 'Weapon Break', description: 'Disarm the opponent.'  },
+      { name: 'Deflect', description: 'Parry weapon attacks.'  },
+      { name: 'POW Special', description: 'Super at full rage.'  },
+      { name: 'Roll', description: 'Evasive roll.' , input: 'AB' },
+      { name: 'Pursuit', description: 'OTG attacks on downed opponents.'  },
+      { name: 'Short Hop', description: 'Quick hop for overheads.'  }
+    ],
+
+    characters: [
       { id: 'amakusa', name: 'Amakusa', moveCount: 0 },
       { id: 'basara', name: 'Basara', moveCount: 0 },
       { id: 'galford', name: 'Galford', moveCount: 0 },
@@ -3077,7 +3437,19 @@ rosterCount: 11,
 
 rosterCount: 19,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Rage Gauge', description: 'Builds from damage taken. Full rage = damage boost.'  },
+      { name: 'Rage Explosion', description: 'Once per match power-up with time limit.' , input: 'ABC' },
+      { name: 'Concentration One', description: 'Briefly slow time for precise counter-attacks.' , input: 'BCD' },
+      { name: 'Sword Gauge', description: 'Measures weapon durability. Depletes on clashes.'  },
+      { name: 'Weapon Disarm', description: 'Heavy hits can disarm the opponent.'  },
+      { name: 'Deflect', description: 'Counter weapon attacks.'  },
+      { name: 'Roll', description: 'Evasive dodge roll.' , input: 'AB' },
+      { name: 'State of Nothingness', description: 'Time slows down when activated at low health.'  }
+    ],
+
+    characters: [
       { id: 'basara', name: 'Basara', moveCount: 0 },
       { id: 'charlotte', name: 'Charlotte', moveCount: 0 },
       { id: 'enja', name: 'Enja', moveCount: 0 },
@@ -3119,7 +3491,19 @@ rosterCount: 19,
 
 rosterCount: 1,
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'Rage Gauge', description: 'Builds when taking damage.'  },
+      { name: 'Rage Explosion', description: 'Once per match burst for power-up.' , input: 'ABC' },
+      { name: 'Concentration One', description: 'Time-slow for punishes.' , input: 'BCD' },
+      { name: 'Overkill', description: 'Fatal finishing move. Ends the match with a violent KO animation.'  },
+      { name: 'Weapon Disarm', description: 'Knock away the opponent\'s weapon.'  },
+      { name: 'Deflect', description: 'Counter weapon attacks for openings.'  },
+      { name: 'Suicide', description: 'Forfeit the round to gain full meter next round.' , input: '214+BCD' },
+      { name: 'Mu no Kyouchi', description: 'State of Nothingness time-slow at critical health.'  }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -3175,7 +3559,19 @@ rosterCount: 11,
 
 rosterCount: 16,
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'Dream Finish', description: 'Matches can only be won with a Dream Finish super.'  },
+      { name: 'Tag System', description: 'Two characters. Tag freely mid-match.'  },
+      { name: 'Simple Controls', description: 'One-button specials. Direction + special button.'  },
+      { name: 'Spirit Gauge', description: 'Shared meter between both characters.'  },
+      { name: 'Items', description: 'Random items spawn that affect gameplay.'  },
+      { name: 'Guard', description: 'Hold back to block. No crouching block.'  },
+      { name: 'Support Attack', description: 'Call partner for assist.'  },
+      { name: 'Costume Customization', description: 'Customize character outfits and accessories.'  }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -3197,7 +3593,19 @@ rosterCount: 16,
 
 rosterCount: 37,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Groove System', description: 'SNK characters use KOF-style meter. Capcom characters use SF-style meter.'  },
+      { name: 'Exceed', description: 'Powerful super at low health. Different per-system.'  },
+      { name: 'MAX Mode', description: 'SNK groove power-up state for enhanced combos.'  },
+      { name: 'Guard Cancel', description: 'Counter from blockstun.'  },
+      { name: 'Front Step', description: 'Forward dash with varying properties.'  },
+      { name: 'GCF/GCA', description: 'Guard Cancel Front/Attack — escape options from block.'  },
+      { name: 'MIDNIGHT BLISS', description: 'Demitri\'s secret super transforms the opponent.'  },
+      { name: 'Roll', description: 'Invincible evasion roll.'  }
+    ],
+
+    characters: [
       { id: 'akuma', name: 'Akuma', moveCount: 0 },
       { id: 'athena', name: 'Athena', moveCount: 0 },
       { id: 'balrog', name: 'Balrog', moveCount: 0 },
@@ -3844,7 +4252,19 @@ rosterCount: 8,
 
 rosterCount: 23,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Baroque Cancel', description: 'Sacrifice red health to cancel any move. Damage scales with health sacrificed.' , input: 'A+B+C' },
+      { name: 'Mega Crash', description: 'Burst out of combos. Costs 2 bars and some health.' , input: 'All buttons' },
+      { name: 'Variable Air Raid', description: 'Air combo tag that brings in partner mid-aerial rave.'  },
+      { name: 'Hyper Combo', description: 'Super moves. DHC chains between partners.'  },
+      { name: 'Advancing Guard', description: 'Push opponent away while blocking.' , input: 'PP (blocking)' },
+      { name: 'Assists', description: 'Call partner for assist attacks.'  },
+      { name: 'Aerial Rave', description: 'Launch and air combo chains.'  },
+      { name: 'Giants', description: 'Some characters are giants that fight solo but have massive reach and health.'  }
+    ],
+
+    characters: [
       { id: 'alex', name: 'Alex', moveCount: 0 },
       { id: 'casshan', name: 'Casshan', moveCount: 0 },
       { id: 'chun-li', name: 'Chun-Li', moveCount: 0 },
@@ -4531,7 +4951,19 @@ rosterCount: 17,
 
 rosterCount: 12,
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'Speed/Power Mode', description: 'Choose Speed for chains or Power for big damage.'  },
+      { name: 'Deflect', description: 'Counter weapon attacks with precise timing.' , input: '6+D' },
+      { name: 'Super Desperation', description: 'Powerful super at low health.'  },
+      { name: 'Repel', description: 'Parry-style defense that creates openings.'  },
+      { name: 'Speed Combo', description: 'Chain attacks in Speed Mode for multi-hit combos.'  },
+      { name: 'Power Slash', description: 'Massive damage single hit in Power Mode.'  },
+      { name: 'Guard Cancel', description: 'Counter from blockstun.'  },
+      { name: 'Dash', description: 'Forward/backward dash for mobility.'  }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -4553,7 +4985,19 @@ rosterCount: 12,
 
 rosterCount: 19,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Speed/Power/EX Mode', description: 'Three modes: Speed for chains, Power for damage, EX for balanced.'  },
+      { name: 'Deflect', description: 'Counter weapon strikes.' , input: '6+D' },
+      { name: 'Super Desperation', description: 'Devastating super at critical health.'  },
+      { name: 'Repel', description: 'Parry for counter opportunities.'  },
+      { name: 'Speed Combo', description: 'Rapid chains in Speed Mode.'  },
+      { name: 'Power Slash', description: 'Heavy damage in Power Mode.'  },
+      { name: 'EX Mode', description: 'Combines Speed chains and Power damage at reduced levels.'  },
+      { name: 'Guard Cancel', description: 'Counter-attack from block.'  }
+    ],
+
+    characters: [
       { id: 'akari-ichijou', name: 'Akari Ichijou', moveCount: 0 },
       { id: 'awakened-kaede', name: 'Awakened Kaede', moveCount: 0 },
       { id: 'genbu-no-okina', name: 'Genbu no Okina', moveCount: 0 },
@@ -4762,7 +5206,19 @@ rosterCount: 41,
 
     platform: "Arcade, PC",
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'Dark Force', description: 'Character-specific power-up mode.' , input: 'PP+KK' },
+      { name: 'Chain Combo', description: 'Light-to-heavy normal chains.'  },
+      { name: 'ES Moves', description: 'Enhanced specials at meter cost.'  },
+      { name: 'EX Specials', description: 'Super moves at full meter.'  },
+      { name: 'Push Block', description: 'Push attacker away during block.' , input: 'PP (blocking)' },
+      { name: 'Air Block', description: 'Block while airborne.'  },
+      { name: 'Pursuit Attack', description: 'OTG on downed opponents.'  },
+      { name: 'Guard Cancel', description: 'Counter from blockstun.'  }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -4832,7 +5288,19 @@ rosterCount: 41,
 
     platform: "Arcade Sega Saturn PlayStation, PC",
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'Dark Force', description: 'Unique power-up per character.' , input: 'PP+KK' },
+      { name: 'Chain Combo', description: 'Light-to-heavy chains.'  },
+      { name: 'ES Moves', description: 'Enhanced specials.'  },
+      { name: 'EX Specials', description: 'Full-meter supers.'  },
+      { name: 'Push Block', description: 'Push opponent away when blocking.' , input: 'PP (blocking)' },
+      { name: 'Air Dash', description: 'Character-specific air mobility.'  },
+      { name: 'Tech Hit', description: 'Throw escape.'  },
+      { name: 'Pursuit', description: 'OTG attacks on downed foes.'  }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -5196,7 +5664,19 @@ rosterCount: 7,
 
 rosterCount: 18,
 
-        characters: [
+        
+    systemMechanics: [
+      { name: 'Tag System', description: 'First Capcom vs game with real-time tag between two characters.'  },
+      { name: 'Variable Assist', description: 'Call partner for assist attacks.'  },
+      { name: 'Aerial Rave', description: 'Launch and air combo with Magic Series.'  },
+      { name: 'Variable Counter', description: 'Tag in partner as a reversal while blocking.'  },
+      { name: 'Hyper Combo', description: 'Supers. DHC between partners.'  },
+      { name: 'Advancing Guard', description: 'Push opponent away during block.' , input: 'PP (blocking)' },
+      { name: 'Super Jump', description: 'High jump for air game.' , input: '2~8' },
+      { name: 'Infinite Combos', description: 'Many characters have infinite/loop combos — a feature, not a bug.'  }
+    ],
+
+    characters: [
       { id: 'akuma', name: 'Akuma', moveCount: 0 },
       { id: 'cammy', name: 'Cammy', moveCount: 0 },
       { id: 'charlie', name: 'Charlie', moveCount: 0 },
@@ -5237,7 +5717,19 @@ rosterCount: 18,
 
 rosterCount: 12,
 
-        characters: [],
+        
+    systemMechanics: [
+      { name: 'X-Power', description: 'Super moves costing Hyper X gauge.'  },
+      { name: 'Super Jump', description: 'Very high jump for extended aerial combat.' , input: '2~8' },
+      { name: 'Aerial Rave', description: 'Air combos with Magic Series chains.'  },
+      { name: 'X-Ability', description: 'Character-specific mutant powers.'  },
+      { name: 'Chain Combo', description: 'Light-to-heavy normal chains.'  },
+      { name: 'Advancing Guard', description: 'Push block.' , input: 'PP (blocking)' },
+      { name: 'OTG', description: 'Off-the-ground hits on downed opponents.'  },
+      { name: 'Infinity Gems', description: 'Collect gems for temporary power boosts.'  }
+    ],
+
+    characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -6870,6 +7362,18 @@ rosterCount: 8,
     releaseYear: 1997,
     platform: 'Arcade, PlayStation, PC',
     rosterCount: 20,
+    
+    systemMechanics: [
+      { name: 'Team-Up Attack', description: 'Call your partner for a powerful two-person attack.' , input: 'HP+HK' },
+      { name: 'Burning Vigor', description: 'Meter powering supers and team attacks.'  },
+      { name: 'Tardy Counter', description: 'Counter from blockstun using partner assist.'  },
+      { name: 'Air Combo', description: 'Launch opponents for aerial follow-ups.'  },
+      { name: 'Team Edit', description: 'Choose 2 characters to form a team.'  },
+      { name: 'Text Adventure', description: 'Single-player mode with branching story and school sim elements.'  },
+      { name: 'Guard Cancel', description: 'Counter-attack during block.'  },
+      { name: 'Guts System', description: 'Reduced damage at low health for comebacks.'  }
+    ],
+
     characters: [
       { id: 'batsu-ichimonji', name: 'Batsu Ichimonji', moveCount: 0 },
       { id: 'hinata-wakaba', name: 'Hinata Wakaba', moveCount: 0 },
@@ -6959,6 +7463,18 @@ rosterCount: 8,
     releaseYear: 2005,
     platform: 'Arcade, PlayStation 2, PC',
     rosterCount: 40,
+    
+    systemMechanics: [
+      { name: 'Tag System', description: 'Two-character teams with real-time tag.'  },
+      { name: 'D-Assault', description: 'Partner team attack. Both characters strike together.'  },
+      { name: 'GCFS', description: 'Guard Cancel Front Step — dash out of blockstun.'  },
+      { name: 'Just Defend', description: 'Tap back on impact for reduced blockstun.' , input: '4 (precise)' },
+      { name: 'Guard Cancel Roll', description: 'Roll out of block pressure.'  },
+      { name: 'Double Assault', description: 'Ultimate team super using both characters.' , input: 'ABC' },
+      { name: 'Crossover', description: 'Tag mid-combo for extensions.'  },
+      { name: 'Front Step', description: 'Forward dash with invincibility frames.'  }
+    ],
+
     characters: [],
     tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
   },
