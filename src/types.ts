@@ -15,6 +15,8 @@ export interface Move {
   input: string;
   frameData?: FrameData;
   parentMoveId?: string;
+  damage?: string;
+  notes?: string;
 }
 
 export interface PlaylistItem {
@@ -29,7 +31,7 @@ export interface CharacterExport {
   ramId?: string | number;
   theme_colors: { special: string, super_fatality: string, normal: string };
   movesList: Move[];
-  combosList: { id: string, name: string, input: string }[];
+  combosList: { id: string, name: string, input: string, damage?: string, notes?: string }[];
 }
 
 export const CARD_THEMES = ['auto', 'default-dark', 'default-light', 'genesis', 'sf2gen', 'snes', 'cps2', 'mvs', 'aes', 'mvscab', 'cps2cab', 'sfami', 'tekken', 'sf6-layout', '3s-layout', 'mvc2-layout', 'samsho-layout', 'kof-layout', 'vampire-layout', 'vf-layout'] as const;

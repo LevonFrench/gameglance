@@ -44,7 +44,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
   }, []);
 
   useEffect(() => {
-    const GLOBAL_DEFAULT_SORT = ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves'];
+    const GLOBAL_DEFAULT_SORT = ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves', 'Combos'];
     const stored = localStorage.getItem('fgc_tab_order');
     let pref = GLOBAL_DEFAULT_SORT;
     if (stored) {
@@ -100,6 +100,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     'Moves':          (d) => d.movesList || [],
     'Combos':         (d) => (d.combosList || []).map(c => ({
       id: c.id, name: c.name, type: 'normal' as const, input: c.input, frameData: {},
+      damage: c.damage, notes: c.notes
     })),
     'Fatalities':     (d) => (d.movesList || []).filter(m => m.type === 'super'),
     'Finishers':      (d) => (d.movesList || []).filter(m => m.type === 'finisher'),
@@ -650,13 +651,34 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
 
                                 <div style={{
                                   display: 'flex',
-                                  alignItems: 'center',
+                                  flexDirection: 'column',
+                                  gap: '0.75rem',
                                   background: 'rgba(0,0,0,0.4)',
                                   padding: '0.75rem',
                                   borderRadius: '12px',
                                   border: '1px inset rgba(255,255,255,0.05)',
                                 }}>
                                   <GlyphSequence inputs={[move.input]} controller={effectiveController} notationSystem={notationSystem || game.notationSystem} />
+                                  {(move.damage || move.notes) && (
+                                    <div style={{
+                                      display: 'flex',
+                                      flexDirection: 'column',
+                                      gap: '0.25rem',
+                                      paddingTop: '0.5rem',
+                                      borderTop: '1px solid rgba(255,255,255,0.1)',
+                                    }}>
+                                      {move.damage && move.damage !== 'Anywhere' && (
+                                        <div style={{ fontSize: '0.85rem', color: 'var(--text-secondary)' }}>
+                                          <span style={{ fontWeight: 600 }}>Position:</span> {move.damage}
+                                        </div>
+                                      )}
+                                      {move.notes && (
+                                        <div style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', fontStyle: 'italic' }}>
+                                          {move.notes}
+                                        </div>
+                                      )}
+                                    </div>
+                                  )}
                                 </div>
                               </div>
                             </div>
