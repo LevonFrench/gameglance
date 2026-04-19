@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 import { resolve } from 'path'
@@ -26,7 +27,7 @@ const adminApiPlugin = () => ({
             if (action === 'approve') {
               const charPath = resolve(__dirname, `public/data/${item.gameId}/${item.characterId}.json`);
               if (fs.existsSync(charPath)) {
-                let charData = JSON.parse(fs.readFileSync(charPath, 'utf8'));
+                const charData = JSON.parse(fs.readFileSync(charPath, 'utf8'));
                 if (item.listType === 'combos') {
                   if (!charData.combosList) charData.combosList = [];
                   charData.combosList.push(item.move);

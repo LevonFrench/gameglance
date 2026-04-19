@@ -2678,7 +2678,7 @@ rosterCount: 24,
 
     notationSystem: 'mk',
     name: "Mortal Kombat 1",
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves'],
+    tabs: ['Special Moves', 'Finishers', 'Normal Moves', 'Throws', 'Combos', 'System'],
     tagline: "It's In Our Blood",
 
     developer: "NetherRealm Studios",
@@ -2692,8 +2692,7 @@ rosterCount: 25,
             tags: ['3D', 'Modern'],
 
     characters: [
-      { id: 'ashrah', name: 'Ashrah',
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves'], moveCount: 0 },
+      { id: 'ashrah', name: 'Ashrah', moveCount: 0 },
       { id: 'baraka', name: 'Baraka', moveCount: 0 },
       { id: 'geras', name: 'Geras', moveCount: 0 },
       { id: 'havik', name: 'Havik', moveCount: 0 },
@@ -2730,7 +2729,7 @@ rosterCount: 25,
       { id: 't-1000', name: 'T-1000', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
 
   },
 
@@ -2766,7 +2765,7 @@ rosterCount: 14,
 
     notationSystem: 'mk',
     name: "Mortal Kombat X",
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves'],
+    tabs: ['Special Moves', 'Finishers', 'Normal Moves', 'Throws', 'Combos', 'System'],
     tagline: "Who's Next?",
 
     developer: "NetherRealm Studios",
@@ -2778,8 +2777,7 @@ rosterCount: 14,
 rosterCount: 32,
 
         characters: [
-      { id: 'alien', name: 'Alien',
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves'], moveCount: 0 },
+      { id: 'alien', name: 'Alien', moveCount: 0 },
       { id: 'cassie-cage', name: 'Cassie Cage', moveCount: 0 },
       { id: 'ermac', name: 'Ermac', moveCount: 0 },
       { id: 'erron-black', name: 'Erron Black', moveCount: 0 },
@@ -2811,7 +2809,7 @@ rosterCount: 32,
       { id: 'tremor', name: 'Tremor', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
 
   },
 
@@ -6345,13 +6343,11 @@ rosterCount: 8,
     platform: "Arcade, PS1, N64, PC",
     notationSystem: 'mk',
     name: "Mortal Kombat 4",
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves'],
     tagline: "Even Your Soul is Not Safe",
     isDraft: true,
     rosterCount: 18,
     characters: [
-      { id: 'fujin', name: 'Fujin',
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves'], moveCount: 0 },
+      { id: 'fujin', name: 'Fujin', moveCount: 0 },
       { id: 'goro', name: 'Goro', moveCount: 0 },
       { id: 'jarek', name: 'Jarek', moveCount: 0 },
       { id: 'jax', name: 'Jax', moveCount: 0 },
@@ -6394,13 +6390,11 @@ rosterCount: 8,
     platform: "PS2, Xbox, Wii, PC",
     notationSystem: 'mk',
     name: "Mortal Kombat: Armageddon",
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves'],
     tagline: "The End is Near",
     isDraft: true,
     rosterCount: 63,
     characters: [
-      { id: 'ashrah', name: 'Ashrah',
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves'], moveCount: 0 },
+      { id: 'ashrah', name: 'Ashrah', moveCount: 0 },
       { id: 'baraka', name: 'Baraka', moveCount: 0 },
       { id: 'blaze', name: 'Blaze', moveCount: 0 },
       { id: 'chameleon', name: 'Chameleon', moveCount: 0 },
@@ -6473,15 +6467,14 @@ rosterCount: 8,
     platform: "PS4, Xbox One, Switch, PC",
     notationSystem: 'mk',
     name: "Mortal Kombat 11",
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves'],
+    tabs: ['Special Moves', 'Finishers', 'Normal Moves', 'Throws', 'Combos', 'System'],
     tagline: "You're Next",
     isDraft: true,
     rosterCount: 37,
         tags: ['3D'],
 
     characters: [
-      { id: 'ashrah', name: 'Ashrah',
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves'], moveCount: 0 },
+      { id: 'ashrah', name: 'Ashrah', moveCount: 0 },
       { id: 'baraka', name: 'Baraka', moveCount: 0 },
       { id: 'geras', name: 'Geras', moveCount: 0 },
       { id: 'havik', name: 'Havik', moveCount: 0 },
@@ -6517,7 +6510,7 @@ rosterCount: 8,
       { id: 'conan', name: 'Conan', moveCount: 0 },
       { id: 't-1000', name: 'T-1000', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+
   },
   {
     id: 'samurai-shodown-iv-amakusas-revenge',
@@ -7878,7 +7871,7 @@ rosterCount: 8,
     platform: 'PlayStation 3, Xbox 360, PC',
     rosterCount: 25,
     characters: [],
-    tabs: ['Finishers', 'Special Moves', 'Heroic Brutality', 'Fatality', 'Super Combos', 'Normal Moves', 'Throws', 'Unique Attacks']
+    tabs: ['Special Moves', 'Heroic Brutality', 'Fatality', 'Super Combos', 'Normal Moves', 'Throws', 'Unique Attacks']
   }
   ,
   {

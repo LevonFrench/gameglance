@@ -22,14 +22,14 @@ export function useFightcadeSync() {
   const connect = async () => {
     try {
       // Prompt user to select directory
-      // @ts-ignore
+      // @ts-expect-error File System Access API
       const handle = await window.showDirectoryPicker({
         mode: 'read',
       });
       setDirHandle(handle);
       setSyncState(prev => ({ ...prev, connected: true, error: null }));
-    } catch (e: any) {
-      if (e.name !== 'AbortError') {
+    } catch (e: unknown) {
+      if (e instanceof Error && e.name !== 'AbortError') {
         setSyncState(prev => ({ ...prev, error: e.message || 'Failed to connect to directory' }));
       }
     }
@@ -74,9 +74,9 @@ export function useFightcadeSync() {
           };
         });
       }
-    } catch (e: any) {
+    } catch (e: unknown) {
       // It's possible the file doesn't exist yet, just ignore NotFoundError
-      if (e.name !== 'NotFoundError') {
+      if (e instanceof Error && e.name !== 'NotFoundError') {
         console.error('Error polling Fightcade log:', e);
       }
     }
