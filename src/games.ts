@@ -5159,6 +5159,17 @@ rosterCount: 41,
 
             tags: ['Anime', '2D', 'Modern'],
 
+    systemMechanics: [
+      { name: 'GRD (Grind Grid)', description: 'Tug-of-war meter at the bottom of the screen. Win the cycle to gain Vorpal.' },
+      { name: 'Vorpal State', description: 'Gained by winning the GRD cycle. Increases damage by 10% and enables Chain Shift.' },
+      { name: 'Chain Shift', description: 'Convert GRD into EXS meter and pause time. Can be used to cancel attacks or extend combos.', input: 'D (x2)' },
+      { name: 'Veil Off', description: 'Burst-like mechanic that pushes the opponent away, boosts damage by 20%, and allows free EX moves.', input: 'A+B+C' },
+      { name: 'Passing Link', description: 'Freeform normal chaining system allowing reverse-beats (Heavy to Light).' },
+      { name: 'Assault', description: 'A fast forward-moving hop attack.', input: '6D' },
+      { name: 'Smart Steer', description: 'Auto-combo triggered by repeatedly pressing A.', input: 'A (repeatedly)' },
+      { name: 'Creeping Edge', description: 'Forward dodge that gains GRD but is vulnerable to throws.', input: '3D' }
+    ],
+
     characters: [
       { id: 'hyde', name: 'Hyde', moveCount: 0 },
       { id: 'linne', name: 'Linne', moveCount: 0 },
