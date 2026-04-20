@@ -102,10 +102,21 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
         result.push(processingT);
         continue;
       }
-      if (processingT.startsWith('dj.')) { prefix = 'dj.'; processingT = processingT.substring(3); }
-      else if (processingT.startsWith('j.')) { prefix = 'j.'; processingT = processingT.substring(2); }
+      if (processingT.startsWith('en.j.')) { prefix = 'en.j.'; processingT = processingT.substring(5); }
+      else if (processingT.startsWith('btj.')) { prefix = 'btj.'; processingT = processingT.substring(4); }
+      else if (processingT.startsWith('dj.')) { prefix = 'dj.'; processingT = processingT.substring(3); }
       else if (processingT.startsWith('cr.')) { prefix = 'cr.'; processingT = processingT.substring(3); }
       else if (processingT.startsWith('st.')) { prefix = 'st.'; processingT = processingT.substring(3); }
+      else if (processingT.startsWith('en.')) { prefix = 'en.'; processingT = processingT.substring(3); }
+      else if (processingT.startsWith('wf.')) { prefix = 'wf.'; processingT = processingT.substring(3); }
+      else if (processingT.startsWith('rc.')) { prefix = 'rc.'; processingT = processingT.substring(3); }
+      else if (processingT.startsWith('rf.')) { prefix = 'rf.'; processingT = processingT.substring(3); }
+      else if (processingT.startsWith('bt.')) { prefix = 'bt.'; processingT = processingT.substring(3); }
+      else if (processingT.startsWith('j.')) { prefix = 'j.'; processingT = processingT.substring(2); }
+      else if (processingT.startsWith('c.')) { prefix = 'c.'; processingT = processingT.substring(2); }
+      else if (processingT.startsWith('f.')) { prefix = 'f.'; processingT = processingT.substring(2); }
+      else if (processingT.startsWith('r.')) { prefix = 'r.'; processingT = processingT.substring(2); }
+      else if (processingT.startsWith('w.')) { prefix = 'w.'; processingT = processingT.substring(2); }
 
       const cleanT = processingT.replace(/\[|\]/g, ''); // Remove charge brackets for parsing
 
@@ -239,12 +250,25 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
       );
     }
 
-    if (input === 'j.' || input === 'cr.' || input === 'st.') {
-      const textMap: Record<string, string> = {
-        'j.': 'IN AIR',
-        'cr.': 'CROUCH',
-        'st.': 'STAND'
-      };
+    const prefixMap: Record<string, string> = {
+      'j.': 'IN AIR',
+      'cr.': 'CROUCH',
+      'st.': 'STAND',
+      'dj.': 'D. JUMP',
+      'en.': 'ENHANCED',
+      'en.j.': 'EN. AIR',
+      'c.': 'CLOSE',
+      'f.': 'FAR',
+      'wf.': 'W. FREE',
+      'bt.': 'BACKTURN',
+      'btj.': 'BT AIR',
+      'rc.': 'ROPE (C)',
+      'rf.': 'ROPE (F)',
+      'r.': 'ROPE',
+      'w.': 'WALL',
+    };
+
+    if (input in prefixMap) {
       return (
         <div
           key={idx}
@@ -261,7 +285,7 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
             ...styleOverrides
           }}
         >
-          {textMap[input]}
+          {prefixMap[input]}
         </div>
       );
     }
