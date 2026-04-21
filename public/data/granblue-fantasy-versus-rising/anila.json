@@ -1,66 +1,862 @@
 {
+  "name": "Anila",
+  "character": "anila",
   "game": "Granblue Fantasy Versus: Rising",
-  "character": "Anila",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
-      "input": "P"
-    },
-    {
-      "id": "special-attack",
-      "name": "Special Attack",
-      "type": "special",
-      "input": "236P"
-    },
-    {
-      "id": "n_0",
+      "id": "fc6d43b7-d78e-45c1-abee-cd29438b92db",
       "name": "Light Attack",
-      "type": "normal",
-      "input": "L"
+      "input": "L",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_1",
+      "id": "cb8ae9d2-2162-46cd-b3fe-2e91a699577e",
       "name": "Medium Attack",
-      "type": "normal",
-      "input": "M"
+      "input": "M",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_2",
+      "id": "00582791-a294-4586-b7f5-903e4e6eb04e",
       "name": "Heavy Attack",
-      "type": "normal",
-      "input": "H"
+      "input": "H",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_3",
+      "id": "4290dbf1-1c1f-4030-bcf5-08cd34d50c72",
       "name": "Unique Action",
-      "type": "normal",
-      "input": "U"
+      "input": "U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_4",
+      "id": "c2f5be2a-cc36-40fb-b805-260c20085afa",
       "name": "Skill",
-      "type": "normal",
-      "input": "S"
+      "input": "S",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_5",
+      "id": "fdfc9be8-2c97-4db8-93df-1ae8c3f6e3a3",
       "name": "Guard",
-      "type": "normal",
-      "input": "G"
+      "input": "G",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "t_0",
+      "id": "d1ea93b0-22fc-4963-b8c0-54cbdd7cc097",
       "name": "Forward Throw",
-      "type": "throw",
-      "input": "L+U"
+      "input": "L+U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "t_1",
+      "id": "8830b35d-7695-4276-ac7e-2678cfda9430",
       "name": "Back Throw",
-      "type": "throw",
-      "input": "4L+U"
+      "input": "4L+U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "3f621b60-a55b-4e63-a779-c47a1c6a6f9c",
+      "name": "Crouching Heavy",
+      "input": "2H",
+      "damage": "1300",
+      "frameData": {
+        "startup": "11",
+        "active": "6",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "752b9ea0-33a5-4598-858e-424814ac84eb",
+      "name": "Crouching Light",
+      "input": "2L",
+      "damage": "400",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "10",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "bd97809a-5408-4249-81e4-7a649fabd785",
+      "name": "Crouching Medium",
+      "input": "2M",
+      "damage": "900",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "9f746d10-e6a1-4627-a69f-6f5892b9b8bb",
+      "name": "Crouching Unique",
+      "input": "2U",
+      "damage": "1000",
+      "frameData": {
+        "startup": "13",
+        "active": "8",
+        "recovery": "25",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "01661583-10d5-49e6-9bb2-96a6b4b271e8",
+      "name": "Dash Heavy",
+      "input": "66H",
+      "damage": "1500",
+      "frameData": {
+        "startup": "15",
+        "active": "8",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "7-22 Low Crush",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "982393d1-9e24-451c-9705-663303896639",
+      "name": "Dash Light",
+      "input": "66L",
+      "damage": "600",
+      "frameData": {
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "befe016b-eabf-4b39-8131-3214a50efaa3",
+      "name": "Dash Medium",
+      "input": "66M",
+      "damage": "1100",
+      "frameData": {
+        "startup": "12",
+        "active": "4",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "7659c087-9f8d-42f8-8918-74d7903e5b65",
+      "name": "Close Heavy",
+      "input": "c.H",
+      "damage": "1000, 600",
+      "frameData": {
+        "startup": "9",
+        "active": "2,3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "fe3d70e6-4584-483b-967a-2f6a87c90786",
+      "name": "Close Light",
+      "input": "c.L",
+      "damage": "600",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "6",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "8fd1c1f3-3922-4332-8ec1-3585aa980967",
+      "name": "Close Medium",
+      "input": "c.M",
+      "damage": "1100",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "14",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "fa244d88-4c06-4460-b80e-0c7f6a20e08e",
+      "name": "Double Attack",
+      "input": "c.XX",
+      "damage": "700",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "3b50ca13-5f41-414d-ae8b-241e8ec41b56",
+      "name": "Triple Attack (Overhead)",
+      "input": "c.XX6H",
+      "damage": "1000",
+      "frameData": {
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "1-20 Throw",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "c9288fc0-2d15-4f7b-b77a-3daf64b285af",
+      "name": "Triple Attack (Low)",
+      "input": "c.XX6M",
+      "damage": "1000",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "ca22cb37-7b68-449a-aafd-b73a3d670548",
+      "name": "Triple Attack",
+      "input": "c.XXX",
+      "damage": "1000",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "b68315ce-6f16-4f1e-be6a-eb884f66d0fa",
+      "name": "Far Heavy",
+      "input": "f.H",
+      "damage": "1300",
+      "frameData": {
+        "startup": "10",
+        "active": "5",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "25a8b38c-3a2d-4027-9260-1787b8df5762",
+      "name": "Far Light",
+      "input": "f.L",
+      "damage": "600",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "9",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "3d32787e-181f-4876-a8ad-f3f90722c823",
+      "name": "Far Medium",
+      "input": "f.M",
+      "damage": "900",
+      "frameData": {
+        "startup": "9",
+        "active": "5",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "421b13ba-de98-4ed0-995e-ff7ed10ee128",
+      "name": "Jumping Heavy",
+      "input": "j.H",
+      "damage": "1000",
+      "frameData": {
+        "startup": "8",
+        "active": "6",
+        "recovery": "Until L+1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "9b7afe45-7896-4862-ade7-b59e2f0fa711",
+      "name": "Jumping Light",
+      "input": "j.L",
+      "damage": "400, 100×5",
+      "frameData": {
+        "startup": "5",
+        "active": "6×6",
+        "recovery": "Until L+1",
+        "advantage": "-"
+      },
+      "guard": "High/Air, All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "5030faed-e422-4cd2-bb1b-33b7dcf03ccb",
+      "name": "Jumping Medium",
+      "input": "j.M",
+      "damage": "700",
+      "frameData": {
+        "startup": "7",
+        "active": "6",
+        "recovery": "Until L+1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "50081b26-b6da-426a-ba2e-acc6e9f2a8fd",
+      "name": "Jumping Unique",
+      "input": "j.U",
+      "damage": "900",
+      "frameData": {
+        "startup": "7",
+        "active": "9",
+        "recovery": "Until L+1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "b3c66280-895d-4ae1-9bbd-cf1ec75b528c",
+      "name": "Air Throw",
+      "input": "j.LU",
+      "damage": "2500",
+      "frameData": {
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+5",
+        "advantage": "-"
+      },
+      "guard": "Airthrow",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "e97a6da1-dd8d-4127-afcb-d2d9c1f6d2de",
+      "name": "Brave Counter",
+      "input": "BC",
+      "damage": "500",
+      "frameData": {
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-20 Full [1-54 Full]",
+      "type": "System"
+    },
+    {
+      "id": "9caddb3e-dda2-4a00-ba48-9833d9e7cc9e",
+      "name": "Follow-Up",
+      "input": "5UU",
+      "damage": "500",
+      "frameData": {
+        "startup": "11",
+        "active": "5",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "ddd44b91-f0c5-40e4-9c8b-1a44dcb1a798",
+      "name": "Fury of the Ram",
+      "input": "236236U",
+      "damage": "3000, 120×20, 600<br>[1500, 500×5]",
+      "frameData": {
+        "startup": "8+6",
+        "active": "10",
+        "recovery": "38",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-15 Full, 16-23 Strike",
+      "type": "Skybound Arts"
+    },
+    {
+      "id": "91a534c5-8d70-4445-b4fc-9cbdba857869",
+      "name": "Gilded Heaven Strike",
+      "input": "236236H",
+      "damage": "1000, 350×10<br>[1000, 250×10]",
+      "frameData": {
+        "startup": "5+9",
+        "active": "6",
+        "recovery": "44",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-24 Full",
+      "type": "Skybound Arts"
+    },
+    {
+      "id": "63f73886-37f1-4250-b02b-c9341bcc4573",
+      "name": "Ground Throw",
+      "input": "LU",
+      "damage": "2500",
+      "frameData": {
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "e28e1ed7-da72-4182-bc13-0b282055e7fb",
+      "name": "H All is Vanity",
+      "input": "623H",
+      "damage": "1500",
+      "frameData": {
+        "startup": "11",
+        "active": "6",
+        "recovery": "35",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-16 Full",
+      "type": "Special Moves"
+    },
+    {
+      "id": "85fc6ed6-af00-4f54-a74f-1748e10077cf",
+      "name": "H And Beyond!",
+      "input": "214H~4X",
+      "damage": "1100",
+      "frameData": {
+        "startup": "7",
+        "active": "18",
+        "recovery": "Total 43",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "1a4f1a90-5312-4b2b-a593-45b2db9a8457",
+      "name": "H Flock to the Future",
+      "input": "214H",
+      "damage": "1300",
+      "frameData": {
+        "startup": "13",
+        "active": "18",
+        "recovery": "26 [15]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "1fece8cc-4810-446d-b15c-7f2fee32678d",
+      "name": "H Fluff 'Em, Stuff 'Em!",
+      "input": "236H",
+      "damage": "400×3",
+      "frameData": {
+        "startup": "16",
+        "active": "",
+        "recovery": "Total 47",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "625faaf7-c7d6-4130-884e-c9e84caabcda",
+      "name": "H Over the Fence",
+      "input": "22H",
+      "damage": "",
+      "frameData": {
+        "startup": "23",
+        "active": "",
+        "recovery": "Until L+4",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "b71a52b2-fc03-4227-8c8c-644bacfaafa3",
+      "name": "L All is Vanity",
+      "input": "623L",
+      "damage": "1000",
+      "frameData": {
+        "startup": "6",
+        "active": "6",
+        "recovery": "31",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "0b300969-b8db-45ff-92af-1cfa2b4e6ed8",
+      "name": "L And Beyond!",
+      "input": "214L~4X",
+      "damage": "700",
+      "frameData": {
+        "startup": "9",
+        "active": "16",
+        "recovery": "Total 46",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "e71d0306-beb3-4e10-886e-bbbebe4fefbb",
+      "name": "L Flock to the Future",
+      "input": "214L",
+      "damage": "900",
+      "frameData": {
+        "startup": "12",
+        "active": "18",
+        "recovery": "20 [15]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "064dd3fe-765e-4c33-b23a-3c513f75ad69",
+      "name": "L Fluff 'Em, Stuff 'Em!",
+      "input": "236L",
+      "damage": "800",
+      "frameData": {
+        "startup": "17",
+        "active": "",
+        "recovery": "Total 52",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "7fe52452-753b-4200-8f64-6abae0e583f6",
+      "name": "L Over the Fence",
+      "input": "22L",
+      "damage": "",
+      "frameData": {
+        "startup": "16",
+        "active": "",
+        "recovery": "Until L+4",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "a66598db-f303-48bf-b97d-d86d40ae15c5",
+      "name": "M All is Vanity",
+      "input": "623M",
+      "damage": "1100",
+      "frameData": {
+        "startup": "12",
+        "active": "6",
+        "recovery": "38",
+        "advantage": "-"
+      },
+      "guard": "Mid, All",
+      "invuln": "1-12 Full",
+      "type": "Special Moves"
+    },
+    {
+      "id": "99a497d6-2cb0-4bbc-b7c9-7d75c9f09019",
+      "name": "M And Beyond!",
+      "input": "214M~4X",
+      "damage": "1100",
+      "frameData": {
+        "startup": "9",
+        "active": "",
+        "recovery": "Total 46",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "6aac887b-051c-4f68-a926-372913d4d15f",
+      "name": "M Flock to the Future",
+      "input": "214M",
+      "damage": "1300",
+      "frameData": {
+        "startup": "26",
+        "active": "24",
+        "recovery": "16 [15]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "b3dc173e-46a4-4865-9679-bc2f9a103c26",
+      "name": "M Fluff 'Em, Stuff 'Em!",
+      "input": "236M",
+      "damage": "800",
+      "frameData": {
+        "startup": "17",
+        "active": "",
+        "recovery": "Total 52",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "42ffa2ad-8437-45c9-a0bc-113841edd133",
+      "name": "M Over the Fence",
+      "input": "22M",
+      "damage": "",
+      "frameData": {
+        "startup": "26",
+        "active": "",
+        "recovery": "Until L+4",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "cf3e5031-d809-45c4-9005-3c1baa965398",
+      "name": "Raging Chain",
+      "input": "MH~MH",
+      "damage": "1000",
+      "frameData": {
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "01c0e49c-7ba7-409a-b538-944584855a2b",
+      "name": "Raging Strike",
+      "input": "MH",
+      "damage": "1500",
+      "frameData": {
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "advantage": "-"
+      },
+      "guard": "Guard Crush 45 [52]",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "8977fcba-e46b-40b8-8cb6-7900cbc9ea7c",
+      "name": "Ramification",
+      "input": "5U",
+      "damage": "200×4",
+      "frameData": {
+        "startup": "19",
+        "active": "1(11)1(12)1(11)1",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "fe8d2bbb-e792-4c33-ad7c-9f3d3473dce5",
+      "name": "Ultimate All is Vanity",
+      "input": "623U",
+      "damage": "1000, 100, 150×6",
+      "frameData": {
+        "startup": "<span class=\"tooltip\" >8<span class=\"tooltiptext\" style=\"\">True Startup:<br>13</span></span>",
+        "active": "6 [3]",
+        "recovery": "35 [28]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-10 Full",
+      "type": "Special Moves"
+    },
+    {
+      "id": "a5a8edcc-906c-4959-b285-8436d837ab3d",
+      "name": "Ultimate Flock to the Future",
+      "input": "236U",
+      "damage": "800×3",
+      "frameData": {
+        "startup": "<span class=\"tooltip\" >16<span class=\"tooltiptext\" style=\"\">True Startup:<br>29</span></span>",
+        "active": "63/62/51",
+        "recovery": "Total 65",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "d0ae5d59-8e9c-42c1-8fdf-5766667d73ec",
+      "name": "Ultimate Fluff 'Em, Stuff 'Em!",
+      "input": "214U",
+      "damage": "1100×2",
+      "frameData": {
+        "startup": "<span class=\"tooltip\" >11<span class=\"tooltiptext\" style=\"\">True Startup:<br>19</span></span>",
+        "active": "14((8)P)",
+        "recovery": "(Total 45) [15]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "8e22294f-a81a-4484-ba56-c473ede2fe4f",
+      "name": "Ultimate Over the Fence",
+      "input": "22U",
+      "damage": "1100×2",
+      "frameData": {
+        "startup": "<span class=\"tooltip\" >22<span class=\"tooltiptext\" style=\"\">True Startup:<br>37</span></span>",
+        "active": "5,2",
+        "recovery": "15 [28]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
     }
   ]
 }

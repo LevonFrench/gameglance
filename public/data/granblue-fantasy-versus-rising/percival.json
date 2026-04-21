@@ -1,66 +1,937 @@
 {
+  "name": "Percival",
+  "character": "percival",
   "game": "Granblue Fantasy Versus: Rising",
-  "character": "Percival",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
-      "input": "P"
-    },
-    {
-      "id": "special-attack",
-      "name": "Special Attack",
-      "type": "special",
-      "input": "236P"
-    },
-    {
-      "id": "n_0",
+      "id": "98b1c635-dabb-4cb4-96cd-32e17cbe866b",
       "name": "Light Attack",
-      "type": "normal",
-      "input": "L"
+      "input": "L",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_1",
+      "id": "555003fb-8e61-42b4-911a-ef52a7970954",
       "name": "Medium Attack",
-      "type": "normal",
-      "input": "M"
+      "input": "M",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_2",
+      "id": "21f5f61e-0483-4d1a-b6f2-1600ecdfee7b",
       "name": "Heavy Attack",
-      "type": "normal",
-      "input": "H"
+      "input": "H",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_3",
+      "id": "69709dda-743a-4f5e-8c9d-43350cb1d3b5",
       "name": "Unique Action",
-      "type": "normal",
-      "input": "U"
+      "input": "U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_4",
+      "id": "462a9b2a-495a-40c4-b424-f1b495467546",
       "name": "Skill",
-      "type": "normal",
-      "input": "S"
+      "input": "S",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_5",
+      "id": "c8b24ef4-96fa-474f-b0d1-a290f71b5a84",
       "name": "Guard",
-      "type": "normal",
-      "input": "G"
+      "input": "G",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "t_0",
+      "id": "8d80d9a6-a023-42b7-9ffa-db3dd1604177",
       "name": "Forward Throw",
-      "type": "throw",
-      "input": "L+U"
+      "input": "L+U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "t_1",
+      "id": "01cb490d-9a2f-4ba1-8282-ac8efc66cc0e",
       "name": "Back Throw",
-      "type": "throw",
-      "input": "4L+U"
+      "input": "4L+U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "a8edebad-cef9-4b7d-bdf5-830ba832a825",
+      "name": "Crouching Heavy",
+      "input": "2H",
+      "damage": "1300",
+      "frameData": {
+        "startup": "11",
+        "active": "5",
+        "recovery": "24",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "7e407302-e719-48d5-a6d2-13e2b6619340",
+      "name": "Crouching Light",
+      "input": "2L",
+      "damage": "400",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "10",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "05f3bea4-bbc8-44a6-867c-e63191b5a074",
+      "name": "Crouching Medium",
+      "input": "2M",
+      "damage": "900",
+      "frameData": {
+        "startup": "7",
+        "active": "5",
+        "recovery": "13",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "0bf280a4-8bf1-4d6c-acd4-cc9493683201",
+      "name": "Crouching Unique",
+      "input": "2U",
+      "damage": "1000",
+      "frameData": {
+        "startup": "7",
+        "active": "6",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "fcd7890f-9ee4-458c-bcbd-7d03b1ec8a42",
+      "name": "Dash Heavy",
+      "input": "66H",
+      "damage": "1200",
+      "frameData": {
+        "startup": "20",
+        "active": "3",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "73cb7c1d-7700-4713-b4aa-7616a8189c1f",
+      "name": "Dash Light",
+      "input": "66L",
+      "damage": "600",
+      "frameData": {
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "51eba952-138d-419f-9048-b8a1c1e77d2c",
+      "name": "Dash Medium",
+      "input": "66M",
+      "damage": "1100",
+      "frameData": {
+        "startup": "12",
+        "active": "4",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "22469e28-ec44-47b7-a608-6210e18550a5",
+      "name": "Close Heavy",
+      "input": "c.H",
+      "damage": "1600",
+      "frameData": {
+        "startup": "10",
+        "active": "6",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "26fd377a-f1f6-434c-b568-bab4bda24264",
+      "name": "Close Light",
+      "input": "c.L",
+      "damage": "600",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "6",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "5af9652f-7ee7-48b3-a84f-53bad25398db",
+      "name": "Close Medium",
+      "input": "c.M",
+      "damage": "1100",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "94806c60-dbf2-47f2-a2ac-c5a1acb97852",
+      "name": "Double Attack",
+      "input": "c.XX",
+      "damage": "700",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "3f768846-c27f-4623-9029-c7c319e56ba9",
+      "name": "Triple Attack (Overhead)",
+      "input": "c.XX6H",
+      "damage": "1000",
+      "frameData": {
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "1-20 Throw",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "688d216a-a44c-4fe8-b36c-b317870ce25b",
+      "name": "Triple Attack (Low)",
+      "input": "c.XX6M",
+      "damage": "1000",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "b3f710ea-5765-4c80-9350-76d11de97ff6",
+      "name": "Triple Attack",
+      "input": "c.XXX",
+      "damage": "1000",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "9a1723c3-b030-4b17-85c1-e2e69d2e3464",
+      "name": "Far Heavy",
+      "input": "f.H",
+      "damage": "1300",
+      "frameData": {
+        "startup": "12",
+        "active": "6",
+        "recovery": "26",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "c8af5f69-7db3-4004-8c0e-8289f56a0572",
+      "name": "Far Light",
+      "input": "f.L",
+      "damage": "600",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "9",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "060d5a31-b644-4278-b7d6-31585eb68458",
+      "name": "Far Medium",
+      "input": "f.M",
+      "damage": "900",
+      "frameData": {
+        "startup": "9",
+        "active": "5",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "c6f8e215-61ca-4498-99e5-2f80794ff7c9",
+      "name": "Jumping Heavy",
+      "input": "j.H",
+      "damage": "1000",
+      "frameData": {
+        "startup": "10",
+        "active": "6",
+        "recovery": "Until L+1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "1299d08c-40b1-4b13-9344-b8d12416812d",
+      "name": "Jumping Light",
+      "input": "j.L",
+      "damage": "600",
+      "frameData": {
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "37031802-9302-4849-b584-80941dd8423b",
+      "name": "Jumping Medium",
+      "input": "j.M",
+      "damage": "700",
+      "frameData": {
+        "startup": "7",
+        "active": "6",
+        "recovery": "Until L+1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "8568499c-13cf-4e86-b51a-c3bef8893c9b",
+      "name": "Jumping Unique",
+      "input": "j.U",
+      "damage": "1000",
+      "frameData": {
+        "startup": "20",
+        "active": "Until L+1",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "b4b62b94-d64f-4b11-9ebb-a4222d42774c",
+      "name": "Air Throw",
+      "input": "j.LU",
+      "damage": "2500",
+      "frameData": {
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "advantage": "-"
+      },
+      "guard": "Airthrow",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "f329ddf0-fa3c-4044-be13-729d4e3ae8df",
+      "name": "Brave Counter",
+      "input": "BC",
+      "damage": "500",
+      "frameData": {
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-20 Full [1-54 Full]",
+      "type": "System"
+    },
+    {
+      "id": "97bc4d20-3580-4c32-89b9-24f68f6fc6a1",
+      "name": "Feuerrote Krone",
+      "input": "236236U",
+      "damage": "3120, 2400 (3840, 2400) [1300, 2000 (2200, 2000)]",
+      "frameData": {
+        "startup": "9+7",
+        "active": "9×2~10,11,3",
+        "recovery": "40",
+        "advantage": "-"
+      },
+      "guard": "Mid,All",
+      "invuln": "1-18 All",
+      "type": "Skybound Arts"
+    },
+    {
+      "id": "14cebaa2-db82-4111-bdfa-6eba16a2e6c4",
+      "name": "Ground Throw",
+      "input": "LU",
+      "damage": "2500",
+      "frameData": {
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "9110f06d-c742-4bca-9ad4-a0056a86b909",
+      "name": "H Anzünden",
+      "input": "236H",
+      "damage": "500×3 (400×3) [600×3 (500×3)]",
+      "frameData": {
+        "startup": "19",
+        "active": "24 [80]",
+        "recovery": "Total 53",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "7cd6c904-9037-4534-8b2b-5f41ec46d517",
+      "name": "H Lord's Strike",
+      "input": "214H",
+      "damage": "",
+      "frameData": {
+        "startup": "22",
+        "active": "",
+        "recovery": "5",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "4c44479e-7625-4c16-b278-abf52a908951",
+      "name": "H Macht",
+      "input": "214H~M",
+      "damage": "2100 [2300]",
+      "frameData": {
+        "startup": "17",
+        "active": "6",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "a4bbdd4b-a8d5-4156-aa41-0c27840a11aa",
+      "name": "H Platzen",
+      "input": "623H",
+      "damage": "300, 600, 200×3 [300, 600, 100×7]",
+      "frameData": {
+        "startup": "11",
+        "active": "8(2)2(2)6,3×2 [8(2)2(2)2×7]",
+        "recovery": "40 [43]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-10 All<br>11-16 Strike",
+      "type": "Special Moves"
+    },
+    {
+      "id": "5695d5a4-9951-46f0-a185-d1972e26b96d",
+      "name": "H Schneiden",
+      "input": "214H~L",
+      "damage": "1200 [1300]",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "2434f260-0bda-400b-b489-603a804672f2",
+      "name": "H Träumerei",
+      "input": "22H",
+      "damage": "1200",
+      "frameData": {
+        "startup": "11",
+        "active": "34",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "4adfd3fc-50cf-4686-a6a8-9c5593b2c62a",
+      "name": "H Zerreissen",
+      "input": "214H~H",
+      "damage": "2100 [3500 (2800)]",
+      "frameData": {
+        "startup": "9 [4]",
+        "active": "3 [2(3)3]",
+        "recovery": "52",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "35f57db8-f01d-4968-94ec-98d74f608aff",
+      "name": "L Anzünden",
+      "input": "236L",
+      "damage": "1000 (800)",
+      "frameData": {
+        "startup": "22",
+        "active": "39",
+        "recovery": "Total 53",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "61e7f494-9ae4-4d79-b8a0-eefd71029437",
+      "name": "L Lord's Strike",
+      "input": "214L",
+      "damage": "",
+      "frameData": {
+        "startup": "25",
+        "active": "",
+        "recovery": "7",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "4280143f-25f9-41f2-b479-ead48f3adde2",
+      "name": "L Macht",
+      "input": "214L~M",
+      "damage": "1400",
+      "frameData": {
+        "startup": "17",
+        "active": "6",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "1db56014-ae65-40f6-b7dc-944c75e934eb",
+      "name": "L Platzen",
+      "input": "623L",
+      "damage": "600, 400",
+      "frameData": {
+        "startup": "6",
+        "active": "2(2)6",
+        "recovery": "27",
+        "advantage": "-"
+      },
+      "guard": "Mid, All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "2f0fc1ef-ffc8-4ce8-8081-a9c6bd0f4723",
+      "name": "L Schneiden",
+      "input": "214L~L",
+      "damage": "800",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "7588dc18-9f38-40f1-93f7-75b48346a953",
+      "name": "L Träumerei",
+      "input": "22L",
+      "damage": "800",
+      "frameData": {
+        "startup": "11",
+        "active": "11",
+        "recovery": "10",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "908f5479-705b-4727-a8a0-f2735413f511",
+      "name": "L Zerreissen",
+      "input": "214L~H",
+      "damage": "1400",
+      "frameData": {
+        "startup": "10",
+        "active": "3",
+        "recovery": "52",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "12210b14-5e7c-4eda-a7d1-2dd74b286035",
+      "name": "Lohenwolf",
+      "input": "236236H",
+      "damage": "1000, 250×8, 1500 [1000, 250×8, 500]",
+      "frameData": {
+        "startup": "6+7~146 (6+147)",
+        "active": "6",
+        "recovery": "30",
+        "advantage": "-"
+      },
+      "guard": "Mid (Unblockable)",
+      "invuln": "1-9 All<br>10-15 Strike/Throw",
+      "type": "Skybound Arts"
+    },
+    {
+      "id": "4807c087-194f-4317-855e-1aff31e78302",
+      "name": "M Anzünden",
+      "input": "236M",
+      "damage": "1000 (800) [1300 (1100)]",
+      "frameData": {
+        "startup": "18",
+        "active": "29 [59]",
+        "recovery": "Total 49",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "2c6e9b04-8816-4478-88cf-dd12e9285325",
+      "name": "M Lord's Strike",
+      "input": "214M",
+      "damage": "",
+      "frameData": {
+        "startup": "26",
+        "active": "",
+        "recovery": "6",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "a30f286d-ac39-4a8b-94e3-ec5b4e235087",
+      "name": "M Macht",
+      "input": "214M~M",
+      "damage": "1400 [1600]",
+      "frameData": {
+        "startup": "17",
+        "active": "6",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "4202d1fe-ea3d-4807-aec4-5508431de56a",
+      "name": "M Platzen",
+      "input": "623M",
+      "damage": "300, 500, 300 [300, 500, 100×5]",
+      "frameData": {
+        "startup": "9",
+        "active": "5(2)2(2)6 [5(2)2(2)2×5]",
+        "recovery": "37 [49]",
+        "advantage": "-"
+      },
+      "guard": "Mid×2, All",
+      "invuln": "1-8 All<br>9-22 Strike",
+      "type": "Special Moves"
+    },
+    {
+      "id": "a83e1ac9-7e5a-4e33-a603-d20349d5f629",
+      "name": "M Schneiden",
+      "input": "214M~L",
+      "damage": "800 [900]",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "c25541f9-f236-4a0b-851f-72ab0099a3c5",
+      "name": "M Träumerei",
+      "input": "22M",
+      "damage": "800",
+      "frameData": {
+        "startup": "11",
+        "active": "19",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "4ae6c67c-736f-4ef6-8342-bf7c902db051",
+      "name": "M Zerreissen",
+      "input": "214M~H",
+      "damage": "1400 [2500 (1700)]",
+      "frameData": {
+        "startup": "10 [4]",
+        "active": "3 [2(4)3]",
+        "recovery": "52",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "623f8be7-b9c4-47bc-86c2-a0eb1c3010ea",
+      "name": "Raging Chain",
+      "input": "MH~MH",
+      "damage": "1000",
+      "frameData": {
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "ed4c5596-e5c6-4019-b13c-147ab8ee65f5",
+      "name": "Raging Strike",
+      "input": "MH",
+      "damage": "1500",
+      "frameData": {
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "advantage": "-"
+      },
+      "guard": "Guard Crush 45 [52]",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "4812cecb-ad99-487e-9b52-fe9659309eaa",
+      "name": "Ultimate Anzünden",
+      "input": "236U",
+      "damage": "1000, 200",
+      "frameData": {
+        "startup": "11",
+        "active": "9,4",
+        "recovery": "5",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "29aae60f-49f5-4c0c-83b2-bcea84793aad",
+      "name": "Ultimate Platzen",
+      "input": "623U",
+      "damage": "800, 400, 800 [800, 650]",
+      "frameData": {
+        "startup": "8",
+        "active": "2(2)2×7 [1(1)1×7]",
+        "recovery": "42",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-16 All",
+      "type": "Special Moves"
+    },
+    {
+      "id": "dc95503c-5375-4c6a-9349-dca8f10b4ede",
+      "name": "Ultimate Träumerei",
+      "input": "22U",
+      "damage": "1600",
+      "frameData": {
+        "startup": "9",
+        "active": "18",
+        "recovery": "47",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "185d9af1-0ee2-48ff-b1ac-244c4161c696",
+      "name": "Ultimate Zerreissen",
+      "input": "214U",
+      "damage": "3000 [See Full Damage Table]",
+      "frameData": {
+        "startup": "12",
+        "active": "2(4)3",
+        "recovery": "44",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "f8b00f23-9565-4f91-92a8-9ed134655370",
+      "name": "X-Seele",
+      "input": "5U",
+      "damage": "0",
+      "frameData": {
+        "startup": "14",
+        "active": "3",
+        "recovery": "41",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "System"
     }
   ]
 }

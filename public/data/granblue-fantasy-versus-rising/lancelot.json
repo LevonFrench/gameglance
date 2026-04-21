@@ -1,52 +1,892 @@
 {
+  "name": "Lancelot",
+  "character": "lancelot",
+  "game": "Granblue Fantasy Versus: Rising",
   "movesList": [
     {
-      "id": "n_0",
+      "id": "a1d364b3-b7ca-4020-8ce4-f38b6fb81cf6",
       "name": "Light Attack",
-      "type": "normal",
-      "input": "L"
+      "input": "L",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_1",
+      "id": "ffe22a56-f636-4401-b63e-f7883822b7f1",
       "name": "Medium Attack",
-      "type": "normal",
-      "input": "M"
+      "input": "M",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_2",
+      "id": "a7f0488d-617d-440d-a358-941d9718d750",
       "name": "Heavy Attack",
-      "type": "normal",
-      "input": "H"
+      "input": "H",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_3",
+      "id": "a1a24e6d-75ab-4a91-ad6d-3d5fa908696d",
       "name": "Unique Action",
-      "type": "normal",
-      "input": "U"
+      "input": "U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_4",
+      "id": "7c854f80-2735-4864-be87-890b7091100b",
       "name": "Skill",
-      "type": "normal",
-      "input": "S"
+      "input": "S",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_5",
+      "id": "a75196a2-69f3-42eb-bd76-effeaedecd81",
       "name": "Guard",
-      "type": "normal",
-      "input": "G"
+      "input": "G",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "t_0",
+      "id": "7d53df4f-bf86-4592-a206-20183062b445",
       "name": "Forward Throw",
-      "type": "throw",
-      "input": "L+U"
+      "input": "L+U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "t_1",
+      "id": "c5fff393-3ec9-4b30-b4b0-6dc957fb3880",
       "name": "Back Throw",
-      "type": "throw",
-      "input": "4L+U"
+      "input": "4L+U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "890efe2f-89b5-4134-b972-1e1702d16779",
+      "name": "Crouching Heavy",
+      "input": "2H",
+      "damage": "1300",
+      "frameData": {
+        "startup": "11",
+        "active": "5",
+        "recovery": "24",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "2bffa4b4-4760-4961-bcc9-f4d5327a27ab",
+      "name": "Crouching Light",
+      "input": "2L",
+      "damage": "400",
+      "frameData": {
+        "startup": "6",
+        "active": "1",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "78053fa1-72d2-4b8f-8743-1ad0be42d50a",
+      "name": "Crouching Medium",
+      "input": "2M",
+      "damage": "700",
+      "frameData": {
+        "startup": "6",
+        "active": "2",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "19bcf37c-87e8-4bb0-ac8d-d975c48bc9c8",
+      "name": "Crouching Unique",
+      "input": "2U",
+      "damage": "1000",
+      "frameData": {
+        "startup": "11",
+        "active": "16",
+        "recovery": "14",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "11-32 Low Profile",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "6044f1c1-1298-422f-b479-9fe76f707615",
+      "name": "Standing Light",
+      "input": "5L",
+      "damage": "600",
+      "frameData": {
+        "startup": "5",
+        "active": "2",
+        "recovery": "9",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "2c5ef681-6719-4242-92ca-3cc126ab1418",
+      "name": "Dash Heavy",
+      "input": "66H",
+      "damage": "1200",
+      "frameData": {
+        "startup": "15",
+        "active": "4",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "039cc92f-4605-421c-9d16-b7bab66e17c4",
+      "name": "Dash Light",
+      "input": "66L",
+      "damage": "600",
+      "frameData": {
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "e5340c14-a2be-4090-a29e-ee8574bb2d81",
+      "name": "Dash Medium",
+      "input": "66M",
+      "damage": "1100",
+      "frameData": {
+        "startup": "12",
+        "active": "4",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "09e6d486-7e49-4657-885b-466addfd2359",
+      "name": "Close Heavy",
+      "input": "c.H",
+      "damage": "1000, 400",
+      "frameData": {
+        "startup": "7",
+        "active": "3(3)3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "01469a34-0d0e-4c8e-9ae5-918adadb444b",
+      "name": "Close Medium",
+      "input": "c.M",
+      "damage": "1100",
+      "frameData": {
+        "startup": "6",
+        "active": "1",
+        "recovery": "14",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "e40c8419-4a9c-479b-afdf-43f96f556a92",
+      "name": "Double Attack",
+      "input": "c.XX",
+      "damage": "700",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "5a2d285d-181c-4c4f-9407-7d475471289a",
+      "name": "Triple Attack (Overhead)",
+      "input": "c.XX6H",
+      "damage": "1000",
+      "frameData": {
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "1-20 Throw",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "f95c7bf6-4374-4f49-8417-943343dab603",
+      "name": "Triple Attack (Low)",
+      "input": "c.XX6M",
+      "damage": "1000",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "88ac0e25-8dd3-4844-919b-58213a50757e",
+      "name": "Triple Attack",
+      "input": "c.XXX",
+      "damage": "1000",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "8754088e-a4d0-4fd6-9742-13c2027a008d",
+      "name": "Far Heavy",
+      "input": "f.H",
+      "damage": "1300",
+      "frameData": {
+        "startup": "10",
+        "active": "3",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "ca4a530f-9077-4144-9fc2-58206fa8868d",
+      "name": "Far Medium",
+      "input": "f.M",
+      "damage": "900",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "c99f0f6f-7157-44cd-bda4-47bba8a765a5",
+      "name": "Jumping Heavy",
+      "input": "j.H",
+      "damage": "500×2",
+      "frameData": {
+        "startup": "10",
+        "active": "3(3)6",
+        "recovery": "Until L+1",
+        "advantage": "-"
+      },
+      "guard": "High/Air, All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "134f3974-d1e9-40c1-af9f-720d1d502f88",
+      "name": "Jumping Light",
+      "input": "j.L",
+      "damage": "600",
+      "frameData": {
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "cf899d49-27b0-408e-97c3-9266e4bc0f08",
+      "name": "Jumping Medium",
+      "input": "j.M",
+      "damage": "700",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "Until L+1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "afc92034-eaaa-46e7-878c-7744f655b2d4",
+      "name": "Air Throw",
+      "input": "j.LU",
+      "damage": "2500",
+      "frameData": {
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "advantage": "-"
+      },
+      "guard": "Airthrow",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "9aa164c1-d827-426e-b6b7-165251d5cd10",
+      "name": "Brave Counter",
+      "input": "BC",
+      "damage": "500",
+      "frameData": {
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-20 Full [1-54 Full]",
+      "type": "System"
+    },
+    {
+      "id": "9bf8a03d-d830-409b-9325-3ce6c3f60689",
+      "name": "Cross Over",
+      "input": "5U~6U",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Total 18",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "b66bf8f9-f1c2-46c1-8137-22dc250771d1",
+      "name": "Delta Leap",
+      "input": "DeltaLeap",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Total 15",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "d89baa7d-87fc-4a7c-a208-fc1285017e82",
+      "name": "Feint",
+      "input": "5U~4U",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Total 16",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "54ba1991-17a5-4519-8b78-ca6f41953f89",
+      "name": "Ground Throw",
+      "input": "LU",
+      "damage": "2500",
+      "frameData": {
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "c2eaf4a6-0a16-4733-b434-440c90842dc4",
+      "name": "H Blade Impulse",
+      "input": "623H",
+      "damage": "1200",
+      "frameData": {
+        "startup": "16",
+        "active": "9",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "ee7e1d22-ca48-4473-957c-67c398b3d1a1",
+      "name": "H Southern Cross (4)",
+      "input": "214H~4H~4H~4H",
+      "damage": "600",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "809916bd-0462-4097-8fa3-12c342971245",
+      "name": "H Southern Cross (5)",
+      "input": "214H~4H~4H~4H~4H",
+      "damage": "650",
+      "frameData": {
+        "startup": "12",
+        "active": "7",
+        "recovery": "24",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "2aba11af-8fa0-4943-8fff-91b38089d4e3",
+      "name": "H Wogenstrom",
+      "input": "236H",
+      "damage": "350×2, 400",
+      "frameData": {
+        "startup": "33",
+        "active": "52",
+        "recovery": "Total 41",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "a8586e1a-c4e5-456f-9557-df8cbe28df26",
+      "name": "Jump",
+      "input": "5U~2U",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Total 25",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "5-20 Full",
+      "type": "System"
+    },
+    {
+      "id": "295d61b4-e700-4262-9cd4-c575781ca712",
+      "name": "L Blade Impulse",
+      "input": "623L",
+      "damage": "800",
+      "frameData": {
+        "startup": "16",
+        "active": "6",
+        "recovery": "14",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "fd73a69a-e9d8-48da-8c7a-f8c87641932a",
+      "name": "L Wogenstrom",
+      "input": "236L",
+      "damage": "700",
+      "frameData": {
+        "startup": "33",
+        "active": "38",
+        "recovery": "Total 45",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "1d2ac3f3-b25e-4c45-93e9-1cb5a777a90b",
+      "name": "M Blade Impulse",
+      "input": "623M",
+      "damage": "1000",
+      "frameData": {
+        "startup": "25",
+        "active": "9",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "3105dea7-90ac-464e-91c6-a9e0e2693e8d",
+      "name": "M Wogenstrom",
+      "input": "236M",
+      "damage": "700",
+      "frameData": {
+        "startup": "38",
+        "active": "71",
+        "recovery": "Total 45",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "3887cf0a-815c-4a76-9d17-a26cd876b668",
+      "name": "Quick Stop",
+      "input": "5U~5U",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Total 14",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "2581a318-30dd-4354-92b4-c615ac28fd26",
+      "name": "Raging Chain",
+      "input": "MH~MH",
+      "damage": "1000",
+      "frameData": {
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "2c87bc69-bb0f-4567-a47a-0acabb3317ed",
+      "name": "Raging Strike",
+      "input": "MH",
+      "damage": "1500",
+      "frameData": {
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "advantage": "-"
+      },
+      "guard": "Guard Crush 45 [52]",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "0db900c8-1f21-44c5-bc16-ec3377e88239",
+      "name": "Schöner Winterhügel",
+      "input": "236236U",
+      "damage": "1200×2, 3000",
+      "frameData": {
+        "startup": "10+6",
+        "active": "Until L+1",
+        "recovery": "34",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-15 Full",
+      "type": "Skybound Arts"
+    },
+    {
+      "id": "21b7a6be-bf28-4320-8544-cb6fc7826c15",
+      "name": "Schöner Winterhügel",
+      "input": "j.236236U",
+      "damage": "1200×2, 3000",
+      "frameData": {
+        "startup": "7+7",
+        "active": "Until L+1",
+        "recovery": "34",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Skybound Arts"
+    },
+    {
+      "id": "ee5bd166-d349-418d-8cd8-a9632a91f511",
+      "name": "Southern Cross (1)",
+      "input": "214X",
+      "damage": "400/500/400",
+      "frameData": {
+        "startup": "14/19/11",
+        "active": "5/6/3",
+        "recovery": "13/13/15",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "975f2619-964c-432c-b7b6-3290ceab94c0",
+      "name": "Southern Cross (2)",
+      "input": "214X~4X",
+      "damage": "500/600/450",
+      "frameData": {
+        "startup": "9/9/7",
+        "active": "3/3/3",
+        "recovery": "16/16/16",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "b4654960-89b8-4cd9-9e6c-efb68585c45e",
+      "name": "Southern Cross (3)",
+      "input": "214X~4X~4X",
+      "damage": "600/700/550",
+      "frameData": {
+        "startup": "14/14/9",
+        "active": "7/7/3",
+        "recovery": "24/24/16",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "120233e4-c80a-4652-9d80-578991056251",
+      "name": "Turbulenz",
+      "input": "22X",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Total 30",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "7-21 Full",
+      "type": "Special Moves"
+    },
+    {
+      "id": "cf6e5a8b-dc42-435d-afb8-056e905ff37a",
+      "name": "Turbulenz (Charged Attack)",
+      "input": "22[X]",
+      "damage": "1000",
+      "frameData": {
+        "startup": "31",
+        "active": "8",
+        "recovery": "30",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "7-22, 24-39 Full",
+      "type": "Special Moves"
+    },
+    {
+      "id": "db3b9860-a312-4203-a5a9-797b29d87c7e",
+      "name": "Ultimate Blade Impulse",
+      "input": "623U",
+      "damage": "1000, 200×3",
+      "frameData": {
+        "startup": "14",
+        "active": "10",
+        "recovery": "29 [24]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "59b190fc-ef37-4c79-9505-0641afdde633",
+      "name": "Ultimate Southern Cross",
+      "input": "214U",
+      "damage": "300×4, 200×4, 600",
+      "frameData": {
+        "startup": "11",
+        "active": "5(5)3(9)3(5)3 [3(2)2]",
+        "recovery": "10 [16]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "3e2108d8-59d5-4fbb-b2d5-e9f88e93e64f",
+      "name": "Ultimate Turbulenz",
+      "input": "22U",
+      "damage": "700, 800, 50×2, 100×4",
+      "frameData": {
+        "startup": "8",
+        "active": "9(26)4 [5(20)6]",
+        "recovery": "40",
+        "advantage": "-"
+      },
+      "guard": "Mid, High",
+      "invuln": "1-38 Full",
+      "type": "Special Moves"
+    },
+    {
+      "id": "65225b53-babf-4e3f-9cee-d41c21f56d8c",
+      "name": "Ultimate Wogenstrom",
+      "input": "236U",
+      "damage": "1200",
+      "frameData": {
+        "startup": "18",
+        "active": "12",
+        "recovery": "Total 45",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "677da2e0-592b-4fa3-be28-3ffbc071f45a",
+      "name": "Weiss Flugel",
+      "input": "236236H",
+      "damage": "1000, 100×8, 400, 100×6, 1200",
+      "frameData": {
+        "startup": "9+4~13",
+        "active": "3",
+        "recovery": "28 [29]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-12 Full, 13-15 Strike/Throw",
+      "type": "Skybound Arts"
+    },
+    {
+      "id": "9977adf7-8235-4484-ad23-c2af2b01e386",
+      "name": "Wirbelwind",
+      "input": "5U",
+      "damage": "",
+      "frameData": {
+        "startup": "28",
+        "active": "",
+        "recovery": "8",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "76e0c2e4-b62e-449a-876e-71500dd4f3fc",
+      "name": "Wirbelwind",
+      "input": "j.U",
+      "damage": "",
+      "frameData": {
+        "startup": "13",
+        "active": "",
+        "recovery": "Until L+7",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "System"
     }
   ]
 }

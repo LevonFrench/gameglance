@@ -1,66 +1,967 @@
 {
+  "name": "Zeta",
+  "character": "zeta",
   "game": "Granblue Fantasy Versus: Rising",
-  "character": "Zeta",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
-      "input": "P"
-    },
-    {
-      "id": "special-attack",
-      "name": "Special Attack",
-      "type": "special",
-      "input": "236P"
-    },
-    {
-      "id": "n_0",
+      "id": "932ae0fa-26a4-498d-acf7-c3292fd48d5c",
       "name": "Light Attack",
-      "type": "normal",
-      "input": "L"
+      "input": "L",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_1",
+      "id": "0623e799-42b3-4bf0-946c-406d3c6287c6",
       "name": "Medium Attack",
-      "type": "normal",
-      "input": "M"
+      "input": "M",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_2",
+      "id": "f8c7bec3-b2aa-4a2f-a59d-bfc0b44225fd",
       "name": "Heavy Attack",
-      "type": "normal",
-      "input": "H"
+      "input": "H",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_3",
+      "id": "ad9a1e31-f0fe-4677-9104-2c00a31aaf46",
       "name": "Unique Action",
-      "type": "normal",
-      "input": "U"
+      "input": "U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_4",
+      "id": "2060093e-9b50-42d0-842e-a89deb8177f9",
       "name": "Skill",
-      "type": "normal",
-      "input": "S"
+      "input": "S",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_5",
+      "id": "138981c1-a1f4-4eb1-a3e3-9eb65a7f631c",
       "name": "Guard",
-      "type": "normal",
-      "input": "G"
+      "input": "G",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "t_0",
+      "id": "cde141c6-3e0e-4684-9fb4-229de598ea05",
       "name": "Forward Throw",
-      "type": "throw",
-      "input": "L+U"
+      "input": "L+U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "t_1",
+      "id": "322ed530-34a2-4252-a379-4530da8e7f85",
       "name": "Back Throw",
-      "type": "throw",
-      "input": "4L+U"
+      "input": "4L+U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "6f4b7626-4872-4a1c-a3d6-787dede4c6fe",
+      "name": "Crouching Heavy",
+      "input": "2H",
+      "damage": "1300",
+      "frameData": {
+        "startup": "11",
+        "active": "5",
+        "recovery": "24",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "207b5b91-41a1-4c0c-9708-2768d32906b2",
+      "name": "Crouching Light",
+      "input": "2L",
+      "damage": "400",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "10",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "d3148e8f-9e9a-4f7f-bed9-1e0c8f87ef28",
+      "name": "Crouching Medium",
+      "input": "2M",
+      "damage": "900",
+      "frameData": {
+        "startup": "8",
+        "active": "6",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "44105c19-d894-49c7-90dd-20b1ad3d8a7a",
+      "name": "Crouching Unique",
+      "input": "2U",
+      "damage": "500×2",
+      "frameData": {
+        "startup": "7",
+        "active": "3(15)3",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "a6a29368-8a0b-48b0-b478-f0bbb4e2f606",
+      "name": "Dash Heavy",
+      "input": "66H",
+      "damage": "1200",
+      "frameData": {
+        "startup": "17",
+        "active": "6",
+        "recovery": "26",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "b407a820-f983-47bb-b617-aff8f3a358b5",
+      "name": "Dash Light",
+      "input": "66L",
+      "damage": "600",
+      "frameData": {
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "8b402445-7f10-46e5-95b6-868e0c101123",
+      "name": "Dash Medium",
+      "input": "66M",
+      "damage": "1100",
+      "frameData": {
+        "startup": "12",
+        "active": "4",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "8dd87f9d-3ba2-4b30-bdec-ab3f04d7c42d",
+      "name": "Close Heavy",
+      "input": "c.H",
+      "damage": "1600",
+      "frameData": {
+        "startup": "9",
+        "active": "6",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "47823df4-529d-4744-9784-bec488f1242f",
+      "name": "Close Light",
+      "input": "c.L",
+      "damage": "600",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "6",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "a4c4a3de-bb5e-4713-aba8-8aac6c2b85ce",
+      "name": "Close Medium",
+      "input": "c.M",
+      "damage": "1100",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "4f030244-4011-4549-a823-13c9b8470d02",
+      "name": "Double Attack",
+      "input": "c.XX",
+      "damage": "700",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "358a21ca-e3e5-470f-9375-471aabe4c209",
+      "name": "Triple Attack (Overhead)",
+      "input": "c.XX6H",
+      "damage": "1000",
+      "frameData": {
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "1-20 Throw",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "a11f67f9-dc39-4368-af8a-ce40bd2c0082",
+      "name": "Triple Attack (Low)",
+      "input": "c.XX6M",
+      "damage": "1000",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "c481c075-052b-4a7e-8844-5aae1c95d594",
+      "name": "Triple Attack",
+      "input": "c.XXX",
+      "damage": "1000",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "ddfbcfdf-553f-4532-a472-3295e5d00cc1",
+      "name": "Far Heavy",
+      "input": "f.H",
+      "damage": "1300",
+      "frameData": {
+        "startup": "9",
+        "active": "6",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "5c413e35-5ad8-436a-8a94-4899284d191f",
+      "name": "Far Light",
+      "input": "f.L",
+      "damage": "600",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "9",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "9f9ab75a-cafd-442f-8cce-8c70368c1264",
+      "name": "Far Medium",
+      "input": "f.M",
+      "damage": "900",
+      "frameData": {
+        "startup": "10",
+        "active": "4",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "3701a49a-0980-4c0d-8ec3-fbfd8188b0fc",
+      "name": "Jumping Heavy",
+      "input": "j.H",
+      "damage": "1000",
+      "frameData": {
+        "startup": "7",
+        "active": "9",
+        "recovery": "Until L+1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "21b97eea-da01-4636-b4cf-1ef4530d805e",
+      "name": "Jumping Light",
+      "input": "j.L",
+      "damage": "600",
+      "frameData": {
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "e9f1f5ba-81c7-4ef6-bec5-842b131a4c96",
+      "name": "Jumping Medium",
+      "input": "j.M",
+      "damage": "700",
+      "frameData": {
+        "startup": "7",
+        "active": "6",
+        "recovery": "Until L+1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "b26adc20-c9d1-4277-adb5-9a98aa15998e",
+      "name": "Jumping Unique",
+      "input": "j.U",
+      "damage": "700",
+      "frameData": {
+        "startup": "5 [6, 7]",
+        "active": "Until L",
+        "recovery": "1 (5)",
+        "advantage": "-"
+      },
+      "guard": "High/Air [Mid, Mid]",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "945a1b8c-3edc-47cd-a038-fe6398e58d85",
+      "name": "Air Throw",
+      "input": "j.LU",
+      "damage": "2500",
+      "frameData": {
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "advantage": "-"
+      },
+      "guard": "Airthrow",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "a2ef90f9-473e-408f-ab1f-1afb7f03057f",
+      "name": "Brave Counter",
+      "input": "BC",
+      "damage": "500",
+      "frameData": {
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-20 Full [1-54 Full]",
+      "type": "System"
+    },
+    {
+      "id": "65e59914-2ec6-4476-ad4b-0b32d7433681",
+      "name": "Crimson Cleave",
+      "input": "214X~L",
+      "damage": "1000 [1400]",
+      "frameData": {
+        "startup": "13 [15]",
+        "active": "3",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "77ed2362-5132-4daa-ba66-3be137504eaf",
+      "name": "Ground Throw",
+      "input": "LU",
+      "damage": "2500",
+      "frameData": {
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "ccaef518-924f-405b-b8b3-9355f9976dc4",
+      "name": "H Infinite Wonders",
+      "input": "236H",
+      "damage": "<span class=\"tooltip\" >400<span class=\"tooltiptext\" style=\"\">Charging Hitbox</span></span>, 700",
+      "frameData": {
+        "startup": "16",
+        "active": "12×2",
+        "recovery": "Total 57",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "5e91dd89-ed0b-4f4b-a001-648cf8751494",
+      "name": "H Rhapsody",
+      "input": "214H",
+      "damage": "",
+      "frameData": {
+        "startup": "1",
+        "active": "26",
+        "recovery": "37",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "1-26 Parry",
+      "type": "Special Moves"
+    },
+    {
+      "id": "6f437719-49fd-4054-9c87-19f78a546f2d",
+      "name": "H Spear of Arvess",
+      "input": "623H",
+      "damage": "900",
+      "frameData": {
+        "startup": "15",
+        "active": "12",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "38651fef-153c-486d-838c-b7699f8cc687",
+      "name": "H Spear of Arvess (Fall)",
+      "input": "j.22H",
+      "damage": "1100",
+      "frameData": {
+        "startup": "16",
+        "active": "4~Until L+1",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "7faa92b7-7c7a-4030-a955-6a66bf74d7aa",
+      "name": "H Spear of Arvess (Rise)",
+      "input": "22H",
+      "damage": "1100",
+      "frameData": {
+        "startup": "9",
+        "active": "12",
+        "recovery": "43",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "90ccb646-5ac9-44c9-a651-5f7f537caa05",
+      "name": "Knee Assault",
+      "input": "214X~H",
+      "damage": "600 [900]",
+      "frameData": {
+        "startup": "8",
+        "active": "4",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "f2361f5e-f92d-4ddb-97e3-6697680639bb",
+      "name": "L Infinite Wonders",
+      "input": "236L",
+      "damage": "700",
+      "frameData": {
+        "startup": "20",
+        "active": "12",
+        "recovery": "Total 49",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "ca0f765a-8543-429c-ab27-a07a70922329",
+      "name": "L Rhapsody",
+      "input": "214L",
+      "damage": "",
+      "frameData": {
+        "startup": "3",
+        "active": "24",
+        "recovery": "37",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "3-26 Parry High/Mid",
+      "type": "Special Moves"
+    },
+    {
+      "id": "e63b85a1-8ae4-4bf1-a896-b085d6398ef8",
+      "name": "L Spear of Arvess",
+      "input": "623L",
+      "damage": "600",
+      "frameData": {
+        "startup": "16",
+        "active": "6",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "27bea744-a839-4709-a0ae-0bf7742c6f79",
+      "name": "L Spear of Arvess (Fall)",
+      "input": "j.22L",
+      "damage": "800",
+      "frameData": {
+        "startup": "16",
+        "active": "4~Until L+1",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "329eb6d8-cbca-41b5-be4c-d51373a591c6",
+      "name": "L Spear of Arvess (Rise)",
+      "input": "22L",
+      "damage": "800",
+      "frameData": {
+        "startup": "9",
+        "active": "12",
+        "recovery": "43",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "e674e814-7bcc-408f-a357-054e2a8d446b",
+      "name": "M Infinite Wonders",
+      "input": "236M",
+      "damage": "900 [1300]",
+      "frameData": {
+        "startup": "28~60 [61]",
+        "active": "12",
+        "recovery": "Total 57~89 [90]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "e13add94-0d78-488f-a982-3b1c07ccc88b",
+      "name": "M Rhapsody",
+      "input": "214M",
+      "damage": "",
+      "frameData": {
+        "startup": "3",
+        "active": "24",
+        "recovery": "37",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "3-26 Parry Low",
+      "type": "Special Moves"
+    },
+    {
+      "id": "8c4fc41b-4ee7-429b-8dc9-96cb487ccf47",
+      "name": "M Spear of Arvess",
+      "input": "623M",
+      "damage": "800",
+      "frameData": {
+        "startup": "19",
+        "active": "9",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "aa7ec75a-dbf0-4971-96a4-cb2584138e9a",
+      "name": "M Spear of Arvess (Fall)",
+      "input": "j.22M",
+      "damage": "800",
+      "frameData": {
+        "startup": "16",
+        "active": "4~Until L+1",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "3be675e5-27b1-4ab2-983b-db6f66d53112",
+      "name": "M Spear of Arvess (Rise)",
+      "input": "22M",
+      "damage": "1000",
+      "frameData": {
+        "startup": "9",
+        "active": "12",
+        "recovery": "44",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "ec56cf89-ed8c-43c2-9ccf-b9a2fe3071ce",
+      "name": "Raging Chain",
+      "input": "MH~MH",
+      "damage": "1000",
+      "frameData": {
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "f47dec44-ed0b-4647-9beb-071caaa4a5b1",
+      "name": "Raging Strike",
+      "input": "MH",
+      "damage": "1500",
+      "frameData": {
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "advantage": "-"
+      },
+      "guard": "Guard Crush 45 [52]",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "6401d6de-ee33-4220-b748-22856ca92458",
+      "name": "Resolute Strike",
+      "input": "236236H",
+      "damage": "500×6, 1500 [500×7]",
+      "frameData": {
+        "startup": "8+6",
+        "active": "1×7 [1×6,3]",
+        "recovery": "39 [33]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-16 All",
+      "type": "Skybound Arts"
+    },
+    {
+      "id": "b0db95af-9293-495b-9bfa-904c1e005f7e",
+      "name": "Resolute Strike",
+      "input": "j.236236H",
+      "damage": "500×6, 1000",
+      "frameData": {
+        "startup": "8+4",
+        "active": "Until L+1",
+        "recovery": "37",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Skybound Arts"
+    },
+    {
+      "id": "1d31ca53-5cfb-4c8f-bfb5-a0299cf24c57",
+      "name": "Rising Split",
+      "input": "214X~M",
+      "damage": "1200 [1600]",
+      "frameData": {
+        "startup": "6 [9]",
+        "active": "6",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "<span class=\"tooltip\" >1-8 Strike<span class=\"tooltiptext\" style=\"\">After armoring attack with L or M Rhapsody</span></span>",
+      "type": "Special Moves"
+    },
+    {
+      "id": "04654f5a-1005-4933-844f-7d0917ea24bd",
+      "name": "Signo Drive",
+      "input": "5U",
+      "damage": "600, 100×3~12",
+      "frameData": {
+        "startup": "8",
+        "active": "3(5)3×3~12",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "3e3b07ba-720c-496d-b09e-e038aa914084",
+      "name": "Sirius Roar",
+      "input": "236236U",
+      "damage": "3000, 120×15, 1200 [1000×4]",
+      "frameData": {
+        "startup": "8+5",
+        "active": "6,2×3",
+        "recovery": "58",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-18 All",
+      "type": "Skybound Arts"
+    },
+    {
+      "id": "8ad6b79c-e5a9-40a0-99f9-2c98cecd048a",
+      "name": "Spear of Arvess (Down Follow-ups)",
+      "input": "22X~2X",
+      "damage": "500",
+      "frameData": {
+        "startup": "16",
+        "active": "Until L+1",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "8e7e1633-8dac-4c2e-9503-9a258fef0704",
+      "name": "Spear of Arvess (Side Follow-ups)",
+      "input": "22X~5X",
+      "damage": "500",
+      "frameData": {
+        "startup": "16",
+        "active": "12",
+        "recovery": "19 [Until L+20]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "ec904b73-a217-4598-8163-509292834ab8",
+      "name": "Spear of Arvess (Up Follow-ups)",
+      "input": "22X~8X",
+      "damage": "700",
+      "frameData": {
+        "startup": "16",
+        "active": "12",
+        "recovery": "Until L+14",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "6a81f202-802b-46a3-9117-d0000571f614",
+      "name": "Ultimate Aerial Spear of Arvess",
+      "input": "j.22U",
+      "damage": "1000, 200×5",
+      "frameData": {
+        "startup": "12",
+        "active": "Until L",
+        "recovery": "37 [Until L+3]",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "3349f33e-896d-43d1-a596-aa1e1f33bc17",
+      "name": "Ultimate Infinite Wonders",
+      "input": "236U",
+      "damage": "400, 500×2, 600",
+      "frameData": {
+        "startup": "9",
+        "active": "6,14",
+        "recovery": "Total 46",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "400bdbea-5e91-49ce-92c4-d68a52dfc0c7",
+      "name": "Ultimate Rhapsody",
+      "input": "214U",
+      "damage": "600×2, 800",
+      "frameData": {
+        "startup": "1",
+        "active": "27",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-27 Parry",
+      "type": "Special Moves"
+    },
+    {
+      "id": "d5aab56b-17a9-49ed-b529-db24a533ac67",
+      "name": "Ultimate Spear of Arvess",
+      "input": "623U",
+      "damage": "1500, 200×5",
+      "frameData": {
+        "startup": "13",
+        "active": "11",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "798b7976-8a51-4db2-8d18-7777b3d936fd",
+      "name": "Ultimate Spear of Arvess (Rise)",
+      "input": "22U",
+      "damage": "1000, 200×5",
+      "frameData": {
+        "startup": "9",
+        "active": "5",
+        "recovery": "44 [Until L+3]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
     }
   ]
 }

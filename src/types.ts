@@ -28,6 +28,7 @@ export interface PlaylistItem {
 export interface CharacterExport {
   game: string;
   character: string;
+  name?: string;
   ramId?: string | number;
   theme_colors: { special: string, super_fatality: string, normal: string };
   movesList: Move[];

@@ -1,66 +1,892 @@
 {
+  "name": "Belial",
+  "character": "belial",
   "game": "Granblue Fantasy Versus: Rising",
-  "character": "Belial",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
-      "type": "normal",
-      "input": "P"
-    },
-    {
-      "id": "special-attack",
-      "name": "Special Attack",
-      "type": "special",
-      "input": "236P"
-    },
-    {
-      "id": "n_0",
+      "id": "046eafeb-fae0-4edf-a347-86e8fc9b5f65",
       "name": "Light Attack",
-      "type": "normal",
-      "input": "L"
+      "input": "L",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_1",
+      "id": "9193b820-1fdc-40dc-8458-6fc0279af392",
       "name": "Medium Attack",
-      "type": "normal",
-      "input": "M"
+      "input": "M",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_2",
+      "id": "beb94508-c6a4-4495-bd8d-fb4ff8293417",
       "name": "Heavy Attack",
-      "type": "normal",
-      "input": "H"
+      "input": "H",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_3",
+      "id": "8e654dae-41e9-4d62-874b-07caf163dda8",
       "name": "Unique Action",
-      "type": "normal",
-      "input": "U"
+      "input": "U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_4",
+      "id": "e626a22b-27bf-40d8-99c8-aa96d20198f5",
       "name": "Skill",
-      "type": "normal",
-      "input": "S"
+      "input": "S",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_5",
+      "id": "44b1fc92-7726-4a50-b9fd-4cce8916a677",
       "name": "Guard",
-      "type": "normal",
-      "input": "G"
+      "input": "G",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "t_0",
+      "id": "fbdbf22b-d168-486b-afc0-6f3f088b7050",
       "name": "Forward Throw",
-      "type": "throw",
-      "input": "L+U"
+      "input": "L+U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "t_1",
+      "id": "1aec452c-cff2-45fe-b6d4-2119ae4e9c60",
       "name": "Back Throw",
-      "type": "throw",
-      "input": "4L+U"
+      "input": "4L+U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "276499b9-f692-46d2-9833-20f086d1a986",
+      "name": "Crouching Heavy",
+      "input": "2H",
+      "damage": "1300",
+      "frameData": {
+        "startup": "11",
+        "active": "6",
+        "recovery": "23",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "8e732b61-3405-4f97-92dd-2a32264a5150",
+      "name": "Crouching Light",
+      "input": "2L",
+      "damage": "400",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "86c0f001-c13b-41f7-b33a-43f64f16ce68",
+      "name": "Crouching Medium",
+      "input": "2M",
+      "damage": "900",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "11",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "efa165f4-d6ed-4f39-8d24-c68df0fa22cf",
+      "name": "Crouching Unique",
+      "input": "2U",
+      "damage": "1000",
+      "frameData": {
+        "startup": "10",
+        "active": "6",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "4328c55b-f149-412e-b9eb-a30d6a82bf98",
+      "name": "Dash Heavy",
+      "input": "66H",
+      "damage": "1300",
+      "frameData": {
+        "startup": "20",
+        "active": "8",
+        "recovery": "14",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "fdeaf9e3-8189-4b37-9014-58967baa6ea6",
+      "name": "Dash Light",
+      "input": "66L",
+      "damage": "600",
+      "frameData": {
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "afe2dce2-5f87-43f3-9cd7-d235bb69a36f",
+      "name": "Dash Medium",
+      "input": "66M",
+      "damage": "1100",
+      "frameData": {
+        "startup": "18",
+        "active": "3",
+        "recovery": "13",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "882c9913-0947-4f97-be22-47ec4a54f7c7",
+      "name": "Close Heavy",
+      "input": "c.H",
+      "damage": "1600",
+      "frameData": {
+        "startup": "9",
+        "active": "5",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "95b9588a-f0e1-44d2-aba0-393993114021",
+      "name": "Close Light",
+      "input": "c.L",
+      "damage": "600",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "6",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "b3ec9d01-941c-4e2e-92d8-8c7ce2783bcc",
+      "name": "Close Medium",
+      "input": "c.M",
+      "damage": "1100",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "1d58e04a-a59f-482a-bded-74a5a967cae1",
+      "name": "Double Attack",
+      "input": "c.XX",
+      "damage": "700",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "6fc89cc9-e074-4b34-bbb3-ae8852e69224",
+      "name": "Triple Attack (Overhead)",
+      "input": "c.XX6H",
+      "damage": "1000",
+      "frameData": {
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "1-20 Throw",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "0259b080-15c7-4920-8f0d-d1f15ef8ed75",
+      "name": "Triple Attack (Low)",
+      "input": "c.XX6M",
+      "damage": "1000",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "9c4f9469-29dd-4369-bd7c-02bc3ae77ea9",
+      "name": "Triple Attack",
+      "input": "c.XXX",
+      "damage": "1000",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "6dc4e2bd-c0aa-4662-b6a5-cb2978f22f7c",
+      "name": "Far Heavy",
+      "input": "f.H",
+      "damage": "800, 500",
+      "frameData": {
+        "startup": "9",
+        "active": "2(13)2",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "e239e22c-ae3e-4a1d-95cf-b25c40803c26",
+      "name": "Far Light",
+      "input": "f.L",
+      "damage": "600",
+      "frameData": {
+        "startup": "6",
+        "active": "5",
+        "recovery": "7",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "7bcf86ed-6711-4feb-a46e-b3a86ce04a1b",
+      "name": "Far Medium",
+      "input": "f.M",
+      "damage": "300, 600",
+      "frameData": {
+        "startup": "6",
+        "active": "2,3",
+        "recovery": "14",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "1a8828aa-f55f-44ba-9aef-9f991824201b",
+      "name": "Jumping Heavy",
+      "input": "j.H",
+      "damage": "1000",
+      "frameData": {
+        "startup": "10",
+        "active": "6",
+        "recovery": "L+1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "fef08c0e-dc9c-43e5-970e-d615b9b12d81",
+      "name": "Jumping Light",
+      "input": "j.L",
+      "damage": "600",
+      "frameData": {
+        "startup": "5",
+        "active": "Until L",
+        "recovery": "1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "a496f333-ae73-4c91-b8c6-d61ae9691562",
+      "name": "Jumping Medium",
+      "input": "j.M",
+      "damage": "700",
+      "frameData": {
+        "startup": "7",
+        "active": "6",
+        "recovery": "L+1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "ddf0bec9-6f07-4f5a-9c4f-c1a9ad66d0fe",
+      "name": "Jumping Unique",
+      "input": "j.U",
+      "damage": "1000",
+      "frameData": {
+        "startup": "26/23",
+        "active": "Until L+1",
+        "recovery": "18/19/L+1",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "3e6baeb1-01f0-4934-80d8-80e110fb6db9",
+      "name": "Air Throw",
+      "input": "j.LM",
+      "damage": "2500",
+      "frameData": {
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "advantage": "-"
+      },
+      "guard": "Airthrow",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "117b80f8-5746-42a6-9260-d2af5931ecc1",
+      "name": "Anagenesis",
+      "input": "236236U",
+      "damage": "3000, 600, 120×10, 120 [2500, 1500]",
+      "frameData": {
+        "startup": "8+5",
+        "active": "3(12)3",
+        "recovery": "45",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1~15 All",
+      "type": "Skybound Arts"
+    },
+    {
+      "id": "14260d96-11e7-4892-b55b-9db81381e905",
+      "name": "Brave Counter",
+      "input": "BC",
+      "damage": "500",
+      "frameData": {
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-20 Full [1-54 Full]",
+      "type": "System"
+    },
+    {
+      "id": "c82d2005-63e2-4790-8656-ff2b973b4524",
+      "name": "Give Daddy Some Sugar",
+      "input": "5U",
+      "damage": "",
+      "frameData": {
+        "startup": "3",
+        "active": "85",
+        "recovery": "48",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "3~87 Catch",
+      "type": "System"
+    },
+    {
+      "id": "c5fe7750-f40f-4d8a-8142-5e7087b01fd1",
+      "name": "Give Daddy Some Sugar (Attack)",
+      "input": "5U Catch",
+      "damage": "300, 900",
+      "frameData": {
+        "startup": "Jump+11",
+        "active": "Until L+2",
+        "recovery": "11",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "1-6 All",
+      "type": "System"
+    },
+    {
+      "id": "e3dfeb05-ceab-4995-9d94-a45cacbb09cb",
+      "name": "Ground Throw",
+      "input": "LM",
+      "damage": "2500",
+      "frameData": {
+        "startup": "4",
+        "active": "3",
+        "recovery": "31",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "ed06eb92-bad7-44cc-a924-0dcb1653cb29",
+      "name": "H Asmodeus",
+      "input": "214H",
+      "damage": "700, 800",
+      "frameData": {
+        "startup": "14",
+        "active": "4",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "bac53e8b-4d16-45d6-9b3f-aa8c4948d4e9",
+      "name": "H Everyone's A Little Crooked",
+      "input": "236X~4H",
+      "damage": "100×5",
+      "frameData": {
+        "startup": "27",
+        "active": "3×15",
+        "recovery": "Total 40",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "354221a9-35d5-4773-9bbe-4ea5cc484dd6",
+      "name": "H Goetia",
+      "input": "236H",
+      "damage": "400×3",
+      "frameData": {
+        "startup": "15",
+        "active": "Until hit",
+        "recovery": "Total 49",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "be76a91c-b7c2-432e-a038-c72380cab2fb",
+      "name": "H Notoria",
+      "input": "623H",
+      "damage": "600, 400, 500",
+      "frameData": {
+        "startup": "11",
+        "active": "2(3)9(18)5",
+        "recovery": "24",
+        "advantage": "-"
+      },
+      "guard": "Mid×2, All",
+      "invuln": "1~24 All",
+      "type": "Special Moves"
+    },
+    {
+      "id": "af326365-7b32-4185-9b34-6fb3adb67948",
+      "name": "H Vassago",
+      "input": "632146H",
+      "damage": "500, 2000",
+      "frameData": {
+        "startup": "27~82",
+        "active": "3",
+        "recovery": "34",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "6b49a887-3e8c-4f2b-b9c2-d122009cba2c",
+      "name": "L Asmodeus",
+      "input": "214L",
+      "damage": "700, 500",
+      "frameData": {
+        "startup": "15",
+        "active": "4",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "111fc531-e7cb-4ea4-b932-d61efc5b3991",
+      "name": "L Everyone's A Little Crooked",
+      "input": "236X~4L",
+      "damage": "150×3",
+      "frameData": {
+        "startup": "13",
+        "active": "9×3",
+        "recovery": "Total 38",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "62e784d8-dbad-4bdc-82bf-060b4a1ca85b",
+      "name": "L Goetia",
+      "input": "236L",
+      "damage": "800",
+      "frameData": {
+        "startup": "15",
+        "active": "Until hit",
+        "recovery": "Total 47",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "59bd0239-968a-40b6-ad70-d76f87926252",
+      "name": "L Notoria",
+      "input": "623L",
+      "damage": "700, 300",
+      "frameData": {
+        "startup": "6",
+        "active": "2(3)5",
+        "recovery": "27",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "ef05b083-b0f5-41a2-b88e-545dcd0369f6",
+      "name": "L Vassago",
+      "input": "632146L",
+      "damage": "500, 1500",
+      "frameData": {
+        "startup": "34",
+        "active": "3",
+        "recovery": "36",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "90462ba4-bc02-49ee-be41-68a137a25182",
+      "name": "Legemeton",
+      "input": "236236H",
+      "damage": "1000×2, 500, 2000 [1000, 2500]",
+      "frameData": {
+        "startup": "8+5",
+        "active": "4(18)9",
+        "recovery": "30",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1~16 All",
+      "type": "Skybound Arts"
+    },
+    {
+      "id": "26fe1f4b-05c0-43aa-8cd4-f56c17d5ca62",
+      "name": "M Asmodeus",
+      "input": "214M",
+      "damage": "700, 700",
+      "frameData": {
+        "startup": "21",
+        "active": "4",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "4adce566-ac91-4051-813c-341af78def70",
+      "name": "M Everyone's A Little Crooked",
+      "input": "236X~4M",
+      "damage": "150×3",
+      "frameData": {
+        "startup": "13",
+        "active": "9×3",
+        "recovery": "Total 38",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "44fc4cf4-2476-476a-b72c-de3b9f58b2ef",
+      "name": "M Goetia",
+      "input": "236M",
+      "damage": "1200",
+      "frameData": {
+        "startup": "17",
+        "active": "Until hit",
+        "recovery": "Total 43",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "7829eef6-6d15-46ed-8b6f-8f28fb9d82c4",
+      "name": "M Notoria",
+      "input": "623M",
+      "damage": "1000, 500",
+      "frameData": {
+        "startup": "38",
+        "active": "5",
+        "recovery": "10",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "11~22 All",
+      "type": "Special Moves"
+    },
+    {
+      "id": "6366a717-5b80-4778-883f-cd5422405da1",
+      "name": "M Vassago",
+      "input": "632146M",
+      "damage": "500, 2000",
+      "frameData": {
+        "startup": "46",
+        "active": "3",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "3f0603a2-bc61-4de8-ad3c-1d2bd04864d2",
+      "name": "Raging Chain",
+      "input": "MH~MH",
+      "damage": "1000",
+      "frameData": {
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "91f96f77-ec6c-4492-bfaf-f84b5fc889dd",
+      "name": "Raging Strike",
+      "input": "MH",
+      "damage": "1500",
+      "frameData": {
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "advantage": "-"
+      },
+      "guard": "Guard Crush 45 [52]",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "326d18bd-8630-4af3-b7c6-63caf804452b",
+      "name": "Ultimate Asmodeus",
+      "input": "214U",
+      "damage": "1500×2",
+      "frameData": {
+        "startup": "13",
+        "active": "2",
+        "recovery": "13",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "96ca74f9-af87-48c7-a32f-61a2d8fa3c98",
+      "name": "Ultimate Goetia",
+      "input": "236U",
+      "damage": "550, 70×15",
+      "frameData": {
+        "startup": "13",
+        "active": "",
+        "recovery": "Total 47",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "412d77ae-4b9f-45f6-b442-88586afa43d2",
+      "name": "Ultimate Notoria",
+      "input": "623U",
+      "damage": "700, 300, 0, 500, 400, 100",
+      "frameData": {
+        "startup": "8",
+        "active": "1(2)4(12)5",
+        "recovery": "24",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-14 All",
+      "type": "Special Moves"
+    },
+    {
+      "id": "b35282ed-72f5-4a6e-8784-1aa1017c0869",
+      "name": "Ultimate Vassago",
+      "input": "632146U",
+      "damage": "0",
+      "frameData": {
+        "startup": "3",
+        "active": "85",
+        "recovery": "48",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "3-87 Catch All",
+      "type": "Special Moves"
+    },
+    {
+      "id": "22c99b21-94f7-490d-903e-03b819f93bfc",
+      "name": "Ultimate Vassago Catch",
+      "input": "632146U Catch",
+      "damage": "900×2",
+      "frameData": {
+        "startup": "Jump+11",
+        "active": "Until L+2",
+        "recovery": "11",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-5 All",
+      "type": "Special Moves"
+    },
+    {
+      "id": "53bce235-bebe-460b-8adb-81a2b83371b4",
+      "name": "Ultimate Vassago Throw",
+      "input": "632146U Throw",
+      "damage": "500, 1000, 1500",
+      "frameData": {
+        "startup": "8",
+        "active": "4",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "1-11 All",
+      "type": "Special Moves"
     }
   ]
 }

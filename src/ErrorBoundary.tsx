@@ -63,8 +63,7 @@ export class ErrorBoundary extends React.Component<Props, State> {
           <button
             onClick={() => {
               this.setState({ hasError: false, error: null });
-              window.history.pushState({}, '', '/');
-              window.location.reload();
+              window.history.back();
             }}
             style={{
               padding: '0.75rem 2rem',
@@ -79,7 +78,7 @@ export class ErrorBoundary extends React.Component<Props, State> {
               transition: 'all 0.25s ease',
             }}
           >
-            ← Return to Home
+            ← Go Back
           </button>
         </div>
       );

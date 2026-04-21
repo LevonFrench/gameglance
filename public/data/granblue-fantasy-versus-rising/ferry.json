@@ -1,52 +1,892 @@
 {
+  "name": "Ferry",
+  "character": "ferry",
+  "game": "Granblue Fantasy Versus: Rising",
   "movesList": [
     {
-      "id": "n_0",
+      "id": "a82d19c5-e279-478d-8486-24ef1ce385d6",
       "name": "Light Attack",
-      "type": "normal",
-      "input": "L"
+      "input": "L",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_1",
+      "id": "090f1e4c-55fe-406e-9afd-c61e700cd413",
       "name": "Medium Attack",
-      "type": "normal",
-      "input": "M"
+      "input": "M",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_2",
+      "id": "e219753d-e49c-4052-ad06-72d0ef1b2738",
       "name": "Heavy Attack",
-      "type": "normal",
-      "input": "H"
+      "input": "H",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_3",
+      "id": "d2f3d860-8113-4d1c-9285-4f6aa23220ac",
       "name": "Unique Action",
-      "type": "normal",
-      "input": "U"
+      "input": "U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_4",
+      "id": "ab29c4c0-53da-4197-ba4f-b96723662560",
       "name": "Skill",
-      "type": "normal",
-      "input": "S"
+      "input": "S",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "n_5",
+      "id": "8f833fef-efc6-407a-80b2-d43a241e09a2",
       "name": "Guard",
-      "type": "normal",
-      "input": "G"
+      "input": "G",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "t_0",
+      "id": "a664882e-2635-47d5-b3b4-95728b9b06c5",
       "name": "Forward Throw",
-      "type": "throw",
-      "input": "L+U"
+      "input": "L+U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
     },
     {
-      "id": "t_1",
+      "id": "7c30c4fb-a353-4bd3-8880-0774c1134b96",
       "name": "Back Throw",
-      "type": "throw",
-      "input": "4L+U"
+      "input": "4L+U",
+      "damage": "-",
+      "frameData": {
+        "startup": "-",
+        "active": "-",
+        "recovery": "-",
+        "advantage": "-"
+      },
+      "guard": "-",
+      "invuln": "-",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "c7c53e1f-8d3a-4bf7-8236-79df049d4d78",
+      "name": "Crouching Heavy",
+      "input": "2H",
+      "damage": "1300",
+      "frameData": {
+        "startup": "14",
+        "active": "6",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "dd3cb31c-69c1-4db3-a9d1-1ccf0a47e597",
+      "name": "Crouching Light",
+      "input": "2L",
+      "damage": "400",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "10",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "4b8a9ac5-aa0e-458d-b6c3-04058df589b2",
+      "name": "Crouching Medium",
+      "input": "2M",
+      "damage": "800",
+      "frameData": {
+        "startup": "11",
+        "active": "5",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "7b607d23-9a81-43aa-8390-5ef4475b534d",
+      "name": "Crouching Unique",
+      "input": "2U",
+      "damage": "1000",
+      "frameData": {
+        "startup": "10",
+        "active": "6",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "59352dfe-8668-4207-a401-9808340f3cbf",
+      "name": "Dash Heavy",
+      "input": "66H",
+      "damage": "1200",
+      "frameData": {
+        "startup": "13",
+        "active": "4",
+        "recovery": "32",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "3d720ac7-70c7-4052-bf1a-542a8eebb9c3",
+      "name": "Dash Light",
+      "input": "66L",
+      "damage": "600",
+      "frameData": {
+        "startup": "8",
+        "active": "3",
+        "recovery": "10 [15]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "39890f49-f14a-46cc-9823-b21f5ea43652",
+      "name": "Dash Medium",
+      "input": "66M",
+      "damage": "1100",
+      "frameData": {
+        "startup": "26",
+        "active": "6",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "6a4cddea-d2a2-4796-b554-491cbd63d3b3",
+      "name": "Close Heavy",
+      "input": "c.H",
+      "damage": "1400",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "f8975013-9fa4-4365-9b1d-9622b9cc59ee",
+      "name": "Close Light",
+      "input": "c.L",
+      "damage": "600",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "8",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "9e59d3f4-5555-47de-b6b9-821e563438dc",
+      "name": "Close Medium",
+      "input": "c.M",
+      "damage": "1100",
+      "frameData": {
+        "startup": "7",
+        "active": "6",
+        "recovery": "9",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "8e334183-f7eb-4bc5-931a-1eb9c02078d5",
+      "name": "Double Attack",
+      "input": "c.XX",
+      "damage": "700",
+      "frameData": {
+        "startup": "9",
+        "active": "3",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "b1164dff-6b37-49d6-b6cb-cfa22171df0e",
+      "name": "Triple Attack (Overhead)",
+      "input": "c.XX6H",
+      "damage": "1000",
+      "frameData": {
+        "startup": "18",
+        "active": "3",
+        "recovery": "22",
+        "advantage": "-"
+      },
+      "guard": "High",
+      "invuln": "1-20 Throw",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "5495b6df-a8bd-4c23-ad7c-fce911ad7963",
+      "name": "Triple Attack (Low)",
+      "input": "c.XX6M",
+      "damage": "1000",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Low",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "f981a0c7-74ca-4233-ab54-6be7cf36500e",
+      "name": "Triple Attack",
+      "input": "c.XXX",
+      "damage": "1000",
+      "frameData": {
+        "startup": "12",
+        "active": "3",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "b91f8b98-b26b-45a3-a4a7-463c32b8b997",
+      "name": "Far Heavy",
+      "input": "f.H",
+      "damage": "1200",
+      "frameData": {
+        "startup": "12",
+        "active": "4",
+        "recovery": "28",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "8b4d320d-c56a-4a40-8a46-085d479c52b9",
+      "name": "Far Light",
+      "input": "f.L",
+      "damage": "600",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "12",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "d118f987-f887-4b96-bf5f-272b4a700334",
+      "name": "Far Medium",
+      "input": "f.M",
+      "damage": "800",
+      "frameData": {
+        "startup": "9",
+        "active": "5",
+        "recovery": "18",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "cebb5243-f203-44bd-8a16-230da033c9b1",
+      "name": "Jumping Heavy",
+      "input": "j.H",
+      "damage": "750",
+      "frameData": {
+        "startup": "10",
+        "active": "4",
+        "recovery": "Until L+1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "0493d1a7-5263-4d5f-aff5-a7692da4058a",
+      "name": "Jumping Light",
+      "input": "j.L",
+      "damage": "400",
+      "frameData": {
+        "startup": "7",
+        "active": "4",
+        "recovery": "Until L+1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "2393b0db-49e4-48a6-8104-36f8ae27035e",
+      "name": "Jumping Medium",
+      "input": "j.M",
+      "damage": "800",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "Until L+1",
+        "advantage": "-"
+      },
+      "guard": "High/Air",
+      "invuln": "",
+      "type": "Normal Moves"
+    },
+    {
+      "id": "00077c40-66bb-4e10-ae99-3dfd47c786e7",
+      "name": "Aetheryte Requiescat",
+      "input": "236236U",
+      "damage": "3480, 120×6, 1800 [1000, 300×6, 1200]",
+      "frameData": {
+        "startup": "7+6",
+        "active": "14",
+        "recovery": "42",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-12 All",
+      "type": "Skybound Arts"
+    },
+    {
+      "id": "cd4cb13e-06cc-48d4-b333-0537c11e52a2",
+      "name": "Airthrow",
+      "input": "j.LU",
+      "damage": "2500",
+      "frameData": {
+        "startup": "5",
+        "active": "5",
+        "recovery": "Until L+6",
+        "advantage": "-"
+      },
+      "guard": "Airthrow",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "60b5a20c-d28e-4b0e-b439-3494b32e4dc4",
+      "name": "Brave Counter",
+      "input": "BC",
+      "damage": "500",
+      "frameData": {
+        "startup": "10 [18]",
+        "active": "3 [2]",
+        "recovery": "19 [35]",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-20 Full [1-54 Full]",
+      "type": "System"
+    },
+    {
+      "id": "85b1e030-97bc-486a-a519-88d03d33038c",
+      "name": "Ein Ball",
+      "input": "5U",
+      "damage": "100×15",
+      "frameData": {
+        "startup": "17",
+        "active": "1×9,2×5,1",
+        "recovery": "20",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "834c2b53-5a71-44aa-b94a-611c20308688",
+      "name": "Ghostwing",
+      "input": "j.8U",
+      "damage": "",
+      "frameData": {
+        "startup": "",
+        "active": "",
+        "recovery": "Total 43/37",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "2a7e6b4a-4d87-4acd-8493-3da90b95b5a5",
+      "name": "Ground Throw",
+      "input": "LU",
+      "damage": "2500",
+      "frameData": {
+        "startup": "4",
+        "active": "3",
+        "recovery": "26",
+        "advantage": "-"
+      },
+      "guard": "Throw",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "cc4710e2-1abe-4fdd-a563-23a910668ed2",
+      "name": "H Beppo, Sic 'Em!",
+      "input": "623H",
+      "damage": "500×3",
+      "frameData": {
+        "startup": "11",
+        "active": "3×2,6",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "b937cde9-f29f-47a1-9c12-53e5d63a3506",
+      "name": "H Geegee, Get 'Em!",
+      "input": "22H",
+      "damage": "200×5",
+      "frameData": {
+        "startup": "70",
+        "active": "38",
+        "recovery": "Total 40",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "7a91402a-7787-4a8e-842f-122a560b0e27",
+      "name": "H Gespenst",
+      "input": "236H",
+      "damage": "800, [800]",
+      "frameData": {
+        "startup": "20",
+        "active": "10",
+        "recovery": "30",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "Hit-End All",
+      "type": "Special Moves"
+    },
+    {
+      "id": "844696a6-b6e1-4f65-ade8-55d2d9e27ae9",
+      "name": "H Trombe",
+      "input": "214H",
+      "damage": "550, 150×5",
+      "frameData": {
+        "startup": "16",
+        "active": "3×5,6",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "519fce05-b537-4fff-b010-fe4b344eb20f",
+      "name": "Heel",
+      "input": "236X~4X",
+      "damage": "0",
+      "frameData": {
+        "startup": "10",
+        "active": "3",
+        "recovery": "15",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "d8bc3f57-5c2d-446d-9670-64dca7a8e2d2",
+      "name": "Hinrichten",
+      "input": "214214H",
+      "damage": "",
+      "frameData": {
+        "startup": "7+0",
+        "active": "420",
+        "recovery": "1",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "6-7 All",
+      "type": "Skybound Arts"
+    },
+    {
+      "id": "f8e884a2-560b-4c7e-89be-dd0b44d2113b",
+      "name": "L Beppo, Sic 'Em!",
+      "input": "623L",
+      "damage": "1000",
+      "frameData": {
+        "startup": "6",
+        "active": "12",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "cdf41d05-68fc-4665-bfba-c37776840145",
+      "name": "L Geegee, Get 'Em!",
+      "input": "22L",
+      "damage": "700, 100×5",
+      "frameData": {
+        "startup": "22",
+        "active": "38(44)38",
+        "recovery": "Total 45",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "69b165fc-a8d3-4e70-ad17-3765a6a58660",
+      "name": "L Gespenst",
+      "input": "236L",
+      "damage": "600, [400]",
+      "frameData": {
+        "startup": "15",
+        "active": "7",
+        "recovery": "32 (35)",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "Hit-End All",
+      "type": "Special Moves"
+    },
+    {
+      "id": "6a854ac7-d188-4ef0-a3b5-078eaeae768e",
+      "name": "L Trombe",
+      "input": "214L",
+      "damage": "700, 150×2",
+      "frameData": {
+        "startup": "16",
+        "active": "3×2,6",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "d2312407-0845-438f-9c93-f1e5024308c2",
+      "name": "M Beppo, Sic 'Em!",
+      "input": "623M",
+      "damage": "800, 500",
+      "frameData": {
+        "startup": "13",
+        "active": "3,9",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "845bab67-eaa8-4051-8a45-5d513394dd73",
+      "name": "M Geegee, Get 'Em!",
+      "input": "22M",
+      "damage": "700, 100×5",
+      "frameData": {
+        "startup": "22",
+        "active": "51(44)38",
+        "recovery": "Total 45",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "1c6bf064-4921-4e5d-9b7f-8969902925fc",
+      "name": "M Gespenst",
+      "input": "236M",
+      "damage": "600, [800]",
+      "frameData": {
+        "startup": "29~44",
+        "active": "10",
+        "recovery": "30",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "Hit-End All",
+      "type": "Special Moves"
+    },
+    {
+      "id": "ad99d99e-2e80-4df6-bb27-8eb2e828883a",
+      "name": "M Trombe",
+      "input": "214M",
+      "damage": "550, 150×5",
+      "frameData": {
+        "startup": "21",
+        "active": "3×5,6",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "a16e348c-5128-4787-b74e-207de7e12e2d",
+      "name": "Raging Chain",
+      "input": "MH~MH",
+      "damage": "1000",
+      "frameData": {
+        "startup": "13",
+        "active": "5",
+        "recovery": "17",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "8f77db0e-1614-42ec-9de7-dd5ad784889b",
+      "name": "Raging Strike",
+      "input": "MH",
+      "damage": "1500",
+      "frameData": {
+        "startup": "28 (1)",
+        "active": "1",
+        "recovery": "37",
+        "advantage": "-"
+      },
+      "guard": "Guard Crush 45 [52]",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "15a3cbbd-47da-4929-a8fe-f6cfb49031b8",
+      "name": "Spectral Dive",
+      "input": "j.5U",
+      "damage": "450×2",
+      "frameData": {
+        "startup": "15",
+        "active": "Until L",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "4ca1c872-a6b1-4d78-81fd-fe670255c62d",
+      "name": "Spectral Dive (4)",
+      "input": "j.4U",
+      "damage": "900",
+      "frameData": {
+        "startup": "13",
+        "active": "Until L",
+        "recovery": "16",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "4b649c65-3862-42a8-9b49-2df28d9189c4",
+      "name": "Spectral Dive (6)",
+      "input": "j.6U",
+      "damage": "450×2",
+      "frameData": {
+        "startup": "15",
+        "active": "Until L",
+        "recovery": "21",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "System"
+    },
+    {
+      "id": "aa9cb082-ec18-46c8-8c68-56a2e1e84c71",
+      "name": "Ultimate Beppo, Sic 'Em!",
+      "input": "623U",
+      "damage": "800, 200×2, 800 [800, 200]",
+      "frameData": {
+        "startup": "8",
+        "active": "3×2,6 [6]",
+        "recovery": "36",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "1-20 [1-14] All",
+      "type": "Special Moves"
+    },
+    {
+      "id": "7629ad95-266e-442a-a448-379a0d8a6b9f",
+      "name": "Ultimate Geegee, Get 'Em!",
+      "input": "22U",
+      "damage": "300×5",
+      "frameData": {
+        "startup": "13",
+        "active": "",
+        "recovery": "Total 54~59",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "540cb7d3-a477-486f-ad26-810af2a3cc44",
+      "name": "Ultimate Gespenst",
+      "input": "236U",
+      "damage": "1000, 400x2, 1000",
+      "frameData": {
+        "startup": "16",
+        "active": "6×2 [9]",
+        "recovery": "30",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "08259d98-5985-4e71-8e7c-d5cbc300491c",
+      "name": "Ultimate Trombe",
+      "input": "214U",
+      "damage": "1200, 100x8",
+      "frameData": {
+        "startup": "11",
+        "active": "1,3×8 [8]",
+        "recovery": "19",
+        "advantage": "-"
+      },
+      "guard": "Mid",
+      "invuln": "",
+      "type": "Special Moves"
+    },
+    {
+      "id": "497a3cf9-a051-43de-a434-fb84644eab75",
+      "name": "Vergiften",
+      "input": "236236H",
+      "damage": "300×7, 400",
+      "frameData": {
+        "startup": "7+10",
+        "active": "",
+        "recovery": "Total 41",
+        "advantage": "-"
+      },
+      "guard": "All",
+      "invuln": "7 All",
+      "type": "Skybound Arts"
+    },
+    {
+      "id": "e1b2e546-8d61-45de-b121-231f8e10835d",
+      "name": "Whip It Good",
+      "input": "236X~X",
+      "damage": "600/1000/1000",
+      "frameData": {
+        "startup": "13/22/22",
+        "active": "8",
+        "recovery": "24",
+        "advantage": "-"
+      },
+      "guard": "",
+      "invuln": "",
+      "type": "Special Moves"
     }
   ]
 }

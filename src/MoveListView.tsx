@@ -521,7 +521,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         zIndex: 0,
         overflow: 'hidden',
       }}>
-        {Array(60).fill(characterData.character.toUpperCase()).map((text, i) => (
+        {Array(60).fill((characterData.character || characterData.name || characterId || '').toUpperCase()).map((text, i) => (
           <span key={i} style={{ whiteSpace: 'nowrap' }}>{text}</span>
         ))}
       </div>
