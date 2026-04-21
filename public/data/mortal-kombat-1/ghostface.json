@@ -1,44 +1,74 @@
 {
   "name": "Ghostface",
-  "moves": {
-    "Normal Moves": [
-      {
-        "name": "1",
-        "input": "1"
-      },
-      {
-        "name": "2",
-        "input": "2"
-      },
-      {
-        "name": "3",
-        "input": "3"
-      },
-      {
-        "name": "4",
-        "input": "4"
-      },
-      {
-        "name": "BL",
-        "input": "BL"
-      },
-      {
-        "name": "KAMEO",
-        "input": "KAMEO"
-      },
-      {
-        "name": "TH",
-        "input": "TH"
-      },
-      {
-        "name": "FS",
-        "input": "FS"
-      },
-      {
-        "name": "EN",
-        "input": "EN"
-      }
-    ]
-  },
-  "game": "Mortal Kombat 1"
+  "moves": {},
+  "character": "Ghostface",
+  "game": "Mortal Kombat 1",
+  "movesList": [
+    {
+      "id": "knife-toss",
+      "name": "Knife Toss",
+      "type": "special",
+      "input": "b f 1"
+    },
+    {
+      "id": "crawl",
+      "name": "Crawl",
+      "type": "special",
+      "input": "d d 3"
+    },
+    {
+      "id": "vanish",
+      "name": "Vanish",
+      "type": "special",
+      "input": "d u"
+    },
+    {
+      "id": "overhead-slash",
+      "name": "Overhead Slash",
+      "type": "special",
+      "input": "b f 2"
+    },
+    {
+      "id": "low-slash",
+      "name": "Low Slash",
+      "type": "special",
+      "input": "b d 4"
+    },
+    {
+      "id": "fatal-blow",
+      "name": "Fatal Blow",
+      "type": "special",
+      "input": "EN+BL"
+    },
+    {
+      "id": "slash-and-stab",
+      "name": "Slash and Stab (String)",
+      "type": "string",
+      "input": "1 1 2"
+    },
+    {
+      "id": "scary-movie",
+      "name": "Scary Movie (String)",
+      "type": "string",
+      "input": "f 2 1"
+    },
+    {
+      "id": "fatality-1",
+      "name": "Fatality 1 (Who's Next)",
+      "type": "finisher",
+      "input": "d f b 1 (Mid)"
+    },
+    {
+      "id": "fatality-2",
+      "name": "Fatality 2 (Final Girl)",
+      "type": "finisher",
+      "input": "f b d 4 (Close)"
+    },
+    {
+      "id": "animality",
+      "name": "Animality",
+      "type": "finisher",
+      "input": "d d b 2 (Mid)"
+    }
+  ]
 }

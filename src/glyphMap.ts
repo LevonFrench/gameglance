@@ -44,8 +44,8 @@ const GLYPH_LABEL_MAP: Record<string, Record<ControllerType, string>> = {
   'down-back': { playstation: '↙', xbox: '↙', arcade: '↙', switch: '↙', neogeo: '↙', wii: '↙', mk: '↙', genesis: '↙', snes: '↙', sfami: '↙', cps: '↙', tekken: '↙' },
   'up-forward': { playstation: '↗', xbox: '↗', arcade: '↗', switch: '↗', neogeo: '↗', wii: '↗', mk: '↗', genesis: '↗', snes: '↗', sfami: '↗', cps: '↗', tekken: '↗' },
   'up-back': { playstation: '↖', xbox: '↖', arcade: '↖', switch: '↖', neogeo: '↖', wii: '↖', mk: '↖', genesis: '↖', snes: '↖', sfami: '↖', cps: '↖', tekken: '↖' },
-  '360': { playstation: '↻', xbox: '↻', arcade: '↻', switch: '↻', neogeo: '↻', wii: '↻', mk: '↻', genesis: '↻', snes: '↻', sfami: '↻', cps: '↻', tekken: '↻' },
-  '720': { playstation: '↻↻', xbox: '↻↻', arcade: '↻↻', switch: '↻↻', neogeo: '↻↻', wii: '↻↻', mk: '↻↻', genesis: '↻↻', snes: '↻↻', sfami: '↻↻', cps: '↻↻', tekken: '↻↻' },
+  '360': { playstation: '360', xbox: '360', arcade: '360', switch: '360', neogeo: '360', wii: '360', mk: '360', genesis: '360', snes: '360', sfami: '360', cps: '360', tekken: '360' },
+  '720': { playstation: '720', xbox: '720', arcade: '720', switch: '720', neogeo: '720', wii: '720', mk: '720', genesis: '720', snes: '720', sfami: '720', cps: '720', tekken: '720' },
   'AST1': { playstation: 'L1', xbox: 'LB', arcade: 'A1', switch: 'L', neogeo: 'A', wii: '1', mk: 'A1', genesis: 'Z', snes: 'L', sfami: 'L', cps: 'A1', tekken: 'A1' },
   'AST2': { playstation: 'L2', xbox: 'LT', arcade: 'A2', switch: 'ZL', neogeo: 'B', wii: '2', mk: 'A2', genesis: 'C', snes: 'R', sfami: 'R', cps: 'A2', tekken: 'A2' },
   'KAMEO': { playstation: 'R1', xbox: 'RB', arcade: 'KAMEO', switch: 'R', neogeo: 'A', wii: '1', mk: 'KAMEO', genesis: 'Z', snes: 'L', sfami: 'L', cps: 'A1', tekken: 'R1' },
@@ -213,6 +213,8 @@ export const getGlyphColor = (input: string, controller: ControllerType): string
   // Fallback to anime color mappings if standard controller didn't catch it
   const fallback = getAnimeColor();
   if (fallback) return fallback;
+
+  if (['360', '720'].includes(normInput)) return '#f59e0b'; // Bright gold/amber for 360/720
 
   return '#1f2937'; // Arcade generic
 };

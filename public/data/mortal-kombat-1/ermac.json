@@ -40,5 +40,67 @@
       }
     ]
   },
-  "game": "Mortal Kombat 1"
+  "game": "Mortal Kombat 1",
+  "movesList": [
+    {
+      "name": "Levitate",
+      "input": "d d 3",
+      "type": "special",
+      "id": "levitate"
+    },
+    {
+      "name": "Telekinetic Slam",
+      "input": "d b 1",
+      "type": "special",
+      "id": "telekinetic-slam"
+    },
+    {
+      "name": "Soul Burst",
+      "input": "b f 2",
+      "type": "special",
+      "id": "soul-burst"
+    },
+    {
+      "name": "Teleport",
+      "input": "d b 4",
+      "type": "special",
+      "id": "teleport"
+    },
+    {
+      "name": "Fatal Blow",
+      "input": "EN+BL",
+      "type": "special",
+      "id": "fatal-blow"
+    },
+    {
+      "name": "We Are Many (String)",
+      "input": "1 2 3",
+      "type": "string",
+      "id": "we-are-many-string"
+    },
+    {
+      "name": "Macabre (String)",
+      "input": "f 4 2",
+      "type": "string",
+      "id": "macabre-string"
+    },
+    {
+      "name": "Fatality 1 (Vitruvian Macabre)",
+      "input": "d f d 4 (Mid)",
+      "type": "finisher",
+      "id": "fatality-1-vitruvian-macabre"
+    },
+    {
+      "name": "Fatality 2",
+      "input": "b f b 2 (Mid)",
+      "type": "finisher",
+      "id": "fatality-2"
+    },
+    {
+      "id": "animality",
+      "name": "Animality",
+      "input": "d d b 3 (Mid)",
+      "type": "finisher"
+    }
+  ]
 }

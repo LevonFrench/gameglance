@@ -7,7 +7,7 @@ interface GlyphSequenceProps {
   inputs: string[];
   controller: ControllerType;
   large?: boolean;
-  notationSystem?: 'numpad' | 'traditional' | 'mk';
+  notationSystem?: 'numpad' | 'traditional' | 'mk' | 'tekken';
   isCombo?: boolean;
 }
 
@@ -16,13 +16,156 @@ const DIRECTION_ROTATIONS: Record<string, string> = {
   '←': '180', '↖': '225', '↑': '270', '↗': '315',
 };
 
-const NUMPAD_MAP: Record<string, string> = {
-  '1': 'down-back', '2': 'down', '3': 'down-forward',
-  '4': 'back', '5': 'neutral', '6': 'forward', '7': 'up-back',
-  '8': 'up', '9': 'up-forward'
+
+
+const tokenizeMKInputs = (inputs: string[], isCombo: boolean = false): string[] => {
+  const result: string[] = [];
+  
+  for (const raw of inputs) {
+    if (['360', '720', '[Cancel]'].includes(raw)) {
+      result.push(raw);
+      continue;
+    }
+
+    let skipNextSpace = false;
+    const tokens = raw.replace(/,/g, ' ').replace(/\+/g, ' + ').split(/(\+| |~|\[Cancel\]|-|\/|>)/g).filter(Boolean);
+    
+    for (let i = 0; i < tokens.length; i++) {
+      let t = tokens[i];
+      if (t === ' ') { 
+        if (skipNextSpace) { skipNextSpace = false; continue; }
+        if (isCombo) { result.push('[Cancel]'); }
+        continue; 
+      }
+      
+      if (t.toUpperCase() === 'ANY') { skipNextSpace = true; }
+      if (t === '-') { continue; }
+      if (t === '~' || t === '>' || t === ',') { result.push('[Cancel]'); continue; }
+      if (t === '/') { result.push('or'); continue; }
+      if (t === '+') { result.push('+'); continue; }
+      if (t === '[Cancel]') { result.push(t); continue; }
+
+      let prefix = '';
+      if (t.startsWith('j.')) { prefix = 'j.'; t = t.substring(2); }
+      else if (t.startsWith('en.j.')) { prefix = 'en.j.'; t = t.substring(5); }
+      else if (t.startsWith('en.')) { prefix = 'en.'; t = t.substring(3); }
+      else if (t.toLowerCase().startsWith('air')) { prefix = 'j.'; t = t.substring(3).trim(); }
+      
+      if (prefix) result.push(prefix);
+      if (!t) continue;
+
+      const normT = t.toUpperCase();
+      
+      const dirMap: Record<string, string> = {
+        'D': 'down', 'F': 'forward', 'B': 'back', 'U': 'up',
+        'DF': 'down-forward', 'DB': 'down-back', 'UF': 'up-forward', 'UB': 'up-back',
+        'DOWN': 'down', 'FORWARD': 'forward', 'BACK': 'back', 'UP': 'up',
+        'DOWN-FORWARD': 'down-forward', 'DOWN-BACK': 'down-back'
+      };
+      
+      if (dirMap[normT]) {
+        result.push(dirMap[normT]);
+        continue;
+      }
+      
+      if (['1', '2', '3', '4', 'BL', 'KAMEO', 'FS', 'TH', 'EN'].includes(normT)) {
+        result.push(normT);
+        continue;
+      }
+      
+      const match = normT.match(/^(DF|DB|UF|UB|D|F|B|U)?(BL|KAMEO|FS|TH|EN|1|2|3|4)?$/);
+      if (match && (match[1] || match[2])) {
+        if (match[1]) result.push(dirMap[match[1]]);
+        if (match[2]) result.push(match[2]);
+        continue;
+      }
+      
+      result.push(t);
+    }
+  }
+  return result;
 };
 
-const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional', isCombo: boolean = false): string[] => {
+const tokenizeTekkenInputs = (inputs: string[], isCombo: boolean = false): string[] => {
+  const result: string[] = [];
+  
+  for (const raw of inputs) {
+    if (['360', '720', '[Cancel]'].includes(raw)) {
+      result.push(raw);
+      continue;
+    }
+
+    let skipNextSpace = false;
+    const tokens = raw.replace(/,/g, ' ').replace(/\+/g, ' + ').split(/(\+| |~|\[Cancel\]|-|>)/g).filter(Boolean);
+    
+    for (let i = 0; i < tokens.length; i++) {
+      let t = tokens[i];
+      if (t === ' ') { 
+        if (skipNextSpace) { skipNextSpace = false; continue; }
+        if (isCombo) { result.push('[Cancel]'); }
+        continue; 
+      }
+      
+      if (t === '-') { continue; }
+      if (t === '~' || t === '>' || t === ',') { result.push('[Cancel]'); continue; }
+      if (t === '+') { result.push('+'); continue; }
+      if (t === '[Cancel]') { result.push(t); continue; }
+
+      let prefix = '';
+      if (t.startsWith('j.')) { prefix = 'j.'; t = t.substring(2); }
+      else if (t.startsWith('fc')) { prefix = 'cr.'; t = t.substring(2); }
+      else if (t.startsWith('ws')) { prefix = 'st.'; t = t.substring(2); }
+
+      if (prefix) result.push(prefix);
+      if (!t) continue;
+
+      const normT = t.toLowerCase();
+      
+      const dirMap: Record<string, string> = {
+        'd': 'down', 'f': 'forward', 'b': 'back', 'u': 'up',
+        'd/f': 'down-forward', 'df': 'down-forward',
+        'd/b': 'down-back', 'db': 'down-back',
+        'u/f': 'up-forward', 'uf': 'up-forward',
+        'u/b': 'up-back', 'ub': 'up-back',
+        'qcf': '236', 'qcb': '214', 'hcf': '41236', 'hcb': '63214'
+      };
+      
+      if (dirMap[normT]) {
+        const mapped = dirMap[normT];
+        if (mapped.match(/^[1-9]+$/)) {
+          for (const d of mapped) result.push(d);
+        } else {
+          result.push(mapped);
+        }
+        continue;
+      }
+      
+      if (['1', '2', '3', '4', '1+2', '3+4', 'all', 'p', 'k'].includes(normT)) {
+        result.push(normT.toUpperCase());
+        continue;
+      }
+      
+      const match = normT.match(/^(d\/f|d\/b|u\/f|u\/b|df|db|uf|ub|d|f|b|u|qcf|qcb)?(1|2|3|4|1\+2|3\+4|p|k)?$/);
+      if (match && (match[1] || match[2])) {
+        if (match[1]) {
+           const m1 = dirMap[match[1]];
+           if (m1.match(/^[1-9]+$/)) {
+             for (const d of m1) result.push(d);
+           } else {
+             result.push(m1);
+           }
+        }
+        if (match[2]) result.push(match[2].toUpperCase());
+        continue;
+      }
+      
+      result.push(t);
+    }
+  }
+  return result;
+};
+
+const tokenizeStandardInputs = (inputs: string[], notationSystem: string = 'traditional', isCombo: boolean = false): string[] => {
   const result: string[] = [];
 
   const REVERSE_NUMPAD_MAP: Record<string, string> = {
@@ -67,19 +210,18 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
         continue; 
       }
       
-      // If the current token is ANY, skip the next space so ANY P stays together on the same line
       if (t.toUpperCase() === 'ANY') {
         skipNextSpace = true;
       }
 
-      if (t === '-') { continue; } // Ignore hyphens
+      if (t === '-') { continue; }
       if (t === ',') { result.push('[Cancel]'); continue; }
       if (t === '~') { result.push('[Cancel]'); continue; }
       if (t === '>') { result.push('[Cancel]'); continue; }
       if (t === '/') { result.push('or'); continue; }
       if (t === '+') { result.push('+'); continue; }
       if (t === '[Cancel]') { result.push(t); continue; }
-      if (t === '5') { continue; } // Skip standalone 5
+      if (t === '5') { continue; }
 
       if (isDirectionWord(t)) {
         if (t === 'neutral') continue;
@@ -118,37 +260,59 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
       else if (processingT.startsWith('r.')) { prefix = 'r.'; processingT = processingT.substring(2); }
       else if (processingT.startsWith('w.')) { prefix = 'w.'; processingT = processingT.substring(2); }
 
-      const cleanT = processingT.replace(/\[|\]/g, ''); // Remove charge brackets for parsing
-
-      const match = cleanT.match(/^([a-zA-Z.+]*?)([1-9]+)([a-zA-Z]*)$/);
+      const cleanT = processingT.replace(/\[|\]/g, ''); 
+      const match = processingT.match(/^([a-zA-Z.+]*?)([\[\]1-9]+)([a-zA-Z]*)$/);
       if (match) {
         if (prefix) result.push(prefix);
         if (match[1]) result.push(match[1]);
 
-        for (const digit of match[2]) {
-          if (digit === '5') continue; // Filter out 5 from numpad sequences like 656 or 5P
-          if (notationSystem === 'numpad') {
-            result.push(digit);
-          } else {
-            if (NUMPAD_MAP[digit]) result.push(NUMPAD_MAP[digit]);
-            else result.push(digit);
+        let pushedDirection = false;
+        let inBracket = false;
+        for (const char of match[2]) {
+          if (char === '[') { inBracket = true; continue; }
+          if (char === ']') { inBracket = false; continue; }
+          
+          if (char === '5') continue;
+          pushedDirection = true;
+          
+          let dir = char;
+          if (notationSystem !== 'numpad') {
+            const NUMPAD_MAP: Record<string, string> = {
+              '1': 'down-back', '2': 'down', '3': 'down-forward',
+              '4': 'back', '5': 'neutral', '6': 'forward', '7': 'up-back',
+              '8': 'up', '9': 'up-forward'
+            };
+            if (NUMPAD_MAP[char]) dir = NUMPAD_MAP[char];
           }
+          
+          if (inBracket) result.push(`[${dir}]`);
+          else result.push(dir);
         }
 
         if (match[3]) {
-          const buttonMatches = match[3].match(/(SD|DR|SP|IAD|V|LP|MP|HP|LK|MK|HK|PP|KK|PPP|KKK|P|K|S|H|D|L|M|A1|A2|A|B|C)/gi);
+          if (pushedDirection) {
+            result.push('+');
+          }
+          const buttonMatches = match[3].match(/(SD|DR|SP|IAD|V|LP|MP|HP|LK|MK|HK|P|K|S|H|D|L|M|A1|A2|A|B|C)/gi);
           if (buttonMatches && buttonMatches.join('') === match[3]) {
-            result.push(...buttonMatches.map(b => b.toUpperCase()));
+            const btns = buttonMatches.map(b => b.toUpperCase());
+            for (let j = 0; j < btns.length; j++) {
+              if (j > 0) result.push('+');
+              result.push(btns[j]);
+            }
           } else {
             result.push(match[3]);
           }
         }
       } else {
-        // No numbers, just text like LPLK
         if (prefix) result.push(prefix);
-        const buttonMatches = cleanT.match(/(SD|DR|SP|IAD|V|LP|MP|HP|LK|MK|HK|PP|KK|PPP|KKK|P|K|S|H|D|L|M|A1|A2|A|B|C)/gi);
+        const buttonMatches = cleanT.match(/(SD|DR|SP|IAD|V|LP|MP|HP|LK|MK|HK|P|K|S|H|D|L|M|A1|A2|A|B|C)/gi);
         if (buttonMatches && buttonMatches.join('') === cleanT) {
-          result.push(...buttonMatches.map(b => b.toUpperCase()));
+          const btns = buttonMatches.map(b => b.toUpperCase());
+          for (let j = 0; j < btns.length; j++) {
+            if (j > 0) result.push('+');
+            result.push(btns[j]);
+          }
         } else {
           result.push(processingT);
         }
@@ -158,7 +322,25 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
   return result;
 };
 
-const renderDirectionalSVG = (label: string, large: boolean, isDark: boolean) => {
+const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional', isCombo: boolean = false): string[] => {
+  const processedInputs = inputs.map(raw => {
+    return raw
+      .replace(/(?<![A-Za-z])PPP(?![A-Za-z])/gi, 'P+P+P')
+      .replace(/(?<![A-Za-z])KKK(?![A-Za-z])/gi, 'K+K+K')
+      .replace(/(?<![A-Za-z])PP(?![A-Za-z])/gi, 'P+P')
+      .replace(/(?<![A-Za-z])KK(?![A-Za-z])/gi, 'K+K');
+  });
+
+  if (notationSystem === 'mk') {
+    return tokenizeMKInputs(processedInputs, isCombo);
+  }
+  if (notationSystem === 'tekken') {
+    return tokenizeTekkenInputs(processedInputs, isCombo);
+  }
+  return tokenizeStandardInputs(processedInputs, notationSystem, isCombo);
+};
+
+const renderDirectionalSVG = (label: string, large: boolean, isDark: boolean, isCharge: boolean = false) => {
   if (label === 'neutral') {
     const size = large ? 44 : 32;
     return (
@@ -174,20 +356,25 @@ const renderDirectionalSVG = (label: string, large: boolean, isDark: boolean) =>
 
   const size = large ? 44 : 32;
 
+  const bgFill = isCharge ? '#eab308' : (isDark ? '#161625' : '#1a1a2e');
+  const bgStroke = isCharge ? '#ca8a04' : (isDark ? '#2a2a40' : '#2a2a40');
+  const arrowColor = isCharge ? '#111' : '#e0e0f0';
+
   return (
     <svg width={size} height={size} viewBox="0 0 24 24" style={{ transform: `rotate(${deg}deg)` }}>
-      <circle cx="12" cy="12" r="10.5" fill={isDark ? '#161625' : '#1a1a2e'} stroke={isDark ? '#2a2a40' : '#2a2a40'} strokeWidth="1.5" />
+      {isCharge && <circle cx="12" cy="12" r="12" fill="#ca8a04" opacity="0.3" />}
+      <circle cx="12" cy="12" r="10.5" fill={bgFill} stroke={bgStroke} strokeWidth="1.5" />
       <path
         d="M12 7 L17 12 L12 17"
         fill="none"
-        stroke={'#e0e0f0'}
+        stroke={arrowColor}
         strokeWidth="2.5"
         strokeLinecap="round"
         strokeLinejoin="round"
       />
       <line
         x1="7" y1="12" x2="16" y2="12"
-        stroke={'#e0e0f0'}
+        stroke={arrowColor}
         strokeWidth="2.5"
         strokeLinecap="round"
       />
@@ -195,17 +382,17 @@ const renderDirectionalSVG = (label: string, large: boolean, isDark: boolean) =>
   );
 };
 
-const getMacroSubButtons = (macro: string, isSNK: boolean): string[] => {
+const getMacroSubButtons = (macro: string): string[] => {
   const norm = macro.toUpperCase().trim();
   if (['P', 'PUNCH'].includes(norm)) return ['P']; // Render as single P
-  if (['PP'].includes(norm)) return isSNK ? ['LP', 'HP'] : ['LP', 'MP'];
-  if (['PPP'].includes(norm)) return isSNK ? ['LP', 'HP'] : ['LP', 'MP', 'HP'];
+  if (['PP'].includes(norm)) return ['PP'];
+  if (['PPP'].includes(norm)) return ['PPP'];
 
   if (['K', 'KICK'].includes(norm)) return ['K']; // Render as single K
-  if (['KK'].includes(norm)) return isSNK ? ['LK', 'HK'] : ['LK', 'MK'];
-  if (['KKK'].includes(norm)) return isSNK ? ['LK', 'HK'] : ['LK', 'MK', 'HK'];
+  if (['KK'].includes(norm)) return ['KK'];
+  if (['KKK'].includes(norm)) return ['KKK'];
 
-  return [];
+  return [macro];
 };
 
 export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller, large = false, notationSystem = 'numpad', isCombo = false }) => {
@@ -235,18 +422,22 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
 
     if (input === '+') {
       return (
-        <span
+        <div
           key={idx}
           style={{
             color: 'var(--text-muted)',
             fontWeight: 800,
-            fontSize: large ? '1.5rem' : '1rem',
+            fontSize: large ? '1.8rem' : '1.2rem',
             margin: `0 ${large ? '4px' : '2px'}`,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            height: large ? '48px' : '30px',
             ...styleOverrides
           }}
         >
           +
-        </span>
+        </div>
       );
     }
 
@@ -268,7 +459,8 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
       'w.': 'WALL',
     };
 
-    if (input in prefixMap) {
+    const lowerInput = input.toLowerCase();
+    if (lowerInput in prefixMap) {
       return (
         <div
           key={idx}
@@ -285,18 +477,25 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
             ...styleOverrides
           }}
         >
-          {prefixMap[input]}
+          {prefixMap[lowerInput]}
         </div>
       );
     }
 
+    let isCharge = false;
+    let rawInput = input;
+    if (rawInput.startsWith('[') && rawInput.endsWith(']')) {
+      isCharge = true;
+      rawInput = rawInput.substring(1, rawInput.length - 1);
+    }
+
     // Numpad directions (1-9) rendered as plain text (Intercept BEFORE getGlyphLabel so '2' doesn't become 'MP')
-    if (notationSystem === 'numpad' && /^[1-9]$/.test(input) && !['tekken', 'mk'].includes(controller)) {
+    if (notationSystem === 'numpad' && /^[1-9]$/.test(rawInput) && !['tekken', 'mk'].includes(controller)) {
       return (
         <span
           key={idx}
           style={{
-            color: 'var(--text-primary)',
+            color: isCharge ? '#eab308' : 'var(--text-primary)',
             fontWeight: 800,
             fontSize: large ? '1.5rem' : '1.1rem',
             fontFamily: "'Outfit', sans-serif",
@@ -304,16 +503,16 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
             ...styleOverrides
           }}
         >
-          {input}
+          {isCharge ? `[${rawInput}]` : rawInput}
         </span>
       );
     }
 
-    const label = getGlyphLabel(input, controller);
-    const iconColor = getGlyphColor(input, controller);
+    const label = getGlyphLabel(rawInput, controller);
+    const iconColor = getGlyphColor(rawInput, controller);
 
     // Direction
-    const svgImage = renderDirectionalSVG(label, large, isDark);
+    const svgImage = renderDirectionalSVG(label, large, isDark, isCharge);
     if (svgImage) {
       return (
         <div
@@ -366,23 +565,33 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
       if (['MP', 'MK', 'RP'].includes(label)) bgColor = '#eab308'; // Yellow
       if (['HP', 'HK'].includes(label)) bgColor = '#3b82f6'; // Blue
 
+      if (['HP', 'HK'].includes(label)) bgColor = '#3b82f6'; // Blue
+
+      const isLongText = label.length >= 3;
+      const isGrapplerMotion = label === '360' || label === '720';
+      const computedWidth = isGrapplerMotion ? btnSize + 28 : (isLongText ? btnSize + 16 : btnSize);
+      const computedRadius = isLongText ? '16px' : '50%';
+      const computedFontSize = large 
+        ? (isGrapplerMotion ? '1.15rem' : (isLongText ? '1rem' : '1.2rem')) 
+        : (isGrapplerMotion ? '0.85rem' : (isLongText ? '0.65rem' : '0.85rem'));
+
       buttonJSX = (
         <div
           style={{
-            width: `${btnSize}px`,
+            width: `${computedWidth}px`,
             height: `${btnSize}px`,
-            borderRadius: '50%',
+            borderRadius: computedRadius,
             background: `radial-gradient(circle at 30% 30%, #ffffff 0%, ${bgColor} 20%, ${bgColor} 80%, #000000 100%)`,
             border: `1.5px solid ${isDark ? '#111' : '#ddd'}`,
-            boxShadow: '0 3px 5px rgba(0,0,0,0.6), inset 0 -4px 6px rgba(0,0,0,0.5)',
+            boxShadow: isGrapplerMotion ? '0 0 15px rgba(245, 158, 11, 0.4), inset 0 -4px 6px rgba(0,0,0,0.5)' : '0 3px 5px rgba(0,0,0,0.6), inset 0 -4px 6px rgba(0,0,0,0.5)',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
             color: '#fff',
-            fontSize: large ? '1.2rem' : '0.85rem',
+            fontSize: computedFontSize,
             fontWeight: 900,
             textShadow: '0 1px 3px rgba(0,0,0,0.9), 0 -1px 0 rgba(0,0,0,0.4)',
-            letterSpacing: '-0.05em',
+            letterSpacing: isGrapplerMotion ? '1px' : (isLongText ? '0' : '-0.05em'),
             flexShrink: 0,
           }}
         >
@@ -390,18 +599,27 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
         </div>
       );
     } else {
+      const isLightBg = iconColor === '#e2e8f0';
+      const isLongText = label.length >= 3;
+      const isGrapplerMotion = label === '360' || label === '720';
+      const computedWidth = isGrapplerMotion ? btnSize + 28 : (isLongText ? btnSize + 16 : btnSize);
+      const computedRadius = isLongText ? '16px' : '50%';
+      const computedFontSize = large 
+        ? (isGrapplerMotion ? '1.1rem' : (isLongText ? '0.9rem' : '1.3rem')) 
+        : (isGrapplerMotion ? '0.8rem' : (isLongText ? '0.6rem' : '0.75rem'));
+
       buttonJSX = (
         <div
           style={{
-            width: `${btnSize}px`,
+            width: `${computedWidth}px`,
             height: `${btnSize}px`,
             backgroundColor: isPlayStation ? (isDark ? '#161625' : '#1a1a2e') : iconColor,
-            borderRadius: '50%',
-            color: isPlayStation ? iconColor : '#fff',
+            borderRadius: computedRadius,
+            color: isPlayStation ? iconColor : (isLightBg ? '#1e293b' : '#fff'),
             fontWeight: 900,
-            fontSize: large ? '1.3rem' : '0.75rem',
+            fontSize: computedFontSize,
             boxShadow: `
-              0 3px 6px rgba(0,0,0,${isDark ? '0.4' : '0.15'}),
+              ${isGrapplerMotion ? '0 0 15px rgba(245, 158, 11, 0.5)' : `0 3px 6px rgba(0,0,0,${isDark ? '0.4' : '0.15'})`},
               inset 0 -3px 0 rgba(0,0,0,0.2),
               inset 0 2px 0 rgba(255,255,255,${isDark ? '0.06' : (isPlayStation ? '0.08' : '0.3')}),
               0 0 0 1.5px ${isPlayStation ? iconColor + '25' : 'rgba(0,0,0,0.2)'}
@@ -411,7 +629,8 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
             justifyContent: 'center',
             textShadow: isPlayStation
               ? `0 0 10px ${iconColor}50, 0 1px 3px rgba(0,0,0,0.8)`
-              : '0 1px 3px rgba(0,0,0,0.6)',
+              : (isLightBg ? 'none' : '0 1px 3px rgba(0,0,0,0.6)'),
+            letterSpacing: isGrapplerMotion ? '1px' : '0',
             flexShrink: 0,
           }}
         >
@@ -429,7 +648,7 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
       );
     }
 
-    if (input === 'P' || input === 'K') {
+    if (rawInput === 'P' || rawInput === 'K') {
       return (
         <div key={idx} style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', ...styleOverrides }}>
           {buttonJSX}
@@ -482,12 +701,25 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
             paddingLeft: lineIdx > 0 ? `${effectiveIndent * (large ? 24 : 16)}px` : 0
           }}>
             {lineIdx > 0 && (
-              <span style={{ color: 'var(--border-medium)', fontSize: large ? '1rem' : '0.8rem', marginRight: '2px' }}>↳</span>
+              <svg 
+                width={large ? "18" : "14"} 
+                height={large ? "18" : "14"} 
+                viewBox="0 0 24 24" 
+                fill="none" 
+                stroke="var(--text-muted)" 
+                strokeWidth="2.5" 
+                strokeLinecap="round" 
+                strokeLinejoin="round"
+                style={{ flexShrink: 0, marginRight: '4px' }}
+              >
+                <path d="M5 4v10a2 2 0 0 0 2 2h13" />
+                <path d="m16 12 4 4-4 4" />
+              </svg>
             )}
             
             {lineInputs.map((input, idx) => {
               const norm = input.toUpperCase().trim();
-              const subButtons = getMacroSubButtons(norm, controller === 'neogeo');
+              const subButtons = getMacroSubButtons(norm);
 
               if (subButtons.length > 1) {
                 const overlap = large ? '-18px' : '-12px';

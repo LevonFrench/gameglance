@@ -79,7 +79,8 @@ export interface GameDefinition {
   isDraft?: boolean;
   isHidden?: boolean;
   tags?: string[];
-  notationSystem?: 'numpad' | 'traditional' | 'mk';
+  notationSystem?: 'numpad' | 'traditional' | 'mk' | 'tekken';
+  controller?: import('./glyphMap').ControllerType;
   systemMechanics?: { name: string, description: string, input?: string }[];
   characters?: { id: string, name: string, isHidden?: boolean, moveCount?: number, comboCount?: number }[];
 }

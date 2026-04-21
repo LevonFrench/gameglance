@@ -17,6 +17,7 @@ interface Props {
   onSetController: (c: ControllerType) => void;
   onToggleMove: (move: Move) => void;
   onLaunchMainScreen: () => void;
+  onLaunchComboView?: () => void;
   onClearGameGlance?: () => void;
   onBack: () => void;
   onHome: () => void;
@@ -24,7 +25,7 @@ interface Props {
 
 
 
-export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, notationSystem, onToggleMove, onLaunchMainScreen, onClearGameGlance, onBack, onHome }) => {
+export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, notationSystem, onToggleMove, onLaunchMainScreen, onLaunchComboView, onClearGameGlance, onBack, onHome }) => {
   useArrowNavigation('[id^="move-"]');
 
   const [characterData, setCharacterData] = useState<CharacterExport | null>(null);
@@ -32,6 +33,23 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
   const [loadingError, setLoadingError] = useState<string>('');
   const [searchQuery, setSearchQuery] = useState('');
   const [showScrollTop, setShowScrollTop] = useState(false);
+  const [collapsedSections, setCollapsedSections] = useState<Record<string, boolean>>(() => {
+    try {
+      const stored = localStorage.getItem('fgc_collapsed_sections');
+      if (stored) return JSON.parse(stored);
+    } catch (err) {
+      console.warn('Failed to parse collapsed sections preferences', err);
+    }
+    return {};
+  });
+
+  const toggleSection = (tab: string) => {
+    setCollapsedSections(prev => {
+      const newState = { ...prev, [tab]: !prev[tab] };
+      localStorage.setItem('fgc_collapsed_sections', JSON.stringify(newState));
+      return newState;
+    });
+  };
 
   const { isDark } = useTheme();
 
@@ -44,7 +62,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
   }, []);
 
   useEffect(() => {
-    const GLOBAL_DEFAULT_SORT = ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves', 'Combos'];
+    const GLOBAL_DEFAULT_SORT = ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves'];
     const stored = localStorage.getItem('fgc_tab_order');
     let pref = GLOBAL_DEFAULT_SORT;
     if (stored) {
@@ -54,7 +72,8 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         console.warn('Failed to parse tab preferences', err);
       }
     }
-    const combinedTabs = Array.from(new Set([...GLOBAL_DEFAULT_SORT, ...(game.tabs || [])]));
+    const combinedTabs = Array.from(new Set([...GLOBAL_DEFAULT_SORT, ...(game.tabs || [])]))
+      .filter(t => t !== 'Command Throws' && t !== 'Normal Throws' && t !== 'Combos');
     const sorted = combinedTabs.sort((a,b) => {
       let idxA = pref.indexOf(a);
       let idxB = pref.indexOf(b);
@@ -282,19 +301,60 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
 
   // Tab → move type mapping (defined before early returns so hooks aren't conditional)
   const isSuperMove = (m: Move) => m.type === 'super' || /\b(super|climax|meteor)\b/i.test(m.name);
+  
+  const isNormalThrow = (m: Move) => {
+    const input = m.input.toLowerCase();
+    const name = m.name.toLowerCase();
+    if (name.includes('command')) return false;
+    
+    // Normal throws are typically short: "LPLK", "f+1+3", "4+D"
+    // If it has a standard motion, it's a command throw
+    const complexMotions = ['236', '214', 'hcf', 'hcb', 'qcf', 'qcb', '360', '720', 'dp', 'rdp', 'f,hcf'];
+    if (complexMotions.some(motion => input.includes(motion))) return false;
+
+    // In Tekken, normal throws are exactly 1+3 or 2+4 (sometimes with a direction like f, b, u, d)
+    // Command throws in Tekken are usually f,f+1+2 or qcb+1+3
+    if (input.includes('f,f') || input.includes('df,df') || input.includes('b,b')) return false;
+    if (input.includes('fc ')) return false;
+
+    // Otherwise assume normal
+    return true;
+  };
+
+  const isCommandThrow = (m: Move) => {
+    if (m.type === 'throw' && !isNormalThrow(m)) return true;
+    
+    // Fallback for games where command throws are typed as 'special' (e.g. SF6)
+    if (m.type === 'special') {
+      const input = m.input.toLowerCase();
+      const name = m.name.toLowerCase();
+      
+      const throwKeywords = ['throw', 'bomb', 'drop', 'buster', 'piledriver', 'suplex', 'choke', 'slam', 'driver', 'toss'];
+      const complexMotions = ['236', '214', 'hcf', 'hcb', 'qcf', 'qcb', '360', '720', 'dp', 'rdp', '63214', '41236'];
+      
+      const hasThrowName = throwKeywords.some(kw => name.includes(kw));
+      const hasComplexMotion = complexMotions.some(motion => input.includes(motion));
+      
+      if (hasThrowName && hasComplexMotion) return true;
+      if (name.includes('command throw') || name.includes('command grab')) return true;
+    }
+    
+    return false;
+  };
+
   const TAB_FILTER: Record<string, (data: CharacterExport) => Move[]> = {
     'Normal Moves':   (d) => (d.movesList || []).filter(m => m.type === 'normal' && !isSuperMove(m)),
-    'Special Moves':  (d) => (d.movesList || []).filter(m => m.type === 'special' && !isSuperMove(m)),
+    'Special Moves':  (d) => (d.movesList || []).filter(m => m.type === 'special' && !isSuperMove(m) && !isCommandThrow(m)),
     'Super Arts':     (d) => (d.movesList || []).filter(m => isSuperMove(m)),
     'Super Combos':   (d) => (d.movesList || []).filter(m => isSuperMove(m)),
     'Unique Attacks': (d) => (d.movesList || []).filter(m => m.type === 'unique'),
-    'Throws':         (d) => (d.movesList || []).filter(m => m.type === 'throw'),
+    'Throws':         (d) => {
+      const throws = (d.movesList || []).filter(m => m.type === 'throw');
+      const sf6Specials = (d.movesList || []).filter(m => m.type === 'special' && isCommandThrow(m));
+      return [...throws, ...sf6Specials];
+    },
     'Common Moves':   (d) => (d.movesList || []).filter(m => m.type === 'common'),
     'Moves':          (d) => d.movesList || [],
-    'Combos':         (d) => (d.combosList || []).map(c => ({
-      id: c.id, name: c.name, type: 'normal' as const, input: c.input, frameData: {},
-      damage: c.damage, notes: c.notes
-    })),
     'Fatalities':     (d) => (d.movesList || []).filter(m => m.type === 'super'),
     'Finishers':      (d) => (d.movesList || []).filter(m => m.type === 'finisher'),
   };
@@ -481,7 +541,8 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         <TopHeader 
           onBack={onBack}
           onHome={onHome}
-          gameName={characterData.game}
+          gameName={game.name}
+          onGameClick={onBack}
           characterName={characterData.character}
           disableInitialAnimation={false}
           selectedCount={selectedCount}
@@ -666,6 +727,42 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
             />
           </div>
 
+          {/* Combos Button */}
+          {onLaunchComboView && (
+            <button
+              onClick={onLaunchComboView}
+              style={{
+                background: 'var(--bg-glass)',
+                color: 'var(--text-primary)',
+                border: '1px solid var(--border-subtle)',
+                padding: '0.65rem 1rem',
+                borderRadius: 'var(--radius-lg)',
+                fontWeight: 600,
+                cursor: 'pointer',
+                fontSize: '0.85rem',
+                transition: 'all 0.25s ease',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '0.5rem',
+              }}
+              onMouseOver={e => {
+                e.currentTarget.style.borderColor = 'var(--accent-indigo)';
+                e.currentTarget.style.color = 'var(--accent-indigo)';
+                e.currentTarget.style.background = 'var(--bg-input)';
+              }}
+              onMouseOut={e => {
+                e.currentTarget.style.borderColor = 'var(--border-subtle)';
+                e.currentTarget.style.color = 'var(--text-primary)';
+                e.currentTarget.style.background = 'var(--bg-glass)';
+              }}
+            >
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
+              </svg>
+              Combos
+            </button>
+          )}
+
           {selectedCount > 0 && (
             <button
               id="launch-main-screen"
@@ -757,220 +854,374 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                 }
               });
 
-              return (
-                <section key={tab} id={`section-${tab.replace(/\s+/g, '-').toLowerCase()}`}>
-                  <h2 style={{ fontSize: '1.5rem', fontWeight: 'bold', color: 'var(--text-primary)', marginBottom: '1rem', paddingBottom: '0.5rem', borderBottom: '1px solid var(--border-subtle)'}}>{tab}</h2>
-                  <div className="move-grid-main" style={{ 
-                    display: 'grid',
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(330px, 1fr))',
-                    gridAutoRows: 'auto',
-                    gap: '1rem',
-                    width: '100%',
-                    maxWidth: '1400px',
-                    margin: '0 auto',
-                    alignContent: 'flex-start',
-                    alignItems: 'stretch'
-                  }}>
-                    {topLevelMoves.map((topMove, topIdx) => {
-                      const renderMoveCard = (move: Move, idx: number, depth: number = 0, isLastChild: boolean = false) => {
-                        const isSelected = selectedPlaylist && selectedPlaylist.some(m => m && move && m.id === move.id);
-                        const hasChildren = childrenMap.has(move.id) && childrenMap.get(move.id)!.length > 0;
-                        const children = childrenMap.get(move.id) || [];
+              // Detect stances and group topLevelMoves
+              const stanceGroups = new Map<string, Move[]>();
+              const noStanceGroup: Move[] = [];
 
+              topLevelMoves.forEach(m => {
+                if (tab === 'Throws') {
+                  const prefix = isCommandThrow(m) ? 'Command Throws' : 'Normal Throws';
+                  if (!stanceGroups.has(prefix)) stanceGroups.set(prefix, []);
+                  stanceGroups.get(prefix)!.push(m);
+                } else {
+                  const stanceMatch = m.input.match(/^([A-Z]{3,})\s+(.*)/);
+                  if (stanceMatch) {
+                    const prefix = stanceMatch[1];
+                    if (!stanceGroups.has(prefix)) stanceGroups.set(prefix, []);
+                    stanceGroups.get(prefix)!.push(m);
+                  } else {
+                    noStanceGroup.push(m);
+                  }
+                }
+              });
+
+              let sortedStanceEntries = Array.from(stanceGroups.entries());
+              if (tab === 'Throws') {
+                sortedStanceEntries.sort((a, b) => {
+                  if (a[0] === 'Command Throws') return -1;
+                  if (b[0] === 'Command Throws') return 1;
+                  return 0;
+                });
+              }
+
+              const renderMoveCard = (move: Move, idx: number) => {
+                const isSelected = selectedPlaylist && selectedPlaylist.some(m => m && move && m.id === move.id);
+                const hasChildren = childrenMap.has(move.id) && childrenMap.get(move.id)!.length > 0;
+                const children = childrenMap.get(move.id) || [];
+                
+                const getTotalChildrenCount = (moveId: string): number => {
+                  const directChildren = childrenMap.get(moveId) || [];
+                  let count = directChildren.length;
+                  for (const child of directChildren) {
+                    count += getTotalChildrenCount(child.id);
+                  }
+                  return count;
+                };
+                
+                const totalChildrenCount = getTotalChildrenCount(move.id);
+
+                const renderNestedChildren = (childrenMoves: Move[], nestedDepth: number = 0) => {
+                  return (
+                    <div style={{ 
+                      display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '0.4rem', 
+                      paddingTop: nestedDepth === 0 ? '0.75rem' : '0', 
+                      borderTop: nestedDepth === 0 ? '1px solid rgba(255,255,255,0.05)' : 'none' 
+                    }}>
+                      {childrenMoves.map(child => {
+                        const isChildSelected = selectedPlaylist && selectedPlaylist.some(m => m && child && m.id === child.id);
+                        const cleanChildName = child.name.replace(/^↳\s*/, '');
+                        const cleanChildInput = child.input.replace(/^↳\s*/, '');
+                        const childHasChildren = childrenMap.has(child.id) && childrenMap.get(child.id)!.length > 0;
+                        const childsChildren = childrenMap.get(child.id) || [];
+                        
                         return (
-                          <React.Fragment key={move.id}>
-                            <div style={{ display: 'flex', width: '100%', position: 'relative', flex: 1 }}>
-                              {depth > 0 && (
-                                <div style={{ 
-                                  width: `${depth * 1.5}rem`, 
-                                  position: 'relative',
-                                  flexShrink: 0
-                                }}>
-                                  <div style={{
-                                    position: 'absolute',
-                                    top: '-1rem',
-                                    left: `calc(${(depth - 1) * 1.5}rem + 0.75rem)`,
-                                    height: 'calc(50% + 1rem)',
-                                    width: '2px',
-                                    background: 'var(--border-medium)',
-                                  }} />
-                                  <div style={{
-                                    position: 'absolute',
-                                    top: '50%',
-                                    left: `calc(${(depth - 1) * 1.5}rem + 0.75rem)`,
-                                    width: '0.75rem',
-                                    height: '2px',
-                                    background: 'var(--border-medium)',
-                                  }} />
-                                  {!isLastChild && (
-                                    <div style={{
-                                      position: 'absolute',
-                                      top: '50%',
-                                      left: `calc(${(depth - 1) * 1.5}rem + 0.75rem)`,
-                                      height: '100%',
-                                      width: '2px',
-                                      background: 'var(--border-medium)',
-                                    }} />
-                                  )}
-                                </div>
-                              )}
-
-                              <div
-                                id={`move-${move.id}`}
-                                className="move-card"
-                                tabIndex={0}
-                                data-selected={isSelected ? 'true' : 'false'}
-                                onClick={() => onToggleMove(move)}
-                                style={{
-                                  display: 'flex',
-                                  flexDirection: 'column',
-                                  justifyContent: 'flex-start',
-                                  cursor: 'pointer',
-                                  animation: `fadeInUp 0.3s ease ${Math.min(idx * 20, 300)}ms both`,
-                                  gap: '0.75rem',
-                                  padding: '1.25rem',
-                                  position: 'relative',
-                                  zIndex: 2,
-                                  width: '100%',
-                                  background: 'var(--bg-secondary)',
-                                  borderRadius: 'var(--radius-lg)',
-                                  border: isSelected ? '2px solid var(--accent-indigo)' : '1px solid var(--border-subtle)',
-                                }}
-                              >
-                                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
-                                  {tab !== 'Combos' && (() => {
-                                    const dlMatch = move.name.match(/\(DL(\d+)\)/);
-                                    const cleanName = move.name.replace(/\(DL\d+\)/, '').trim();
-                                    const isFollowUp = move.input.includes('~');
-
-                                    return (
-                                      <div style={{ paddingRight: '2rem' }}>
-                                        <h3 style={{ 
-                                          color: 'var(--text-primary)', 
-                                          fontWeight: 700, 
-                                          fontSize: '1.05rem',
-                                          marginBottom: '0.35rem',
-                                          lineHeight: 1.3,
-                                          display: 'flex',
-                                          alignItems: 'center',
-                                          gap: '0.4rem'
-                                        }}>
-                                          {isFollowUp && (
-                                            <span style={{ color: 'var(--text-tertiary)', fontSize: '1.1rem', marginTop: '-2px' }}>↳</span>
-                                          )}
-                                          {cleanName}
-                                        </h3>
-                                        {(move.type || dlMatch) && (
-                                          <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
-                                            {move.type && (
-                                              <span style={{ 
-                                                fontSize: '0.75rem', 
-                                                color: 'var(--text-tertiary)',
-                                                textTransform: 'uppercase',
-                                                letterSpacing: '0.05em',
-                                                fontWeight: 600,
-                                                background: 'var(--bg-badge)',
-                                                padding: '2px 6px',
-                                                borderRadius: '4px'
-                                              }}>{move.type}</span>
-                                            )}
-                                            {dlMatch && (
-                                              <span style={{ 
-                                                fontSize: '0.75rem', 
-                                                color: '#f59e0b',
-                                                fontWeight: 700,
-                                                background: 'rgba(245, 158, 11, 0.15)',
-                                                padding: '2px 6px',
-                                                borderRadius: '4px',
-                                                border: '1px solid rgba(245, 158, 11, 0.3)'
-                                              }}>Drink Lvl {dlMatch[1]}</span>
-                                            )}
-                                          </div>
-                                        )}
-                                      </div>
-                                    );
-                                })()}
-                                  
-                                  {/* Explicit Selection Checkbox */}
-                                  <div style={{
-                                    width: '24px',
-                                    height: '24px',
-                                    borderRadius: '50%',
-                                    border: isSelected ? 'none' : '2px solid var(--border-medium)',
-                                    background: isSelected ? 'var(--accent-indigo)' : 'transparent',
-                                    display: 'flex',
-                                    alignItems: 'center',
-                                    justifyContent: 'center',
-                                    flexShrink: 0,
-                                    transition: 'all 0.2s ease',
-                                    boxShadow: isSelected ? '0 0 10px rgba(99, 102, 241, 0.4)' : 'none',
-                                    position: 'absolute',
-                                    top: '1.25rem',
-                                    right: '1.25rem'
-                                  }}>
-                                    {isSelected && (
-                                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
-                                        <polyline points="20 6 9 17 4 12"></polyline>
-                                      </svg>
-                                    )}
-                                  </div>
-                                </div>
-
-                                <div style={{
-                                  display: 'flex',
-                                  flexDirection: 'column',
-                                  gap: '0.75rem',
-                                  background: 'rgba(0,0,0,0.4)',
-                                  padding: '0.75rem',
-                                  borderRadius: '12px',
-                                  border: '1px inset rgba(255,255,255,0.05)',
-                                  marginTop: 'auto',
-                                  marginBottom: 'auto',
-                                }}>
-                                  <GlyphSequence 
-                                    inputs={[move.input]} 
-                                    controller={effectiveController} 
-                                    notationSystem={notationSystem || game.notationSystem} 
-                                    isCombo={move.type?.toLowerCase() === 'combo'}
-                                  />
-                                  {(move.damage || move.notes) && (
-                                    <div style={{
-                                      display: 'flex',
-                                      flexDirection: 'column',
-                                      gap: '0.25rem',
-                                      paddingTop: '0.5rem',
-                                      borderTop: '1px solid rgba(255,255,255,0.1)',
-                                    }}>
-
-                                      {move.notes && (
-                                        <div style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', fontStyle: 'italic' }}>
-                                          {move.notes}
-                                        </div>
-                                      )}
-                                    </div>
-                                  )}
-                                </div>
+                          <div key={child.id} style={{ display: 'flex', flexDirection: 'column', gap: '0.4rem' }}>
+                            <div 
+                              onClick={(e) => { e.stopPropagation(); onToggleMove(child); }}
+                              style={{
+                                display: 'flex',
+                                justifyContent: 'space-between',
+                                alignItems: 'center',
+                                padding: '0.4rem 0.75rem',
+                                borderRadius: 'var(--radius-sm)',
+                                background: isChildSelected ? 'rgba(99, 102, 241, 0.15)' : 'rgba(0,0,0,0.15)',
+                                border: isChildSelected ? '1px solid var(--accent-indigo)' : '1px solid rgba(255,255,255,0.02)',
+                                cursor: 'pointer',
+                                transition: 'all 0.2s ease',
+                                borderLeft: '3px solid var(--border-medium)'
+                              }}
+                            >
+                              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', paddingRight: '1rem' }}>
+                                <span style={{ fontSize: '0.85rem', fontWeight: 600, color: isChildSelected ? 'var(--text-primary)' : 'var(--text-secondary)' }}>
+                                  {cleanChildName}
+                                </span>
+                              </div>
+                              <div style={{ transform: 'scale(0.8)', transformOrigin: 'right center' }}>
+                                <GlyphSequence 
+                                  inputs={[cleanChildInput]} 
+                                  controller={effectiveController} 
+                                  notationSystem={(game.notationSystem === 'mk' || game.notationSystem === 'tekken') ? game.notationSystem : (notationSystem || game.notationSystem)} 
+                                  isCombo={child.type?.toLowerCase() === 'combo'}
+                                />
                               </div>
                             </div>
                             
-                            {hasChildren && (
-                              <div style={{ display: 'flex', flexDirection: 'column', width: '100%', gap: '1rem', marginTop: '1rem' }}>
-                                {children.map((child, cIdx) => 
-                                  renderMoveCard(child, topIdx * 100 + cIdx, depth + 1, cIdx === children.length - 1)
-                                )}
+                            {childHasChildren && (
+                              <div style={{ paddingLeft: '1rem' }}>
+                                {renderNestedChildren(childsChildren, nestedDepth + 1)}
                               </div>
                             )}
-                          </React.Fragment>
-                        );
-                      };
-
-                        return (
-                          <div key={topMove.id} style={{ display: 'flex', flexDirection: 'column', width: '100%' }}>
-                            {renderMoveCard(topMove, topIdx, 0, false)}
                           </div>
                         );
-                    })}
-                  </div>
+                      })}
+                    </div>
+                  );
+                };
+
+                return (
+                  <React.Fragment key={move.id}>
+                    <div style={{ 
+                      display: 'flex', 
+                      width: '100%', 
+                      position: 'relative', 
+                      flex: 1,
+                      gridColumn: hasChildren && totalChildrenCount >= 3 ? '1 / -1' : undefined
+                    }}>
+                      <div
+                        id={`move-${move.id}`}
+                        className="move-card"
+                        tabIndex={0}
+                        data-selected={isSelected ? 'true' : 'false'}
+                        onClick={() => onToggleMove(move)}
+                        style={{
+                          display: 'flex',
+                          flexDirection: 'column',
+                          justifyContent: 'flex-start',
+                          cursor: 'pointer',
+                          animation: `fadeInUp 0.3s ease ${Math.min(idx * 20, 300)}ms both`,
+                          gap: '0.75rem',
+                          padding: '1.25rem',
+                          position: 'relative',
+                          zIndex: 2,
+                          width: '100%',
+                          background: 'var(--bg-secondary)',
+                          borderRadius: 'var(--radius-lg)',
+                          border: isSelected ? '2px solid var(--accent-indigo)' : '1px solid var(--border-subtle)',
+                        }}
+                      >
+                        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+                          {tab !== 'Combos' && (() => {
+                            const dlMatch = move.name.match(/\(DL(\d+)\)/);
+                            const cleanName = move.name.replace(/^↳\s*/, '').replace(/\(DL\d+\)/, '').trim();
+                            const isFollowUp = move.input.includes('~');
+
+                            return (
+                              <div style={{ paddingRight: '2rem' }}>
+                                <h3 style={{ 
+                                  color: 'var(--text-primary)', 
+                                  fontWeight: 700, 
+                                  fontSize: '1.05rem',
+                                  marginBottom: '0.35rem',
+                                  lineHeight: 1.3,
+                                  display: 'flex',
+                                  alignItems: 'center',
+                                  gap: '0.4rem'
+                                }}>
+                                  {isFollowUp && (
+                                    <svg 
+                                      width="18" 
+                                      height="18" 
+                                      viewBox="0 0 24 24" 
+                                      fill="none" 
+                                      stroke="var(--text-muted)" 
+                                      strokeWidth="2.5" 
+                                      strokeLinecap="round" 
+                                      strokeLinejoin="round"
+                                      style={{ flexShrink: 0, marginTop: '2px' }}
+                                    >
+                                      <path d="M5 4v10a2 2 0 0 0 2 2h13" />
+                                      <path d="m16 12 4 4-4 4" />
+                                    </svg>
+                                  )}
+                                  {cleanName}
+                                </h3>
+                                {(move.type || dlMatch) && (
+                                  <div style={{ display: 'flex', gap: '0.5rem', alignItems: 'center', flexWrap: 'wrap' }}>
+                                    {move.type && (
+                                      <span style={{ 
+                                        fontSize: '0.75rem', 
+                                        color: 'var(--text-tertiary)',
+                                        textTransform: 'uppercase',
+                                        letterSpacing: '0.05em',
+                                        fontWeight: 600,
+                                        background: 'var(--bg-badge)',
+                                        padding: '2px 6px',
+                                        borderRadius: '4px'
+                                      }}>{move.type}</span>
+                                    )}
+                                    {dlMatch && (
+                                      <span style={{ 
+                                        fontSize: '0.75rem', 
+                                        color: '#f59e0b',
+                                        fontWeight: 700,
+                                        background: 'rgba(245, 158, 11, 0.15)',
+                                        padding: '2px 6px',
+                                        borderRadius: '4px',
+                                        border: '1px solid rgba(245, 158, 11, 0.3)'
+                                      }}>Drink Lvl {dlMatch[1]}</span>
+                                    )}
+                                  </div>
+                                )}
+                              </div>
+                            );
+                        })()}
+                          
+                          {/* Explicit Selection Checkbox */}
+                          <div style={{
+                            width: '24px',
+                            height: '24px',
+                            borderRadius: '50%',
+                            border: isSelected ? 'none' : '2px solid var(--border-medium)',
+                            background: isSelected ? 'var(--accent-indigo)' : 'transparent',
+                            display: 'flex',
+                            alignItems: 'center',
+                            justifyContent: 'center',
+                            flexShrink: 0,
+                            transition: 'all 0.2s ease',
+                            boxShadow: isSelected ? '0 0 10px rgba(99, 102, 241, 0.4)' : 'none',
+                            position: 'absolute',
+                            top: '1.25rem',
+                            right: '1.25rem'
+                          }}>
+                            {isSelected && (
+                              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#fff" strokeWidth="3" strokeLinecap="round" strokeLinejoin="round">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                              </svg>
+                            )}
+                          </div>
+                        </div>
+
+                        <div style={{
+                          display: 'flex',
+                          flexDirection: 'column',
+                          gap: '0.75rem',
+                          background: 'rgba(0,0,0,0.4)',
+                          padding: '0.75rem',
+                          borderRadius: '12px',
+                          border: '1px inset rgba(255,255,255,0.05)',
+                        }}>
+                          <GlyphSequence 
+                            inputs={[move.input.replace(/^↳\s*/, '')]} 
+                            controller={effectiveController} 
+                            notationSystem={(game.notationSystem === 'mk' || game.notationSystem === 'tekken') ? game.notationSystem : (notationSystem || game.notationSystem)} 
+                            isCombo={move.type?.toLowerCase() === 'combo'}
+                          />
+                          {move.notes && (
+                            <div style={{
+                              display: 'flex',
+                              flexDirection: 'column',
+                              gap: '0.25rem',
+                              paddingTop: '0.5rem',
+                              borderTop: '1px solid rgba(255,255,255,0.1)',
+                            }}>
+                              <div style={{ fontSize: '0.85rem', color: 'var(--text-tertiary)', fontStyle: 'italic' }}>
+                                {move.notes}
+                              </div>
+                            </div>
+                          )}
+                        </div>
+
+                        {/* Embed the children directly inside the parent card! */}
+                        {hasChildren && renderNestedChildren(children)}
+
+                      </div>
+                    </div>
+                  </React.Fragment>
+                );
+              };
+
+              return (
+                <section key={tab} id={`section-${tab.replace(/\s+/g, '-').toLowerCase()}`}>
+                  <h2 
+                    onClick={() => toggleSection(tab)}
+                    style={{ 
+                    fontSize: '1.5rem', 
+                    fontWeight: 700, 
+                    color: 'var(--text-secondary)', 
+                    marginBottom: '1.5rem',
+                    display: 'flex',
+                    alignItems: 'center',
+                    gap: '0.75rem',
+                    borderBottom: '1px solid var(--border-subtle)',
+                    paddingBottom: '0.75rem',
+                    cursor: 'pointer',
+                    userSelect: 'none'
+                  }}>
+                    <svg 
+                      width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                      style={{ 
+                        transform: collapsedSections[tab] ? 'rotate(-90deg)' : 'rotate(0deg)',
+                        transition: 'transform 0.2s ease',
+                        color: 'var(--text-tertiary)'
+                      }}
+                    >
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
+                    <span style={{ 
+                      background: 'var(--bg-badge)', 
+                      padding: '6px 16px', 
+                      borderRadius: 'var(--radius-md)',
+                      border: '1px solid var(--border-medium)',
+                      color: 'var(--text-primary)',
+                      boxShadow: '0 2px 8px rgba(0,0,0,0.2)',
+                      transition: 'all 0.2s ease'
+                    }}>
+                      {tab}
+                    </span>
+                  </h2>
+                  
+                  {!collapsedSections[tab] && (
+                    <>
+                  
+                  {noStanceGroup.length > 0 && (
+                    <div className="move-grid-main" style={{ 
+                      display: 'grid',
+                      gridTemplateColumns: 'repeat(auto-fit, minmax(330px, 1fr))',
+                      gridAutoRows: 'auto',
+                      gap: '1rem',
+                      width: '100%',
+                      maxWidth: '1400px',
+                      margin: '0 auto',
+                      alignContent: 'flex-start',
+                      alignItems: 'stretch'
+                    }}>
+                      {noStanceGroup.map((topMove, topIdx) => (
+                        renderMoveCard(topMove, topIdx)
+                      ))}
+                    </div>
+                  )}
+
+                  {sortedStanceEntries.map(([prefix, moves]) => (
+                    <div key={prefix} style={{ marginTop: noStanceGroup.length > 0 ? '3rem' : '1rem' }}>
+                      <h3 style={{ 
+                        fontSize: '1.25rem', 
+                        fontWeight: 600, 
+                        color: 'var(--text-secondary)', 
+                        marginBottom: '1rem',
+                        display: 'flex',
+                        alignItems: 'center',
+                        gap: '0.5rem'
+                      }}>
+                        <span style={{ 
+                          background: 'var(--bg-badge)', 
+                          padding: '4px 12px', 
+                          borderRadius: 'var(--radius-sm)',
+                          border: '1px solid var(--border-subtle)',
+                          color: 'var(--text-primary)'
+                        }}>
+                          {prefix}
+                        </span>
+                        {tab === 'Throws' ? '' : 'Stance'}
+                      </h3>
+                      <div className="move-grid-main" style={{ 
+                        display: 'grid',
+                        gridTemplateColumns: 'repeat(auto-fit, minmax(330px, 1fr))',
+                        gridAutoRows: 'auto',
+                        gap: '1rem',
+                        width: '100%',
+                        maxWidth: '1400px',
+                        margin: '0 auto',
+                        position: 'relative',
+                        zIndex: 1,
+                      }}>
+                        {moves.map((topMove, topIdx) => (
+                          renderMoveCard(topMove, topIdx)
+                        ))}
+                      </div>
+                    </div>
+                  ))}
+                  </>
+                  )}
                 </section>
               );
             })}

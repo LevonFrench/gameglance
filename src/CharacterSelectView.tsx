@@ -44,7 +44,7 @@ export const CharacterSelectView: React.FC<Props> = ({
     return [];
   });
   const [characters, setCharacters] = useState(game.characters || []);
-  const cardRefs = useRef<Map<string, HTMLButtonElement>>(new Map());
+  const cardRefs = useRef<Map<string, HTMLElement>>(new Map());
   
   useEffect(() => {
     window.scrollTo(0,0);
@@ -103,11 +103,19 @@ export const CharacterSelectView: React.FC<Props> = ({
         const rawName = character.name.replace(/ \(Coming Soon\)/, '');
 
         return (
-          <button
+          <div
             key={character.id}
             id={`char-card-${character.id}`}
+            role="button"
+            tabIndex={0}
             ref={el => { if (el) cardRefs.current.set(character.id, el); }}
             onClick={() => !isComingSoon && onSelectCharacter(character.id)}
+            onKeyDown={(e) => {
+              if ((e.key === 'Enter' || e.key === ' ') && !isComingSoon) {
+                e.preventDefault();
+                onSelectCharacter(character.id);
+              }
+            }}
             onMouseEnter={() => setHoveredCharacterId(character.id)}
             onMouseLeave={() => setHoveredCharacterId(null)}
             onFocus={() => setHoveredCharacterId(character.id)}
@@ -267,17 +275,16 @@ export const CharacterSelectView: React.FC<Props> = ({
                   fontSize: '0.75rem',
                   fontWeight: 700,
                   color: isHovered ? accentColor : 'var(--text-secondary)',
-                  opacity: (character.moveCount && character.moveCount > 0) || (character.comboCount && character.comboCount > 0) ? 1 : 0,
+                  opacity: (character.moveCount && character.moveCount > 0) ? 1 : 0,
                   transition: 'all 0.3s ease',
                 }}>
                   {[
-                    character.moveCount ? `${character.moveCount} Moves` : null,
-                    character.comboCount ? `${character.comboCount} Combos` : null
+                    character.moveCount ? `${character.moveCount} Moves` : null
                   ].filter(Boolean).join(' | ') || 'No Data'}
                 </div>
               )}
             </div>
-          </button>
+          </div>
         );
       })}
     </main>

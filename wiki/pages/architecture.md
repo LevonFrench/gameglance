@@ -14,9 +14,9 @@ The app uses a single `App.tsx` controller with view state (`game_select` → `c
 
 ```
 App.tsx (controller)
-├── GameSelectView.tsx      — Game browser with search, filters, favorites
+├── GameSelectView.tsx      — Game browser with search, dynamic categories, favorites
 ├── CharacterSelectView.tsx — Character grid for selected game
-├── MoveListView.tsx        — Tabbed move list with playlist builder
+├── MoveListView.tsx        — Tabbed move list with playlist builder and nested Stance Trees
 ├── GameGlanceView.tsx      — Second-screen practice mode (playlist playback)
 └── Approval*.tsx           — Isolated combo approval tool (approval.html entry)
 ```

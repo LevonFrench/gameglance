@@ -5,6 +5,7 @@ import './index.css';
 import { GameSelectView } from './GameSelectView';
 import { CharacterSelectView } from './CharacterSelectView';
 import { MoveListView } from './MoveListView';
+import { ComboView } from './ComboView';
 import { GameGlanceMainView } from './GameGlanceView';
 import type { ControllerType } from './glyphMap';
 import { FightcadeSyncView } from './FightcadeSyncView';
@@ -19,7 +20,7 @@ import { SUPPORTED_GAMES } from './games';
 
 export const App: React.FC = () => {
 
-  const [currentView, setCurrentView] = useState<'game_select' | 'char_select' | 'move_list' | 'fightcade_sync' | 'main_screen' | 'admin'>('game_select');
+  const [currentView, setCurrentView] = useState<'game_select' | 'char_select' | 'move_list' | 'combo_view' | 'fightcade_sync' | 'main_screen' | 'admin'>('game_select');
   const [selectedGame, setSelectedGame] = useState<GameDefinition | null>(null);
   const [selectedCharacter, setSelectedCharacter] = useState<string | null>(null);
   const [selectedPlaylist, setSelectedPlaylist] = useState<PlaylistItem[]>(() => {
@@ -123,7 +124,7 @@ export const App: React.FC = () => {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, []);
 
-  const navigate = (view: 'game_select' | 'char_select' | 'move_list' | 'fightcade_sync' | 'main_screen' | 'admin', game: GameDefinition | null = selectedGame, char: string | null = selectedCharacter) => {
+  const navigate = (view: 'game_select' | 'char_select' | 'move_list' | 'combo_view' | 'fightcade_sync' | 'main_screen' | 'admin', game: GameDefinition | null = selectedGame, char: string | null = selectedCharacter) => {
     window.history.pushState({ view, gameId: game?.id, charId: char }, '', '');
     setSelectedGame(game);
     setSelectedCharacter(char);
@@ -282,9 +283,25 @@ export const App: React.FC = () => {
          onSetController={handleSetController}
          onToggleMove={handleToggleMove}
          onLaunchMainScreen={handleLaunchMainScreen}
+         onLaunchComboView={() => navigate('combo_view', selectedGame, selectedCharacter)}
          onBack={() => navigate('char_select', selectedGame)}
          onHome={() => navigate('game_select')}
          onClearGameGlance={handleClearPlaylist}
+      />;
+      break;
+    case 'combo_view':
+      if (!selectedGame || !selectedCharacter) {
+         viewComponent = null;
+         break;
+      }
+      viewComponent = <ComboView 
+         game={selectedGame}
+         characterId={selectedCharacter}
+         controller={controller}
+         notationSystem={(notationOverride === 'auto' ? selectedGame.notationSystem : notationOverride) as 'numpad' | 'traditional' | 'mk' | undefined}
+         onSetController={handleSetController}
+         onBack={() => navigate('move_list', selectedGame, selectedCharacter)}
+         onHome={() => navigate('game_select')}
       />;
       break;
     case 'fightcade_sync':

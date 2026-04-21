@@ -44,6 +44,42 @@
   "game": "Mortal Kombat 1",
   "movesList": [
     {
+      "name": "Ancestral Guard",
+      "input": "d b 1",
+      "type": "special",
+      "id": "ancestral-guard"
+    },
+    {
+      "name": "Sento Stance",
+      "input": "d b 2",
+      "type": "special",
+      "id": "sento-stance"
+    },
+    {
+      "name": "Demon Dash",
+      "input": "b f 2",
+      "type": "special",
+      "id": "demon-dash"
+    },
+    {
+      "name": "Rising Sword",
+      "input": "d b 3",
+      "type": "special",
+      "id": "rising-sword"
+    },
+    {
+      "name": "Fatal Blow",
+      "input": "EN+BL",
+      "type": "special",
+      "id": "fatal-blow"
+    },
+    {
+      "name": "Blind Swordsman (String)",
+      "input": "1 2 2",
+      "type": "string",
+      "id": "blind-swordsman-string"
+    },
+    {
       "id": "n_0",
       "name": "Front Punch",
       "type": "normal",
@@ -81,17 +117,20 @@
     },
     {
       "name": "Fatality 1 (Blended)",
-      "input": "6422 (Close)",
-      "type": "finisher"
+      "input": "f b d 2 (Close)",
+      "type": "finisher",
+      "id": "fatality-1-blended"
     },
     {
       "name": "Fatality 2 (Drop The Axe)",
-      "input": "4642 (Mid)",
-      "type": "finisher"
+      "input": "b f b 2 (Mid)",
+      "type": "finisher",
+      "id": "fatality-2-drop-the-axe"
     },
     {
+      "id": "animality",
       "name": "Animality",
-      "input": "2424 (Mid)",
+      "input": "d d b 3 (Mid)",
       "type": "finisher"
     }
   ]

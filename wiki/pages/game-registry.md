@@ -12,11 +12,11 @@ Each game is a `GameDefinition` object:
   mameRomset: 'sf6',               // For Fightcade sync (optional)
   name: 'Street Fighter 6',        // Display name
   tagline: 'World Tour',           // Subtitle (optional)
-  developer: 'Capcom',             // For developer filter
+  developer: 'Capcom',             // Optional developer info
   releaseYear: 2023,               // For date sorting
   platform: 'PS4, PS5, PC, Xbox',  // Platform icons
   rosterCount: 25,                 // Total character count
-  tags: ['Modern', '2D'],          // Filter tags (optional)
+  tags: ['Modern', '2D'],          // Optional metadata
   characters: [
     { id: 'ryu', name: 'Ryu', moveCount: 45 }
   ],
@@ -26,6 +26,10 @@ Each game is a `GameDefinition` object:
   tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 }
 ```
+
+## Dynamic Categories
+
+The Game Select screen no longer relies purely on hardcoded filter buttons. It now dynamically computes categories (like `Street Fighter`, `Guilty Gear`, `Mortal Kombat`, etc.) based on game names, prefixes, and tags using the `computeGameCategories` logic in `GameSelectView.tsx`.
 
 ## Adding a New Game
 

@@ -111,7 +111,7 @@ rosterCount: 10,
       { id: 'ryuhaku-todoh', name: 'Ryuhaku Todoh', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -134,7 +134,7 @@ rosterCount: 13,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -179,7 +179,7 @@ rosterCount: 9,
       { id: 'wyler', name: 'Wyler', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -202,7 +202,7 @@ rosterCount: 8,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -233,7 +233,7 @@ rosterCount: 8,
       { id: 'torami-hojo', name: 'Torami Hojo', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -256,7 +256,7 @@ rosterCount: 30,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -287,7 +287,7 @@ rosterCount: 7,
       { id: 'sky-high', name: 'Sky High', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -323,7 +323,7 @@ rosterCount: 35,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -398,7 +398,7 @@ rosterCount: 40,
       { id: 'yumi', name: 'Yumi', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -421,7 +421,7 @@ rosterCount: 8,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -453,7 +453,7 @@ rosterCount: 8,
       { id: 'yugo', name: 'Yugo', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -476,7 +476,7 @@ rosterCount: 10,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -513,7 +513,7 @@ rosterCount: 13,
       { id: 'yugo', name: 'Yugo', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -536,7 +536,7 @@ rosterCount: 17,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -576,7 +576,7 @@ rosterCount: 8,
       { id: 'yugo', name: 'Yugo', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -599,7 +599,7 @@ rosterCount: 10,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -657,7 +657,7 @@ rosterCount: 19,
         { id: 'shin-akuma', name: 'Shin Akuma', moveCount: 0 }
       ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -742,7 +742,7 @@ rosterCount: 44,
         { id: 'god-rugal', name: 'God Rugal', moveCount: 0 }
       ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -811,7 +811,7 @@ rosterCount: 29,
         { id: 'blood-iori', name: 'Blood Iori', moveCount: 0 }
       ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -862,7 +862,7 @@ rosterCount: 12,
       { id: 'mech-gouki', name: 'Mech Gouki', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -909,7 +909,7 @@ rosterCount: 11,
       { id: 'pyron', name: 'Pyron', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -932,7 +932,7 @@ rosterCount: 10,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -970,7 +970,7 @@ rosterCount: 14,
       { id: 'zack', name: 'Zack', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -993,7 +993,7 @@ rosterCount: 17,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1039,7 +1039,7 @@ rosterCount: 25,
       { id: 'zack', name: 'Zack', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1062,7 +1062,7 @@ rosterCount: 29,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1115,7 +1115,7 @@ rosterCount: 29,
       { id: 'zack', name: 'Zack', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1150,7 +1150,7 @@ rosterCount: 16,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1186,7 +1186,7 @@ rosterCount: 11,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -1234,7 +1234,7 @@ rosterCount: 12,
       { id: 'terry-bogard', name: 'Terry Bogard', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -1269,7 +1269,7 @@ rosterCount: 16,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -1324,7 +1324,7 @@ rosterCount: 18,
       { id: 'wolfgang-krauser', name: 'Wolfgang Krauser', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -1359,7 +1359,7 @@ rosterCount: 11,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -1396,7 +1396,7 @@ rosterCount: 14,
       { id: 'wolf', name: 'Wolf', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1431,7 +1431,7 @@ rosterCount: 14,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1462,7 +1462,7 @@ rosterCount: 7,
       { id: 'tokio', name: 'Tokio', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1485,7 +1485,7 @@ rosterCount: 9,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1519,7 +1519,7 @@ rosterCount: 10,
       { id: 'toki', name: 'Toki', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1542,7 +1542,7 @@ rosterCount: 9,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1591,7 +1591,7 @@ rosterCount: 14,
       { id: 'tizoc', name: 'Tizoc', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -1614,7 +1614,7 @@ rosterCount: 8,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1685,7 +1685,7 @@ rosterCount: 35,
         { id: 'zooey', name: 'Zooey', moveCount: 0 }
       ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1708,7 +1708,7 @@ rosterCount: 14,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1744,7 +1744,7 @@ rosterCount: 12,
       { id: 'tenjinbashi-sujiroku', name: 'Tenjinbashi Sujiroku', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1779,7 +1779,7 @@ rosterCount: 12,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1896,7 +1896,7 @@ rosterCount: 16,
       { id: 'faust', name: 'Faust', moveCount: 0 },
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -1954,7 +1954,7 @@ rosterCount: 23,
       { id: 'venom', name: 'Venom', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -2023,7 +2023,7 @@ rosterCount: 25,
       { id: 'zato-1', name: 'Zato-1', moveCount: 0 },
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -2072,7 +2072,7 @@ rosterCount: 25,
       { id: 'akuma', name: 'Akuma', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -2111,7 +2111,7 @@ rosterCount: 15,
       { id: 'vanilla-ice', name: 'Vanilla Ice', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -2134,7 +2134,7 @@ rosterCount: 8,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -2167,7 +2167,7 @@ rosterCount: 9,
       { id: 'thoth', name: 'Thoth', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -2186,7 +2186,7 @@ rosterCount: 9,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -2234,7 +2234,7 @@ rosterCount: 9,
       { id: 'tusk', name: 'Tusk', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -2253,7 +2253,7 @@ rosterCount: 9,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -2296,7 +2296,7 @@ rosterCount: 8,
       { id: 'sho-hayate', name: 'Sho Hayate', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -2319,7 +2319,7 @@ rosterCount: 8,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -2367,7 +2367,7 @@ rosterCount: 12,
       { id: 'anita', name: 'Anita', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -2419,7 +2419,7 @@ rosterCount: 12,
       { id: 'apocalypse', name: 'Apocalypse', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -2513,7 +2513,7 @@ rosterCount: 39,
       { id: 'blackheart', name: 'Blackheart', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -2570,7 +2570,7 @@ rosterCount: 14,
       { id: 'onslaught', name: 'Onslaught', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -2605,7 +2605,7 @@ rosterCount: 24,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -2644,7 +2644,7 @@ rosterCount: 24,
       { id: 'princess-sissy', name: 'Princess Sissy', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -2666,7 +2666,7 @@ rosterCount: 24,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -2677,8 +2677,9 @@ rosterCount: 24,
     mameRomset: "",
 
     notationSystem: 'mk',
+    controller: 'mk',
     name: "Mortal Kombat 1",
-    tabs: ['Special Moves', 'Finishers', 'Normal Moves', 'Throws', 'Combos', 'System'],
+    tabs: ['Special Moves', 'Finishers', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Combos', 'System'],
     tagline: "It's In Our Blood",
 
     developer: "NetherRealm Studios",
@@ -2753,7 +2754,7 @@ rosterCount: 14,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -2765,7 +2766,7 @@ rosterCount: 14,
 
     notationSystem: 'mk',
     name: "Mortal Kombat X",
-    tabs: ['Special Moves', 'Finishers', 'Normal Moves', 'Throws', 'Combos', 'System'],
+    tabs: ['Special Moves', 'Finishers', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Combos', 'System'],
     tagline: "Who's Next?",
 
     developer: "NetherRealm Studios",
@@ -2833,7 +2834,7 @@ rosterCount: 21,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -2882,7 +2883,7 @@ rosterCount: 14,
       { id: 'hsien-ko', name: 'Hsien Ko', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -2915,7 +2916,7 @@ rosterCount: 14,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -2971,7 +2972,7 @@ rosterCount: 20,
       { id: 'yu', name: 'Yu', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -3027,7 +3028,7 @@ rosterCount: 13,
         { id: 'luca', name: 'Luca', moveCount: 0 }
       ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -3073,7 +3074,7 @@ rosterCount: 13,
       { id: 'dan', name: 'Dan', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -3096,7 +3097,7 @@ rosterCount: 7,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -3125,7 +3126,7 @@ rosterCount: 7,
       { id: 'xiao', name: 'Xiao', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -3183,7 +3184,7 @@ rosterCount: 7,
         { id: 'roberto', name: 'Roberto', moveCount: 0 }
       ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -3217,7 +3218,7 @@ rosterCount: 10,
       { id: 'wendy', name: 'Wendy', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -3240,7 +3241,7 @@ rosterCount: 13,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -3277,7 +3278,7 @@ rosterCount: 13,
       { id: 'sonia', name: 'Sonia', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -3300,7 +3301,7 @@ rosterCount: 8,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -3351,7 +3352,7 @@ rosterCount: 16,
       { id: 'terry-bogard', name: 'Terry Bogard', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -3385,7 +3386,7 @@ rosterCount: 19,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -3439,7 +3440,7 @@ rosterCount: 19,
       { id: 'wolfgang-krauser', name: 'Wolfgang Krauser', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -3475,7 +3476,7 @@ rosterCount: 25,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -3532,7 +3533,7 @@ rosterCount: 25,
       { id: 'yoshitora', name: 'Yoshitora', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -3566,7 +3567,7 @@ rosterCount: 15,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -3612,7 +3613,7 @@ rosterCount: 11,
       { id: 'ukyo', name: 'Ukyo', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -3643,7 +3644,7 @@ rosterCount: 11,
       { id: 'tam-tam', name: 'Tam Tam', moveCount: 0 },
       { id: 'ukyo', name: 'Ukyo', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
 
@@ -3695,7 +3696,7 @@ rosterCount: 19,
       { id: 'yoshitora', name: 'Yoshitora', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -3729,7 +3730,7 @@ rosterCount: 1,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -3762,7 +3763,7 @@ rosterCount: 11,
       { id: 'sho-hayate', name: 'Sho Hayate', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -3797,7 +3798,7 @@ rosterCount: 16,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -3869,7 +3870,7 @@ rosterCount: 37,
       { id: 'zero', name: 'Zero', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -3892,7 +3893,7 @@ rosterCount: 10,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -3926,7 +3927,7 @@ rosterCount: 10,
       { id: 'voldo', name: 'Voldo', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -3946,7 +3947,7 @@ rosterCount: 10,
 
     platform: "PS4, PS5, Xbox One, Xbox Series X/S, PC",
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves'],
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves'],
 
 rosterCount: 25,
 
@@ -4043,7 +4044,7 @@ rosterCount: 25,
       { id: 'sodom', name: 'Sodom', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -4078,7 +4079,7 @@ rosterCount: 19,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -4152,7 +4153,7 @@ rosterCount: 37,
         { id: 'ingrid', name: 'Ingrid', moveCount: 0 }
       ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -4187,7 +4188,7 @@ rosterCount: 21,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -4234,7 +4235,7 @@ rosterCount: 21,
       { id: 'yun', name: 'Yun', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -4269,7 +4270,7 @@ rosterCount: 11,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -4350,7 +4351,7 @@ rosterCount: 43,
       { id: 'zeku', name: 'Zeku', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -4386,7 +4387,7 @@ rosterCount: 17,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -4434,7 +4435,7 @@ rosterCount: 17,
       { id: 'zangief', name: 'Zangief', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -4457,7 +4458,7 @@ rosterCount: 8,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -4516,7 +4517,7 @@ rosterCount: 23,
       { id: 'zero', name: 'Zero', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -4539,7 +4540,7 @@ rosterCount: 17,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -4584,7 +4585,7 @@ rosterCount: 21,
       { id: 'yoshimitsu', name: 'Yoshimitsu', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -4602,11 +4603,15 @@ rosterCount: 21,
     releaseYear: 2024,
     platform: "PS5, Xbox Series X/S, PC",
 
-rosterCount: 31,
+rosterCount: 3,
 
-        characters: [],
+        characters: [
+          { id: 'kazuya', name: 'Kazuya Mishima', moveCount: 17 },
+          { id: 'devil-jin', name: 'Devil Jin', moveCount: 17 },
+          { id: 'heihachi', name: 'Heihachi Mishima', moveCount: 17 }
+        ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Command Throws', 'Normal Throws', 'Normal Moves']
 
   },
 
@@ -4718,7 +4723,7 @@ rosterCount: 24,
       { id: 'yuri-sakazaki', name: 'Yuri Sakazaki', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -4753,7 +4758,7 @@ rosterCount: 33,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -4821,7 +4826,7 @@ rosterCount: 34,
       { id: 'whip', name: 'Whip', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -4856,7 +4861,7 @@ rosterCount: 39,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -4921,7 +4926,7 @@ rosterCount: 30,
       { id: 'whip', name: 'Whip', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -4956,7 +4961,7 @@ rosterCount: 32,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -5037,7 +5042,7 @@ rosterCount: 47,
       { id: 'zarina', name: 'Zarina', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -5074,7 +5079,7 @@ rosterCount: 48,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -5116,7 +5121,7 @@ rosterCount: 19,
       { id: 'yuri-sakazaki', name: 'Yuri Sakazaki', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -5139,7 +5144,7 @@ rosterCount: 17,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -5159,7 +5164,7 @@ rosterCount: 17,
       { id: 'nightmare-geese', name: 'Nightmare Geese', moveCount: 0 },
       { id: 'xiao-lon', name: 'Xiao Lon', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
 
@@ -5191,7 +5196,7 @@ rosterCount: 12,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -5245,7 +5250,7 @@ rosterCount: 19,
       { id: 'zantetsu', name: 'Zantetsu', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -5282,7 +5287,7 @@ rosterCount: 50,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -5328,7 +5333,7 @@ rosterCount: 25,
       { id: 'sub-zero', name: 'Sub-Zero', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -5363,7 +5368,7 @@ rosterCount: 41,
 
     characters: [],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -5424,7 +5429,7 @@ rosterCount: 41,
       { id: 'izumi', name: 'Izumi', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -5472,7 +5477,7 @@ rosterCount: 41,
       { id: 'pyron', name: 'Pyron', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -5521,7 +5526,7 @@ rosterCount: 41,
       { id: 'dark-talbain', name: 'Dark Talbain', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -5572,7 +5577,7 @@ rosterCount: 41,
       { id: 'pyron', name: 'Pyron', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -5602,7 +5607,7 @@ rosterCount: 41,
       { id: 'wolf', name: 'Wolf', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -5625,7 +5630,7 @@ rosterCount: 10,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -5661,7 +5666,7 @@ rosterCount: 12,
       { id: 'wolf', name: 'Wolf', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -5684,7 +5689,7 @@ rosterCount: 14,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -5727,7 +5732,7 @@ rosterCount: 19,
       { id: 'wolf', name: 'Wolf', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -5750,7 +5755,7 @@ rosterCount: 12,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -5782,7 +5787,7 @@ rosterCount: 9,
       { id: 'tiptops', name: 'Tiptops', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -5805,7 +5810,7 @@ rosterCount: 8,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -5837,7 +5842,7 @@ rosterCount: 8,
       { id: 'rasputin', name: 'Rasputin', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -5860,7 +5865,7 @@ rosterCount: 14,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -5891,7 +5896,7 @@ rosterCount: 7,
       { id: 'zeus', name: 'Zeus', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -5914,7 +5919,7 @@ rosterCount: 7,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -5966,7 +5971,7 @@ rosterCount: 18,
       { id: 'akuma', name: 'Akuma', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -6014,7 +6019,7 @@ rosterCount: 12,
       { id: 'akuma', name: 'Akuma', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
 
@@ -6046,7 +6051,7 @@ rosterCount: 8,
       { id: 'zero', name: 'Zero', moveCount: 0 }
     ],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -6069,7 +6074,7 @@ rosterCount: 8,
 
         characters: [],
 
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
 
   },
 
@@ -6089,7 +6094,7 @@ rosterCount: 8,
       { id: 'tao', name: 'Tao', moveCount: 0 },
       { id: 'tabasa', name: 'Tabasa', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'dragon-ball-z-budokai-3',
@@ -6102,7 +6107,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 37,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'dragon-ball-z-budokai-tenkaichi-3',
@@ -6211,7 +6216,7 @@ rosterCount: 8,
       { id: 'yamcha', name: 'Yamcha', moveCount: 0 },
       { id: 'zangya', name: 'Zangya', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'guilty-gear-2-overture',
@@ -6224,7 +6229,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 7,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'guilty-gear-xrd--sign-',
@@ -6252,7 +6257,7 @@ rosterCount: 8,
       { id: 'venom', name: 'Venom', moveCount: 0 },
       { id: 'zato-1', name: 'Zato-1', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'injustice-gods-among-us',
@@ -6265,7 +6270,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 30,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'injustice-2',
@@ -6319,7 +6324,7 @@ rosterCount: 8,
       { id: 'swamp-thing', name: 'Swamp Thing', moveCount: 0 },
       { id: 'wonder-woman', name: 'Wonder Woman', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'mortal-kombat-3',
@@ -6333,7 +6338,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 15,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'mortal-kombat-4',
@@ -6366,7 +6371,7 @@ rosterCount: 8,
       { id: 'sub-zero', name: 'Sub-Zero', moveCount: 0 },
       { id: 'tanya', name: 'Tanya', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'mortal-kombat-deadly-alliance',
@@ -6380,7 +6385,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 24,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'mortal-kombat-armageddon',
@@ -6457,7 +6462,7 @@ rosterCount: 8,
       { id: 'tanya', name: 'Tanya', moveCount: 0 },
       { id: 'taven', name: 'Taven', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'mortal-kombat-11',
@@ -6467,7 +6472,7 @@ rosterCount: 8,
     platform: "PS4, Xbox One, Switch, PC",
     notationSystem: 'mk',
     name: "Mortal Kombat 11",
-    tabs: ['Special Moves', 'Finishers', 'Normal Moves', 'Throws', 'Combos', 'System'],
+    tabs: ['Special Moves', 'Finishers', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Combos', 'System'],
     tagline: "You're Next",
     isDraft: true,
     rosterCount: 37,
@@ -6539,7 +6544,7 @@ rosterCount: 8,
       { id: 'tam-tam', name: 'Tam Tam', moveCount: 0 },
       { id: 'ukyo', name: 'Ukyo', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'soulcalibur',
@@ -6552,7 +6557,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 17,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'soulcalibur-ii',
@@ -6587,7 +6592,7 @@ rosterCount: 8,
       { id: 'yoshimitsu', name: 'Yoshimitsu', moveCount: 0 },
       { id: 'yun-seong', name: 'Yun-seong', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'soulcalibur-iii',
@@ -6600,7 +6605,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 40,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'soulcalibur-iv',
@@ -6642,7 +6647,7 @@ rosterCount: 8,
       { id: 'yun-seong', name: 'Yun-seong', moveCount: 0 },
       { id: 'zasalamel', name: 'Zasalamel', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'soulcalibur-v',
@@ -6655,7 +6660,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 25,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'soulcalibur-vi',
@@ -6698,7 +6703,7 @@ rosterCount: 8,
       { id: 'yoshimitsu', name: 'Yoshimitsu', moveCount: 0 },
       { id: 'zasalamel', name: 'Zasalamel', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'street-fighter-ii-champion-edition',
@@ -6711,7 +6716,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 12,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'street-fighter-ii-hyper-fighting',
@@ -6737,7 +6742,7 @@ rosterCount: 8,
       { id: 'vega', name: 'Vega', moveCount: 0 },
       { id: 'zangief', name: 'Zangief', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'hyper-street-fighter-ii-the-anniversary-edition',
@@ -6750,7 +6755,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 16,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'street-fighter-alpha-warriors-dreams',
@@ -6775,7 +6780,7 @@ rosterCount: 8,
       { id: 'sagat', name: 'Sagat', moveCount: 0 },
       { id: 'sodom', name: 'Sodom', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'street-fighter-iii-3rd-strike---fight-for-the-future',
@@ -6789,7 +6794,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 19,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'street-fighter-iv',
@@ -6828,7 +6833,7 @@ rosterCount: 8,
       { id: 'vega', name: 'Vega', moveCount: 0 },
       { id: 'zangief', name: 'Zangief', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'super-street-fighter-iv',
@@ -6841,7 +6846,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 35,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'tekken-3',
@@ -6877,7 +6882,7 @@ rosterCount: 8,
       { id: 'true-ogre', name: 'True Ogre', moveCount: 0 },
       { id: 'yoshimitsu', name: 'Yoshimitsu', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'tekken-tag-tournament',
@@ -6890,7 +6895,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 34,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'tekken-4',
@@ -6926,7 +6931,7 @@ rosterCount: 8,
       { id: 'violet', name: 'Violet', moveCount: 0 },
       { id: 'yoshimitsu', name: 'Yoshimitsu', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'tekken-5',
@@ -6939,7 +6944,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 32,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'tekken-6',
@@ -6994,7 +6999,7 @@ rosterCount: 8,
       { id: 'yoshimitsu', name: 'Yoshimitsu', moveCount: 0 },
       { id: 'zafina', name: 'Zafina', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'tekken-tag-tournament-2',
@@ -7007,7 +7012,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 52,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'tekken-7',
@@ -7072,7 +7077,7 @@ rosterCount: 8,
       { id: 'yoshimitsu', name: 'Yoshimitsu', moveCount: 0 },
       { id: 'zafina', name: 'Zafina', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'the-king-of-fighters-95',
@@ -7084,7 +7089,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 27,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'the-king-of-fighters-96',
@@ -7123,7 +7128,7 @@ rosterCount: 8,
       { id: 'vice', name: 'Vice', moveCount: 0 },
       { id: 'wolfgang-krauser', name: 'Wolfgang Krauser', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'the-king-of-fighters-97',
@@ -7135,7 +7140,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 31,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'the-king-of-fighters-98',
@@ -7182,7 +7187,7 @@ rosterCount: 8,
       { id: 'yashiro-nanakase', name: 'Yashiro Nanakase', moveCount: 0 },
       { id: 'yuri-sakazaki', name: 'Yuri Sakazaki', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'the-king-of-fighters-99',
@@ -7194,7 +7199,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 28,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'the-king-of-fighters-xi',
@@ -7252,7 +7257,7 @@ rosterCount: 8,
       { id: 'whip', name: 'Whip', moveCount: 0 },
       { id: 'yuri', name: 'Yuri', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'the-king-of-fighters-xii',
@@ -7265,7 +7270,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 25,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'the-king-of-fighters-maximum-impact-regulation-a',
@@ -7283,7 +7288,7 @@ rosterCount: 8,
       { id: 'nightmare-geese', name: 'Nightmare Geese', moveCount: 0 },
       { id: 'xiao-lon', name: 'Xiao Lon', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'clayfighter',
@@ -7296,7 +7301,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 8,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'eternal-champions',
@@ -7332,7 +7337,7 @@ rosterCount: 8,
       { id: 'yappy', name: 'Yappy', moveCount: 0 },
       { id: 'zuni', name: 'Zuni', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'melty-blood-actress-again-current-code',
@@ -7345,7 +7350,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 25,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'melty-blood-type-lumina',
@@ -7380,7 +7385,7 @@ rosterCount: 8,
       { id: 'ushiwakamaru', name: 'Ushiwakamaru', moveCount: 0 },
       { id: 'vlov-arkhangel', name: 'Vlov Arkhangel', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'pocket-bravery',
@@ -7393,7 +7398,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 12,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'skullgirls-2nd-encore',
@@ -7425,7 +7430,7 @@ rosterCount: 8,
       { id: 'umbrella', name: 'Umbrella', moveCount: 0 },
       { id: 'valentine', name: 'Valentine', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'super-smash-bros',
@@ -7438,7 +7443,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 12,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'super-smash-bros-melee',
@@ -7478,7 +7483,7 @@ rosterCount: 8,
       { id: 'young-link', name: 'Young Link', moveCount: 0 },
       { id: 'zelda', name: 'Zelda', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'super-smash-bros-brawl',
@@ -7491,7 +7496,7 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 39,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
 
   {
@@ -7512,7 +7517,7 @@ rosterCount: 8,
       { id: 'tianhuo', name: 'Tianhuo', moveCount: 0 },
       { id: 'velvet', name: 'Velvet', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'melty-blood-type-lumina---wikipedia',
@@ -7522,7 +7527,7 @@ rosterCount: 8,
     tagline: "Type Lumina (Wiki)",
     isDraft: true,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
 
   {
@@ -7545,7 +7550,7 @@ rosterCount: 8,
       { id: 'zorn', name: 'Zorn', moveCount: 0 },
       { id: 'zyx', name: 'Zyx', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
 
   {
@@ -7556,7 +7561,7 @@ rosterCount: 8,
     tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
 
   {
@@ -7582,7 +7587,7 @@ rosterCount: 8,
       { id: 'duck-king', name: 'Duck King', moveCount: 0 },
       { id: 'mr-karate-ii', name: 'Mr. Karate II', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
 
   {
@@ -7592,7 +7597,7 @@ rosterCount: 8,
     name: "Fighters' Impact",
     isDraft: true,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
 
   {
@@ -7602,7 +7607,7 @@ rosterCount: 8,
     name: "Heaven's Gate",
     isDraft: true,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
 
   {
@@ -7613,7 +7618,7 @@ rosterCount: 8,
     tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
 
   {
@@ -7624,7 +7629,7 @@ rosterCount: 8,
     tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
 
   {
@@ -7635,7 +7640,7 @@ rosterCount: 8,
     tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'aggressors-of-dark-kombat',
@@ -7654,7 +7659,7 @@ rosterCount: 8,
       { id: 'lee-hae-gwon', name: 'Lee Hae Gwon', moveCount: 0 },
       { id: 'ganzagawa', name: 'Ganzagawa', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'chaos-code-new-sign-of-catastrophe',
@@ -7664,7 +7669,7 @@ rosterCount: 8,
     tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'rival-schools-united-by-fate',
@@ -7697,7 +7702,7 @@ rosterCount: 8,
       { id: 'akira-kazama', name: 'Akira Kazama', moveCount: 0 },
       { id: 'sakura-kasugano', name: 'Sakura Kasugano', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
   },
   {
     id: 'star-gladiator-episode-i-final-crusade',
@@ -7707,7 +7712,7 @@ rosterCount: 8,
     tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'tmnt-tournament-fighters-genesis',
@@ -7728,7 +7733,7 @@ rosterCount: 8,
       { id: 'krang', name: 'Krang', moveCount: 0 },
       { id: 'karai', name: 'Karai', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'tmnt-tournament-fighters-nes',
@@ -7738,7 +7743,7 @@ rosterCount: 8,
     tagline: "Enter the Arena",
     isDraft: true,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
     id: 'tmnt-tournament-fighters-snes',
@@ -7761,7 +7766,7 @@ rosterCount: 8,
       { id: 'rat-king', name: 'Rat King', moveCount: 0 },
       { id: 'karai', name: 'Karai', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Throws', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   }
   ,
   {
@@ -7787,7 +7792,7 @@ rosterCount: 8,
     ],
 
     characters: [],
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
   },
   {
     id: 'rival-schools-united-by-fate',
@@ -7811,7 +7816,7 @@ rosterCount: 8,
       { id: 'akira-kazama', name: 'Akira Kazama', moveCount: 0 },
       { id: 'sakura-kasugano', name: 'Sakura Kasugano', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
   }
   ,
   {
@@ -7825,7 +7830,7 @@ rosterCount: 8,
     platform: 'PC',
     rosterCount: 12,
     characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Throws', 'Unique Attacks']
+    tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Unique Attacks']
   }
   ,
   {
@@ -7856,7 +7861,7 @@ rosterCount: 8,
       { id: 'rui', name: 'Rui', moveCount: 0 },
       { id: 'vein', name: 'Vein', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Throws', 'Unique Attacks']
+    tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Unique Attacks']
   }
   ,
   {
@@ -7871,7 +7876,7 @@ rosterCount: 8,
     platform: 'PlayStation 3, Xbox 360, PC',
     rosterCount: 25,
     characters: [],
-    tabs: ['Special Moves', 'Heroic Brutality', 'Fatality', 'Super Combos', 'Normal Moves', 'Throws', 'Unique Attacks']
+    tabs: ['Special Moves', 'Heroic Brutality', 'Fatality', 'Super Combos', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Unique Attacks']
   }
   ,
   {
@@ -7913,7 +7918,7 @@ rosterCount: 8,
       { id: 'dark-heart', name: 'Dark Heart', moveCount: 0 },
       { id: 'pistrix', name: 'Pistrix', moveCount: 0 }
     ],
-    tabs: ['Special Moves', 'Arcana Moves', 'Super Moves', 'Critical Heart', 'Normal Moves', 'Throws', 'Unique Attacks']
+    tabs: ['Special Moves', 'Arcana Moves', 'Super Moves', 'Critical Heart', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Unique Attacks']
   }
   ,
   {
@@ -7928,6 +7933,6 @@ rosterCount: 8,
     platform: 'Arcade, PlayStation 2',
     rosterCount: 10,
     characters: [],
-    tabs: ['Special Moves', 'Offensive Art', 'Defensive Art', 'Critical Art', 'Normal Moves', 'Throws', 'Unique Attacks']
+    tabs: ['Special Moves', 'Offensive Art', 'Defensive Art', 'Critical Art', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Unique Attacks']
   }
 ];

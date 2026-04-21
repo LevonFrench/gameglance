@@ -374,7 +374,7 @@ export const GameSelectView: React.FC<Props> = ({
     }
     return [];
   });
-  const [developerFilter, setDeveloperFilter] = useState<string>('All');
+
   const [showFavoritesOnly, setShowFavoritesOnly] = useState<boolean>(false);
   const [isFilterPanelOpen, setIsFilterPanelOpen] = useState<boolean>(false);
   const [sortBy, setSortBy] = useState<'alpha' | 'date'>('date');
@@ -429,9 +429,48 @@ export const GameSelectView: React.FC<Props> = ({
   const VISIBLE_GAMES = SUPPORTED_GAMES.filter(g => !g.isDraft);
   
   // Sort favorites first, then apply selected sort order
+  const computeGameCategories = (game: typeof VISIBLE_GAMES[0]): string[] => {
+    const cats: string[] = [...(game.tags || [])];
+    
+    const devMap: Record<string, string> = {
+      'Arc System Works': 'ARC',
+      'NetherRealm Studios': 'NRS',
+      'Hudson Soft': 'Hudson',
+      'Capcom': 'Capcom',
+      'SNK': 'SNK',
+      'Sega': 'Sega',
+      'Tecmo': 'Tecmo'
+    };
+    if (game.developer && devMap[game.developer]) {
+       cats.push(devMap[game.developer]);
+    }
+
+    const franchises = [
+      { key: 'street-fighter', tag: 'SF' },
+      { key: 'king-of-fighters', tag: 'KOF' },
+      { key: 'samurai-shodown', tag: 'SamSho' },
+      { key: 'soulcalibur', tag: 'SoulCal' },
+      { key: 'guilty-gear', tag: 'GGEAR' },
+      { key: 'marvel-vs-capcom', tag: 'Vs.' },
+      { key: 'tekken', tag: 'Tekken' },
+      { key: 'mortal-kombat', tag: 'MK' },
+      { key: 'virtua-fighter', tag: 'VF' },
+      { key: 'vampire', tag: 'Darkstalkers' },
+      { key: 'darkstalkers', tag: 'Darkstalkers' },
+    ];
+    
+    for (const f of franchises) {
+      if (game.id.includes(f.key)) {
+         cats.push(f.tag);
+         break;
+      }
+    }
+    
+    return Array.from(new Set(cats));
+  };
+
     const filteredAndSortedGames = [...VISIBLE_GAMES]
-    .filter(g => developerFilter === 'All' || g.developer === developerFilter)
-    .filter(g => tagFilter === 'All' || (g.tags && g.tags.includes(tagFilter)))
+    .filter(g => tagFilter === 'All' || computeGameCategories(g).includes(tagFilter))
     .filter(g => searchQuery.trim() === '' || 
                  g.name.toLowerCase().includes(searchQuery.toLowerCase()) || 
                  (g.searchAliases && g.searchAliases.some(alias => alias.toLowerCase().includes(searchQuery.toLowerCase()))))
@@ -451,27 +490,11 @@ export const GameSelectView: React.FC<Props> = ({
     });
 
   const { isDark } = useTheme();
-  const developerCounts = VISIBLE_GAMES.reduce((acc, game) => {
-    if (game.developer) {
-      acc[game.developer] = (acc[game.developer] || 0) + 1;
-    }
-    return acc;
-  }, {} as Record<string, number>);
-
-  const allDevelopers = [
-    'All',
-    ...Object.entries(developerCounts)
-      .filter(([, count]) => count >= 5)
-      .map(([dev]) => dev)
-      .sort()
-  ];
-
   const tagCounts = VISIBLE_GAMES.reduce((acc, game) => {
-    if (game.tags) {
-      game.tags.forEach(t => {
-        acc[t] = (acc[t] || 0) + 1;
-      });
-    }
+    const cats = computeGameCategories(game);
+    cats.forEach(t => {
+      acc[t] = (acc[t] || 0) + 1;
+    });
     return acc;
   }, {} as Record<string, number>);
 
@@ -563,9 +586,9 @@ export const GameSelectView: React.FC<Props> = ({
                 padding: '0.6rem 1.25rem',
                 borderRadius: 'var(--radius-full)',
                 border: '1px solid',
-                borderColor: isFilterPanelOpen || developerFilter !== 'All' || tagFilter !== 'All' || showFavoritesOnly ? 'var(--accent-indigo)' : 'var(--border-subtle)',
-                background: isFilterPanelOpen || developerFilter !== 'All' || tagFilter !== 'All' || showFavoritesOnly ? 'rgba(99, 102, 241, 0.1)' : 'var(--bg-glass)',
-                color: isFilterPanelOpen || developerFilter !== 'All' || tagFilter !== 'All' || showFavoritesOnly ? 'var(--accent-indigo)' : 'var(--text-primary)',
+                borderColor: isFilterPanelOpen || tagFilter !== 'All' || showFavoritesOnly ? 'var(--accent-indigo)' : 'var(--border-subtle)',
+                background: isFilterPanelOpen || tagFilter !== 'All' || showFavoritesOnly ? 'rgba(99, 102, 241, 0.1)' : 'var(--bg-glass)',
+                color: isFilterPanelOpen || tagFilter !== 'All' || showFavoritesOnly ? 'var(--accent-indigo)' : 'var(--text-primary)',
                 fontSize: '0.9rem',
                 fontWeight: 600,
                 cursor: 'pointer',
@@ -576,12 +599,10 @@ export const GameSelectView: React.FC<Props> = ({
                 transition: 'all 0.3s ease',
                 whiteSpace: 'nowrap',
               }}
-              onMouseOver={(e) => { if (!isFilterPanelOpen && developerFilter === 'All' && tagFilter === 'All' && !showFavoritesOnly) e.currentTarget.style.borderColor = 'var(--accent-indigo)'; }}
-              onMouseOut={(e) => { if (!isFilterPanelOpen && developerFilter === 'All' && tagFilter === 'All' && !showFavoritesOnly) e.currentTarget.style.borderColor = 'var(--border-subtle)'; }}
             >
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><polygon points="22 3 2 3 10 12.46 10 19 14 21 14 12.46 22 3"></polygon></svg>
               <span>Filters</span>
-              {(developerFilter !== 'All' || tagFilter !== 'All' || showFavoritesOnly) && (
+              {(tagFilter !== 'All' || showFavoritesOnly) && (
                 <div style={{ width: '8px', height: '8px', borderRadius: '50%', background: 'currentColor', marginLeft: '0.25rem' }} />
               )}
             </button>
@@ -653,61 +674,36 @@ export const GameSelectView: React.FC<Props> = ({
                  </div>
                </div>
 
-               {/* Developers */}
+               {/* Unified Categories */}
                <div>
-                 <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Developers</div>
+                 <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Categories</div>
                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                    {allDevelopers.map(dev => (
-                      <button
-                        key={dev}
-                        onClick={() => { setDeveloperFilter(dev); setShowCards(true); }}
-                        style={{
-                          padding: '0.5rem 1rem',
-                          borderRadius: 'var(--radius-full)',
-                          border: '1px solid',
-                          borderColor: developerFilter === dev ? 'var(--accent-indigo)' : 'var(--border-subtle)',
-                          background: developerFilter === dev ? 'rgba(99, 102, 241, 0.15)' : 'transparent',
-                          color: developerFilter === dev ? 'var(--accent-indigo)' : 'var(--text-primary)',
-                          fontSize: '0.85rem',
-                          fontWeight: 600,
-                          cursor: 'pointer',
-                          transition: 'all 0.2s',
-                        }}
-                        onMouseOver={(e) => { if (developerFilter !== dev) e.currentTarget.style.borderColor = 'var(--accent-indigo)'; }}
-                        onMouseOut={(e) => { if (developerFilter !== dev) e.currentTarget.style.borderColor = 'var(--border-subtle)'; }}
-                      >
-                        {dev === 'Arc System Works' ? 'Arc Sys Works' : dev}
-                      </button>
-                    ))}
-                 </div>
-               </div>
-
-               {/* Tags */}
-               <div>
-                 <div style={{ fontSize: '0.85rem', fontWeight: 600, color: 'var(--text-secondary)', marginBottom: '0.75rem', textTransform: 'uppercase', letterSpacing: '0.05em' }}>Tags</div>
-                 <div style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
-                    {allTags.map(tag => (
-                      <button
-                        key={tag}
-                        onClick={() => { setTagFilter(tag); setShowCards(true); }}
-                        style={{
-                          padding: '0.5rem 1rem',
-                          borderRadius: 'var(--radius-full)',
-                          border: '1px solid',
-                          borderColor: tagFilter === tag ? 'var(--accent-indigo)' : 'var(--border-subtle)',
-                          background: tagFilter === tag ? 'rgba(99, 102, 241, 0.15)' : 'transparent',
-                          color: tagFilter === tag ? 'var(--accent-indigo)' : 'var(--text-primary)',
-                          fontSize: '0.85rem',
-                          fontWeight: 600,
-                          cursor: 'pointer',
-                          transition: 'all 0.2s',
-                        }}
-                        onMouseOver={(e) => { if (tagFilter !== tag) e.currentTarget.style.borderColor = 'var(--accent-indigo)'; }}
-                        onMouseOut={(e) => { if (tagFilter !== tag) e.currentTarget.style.borderColor = 'var(--border-subtle)'; }}
-                      >
-                        {tag}
-                      </button>
-                    ))}
+                    {allTags.map(tag => {
+                      const isActive = tagFilter === tag;
+                      return (
+                        <button
+                          key={tag}
+                          onClick={() => { setTagFilter(tag); setShowCards(true); }}
+                          style={{
+                            padding: '0.5rem 1.15rem',
+                            borderRadius: 'var(--radius-full)',
+                            border: '1px solid',
+                            borderColor: isActive ? 'var(--accent-indigo)' : 'var(--border-subtle)',
+                            background: isActive ? 'rgba(99, 102, 241, 0.1)' : 'var(--bg-glass)',
+                            color: isActive ? 'var(--accent-indigo)' : 'var(--text-primary)',
+                            fontSize: '0.85rem',
+                            fontWeight: 600,
+                            cursor: 'pointer',
+                            backdropFilter: 'blur(12px)',
+                            transition: 'all 0.3s ease',
+                          }}
+                          onMouseOver={(e) => { if (!isActive) e.currentTarget.style.borderColor = 'var(--accent-indigo)'; }}
+                          onMouseOut={(e) => { if (!isActive) e.currentTarget.style.borderColor = 'var(--border-subtle)'; }}
+                        >
+                          {tag}
+                        </button>
+                      );
+                    })}
                  </div>
                </div>
              </div>

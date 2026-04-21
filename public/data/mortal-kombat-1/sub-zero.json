@@ -44,6 +44,42 @@
   "game": "Mortal Kombat 1",
   "movesList": [
     {
+      "name": "Ice Ball",
+      "input": "d f 1",
+      "type": "special",
+      "id": "ice-ball"
+    },
+    {
+      "name": "Ice Clone",
+      "input": "d b 1",
+      "type": "special",
+      "id": "ice-clone"
+    },
+    {
+      "name": "Ice Slide",
+      "input": "b f 3",
+      "type": "special",
+      "id": "ice-slide"
+    },
+    {
+      "name": "Diving Glacier",
+      "input": "j. d b 4",
+      "type": "special",
+      "id": "diving-glacier"
+    },
+    {
+      "name": "Frosty (String)",
+      "input": "1 2",
+      "type": "string",
+      "id": "frosty-string"
+    },
+    {
+      "name": "Fatal Blow",
+      "input": "EN+BL",
+      "type": "special",
+      "id": "fatal-blow"
+    },
+    {
       "id": "n_0",
       "name": "Front Punch",
       "type": "normal",
@@ -81,17 +117,20 @@
     },
     {
       "name": "Fatality 1 (Hairline Fracture)",
-      "input": "6242 (Any)",
-      "type": "finisher"
+      "input": "f d b 2 (Any)",
+      "type": "finisher",
+      "id": "fatality-1-hairline-fracture"
     },
     {
       "name": "Fatality 2 (Brain Freeze)",
-      "input": "6464 (Close)",
-      "type": "finisher"
+      "input": "f b f 4 (Close)",
+      "type": "finisher",
+      "id": "fatality-2-brain-freeze"
     },
     {
+      "id": "animality",
       "name": "Animality",
-      "input": "2626 (Mid)",
+      "input": "d d b 3 (Mid)",
       "type": "finisher"
     }
   ]

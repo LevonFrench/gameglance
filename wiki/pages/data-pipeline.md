@@ -18,7 +18,7 @@ Python scripts in `scripts/scrapers/` pull raw data from community wikis.
 | Dustloop | Anime fighters (GG, BB, DBFZ) | `scrape_dustloop_*.cjs` |
 | In-game trials | Modern titles (SF6, T8, MK1) | Manual transcription |
 
-**SuperCombo caveat:** Cloudflare-protected. Requires Playwright with `headless=False`. Combo data is in `<table class="wikitable">` elements; inputs use `<img>` tags that need `alt` text extraction.
+**SuperCombo caveat:** Cloudflare-protected. Standard scraping requires Playwright with `headless=False`. Alternatively, direct raw Wikitext fetching (`scripts/repair_mvc.py`) can bypass some protection by hitting the `api.php` endpoints directly and dumping to `wiki/raw/supercombo_dump/` before parsing.
 
 ## 2. Staging
 

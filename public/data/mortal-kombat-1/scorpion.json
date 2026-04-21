@@ -44,6 +44,48 @@
   "game": "Mortal Kombat 1",
   "movesList": [
     {
+      "name": "Spear",
+      "input": "b f 1",
+      "type": "special",
+      "id": "spear"
+    },
+    {
+      "name": "Hellfire",
+      "input": "d b 2",
+      "type": "special",
+      "id": "hellfire"
+    },
+    {
+      "name": "Twisted Katanas",
+      "input": "d b 3",
+      "type": "special",
+      "id": "twisted-katanas"
+    },
+    {
+      "name": "Devouring Flame",
+      "input": "b f 2",
+      "type": "special",
+      "id": "devouring-flame"
+    },
+    {
+      "name": "Blazing Charge",
+      "input": "b f 4",
+      "type": "special",
+      "id": "blazing-charge"
+    },
+    {
+      "name": "Get Over Here (String)",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "get-over-here-string"
+    },
+    {
+      "name": "Fatal Blow",
+      "input": "EN+BL",
+      "type": "special",
+      "id": "fatal-blow"
+    },
+    {
       "id": "n_0",
       "name": "Front Punch",
       "type": "normal",
@@ -81,17 +123,20 @@
     },
     {
       "name": "Fatality 1 (Eye-Palling Defeat)",
-      "input": "2142 (Mid)",
-      "type": "finisher"
+      "input": "d f b 2 (Mid)",
+      "type": "finisher",
+      "id": "fatality-1-eye-palling-defeat"
     },
     {
-      "name": "Fatality 2 (Killer Klones From Netherrealm)",
-      "input": "6462 (Mid)",
-      "type": "finisher"
+      "name": "Fatality 2 (Killer Klones)",
+      "input": "b f b 2 (Mid)",
+      "type": "finisher",
+      "id": "fatality-2-killer-klones"
     },
     {
-      "name": "Animality (Sting Operation)",
-      "input": "4646 (Mid)",
+      "id": "animality",
+      "name": "Animality",
+      "input": "d d b 3 (Mid)",
       "type": "finisher"
     }
   ]
