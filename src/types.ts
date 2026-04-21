@@ -90,6 +90,7 @@ export interface GameDefinition {
   systemMechanics?: { name: string, description: string, input?: string }[];
   characters?: { id: string, name: string, isHidden?: boolean, moveCount?: number, comboCount?: number }[];
   links?: { title: string; url: string }[];
+  stores?: { platform: 'Steam' | 'PlayStation' | 'Xbox' | 'Nintendo' | 'Other'; url: string }[];
 }
 
 export const APP_VIEWS = ['game_select', 'char_select', 'move_list', 'main_screen'] as const;

@@ -15,6 +15,12 @@ export const SUPPORTED_GAMES: ReadonlyArray<Readonly<GameDefinition>> = [
       { title: 'Official Site / Patch Notes', url: 'https://en.bandainamcoent.eu/dragon-ball/dragon-ball-fighterz' },
       { title: 'Dustloop Wiki (DBFZ)', url: 'https://dustloop.com/w/DBFZ' }
     ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/678950/DRAGON_BALL_FighterZ/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0700-PPSA14131_00-DBFZPS5ENUS00000' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/dragon-ball-fighterz/BQOQW31MD5K9' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/dragon-ball-fighterz-switch/' }
+    ],
     notationSystem: 'numpad',
     systemMechanics: [
       { name: 'Assists', description: 'Call partner characters for assist attacks. Three assist types (A/B/C) per character.'  },
@@ -1809,6 +1815,11 @@ rosterCount: 33,
       { title: 'Official Site / Patch Notes', url: 'https://www.guiltygear.com/ggst/en/' },
       { title: 'Dustloop Wiki (GGST)', url: 'https://dustloop.com/w/GGST' }
     ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/1384160/GUILTY_GEAR_STRIVE/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP1024-PPSA02181_00-GGSTRIVEGAME0000' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/guilty-gear-strive/9nxpmwn5dsk1' }
+    ],
 
     
     systemMechanics: [
@@ -2450,6 +2461,11 @@ rosterCount: 12,
 rosterCount: 39,
 
             tags: ['Golden', '2D', 'Vs.'],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/2688730/MARVEL_vs_CAPCOM_Fighting_Collection_Arcade_Classics/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/concept/10008544' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/marvel-vs-capcom-fighting-collection-arcade-classics-switch/' }
+    ],
 
     
     systemMechanics: [
@@ -2702,6 +2718,12 @@ rosterCount: 25,
     links: [
       { title: 'Official Site / Patch Notes', url: 'https://www.mortalkombat.com/' },
       { title: 'TestYourMight', url: 'https://testyourmight.com/' }
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/1971870/Mortal_Kombat_1/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP1018-PPSA08480_00-MK10000000000000' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/mortal-kombat-1/9ph112n2t5st' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/mortal-kombat-1-switch/' }
     ],
 
     characters: [
@@ -3969,6 +3991,11 @@ rosterCount: 25,
       { title: 'Official Frame Data (CFN)', url: 'https://www.streetfighter.com/6/buckler/character' },
       { title: 'SuperCombo Wiki (SF6)', url: 'https://wiki.supercombo.gg/w/Street_Fighter_6' }
     ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/1364780/Street_Fighter_6/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0102-PPSA05763_00-SF60000000000000' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/street-fighter-6/9P6R0ZV16L0T' }
+    ],
 
     
     systemMechanics: [
@@ -4664,6 +4691,11 @@ rosterCount: 33,
       { title: 'Official Patch Notes (v3.00.02)', url: 'https://www.bandainamcoent.com/news/tekken-8-patch-notes-v3-00-02' },
       { title: 'Okizeme Data Repository', url: 'https://okizeme.com' },
       { title: 'Wavu Wiki', url: 'https://wavu.wiki' }
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/1778820/TEKKEN_8/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0700-PPSA10591_00-TEKKEN8000000000' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/tekken-8/9nksjqsp6jxs' }
     ],
     systemMechanics: [
       { name: 'Heat System', description: 'Enter Heat via Heat Burst (2+3) or Heat Engager. Enhances moves, deals chip damage, and halts match timer. When Heat ends, all character-specific powered-up states are removed.' },
@@ -6862,6 +6894,12 @@ rosterCount: 8,
     isDraft: true,
     rosterCount: 19,
     characters: [],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/586200/Street_Fighter_30th_Anniversary_Collection/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0102-CUSA11392_00-SF30THBUNDLESF30' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/street-fighter-30th-anniversary-collection/c24t2nldbxg1' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/street-fighter-30th-anniversary-collection-switch/' }
+    ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
