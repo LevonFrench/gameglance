@@ -44,6 +44,154 @@
   "game": "Mortal Kombat 1",
   "movesList": [
     {
+      "name": "Jab",
+      "input": "1",
+      "type": "normal",
+      "id": "jab"
+    },
+    {
+      "name": "Quick Combo",
+      "input": "1 2",
+      "type": "string",
+      "id": "quick-combo"
+    },
+    {
+      "name": "Cold Blooded",
+      "input": "1 1 4",
+      "type": "string",
+      "id": "cold-blooded"
+    },
+    {
+      "name": "Claw",
+      "input": "f 1",
+      "type": "normal",
+      "id": "claw"
+    },
+    {
+      "name": "Venom Strike",
+      "input": "f 2 3",
+      "type": "string",
+      "id": "venom-strike"
+    },
+    {
+      "name": "Cross",
+      "input": "2",
+      "type": "normal",
+      "id": "cross"
+    },
+    {
+      "name": "Zaterran Rush",
+      "input": "2 1",
+      "type": "string",
+      "id": "zaterran-rush"
+    },
+    {
+      "name": "Zaterran Fury",
+      "input": "2 1 4",
+      "type": "string",
+      "id": "zaterran-fury"
+    },
+    {
+      "name": "Hook",
+      "input": "b 2",
+      "type": "normal",
+      "id": "hook"
+    },
+    {
+      "name": "Overhead",
+      "input": "f 2",
+      "type": "normal",
+      "id": "overhead"
+    },
+    {
+      "name": "Knee",
+      "input": "3",
+      "type": "normal",
+      "id": "knee"
+    },
+    {
+      "name": "Low Chain",
+      "input": "b 3 1",
+      "type": "string",
+      "id": "low-chain"
+    },
+    {
+      "name": "Low Chain Extended",
+      "input": "b 3 1 3",
+      "type": "string",
+      "id": "low-chain-extended"
+    },
+    {
+      "name": "Acid Wash",
+      "input": "f 3 2",
+      "type": "string",
+      "id": "acid-wash"
+    },
+    {
+      "name": "Roundhouse",
+      "input": "4",
+      "type": "normal",
+      "id": "roundhouse"
+    },
+    {
+      "name": "Heel",
+      "input": "b 4",
+      "type": "normal",
+      "id": "heel"
+    },
+    {
+      "name": "Poke",
+      "input": "d 1",
+      "type": "normal",
+      "id": "poke"
+    },
+    {
+      "name": "Uppercut",
+      "input": "d 2",
+      "type": "normal",
+      "id": "uppercut"
+    },
+    {
+      "name": "Low Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-kick"
+    },
+    {
+      "name": "Sweep",
+      "input": "d 4",
+      "type": "normal",
+      "id": "sweep"
+    },
+    {
+      "name": "Air Punch",
+      "input": "j 1",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-punch"
+    },
+    {
+      "name": "Air Slam",
+      "input": "j 2",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-slam"
+    },
+    {
+      "name": "Air Kick",
+      "input": "j 3",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-kick"
+    },
+    {
+      "name": "Air Roundhouse",
+      "input": "j 4",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-roundhouse"
+    },
+    {
       "name": "Acid Spit",
       "input": "b f 1",
       "type": "special",
@@ -80,64 +228,40 @@
       "id": "invisibility"
     },
     {
+      "name": "Forward Throw",
+      "input": "1+3",
+      "type": "throw",
+      "id": "forward-throw"
+    },
+    {
+      "name": "Back Throw",
+      "input": "b 1+3",
+      "type": "throw",
+      "id": "back-throw"
+    },
+    {
       "name": "Fatal Blow",
       "input": "EN+BL",
       "type": "special",
       "id": "fatal-blow"
     },
     {
-      "name": "Quick Combo",
-      "input": "1 2",
-      "type": "string",
-      "id": "quick-combo"
-    },
-    {
-      "name": "Zaterran Rush",
-      "input": "2 1",
-      "type": "string",
-      "id": "zaterran-rush"
-    },
-    {
-      "name": "Low Chain",
-      "input": "b 3 1 3",
-      "type": "string",
-      "id": "low-chain"
-    },
-    {
-      "name": "Venom Strike",
-      "input": "f 2 3",
-      "type": "string",
-      "id": "venom-strike"
-    },
-    {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
-    },
-    {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
-    },
-    {
-      "name": "Fatality 1 (Indigestion)",
-      "input": "f b d 4 (Mid)",
+      "name": "Fatality 1 (Acid Reflux)",
+      "input": "d d f 2 (Mid)",
       "type": "finisher",
-      "id": "fatality-1-indigestion"
+      "id": "fatality-1-acid-reflux"
     },
     {
-      "name": "Fatality 2 (Acid Reflux)",
-      "input": "f d b 3 (Close)",
+      "name": "Fatality 2 (Tasty Meal)",
+      "input": "b f b 4 (Close)",
       "type": "finisher",
-      "id": "fatality-2-acid-reflux"
+      "id": "fatality-2-tasty-meal"
     },
     {
-      "id": "animality",
       "name": "Animality",
-      "input": "d d b 3 (Mid)",
-      "type": "finisher"
+      "input": "d d b 2 (Mid)",
+      "type": "finisher",
+      "id": "animality"
     }
   ]
 }

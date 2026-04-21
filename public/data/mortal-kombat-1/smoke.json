@@ -44,6 +44,154 @@
   "game": "Mortal Kombat 1",
   "movesList": [
     {
+      "name": "Jab",
+      "input": "1",
+      "type": "normal",
+      "id": "jab"
+    },
+    {
+      "name": "Assassin Strike",
+      "input": "1 1",
+      "type": "string",
+      "id": "assassin-strike"
+    },
+    {
+      "name": "Assassin Combo",
+      "input": "1 1 1",
+      "type": "string",
+      "id": "assassin-combo"
+    },
+    {
+      "name": "Quick Slash",
+      "input": "f 1",
+      "type": "normal",
+      "id": "quick-slash"
+    },
+    {
+      "name": "Smoke Bomb",
+      "input": "b 1",
+      "type": "normal",
+      "id": "smoke-bomb"
+    },
+    {
+      "name": "Cross",
+      "input": "2",
+      "type": "normal",
+      "id": "cross"
+    },
+    {
+      "name": "Quick Combo",
+      "input": "3 2",
+      "type": "string",
+      "id": "quick-combo"
+    },
+    {
+      "name": "Enenra's Wrath",
+      "input": "2 1 4",
+      "type": "string",
+      "id": "enenras-wrath"
+    },
+    {
+      "name": "Hook",
+      "input": "b 2",
+      "type": "normal",
+      "id": "hook"
+    },
+    {
+      "name": "Overhead",
+      "input": "f 2",
+      "type": "normal",
+      "id": "overhead"
+    },
+    {
+      "name": "Mixup Combo",
+      "input": "b 2 3 4",
+      "type": "string",
+      "id": "mixup-combo"
+    },
+    {
+      "name": "Knee",
+      "input": "3",
+      "type": "normal",
+      "id": "knee"
+    },
+    {
+      "name": "Low Combo",
+      "input": "d 3 4",
+      "type": "string",
+      "id": "low-combo"
+    },
+    {
+      "name": "Nowhere to Hide",
+      "input": "f 3 2 4",
+      "type": "string",
+      "id": "nowhere-to-hide"
+    },
+    {
+      "name": "Roundhouse",
+      "input": "4",
+      "type": "normal",
+      "id": "roundhouse"
+    },
+    {
+      "name": "Heel",
+      "input": "b 4",
+      "type": "normal",
+      "id": "heel"
+    },
+    {
+      "name": "Poke",
+      "input": "d 1",
+      "type": "normal",
+      "id": "poke"
+    },
+    {
+      "name": "Uppercut",
+      "input": "d 2",
+      "type": "normal",
+      "id": "uppercut"
+    },
+    {
+      "name": "Low Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-kick"
+    },
+    {
+      "name": "Sweep",
+      "input": "d 4",
+      "type": "normal",
+      "id": "sweep"
+    },
+    {
+      "name": "Air Punch",
+      "input": "j 1",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-punch"
+    },
+    {
+      "name": "Air Slam",
+      "input": "j 2",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-slam"
+    },
+    {
+      "name": "Air Kick",
+      "input": "j 3",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-kick"
+    },
+    {
+      "name": "Air Roundhouse",
+      "input": "j 4",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-roundhouse"
+    },
+    {
       "name": "Smoke Bomb",
       "input": "d b 2",
       "type": "special",
@@ -63,7 +211,7 @@
     },
     {
       "name": "Shadow Blade",
-      "input": "d b 4",
+      "input": "d f 1",
       "type": "special",
       "id": "shadow-blade"
     },
@@ -74,64 +222,40 @@
       "id": "invisibility"
     },
     {
+      "name": "Forward Throw",
+      "input": "1+3",
+      "type": "throw",
+      "id": "forward-throw"
+    },
+    {
+      "name": "Back Throw",
+      "input": "b 1+3",
+      "type": "throw",
+      "id": "back-throw"
+    },
+    {
       "name": "Fatal Blow",
       "input": "EN+BL",
       "type": "special",
       "id": "fatal-blow"
     },
     {
-      "name": "Assassin Strike",
-      "input": "1 1 1",
-      "type": "string",
-      "id": "assassin-strike"
-    },
-    {
-      "name": "Quick Combo",
-      "input": "3 2",
-      "type": "string",
-      "id": "quick-combo"
-    },
-    {
-      "name": "Low Combo",
-      "input": "d 3 4",
-      "type": "string",
-      "id": "low-combo"
-    },
-    {
-      "name": "Mixup Combo",
-      "input": "b 2 3 4",
-      "type": "string",
-      "id": "mixup-combo"
-    },
-    {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
-    },
-    {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
-    },
-    {
-      "name": "Fatality 1 (Hazed and Infused)",
-      "input": "b f d 1 (Any)",
+      "name": "Fatality 1 (I Smoke U)",
+      "input": "b f d 3 (Mid)",
       "type": "finisher",
-      "id": "fatality-1-hazed-and-infused"
+      "id": "fatality-1-i-smoke-u"
     },
     {
-      "name": "Fatality 2",
-      "input": "d f b 2 (Any)",
+      "name": "Fatality 2 (Smoke Signal)",
+      "input": "d d b 1 (Close)",
       "type": "finisher",
-      "id": "fatality-2"
+      "id": "fatality-2-smoke-signal"
     },
     {
-      "id": "animality",
       "name": "Animality",
-      "input": "d d b 3 (Mid)",
-      "type": "finisher"
+      "input": "d d f 4 (Mid)",
+      "type": "finisher",
+      "id": "animality"
     }
   ]
 }

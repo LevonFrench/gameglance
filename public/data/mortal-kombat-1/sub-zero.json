@@ -44,41 +44,10 @@
   "game": "Mortal Kombat 1",
   "movesList": [
     {
-      "name": "Ice Ball",
-      "input": "d f 1",
-      "type": "special",
-      "id": "ice-ball"
-    },
-    {
-      "name": "Ice Klone",
-      "input": "d b 1",
-      "type": "special",
-      "id": "ice-klone"
-    },
-    {
-      "name": "Ice Slide",
-      "input": "b f 3",
-      "type": "special",
-      "id": "ice-slide"
-    },
-    {
-      "name": "Frost Shield",
-      "input": "d b 2",
-      "type": "special",
-      "id": "frost-shield"
-    },
-    {
-      "name": "Diving Glacier",
-      "input": "d b 4",
-      "type": "special",
-      "notes": "Air only",
-      "id": "diving-glacier"
-    },
-    {
-      "name": "Fatal Blow",
-      "input": "EN+BL",
-      "type": "special",
-      "id": "fatal-blow"
+      "name": "Ice Jab",
+      "input": "1",
+      "type": "normal",
+      "id": "ice-jab"
     },
     {
       "name": "Ice Combo",
@@ -93,6 +62,12 @@
       "id": "arctic-hammer"
     },
     {
+      "name": "Frost Fist",
+      "input": "b 1",
+      "type": "normal",
+      "id": "frost-fist"
+    },
+    {
       "name": "Frozen Over",
       "input": "f 1 2",
       "type": "string",
@@ -105,10 +80,28 @@
       "id": "freezing-point"
     },
     {
+      "name": "Ice Breaker",
+      "input": "2",
+      "type": "normal",
+      "id": "ice-breaker"
+    },
+    {
       "name": "Whiteout",
-      "input": "2 1 2",
+      "input": "2 1",
       "type": "string",
       "id": "whiteout"
+    },
+    {
+      "name": "Blizzard",
+      "input": "2 1 2",
+      "type": "string",
+      "id": "blizzard"
+    },
+    {
+      "name": "Kold Shoulder",
+      "input": "b 2",
+      "type": "normal",
+      "id": "kold-shoulder"
     },
     {
       "name": "Ice Cold",
@@ -117,46 +110,177 @@
       "id": "ice-cold"
     },
     {
-      "name": "Blizzard Rush",
-      "input": "b 3 4",
-      "type": "string",
-      "id": "blizzard-rush"
-    },
-    {
       "name": "Frost Bite",
-      "input": "f 4 3",
-      "type": "string",
+      "input": "f 2",
+      "type": "normal",
       "id": "frost-bite"
     },
     {
-      "id": "t_0",
+      "name": "Deep Freeze",
+      "input": "f 2 4",
+      "type": "string",
+      "id": "deep-freeze"
+    },
+    {
+      "name": "Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "front-kick"
+    },
+    {
+      "name": "Blizzard Rush",
+      "input": "b 3",
+      "type": "normal",
+      "id": "blizzard-rush"
+    },
+    {
+      "name": "Glacier Kick",
+      "input": "b 3 4",
+      "type": "string",
+      "id": "glacier-kick"
+    },
+    {
+      "name": "Cryo Slide",
+      "input": "f 3",
+      "type": "normal",
+      "id": "cryo-slide"
+    },
+    {
+      "name": "Roundhouse",
+      "input": "4",
+      "type": "normal",
+      "id": "roundhouse"
+    },
+    {
+      "name": "Frost Kick",
+      "input": "f 4",
+      "type": "normal",
+      "id": "frost-kick"
+    },
+    {
+      "name": "Frost Strike",
+      "input": "f 4 3",
+      "type": "string",
+      "id": "frost-strike"
+    },
+    {
+      "name": "Poke",
+      "input": "d 1",
+      "type": "normal",
+      "id": "poke"
+    },
+    {
+      "name": "Uppercut",
+      "input": "d 2",
+      "type": "normal",
+      "id": "uppercut"
+    },
+    {
+      "name": "Low Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-kick"
+    },
+    {
+      "name": "Sweep",
+      "input": "d 4",
+      "type": "normal",
+      "id": "sweep"
+    },
+    {
+      "name": "Air Punch",
+      "input": "j 1",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-punch"
+    },
+    {
+      "name": "Air Slam",
+      "input": "j 2",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-slam"
+    },
+    {
+      "name": "Air Kick",
+      "input": "j 3",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-kick"
+    },
+    {
+      "name": "Air Roundhouse",
+      "input": "j 4",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-roundhouse"
+    },
+    {
+      "name": "Ice Ball",
+      "input": "d f 1",
+      "type": "special",
+      "id": "ice-ball"
+    },
+    {
+      "name": "Ice Klone",
+      "input": "d b 1",
+      "type": "special",
+      "id": "ice-klone"
+    },
+    {
+      "name": "Frost Shield",
+      "input": "d b 2",
+      "type": "special",
+      "id": "frost-shield"
+    },
+    {
+      "name": "Ice Slide",
+      "input": "b f 3",
+      "type": "special",
+      "id": "ice-slide"
+    },
+    {
+      "name": "Diving Glacier",
+      "input": "d b 4",
+      "type": "special",
+      "notes": "Air only",
+      "id": "diving-glacier"
+    },
+    {
       "name": "Forward Throw",
+      "input": "1+3",
       "type": "throw",
-      "input": "1+3"
+      "id": "forward-throw"
     },
     {
-      "id": "t_1",
       "name": "Back Throw",
+      "input": "b 1+3",
       "type": "throw",
-      "input": "41+3"
+      "id": "back-throw"
     },
     {
-      "name": "Fatality 1 (Hairline Fracture)",
-      "input": "f d b 2 (Any)",
+      "name": "Fatal Blow",
+      "input": "EN+BL",
+      "type": "special",
+      "id": "fatal-blow"
+    },
+    {
+      "name": "Fatality 1 (Spine Shatter)",
+      "input": "d d d 2 (Close)",
       "type": "finisher",
-      "id": "fatality-1-hairline-fracture"
+      "id": "fatality-1-spine-shatter"
     },
     {
-      "name": "Fatality 2 (Brain Freeze)",
-      "input": "f b f 4 (Close)",
+      "name": "Fatality 2 (Frozen in Time)",
+      "input": "f b d 3 (Mid)",
       "type": "finisher",
-      "id": "fatality-2-brain-freeze"
+      "id": "fatality-2-frozen-in-time"
     },
     {
-      "id": "animality",
       "name": "Animality",
-      "input": "d d b 3 (Mid)",
-      "type": "finisher"
+      "input": "d d b 1 (Mid)",
+      "type": "finisher",
+      "id": "animality"
     }
   ]
 }

@@ -44,56 +44,6 @@
   "game": "Mortal Kombat 1",
   "movesList": [
     {
-      "name": "Bad Blood",
-      "input": "b f 1",
-      "type": "special",
-      "id": "bad-blood"
-    },
-    {
-      "name": "Quick Taste",
-      "input": "b f 2",
-      "type": "special",
-      "id": "quick-taste"
-    },
-    {
-      "name": "Leap of Faith",
-      "input": "d b 2",
-      "type": "special",
-      "id": "leap-of-faith"
-    },
-    {
-      "name": "Dark Plunge",
-      "input": "d b 4",
-      "type": "special",
-      "id": "dark-plunge"
-    },
-    {
-      "name": "Blood Sacrifice",
-      "input": "d f 4",
-      "type": "special",
-      "id": "blood-sacrifice"
-    },
-    {
-      "name": "Blood Bolt",
-      "input": "b f 3",
-      "type": "special",
-      "notes": "During Blood Sacrifice",
-      "id": "blood-bolt"
-    },
-    {
-      "name": "Air Dash",
-      "input": "Direction + SS",
-      "type": "special",
-      "notes": "Air only",
-      "id": "air-dash"
-    },
-    {
-      "name": "Fatal Blow",
-      "input": "EN+BL",
-      "type": "special",
-      "id": "fatal-blow"
-    },
-    {
       "name": "Dirty Claw",
       "input": "1",
       "type": "normal",
@@ -190,34 +140,136 @@
       "id": "tenderize"
     },
     {
-      "id": "t_0",
+      "name": "Poke",
+      "input": "d 1",
+      "type": "normal",
+      "id": "poke"
+    },
+    {
+      "name": "Uppercut",
+      "input": "d 2",
+      "type": "normal",
+      "id": "uppercut"
+    },
+    {
+      "name": "Low Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-kick"
+    },
+    {
+      "name": "Sweep",
+      "input": "d 4",
+      "type": "normal",
+      "id": "sweep"
+    },
+    {
+      "name": "Air Punch",
+      "input": "j 1",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-punch"
+    },
+    {
+      "name": "Air Slam",
+      "input": "j 2",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-slam"
+    },
+    {
+      "name": "Air Kick",
+      "input": "j 3",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-kick"
+    },
+    {
+      "name": "Air Roundhouse",
+      "input": "j 4",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-roundhouse"
+    },
+    {
+      "name": "Bad Blood",
+      "input": "b f 1",
+      "type": "special",
+      "id": "bad-blood"
+    },
+    {
+      "name": "Quick Taste",
+      "input": "b f 2",
+      "type": "special",
+      "id": "quick-taste"
+    },
+    {
+      "name": "Leap of Faith",
+      "input": "d b 2",
+      "type": "special",
+      "id": "leap-of-faith"
+    },
+    {
+      "name": "Dark Plunge",
+      "input": "d b 4",
+      "type": "special",
+      "id": "dark-plunge"
+    },
+    {
+      "name": "Blood Sacrifice",
+      "input": "d f 4",
+      "type": "special",
+      "id": "blood-sacrifice"
+    },
+    {
+      "name": "Blood Bolt",
+      "input": "b f 3",
+      "type": "special",
+      "notes": "During Blood Sacrifice",
+      "id": "blood-bolt"
+    },
+    {
+      "name": "Air Dash",
+      "input": "Direction + SS",
+      "type": "special",
+      "notes": "Air only",
+      "id": "air-dash"
+    },
+    {
       "name": "Forward Throw",
+      "input": "1+3",
       "type": "throw",
-      "input": "1+3"
+      "id": "forward-throw"
     },
     {
-      "id": "t_1",
       "name": "Back Throw",
+      "input": "b 1+3",
       "type": "throw",
-      "input": "41+3"
+      "id": "back-throw"
     },
     {
-      "name": "Fatality 1 (Vaeternus Komat)",
-      "input": "d d b 1 (Mid)",
+      "name": "Fatal Blow",
+      "input": "EN+BL",
+      "type": "special",
+      "id": "fatal-blow"
+    },
+    {
+      "name": "Fatality 1 (Blood Thirsty)",
+      "input": "d f d 4 (Mid)",
       "type": "finisher",
-      "id": "fatality-1-vaeternus-komat"
+      "id": "fatality-1-blood-thirsty"
     },
     {
-      "name": "Fatality 2",
-      "input": "b d b 4 (Mid)",
+      "name": "Fatality 2 (Flying Blood)",
+      "input": "b f b 2 (Close)",
       "type": "finisher",
-      "id": "fatality-2"
+      "id": "fatality-2-flying-blood"
     },
     {
-      "id": "animality",
       "name": "Animality",
-      "input": "d d b 3 (Mid)",
-      "type": "finisher"
+      "input": "d d d 1 (Mid)",
+      "type": "finisher",
+      "id": "animality"
     }
   ]
 }
