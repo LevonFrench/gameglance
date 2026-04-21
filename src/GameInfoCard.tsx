@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useTheme } from './useTheme';
 import type { GameDefinition } from './types';
 import type { ControllerType } from './glyphMap';
 import { GlyphSequence } from './GlyphSequence';
@@ -9,7 +10,7 @@ interface Props {
 }
 
 export const GameInfoCard: React.FC<Props> = ({ game, controller = 'xbox' }) => {
-  const isDark = true;
+  const { isDark } = useTheme();
   const [activeTab, setActiveTab] = useState<'info' | 'systems'>('systems');
   
   const mechanics = game.systemMechanics || null;
@@ -129,48 +130,80 @@ export const GameInfoCard: React.FC<Props> = ({ game, controller = 'xbox' }) => 
               {game.links && game.links.length > 0 && (
                 <div style={{ marginTop: 'var(--space-lg)', paddingTop: 'var(--space-lg)', borderTop: `1px solid ${isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'}` }}>
                   <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginBottom: 'var(--space-md)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>External Resources</div>
-                  <div style={{ 
-                    display: 'grid', 
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', 
-                    gap: 'var(--space-md)' 
-                  }}>
-                    {game.links.map(link => (
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 'var(--space-md)' }}>
+                    {game.links.map((link, idx) => (
                       <a 
                         key={link.title}
                         href={link.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{
+                          background: isDark ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.8)', 
+                          padding: 'var(--space-lg)', 
+                          borderRadius: 'var(--radius-lg)',
+                          border: `1px solid ${isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)'}`,
                           display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'space-between',
-                          background: isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.02)',
-                          padding: '12px 16px',
-                          borderRadius: 'var(--radius-md)',
-                          color: 'var(--text-primary)',
+                          flexDirection: 'column',
+                          position: 'relative',
+                          overflow: 'hidden',
                           textDecoration: 'none',
-                          fontWeight: 600,
-                          fontSize: '0.9rem',
-                          border: `1px solid ${isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'}`,
-                          transition: 'all 0.2s ease',
+                          color: 'inherit',
+                          transition: 'all 0.25s ease',
                         }}
                         onMouseOver={(e) => {
-                          e.currentTarget.style.background = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)';
                           e.currentTarget.style.borderColor = isDark ? 'rgba(255,255,255,0.15)' : 'rgba(0,0,0,0.15)';
-                          e.currentTarget.style.transform = 'translateY(-2px)';
+                          e.currentTarget.style.boxShadow = `0 0 18px ${accentGlow}`;
                         }}
                         onMouseOut={(e) => {
-                          e.currentTarget.style.background = isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.02)';
-                          e.currentTarget.style.borderColor = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)';
-                          e.currentTarget.style.transform = 'translateY(0)';
+                          e.currentTarget.style.borderColor = isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)';
+                          e.currentTarget.style.boxShadow = 'none';
                         }}
                       >
-                        <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{link.title}</span>
-                        <svg style={{ marginLeft: '12px', flexShrink: 0, width: '16px', height: '16px', opacity: 0.5 }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                          <polyline points="15 3 21 3 21 9"></polyline>
-                          <line x1="10" y1="14" x2="21" y2="3"></line>
-                        </svg>
+                        {/* Subtle number watermark */}
+                        <div style={{
+                          position: 'absolute',
+                          top: '-10px',
+                          right: '-5px',
+                          fontSize: '4rem',
+                          fontWeight: 900,
+                          color: isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.03)',
+                          lineHeight: 1,
+                          pointerEvents: 'none'
+                        }}>
+                          {(idx + 1).toString().padStart(2, '0')}
+                        </div>
+                        
+                        <div style={{ 
+                          fontWeight: 800, 
+                          color: `hsl(${hue}, 80%, 70%)`, 
+                          fontSize: '1.1rem',
+                          marginBottom: '8px',
+                          position: 'relative',
+                          zIndex: 1,
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '8px'
+                        }}>
+                          {link.title}
+                          <svg style={{ width: '14px', height: '14px', opacity: 0.5, flexShrink: 0 }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                          </svg>
+                        </div>
+                        
+                        <div style={{ 
+                          fontSize: '0.85rem', 
+                          lineHeight: 1.5,
+                          color: 'var(--text-tertiary)',
+                          position: 'relative',
+                          zIndex: 1,
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          whiteSpace: 'nowrap',
+                        }}>
+                          {link.url.replace(/^https?:\/\//, '').split('/')[0]}
+                        </div>
                       </a>
                     ))}
                   </div>
@@ -180,44 +213,79 @@ export const GameInfoCard: React.FC<Props> = ({ game, controller = 'xbox' }) => 
               {game.stores && game.stores.length > 0 && (
                 <div style={{ marginTop: 'var(--space-lg)', paddingTop: 'var(--space-lg)', borderTop: `1px solid ${isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'}` }}>
                   <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginBottom: 'var(--space-md)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>Available On</div>
-                  <div style={{ 
-                    display: 'grid', 
-                    gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', 
-                    gap: 'var(--space-md)' 
-                  }}>
-                    {game.stores.map(store => (
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))', gap: 'var(--space-md)' }}>
+                    {game.stores.map((store, idx) => (
                       <a 
                         key={store.platform + store.url}
                         href={store.url}
                         target="_blank"
                         rel="noopener noreferrer"
                         style={{
+                          background: isDark ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.8)', 
+                          padding: 'var(--space-lg)', 
+                          borderRadius: 'var(--radius-lg)',
+                          border: `1px solid ${isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)'}`,
                           display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          background: isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.02)',
-                          padding: '12px 16px',
-                          borderRadius: 'var(--radius-md)',
-                          color: 'var(--text-primary)',
+                          flexDirection: 'column',
+                          position: 'relative',
+                          overflow: 'hidden',
                           textDecoration: 'none',
-                          fontWeight: 600,
-                          fontSize: '0.9rem',
-                          border: `1px solid ${isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'}`,
-                          transition: 'all 0.2s ease',
-                          textAlign: 'center'
+                          color: 'inherit',
+                          transition: 'all 0.25s ease',
                         }}
                         onMouseOver={(e) => {
-                          e.currentTarget.style.background = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)';
                           e.currentTarget.style.borderColor = isDark ? 'rgba(255,255,255,0.15)' : 'rgba(0,0,0,0.15)';
-                          e.currentTarget.style.transform = 'translateY(-2px)';
+                          e.currentTarget.style.boxShadow = `0 0 18px ${accentGlow}`;
                         }}
                         onMouseOut={(e) => {
-                          e.currentTarget.style.background = isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.02)';
-                          e.currentTarget.style.borderColor = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)';
-                          e.currentTarget.style.transform = 'translateY(0)';
+                          e.currentTarget.style.borderColor = isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)';
+                          e.currentTarget.style.boxShadow = 'none';
                         }}
                       >
-                        <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{store.platform}</span>
+                        <div style={{
+                          position: 'absolute',
+                          top: '-10px',
+                          right: '-5px',
+                          fontSize: '4rem',
+                          fontWeight: 900,
+                          color: isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.03)',
+                          lineHeight: 1,
+                          pointerEvents: 'none'
+                        }}>
+                          {(idx + 1).toString().padStart(2, '0')}
+                        </div>
+                        
+                        <div style={{ 
+                          fontWeight: 800, 
+                          color: `hsl(${hue}, 80%, 70%)`, 
+                          fontSize: '1.1rem',
+                          marginBottom: '8px',
+                          position: 'relative',
+                          zIndex: 1,
+                          display: 'flex',
+                          alignItems: 'center',
+                          gap: '8px'
+                        }}>
+                          {store.platform}
+                          <svg style={{ width: '14px', height: '14px', opacity: 0.5, flexShrink: 0 }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                            <polyline points="15 3 21 3 21 9"></polyline>
+                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                          </svg>
+                        </div>
+                        
+                        <div style={{ 
+                          fontSize: '0.85rem', 
+                          lineHeight: 1.5,
+                          color: 'var(--text-tertiary)',
+                          position: 'relative',
+                          zIndex: 1,
+                          overflow: 'hidden',
+                          textOverflow: 'ellipsis',
+                          whiteSpace: 'nowrap',
+                        }}>
+                          {store.url.replace(/^https?:\/\//, '').split('/')[0]}
+                        </div>
                       </a>
                     ))}
                   </div>

@@ -1060,7 +1060,7 @@ export const GameSelectView: React.FC<Props> = ({
                       setTimeout(() => {
                         const el = document.getElementById(`game-container-${game.id}`);
                         if (el) {
-                          const y = el.getBoundingClientRect().top + window.scrollY - 260;
+                          const y = el.getBoundingClientRect().top + window.scrollY - 16;
                           window.scrollTo({ top: y, behavior: 'smooth' });
                         }
                       }, 50);
@@ -1088,14 +1088,14 @@ export const GameSelectView: React.FC<Props> = ({
                   onMouseOver={e => {
                     if (expandedGameId !== game.id) {
                       e.currentTarget.style.color = 'var(--text-primary)';
-                      e.currentTarget.style.transform = 'scale(1.15)';
+                      e.currentTarget.style.boxShadow = '0 0 12px rgba(99, 102, 241, 0.4)';
                       e.currentTarget.style.borderColor = 'rgba(255,255,255,0.3)';
                     }
                   }}
                   onMouseOut={e => {
                     if (expandedGameId !== game.id) {
                       e.currentTarget.style.color = 'var(--text-secondary)';
-                      e.currentTarget.style.transform = 'scale(1)';
+                      e.currentTarget.style.boxShadow = 'none';
                       e.currentTarget.style.borderColor = 'var(--border-subtle)';
                     }
                   }}
