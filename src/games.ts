@@ -2674,12 +2674,12 @@ rosterCount: 24,
 
   {
 
-    id: 'mortal-kombat-(2011)',
+    id: 'mortal-kombat-9',
 
     mameRomset: "",
 
     notationSystem: 'mk',
-    name: "Mortal Kombat (2011)",
+    name: "Mortal Kombat 9",
     tagline: "A Time to Kombat",
 
     developer: "NetherRealm Studios",
