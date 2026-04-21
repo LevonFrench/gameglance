@@ -1,27 +1,270 @@
 {
-  "name": "Sogetsu",
-  "character": "Sogetsu",
+  "name": "Sogetsu Kazama",
+  "character": "Sogetsu Kazama",
   "game": "Samurai Shodown (2019)",
+  "theme_colors": {
+    "special": "#dc2626",
+    "super_fatality": "#991b1b",
+    "normal": "#64748b"
+  },
   "movesList": [
     {
-      "name": "Gekkou",
-      "input": "236A/B/C",
-      "type": "special"
+      "name": "Far Slash A",
+      "input": "5A",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "sogetsu-move-0"
     },
     {
-      "name": "Fushou",
-      "input": "623A/B/C",
-      "type": "special"
+      "name": "Far Slash B",
+      "input": "5B",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "sogetsu-move-1"
     },
     {
-      "name": "Engetsu",
-      "input": "214A/B/C",
-      "type": "special"
+      "name": "Far Slash AB",
+      "input": "5AB",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "sogetsu-move-2"
     },
     {
-      "name": "Suigetsu",
-      "input": "j.236A/B/C",
-      "type": "special"
+      "name": "Near Slash A",
+      "input": "n.5A",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "sogetsu-move-3"
+    },
+    {
+      "name": "Near Slash B",
+      "input": "n.5B",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "sogetsu-move-4"
+    },
+    {
+      "name": "Near Slash AB",
+      "input": "n.5AB",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "sogetsu-move-5"
+    },
+    {
+      "name": "Crouch Slash A",
+      "input": "2A",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "sogetsu-move-6"
+    },
+    {
+      "name": "Crouch Slash B",
+      "input": "2B",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "sogetsu-move-7"
+    },
+    {
+      "name": "Crouch Slash AB",
+      "input": "2AB",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "sogetsu-move-8"
+    },
+    {
+      "name": "Standing Kick",
+      "input": "5D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "sogetsu-move-9"
+    },
+    {
+      "name": "Low Kick",
+      "input": "2D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "sogetsu-move-10"
+    },
+    {
+      "name": "Overhead Kick",
+      "input": "6D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "sogetsu-move-11"
+    },
+    {
+      "name": "Crouching Kick",
+      "input": "3D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "sogetsu-move-12"
+    },
+    {
+      "name": "Jumping Slash A",
+      "input": "j.A",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "sogetsu-move-13"
+    },
+    {
+      "name": "Jumping Slash B",
+      "input": "j.B",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "sogetsu-move-14"
+    },
+    {
+      "name": "Jumping Slash AB",
+      "input": "j.AB",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "sogetsu-move-15"
+    },
+    {
+      "name": "Jumping Kick",
+      "input": "j.D",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "sogetsu-move-16"
+    },
+    {
+      "name": "Dash Slash A",
+      "input": "66A",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "sogetsu-move-17"
+    },
+    {
+      "name": "Dash Slash B",
+      "input": "66B",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "sogetsu-move-18"
+    },
+    {
+      "name": "Dash Slash AB",
+      "input": "66AB",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "sogetsu-move-19"
+    },
+    {
+      "name": "Dash Kick",
+      "input": "66D",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "sogetsu-move-20"
+    },
+    {
+      "name": "Suigetsu Tou",
+      "input": "236+A/B",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "sogetsu-move-21"
+    },
+    {
+      "name": "Suitou Ha",
+      "input": "623+A/B",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "sogetsu-move-22"
+    },
+    {
+      "name": "Suisen",
+      "input": "214+A/B",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "sogetsu-move-23"
+    },
+    {
+      "name": "Suiryuu",
+      "input": "412+A/B",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "sogetsu-move-24"
+    },
+    {
+      "name": "Ama no Murakumo (WFT)",
+      "input": "236+AB",
+      "type": "super",
+      "category": "Super Moves",
+      "id": "sogetsu-move-25"
+    },
+    {
+      "name": "Tsuki no Shizuku (SSM)",
+      "input": "236+BC",
+      "type": "super",
+      "category": "Super Moves",
+      "id": "sogetsu-move-26"
+    },
+    {
+      "name": "Forward Throw",
+      "input": "4/6+CD (near)",
+      "type": "throw",
+      "id": "sogetsu-move-27"
+    },
+    {
+      "name": "Back Throw",
+      "input": "4+CD (near)",
+      "type": "throw",
+      "id": "sogetsu-move-28"
+    },
+    {
+      "name": "Dodge",
+      "input": "AB",
+      "type": "common",
+      "category": "Universal",
+      "id": "sogetsu-move-29"
+    },
+    {
+      "name": "Deflect",
+      "input": "236+D",
+      "type": "common",
+      "category": "Universal",
+      "id": "sogetsu-move-30"
+    },
+    {
+      "name": "Rage Explosion",
+      "input": "ABC",
+      "type": "common",
+      "category": "Universal",
+      "id": "sogetsu-move-31"
+    },
+    {
+      "name": "Issen",
+      "input": "ABC (during Rage Explosion)",
+      "type": "common",
+      "category": "Universal",
+      "id": "sogetsu-move-32"
+    },
+    {
+      "name": "Lightning Blade",
+      "input": "BC (during Rage Explosion)",
+      "type": "common",
+      "category": "Universal",
+      "id": "sogetsu-move-33"
+    },
+    {
+      "name": "Surprise Attack",
+      "input": "A+B (during backdash)",
+      "type": "common",
+      "category": "Universal",
+      "id": "sogetsu-move-34"
+    },
+    {
+      "name": "Pursuit Attack",
+      "input": "2+AB (opponent down)",
+      "type": "common",
+      "category": "Universal",
+      "id": "sogetsu-move-35"
+    },
+    {
+      "name": "Disarm",
+      "input": "236+CD",
+      "type": "common",
+      "category": "Universal",
+      "id": "sogetsu-move-36"
     }
-  ]
+  ],
+  "combosList": []
 }

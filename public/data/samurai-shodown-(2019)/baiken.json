@@ -2,36 +2,269 @@
   "name": "Baiken",
   "character": "Baiken",
   "game": "Samurai Shodown (2019)",
+  "theme_colors": {
+    "special": "#dc2626",
+    "super_fatality": "#991b1b",
+    "normal": "#64748b"
+  },
   "movesList": [
     {
+      "name": "Far Slash A",
+      "input": "5A",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "baiken-move-0"
+    },
+    {
+      "name": "Far Slash B",
+      "input": "5B",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "baiken-move-1"
+    },
+    {
+      "name": "Far Slash AB",
+      "input": "5AB",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "baiken-move-2"
+    },
+    {
+      "name": "Near Slash A",
+      "input": "n.5A",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "baiken-move-3"
+    },
+    {
+      "name": "Near Slash B",
+      "input": "n.5B",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "baiken-move-4"
+    },
+    {
+      "name": "Near Slash AB",
+      "input": "n.5AB",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "baiken-move-5"
+    },
+    {
+      "name": "Crouch Slash A",
+      "input": "2A",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "baiken-move-6"
+    },
+    {
+      "name": "Crouch Slash B",
+      "input": "2B",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "baiken-move-7"
+    },
+    {
+      "name": "Crouch Slash AB",
+      "input": "2AB",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "baiken-move-8"
+    },
+    {
+      "name": "Standing Kick",
+      "input": "5D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "baiken-move-9"
+    },
+    {
+      "name": "Low Kick",
+      "input": "2D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "baiken-move-10"
+    },
+    {
+      "name": "Overhead Kick",
+      "input": "6D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "baiken-move-11"
+    },
+    {
+      "name": "Crouching Kick",
+      "input": "3D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "baiken-move-12"
+    },
+    {
+      "name": "Jumping Slash A",
+      "input": "j.A",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "baiken-move-13"
+    },
+    {
+      "name": "Jumping Slash B",
+      "input": "j.B",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "baiken-move-14"
+    },
+    {
+      "name": "Jumping Slash AB",
+      "input": "j.AB",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "baiken-move-15"
+    },
+    {
+      "name": "Jumping Kick",
+      "input": "j.D",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "baiken-move-16"
+    },
+    {
+      "name": "Dash Slash A",
+      "input": "66A",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "baiken-move-17"
+    },
+    {
+      "name": "Dash Slash B",
+      "input": "66B",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "baiken-move-18"
+    },
+    {
+      "name": "Dash Slash AB",
+      "input": "66AB",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "baiken-move-19"
+    },
+    {
+      "name": "Dash Kick",
+      "input": "66D",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "baiken-move-20"
+    },
+    {
       "name": "Tatami Gaeshi",
-      "input": "236A/B/C",
-      "type": "special"
+      "input": "236+A/B",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "baiken-move-21"
     },
     {
-      "name": "Yozansen",
-      "input": "j.236A/B/C",
-      "type": "special"
+      "name": "Zakuro",
+      "input": "623+A/B",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "baiken-move-22"
     },
     {
-      "name": "Kabari",
-      "input": "41236A/B/C",
-      "type": "special"
+      "name": "Suzuran",
+      "input": "214+A/B",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "baiken-move-23"
     },
     {
-      "name": "Kire-tatami",
-      "input": "623A/B/C",
-      "type": "special"
+      "name": "Tsurane Sanzu Watashi",
+      "input": "236+D",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "baiken-move-24"
     },
     {
-      "name": "Tsurene Sanzu-watashi",
-      "input": "236AB",
-      "type": "wft"
+      "name": "Baku KI Kenrou (WFT)",
+      "input": "236+AB",
+      "type": "super",
+      "category": "Super Moves",
+      "id": "baiken-move-25"
     },
     {
-      "name": "Garyo Tensei",
-      "input": "236BC",
-      "type": "ssm"
+      "name": "Garyou Tensei (SSM)",
+      "input": "236+BC",
+      "type": "super",
+      "category": "Super Moves",
+      "id": "baiken-move-26"
+    },
+    {
+      "name": "Forward Throw",
+      "input": "4/6+CD (near)",
+      "type": "throw",
+      "id": "baiken-move-27"
+    },
+    {
+      "name": "Back Throw",
+      "input": "4+CD (near)",
+      "type": "throw",
+      "id": "baiken-move-28"
+    },
+    {
+      "name": "Dodge",
+      "input": "AB",
+      "type": "common",
+      "category": "Universal",
+      "id": "baiken-move-29"
+    },
+    {
+      "name": "Deflect",
+      "input": "236+D",
+      "type": "common",
+      "category": "Universal",
+      "id": "baiken-move-30"
+    },
+    {
+      "name": "Rage Explosion",
+      "input": "ABC",
+      "type": "common",
+      "category": "Universal",
+      "id": "baiken-move-31"
+    },
+    {
+      "name": "Issen",
+      "input": "ABC (during Rage Explosion)",
+      "type": "common",
+      "category": "Universal",
+      "id": "baiken-move-32"
+    },
+    {
+      "name": "Lightning Blade",
+      "input": "BC (during Rage Explosion)",
+      "type": "common",
+      "category": "Universal",
+      "id": "baiken-move-33"
+    },
+    {
+      "name": "Surprise Attack",
+      "input": "A+B (during backdash)",
+      "type": "common",
+      "category": "Universal",
+      "id": "baiken-move-34"
+    },
+    {
+      "name": "Pursuit Attack",
+      "input": "2+AB (opponent down)",
+      "type": "common",
+      "category": "Universal",
+      "id": "baiken-move-35"
+    },
+    {
+      "name": "Disarm",
+      "input": "236+CD",
+      "type": "common",
+      "category": "Universal",
+      "id": "baiken-move-36"
     }
-  ]
+  ],
+  "combosList": []
 }

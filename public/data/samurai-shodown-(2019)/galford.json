@@ -2,46 +2,297 @@
   "name": "Galford",
   "character": "Galford",
   "game": "Samurai Shodown (2019)",
+  "theme_colors": {
+    "special": "#dc2626",
+    "super_fatality": "#991b1b",
+    "normal": "#64748b"
+  },
   "movesList": [
     {
+      "name": "Far Slash A",
+      "input": "5A",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "galford-move-0"
+    },
+    {
+      "name": "Far Slash B",
+      "input": "5B",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "galford-move-1"
+    },
+    {
+      "name": "Far Slash AB",
+      "input": "5AB",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "galford-move-2"
+    },
+    {
+      "name": "Near Slash A",
+      "input": "n.5A",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "galford-move-3"
+    },
+    {
+      "name": "Near Slash B",
+      "input": "n.5B",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "galford-move-4"
+    },
+    {
+      "name": "Near Slash AB",
+      "input": "n.5AB",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "galford-move-5"
+    },
+    {
+      "name": "Crouch Slash A",
+      "input": "2A",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "galford-move-6"
+    },
+    {
+      "name": "Crouch Slash B",
+      "input": "2B",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "galford-move-7"
+    },
+    {
+      "name": "Crouch Slash AB",
+      "input": "2AB",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "galford-move-8"
+    },
+    {
+      "name": "Standing Kick",
+      "input": "5D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "galford-move-9"
+    },
+    {
+      "name": "Low Kick",
+      "input": "2D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "galford-move-10"
+    },
+    {
+      "name": "Overhead Kick",
+      "input": "6D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "galford-move-11"
+    },
+    {
+      "name": "Crouching Kick",
+      "input": "3D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "galford-move-12"
+    },
+    {
+      "name": "Jumping Slash A",
+      "input": "j.A",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "galford-move-13"
+    },
+    {
+      "name": "Jumping Slash B",
+      "input": "j.B",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "galford-move-14"
+    },
+    {
+      "name": "Jumping Slash AB",
+      "input": "j.AB",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "galford-move-15"
+    },
+    {
+      "name": "Jumping Kick",
+      "input": "j.D",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "galford-move-16"
+    },
+    {
+      "name": "Dash Slash A",
+      "input": "66A",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "galford-move-17"
+    },
+    {
+      "name": "Dash Slash B",
+      "input": "66B",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "galford-move-18"
+    },
+    {
+      "name": "Dash Slash AB",
+      "input": "66AB",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "galford-move-19"
+    },
+    {
+      "name": "Dash Kick",
+      "input": "66D",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "galford-move-20"
+    },
+    {
       "name": "Plasma Blade",
-      "input": "236A/B/C",
-      "type": "special"
+      "input": "236+A/B",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "galford-move-21"
     },
     {
       "name": "Strike Heads",
-      "input": "623D",
-      "type": "special"
+      "input": "623+D",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "galford-move-22"
     },
     {
       "name": "Rush Dog",
-      "input": "214A",
-      "type": "special"
+      "input": "214+A",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "galford-move-23"
     },
     {
       "name": "Machine Gun Dog",
-      "input": "214B",
-      "type": "special"
+      "input": "214+B",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "galford-move-24"
     },
     {
       "name": "Diving Dog",
-      "input": "214C",
-      "type": "special"
+      "input": "214+C",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "galford-move-25"
     },
     {
       "name": "Replica Dog",
-      "input": "214D",
-      "type": "special"
+      "input": "214+D",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "galford-move-26"
     },
     {
       "name": "Overhead Replica",
-      "input": "63214A+B",
-      "type": "special"
+      "input": "63214+AB",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "galford-move-27"
     },
     {
       "name": "Rear Replica",
-      "input": "63214C+D",
-      "type": "special"
+      "input": "63214+CD",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "galford-move-28"
+    },
+    {
+      "name": "Lightning Crash (WFT)",
+      "input": "236+AB",
+      "type": "super",
+      "category": "Super Moves",
+      "id": "galford-move-29"
+    },
+    {
+      "name": "Storm Fang (SSM)",
+      "input": "236+BC",
+      "type": "super",
+      "category": "Super Moves",
+      "id": "galford-move-30"
+    },
+    {
+      "name": "Forward Throw",
+      "input": "4/6+CD (near)",
+      "type": "throw",
+      "id": "galford-move-31"
+    },
+    {
+      "name": "Back Throw",
+      "input": "4+CD (near)",
+      "type": "throw",
+      "id": "galford-move-32"
+    },
+    {
+      "name": "Dodge",
+      "input": "AB",
+      "type": "common",
+      "category": "Universal",
+      "id": "galford-move-33"
+    },
+    {
+      "name": "Deflect",
+      "input": "236+D",
+      "type": "common",
+      "category": "Universal",
+      "id": "galford-move-34"
+    },
+    {
+      "name": "Rage Explosion",
+      "input": "ABC",
+      "type": "common",
+      "category": "Universal",
+      "id": "galford-move-35"
+    },
+    {
+      "name": "Issen",
+      "input": "ABC (during Rage Explosion)",
+      "type": "common",
+      "category": "Universal",
+      "id": "galford-move-36"
+    },
+    {
+      "name": "Lightning Blade",
+      "input": "BC (during Rage Explosion)",
+      "type": "common",
+      "category": "Universal",
+      "id": "galford-move-37"
+    },
+    {
+      "name": "Surprise Attack",
+      "input": "A+B (during backdash)",
+      "type": "common",
+      "category": "Universal",
+      "id": "galford-move-38"
+    },
+    {
+      "name": "Pursuit Attack",
+      "input": "2+AB (opponent down)",
+      "type": "common",
+      "category": "Universal",
+      "id": "galford-move-39"
+    },
+    {
+      "name": "Disarm",
+      "input": "236+CD",
+      "type": "common",
+      "category": "Universal",
+      "id": "galford-move-40"
     }
-  ]
+  ],
+  "combosList": []
 }

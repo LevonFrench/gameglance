@@ -1,17 +1,270 @@
 {
-  "name": "Hanzo",
-  "character": "Hanzo",
+  "name": "Hanzo Hattori",
+  "character": "Hanzo Hattori",
   "game": "Samurai Shodown (2019)",
+  "theme_colors": {
+    "special": "#dc2626",
+    "super_fatality": "#991b1b",
+    "normal": "#64748b"
+  },
   "movesList": [
     {
-      "name": "Falling Ninja Strike",
-      "input": "236+A/B",
-      "type": "special"
+      "name": "Far Slash A",
+      "input": "5A",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "hanzo-move-0"
     },
     {
-      "name": "Ninja Teleport",
+      "name": "Far Slash B",
+      "input": "5B",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "hanzo-move-1"
+    },
+    {
+      "name": "Far Slash AB",
+      "input": "5AB",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "hanzo-move-2"
+    },
+    {
+      "name": "Near Slash A",
+      "input": "n.5A",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "hanzo-move-3"
+    },
+    {
+      "name": "Near Slash B",
+      "input": "n.5B",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "hanzo-move-4"
+    },
+    {
+      "name": "Near Slash AB",
+      "input": "n.5AB",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "hanzo-move-5"
+    },
+    {
+      "name": "Crouch Slash A",
+      "input": "2A",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "hanzo-move-6"
+    },
+    {
+      "name": "Crouch Slash B",
+      "input": "2B",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "hanzo-move-7"
+    },
+    {
+      "name": "Crouch Slash AB",
+      "input": "2AB",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "hanzo-move-8"
+    },
+    {
+      "name": "Standing Kick",
+      "input": "5D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "hanzo-move-9"
+    },
+    {
+      "name": "Low Kick",
+      "input": "2D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "hanzo-move-10"
+    },
+    {
+      "name": "Overhead Kick",
+      "input": "6D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "hanzo-move-11"
+    },
+    {
+      "name": "Crouching Kick",
+      "input": "3D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "hanzo-move-12"
+    },
+    {
+      "name": "Jumping Slash A",
+      "input": "j.A",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "hanzo-move-13"
+    },
+    {
+      "name": "Jumping Slash B",
+      "input": "j.B",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "hanzo-move-14"
+    },
+    {
+      "name": "Jumping Slash AB",
+      "input": "j.AB",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "hanzo-move-15"
+    },
+    {
+      "name": "Jumping Kick",
+      "input": "j.D",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "hanzo-move-16"
+    },
+    {
+      "name": "Dash Slash A",
+      "input": "66A",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "hanzo-move-17"
+    },
+    {
+      "name": "Dash Slash B",
+      "input": "66B",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "hanzo-move-18"
+    },
+    {
+      "name": "Dash Slash AB",
+      "input": "66AB",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "hanzo-move-19"
+    },
+    {
+      "name": "Dash Kick",
+      "input": "66D",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "hanzo-move-20"
+    },
+    {
+      "name": "Shuriken",
+      "input": "236+A/B",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "hanzo-move-21"
+    },
+    {
+      "name": "Mozu Otoshi",
       "input": "623+A/B",
-      "type": "special"
+      "type": "special",
+      "category": "Special Moves",
+      "id": "hanzo-move-22"
+    },
+    {
+      "name": "Ninpo Kage Bunshin",
+      "input": "214+A/B",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "hanzo-move-23"
+    },
+    {
+      "name": "Shadow Teleport",
+      "input": "22+D",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "hanzo-move-24"
+    },
+    {
+      "name": "Reppuu Shuriken (WFT)",
+      "input": "236+AB",
+      "type": "super",
+      "category": "Super Moves",
+      "id": "hanzo-move-25"
+    },
+    {
+      "name": "Ongyou Kaeshi (SSM)",
+      "input": "236+BC",
+      "type": "super",
+      "category": "Super Moves",
+      "id": "hanzo-move-26"
+    },
+    {
+      "name": "Forward Throw",
+      "input": "4/6+CD (near)",
+      "type": "throw",
+      "id": "hanzo-move-27"
+    },
+    {
+      "name": "Back Throw",
+      "input": "4+CD (near)",
+      "type": "throw",
+      "id": "hanzo-move-28"
+    },
+    {
+      "name": "Dodge",
+      "input": "AB",
+      "type": "common",
+      "category": "Universal",
+      "id": "hanzo-move-29"
+    },
+    {
+      "name": "Deflect",
+      "input": "236+D",
+      "type": "common",
+      "category": "Universal",
+      "id": "hanzo-move-30"
+    },
+    {
+      "name": "Rage Explosion",
+      "input": "ABC",
+      "type": "common",
+      "category": "Universal",
+      "id": "hanzo-move-31"
+    },
+    {
+      "name": "Issen",
+      "input": "ABC (during Rage Explosion)",
+      "type": "common",
+      "category": "Universal",
+      "id": "hanzo-move-32"
+    },
+    {
+      "name": "Lightning Blade",
+      "input": "BC (during Rage Explosion)",
+      "type": "common",
+      "category": "Universal",
+      "id": "hanzo-move-33"
+    },
+    {
+      "name": "Surprise Attack",
+      "input": "A+B (during backdash)",
+      "type": "common",
+      "category": "Universal",
+      "id": "hanzo-move-34"
+    },
+    {
+      "name": "Pursuit Attack",
+      "input": "2+AB (opponent down)",
+      "type": "common",
+      "category": "Universal",
+      "id": "hanzo-move-35"
+    },
+    {
+      "name": "Disarm",
+      "input": "236+CD",
+      "type": "common",
+      "category": "Universal",
+      "id": "hanzo-move-36"
     }
-  ]
+  ],
+  "combosList": []
 }

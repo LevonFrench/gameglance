@@ -1,17 +1,277 @@
 {
-  "name": "Ukyo",
-  "character": "Ukyo",
+  "name": "Ukyo Tachibana",
+  "character": "Ukyo Tachibana",
   "game": "Samurai Shodown (2019)",
+  "theme_colors": {
+    "special": "#dc2626",
+    "super_fatality": "#991b1b",
+    "normal": "#64748b"
+  },
   "movesList": [
     {
-      "name": "Snowfall Slash",
-      "input": "214+A/B",
-      "type": "special"
+      "name": "Far Slash A",
+      "input": "5A",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "ukyo-move-0"
     },
     {
-      "name": "Swallow Swipe",
-      "input": "j.236+A/B",
-      "type": "special"
+      "name": "Far Slash B",
+      "input": "5B",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "ukyo-move-1"
+    },
+    {
+      "name": "Far Slash AB",
+      "input": "5AB",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "ukyo-move-2"
+    },
+    {
+      "name": "Near Slash A",
+      "input": "n.5A",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "ukyo-move-3"
+    },
+    {
+      "name": "Near Slash B",
+      "input": "n.5B",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "ukyo-move-4"
+    },
+    {
+      "name": "Near Slash AB",
+      "input": "n.5AB",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "ukyo-move-5"
+    },
+    {
+      "name": "Crouch Slash A",
+      "input": "2A",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "ukyo-move-6"
+    },
+    {
+      "name": "Crouch Slash B",
+      "input": "2B",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "ukyo-move-7"
+    },
+    {
+      "name": "Crouch Slash AB",
+      "input": "2AB",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "ukyo-move-8"
+    },
+    {
+      "name": "Standing Kick",
+      "input": "5D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "ukyo-move-9"
+    },
+    {
+      "name": "Low Kick",
+      "input": "2D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "ukyo-move-10"
+    },
+    {
+      "name": "Overhead Kick",
+      "input": "6D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "ukyo-move-11"
+    },
+    {
+      "name": "Crouching Kick",
+      "input": "3D",
+      "type": "normal",
+      "category": "Normal Moves",
+      "id": "ukyo-move-12"
+    },
+    {
+      "name": "Jumping Slash A",
+      "input": "j.A",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "ukyo-move-13"
+    },
+    {
+      "name": "Jumping Slash B",
+      "input": "j.B",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "ukyo-move-14"
+    },
+    {
+      "name": "Jumping Slash AB",
+      "input": "j.AB",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "ukyo-move-15"
+    },
+    {
+      "name": "Jumping Kick",
+      "input": "j.D",
+      "type": "normal",
+      "category": "Air Normals",
+      "id": "ukyo-move-16"
+    },
+    {
+      "name": "Dash Slash A",
+      "input": "66A",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "ukyo-move-17"
+    },
+    {
+      "name": "Dash Slash B",
+      "input": "66B",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "ukyo-move-18"
+    },
+    {
+      "name": "Dash Slash AB",
+      "input": "66AB",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "ukyo-move-19"
+    },
+    {
+      "name": "Dash Kick",
+      "input": "66D",
+      "type": "normal",
+      "category": "Dash Normals",
+      "id": "ukyo-move-20"
+    },
+    {
+      "name": "Swallow Slice",
+      "input": "236+A/B",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "ukyo-move-21"
+    },
+    {
+      "name": "Snowstorm Slash",
+      "input": "623+A/B",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "ukyo-move-22"
+    },
+    {
+      "name": "Swallow Return",
+      "input": "214+A/B",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "ukyo-move-23"
+    },
+    {
+      "name": "Apple Slicer",
+      "input": "623+D",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "ukyo-move-24"
+    },
+    {
+      "name": "Feint Swallow",
+      "input": "214+D",
+      "type": "special",
+      "category": "Special Moves",
+      "id": "ukyo-move-25"
+    },
+    {
+      "name": "Shooting Star (WFT)",
+      "input": "236+AB",
+      "type": "super",
+      "category": "Super Moves",
+      "id": "ukyo-move-26"
+    },
+    {
+      "name": "Second Moon (SSM)",
+      "input": "236+BC",
+      "type": "super",
+      "category": "Super Moves",
+      "id": "ukyo-move-27"
+    },
+    {
+      "name": "Forward Throw",
+      "input": "4/6+CD (near)",
+      "type": "throw",
+      "id": "ukyo-move-28"
+    },
+    {
+      "name": "Back Throw",
+      "input": "4+CD (near)",
+      "type": "throw",
+      "id": "ukyo-move-29"
+    },
+    {
+      "name": "Dodge",
+      "input": "AB",
+      "type": "common",
+      "category": "Universal",
+      "id": "ukyo-move-30"
+    },
+    {
+      "name": "Deflect",
+      "input": "236+D",
+      "type": "common",
+      "category": "Universal",
+      "id": "ukyo-move-31"
+    },
+    {
+      "name": "Rage Explosion",
+      "input": "ABC",
+      "type": "common",
+      "category": "Universal",
+      "id": "ukyo-move-32"
+    },
+    {
+      "name": "Issen",
+      "input": "ABC (during Rage Explosion)",
+      "type": "common",
+      "category": "Universal",
+      "id": "ukyo-move-33"
+    },
+    {
+      "name": "Lightning Blade",
+      "input": "BC (during Rage Explosion)",
+      "type": "common",
+      "category": "Universal",
+      "id": "ukyo-move-34"
+    },
+    {
+      "name": "Surprise Attack",
+      "input": "A+B (during backdash)",
+      "type": "common",
+      "category": "Universal",
+      "id": "ukyo-move-35"
+    },
+    {
+      "name": "Pursuit Attack",
+      "input": "2+AB (opponent down)",
+      "type": "common",
+      "category": "Universal",
+      "id": "ukyo-move-36"
+    },
+    {
+      "name": "Disarm",
+      "input": "236+CD",
+      "type": "common",
+      "category": "Universal",
+      "id": "ukyo-move-37"
     }
-  ]
+  ],
+  "combosList": []
 }
