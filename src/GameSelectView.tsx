@@ -119,13 +119,13 @@ const CustomDropdown = ({ value, options, onChange, labelExtractor = (o: string)
       <div 
         onClick={() => setIsOpen(!isOpen)}
         style={{
-          padding: '0.6rem 1.25rem',
+          padding: '0.75rem 1.5rem',
           borderRadius: 'var(--radius-full)',
           border: '1px solid',
           borderColor: isOpen ? 'var(--accent-indigo)' : 'var(--border-subtle)',
           background: 'var(--bg-glass)',
           color: 'var(--text-primary)',
-          fontSize: '0.9rem',
+          fontSize: '1.05rem',
           fontWeight: 600,
           cursor: 'pointer',
           backdropFilter: 'blur(12px)',
@@ -225,13 +225,13 @@ const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: Autocomple
           onFocus={() => setIsOpen(true)}
           style={{
             width: '100%',
-            padding: '0.6rem 1.25rem',
+            padding: '0.75rem 1.5rem',
             borderRadius: 'var(--radius-full)',
             border: '1px solid',
             borderColor: isOpen ? 'var(--accent-indigo)' : 'var(--border-subtle)',
             background: 'var(--bg-glass)',
             color: 'var(--text-primary)',
-            fontSize: '0.9rem',
+            fontSize: '1.05rem',
             fontWeight: 600,
             outline: 'none',
             backdropFilter: 'blur(12px)',
@@ -543,7 +543,7 @@ export const GameSelectView: React.FC<Props> = ({
           fontFamily: "'Inter', sans-serif",
           fontWeight: 800,
           letterSpacing: '0.3em',
-          fontSize: '1.25rem',
+          fontSize: '1.5rem',
           textTransform: 'uppercase',
           color: 'var(--accent-indigo)',
           marginBottom: '1rem',
@@ -555,7 +555,7 @@ export const GameSelectView: React.FC<Props> = ({
           data-text="SELECT GAME"
           onClick={() => { setShowCards(true); setExpandedGameId(null); }}
           style={{
-          fontSize: 'max(3rem, 6vw)',
+          fontSize: 'max(2rem, 3.5vw)',
           fontWeight: 900,
           letterSpacing: '-0.02em',
           lineHeight: 1.1,
@@ -564,7 +564,7 @@ export const GameSelectView: React.FC<Props> = ({
           color: 'var(--text-primary)',
           position: 'relative',
           display: 'inline-block',
-          marginBottom: '2rem',
+          marginBottom: '1.5rem',
           cursor: 'pointer',
         }}>
           SELECT GAME
@@ -575,7 +575,7 @@ export const GameSelectView: React.FC<Props> = ({
           display: 'flex',
           flexDirection: 'column',
           gap: '1rem',
-          maxWidth: '800px',
+          maxWidth: '900px',
           margin: '0 auto',
         }}>
           <div style={{
@@ -588,13 +588,13 @@ export const GameSelectView: React.FC<Props> = ({
             <button 
               onClick={() => setIsFilterPanelOpen(!isFilterPanelOpen)}
               style={{
-                padding: '0.6rem 1.25rem',
+                padding: '0.75rem 1.5rem',
                 borderRadius: 'var(--radius-full)',
                 border: '1px solid',
                 borderColor: isFilterPanelOpen || tagFilter !== 'All' || showFavoritesOnly ? 'var(--accent-indigo)' : 'var(--border-subtle)',
                 background: isFilterPanelOpen || tagFilter !== 'All' || showFavoritesOnly ? 'rgba(99, 102, 241, 0.1)' : 'var(--bg-glass)',
                 color: isFilterPanelOpen || tagFilter !== 'All' || showFavoritesOnly ? 'var(--accent-indigo)' : 'var(--text-primary)',
-                fontSize: '0.9rem',
+                fontSize: '1.05rem',
                 fontWeight: 600,
                 cursor: 'pointer',
                 backdropFilter: 'blur(12px)',
