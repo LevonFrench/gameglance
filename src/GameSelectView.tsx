@@ -1059,9 +1059,11 @@ export const GameSelectView: React.FC<Props> = ({
                     if (isExpanding) {
                       setTimeout(() => {
                         const el = document.getElementById(`game-container-${game.id}`);
+                        const header = document.querySelector('header');
                         if (el) {
-                          const y = el.getBoundingClientRect().top + window.scrollY - 16;
-                          window.scrollTo({ top: y, behavior: 'smooth' });
+                          const headerHeight = header ? header.getBoundingClientRect().height : 0;
+                          const y = el.getBoundingClientRect().top + window.scrollY - headerHeight;
+                          window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
                         }
                       }, 50);
                     }
