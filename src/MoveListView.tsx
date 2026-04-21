@@ -398,8 +398,44 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
 
         if (data.movesList) {
           data.movesList = data.movesList.map((m: Record<string, unknown>) => {
-            const raw = typeof m.type === 'string' ? m.type.toLowerCase() : String(m.type || 'normal');
-            return { ...m, type: TYPE_ALIASES[raw] || raw };
+            const rawType = typeof m.type === 'string' ? m.type.toLowerCase() : String(m.type || 'normal');
+            
+            const parsedFrameData: Record<string, string> = { ...(m.frameData as Record<string, string> || {}) };
+            const parsedProperties: string[] = [];
+            let parsedNotes = (m.notes as string) || '';
+
+            if (Array.isArray(m.properties)) {
+              m.properties.forEach((p: any) => {
+                if (typeof p === 'object' && p !== null && p.type) {
+                  const pType = String(p.type).toLowerCase();
+                  if (['startup', 'active', 'recovery', 'onblock', 'onhit', 'oncounter'].includes(pType)) {
+                    // map "onblock" -> "onBlock", etc.
+                    const keyMap: Record<string, string> = {
+                      'onblock': 'onBlock', 'onhit': 'onHit', 'oncounter': 'onCounter'
+                    };
+                    parsedFrameData[keyMap[pType] || pType] = p.value;
+                  } else if (pType === 'properties' || pType === 'notes') {
+                    if (p.value.includes('*') || p.value.includes('\n')) {
+                      parsedNotes += (parsedNotes ? '\n\n' : '') + p.value;
+                    } else {
+                      parsedProperties.push(...p.value.split(',').map((s: string) => s.trim()));
+                    }
+                  } else {
+                    parsedNotes += (parsedNotes ? '\n\n' : '') + `${p.type}: ${p.value}`;
+                  }
+                } else if (typeof p === 'string') {
+                  parsedProperties.push(p);
+                }
+              });
+            }
+
+            return { 
+              ...m, 
+              type: TYPE_ALIASES[rawType] || rawType,
+              properties: parsedProperties,
+              frameData: Object.keys(parsedFrameData).length > 0 ? parsedFrameData : undefined,
+              notes: parsedNotes || undefined
+            };
           });
         }
         setCharacterData(data);
