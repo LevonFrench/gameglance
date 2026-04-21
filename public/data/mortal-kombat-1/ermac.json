@@ -43,6 +43,142 @@
   "game": "Mortal Kombat 1",
   "movesList": [
     {
+      "name": "Jab",
+      "input": "1",
+      "type": "normal",
+      "id": "jab"
+    },
+    {
+      "name": "We Are Many",
+      "input": "1 2 3",
+      "type": "string",
+      "id": "we-are-many"
+    },
+    {
+      "name": "Hell Spiller",
+      "input": "f 1 1",
+      "type": "string",
+      "id": "hell-spiller"
+    },
+    {
+      "name": "Exorcism",
+      "input": "b 1",
+      "type": "normal",
+      "id": "exorcism"
+    },
+    {
+      "name": "Priest Kaller",
+      "input": "b 1 1+2",
+      "type": "string",
+      "id": "priest-kaller"
+    },
+    {
+      "name": "Cross",
+      "input": "2",
+      "type": "normal",
+      "id": "cross"
+    },
+    {
+      "name": "Grave Wounds",
+      "input": "b 2 2",
+      "type": "string",
+      "id": "grave-wounds"
+    },
+    {
+      "name": "Dragged Under",
+      "input": "f 2",
+      "type": "normal",
+      "id": "dragged-under"
+    },
+    {
+      "name": "Knee",
+      "input": "3",
+      "type": "normal",
+      "id": "knee"
+    },
+    {
+      "name": "Join Us",
+      "input": "b 3 2",
+      "type": "string",
+      "id": "join-us"
+    },
+    {
+      "name": "Knee Deep",
+      "input": "b 3",
+      "type": "normal",
+      "id": "knee-deep"
+    },
+    {
+      "name": "Macabre",
+      "input": "f 4 2",
+      "type": "string",
+      "id": "macabre"
+    },
+    {
+      "name": "Roundhouse",
+      "input": "4",
+      "type": "normal",
+      "id": "roundhouse"
+    },
+    {
+      "name": "Dead Nexus",
+      "input": "b 4",
+      "type": "normal",
+      "id": "dead-nexus"
+    },
+    {
+      "name": "Poke",
+      "input": "d 1",
+      "type": "normal",
+      "id": "poke"
+    },
+    {
+      "name": "Uppercut",
+      "input": "d 2",
+      "type": "normal",
+      "id": "uppercut"
+    },
+    {
+      "name": "Low Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-kick"
+    },
+    {
+      "name": "Sweep",
+      "input": "d 4",
+      "type": "normal",
+      "id": "sweep"
+    },
+    {
+      "name": "Air Punch",
+      "input": "j 1",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-punch"
+    },
+    {
+      "name": "Air Slam",
+      "input": "j 2",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-slam"
+    },
+    {
+      "name": "Air Kick",
+      "input": "j 3",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-kick"
+    },
+    {
+      "name": "Air Roundhouse",
+      "input": "j 4",
+      "type": "normal",
+      "notes": "Air",
+      "id": "air-roundhouse"
+    },
+    {
       "name": "Spirit Punch",
       "input": "b f 1",
       "type": "special",
@@ -58,12 +194,14 @@
       "name": "Teleport",
       "input": "d b 4",
       "type": "special",
+      "notes": "Also available in air",
       "id": "teleport"
     },
     {
       "name": "Soul Burst",
       "input": "d b 2",
       "type": "special",
+      "notes": "Also available in air",
       "id": "soul-burst"
     },
     {
@@ -73,76 +211,40 @@
       "id": "hover"
     },
     {
+      "name": "Forward Throw",
+      "input": "1+3",
+      "type": "throw",
+      "id": "forward-throw"
+    },
+    {
+      "name": "Back Throw",
+      "input": "b 1+3",
+      "type": "throw",
+      "id": "back-throw"
+    },
+    {
       "name": "Fatal Blow",
       "input": "EN+BL",
       "type": "special",
       "id": "fatal-blow"
     },
     {
-      "name": "We Are Many",
-      "input": "1 2 3",
-      "type": "string",
-      "id": "we-are-many"
-    },
-    {
-      "name": "Hell Spiller",
-      "input": "f 1 1",
-      "type": "string",
-      "id": "hell-spiller"
-    },
-    {
-      "name": "Grave Wounds",
-      "input": "b 2 2",
-      "type": "string",
-      "id": "grave-wounds"
-    },
-    {
-      "name": "Join Us",
-      "input": "b 3 2",
-      "type": "string",
-      "id": "join-us"
-    },
-    {
-      "name": "Priest Kaller",
-      "input": "b 1 1+2",
-      "type": "string",
-      "id": "priest-kaller"
-    },
-    {
-      "name": "Macabre",
-      "input": "f 4 2",
-      "type": "string",
-      "id": "macabre"
-    },
-    {
-      "name": "Throw (Forward)",
-      "input": "f + Throw",
-      "type": "throw",
-      "id": "throw-forward"
-    },
-    {
-      "name": "Throw (Back)",
-      "input": "b + Throw",
-      "type": "throw",
-      "id": "throw-back"
-    },
-    {
-      "name": "Fatality 1 (Vitruvian Macabre)",
-      "input": "d f d 4 (Mid)",
+      "name": "Fatality 1 (We Win)",
+      "input": "d f d 1 (Mid)",
       "type": "finisher",
-      "id": "fatality-1-vitruvian-macabre"
+      "id": "fatality-1-we-win"
     },
     {
-      "name": "Fatality 2",
-      "input": "b f b 2 (Mid)",
+      "name": "Fatality 2 (Controlled Chaos)",
+      "input": "b f b 2 (Close)",
       "type": "finisher",
-      "id": "fatality-2"
+      "id": "fatality-2-controlled-chaos"
     },
     {
-      "id": "animality",
       "name": "Animality",
-      "input": "d d b 3 (Mid)",
-      "type": "finisher"
+      "input": "d d d 4 (Mid)",
+      "type": "finisher",
+      "id": "animality"
     }
   ]
 }
