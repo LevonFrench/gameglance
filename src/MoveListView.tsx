@@ -43,7 +43,7 @@ const getFrameAdvantageColor = (frames?: string): string => {
   return 'var(--text-secondary)';
 };
 
-const STAT_TOOLTIPS: Record<string, string | JSX.Element> = {
+const STAT_TOOLTIPS: Record<string, React.ReactNode> = {
   'STARTUP': (
     <>
       <span className="oki-tooltip-title">STARTUP</span>
@@ -101,7 +101,7 @@ const PROPERTY_DEFINITIONS: Record<string, { color: string; initials: string; de
   'Force Crouch': { color: '#fb7185', initials: 'FC', desc: 'This move forces the opponent into a crouching state on block or hit.' }
 };
 
-const OkiTooltip = ({ content, children }: { content: string | JSX.Element; children: React.ReactNode }) => (
+const OkiTooltip = ({ content, children }: { content: React.ReactNode; children: React.ReactNode }) => (
   <div className="oki-tooltip-container">
     {children}
     <div className="oki-tooltip-content">

@@ -241,9 +241,6 @@ export const App: React.FC = () => {
       viewComponent = <GameSelectView 
         onSelectGame={handleSelectGame} 
         disableInitialAnimation={disableGameSelectAnimation} 
-        selectedCount={selectedPlaylist.length}
-        onLaunchGameGlance={handleLaunchMainScreen}
-        onClearGameGlance={handleClearPlaylist}
         controller={controller}
         initialExpandedId={lastExpandedGameId}
       />;

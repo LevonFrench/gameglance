@@ -289,7 +289,6 @@ export const GameInfoCard: React.FC<Props> = ({ game, controller = 'xbox' }) => 
                              inputs={[mech.input]} 
                              notationSystem={game.notationSystem || 'traditional'} 
                              controller={controller} 
-                             isDark={isDark} 
                           />
                         </div>
                       )}

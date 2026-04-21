@@ -16,6 +16,7 @@ export interface Move {
   id: string;
   name: string;
   type: MoveType;
+  category?: string;
   input: string;
   frameData?: FrameData;
   parentMoveId?: string;

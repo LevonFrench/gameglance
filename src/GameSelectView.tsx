@@ -10,9 +10,6 @@ import type { ControllerType } from './glyphMap';
 interface Props {
   onSelectGame: (game: GameDefinition) => void;
   disableInitialAnimation?: boolean;
-  selectedCount?: number;
-  onLaunchGameGlance?: () => void;
-  onClearGameGlance?: () => void;
   controller?: ControllerType;
   initialExpandedId?: string | null;
 }
@@ -364,10 +361,7 @@ export const GameSelectView: React.FC<Props> = ({
   onSelectGame, 
   disableInitialAnimation = false,
   controller,
-  initialExpandedId,
-  selectedCount,
-  onLaunchGameGlance,
-  onClearGameGlance
+  initialExpandedId
 }) => {
   useArrowNavigation('[id^="game-card-"]');
 
