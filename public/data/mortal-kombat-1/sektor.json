@@ -43,28 +43,47 @@
   "game": "Mortal Kombat 1",
   "movesList": [
     {
-      "name": "Straight Missile",
-      "input": "b f 1",
+      "name": "Unguided Rocket",
+      "input": "d b 1",
       "type": "special",
-      "id": "straight-missile"
+      "id": "unguided-rocket"
     },
     {
-      "name": "Up Missile",
-      "input": "d b 2",
+      "name": "Sidewinder",
+      "input": "d b 4",
       "type": "special",
-      "id": "up-missile"
-    },
-    {
-      "name": "Teleport Punch",
-      "input": "d f 3",
-      "type": "special",
-      "id": "teleport-punch"
+      "id": "sidewinder"
     },
     {
       "name": "Flamethrower",
-      "input": "b f 2",
+      "input": "d f 1",
       "type": "special",
       "id": "flamethrower"
+    },
+    {
+      "name": "Anti-Air Flak",
+      "input": "d b 2",
+      "type": "special",
+      "id": "anti-air-flak"
+    },
+    {
+      "name": "Blast Shield",
+      "input": "d b 3",
+      "type": "special",
+      "id": "blast-shield"
+    },
+    {
+      "name": "Tactical Redeploy",
+      "input": "d f 3",
+      "type": "special",
+      "id": "tactical-redeploy"
+    },
+    {
+      "name": "Thruster Boost",
+      "input": "u f",
+      "type": "special",
+      "notes": "Air only",
+      "id": "thruster-boost"
     },
     {
       "name": "Fatal Blow",
@@ -73,10 +92,40 @@
       "id": "fatal-blow"
     },
     {
-      "name": "Tekunin (String)",
+      "name": "Tekunin",
       "input": "2 1 4",
       "type": "string",
-      "id": "tekunin-string"
+      "id": "tekunin"
+    },
+    {
+      "name": "Quick Strike",
+      "input": "4 2",
+      "type": "string",
+      "id": "quick-strike"
+    },
+    {
+      "name": "Flame Chaser",
+      "input": "f 2 1",
+      "type": "string",
+      "id": "flame-chaser"
+    },
+    {
+      "name": "Rocket Barrage",
+      "input": "f 3 4",
+      "type": "string",
+      "id": "rocket-barrage"
+    },
+    {
+      "name": "Throw (Forward)",
+      "input": "f + Throw",
+      "type": "throw",
+      "id": "throw-forward"
+    },
+    {
+      "name": "Throw (Back)",
+      "input": "b + Throw",
+      "type": "throw",
+      "id": "throw-back"
     },
     {
       "name": "Fatality 1",

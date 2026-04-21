@@ -43,28 +43,41 @@
   "game": "Mortal Kombat 1",
   "movesList": [
     {
+      "name": "Ghost Ball",
+      "input": "d f 1",
+      "type": "special",
+      "id": "ghost-ball"
+    },
+    {
+      "name": "Teleport",
+      "input": "d u 2",
+      "type": "special",
+      "id": "teleport"
+    },
+    {
+      "name": "Shadow Slide",
+      "input": "d b 4",
+      "type": "special",
+      "id": "shadow-slide"
+    },
+    {
+      "name": "Shadow Slicer",
+      "input": "d b 3",
+      "type": "special",
+      "id": "shadow-slicer"
+    },
+    {
       "name": "Shadow Tackle",
       "input": "b f 2",
       "type": "special",
       "id": "shadow-tackle"
     },
     {
-      "name": "Shadow Slide",
-      "input": "b f 3",
+      "name": "Embrace Chaos",
+      "input": "d d 3",
       "type": "special",
-      "id": "shadow-slide"
-    },
-    {
-      "name": "Teleport Slam",
-      "input": "d u",
-      "type": "special",
-      "id": "teleport-slam"
-    },
-    {
-      "name": "Shadow Toss",
-      "input": "d b 1",
-      "type": "special",
-      "id": "shadow-toss"
+      "notes": "Once per match",
+      "id": "embrace-chaos"
     },
     {
       "name": "Fatal Blow",
@@ -73,16 +86,46 @@
       "id": "fatal-blow"
     },
     {
-      "name": "Saibot Strike (String)",
-      "input": "1 1 2",
+      "name": "Shadow Palm",
+      "input": "2 1 2",
       "type": "string",
-      "id": "saibot-strike-string"
+      "id": "shadow-palm"
     },
     {
-      "name": "Shadow's Grasp (String)",
+      "name": "Saibot Strike",
+      "input": "2 1 2 1",
+      "type": "string",
+      "id": "saibot-strike"
+    },
+    {
+      "name": "Shadow's Grasp",
       "input": "f 2 1",
       "type": "string",
-      "id": "shadows-grasp-string"
+      "id": "shadows-grasp"
+    },
+    {
+      "name": "Creeping Dark",
+      "input": "b 3 3",
+      "type": "string",
+      "id": "creeping-dark"
+    },
+    {
+      "name": "Shade Breaker",
+      "input": "f 3",
+      "type": "string",
+      "id": "shade-breaker"
+    },
+    {
+      "name": "Throw (Forward)",
+      "input": "f + Throw",
+      "type": "throw",
+      "id": "throw-forward"
+    },
+    {
+      "name": "Throw (Back)",
+      "input": "b + Throw",
+      "type": "throw",
+      "id": "throw-back"
     },
     {
       "name": "Fatality 1",
