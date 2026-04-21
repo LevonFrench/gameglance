@@ -44,16 +44,22 @@
   "game": "Mortal Kombat 1",
   "movesList": [
     {
-      "name": "Glaive Swipe",
-      "input": "d b 1",
+      "name": "Heavenly Hand",
+      "input": "d f 1",
       "type": "special",
-      "id": "glaive-swipe"
+      "id": "heavenly-hand"
     },
     {
-      "name": "Split Kick",
-      "input": "d b 4",
+      "name": "Guidance",
+      "input": "d f 3",
       "type": "special",
-      "id": "split-kick"
+      "id": "guidance"
+    },
+    {
+      "name": "Divine Protection",
+      "input": "d b 3",
+      "type": "special",
+      "id": "divine-protection"
     },
     {
       "name": "Drill Kick",
@@ -62,22 +68,34 @@
       "id": "drill-kick"
     },
     {
+      "name": "Dark Blade",
+      "input": "d b 4",
+      "type": "special",
+      "id": "dark-blade"
+    },
+    {
       "name": "Fatal Blow",
       "input": "EN+BL",
       "type": "special",
       "id": "fatal-blow"
     },
     {
-      "name": "Dragon's Tail",
-      "input": "1 2 4",
+      "name": "Quick Strike",
+      "input": "1 2",
       "type": "string",
-      "id": "dragons-tail"
+      "id": "quick-strike"
     },
     {
       "name": "Edenian Rush",
-      "input": "2 1 2",
+      "input": "2 1",
       "type": "string",
       "id": "edenian-rush"
+    },
+    {
+      "name": "Edenian Combo",
+      "input": "2 1 1",
+      "type": "string",
+      "id": "edenian-combo"
     },
     {
       "name": "Tornado Kick",
@@ -86,46 +104,34 @@
       "id": "tornado-kick"
     },
     {
-      "name": "Rising Dragon",
-      "input": "b 1 4",
+      "name": "Tornado Combo",
+      "input": "f 2 1 1",
       "type": "string",
-      "id": "rising-dragon"
+      "id": "tornado-combo"
     },
     {
-      "name": "Whirlwind",
-      "input": "f 3 4",
+      "name": "Dragon's Tail",
+      "input": "b 3 4",
       "type": "string",
-      "id": "whirlwind"
+      "id": "dragons-tail"
     },
     {
-      "name": "Assassin Strike",
-      "input": "b 3 2",
+      "name": "Dragon's Fury",
+      "input": "b 3 4 4",
       "type": "string",
-      "id": "assassin-strike"
+      "id": "dragons-fury"
     },
     {
-      "id": "n_0",
-      "name": "Front Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Grab (2,1+3)",
+      "input": "2 1+3",
+      "type": "string",
+      "id": "grab-21+3"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
-      "type": "normal",
-      "input": "2"
-    },
-    {
-      "id": "n_2",
-      "name": "Front Kick",
-      "type": "normal",
-      "input": "3"
-    },
-    {
-      "id": "n_3",
-      "name": "Back Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Grab (3,1+3)",
+      "input": "3 1+3",
+      "type": "string",
+      "id": "grab-31+3"
     },
     {
       "id": "t_0",
@@ -138,12 +144,6 @@
       "name": "Back Throw",
       "type": "throw",
       "input": "41+3"
-    },
-    {
-      "name": "Rising Glaive",
-      "input": "d f 2",
-      "type": "special",
-      "id": "rising-glaive"
     },
     {
       "name": "Fatality 1 (Helping Hands)",

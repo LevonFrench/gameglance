@@ -44,28 +44,77 @@
   "character": "Shang Tsung",
   "movesList": [
     {
-      "name": "Straight Skull",
-      "input": "b f 1",
+      "name": "Quick Age Morph",
+      "input": "d + Stance",
       "type": "special",
-      "id": "straight-skull"
-    },
-    {
-      "name": "Ground Skull",
-      "input": "d b 1",
-      "type": "special",
-      "id": "ground-skull"
+      "id": "quick-age-morph"
     },
     {
       "name": "Form Stealer",
-      "input": "d b 3",
+      "input": "f d b 4",
       "type": "special",
       "id": "form-stealer"
     },
     {
-      "name": "Injection",
-      "input": "d b 2",
+      "name": "Perfect Form",
+      "input": "f b 4",
       "type": "special",
+      "id": "perfect-form"
+    },
+    {
+      "name": "Straight Skull",
+      "input": "d f 1",
+      "type": "special",
+      "notes": "Young form",
+      "id": "straight-skull"
+    },
+    {
+      "name": "Double Skull",
+      "input": "d b 1",
+      "type": "special",
+      "notes": "Young form",
+      "id": "double-skull"
+    },
+    {
+      "name": "Triple Skull",
+      "input": "d b f 1",
+      "type": "special",
+      "notes": "Young form",
+      "id": "triple-skull"
+    },
+    {
+      "name": "Spinning Spikes",
+      "input": "d f 2",
+      "type": "special",
+      "notes": "Young form",
+      "id": "spinning-spikes"
+    },
+    {
+      "name": "Ground Skull",
+      "input": "d f 1",
+      "type": "special",
+      "notes": "Old form",
+      "id": "ground-skull"
+    },
+    {
+      "name": "Vicinity Slash",
+      "input": "d f 2",
+      "type": "special",
+      "notes": "Old form",
+      "id": "vicinity-slash"
+    },
+    {
+      "name": "Injection",
+      "input": "d b 3",
+      "type": "special",
+      "notes": "Old form",
       "id": "injection"
+    },
+    {
+      "name": "Bed of Nails",
+      "input": "d f 3",
+      "type": "special",
+      "id": "bed-of-nails"
     },
     {
       "name": "Fatal Blow",
@@ -74,58 +123,131 @@
       "id": "fatal-blow"
     },
     {
-      "name": "Soul Stealer",
-      "input": "f 4 1 2 1",
+      "name": "Wicked Wand",
+      "input": "1",
+      "type": "normal",
+      "id": "wicked-wand"
+    },
+    {
+      "name": "Sorcerer's Strike",
+      "input": "1 2",
       "type": "string",
-      "id": "soul-stealer"
+      "id": "sorcerers-strike"
+    },
+    {
+      "name": "Pure Evil",
+      "input": "1 2 4",
+      "type": "string",
+      "id": "pure-evil"
+    },
+    {
+      "name": "Deceptive Slash",
+      "input": "b 1",
+      "type": "normal",
+      "notes": "Young form",
+      "id": "deceptive-slash"
+    },
+    {
+      "name": "Snake Oil",
+      "input": "b 1 2",
+      "type": "string",
+      "notes": "Young form",
+      "id": "snake-oil"
+    },
+    {
+      "name": "Spurned Man",
+      "input": "b 1",
+      "type": "normal",
+      "notes": "Old form",
+      "id": "spurned-man"
+    },
+    {
+      "name": "Operation",
+      "input": "b 1 2",
+      "type": "string",
+      "notes": "Old form",
+      "id": "operation"
+    },
+    {
+      "name": "Vision Test",
+      "input": "2",
+      "type": "normal",
+      "id": "vision-test"
+    },
+    {
+      "name": "Silent Killer",
+      "input": "2 4",
+      "type": "string",
+      "notes": "Young form",
+      "id": "silent-killer"
+    },
+    {
+      "name": "Reflex Test",
+      "input": "2",
+      "type": "normal",
+      "notes": "Old form",
+      "id": "reflex-test"
+    },
+    {
+      "name": "Knee Reverser",
+      "input": "2 4",
+      "type": "string",
+      "notes": "Old form",
+      "id": "knee-reverser"
+    },
+    {
+      "name": "Fatal Incision",
+      "input": "b 2",
+      "type": "normal",
+      "id": "fatal-incision"
+    },
+    {
+      "name": "Lovetap",
+      "input": "b 2 2",
+      "type": "string",
+      "id": "lovetap"
+    },
+    {
+      "name": "Laid Low",
+      "input": "b 2 2 3",
+      "type": "string",
+      "id": "laid-low"
+    },
+    {
+      "name": "Bad Omen",
+      "input": "3",
+      "type": "normal",
+      "id": "bad-omen"
+    },
+    {
+      "name": "Soul Steal",
+      "input": "3 3",
+      "type": "string",
+      "id": "soul-steal"
+    },
+    {
+      "name": "Final Breath",
+      "input": "3 3 2",
+      "type": "string",
+      "id": "final-breath"
+    },
+    {
+      "name": "Shadow Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "shadow-kick"
     },
     {
       "name": "Dark Magic",
-      "input": "b 1 2",
+      "input": "4 4",
       "type": "string",
       "id": "dark-magic"
     },
     {
-      "name": "Sorcerer's Might",
-      "input": "2 1 4",
+      "name": "End of Days",
+      "input": "4 4 4",
       "type": "string",
-      "id": "sorcerers-might"
-    },
-    {
-      "name": "Shapeshifter",
-      "input": "f 2 1",
-      "type": "string",
-      "id": "shapeshifter"
-    },
-    {
-      "name": "Deception",
-      "input": "1 1 2",
-      "type": "string",
-      "id": "deception"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
-      "type": "normal",
-      "input": "1"
-    },
-    {
-      "id": "n_1",
-      "name": "Back Punch",
-      "type": "normal",
-      "input": "2"
-    },
-    {
-      "id": "n_2",
-      "name": "Front Kick",
-      "type": "normal",
-      "input": "3"
-    },
-    {
-      "id": "n_3",
-      "name": "Back Kick",
-      "type": "normal",
-      "input": "4"
+      "id": "end-of-days"
     },
     {
       "id": "t_0",

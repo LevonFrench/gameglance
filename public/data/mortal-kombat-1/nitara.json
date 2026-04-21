@@ -44,22 +44,48 @@
   "game": "Mortal Kombat 1",
   "movesList": [
     {
-      "name": "Blood Spit",
+      "name": "Bad Blood",
       "input": "b f 1",
       "type": "special",
-      "id": "blood-spit"
+      "id": "bad-blood"
     },
     {
-      "name": "Dive Kick",
-      "input": "j. d b 4",
+      "name": "Quick Taste",
+      "input": "b f 2",
       "type": "special",
-      "id": "dive-kick"
+      "id": "quick-taste"
+    },
+    {
+      "name": "Leap of Faith",
+      "input": "d b 2",
+      "type": "special",
+      "id": "leap-of-faith"
+    },
+    {
+      "name": "Dark Plunge",
+      "input": "d b 4",
+      "type": "special",
+      "id": "dark-plunge"
     },
     {
       "name": "Blood Sacrifice",
-      "input": "d b 2",
+      "input": "d f 4",
       "type": "special",
       "id": "blood-sacrifice"
+    },
+    {
+      "name": "Blood Bolt",
+      "input": "b f 3",
+      "type": "special",
+      "notes": "During Blood Sacrifice",
+      "id": "blood-bolt"
+    },
+    {
+      "name": "Air Dash",
+      "input": "Direction + SS",
+      "type": "special",
+      "notes": "Air only",
+      "id": "air-dash"
     },
     {
       "name": "Fatal Blow",
@@ -68,64 +94,100 @@
       "id": "fatal-blow"
     },
     {
-      "name": "Blood Bath",
-      "input": "1 1 2",
-      "type": "string",
-      "id": "blood-bath"
-    },
-    {
-      "name": "Crimson Claw",
-      "input": "2 1 4",
-      "type": "string",
-      "id": "crimson-claw"
-    },
-    {
-      "name": "Midnight Feast",
-      "input": "f 2 1",
-      "type": "string",
-      "id": "midnight-feast"
-    },
-    {
-      "name": "Night Stalker",
-      "input": "b 1 2",
-      "type": "string",
-      "id": "night-stalker"
-    },
-    {
-      "name": "Dark Wings",
-      "input": "f 3 4",
-      "type": "string",
-      "id": "dark-wings"
-    },
-    {
-      "name": "Bloodlust",
-      "input": "b 3 2",
-      "type": "string",
-      "id": "bloodlust"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Dirty Claw",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "dirty-claw"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Never Grow Old",
+      "input": "1 2",
+      "type": "string",
+      "id": "never-grow-old"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Never Die",
+      "input": "1 2 1 2",
+      "type": "string",
+      "id": "never-die"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Broken Nails",
+      "input": "f 1",
       "type": "normal",
-      "input": "4"
+      "id": "broken-nails"
+    },
+    {
+      "name": "Easy Prey",
+      "input": "f 1 2",
+      "type": "string",
+      "id": "easy-prey"
+    },
+    {
+      "name": "Blood Strike",
+      "input": "2",
+      "type": "normal",
+      "id": "blood-strike"
+    },
+    {
+      "name": "Blood Sucker",
+      "input": "2 2",
+      "type": "string",
+      "id": "blood-sucker"
+    },
+    {
+      "name": "Flying Kolors",
+      "input": "2 2 1",
+      "type": "string",
+      "id": "flying-kolors"
+    },
+    {
+      "name": "Lunging Leech",
+      "input": "b 2",
+      "type": "normal",
+      "id": "lunging-leech"
+    },
+    {
+      "name": "Drawing Blood",
+      "input": "b 2 4",
+      "type": "string",
+      "id": "drawing-blood"
+    },
+    {
+      "name": "Hex Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "hex-kick"
+    },
+    {
+      "name": "Hell Dive",
+      "input": "3 4",
+      "type": "string",
+      "id": "hell-dive"
+    },
+    {
+      "name": "Bloodhouse",
+      "input": "4",
+      "type": "normal",
+      "id": "bloodhouse"
+    },
+    {
+      "name": "Death Spiral",
+      "input": "b 4",
+      "type": "normal",
+      "id": "death-spiral"
+    },
+    {
+      "name": "Bleeding Out",
+      "input": "f 4",
+      "type": "normal",
+      "id": "bleeding-out"
+    },
+    {
+      "name": "Tenderize",
+      "input": "f 4 3 4",
+      "type": "string",
+      "id": "tenderize"
     },
     {
       "id": "t_0",
@@ -138,12 +200,6 @@
       "name": "Back Throw",
       "type": "throw",
       "input": "41+3"
-    },
-    {
-      "name": "Wing Dash",
-      "input": "b f 3",
-      "type": "special",
-      "id": "wing-dash"
     },
     {
       "name": "Fatality 1 (Vaeternus Komat)",
