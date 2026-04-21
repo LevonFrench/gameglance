@@ -125,7 +125,6 @@ export const GameInfoCard: React.FC<Props> = ({ game, controller = 'xbox' }) => 
                   <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.2rem' }}>{game.platform || 'Arcade'}</div>
                 </div>
               </div>
-              </div>
               
               {game.links && game.links.length > 0 && (
                 <div style={{ marginTop: 'var(--space-lg)', paddingTop: 'var(--space-lg)', borderTop: `1px solid ${isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'}` }}>
