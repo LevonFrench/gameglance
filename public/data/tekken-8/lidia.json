@@ -1,0 +1,2489 @@
+{
+  "id": "lidia",
+  "name": "Lidia",
+  "movesList": [
+    {
+      "id": "move-0",
+      "name": "Heat Burst",
+      "type": "Heat Moves",
+      "input": "2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Burst\n* Cancel to r45 with b,b\n* 3 chip damage on block\n* Partially uses Heat\n* Power crush 7~62"
+        }
+      ]
+    },
+    {
+      "id": "move-1",
+      "name": "Heian Shodan Seikenzuki > Heaven and Earth",
+      "type": "Heat Moves",
+      "input": "H.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i31"
+        },
+        {
+          "type": "properties",
+          "value": "* Reversal Break\n* Balcony Break\n* Cancel with b,b or f,f\n* Transition to HAE on hit or block only\n* Cancel HAE transition with B\n* Partially uses remaining Heat time\n* Hold for 20~30 frames"
+        }
+      ]
+    },
+    {
+      "id": "move-2",
+      "name": "Heian Shodan Seikenzuki (Slight Hold) > Heaven and Earth",
+      "type": "Heat Moves",
+      "input": "H.1+2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i42~64"
+        },
+        {
+          "type": "properties",
+          "value": "* Reversal Break\n* Balcony Break\n* Cancel with b,b or f,f\n* Transition to HAE on hit or block only\n* Cancel HAE transition with B\n* Partially uses remaining Heat time\n* Hold for 31~54 frames"
+        }
+      ]
+    },
+    {
+      "id": "move-3",
+      "name": "Heian Shodan Seikenzuki: Digress > Heaven and Earth",
+      "type": "Heat Moves",
+      "input": "H.1+2**",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i65"
+        },
+        {
+          "type": "properties",
+          "value": "* Reversal Break\n* Balcony Break\n* Cancel with b,b or f,f\n* Transition to HAE on hit or block only\n* Cancel HAE transition with B\n* Partially uses remaining Heat time\n* Hold for 55 frames"
+        }
+      ]
+    },
+    {
+      "id": "move-4",
+      "name": "Cat Stance > Heaven and Earth",
+      "type": "Heat Moves",
+      "input": "H.CAT.U",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Increases Heaven and Earth level\n* Parries all highs or mids\n* Transition to +12g? HAE on successful parry\n* Parry state 5~39"
+        }
+      ]
+    },
+    {
+      "id": "move-5",
+      "name": "Horse Stance > Heaven and Earth",
+      "type": "Heat Moves",
+      "input": "H.HRS.U",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Increases Heaven and Earth level\n* Parries all highs or mids\n* Transition to +12g? HAE on successful parry\n* Parry state 5~39"
+        }
+      ]
+    },
+    {
+      "id": "move-6",
+      "name": "Bassai-zuki > Heaven and Earth",
+      "type": "Heat Moves",
+      "input": "H.WLF.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Tornado\n* Cancel with b,b or f,f on frames 10~18\n* Transition to HAE on hit or block only\n* Cancel HAE transition with B"
+        }
+      ]
+    },
+    {
+      "id": "move-7",
+      "name": "Bassai-zuki (Hold) > Heaven and Earth",
+      "type": "Heat Moves",
+      "input": "H.WLF.1*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i36"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Cancel with b,b or f,f on frames 10~18\n* Transition to HAE on hit or block only\n* Cancel HAE transition with B\n* Balcony break on airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-8",
+      "name": "Stalking Wolf Stance > Heaven and Earth",
+      "type": "Heat Moves",
+      "input": "H.WLF.U",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Increases Heaven and Earth level\n* Parries all highs or mids\n* Transition to +12g? HAE on successful parry\n* Parry state 5~39"
+        }
+      ]
+    },
+    {
+      "id": "move-9",
+      "name": "Lightning Seikenzuki",
+      "type": "Heat Moves",
+      "input": "H.f,F+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Reversal Break\n* Transition to HRS on hit or block only\n* Partially uses remaining Heat time\n* Input H.f,f,F+2 to power up"
+        }
+      ]
+    },
+    {
+      "id": "move-10",
+      "name": "Swift High Seikenzuki > Heaven and Earth",
+      "type": "Heat Moves",
+      "input": "H.f,f,F+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Transition to HAE on hit or block only\n* Cancel HAE transition with B\n* Partially uses remaining Heat time"
+        }
+      ]
+    },
+    {
+      "id": "move-11",
+      "name": "Efflorescent Blizzard",
+      "type": "Heat Moves",
+      "input": "H.2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Smash\n* Balcony Break\n* Transition to r31 HAE on block\n** Cancel HAE transition with B on block\n* Transition to attack throw on hit\n* Increases HAE level by 1 on hit\n* 8 chip on block\n* Low crush 77~105"
+        }
+      ]
+    },
+    {
+      "id": "move-12",
+      "name": "Scarlet Valor: Martial Devotion",
+      "type": "Stances",
+      "input": "R.df+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\n* Power crush 8~"
+        }
+      ]
+    },
+    {
+      "id": "move-13",
+      "name": "Jab",
+      "type": "Single Hits",
+      "input": "1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Recovers 2f faster on hit or block (t27 r17)"
+        }
+      ]
+    },
+    {
+      "id": "move-14",
+      "name": "Flurry",
+      "type": "Strings",
+      "input": "1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i10"
+        },
+        {
+          "type": "properties",
+          "value": "Jail from 1st attack with 4f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-15",
+      "name": "Flurry > Mid Chaser",
+      "type": "Strings",
+      "input": "1,2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Combo from 2nd hit with 3f delay\n* Transition to CAT on hit or block only\n* CAT transition is -16"
+        }
+      ]
+    },
+    {
+      "id": "move-16",
+      "name": "Flurry > Gale Kick",
+      "type": "Strings",
+      "input": "1,2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Input can be delayed 3f\n* Low crush 16~31"
+        }
+      ]
+    },
+    {
+      "id": "move-17",
+      "name": "Flurry > Low Right Kick",
+      "type": "Strings",
+      "input": "1,2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Input can be delayed 8f\n* Interrupt with i7 from 2nd block\n* Can be low parried on hit\n* Can hit grounded while off-axis"
+        }
+      ]
+    },
+    {
+      "id": "move-18",
+      "name": "High Jab > High Right Kick",
+      "type": "Strings",
+      "input": "1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 4f delay\n* Balcony break on airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-19",
+      "name": "Bow",
+      "type": "Single Hits",
+      "input": "1+3+4",
+      "properties": []
+    },
+    {
+      "id": "move-20",
+      "name": "2",
+      "type": "Single Hits",
+      "input": "2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        }
+      ]
+    },
+    {
+      "id": "move-21",
+      "name": "2,1",
+      "type": "Strings",
+      "input": "2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, i20~21"
+        }
+      ]
+    },
+    {
+      "id": "move-22",
+      "name": "2,1,4",
+      "type": "Strings",
+      "input": "2,1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, ,i22"
+        }
+      ]
+    },
+    {
+      "id": "move-23",
+      "name": "2,1,4,4",
+      "type": "Strings",
+      "input": "2,1,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, ,i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-24",
+      "name": "2,1,4,4,1",
+      "type": "Strings",
+      "input": "2,1,4,4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, ,i23~24"
+        }
+      ]
+    },
+    {
+      "id": "move-25",
+      "name": "2,1,4,4,1,2",
+      "type": "Strings",
+      "input": "2,1,4,4,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, ,i22"
+        }
+      ]
+    },
+    {
+      "id": "move-26",
+      "name": "2,1,4,4,1,2,1",
+      "type": "Strings",
+      "input": "2,1,4,4,1,2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, ,i18~19"
+        }
+      ]
+    },
+    {
+      "id": "move-27",
+      "name": "2,1,4,4,1,2,1,3",
+      "type": "Strings",
+      "input": "2,1,4,4,1,2,1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, ,i22"
+        }
+      ]
+    },
+    {
+      "id": "move-28",
+      "name": "2,1,4,4,1,2,1,3,2",
+      "type": "Strings",
+      "input": "2,1,4,4,1,2,1,3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, ,i14"
+        }
+      ]
+    },
+    {
+      "id": "move-29",
+      "name": "10 Hit Combo",
+      "type": "10-Hit Combos",
+      "input": "2,1,4,4,1,2,1,3,2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, ,22"
+        }
+      ]
+    },
+    {
+      "id": "move-30",
+      "name": "Double Twisting Chop",
+      "type": "Strings",
+      "input": "2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Balcony Break\n* Combo from 1st hit with 4f delay\n* Transition to CAT on hit or block only\n* CAT transition is -12"
+        }
+      ]
+    },
+    {
+      "id": "move-31",
+      "name": "High Right Reverse Jab > Mid Right Front Kick",
+      "type": "Strings",
+      "input": "2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, i21"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit with 4f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-32",
+      "name": "3",
+      "type": "Single Hits",
+      "input": "3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        }
+      ]
+    },
+    {
+      "id": "move-33",
+      "name": "Gankaku",
+      "type": "Strings",
+      "input": "3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 1st hit with 3f delay\n* Just frame input within a 3f window (14~16) adds 2 damage\n* Balcony break on airborne hit\n* Hitstop 20f on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-34",
+      "name": "4",
+      "type": "Single Hits",
+      "input": "4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        }
+      ]
+    },
+    {
+      "id": "move-35",
+      "name": "High Right Roundhouse Kick > Jumping Back Spin Kick",
+      "type": "Strings",
+      "input": "4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i29~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH\n* Low crush 20~36\n* Floating state 37~45"
+        }
+      ]
+    },
+    {
+      "id": "move-36",
+      "name": "Heian Shodan Seikenzuki",
+      "type": "Single Hits",
+      "input": "1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i31"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Cancel with b,b or f,f\n* Opponent recovers crouching on hit\n* Hold for 20~30 frames"
+        }
+      ]
+    },
+    {
+      "id": "move-37",
+      "name": "Heian Shodan Seikenzuki (Slight Hold)",
+      "type": "Single Hits",
+      "input": "1+2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i42~64"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Cancel with input b,b or f,f\n* Hold for 31~54 frames\n* 5 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-38",
+      "name": "Heian Shodan Seikenzuki: Digress",
+      "type": "Single Hits",
+      "input": "1+2**",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i65"
+        },
+        {
+          "type": "properties",
+          "value": "* 9 chip damage on block\n* Hold for 55 frames"
+        }
+      ]
+    },
+    {
+      "id": "move-39",
+      "name": "Floret Maelstrom",
+      "type": "Single Hits",
+      "input": "3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21, i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st attack\n* Balcony break on airborne hit\n* Transition to CAT on hit or block only\n* Low crush 16~40"
+        }
+      ]
+    },
+    {
+      "id": "move-40",
+      "name": "f+2",
+      "type": "Single Hits",
+      "input": "f+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-41",
+      "name": "Horned Lark",
+      "type": "Strings",
+      "input": "f+2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Jail from 1st attack"
+        }
+      ]
+    },
+    {
+      "id": "move-42",
+      "name": "f+3",
+      "type": "Single Hits",
+      "input": "f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 6~15"
+        }
+      ]
+    },
+    {
+      "id": "move-43",
+      "name": "Viola Mandshurica",
+      "type": "Strings",
+      "input": "f+3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Transitions to WLF"
+        }
+      ]
+    },
+    {
+      "id": "move-44",
+      "name": "Jumping Front Kick > Helm Splitter",
+      "type": "Strings",
+      "input": "f+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i21~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH with 10f delay\n* Move can be delayed 7f\n* Can be ducked on hit\n* Interrupt with i5 from 1st block\n* Power up with input qcf+4, adds 2 damage\n* Balcony break on airborne hit\n* Transitions to HRS\n* 6 chip damage on block\n* Low crush 15~27\n* Floating state 28~30"
+        }
+      ]
+    },
+    {
+      "id": "move-45",
+      "name": "f+4",
+      "type": "Single Hits",
+      "input": "f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        }
+      ]
+    },
+    {
+      "id": "move-46",
+      "name": "f+4,3",
+      "type": "Strings",
+      "input": "f+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17, i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "Jail from 1st attack with 1f delay\n* Low crush 5~17\n* Floating state 18~20"
+        }
+      ]
+    },
+    {
+      "id": "move-47",
+      "name": "Kusanku Double Kick > Uraken-uchi",
+      "type": "Strings",
+      "input": "f+4,3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17, ,i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Spike\n* Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-48",
+      "name": "Kusanku Triple Kick",
+      "type": "Strings",
+      "input": "f+4,3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17, ,i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-49",
+      "name": "f+1+2",
+      "type": "Single Hits",
+      "input": "f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i9~10"
+        },
+        {
+          "type": "properties",
+          "value": "Jail from 1st attack"
+        }
+      ]
+    },
+    {
+      "id": "move-50",
+      "name": "f+1+2,3",
+      "type": "Strings",
+      "input": "f+1+2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i9~10, i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Jail from 1st attack"
+        }
+      ]
+    },
+    {
+      "id": "move-51",
+      "name": "Political Storm",
+      "type": "Heat Moves",
+      "input": "f+1+2,3,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i9~10, ,i14,i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +43d (+35)\n\n* Power up with input qcf+1+2 (adds 5 dmg to last hit)\n* Jail from any attack"
+        }
+      ]
+    },
+    {
+      "id": "move-52",
+      "name": "Horse Stance",
+      "type": "Stances",
+      "input": "f+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "Actionable after 20f"
+        }
+      ]
+    },
+    {
+      "id": "move-53",
+      "name": "df+1",
+      "type": "Single Hits",
+      "input": "df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        }
+      ]
+    },
+    {
+      "id": "move-54",
+      "name": "Mid Left Hook Thrust > Reverse Chop",
+      "type": "Strings",
+      "input": "df+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit with 1f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-55",
+      "name": "Mid Left Hook Thrust > Mid Left Sidekick",
+      "type": "Strings",
+      "input": "df+1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH with 3f delay\n* Input can be delayed 6f\n* Move can be delayed 5f"
+        }
+      ]
+    },
+    {
+      "id": "move-56",
+      "name": "Coiled Elbow Slam",
+      "type": "Single Hits",
+      "input": "df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Elbow\n* Transition to CAT on hit or block only"
+        }
+      ]
+    },
+    {
+      "id": "move-57",
+      "name": "df+3",
+      "type": "Single Hits",
+      "input": "df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "Knee"
+        }
+      ]
+    },
+    {
+      "id": "move-58",
+      "name": "Mid Left Knee > Mid Right Sidekick",
+      "type": "Strings",
+      "input": "df+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH with 2f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-59",
+      "name": "df+4",
+      "type": "Single Hits",
+      "input": "df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        }
+      ]
+    },
+    {
+      "id": "move-60",
+      "name": "Crescent Kick > High Elbow Strike",
+      "type": "Strings",
+      "input": "df+4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Elbow\n* Combo from 1st hit with 1f delay\n* Balcony break on airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-61",
+      "name": "Rapture",
+      "type": "Single Hits",
+      "input": "df+4~3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* 7 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-62",
+      "name": "Triangle Kick",
+      "type": "Single Hits",
+      "input": "df+4~4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "Spike"
+        }
+      ]
+    },
+    {
+      "id": "move-63",
+      "name": "Tourbillion",
+      "type": "Single Hits",
+      "input": "df+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-64",
+      "name": "Chop",
+      "type": "Single Hits",
+      "input": "d+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "Spike"
+        }
+      ]
+    },
+    {
+      "id": "move-65",
+      "name": "Lame Duck",
+      "type": "Single Hits",
+      "input": "d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-66",
+      "name": "d+3",
+      "type": "Single Hits",
+      "input": "d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "Can hit grounded off-axis"
+        }
+      ]
+    },
+    {
+      "id": "move-67",
+      "name": "Kansetsu-geri",
+      "type": "Strings",
+      "input": "d+3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH with 1f delay\n* Jail from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-68",
+      "name": "Majority Rules",
+      "type": "Strings",
+      "input": "d+3,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, ,i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Combo from 2nd hit\n* Combo from 1st CH\n* Forces tech backroll on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-69",
+      "name": "d+4",
+      "type": "Single Hits",
+      "input": "d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-70",
+      "name": "Down Jab",
+      "type": "Single Hits",
+      "input": "db+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Transition to r24? with f"
+        }
+      ]
+    },
+    {
+      "id": "move-71",
+      "name": "Valley Breeze",
+      "type": "Single Hits",
+      "input": "db+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        }
+      ]
+    },
+    {
+      "id": "move-72",
+      "name": "Adjourning Sweep",
+      "type": "Single Hits",
+      "input": "db+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Clean hit adds 3 damage\n* Transition to HRS on hit or block only\n* Transition to attack throw on CH\n* HRS transition is -19"
+        }
+      ]
+    },
+    {
+      "id": "move-73",
+      "name": "Shin Splinter",
+      "type": "Single Hits",
+      "input": "db+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22"
+        },
+        {
+          "type": "properties",
+          "value": "Can hit grounded off-axis"
+        }
+      ]
+    },
+    {
+      "id": "move-74",
+      "name": "For the People",
+      "type": "Single Hits",
+      "input": "db+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Has low parry effect\n* Does not parry weapon lows\n* Parry state 5~13"
+        }
+      ]
+    },
+    {
+      "id": "move-75",
+      "name": "For the Nation",
+      "type": "Stances",
+      "input": "db+3+4,P.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22, i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit\n* Just frame input within a 2f window (21~22) adds 2 damage"
+        }
+      ]
+    },
+    {
+      "id": "move-76",
+      "name": "Stalwart Governance",
+      "type": "Heat Moves",
+      "input": "b+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Balcony Break\n* 4 chip damage on block\n* Forces tech backroll on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-77",
+      "name": "b+1+3",
+      "type": "Single Hits",
+      "input": "b+1+3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "Parries high or mid punches\n* Parry state 5~12"
+        }
+      ]
+    },
+    {
+      "id": "move-78",
+      "name": "Ruling Party",
+      "type": "Single Hits",
+      "input": "b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        }
+      ]
+    },
+    {
+      "id": "move-79",
+      "name": "Crushing Left Knee",
+      "type": "Strings",
+      "input": "b+2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Combo from 1st hit with 7f delay\n* Input 3 on frames 12~14 to add 3 damage"
+        }
+      ]
+    },
+    {
+      "id": "move-80",
+      "name": "b+3",
+      "type": "Single Hits",
+      "input": "b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        }
+      ]
+    },
+    {
+      "id": "move-81",
+      "name": "Birds of Prey",
+      "type": "Strings",
+      "input": "b+3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-82",
+      "name": "b+3,4",
+      "type": "Strings",
+      "input": "b+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i20"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-83",
+      "name": "Birds and Beasts",
+      "type": "Strings",
+      "input": "b+3,4,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, ,i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st or 2nd hit\n* Input qcf+1+2 to add 2 damage\n* Power up based on Heaven and Earth level\n**HAE lvl.0 19 damage\n**HAE lvl.1 21 damage\n**HAE lvl.2 23 damage\n**HAE lvl.3 29 damage"
+        }
+      ]
+    },
+    {
+      "id": "move-84",
+      "name": "Back Spin Kick",
+      "type": "Single Hits",
+      "input": "b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony break on airborne or CH"
+        }
+      ]
+    },
+    {
+      "id": "move-85",
+      "name": "Iron Lady",
+      "type": "Single Hits",
+      "input": "b+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* -8 frame advantage and 10 chip damage on block after absorbing an attack in power crush state\n* Power crush 7~19"
+        }
+      ]
+    },
+    {
+      "id": "move-86",
+      "name": "Gekisai Ura-uchi",
+      "type": "Single Hits",
+      "input": "b+1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i60~61"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-87",
+      "name": "Cat Stance",
+      "type": "Stances",
+      "input": "b+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "Actionable after 20f"
+        }
+      ]
+    },
+    {
+      "id": "move-88",
+      "name": "Gyre",
+      "type": "Single Hits",
+      "input": "uf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Parries high punches or kicks\n* Hitstop on successful parry\n* Forced 2nd hit on successful parry\n* Parry state 5~17"
+        }
+      ]
+    },
+    {
+      "id": "move-89",
+      "name": "Vortex",
+      "type": "Strings",
+      "input": "uf+1,P",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23, i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Input P:2 to deal 23 damage"
+        }
+      ]
+    },
+    {
+      "id": "move-90",
+      "name": "Willow Branch",
+      "type": "Single Hits",
+      "input": "uf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Spike\n* Forces tech backroll on hit\n* Low crush 11~24\n* Floating state 25~27"
+        }
+      ]
+    },
+    {
+      "id": "move-91",
+      "name": "Cleaving Spirit",
+      "type": "Single Hits",
+      "input": "uf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16,i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Tornado\n* Transition to CAT on hit or block only\n* 2nd hit available only as combo from 1st hit\n* CAT transition is -13\n* Low crush 9~30\n* Floating state 31~33"
+        }
+      ]
+    },
+    {
+      "id": "move-92",
+      "name": "Ki Charge",
+      "type": "Single Hits",
+      "input": "1+2+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Can't block for 5 seconds\n* CH state for 5 seconds"
+        }
+      ]
+    },
+    {
+      "id": "move-93",
+      "name": "Lightning Seikenzuki",
+      "type": "Strings",
+      "input": "f,F+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to HRS on hit or block only\n* Input f,f,F+2 to power up"
+        }
+      ]
+    },
+    {
+      "id": "move-94",
+      "name": "Flying Forward Kick",
+      "type": "Strings",
+      "input": "f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "Tornado\n* Low crush 11~19"
+        }
+      ]
+    },
+    {
+      "id": "move-95",
+      "name": "f,F+4",
+      "type": "Strings",
+      "input": "f,F+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        }
+      ]
+    },
+    {
+      "id": "move-96",
+      "name": "Hazy Moon Double Kick",
+      "type": "Strings",
+      "input": "f,F+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Transition to attack throw on airborne hit for additional damage that increases based on Heaven and Earth level\n* HAE lvl.3:\n*** Removes Recoverable Health\n*** Decreases HAE lvl by 1 on hit\n* Low crush 27~46\n* Floating state 47~49"
+        }
+      ]
+    },
+    {
+      "id": "move-97",
+      "name": "White Whale",
+      "type": "Strings",
+      "input": "f,F+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Clean hit adds 7 damage"
+        }
+      ]
+    },
+    {
+      "id": "move-98",
+      "name": "qcf+2",
+      "type": "Single Hits",
+      "input": "qcf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "Input qcf,qcf+2 to power up, adds 3 damage"
+        }
+      ]
+    },
+    {
+      "id": "move-99",
+      "name": "qcf+2,2",
+      "type": "Strings",
+      "input": "qcf+2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i20"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-100",
+      "name": "Blossom Fury",
+      "type": "Strings",
+      "input": "qcf+2,2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, ,i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd hit\n* Combo from 1st CH\n* Input qcf,qcf+2,2,b,f,F+1+2 to power up, adds 5 damage\n* Full string deals 47 damage with power up input, 42 damage without"
+        }
+      ]
+    },
+    {
+      "id": "move-101",
+      "name": "Helm Splitter",
+      "type": "Single Hits",
+      "input": "qcf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Transitions to HRS\n* 8 Chip damage on block\n* Low crush 10~22\n* Floating state 23~25"
+        }
+      ]
+    },
+    {
+      "id": "move-102",
+      "name": "qcf+1+2",
+      "type": "Single Hits",
+      "input": "qcf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "Alternate input: db+1+2 but does 3 less damage"
+        }
+      ]
+    },
+    {
+      "id": "move-103",
+      "name": "Red Poppy",
+      "type": "Strings",
+      "input": "qcf+1+2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 1st hit\n* Combo from 1st CH with 12f delay\n* Transition to WLF on hit or block only\n* Balcony break on airborne hit\n* Can be charged to enhance"
+        }
+      ]
+    },
+    {
+      "id": "move-104",
+      "name": "Red Poppy (charged)",
+      "type": "Strings",
+      "input": "qcf+1+2,2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i35~36"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Transition to WLF on hit or block only\n* 10 Chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-105",
+      "name": "Delayed Rising Toe Kick",
+      "type": "Strings",
+      "input": "uf,n,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 9~30\n* Floating state 31~33"
+        }
+      ]
+    },
+    {
+      "id": "move-106",
+      "name": "Swift High Seikenzuki",
+      "type": "Strings",
+      "input": "f,f,F+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* 7 Chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-107",
+      "name": "Flying Blade",
+      "type": "Strings",
+      "input": "f,f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 9 Chip damage on block\n* Forces tech backroll on hit\n* Low crush 12~33\n* 34~36"
+        }
+      ]
+    },
+    {
+      "id": "move-108",
+      "name": "ws1",
+      "type": "While Standing",
+      "input": "ws1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        }
+      ]
+    },
+    {
+      "id": "move-109",
+      "name": "White-tailed Eagle",
+      "type": "While Standing",
+      "input": "ws1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 1f delay\n* Transition to CAT on hit or block only"
+        }
+      ]
+    },
+    {
+      "id": "move-110",
+      "name": "Wild Eagle",
+      "type": "While Standing",
+      "input": "ws1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Knee\n* Combo from 1st hit with 1f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-111",
+      "name": "Upward Thrust",
+      "type": "While Standing",
+      "input": "ws2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "Tornado"
+        }
+      ]
+    },
+    {
+      "id": "move-112",
+      "name": "Bridging the Gap",
+      "type": "While Standing",
+      "input": "ws3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Tornado\n* Knee\n* Low crush 14~22\n* Floating state 23~25"
+        }
+      ]
+    },
+    {
+      "id": "move-113",
+      "name": "ws4",
+      "type": "While Standing",
+      "input": "ws4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12"
+        }
+      ]
+    },
+    {
+      "id": "move-114",
+      "name": "Caustic Retort",
+      "type": "While Standing",
+      "input": "ws4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12, i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 2f delay\n* Transition to CAT on hit or block only"
+        }
+      ]
+    },
+    {
+      "id": "move-115",
+      "name": "Elbow Slam",
+      "type": "Stances",
+      "input": "SS.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Elbow\n* Transition to HRS"
+        }
+      ]
+    },
+    {
+      "id": "move-116",
+      "name": "Evasive High Right Back Kick",
+      "type": "Stances",
+      "input": "SS.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-117",
+      "name": "Flash Elbow",
+      "type": "Heat Moves",
+      "input": "FC.df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +43a (+35)\n\n* Balcony Break\n* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-118",
+      "name": "Odd-tooth Snake",
+      "type": "While Standing",
+      "input": "FC.df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* +12a on clean hit, 4 extra damage\n* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-119",
+      "name": "FC.d+1",
+      "type": "While Standing",
+      "input": "FC.d+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to r25? with f\n* Transition input can be delayed 16f\n* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-120",
+      "name": "FC.d+2",
+      "type": "While Standing",
+      "input": "FC.d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-121",
+      "name": "FC.d+3",
+      "type": "While Standing",
+      "input": "FC.d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-122",
+      "name": "FC.d+4",
+      "type": "While Standing",
+      "input": "FC.d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-123",
+      "name": "Celestial Comet Punch",
+      "type": "Stances",
+      "input": "(airborne).f,F+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18,i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Power up based on Heaven and Earth level\n**HAE lvl.0 16 damage\n**HAE lvl.1 20 damage\n**HAE lvl.2 28 damage\n**HAE lvl.3 38 damage\n*** lvl.3 causes Wallsplat\n* Regain recoverable health"
+        }
+      ]
+    },
+    {
+      "id": "move-124",
+      "name": "Mid Left Thrust",
+      "type": "Stances",
+      "input": "CAT.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-125",
+      "name": "CAT.2",
+      "type": "Stances",
+      "input": "CAT.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-126",
+      "name": "Rising Carp",
+      "type": "Stances",
+      "input": "CAT.2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 1st CH\n* Just frame input within a 3f window (13~15) adds 2 damage"
+        }
+      ]
+    },
+    {
+      "id": "move-127",
+      "name": "CAT.2,3",
+      "type": "Stances",
+      "input": "CAT.2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-128",
+      "name": "Enlightenment",
+      "type": "Stances",
+      "input": "CAT.2,3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Elbow\n* Combo from 2nd hit with 10f delay\n* Combo from 1st CH\n* Move can be delayed 9f"
+        }
+      ]
+    },
+    {
+      "id": "move-129",
+      "name": "High Left Reverse Hook Kick",
+      "type": "Heat Moves",
+      "input": "CAT.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +62a (+42)\n\n* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-130",
+      "name": "CAT.4",
+      "type": "Stances",
+      "input": "CAT.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to WLF on hit or block only\n* Crouching state ends early on frame 20 when transitioning to WLF\n* WLF transition is -14\n* Powered up based on Heaven and Earth Level\n* HAE lvl.1 16 damage\n* HAE lvl.2 18 damage\n* HAE lvl.3 20 damage\n* High crush 11~31"
+        }
+      ]
+    },
+    {
+      "id": "move-131",
+      "name": "Crouching Tiger, Rising Dragon",
+      "type": "Stances",
+      "input": "CAT.4,3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20, i38~39"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Combo from 1st CH\n* Jails from 1st hit\n* HAE lvl.3:\n*** Combos from 1st hit and decreases Heaven and Earth level by 1\n* Low crush 21~25\n* Floating state 26~39"
+        }
+      ]
+    },
+    {
+      "id": "move-132",
+      "name": "Gojushiho",
+      "type": "Stances",
+      "input": "CAT.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Transition to WLF on hit or block only"
+        }
+      ]
+    },
+    {
+      "id": "move-133",
+      "name": "Cat Stance > Stalking Wolf Stance",
+      "type": "Stances",
+      "input": "CAT.F",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "Actionable after 20f"
+        }
+      ]
+    },
+    {
+      "id": "move-134",
+      "name": "Cat Stance > Cancel",
+      "type": "Stances",
+      "input": "CAT.b",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* After recovery, limited to blocking for 13 frames\n* Takes 8f to cancel into block"
+        }
+      ]
+    },
+    {
+      "id": "move-135",
+      "name": "Cat Stance > Vacuity",
+      "type": "Stances",
+      "input": "CAT.b,B",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Low crush 11~25\n* Floating state 26~28"
+        }
+      ]
+    },
+    {
+      "id": "move-136",
+      "name": "Heaven's Gavel: Injustice Banish",
+      "type": "Stances",
+      "input": "HAE.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Power up based on Heaven and Earth level\n* 7/6/4 chip damage on block\n* -7 frame advantage after absorbing an attack in power crush state\n* Guarantees grounded hit vs airborne opponent\n* +51a on BT hit\n* Power crush 7~17"
+        }
+      ]
+    },
+    {
+      "id": "move-137",
+      "name": "Heaven's Sword: Wreath Puncture",
+      "type": "Stances",
+      "input": "HAE.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 7/11/12 chip damage on block\n* Power up based on Heaven and Earth level\n* +35a (-1) on hit with HAE level 3\n* 2nd hit available on hit or block only"
+        }
+      ]
+    },
+    {
+      "id": "move-138",
+      "name": "Heaven's Cannon: Crushing Defamation",
+      "type": "Stances",
+      "input": "HAE.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Power up based on Heaven and Earth level"
+        }
+      ]
+    },
+    {
+      "id": "move-139",
+      "name": "Hachi-wari",
+      "type": "Stances",
+      "input": "HRS.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Homing\n* Transition to WLF on hit or block\n* +8 WLF frame advantage and 8 chip damage on block after absorbing an attack in power crush state\n* Power crush 7~16"
+        }
+      ]
+    },
+    {
+      "id": "move-140",
+      "name": "Unanimous Consent",
+      "type": "Heat Moves",
+      "input": "HRS.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +67a (+50)\n\n* Transitions to attack throw on front hit\n* Does not transition to throw when using Heat Dash\n* Activates Heat when throw is completed\n* Transition to r33 HAE on hit only when heat is not depleted\n* Cancel HAE transition with B (+6)\n* +6 on hit when heat is depleted"
+        }
+      ]
+    },
+    {
+      "id": "move-141",
+      "name": "Kumo-geri",
+      "type": "Stances",
+      "input": "HRS.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Balcony Break\n* Homing\n* 4 chip damage on block\n* Low crush 9~27\n* Floating state 28~30"
+        }
+      ]
+    },
+    {
+      "id": "move-142",
+      "name": "Muramasa",
+      "type": "Stances",
+      "input": "HRS.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* 6 chip damage on block\n* Transition to WLF on hit or block only"
+        }
+      ]
+    },
+    {
+      "id": "move-143",
+      "name": "Low Chop",
+      "type": "Stances",
+      "input": "HRS.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Powered up based on Heaven and Earth Level\n** HAE lvl.1 19 damage\n** HAE lvl.2 21 damage\n** HAE lvl.3 23 damage +21a on hit, and decreases HAE level by 1\n* High crush 8~"
+        }
+      ]
+    },
+    {
+      "id": "move-144",
+      "name": "Higekiri",
+      "type": "Stances",
+      "input": "HRS.3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Transitions to WLF"
+        }
+      ]
+    },
+    {
+      "id": "move-145",
+      "name": "Horse Stance > Stalking Wolf Stance",
+      "type": "Stances",
+      "input": "HRS.F",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "Actionable after 20f"
+        }
+      ]
+    },
+    {
+      "id": "move-146",
+      "name": "Horse Stance > Cancel",
+      "type": "Stances",
+      "input": "HRS.b",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* After recovery, limited to blocking for 13 frames\n* Takes 8f to cancel into block"
+        }
+      ]
+    },
+    {
+      "id": "move-147",
+      "name": "Horse Stance > Vacuity",
+      "type": "Stances",
+      "input": "HRS.b,B",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Low crush 11~25\n* Floating state 26~28"
+        }
+      ]
+    },
+    {
+      "id": "move-148",
+      "name": "Veto",
+      "type": "Stances",
+      "input": "OTG.d+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Power up based on Heaven and Earth level\n* Regain recoverable health"
+        }
+      ]
+    },
+    {
+      "id": "move-149",
+      "name": "Heaven and Earth",
+      "type": "Stances",
+      "input": "P.HAE",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to HAE\n* Strong parry effect\n* Partially restore remaining Heat time"
+        }
+      ]
+    },
+    {
+      "id": "move-150",
+      "name": "Law of the Land",
+      "type": "Stances",
+      "input": "P.b+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i16, i16"
+        },
+        {
+          "type": "properties",
+          "value": "Input 2 within a 2f window (15~16) on the second punch, adds 2 damage\n* 15\n* 16"
+        }
+      ]
+    },
+    {
+      "id": "move-151",
+      "name": "Bassai-zuki",
+      "type": "Stances",
+      "input": "WLF.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~36"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Cancel with b,b or f,f on frames 10~18\n* 7 Chip damage on block\n* Jab evasion"
+        }
+      ]
+    },
+    {
+      "id": "move-152",
+      "name": "WLF.1*",
+      "type": "Stances",
+      "input": "WLF.1*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i36"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* 13 Chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-153",
+      "name": "Jion Upward Thrust",
+      "type": "Stances",
+      "input": "WLF.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Steel pedal"
+        }
+      ]
+    },
+    {
+      "id": "move-154",
+      "name": "WLF.3",
+      "type": "Stances",
+      "input": "WLF.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        }
+      ]
+    },
+    {
+      "id": "move-155",
+      "name": "Mid Left Kick > Nimble Thrust",
+      "type": "Stances",
+      "input": "WLF.3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17, i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-156",
+      "name": "Serpent Incision",
+      "type": "Stances",
+      "input": "WLF.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20,i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Second hit available on hit or block only\n* Power up based on Heaven and Earth level\n**HAE lvl.0 30 damage\n**HAE lvl.1 32 damage\n**HAE lvl.2 34 damage\n**HAE lvl.3 38 damage\n*** lvl.3 +2d on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-157",
+      "name": "Stalking Wolf Stance > Cancel",
+      "type": "Stances",
+      "input": "WLF.b",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* After recovery, limited to blocking for 13 frames\n* Takes 8f to cancel into block"
+        }
+      ]
+    },
+    {
+      "id": "move-158",
+      "name": "Stalking Wolf Stance > Vacuity",
+      "type": "Stances",
+      "input": "WLF.b,B",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Low crush 11~25\n* Floating state 26~28"
+        }
+      ]
+    },
+    {
+      "id": "move-159",
+      "name": "Moonlit Frost",
+      "type": "Throws",
+      "input": "1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Throw break: 1 or 2\n* Opponent on break: standing"
+        }
+      ]
+    },
+    {
+      "id": "move-160",
+      "name": "Parched Valley",
+      "type": "Throws",
+      "input": "2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Floor Break\n* Throw break: 1 or 2\n* Opponent on hit: FUFA\n* Side switch on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-161",
+      "name": "Smear Campaign",
+      "type": "Single Hits",
+      "input": "Back throw",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Homing\n* Throw break: none\n* Opponent on hit: FDFT"
+        }
+      ]
+    },
+    {
+      "id": "move-162",
+      "name": "Red Tape",
+      "type": "Stances",
+      "input": "CH.db+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Power up based on Heaven and Earth level:\n** Level 0: 17 damage\n** Level 1: 19 damage\n** Level 2: 21 damage\n** Level 3: 27 damag\n* Restores recoverable health"
+        }
+      ]
+    },
+    {
+      "id": "move-163",
+      "name": "Moonlit Frost",
+      "type": "Single Hits",
+      "input": "Left throw",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Throw break: 1\n* Opponent on break: standing"
+        }
+      ]
+    },
+    {
+      "id": "move-164",
+      "name": "Parched Valley",
+      "type": "Single Hits",
+      "input": "Right throw",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Throw break: 2\n* Opponent on hit: FUFA\n* Side switch on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-165",
+      "name": "Trifecta",
+      "type": "Single Hits",
+      "input": "uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: 1+2\n* Opponent on hit: FUFA\n* Regain recoverable health\n* Only when Heaven and Earth lvl is 3:\n* 50 damage"
+        }
+      ]
+    }
+  ]
+}

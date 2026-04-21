@@ -1,47 +1,3410 @@
 {
+  "id": "king",
   "name": "King",
-  "character": "King",
-  "game": "Tekken 8",
   "movesList": [
     {
-      "name": "Coconuts Crush",
-      "input": "1+3",
-      "type": "throw"
+      "id": "move-0",
+      "name": "Heat Burst",
+      "type": "Heat Moves",
+      "input": "2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Burst\n* Cancel to r45 with b,b on frame 42\n* 2 chip damage on block\n* 12 chip damage on hit\n* Only deals recoverable damage\n* Cannot cause a K.O.\n* Power crush 7~16"
+        }
+      ]
     },
     {
-      "name": "Suplex",
-      "input": "2+4",
-      "type": "throw"
+      "id": "move-1",
+      "name": "Ultimo Jaguar",
+      "type": "Heat Moves",
+      "input": "H.2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18,i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Smash\n* Floor Break\n* Transition to attack throw on standing hit\n* Transition to JGR on block\n* Cancel transition to JGR on block with B (+7)\n* Transition to 2nd i21~22 23dmg mid hit on 1st block or whiff\n** Tornado\n** Balcony Break\n** Hard balcony break\n** i21~22 23dmg\n** Jail from 1st block\n** Forces crouch on 2nd hit\n** +24 JGR on hit\n** Cancel transition to JGR on hit with B (+19)\n* Hits OTG\n* 5 chip damage on block"
+        }
+      ]
     },
     {
-      "name": "Giant Swing",
-      "input": "6, 4, 1, 2, 3, 6+1",
-      "type": "throw"
+      "id": "move-2",
+      "name": "Anger Of The Beast",
+      "type": "Stances",
+      "input": "R.df+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\n* Power crush 8~"
+        }
+      ]
     },
     {
-      "name": "DDT",
-      "input": "1, 1+1+2",
-      "type": "throw"
+      "id": "move-3",
+      "name": "Jab",
+      "type": "Single Hits",
+      "input": "1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Recovers 2f faster on hit or block (t27 r17)"
+        }
+      ]
     },
     {
-      "name": "Ali Kick",
-      "input": "2+3+4, 4, 4",
-      "type": "special"
+      "id": "move-4",
+      "name": "Palm Strike",
+      "type": "Strings",
+      "input": "1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i10~12"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 6F delay\n* Jail from 1st block with 5F delay"
+        }
+      ]
     },
     {
+      "id": "move-5",
+      "name": "Palm Strike Uppercut",
+      "type": "Strings",
+      "input": "1,2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Forces standing on hit.\n* Move can be delayed by 9F\n* Jail from 2nd normal hit with 4F delay\n* Starter of 10 Strings, 3rd~5th hits are combo."
+        }
+      ]
+    },
+    {
+      "id": "move-6",
+      "name": "Palm Strike Uppercut > Suplex",
+      "type": "Throws",
+      "input": "1,2,1,2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i26~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 2."
+        }
+      ]
+    },
+    {
+      "id": "move-7",
+      "name": "Palm Strike Uppercut > V Driver",
+      "type": "Strings",
+      "input": "1,2,1,d+2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i28~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Crouch throw, cannot throw break.\n* Opponent recovers in FDFA."
+        }
+      ]
+    },
+    {
+      "id": "move-8",
+      "name": "Palm Strike > Head Jammer",
+      "type": "Strings",
+      "input": "1,2,2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i30"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 2."
+        }
+      ]
+    },
+    {
+      "id": "move-9",
+      "name": "Palm Strike > V Driver",
+      "type": "Strings",
+      "input": "1,2,d+2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i27"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Crouch throw, cannot throw break.\n* Opponent recovers in FDFA."
+        }
+      ]
+    },
+    {
+      "id": "move-10",
+      "name": "Right Jab",
+      "type": "Single Hits",
+      "input": "2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        }
+      ]
+    },
+    {
+      "id": "move-11",
+      "name": "Right Jab > Uppercut",
+      "type": "Strings",
+      "input": "2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Forces standing on hit.\n* Combo from 1st hit."
+        }
+      ]
+    },
+    {
+      "id": "move-12",
+      "name": "Left Kick",
+      "type": "Single Hits",
+      "input": "3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-13",
+      "name": "3,2",
+      "type": "Strings",
+      "input": "3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Move can be delayed by 10F\n* Input can be delayed by 11F"
+        }
+      ]
+    },
+    {
+      "id": "move-14",
+      "name": "Stampede Crush",
+      "type": "Strings",
+      "input": "3,2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Balcony Break\n* Floor Break\n* Transition to +17g JGR on hit\n* Transition to +12g standing on hit with B \n* Jail from 2nd hit with 10F delay\n* Combo from 2nd CH with 10F delay\n* Move can be delayed by 11F\n* Input can be delayed by 12F\n* Forces tech backroll on hit\n* Opponent recovers crouching"
+        }
+      ]
+    },
+    {
+      "id": "move-15",
+      "name": "Stampede Crush (hold)",
+      "type": "Strings",
+      "input": "3,2,2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,i34~35"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Elbow\n* Transition to JGR on hit or block (+9/+25a (+15))\n* Transition to standing on hit or block with B  (+4c/+20a (+10))\n* Move can be delayed by 11F\n* Input can be delayed by 12F\n* 12 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-16",
+      "name": "Right Kick",
+      "type": "Single Hits",
+      "input": "4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Knocks down on CH for dash OTG throw."
+        }
+      ]
+    },
+    {
+      "id": "move-17",
+      "name": "1+2",
+      "type": "Single Hits",
+      "input": "1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Forces standing on hit.\n* Transition to BT."
+        }
+      ]
+    },
+    {
+      "id": "move-18",
+      "name": "Head Spinner",
+      "type": "Strings",
+      "input": "1+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18, i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit with 3F delay\n* Interrupt with i5 from 1st block\n* Cancel move at frame 19 with B (-18/-9/-7) \n* Input can be delayed by 3F\n* Move cannot be delayed"
+        }
+      ]
+    },
+    {
+      "id": "move-19",
+      "name": "Brutal Sting",
+      "type": "Strings",
+      "input": "1+2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Tornado\n* Combo from 1st hit with 3F delay\n* Combo from 1st CH with 5F delay\n* Move can be delayed by 4F\n* Input can be delayed by 5F"
+        }
+      ]
+    },
+    {
+      "id": "move-20",
+      "name": "Jaguar Step",
+      "type": "Stances",
+      "input": "3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Hold to continue spinning and power up strikes, but King doesn't change direction.\n* King gets dizzy and falls after 6th spin: r102 FUFT fs?.\n* 2nd spin onward: r32 JGS\n* Low crush 6~21\n* Floating state 22~24"
+        }
+      ]
+    },
+    {
+      "id": "move-21",
+      "name": "f+2",
+      "type": "Single Hits",
+      "input": "f+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Forces standing on hit?"
+        }
+      ]
+    },
+    {
+      "id": "move-22",
+      "name": "Elbow Impact",
+      "type": "Heat Moves",
+      "input": "f+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5 on block, +36a(+26a) on hit.\n\n* Balcony Break\n* Combo from 1st hit with 4F delay\n* Move can be delayed by 10F\n* Input can be delayed by 12F"
+        }
+      ]
+    },
+    {
+      "id": "move-23",
+      "name": "f+2,d+1",
+      "type": "Strings",
+      "input": "f+2,d+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Move can be delayed by 10F\n* Input can be delayed by 12F"
+        }
+      ]
+    },
+    {
+      "id": "move-24",
+      "name": "Jaguar Smash Combo",
+      "type": "Strings",
+      "input": "f+2,d+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd hit with 13F delay\n* Move can be delayed by 10F\n* Input can be delayed by 13F\n* Jail from 2nd block with no delay"
+        }
+      ]
+    },
+    {
+      "id": "move-25",
+      "name": "Front Kick",
+      "type": "Single Hits",
+      "input": "f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Only forces standing on CH.\n* +1c on crouching hit"
+        }
+      ]
+    },
+    {
+      "id": "move-26",
+      "name": "Front Kick > DDT",
+      "type": "Strings",
+      "input": "f+3,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, "
+        },
+        {
+          "type": "properties",
+          "value": "* Input 1+2 during frames 2-20 of f+3\n* Shifts to throw on front grounded hit."
+        }
+      ]
+    },
+    {
+      "id": "move-27",
+      "name": "Rolling Sobat",
+      "type": "Single Hits",
+      "input": "f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\nHoming\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-28",
+      "name": "Shadow Lariat",
+      "type": "Single Hits",
+      "input": "f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        }
+      ]
+    },
+    {
+      "id": "move-29",
+      "name": "Body Check",
+      "type": "Single Hits",
+      "input": "f+1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Body charge attack\n* Forces standing on hit."
+        }
+      ]
+    },
+    {
+      "id": "move-30",
+      "name": "Shoulder Tackle",
+      "type": "Heat Moves",
+      "input": "f+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5 on block, +36a(+26a) on hit.\n\n* Balcony Break\n* Shoulder"
+        }
+      ]
+    },
+    {
+      "id": "move-31",
+      "name": "Jaguar Sprint",
+      "type": "Single Hits",
+      "input": "f+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cancel to r25 standing block with b on frame 35~ at the earliest\n* Access powered-up JGR moves starting at frame 60?\n* Immediately access powered-up JGR moves during Heat\n* Becomes pc7~89 during Heat.\n* Partially uses remaining Heat time"
+        }
+      ]
+    },
+    {
+      "id": "move-32",
+      "name": "df+1",
+      "type": "Single Hits",
+      "input": "df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Forces standing on hit."
+        }
+      ]
+    },
+    {
+      "id": "move-33",
+      "name": "Elbow Sting",
+      "type": "Strings",
+      "input": "df+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 5F delay\n* Combo from 1st CH with 10F delay\n* Jail from 1st block with 5F delay\n* Move can be delayed by 11F\n* Input can be delayed by 13F"
+        }
+      ]
+    },
+    {
+      "id": "move-34",
+      "name": "df+2",
+      "type": "Single Hits",
+      "input": "df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Forces standing on hit."
+        }
+      ]
+    },
+    {
+      "id": "move-35",
+      "name": "Double Hook Disaster",
+      "type": "Strings",
+      "input": "df+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH with 13F delay\n* Move can be delayed by 13F"
+        }
+      ]
+    },
+    {
+      "id": "move-36",
+      "name": "df+3",
+      "type": "Single Hits",
+      "input": "df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Forces standing on hit.\n* Tracks left side."
+        }
+      ]
+    },
+    {
+      "id": "move-37",
+      "name": "Lasso Kick",
+      "type": "Strings",
+      "input": "df+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i30"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos on CH, otherwise opponent can duck.\n* Available only on 1st hit or block\n* Recovers in FDFT.\n* Low crush 22~"
+        }
+      ]
+    },
+    {
+      "id": "move-38",
+      "name": "df+4",
+      "type": "Single Hits",
+      "input": "df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-39",
+      "name": "df+4,3",
+      "type": "Strings",
+      "input": "df+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-40",
+      "name": "Mincer",
+      "type": "Strings",
+      "input": "df+4,3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i28~29"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH. \n* Crumple on 3rd CH.\n* Shift to r32? BT (-8, +13a (+4a), +54a (+23a)) with B \n* Shift to backturn is 14F punishable.\n* Low crush 18~"
+        }
+      ]
+    },
+    {
+      "id": "move-41",
+      "name": "Mincer Low",
+      "type": "Strings",
+      "input": "df+4,3,d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i33~35"
+        },
+        {
+          "type": "properties",
+          "value": "* Recovers in crouch on hit.\n* Otherwise recovers in FDFT.\n* Low crush 25~"
+        }
+      ]
+    },
+    {
+      "id": "move-42",
+      "name": "d+1",
+      "type": "Single Hits",
+      "input": "d+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-43",
+      "name": "Jab > Uppercut",
+      "type": "Strings",
+      "input": "d+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10,i15~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st block\n* Combo from 1st CH\n* Forces standing on hit."
+        }
+      ]
+    },
+    {
+      "id": "move-44",
+      "name": "d+2",
+      "type": "Single Hits",
+      "input": "d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        }
+      ]
+    },
+    {
+      "id": "move-45",
+      "name": "Stomp",
+      "type": "Single Hits",
+      "input": "d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Hits OTG."
+        }
+      ]
+    },
+    {
+      "id": "move-46",
+      "name": "d+4",
+      "type": "Single Hits",
+      "input": "d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        }
+      ]
+    },
+    {
+      "id": "move-47",
+      "name": "Atlas Hammer",
+      "type": "Single Hits",
+      "input": "d+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* High crush 6~23"
+        }
+      ]
+    },
+    {
+      "id": "move-48",
+      "name": "Corporate Elbow",
+      "type": "Single Hits",
+      "input": "d+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i30~35"
+        },
+        {
+          "type": "properties",
+          "value": "*\nFloor Break\n* Elbow\n* Low crush 21~32\n* Floating state 33~54"
+        }
+      ]
+    },
+    {
+      "id": "move-49",
+      "name": "d+3+4",
+      "type": "Single Hits",
+      "input": "d+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* On CH, can access Stagger Kicks Flurry (d+3+4,4,4,4)\n* Can be done from Crouch Level 1\n* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-50",
+      "name": "d+3+4,4",
+      "type": "Strings",
+      "input": "d+3+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i29"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit on CH.\n* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-51",
+      "name": "Stagger Kicks",
+      "type": "Strings",
+      "input": "d+3+4,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, ,i29"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd hit on CH.\n* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-52",
+      "name": "Stagger Kick Spinning Uppercut",
+      "type": "Strings",
+      "input": "d+3+4,4,4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, ,i28"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-53",
+      "name": "Stagger Kick Flurry",
+      "type": "Strings",
+      "input": "d+3+4,4,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, ,i29,i29"
+        },
+        {
+          "type": "properties",
+          "value": "* Only available if 1st hit on CH.\n* Combo from 3rd hit\n* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-54",
+      "name": "Brain Chop",
+      "type": "Single Hits",
+      "input": "db+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Forces Crouching on block."
+        }
+      ]
+    },
+    {
+      "id": "move-55",
+      "name": "Crouching Low Kick",
+      "type": "Single Hits",
+      "input": "db+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Tracks left side.\n* Flip over on grounded hit\n* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-56",
+      "name": "Low Drop Kick",
+      "type": "Single Hits",
+      "input": "db+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i29~31"
+        },
+        {
+          "type": "properties",
+          "value": "* r41 FC on hit\n* High crush 6~14\n* Low crush 16~29\n* Floating state 30~"
+        }
+      ]
+    },
+    {
+      "id": "move-57",
+      "name": "Muscle Armor",
+      "type": "Single Hits",
+      "input": "db+1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Damage taken during power crush state is recoverable\n* Cancel into db1+2,2 (Emerald Elbow) on frames 17~60 with input 2\n* Cancel to r30 JGR with input 3+4 on frame 35\n* Cancel into movement or crouch or any attack on frame 40 (r40)\n* Power crush 6~59"
+        }
+      ]
+    },
+    {
+      "id": "move-58",
+      "name": "Muscle Armor > Emerald Elbow",
+      "type": "Heat Moves",
+      "input": "db+1+2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5 on block, +67a(+50a) on hit.\n\n* Reversal Break after absorbing attack with muscle armor\n* Elbow\n* Effective startup is i32\n* +35g on heat engager hit\n* Shifts to throw on front grounded hit.\n* +8g on normal hit without throw\n* -5 on block after absorbing an attack with muscle armor.\n* 6 chip damage on block after absorbing an attack with muscle armor.\n* Transition into +12? JGR with input 3+4 on throw hit"
+        }
+      ]
+    },
+    {
+      "id": "move-59",
+      "name": "Muscle Armor > Jaguar Sprint",
+      "type": "Strings",
+      "input": "db+1+2,3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Effective startup for stance moves is increased by 65 frames starting from db1+2 (Muscle Armor) startup\n* pc7~ in heat"
+        }
+      ]
+    },
+    {
+      "id": "move-60",
+      "name": "Quick Hook",
+      "type": "Single Hits",
+      "input": "b+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        }
+      ]
+    },
+    {
+      "id": "move-61",
+      "name": "Quick Hook > Uppercut",
+      "type": "Strings",
+      "input": "b+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 1st hit with 8F delay\n* Combo from 1st CH with 10F delay\n* Launches opponent if b+1 on CH.\n* Move can be delayed by 6F\n* Input can be delayed by 10F"
+        }
+      ]
+    },
+    {
+      "id": "move-62",
+      "name": "Quick Hook > Heel Kick",
+      "type": "Strings",
+      "input": "b+1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i26~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH with no delay.\n* Recovers in FUFT.\n* Move can be delayed by 6F\n* Input can be delayed by 10F"
+        }
+      ]
+    },
+    {
+      "id": "move-63",
+      "name": "Arm Whip",
+      "type": "Single Hits",
+      "input": "b+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break\n* Parry opponent's right punch.\n* Side Switch. Opponent recovers in FUFR.\n* Parry state 5~15?"
+        }
+      ]
+    },
+    {
+      "id": "move-64",
+      "name": "Chupacabra",
+      "type": "Single Hits",
+      "input": "b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        }
+      ]
+    },
+    {
+      "id": "move-65",
+      "name": "Chupacabra > Spinning Back Elbow",
+      "type": "Strings",
+      "input": "b+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Elbow\n* Combo from 1st hit with 5F delay (buffered).\n* Move can be delayed by 10F\n* Input can be delayed by 15F"
+        }
+      ]
+    },
+    {
+      "id": "move-66",
+      "name": "Chupacabra > Olympia Slam",
+      "type": "Strings",
+      "input": "b+2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Shifts to throw on front grounded hit.\n* Move can be delayed by 10F\n* Input can be delayed by 15F"
+        }
+      ]
+    },
+    {
+      "id": "move-67",
+      "name": "Chupacabra > Head Butt",
+      "type": "Strings",
+      "input": "b+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Head\n* Forces crouching on block.\n* Move can be delayed by 10F\n* Input can be delayed by 15F"
+        }
+      ]
+    },
+    {
+      "id": "move-68",
+      "name": "Spinning Heel Hold",
+      "type": "Single Hits",
+      "input": "b+2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Parry opponent's left kick.\n* Side switches randomly. Opponent recovers in FUFL.\n* Parry state 5~12"
+        }
+      ]
+    },
+    {
+      "id": "move-69",
+      "name": "Leg Screw > Figure Four Leg Lock",
+      "type": "Single Hits",
+      "input": "b+2+4:3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* 2 Throw Break\n* Parry opponent's right kick.\n* Just frame input right before camera returns to normal position to deal extra damage. \n* Opponent recovers in FUFT.\n* Parry state 5~12"
+        }
+      ]
+    },
+    {
+      "id": "move-70",
+      "name": "Toll Kick",
+      "type": "Single Hits",
+      "input": "b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* -5 on block after absorbing an attack in power crush state.\n* 9 chip damage on block after absorbing an attack in power crush state.\n* 10 chip damage on block after absorbing an attack in power crush state while in heat.\n* Power crush 7~"
+        }
+      ]
+    },
+    {
+      "id": "move-71",
+      "name": "Guillotine Drop",
+      "type": "Strings",
+      "input": "b+3,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~18, "
+        },
+        {
+          "type": "properties",
+          "value": "* Shifts to throw on front grounded hit.\n* Input 1+2 during frames 2-17 of b+3"
+        }
+      ]
+    },
+    {
+      "id": "move-72",
+      "name": "Disgraceful Kick",
+      "type": "Single Hits",
+      "input": "b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Shifts into BT stance.\n* Forces crouching on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-73",
+      "name": "Reverse Jaguar Step",
+      "type": "Stances",
+      "input": "b+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cannot be held to continue spinning.\n* Low crush 6~21\n* Floating state 22~24"
+        }
+      ]
+    },
+    {
+      "id": "move-74",
+      "name": "ub+4",
+      "type": "Single Hits",
+      "input": "ub+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Jump straight up knee, very short range.\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-75",
+      "name": "Capital Punishment",
+      "type": "Single Hits",
+      "input": "u+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i35~36"
+        },
+        {
+          "type": "properties",
+          "value": "* Parryable by traditional punch parries\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-76",
+      "name": "Burning Knuckle",
+      "type": "Single Hits",
+      "input": "u+1+2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i67"
+        },
+        {
+          "type": "properties",
+          "value": "* Unblockable mid.\n* Auto switch side if fly over opponent.\n* Low crush 9?~"
+        }
+      ]
+    },
+    {
+      "id": "move-77",
+      "name": "Water Parting Chop",
+      "type": "Single Hits",
+      "input": "uf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~23"
+        },
+        {
+          "type": "properties",
+          "value": "Homing\nBalcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-78",
+      "name": "High Elbow Drop",
+      "type": "Single Hits",
+      "input": "uf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i47~53"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Hits OTG.\n* u+2 to jump vertical (js9~), ub+2 to jump back (js9~).\n* Force Crouching on block. (ub+2 also on hit)\n* Low crush 10~"
+        }
+      ]
+    },
+    {
+      "id": "move-79",
+      "name": "Falling Heel Kick",
+      "type": "Single Hits",
+      "input": "uf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~29"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 13~"
+        }
+      ]
+    },
+    {
+      "id": "move-80",
+      "name": "Jumping Knee Lift",
+      "type": "Single Hits",
+      "input": "uf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Recovers 2F faster on hit or block (r30? t46?)\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-81",
+      "name": "Sole Crusher",
+      "type": "Single Hits",
+      "input": "uf+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* -7 on block after absorbing an attack in power crush state.\n* 9 chip damage on block after absorbing an attack in power crush state.\n* 10 chip damage on block after absorbing an attack in power crush state while in heat.\n* Shifts to r27 JGR on hit.\n* Cancel shift into JGR on hit at +22 r55?  with input B\n* Power crush 7~"
+        }
+      ]
+    },
+    {
+      "id": "move-82",
+      "name": "Ki Charge",
+      "type": "Single Hits",
+      "input": "1+2+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Takes some time to charge and can cancel into anything.\n* After charged next hit by either side becomes counter hit."
+        }
+      ]
+    },
+    {
+      "id": "move-83",
+      "name": "Low Parry",
+      "type": "Single Hits",
+      "input": "DF",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Generic low parry.\n* Tornado affect on success."
+        }
+      ]
+    },
+    {
+      "id": "move-84",
+      "name": "Jaguar Hook",
+      "type": "Strings",
+      "input": "f,F+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-85",
+      "name": "Beast Elbow",
+      "type": "Strings",
+      "input": "f,F+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i31~32"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Forces crouching on hit.\n* Allow crouching throw on hit.\n* 6 chip damage on block.\n* 8 chip damage on block in heat."
+        }
+      ]
+    },
+    {
+      "id": "move-86",
+      "name": "Konvict Kick",
+      "type": "Strings",
+      "input": "f,F+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Shifts to 14dmg throw on front grounded CH."
+        }
+      ]
+    },
+    {
+      "id": "move-87",
+      "name": "Diving Body Press",
+      "type": "Strings",
+      "input": "f,F+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~43"
+        },
+        {
+          "type": "properties",
+          "value": "* Forces crouching on block and hit.\n* Throw when hit standing in front close range.\n* Low crush 12~"
+        }
+      ]
+    },
+    {
+      "id": "move-88",
       "name": "Exploder",
-      "input": "6, 6+3+4",
-      "type": "special"
+      "type": "Strings",
+      "input": "f,F+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Wall Crush +2gc on block\n\n\n* Balcony Break\n* Chip damage on block. (extra near wall)\n* Forces crouch on wall crush\n* Recovers FUFT on whiff.\n* 7 chip damage on block.\n* 10 chip damage on block as wall crush.\n* 10 chip damage on block in heat.\n* 13 chip damage on block as wall crush in heat.\n* Low crush 9~"
+        }
+      ]
     },
     {
+      "id": "move-89",
+      "name": "Stomach Smash / Jaguar Hammer",
+      "type": "Strings",
+      "input": "f,f,n,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* i19 startup with buffered input\n* Shifts to throw on front grounded CH.\n* Unexecutable at long range from opponent\n* High crush 6~29"
+        }
+      ]
+    },
+    {
+      "id": "move-90",
+      "name": "Lay Off",
+      "type": "Strings",
+      "input": "f,f,n,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i9"
+        },
+        {
+          "type": "properties",
+          "value": "* i10 startup with buffered input\n* Forces Standing on hit.\n* Allows follow up on CH."
+        }
+      ]
+    },
+    {
+      "id": "move-91",
+      "name": "Beast Step",
+      "type": "Stances",
+      "input": "f,n,d,df",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Duck high while moving forward.\n* Input f,n,d,df,f+(button) for instant ws moves.\n* 1st f cannot be held more than 10 frames."
+        }
+      ]
+    },
+    {
+      "id": "move-92",
+      "name": "Delayed Rising Toe Kick",
+      "type": "Strings",
+      "input": "uf,n,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-93",
+      "name": "Strong Knee",
+      "type": "Strings",
+      "input": "f,f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Knee\n* 7 chip damage on block.\n* 10 chip damage on block in heat."
+        }
+      ]
+    },
+    {
+      "id": "move-94",
+      "name": "Running Exploder",
+      "type": "Strings",
+      "input": "f,f,F+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~34"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-95",
+      "name": "ws1",
+      "type": "While Standing",
+      "input": "ws1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10~11"
+        },
+        {
+          "type": "properties",
+          "value": "* Acts like 11 frame attack.\n* Forces Standing on hit."
+        }
+      ]
+    },
+    {
+      "id": "move-96",
+      "name": "ws2",
+      "type": "While Standing",
+      "input": "ws2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Forces Standing on hit."
+        }
+      ]
+    },
+    {
+      "id": "move-97",
+      "name": "Round Trip Chop",
+      "type": "While Standing",
+      "input": "ws2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit with 9F delay\n* Combo from 1st CH with 16F delay\n* Recover 3F faster on hit(r30? t66?)\n* Transition to JGR on hit\n* Cancel to standing with B\n* Move can be delayed by 10F\n* Input can be delayed by 16F"
+        }
+      ]
+    },
+    {
+      "id": "move-98",
+      "name": "ws3",
+      "type": "While Standing",
+      "input": "ws3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        }
+      ]
+    },
+    {
+      "id": "move-99",
+      "name": "Toe Smash",
+      "type": "While Standing",
+      "input": "ws4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12"
+        }
+      ]
+    },
+    {
+      "id": "move-100",
+      "name": "Snap Uppercut",
+      "type": "While Standing",
+      "input": "ws1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-101",
+      "name": "Victory Palm",
+      "type": "Single Hits",
+      "input": "ss2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-102",
+      "name": "Reverse Special Stretch Bomb (Cancel)",
+      "type": "Throws",
+      "input": "ss2+4,b/db",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Side Step that ducks high and covers long distance quickly, recovers in crouch.\n* Input by u/d,n,n+2+4,b/db."
+        }
+      ]
+    },
+    {
+      "id": "move-103",
+      "name": "Deadly Boomerang",
+      "type": "Single Hits",
+      "input": "ss3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i27~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Deals a lot of chip damage on block.\n* Tracks side steps.\n* In game frame data incorrectly shows that SSL 3+4 is i21"
+        }
+      ]
+    },
+    {
+      "id": "move-104",
+      "name": "Leg Breaker",
+      "type": "While Standing",
+      "input": "FC.df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i32~34"
+        },
+        {
+          "type": "properties",
+          "value": "* Can also be performed with f,n,d,DF+1/CD.1.\n* Tornado on grounded hit.\n* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-105",
+      "name": "Body Blow",
+      "type": "While Standing",
+      "input": "FC.df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Crumple on hit."
+        }
+      ]
+    },
+    {
+      "id": "move-106",
+      "name": "Blind Kick",
+      "type": "Stances",
+      "input": "BT.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Hits OTG. Forces standing on normal hit.\n* Crumple on CH for full combo."
+        }
+      ]
+    },
+    {
+      "id": "move-107",
+      "name": "Blind Kick > Neck Breaker",
+      "type": "Stances",
+      "input": "BT.3:1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, "
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Throw when hit standing in front close range.\n* Just frame input."
+        }
+      ]
+    },
+    {
+      "id": "move-108",
+      "name": "Atomic Blaster",
+      "type": "Stances",
+      "input": "BT.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Unblockable high attack."
+        }
+      ]
+    },
+    {
+      "id": "move-109",
+      "name": "Moonsault Body Press",
+      "type": "Stances",
+      "input": "BT.1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i41~47"
+        },
+        {
+          "type": "properties",
+          "value": "* Unblockable mid attack.\n* Low crush 8~"
+        }
+      ]
+    },
+    {
+      "id": "move-110",
+      "name": "Jaguar Step (BT)",
+      "type": "Stances",
+      "input": "BT.3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Jaguar Step away from the oppponent while keeping backturn stance on recovery.\n* Can cancel into BT.1+2 / BT.1+4 unblockable.\n* Can hold 3+4 to keep spinning.\n* Cannot Reverse Jaguar Step in BT stance.\n* Low crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-111",
+      "name": "Low Drop Kick (BT)",
+      "type": "Stances",
+      "input": "BT.d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Recovers in FDFT on block and whiff.\n* Also can be done in backturn crouching.\n* Low crush 11~"
+        }
+      ]
+    },
+    {
+      "id": "move-112",
+      "name": "Black Bomb",
+      "type": "Throws",
+      "input": "CD.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~23"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* Bounce off ground on CH for full combo."
+        }
+      ]
+    },
+    {
+      "id": "move-113",
+      "name": "Knee Lift",
+      "type": "Stances",
+      "input": "CD.DF+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Special down state that allows low juggle (on normal hit).\n* Crumple on CH for full combo."
+        }
+      ]
+    },
+    {
+      "id": "move-114",
+      "name": "Whirling Spring Kick",
+      "type": "Stances",
+      "input": "FUFT.b+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~28"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* Faster than normal spring kick and knocks down."
+        }
+      ]
+    },
+    {
+      "id": "move-115",
+      "name": "Running Elbow Smash",
+      "type": "Stances",
+      "input": "JGR.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Elbow\n* Power up into JGR.1* after 30F? or during Heat\n** Partially uses remaining Heat time during Heat."
+        }
+      ]
+    },
+    {
+      "id": "move-116",
+      "name": "Running Elbow Smash (charged)",
+      "type": "Stances",
+      "input": "JGR.1*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Elbow\n* Effective startup i46~47?\n* Partially uses remaining Heat time during Heat."
+        }
+      ]
+    },
+    {
+      "id": "move-117",
+      "name": "Jaguar Axe",
+      "type": "Stances",
+      "input": "JGR.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* 4 chip damage on block.\n* Power up into JGR.2* after 30F? or during Heat\n** Partially uses remaining Heat time during Heat."
+        }
+      ]
+    },
+    {
+      "id": "move-118",
+      "name": "Jaguar Axe (charged)",
+      "type": "Stances",
+      "input": "JGR.2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Effective startup i48~49?\n* 8 chip damage on block\n* Partially uses remaining Heat time during Heat"
+        }
+      ]
+    },
+    {
+      "id": "move-119",
+      "name": "Sprint K.",
+      "type": "Stances",
+      "input": "JGR.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Homing\n* Power up into JGR.3* after 30F? or during Heat\n** Partially uses remaining Heat time during Heat.\n* Low crush 11~30\n* Floating state 31~33"
+        }
+      ]
+    },
+    {
+      "id": "move-120",
+      "name": "Sprint K. (charged)",
+      "type": "Stances",
+      "input": "JGR.3*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Homing\n* Effective startup i52~53?\n* 10 chip damage on block\n* Partially uses remaining Heat time during Heat\n* Low crush 11~30\n* Floating state 31~33"
+        }
+      ]
+    },
+    {
+      "id": "move-121",
+      "name": "Dashing Low Drop Kick",
+      "type": "Stances",
+      "input": "JGR.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Power up into JGR.4* after 30F? or during Heat\n** Partially uses remaining Heat time during Heat.\n* Low crush 7~23\n* Floating state 24~"
+        }
+      ]
+    },
+    {
+      "id": "move-122",
+      "name": "Dashing Low Drop Kick (charged)",
+      "type": "Stances",
+      "input": "JGR.4*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Effective startup i50~54?\n* Partially uses remaining Heat time during Heat.\n* Low crush 7~23\n* Floating state 24~"
+        }
+      ]
+    },
+    {
+      "id": "move-123",
+      "name": "Diving Body Press",
+      "type": "Stances",
+      "input": "JGR.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~43"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw when hit standing in front close range.\n* King recovers off axis\n* Power up into JGR.1+2* after 30F? or during Heat\n** 24,15dmg and i51~73? effective startup (without Heat)\n** Partially uses remaining Heat time during Heat"
+        }
+      ]
+    },
+    {
+      "id": "move-124",
+      "name": "Jaguar Step > Hook",
+      "type": "Stances",
+      "input": "JGS.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18/i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Crumple on hit.\n* On block / hit / startup increases up to 2nd spin.\n* Damage increase up to 3rd spin."
+        }
+      ]
+    },
+    {
+      "id": "move-125",
+      "name": "Jaguar Step > Hammer",
+      "type": "Stances",
+      "input": "JGS.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12"
+        },
+        {
+          "type": "properties",
+          "value": "* Forces Crouching on hit.\n* Forces Crouching on block from 3rd spin on.\n* Damage increase up to 3rd spin."
+        }
+      ]
+    },
+    {
+      "id": "move-126",
+      "name": "Jaguar Step > Sobat",
+      "type": "Stances",
+      "input": "JGS.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Strong Aerial Tailspin\n* On block / hit increases up to 2nd spin.\n* Damage increase up to 3rd spin."
+        }
+      ]
+    },
+    {
+      "id": "move-127",
+      "name": "Jaguar Step > Sobat & Press",
+      "type": "Stances",
+      "input": "JGS.3,2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23, i21~43"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw when hit standing in front close range.\n* Doesn't combo from JGS.3, but trades with 10 frame jab.\n* Properties not changed with extra spins."
+        }
+      ]
+    },
+    {
+      "id": "move-128",
+      "name": "Jaguar Step > High Kick",
+      "type": "Stances",
+      "input": "JGS.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Guard Break\n* Chip damage on block.\n* On block / hit increases up to 2nd spin.\n* Damage increase up to 3rd spin."
+        }
+      ]
+    },
+    {
+      "id": "move-129",
+      "name": "Jaguar Step > Mid Kick",
+      "type": "Stances",
+      "input": "JGS.df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~19"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* On block increases up to 2nd spin.\n* Damage increase up to 3rd spin."
+        }
+      ]
+    },
+    {
+      "id": "move-130",
+      "name": "hFC.3",
+      "type": "Stances",
+      "input": "hFC.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Get extra range by FC.df+3/CD.DF+3."
+        }
+      ]
+    },
+    {
+      "id": "move-131",
+      "name": "Half Boston Crab",
+      "type": "Single Hits",
+      "input": "(Behind 1 throw)",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "(depends)"
+        },
+        {
+          "type": "properties",
+          "value": "* Cannot throw break.\n* Any 1/1+2 break throw behind opponent's back, as well as RKO and chain throws.\n* Side switch. Opponent recovers in FDFL."
+        }
+      ]
+    },
+    {
+      "id": "move-132",
+      "name": "Cobra Twist",
+      "type": "Single Hits",
+      "input": "(Behind 2 throw)",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "(depends)"
+        },
+        {
+          "type": "properties",
+          "value": "* Cannot throw break.\n* Any 2 break throw behind opponent's back except chain throws.\n* Side switch? Opponent recovers in FDFL."
+        }
+      ]
+    },
+    {
+      "id": "move-133",
+      "name": "Argentina Backbreaker",
+      "type": "Single Hits",
+      "input": "(Left side throw)",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "(depends)"
+        },
+        {
+          "type": "properties",
+          "value": "* 1 throw break.\n* Any throw on standing opponent's left side.\n* Side switch. Opponent recovers in FUFR."
+        }
+      ]
+    },
+    {
+      "id": "move-134",
+      "name": "Knee Crusher",
+      "type": "Single Hits",
+      "input": "(Right side throw)",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "(depends)"
+        },
+        {
+          "type": "properties",
+          "value": "* 2 throw break.\n* Any throw on standing opponent's right side.\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-135",
+      "name": "Winding Nut",
+      "type": "Throws",
+      "input": "1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* 1 or 2 throw break.\n* Input f+1+3 to increase throw range, but its startup is 3 frames slower.\n* Opponent recovers in FUFA.\n* Side switch on successful throw break"
+        }
+      ]
+    },
+    {
+      "id": "move-136",
+      "name": "Suplex",
+      "type": "Throws",
+      "input": "2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~15 / i15~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* 1 or 2 throw break.\n* Input f+2+4 to increase throw range, but its startup is 3 frames slower.\n* Side switch. Opponent recovers in FUFA."
+        }
+      ]
+    },
+    {
+      "id": "move-137",
+      "name": "Triple Arm Breaker (AB2a)",
+      "type": "Stances",
+      "input": "AB1.1,1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1 throw break.\n* Opponent recovers in FUFT. Max damage 50."
+        }
+      ]
+    },
+    {
+      "id": "move-138",
+      "name": "Chicken Wing Face Lock (AB2c)",
+      "type": "Stances",
+      "input": "AB1.2,1,1+3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1+2 throw break.\n* Opponent recovers in FDFT."
+        }
+      ]
+    },
+    {
+      "id": "move-139",
+      "name": "Head Jammer (AB2b)",
+      "type": "Stances",
+      "input": "AB1.2,4,2+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 2 throw break.\n* Opponent recovers in FUFL."
+        }
+      ]
+    },
+    {
+      "id": "move-140",
+      "name": "Struggle Combination (AB2b1)",
+      "type": "Stances",
+      "input": "AB2b.3,4,3+4,1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cannot throw break.\n* Opponent recovers in FUFR. Max Damage 60."
+        }
+      ]
+    },
+    {
+      "id": "move-141",
+      "name": "Rolling Death Cradle (AB3cb)",
+      "type": "Stances",
+      "input": "AB2c.1,3,4,2,1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 2 throw break.\n* Opponent recovers in FUFL. Max damage 100."
+        }
+      ]
+    },
+    {
+      "id": "move-142",
+      "name": "Dragon Sleeper Finish (AB3ca)",
+      "type": "Stances",
+      "input": "AB2c.2,1,3,1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1 throw break.\n* Opponent recovers in FUFA. Max damage 65."
+        }
+      ]
+    },
+    {
+      "id": "move-143",
+      "name": "Mid-Air Leg Cross Hold",
+      "type": "Stances",
+      "input": "AIR.1+3 / AIR.f+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14 / i15~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Cannot throw break.\n* Input f+1+3 to increase throw range, but its startup is 3 frames slower.\n* Opponent recovers in FDFT."
+        }
+      ]
+    },
+    {
+      "id": "move-144",
+      "name": "Spine Cracker",
+      "type": "Stances",
+      "input": "AIR.2+4 / AIR.f+2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14 / i15~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Homing\n* Cannot throw break.\n* Input f+2+4 to increase throw range, but its startup is 3 frames slower.\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-145",
+      "name": "Double Heel Hold (DHH)",
+      "type": "Stances",
+      "input": "AIR.d+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "* Cannot throw break.\n* Opponent recovers in FDFL."
+        }
+      ]
+    },
+    {
+      "id": "move-146",
+      "name": "Running Jaguar Bomb",
+      "type": "Throws",
+      "input": "AIR.f,f,F+2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Cannot throw break.\n* Input n,f,F+2+4 within 6 frames after dash startup (f,n,f) to execute \"blue spark\" (+5 damage).\n* Partially restores remaining Heat time.\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-147",
+      "name": "Aerial Jaguar Bomb",
+      "type": "Throws",
+      "input": "AIR.f,hcf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10 / i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Cannot throw break.\n* Also by JGR.1+3 against airborne opponent.\n* Input all 6 directions of throw, press df for 1-3F, at most 1F of f followed by f+1 or f+2 for blue spark (+5 damage).\n* Partially restores remaining Heat time.\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-148",
+      "name": "Stretch Buster",
+      "type": "Stances",
+      "input": "Behind.b,f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break\n* Cannot throw break.\n* Opponent recovers FUFR."
+        }
+      ]
+    },
+    {
+      "id": "move-149",
+      "name": "Arm Breaker (AB1)",
+      "type": "Stances",
+      "input": "CD.1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* 1 Throw break.\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-150",
+      "name": "Standing Heel Hold (SHH1)",
+      "type": "Stances",
+      "input": "CD.2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* 2 throw break.\n* Opponent recovers in FDFR."
+        }
+      ]
+    },
+    {
+      "id": "move-151",
+      "name": "Giant Swing (From DHH)",
+      "type": "Stances",
+      "input": "DHH.2,1,3,4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 2 throw break.\n* Mash 1/2/3/4 to roll in midscreen to reduce damage, on wall splat damage is 32.\n* Opponent recovers in FUFT if fails to roll."
+        }
+      ]
+    },
+    {
+      "id": "move-152",
+      "name": "Flapjack (From DHH)",
+      "type": "Stances",
+      "input": "DHH.1+2,1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1 throw break.\n* Opponent recovers in FDFT."
+        }
+      ]
+    },
+    {
+      "id": "move-153",
+      "name": "Clothesline Press (Rock Bottom)",
+      "type": "While Standing",
+      "input": "FC.db,d,db+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break\n* 1+2 throw break.\n* Opponent recovers in FUFR."
+        }
+      ]
+    },
+    {
+      "id": "move-154",
+      "name": "Wing Tearer",
+      "type": "Stances",
+      "input": "FDFA.db+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "* 1 or 2 throw break, depending on King's input.\n* Opponent recovers in FDFA."
+        }
+      ]
+    },
+    {
+      "id": "move-155",
+      "name": "Bow & Arrow Stretch Hold",
+      "type": "Stances",
+      "input": "FDFL.db+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "* 1 or 2 throw break, depending on King's input.\n* Opponent recovers in FDFL."
+        }
+      ]
+    },
+    {
+      "id": "move-156",
+      "name": "Camel Clutch",
+      "type": "Stances",
+      "input": "FDFR.db+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "* 1 or 2 throw break, depending on King's input.\n* Side Switch.\n* Opponent recovers in FDFL."
+        }
+      ]
+    },
+    {
+      "id": "move-157",
+      "name": "Half Boston Crab (OTG)",
+      "type": "Stances",
+      "input": "FDFT.db+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "* 1 or 2 throw break, depending on King's input.\n* Side Switch.\n* Opponent recovers in FDFL."
+        }
+      ]
+    },
+    {
+      "id": "move-158",
+      "name": "Shoulder Cracker",
+      "type": "Stances",
+      "input": "FUFA.db+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "* 1 or 2 throw break, depending on King's input.\n* Opponent recovers in FUFR."
+        }
+      ]
+    },
+    {
+      "id": "move-159",
+      "name": "Turn Over",
+      "type": "Stances",
+      "input": "FUFL.db+1+3b+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "* 1 or 2 throw break, depending on King's input.\n* Opponent recovers in FDFL/FDFR."
+        }
+      ]
+    },
+    {
+      "id": "move-160",
+      "name": "Head Bomber",
+      "type": "Throws",
+      "input": "FUFT.DB+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break\n* 1 throw break.\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-161",
+      "name": "Figure Four Leg Lock (OTG)",
+      "type": "Stances",
+      "input": "FUFT.DB+2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "* 2 throw break.\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-162",
+      "name": "Swing Away",
+      "type": "Stances",
+      "input": "FUFT.db+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "* 1 or 2 throw break, depending on King's input.\n* Mash 1/2/3/4 to roll in midscreen to reduce 10 damage, on wall splat damage is 35.\n* Opponent recovers in FUFT if fails to roll."
+        }
+      ]
+    },
+    {
+      "id": "move-163",
+      "name": "Rapid King Onslaught",
+      "type": "Heat Moves",
+      "input": "JGR.1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Homing\n* Cannot throw break. Cannot heat dash.\n* Restores some Heat Gauge in Heat on successful hit.\n* Opponent recovers in FUFA.\n* Power up into JGR.1+3* after 30F? or during Heat\n** 49dmg and i53? effective startup (without Heat)\n** Partially uses remaining Heat time during Heat."
+        }
+      ]
+    },
+    {
+      "id": "move-164",
+      "name": "Cobra Clutch (MMD1)",
+      "type": "Stances",
+      "input": "JGS.1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* 1 or 2 throw break, depending on King's input.\n* Opponent recovers in FDFT.\n* Becomes f,hcf+1 / 2+4 on air grab / wall splat."
+        }
+      ]
+    },
+    {
+      "id": "move-165",
+      "name": "Cobra Twist (MMD2)",
+      "type": "Stances",
+      "input": "MMD1.1,4,2,3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cannot throw break.\n* Opponent recovers in FUFL."
+        }
+      ]
+    },
+    {
+      "id": "move-166",
+      "name": "Reverse DDT (MMD3)",
+      "type": "Stances",
+      "input": "MMD2.1,1+3/ MMD2.2,2+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1 or 2 throw break, depending on King's input.\n* Opponent recovers in FDFA."
+        }
+      ]
+    },
+    {
+      "id": "move-167",
+      "name": "Samurai Rock (MMD4a)",
+      "type": "Stances",
+      "input": "MMD3.2,3,1,1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1+2 Throw break.\n* Opponent recovers in FDFR. Max Damage 69."
+        }
+      ]
+    },
+    {
+      "id": "move-168",
+      "name": "Reverse Special Stretch Bomb (MMD4)",
+      "type": "Throws",
+      "input": "MMD3.1+2,1,1+3/ MMD3.1+2,2,2+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1 or 2 throw break, depending on King's input.\n* Opponent recovers in FUFA."
+        }
+      ]
+    },
+    {
+      "id": "move-169",
+      "name": "Backdrop (MMD5)",
+      "type": "Stances",
+      "input": "MMD4.3+4,1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cannot throw break.\n* Opponent recovers in FDFA."
+        }
+      ]
+    },
+    {
+      "id": "move-170",
+      "name": "Burning Hammer (MMD6)",
+      "type": "Stances",
+      "input": "MMD5.1+2,3,1+3/ MMD5.1+2,4,2+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1 or 2 throw break, depending on King's input.\n* Opponent recovers in FDFA."
+        }
+      ]
+    },
+    {
+      "id": "move-171",
+      "name": "Sol Naciente (MMD6a)",
+      "type": "Stances",
+      "input": "MMD5.1+2,4,2,1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1+2 throw break.\n* Opponent recovers in FDFL. Max Damage 93."
+        }
+      ]
+    },
+    {
+      "id": "move-172",
+      "name": "Screwdriver (MMD7)",
+      "type": "Stances",
+      "input": "MMD6.2,4,3,1,1+3/ MMD6.2,4,3,1,2+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1 or 2 throw break, depending on King's input.\n* Opponent recovers in FUFA. Max Damage 116."
+        }
+      ]
+    },
+    {
+      "id": "move-173",
+      "name": "Boston Crab (from PD)",
+      "type": "Stances",
+      "input": "PD.1+2,3,4,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* 1+2 throw break. (when legs lifted to the top)\n* Could use ki charge button for 1+2 input.\n* Opponent recovers in FDFL."
+        }
+      ]
+    },
+    {
+      "id": "move-174",
+      "name": "Double Arm Face Buster (from PD)",
+      "type": "Stances",
+      "input": "PD.1+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break\n* 2 throw break. (when legs lifted to the top)\n* Opponent recovers in FDFA."
+        }
+      ]
+    },
+    {
+      "id": "move-175",
+      "name": "Backdrop (RAS2)",
+      "type": "Stances",
+      "input": "RAS1.1",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cannot throw break.\n* Input with 2,1,1+2 for more damage.\n* Opponent recovers in FUFR."
+        }
+      ]
+    },
+    {
+      "id": "move-176",
+      "name": "German Suplex (RAS3)",
+      "type": "Throws",
+      "input": "RAS2.1",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1 or 2 throw break, depending on King's input.\n* Input with 3+4,1 or 3+4,2 for more damage.\n* Opponent recovers in FUFR."
+        }
+      ]
+    },
+    {
+      "id": "move-177",
+      "name": "Power Bomb (RAS4)",
+      "type": "Throws",
+      "input": "RAS3.1",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cannot throw break.\n* Input with 1,2,3+4 for more damage.\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-178",
+      "name": "Giant Swing (RAS5a)",
+      "type": "Stances",
+      "input": "RAS4.1",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1 throw break. Side Switch.\n* Input with 2,1,3,4 for more damage.\n* On wall splat damage is 31.\n* Opponent recovers in FUFT. Max damage 97."
+        }
+      ]
+    },
+    {
+      "id": "move-179",
+      "name": "Muscle Buster (RAS5b)",
+      "type": "Stances",
+      "input": "RAS4.2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 2 throw break. Side Switch.\n* Input with 3,1,2,3+4,1+2 for more damage.\n* King recovers in backturn stance.\n* Opponent recovers in FUFA. Max damage 91."
+        }
+      ]
+    },
+    {
+      "id": "move-180",
+      "name": "Cannonball Buster (RSSB2)",
+      "type": "Stances",
+      "input": "RSSB1.1",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cannot throw break. \n* Input with 2,2,1+2 for more damage.\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-181",
+      "name": "Manhattan Drop (RSSB3)",
+      "type": "Stances",
+      "input": "RSSB2.1",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1 or 2 throw break, depending on King's input.\n* Input with 3+4,1 or 3+4,2 for more damage.\n* Opponent recovers in FDFA."
+        }
+      ]
+    },
+    {
+      "id": "move-182",
+      "name": "Victory Bomb (RSSB4)",
+      "type": "Throws",
+      "input": "RSSB3.1",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cannot throw break.\n* Input with 1,2,3+4,1+2 for more damage.\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-183",
+      "name": "Giant Swing (RSSB5a)",
+      "type": "Stances",
+      "input": "RSSB4.1",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1 throw break. Side Switch.\n* Input with 2,1,3,4 for more damage.\n* Opponent recovers in FUFT. Max damage 94."
+        }
+      ]
+    },
+    {
+      "id": "move-184",
+      "name": "Muscle Buster (RSSB5b)",
+      "type": "Stances",
+      "input": "RSSB4.2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 2 throw break.\n* Input with 3,1,2,3+4,1+2 for more damage.\n* King recovers in backturn stance.\n* Opponent recovers in FUFA. Max damage 88."
+        }
+      ]
+    },
+    {
+      "id": "move-185",
+      "name": "S.T.F. (SHH2a)",
+      "type": "Stances",
+      "input": "SHH1.1,2,1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1 throw break. Side Switch.\n* Opponent recovers in FDFR. Max damage 50."
+        }
+      ]
+    },
+    {
+      "id": "move-186",
+      "name": "Scorpion Death Lock (SHH2b)",
+      "type": "Stances",
+      "input": "SHH1.2,1,1+3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 2 throw break.\n* Opponent recovers in FDFR. Max damage 55."
+        }
+      ]
+    },
+    {
+      "id": "move-187",
+      "name": "Indian Death Lock (SHH2c)",
+      "type": "Stances",
+      "input": "SHH1.1+2,1,3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1+2 throw break.\n* Opponent recovers in FDFL."
+        }
+      ]
+    },
+    {
+      "id": "move-188",
+      "name": "King's Bridge (SHH3ca)",
+      "type": "Stances",
+      "input": "SHH2c.3,4,1+2,3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cannot throw break.\n* Opponent recovers in FDFT. Max Damage 85."
+        }
+      ]
+    },
+    {
+      "id": "move-189",
+      "name": "Ultimate Punch",
+      "type": "Strings",
+      "input": "UT,2,1,2,1",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Could be any 1/2 combination (e.g. 1,1,1,1 / 1,2,2,1)\n* Throw break the 1st/4th hit by input the opposite to King's 1st/4th button."
+        }
+      ]
+    },
+    {
+      "id": "move-190",
+      "name": "Armbar",
+      "type": "Strings",
+      "input": "UT,1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 1+2 throw break.\n* Can also input at 3rd hit of Ultimate Punch.\n* Opponent recovers in FUFR."
+        }
+      ]
+    },
+    {
+      "id": "move-191",
+      "name": "Arm Twist",
+      "type": "Strings",
+      "input": "UT,1+2,1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cannot throw break.\n* Opponent recovers in FUFA."
+        }
+      ]
+    },
+    {
+      "id": "move-192",
+      "name": "Leg Cross Hold",
+      "type": "Strings",
+      "input": "UT,3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i69?"
+        },
+        {
+          "type": "properties",
+          "value": "* 3+4 throw break.\n* Throw break window: input or hold 3+4 during frames 20-60\n* Can also input at 3rd hit of Ultimate Punch.\n* Opponent recovers in FUFR."
+        }
+      ]
+    },
+    {
+      "id": "move-193",
+      "name": "Stretch Combo",
+      "type": "Strings",
+      "input": "UT,3+4:1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i69?, "
+        },
+        {
+          "type": "properties",
+          "value": "* Input 1+2 during frames 68-70 of Leg Cross Hold\n* Cannot throw break.\n* Opponent recovers in FDFL."
+        }
+      ]
+    },
+    {
+      "id": "move-194",
+      "name": "Shining Torpedo",
+      "type": "Stances",
+      "input": "WALL.f,hcf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Cannot throw break. Also converts from RKO.\n* (f,hcf+1_2): Input all 6 directions of throw, press df for 1-3F, at most 1F of f followed by f+1 or f+2 for blue spark (+5 damage).\n* (f,f,F+2+4): Input n,f,F+2+4 within 6 frames after dash startup (f,n,f) to execute \"blue spark\" (+5 damage).\n* Partially restores remaining Heat time.\n* Opponent recovers in FUFR."
+        }
+      ]
+    },
+    {
+      "id": "move-195",
+      "name": "Wall Jumping Attack",
+      "type": "Stances",
+      "input": "WallBack.b,b,ub",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i43~48 / i44~63"
+        },
+        {
+          "type": "properties",
+          "value": "* Airborne from 5F, invincibility from 8 to 13F.\n* Unbreakable throw near wall, becomes air attack if throw not connected.\n* Side switch. Opponent recovers in FUFA."
+        }
+      ]
+    },
+    {
+      "id": "move-196",
+      "name": "Throw Away",
+      "type": "Throws",
+      "input": "b+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* 1+2 throw break. Side switch.\n* Damage becomes 15 on wall splat.\n* Transition to JGR\n** Can range from +22 to +47 (?) on wall hit depending on angle and distance to the wall\n* Cancel to standing with f,F or b,B (-2)\n** Can range from +6? to +31 (?) on wall hit depending on angle and distance to the wall"
+        }
+      ]
+    },
+    {
+      "id": "move-197",
+      "name": "Throw Away > Back Swing",
+      "type": "Throws",
+      "input": "b+1+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~17"
+        },
+        {
+          "type": "properties",
+          "value": "* 1+2 throw break.\n* Damage becomes 15 on wall splat.\n* Transition to JGR\n** Can range from +20 to +30(?) on wall hit depending on angle and distance to the wall\n* Cancel to standing with f,F or b,B (-6)\n** Can range from +15 to +25(?) on wall hit depending on angle and distance to the wall"
+        }
+      ]
+    },
+    {
+      "id": "move-198",
+      "name": "Tombstone Pile Driver",
+      "type": "Strings",
+      "input": "db,n,f+2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break\n* 2 throw break\n* Input n,f+2+4 in 30 frames\n* Cannot be buffered from crouch\n* Cannot be executed during while standing\n* Opponent recovers in FUFA"
+        }
+      ]
+    },
+    {
+      "id": "move-199",
+      "name": "Figure Four Leg Lock",
+      "type": "Single Hits",
+      "input": "db+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* 1+2 throw break.\n* Opponent recovers in FUFT / FDFT."
+        }
+      ]
+    },
+    {
+      "id": "move-200",
+      "name": "Reverse Arm Slam (RAS1)",
+      "type": "Single Hits",
+      "input": "df+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i32"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* 1 throw break. Side Switch.\n* Very slow crouch dash then grab.\n* Opponent recovers in FUFA."
+        }
+      ]
+    },
+    {
+      "id": "move-201",
+      "name": "Reverse Special Stretch Bomb (RSSB1)",
+      "type": "Throws",
+      "input": "df+2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i32"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* 2 throw break. Side Switch.\n* Very slow crouch dash then grab.\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-202",
+      "name": "Knee Bash",
+      "type": "Single Hits",
+      "input": "df+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* 2 throw break.\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-203",
       "name": "Frankensteiner",
-      "input": "3+3+4",
-      "type": "special"
+      "type": "Single Hits",
+      "input": "df+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~35"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw only when opponent standing close.\n* Cannot throw break.\n* Recovers in BT/FUFT on throw success/failed.\n* Low crush 13~"
+        }
+      ]
     },
     {
-      "name": "10-Hit Combo",
-      "input": "1, 2, 1, 1, 2, 4, 4, 4, 1, 3",
-      "type": "combo"
+      "id": "move-204",
+      "name": "Iron Lariat",
+      "type": "Single Hits",
+      "input": "d+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break\n* Crouch throw, cannot throw break.\n* Can also be done by db+1+3 and in FC too.\n* Opponent recovers in FDFA."
+        }
+      ]
+    },
+    {
+      "id": "move-205",
+      "name": "V Driver",
+      "type": "Single Hits",
+      "input": "d+2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break\n* Crouch throw, cannot throw break.\n* Can also be done by db+2+4 and in FC too.\n* Opponent recovers in FUFA."
+        }
+      ]
+    },
+    {
+      "id": "move-206",
+      "name": "Freedom Face Buster",
+      "type": "Heat Moves",
+      "input": "d+1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Crouch throw, cannot throw break.\n* Restores some Heat Gauge in Heat.\n* Cannot heat dash\n* Opponent recovers in FDFA."
+        }
+      ]
+    },
+    {
+      "id": "move-207",
+      "name": "Tomahawk",
+      "type": "Strings",
+      "input": "f,f,F+2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing during heat\n* 1+2 throw break\n* Input f,F+2+4 in 6 frames after f,f for bluespark.\n* i13 startup for Bluespark throw with buffered input\n* 45 damage on bluespark\n* 18F throw break window on bluespark\n* 7F throw break window on CH bluespark\n* Partially restores remaining Heat time.\n* Opponent recovers in FUFL."
+        }
+      ]
+    },
+    {
+      "id": "move-208",
+      "name": "Giant Swing",
+      "type": "Strings",
+      "input": "f,hcf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing during heat\n* 1 throw break\n* Side switch \n* Input all directions, df for 1-3F, f for 0-1F, and f+1 to execute bluespark.\n* i11 startup for Bluespark throw with buffered input\n* 50 damage on bluespark\n* 18F throw break window on bluespark\n* 7F throw break window on CH bluespark\n* Partially restores remaining Heat time.\n* Perform tech ukemi to reduce 5 damage.\n* 70 damage on wall splat regardless of input.\n* f,b,d,f are required inputs for normal throw\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-209",
+      "name": "Tijuana Twister",
+      "type": "Strings",
+      "input": "f,hcf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing during heat\n* 2 throw break\n* Input all directions, df for 1-3F, f for 0-1F, and f+2 to execute bluespark.\n* i13 startup for Bluespark throw with buffered input\n* 55 damage on bluespark\n* 18F throw break window on bluespark\n* 7F throw break window on CH bluespark\n* Partially restores remaining Heat time.\n* f,b,d,f are required inputs for normal throw\n* Opponent recovers in FUFL."
+        }
+      ]
+    },
+    {
+      "id": "move-210",
+      "name": "Ultimate Tackle (UT)",
+      "type": "Stances",
+      "input": "hFC.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26"
+        },
+        {
+          "type": "properties",
+          "value": "* 1+2 throw break (except from behind).\n* Catches standing and crouching opponent from all directions.\n* Can be done from Crouch Level 1"
+        }
+      ]
+    },
+    {
+      "id": "move-211",
+      "name": "Elevating Spine Cracker",
+      "type": "Single Hits",
+      "input": "qcb+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Tornado on hit\n* 1 throw break"
+        }
+      ]
+    },
+    {
+      "id": "move-212",
+      "name": "Muscle Buster",
+      "type": "Single Hits",
+      "input": "qcb+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Homing during heat\n* 1+2 throw break\n* Side switch\n* King recovers in BT\n* Partially restores remaining Heat time\n* Opponent recovers in FUFA."
+        }
+      ]
+    },
+    {
+      "id": "move-213",
+      "name": "Pile Driver (PD)",
+      "type": "Single Hits",
+      "input": "qcf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* 1 throw break.\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-214",
+      "name": "Side Step to RSSB2 / RSSB1",
+      "type": "Stances",
+      "input": "ss2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* 2 throw break (except from behind).\n* RSSB2 from side/behind, RSSB1 from front, doesn't change to left/right/behind throw.\n* Opponent recovers in FUFT.\n* Throw can be canceled by input b/db."
+        }
+      ]
+    },
+    {
+      "id": "move-215",
+      "name": "Executioner Drop",
+      "type": "Single Hits",
+      "input": "uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* 1+2 throw break.\n* Hold b to throw backwards.\n* Damage becomes 15 on wall splat.\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-216",
+      "name": "V Driver",
+      "type": "Single Hits",
+      "input": "d+2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Crouch throw, cannot throw break.\n* Can also be done by db+2+4 and in FC too.\n* Opponent recovers in FUFA."
+        }
+      ]
+    },
+    {
+      "id": "move-217",
+      "name": "Freedom Face Buster",
+      "type": "Heat Moves",
+      "input": "d+1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n* Crouch throw, cannot throw break.\n* Can also be done by db+1+4 and in FC too.\n* Restores some Heat Gauge in Heat.\n* Cannot heat dash.Opponent recovers in FDFA."
+        }
+      ]
+    },
+    {
+      "id": "move-218",
+      "name": "Tomahawk",
+      "type": "Strings",
+      "input": "f,f,F+2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing during heat\n* 1+2 throw break\n* Input f,F+2+4 in 6 frames after f,f for bluespark.\n* 45 damage on bluespark\n* 18F throw break window on bluespark\n* 7F throw break window on CH bluespark\n* Partially restores remaining Heat time.\n* Opponent recovers in FUFL."
+        }
+      ]
+    },
+    {
+      "id": "move-219",
+      "name": "Giant Swing",
+      "type": "Strings",
+      "input": "f,hcf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing during heat\n* 1 throw break\n* Side switch \n* Input all directions, df for 1-3F, f for 0-1F, and f+1 to execute bluespark.\n* 50 damage on bluespark\n* 18F throw break window on bluespark\n* 7F throw break window on CH bluespark\n* Partially restores remaining Heat time.\n* Perform tech ukemi to reduce 5 damage.\n* 70 damage on wall splat regardless of input.\n* f,b,d,f are required inputs for normal throw\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-220",
+      "name": "Tijuana Twister",
+      "type": "Strings",
+      "input": "f,hcf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing during heat\n* 2 throw break\n* Input all directions, df for 1-3F, f for 0-1F, and f+2 to execute bluespark.\n* 55 damage on bluespark\n* 18F throw break window on bluespark\n* 7F throw break window on CH bluespark\n* Partially restores remaining Heat time.\n* f,b,d,f are required inputs for normal throw\n* Opponent recovers in FUFL."
+        }
+      ]
+    },
+    {
+      "id": "move-221",
+      "name": "Muscle Buster",
+      "type": "Single Hits",
+      "input": "qcb+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Homing during heat\n* 1+2 throw break\n* Side switch\n* King recovers in BT\n* Partially restores remaining Heat time\n* Opponent recovers in FUFA."
+        }
+      ]
+    },
+    {
+      "id": "move-222",
+      "name": "Pile Driver (PD)",
+      "type": "Single Hits",
+      "input": "qcf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* 1 throw break.\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-223",
+      "name": "Side Step to RSSB2 / RSSB1",
+      "type": "Stances",
+      "input": "ss2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* 2 throw break (except from behind).\n* RSSB2 from side/behind, RSSB1 from front, doesn't change to left/right/behind throw.\n* Opponent recovers in FUFT.\n* Throw can be canceled by input b/db."
+        }
+      ]
+    },
+    {
+      "id": "move-224",
+      "name": "Executioner Drop",
+      "type": "Single Hits",
+      "input": "uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* 1+2 throw break.\n* Damage becomes 15 on wall splat.\n* Opponent recovers in FUFT."
+        }
+      ]
+    },
+    {
+      "id": "move-225",
+      "name": "Executioner Drop",
+      "type": "Strings",
+      "input": "uf+1+2,B",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* 1+2 throw break.\n* Damage becomes 15 on wall splat.\n* Opponent recovers in FUFT."
+        }
+      ]
     }
   ]
 }

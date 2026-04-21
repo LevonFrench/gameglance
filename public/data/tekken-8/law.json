@@ -1,223 +1,2458 @@
 {
+  "id": "law",
   "name": "Law",
-  "character": "Law",
-  "game": "Tekken 8",
   "movesList": [
     {
-      "id": "sp_0",
-      "name": "Safe mid Heat Engager",
-      "type": "special",
-      "input": "62_SaemiHeatEngager"
+      "id": "move-0",
+      "name": "Heat Burst",
+      "type": "Heat Moves",
+      "input": "2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Burst\n* Cancel to r45 with b,b on frame 42\n* 2 chip damage on block\n* 12 chip damage on hit\n* Only deals recoverable damage\n* Cannot cause a K.O.\n* Power crush 7~16"
+        }
+      ]
     },
     {
-      "id": "sp_2",
-      "name": "Safe mid Heat Engager from stance",
-      "type": "special",
-      "input": "626_SaemiHeatEngagerromstance"
+      "id": "move-1",
+      "name": "H.1+2",
+      "type": "Heat Moves",
+      "input": "H.1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Weapon\n* Consumes 270F remaining Heat Time on block or whiff\n* Restores 30F of remaining Heat Time on hit\n* Alternate input DSS.1+2"
+        }
+      ]
     },
     {
-      "id": "sp_5",
-      "name": "Good mid poke to check situations",
-      "type": "special",
-      "input": "228_Goomipoketochecksitations"
+      "id": "move-2",
+      "name": "Gale Claw",
+      "type": "Heat Moves",
+      "input": "H.uf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Strong Aerial Tailspin\n* Balcony Break\n* Consumes 300F of remaining Heat Time\n* Restores 30F of remaining Heat Time on hit\n* 4 chip damage"
+        }
+      ]
     },
     {
-      "id": "sp_6",
-      "name": "Df+1+4",
-      "type": "special",
-      "input": "3LPRK"
+      "id": "move-3",
+      "name": "Heavenly Dragon",
+      "type": "Heat Moves",
+      "input": "H.2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Smash\n* Balcony Break\n* Transitions to DSS on block\n* 8 chip damage on block"
+        }
+      ]
     },
     {
-      "id": "sp_8",
-      "name": "Uf+1+2",
-      "type": "special",
-      "input": "9LPRP"
+      "id": "move-4",
+      "name": "Fate of the Dragon",
+      "type": "Stances",
+      "input": "R.df+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\n* Power crush 8~"
+        }
+      ]
     },
     {
-      "id": "sp_12",
-      "name": "Good keepout move",
-      "type": "special",
-      "input": "28_Gookeepotmove"
+      "id": "move-5",
+      "name": "Jab",
+      "type": "Single Hits",
+      "input": "1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Recovers 2f faster on hit or block (t27 r17)"
+        }
+      ]
     },
     {
-      "id": "sp_13",
-      "name": "B,b+2",
-      "type": "special",
-      "input": "44[Cancel]RP"
+      "id": "move-6",
+      "name": "1,1",
+      "type": "Strings",
+      "input": "1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i18"
+        },
+        {
+          "type": "properties",
+          "value": "* CH frames also apply to combo from 1st CH"
+        }
+      ]
     },
     {
-      "id": "sp_15",
-      "name": "BT f+1+2",
-      "type": "special",
-      "input": "46TLPRP"
+      "id": "move-7",
+      "name": "Furious Rush",
+      "type": "Heat Moves",
+      "input": "1,1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Combos from 1st or 2nd hit CH\n* Balcony Break\n* Forces tech backroll on hit"
+        }
+      ]
     },
     {
-      "id": "sp_17",
-      "name": "GUARANTEED FOLLOW-UPS",
-      "type": "special",
-      "input": "88GARAnTEE3OLLOW-PS"
+      "id": "move-8",
+      "name": "Knuckle Barrage Combo",
+      "type": "Strings",
+      "input": "1,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to DSS with F\n** (-6 oB, +6 oH)"
+        }
+      ]
     },
     {
-      "id": "sp_18",
-      "name": "B+3",
-      "type": "special",
-      "input": "4LK"
+      "id": "move-9",
+      "name": "Left Right Combo",
+      "type": "Strings",
+      "input": "1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Jails from 1st attack\n* Combos from 1st hit"
+        }
+      ]
     },
     {
-      "id": "sp_19",
-      "name": "2,4",
-      "type": "special",
-      "input": "RP[Cancel]RK"
+      "id": "move-10",
+      "name": "Left Right Dragon Fist",
+      "type": "Strings",
+      "input": "1,2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i20"
+        },
+        {
+          "type": "properties",
+          "value": "Combos from 1st hit CH"
+        }
+      ]
     },
     {
-      "id": "sp_20",
-      "name": "SZN 1+2",
-      "type": "special",
-      "input": "SZnLPRP"
+      "id": "move-11",
+      "name": "Left Right Dragon Fist Combo",
+      "type": "Strings",
+      "input": "1,2,2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st or 3rd hit CH\n* Delay-able\n* Transition to DSS with F\n** (-4 oB, +9g oH, +14d CH)"
+        }
+      ]
     },
     {
-      "id": "sp_21",
-      "name": "...",
-      "type": "special",
-      "input": "..."
+      "id": "move-12",
+      "name": "Left Right Blazing Fist Combo",
+      "type": "Strings",
+      "input": "1,2,2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i19"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break"
+        }
+      ]
     },
     {
-      "id": "sp_22",
-      "name": "BT 1+2",
-      "type": "special",
-      "input": "4TLPRP"
+      "id": "move-13",
+      "name": "Left Right > Knee",
+      "type": "Strings",
+      "input": "1,2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Wall Crush +24g on hit\n\n\n* Knee\n* Combos from 1st hit CH\n* Jails from 1st attack"
+        }
+      ]
     },
     {
-      "id": "sp_23",
-      "name": "4,1",
-      "type": "special",
-      "input": "RK[Cancel]LP"
+      "id": "move-14",
+      "name": "Left Right Combo > Somersault Feint",
+      "type": "Strings",
+      "input": "1,2,uf+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        }
+      ]
     },
     {
-      "id": "sp_24",
-      "name": "CH (f+3),2",
-      "type": "special",
-      "input": "6CH(LK)[Cancel]RP"
+      "id": "move-15",
+      "name": "Right Jab",
+      "type": "Single Hits",
+      "input": "2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        }
+      ]
     },
     {
-      "id": "sp_25",
-      "name": "Db+2,1",
-      "type": "special",
-      "input": "1RP[Cancel]LP"
+      "id": "move-16",
+      "name": "2,2",
+      "type": "Strings",
+      "input": "2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i20"
+        },
+        {
+          "type": "properties",
+          "value": "Delay-able"
+        }
+      ]
     },
     {
-      "id": "sp_26",
-      "name": "CH db+3",
-      "type": "special",
-      "input": "CHdown-backLK"
+      "id": "move-17",
+      "name": "Rave War Combo",
+      "type": "Strings",
+      "input": "2,2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 2nd hit\n* Transition to DSS with F\n** (-4 oB, +9g oH, +14d)"
+        }
+      ]
     },
     {
-      "id": "sp_27",
-      "name": "Df+1,4",
-      "type": "special",
-      "input": "3LP[Cancel]RK"
+      "id": "move-18",
+      "name": "Blazing Fist Combo",
+      "type": "Strings",
+      "input": "2,2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combos from 2nd hit CH\n* Delay-able"
+        }
+      ]
     },
     {
-      "id": "sp_28",
-      "name": "CH db+4",
-      "type": "special",
-      "input": "CHdown-backRK"
+      "id": "move-19",
+      "name": "2,b+2",
+      "type": "Strings",
+      "input": "2,b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Combos from 1st hit\n* Delay-able"
+        }
+      ]
     },
     {
-      "id": "sp_29",
-      "name": "1+2 (heat)",
-      "type": "special",
-      "input": "LPRP(heat)"
+      "id": "move-20",
+      "name": "2,b+2,1",
+      "type": "Strings",
+      "input": "2,b+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 2nd hit CH\n* Delay-able"
+        }
+      ]
     },
     {
-      "id": "sp_30",
-      "name": "CH (uf+4),4",
-      "type": "special",
-      "input": "CH(up-forwardRK)[Cancel]RK"
+      "id": "move-21",
+      "name": "Rage Dragon Combo",
+      "type": "Strings",
+      "input": "2,b+2,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 3rd hit CH\n* Delay-able\n* Transition to FC with D"
+        }
+      ]
     },
     {
-      "id": "sp_31",
-      "name": "F+4",
-      "type": "special",
-      "input": "6RK"
+      "id": "move-22",
+      "name": "High Kick",
+      "type": "Single Hits",
+      "input": "3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        }
+      ]
     },
     {
-      "id": "sp_32",
-      "name": "BT b+3",
-      "type": "special",
-      "input": "44TLK"
+      "id": "move-23",
+      "name": "Feint > Middle Kick",
+      "type": "Strings",
+      "input": "3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i27"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st hit CH\n* Delay-able"
+        }
+      ]
     },
     {
-      "id": "sp_33",
-      "name": "CH FC df+3",
-      "type": "special",
-      "input": "CHFCdown-forwardLK"
+      "id": "move-24",
+      "name": "High Kick > Bloody Cleaver",
+      "type": "Strings",
+      "input": "3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st hit\n* Balcony Break"
+        }
+      ]
     },
     {
-      "id": "sp_34",
-      "name": "Df+2",
-      "type": "special",
-      "input": "3RP"
+      "id": "move-25",
+      "name": "Right High Kick",
+      "type": "Single Hits",
+      "input": "4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        }
+      ]
     },
     {
-      "id": "sp_35",
-      "name": "CH qcf+2",
-      "type": "special",
-      "input": "6CHqcRP"
+      "id": "move-26",
+      "name": "Spin Kick",
+      "type": "Strings",
+      "input": "4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Airborne combo from 1st CH (+24a (+17))\n* Transition to DSS with F (+7/+16g/+39a (+32))"
+        }
+      ]
     },
     {
-      "id": "sp_36",
-      "name": "CH BT f+3",
-      "type": "special",
-      "input": "46CHTLK"
+      "id": "move-27",
+      "name": "Shaolin Spin Kicks",
+      "type": "Strings",
+      "input": "4,3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, ,i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Airborne combo from 1st CH (+31a (+24)/+44a (+37))\n* Transition to DSS with F (+7/+12g/+43a (+33))"
+        }
+      ]
     },
     {
-      "id": "sp_37",
-      "name": "BT (f+2),3",
-      "type": "special",
-      "input": "46T(RP)[Cancel]LK"
+      "id": "move-28",
+      "name": "Crescent Kick Combo",
+      "type": "Strings",
+      "input": "4,u+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i33"
+        },
+        {
+          "type": "properties",
+          "value": "Move can be delayed by 4F\n* Low crush 23~"
+        }
+      ]
     },
     {
-      "id": "um_1",
-      "name": "F",
-      "type": "unique",
-      "input": "6"
+      "id": "move-29",
+      "name": "Tornado Claw",
+      "type": "Single Hits",
+      "input": "1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Weapon\n* Partially uses remaining Heat Time in heat\n* Instant Tornado on CH"
+        }
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "id": "move-30",
+      "name": "Taunt",
+      "type": "Single Hits",
+      "input": "2+3+4",
+      "properties": []
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "id": "move-31",
+      "name": "Ab Cruncher",
+      "type": "Single Hits",
+      "input": "3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i11"
+        },
+        {
+          "type": "properties",
+          "value": "Alternate input DSS.3+4\n* Low crush 14~"
+        }
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "id": "move-32",
+      "name": "Wild Dragon's Flight",
+      "type": "Strings",
+      "input": "3+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i11, i30"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combos from 1st hit\n* 5 chip damage on block\n* Forces tech backroll on hit\n* Alternate input DSS.3+4,4\n* Low crush 22~"
+        }
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "id": "move-33",
+      "name": "f+2",
+      "type": "Single Hits",
+      "input": "f+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Can route into:\n** Rave War Combo (f+2,2,2), or\n** Blazing Fist Combo (f+2,2,1+2)\n* Alternate input DSS.f+2"
+        }
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "move-34",
+      "name": "Poison Arrow",
+      "type": "Single Hits",
+      "input": "f+2~1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 4 chip damage on block\n* Transition to DSS with F (+6/+32a (+6)/+56a)\n* Alternate input DSS.f+2~1"
+        }
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "id": "move-35",
+      "name": "f+3",
+      "type": "Single Hits",
+      "input": "f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        }
+      ]
+    },
+    {
+      "id": "move-36",
+      "name": "Plunging Knock",
+      "type": "Strings",
+      "input": "f+3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to DSS with F\n** (+3 oB, +13g)"
+        }
+      ]
+    },
+    {
+      "id": "move-37",
+      "name": "Dragon Hammer",
+      "type": "Single Hits",
+      "input": "f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "Transition to FC with D"
+        }
+      ]
+    },
+    {
+      "id": "move-38",
+      "name": "Dragon Killer",
+      "type": "Single Hits",
+      "input": "f+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "Alternate input DSS.f+3+4\n* Low crush 11~"
+        }
+      ]
+    },
+    {
+      "id": "move-39",
+      "name": "df+1",
+      "type": "Single Hits",
+      "input": "df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "First hit of Law's 10 String"
+        }
+      ]
+    },
+    {
+      "id": "move-40",
+      "name": "Blast Claw",
+      "type": "Strings",
+      "input": "df+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Balcony Break\n* Strong Aerial Tailspin\n* Combo from 1st hit with 2F delay\n* Powered up in Heat\n* Move cannot be delayed"
+        }
+      ]
+    },
+    {
+      "id": "move-41",
+      "name": "df+1,3",
+      "type": "Strings",
+      "input": "df+1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st hit\n* Links to 10-hit combo"
+        }
+      ]
+    },
+    {
+      "id": "move-42",
+      "name": "df+1,3,2",
+      "type": "Strings",
+      "input": "df+1,3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, ,i28"
+        },
+        {
+          "type": "properties",
+          "value": "Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-43",
+      "name": "10 Hit Combo",
+      "type": "10-Hit Combos",
+      "input": "df+1,3,2,2,3,3,3,4,4,4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "First 3 hits are a natural combo"
+        }
+      ]
+    },
+    {
+      "id": "move-44",
+      "name": "Blast Claw",
+      "type": "Heat Moves",
+      "input": "H.df+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Balcony Break\n* Strong Aerial Tailspin\n* Combos from 1st hit\n* Consumes 180F of remaining Heat Time\n* Restores 30F of remaining Heat Time on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-45",
+      "name": "Dragon Raise",
+      "type": "Single Hits",
+      "input": "df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        }
+      ]
+    },
+    {
+      "id": "move-46",
+      "name": "Dragon Lance",
+      "type": "Single Hits",
+      "input": "df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-47",
+      "name": "Right Middle Kick",
+      "type": "Single Hits",
+      "input": "df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        }
+      ]
+    },
+    {
+      "id": "move-48",
+      "name": "Right Middle Kick > Somersault Kick",
+      "type": "Strings",
+      "input": "df+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i29~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combos from 1st hit CH\n* Low crush 14~"
+        }
+      ]
+    },
+    {
+      "id": "move-49",
+      "name": "Banana Peel",
+      "type": "Single Hits",
+      "input": "df+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-50",
+      "name": "Low Backhand",
+      "type": "Single Hits",
+      "input": "d+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "Transition to Slide Step with DF\n* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-51",
+      "name": "Low Backhand > High Kick",
+      "type": "Strings",
+      "input": "d+1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20, i24"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-52",
+      "name": "Body Blow",
+      "type": "Single Hits",
+      "input": "d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "Alternate input FC.d+2\n* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-53",
+      "name": "Body Blow > Dragon Lift",
+      "type": "Strings",
+      "input": "d+2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st hit CH\n* Tornado"
+        }
+      ]
+    },
+    {
+      "id": "move-54",
+      "name": "Dragon Low",
+      "type": "Single Hits",
+      "input": "d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "Transition to FC with D"
+        }
+      ]
+    },
+    {
+      "id": "move-55",
+      "name": "Dragon Low > Hook Kick",
+      "type": "Strings",
+      "input": "d+3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st hit CH\n* -30 on block from 1st block\n* Delay-able"
+        }
+      ]
+    },
+    {
+      "id": "move-56",
+      "name": "d+4",
+      "type": "Single Hits",
+      "input": "d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        }
+      ]
+    },
+    {
+      "id": "move-57",
+      "name": "Construct Kick",
+      "type": "Strings",
+      "input": "d+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st hit\n* -26 on 1st block\n* Nosebleed stun\n* Low crush 5~9?\n* Floating state 10?~12?"
+        }
+      ]
+    },
+    {
+      "id": "move-58",
+      "name": "Dragon Charge",
+      "type": "Single Hits",
+      "input": "d+1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Enters DSS\n* Transition to Slide Step with DF"
+        }
+      ]
+    },
+    {
+      "id": "move-59",
+      "name": "Low Kick",
+      "type": "Single Hits",
+      "input": "d+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "Alternate input FC.d+4\n* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-60",
+      "name": "Low Kick > Somersault",
+      "type": "Strings",
+      "input": "d+3+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i29"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combos from 1st hit CH\n* Alternate input FC.d+4,3\n* Low crush 19~"
+        }
+      ]
+    },
+    {
+      "id": "move-61",
+      "name": "Crouch Jab",
+      "type": "Single Hits",
+      "input": "db+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-62",
+      "name": "db+2",
+      "type": "Single Hits",
+      "input": "db+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-63",
+      "name": "Elbow Spring Kick",
+      "type": "Strings",
+      "input": "db+2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i33"
+        },
+        {
+          "type": "properties",
+          "value": "Transition to FUFA with D\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-64",
+      "name": "Shin Crusher",
+      "type": "Single Hits",
+      "input": "db+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        }
+      ]
+    },
+    {
+      "id": "move-65",
+      "name": "Dragon's Tail",
+      "type": "Single Hits",
+      "input": "db+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26"
+        },
+        {
+          "type": "properties",
+          "value": "Homing\n* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-66",
+      "name": "Dragon's Tail > Somersault Kick",
+      "type": "Strings",
+      "input": "db+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26, i37"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-67",
+      "name": "Dragon Charge Punch",
+      "type": "Single Hits",
+      "input": "db+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to DSS\n** Reduced input window for blue spark moves (input f+1_3_4 on frame 2 of DSS only)"
+        }
+      ]
+    },
+    {
+      "id": "move-68",
+      "name": "Dragon Judgment",
+      "type": "Strings",
+      "input": "db+1+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17, i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 3rd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-69",
+      "name": "b+1",
+      "type": "Single Hits",
+      "input": "b+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to DSS with F\n** (-4 oB, +7 oH)"
+        }
+      ]
+    },
+    {
+      "id": "move-70",
+      "name": "b+1,2",
+      "type": "Strings",
+      "input": "b+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 11F delay\n* Move can be delayed by 14F\n* Transition to DSS with F\n** (-10 oB, +4 oH)"
+        }
+      ]
+    },
+    {
+      "id": "move-71",
+      "name": "Dragon Storm",
+      "type": "Heat Moves",
+      "input": "b+1,2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, ,i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash  +5, +42a (+27)\n\n* Balcony Break\n* Combo from 1st or 2nd hit CH with 12F delay\n* Move can be delayed by 8F\n* Input can be delayed by 16F"
+        }
+      ]
+    },
+    {
+      "id": "move-72",
+      "name": "Parry",
+      "type": "Single Hits",
+      "input": "b+1+3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to DSS on successful parry with F to be +20g (i14? guaranteed followups)\n* Parry state 5?~11?"
+        }
+      ]
+    },
+    {
+      "id": "move-73",
+      "name": "b+2",
+      "type": "Single Hits",
+      "input": "b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        }
+      ]
+    },
+    {
+      "id": "move-74",
+      "name": "Vortex Rush",
+      "type": "Strings",
+      "input": "b+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Combos from 1st hit CH"
+        }
+      ]
+    },
+    {
+      "id": "move-75",
+      "name": "Knuckle Rush",
+      "type": "Strings",
+      "input": "b+2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st hit\n* Delay-able\n* Transition to DSS with F\n** (-4 oB, +9 oH, +14d CH)"
+        }
+      ]
+    },
+    {
+      "id": "move-76",
+      "name": "b+2,3",
+      "type": "Strings",
+      "input": "b+2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i23"
+        },
+        {
+          "type": "properties",
+          "value": "Delay-able"
+        }
+      ]
+    },
+    {
+      "id": "move-77",
+      "name": "Junkyard Kick",
+      "type": "Strings",
+      "input": "b+2,3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, ,i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combos from 2nd hit CH\n* Delay-able\n* Transition to DSS with F\n** (+5 oB, +48a (+38) oH)"
+        }
+      ]
+    },
+    {
+      "id": "move-78",
+      "name": "Dragon Rush Combo",
+      "type": "Strings",
+      "input": "b+2,3,d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, ,i34"
+        },
+        {
+          "type": "properties",
+          "value": "Delay-able\n* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-79",
+      "name": "Dragon Spin Kick",
+      "type": "Single Hits",
+      "input": "b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break\n* Transition to BT with B\n** (-11 oB, +18a (+9) oH)"
+        }
+      ]
+    },
+    {
+      "id": "move-80",
+      "name": "b+4",
+      "type": "Single Hits",
+      "input": "b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Transition to BT with B\n** (-4 oB, +6 oH)"
+        }
+      ]
+    },
+    {
+      "id": "move-81",
+      "name": "Tiger Fang",
+      "type": "Strings",
+      "input": "b+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i32"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-82",
+      "name": "Dragon Stinger",
+      "type": "Single Hits",
+      "input": "b+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* Power crush 7~"
+        }
+      ]
+    },
+    {
+      "id": "move-83",
+      "name": "Dragon Arrow",
+      "type": "Single Hits",
+      "input": "b+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* High crush 6~10?"
+        }
+      ]
+    },
+    {
+      "id": "move-84",
+      "name": "Fury Fist Rush",
+      "type": "Strings",
+      "input": "ub+1,1+2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12,i6,i6,i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st CH\n* Jails from 1st to 4st attack\n* Last hit delay-able\n* Frame data for 1st, 2nd and 3rd hits:\n** (-9 oB, -3 oH)"
+        }
+      ]
+    },
+    {
+      "id": "move-85",
+      "name": "generic hook",
+      "type": "Single Hits",
+      "input": "ub+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        }
+      ]
+    },
+    {
+      "id": "move-86",
+      "name": "Somersault",
+      "type": "Single Hits",
+      "input": "ub+3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to Slide Step with DF\n* Alternate input u+3\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-87",
+      "name": "Somersault Fake",
+      "type": "Strings",
+      "input": "ub+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        }
+      ]
+    },
+    {
+      "id": "move-88",
+      "name": "Dragon Back Blow",
+      "type": "Single Hits",
+      "input": "ub+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Homing\n* Jab evasion"
+        }
+      ]
+    },
+    {
+      "id": "move-89",
+      "name": "Rising Toe Kick",
+      "type": "Single Hits",
+      "input": "u+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-90",
+      "name": "Somersault Kick",
+      "type": "Single Hits",
+      "input": "UF+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Alternate input\n** UB+4, U+4, FC.ub+4, FC.u+4, FC.uf+4\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-91",
+      "name": "Backflipper",
+      "type": "Strings",
+      "input": "UF+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18, i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st hit\n* Tornado\n* 2nd hit Instant Tornado\n** (+68a (+52) oH)\n* Alternate input\n** UB+4,3 U+4,3\n** FC.ub+4,3 FC.u+4,3 FC.uf+4,3\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-92",
+      "name": "Blackout",
+      "type": "Single Hits",
+      "input": "uf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Alternate input:\n** Ki Charge~1\n** b,B+2+3~1,3"
+        }
+      ]
+    },
+    {
+      "id": "move-93",
+      "name": "Blackout > Muggin'",
+      "type": "Strings",
+      "input": "uf+1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st hit\n* Alternate input:\n** Ki Charge~1,3\n** b,B+2+3~1,3"
+        }
+      ]
+    },
+    {
+      "id": "move-94",
+      "name": "Gale Claw",
+      "type": "Single Hits",
+      "input": "uf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Strong Aerial Tailspin\n* Balcony Break\n* 4 chip damage"
+        }
+      ]
+    },
+    {
+      "id": "move-95",
+      "name": "Dragon's Fury",
+      "type": "Heat Moves",
+      "input": "uf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +36d (+26)\n\n* Balcony Break\n* Forces tech backroll on hit\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-96",
+      "name": "Dragon's Rising Kick",
+      "type": "Single Hits",
+      "input": "uf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-97",
+      "name": "Dragon's Descent",
+      "type": "Single Hits",
+      "input": "uf+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i29"
+        },
+        {
+          "type": "properties",
+          "value": "Alternate input DSS.uf+3+4\n* Low crush 8~30?"
+        }
+      ]
+    },
+    {
+      "id": "move-98",
+      "name": "Ki Charge",
+      "type": "Single Hits",
+      "input": "1+2+3+4",
+      "properties": []
+    },
+    {
+      "id": "move-99",
+      "name": "Ki Charge (Hold)",
+      "type": "Single Hits",
+      "input": "1+2+3+4",
+      "properties": []
+    },
+    {
+      "id": "move-100",
+      "name": "Cloud Gates",
+      "type": "Strings",
+      "input": "1+2+3+4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 6 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-101",
+      "name": "Blackout",
+      "type": "Single Hits",
+      "input": "1+2+3+4~1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Alternate input:\n** uf+1\n** b,B+2+3~1,3"
+        }
+      ]
+    },
+    {
+      "id": "move-102",
+      "name": "Blackout > Muggin'",
+      "type": "Strings",
+      "input": "1+2+3+4~1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st hit\n* Alternate input:\n** uf+1,3\n** b,B+2+3~1,3"
+        }
+      ]
+    },
+    {
+      "id": "move-103",
+      "name": "Taunt",
+      "type": "Strings",
+      "input": "(While down, facing up) 1+2+3+4",
+      "properties": []
+    },
+    {
+      "id": "move-104",
+      "name": "Charge Power Punch",
+      "type": "Strings",
+      "input": "b,B+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i78"
+        },
+        {
+          "type": "properties",
+          "value": "Can cancel and transition to DSS with b,b"
+        }
+      ]
+    },
+    {
+      "id": "move-105",
+      "name": "Dragon's Poke",
+      "type": "Strings",
+      "input": "f,F+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~16"
+        }
+      ]
+    },
+    {
+      "id": "move-106",
+      "name": "f,F+2,1",
+      "type": "Strings",
+      "input": "f,F+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~16, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 8F delay\n* Combo from 1st CH with 13F delay\n* Move can be delayed by 17F\n* Input can be delayed by 19F"
+        }
+      ]
+    },
+    {
+      "id": "move-107",
+      "name": "Dragon Strike Combo",
+      "type": "Strings",
+      "input": "f,F+2,1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~16, ,i28~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd hit CH with 1F delay\n* Move can be delayed by 17F\n* Input can be delayed by 18F"
+        }
+      ]
+    },
+    {
+      "id": "move-108",
+      "name": "Dragon Dagger",
+      "type": "Strings",
+      "input": "f,F+2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~16, i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Jail from 1st block with 6F delay\n* Combo from 1st hit with 13F delay\n* Move can be delayed by 11F\n* Input can be delayed by 13F\n* Forces tech backroll on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-109",
+      "name": "Dragon's Poke > Poison Arrow",
+      "type": "Strings",
+      "input": "f,F+2,f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~16, i31~32"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH with 4F delay\n* Transition to DSS with F (+6/+32a (+6)/+56a)\n* 4 chip damage on block\n* Move can be delayed by 17F\n* Input can be delayed by 19F"
+        }
+      ]
+    },
+    {
+      "id": "move-110",
+      "name": "Dragon Divide",
+      "type": "Strings",
+      "input": "f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* 6 chip damage\n* Low crush 11~26\n* Floating state 27~29"
+        }
+      ]
+    },
+    {
+      "id": "move-111",
+      "name": "Dragon's Leap Shot",
+      "type": "Strings",
+      "input": "f,F+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* Low crush 23~36\n* Floating state 37~39"
+        }
+      ]
+    },
+    {
+      "id": "move-112",
+      "name": "Dragon's Rising Cannon",
+      "type": "Strings",
+      "input": "uf,n,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-113",
+      "name": "Running Side Kick",
+      "type": "Strings",
+      "input": "f,f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 6 chip damage on block\n* Forces tech backroll on hit\n* Low crush 3~29\n* Floating state 30~32"
+        }
+      ]
+    },
+    {
+      "id": "move-114",
+      "name": "ws1",
+      "type": "While Standing",
+      "input": "ws1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to DSS with F\n** (-5 oB, +1 oH)"
+        }
+      ]
+    },
+    {
+      "id": "move-115",
+      "name": "Flash Fist",
+      "type": "While Standing",
+      "input": "ws1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Delayable\n* Forces tech backroll on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-116",
+      "name": "Dragon Uppercut",
+      "type": "While Standing",
+      "input": "ws2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        }
+      ]
+    },
+    {
+      "id": "move-117",
+      "name": "Side Kick",
+      "type": "While Standing",
+      "input": "ws3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to DSS"
+        }
+      ]
+    },
+    {
+      "id": "move-118",
+      "name": "ws4",
+      "type": "While Standing",
+      "input": "ws4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to +4, +12, +13 DSS with F"
+        }
+      ]
+    },
+    {
+      "id": "move-119",
+      "name": "Front Kick Somersault Variation",
+      "type": "While Standing",
+      "input": "ws4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, i27"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n** Combos from 1st hit CH\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-120",
+      "name": "Catapult Kick",
+      "type": "While Standing",
+      "input": "ws3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-121",
+      "name": "Spinning Dragon Blow",
+      "type": "Single Hits",
+      "input": "ss2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 4 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-122",
+      "name": "Low Crush",
+      "type": "Single Hits",
+      "input": "ss3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to DSS on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-123",
+      "name": "Double Dragon",
+      "type": "Single Hits",
+      "input": "ss3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-124",
+      "name": "Crouch Jab",
+      "type": "While Standing",
+      "input": "FC.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-125",
+      "name": "Body Blow",
+      "type": "While Standing",
+      "input": "FC.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "Alternate input d+2\n* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-126",
+      "name": "FC.3",
+      "type": "While Standing",
+      "input": "FC.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-127",
+      "name": "Double Impact",
+      "type": "While Standing",
+      "input": "FC.3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i29"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit CH\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-128",
+      "name": "Low Kick",
+      "type": "While Standing",
+      "input": "FC.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "Alternate input d+3+4\n* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-129",
+      "name": "Low Kick > Somersault",
+      "type": "While Standing",
+      "input": "FC.4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i29"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st hit CH\n* Alternate input d+3+4,3\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-130",
+      "name": "Rainbow Kick",
+      "type": "While Standing",
+      "input": "FC.UF+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i46~49"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-131",
+      "name": "Slide Kick",
+      "type": "While Standing",
+      "input": "FC.df,d,df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Alternate input df+3 in Slide Step"
+        }
+      ]
+    },
+    {
+      "id": "move-132",
+      "name": "Wall Jump Divekick",
+      "type": "Stances",
+      "input": "(Back to wall).b,b,UB",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i29~33"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Forces tech backroll on hit\n* Floating state 5~13\n* Low crush 14~33\n* Floating state 34~36"
+        }
+      ]
+    },
+    {
+      "id": "move-133",
+      "name": "Turning Knuckles",
+      "type": "Stances",
+      "input": "BT.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Can route into the same strings as his normal 1"
+        }
+      ]
+    },
+    {
+      "id": "move-134",
+      "name": "BT.2",
+      "type": "Stances",
+      "input": "BT.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-135",
+      "name": "Blind Elbow Combo",
+      "type": "Stances",
+      "input": "BT.2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Combos from 1st hit\n* Delay-able\n* Forces tech backroll on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-136",
+      "name": "BT.3",
+      "type": "Stances",
+      "input": "BT.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        }
+      ]
+    },
+    {
+      "id": "move-137",
+      "name": "BT.4",
+      "type": "Stances",
+      "input": "BT.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        }
+      ]
+    },
+    {
+      "id": "move-138",
+      "name": "Wolf Fang",
+      "type": "Stances",
+      "input": "BT.4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, i24"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combos from 1st hit CH"
+        }
+      ]
+    },
+    {
+      "id": "move-139",
+      "name": "Dragon Back Blow",
+      "type": "Stances",
+      "input": "BT.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Homing\n* Jab evasion"
+        }
+      ]
+    },
+    {
+      "id": "move-140",
+      "name": "BT.d+3",
+      "type": "Stances",
+      "input": "BT.d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        }
+      ]
+    },
+    {
+      "id": "move-141",
+      "name": "Reverse Low",
+      "type": "Stances",
+      "input": "BT.d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23"
+        }
+      ]
+    },
+    {
+      "id": "move-142",
+      "name": "Frogman",
+      "type": "Stances",
+      "input": "BT.d+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to FUFA with D\n** (-2 oB, +13d oH)"
+        }
+      ]
+    },
+    {
+      "id": "move-143",
+      "name": "Dragon Knuckle",
+      "type": "Stances",
+      "input": "DSS.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* 4 chip damage on block\n* Transition to DSS"
+        }
+      ]
+    },
+    {
+      "id": "move-144",
+      "name": "Cloud Gates",
+      "type": "Stances",
+      "input": "DSS.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 6 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-145",
+      "name": "Dragon Charge Spin Kick",
+      "type": "Stances",
+      "input": "DSS.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break\n* 5 Chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-146",
+      "name": "Dragon Charge Kick",
+      "type": "Stances",
+      "input": "DSS.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21"
+        }
+      ]
+    },
+    {
+      "id": "move-147",
+      "name": "Dragon Roar",
+      "type": "Heat Moves",
+      "input": "DSS.f+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +43d (+35)\n\n* Balcony Break\n* 4 chip damage on block\n* 7 chip damage on block (Just Frame)\n* Forces tech backroll on hit\n* While transitioning to DSS from other moves, it is possible to input DSS.f+1 on frame 1 or 2 of DSS (ex; 4,3~F:DSS.f+1) for 4 more damage on hit, 3 more chip damage on block, and startup becomes i13~14 with increased pushback on block"
+        }
+      ]
+    },
+    {
+      "id": "move-148",
+      "name": "Dragon Cannon",
+      "type": "Heat Moves",
+      "input": "DSS.f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Balcony Break\n* 8 chip damage on block\n* 9 chip damage on block (Just Frame)\n* While transitioning to DSS from other moves, it is possible to input DSS.f+3 on frame 1 or 2 of DSS (ex; 4,3~F:DSS.f+3) for 5 more damage with increased pushback on block"
+        }
+      ]
+    },
+    {
+      "id": "move-149",
+      "name": "Dragon's Flight",
+      "type": "Stances",
+      "input": "DSS.f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 7 chip damage on block\n* 12 chip damage on block (Just Frame)\n* Forces tech backroll on hit\n* While transitioning to DSS from other moves, it is possible to input DSS.f+4 on frame 1 or 2 of DSS (ex; 4,3~F:DSS.f+4) for 4 more damage."
+        }
+      ]
+    },
+    {
+      "id": "move-150",
+      "name": "Dragon's Fire",
+      "type": "Throws",
+      "input": "1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "Throw break 1 or 2"
+        }
+      ]
+    },
+    {
+      "id": "move-151",
+      "name": "Hopping Frog",
+      "type": "Throws",
+      "input": "2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1 or 2\n* Side swap\n* Transition to BT with D\n** (+5 BT)"
+        }
+      ]
+    },
+    {
+      "id": "move-152",
+      "name": "Dragon Bites",
+      "type": "Single Hits",
+      "input": "Back Throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "Unbreakable"
+        }
+      ]
+    },
+    {
+      "id": "move-153",
+      "name": "Facelift",
+      "type": "Stances",
+      "input": "DSS.uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "Throw break 1+2"
+        }
+      ]
+    },
+    {
+      "id": "move-154",
+      "name": "Dragon Parry",
+      "type": "Heat Moves",
+      "input": "H.DSS,P",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Punches only\n* Heat only\n* Restores 150F of remaining Heat Time on successful parry\n* Parry state 5~?"
+        }
+      ]
+    },
+    {
+      "id": "move-155",
+      "name": "Headlock Kick",
+      "type": "Single Hits",
+      "input": "Left Throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "Throw break 1"
+        }
+      ]
+    },
+    {
+      "id": "move-156",
+      "name": "Ball Breaker",
+      "type": "Single Hits",
+      "input": "Right Throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "Throw break 2"
+        }
+      ]
+    },
+    {
+      "id": "move-157",
+      "name": "Dragon Parry",
+      "type": "Single Hits",
+      "input": "b+2+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Punches only\n* Partially restores remaining Heat Time\n* Does 38 damage in Heat\n* Parry state 5?"
+        }
+      ]
+    },
+    {
+      "id": "move-158",
+      "name": "Knee Lift",
+      "type": "Strings",
+      "input": "f,F+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "Throw break 1+2"
+        }
+      ]
+    },
+    {
+      "id": "move-159",
+      "name": "Run Up > Drop",
+      "type": "Single Hits",
+      "input": "f+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "Throw break 1"
+        }
+      ]
+    },
+    {
+      "id": "move-160",
+      "name": "Headlock Punch",
+      "type": "Single Hits",
+      "input": "uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "Throw break 1+2"
+        }
+      ]
+    },
+    {
+      "id": "move-161",
+      "name": "Headlock Drop",
+      "type": "Strings",
+      "input": "uf+1+2,1,2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1+2\n* Floor Break"
+        }
+      ]
     }
   ]
 }

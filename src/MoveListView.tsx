@@ -25,6 +25,91 @@ interface Props {
 
 
 
+const getFrameAdvantageColor = (frames?: string): string => {
+  if (!frames) return 'var(--text-secondary)';
+  const f = frames.trim();
+  if (f.startsWith('+')) return '#4ade80'; // Green
+  if (f === '0' || f === '0~+1' || f.toLowerCase() === 'neutral') return '#f8fafc'; // White
+  
+  // Try to parse number
+  const numMatch = f.match(/-?\d+/);
+  if (numMatch) {
+    const val = parseInt(numMatch[0], 10);
+    if (val > 0) return '#4ade80'; // Green
+    if (val === 0) return '#f8fafc'; // White
+    if (val < 0 && val >= -9) return '#facc15'; // Yellow (Safe)
+    if (val <= -10) return '#f87171'; // Red (Unsafe)
+  }
+  return 'var(--text-secondary)';
+};
+
+const STAT_TOOLTIPS: Record<string, string | JSX.Element> = {
+  'STARTUP': (
+    <>
+      <span className="oki-tooltip-title">STARTUP</span>
+      The number of frames it takes for this move to become active and hit the opponent.<br/><br/>
+      For example, a startup of i10 indicates that frames 1-9 are the startup animation and the 10th frame is the first frame that makes "impact" with the opponent.
+    </>
+  ),
+  'ON BLOCK': (
+    <>
+      <span className="oki-tooltip-title">ON BLOCK</span>
+      Frame advantage/disadvantage for you when this move is blocked by the opponent.<br/><br/>
+      <span style={{color: '#4ade80'}}>Green</span> indicates that you recover first and have a frame advantage<br/>
+      <span style={{color: '#facc15'}}>Yellow</span> indicates that your opponent recovers first and you have a frame disadvantage that is safe (you can block the next hit)<br/>
+      <span style={{color: '#f87171'}}>Red</span> indicates that your opponent recovers first and you have a frame disadvantage that is unsafe (you cannot block the next hit, depending on the frame startup of the next move)<br/>
+      <span style={{color: '#f8fafc'}}>White</span> means both players recover at the same time
+    </>
+  ),
+  'ON HIT': (
+    <>
+      <span className="oki-tooltip-title">ON HIT</span>
+      Frame advantage/disadvantage for you when this move successfully hits the opponent.<br/><br/>
+      <span style={{color: '#4ade80'}}>Green</span> indicates that you recover first and have a frame advantage<br/>
+      <span style={{color: '#facc15'}}>Yellow</span> indicates that your opponent recovers first and you have a frame disadvantage that is safe (you can block the next hit)<br/>
+      <span style={{color: '#f87171'}}>Red</span> indicates that your opponent recovers first and you have a frame disadvantage that is unsafe (you cannot block the next hit, depending on the frame startup of the next move)<br/>
+      <span style={{color: '#f8fafc'}}>White</span> means both players recover at the same time
+    </>
+  ),
+  'ON COUNTER': (
+    <>
+      <span className="oki-tooltip-title">ON CH</span>
+      Frame advantage when this move hits as a Counter Hit. Counter Hits occur when you hit the opponent while they are performing an attack.
+    </>
+  ),
+  'HIT LEVEL': (
+    <>
+      <span className="oki-tooltip-title">HIT LEVEL</span>
+      The height at which this move hits.<br/><br/>
+      <span style={{color: '#f87171'}}>High</span> moves can be blocked by stand block, ducked by crouch, and dodged by high crush moves<br/>
+      <span style={{color: '#facc15'}}>Mid</span> moves can be blocked by stand block<br/>
+      <span style={{color: '#60a5fa'}}>Low</span> moves can be blocked by crouch block, parried by low parry, and dodged by low crush moves<br/>
+      <span style={{color: '#fbbf24'}}>Special Mid</span> moves can be blocked by stand or crouch block (but force standing on block) and parried by mid parry<br/>
+      <span style={{color: '#3b82f6'}}>Special Low</span> moves can be blocked by stand or crouch block, parried by low parry, and dodged by low crush moves
+    </>
+  )
+};
+
+const PROPERTY_DEFINITIONS: Record<string, { color: string; initials: string; desc: string }> = {
+  'Power Crush': { color: '#ef4444', initials: 'PC', desc: 'This move powers through mid and high attacks without being interrupted.' },
+  'Homing': { color: '#3b82f6', initials: 'HO', desc: 'This move tracks sidestepping opponents.' },
+  'Heat Engager': { color: '#a855f7', initials: 'HE', desc: 'This move activates Heat mode when it connects.' },
+  'Recoverable Health Deletion': { color: '#f97316', initials: 'RHD', desc: 'This move erases the opponent\'s recoverable health on hit.' },
+  'Tornado': { color: '#f43f5e', initials: 'TN', desc: 'This move causes a Tornado spin state, allowing for extended combos.' },
+  'Wall Interaction': { color: '#22c55e', initials: 'WI', desc: 'This move can cause wall breaks, balcony breaks, or wall blasts depending on the stage.' },
+  'Floor Interaction': { color: '#eab308', initials: 'FI', desc: 'This move can break through floors or cause floor blasts depending on the stage.' },
+  'Force Crouch': { color: '#fb7185', initials: 'FC', desc: 'This move forces the opponent into a crouching state on block or hit.' }
+};
+
+const OkiTooltip = ({ content, children }: { content: string | JSX.Element; children: React.ReactNode }) => (
+  <div className="oki-tooltip-container">
+    {children}
+    <div className="oki-tooltip-content">
+      {content}
+    </div>
+  </div>
+);
+
 export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, notationSystem, onToggleMove, onLaunchMainScreen, onLaunchComboView, onClearGameGlance, onBack, onHome }) => {
   useArrowNavigation('[id^="move-"]');
 
@@ -62,7 +147,27 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
   }, []);
 
   useEffect(() => {
-    const GLOBAL_DEFAULT_SORT = ['Special Moves', 'Super Arts', 'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves'];
+    const GLOBAL_DEFAULT_SORT = [
+      'System',
+      'Special Moves', 
+      'Arcana Moves',
+      'Super Arts', 
+      'Super Combos', 
+      'Super Moves',
+      'Overdrives',
+      'Critical Art',
+      'Critical Heart',
+      'Offensive Art',
+      'Defensive Art',
+      'Throws', 
+      'Unique Attacks', 
+      'Normal Moves', 
+      'Common Moves', 
+      'Finishers', 
+      'Fatality',
+      'Fatalities',
+      'Heroic Brutality'
+    ];
     const stored = localStorage.getItem('fgc_tab_order');
     let pref = GLOBAL_DEFAULT_SORT;
     if (stored) {
@@ -300,7 +405,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
   }, [game.id, characterId]);
 
   // Tab → move type mapping (defined before early returns so hooks aren't conditional)
-  const isSuperMove = (m: Move) => m.type === 'super' || /\b(super|climax|meteor)\b/i.test(m.name);
+  const isSuperMove = (m: Move) => m.type && m.type.toLowerCase() === 'super' || /\b(super|climax|meteor)\b/i.test(m.name);
   
   const isNormalThrow = (m: Move) => {
     const input = m.input.toLowerCase();
@@ -343,29 +448,42 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
   };
 
   const TAB_FILTER: Record<string, (data: CharacterExport) => Move[]> = {
-    'Normal Moves':   (d) => (d.movesList || []).filter(m => m.type === 'normal' && !isSuperMove(m)),
-    'Special Moves':  (d) => (d.movesList || []).filter(m => m.type === 'special' && !isSuperMove(m) && !isCommandThrow(m)),
+    'Normal Moves':   (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'normal' && !isSuperMove(m)),
+    'Special Moves':  (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'special' && !isSuperMove(m) && !isCommandThrow(m)),
     'Super Arts':     (d) => (d.movesList || []).filter(m => isSuperMove(m)),
     'Super Combos':   (d) => (d.movesList || []).filter(m => isSuperMove(m)),
-    'Unique Attacks': (d) => (d.movesList || []).filter(m => m.type === 'unique'),
+    'Unique Attacks': (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'unique'),
     'Throws':         (d) => {
-      const throws = (d.movesList || []).filter(m => m.type === 'throw');
-      const sf6Specials = (d.movesList || []).filter(m => m.type === 'special' && isCommandThrow(m));
+      const throws = (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'throw');
+      const sf6Specials = (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'special' && isCommandThrow(m));
       return [...throws, ...sf6Specials];
     },
-    'Common Moves':   (d) => (d.movesList || []).filter(m => m.type === 'common'),
+    'Common Moves':   (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'common'),
     'Moves':          (d) => d.movesList || [],
-    'Fatalities':     (d) => (d.movesList || []).filter(m => m.type === 'super'),
-    'Finishers':      (d) => (d.movesList || []).filter(m => m.type === 'finisher'),
+    'Fatalities':     (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'finisher'),
+    'Finishers':      (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'finisher'),
   };
 
   // Pre-compute counts per tab (safe with null characterData)
   const tabCounts = React.useMemo(() => {
     if (!characterData) return {} as Record<string, number>;
     const counts: Record<string, number> = {};
-    (game.tabs || []).forEach(tab => {
-      const fn = TAB_FILTER[tab];
-      counts[tab] = fn ? fn(characterData).length : 0;
+    const GLOBAL_DEFAULT_SORT = [
+      'System', 'Special Moves', 'Arcana Moves', 'Super Arts', 'Super Combos', 'Super Moves',
+      'Overdrives', 'Critical Art', 'Critical Heart', 'Offensive Art', 'Defensive Art',
+      'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves', 'Finishers', 
+      'Fatality', 'Fatalities', 'Heroic Brutality'
+    ];
+    const combinedTabs = Array.from(new Set([...GLOBAL_DEFAULT_SORT, ...(game.tabs || [])]));
+    
+    combinedTabs.forEach(tab => {
+      const fallbackFilter = (list: Move[]) => list.filter(m => 
+        (m.type && m.type.toLowerCase() === tab.toLowerCase()) || 
+        (m.category && m.category.toLowerCase() === tab.toLowerCase()) ||
+        (m.type && tab.toLowerCase().startsWith(m.type.toLowerCase()))
+      );
+      const list = TAB_FILTER[tab] ? TAB_FILTER[tab](characterData) : fallbackFilter(characterData.movesList || []);
+      counts[tab] = list.length;
     });
     return counts;
   // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -573,6 +691,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           }}>
           {orderedTabs.map((tab, idx) => {
             const isEmpty = tabCounts[tab] === 0;
+            if (isEmpty) return null;
             return (
               <button
                 key={tab}
@@ -582,12 +701,10 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                 onDragOver={handleDragOver}
                 onDrop={(e) => handleDrop(e, idx)}
                 onClick={() => {
-                  if (!isEmpty) {
-                    const section = document.getElementById(`section-${tab.replace(/\s+/g, '-').toLowerCase()}`);
-                    if (section) {
-                      const offsetTop = section.getBoundingClientRect().top + window.pageYOffset - 180;
-                      window.scrollTo({ top: offsetTop, behavior: 'smooth' });
-                    }
+                  const section = document.getElementById(`section-${tab.replace(/\s+/g, '-').toLowerCase()}`);
+                  if (section) {
+                    const offsetTop = section.getBoundingClientRect().top + window.pageYOffset - 180;
+                    window.scrollTo({ top: offsetTop, behavior: 'smooth' });
                   }
                 }}
                 title={isEmpty ? `No ${tab} data available` : `Drag to reorder. Click to jump.`}
@@ -815,7 +932,12 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
       {/* Move list */}
       <main style={{ maxWidth: '1400px', width: '100%', margin: '0 auto' }}>
         {orderedTabs.every(tab => {
-          const list = TAB_FILTER[tab] ? TAB_FILTER[tab](characterData) : (characterData.movesList || []);
+          const fallbackFilter = (list: Move[]) => list.filter(m => 
+            (m.type && m.type.toLowerCase() === tab.toLowerCase()) || 
+            (m.category && m.category.toLowerCase() === tab.toLowerCase()) ||
+            (m.type && tab.toLowerCase().startsWith(m.type.toLowerCase()))
+          );
+          const list = TAB_FILTER[tab] ? TAB_FILTER[tab](characterData) : fallbackFilter(characterData.movesList || []);
           const filtered = searchQuery.trim() ? list.filter(m => m.name.toLowerCase().includes(searchQuery.toLowerCase())) : list;
           return filtered.length === 0;
         }) ? (
@@ -832,7 +954,16 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         ) : (
           <div style={{ display: 'flex', flexDirection: 'column', gap: '3rem' }}>
             {orderedTabs.map(tab => {
-              const baseList = TAB_FILTER[tab] ? TAB_FILTER[tab](characterData) : (characterData.movesList || []);
+              const fallbackFilter = (list: Move[]) => list.filter(m => 
+                (m.type && m.type.toLowerCase() === tab.toLowerCase()) || 
+                (m.category && m.category.toLowerCase() === tab.toLowerCase()) ||
+                (m.type && tab.toLowerCase().startsWith(m.type.toLowerCase()))
+              );
+              
+              const baseList = TAB_FILTER[tab] 
+                ? TAB_FILTER[tab](characterData) 
+                : fallbackFilter(characterData.movesList || []);
+                
               const displayList = searchQuery.trim() ? baseList.filter(m => m.name.toLowerCase().includes(searchQuery.toLowerCase())) : baseList;
               
               if (displayList.length === 0) return null;
@@ -883,6 +1014,89 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                   return 0;
                 });
               }
+
+              const renderStatsGrid = (m: Move) => {
+                if (!m.frameData && (!m.properties || m.properties.length === 0)) return null;
+                const f = m.frameData || {};
+                
+                return (
+                  <div style={{
+                    display: 'grid',
+                    gridTemplateColumns: '1fr 1fr 1fr',
+                    gap: '0.75rem',
+                    marginTop: '0.75rem',
+                    paddingTop: '0.75rem',
+                    borderTop: '1px solid rgba(255,255,255,0.1)'
+                  }}>
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                      {f.startup && (
+                        <OkiTooltip content={STAT_TOOLTIPS['STARTUP']}>
+                          <div className="oki-stat-box">
+                            <span className="oki-stat-value">{f.startup}</span>
+                            <span className="oki-stat-label">STARTUP <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
+                          </div>
+                        </OkiTooltip>
+                      )}
+                      {f.onBlock && (
+                        <OkiTooltip content={STAT_TOOLTIPS['ON BLOCK']}>
+                          <div className="oki-stat-box">
+                            <span className="oki-stat-value" style={{color: getFrameAdvantageColor(f.onBlock)}}>{f.onBlock}</span>
+                            <span className="oki-stat-label">ON BLOCK <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
+                          </div>
+                        </OkiTooltip>
+                      )}
+                    </div>
+
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                      {f.hitLevel && (
+                        <OkiTooltip content={STAT_TOOLTIPS['HIT LEVEL']}>
+                          <div className="oki-stat-box">
+                            <span className="oki-stat-value">{f.hitLevel}</span>
+                            <span className="oki-stat-label">HIT LEVEL <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
+                          </div>
+                        </OkiTooltip>
+                      )}
+                      {f.onHit && (
+                        <OkiTooltip content={STAT_TOOLTIPS['ON HIT']}>
+                          <div className="oki-stat-box">
+                            <span className="oki-stat-value" style={{color: getFrameAdvantageColor(f.onHit)}}>{f.onHit}</span>
+                            <span className="oki-stat-label">ON HIT <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
+                          </div>
+                        </OkiTooltip>
+                      )}
+                    </div>
+
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
+                      {m.properties && m.properties.length > 0 && (
+                        <div className="oki-stat-box">
+                          <div style={{ display: 'flex', gap: '4px', alignItems: 'center', height: '1.75rem' }}>
+                            {m.properties.map(prop => {
+                              const def = PROPERTY_DEFINITIONS[prop];
+                              if (!def) return null;
+                              return (
+                                <OkiTooltip key={prop} content={<><span className="oki-tooltip-title" style={{color: def.color}}>{prop}</span>{def.desc}</>}>
+                                  <div style={{ width: '28px', height: '28px', background: def.color, borderRadius: '4px', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#fff', fontSize: '11px', fontWeight: 'bold', boxShadow: 'inset 0 2px 4px rgba(255,255,255,0.3), inset 0 -2px 4px rgba(0,0,0,0.3)' }}>
+                                    {def.initials}
+                                  </div>
+                                </OkiTooltip>
+                              );
+                            })}
+                          </div>
+                          <span className="oki-stat-label" style={{marginTop: '2px'}}>PROPERTIES <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
+                        </div>
+                      )}
+                      {f.onCounter && (
+                        <OkiTooltip content={STAT_TOOLTIPS['ON COUNTER']}>
+                          <div className="oki-stat-box">
+                            <span className="oki-stat-value" style={{color: getFrameAdvantageColor(f.onCounter)}}>{f.onCounter}</span>
+                            <span className="oki-stat-label">ON COUNTER <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><circle cx="12" cy="12" r="10"/><path d="M12 16v-4"/><path d="M12 8h.01"/></svg></span>
+                          </div>
+                        </OkiTooltip>
+                      )}
+                    </div>
+                  </div>
+                );
+              };
 
               const renderMoveCard = (move: Move, idx: number) => {
                 const isSelected = selectedPlaylist && selectedPlaylist.some(m => m && move && m.id === move.id);
@@ -945,6 +1159,8 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                                 />
                               </div>
                             </div>
+                            
+                            {renderStatsGrid(child)}
                             
                             {childHasChildren && (
                               <div style={{ paddingLeft: '1rem' }}>
@@ -1110,6 +1326,8 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                             </div>
                           )}
                         </div>
+                        
+                        {renderStatsGrid(move)}
 
                         {/* Embed the children directly inside the parent card! */}
                         {hasChildren && renderNestedChildren(children)}
@@ -1137,16 +1355,6 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                     cursor: 'pointer',
                     userSelect: 'none'
                   }}>
-                    <svg 
-                      width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
-                      style={{ 
-                        transform: collapsedSections[tab] ? 'rotate(-90deg)' : 'rotate(0deg)',
-                        transition: 'transform 0.2s ease',
-                        color: 'var(--text-tertiary)'
-                      }}
-                    >
-                      <polyline points="6 9 12 15 18 9"></polyline>
-                    </svg>
                     <span style={{ 
                       background: 'var(--bg-badge)', 
                       padding: '6px 16px', 
@@ -1158,6 +1366,16 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                     }}>
                       {tab}
                     </span>
+                    <svg 
+                      width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"
+                      style={{ 
+                        transform: collapsedSections[tab] ? 'rotate(-90deg)' : 'rotate(0deg)',
+                        transition: 'transform 0.2s ease',
+                        color: 'var(--text-tertiary)'
+                      }}
+                    >
+                      <polyline points="6 9 12 15 18 9"></polyline>
+                    </svg>
                   </h2>
                   
                   {!collapsedSections[tab] && (

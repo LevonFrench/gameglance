@@ -1,22 +1,2188 @@
 {
+  "id": "kuma",
   "name": "Kuma",
-  "character": "Kuma",
-  "game": "Tekken 8",
   "movesList": [
     {
-      "name": "Bear Hug",
-      "input": "1+3",
-      "type": "throw"
+      "id": "move-0",
+      "name": "Heat Burst",
+      "type": "Heat Moves",
+      "input": "2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Burst\n* Cancel to r45 with b,b on frame 42\n* 2 chip damage on block\n* 12 chip damage on hit\n* Only deals recoverable damage\n* Cannot cause a K.O.\n* Power crush 7~16"
+        }
+      ]
     },
     {
-      "name": "Bear Bite",
-      "input": "2+4",
-      "type": "throw"
+      "id": "move-1",
+      "name": "Wind Bear Fist",
+      "type": "Heat Moves",
+      "input": "H.df+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Uses 180F of remaining heat time\n* H.f,n,d,df+2 to power up (23dmg)\n* High crush 6~12"
+        }
+      ]
     },
     {
+      "id": "move-2",
+      "name": "Fresh Wind Bear Fist",
+      "type": "Heat Moves",
+      "input": "H.df+2+3*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Reversal Break\n* Uses 180F of remaining heat time\n* 10 chip damage on block\n* H.f,n,d,df+2* to power up (30dmg; 12 chip damage on block)\n* High crush 6~22"
+        }
+      ]
+    },
+    {
+      "id": "move-3",
+      "name": "Salmon Fishing Cast",
+      "type": "Heat Moves",
+      "input": "H.2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~15, i45"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Smash\n* Balcony Break\n* 10 chip damage\n* Transition to attack throw on 1st hit\n* +20a (+10) 45dmg on 2nd hit if 1st hit misses"
+        }
+      ]
+    },
+    {
+      "id": "move-4",
+      "name": "Type 38 Eradication Weapon: Aramaki",
+      "type": "Stances",
+      "input": "R.df+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\n* Power crush 8~"
+        }
+      ]
+    },
+    {
+      "id": "move-5",
+      "name": "Jab",
+      "type": "Single Hits",
+      "input": "1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Recovers 2f faster on hit or block (t27 r17)"
+        }
+      ]
+    },
+    {
+      "id": "move-6",
+      "name": "1,1",
+      "type": "Strings",
+      "input": "1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit CH with 2F delay\n* Move can be delayed by 3F"
+        }
+      ]
+    },
+    {
+      "id": "move-7",
+      "name": "G-Clef Cannon",
+      "type": "Strings",
+      "input": "1,1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 2nd hit\n* Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-8",
+      "name": "Angry Lumberjack",
+      "type": "Strings",
+      "input": "1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i22~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Jail from 1st hit\n* Combo from 1st CH with 3F delay\n* 10 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-9",
+      "name": "You're Welcome",
+      "type": "Single Hits",
+      "input": "1+3+4",
+      "properties": []
+    },
+    {
+      "id": "move-10",
+      "name": "2",
+      "type": "Single Hits",
+      "input": "2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        }
+      ]
+    },
+    {
+      "id": "move-11",
+      "name": "2,1",
+      "type": "Strings",
+      "input": "2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 2F delay\n* +2c on crouching hit\n* Panda: Reduced vertical hitbox (does not hit as high)"
+        }
+      ]
+    },
+    {
+      "id": "move-12",
+      "name": "Bear Combo Middle",
+      "type": "Strings",
+      "input": "2,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i33~34"
+        }
+      ]
+    },
+    {
+      "id": "move-13",
+      "name": "Bear Combo Low",
+      "type": "Strings",
+      "input": "2,1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-14",
+      "name": "3",
+      "type": "Single Hits",
+      "input": "3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-15",
+      "name": "4",
+      "type": "Single Hits",
+      "input": "4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break on CH"
+        }
+      ]
+    },
+    {
+      "id": "move-16",
+      "name": "Demon Bear Breath",
+      "type": "Heat Moves",
+      "input": "1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Heat Engager\n\n* Forces crouch on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-17",
+      "name": "Hunting",
+      "type": "Single Hits",
+      "input": "3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Alternate input: FDFA.3+4\n* Can low parry in HBS with F\n* Transition to HBS\n* Transition to r10 FC with input ub_u_uf\n* Transition to r15 FC with DB\n* Remains in stance indefinitely\n* Can move in stance with F or B"
+        }
+      ]
+    },
+    {
+      "id": "move-18",
+      "name": "Hunting",
+      "type": "Single Hits",
+      "input": "3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Alternate input: FDFA.3+4\n* Transition to HBS\n* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-19",
+      "name": "f+2",
+      "type": "Single Hits",
+      "input": "f+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        }
+      ]
+    },
+    {
+      "id": "move-20",
+      "name": "Wild Lumberjack",
+      "type": "Strings",
+      "input": "f+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit with 9F delay\n* Move can be delayed by 13F"
+        }
+      ]
+    },
+    {
+      "id": "move-21",
+      "name": "f+3",
+      "type": "Single Hits",
+      "input": "f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-22",
+      "name": "f+4",
+      "type": "Single Hits",
+      "input": "f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break on CH"
+        }
+      ]
+    },
+    {
+      "id": "move-23",
+      "name": "f+1+2",
+      "type": "Single Hits",
+      "input": "f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        }
+      ]
+    },
+    {
+      "id": "move-24",
+      "name": "Bear Claw Cross",
+      "type": "Strings",
+      "input": "f+1+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18, i30~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 1st hit\n* Grounded hit on off-axis hit against large body size characters?"
+        }
+      ]
+    },
+    {
+      "id": "move-25",
+      "name": "Shape-Up Kick",
+      "type": "Single Hits",
+      "input": "f+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Unparryable (bug?)\n* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-26",
+      "name": "Shape-Up Hip",
+      "type": "Strings",
+      "input": "f+3+4,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~30, i50~i60"
+        },
+        {
+          "type": "properties",
+          "value": "* Shoulder\n** Body slam (unparryable)\n* 24 damage from 1st hit with grounded scaling\n* High crush 0~"
+        }
+      ]
+    },
+    {
+      "id": "move-27",
+      "name": "df+1",
+      "type": "Single Hits",
+      "input": "df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-28",
+      "name": "df+1,2",
+      "type": "Strings",
+      "input": "df+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-29",
+      "name": "Grizzly Rampage",
+      "type": "Strings",
+      "input": "df+1,2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd hit with 9F delay\n* Combo from 1st CH\n* Move can be delayed by 8F\n* Input can be delayed by 10F"
+        }
+      ]
+    },
+    {
+      "id": "move-30",
+      "name": "df+2",
+      "type": "Single Hits",
+      "input": "df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-31",
+      "name": "Kuma Musou",
+      "type": "Strings",
+      "input": "df+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 4F delay\n* Input can be delayed by 4F\n* Move cannot be delayed"
+        }
+      ]
+    },
+    {
+      "id": "move-32",
+      "name": "df+3",
+      "type": "Single Hits",
+      "input": "df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* +2c on crouching hit"
+        }
+      ]
+    },
+    {
+      "id": "move-33",
+      "name": "Honey Trap",
+      "type": "Strings",
+      "input": "df+3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break on airborne hit\n* Combo from 1st hit\n* 9 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-34",
+      "name": "df+4",
+      "type": "Single Hits",
+      "input": "df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        }
+      ]
+    },
+    {
+      "id": "move-35",
+      "name": "Crouch Jab",
+      "type": "Single Hits",
+      "input": "d+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to Standing with f\n* +6c on crouching hit\n* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-36",
+      "name": "Crouch Straight",
+      "type": "Single Hits",
+      "input": "d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* +7c on crouching hit\n* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-37",
+      "name": "Crouch Spin Kick",
+      "type": "Single Hits",
+      "input": "d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* -6c on crouching hit\n* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-38",
+      "name": "Crouch Shin Kick",
+      "type": "Single Hits",
+      "input": "d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* -4c on crouching hit\n* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-39",
+      "name": "Hip Smash",
+      "type": "Single Hits",
+      "input": "d+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Shoulder\n** Body slam (unparryable)\n* 27 damage on clean hit"
+        }
+      ]
+    },
+    {
+      "id": "move-40",
       "name": "Bear Sit",
-      "input": "2+3+4",
-      "type": "special"
+      "type": "Single Hits",
+      "input": "d+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to SIT\n* Transition to ROL with input f"
+        }
+      ]
+    },
+    {
+      "id": "move-41",
+      "name": "Bear Sit",
+      "type": "Single Hits",
+      "input": "d+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Alternative input: db+3+4\n* Transition to ROL with input SIT.F\n* Transition to California Roll with input SIT.B\n* Low crush 6~12\n* Floating state 13~15\n* High crush 16~67"
+        }
+      ]
+    },
+    {
+      "id": "move-42",
+      "name": "db+1",
+      "type": "Single Hits",
+      "input": "db+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-43",
+      "name": "Double Wild Slap",
+      "type": "Strings",
+      "input": "db+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Combo from 1st hit\n* Hold 2 to power up, up to 2 charge levels\n* Transition to HBS with input D or 3+4"
+        }
+      ]
+    },
+    {
+      "id": "move-44",
+      "name": "Double Wild Slap",
+      "type": "Strings",
+      "input": "db+1,2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i33~34"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* 8 chip damage on block\n* Heat skips to db+1,2** charge with i34~35 startup\n* Transition to HBS with D or 3+4"
+        }
+      ]
+    },
+    {
+      "id": "move-45",
+      "name": "Fresh Wild Slap",
+      "type": "Strings",
+      "input": "db+1,2**",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i47~48"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Reversal Break\n* 12 chip damage on block\n* Startup shortened during Heat: i34~35 startup (partially consumes Heat time)\n* Transition to HBS with D or 3+4"
+        }
+      ]
+    },
+    {
+      "id": "move-46",
+      "name": "Bear Lariat",
+      "type": "Single Hits",
+      "input": "db+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to HBS with D or 3+4 (-17/-3)\n* High crush 6~51"
+        }
+      ]
+    },
+    {
+      "id": "move-47",
+      "name": "Bear Pump in Pedal",
+      "type": "Single Hits",
+      "input": "db+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        }
+      ]
+    },
+    {
+      "id": "move-48",
+      "name": "Spinning Kuma",
+      "type": "Single Hits",
+      "input": "db+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Panda: Very slight decrease in vertical hitbox height (does not hit as high)\n* High crush 6~51"
+        }
+      ]
+    },
+    {
+      "id": "move-49",
+      "name": "Spinning Kuma Uppercut",
+      "type": "Heat Moves",
+      "input": "H.db+4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22, i28~31"
+        },
+        {
+          "type": "properties",
+          "value": "* On hit only\n* Combos from 1st hit\n* Partially consumes remaining Heat time\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-50",
+      "name": "db+1+2",
+      "type": "Single Hits",
+      "input": "db+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-51",
+      "name": "db+1+2,1+2",
+      "type": "Strings",
+      "input": "db+1+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-52",
+      "name": "Drum Roll",
+      "type": "Strings",
+      "input": "db+1+2,1+2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i20~21"
+        }
+      ]
+    },
+    {
+      "id": "move-53",
+      "name": "Salmon Hunter",
+      "type": "Single Hits",
+      "input": "db+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i32~34"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break on airborne hit\n* Hold 2+3 to power up, up to 2 charge levels and deal more chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-54",
+      "name": "Salmon Hunter",
+      "type": "Single Hits",
+      "input": "db+2+3*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i45~47"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break on airborne hit\n* chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-55",
+      "name": "Fresh Salmon Hunter",
+      "type": "Single Hits",
+      "input": "db+2+3**",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i60~62"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break on airborne hit\n* chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-56",
+      "name": "Bear Slash",
+      "type": "Single Hits",
+      "input": "b+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Transition to -13 HBS with input D or 3+4\n* 9 chip damage on block\n* 12 chip damage on block after absorbing an attack in power crush state\n* -3 on block after absorbing an attack in power crush state\n* Power crush 7~21"
+        }
+      ]
+    },
+    {
+      "id": "move-57",
+      "name": "b+2",
+      "type": "Single Hits",
+      "input": "b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        }
+      ]
+    },
+    {
+      "id": "move-58",
+      "name": "b+2,1",
+      "type": "Strings",
+      "input": "b+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to HBS with input D or 3+4 (-4/+7)\n* Transition to ROL with input F (-14/-3)\n** Adds i28~31 SM projectile 5dmg attack during Heat (Consumes 120F of remaining Heat time)\n*** +14~+17 or -6~-3 HBS or +1~+4 FC on block \n*** +20~+23 or +0~+3 HBS or +7~+10 FC on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-59",
+      "name": "Howling Bear",
+      "type": "Strings",
+      "input": "b+2,1,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, ,i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH with 4F delay\n* Move can be delayed by 10F\n* Panda: Shorter vertical hitbox (does not hit as high)"
+        }
+      ]
+    },
+    {
+      "id": "move-60",
+      "name": "b+2,2",
+      "type": "Strings",
+      "input": "b+2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH with 5F delay\n* Move can be delayed by 13F"
+        }
+      ]
+    },
+    {
+      "id": "move-61",
+      "name": "Salmon Massacre",
+      "type": "Strings",
+      "input": "b+2,2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, ,i35~39"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 2nd CH with 1F delay\n* Move can be delayed by 15F\n* Low crush 38~58\n* Floating state 59~61"
+        }
+      ]
+    },
+    {
+      "id": "move-62",
+      "name": "Bear X",
+      "type": "Heat Moves",
+      "input": "b+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19 i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Heat Engager\n\n* Homing\n* 12 chip damage\n* Transition to HBS r36 with input D or 3+4 (does not shift when using Heat Dash)"
+        }
+      ]
+    },
+    {
+      "id": "move-63",
+      "name": "Deadly Claw",
+      "type": "Single Hits",
+      "input": "b+1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i60~62"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to HBS with input D or 3+4"
+        }
+      ]
+    },
+    {
+      "id": "move-64",
+      "name": "Rolling Bear",
+      "type": "Strings",
+      "input": "b+1+4,f,f",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i55~i130"
+        },
+        {
+          "type": "properties",
+          "value": "* Projectile\n* Hold F to extend attack\n* Recovers in FUFT on hit or block\n* If attack is extended to where you roll past the opponent, recovers in FUFA\n* Floating state 55~147?"
+        }
+      ]
+    },
+    {
+      "id": "move-65",
+      "name": "High Jinks",
+      "type": "Single Hits",
+      "input": "b+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Alternate input: ws3+4\n* Tornado"
+        }
+      ]
+    },
+    {
+      "id": "move-66",
+      "name": "Bear Skip",
+      "type": "Single Hits",
+      "input": "ub+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i31~32"
+        },
+        {
+          "type": "properties",
+          "value": "* Cancel to r22 HBS with D or 3+4 at frame 21\n* Low crush 6~27\n* Floating state 28~30"
+        }
+      ]
+    },
+    {
+      "id": "move-67",
+      "name": "Big Bear Attack",
+      "type": "Single Hits",
+      "input": "u+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to HBS with D or 3+4 (-7/+7/+9a)\n* Low crush 17~33\n* Floating state 34~36"
+        }
+      ]
+    },
+    {
+      "id": "move-68",
+      "name": "Pancake Press",
+      "type": "Single Hits",
+      "input": "u+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i34~39"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to SIT (cannot cancel)\n* Low crush 8~36\n* Floating state 37~39\n* High crush 51~"
+        }
+      ]
+    },
+    {
+      "id": "move-69",
+      "name": "Hornet Sweep",
+      "type": "Single Hits",
+      "input": "uf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Alternate input: ub+1 or u+1\n* 8 chip damage on block\n* Low crush 9~30\n* Low crush 31~33"
+        }
+      ]
+    },
+    {
+      "id": "move-70",
+      "name": "Ultra Kuma",
+      "type": "Single Hits",
+      "input": "uf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Homing\n* Strong Aerial Tailspin\n* Alternate input: ub+2 or u+2"
+        }
+      ]
+    },
+    {
+      "id": "move-71",
+      "name": "uf+3",
+      "type": "Single Hits",
+      "input": "uf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Panda: Very slightly increased vertical hitbox height (hits higher)\n* Low crush 9~32\n* Floating state 33~35"
+        }
+      ]
+    },
+    {
+      "id": "move-72",
+      "name": "uf+3,4",
+      "type": "Strings",
+      "input": "uf+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i10~12"
+        },
+        {
+          "type": "properties",
+          "value": "* Less frame advantage occurs after Combo from last hit\n* Panda: Very slightly increased vertical hitbox height on frames 11~12 (hits lower)\n* Low crush 1~17\n* Floating state 18~20"
+        }
+      ]
+    },
+    {
+      "id": "move-73",
+      "name": "Bear Double Hop Kick Combo",
+      "type": "Strings",
+      "input": "uf+3,4,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, ,i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Transition to HBS with input D or 3+4\n* Less frame advantage occurs after Combo from last hit"
+        }
+      ]
+    },
+    {
+      "id": "move-74",
+      "name": "uf+4",
+      "type": "Single Hits",
+      "input": "uf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i29~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Low crush 9~30\n* Floating state 31~33"
+        }
+      ]
+    },
+    {
+      "id": "move-75",
+      "name": "Kuma Hell Axle",
+      "type": "Strings",
+      "input": "uf+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i29~30, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Only connects on hit or block\n* Recovers in FUFT\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-76",
+      "name": "Ki Charge",
+      "type": "Single Hits",
+      "input": "1+2+3+4",
+      "properties": []
+    },
+    {
+      "id": "move-77",
+      "name": "Anger Hook",
+      "type": "Strings",
+      "input": "b,f+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 10 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-78",
+      "name": "Demon Uppercut",
+      "type": "Strings",
+      "input": "f,F+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~21"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 8~18"
+        }
+      ]
+    },
+    {
+      "id": "move-79",
+      "name": "Falling Bear",
+      "type": "Strings",
+      "input": "f,F+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i37~38"
+        },
+        {
+          "type": "properties",
+          "value": "* 9 chip damage on block\n* Transition to HBS\n* Transition to ROL with input F (+5/+49a)\n* Panda: Reduced vertical hitbox (does not hit as high)\n* Low crush 9~32\n* Floating state 33~35"
+        }
+      ]
+    },
+    {
+      "id": "move-80",
+      "name": "qcf+2",
+      "type": "Single Hits",
+      "input": "qcf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        }
+      ]
+    },
+    {
+      "id": "move-81",
+      "name": "Grizzly Claws",
+      "type": "Heat Moves",
+      "input": "qcf+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i27"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +36a (+26)\n\n* Balcony Break\n* Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-82",
+      "name": "Grizzly Claw Smash",
+      "type": "Strings",
+      "input": "qcf+2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i33~34"
+        },
+        {
+          "type": "properties",
+          "value": "* Chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-83",
+      "name": "Leaping Side Kick",
+      "type": "Strings",
+      "input": "f,f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Chip damage on block\n* Low crush 3~25\n* Floating state 26~28"
+        }
+      ]
+    },
+    {
+      "id": "move-84",
+      "name": "Rabid Bear",
+      "type": "Heat Moves",
+      "input": "f,f,F+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Heat Engager\n\n* 9 chip damage on block\n* Transition to HBS with D or 3+4 (+3/+9c; does not shift when using Heat Dash)\n* Forces tech backroll on hit\n* Panda: shorter attack hitbox range, reduced vertical height (does not hit as deep or high)\n* Low crush 21~35\n* Floating state 36~38"
+        }
+      ]
+    },
+    {
+      "id": "move-85",
+      "name": "ws1",
+      "type": "While Standing",
+      "input": "ws1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~15"
+        }
+      ]
+    },
+    {
+      "id": "move-86",
+      "name": "Killing Claws",
+      "type": "While Standing",
+      "input": "ws1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~15, i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Hold 2 to power up, up to 2 charge levels\n* Transition to HBS with input D or 3+4\n* Tornado\n* Wall Crush  +20g on hit\n\n\n* Balcony Break on CH"
+        }
+      ]
+    },
+    {
+      "id": "move-87",
+      "name": "Killing Claws",
+      "type": "While Standing",
+      "input": "ws1,2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~15, i33"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH\n* Heat skips to Level 2 charge\n* Transition to HBS with input D or 3+4 (-12/+18cg/+34a (-2))\n* Balcony Break\n* Tornado"
+        }
+      ]
+    },
+    {
+      "id": "move-88",
+      "name": "Fresh Killing Claws",
+      "type": "While Standing",
+      "input": "ws1,2**",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~15, i44"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to HBS with input D or 3+4\n* Balcony Break\n* Tornado\n* Reversal Break\n* chip damage on block\n* Heat reduces charge length (consumes partial Heat time)"
+        }
+      ]
+    },
+    {
+      "id": "move-89",
+      "name": "Mad Angler",
+      "type": "While Standing",
+      "input": "ws2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-90",
+      "name": "Spinning Bear Kick",
+      "type": "While Standing",
+      "input": "ws3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Homing"
+        }
+      ]
+    },
+    {
+      "id": "move-91",
+      "name": "Paw Smash",
+      "type": "While Standing",
+      "input": "ws4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12"
+        }
+      ]
+    },
+    {
+      "id": "move-92",
+      "name": "Salmon Swipe",
+      "type": "Stances",
+      "input": "SS.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* 9 chip damage\n* Transition to +12 +3 HBS with D"
+        }
+      ]
+    },
+    {
+      "id": "move-93",
+      "name": "Watch Your Feet",
+      "type": "While Standing",
+      "input": "FC.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~21"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 0~46"
+        }
+      ]
+    },
+    {
+      "id": "move-94",
+      "name": "Bear Roll",
+      "type": "While Standing",
+      "input": "FC.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~i31"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to ROL\n* Becomes SM projectile 5dmg attack during Heat (Consumes 120F of remaining Heat time)\n** +14~+19 or -6~-1 HBS or +1~+6 FC on block\n** +20~+25 or +0~+5 HBS or +7~+12 FC on hit\n* Floating state 1~31"
+        }
+      ]
+    },
+    {
+      "id": "move-95",
+      "name": "1st hit",
+      "type": "While Standing",
+      "input": "FC.df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "id": "move-96",
+      "name": "2nd hit",
+      "type": "While Standing",
+      "input": "FC.df+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Jail from 1st block"
+        }
+      ]
+    },
+    {
+      "id": "move-97",
+      "name": "3rd hit",
+      "type": "While Standing",
+      "input": "FC.df+2,1,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, ,i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Interrupt with i6 from 2nd block"
+        }
+      ]
+    },
+    {
+      "id": "move-98",
+      "name": "4th hit",
+      "type": "While Standing",
+      "input": "FC.df+2,1,1+2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, ,i32~33"
+        },
+        {
+          "type": "properties",
+          "value": "* Interrupt with i15 from 3rd block"
+        }
+      ]
+    },
+    {
+      "id": "move-99",
+      "name": "5th hit",
+      "type": "While Standing",
+      "input": "FC.df+2,1,1+2,3,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, ,i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Interrupt with i10 from 4th block\n* Can SSR hit from 4th block"
+        }
+      ]
+    },
+    {
+      "id": "move-100",
+      "name": "6th hit",
+      "type": "While Standing",
+      "input": "FC.df+2,1,1+2,3,1+2,3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, ,i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Interrupt with i8 from 5th block\n* Can SSL/SSR and SWL/SWR from 5th block\n* Low crush 15~27\n* Floating state ?\n* High crush 28~"
+        }
+      ]
+    },
+    {
+      "id": "move-101",
+      "name": "7th hit",
+      "type": "While Standing",
+      "input": "FC.df+2,1,1+2,3,1+2,3+4,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, ,i55"
+        },
+        {
+          "type": "properties",
+          "value": "* Interrupt float with i40? from 6th block\n* Can SSL/SSR and SWL/SWR from 6th block\n* Floating state 1~122"
+        }
+      ]
+    },
+    {
+      "id": "move-102",
+      "name": "8th hit",
+      "type": "While Standing",
+      "input": "FC.df+2,1,1+2,3,1+2,3+4,1+2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, ,i20~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Interrupt with i21? from 7th block\n* Can SSL/SSR and SWL/SWR from 7th block"
+        }
+      ]
+    },
+    {
+      "id": "move-103",
+      "name": "9th hit",
+      "type": "While Standing",
+      "input": "FC.df+2,1,1+2,3,1+2,3+4,1+2,2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, ,i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 8th hit\n* Interrupt with i8 from 8th block\n* Can SSL/SSR and SWL/SWR from 8th block"
+        }
+      ]
+    },
+    {
+      "id": "move-104",
+      "name": "10 Hit Combo",
+      "type": "10-Hit Combos",
+      "input": "FC.df+2,1,1+2,3,1+2,3+4,1+2,2,3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, ,i47"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Aerial combo (+14a (+7)) from 8th or 9th hit\n* Forces tech backroll on hit\n* Interrupt with i33? from 9th block\n* Can SSL/SSR and SWL/SWR from 9th block"
+        }
+      ]
+    },
+    {
+      "id": "move-105",
+      "name": "Bear Butterfly",
+      "type": "Stances",
+      "input": "FDFA.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to HBS\n* Move is airborne, requires strong parry\n* Reverse direction when performed in FDFT"
+        }
+      ]
+    },
+    {
+      "id": "move-106",
+      "name": "Bear Backstroke",
+      "type": "Stances",
+      "input": "FUFA.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to HBS (Cannot cancel)\n* Reverse direction when performed in FUFT"
+        }
+      ]
+    },
+    {
+      "id": "move-107",
+      "name": "Get Up Punch",
+      "type": "Stances",
+      "input": "FUFT.d+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i29~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to SIT (Cannot cancel)\n* Reverse direction when performed in FUFA"
+        }
+      ]
+    },
+    {
+      "id": "move-108",
+      "name": "HBS.1",
+      "type": "Stances",
+      "input": "HBS.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-109",
+      "name": "Honeycomb Spike",
+      "type": "Stances",
+      "input": "HBS.1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 20?F (charge) delay\n* Hold 2 to power up, up to 2 charge levels\n* Move can be delayed by 10F by holding 2"
+        }
+      ]
+    },
+    {
+      "id": "move-110",
+      "name": "Honeycomb Spike",
+      "type": "Stances",
+      "input": "HBS.1,2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i33~34"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH with 30?F (charge) delay\n* Move can be delayed by 9?F by holding 2\n* Becomes HBS.1,2** during heat\n* Consumes 240F? of remaining Heat time\n* 9 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-111",
+      "name": "Fresh Honeycomb Spike",
+      "type": "Stances",
+      "input": "HBS.1,2**",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i44~45"
+        },
+        {
+          "type": "properties",
+          "value": "* Reversal Break\n* Replaces HBS.1,2*: i33~34 startup during Heat (t83? r36?)\n* 12 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-112",
+      "name": "Bear Claw",
+      "type": "Stances",
+      "input": "HBS.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to HBS\n* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-113",
+      "name": "Hunting to Roll Over",
+      "type": "Stances",
+      "input": "HBS.3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to FUFA\n* Alternative input: HBS.4 (HBS.3 is into background, HBS.4 is into foreground)\n* Floating state 1~36"
+        }
+      ]
+    },
+    {
+      "id": "move-114",
+      "name": "Bear Fling",
+      "type": "Stances",
+      "input": "HBS.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* 27dmg upon opponent landing\n* High crush 1~18"
+        }
+      ]
+    },
+    {
+      "id": "move-115",
+      "name": "Bear Tackle",
+      "type": "Heat Moves",
+      "input": "HBS.3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +43d (+35)\n\n* Balcony Break\n* Panda: Decreased attack range and height hitbox (does not hit as deep)\n* Power crush 7~19"
+        }
+      ]
+    },
+    {
+      "id": "move-116",
+      "name": "Backward Roll",
+      "type": "Stances",
+      "input": "HBS.b,b",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Alternate input: SIT.B\n* Transition to r12 HBS with input D or 3+4 at frame 35"
+        }
+      ]
+    },
+    {
+      "id": "move-117",
+      "name": "HBS.b+1+2",
+      "type": "Stances",
+      "input": "HBS.b+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~29"
+        },
+        {
+          "type": "properties",
+          "value": "* Head\n* Transition to r40 HBS with input D or 3+4\n* Panda: Reduced attack range and vertical hitbox (does not hit as high)\n* High crush 1~67"
+        }
+      ]
+    },
+    {
+      "id": "move-118",
+      "name": "Break'n",
+      "type": "Stances",
+      "input": "HBS.b+1+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~29, i22~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Head\n* Combo from 1st CH\n* Panda: Reduced attack range and vertical hitbox (does not hit as high)\n* High crush 1~59"
+        }
+      ]
+    },
+    {
+      "id": "move-119",
+      "name": "Hornet Buster",
+      "type": "Stances",
+      "input": "HBS.df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break\n* Strong Aerial Tailspin\n* 9 chip damage"
+        }
+      ]
+    },
+    {
+      "id": "move-120",
+      "name": "Big Tree",
+      "type": "Stances",
+      "input": "HBS.df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado"
+        }
+      ]
+    },
+    {
+      "id": "move-121",
+      "name": "Frolicking Bear",
+      "type": "Stances",
+      "input": "HBS.d+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Transition to HBS\n* Tornado on CH only\n* t44? r24? on hit\n* Panda: Increased vertical attack hitbox height. Decreased attack range and height hitbox on frames 18-20 (does not hit as deep or high)"
+        }
+      ]
+    },
+    {
+      "id": "move-122",
+      "name": "Hunting to Play Dead",
+      "type": "Stances",
+      "input": "HBS.d+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to FDFA"
+        }
+      ]
+    },
+    {
+      "id": "move-123",
+      "name": "Bear Roll",
+      "type": "Stances",
+      "input": "HBS.f,f",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~i31"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to ROL\n** Can transition to r20? HBS with D or 3+4\n** Can transition to r13? FC\n* Becomes SM projectile 5dmg attack during Heat (Consumes 120F of remaining Heat time)\n** +14~+19 or -6~-1 HBS or +1~+6 FC on block \n** +20~+25 or +0~+5 HBS or +7~+12 FC on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-124",
+      "name": "Hunting Hip Smash",
+      "type": "Stances",
+      "input": "HBS.f+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Transition to SIT during attack active frames\n* Unparryable?\n* Very short hitbox reach\n* Low crush 9~21\n* Floating state 22~"
+        }
+      ]
+    },
+    {
+      "id": "move-125",
+      "name": "Dance With Me",
+      "type": "Stances",
+      "input": "OTG.d+1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i55~110,i25~38"
+        },
+        {
+          "type": "properties",
+          "value": "* Cancel to BT with input OTG.d+1+4,3+4\n* More frame advantage when hitting standing opponent"
+        }
+      ]
+    },
+    {
+      "id": "move-126",
+      "name": "Bear Shove",
+      "type": "Stances",
+      "input": "ROL.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Tornado\n* Power up during Heat: +13 on block guard break (Uses 240F of remaining Heat time)"
+        }
+      ]
+    },
+    {
+      "id": "move-127",
+      "name": "Bear Backhand",
+      "type": "Stances",
+      "input": "ROL.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~19"
+        }
+      ]
+    },
+    {
+      "id": "move-128",
+      "name": "Bear Slide",
+      "type": "Stances",
+      "input": "ROL.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~26"
+        },
+        {
+          "type": "properties",
+          "value": "Recovers in FUFT"
+        }
+      ]
+    },
+    {
+      "id": "move-129",
+      "name": "Bear Rolling Kick",
+      "type": "Stances",
+      "input": "ROL.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~30"
+        },
+        {
+          "type": "properties",
+          "value": "Recovers in FUFT"
+        }
+      ]
+    },
+    {
+      "id": "move-130",
+      "name": "Giant Roll",
+      "type": "Stances",
+      "input": "ROL.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10~40"
+        },
+        {
+          "type": "properties",
+          "value": "* Recovers in FUFT on hit\n* Recovers in off axis FUFT on block"
+        }
+      ]
+    },
+    {
+      "id": "move-131",
+      "name": "SIT.1",
+      "type": "Stances",
+      "input": "SIT.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22"
+        }
+      ]
+    },
+    {
+      "id": "move-132",
+      "name": "Double Trout Sweep",
+      "type": "Stances",
+      "input": "SIT.1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-133",
+      "name": "Trout Smash",
+      "type": "Stances",
+      "input": "SIT.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado"
+        }
+      ]
+    },
+    {
+      "id": "move-134",
+      "name": "Rebound",
+      "type": "Stances",
+      "input": "SIT.3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to ROL with input SIT.F"
+        }
+      ]
+    },
+    {
+      "id": "move-135",
+      "name": "Bear Roll",
+      "type": "Stances",
+      "input": "SIT.f",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "N/A / i26~i31 Heat"
+        },
+        {
+          "type": "properties",
+          "value": "* Alternative input: FC.3+4 or FDFA.f\n* Transition to ROL\n* Transition to HBS with input ROL.D or ROL.3+4\n* Transition to FC with no input\n* Becomes special mid attack during Heat (Uses 120F of remaining Heat time)"
+        }
+      ]
+    },
+    {
+      "id": "move-136",
+      "name": "Bear's Bite",
+      "type": "Throws",
+      "input": "1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: 1 or 2\n* Opponent status on hit: FUFT"
+        }
+      ]
+    },
+    {
+      "id": "move-137",
+      "name": "Bear Hug",
+      "type": "Throws",
+      "input": "2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: 1 or 2\n* Opponent status on hit: FUFT\n* Side switch on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-138",
+      "name": "Swing Swung",
+      "type": "Single Hits",
+      "input": "Back throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: none\n* Opponent status on hit: FUFA"
+        }
+      ]
+    },
+    {
+      "id": "move-139",
+      "name": "Bear Toss",
+      "type": "Stances",
+      "input": "HBS.f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Removes Recoverable Health\n* Spike\n* Throw break: none\n* Opponent status on hit: FUFA\n* Panda: Reduced attack range and vertical hitbox (does not hit as high)"
+        }
+      ]
+    },
+    {
+      "id": "move-140",
+      "name": "Bear Slam",
+      "type": "Single Hits",
+      "input": "Left throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: 1\n* Spike\n* Opponent status on hit: FUFT"
+        }
+      ]
+    },
+    {
+      "id": "move-141",
+      "name": "Choke Slam",
+      "type": "Single Hits",
+      "input": "Right throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: 2\n* Opponent status on hit: FUFT off axis"
+        }
+      ]
+    },
+    {
+      "id": "move-142",
+      "name": "Rock'n Roll Circus",
+      "type": "Strings",
+      "input": "hcb,f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: 1+2\n* 60 dmg if opponent hits the wall\n* Opponent status on hit: FUFA\n* Side switch on throw break and hit"
+        }
+      ]
+    },
+    {
+      "id": "move-143",
+      "name": "Headbutt",
+      "type": "Single Hits",
+      "input": "uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: 1+2\n* Balcony Break\n* Opponent status on hit: FUFT"
+        }
+      ]
     }
   ]
 }

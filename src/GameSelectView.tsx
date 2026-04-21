@@ -5,6 +5,7 @@ import { SUPPORTED_GAMES } from './games';
 import { AmbientMesh } from './AmbientMesh';
 import { useTheme } from './useTheme';
 import { GameInfoCard } from './GameInfoCard';
+import type { ControllerType } from './glyphMap';
 
 interface Props {
   onSelectGame: (game: GameDefinition) => void;
@@ -12,6 +13,7 @@ interface Props {
   selectedCount?: number;
   onLaunchGameGlance?: () => void;
   onClearGameGlance?: () => void;
+  controller?: ControllerType;
 }
 
 const GAME_THEMES: Record<string, { gradient: string; icon: string; tagline: string; glowColor: string }> = {
@@ -359,7 +361,8 @@ const PlatformIcons = ({ platformString }: { platformString: string }) => {
 
 export const GameSelectView: React.FC<Props> = ({ 
   onSelectGame, 
-  disableInitialAnimation = false
+  disableInitialAnimation = false,
+  controller
 }) => {
   useArrowNavigation('[id^="game-card-"]');
 
@@ -537,29 +540,32 @@ export const GameSelectView: React.FC<Props> = ({
         borderBottom: (showCards || favorites.length > 0) ? '1px solid var(--border-subtle)' : 'none',
         transition: 'all 0.3s ease',
       }}>
-        <div style={{
-          fontSize: '0.8rem',
-          fontWeight: 600,
-          letterSpacing: '0.25em',
+        <div style={{ 
+          fontFamily: "'Inter', sans-serif",
+          fontWeight: 800,
+          letterSpacing: '0.3em',
+          fontSize: '1.25rem',
           textTransform: 'uppercase',
           color: 'var(--accent-indigo)',
-          marginBottom: '0.75rem',
+          marginBottom: '1rem',
         }}>
           GameGlance
         </div>
         <h1 
-          className={`glitch ${isGlitching ? "glitching " : ""}${!showCards ? "select-game-pulse" : ""}`}
+          className={`glitch ${isGlitching ? "glitching " : ""}`}
           data-text="SELECT GAME"
           onClick={() => { setShowCards(true); setExpandedGameId(null); }}
           style={{
-          fontSize: 'max(2rem, 4vw)',
+          fontSize: 'max(3rem, 6vw)',
           fontWeight: 900,
-          letterSpacing: '-0.04em',
+          letterSpacing: '-0.02em',
+          lineHeight: 1.1,
           margin: 0,
           textTransform: 'uppercase',
-          color: isDark ? '#f0f0f8' : '#1a1a2e',
-          lineHeight: 1.1,
-          marginBottom: '1.5rem',
+          color: 'var(--text-primary)',
+          position: 'relative',
+          display: 'inline-block',
+          marginBottom: '2rem',
           cursor: 'pointer',
         }}>
           SELECT GAME
@@ -736,7 +742,7 @@ export const GameSelectView: React.FC<Props> = ({
                 gap: '1rem',
                 zIndex: expandedGameId === game.id ? 10 : 1,
                 position: 'relative',
-                animation: `fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) ${100 + index * 80}ms both`,
+                animation: `cardTurnIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) ${100 + index * 50}ms both`,
               }}
             >
               <div
@@ -1117,7 +1123,7 @@ export const GameSelectView: React.FC<Props> = ({
               {/* Expanded Area */}
               {expandedGameId === game.id && (
                 <div style={{ animation: 'fadeInUp 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)' }}>
-                  <GameInfoCard game={game} />
+                  <GameInfoCard game={game} controller={controller} />
                 </div>
               )}
             </div>

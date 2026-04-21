@@ -1,0 +1,51 @@
+{
+  "game": "Dragon Ball FighterZ",
+  "character": "Goku (SS4 DAIMA)",
+  "theme_colors": {
+    "special": "#eab308",
+    "super_fatality": "#f43f5e",
+    "normal": "#3b82f6"
+  },
+  "movesList": [
+    {
+      "id": "wild_dash",
+      "name": "Wild Dash",
+      "type": "special",
+      "input": "236X",
+      "notes": "A versatile engagement tool that acts as a stance for four distinct follow-ups.",
+      "properties": ["Stance"]
+    },
+    {
+      "id": "wild_dash_double_combination",
+      "name": "↳ Double Combination",
+      "type": "special",
+      "input": "↳ L",
+      "parentMoveId": "wild_dash",
+      "notes": "A striking move designed for pressure that is difficult to counter even when blocked."
+    },
+    {
+      "id": "wild_dash_raging_strike",
+      "name": "↳ Raging Strike",
+      "type": "special",
+      "input": "↳ M",
+      "parentMoveId": "wild_dash",
+      "notes": "Kicks the opponent straight upward. If it lands, allows for a follow-up with a Super Dash."
+    },
+    {
+      "id": "wild_dash_power_swing",
+      "name": "↳ Power Swing",
+      "type": "special",
+      "input": "↳ H",
+      "parentMoveId": "wild_dash",
+      "notes": "A command throw that cannot be guarded against. Whiffs against crouching opponents."
+    },
+    {
+      "id": "wild_dash_quick_move",
+      "name": "↳ Quick Move",
+      "type": "special",
+      "input": "↳ S",
+      "parentMoveId": "wild_dash",
+      "notes": "An invincible advancing move used to dodge attacks."
+    }
+  ]
+}

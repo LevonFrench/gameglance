@@ -1,92 +1,2128 @@
 {
-  "name": "Leo Kliesen",
-  "character": "Leo Kliesen",
+  "id": "leo-kliesen",
+  "name": "leo",
   "movesList": [
     {
-      "name": "Rage Art: Baji Strike",
-      "type": "special",
-      "input": "312"
-    },
-    {
+      "id": "move-0",
       "name": "Heat Burst",
-      "type": "special",
-      "input": "23"
+      "type": "Heat Moves",
+      "input": "2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Burst\n* Cancel to r45 with b,b on frame 42\n* 2 chip damage on block\n* 12 chip damage on hit\n* Only deals recoverable damage\n* Cannot cause a K.O.\n* Power crush 7~16"
+        }
+      ]
     },
     {
-      "name": "KNK (Jin Ji Du Li)",
-      "type": "special",
-      "input": "64"
+      "id": "move-1",
+      "name": "Ultimate Feng Huo Lun Kick",
+      "type": "Heat Moves",
+      "input": "H.2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Smash\n* Balcony Break\n* Transition to attack throw on 1st hit\n* +8a(-1) on hit on first whiff\n* Enter CD +16g with df on block\n* 7 chip damage on block"
+        }
+      ]
     },
     {
-      "name": "BOK (Fo Bu)",
-      "type": "special",
-      "input": "212"
+      "id": "move-2",
+      "name": "Transcendent Blow",
+      "type": "Stances",
+      "input": "R.df+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\n* Power crush 8~"
+        }
+      ]
     },
     {
-      "name": "Crouch Dash",
-      "type": "special",
-      "input": "2,3,6"
+      "id": "move-3",
+      "name": "Jab",
+      "type": "Single Hits",
+      "input": "1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        }
+      ]
     },
     {
-      "name": "Rising Knee",
-      "type": "special",
-      "input": "34"
+      "id": "move-4",
+      "name": "He Zi Shou",
+      "type": "Strings",
+      "input": "1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st attack\n* Enter KNK -9 +2 with b"
+        }
+      ]
     },
     {
-      "name": "Baji Punch",
-      "type": "special",
-      "input": "12"
+      "id": "move-5",
+      "name": "1,2,1",
+      "type": "Strings",
+      "input": "1,2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 2nd CH"
+        }
+      ]
     },
     {
-      "name": "Iron Mountain",
-      "type": "special",
-      "input": "212"
+      "id": "move-6",
+      "name": "Liang Yi Zhou",
+      "type": "Strings",
+      "input": "1,2,1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i18"
+        },
+        {
+          "type": "properties",
+          "value": "*\nBalcony Break\n* Elbow\n* Combo from 3rd Hit"
+        }
+      ]
     },
     {
-      "name": "Shangri-La",
-      "type": "special",
-      "input": "FC12"
+      "id": "move-7",
+      "name": "Wai Bai Tui",
+      "type": "Strings",
+      "input": "1,2,1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i21~23"
+        },
+        {
+          "type": "properties",
+          "value": "*\nBalcony Break\n* Combo from 3rd Hit"
+        }
+      ]
     },
     {
-      "name": "Lightning Glare",
-      "type": "special",
-      "input": "12(Hold)"
+      "id": "move-8",
+      "name": "Ye Chui",
+      "type": "Strings",
+      "input": "1,2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i24"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 2nd CH"
+        }
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "id": "move-9",
+      "name": "Lian Tan Jin Ji Du Li",
+      "type": "Strings",
+      "input": "1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Jail from 1st attack"
+        }
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "id": "move-10",
+      "name": "Right Jab",
+      "type": "Single Hits",
+      "input": "2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        }
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "id": "move-11",
+      "name": "Xiang Long Shi Chong Tian Zhang",
+      "type": "Strings",
+      "input": "2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st block\n* Combo from 1st hit"
+        }
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "id": "move-12",
+      "name": "Xiang Long Shi Ling Zhou",
+      "type": "Strings",
+      "input": "2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Combo from 1st Hit"
+        }
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "move-13",
+      "name": "3",
+      "type": "Single Hits",
+      "input": "3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        }
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "id": "move-14",
+      "name": "3,2",
+      "type": "Strings",
+      "input": "3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Enter BOK -6 +5 with d"
+        }
+      ]
+    },
+    {
+      "id": "move-15",
+      "name": "Wu Dang Xuan Feng Jiao",
+      "type": "Strings",
+      "input": "3,2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, ,i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "*\nTornado\n*\nBalcony Break\n* Combo from 2nd CH\n* Cancel to -15 -4 with B"
+        }
+      ]
+    },
+    {
+      "id": "move-16",
+      "name": "Wu Dang Jin Ji Du Li",
+      "type": "Strings",
+      "input": "3,2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, ,i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-17",
+      "name": "4",
+      "type": "Single Hits",
+      "input": "4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        }
+      ]
+    },
+    {
+      "id": "move-18",
+      "name": "Dual Thunder Fists",
+      "type": "Single Hits",
+      "input": "1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Chip damage on block\n* Power crush 7~"
+        }
+      ]
+    },
+    {
+      "id": "move-19",
+      "name": "f+2",
+      "type": "Single Hits",
+      "input": "f+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~16"
+        }
+      ]
+    },
+    {
+      "id": "move-20",
+      "name": "Heng Da Er Lang Dan Shan",
+      "type": "Strings",
+      "input": "f+2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~16, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 6F delay\n* Move can be delayed by 10F\n* Input can be delayed by 12F"
+        }
+      ]
+    },
+    {
+      "id": "move-21",
+      "name": "Heng Da Bai Tui",
+      "type": "Strings",
+      "input": "f+2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~16, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 7F delay\n* Jail from 1st block with no delay\n* Enter r20 CD -1 +7 with df\n* Move can be delayed by 10F\n* Input can be delayed by 12F"
+        }
+      ]
+    },
+    {
+      "id": "move-22",
+      "name": "Jue Zhao Heng Da Bai Tui",
+      "type": "Stances",
+      "input": "LTG.f+2,4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~16, ,i32~35"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Spike\n* Combo from 1st hit\n* Transition to BOK with D (+6c~+10c/+19d~+22d \n* 8 chip damage on block\n* Consumes 240F of heat timer during heat\n* Low crush 16~"
+        }
+      ]
+    },
+    {
+      "id": "move-23",
+      "name": "Bai Tui",
+      "type": "Single Hits",
+      "input": "f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Enter BOK +2 +6 +29a with d"
+        }
+      ]
+    },
+    {
+      "id": "move-24",
+      "name": "Jin Ji Du Li",
+      "type": "Single Hits",
+      "input": "f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Stance moves may be delayed by 11F\n* Enter CD -5 +1 +5 with df"
+        }
+      ]
+    },
+    {
+      "id": "move-25",
+      "name": "Bei Zhe Kao",
+      "type": "Single Hits",
+      "input": "f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Shoulder"
+        }
+      ]
+    },
+    {
+      "id": "move-26",
+      "name": "Xiang Chui",
+      "type": "Single Hits",
+      "input": "f+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Sidesteps to the right"
+        }
+      ]
+    },
+    {
+      "id": "move-27",
+      "name": "Yellow Crane",
+      "type": "Single Hits",
+      "input": "f+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* 7 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-28",
+      "name": "Quick Upper",
+      "type": "Single Hits",
+      "input": "df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        }
+      ]
+    },
+    {
+      "id": "move-29",
+      "name": "Shuang Huan Da",
+      "type": "Strings",
+      "input": "df+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i18"
+        },
+        {
+          "type": "properties",
+          "value": "*\nTornado\n*\nBalcony Break\n* Combo from 1st CH with 7?F delay\n* Move can be delayed 8?F"
+        }
+      ]
+    },
+    {
+      "id": "move-30",
+      "name": "Sheng Pao",
+      "type": "Single Hits",
+      "input": "df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-31",
+      "name": "Chuan Pao",
+      "type": "Single Hits",
+      "input": "df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-32",
+      "name": "df+4",
+      "type": "Single Hits",
+      "input": "df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        }
+      ]
+    },
+    {
+      "id": "move-33",
+      "name": "Gui Xi",
+      "type": "Single Hits",
+      "input": "df+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-34",
+      "name": "Fu Hu",
+      "type": "Single Hits",
+      "input": "d+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Enter FC with d"
+        }
+      ]
+    },
+    {
+      "id": "move-35",
+      "name": "Pi Zhong",
+      "type": "Single Hits",
+      "input": "d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* 4 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-36",
+      "name": "Crouch Spin Kick",
+      "type": "Single Hits",
+      "input": "d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-37",
+      "name": "Sao Tang Ti",
+      "type": "Single Hits",
+      "input": "d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        }
+      ]
+    },
+    {
+      "id": "move-38",
+      "name": "Sao Tang Ti > Shang Bu Zhuang Zhang",
+      "type": "Strings",
+      "input": "d+4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH\n* Gain LTG -11d -1d on hit with 1+2"
+        }
+      ]
+    },
+    {
+      "id": "move-39",
+      "name": "Fo Bu",
+      "type": "Single Hits",
+      "input": "d+1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-40",
+      "name": "Crouch Shin Kick",
+      "type": "Single Hits",
+      "input": "d+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-41",
+      "name": "Crouch Jab",
+      "type": "Single Hits",
+      "input": "db+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-42",
+      "name": "db+2",
+      "type": "Single Hits",
+      "input": "db+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        }
+      ]
+    },
+    {
+      "id": "move-43",
+      "name": "Bei Zhan Juan Long Jiao",
+      "type": "Heat Moves",
+      "input": "db+2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i24~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5g, +64a (+42)\n\n* Balcony Break\n* Combo from 1st hit\n* Low crush 12~"
+        }
+      ]
+    },
+    {
+      "id": "move-44",
+      "name": "Lie Huo Fan Jiao",
+      "type": "Single Hits",
+      "input": "db+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i31~32"
+        },
+        {
+          "type": "properties",
+          "value": "No crouching state"
+        }
+      ]
+    },
+    {
+      "id": "move-45",
+      "name": "db+4",
+      "type": "Single Hits",
+      "input": "db+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Clean hit +2\n* Staggers on block\n* Causes float on hit if db+4,1 is input\n* High crush 11~"
+        }
+      ]
+    },
+    {
+      "id": "move-46",
+      "name": "Qian Sao Lei Wang Quan",
+      "type": "Strings",
+      "input": "db+4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~22, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit\n** +14a (+7)"
+        }
+      ]
+    },
+    {
+      "id": "move-47",
+      "name": "Jue Zhao Qian Sao Lei Wang Quan",
+      "type": "Stances",
+      "input": "LTG.db+4,1,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~22, ,i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Shoulder\n* Combo from 1st hit\n** +27a (+17)\n* 8 chip damage on block\n* Partially consumes remaining heat time during heat"
+        }
+      ]
+    },
+    {
+      "id": "move-48",
+      "name": "db+1+2",
+      "type": "Single Hits",
+      "input": "db+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Enter BOK -12 +4 with d"
+        }
+      ]
+    },
+    {
+      "id": "move-49",
+      "name": "Ba Wang Zhe Jiang",
+      "type": "Strings",
+      "input": "db+1+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~23, i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit with delay"
+        }
+      ]
+    },
+    {
+      "id": "move-50",
+      "name": "b+1",
+      "type": "Single Hits",
+      "input": "b+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-51",
+      "name": "Ding Zhou Jin Ji Du Li",
+      "type": "Strings",
+      "input": "b+1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-52",
+      "name": "Ding Zhou Meng Po Kao",
+      "type": "Strings",
+      "input": "b+1,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Shoulder\n* Combo from 1st hit with 2F delay\n* Combo from 1st CH with 10F delay\n* Transition to BOK r28? with d (-10/+11)\n* Move can be delayed by 16F\n* Input can be delayed by 18F"
+        }
+      ]
+    },
+    {
+      "id": "move-53",
+      "name": "Shi Zi Xiao Zhang Kou",
+      "type": "Single Hits",
+      "input": "b+1+3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Parries high and mid punches and kicks\n* Parry state 5~12"
+        }
+      ]
+    },
+    {
+      "id": "move-54",
+      "name": "Shang Bu Zhuang Quan",
+      "type": "Stances",
+      "input": "b+1+3,P.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from parry\n* Gain LTG on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-55",
+      "name": "b+2",
+      "type": "Single Hits",
+      "input": "b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        }
+      ]
+    },
+    {
+      "id": "move-56",
+      "name": "Wu Hu Chu Dong",
+      "type": "Strings",
+      "input": "b+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-57",
+      "name": "Er Lang Dan Shan",
+      "type": "Heat Moves",
+      "input": "b+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5 +67a (+50)\n\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-58",
+      "name": "Shi Zi Zhou",
+      "type": "Single Hits",
+      "input": "b+2+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Parries high and mid punches and kicks\n* Side switch on punch parry (+5)\n* 25 damage on kick parry (+1d), does not Balcony Break\n* Parry state 5~12"
+        }
+      ]
+    },
+    {
+      "id": "move-59",
+      "name": "b+3",
+      "type": "Single Hits",
+      "input": "b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-60",
+      "name": "Ying Mian Tui",
+      "type": "Strings",
+      "input": "b+3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Combo from 1st hit\n* Enter BOK -8 +3 with d\n* Enter KNK -10 +1 with b"
+        }
+      ]
+    },
+    {
+      "id": "move-61",
+      "name": "Jue Zhao Ying Mian Tui",
+      "type": "Stances",
+      "input": "LTG.b+3,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit\n* +10a on 2nd whiff and 3rd hit\n* 42 damage from 1st hit with scaling\n* 10 chip damage on block\n* Consumes 210F of heat timer during heat"
+        }
+      ]
+    },
+    {
+      "id": "move-62",
+      "name": "b+4",
+      "type": "Single Hits",
+      "input": "b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        }
+      ]
+    },
+    {
+      "id": "move-63",
+      "name": "Dragon's Impact",
+      "type": "Strings",
+      "input": "b+4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18, i30~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Shoulder\n* Combo from 1st hit\n* Cancel to FC -16 -3 with D"
+        }
+      ]
+    },
+    {
+      "id": "move-64",
+      "name": "Dragon's Impact > Jin Ji Du Li",
+      "type": "Strings",
+      "input": "b+4,1~4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18, i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Combo from 1st hit\n* Enter CD -5 +1 +5 with df"
+        }
+      ]
+    },
+    {
+      "id": "move-65",
+      "name": "b+1+2",
+      "type": "Single Hits",
+      "input": "b+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-66",
+      "name": "b+1+2,1+2",
+      "type": "Strings",
+      "input": "b+1+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Shoulder\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-67",
+      "name": "Jin Gang Hua Shan Tuo Tian Zhang",
+      "type": "Strings",
+      "input": "b+1+2,1+2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, ,i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd CH\n* Power up with motion input d,df,f+2\n* 12 chip damage on block with motion input\n* Deals 25 damage without motion input"
+        }
+      ]
+    },
+    {
+      "id": "move-68",
+      "name": "Cuo Zhang",
+      "type": "Single Hits",
+      "input": "b+1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~21"
+        }
+      ]
+    },
+    {
+      "id": "move-69",
+      "name": "Ye Kua",
+      "type": "Single Hits",
+      "input": "b+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i30~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Parries high and mid punches\n* Hit after parry is the same as on CH\n* Parry state 5~9"
+        }
+      ]
+    },
+    {
+      "id": "move-70",
+      "name": "Tui Bu Jin Ji Du Li",
+      "type": "Single Hits",
+      "input": "b+3+4",
+      "properties": []
+    },
+    {
+      "id": "move-71",
+      "name": "Bao Zhou",
+      "type": "Single Hits",
+      "input": "ub+1",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Parries high and mid kicks\n* Parry state 5~12"
+        }
+      ]
+    },
+    {
+      "id": "move-72",
+      "name": "Bao Zhou Ji Tui",
+      "type": "Stances",
+      "input": "ub+1,P.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from parry"
+        }
+      ]
+    },
+    {
+      "id": "move-73",
+      "name": "Sky Vibration",
+      "type": "Single Hits",
+      "input": "ub+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i24~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-74",
+      "name": "Yue Bu San Jing Ti",
+      "type": "Single Hits",
+      "input": "ub+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Same move as uf+4\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-75",
+      "name": "Xiao Jia Er Lu Liang Yi Zhou",
+      "type": "Single Hits",
+      "input": "ub+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i70~71"
+        }
+      ]
+    },
+    {
+      "id": "move-76",
+      "name": "Xiang Quan",
+      "type": "Single Hits",
+      "input": "u+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n** CH only\n** Doesn't Balcony Break on airborne"
+        }
+      ]
+    },
+    {
+      "id": "move-77",
+      "name": "uf+1",
+      "type": "Single Hits",
+      "input": "uf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        }
+      ]
+    },
+    {
+      "id": "move-78",
+      "name": "Li Xiang Quan",
+      "type": "Strings",
+      "input": "uf+1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n** CH only\n** Doesn't Balcony Break on airborne"
+        }
+      ]
+    },
+    {
+      "id": "move-79",
+      "name": "Chuan Chong Quan",
+      "type": "Strings",
+      "input": "uf+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* Combo from 1st hit\n* Gain LTG +22g on hit with 1+2"
+        }
+      ]
+    },
+    {
+      "id": "move-80",
+      "name": "uf+2",
+      "type": "Single Hits",
+      "input": "uf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Enter BOK -11 +21a (+14) with d\n* Low crush 20~"
+        }
+      ]
+    },
+    {
+      "id": "move-81",
+      "name": "Yue Bu Si Quan",
+      "type": "Strings",
+      "input": "uf+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~21, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n** +23a (+16)\n* Low crush 0~12"
+        }
+      ]
+    },
+    {
+      "id": "move-82",
+      "name": "Yi Qi Jiao",
+      "type": "Single Hits",
+      "input": "uf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~21"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* Can input with u+3\n** Less forward movement and deals 20 damage\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-83",
+      "name": "Yue Bu San Jing Ti",
+      "type": "Single Hits",
+      "input": "uf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Can input with u+4\n** Less forward movement\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-84",
+      "name": "Ki Charge",
+      "type": "Single Hits",
+      "input": "1+2+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "Gain LTG"
+        }
+      ]
+    },
+    {
+      "id": "move-85",
+      "name": "Jin Bu",
+      "type": "Strings",
+      "input": "d,df,f",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cancel to SS with U?\n* No crouching state\n* Transition to r6? hFC with alternate input d,DF\n** Crouching state\n** Cannot access stance moves"
+        }
+      ]
+    },
+    {
+      "id": "move-86",
+      "name": "Shang Bu Zhuang Quan",
+      "type": "Strings",
+      "input": "f,F+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Gain LTG -9a on hit with 1+2\n* 5 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-87",
+      "name": "Tiao Shan Fu Ren",
+      "type": "Strings",
+      "input": "f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~29"
+        },
+        {
+          "type": "properties",
+          "value": "* Enter BOK +0 +10d with d\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-88",
+      "name": "f,F+4",
+      "type": "Strings",
+      "input": "f,F+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 17"
+        }
+      ]
+    },
+    {
+      "id": "move-89",
+      "name": "f,F+4,3",
+      "type": "Strings",
+      "input": "f,F+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19, i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Jail from 1st block\n* Combo from 1st hit +28a (+21)\n* Low crush 0~12"
+        }
+      ]
+    },
+    {
+      "id": "move-90",
+      "name": "Tiao Shan Pu Bu",
+      "type": "Strings",
+      "input": "f,F+4,3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19, ,i29~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 0~7\n* Floating state 8~10\n* High crush 20~"
+        }
+      ]
+    },
+    {
+      "id": "move-91",
+      "name": "Delayed Rising Toe Kick",
+      "type": "Strings",
+      "input": "uf,n,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-92",
+      "name": "Tiao Shan Jiang Jiao",
+      "type": "Strings",
+      "input": "f,f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 9 chip damage on block\n* Alternate input wr3\n* Transition to BOK with D (+6/+17a (+7))\n* Low crush 3~"
+        }
+      ]
+    },
+    {
+      "id": "move-93",
+      "name": "ws1",
+      "type": "While Standing",
+      "input": "ws1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-94",
+      "name": "ws1,4",
+      "type": "While Standing",
+      "input": "ws1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-95",
+      "name": "Huo Da Ding Zhou",
+      "type": "While Standing",
+      "input": "ws1,4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Elbow\n* Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-96",
+      "name": "Shang Bu Gua Shan",
+      "type": "While Standing",
+      "input": "ws2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-97",
+      "name": "ws3",
+      "type": "While Standing",
+      "input": "ws3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Alternate input CD.3"
+        }
+      ]
+    },
+    {
+      "id": "move-98",
+      "name": "ws3,1",
+      "type": "While Standing",
+      "input": "ws3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Combo from 1st hit\n* Enter BOK -4 +9 with d\n* Alternate input CD.3,1"
+        }
+      ]
+    },
+    {
+      "id": "move-99",
+      "name": "Liang Yi Er Tui Ya Zhou",
+      "type": "While Standing",
+      "input": "ws3,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Combo from 1st CH or 2nd CH\n* Alternate input CD.3,1,2"
+        }
+      ]
+    },
+    {
+      "id": "move-100",
+      "name": "ws4",
+      "type": "While Standing",
+      "input": "ws4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12"
+        },
+        {
+          "type": "properties",
+          "value": "Alternate input CD.4"
+        }
+      ]
+    },
+    {
+      "id": "move-101",
+      "name": "Rising Bei Zhe Kao",
+      "type": "Heat Moves",
+      "input": "ws4,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12, i25~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5 +43a (+35)\n\n* Shoulder\n* Combo from 1st hit\n* Alternate input CD.4,1+2"
+        }
+      ]
+    },
+    {
+      "id": "move-102",
+      "name": "Le Kua Kao",
+      "type": "While Standing",
+      "input": "ws1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Shoulder\n* Gain LTG +3 on hit with 1+2\n* Alternate input CD.1+2"
+        }
+      ]
+    },
+    {
+      "id": "move-103",
+      "name": "Da Kai",
+      "type": "Stances",
+      "input": "SS.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-104",
+      "name": "Hou Sao Xuan",
+      "type": "While Standing",
+      "input": "FC.df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~23"
+        }
+      ]
+    },
+    {
+      "id": "move-105",
+      "name": "BOK.1",
+      "type": "Stances",
+      "input": "BOK.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 0~12"
+        }
+      ]
+    },
+    {
+      "id": "move-106",
+      "name": "Ya Sui Ying Quan",
+      "type": "Stances",
+      "input": "BOK.1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 1st hit\n* Gain LTG +57a (+41) on hit with 1+2"
+        }
+      ]
+    },
+    {
+      "id": "move-107",
+      "name": "Fan Lan Chui",
+      "type": "Stances",
+      "input": "BOK.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 0~17"
+        }
+      ]
+    },
+    {
+      "id": "move-108",
+      "name": "Startled Crane",
+      "type": "Stances",
+      "input": "BOK.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break\n* 9 chip damage on block\n* Low crush 10~"
+        }
+      ]
+    },
+    {
+      "id": "move-109",
+      "name": "Jin Ji Du Li",
+      "type": "Stances",
+      "input": "BOK.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Same move as f+4"
+        }
+      ]
+    },
+    {
+      "id": "move-110",
+      "name": "Lao Pao Ba",
+      "type": "Heat Moves",
+      "input": "BOK.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5 +17d\n\n* Balcony Break\n* Spike\n* Power crush 8~"
+        }
+      ]
+    },
+    {
+      "id": "move-111",
+      "name": "Shuang Sao Tui",
+      "type": "Stances",
+      "input": "BOK.3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17,i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-112",
+      "name": "Fo Bu (Elapsed)",
+      "type": "Stances",
+      "input": "BOK.n",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Stance moves may be delayed by 8F?\n* May perform FC moves from frame 9?\n* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-113",
+      "name": "Tui Bu Dan Yi",
+      "type": "Stances",
+      "input": "BT.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-114",
+      "name": "Lei Zhang",
+      "type": "Single Hits",
+      "input": "qcf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-115",
+      "name": "qcf+2",
+      "type": "Single Hits",
+      "input": "qcf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Enter KNK -9 +9 with b"
+        }
+      ]
+    },
+    {
+      "id": "move-116",
+      "name": "Lightning Spear",
+      "type": "Strings",
+      "input": "qcf+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17, i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Wall Crush on hit +22g\n\n\n* Elbow\n* Combo from 1st hit with 8F delay\n* Move can be delayed by 4F\n* Input can be delayed by 8F"
+        }
+      ]
+    },
+    {
+      "id": "move-117",
+      "name": "Lightning Skypiercer",
+      "type": "Strings",
+      "input": "qcf+2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17, i25~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit with 8F delay\n* Move can be delayed by 4F\n* Input can be delayed by 8F\n* 7 chip damage on block\n* Low crush 13~"
+        }
+      ]
+    },
+    {
+      "id": "move-118",
+      "name": "Swallow Step",
+      "type": "Stances",
+      "input": "qcf+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~20 i22~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break\n* Low crush 17~"
+        }
+      ]
+    },
+    {
+      "id": "move-119",
+      "name": "KNK.1",
+      "type": "Stances",
+      "input": "KNK.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to r25 BOK with D (-7/+4)"
+        }
+      ]
+    },
+    {
+      "id": "move-120",
+      "name": "Bai She Tui Chuang",
+      "type": "Heat Moves",
+      "input": "KNK.1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18, i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5 +36a (+26)\n\n* Balcony Break\n* Combo from 1st hit with 11F delay\n* Move can be delayed by 10F\n* Input can be delayed by 12F"
+        }
+      ]
+    },
+    {
+      "id": "move-121",
+      "name": "Bai She Luan Tui",
+      "type": "Stances",
+      "input": "KNK.1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18, i22~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Balcony Break\n* Combo from 1st hit with 7F delay\n* Transition to r18 BOK with D (+8/+32a (+6))\n* 4 chip damage on block\n* Move can be delayed by 10F\n* Input can be delayed by 12F"
+        }
+      ]
+    },
+    {
+      "id": "move-122",
+      "name": "Heng Quan",
+      "type": "Stances",
+      "input": "KNK.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-123",
+      "name": "Yi Qi Jiao",
+      "type": "Stances",
+      "input": "KNK.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 13~"
+        }
+      ]
+    },
+    {
+      "id": "move-124",
+      "name": "Er Qi Jiao",
+      "type": "Stances",
+      "input": "KNK.3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20, i15"
+        },
+        {
+          "type": "properties",
+          "value": "Tornado\n* Low crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-125",
+      "name": "Cuo Ti Fu Ren",
+      "type": "Stances",
+      "input": "KNK.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Enter CD -10 +6c +19d with df"
+        }
+      ]
+    },
+    {
+      "id": "move-126",
+      "name": "Ultimate Huo Jian Qiang Fist",
+      "type": "Stances",
+      "input": "LTG.KNK.4,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20, i20~21,i31~32"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 35 damage with scaling from 1st hit\n* Combo from 1st hit\n* +15a (-2) on 2nd whiff and 3rd hit\n* Consumes 450F of heat timer during heat"
+        }
+      ]
+    },
+    {
+      "id": "move-127",
+      "name": "Upper Rising Fist",
+      "type": "Stances",
+      "input": "KNK.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n** On non-CH grounded connect\n* 6 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-128",
+      "name": "Tree Feller",
+      "type": "Stances",
+      "input": "KNK.3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i24"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 8~"
+        }
+      ]
+    },
+    {
+      "id": "move-129",
+      "name": "Jin Bu",
+      "type": "Stances",
+      "input": "KNK.DF",
+      "properties": []
+    },
+    {
+      "id": "move-130",
+      "name": "Zhen Jiao",
+      "type": "Stances",
+      "input": "OTG.d+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* -2d (-10) on grounded hit"
+        }
+      ]
+    },
+    {
+      "id": "move-131",
+      "name": "Crouch Jab",
+      "type": "Stances",
+      "input": "hFC.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to Standing with f\n* +6c on crouching hit\n* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-132",
+      "name": "Crouch Straight",
+      "type": "Stances",
+      "input": "hFC.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        }
+      ]
+    },
+    {
+      "id": "move-133",
+      "name": "Crouch Spin Kick",
+      "type": "Stances",
+      "input": "hFC.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        }
+      ]
+    },
+    {
+      "id": "move-134",
+      "name": "Crouch Shin Kick",
+      "type": "Stances",
+      "input": "hFC.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        }
+      ]
+    },
+    {
+      "id": "move-135",
+      "name": "Bao Hu Gui Shan",
+      "type": "Throws",
+      "input": "1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "Throw break 1 or 2"
+        }
+      ]
+    },
+    {
+      "id": "move-136",
+      "name": "Dan Yang Da",
+      "type": "Throws",
+      "input": "2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1 or 2\n* Side switch on hit\n* Deals 4 more damage at the wall"
+        }
+      ]
+    },
+    {
+      "id": "move-137",
+      "name": "Yang Di Tou",
+      "type": "Single Hits",
+      "input": "Back throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Deals 10 more damage at the wall"
+        }
+      ]
+    },
+    {
+      "id": "move-138",
+      "name": "Chou Bie Zi",
+      "type": "Single Hits",
+      "input": "Left throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1\n* Side switch on hit\n* Deals 4 more damage at the wall"
+        }
+      ]
+    },
+    {
+      "id": "move-139",
+      "name": "Da Zhe Jiang",
+      "type": "Single Hits",
+      "input": "Right throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 2\n* Side switch on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-140",
+      "name": "Shuang Pai Shou",
+      "type": "Single Hits",
+      "input": "uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Throw break 1+2\n* Side switch\n* Usable from KNK"
+        }
+      ]
     }
   ]
 }

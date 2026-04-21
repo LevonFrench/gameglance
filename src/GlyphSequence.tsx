@@ -95,8 +95,10 @@ const tokenizeTekkenInputs = (inputs: string[], isCombo: boolean = false): strin
       continue;
     }
 
+    // Protect spaces inside parentheses before replacing spaces and splitting
+    const safeRaw = raw.replace(/\([^)]+\)/g, match => match.replace(/ /g, '_'));
     let skipNextSpace = false;
-    const tokens = raw.replace(/,/g, ' ').replace(/\+/g, ' + ').split(/(\+| |~|\[Cancel\]|-|>)/g).filter(Boolean);
+    const tokens = safeRaw.replace(/,/g, ' ').replace(/\+/g, ' + ').split(/(\+| |~|\[Cancel\]|-|>)/g).filter(Boolean);
     
     for (let i = 0; i < tokens.length; i++) {
       let t = tokens[i];
@@ -111,12 +113,21 @@ const tokenizeTekkenInputs = (inputs: string[], isCombo: boolean = false): strin
       if (t === '+') { result.push('+'); continue; }
       if (t === '[Cancel]') { result.push(t); continue; }
 
-      let prefix = '';
-      if (t.startsWith('j.')) { prefix = 'j.'; t = t.substring(2); }
-      else if (t.startsWith('fc')) { prefix = 'cr.'; t = t.substring(2); }
-      else if (t.startsWith('ws')) { prefix = 'st.'; t = t.substring(2); }
+      // Handle generic prefixes ending in a dot (like FC., BT., H.LIB., or (back_to_wall).)
+      const dotIdx = t.lastIndexOf('.');
+      if (dotIdx !== -1) {
+        let prefix = t.substring(0, dotIdx).replace(/_/g, ' '); // Restore spaces in parentheses
+        
+        // Let's standardise the old hardcoded ones, or just push them as-is
+        if (prefix.toLowerCase() === 'fc') prefix = 'FC';
+        else if (prefix.toLowerCase() === 'ws') prefix = 'WS';
+        else if (prefix.toLowerCase() === 'bt') prefix = 'BT';
+        else if (prefix.toLowerCase() === 'j') prefix = 'j.';
+        
+        result.push(prefix);
+        t = t.substring(dotIdx + 1);
+      }
 
-      if (prefix) result.push(prefix);
       if (!t) continue;
 
       const normT = t.toLowerCase();
@@ -159,7 +170,7 @@ const tokenizeTekkenInputs = (inputs: string[], isCombo: boolean = false): strin
         continue;
       }
       
-      result.push(t);
+      result.push(t.replace(/_/g, ' '));
     }
   }
   return result;
@@ -325,6 +336,12 @@ const tokenizeStandardInputs = (inputs: string[], notationSystem: string = 'trad
 const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional', isCombo: boolean = false): string[] => {
   const processedInputs = inputs.map(raw => {
     return raw
+      .replace(/\(InAir\)/gi, 'j.')
+      .replace(/\(AirOK\)/gi, ' (Air OK)')
+      .replace(/SorH/gi, 'S/H')
+      .replace(/PorK/gi, 'P/K')
+      .replace(/Tap\s*([a-zA-Z])\s*rapidly/gi, 'Tap $1')
+      .replace(/([a-zA-Z])\s*\(\s*Tap repeatedly\s*\)/gi, 'Tap $1')
       .replace(/(?<![A-Za-z])PPP(?![A-Za-z])/gi, 'P+P+P')
       .replace(/(?<![A-Za-z])KKK(?![A-Za-z])/gi, 'K+K+K')
       .replace(/(?<![A-Za-z])PP(?![A-Za-z])/gi, 'P+P')

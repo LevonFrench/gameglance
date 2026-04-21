@@ -1,52 +1,2212 @@
 {
+  "id": "paul",
   "name": "Paul",
-  "character": "Paul",
-  "game": "Tekken 8",
   "movesList": [
     {
-      "name": "Shoulder Pop",
-      "input": "1+3",
-      "type": "throw"
+      "id": "move-0",
+      "name": "Heat Burst",
+      "type": "Heat Moves",
+      "input": "2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Burst\n* Consumes Heat\n* t92 on whiff\n* Cinematic freeze on frame 15\n* Cancel to t42 r26 standing with b,b\n* Power crush 7~"
+        }
+      ]
     },
     {
-      "name": "Shoulder Throw",
-      "input": "2+4",
-      "type": "throw"
+      "id": "move-1",
+      "name": "Half-Step Phoenix Smasher",
+      "type": "Heat Moves",
+      "input": "H.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Reversal Break\n* Consumes Heat unless canceled\n* Chip damage (10)\n* Move can be delayed 11f (i39)\n* Charge begins on frame 1\n* Requires 1~27f charge\n* Delayed startup from 17~27f charge\n* Cancel to t27~35 r1 CS from 17~35f with f\n** Sidestep u can be buffered 2f after cancel\n** CS attacks can be buffered from 26f\n** Decaying 13f delay on CS attacks\n*** Decays to 0 delay 24f after cancel\n* Cancel to t41~49 r12 SWA from 17~35f with b\n** Sidestep u can be buffered from 27f\n** SWA attacks can be buffered from 26f\n* H.1+2* from 28~55f charge\n* Burning Fist at 56f charge"
+        }
+      ]
     },
     {
-      "name": "Ultimate Tackle",
-      "input": "1+2",
-      "type": "throw"
+      "id": "move-2",
+      "name": "Half-Step Phoenix Smasher (Hold)",
+      "type": "Heat Moves",
+      "input": "H.1+2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i46"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Reversal Break\n* Consumes Heat unless canceled\n* Chip damage (16)\n* Move can be delayed 21f (i67)\n* Charge begins on frame 1\n* Requires 28~55f charge\n* Delayed startup from 35~55f charge\n* Cancel to t27~35 r1 CS from 17~35f with f\n** Sidestep u can be buffered 2f after cancel\n** CS attacks can be buffered from 26f\n** Decaying 13f delay on CS attacks\n*** Decays to 0 delay 24f after cancel\n* Cancel to t41~49 r12 SWA from 17~35f with b\n** Sidestep u can be buffered from 27f\n** SWA attacks can be buffered from 26f\n* H.1+2 from 1~27f charge\n* Burning Fist at 56f charge"
+        }
+      ]
     },
     {
-      "name": "Deathfist",
-      "input": "2, 3, 6+2",
-      "type": "special"
-    },
-    {
-      "name": "Demolition Man",
-      "input": "2+4, 2, 1+2",
-      "type": "special"
-    },
-    {
-      "name": "Falling Leaf",
-      "input": "2+4, 2",
-      "type": "special"
-    },
-    {
+      "id": "move-3",
       "name": "Burning Fist",
-      "input": "4+1+2",
-      "type": "special"
+      "type": "Heat Moves",
+      "input": "H.1+2**",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i71"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Reversal Break\n* Consumes Heat\n* Charge begins on frame 1\n* Requires 56f charge\n* H.1+2 from 1~27f charge\n* H.1+2* from 28~55f charge"
+        }
+      ]
     },
     {
+      "id": "move-4",
+      "name": "Phoenix Smasher",
+      "type": "Heat Moves",
+      "input": "H.qcf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Dash +5, +36a (+26)\n\n* Balcony Break\n* Reversal Break\n* Consumes Heat\n* Chip damage (11)\n* Clean Hit range 2.3\n* Heat Dash disables Clean Hit\n* 34 damage without Clean Hit"
+        }
+      ]
+    },
+    {
+      "id": "move-5",
+      "name": "Hammer of the Gods (Hold)",
+      "type": "Heat Moves",
+      "input": "H.f+1+2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i29~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Consumes Heat\n* Chip damage (13)\n* Requires 24f charge\n* f+1+2 from 0~23f charge"
+        }
+      ]
+    },
+    {
+      "id": "move-6",
+      "name": "Demolition Ball",
+      "type": "Heat Moves",
+      "input": "H.2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18,i21,i38"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Smash\n* Balcony Break\n* Fully consumes Heat\n* Chip damage (8)\n* Transition to throw on 1st hit only\n* 40 damage with throw transition\n* 53 damage on 2nd + 3rd hit\n* t134 r49 on block\n* t124 on whiff"
+        }
+      ]
+    },
+    {
+      "id": "move-7",
+      "name": "Big Bang Phoenix Smasher",
+      "type": "Stances",
+      "input": "R.df+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\n* 114f cinematic freeze on frame 8\n* t193 r56 on block\n* t134 on whiff\n* Power crush 8~"
+        }
+      ]
+    },
+    {
+      "id": "move-8",
+      "name": "Left Jab",
+      "type": "Single Hits",
+      "input": "1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Recovers 2f faster on hit or block (t27 r17)"
+        }
+      ]
+    },
+    {
+      "id": "move-9",
+      "name": "Left Right Combo",
+      "type": "Strings",
+      "input": "1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Move can be delayed 3f\n* Input can be delayed 3f\n* Combo from 1st hit with 3f delay\n* Jail from 1st hit with 3f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-10",
+      "name": "1,2,3",
+      "type": "Strings",
+      "input": "1,2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Jail from 1st hit\n* Cancel to 10 strings"
+        }
+      ]
+    },
+    {
+      "id": "move-11",
+      "name": "Reverse PDK Combo",
+      "type": "Strings",
+      "input": "1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH\n* High crush 14~"
+        }
+      ]
+    },
+    {
+      "id": "move-12",
+      "name": "Right Jab",
+      "type": "Single Hits",
+      "input": "2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        }
+      ]
+    },
+    {
+      "id": "move-13",
+      "name": "Goodnight",
+      "type": "Strings",
+      "input": "2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-14",
+      "name": "Left Kick",
+      "type": "Single Hits",
+      "input": "3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-15",
+      "name": "Piston Fire",
+      "type": "Strings",
+      "input": "3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Move can be delayed 4f\n* Input can be delayed 6f\n* Combo from 1st hit with 6f delay\n* Transition to t60 r19 SWA +4 +14g +57a at 43f with b"
+        }
+      ]
+    },
+    {
+      "id": "move-16",
+      "name": "3,2~b",
+      "type": "Strings",
+      "input": "3,2~b",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,"
+        },
+        {
+          "type": "properties",
+          "value": "* Sidestep u can be buffered from 45f\n* SWA attacks can be buffered from 54f\n* Transition to cs1~ r9 -13 +4 +47a DPD from 61f with df"
+        }
+      ]
+    },
+    {
+      "id": "move-17",
+      "name": "Right Kick",
+      "type": "Single Hits",
+      "input": "4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (CH only)"
+        }
+      ]
+    },
+    {
+      "id": "move-18",
+      "name": "Half-Step Phoenix Smasher",
+      "type": "Stances",
+      "input": "1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* H.1+2 with Heat\n* Move can be delayed 11f (i39)\n* Charge begins on frame 1\n* Requires 1~27f charge\n* Delayed startup from 17~27f charge\n* Cancel to t27 r1 CS from 17~35f with f\n** Cancel can be delayed 8f\n** Sidestep u can be buffered 2f after cancel\n** CS attacks can be buffered from 26f\n** Decaying 13f delay on CS attacks\n*** Decays to 0 delay 24f after cancel\n* Cancel to t41 r12 SWA from 17~35f with b\n* Cancel can be delayed 8f\n** Sidestep u can be buffered from 27f\n** SWA attacks can be buffered from 26f\n* 1+2* from 28~55f charge\n* Burning Fist at 56f charge"
+        }
+      ]
+    },
+    {
+      "id": "move-19",
+      "name": "Half-Step Phoenix Smasher (Hold)",
+      "type": "Stances",
+      "input": "1+2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i46"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* H.1+2* with Heat\n* Chip damage (10)\n* Move can be delayed 21f (i67)\n* Charge begins on frame 1\n* Requires 28~55f charge\n* Delayed startup from 35~55f charge\n* Cancel to t27 r1 CS from 17~35f with f\n** Cancel can be delayed 8f\n** Sidestep u can be buffered 2f after cancel\n** CS attacks can be buffered from 26f\n** Decaying 13f delay on CS attacks\n*** Decays to 0 delay 24f after cancel\n* Cancel to t41 r12 SWA from 17~35f with b\n** Cancel can be delayed 8f\n** Sidestep u can be buffered from 27f\n** SWA attacks can be buffered from 26f\n* 1+2 from 1~27f charge\n* Burning Fist at 56f charge"
+        }
+      ]
+    },
+    {
+      "id": "move-20",
+      "name": "Burning Fist",
+      "type": "Single Hits",
+      "input": "1+2**",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i71"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* H.1+2** with Heat\n* Charge begins on frame 1\n* Requires 56f charge\n* 1+2 from 1~27f charge\n* 1+2* from 28~55f charge"
+        }
+      ]
+    },
+    {
+      "id": "move-21",
+      "name": "Phoenix Hook, Tiger Claw",
+      "type": "Heat Moves",
+      "input": "f+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager +9\n* Heat Dash +5, +62a (+42)\n\n* Transition to throw on front hit\n* Transition to +7 DPD on hit with DF\n* +32a without throw transition"
+        }
+      ]
+    },
+    {
+      "id": "move-22",
+      "name": "f+3",
+      "type": "Single Hits",
+      "input": "f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing"
+        }
+      ]
+    },
+    {
+      "id": "move-23",
+      "name": "Lion's Tempest",
+      "type": "Strings",
+      "input": "f+3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Elbow\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-24",
+      "name": "Lion's Claw",
+      "type": "Strings",
+      "input": "f+3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-25",
+      "name": "Stone Lion",
+      "type": "Heat Moves",
+      "input": "f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +62a (+42)\n\n* Homing\n* Low crush 9~22"
+        }
+      ]
+    },
+    {
+      "id": "move-26",
+      "name": "Hammer of the Gods",
+      "type": "Single Hits",
+      "input": "f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (CH only)\n* Chip damage (4)\n* Move can be delayed 9f (i29~30)\n* Delayed startup from 5~23f charge\n* f+1+2* at 24f charge\n* H.f+1+2* at 24f charge\n* Transition to 0, +5c  DPD with DF"
+        }
+      ]
+    },
+    {
+      "id": "move-27",
+      "name": "Hammer of the Gods (Hold)",
+      "type": "Single Hits",
+      "input": "f+1+2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i29~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* H.f+1+2* with Heat\n* Chip damage (10)\n* Requires 24f charge\n* f+1+2 from 0~23f charge\n* Transition to +4c, +17d DPD with DF"
+        }
+      ]
+    },
+    {
+      "id": "move-28",
+      "name": "Shoulder Tackle",
+      "type": "Single Hits",
+      "input": "f+1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Shoulder\n* Sharp leftward movement on startup"
+        }
+      ]
+    },
+    {
+      "id": "move-29",
+      "name": "Cormorant Step",
+      "type": "Stances",
+      "input": "f+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transitions to CS"
+        }
+      ]
+    },
+    {
+      "id": "move-30",
+      "name": "df+1",
+      "type": "Single Hits",
+      "input": "df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to r15 SWA +3 +9 from 2~14f, 16f with b"
+        }
+      ]
+    },
+    {
+      "id": "move-31",
+      "name": "df+1,1",
+      "type": "Strings",
+      "input": "df+1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 4f delay\n* Move can be delayed 10f\n* Input can be delayed 10f"
+        }
+      ]
+    },
+    {
+      "id": "move-32",
+      "name": "Lion's Roar",
+      "type": "Strings",
+      "input": "df+1,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, ,i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-33",
+      "name": "df+1~b",
+      "type": "Single Hits",
+      "input": "df+1~b",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, "
+        },
+        {
+          "type": "properties",
+          "value": "* Sidestep u can be buffered from 16f\n* SWA attacks can be buffered from 24f\n* Transition to cs1~ r9 -1 -12 DPD from 32f with df"
+        }
+      ]
+    },
+    {
+      "id": "move-34",
+      "name": "Kurenai",
+      "type": "Single Hits",
+      "input": "df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* High evasion\n* +4s on crouching normal hit"
+        }
+      ]
+    },
+    {
+      "id": "move-35",
+      "name": "df+3",
+      "type": "Single Hits",
+      "input": "df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        }
+      ]
+    },
+    {
+      "id": "move-36",
+      "name": "Phoenix Wings",
+      "type": "Strings",
+      "input": "df+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Move can be delayed 14f\n* Input can be delayed 14f\n* Combo from 1st hit with 10f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-37",
+      "name": "Tiger Claw",
+      "type": "Single Hits",
+      "input": "df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee"
+        }
+      ]
+    },
+    {
+      "id": "move-38",
+      "name": "Deep Dive",
+      "type": "Single Hits",
+      "input": "df+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transitions to DPD"
+        }
+      ]
+    },
+    {
+      "id": "move-39",
       "name": "Hammer Punch",
-      "input": "2+1",
-      "type": "special"
+      "type": "Single Hits",
+      "input": "d+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike \n* Transition to r27 FC with d"
+        }
+      ]
     },
     {
-      "name": "10-Hit Combo",
-      "input": "1, 2, 3, 2, 1, 2, 1, 4, 2, 1",
-      "type": "combo"
+      "id": "move-40",
+      "name": "Phoenix Smasher",
+      "type": "Strings",
+      "input": "d+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i29"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* H.d+1,2 with Heat\n* Move can be delayed 14f (i43)\n* Charge begins on frame 16\n* Requires 0~26f charge\n* Delayed startup from 1~26f charge\n* Combo from 1st CH with 0~6f charge\n* d+1,2* at 27f charge"
+        }
+      ]
+    },
+    {
+      "id": "move-41",
+      "name": "Phoenix Smasher (Hold)",
+      "type": "Strings",
+      "input": "d+1,2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i43"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* H.d+1,2* with Heat\n* Chip damage (11)\n* Charge begins on frame 16\n* Requires 27f charge\n* d+1,2 from 0~26f charge"
+        }
+      ]
+    },
+    {
+      "id": "move-42",
+      "name": "d+1,4",
+      "type": "Strings",
+      "input": "d+1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Move can be delayed 5f\n* Input can be delayed 5f\n* Combo from 1st CH with 5f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-43",
+      "name": "Hang Over",
+      "type": "Strings",
+      "input": "d+1,4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Elbow\n* Combo from 2nd CH +11d (+4)"
+        }
+      ]
+    },
+    {
+      "id": "move-44",
+      "name": "Phoenix Smasher",
+      "type": "Heat Moves",
+      "input": "H.d+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i29"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Reversal Break\n* Consumes Heat\n* Move can be delayed 14f (i43)\n* Charge begins on frame 16\n* Requires 0~26f charge\n* Delayed startup from 1~26f charge\n* Combo from 1st CH with 0~6f charge\n* H.d+1,2* at 27f charge"
+        }
+      ]
+    },
+    {
+      "id": "move-45",
+      "name": "Phoenix Smasher (Hold)",
+      "type": "Heat Moves",
+      "input": "H.d+1,2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i43"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Guard Break\n* Reversal Break\n* Consumes Heat\n* Chip damage (13)\n* Charge begins on frame 16\n* Requires 27f charge\n* H.d+1,2 from 0~26f charge"
+        }
+      ]
+    },
+    {
+      "id": "move-46",
+      "name": "d+2",
+      "type": "Single Hits",
+      "input": "d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* cs1~ from 6f d/db/df input hold\n* OTG.d+2 when opponent is downed\n* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-47",
+      "name": "d+4",
+      "type": "Single Hits",
+      "input": "d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Clean Hit range 1.59\n* 8 damage, -17 on hit without Clean Hit\n* Stagger state on block"
+        }
+      ]
+    },
+    {
+      "id": "move-48",
+      "name": "Bone Breaker",
+      "type": "Strings",
+      "input": "d+4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Move can be delayed 3f\n* Input can be delayed 4f\n* Combo from 1st CL with 3f delay +5d (-2) \n* Combo from 1st CH with 3f delay +5d (-2)"
+        }
+      ]
+    },
+    {
+      "id": "move-49",
+      "name": "Demolition Man",
+      "type": "Strings",
+      "input": "d+4,2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, ,i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Move can be delayed 4f\n* Input can be delayed 4f\n* Combo from 1st CL with 4f delay +13d (+6)\n* Combo from 1st CH with 4f delay +13d (+6)\n* Combo from 2nd hit with 4f delay +13d (+6)\n* Perfect input window 21~22f after 2 input"
+        }
+      ]
+    },
+    {
+      "id": "move-50",
+      "name": "Demolition Man (Perfect Input)",
+      "type": "Strings",
+      "input": "d+4,2:1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, ,i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Move can be delayed 1f\n* Input can be delayed 1f\n* Combo from 1st CL with 1f delay +13d (+6)\n* Combo from 1st CH with 1f delay +13d (+6)\n* Combo from 2nd hit with 1f delay +13d (+6)\n* Perfect input window 21~22f after 2 input\n* Perfect input increases damage, wall carry"
+        }
+      ]
+    },
+    {
+      "id": "move-51",
+      "name": "Shoulder Smash",
+      "type": "Single Hits",
+      "input": "d+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Shoulder"
+        }
+      ]
+    },
+    {
+      "id": "move-52",
+      "name": "Dickjab",
+      "type": "Single Hits",
+      "input": "db+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to r24 standing with f\n* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-53",
+      "name": "Shoot the Moon",
+      "type": "Single Hits",
+      "input": "db+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-54",
+      "name": "db+3",
+      "type": "Single Hits",
+      "input": "db+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~i17"
+        },
+        {
+          "type": "properties",
+          "value": "* -4c on crouching hit\n* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-55",
+      "name": "db+4",
+      "type": "Single Hits",
+      "input": "db+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-56",
+      "name": "Chain Breaker",
+      "type": "Single Hits",
+      "input": "db+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Shoulder\n* Chip damage (11) if attack is absorbed\n* Power crush 7~19"
+        }
+      ]
+    },
+    {
+      "id": "move-57",
+      "name": "b+1",
+      "type": "Single Hits",
+      "input": "b+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        }
+      ]
+    },
+    {
+      "id": "move-58",
+      "name": "Double Wing",
+      "type": "Strings",
+      "input": "b+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Move can be delayed 5f\n* Input can be delayed 5f\n* Combo from 1st hit with 5f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-59",
+      "name": "Attack Reversal",
+      "type": "Single Hits",
+      "input": "b+1+3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Parry\n* Parry state 5~12"
+        }
+      ]
+    },
+    {
+      "id": "move-60",
+      "name": "b+2",
+      "type": "Single Hits",
+      "input": "b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike"
+        }
+      ]
+    },
+    {
+      "id": "move-61",
+      "name": "Crushing Wind",
+      "type": "Strings",
+      "input": "b+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18, i36"
+        },
+        {
+          "type": "properties",
+          "value": "* Move can be delayed 20f (i56)\n* Charge begins on frame 18\n* Requires 0~41f charge\n* Delayed startup from 22~41f charge\n* Combo from 1st CH with 0~23f charge\n* b+2,1* / H.b+2,1* at 42f charge"
+        }
+      ]
+    },
+    {
+      "id": "move-62",
+      "name": "Crushing Wind (Hold)",
+      "type": "Strings",
+      "input": "b+2,1*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18, i60~61"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* H.b+2,1* with Heat\n* Chip damage (7)\n* Charge begins on frame 18\n* Requires 42f charge\n* b+2,1 from 0~41f charge"
+        }
+      ]
+    },
+    {
+      "id": "move-63",
+      "name": "Crushing Wind (Hold)",
+      "type": "Heat Moves",
+      "input": "H.b+2,1*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18, i60~61"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Guard Break\n* Consumes Heat\n* Chip damage (13)\n* Charge begins on frame 18\n* Requires 42f charge\n* b+2,1 from 0~41f charge"
+        }
+      ]
+    },
+    {
+      "id": "move-64",
+      "name": "Lights Out",
+      "type": "Single Hits",
+      "input": "b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee"
+        }
+      ]
+    },
+    {
+      "id": "move-65",
+      "name": "Leg Sweep",
+      "type": "Single Hits",
+      "input": "b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        }
+      ]
+    },
+    {
+      "id": "move-66",
+      "name": "Hassou Strike",
+      "type": "Single Hits",
+      "input": "b+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i24"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Chip damage (11) if attack is absorbed\n* Power crush 7~23"
+        }
+      ]
+    },
+    {
+      "id": "move-67",
+      "name": "Sway",
+      "type": "Single Hits",
+      "input": "b+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transitions to SW"
+        }
+      ]
+    },
+    {
+      "id": "move-68",
+      "name": "Wrecking Ball",
+      "type": "Single Hits",
+      "input": "ub+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* +21d (+14) on airborne opponent\n* Can be charged to power up"
+        }
+      ]
+    },
+    {
+      "id": "move-69",
+      "name": "Wrecking Ball (charged)",
+      "type": "Single Hits",
+      "input": "ub+2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i27"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break\n* 9 chip damage"
+        }
+      ]
+    },
+    {
+      "id": "move-70",
+      "name": "Burning Spear",
+      "type": "Single Hits",
+      "input": "uf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Elbow\n* High Evasion\n* .73 backward movement over first 14f"
+        }
+      ]
+    },
+    {
+      "id": "move-71",
+      "name": "Moonfall",
+      "type": "Heat Moves",
+      "input": "uf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +67a (+50)\n\n* Balcony Break\n* Chip damage (6)\n* Transition to +2, +14d DPD with DF\n* Low crush 9~24"
+        }
+      ]
+    },
+    {
+      "id": "move-72",
+      "name": "uf+3",
+      "type": "Single Hits",
+      "input": "uf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 8~29\n* Floating state 30~32"
+        }
+      ]
+    },
+    {
+      "id": "move-73",
+      "name": "Shredder",
+      "type": "Strings",
+      "input": "uf+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit +28a (+21)\n* Low crush 8~29\n* Floating state 30~32"
+        }
+      ]
+    },
+    {
+      "id": "move-74",
+      "name": "Rising Toe Kick",
+      "type": "Single Hits",
+      "input": "uf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 8~29\n* Floating state 30~32"
+        }
+      ]
+    },
+    {
+      "id": "move-75",
+      "name": "Ki Charge",
+      "type": "Single Hits",
+      "input": "1+2+3+4",
+      "properties": []
+    },
+    {
+      "id": "move-76",
+      "name": "Sway",
+      "type": "Strings",
+      "input": "d,db,b",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cannot be buffered\n* Moves backward up to 1.04\n* Less movement against distant opponent\n* cs1~10 against distant opponent\n* Less movement from attack transition\n* No crouching state from attack transition\n* High evasion from attack transition\n* Transition to r9 DPD from 2f with df\n* Minimum 3f needed to enter (one for each directional)\n* High crush 1~14"
+        }
+      ]
+    },
+    {
+      "id": "move-77",
+      "name": "Crouch Dash",
+      "type": "Strings",
+      "input": "d,df",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cannot be buffered\n* 1.12 movement over 20f\n* Transition to CS from 2f with f\n* Transition to r9 DPD from 3~19f with df\n* Transition to r6? hFC with alternate input d,DF\n** Cannot access stance moves\n* Cancel to r1 block from 2f with b\n* Cancel to r1 sidestep from 2f with u\n* High crush 1~21"
+        }
+      ]
+    },
+    {
+      "id": "move-78",
+      "name": "Cormorant Step",
+      "type": "Stances",
+      "input": "d,df,f",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cannot be buffered\n* t35 from 1+2~f\n* Exits crouching state on frame 1\n* 1.63 movement over 25f (includes CD)\n* 1.98 movement over 35f from 1+2 cancel\n* Transition to r9 DPD from 2f with df\n* Cancel to r1 sidestep from 2f with u\n* Cancel to r1 block from 24f with b"
+        }
+      ]
+    },
+    {
+      "id": "move-79",
+      "name": "f,F+2",
+      "type": "Strings",
+      "input": "f,F+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Alternate input FC.df+2"
+        }
+      ]
+    },
+    {
+      "id": "move-80",
+      "name": "Juggernaut",
+      "type": "Strings",
+      "input": "f,F+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~17, i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit\n* Cancel to -21 -11 standing with B\n* Alternate input FC.df+2,1"
+        }
+      ]
+    },
+    {
+      "id": "move-81",
+      "name": "Bulldozer",
+      "type": "Strings",
+      "input": "f,F+2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~17, i36~38"
+        },
+        {
+          "type": "properties",
+          "value": "* Cancel to -28 -18 FC with B\n* Alternate input FC.df+2,2\n* High crush 33~83"
+        }
+      ]
+    },
+    {
+      "id": "move-82",
+      "name": "Phoenix Bone Breaker",
+      "type": "Strings",
+      "input": "f,F+2:1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~17, i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Chip damage (7)\n* Combo from 1st hit\n* Alternate input FC.df+2:1"
+        }
+      ]
+    },
+    {
+      "id": "move-83",
+      "name": "f,F+3",
+      "type": "Strings",
+      "input": "f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 10~31\n* Floating state 32~34"
+        }
+      ]
+    },
+    {
+      "id": "move-84",
+      "name": "f,F+3,4",
+      "type": "Strings",
+      "input": "f,F+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit +27a (+10)\n* Low crush 10~24\n* Floating state 25~27"
+        }
+      ]
+    },
+    {
+      "id": "move-85",
+      "name": "Double Hop Kick High",
+      "type": "Strings",
+      "input": "f,F+3,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Low crush 10~24\n* Floating state 25~27"
+        }
+      ]
+    },
+    {
+      "id": "move-86",
+      "name": "Double Hop Kick Low",
+      "type": "Strings",
+      "input": "f,F+3,4,d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 10~24\n* Floating state 25~27\n* High crush 58~101"
+        }
+      ]
+    },
+    {
+      "id": "move-87",
+      "name": "Triple Kick Combo",
+      "type": "Strings",
+      "input": "f,F+3,4,f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,i27~29"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Low crush 10~24\n* Floating state 25~27"
+        }
+      ]
+    },
+    {
+      "id": "move-88",
+      "name": "Neutron Bomb",
+      "type": "Throws",
+      "input": "f,F+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i27~34"
+        },
+        {
+          "type": "properties",
+          "value": "* Chip damage (8)\n* Low crush 14~31\n* Floating state 32~34"
+        }
+      ]
+    },
+    {
+      "id": "move-89",
+      "name": "Delayed Rising Toe Kick",
+      "type": "Strings",
+      "input": "uf,n,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Can be delayed 12f after jump\n* Additional range with delay\n* Low crush 8~29\n* Floating state 30~32"
+        }
+      ]
+    },
+    {
+      "id": "move-90",
+      "name": "Turbulent Hammer",
+      "type": "Strings",
+      "input": "f,f,F+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike on 2nd hit\n* Elbow\n* Transition to throw on airborne hit\n* +17d FDFA without throw transition"
+        }
+      ]
+    },
+    {
+      "id": "move-91",
+      "name": "ws1",
+      "type": "While Standing",
+      "input": "ws1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-92",
+      "name": "Enfolding Dragon",
+      "type": "While Standing",
+      "input": "ws1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Move can be delayed 10f\n* Input can be delayed 10f\n* Combo from 1st CH with 10f delay\n* Transition to t59 r19 SWA +1 +14g +15 from 39~44f with b"
+        }
+      ]
+    },
+    {
+      "id": "move-93",
+      "name": "ws1,2~b",
+      "type": "While Standing",
+      "input": "ws1,2~b",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,"
+        },
+        {
+          "type": "properties",
+          "value": "* Sidestep u can be buffered from 44f\n* SWA attacks can be buffered from 51f\n* Transition to cs1~ r9 -10 +4 +5 DPD from 60f with df"
+        }
+      ]
+    },
+    {
+      "id": "move-94",
+      "name": "Thunder Palm",
+      "type": "While Standing",
+      "input": "ws2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-95",
+      "name": "ws3",
+      "type": "While Standing",
+      "input": "ws3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee"
+        }
+      ]
+    },
+    {
+      "id": "move-96",
+      "name": "Shioh",
+      "type": "While Standing",
+      "input": "ws3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Move can be delayed 12f\n* Input can be delayed 12f\n* Combo from 1st hit with 12f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-97",
+      "name": "Toe Smash",
+      "type": "While Standing",
+      "input": "ws4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12"
+        }
+      ]
+    },
+    {
+      "id": "move-98",
+      "name": "Turn Thruster",
+      "type": "Stances",
+      "input": "SS.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Elbow\n* Chip damage (6)\n* Effective minimum startup 30f"
+        }
+      ]
+    },
+    {
+      "id": "move-99",
+      "name": "Pump In Pedal",
+      "type": "Stances",
+      "input": "SS.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Effective minimum startup 28f"
+        }
+      ]
+    },
+    {
+      "id": "move-100",
+      "name": "Somersault Kick Warm-Up Moves",
+      "type": "While Standing",
+      "input": "FC.D",
+      "properties": []
+    },
+    {
+      "id": "move-101",
+      "name": "Incomplete Somersault",
+      "type": "While Standing",
+      "input": "FC.D,U+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Deals recoverable damage to self"
+        }
+      ]
+    },
+    {
+      "id": "move-102",
+      "name": "Deep Dive",
+      "type": "Stances",
+      "input": "CD.df",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Buffer window 2~9f (3~9f from SWA)\n* Sidestep can be buffered with u\n* DPD attacks can be buffered\n* While standing attacks can be buffered\n* Cancel to r1 block from 10f with b\n* High crush 1~30"
+        }
+      ]
+    },
+    {
+      "id": "move-103",
+      "name": "Thruster",
+      "type": "Single Hits",
+      "input": "qcf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Chip damage (4)"
+        }
+      ]
+    },
+    {
+      "id": "move-104",
+      "name": "Phoenix Smasher",
+      "type": "Heat Moves",
+      "input": "qcf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "Heat Engager\n\nBalcony Break\n* H.CS.2 with Heat\n* Clean Hit range 2.3\n* 30 damage without Clean Hit"
+        }
+      ]
+    },
+    {
+      "id": "move-105",
+      "name": "Gengetsu",
+      "type": "Single Hits",
+      "input": "qcf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Clean hit range 2.0\n* 17 damage on hit without Clean Hit\n* +7 on CH without Clean Hit\n* High crush 7~40"
+        }
+      ]
+    },
+    {
+      "id": "move-106",
+      "name": "Gunba",
+      "type": "Single Hits",
+      "input": "qcf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i32~33"
+        },
+        {
+          "type": "properties",
+          "value": "* Cancel to t41 FC with B\n* High crush 1~33"
+        }
+      ]
+    },
+    {
+      "id": "move-107",
+      "name": "Mountain Raze",
+      "type": "Single Hits",
+      "input": "qcf+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Knee\n* High Evasion (brief)\n* Low crush 19~39"
+        }
+      ]
+    },
+    {
+      "id": "move-108",
+      "name": "Phoenix Axe",
+      "type": "Stances",
+      "input": "DPD.df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Homing\n* Effective minimum startup 29f"
+        }
+      ]
+    },
+    {
+      "id": "move-109",
+      "name": "DPD.df+2",
+      "type": "Stances",
+      "input": "DPD.df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Effective minimum startup 24f"
+        }
+      ]
+    },
+    {
+      "id": "move-110",
+      "name": "Quick Petal Strike",
+      "type": "Stances",
+      "input": "DPD.df+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Move can be delayed 10f\n* Input can be delayed 17f\n* Combo from 1st hit with 10f delay\n* 9 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-111",
+      "name": "Quick Lightning Breaker",
+      "type": "Stances",
+      "input": "DPD.df+2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Move can be delayed 10f\n* Input can be delayed 17f\n* Combo from 1st hit with 6f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-112",
+      "name": "Eigetsu",
+      "type": "Stances",
+      "input": "DPD.df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Effective minimum startup 27f\n* Clean Hit range 1\n* Damage without clean hit 20"
+        }
+      ]
+    },
+    {
+      "id": "move-113",
+      "name": "Incomplete Somersault",
+      "type": "Stances",
+      "input": "DPD.df+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~23,i51~61"
+        },
+        {
+          "type": "properties",
+          "value": "* Effective minimum startup 28f\n* t112 on hit\n* Deals recoverable damage to self\n* Low crush 16~35\n* Floating state 36~62\n* FDFA\n* 63~92"
+        }
+      ]
+    },
+    {
+      "id": "move-114",
+      "name": "Down Strike",
+      "type": "Stances",
+      "input": "OTG.d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* +4 on hit against standing opponent"
+        }
+      ]
+    },
+    {
+      "id": "move-115",
+      "name": "God Hammer Punch",
+      "type": "Single Hits",
+      "input": "qcb+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Chip damage (7)"
+        }
+      ]
+    },
+    {
+      "id": "move-116",
+      "name": "Rubber Band Attack",
+      "type": "Heat Moves",
+      "input": "qcb+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Clean Hit range 2.45\n* Heat Dash disables Clean Hit\n* 21 damage without Clean Hit"
+        }
+      ]
+    },
+    {
+      "id": "move-117",
+      "name": "Rapid Fire",
+      "type": "Single Hits",
+      "input": "qcb+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-118",
+      "name": "qcb+3,2",
+      "type": "Strings",
+      "input": "qcb+3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH +20d (+13)"
+        }
+      ]
+    },
+    {
+      "id": "move-119",
+      "name": "Petal Strike",
+      "type": "Strings",
+      "input": "qcb+3,2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, ,i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 1st CH +63a (+47) T!"
+        }
+      ]
+    },
+    {
+      "id": "move-120",
+      "name": "Lightning Breaker",
+      "type": "Strings",
+      "input": "qcb+3,2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, ,i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Combo from 1st CH +15d (-20) FDFA\n* Move can be delayed 10f\n* Input can be delayed 17f"
+        }
+      ]
+    },
+    {
+      "id": "move-121",
+      "name": "Kawaragoma",
+      "type": "Single Hits",
+      "input": "qcb+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Chip damage (6)"
+        }
+      ]
+    },
+    {
+      "id": "move-122",
+      "name": "Unseen Gust",
+      "type": "Single Hits",
+      "input": "qcb+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* High evasion"
+        }
+      ]
+    },
+    {
+      "id": "move-123",
+      "name": "Phoenix Demolisher",
+      "type": "Heat Moves",
+      "input": "H.f,F+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~17, i29~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Consumes 270F of Heat\n* Combos from 1st hit\n* Jails from 1st hit\n* 7 chip damage"
+        }
+      ]
+    },
+    {
+      "id": "move-124",
+      "name": "Over The Shoulder",
+      "type": "Throws",
+      "input": "1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Throw break 1 or 2\n* Side switch"
+        }
+      ]
+    },
+    {
+      "id": "move-125",
+      "name": "Shoulder Pop",
+      "type": "Throws",
+      "input": "2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Throw break 1 or 2\n* Side switch\n* Transition to FUFT on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-126",
+      "name": "Chest Crusher",
+      "type": "Single Hits",
+      "input": "2+4~b",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Throw break 2"
+        }
+      ]
+    },
+    {
+      "id": "move-127",
+      "name": "Reverse Neck Throw",
+      "type": "Throws",
+      "input": "Back Throw.1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw cannot be broken"
+        }
+      ]
+    },
+    {
+      "id": "move-128",
+      "name": "Piggyback Throw",
+      "type": "Throws",
+      "input": "Back Throw.2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Throw cannot be broken"
+        }
+      ]
+    },
+    {
+      "id": "move-129",
+      "name": "Ultimate Tackle",
+      "type": "While Standing",
+      "input": "FC.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1+2\n* Transition to Takedown on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-130",
+      "name": "Ultimate Punch",
+      "type": "While Standing",
+      "input": "FC.1+2,2,1,2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": ",i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1 or 2\n* Alternate input 1,2,1,2"
+        }
+      ]
+    },
+    {
+      "id": "move-131",
+      "name": "Ultimate Punishment",
+      "type": "While Standing",
+      "input": "FC.1+2,2,d+1,1,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": ",i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1\n* Transition to Arm Breaker with 1+2 after third hit"
+        }
+      ]
+    },
+    {
+      "id": "move-132",
+      "name": "Arm Breaker",
+      "type": "While Standing",
+      "input": "FC.1+2,1+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": ",i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1+2"
+        }
+      ]
+    },
+    {
+      "id": "move-133",
+      "name": "Dragon Screw",
+      "type": "Single Hits",
+      "input": "Left Throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1"
+        }
+      ]
+    },
+    {
+      "id": "move-134",
+      "name": "Fall Away",
+      "type": "Single Hits",
+      "input": "Right Throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 2\n* Side switch"
+        }
+      ]
+    },
+    {
+      "id": "move-135",
+      "name": "Foot Launch",
+      "type": "Single Hits",
+      "input": "b+1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1\n* Side switch\n* Transition to BT on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-136",
+      "name": "Kongo Blast",
+      "type": "Single Hits",
+      "input": "df+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1"
+        }
+      ]
+    },
+    {
+      "id": "move-137",
+      "name": "Phoenix Smasher",
+      "type": "Heat Moves",
+      "input": "H.df+1+3,qcf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Consumes Heat\n* Strict qcf input required (d,f does not work)\n* Perfect input window 55-56f"
+        }
+      ]
+    },
+    {
+      "id": "move-138",
+      "name": "Kongo Blast > Phoenix Smasher",
+      "type": "Strings",
+      "input": "df+1+3,qcf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* H.df+1+3,qcf+2 with Heat\n* Strict qcf input required (d,f does not work)\n* Perfect input window 55-56f\n* Perfect input increases damage, wall carry"
+        }
+      ]
+    },
+    {
+      "id": "move-139",
+      "name": "Phoenix Smasher (Perfect Input)",
+      "type": "Stances",
+      "input": "df+1+3:H.qcf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Consumes Heat\n* Strict qcf input required (d,f does not work)\n* Perfect input window 55-56f\n* Perfect input increases damage, wall carry"
+        }
+      ]
+    },
+    {
+      "id": "move-140",
+      "name": "Phoenix Smasher (Perfect Input)",
+      "type": "Single Hits",
+      "input": "df+1+3:qcf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* H.df+1+3:qcf+2 with Heat\n* Strict qcf input required (d,f does not work)\n* Perfect input window 55-56f\n* Perfect input increases damage, wall carry"
+        }
+      ]
+    },
+    {
+      "id": "move-141",
+      "name": "Push Away",
+      "type": "Strings",
+      "input": "f,F+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Throw break 1+2\n* Side switch if broken\n* +0 FUFA if broken at wall"
+        }
+      ]
+    },
+    {
+      "id": "move-142",
+      "name": "Twist and Shout",
+      "type": "Single Hits",
+      "input": "uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Throw break 1+2"
+        }
+      ]
     }
   ]
 }

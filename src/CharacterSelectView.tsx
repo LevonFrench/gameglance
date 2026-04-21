@@ -93,7 +93,7 @@ export const CharacterSelectView: React.FC<Props> = ({
       margin: '0 auto',
       flex: 1,
       alignContent: 'flex-start',
-      animation: disableInitialAnimation ? 'none' : 'fadeInUp 0.6s cubic-bezier(0.16, 1, 0.3, 1) 0.2s both',
+      animation: disableInitialAnimation ? 'none' : 'fadeInUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both',
     }}>
       {sortedCharacters.map((character, index) => {
         const accentColor = getCardColor(index);
@@ -144,6 +144,7 @@ export const CharacterSelectView: React.FC<Props> = ({
                 ? `0 20px 40px ${accentColor}25, 0 0 0 1px ${accentColor}50` 
                 : '0 4px 12px rgba(0,0,0,0.05)',
               zIndex: isHovered ? 10 : 1,
+              animation: disableInitialAnimation ? 'none' : `cardTurnIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) ${50 + index * 30}ms both`,
             }}
           >
             {/* Tiled Watermark */}
@@ -320,7 +321,7 @@ export const CharacterSelectView: React.FC<Props> = ({
       <header style={{
         textAlign: 'center',
         marginBottom: 'var(--space-2xl)',
-        animation: disableInitialAnimation ? 'none' : 'fadeInUp 0.5s cubic-bezier(0.16, 1, 0.3, 1) 0.1s both',
+        animation: disableInitialAnimation ? 'none' : 'fadeInUp 0.25s cubic-bezier(0.16, 1, 0.3, 1) 0.05s both',
         position: 'relative',
         maxWidth: '1400px',
         width: '100%',

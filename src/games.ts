@@ -11,6 +11,10 @@ export const SUPPORTED_GAMES: ReadonlyArray<Readonly<GameDefinition>> = [
     platform: "PS4, Xbox One, PC, Switch, PS5, Xbox Series X/S",
     rosterCount: 44,
     tags: ['Anime', 'Vs.'],
+    links: [
+      { title: 'Official Site / Patch Notes', url: 'https://en.bandainamcoent.eu/dragon-ball/dragon-ball-fighterz' },
+      { title: 'Dustloop Wiki (DBFZ)', url: 'https://dustloop.com/w/DBFZ' }
+    ],
     notationSystem: 'numpad',
     systemMechanics: [
       { name: 'Assists', description: 'Call partner characters for assist attacks. Three assist types (A/B/C) per character.'  },
@@ -1801,6 +1805,10 @@ rosterCount: 12,
 rosterCount: 33,
 
             tags: ['Anime', 'Modern'],
+    links: [
+      { title: 'Official Site / Patch Notes', url: 'https://www.guiltygear.com/ggst/en/' },
+      { title: 'Dustloop Wiki (GGST)', url: 'https://dustloop.com/w/GGST' }
+    ],
 
     
     systemMechanics: [
@@ -2691,6 +2699,10 @@ rosterCount: 24,
 rosterCount: 25,
 
             tags: ['3D', 'Modern'],
+    links: [
+      { title: 'Official Site / Patch Notes', url: 'https://www.mortalkombat.com/' },
+      { title: 'TestYourMight', url: 'https://testyourmight.com/' }
+    ],
 
     characters: [
       { id: 'ashrah', name: 'Ashrah', moveCount: 0 },
@@ -3952,6 +3964,11 @@ rosterCount: 10,
 rosterCount: 25,
 
             tags: ['3D', 'Modern'],
+    links: [
+      { title: 'Official Site / Patch Notes', url: 'https://www.streetfighter.com/6/' },
+      { title: 'Official Frame Data (CFN)', url: 'https://www.streetfighter.com/6/buckler/character' },
+      { title: 'SuperCombo Wiki (SF6)', url: 'https://wiki.supercombo.gg/w/Street_Fighter_6' }
+    ],
 
     
     systemMechanics: [
@@ -4596,6 +4613,7 @@ rosterCount: 21,
     mameRomset: "",
 
     name: "Tekken 8",
+    notationSystem: 'tekken',
     tagline: "Fist Meets Fate",
 
     developer: "Bandai Namco",
@@ -4603,15 +4621,59 @@ rosterCount: 21,
     releaseYear: 2024,
     platform: "PS5, Xbox Series X/S, PC",
 
-rosterCount: 3,
+rosterCount: 33,
 
         characters: [
-          { id: 'kazuya', name: 'Kazuya Mishima', moveCount: 17 },
-          { id: 'devil-jin', name: 'Devil Jin', moveCount: 17 },
-          { id: 'heihachi', name: 'Heihachi Mishima', moveCount: 17 }
+          { id: 'alisa-bosconovitch', name: 'Alisa Bosconovitch', moveCount: 189 },
+          { id: 'asuka', name: 'Asuka', moveCount: 146 },
+          { id: 'azucena-ortiz', name: 'Azucena Ortiz', moveCount: 150 },
+          { id: 'bryan', name: 'Bryan', moveCount: 169 },
+          { id: 'claudio', name: 'Claudio', moveCount: 101 },
+          { id: 'devil-jin', name: 'Devil Jin', moveCount: 141 },
+          { id: 'dragunov', name: 'Dragunov', moveCount: 141 },
+          { id: 'feng', name: 'Feng', moveCount: 148 },
+          { id: 'heihachi', name: 'Heihachi Mishima', moveCount: 145 },
+          { id: 'hwoarang', name: 'Hwoarang', moveCount: 209 },
+          { id: 'jack-8', name: 'Jack 8', moveCount: 199 },
+          { id: 'jin', name: 'Jin', moveCount: 128 },
+          { id: 'jun', name: 'Jun', moveCount: 149 },
+          { id: 'kazuya', name: 'Kazuya Mishima', moveCount: 136 },
+          { id: 'king', name: 'King', moveCount: 226 },
+          { id: 'kuma', name: 'Kuma', moveCount: 144 },
+          { id: 'lars-alexandersson', name: 'Lars Alexandersson', moveCount: 120 },
+          { id: 'law', name: 'Law', moveCount: 162 },
+          { id: 'lee', name: 'Lee', moveCount: 157 },
+          { id: 'leo-kliesen', name: 'Leo Kliesen', moveCount: 141 },
+          { id: 'leroy', name: 'Leroy', moveCount: 131 },
+          { id: 'lili', name: 'Lili', moveCount: 149 },
+          { id: 'nina', name: "Nina Williams", moveCount: 190 },
+          { id: 'panda', name: 'Panda', moveCount: 134 },
+          { id: 'paul', name: 'Paul Phoenix', moveCount: 143 },
+          { id: 'raven', name: 'Raven', moveCount: 177 },
+          { id: 'reina', name: 'Reina', moveCount: 152 },
+          { id: 'shaheen', name: 'Shaheen', moveCount: 88 },
+          { id: 'steve', name: 'Steve Fox', moveCount: 171 },
+          { id: 'victor', name: 'Victor', moveCount: 123 },
+          { id: 'xiaoyu', name: 'Ling Xiaoyu', moveCount: 172 },
+          { id: 'yoshimitsu', name: 'Yoshimitsu', moveCount: 311 },
+          { id: 'zafina', name: 'Zafina', moveCount: 146 }
         ],
 
-    tabs: ['Special Moves', 'Command Throws', 'Normal Throws', 'Normal Moves']
+    tabs: ['Heat Moves', 'Stances', 'While Standing', 'Strings', 'Single Hits', 'Throws', '10-Hit Combos'],
+    links: [
+      { title: 'Official Patch Notes (v3.00.02)', url: 'https://www.bandainamcoent.com/news/tekken-8-patch-notes-v3-00-02' },
+      { title: 'Okizeme Data Repository', url: 'https://okizeme.com' },
+      { title: 'Wavu Wiki', url: 'https://wavu.wiki' }
+    ],
+    systemMechanics: [
+      { name: 'Heat System', description: 'Enter Heat via Heat Burst (2+3) or Heat Engager. Enhances moves, deals chip damage, and halts match timer. When Heat ends, all character-specific powered-up states are removed.' },
+      { name: 'Heat Smash', description: 'Consumes all remaining Heat for a powerful attack. No longer causes wall splats as of v3.00.' },
+      { name: 'Heat Dash', description: 'Cancel a Heat Engager by pressing forward, consuming Heat to continue combo pressure. Combo scaling is 70% when used on grounded opponents.' },
+      { name: 'Rage System', description: 'Activates automatically at low health. Increases damage output and grants access to Rage Art (d/f+1+2).' },
+      { name: 'Recoverable Gauge', description: 'White health taken from certain hits or chip damage that can be restored by attacking or guarding against opponent attacks.' },
+      { name: 'Tornado', description: 'Universal combo extender that flips the opponent, leaving them vulnerable for further follow-ups.' },
+      { name: 'Power Crush', description: 'Armored moves that absorb mid and high attacks during their startup frames.' }
+    ]
 
   },
 
@@ -5695,18 +5757,24 @@ rosterCount: 14,
 
   {
 
-    id: 'virtua-fighter-5-ultimate-showdown',
+    id: 'virtua-fighter-5-revo',
 
     mameRomset: "",
 
-    name: "Virtua Fighter 5 Ultimate Showdown",
-    tagline: "Ultimate Showdown",
+    name: "Virtua Fighter 5 R.E.V.O. World Stage",
+    tagline: "World Stage",
 
     developer: "Sega",
 
-    releaseYear: 2021,
+    releaseYear: 2025,
 
-    platform: "PS4, PC",
+    platform: "PS5, Xbox Series X/S, Switch 2, PC",
+    
+    systemMechanics: [
+      { name: 'Triangle System', description: 'Strikes beat throws, throws beat guards, guards beat strikes.' },
+      { name: 'Offensive Move', description: 'Press P+K+G after a defensive move to flank your opponent and gain a frame advantage.' },
+      { name: 'Simplified Ukemi', description: 'Recover quickly after being knocked down by pressing any single button (P, K, or G).' }
+    ],
 
 rosterCount: 19,
 

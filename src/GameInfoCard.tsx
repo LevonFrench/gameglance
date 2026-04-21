@@ -1,11 +1,14 @@
 import React, { useState } from 'react';
 import type { GameDefinition } from './types';
+import type { ControllerType } from './glyphMap';
+import { GlyphSequence } from './GlyphSequence';
 
 interface Props {
   game: GameDefinition;
+  controller?: ControllerType;
 }
 
-export const GameInfoCard: React.FC<Props> = ({ game }) => {
+export const GameInfoCard: React.FC<Props> = ({ game, controller = 'xbox' }) => {
   const isDark = true;
   const [activeTab, setActiveTab] = useState<'info' | 'systems'>('systems');
   
@@ -122,6 +125,58 @@ export const GameInfoCard: React.FC<Props> = ({ game }) => {
                   <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.2rem' }}>{game.platform || 'Arcade'}</div>
                 </div>
               </div>
+              </div>
+              
+              {game.links && game.links.length > 0 && (
+                <div style={{ marginTop: 'var(--space-lg)', paddingTop: 'var(--space-lg)', borderTop: `1px solid ${isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'}` }}>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginBottom: 'var(--space-md)', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>External Resources</div>
+                  <div style={{ 
+                    display: 'grid', 
+                    gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', 
+                    gap: 'var(--space-md)' 
+                  }}>
+                    {game.links.map(link => (
+                      <a 
+                        key={link.title}
+                        href={link.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        style={{
+                          display: 'flex',
+                          alignItems: 'center',
+                          justifyContent: 'space-between',
+                          background: isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.02)',
+                          padding: '12px 16px',
+                          borderRadius: 'var(--radius-md)',
+                          color: 'var(--text-primary)',
+                          textDecoration: 'none',
+                          fontWeight: 600,
+                          fontSize: '0.9rem',
+                          border: `1px solid ${isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'}`,
+                          transition: 'all 0.2s ease',
+                        }}
+                        onMouseOver={(e) => {
+                          e.currentTarget.style.background = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.06)';
+                          e.currentTarget.style.borderColor = isDark ? 'rgba(255,255,255,0.15)' : 'rgba(0,0,0,0.15)';
+                          e.currentTarget.style.transform = 'translateY(-2px)';
+                        }}
+                        onMouseOut={(e) => {
+                          e.currentTarget.style.background = isDark ? 'rgba(255,255,255,0.03)' : 'rgba(0,0,0,0.02)';
+                          e.currentTarget.style.borderColor = isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)';
+                          e.currentTarget.style.transform = 'translateY(0)';
+                        }}
+                      >
+                        <span style={{ overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{link.title}</span>
+                        <svg style={{ marginLeft: '12px', flexShrink: 0, width: '16px', height: '16px', opacity: 0.5 }} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                          <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                          <polyline points="15 3 21 3 21 9"></polyline>
+                          <line x1="10" y1="14" x2="21" y2="3"></line>
+                        </svg>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
           )}
 
@@ -180,21 +235,16 @@ export const GameInfoCard: React.FC<Props> = ({ game }) => {
                         <div style={{ 
                           marginTop: '16px', 
                           display: 'flex',
-                          alignItems: 'center'
+                          alignItems: 'center',
+                          gap: 'var(--space-sm)',
+                          flexWrap: 'wrap'
                         }}>
-                          <div style={{ 
-                            fontSize: '0.85rem', 
-                            fontWeight: 700,
-                            fontFamily: 'monospace', 
-                            color: isDark ? '#fff' : '#000', 
-                            background: isDark ? 'rgba(255,255,255,0.1)' : 'rgba(0,0,0,0.08)', 
-                            padding: '6px 12px', 
-                            borderRadius: '6px', 
-                            display: 'inline-block',
-                            border: `1px solid ${isDark ? 'rgba(255,255,255,0.15)' : 'rgba(0,0,0,0.15)'}`
-                          }}>
-                            {mech.input}
-                          </div>
+                          <GlyphSequence 
+                             inputs={[mech.input]} 
+                             notationSystem={game.notationSystem || 'traditional'} 
+                             controller={controller} 
+                             isDark={isDark} 
+                          />
                         </div>
                       )}
                     </div>

@@ -1,107 +1,3253 @@
 {
+  "id": "hwoarang",
   "name": "Hwoarang",
-  "character": "Hwoarang",
   "movesList": [
     {
-      "name": "Rage Art: Sky Burial",
-      "type": "special",
-      "input": "312"
-    },
-    {
+      "id": "move-0",
       "name": "Heat Burst",
-      "type": "special",
-      "input": "23"
+      "type": "Heat Moves",
+      "input": "2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Burst\n* Cancel to r45 with b,b on frame 42\n* 2 chip damage on block\n* 12 chip damage on hit\n* Only deals recoverable damage\n* Cannot cause a K.O.\n* Power crush 7~16"
+        }
+      ]
     },
     {
-      "name": "Left Flamingo Stance",
-      "type": "special",
-      "input": "63"
+      "id": "move-1",
+      "name": "H.RFS.d+4",
+      "type": "Heat Moves",
+      "input": "H.RFS.d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFF\n* Partially uses remaining Heat time\n** RFS.d+4,3,4 airborne combo guaranteed on normal hit\n* Increased chip damage scaling on block during heat\n** 4 chip damage on block in heat"
+        }
+      ]
     },
     {
-      "name": "Right Flamingo Stance",
-      "type": "special",
-      "input": "64"
+      "id": "move-2",
+      "name": "H.RFS.d+4,3",
+      "type": "Heat Moves",
+      "input": "H.RFS.d+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21, i25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Airborne combo from 1st hit in heat\n** 8 dmg, +20a (+13) on hit \n** 23 total dmg from 1st hit\n* Increased chip damage scaling on block during heat\n** 3 chip damage on block in heat"
+        }
+      ]
     },
     {
-      "name": "Right Stance Change",
-      "type": "special",
-      "input": "34"
+      "id": "move-3",
+      "name": "Predator Bardiche",
+      "type": "Heat Moves",
+      "input": "H.RFS.d+4,3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21, ,i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd hit\n* Airborne combo from 1st hit\n** +10a (+9) on hit\n** 15 dmg, 38 total dmg from 1st hit \n* Increased chip damage scaling on block during heat\n** 9 chip damage on block in heat\n* Low crush 22~"
+        }
+      ]
     },
     {
-      "name": "Sky Rocket",
-      "type": "special",
-      "input": "6,5,2,32"
+      "id": "move-4",
+      "name": "H.RFS.f+4",
+      "type": "Heat Moves",
+      "input": "H.RFS.f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i8, i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st block\n* Remains in RFS\n* 2 chip damage on block"
+        }
+      ]
     },
     {
-      "name": "Hunting Hawk",
-      "type": "special",
-      "input": "93,4,3"
+      "id": "move-5",
+      "name": "Right Viper Combo > Right Sword",
+      "type": "Heat Moves",
+      "input": "H.RFS.f+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i8, i10, i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 1st or 2nd hit\n* Transition to RFF\n* Partially uses remaining Heat time\n* Increased chip damage scaling on block during heat\n** 2 chip damage on block"
+        }
+      ]
     },
     {
-      "name": "Peacekeeper",
-      "type": "special",
-      "input": "6,64"
+      "id": "move-6",
+      "name": "Trinity Claymore",
+      "type": "Heat Moves",
+      "input": "H.2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i18~19, i29"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Smash\n* Balcony Break\n* Jails\n* Transition to +13d attack throw on hit\n* 5 chip damage on block\n* Also possible during RFF and LFS\n* Transition to RFS\n* Low crush 55"
+        }
+      ]
     },
     {
-      "name": "Backlash",
-      "type": "special",
-      "input": "34(inRFF)"
+      "id": "move-7",
+      "name": "Sky Burial",
+      "type": "Stances",
+      "input": "R.df+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\n* Possible during RFF, LFS and RFS\n* Power crush 8~"
+        }
+      ]
     },
     {
+      "id": "move-8",
+      "name": "Jab",
+      "type": "Single Hits",
+      "input": "1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Recovers 2f faster on hit or block (t27 r17)"
+        }
+      ]
+    },
+    {
+      "id": "move-9",
+      "name": "1,1",
+      "type": "Strings",
+      "input": "1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st block\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-10",
+      "name": "1,1,3",
+      "type": "Strings",
+      "input": "1,1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-11",
       "name": "Home Surgery",
-      "type": "special",
-      "input": "1,1,3,3"
+      "type": "Strings",
+      "input": "1,1,3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 3rd hit with 1F delay\n* Move can be delayed by 10F"
+        }
+      ]
     },
     {
-      "name": "Chainsaw Heel",
-      "type": "special",
-      "input": "4,4,4,3"
+      "id": "move-12",
+      "name": "Left Right Combo",
+      "type": "Strings",
+      "input": "1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st block with 4F delay\n* Combo from 1st hit with 4F delay\n* Transition to LFS with 3 (+3/+12g?/+12)\n* Transition to RFS with 4 (+3/+12g?/+12)"
+        }
+      ]
     },
     {
-      "name": "Plasma Blade",
-      "type": "special",
-      "input": "43"
+      "id": "move-13",
+      "name": "Rejector",
+      "type": "Strings",
+      "input": "1,2,f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Wall Crush +21g on hit\n\n\n* Combo from 2nd CH with 4F delay"
+        }
+      ]
     },
     {
+      "id": "move-14",
+      "name": "Rejection",
+      "type": "Strings",
+      "input": "1,2,f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH with 3F delay\n* Move can be delayed by 4F\n* Low crush 14~"
+        }
+      ]
+    },
+    {
+      "id": "move-15",
+      "name": "Right Jab",
+      "type": "Single Hits",
+      "input": "2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to LFS with 3 (+3/+11g/+12)\n* Transition to RFS with 4 (+3/+11g/+12)\n* +19, +27, +28 in framedata display (bug?) \n* 70% scaling on next hit"
+        }
+      ]
+    },
+    {
+      "id": "move-16",
+      "name": "Right Jab Side Kick",
+      "type": "Strings",
+      "input": "2,f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Wall Crush +21g on hit\n\n\n* Combo from 1st hit with 1F delay\n* Combo from 1st CH with 4F delay"
+        }
+      ]
+    },
+    {
+      "id": "move-17",
+      "name": "Right Jab > Spinning Back Kick",
+      "type": "Strings",
+      "input": "2,f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH with 3F delay\n* Low crush 14~"
+        }
+      ]
+    },
+    {
+      "id": "move-18",
+      "name": "3",
+      "type": "Single Hits",
+      "input": "3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        }
+      ]
+    },
+    {
+      "id": "move-19",
+      "name": "3,3",
+      "type": "Strings",
+      "input": "3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st block\n* Combo from 1st CH\n* -7c on crouching hit\n* Transition to r17 LFS with F (+2/+8/+13)"
+        }
+      ]
+    },
+    {
+      "id": "move-20",
+      "name": "Siege Mortar Combo",
+      "type": "Strings",
+      "input": "3,3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, ,i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd CH with 8F delay\n* Move can be delayed by 10F"
+        }
+      ]
+    },
+    {
+      "id": "move-21",
+      "name": "Left Kicks",
+      "type": "Strings",
+      "input": "3,3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, ,i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH with 8F delay\n* Move can be delayed by 10F"
+        }
+      ]
+    },
+    {
+      "id": "move-22",
+      "name": "Left Kicks > Right Hook Kick",
+      "type": "Strings",
+      "input": "3,3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, ,i21~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFS\n* Combo from 2nd CH with 8F delay\n* Move can be delayed by 10F"
+        }
+      ]
+    },
+    {
+      "id": "move-23",
+      "name": "Left Kicks > Backlash",
+      "type": "Strings",
+      "input": "3,3,f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, ,i21~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* -1 on block on average. Frame advantage may range from -4~+2 on block\n* Combo from 2nd CH with 5F delay\n* Move can be delayed by 10F"
+        }
+      ]
+    },
+    {
+      "id": "move-24",
+      "name": "Flying Eagle",
+      "type": "Single Hits",
+      "input": "3~4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22,i7"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Input 4 the following frame after 3 to power up\n** 37dmg, +1 oB, +42a (+16) oH\n* Low crush 16~"
+        }
+      ]
+    },
+    {
+      "id": "move-25",
+      "name": "4",
+      "type": "Single Hits",
+      "input": "4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12"
+        }
+      ]
+    },
+    {
+      "id": "move-26",
+      "name": "Right Left Kick Combo",
+      "type": "Strings",
+      "input": "4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12, i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break on CH\n* Combo from 1st hit\n* +5c on crouching hit\n* Cancel the second hit and transition to r8 LFS with F (-6/+5)"
+        }
+      ]
+    },
+    {
+      "id": "move-27",
+      "name": "4,4",
+      "type": "Strings",
+      "input": "4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12, i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st block\n* Combo from 1st hit\n* Transition to RFS"
+        }
+      ]
+    },
+    {
+      "id": "move-28",
+      "name": "Right Kicks > Chainsaw Heel",
+      "type": "Strings",
+      "input": "4,4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12, ,i25~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFF\n* Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-29",
+      "name": "4,4,4",
+      "type": "Strings",
+      "input": "4,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12, ,i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFF\n* Combo from 2nd CH with 1F delay\n* Cancel and transition to r15 RFS with F (-17/-6)\n* Input can be delayed by 1F\n* Move cannot be delayed\n* Low crush 19~"
+        }
+      ]
+    },
+    {
+      "id": "move-30",
+      "name": "Right Kicks > Raptor Combo",
+      "type": "Strings",
+      "input": "4,4,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12, ,i31~32"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Tornado\n* Combo from 3rd hit with 4F delay\n* Input can be delayed by 4F\n* Move cannot be delayed\n* 6 chip damage on block\n* Forces backroll on hit (opponent recovers crouching)\n* Alternate input:(RFS.u+4),4\n* Low crush 20~"
+        }
+      ]
+    },
+    {
+      "id": "move-31",
+      "name": "Disrespect",
+      "type": "Single Hits",
+      "input": "1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to BT"
+        }
+      ]
+    },
+    {
+      "id": "move-32",
+      "name": "Motion Switch",
+      "type": "Single Hits",
+      "input": "3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to RFF\n* Transition to r13? standing block with B"
+        }
+      ]
+    },
+    {
+      "id": "move-33",
+      "name": "Rusty Knife",
+      "type": "Single Hits",
+      "input": "f+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-34",
+      "name": "Left Flamingo Feint",
+      "type": "Single Hits",
+      "input": "f+3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to LFS\n* Sidesteps to the right\n* Can move forwards and backwards with F and B\n* Can sidestep with U and D\n* Cannot block or crouch in stance"
+        }
+      ]
+    },
+    {
+      "id": "move-35",
+      "name": "Cheap Shot Snap Kick",
+      "type": "Single Hits",
+      "input": "f+3~3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Sidesteps to the right"
+        }
+      ]
+    },
+    {
+      "id": "move-36",
+      "name": "Right Hook Kick",
+      "type": "Single Hits",
+      "input": "f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~23"
+        },
+        {
+          "type": "properties",
+          "value": "* +10~+16 guaranteed on CH depending on frame advantage\n* Transition to RFS"
+        }
+      ]
+    },
+    {
+      "id": "move-37",
+      "name": "Push Hands",
+      "type": "Single Hits",
+      "input": "f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Also possible during RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-38",
+      "name": "df+1",
+      "type": "Single Hits",
+      "input": "df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Also possible during RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-39",
+      "name": "Left Uppercut & Middle Kick",
+      "type": "Strings",
+      "input": "df+1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit \n* Transition to LFS"
+        }
+      ]
+    },
+    {
+      "id": "move-40",
+      "name": "Right Uppercut",
+      "type": "Single Hits",
+      "input": "df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* +4s on crouching normal hit\n* Also possible during RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-41",
+      "name": "df+3",
+      "type": "Single Hits",
+      "input": "df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Cancel and transition to r1 LFS with F_U_D at frame 20 of move startup\n* Power up if an attack is absorbed\n** Reversal Break\n** 2 chip damage on block\n** -9 on block\n* Power crush 7~21"
+        }
+      ]
+    },
+    {
+      "id": "move-42",
+      "name": "Double Claymore",
+      "type": "Strings",
+      "input": "df+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 7F delay\n* Move can be delayed by 5F\n* Input can be delayed by 7F\n* Power up if an attack is absorbed by previous hit\n** Reversal Break?\n** 4 chip damage on block\n** -9 on block"
+        }
+      ]
+    },
+    {
+      "id": "move-43",
+      "name": "Middle Claymore",
+      "type": "Single Hits",
+      "input": "df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break on CH\n* Transition to RFF\n* Wall splats"
+        }
+      ]
+    },
+    {
+      "id": "move-44",
+      "name": "Ignition Barrage",
+      "type": "Heat Moves",
+      "input": "df+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13,i14,i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +43d (+35)\n\n* Jails\n* 5 chip damage on block\n* Also possible during RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-45",
+      "name": "Crouch Jab",
+      "type": "Single Hits",
+      "input": "d+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to Standing with f\n* +6c on crouching hit\n* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-46",
+      "name": "Crouch Straight",
+      "type": "Single Hits",
+      "input": "d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* +7c on crouching hit\n* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-47",
+      "name": "d+3",
+      "type": "Single Hits",
+      "input": "d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        },
+        {
+          "type": "properties",
+          "value": "-2c on crouching hit"
+        }
+      ]
+    },
+    {
+      "id": "move-48",
+      "name": "Smash Low Right",
+      "type": "Strings",
+      "input": "d+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17, i21~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFS\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-49",
+      "name": "d+4",
+      "type": "Single Hits",
+      "input": "d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Also possible during RFF\n* High crush 6~55"
+        }
+      ]
+    },
+    {
+      "id": "move-50",
       "name": "Firecracker",
-      "type": "special",
-      "input": "24,4"
+      "type": "Strings",
+      "input": "d+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Jail from 1st normal hit\n* Combo from 1st CH\n* Also possible during RFF"
+        }
+      ]
     },
     {
-      "id": "n_0",
+      "id": "move-51",
+      "name": "Dark Halberd",
+      "type": "Single Hits",
+      "input": "d+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Transition to LFS on hit\n* High crush 6~54"
+        }
+      ]
+    },
+    {
+      "id": "move-52",
+      "name": "Sweep Kick",
+      "type": "Single Hits",
+      "input": "db+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Also possible during RFF\n* High crush 6~51"
+        }
+      ]
+    },
+    {
+      "id": "move-53",
+      "name": "db+4",
+      "type": "Single Hits",
+      "input": "db+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to r20 RFS with F (-1/+3/+10)\n* Also possible during RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-54",
+      "name": "Ankle Biter > Crescent Kick",
+      "type": "Strings",
+      "input": "db+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i17~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-55",
+      "name": "Stealth Needle",
+      "type": "Single Hits",
+      "input": "b+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Sidesteps to the right"
+        }
+      ]
+    },
+    {
+      "id": "move-56",
+      "name": "Parry",
+      "type": "Single Hits",
+      "input": "b+1+3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Parries high and mid punches. Pressing 4 on successful parry gives Shotgun Shuffle\n* Parry state 5~12?"
+        }
+      ]
+    },
+    {
+      "id": "move-57",
+      "name": "Shotgun Shuffle",
+      "type": "Stances",
+      "input": "b+1+3,P.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15,i8,i9"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Pressing 4 after successful parry"
+        }
+      ]
+    },
+    {
+      "id": "move-58",
+      "name": "Right Back Elbow",
+      "type": "Single Hits",
+      "input": "b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Good right sidestep tracking"
+        }
+      ]
+    },
+    {
+      "id": "move-59",
+      "name": "Left Plasma Blade",
+      "type": "Single Hits",
+      "input": "b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado"
+        }
+      ]
+    },
+    {
+      "id": "move-60",
+      "name": "Nose Bleeder",
+      "type": "Single Hits",
+      "input": "b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-61",
+      "name": "Fade-Away Kick",
+      "type": "Single Hits",
+      "input": "ub+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Opponent recovers non-guarding on hit (situational guaranteed follow-up)\n* Also possible during RFF\n* Low crush 5~17"
+        }
+      ]
+    },
+    {
+      "id": "move-62",
+      "name": "Knife Hand Strike",
+      "type": "Single Hits",
+      "input": "u+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Homing\n* Also possible during RFF\n* Sidesteps to the left\n* Wall splats"
+        }
+      ]
+    },
+    {
+      "id": "move-63",
+      "name": "Jump Kick",
+      "type": "Single Hits",
+      "input": "u+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Also possible during RFF\n* Transition to LFS\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-64",
+      "name": "Scorpion Side Kick",
+      "type": "Single Hits",
+      "input": "u+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Also possible during RFF\n* Transition to RFS\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-65",
+      "name": "Bloody Guillotine",
+      "type": "Single Hits",
+      "input": "u+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Also possible during RFF\n* Low crush 8~"
+        }
+      ]
+    },
+    {
+      "id": "move-66",
+      "name": "Bone Stinger",
+      "type": "Single Hits",
+      "input": "uf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Also possible during RFF\n* Low crush 13~"
+        }
+      ]
+    },
+    {
+      "id": "move-67",
+      "name": "uf+3",
+      "type": "Single Hits",
+      "input": "uf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~29"
+        },
+        {
+          "type": "properties",
+          "value": "* Also possible during RFF\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-68",
+      "name": "uf+3,4",
+      "type": "Strings",
+      "input": "uf+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~29, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Available on hit or block only\n* Jail from 1st block\n* Combo from 1st hit\n* Also possible during RFF\n* Transition to RFS\n* Floating state 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-69",
+      "name": "Hunting Hawk",
+      "type": "Strings",
+      "input": "uf+3,4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~29, ,i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Also possible during RFF\n* Floating state 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-70",
+      "name": "uf+4",
+      "type": "Single Hits",
+      "input": "uf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Also possible during RFF\n* Transition to RFS\n* Low crush 10~"
+        }
+      ]
+    },
+    {
+      "id": "move-71",
+      "name": "uf+4,4",
+      "type": "Strings",
+      "input": "uf+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23, i11~12"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Also possible during RFF\n* Transition to RFS\n* Low crush 2?~"
+        }
+      ]
+    },
+    {
+      "id": "move-72",
+      "name": "Air Raid",
+      "type": "Strings",
+      "input": "uf+4,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23, ,i9~10"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd CH\n* Also possible during RFF\n* Transition to RFS\n* Third hit is not low parryable if the first two hits connect. Parryable if the first two hits whiff."
+        }
+      ]
+    },
+    {
+      "id": "move-73",
+      "name": "uf+3+4",
+      "type": "Single Hits",
+      "input": "uf+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14,i9"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st block\n* Also possible during RFF\n* Transition to LFS with F (-2/+9)\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-74",
+      "name": "Flashing Trident",
+      "type": "Strings",
+      "input": "uf+3+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14,i9, i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Also possible during RFF\n* Transition to RFF\n* Low crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-75",
+      "name": "Ki Charge",
+      "type": "Single Hits",
+      "input": "1+2+3+4",
+      "properties": []
+    },
+    {
+      "id": "move-76",
+      "name": "Dynamite Heel",
+      "type": "Strings",
+      "input": "b,B+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i61~62"
+        },
+        {
+          "type": "properties",
+          "value": "* Also possible during RFF\n* Cancel and transition to r24? LFS at frame 25? with b,b"
+        }
+      ]
+    },
+    {
+      "id": "move-77",
+      "name": "Spinning Axe Kick",
+      "type": "Strings",
+      "input": "f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-78",
+      "name": "Peacekeeper",
+      "type": "Heat Moves",
+      "input": "f,F+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Balcony Break\n* Also possible during RFF\n* Transition to RFF (does not transition on Heat activation or when using Heat Dash)"
+        }
+      ]
+    },
+    {
+      "id": "move-79",
+      "name": "Right Flamingo Feint",
+      "type": "Strings",
+      "input": "f,n,4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to RFS\n* Sidesteps to the left\n* Can move forwards and backwards with F and B\n* Can sidestep with U and D\n* Cannot block or crouch in stance"
+        }
+      ]
+    },
+    {
+      "id": "move-80",
+      "name": "Shark Step",
+      "type": "Stances",
+      "input": "f,n,d,df",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cannot be buffered\n* Stance moves can be buffered out of heat dash\n* Recovers in FC at frame 20\n* Cancel to sidestep with u\n* Cancel to block with b"
+        }
+      ]
+    },
+    {
+      "id": "move-81",
+      "name": "Lethal Sky Rocket",
+      "type": "Strings",
+      "input": "f,n,df:4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* 3 chip damage on block\n* Also possible during RFF. \n* The 4 input can be delayed up to 10 frames after df input during RFF."
+        }
+      ]
+    },
+    {
+      "id": "move-82",
+      "name": "Delayed Rising Toe Kick",
+      "type": "Strings",
+      "input": "uf,n,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Also possible during RFF\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-83",
+      "name": "Flying Nerichagi",
+      "type": "Strings",
+      "input": "f,f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 9 chip damage on block\n* Also possible during RFF\n* Low crush 3~"
+        }
+      ]
+    },
+    {
+      "id": "move-84",
+      "name": "Torpedo Kick",
+      "type": "Strings",
+      "input": "f,f,F+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* 11 chip damage on block\n* Also possible during RFF\n* Sideswaps and leaves opponent backturned on hit\n* Transition to BT on block\n* Low crush 15~"
+        }
+      ]
+    },
+    {
+      "id": "move-85",
+      "name": "ws1",
+      "type": "While Standing",
+      "input": "ws1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        }
+      ]
+    },
+    {
+      "id": "move-86",
+      "name": "Twin Mustang",
+      "type": "While Standing",
+      "input": "ws1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Transition to RFS"
+        }
+      ]
+    },
+    {
+      "id": "move-87",
+      "name": "ws2",
+      "type": "While Standing",
+      "input": "ws2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-88",
+      "name": "Chonsan Spin",
+      "type": "While Standing",
+      "input": "ws2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 1st hit\n** +72a (+56) from 1st hit\n** Balcony Break from 1st hit\n* Transition to LFS\n* Low crush 17~"
+        }
+      ]
+    },
+    {
+      "id": "move-89",
+      "name": "Iron Heel",
+      "type": "While Standing",
+      "input": "ws3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~16"
+        }
+      ]
+    },
+    {
+      "id": "move-90",
+      "name": "ws4",
+      "type": "While Standing",
+      "input": "ws4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12"
+        }
+      ]
+    },
+    {
+      "id": "move-91",
+      "name": "Tsunami Kick",
+      "type": "While Standing",
+      "input": "ws4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12, i15~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st block\n* Combo from 1st hit\n* Recovers 3 frames faster on hit (r21 t52)\n* Transition to RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-92",
+      "name": "ws3+4",
+      "type": "While Standing",
+      "input": "ws3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Alternate input: f,n,d,df+3+4 (CD.3+4)\n* Transition to BT"
+        }
+      ]
+    },
+    {
+      "id": "move-93",
+      "name": "Spinning Scythe > Axe Heel",
+      "type": "While Standing",
+      "input": "ws3+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21, i21~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 7F delay\n* Input can be delayed by 7F\n* Move cannot be delayed"
+        }
+      ]
+    },
+    {
+      "id": "move-94",
+      "name": "SS.3",
+      "type": "Stances",
+      "input": "SS.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        }
+      ]
+    },
+    {
+      "id": "move-95",
+      "name": "Eruption",
+      "type": "Stances",
+      "input": "SS.3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, i9~10"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st block\n* Combo from 1st hit\n* +34a (+27) on 1st CH\n* Transition to LFS"
+        }
+      ]
+    },
+    {
+      "id": "move-96",
+      "name": "Spinning Trip Kick",
+      "type": "Stances",
+      "input": "SS.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-97",
+      "name": "[[Wall Jump Attack]]",
+      "type": "Stances",
+      "input": "(Back to wall).b,b,UB",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i36~38"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 14?~32?"
+        }
+      ]
+    },
+    {
+      "id": "move-98",
+      "name": "Left Plasma Blade",
+      "type": "Stances",
+      "input": "BT.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~16"
+        }
+      ]
+    },
+    {
+      "id": "move-99",
+      "name": "Plasma Blade",
+      "type": "Stances",
+      "input": "BT.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-100",
+      "name": "Spinning Low Kick",
+      "type": "Stances",
+      "input": "BT.d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 4~50"
+        }
+      ]
+    },
+    {
+      "id": "move-101",
+      "name": "Phalanx",
+      "type": "Stances",
+      "input": "CD.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* 8 chip damage on block\n* Also possible during RFF\n* Transition to LFS"
+        }
+      ]
+    },
+    {
+      "id": "move-102",
+      "name": "Sky Rocket",
+      "type": "Stances",
+      "input": "CD.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Also possible during RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-103",
+      "name": "Left Flamingo > Back Hand",
+      "type": "Stances",
+      "input": "LFS.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        }
+      ]
+    },
+    {
+      "id": "move-104",
+      "name": "Right Backhand",
+      "type": "Stances",
+      "input": "LFS.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFF\n* Links to 10-hit string"
+        }
+      ]
+    },
+    {
+      "id": "move-105",
+      "name": "2nd Hit",
+      "type": "Stances",
+      "input": "LFS.2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i20"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-106",
+      "name": "3rd Hit",
+      "type": "Stances",
+      "input": "LFS.2,2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, ,i14~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd hit (1st active frame only)\n* Combo from 2nd CH\n* Interrupt from 2nd block with i3"
+        }
+      ]
+    },
+    {
+      "id": "move-107",
+      "name": "4th Hit",
+      "type": "Stances",
+      "input": "LFS.2,2,3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, ,i22"
+        }
+      ]
+    },
+    {
+      "id": "move-108",
+      "name": "5th Hit",
+      "type": "Stances",
+      "input": "LFS.2,2,3,4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, ,i31"
+        },
+        {
+          "type": "properties",
+          "value": "* Interrupt from 4th block with i13"
+        }
+      ]
+    },
+    {
+      "id": "move-109",
+      "name": "6th Hit",
+      "type": "Stances",
+      "input": "LFS.2,2,3,4,3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, ,i22~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 5th hit"
+        }
+      ]
+    },
+    {
+      "id": "move-110",
+      "name": "7th Hit",
+      "type": "Stances",
+      "input": "LFS.2,2,3,4,3,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, ,i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Interrupt from 6th block with i18\n* Can be sidestepped"
+        }
+      ]
+    },
+    {
+      "id": "move-111",
+      "name": "8th Hit",
+      "type": "Stances",
+      "input": "LFS.2,2,3,4,3,4,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, ,i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Interrupt from 7th block with i3"
+        }
+      ]
+    },
+    {
+      "id": "move-112",
+      "name": "9th Hit",
+      "type": "Stances",
+      "input": "LFS.2,2,3,4,3,4,4,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, ,i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Airborne combo from 8th hit\n* Interrupt from 8th block with i33\n* Can be sidestepped"
+        }
+      ]
+    },
+    {
+      "id": "move-113",
+      "name": "10th Hit",
+      "type": "Stances",
+      "input": "LFS.2,2,3,4,3,4,4,4,4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, ,i16~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Airborne combo from 8th hit\n* Combo from 9th hit\n* Jail from 9th block\n* Low crush 5~"
+        }
+      ]
+    },
+    {
+      "id": "move-114",
+      "name": "LFS.3",
+      "type": "Stances",
+      "input": "LFS.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to r17 LFS with F (+2/+8/+13)\n* -7c on crouching hit"
+        }
+      ]
+    },
+    {
+      "id": "move-115",
+      "name": "Flamingo Siege Combo",
+      "type": "Stances",
+      "input": "LFS.3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH with 9?F delay\n* Move can be delayed by 10F"
+        }
+      ]
+    },
+    {
+      "id": "move-116",
+      "name": "Flamingo Kick Combo Middle",
+      "type": "Stances",
+      "input": "LFS.3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH with 9?F delay\n* Move can be delayed by 10F"
+        }
+      ]
+    },
+    {
+      "id": "move-117",
+      "name": "Flamingo Side Kick > Right Hook Kick",
+      "type": "Stances",
+      "input": "LFS.3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i21~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFS\n* Combo from 1st CH with 9?F delay\n* Move can be delayed by 10F"
+        }
+      ]
+    },
+    {
+      "id": "move-118",
+      "name": "Flamingo Side Kick > Backlash",
+      "type": "Stances",
+      "input": "LFS.3,f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i21~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH with 6?F delay\n* -1 on block on average. Frame advantage may range from -4~+2 on block"
+        }
+      ]
+    },
+    {
+      "id": "move-119",
+      "name": "Right Step Kick",
+      "type": "Stances",
+      "input": "LFS.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Transition to RFS\n* Low crush 8~27\n* Floating state 28~30"
+        }
+      ]
+    },
+    {
+      "id": "move-120",
+      "name": "Lightning Halberd",
+      "type": "Stances",
+      "input": "LFS.4~3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i8~9"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 7 chip damage on block\n* Jail from 1st block\n* Input 4 the following frame after 3 to power up\n** 45dmg on hit, 8 chip damage on block\n* Low crush 12~"
+        }
+      ]
+    },
+    {
+      "id": "move-121",
+      "name": "LFS.1+2",
+      "type": "Stances",
+      "input": "LFS.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "id": "move-122",
+      "name": "Spinning Axe Combo",
+      "type": "Stances",
+      "input": "LFS.1+2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i23~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-123",
+      "name": "Power Blast",
+      "type": "Stances",
+      "input": "LFS.1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i66~69"
+        },
+        {
+          "type": "properties",
+          "value": "* Cancel with b,b\n* Low crush 55~"
+        }
+      ]
+    },
+    {
+      "id": "move-124",
+      "name": "Flamingo Switch > Right Flamingo",
+      "type": "Stances",
+      "input": "LFS.3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to RFS"
+        }
+      ]
+    },
+    {
+      "id": "move-125",
+      "name": "Stealth Needle",
+      "type": "Stances",
+      "input": "LFS.b+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Sidesteps to the right"
+        }
+      ]
+    },
+    {
+      "id": "move-126",
+      "name": "Left Thunderbolt",
+      "type": "Stances",
+      "input": "LFS.b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Power up if an attack is absorbed\n** Reversal Break\n** 9 chip damage on block\n** -8 on block\n* Transition to RFF\n* Power crush 8~19"
+        }
+      ]
+    },
+    {
+      "id": "move-127",
+      "name": "LFS.b+4",
+      "type": "Stances",
+      "input": "LFS.b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-128",
+      "name": "Flamingo Screw Kick",
+      "type": "Stances",
+      "input": "LFS.b+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i16~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH\n* Jail from 1st block\n* 6 chip damage on block\n* Transition to RFF\n* Low crush 5~"
+        }
+      ]
+    },
+    {
+      "id": "move-129",
+      "name": "LFS.df+3",
+      "type": "Stances",
+      "input": "LFS.df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Cancel and transition to r1 LFS with F_U_D at frame 20 of move startup\n* Power up if an attack is absorbed\n** Reversal Break\n** 2 chip damage on block\n** -9 on block\n* Power crush 7~21"
+        }
+      ]
+    },
+    {
+      "id": "move-130",
+      "name": "Flamingo Double Claymore",
+      "type": "Stances",
+      "input": "LFS.df+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 7F delay\n* Move can be delayed by 5F\n* Input can be delayed by 7F\n* Power up if an attack is absorbed by previous hit\n** Reversal Break?\n** 4 chip damage on block\n** -9 on block"
+        }
+      ]
+    },
+    {
+      "id": "move-131",
+      "name": "LFS.d+3",
+      "type": "Stances",
+      "input": "LFS.d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* -6c on crouching hit"
+        }
+      ]
+    },
+    {
+      "id": "move-132",
+      "name": "Flamingo Low Right",
+      "type": "Stances",
+      "input": "LFS.d+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i21~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 1F delay\n* Move cannot be delayed\n* Input can be delayed by 1F\n* Transition to RFS"
+        }
+      ]
+    },
+    {
+      "id": "move-133",
+      "name": "Combat Low",
+      "type": "Stances",
+      "input": "LFS.d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-134",
+      "name": "Flamingo Rocket",
+      "type": "Heat Moves",
+      "input": "LFS.f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Remains in LFS (does not transition on Heat activation or when using Heat Dash)"
+        }
+      ]
+    },
+    {
+      "id": "move-135",
+      "name": "Spinning Hook Kick",
+      "type": "Stances",
+      "input": "LFS.f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break on CH"
+        }
+      ]
+    },
+    {
+      "id": "move-136",
+      "name": "LFS.uf+3",
+      "type": "Stances",
+      "input": "LFS.uf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~29"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-137",
+      "name": "LFS.uf+3,4",
+      "type": "Stances",
+      "input": "LFS.uf+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~29, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Available on hit or block only\n* Jail from 1st block\n* Combo from 1st hit\n* Transition to RFS\n* Floating state 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-138",
+      "name": "Flamingo Hunting Hawk",
+      "type": "Stances",
+      "input": "LFS.uf+3,4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~29, ,i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit\n* Floating state 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-139",
+      "name": "Switch Plasma Blade",
+      "type": "Stances",
+      "input": "LFS.uf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Low crush 6~18"
+        }
+      ]
+    },
+    {
+      "id": "move-140",
+      "name": "LFS.uf+3+4",
+      "type": "Stances",
+      "input": "LFS.uf+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i9"
+        },
+        {
+          "type": "properties",
+          "value": "* Jails from 1st block\n* Transition to LFS with F (-2/+9)\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-141",
+      "name": "Flamingo Flashing Trident",
+      "type": "Stances",
+      "input": "LFS.uf+3+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i9, i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Transition to RFF\n* Low crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-142",
+      "name": "RFF.1",
+      "type": "Stances",
+      "input": "RFF.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Remains in RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-143",
+      "name": "Migraine",
+      "type": "Stances",
+      "input": "RFF.1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 4F delay\n* Input can be delayed by 4F\n* Move can be delayed by 3F"
+        }
+      ]
+    },
+    {
+      "id": "move-144",
+      "name": "RFF.2",
+      "type": "Stances",
+      "input": "RFF.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Remains in RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-145",
+      "name": "RFF.2,1",
+      "type": "Stances",
+      "input": "RFF.2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st block with 2F delay\n* Combo from 1st hit with 2F delay\n* Remains in RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-146",
+      "name": "Big Fists",
+      "type": "Stances",
+      "input": "RFF.2,1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 4F delay\n* Input can be delayed by 4F\n* Move can be delayed by 3F"
+        }
+      ]
+    },
+    {
+      "id": "move-147",
+      "name": "Hawk Strike",
+      "type": "Stances",
+      "input": "RFF.2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Tornado\n* Forces crouch on hit\n* Combo from 1st hit with 2F delay\n* Input can be delayed by 2F\n* Move cannot be delayed\n* Low crush 13~"
+        }
+      ]
+    },
+    {
+      "id": "move-148",
+      "name": "RFF.2,4",
+      "type": "Stances",
+      "input": "RFF.2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st block with 2F delay\n* Combo from 1st hit with 2F delay\n* Input can be delayed by 2F\n* Move cannot be delayed\n* Remains in RFF\n* Transition to RFS with F_B_D_U (+4/+16g/+16)\n** i14 RFS? guaranteed on CH"
+        }
+      ]
+    },
+    {
+      "id": "move-149",
+      "name": "Chainsaw Kick Combo",
+      "type": "Stances",
+      "input": "RFF.2,4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i25~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd CH with 2F delay\n* Move can be delayed by 10F\n* Remains in RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-150",
+      "name": "Right Reverse Kick Combo",
+      "type": "Stances",
+      "input": "RFF.2,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Jail from 2nd block with no delay\n** Does not jail from 2nd hit\n* Combo from 2nd CH with 9F delay\n* Move can be delayed by 10F"
+        }
+      ]
+    },
+    {
+      "id": "move-151",
+      "name": "RFF.3",
+      "type": "Stances",
+      "input": "RFF.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        }
+      ]
+    },
+    {
+      "id": "move-152",
+      "name": "Volcannon",
+      "type": "Stances",
+      "input": "RFF.3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Transition to RFS\n* Cancel and transition to r8? RFS with F (-12/-1)"
+        }
+      ]
+    },
+    {
+      "id": "move-153",
+      "name": "Backlash",
+      "type": "Stances",
+      "input": "RFF.3~4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i27~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Homing\n* Balcony Break\n* Clean hit, 35dmg\n* 10 chip damage on block\n* Power crush 8~26"
+        }
+      ]
+    },
+    {
+      "id": "move-154",
+      "name": "RFF.4",
+      "type": "Stances",
+      "input": "RFF.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Remains in RFF\n* Transition to RFS with F_B_D_U (+4/+16g/+16)\n** i13 RFS followups guaranteed on CH?"
+        }
+      ]
+    },
+    {
+      "id": "move-155",
+      "name": "Chainsaw Kick",
+      "type": "Stances",
+      "input": "RFF.4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i25~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Remains in RFF\n* Combo from 1st CH with 2F delay\n* Move can be delayed by 10F"
+        }
+      ]
+    },
+    {
+      "id": "move-156",
+      "name": "Right Reverse Kick",
+      "type": "Stances",
+      "input": "RFF.4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Jail from 1st block with no delay\n* Combo from 1st CH with 9F delay\n* Move can be delayed by 10F"
+        }
+      ]
+    },
+    {
+      "id": "move-157",
+      "name": "Flamingo Switch > Left Flamingo",
+      "type": "Stances",
+      "input": "RFF.3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to LFF"
+        }
+      ]
+    },
+    {
+      "id": "move-158",
+      "name": "Left Back Elbow",
+      "type": "Stances",
+      "input": "RFF.b+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Has good left sidestep tracking"
+        }
+      ]
+    },
+    {
+      "id": "move-159",
+      "name": "Blast Fist",
+      "type": "Stances",
+      "input": "RFF.b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* 5 chip damage on block\n* Remains in RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-160",
+      "name": "Nose Bleeder",
+      "type": "Stances",
+      "input": "RFF.b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Sidesteps to the right"
+        }
+      ]
+    },
+    {
+      "id": "move-161",
+      "name": "Spin Kick",
+      "type": "Stances",
+      "input": "RFF.b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* High crush 6~17"
+        }
+      ]
+    },
+    {
+      "id": "move-162",
+      "name": "Black Kite",
+      "type": "Heat Moves",
+      "input": "RFF.df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Balcony Break\n* Remains in RFF (transitions to LFF on Heat activation or when using Heat Dash)\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-163",
+      "name": "Right Sidekick",
+      "type": "Stances",
+      "input": "RFF.df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Remains in RFF\n* Transition to RFS with F_B_D_U (+4/+13g/+13)"
+        }
+      ]
+    },
+    {
+      "id": "move-164",
+      "name": "RFF.df+2+3",
+      "type": "Stances",
+      "input": "RFF.df+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Power up if an attack is absorbed\n** Reversal Break\n** 2 chip damage on block\n** -9 on block\n* Cancel and transition to r1 LFS with F_U_D at frame 20 of move startup\n* Power crush 7~"
+        }
+      ]
+    },
+    {
+      "id": "move-165",
+      "name": "Double Claymore",
+      "type": "Stances",
+      "input": "RFF.df+2+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Power up if an attack is absorbed by previous hit\n** Reversal Break?\n** 4 chip damage on block\n** -9 on block\n* Combo from 1st hit with 7F delay \n* Move can be delayed by 5F\n* Input can be delayed by 7F"
+        }
+      ]
+    },
+    {
+      "id": "move-166",
+      "name": "RFF.d+3",
+      "type": "Stances",
+      "input": "RFF.d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to BT\n* +0c on crouching hit"
+        }
+      ]
+    },
+    {
+      "id": "move-167",
+      "name": "Triumph Low Right",
+      "type": "Stances",
+      "input": "RFF.d+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18, i21~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Transition to RFS"
+        }
+      ]
+    },
+    {
+      "id": "move-168",
+      "name": "Heel Screw",
+      "type": "Stances",
+      "input": "RFF.d+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Remains in RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-169",
+      "name": "Hunting Heel",
+      "type": "Stances",
+      "input": "RFF.f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 3~"
+        }
+      ]
+    },
+    {
+      "id": "move-170",
+      "name": "RFF.f+1",
+      "type": "Stances",
+      "input": "RFF.f+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        }
+      ]
+    },
+    {
+      "id": "move-171",
+      "name": "Left Right Combo",
+      "type": "Stances",
+      "input": "RFF.f+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st block with 4F delay\n* Combo from 1st hit with 4F delay"
+        }
+      ]
+    },
+    {
+      "id": "move-172",
+      "name": "Cheap Shot",
+      "type": "Stances",
+      "input": "RFF.f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to LFS\n* Transition to r44? BT with B (-11~-8/+0~+3)"
+        }
+      ]
+    },
+    {
+      "id": "move-173",
+      "name": "Right Flamingo Feint",
+      "type": "Stances",
+      "input": "RFF.f+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to RFS"
+        }
+      ]
+    },
+    {
+      "id": "move-174",
+      "name": "Plasma Blade",
+      "type": "Stances",
+      "input": "RFF.f+4~4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Remains in RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-175",
       "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "type": "Stances",
+      "input": "RFS.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Links to 10-hit string"
+        }
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "id": "move-176",
+      "name": "Right Flamingo > Back Hand",
+      "type": "Stances",
+      "input": "RFS.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFF\n* Links to RFF.2 extensions"
+        }
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "id": "move-177",
+      "name": "Left Step Kick",
+      "type": "Stances",
+      "input": "RFS.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Transition to LFS\n* Sidesteps to the left\n* Increased chip damage scaling on block during heat\n** 7 chip damage on block in heat\n* Low crush 8~"
+        }
+      ]
     },
     {
-      "id": "n_3",
+      "id": "move-178",
+      "name": "Flying Eagle",
+      "type": "Stances",
+      "input": "RFS.3~4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16,i7"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Jail from 1st block\n* Increased chip damage scaling on block during heat\n** 9 chip damage on block in heat\n* Input 4 the following frame after 3 to power up\n** 37dmg on hit, +1 on block\n** 14 chip damage on block in heat\n* Low crush 16~"
+        }
+      ]
+    },
+    {
+      "id": "move-179",
       "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "type": "Stances",
+      "input": "RFS.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFF\n* Increased chip damage scaling on block during heat\n** 5 chip damage on block in heat"
+        }
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "move-180",
+      "name": "Double Phalanx",
+      "type": "Stances",
+      "input": "RFS.4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Transition to LFS\n* Combo from 1st CH\n* Combo from 1st hit during heat\n* Increased chip damage scaling on block during heat\n** 4 chip damage on block in heat"
+        }
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "id": "move-181",
+      "name": "Flamingo Switch > Left Flamingo",
+      "type": "Stances",
+      "input": "RFS.3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to LFS"
+        }
+      ]
+    },
+    {
+      "id": "move-182",
+      "name": "Left Heel Lance",
+      "type": "Heat Moves",
+      "input": "RFS.b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +42a (+27)\n\n* Increased chip damage scaling on block during heat\n** 6 chip damage on block in heat"
+        }
+      ]
+    },
+    {
+      "id": "move-183",
+      "name": "Right Thunderbolt",
+      "type": "Stances",
+      "input": "RFS.b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Power up if an attack is absorbed\n** Reversal Break\n** 9 chip damage on block\n** -8 on block\n* Increased chip damage scaling on block during heat\n** 6 chip damage on block in heat\n** 9 chip damage on block after absorbing an attack\n* Power crush 8~19"
+        }
+      ]
+    },
+    {
+      "id": "move-184",
+      "name": "Snap Kick",
+      "type": "Stances",
+      "input": "RFS.df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Increased chip damage scaling on block during heat\n** 4 chip damage on block in heat"
+        }
+      ]
+    },
+    {
+      "id": "move-185",
+      "name": "RFS.d+3",
+      "type": "Stances",
+      "input": "RFS.d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFF\n* Increased chip damage scaling on block during heat\n** 3 chip damage on block in heat\n* cs10~19 crush state when canceled into followup\n* High crush 10~25"
+        }
+      ]
+    },
+    {
+      "id": "move-186",
+      "name": "Teaser",
+      "type": "Stances",
+      "input": "RFS.d+3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i25~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH with 4F delay\n* Move cannot be delayed\n* Input can be delayed by 4F\n* 11 chip damage on block\n* Increased chip damage scaling on block during heat\n** 14 chip damage on block in heat"
+        }
+      ]
+    },
+    {
+      "id": "move-187",
+      "name": "RFS.d+4",
+      "type": "Stances",
+      "input": "RFS.d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-188",
+      "name": "RFS.d+4,3",
+      "type": "Stances",
+      "input": "RFS.d+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21, i25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Airborne combo from 1st CH\n** 8 dmg, +20a (+13) on hit \n** 26 total dmg from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-189",
+      "name": "Predator Bardiche",
+      "type": "Stances",
+      "input": "RFS.d+4,3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21, ,i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Power up in Heat: 30dmg and increased chip damage on block\n* Combo from 2nd CH\n* Airborne combo from 1st CH\n** +10a (+9) on hit\n** 10 dmg, 36 total dmg from 1st CH\n* Low crush 22~"
+        }
+      ]
+    },
+    {
+      "id": "move-190",
+      "name": "Screw Kick",
+      "type": "Stances",
+      "input": "RFS.f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Increased chip damage scaling on block during heat\n** 5 chip damage on block in heat"
+        }
+      ]
+    },
+    {
+      "id": "move-191",
+      "name": "RFS.f+4",
+      "type": "Stances",
+      "input": "RFS.f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i8, i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st block\n* +6 on 2nd CH\n* Remains in RFS\n* Power up during Heat"
+        }
+      ]
+    },
+    {
+      "id": "move-192",
+      "name": "Right Viper Combo > Right Sword",
+      "type": "Stances",
+      "input": "RFS.f+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i8, i10, i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 1st or 2nd CH\n* Transition to RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-193",
+      "name": "Flamingo Hunting Heel",
+      "type": "Stances",
+      "input": "RFS.uf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i24~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Increased chip damage scaling on block during heat\n** 6 chip damage on block in heat\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-194",
+      "name": "Air Blade",
+      "type": "Stances",
+      "input": "RFS.uf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Transition to RFF\n* Increased chip damage scaling on block during heat\n** 6 chip damage on block in heat\n* Low crush 11~33"
+        }
+      ]
+    },
+    {
+      "id": "move-195",
+      "name": "Raptor Claw",
+      "type": "Stances",
+      "input": "RFS.u+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Transition to RFF\n* Link to LFF.(4,4,4),4 extension\n** Combo from 1st hit with 4F input delay\n** Extension cannot be delayed\n* Increased chip damage scaling on block during heat\n** 5 chip damage on block in heat\n* Low crush 19~"
+        }
+      ]
+    },
+    {
+      "id": "move-196",
+      "name": "Crouch Spin Kick",
+      "type": "Stances",
+      "input": "hFC.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* -6c on crouching hit\n* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-197",
+      "name": "Crouch Shin Kick",
+      "type": "Stances",
+      "input": "hFC.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* -4c on crouching hit\n* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-198",
+      "name": "Pickpocket",
+      "type": "Throws",
+      "input": "1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Break: 1 or 2\n* Opponent recovery on hit: FDFT\n* Sideswap on break"
+        }
+      ]
+    },
+    {
+      "id": "move-199",
+      "name": "Falcon Dice Kick",
+      "type": "Throws",
+      "input": "2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Break: 1 or 2\n* Opponent recovery on hit: FDFT off-axis to the left, sideswap"
+        }
+      ]
+    },
+    {
+      "id": "move-200",
+      "name": "Roll and Choke",
+      "type": "Strings",
+      "input": "2+4,B",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Break: 2\n* Opponent recovery on hit: FUFA, sideswap\n* Transition to BT on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-201",
+      "name": "Overhead Kick",
+      "type": "Stances",
+      "input": "AIR.ub+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Break: none\n* Opponent recovery on hit: FUFA, sideswap\n* Also possible during RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-202",
+      "name": "Slaughterhouse",
+      "type": "Single Hits",
+      "input": "Back throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Break: none\n* Opponent recovery on hit: FUFA\n* Also possible during RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-203",
+      "name": "Bring It On",
+      "type": "Single Hits",
+      "input": "Left throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Break: 1\n* Opponent recovery on hit: FUFT off-axis to the left\n* Also possible during RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-204",
+      "name": "Jackknife",
+      "type": "Stances",
+      "input": "RFF.1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Break: 1+2\n* Opponent recovery on hit: FUFA, sideswap"
+        }
+      ]
+    },
+    {
+      "id": "move-205",
+      "name": "Dead-End",
+      "type": "Single Hits",
+      "input": "Right throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Break: 2\n* Opponent recovery on hit: FDFT off-axis to the right\n* Also possible during RFF"
+        }
+      ]
+    },
+    {
+      "id": "move-206",
+      "name": "Human Cannonball",
+      "type": "Single Hits",
+      "input": "f+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Break: 1+2\n* Opponent recovery on hit: FUFA, sideswap\n* Sideswap on break\n* Possible in RFF, LFS and RFS"
+        }
+      ]
+    },
+    {
+      "id": "move-207",
+      "name": "Door Mat",
+      "type": "Single Hits",
+      "input": "qcb+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Break: 1\n* Opponent recovery on hit: FUFA, sideswap"
+        }
+      ]
+    },
+    {
+      "id": "move-208",
+      "name": "Leg Hook Throw",
+      "type": "Throws",
+      "input": "uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Break: 1+2\n* Opponent recovery on hit: FUFA\n* Also possible during RFF"
+        }
+      ]
     }
   ]
 }

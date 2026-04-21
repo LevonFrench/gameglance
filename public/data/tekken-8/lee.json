@@ -1,181 +1,2421 @@
 {
+  "id": "lee",
   "name": "Lee",
-  "character": "Lee",
-  "game": "Tekken 8",
   "movesList": [
     {
-      "id": "sp_3",
-      "name": "Heat Engager from stance",
-      "type": "special",
-      "input": "6_HeatEngagerromstance"
+      "id": "move-0",
+      "name": "Heat Burst",
+      "type": "Heat Moves",
+      "input": "2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Burst\n* Cancel to r45 with b,b on frame 42\n* 2 chip damage on block\n* 12 chip damage on hit\n* Only deals recoverable damage\n* Cannot cause a K.O.\n* Power crush 7~16"
+        }
+      ]
     },
     {
-      "id": "sp_5",
-      "name": "4~D,ws+2 \u23f5 f+3",
-      "type": "special",
-      "input": "26RK~[Cancel]WSRP\u23f5LK"
+      "id": "move-1",
+      "name": "Crimson Howl",
+      "type": "Heat Moves",
+      "input": "H.df+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 7 chip damage on block\n* Partially consumes remaining Heat Time\n* Transition to +0, +26a MS with F"
+        }
+      ]
     },
     {
-      "id": "sp_6",
-      "name": "Df+2+3",
-      "type": "special",
-      "input": "3RPLK"
+      "id": "move-2",
+      "name": "Phantom Rose",
+      "type": "Heat Moves",
+      "input": "H.d+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 6 chip damage on block\n* Partially consumes remaining Heat Time\n* Transition to +8, +21a (+11) HMS with 3+4"
+        }
+      ]
     },
     {
-      "id": "sp_7",
-      "name": "Uf+1+2",
-      "type": "special",
-      "input": "9LPRP"
+      "id": "move-3",
+      "name": "Paradigm Breaker",
+      "type": "Heat Moves",
+      "input": "H.2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Smash\n* Balcony Break"
+        }
+      ]
     },
     {
-      "id": "sp_8",
-      "name": "FC db+1+2",
-      "type": "special",
-      "input": "FCdown-backLPRP"
+      "id": "move-4",
+      "name": "The Marvelous Rose",
+      "type": "Stances",
+      "input": "R.df+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\n* Power crush 8~"
+        }
+      ]
     },
     {
-      "id": "sp_9",
-      "name": "Quick mid poke with extensions",
-      "type": "special",
-      "input": "82_Qickmipokewithextensions"
+      "id": "move-5",
+      "name": "Jab",
+      "type": "Single Hits",
+      "input": "1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Recovers 2f faster on hit or block (t27 r17)"
+        }
+      ]
     },
     {
-      "id": "sp_10",
-      "name": "IZU 1+4   2+3",
-      "type": "special",
-      "input": "8IZLPRK/RPLK"
+      "id": "move-6",
+      "name": "Left Right Combo",
+      "type": "Strings",
+      "input": "1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to r30 -2 +8 MS with F \n* Jail from 1st attack with 4F delay\n* Combo from 1st hit with 4F delay"
+        }
+      ]
     },
     {
-      "id": "sp_15",
-      "name": "F+2+3",
-      "type": "special",
-      "input": "6RPLK"
+      "id": "move-7",
+      "name": "1,2,2",
+      "type": "Strings",
+      "input": "1,2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Move can be delayed 5F\n* Input can be delayed 7F\n* Combo from 2nd CH with 7F delay"
+        }
+      ]
     },
     {
-      "id": "sp_16",
-      "name": "B+3+4",
-      "type": "special",
-      "input": "4LKRK"
+      "id": "move-8",
+      "name": "Left Right Combo > Revolution Zwei",
+      "type": "Strings",
+      "input": "1,2,2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 3rd hit with 9F delay\n* Transition to r25 -9, +11a (+2a) HMS with 4\n* Move can be delayed 13F\n* Input can be delayed 18F"
+        }
+      ]
     },
     {
-      "id": "sp_17",
-      "name": "F+3+4",
-      "type": "special",
-      "input": "6LKRK"
+      "id": "move-9",
+      "name": "Left Right Mid Kick",
+      "type": "Strings",
+      "input": "1,2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st attack\n* Combo from 2nd hit\n* Transition to -14 -2 HMS with 3\n* Move can be input by pressing 4 during frames 1-9 of 1,2"
+        }
+      ]
     },
     {
-      "id": "sp_18",
-      "name": "3+4,df+2 before 2nd hit",
-      "type": "special",
-      "input": "462LKRK[Cancel]3RPeoreRPnhit"
+      "id": "move-10",
+      "name": "Left Right Mid Kick",
+      "type": "Strings",
+      "input": "1,2:4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st attack\n* Combo from 2nd hit with 1f delay\n* Move can be input by pressing 4 during frames 10-13 of 1,2\n* Transition to r44 -14 +3 HMS with 3"
+        }
+      ]
     },
     {
-      "id": "sp_19",
-      "name": "GUARANTEED FOLLOW-UPS",
-      "type": "special",
-      "input": "88GARAnTEE3OLLOW-PS"
+      "id": "move-11",
+      "name": "1,3",
+      "type": "Strings",
+      "input": "1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 4F delay\n* Move can be delayed by 4F"
+        }
+      ]
     },
     {
-      "id": "sp_20",
-      "name": "CH 4",
-      "type": "special",
-      "input": "CHRK"
+      "id": "move-12",
+      "name": "1,3:3",
+      "type": "Strings",
+      "input": "1,3:3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i9"
+        },
+        {
+          "type": "properties",
+          "value": "* Input 3 during frames 13-16 of previous hit\n* Jail from 1st attack"
+        }
+      ]
     },
     {
-      "id": "sp_21",
-      "name": "F+4",
-      "type": "special",
-      "input": "6RK"
+      "id": "move-13",
+      "name": "[[Acid Rain]]",
+      "type": "Strings",
+      "input": "1,3:3:3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Input 3 during frames 8-9? of previous hit\n* Timestop on hit\n* 5 chip damage"
+        }
+      ]
     },
     {
-      "id": "sp_22",
-      "name": "U+4",
-      "type": "special",
-      "input": "8RK"
+      "id": "move-14",
+      "name": "Right Cross",
+      "type": "Single Hits",
+      "input": "2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        }
+      ]
     },
     {
-      "id": "sp_23",
-      "name": "FC df+3 (clean hit)",
-      "type": "special",
-      "input": "FCdown-forwardLK(cleanhit)"
+      "id": "move-15",
+      "name": "2,1",
+      "type": "Strings",
+      "input": "2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to -5, +6 HMS with 3+4\n* Combos from 1st hit"
+        }
+      ]
     },
     {
-      "id": "sp_24",
-      "name": "CH GEN 1",
-      "type": "special",
-      "input": "CHGEnLP"
+      "id": "move-16",
+      "name": "Combination Drei",
+      "type": "Strings",
+      "input": "2,1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i20"
+        },
+        {
+          "type": "properties",
+          "value": "*"
+        }
+      ]
     },
     {
-      "id": "sp_25",
-      "name": "CH f+1+2",
-      "type": "special",
-      "input": "6CHLPRP"
+      "id": "move-17",
+      "name": "Combination Fünf",
+      "type": "Strings",
+      "input": "2,1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i24"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break"
+        }
+      ]
     },
     {
-      "id": "sp_26",
-      "name": "CH sidestep 2",
-      "type": "special",
-      "input": "2CHsiestepRP"
+      "id": "move-18",
+      "name": "Combination Vier",
+      "type": "Strings",
+      "input": "2,1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i25"
+        },
+        {
+          "type": "properties",
+          "value": "*"
+        }
+      ]
     },
     {
-      "id": "sp_27",
-      "name": "CH u+2",
-      "type": "special",
-      "input": "8CHRP"
+      "id": "move-19",
+      "name": "2,2",
+      "type": "Strings",
+      "input": "2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st hit CH"
+        }
+      ]
     },
     {
-      "id": "sp_28",
-      "name": "CH (df+1),2",
-      "type": "special",
-      "input": "CH(down-forwardLP)[Cancel]RP"
+      "id": "move-20",
+      "name": "Right Cross > Revolution Zwei",
+      "type": "Strings",
+      "input": "2,2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Transition to -9, +11a (+2) HMS with 4\n* Combos from 1st hit CH"
+        }
+      ]
     },
     {
-      "id": "sp_29",
-      "name": "CH IZU f+1+2",
-      "type": "special",
-      "input": "CHIZup-forwardLPRP"
+      "id": "move-21",
+      "name": "3",
+      "type": "Single Hits",
+      "input": "3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to -8, +7 HMS with 4"
+        }
+      ]
     },
     {
-      "id": "um_1",
-      "name": "1+2,uf+3 \u23f5 f+3",
-      "type": "unique",
-      "input": "6LPRP[Cancel]9LK\u23f5LK"
+      "id": "move-22",
+      "name": "Mist Wolf Combination",
+      "type": "Strings",
+      "input": "3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st hit"
+        }
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "id": "move-23",
+      "name": "Mist Trap",
+      "type": "Single Hits",
+      "input": "3~3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i30?"
+        },
+        {
+          "type": "properties",
+          "value": "*"
+        }
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "id": "move-24",
+      "name": "Mist Trap Throw",
+      "type": "Throws",
+      "input": "3~3:4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i30?, "
+        },
+        {
+          "type": "properties",
+          "value": "* Unbreakable\n* Input 4 on frame 31? from previous hit \n* Perfect Input not required during Heat\n* Partially consumes remaining Heat Time, while Perfect input restores Heat Time"
+        }
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "id": "move-25",
+      "name": "Magic Four",
+      "type": "Single Hits",
+      "input": "4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        }
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "id": "move-26",
+      "name": "4,3",
+      "type": "Strings",
+      "input": "4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, i18"
+        },
+        {
+          "type": "properties",
+          "value": "Combos from 1st hit"
+        }
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "move-27",
+      "name": "Spinning Hammer Kick",
+      "type": "Strings",
+      "input": "4,3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, ,i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Combos from 2nd hit CH"
+        }
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "id": "move-28",
+      "name": "Spin Kick Somersault Combo",
+      "type": "Strings",
+      "input": "4,3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, ,i30"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-29",
+      "name": "4,4",
+      "type": "Strings",
+      "input": "4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st attack\n* Combo from 1st CH +20a (+13)"
+        }
+      ]
+    },
+    {
+      "id": "move-30",
+      "name": "Machinegun Kicks",
+      "type": "Strings",
+      "input": "4,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, ,i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st attack\n* Combo from 2nd hit with no delay\n* Frame advantage on 1st CH: +25a (+18)"
+        }
+      ]
+    },
+    {
+      "id": "move-31",
+      "name": "Machinegun Kicks Cardinal",
+      "type": "Heat Moves",
+      "input": "4,4:4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, ,i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5g +34d\n\n* Strong Aerial Tailspin\n* Balcony Break\n* Combo from 2nd hit with 1f-5f delay only\n* Frame advantage on 1st CH: +29a (+22)\n* 4 Chip Damage on block\n* 5 Chip Damage on block in heat"
+        }
+      ]
+    },
+    {
+      "id": "move-32",
+      "name": "Lee Somersault",
+      "type": "Strings",
+      "input": "4,u+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, i33"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to -9, +40 MS with F"
+        }
+      ]
+    },
+    {
+      "id": "move-33",
+      "name": "Pirouette Punch",
+      "type": "Single Hits",
+      "input": "1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Floor Break\n* Transition to +2, +6, +29a HMS with 3+4"
+        }
+      ]
+    },
+    {
+      "id": "move-34",
+      "name": "Taunt",
+      "type": "Single Hits",
+      "input": "2+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Has a hidden Perfect Input by inputting 2 on the 51~53 frames.\n* Perfect Input is a Just Frame even in Heat\n* Perfect Input restores Heat Time"
+        }
+      ]
+    },
+    {
+      "id": "move-35",
+      "name": "Hitman",
+      "type": "Single Hits",
+      "input": "3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transitions to HMS\n* Transition to r7? FC with d_db_df (8F cost?)\n** Transition to r1? FC when transitioning from HMS move transitions? (1F cost?)\n* Transition to r7? MS with f,n"
+        }
+      ]
+    },
+    {
+      "id": "move-36",
+      "name": "f+2",
+      "type": "Single Hits",
+      "input": "f+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        }
+      ]
+    },
+    {
+      "id": "move-37",
+      "name": "Double Signal",
+      "type": "Strings",
+      "input": "f+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combos from 1st hit\n* Delayable"
+        }
+      ]
+    },
+    {
+      "id": "move-38",
+      "name": "f+3",
+      "type": "Single Hits",
+      "input": "f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        }
+      ]
+    },
+    {
+      "id": "move-39",
+      "name": "f+3,3",
+      "type": "Strings",
+      "input": "f+3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i8"
+        },
+        {
+          "type": "properties",
+          "value": "Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-40",
+      "name": "f+3,3,3",
+      "type": "Strings",
+      "input": "f+3,3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, ,i8"
+        },
+        {
+          "type": "properties",
+          "value": "Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-41",
+      "name": "f+3,3,3,3",
+      "type": "Strings",
+      "input": "f+3,3,3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, ,i8"
+        },
+        {
+          "type": "properties",
+          "value": "Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-42",
+      "name": "f+3,3,3,3,3",
+      "type": "Strings",
+      "input": "f+3,3,3,3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, ,i8"
+        },
+        {
+          "type": "properties",
+          "value": "Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-43",
+      "name": "Acid Storm",
+      "type": "Strings",
+      "input": "f+3,3,3,3,3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, ,i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* If only last hit connects +28a (+13)\n* Combos from 1st hit\n* 4 can be input after the 2nd hit on-wards\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-44",
+      "name": "Acid Storm Cardinal",
+      "type": "Strings",
+      "input": "f+3,3,3,3,3:4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, ,i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* 10 chip damage\n* Perfect Input not required during Heat\n* 4 must be input during frames 7?-9? of previous hit\n* Partially consumes remaining Heat Time, while Perfect input restores Heat Time\n* Combos from 1st hit\n* 4 can be input after the 2nd hit on-wards\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-45",
+      "name": "f+4",
+      "type": "Single Hits",
+      "input": "f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        }
+      ]
+    },
+    {
+      "id": "move-46",
+      "name": "Deadly Revolution",
+      "type": "Strings",
+      "input": "f+4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, i24"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Combos on 1st hit CH"
+        }
+      ]
+    },
+    {
+      "id": "move-47",
+      "name": "Deadly Arc",
+      "type": "Strings",
+      "input": "f+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to -4, +7c, +64a HMS with 4\n* Combos on 1st hit CH\n* Delayable"
+        }
+      ]
+    },
+    {
+      "id": "move-48",
+      "name": "Deadly Revolution Cardinal",
+      "type": "Single Hits",
+      "input": "f+4:1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11, i24"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* 10 chip damage\n* Combos on 1st hit CH"
+        }
+      ]
+    },
+    {
+      "id": "move-49",
+      "name": "Aggressive One-Two",
+      "type": "Single Hits",
+      "input": "f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-50",
+      "name": "Feather Landing",
+      "type": "Single Hits",
+      "input": "f+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i30"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break 9 chip damage\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-51",
+      "name": "1st Hit",
+      "type": "Single Hits",
+      "input": "df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        }
+      ]
+    },
+    {
+      "id": "move-52",
+      "name": "2nd Hit",
+      "type": "Strings",
+      "input": "df+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 2F delay\n* Move cannot be delayed"
+        }
+      ]
+    },
+    {
+      "id": "move-53",
+      "name": "3rd Hit",
+      "type": "Strings",
+      "input": "df+1,2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, ,i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-54",
+      "name": "4th Hit",
+      "type": "Strings",
+      "input": "df+1,2,2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, ,i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 3rd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-55",
+      "name": "5th Hit",
+      "type": "Strings",
+      "input": "df+1,2,2,1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, ,i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 4th hit"
+        }
+      ]
+    },
+    {
+      "id": "move-56",
+      "name": "6th Hit",
+      "type": "Strings",
+      "input": "df+1,2,2,1,3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, ,i24"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 5th CH"
+        }
+      ]
+    },
+    {
+      "id": "move-57",
+      "name": "Silver Uppercut",
+      "type": "Single Hits",
+      "input": "df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        }
+      ]
+    },
+    {
+      "id": "move-58",
+      "name": "df+3",
+      "type": "Single Hits",
+      "input": "df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-59",
+      "name": "df+3,2",
+      "type": "Strings",
+      "input": "df+3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 5F delay\n* Move can be delayed by 4F\n* Input can be delayed by 5F"
+        }
+      ]
+    },
+    {
+      "id": "move-60",
+      "name": "Mercury Drive",
+      "type": "Heat Moves",
+      "input": "df+3,2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +42a (+27) \n\n* Balcony Break\n* Combo from 1st or 2nd CH with 7F delay\n* Move can be delayed by 10F\n* Input can be delayed by 11F"
+        }
+      ]
+    },
+    {
+      "id": "move-61",
+      "name": "df+4",
+      "type": "Single Hits",
+      "input": "df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13-14"
+        },
+        {
+          "type": "properties",
+          "value": "Transition to -9, +5 HMS with 3"
+        }
+      ]
+    },
+    {
+      "id": "move-62",
+      "name": "Fabulous Whip",
+      "type": "Heat Moves",
+      "input": "df+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13-14, i22-23"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +34d\n\n* Combo from 1st hit with 7F delay"
+        }
+      ]
+    },
+    {
+      "id": "move-63",
+      "name": "Shin",
+      "type": "Single Hits",
+      "input": "D+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        }
+      ]
+    },
+    {
+      "id": "move-64",
+      "name": "D+4,4",
+      "type": "Strings",
+      "input": "D+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i20"
+        },
+        {
+          "type": "properties",
+          "value": "Combos from 1st hit CH"
+        }
+      ]
+    },
+    {
+      "id": "move-65",
+      "name": "D+4,4,4",
+      "type": "Strings",
+      "input": "D+4,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, ,i20"
+        },
+        {
+          "type": "properties",
+          "value": "Combos from 2nd hit CH"
+        }
+      ]
+    },
+    {
+      "id": "move-66",
+      "name": "Laser Edge Kick Combo",
+      "type": "Strings",
+      "input": "D+4,4,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, ,i24"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Transition to -11, +20a (+11) HMS with 3\n* Combos from 3rd hit CH"
+        }
+      ]
+    },
+    {
+      "id": "move-67",
+      "name": "Gut Polisher",
+      "type": "Single Hits",
+      "input": "d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Jab evasion"
+        }
+      ]
+    },
+    {
+      "id": "move-68",
+      "name": "Silver Low",
+      "type": "Single Hits",
+      "input": "d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "Transition to -15, -1, +17a HMS with 4\n* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-69",
+      "name": "Shin",
+      "type": "Single Hits",
+      "input": "d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        }
+      ]
+    },
+    {
+      "id": "move-70",
+      "name": "Shin > Head Kick",
+      "type": "Strings",
+      "input": "d+4,n,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Links to attacks from 4 (4,4:4, 4,3,4, etc.)\n* Combos from 1st hit CH"
+        }
+      ]
+    },
+    {
+      "id": "move-71",
+      "name": "Crouch Jab",
+      "type": "Single Hits",
+      "input": "db+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to Standing with f\n* +6c on crouching hit\n* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-72",
+      "name": "db+2",
+      "type": "Single Hits",
+      "input": "db+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "Alternate input FC.2\n* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-73",
+      "name": "Bump Kick",
+      "type": "Single Hits",
+      "input": "db+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        }
+      ]
+    },
+    {
+      "id": "move-74",
+      "name": "db+4",
+      "type": "Single Hits",
+      "input": "db+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "Alternate input FC.4\n* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-75",
+      "name": "Grass Snake",
+      "type": "Single Hits",
+      "input": "db+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21"
+        }
+      ]
+    },
+    {
+      "id": "move-76",
+      "name": "b+1",
+      "type": "Single Hits",
+      "input": "b+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        }
+      ]
+    },
+    {
+      "id": "move-77",
+      "name": "b+1,1",
+      "type": "Strings",
+      "input": "b+1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to -1, +10g HMS with 3+4\n* Cancel and transition to -5, +1 MS with F\n* +6c on crouching hit"
+        }
+      ]
+    },
+    {
+      "id": "move-78",
+      "name": "Triple Fang",
+      "type": "Strings",
+      "input": "b+1,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, ,i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-79",
+      "name": "b+1:1",
+      "type": "Single Hits",
+      "input": "b+1:1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14,i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to -1, +10g HMS with 3+4\n* Cancel and transition to -5, +1 MS with F\n* +6c on crouching hit\n* Perfect Input not required during Heat\n* Does not partially consume remaining Heat Time, Perfect input does not restore Heat Time\n* Heat Time is only restored or consumed after the 2 followup"
+        }
+      ]
+    },
+    {
+      "id": "move-80",
+      "name": "Triple Fang Cardinal",
+      "type": "Strings",
+      "input": "b+1:1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14,i20, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combos from 1st hit\n* Perfect Input not required during Heat\n* Partially consumes remaining Heat Time, while Perfect input restores Heat Time"
+        }
+      ]
+    },
+    {
+      "id": "move-81",
+      "name": "Double Fang Cardinal",
+      "type": "Single Hits",
+      "input": "b+1:1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14,i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combos from 1st hit\n* 10 chip damage\n* Perfect Input not required during Heat\n* Partially consumes remaining Heat Time, while Perfect input restores Heat Time"
+        }
+      ]
+    },
+    {
+      "id": "move-82",
+      "name": "Mist Illusion",
+      "type": "Single Hits",
+      "input": "b+1+3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* High and Mid parry\n* Puts you behind opponent\n* Alternate input b+2+4, HMS.b+1+3, HMS.b+2+4\n* Parry state 5?"
+        }
+      ]
+    },
+    {
+      "id": "move-83",
+      "name": "Illusion Edge",
+      "type": "Strings",
+      "input": "b+1+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Only available upon successful parry\n* Guaranteed hit"
+        }
+      ]
+    },
+    {
+      "id": "move-84",
+      "name": "Rear Cross Punch",
+      "type": "Single Hits",
+      "input": "b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to -1, +5 MS with F"
+        }
+      ]
+    },
+    {
+      "id": "move-85",
+      "name": "b+2,4",
+      "type": "Strings",
+      "input": "b+2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i27"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Automatically transitions to HMS on hit or block"
+        }
+      ]
+    },
+    {
+      "id": "move-86",
+      "name": "Super High Combination",
+      "type": "Strings",
+      "input": "b+2,4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, ,i27"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Balcony Break\n* Transition to -5, +17a MS with F\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-87",
+      "name": "b+3",
+      "type": "Single Hits",
+      "input": "b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        }
+      ]
+    },
+    {
+      "id": "move-88",
+      "name": "Stinging Rush",
+      "type": "Strings",
+      "input": "b+3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to -7, +4 MS with F\n* Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-89",
+      "name": "Silver Heel",
+      "type": "Single Hits",
+      "input": "b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Spike\n* Transition to -2, +8c, +65a HMS with 3\n* +18d on crouching opponent"
+        }
+      ]
+    },
+    {
+      "id": "move-90",
+      "name": "Silver Revolution",
+      "type": "Single Hits",
+      "input": "b+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Power crush"
+        }
+      ]
+    },
+    {
+      "id": "move-91",
+      "name": "Wheel of Fate",
+      "type": "Single Hits",
+      "input": "ub+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-92",
+      "name": "Silver Cyclone",
+      "type": "Single Hits",
+      "input": "ub+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i60"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break \n* Unblockable\n* Cancel and transition to HMS with 3+4"
+        }
+      ]
+    },
+    {
+      "id": "move-93",
+      "name": "Fake",
+      "type": "Single Hits",
+      "input": "u+3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to FC with D\n* Transition to HMS with 3+4\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-94",
+      "name": "uf+3",
+      "type": "Single Hits",
+      "input": "uf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-95",
+      "name": "Brilliant Rosé",
+      "type": "Strings",
+      "input": "uf+3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25, i21"
+        },
+        {
+          "type": "properties",
+          "value": "Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-96",
+      "name": "Double Mazurek",
+      "type": "Strings",
+      "input": "uf+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25, i25"
+        },
+        {
+          "type": "properties",
+          "value": "Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-97",
+      "name": "Silver Arrow",
+      "type": "Single Hits",
+      "input": "uf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Alternate input ub+4, u+4\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-98",
+      "name": "Silver Bullet",
+      "type": "Single Hits",
+      "input": "uf+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Transition to +8, +31d (+23) HMS with 3+4\n* 9 chip damage\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-99",
+      "name": "Ki Charge",
+      "type": "Single Hits",
+      "input": "1+2+3+4",
+      "properties": []
+    },
+    {
+      "id": "move-100",
+      "name": "Lee Cutter",
+      "type": "Strings",
+      "input": "b,B+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Homing\n* Transition to +5, +28a HMS with 3\n* 6 chip damage"
+        }
+      ]
+    },
+    {
+      "id": "move-101",
+      "name": "Sway",
+      "type": "Strings",
+      "input": "b,n",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "id": "move-102",
+      "name": "Axe Sweep",
+      "type": "Strings",
+      "input": "b,n,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21"
+        },
+        {
+          "type": "properties",
+          "value": "*\n* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-103",
+      "name": "Jostle Wolf",
+      "type": "Strings",
+      "input": "f,F+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Transition to +5, +21gc, +72a (+56) MS with F\n* 6 chip damage"
+        }
+      ]
+    },
+    {
+      "id": "move-104",
+      "name": "Pulse Blast",
+      "type": "Heat Moves",
+      "input": "f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +36d\n\n* Balcony Break\n* Slight low profile"
+        }
+      ]
+    },
+    {
+      "id": "move-105",
+      "name": "Deadly Edge",
+      "type": "Strings",
+      "input": "f,F+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "*\n* High crush 5~"
+        }
+      ]
+    },
+    {
+      "id": "move-106",
+      "name": "Mist Step",
+      "type": "Stances",
+      "input": "f,n",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transitions to MS\n* Alternate input HMS.f,n\n* Can perform standing actions except for 3 and 3+4?\n* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-107",
+      "name": "Jostle Wolf Cardinal",
+      "type": "Single Hits",
+      "input": "f:F+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Transition to +5, +21gc, +72a (+56) MS with F\n* 11 chip damage\nPerfect Input not required during Heat\nPartially consumes remaining Heat Time, while Perfect input restores Heat Time"
+        }
+      ]
+    },
+    {
+      "id": "move-108",
+      "name": "Blazing Kick",
+      "type": "Single Hits",
+      "input": "qcf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado"
+        }
+      ]
+    },
+    {
+      "id": "move-109",
+      "name": "Back Handspring > Hitman",
+      "type": "Strings",
+      "input": "ub,b",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Automatically transitions to HMS\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-110",
+      "name": "Delayed Rising Toe Kick",
+      "type": "Strings",
+      "input": "uf,n,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-111",
+      "name": "f,f,F+3",
+      "type": "Strings",
+      "input": "f,f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Alternate input wr3\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-112",
+      "name": "Waxing Crescent",
+      "type": "Strings",
+      "input": "f,f,F+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Transition to +6, +29d (-6) HMS with 3\n* Combos from 1st hit\n* 7 chip damage\n* Balcony break on 2nd hit only\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-113",
+      "name": "ws1",
+      "type": "While Standing",
+      "input": "ws1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Automatically transitions to HMS on hit or block"
+        }
+      ]
+    },
+    {
+      "id": "move-114",
+      "name": "Wonderful Spin Blow",
+      "type": "While Standing",
+      "input": "ws1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i20"
+        },
+        {
+          "type": "properties",
+          "value": "*Transition to -3, +6, +12 MS with F"
+        }
+      ]
+    },
+    {
+      "id": "move-115",
+      "name": "Wonderful Combo",
+      "type": "While Standing",
+      "input": "ws1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i20"
+        },
+        {
+          "type": "properties",
+          "value": "*Transition to -8, +1 HMS with 3"
+        }
+      ]
+    },
+    {
+      "id": "move-116",
+      "name": "Wonderful Combo",
+      "type": "While Standing",
+      "input": "ws1:4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n*Transition to -8, +12g HMS with 3\n* 9 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-117",
+      "name": "ws2",
+      "type": "While Standing",
+      "input": "ws2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "id": "move-118",
+      "name": "Rocket Heel",
+      "type": "While Standing",
+      "input": "ws2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-119",
+      "name": "Twister Heel",
+      "type": "While Standing",
+      "input": "ws2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i27"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Balcony Break\n* Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-120",
+      "name": "ws3",
+      "type": "While Standing",
+      "input": "ws3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "id": "move-121",
+      "name": "ws3,3",
+      "type": "While Standing",
+      "input": "ws3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to -15, -4 HMS with 4\n* Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-122",
+      "name": "ws3,3,DF+3",
+      "type": "While Standing",
+      "input": "ws3,3,DF+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 2nd hit CH"
+        }
+      ]
+    },
+    {
+      "id": "move-123",
+      "name": "Infinite Kick Chain: Middle",
+      "type": "While Standing",
+      "input": "ws3,3,DF+3,3 ...",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i26"
+        },
+        {
+          "type": "properties",
+          "value": "* DF+3,3 can be repeated infinately\n* Can shift to Infinite Kick Chain: Low with D+3 after the 4th, 6th, and 8th high attacks\n* Combos from 3rd hit"
+        }
+      ]
+    },
+    {
+      "id": "move-124",
+      "name": "ws3,3,D+3",
+      "type": "While Standing",
+      "input": "ws3,3,D+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 2nd hit CH"
+        }
+      ]
+    },
+    {
+      "id": "move-125",
+      "name": "Infinite Kick Chain: Low",
+      "type": "While Standing",
+      "input": "ws3,3,D+3,3 ...",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i24"
+        },
+        {
+          "type": "properties",
+          "value": "* D+3,3 can be repeated infinitely\n* Can shift to Infinite Kick Chain: Middle with n,3 after the 4th, 6th, and 8th high attacks\n* Combos from 3rd hit"
+        }
+      ]
+    },
+    {
+      "id": "move-126",
+      "name": "Toe Smash",
+      "type": "While Standing",
+      "input": "ws4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to -9, +2 HMS with 3"
+        }
+      ]
+    },
+    {
+      "id": "move-127",
+      "name": "FC.1",
+      "type": "While Standing",
+      "input": "FC.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Alternate input d+1, db+1\n* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-128",
+      "name": "FC.2",
+      "type": "While Standing",
+      "input": "FC.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* Alternate input db+2\n* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-129",
+      "name": "FC.3",
+      "type": "While Standing",
+      "input": "FC.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "*\n* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-130",
+      "name": "FC.4",
+      "type": "While Standing",
+      "input": "FC.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Alternate input db+4\n* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-131",
+      "name": "Catapult Kick",
+      "type": "While Standing",
+      "input": "FC.UF+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to -17, +28a (+18) HMS with 3\n* Alternate input FC.UB+4, FC.U+4\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-132",
+      "name": "Catapult Drop",
+      "type": "While Standing",
+      "input": "FC.UF+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i46~49"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Can hit cross-up\n* Alternate input FC.UB+3+4, FC.U+3+4\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-133",
+      "name": "Slide Step",
+      "type": "While Standing",
+      "input": "FC.df,d,DF",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "*\n* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-134",
+      "name": "Friction Spear Cardinal",
+      "type": "While Standing",
+      "input": "FC.df,d,DF:3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~24"
+        },
+        {
+          "type": "properties",
+          "value": "* * Frame advantage on block depends on spacing.: Ranges from -15 up close, to -9 at tip range.\n* Perfect Input not required during Heat\n* Perfect input when DF and 3 are input during the same frame\n* Partially consumes remaining Heat Time, while Perfect input restores Heat Time\n* Is not bufferable from full crouch (regular version gets buffered instead)\n*  Transition to HMS -15 +5c with 4\n* High crush \n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-135",
+      "name": "Friction Spear",
+      "type": "While Standing",
+      "input": "FC.df,d,DF+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~24"
+        },
+        {
+          "type": "properties",
+          "value": "* * Frame advantage on block depends on spacing: Ranges from -15 up close, to -9 at tip range.\n* Bufferable from full crouch\n*  Transition to HMS -15 +5c with 4\n* High crush \n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-136",
+      "name": "Silver Tail",
+      "type": "While Standing",
+      "input": "FC.df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to -14, +3, +25d HMS with 3\n* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-137",
+      "name": "Wall Jump Backflip",
+      "type": "Stances",
+      "input": "(back to wall).b,b,UB",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i35~38"
+        },
+        {
+          "type": "properties",
+          "value": "* Floating state 5~7\n* is8~24\n* Floating state 25~33\n* Low crush 34~37\n* Floating state 38~40"
+        }
+      ]
+    },
+    {
+      "id": "move-138",
+      "name": "Freaker Jab",
+      "type": "Stances",
+      "input": "HMS.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Cancel and transition MS with F\n* Cancel into Scatter Kick (HMS.3) with input HMS.1~3"
+        }
+      ]
+    },
+    {
+      "id": "move-139",
+      "name": "HMS.1,1",
+      "type": "Stances",
+      "input": "HMS.1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Cancel and transition to +1, +8 MS with F\n* Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-140",
+      "name": "Amazing Swipe",
+      "type": "Heat Moves",
+      "input": "HMS.1,1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, ,i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +34d\n\n* Balcony Break\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-141",
+      "name": "Excellent Combo",
+      "type": "Stances",
+      "input": "HMS.1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to -8, +4, +58a HMS with 3"
+        }
+      ]
+    },
+    {
+      "id": "move-142",
+      "name": "Scatter Blow",
+      "type": "Stances",
+      "input": "HMS.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado"
+        }
+      ]
+    },
+    {
+      "id": "move-143",
+      "name": "Scatter Kick",
+      "type": "Stances",
+      "input": "HMS.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Homing\n* Shifts to throw on hit from the front\n* 6 chip damage\n* Power crush 8~"
+        }
+      ]
+    },
+    {
+      "id": "move-144",
+      "name": "Shin Slicer",
+      "type": "Stances",
+      "input": "HMS.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Instant Tornado on CH\n* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-145",
+      "name": "Poison Touch",
+      "type": "Stances",
+      "input": "HMS.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to HMS -3 +8 with 3+4"
+        }
+      ]
+    },
+    {
+      "id": "move-146",
+      "name": "Silver Slash",
+      "type": "Stances",
+      "input": "HMS.u+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Transition to -9, +23d (+13) FC with D\n* 7 chip damage\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-147",
+      "name": "Silver Circle",
+      "type": "Stances",
+      "input": "HMS.u+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~29"
+        },
+        {
+          "type": "properties",
+          "value": "*\n* Low crush 16~"
+        }
+      ]
+    },
+    {
+      "id": "move-148",
+      "name": "MS.3",
+      "type": "Stances",
+      "input": "MS.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "*\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-149",
+      "name": "Inverted Axle",
+      "type": "Stances",
+      "input": "MS.3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i15"
+        },
+        {
+          "type": "properties",
+          "value": "*"
+        }
+      ]
+    },
+    {
+      "id": "move-150",
+      "name": "Friction Spear",
+      "type": "Stances",
+      "input": "MS.3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25~31"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush \n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-151",
+      "name": "Forearm Drop",
+      "type": "Throws",
+      "input": "1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "Throw break 1 or 2"
+        }
+      ]
+    },
+    {
+      "id": "move-152",
+      "name": "Axle Throw",
+      "type": "Throws",
+      "input": "2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1 or 2\n* Side swap"
+        }
+      ]
+    },
+    {
+      "id": "move-153",
+      "name": "Face Crusher",
+      "type": "Single Hits",
+      "input": "Back Throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "Unbreakable"
+        }
+      ]
+    },
+    {
+      "id": "move-154",
+      "name": "Lee Harassment",
+      "type": "Single Hits",
+      "input": "Left Throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "Throw break 1"
+        }
+      ]
+    },
+    {
+      "id": "move-155",
+      "name": "Lee Stunner",
+      "type": "Single Hits",
+      "input": "Right Throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break Throw break 2"
+        }
+      ]
+    },
+    {
+      "id": "move-156",
+      "name": "Knee Drive",
+      "type": "Single Hits",
+      "input": "uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1+2\n* Alternate input HMS.uf+1+2"
+        }
+      ]
     }
   ]
 }

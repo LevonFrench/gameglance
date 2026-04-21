@@ -1,107 +1,2203 @@
 {
-  "name": "Azucena Ortiz",
-  "character": "Azucena Ortiz",
+  "id": "azucena-ortiz",
+  "name": "azucena",
   "movesList": [
     {
-      "name": "Rage Art: Ortiz Special",
-      "type": "special",
-      "input": "312"
-    },
-    {
+      "id": "move-0",
       "name": "Heat Burst",
-      "type": "special",
-      "input": "23"
+      "type": "Heat Moves",
+      "input": "2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Burst\n* Cancel to r45 with b,b on frame 42\n* 2 chip damage on block\n* 12 chip damage on hit\n* Only deals recoverable damage\n* Cannot cause a K.O.\n* Power crush 7~16"
+        }
+      ]
     },
     {
-      "name": "Libertador (Stance)",
-      "type": "special",
-      "input": "634"
+      "id": "move-1",
+      "name": "Blend Tempestad > Nuevo Libertador",
+      "type": "Heat Moves",
+      "input": "H.LIB.1,2,F",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Consumes 210F of remaining Heat time\n* 70% scaling on combo\n* Chip damage on block\n* Floating state 15~33"
+        }
+      ]
     },
     {
-      "name": "Amaru Head Squeeze",
-      "type": "special",
-      "input": "13"
+      "id": "move-2",
+      "name": "Puño de Fuego Evitacion",
+      "type": "Heat Moves",
+      "input": "H.LIB.P (High)",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Restores 120F of remaining heat time on successful parry\n* Restores 5 recoverable health on successful parry\n* Opponent recovers FUFA\n* is1~17"
+        }
+      ]
     },
     {
-      "name": "El Dorado Neck Snap",
-      "type": "special",
-      "input": "24"
+      "id": "move-3",
+      "name": "One Drip Cielo Evitacion",
+      "type": "Heat Moves",
+      "input": "H.LIB.P (Low)",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Restores 120F of remaining heat time on successful parry\n* Restores 5 recoverable health on successful parry\n* is1\n* Floating state 2~48"
+        }
+      ]
     },
     {
-      "name": "Andes Mountain Uppercut",
-      "type": "special",
-      "input": "1,2,1"
+      "id": "move-4",
+      "name": "One Drip Cielo",
+      "type": "Heat Moves",
+      "input": "H.LIB.d+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Consumes 210F of remaining Heat time\n* Transition to FC with D\n* Floating state 2~48"
+        }
+      ]
     },
     {
-      "name": "Groovy Strike",
-      "type": "special",
-      "input": "3,2"
+      "id": "move-5",
+      "name": "Double Blend Tempestad > Nuevo Libertador",
+      "type": "Heat Moves",
+      "input": "H.b+1,1,2,F",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Consumes 210F of remaining Heat time\n* 70% scaling on combo\n* Chip damage on block\n* Floating state 15~33"
+        }
+      ]
     },
     {
-      "name": "Sumatra Patadas",
-      "type": "special",
-      "input": "63,4"
+      "id": "move-6",
+      "name": "Mil Nudillo > Nuevo Libertador",
+      "type": "Heat Moves",
+      "input": "H.b+2,F",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Homing\n* 70% scaling on combo\n* Consumes 150F of remaining Heat time\n* 7 Chip damage on block\n* Low crush 15~30\n* Floating state 31~33"
+        }
+      ]
     },
     {
-      "name": "Tif\u00f3n Trueno",
-      "type": "special",
-      "input": "64,42"
+      "id": "move-7",
+      "name": "Libertador Revolución",
+      "type": "Heat Moves",
+      "input": "H.f+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Parries all high or low attacks\n* Consumes 120F of remaining Heat time\n* Cancel to r20 with DB\n* High crush 4~20\n* Parry state 17~"
+        }
+      ]
     },
     {
-      "name": "Rodilla Shot",
-      "type": "special",
-      "input": "33"
+      "id": "move-8",
+      "name": "Azucena Speciality",
+      "type": "Heat Moves",
+      "input": "H.2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Smash\n* Reversal Break\n* Balcony Break\n* 7 chip damage on block\n* Transition to attack throw on hit\n* Enter LIB +6 automatically on block/whiff\n* +15a if only the last hit connects\n* +30a (+20) if only the last two hits connect\n* 2nd hit damage 9 > 15 if 1st hit whiffs\n* 3rd hit damage 29 > 30 if 1st hit whiffs\n* Hit level becomes m,h,m on block/whiff\n* Spike on the last hit if the first two whiff\n* Low crush 18~57\n* Floating state 58~60"
+        }
+      ]
     },
     {
-      "name": "Kilimanjaro Uppercut",
-      "type": "special",
-      "input": "112"
+      "id": "move-9",
+      "name": "Coffee Break",
+      "type": "Heat Moves",
+      "input": "H.2+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i45"
+        }
+      ]
     },
     {
-      "name": "Espresso Aggresi\u00f3n",
-      "type": "special",
-      "input": "6,6,6,3,2"
+      "id": "move-10",
+      "name": "Alegría del Café",
+      "type": "Stances",
+      "input": "R.df+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\n* Power crush 8~"
+        }
+      ]
     },
     {
-      "name": "Luna Llena",
-      "type": "special",
-      "input": "6,63"
+      "id": "move-11",
+      "name": "Jab",
+      "type": "Single Hits",
+      "input": "1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Recovers 2f faster on hit or block (t27 r17)"
+        }
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "id": "move-12",
+      "name": "High Mountain Combo",
+      "type": "Strings",
+      "input": "1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 1f delay\n* Transition to LIB on standing hit only\n* Move can be delayed 8f"
+        }
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "id": "move-13",
+      "name": "High Roast Combo",
+      "type": "Strings",
+      "input": "1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit with 4f delay\n* Can transition to BT with B"
+        }
+      ]
     },
     {
-      "id": "n_2",
+      "id": "move-14",
+      "name": "Taunt",
+      "type": "Single Hits",
+      "input": "1+3+4",
+      "properties": []
+    },
+    {
+      "id": "move-15",
+      "name": "Shuffle Recital",
+      "type": "Single Hits",
+      "input": "1+3+4*",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Regenerates heat\n* Heat meter won't disappear, even if it fully depletes"
+        }
+      ]
+    },
+    {
+      "id": "move-16",
+      "name": "Right Jab",
+      "type": "Single Hits",
+      "input": "2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        }
+      ]
+    },
+    {
+      "id": "move-17",
+      "name": "2,1",
+      "type": "Strings",
+      "input": "2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 4f delay\n* Jail from 1st attack with 2f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-18",
+      "name": "Andes Mountain Uppercut Combo",
+      "type": "Strings",
+      "input": "2,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Combo from 2nd CH with 5f delay\n* Move can be delayed 10f"
+        }
+      ]
+    },
+    {
+      "id": "move-19",
       "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "type": "Single Hits",
+      "input": "3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        }
+      ]
     },
     {
-      "id": "n_3",
+      "id": "move-20",
+      "name": "Groovy Strike",
+      "type": "Strings",
+      "input": "3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 7f delay\n* Move can be delayed 10f\n* Opponent recovers crouching on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-21",
+      "name": "3,2~F",
+      "type": "Strings",
+      "input": "3,2~F",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, "
+        },
+        {
+          "type": "properties",
+          "value": "Listed parry state is at earliest cancel\n* Parry state 36~\n* on\n* whiff\n* Parry state 17~\n* on\n* block\n* Parry state 6~\n* on\n* hit"
+        }
+      ]
+    },
+    {
+      "id": "move-22",
+      "name": "Groovy Punalada",
+      "type": "Heat Moves",
+      "input": "3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +43d (+35)\n\n* Balcony Break\n* Combo from 1st hit with 6f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-23",
       "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "type": "Single Hits",
+      "input": "4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "* Has good left sidestep tracking"
+        }
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "move-24",
+      "name": "Guapuño",
+      "type": "Strings",
+      "input": "4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Unparryable by traditional punch parries (bug?)"
+        }
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "id": "move-25",
+      "name": "Delfin Patadas",
+      "type": "Strings",
+      "input": "4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH with 8f delay\n* Move can be delayed 12f"
+        }
+      ]
+    },
+    {
+      "id": "move-26",
+      "name": "Boomerang Scythe",
+      "type": "Single Hits",
+      "input": "1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* High crush 8~15"
+        }
+      ]
+    },
+    {
+      "id": "move-27",
+      "name": "Coffee Break",
+      "type": "Single Hits",
+      "input": "2+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i45"
+        }
+      ]
+    },
+    {
+      "id": "move-28",
+      "name": "f+2",
+      "type": "Single Hits",
+      "input": "f+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        }
+      ]
+    },
+    {
+      "id": "move-29",
+      "name": "f+2,1",
+      "type": "Strings",
+      "input": "f+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 7f delay\n* Move can be delayed 8f"
+        }
+      ]
+    },
+    {
+      "id": "move-30",
+      "name": "Danza Del Cóndor",
+      "type": "Strings",
+      "input": "f+2,1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, ,i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH with 10f delay\n* Low crush 18~38\n* Floating state 39~41"
+        }
+      ]
+    },
+    {
+      "id": "move-31",
+      "name": "f+3",
+      "type": "Single Hits",
+      "input": "f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Has good right sidestep tracking"
+        }
+      ]
+    },
+    {
+      "id": "move-32",
+      "name": "Sumatra Back Knuckle",
+      "type": "Strings",
+      "input": "f+3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit with 8f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-33",
+      "name": "Sumatra Patadas",
+      "type": "Strings",
+      "input": "f+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 6f delay\n* Input can be delayed for 8f\n* Move can be delayed for 7f"
+        }
+      ]
+    },
+    {
+      "id": "move-34",
+      "name": "f+4",
+      "type": "Single Hits",
+      "input": "f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "Homing"
+        }
+      ]
+    },
+    {
+      "id": "move-35",
+      "name": "Tifón Patear",
+      "type": "Heat Moves",
+      "input": "f+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +62a (+42)\n\n* Balcony Break\n* Combo from 1st hit\n* Cancel 2nd hit into BT -19 -10 r20 with B\n* Low crush 15~23\n* Floating state 24~26"
+        }
+      ]
+    },
+    {
+      "id": "move-36",
+      "name": "Tifón Trueno",
+      "type": "Strings",
+      "input": "f+4,4~2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* 6 chip damage on block\n* 9 chip damage on block during heat\n* Interrupt with i21 from 1st block"
+        }
+      ]
+    },
+    {
+      "id": "move-37",
+      "name": "Tifón Cañón",
+      "type": "Strings",
+      "input": "f+4,4~3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Tornado on CH\n* Interrupt with i19 from 1st block\n* Low crush 1~6\n* Floating state 7~9"
+        }
+      ]
+    },
+    {
+      "id": "move-38",
+      "name": "Aero Press Pegar",
+      "type": "Single Hits",
+      "input": "f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* +0 frame advantage and 10 chip damage on block after absorbing an attack in power crush state\n* Power crush 7~15"
+        }
+      ]
+    },
+    {
+      "id": "move-39",
+      "name": "Libertador",
+      "type": "Single Hits",
+      "input": "f+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Completely evades all high/low attacks\n* Cancel to r20 with DB\n* Parry state 18~"
+        }
+      ]
+    },
+    {
+      "id": "move-40",
+      "name": "Shuffle Jamboree",
+      "type": "Single Hits",
+      "input": "f+3+4*",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Regenerates heat\n* Heat meter won't disappear, even if it fully depletes\n* Parry state 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-41",
+      "name": "Mid Check",
+      "type": "Single Hits",
+      "input": "df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        }
+      ]
+    },
+    {
+      "id": "move-42",
+      "name": "df+1,4",
+      "type": "Strings",
+      "input": "df+1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st attack with 1f delay\n* Enter BT -5 +6 r23 with B"
+        }
+      ]
+    },
+    {
+      "id": "move-43",
+      "name": "Grande Combo",
+      "type": "Strings",
+      "input": "df+1,4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH with 7f delay\n* Move can be delayed 8f delay\n* Enter LIB -17 -6 r20 with F"
+        }
+      ]
+    },
+    {
+      "id": "move-44",
+      "name": "Full Body Grande Combo",
+      "type": "Strings",
+      "input": "df+1,4,1~2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "Spike"
+        }
+      ]
+    },
+    {
+      "id": "move-45",
+      "name": "Mount Rainier",
+      "type": "Single Hits",
+      "input": "df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "Launches crouching opponent"
+        }
+      ]
+    },
+    {
+      "id": "move-46",
+      "name": "Rodilla Shot",
+      "type": "Single Hits",
+      "input": "df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "Knee"
+        }
+      ]
+    },
+    {
+      "id": "move-47",
+      "name": "df+4",
+      "type": "Single Hits",
+      "input": "df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        }
+      ]
+    },
+    {
+      "id": "move-48",
+      "name": "Blue Mountain Combo",
+      "type": "Strings",
+      "input": "df+4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Combo from 1st hit with 6f delay\n* Move can be delayed 10f"
+        }
+      ]
+    },
+    {
+      "id": "move-49",
+      "name": "Hand Drip Hammer",
+      "type": "Single Hits",
+      "input": "d+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-50",
+      "name": "d+2",
+      "type": "Single Hits",
+      "input": "d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        }
+      ]
+    },
+    {
+      "id": "move-51",
+      "name": "La Niña Kick Combo",
+      "type": "Strings",
+      "input": "d+2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Balcony Break\n* Combo from 1st hit with 7f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-52",
+      "name": "d+3",
+      "type": "Single Hits",
+      "input": "d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        }
+      ]
+    },
+    {
+      "id": "move-53",
+      "name": "d+3,3",
+      "type": "Strings",
+      "input": "d+3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH with 7f delay\n* Move can be delayed 10f"
+        }
+      ]
+    },
+    {
+      "id": "move-54",
+      "name": "Passionate Kick Combo",
+      "type": "Strings",
+      "input": "d+3,3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, ,i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Combo from 2nd CH with 10f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-55",
+      "name": "d+4",
+      "type": "Single Hits",
+      "input": "d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-56",
+      "name": "Roast Knuckle Combo",
+      "type": "Strings",
+      "input": "d+4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH with 2f delay\n* Move can be delayed 10f\n* Cancel to LIB -20 -9 r18 with F"
+        }
+      ]
+    },
+    {
+      "id": "move-57",
+      "name": "Full City Roast Knuckle Combo",
+      "type": "Strings",
+      "input": "d+4,1~2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-58",
+      "name": "UFO Roll",
+      "type": "Single Hits",
+      "input": "d+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to throw on front standing hit only\n* 18 damage to Azucena when hitting crouching opponent (block)\n* Damage on hit and block is recoverable health\n* Cannot KO Azucena when blocked\n* r41 FC on whiff\n* High crush 8~\n* Floating state 25~"
+        }
+      ]
+    },
+    {
+      "id": "move-59",
+      "name": "Crouch Jab",
+      "type": "Single Hits",
+      "input": "db+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Can recover standing with F\n* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-60",
+      "name": "Crouch Straight",
+      "type": "Single Hits",
+      "input": "db+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 4~"
+        }
+      ]
+    },
+    {
+      "id": "move-61",
+      "name": "db+3",
+      "type": "Single Hits",
+      "input": "db+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        }
+      ]
+    },
+    {
+      "id": "move-62",
+      "name": "Borrasca Kick Combo",
+      "type": "Strings",
+      "input": "db+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Jails from first hit\n* Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-63",
+      "name": "Bitter Low Kick",
+      "type": "Single Hits",
+      "input": "db+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 6~20"
+        }
+      ]
+    },
+    {
+      "id": "move-64",
+      "name": "Kilimanjaro Uppercut",
+      "type": "Single Hits",
+      "input": "db+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "Steel pedal\n* High crush 6~21"
+        }
+      ]
+    },
+    {
+      "id": "move-65",
+      "name": "El Cóndor Pasa",
+      "type": "Single Hits",
+      "input": "db+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Backswing blow\n* Low crush 20~35\n* Floating state 36~38"
+        }
+      ]
+    },
+    {
+      "id": "move-66",
+      "name": "b+1",
+      "type": "Single Hits",
+      "input": "b+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-67",
+      "name": "b+1,1",
+      "type": "Strings",
+      "input": "b+1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH hit with 6f delay\n* Only jails on block with 1f delay\n* 4 chip damage on block\n* 5 chip damage on block during heat"
+        }
+      ]
+    },
+    {
+      "id": "move-68",
+      "name": "Double Blend Tempestad",
+      "type": "Strings",
+      "input": "b+1,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH\n* Combo from 2nd CH with 6f delay\n* Input can be delayed 9f\n* Move can be delayed 7f\n* 6 chip damage on block\n* 7 chip damage on block during heat \n* Cancel to BT -21 -10 r18 with B"
+        }
+      ]
+    },
+    {
+      "id": "move-69",
+      "name": "Mil Nudillo",
+      "type": "Single Hits",
+      "input": "b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Homing\n* 6 chip damage on block\n* 7 chip damage on block during heat"
+        }
+      ]
+    },
+    {
+      "id": "move-70",
+      "name": "Tacón Plunger",
+      "type": "Heat Moves",
+      "input": "b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +67a (+50)\n\n* Spike\n* 6 chip damage on block\n* 7 chip damage on block during heat"
+        }
+      ]
+    },
+    {
+      "id": "move-71",
+      "name": "b+4",
+      "type": "Single Hits",
+      "input": "b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "Knee"
+        }
+      ]
+    },
+    {
+      "id": "move-72",
+      "name": "b+4,3",
+      "type": "Strings",
+      "input": "b+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Combo from 1st hit with 6f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-73",
+      "name": "b+4,3,4",
+      "type": "Strings",
+      "input": "b+4,3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Combo from 2nd CH with 10f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-74",
+      "name": "Seattle Skipper",
+      "type": "Strings",
+      "input": "b+4,3,4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH with 6f delay\n* Combo from 3rd hit with 2f delay\n* Move can be delayed 6f"
+        }
+      ]
+    },
+    {
+      "id": "move-75",
+      "name": "Hopping Turn",
+      "type": "Single Hits",
+      "input": "b+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Low crush 6~19\n* Floating state 20~22"
+        }
+      ]
+    },
+    {
+      "id": "move-76",
+      "name": "Shuffle Carnival",
+      "type": "Single Hits",
+      "input": "b+3+4*",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "Regenerates heat"
+        }
+      ]
+    },
+    {
+      "id": "move-77",
+      "name": "Eye Opener",
+      "type": "Single Hits",
+      "input": "uf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Wall Crush +15g on hit\n\n\n* Balcony break on airborne hit\n* Punch Sabaki, parries high or mid punches\n* Parry state 3~10"
+        }
+      ]
+    },
+    {
+      "id": "move-78",
+      "name": "Close Encounter",
+      "type": "Strings",
+      "input": "uf+1,P",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, "
+        },
+        {
+          "type": "properties",
+          "value": "Opponent recovers FUFA"
+        }
+      ]
+    },
+    {
+      "id": "move-79",
+      "name": "Rhythmic Hook",
+      "type": "Single Hits",
+      "input": "uf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Guaranteed 14f or faster follow-up mid on hit\n* 70% scaling on combo\n* Sidesteps to the right"
+        }
+      ]
+    },
+    {
+      "id": "move-80",
+      "name": "uf+3",
+      "type": "Single Hits",
+      "input": "uf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 10~30\n* Floating state 31~65"
+        }
+      ]
+    },
+    {
+      "id": "move-81",
+      "name": "Daylight Disk",
+      "type": "Strings",
+      "input": "uf+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Balcony Break\n* Combo from 1st hit with 11f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-82",
+      "name": "Tacones Drip",
+      "type": "Single Hits",
+      "input": "uf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i24~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n*20 damage when u+4 or ub+4 input is used\n* Low crush 9~26"
+        }
+      ]
+    },
+    {
+      "id": "move-83",
+      "name": "Ortiz Molino",
+      "type": "Single Hits",
+      "input": "uf+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22 i10~12"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Enter BT with B\n* 8 chip damage on block\n* 9 chip damage on block during heat\n* Low crush 16~36\n* Floating state 37~39"
+        }
+      ]
+    },
+    {
+      "id": "move-84",
+      "name": "Ki Charge",
+      "type": "Single Hits",
+      "input": "1+2+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Can't block for 5 seconds\n* CH state on your next attack for 5 seconds ''(Tekken 7 and prior games)''\n* 10% damage increase on the next attack for 5 seconds ''(Tekken 8 season 2 patch onward)''\n* Attacks taken will be CH for 5 seconds"
+        }
+      ]
+    },
+    {
+      "id": "move-85",
+      "name": "Black Ivory Talon",
+      "type": "Strings",
+      "input": "1+2+3+4,3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i75"
+        },
+        {
+          "type": "properties",
+          "value": "Base damage is 45"
+        }
+      ]
+    },
+    {
+      "id": "move-86",
+      "name": "Volterador",
+      "type": "Strings",
+      "input": "UB,b",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "Transition to r24 LIB with F\n* Low crush 18~37\n* Floating state 38~40"
+        }
+      ]
+    },
+    {
+      "id": "move-87",
+      "name": "Luna Llena",
+      "type": "Strings",
+      "input": "f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~17"
+        },
+        {
+          "type": "properties",
+          "value": "Tornado\n* Low crush 17~37\n* Floating state 38~40"
+        }
+      ]
+    },
+    {
+      "id": "move-88",
+      "name": "Demitasse Molino",
+      "type": "Strings",
+      "input": "f,F+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Guaranteed 13f or faster mid on hit\n* 70% scaling on combo\n* Chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-89",
+      "name": "f,f,F+3",
+      "type": "Strings",
+      "input": "f,f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "Knee\n* Low crush 9~36\n* Floating state 37~39"
+        }
+      ]
+    },
+    {
+      "id": "move-90",
+      "name": "Espresso Agresión",
+      "type": "Strings",
+      "input": "f,f,F+3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i10~12"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Elbow\n* Jail from 1st attack\n* 8 chip damage on block\n* Available only as combo from 1st hit\n* Enter LIB +3 +28a (+2) r35 with F on frame 22\n* Low crush 1~24\n* Floating state 25~27"
+        }
+      ]
+    },
+    {
+      "id": "move-91",
+      "name": "Gold Mountain Fist",
+      "type": "While Standing",
+      "input": "ws1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "Only hits grounded up-close and off-axis"
+        }
+      ]
+    },
+    {
+      "id": "move-92",
+      "name": "Rainbow Mountain Swing",
+      "type": "While Standing",
+      "input": "ws2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-93",
+      "name": "Viento Fuerte",
+      "type": "While Standing",
+      "input": "ws3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 6 chip damage on block\n* 9 chip damage on block during heat\n* Opponent recovers crouching"
+        }
+      ]
+    },
+    {
+      "id": "move-94",
+      "name": "ws4",
+      "type": "While Standing",
+      "input": "ws4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12"
+        }
+      ]
+    },
+    {
+      "id": "move-95",
+      "name": "ws4,1",
+      "type": "While Standing",
+      "input": "ws4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12, i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 6f delay\n* Enter LIB +0 +8 r21 with F"
+        }
+      ]
+    },
+    {
+      "id": "move-96",
+      "name": "Combo de Cantuta",
+      "type": "While Standing",
+      "input": "ws4,1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12, ,i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH with 7f delay\n* Move can be delayed 10f\n* Cancel to BT -16 -8 r20 with B"
+        }
+      ]
+    },
+    {
+      "id": "move-97",
+      "name": "Mowing Kick",
+      "type": "Stances",
+      "input": "SS.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "Sidestep adds 9f, effective startup i29\n* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-98",
+      "name": "Cosecha Látigo",
+      "type": "While Standing",
+      "input": "FC.df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-99",
+      "name": "Etching Blade",
+      "type": "While Standing",
+      "input": "FC.df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to r33 LIB on hit only\n* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-100",
+      "name": "Crouch Jab",
+      "type": "While Standing",
+      "input": "FC.d+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Can recover standing with F\n* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-101",
+      "name": "Crouch Straight",
+      "type": "While Standing",
+      "input": "FC.d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-102",
+      "name": "Crouch Spin Kick",
+      "type": "While Standing",
+      "input": "FC.d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-103",
+      "name": "Crouch Shin Kick",
+      "type": "While Standing",
+      "input": "FC.d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-104",
+      "name": "[[Wall Jump Attack]]",
+      "type": "Stances",
+      "input": "(Back to wall).b,b,UB",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i27~33"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* Floating state 5~13\n* Low crush 14~26\n* Floating state 27~54"
+        }
+      ]
+    },
+    {
+      "id": "move-105",
+      "name": "BT.1",
+      "type": "Stances",
+      "input": "BT.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10~11"
+        }
+      ]
+    },
+    {
+      "id": "move-106",
+      "name": "Mocha Attaque Matari",
+      "type": "Stances",
+      "input": "BT.1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10~11, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit with 2f delay\n* Combo from 1st CH with 4f delay\n* Move can be delayed 10f\n* 6 chip damage on block \n* 9 chip damage on block during heat \n* Cancel to LIB -19 -13 r20 with F"
+        }
+      ]
+    },
+    {
+      "id": "move-107",
+      "name": "Mocha Attaque Sidamo",
+      "type": "Stances",
+      "input": "BT.1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10~11, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Combo from 1st CH with 2f delay\n* Move can be delayed 10f\n* Will not combo if the kick impacts on i25"
+        }
+      ]
+    },
+    {
+      "id": "move-108",
+      "name": "BT.2",
+      "type": "Stances",
+      "input": "BT.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "Transition to attack throw on front standing hit by inputting 2 on frames 10~16"
+        }
+      ]
+    },
+    {
+      "id": "move-109",
+      "name": "Qhapaq Ñan",
+      "type": "Stances",
+      "input": "BT.2:2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, "
+        },
+        {
+          "type": "properties",
+          "value": "Transition to attack throw on front standing hit by inputting 2 on frames 10~16"
+        }
+      ]
+    },
+    {
+      "id": "move-110",
+      "name": "Calf Reaper",
+      "type": "Stances",
+      "input": "BT.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Balcony break on airborne hit\n* Transition to LIB on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-111",
+      "name": "BT.4",
+      "type": "Stances",
+      "input": "BT.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-112",
+      "name": "Upbeat Patadas",
+      "type": "Stances",
+      "input": "BT.4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Combo from 1st hit with 6f delay\n* Move can be delayed 10f\n* Only hits grounded when up-close and off-axis"
+        }
+      ]
+    },
+    {
+      "id": "move-113",
+      "name": "Golpe Affogato",
+      "type": "Stances",
+      "input": "BT.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-114",
+      "name": "Foo Fighter",
+      "type": "Stances",
+      "input": "BT.3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i27~29"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Chip damage on block\n* Evasive, can evade mids and some highs\n* Low crush 9~29"
+        }
+      ]
+    },
+    {
+      "id": "move-115",
+      "name": "Shuffle Walk",
+      "type": "Stances",
+      "input": "BT.b+3",
+      "properties": []
+    },
+    {
+      "id": "move-116",
+      "name": "Runaway",
+      "type": "Stances",
+      "input": "BT.b+1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "Parries all mids\n* Parry state 2~8"
+        }
+      ]
+    },
+    {
+      "id": "move-117",
+      "name": "Hide Turn",
+      "type": "Stances",
+      "input": "BT.b+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* High crush 6~20"
+        }
+      ]
+    },
+    {
+      "id": "move-118",
+      "name": "Libertador (Regreso)",
+      "type": "Stances",
+      "input": "BT.f+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Low crush 6~21\n* Floating state 22~24"
+        }
+      ]
+    },
+    {
+      "id": "move-119",
+      "name": "LIB.1",
+      "type": "Stances",
+      "input": "LIB.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "* 4 chip damage on block\n* 5 chip damage on block during heat"
+        }
+      ]
+    },
+    {
+      "id": "move-120",
+      "name": "Blend Tempestad",
+      "type": "Stances",
+      "input": "LIB.1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit with 6f delay\n* Input can be delayed 9f\n* Move can be delayed 7f\n* 6 chip damage on block\n* Cancel to BT -15 -10 r18 with B"
+        }
+      ]
+    },
+    {
+      "id": "move-121",
+      "name": "Golpe Cappuccino",
+      "type": "Heat Moves",
+      "input": "LIB.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-122",
+      "name": "Acerbic Low Kick",
+      "type": "Stances",
+      "input": "LIB.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        }
+      ]
+    },
+    {
+      "id": "move-123",
+      "name": "Blend Reganar",
+      "type": "Stances",
+      "input": "LIB.3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Combo from 1st CH with 7f delay\n* Move can be delayed 8f\n* On block only regular i10 punishers are guaranteed, even though she is backturned"
+        }
+      ]
+    },
+    {
+      "id": "move-124",
+      "name": "LIB.4",
+      "type": "Stances",
+      "input": "LIB.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-125",
+      "name": "LIB.4,1",
+      "type": "Stances",
+      "input": "LIB.4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 9f delay\n* Launches from first counter hit"
+        }
+      ]
+    },
+    {
+      "id": "move-126",
+      "name": "Blend Asaltar",
+      "type": "Stances",
+      "input": "LIB.4,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,i28~29"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Combo from 2nd CH with 1f delay\n* Move can be delayed 10f"
+        }
+      ]
+    },
+    {
+      "id": "move-127",
+      "name": "Blend Martillo",
+      "type": "Stances",
+      "input": "LIB.4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Spike\n* Combo from 1st hit with 5f delay\n* Will not wall splat when the first hit is a counter hit due to float state"
+        }
+      ]
+    },
+    {
+      "id": "move-128",
+      "name": "Rana Barista",
+      "type": "Stances",
+      "input": "LIB.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Cancel to r20 BT with B\n* Low crush 20~30\n* Floating state 31~33"
+        }
+      ]
+    },
+    {
+      "id": "move-129",
+      "name": "El Niño High Kick",
+      "type": "Stances",
+      "input": "LIB.3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Homing\n* Balcony Break\n* 7 chip damage on block\n* +3 frame advantage and 10 chip damage on block after absorbing an attack in power crush state\n* Power crush 7~15"
+        }
+      ]
+    },
+    {
+      "id": "move-130",
+      "name": "Salida Castillo",
+      "type": "Stances",
+      "input": "LIB.B",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "Completely evades high or low attacks\n* Parry state 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-131",
+      "name": "Azucena Admission",
+      "type": "Stances",
+      "input": "LIB.F",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Completely evades high or low attacks\n* Regenerates heat with each step\n* Parry state 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-132",
+      "name": "Crema Petalo",
+      "type": "Stances",
+      "input": "LIB.P (High)",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Restores recoverable health\n* Frame advantage depends on the move that gets parried\n* is1~16"
+        }
+      ]
+    },
+    {
+      "id": "move-133",
+      "name": "Flush Valve Gracia",
+      "type": "Stances",
+      "input": "LIB.P (Low)",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i7~8 i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Restores recoverable health\n* Will cause a juggle on lows with float properties\n* is1~6\n* Floating state 7\n* Low crush 8~19\n* Floating state 20~22"
+        }
+      ]
+    },
+    {
+      "id": "move-134",
+      "name": "Milagros Show",
+      "type": "Stances",
+      "input": "LIB.U",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Completely evades high or low attacks\n* Regenerates heat with each step\n* Parry state 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-135",
+      "name": "Caer Back Funnel",
+      "type": "Stances",
+      "input": "LIB.b,b",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Can be canceled at r20 with b+1 or uf+1, performs the same attack as uf+1"
+        }
+      ]
+    },
+    {
+      "id": "move-136",
+      "name": "Pedalada Tron",
+      "type": "Stances",
+      "input": "LIB.d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i24~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Floor Break on airborne hit\n* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-137",
+      "name": "LIB.d+4",
+      "type": "Stances",
+      "input": "LIB.d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        }
+      ]
+    },
+    {
+      "id": "move-138",
+      "name": "Blend Cortar",
+      "type": "Stances",
+      "input": "LIB.d+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20, i30~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-139",
+      "name": "Libertador (Varios)",
+      "type": "Stances",
+      "input": "LIB.f,f",
+      "properties": []
+    },
+    {
+      "id": "move-140",
+      "name": "Amaru Head Squeeze",
+      "type": "Throws",
+      "input": "1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1 or 2"
+        }
+      ]
+    },
+    {
+      "id": "move-141",
+      "name": "El Dorado Neck Snap",
+      "type": "Throws",
+      "input": "2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1 or 2\n* Side switch on hit and break"
+        }
+      ]
+    },
+    {
+      "id": "move-142",
+      "name": "Caffeine Abduction",
+      "type": "Single Hits",
+      "input": "Back throw",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Unbreakable\n* Side switch"
+        }
+      ]
+    },
+    {
+      "id": "move-143",
+      "name": "Urubamba Neck Lock",
+      "type": "Single Hits",
+      "input": "Left throw",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Throw break 1"
+        }
+      ]
+    },
+    {
+      "id": "move-144",
+      "name": "Giratorio Sleeper Throw",
+      "type": "Throws",
+      "input": "Right throw",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Throw break 2"
+        }
+      ]
+    },
+    {
+      "id": "move-145",
+      "name": "Ultimate Punch",
+      "type": "Stances",
+      "input": "Tackle.2,1,2,1",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Throw break 1 for right punches\n* Throw break 2 for left punches\n* Only 1st and 4th hits can be blocked\n* Inputs are reversed for tackle from behind\n* Can cancel the last punch to Arm Breaker with 1+2"
+        }
+      ]
+    },
+    {
+      "id": "move-146",
+      "name": "Arm Breaker",
+      "type": "Stances",
+      "input": "Tackle.1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Throw break 1+2"
+        }
+      ]
+    },
+    {
+      "id": "move-147",
+      "name": "Smell the Coffee",
+      "type": "Heat Moves",
+      "input": "d+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Regains heat during heat\n* Crouch throw\n* Unbreakable\n* Can't Heat Dash cancel"
+        }
+      ]
+    },
+    {
+      "id": "move-148",
+      "name": "Ultimate Tackle",
+      "type": "Stances",
+      "input": "hFC.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i32"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1+2 in a 4f window, frames 1~4\n* Reverse tackle with 1+2 in a 2f window, frames 18~19\n* Works on standing and crouching opponent\n* Can be done from Crouch Level 1"
+        }
+      ]
+    },
+    {
+      "id": "move-149",
+      "name": "Inti Raymi Necklace",
+      "type": "Single Hits",
+      "input": "uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1+2\n* side switch on hit"
+        }
+      ]
     }
   ]
 }

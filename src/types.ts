@@ -3,6 +3,10 @@ export interface FrameData {
   active?: string;
   recovery?: string;
   advantage?: string;
+  hitLevel?: string;
+  onBlock?: string;
+  onHit?: string;
+  onCounter?: string;
 }
 
 export const MOVE_TYPES = ['normal', 'special', 'super', 'throw', 'unique', 'common', 'finisher', 'system'] as const;
@@ -17,6 +21,7 @@ export interface Move {
   parentMoveId?: string;
   damage?: string;
   notes?: string;
+  properties?: string[];
 }
 
 export interface PlaylistItem {
@@ -84,6 +89,7 @@ export interface GameDefinition {
   controller?: import('./glyphMap').ControllerType;
   systemMechanics?: { name: string, description: string, input?: string }[];
   characters?: { id: string, name: string, isHidden?: boolean, moveCount?: number, comboCount?: number }[];
+  links?: { title: string; url: string }[];
 }
 
 export const APP_VIEWS = ['game_select', 'char_select', 'move_list', 'main_screen'] as const;

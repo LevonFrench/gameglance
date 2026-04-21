@@ -1,0 +1,2337 @@
+{
+  "id": "eddy",
+  "name": "Eddy",
+  "movesList": [
+    {
+      "id": "move-0",
+      "name": "Heat Burst",
+      "type": "Heat Moves",
+      "input": "2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Burst\n* Cancel to r45 with b,b on frame 42\n* 2 chip damage on block\n* 12 chip damage on hit\n* Only deals recoverable damage\n* Cannot cause a K.O.\n* Power crush 7~16"
+        }
+      ]
+    },
+    {
+      "id": "move-1",
+      "name": "Guerreiro Explosivo",
+      "type": "Heat Moves",
+      "input": "H.3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Transition to HSP\n* 6 chip damage on block\n* High crush 6~11?\n* Floating state 11?~?\n* Low crush 20~?"
+        }
+      ]
+    },
+    {
+      "id": "move-2",
+      "name": "Rabo de Arraia Liberado",
+      "type": "Heat Moves",
+      "input": "H.qcf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 13 chip damage on block\n* Transition to RLX\n* Low crush 14~?"
+        }
+      ]
+    },
+    {
+      "id": "move-3",
+      "name": "Caveirinha Zangada",
+      "type": "Heat Moves",
+      "input": "H.2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Smash\n* Balcony Break\n* Transition to RLX on block\n* Low crush 34~"
+        }
+      ]
+    },
+    {
+      "id": "move-4",
+      "name": "Enchente de Axé",
+      "type": "Stances",
+      "input": "R.df+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\n* Power crush 8~"
+        }
+      ]
+    },
+    {
+      "id": "move-5",
+      "name": "Jab",
+      "type": "Single Hits",
+      "input": "1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Recovers 2f faster on hit or block (t27 r17)"
+        }
+      ]
+    },
+    {
+      "id": "move-6",
+      "name": "One Two Galopantes",
+      "type": "Strings",
+      "input": "1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st attack with 4f delay\n* Enter HSP -5 +6 r24 with F"
+        }
+      ]
+    },
+    {
+      "id": "move-7",
+      "name": "One Two Lunging Brush Fire",
+      "type": "Strings",
+      "input": "1,2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st or 2nd CH with 4F delay\n* Interrupt from 2nd block with i5"
+        }
+      ]
+    },
+    {
+      "id": "move-8",
+      "name": "1,2,4",
+      "type": "Strings",
+      "input": "1,2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 7~37\n* Floating state 38~40"
+        }
+      ]
+    },
+    {
+      "id": "move-9",
+      "name": "One Two Galopantes > Chute Baixo",
+      "type": "Strings",
+      "input": "1,2,4~3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i32~33"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 32~"
+        }
+      ]
+    },
+    {
+      "id": "move-10",
+      "name": "One Two Galopantes > Chute Alto",
+      "type": "Strings",
+      "input": "1,2,4~4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Tech roll to r45 FC on frames 30~31\n* Low crush 7~32"
+        }
+      ]
+    },
+    {
+      "id": "move-11",
+      "name": "Céu Gafanhoto",
+      "type": "Strings",
+      "input": "1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Combo from 1st hit with 2f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-12",
+      "name": "2",
+      "type": "Single Hits",
+      "input": "2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        }
+      ]
+    },
+    {
+      "id": "move-13",
+      "name": "2,1",
+      "type": "Strings",
+      "input": "2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "Jail from 1st attack"
+        }
+      ]
+    },
+    {
+      "id": "move-14",
+      "name": "Combo Furacão",
+      "type": "Strings",
+      "input": "2,1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, ,i20~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd Ch with 10f delay\n* Input can be delayed 14f"
+        }
+      ]
+    },
+    {
+      "id": "move-15",
+      "name": "Batida de Compasso",
+      "type": "Strings",
+      "input": "2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-16",
+      "name": "3",
+      "type": "Single Hits",
+      "input": "3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-17",
+      "name": "Sincelo",
+      "type": "Strings",
+      "input": "3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH\n* Transition to HSP"
+        }
+      ]
+    },
+    {
+      "id": "move-18",
+      "name": "4",
+      "type": "Single Hits",
+      "input": "4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        }
+      ]
+    },
+    {
+      "id": "move-19",
+      "name": "Lufada",
+      "type": "Heat Moves",
+      "input": "4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i30~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +62a (+42)\n\n* Balcony Break\n* Combo from 1st CH with 4f delay\n* Input can be delayed 7f\n* Low crush 22~33\n* Floating state 34~36"
+        }
+      ]
+    },
+    {
+      "id": "move-20",
+      "name": "Faisão",
+      "type": "Single Hits",
+      "input": "1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-21",
+      "name": "f+2",
+      "type": "Single Hits",
+      "input": "f+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        }
+      ]
+    },
+    {
+      "id": "move-22",
+      "name": "Ventania",
+      "type": "Strings",
+      "input": "f+2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH with with 12f delay\n* Input can be delayed 17f\n* Move can be delayed 15f"
+        }
+      ]
+    },
+    {
+      "id": "move-23",
+      "name": "f+3",
+      "type": "Single Hits",
+      "input": "f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~18"
+        },
+        {
+          "type": "properties",
+          "value": "Homing"
+        }
+      ]
+    },
+    {
+      "id": "move-24",
+      "name": "Combo do Funâmbolo",
+      "type": "Strings",
+      "input": "f+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~18, i29~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit\n* Cancel to HSP -14 -2 r40 with F on frame 20\n* Floating state 25~46"
+        }
+      ]
+    },
+    {
+      "id": "move-25",
+      "name": "f+4",
+      "type": "Single Hits",
+      "input": "f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break\n* Floating state 16~"
+        }
+      ]
+    },
+    {
+      "id": "move-26",
+      "name": "f+4,3",
+      "type": "Strings",
+      "input": "f+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~25, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Combo from 1st hit with 10f delay\n* Move can be delayed 7f"
+        }
+      ]
+    },
+    {
+      "id": "move-27",
+      "name": "Aú do Sol",
+      "type": "Strings",
+      "input": "f+4,3,3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~25, ,i24~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Combo from 2nd CH\n* Floating state 21~39"
+        }
+      ]
+    },
+    {
+      "id": "move-28",
+      "name": "Aú da Lua",
+      "type": "Strings",
+      "input": "f+4,3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~25, i22~24 i5~6"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RLX on hit or whiff\n* Combo from 1st CH\n* Floating state 1~70\n* High crush 10~86"
+        }
+      ]
+    },
+    {
+      "id": "move-29",
+      "name": "Bananeira",
+      "type": "Single Hits",
+      "input": "f+1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Auto low parry ps8?~ at Mandinga Level 1\n** Transition to Ogum Mandinga on successful parry\n* Transition to HSP\n* Floating state 14~53"
+        }
+      ]
+    },
+    {
+      "id": "move-30",
+      "name": "Xangô",
+      "type": "Heat Moves",
+      "input": "f+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Balcony Break\n* 5 chip damage on block\n* Floating state 9~18\n* Low crush 19~32\n* Floating state 33~35"
+        }
+      ]
+    },
+    {
+      "id": "move-31",
+      "name": "df+1",
+      "type": "Single Hits",
+      "input": "df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        }
+      ]
+    },
+    {
+      "id": "move-32",
+      "name": "Gêiser",
+      "type": "Strings",
+      "input": "df+1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Combo from 1st hit with 2f delay\n* Input can be delayed 10f\n* Move can be delayed 9f\n* Low crush 16~43\n* Floating state 44~46"
+        }
+      ]
+    },
+    {
+      "id": "move-33",
+      "name": "Elbow Uppercut",
+      "type": "Single Hits",
+      "input": "df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n** on CH\n* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-34",
+      "name": "Mirage",
+      "type": "Single Hits",
+      "input": "df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~18"
+        },
+        {
+          "type": "properties",
+          "value": "Tornado\n* Floating state 19~33"
+        }
+      ]
+    },
+    {
+      "id": "move-35",
+      "name": "Kneecap Crusher",
+      "type": "Single Hits",
+      "input": "df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        }
+      ]
+    },
+    {
+      "id": "move-36",
+      "name": "Aú Reversão",
+      "type": "Single Hits",
+      "input": "df+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19 i8~11"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* +23a if only the 2nd hit connects\n* Floating state 9~26"
+        }
+      ]
+    },
+    {
+      "id": "move-37",
+      "name": "d+2",
+      "type": "Single Hits",
+      "input": "d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-38",
+      "name": "Palmares Giro",
+      "type": "Strings",
+      "input": "d+2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st CH\n* Transition to RLX"
+        }
+      ]
+    },
+    {
+      "id": "move-39",
+      "name": "Sismo",
+      "type": "Single Hits",
+      "input": "d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 6~54"
+        }
+      ]
+    },
+    {
+      "id": "move-40",
+      "name": "d+4",
+      "type": "Single Hits",
+      "input": "d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to FC\n* High crush 6~50"
+        }
+      ]
+    },
+    {
+      "id": "move-41",
+      "name": "Aú de Bico",
+      "type": "Strings",
+      "input": "d+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i21~22"
+        }
+      ]
+    },
+    {
+      "id": "move-42",
+      "name": "Negativa",
+      "type": "Single Hits",
+      "input": "d+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Can block at frame 20? with B or DB\n* Transition to FC after 35F\n* High crush 6~55"
+        }
+      ]
+    },
+    {
+      "id": "move-43",
+      "name": "db+2",
+      "type": "Single Hits",
+      "input": "db+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 6~55"
+        }
+      ]
+    },
+    {
+      "id": "move-44",
+      "name": "Twister Mirage",
+      "type": "Strings",
+      "input": "db+2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combos from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-45",
+      "name": "Rasteira Forte",
+      "type": "Single Hits",
+      "input": "db+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28"
+        },
+        {
+          "type": "properties",
+          "value": "* Has good right sidestep tracking"
+        }
+      ]
+    },
+    {
+      "id": "move-46",
+      "name": "db+4",
+      "type": "Single Hits",
+      "input": "db+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        }
+      ]
+    },
+    {
+      "id": "move-47",
+      "name": "Rabo de Arraia",
+      "type": "Strings",
+      "input": "db+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i33~34"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 8 Chip damage on block\n* Mandinga level increases by 1 on hit\n* Becomes +19a(-7) on hit when gaining Mandinga\n* Combos from 1st hit\n* Low crush 22~30\n* Floating state 31~33"
+        }
+      ]
+    },
+    {
+      "id": "move-48",
+      "name": "Double Arm Stinger",
+      "type": "Single Hits",
+      "input": "db+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i30"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break"
+        }
+      ]
+    },
+    {
+      "id": "move-49",
+      "name": "db+3+4",
+      "type": "Single Hits",
+      "input": "db+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to FC\n* Floating state 18~30"
+        }
+      ]
+    },
+    {
+      "id": "move-50",
+      "name": "db+3+4,4",
+      "type": "Strings",
+      "input": "db+3+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~22, i21~22"
+        }
+      ]
+    },
+    {
+      "id": "move-51",
+      "name": "Meia-Lua de Compasso",
+      "type": "Strings",
+      "input": "db+3+4,4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~22, ,i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "Combos from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-52",
+      "name": "b+1",
+      "type": "Single Hits",
+      "input": "b+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to FC"
+        }
+      ]
+    },
+    {
+      "id": "move-53",
+      "name": "b+1,4",
+      "type": "Strings",
+      "input": "b+1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i25~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to HSP\n* Combos from 1st CH\n* Low crush 19~"
+        }
+      ]
+    },
+    {
+      "id": "move-54",
+      "name": "b+1,4,3",
+      "type": "Strings",
+      "input": "b+1,4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st CH\n* Combos from 2nd hit\n* Low crush 1~?"
+        }
+      ]
+    },
+    {
+      "id": "move-55",
+      "name": "Gato > Aú do Sol",
+      "type": "Strings",
+      "input": "b+1,4,3,3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i24~26"
+        },
+        {
+          "type": "properties",
+          "value": "Combos from 3rd CH\n* Low crush 21~"
+        }
+      ]
+    },
+    {
+      "id": "move-56",
+      "name": "Gato > Aú da Lua",
+      "type": "Strings",
+      "input": "b+1,4,3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i22~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 1st CH\n* Combos from 2nd hit\n* Low crush 1~?\n* High crush 10~?"
+        }
+      ]
+    },
+    {
+      "id": "move-57",
+      "name": "b+2",
+      "type": "Single Hits",
+      "input": "b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-58",
+      "name": "b+2,3",
+      "type": "Strings",
+      "input": "b+2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-59",
+      "name": "Godeme > Combo Martelo",
+      "type": "Strings",
+      "input": "b+2,3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,i33~35"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-60",
+      "name": "Godeme > Calcanheira",
+      "type": "Strings",
+      "input": "b+2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit\n* Low crush 19~24\n* Floating state 25~26"
+        }
+      ]
+    },
+    {
+      "id": "move-61",
+      "name": "b+3",
+      "type": "Single Hits",
+      "input": "b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee"
+        }
+      ]
+    },
+    {
+      "id": "move-62",
+      "name": "Knee Thruster > Relâmpago",
+      "type": "Strings",
+      "input": "b+3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i26~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RLX\n* Combos on 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-63",
+      "name": "b+4",
+      "type": "Single Hits",
+      "input": "b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22"
+        }
+      ]
+    },
+    {
+      "id": "move-64",
+      "name": "b+4,4",
+      "type": "Strings",
+      "input": "b+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22, i29~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH\n* Cancel to HSP with F (-26/-18)\n* Floating state 15~40"
+        }
+      ]
+    },
+    {
+      "id": "move-65",
+      "name": "Leg Whip Mars Attack Flip",
+      "type": "Strings",
+      "input": "b+4,4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22, ,i28~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 3rd hit\n* 3 Chip damage on block\n* Low crush 8~27\n* Floating state 28~30"
+        }
+      ]
+    },
+    {
+      "id": "move-66",
+      "name": "Back Bananeira",
+      "type": "Single Hits",
+      "input": "b+1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Auto low parry ps8?~ at Mandinga Level 1\n** Transition to Ogum Mandinga on successful parry\n* Transition to HSP\n* Floating state 14~61"
+        }
+      ]
+    },
+    {
+      "id": "move-67",
+      "name": "Lunging Brush Fire",
+      "type": "Single Hits",
+      "input": "b+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* +0 frame advantage and 10 chip damage on block after absorbing an attack in power crush state\n* Power crush 7~19"
+        }
+      ]
+    },
+    {
+      "id": "move-68",
+      "name": "Perna da Lua",
+      "type": "Single Hits",
+      "input": "ub+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i31~33"
+        },
+        {
+          "type": "properties",
+          "value": "7 Chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-69",
+      "name": "Satellite Moon",
+      "type": "Single Hits",
+      "input": "ub+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Floating state 20~?"
+        }
+      ]
+    },
+    {
+      "id": "move-70",
+      "name": "Acrobacia",
+      "type": "Single Hits",
+      "input": "u+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i38~42"
+        },
+        {
+          "type": "properties",
+          "value": "*\nBalcony Break\n* 9 chip damage on block\n* Low crush 10~42?"
+        }
+      ]
+    },
+    {
+      "id": "move-71",
+      "name": "Back Summy",
+      "type": "Single Hits",
+      "input": "u+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to FC\n* Low crush 7~"
+        }
+      ]
+    },
+    {
+      "id": "move-72",
+      "name": "Back Summy > Chute Baixo",
+      "type": "Single Hits",
+      "input": "u+4~3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i32~33"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Transition to RLX\n* Low crush 7?~"
+        }
+      ]
+    },
+    {
+      "id": "move-73",
+      "name": "Back Summy > Chute Alto",
+      "type": "Single Hits",
+      "input": "u+4~4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* Low crush 7?~"
+        }
+      ]
+    },
+    {
+      "id": "move-74",
+      "name": "Vassoura",
+      "type": "Single Hits",
+      "input": "u+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-75",
+      "name": "uf+1",
+      "type": "Single Hits",
+      "input": "uf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-76",
+      "name": "Oxóssi",
+      "type": "Strings",
+      "input": "uf+1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i29~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit\n* Mandinga level increases by 1 on hit\n* becomes -2a (-11) on hit when Mandinga level increases\n* Cancel and transition to -12, -22 HSP with F"
+        }
+      ]
+    },
+    {
+      "id": "move-77",
+      "name": "Oxum",
+      "type": "Heat Moves",
+      "input": "uf+1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i29~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +43d (+35)\n\n* Balcony Break\n* Combo from 1st hit\n* Low crush 18~?"
+        }
+      ]
+    },
+    {
+      "id": "move-78",
+      "name": "Asfixiante",
+      "type": "Single Hits",
+      "input": "uf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-79",
+      "name": "uf+3",
+      "type": "Single Hits",
+      "input": "uf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to HSP with input F (-14/-12/+8a)\n* Low crush 13~"
+        }
+      ]
+    },
+    {
+      "id": "move-80",
+      "name": "Jumping Jacks Mirage",
+      "type": "Strings",
+      "input": "uf+3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~28, i21~24"
+        },
+        {
+          "type": "properties",
+          "value": "Tornado"
+        }
+      ]
+    },
+    {
+      "id": "move-81",
+      "name": "Armada Pulada > Baixo",
+      "type": "Strings",
+      "input": "uf+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~28, i24~25"
+        }
+      ]
+    },
+    {
+      "id": "move-82",
+      "name": "Chapa Giratória",
+      "type": "Single Hits",
+      "input": "uf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Homing\n* Balcony Break\n* Transition to RLX on hit\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-83",
+      "name": "Meia-Lua Pulando",
+      "type": "Single Hits",
+      "input": "uf+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Strong Aerial Tailspin\n* +20a if only the 2nd hit connects\n* Low crush 15~"
+        }
+      ]
+    },
+    {
+      "id": "move-84",
+      "name": "Ki Charge",
+      "type": "Single Hits",
+      "input": "1+2+3+4",
+      "properties": []
+    },
+    {
+      "id": "move-85",
+      "name": "Fruit Picker",
+      "type": "Strings",
+      "input": "b,B+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i77~79"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Can cancel with input b,B+2+3,b,b"
+        }
+      ]
+    },
+    {
+      "id": "move-86",
+      "name": "Flic Flac",
+      "type": "Strings",
+      "input": "b,ub",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to RLX\n* Low crush 10?~"
+        }
+      ]
+    },
+    {
+      "id": "move-87",
+      "name": "Terremoto",
+      "type": "Strings",
+      "input": "f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RLX on hit\n* Transition to FC on block or whiff\n* High crush 15~33"
+        }
+      ]
+    },
+    {
+      "id": "move-88",
+      "name": "Folha Ataque",
+      "type": "Strings",
+      "input": "f,F+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Transition to HSP\n* Low crush 12~26?"
+        }
+      ]
+    },
+    {
+      "id": "move-89",
+      "name": "Roda Gigante",
+      "type": "Strings",
+      "input": "f,F+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Cancel to r18 HSP with n,f at frame 17\n* 6 Chip damage on block\n* Floating state 8~"
+        }
+      ]
+    },
+    {
+      "id": "move-90",
+      "name": "Voragem",
+      "type": "Single Hits",
+      "input": "qcb+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break\n* Mandinga level increases on hit\n* Becomes +19a (-7) on hit when Mandinga level increases\n* 7 chip damage on block\n* Low crush 10~21"
+        }
+      ]
+    },
+    {
+      "id": "move-91",
+      "name": "Delayed Rising Toe Kick",
+      "type": "Strings",
+      "input": "uf,n,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-92",
+      "name": "Trovão",
+      "type": "Strings",
+      "input": "f,f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to HSP on block\n* 9 Chip damage on block\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-93",
+      "name": "ws1",
+      "type": "While Standing",
+      "input": "ws1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-94",
+      "name": "Fuzilação",
+      "type": "While Standing",
+      "input": "ws1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i19~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RLX\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-95",
+      "name": "Chapeu de Couro",
+      "type": "While Standing",
+      "input": "ws1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Strong Aerial Tailspin\n* Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-96",
+      "name": "Machado",
+      "type": "While Standing",
+      "input": "ws2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-97",
+      "name": "Martelo",
+      "type": "While Standing",
+      "input": "ws3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~21"
+        },
+        {
+          "type": "properties",
+          "value": "Tornado"
+        }
+      ]
+    },
+    {
+      "id": "move-98",
+      "name": "ws4",
+      "type": "While Standing",
+      "input": "ws4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~13"
+        }
+      ]
+    },
+    {
+      "id": "move-99",
+      "name": "ws4,4",
+      "type": "While Standing",
+      "input": "ws4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~13, i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-100",
+      "name": "ws4,4,4",
+      "type": "While Standing",
+      "input": "ws4,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~13, ,i29~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Cancel to HSP with F (-28/-16)"
+        }
+      ]
+    },
+    {
+      "id": "move-101",
+      "name": "Tempestade",
+      "type": "While Standing",
+      "input": "ws4,4,4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~13, ,i28~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Combos from 3rd hit\n* 3 Chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-102",
+      "name": "Front Stinger",
+      "type": "While Standing",
+      "input": "ws3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Transition to RLX\n* 6 chip damage on block\n* Floating state 12~30"
+        }
+      ]
+    },
+    {
+      "id": "move-103",
+      "name": "Hot Plate Special",
+      "type": "Stances",
+      "input": "SS.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RLX\n* Cancel to RLX with D\n* High crush 6~54"
+        }
+      ]
+    },
+    {
+      "id": "move-104",
+      "name": "Troca Baixa",
+      "type": "Stances",
+      "input": "SS.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 6~31"
+        }
+      ]
+    },
+    {
+      "id": "move-105",
+      "name": "Faísca",
+      "type": "Stances",
+      "input": "SS.3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to FC\n* Low crush 11~30\n* Floating state 31~?\n* High crush ?~?"
+        }
+      ]
+    },
+    {
+      "id": "move-106",
+      "name": "FC.4",
+      "type": "While Standing",
+      "input": "FC.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Hits grounded up-close"
+        }
+      ]
+    },
+    {
+      "id": "move-107",
+      "name": "Gafanhoto",
+      "type": "While Standing",
+      "input": "FC.df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RLX\n* 6 Chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-108",
+      "name": "Tornada",
+      "type": "While Standing",
+      "input": "FC.df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to HSP\n* Floating state 26~"
+        }
+      ]
+    },
+    {
+      "id": "move-109",
+      "name": "Wall Jump Backflip",
+      "type": "Stances",
+      "input": "(back to wall).b,b,UB",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i35~38"
+        },
+        {
+          "type": "properties",
+          "value": "* Floating state 5~7\n* is8~24\n* Floating state 25~33\n* Low crush 34~37\n* Floating state 38~40"
+        }
+      ]
+    },
+    {
+      "id": "move-110",
+      "name": "Whirling Spring Kick",
+      "type": "Stances",
+      "input": "FUFT.b+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16-28"
+        },
+        {
+          "type": "properties",
+          "value": "* Floating state 1~11\n* Low crush 12~"
+        }
+      ]
+    },
+    {
+      "id": "move-111",
+      "name": "Godeme Trovoada",
+      "type": "Stances",
+      "input": "HSP.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Transition to RLX\n* 6 Chip damage on block\n* Floating state 1~12"
+        }
+      ]
+    },
+    {
+      "id": "move-112",
+      "name": "HSP.2",
+      "type": "Stances",
+      "input": "HSP.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Floating state 1~9"
+        }
+      ]
+    },
+    {
+      "id": "move-113",
+      "name": "Combo Escorão",
+      "type": "Stances",
+      "input": "HSP.2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit with 10F delay\n* Mandinga level increases by 1 on hit\n* Becomes -2(-11) on hit when gaining Mandinga\n* Cancel to r25 HSP with F at frame 18 (-24/-8)\n* Move can be delayed by 9F"
+        }
+      ]
+    },
+    {
+      "id": "move-114",
+      "name": "HSP.3",
+      "type": "Stances",
+      "input": "HSP.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Floating state 1~5\n* High crush 6~18"
+        }
+      ]
+    },
+    {
+      "id": "move-115",
+      "name": "HSP.3,3",
+      "type": "Stances",
+      "input": "HSP.3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "Combos from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-116",
+      "name": "Enxurrada",
+      "type": "Stances",
+      "input": "HSP.3,3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, ,i30~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Transition to RLX\n* Combo from 1st CH with 4F delay\n* Move can be delayed by 7F"
+        }
+      ]
+    },
+    {
+      "id": "move-117",
+      "name": "HSP.4",
+      "type": "Stances",
+      "input": "HSP.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to HSP\n* Floating state 1~36?"
+        }
+      ]
+    },
+    {
+      "id": "move-118",
+      "name": "Lança de Braço",
+      "type": "Stances",
+      "input": "HSP.4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Combo from 1st hit\n* Floating state 1~9?"
+        }
+      ]
+    },
+    {
+      "id": "move-119",
+      "name": "Salto Yotori",
+      "type": "Stances",
+      "input": "HSP.4,2~3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i28~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH\n* 6 chip damage on block\n* Low crush \n* Floating state"
+        }
+      ]
+    },
+    {
+      "id": "move-120",
+      "name": "Cabeçada Direta",
+      "type": "Stances",
+      "input": "HSP.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Head\n* -9 frame advantage and 8 chip damage on block after absorbing an attack in power crush state\n* Floating state 1~?\n* Power crush 7~21"
+        }
+      ]
+    },
+    {
+      "id": "move-121",
+      "name": "Chapa Esquivando",
+      "type": "Stances",
+      "input": "HSP.b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i36~37"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* Floating state 36?"
+        }
+      ]
+    },
+    {
+      "id": "move-122",
+      "name": "Bananeira > Negativa",
+      "type": "Stances",
+      "input": "HSP.n,d",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to RLX\n* Floating state 1~10?\n* High crush 6?~"
+        }
+      ]
+    },
+    {
+      "id": "move-123",
+      "name": "Bananeira > Move Forward",
+      "type": "Stances",
+      "input": "HSP.n,f",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to HSP\n* Floating state 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-124",
+      "name": "Yansan Mandinga",
+      "type": "Stances",
+      "input": "MD1.HSP.3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 28?~"
+        }
+      ]
+    },
+    {
+      "id": "move-125",
+      "name": "Ogum Mandinga",
+      "type": "Stances",
+      "input": "MD1.HSP.b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Transition to RLX with D\n* 7 chip damage on block\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-126",
+      "name": "Yansan Mandinga",
+      "type": "Stances",
+      "input": "MD2.HSP.3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break\n* Low crush 28?~"
+        }
+      ]
+    },
+    {
+      "id": "move-127",
+      "name": "Ogum Mandinga",
+      "type": "Stances",
+      "input": "MD2.HSP.b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Transition to RLX with D\n* 7 chip damage on block\n* Low crush 9~"
+        }
+      ]
+    },
+    {
+      "id": "move-128",
+      "name": "RLX.1",
+      "type": "Stances",
+      "input": "RLX.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to FC with D\n* High crush 1~19"
+        }
+      ]
+    },
+    {
+      "id": "move-129",
+      "name": "Terra Gafanhoto",
+      "type": "Stances",
+      "input": "RLX.1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to RLX\n* Combo from 1st CH with 5F delay\n* Move can be delayed by 9F\n* Input can be delayed by 10F"
+        }
+      ]
+    },
+    {
+      "id": "move-130",
+      "name": "RLX.2",
+      "type": "Stances",
+      "input": "RLX.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        }
+      ]
+    },
+    {
+      "id": "move-131",
+      "name": "RLX.2,4",
+      "type": "Stances",
+      "input": "RLX.2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, i29~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Transition to RLX with D (+3/+10)"
+        }
+      ]
+    },
+    {
+      "id": "move-132",
+      "name": "Maré Cheia",
+      "type": "Stances",
+      "input": "RLX.2,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, ,i32~33"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-133",
+      "name": "RLX.3",
+      "type": "Stances",
+      "input": "RLX.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to FC\n* High crush 1~50"
+        }
+      ]
+    },
+    {
+      "id": "move-134",
+      "name": "Iemanjá",
+      "type": "Stances",
+      "input": "RLX.3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st clean hit\n* Jails from 1st hit\n* +7a (+6) from 1st clean hit\n* Mandinga level increases by 1 on hit\n** Becomes -3a (-6) on 2nd hit when gaining Mandinga"
+        }
+      ]
+    },
+    {
+      "id": "move-135",
+      "name": "RLX.4",
+      "type": "Stances",
+      "input": "RLX.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to FC"
+        }
+      ]
+    },
+    {
+      "id": "move-136",
+      "name": "Chibata Ardente",
+      "type": "Heat Moves",
+      "input": "RLX.4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i28~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +67a (+50)\n\n* Balcony Break\n* Combo from 1st hit with 9F delay\n* Move can be delayed by 8F\n* Low crush 16~34\n* Floating state 35~37"
+        }
+      ]
+    },
+    {
+      "id": "move-137",
+      "name": "Chibata Avalanche",
+      "type": "Stances",
+      "input": "RLX.4,3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i34~36"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit with 5f delay\n* Move can be delayed by 8f\n* Cancel to HSP -21 -5 r23 with F\n* Floating state 1~20\n* Low crush 21~40\n* Floating state 41~43"
+        }
+      ]
+    },
+    {
+      "id": "move-138",
+      "name": "Cabeçada Fixa",
+      "type": "Stances",
+      "input": "RLX.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Head\n* 7 chip damage on block\n* High crush 1~17"
+        }
+      ]
+    },
+    {
+      "id": "move-139",
+      "name": "Troca e Ataque",
+      "type": "Stances",
+      "input": "RLX.3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "Tornado\n* Floating state 1~56"
+        }
+      ]
+    },
+    {
+      "id": "move-140",
+      "name": "Negativa > Bananeira",
+      "type": "Stances",
+      "input": "RLX.n,d",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to HSP"
+        }
+      ]
+    },
+    {
+      "id": "move-141",
+      "name": "Negativa > Move Forward",
+      "type": "Stances",
+      "input": "RLX.n,f",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to RLX\n* Recover in FC after 48F?"
+        }
+      ]
+    },
+    {
+      "id": "move-142",
+      "name": "Rio Deal",
+      "type": "Throws",
+      "input": "1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Throw break: 1 or 2"
+        }
+      ]
+    },
+    {
+      "id": "move-143",
+      "name": "Rio Special",
+      "type": "Throws",
+      "input": "2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Throw break: 1 or 2\n* Sideswitch on break"
+        }
+      ]
+    },
+    {
+      "id": "move-144",
+      "name": "Back Rodeo Spin",
+      "type": "Single Hits",
+      "input": "Back throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "Throw break: none"
+        }
+      ]
+    },
+    {
+      "id": "move-145",
+      "name": "Batucada",
+      "type": "Stances",
+      "input": "HSP.1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: none\n* Transition to RLX on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-146",
+      "name": "Missile Launcher",
+      "type": "Single Hits",
+      "input": "Left throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "Throw break: 1"
+        }
+      ]
+    },
+    {
+      "id": "move-147",
+      "name": "Rodeo Spin",
+      "type": "Stances",
+      "input": "RLX.uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: 1+2\n* Sideswitch on break"
+        }
+      ]
+    },
+    {
+      "id": "move-148",
+      "name": "Shadow Dancer",
+      "type": "Single Hits",
+      "input": "Right throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "Throw break: 2"
+        }
+      ]
+    },
+    {
+      "id": "move-149",
+      "name": "Vingativa Zanga",
+      "type": "Heat Moves",
+      "input": "d+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Throw break: none"
+        }
+      ]
+    },
+    {
+      "id": "move-150",
+      "name": "Vingativa Funeral",
+      "type": "Single Hits",
+      "input": "d+2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "Throw break: none"
+        }
+      ]
+    },
+    {
+      "id": "move-151",
+      "name": "Cabra Macaco Throw",
+      "type": "Throws",
+      "input": "uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "Throw break: 1+2"
+        }
+      ]
+    }
+  ]
+}

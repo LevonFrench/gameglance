@@ -242,6 +242,7 @@ export const App: React.FC = () => {
         selectedCount={selectedPlaylist.length}
         onLaunchGameGlance={handleLaunchMainScreen}
         onClearGameGlance={handleClearPlaylist}
+        controller={controller}
       />;
       break;
     case 'char_select':
@@ -261,7 +262,7 @@ export const App: React.FC = () => {
            window.history.back();
          }} 
          onHome={() => {
-           setDisableGameSelectAnimation(false);
+           setDisableGameSelectAnimation(true);
            navigate('game_select');
          }}
          selectedCount={selectedPlaylist.length}
@@ -284,8 +285,14 @@ export const App: React.FC = () => {
          onToggleMove={handleToggleMove}
          onLaunchMainScreen={handleLaunchMainScreen}
          onLaunchComboView={() => navigate('combo_view', selectedGame, selectedCharacter)}
-         onBack={() => navigate('char_select', selectedGame)}
-         onHome={() => navigate('game_select')}
+         onBack={() => {
+           setReturningFromMoveList(true);
+           navigate('char_select', selectedGame);
+         }}
+         onHome={() => {
+           setDisableGameSelectAnimation(true);
+           navigate('game_select');
+         }}
          onClearGameGlance={handleClearPlaylist}
       />;
       break;
@@ -301,7 +308,10 @@ export const App: React.FC = () => {
          notationSystem={(notationOverride === 'auto' ? selectedGame.notationSystem : notationOverride) as 'numpad' | 'traditional' | 'mk' | undefined}
          onSetController={handleSetController}
          onBack={() => navigate('move_list', selectedGame, selectedCharacter)}
-         onHome={() => navigate('game_select')}
+         onHome={() => {
+           setDisableGameSelectAnimation(true);
+           navigate('game_select');
+         }}
       />;
       break;
     case 'fightcade_sync':
@@ -309,7 +319,10 @@ export const App: React.FC = () => {
         syncState={syncState}
         onConnect={connect}
         onDisconnect={disconnect}
-        onBack={() => navigate('game_select')}
+        onBack={() => {
+          setDisableGameSelectAnimation(true);
+          navigate('game_select');
+        }}
       />;
       break;
     case 'main_screen': {
@@ -324,8 +337,14 @@ export const App: React.FC = () => {
          notationSystem={(notationOverride === 'auto' ? selectedGame?.notationSystem : notationOverride) as 'numpad' | 'traditional' | 'mk' | undefined}
          onSetController={handleSetController}
          onExit={() => setCurrentView('move_list')}
-         onBack={() => navigate('char_select', selectedGame)}
-         onHome={() => navigate('game_select')}
+         onBack={() => {
+           setReturningFromMoveList(true);
+           navigate('char_select', selectedGame);
+         }}
+         onHome={() => {
+           setDisableGameSelectAnimation(true);
+           navigate('game_select');
+         }}
          onCharacterChange={(id) => setSelectedCharacter(id)}
          onRemoveMove={(moveId) => {
            setSelectedPlaylist(prev => prev.filter(p => p.move.id !== moveId));

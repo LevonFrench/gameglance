@@ -1,27 +1,2294 @@
 {
+  "id": "jun",
   "name": "Jun",
-  "character": "Jun",
-  "game": "Tekken 8",
   "movesList": [
     {
-      "name": "Arm Bar",
+      "id": "move-0",
+      "name": "Heat Burst",
+      "type": "Heat Moves",
+      "input": "2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Burst\n* Cancel to r45 with b,b on frame 42\n* 2 chip damage on block\n* 12 chip damage on hit\n* Only deals recoverable damage\n* Cannot cause a K.O.\n* Gain 5 Kazama Essence on Heat Burst activation\n* Power crush 7~16"
+        }
+      ]
+    },
+    {
+      "id": "move-1",
+      "name": "Yomotsu Mihashira",
+      "type": "Heat Moves",
+      "input": "H.GEN.1,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21 i26~41"
+        },
+        {
+          "type": "properties",
+          "value": "* Reversal Break\n* Balcony Break\n* Jail from 1st attack\n* Has good left sidestep tracking\n* Restores 6 recoverable (3 on block)\n* Chip damage (2,7) on block\n* Consumes 450f of heat timer\n* Gain 5 Kazama Essence on normal hit, airborne hit or block\n* High crush 11~21"
+        }
+      ]
+    },
+    {
+      "id": "move-2",
+      "name": "H.f+1+2,P",
+      "type": "Heat Moves",
+      "input": "H.f+1+2,P",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Sabaki, parries mid or high punches or kicks\n* Consumes 120F of remaining Heat time\n* Parry state 5~"
+        }
+      ]
+    },
+    {
+      "id": "move-3",
+      "name": "Yomotsu Ooyumi",
+      "type": "Heat Moves",
+      "input": "H.2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13 i32~75"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Smash\n* Balcony Break\n* Restores 32 recoverable on hit (16 on block)\n* 10 chip damage on block\n* Gain 8 Kazama Essence on normal hit and 6 on block or airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-4",
+      "name": "Amatsu Izanami",
+      "type": "Stances",
+      "input": "R.df+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\n* Power crush 8~"
+        }
+      ]
+    },
+    {
+      "id": "move-5",
+      "name": "Jab",
+      "type": "Single Hits",
+      "input": "1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Recovers 2f faster on hit or block (t27 r17)"
+        }
+      ]
+    },
+    {
+      "id": "move-6",
+      "name": "Suikei > Izumo Smash",
+      "type": "Strings",
+      "input": "1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 1f delay\n* Restores 2 health and 2 recoverable on hit\n* Gain 6 Kazama Essence on normal hit and 5 on airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-7",
+      "name": "Spear Step",
+      "type": "Stances",
+      "input": "1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st attack with 2f delay\n* Combo from 1st hit with 2f delay\n* Transition to r16 SS with u_d (+1/-13, +10g/-4?)\n** r16 when attacking in SS stance\n** r30? when exiting SS stance"
+        }
+      ]
+    },
+    {
+      "id": "move-8",
+      "name": "Spear Step > Izumo Strike",
+      "type": "Stances",
+      "input": "1,2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Combo from 2nd hit\n* Jail from 2nd block with 1f delay\n* Restores 2 health on hit\n* Gain 6 Kazama Essence on normal hit and 5 on airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-9",
+      "name": "Spear Step > Spin Kick",
+      "type": "Stances",
+      "input": "1,2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)\n* Combo from 2nd CH with 3f delay\n* Input can be delayed 9f"
+        }
+      ]
+    },
+    {
+      "id": "move-10",
+      "name": "Suiren Leg Scythe",
+      "type": "Strings",
+      "input": "1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH with 2f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-11",
+      "name": "Right Jab",
+      "type": "Single Hits",
+      "input": "2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        }
+      ]
+    },
+    {
+      "id": "move-12",
+      "name": "2,1",
+      "type": "Strings",
+      "input": "2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Combo from 1st hit with 9f delay\n* Input can be delayed 10f"
+        }
+      ]
+    },
+    {
+      "id": "move-13",
+      "name": "2,1,4",
+      "type": "Strings",
+      "input": "2,1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, ,i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-14",
+      "name": "Byakuren Tsukinuki",
+      "type": "Strings",
+      "input": "2,1,4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, ,i30"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 3rd CH\n* Input can be delayed 10f\n* Chip damage (9) on block\n* Deals 6 damage to self (4 recoverable)\n* Unparryable by traditional parries, Asuka, Nina, etc\n* Gain 10 Kazama Essence on normal hit and 7 on block or airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-15",
+      "name": "Byakuren Tamasudare",
+      "type": "Strings",
+      "input": "2,1,4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, ,i25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 3rd CH with 5f delay\n* Input can be delayed 10f"
+        }
+      ]
+    },
+    {
+      "id": "move-16",
+      "name": "Byakuren Misogi",
+      "type": "Strings",
+      "input": "2,1,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, ,i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Elbow\n* Combo from 2nd CH with 9f delay\n* Forces tech backroll on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-17",
+      "name": "Shion",
+      "type": "Single Hits",
+      "input": "3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-18",
+      "name": "Shion Kannagi",
+      "type": "Strings",
+      "input": "3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Combos from 1st hit\n* Delayable\n* Gain 6 Kazama essence on normal hit and 5  on airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-19",
+      "name": "Magic Four",
+      "type": "Single Hits",
+      "input": "4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        }
+      ]
+    },
+    {
+      "id": "move-20",
+      "name": "Shunkei",
+      "type": "Heat Moves",
+      "input": "1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Heat Engager\n\n* Heat Dash +5, +43d (+35)\n\n* Gain 10 Kazama Essence on Heat activation"
+        }
+      ]
+    },
+    {
+      "id": "move-21",
+      "name": "1+4",
+      "type": "Single Hits",
+      "input": "1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14 i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st attack\n* CH advantage listed is for the 2nd hit"
+        }
+      ]
+    },
+    {
+      "id": "move-22",
+      "name": "1+4,2",
+      "type": "Strings",
+      "input": "1+4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14 i17, i19"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-23",
+      "name": "White Heron Dance",
+      "type": "Strings",
+      "input": "1+4,2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14 i17, ,i24"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 3rd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-24",
+      "name": "White Heron Lower Dance",
+      "type": "Strings",
+      "input": "1+4,2,d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14 i17, ,i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 3rd CH\n* High crush 10~38"
+        }
+      ]
+    },
+    {
+      "id": "move-25",
+      "name": "1+4,3",
+      "type": "Strings",
+      "input": "1+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14 i17, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-26",
+      "name": "White Heron Sun Palm",
+      "type": "Strings",
+      "input": "1+4,3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14 i17, ,i33~34"
+        }
+      ]
+    },
+    {
+      "id": "move-27",
+      "name": "White Heron Moon Kick",
+      "type": "Strings",
+      "input": "1+4,3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14 i17, ,i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 3rd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-28",
+      "name": "Ryuuntsui - Misogi",
+      "type": "Single Hits",
+      "input": "3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~24 i30~31 i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* 3rd hit available only as combo from 2nd hit\n* Transition to r22 FC with D on whiff or block\n* Deals 12 damage to self (8 recoverable)\n* Gain 12 Kazama Essence on normal hit and 6 on airborne hit\n* Low crush 5~33\n* Floating state 34~36"
+        }
+      ]
+    },
+    {
+      "id": "move-29",
+      "name": "Izumo Smash",
+      "type": "Single Hits",
+      "input": "f+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Restores 2 health and 2 recoverable on hit\n* Gain 6 Kazama Essence on normal hit and 5 on airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-30",
+      "name": "Demon Slayer",
+      "type": "Single Hits",
+      "input": "f+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "Cancel to r26 FC with D"
+        }
+      ]
+    },
+    {
+      "id": "move-31",
+      "name": "Ame-no-Habakiri",
+      "type": "Heat Moves",
+      "input": "f+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i29~32"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +42a (+27)\n\n* Balcony Break\n* Jail from 1st attack\n* Chip damage (8) on block\n* Deals 18 damage to self (12 recoverable)\n* Available only on hit or block\n* Gain 16 Kazama Essence on Heat activation\n* Gain 6 Kazama Essence on normal hit and 5 on block or airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-32",
+      "name": "f+3",
+      "type": "Single Hits",
+      "input": "f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Enter SS -16 +14g r21 with u_d\n* r21 when attacking after SS\n* r35 when blocking after SS"
+        }
+      ]
+    },
+    {
+      "id": "move-33",
+      "name": "Kanbashira > Izumo Strike",
+      "type": "Strings",
+      "input": "f+3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Combo from 1st hit with 10F delay\n* Move can be delayed by 5F\n* Input can be delayed by 10F\n* Restores 2 health on hit\n* Gain 6 Kazama Essence on normal hit and 5 on airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-34",
+      "name": "Double Kanbashira",
+      "type": "Strings",
+      "input": "f+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i20~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 1st hit with 10F delay\n* Move can be delayed by 5F\n* Input can be delayed by 10F"
+        }
+      ]
+    },
+    {
+      "id": "move-35",
+      "name": "Getsukankyaku",
+      "type": "Single Hits",
+      "input": "f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)\n* Homing"
+        }
+      ]
+    },
+    {
+      "id": "move-36",
+      "name": "Inner Peace",
+      "type": "Single Hits",
+      "input": "f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)\n* Transition to r20 MIA on hit only\n* Deals 5 recoverable damage\n* Cannot cause a K.O.\n* Deals 6 damage to self (4 recoverable)\n* Power up in Heat (ps5~12)\n* Unparryable\n* Gain 6 Kazama Essence on normal hit and 5 on block or airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-37",
+      "name": "Wheel Kick",
+      "type": "Single Hits",
+      "input": "f+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~29"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)\n* Punch sabaki\n* Crumple stun launcher (+51a) on parry effect\n* Parry state 4~15"
+        }
+      ]
+    },
+    {
+      "id": "move-38",
+      "name": "Genjitsu",
+      "type": "Single Hits",
+      "input": "f+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cancel to r34 FC with D on frame 16\n* Parries low punches or kicks\n* Parries throws\n* Parry state 1~40"
+        }
+      ]
+    },
+    {
+      "id": "move-39",
+      "name": "Mid Check",
+      "type": "Single Hits",
+      "input": "df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        }
+      ]
+    },
+    {
+      "id": "move-40",
+      "name": "Habotan",
+      "type": "Strings",
+      "input": "df+1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Interrupt with i5 from 1st block"
+        }
+      ]
+    },
+    {
+      "id": "move-41",
+      "name": "Aya Stitch",
+      "type": "Strings",
+      "input": "df+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Interrupt with i4 from 1st block"
+        }
+      ]
+    },
+    {
+      "id": "move-42",
+      "name": "Mizuho",
+      "type": "Single Hits",
+      "input": "df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "Launches crouching opponent"
+        }
+      ]
+    },
+    {
+      "id": "move-43",
+      "name": "Ame-no-Murakumo",
+      "type": "Strings",
+      "input": "df+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Chip damage (4) on block\n* Deals 24 damage to self (16 recoverable)\n* Available only on hit or block\n* Gain 10 Kazama Essence on normal hit and 7 on block or airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-44",
+      "name": "Kazakiri",
+      "type": "Single Hits",
+      "input": "df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-45",
+      "name": "Katabami",
+      "type": "Single Hits",
+      "input": "df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break (airborne)\n* Crumple stun launcher (+52a) on CH"
+        }
+      ]
+    },
+    {
+      "id": "move-46",
+      "name": "df+3+4",
+      "type": "Single Hits",
+      "input": "df+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i24~25"
+        }
+      ]
+    },
+    {
+      "id": "move-47",
+      "name": "Heavenly Sun Palm",
+      "type": "Strings",
+      "input": "df+3+4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i24~25, i33~34"
+        }
+      ]
+    },
+    {
+      "id": "move-48",
+      "name": "Heavenly Moon Kick",
+      "type": "Strings",
+      "input": "df+3+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i24~25, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-49",
+      "name": "Narumi",
+      "type": "Single Hits",
+      "input": "d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "Spike"
+        }
+      ]
+    },
+    {
+      "id": "move-50",
+      "name": "d+4",
+      "type": "Single Hits",
+      "input": "d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        }
+      ]
+    },
+    {
+      "id": "move-51",
+      "name": "Suminagashi",
+      "type": "Strings",
+      "input": "d+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-52",
+      "name": "Kamudo-no-Tsurugi",
+      "type": "Single Hits",
+      "input": "d+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Chip damage (11) on block\n* Divine Aura: 12 chip damage on block\n* Divine Aura: +4 damage on hit (32)\n* Deals 12 damage to self (8 recoverable)\n* Unparryable (projectile)\n* Gain 8 Kazama Essence on normal hit and 6 on block or airborne hit\n* High crush 8~24"
+        }
+      ]
+    },
+    {
+      "id": "move-53",
+      "name": "Double Lift Kicks",
+      "type": "Single Hits",
+      "input": "d+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14 i24~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH\n* Jail from 1st attack\n* -6 only if 2nd hit is blocked\n* Low crush 5~27\n* Floating state 28~30"
+        }
+      ]
+    },
+    {
+      "id": "move-54",
+      "name": "db+1",
+      "type": "Single Hits",
+      "input": "db+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-55",
+      "name": "db+1,1",
+      "type": "Strings",
+      "input": "db+1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i21"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-56",
+      "name": "Hourai's Dance",
+      "type": "Strings",
+      "input": "db+1,1,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,i17 i26 i49"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from any hit\n* Restores 4 health and 4 recoverable\n* Unparryable\n* Gain 10 Kazama Essence on normal hit and 7 on airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-57",
+      "name": "Ayame",
+      "type": "Single Hits",
+      "input": "db+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 15~"
+        }
+      ]
+    },
+    {
+      "id": "move-58",
+      "name": "Leg Scythe",
+      "type": "Single Hits",
+      "input": "db+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        }
+      ]
+    },
+    {
+      "id": "move-59",
+      "name": "db+4",
+      "type": "Single Hits",
+      "input": "db+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~24"
+        },
+        {
+          "type": "properties",
+          "value": "Transition to r28 FC with D\n* High crush 6~41"
+        }
+      ]
+    },
+    {
+      "id": "move-60",
+      "name": "db+4,4",
+      "type": "Strings",
+      "input": "db+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~24, i31~33"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH\n* Transition to r28 FC with D\n* High crush 1~49"
+        }
+      ]
+    },
+    {
+      "id": "move-61",
+      "name": "Kariashi",
+      "type": "Strings",
+      "input": "db+4,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~24, ,i31~33"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to r28 FC with D\n* High crush 1~49"
+        }
+      ]
+    },
+    {
+      "id": "move-62",
+      "name": "Kariashi Hakuro",
+      "type": "Strings",
+      "input": "db+4,1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~24, i22 i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Links to 1+4 extensions\n* Alternate inputs:\n** db+4,4,1+2\n** db+4,4,4,1+2\n* CH advantage listed is for the last hit"
+        }
+      ]
+    },
+    {
+      "id": "move-63",
+      "name": "Violet",
+      "type": "Single Hits",
+      "input": "b+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i29~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Cancel to r39 FC with D on frame 25\n* Transition to attack throw on CH, +22 damage, total 44\n* Opponent recovers FDFA on CH\n* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-64",
+      "name": "Attack Reversal",
+      "type": "Single Hits",
+      "input": "b+1+3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Parries mid or high punches or kicks\n* Parry state 5~12"
+        }
+      ]
+    },
+    {
+      "id": "move-65",
+      "name": "b+2",
+      "type": "Single Hits",
+      "input": "b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-66",
+      "name": "b+2,1",
+      "type": "Strings",
+      "input": "b+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Combo from 1st hit with 5f? delay\n* Enter GEN +0 +11g r18 with F\n* Enter MIA +0 +11g r18 with B"
+        }
+      ]
+    },
+    {
+      "id": "move-67",
+      "name": "Ryuen Saika Shikei",
+      "type": "Strings",
+      "input": "b+2,1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH with 4f delay\n* Input can be delayed 14f"
+        }
+      ]
+    },
+    {
+      "id": "move-68",
+      "name": "Ryuen Saika Renken",
+      "type": "Strings",
+      "input": "b+2,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 2nd CH with 6f delay\n* Input can be delayed 14f\n* Chip damage (9) on block\n* Deals 12 damage to self (8 recoverable)\n* Unparryable\n* Gain 6 Kazama Essence on normal hit and 5 on block or airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-69",
+      "name": "Ryuen Saika Renshuu",
+      "type": "Strings",
+      "input": "b+2,1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH with 6f delay\n* Input can be delayed 14f\n* Forces tech backroll on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-70",
+      "name": "Ryuen Magushi",
+      "type": "Strings",
+      "input": "b+2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit with 5f? delay"
+        }
+      ]
+    },
+    {
+      "id": "move-71",
+      "name": "Dragon Wheel Kick",
+      "type": "Single Hits",
+      "input": "b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 10~37\n* Floating state 38~40"
+        }
+      ]
+    },
+    {
+      "id": "move-72",
+      "name": "Ryuusha Renken",
+      "type": "Strings",
+      "input": "b+3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 1st hit\n* Chip damage (8) on block\n* Deals 12 damage to self (8 recoverable)\n* Unparryable\n* Gain 6 Kazama Essence on normal hit and 5 on block or airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-73",
+      "name": "Dragon Wheel Leg Cutter",
+      "type": "Strings",
+      "input": "b+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i20~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Links to db+4 extensions\n* Transition in r28 FC with D\n* High crush 1~42"
+        }
+      ]
+    },
+    {
+      "id": "move-74",
+      "name": "b+4",
+      "type": "Single Hits",
+      "input": "b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "Knee"
+        }
+      ]
+    },
+    {
+      "id": "move-75",
+      "name": "Shirabyoushi",
+      "type": "Strings",
+      "input": "b+4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit with 8f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-76",
+      "name": "Miare",
+      "type": "Single Hits",
+      "input": "b+1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Enter SS r16 with u_d\n* r30 when blocking after SS\n* Cancel to r15 with DB\n* Restores 3 recoverable health and gain Kazama Essence with each pulse"
+        }
+      ]
+    },
+    {
+      "id": "move-77",
+      "name": "Omoikane",
+      "type": "Single Hits",
+      "input": "b+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* -8 on block after absorbing an attack\n* Power crush 7~27"
+        }
+      ]
+    },
+    {
+      "id": "move-78",
+      "name": "Shinki",
+      "type": "Single Hits",
+      "input": "ub+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i57~58"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-79",
+      "name": "Izumo Strike",
+      "type": "Single Hits",
+      "input": "u+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Restores 2 health and 2 recoverable on hit\n* Gain 6 Kazama Essence on normal hit and 5 on airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-80",
+      "name": "Chikura",
+      "type": "Single Hits",
+      "input": "u+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)\n* Low crush 8~28\n* Floating state 29~31"
+        }
+      ]
+    },
+    {
+      "id": "move-81",
+      "name": "Divine Exile - Heaven",
+      "type": "Single Hits",
+      "input": "uf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10 i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Jail from 1st attack\n* Deals 12 damage to self (8 recoverable)\n* 2nd hit available only on hit or block\n* Recovery listed is for the 1st hit\n* Gain 10 Kazama Essence on normal hit and 7 on block or airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-82",
+      "name": "Totsuka-no-Tsurugi",
+      "type": "Single Hits",
+      "input": "uf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Chip damage (9) on block\n* Deals 12 damage to self (8 recoverable)\n* Unparryable\n* Gain 6 Kazama Essence on normal hit and 5 on block or airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-83",
+      "name": "Iwato",
+      "type": "Single Hits",
+      "input": "uf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break (airborne)\n* Low crush 11~27\n* Floating state 28~30"
+        }
+      ]
+    },
+    {
+      "id": "move-84",
+      "name": "uf+4",
+      "type": "Single Hits",
+      "input": "uf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 10~40\n* Floating state 41~43"
+        }
+      ]
+    },
+    {
+      "id": "move-85",
+      "name": "Housenka - Misogi",
+      "type": "Strings",
+      "input": "uf+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~18, i29 i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 1st hit\n* Transition to MIA on hit only\n* 3rd hit available only as combo from 2nd hit\n* 3rd hit deals 12 damage to self (8 recoverable)\n* Gain 5 Kazama Essence on normal hit or airborne hit\n* Low crush 1~20\n* Floating state 21~23"
+        }
+      ]
+    },
+    {
+      "id": "move-86",
+      "name": "Saiuntsui",
+      "type": "Single Hits",
+      "input": "uf+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~23 i2~6"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Low crush 9~30"
+        }
+      ]
+    },
+    {
+      "id": "move-87",
+      "name": "Ki Charge",
+      "type": "Single Hits",
+      "input": "1+2+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Can't block for 5 seconds\n* CH state on your next attack for 5 seconds ''(Tekken 7 and prior games)''\n* 10% damage increase on the next attack for 5 seconds ''(Tekken 8 season 2 patch onward)''\n* Attacks taken will be CH for 5 seconds"
+        }
+      ]
+    },
+    {
+      "id": "move-88",
+      "name": "Back Handspring",
+      "type": "Strings",
+      "input": "UB,b",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "Can perform wr3 with input 3\n* Low crush 10~41\n* Floating state 42~44"
+        }
+      ]
+    },
+    {
+      "id": "move-89",
+      "name": "f,F+2",
+      "type": "Strings",
+      "input": "f,F+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Enter GEN +1 +16g r18 wiith F\n* Enter MIA +1 +16g r18 wiith B\n* Stance transitions can be delayed by up to 10F (+1~-9/+16g~+6g)"
+        }
+      ]
+    },
+    {
+      "id": "move-90",
+      "name": "Suiei Ura Saika",
+      "type": "Strings",
+      "input": "f,F+2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Elbow\n* Combo from 1st hit with 8f delay\n* +7F crumple stun on CH"
+        }
+      ]
+    },
+    {
+      "id": "move-91",
+      "name": "Suiei Kagetsu",
+      "type": "Strings",
+      "input": "f,F+2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit with 8f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-92",
+      "name": "f,F+3",
+      "type": "Strings",
+      "input": "f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break (airborne)"
+        }
+      ]
+    },
+    {
+      "id": "move-93",
+      "name": "Yukimiguruma",
+      "type": "Strings",
+      "input": "f,F+3,3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, i35~36 i41~42"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* 7 chip damage on block\n* Interrupt with i11 from 1st block\n* +14d on BT hit\n* Floating state 25~39"
+        }
+      ]
+    },
+    {
+      "id": "move-94",
+      "name": "Tokkei - Misogi",
+      "type": "Strings",
+      "input": "f,F+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 6 chip damage on block\n* Transition to +9, +26a (+16) GEN with F\n* Transition to +9, +26a (+16) MIA with B\n* Deals 6 damage to self (4 recoverable)\n* Non-limb attack, unparryable by Asuka, Nina, etc\n* Gain 8 Kazama Essence on normal hit and 6 on block or airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-95",
+      "name": "Ame-no-Uzume",
+      "type": "Strings",
+      "input": "f,f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i24~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 8 chip damage on block\n* Low crush 3~30\n* Low crush 31~33"
+        }
+      ]
+    },
+    {
+      "id": "move-96",
+      "name": "ws1",
+      "type": "While Standing",
+      "input": "ws1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        }
+      ]
+    },
+    {
+      "id": "move-97",
+      "name": "ws1,1",
+      "type": "While Standing",
+      "input": "ws1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Combo from 1st hit\n* Enter GEN +0 +11g r18 with F\n* Enter MIA +0 +11g r18 with B"
+        }
+      ]
+    },
+    {
+      "id": "move-98",
+      "name": "Tenkan Saika Shikei",
+      "type": "While Standing",
+      "input": "ws1,1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, ,i25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH with 4f delay\n* Input can be delayed 14f"
+        }
+      ]
+    },
+    {
+      "id": "move-99",
+      "name": "Tenkan Saika Renken",
+      "type": "While Standing",
+      "input": "ws1,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, ,i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 2nd CH with 6f delay\n* Input can be delayed 14f\n* Chip damage on block\n* Deals recoverable self-damage when not in Heat\n* Unparryable\n* Gain 6 Kazama Essence on normal hit and 5 on block or airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-100",
+      "name": "Tenkan Saika Renshuu",
+      "type": "While Standing",
+      "input": "ws1,1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, ,i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH with 6f delay\n* Input can be delayed 14f\n* +13d on BT hit\n* Forces tech backroll on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-101",
+      "name": "ws1,4",
+      "type": "While Standing",
+      "input": "ws1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Combo from 1st hit with 5f delay\n* Input can be delayed 10f\n* Move can be delayed 8f"
+        }
+      ]
+    },
+    {
+      "id": "move-102",
+      "name": "Tomoezakura",
+      "type": "While Standing",
+      "input": "ws1,4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, ,i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Combo from 2nd CH\n* High crush 17~"
+        }
+      ]
+    },
+    {
+      "id": "move-103",
+      "name": "Tomoefuji",
+      "type": "While Standing",
+      "input": "ws1,4,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, ,i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Elbow\n* Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-104",
+      "name": "ws2",
+      "type": "While Standing",
+      "input": "ws2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "Hits grounded up-close only"
+        }
+      ]
+    },
+    {
+      "id": "move-105",
+      "name": "Hyakkaou",
+      "type": "While Standing",
+      "input": "ws2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-106",
+      "name": "Gioh",
+      "type": "While Standing",
+      "input": "ws3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 17~33\n* Floating state 34~36"
+        }
+      ]
+    },
+    {
+      "id": "move-107",
+      "name": "Ichikaku",
+      "type": "While Standing",
+      "input": "ws4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12"
+        }
+      ]
+    },
+    {
+      "id": "move-108",
+      "name": "Sudare Nagashi",
+      "type": "While Standing",
+      "input": "ws1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Cancel to r39 FC with D on frame 20"
+        }
+      ]
+    },
+    {
+      "id": "move-109",
+      "name": "Flowing Moon Scent",
+      "type": "While Standing",
+      "input": "ws3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "Tornado\n* Floating state 15~36"
+        }
+      ]
+    },
+    {
+      "id": "move-110",
+      "name": "Kasanegasumi",
+      "type": "Stances",
+      "input": "SS.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Tornado\n* Restores 3 health and 3 recoverable on hit\n* Gain 6 Kazama Essence on normal hit and 5 on airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-111",
+      "name": "Kagura",
+      "type": "Heat Moves",
+      "input": "SS.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +67a (+50)\n\n* Spike\n* Gain 10 Kazama Essence on Heat activation"
+        }
+      ]
+    },
+    {
+      "id": "move-112",
+      "name": "Sankouchou",
+      "type": "Stances",
+      "input": "SS.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16 i17 i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Spike\n* Jail from 1st attack\n* Combo from 1st or 2nd hit"
+        }
+      ]
+    },
+    {
+      "id": "move-113",
+      "name": "Divine Exile - Earth",
+      "type": "While Standing",
+      "input": "FC.df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10 i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Deals 18 damage to self (12 recoverable)\n* 2nd hit available only on hit or block\n* Recovery listed is for the 1st hit, t74 both hits\n* Gain 10 Kazama Essence on normal hit and 7 on block or airborne hit\n* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-114",
+      "name": "Grace",
+      "type": "While Standing",
+      "input": "FC.df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "Only i14 or faster attacks guaranteed on CH\n* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-115",
+      "name": "Kanamegaeshi",
+      "type": "While Standing",
+      "input": "FC.df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Clean hit +10a, 15 damage\n* Opponent recovers FDFA on CL\n* High crush 1~47"
+        }
+      ]
+    },
+    {
+      "id": "move-116",
+      "name": "[[Wall Jump Attack]]",
+      "type": "Stances",
+      "input": "(Back to wall).b,b,UB",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i39~41"
+        },
+        {
+          "type": "properties",
+          "value": "* Floating state 5~13\n* Low crush 14~33\n* Floating state 34~36"
+        }
+      ]
+    },
+    {
+      "id": "move-117",
+      "name": "Rurikoukai",
+      "type": "Stances",
+      "input": "GEN.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Has good left sidestep tracking\n* High crush 11~"
+        }
+      ]
+    },
+    {
+      "id": "move-118",
+      "name": "Kazama Style Spirit",
+      "type": "Stances",
+      "input": "GEN.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to attack throw on front standing or airborne hit \n* Deals 12 damage to self (8 recoverable)\n* Frame advantage is -9 if an attack is absorbed\n* Chip damage on block if an attack is absorbed\n* +10a (+1) and Balcony Break on BT hit\n* Gain 8 Kazama Essence on normal hit or airborne hit\n* Power crush 8~15"
+        }
+      ]
+    },
+    {
+      "id": "move-119",
+      "name": "GEN.3",
+      "type": "Stances",
+      "input": "GEN.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~20"
+        },
+        {
+          "type": "properties",
+          "value": "Spike"
+        }
+      ]
+    },
+    {
+      "id": "move-120",
+      "name": "Getsuun Renken",
+      "type": "Stances",
+      "input": "GEN.3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~20, i24"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 8f delay\n* Input can be delayed 10f\n* Deals 12 damage to self (8 recoverable)\n* Unparryable\n* Gain 8 Kazama Essence on normal hit and 6 on block or airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-121",
+      "name": "Nichiun",
+      "type": "Stances",
+      "input": "GEN.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break\n* Low crush 16~33\n* Floating state 34~36"
+        }
+      ]
+    },
+    {
+      "id": "move-122",
+      "name": "IZU.1",
+      "type": "Stances",
+      "input": "IZU.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "Enter GEN -6, +5 r18 with F\nEnter MIA -6, +5 r18 with B"
+        }
+      ]
+    },
+    {
+      "id": "move-123",
+      "name": "Haraede Kannagi",
+      "type": "Stances",
+      "input": "IZU.1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Tornado\n* Combo from 1st hit with 6f delay\n* Restores 1 health on hit\n* Restores 1 additional recoverable on hit\n* Non-limb attack, unparryable by Asuka, Nina, etc\n* Gain 6 Kazama Essence on normal hit and 5 on airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-124",
+      "name": "Haraede Musubi",
+      "type": "Stances",
+      "input": "IZU.1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i24"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Combo from 1st hit with 5f delay\n* Input can be delayed 6f"
+        }
+      ]
+    },
+    {
+      "id": "move-125",
+      "name": "Setsurinbu - Misogi",
+      "type": "Stances",
+      "input": "IZU.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Chip damage (9) on block\n* Deals 12 damage to self (8 recoverable)\n* Unparryable\n* Gain 6 Kazama Essence on normal hit and 5 on block or airborne hit\n* High crush 6~20"
+        }
+      ]
+    },
+    {
+      "id": "move-126",
+      "name": "Zuiun Renkyaku",
+      "type": "Heat Moves",
+      "input": "IZU.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~15 i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Balcony Break\n* Jail from 1st attack\n* Gain 10 Kazama Essence on Heat activation\n* Low crush 20~53\n* Floating state 54~56"
+        }
+      ]
+    },
+    {
+      "id": "move-127",
+      "name": "IZU.4",
+      "type": "Stances",
+      "input": "IZU.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 13~"
+        }
+      ]
+    },
+    {
+      "id": "move-128",
+      "name": "Wakeikazuchi - Misogi",
+      "type": "Stances",
+      "input": "IZU.4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19, i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 2nd hit only available as combo from 1st hit\n* DA: +9 damage on hit (30)\n* Deals 18 damage to self (12 recoverable)\n* Unparryable\n* Gain 20 Kazama Essence on normal or airborne hit\n* Low crush 22~38\n* Floating state 39~41"
+        }
+      ]
+    },
+    {
+      "id": "move-129",
+      "name": "Mihikarioroshi",
+      "type": "Stances",
+      "input": "IZU.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Spike\n* Frame advantage is -6c if an attack is absorbed\n* Power crush 8~20"
+        }
+      ]
+    },
+    {
+      "id": "move-130",
+      "name": "Dianthus Garden",
+      "type": "Stances",
+      "input": "IZU.f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break (airborne)\n* Only i15 or faster attacks guaranteed on CH\n* Jab evasion\n* Gain 6 Kazama Essence on normal hit and 5 on airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-131",
+      "name": "Ame-no-Sakahoko",
+      "type": "Stances",
+      "input": "MIA.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* 12 Chip damage on block\n* Deals 9 damage to self (8 recoverable)\n* Unparryable\n* Gain 8 Kazama Essence on normal hit and 6 on block or airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-132",
+      "name": "Ame-no-Nuboko",
+      "type": "Heat Moves",
+      "input": "MIA.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Balcony Break\n* DA: Range increases to 4.0\n* Deals 8 (DA:11) chip damage on block\n* Deals 6 damage to self (4 recoverable)\n* Unparryable\n* Gain 16 Kazama Essence on Heat activation\n* Gain 6 Kazama Essence on normal hit and 5 on block or airborne hit"
+        }
+      ]
+    },
+    {
+      "id": "move-133",
+      "name": "Yakumodachi",
+      "type": "Stances",
+      "input": "MIA.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Strong Aerial Tailspin\n* Balcony Break on airborne hit\n* Transitions to IZU on hit or block\n* Gain 6 Kazama Essence on normal hit and 5 on block or airborne hit\n* High crush"
+        }
+      ]
+    },
+    {
+      "id": "move-134",
+      "name": "Genjitsu",
+      "type": "Stances",
+      "input": "MIA.F",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Cancel to r34 FC with D on frame 16\n* Parries low punches or kicks\n* Parries throws\n* Parry state 1~40"
+        }
+      ]
+    },
+    {
+      "id": "move-135",
+      "name": "hFC.3+4",
+      "type": "Stances",
+      "input": "hFC.3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22 i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to r24 FC with D\n* Can be done from Crouch Level 1\n* Low crush 5~19\n* Floating state 20~22"
+        }
+      ]
+    },
+    {
+      "id": "move-136",
+      "name": "Twin Cloud Kicks",
+      "type": "Stances",
+      "input": "hFC.3+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22 i23~24, i31~32 i40~41"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to r24 FC with D\n* Low crush ~21~31\n* Floating state 32~40"
+        }
+      ]
+    },
+    {
+      "id": "move-137",
+      "name": "Shiho Nage",
+      "type": "Throws",
       "input": "1+3",
-      "type": "throw"
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Throw break 1 or 2"
+        }
+      ]
     },
     {
-      "name": "White Heron",
-      "input": "1+4, 2, 4, 3",
-      "type": "special"
+      "id": "move-138",
+      "name": "Katanuki",
+      "type": "Throws",
+      "input": "2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Throw break 1 or 2\n* Side switch on hit"
+        }
+      ]
     },
     {
-      "name": "Can-can Kicks",
-      "input": "3+3, 4",
-      "type": "special"
+      "id": "move-139",
+      "name": "Twisted Limbs",
+      "type": "Single Hits",
+      "input": "Back throw",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Unbreakable\n* Side switch"
+        }
+      ]
     },
     {
-      "name": "Charging Strike",
-      "input": "6, 6+2",
-      "type": "special"
+      "id": "move-140",
+      "name": "Falling Rain",
+      "type": "While Standing",
+      "input": "FC.db+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1+2\n* Opponent can tech roll to reduce the landing damage"
+        }
+      ]
+    },
+    {
+      "id": "move-141",
+      "name": "Amaterasu",
+      "type": "Stances",
+      "input": "GEN.P (Low)",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Restores 14 health and 14 recoverable\n* Opponent recovers FDFA\n* Gain 20 Kazama Essence"
+        }
+      ]
+    },
+    {
+      "id": "move-142",
+      "name": "Throw Reversal",
+      "type": "Throws",
+      "input": "GEN.P (Throw)",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Restores 8 health and 8 recoverable\n* Opponent recovers FUFA (sideways)\n* Gain 20 Kazama Essence"
+        }
+      ]
+    },
+    {
+      "id": "move-143",
+      "name": "Tsukuyomi",
+      "type": "Stances",
+      "input": "IZU.1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1+2\n* Restores 8 life and 12 recoverable\n* Gain 8 Kazama Essence on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-144",
+      "name": "Cloud Taste",
+      "type": "Single Hits",
+      "input": "Left throw",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Throw break 1"
+        }
+      ]
+    },
+    {
+      "id": "move-145",
+      "name": "Wind Wheel",
+      "type": "Single Hits",
+      "input": "Right throw",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Throw break 2\n* Side switch on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-146",
+      "name": "b+1+3,P",
+      "type": "Strings",
+      "input": "b+1+3,P",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Opponent recovers FDFT"
+        }
+      ]
+    },
+    {
+      "id": "move-147",
+      "name": "White Mountain",
+      "type": "Single Hits",
+      "input": "df+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 2\n* Floor Break"
+        }
+      ]
+    },
+    {
+      "id": "move-148",
+      "name": "Riai",
+      "type": "Single Hits",
+      "input": "uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "Throw break 1+2"
+        }
+      ]
     }
   ]
 }

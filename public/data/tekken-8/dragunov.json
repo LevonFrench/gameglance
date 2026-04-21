@@ -1,193 +1,2158 @@
 {
+  "id": "dragunov",
   "name": "Dragunov",
-  "character": "Dragunov",
-  "game": "Tekken 8",
   "movesList": [
     {
-      "id": "sp_0",
-      "name": "Safe mid Heat Engager",
-      "type": "special",
-      "input": "62_SaemiHeatEngager"
+      "id": "move-0",
+      "name": "Heat Burst",
+      "type": "Heat Moves",
+      "input": "2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Burst\n* Cancel to r45 with b,b on frame 42\n* 2 chip damage on block\n* 12 chip damage on hit\n* Only deals recoverable damage\n* Cannot cause a K.O.\n* Power crush 7~16"
+        }
+      ]
     },
     {
-      "id": "sp_1",
-      "name": "Useful in punish situations",
-      "type": "special",
-      "input": "86888_selinpnishsitations"
+      "id": "move-1",
+      "name": "Ultra Russian Sickle",
+      "type": "Heat Moves",
+      "input": "H.2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16,\n         i30~32,i31~32"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Smash\n* Balcony Break\n* Only 1st and 3rd hit\n* 7 Chip damage on block\n* Throw on 1st hit - 50 damage"
+        }
+      ]
     },
     {
-      "id": "sp_2",
-      "name": "Heat Engager from stance",
-      "type": "special",
-      "input": "6_HeatEngagerromstance"
+      "id": "move-2",
+      "name": "Ultra Russian Sickle > Ambush Tackle",
+      "type": "Heat Moves",
+      "input": "H.2+3,db+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16,\n         i30~32,i31~32, i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Unbreakable on hit\n* Shift to tackle on hit\n* Interrupt with i15 on 1st block"
+        }
+      ]
     },
     {
-      "id": "sp_4",
-      "name": "Quick jab to check situations",
-      "type": "special",
-      "input": "848_Qickjatochecksitations"
+      "id": "move-3",
+      "name": "White Angel of Death",
+      "type": "Stances",
+      "input": "R.df+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\n* Power crush 8~"
+        }
+      ]
     },
     {
-      "id": "sp_6",
-      "name": "Uf+1+2",
-      "type": "special",
-      "input": "9LPRP"
+      "id": "move-4",
+      "name": "Jab",
+      "type": "Single Hits",
+      "input": "1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Recovers 2f faster on hit or block (t27 r17)"
+        }
+      ]
     },
     {
-      "id": "sp_9",
-      "name": "Mid attack useful for pressure",
-      "type": "special",
-      "input": "2868468_MiattackseorpreSSre"
+      "id": "move-5",
+      "name": "1,1",
+      "type": "Strings",
+      "input": "1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i20"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit"
+        }
+      ]
     },
     {
-      "id": "sp_11",
-      "name": "B+3",
-      "type": "special",
-      "input": "4LK"
+      "id": "move-6",
+      "name": "Eye Gouge > Hilt",
+      "type": "Strings",
+      "input": "1,1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH with 5f delay\n* Input can be 10f delayed"
+        }
+      ]
     },
     {
-      "id": "sp_13",
-      "name": "F",
-      "type": "special",
-      "input": "6"
+      "id": "move-7",
+      "name": "1,2",
+      "type": "Strings",
+      "input": "1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st attack\n* Combo from 1st hit"
+        }
+      ]
     },
     {
-      "id": "sp_15",
-      "name": "GUARANTEED FOLLOW-UPS",
-      "type": "special",
-      "input": "88GARAnTEE3OLLOW-PS"
+      "id": "move-8",
+      "name": "Salvo",
+      "type": "Heat Moves",
+      "input": "1,2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +43a (+35)\n\n* Balcony Break\n* Combo from 1st or 2nd CH\n* Opponent recovers Crouching"
+        }
+      ]
     },
     {
-      "id": "sp_16",
-      "name": "B+2",
-      "type": "special",
-      "input": "4RP"
+      "id": "move-9",
+      "name": "1,3",
+      "type": "Strings",
+      "input": "1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st attack\n* Combo from 1st hit"
+        }
+      ]
     },
     {
-      "id": "sp_17",
-      "name": "F+4",
-      "type": "special",
-      "input": "6RK"
+      "id": "move-10",
+      "name": "1,3,1",
+      "type": "Strings",
+      "input": "1,3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd CH\n* Links to 10-hit strings"
+        }
+      ]
     },
     {
-      "id": "sp_18",
-      "name": "1,3 \u2015 1,4",
-      "type": "special",
-      "input": "LP[Cancel]LK\u2015LP[Cancel]RK"
+      "id": "move-11",
+      "name": "Hammer and Sickle",
+      "type": "Strings",
+      "input": "1,3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Combo from 2nd CH"
+        }
+      ]
     },
     {
-      "id": "sp_19",
-      "name": "Df+3,4",
-      "type": "special",
-      "input": "3LK[Cancel]RK"
+      "id": "move-12",
+      "name": "Feint & Catch",
+      "type": "Strings",
+      "input": "1,3,2~1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i29~32"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: 1+2\n** Unbreakable during Heat\n** Partially uses remaining Heat time\n* Cancel with B"
+        }
+      ]
     },
     {
-      "id": "sp_20",
-      "name": "...",
-      "type": "special",
-      "input": "..."
+      "id": "move-13",
+      "name": "2",
+      "type": "Single Hits",
+      "input": "2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        }
+      ]
     },
     {
-      "id": "sp_21",
-      "name": "SCR 1+2",
-      "type": "special",
-      "input": "SCRLPRP"
+      "id": "move-14",
+      "name": "2,1",
+      "type": "Strings",
+      "input": "2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st attack\n* Combo from 1st hit \n* Enter SNK -1 +10 r20 with DF\n* Enter -3, -14 PGR with 3+4 (or d+3+4)"
+        }
+      ]
     },
     {
-      "id": "sp_22",
-      "name": "CH f,f+2",
-      "type": "special",
-      "input": "66CH[Cancel]RP"
+      "id": "move-15",
+      "name": "One Two Scud Kick",
+      "type": "Strings",
+      "input": "2,1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Input can be delayed 14f\n* Move can be delayed 10f"
+        }
+      ]
     },
     {
-      "id": "sp_23",
-      "name": "CH SCR b+1+2",
-      "type": "special",
-      "input": "4CHSCRLPRP"
+      "id": "move-16",
+      "name": "One Two Mine Kick",
+      "type": "Strings",
+      "input": "2,1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Trades with i8 from 2nd block"
+        }
+      ]
     },
     {
-      "id": "sp_24",
-      "name": "Df+1,4",
-      "type": "special",
-      "input": "3LP[Cancel]RK"
+      "id": "move-17",
+      "name": "3",
+      "type": "Single Hits",
+      "input": "3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
     },
     {
-      "id": "sp_25",
-      "name": "Uf+3",
-      "type": "special",
-      "input": "9LK"
+      "id": "move-18",
+      "name": "3,1",
+      "type": "Strings",
+      "input": "3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Enter SNK -3 +6 r23 with DF"
+        }
+      ]
     },
     {
-      "id": "sp_26",
-      "name": "CH db+2",
-      "type": "special",
-      "input": "CHdown-backRP"
+      "id": "move-19",
+      "name": "Disconnector Combo Middle",
+      "type": "Strings",
+      "input": "3,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,i19~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH with 10f delay\n* Input can be delayed 11f\n* Move can be delayed 10f"
+        }
+      ]
     },
     {
-      "id": "sp_28",
-      "name": "CH f,f+3",
-      "type": "special",
-      "input": "66CH[Cancel]LK"
+      "id": "move-20",
+      "name": "Disconnector Combo High",
+      "type": "Strings",
+      "input": "3,1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd CH with 7f delay\n* Input can be delayed 11f\n* Move can be delayed 10f"
+        }
+      ]
     },
     {
-      "id": "sp_29",
-      "name": "Df+2",
-      "type": "special",
-      "input": "3RP"
+      "id": "move-21",
+      "name": "4",
+      "type": "Single Hits",
+      "input": "4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        }
+      ]
     },
     {
-      "id": "sp_30",
-      "name": "CH f,f+3~B",
-      "type": "special",
-      "input": "664CH[Cancel]LK~"
+      "id": "move-22",
+      "name": "Karnov Hook",
+      "type": "Strings",
+      "input": "4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)\n* Combo from 1st hit\n* Recovers 3f faster on hit or block"
+        }
+      ]
     },
     {
-      "id": "sp_31",
-      "name": "Uf+4",
-      "type": "special",
-      "input": "9RK"
+      "id": "move-23",
+      "name": "Karnov Kick",
+      "type": "Strings",
+      "input": "4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Combo from 1st CH"
+        }
+      ]
     },
     {
-      "id": "sp_32",
-      "name": "CH TRT 1",
-      "type": "special",
-      "input": "CHTRTLP"
+      "id": "move-24",
+      "name": "Karnov Avalanche",
+      "type": "Strings",
+      "input": "4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i35~36"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Chip damage on block\n* Interrupt with i16 from 1st block\n* Low crush 22~42\n* Floating state 43~45"
+        }
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "id": "move-25",
+      "name": "Bloodhound Strike",
+      "type": "Single Hits",
+      "input": "1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Spike\n* -9 frame advantage and 10 chip damage on block after absorbing an attack in power crush state\n* Power crush 7~20"
+        }
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "id": "move-26",
+      "name": "Pigeon Roll",
+      "type": "Single Hits",
+      "input": "3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transitions to FC on frame 28~\n* High crush 6~38"
+        }
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "id": "move-27",
+      "name": "f+2",
+      "type": "Single Hits",
+      "input": "f+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "Elbow"
+        }
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "id": "move-28",
+      "name": "Stun Gun",
+      "type": "Strings",
+      "input": "f+2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20, i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Knee\n* Combo from 1st CH with 10f delay\n* Input can be delayed 10f"
+        }
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "move-29",
+      "name": "f+3",
+      "type": "Single Hits",
+      "input": "f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "Enter SNK +0 +11 r19 with DF"
+        }
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "id": "move-30",
+      "name": "Step-in Mantis",
+      "type": "Stances",
+      "input": "f+3,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20, i17~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Combo from 1st CH\n* Side switch on hit \n* +20 damage throw when hit from the front in close range\n** Removes Recoverable Health\n* +1c on normal hit at long range"
+        }
+      ]
+    },
+    {
+      "id": "move-31",
+      "name": "Crushing Blizzard",
+      "type": "Heat Moves",
+      "input": "f+3,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20, i30~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +67a (+50)\n\n* Balcony Break\n* Spike\n* Combo from 1st hit\n* Chip damage on block\n* Interruptable by i10 from 1st block"
+        }
+      ]
+    },
+    {
+      "id": "move-32",
+      "name": "f+4",
+      "type": "Single Hits",
+      "input": "f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "Knee"
+        }
+      ]
+    },
+    {
+      "id": "move-33",
+      "name": "Falcon Combination",
+      "type": "Strings",
+      "input": "f+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i30~32"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Combo from 1st hit with 3f delay\n* Interruptable by i14 from 1st block"
+        }
+      ]
+    },
+    {
+      "id": "move-34",
+      "name": "f+4,4",
+      "type": "Strings",
+      "input": "f+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n** Only on CH\n* Combo from 1st hit with 5f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-35",
+      "name": "Cougar Combination",
+      "type": "Strings",
+      "input": "f+4,4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Interrupt with i6 from 2nd block"
+        }
+      ]
+    },
+    {
+      "id": "move-36",
+      "name": "Orca Combination",
+      "type": "Strings",
+      "input": "f+4,d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i25"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Combo from 1st hit with 5f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-37",
+      "name": "Scabbard",
+      "type": "Single Hits",
+      "input": "f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-38",
+      "name": "Iron Flail",
+      "type": "Single Hits",
+      "input": "f+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Tech-rollable on frames 34~38\n* Low crush 13~37\n* Floating state 38~40\n* gs41~"
+        }
+      ]
+    },
+    {
+      "id": "move-39",
+      "name": "df+1",
+      "type": "Single Hits",
+      "input": "df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "Enter -2, -11 PGR with 3+4 (or d+3+4)"
+        }
+      ]
+    },
+    {
+      "id": "move-40",
+      "name": "Switchblade Ripper",
+      "type": "Strings",
+      "input": "df+1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH with 8f delay\n* Input can be delayed 12f"
+        }
+      ]
+    },
+    {
+      "id": "move-41",
+      "name": "Scimitar",
+      "type": "Single Hits",
+      "input": "df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "Launches crouching opponent"
+        }
+      ]
+    },
+    {
+      "id": "move-42",
+      "name": "Mantis Heel",
+      "type": "Single Hits",
+      "input": "df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* +20 damage throw when hit from the front in close range\n* Removes Recoverable Health"
+        }
+      ]
+    },
+    {
+      "id": "move-43",
+      "name": "df+4",
+      "type": "Single Hits",
+      "input": "df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        }
+      ]
+    },
+    {
+      "id": "move-44",
+      "name": "Reaper Kick",
+      "type": "Single Hits",
+      "input": "df+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Homing\n* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-45",
+      "name": "Bunker-buster Elbow",
+      "type": "Single Hits",
+      "input": "d+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-46",
+      "name": "Razer",
+      "type": "Single Hits",
+      "input": "d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-47",
+      "name": "d+3",
+      "type": "Single Hits",
+      "input": "d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        }
+      ]
+    },
+    {
+      "id": "move-48",
+      "name": "d+3,2",
+      "type": "Strings",
+      "input": "d+3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-49",
+      "name": "Avalanche Hammer Rush",
+      "type": "Strings",
+      "input": "d+3,2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, ,i35~36"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Spike\n* Chip damage on block\n* Interruptable by i14 from 2nd block"
+        }
+      ]
+    },
+    {
+      "id": "move-50",
+      "name": "Detached Kick",
+      "type": "Strings",
+      "input": "d+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i28"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-51",
+      "name": "d+4",
+      "type": "Single Hits",
+      "input": "d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-52",
+      "name": "d+4,1",
+      "type": "Strings",
+      "input": "d+4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st CH with 1f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-53",
+      "name": "Separator",
+      "type": "Strings",
+      "input": "d+4,1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd hit\n* Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-54",
+      "name": "Stiletto",
+      "type": "Strings",
+      "input": "d+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-55",
+      "name": "Pit Fall",
+      "type": "Single Hits",
+      "input": "d+1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Parries lows except weapons\n* Can side switch on a successful parry\n* 100% recoverable damage\n* Parry state 5~15\n* High crush 1~25"
+        }
+      ]
+    },
+    {
+      "id": "move-56",
+      "name": "db+2",
+      "type": "Single Hits",
+      "input": "db+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-57",
+      "name": "db+2,1",
+      "type": "Strings",
+      "input": "db+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 9f delay\n* Input can be delayed 11f"
+        }
+      ]
+    },
+    {
+      "id": "move-58",
+      "name": "Death's Door",
+      "type": "Strings",
+      "input": "db+2,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, ,i25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd CH with 6f delay\n* Input can be delayed 14f"
+        }
+      ]
+    },
+    {
+      "id": "move-59",
+      "name": "Clipping Sweep",
+      "type": "Single Hits",
+      "input": "db+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i27~29"
+        },
+        {
+          "type": "properties",
+          "value": "Clean hit +67a (+51)\n* High crush 6~49"
+        }
+      ]
+    },
+    {
+      "id": "move-60",
+      "name": "Deadly Scorpion",
+      "type": "Single Hits",
+      "input": "db+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)"
+        }
+      ]
+    },
+    {
+      "id": "move-61",
+      "name": "b+1",
+      "type": "Single Hits",
+      "input": "b+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        }
+      ]
+    },
+    {
+      "id": "move-62",
+      "name": "Pommel Fling",
+      "type": "Strings",
+      "input": "b+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Combo from 1st hit with 1f delay\n* Opponent recovers crouching"
+        }
+      ]
+    },
+    {
+      "id": "move-63",
+      "name": "Red Alert",
+      "type": "Single Hits",
+      "input": "b+1+3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Parries mid and high punches and kicks\n* +1d on a successful kick parry\n* 100% recoverable damage\n* Sometimes Side switches on hit\n* Parry state 5~12"
+        }
+      ]
+    },
+    {
+      "id": "move-64",
+      "name": "b+2",
+      "type": "Single Hits",
+      "input": "b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        }
+      ]
+    },
+    {
+      "id": "move-65",
+      "name": "b+2,1",
+      "type": "Strings",
+      "input": "b+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i17~19"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-66",
+      "name": "Eye Gouge > Stingray",
+      "type": "Strings",
+      "input": "b+2,1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, ,i29~31"
+        },
+        {
+          "type": "properties",
+          "value": "* Clean hit +4\n* Shift to Clipping Heel Hook on close range CH\n* High crush 15~050"
+        }
+      ]
+    },
+    {
+      "id": "move-67",
+      "name": "Serrated Edge",
+      "type": "Single Hits",
+      "input": "b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break\n* +18a (+9) on BT hit\n* Transitions to throw on counterhit from the front\n* 20 damage, +1d\n* Removes Recoverable Health"
+        }
+      ]
+    },
+    {
+      "id": "move-68",
+      "name": "b+4",
+      "type": "Single Hits",
+      "input": "b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        }
+      ]
+    },
+    {
+      "id": "move-69",
+      "name": "b+4,2",
+      "type": "Strings",
+      "input": "b+4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Combo from 1st CH with 5f delay\n* Enter FC r26 with D or DB\n* Enter SNK -6 +5 r25 with DF"
+        }
+      ]
+    },
+    {
+      "id": "move-70",
+      "name": "Tundra Strike > Ear Grab",
+      "type": "Strings",
+      "input": "b+4,2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, ,i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd hit with 7F delay\n* Move can be delayed by 10F"
+        }
+      ]
+    },
+    {
+      "id": "move-71",
+      "name": "Tundra Strike > Ambush Tackle",
+      "type": "Strings",
+      "input": "b+4,2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, ,i40"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1+2\n** Recovery in BT\n** Unbreakable during Heat\n** Partially uses remaining Heat time\n* Alternate input:\n** ss2,1+2,1+2\n** PGR.1+2\n** (Face down).1+2,1+2\n** f,f,F+2,H.1+2\n** FC.df+1,H.1+2"
+        }
+      ]
+    },
+    {
+      "id": "move-72",
+      "name": "Tundra Slash",
+      "type": "Heat Moves",
+      "input": "b+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +43d (+35)\n\n* Balcony Break\n* Combo from 1st hit with 1f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-73",
+      "name": "Blizzard Hammer",
+      "type": "Single Hits",
+      "input": "b+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break"
+        }
+      ]
+    },
+    {
+      "id": "move-74",
+      "name": "Inertia Kick",
+      "type": "Single Hits",
+      "input": "b+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~29"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)\n* Transitions to throw on block front hit\n* +26a on side or back hit\n* Punch parry\n* Parry state 7~15"
+        }
+      ]
+    },
+    {
+      "id": "move-75",
+      "name": "Inertia Kick (throw)",
+      "type": "Throws",
+      "input": "b+3+4:1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~29, i28~29"
+        },
+        {
+          "type": "properties",
+          "value": "* Removes Recoverable Health\n* Unbreakable\n* Transitions to throw when blocked from the front\n* Just frame not required during Heat\n* Partially consumes remaining Heat time"
+        }
+      ]
+    },
+    {
+      "id": "move-76",
+      "name": "Hunter Hook",
+      "type": "Single Hits",
+      "input": "ub+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)"
+        }
+      ]
+    },
+    {
+      "id": "move-77",
+      "name": "Counterstrike",
+      "type": "Single Hits",
+      "input": "ub+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "Sidesteps left"
+        }
+      ]
+    },
+    {
+      "id": "move-78",
+      "name": "ub+3",
+      "type": "Single Hits",
+      "input": "ub+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 9~27\n* Floating state 28~30"
+        }
+      ]
+    },
+    {
+      "id": "move-79",
+      "name": "Slicing Sobat",
+      "type": "Single Hits",
+      "input": "ub+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)\n* Low crush 9~27\n* Floating state 28~30"
+        }
+      ]
+    },
+    {
+      "id": "move-80",
+      "name": "Sub-Zero",
+      "type": "Single Hits",
+      "input": "ub+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i63~64"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* Unblockable"
+        }
+      ]
+    },
+    {
+      "id": "move-81",
+      "name": "u+3",
+      "type": "Single Hits",
+      "input": "u+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~21"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* Low crush 9~27\n* Floating state 28~30"
+        }
+      ]
+    },
+    {
+      "id": "move-82",
+      "name": "Slicing Sobat",
+      "type": "Single Hits",
+      "input": "u+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)\n* Low crush 9~27\n* Floating state 28~30"
+        }
+      ]
+    },
+    {
+      "id": "move-83",
+      "name": "Eye Blast",
+      "type": "Single Hits",
+      "input": "uf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-84",
+      "name": "Under Pressure",
+      "type": "Single Hits",
+      "input": "uf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i30-31"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break\n* Low crush 9~30"
+        }
+      ]
+    },
+    {
+      "id": "move-85",
+      "name": "Breaching Charge Kick",
+      "type": "Single Hits",
+      "input": "uf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~21"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break\n* Low crush 9~27\n* Floating state 28~30"
+        }
+      ]
+    },
+    {
+      "id": "move-86",
+      "name": "Slicing Sobat",
+      "type": "Single Hits",
+      "input": "uf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)\n* Low crush 9~27\n* Floating state 28~30"
+        }
+      ]
+    },
+    {
+      "id": "move-87",
+      "name": "Ki Charge",
+      "type": "Single Hits",
+      "input": "1+2+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Can't block for 5 seconds\n* CH state on your next attack for 5 seconds ''(Tekken 7 and prior games)''\n* 10% damage increase on the next attack for 5 seconds ''(Tekken 8 season 2 patch onward)''\n* Attacks taken will be CH for 5 seconds"
+        }
+      ]
+    },
+    {
+      "id": "move-88",
+      "name": "Sneak",
+      "type": "Single Hits",
+      "input": "SNK",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Lapses to standing\n* Cancel to SS with u\n* Input d, DF to transition to FC instead of SNK"
+        }
+      ]
+    },
+    {
+      "id": "move-89",
+      "name": "Russian Sickle",
+      "type": "Strings",
+      "input": "f,F+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Spike"
+        }
+      ]
+    },
+    {
+      "id": "move-90",
+      "name": "Stinger Kick",
+      "type": "Strings",
+      "input": "f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break\n* Chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-91",
+      "name": "Rolling Thunder",
+      "type": "Strings",
+      "input": "f,F+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~28"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break\n* Floating state 10~30"
+        }
+      ]
+    },
+    {
+      "id": "move-92",
+      "name": "Mass Elbow",
+      "type": "Single Hits",
+      "input": "qcb+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-93",
+      "name": "Delayed Rising Toe Kick",
+      "type": "Strings",
+      "input": "uf,n,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~i25"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 9~30\n* Floating state 31~33"
+        }
+      ]
+    },
+    {
+      "id": "move-94",
+      "name": "<div class=\"dotlist\">\n\n* Russian Assault\n* Russian Hook Special\n</div>",
+      "type": "Strings",
+      "input": "f,f,F+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Spike\n* 20% (4) Chip damage on block - 30% (7) when powered up\n* Do f,n,f+2 within 8 total frames (first forward and neutral doesn't matter) for the powered up (bluespark) version - 26 damage"
+        }
+      ]
+    },
+    {
+      "id": "move-95",
+      "name": "Russian Hook Special > Ambush Tackle",
+      "type": "Heat Moves",
+      "input": "H.f,f,F+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~17, i40"
+        },
+        {
+          "type": "properties",
+          "value": "* Consumes 300F of remaining Heat time\n* Shift to tackle on hit\n* Interrupt with i24 from 1st block\n* High crush 24~40"
+        }
+      ]
+    },
+    {
+      "id": "move-96",
+      "name": "Snap Knee Assault",
+      "type": "Strings",
+      "input": "f,f,F+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n** on wall hit only (Death's Fragrance)\n* Knee\n* Transition to attack throw on front standing or wall hit\n* Throw is unbreakable\n* Sometimes Side switches on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-97",
+      "name": "ws1",
+      "type": "While Standing",
+      "input": "ws1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "Enter SNK -5 +2 r22 with DF"
+        }
+      ]
+    },
+    {
+      "id": "move-98",
+      "name": "Qullion",
+      "type": "While Standing",
+      "input": "ws1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-99",
+      "name": "Double Hilt",
+      "type": "While Standing",
+      "input": "ws1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-100",
+      "name": "Ballistic Upper",
+      "type": "While Standing",
+      "input": "ws2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-101",
+      "name": "Glacial Hilt",
+      "type": "While Standing",
+      "input": "ws3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-102",
+      "name": "Gelid Smash",
+      "type": "While Standing",
+      "input": "ws4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12"
+        }
+      ]
+    },
+    {
+      "id": "move-103",
+      "name": "Frost Tackle",
+      "type": "Heat Moves",
+      "input": "ws1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +36a (+26) \n\n* Balcony Break\n* Shoulder"
+        }
+      ]
+    },
+    {
+      "id": "move-104",
+      "name": "SS.2",
+      "type": "Stances",
+      "input": "SS.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "Floor Break"
+        }
+      ]
+    },
+    {
+      "id": "move-105",
+      "name": "Integral Slicer Clutch",
+      "type": "Stances",
+      "input": "SS.2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21, i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw when hit from the front\n* Removes Recoverable Health\n* Side switch on front hit\n* +5 on side or BT hit\n* Combo from 1st hit with 12F delay\n* Move can be delayed by 15F\n* Input can be delayed by 18F"
+        }
+      ]
+    },
+    {
+      "id": "move-106",
+      "name": "SS.2,1+2",
+      "type": "Stances",
+      "input": "SS.2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21, i27~29 i8~9"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 1F delay\n* Move cannot be delayed\n* Input can be delayed by 1F"
+        }
+      ]
+    },
+    {
+      "id": "move-107",
+      "name": "Integral Blitz",
+      "type": "Stances",
+      "input": "SS.2,1+2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21, ,i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Move can be delayed by 15F"
+        }
+      ]
+    },
+    {
+      "id": "move-108",
+      "name": "Integral Blitz > Ambush Tackle",
+      "type": "Stances",
+      "input": "SS.2,1+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21, ,i40"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: 1+2\n* Transition to BT on throw break\n* Shift to tackle on hit\n* Interrupt with i22 from 3rd block\n* Unbreakable and -2d on hit in heat (Consumes 300F of remaining Heat time)\n* High crush 24~40"
+        }
+      ]
+    },
+    {
+      "id": "move-109",
+      "name": "FC.df+1",
+      "type": "While Standing",
+      "input": "FC.df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        }
+      ]
+    },
+    {
+      "id": "move-110",
+      "name": "Hail Slicer",
+      "type": "While Standing",
+      "input": "FC.df+1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Combo from 1st hit\n* Available only as combo from 1st hit\n* Input 4 on frames 16~19 to power up - 14 damage"
+        }
+      ]
+    },
+    {
+      "id": "move-111",
+      "name": "Hail Slicer > Ambush Tackle",
+      "type": "Heat Moves",
+      "input": "H.FC.df+1,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i40"
+        },
+        {
+          "type": "properties",
+          "value": "* Consumes 300F of remaining Heat time\n* Shift to tackle on hit\n* Interrupt with i28 from 1st block\n* High crush 24~40"
+        }
+      ]
+    },
+    {
+      "id": "move-112",
+      "name": "Death's Fragrance",
+      "type": "Stances",
+      "input": "(During enemy wall stun).f,f,F+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Deals maximum 32 (20) damage due to scaling"
+        }
+      ]
+    },
+    {
+      "id": "move-113",
+      "name": "Cane Stab",
+      "type": "Stances",
+      "input": "BT.d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        }
+      ]
+    },
+    {
+      "id": "move-114",
+      "name": "Living Dead",
+      "type": "Stances",
+      "input": "FDFA.1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Floating state 1~29\n* High crush 30~40"
+        }
+      ]
+    },
+    {
+      "id": "move-115",
+      "name": "Living Dead > Ambush Tackle",
+      "type": "Stances",
+      "input": "FDFA.1+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: 1+2\n* Transition to BT on throw break\n* Shift to tackle on hit\n* Unbreakable and -2d on hit in heat (Consumes 300F of remaining Heat time)"
+        }
+      ]
+    },
+    {
+      "id": "move-116",
+      "name": "Clipping Heel Hook",
+      "type": "Stances",
+      "input": "FDFT.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "On close hit\n* High crush 1~47"
+        }
+      ]
+    },
+    {
+      "id": "move-117",
+      "name": "Six Feet Under",
+      "type": "Stances",
+      "input": "OTG.db+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i24"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* +0a (-8) on grounded"
+        }
+      ]
+    },
+    {
+      "id": "move-118",
+      "name": "Frozen Scythe",
+      "type": "Stances",
+      "input": "PGR.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-119",
+      "name": "Frozen Heel Hook",
+      "type": "Stances",
+      "input": "PGR.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Shift to Clipping Heel Hook on front hit only for 20 more damage\n* +3 on hit from the side or back\n* High crush 8~50"
+        }
+      ]
+    },
+    {
+      "id": "move-120",
+      "name": "Pigeon Roll > Ambush Tackle",
+      "type": "Stances",
+      "input": "PGR.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: 1+2\n* Transition to BT on throw break\n* Shift to tackle on hit\n* Unbreakable and -2d on hit in heat (Consumes 300F of remaining Heat time)\n* High crush 1~26"
+        }
+      ]
+    },
+    {
+      "id": "move-121",
+      "name": "Cocked Hammer",
+      "type": "Stances",
+      "input": "SNK.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)"
+        }
+      ]
+    },
+    {
+      "id": "move-122",
+      "name": "Stinger Elbow",
+      "type": "Stances",
+      "input": "SNK.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-123",
+      "name": "Slay Ride",
+      "type": "Stances",
+      "input": "SNK.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw when CH from the front or on airborne hit in close range\n** Called \"Needle Hold\" in-game\n* +26a on CH from distance\n* Floating state 10~42\n* High crush 12~"
+        }
+      ]
+    },
+    {
+      "id": "move-124",
+      "name": "Ignition Switch",
+      "type": "Heat Moves",
+      "input": "SNK.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +67a (+50)\n\n* Balcony Break\n* Spike\n* 4 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-125",
+      "name": "Snap Knee",
+      "type": "Stances",
+      "input": "SNK.3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Absorb a hit to transition to Snap Knee Assault\n** +1d 45dmg total\n* -7 frame advantage and 8 chip damage on block after absorbing an attack in power crush state\n* Power crush 8~16"
+        }
+      ]
+    },
+    {
+      "id": "move-126",
+      "name": "Chernobog Sweep",
+      "type": "Stances",
+      "input": "WR.F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to attack throw on front standing hit\n* Must run for 32f to access this move\n* +27a on BT hit\n* Normally Side switches on hit\n* High crush 12~44\n* Floating state 10~42"
+        }
+      ]
+    },
+    {
+      "id": "move-127",
+      "name": "Volk Clutch",
+      "type": "Throws",
+      "input": "1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1 or 2\n* Homing"
+        }
+      ]
+    },
+    {
+      "id": "move-128",
+      "name": "Purge Slam",
+      "type": "Throws",
+      "input": "2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1 or 2\n* Homing \n* Side switch on hit or break"
+        }
+      ]
+    },
+    {
+      "id": "move-129",
+      "name": "Absolute Silence",
+      "type": "Single Hits",
+      "input": "Back throw",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "Unbreakable"
+        }
+      ]
+    },
+    {
+      "id": "move-130",
+      "name": "Tarantula Sting",
+      "type": "Single Hits",
+      "input": "Left throw",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Throw break 1"
+        }
+      ]
+    },
+    {
+      "id": "move-131",
+      "name": "Reverse Fracture",
+      "type": "Single Hits",
+      "input": "Right throw",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Throw break 2"
+        }
+      ]
+    },
+    {
+      "id": "move-132",
+      "name": "Frost Bite",
+      "type": "Stances",
+      "input": "Tackle.1",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Throw break 1\n* Removes Recoverable Health"
+        }
+      ]
+    },
+    {
+      "id": "move-133",
+      "name": "Achilles' Hold",
+      "type": "Stances",
+      "input": "Tackle.2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Throw break 2"
+        }
+      ]
+    },
+    {
+      "id": "move-134",
+      "name": "Iron Curtain",
+      "type": "Stances",
+      "input": "Tackle.1+2",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Throw break 1+2"
+        }
+      ]
+    },
+    {
+      "id": "move-135",
+      "name": "Feint & Low Catch",
+      "type": "Single Hits",
+      "input": "db+3~1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Side switch\n* Crouch throw\n* Cancel to FC with D, DB or DF\n* High crush 1~19"
+        }
+      ]
+    },
+    {
+      "id": "move-136",
+      "name": "Cold Fate",
+      "type": "Single Hits",
+      "input": "d+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Side switch\n* Crouch throw"
+        }
+      ]
+    },
+    {
+      "id": "move-137",
+      "name": "Reverse Victor Clutch",
+      "type": "Single Hits",
+      "input": "f+1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1\n* Side switch on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-138",
+      "name": "Victor Clutch",
+      "type": "Single Hits",
+      "input": "f+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 2"
+        }
+      ]
+    },
+    {
+      "id": "move-139",
+      "name": "Blizzard Rush",
+      "type": "Single Hits",
+      "input": "uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Throw break: 1+2\n* Side switch on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-140",
+      "name": "Scorpion Scissors",
+      "type": "Single Hits",
+      "input": "uf+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i38~42"
+        },
+        {
+          "type": "properties",
+          "value": "Unbreakable (avoid by ducking)"
+        }
+      ]
     }
   ]
 }

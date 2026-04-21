@@ -1,76 +1,1838 @@
 {
-  "character": "Victor",
+  "id": "victor",
+  "name": "Victor",
   "movesList": [
     {
-      "name": "Iai Stance",
-      "input": "3+4",
-      "type": "Move"
-    },
-    {
-      "name": "Perfumer Stance",
-      "input": "6, 3",
-      "type": "Move"
-    },
-    {
-      "name": "Durandal",
-      "input": "6, 1+2",
-      "type": "Move"
-    },
-    {
-      "name": "Carnwennan",
-      "input": "6, 6, 2",
-      "type": "Move"
-    },
-    {
-      "name": "Asterism of Virtue",
-      "input": "6, 6, 6, 2",
-      "type": "Move"
-    },
-    {
+      "id": "move-0",
       "name": "Heat Burst",
+      "type": "Heat Moves",
       "input": "2+3",
-      "type": "Move"
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Burst\n* Cancel to r45 with b,b on frame 42\n* 2 chip damage on block\n* 12 chip damage on hit\n* Only deals recoverable damage\n* Cannot cause a K.O.\n* Power crush 7~16"
+        }
+      ]
     },
     {
-      "name": "Rage Art: Coup de Chevalier",
-      "input": "3+1+2",
-      "type": "Move"
+      "id": "move-1",
+      "name": "Longinus",
+      "type": "Heat Moves",
+      "input": "H.IAI.d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Projectile\n* Transition to IAI\n* Deals 10 chip damage on block"
+        }
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "id": "move-2",
+      "name": "Monsieur Samurai",
+      "type": "Heat Moves",
+      "input": "H.db+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~29"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Transitions to IAI\n* Partially uses remaining Heat time"
+        }
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "id": "move-3",
+      "name": "Excalibur",
+      "type": "Heat Moves",
+      "input": "H.u+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i31~32"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Weapon\n* Victor teleports overhead on frame 10 and descends downward for the rest of the startup; evades some highs and mids but vulnerable on descent (lows, throws, etc. hit)\n* Deals 23 chip damage on block\n* is10~?\n* Low crush ?~"
+        }
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "id": "move-4",
+      "name": "Élimination Samouraï",
+      "type": "Heat Moves",
+      "input": "H.2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Smash\n* Balcony Break\n* Alternate input: H.R1\n* 8 chip damage on block"
+        }
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "id": "move-5",
+      "name": "Coup de Chevalier",
+      "type": "Stances",
+      "input": "R.df+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\n* Power crush 8~"
+        }
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "move-6",
+      "name": "Jab",
+      "type": "Single Hits",
+      "input": "1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "Recovers 2f faster on hit or block (t27 r17)"
+        }
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "id": "move-7",
+      "name": "1,1",
+      "type": "Strings",
+      "input": "1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Combo from 1st hit with 2F delay\n* Jail from 1st block with 2F delay"
+        }
+      ]
+    },
+    {
+      "id": "move-8",
+      "name": "Double Cabochon Cut",
+      "type": "Strings",
+      "input": "1,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i17~18,i9~10"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Combo from 1st hit\n* Jail from 1st block\n* Transition to r27 PRF with F (-8/+7)"
+        }
+      ]
+    },
+    {
+      "id": "move-9",
+      "name": "Basic Etiquette",
+      "type": "Strings",
+      "input": "1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Combo from 1st hit with 2F delay\n* Jail from 1st block with 2F delay"
+        }
+      ]
+    },
+    {
+      "id": "move-10",
+      "name": "Briolette Cut",
+      "type": "Strings",
+      "input": "1,2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Weapon\n* Combo from 2nd CH with 4F delay\n* Move can be delayed by 12F"
+        }
+      ]
+    },
+    {
+      "id": "move-11",
+      "name": "Basic Manners",
+      "type": "Strings",
+      "input": "1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 2F delay\n* -1c on crouching hit"
+        }
+      ]
+    },
+    {
+      "id": "move-12",
+      "name": "Right Jab",
+      "type": "Single Hits",
+      "input": "2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon"
+        }
+      ]
+    },
+    {
+      "id": "move-13",
+      "name": "Cutlery Etiquette",
+      "type": "Strings",
+      "input": "2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Transition to PRF with F (-4/+7)\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-14",
+      "name": "2,2",
+      "type": "Strings",
+      "input": "2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i17~18,i7"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* -10 if last hit whiffs\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-15",
+      "name": "Crybaby Sophia",
+      "type": "Strings",
+      "input": "2,2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, ,i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Wall Crush +12g on hit\n\n\n* Weapon\n* Projectile (unparryable)\n* Combo from 1st hit\n* 4 chip damage on blocked gunshot\n* Transitions to IAI on hit or block"
+        }
+      ]
+    },
+    {
+      "id": "move-16",
+      "name": "3",
+      "type": "Single Hits",
+      "input": "3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        }
+      ]
+    },
+    {
+      "id": "move-17",
+      "name": "Good Communication",
+      "type": "Strings",
+      "input": "3,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i19~20,i8~9"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n*delayable"
+        }
+      ]
+    },
+    {
+      "id": "move-18",
+      "name": "4",
+      "type": "Single Hits",
+      "input": "4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        }
+      ]
+    },
+    {
+      "id": "move-19",
+      "name": "4,3",
+      "type": "Strings",
+      "input": "4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-20",
+      "name": "Asterism of Benevolence",
+      "type": "Strings",
+      "input": "4,3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Weapon\n* Combo from 2nd CH\n* Deals 7 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-21",
+      "name": "Eden",
+      "type": "Single Hits",
+      "input": "1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon"
+        }
+      ]
+    },
+    {
+      "id": "move-22",
+      "name": "Taunt",
+      "type": "Single Hits",
+      "input": "2+3+4",
+      "properties": []
+    },
+    {
+      "id": "move-23",
+      "name": "Iai Stance",
+      "type": "Stances",
+      "input": "3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i30"
+        },
+        {
+          "type": "properties",
+          "value": "* Cancel stance with db"
+        }
+      ]
+    },
+    {
+      "id": "move-24",
+      "name": "Iai Stance",
+      "type": "Stances",
+      "input": "3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i30"
+        },
+        {
+          "type": "properties",
+          "value": "* Cancel to FC with db"
+        }
+      ]
+    },
+    {
+      "id": "move-25",
+      "name": "f+2",
+      "type": "Single Hits",
+      "input": "f+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        }
+      ]
+    },
+    {
+      "id": "move-26",
+      "name": "f+2,2",
+      "type": "Strings",
+      "input": "f+2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i11"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-27",
+      "name": "f+2,2,1",
+      "type": "Strings",
+      "input": "f+2,2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-28",
+      "name": "Gorlagon",
+      "type": "Strings",
+      "input": "f+2,2,1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Weapon\n* Combo from 3rd hit\n* Combo from 2nd CH\n* Hit confirmable if (f22)1 is ch"
+        }
+      ]
+    },
+    {
+      "id": "move-29",
+      "name": "Radiant Cut",
+      "type": "Strings",
+      "input": "f+2,2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,i14,i12~13,i7~8"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Weapon\n* Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-30",
+      "name": "Perfumer",
+      "type": "Heat Moves",
+      "input": "f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Cancel to r20 cs5~ FC with df\n* Punch parry only\n* +15~+20 PRF on successful parry\n* Can perform Heat Burst and Heat Smash from stance\n* Parry state 5-10"
+        }
+      ]
+    },
+    {
+      "id": "move-31",
+      "name": "f+4",
+      "type": "Single Hits",
+      "input": "f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        }
+      ]
+    },
+    {
+      "id": "move-32",
+      "name": "Carving Cameo",
+      "type": "Heat Moves",
+      "input": "f+4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Heat Engager\n\n* Heat Dash +5, +34a (+27)\n\n* Weapon\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-33",
+      "name": "Carving Intaglio",
+      "type": "Strings",
+      "input": "f+4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Combo from 1st hit\n* CH on last hit or wallhit causes FDFA knockdown\n* Transition to IAI (-12/+5c/+7a) with D or 3+4"
+        }
+      ]
+    },
+    {
+      "id": "move-34",
+      "name": "Durandal",
+      "type": "Heat Moves",
+      "input": "f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Heat Engager\n\n* Heat Dash +5, +67a (+50a)\n\n* Weapon\n* Deals 10 chip damage on block\n* Partially restores Heat on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-35",
+      "name": "df+1",
+      "type": "Single Hits",
+      "input": "df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        }
+      ]
+    },
+    {
+      "id": "move-36",
+      "name": "Trilliant Cut",
+      "type": "Strings",
+      "input": "df+1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-37",
+      "name": "Arcadia",
+      "type": "Single Hits",
+      "input": "df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon"
+        }
+      ]
+    },
+    {
+      "id": "move-38",
+      "name": "df+3",
+      "type": "Single Hits",
+      "input": "df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        }
+      ]
+    },
+    {
+      "id": "move-39",
+      "name": "df+3,4",
+      "type": "Strings",
+      "input": "df+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-40",
+      "name": "Iridescence of Loyalty",
+      "type": "Strings",
+      "input": "df+3,4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, ,i32~34"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Weapon\n* Projectile\n* Deals 6 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-41",
+      "name": "df+4",
+      "type": "Single Hits",
+      "input": "df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee"
+        }
+      ]
+    },
+    {
+      "id": "move-42",
+      "name": "Selfish Miranda",
+      "type": "Strings",
+      "input": "df+4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Wall Crush +12g on hit\n\n\n* Weapon\n* Projectile\n* Combo from 1st hit\n* Deals 6 chip damage on blocked gunshot\n* Transitions to IAI (cannot cancel)"
+        }
+      ]
+    },
+    {
+      "id": "move-43",
+      "name": "Llamrei",
+      "type": "Single Hits",
+      "input": "df+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Shoulder"
+        }
+      ]
+    },
+    {
+      "id": "move-44",
+      "name": "d+1",
+      "type": "Single Hits",
+      "input": "d+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Cannot be parried (weapon low)"
+        }
+      ]
+    },
+    {
+      "id": "move-45",
+      "name": "Concave Cut",
+      "type": "Strings",
+      "input": "d+1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16, i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Combo from 1st CH\n* -26 on 1st block"
+        }
+      ]
+    },
+    {
+      "id": "move-46",
+      "name": "Llawfrodedd",
+      "type": "Heat Moves",
+      "input": "d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +67a (+50a)\n\n* Weapon\n* 6 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-47",
+      "name": "Good Manners",
+      "type": "Single Hits",
+      "input": "d+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        }
+      ]
+    },
+    {
+      "id": "move-48",
+      "name": "Fine Salute",
+      "type": "Single Hits",
+      "input": "d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        }
+      ]
+    },
+    {
+      "id": "move-49",
+      "name": "Iridescence of Prowess",
+      "type": "Single Hits",
+      "input": "d+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Weapon\n* Projectile\n* Deals 6 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-50",
+      "name": "db+1",
+      "type": "Single Hits",
+      "input": "db+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon"
+        }
+      ]
+    },
+    {
+      "id": "move-51",
+      "name": "Emerald Cut",
+      "type": "Strings",
+      "input": "db+1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Transition to PRF with F (-5/+4)\n* Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-52",
+      "name": "Crouch Straight",
+      "type": "Single Hits",
+      "input": "db+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 4"
+        }
+      ]
+    },
+    {
+      "id": "move-53",
+      "name": "Polite Greetings",
+      "type": "Single Hits",
+      "input": "db+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* High crush 6"
+        }
+      ]
+    },
+    {
+      "id": "move-54",
+      "name": "Welcome Sweep",
+      "type": "Single Hits",
+      "input": "db+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 6"
+        }
+      ]
+    },
+    {
+      "id": "move-55",
+      "name": "b+1",
+      "type": "Single Hits",
+      "input": "b+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to PRF with F"
+        }
+      ]
+    },
+    {
+      "id": "move-56",
+      "name": "Vanity Love",
+      "type": "Strings",
+      "input": "b+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Side switch after attack throw connects\n* Hit Confirmable on counter hit\n* Combo from 1st CH"
+        }
+      ]
+    },
+    {
+      "id": "move-57",
+      "name": "Strobing Memories",
+      "type": "Single Hits",
+      "input": "b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Deals recoverable damage only; cannot cause a K.O."
+        }
+      ]
+    },
+    {
+      "id": "move-58",
+      "name": "b+3",
+      "type": "Single Hits",
+      "input": "b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        }
+      ]
+    },
+    {
+      "id": "move-59",
+      "name": "Caval",
+      "type": "Strings",
+      "input": "b+3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 7F delay\n* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-60",
+      "name": "Cordial Circuit",
+      "type": "Single Hits",
+      "input": "b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-61",
+      "name": "Failnaught",
+      "type": "Single Hits",
+      "input": "b+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* 7 chip damage on block\n* Power crush 7~"
+        }
+      ]
+    },
+    {
+      "id": "move-62",
+      "name": "Dun Stallion",
+      "type": "Single Hits",
+      "input": "b+1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~27"
+        }
+      ]
+    },
+    {
+      "id": "move-63",
+      "name": "Fancy Cut",
+      "type": "Single Hits",
+      "input": "ub+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Balcony Break\n* Can be charged\n* Transition to PRF -4 +9 with F"
+        }
+      ]
+    },
+    {
+      "id": "move-64",
+      "name": "Fancy Cut (charged)",
+      "type": "Single Hits",
+      "input": "ub+2*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~29"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Balcony Break\n* Tornado on CH\n* Transition to PRF +4 +33a with F"
+        }
+      ]
+    },
+    {
+      "id": "move-65",
+      "name": "Caliburnus",
+      "type": "Single Hits",
+      "input": "u+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i31~32"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Deals 11 chip damage on block\n* Victor teleports overhead on frame 10 and descends downward for the rest of the startup; evades some highs and mids but vulnerable on descent (lows, throws, etc. hit)\n* is10~?\n* Low crush ?~"
+        }
+      ]
+    },
+    {
+      "id": "move-66",
+      "name": "uf+1",
+      "type": "Single Hits",
+      "input": "uf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        }
+      ]
+    },
+    {
+      "id": "move-67",
+      "name": "Gringolet",
+      "type": "Strings",
+      "input": "uf+1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Combo from 1st hit with 8F delay\n* Opponent recovers crouching on hit\n* Transition to PRF (-10/+19gc) with F\n* Cancel to IAI (-9/+4) with D or 3+4"
+        }
+      ]
+    },
+    {
+      "id": "move-68",
+      "name": "Marquise Cut",
+      "type": "Single Hits",
+      "input": "uf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing"
+        }
+      ]
+    },
+    {
+      "id": "move-69",
+      "name": "Peaceful Shoes",
+      "type": "Single Hits",
+      "input": "uf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 7-15"
+        }
+      ]
+    },
+    {
+      "id": "move-70",
+      "name": "Chatoyant Courage",
+      "type": "Single Hits",
+      "input": "uf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~17, i28~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Followup available only on 1st hit\n* Low crush 9"
+        }
+      ]
+    },
+    {
+      "id": "move-71",
+      "name": "Ki Charge",
+      "type": "Single Hits",
+      "input": "1+2+3+4",
+      "properties": []
+    },
+    {
+      "id": "move-72",
+      "name": "Montjoie Takemikazuchi",
+      "type": "Strings",
+      "input": "b,B+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i65~66"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-73",
+      "name": "Carnwennan",
+      "type": "Strings",
+      "input": "f,F+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Deals 7 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-74",
+      "name": "Amour Shaft",
+      "type": "Single Hits",
+      "input": "qcf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Wall Crush +12g on hit\n\n\n* Transition to IAI\n* Deals 6 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-75",
+      "name": "Le Blanc",
+      "type": "Strings",
+      "input": "ub,b",
+      "properties": []
+    },
+    {
+      "id": "move-76",
+      "name": "Asterism of Virtue",
+      "type": "Strings",
+      "input": "f,f,F+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Deals 6 chip damage on block\n* Transition to IAI with d or 3+4 at +5 / +37d (-21d) / +64a (+48a)"
+        }
+      ]
+    },
+    {
+      "id": "move-77",
+      "name": "Tear Drop Cut",
+      "type": "Strings",
+      "input": "f,f,F+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18, i14~15"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to r18 IAI at +4 on hit\n* High crush 15~"
+        }
+      ]
+    },
+    {
+      "id": "move-78",
+      "name": "Oval Cut",
+      "type": "While Standing",
+      "input": "ws1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        }
+      ]
+    },
+    {
+      "id": "move-79",
+      "name": "Baguette Cut",
+      "type": "While Standing",
+      "input": "ws2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-80",
+      "name": "ws3",
+      "type": "While Standing",
+      "input": "ws3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-81",
+      "name": "Iridescence of Faith",
+      "type": "While Standing",
+      "input": "ws3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i30~32"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 1st hit\n* Deals 6 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-82",
+      "name": "Praise Smash",
+      "type": "While Standing",
+      "input": "ws4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12"
+        }
+      ]
+    },
+    {
+      "id": "move-83",
+      "name": "Pearly Gates",
+      "type": "While Standing",
+      "input": "ws1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14,i9~10"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to PRF (-8/+8) with F"
+        }
+      ]
+    },
+    {
+      "id": "move-84",
+      "name": "Dandy Blow",
+      "type": "Stances",
+      "input": "SS.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-85",
+      "name": "Shangri-La",
+      "type": "While Standing",
+      "input": "FC.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16,i10~11"
+        },
+        {
+          "type": "properties",
+          "value": "*Not parryable (weapon low)\n*Transition to PRF (-17 / +6) with F"
+        }
+      ]
+    },
+    {
+      "id": "move-86",
+      "name": "Musk-Scented Natasha",
+      "type": "Stances",
+      "input": "CH.db+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        }
+      ]
+    },
+    {
+      "id": "move-87",
+      "name": "Guilty Mariko",
+      "type": "Stances",
+      "input": "CH.d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        }
+      ]
+    },
+    {
+      "id": "move-88",
+      "name": "IAI.1",
+      "type": "Stances",
+      "input": "IAI.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        }
+      ]
+    },
+    {
+      "id": "move-89",
+      "name": "Spumador",
+      "type": "Stances",
+      "input": "IAI.1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Combo from 1st hit with 9F delay\n* Move can be delayed by 10F\n* Input can be delayed by 11F\n* Opponent recovers crouching on hit\n* Transition to PRF with F (-10/+19gc)\n* Cancel to IAI with D or 3+4 (-9/+4)"
+        }
+      ]
+    },
+    {
+      "id": "move-90",
+      "name": "IAI.1,2",
+      "type": "Stances",
+      "input": "IAI.1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i22~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Hit Confirmable 11F\n* Deals 6 chip damage on block\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-91",
+      "name": "Clarent",
+      "type": "Stances",
+      "input": "IAI.1,2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Combo from 1st hit\n* Deals 15 (6+9) chip damage on block\n* is?\n* Low crush ?"
+        }
+      ]
+    },
+    {
+      "id": "move-92",
+      "name": "Chastiefol",
+      "type": "Stances",
+      "input": "IAI.1,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Combo from 1st hit\n* Deals 9 chip damage on block\n* Hit confirmable 11F\n* Opponent is FUFA on CH\n* Low crush"
+        }
+      ]
+    },
+    {
+      "id": "move-93",
+      "name": "Almace",
+      "type": "Stances",
+      "input": "IAI.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Tornado\n* Deals 9 chip damage on block\n* FUFA knockdown on CH"
+        }
+      ]
+    },
+    {
+      "id": "move-94",
+      "name": "Sequence",
+      "type": "Stances",
+      "input": "IAI.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Knee\n* Power crush 8~16"
+        }
+      ]
+    },
+    {
+      "id": "move-95",
+      "name": "IAI.4",
+      "type": "Stances",
+      "input": "IAI.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        }
+      ]
+    },
+    {
+      "id": "move-96",
+      "name": "Murgleys",
+      "type": "Stances",
+      "input": "IAI.4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19, i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "Strong Aerial Tailspin\n* Balcony Break\n* Combo from 1st CH\n* Deals 8 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-97",
+      "name": "Hauteclaire",
+      "type": "Stances",
+      "input": "IAI.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Deals 12 chip damage on block\n* Opponent is FUFA on CH\n* Low crush 10"
+        }
+      ]
+    },
+    {
+      "id": "move-98",
+      "name": "Gwen",
+      "type": "Stances",
+      "input": "IAI.P.f",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Tornado"
+        }
+      ]
+    },
+    {
+      "id": "move-99",
+      "name": "Move Backward",
+      "type": "Stances",
+      "input": "IAI.b",
+      "properties": []
+    },
+    {
+      "id": "move-100",
+      "name": "Take a Bow",
+      "type": "Stances",
+      "input": "IAI.d",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* High crush 1~30"
+        }
+      ]
+    },
+    {
+      "id": "move-101",
+      "name": "Passelande",
+      "type": "Heat Moves",
+      "input": "IAI.d+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +42a (+27a)\n\n* Balcony Break\n* Weapon\n* 7 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-102",
+      "name": "Rhongomyniad",
+      "type": "Stances",
+      "input": "IAI.d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Weapon\n* Projectile\n* Transition to IAI\n* Deals 6 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-103",
+      "name": "Espee Aventureuse",
+      "type": "Stances",
+      "input": "IAI.d+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21,i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-104",
+      "name": "Move Forward",
+      "type": "Stances",
+      "input": "IAI.f",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Parries low attacks\n* Parry state 3?~11?\n* High crush 4~17"
+        }
+      ]
+    },
+    {
+      "id": "move-105",
+      "name": "Prydwen",
+      "type": "Stances",
+      "input": "IAI.u",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* is1-4"
+        }
+      ]
+    },
+    {
+      "id": "move-106",
+      "name": "Maceration",
+      "type": "Stances",
+      "input": "PRF.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 6~50"
+        }
+      ]
+    },
+    {
+      "id": "move-107",
+      "name": "PRF.2",
+      "type": "Stances",
+      "input": "PRF.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13"
+        }
+      ]
+    },
+    {
+      "id": "move-108",
+      "name": "PRF.2,2",
+      "type": "Stances",
+      "input": "PRF.2,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Transition to IAI (Cannot cancel)"
+        }
+      ]
+    },
+    {
+      "id": "move-109",
+      "name": "Top Note",
+      "type": "Stances",
+      "input": "PRF.2,2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, ,i12~13"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Balcony Break\n* Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-110",
+      "name": "Last Note",
+      "type": "Stances",
+      "input": "PRF.2,2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~13, ,i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-111",
+      "name": "Flying Gentleman",
+      "type": "Heat Moves",
+      "input": "PRF.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +36a (+26a)\n\n* Balcony Break\n* Knee\n* Low crush 11~23\n* Floating state 24~25"
+        }
+      ]
+    },
+    {
+      "id": "move-112",
+      "name": "Cordial Circuit",
+      "type": "Stances",
+      "input": "PRF.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-113",
+      "name": "Hengroen",
+      "type": "Stances",
+      "input": "PRF.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Deals 7 chip damage on block\n* Transition to IAI (+6/+14a) on hit or block with D"
+        }
+      ]
+    },
+    {
+      "id": "move-114",
+      "name": "Iai Stance",
+      "type": "Stances",
+      "input": "PRF.3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* 10?f of intangibility on transition"
+        }
+      ]
+    },
+    {
+      "id": "move-115",
+      "name": "Strobing Memories",
+      "type": "Stances",
+      "input": "PRF.b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Deals recoverable damage only; cannot cause a K.O."
+        }
+      ]
+    },
+    {
+      "id": "move-116",
+      "name": "Sillage",
+      "type": "Stances",
+      "input": "PRF.df",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Recovers crouched\n* High crush 5~20"
+        }
+      ]
+    },
+    {
+      "id": "move-117",
+      "name": "One Night Miracle",
+      "type": "Throws",
+      "input": "1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: 1 or 2\n* Opponent recovery on hit: FDFT"
+        }
+      ]
+    },
+    {
+      "id": "move-118",
+      "name": "Je Te Veux",
+      "type": "Throws",
+      "input": "2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: 1 or 2\n* Opponent recovery on hit: opp. side FDFT off-axis to the right"
+        }
+      ]
+    },
+    {
+      "id": "move-119",
+      "name": "Farewell in Taj Mahal",
+      "type": "Single Hits",
+      "input": "Back throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: none\n* Opponent recovery on hit: FUFA"
+        }
+      ]
+    },
+    {
+      "id": "move-120",
+      "name": "One Night Miracle",
+      "type": "Single Hits",
+      "input": "Left throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: 1\n* Opponent recovery on hit: FDFT"
+        }
+      ]
+    },
+    {
+      "id": "move-121",
+      "name": "Je Te Veux",
+      "type": "Single Hits",
+      "input": "Right throw",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break: 2\n* Opponent recovery on hit: opp. side FDFT off-axis to the right"
+        }
+      ]
+    },
+    {
+      "id": "move-122",
+      "name": "Romancing Chaser",
+      "type": "Single Hits",
+      "input": "uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Throw break: 1+2\n* Opponent recovery on hit: FUFA"
+        }
+      ]
     }
   ]
 }

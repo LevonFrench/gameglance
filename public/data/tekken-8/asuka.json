@@ -1,205 +1,2210 @@
 {
+  "id": "asuka",
   "name": "Asuka",
-  "character": "Asuka",
-  "game": "Tekken 8",
   "movesList": [
     {
-      "id": "sp_0",
-      "name": "Safe mid Heat Engager",
-      "type": "special",
-      "input": "62_SaemiHeatEngager"
+      "id": "move-0",
+      "name": "Heat Burst",
+      "type": "Heat Moves",
+      "input": "2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Burst\n* Cancel to r45 with b,b on frame 42\n* 2 chip damage on block\n* 12 chip damage on hit\n* Only deals recoverable damage\n* Cannot cause a K.O.\n* Power crush 7~16"
+        }
+      ]
     },
     {
-      "id": "sp_1",
-      "name": "Useful for punish situations",
-      "type": "special",
-      "input": "8684688_seorpnishsitations"
+      "id": "move-1",
+      "name": "Triple Ascension Kicks",
+      "type": "Heat Moves",
+      "input": "H.2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Smash\n* Floor Break\n* 7 chip damage on block\n* Transition to attack throw on hit\n* +15a if only the last hit connects\n* +11d (-24) if only the last two hits connect\n* 2nd hit damage 11 > 18 if 1st hit whiffs\n* 3rd hit damage 27 > 30 if 1st hit whiffs\n* Hit level becomes m,m,m on block/whiff\n* Low crush 5~"
+        }
+      ]
     },
     {
-      "id": "sp_2",
-      "name": "Long range Heat Engager",
-      "type": "special",
-      "input": "_LongrangeHeatEngager"
+      "id": "move-2",
+      "name": "Naniwa Peacemaker Knuckle",
+      "type": "Stances",
+      "input": "R.df+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Rage Art\n* Removes Recoverable Health\n* Reversal Break\n* Damage increases with lower health, maximum 82\n* Freezes match timer on activation and on hit\n* Restores recoverable health on hit\n* Transition to attack throw on hit\n* Consumes Rage\n* Power crush 8~"
+        }
+      ]
     },
     {
-      "id": "sp_4",
-      "name": "Quick jab attack to start offense",
-      "type": "special",
-      "input": "8466_Qickjaattacktostartoense"
+      "id": "move-3",
+      "name": "Jab",
+      "type": "Single Hits",
+      "input": "1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        }
+      ]
     },
     {
-      "id": "sp_5",
-      "name": "Uf+1+2",
-      "type": "special",
-      "input": "9LPRP"
+      "id": "move-4",
+      "name": "Whiplash",
+      "type": "Strings",
+      "input": "1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i24"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH with 3f delay\n* Links to f+1 extensions\n* Interrupt with i4 from 1st block"
+        }
+      ]
     },
     {
-      "id": "sp_6",
-      "name": "Mid poke with good range",
-      "type": "special",
-      "input": "22_Mipokewithgoorange"
+      "id": "move-5",
+      "name": "1,1,3",
+      "type": "Strings",
+      "input": "1,1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd CH with 9f delay\n* Input can be delayed 10f"
+        }
+      ]
     },
     {
-      "id": "sp_7",
-      "name": "FC db+1+2",
-      "type": "special",
-      "input": "FCdown-backLPRP"
+      "id": "move-6",
+      "name": "Jab Uppercut",
+      "type": "Strings",
+      "input": "1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit\n* Combo from 1st CH with 3f delay"
+        }
+      ]
     },
     {
-      "id": "sp_8",
-      "name": "Key low poke to harass the opponent",
-      "type": "special",
-      "input": "_KeylowpoketoharaSStheopponent"
+      "id": "move-7",
+      "name": "Jab Uppercut > Spinning Heel Drop",
+      "type": "Strings",
+      "input": "1,2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i31~33"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Strong Aerial Tailspin\n* Chip damage on block\n* Cancel to r18 with B\n* Interrupt with i15 from 2nd block\n* Last input can be held to power up"
+        }
+      ]
     },
     {
-      "id": "sp_9",
-      "name": "Good keepout and whiff punisher",
-      "type": "special",
-      "input": "282668_Gookeepotanwhipnisher"
+      "id": "move-8",
+      "name": "Jab Uppercut > Spinning Heel Drop (Hold)",
+      "type": "Strings",
+      "input": "1,2,3*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i52~53"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Strong Aerial Tailspin\n* Chip damage on block\n* Cancel to r15 with B\n* Interrupt with i36 from 2nd block"
+        }
+      ]
     },
     {
-      "id": "sp_12",
-      "name": "B+1+2",
-      "type": "special",
-      "input": "4LPRP"
+      "id": "move-9",
+      "name": "Jab Uppercut > Front Kick",
+      "type": "Strings",
+      "input": "1,2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, ,i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH\n* Combo from 2nd CH with 1f delay"
+        }
+      ]
     },
     {
-      "id": "sp_14",
-      "name": "Ub+2",
-      "type": "special",
-      "input": "7RP"
+      "id": "move-10",
+      "name": "Jab Low Kick",
+      "type": "Strings",
+      "input": "1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10, i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 2f delay\n* Combo from 1st CH with 3f delay"
+        }
+      ]
     },
     {
-      "id": "sp_17",
-      "name": "GUARANTEED FOLLOW-UPS",
-      "type": "special",
-      "input": "88GARAnTEE3OLLOW-PS"
+      "id": "move-11",
+      "name": "2",
+      "type": "Single Hits",
+      "input": "2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        }
+      ]
     },
     {
-      "id": "sp_18",
-      "name": "1,1",
-      "type": "special",
-      "input": "LP[Cancel]LP"
+      "id": "move-12",
+      "name": "2,1",
+      "type": "Strings",
+      "input": "2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Jail from 1st attack with 1f delay"
+        }
+      ]
     },
     {
-      "id": "sp_19",
-      "name": "F+3,2",
-      "type": "special",
-      "input": "6LK[Cancel]RP"
+      "id": "move-13",
+      "name": "Basho Cutter",
+      "type": "Strings",
+      "input": "2,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, ,i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Balcony Break\n* Combo from 2nd CH with 1f delay\n* Interrupt with i8 from 2nd block"
+        }
+      ]
     },
     {
-      "id": "sp_20",
-      "name": "...",
-      "type": "special",
-      "input": "..."
+      "id": "move-14",
+      "name": "Basho Oroshi",
+      "type": "Strings",
+      "input": "2,1,d+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, ,i28~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Combo from 2nd CH with 1f delay\n* Cancel to r20 with B\n* Cancel to FC with D\n* Interrupt with i10 from 2nd block"
+        }
+      ]
     },
     {
-      "id": "sp_21",
-      "name": "Ws+1+2",
-      "type": "special",
-      "input": "WSLPRP"
+      "id": "move-15",
+      "name": "Mizu Basho",
+      "type": "Strings",
+      "input": "2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12, i22~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit with 1f delay\n* Low crush 18~41\n* Floating state 42~44"
+        }
+      ]
     },
     {
-      "id": "sp_22",
-      "name": "2,2",
-      "type": "special",
-      "input": "RP[Cancel]RP"
+      "id": "move-16",
+      "name": "3",
+      "type": "Single Hits",
+      "input": "3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        }
+      ]
     },
     {
-      "id": "sp_23",
-      "name": "CH 4",
-      "type": "special",
-      "input": "CHRK"
+      "id": "move-17",
+      "name": "Hyakujitsuko",
+      "type": "Strings",
+      "input": "3,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (CH)\n* Combo from 1st hit with 14f delay\n* Input can be delayed 14f\n* Move can be delayed 10f"
+        }
+      ]
     },
     {
-      "id": "sp_24",
-      "name": "3,2",
-      "type": "special",
-      "input": "LK[Cancel]RP"
+      "id": "move-18",
+      "name": "High Kick",
+      "type": "Single Hits",
+      "input": "4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break (CH)"
+        }
+      ]
     },
     {
-      "id": "sp_25",
-      "name": "CH (df+3),3",
-      "type": "special",
-      "input": "CH(down-forwardLK)[Cancel]LK"
+      "id": "move-19",
+      "name": "Inner Strength",
+      "type": "Single Hits",
+      "input": "1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        }
+      ]
     },
     {
-      "id": "sp_26",
-      "name": "3,f+2",
-      "type": "special",
-      "input": "6LK[Cancel]RP"
+      "id": "move-20",
+      "name": "1+4",
+      "type": "Single Hits",
+      "input": "1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14 i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 1st attack"
+        }
+      ]
     },
     {
-      "id": "sp_27",
-      "name": "CH (df+1),4",
-      "type": "special",
-      "input": "CH(down-forwardLP)[Cancel]RK"
+      "id": "move-21",
+      "name": "1+4,2",
+      "type": "Strings",
+      "input": "1+4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14 i17, i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 2nd CH"
+        }
+      ]
     },
     {
-      "id": "sp_29",
-      "name": "CH f,f+1+2",
-      "type": "special",
-      "input": "66CH[Cancel]LPRP"
+      "id": "move-22",
+      "name": "White Heron Dance",
+      "type": "Strings",
+      "input": "1+4,2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14 i17, ,i24"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (CH)\n* Combo from 3rd CH"
+        }
+      ]
     },
     {
-      "id": "sp_30",
-      "name": "Uf+4,4",
-      "type": "special",
-      "input": "9RK[Cancel]RK"
+      "id": "move-23",
+      "name": "White Heron Lower Dance",
+      "type": "Strings",
+      "input": "1+4,2,d+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14 i17, ,i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 3rd CH\n* Cancel to FC -7 -18 r37 with DB\n* High crush 10~38"
+        }
+      ]
     },
     {
-      "id": "sp_31",
-      "name": "CH (1),1",
-      "type": "special",
-      "input": "CH(LP)[Cancel]LP"
+      "id": "move-24",
+      "name": "White Heron Spinning Heel Drop",
+      "type": "Strings",
+      "input": "1+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14 i17, i31~33"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Strong Aerial Tailspin\n* Chip on block\n* Cancel to r18 with B\n* Interrupt with i18 from 2nd block\n* Last input can be held to power up\n* Link to attack from Spinning Heel Drop (f+3)"
+        }
+      ]
     },
     {
-      "id": "sp_32",
-      "name": "Df+2",
-      "type": "special",
-      "input": "3RP"
+      "id": "move-25",
+      "name": "Ryuuntsui",
+      "type": "Single Hits",
+      "input": "3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~24 i6~8"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Cancel to FC with D\n* r44 on grounded hit\n* Low crush 5~33\n* Floating state 34~36"
+        }
+      ]
     },
     {
-      "id": "sp_33",
-      "name": "DES f+1+2,1+2",
-      "type": "special",
-      "input": "26ESLPRP[Cancel]LPRP"
+      "id": "move-26",
+      "name": "Whiplash (WHP)",
+      "type": "Single Hits",
+      "input": "f+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        }
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "id": "move-27",
+      "name": "Whiplash > Toe Kick",
+      "type": "Strings",
+      "input": "f+1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20, i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH with 9f delay\n* Input can be delayed 10f"
+        }
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "id": "move-28",
+      "name": "Whiplash Sacred Blade",
+      "type": "Strings",
+      "input": "f+1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20, i25~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Combo from 1st CH\n* Input can be delayed 15f\n* Interrupt with i11 from 1st block\n* Cancel to FC -24 -13 r43? with DB\n* High crush 6~"
+        }
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "id": "move-29",
+      "name": "Demon Slayer",
+      "type": "Single Hits",
+      "input": "f+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Cancel to r26 FC with D\n* Gain NWG on hit with 1\n* Hit advantage becomes +26a (+16) on NWG gain"
+        }
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "id": "move-30",
+      "name": "Demon Slayer Vigil",
+      "type": "Stances",
+      "input": "f+2,NWG.1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18, i31~32"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Jail from 1st attack\n* 4 chip damage on block\n* Consumes NWG\n* Available only on hit or block"
+        }
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "move-31",
+      "name": "Spinning Heel Drop (One Spin)",
+      "type": "Single Hits",
+      "input": "f+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i31~i33"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Chip damage on block\n* Cancel to r33 with B"
+        }
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "id": "move-32",
+      "name": "Spinning Heel Drop (Two Spins)",
+      "type": "Single Hits",
+      "input": "f+3*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i52~i53"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Chip damage on block\n* Cancel to r55? with B"
+        }
+      ]
+    },
+    {
+      "id": "move-33",
+      "name": "Spinning Heel Drop (Three Spins)",
+      "type": "Single Hits",
+      "input": "f+3**",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i70~71"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Cancel to r58? with B"
+        }
+      ]
+    },
+    {
+      "id": "move-34",
+      "name": "Back Spin Kick",
+      "type": "Single Hits",
+      "input": "f+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break (CH)"
+        }
+      ]
+    },
+    {
+      "id": "move-35",
+      "name": "Exorcisor",
+      "type": "Single Hits",
+      "input": "f+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* +0 frame advantage and 10 chip damage on block after absorbing an attack in power crush state\n* Power crush 7~14"
+        }
+      ]
+    },
+    {
+      "id": "move-36",
+      "name": "Wheel Kick",
+      "type": "Single Hits",
+      "input": "f+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Sabaki, parries high or mid punches\n* +51a on a successful parry\n* Parry state 4~15"
+        }
+      ]
+    },
+    {
+      "id": "move-37",
+      "name": "Spinning Heel Chop > Naniwa Gusto",
+      "type": "Single Hits",
+      "input": "f+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i29~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Chip damage on block\n* Gain NWG on hit\n* -2a (-11) on hit after NWG gain"
+        }
+      ]
+    },
+    {
+      "id": "move-38",
+      "name": "df+1",
+      "type": "Single Hits",
+      "input": "df+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        }
+      ]
+    },
+    {
+      "id": "move-39",
+      "name": "Falling Tower",
+      "type": "Strings",
+      "input": "df+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Combo from 1st CH with 2f delay\n* Combo from 1st hit when off-axis to the left or right\n* Input can be delayed 7f\n* +18a on off-axis hit, +16a on BT hit\n* Transition to attack throw on standing front hit\n* Won't transition to throw if opponent is too far (Jack-8 range 3.3~), gives +13 on hit instead"
+        }
+      ]
+    },
+    {
+      "id": "move-40",
+      "name": "Kyara Boku",
+      "type": "Strings",
+      "input": "df+1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH with 1f delay\n* Input can be delayed 7f"
+        }
+      ]
+    },
+    {
+      "id": "move-41",
+      "name": "Rising Palm",
+      "type": "Single Hits",
+      "input": "df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "+5s on crouch hit"
+        }
+      ]
+    },
+    {
+      "id": "move-42",
+      "name": "Kagamino",
+      "type": "Single Hits",
+      "input": "df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-43",
+      "name": "Front Kick",
+      "type": "Single Hits",
+      "input": "df+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        }
+      ]
+    },
+    {
+      "id": "move-44",
+      "name": "Sacred Blade",
+      "type": "Single Hits",
+      "input": "df+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i28~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Alternate input: 3~4\n* Cancel to r47? FC with DB\n* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-45",
+      "name": "Heaven's Hammer",
+      "type": "Heat Moves",
+      "input": "d+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +67a (+50)\n\n* Spike\n* Balcony Break\n* Gain NWG on Heat activation"
+        }
+      ]
+    },
+    {
+      "id": "move-46",
+      "name": "Sashiro",
+      "type": "Single Hits",
+      "input": "d+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Can be done from Crouch Level 1\n* High crush 10~39"
+        }
+      ]
+    },
+    {
+      "id": "move-47",
+      "name": "Double Lift Kicks",
+      "type": "Single Hits",
+      "input": "d+3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14 i9~12"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH\n* -25 if 1st hit is blocked\n* Low crush 5~42\n* Floating state 43~45"
+        }
+      ]
+    },
+    {
+      "id": "move-48",
+      "name": "Swallow Slice",
+      "type": "Single Hits",
+      "input": "db+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 6~13"
+        }
+      ]
+    },
+    {
+      "id": "move-49",
+      "name": "Swallow Vortex",
+      "type": "Heat Moves",
+      "input": "db+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +34a (+27)\n\n* Balcony Break\n* Combo from 1st hit with 8f delay\n* Gain NWG on Heat activation"
+        }
+      ]
+    },
+    {
+      "id": "move-50",
+      "name": "Swallow Torrent",
+      "type": "Strings",
+      "input": "db+1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14, i28~29"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Combo from 1st hit\n* Low crush 29~46\n* Floating state 47~49"
+        }
+      ]
+    },
+    {
+      "id": "move-51",
+      "name": "Funeral Palm",
+      "type": "Single Hits",
+      "input": "db+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "Tornado\n* High crush 3~17"
+        }
+      ]
+    },
+    {
+      "id": "move-52",
+      "name": "Enchanted Circle",
+      "type": "Single Hits",
+      "input": "db+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20"
+        }
+      ]
+    },
+    {
+      "id": "move-53",
+      "name": "db+4",
+      "type": "Single Hits",
+      "input": "db+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~24"
+        },
+        {
+          "type": "properties",
+          "value": "Transition to r22 FC with D\n* High crush 6~41"
+        }
+      ]
+    },
+    {
+      "id": "move-54",
+      "name": "Kariashi Shiranui",
+      "type": "Strings",
+      "input": "db+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~24, i17"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st CH with 1f delay"
+        }
+      ]
+    },
+    {
+      "id": "move-55",
+      "name": "db+4,4",
+      "type": "Strings",
+      "input": "db+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~24, i31~33"
+        },
+        {
+          "type": "properties",
+          "value": "Transition to r22 FC with D\n* High crush 1~49"
+        }
+      ]
+    },
+    {
+      "id": "move-56",
+      "name": "Leg Cutter",
+      "type": "Strings",
+      "input": "db+4,4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~24, ,i31~33"
+        },
+        {
+          "type": "properties",
+          "value": "Transition to r22 FC with D\n* High crush 1~49"
+        }
+      ]
+    },
+    {
+      "id": "move-57",
+      "name": "Kariashi Hakuro",
+      "type": "Strings",
+      "input": "db+4,1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i22~24, i22 i17"
+        },
+        {
+          "type": "properties",
+          "value": "* Jail from 2nd attack\n* Links to 1+4 string extensions\n* -19 if entire string is ducked"
+        }
+      ]
+    },
+    {
+      "id": "move-58",
+      "name": "Raging Storm",
+      "type": "Single Hits",
+      "input": "db+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i42 i3"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Sabaki, parries lows except weapons\n** +62a on successful parry\n* Gain NWG on hit with 1\n* Parry state 8~20"
+        }
+      ]
+    },
+    {
+      "id": "move-59",
+      "name": "Violet",
+      "type": "Single Hits",
+      "input": "b+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i29~30"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to attack throw on CH, +22 damage\n* Cancel to r14 FC with D\n* High crush 6~"
+        }
+      ]
+    },
+    {
+      "id": "move-60",
+      "name": "Attack Reversal",
+      "type": "Single Hits",
+      "input": "b+1+3",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Opponent recovers FUFT\n* Reverses high or mid attacks\n* Parry state 5~12"
+        }
+      ]
+    },
+    {
+      "id": "move-61",
+      "name": "Attack Reversal (Hold)",
+      "type": "Single Hits",
+      "input": "b+1+3*",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Opponent recovers FUFT\n* Reverses high or mid attacks\n* Parry state 5~54"
+        }
+      ]
+    },
+    {
+      "id": "move-62",
+      "name": "Swallow Mallet",
+      "type": "Single Hits",
+      "input": "b+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15"
+        }
+      ]
+    },
+    {
+      "id": "move-63",
+      "name": "Swallow Mallet Lunging Mist Thrust",
+      "type": "Strings",
+      "input": "b+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i28"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st CH\n* Links to f+1 extensions"
+        }
+      ]
+    },
+    {
+      "id": "move-64",
+      "name": "Swallow Mallet Leg Cutter",
+      "type": "Strings",
+      "input": "b+2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i33~35"
+        },
+        {
+          "type": "properties",
+          "value": "* Links to db+4 extensions\n* Transition to r22 FC with D\n* High crush 15~"
+        }
+      ]
+    },
+    {
+      "id": "move-65",
+      "name": "b+2,1+2",
+      "type": "Strings",
+      "input": "b+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Jail from 1st attack with 5f delay\n* Combo from 1st CH with 9f delay\n* Input can be delayed 12F\n* Cancel to r15 FC with D"
+        }
+      ]
+    },
+    {
+      "id": "move-66",
+      "name": "Swallow Mallet Combo",
+      "type": "Strings",
+      "input": "b+2,1+2,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15, ,i23~24"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH\n* Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-67",
+      "name": "Dragon Wheel Kick",
+      "type": "Single Hits",
+      "input": "b+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 10~37\n* Floating state 38~40"
+        }
+      ]
+    },
+    {
+      "id": "move-68",
+      "name": "Dragon Wheel Kick Demon Slayer",
+      "type": "Strings",
+      "input": "b+3,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Cancel to r11 with D\n* Gain NWG on hit with 1\n* Interrupt with i23 on 1st block"
+        }
+      ]
+    },
+    {
+      "id": "move-69",
+      "name": "Dragon Wheel Leg Cutter",
+      "type": "Strings",
+      "input": "b+3,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17, i20~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Links to db+4 extensions\n* Transition to r22 FC with D\n* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-70",
+      "name": "b+4",
+      "type": "Single Hits",
+      "input": "b+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "Knee"
+        }
+      ]
+    },
+    {
+      "id": "move-71",
+      "name": "b+4,2",
+      "type": "Strings",
+      "input": "b+4,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Knee\n* Input can be delayed 14f"
+        }
+      ]
+    },
+    {
+      "id": "move-72",
+      "name": "Tsuyababuki",
+      "type": "Strings",
+      "input": "b+4,2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, ,i20~23"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 2nd hit with 6f delay\n* Move can be delayed 3f\n* Gain NWG on hit with 1"
+        }
+      ]
+    },
+    {
+      "id": "move-73",
+      "name": "b+1+4",
+      "type": "Single Hits",
+      "input": "b+1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12 i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 1st hit"
+        }
+      ]
+    },
+    {
+      "id": "move-74",
+      "name": "Reverse Narcissus",
+      "type": "Strings",
+      "input": "b+1+4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12 i17~18, i32~33"
+        },
+        {
+          "type": "properties",
+          "value": "Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-75",
+      "name": "Narcissus",
+      "type": "Strings",
+      "input": "b+1+4,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12 i17~18, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)\n* Combo from 2nd CH"
+        }
+      ]
+    },
+    {
+      "id": "move-76",
+      "name": "Azalea",
+      "type": "Single Hits",
+      "input": "b+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)\n* Kick Sabaki, +59a on successful parry\n* Parry state 4~15"
+        }
+      ]
+    },
+    {
+      "id": "move-77",
+      "name": "Momiji Oroshi",
+      "type": "Single Hits",
+      "input": "ub+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i25"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Cancel to r35 with B\n* Transition to FC -3 +6d with D"
+        }
+      ]
+    },
+    {
+      "id": "move-78",
+      "name": "Sumiyoshi Plunge",
+      "type": "Single Hits",
+      "input": "u+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i31~32"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Chip damage when guarded\n* Power up when using NWG or in Heat\n* Low crush 9~31"
+        }
+      ]
+    },
+    {
+      "id": "move-79",
+      "name": "uf+1",
+      "type": "Single Hits",
+      "input": "uf+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13"
+        },
+        {
+          "type": "properties",
+          "value": "* Good sidestep left tracking"
+        }
+      ]
+    },
+    {
+      "id": "move-80",
+      "name": "Ikutama Bash",
+      "type": "Strings",
+      "input": "uf+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13, i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Strong Aerial Tailspin\n* Combo from 1st hit\n* Cancel to -3 -15 FC with D"
+        }
+      ]
+    },
+    {
+      "id": "move-81",
+      "name": "Rangetsu",
+      "type": "Single Hits",
+      "input": "uf+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)\n* Floor Break\n* +12a on off-axis hit, +10a on BT hit\n* Transition to attack throw on standing front hit\n* Won't transition to throw if opponent is too far (Jack-8 range 2.7~), gives +7 on hit instead"
+        }
+      ]
+    },
+    {
+      "id": "move-82",
+      "name": "Iwato",
+      "type": "Single Hits",
+      "input": "uf+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 11~27\n* Floating state 28~30"
+        }
+      ]
+    },
+    {
+      "id": "move-83",
+      "name": "Night Sky",
+      "type": "Single Hits",
+      "input": "uf+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Low crush 9~30\n* Floating state 31~33"
+        }
+      ]
+    },
+    {
+      "id": "move-84",
+      "name": "Ki Charge",
+      "type": "Single Hits",
+      "input": "1+2+3+4",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Transition to Ultimate Tackle throw with 1+2\n* Cannot block for 5 seconds\n* CH state for 5 seconds"
+        }
+      ]
+    },
+    {
+      "id": "move-85",
+      "name": "Naniwa Ultimate Tackle (Tackle)",
+      "type": "Strings",
+      "input": "1+2+3+4,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1+2\n* Works on standing or crouching opponent\n* Tackle is reversed on the player on break\n* Opponent recovers FUFT on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-86",
+      "name": "Burning Lantern",
+      "type": "Strings",
+      "input": "f,F+1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i23"
+        },
+        {
+          "type": "properties",
+          "value": "* Spike\n* Recovers in r55 on hit or on block\n* Chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-87",
+      "name": "f,F+2",
+      "type": "Strings",
+      "input": "f,F+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16"
+        },
+        {
+          "type": "properties",
+          "value": "* Elbow\n* Transition to -9 +2 FC with D\n* Has good right sidestep tracking"
+        }
+      ]
+    },
+    {
+      "id": "move-88",
+      "name": "Hiboko no Kagami",
+      "type": "Heat Moves",
+      "input": "f,F+2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i21~22"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Balcony Break\n* Elbow\n* Combo from 1st hit with 6f delay\n* Combo from 1st CH with 10f delay\n* Input can be delayed 12f\n* Move can be delayed 10f\n* Gain Naniwa Gusto on Heat activation\n* Forces tech backroll on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-89",
+      "name": "Yata Kagami",
+      "type": "Strings",
+      "input": "f,F+2,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i27~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st CH with 4f delay\n* Input can be delayed 12f\n* Move can be delayed 10f"
+        }
+      ]
+    },
+    {
+      "id": "move-90",
+      "name": "Yata Kagami (charged)",
+      "type": "Strings",
+      "input": "f,F+2,3*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i38~39"
+        },
+        {
+          "type": "properties",
+          "value": "* 10 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-91",
+      "name": "Higata no Kagami",
+      "type": "Strings",
+      "input": "f,F+2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i15~16, i25~26"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit\n* Combo from 1st CH with 6f delay\n* Input can be delayed 12f\n* Move can be delayed 10f\n* Gain Naniwa Gusto on hit, advantage becomes +0a (-10)"
+        }
+      ]
+    },
+    {
+      "id": "move-92",
+      "name": "Matoi Hiragi",
+      "type": "Strings",
+      "input": "f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-93",
+      "name": "Leaping Spin Kick",
+      "type": "Strings",
+      "input": "f,F+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i20~21"
+        },
+        {
+          "type": "properties",
+          "value": "* Strong Aerial Tailspin\n* Balcony Break\n* Low crush 6~21\n* Floating state 22~24"
+        }
+      ]
+    },
+    {
+      "id": "move-94",
+      "name": "Tenjin Upward Strike",
+      "type": "Strings",
+      "input": "f,F+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Chip damage when on block\n* Grounded hit can be inconsistent sometimes"
+        }
+      ]
+    },
+    {
+      "id": "move-95",
+      "name": "Ame-no-Uzume",
+      "type": "Strings",
+      "input": "f,f,F+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i24~28"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Chip damage on block\n* Low crush 3~30\n* Floating state 31~33"
+        }
+      ]
+    },
+    {
+      "id": "move-96",
+      "name": "Aizen Swing",
+      "type": "Strings",
+      "input": "f,f,F+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Homing\n* Balcony Break\n* Chip damage on block\n* Instant Tornado on CH\n* Unparryable by traditional punch parries (running attack)"
+        }
+      ]
+    },
+    {
+      "id": "move-97",
+      "name": "ws1",
+      "type": "While Standing",
+      "input": "ws1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15"
+        }
+      ]
+    },
+    {
+      "id": "move-98",
+      "name": "Shikeitai",
+      "type": "While Standing",
+      "input": "ws1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14~15, i20"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Combo from 1st hit with 7f delay\n* Move can be delayed 6f"
+        }
+      ]
+    },
+    {
+      "id": "move-99",
+      "name": "1st Hit (3)",
+      "type": "While Standing",
+      "input": "ws2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "Elbow"
+        }
+      ]
+    },
+    {
+      "id": "move-100",
+      "name": "2nd Hit (3)",
+      "type": "While Standing",
+      "input": "ws2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i22"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 3f delay\n* Continues into 10 strings"
+        }
+      ]
+    },
+    {
+      "id": "move-101",
+      "name": "3rd Hit (2)",
+      "type": "While Standing",
+      "input": "ws2,1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,"
+        }
+      ]
+    },
+    {
+      "id": "move-102",
+      "name": "3rd Hit",
+      "type": "While Standing",
+      "input": "ws2,1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,"
+        }
+      ]
+    },
+    {
+      "id": "move-103",
+      "name": "4th Hit",
+      "type": "While Standing",
+      "input": "ws2,1,1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,"
+        }
+      ]
+    },
+    {
+      "id": "move-104",
+      "name": "4th Hit (2)",
+      "type": "While Standing",
+      "input": "ws2,1,1,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,"
+        }
+      ]
+    },
+    {
+      "id": "move-105",
+      "name": "5th Hit (2)",
+      "type": "While Standing",
+      "input": "ws2,1,1,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,"
+        }
+      ]
+    },
+    {
+      "id": "move-106",
+      "name": "5th Hit",
+      "type": "While Standing",
+      "input": "ws2,1,1,1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,"
+        }
+      ]
+    },
+    {
+      "id": "move-107",
+      "name": "6th Hit",
+      "type": "While Standing",
+      "input": "ws2,1,1,1,2,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,"
+        }
+      ]
+    },
+    {
+      "id": "move-108",
+      "name": "7th Hit",
+      "type": "While Standing",
+      "input": "ws2,1,1,1,2,1,4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,"
+        }
+      ]
+    },
+    {
+      "id": "move-109",
+      "name": "8th Hit",
+      "type": "While Standing",
+      "input": "ws2,1,1,1,2,1,4,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,"
+        }
+      ]
+    },
+    {
+      "id": "move-110",
+      "name": "10 Hit Combo 1",
+      "type": "10-Hit Combos",
+      "input": "ws2,1,1,1,2,1,4,3,3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,"
+        }
+      ]
+    },
+    {
+      "id": "move-111",
+      "name": "6th & 7th Hit (2)",
+      "type": "While Standing",
+      "input": "ws2,1,1,1,2,1+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,"
+        }
+      ]
+    },
+    {
+      "id": "move-112",
+      "name": "8th Hit (2)",
+      "type": "While Standing",
+      "input": "ws2,1,1,1,2,1+4,1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,"
+        }
+      ]
+    },
+    {
+      "id": "move-113",
+      "name": "10 Hit Combo 2",
+      "type": "10-Hit Combos",
+      "input": "ws2,1,1,1,2,1+4,1,3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,"
+        }
+      ]
+    },
+    {
+      "id": "move-114",
+      "name": "10 Hit Combo 3",
+      "type": "10-Hit Combos",
+      "input": "ws2,1,1,3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, ,i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-115",
+      "name": "Kohaku",
+      "type": "While Standing",
+      "input": "ws2,1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14, i24~25"
+        },
+        {
+          "type": "properties",
+          "value": "* Combo from 1st hit with 3f delay\n* Move can be delayed 2f\n* Links to Destabilizer (f+1+3_f+2+4) extensions on hit \n* +9 on BT hit"
+        }
+      ]
+    },
+    {
+      "id": "move-116",
+      "name": "Moon Scent",
+      "type": "While Standing",
+      "input": "ws3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i18~19"
+        },
+        {
+          "type": "properties",
+          "value": "Tornado\n* Floating state 18~40"
+        }
+      ]
+    },
+    {
+      "id": "move-117",
+      "name": "Toe Smash",
+      "type": "While Standing",
+      "input": "ws4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11~12"
+        },
+        {
+          "type": "properties",
+          "value": "Can hit grounded while up-close and off-axis"
+        }
+      ]
+    },
+    {
+      "id": "move-118",
+      "name": "Sudare Nagashi",
+      "type": "While Standing",
+      "input": "ws1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21"
+        },
+        {
+          "type": "properties",
+          "value": "* Wall Crush +25g on hit\n\n\n* Elbow\n* Cancel to r18 FC with D"
+        }
+      ]
+    },
+    {
+      "id": "move-119",
+      "name": "Mist Palm Thrust",
+      "type": "Heat Moves",
+      "input": "SS.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i13~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Balcony Break (airborne)\n* Gain NWG on Heat activation"
+        }
+      ]
+    },
+    {
+      "id": "move-120",
+      "name": "Camellia",
+      "type": "Stances",
+      "input": "SS.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~21"
+        }
+      ]
+    },
+    {
+      "id": "move-121",
+      "name": "Grace",
+      "type": "While Standing",
+      "input": "FC.df+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16~17"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-122",
+      "name": "Minazuki",
+      "type": "While Standing",
+      "input": "FC.df+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17"
+        },
+        {
+          "type": "properties",
+          "value": "Balcony Break"
+        }
+      ]
+    },
+    {
+      "id": "move-123",
+      "name": "Minazuki (Charged)",
+      "type": "While Standing",
+      "input": "FC.df+3*",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i29"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break (airborne)\n* 6 chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-124",
+      "name": "[[Wall Jump Attack]]",
+      "type": "Stances",
+      "input": "(Back to wall).b,b,UB",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i39~41"
+        },
+        {
+          "type": "properties",
+          "value": "* Floating state 5~13\n* Low crush 14~33\n* Floating state 34~36"
+        }
+      ]
+    },
+    {
+      "id": "move-125",
+      "name": "Compulsory Reform",
+      "type": "Heat Moves",
+      "input": "DST.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        },
+        {
+          "type": "properties",
+          "value": "* Heat Engager\n\n* Heat Dash +5, +36a (+26)\n\n* Balcony Break\n* Elbow\n* Gain NWG on Heat Activation\n* Chip damage on block"
+        }
+      ]
+    },
+    {
+      "id": "move-126",
+      "name": "Inescapable Tirade",
+      "type": "Stances",
+      "input": "DST.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19"
+        }
+      ]
+    },
+    {
+      "id": "move-127",
+      "name": "Tenjin Festival Upward Strike",
+      "type": "Stances",
+      "input": "NWG.f,F+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Chip damage on block\n* Consumes NWG\n* During Heat, remaining Heat is consumed\n* Grounded hit can be inconsistent sometimes\n* Unparryable with traditional punch parries (bug?)"
+        }
+      ]
+    },
+    {
+      "id": "move-128",
+      "name": "Aizen Festival Swing",
+      "type": "Stances",
+      "input": "NWG.f,f,F+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i17~18"
+        },
+        {
+          "type": "properties",
+          "value": "* Tornado\n* Homing\n* Balcony Break\n* Wall Crush +18g~19g on block\n\n\n* Chip damage on block\n* Consumes NWG\n* During Heat, remaining Heat is consumed\n* Unparryable by traditional punch parries (running attack)"
+        }
+      ]
+    },
+    {
+      "id": "move-129",
+      "name": "NWG.uf+1,2",
+      "type": "Stances",
+      "input": "NWG.uf+1,2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i26~27"
+        },
+        {
+          "type": "properties",
+          "value": "* Balcony Break\n* Strong Aerial Tailspin\n* Combo from 1st hit\n* Unparryable by traditional punch parries (bug?)\n* Cancel to -3 -15 FC with D"
+        }
+      ]
+    },
+    {
+      "id": "move-130",
+      "name": "Sumiyoshi Festival Plunge",
+      "type": "Stances",
+      "input": "NWG.u+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i31~32"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* 13 chip damage on block\n* Consumes Naniwa Gusto\n* During Heat, remaining Heat is consumed\n* Low crush 9~31"
+        }
+      ]
+    },
+    {
+      "id": "move-131",
+      "name": "Eternal Punishment",
+      "type": "Stances",
+      "input": "Tackle.2,1,2,1",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Unbreakable unless reversed\n* only 1st and 4th hits can be blocked\n* 1 to defend left side (against right punch)\n* 2 to defend right side (against left punch)\n* 1, 2 or 1+2 to defend tackle from behind\n* Does not consume CH state on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-132",
+      "name": "Crouch Jab",
+      "type": "Stances",
+      "input": "hFC.1",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i10"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to Standing with f\n* +6c on crouching hit\n* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-133",
+      "name": "Crouch Straight",
+      "type": "Stances",
+      "input": "hFC.2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i11"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-134",
+      "name": "Crouch Spin Kick",
+      "type": "Stances",
+      "input": "hFC.3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i16"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-135",
+      "name": "Crouch Shin Kick",
+      "type": "Stances",
+      "input": "hFC.4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* High crush 1~"
+        }
+      ]
+    },
+    {
+      "id": "move-136",
+      "name": "hFC.3+4",
+      "type": "Stances",
+      "input": "hFC.3+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i21~22 i9~10"
+        },
+        {
+          "type": "properties",
+          "value": "* Transition to r22 FC with D\n* Can be done from Crouch Level 1\n* Low crush 5~19\n* Floating state 20~22"
+        }
+      ]
+    },
+    {
+      "id": "move-137",
+      "name": "Aiki Nage",
+      "type": "Throws",
+      "input": "1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Floor Break\n* Throw break 1 or 2"
+        }
+      ]
+    },
+    {
+      "id": "move-138",
+      "name": "Katanuki",
+      "type": "Throws",
+      "input": "2+4",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12~14"
+        },
+        {
+          "type": "properties",
+          "value": "* Homing\n* Throw break 1 or 2\n* Side switch on hit\n* Opponent recovers FDFA on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-139",
+      "name": "Twisted Limbs",
+      "type": "Single Hits",
+      "input": "Back throw",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Unbreakable\n* Side switch on hit\n* Opponent recovers FDFA on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-140",
+      "name": "Falling Rain",
+      "type": "While Standing",
+      "input": "FC.db+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i14"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1+2\n* Side switch on hit\n* 2nd damage on landing\n* 3rd damage without tech roll"
+        }
+      ]
+    },
+    {
+      "id": "move-141",
+      "name": "Cloud Taste",
+      "type": "Single Hits",
+      "input": "Left throw",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Throw break 1\n* Opponent recovers FDFT on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-142",
+      "name": "Wind Wheel",
+      "type": "Single Hits",
+      "input": "Right throw",
+      "properties": [
+        {
+          "type": "properties",
+          "value": "* Throw break 2\n* Side switch on hit\n* Opponent recovers FUFA on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-143",
+      "name": "White Mountain",
+      "type": "Single Hits",
+      "input": "df+2+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Floor Break\n* Throw break 2\n* Opponent recovers off-axis FUFT on hit\n* Can side switch on hit"
+        }
+      ]
+    },
+    {
+      "id": "move-144",
+      "name": "Destabilizer (DST)",
+      "type": "Single Hits",
+      "input": "f+1+3",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i19~20"
+        }
+      ]
+    },
+    {
+      "id": "move-145",
+      "name": "Cherry Blossom",
+      "type": "Single Hits",
+      "input": "uf+1+2",
+      "properties": [
+        {
+          "type": "startup",
+          "value": "i12"
+        },
+        {
+          "type": "properties",
+          "value": "* Throw break 1+2\n* Opponent recovers FUFA on hit"
+        }
+      ]
     }
   ]
 }
