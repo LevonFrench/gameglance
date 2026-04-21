@@ -1289,8 +1289,9 @@ rosterCount: 16,
 
     mameRomset: "",
 
-    name: "City Of The Wolves",
-    tagline: "Enter the Arena",
+    notationSystem: 'numpad',
+    name: "Fatal Fury: City of the Wolves",
+    tagline: "A New Legend Begins",
 
     developer: "SNK",
 
@@ -1298,18 +1299,28 @@ rosterCount: 16,
 
     platform: "PS4, PS5, PC, Xbox Series X/S",
 
-rosterCount: 18,
+    rosterCount: 19,
 
-        
+    tags: ['Modern', 'SNK'],
+    links: [
+      { title: 'Official Site', url: 'https://www.snk-corp.co.jp/us/games/fatalfury-cotw/' },
+      { title: 'Dustloop Wiki (CotW)', url: 'https://www.dustloop.com/w/COTW' }
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/2095440/Fatal_Fury_City_of_the_Wolves/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/concept/10008240' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/fatal-fury-city-of-the-wolves/9p3270x4sf41' }
+    ],
+
     systemMechanics: [
-      { name: 'REV System', description: 'S.P.G. gauge powers REV Arts, REV Accel, and REV Guard for offense and defense.'  },
-      { name: 'REV Arts', description: 'Enhanced super moves with cinematic damage. Costs REV gauge.'  },
-      { name: 'REV Accel', description: 'Cancel specials into other moves for combo extensions.' , input: 'S+HS' },
-      { name: 'REV Guard', description: 'Advanced blocking technique with reduced blockstun.'  },
-      { name: 'Just Defend', description: 'Precise block timing for meter gain and frame advantage.' , input: '4 (precise)' },
-      { name: 'T.O.P. Attack', description: 'Unique attack available when health is in the T.O.P. zone.'  },
-      { name: 'Guard Cancel', description: 'Counter-attack from blockstun at meter cost.'  },
-      { name: 'Smart Combo', description: 'Simplified auto-combo for accessibility.'  }
+      { name: 'REV System', description: 'S.P.G. gauge powers REV Arts, REV Accel, and REV Guard for offense and defense.' },
+      { name: 'REV Arts', description: 'Enhanced super moves with cinematic damage. Costs REV gauge.' },
+      { name: 'REV Accel', description: 'Cancel recovery of specials into other moves for combo extensions.', input: 'S+HS' },
+      { name: 'REV Guard', description: 'Spend meter to push block and create space while in blockstun.' },
+      { name: 'Just Defend', description: 'Block at the last possible frame to recover health, gain meter, and reduce blockstun.', input: '4 (precise timing)' },
+      { name: 'T.O.P. System', description: 'Select a T.O.P. zone (beginning, middle, or end of health bar). When health is in that zone, gain passive regen, damage boost, and access to T.O.P. Attack.' },
+      { name: 'Guard Cancel', description: 'Counter-attack from blockstun. Costs meter.', input: '6A+B (during blockstun)' },
+      { name: 'Smart Combo', description: 'Simplified auto-combo by repeatedly pressing light attack. Good for beginners.' }
     ],
 
     characters: [
@@ -2712,18 +2723,31 @@ rosterCount: 24,
 
     platform: "PS5, Xbox Series X/S, Switch, PC",
 
-rosterCount: 25,
+    rosterCount: 35,
 
-            tags: ['3D', 'Modern'],
+    tags: ['3D', 'Modern'],
     links: [
       { title: 'Official Site / Patch Notes', url: 'https://www.mortalkombat.com/' },
-      { title: 'TestYourMight', url: 'https://testyourmight.com/' }
+      { title: 'TestYourMight', url: 'https://testyourmight.com/' },
+      { title: 'FGMoves (MK1)', url: 'https://fgmoves.com/games/mk1' },
+      { title: 'SuperCombo Wiki (MK1)', url: 'https://wiki.supercombo.gg/w/Mortal_Kombat_1' }
     ],
     stores: [
       { platform: 'Steam', url: 'https://store.steampowered.com/app/1971870/Mortal_Kombat_1/' },
       { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP1018-PPSA08480_00-MK10000000000000' },
       { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/mortal-kombat-1/9ph112n2t5st' },
       { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/mortal-kombat-1-switch/' }
+    ],
+
+    systemMechanics: [
+      { name: 'Kameo System', description: 'Select a Kameo fighter alongside your main. Kameos provide assist attacks, combo extensions, and unique abilities on cooldown.' },
+      { name: 'Fatal Blow', description: 'Cinematic super move available once per match when health drops below 30%. Massive damage.', input: 'EN+BL' },
+      { name: 'Enhanced Moves', description: 'Spend meter to amplify specials for extra hits, armor, or combo extensions.', input: 'Special + EN' },
+      { name: 'Flawless Block', description: 'Block at the exact moment of impact. Enables Flawless Block Attack for punishing otherwise safe moves.', input: 'BL (precise timing)' },
+      { name: 'Kombo Breaker', description: 'Escape combos by spending Kameo meter. Uses Kameo cooldown.', input: 'f + Kameo (during hitstun)' },
+      { name: 'Up Block', description: 'Block aerial attacks while standing by holding back. MK1 has no crossup protection from neutral.' },
+      { name: 'Air Kombos', description: 'Extensive aerial juggle system. Most launchers lead into air combo routes with Kameo extensions.' },
+      { name: 'Mercy', description: 'Spare your opponent during "Finish Him" to give them a sliver of health and continue fighting.', input: 'Hold Stance, d d d (at distance)' }
     ],
 
     characters: [
@@ -2739,7 +2763,7 @@ rosterCount: 25,
       { id: 'liu-kang', name: 'Liu Kang', moveCount: 0 },
       { id: 'mileena', name: 'Mileena', moveCount: 0 },
       { id: 'nitara', name: 'Nitara', moveCount: 0 },
-      { id: 'omni-man', name: 'Omni Man', moveCount: 0 },
+      { id: 'omni-man', name: 'Omni-Man', moveCount: 0 },
       { id: 'peacemaker', name: 'Peacemaker', moveCount: 0 },
       { id: 'quan-chi', name: 'Quan Chi', moveCount: 0 },
       { id: 'raiden', name: 'Raiden', moveCount: 0 },
@@ -2750,7 +2774,7 @@ rosterCount: 25,
       { id: 'shang-tsung', name: 'Shang Tsung', moveCount: 0 },
       { id: 'sindel', name: 'Sindel', moveCount: 0 },
       { id: 'smoke', name: 'Smoke', moveCount: 0 },
-      { id: 'sub-zero', name: 'Sub Zero', moveCount: 0 },
+      { id: 'sub-zero', name: 'Sub-Zero', moveCount: 0 },
       { id: 'tanya', name: 'Tanya', moveCount: 0 },
       { id: 'general-shao', name: 'General Shao', moveCount: 0 },
       { id: 'ermac', name: 'Ermac', moveCount: 0 },
@@ -2763,8 +2787,6 @@ rosterCount: 25,
       { id: 'conan', name: 'Conan', moveCount: 0 },
       { id: 't-1000', name: 'T-1000', moveCount: 0 }
     ],
-
-
 
   },
 
