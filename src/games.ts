@@ -2770,6 +2770,30 @@ rosterCount: 25,
 
   {
 
+    id: 'mortal-kombat',
+
+    mameRomset: "mk",
+
+    notationSystem: 'mk',
+    name: "Mortal Kombat",
+    tagline: "Test Your Might",
+
+    developer: "Midway",
+
+    releaseYear: 1992,
+
+    platform: "Arcade, SNES, Genesis, Game Boy, Game Gear",
+
+    rosterCount: 10,
+
+        characters: [],
+
+    tabs: ['Special Moves', 'Finishers', 'Normal Moves', 'Normal Throws']
+
+  },
+
+  {
+
     id: 'mortal-kombat-ii',
 
     mameRomset: "mk2",
