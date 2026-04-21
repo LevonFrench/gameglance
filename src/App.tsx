@@ -41,6 +41,7 @@ export const App: React.FC = () => {
   });
   const [returningFromMoveList, setReturningFromMoveList] = useState(false);
   const [disableGameSelectAnimation, setDisableGameSelectAnimation] = useState(false);
+  const [lastExpandedGameId, setLastExpandedGameId] = useState<string | null>(null);
 
   const [controllerLocked, setControllerLocked] = useState<boolean>(() => {
     return localStorage.getItem('gg_controller_locked') === 'true';
@@ -177,6 +178,7 @@ export const App: React.FC = () => {
   const handleSelectGame = (game: GameDefinition) => {
     setReturningFromMoveList(false);
     setDisableGameSelectAnimation(false);
+    setLastExpandedGameId(game.id);
     
     if (!controllerLocked) {
       const dev = game.developer?.toUpperCase() || '';
@@ -243,6 +245,7 @@ export const App: React.FC = () => {
         onLaunchGameGlance={handleLaunchMainScreen}
         onClearGameGlance={handleClearPlaylist}
         controller={controller}
+        initialExpandedId={lastExpandedGameId}
       />;
       break;
     case 'char_select':

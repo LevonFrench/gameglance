@@ -241,6 +241,20 @@ const tokenizeStandardInputs = (inputs: string[], notationSystem: string = 'trad
         continue;
       }
 
+      const dirMap: Record<string, string> = {
+        'QCF': '236', 'QCB': '214', 'HCF': '41236', 'HCB': '63214', 'DP': '623', 'RDP': '421'
+      };
+      const upperT = t.toUpperCase();
+      if (dirMap[upperT]) {
+        const mapped = dirMap[upperT];
+        if (notationSystem === 'numpad') {
+          for (const d of mapped) result.push(d);
+        } else {
+          result.push(upperT);
+        }
+        continue;
+      }
+
       const specMatch = t.match(/^(.*?)(360|720)([a-zA-Z]*)$/);
       if (specMatch) {
         if (specMatch[1]) result.push(specMatch[1]);
@@ -345,7 +359,20 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
       .replace(/(?<![A-Za-z])PPP(?![A-Za-z])/gi, 'P+P+P')
       .replace(/(?<![A-Za-z])KKK(?![A-Za-z])/gi, 'K+K+K')
       .replace(/(?<![A-Za-z])PP(?![A-Za-z])/gi, 'P+P')
-      .replace(/(?<![A-Za-z])KK(?![A-Za-z])/gi, 'K+K');
+      .replace(/(?<![A-Za-z])KK(?![A-Za-z])/gi, 'K+K')
+      // DNF Duel cleanup
+      .replace(/QCF([A-Z])/gi, 'QCF+$1')
+      .replace(/QCB([A-Z])/gi, 'QCB+$1')
+      .replace(/DP([A-Z])/gi, 'DP+$1')
+      .replace(/PUNCHCOMBO/gi, 'Punch Combo ')
+      .replace(/EDINTO/gi, ' into ')
+      .replace(/FORWARD/gi, 'Forward ')
+      .replace(/ORC\.?/gi, ' or C')
+      .replace(/KICK:FWB/gi, 'Kick: Fwd B')
+      .replace(/QCBC\.?/gi, 'QCB+C')
+      .replace(/QCBA\.?/gi, 'QCB+A')
+      .replace(/QCFA\.?/gi, 'QCF+A')
+      .replace(/QCFX\.?/gi, 'QCF+X');
   });
 
   if (notationSystem === 'mk') {

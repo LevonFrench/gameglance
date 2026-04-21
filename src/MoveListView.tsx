@@ -177,7 +177,8 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         console.warn('Failed to parse tab preferences', err);
       }
     }
-    const combinedTabs = Array.from(new Set([...GLOBAL_DEFAULT_SORT, ...(game.tabs || [])]))
+    const baseTabs = game.tabs && game.tabs.length > 0 ? game.tabs : GLOBAL_DEFAULT_SORT;
+    const combinedTabs = Array.from(new Set(baseTabs))
       .filter(t => t !== 'Command Throws' && t !== 'Normal Throws' && t !== 'Combos');
     const sorted = combinedTabs.sort((a,b) => {
       let idxA = pref.indexOf(a);
@@ -390,6 +391,11 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           'boss': 'special',          // Red Earth
         };
 
+        // Normalize moves array if it exists as 'moves' instead of 'movesList'
+        if (!data.movesList && data.moves) {
+          data.movesList = data.moves;
+        }
+
         if (data.movesList) {
           data.movesList = data.movesList.map((m: Record<string, unknown>) => {
             const raw = typeof m.type === 'string' ? m.type.toLowerCase() : String(m.type || 'normal');
@@ -474,7 +480,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
       'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves', 'Finishers', 
       'Fatality', 'Fatalities', 'Heroic Brutality'
     ];
-    const combinedTabs = Array.from(new Set([...GLOBAL_DEFAULT_SORT, ...(game.tabs || [])]));
+    const combinedTabs = game.tabs && game.tabs.length > 0 ? game.tabs : GLOBAL_DEFAULT_SORT;
     
     combinedTabs.forEach(tab => {
       const fallbackFilter = (list: Move[]) => list.filter(m => 

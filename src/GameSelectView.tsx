@@ -14,6 +14,7 @@ interface Props {
   onLaunchGameGlance?: () => void;
   onClearGameGlance?: () => void;
   controller?: ControllerType;
+  initialExpandedId?: string | null;
 }
 
 const GAME_THEMES: Record<string, { gradient: string; icon: string; tagline: string; glowColor: string }> = {
@@ -362,7 +363,11 @@ const PlatformIcons = ({ platformString }: { platformString: string }) => {
 export const GameSelectView: React.FC<Props> = ({ 
   onSelectGame, 
   disableInitialAnimation = false,
-  controller
+  controller,
+  initialExpandedId,
+  selectedCount,
+  onLaunchGameGlance,
+  onClearGameGlance
 }) => {
   useArrowNavigation('[id^="game-card-"]');
 
@@ -384,7 +389,7 @@ export const GameSelectView: React.FC<Props> = ({
   const [searchQuery, setSearchQuery] = useState<string>('');
   const [tagFilter, setTagFilter] = useState<string>('All');
   const [showCards, setShowCards] = useState(disableInitialAnimation || false);
-  const [expandedGameId, setExpandedGameId] = useState<string | null>(null);
+  const [expandedGameId, setExpandedGameId] = useState<string | null>(initialExpandedId || null);
   const [isGlitching, setIsGlitching] = useState(false);
   const cardRefs = useRef<Map<string, HTMLDivElement>>(new Map());
   
