@@ -585,9 +585,8 @@ h1, h2, h3, h4, h5, h6 {
 
 .move-card:hover {
   background: var(--bg-card-hover);
-  border-color: var(--border-medium);
-  transform: translateY(-2px) scale(1.01);
-  box-shadow: var(--shadow-md);
+  border-color: var(--accent-indigo);
+  box-shadow: 0 0 15px rgba(99, 102, 241, 0.25), 0 0 30px rgba(99, 102, 241, 0.1);
 }
 
 .move-card[data-selected="true"] {
@@ -615,8 +614,7 @@ h1, h2, h3, h4, h5, h6 {
 [data-card-theme="sf2gen"] div.move-card:hover,
 [data-card-theme="genesis"] div.move-card:hover {
   border-color: #d92b38 !important;
-  box-shadow: 0 12px 30px rgba(217, 43, 56, 0.15) !important;
-  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 0 18px rgba(217, 43, 56, 0.3), 0 0 36px rgba(217, 43, 56, 0.12) !important;
 }
 [data-card-theme="sf2gen"] div.move-card[data-selected="true"],
 [data-card-theme="genesis"] div.move-card[data-selected="true"] {
@@ -645,8 +643,7 @@ h1, h2, h3, h4, h5, h6 {
 [data-card-theme="snes"] button[id^="char-card-"]:hover,
 [data-card-theme="snes"] div.move-card:hover {
   border-color: #8162b7 !important;
-  box-shadow: 0 12px 30px rgba(129, 98, 183, 0.15) !important;
-  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 0 18px rgba(129, 98, 183, 0.3), 0 0 36px rgba(129, 98, 183, 0.12) !important;
 }
 [data-card-theme="snes"] div.move-card[data-selected="true"] {
   border-color: #8162b7 !important;
@@ -664,8 +661,7 @@ h1, h2, h3, h4, h5, h6 {
 [data-card-theme="sfami"] button[id^="char-card-"]:hover,
 [data-card-theme="sfami"] div.move-card:hover {
   border-color: #e3001b !important;
-  box-shadow: 0 12px 30px rgba(227, 0, 27, 0.15) !important;
-  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 0 18px rgba(227, 0, 27, 0.3), 0 0 36px rgba(227, 0, 27, 0.12) !important;
 }
 [data-card-theme="sfami"] div.move-card[data-selected="true"] {
   border-color: #e3001b !important;
@@ -695,8 +691,7 @@ h1, h2, h3, h4, h5, h6 {
 [data-card-theme="aes"] button[id^="char-card-"]:hover,
 [data-card-theme="aes"] div.move-card:hover {
   border-color: #ff003c !important;
-  box-shadow: 0 12px 30px rgba(255, 0, 60, 0.15) !important;
-  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 0 18px rgba(255, 0, 60, 0.3), 0 0 36px rgba(255, 0, 60, 0.12) !important;
 }
 [data-card-theme="mvs"] div.move-card[data-selected="true"],
 [data-card-theme="mvscab"] div.move-card[data-selected="true"],
@@ -730,8 +725,7 @@ h1, h2, h3, h4, h5, h6 {
 [data-card-theme="cps2cab"] button[id^="char-card-"]:hover,
 [data-card-theme="cps2cab"] div.move-card:hover {
   border-color: #38bdf8 !important;
-  box-shadow: 0 12px 30px rgba(56, 189, 248, 0.15) !important;
-  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 0 18px rgba(56, 189, 248, 0.3), 0 0 36px rgba(56, 189, 248, 0.12) !important;
 }
 [data-card-theme="cps2"] div.move-card[data-selected="true"],
 [data-card-theme="cps2cab"] div.move-card[data-selected="true"] {
@@ -759,8 +753,7 @@ h1, h2, h3, h4, h5, h6 {
 [data-card-theme="tekken"] button[id^="char-card-"]:hover,
 [data-card-theme="tekken"] div.move-card:hover {
   border-color: #f59e0b !important;
-  box-shadow: 0 12px 30px rgba(245, 158, 11, 0.15) !important;
-  transform: translateY(-4px) scale(1.02);
+  box-shadow: 0 0 18px rgba(245, 158, 11, 0.3), 0 0 36px rgba(245, 158, 11, 0.12) !important;
 }
 [data-card-theme="tekken"] div.move-card[data-selected="true"] {
   border-color: #f59e0b !important;
@@ -858,7 +851,7 @@ html.force-mobile .char-grid-main {
 
 @keyframes selectGlowPulse { 0% { text-shadow: 0 0 10px rgba(99, 102, 241, 0.4); } 50% { text-shadow: 0 0 20px rgba(99, 102, 241, 0.8), 0 0 30px rgba(168, 85, 247, 0.6); transform: scale(1.02); } 100% { text-shadow: 0 0 10px rgba(99, 102, 241, 0.4); } }
 .select-game-pulse { animation: selectGlowPulse 3s infinite ease-in-out; transition: all 0.3s ease; }
-.select-game-pulse:hover { animation-play-state: paused; transform: scale(1.05); text-shadow: 0 0 30px rgba(99, 102, 241, 1), 0 0 50px rgba(168, 85, 247, 0.8); }
+.select-game-pulse:hover { animation-play-state: paused; text-shadow: 0 0 30px rgba(99, 102, 241, 1), 0 0 50px rgba(168, 85, 247, 0.8); }
 
 /* Okizeme Tooltip System */
 .oki-tooltip-container {

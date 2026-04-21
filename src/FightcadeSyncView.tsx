@@ -143,8 +143,8 @@ export const FightcadeSyncView: React.FC<Props> = ({ syncState, onConnect, onDis
               boxShadow: '0 4px 12px rgba(99, 102, 241, 0.3)',
               transition: 'all 0.2s'
             }}
-            onMouseOver={e => e.currentTarget.style.transform = 'translateY(-2px)'}
-            onMouseOut={e => e.currentTarget.style.transform = 'translateY(0)'}
+            onMouseOver={e => e.currentTarget.style.boxShadow = '0 4px 16px rgba(99, 102, 241, 0.5)'}
+            onMouseOut={e => e.currentTarget.style.boxShadow = '0 4px 12px rgba(99, 102, 241, 0.3)'}
           >
             Connect Fightcade Folder
           </button>

@@ -778,9 +778,8 @@ export const GameSelectView: React.FC<Props> = ({
                 }}
                 onMouseOver={(e) => {
                   const el = e.currentTarget;
-                  el.style.transform = 'translateY(-8px) scale(1.03)';
-                  el.style.borderColor = isDark ? 'rgba(255,255,255,0.18)' : 'rgba(0,0,0,0.15)';
-                  el.style.boxShadow = `0 24px 64px ${theme.glowColor}, var(--shadow-glow-indigo)`;
+                  el.style.borderColor = isDark ? 'rgba(255,255,255,0.25)' : 'rgba(99,102,241,0.4)';
+                  el.style.boxShadow = `0 0 20px ${theme.glowColor}, 0 0 40px ${theme.glowColor}, var(--shadow-glow-indigo)`;
                   const gradientOverlay = el.querySelector('.gradient-overlay') as HTMLElement;
                   if (gradientOverlay) gradientOverlay.style.opacity = isDark ? '0.15' : '0.10';
                   const mouseGlow = el.querySelector('.mouse-glow') as HTMLElement;
@@ -788,7 +787,6 @@ export const GameSelectView: React.FC<Props> = ({
                 }}
                 onMouseOut={(e) => {
                   const el = e.currentTarget;
-                  el.style.transform = 'translateY(0) scale(1)';
                   el.style.borderColor = 'var(--border-medium)';
                   el.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
                   const gradientOverlay = el.querySelector('.gradient-overlay') as HTMLElement;
