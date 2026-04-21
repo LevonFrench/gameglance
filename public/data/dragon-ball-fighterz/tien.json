@@ -1,0 +1,786 @@
+﻿{
+    "name":  "Tien",
+    "character":  "Tenshinhan",
+    "game":  "Dragon Ball FighterZ",
+    "combosList":  [
+                       {
+                           "id":  "chall_1",
+                           "name":  "Combo Challenge 1",
+                           "input":  "5L 5L 5L"
+                       },
+                       {
+                           "id":  "chall_2",
+                           "name":  "Combo Challenge 2",
+                           "input":  "5M 5M 5M"
+                       },
+                       {
+                           "id":  "chall_3",
+                           "name":  "Combo Challenge 3",
+                           "input":  "2M 5M j.L j.M"
+                       },
+                       {
+                           "id":  "chall_4",
+                           "name":  "Combo Challenge 4",
+                           "input":  "5L 5L 5M 5H"
+                       },
+                       {
+                           "id":  "chall_5",
+                           "name":  "Combo Challenge 5",
+                           "input":  "2M 5M j.L j.M j.2H SD j.L j.M"
+                       },
+                       {
+                           "id":  "chall_6",
+                           "name":  "Combo Challenge 6",
+                           "input":  "5L 5M 2H SD j.L j.M j.H"
+                       },
+                       {
+                           "id":  "chall_7",
+                           "name":  "Combo Challenge 7",
+                           "input":  "2M 5M j.L j.M j.2H SD j.L j.M j.2H 236L"
+                       },
+                       {
+                           "id":  "chall_8",
+                           "name":  "Combo Challenge 8",
+                           "input":  "5L 5L 2M 5M j.L j.M j.2H SD j.L j.M j.H 236S"
+                       },
+                       {
+                           "id":  "chall_9",
+                           "name":  "Combo Challenge 9",
+                           "input":  "2M 5M j.M j.2H SD j.M j.H A1 5L 5M 2H"
+                       },
+                       {
+                           "id":  "chall_10",
+                           "name":  "Combo Challenge 10",
+                           "input":  "2M 5M j.M j.2H SD j.L j.M j.2H j.L j.M j.H 236L+M"
+                       }
+                   ],
+    "movesList":  [
+                      {
+                          "name":  "L",
+                          "input":  "L",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "M",
+                          "input":  "M",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "H",
+                          "input":  "H",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "S",
+                          "input":  "S",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "A1",
+                          "input":  "A1",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "A2",
+                          "input":  "A2",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "SD",
+                          "input":  "SD",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "DR",
+                          "input":  "DR",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "V",
+                          "input":  "V",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "SP",
+                          "input":  "SP",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "Volleyball Fist",
+                          "input":  "236L/M/H (3-part sequence)",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "ef96100a-6f96-4592-b646-6ebb9bd673e3",
+                          "name":  "Air Dodon Ray",
+                          "input":  "j.236S",
+                          "frameData":  {
+                                            "startup":  "17",
+                                            "active":  "24",
+                                            "recovery":  "31",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "5d56003b-7761-411e-b327-d13ee1b0cbe2",
+                          "name":  "Air H Crane Strike",
+                          "input":  "j.214H",
+                          "frameData":  {
+                                            "startup":  "20",
+                                            "active":  "Until Landing",
+                                            "recovery":  "20 [17]",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "53b06a71-2125-4915-80a5-8533da988ca7",
+                          "name":  "Air H Volleyball Fist",
+                          "input":  "j.236H",
+                          "frameData":  {
+                                            "startup":  "11",
+                                            "active":  "3",
+                                            "recovery":  "18",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "4-11 Guard",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "df93318d-cbbe-4fbd-98d6-7e869ad6a4ad",
+                          "name":  "Air L Crane Strike",
+                          "input":  "j.214L",
+                          "frameData":  {
+                                            "startup":  "20",
+                                            "active":  "Until Landing",
+                                            "recovery":  "20 [17]",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "027f9e41-9de4-4e46-b8a2-7accd5b9e131",
+                          "name":  "Air L Volleyball Fist",
+                          "input":  "j.236L",
+                          "frameData":  {
+                                            "startup":  "15",
+                                            "active":  "3",
+                                            "recovery":  "18",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "5f095633-ecb0-475e-99a4-8857c54ec8ed",
+                          "name":  "Air M Crane Strike",
+                          "input":  "j.214M",
+                          "frameData":  {
+                                            "startup":  "24",
+                                            "active":  "Until Landing",
+                                            "recovery":  "20 [17]",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "75da7a98-f582-4914-b22b-aa48011f8a38",
+                          "name":  "Air M Volleyball Fist",
+                          "input":  "j.236M",
+                          "frameData":  {
+                                            "startup":  "20",
+                                            "active":  "3",
+                                            "recovery":  "18",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "4-20 Guard",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "722c391a-db62-4a31-ab37-0a6eaf51a411",
+                          "name":  "Dodon Ray",
+                          "input":  "236S",
+                          "frameData":  {
+                                            "startup":  "17",
+                                            "active":  "24",
+                                            "recovery":  "25",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "15514e87-42bf-460a-86f4-8696911a7ebd",
+                          "name":  "H Crane Strike",
+                          "input":  "214H",
+                          "frameData":  {
+                                            "startup":  "22",
+                                            "active":  "2",
+                                            "recovery":  "21 [17]",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "fb280555-fecb-45bf-b81f-b0b97ed2faa6",
+                          "name":  "H Volleyball Fist",
+                          "input":  "236H",
+                          "frameData":  {
+                                            "startup":  "24",
+                                            "active":  "4",
+                                            "recovery":  "26",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "Throw",
+                          "invuln":  "4-28 Guard",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "3d0988f5-dec7-47cd-a8f9-c5670668f88f",
+                          "name":  "H Volleyball Fist Follow-up 1",
+                          "input":  "236X \u003e H",
+                          "frameData":  {
+                                            "startup":  "16",
+                                            "active":  "1",
+                                            "recovery":  "55",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "49c2eb6d-453d-4765-947c-a6ab8eac980c",
+                          "name":  "H Volleyball Fist Follow-up 2",
+                          "input":  "236X \u003e X \u003e H",
+                          "frameData":  {
+                                            "startup":  "35",
+                                            "active":  "3",
+                                            "recovery":  "16",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "97f552b0-a005-464c-9edf-e21cc334a388",
+                          "name":  "L Crane Strike",
+                          "input":  "214L",
+                          "frameData":  {
+                                            "startup":  "23",
+                                            "active":  "2",
+                                            "recovery":  "20 [17]",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "ad28924c-ad8d-42df-9f43-6cc5d848d19d",
+                          "name":  "L Volleyball Fist",
+                          "input":  "236L",
+                          "frameData":  {
+                                            "startup":  "11",
+                                            "active":  "8",
+                                            "recovery":  "20",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "Low",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "80f62d96-4ecb-4e66-ad04-672a38708729",
+                          "name":  "L Volleyball Fist Follow-up 1",
+                          "input":  "236X \u003e L",
+                          "frameData":  {
+                                            "startup":  "12",
+                                            "active":  "12",
+                                            "recovery":  "39",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "2f67db90-e44b-4521-93ea-673e1448beea",
+                          "name":  "L Volleyball Fist Follow-up 2",
+                          "input":  "236X \u003e X \u003e L",
+                          "frameData":  {
+                                            "startup":  "31",
+                                            "active":  "3",
+                                            "recovery":  "16",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "caf92911-7d48-4b1b-bf4c-eceee783cfe9",
+                          "name":  "M Crane Strike",
+                          "input":  "214M",
+                          "frameData":  {
+                                            "startup":  "25",
+                                            "active":  "2",
+                                            "recovery":  "20 [17]",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "5f592f19-e149-40d0-8b8d-031709b4f16a",
+                          "name":  "M Volleyball Fist",
+                          "input":  "236M",
+                          "frameData":  {
+                                            "startup":  "21",
+                                            "active":  "13",
+                                            "recovery":  "20",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "Low",
+                          "invuln":  "4-29 Guard",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "946b15be-6d35-492d-a893-decaf0bd8a5a",
+                          "name":  "M Volleyball Fist Follow-up 1",
+                          "input":  "236X \u003e M",
+                          "frameData":  {
+                                            "startup":  "12",
+                                            "active":  "12",
+                                            "recovery":  "40",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "1cd700e5-3db6-46c8-81f3-11f3ac91910c",
+                          "name":  "M Volleyball Fist Follow-up 2",
+                          "input":  "236X \u003e X \u003e M",
+                          "frameData":  {
+                                            "startup":  "31",
+                                            "active":  "3",
+                                            "recovery":  "16",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "32a22b94-3eff-4bbb-80b9-51177298f14c",
+                          "name":  "Telekinesis",
+                          "input":  "214S",
+                          "frameData":  {
+                                            "startup":  "34",
+                                            "active":  "3",
+                                            "recovery":  "11",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "139e2e0a-c43b-4060-bb04-22a5ec63f425",
+                          "name":  "Telekinesis (Fail)",
+                          "input":  "214S Fail",
+                          "frameData":  {
+                                            "startup":  "",
+                                            "active":  "",
+                                            "recovery":  "71",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "ebdd9c75-d376-4933-995e-2507c46909dd",
+                          "name":  "2H",
+                          "input":  "2H",
+                          "frameData":  {
+                                            "startup":  "12",
+                                            "active":  "5",
+                                            "recovery":  "26",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "4-16 Head",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "1e367b5c-9548-4f21-8117-12e0bda66fa4",
+                          "name":  "2L",
+                          "input":  "2L",
+                          "frameData":  {
+                                            "startup":  "7",
+                                            "active":  "3",
+                                            "recovery":  "13",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "Low",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "bdee93bd-2573-46c9-a420-c2f83bb89c97",
+                          "name":  "2M",
+                          "input":  "2M",
+                          "frameData":  {
+                                            "startup":  "10",
+                                            "active":  "7",
+                                            "recovery":  "13",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "Low",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "8e50fb93-6855-4be2-8992-81a0fb3a1530",
+                          "name":  "5H",
+                          "input":  "5H",
+                          "frameData":  {
+                                            "startup":  "13",
+                                            "active":  "4",
+                                            "recovery":  "21",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "6f68e438-a4a4-4a96-89e1-7f94a7046981",
+                          "name":  "5L",
+                          "input":  "5L",
+                          "frameData":  {
+                                            "startup":  "6",
+                                            "active":  "3",
+                                            "recovery":  "12",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "50977ec7-9a95-459c-b296-0019f0321985",
+                          "name":  "5LL",
+                          "input":  "5LL",
+                          "frameData":  {
+                                            "startup":  "9,7",
+                                            "active":  "3,3",
+                                            "recovery":  "17",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "c07f9d79-18db-4422-8815-db1b1db38972",
+                          "name":  "5LLL",
+                          "input":  "5LLL",
+                          "frameData":  {
+                                            "startup":  "13",
+                                            "active":  "[1 (1)]×8, 1",
+                                            "recovery":  "19",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "b158c3a3-ac15-47cc-8024-71107f9500c0",
+                          "name":  "5M",
+                          "input":  "5M",
+                          "frameData":  {
+                                            "startup":  "9",
+                                            "active":  "3",
+                                            "recovery":  "17",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "20435e06-c1e8-4590-9319-5fc6e51c9174",
+                          "name":  "5S",
+                          "input":  "5S",
+                          "frameData":  {
+                                            "startup":  "12",
+                                            "active":  "",
+                                            "recovery":  "26",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "fabaeb13-5892-4b4b-983a-10fb27943b70",
+                          "name":  "6M",
+                          "input":  "6M",
+                          "frameData":  {
+                                            "startup":  "24",
+                                            "active":  "6",
+                                            "recovery":  "10",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "fa498588-07a9-4eb1-80a6-a5f27eb8bec6",
+                          "name":  "j.2H",
+                          "input":  "j.2H",
+                          "frameData":  {
+                                            "startup":  "12",
+                                            "active":  "3",
+                                            "recovery":  "19",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "4502376f-7794-475e-84bb-22041d4d168b",
+                          "name":  "j.H",
+                          "input":  "j.H",
+                          "frameData":  {
+                                            "startup":  "12",
+                                            "active":  "4",
+                                            "recovery":  "21",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "5454eb5f-7132-438f-966f-75355f10a3a4",
+                          "name":  "j.L",
+                          "input":  "j.L",
+                          "frameData":  {
+                                            "startup":  "6,3",
+                                            "active":  "2,2",
+                                            "recovery":  "15",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "7be797ce-6aee-4203-9ffd-19157207621a",
+                          "name":  "j.M",
+                          "input":  "j.M",
+                          "frameData":  {
+                                            "startup":  "9",
+                                            "active":  "5",
+                                            "recovery":  "17",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "394fd900-8eea-43df-bfaa-49fe6ded3a93",
+                          "name":  "j.S",
+                          "input":  "j.S",
+                          "frameData":  {
+                                            "startup":  "13",
+                                            "active":  "",
+                                            "recovery":  "27",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "d471cb54-4660-4ea3-b7b0-ae67cb9611ad",
+                          "name":  "Air Tri-Beam",
+                          "input":  "j.236L+M",
+                          "frameData":  {
+                                            "startup":  "13+4",
+                                            "active":  "3",
+                                            "recovery":  "30",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "4-25 All",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "f84a5286-80ba-4747-a1d5-13c09ff93419",
+                          "name":  "Air Tri-Beam (Charged)",
+                          "input":  "j.236[L+M]",
+                          "frameData":  {
+                                            "startup":  "13+4",
+                                            "active":  "3(10)3",
+                                            "recovery":  "36",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "4-28 All",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "b18905cd-9bf8-421f-bd47-3ab975bb21fc",
+                          "name":  "Farewell, Tien...",
+                          "input":  "214H+S",
+                          "frameData":  {
+                                            "startup":  "9+4",
+                                            "active":  "27",
+                                            "recovery":  "40",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "Throw",
+                          "invuln":  "1-20 All",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "b189c52d-5fbd-429d-a943-e220702f310f",
+                          "name":  "Neo Tri-Beam",
+                          "input":  "214L+M",
+                          "frameData":  {
+                                            "startup":  "17+3",
+                                            "active":  "3",
+                                            "recovery":  "85",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "1-68 All",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "8640e9d5-5533-495d-87c5-c955a6f559ae",
+                          "name":  "Neo Tri-Beam",
+                          "input":  "j.214L+M",
+                          "frameData":  {
+                                            "startup":  "17+3",
+                                            "active":  "3",
+                                            "recovery":  "85",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "1-68 All",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "83fbeb6f-9633-4bf2-a902-1d0d391d68a8",
+                          "name":  "Neo Tri-Beam (Additional Hits)",
+                          "input":  "214L+M \u003e X",
+                          "frameData":  {
+                                            "startup":  "10",
+                                            "active":  "3",
+                                            "recovery":  "85",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "1-58 All",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "0c4d9cad-52ba-4602-9767-7075d8ac138f",
+                          "name":  "Tri-Beam",
+                          "input":  "236L+M",
+                          "frameData":  {
+                                            "startup":  "13+4",
+                                            "active":  "3",
+                                            "recovery":  "31",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "4-25 All",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "ca7dfd45-1576-445b-bda9-272e97d14140",
+                          "name":  "Tri-Beam (Charged)",
+                          "input":  "236[L+M]",
+                          "frameData":  {
+                                            "startup":  "13+4",
+                                            "active":  "3(10)3",
+                                            "recovery":  "36",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "4-28 All",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "43e85976-f060-49bf-8048-f80517ec775d",
+                          "name":  "Dodon Ray",
+                          "input":  "Assist A",
+                          "frameData":  {
+                                            "startup":  "29",
+                                            "active":  "24",
+                                            "recovery":  "60",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "unique"
+                      },
+                      {
+                          "id":  "582aab4c-6e13-4f05-a130-e41f26735974",
+                          "name":  "Telekinesis",
+                          "input":  "Assist B",
+                          "frameData":  {
+                                            "startup":  "44",
+                                            "active":  "3",
+                                            "recovery":  "24",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "",
+                          "invuln":  "",
+                          "type":  "unique"
+                      },
+                      {
+                          "id":  "4889a199-d7f6-4c46-9f89-0018e779035c",
+                          "name":  "Volleyball Fist",
+                          "input":  "Assist C",
+                          "frameData":  {
+                                            "startup":  "23 [20]",
+                                            "active":  "1(1)1(1)1(1)1(1)1(1)1(1)1(1)1(8)1",
+                                            "recovery":  "35",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "all",
+                          "invuln":  "",
+                          "type":  "unique"
+                      }
+                  ]
+}

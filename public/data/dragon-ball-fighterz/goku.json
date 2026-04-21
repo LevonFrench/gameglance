@@ -1,0 +1,769 @@
+﻿{
+    "name":  "Goku",
+    "movesList":  [
+                      {
+                          "name":  "L",
+                          "input":  "L",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "M",
+                          "input":  "M",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "H",
+                          "input":  "H",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "S",
+                          "input":  "S",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "A1",
+                          "input":  "A1",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "A2",
+                          "input":  "A2",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "SD",
+                          "input":  "SD",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "DR",
+                          "input":  "DR",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "V",
+                          "input":  "V",
+                          "type":  "normal"
+                      },
+                      {
+                          "name":  "SP",
+                          "input":  "SP",
+                          "type":  "normal"
+                      },
+                      {
+                          "id":  "840f4532-3425-4936-aed8-b3b1a73bfd22",
+                          "name":  "2H",
+                          "input":  "2H",
+                          "frameData":  {
+                                            "startup":  "14",
+                                            "active":  "3",
+                                            "recovery":  "30",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "4-15 Head",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "dd2b0302-52e9-4f26-a475-a7d23bebe561",
+                          "name":  "2L",
+                          "input":  "2L",
+                          "frameData":  {
+                                            "startup":  "6",
+                                            "active":  "2",
+                                            "recovery":  "14",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "130e8bd9-6670-4711-8a3b-7d493a3c4ed6",
+                          "name":  "2M",
+                          "input":  "2M",
+                          "frameData":  {
+                                            "startup":  "10",
+                                            "active":  "6",
+                                            "recovery":  "15",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "Low",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "aa5e46c2-c0e8-449a-93b9-8f2138c81559",
+                          "name":  "2S",
+                          "input":  "2S",
+                          "frameData":  {
+                                            "startup":  "15",
+                                            "active":  "P",
+                                            "recovery":  "Total 43",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "f94a2403-ff74-4ba4-ac72-3ad31d0e1617",
+                          "name":  "2SS",
+                          "input":  "2SS",
+                          "frameData":  {
+                                            "startup":  "15",
+                                            "active":  "P",
+                                            "recovery":  "Total 43",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "c07ecbe0-5e57-46cd-940d-0a9bcc460a88",
+                          "name":  "2SSS",
+                          "input":  "2SSS",
+                          "frameData":  {
+                                            "startup":  "21",
+                                            "active":  "Until L",
+                                            "recovery":  "18",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "5-12 All",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "993af22d-9760-4262-a9ed-6c42d2e691ae",
+                          "name":  "5H",
+                          "input":  "5H",
+                          "frameData":  {
+                                            "startup":  "12",
+                                            "active":  "4",
+                                            "recovery":  "17",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "0d5c8176-e16e-4863-bd47-d929d12e0e2f",
+                          "name":  "5L",
+                          "input":  "5L",
+                          "frameData":  {
+                                            "startup":  "6",
+                                            "active":  "3",
+                                            "recovery":  "13",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "42043712-3bc7-4b9f-b1c2-649a98c13dc8",
+                          "name":  "5LL",
+                          "input":  "5LL",
+                          "frameData":  {
+                                            "startup":  "7",
+                                            "active":  "3",
+                                            "recovery":  "18",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "205ff4c1-9af0-42fb-b05f-0c084086cc2c",
+                          "name":  "5LLL",
+                          "input":  "5LLL",
+                          "frameData":  {
+                                            "startup":  "15 [25]",
+                                            "active":  "3",
+                                            "recovery":  "26",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "274f3149-0164-4996-a27a-6fcd5db2c15f",
+                          "name":  "5M",
+                          "input":  "5M",
+                          "frameData":  {
+                                            "startup":  "7",
+                                            "active":  "3",
+                                            "recovery":  "18",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "baa31bff-af88-423e-beec-c1f234379f4c",
+                          "name":  "5S",
+                          "input":  "5S",
+                          "frameData":  {
+                                            "startup":  "13",
+                                            "active":  "",
+                                            "recovery":  "25",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "e47e70cd-6573-4ebf-ad93-c38a8153c407",
+                          "name":  "6M",
+                          "input":  "6M",
+                          "frameData":  {
+                                            "startup":  "24",
+                                            "active":  "6",
+                                            "recovery":  "4+6L",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "70acfa95-285c-48df-8ce2-8f42135933ad",
+                          "name":  "j.2H",
+                          "input":  "j.2H",
+                          "frameData":  {
+                                            "startup":  "11",
+                                            "active":  "4",
+                                            "recovery":  "23",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "ce06f827-fe79-4fe0-b49d-486b586d765a",
+                          "name":  "j.H",
+                          "input":  "j.H",
+                          "frameData":  {
+                                            "startup":  "13",
+                                            "active":  "4",
+                                            "recovery":  "21",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "f29aff86-c6f9-4e6e-96dc-91b56ea341d3",
+                          "name":  "j.L",
+                          "input":  "j.L",
+                          "frameData":  {
+                                            "startup":  "6",
+                                            "active":  "3",
+                                            "recovery":  "11",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "67193d08-858c-49d0-afbf-36cbcf6eb823",
+                          "name":  "j.M",
+                          "input":  "j.M",
+                          "frameData":  {
+                                            "startup":  "10",
+                                            "active":  "3",
+                                            "recovery":  "16",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "c9d997a8-9652-401b-b9da-e703f34ec6f6",
+                          "name":  "j.S",
+                          "input":  "j.S",
+                          "frameData":  {
+                                            "startup":  "12",
+                                            "active":  "P",
+                                            "recovery":  "Total 32",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "common"
+                      },
+                      {
+                          "id":  "79f55558-1c85-4381-919f-b87e5b491c31",
+                          "name":  "Kaioken 2L",
+                          "input":  "Kaioken 2L",
+                          "frameData":  {
+                                            "startup":  "22",
+                                            "active":  "6",
+                                            "recovery":  "3+45L",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "bd5b20a5-e601-43c4-83e9-469cea7aed70",
+                          "name":  "Kaioken 2M",
+                          "input":  "Kaioken 2M",
+                          "frameData":  {
+                                            "startup":  "15",
+                                            "active":  "13",
+                                            "recovery":  "43",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "Low",
+                          "invuln":  "",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "672813aa-b146-486d-af5d-01796daeb269",
+                          "name":  "Kaioken 2S",
+                          "input":  "Kaioken 2S",
+                          "frameData":  {
+                                            "startup":  "9",
+                                            "active":  "3",
+                                            "recovery":  "52",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "2d40cd66-9525-427d-905c-4026356a7828",
+                          "name":  "Kaioken 5H",
+                          "input":  "Kaioken 5H",
+                          "frameData":  {
+                                            "startup":  "28",
+                                            "active":  "2",
+                                            "recovery":  "44",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "Throw",
+                          "invuln":  "1-30 All",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "d95d9b7b-34b9-448a-89fb-0e1e765da1ab",
+                          "name":  "Kaioken 5L",
+                          "input":  "Kaioken 5L",
+                          "frameData":  {
+                                            "startup":  "13",
+                                            "active":  "3",
+                                            "recovery":  "41",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "98a31e69-2001-4145-b6a6-87c2d1f91297",
+                          "name":  "Kaioken 5M",
+                          "input":  "Kaioken 5M",
+                          "frameData":  {
+                                            "startup":  "27",
+                                            "active":  "14",
+                                            "recovery":  "41 [43]",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "5-23 All",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "742e3f52-f550-46ee-b351-40c6c5802ee3",
+                          "name":  "Kaioken 5S",
+                          "input":  "Kaioken 5S",
+                          "frameData":  {
+                                            "startup":  "9",
+                                            "active":  "3",
+                                            "recovery":  "52",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "ab77abde-1a91-4ff2-9031-a297ecf59213",
+                          "name":  "Air Super Spirit Bomb",
+                          "input":  "j.214L+M",
+                          "frameData":  {
+                                            "startup":  "7+1",
+                                            "active":  "",
+                                            "recovery":  "Total 97",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "1-End All [1-61 All]",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "7fd06342-d741-4772-9f12-3c2a8a7b63f5",
+                          "name":  "Kaioken",
+                          "input":  "236L+M",
+                          "frameData":  {
+                                            "startup":  "9+0",
+                                            "active":  "",
+                                            "recovery":  "",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "",
+                          "invuln":  "4-9 All",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "9fca695c-ccb1-4745-8dbc-3c84605bdd96",
+                          "name":  "Kaioken Finisher",
+                          "input":  "Kaioken L+M",
+                          "frameData":  {
+                                            "startup":  "19",
+                                            "active":  "4",
+                                            "recovery":  "Until L+33L",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "1-22 All",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "8040adcd-468f-454d-8023-cd7275679442",
+                          "name":  "Super Spirit Bomb",
+                          "input":  "214L+M",
+                          "frameData":  {
+                                            "startup":  "7+1",
+                                            "active":  "",
+                                            "recovery":  "Total 96",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "1-End All [1-61 All]",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "15832b58-3e9f-4d11-a0a8-4799abac8f91",
+                          "name":  "x20 Kaioken Kamehameha",
+                          "input":  "Kaioken H+S Level 2",
+                          "frameData":  {
+                                            "startup":  "1+1",
+                                            "active":  "",
+                                            "recovery":  "",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "1-9 All",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "9dbb815e-79eb-4930-a4b9-993539ad59ed",
+                          "name":  "x3 Kaioken Kamehameha",
+                          "input":  "Kaioken H+S Level 1",
+                          "frameData":  {
+                                            "startup":  "1+3",
+                                            "active":  "64",
+                                            "recovery":  "Total 9+124",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "1-11 All",
+                          "type":  "super"
+                      },
+                      {
+                          "id":  "e7a8d518-9b5b-48b8-a391-a1aa4e4f041c",
+                          "name":  "Air H Heavy Elbow",
+                          "input":  "j.236H",
+                          "frameData":  {
+                                            "startup":  "17",
+                                            "active":  "8",
+                                            "recovery":  "20",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "4-16 All",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "898db742-943c-4dba-a42c-5e9fdb902a64",
+                          "name":  "Air Kamehameha",
+                          "input":  "j.236S",
+                          "frameData":  {
+                                            "startup":  "18",
+                                            "active":  "17",
+                                            "recovery":  "27",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "74f8443a-1576-4f5f-b2b4-61a38bca7cd0",
+                          "name":  "Air L Heavy Elbow",
+                          "input":  "j.236L",
+                          "frameData":  {
+                                            "startup":  "10",
+                                            "active":  "6",
+                                            "recovery":  "19",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "f8bc7c8e-2583-4201-befc-e925a46cc404",
+                          "name":  "Air M Heavy Elbow",
+                          "input":  "j.236M",
+                          "frameData":  {
+                                            "startup":  "26",
+                                            "active":  "8",
+                                            "recovery":  "20",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "4-19 All",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "66d27515-8670-4447-9391-237af82e2d7f",
+                          "name":  "Drop Down Shot",
+                          "input":  "j.2L",
+                          "frameData":  {
+                                            "startup":  "20~25 [11]",
+                                            "active":  "Until L",
+                                            "recovery":  "24",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "7-9~14 All\u003cbr\u003e[4-6 All]",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "d8e122b1-5d69-48f9-89e4-356f401b38cc",
+                          "name":  "Drop Down Shot",
+                          "input":  "j.2M",
+                          "frameData":  {
+                                            "startup":  "25~33 [15]",
+                                            "active":  "Until L",
+                                            "recovery":  "24",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "High",
+                          "invuln":  "8-10~18 All\u003cbr\u003e[4-6 All]",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "fd3b832c-f7bf-49f4-886b-d2e554f81105",
+                          "name":  "Everyone, lend me your energy!",
+                          "input":  "214S",
+                          "frameData":  {
+                                            "startup":  "",
+                                            "active":  "",
+                                            "recovery":  "Total 41~89",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "190c3735-f044-4f1f-bed8-048e259a8a37",
+                          "name":  "H Back Throw",
+                          "input":  "214H",
+                          "frameData":  {
+                                            "startup":  "18",
+                                            "active":  "8",
+                                            "recovery":  "19",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "Throw",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "18003470-e713-43b8-8741-8cadffac8314",
+                          "name":  "H Heavy Elbow",
+                          "input":  "236H",
+                          "frameData":  {
+                                            "startup":  "18",
+                                            "active":  "8",
+                                            "recovery":  "20",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "4-17 All",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "5d123cc5-ccab-4dd8-9b4a-60f7a8d36405",
+                          "name":  "Kamehameha",
+                          "input":  "236S",
+                          "frameData":  {
+                                            "startup":  "18",
+                                            "active":  "17",
+                                            "recovery":  "18",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "35509396-2901-408e-b9fa-9c37381dc479",
+                          "name":  "L Back Throw",
+                          "input":  "214L",
+                          "frameData":  {
+                                            "startup":  "20",
+                                            "active":  "1",
+                                            "recovery":  "25",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "Throw",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "8b3cf62a-c8c4-4013-a674-fff7c9f952d1",
+                          "name":  "L Heavy Elbow",
+                          "input":  "236L",
+                          "frameData":  {
+                                            "startup":  "10",
+                                            "active":  "6",
+                                            "recovery":  "19",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "93b5f931-0c4a-4437-8f39-afbd1940250a",
+                          "name":  "M Back Throw",
+                          "input":  "214M",
+                          "frameData":  {
+                                            "startup":  "22",
+                                            "active":  "8",
+                                            "recovery":  "25",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "Throw",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "3197b692-4f2d-457e-84ba-d19781160bee",
+                          "name":  "M Heavy Elbow",
+                          "input":  "236M",
+                          "frameData":  {
+                                            "startup":  "26",
+                                            "active":  "8",
+                                            "recovery":  "20",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "4-19 All",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "671e240d-b2f3-4032-b9c6-497f37f0fc1f",
+                          "name":  "Spirit Bomb (Level 1)",
+                          "input":  "214S 214S Level 1",
+                          "frameData":  {
+                                            "startup":  "21",
+                                            "active":  "P",
+                                            "recovery":  "33-50",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "7f3ac4e6-5aff-45a5-bc92-90f27e0e3c8f",
+                          "name":  "Spirit Bomb (Level 2)",
+                          "input":  "214S 214S Level 2",
+                          "frameData":  {
+                                            "startup":  "21",
+                                            "active":  "P",
+                                            "recovery":  "33-50",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "7d1dc55e-afd5-4289-86aa-6713d7f31ea6",
+                          "name":  "Spirit Bomb (Level 3)",
+                          "input":  "214S 214S Level 3",
+                          "frameData":  {
+                                            "startup":  "21",
+                                            "active":  "P",
+                                            "recovery":  "33-50",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "special"
+                      },
+                      {
+                          "id":  "cfa0e768-f820-492e-b387-e5f45db1ec95",
+                          "name":  "Energy Shockwave",
+                          "input":  "Assist A",
+                          "frameData":  {
+                                            "startup":  "28",
+                                            "active":  "3",
+                                            "recovery":  "35",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "All",
+                          "invuln":  "",
+                          "type":  "unique"
+                      },
+                      {
+                          "id":  "16a366a7-4b12-4a89-9e84-e4ee9a3b95c3",
+                          "name":  "Everyone, lend me your energy!",
+                          "input":  "Assist B",
+                          "frameData":  {
+                                            "startup":  "",
+                                            "active":  "",
+                                            "recovery":  "73",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "",
+                          "invuln":  "",
+                          "type":  "unique"
+                      },
+                      {
+                          "id":  "c100c402-f6ee-4e0e-bded-ecb9f15a345a",
+                          "name":  "Kamehameha",
+                          "input":  "Assist C",
+                          "frameData":  {
+                                            "startup":  "33 [20]",
+                                            "active":  "25",
+                                            "recovery":  "44",
+                                            "advantage":  "-"
+                                        },
+                          "guard":  "",
+                          "invuln":  "",
+                          "type":  "unique"
+                      }
+                  ]
+}
