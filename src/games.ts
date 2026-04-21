@@ -108,6 +108,8 @@ rosterCount: 10,
       { name: 'Special Moves', description: 'Fireball and uppercut archetypes with SNK-style inputs.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
     characters: [
       { id: 'jack-turner', name: 'Jack Turner', moveCount: 0 },
       { id: 'john-crawley', name: 'John Crawley', moveCount: 0 },
@@ -142,6 +144,8 @@ rosterCount: 10,
 
 rosterCount: 13,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -177,6 +181,8 @@ rosterCount: 9,
       { name: 'Desperation Move', description: 'Powerful super at low health.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
     characters: [
       { id: 'jin-fu-ha', name: 'Jin Fu-Ha', moveCount: 0 },
       { id: 'karman-cole', name: 'Karman Cole', moveCount: 0 },
@@ -210,6 +216,8 @@ rosterCount: 9,
 
 rosterCount: 8,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -229,6 +237,8 @@ rosterCount: 8,
 
     releaseYear: 1997,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [
       { id: 'asuka-karashima', name: 'Asuka Karashima', moveCount: 0 },
       { id: 'genichirou-shindo', name: 'Genichirou Shindo', moveCount: 0 },
@@ -264,6 +274,8 @@ rosterCount: 8,
 
 rosterCount: 30,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -287,6 +299,8 @@ rosterCount: 30,
 
 rosterCount: 7,
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
         characters: [
       { id: 'chilli-pepper', name: 'Chilli & Pepper', moveCount: 0 },
       { id: 'death-mask', name: 'Death Mask', moveCount: 0 },
@@ -331,6 +345,13 @@ rosterCount: 35,
       { name: 'Distortion Drive', description: 'Super moves costing 50% Heat gauge.'  }
     ],
 
+    notationSystem: 'numpad',
+    links: [
+      { title: 'Dustloop Wiki (BBCF)', url: 'https://dustloop.com/w/BBCF' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/586140/BlazBlue_Centralfiction/' }
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -365,6 +386,15 @@ rosterCount: 40,
       { name: 'Tag', description: 'Switch between your two characters freely.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Tag", "Anime"],
+    links: [
+      { title: 'Dustloop Wiki (BBTag)', url: 'https://dustloop.com/w/BBTag' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/702890/BlazBlue_Cross_Tag_Battle/' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/blazblue-cross-tag-battle-switch/' }
+    ],
     characters: [
       { id: 'adachi', name: 'Adachi', moveCount: 0 },
       { id: 'akatsuki', name: 'Akatsuki', moveCount: 0 },
@@ -429,6 +459,8 @@ rosterCount: 40,
 
 rosterCount: 8,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -452,6 +484,8 @@ rosterCount: 8,
 
 rosterCount: 8,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
         characters: [
       { id: 'alice', name: 'Alice', moveCount: 0 },
       { id: 'bakuryu', name: 'Bakuryu', moveCount: 0 },
@@ -484,6 +518,8 @@ rosterCount: 8,
 
 rosterCount: 10,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -507,6 +543,8 @@ rosterCount: 10,
 
 rosterCount: 13,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
         characters: [
       { id: 'alice', name: 'Alice', moveCount: 0 },
       { id: 'bakuryu', name: 'Bakuryu', moveCount: 0 },
@@ -544,6 +582,8 @@ rosterCount: 13,
 
 rosterCount: 17,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -567,6 +607,8 @@ rosterCount: 17,
 
 rosterCount: 8,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
         characters: [
       { id: 'alice', name: 'Alice', moveCount: 0 },
       { id: 'bakuryu', name: 'Bakuryu', moveCount: 0 },
@@ -607,6 +649,8 @@ rosterCount: 8,
 
 rosterCount: 10,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -641,6 +685,8 @@ rosterCount: 19,
       { name: 'Custom Combo', description: 'Alpha characters can activate free-form custom combos.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
     characters: [
         { id: 'ryu', name: 'Ryu', moveCount: 0 },
         { id: 'guile', name: 'Guile', moveCount: 0 },
@@ -702,6 +748,10 @@ rosterCount: 44,
       { name: 'Ratio System', description: 'Build a team with a total of 4 ratio points. Higher ratio = more health/damage. Allows 1-4 characters per team.'  }
     ],
 
+    notationSystem: 'traditional',
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
         { id: 'ryu', name: 'Ryu', moveCount: 0 },
         { id: 'ken', name: 'Ken', moveCount: 0 },
@@ -784,6 +834,11 @@ rosterCount: 29,
       { name: 'Finest KO', description: 'Special KO animation for finishing with a super.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D", "Vs."],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
         { id: 'ryu', name: 'Ryu', moveCount: 0 },
         { id: 'ken', name: 'Ken', moveCount: 0 },
@@ -853,6 +908,8 @@ rosterCount: 12,
       { name: 'Parts Damage', description: 'Specific mech parts can be damaged, affecting abilities.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
     characters: [
       { id: 'blodia', name: 'Blodia', moveCount: 0 },
       { id: 'reptos', name: 'Reptos', moveCount: 0 },
@@ -904,6 +961,11 @@ rosterCount: 11,
       { name: 'Guard Cancel', description: 'Counter-attack from blockstun. Costs meter.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'demitri', name: 'Demitri', moveCount: 0 },
       { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
@@ -940,6 +1002,11 @@ rosterCount: 11,
 
 rosterCount: 10,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
+    links: [
+      { title: 'FreeStepDodge', url: 'https://www.freestepdodge.com/' },
+    ],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -963,6 +1030,11 @@ rosterCount: 10,
 
 rosterCount: 14,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
+    links: [
+      { title: 'FreeStepDodge', url: 'https://www.freestepdodge.com/' },
+    ],
         characters: [
       { id: 'ayane', name: 'Ayane', moveCount: 0 },
       { id: 'bass', name: 'Bass', moveCount: 0 },
@@ -1001,6 +1073,11 @@ rosterCount: 14,
 
 rosterCount: 17,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
+    links: [
+      { title: 'FreeStepDodge', url: 'https://www.freestepdodge.com/' },
+    ],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -1024,6 +1101,11 @@ rosterCount: 17,
 
 rosterCount: 25,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
+    links: [
+      { title: 'FreeStepDodge', url: 'https://www.freestepdodge.com/' },
+    ],
         characters: [
       { id: 'ayane', name: 'Ayane', moveCount: 0 },
       { id: 'bass', name: 'Bass', moveCount: 0 },
@@ -1070,6 +1152,11 @@ rosterCount: 25,
 
 rosterCount: 29,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
+    links: [
+      { title: 'FreeStepDodge', url: 'https://www.freestepdodge.com/' },
+    ],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -1093,6 +1180,14 @@ rosterCount: 29,
 
 rosterCount: 29,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
+    links: [
+      { title: 'FreeStepDodge', url: 'https://www.freestepdodge.com/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/838380/DEAD_OR_ALIVE_6/' }
+    ],
         characters: [
       { id: 'ayane', name: 'Ayane', moveCount: 0 },
       { id: 'bass', name: 'Bass', moveCount: 0 },
@@ -1158,6 +1253,15 @@ rosterCount: 16,
       { name: 'Dodge', description: 'Quick sidestep with invincibility.' , input: 'B+M' }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Anime"],
+    links: [
+      { title: 'Dustloop Wiki (DNFD)', url: 'https://dustloop.com/w/DNFD' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/1216060/DNF_Duel/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/concept/10003819/' }
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -1194,6 +1298,11 @@ rosterCount: 11,
       { name: 'Plane Attack', description: 'Attack while switching planes for a surprise strike.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -1229,6 +1338,11 @@ rosterCount: 12,
       { name: 'Guard Cancel', description: 'Counter-attack during blockstun.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
       { id: 'blue-mary', name: 'Blue Mary', moveCount: 0 },
@@ -1277,6 +1391,11 @@ rosterCount: 16,
       { name: 'Boss Characters', description: 'Hidden boss characters playable with specific codes.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -1378,6 +1497,11 @@ rosterCount: 11,
       { name: 'Boss Battle', description: 'Face Geese Howard in the final boss fight at Geese Tower.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -1400,6 +1524,8 @@ rosterCount: 11,
 
 rosterCount: 14,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
         characters: [
       { id: 'akira', name: 'Akira', moveCount: 0 },
       { id: 'bean', name: 'Bean', moveCount: 0 },
@@ -1450,6 +1576,11 @@ rosterCount: 14,
       { name: 'Allen Snider', description: 'Returning EX characters with updated movesets from SF EX series.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/871200/FIGHTING_EX_LAYER/' }
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -1473,6 +1604,8 @@ rosterCount: 14,
 
 rosterCount: 7,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
         characters: [
       { id: 'bahn', name: 'Bahn', moveCount: 0 },
       { id: 'candy', name: 'Candy', moveCount: 0 },
@@ -1504,6 +1637,8 @@ rosterCount: 7,
 
 rosterCount: 9,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -1527,6 +1662,8 @@ rosterCount: 9,
 
 rosterCount: 10,
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Anime"],
         characters: [
       { id: 'heart', name: 'Heart', moveCount: 0 },
       { id: 'jagi', name: 'Jagi', moveCount: 0 },
@@ -1561,6 +1698,8 @@ rosterCount: 10,
 
 rosterCount: 9,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -1595,6 +1734,14 @@ rosterCount: 14,
       { name: 'Small/Large Jump', description: 'Tap up briefly for a short hop or hold for a full jump. Small jumps enable fast overheads and pressure.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/366240/GAROU_MARK_OF_THE_WOLVES/' }
+    ],
     characters: [
       { id: 'b-jenet', name: 'B. Jenet', moveCount: 0 },
       { id: 'dong-hwan', name: 'Dong Hwan', moveCount: 0 },
@@ -1633,6 +1780,8 @@ rosterCount: 14,
 
 rosterCount: 8,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -1668,6 +1817,15 @@ rosterCount: 35,
       { name: 'Ultimate Skills', description: 'Enhanced specials that override normal cooldowns.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Anime"],
+    links: [
+      { title: 'Dustloop Wiki (GBVSR)', url: 'https://dustloop.com/w/GBVSR' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/2157560/Granblue_Fantasy_Versus_Rising/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/concept/10008017/' }
+    ],
     characters: [
         { id: '2b', name: '2B', moveCount: 0 },
         { id: 'anila', name: 'Anila', moveCount: 0 },
@@ -1727,6 +1885,8 @@ rosterCount: 35,
 
 rosterCount: 14,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -1750,6 +1910,8 @@ rosterCount: 14,
 
 rosterCount: 12,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [
       { id: 'bristol-weller', name: 'Bristol Weller', moveCount: 0 },
       { id: 'chris-wayne', name: 'Chris Wayne', moveCount: 0 },
@@ -1798,6 +1960,8 @@ rosterCount: 12,
       { name: 'Gatling Combo', description: 'Chain normals in a specific order: P > K > S > HS > D for ground combos.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Anime"],
     characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -1844,6 +2008,7 @@ rosterCount: 33,
       { name: 'Dash Macro', description: 'Press two buttons to dash forward or back. Essential for movement and accessing run for pressure.'  }
     ],
 
+    notationSystem: 'numpad',
     characters: [
       { id: 'aba', name: 'A.B.A', moveCount: 64 },
       { id: 'anji', name: 'Anji', moveCount: 41 },
@@ -1913,6 +2078,8 @@ rosterCount: 16,
       { name: 'Gatling Combo', description: 'Chain normals in sequence: P > K > S > HS for ground combos.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Anime"],
     characters: [
       { id: 'aba', name: 'A.B.A', moveCount: 0 },
       { id: 'anji', name: 'Anji', moveCount: 0 },
@@ -1959,6 +2126,14 @@ rosterCount: 23,
       { name: 'YRC Slow', description: 'Yellow RC creates a slow-motion field, enabling unique setplay and mixups.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Anime"],
+    links: [
+      { title: 'Dustloop Wiki (GGXRD-R2)', url: 'https://dustloop.com/w/GGXRD-R2' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/520440/GUILTY_GEAR_Xrd_REV_2/' }
+    ],
     characters: [
       { id: 'answer', name: 'Answer', moveCount: 0 },
       { id: 'baiken', name: 'Baiken', moveCount: 0 },
@@ -2017,6 +2192,15 @@ rosterCount: 25,
       { name: 'Instant Kill', description: 'One-hit KO mode. Sacrifice Tension for an instant win.' , input: 'PKSH' }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Anime"],
+    links: [
+      { title: 'Dustloop Wiki (GGACR)', url: 'https://dustloop.com/w/GGACR' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/348550/Guilty_Gear_XX_Accent_Core_Plus_R/' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/guilty-gear-xx-accent-core-plus-r-switch/' }
+    ],
     characters: [
       { id: 'aba', name: 'A.B.A', moveCount: 0 },
       { id: 'anji', name: 'Anji', moveCount: 0 },
@@ -2082,6 +2266,11 @@ rosterCount: 25,
       { name: 'Crossup', description: 'Jump over the opponent with an attack that must be blocked in the opposite direction.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'ryu', name: 'Ryu', moveCount: 0 },
       { id: 'ken', name: 'Ken', moveCount: 0 },
@@ -2123,6 +2312,8 @@ rosterCount: 25,
 
 rosterCount: 15,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [
       { id: 'alessy', name: 'Alessy', moveCount: 0 },
       { id: 'chaka', name: 'Chaka', moveCount: 0 },
@@ -2162,6 +2353,8 @@ rosterCount: 15,
 
 rosterCount: 8,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -2185,6 +2378,8 @@ rosterCount: 8,
 
 rosterCount: 9,
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
         characters: [
       { id: 'alaric', name: 'Alaric', moveCount: 0 },
       { id: 'angus', name: 'Angus', moveCount: 0 },
@@ -2214,6 +2409,11 @@ rosterCount: 9,
 
     releaseYear: 1994,
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -2233,6 +2433,15 @@ rosterCount: 9,
 
     releaseYear: 2013,
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/577940/Killer_Instinct/' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/killer-instinct/C4FL0L6C09LG' }
+    ],
         characters: [
       { id: 'aganos', name: 'Aganos', moveCount: 0 },
       { id: 'aria', name: 'ARIA', moveCount: 0 },
@@ -2281,6 +2490,11 @@ rosterCount: 9,
 
     releaseYear: 1994,
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -2315,6 +2529,8 @@ rosterCount: 8,
       { name: 'Team Strategy', description: 'Character order and tagging strategy matters for team composition.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Tag"],
     characters: [
       { id: 'chung-paifu', name: 'Chung Paifu', moveCount: 0 },
       { id: 'gozu', name: 'Gozu', moveCount: 0 },
@@ -2347,6 +2563,8 @@ rosterCount: 8,
 
 rosterCount: 8,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -2381,6 +2599,11 @@ rosterCount: 12,
       { name: 'OTG Attacks', description: 'Off-the-ground attacks for extended combo damage.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D", "Vs."],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'spider-man', name: 'Spider Man', moveCount: 0 },
       { id: 'captain-america', name: 'Captain America', moveCount: 0 },
@@ -2426,6 +2649,8 @@ rosterCount: 12,
       { name: 'Cross-Over Combination', description: 'Both characters perform supers simultaneously.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D", "3v3", "Vs."],
     characters: [
       { id: 'cyclops', name: 'Cyclops', moveCount: 0 },
       { id: 'wolverine', name: 'Wolverine', moveCount: 0 },
@@ -2490,6 +2715,10 @@ rosterCount: 39,
       { name: 'Guard Cancel', description: 'Alpha Counter during blockstun to switch characters. Resets pressure at the cost of 1 meter.'  }
     ],
 
+    notationSystem: 'traditional',
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'ruby-heart', name: 'Ruby Heart', moveCount: 0 },
       { id: 'amingo', name: 'Amingo', moveCount: 0 },
@@ -2581,6 +2810,11 @@ rosterCount: 14,
       { name: 'Tag System', description: 'Switch between your two main characters.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D", "3v3", "Vs."],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'ryu', name: 'Ryu', moveCount: 0 },
       { id: 'chun-li', name: 'Chun Li', moveCount: 0 },
@@ -2638,6 +2872,11 @@ rosterCount: 24,
       { name: 'Advancing Guard', description: 'Push opponent away during blockstun.' , input: 'PP (blocking)' }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D", "3v3", "Vs."],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -2659,6 +2898,8 @@ rosterCount: 24,
 
     platform: "Neo Geo Arcade PlayStation 2, PC",
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [
       { id: 'keith-wayne', name: 'Keith Wayne', moveCount: 0 },
       { id: 'annie-hamilton', name: 'Annie Hamilton', moveCount: 0 },
@@ -2699,6 +2940,13 @@ rosterCount: 24,
 
     platform: "PlayStation 3 Xbox 360 Windows, PC",
 
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/237110/Mortal_Kombat_Komplete_Edition/' }
+    ],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -2808,6 +3056,10 @@ rosterCount: 24,
 
     rosterCount: 10,
 
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
         characters: [],
 
     tabs: ['Special Moves', 'Finishers', 'Normal Moves', 'Normal Throws']
@@ -2832,6 +3084,10 @@ rosterCount: 24,
 
 rosterCount: 14,
 
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -2857,6 +3113,13 @@ rosterCount: 14,
 
 rosterCount: 32,
 
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/307780/Mortal_Kombat_X/' }
+    ],
         characters: [
       { id: 'alien', name: 'Alien', moveCount: 0 },
       { id: 'cassie-cage', name: 'Cassie Cage', moveCount: 0 },
@@ -2912,6 +3175,10 @@ rosterCount: 32,
 
 rosterCount: 21,
 
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -2946,6 +3213,11 @@ rosterCount: 14,
       { name: 'Guard Cancel', description: 'Counter-attack during blockstun at the cost of meter.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'demitri', name: 'Demitri', moveCount: 0 },
       { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
@@ -2994,6 +3266,8 @@ rosterCount: 14,
       { name: 'Dodge', description: 'Invincible evasion move.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -3029,6 +3303,16 @@ rosterCount: 20,
       { name: 'Shadow Type', description: 'S-Hold characters have shadow versions with different meter and burst mechanics.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Anime"],
+    links: [
+      { title: 'Dustloop Wiki (P4U2)', url: 'https://dustloop.com/w/P4U2' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/1602010/Persona_4_Arena_Ultimax/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/concept/10004185/' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/persona-4-arena-ultimax-switch/' }
+    ],
     characters: [
       { id: 'adachi', name: 'Adachi', moveCount: 0 },
       { id: 'akihiko', name: 'Akihiko', moveCount: 0 },
@@ -3085,6 +3369,8 @@ rosterCount: 13,
       { name: 'Weapon Combat', description: '3D weapon-based combat with unique character armaments.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
     characters: [
         { id: 'hayato', name: 'Hayato', moveCount: 0 },
         { id: 'june', name: 'June', moveCount: 0 },
@@ -3139,6 +3425,8 @@ rosterCount: 13,
       { name: 'Gem Steal', description: 'Hitting the opponent knocks gems from them for you to collect.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
     characters: [
       { id: 'ryu', name: 'Ryu', moveCount: 0 },
       { id: 'ken', name: 'Ken', moveCount: 0 },
@@ -3175,6 +3463,8 @@ rosterCount: 13,
 
 rosterCount: 7,
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -3198,6 +3488,8 @@ rosterCount: 7,
 
 rosterCount: 7,
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
         characters: [
       { id: 'arik', name: 'Arik', moveCount: 0 },
       { id: 'malys', name: 'Malys', moveCount: 0 },
@@ -3237,6 +3529,8 @@ rosterCount: 7,
       { name: 'Guard Cancel', description: 'Escape pressure with a counter.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
     characters: [
         { id: 'batsu', name: 'Batsu', moveCount: 0 },
         { id: 'hinata', name: 'Hinata', moveCount: 0 },
@@ -3285,6 +3579,8 @@ rosterCount: 7,
 
 rosterCount: 10,
 
+    notationSystem: 'numpad',
+    tags: ["Arena"],
         characters: [
       { id: 'brad', name: 'Brad', moveCount: 0 },
       { id: 'burn', name: 'Burn', moveCount: 0 },
@@ -3319,6 +3615,8 @@ rosterCount: 10,
 
 rosterCount: 13,
 
+    notationSystem: 'numpad',
+    tags: ["Arena"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -3342,6 +3640,8 @@ rosterCount: 13,
 
 rosterCount: 13,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [
       { id: 'abubo', name: 'Abubo', moveCount: 0 },
       { id: 'alice', name: 'Alice', moveCount: 0 },
@@ -3379,6 +3679,8 @@ rosterCount: 13,
 
 rosterCount: 8,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -3413,6 +3715,11 @@ rosterCount: 16,
       { name: 'Hidden Ability', description: 'Secret super with specific conditions.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
       { id: 'billy-kane', name: 'Billy Kane', moveCount: 0 },
@@ -3464,6 +3771,11 @@ rosterCount: 19,
       { name: 'Quick Recovery', description: 'Fast getup from knockdowns.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -3498,6 +3810,11 @@ rosterCount: 19,
       { name: 'Hidden Ability', description: 'Secret super under specific conditions.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
       { id: 'billy-kane', name: 'Billy Kane', moveCount: 0 },
@@ -3554,6 +3871,10 @@ rosterCount: 25,
       { name: 'Meditation', description: 'Stand still and hold a button to slowly build meter. Risky but rewards patient play.'  }
     ],
 
+    notationSystem: 'numpad',
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -3585,6 +3906,17 @@ rosterCount: 25,
       { name: 'Blade Catch', description: 'Catch the opponent\'s weapon barehanded. Extremely risky but devastating if successful.' , input: '6+E (precise timing)' }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/1342260/SAMURAI_SHODOWN/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/concept/232208/' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/samurai-shodown/9MSFDNQ4R1NQ' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/samurai-shodown-switch/' }
+    ],
     characters: [
       { id: 'baiken', name: 'Baiken', moveCount: 0 },
       { id: 'basara', name: 'Basara', moveCount: 0 },
@@ -3645,6 +3977,11 @@ rosterCount: 15,
       { name: 'Pursuit Attack', description: 'Attack a downed opponent for extra damage. Can be avoided with quick recovery.' , input: '2+C (near downed)' }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -3679,6 +4016,11 @@ rosterCount: 11,
       { name: 'Short Hop', description: 'Quick hop for overheads.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'amakusa', name: 'Amakusa', moveCount: 0 },
       { id: 'basara', name: 'Basara', moveCount: 0 },
@@ -3706,6 +4048,11 @@ rosterCount: 11,
     name: "Samurai Shodown IV: Amakusa's Revenge (1996)",
     isDraft: true,
     rosterCount: 16,
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'amakusa', name: 'Amakusa', moveCount: 0 },
       { id: 'basara', name: 'Basara', moveCount: 0 },
@@ -3754,6 +4101,11 @@ rosterCount: 19,
       { name: 'State of Nothingness', description: 'Time slows down when activated at low health.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'basara', name: 'Basara', moveCount: 0 },
       { id: 'charlotte', name: 'Charlotte', moveCount: 0 },
@@ -3808,6 +4160,11 @@ rosterCount: 1,
       { name: 'Mu no Kyouchi', description: 'State of Nothingness time-slow at critical health.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -3830,6 +4187,8 @@ rosterCount: 1,
 
 rosterCount: 11,
 
+    notationSystem: 'numpad',
+    tags: ["3D"],
         characters: [
       { id: 'carol', name: 'Carol', moveCount: 0 },
       { id: 'chung', name: 'Chung', moveCount: 0 },
@@ -3876,6 +4235,8 @@ rosterCount: 16,
       { name: 'Costume Customization', description: 'Customize character outfits and accessories.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Tag"],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -3910,6 +4271,8 @@ rosterCount: 37,
       { name: 'Roll', description: 'Invincible evasion roll.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Vs."],
     characters: [
       { id: 'akuma', name: 'Akuma', moveCount: 0 },
       { id: 'athena', name: 'Athena', moveCount: 0 },
@@ -3971,6 +4334,8 @@ rosterCount: 37,
 
 rosterCount: 10,
 
+    notationSystem: 'tekken',
+    tags: ["3D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -3994,6 +4359,8 @@ rosterCount: 10,
 
 rosterCount: 10,
 
+    notationSystem: 'tekken',
+    tags: ["3D"],
         characters: [
       { id: 'cervantes', name: 'Cervantes', moveCount: 0 },
       { id: 'hwang', name: 'Hwang', moveCount: 0 },
@@ -4055,6 +4422,7 @@ rosterCount: 25,
       { name: 'Modern Controls', description: 'Simplified control scheme with auto-combos, one-button specials, and assisted inputs. Trades some move access for accessibility.'  }
     ],
 
+    notationSystem: 'traditional',
     characters: [
       { id: 'aki', name: 'A.K.I.', moveCount: 0 },
       { id: 'akuma', name: 'Akuma', moveCount: 0 },
@@ -4119,6 +4487,11 @@ rosterCount: 25,
       { name: 'Throw Escape', description: 'Input the throw command during the throw startup to escape. Timing is strict.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'adon', name: 'Adon', moveCount: 0 },
       { id: 'akuma', name: 'Akuma', moveCount: 0 },
@@ -4167,6 +4540,11 @@ rosterCount: 19,
       { name: 'Throw Range', description: 'Normal throws have generous range. Tick throws from blocked lights are a core mixup.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -4202,6 +4580,11 @@ rosterCount: 37,
       { name: 'Dramatic Battle', description: '2v1 mode where two players team up against a single CPU or human opponent.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
         { id: 'ryu', name: 'Ryu', moveCount: 0 },
         { id: 'ken', name: 'Ken', moveCount: 0 },
@@ -4276,6 +4659,11 @@ rosterCount: 21,
       { name: 'Super Cancels', description: 'Cancel special moves directly into super moves for extended combos.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -4309,6 +4697,11 @@ rosterCount: 21,
       { name: 'Quick Standing', description: 'Tech a knockdown by pressing down as you land. Reduces recovery time and resets neutral faster.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'alex', name: 'Alex', moveCount: 0 },
       { id: 'dudley', name: 'Dudley', moveCount: 0 },
@@ -4358,6 +4751,11 @@ rosterCount: 11,
       { name: 'Personal Action', description: 'Character-specific taunt that grants unique buffs when completed successfully.' , input: 'HP+HK' }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -4395,6 +4793,14 @@ rosterCount: 43,
       { name: 'Throw Loop', description: 'Shimmy or throw after plus frames. Tick throw pressure is a fundamental mixup.'  }
     ],
 
+    notationSystem: 'traditional',
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/310950/Street_Fighter_V/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0102-CUSA01200_00-SF5CHAMPBDL00000' }
+    ],
     characters: [
       { id: 'abigail', name: 'Abigail', moveCount: 0 },
       { id: 'akuma', name: 'Akuma', moveCount: 0 },
@@ -4475,6 +4881,10 @@ rosterCount: 17,
       { name: 'Safe Jumps', description: 'Time a jump attack to land and recover before the opponent\'s reversal becomes active. Core okizeme technique.'  }
     ],
 
+    notationSystem: 'traditional',
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -4506,6 +4916,11 @@ rosterCount: 17,
       { name: 'Safe Jump', description: 'Time a jump-in to land and block before reversals can hit.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'balrog', name: 'Balrog', moveCount: 0 },
       { id: 'blanka', name: 'Blanka', moveCount: 0 },
@@ -4546,6 +4961,8 @@ rosterCount: 17,
 
 rosterCount: 8,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -4581,6 +4998,8 @@ rosterCount: 23,
       { name: 'Giants', description: 'Some characters are giants that fight solo but have massive reach and health.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D", "3v3", "Vs."],
     characters: [
       { id: 'alex', name: 'Alex', moveCount: 0 },
       { id: 'casshan', name: 'Casshan', moveCount: 0 },
@@ -4628,6 +5047,11 @@ rosterCount: 23,
 
 rosterCount: 17,
 
+    notationSystem: 'tekken',
+    tags: ["3D"],
+    links: [
+      { title: 'Wavu Wiki', url: 'https://wavu.wiki/t/Main_Page' },
+    ],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -4651,6 +5075,11 @@ rosterCount: 17,
 
 rosterCount: 21,
 
+    notationSystem: 'tekken',
+    tags: ["3D"],
+    links: [
+      { title: 'Wavu Wiki', url: 'https://wavu.wiki/t/Main_Page' },
+    ],
         characters: [
       { id: 'alex', name: 'Alex', moveCount: 0 },
       { id: 'anna', name: 'Anna', moveCount: 0 },
@@ -4696,6 +5125,7 @@ rosterCount: 21,
 
 rosterCount: 33,
 
+    tags: ["3D"],
         characters: [
           { id: 'alisa-bosconovitch', name: 'Alisa Bosconovitch', moveCount: 189 },
           { id: 'asuka', name: 'Asuka', moveCount: 146 },
@@ -4761,6 +5191,11 @@ rosterCount: 33,
     mameRomset: "",
     name: 'Tekken Tag Tournament',
     tagline: "The Tag Battle",
+    notationSystem: 'tekken',
+    tags: ["3D", "Tag"],
+    links: [
+      { title: 'Wavu Wiki', url: 'https://wavu.wiki/t/Main_Page' },
+    ],
     characters: [
       { id: 'anna-williams', name: 'Anna Williams', moveCount: 0 },
       { id: 'armor-king', name: 'Armor King', moveCount: 0 },
@@ -4805,6 +5240,11 @@ rosterCount: 33,
     mameRomset: "",
     name: 'Tekken Tag Tournament 2',
     tagline: "We Are Tekken",
+    notationSystem: 'tekken',
+    tags: ["3D", "Tag"],
+    links: [
+      { title: 'Wavu Wiki', url: 'https://wavu.wiki/t/Main_Page' },
+    ],
     characters: []
   },
 
@@ -4836,6 +5276,11 @@ rosterCount: 24,
       { name: 'Jumping Attacks', description: 'Hyper hop, hop, normal jump, and super jump give 4 jump arcs for pressure.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
       { id: 'athena-asamiya', name: 'Athena Asamiya', moveCount: 0 },
@@ -4896,6 +5341,11 @@ rosterCount: 33,
       { name: 'Emergency Evasion', description: 'Quick dodge with invincibility. Punishable on recovery.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -4931,6 +5381,11 @@ rosterCount: 34,
       { name: 'MAX2 Super', description: 'Ultimate super available at low health in MAX mode.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'angel', name: 'Angel', moveCount: 0 },
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
@@ -4999,6 +5454,14 @@ rosterCount: 39,
       { name: 'Quick Emergency Evasion', description: 'Dodge attacks with invincibility frames. Can be done from neutral or while blocking.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/222880/THE_KING_OF_FIGHTERS_2002_UNLIMITED_MATCH/' }
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -5034,6 +5497,11 @@ rosterCount: 30,
       { name: 'Just Defend', description: 'Tap back at the moment of impact for reduced blockstun and meter gain.' , input: '4 (tap)' }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'ash-crimson', name: 'Ash Crimson', moveCount: 0 },
       { id: 'athena-asamiya', name: 'Athena Asamiya', moveCount: 0 },
@@ -5099,6 +5567,14 @@ rosterCount: 32,
       { name: 'Guard Cancel Blowback', description: 'Counter-attack from blockstun. Wall bounces.' , input: 'CD (blocking)' }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/222940/THE_KING_OF_FIGHTERS_XIII_STEAM_EDITION/' }
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -5134,6 +5610,14 @@ rosterCount: 47,
       { name: 'Blowback Attack', description: 'Standing CD is a heavy attack that wall-bounces on hit.' , input: 'CD' }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/571260/THE_KING_OF_FIGHTERS_XIV_STEAM_EDITION/' }
+    ],
     characters: [
       { id: 'alice', name: 'Alice', moveCount: 0 },
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
@@ -5217,6 +5701,15 @@ rosterCount: 48,
       { name: 'Climax Super', description: 'The most powerful super move. Costs 3 bars and delivers cinematic damage. Only available to the anchor.'  }
     ],
 
+    notationSystem: 'numpad',
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/1498570/THE_KING_OF_FIGHTERS_XV/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/concept/10003911/' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/THE-KING-OF-FIGHTERS-XV/9P0741K1SLKZ' }
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -5240,6 +5733,11 @@ rosterCount: 48,
 
 rosterCount: 19,
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
         characters: [
       { id: 'alba-meira', name: 'Alba Meira', moveCount: 0 },
       { id: 'athena-asamiya', name: 'Athena Asamiya', moveCount: 0 },
@@ -5282,6 +5780,11 @@ rosterCount: 19,
 
 rosterCount: 17,
 
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -5297,6 +5800,11 @@ rosterCount: 17,
     name: "The King of Fighters: Maximum Impact Regulation 'A' (2007)",
     isDraft: true,
     rosterCount: 5,
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'ash-crimson', name: 'Ash Crimson', moveCount: 0 },
       { id: 'blue-mary', name: 'Blue Mary', moveCount: 0 },
@@ -5334,6 +5842,11 @@ rosterCount: 12,
       { name: 'Dash', description: 'Forward/backward dash for mobility.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -5368,6 +5881,14 @@ rosterCount: 19,
       { name: 'Guard Cancel', description: 'Counter-attack from block.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/702110/THE_LAST_BLADE_2/' }
+    ],
     characters: [
       { id: 'akari-ichijou', name: 'Akari Ichijou', moveCount: 0 },
       { id: 'awakened-kaede', name: 'Awakened Kaede', moveCount: 0 },
@@ -5425,6 +5946,10 @@ rosterCount: 50,
       { name: 'Flight/Airdash', description: 'Many characters have flight or 8-way airdashes enabling unique aerial mobility and mixups.'  }
     ],
 
+    notationSystem: 'traditional',
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -5448,6 +5973,11 @@ rosterCount: 50,
 
 rosterCount: 25,
 
+    notationSystem: 'mk',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
         characters: [
       { id: 'cyrax', name: 'Cyrax', moveCount: 0 },
       { id: 'ermac', name: 'Ermac', moveCount: 0 },
@@ -5506,6 +6036,14 @@ rosterCount: 41,
       { name: 'Super Combo', description: 'Traditional super move that costs full Super gauge. Rarely used due to EX efficiency.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/45760/Ultra_Street_Fighter_IV/' }
+    ],
     characters: [],
 
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
@@ -5540,6 +6078,14 @@ rosterCount: 41,
       { name: 'Creeping Edge', description: 'Forward dodge that gains GRD but is vulnerable to throws.', input: '3D' }
     ],
 
+    notationSystem: 'numpad',
+    links: [
+      { title: 'Dustloop Wiki (UNI2)', url: 'https://dustloop.com/w/UNI2' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/1809400/UNDER_NIGHT_INBIRTH_II_SysCeles/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/concept/10007285/' }
+    ],
     characters: [
       { id: 'hyde', name: 'Hyde', moveCount: 0 },
       { id: 'linne', name: 'Linne', moveCount: 0 },
@@ -5600,6 +6146,11 @@ rosterCount: 41,
       { name: 'Guard Cancel', description: 'Counter from blockstun.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'demitri', name: 'Demitri', moveCount: 0 },
       { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
@@ -5648,6 +6199,11 @@ rosterCount: 41,
       { name: 'Pursuit Attack', description: 'OTG attacks on downed opponents.' , input: '2+HP (near downed)' }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'demitri', name: 'Demitri', moveCount: 0 },
       { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
@@ -5697,6 +6253,11 @@ rosterCount: 41,
       { name: 'Pursuit', description: 'OTG attacks on downed foes.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'demitri', name: 'Demitri', moveCount: 0 },
       { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
@@ -5736,6 +6297,11 @@ rosterCount: 41,
 
     platform: "Arcade Sega Saturn Sega 32X, PC",
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
+    links: [
+      { title: 'VFDC', url: 'https://virtuafighter.com/wiki/' },
+    ],
         characters: [
       { id: 'akira', name: 'Akira', moveCount: 0 },
       { id: 'jacky', name: 'Jacky', moveCount: 0 },
@@ -5768,6 +6334,11 @@ rosterCount: 41,
 
 rosterCount: 10,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
+    links: [
+      { title: 'VFDC', url: 'https://virtuafighter.com/wiki/' },
+    ],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -5791,6 +6362,11 @@ rosterCount: 10,
 
 rosterCount: 12,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
+    links: [
+      { title: 'VFDC', url: 'https://virtuafighter.com/wiki/' },
+    ],
         characters: [
       { id: 'akira', name: 'Akira', moveCount: 0 },
       { id: 'aoi', name: 'Aoi', moveCount: 0 },
@@ -5827,6 +6403,11 @@ rosterCount: 12,
 
 rosterCount: 14,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
+    links: [
+      { title: 'VFDC', url: 'https://virtuafighter.com/wiki/' },
+    ],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -5856,6 +6437,14 @@ rosterCount: 14,
 
 rosterCount: 19,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
+    links: [
+      { title: 'VFDC', url: 'https://virtuafighter.com/wiki/' },
+    ],
+    stores: [
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/concept/10002344/' }
+    ],
         characters: [
       { id: 'akira', name: 'Akira', moveCount: 0 },
       { id: 'aoi', name: 'Aoi', moveCount: 0 },
@@ -5899,6 +6488,8 @@ rosterCount: 19,
 
 rosterCount: 12,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -5921,6 +6512,8 @@ rosterCount: 12,
 
 rosterCount: 9,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [
       { id: 'arina', name: 'Arina', moveCount: 0 },
       { id: 'bonus-kun', name: 'Bonus-Kun', moveCount: 0 },
@@ -5954,6 +6547,8 @@ rosterCount: 9,
 
 rosterCount: 8,
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -5977,6 +6572,8 @@ rosterCount: 8,
 
 rosterCount: 8,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [
       { id: 'brocken', name: 'Brocken', moveCount: 0 },
       { id: 'dragon', name: 'Dragon', moveCount: 0 },
@@ -6009,6 +6606,8 @@ rosterCount: 8,
 
 rosterCount: 14,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -6032,6 +6631,8 @@ rosterCount: 14,
 
 rosterCount: 7,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [
       { id: 'captain-kidd', name: 'Captain Kidd', moveCount: 0 },
       { id: 'dragon', name: 'Dragon', moveCount: 0 },
@@ -6063,6 +6664,8 @@ rosterCount: 7,
 
 rosterCount: 7,
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -6097,6 +6700,11 @@ rosterCount: 18,
       { name: 'Infinite Combos', description: 'Many characters have infinite/loop combos — a feature, not a bug.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D", "3v3", "Vs."],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'cyclops', name: 'Cyclops', moveCount: 0 },
       { id: 'wolverine', name: 'Wolverine', moveCount: 0 },
@@ -6149,6 +6757,8 @@ rosterCount: 12,
       { name: 'Infinity Gems', description: 'Collect gems for temporary power boosts.'  }
     ],
 
+    notationSystem: 'traditional',
+    tags: ["2D"],
     characters: [
       { id: 'wolverine', name: 'Wolverine', moveCount: 0 },
       { id: 'cyclops', name: 'Cyclops', moveCount: 0 },
@@ -6186,6 +6796,8 @@ rosterCount: 12,
 
 rosterCount: 8,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
         characters: [
       { id: 'cybershell', name: 'Cybershell', moveCount: 0 },
       { id: 'draco', name: 'Draco', moveCount: 0 },
@@ -6218,6 +6830,8 @@ rosterCount: 8,
 
 rosterCount: 8,
 
+    notationSystem: 'traditional',
+    tags: ["3D"],
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -6234,6 +6848,8 @@ rosterCount: 8,
     tagline: "Fantasy RPG Fighter",
     isDraft: true,
     rosterCount: 10,
+    notationSystem: 'traditional',
+    tags: ["2D"],
     characters: [
       { id: 'leo', name: 'Leo', moveCount: 0 },
       { id: 'mukuro', name: 'Mukuro', moveCount: 0 },
@@ -6252,6 +6868,8 @@ rosterCount: 8,
     tagline: "Enter the Arena",
     isDraft: true,
     rosterCount: 37,
+    notationSystem: 'traditional',
+    tags: ["Arena"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -6265,6 +6883,8 @@ rosterCount: 8,
     tagline: "Enter the Arena",
     isDraft: true,
     rosterCount: 95,
+    notationSystem: 'traditional',
+    tags: ["Arena"],
     characters: [
       { id: 'android-13', name: 'Android 13', moveCount: 0 },
       { id: 'android-16', name: 'Android 16', moveCount: 0 },
@@ -6374,6 +6994,8 @@ rosterCount: 8,
     tagline: "Let's Rock!",
     isDraft: true,
     rosterCount: 7,
+    notationSystem: 'numpad',
+    tags: ["2D", "Anime"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -6384,6 +7006,11 @@ rosterCount: 8,
     name: "Guilty Gear Xrd -SIGN-",
     tagline: "Heaven or Hell",
     isDraft: true,
+    notationSystem: 'numpad',
+    tags: ["2D", "Anime"],
+    links: [
+      { title: 'Dustloop Wiki (GGXRD)', url: 'https://dustloop.com/w/GGXRD' },
+    ],
     characters: [
       { id: 'axl', name: 'Axl', moveCount: 0 },
       { id: 'bedman', name: 'Bedman', moveCount: 0 },
@@ -6415,6 +7042,11 @@ rosterCount: 8,
     tagline: "Gods Among Us",
     isDraft: true,
     rosterCount: 30,
+    notationSystem: 'mk',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -6428,6 +7060,14 @@ rosterCount: 8,
     tagline: "Every Battle Defines You",
     isDraft: true,
     rosterCount: 40,
+    notationSystem: 'mk',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/627270/Injustice_2/' }
+    ],
     characters: [
       { id: 'aquaman', name: 'Aquaman', moveCount: 0 },
       { id: 'atrocitus', name: 'Atrocitus', moveCount: 0 },
@@ -6483,6 +7123,10 @@ rosterCount: 8,
     tagline: "There Is No Knowledge That Is Not Power",
     isDraft: true,
     rosterCount: 15,
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -6497,6 +7141,10 @@ rosterCount: 8,
     tagline: "Even Your Soul is Not Safe",
     isDraft: true,
     rosterCount: 18,
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'fujin', name: 'Fujin', moveCount: 0 },
       { id: 'goro', name: 'Goro', moveCount: 0 },
@@ -6530,6 +7178,10 @@ rosterCount: 8,
     tagline: "A Deadly Alliance",
     isDraft: true,
     rosterCount: 24,
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -6544,6 +7196,10 @@ rosterCount: 8,
     tagline: "The End is Near",
     isDraft: true,
     rosterCount: 63,
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'ashrah', name: 'Ashrah', moveCount: 0 },
       { id: 'baraka', name: 'Baraka', moveCount: 0 },
@@ -6624,6 +7280,15 @@ rosterCount: 8,
     rosterCount: 37,
         tags: ['3D'],
 
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/976310/Mortal_Kombat_11/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/concept/229966/' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/mortal-kombat-11/BQ29MQKQ7HWN' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/mortal-kombat-11-switch/' }
+    ],
     characters: [
       { id: 'ashrah', name: 'Ashrah', moveCount: 0 },
       { id: 'baraka', name: 'Baraka', moveCount: 0 },
@@ -6672,6 +7337,11 @@ rosterCount: 8,
     name: "Samurai Shodown IV: Amakusa's Revenge",
     isDraft: true,
     rosterCount: 16,
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'amakusa', name: 'Amakusa', moveCount: 0 },
       { id: 'basara', name: 'Basara', moveCount: 0 },
@@ -6702,6 +7372,11 @@ rosterCount: 8,
     tagline: "The Legend Will Never Die",
     isDraft: true,
     rosterCount: 17,
+    notationSystem: 'tekken',
+    tags: ["3D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -6715,6 +7390,11 @@ rosterCount: 8,
     tagline: "The Weapon Master",
     isDraft: true,
     rosterCount: 21,
+    notationSystem: 'tekken',
+    tags: ["3D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'astaroth', name: 'Astaroth', moveCount: 0 },
       { id: 'cassandra', name: 'Cassandra', moveCount: 0 },
@@ -6750,6 +7430,11 @@ rosterCount: 8,
     tagline: "What Lies Ahead?",
     isDraft: true,
     rosterCount: 40,
+    notationSystem: 'tekken',
+    tags: ["3D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -6763,6 +7448,11 @@ rosterCount: 8,
     tagline: "The Two Swords",
     isDraft: true,
     rosterCount: 28,
+    notationSystem: 'tekken',
+    tags: ["3D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'algol', name: 'Algol', moveCount: 0 },
       { id: 'amy', name: 'Amy', moveCount: 0 },
@@ -6805,6 +7495,11 @@ rosterCount: 8,
     tagline: "A New Generation",
     isDraft: true,
     rosterCount: 25,
+    notationSystem: 'tekken',
+    tags: ["3D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -6818,6 +7513,14 @@ rosterCount: 8,
     tagline: "Welcome Back to the Stage of History",
     isDraft: true,
     rosterCount: 29,
+    notationSystem: 'tekken',
+    tags: ["3D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/544750/SOULCALIBUR_VI/' }
+    ],
     characters: [
       { id: '2b', name: '2B', moveCount: 0 },
       { id: 'amy', name: 'Amy', moveCount: 0 },
@@ -6861,6 +7564,11 @@ rosterCount: 8,
     tagline: "The Champion is Here",
     isDraft: true,
     rosterCount: 12,
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -6874,6 +7582,11 @@ rosterCount: 8,
     tagline: "Faster and Furious",
     isDraft: true,
     rosterCount: 12,
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'balrog', name: 'Balrog', moveCount: 0 },
       { id: 'blanka', name: 'Blanka', moveCount: 0 },
@@ -6900,6 +7613,11 @@ rosterCount: 8,
     tagline: "15 Years of Fighting",
     isDraft: true,
     rosterCount: 16,
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -6912,6 +7630,11 @@ rosterCount: 8,
     name: "Street Fighter Alpha: Warriors' Dreams",
     isDraft: true,
     rosterCount: 12,
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'adon', name: 'Adon', moveCount: 0 },
       { id: 'akuma', name: 'Akuma', moveCount: 0 },
@@ -6939,6 +7662,11 @@ rosterCount: 8,
     tagline: "Fight for the Future",
     isDraft: true,
     rosterCount: 19,
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
     stores: [
       { platform: 'Steam', url: 'https://store.steampowered.com/app/586200/Street_Fighter_30th_Anniversary_Collection/' },
@@ -6958,6 +7686,11 @@ rosterCount: 8,
     tagline: "The Revival",
     isDraft: true,
     rosterCount: 25,
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'abel', name: 'Abel', moveCount: 0 },
       { id: 'akuma', name: 'Akuma', moveCount: 0 },
@@ -6997,6 +7730,11 @@ rosterCount: 8,
     tagline: "The Ultimate Evolution",
     isDraft: true,
     rosterCount: 35,
+    notationSystem: 'traditional',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7010,6 +7748,11 @@ rosterCount: 8,
     tagline: "A New Era of Combat",
     isDraft: true,
     rosterCount: 25,
+    notationSystem: 'tekken',
+    tags: ["3D"],
+    links: [
+      { title: 'Wavu Wiki', url: 'https://wavu.wiki/t/Main_Page' },
+    ],
     characters: [
       { id: 'anna-williams', name: 'Anna Williams', moveCount: 0 },
       { id: 'bryan-fury', name: 'Bryan Fury', moveCount: 0 },
@@ -7046,6 +7789,11 @@ rosterCount: 8,
     tagline: "The Tag Battle",
     isDraft: true,
     rosterCount: 34,
+    notationSystem: 'tekken',
+    tags: ["3D", "Tag"],
+    links: [
+      { title: 'Wavu Wiki', url: 'https://wavu.wiki/t/Main_Page' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7059,6 +7807,11 @@ rosterCount: 8,
     tagline: "Return of the King",
     isDraft: true,
     rosterCount: 25,
+    notationSystem: 'tekken',
+    tags: ["3D"],
+    links: [
+      { title: 'Wavu Wiki', url: 'https://wavu.wiki/t/Main_Page' },
+    ],
     characters: [
       { id: 'bryan-fury', name: 'Bryan Fury', moveCount: 0 },
       { id: 'christie-monteiro', name: 'Christie Monteiro', moveCount: 0 },
@@ -7095,6 +7848,11 @@ rosterCount: 8,
     tagline: "The Iron Fist Awakening",
     isDraft: true,
     rosterCount: 32,
+    notationSystem: 'tekken',
+    tags: ["3D"],
+    links: [
+      { title: 'Wavu Wiki', url: 'https://wavu.wiki/t/Main_Page' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7108,6 +7866,11 @@ rosterCount: 8,
     tagline: "Bloodline Rebellion",
     isDraft: true,
     rosterCount: 41,
+    notationSystem: 'tekken',
+    tags: ["3D"],
+    links: [
+      { title: 'Wavu Wiki', url: 'https://wavu.wiki/t/Main_Page' },
+    ],
     characters: [
       { id: 'alisa-bosconovitch', name: 'Alisa Bosconovitch', moveCount: 0 },
       { id: 'anna-williams', name: 'Anna Williams', moveCount: 0 },
@@ -7163,6 +7926,11 @@ rosterCount: 8,
     tagline: "We Are Tekken",
     isDraft: true,
     rosterCount: 52,
+    notationSystem: 'tekken',
+    tags: ["3D", "Tag"],
+    links: [
+      { title: 'Wavu Wiki', url: 'https://wavu.wiki/t/Main_Page' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7176,6 +7944,14 @@ rosterCount: 8,
     tagline: "The Mishima Saga Ends",
     isDraft: true,
     rosterCount: 51,
+    notationSystem: 'tekken',
+    tags: ["3D"],
+    links: [
+      { title: 'Wavu Wiki', url: 'https://wavu.wiki/t/Main_Page' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/389730/TEKKEN_7/' }
+    ],
     characters: [
       { id: 'akuma', name: 'Akuma', moveCount: 0 },
       { id: 'alisa-bosconovitch', name: 'Alisa Bosconovitch', moveCount: 0 },
@@ -7240,6 +8016,11 @@ rosterCount: 8,
     name: "The King of Fighters '95",
     isDraft: true,
     rosterCount: 27,
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7252,6 +8033,11 @@ rosterCount: 8,
     name: "The King of Fighters '96",
     isDraft: true,
     rosterCount: 26,
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
       { id: 'athena-asamiya', name: 'Athena Asamiya', moveCount: 0 },
@@ -7291,6 +8077,11 @@ rosterCount: 8,
     name: "The King of Fighters '97",
     isDraft: true,
     rosterCount: 31,
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7303,6 +8094,14 @@ rosterCount: 8,
     name: "The King of Fighters '98",
     isDraft: true,
     rosterCount: 34,
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/222420/THE_KING_OF_FIGHTERS_98_ULTIMATE_MATCH_FINAL_EDITION/' }
+    ],
     characters: [
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
       { id: 'athena-asamiya', name: 'Athena Asamiya', moveCount: 0 },
@@ -7350,6 +8149,11 @@ rosterCount: 8,
     name: "The King of Fighters '99",
     isDraft: true,
     rosterCount: 28,
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7363,6 +8167,11 @@ rosterCount: 8,
     tagline: "The 11th Tournament",
     isDraft: true,
     rosterCount: 45,
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'adelheid', name: 'Adelheid', moveCount: 0 },
       { id: 'ash', name: 'Ash', moveCount: 0 },
@@ -7421,6 +8230,11 @@ rosterCount: 8,
     tagline: "Rebirth of the King",
     isDraft: true,
     rosterCount: 25,
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7433,6 +8247,11 @@ rosterCount: 8,
     name: "The King of Fighters: Maximum Impact Regulation 'A'",
     isDraft: true,
     rosterCount: 5,
+    notationSystem: 'numpad',
+    tags: ["2D", "Team"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'ash-crimson', name: 'Ash Crimson', moveCount: 0 },
       { id: 'blue-mary', name: 'Blue Mary', moveCount: 0 },
@@ -7452,6 +8271,8 @@ rosterCount: 8,
     tagline: "Enter the Arena",
     isDraft: true,
     rosterCount: 8,
+    notationSystem: 'traditional',
+    tags: ["2D"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7465,6 +8286,8 @@ rosterCount: 8,
     tagline: "Enter the Arena",
     isDraft: true,
     rosterCount: 23,
+    notationSystem: 'traditional',
+    tags: ["2D"],
     characters: [
       { id: 'chin-wo', name: 'Chin Wo', moveCount: 0 },
       { id: 'crispy', name: 'Crispy', moveCount: 0 },
@@ -7501,6 +8324,11 @@ rosterCount: 8,
     tagline: "Actress Again",
     isDraft: true,
     rosterCount: 25,
+    notationSystem: 'numpad',
+    tags: ["2D", "Anime"],
+    links: [
+      { title: 'Dustloop Wiki (MBAACC)', url: 'https://dustloop.com/w/MBAACC' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7514,6 +8342,17 @@ rosterCount: 8,
     tagline: "Type Lumina",
     isDraft: true,
     rosterCount: 21,
+    notationSystem: 'numpad',
+    tags: ["2D", "Anime"],
+    links: [
+      { title: 'Dustloop Wiki (MBTL)', url: 'https://dustloop.com/w/MBTL' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/1372280/MELTY_BLOOD_TYPE_LUMINA/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/concept/10003100/' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/melty-blood-type-lumina-switch/' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/melty-blood-type-lumina/9N8J2V1RFKQD' }
+    ],
     characters: [
       { id: 'akiha-tohno', name: 'Akiha Tohno', moveCount: 0 },
       { id: 'aoko-aozaki', name: 'Aoko Aozaki', moveCount: 0 },
@@ -7549,6 +8388,8 @@ rosterCount: 8,
     tagline: "Enter the Arena",
     isDraft: true,
     rosterCount: 12,
+    notationSystem: 'traditional',
+    tags: ["Platform"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7562,6 +8403,16 @@ rosterCount: 8,
     tagline: "The Encore",
     isDraft: true,
     rosterCount: 18,
+    notationSystem: 'numpad',
+    tags: ["2D", "Anime"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/245170/Skullgirls_2nd_Encore/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/concept/229898/' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/skullgirls-2nd-encore-switch/' }
+    ],
     characters: [
       { id: 'annie', name: 'Annie', moveCount: 0 },
       { id: 'beowulf', name: 'Beowulf', moveCount: 0 },
@@ -7594,6 +8445,8 @@ rosterCount: 8,
     tagline: "Choose Your Character!",
     isDraft: true,
     rosterCount: 12,
+    notationSystem: 'traditional',
+    tags: ["Platform"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7607,6 +8460,8 @@ rosterCount: 8,
     tagline: "The Melee",
     isDraft: true,
     rosterCount: 26,
+    notationSystem: 'traditional',
+    tags: ["Platform"],
     characters: [
       { id: 'bowser', name: 'Bowser', moveCount: 0 },
       { id: 'captain-falcon', name: 'Captain Falcon', moveCount: 0 },
@@ -7647,6 +8502,8 @@ rosterCount: 8,
     tagline: "The Brawl Begins",
     isDraft: true,
     rosterCount: 39,
+    notationSystem: 'traditional',
+    tags: ["Platform"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7660,6 +8517,8 @@ rosterCount: 8,
     name: "Them's Fightin' Herds",
     isDraft: true,
     rosterCount: 7,
+    notationSystem: 'traditional',
+    tags: ["Platform"],
     characters: [
       { id: 'arizona', name: 'Arizona', moveCount: 0 },
       { id: 'oleander', name: 'Oleander', moveCount: 0 },
@@ -7678,6 +8537,8 @@ rosterCount: 8,
     name: "Melty Blood: Type Lumina - Wikipedia",
     tagline: "Type Lumina (Wiki)",
     isDraft: true,
+    notationSystem: 'numpad',
+    tags: ["2D", "Anime"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7692,6 +8553,8 @@ rosterCount: 8,
     releaseYear: 1995,
     platform: "SNES, Genesis, PC",
     rosterCount: 8,
+    notationSystem: 'traditional',
+    tags: ["2D"],
     characters: [
       { id: 'bane', name: 'Bane', moveCount: 0 },
       { id: 'divada', name: 'Divada', moveCount: 0 },
@@ -7712,6 +8575,8 @@ rosterCount: 8,
     name: "Bio F.R.E.A.K.S.",
     tagline: "Enter the Arena",
     isDraft: true,
+    notationSystem: 'traditional',
+    tags: ["2D"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7723,6 +8588,11 @@ rosterCount: 8,
     name: "Fatal Fury: Wild Ambition",
     tagline: "Wild Ambition",
     isDraft: true,
+    notationSystem: 'numpad',
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [
       { id: 'terry-bogard', name: 'Terry Bogard', moveCount: 0 },
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
@@ -7748,6 +8618,8 @@ rosterCount: 8,
     mameRomset: "",
     name: "Fighters' Impact",
     isDraft: true,
+    notationSystem: 'numpad',
+    tags: ["3D"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7758,6 +8630,8 @@ rosterCount: 8,
     mameRomset: "",
     name: "Heaven's Gate",
     isDraft: true,
+    notationSystem: 'numpad',
+    tags: ["2D"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7769,6 +8643,8 @@ rosterCount: 8,
     name: "Tobal 2",
     tagline: "Enter the Arena",
     isDraft: true,
+    notationSystem: 'traditional',
+    tags: ["3D"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7780,6 +8656,8 @@ rosterCount: 8,
     name: "Ultraman Fighting Evolution",
     tagline: "Enter the Arena",
     isDraft: true,
+    notationSystem: 'numpad',
+    tags: ["2D"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7791,6 +8669,8 @@ rosterCount: 8,
     name: "War Gods",
     tagline: "Enter the Arena",
     isDraft: true,
+    notationSystem: 'traditional',
+    tags: ["2D"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7801,6 +8681,8 @@ rosterCount: 8,
     name: "Aggressors of Dark Kombat",
     tagline: "Enter the Arena",
     isDraft: true,
+    notationSystem: 'numpad',
+    tags: ["2D"],
     characters: [
       { id: 'joe-kusanagi', name: 'Joe Kusanagi', moveCount: 0 },
       { id: 'leonhard-domador', name: 'Leonhard Domador', moveCount: 0 },
@@ -7820,6 +8702,8 @@ rosterCount: 8,
     name: "Chaos Code: New Sign of Catastrophe",
     tagline: "Enter the Arena",
     isDraft: true,
+    notationSystem: 'numpad',
+    tags: ["2D", "Anime"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7842,6 +8726,8 @@ rosterCount: 8,
       { name: 'Guard Cancel', description: 'Counter-attack during block.'  },
       { name: 'Guts System', description: 'Reduced damage at low health for comebacks.'  }
     ],
+    notationSystem: 'traditional',
+    tags: ["2D"],
     characters: [
       { id: 'batsu-ichimonji', name: 'Batsu Ichimonji', moveCount: 0 },
       { id: 'hinata-wakaba', name: 'Hinata Wakaba', moveCount: 0 },
@@ -7863,6 +8749,8 @@ rosterCount: 8,
     name: "Star Gladiator Episode I Final Crusade",
     tagline: "Enter the Arena",
     isDraft: true,
+    notationSystem: 'traditional',
+    tags: ["2D"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7873,6 +8761,8 @@ rosterCount: 8,
     name: "TMNT Tournament Fighters (Genesis)",
     tagline: "Enter the Arena",
     isDraft: true,
+    notationSystem: 'traditional',
+    tags: ["2D"],
     characters: [
       { id: 'leonardo', name: 'Leonardo', moveCount: 0 },
       { id: 'donatello', name: 'Donatello', moveCount: 0 },
@@ -7894,6 +8784,8 @@ rosterCount: 8,
     name: "TMNT Tournament Fighters (NES)",
     tagline: "Enter the Arena",
     isDraft: true,
+    notationSystem: 'traditional',
+    tags: ["2D"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -7904,6 +8796,8 @@ rosterCount: 8,
     name: "TMNT Tournament Fighters (SNES)",
     tagline: "Enter the Arena",
     isDraft: true,
+    notationSystem: 'traditional',
+    tags: ["2D"],
     characters: [
       { id: 'leonardo', name: 'Leonardo', moveCount: 0 },
       { id: 'donatello', name: 'Donatello', moveCount: 0 },
@@ -7943,6 +8837,8 @@ rosterCount: 8,
       { name: 'Front Step', description: 'Forward dash with invincibility frames.'  }
     ],
 
+    notationSystem: 'numpad',
+    tags: ["2D"],
     characters: [],
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
   },
@@ -7956,6 +8852,8 @@ rosterCount: 8,
     releaseYear: 1997,
     platform: "Arcade, PlayStation, PC",
     rosterCount: 10,
+    notationSystem: 'traditional',
+    tags: ["2D"],
     characters: [
       { id: 'batsu-ichimonji', name: 'Batsu Ichimonji', moveCount: 0 },
       { id: 'hinata-wakaba', name: 'Hinata Wakaba', moveCount: 0 },
@@ -7981,6 +8879,8 @@ rosterCount: 8,
     releaseYear: 2023,
     platform: 'PC',
     rosterCount: 12,
+    notationSystem: 'traditional',
+    tags: ["Platform"],
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Unique Attacks']
   }
@@ -7995,6 +8895,8 @@ rosterCount: 8,
     releaseYear: 2013,
     platform: 'Arcade, PlayStation 4, PC',
     rosterCount: 16,
+    notationSystem: 'numpad',
+    tags: ["2D", "Anime"],
     characters: [
       { id: 'bravo', name: 'Bravo', moveCount: 0 },
       { id: 'cait-sith', name: 'Cait & Sith', moveCount: 0 },
@@ -8027,6 +8929,10 @@ rosterCount: 8,
     releaseYear: 2008,
     platform: 'PlayStation 3, Xbox 360, PC',
     rosterCount: 25,
+    tags: ["2D"],
+    links: [
+      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
     characters: [],
     tabs: ['Special Moves', 'Heroic Brutality', 'Fatality', 'Super Combos', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Unique Attacks']
   }
@@ -8042,6 +8948,10 @@ rosterCount: 8,
     releaseYear: 2021,
     platform: 'Arcade, PC',
     rosterCount: 27,
+    tags: ["2D", "Anime"],
+    links: [
+      { title: 'Dustloop Wiki (AH3)', url: 'https://dustloop.com/w/AH3' },
+    ],
     characters: [
       { id: 'heart-aino', name: 'Heart Aino', moveCount: 0 },
       { id: 'saki-tsuzura', name: 'Saki Tsuzura', moveCount: 0 },
@@ -8084,6 +8994,7 @@ rosterCount: 8,
     releaseYear: 2004,
     platform: 'Arcade, PlayStation 2',
     rosterCount: 10,
+    tags: ["2D", "Anime"],
     characters: [],
     tabs: ['Special Moves', 'Offensive Art', 'Defensive Art', 'Critical Art', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Unique Attacks']
   }
