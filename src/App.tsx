@@ -12,7 +12,6 @@ import { FightcadeSyncView } from './FightcadeSyncView';
 import { useFightcadeSync } from './useFightcadeSync';
 import { useTheme } from './useTheme';
 import { BottomHeader } from './BottomHeader';
-import { AdminDataEntryView } from './AdminDataEntryView';
 import type { CardTheme } from './types';
 import { CARD_THEMES } from './types';
 
@@ -20,7 +19,7 @@ import { SUPPORTED_GAMES } from './games';
 
 export const App: React.FC = () => {
 
-  const [currentView, setCurrentView] = useState<'game_select' | 'char_select' | 'move_list' | 'combo_view' | 'fightcade_sync' | 'main_screen' | 'admin'>('game_select');
+  const [currentView, setCurrentView] = useState<'game_select' | 'char_select' | 'move_list' | 'combo_view' | 'fightcade_sync' | 'main_screen'>('game_select');
   const [selectedGame, setSelectedGame] = useState<GameDefinition | null>(null);
   const [selectedCharacter, setSelectedCharacter] = useState<string | null>(null);
   const [selectedPlaylist, setSelectedPlaylist] = useState<PlaylistItem[]>(() => {
@@ -114,18 +113,9 @@ export const App: React.FC = () => {
     };
   }, []);
 
-  // Hidden hotkey to enter admin view
-  useEffect(() => {
-    const handleKeyDown = (e: KeyboardEvent) => {
-      if (e.ctrlKey && e.shiftKey && e.key === 'A') {
-        setCurrentView('admin');
-      }
-    };
-    window.addEventListener('keydown', handleKeyDown);
-    return () => window.removeEventListener('keydown', handleKeyDown);
-  }, []);
 
-  const navigate = (view: 'game_select' | 'char_select' | 'move_list' | 'combo_view' | 'fightcade_sync' | 'main_screen' | 'admin', game: GameDefinition | null = selectedGame, char: string | null = selectedCharacter) => {
+
+  const navigate = (view: 'game_select' | 'char_select' | 'move_list' | 'combo_view' | 'fightcade_sync' | 'main_screen', game: GameDefinition | null = selectedGame, char: string | null = selectedCharacter) => {
     window.history.pushState({ view, gameId: game?.id, charId: char }, '', '');
     setSelectedGame(game);
     setSelectedCharacter(char);
@@ -355,10 +345,6 @@ export const App: React.FC = () => {
       />;
       break;
     }
-    case 'admin': {
-      viewComponent = <AdminDataEntryView onBack={() => window.history.back()} />;
-      break;
-    }
     default:
       viewComponent = <div>Unknown View Error</div>;
   }
@@ -377,7 +363,6 @@ export const App: React.FC = () => {
         }}
         onOpenFightcadeSync={currentView !== 'fightcade_sync' ? () => navigate('fightcade_sync') : undefined}
         syncConnected={syncState.connected}
-        onOpenAdmin={() => setCurrentView("admin")}
         theme={theme}
         onSetTheme={setTheme}
       />
