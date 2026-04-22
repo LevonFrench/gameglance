@@ -10682,7 +10682,7 @@ rosterCount: 8,
       { id: 'terry-bogard', name: 'Terry Bogard', moveCount: 0 }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
-  },,
+  },
   {
     id: 'eternal-champions',
 
@@ -11075,7 +11075,6 @@ rosterCount: 8,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
-,,
 
   {
     id: 'weaponlord',
@@ -11116,7 +11115,6 @@ rosterCount: 8,
 
     mameRomset: "",
     name: "Bio F.R.E.A.K.S.",
-    tagline: "Enter the Arena",
     notationSystem: 'traditional',
     tags: ["2D"],
     developer: 'Saffire',
@@ -11242,7 +11240,6 @@ rosterCount: 8,
 
     mameRomset: "",
     name: "Tobal 2",
-    tagline: "Enter the Arena",
     notationSystem: 'traditional',
     tags: ["3D"],
     developer: 'DreamFactory',
@@ -11270,14 +11267,12 @@ rosterCount: 8,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
-,
 
   {
     id: 'war-gods',
 
     mameRomset: "",
     name: "War Gods",
-    tagline: "Enter the Arena",
     notationSystem: 'traditional',
     tags: ["2D"],
     developer: 'Midway',
@@ -11370,8 +11365,7 @@ rosterCount: 8,
       { id: 'vein', name: 'Vein', moveCount: 0 }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Unique Attacks']
-  }
-  ,
+  },
   {
     id: 'rival-schools-united-by-fate',
     mameRomset: "",
@@ -11438,7 +11432,7 @@ rosterCount: 8,
       { id: 'zelkin-fiskekrogen', name: 'Zelkin Fiskekrogen', moveCount: 0 }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
-  }
+  },
 
   {
     id: 'hokuto-no-ken',
@@ -11475,6 +11469,6 @@ rosterCount: 8,
       { id: 'heart', name: 'Heart', moveCount: 0 }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
-  },,,
-,,,
+  },
+
 ];
