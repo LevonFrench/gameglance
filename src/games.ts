@@ -545,6 +545,14 @@ rosterCount: 13,
 
     notationSystem: 'traditional',
     tags: ["3D"],
+    systemMechanics: [
+        { name: "Beast Drive", description: "A devastating super attack available only in Beast Form. Costs full Beast Gauge and deals massive cinematic damage." },
+        { name: "Beast Form", description: "Transform into a powerful beast. Increased damage, speed, and access to Beast-specific moves. Drains Beast Gauge over time." },
+        { name: "Hyper Beast Form", description: "An enhanced transformation at critical health. Further boosts stats beyond normal Beast Form." },
+        { name: "Guard Cancel", description: "Cancel blockstun into a counterattack by spending meter. Essential defensive reversal." },
+        { name: "Just Guard", description: "Precisely timed blocks that create frame advantage and allow faster counterattacks." },
+    ],
+
         characters: [
       { id: 'alice', name: 'Alice', moveCount: 0 },
       { id: 'bakuryu', name: 'Bakuryu', moveCount: 0 },
@@ -584,6 +592,14 @@ rosterCount: 17,
 
     notationSystem: 'traditional',
     tags: ["3D"],
+    systemMechanics: [
+        { name: "Beast Form", description: "Transform into a powerful beast with enhanced abilities. Each character has a unique animal form with distinct moves." },
+        { name: "Beast Drive", description: "Cinematic super attack exclusive to Beast Form. High damage finisher that consumes the Beast Gauge." },
+        { name: "Career Mode", description: "RPG-style progression system where characters can level up stats and unlock new abilities." },
+        { name: "Guard Break", description: "Charged unblockable attacks that shatter the opponent's guard, leaving them open." },
+        { name: "Wall Hits", description: "Arena walls can be used to extend combos and create wallsplat situations for additional damage." },
+    ],
+
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -1078,6 +1094,14 @@ rosterCount: 17,
     links: [
       { title: 'FreeStepDodge', url: 'https://www.freestepdodge.com/' },
     ],
+    systemMechanics: [
+        { name: "Triangle System", description: "Strikes beat throws, throws beat holds, holds beat strikes. The core rock-paper-scissors system of DOA." },
+        { name: "Counter Hold", description: "Directional counter throws that reverse incoming attacks. Must match the attack height (high/mid/low)." },
+        { name: "Stun System", description: "Certain attacks put opponents into stun states. Follow up with guaranteed combos before they recover." },
+        { name: "Danger Zones", description: "Multi-tiered interactive stages with exploding walls, cliffs, and environmental hazards that deal bonus damage." },
+        { name: "Tag Mode", description: "Two-character tag team battles with tag-in attacks and assist combos." },
+    ],
+
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -1106,6 +1130,14 @@ rosterCount: 25,
     links: [
       { title: 'FreeStepDodge', url: 'https://www.freestepdodge.com/' },
     ],
+    systemMechanics: [
+        { name: "Triangle System", description: "The core RPS: strikes beat throws, throws beat holds, holds beat strikes. Refined with tighter hold windows." },
+        { name: "Counter Hold", description: "Directional counter holds for high, mid-punch, mid-kick, and low attacks. Tighter timing than DOA3." },
+        { name: "Stun System", description: "Launch opponents into stagger states. Critical stuns prevent holds, guaranteeing follow-up damage." },
+        { name: "Danger Zones", description: "Interactive multi-level stages with walls, cliffs, and environmental hazards." },
+        { name: "Wall Game", description: "Characters near walls can be wall-splatted for extended combos and stage transitions." },
+    ],
+
         characters: [
       { id: 'ayane', name: 'Ayane', moveCount: 0 },
       { id: 'bass', name: 'Bass', moveCount: 0 },
@@ -1681,6 +1713,14 @@ rosterCount: 10,
 
     notationSystem: 'numpad',
     tags: ["2D", "Anime"],
+    systemMechanics: [
+        { name: "Boost System", description: "A dash mechanic that allows characters to close distance rapidly. Can be chained into attacks for aggressive pressure." },
+        { name: "Aura System", description: "Build Aura by attacking. At max Aura, gain access to powered-up specials and devastating super moves." },
+        { name: "Fatal KO", description: "A unique finishing mechanic true to the anime. Land the killing blow to trigger a cinematic death sequence." },
+        { name: "Guard Cancel", description: "Cancel blockstun into a counterattack. Essential defensive escape option." },
+        { name: "Banishing Strike", description: "A universal launcher that sends opponents into the air for juggle combos.", input: "E" },
+    ],
+
         characters: [
       { id: 'heart', name: 'Heart', moveCount: 0 },
       { id: 'jagi', name: 'Jagi', moveCount: 0 },
@@ -2372,6 +2412,13 @@ rosterCount: 8,
 
     notationSystem: 'traditional',
     tags: ["3D"],
+    systemMechanics: [
+        { name: "Chi System", description: "Build Chi through combat. Spend it on powered-up special attacks and devastating finishing moves." },
+        { name: "Counter System", description: "Timed counter moves that reverse opponent attacks and create openings." },
+        { name: "Multi-Tier Stages", description: "Fight across vertically connected stages, knocking opponents to lower or upper levels." },
+        { name: "Taunt", description: "Taunting builds additional Chi meter at the risk of leaving yourself vulnerable." },
+    ],
+
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -2926,6 +2973,13 @@ rosterCount: 24,
 
     notationSystem: 'numpad',
     tags: ["2D"],
+    systemMechanics: [
+        { name: "Stress Gauge", description: "Builds as you take damage. At maximum stress, your character enters a powered-up state with enhanced moves." },
+        { name: "Matrimelee System", description: "A suitor-based mechanic where characters fight for the princess. Winning rounds unlocks story progression." },
+        { name: "Counter System", description: "Timed defensive counters that reverse momentum and punish predictable offense." },
+        { name: "Super Moves", description: "Powerful cinematic attacks available when the Stress Gauge is full." },
+    ],
+
         characters: [
       { id: 'keith-wayne', name: 'Keith Wayne', moveCount: 0 },
       { id: 'annie-hamilton', name: 'Annie Hamilton', moveCount: 0 },
@@ -3222,6 +3276,13 @@ rosterCount: 21,
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
+    systemMechanics: [
+        { name: "Fighting Styles", description: "Each character has three fighting styles: two martial arts and one weapon. Switch freely during combat.", input: "L1" },
+        { name: "Combo Breaker", description: "Interrupt the opponent's combo. Limited uses per match (3 breakers). A crucial defensive tool." },
+        { name: "Stage Interactions", description: "Environmental death traps and hazards integrated into stages. Knock opponents into them for instant kills." },
+        { name: "Hara-Kiri", description: "A self-finishing move. If you lose the round, quickly input the Hara-Kiri to deny your opponent their Fatality." },
+    ],
+
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -3685,6 +3746,14 @@ rosterCount: 13,
 
     notationSystem: 'numpad',
     tags: ["2D"],
+    systemMechanics: [
+        { name: "Tag System", description: "Two-character tag team battles. Switch characters mid-combo or use tag-in attacks for pressure." },
+        { name: "First Impact", description: "A combo-starting launcher that initiates aerial juggle sequences." },
+        { name: "Super Cancels", description: "Cancel special moves into super moves for extended damage at the cost of meter." },
+        { name: "Guard Cancel", description: "Cancel blockstun into a reversal attack by spending meter." },
+        { name: "Desperation Moves", description: "Powerful super attacks available when meter is full. Can be comboed into from normals and specials." },
+    ],
+
         characters: [
       { id: 'abubo', name: 'Abubo', moveCount: 0 },
       { id: 'alice', name: 'Alice', moveCount: 0 },
@@ -4096,6 +4165,14 @@ rosterCount: 11,
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
+    systemMechanics: [
+        { name: "Slash/Bust System", description: "Choose between two versions of your character (Slash or Bust), each with different special moves and supers." },
+        { name: "Rage Gauge", description: "Builds when taking damage. When full, damage output increases significantly." },
+        { name: "Weapon Break", description: "Certain attacks can disarm the opponent, drastically reducing their damage output for the rest of the round." },
+        { name: "POW Explosion", description: "A powerful one-time burst that knocks the opponent away and grants a temporary power boost." },
+        { name: "No Contest", description: "If both players agree, the round can be restarted. A unique sportsmanship mechanic." },
+    ],
+
     characters: [
       { id: 'amakusa', name: 'Amakusa', moveCount: 0 },
       { id: 'basara', name: 'Basara', moveCount: 37 },
@@ -5006,6 +5083,13 @@ rosterCount: 8,
 
     notationSystem: 'traditional',
     tags: ["3D"],
+    systemMechanics: [
+        { name: "Limb Damage", description: "Target specific body parts to permanently weaken them during the match. Damaged limbs reduce attack effectiveness." },
+        { name: "Chi System", description: "Build Chi through attacks. Spend on powered-up moves and healing abilities." },
+        { name: "Environmental Combat", description: "Fully interactive 3D arenas with walls, poles, and objects that can be used offensively." },
+        { name: "Recovery", description: "Spend Chi to heal damaged limbs, restoring your character's full combat effectiveness." },
+    ],
+
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -5781,6 +5865,14 @@ rosterCount: 19,
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
+    systemMechanics: [
+        { name: "Stylish Art", description: "Extended combo system allowing flashy multi-hit sequences with specific timing." },
+        { name: "Super Cancels", description: "Cancel special moves into super moves for enhanced combo damage." },
+        { name: "3D Movement", description: "Full 3D movement with sidesteps and evasion, unlike the traditional 2D KOF games." },
+        { name: "Power Gauge", description: "Standard KOF meter system. Build through attacks and spend on supers and cancels." },
+        { name: "Guard Break", description: "Unblockable attacks that shatter the opponent's guard when fully charged." },
+    ],
+
         characters: [
       { id: 'alba-meira', name: 'Alba Meira', moveCount: 0 },
       { id: 'athena-asamiya', name: 'Athena Asamiya', moveCount: 0 },
@@ -5828,6 +5920,14 @@ rosterCount: 17,
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
+    systemMechanics: [
+        { name: "Stylish Art", description: "Enhanced combo system with juggle chains and wall-bounce extensions." },
+        { name: "Super Cancels", description: "Cancel specials into supers for extended damage combos." },
+        { name: "Sabaki", description: "Specific moves that absorb certain attack types and counter with a punishing follow-up." },
+        { name: "3D Sidestep", description: "Full 3D movement system with sidestep attacks and evasive maneuvers." },
+        { name: "Power Gauge", description: "Multi-level meter system powering supers, cancels, and MAX mode activation." },
+    ],
+
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -6451,6 +6551,15 @@ rosterCount: 14,
     links: [
       { title: 'VFDC', url: 'https://virtuafighter.com/wiki/' },
     ],
+    systemMechanics: [
+        { name: "Evade System", description: "Tap up or down to sidestep into the foreground or background. Core 3D defensive movement." },
+        { name: "Sabaki", description: "Certain moves that automatically deflect specific attack types and counter with a built-in punish." },
+        { name: "Throw Escape", description: "Break throws by inputting the correct throw command within a small window. Multiple escape options." },
+        { name: "Stagger Recovery", description: "Mash buttons to recover faster from stagger states, reducing the opponent's guaranteed follow-up window." },
+        { name: "Wall Game", description: "Stages with walls allow wall combos, wall stagger, and extended damage near boundaries." },
+        { name: "Weight Classes", description: "Character weight affects combo potential. Lighter characters float higher; heavier ones drop faster." },
+    ],
+
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -6893,6 +7002,13 @@ rosterCount: 8,
     rosterCount: 10,
     notationSystem: 'traditional',
     tags: ["2D"],
+    systemMechanics: [
+        { name: "Level Up System", description: "Gain experience from landing attacks and defeating opponents. Level up to unlock new special moves and abilities." },
+        { name: "Gem System", description: "Collect gems during battle that grant passive bonuses like increased damage, defense, or meter gain." },
+        { name: "Parry", description: "Tap forward at the moment of impact to parry an attack, leaving the opponent completely vulnerable." },
+        { name: "Super Arts", description: "Powerful special moves that cost meter. Multiple Super Arts available depending on character level." },
+    ],
+
     characters: [
       { id: 'leo', name: 'Leo', moveCount: 0 },
       { id: 'mukuro', name: 'Mukuro', moveCount: 0 },
@@ -6928,6 +7044,14 @@ rosterCount: 8,
     rosterCount: 95,
     notationSystem: 'traditional',
     tags: ["Arena"],
+    systemMechanics: [
+        { name: "Free Flight", description: "Full 3D aerial movement. Fly freely around the arena to chase opponents or gain positioning." },
+        { name: "Ki System", description: "Build Ki through charging or combat. Spend on powerful energy blasts, transformations, and Ultimate Attacks." },
+        { name: "Transformations", description: "Characters can transform mid-battle (e.g., Super Saiyan). Each form grants new moves and stat boosts." },
+        { name: "Hyper Mode", description: "A temporary power-up state that increases speed and damage. Required for Ultimate Attacks." },
+        { name: "Dragon Dash", description: "A high-speed dash that tracks the opponent. Can be chained into melee attacks for rush-down combos." },
+    ],
+
     characters: [
       { id: 'android-13', name: 'Android 13', moveCount: 0 },
       { id: 'android-16', name: 'Android 16', moveCount: 0 },
@@ -7198,6 +7322,13 @@ rosterCount: 8,
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
+    systemMechanics: [
+        { name: "Weapon System", description: "Each character has a unique weapon that can be drawn and used in combat. Weapons can also be dropped or thrown." },
+        { name: "Maximum Damage", description: "A combo damage cap that prevents infinite or excessively long combos." },
+        { name: "Sidestep", description: "Quick lateral movement to evade linear attacks. Limited 3D movement in an otherwise 2D game." },
+        { name: "Fatalities", description: "Signature finishing moves performed after winning the final round. Input-specific per character." },
+    ],
+
     characters: [
       { id: 'fujin', name: 'Fujin', moveCount: 0 },
       { id: 'goro', name: 'Goro', moveCount: 0 },
@@ -7455,6 +7586,14 @@ rosterCount: 8,
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
+    systemMechanics: [
+        { name: "8-Way Run", description: "Free movement in all eight directions. The signature movement system of SoulCalibur for positioning and evasion." },
+        { name: "Guard Impact", description: "Deflect incoming attacks with a timed forward or back guard input, creating openings for counterattacks.", input: "6+G or 4+G" },
+        { name: "Soul Charge", description: "Hold Guard + button to charge up. Enhances the next attack with guard-breaking properties and bonus damage.", input: "G+A+B+K" },
+        { name: "Ring Out", description: "Knock the opponent out of the arena boundary for an instant round win. Stage-dependent." },
+        { name: "Weapon Master Mode", description: "Single-player adventure mode with RPG elements, weapon upgrades, and mission-based challenges." },
+    ],
+
     characters: [
       { id: 'astaroth', name: 'Astaroth', moveCount: 0 },
       { id: 'cassandra', name: 'Cassandra', moveCount: 0 },
@@ -7655,6 +7794,14 @@ rosterCount: 8,
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
+    systemMechanics: [
+        { name: "Special Moves", description: "Command-input attacks with unique properties. The foundation of Street Fighter's gameplay (Hadouken, Shoryuken, etc.)." },
+        { name: "Throw System", description: "Close-range command throws that bypass blocking. Cannot be teched in this version." },
+        { name: "Chip Damage", description: "Special moves deal reduced damage even when blocked. Can KO through chip in certain situations." },
+        { name: "Dizzy System", description: "Taking consecutive hits without recovery can stun the character, leaving them helpless for a free combo." },
+        { name: "Turbo Speed", description: "Selectable game speed settings. Hyper Fighting introduced faster default speed than previous SF2 versions." },
+    ],
+
     characters: [
       { id: 'balrog', name: 'Balrog', moveCount: 0 },
       { id: 'blanka', name: 'Blanka', moveCount: 0 },
@@ -7889,6 +8036,14 @@ rosterCount: 8,
     links: [
       { title: 'Wavu Wiki', url: 'https://wavu.wiki/t/Main_Page' },
     ],
+    systemMechanics: [
+        { name: "Position Change", description: "An evolution of the Tekken throw system. Wall throws and position switches add tactical depth near walls." },
+        { name: "Wall Game", description: "Fully interactive walled stages. Wall combos, wall stagger, and wall-dependent okizeme add a new dimension." },
+        { name: "Sidestep & Sidewalk", description: "Evade linear attacks by sidestepping into the foreground/background. Core 3D defensive movement." },
+        { name: "Just Frame", description: "Certain moves gain enhanced properties when the button is pressed with frame-perfect timing." },
+        { name: "Uneven Terrain", description: "Stages with slopes and elevation changes. Elevation affects hitboxes and combo potential." },
+    ],
+
     characters: [
       { id: 'bryan-fury', name: 'Bryan Fury', moveCount: 0 },
       { id: 'christie-monteiro', name: 'Christie Monteiro', moveCount: 0 },
@@ -8257,6 +8412,15 @@ rosterCount: 8,
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
+    systemMechanics: [
+        { name: "Tag System", description: "Three-character teams with active tag-in mechanics. Switch characters during combos for extended damage." },
+        { name: "Skill Gauge", description: "A meter system that fills through attacks. Powers Super Special Moves, Leader Desperation Moves, and Saving Shifts." },
+        { name: "Saving Shift", description: "Tag cancel out of blockstun or hitstun by switching to another character. Costs meter." },
+        { name: "Quick Shift", description: "Tag in a teammate during a combo for extended juggle sequences and reset situations." },
+        { name: "Dream Cancel", description: "Cancel a Super Special Move into a Leader Desperation Move for devastating damage. Requires the leader character." },
+        { name: "Guard Cancel Blowback", description: "Cancel blockstun into a CD attack that wallsplats. Costs one bar of Skill Gauge." },
+    ],
+
     characters: [
       { id: 'adelheid', name: 'Adelheid', moveCount: 0 },
       { id: 'ash', name: 'Ash', moveCount: 0 },
@@ -8373,6 +8537,13 @@ rosterCount: 8,
     rosterCount: 23,
     notationSystem: 'traditional',
     tags: ["2D"],
+    systemMechanics: [
+        { name: "Inner Strength", description: "A unique meter for each character that powers special moves. Different specials consume different amounts." },
+        { name: "Overkills", description: "Stage-specific finishing moves triggered by knocking the opponent into environmental hazards." },
+        { name: "Sudden Death", description: "Infinite sudden death rounds until a winner is decided. Adds tension to close matches." },
+        { name: "Cinekills", description: "Extended cinematic finishing sequences unique to each stage and character combination." },
+    ],
+
     characters: [
       { id: 'chin-wo', name: 'Chin Wo', moveCount: 0 },
       { id: 'crispy', name: 'Crispy', moveCount: 0 },
@@ -8556,6 +8727,15 @@ rosterCount: 8,
     rosterCount: 26,
     notationSystem: 'traditional',
     tags: ["Platform"],
+    systemMechanics: [
+        { name: "Wavedash", description: "Air dodge diagonally into the ground to slide along the surface. Advanced movement tech for precise positioning.", input: "Jump + Air Dodge diagonal-down" },
+        { name: "L-Cancel", description: "Press Shield just before landing during an aerial attack to halve the landing lag. Essential for combo flow.", input: "L/R/Z (before landing)" },
+        { name: "DI (Directional Influence)", description: "Hold a direction while in hitstun to influence your trajectory. Crucial for surviving at high percents." },
+        { name: "Edge Guarding", description: "Attack opponents while they attempt to recover to the stage ledge. A core part of Melee's kill game." },
+        { name: "Percent System", description: "Damage accumulates as a percentage. Higher percent = farther knockback. KO by launching off-screen." },
+        { name: "Shield System", description: "Hold shield to block attacks. Shield shrinks over time and on hit. Shield break leaves you stunned.", input: "L/R" },
+    ],
+
     characters: [
       { id: 'bowser', name: 'Bowser', moveCount: 0 },
       { id: 'captain-falcon', name: 'Captain Falcon', moveCount: 0 },
@@ -8853,6 +9033,13 @@ rosterCount: 8,
     isDraft: true,
     notationSystem: 'traditional',
     tags: ["2D"],
+    systemMechanics: [
+        { name: "Plasma System", description: "Build Plasma energy through combat. Powers enhanced special moves and Plasma Finals (supers)." },
+        { name: "Plasma Final", description: "A cinematic super attack that costs full Plasma Gauge. High damage finishing move." },
+        { name: "Ring Out", description: "Knock opponents out of the arena for an instant win. Stages have destructible boundaries." },
+        { name: "Plasma Reflect", description: "A timed defensive technique that reflects projectiles and counters physical attacks." },
+    ],
+
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -9043,6 +9230,14 @@ rosterCount: 8,
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
+    systemMechanics: [
+        { name: "Rage Mode", description: "A comeback mechanic that activates at low health. Increases damage output and grants armor on attacks." },
+        { name: "Freefall Kombat", description: "When knocked off elevated stages, an interactive mid-air fighting sequence begins." },
+        { name: "Klose Kombat", description: "A close-range grapple minigame where players input attacks and counters in rapid succession." },
+        { name: "Kombo Breaker", description: "Interrupt the opponent's combo by spending a breaker stock. Limited uses per match." },
+        { name: "Heroic Brutality / Fatality", description: "Finishing moves unique to each character. DC heroes use Heroic Brutalities; MK characters use Fatalities." },
+    ],
+
     characters: [],
     tabs: ['Special Moves', 'Heroic Brutality', 'Fatality', 'Super Combos', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Unique Attacks']
   }
@@ -9114,6 +9309,14 @@ rosterCount: 8,
     platform: 'Arcade, PlayStation 2',
     rosterCount: 10,
     tags: ["2D", "Anime"],
+    systemMechanics: [
+        { name: "Dual Gauge System", description: "Two separate meters: Offense Gauge (for offensive supers) and Defense Gauge (for defensive options). Both build independently." },
+        { name: "Offense Arts", description: "Super moves powered by the Offense Gauge. Multiple levels of supers with increasing damage." },
+        { name: "Defense Arts", description: "Defensive super options powered by the Defense Gauge. Includes guard cancels and reversal attacks." },
+        { name: "Advanced Attack", description: "A universal overhead launcher for starting aerial combos.", input: "C+D" },
+        { name: "Quick Recovery", description: "Tech out of knockdowns to recover faster and avoid okizeme setups." },
+    ],
+
     characters: [],
     tabs: ['Special Moves', 'Offensive Art', 'Defensive Art', 'Critical Art', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Unique Attacks']
   }
