@@ -1167,7 +1167,7 @@ rosterCount: 12,
 
     id: 'darkstalkers-the-night-warriors',
 
-    mameRomset: "",
+    mameRomset: "dstlk",
 
     name: "Darkstalkers: The Night Warriors",
     tagline: "The Night Warriors",
@@ -1862,7 +1862,7 @@ rosterCount: 16,
 
     id: 'fatal-fury-king-of-fighters',
 
-    mameRomset: "",
+    mameRomset: "fatfury1",
 
     name: "Fatal Fury",
     tagline: "Hey, c'mon c'mon!",
@@ -2446,7 +2446,7 @@ rosterCount: 12,
 
     id: 'guilty-gear',
 
-    mameRomset: "",
+    mameRomset: "ggear",
 
     name: "Guilty Gear (1998)",
     tagline: "The Missing Link",
@@ -2770,7 +2770,7 @@ rosterCount: 25,
 
     id: 'hyper-street-fighter-ii',
 
-    mameRomset: "",
+    mameRomset: "hsf2",
 
     name: "Hyper Street Fighter II",
     tagline: "The Anniversary Edition",
@@ -3415,7 +3415,7 @@ rosterCount: 39,
 
     id: 'marvel-vs-capcom-clash-of-super-heroes',
 
-    mameRomset: "",
+    mameRomset: "mvsc",
 
     name: "Marvel vs. Capcom: Clash of Super Heroes",
     tagline: "Two Worlds, One Dream",
@@ -3973,7 +3973,7 @@ rosterCount: 21,
 
     id: 'night-warriors-darkstalkers-revenge',
 
-    mameRomset: "",
+    mameRomset: "nwarr",
 
     name: "Night Warriors: Darkstalkers",
     tagline: "Darkstalkers' Revenge",
@@ -4731,7 +4731,7 @@ rosterCount: 19,
 
     id: 'samurai-shodown',
 
-    mameRomset: "",
+    mameRomset: "samsho",
 
     name: "Samurai Shodown",
     tagline: "Way of the Sword",
@@ -4971,7 +4971,7 @@ rosterCount: 11,
   {
     id: 'samurai-shodown-iv-amakusas-revenge',
 
-    mameRomset: "",
+    mameRomset: "samsho4",
     releaseYear: 1996,
     platform: "Arcade, NeoGeo, Saturn, PS1, PC",
     name: "Samurai Shodown IV: Amakusa's Revenge (1996)",
@@ -5459,7 +5459,7 @@ rosterCount: 25,
 
     id: 'street-fighter-alpha',
 
-    mameRomset: "",
+    mameRomset: "sfa",
 
     name: "Street Fighter Alpha",
     tagline: "The Alpha Generation",
@@ -5733,7 +5733,7 @@ rosterCount: 21,
 
     id: 'street-fighter-iii-2nd-impact',
 
-    mameRomset: "",
+    mameRomset: "sfiii2",
 
     name: "Street Fighter III: 2nd Impact",
     tagline: "Giant Attack",
@@ -5792,7 +5792,7 @@ rosterCount: 21,
 
     id: 'street-fighter-iii-new-generation',
 
-    mameRomset: "",
+    mameRomset: "sfiii",
 
     name: "Street Fighter III: New Generation",
     tagline: "A New Generation",
@@ -6006,7 +6006,7 @@ rosterCount: 17,
 
     id: 'super-street-fighter-ii',
 
-    mameRomset: "",
+    mameRomset: "ssf2",
 
     name: "Super Street Fighter II: The New Challengers",
     tagline: "The New Challengers",
@@ -6356,7 +6356,7 @@ rosterCount: 33,
   {
     id: 'tekken-tag-tournament',
 
-    mameRomset: "",
+    mameRomset: "tektagt",
     name: 'Tekken Tag Tournament',
     tagline: "The Tag Battle",
     notationSystem: 'tekken',
@@ -6494,7 +6494,7 @@ rosterCount: 33,
 
     id: 'the-king-of-fighters-94',
 
-    mameRomset: "",
+    mameRomset: "kof94",
 
     name: "The King of Fighters '94",
 
@@ -6558,7 +6558,7 @@ rosterCount: 24,
 
     id: 'the-king-of-fighters-2000',
 
-    mameRomset: "",
+    mameRomset: "kof2000",
 
     name: "The King of Fighters 2000",
     tagline: "The NESTS Crisis",
@@ -6632,7 +6632,7 @@ rosterCount: 33,
 
     id: 'the-king-of-fighters-2001',
 
-    mameRomset: "",
+    mameRomset: "kof2001",
 
     name: "The King of Fighters 2001",
     tagline: "The NESTS Conclusion",
@@ -6787,7 +6787,7 @@ rosterCount: 39,
 
     id: 'the-king-of-fighters-2003',
 
-    mameRomset: "",
+    mameRomset: "kof2003",
 
     name: "The King of Fighters 2003",
     tagline: "The Ash Saga Begins",
@@ -7309,7 +7309,7 @@ rosterCount: 12,
 
     id: 'the-last-blade-2',
 
-    mameRomset: "",
+    mameRomset: "lastblad2",
 
     name: "The Last Blade 2",
     tagline: "Heart of the Samurai",
@@ -8569,7 +8569,7 @@ rosterCount: 8,
   {
     id: 'red-earth-warzard',
 
-    mameRomset: "",
+    mameRomset: "redearth",
     releaseYear: 1996,
     platform: "Arcade, PC",
     name: "Red Earth (Warzard)",
@@ -8980,7 +8980,7 @@ rosterCount: 8,
   {
     id: 'mortal-kombat-3',
 
-    mameRomset: "",
+    mameRomset: "mk3",
     releaseYear: 1995,
     platform: "Arcade, SNES, Genesis, PS1, PC",
     notationSystem: 'mk',
@@ -9023,7 +9023,7 @@ rosterCount: 8,
   {
     id: 'mortal-kombat-4',
 
-    mameRomset: "",
+    mameRomset: "mk4",
     releaseYear: 1997,
     platform: "Arcade, PS1, N64, PC",
     notationSystem: 'mk',
@@ -9277,7 +9277,7 @@ rosterCount: 8,
   {
     id: 'soulcalibur',
 
-    mameRomset: "",
+    mameRomset: "soulclbr",
     releaseYear: 1998,
     platform: "Arcade, DC, PC",
     name: "SoulCalibur",
@@ -9320,7 +9320,7 @@ rosterCount: 8,
   {
     id: 'soulcalibur-ii',
 
-    mameRomset: "",
+    mameRomset: "scl2",
     releaseYear: 2002,
     platform: "Arcade, PS2, Xbox, GC, PC",
     name: "SoulCalibur II",
@@ -9651,7 +9651,7 @@ rosterCount: 8,
   {
     id: 'street-fighter-ii-hyper-fighting',
 
-    mameRomset: "",
+    mameRomset: "sf2hf",
     releaseYear: 1992,
     platform: "Arcade, SNES, Genesis, PC",
     name: "Street Fighter II: Hyper Fighting",
@@ -9697,7 +9697,7 @@ rosterCount: 8,
   {
     id: 'hyper-street-fighter-ii-the-anniversary-edition',
 
-    mameRomset: "",
+    mameRomset: "hsf2",
     releaseYear: 2003,
     platform: "Arcade, PS2, PC",
     name: "Hyper Street Fighter II: The Anniversary Edition",
@@ -9744,7 +9744,7 @@ rosterCount: 8,
   {
     id: 'street-fighter-alpha-warriors-dreams',
 
-    mameRomset: "",
+    mameRomset: "sfa",
     releaseYear: 1995,
     platform: "Arcade, PS1, Saturn, PC, PS4, Switch, Xbox One",
     name: "Street Fighter Alpha: Warriors' Dreams",
@@ -9789,7 +9789,7 @@ rosterCount: 8,
   {
     id: 'street-fighter-iii-3rd-strike---fight-for-the-future',
 
-    mameRomset: "",
+    mameRomset: "sfiii3",
     releaseYear: 1999,
     platform: "Arcade, DC, PS2, Xbox, PC",
     name: "Street Fighter III: 3rd Strike",
@@ -9846,7 +9846,7 @@ rosterCount: 8,
   {
     id: 'street-fighter-iv',
 
-    mameRomset: "",
+    mameRomset: "sfiv",
     releaseYear: 2008,
     platform: "Arcade, PS3, Xbox 360, PC",
     name: "Street Fighter IV",
@@ -9968,7 +9968,7 @@ rosterCount: 8,
   {
     id: 'tekken-3',
 
-    mameRomset: "",
+    mameRomset: "tekken3",
     releaseYear: 1997,
     platform: "Arcade, PS1, PC",
     name: "Tekken 3",
@@ -10018,7 +10018,7 @@ rosterCount: 8,
   {
     id: 'tekken-4',
 
-    mameRomset: "",
+    mameRomset: "tekken4",
     releaseYear: 2001,
     platform: "PS2, PC",
     name: "Tekken 4",
@@ -10068,7 +10068,7 @@ rosterCount: 8,
   {
     id: 'tekken-5',
 
-    mameRomset: "",
+    mameRomset: "tekken5",
     releaseYear: 2004,
     platform: "PS2, PC",
     name: "Tekken 5",
@@ -10278,7 +10278,7 @@ rosterCount: 8,
   {
     id: 'the-king-of-fighters-95',
 
-    mameRomset: "",
+    mameRomset: "kof95",
     releaseYear: 1995,
     platform: "Arcade, NeoGeo, PS1, Saturn, PC",
     name: "The King of Fighters '95",
@@ -10332,7 +10332,7 @@ rosterCount: 8,
   {
     id: 'the-king-of-fighters-96',
 
-    mameRomset: "",
+    mameRomset: "kof96",
     releaseYear: 1996,
     platform: "Arcade, NeoGeo, PS1, Saturn, PC",
     name: "The King of Fighters '96",
@@ -10384,7 +10384,7 @@ rosterCount: 8,
   {
     id: 'the-king-of-fighters-97',
 
-    mameRomset: "",
+    mameRomset: "kof97",
     releaseYear: 1997,
     platform: "Arcade, NeoGeo, PS1, Saturn, PC",
     name: "The King of Fighters '97",
@@ -10507,7 +10507,7 @@ rosterCount: 8,
   {
     id: 'the-king-of-fighters-99',
 
-    mameRomset: "",
+    mameRomset: "kof99",
     releaseYear: 1999,
     platform: "Arcade, NeoGeo, PS1, DC, PC",
     name: "The King of Fighters '99",
@@ -10563,7 +10563,7 @@ rosterCount: 8,
   {
     id: 'the-king-of-fighters-xi',
 
-    mameRomset: "",
+    mameRomset: "kof_xi",
     releaseYear: 2005,
     platform: "Arcade, PS2, PC",
     name: "The King of Fighters XI",
@@ -11113,7 +11113,7 @@ rosterCount: 8,
   {
     id: 'bio-freaks',
 
-    mameRomset: "",
+    mameRomset: "biofreak",
     name: "Bio F.R.E.A.K.S.",
     notationSystem: 'traditional',
     tags: ["2D"],
@@ -11271,7 +11271,7 @@ rosterCount: 8,
   {
     id: 'war-gods',
 
-    mameRomset: "",
+    mameRomset: "wargods",
     name: "War Gods",
     notationSystem: 'traditional',
     tags: ["2D"],
@@ -11302,7 +11302,7 @@ rosterCount: 8,
   {
     id: 'aggressors-of-dark-kombat',
 
-    mameRomset: "",
+    mameRomset: "aodk",
     name: "Aggressors of Dark Kombat",
     tagline: "Enter the Arena",
     notationSystem: 'numpad',
@@ -11368,7 +11368,7 @@ rosterCount: 8,
   },
   {
     id: 'rival-schools-united-by-fate',
-    mameRomset: "",
+    mameRomset: "rvschool",
     name: 'Rival Schools: United by Fate',
     tagline: "United by Fate",
     developer: 'Capcom',
@@ -11405,7 +11405,7 @@ rosterCount: 8,
   {
     id: 'star-gladiator-episode-i-final-crusade',
 
-    mameRomset: "",
+    mameRomset: "stargld",
     name: "Star Gladiator Episode I Final Crusade",
     tagline: "Enter the Arena",
     notationSystem: 'traditional',
@@ -11436,6 +11436,7 @@ rosterCount: 8,
 
   {
     id: 'hokuto-no-ken',
+    mameRomset: "hotdebut",
     name: "Hokuto no Ken",
     tagline: "You Are Already Dead",
     developer: 'Arc System Works',
