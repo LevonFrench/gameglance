@@ -1,6 +1,676 @@
 {
-  "character": "mamiya",
   "name": "Mamiya",
-  "movesList": [],
+  "character": "mamiya",
+  "movesList": [
+    {
+      "id": "0bccff71-829c-4dd3-9b0d-446b853f8a26",
+      "name": "Bowgun Reload",
+      "input": "214A",
+      "type": "special",
+      "frameData": {
+        "startup": "51",
+        "recovery": "Total 74"
+      }
+    },
+    {
+      "id": "a7f13534-7547-4c0b-bcaa-b1ac096dff52",
+      "name": "Forward Roll",
+      "input": "214B",
+      "type": "special",
+      "frameData": {
+        "recovery": "Total 24"
+      }
+    },
+    {
+      "id": "bc2d870b-8027-44d2-9c6d-c462d11a35a6",
+      "name": "Steel Spike Switch",
+      "input": "214C",
+      "type": "special",
+      "frameData": {
+        "startup": "37",
+        "recovery": "Total 68"
+      }
+    },
+    {
+      "id": "a65185a9-a795-43d4-98ed-1142c911c60c",
+      "name": "Bind Trick",
+      "input": "236236A",
+      "type": "super",
+      "frameData": {
+        "startup": "5+4",
+        "active": "48",
+        "recovery": "21",
+        "onBlock": "-45",
+        "onHit": "Launch"
+      },
+      "damage": "4\u00d72, 2",
+      "guard": "All"
+    },
+    {
+      "id": "14da10a8-3e85-4ca6-a8b8-6785feb05d39",
+      "name": "Bind Trick A followup",
+      "input": "236236A~A",
+      "type": "super",
+      "frameData": {
+        "startup": "4",
+        "active": "3",
+        "recovery": "1"
+      },
+      "damage": "1",
+      "guard": "High/Air"
+    },
+    {
+      "id": "795a27f4-c182-4951-b8bc-ac0ff6f22325",
+      "name": "Bind Trick B followup",
+      "input": "236236A~B",
+      "type": "super",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "1"
+      },
+      "damage": "1",
+      "guard": "High/Air"
+    },
+    {
+      "id": "1473ae69-d393-460d-a0d9-294b6afa612a",
+      "name": "Bind Trick C followup",
+      "input": "236236A~C",
+      "type": "super",
+      "frameData": {
+        "startup": "5",
+        "active": "4",
+        "recovery": "2",
+        "onHit": "Launch"
+      },
+      "damage": "7",
+      "guard": "High/Air"
+    },
+    {
+      "id": "e3d089d6-ca22-420a-aca0-74e84e6b40e8",
+      "name": "Bind Trick D followup",
+      "input": "236236A~D",
+      "type": "super",
+      "frameData": {
+        "startup": "5",
+        "active": "4",
+        "recovery": "2"
+      },
+      "damage": "9",
+      "guard": "High/Air"
+    },
+    {
+      "id": "5b3de7f0-4f51-4088-b637-46a96f32e7e8",
+      "name": "Bind Trick E followup",
+      "input": "236236A~E",
+      "type": "super",
+      "frameData": {
+        "startup": "1",
+        "active": "4(8)P",
+        "onHit": "Launch"
+      },
+      "damage": "7, 2\u00d7N",
+      "guard": "High/Air, Low"
+    },
+    {
+      "id": "ee904956-4293-41ec-b89e-32696aba679f",
+      "name": "Bike",
+      "input": "236236C",
+      "type": "super",
+      "frameData": {
+        "startup": "1+13",
+        "recovery": "4",
+        "onHit": "Launch (horizontal bike only)"
+      },
+      "damage": "9\u00d7N, 19\u00d72",
+      "guard": "Mid"
+    },
+    {
+      "id": "00f45c0d-c549-4841-b755-d210a7657d5b",
+      "name": "Bowgun (Upper)",
+      "input": "236A",
+      "type": "special",
+      "frameData": {
+        "startup": "21",
+        "recovery": "Total 52",
+        "onBlock": "-1"
+      },
+      "damage": "19",
+      "guard": "All"
+    },
+    {
+      "id": "c682b2fe-06d6-4c91-aed6-80256dd6bbdd",
+      "name": "Bowgun (Lower)",
+      "input": "236B",
+      "type": "special",
+      "frameData": {
+        "startup": "21",
+        "recovery": "Total 48",
+        "onBlock": "3"
+      },
+      "damage": "19",
+      "guard": "Low"
+    },
+    {
+      "id": "ce823901-b35a-453b-b005-8135a698b344",
+      "name": "Spike Attack",
+      "input": "236C",
+      "type": "special",
+      "frameData": {
+        "startup": "32",
+        "active": "8",
+        "recovery": "16",
+        "onBlock": "-9",
+        "onHit": "Launch"
+      },
+      "damage": "17",
+      "guard": "Low"
+    },
+    {
+      "id": "6af1c537-7b46-4e03-99d3-74168e0ce926",
+      "name": "Sayonara (Fatal KO)",
+      "input": "236C+D",
+      "type": "finisher",
+      "frameData": {
+        "startup": "1+0",
+        "active": "173",
+        "recovery": "24"
+      },
+      "damage": "FATAL KO",
+      "guard": "Mid, All"
+    },
+    {
+      "id": "efcf90ee-2106-4cb1-b982-27cfae75c8c9",
+      "name": "A Followup",
+      "input": "236C~A",
+      "type": "special",
+      "frameData": {
+        "startup": "13",
+        "active": "16",
+        "recovery": "1+20 after landing",
+        "onBlock": "-22",
+        "onHit": "Launch"
+      },
+      "damage": "17",
+      "guard": "High"
+    },
+    {
+      "id": "ca2f6a43-d2f8-4615-9bfe-dd6509db7020",
+      "name": "A Followup (No Needle Gauge)",
+      "input": "236C~A (No Needle)",
+      "type": "special",
+      "frameData": {
+        "startup": "13",
+        "active": "16",
+        "recovery": "1+20 after landing",
+        "onBlock": "-25",
+        "onHit": "Launch"
+      },
+      "damage": "15",
+      "guard": "High"
+    },
+    {
+      "id": "123fc0bc-2122-4524-b1d8-b441d41d892d",
+      "name": "B Followup",
+      "input": "236C~B",
+      "type": "special",
+      "frameData": {
+        "startup": "5",
+        "active": "20",
+        "recovery": "16",
+        "onBlock": "-21",
+        "onHit": "Launch"
+      },
+      "damage": "19",
+      "guard": "Low"
+    },
+    {
+      "id": "a65d7c2f-b046-4101-9e15-4c51a67ce6cd",
+      "name": "B Followup (No Needle Gauge)",
+      "input": "236C~B (No Needle)",
+      "type": "special",
+      "frameData": {
+        "startup": "5",
+        "active": "20",
+        "recovery": "16",
+        "onBlock": "-24",
+        "onHit": "Launch"
+      },
+      "damage": "16",
+      "guard": "Low"
+    },
+    {
+      "id": "476c18b2-fb09-448f-89c7-540d1f30c08d",
+      "name": "Helmet Bomb",
+      "input": "236D",
+      "type": "special",
+      "frameData": {
+        "startup": "25",
+        "recovery": "Total 52",
+        "onBlock": "-7",
+        "onHit": "Launch"
+      },
+      "damage": "17",
+      "guard": "All (High)"
+    },
+    {
+      "id": "f44bb9a9-9c52-42b6-b6d8-1c74b7936737",
+      "name": "2A",
+      "input": "2A",
+      "type": "normal",
+      "frameData": {
+        "startup": "5",
+        "active": "2",
+        "recovery": "3",
+        "onBlock": "3"
+      },
+      "damage": "5",
+      "guard": "Mid"
+    },
+    {
+      "id": "225f14ca-47f6-4b3e-a327-53a6d6639328",
+      "name": "2B",
+      "input": "2B",
+      "type": "normal",
+      "frameData": {
+        "startup": "6",
+        "active": "3",
+        "recovery": "4",
+        "onBlock": "3"
+      },
+      "damage": "5",
+      "guard": "Low"
+    },
+    {
+      "id": "b853eaf8-d642-48e9-b9c5-82e059df945f",
+      "name": "2C",
+      "input": "2C",
+      "type": "normal",
+      "frameData": {
+        "startup": "8",
+        "active": "6",
+        "recovery": "12",
+        "onBlock": "-6"
+      },
+      "damage": "12",
+      "guard": "Mid"
+    },
+    {
+      "id": "774a99c7-ff0c-4d8f-aaeb-1fae87165db4",
+      "name": "2C (No Needle Gauge)",
+      "input": "2C (No Needle)",
+      "type": "normal",
+      "frameData": {
+        "startup": "8",
+        "active": "6",
+        "recovery": "12",
+        "onBlock": "-10"
+      },
+      "damage": "4",
+      "guard": "Mid"
+    },
+    {
+      "id": "5e71b437-2789-4cba-b116-cceafcea90fb",
+      "name": "2D",
+      "input": "2D",
+      "type": "normal",
+      "frameData": {
+        "startup": "7",
+        "active": "27,9",
+        "recovery": "10",
+        "onBlock": "-9",
+        "onHit": "Launch"
+      },
+      "damage": "10\u00d72",
+      "guard": "Low"
+    },
+    {
+      "id": "7549315c-60fd-45da-9430-6ed59cef6ccc",
+      "name": "Bind Yo-Yo",
+      "input": "623C",
+      "type": "special",
+      "frameData": {
+        "startup": "21",
+        "active": "135",
+        "recovery": "Total 48"
+      },
+      "guard": "Air"
+    },
+    {
+      "id": "ed670be6-e3a5-48b2-a485-c9835f578501",
+      "name": "Backslash Kick",
+      "input": "623D",
+      "type": "special",
+      "frameData": {
+        "startup": "9",
+        "active": "19",
+        "recovery": "24",
+        "onBlock": "-28",
+        "onHit": "Launch"
+      },
+      "damage": "17",
+      "guard": "Mid"
+    },
+    {
+      "id": "72c95f98-ac68-4590-b71d-373176d2a150",
+      "name": "6A",
+      "input": "6A",
+      "type": "normal",
+      "frameData": {
+        "startup": "21",
+        "active": "23,12",
+        "recovery": "8",
+        "onBlock": "-10",
+        "onHit": "2nd hit: Launch"
+      },
+      "damage": "8\u00d72",
+      "guard": "High"
+    },
+    {
+      "id": "06409cb3-ea1a-4c88-b5d3-1921e9542234",
+      "name": "Throw",
+      "input": "6C",
+      "type": "common",
+      "frameData": {
+        "startup": "13",
+        "active": "10",
+        "recovery": "14",
+        "onBlock": "-14",
+        "onHit": "Launch"
+      },
+      "damage": "0, 22",
+      "guard": "Mid"
+    },
+    {
+      "id": "f538ef4f-3c60-4c4b-8efa-e5bb86a0f91d",
+      "name": "Guard Cancel",
+      "input": "6C+D",
+      "type": "common",
+      "frameData": {
+        "startup": "4",
+        "active": "4",
+        "recovery": "9",
+        "onBlock": "5",
+        "onHit": "Down"
+      },
+      "damage": "9",
+      "guard": "All"
+    },
+    {
+      "id": "23b53cba-b1c8-4a7b-b227-66bccca651da",
+      "name": "Heavy Strike",
+      "input": "A+B",
+      "type": "common",
+      "frameData": {
+        "startup": "38",
+        "active": "4",
+        "recovery": "12",
+        "onHit": "Stagger"
+      },
+      "damage": "5",
+      "guard": "Unblockable"
+    },
+    {
+      "id": "164e2059-beec-45b7-a29d-e731866e228e",
+      "name": "Grave Shoot",
+      "input": "A+C",
+      "type": "common",
+      "frameData": {
+        "startup": "16",
+        "active": "4",
+        "recovery": "12",
+        "onBlock": "2",
+        "onHit": "Grave Launch"
+      },
+      "damage": "15",
+      "guard": "Mid"
+    },
+    {
+      "id": "07b4a9bd-473d-4b12-be1f-bbbd62c3f477",
+      "name": "Banishing Strike",
+      "input": "C+D",
+      "type": "common",
+      "frameData": {
+        "startup": "19~34 (Normal)&lt;br&gt;35~39 (Charged)",
+        "active": "10",
+        "recovery": "14",
+        "onBlock": "-9",
+        "onHit": "Banishing Launch"
+      },
+      "damage": "17",
+      "guard": "Mid"
+    },
+    {
+      "id": "87f4196b-5f64-4d9a-87fe-43464910337e",
+      "name": "c.A",
+      "input": "c.A",
+      "type": "normal",
+      "frameData": {
+        "startup": "4",
+        "active": "2",
+        "recovery": "4",
+        "onBlock": "2"
+      },
+      "damage": "8",
+      "guard": "Mid"
+    },
+    {
+      "id": "a5dc56a8-8434-40b2-bea2-f05e41809913",
+      "name": "c.B",
+      "input": "c.B",
+      "type": "normal",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "4",
+        "onBlock": "3"
+      },
+      "damage": "8",
+      "guard": "Mid"
+    },
+    {
+      "id": "4f4e982d-11c2-468a-9e47-d9e235abcc82",
+      "name": "c.C",
+      "input": "c.C",
+      "type": "normal",
+      "frameData": {
+        "startup": "8",
+        "active": "6",
+        "recovery": "18",
+        "onBlock": "-12"
+      },
+      "damage": "15",
+      "guard": "Mid"
+    },
+    {
+      "id": "db8a16b7-9690-47eb-a8d7-1e4340571152",
+      "name": "c.C (No Needle Gauge)",
+      "input": "c.C (No Needle)",
+      "type": "needleless",
+      "frameData": {
+        "startup": "8",
+        "active": "6",
+        "recovery": "18",
+        "onBlock": "-16"
+      },
+      "damage": "7",
+      "guard": "Mid"
+    },
+    {
+      "id": "d2320504-0ffe-4a5a-b6e3-5d92695ea2fa",
+      "name": "c.D",
+      "input": "c.D",
+      "type": "normal",
+      "frameData": {
+        "startup": "6",
+        "active": "17\u00d72",
+        "recovery": "23",
+        "onBlock": "-22"
+      },
+      "damage": "6\u00d72",
+      "guard": "Mid"
+    },
+    {
+      "id": "bd131978-973c-46ea-a4ad-b3b898d61807",
+      "name": "f.A",
+      "input": "f.A",
+      "type": "normal",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "4",
+        "onBlock": "1"
+      },
+      "damage": "6",
+      "guard": "Mid"
+    },
+    {
+      "id": "63d09a3b-0782-4e3d-9503-34734d193088",
+      "name": "f.B",
+      "input": "f.B",
+      "type": "normal",
+      "frameData": {
+        "startup": "5",
+        "active": "3",
+        "recovery": "4",
+        "onBlock": "1"
+      },
+      "damage": "6",
+      "guard": "Mid"
+    },
+    {
+      "id": "4acc5cba-0b83-4ae5-b091-b3a39bb64838",
+      "name": "f.C",
+      "input": "f.C",
+      "type": "normal",
+      "frameData": {
+        "startup": "11",
+        "active": "6",
+        "recovery": "15",
+        "onBlock": "-9"
+      },
+      "damage": "13",
+      "guard": "Mid"
+    },
+    {
+      "id": "50269761-7874-4e02-ac37-34f0b6079a38",
+      "name": "f.C (No Needle Gauge)",
+      "input": "f.C (No Needle)",
+      "type": "normal",
+      "frameData": {
+        "startup": "11",
+        "active": "6",
+        "recovery": "15",
+        "onBlock": "-13"
+      },
+      "damage": "5",
+      "guard": "Mid"
+    },
+    {
+      "id": "0c5d78f6-e1ef-4b09-9114-5777ea932fff",
+      "name": "f.D",
+      "input": "f.D",
+      "type": "normal",
+      "frameData": {
+        "startup": "10",
+        "active": "39",
+        "recovery": "17",
+        "onBlock": "-17"
+      },
+      "damage": "5\u00d76",
+      "guard": "Mid"
+    },
+    {
+      "id": "fce31e5c-aa8c-4484-8d5c-7f0bae7769d8",
+      "name": "Bowgun (Air)",
+      "input": "j.236A",
+      "type": "special",
+      "frameData": {
+        "startup": "17",
+        "recovery": "Total 36"
+      },
+      "damage": "17",
+      "guard": "All"
+    },
+    {
+      "id": "5f7ee608-32fb-44bb-aa2a-a7093a844e1c",
+      "name": "j.A",
+      "input": "j.A",
+      "type": "normal",
+      "frameData": {
+        "startup": "4",
+        "active": "6",
+        "recovery": "4"
+      },
+      "damage": "5",
+      "guard": "High/Air"
+    },
+    {
+      "id": "7f732f6b-12b5-4f67-a00f-bce1fddc723b",
+      "name": "j.B",
+      "input": "j.B",
+      "type": "normal",
+      "frameData": {
+        "startup": "5",
+        "active": "6",
+        "recovery": "6"
+      },
+      "damage": "5",
+      "guard": "High/Air"
+    },
+    {
+      "id": "2bbbbef3-356d-406d-a67b-aef8195b4955",
+      "name": "Choke Yo-Yo",
+      "input": "j.B+D",
+      "type": "common",
+      "frameData": {
+        "startup": "7",
+        "active": "8",
+        "recovery": "Until landing",
+        "onHit": "Down"
+      },
+      "damage": "0, 11",
+      "guard": "Air"
+    },
+    {
+      "id": "3e308f59-6405-4d30-93b6-346543414a37",
+      "name": "j.C",
+      "input": "j.C",
+      "type": "normal",
+      "frameData": {
+        "startup": "10",
+        "active": "6",
+        "recovery": "12"
+      },
+      "damage": "10",
+      "guard": "High/Air"
+    },
+    {
+      "id": "e9cdbe35-7423-4b73-a294-d7556d08391b",
+      "name": "j.C (No Needle Gauge)",
+      "input": "j.C (No Needle)",
+      "type": "normal",
+      "frameData": {
+        "startup": "10",
+        "active": "6",
+        "recovery": "12"
+      },
+      "damage": "3",
+      "guard": "High/Air"
+    },
+    {
+      "id": "a701c937-52b8-4f76-9e20-479a1fa10996",
+      "name": "j.D",
+      "input": "j.D",
+      "type": "normal",
+      "frameData": {
+        "startup": "9",
+        "active": "15,8",
+        "recovery": "13"
+      },
+      "damage": "3\u00d72",
+      "guard": "High/Air"
+    }
+  ],
   "combosList": []
 }

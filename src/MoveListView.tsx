@@ -334,6 +334,8 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           'death move': 'finisher',   // Weaponlord
           'extinction': 'finisher',   // Primal Rage
           'finisher': 'finisher',     // MK generic
+          'fatal ko': 'finisher',     // HNK
+          'needleless': 'normal',     // HNK Mamiya (no needle gauge variant)
 
           // ── stance: character-specific modes / transformations ──
           'stance': 'special',        // Tekken/SC/GG (closest analog)

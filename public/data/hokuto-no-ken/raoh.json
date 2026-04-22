@@ -1,6 +1,651 @@
 {
-  "character": "raoh",
   "name": "Raoh",
-  "movesList": [],
+  "character": "raoh",
+  "movesList": [
+    {
+      "id": "cebc174d-779e-4fb8-b17b-0804464dbf1b",
+      "name": "Hikou Shinketsushuu",
+      "input": "214214A",
+      "type": "super",
+      "frameData": {
+        "startup": "5+0",
+        "active": "4",
+        "recovery": "24",
+        "onHit": "Down"
+      },
+      "damage": "34\u00d72",
+      "guard": "Air Unblockable"
+    },
+    {
+      "id": "a879c58f-75c1-4de5-a618-ebf678384ee9",
+      "name": "Musou Tensei",
+      "input": "214214B",
+      "type": "super",
+      "frameData": {
+        "startup": "5+7",
+        "recovery": "Total 12"
+      }
+    },
+    {
+      "id": "be022565-905a-4db7-acf8-ec5e1b72453c",
+      "name": "Tenshou Honretsu",
+      "input": "214214C",
+      "type": "super",
+      "frameData": {
+        "startup": "31+2~12",
+        "active": "24",
+        "recovery": "12",
+        "onBlock": "-18",
+        "onHit": "Launch"
+      },
+      "damage": "38",
+      "guard": "Mid"
+    },
+    {
+      "id": "c64a5242-a68e-4cc6-a82e-09db43896b8b",
+      "name": "Hokuto Donryuu Kohou",
+      "input": "214A",
+      "type": "special",
+      "frameData": {
+        "startup": "24",
+        "recovery": "Total 43"
+      }
+    },
+    {
+      "id": "78758d21-bbb7-4803-a766-482e61e1b4b8",
+      "name": "Sai",
+      "input": "214D",
+      "type": "special",
+      "frameData": {
+        "startup": "21",
+        "active": "8",
+        "recovery": "8",
+        "onBlock": "-4",
+        "onHit": "Restand"
+      },
+      "damage": "26",
+      "guard": "Low"
+    },
+    {
+      "id": "94ab7426-5b6b-4be7-b750-d11c688663c9",
+      "name": "Sai (Enhanced)",
+      "input": "214D (Enhanced)",
+      "type": "special",
+      "frameData": {
+        "startup": "21",
+        "active": "8",
+        "recovery": "8",
+        "onBlock": "-4",
+        "onHit": "Restand"
+      },
+      "damage": "26",
+      "guard": "Low"
+    },
+    {
+      "id": "51048abe-2cbb-4097-893b-f3193e44ce4b",
+      "name": "Hokuto Goushouha",
+      "input": "236C",
+      "type": "special",
+      "frameData": {
+        "startup": "43",
+        "active": "8,8,6",
+        "recovery": "46",
+        "onBlock": "-21",
+        "onHit": "Launch"
+      },
+      "damage": "18\u00d73",
+      "guard": "All"
+    },
+    {
+      "id": "1e960b04-b8a9-4bea-96bc-7c8f24e882c0",
+      "name": "Hokuto Goushouha (Enhanced)",
+      "input": "236C (Enhanced)",
+      "type": "special",
+      "frameData": {
+        "startup": "37",
+        "active": "8,8,8,6",
+        "recovery": "46",
+        "onBlock": "-21",
+        "onHit": "Launch"
+      },
+      "damage": "18\u00d74",
+      "guard": "All"
+    },
+    {
+      "id": "110aa921-ce06-4851-832b-f657aecaf2c1",
+      "name": "Hokuto Mettenha (Fatal KO)",
+      "input": "236C+D",
+      "type": "finisher",
+      "frameData": {
+        "startup": "13+4",
+        "active": "16",
+        "recovery": "11",
+        "onBlock": "-9"
+      },
+      "damage": "FATAL KO",
+      "guard": "Mid"
+    },
+    {
+      "id": "fa54fe40-39d4-452d-9319-25c45bc7ea72",
+      "name": "2A",
+      "input": "2A",
+      "type": "normal",
+      "frameData": {
+        "startup": "5",
+        "active": "6",
+        "recovery": "6",
+        "onBlock": "-4"
+      },
+      "damage": "6",
+      "guard": "Mid"
+    },
+    {
+      "id": "c2989fc6-ceb7-4073-ac26-c15ea9509116",
+      "name": "2B",
+      "input": "2B",
+      "type": "normal",
+      "frameData": {
+        "startup": "7",
+        "active": "5",
+        "recovery": "8",
+        "onBlock": "-3"
+      },
+      "damage": "6",
+      "guard": "Low"
+    },
+    {
+      "id": "a04d7e82-e07d-4119-b315-7e905bcaf716",
+      "name": "2C",
+      "input": "2C",
+      "type": "normal",
+      "frameData": {
+        "startup": "18~34",
+        "active": "4",
+        "recovery": "28",
+        "onBlock": "-17",
+        "onHit": "Launch"
+      },
+      "damage": "15",
+      "guard": "Mid"
+    },
+    {
+      "id": "a42d0181-c262-4e98-836b-e27c630ed61b",
+      "name": "2D",
+      "input": "2D",
+      "type": "normal",
+      "frameData": {
+        "startup": "12~28",
+        "active": "4",
+        "recovery": "36",
+        "onBlock": "-22",
+        "onHit": "Launch"
+      },
+      "damage": "15",
+      "guard": "Low"
+    },
+    {
+      "id": "ae49f6df-3c77-438f-84f0-1892d24f7b46",
+      "name": "2[C]",
+      "input": "2[C]",
+      "type": "normal",
+      "frameData": {
+        "startup": "49~56",
+        "active": "4",
+        "recovery": "28",
+        "onHit": "Launch"
+      },
+      "damage": "15",
+      "guard": "Unblockable"
+    },
+    {
+      "id": "acef1829-9923-4c82-a3d8-d3769119744c",
+      "name": "2[D]",
+      "input": "2[D]",
+      "type": "normal",
+      "frameData": {
+        "startup": "44~51",
+        "active": "4",
+        "recovery": "36",
+        "onHit": "Launch"
+      },
+      "damage": "15",
+      "guard": "Unblockable"
+    },
+    {
+      "id": "0dd5f090-853d-436a-9299-284e3e955c88",
+      "name": "Musou Insatsu",
+      "input": "41236D",
+      "type": "super",
+      "frameData": {
+        "startup": "3",
+        "active": "18",
+        "recovery": "15",
+        "onBlock": "-15",
+        "onHit": "Launch"
+      },
+      "damage": "24",
+      "guard": "Mid"
+    },
+    {
+      "id": "b1987e04-5ebf-41a7-a273-e1bd10ee0daf",
+      "name": "Hokuto Tenshou Raigeki",
+      "input": "623A",
+      "type": "special",
+      "frameData": {
+        "startup": "20",
+        "active": "4",
+        "recovery": "50",
+        "onBlock": "-39",
+        "onHit": "Launch"
+      },
+      "damage": "26",
+      "guard": "Mid"
+    },
+    {
+      "id": "5fde8d38-108e-4daa-b069-fd3173b2b5bf",
+      "name": "Hokuto Tenshou Raigeki (Enhanced)",
+      "input": "623A (Enhanced)",
+      "type": "special",
+      "frameData": {
+        "startup": "8",
+        "active": "4(14)4",
+        "recovery": "38",
+        "onBlock": "-27",
+        "onHit": "Launch"
+      },
+      "damage": "13\u00d72",
+      "guard": "Mid"
+    },
+    {
+      "id": "1c70ae5a-0e10-4715-a1cf-5783e10f538e",
+      "name": "Hokuto Raretsuken",
+      "input": "623C",
+      "type": "special",
+      "frameData": {
+        "startup": "14",
+        "active": "3\u00d73(11)4",
+        "recovery": "21",
+        "onBlock": "-7",
+        "onHit": "Launch"
+      },
+      "damage": "9\u00d74",
+      "guard": "Mid"
+    },
+    {
+      "id": "8e499067-7b64-45a2-b642-f478d5571a77",
+      "name": "Hokuto Raretsuken (Enhanced)",
+      "input": "623C (Enhanced)",
+      "type": "special",
+      "frameData": {
+        "startup": "14",
+        "active": "3\u00d76(11)4",
+        "recovery": "21",
+        "onBlock": "-7",
+        "onHit": "Launch"
+      },
+      "damage": "8\u00d77",
+      "guard": "Mid"
+    },
+    {
+      "id": "895301ac-f84e-40df-993e-d428f35ef643",
+      "name": "Rushing Attack",
+      "input": "6A",
+      "type": "normal",
+      "frameData": {
+        "startup": "29",
+        "active": "10",
+        "recovery": "32",
+        "onBlock": "-24",
+        "onHit": "Launch"
+      },
+      "damage": "24",
+      "guard": "Mid"
+    },
+    {
+      "id": "65bc5c7b-701d-496f-a701-b36a189bdbe9",
+      "name": "Heel Drop",
+      "input": "6B",
+      "type": "normal",
+      "frameData": {
+        "startup": "27",
+        "active": "4",
+        "recovery": "28",
+        "onBlock": "-14"
+      },
+      "damage": "24",
+      "guard": "High"
+    },
+    {
+      "id": "3b5e072f-d682-44ff-8fb8-4174490bb8d3",
+      "name": "Throw",
+      "input": "6C or 4C",
+      "type": "common",
+      "frameData": {
+        "startup": "4",
+        "active": "1",
+        "recovery": "6",
+        "onHit": "Launch"
+      },
+      "damage": "8, 7",
+      "guard": "Throw (16 pixels)"
+    },
+    {
+      "id": "912ea5df-2e61-49f4-b6f8-d9ecdf69d724",
+      "name": "Guard Cancel",
+      "input": "6C+D",
+      "type": "common",
+      "frameData": {
+        "startup": "8",
+        "active": "4",
+        "recovery": "17",
+        "onBlock": "-3",
+        "onHit": "Down"
+      },
+      "damage": "12",
+      "guard": "All"
+    },
+    {
+      "id": "4878cf52-7b46-4390-9ef6-2cf35155e15e",
+      "name": "Heavy Strike",
+      "input": "A+B",
+      "type": "common",
+      "frameData": {
+        "startup": "41",
+        "active": "8",
+        "recovery": "26",
+        "onHit": "Stagger"
+      },
+      "damage": "6",
+      "guard": "Unblockable"
+    },
+    {
+      "id": "523463ab-98f4-40f9-9348-879904037b77",
+      "name": "Grave Shoot",
+      "input": "A+C",
+      "type": "common",
+      "frameData": {
+        "startup": "15",
+        "active": "4",
+        "recovery": "19",
+        "onBlock": "-5",
+        "onHit": "Grave Launch"
+      },
+      "damage": "24",
+      "guard": "Mid"
+    },
+    {
+      "id": "b105ed13-5f54-4d11-bc68-cd76c0cd7e62",
+      "name": "BD Throw",
+      "input": "B+D",
+      "type": "common",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "12",
+        "onHit": "Launch"
+      },
+      "damage": "12, 6",
+      "guard": "Throw"
+    },
+    {
+      "id": "d1485473-0dfd-4280-b60a-533a661c39cb",
+      "name": "Banishing Strike",
+      "input": "C+D",
+      "type": "common",
+      "frameData": {
+        "startup": "19~34 (Normal)&lt;br&gt;35~39 (Charged)",
+        "active": "4",
+        "recovery": "20",
+        "onBlock": "-6",
+        "onHit": "Banishing Launch"
+      },
+      "damage": "24",
+      "guard": "Mid"
+    },
+    {
+      "id": "8299a65e-47cd-4a37-b2d5-b842f9fda8ca",
+      "name": "c.A",
+      "input": "c.A",
+      "type": "normal",
+      "frameData": {
+        "startup": "7",
+        "active": "6",
+        "recovery": "6",
+        "onBlock": "-4"
+      },
+      "damage": "9",
+      "guard": "Mid"
+    },
+    {
+      "id": "5385c963-0b22-44be-8377-34913ab41054",
+      "name": "c.B",
+      "input": "c.B",
+      "type": "normal",
+      "frameData": {
+        "startup": "8",
+        "active": "8",
+        "recovery": "6",
+        "onBlock": "-4"
+      },
+      "damage": "9",
+      "guard": "Mid"
+    },
+    {
+      "id": "49276ac0-9b57-4634-94fa-3298d6f65b7c",
+      "name": "c.C",
+      "input": "c.C",
+      "type": "normal",
+      "frameData": {
+        "startup": "11~27",
+        "active": "2",
+        "recovery": "26",
+        "onBlock": "-10"
+      },
+      "damage": "22",
+      "guard": "High"
+    },
+    {
+      "id": "78a2b062-4832-4678-9e2b-f68486c3a353",
+      "name": "c.D",
+      "input": "c.D",
+      "type": "normal",
+      "frameData": {
+        "startup": "9",
+        "active": "4(11)10",
+        "recovery": "16",
+        "onBlock": "-11"
+      },
+      "damage": "9\u00d72",
+      "guard": "Mid, Low"
+    },
+    {
+      "id": "448580cc-1a83-479b-a933-eb12636711a0",
+      "name": "c.[C]",
+      "input": "c.[C]",
+      "type": "normal",
+      "frameData": {
+        "startup": "43~50",
+        "active": "4",
+        "recovery": "26",
+        "onHit": "Stagger"
+      },
+      "damage": "22",
+      "guard": "Unblockable"
+    },
+    {
+      "id": "64eef436-ef38-4303-b86f-89d92eb83a54",
+      "name": "f.A",
+      "input": "f.A",
+      "type": "normal",
+      "frameData": {
+        "startup": "7",
+        "active": "6",
+        "recovery": "8",
+        "onBlock": "-6"
+      },
+      "damage": "7",
+      "guard": "Mid"
+    },
+    {
+      "id": "ccfc6ee7-8c00-4ed7-81c2-a6879939eba5",
+      "name": "f.B",
+      "input": "f.B",
+      "type": "normal",
+      "frameData": {
+        "startup": "8",
+        "active": "7",
+        "recovery": "10",
+        "onBlock": "-5"
+      },
+      "damage": "7",
+      "guard": "Mid"
+    },
+    {
+      "id": "d0fadc9b-c2db-4986-a729-eaec532aa63f",
+      "name": "f.C",
+      "input": "f.C",
+      "type": "normal",
+      "frameData": {
+        "startup": "18~37",
+        "active": "4",
+        "recovery": "24",
+        "onBlock": "-13"
+      },
+      "damage": "19",
+      "guard": "Mid"
+    },
+    {
+      "id": "cd88fa04-bf17-43aa-879e-7f0f494d4f46",
+      "name": "f.D",
+      "input": "f.D",
+      "type": "normal",
+      "frameData": {
+        "startup": "11",
+        "active": "6",
+        "recovery": "28",
+        "onBlock": "-16"
+      },
+      "damage": "19",
+      "guard": "Mid"
+    },
+    {
+      "id": "f0f33a48-5150-4824-9a07-ef21a4cd60da",
+      "name": "f.[C]",
+      "input": "f.[C]",
+      "type": "normal",
+      "frameData": {
+        "startup": "53~60",
+        "active": "4",
+        "recovery": "24",
+        "onHit": "Banishing Launch"
+      },
+      "damage": "19",
+      "guard": "Unblockable"
+    },
+    {
+      "id": "bac5ad94-a9ab-428c-abad-cdd5355605df",
+      "name": "Air Sai",
+      "input": "j.214D",
+      "type": "special",
+      "frameData": {
+        "startup": "9",
+        "active": "8",
+        "recovery": "Until landing",
+        "onHit": "Restand"
+      },
+      "damage": "14\u00d72",
+      "guard": "Air"
+    },
+    {
+      "id": "a0cec830-9019-44a5-aefd-683fd0eea7e0",
+      "name": "Air Hokuto Goushouha",
+      "input": "j.236C",
+      "type": "special",
+      "frameData": {
+        "startup": "17",
+        "recovery": "Until landing"
+      },
+      "damage": "13",
+      "guard": "All"
+    },
+    {
+      "id": "863219d8-ee0c-4344-b58b-b7f4b3fd19f3",
+      "name": "Air Hokuto Goushouha (Enhanced)",
+      "input": "j.236C (Enhanced)",
+      "type": "special",
+      "frameData": {
+        "startup": "17",
+        "recovery": "Until landing"
+      },
+      "damage": "16",
+      "guard": "All"
+    },
+    {
+      "id": "d26eae2a-51e8-4825-89e6-9baf91c2ec93",
+      "name": "j.A",
+      "input": "j.A",
+      "type": "normal",
+      "frameData": {
+        "startup": "3",
+        "active": "8",
+        "recovery": "9"
+      },
+      "damage": "6",
+      "guard": "High/Air"
+    },
+    {
+      "id": "bd9f02a6-12e2-474e-9bea-ac3c154feb69",
+      "name": "j.B",
+      "input": "j.B",
+      "type": "normal",
+      "frameData": {
+        "startup": "8",
+        "active": "8",
+        "recovery": "6"
+      },
+      "damage": "6",
+      "guard": "High/Air"
+    },
+    {
+      "id": "ce9af3cb-ee7e-4354-83c7-705794071f5e",
+      "name": "j.C",
+      "input": "j.C",
+      "type": "normal",
+      "frameData": {
+        "startup": "11~27",
+        "active": "8",
+        "recovery": "16"
+      },
+      "damage": "16",
+      "guard": "High/Air"
+    },
+    {
+      "id": "9b08a078-0b74-4430-b257-2d8b10d27791",
+      "name": "j.D",
+      "input": "j.D",
+      "type": "normal",
+      "frameData": {
+        "startup": "11",
+        "active": "4,4,4,3",
+        "recovery": "24"
+      },
+      "damage": "7\u00d74",
+      "guard": "High/Air"
+    },
+    {
+      "id": "353a0c9c-37ff-49cb-ba9b-3b315eeae2e2",
+      "name": "j.[C]",
+      "input": "j.[C]",
+      "type": "normal",
+      "frameData": {
+        "startup": "32~39",
+        "active": "4",
+        "recovery": "16",
+        "onHit": "Banishing Launch"
+      },
+      "damage": "16",
+      "guard": "Unblockable"
+    }
+  ],
   "combosList": []
 }

@@ -1,6 +1,601 @@
 {
-  "character": "heart",
   "name": "Heart",
-  "movesList": [],
+  "character": "heart",
+  "movesList": [
+    {
+      "id": "3b711a59-fa7a-4fbf-897d-18c8159fb437",
+      "name": "Kenpou Goroshi",
+      "input": "214214A",
+      "type": "super",
+      "frameData": {
+        "startup": "21+25",
+        "recovery": "Total 105",
+        "onHit": "Launch (overhead)"
+      },
+      "damage": "17\u00d7N, 36",
+      "guard": "All, High/Air"
+    },
+    {
+      "id": "8d3b4b41-8a9e-4fb7-80dc-708dc6534a5d",
+      "name": "Bring it on!",
+      "input": "214A",
+      "type": "special",
+      "frameData": {
+        "startup": "5",
+        "active": "20",
+        "recovery": "8",
+        "onHit": "Launch"
+      },
+      "damage": "26"
+    },
+    {
+      "id": "331722fd-a8da-4157-9dee-15af4d5c2fd8",
+      "name": "Earthcrush B",
+      "input": "214B",
+      "type": "special",
+      "frameData": {
+        "startup": "12",
+        "active": "12",
+        "recovery": "20",
+        "onBlock": "-13",
+        "onHit": "Grave Launch"
+      },
+      "damage": "17",
+      "guard": "Mid"
+    },
+    {
+      "id": "4f3a4438-a0d8-40fb-8986-25ae1c5b7db8",
+      "name": "Earthcrush D",
+      "input": "214D",
+      "type": "special",
+      "frameData": {
+        "startup": "23",
+        "active": "12",
+        "recovery": "20",
+        "onBlock": "-13",
+        "onHit": "Grave Launch"
+      },
+      "damage": "26",
+      "guard": "Mid"
+    },
+    {
+      "id": "94830043-befd-4ab9-97af-6180571b20b6",
+      "name": "Heart&#039;s A",
+      "input": "236236A",
+      "type": "super",
+      "frameData": {
+        "startup": "1+0",
+        "active": "1",
+        "recovery": "31",
+        "onHit": "Down"
+      },
+      "damage": "1, 21, 65",
+      "guard": "Throw (100 pixels)"
+    },
+    {
+      "id": "f6147f7e-16fa-44b6-b388-85ed37fdf438",
+      "name": "Activation",
+      "input": "236236C",
+      "type": "super",
+      "frameData": {
+        "recovery": "Total 17"
+      }
+    },
+    {
+      "id": "3f4f6acd-914c-41d6-b8b9-f19b560fd3a3",
+      "name": "Big Hug",
+      "input": "236A",
+      "type": "special",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "28",
+        "onHit": "Launch"
+      },
+      "damage": "0, 23",
+      "guard": "Throw"
+    },
+    {
+      "id": "df2d4a70-490e-497e-a319-3f807e7424c3",
+      "name": "Big Typhoon",
+      "input": "236C",
+      "type": "special",
+      "frameData": {
+        "startup": "5",
+        "active": "{4(4)}\u00d77,4",
+        "recovery": "23",
+        "onBlock": "-21",
+        "onHit": "Launch"
+      },
+      "damage": "17\u00d78",
+      "guard": "Mid"
+    },
+    {
+      "id": "b4cc9244-20d4-44f4-adbf-15641d11f4f1",
+      "name": "It really hurts!! (Fatal KO)",
+      "input": "236C+D",
+      "type": "finisher",
+      "frameData": {
+        "startup": "9+0",
+        "active": "1",
+        "recovery": "93"
+      },
+      "damage": "FATAL KO",
+      "guard": "Throw"
+    },
+    {
+      "id": "e28dcc19-20f5-4738-85eb-0c7f59f13afe",
+      "name": "2A",
+      "input": "2A",
+      "type": "normal",
+      "frameData": {
+        "startup": "7",
+        "active": "3",
+        "recovery": "3",
+        "onBlock": "6"
+      },
+      "damage": "6",
+      "guard": "Mid"
+    },
+    {
+      "id": "cccaa305-fdcc-4b1a-bf01-c70cb6873e50",
+      "name": "2B",
+      "input": "2B",
+      "type": "normal",
+      "frameData": {
+        "startup": "7",
+        "active": "4",
+        "recovery": "9",
+        "onBlock": "5"
+      },
+      "damage": "6",
+      "guard": "Low"
+    },
+    {
+      "id": "9db9fb96-edb6-4d38-92bb-47ceaf66824e",
+      "name": "2C Lv0",
+      "input": "2C",
+      "type": "normal",
+      "frameData": {
+        "startup": "22",
+        "active": "4",
+        "recovery": "12",
+        "onBlock": "-1"
+      },
+      "damage": "18",
+      "guard": "Mid"
+    },
+    {
+      "id": "a5ed83fd-ee10-4e4c-8c49-3326300a83b2",
+      "name": "2D",
+      "input": "2D",
+      "type": "normal",
+      "frameData": {
+        "startup": "35",
+        "active": "4",
+        "recovery": "34",
+        "onBlock": "-23",
+        "onHit": "Down"
+      },
+      "damage": "15",
+      "guard": "High"
+    },
+    {
+      "id": "e76f4eaf-7059-476a-baad-8eca0bd95579",
+      "name": "2C Lv2",
+      "input": "2[C]",
+      "type": "normal",
+      "frameData": {
+        "startup": "73~142",
+        "active": "4",
+        "recovery": "16",
+        "onBlock": "-5",
+        "onHit": "Grave Launch"
+      },
+      "damage": "41~74",
+      "guard": "Mid"
+    },
+    {
+      "id": "17482cf9-7020-429b-b962-43a0bdde730a",
+      "name": "2C Lv1",
+      "input": "2{C}",
+      "type": "normal",
+      "frameData": {
+        "startup": "39~68",
+        "active": "8",
+        "recovery": "12",
+        "onBlock": "-5",
+        "onHit": "Grave Launch"
+      },
+      "damage": "27~41",
+      "guard": "Mid"
+    },
+    {
+      "id": "57273166-9e46-457d-9ee1-2013c6b5fdc7",
+      "name": "5A",
+      "input": "5A",
+      "type": "normal",
+      "frameData": {
+        "startup": "5",
+        "active": "4,4",
+        "recovery": "4",
+        "onBlock": "2"
+      },
+      "damage": "4\u00d72",
+      "guard": "Mid"
+    },
+    {
+      "id": "abefd9ee-b367-4952-8dc1-7768d2077820",
+      "name": "5B",
+      "input": "5B",
+      "type": "normal",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "12",
+        "onBlock": "-6"
+      },
+      "damage": "7",
+      "guard": "Mid"
+    },
+    {
+      "id": "a42c955a-568e-47c4-a716-b33611c151ba",
+      "name": "5C Lv0",
+      "input": "5C",
+      "type": "normal",
+      "frameData": {
+        "startup": "30",
+        "active": "4",
+        "recovery": "16",
+        "onBlock": "-5"
+      },
+      "damage": "19",
+      "guard": "Mid"
+    },
+    {
+      "id": "47177672-a494-4acc-aa58-ec6ad8953241",
+      "name": "5D",
+      "input": "5D",
+      "type": "normal",
+      "frameData": {
+        "startup": "10",
+        "active": "4",
+        "recovery": "32",
+        "onBlock": "-21",
+        "onHit": "Launch"
+      },
+      "damage": "19",
+      "guard": "Mid"
+    },
+    {
+      "id": "c8fe9a3d-9f66-4e87-84dc-83e89393f1ae",
+      "name": "5C Lv2",
+      "input": "5[C]",
+      "type": "normal",
+      "frameData": {
+        "startup": "75~154",
+        "active": "4",
+        "recovery": "16",
+        "onBlock": "-5"
+      },
+      "damage": "39~79",
+      "guard": "Mid"
+    },
+    {
+      "id": "a2813c32-08f3-43a1-b620-0e228e603db4",
+      "name": "5C Lv1",
+      "input": "5{C}",
+      "type": "normal",
+      "frameData": {
+        "startup": "40~69",
+        "active": "4",
+        "recovery": "16",
+        "onBlock": "-4"
+      },
+      "damage": "14~28",
+      "guard": "All"
+    },
+    {
+      "id": "d9a08804-635d-4a1d-b810-40c1cf2a8f20",
+      "name": "5C Lv1",
+      "input": "5{C}",
+      "type": "normal",
+      "frameData": {
+        "startup": "41~70",
+        "active": "4",
+        "recovery": "16",
+        "onBlock": "-5"
+      },
+      "damage": "24~39",
+      "guard": "Mid"
+    },
+    {
+      "id": "0fc1585f-a79e-44f6-a269-21609bec7a1d",
+      "name": "Dunk Receive A",
+      "input": "623A",
+      "type": "special",
+      "frameData": {
+        "startup": "9",
+        "active": "4",
+        "recovery": "20",
+        "onHit": "Launch"
+      },
+      "damage": "0, 16, 28",
+      "guard": "Air Unblockable"
+    },
+    {
+      "id": "49f80333-018c-4286-8de9-f6ffdf0d5468",
+      "name": "Dunk Receive C",
+      "input": "623C",
+      "type": "special",
+      "frameData": {
+        "startup": "17",
+        "active": "4",
+        "recovery": "20",
+        "onHit": "Launch"
+      },
+      "damage": "0, 16, 28",
+      "guard": "Air Unblockable"
+    },
+    {
+      "id": "114d808f-bc42-4605-9d7b-077cfcc97372",
+      "name": "No Escape!",
+      "input": "63214A/C",
+      "type": "special",
+      "frameData": {
+        "startup": "A: 17&lt;br&gt;C: 26",
+        "recovery": "A: Total 77&lt;br&gt;C: Total 85"
+      }
+    },
+    {
+      "id": "3c360918-649b-4c9f-a7b7-316c7548bcd7",
+      "name": "6A",
+      "input": "6A",
+      "type": "normal",
+      "frameData": {
+        "startup": "23",
+        "active": "4",
+        "recovery": "32",
+        "onBlock": "-21",
+        "onHit": "Down"
+      },
+      "damage": "19",
+      "guard": "High"
+    },
+    {
+      "id": "03068d62-a303-44d2-8f81-7dfd596546f5",
+      "name": "Throw",
+      "input": "6C or 4C",
+      "type": "common",
+      "frameData": {
+        "startup": "4",
+        "active": "1",
+        "recovery": "6",
+        "onHit": "Launch"
+      },
+      "damage": "38",
+      "guard": "Throw (16 pixels)"
+    },
+    {
+      "id": "985fafbd-1ff4-472f-8d38-934ea5228211",
+      "name": "Guard Cancel",
+      "input": "6C+D",
+      "type": "common",
+      "frameData": {
+        "startup": "8",
+        "active": "4",
+        "recovery": "17",
+        "onBlock": "-3",
+        "onHit": "Down"
+      },
+      "damage": "11",
+      "guard": "All"
+    },
+    {
+      "id": "a6398d32-3086-4eec-853f-6705ddc3d716",
+      "name": "Heavy Strike",
+      "input": "A+B",
+      "type": "common",
+      "frameData": {
+        "startup": "41",
+        "active": "4",
+        "recovery": "16",
+        "onHit": "Stagger"
+      },
+      "damage": "6",
+      "guard": "Unblockable"
+    },
+    {
+      "id": "b9b631d6-d20b-465c-95f0-0b7df3b715fa",
+      "name": "BD Throw",
+      "input": "B+D",
+      "type": "common",
+      "frameData": {
+        "startup": "10 (Normal)&lt;br&gt;31~51 (Autorun)",
+        "active": "2",
+        "recovery": "34",
+        "onHit": "Launch"
+      },
+      "damage": "0, 6\u00d72, 19",
+      "guard": "Throw"
+    },
+    {
+      "id": "388b1641-e015-436b-b69c-8d1d4ee79c8c",
+      "name": "Banishing Strike",
+      "input": "C+D",
+      "type": "common",
+      "frameData": {
+        "startup": "19~34 (Normal)&lt;br&gt;35~39 (Charged)",
+        "active": "4",
+        "recovery": "20",
+        "onBlock": "-9",
+        "onHit": "Banishing Launch"
+      },
+      "damage": "24",
+      "guard": "Mid"
+    },
+    {
+      "id": "ed8d6744-577e-4ec8-9d69-7de775b3e16c",
+      "name": "Bring it on! (Guard Cancel)",
+      "input": "Guard &gt; 214A",
+      "type": "special",
+      "frameData": {
+        "startup": "5",
+        "active": "4",
+        "recovery": "24",
+        "onBlock": "-20",
+        "onHit": "Banishing Launch"
+      },
+      "damage": "26",
+      "guard": "Mid"
+    },
+    {
+      "id": "0e6cc571-5fdf-4dc8-9097-235b80591bd3",
+      "name": "Meat Cross",
+      "input": "j.236B",
+      "type": "special",
+      "frameData": {
+        "startup": "5",
+        "active": "4",
+        "recovery": "24",
+        "onHit": "Launch"
+      },
+      "damage": "34",
+      "guard": "High/Air"
+    },
+    {
+      "id": "70385907-ccfb-4554-8b71-9b88e4a1afb8",
+      "name": "Air Big Typhoon",
+      "input": "j.236C",
+      "type": "special",
+      "frameData": {
+        "startup": "5",
+        "active": "{4(4)}\u00d77,4",
+        "recovery": "53",
+        "onHit": "Launch"
+      },
+      "damage": "17\u00d78",
+      "guard": "Mid"
+    },
+    {
+      "id": "bfe59377-6c43-4921-bf6b-43928515ac4a",
+      "name": "Body Throwing",
+      "input": "j.236D",
+      "type": "special",
+      "frameData": {
+        "startup": "5",
+        "active": "4",
+        "recovery": "32",
+        "onHit": "Banishing Launch"
+      },
+      "damage": "0, 33",
+      "guard": "Air Throw"
+    },
+    {
+      "id": "5e6a6bfe-a33d-4f7a-8aa2-052785c4ce65",
+      "name": "Meat Dunk",
+      "input": "j.236E",
+      "type": "special",
+      "frameData": {
+        "startup": "1",
+        "onHit": "Down"
+      },
+      "damage": "22",
+      "guard": "Air Throw (68 pixels)"
+    },
+    {
+      "id": "07a4772b-26a6-406e-8b78-6fae219c6b19",
+      "name": "Earthquake",
+      "input": "j.2B",
+      "type": "special",
+      "frameData": {
+        "startup": "33",
+        "active": "Until landing,2",
+        "recovery": "39",
+        "onHit": "Launch"
+      },
+      "damage": "24, 8",
+      "guard": "High/Air, Unblockable"
+    },
+    {
+      "id": "5c75044a-b0cb-4159-af61-ffe7bf157ca4",
+      "name": "j.A",
+      "input": "j.A",
+      "type": "normal",
+      "frameData": {
+        "startup": "10",
+        "active": "6",
+        "recovery": "6"
+      },
+      "damage": "6",
+      "guard": "High/Air"
+    },
+    {
+      "id": "0f8bd3dd-230f-4770-8cae-a1ecb06d2a05",
+      "name": "Air Throw",
+      "input": "j.A+C",
+      "type": "common",
+      "frameData": {
+        "startup": "5",
+        "active": "4",
+        "recovery": "8",
+        "onHit": "Launch"
+      },
+      "damage": "0, 26",
+      "guard": "Air Throw"
+    },
+    {
+      "id": "3795197a-bfb7-45d6-9097-083ccb8a77dd",
+      "name": "j.B",
+      "input": "j.B",
+      "type": "normal",
+      "frameData": {
+        "startup": "13",
+        "active": "6",
+        "recovery": "9"
+      },
+      "damage": "6",
+      "guard": "High/Air"
+    },
+    {
+      "id": "aa4b172b-e611-492e-9870-a968129c3162",
+      "name": "j.C Lv0",
+      "input": "j.C",
+      "type": "normal",
+      "frameData": {
+        "startup": "14",
+        "active": "41",
+        "recovery": "8"
+      },
+      "damage": "16",
+      "guard": "High/Air"
+    },
+    {
+      "id": "8df1da8f-dc62-46e5-b5ef-652d631b3342",
+      "name": "j.D",
+      "input": "j.D",
+      "type": "normal",
+      "frameData": {
+        "startup": "9",
+        "active": "40",
+        "recovery": "8"
+      },
+      "damage": "16",
+      "guard": "High/Air"
+    },
+    {
+      "id": "a9b4032a-4e88-4a74-93f1-e13afb833fc0",
+      "name": "j.C Lv1",
+      "input": "j.[C]",
+      "type": "normal",
+      "frameData": {
+        "startup": "15~74",
+        "active": "41",
+        "recovery": "8"
+      },
+      "damage": "16~40",
+      "guard": "High/Air"
+    }
+  ],
   "combosList": []
 }

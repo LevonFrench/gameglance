@@ -2095,7 +2095,7 @@ rosterCount: 9,
   {
 
     id: 'fist-of-the-north-star-hokuto-no-ken',
-
+    isDraft: true,
     mameRomset: "",
 
     name: "Fist of the North Star (Hokuto no Ken)",
@@ -11436,7 +11436,7 @@ rosterCount: 8,
 
   {
     id: 'hokuto-no-ken',
-    mameRomset: "hotdebut",
+    mameRomset: "fotns",
     name: "Hokuto no Ken",
     tagline: "You Are Already Dead",
     developer: 'Arc System Works',
@@ -11450,7 +11450,7 @@ rosterCount: 8,
         { name: "Boost", description: "Spend Boost stocks to dash cancel moves or air dash. Core combo extension and pressure tool.", input: "A+B+C" },
         { name: "Aura Guard", description: "Pushblock. Spend meter to push the opponent away during blockstun.", input: "A+B (while blocking)" },
         { name: "Banishing Strike", description: "Universal launcher that wall bounces. Key combo starter.", input: "B+C" },
-        { name: "Fatal KO", description: "Instant kill move unique to each character. Requires 7 stars lit on the Star Gauge." },
+        { name: "Fatal KO", description: "Instant kill move unique to each character. Requires 7 stars lit on the Star Gauge.", input: "236C+D" },
         { name: "Star Gauge", description: "Landing specific moves lights stars (up to 7). 7 stars enables Fatal KO instant kill." },
         { name: "Grave Shoot", description: "Combo ender that ground bounces for okizeme setups.", input: "2+B+C" },
     ],
@@ -11458,18 +11458,18 @@ rosterCount: 8,
       { title: 'Dustloop Wiki', url: 'https://www.dustloop.com/w/HNK' },
     ],
     characters: [
-      { id: 'kenshiro', name: 'Kenshiro', moveCount: 0 },
-      { id: 'raoh', name: 'Raoh', moveCount: 0 },
-      { id: 'toki', name: 'Toki', moveCount: 0 },
-      { id: 'rei', name: 'Rei', moveCount: 0 },
-      { id: 'juda', name: 'Juda', moveCount: 0 },
-      { id: 'shin', name: 'Shin', moveCount: 0 },
-      { id: 'souther', name: 'Souther', moveCount: 0 },
-      { id: 'mamiya', name: 'Mamiya', moveCount: 0 },
-      { id: 'jagi', name: 'Jagi', moveCount: 0 },
-      { id: 'heart', name: 'Heart', moveCount: 0 }
+      { id: 'kenshiro', name: 'Kenshiro', moveCount: 39 },
+      { id: 'raoh', name: 'Raoh', moveCount: 46 },
+      { id: 'toki', name: 'Toki', moveCount: 41 },
+      { id: 'rei', name: 'Rei', moveCount: 40 },
+      { id: 'juda', name: 'Juda', moveCount: 36 },
+      { id: 'shin', name: 'Shin', moveCount: 39 },
+      { id: 'souther', name: 'Souther', moveCount: 44 },
+      { id: 'mamiya', name: 'Mamiya', moveCount: 49 },
+      { id: 'jagi', name: 'Jagi', moveCount: 40 },
+      { id: 'heart', name: 'Heart', moveCount: 43 }
     ],
-    tabs: ['Special Moves', 'Super Combos', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
+    tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Common Moves', 'Finishers']
   },
 
 ];
