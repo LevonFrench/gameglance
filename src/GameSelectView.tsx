@@ -11,6 +11,7 @@ interface Props {
   onSelectGame: (game: GameDefinition) => void;
   disableInitialAnimation?: boolean;
   controller?: ControllerType;
+  notationOverride?: string;
   initialExpandedId?: string | null;
 }
 
@@ -361,6 +362,7 @@ export const GameSelectView: React.FC<Props> = ({
   onSelectGame, 
   disableInitialAnimation = false,
   controller,
+  notationOverride = 'auto',
   initialExpandedId
 }) => {
   useArrowNavigation('[id^="game-card-"]');
@@ -1122,7 +1124,7 @@ export const GameSelectView: React.FC<Props> = ({
               {/* Expanded Area */}
               {expandedGameId === game.id && (
                 <div style={{ animation: 'fadeInUp 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)' }}>
-                  <GameInfoCard game={game} controller={controller} />
+                  <GameInfoCard game={game} controller={controller} notationOverride={notationOverride} />
                 </div>
               )}
             </div>

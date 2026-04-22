@@ -7,13 +7,15 @@ import { GlyphSequence } from './GlyphSequence';
 interface Props {
   game: GameDefinition;
   controller?: ControllerType;
+  notationOverride?: string;
 }
 
-export const GameInfoCard: React.FC<Props> = ({ game, controller = 'xbox' }) => {
+export const GameInfoCard: React.FC<Props> = ({ game, controller = 'xbox', notationOverride = 'auto' }) => {
   const { isDark } = useTheme();
   const [activeTab, setActiveTab] = useState<'info' | 'systems'>('systems');
   
   const mechanics = game.systemMechanics || null;
+  const resolvedNotation = (notationOverride === 'auto' ? game.notationSystem : notationOverride) as 'numpad' | 'traditional' | 'mk' | undefined;
 
   // Extract a color based on game ID to use for subtle accents
   let hash = 0;
@@ -355,7 +357,7 @@ export const GameInfoCard: React.FC<Props> = ({ game, controller = 'xbox' }) => 
                         }}>
                           <GlyphSequence 
                              inputs={[mech.input]} 
-                             notationSystem={game.notationSystem || 'traditional'} 
+                             notationSystem={resolvedNotation || 'traditional'} 
                              controller={controller} 
                           />
                         </div>

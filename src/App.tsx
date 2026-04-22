@@ -232,6 +232,7 @@ export const App: React.FC = () => {
         onSelectGame={handleSelectGame} 
         disableInitialAnimation={disableGameSelectAnimation} 
         controller={controller}
+        notationOverride={notationOverride}
         initialExpandedId={lastExpandedGameId}
       />;
       break;
