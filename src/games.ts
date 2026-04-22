@@ -10786,36 +10786,7 @@ rosterCount: 8,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
-
-  {
-    id: 'thems-fightin-herds',
-
-    mameRomset: "",
-    releaseYear: 2020,
-    platform: "PC, Switch, PS4, Xbox One",
-    name: "Them's Fightin' Herds",
-    rosterCount: 7,
-    notationSystem: 'traditional',
-    tags: ["Platform"],
-    searchAliases: ['tfh'],
-    systemMechanics: [
-        { name: "Magic System", description: "Character-specific magic meters with unique resource management and abilities." },
-        { name: "Juggle Decay", description: "Combo gravity increases with each hit, naturally limiting combo length." },
-        { name: "Level 2 Supers", description: "Enhanced super moves that cost two bars of meter for increased damage." },
-        { name: "Cross Canter", description: "A universal reversal attack performed while blocking. Costs one bar.", input: "4+A+B (while blocking)" },
-    ],
-
-    characters: [
-      { id: 'arizona', name: 'Arizona', moveCount: 0 },
-      { id: 'oleander', name: 'Oleander', moveCount: 0 },
-      { id: 'paprika', name: 'Paprika', moveCount: 0 },
-      { id: 'pom', name: 'Pom', moveCount: 0 },
-      { id: 'shanty', name: 'Shanty', moveCount: 0 },
-      { id: 'tianhuo', name: 'Tianhuo', moveCount: 0 },
-      { id: 'velvet', name: 'Velvet', moveCount: 0 }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
-  },
+,
   {
     id: 'melty-blood-type-lumina---wikipedia',
 
@@ -10846,6 +10817,7 @@ rosterCount: 8,
       { id: 'korr', name: 'Korr', moveCount: 0 },
       { id: 'pyra', name: 'Pyra', moveCount: 0 },
       { id: 'talazia', name: 'Talazia', moveCount: 0 },
+      { id: 'zarak', name: 'Zarak', moveCount: 0 },
       { id: 'zorn', name: 'Zorn', moveCount: 0 },
       { id: 'zyx', name: 'Zyx', moveCount: 0 }
     ],
@@ -10873,6 +10845,14 @@ rosterCount: 8,
     ],
 
     characters: [
+      { id: 'bullzeye', name: 'Bullzeye', moveCount: 0 },
+      { id: 'delta', name: 'Delta', moveCount: 0 },
+      { id: 'minatek', name: 'Minatek', moveCount: 0 },
+      { id: 'psyclown', name: 'Psyclown', moveCount: 0 },
+      { id: 'purge', name: 'Purge', moveCount: 0 },
+      { id: 'sabotage', name: 'Sabotage', moveCount: 0 },
+      { id: 'ssapo', name: 'Ssapo', moveCount: 0 },
+      { id: 'zipperhead', name: 'Zipperhead', moveCount: 0 }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -10949,6 +10929,15 @@ rosterCount: 8,
         { name: "Angel/Demon Alignment", description: "Characters are aligned as Angels or Demons, each with thematic movesets and stage interactions." },
     ],
     characters: [
+      { id: 'a-hau', name: 'A Hau', moveCount: 0 },
+      { id: 'dybyd', name: 'Dybyd', moveCount: 0 },
+      { id: 'geezer', name: 'Geezer', moveCount: 0 },
+      { id: 'kurara', name: 'Kurara', moveCount: 0 },
+      { id: 'kyoha', name: 'Kyoha', moveCount: 0 },
+      { id: 'nanase', name: 'Nanase', moveCount: 0 },
+      { id: 'sasa', name: 'Sasa', moveCount: 0 },
+      { id: 'unknown', name: 'Unknown', moveCount: 0 },
+      { id: 'verny', name: 'Verny', moveCount: 0 }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -10973,32 +10962,20 @@ rosterCount: 8,
         { name: "Dodge", description: "Sidestep and evade attacks with 3D movement options." },
     ],
     characters: [
+      { id: 'chaco', name: 'Chaco', moveCount: 0 },
+      { id: 'chuji', name: 'Chuji', moveCount: 0 },
+      { id: 'doctor-v', name: 'Doctor V', moveCount: 0 },
+      { id: 'epon', name: 'Epon', moveCount: 0 },
+      { id: 'fei', name: 'Fei', moveCount: 0 },
+      { id: 'gren', name: 'Gren', moveCount: 0 },
+      { id: 'hom', name: 'Hom', moveCount: 0 },
+      { id: 'ill', name: 'Ill', moveCount: 0 },
+      { id: 'mary', name: 'Mary', moveCount: 0 },
+      { id: 'oliems', name: 'Oliems', moveCount: 0 }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
-
-  {
-    id: 'ultraman-fighting-evolution',
-
-    mameRomset: "",
-    name: "Ultraman Fighting Evolution",
-    tagline: "Enter the Arena",
-    notationSystem: 'numpad',
-    tags: ["2D"],
-    developer: 'Banpresto',
-    releaseYear: 1998,
-    platform: 'PlayStation',
-    rosterCount: 13,
-    tagline: "Rise of the Ultra Heroes",
-    systemMechanics: [
-        { name: "Energy Gauge", description: "Ultraman characters have a Color Timer that depletes over time. When it runs out, you weaken significantly." },
-        { name: "Special Beam", description: "Powerful projectile super attacks like the Spacium Beam. Costs energy gauge." },
-        { name: "Giant Scale Combat", description: "Kaiju-scale 3D arena battles with destructible environments." },
-    ],
-    characters: [
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
-  },
+,
 
   {
     id: 'war-gods',
@@ -11019,6 +10996,16 @@ rosterCount: 8,
         { name: "Special Moves", description: "Character-specific projectiles and command attacks." },
     ],
     characters: [
+      { id: 'ahau-kin', name: 'Ahau Kin', moveCount: 0 },
+      { id: 'anubis', name: 'Anubis', moveCount: 0 },
+      { id: 'cy-5', name: 'CY-5', moveCount: 0 },
+      { id: 'kabuki-jo', name: 'Kabuki Jo', moveCount: 0 },
+      { id: 'maximus', name: 'Maximus', moveCount: 0 },
+      { id: 'pagan', name: 'Pagan', moveCount: 0 },
+      { id: 'tak', name: 'Tak', moveCount: 0 },
+      { id: 'vallah', name: 'Vallah', moveCount: 0 },
+      { id: 'voodoo', name: 'Voodoo', moveCount: 0 },
+      { id: 'warhead', name: 'Warhead', moveCount: 0 }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
