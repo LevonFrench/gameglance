@@ -1175,7 +1175,7 @@ rosterCount: 12,
     developer: "Capcom",
 
     releaseYear: 1994,
-    platform: "Arcade, PS1, PC, PS4, Switch, Xbox One",
+    platform: "Arcade, PS1, Saturn",
 
 rosterCount: 11,
 
@@ -1871,7 +1871,7 @@ rosterCount: 16,
 
     releaseYear: 1991,
 
-    platform: "Arcade, NeoGeo, SNES, Genesis, PC",
+    platform: "Arcade, Neo Geo, SNES, Genesis",
 
 rosterCount: 11,
 
@@ -2189,7 +2189,7 @@ rosterCount: 9,
     developer: "SNK",
 
     releaseYear: 1999,
-    platform: "Arcade, NeoGeo, DC, PS2, PC",
+    platform: "Arcade, Neo Geo, Dreamcast, PS2, Xbox 360",
 
 rosterCount: 14,
 
@@ -3424,7 +3424,7 @@ rosterCount: 39,
 
     releaseYear: 1998,
 
-    platform: "Arcade, PS1, DC, PC, PS4, Switch, Xbox One",
+    platform: "Arcade, PS1, Dreamcast",
 
 rosterCount: 14,
 
@@ -3981,7 +3981,7 @@ rosterCount: 21,
     developer: "Capcom",
 
     releaseYear: 1995,
-    platform: "Arcade, Saturn, PC, PS4, Switch, Xbox One",
+    platform: "Arcade, PS1, Saturn",
 
 rosterCount: 14,
 
@@ -4739,7 +4739,7 @@ rosterCount: 19,
     developer: "SNK",
 
     releaseYear: 1993,
-    platform: "PS4, Xbox One, PC, Switch",
+    platform: "Arcade, Neo Geo, SNES, Genesis, 3DO",
 
 rosterCount: 25,
 
@@ -4973,7 +4973,7 @@ rosterCount: 11,
 
     mameRomset: "samsho4",
     releaseYear: 1996,
-    platform: "Arcade, NeoGeo, Saturn, PS1, PC",
+    platform: "Arcade, Neo Geo, PS1",
     name: "Samurai Shodown IV: Amakusa's Revenge (1996)",
     rosterCount: 16,
     notationSystem: 'numpad',
@@ -5679,7 +5679,7 @@ rosterCount: 37,
 
     releaseYear: 2000,
 
-    platform: "PS2, PC",
+    platform: "PS2",
 
 rosterCount: 21,
 
@@ -6502,7 +6502,7 @@ rosterCount: 33,
 
     releaseYear: 1999,
 
-    platform: "Arcade, NeoGeo, PC",
+    platform: "Arcade, Neo Geo",
 
 rosterCount: 24,
 
@@ -6567,7 +6567,7 @@ rosterCount: 24,
 
     releaseYear: 2000,
 
-    platform: "Arcade, NeoGeo, PS2, DC, PC",
+    platform: "Arcade, Neo Geo, PS2",
 
 rosterCount: 33,
 
@@ -6641,7 +6641,7 @@ rosterCount: 33,
 
     releaseYear: 2001,
 
-    platform: "Arcade, NeoGeo, PS2, DC, PC",
+    platform: "Arcade, Neo Geo, PS2",
 
 rosterCount: 34,
 
@@ -6796,7 +6796,7 @@ rosterCount: 39,
 
     releaseYear: 2003,
 
-    platform: "Arcade, NeoGeo, PS2, Xbox, PC",
+    platform: "Arcade, Neo Geo, PS2, Xbox",
 
 rosterCount: 30,
 
@@ -7127,7 +7127,7 @@ rosterCount: 48,
 
     releaseYear: 2004,
 
-    platform: "PS2, Xbox, PC",
+    platform: "PS2",
 
 rosterCount: 19,
 
@@ -7182,7 +7182,7 @@ rosterCount: 19,
 
     releaseYear: 2006,
 
-    platform: "PS2, PC",
+    platform: "PS2",
 
 rosterCount: 17,
 
@@ -7228,7 +7228,7 @@ rosterCount: 17,
 
     mameRomset: "",
     releaseYear: 2007,
-    platform: "Arcade, PS2, PC",
+    platform: "PS2",
     name: "The King of Fighters: Maximum Impact Regulation 'A' (2007)",
     rosterCount: 5,
     notationSystem: 'numpad',
@@ -7317,7 +7317,7 @@ rosterCount: 12,
     developer: "SNK",
 
     releaseYear: 1998,
-    platform: "Arcade, NeoGeo, DC, PS2, PC",
+    platform: "Arcade, Neo Geo, Dreamcast, PS2",
 
 rosterCount: 19,
 
@@ -8390,7 +8390,7 @@ rosterCount: 7,
     developer: "Capcom",
 
     releaseYear: 1996,
-    platform: "Arcade, Saturn, PS1, PC, PS4, Switch, Xbox One",
+    platform: "Arcade, PS1, Saturn",
 
 rosterCount: 18,
 
@@ -8571,7 +8571,7 @@ rosterCount: 8,
 
     mameRomset: "redearth",
     releaseYear: 1996,
-    platform: "Arcade, PC",
+    platform: "Arcade",
     name: "Red Earth (Warzard)",
     tagline: "Fantasy RPG Fighter",
     rosterCount: 10,
@@ -8598,7 +8598,7 @@ rosterCount: 8,
 
     mameRomset: "",
     releaseYear: 2004,
-    platform: "PS2, PC",
+    platform: "PS2",
     name: "Dragon Ball Z: Budokai 3",
     tagline: "Enter the Arena",
     rosterCount: 37,
@@ -8659,7 +8659,7 @@ rosterCount: 8,
 
     mameRomset: "",
     releaseYear: 2007,
-    platform: "PS2, Wii, PC",
+    platform: "PS2, Wii",
     name: "Dragon Ball Z: Budokai Tenkaichi 3",
     tagline: "Enter the Arena",
     rosterCount: 95,
@@ -9070,7 +9070,7 @@ rosterCount: 8,
 
     mameRomset: "",
     releaseYear: 2002,
-    platform: "PS2, Xbox, GC, PC",
+    platform: "PS2, Xbox, GameCube",
     notationSystem: 'mk',
     name: "Mortal Kombat: Deadly Alliance",
     tagline: "A Deadly Alliance",
@@ -9120,7 +9120,7 @@ rosterCount: 8,
 
     mameRomset: "",
     releaseYear: 2006,
-    platform: "PS2, Xbox, Wii, PC",
+    platform: "PS2, Xbox, Wii",
     notationSystem: 'mk',
     name: "Mortal Kombat: Armageddon",
     tagline: "The End is Near",
@@ -9279,7 +9279,7 @@ rosterCount: 8,
 
     mameRomset: "soulclbr",
     releaseYear: 1998,
-    platform: "Arcade, DC, PC",
+    platform: "Arcade, Dreamcast",
     name: "SoulCalibur",
     tagline: "The Legend Will Never Die",
     rosterCount: 17,
@@ -9322,7 +9322,7 @@ rosterCount: 8,
 
     mameRomset: "scl2",
     releaseYear: 2002,
-    platform: "Arcade, PS2, Xbox, GC, PC",
+    platform: "Arcade, PS2, Xbox, GameCube",
     name: "SoulCalibur II",
     tagline: "The Weapon Master",
     rosterCount: 21,
@@ -9371,7 +9371,7 @@ rosterCount: 8,
 
     mameRomset: "",
     releaseYear: 2005,
-    platform: "PS2, PC",
+    platform: "PS2",
     name: "SoulCalibur III",
     tagline: "What Lies Ahead?",
     rosterCount: 40,
@@ -9439,7 +9439,7 @@ rosterCount: 8,
 
     mameRomset: "",
     releaseYear: 2008,
-    platform: "PS3, Xbox 360, PC",
+    platform: "PS3, Xbox 360",
     name: "SoulCalibur IV",
     tagline: "The Two Swords",
     rosterCount: 28,
@@ -9495,7 +9495,7 @@ rosterCount: 8,
 
     mameRomset: "",
     releaseYear: 2012,
-    platform: "PS3, Xbox 360, PC",
+    platform: "PS3, Xbox 360",
     name: "SoulCalibur V",
     tagline: "A New Generation",
     rosterCount: 25,
@@ -9970,7 +9970,7 @@ rosterCount: 8,
 
     mameRomset: "tekken3",
     releaseYear: 1997,
-    platform: "Arcade, PS1, PC",
+    platform: "Arcade, PS1",
     name: "Tekken 3",
     tagline: "A New Era of Combat",
     rosterCount: 25,
@@ -10020,7 +10020,7 @@ rosterCount: 8,
 
     mameRomset: "tekken4",
     releaseYear: 2001,
-    platform: "PS2, PC",
+    platform: "Arcade, PS2",
     name: "Tekken 4",
     tagline: "Return of the King",
     rosterCount: 25,
@@ -10070,7 +10070,7 @@ rosterCount: 8,
 
     mameRomset: "tekken5",
     releaseYear: 2004,
-    platform: "PS2, PC",
+    platform: "Arcade, PS2",
     name: "Tekken 5",
     tagline: "The Iron Fist Awakening",
     rosterCount: 32,
@@ -10280,7 +10280,7 @@ rosterCount: 8,
 
     mameRomset: "kof95",
     releaseYear: 1995,
-    platform: "Arcade, NeoGeo, PS1, Saturn, PC",
+    platform: "Arcade, Neo Geo, PS1, Saturn",
     name: "The King of Fighters '95",
     rosterCount: 27,
     notationSystem: 'numpad',
@@ -10334,7 +10334,7 @@ rosterCount: 8,
 
     mameRomset: "kof96",
     releaseYear: 1996,
-    platform: "Arcade, NeoGeo, PS1, Saturn, PC",
+    platform: "Arcade, Neo Geo, PS1, Saturn",
     name: "The King of Fighters '96",
     rosterCount: 26,
     notationSystem: 'numpad',
@@ -10386,7 +10386,7 @@ rosterCount: 8,
 
     mameRomset: "kof97",
     releaseYear: 1997,
-    platform: "Arcade, NeoGeo, PS1, Saturn, PC",
+    platform: "Arcade, Neo Geo, PS1, Saturn",
     name: "The King of Fighters '97",
     rosterCount: 31,
     notationSystem: 'numpad',
@@ -10509,7 +10509,7 @@ rosterCount: 8,
 
     mameRomset: "kof99",
     releaseYear: 1999,
-    platform: "Arcade, NeoGeo, PS1, DC, PC",
+    platform: "Arcade, Neo Geo, PS1, Dreamcast",
     name: "The King of Fighters '99",
     rosterCount: 28,
     notationSystem: 'numpad',
@@ -10565,7 +10565,7 @@ rosterCount: 8,
 
     mameRomset: "kof_xi",
     releaseYear: 2005,
-    platform: "Arcade, PS2, PC",
+    platform: "Arcade, PS2",
     name: "The King of Fighters XI",
     tagline: "The 11th Tournament",
     rosterCount: 45,
@@ -10638,7 +10638,7 @@ rosterCount: 8,
 
     mameRomset: "",
     releaseYear: 2009,
-    platform: "Arcade, PS3, Xbox 360, PC",
+    platform: "Arcade, PS3, Xbox 360",
     name: "The King of Fighters XII",
     tagline: "Rebirth of the King",
     rosterCount: 25,
@@ -10688,7 +10688,7 @@ rosterCount: 8,
 
     mameRomset: "",
     releaseYear: 1993,
-    platform: "Genesis, PC",
+    platform: "Genesis, Sega CD",
     name: "Eternal Champions",
     tagline: "Enter the Arena",
     rosterCount: 23,
@@ -10928,7 +10928,7 @@ rosterCount: 8,
 
     mameRomset: "",
     releaseYear: 1999,
-    platform: "N64, PC",
+    platform: "N64",
     name: "Super Smash Bros.",
     tagline: "Choose Your Character!",
     rosterCount: 12,
@@ -10964,7 +10964,7 @@ rosterCount: 8,
 
     mameRomset: "",
     releaseYear: 2001,
-    platform: "GC, PC",
+    platform: "GameCube",
     name: "Super Smash Bros. Melee",
     tagline: "The Melee",
     rosterCount: 26,
@@ -11016,7 +11016,7 @@ rosterCount: 8,
 
     mameRomset: "",
     releaseYear: 2008,
-    platform: "Wii, PC",
+    platform: "Wii",
     name: "Super Smash Bros. Brawl",
     tagline: "The Brawl Begins",
     rosterCount: 39,
@@ -11083,7 +11083,7 @@ rosterCount: 8,
     name: "WeaponLord",
     tagline: "Enter the Arena",
     releaseYear: 1995,
-    platform: "SNES, Genesis, PC",
+    platform: "SNES, Genesis",
     rosterCount: 8,
     notationSystem: 'traditional',
     tags: ["2D"],
@@ -11373,7 +11373,7 @@ rosterCount: 8,
     tagline: "United by Fate",
     developer: 'Capcom',
     releaseYear: 1998,
-    platform: "Arcade, PlayStation, PC",
+    platform: "Arcade, PS1",
     rosterCount: 20,
     systemMechanics: [
       { name: 'Team-Up Attack', description: 'Call your partner for a powerful two-person attack.' , input: 'HP+HK' },

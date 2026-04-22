@@ -407,14 +407,14 @@ h1, h2, h3, h4, h5, h6 {
 .glitch.glitching::before {
   color: var(--accent-cyan);
   clip-path: inset(0 0 70% 0);
-  animation: glitchTop 0.4s steps(2) infinite;
+  animation: glitchTop 0.8s steps(2) infinite;
   opacity: 0.8;
   z-index: -1;
 }
 .glitch.glitching::after {
   color: var(--accent-rose);
   clip-path: inset(70% 0 0 0);
-  animation: glitchBot 0.4s steps(3) infinite;
+  animation: glitchBot 0.8s steps(3) infinite;
   opacity: 0.8;
   z-index: -2;
 }
