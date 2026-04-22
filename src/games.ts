@@ -7889,6 +7889,13 @@ rosterCount: 8,
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
+    systemMechanics: [
+        { name: "Slash/Bust", description: "Choose between Slash or Bust versions of your character with different movesets." },
+        { name: "Rage Gauge", description: "Fills when taking damage. At max, increases damage output significantly." },
+        { name: "Weapon Break", description: "Disarm the opponent, drastically reducing their damage for the rest of the round." },
+        { name: "POW Explosion", description: "One-time burst that knocks opponents away and grants a temporary power boost." },
+    ],
+
     characters: [
       { id: 'amakusa', name: 'Amakusa', moveCount: 0 },
       { id: 'basara', name: 'Basara', moveCount: 37 },
@@ -8904,6 +8911,13 @@ rosterCount: 8,
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
+    systemMechanics: [
+        { name: "Stylish Art", description: "Combo extension system for flashy multi-hit sequences." },
+        { name: "Super Cancels", description: "Cancel specials into supers for extended combo damage." },
+        { name: "3D Movement", description: "Sidesteps and full 3D movement unlike traditional 2D KOF." },
+        { name: "Power Gauge", description: "Meter system powering supers and enhanced moves." },
+    ],
+
     characters: [
       { id: 'ash-crimson', name: 'Ash Crimson', moveCount: 0 },
       { id: 'blue-mary', name: 'Blue Mary', moveCount: 0 },
@@ -9569,6 +9583,14 @@ rosterCount: 8,
     rosterCount: 10,
     notationSystem: 'traditional',
     tags: ["2D"],
+    systemMechanics: [
+        { name: "Team-Up Attack", description: "Call your partner for a powerful two-person attack.", input: "QCF+PP" },
+        { name: "Tardy Counter", description: "A late counter performed while blocking. Calls your partner to attack.", input: "QCB+KK (while blocking)" },
+        { name: "Burning Vigor", description: "Meter system powering Team-Up Attacks, Tardy Counters, and Supers." },
+        { name: "Air Combo", description: "Launch opponents and pursue into the air for extended aerial combos." },
+        { name: "Party Up System", description: "Choose two characters. The partner is used for assists and team attacks." },
+    ],
+
     characters: [
       { id: 'batsu-ichimonji', name: 'Batsu Ichimonji', moveCount: 0 },
       { id: 'hinata-wakaba', name: 'Hinata Wakaba', moveCount: 0 },
@@ -9620,6 +9642,14 @@ rosterCount: 8,
     rosterCount: 16,
     notationSystem: 'numpad',
     tags: ["2D", "Anime"],
+    systemMechanics: [
+        { name: "Tactical Guard", description: "An active guard that deflects attacks and creates punish opportunities." },
+        { name: "Exceed Chaos", description: "Powered-up state that enhances specials and unlocks Destruction Chaos supers." },
+        { name: "Run or Step", description: "Choose between a continuous run or quick step dash at character select." },
+        { name: "Extra Move Select", description: "Choose two additional special moves before the match to customize your toolkit." },
+        { name: "Guard Cancel", description: "Cancel blockstun into a counterattack by spending meter." },
+    ],
+
     characters: [
       { id: 'bravo', name: 'Bravo', moveCount: 0 },
       { id: 'cait-sith', name: 'Cait & Sith', moveCount: 0 },
