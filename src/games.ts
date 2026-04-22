@@ -10912,18 +10912,7 @@ rosterCount: 8,
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
-,
-  {
-    id: 'melty-blood-type-lumina---wikipedia',
-
-    mameRomset: "",
-    name: "Melty Blood: Type Lumina - Wikipedia",
-    tagline: "Type Lumina (Wiki)",
-    notationSystem: 'numpad',
-    tags: ["2D", "Anime"],
-    characters: [],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
-  },
+,,
 
   {
     id: 'weaponlord',
