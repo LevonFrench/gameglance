@@ -1157,6 +1157,14 @@ rosterCount: 29,
     links: [
       { title: 'FreeStepDodge', url: 'https://www.freestepdodge.com/' },
     ],
+    systemMechanics: [
+        { name: "Power Blow", description: "A charged cinematic attack available when health drops below 50%. Sends the opponent flying into danger zones.", input: "P+K (charge)" },
+        { name: "Critical System", description: "Chain specific attacks to enter a Critical Stun state, where the opponent cannot hold (counter) for a brief window." },
+        { name: "Triangle System", description: "Strikes beat throws, throws beat holds, holds beat strikes. The fundamental RPS of Dead or Alive." },
+        { name: "Sidestep", description: "Evade linear attacks by stepping into the background or foreground.", input: "P+K+H" },
+        { name: "Danger Zones", description: "Interactive stage hazards. Knock opponents into walls, off cliffs, or through floors for bonus damage." },
+    ],
+
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -1188,6 +1196,15 @@ rosterCount: 29,
     stores: [
       { platform: 'Steam', url: 'https://store.steampowered.com/app/838380/DEAD_OR_ALIVE_6/' }
     ],
+    systemMechanics: [
+        { name: "Break Gauge", description: "A meter system that builds through combat. Powers Fatal Rush, Break Blow, and Break Hold." },
+        { name: "Fatal Rush", description: "A four-hit auto-combo performed with the Special button. Easy to execute, leads into Break Blow.", input: "S, S, S, S" },
+        { name: "Break Blow", description: "A powerful cinematic attack that costs one bar of Break Gauge. Launches on hit and can wall splat.", input: "S+P+K" },
+        { name: "Break Hold", description: "A universal counter hold that works against all attack levels. Costs one bar of Break Gauge.", input: "S+H" },
+        { name: "Triangle System", description: "Strikes beat throws, throws beat holds, holds beat strikes. The core RPS system of Dead or Alive." },
+        { name: "Danger Zones", description: "Interactive stage elements and hazards. Knocking opponents into them deals bonus damage and extends combos." },
+    ],
+
         characters: [
       { id: 'ayane', name: 'Ayane', moveCount: 0 },
       { id: 'bass', name: 'Bass', moveCount: 0 },
@@ -2442,6 +2459,15 @@ rosterCount: 9,
       { platform: 'Steam', url: 'https://store.steampowered.com/app/577940/Killer_Instinct/' },
       { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/killer-instinct/C4FL0L6C09LG' }
     ],
+    systemMechanics: [
+        { name: "Combo Breaker", description: "Break the opponent's combo by matching their attack strength (light/medium/heavy). Resets to neutral.", input: "LP+LK / MP+MK / HP+HK" },
+        { name: "Counter Breaker", description: "Bait and punish a Combo Breaker attempt. If successful, grants a full lockout for a free combo.", input: "MP+MK (during combo)" },
+        { name: "Instinct Mode", description: "A character-specific power-up activated once per match. Each character gains unique buffs.", input: "HP+HK" },
+        { name: "Shadow Meter", description: "Two-bar meter for Shadow Moves (enhanced specials). Shadow Moves have armor and can be broken with specific timing." },
+        { name: "Auto-Doubles", description: "After an opener or linker, press any button for an automatic two-hit combo extension. Strength determines speed and breakability." },
+        { name: "Enders", description: "Four types of combo enders: Damage, Wall Splat, Battery (meter gain), and Launcher. Choose based on situation." },
+    ],
+
         characters: [
       { id: 'aganos', name: 'Aganos', moveCount: 0 },
       { id: 'aria', name: 'ARIA', moveCount: 0 },
@@ -2947,6 +2973,14 @@ rosterCount: 24,
     stores: [
       { platform: 'Steam', url: 'https://store.steampowered.com/app/237110/Mortal_Kombat_Komplete_Edition/' }
     ],
+    systemMechanics: [
+        { name: "Super Meter", description: "Three-bar meter system. Build meter by attacking, being hit, or blocking. Powers Enhanced Moves, Breakers, and X-Rays." },
+        { name: "Enhanced Moves", description: "Spend one bar to power up a special move with extra hits, armor, or improved properties.", input: "R2 (during special)" },
+        { name: "X-Ray Move", description: "Costs full 3 bars. A cinematic super attack showing skeletal damage. High damage and often armored.", input: "L2+R2" },
+        { name: "Breaker", description: "Escape a combo by spending 2 bars of meter while being hit.", input: "F+R2 (while being hit)" },
+        { name: "Tag System (Tag Mode)", description: "In Tag mode, switch between two characters mid-match. Tag assists and Tag combos add depth." },
+    ],
+
         characters: [],
 
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
@@ -3120,6 +3154,15 @@ rosterCount: 32,
     stores: [
       { platform: 'Steam', url: 'https://store.steampowered.com/app/307780/Mortal_Kombat_X/' }
     ],
+    systemMechanics: [
+        { name: "Variation System", description: "Each character has three distinct fighting style variations, each with unique special moves and strategies." },
+        { name: "Meter Burn", description: "Spend one bar of super meter to enhance a special move with additional hits, armor, or properties.", input: "R2 (during special)" },
+        { name: "X-Ray Move", description: "Costs full 3 bars of meter. A devastating cinematic attack showing internal skeletal damage.", input: "L2+R2" },
+        { name: "Breaker", description: "Escape a combo by spending 2 bars of meter while being hit. Resets to neutral.", input: "F+R2 (while being hit)" },
+        { name: "Stamina System", description: "Two bars of stamina that govern back dashes, run, and interactable usage. Regenerates over time." },
+        { name: "Interactables", description: "Stage objects that can be used offensively or defensively depending on character type (power or agility).", input: "R1" },
+    ],
+
         characters: [
       { id: 'alien', name: 'Alien', moveCount: 0 },
       { id: 'cassie-cage', name: 'Cassie Cage', moveCount: 0 },
@@ -7011,6 +7054,16 @@ rosterCount: 8,
     links: [
       { title: 'Dustloop Wiki (GGXRD)', url: 'https://dustloop.com/w/GGXRD' },
     ],
+    systemMechanics: [
+        { name: "Roman Cancel", description: "Spend 50% Tension to cancel any move's recovery, enabling extended combos and pressure resets.", input: "Any 3 buttons" },
+        { name: "Burst", description: "A combo breaker that pushes opponents away (Blue Burst) or builds Tension when used offensively (Gold Burst).", input: "D+any button" },
+        { name: "Instant Kill", description: "Activate Instant Kill mode, then land a cinematic finishing move for an instant round win.", input: "P+K+S+H" },
+        { name: "Faultless Defense", description: "Hold two buttons while blocking to create pushback and prevent chip damage. Drains Tension.", input: "Any 2 buttons (while blocking)" },
+        { name: "Dead Angle Attack", description: "A guard cancel counterattack performed while in blockstun. Costs 50% Tension.", input: "6+P+K (while blocking)" },
+        { name: "Dust Attack", description: "A universal overhead launcher. Hold up on hit to pursue into an aerial combo.", input: "D" },
+        { name: "Danger Time", description: "A random event triggered when attacks clash. Temporarily removes damage scaling and buffs Roman Cancels." },
+    ],
+
     characters: [
       { id: 'axl', name: 'Axl', moveCount: 0 },
       { id: 'bedman', name: 'Bedman', moveCount: 0 },
@@ -7200,6 +7253,13 @@ rosterCount: 8,
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
+    systemMechanics: [
+        { name: "Kreate-a-Fighter", description: "Full character creation system with customizable fighting styles, special moves, and appearances." },
+        { name: "Air Kombat", description: "Dedicated aerial combat system. Launch opponents and continue combos in the air with juggles and air specials." },
+        { name: "Kreate-a-Fatality", description: "Build custom finishing sequences by chaining preset brutal attacks within a time limit after winning a match." },
+        { name: "Parry System", description: "Time a block input at the moment of impact to parry an attack, leaving the opponent vulnerable." },
+    ],
+
     characters: [
       { id: 'ashrah', name: 'Ashrah', moveCount: 0 },
       { id: 'baraka', name: 'Baraka', moveCount: 0 },
@@ -7453,6 +7513,14 @@ rosterCount: 8,
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
+    systemMechanics: [
+        { name: "Soul Gauge", description: "A gauge above each health bar. Blocking reduces it; attacking fills it. When depleted, the character is left vulnerable to a Critical Finish." },
+        { name: "Critical Finish", description: "A cinematic instant-win attack available when the opponent's Soul Gauge is empty and they are Guard Crushed.", input: "A+B+K+G" },
+        { name: "Guard Impact", description: "Deflect incoming attacks with a timed guard input, creating an opening for counterattack.", input: "6+G or 4+G" },
+        { name: "Just Guard", description: "A precisely timed guard that recovers faster than normal block, allowing punishes on normally safe attacks." },
+        { name: "8-Way Run", description: "Free movement in all eight directions. Core 3D movement system for positioning and evasion." },
+    ],
+
     characters: [
       { id: 'algol', name: 'Algol', moveCount: 0 },
       { id: 'amy', name: 'Amy', moveCount: 0 },
@@ -7691,6 +7759,15 @@ rosterCount: 8,
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
+    systemMechanics: [
+        { name: "Focus Attack", description: "A chargeable attack with one hit of armor. Crumples on counter hit or full charge. Core of SF4's meta.", input: "MP+MK" },
+        { name: "FADC (Focus Attack Dash Cancel)", description: "Cancel a special move into Focus Attack, then dash cancel the Focus. Extends combos and makes unsafe moves safe.", input: "MP+MK, 66 (during special)" },
+        { name: "Ultra Combo", description: "A cinematic super move powered by the Revenge Gauge (fills when taking damage). Two Ultras per character to choose from.", input: "2x QCF + PPP/KKK" },
+        { name: "EX Moves", description: "Enhanced special moves that cost one bar of Super Meter. Improved speed, damage, or properties.", input: "PP/KK (during special)" },
+        { name: "Red Focus Attack", description: "Costs meter. Absorbs multiple hits instead of one, then crumples on hit. Ultra Edition addition.", input: "LP+MP+MK" },
+        { name: "Super Combo", description: "Costs full Super Meter. A powerful special move unique to each character." },
+    ],
+
     characters: [
       { id: 'abel', name: 'Abel', moveCount: 0 },
       { id: 'akuma', name: 'Akuma', moveCount: 0 },
@@ -7871,6 +7948,14 @@ rosterCount: 8,
     links: [
       { title: 'Wavu Wiki', url: 'https://wavu.wiki/t/Main_Page' },
     ],
+    systemMechanics: [
+        { name: "Bound System", description: "Certain moves cause a 'Bound' state that bounces a juggled opponent off the ground, extending combos." },
+        { name: "Rage System", description: "When health drops below a threshold, the character enters Rage. Damage output increases significantly." },
+        { name: "Sidestep & Sidewalk", description: "Evade linear attacks with quick sidesteps or continuous sidewalks. Core 3D movement for creating angles." },
+        { name: "Ukemi / Tech Roll", description: "Recover from knockdowns by rolling in different directions. Proper tech choice avoids okizeme setups." },
+        { name: "Throw Break", description: "Break throws by pressing the correct button (1 or 2) matching the throw input within a small window." },
+    ],
+
     characters: [
       { id: 'alisa-bosconovitch', name: 'Alisa Bosconovitch', moveCount: 0 },
       { id: 'anna-williams', name: 'Anna Williams', moveCount: 0 },
@@ -8353,6 +8438,15 @@ rosterCount: 8,
       { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/melty-blood-type-lumina-switch/' },
       { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/melty-blood-type-lumina/9N8J2V1RFKQD' }
     ],
+    systemMechanics: [
+        { name: "Moon Skills", description: "Universal special moves accessible to all characters via simple inputs. Can be enhanced with meter.", input: "B+C" },
+        { name: "Moon Drive", description: "A timed power-up state that enhances Moon Skills and grants access to Last Arc. Uses the Moon Gauge.", input: "A+B+C" },
+        { name: "Shield", description: "An active parry system. Successful Shield triggers advantage and can be followed up with a Shield Counter.", input: "Hold D" },
+        { name: "Rapid Beat", description: "Auto-combo system that chains normals together with repeated button presses for accessible combo routes." },
+        { name: "Last Arc", description: "A cinematic super move available only during Moon Drive after landing a Shield. Deals massive damage." },
+        { name: "Heat", description: "A regenerating health mechanic. White health recovers over time and can be cashed out via Moon Drive activation." },
+    ],
+
     characters: [
       { id: 'akiha-tohno', name: 'Akiha Tohno', moveCount: 0 },
       { id: 'aoko-aozaki', name: 'Aoko Aozaki', moveCount: 0 },
@@ -8704,6 +8798,14 @@ rosterCount: 8,
     isDraft: true,
     notationSystem: 'numpad',
     tags: ["2D", "Anime"],
+    systemMechanics: [
+        { name: "Tactical Guard", description: "An active guard option that deflects attacks and leaves the opponent open for a punish." },
+        { name: "Exceed Chaos", description: "A powered-up state that enhances specials and grants access to Destruction Chaos super moves." },
+        { name: "Run or Step", description: "Choose between a continuous run or a quick step dash at character select. Defines your ground movement style." },
+        { name: "Extra Move Select", description: "Choose two additional special moves from a list before the match begins, customizing your toolkit." },
+        { name: "Guard Cancel", description: "Cancel blockstun into a counterattack by spending meter." },
+    ],
+
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -8881,6 +8983,14 @@ rosterCount: 8,
     rosterCount: 12,
     notationSystem: 'traditional',
     tags: ["Platform"],
+    systemMechanics: [
+        { name: "Assist System", description: "Call an assist character for additional attacks, combos, or defensive options. Assists have cooldown timers." },
+        { name: "Burst", description: "A combo-breaking mechanic that pushes the opponent away. Limited uses per round." },
+        { name: "Super Meter", description: "Three-level meter system. Build meter through attacks and getting hit. Spend on EX moves and supers." },
+        { name: "Air Dash", description: "Perform a forward or backward dash in the air for mobility and mixup options." },
+        { name: "Push Block", description: "Spend meter while blocking to push the opponent away and reset neutral." },
+    ],
+
     characters: [],
     tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Unique Attacks']
   }
@@ -8952,6 +9062,15 @@ rosterCount: 8,
     links: [
       { title: 'Dustloop Wiki (AH3)', url: 'https://dustloop.com/w/AH3' },
     ],
+    systemMechanics: [
+        { name: "Arcana System", description: "Select an Arcana (elemental patron) alongside your character. Each Arcana grants unique specials, supers, and passive abilities." },
+        { name: "Homing", description: "Universal air homing dash that tracks the opponent. Core movement option for Arcana Heart's aerial-focused gameplay.", input: "D" },
+        { name: "Extend Force", description: "Activate your Arcana's power for a timed buff. Enhances Arcana-specific abilities and grants access to Extend Blast.", input: "A+B+C" },
+        { name: "Clash", description: "When two attacks collide simultaneously, a Clash occurs. Both players recover and can act immediately." },
+        { name: "Guard Cancel", description: "Cancel blockstun into a Homing Dash by spending meter. Key defensive reversal option.", input: "4+D (while blocking)" },
+        { name: "Critical Heart", description: "Character-specific cinematic super. Costs 3 meter bars and deals heavy damage." },
+    ],
+
     characters: [
       { id: 'heart-aino', name: 'Heart Aino', moveCount: 0 },
       { id: 'saki-tsuzura', name: 'Saki Tsuzura', moveCount: 0 },
