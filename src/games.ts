@@ -10567,31 +10567,7 @@ rosterCount: 8,
       { id: 'terry-bogard', name: 'Terry Bogard', moveCount: 0 }
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
-  },
-  {
-    id: 'clayfighter',
-
-    mameRomset: "",
-    releaseYear: 1993,
-    platform: "SNES, Genesis, PC",
-    name: "ClayFighter",
-    tagline: "Enter the Arena",
-    rosterCount: 8,
-    notationSystem: 'traditional',
-    tags: ["2D"],
-    developer: 'Visual Concepts',
-    characters: [
-      { id: 'bad-mr-frosty', name: 'Bad Mr. Frosty', moveCount: 0 },
-      { id: 'blob', name: 'Blob', moveCount: 0 },
-      { id: 'blue-suede-goo', name: 'Blue Suede Goo', moveCount: 0 },
-      { id: 'bonker', name: 'Bonker', moveCount: 0 },
-      { id: 'helga', name: 'Helga', moveCount: 0 },
-      { id: 'ickybod-clay', name: 'Ickybod Clay', moveCount: 0 },
-      { id: 'taffy', name: 'Taffy', moveCount: 0 },
-      { id: 'tiny', name: 'Tiny', moveCount: 0 }
-    ],
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
-  },
+  },,
   {
     id: 'eternal-champions',
 

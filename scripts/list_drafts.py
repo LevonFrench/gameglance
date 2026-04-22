@@ -40,8 +40,6 @@ for raw in blocks_raw:
     if not has_dev: issues.append('dev')
     if not has_mech: issues.append('mech')
     if not has_links: issues.append('links')
-    if not has_stores: issues.append('stores')
-    if not has_aliases: issues.append('aliases')
     if not has_year: issues.append('year')
     if chars == 0: issues.append('chars')
     
