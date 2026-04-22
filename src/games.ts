@@ -5818,9 +5818,10 @@ rosterCount: 11,
 
     platform: "PS4, PC",
 
-rosterCount: 43,
+    rosterCount: 43,
 
-            tags: ['3D'],
+    tags: ['2D'],
+    searchAliases: ['sfv', 'sf5', 'sfvce', 'champion edition'],
 
     
     systemMechanics: [
@@ -5857,7 +5858,7 @@ rosterCount: 43,
       { id: 'e-honda', name: 'E. Honda', moveCount: 0 },
       { id: 'ed', name: 'Ed', moveCount: 0 },
       { id: 'fang', name: 'F.A.N.G', moveCount: 0 },
-      { id: 'falkie', name: 'Falkie', moveCount: 0 },
+      { id: 'falke', name: 'Falke', moveCount: 0 },
       { id: 'g', name: 'G', moveCount: 0 },
       { id: 'gill', name: 'Gill', moveCount: 0 },
       { id: 'guile', name: 'Guile', moveCount: 0 },
@@ -9604,13 +9605,26 @@ rosterCount: 8,
     rosterCount: 19,
     notationSystem: 'traditional',
     tags: ["2D"],
+    developer: 'Capcom',
+    systemMechanics: [
+        { name: "Parry", description: "Tap forward (or down for lows) just before an attack connects to nullify all damage and recover instantly. The defining mechanic of 3rd Strike — rewards reads and reactions.", input: "6 (or 2 for lows)" },
+        { name: "Super Arts", description: "Choose one of three Super Arts before the match. Each has different meter length, stock count, and properties. Defines your character's gameplan." },
+        { name: "EX Moves", description: "Enhanced specials costing one Super Art stock. Improved speed, damage, invincibility, or juggle properties.", input: "PP/KK (during special)" },
+        { name: "Dash", description: "Quick forward or backward dash. Forward dash is essential for okizeme and closing distance.", input: "66 / 44" },
+        { name: "Throw Tech", description: "Press LP+LK during the throw startup window to tech a throw and take no damage.", input: "LP+LK" },
+        { name: "Leap Attack", description: "Universal overhead that hits crouching opponents. Slow but forces stand blocking.", input: "MP+MK" },
+        { name: "Quick Stand", description: "Press down when knocked down to recover faster. Reduces opponent's okizeme options.", input: "2 (on knockdown)" },
+        { name: "Kara Cancel", description: "Cancel the startup frames of a normal into a throw or special to extend range. Advanced technique." },
+        { name: "Red Parry", description: "Parry during blockstun by tapping forward at the exact moment of the next hit. Extremely difficult but punishes multi-hit pressure." },
+        { name: "Stun Gauge", description: "Taking hits fills the stun gauge. When full, character is dizzied and vulnerable to a free combo." },
+    ],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
     characters: [
       { id: 'akuma', name: 'Akuma', moveCount: 0 },
       { id: 'alex', name: 'Alex', moveCount: 0 },
-      { id: 'chun---li', name: 'Chun - Li', moveCount: 0 },
+      { id: 'chun-li', name: 'Chun-Li', moveCount: 0 },
       { id: 'dudley', name: 'Dudley', moveCount: 0 },
       { id: 'elena', name: 'Elena', moveCount: 0 },
       { id: 'hugo', name: 'Hugo', moveCount: 0 },
@@ -9647,6 +9661,7 @@ rosterCount: 8,
     rosterCount: 25,
     notationSystem: 'traditional',
     tags: ["2D"],
+    developer: 'Capcom',
     searchAliases: ['sf4', 'sfiv'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
@@ -9687,6 +9702,9 @@ rosterCount: 8,
       { id: 'vega', name: 'Vega', moveCount: 0 },
       { id: 'zangief', name: 'Zangief', moveCount: 0 }
     ],
+        stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/21660/Street_Fighter_IV/' },
+    ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
@@ -9700,9 +9718,17 @@ rosterCount: 8,
     rosterCount: 35,
     notationSystem: 'traditional',
     tags: ["2D"],
+    developer: 'Capcom',
     searchAliases: ['ssf4', 'super 4'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+        systemMechanics: [
+        { name: "Focus Attack", description: "Chargeable attack with one hit of armor. Crumples on counter hit or full charge.", input: "MP+MK" },
+        { name: "FADC", description: "Cancel a special into Focus Attack, then dash cancel. Extends combos and makes unsafe moves safe.", input: "MP+MK, 66 (during special)" },
+        { name: "Ultra Combo", description: "Cinematic super powered by the Revenge Gauge (fills when taking damage). Two Ultras per character.", input: "2x QCF+PPP/KKK" },
+        { name: "EX Moves", description: "Enhanced specials costing one Super Meter bar. Better speed, damage, or properties.", input: "PP/KK (during special)" },
+        { name: "Super Combo", description: "Costs full Super Meter. Powerful special unique to each character." },
     ],
     characters: [
       { id: 'abel', name: 'Abel', moveCount: 0 },
