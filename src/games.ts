@@ -10209,6 +10209,14 @@ rosterCount: 8,
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
+        systemMechanics: [
+        { name: "Team Battle", description: "Select a team of 3 fighters. Each team member fights one round — no switching mid-round." },
+        { name: "Power Gauge", description: "Builds by attacking, being hit, or charging (A+B+C). When full, enables Desperation Moves." },
+        { name: "Desperation Move (DM)", description: "Super move available when Power Gauge is full or health is flashing red. High damage finisher.", input: "Varies per character" },
+        { name: "Emergency Evasion", description: "Dodge roll forward or backward to avoid attacks and reposition.", input: "AB" },
+        { name: "Guard Cancel Blowback", description: "While blocking, spend Power Gauge to counterattack with a CD blowback.", input: "CD (while blocking)" },
+        { name: "Team Edit", description: "First KOF to allow custom team selection from any characters, removing preset team restrictions." },
+    ],
     characters: [
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
       { id: 'athena-asamiya', name: 'Athena Asamiya', moveCount: 0 },
@@ -10306,6 +10314,15 @@ rosterCount: 8,
     searchAliases: ['kof97', 'kof 97'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+        systemMechanics: [
+        { name: "Advanced Mode", description: "Power Gauge fills by attacking. Can stock up to 3 bars. Enables DMs at any health and SDMs at low health.", input: "Select at character screen" },
+        { name: "Extra Mode", description: "Classic charge-style gauge (hold A+B+C). When full, temporary MAX state. DMs only during MAX or low health.", input: "Select at character screen" },
+        { name: "MAX Mode (Advanced)", description: "Spend a stock to enter MAX state. Increased damage and access to Super Desperation Moves.", input: "ABC" },
+        { name: "Super Desperation Move (SDM)", description: "Enhanced super move. In Advanced: requires MAX + 1 stock. In Extra: requires MAX + low health." },
+        { name: "Emergency Evasion", description: "Dodge roll to avoid attacks. Forward or backward.", input: "AB" },
+        { name: "Guard Cancel Blowback", description: "Counterattack while blocking. Costs 1 stock (Advanced) or requires MAX (Extra).", input: "CD (while blocking)" },
+        { name: "Counter Mode / Armor Mode", description: "Sacrifice stocks for temporary buffs. Counter Mode: free cancels. Armor Mode: super armor." },
     ],
     characters: [
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
@@ -10420,6 +10437,15 @@ rosterCount: 8,
     searchAliases: ['kof99', 'kof 99'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+        systemMechanics: [
+        { name: "Striker System", description: "4th team member acts as an assist striker. Call them in during battle for an attack or setup.", input: "BC" },
+        { name: "Counter Mode", description: "Spend 3 stocks to enter Counter Mode. All special moves become cancelable into supers. Increased combo potential.", input: "ABC" },
+        { name: "Armor Mode", description: "Spend 3 stocks to enter Armor Mode. Super armor on all attacks — absorb hits without flinching.", input: "BCD" },
+        { name: "Power Gauge", description: "Stocks up to 3 bars by attacking. Powers DMs, Counter/Armor Modes, and Guard Cancel." },
+        { name: "Desperation Move (DM)", description: "Super move costing 1 stock. Available anytime with meter." },
+        { name: "Super Desperation Move (SDM)", description: "Enhanced super requiring low health + 1 stock, or Counter Mode." },
+        { name: "Emergency Evasion", description: "Dodge roll forward or backward.", input: "AB" },
     ],
     characters: [
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
@@ -10541,6 +10567,14 @@ rosterCount: 8,
     searchAliases: ['kof12', 'kofxii'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+        systemMechanics: [
+        { name: "Critical Counter", description: "When the Critical Counter gauge is full and activated, landing a close C or D triggers a timed combo state for massive damage.", input: "Activation varies" },
+        { name: "Guard Attack", description: "Universal counterattack from blockstun. Blows back the opponent.", input: "CD (while blocking)" },
+        { name: "Deadlock", description: "When two attacks clash, both players enter a brief deadlock state — mash to win the exchange." },
+        { name: "Super Special Move", description: "Super move costing 1 stock of the Power Gauge.", input: "Varies per character" },
+        { name: "Power Gauge", description: "Builds by attacking. Stocks up to multiple bars for supers and Guard Attacks." },
+        { name: "Emergency Evasion", description: "Dodge roll forward or backward to avoid attacks.", input: "AB" },
     ],
     characters: [
       { id: 'andy-bogard', name: 'Andy Bogard', moveCount: 0 },
