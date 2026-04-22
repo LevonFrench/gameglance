@@ -2793,6 +2793,7 @@ rosterCount: 25,
 
     notationSystem: 'traditional',
     tags: ["2D"],
+    searchAliases: ['hsf2 ae', 'hyper sf2'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
@@ -2816,6 +2817,12 @@ rosterCount: 25,
       { id: 'akuma', name: 'Akuma', moveCount: 0 }
     ],
 
+        stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/586200/Street_Fighter_30th_Anniversary_Collection/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0102-CUSA11392_00-SF30THBUNDLESF30' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/street-fighter-30th-anniversary-collection/c24t2nldbxg1' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/street-fighter-30th-anniversary-collection-switch/' },
+    ],
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
@@ -5476,6 +5483,7 @@ rosterCount: 25,
 
     notationSystem: 'traditional',
     tags: ["2D"],
+    searchAliases: ['sfa', 'zero'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
@@ -5494,6 +5502,12 @@ rosterCount: 25,
       { id: 'sodom', name: 'Sodom', moveCount: 0 }
     ],
 
+        stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/586200/Street_Fighter_30th_Anniversary_Collection/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0102-CUSA11392_00-SF30THBUNDLESF30' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/street-fighter-30th-anniversary-collection/c24t2nldbxg1' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/street-fighter-30th-anniversary-collection-switch/' },
+    ],
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
@@ -5529,6 +5543,7 @@ rosterCount: 19,
 
     notationSystem: 'traditional',
     tags: ["2D"],
+    searchAliases: ['sfa2', 'alpha 2', 'zero 2'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
@@ -5554,6 +5569,12 @@ rosterCount: 19,
       { id: 'zangief', name: 'Zangief', moveCount: 0 }
     ],
 
+        stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/586200/Street_Fighter_30th_Anniversary_Collection/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0102-CUSA11392_00-SF30THBUNDLESF30' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/street-fighter-30th-anniversary-collection/c24t2nldbxg1' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/street-fighter-30th-anniversary-collection-switch/' },
+    ],
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
@@ -5589,6 +5610,7 @@ rosterCount: 37,
 
     notationSystem: 'traditional',
     tags: ["2D"],
+    searchAliases: ['sfa3', 'alpha 3', 'zero 3'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
@@ -5633,6 +5655,12 @@ rosterCount: 37,
         { id: 'ingrid', name: 'Ingrid', moveCount: 0 }
       ],
 
+        stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/586200/Street_Fighter_30th_Anniversary_Collection/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0102-CUSA11392_00-SF30THBUNDLESF30' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/street-fighter-30th-anniversary-collection/c24t2nldbxg1' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/street-fighter-30th-anniversary-collection-switch/' },
+    ],
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
@@ -5668,6 +5696,7 @@ rosterCount: 21,
 
     notationSystem: 'traditional',
     tags: ["2D"],
+    searchAliases: ['sfex3', 'ex3'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
@@ -5728,6 +5757,7 @@ rosterCount: 21,
 
     notationSystem: 'traditional',
     tags: ["2D"],
+    searchAliases: ['sf3 2i', '2nd impact'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
@@ -5747,6 +5777,12 @@ rosterCount: 21,
       { id: 'yun', name: 'Yun', moveCount: 0 }
     ],
 
+        stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/586200/Street_Fighter_30th_Anniversary_Collection/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0102-CUSA11392_00-SF30THBUNDLESF30' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/street-fighter-30th-anniversary-collection/c24t2nldbxg1' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/street-fighter-30th-anniversary-collection-switch/' },
+    ],
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
@@ -5782,6 +5818,7 @@ rosterCount: 11,
 
     notationSystem: 'traditional',
     tags: ["2D"],
+    searchAliases: ['sf3ng', 'new generation'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
@@ -5799,6 +5836,12 @@ rosterCount: 11,
       { id: 'yun', name: 'Yun', moveCount: 0 }
     ],
 
+        stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/586200/Street_Fighter_30th_Anniversary_Collection/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0102-CUSA11392_00-SF30THBUNDLESF30' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/street-fighter-30th-anniversary-collection/c24t2nldbxg1' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/street-fighter-30th-anniversary-collection-switch/' },
+    ],
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
@@ -5948,6 +5991,12 @@ rosterCount: 17,
       { id: 'zangief', name: 'Zangief', moveCount: 0 }
     ],
 
+        stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/586200/Street_Fighter_30th_Anniversary_Collection/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0102-CUSA11392_00-SF30THBUNDLESF30' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/street-fighter-30th-anniversary-collection/c24t2nldbxg1' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/street-fighter-30th-anniversary-collection-switch/' },
+    ],
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
@@ -5979,6 +6028,7 @@ rosterCount: 17,
 
     notationSystem: 'traditional',
     tags: ["2D"],
+    searchAliases: ['ssf2', 'super sf2'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
@@ -6001,6 +6051,12 @@ rosterCount: 17,
       { id: 'zangief', name: 'Zangief', moveCount: 0 }
     ],
 
+        stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/586200/Street_Fighter_30th_Anniversary_Collection/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0102-CUSA11392_00-SF30THBUNDLESF30' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/street-fighter-30th-anniversary-collection/c24t2nldbxg1' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/street-fighter-30th-anniversary-collection-switch/' },
+    ],
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
   },
@@ -7483,6 +7539,7 @@ rosterCount: 41,
 
     notationSystem: 'traditional',
     tags: ["2D"],
+    searchAliases: ['usf4', 'ultra sf4', 'ultra'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
     ],
@@ -9461,9 +9518,17 @@ rosterCount: 8,
     rosterCount: 12,
     notationSystem: 'traditional',
     tags: ["2D"],
+    developer: 'Capcom',
     searchAliases: ['sf2ce', 'champion edition'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+        systemMechanics: [
+        { name: "Mirror Matches", description: "Both players can select the same character for the first time in the series." },
+        { name: "Playable Bosses", description: "Balrog, Vega, Sagat, and M. Bison are now playable for the first time." },
+        { name: "Special Moves", description: "Quarter-circle, charge, and 360 motions for unique character-specific attacks." },
+        { name: "Throw", description: "Close-range unblockable grab. Tick throws from light attacks are a core pressure tool." },
+        { name: "Dizzy", description: "Consecutive hits fill a hidden stun meter. When full, the opponent is stunned and helpless." },
     ],
     characters: [
       { id: 'balrog', name: 'Balrog', moveCount: 0 },
@@ -9479,6 +9544,12 @@ rosterCount: 8,
       { id: 'vega', name: 'Vega', moveCount: 0 },
       { id: 'zangief', name: 'Zangief', moveCount: 0 }
     ],
+        stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/586200/Street_Fighter_30th_Anniversary_Collection/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0102-CUSA11392_00-SF30THBUNDLESF30' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/street-fighter-30th-anniversary-collection/c24t2nldbxg1' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/street-fighter-30th-anniversary-collection-switch/' },
+    ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
@@ -9492,6 +9563,7 @@ rosterCount: 8,
     rosterCount: 12,
     notationSystem: 'traditional',
     tags: ["2D"],
+    developer: 'Capcom',
     searchAliases: ['sf2', 'sf2hf', 'hyper fighting'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
@@ -9518,6 +9590,12 @@ rosterCount: 8,
       { id: 'vega', name: 'Vega', moveCount: 0 },
       { id: 'zangief', name: 'Zangief', moveCount: 0 }
     ],
+        stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/586200/Street_Fighter_30th_Anniversary_Collection/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0102-CUSA11392_00-SF30THBUNDLESF30' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/street-fighter-30th-anniversary-collection/c24t2nldbxg1' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/street-fighter-30th-anniversary-collection-switch/' },
+    ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
@@ -9531,9 +9609,15 @@ rosterCount: 8,
     rosterCount: 16,
     notationSystem: 'traditional',
     tags: ["2D"],
+    developer: 'Capcom',
     searchAliases: ['hsf2', 'anniversary edition'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
+    ],
+        systemMechanics: [
+        { name: "Version Select", description: "Choose from 5 different versions of each character spanning SF2 to Super Turbo, each with different move properties and speeds." },
+        { name: "Super Combo", description: "Available for Super Turbo versions. Costs full Super Meter for a devastating combo." },
+        { name: "Turbo Speed", description: "Multiple game speed settings from the original SF2 to Turbo's fast pace." },
     ],
     characters: [
       { id: 'balrog', name: 'Balrog', moveCount: 0 },
@@ -9553,6 +9637,12 @@ rosterCount: 8,
       { id: 'vega', name: 'Vega', moveCount: 0 },
       { id: 'zangief', name: 'Zangief', moveCount: 0 }
     ],
+        stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/586200/Street_Fighter_30th_Anniversary_Collection/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0102-CUSA11392_00-SF30THBUNDLESF30' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/street-fighter-30th-anniversary-collection/c24t2nldbxg1' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/street-fighter-30th-anniversary-collection-switch/' },
+    ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
   {
@@ -9565,6 +9655,7 @@ rosterCount: 8,
     rosterCount: 12,
     notationSystem: 'traditional',
     tags: ["2D"],
+    developer: 'Capcom',
     searchAliases: ['sfa', 'sfa1', 'alpha 1', 'zero'],
     links: [
       { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
@@ -9590,6 +9681,12 @@ rosterCount: 8,
       { id: 'ryu', name: 'Ryu', moveCount: 0 },
       { id: 'sagat', name: 'Sagat', moveCount: 0 },
       { id: 'sodom', name: 'Sodom', moveCount: 0 }
+    ],
+        stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/586200/Street_Fighter_30th_Anniversary_Collection/' },
+      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0102-CUSA11392_00-SF30THBUNDLESF30' },
+      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/street-fighter-30th-anniversary-collection/c24t2nldbxg1' },
+      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/street-fighter-30th-anniversary-collection-switch/' },
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
@@ -9766,6 +9863,9 @@ rosterCount: 8,
       { id: 't-hawk', name: 'T. Hawk', moveCount: 0 },
       { id: 'vega', name: 'Vega', moveCount: 0 },
       { id: 'zangief', name: 'Zangief', moveCount: 0 }
+    ],
+        stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/45760/Super_Street_Fighter_IV_Arcade_Edition/' },
     ],
     tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
   },
