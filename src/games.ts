@@ -519,7 +519,7 @@ rosterCount: 8,
 
     developer: "Unknown",
 
-    releaseYear: 1997,
+    releaseYear: 1999,
 
     platform: "Arcade PlayStation, PC",
 
@@ -592,7 +592,7 @@ rosterCount: 10,
 
     developer: "Hudson Soft",
 
-    releaseYear: 2001,
+    releaseYear: 2000,
 
     platform: "Arcade, PS2, PC",
 
@@ -672,7 +672,7 @@ rosterCount: 17,
 
     developer: "Hudson Soft",
 
-    releaseYear: 1997,
+    releaseYear: 2002,
 
     platform: "Arcade PlayStation, PC",
 
@@ -1942,7 +1942,7 @@ rosterCount: 14,
 
     developer: "Sega",
 
-    releaseYear: 1995,
+    releaseYear: 1994,
 
     platform: "Arcade, Saturn, PC",
 
@@ -2712,7 +2712,7 @@ rosterCount: 9,
 
     developer: "Rare",
 
-    releaseYear: 1994,
+    releaseYear: 1996,
 
     notationSystem: 'traditional',
     tags: ["2D"],
@@ -3869,7 +3869,7 @@ rosterCount: 7,
 
     developer: "Unknown",
 
-    releaseYear: 1996,
+    releaseYear: 1995,
 
     platform: "Arcade, PS1, PC",
 
@@ -5639,7 +5639,7 @@ rosterCount: 33,
 
     developer: "SNK",
 
-    releaseYear: 1994,
+    releaseYear: 1999,
 
     platform: "Arcade, NeoGeo, PC",
 
@@ -7560,7 +7560,7 @@ rosterCount: 8,
     id: 'injustice-gods-among-us',
 
     mameRomset: "",
-    releaseYear: 2013,
+    releaseYear: 2014,
     platform: "PS3, Xbox 360, Wii U, PC",
     name: "Injustice: Gods Among Us",
     tagline: "Gods Among Us",
@@ -8211,7 +8211,7 @@ rosterCount: 8,
     id: 'street-fighter-alpha-warriors-dreams',
 
     mameRomset: "",
-    releaseYear: 2003,
+    releaseYear: 1995,
     platform: "Arcade, PS1, Saturn, PC, PS4, Switch, Xbox One",
     name: "Street Fighter Alpha: Warriors' Dreams",
     isDraft: true,
@@ -9079,7 +9079,7 @@ rosterCount: 8,
     id: 'skullgirls-2nd-encore',
 
     mameRomset: "",
-    releaseYear: 2011,
+    releaseYear: 2015,
     platform: "PS3, Xbox 360, Vita, PS4, Switch, PC",
     name: "Skullgirls: 2nd Encore",
     tagline: "The Encore",
@@ -9435,7 +9435,7 @@ rosterCount: 8,
     name: 'Rival Schools: United by Fate',
     tagline: "United by Fate",
     developer: 'Capcom',
-    releaseYear: 1997,
+    releaseYear: 1998,
     platform: "Arcade, PlayStation, PC",
     rosterCount: 20,
     systemMechanics: [
@@ -9551,7 +9551,7 @@ rosterCount: 8,
     name: 'Neo Geo Battle Coliseum',
     tagline: "Enter the Arena",
     developer: 'SNK',
-    releaseYear: 2005,
+    releaseYear: 1996,
     platform: 'Arcade, PlayStation 2, PC',
     rosterCount: 40,
     
@@ -9706,7 +9706,7 @@ rosterCount: 8,
     name: 'Arcana Heart 3',
     tagline: "Enter the Arena",
     developer: 'Examu',
-    releaseYear: 2021,
+    releaseYear: 2009,
     platform: 'Arcade, PC',
     rosterCount: 27,
     tags: ["2D", "Anime"],
@@ -9759,18 +9759,30 @@ rosterCount: 8,
     mameRomset: "",
     notationSystem: 'numpad',
     name: 'The Rumble Fish',
-    tagline: "Enter the Arena",
+    tagline: "Two Gauges, One Victor",
     developer: 'Dimps',
     releaseYear: 2004,
     platform: 'Arcade, PlayStation 2',
     rosterCount: 10,
     tags: ["2D", "Anime"],
+    links: [
+      { title: 'Mizuumi Wiki (TRF2)', url: 'https://wiki.gbl.gg/w/The_Rumble_Fish_2' },
+    ],
+    stores: [
+      { platform: 'Steam', url: 'https://store.steampowered.com/app/1249480/The_Rumble_Fish_2/' },
+    ],
     systemMechanics: [
-        { name: "Dual Gauge System", description: "Two separate meters: Offense Gauge (for offensive supers) and Defense Gauge (for defensive options). Both build independently." },
-        { name: "Offense Arts", description: "Super moves powered by the Offense Gauge. Multiple levels of supers with increasing damage." },
-        { name: "Defense Arts", description: "Defensive super options powered by the Defense Gauge. Includes guard cancels and reversal attacks." },
-        { name: "Advanced Attack", description: "A universal overhead launcher for starting aerial combos.", input: "C+D" },
-        { name: "Quick Recovery", description: "Tech out of knockdowns to recover faster and avoid okizeme setups." },
+        { name: "Dual Gauge System", description: "Two independent meters (3 stocks each): Offense Gauge (red, builds on hit/block) powers Offensive Arts and Jolt Attacks. Defense Gauge (blue, builds over time and on block) powers Defensive Arts and Impact Breaks." },
+        { name: "Critical Arts", description: "High-damage super moves available only when both Offense and Defense Gauges are at 3 stocks (100%). Consuming all bars in both gauges." },
+        { name: "Offensive Arts", description: "Super combos powered by the Offense Gauge. Consume 1 or more bars for powerful cinematic attacks.", input: "236236+P or K" },
+        { name: "Defensive Arts", description: "Defensive supers powered by the Defense Gauge. Reversal attacks and defensive options.", input: "236236+P or K" },
+        { name: "Jolt Attack", description: "An unblockable attack that launches on hit or causes ground bounce. Costs 1 Offense bar.", input: "LP+LK" },
+        { name: "Advanced Attack", description: "A movement-based attack that turns your character into a moving hitbox. Used for combo extensions. Costs 1 Offense bar.", input: "SP+SK" },
+        { name: "Impact Break", description: "A parry-like mechanic that reduces blockstun, allowing faster punishes. Costs 50% of a Defense bar.", input: "4+D or 1+D (while blocking)" },
+        { name: "Dodge System", description: "Versatile evasion with Slide Evade (5/6/4+D), Hop Evasion (2+D), and Air Evasion (D in air). Core defensive movement.", input: "D" },
+        { name: "Guard Gauge", description: "Depletes when blocking repeatedly. At zero, suffer a Guard Crush leaving you fully vulnerable. Refills when not blocking." },
+        { name: "Boost Dive", description: "Temporary powered-up state that enhances your character. Costs 1 bar from both Offense and Defense gauges.", input: "LP+SK or LK+SP" },
+        { name: "Quick Recovery", description: "Tech out of knockdowns or hitstun to escape combos. Costs 50% of a Defense bar.", input: "D or attack buttons" },
     ],
 
     characters: [],
