@@ -12,7 +12,7 @@ interface Props {
 
 export const GameInfoCard: React.FC<Props> = ({ game, controller = 'xbox', notationOverride = 'auto' }) => {
   const { isDark } = useTheme();
-  const [activeTab, setActiveTab] = useState<'info' | 'systems'>('systems');
+  const [activeTab, setActiveTab] = useState<'info' | 'systems'>('info');
   
   const mechanics = game.systemMechanics || null;
   const resolvedNotation = (notationOverride === 'auto' ? game.notationSystem : notationOverride) as 'numpad' | 'traditional' | 'mk' | undefined;
@@ -92,12 +92,42 @@ export const GameInfoCard: React.FC<Props> = ({ game, controller = 'xbox', notat
         <div style={{ padding: 'var(--space-xl)', minHeight: '200px' }}>
           {activeTab === 'info' && (
             <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--space-md)', color: 'var(--text-secondary)', animation: 'fadeInUp 0.4s ease' }}>
-              <p style={{ margin: 0, fontSize: '1.05rem', lineHeight: 1.5 }}>
-                The core metadata and technical details for <strong>{game.name}</strong>. 
-                This section serves as a placeholder for deeper integration with external wikis or community frame data repositories.
-              </p>
               
               <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(200px, 1fr))', gap: 'var(--space-md)' }}>
+                {game.developer && (
+                <div style={{ 
+                  background: isDark ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.8)', 
+                  padding: 'var(--space-md) var(--space-lg)', 
+                  borderRadius: 'var(--radius-lg)',
+                  border: `1px solid ${isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)'}`
+                }}>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>Developer</div>
+                  <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.1rem' }}>{game.developer}</div>
+                </div>
+                )}
+
+                {game.releaseYear && (
+                <div style={{ 
+                  background: isDark ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.8)', 
+                  padding: 'var(--space-md) var(--space-lg)', 
+                  borderRadius: 'var(--radius-lg)',
+                  border: `1px solid ${isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)'}`
+                }}>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>Release Year</div>
+                  <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.1rem' }}>{game.releaseYear}</div>
+                </div>
+                )}
+
+                <div style={{ 
+                  background: isDark ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.8)', 
+                  padding: 'var(--space-md) var(--space-lg)', 
+                  borderRadius: 'var(--radius-lg)',
+                  border: `1px solid ${isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)'}`
+                }}>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>Roster</div>
+                  <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.1rem' }}>{game.rosterCount || game.characters?.length || 0} Characters</div>
+                </div>
+
                 <div style={{ 
                   background: isDark ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.8)', 
                   padding: 'var(--space-md) var(--space-lg)', 
@@ -105,17 +135,7 @@ export const GameInfoCard: React.FC<Props> = ({ game, controller = 'xbox', notat
                   border: `1px solid ${isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)'}`
                 }}>
                   <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>Notation System</div>
-                  <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.1rem' }}>{game.notationSystem === 'numpad' ? 'Numpad (Anime)' : game.notationSystem === 'mk' ? 'MK Numbers' : 'Traditional'}</div>
-                </div>
-                
-                <div style={{ 
-                  background: isDark ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.8)', 
-                  padding: 'var(--space-md) var(--space-lg)', 
-                  borderRadius: 'var(--radius-lg)',
-                  border: `1px solid ${isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)'}`
-                }}>
-                  <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>Card Layout</div>
-                  <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.1rem' }}>{game.theme || 'Default Modern'}</div>
+                  <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.1rem' }}>{game.notationSystem === 'numpad' ? 'Numpad (Anime)' : game.notationSystem === 'mk' ? 'MK Numbers' : game.notationSystem === 'tekken' ? 'Tekken' : 'Traditional'}</div>
                 </div>
                 
                 <div style={{ 
@@ -125,8 +145,32 @@ export const GameInfoCard: React.FC<Props> = ({ game, controller = 'xbox', notat
                   border: `1px solid ${isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)'}`
                 }}>
                   <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>Platform</div>
-                  <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.2rem' }}>{game.platform || 'Arcade'}</div>
+                  <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.1rem' }}>{game.platform || 'Arcade'}</div>
                 </div>
+
+                {game.tags && game.tags.length > 0 && (
+                <div style={{ 
+                  background: isDark ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.8)', 
+                  padding: 'var(--space-md) var(--space-lg)', 
+                  borderRadius: 'var(--radius-lg)',
+                  border: `1px solid ${isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)'}`
+                }}>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>Tags</div>
+                  <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.1rem' }}>{game.tags.join(', ')}</div>
+                </div>
+                )}
+
+                {game.mameRomset && (
+                <div style={{ 
+                  background: isDark ? 'rgba(0,0,0,0.3)' : 'rgba(255,255,255,0.8)', 
+                  padding: 'var(--space-md) var(--space-lg)', 
+                  borderRadius: 'var(--radius-lg)',
+                  border: `1px solid ${isDark ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)'}`
+                }}>
+                  <div style={{ fontSize: '0.75rem', color: 'var(--text-tertiary)', marginBottom: '4px', textTransform: 'uppercase', letterSpacing: '0.05em', fontWeight: 600 }}>MAME Romset</div>
+                  <div style={{ fontWeight: 700, color: 'var(--text-primary)', fontSize: '1.1rem', fontFamily: "'JetBrains Mono', monospace" }}>{game.mameRomset}</div>
+                </div>
+                )}
               </div>
               
               {game.links && game.links.length > 0 && (
