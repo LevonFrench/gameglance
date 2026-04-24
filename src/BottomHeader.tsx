@@ -149,6 +149,13 @@ export const BottomHeader: React.FC<Props> = ({
       }}>
         <span style={{ cursor: 'default' }}>© {new Date().getFullYear()} GameGlance. FGC Second Screen App.</span>
         <div style={{ width: '1px', height: '12px', background: 'var(--border-subtle)' }} />
+        <a href="/gameglance.html" target="_blank" rel="noreferrer" title="About / FAQ" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s', display: 'flex', alignItems: 'center', gap: '0.3rem' }} 
+           onMouseEnter={e => e.currentTarget.style.color = 'var(--text-primary)'}
+           onMouseLeave={e => e.currentTarget.style.color = 'var(--text-secondary)'}>
+           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><circle cx="12" cy="12" r="10"></circle><path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path><line x1="12" y1="17" x2="12.01" y2="17"></line></svg>
+           FAQ
+        </a>
+        <div style={{ width: '1px', height: '12px', background: 'var(--border-subtle)' }} />
         <a href="mailto:contact@gameglance.app" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }} 
            onMouseEnter={e => e.currentTarget.style.color = 'var(--text-primary)'}
            onMouseLeave={e => e.currentTarget.style.color = 'var(--text-secondary)'}>

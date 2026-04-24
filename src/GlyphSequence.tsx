@@ -366,7 +366,6 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
       .replace(/DP([A-Z])/gi, 'DP+$1')
       .replace(/PUNCHCOMBO/gi, 'Punch Combo ')
       .replace(/EDINTO/gi, ' into ')
-      .replace(/FORWARD/gi, 'Forward ')
       .replace(/ORC\.?/gi, ' or C')
       .replace(/KICK:FWB/gi, 'Kick: Fwd B')
       .replace(/QCBC\.?/gi, 'QCB+C')

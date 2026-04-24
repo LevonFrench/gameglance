@@ -541,7 +541,7 @@ export const GameSelectView: React.FC<Props> = ({
         borderBottom: (showCards || favorites.length > 0) ? '1px solid var(--border-subtle)' : 'none',
         transition: 'all 0.3s ease',
       }}>
-        <div style={{ 
+        <a href="/gameglance.html" target="_blank" rel="noopener noreferrer" style={{ 
           fontFamily: "'Inter', sans-serif",
           fontWeight: 800,
           letterSpacing: '0.3em',
@@ -549,9 +549,11 @@ export const GameSelectView: React.FC<Props> = ({
           textTransform: 'uppercase',
           color: 'var(--accent-indigo)',
           marginBottom: '1rem',
+          textDecoration: 'none',
+          display: 'block',
         }}>
           GameGlance
-        </div>
+        </a>
         <h1 
           className={`glitch ${isGlitching ? "glitching " : ""}`}
           data-text="SELECT GAME"
