@@ -407,6 +407,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
             let parsedNotes = (m.notes as string) || '';
 
             if (Array.isArray(m.properties)) {
+              // eslint-disable-next-line @typescript-eslint/no-explicit-any
               m.properties.forEach((p: any) => {
                 if (typeof p === 'object' && p !== null && p.type) {
                   const pType = String(p.type).toLowerCase();
@@ -1050,7 +1051,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                 }
               });
 
-              let sortedStanceEntries = Array.from(stanceGroups.entries());
+              const sortedStanceEntries = Array.from(stanceGroups.entries());
               if (tab === 'Throws') {
                 sortedStanceEntries.sort((a, b) => {
                   if (a[0] === 'Command Throws') return -1;

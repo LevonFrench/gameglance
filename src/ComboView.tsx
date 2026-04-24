@@ -26,10 +26,16 @@ export const ComboView: React.FC<Props> = ({
   const [characterData, setCharacterData] = useState<CharacterExport | null>(null);
   const [loadingError, setLoadingError] = useState('');
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
+  const [prevCharId, setPrevCharId] = useState(characterId);
+
+  if (characterId !== prevCharId) {
+    setPrevCharId(characterId);
     setCharacterData(null);
     setLoadingError('');
+  }
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
     fetch(`/data/${game.id}/${characterId}.json`)
       .then(res => {
         if (!res.ok) throw new Error("File not found");

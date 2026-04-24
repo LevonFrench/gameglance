@@ -286,7 +286,7 @@ const tokenizeStandardInputs = (inputs: string[], notationSystem: string = 'trad
       else if (processingT.startsWith('w.')) { prefix = 'w.'; processingT = processingT.substring(2); }
 
       const cleanT = processingT.replace(/\[|\]/g, ''); 
-      const match = processingT.match(/^([a-zA-Z.+]*?)([\[\]1-9]+)([a-zA-Z]*)$/);
+      const match = processingT.match(/^([a-zA-Z.+]*?)([[\]1-9]+)([a-zA-Z]*)$/);
       if (match) {
         if (prefix) result.push(prefix);
         if (match[1]) result.push(match[1]);
