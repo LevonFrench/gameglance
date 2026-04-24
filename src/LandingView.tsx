@@ -272,6 +272,7 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
 
       {/* SECTION 6: CTA */}
       <section className="hero-section">
+        <AmbientMesh colors={['rgba(99, 102, 241, 0.15)', 'rgba(167, 139, 250, 0.15)', 'rgba(236, 72, 153, 0.15)']} />
         <div className="landing-content">
           <h2 className="landing-title">Ready to hit the lab?</h2>
           <p className="landing-subtitle">No accounts. No downloads. Installs as a PWA directly from your browser.</p>
