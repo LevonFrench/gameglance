@@ -162,7 +162,7 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
 
       {/* SECTION 4: PLAYLISTS */}
       <section className="hero-section">
-        <AmbientMesh colors={['rgba(99, 102, 241, 0.15)', 'rgba(167, 139, 250, 0.15)', 'rgba(236, 72, 153, 0.15)']} />
+        <GlyphRain />
         <div className="landing-content">
           <h2 className="landing-title">Practice Playlists</h2>
           <p className="landing-subtitle">Isolate specific moves and keep them pinned on your second screen.</p>
