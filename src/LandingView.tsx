@@ -84,7 +84,7 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
             <div className="registry-item" style={{ opacity: 0.5 }}><div className="registry-dot" style={{ background: '#555' }}></div>+ 216 more...</div>
           </div>
 
-          <h2 className="landing-title" style={{ marginTop: '80px' }}>50+ Tags</h2>
+          <h2 className="landing-title" style={{ marginTop: '48px' }}>50+ Tags</h2>
           <p className="landing-subtitle">Filter by genre, mechanics, platforms, and more.</p>
           
           <div className="registry-grid">
@@ -169,7 +169,7 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
           
           <div style={{ display: 'flex', gap: '40px', justifyContent: 'center', width: '100%', flexWrap: 'wrap' }}>
             <div className="playlist-demo">
-              <h3 style={{ margin: '0 0 16px 0', fontSize: '18px', color: 'var(--text-secondary)', textAlign: 'center', letterSpacing: '0.1em' }}>MOVES</h3>
+              <h3 style={{ margin: '0 0 16px 0', fontSize: '18px', color: '#9090ae', textAlign: 'center', letterSpacing: '0.1em' }}>MOVES</h3>
               <div className="playlist-item checked">
                  <div className="pcheck">✓</div>
                  <div className="pname">Hadoken</div>
@@ -201,7 +201,7 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
             </div>
 
             <div className="playlist-demo">
-              <h3 style={{ margin: '0 0 16px 0', fontSize: '18px', color: 'var(--text-secondary)', textAlign: 'center', letterSpacing: '0.1em' }}>COMBOS</h3>
+              <h3 style={{ margin: '0 0 16px 0', fontSize: '18px', color: '#9090ae', textAlign: 'center', letterSpacing: '0.1em' }}>COMBOS</h3>
               <div className="playlist-item checked">
                  <div className="pcheck">✓</div>
                  <div className="pname">Bread & Butter</div>
@@ -241,25 +241,25 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
         <div className="landing-content">
           <h2 className="landing-title">The GameGlance View</h2>
           <p className="landing-subtitle">A distraction-free, ad-free interface designed specifically for your second screen.</p>
-          <div className="glyph-demo-card" style={{ padding: '24px', alignItems: 'flex-start', background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(20px)', border: '1px solid var(--border-medium)', marginTop: '24px' }}>
-             <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', borderBottom: '1px solid var(--border-subtle)', paddingBottom: '12px', marginBottom: '16px' }}>
+          <div className="glyph-demo-card" style={{ padding: '24px', alignItems: 'flex-start', background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(20px)', border: '1px solid rgba(255,255,255,0.35)', marginTop: '24px' }}>
+             <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '12px', marginBottom: '16px' }}>
                 <span style={{ fontWeight: 800, fontSize: '14px', letterSpacing: '0.1em' }}>STREET FIGHTER 6</span>
                 <span style={{ fontWeight: 800, color: 'var(--accent-indigo)' }}>RYU</span>
              </div>
              <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '8px' }}>
-                <div style={{ display: 'flex', justifyContent: 'space-between', padding: '16px', background: 'var(--bg-input)', borderRadius: '8px', borderLeft: '4px solid #3b82f6' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', padding: '16px', background: 'rgba(255,255,255,0.08)', borderRadius: '8px', borderLeft: '4px solid #3b82f6' }}>
                    <span style={{ fontWeight: 800, fontSize: '18px' }}>Bread &amp; Butter</span>
                    <div style={{ display: 'flex', alignItems: 'center' }}>
                       <GlyphSequence inputs={["c.MK", ">", "down", "down-forward", "forward", "P"]} controller="playstation" notationSystem="traditional" />
                    </div>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', padding: '16px', background: 'var(--bg-input)', borderRadius: '8px', borderLeft: '4px solid #ef4444' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', padding: '16px', background: 'rgba(255,255,255,0.08)', borderRadius: '8px', borderLeft: '4px solid #ef4444' }}>
                    <span style={{ fontWeight: 800, fontSize: '18px' }}>Max Damage</span>
                    <div style={{ display: 'flex', alignItems: 'center' }}>
                       <GlyphSequence inputs={["DI", ">", "HP", ">", "forward", "down", "down-forward", "P"]} controller="playstation" notationSystem="traditional" />
                    </div>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', padding: '16px', background: 'var(--bg-input)', borderRadius: '8px', borderLeft: '4px solid #10b981' }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', padding: '16px', background: 'rgba(255,255,255,0.08)', borderRadius: '8px', borderLeft: '4px solid #10b981' }}>
                    <span style={{ fontWeight: 800, fontSize: '18px' }}>Anti-Air</span>
                    <div style={{ display: 'flex', alignItems: 'center' }}>
                       <GlyphSequence inputs={["forward", "down", "down-forward", "P", ">", "SA3"]} controller="playstation" notationSystem="traditional" />
@@ -283,16 +283,16 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
 
           <div className="footer-nav">
              <a href="https://github.com/LevonFrench/gameglance" target="_blank" rel="noreferrer" className="footer-link">GitHub</a>
-             <a href="#" target="_blank" rel="noreferrer" title="Instagram" style={{ color: 'var(--text-secondary)', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex' }} onMouseOver={e => { e.currentTarget.style.color = '#e1306c'; }} onMouseOut={e => { e.currentTarget.style.color = 'var(--text-secondary)'; }}>
+             <a href="#" target="_blank" rel="noreferrer" title="Instagram" style={{ color: '#9090ae', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex' }} onMouseOver={e => { e.currentTarget.style.color = '#e1306c'; }} onMouseOut={e => { e.currentTarget.style.color = '#9090ae'; }}>
                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
              </a>
-             <a href="#" target="_blank" rel="noreferrer" title="Twitter" style={{ color: 'var(--text-secondary)', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex' }} onMouseOver={e => { e.currentTarget.style.color = '#1DA1F2'; }} onMouseOut={e => { e.currentTarget.style.color = 'var(--text-secondary)'; }}>
+             <a href="#" target="_blank" rel="noreferrer" title="Twitter" style={{ color: '#9090ae', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex' }} onMouseOver={e => { e.currentTarget.style.color = '#1DA1F2'; }} onMouseOut={e => { e.currentTarget.style.color = '#9090ae'; }}>
                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
              </a>
-             <a href="#" target="_blank" rel="noreferrer" title="YouTube" style={{ color: 'var(--text-secondary)', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex' }} onMouseOver={e => { e.currentTarget.style.color = '#FF0000'; }} onMouseOut={e => { e.currentTarget.style.color = 'var(--text-secondary)'; }}>
+             <a href="#" target="_blank" rel="noreferrer" title="YouTube" style={{ color: '#9090ae', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex' }} onMouseOver={e => { e.currentTarget.style.color = '#FF0000'; }} onMouseOut={e => { e.currentTarget.style.color = '#9090ae'; }}>
                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
              </a>
-             <a href="#" target="_blank" rel="noreferrer" title="TikTok" style={{ color: 'var(--text-secondary)', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex' }} onMouseOver={e => { e.currentTarget.style.color = '#FF0050'; }} onMouseOut={e => { e.currentTarget.style.color = 'var(--text-secondary)'; }}>
+             <a href="#" target="_blank" rel="noreferrer" title="TikTok" style={{ color: '#9090ae', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex' }} onMouseOver={e => { e.currentTarget.style.color = '#FF0050'; }} onMouseOut={e => { e.currentTarget.style.color = '#9090ae'; }}>
                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v3a3 3 0 0 1-3-3v11a7 7 0 1 1-7-7z"></path></svg>
              </a>
           </div>
