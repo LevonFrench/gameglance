@@ -42,7 +42,7 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
       {/* SECTION 1: HERO */}
       <section className="hero-section">
         <AmbientMesh colors={['rgba(99, 102, 241, 0.15)', 'rgba(167, 139, 250, 0.15)', 'rgba(236, 72, 153, 0.15)']} />
-        <div className="landing-content hero-frame">
+        <div className="landing-content">
           <div className="landing-wordmark animate-in">G A M E G L A N C E</div>
           <h1 className="landing-title animate-in stagger-1">
             Your Second Screen<br />for Fighting Games
@@ -240,7 +240,7 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
         <GlyphRain />
         <div className="landing-content">
           <h2 className="landing-title">The GameGlance View</h2>
-          <p className="landing-subtitle">A distraction-free, ad-free interface designed specifically for your second screen.</p>
+          <p className="landing-subtitle">A distraction-free interface designed specifically for your second screen.</p>
           <div className="glyph-demo-card" style={{ padding: '24px', alignItems: 'flex-start', background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(20px)', border: '1px solid rgba(255,255,255,0.35)', marginTop: '24px' }}>
              <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '12px', marginBottom: '16px' }}>
                 <span style={{ fontWeight: 800, fontSize: '14px', letterSpacing: '0.1em' }}>STREET FIGHTER 6</span>
@@ -282,18 +282,13 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
           </button>
 
           <div className="footer-nav">
-             <a href="https://github.com/LevonFrench/gameglance" target="_blank" rel="noreferrer" className="footer-link">GitHub</a>
-             <a href="#" target="_blank" rel="noreferrer" title="Instagram" style={{ color: '#9090ae', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex' }} onMouseOver={e => { e.currentTarget.style.color = '#e1306c'; }} onMouseOut={e => { e.currentTarget.style.color = '#9090ae'; }}>
-               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+             <a href="https://github.com/LevonFrench/gameglance" target="_blank" rel="noreferrer" className="footer-link" style={{ color: '#9090ae', textDecoration: 'none', transition: 'color 0.2s' }} onMouseOver={e => e.currentTarget.style.color = 'var(--text-primary)'} onMouseOut={e => e.currentTarget.style.color = '#9090ae'}>GitHub</a>
+             <a href="https://discord.gg/u9htMX39" target="_blank" rel="noreferrer" title="Discord" style={{ color: '#9090ae', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none' }} onMouseOver={e => { e.currentTarget.style.color = '#5865F2'; }} onMouseOut={e => { e.currentTarget.style.color = '#9090ae'; }}>
+               <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M20.317 4.3698a19.7913 19.7913 0 00-4.8851-1.5152.0741.0741 0 00-.0785.0371c-.211.3753-.4447.8648-.6083 1.2495-1.8447-.2762-3.68-.2762-5.4868 0-.1636-.3933-.4058-.8742-.6177-1.2495a.077.077 0 00-.0785-.037 19.7363 19.7363 0 00-4.8852 1.515.0699.0699 0 00-.0321.0277C.5334 9.0458-.319 13.5799.0992 18.0578a.0824.0824 0 00.0312.0561c2.0528 1.5076 4.0413 2.4228 5.9929 3.0294a.0777.0777 0 00.0842-.0276c.4616-.6304.8731-1.2952 1.226-1.9942a.076.076 0 00-.0416-.1057c-.6528-.2476-1.2743-.5495-1.8722-.8923a.077.077 0 01-.0076-.1277c.1258-.0943.2517-.1923.3718-.2914a.0743.0743 0 01.0776-.0105c3.9278 1.7933 8.18 1.7933 12.0614 0a.0739.0739 0 01.0785.0095c.1202.099.246.1981.3728.2924a.077.077 0 01-.0066.1276 12.2986 12.2986 0 01-1.873.8914.0766.0766 0 00-.0407.1067c.3604.698.7719 1.3628 1.225 1.9932a.076.076 0 00.0842.0286c1.961-.6067 3.9495-1.5219 6.0023-3.0294a.077.077 0 00.0313-.0552c.5004-5.177-.8382-9.6739-3.5485-13.6604a.061.061 0 00-.0312-.0286zM8.02 15.3312c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9555-2.4189 2.157-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.9555 2.4189-2.1569 2.4189zm7.9748 0c-1.1825 0-2.1569-1.0857-2.1569-2.419 0-1.3332.9554-2.4189 2.1569-2.4189 1.2108 0 2.1757 1.0952 2.1568 2.419 0 1.3332-.946 2.4189-2.1568 2.4189Z"/></svg>
+               Discord
              </a>
-             <a href="#" target="_blank" rel="noreferrer" title="Twitter" style={{ color: '#9090ae', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex' }} onMouseOver={e => { e.currentTarget.style.color = '#1DA1F2'; }} onMouseOut={e => { e.currentTarget.style.color = '#9090ae'; }}>
-               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
-             </a>
-             <a href="#" target="_blank" rel="noreferrer" title="YouTube" style={{ color: '#9090ae', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex' }} onMouseOver={e => { e.currentTarget.style.color = '#FF0000'; }} onMouseOut={e => { e.currentTarget.style.color = '#9090ae'; }}>
-               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22.54 6.42a2.78 2.78 0 0 0-1.94-2C18.88 4 12 4 12 4s-6.88 0-8.6.46a2.78 2.78 0 0 0-1.94 2A29 29 0 0 0 1 11.75a29 29 0 0 0 .46 5.33 2.78 2.78 0 0 0 1.94 2c1.72.46 8.6.46 8.6.46s6.88 0 8.6-.46a2.78 2.78 0 0 0 1.94-2 29 29 0 0 0 .46-5.33 29 29 0 0 0-.46-5.33z"></path><polygon points="9.75 15.02 15.5 11.75 9.75 8.48 9.75 15.02"></polygon></svg>
-             </a>
-             <a href="#" target="_blank" rel="noreferrer" title="TikTok" style={{ color: '#9090ae', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex' }} onMouseOver={e => { e.currentTarget.style.color = '#FF0050'; }} onMouseOut={e => { e.currentTarget.style.color = '#9090ae'; }}>
-               <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M9 12a4 4 0 1 0 4 4V4a5 5 0 0 0 5 5v3a3 3 0 0 1-3-3v11a7 7 0 1 1-7-7z"></path></svg>
+             <a href="https://ko-fi.com/gameglanceapp" target="_blank" rel="noreferrer" title="Ko-fi" style={{ color: '#9090ae', transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)', display: 'flex', alignItems: 'center', gap: '6px', textDecoration: 'none' }} onMouseOver={e => { e.currentTarget.style.color = '#ff5e5b'; }} onMouseOut={e => { e.currentTarget.style.color = '#9090ae'; }}>
+               <span style={{ color: '#ff5e5b', fontSize: '18px' }}>❤️</span> Support GG
              </a>
           </div>
         </div>

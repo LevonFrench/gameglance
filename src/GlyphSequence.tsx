@@ -360,18 +360,25 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
       .replace(/(?<![A-Za-z])KKK(?![A-Za-z])/gi, 'K+K+K')
       .replace(/(?<![A-Za-z])PP(?![A-Za-z])/gi, 'P+P')
       .replace(/(?<![A-Za-z])KK(?![A-Za-z])/gi, 'K+K')
-      // DNF Duel cleanup
+      // DNF Duel / Scrape Data cleanup
+      .replace(/QCFx2([A-Z])/gi, 'QCFx2+$1')
       .replace(/QCF([A-Z])/gi, 'QCF+$1')
       .replace(/QCB([A-Z])/gi, 'QCB+$1')
+      .replace(/HCF([A-Z])/gi, 'HCF+$1')
+      .replace(/HCB([A-Z])/gi, 'HCB+$1')
       .replace(/DP([A-Z])/gi, 'DP+$1')
+      .replace(/punchcombo-edinto/gi, 'Punch Combo into ')
+      .replace(/combo-edinto/gi, 'into ')
       .replace(/PUNCHCOMBO/gi, 'Punch Combo ')
       .replace(/EDINTO/gi, ' into ')
+      .replace(/withhcf/gi, 'with HCF')
+      .replace(/(A|B|C|D)or(A|B|C|D)/gi, '$1 or $2')
+      .replace(/kickorheavykick/gi, 'K or HK')
       .replace(/ORC\.?/gi, ' or C')
       .replace(/KICK:FWB/gi, 'Kick: Fwd B')
-      .replace(/QCBC\.?/gi, 'QCB+C')
-      .replace(/QCBA\.?/gi, 'QCB+A')
-      .replace(/QCFA\.?/gi, 'QCF+A')
-      .replace(/QCFX\.?/gi, 'QCF+X');
+      .replace(/([A-Z0-9\/])\(/gi, '$1 (')
+      .replace(/punch/gi, 'P')
+      .replace(/\.$/, '');
   });
 
   if (notationSystem === 'mk') {
@@ -542,7 +549,11 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
             fontWeight: 800,
             fontSize: large ? '1.5rem' : '1.1rem',
             fontFamily: "'Outfit', sans-serif",
-            margin: `0 ${large ? '1px' : '0px'}`,
+            display: 'inline-flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: large ? '44px' : '32px',
+            height: large ? '44px' : '32px',
             ...styleOverrides
           }}
         >

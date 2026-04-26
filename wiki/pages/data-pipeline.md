@@ -75,6 +75,7 @@ Every game must be registered in `src/games.ts` with:
 
 ## Gotchas
 
+- **UTF-8 BOM Corruption** — JSON exports from wikis or game engines often carry a hidden Byte Order Mark (`U+FEFF`). This causes `JSON.parse()` to throw hard syntax errors in the app, resulting in "Data not found" UI states. Run `node scripts/strip_bom.js` to recursively purge BOMs from the workspace.
 - **Never regex-inject into `games.ts`** — use `scripts/safe_inject.py` which splits at game object boundaries to prevent cross-game contamination.
 - **3D fighters** (Tekken, VF, DOA) have stance systems that don't fit cleanly into the flat `inputs[]` array. Future work needed.
 - **MK1 Kameo combos** should be flagged with `"is_kameo": true` during scraping, not discarded.

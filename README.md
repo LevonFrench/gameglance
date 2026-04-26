@@ -3,7 +3,9 @@
   <p><strong>Second-screen fighting game companion for the FGC.</strong></p>
   <p>
     <a href="https://gameglance.vercel.app">Live App</a> ·
-    <a href="https://github.com/LevonFrench/gameglance">GitHub</a>
+    <a href="https://github.com/LevonFrench/gameglance">GitHub</a> ·
+    <a href="https://ko-fi.com/gameglanceapp">Support on Ko-fi</a> ·
+    <a href="https://discord.gg/u9htMX39">Discord Community</a>
   </p>
 </div>
 

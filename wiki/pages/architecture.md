@@ -14,6 +14,7 @@ The app uses a single `App.tsx` controller with view state (`game_select` → `c
 
 ```
 App.tsx (controller)
+├── LandingView.tsx         — Marketing landing page with standalone dark-theme CSS
 ├── GameSelectView.tsx      — Game browser with search, dynamic categories, favorites
 ├── CharacterSelectView.tsx — Character grid for selected game
 ├── MoveListView.tsx        — Tabbed move list with playlist builder and nested Stance Trees
@@ -50,4 +51,5 @@ MoveListView renders tabs, GlyphSequence renders inputs
 - **Move data is lazy-loaded** per character. Each character's JSON is a separate Vite chunk, fetched only when selected.
 - **Glyphs are controller-aware.** `glyphMap.ts` translates generic inputs (LP, MP, HK) into hardware-specific labels per controller type (PlayStation, Xbox, Neo Geo, etc.).
 - **No server.** Everything is static. Favorites, playlists, and settings persist via `localStorage`.
+- **Marketing Page Theme Decoupling**: The marketing landing page (`LandingView.tsx` / `LandingView.css`) is completely decoupled from global CSS variables (like `--bg-primary`). It uses hardcoded dark hex colors to ensure the cinematic aesthetics render correctly even if the user's OS or browser forces a light theme.
 - **Fightcade Sync** uses the File System Access API to poll a local log file (`gg_sync.log`) every second, auto-navigating to the current game/character.

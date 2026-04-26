@@ -556,7 +556,7 @@ export const GameSelectView: React.FC<Props> = ({
         </a>
         <h1 
           className={`glitch ${isGlitching ? "glitching " : ""}`}
-          data-text="SELECT GAME"
+          data-text="-> SELECT GAME <-"
           onClick={() => { setShowCards(true); setExpandedGameId(null); }}
           style={{
           fontSize: 'max(2rem, 3.5vw)',
@@ -571,7 +571,7 @@ export const GameSelectView: React.FC<Props> = ({
           marginBottom: '1.5rem',
           cursor: 'pointer',
         }}>
-          SELECT GAME
+          -&gt; SELECT GAME &lt;-
         </h1>
 
         {/* Controls Container */}

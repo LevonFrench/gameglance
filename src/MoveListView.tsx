@@ -432,8 +432,11 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
               });
             }
 
+            const deterministicId = m.id || `move-${(String(m.name || '') + '-' + String(m.input || '')).replace(/[^a-zA-Z0-9]/g, '').toLowerCase()}`;
+
             return { 
               ...m, 
+              id: deterministicId,
               type: TYPE_ALIASES[rawType] || rawType,
               properties: parsedProperties,
               frameData: Object.keys(parsedFrameData).length > 0 ? parsedFrameData : undefined,
