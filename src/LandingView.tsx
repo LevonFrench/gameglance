@@ -48,7 +48,7 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
             Your Second Screen<br />for Fighting Games
           </h1>
           <p className="landing-subtitle animate-in stagger-2">
-            Browse move lists, build practice playlists, and drill combos without interrupting your match.
+            Browse moves, combos, and create playlists for easy reference all on your second screen or device.
           </p>
           <button className="landing-cta animate-in stagger-3" onClick={onLaunch} style={{ textTransform: 'uppercase' }}>
             Launch App
@@ -70,7 +70,7 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
         <div className="landing-content">
           <h2 className="landing-title">225+ Games</h2>
           <p className="landing-subtitle">From arcade classics to the latest releases.</p>
-          
+
           <div className="registry-grid">
             <div className="registry-item"><div className="registry-dot" style={{ background: '#3b82f6' }}></div>Street Fighter 6 <span className="pinput">2023</span></div>
             <div className="registry-item"><div className="registry-dot" style={{ background: '#ef4444' }}></div>Guilty Gear Strive <span className="pinput">2021</span></div>
@@ -85,8 +85,8 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
           </div>
 
           <h2 className="landing-title" style={{ marginTop: '48px' }}>50+ Tags</h2>
-          <p className="landing-subtitle">Filter by genre, mechanics, platforms, and more.</p>
-          
+          <p className="landing-subtitle">Filter by genre, platforms, collections and more.</p>
+
           <div className="registry-grid">
             <div className="registry-item"><div className="registry-dot" style={{ background: '#ec4899' }}></div>2D Fighter <span className="pinput">Tag</span></div>
             <div className="registry-item"><div className="registry-dot" style={{ background: '#8b5cf6' }}></div>Anime <span className="pinput">Tag</span></div>
@@ -106,15 +106,15 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
         </div>
         <div className="landing-content">
           <h2 className="landing-title">Adaptive Glyph Engine</h2>
-          <p className="landing-subtitle">One move. Every notation system.</p>
-          
+          <p className="landing-subtitle">One move. Any controller. Both notation systems.</p>
+
           <div className="glyph-demo-card">
             {/* PlayStation */}
             <div className="glyph-row">
               <div className="glyph-label" style={{ color: '#3b82f6' }}>PlayStation</div>
               <div style={{ flex: 1 }}>
-                 <div style={{ fontWeight: 800, fontSize: 18 }}>Hadoken</div>
-                 <div style={{ fontSize: 10, fontWeight: 700, color: '#a78bfa', background: 'rgba(167,139,250,0.12)', padding: '2px 8px', borderRadius: 4, width: 'fit-content' }}>SPECIAL</div>
+                <div style={{ fontWeight: 800, fontSize: 18 }}>Hadoken</div>
+                <div style={{ fontSize: 10, fontWeight: 700, color: '#a78bfa', background: 'rgba(167,139,250,0.12)', padding: '2px 8px', borderRadius: 4, width: 'fit-content' }}>SPECIAL</div>
               </div>
               <div className="glyph-input-area">
                 <GlyphSequence inputs={["down", "down-forward", "forward", "LP"]} controller="playstation" notationSystem="traditional" />
@@ -125,8 +125,8 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
             <div className="glyph-row">
               <div className="glyph-label" style={{ color: '#10b950' }}>Xbox</div>
               <div style={{ flex: 1 }}>
-                 <div style={{ fontWeight: 800, fontSize: 18 }}>Hadoken</div>
-                 <div style={{ fontSize: 10, fontWeight: 700, color: '#a78bfa', background: 'rgba(167,139,250,0.12)', padding: '2px 8px', borderRadius: 4, width: 'fit-content' }}>SPECIAL</div>
+                <div style={{ fontWeight: 800, fontSize: 18 }}>Hadoken</div>
+                <div style={{ fontSize: 10, fontWeight: 700, color: '#a78bfa', background: 'rgba(167,139,250,0.12)', padding: '2px 8px', borderRadius: 4, width: 'fit-content' }}>SPECIAL</div>
               </div>
               <div className="glyph-input-area">
                 <GlyphSequence inputs={["down", "down-forward", "forward", "LP"]} controller="xbox" notationSystem="traditional" />
@@ -137,8 +137,8 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
             <div className="glyph-row">
               <div className="glyph-label" style={{ color: '#a855f7' }}>Numpad</div>
               <div style={{ flex: 1 }}>
-                 <div style={{ fontWeight: 800, fontSize: 18 }}>Hadoken</div>
-                 <div style={{ fontSize: 10, fontWeight: 700, color: '#a78bfa', background: 'rgba(167,139,250,0.12)', padding: '2px 8px', borderRadius: 4, width: 'fit-content' }}>SPECIAL</div>
+                <div style={{ fontWeight: 800, fontSize: 18 }}>Hadoken</div>
+                <div style={{ fontSize: 10, fontWeight: 700, color: '#a78bfa', background: 'rgba(167,139,250,0.12)', padding: '2px 8px', borderRadius: 4, width: 'fit-content' }}>SPECIAL</div>
               </div>
               <div className="glyph-input-area">
                 <GlyphSequence inputs={["down", "down-forward", "forward", "LP"]} controller="arcade" notationSystem="numpad" />
@@ -149,8 +149,8 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
             <div className="glyph-row">
               <div className="glyph-label" style={{ color: '#ef4444' }}>Switch</div>
               <div style={{ flex: 1 }}>
-                 <div style={{ fontWeight: 800, fontSize: 18 }}>Hadoken</div>
-                 <div style={{ fontSize: 10, fontWeight: 700, color: '#a78bfa', background: 'rgba(167,139,250,0.12)', padding: '2px 8px', borderRadius: 4, width: 'fit-content' }}>SPECIAL</div>
+                <div style={{ fontWeight: 800, fontSize: 18 }}>Hadoken</div>
+                <div style={{ fontSize: 10, fontWeight: 700, color: '#a78bfa', background: 'rgba(167,139,250,0.12)', padding: '2px 8px', borderRadius: 4, width: 'fit-content' }}>SPECIAL</div>
               </div>
               <div className="glyph-input-area">
                 <GlyphSequence inputs={["down", "down-forward", "forward", "LP"]} controller="switch" notationSystem="traditional" />
@@ -160,112 +160,98 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
         </div>
       </section>
 
-      {/* SECTION 4: PLAYLISTS */}
-      <section className="hero-section">
-        <GlyphRain />
-        <div className="landing-content">
-          <h2 className="landing-title">Practice Playlists</h2>
-          <p className="landing-subtitle">Isolate specific moves and keep them pinned on your second screen.</p>
-          
-          <div style={{ display: 'flex', gap: '40px', justifyContent: 'center', width: '100%', flexWrap: 'wrap' }}>
-            <div className="playlist-demo">
-              <h3 style={{ margin: '0 0 16px 0', fontSize: '18px', color: '#9090ae', textAlign: 'center', letterSpacing: '0.1em' }}>MOVES</h3>
-              <div className="playlist-item checked">
-                 <div className="pcheck">✓</div>
-                 <div className="pname">Hadoken</div>
-                 <div className="pinput">↓↘→+P</div>
-              </div>
-              <div className="playlist-item checked">
-                 <div className="pcheck">✓</div>
-                 <div className="pname">Shoryuken</div>
-                 <div className="pinput">→↓↘+P</div>
-              </div>
-              <div className="playlist-item checked">
-                 <div className="pcheck">✓</div>
-                 <div className="pname">Tatsumaki</div>
-                 <div className="pinput">↓↙←+K</div>
-              </div>
-              <div className="playlist-item">
-                 <div className="pcheck"></div>
-                 <div className="pname">Hashogeki</div>
-                 <div className="pinput">↓↘→↓↘→+P</div>
-              </div>
-              <div className="playlist-item">
-                 <div className="pcheck"></div>
-                 <div className="pname">Shin Shoryuken</div>
-                 <div className="pinput">↓↘→↓↘→+K</div>
-              </div>
-              <button className="landing-cta" style={{ marginTop: 16, width: '100%', padding: '12px', fontSize: 16 }}>
-                3 Selected — Launch
-              </button>
-            </div>
-
-            <div className="playlist-demo">
-              <h3 style={{ margin: '0 0 16px 0', fontSize: '18px', color: '#9090ae', textAlign: 'center', letterSpacing: '0.1em' }}>COMBOS</h3>
-              <div className="playlist-item checked">
-                 <div className="pcheck">✓</div>
-                 <div className="pname">Bread & Butter</div>
-                 <div className="pinput">c.MK &gt; ↓↘→+P</div>
-              </div>
-              <div className="playlist-item">
-                 <div className="pcheck"></div>
-                 <div className="pname">Corner Carry</div>
-                 <div className="pinput">HP &gt; ↓↙←+K</div>
-              </div>
-              <div className="playlist-item checked">
-                 <div className="pcheck">✓</div>
-                 <div className="pname">Max Damage</div>
-                 <div className="pinput">DI &gt; HP &gt; →↓↘+P</div>
-              </div>
-              <div className="playlist-item">
-                 <div className="pcheck"></div>
-                 <div className="pname">Safe Jump</div>
-                 <div className="pinput">Throw &gt; j.HK</div>
-              </div>
-              <div className="playlist-item checked">
-                 <div className="pcheck">✓</div>
-                 <div className="pname">Anti-Air</div>
-                 <div className="pinput">→↓↘+P &gt; SA3</div>
-              </div>
-              <button className="landing-cta" style={{ marginTop: 16, width: '100%', padding: '12px', fontSize: 16 }}>
-                3 Selected — Launch
-              </button>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* SECTION 5: GAMEGLANCE VIEW */}
+      {/* SECTION 4 & 5: PLAYLISTS & GAMEGLANCE VIEW */}
       <section className="hero-section">
         <GlyphRain />
         <div className="landing-content">
           <h2 className="landing-title">The GameGlance View</h2>
-          <p className="landing-subtitle">A distraction-free interface designed specifically for your second screen.</p>
-          <div className="glyph-demo-card" style={{ padding: '24px', alignItems: 'flex-start', background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(20px)', border: '1px solid rgba(255,255,255,0.35)', marginTop: '24px' }}>
-             <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '12px', marginBottom: '16px' }}>
+          <p className="landing-subtitle">Build custom practice playlists and pin them to your second screen.</p>
+
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', width: '100%', alignItems: 'center' }}>
+            {/* Selection UI */}
+            <div style={{ display: 'flex', gap: '40px', justifyContent: 'center', width: '100%', flexWrap: 'wrap' }}>
+              <div className="playlist-demo" style={{ marginTop: 0 }}>
+                <h3 style={{ margin: '0 0 16px 0', fontSize: '18px', color: '#9090ae', textAlign: 'center', letterSpacing: '0.1em' }}>MOVES</h3>
+                <div className="playlist-item checked">
+                  <div className="pcheck">✓</div>
+                  <div className="pname">Hadoken</div>
+                  <div className="pinput">↓↘→+P</div>
+                </div>
+                <div className="playlist-item checked">
+                  <div className="pcheck">✓</div>
+                  <div className="pname">Shoryuken</div>
+                  <div className="pinput">→↓↘+P</div>
+                </div>
+                <div className="playlist-item checked">
+                  <div className="pcheck">✓</div>
+                  <div className="pname">Tatsumaki</div>
+                  <div className="pinput">↓↙←+K</div>
+                </div>
+                <div className="playlist-item">
+                  <div className="pcheck"></div>
+                  <div className="pname">Hashogeki</div>
+                  <div className="pinput">↓↘→↓↘→+P</div>
+                </div>
+                <button className="landing-cta" style={{ marginTop: 16, width: '100%', padding: '12px', fontSize: 16 }}>
+                  3 Selected — Launch
+                </button>
+              </div>
+
+              <div className="playlist-demo" style={{ marginTop: 0 }}>
+                <h3 style={{ margin: '0 0 16px 0', fontSize: '18px', color: '#9090ae', textAlign: 'center', letterSpacing: '0.1em' }}>COMBOS</h3>
+                <div className="playlist-item checked">
+                  <div className="pcheck">✓</div>
+                  <div className="pname">Bread & Butter</div>
+                  <div className="pinput">c.MK &gt; ↓↘→+P</div>
+                </div>
+                <div className="playlist-item">
+                  <div className="pcheck"></div>
+                  <div className="pname">Corner Carry</div>
+                  <div className="pinput">HP &gt; ↓↙←+K</div>
+                </div>
+                <div className="playlist-item checked">
+                  <div className="pcheck">✓</div>
+                  <div className="pname">Max Damage</div>
+                  <div className="pinput">DI &gt; HP &gt; →↓↘+P</div>
+                </div>
+                <div className="playlist-item checked">
+                  <div className="pcheck">✓</div>
+                  <div className="pname">Anti-Air</div>
+                  <div className="pinput">→↓↘+P &gt; SA3</div>
+                </div>
+                <button className="landing-cta" style={{ marginTop: 16, width: '100%', padding: '12px', fontSize: 16 }}>
+                  3 Selected — Launch
+                </button>
+              </div>
+            </div>
+            {/* Down Arrow / Connector */}
+            <div style={{ color: 'var(--text-tertiary)', opacity: 0.5, marginTop: 0, marginBottom: 0 }}>
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <polyline points="19 12 12 19 5 12"></polyline>
+              </svg>
+            </div>
+            {/* Distraction-Free GameGlance View */}
+            <div className="glyph-demo-card" style={{ marginTop: 0, width: '100%', maxWidth: '800px', padding: '24px', alignItems: 'flex-start', background: 'rgba(0,0,0,0.6)', backdropFilter: 'blur(20px)', border: '1px solid rgba(255,255,255,0.35)' }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', width: '100%', borderBottom: '1px solid rgba(255,255,255,0.2)', paddingBottom: '12px', marginBottom: '16px' }}>
                 <span style={{ fontWeight: 800, fontSize: '14px', letterSpacing: '0.1em' }}>STREET FIGHTER 6</span>
                 <span style={{ fontWeight: 800, color: 'var(--accent-indigo)' }}>RYU</span>
-             </div>
-             <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+              </div>
+              <div style={{ width: '100%', display: 'flex', flexDirection: 'column', gap: '8px' }}>
                 <div style={{ display: 'flex', justifyContent: 'space-between', padding: '16px', background: 'rgba(255,255,255,0.08)', borderRadius: '8px', borderLeft: '4px solid #3b82f6' }}>
-                   <span style={{ fontWeight: 800, fontSize: '18px' }}>Bread &amp; Butter</span>
-                   <div style={{ display: 'flex', alignItems: 'center' }}>
-                      <GlyphSequence inputs={["c.MK", ">", "down", "down-forward", "forward", "P"]} controller="playstation" notationSystem="traditional" />
-                   </div>
+                  <span style={{ fontWeight: 800, fontSize: '18px' }}>Bread &amp; Butter</span>
+                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <GlyphSequence inputs={["c.MK", ">", "down", "down-forward", "forward", "P"]} controller="playstation" notationSystem="traditional" />
+                  </div>
                 </div>
                 <div style={{ display: 'flex', justifyContent: 'space-between', padding: '16px', background: 'rgba(255,255,255,0.08)', borderRadius: '8px', borderLeft: '4px solid #ef4444' }}>
-                   <span style={{ fontWeight: 800, fontSize: '18px' }}>Max Damage</span>
-                   <div style={{ display: 'flex', alignItems: 'center' }}>
-                      <GlyphSequence inputs={["DI", ">", "HP", ">", "forward", "down", "down-forward", "P"]} controller="playstation" notationSystem="traditional" />
-                   </div>
+                  <span style={{ fontWeight: 800, fontSize: '18px' }}>Max Damage</span>
+                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <GlyphSequence inputs={["DI", ">", "HP", ">", "forward", "down", "down-forward", "P"]} controller="playstation" notationSystem="traditional" />
+                  </div>
                 </div>
-                <div style={{ display: 'flex', justifyContent: 'space-between', padding: '16px', background: 'rgba(255,255,255,0.08)', borderRadius: '8px', borderLeft: '4px solid #10b981' }}>
-                   <span style={{ fontWeight: 800, fontSize: '18px' }}>Anti-Air</span>
-                   <div style={{ display: 'flex', alignItems: 'center' }}>
-                      <GlyphSequence inputs={["forward", "down", "down-forward", "P", ">", "SA3"]} controller="playstation" notationSystem="traditional" />
-                   </div>
-                </div>
-             </div>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -275,8 +261,8 @@ export const LandingView: React.FC<LandingViewProps> = ({ onLaunch }) => {
         <AmbientMesh colors={['rgba(99, 102, 241, 0.15)', 'rgba(167, 139, 250, 0.15)', 'rgba(236, 72, 153, 0.15)']} />
         <div className="landing-content">
           <h2 className="landing-title">Ready to hit the lab?</h2>
-          <p className="landing-subtitle">No accounts. No downloads. Installs as a PWA directly from your browser.</p>
-          
+          <p className="landing-subtitle">No accounts. No downloads. Installs as a PWA directly from your browser. Android & Apple versions for your tablet or phone.</p>
+
           <button className="landing-cta" onClick={onLaunch} style={{ padding: '24px 64px', fontSize: 24 }}>
             Launch GameGlance
           </button>

@@ -23,7 +23,44 @@ interface Props {
   onHome: () => void;
 }
 
+const formatNormalName = (name: string): string => {
+  const map: Record<string, string> = {
+    'p': 'Punch',
+    'k': 'Kick',
+    's': 'Slash',
+    'h': 'Heavy Slash',
+    'd': 'Dust',
+    'a': 'A',
+    'b': 'B',
+    'c': 'C',
+  };
+  
+  const stateMap: Record<string, string> = {
+    '2': 'Crouching',
+    '5': 'Standing',
+    'j.': 'Jumping',
+    'c.': 'Close',
+    'f.': 'Far',
+    '6': 'Forward',
+    '4': 'Back',
+    '3': 'Down-Forward',
+    '1': 'Down-Back',
+    '8': 'Up',
+    '7': 'Up-Back',
+    '9': 'Up-Forward'
+  };
 
+  const regex = /^(2|5|6|4|3|1|8|7|9|j\.|c\.|f\.)([PKSHDABC])$/i;
+  const match = name.match(regex);
+  if (match) {
+    const state = stateMap[match[1].toLowerCase()] || stateMap[match[1]];
+    const button = map[match[2].toLowerCase()];
+    if (state && button) {
+      return `${state} ${button}`;
+    }
+  }
+  return name;
+};
 
 const getFrameAdvantageColor = (frames?: string): string => {
   if (!frames) return 'var(--text-secondary)';
@@ -384,7 +421,6 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           'simultaneous press attacks': 'normal',
           '8-way run moves': 'normal',
           'reversal edge': 'system',
-          'critical edge': 'super',
           'soul charge moves': 'special',
           'soul attack': 'special',
 
@@ -1201,7 +1237,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                     }}>
                       {childrenMoves.map(child => {
                         const isChildSelected = selectedPlaylist && selectedPlaylist.some(m => m && child && m.id === child.id);
-                        const cleanChildName = child.name.replace(/^↳\s*/, '');
+                        const cleanChildName = formatNormalName(child.name.replace(/^↳\s*/, ''));
                         let cleanChildInput = child.input.replace(/^↳\s*/, '');
                         
                         if (game.id.startsWith('soulcalibur')) {
@@ -1290,7 +1326,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start' }}>
                           {tab !== 'Combos' && (() => {
                             const dlMatch = move.name.match(/\(DL(\d+)\)/);
-                            const cleanName = move.name.replace(/^↳\s*/, '').replace(/\(DL\d+\)/, '').trim();
+                            const cleanName = formatNormalName(move.name.replace(/^↳\s*/, '').replace(/\(DL\d+\)/, '').trim());
                             const isFollowUp = move.input.includes('~');
 
                             return (

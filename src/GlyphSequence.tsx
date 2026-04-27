@@ -286,7 +286,7 @@ const tokenizeStandardInputs = (inputs: string[], notationSystem: string = 'trad
       else if (processingT.startsWith('w.')) { prefix = 'w.'; processingT = processingT.substring(2); }
 
       const cleanT = processingT.replace(/\[|\]/g, ''); 
-      const match = processingT.match(/^([a-zA-Z.+]*?)([[\]1-9]+)([a-zA-Z]*)$/);
+      const match = processingT.match(/^([a-zA-Z.+]*?)([[\]1-9]+)([[\]a-zA-Z]*)$/);
       if (match) {
         if (prefix) result.push(prefix);
         if (match[1]) result.push(match[1]);
@@ -318,12 +318,14 @@ const tokenizeStandardInputs = (inputs: string[], notationSystem: string = 'trad
           if (pushedDirection) {
             result.push('+');
           }
-          const buttonMatches = match[3].match(/(SD|DR|SP|IAD|V|LP|MP|HP|LK|MK|HK|P|K|S|H|D|L|M|A1|A2|A|B|C)/gi);
-          if (buttonMatches && buttonMatches.join('') === match[3]) {
+          const isBtnBracketed = match[3].includes(']') || inBracket;
+          const cleanBtnStr = match[3].replace(/\]/g, '');
+          const buttonMatches = cleanBtnStr.match(/(SD|DR|SP|IAD|V|LP|MP|HP|LK|MK|HK|P|K|S|H|D|L|M|A1|A2|A|B|C)/gi);
+          if (buttonMatches && buttonMatches.join('') === cleanBtnStr) {
             const btns = buttonMatches.map(b => b.toUpperCase());
             for (let j = 0; j < btns.length; j++) {
               if (j > 0) result.push('+');
-              result.push(btns[j]);
+              result.push(isBtnBracketed ? `[${btns[j]}]` : btns[j]);
             }
           } else {
             result.push(match[3]);
@@ -333,10 +335,11 @@ const tokenizeStandardInputs = (inputs: string[], notationSystem: string = 'trad
         if (prefix) result.push(prefix);
         const buttonMatches = cleanT.match(/(SD|DR|SP|IAD|V|LP|MP|HP|LK|MK|HK|P|K|S|H|D|L|M|A1|A2|A|B|C)/gi);
         if (buttonMatches && buttonMatches.join('') === cleanT) {
+          const isBracketed = processingT.startsWith('[') && processingT.endsWith(']');
           const btns = buttonMatches.map(b => b.toUpperCase());
           for (let j = 0; j < btns.length; j++) {
             if (j > 0) result.push('+');
-            result.push(btns[j]);
+            result.push(isBracketed ? `[${btns[j]}]` : btns[j]);
           }
         } else {
           result.push(processingT);
@@ -517,15 +520,16 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
         <div
           key={idx}
           style={{
-            color: 'var(--text-tertiary)',
-            fontWeight: 800,
-            fontSize: large ? '0.65rem' : '0.5rem',
+            color: 'var(--text-secondary)',
+            fontWeight: 900,
+            fontSize: large ? '0.85rem' : '0.65rem',
             letterSpacing: '0.05em',
-            margin: `0 ${large ? '4px' : '2px'}`,
-            padding: '0.1rem 0.3rem',
+            margin: `0 ${large ? '6px' : '4px'}`,
+            padding: large ? '0.2rem 0.5rem' : '0.15rem 0.4rem',
             border: '1px solid var(--border-subtle)',
-            borderRadius: '4px',
+            borderRadius: '6px',
             background: 'var(--bg-badge)',
+            boxShadow: '0 2px 4px rgba(0,0,0,0.2)',
             ...styleOverrides
           }}
         >
@@ -704,17 +708,25 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
       );
     }
 
+    const wrappedButtonJSX = isCharge ? (
+      <div style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+        <span style={{ fontSize: large ? '1.5rem' : '1.1rem', fontWeight: 900, color: '#eab308', fontFamily: "'Outfit', sans-serif" }}>[</span>
+        {buttonJSX}
+        <span style={{ fontSize: large ? '1.5rem' : '1.1rem', fontWeight: 900, color: '#eab308', fontFamily: "'Outfit', sans-serif" }}>]</span>
+      </div>
+    ) : buttonJSX;
+
     if (rawInput === 'P' || rawInput === 'K') {
       return (
         <div key={idx} style={{ position: 'relative', display: 'flex', flexDirection: 'column', alignItems: 'center', ...styleOverrides }}>
-          {buttonJSX}
+          {wrappedButtonJSX}
         </div>
       );
     }
 
     return (
       <div key={idx} style={{ ...styleOverrides }}>
-        {buttonJSX}
+        {wrappedButtonJSX}
       </div>
     );
   };
