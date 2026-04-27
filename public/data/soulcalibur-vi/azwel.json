@@ -1,66 +1,2317 @@
 {
+  "name": "Azwel",
   "character": "Azwel",
+  "game": "SoulCalibur VI",
   "movesList": [
     {
-      "name": "Almighty Force",
-      "input": "236B",
-      "type": "Move"
+      "name": "Pilgrimage of Anthropos",
+      "input": "A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10",
+        "Block: -8",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 1%",
+        "Notes: Sword"
+      ]
     },
     {
-      "name": "Axe Mode Switch",
+      "name": "Pilgrimage of Anthropos",
+      "input": "AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10,12",
+        "Block: -6",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo. Sword"
+      ]
+    },
+    {
+      "name": "Pilgrimage of Anthropos",
+      "input": "AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10,12,10,5,5,5,5,10",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 11%"
+      ]
+    },
+    {
+      "name": "Death To Defectors",
+      "input": "AAB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10,12,24",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Tragedy of Humanity",
+      "input": "AB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10,23",
+        "Block: -20",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 8%"
+      ]
+    },
+    {
+      "name": "Light in the Dark",
+      "input": "6A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 4%",
+        "Notes: Axe. Tech Crouch[9-26]"
+      ]
+    },
+    {
+      "name": "Light in the Dark",
+      "input": "6AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,24",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo. Jails, Ax. Tech Crouch[9-26]"
+      ]
+    },
+    {
+      "name": "Forbidden Path",
+      "input": "3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: STN",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Heretic's Sweep",
+      "input": "2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 8,8",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[8-RC]"
+      ]
+    },
+    {
+      "name": "~ Beauty Of Balance",
+      "input": "2AK",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 8,8",
+        "Block: -2",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: -",
+        "Notes: into BOB"
+      ]
+    },
+    {
+      "name": "~ Tragedy Of War",
+      "input": "2A6K",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 8,8",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into TOB"
+      ]
+    },
+    {
+      "name": "~ Comedy Of Errors",
+      "input": "2A4K",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 8,8",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into COE"
+      ]
+    },
+    {
+      "name": "Peace Through Hardship",
+      "input": "1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 30",
+        "Block: -12",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 4%",
+        "Notes: Spear. [41-66] vs M L"
+      ]
+    },
+    {
+      "name": "Fell the Unworthy",
+      "input": "4A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22",
+        "Block: -6",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 4%",
+        "Notes: Spear. [13-18] vs H"
+      ]
+    },
+    {
+      "name": "Heretic's Sweep",
+      "input": "FCA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 8,8",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "~ Beauty Of Balance",
+      "input": "FCAK",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 8,8",
+        "Block: -2",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: -",
+        "Notes: into BOB"
+      ]
+    },
+    {
+      "name": "~ Tragedy Of War",
+      "input": "FCA6K",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 8,8",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into TOB"
+      ]
+    },
+    {
+      "name": "~ Comedy Of Errors",
+      "input": "FCA4K",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 8,8",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into COE"
+      ]
+    },
+    {
+      "name": "Impulse Pincer",
+      "input": "FC3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo. Axe"
+      ]
+    },
+    {
+      "name": "Righteous Judgment",
+      "input": "FC1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 4",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Double Cross Baptism",
+      "input": "WRA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -10",
+        "Hit: 7",
+        "Counter: 7",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Absolute Devotion",
+      "input": "9A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 22",
+        "Block: -16",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Radical Liberty",
+      "input": "8A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 16",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Thorough Impact",
+      "input": "7A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 28",
+        "Block: -18",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Faith Betrayal",
+      "input": "BTA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: -",
+        "Guard Burst: 1%",
+        "Notes: Sword"
+      ]
+    },
+    {
+      "name": "Martyr of Progress",
+      "input": "BT2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: -",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Heart on Trial",
+      "input": "B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -10",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 2%",
+        "Notes: Sword"
+      ]
+    },
+    {
+      "name": "Heart on Trial",
+      "input": "BA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,22",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Seven Sages' Aphorism",
+      "input": "BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,12",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo. Sword"
+      ]
+    },
+    {
+      "name": "Seven Sages' Aphorism",
+      "input": "BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,12,14,8,8,16",
+        "Block: -6",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 13%"
+      ]
+    },
+    {
+      "name": "~ Beauty Of Balance",
+      "input": "BBK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12.12",
+        "Block: -12",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo. Sword.  into BOB"
+      ]
+    },
+    {
+      "name": "~ Tragedy Of War",
+      "input": "BB6K",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,12",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into TOW"
+      ]
+    },
+    {
+      "name": "~ Comedy Of Errors",
+      "input": "BB4K",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,12",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into COE"
+      ]
+    },
+    {
+      "name": "To The Gallows",
+      "input": "BBA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,12,22",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Adulation Blade",
+      "input": "b6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 24",
+        "Block: -2",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 9%",
+        "Notes: Sword. Tech Crouch[14-21]"
+      ]
+    },
+    {
+      "name": "Tears of Pain",
+      "input": "b4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: in post-GI"
+      ]
+    },
+    {
+      "name": "Usurp the Autocracy",
+      "input": "6B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -6",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 5%",
+        "Notes: Axe"
+      ]
+    },
+    {
+      "name": "Usurp the Autocracy",
+      "input": "6BA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16,10,10,15",
+        "Block: -4",
+        "Hit: -8",
+        "Counter: -8",
+        "Guard Burst: 8%",
+        "Notes: Spear"
+      ]
+    },
+    {
+      "name": "Truculent World",
+      "input": "6BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16,25",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 17%",
+        "Notes: Tech Jump[7-30]. Tech Crouch[30-56]"
+      ]
+    },
+    {
+      "name": "Barbaric Lament",
+      "input": "6BaB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16,24",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 6%",
+        "Notes: Sword"
+      ]
+    },
+    {
+      "name": "Eternal Conflict",
+      "input": "3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -16",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: vs crouch guard"
+      ]
+    },
+    {
+      "name": "Eternal Conflict",
+      "input": "3BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24,18",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: vs crouch guard"
+      ]
+    },
+    {
+      "name": "Eternal Conflict",
+      "input": "3B(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24,32",
+        "Block: -4",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 20%",
+        "Notes: vs crouch guard"
+      ]
+    },
+    {
+      "name": "Path to Glory",
+      "input": "2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 9%",
+        "Notes: Sword"
+      ]
+    },
+    {
+      "name": "Path to Glory",
+      "input": "2BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12,14",
+        "Block: -14",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 14%",
+        "Notes: Normal Hit Combo. Sword"
+      ]
+    },
+    {
+      "name": "~ Beauty Of Balance",
+      "input": "2BBK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Sword.  into BOB"
+      ]
+    },
+    {
+      "name": "~ Tragedy Of War",
+      "input": "2BB6K",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into TOW"
+      ]
+    },
+    {
+      "name": "~ Comedy Of Errors",
+      "input": "2BB4K",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into COE"
+      ]
+    },
+    {
+      "name": "Save the Betrayed",
+      "input": "1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -16",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 9%",
+        "Notes: [11-24] vs L."
+      ]
+    },
+    {
+      "name": "Save the Betrayed",
+      "input": "1BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,24",
+        "Block: -8",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 14%",
+        "Notes: [11-24] vs L."
+      ]
+    },
+    {
+      "name": "Instruct the Unwise",
+      "input": "4B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 25",
+        "Block: 4",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%",
+        "Notes: Spear. .  [15-28] vs M L.  in post-GI.  on"
+      ]
+    },
+    {
+      "name": "Nihilism",
+      "input": "FCB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 15",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 5",
+        "Counter: 5",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Coup D'état",
+      "input": "FC3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: -12",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Axe"
+      ]
+    },
+    {
+      "name": "Coup D'état",
+      "input": "FC3BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22,19",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Normal Hit Combo. Axe"
+      ]
+    },
+    {
+      "name": "Talon Spear",
+      "input": "FC1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 24",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Spear"
+      ]
+    },
+    {
+      "name": "Enlightenment",
+      "input": "WRB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 9%",
+        "Notes: Sword"
+      ]
+    },
+    {
+      "name": "Enlightenment",
+      "input": "WRBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 14%",
+        "Notes: Normal Hit Combo. Delayable. Sword"
+      ]
+    },
+    {
+      "name": "Extinction Betrayer",
+      "input": "9B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 38",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Tech Jump[10-31]. Tech Crouch[34-50]"
+      ]
+    },
+    {
+      "name": "Biting Critique",
+      "input": "8B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[8-30]"
+      ]
+    },
+    {
+      "name": "Revelatory Punishment",
+      "input": "7B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 22",
+        "Block: -18",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Spear. Tech Jump[8-31]. Tech Crouch[34-39]"
+      ]
+    },
+    {
+      "name": "Whistleblower",
+      "input": "BTB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: -",
+        "Guard Burst: 2%",
+        "Notes: Sword"
+      ]
+    },
+    {
+      "name": "Cognitive Dissonance",
+      "input": "BT2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: -",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Harmonius Abandon",
+      "input": "weaponlessA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 42",
+        "Damage: 40",
+        "Block: 12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: .  upon impact counter. G cancels"
+      ]
+    },
+    {
+      "name": "Harmonius Abandon",
+      "input": "swordA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 42",
+        "Damage: 40",
+        "Block: 12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: .  upon impact counter. G cancels"
+      ]
+    },
+    {
+      "name": "Rebellious Abandon",
+      "input": "axA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 42",
+        "Damage: 40",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 25%",
+        "Notes: .  upon impact counter. G cancels. Can be charged (for distance) by holding A+B"
+      ]
+    },
+    {
+      "name": "Fraternal Abandon",
+      "input": "spearA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 42",
+        "Damage: 24",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: .  upon impact counter. G cancels GI [11-22] vs"
+      ]
+    },
+    {
+      "name": "Lawless Abandon",
+      "input": "almightyA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 42",
+        "Damage: 32",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: .  upon impact counter. G cancels GI [11-22] vs"
+      ]
+    },
+    {
+      "name": "Epistemological Punishment",
+      "input": "6A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 14,9,8,16",
+        "Block: -6",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[16-69]"
+      ]
+    },
+    {
+      "name": "Geometrical Precision",
+      "input": "2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 0",
+        "Block: -12",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: -",
+        "Notes: Quake"
+      ]
+    },
+    {
+      "name": "Power of Pathos",
+      "input": "4A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: 8",
+        "Counter: 18",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[18-45]"
+      ]
+    },
+    {
+      "name": "Encyclopedic Mind",
+      "input": "8A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 30",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Ophion's Omnipresence",
+      "input": "214A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 62",
+        "Damage: 45",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: . Normal Hit Combo. Tech Jump[60-81]"
+      ]
+    },
+    {
+      "name": "Pareidolia's Awakening",
+      "input": "weaponlessB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 0",
+        "Block: -18",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 0%"
+      ]
+    },
+    {
+      "name": "Pareidolia's Awakening",
+      "input": "weaponlessB+KA",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 0",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 0%",
+        "Notes: Different outcomes on 1st/2nd/3rd/4th use. Can use B or K instead of A for same result."
+      ]
+    },
+    {
+      "name": "Pleroma Ascesion",
+      "input": "swordB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,22",
+        "Block: -20",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 14%",
+        "Notes: Tech Jump[37-43]"
+      ]
+    },
+    {
+      "name": "O, Fallen Scholar",
+      "input": "axB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 54",
+        "Block: -24",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Jaills (2 hits only on guard).  vs Highs [5-18]"
+      ]
+    },
+    {
+      "name": "Aufheben Sublimation",
+      "input": "spearB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 24,12,17",
+        "Block: -24",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 10%"
+      ]
+    },
+    {
+      "name": "Pleroma Ascesion",
+      "input": "almightyB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,22",
+        "Block: -20",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 14%",
+        "Notes: Same as sword. Tech Jump[37-43]"
+      ]
+    },
+    {
+      "name": "Aufheben Sublimation",
+      "input": "almighty4B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 24,12,17",
+        "Block: -24",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 10%",
+        "Notes: Same as spear."
+      ]
+    },
+    {
+      "name": "O, Fallen Scholar",
+      "input": "almighty6B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 54",
+        "Block: -24",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Same as ax."
+      ]
+    },
+    {
+      "name": "Almighty Paradox",
+      "input": "almighty8B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 41",
+        "Block: -20",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 14%",
+        "Notes: Tech Jump[17-100]"
+      ]
+    },
+    {
+      "name": "Ascension Of The Three Magi",
+      "input": "FCA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[0-5]"
+      ]
+    },
+    {
+      "name": "Ascension Of The Three Magi",
+      "input": "FCA+BK",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 16",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into BOB"
+      ]
+    },
+    {
+      "name": "Ascension Of The Three Magi",
+      "input": "FCA+B6K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 16",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into TOW"
+      ]
+    },
+    {
+      "name": "Ascension Of The Three Magi",
+      "input": "FCA+B4K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 16",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into COE"
+      ]
+    },
+    {
+      "name": "Rebuttal",
+      "input": "BTA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22",
+        "Block: 6",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Appeal",
+      "input": "K+G",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Taunt. G cancels. Tech Crouch"
+      ]
+    },
+    {
+      "name": "Modify the Weak",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 50",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Almighty."
+      ]
+    },
+    {
+      "name": "Reformation",
+      "input": "4A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 60",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Almighty."
+      ]
+    },
+    {
+      "name": "Transmigration",
+      "input": "BACK THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 80",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Almighty."
+      ]
+    },
+    {
+      "name": "Plunder the Depths",
+      "input": "(3)_(6)_(9)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -1",
+        "Hit: -12",
+        "Counter: -",
+        "Guard Burst: 2%",
+        "Notes: Projectile, Axe"
+      ]
+    },
+    {
+      "name": "Subliminal Persuasion",
+      "input": "(2)_(8)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 18",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: on run counter"
+      ]
+    },
+    {
+      "name": "~ Beauty Of Balance",
+      "input": "(2)_(8)AK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 18",
+        "Block: 0",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: Sword. .  into BOB"
+      ]
+    },
+    {
+      "name": "~ Tragedy Of War",
+      "input": "(2)_(8)A6K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 18",
+        "Block: 0",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: .  into TOW"
+      ]
+    },
+    {
+      "name": "~ Comedy Of Errors",
+      "input": "(2)_(8)A4K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 18",
+        "Block: 0",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: .  into COE"
+      ]
+    },
+    {
+      "name": "Justice for All",
+      "input": "(1)_(4)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 24",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Spear. Jumps but is not considered TechJump"
+      ]
+    },
+    {
+      "name": "Trials of Conflict",
+      "input": "(3)_(6)_(9)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 28",
+        "Block: -4",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Axe"
+      ]
+    },
+    {
+      "name": "Unequivocal Love",
+      "input": "(2)_(8)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22",
+        "Block: -4",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: versus whiffed attacks"
+      ]
+    },
+    {
+      "name": "~ Beauty Of Balance",
+      "input": "(2)_(8)BK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: -",
+        "Block: 12",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: Sword. .  into BOB"
+      ]
+    },
+    {
+      "name": "~ Tragedy Of War",
+      "input": "(2)_(8)B6K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: -",
+        "Block: 12",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: .  into TOW"
+      ]
+    },
+    {
+      "name": "~ Comedy Of Errors",
+      "input": "(2)_(8)B4K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: -",
+        "Block: 12",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: .  into COE"
+      ]
+    },
+    {
+      "name": "No More Naysayers",
+      "input": "(1)_(4)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 20",
+        "Block: -14",
+        "Hit: -8",
+        "Counter: -8",
+        "Guard Burst: 5%",
+        "Notes: on long-range hit"
+      ]
+    },
+    {
+      "name": "No More Naysayers",
+      "input": "(1)_(4)_(7)(B)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 56",
+        "Damage: 30",
+        "Block: -2",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Projectile, Spear. ."
+      ]
+    },
+    {
+      "name": "March of Humanity",
+      "input": "(2)_(8)_(1)_(4)_(7)_(3)_(6)_(9)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 40",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 10%",
+        "Notes: after hitting with sword, ax, and spear weapon arts"
+      ]
+    },
+    {
+      "name": "Philosophy Slide",
+      "input": "RUNK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[6-27]. Tech Crouch[27-47]"
+      ]
+    },
+    {
+      "name": "Pleroma Ascension",
+      "input": "B+K",
+      "type": "Weapon Arts",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -20",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 14%",
+        "Notes: Normal Hit Combo. Projectile, Only in Sword or Almighty, Resets weapon"
+      ]
+    },
+    {
+      "name": "O, Fallen Scholar",
       "input": "6B+K",
-      "type": "Move"
+      "type": "Weapon Arts",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20,34",
+        "Block: -24",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Only in Axe or Almighty, Resets weapon, +4 and no  at tip."
+      ]
     },
     {
-      "name": "Spear Mode Switch",
+      "name": "Aufheben Sublimation",
       "input": "4B+K",
-      "type": "Move"
+      "type": "Weapon Arts",
+      "properties": [
+        "Impact: 32",
+        "Damage: 59",
+        "Block: -24",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 10%",
+        "Notes: Only in Spear or Almighty, Resets weapon.  [4-16] vs M L"
+      ]
     },
     {
-      "name": "Sword Mode Switch",
-      "input": "2B+K",
-      "type": "Move"
+      "name": "Disillusionment",
+      "input": "K",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: 20F.  into BOB"
+      ]
     },
     {
-      "name": "Greater Judgment",
+      "name": "Beauty of Wonder",
+      "input": "2_8K",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: TS.  into BOB"
+      ]
+    },
+    {
+      "name": "Beauty of Balance",
+      "input": "BTK",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into BOB"
+      ]
+    },
+    {
+      "name": "Beauty of Wonder",
+      "input": "BT2_8K",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: TS.  into BOB"
+      ]
+    },
+    {
+      "name": "Beauty of Performance",
+      "input": "(2)_(8)K",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: TS.  into BOB"
+      ]
+    },
+    {
+      "name": "Salvation Doctrine",
+      "input": "BOBA",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -6",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 4%",
+        "Notes: Sword"
+      ]
+    },
+    {
+      "name": "Salvation Doctrine",
+      "input": "BOBAA",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,10",
+        "Block: -6",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo. Sword"
+      ]
+    },
+    {
+      "name": "Salvation Doctrine",
+      "input": "BOBAAA",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,10,20",
+        "Block: -8",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 7%",
+        "Notes: Sword"
+      ]
+    },
+    {
+      "name": "Ideological Insight",
+      "input": "BOBAAB",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,10,30",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%"
+      ]
+    },
+    {
+      "name": "~ Beauty Of Balance",
+      "input": "BOBAAK",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -2",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo. Sword.  into BOB"
+      ]
+    },
+    {
+      "name": "~ Tragedy Of War",
+      "input": "BOBAA6K",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into TOW"
+      ]
+    },
+    {
+      "name": "~ Comedy Of Errors",
+      "input": "BOBAA4K",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into COE"
+      ]
+    },
+    {
+      "name": "Lower the Gavel",
+      "input": "BOBAB",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,8,16",
+        "Block: -18",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 14%"
+      ]
+    },
+    {
+      "name": "Karmic Consequence",
+      "input": "BOBB",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: 20",
+        "Damage: 28",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: after guard crush"
+      ]
+    },
+    {
+      "name": "Raconteur",
+      "input": "BOBK",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -6",
+        "Hit: 8",
+        "Counter: STN",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Beauty of Balance ~ Tragedy of War",
+      "input": "BOB6K",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into TOW"
+      ]
+    },
+    {
+      "name": "Beauty of Balance ~ Comedy of Errors",
+      "input": "BOB4K",
+      "type": "Beautyof Balance",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into COE"
+      ]
+    },
+    {
+      "name": "Tragedy of War",
+      "input": "3_6_9K",
+      "type": "Tragedyof War",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into TOW"
+      ]
+    },
+    {
+      "name": "Tragedy of War",
+      "input": "BT3_6_9K",
+      "type": "Tragedyof War",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Axe.  into TOW. Tech Crouch"
+      ]
+    },
+    {
+      "name": "Tragedy of Performance",
+      "input": "(3)_(6)_(9)K",
+      "type": "Tragedyof War",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into TOW. Tech Crouch"
+      ]
+    },
+    {
+      "name": "Scream of Defiance",
+      "input": "TOWA",
+      "type": "Tragedyof War",
+      "properties": [
+        "Impact: 22",
+        "Damage: 40",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Axe. . Tech Crouch[1-5]"
+      ]
+    },
+    {
+      "name": "War and Destruction",
+      "input": "TOWB",
+      "type": "Tragedyof War",
+      "properties": [
+        "Impact: 28",
+        "Damage: 45",
+        "Block: 8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: .  on impact counter"
+      ]
+    },
+    {
+      "name": "Fall of the Wise",
+      "input": "TOW6K",
+      "type": "Tragedyof War",
+      "properties": [
+        "Impact: 24",
+        "Damage: 14",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo. Axe. Tech Crouch[1-48]"
+      ]
+    },
+    {
+      "name": "Beauty of Balance",
+      "input": "TOWK",
+      "type": "Tragedyof War",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into BOB"
+      ]
+    },
+    {
+      "name": "Beauty of Wonder",
+      "input": "TOW2_8K",
+      "type": "Tragedyof War",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into BOB"
+      ]
+    },
+    {
+      "name": "Comedy of Errors",
+      "input": "TOW4K",
+      "type": "Tragedyof War",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into COE"
+      ]
+    },
+    {
+      "name": "Comedy of Errors",
+      "input": "1_4_7K",
+      "type": "Comedyof Errors",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: 20F, Spear.  into COE"
+      ]
+    },
+    {
+      "name": "Comedy of Errors",
+      "input": "BT1_4_7K",
+      "type": "Comedyof Errors",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into COE"
+      ]
+    },
+    {
+      "name": "Comedy of Performance",
+      "input": "(1)_(4)_(7)K",
+      "type": "Comedyof Errors",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into COE"
+      ]
+    },
+    {
+      "name": "Premonition of Abraxas",
+      "input": "COEA",
+      "type": "Comedyof Errors",
+      "properties": [
+        "Impact: 24",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%",
+        "Notes: after changing modes with Pareidolia's Awakening 2 or more times, once per match."
+      ]
+    },
+    {
+      "name": "Condemnation Of Transgressors",
+      "input": "COEAA",
+      "type": "Comedyof Errors",
+      "properties": [
+        "Impact: 24",
+        "Damage: 40",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Axe"
+      ]
+    },
+    {
+      "name": "Premonition of Abraxas",
+      "input": "COEAB",
+      "type": "Comedyof Errors",
+      "properties": [
+        "Impact: 24",
+        "Damage: 18",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: LNC",
+        "Guard Burst: 16%",
+        "Notes: Sword"
+      ]
+    },
+    {
+      "name": "Will to Dominate",
+      "input": "COEB",
+      "type": "Comedyof Errors",
+      "properties": [
+        "Impact: 26",
+        "Damage: 24",
+        "Block: -6",
+        "Hit: 14",
+        "Counter: 14",
+        "Guard Burst: 9%",
+        "Notes: Spear"
+      ]
+    },
+    {
+      "name": "Will to Dominate",
+      "input": "COEBB",
+      "type": "Comedyof Errors",
+      "properties": [
+        "Impact: 26",
+        "Damage: 14",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Normal Hit Combo. Projectile, Spear"
+      ]
+    },
+    {
+      "name": "Executioner's Gavel",
+      "input": "COE6B",
+      "type": "Comedyof Errors",
+      "properties": [
+        "Impact: 28",
+        "Damage: 30",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Projectile, Spear"
+      ]
+    },
+    {
+      "name": "Advocate of Change",
+      "input": "COE4K",
+      "type": "Comedyof Errors",
+      "properties": [
+        "Impact: 28",
+        "Damage: 22",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Comedy of Errors ~ Beauty of Balance",
+      "input": "COEK",
+      "type": "Comedyof Errors",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into BOB"
+      ]
+    },
+    {
+      "name": "Beauty Of Wonder",
+      "input": "COE2_8K",
+      "type": "Comedyof Errors",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into BOB"
+      ]
+    },
+    {
+      "name": "Comedy of Errors ~ Tragedy of War",
+      "input": "COE6K",
+      "type": "Comedyof Errors",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into TOW"
+      ]
+    },
+    {
+      "name": "Director of Fate",
+      "input": "B+G",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 48",
+        "Damage: 40",
+        "Block: -4",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 16%"
+      ]
+    },
+    {
+      "name": "Director of Fate",
+      "input": "+(B)+(G)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 68",
+        "Damage: 50",
+        "Block: 8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 20%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Standing Ovation",
+      "input": "REA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 17",
+        "Block: 2",
+        "Hit: STN",
+        "Counter: -",
+        "Guard Burst: 33%"
+      ]
+    },
+    {
+      "name": "~ Beauty Of Balance",
+      "input": "REAK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 17",
+        "Block: -",
+        "Hit: STN",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: into BOB"
+      ]
+    },
+    {
+      "name": "~ Tragedy Of War",
+      "input": "REA6K",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 17",
+        "Block: -",
+        "Hit: STN",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: into TOW"
+      ]
+    },
+    {
+      "name": "~ Comedy Of Errors",
+      "input": "REA4K",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 17",
+        "Block: -",
+        "Hit: STN",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: into COE"
+      ]
+    },
+    {
+      "name": "Nebulous Critique",
+      "input": "REB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 18",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 50%"
+      ]
+    },
+    {
+      "name": "Nebulous Critique",
+      "input": "REBB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 26,10,8,8,16",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 50%"
+      ]
+    },
+    {
+      "name": "Disillusionment",
+      "input": "REK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 0%",
+        "Notes: Avoids all attacks"
+      ]
+    },
+    {
+      "name": "From Science, with Love",
       "input": "A+B+K",
-      "type": "Critical Edge"
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 20",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: i13 in Sword or Almighty."
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Spirit Sword Salvation",
+      "input": "odd activation236A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 8,8,8,8",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Evil Sword's Embrace",
+      "input": "even activation236A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22,4,4,4,10",
+        "Block: -2",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 20%",
+        "Notes: Tech Jump"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Soul Charge",
+      "input": "4A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 6",
+        "Damage: 0",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 0%",
+        "Notes: invincible since i4. Pushback happens at i6"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "I Shall Save Humanity!",
+      "input": "SC6A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 11,5,5,8,110",
+        "Block: -30",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 1%",
+        "Notes: Tech Jump[10-38]."
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Road to Redemption",
+      "input": "SCAAA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10,10,11,5,5,6,11",
+        "Block: 2",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 11%",
+        "Notes: First 2 and last 6 hits Normal Hit Combo. . Tech Jump"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Epistemophilia",
+      "input": "SCBBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 13,13,15,8,9,18",
+        "Block: 4",
+        "Hit: STN",
+        "Counter: -",
+        "Guard Burst: 13%",
+        "Notes: . Tech Jump[16-??]"
+      ]
+    },
+    {
+      "name": "Viva Academia",
+      "input": "SC6A+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 15,8,9,18",
+        "Block: 4",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: . Tech Jump[16-??]"
+      ]
+    },
+    {
+      "name": "Destiny's Choice",
+      "input": "SC8A+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 6,6,13",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Normal Hit Combo. Launcher on grounded. Tech Crouch[6-11]. Tech Jump[11-38]"
+      ]
+    },
+    {
+      "name": "Everlasting Antithesis",
+      "input": "SC8B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 14,10,10,10,10",
+        "Block: -20",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 10%"
+      ]
+    },
+    {
+      "name": "New World Revolution",
+      "input": "SC(2)_(8)_(1)_(4)_(7)_(3)_(6)_(9)A+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 11,5,5.5.12",
+        "Block: 2",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 10%",
+        "Notes: ."
+      ]
     }
   ]
 }

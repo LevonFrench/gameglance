@@ -4,34 +4,2887 @@
   "game": "SoulCalibur VI",
   "movesList": [
     {
-      "name": "Hachimitsu",
-      "input": "5A, 5A",
-      "type": "normal"
+      "name": "Weather Vane Buster",
+      "input": "A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%",
+        "Notes: Can Cancel with G"
+      ]
     },
     {
-      "name": "Lightning strike",
+      "name": "Weather Vane Buster",
+      "input": "AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,1",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Weather Vane Buster",
+      "input": "AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,10,10",
+        "Block: -4",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 6%",
+        "Notes: Ends in BT(3rd hit delayable)"
+      ]
+    },
+    {
+      "name": "Rapid Espada",
+      "input": "AAB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,14",
+        "Block: -16",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 5%",
+        "Notes: 3rd hit delayable"
+      ]
+    },
+    {
+      "name": "Rapid Espada",
+      "input": "AABA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,14,16",
+        "Block: -4",
+        "Hit: 0",
+        "Counter: 6",
+        "Guard Burst: 6%"
+      ]
+    },
+    {
+      "name": "Rapid Espada",
+      "input": "AABA2_8",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,14,16",
+        "Block: 4",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 6%",
+        "Notes: into WNormal Hit Combo(+14 only if last hit is CH entering stance)"
+      ]
+    },
+    {
+      "name": "~ Wind Sault",
+      "input": "AABA6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,14,16",
+        "Block: 4",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 6%",
+        "Notes: into WNS(+14 only if last hit is CH entering stance)"
+      ]
+    },
+    {
+      "name": "~ Wind Fury",
+      "input": "AABA4",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,14,16",
+        "Block: -10",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 6%",
+        "Notes: into WNF(+14 only if last hit is CH entering stance)"
+      ]
+    },
+    {
+      "name": "Rapid Barrage",
+      "input": "AABB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,14,26",
+        "Block: -8",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 10%"
+      ]
+    },
+    {
+      "name": "Rapid Barrage",
+      "input": "AAB(B)",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,14,26",
+        "Block: -6",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 10%",
+        "Notes: into WNF(Guarding from WNF is extra -10, can evade punish with stance)"
+      ]
+    },
+    {
+      "name": "Swift Espada",
+      "input": "AAA+B",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,20,20",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Wind Dance",
+      "input": "A6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,12",
+        "Block: 0",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 3%",
+        "Notes: Tech Jump[13-?]"
+      ]
+    },
+    {
+      "name": "Mirror Fan Strikes",
+      "input": "6A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Mirror Fan Strikes",
+      "input": "6AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,24",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Mirror Fan Strikes",
+      "input": "6AA2_8",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,24",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: into WNormal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Wind Sault",
+      "input": "6AA6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,24",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: into WNS"
+      ]
+    },
+    {
+      "name": "~ Wind Fury",
+      "input": "6AA4",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,24",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: into WNF"
+      ]
+    },
+    {
+      "name": "Wind Walker",
+      "input": "6AB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,4",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%"
+      ]
+    },
+    {
+      "name": "Mirror Fan Kick",
+      "input": "6AK",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,2",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: can delay kick to be safe on block"
+      ]
+    },
+    {
+      "name": "Razor Storm",
+      "input": "3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 6,5,5,4",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Ends in BT"
+      ]
+    },
+    {
+      "name": "Tuhod Slicer",
+      "input": "2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Spinning Low Hiwa",
+      "input": "1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 25",
+        "Block: -10",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Witik Kick",
+      "input": "4A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Witik Kick",
+      "input": "4AK",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14,16",
+        "Block: -4",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Tuhod Slicer",
+      "input": "FCA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Ends in FC"
+      ]
+    },
+    {
+      "name": "Left Witik",
+      "input": "WRA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 25",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: RO to Left"
+      ]
+    },
+    {
+      "name": "Diving Tuhod Slicer",
+      "input": "JUMPA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 18",
+        "Block: -10",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: Ends in FC"
+      ]
+    },
+    {
+      "name": "Ice Wind Combo",
+      "input": "BTA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 5,5,5",
+        "Block: -16",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Ice Wind Combo",
+      "input": "BTAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 5,5,5,5,5,5",
+        "Block: -16",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 8%"
+      ]
+    },
+    {
+      "name": "Ice Wind Combo",
+      "input": "BTAAB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 5,5,5,5,5,5,5,5,10",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%"
+      ]
+    },
+    {
+      "name": "Turning Tuhod Slicer",
+      "input": "BT2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Ends in FC"
+      ]
+    },
+    {
+      "name": "Kampilan Flurry",
+      "input": "B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%",
+        "Notes: Can Cancel with G"
+      ]
+    },
+    {
+      "name": "Kampilan Flurry",
+      "input": "BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,14",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Kampilan Flurry",
+      "input": "BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,14,30",
+        "Block: -12",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 21%"
+      ]
+    },
+    {
+      "name": "Kampilan Flurry",
+      "input": "BB(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,14,40",
+        "Block: 8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 25%"
+      ]
+    },
+    {
+      "name": "Kampilan Flurry",
+      "input": "BB(B)2_8",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,14",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 4%",
+        "Notes: .  into WNormal Hit Combo"
+      ]
+    },
+    {
+      "name": "Kampilan Flurry",
+      "input": "BB(B)6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,14",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 4%",
+        "Notes: .  into WNS"
+      ]
+    },
+    {
+      "name": "Kampilan Flurry",
+      "input": "BB(B)4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,14",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 4%",
+        "Notes: .  into WNF"
+      ]
+    },
+    {
+      "name": "Kampilan Talon",
+      "input": "BK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,20",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Air Blade Thrust",
       "input": "6B",
-      "type": "normal"
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2%"
+      ]
     },
     {
-      "name": "Mekkyu",
+      "name": "Air Blade Thrust",
+      "input": "6BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20,21",
+        "Block: -16",
+        "Hit: 10",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Air Blade Thrust",
+      "input": "6BB2_8",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20,21",
+        "Block: -10",
+        "Hit: 16",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: into WNormal Hit Combo(opponent can block during on hit recovery)"
+      ]
+    },
+    {
+      "name": "~ Wind Sault",
+      "input": "6BB6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20,21",
+        "Block: -10",
+        "Hit: 16",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: into WNS (opponent can block during on hit recovery)"
+      ]
+    },
+    {
+      "name": "~ Wind Fury",
+      "input": "6BB4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20,21",
+        "Block: -24",
+        "Hit: 2",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: into WNF"
+      ]
+    },
+    {
+      "name": "Air Blade Thrust (delay)",
+      "input": "6B(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20,30",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%"
+      ]
+    },
+    {
+      "name": "Air Blade Thrust (delay)",
+      "input": "6B(B)2_8",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20,30",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: .  into WNormal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Wind Sault",
+      "input": "6B(B)6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20,30",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: .  into WNS"
+      ]
+    },
+    {
+      "name": "~ Wind Fury",
+      "input": "6B(B)4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20,30",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: .  into WNF"
+      ]
+    },
+    {
+      "name": "Cross Breeze",
+      "input": "6BK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20,23",
+        "Block: 2",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo. Jails, forces crouch on block"
+      ]
+    },
+    {
+      "name": "West Wind Combo",
+      "input": "3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22,4,4",
+        "Block: -12",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 11%",
+        "Notes: On CH or ground hit launches behind you"
+      ]
+    },
+    {
+      "name": "Turning Witik Blow",
+      "input": "2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: -2",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 2%",
+        "Notes: Ends in BT"
+      ]
+    },
+    {
+      "name": "Fierce Witik Strike",
+      "input": "2BA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22,12",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Fierce Witik Strike",
+      "input": "2B(A)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22,12",
+        "Block: -10",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%",
+        "Notes: into WNF.(Guarding from WNF is extra -10, can evade punish with stance)"
+      ]
+    },
+    {
+      "name": "Cumulus Crash",
+      "input": "1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 8,8",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 6",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Gust Slicer",
+      "input": "4B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -16",
+        "Hit: 0",
+        "Counter: STN",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[6-8]"
+      ]
+    },
+    {
+      "name": "Gust Slicer",
+      "input": "4BA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,16",
+        "Block: -4",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[6-8]. Ends in BT"
+      ]
+    },
+    {
+      "name": "Gust Slicer",
+      "input": "4B(A)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,28",
+        "Block: -2",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[6-8]. Ends in BT. Delay"
+      ]
+    },
+    {
+      "name": "Gust Slicer",
+      "input": "4BaG",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: 2",
+        "Counter: STN",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[6-8]. Ends in BT. Cancel"
+      ]
+    },
+    {
+      "name": "Gusting Vertical Abaniko",
+      "input": "4BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,26",
+        "Block: -4",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Blue Sky",
       "input": "236B",
-      "type": "special"
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 22,8",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
     },
     {
-      "name": "Wind Roll",
-      "input": "6+B+K",
-      "type": "movement"
+      "name": "Blue Sky",
+      "input": "236(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 45",
+        "Damage: 27,9",
+        "Block: -6",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: Delay."
+      ]
     },
     {
-      "name": "Possession",
-      "input": "214",
-      "type": "stance"
+      "name": "Whirlwind Hambalos",
+      "input": "214B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 62",
+        "Damage: 50",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
     },
     {
-      "name": "Exorcism",
+      "name": "Satik",
+      "input": "FCB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Rising Baraw",
+      "input": "FC3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10",
+        "Block: -16",
+        "Hit: -10",
+        "Counter: -6",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Rising Baraw",
+      "input": "FC3BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,5,10",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: STN",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Rising Baraw",
+      "input": "FC3BB2_8",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,5,10",
+        "Block: -10",
+        "Hit: LNC",
+        "Counter: STN",
+        "Guard Burst: 5%",
+        "Notes: into WNormal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Wind Sault",
+      "input": "FC3BB6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,5,10",
+        "Block: -10",
+        "Hit: LNC",
+        "Counter: STN",
+        "Guard Burst: 5%",
+        "Notes: into WNS"
+      ]
+    },
+    {
+      "name": "~ Wind Fury",
+      "input": "FC3BB4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,5,10",
+        "Block: -24",
+        "Hit: LNC",
+        "Counter: STN",
+        "Guard Burst: 5%",
+        "Notes: into WNF(Guarding from WNF is extra -10, can evade punish with stance)"
+      ]
+    },
+    {
+      "name": "Rising Elbow Blade",
+      "input": "WRB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Swift Leap",
+      "input": "JUMPB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 28",
+        "Block: 2",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[3-?]. Have potential to jump over some mid attacks"
+      ]
+    },
+    {
+      "name": "Baraw Punch Turn",
+      "input": "BTB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 25",
+        "Block: -12",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Turning Satik",
+      "input": "BT2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "High Sipa",
+      "input": "K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%",
+        "Notes: Can Cancel with G"
+      ]
+    },
+    {
+      "name": "Side Sipa",
+      "input": "6K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 20",
+        "Block: -14",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[8-12]"
+      ]
+    },
+    {
+      "name": "Inner Sipa",
+      "input": "3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: horizontal"
+      ]
+    },
+    {
+      "name": "Low Sipa Sweep",
+      "input": "2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Sipa Trip",
+      "input": "1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Roundhouse Sipa",
+      "input": "4K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -2",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Low Sipa Sweep",
+      "input": "FCK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Front Sipa",
+      "input": "WRK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 20",
+        "Block: -4",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Sipa Jump",
+      "input": "JUMPK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 23",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[3-?]"
+      ]
+    },
+    {
+      "name": "Diving Wind Sipa",
+      "input": "BTK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Turning Sipa Sweep",
+      "input": "BT2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Ice Wind",
       "input": "A+B",
-      "type": "unblockable"
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 35",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Ice Wind",
+      "input": "A+BG",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Ends in BT. Cancel"
+      ]
+    },
+    {
+      "name": "Shearing Blades",
+      "input": "6A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 36",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%"
+      ]
+    },
+    {
+      "name": "Shearing Blades",
+      "input": "+6(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 33",
+        "Damage: 36",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: . Delay"
+      ]
+    },
+    {
+      "name": "Shearing Blades",
+      "input": "6A+BG",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Cancel"
+      ]
+    },
+    {
+      "name": "Crosswind",
+      "input": "3A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,16",
+        "Block: -10",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: . Puts opponent in BT on hit"
+      ]
+    },
+    {
+      "name": "Rapid Force",
+      "input": "2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 8",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Rapid Force",
+      "input": "+2(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -2",
+        "Hit: 12",
+        "Counter: 14",
+        "Guard Burst: 9%",
+        "Notes: into WNF.(Guarding from WNF is extra -10, can evade punish with stance)"
+      ]
+    },
+    {
+      "name": "Twin Baraw Lift",
+      "input": "1A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 24",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: . Tech Crouch frame 6-18"
+      ]
+    },
+    {
+      "name": "Twin Espadas",
+      "input": "4A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16,20",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 4%",
+        "Notes: Ends in BT, forces crouch on block"
+      ]
+    },
+    {
+      "name": "Desert Gust",
+      "input": "FCA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 10,20",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 10%"
+      ]
+    },
+    {
+      "name": "Olisi Turn",
+      "input": "BTA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 30",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Olisi Turn",
+      "input": "BT+(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 46",
+        "Damage: 50",
+        "Block: 12",
+        "Hit: KND",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Gale Force Kick",
+      "input": "BT2B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump frame 3"
+      ]
+    },
+    {
+      "name": "Encroaching Storm",
+      "input": "BT8B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 28",
+        "Block: -8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch frame 6-20"
+      ]
+    },
+    {
+      "name": "Sudden Storm",
+      "input": "BTB+KA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 8,7,6,5",
+        "Block: 12",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Sudden Storm",
+      "input": "BT+B+K(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 8,7,6,11",
+        "Block: 14",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Sudden Storm",
+      "input": "BT+(B)+(K)A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 10,9,7,6",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: . Double leap."
+      ]
+    },
+    {
+      "name": "Sudden Storm",
+      "input": "BT++(B)+(K)(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 10,9,7,13",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: . Double leap."
+      ]
+    },
+    {
+      "name": "Tagga Na Kamay",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22,22",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Monsoon",
+      "input": "4A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 5,10,35",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Tower Sipa",
+      "input": "LEFT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22,33",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Piggyback Tulison",
+      "input": "RIGHT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,18,24",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Diving Wind Sipa Throw",
+      "input": "BACK SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 6,40,19",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Sungabb Throw",
+      "input": "BTA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22,33",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: . +6 when broken"
+      ]
+    },
+    {
+      "name": "Monsoon Season",
+      "input": "BT4A+G4_6A",
+      "type": "Throws",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,28,7,7,21",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: first break leaves Talim +6"
+      ]
+    },
+    {
+      "name": "Tagga",
+      "input": "WNCA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 17",
+        "Damage: 20",
+        "Block: -",
+        "Hit: 16",
+        "Counter: 16",
+        "Guard Burst: -",
+        "Notes: Unbreakable, Returns BT"
+      ]
+    },
+    {
+      "name": "Flowing Gale Hook",
+      "input": "(3)_(6)_(9)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "~ Wind Charmer",
+      "input": "(3)_(6)_(9)A2_8",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,16",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 26",
+        "Guard Burst: 3%",
+        "Notes: into WNormal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Wind Sault",
+      "input": "(3)_(6)_(9)A6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,16",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 26",
+        "Guard Burst: 3%",
+        "Notes: into WNS"
+      ]
+    },
+    {
+      "name": "~ Wind Fury",
+      "input": "(3)_(6)_(9)A4",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,16",
+        "Block: -18",
+        "Hit: -8",
+        "Counter: 26",
+        "Guard Burst: 3%",
+        "Notes: into WNF(Guarding from WNF is extra -10, can evade punish with stance)"
+      ]
+    },
+    {
+      "name": "Blade Cyclone",
+      "input": "(2)_(8)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,22",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Tech Crouch[4-?]. Tech Jump[near the end]"
+      ]
+    },
+    {
+      "name": "~ Wind Charmer",
+      "input": "(2)_(8)A2_8",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,22",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Tech Crouch[4-?]. Tech Jump[near the end].  into WNormal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Wind Sault",
+      "input": "(2)_(8)A6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,22",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Tech Crouch[4-?]. Tech Jump[near the end].  into WNS"
+      ]
+    },
+    {
+      "name": "~ Wind Fury",
+      "input": "(2)_(8)A4",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,22",
+        "Block: -34",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Tech Crouch[4-?]. Tech Jump[near the end].  into WNF"
+      ]
+    },
+    {
+      "name": "Double Abaniko",
+      "input": "(1)_(4)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Double Abaniko",
+      "input": "(1)_(4)_(7)AA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20,24",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Double Abaniko",
+      "input": "(1)_(4)_(7)A(A)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20,45",
+        "Block: 8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 3%",
+        "Notes: . . Delay"
+      ]
+    },
+    {
+      "name": "Paayon Thrust",
+      "input": "(3)_(6)_(9)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 26",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: also +2 to +6 depending on range opponent blocked"
+      ]
+    },
+    {
+      "name": "Gust Hook",
+      "input": "(2)_(8)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 7%"
+      ]
+    },
+    {
+      "name": "Gust Hook",
+      "input": "(2)_(8)BB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20,18",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 11%"
+      ]
+    },
+    {
+      "name": "Gust Hook",
+      "input": "(2)_(8)BB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20,12,14",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%",
+        "Notes: Perfect input"
+      ]
+    },
+    {
+      "name": "Isa Hampas",
+      "input": "(1)_(4)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 28",
+        "Block: -14",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 9%",
+        "Notes: . Tech Jump. Forces crouch, ends in BT"
+      ]
+    },
+    {
+      "name": "~ Wind Charmer",
+      "input": "(1)_(4)_(7)B2_8",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 28",
+        "Block: -4",
+        "Hit: 36",
+        "Counter: 36",
+        "Guard Burst: 9%",
+        "Notes: .  into WNormal Hit Combo. Tech Jump. Forces crouch"
+      ]
+    },
+    {
+      "name": "~ Wind Sault",
+      "input": "(1)_(4)_(7)B6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 28",
+        "Block: -4",
+        "Hit: 36",
+        "Counter: 36",
+        "Guard Burst: 9%",
+        "Notes: .  into WNS. Tech Jump. Forces crouch"
+      ]
+    },
+    {
+      "name": "~ Wind Fury",
+      "input": "(1)_(4)_(7)B4",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 28",
+        "Block: -18",
+        "Hit: 36",
+        "Counter: 36",
+        "Guard Burst: 9%",
+        "Notes: .  into WNF. Tech Jump. Forces crouch"
+      ]
+    },
+    {
+      "name": "Parabolic Sipa",
+      "input": "(3)_(6)_(9)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 20",
+        "Block: 2",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: forces crouch on block, ends in BT"
+      ]
+    },
+    {
+      "name": "Sipa Windmill",
+      "input": "(2)_(8)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[4-6]. Tech Jump[5-18]"
+      ]
+    },
+    {
+      "name": "Sipa Rising",
+      "input": "(1)_(4)_(7)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,22",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump easily switch sides"
+      ]
+    },
+    {
+      "name": "Rising Gale",
+      "input": "(3)_(6)_(9)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 16,20",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[14-18]"
+      ]
+    },
+    {
+      "name": "~ Wind Charmer",
+      "input": "(3)_(6)_(9)A+B2_8",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 16,20",
+        "Block: 4",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[14-18].  into WNormal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Wind Sault",
+      "input": "(3)_(6)_(9)A+B6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 16,20",
+        "Block: 4",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[14-18].  into WNS"
+      ]
+    },
+    {
+      "name": "~ Wind Fury",
+      "input": "(3)_(6)_(9)A+B4",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 16,22",
+        "Block: -10",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[14-18].  into WNF(Guarding from WNF is extra -10, can evade punish with stance)"
+      ]
+    },
+    {
+      "name": "Tumbling Razors",
+      "input": "(1)_(4)_(7)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 10,10,10,12",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: Tech Crouch frame 10-24"
+      ]
+    },
+    {
+      "name": "Sipa Slide",
+      "input": "RUNK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Was Sipa Slide",
+      "input": "RUNK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 36",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Triggers vs Standing Guard when Talim is in guts"
+      ]
+    },
+    {
+      "name": "Turning Kali Strikes",
+      "input": "WNCA",
+      "type": "Wind Charmer",
+      "properties": [
+        "Impact: 12",
+        "Damage: 6,1",
+        "Block: -16",
+        "Hit: -8",
+        "Counter: -8",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "~ Wind Charmer",
+      "input": "WNCA2_8",
+      "type": "Wind Charmer",
+      "properties": [
+        "Impact: 12",
+        "Damage: 6,1",
+        "Block: -4",
+        "Hit: 24",
+        "Counter: 24",
+        "Guard Burst: 3%",
+        "Notes: into WNormal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Wind Sault",
+      "input": "WNCA6",
+      "type": "Wind Charmer",
+      "properties": [
+        "Impact: 12",
+        "Damage: 6,1",
+        "Block: -4",
+        "Hit: 24",
+        "Counter: 24",
+        "Guard Burst: 3%",
+        "Notes: into WNS"
+      ]
+    },
+    {
+      "name": "~ Wind Fury",
+      "input": "WNCA4",
+      "type": "Wind Charmer",
+      "properties": [
+        "Impact: 12",
+        "Damage: 6,1",
+        "Block: -18",
+        "Hit: 24",
+        "Counter: 24",
+        "Guard Burst: 3%",
+        "Notes: into WNF(Guarding from WNF is extra -10, can evade punish with stance)"
+      ]
+    },
+    {
+      "name": "~ Wind Fury",
+      "input": "WNCAB",
+      "type": "Wind Charmer",
+      "properties": [
+        "Impact: 12",
+        "Damage: 6,10,26",
+        "Block: -4",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 8%"
+      ]
+    },
+    {
+      "name": "Kali Rush",
+      "input": "WNCAK",
+      "type": "Wind Charmer",
+      "properties": [
+        "Impact: 12",
+        "Damage: 6,10,21",
+        "Block: -16",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Kali Rush",
+      "input": "WNCAKA",
+      "type": "Wind Charmer",
+      "properties": [
+        "Impact: 12",
+        "Damage: 6,10,21,16",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 6%"
+      ]
+    },
+    {
+      "name": "Baraw Strikes",
+      "input": "WNCB",
+      "type": "Wind Charmer",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16",
+        "Block: -12",
+        "Hit: -2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Wind Spirit Hiwa",
+      "input": "WNCBA",
+      "type": "Wind Charmer",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16,16",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 16",
+        "Guard Burst: 4%",
+        "Notes: Ends in BT"
+      ]
+    },
+    {
+      "name": "Baraw Strikes",
+      "input": "WNCBB",
+      "type": "Wind Charmer",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16,21",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 9%",
+        "Notes: On Launcher can wallsplat or combo with CE"
+      ]
+    },
+    {
+      "name": "Baraw Strikes",
+      "input": "WNCB(B)",
+      "type": "Wind Charmer",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16,36",
+        "Block: 0",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: . Have perfect input version. Can be delayed"
+      ]
+    },
+    {
+      "name": "Twirling Wind",
+      "input": "WNCK",
+      "type": "Wind Charmer",
+      "properties": [
+        "Impact: 14",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Triggers vs whiffed Mid attacks"
+      ]
+    },
+    {
+      "name": "Tuhod Strike",
+      "input": "WNCA+B",
+      "type": "Wind Charmer",
+      "properties": [
+        "Impact: 32",
+        "Damage: 26",
+        "Block: 0",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 9%",
+        "Notes: Triggers during opponents whiffed GI recovery"
+      ]
+    },
+    {
+      "name": "Double Inwardi",
+      "input": "WNSA",
+      "type": "Wind Sault",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -20",
+        "Hit: 4",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: Tracks both sides"
+      ]
+    },
+    {
+      "name": "~ Wind Charmer",
+      "input": "WNSA2_8",
+      "type": "Wind Sault",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -18",
+        "Hit: 26",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: into WNormal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Wind Sault",
+      "input": "WNSA6",
+      "type": "Wind Sault",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -18",
+        "Hit: 26",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: into WNS"
+      ]
+    },
+    {
+      "name": "~ Wind Fury",
+      "input": "WNSA4",
+      "type": "Wind Sault",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -32",
+        "Hit: 26",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: into WNF"
+      ]
+    },
+    {
+      "name": "Double Bartikal",
+      "input": "WNSB",
+      "type": "Wind Sault",
+      "properties": [
+        "Impact: 18",
+        "Damage: 32",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Double Bartikal",
+      "input": "WNS(B)",
+      "type": "Wind Sault",
+      "properties": [
+        "Impact: 18",
+        "Damage: 32",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: attacks come out at -6, i16 will punish her for trying to guard"
+      ]
+    },
+    {
+      "name": "Layout",
+      "input": "WNSK",
+      "type": "Wind Sault",
+      "properties": [
+        "Impact: 13",
+        "Damage: 20",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: returns to WNS on hit"
+      ]
+    },
+    {
+      "name": "Reversing Wind",
+      "input": "WNS(K)",
+      "type": "Wind Sault",
+      "properties": [
+        "Impact: 8",
+        "Damage: 28",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: Launches on the ground and air hits"
+      ]
+    },
+    {
+      "name": "Rolling Storm",
+      "input": "WNSA+B",
+      "type": "Wind Sault",
+      "properties": [
+        "Impact: 8",
+        "Damage: 6,6,16",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 18%"
+      ]
+    },
+    {
+      "name": "Swooping Blade",
+      "input": "WNFA",
+      "type": "Wind Fury",
+      "properties": [
+        "Impact: 32",
+        "Damage: 20",
+        "Block: -2",
+        "Hit: 14",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: Cancel to WNF with G"
+      ]
+    },
+    {
+      "name": "Panay Hurricane",
+      "input": "WNFB",
+      "type": "Wind Fury",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -18",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Panay Hurricane",
+      "input": "WNFBB",
+      "type": "Wind Fury",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20,62",
+        "Block: -22",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: restores guard stamina"
+      ]
+    },
+    {
+      "name": "Leaping Double Sipa",
+      "input": "WNFK",
+      "type": "Wind Fury",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14,16",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Raging Wind",
+      "input": "WNFA+B",
+      "type": "Wind Fury",
+      "properties": [
+        "Impact: 60",
+        "Damage: 60",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Cancel with G"
+      ]
+    },
+    {
+      "name": "Wind Fury",
+      "input": "B+K",
+      "type": "Wind Fury",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: evades high, middle horizontal atttacks(except kicks)/Cancel with G(returns crouch)/Restores guard/triggers wind bearer"
+      ]
+    },
+    {
+      "name": "Mistral",
+      "input": "WNFB+K",
+      "type": "Wind Fury",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,12",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 10%"
+      ]
+    },
+    {
+      "name": "Mistral",
+      "input": "WNFB+KA",
+      "type": "Wind Fury",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,12,22",
+        "Block: -12",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 11%",
+        "Notes: Cancel to WNF with G"
+      ]
+    },
+    {
+      "name": "Flowing Gale Hook: Mabilis",
+      "input": "WNB(3)_(6)_(9)A",
+      "type": "Wind Bearer",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,16",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 3%",
+        "Notes: extra forward movement"
+      ]
+    },
+    {
+      "name": "~ Wind Charmer",
+      "input": "WNB(3)_(6)_(9)A2_8",
+      "type": "Wind Bearer",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10.16",
+        "Block: -2",
+        "Hit: 26",
+        "Counter: 26",
+        "Guard Burst: 3%",
+        "Notes: extra forward movement"
+      ]
+    },
+    {
+      "name": "~ Wind Sault",
+      "input": "WNB(3)_(6)_(9)A6",
+      "type": "Wind Bearer",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,16",
+        "Block: -2",
+        "Hit: 26",
+        "Counter: 26",
+        "Guard Burst: 3%",
+        "Notes: extra forward movement"
+      ]
+    },
+    {
+      "name": "~ Wind Fury",
+      "input": "WNB(3)_(6)_(9)A4",
+      "type": "Wind Bearer",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,16",
+        "Block: -16",
+        "Hit: 26",
+        "Counter: 26",
+        "Guard Burst: 3%",
+        "Notes: extra forward movement"
+      ]
+    },
+    {
+      "name": "Blade Cyclone: Mabilis",
+      "input": "WNB(2)_(8)A",
+      "type": "Wind Bearer",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,26",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Tech Crouch[4-?]. Tech Jump[near the end]."
+      ]
+    },
+    {
+      "name": "~ Wind Charmer",
+      "input": "WNB(2)_(8)A2_8",
+      "type": "Wind Bearer",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16.26",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Tech Crouch[4-?]. Tech Jump[near the end]."
+      ]
+    },
+    {
+      "name": "~ Wind Sault",
+      "input": "WNB(2)_(8)A6",
+      "type": "Wind Bearer",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16.26",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Tech Crouch[4-?]. Tech Jump[near the end]."
+      ]
+    },
+    {
+      "name": "~ Wind Fury",
+      "input": "WNB(2)_(8)A4",
+      "type": "Wind Bearer",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16.26",
+        "Block: -32",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Tech Crouch[4-?]. Tech Jump[near the end]."
+      ]
+    },
+    {
+      "name": "Paayon Thrust: Mabilis",
+      "input": "WNB(3)_(6)_(9)B",
+      "type": "Wind Bearer",
+      "properties": [
+        "Impact: 22",
+        "Damage: 30",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: turns attack from high to special mid, making tech crouch attempts impossible"
+      ]
+    },
+    {
+      "name": "Zephyr",
+      "input": "B+G",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 48",
+        "Damage: 30",
+        "Block: -12",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 16%"
+      ]
+    },
+    {
+      "name": "Zephyr",
+      "input": "+(B)+(G)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 68",
+        "Damage: 40",
+        "Block: 8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 20%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Cloud Seeker",
+      "input": "REA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 21",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: -",
+        "Guard Burst: 33%"
+      ]
+    },
+    {
+      "name": "Cloud Seeker",
+      "input": "REA2_8",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 21",
+        "Block: 26",
+        "Hit: 34",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: into WNormal Hit Combo"
+      ]
+    },
+    {
+      "name": "Cloud Seeker",
+      "input": "REA6",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 21",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: into WNS"
+      ]
+    },
+    {
+      "name": "Cloud Seeker",
+      "input": "REA4",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 21",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: into WNF"
+      ]
+    },
+    {
+      "name": "Swirling Current",
+      "input": "REB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 21",
+        "Block: 26",
+        "Hit: 16",
+        "Counter: -",
+        "Guard Burst: 50%"
+      ]
+    },
+    {
+      "name": "Swirling Current",
+      "input": "REBB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 21,9",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: -",
+        "Guard Burst: 50%"
+      ]
+    },
+    {
+      "name": "Eddy Sipa",
+      "input": "REK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 21",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: 33%"
+      ]
+    },
+    {
+      "name": "Dancing Tempest",
+      "input": "A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 70",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 23%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Dancing Tempest",
+      "input": "BTA+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 70",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 23%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Dancing Tempest",
+      "input": "A+B+K2_8",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 0",
+        "Block: 4",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 14%",
+        "Notes: into WNormal Hit Combo. On block or whiff only."
+      ]
+    },
+    {
+      "name": "Dancing Tempest",
+      "input": "A+B+K6",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 0",
+        "Block: 4",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 14%",
+        "Notes: into WNS. On block or whiff only."
+      ]
+    },
+    {
+      "name": "Dancing Tempest",
+      "input": "A+B+K4",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 0",
+        "Block: -10",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 14%",
+        "Notes: into WNF. On block or whiff only."
+      ]
+    },
+    {
+      "name": "Typhoon Mabilis",
+      "input": "236A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,6,6,15",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 8%",
+        "Notes: Hold 4 for short range"
+      ]
+    },
+    {
+      "name": "Typhoon Mabilis",
+      "input": "++236(A)+(B)+(K)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 10,6,6,15",
+        "Block: 4",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 8%",
+        "Notes: into WNF, Hold 4 for short range"
+      ]
+    },
+    {
+      "name": "Soul Charge",
+      "input": "4A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 6",
+        "Damage: 0",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 0%",
+        "Notes: invincible since i4. Pushback happens at i6"
+      ]
+    },
+    {
+      "name": "Rapid Gale Barrage",
+      "input": "SCAABB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,11,15,33",
+        "Block: 8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%"
+      ]
+    },
+    {
+      "name": "~ Wind Fury",
+      "input": "SCAAB(B)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,11,15,33",
+        "Block: 12",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: .  into WNF"
+      ]
+    },
+    {
+      "name": "Kampilan Witik Sweep",
+      "input": "SCBKA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 11,22,8,8,19",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Howling Winds",
+      "input": "SC2BAB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 24,11,5,9",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 10%"
+      ]
+    },
+    {
+      "name": "Tornado Assault Kamay",
+      "input": "SC(3)_(6)_(9)AA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 11,17,4,4",
+        "Block: -12",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 6%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Tornado Assault Kamay",
+      "input": "SC(3)_(6)_(9)AAA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 11,17,4,4,4,4",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Tornado Assault Kamay",
+      "input": "SC(3)_(6)_(9)AAAB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 11,17,4,4,4,4,22",
+        "Block: 2",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: . Perfect input option"
+      ]
+    },
+    {
+      "name": "Changing Winds",
+      "input": "SC(3)_(6)_(9)B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 28",
+        "Block: 0",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Changing Winds",
+      "input": "SC(3)_(6)_(9)BB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 28,22",
+        "Block: 4",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 10%",
+        "Notes: .  restores guard stamina"
+      ]
+    },
+    {
+      "name": "Tempest Assault",
+      "input": "SC WNCABB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 6,11,28,9,9,10,3",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 27%"
+      ]
+    },
+    {
+      "name": "Arctic Winds",
+      "input": "SC WNCAKAA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 6,10,23,18,12,22",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "~ Wind Charmer",
+      "input": "SC WNCAKAA2_8",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 6,10,23,18,12,22",
+        "Block: -22",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: into WNormal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Wind Sault",
+      "input": "SC WNCAKAA6",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 6,10,23,18,12,22",
+        "Block: -22",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: into WNS"
+      ]
+    },
+    {
+      "name": "~ Wind Fury",
+      "input": "SC WNCAKAA4",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 6,10,23,18,12,22",
+        "Block: -36",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: into WNF"
+      ]
+    },
+    {
+      "name": "Light Breeze",
+      "input": "SC WNSB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 39",
+        "Block: 4",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Light Breeze",
+      "input": "SC WNS(B)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 39",
+        "Block: 12",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: .  into WNF"
+      ]
     }
   ]
 }

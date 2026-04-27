@@ -1,81 +1,582 @@
 {
+  "name": "Ezio Auditore",
   "character": "Ezio Auditore",
+  "game": "SoulCalibur V",
   "movesList": [
     {
-      "name": "Assassin's Pride",
-      "input": "A+B+K",
-      "type": "Critical Edge"
-    },
-    {
-      "name": "Hidden Blade",
-      "input": "236B",
-      "type": "Move"
-    },
-    {
-      "name": "Crossbow Shot",
-      "input": "236A",
-      "type": "Move"
+      "name": "Hidden Left",
+      "input": "AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH"
+      ]
     },
     {
       "name": "Stiletto Rush",
-      "input": "6A, B, B",
-      "type": "Move"
+      "input": "6ABB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HHM"
+      ]
     },
     {
       "name": "Brutus' Smite",
       "input": "3A",
-      "type": "Move"
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "name": "Smoke Bomb",
-      "input": "214",
-      "type": "Move"
+      "name": "Shin Slash",
+      "input": "2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Crossbow Sweep",
+      "input": "1A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Crossbow Combination",
+      "input": "1A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: LL",
+        "Other: Counter hit"
+      ]
+    },
+    {
+      "name": "Crossbow Beat ~S.Cr.~L.Cr.",
+      "input": "4AB2_8B",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HHL"
+      ]
+    },
+    {
+      "name": "Shin Slash",
+      "input": "FC A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Stalking Stiletto",
+      "input": "WR A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Vaulting Hidden Blade",
+      "input": "WJ A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Rear Hidden Left",
+      "input": "BT A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Rear Shin Slash",
+      "input": "BT 2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Palm Slash",
+      "input": "BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
     },
     {
       "name": "Darius' Stab",
       "input": "6B",
-      "type": "Move"
+      "type": "Verticals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Forehead Thrust",
+      "input": "3B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Instant Death",
+      "input": "3B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: AT, Counter hit"
+      ]
+    },
+    {
+      "name": "Shin Stab",
+      "input": "2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sequential Stab",
+      "input": "1BBB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MHH"
+      ]
+    },
+    {
+      "name": "Step-Out Thrust",
+      "input": "4B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Biting Eagle",
+      "input": "4B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: AT, Counter hit"
+      ]
+    },
+    {
+      "name": "Arma Segreta di Leo",
+      "input": "4B6",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: AT, Counter hit"
+      ]
+    },
+    {
+      "name": "Shin Stab",
+      "input": "FC B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Dual Blades",
+      "input": "WR BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Ledge-Drop Slash",
+      "input": "WJ B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Rear Hidden Uppercut",
+      "input": "BT B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Rear Shin Stab",
+      "input": "BT 2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Reverse Head Impact Kick",
+      "input": "K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Head Impact Kick",
+      "input": "6K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Insurance Stomp",
+      "input": "6k2",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Torture Male",
+      "input": "3K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Crawl Low Kick",
+      "input": "2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Heel Lightning",
+      "input": "1K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Brawl Kick",
+      "input": "4K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Crawl Low Kick",
+      "input": "FC K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Upper Knee",
+      "input": "WR K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Jumping Front Kick",
+      "input": "WJ K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Rear Head Impact",
+      "input": "BT K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Rear Crawl Low",
+      "input": "BT 2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Air Tackle ~ Low Crossbow",
+      "input": "A+B2_8B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: ML"
+      ]
+    },
+    {
+      "name": "Mercy Strike",
+      "input": "2A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Requiescat in Pace",
+      "input": "B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: H",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Standard Crossbow ~ Low Cross.",
+      "input": "6B+K2_8B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: HL"
+      ]
+    },
+    {
+      "name": "Low Crossbow",
+      "input": "2B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Evade Crossbow",
+      "input": "4B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Advertent Eagle",
+      "input": "BT B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Flickering Knife ~S.Cr.~L.Cr.",
+      "input": "66AB2_8B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MHL"
+      ]
+    },
+    {
+      "name": "Flickering Knife ~Low Crossbow",
+      "input": "66A2_8B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: ML"
+      ]
+    },
+    {
+      "name": "Eagle's Flutter",
+      "input": "22_88AA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Aerial Assault",
+      "input": "11_77A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Circling Eagle",
+      "input": "44A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Eagle Fury",
+      "input": "66BB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Twist Stab",
+      "input": "22_88B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Body Wrencher",
+      "input": "22_88B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: AT, Counter hit"
+      ]
     },
     {
       "name": "Air Assassination",
-      "input": "1B",
-      "type": "Move"
+      "input": "11_77B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: BA"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Tiphone di Bianca",
+      "input": "44B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Round High Kick",
+      "input": "66K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Turning Back Kick",
+      "input": "22_88K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Calf Crusher",
+      "input": "11_77K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Step-In Side Kick",
+      "input": "44K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Flying Eagle",
+      "input": "66A+B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Low Flyby",
+      "input": "Run K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Grab: SuppressingAssassination",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Grab: Zero Range Pistol",
+      "input": "B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Grab: Finish on Ground",
+      "input": "Left TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Grab: Hook and Go",
+      "input": "Right TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Grab: Backstab Assassination",
+      "input": "Back TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Strike and Loot",
+      "input": "BB BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MMMM"
+      ]
+    },
+    {
+      "name": "Kill Streak: Tyrant A.",
+      "input": "6B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: HLL",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Aquila Furioso",
+      "input": "66BB BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MMM",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Full Synchronization",
+      "input": "CE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M"
+      ]
     }
   ]
 }

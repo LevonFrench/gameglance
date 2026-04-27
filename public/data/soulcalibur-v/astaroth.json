@@ -4,34 +4,821 @@
   "game": "SoulCalibur V",
   "movesList": [
     {
-      "name": "Executioner",
-      "input": "5A, 5A",
-      "type": "normal"
-    },
-    {
       "name": "Annihilation",
-      "input": "5B, 5B",
-      "type": "normal"
+      "input": "AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH"
+      ]
     },
     {
-      "name": "Disaster",
-      "input": "236B",
-      "type": "special"
+      "name": "Destruction",
+      "input": "AB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HM"
+      ]
+    },
+    {
+      "name": "Decimation",
+      "input": "6AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH",
+        "Other: AT"
+      ]
+    },
+    {
+      "name": "Ax Blow",
+      "input": "3A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Hades Break",
+      "input": "2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Double Discus",
+      "input": "1AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Discus Breaker",
+      "input": "1AB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: LM",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Hades Control",
+      "input": "4A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H",
+        "Other: AT on counter hit"
+      ]
     },
     {
       "name": "Poseidon Tide",
-      "input": "66A",
-      "type": "normal"
+      "input": "214A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M",
+        "Other: AT"
+      ]
     },
     {
-      "name": "Cursed Strike",
+      "name": "Poseidon Tide Rush",
+      "input": "214AAAAAA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M x6"
+      ]
+    },
+    {
+      "name": "Hades Break",
+      "input": "FC A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Reverse Spiral Ax",
+      "input": "WR A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Great Annihilation",
+      "input": "WJ A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Reverse Ax Split",
+      "input": "BT A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Lower Hades Split",
+      "input": "BT 2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Great Divide",
+      "input": "BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Ax Side Divide",
+      "input": "Bb6",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Ax Side Cannon",
+      "input": "6B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Ax Volcano",
+      "input": "3B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Ax Volcano (Unblockable)",
+      "input": "3(B)",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Hades",
+      "input": "2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Ax Offering",
+      "input": "1BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM",
+        "Other: AT on counter hit"
+      ]
+    },
+    {
+      "name": "Bear Fang",
+      "input": "4B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Bear Fang (BA)",
+      "input": "4(B)",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Dark Split",
+      "input": "FC B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Hades Rising",
+      "input": "WR B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Greater Divide",
+      "input": "WJ B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Reverse Dark Split",
+      "input": "BT B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Lower Dark Split",
+      "input": "BT 2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Moloch's Vise",
+      "input": "K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Valarion",
+      "input": "(K)",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H",
+        "Other: AT"
+      ]
+    },
+    {
+      "name": "Hades Knee",
+      "input": "6K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Dark Tamer",
+      "input": "3KA",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MH",
+        "Other: K can be held"
+      ]
+    },
+    {
+      "name": "Dark Coercion",
+      "input": "3K(A)",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MM",
+        "Other: K can be held"
+      ]
+    },
+    {
+      "name": "Bull Low Kick",
+      "input": "2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Reverse Tamer",
+      "input": "1KA",
+      "type": "Kicks",
+      "properties": [
+        "Hit: LH"
+      ]
+    },
+    {
+      "name": "Command Kicks",
+      "input": "4KK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MMMM"
+      ]
+    },
+    {
+      "name": "Castigate",
+      "input": "4KA+G",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MML",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Bluster",
+      "input": "4KB+G",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MML",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Bull Kick",
+      "input": "FC K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Bull Rage",
+      "input": "FC 3K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Rising Cyclone",
+      "input": "WR KA",
+      "type": "Kicks",
+      "properties": [
+        "Hit: ML"
+      ]
+    },
+    {
+      "name": "Great Kick",
+      "input": "WJ K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Reverse Bull Kick",
+      "input": "BT K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Lower Sweep",
+      "input": "BT 2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Titan Ax",
       "input": "A+B",
-      "type": "unblockable"
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "name": "Mouth of Hell",
+      "name": "Minotaur Crush",
+      "input": "3A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Breath of Hades",
+      "input": "4A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Breath of Hades (Unblockable)",
+      "input": "4(A+B)",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: TH, UA"
+      ]
+    },
+    {
+      "name": "Flip Titan Ax",
+      "input": "8A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Guard Crusher",
+      "input": "B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: H",
+        "Other: AT"
+      ]
+    },
+    {
+      "name": "Body Splash",
+      "input": "6B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: Can be held"
+      ]
+    },
+    {
+      "name": "Ax Grave",
+      "input": "2B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Ax Lower Cannon",
+      "input": "4B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: LLL",
+        "Other: B after for AT"
+      ]
+    },
+    {
+      "name": "Flying Divide",
+      "input": "7B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Flying Divide (BA)",
+      "input": "7(B+K)",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Demented Moon",
+      "input": "236B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Side Divide",
+      "input": "BT B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Tornado Spike",
+      "input": "66AB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Tornado Spike (Unblockable)",
+      "input": "66A(B)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Poseidon Crest",
+      "input": "22_88AA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Double Discus",
+      "input": "11_77AA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: LL"
+      ]
+    },
+    {
+      "name": "Discus Breaker",
+      "input": "11_77AB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: LM",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Hades Divide",
+      "input": "44A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Hades Divide (BA)",
+      "input": "44(A)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Ax Crash",
+      "input": "66B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Ax Volcano",
+      "input": "33_99B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Ax Volcano (Unblockable)",
+      "input": "33_99(B)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Hades Cannon",
+      "input": "22_88B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Azazel Tackle",
+      "input": "11_77BK",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Canyon Creation",
+      "input": "44B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Canyon Creation (Unblockable)",
+      "input": "44(B)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Bull Rush",
+      "input": "66K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: K can be held"
+      ]
+    },
+    {
+      "name": "Stamp of Hades",
+      "input": "22_88K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Lower Command Kick",
+      "input": "44K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "Run K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Maelstrom Divide",
       "input": "A+G",
-      "type": "throw"
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Hades Destroyer",
+      "input": "B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Beat Down",
+      "input": "Left TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "On Silent Wings",
+      "input": "Right TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Death Crush",
+      "input": "Back TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Cursed Wrath",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Other: TH vs midair"
+      ]
+    },
+    {
+      "name": "Bludgeoning Crush",
+      "input": "2A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: M",
+        "Other: TH vs crouching"
+      ]
+    },
+    {
+      "name": "Drop of Lava",
+      "input": "2B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: M",
+        "Other: TH vs crouching"
+      ]
+    },
+    {
+      "name": "Brutal Grasp",
+      "input": "1A+G/1B+G",
+      "type": "Throws",
+      "properties": [
+        "Other: TH vs downed opponent head"
+      ]
+    },
+    {
+      "name": "Titan Bomb",
+      "input": "63214A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Flight of the Wicked",
+      "input": "63214B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Obsidian Drop",
+      "input": "28B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH vs midair"
+      ]
+    },
+    {
+      "name": "Bludgeoning Crush",
+      "input": "3A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: M",
+        "Other: TH vs crouching"
+      ]
+    },
+    {
+      "name": "Drop of Lava",
+      "input": "3B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: M",
+        "Other: TH vs crouching"
+      ]
+    },
+    {
+      "name": "Apocalypse Cannon",
+      "input": "22_88B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Apocalypse Rush",
+      "input": "66K BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Stamp of Apocalypse",
+      "input": "22_88K BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: SM/L",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Apocalypse Pound",
+      "input": "2A+G BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M",
+        "Other: TH vs crouching"
+      ]
+    },
+    {
+      "name": "Apocalypse Drop",
+      "input": "2B+G BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M",
+        "Other: TH vs crouching"
+      ]
+    },
+    {
+      "name": "Apocalypse Destroyer",
+      "input": "63214A+G BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Cestemus Doctrine",
+      "input": "CE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
     }
   ]
 }

@@ -1,56 +1,2022 @@
 {
+  "name": "Hilde",
   "character": "Hilde",
+  "game": "SoulCalibur VI",
   "movesList": [
     {
-      "name": "Eagle Rush",
-      "input": "[A]",
-      "type": "Charge"
+      "name": "Fire's Bane",
+      "input": "A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%",
+        "Notes: G cancel"
+      ]
     },
     {
-      "name": "Crimson Spear",
-      "input": "[B]",
-      "type": "Charge"
+      "name": "Fire's Bane",
+      "input": "AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12,12",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
     },
     {
-      "name": "Divine Punishment",
+      "name": "Fire's Bane",
+      "input": "AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12,12,24",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Does not combo off CH. Tech Crouch[15-20]"
+      ]
+    },
+    {
+      "name": "Fire Flash",
+      "input": "a6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,16",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Dual Flame",
+      "input": "6A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 12",
+        "Block: -10",
+        "Hit: -4",
+        "Counter: 2",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[8-13]"
+      ]
+    },
+    {
+      "name": "Dual Flame",
+      "input": "6AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 12,18",
+        "Block: -2",
+        "Hit: 4",
+        "Counter: 16",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Royal Blade Feral Wolf",
+      "input": "SWR6AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 12,18,63",
+        "Block: 10",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 13%",
+        "Notes: . Tech Jump[20-67]"
+      ]
+    },
+    {
+      "name": "Royal Blade Biting Wolf",
+      "input": "SPR6AAB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 12,18,50",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%"
+      ]
+    },
+    {
+      "name": "Crawling Flame",
+      "input": "6AK",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 12,15",
+        "Block: 0",
+        "Hit: 0",
+        "Counter: KND",
+        "Guard Burst: 8%",
+        "Notes: Tech Crouch[8-13]. Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Crawling Flame",
+      "input": "6AKA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 12,15,25",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[26-57]"
+      ]
+    },
+    {
+      "name": "Climing Flame",
+      "input": "6AKB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 12,15,35",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 12%",
+        "Notes: Tech Crouch[26-37]"
+      ]
+    },
+    {
+      "name": "Hilt Strike",
+      "input": "3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[8-RC]"
+      ]
+    },
+    {
+      "name": "Fire Shadow",
+      "input": "2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[8-RC]"
+      ]
+    },
+    {
+      "name": "Blazing Shadow",
+      "input": "1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[24-RC]"
+      ]
+    },
+    {
+      "name": "Volcanic Blade",
+      "input": "4A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Volcanic Blade",
+      "input": "4AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14,16",
+        "Block: -3",
+        "Hit: 3",
+        "Counter: 3",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Raging Volcano",
+      "input": "4AK",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14,22",
+        "Block: -12",
+        "Hit: 6",
+        "Counter: LNC",
+        "Guard Burst: 5%",
+        "Notes: Tech Crouch[7-18]"
+      ]
+    },
+    {
+      "name": "Thundering Volcano",
+      "input": "FCA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[0-9]. Tech Crouch[13-RC]"
+      ]
+    },
+    {
+      "name": "Rising Fire",
+      "input": "WRA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: 0",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[0-7]"
+      ]
+    },
+    {
+      "name": "Leaping Slash",
+      "input": "9A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 28",
+        "Block: -2",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[9-33]. Jumps low since i4"
+      ]
+    },
+    {
+      "name": "Back Slash",
+      "input": "BTA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -18",
+        "Hit: -8",
+        "Counter: -8",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Back Low Slash",
+      "input": "BT2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -20",
+        "Hit: -10",
+        "Counter: -10",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[11-RC]"
+      ]
+    },
+    {
+      "name": "Solar Arc",
+      "input": "cA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: NH - Opponent sideturned. Tech Crouch[4-15]. Grants SWR on hit."
+      ]
+    },
+    {
+      "name": "Mystic Star",
+      "input": "cA6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 6",
+        "Counter: 16",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[4-20]. Grants SWR on hit."
+      ]
+    },
+    {
+      "name": "Royal Blade North Star",
+      "input": "SWR cA6A+B",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20,37",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: On blok or air hit, recovers BT"
+      ]
+    },
+    {
+      "name": "Earthly Growl",
+      "input": "cA4",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 40",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 7%",
+        "Notes: Grants SWR on hit."
+      ]
+    },
+    {
+      "name": "Earthly Growl",
+      "input": "c(A)4",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 110",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Charge for 30+ seconds. SWR on hit."
+      ]
+    },
+    {
+      "name": "Dragon Breath",
+      "input": "WR cA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%",
+        "Notes: punishing -18 (or more) on block attack. Grants SWR on hit."
+      ]
+    },
+    {
+      "name": "Mist Horn",
+      "input": "B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%",
+        "Notes: G cancel"
+      ]
+    },
+    {
+      "name": "Mist Horn",
+      "input": "BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14,20",
+        "Block: -10",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Lightning Arc",
+      "input": "6B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16",
+        "Block: -12",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Lightning Arc",
+      "input": "6BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16,12",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Lightning Arc",
+      "input": "6BBA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16,12,20",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 7%",
+        "Notes: Grants SWR on hit. Counter Hit Combo. Tech Crouch[4-15]"
+      ]
+    },
+    {
+      "name": "Lightning Horn",
+      "input": "6BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16,12,30",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%",
+        "Notes: Tech Crouch[26-47]. Counter Hit Combo. Grants SPR on hit."
+      ]
+    },
+    {
+      "name": "Hilt Crush",
+      "input": "b4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 17",
+        "Damage: 15",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 12",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Roaring Horn",
+      "input": "b6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18",
+        "Block: -10",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Roaring Horn",
+      "input": "b6B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18,20",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 7%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Black Crystal",
+      "input": "3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Glorious Hammer",
+      "input": "2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[17-RC]"
+      ]
+    },
+    {
+      "name": "White Stone",
+      "input": "1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20",
+        "Block: -16",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Elk Rush",
+      "input": "4B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[30-46]"
+      ]
+    },
+    {
+      "name": "Crown Split",
+      "input": "FCB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Wind Horn",
+      "input": "FC3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 26",
+        "Block: -4",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[0-52]"
+      ]
+    },
+    {
+      "name": "White Torch",
+      "input": "WRB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[0-12]"
+      ]
+    },
+    {
+      "name": "White Torch",
+      "input": "WRBA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,18",
+        "Block: -2",
+        "Hit: 2",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Tech Crouch[18-23]. Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "White Impale",
+      "input": "WRBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,13",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 15%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Leaping Strike",
+      "input": "9B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 26",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[7-38]. Tech Crouch[37-58]"
+      ]
+    },
+    {
+      "name": "Back Horn",
+      "input": "BTB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 20",
+        "Block: -15",
+        "Hit: -5",
+        "Counter: -5",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Back Low Horn",
+      "input": "BT2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -17",
+        "Hit: -7",
+        "Counter: -7",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[19-RC]"
+      ]
+    },
+    {
+      "name": "Empyrean Reproach",
+      "input": "cB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 25",
+        "Block: -4",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 9%",
+        "Notes: Grants SPR on hit"
+      ]
+    },
+    {
+      "name": "Moonlit Dance",
+      "input": "cB6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 15,18",
+        "Block: -16",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Grants SPR on hit"
+      ]
+    },
+    {
+      "name": "Royal Spear Full Moon",
+      "input": "SPR cB6B+K",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 15,31",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%"
+      ]
+    },
+    {
+      "name": "Fierce Chimera",
+      "input": "cB4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 45",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: .  on  or . Grants SPR on hit"
+      ]
+    },
+    {
+      "name": "Fierce Chimera",
+      "input": "c(B)4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 140",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Charge for 30+ seconds. .  on  or . Grants SPR on hit"
+      ]
+    },
+    {
+      "name": "Siren's Call",
+      "input": "WR cB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 28",
+        "Block: -16",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[0-15]. Grants SPR on hit"
+      ]
+    },
+    {
+      "name": "Iron Kick",
+      "input": "K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 14",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%",
+        "Notes: G cancel"
+      ]
+    },
+    {
+      "name": "Iron Heel",
+      "input": "6K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 24",
+        "Block: -2",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Metal Kick",
+      "input": "3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Royal Blade Night Claw",
+      "input": "SWR3KA",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,18,22",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Shadow Kick",
+      "input": "2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Double Kick",
+      "input": "1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10",
+        "Block: -16",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Double Kick",
+      "input": "1KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,20",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "War Horn",
+      "input": "1KB",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,16",
+        "Block: -16",
+        "Hit: 0",
+        "Counter: KND",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Wolf's Heel",
+      "input": "4K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 16",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 10",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Wolf's Heel",
+      "input": "4KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 16,24",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Shadow Kick",
+      "input": "FCK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[0-4]. Tech Crouch[10-RC]"
+      ]
+    },
+    {
+      "name": "Dark Kick",
+      "input": "FC3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: On tip hit is -3. Tech Crouch[0-6]. Tech Crouch[18-RC]"
+      ]
+    },
+    {
+      "name": "Royal Spear Exalted Fang",
+      "input": "SPR FC3KBB",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16,22,16",
+        "Block: -23",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Shining Kick",
+      "input": "WRK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[0-5]"
+      ]
+    },
+    {
+      "name": "Sickle Kick",
+      "input": "7_8_9K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 28",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[8-31]. Tech Crouch[31-51]. Jumps low since i4"
+      ]
+    },
+    {
+      "name": "Sickle Kick",
+      "input": "7K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[8-31]. Tech Crouch[31-51]"
+      ]
+    },
+    {
+      "name": "Back Kick",
+      "input": "BTK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -15",
+        "Hit: -5",
+        "Counter: -5",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Back Low Kick",
+      "input": "BT2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14",
+        "Block: -25",
+        "Hit: -15",
+        "Counter: -15",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[18-RC]"
+      ]
+    },
+    {
+      "name": "Sundering Blitz",
+      "input": "A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 40",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: .  on  or"
+      ]
+    },
+    {
+      "name": "Eruption",
+      "input": "6A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 24,30",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: on 2nd hit (happens only on hit)"
+      ]
+    },
+    {
+      "name": "Golden Heart",
+      "input": "2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 35",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[4-14]"
+      ]
+    },
+    {
+      "name": "Mirror Strike",
+      "input": "4A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: H&M weapon attacks [9-20]. +14 on successfull GI. Not working againt body/kicks/shoulders/butts/heels/knees etc."
+      ]
+    },
+    {
+      "name": "Royal Blade Guardian Wolf",
+      "input": "SWR4A+BA",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 57",
+        "Damage: 25,24",
+        "Block: 10",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 14%",
+        "Notes: . Tech Jump[20-67]"
+      ]
+    },
+    {
+      "name": "Burning Blade",
+      "input": "8A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 24",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%",
+        "Notes: versus whiffed lows. Tech Jump[10-31]"
+      ]
+    },
+    {
+      "name": "Iron Tower",
+      "input": "B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 25",
+        "Block: -12",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[8-22].  round after finishing round with"
+      ]
+    },
+    {
+      "name": "Iron Tower (Air)",
+      "input": "AIRB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 45",
+        "Block: -",
+        "Hit: STN-10",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: . Tech Crouch[8-22]"
+      ]
+    },
+    {
+      "name": "Royal Windmill",
+      "input": "6B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 16,18",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 14%"
+      ]
+    },
+    {
+      "name": "Eagle Talon",
+      "input": "2B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 20",
+        "Block: -22",
+        "Hit: -12",
+        "Counter: -12",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Eagle Talon",
+      "input": "2B+KK",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 20,20",
+        "Block: -14",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo. Tech Jump[6-33]. Tech Crouch[33-50]"
+      ]
+    },
+    {
+      "name": "Wind's Howl",
+      "input": "4B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 14,18",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Royal Spear Zephyr Wolf",
+      "input": "SPR4B+KB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 14,18,45",
+        "Block: 6",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 19%",
+        "Notes: 2nd hit can be stepped oB. .  after GC. Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Wind's Howl",
+      "input": "+4(B)+(K)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 20,24",
+        "Block: 0",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 14%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Royal Spear Zephyr Wolf",
+      "input": "SPR+4(B)+(K)B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 20,24,33",
+        "Block: 6",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 24%",
+        "Notes: Cann't be stepped oB. .  after GC. Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Double Avalanche",
+      "input": "8B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 30",
+        "Block: -12",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 7%",
+        "Notes: Tech Jump[10-33]. Tech Crouch[36-57]"
+      ]
+    },
+    {
+      "name": "Noble Heart",
+      "input": "WRB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 40",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[0-5]"
+      ]
+    },
+    {
+      "name": "Fire Surge",
+      "input": "BTB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -12",
+        "Hit: -6",
+        "Counter: KND",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Fire Surge",
+      "input": "BTB+KA",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16,22",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: . Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Devine Bolt",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 55",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Noble Rule",
+      "input": "4A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 50",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Royal Seal",
+      "input": "RIGHT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 58",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Victorious Ruler",
+      "input": "LEFT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 65",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Road to Glory",
+      "input": "BACK THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 65",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Heart of Justice",
+      "input": "214A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 25",
+        "Block: -",
+        "Hit: 16",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Spirit of Justice",
+      "input": "SC214A+GB",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 56",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Lightning Fire",
+      "input": "(3)_(6)_(9)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[10-15]"
+      ]
+    },
+    {
+      "name": "Unwavering Flame",
+      "input": "(2)_(8)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 3%",
+        "Notes: Tech Crouch[22-RC]"
+      ]
+    },
+    {
+      "name": "Aerial Power",
+      "input": "(1)_(4)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 20,25",
+        "Block: -12",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 2%",
+        "Notes: 2nd hit happens only on hit (is +2 oB). Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Aerial Power (hold)",
+      "input": "(1)_(4)_(7)(A)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 46",
+        "Damage: 30,25",
+        "Block: 0",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 4%",
+        "Notes: 2nd hit happens only on hit. Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Red Stone",
+      "input": "(3)_(6)_(9)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[7-16]"
+      ]
+    },
+    {
+      "name": "Red Stone",
+      "input": "(3)_(6)_(9)BB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22,22",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: LNC",
+        "Guard Burst: 15%"
+      ]
+    },
+    {
+      "name": "Regal Bolt",
+      "input": "(2)_(8)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20",
+        "Block: -14",
+        "Hit: 14",
+        "Counter: 14",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Regal Bolt",
+      "input": "(2)_(8)BB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20,16",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 2nd attack comes out only on hit."
+      ]
+    },
+    {
+      "name": "Regal Bolt (just frame)",
+      "input": "(2)_(8)BBA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20,16,15",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 2nd and 3rd attacks comes out only on hit. 9 more damage on justframe input"
+      ]
+    },
+    {
+      "name": "Peregrine Falcon",
+      "input": "(1)_(4)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14",
+        "Block: -22",
+        "Hit: -8",
+        "Counter: -8",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[8-10]"
+      ]
+    },
+    {
+      "name": "Knee Assault",
+      "input": "(3)_(6)_(9)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Spiral Sweep",
+      "input": "(2)_(8)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[18-RC]"
+      ]
+    },
+    {
+      "name": "Tornado Kick",
+      "input": "(1)_(4)_(7)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump[12-38]"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "RUNK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[13-19]. Tech Crouch[19-75]"
+      ]
+    },
+    {
+      "name": "Double Falcon",
+      "input": "(3)_(6)_(9)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 10,15",
+        "Block: -14",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 8%",
+        "Notes: after SWR and SPR was used. Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Double Falcon",
+      "input": "+(3)_(6)_(9)(A)+(B)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 10,25",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 8%",
+        "Notes: Can be stepped oB. .  after SWR and SPR used. Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Thunder Wolf",
+      "input": "(3)_(6)_(9)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 35",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 11%"
+      ]
+    },
+    {
+      "name": "Power Declared",
+      "input": "(2)_(8)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 25,18",
+        "Block: 10",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: . Tech Crouch[10-23]"
+      ]
+    },
+    {
+      "name": "Windstoss",
+      "input": "(1)_(4)_(7)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 58",
+        "Damage: 65",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . G cancel. Tech Crouch[6-16]"
+      ]
+    },
+    {
+      "name": "Silver Wolf",
       "input": "A+B+K",
-      "type": "Critical Edge"
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 80",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 17%"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Soul Charge",
+      "input": "4A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 6",
+        "Damage: 0",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 0%",
+        "Notes: invincible since i4. Pushback happens at i6"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Soul Attack",
+      "input": "236A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 24",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 9%"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Hunter's Arc",
+      "input": "236A+B+KA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 24,19",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 10%",
+        "Notes: Grants SWR on hit"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Hunter's Reproach",
+      "input": "236A+B+KB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 24,20",
+        "Block: -4",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 15%",
+        "Notes: Grants SPR on hit"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Fire's Edge",
+      "input": "SCAAAB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12,13,25,21",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 17%",
+        "Notes: Normal Hit Combo on 3rd&4th hit"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Fanged Reproach",
+      "input": "SC6AB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 13,33",
+        "Block: -4",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 12%",
+        "Notes: Grants SPR on hit. Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Calamitous Sword",
+      "input": "SC214A",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Grants SWR"
+      ]
+    },
+    {
+      "name": "Volcanic Splitter",
+      "input": "SCBA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 15,13",
+        "Block: -4",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 4%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Volcanic Splitter",
+      "input": "SCBAA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 15,13,22",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 14",
+        "Guard Burst: 6%",
+        "Notes: Counter Hit Combo. Grants SWR on hit."
+      ]
+    },
+    {
+      "name": "Calamitous Spear",
+      "input": "SC214B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Grants SPR"
+      ]
+    },
+    {
+      "name": "White Monument",
+      "input": "SC WRBB+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18,21,10",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%",
+        "Notes: Tech Crouch[0-12]. Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Howling Blitz",
+      "input": "SC(3)_(6)_(9)AB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 25,21",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 11%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Aerial Assault",
+      "input": "SC(1)_(4)_(7)AB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 22,33",
+        "Block: 8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 8%",
+        "Notes: . Counter Hit Combo. Tech Crouch[11-22]"
+      ]
+    },
+    {
+      "name": "Aerial Assault",
+      "input": "SC(1)_(4)_(7)(A)B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 46",
+        "Damage: 33,33",
+        "Block: 8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 10%",
+        "Notes: . Normal Hit Combo. Tech Crouch[11-22]"
+      ]
+    },
+    {
+      "name": "Vermillion Stone",
+      "input": "SC(3)_(6)_(9)BBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 23,23,14",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: LNC",
+        "Guard Burst: 25%",
+        "Notes: . Counter Hit Combo. Tech Crouch[7-49]"
+      ]
+    },
+    {
+      "name": "Voltaic Wolf",
+      "input": "SC(3)_(6)_(9)B+KB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 36,34",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 16%",
+        "Notes: Normal Hit Combo. . Tech Crouch[32-49]"
+      ]
+    },
+    {
+      "name": "Valorous Bastion",
+      "input": "B+G",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 35",
+        "Damage: 40",
+        "Block: -4",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 16%"
+      ]
+    },
+    {
+      "name": "Valorous Bastion",
+      "input": "+(B)+(G)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 45",
+        "Damage: 50",
+        "Block: 8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 20%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Lacerating Slash",
+      "input": "REA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 30",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 33%"
+      ]
+    },
+    {
+      "name": "Judgment's Horn",
+      "input": "REB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 57",
+        "Block: -",
+        "Hit: JGL",
+        "Counter: JGL",
+        "Guard Burst: 50%"
+      ]
+    },
+    {
+      "name": "Solides Hertz",
+      "input": "REK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 25",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 33%"
+      ]
+    },
+    {
+      "name": "Lacerating Slash",
+      "input": "RE(A)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 30",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 33%",
+        "Notes: Grants SWR on hit"
+      ]
+    },
+    {
+      "name": "Solides Herz",
+      "input": "RE(K)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 25",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 33%",
+        "Notes: Grants SPR on hit"
+      ]
+    },
+    {
+      "name": "Lacerating Slash",
+      "input": "RE Second roundA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 33",
+        "Block: -12",
+        "Hit: JGL",
+        "Counter: JGL",
+        "Guard Burst: 33%"
+      ]
+    },
+    {
+      "name": "Judgment's Horn",
+      "input": "RE Second roundB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 68",
+        "Block: -",
+        "Hit: JGL",
+        "Counter: JGL",
+        "Guard Burst: 50%"
+      ]
+    },
+    {
+      "name": "Solides Herz",
+      "input": "RE Second roundK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 31",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 33%"
+      ]
+    },
+    {
+      "name": "Lacerating Slash",
+      "input": "RE Second round(A)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 33",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 33%",
+        "Notes: Grants SWR on hit."
+      ]
+    },
+    {
+      "name": "Solides Herz",
+      "input": "RE Second round(K)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 31",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 33%",
+        "Notes: Grants SPR on hit."
+      ]
     }
   ]
 }

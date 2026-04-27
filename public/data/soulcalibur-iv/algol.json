@@ -1,67 +1,535 @@
 {
   "name": "Algol",
   "character": "Algol",
+  "game": "SoulCalibur IV",
   "movesList": [
     {
-      "name": "Mizar Cannon",
-      "type": "special",
-      "input": "236A"
+      "name": "Natural Combos - A,A",
+      "input": "A,A",
+      "type": "Natural Combos",
+      "properties": [
+        "Dmg: 22"
+      ]
     },
     {
-      "name": "Alcor Thrust",
-      "type": "special",
-      "input": "236B"
+      "name": "Natural Combos - 6A,A,B",
+      "input": "6A,A,B",
+      "type": "Natural Combos",
+      "properties": [
+        "Dmg: 36"
+      ]
     },
     {
-      "name": "Dubhe Stomp",
-      "type": "special",
-      "input": "236K"
+      "name": "Natural Combos - 3A,A",
+      "input": "3A,A",
+      "type": "Natural Combos",
+      "properties": [
+        "Dmg: 40"
+      ]
     },
     {
-      "name": "Throne of the King",
-      "type": "special",
-      "input": "214"
+      "name": "Natural Combos - 4A,A",
+      "input": "4A,A",
+      "type": "Natural Combos",
+      "properties": [
+        "Dmg: 36"
+      ]
     },
     {
-      "name": "Great King's Judgment",
-      "type": "special",
-      "input": "ABK"
+      "name": "Natural Combos - 623A,B,K",
+      "input": "623A,B,K",
+      "type": "Natural Combos",
+      "properties": [
+        "Dmg: 49"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Natural Combos - B,B",
+      "input": "B,B",
+      "type": "Natural Combos",
+      "properties": [
+        "Dmg: 30"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Natural Combos - 6B,B",
+      "input": "6B,B",
+      "type": "Natural Combos",
+      "properties": [
+        "Dmg: 24"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Natural Combos - 3B,B",
+      "input": "3B,B",
+      "type": "Natural Combos",
+      "properties": [
+        "Dmg: 40"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Natural Combos - 4B,A+B",
+      "input": "4B,A+B",
+      "type": "Natural Combos",
+      "properties": [
+        "Dmg: 22"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Natural Combos - 6K,K",
+      "input": "6K,K",
+      "type": "Natural Combos",
+      "properties": [
+        "Dmg: 28"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Natural Combos - 7_8_9A+K,B,B,B,B",
+      "input": "7_8_9A+K,B,B,B,B",
+      "type": "Natural Combos",
+      "properties": [
+        "Dmg: 40"
+      ]
+    },
+    {
+      "name": "Natural Combos - 66B,A",
+      "input": "66B,A",
+      "type": "Natural Combos",
+      "properties": [
+        "Dmg: 27"
+      ]
+    },
+    {
+      "name": "Natural Combos on CH - 6B,B,B",
+      "input": "6B,B,B",
+      "type": "Natural Combos on CH",
+      "properties": [
+        "Dmg: 46"
+      ]
+    },
+    {
+      "name": "Natural Combos on CH - 6K,[K]",
+      "input": "6K,[K]",
+      "type": "Natural Combos on CH",
+      "properties": [
+        "Dmg: 40"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: aB",
+      "input": "aB, 8WR 1_7B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 44"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: aB",
+      "input": "aB, 2B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 41"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 3A,A",
+      "input": "3A,A, 2B+K",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 69"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 3A,A",
+      "input": "3A,A, 2A+B, aB, 8WR 1_7B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 60"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 3A,A",
+      "input": "3A,A, 2A+B, aB, 2B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 59"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: CH 6B,B,B",
+      "input": "CH 6B,B,B, 2B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 58"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 1B",
+      "input": "1B, 8WR 1_7A",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 37"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 1B",
+      "input": "1B, 2B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 32"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: WC 8B",
+      "input": "WC 8B, 1K",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 31"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: WC 8[B]",
+      "input": "WC 8[B], 2A+B, aB, 8WR 1_7B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 77"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: WC 8[B]",
+      "input": "WC 8[B], 2A+B, aB, 2B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 73"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: CH 6K,[K]",
+      "input": "CH 6K,[K], 1K",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 53"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: CH 1K",
+      "input": "CH 1K, 2A+B, aB, 8WR 1_7B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 49~50"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: CH 1K",
+      "input": "CH 1K, 2A+B, aB, 2B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 48"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 4[K]",
+      "input": "4[K], 3B,41236B, 3B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 68"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 4[K]",
+      "input": "4[K], 6K,[K], 1K",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 58"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 4[K]",
+      "input": "4[K], 6B,B,B, 2B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 56"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 4[K]",
+      "input": "4[K], 3B,B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 54"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: BT 2K",
+      "input": "BT 2K, RCC, 3B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 28"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: BT 2K",
+      "input": "BT 2K, WC K",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 26"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: A+B",
+      "input": "A+B, 2A+B, aB, 8WR 1_7B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 61"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: A+B",
+      "input": "A+B, 2A+B, aB, 2B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 60"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: BT A+B",
+      "input": "BT A+B, BT 2B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 43"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 2B+K",
+      "input": "2B+K, 2K",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 60"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: BT B+K",
+      "input": "BT B+K, BT 2K",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 61"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 7_8_9A+K",
+      "input": "7_8_9A+K, 1K",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 42"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 7_8_9A+K,K",
+      "input": "7_8_9A+K,K, 3B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 38"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 8WR 1_7A",
+      "input": "8WR 1_7A, 2A+B, 8WR 2_8B, 2A+B, aB, 8WR 1_7B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 87"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 8WR 1_7A",
+      "input": "8WR 1_7A, 2A+B, aB, 8WR 1_7B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 74"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 66B,A",
+      "input": "66B,A, aB, 8WR 1_7B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 67"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 8WR 2_8B",
+      "input": "8WR 2_8B, 2A+B, 8WR 2_8B, 2A+B, aB, 8WR 1_7B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 70"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 8WR 2_8B",
+      "input": "8WR 2_8B, 2A+B, aB, 8WR 1_7B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 63"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 8WR 2_8B",
+      "input": "8WR 2_8B, 8WR 2_8B",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 57"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 66A+B",
+      "input": "66A+B, 2K",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 49"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: 66B+K",
+      "input": "66B+K, 2K",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 49"
+      ]
+    },
+    {
+      "name": "Stun/Knockdown Combos Starter: While Running K",
+      "input": "While Running K, 1K",
+      "type": "Stun/Knockdown Combos",
+      "properties": [
+        "Dmg: 38"
+      ]
+    },
+    {
+      "name": "Juggle Combos Starter: 6A,A,B",
+      "input": "6A,A,B, K",
+      "type": "Juggle Combos",
+      "properties": [
+        "Dmg: 47"
+      ]
+    },
+    {
+      "name": "Juggle Combos Starter: 6A,A,B",
+      "input": "6A,A,B, 2K",
+      "type": "Juggle Combos",
+      "properties": [
+        "Dmg: 45"
+      ]
+    },
+    {
+      "name": "Juggle Combos Starter: 3B",
+      "input": "3B, 41236B, 3B",
+      "type": "Juggle Combos",
+      "properties": [
+        "Dmg: 93"
+      ]
+    },
+    {
+      "name": "Juggle Combos Starter: 3B",
+      "input": "3B, K",
+      "type": "Juggle Combos",
+      "properties": [
+        "Dmg: 37"
+      ]
+    },
+    {
+      "name": "Juggle Combos Starter: WR B",
+      "input": "WR B, 8A+B, 6A+B, aB, 8WR 1_7B",
+      "type": "Juggle Combos",
+      "properties": [
+        "Dmg: 73"
+      ]
+    },
+    {
+      "name": "Juggle Combos Starter: WR B",
+      "input": "WR B, 8A+B, aB, 8WR 1_7B",
+      "type": "Juggle Combos",
+      "properties": [
+        "Dmg: 70"
+      ]
+    },
+    {
+      "name": "Juggle Combos Starter: CH WR B",
+      "input": "CH WR B, 8A+B, 8A+B, aB, 8WR 1_7B",
+      "type": "Juggle Combos",
+      "properties": [
+        "Dmg: 80"
+      ]
+    },
+    {
+      "name": "Juggle Combos Starter: CH WR B",
+      "input": "CH WR B, 8A+B, aB, 8WR 1_7B",
+      "type": "Juggle Combos",
+      "properties": [
+        "Dmg: 74"
+      ]
+    },
+    {
+      "name": "Juggle Combos Starter: 4B+K (vs backdash)",
+      "input": "4B+K (vs backdash), 2A+B, 8WR 2_8B, 2A+B, aB, 8WR 1_7B",
+      "type": "Juggle Combos",
+      "properties": [
+        "Dmg: 84"
+      ]
+    },
+    {
+      "name": "Juggle Combos Starter: 4B+K (vs backdash)",
+      "input": "4B+K (vs backdash), 2A+B, aB, 8WR 1_7B",
+      "type": "Juggle Combos",
+      "properties": [
+        "Dmg: 68"
+      ]
+    },
+    {
+      "name": "Juggle Combos Starter: 8WR 3_9B",
+      "input": "8WR 3_9B, 8A+B, 8A+B, 8WR 2_8B, 2A+B, aB, 8WR 1_7B",
+      "type": "Juggle Combos",
+      "properties": [
+        "Dmg: 89"
+      ]
+    },
+    {
+      "name": "Juggle Combos Starter: 8WR 3_9B",
+      "input": "8WR 3_9B, 8A+B, 8A+B, 6A+B, aB, 8WR 1_7B",
+      "type": "Juggle Combos",
+      "properties": [
+        "Dmg: 82~89"
+      ]
+    },
+    {
+      "name": "Juggle Combos Starter: 8WR 3_9B",
+      "input": "8WR 3_9B, 8A+B, 8WR 2_8B, 2A+B, aB, 8WR 1_7B",
+      "type": "Juggle Combos",
+      "properties": [
+        "Dmg: 84~85"
+      ]
+    },
+    {
+      "name": "Juggle Combos Starter: 8WR 3_9B",
+      "input": "8WR 3_9B, 8A+B, 8A+B, aB, 8WR 1_7B",
+      "type": "Juggle Combos",
+      "properties": [
+        "Dmg: 80"
+      ]
+    },
+    {
+      "name": "Juggle Combos Starter: 8WR 3_9B",
+      "input": "8WR 3_9B, 8A+B, 8B+K",
+      "type": "Juggle Combos",
+      "properties": [
+        "Dmg: 77"
+      ]
+    },
+    {
+      "name": "Juggle Combos Starter: 8WR 3_9B",
+      "input": "8WR 3_9B, 8B+K",
+      "type": "Juggle Combos",
+      "properties": [
+        "Dmg: 70"
+      ]
     }
   ]
 }

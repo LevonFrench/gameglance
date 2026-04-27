@@ -4,34 +4,836 @@
   "game": "SoulCalibur V",
   "movesList": [
     {
-      "name": "Ivy Slashes",
-      "input": "5A, 5A",
-      "type": "normal"
+      "name": "Doomed Mark",
+      "input": "AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH"
+      ]
     },
     {
-      "name": "Dominion",
-      "input": "5B, 5B",
-      "type": "normal"
+      "name": "Biting Raven",
+      "input": "(A)",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH"
+      ]
     },
     {
-      "name": "Serpent's Whip",
-      "input": "4+A+B",
-      "type": "stance"
+      "name": "Dashing Wind",
+      "input": "6AK",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH"
+      ]
     },
     {
-      "name": "Ivy's Embrace",
+      "name": "Tempting Tezhas",
+      "input": "6(A)",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H",
+        "Other: AT on counter"
+      ]
+    },
+    {
+      "name": "Raven Gush",
+      "input": "3A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Dancing Tezhas",
+      "input": "3(A)",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Cursed Mark",
+      "input": "2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Ancient Wheel",
+      "input": "1A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: L",
+        "Other: Extend on counter"
+      ]
+    },
+    {
+      "name": "Menace Slice",
+      "input": "4A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Serpent's Venom",
+      "input": "214A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Pecking Raven",
+      "input": "FC A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Menace",
+      "input": "WR A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Hunting Raven",
+      "input": "WR (A)",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Rising Raven",
+      "input": "WJ A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Reverse Raven",
+      "input": "BT A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Deep Curse",
+      "input": "BT 2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Carving Strike",
+      "input": "BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Poisoned Destiny",
+      "input": "(B)",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Queen's Pleasure",
+      "input": "bK",
+      "type": "Verticals",
+      "properties": [
+        "Hit: L",
+        "Other: AT vs downed opponent"
+      ]
+    },
+    {
+      "name": "Ivy Thrust",
+      "input": "6B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Ivy Lick",
+      "input": "6b8",
+      "type": "Verticals",
+      "properties": [
+        "Hit: H",
+        "Other: AT vs midair"
+      ]
+    },
+    {
+      "name": "Silhouette",
+      "input": "6b8K",
+      "type": "Verticals",
+      "properties": [
+        "Hit: HL"
+      ]
+    },
+    {
+      "name": "Ivy Lash",
+      "input": "6(B)",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Biting Ivy Inner",
+      "input": "6(B)2_8",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Cursed Heavens",
+      "input": "3B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Twisted Dominance",
+      "input": "2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Ivy Sting",
+      "input": "1B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Ivy Bite",
+      "input": "4B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Venom Lash",
+      "input": "214B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Immortal Flow",
+      "input": "FC B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Twilight Flow",
+      "input": "FC 1B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Cagemaster",
+      "input": "FC 1(B)B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MHH",
+        "Other: 2nd hit AT vs midair"
+      ]
+    },
+    {
+      "name": "Shameless",
+      "input": "WR B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Rising Ivy",
+      "input": "WJ B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: SM"
+      ]
+    },
+    {
+      "name": "Reverse Immortal",
+      "input": "BT B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Deep Immortal",
+      "input": "BT 2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Night Swallow",
+      "input": "K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Dark Cage",
+      "input": "6KB",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MH",
+        "Other: Last hit AT vs midair"
+      ]
+    },
+    {
+      "name": "Lover",
+      "input": "6KBK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MHL"
+      ]
+    },
+    {
+      "name": "Rage Kick",
+      "input": "3K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M",
+        "Other: Delayable"
+      ]
+    },
+    {
+      "name": "Charmer Silhouette",
+      "input": "2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Royal Huntress",
+      "input": "1K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Evil Sparrow",
+      "input": "4K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Charmer Silhouette",
+      "input": "FC K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Rising Cross",
+      "input": "WR K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Rising Mind Shatter",
+      "input": "WJ K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Reverse Night Swallow",
+      "input": "BT K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Deep Silhouette",
+      "input": "BT 2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "God Whisper",
+      "input": "A+BA",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: ML"
+      ]
+    },
+    {
+      "name": "Released Souls",
+      "input": "6A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Suppressed Exile",
+      "input": "3A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Suppressed Exile~Leaping Gnome",
+      "input": "3A+BB",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Dominance",
+      "input": "2A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Razor's Bite",
+      "input": "1A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Spiral Punishment",
+      "input": "4A+BB",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M x7",
+        "Other: GI vs M horizontals"
+      ]
+    },
+    {
+      "name": "Piercing Bolt",
+      "input": "8A+BB",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Enhanced Bolt",
+      "input": "8A+B(B)",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MMMM"
+      ]
+    },
+    {
+      "name": "Danger Range",
+      "input": "WR A+BA",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MMH"
+      ]
+    },
+    {
+      "name": "Raging Gnome",
+      "input": "B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MMM"
+      ]
+    },
+    {
+      "name": "Embrace of Guilt",
+      "input": "6B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: AT at close range"
+      ]
+    },
+    {
+      "name": "Embrace of Guilt",
+      "input": "6(B+K)",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: AT"
+      ]
+    },
+    {
+      "name": "Fear's Void",
+      "input": "1_2_3B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: SM",
+        "Other: Input determines range"
+      ]
+    },
+    {
+      "name": "Heel Explosion",
+      "input": "4B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Stinging Souls",
+      "input": "7_8_9B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: Input determines range"
+      ]
+    },
+    {
+      "name": "Asylum",
+      "input": "WR_BT B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: GI vs all"
+      ]
+    },
+    {
+      "name": "Viper Tail",
+      "input": "BT 2B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: SM"
+      ]
+    },
+    {
+      "name": "Raven's Egg",
+      "input": "66A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Eclipse Raven",
+      "input": "66(A)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HM"
+      ]
+    },
+    {
+      "name": "Wolf Sign",
+      "input": "22A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Wolf Lash",
+      "input": "88A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Lamenting Tail",
+      "input": "11_77A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L",
+        "Other: AT"
+      ]
+    },
+    {
+      "name": "Cursed Soul",
+      "input": "44A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Insanity Light",
+      "input": "44(A)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: AT at close range"
+      ]
+    },
+    {
+      "name": "Insanity Light",
+      "input": "44(A)6",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: AT at close range"
+      ]
+    },
+    {
+      "name": "Force Pledge",
+      "input": "66B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Midnight Requiem",
+      "input": "22_88B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Mistress' Justice",
+      "input": "22_88(B)BBB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MMMM"
+      ]
+    },
+    {
+      "name": "Tezhas' Flood *see below*",
+      "input": "",
+      "type": "8-Way Run Moves",
+      "properties": []
+    },
+    {
+      "name": "Poison Leaf",
+      "input": "11_77B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Akasha's Cage",
+      "input": "44BBB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MMHH",
+        "Other: Last hit AT vs midair"
+      ]
+    },
+    {
+      "name": "Mind Shatter",
+      "input": "66K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Royal Huntress",
+      "input": "22_88K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Diving Raven",
+      "input": "44K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Crucifixion",
+      "input": "44A+B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Crucifixion (Unblockable)",
+      "input": "44(A+B)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Exile",
+      "input": "44B+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Exile ~ Leaping Gnome",
+      "input": "44B+KB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "Run K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Primal Dominance",
       "input": "A+G",
-      "type": "throw"
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Dominion Throw",
+      "input": "B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Heartless Guide",
+      "input": "Left TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Sunset Cradle",
+      "input": "Right TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Sweet Dominance",
+      "input": "Back TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Calamity Symphony",
+      "input": "28284666B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Prophecy's Pledge",
+      "input": "1B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MM",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Arch Cage",
+      "input": "6b8 BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: H",
+        "Other: AT vs midair"
+      ]
+    },
+    {
+      "name": "Elder Gnome",
+      "input": "66B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Nocturnal Sylph",
+      "input": "22_88B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MM",
+        "Other: BA"
+      ]
     },
     {
       "name": "Summon Suffering",
-      "input": "360+B+G",
-      "type": "command throw"
+      "input": "A+G BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
     },
     {
-      "name": "Grave Marker",
-      "input": "A+B",
-      "type": "unblockable"
+      "name": "Accusal Paradox",
+      "input": "CE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
     }
   ]
 }

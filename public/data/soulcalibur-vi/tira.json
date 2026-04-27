@@ -1,56 +1,2428 @@
 {
+  "name": "Tira",
   "character": "Tira",
+  "game": "SoulCalibur VI",
   "movesList": [
     {
-      "name": "Mood Swing (Stance Shift)",
+      "name": "Harmonic Beat",
+      "input": "JSA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%",
+        "Notes: G cancel"
+      ]
+    },
+    {
+      "name": "Harmonic Beat",
+      "input": "JSAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,10",
+        "Block: -6",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Harmonic Beat",
+      "input": "JSAAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,10,18",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 5%",
+        "Notes: 2nd hit -12"
+      ]
+    },
+    {
+      "name": "False Harmony",
+      "input": "JS(A)",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 38",
+        "Block: -4",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 6%",
+        "Notes: Forces crouch on hit"
+      ]
+    },
+    {
+      "name": "Fin Beat",
+      "input": "JSa6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Low Swoop",
+      "input": "1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 22",
+        "Block: -14",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[22-41]"
+      ]
+    },
+    {
+      "name": "Low Pitch Flap",
+      "input": "2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[8-RC]"
+      ]
+    },
+    {
+      "name": "Ptarmigan Polka",
+      "input": "JS3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10",
+        "Block: -18",
+        "Hit: -10",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[17-34]"
+      ]
+    },
+    {
+      "name": "Ptarmigan Polka",
+      "input": "JS3AB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 26",
+        "Block: -22",
+        "Hit: -6",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Ptarmigan Polka",
+      "input": "JS3ABB+K",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 26",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Menuett Dance",
+      "input": "JS4A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 19",
+        "Block: -14",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 1%",
+        "Notes: Normal Hit Combo. Tech Crouch[22-41]"
+      ]
+    },
+    {
+      "name": "Snare",
+      "input": "JS6A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: -4",
+        "Counter: 0",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Snare Boulder Crush",
+      "input": "JS6AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,13",
+        "Block: -14",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Snare Robin",
+      "input": "JS6AB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,13",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: STN",
+        "Guard Burst: 6%",
+        "Notes: Counter Hit Combo. Tech Crouch[22-RC]"
+      ]
+    },
+    {
+      "name": "Low Pitch Flap",
+      "input": "FCA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Low Pitch Flap",
+      "input": "FC3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: -2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Snare Clap",
+      "input": "WRA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[1-9]"
+      ]
+    },
+    {
+      "name": "Flitting Feather",
+      "input": "7A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 19",
+        "Damage: 18",
+        "Block: -16",
+        "Hit: -8",
+        "Counter: -8",
+        "Guard Burst: 1%",
+        "Notes: Tech Jump[7-33]"
+      ]
+    },
+    {
+      "name": "Flitting Feather",
+      "input": "9A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 19",
+        "Damage: 20",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Jump[7-33]"
+      ]
+    },
+    {
+      "name": "Retrograde Wing",
+      "input": "BTA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Low Retro Flap",
+      "input": "BT2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 8",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[11-RC]"
+      ]
+    },
+    {
+      "name": "Harmonic Wing",
+      "input": "GSA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%",
+        "Notes: G cancel"
+      ]
+    },
+    {
+      "name": "Harmonic Wing",
+      "input": "GSAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12,12",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Harmonic Wing",
+      "input": "GSAK",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12,14",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 3%",
+        "Notes: Counter Hit Combo. Tech Jump[14-31] Tech Crouch[10-13]"
+      ]
+    },
+    {
+      "name": "Shriek Noise",
+      "input": "GS3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[11-39]"
+      ]
+    },
+    {
+      "name": "Shriek Noise",
+      "input": "GS3AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,30",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 1%",
+        "Notes: Normal Hit Combo. Tech Crouch[11-58]. Self damage 2"
+      ]
+    },
+    {
+      "name": "Shriek Quarrel",
+      "input": "GS3AA+B",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,30,22",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo. Self damage 8.  chance"
+      ]
+    },
+    {
+      "name": "Noise Break",
+      "input": "GS4A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 28",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Tech Crouch[8-20]. Self damage 2"
+      ]
+    },
+    {
+      "name": "Minerva's Lament",
+      "input": "GS6A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[7-14]. Self damage 2"
+      ]
+    },
+    {
+      "name": "Minerva's Lament",
+      "input": "GS6AB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22,29",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: . Self damage 6"
+      ]
+    },
+    {
+      "name": "Two-step Tremolo",
+      "input": "JSB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: G cancel"
+      ]
+    },
+    {
+      "name": "Two-step Tremolo",
+      "input": "JSBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,14",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 8",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Two-step Tremolo",
+      "input": "JSBBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,14,22",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 9%",
+        "Notes: Last 2 hits Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Back Step Pizzicato",
+      "input": "JSb4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 15",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 3%",
+        "Notes: Tech Jump[20-28]"
+      ]
+    },
+    {
+      "name": "Hi-Wind Albatross",
+      "input": "JSb8",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 3%",
+        "Notes: on jumping opponent"
+      ]
+    },
+    {
+      "name": "Low Pitch Pointe",
+      "input": "JS1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -16",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Lowdown Neb",
+      "input": "2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[16-RC]. Forces crouch on hit"
+      ]
+    },
+    {
+      "name": "Breakbeat Toss",
+      "input": "JS3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 17",
+        "Damage: 22",
+        "Block: -12",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Halcyon Major Sonata",
+      "input": "JS4B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Halcyon Major Sonata",
+      "input": "JS4BA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20,22",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 6%",
+        "Notes: Tech Crouch[38-65]"
+      ]
+    },
+    {
+      "name": "~ Rondo A Capriccio",
+      "input": "JS4BAB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20,22,39",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 7%",
+        "Notes: chance.  on final hit"
+      ]
+    },
+    {
+      "name": "Halcyon Minor Sonata",
+      "input": "JS4BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20,14",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Rondo A Capriccio",
+      "input": "JS4BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20,14,39",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 7%",
+        "Notes: chance.  on final hit"
+      ]
+    },
+    {
+      "name": "Halcyon Major Elegy",
+      "input": "JS4BAK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20,22,22",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 8%"
+      ]
+    },
+    {
+      "name": "Halcyon Minor Elegy",
+      "input": "JS4BBK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20,22,14",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 7%"
+      ]
+    },
+    {
+      "name": "Agrement Double Claw",
+      "input": "JS6B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 6",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[12-41]"
+      ]
+    },
+    {
+      "name": "Agrement Double Claw",
+      "input": "JS6BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18,24",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Shredding Beak",
+      "input": "JS6BK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18,22",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Counter Hit Combo."
+      ]
+    },
+    {
+      "name": "Lowdown Neb",
+      "input": "FCB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[?-RC]. Forces crouch on hit"
+      ]
+    },
+    {
+      "name": "Up Bow Cantabile",
+      "input": "WRB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 17",
+        "Damage: 20",
+        "Block: -16",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[1-18]"
+      ]
+    },
+    {
+      "name": "~ Updraft",
+      "input": "WRBK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 17",
+        "Damage: 20,2",
+        "Block: lol",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[1-4] Tech Jump[6-33] Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Trill Up Bow Neb",
+      "input": "7B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 58",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump. .  on hit"
+      ]
+    },
+    {
+      "name": "Trill Up Bow Neb",
+      "input": "8B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 60",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump. .  on hit"
+      ]
+    },
+    {
+      "name": "Trill Up Bow Neb",
+      "input": "9B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 62",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump. .  on hit"
+      ]
+    },
+    {
+      "name": "Retrograde Beak",
+      "input": "BTB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Low Retro Neb",
+      "input": "BT2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[18-RTech Crouch] GRND"
+      ]
+    },
+    {
+      "name": "Two-Step Lament",
+      "input": "GSB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: G cancel"
+      ]
+    },
+    {
+      "name": "Two-Step Lament",
+      "input": "GSBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16,16",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Two-Step Lament",
+      "input": "GSBBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16,16,28",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: . Tech Crouch. Self-damage 4"
+      ]
+    },
+    {
+      "name": "Hi-Wind Albatross",
+      "input": "GSb8",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 4%",
+        "Notes: on jumping opponent"
+      ]
+    },
+    {
+      "name": "Strayed Robin",
+      "input": "GS1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 20",
+        "Block: -14",
+        "Hit: 2",
+        "Counter: STN",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[19-RC]"
+      ]
+    },
+    {
+      "name": "Peregrine Rhythm",
+      "input": "GS3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Oratorio Halcyon",
+      "input": "GS4B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: OTG"
+      ]
+    },
+    {
+      "name": "Oratorio Halcyon",
+      "input": "GS4BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14,8",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo.  chance (if 3rd hit not pressed). Perfect input for +2 damage"
+      ]
+    },
+    {
+      "name": "Oratorio Halcyon",
+      "input": "GS4BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14,8,12",
+        "Block: -18",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 7%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Basilisk's Lament",
+      "input": "GS6B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 28",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 8%",
+        "Notes: immediately after losing previous round. Tech Crouch[22-RC]. Self-damage 4"
+      ]
+    },
+    {
+      "name": "High Note Kick",
+      "input": "K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%",
+        "Notes: G cancel"
+      ]
+    },
+    {
+      "name": "Ring Con Sordino",
+      "input": "JS1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 18",
+        "Block: -18",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[8-RC]"
+      ]
+    },
+    {
+      "name": "Low Pitch Claw",
+      "input": "2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[11-RC]"
+      ]
+    },
+    {
+      "name": "Fear Pecker",
+      "input": "3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[10-38]. Forces crouch on hit."
+      ]
+    },
+    {
+      "name": "Bremen Fortissimo",
+      "input": "JS4K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 15",
+        "Block: -8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 2%",
+        "Notes: chance on hit = +16/+22 on swap or -2/+4 on hedache. Self damage 4"
+      ]
+    },
+    {
+      "name": "Cadence Back Kick",
+      "input": "6K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: . Tech Crouch [4-17]"
+      ]
+    },
+    {
+      "name": "Scratch Scherzo",
+      "input": "JS236K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 22",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[8-14]. Tech Jump"
+      ]
+    },
+    {
+      "name": "Low Pitch Claw",
+      "input": "FCK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Swing Kick",
+      "input": "WRK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 20",
+        "Block: -14",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[1-8] Tech Jump[10-33]"
+      ]
+    },
+    {
+      "name": "Flickering Heelkick",
+      "input": "7_8_9K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: . Special animation on CH"
+      ]
+    },
+    {
+      "name": "Retrograde Kick",
+      "input": "BTK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Low Retro Claw",
+      "input": "BT2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[17-RC]"
+      ]
+    },
+    {
+      "name": "Claw Kick",
+      "input": "GS1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 1%",
+        "Notes: OTG"
+      ]
+    },
+    {
+      "name": "Bremen Fortissimo",
+      "input": "GS4K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 15",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: Self damage 4"
+      ]
+    },
+    {
+      "name": "Takt Claw",
+      "input": "GS236K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: STN",
+        "Guard Burst: 7%",
+        "Notes: Tech Crouch[13-18]"
+      ]
+    },
+    {
+      "name": "Divisi Claw Wing",
+      "input": "GS236kA",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 28",
+        "Block: -11",
+        "Hit: 2",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Chattering Cantabile",
+      "input": "WRB+K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 31",
+        "Block: -30",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[1-4] Tech Jump[6-33]"
+      ]
+    },
+    {
+      "name": "Chattering Thrust",
+      "input": "JSA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 32",
+        "Block: 6",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 15%",
+        "Notes: . [12-20] vs high&mid horizontals.  versus GI&RE"
+      ]
+    },
+    {
+      "name": "Tenuto Sweep",
+      "input": "JS2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 26",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: [10-14] vs high&mid verticals"
+      ]
+    },
+    {
+      "name": "Sidestep Arpeggio",
+      "input": "JS4A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 10",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2%",
+        "Notes: TS with veird properties (avodis even some horizontals)"
+      ]
+    },
+    {
+      "name": "Blazing Cadenza",
+      "input": "6A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 64",
+        "Damage: 65",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . G cancel"
+      ]
+    },
+    {
+      "name": "Gestopft Madness",
+      "input": "B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [6-16] vs non-kick H and L attacks. 30 dmg on successfull GI.  chance. Can cause headache. Self damage 4"
+      ]
+    },
+    {
+      "name": "Gestopft Madness",
+      "input": "B+KK",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: chance. Can cause headache. Self damage 4"
+      ]
+    },
+    {
+      "name": "Gestopft Madness",
+      "input": "B+KKK",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: chance. Can cause headache. Self damage 4"
+      ]
+    },
+    {
+      "name": "Streaks Of Madness",
+      "input": "B+KA",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 1%",
+        "Notes: Power increases with number of K's on Gestopft Madness. LH when immediately after"
+      ]
+    },
+    {
+      "name": "Elegy Of Madness",
+      "input": "B+KB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Power increases with number of K's on Gestopft Madness. LH when immediately after"
+      ]
+    },
+    {
+      "name": "Einsatz Calcatrix",
       "input": "2B+K",
-      "type": "Move"
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 60",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Armor [10-28] vs attacks with 20 or less damage.  and 60 dmg on armor click."
+      ]
+    },
+    {
+      "name": "Piercing Talon Strike",
+      "input": "4B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Piercing Talon Strike",
+      "input": "4B+KB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 39",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Normal Hit Combo. Forces crouch on block."
+      ]
+    },
+    {
+      "name": "Piercing Talon Strike",
+      "input": "4B+K(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 50",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 20%",
+        "Notes: Counter Hit Combo."
+      ]
+    },
+    {
+      "name": "Offbeat Claw",
+      "input": "6B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: On CH, 60 DMG"
+      ]
+    },
+    {
+      "name": "Retro Noise",
+      "input": "JS BTB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: . Tech Crouch[9-43]"
+      ]
+    },
+    {
+      "name": "Retro Noise",
+      "input": "JS BTB+KB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,19",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Normal Hit Combo. Forces crouch on block."
+      ]
+    },
+    {
+      "name": "Retro Noise",
+      "input": "JS BTB+KBB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,19,30",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: Gestopft Madness.  chance."
+      ]
+    },
+    {
+      "name": "Cry of the Blue Jay",
+      "input": "GSA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 36",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: .  vs GI&RE. Tech Crouch[7-RC]"
+      ]
+    },
+    {
+      "name": "Deadly Arietta",
+      "input": "GS2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 24",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: Tech Crouch[9-12]. Tech Jump[12-?]"
+      ]
+    },
+    {
+      "name": "Scolding Starling",
+      "input": "GS4A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 32",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Self damage 2"
+      ]
+    },
+    {
+      "name": "Retrograde Fortissimo",
+      "input": "GS BTB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 17",
+        "Damage: 30",
+        "Block: -6",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: [4-11] vs non-kick mids.  chance. Self damage 4"
+      ]
+    },
+    {
+      "name": "Deriding Thrush",
+      "input": "(2)_(8)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 18",
+        "Block: -12",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Canary Watz C Minor",
+      "input": "JS(1)_(4)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Canary Watz C Minor",
+      "input": "JS(1)_(4)_(7)AA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 34",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo. Tech Crouch"
+      ]
+    },
+    {
+      "name": "Canary Watz C Major",
+      "input": "JS(1)_(4)_(7)AB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 32",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Flageolette Fin",
+      "input": "JS(3)_(6)_(9)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -16",
+        "Hit: -6",
+        "Counter: 2",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[13-26]"
+      ]
+    },
+    {
+      "name": "Flageolette Fin",
+      "input": "JS(3)_(6)_(9)AA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 39",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: Tech Crouch[0-29] Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Double Rhythm",
+      "input": "JS(2)_(8)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -2",
+        "Hit: 10",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Ibis Minuet",
+      "input": "JS(1)_(4)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Ibis Minuet",
+      "input": "JS(1)_(4)_(7)BA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 35",
+        "Block: -17",
+        "Hit: KND",
+        "Counter: 12",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Wild Beat Neb",
+      "input": "JS(3)_(6)_(9)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: when first attack after  (mood change). Forces crouch on block."
+      ]
+    },
+    {
+      "name": "Rhythmic Hook",
+      "input": "(2)_(8)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16",
+        "Block: -6",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 1%",
+        "Notes: Forces BT on hit"
+      ]
+    },
+    {
+      "name": "Parakeet Scratch",
+      "input": "JS(1)_(4)_(7)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: 8",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo. Tech Jump[14-]"
+      ]
+    },
+    {
+      "name": "Parrot Scratch",
+      "input": "JS(3)_(6)_(9)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 26",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: LNC",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo. Tech Jump[0-37]."
+      ]
+    },
+    {
+      "name": "~ Gestopft Madness",
+      "input": "JS(3)_(6)_(9)KB+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 26,30",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Gestopft Madness"
+      ]
+    },
+    {
+      "name": "Poloonaise Spin",
+      "input": "JS(1)_(4)_(7)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 24",
+        "Block: -18",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 3%",
+        "Notes: Tech Crouch[8-19] Counter Hit Combo - can move using directional inputs"
+      ]
+    },
+    {
+      "name": "Poloonaise Spin",
+      "input": "JS(1)_(4)_(7)A+BA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 34",
+        "Block: -18",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo - can move using directional inputs"
+      ]
+    },
+    {
+      "name": "Poloonaise Spin",
+      "input": "JS(1)_(4)_(7)A+BAA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 44",
+        "Block: -18",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 6%",
+        "Notes: Counter Hit Combo - can move using directional inputs"
+      ]
+    },
+    {
+      "name": "Groove Step",
+      "input": "JS(3)_(6)_(9)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 28",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump[24-39]  if first attack after  (mood change)"
+      ]
+    },
+    {
+      "name": "Chattering Mandible",
+      "input": "JS(1)_(4)_(7)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 36",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: when whiff punishing a powerful attack"
+      ]
+    },
+    {
+      "name": "Chattering Tear",
+      "input": "JS RUNK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch [13-RC].  on hit. BT on hit"
+      ]
+    },
+    {
+      "name": "Chattering Pinion",
+      "input": "GS(1)_(4)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 36",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: during opponent's break or unblockable attack"
+      ]
+    },
+    {
+      "name": "Tarsus Toccata",
+      "input": "GS(3)_(6)_(9)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[14-27]. Self damage 6"
+      ]
+    },
+    {
+      "name": "Tarsus Toccata",
+      "input": "GS(3)_(6)_(9)AK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 54",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: Counter Hit Combo. Tech Crouch"
+      ]
+    },
+    {
+      "name": "Staccato Ravage",
+      "input": "GS(2)_(8)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 32",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: . Tech Crouch[29-RC]. Self damage 2"
+      ]
+    },
+    {
+      "name": "Murderous Vibrato",
+      "input": "GS(1)_(4)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 36",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo. Tech Crouch[9-RC]"
+      ]
+    },
+    {
+      "name": "Murderous Vibrato",
+      "input": "GS(1)_(4)_(7)(B)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 72",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 12%",
+        "Notes: Normal Hit Combo. Tech Crouch[9-RC]"
+      ]
+    },
+    {
+      "name": "Metsä Gigue Baroque",
+      "input": "GS(1)_(4)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 40",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: .  chance on hit"
+      ]
+    },
+    {
+      "name": "Somersault Scratch",
+      "input": "GS(1)_(4)_(7)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 21",
+        "Damage: 30",
+        "Block: -4",
+        "Hit: 9",
+        "Counter: 9",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo. Tech Crouch[8-16]. Tech Jump[18-?]. Forces FC on hit"
+      ]
+    },
+    {
+      "name": "Hell's Barkarole",
+      "input": "GS(3)_(6)_(9)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 30",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: . Tech Crouch[5-9]. Tech Jump[13-?]. On counter or air hit, 66 damage"
+      ]
+    },
+    {
+      "name": "Hiisi Gigue Baroque",
+      "input": "GS(3)_(6)_(9)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 50",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: .  chance on hit. Self damage 4"
+      ]
+    },
+    {
+      "name": "Glissando Claw",
+      "input": "GS RUNK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[16-48]"
+      ]
+    },
+    {
+      "name": "Death Spindle",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 45",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Poison Apple",
+      "input": "4A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 50",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Sweet Lullaby",
+      "input": "LEFT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 55",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Bloody Tale",
+      "input": "RIGHT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 60",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Glass Slippers",
+      "input": "BACK THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 70",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
     },
     {
       "name": "Updraft",
-      "input": "236B",
-      "type": "Move"
+      "input": "9B+K",
+      "type": "Updraft",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
     },
     {
-      "name": "Gull Wing",
-      "input": "A+B+K",
-      "type": "Critical Edge"
+      "name": "Diving Wing Flap",
+      "input": "UDA",
+      "type": "Updraft",
+      "properties": [
+        "Impact: 32",
+        "Damage: 26",
+        "Block: -8",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 4%"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Diving Talon Thrust",
+      "input": "UDB",
+      "type": "Updraft",
+      "properties": [
+        "Impact: 31",
+        "Damage: 40",
+        "Block: 1",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Claw Dive",
+      "input": "UDK",
+      "type": "Updraft",
+      "properties": [
+        "Impact: 32",
+        "Damage: 24",
+        "Block: -17",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: Becomes  at long range"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Codebreaker",
+      "input": "B+G",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 48",
+        "Damage: 35",
+        "Block: 0",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 16%",
+        "Notes: Tech Crouch[18-37]"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Codebreaker",
+      "input": "+(B)+(G)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 68",
+        "Damage: 45",
+        "Block: 8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 20%"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Twisted Vibrato",
+      "input": "REA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -6",
+        "Hit: 5",
+        "Counter: 5",
+        "Guard Burst: 33%",
+        "Notes: if first options clashed and second beat enemy attack"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Twisted Vibrato",
+      "input": "REAA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 36",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Twisted Vibrato",
+      "input": "REA(A)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 41",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: 49%"
+      ]
+    },
+    {
+      "name": "Twisted Candence",
+      "input": "RE GSAK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 34",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Siren's Candence",
+      "input": "RE GS SCAKA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 53",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Relaxed Reaver",
+      "input": "RE JSB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 51",
+        "Block: -",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: 50%"
+      ]
+    },
+    {
+      "name": "Hardcore Assassination",
+      "input": "RE GSB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 73",
+        "Block: -",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Madness Trance",
+      "input": "REK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 28",
+        "Block: -6",
+        "Hit: 8",
+        "Counter: -",
+        "Guard Burst: 27%",
+        "Notes: Normal Hit Combo.  chance on block.  on hit"
+      ]
+    },
+    {
+      "name": "Soul Charge",
+      "input": "4A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 6",
+        "Damage: 0",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 0%",
+        "Notes: invincible since i4. Pushback happens at i6"
+      ]
+    },
+    {
+      "name": "Bleak Concerto",
+      "input": "JSA+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 70",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: on hit"
+      ]
+    },
+    {
+      "name": "Acidic Modulation",
+      "input": "236A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 39",
+        "Block: -6",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 9%",
+        "Notes: on hit"
+      ]
+    },
+    {
+      "name": "Acidic Modulation",
+      "input": "++236(A)+(B)+(K)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 39",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 9%",
+        "Notes: Gestopft Madness"
+      ]
+    },
+    {
+      "name": "Snare Groove",
+      "input": "JS SC6ABB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 60",
+        "Block: 4",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 10%",
+        "Notes: Counter Hit Combo. ."
+      ]
+    },
+    {
+      "name": "Relaxed Reaver",
+      "input": "JS SCBBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,14,53",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Last 2 hits Counter Hit Combo. . .  intoGS"
+      ]
+    },
+    {
+      "name": "Hardcore Assassination",
+      "input": "JS SCBBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,14,78",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Last 2 hits Counter Hit Combo. ."
+      ]
+    },
+    {
+      "name": "Oratorio Halcyon",
+      "input": "SC4BK",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 48",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 8%",
+        "Notes: Normal Hit Combo. Launcher on grounded"
+      ]
+    },
+    {
+      "name": "Scratch Glissando",
+      "input": "JS SC236K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 39",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo. Tech Jump.  change"
+      ]
+    },
+    {
+      "name": "Flageolette Vibrato",
+      "input": "JS SC(3)_(6)_(9)AAA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 63",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Wild Beat Scherzo",
+      "input": "JS SC(3)_(6)_(9)BB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 32",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: Normal Hit Combo. LH if 1st attack after personality change.  chance"
+      ]
+    },
+    {
+      "name": "Bleak Concerto: Finale",
+      "input": "GSA+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 90",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: . .  OTG"
+      ]
+    },
+    {
+      "name": "Alkonost's Candence",
+      "input": "GS SCAKA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 48",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 8%",
+        "Notes: Counter Hit Combo."
+      ]
+    },
+    {
+      "name": "Tuonela Quarrel",
+      "input": "GS SC3AA+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 70",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 8%",
+        "Notes: Normal Hit Combo. .  chance. Self damage 4"
+      ]
+    },
+    {
+      "name": "Minerva's Symphony",
+      "input": "GS SC6ABB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 86",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 22%",
+        "Notes: Counter Hit Combo. .  chance. Self damage 10"
+      ]
+    },
+    {
+      "name": "Two-Step Infernal Symphony",
+      "input": "GS SCBBBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 106",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 22%",
+        "Notes: chance. Self damage 8"
+      ]
+    },
+    {
+      "name": "Robin's Groove",
+      "input": "GS SC1BB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 40",
+        "Block: 8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: Counter Hit Combo. .  chance"
+      ]
+    },
+    {
+      "name": "Peregrine Duet",
+      "input": "GS SC3BB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 45",
+        "Block: -16",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: Normal Hit Combo."
+      ]
+    },
+    {
+      "name": "Symphonic Dissonance",
+      "input": "GS SC6BB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 64",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 19%",
+        "Notes: Tech Crouch[22-RC]. Normal Hit Combo. .  chance. Self damage 8"
+      ]
+    },
+    {
+      "name": "Hiisi Gigue Canon",
+      "input": "GS SC(3)_(6)_(9)A+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 62",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 19%",
+        "Notes: Launcher on grounded. .  chance."
+      ]
+    },
+    {
+      "name": "Grim Reaper",
+      "input": "GS SC6A+G",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 70",
+        "Block: -",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: not breakable.  on hit. Restores health"
+      ]
     }
   ]
 }

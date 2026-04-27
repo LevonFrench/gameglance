@@ -1,57 +1,3003 @@
 {
   "name": "2B",
   "character": "2B",
+  "game": "SoulCalibur VI",
   "movesList": [
     {
-      "name": "Virtuous Contract",
-      "type": "special",
-      "input": "236B"
+      "name": "Slash Sequence",
+      "input": "A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%",
+        "Notes: Cancel with G"
+      ]
     },
     {
-      "name": "Aggression Stance",
-      "type": "special",
-      "input": "6BK"
+      "name": "Slash Sequence",
+      "input": "AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10",
+        "Block: -10",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
     },
     {
-      "name": "Pod Fire",
-      "type": "special",
-      "input": "236A"
+      "name": "Slash Sequence",
+      "input": "AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,4,4,4",
+        "Block: -4",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 7%",
+        "Notes: Counter Hit Combo if 1st hit whiffs"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "~ Aggression Shift",
+      "input": "AAA6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,4,4,4",
+        "Block: 6",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 7%",
+        "Notes: into AGS on hit or block for 5th hit"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "~ Back Step ~ Aggression Shift",
+      "input": "AAA4",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,4,4,4",
+        "Block: -14",
+        "Hit: -8",
+        "Counter: -8",
+        "Guard Burst: 7%",
+        "Notes: into AGS on hit or block for 5th hit"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "~ Aerial Leap",
+      "input": "AAA8",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,4,4,4",
+        "Block: -10",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 7%",
+        "Notes: into AL on hit or block for 5th hit"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "~ Aerial Leap",
+      "input": "AAAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,4,4,4,24",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Slash Assault: Ii",
+      "input": "AAAB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,4,4,4,6,6,25",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 17%",
+        "Notes: Counter Hit Combo if 1st hit whiffs"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Slash Assault: I",
+      "input": "AAB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,6,6,25",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 13%"
+      ]
+    },
+    {
+      "name": "Augmented Revolving Slash",
+      "input": "(A)",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,8,6,6,14",
+        "Block: -6",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 7%",
+        "Notes: Counter Hit Combo if 2nd hit lands as CH, +12 if 3rd or 5th hit lands as CH, returns to crouching"
+      ]
+    },
+    {
+      "name": "Revolving Strike",
+      "input": "aB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 22",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Slash Support",
+      "input": "6A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Slash Support",
+      "input": "6AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16,10,14",
+        "Block: -2",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Revolving Assault",
+      "input": "3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,12",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Revolving Assault",
+      "input": "3AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,12,16,24",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Counter Hit Combo if 1st hit whiffs, cancel 2nd hit with G, ends in crouch"
+      ]
+    },
+    {
+      "name": "Lower Slash",
+      "input": "2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Blade Sweep",
+      "input": "1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 8,8,10",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo. Returns to crouching"
+      ]
+    },
+    {
+      "name": "Assault Helix",
+      "input": "4A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,16",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo.  if own soul gauge full"
+      ]
+    },
+    {
+      "name": "Lower Slash",
+      "input": "FCA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Returns to crouching"
+      ]
+    },
+    {
+      "name": "Rising Slash Sequence",
+      "input": "WRA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,14",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 3%",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Leaping Horizontal Assault",
+      "input": "9A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 42",
+        "Damage: 18,7,18",
+        "Block: -38",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: no followups possible after GC"
+      ]
+    },
+    {
+      "name": "Reversed Slash",
+      "input": "BTA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Lower Reversed Slash",
+      "input": "BT2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Severing Sweep",
+      "input": "B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -10",
+        "Hit: -4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Cancel with G"
+      ]
+    },
+    {
+      "name": "Severing Sweep",
+      "input": "BA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,8,8,10",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 7%",
+        "Notes: Counter Hit Combo Returns to crouching"
+      ]
+    },
+    {
+      "name": "Severing Sequence",
+      "input": "BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,9",
+        "Block: -8",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Severing Sequence",
+      "input": "BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,9,10,16",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 11%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Augmented Severing Thrust",
+      "input": "(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,24",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo on standing opponent, Launcher behind if 2nd strike is CH"
+      ]
+    },
+    {
+      "name": "Hilt Assault",
+      "input": "b6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: 0",
+        "Hit: 6",
+        "Counter: 10",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Projectile Slash Sequence",
+      "input": "6B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,8",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 4",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Projectile Slash Sequence",
+      "input": "6BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,8,6,6,6",
+        "Block: -24",
+        "Hit: -6",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: Normal Hit Combo.  upon hitting opponent from the back"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "6BB6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,8,6,6,6",
+        "Block: -2",
+        "Hit: 16G",
+        "Counter: LNC",
+        "Guard Burst: 12%",
+        "Notes: Normal Hit Combo.  into AGS on hit or block for 5th hit  upon hitting opponent from the back"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "6BB4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,8,6,6,6",
+        "Block: -20",
+        "Hit: -4",
+        "Counter: LNC",
+        "Guard Burst: 12%",
+        "Notes: Normal Hit Combo.  into AGS on hit or block for 5th hit  upon hitting opponent from the back"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "6BB8",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,8,6,6,6",
+        "Block: -18",
+        "Hit: 0",
+        "Counter: LNC",
+        "Guard Burst: 12%",
+        "Notes: Normal Hit Combo.  into AL on hit or block for 5th hit  upon hitting opponent from the back"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "6BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,8,6,6,6,10,24",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 21%",
+        "Notes: Counter Hit Combo.  upon hitting opponent from the back"
+      ]
+    },
+    {
+      "name": "Augmented Spear Slash Sequence",
+      "input": "6(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,8,22,8,18",
+        "Block: 0",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: . . Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Reversed Core Disruption",
+      "input": "6BK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,8,10,12",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 7%",
+        "Notes: Normal Hit Combo, +2AP on hit or  upon hitting an opponent whose stun build-up is at 9 or above"
+      ]
+    },
+    {
+      "name": "Reverse Augmented Seismic Smash",
+      "input": "6B(K)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,8,10,16",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo."
+      ]
+    },
+    {
+      "name": "First Strike ~ Aerial Leap",
+      "input": "3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: 0",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: into AL"
+      ]
+    },
+    {
+      "name": "Augmented",
+      "input": "3(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 22,4,3,3,2",
+        "Block: 6",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 12%",
+        "Notes: into AL"
+      ]
+    },
+    {
+      "name": "Downward Severing Blade",
+      "input": "2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: KND",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Revolving Slash",
+      "input": "2bA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 8,6,6,14",
+        "Block: -6",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 9%",
+        "Notes: Counter Hit Combo +12 if 2nd or 4th hit lands as CH, returns to crouching"
+      ]
+    },
+    {
+      "name": "Ground Thrust",
+      "input": "1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: 0",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "1B6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 6",
+        "Guard Burst: 2%",
+        "Notes: into AGS on hit or block"
+      ]
+    },
+    {
+      "name": "~ Back Step ~ Aggression Shift",
+      "input": "1B4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -26",
+        "Hit: -18",
+        "Counter: -14",
+        "Guard Burst: 2%",
+        "Notes: into AGS on hit or block"
+      ]
+    },
+    {
+      "name": "~ Aerial Leap",
+      "input": "1B8",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -22",
+        "Hit: -14",
+        "Counter: -10",
+        "Guard Burst: 2%",
+        "Notes: into AL on hit or block"
+      ]
+    },
+    {
+      "name": "Assault Pattern",
+      "input": "4B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 24",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Assault Pattern",
+      "input": "4BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 24,16",
+        "Block: -20",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 20%",
+        "Notes: . Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Assault Pattern",
+      "input": "4BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 24,16,26",
+        "Block: -28",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 29%",
+        "Notes: . Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Assault Skewer",
+      "input": "4BB6B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 24,16,16",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 24%",
+        "Notes: . Normal Hit Combo last hit delayable, delay necessary for 3rd hit to connect if opponent is juggled"
+      ]
+    },
+    {
+      "name": "Leaping Projectile Blade",
+      "input": "9B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 24",
+        "Block: -10",
+        "Hit: -2",
+        "Counter: 0",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Rising Spear Slice",
+      "input": "WRB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Rising Spear Slice",
+      "input": "WRBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18,19",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Rising Android Kick ~ Aerial Leap",
+      "input": "WRBK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18,15",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Counter Hit Combo.  into AL"
+      ]
+    },
+    {
+      "name": "Android Kick",
+      "input": "K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Cancel with G"
+      ]
+    },
+    {
+      "name": "Android Kick",
+      "input": "(K)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -16",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 2%",
+        "Notes: into ANG"
+      ]
+    },
+    {
+      "name": "Multistrike Kick",
+      "input": "6K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 6,4,6",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: 10",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "6K6",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 6,4,6",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 14",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo.  into AGS on hit or block for 3rd hit"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "6K4",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 6,4,6",
+        "Block: -26",
+        "Hit: -14",
+        "Counter: -6",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo.  into AGS on hit or block for 3rd hit"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "6K8",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 6,4,6",
+        "Block: -22",
+        "Hit: -10",
+        "Counter: -2",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo.  into AL on hit or block for 3rd hit"
+      ]
+    },
+    {
+      "name": "Multistrike",
+      "input": "6KB",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 6,4,6,40",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Multistrike Kick",
+      "input": "6KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 6,4,6,6,12",
+        "Block: -6",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 8%",
+        "Notes: Normal Hit Combo, +1AP on hit"
+      ]
+    },
+    {
+      "name": "Charging Kick",
+      "input": "6K(K)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 6,4,6,24",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: H M"
+      ]
+    },
+    {
+      "name": "Brake Kick",
+      "input": "3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,10",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Brake Kick",
+      "input": "3(K)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,16",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%",
+        "Notes: Partial hold Normal Hit Combo +1AP on hit"
+      ]
+    },
+    {
+      "name": "Brake Kick",
+      "input": "3(K)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,22",
+        "Block: -2",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 9%",
+        "Notes: Counter Hit Combo +2AP on hit"
+      ]
+    },
+    {
+      "name": "Lower Unarmed Kick",
+      "input": "2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Examine",
+      "input": "1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%",
+        "Notes: +1AP on hit"
+      ]
+    },
+    {
+      "name": "Examine",
+      "input": "1(K)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14",
+        "Block: -22",
+        "Hit: -8",
+        "Counter: 0",
+        "Guard Burst: 2%",
+        "Notes: into ANG"
+      ]
+    },
+    {
+      "name": "Core Disruption",
+      "input": "4K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,12",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Augmented Seismic Smash",
+      "input": "4(K)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,16",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo."
+      ]
+    },
+    {
+      "name": "Rising Brake Kick",
+      "input": "WRK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,10",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Rising Brake Kick",
+      "input": "WR(K)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,16",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%",
+        "Notes: Partial hold Normal Hit Combo +1AP on hit"
+      ]
+    },
+    {
+      "name": "Rising Brake Kick",
+      "input": "WR(K)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,22",
+        "Block: -2",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 9%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Leaping Unarmed Strike",
+      "input": "9K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 36",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: +4AP on hit"
+      ]
+    },
+    {
+      "name": "Pod Program R050: Spear",
+      "input": "A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 28",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: . .  upon impact counter"
+      ]
+    },
+    {
+      "name": "Pod Program R050: Spear",
+      "input": "+(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 50",
+        "Damage: 32",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: . .  upon impact counter"
+      ]
+    },
+    {
+      "name": "Pod Program R010: Laser",
+      "input": "6A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 45",
+        "Block: -14",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%"
+      ]
+    },
+    {
+      "name": "Pod Program R010: Laser",
+      "input": "+6(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 64",
+        "Damage: 80",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%"
+      ]
+    },
+    {
+      "name": "Pod Program R020: Mirage",
+      "input": "2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 44",
+        "Damage: 8,6,5,4,4",
+        "Block: -16",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Dodges H / M / L attacks starting i32"
+      ]
+    },
+    {
+      "name": "Pod Program R020: Mirage",
+      "input": "+2(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 56",
+        "Damage: 12,9,7,6,6",
+        "Block: -12",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 12%",
+        "Notes: Dodges H / M / L attacks starting i44"
+      ]
+    },
+    {
+      "name": "Pod Program R010: Laser",
+      "input": "4A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 23",
+        "Damage: 37",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Pod Program R010: Laser",
+      "input": "+4(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 35",
+        "Damage: 47",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Pod Program A080: Wave",
+      "input": "8A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 58",
+        "Damage: 16,2,2,2",
+        "Block: -8",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 11%",
+        "Notes: Deals 3 chip damage when guarded"
+      ]
+    },
+    {
+      "name": "Pod Program A080: Wave",
+      "input": "+8(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 74",
+        "Damage: 24,3,3,3",
+        "Block: -4",
+        "Hit: 14",
+        "Counter: KND",
+        "Guard Burst: 19%",
+        "Notes: If own guard gauge full, deals 6 chip damage when guarded"
+      ]
+    },
+    {
+      "name": "Angler Stance / Counter Bomb",
+      "input": "B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 40",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Dodges high/middle attacks [4-14]. After successful dodge. . .  H/M/L attacks, press G to cancel or dodge again, counter does 60 and becomes  after 2 or more consecutive dodges"
+      ]
+    },
+    {
+      "name": "Angler Stance / Counter Bomb",
+      "input": "2B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 40",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Dodges middle/low attacks [4-14]. After successful dodge. . .  H/M/L attacks, press G to cancel or dodge again, counter does 60 and becomes  after 2 or more consecutive dodges"
+      ]
+    },
+    {
+      "name": "Crushing Kick",
+      "input": "6B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 22,6,14",
+        "Block: -14",
+        "Hit: 6",
+        "Counter: LNC",
+        "Guard Burst: 14%",
+        "Notes: Normal Hit Combo.  1st and 3rd hits Tech Jump i10"
+      ]
+    },
+    {
+      "name": "Aerial Support Assault",
+      "input": "3B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22,24",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Normal Hit Combo. . Tech Crouch i4"
+      ]
+    },
+    {
+      "name": "Hilt Bash",
+      "input": "4B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 16,8,14",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: STN",
+        "Guard Burst: 14%",
+        "Notes: Normal Hit Combo."
+      ]
+    },
+    {
+      "name": "Floating Assault",
+      "input": "FCB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 42",
+        "Block: -12",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%"
+      ]
+    },
+    {
+      "name": "Acrobatic Counter Assault",
+      "input": "BTB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 10,21",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: A [4-14] Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Suppression: Slash Kick",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 45",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Suppression: Impaling Slash",
+      "input": "4A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 50",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Suppression: Reversed Projectile Blade",
+      "input": "LEFT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 70",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Suppression: Support Thrust",
+      "input": "RIGHT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 60",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: +1AP Restores 4% Guard Stamina"
+      ]
+    },
+    {
+      "name": "Suppression: Multistrike Protocol",
+      "input": "BACK THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 69",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: +11 Damage with Just Frame"
+      ]
+    },
+    {
+      "name": "Suppression: Unarmed Leg Throw",
+      "input": "(3)_(6)_(9)A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 55",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: +2AP Restores 6% Guard Stamina"
+      ]
+    },
+    {
+      "name": "Mobilize: Slash Pattern",
+      "input": "(3)_(6)_(9)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10,10",
+        "Block: -14",
+        "Hit: -7",
+        "Counter: -7",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo -36 if 2nd hit ducked"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "(3)_(6)_(9)A6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10,10",
+        "Block: -6",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo.  into AGS if 2nd hit blocked or connected"
+      ]
+    },
+    {
+      "name": "~ Back Step ~ Aggression Shift",
+      "input": "(3)_(6)_(9)A4",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10,10",
+        "Block: -21",
+        "Hit: -15",
+        "Counter: -15",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo.  into AGS if 2nd hit blocked or connected"
+      ]
+    },
+    {
+      "name": "~ Aerial Leap",
+      "input": "(3)_(6)_(9)A8",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10,10",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo.  into AL if 2nd hit blocked or connected"
+      ]
+    },
+    {
+      "name": "Mobilize: Slashing Unarmed Kick",
+      "input": "(3)_(6)_(9)aK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10,14,12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo first 2 hits or 1st+3rd hit and 2nd whiffs"
+      ]
+    },
+    {
+      "name": "Mobilize: Crush Sequence",
+      "input": "(3)_(6)_(9)a(K)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10,14,24",
+        "Block: -14",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 7%",
+        "Notes: Normal Hit Combo first 2 hits or 1st+3rd hit and 2nd whiffs,  if 2nd strike whiffs and 3rd strike hits"
+      ]
+    },
+    {
+      "name": "Mobilize: Disposal Kick",
+      "input": "(3)_(6)_(9)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: upon hitting an opponent in the middle of a technique that uses their soul gauge"
+      ]
+    },
+    {
+      "name": "~ Angler Stance",
+      "input": "(3)_(6)_(9)(K)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Mobilize: Spear Spin",
+      "input": "(2)_(8)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,10",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Mobilize: Spear Spin",
+      "input": "(2)_(8)AA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,10,16",
+        "Block: -2",
+        "Hit: 10",
+        "Counter: 12",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo Opponent backturned normal hit"
+      ]
+    },
+    {
+      "name": "Mobilize: Spear Sequence",
+      "input": "(2)_(8)AB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,10,22",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 8%",
+        "Notes: Normal Hit Combo Returns to Crouching"
+      ]
+    },
+    {
+      "name": "Mobilize: Horizontal Assault",
+      "input": "(1)_(4)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 22,22",
+        "Block: -16",
+        "Hit: STN",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Mobilize: Augmented Horizontal Assault",
+      "input": "(1)_(4)_(7)(A)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 22,8,8,8,15",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Mobilize: Piercing Thrust",
+      "input": "(3)_(6)_(9)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: STN",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "(3)_(6)_(9)B6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: 2",
+        "Hit: 12",
+        "Counter: STN",
+        "Guard Burst: 5%",
+        "Notes: into AGS on hit or block"
+      ]
+    },
+    {
+      "name": "~ Back Step ~ Aggression Shift",
+      "input": "(3)_(6)_(9)B4",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: -18",
+        "Hit: -4",
+        "Counter: STN",
+        "Guard Burst: 5%",
+        "Notes: into AGS on hit or block"
+      ]
+    },
+    {
+      "name": "~ Aerial Leap",
+      "input": "(3)_(6)_(9)B8",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: -16",
+        "Hit: -4",
+        "Counter: STN",
+        "Guard Burst: 5%",
+        "Notes: into AL on hit or block"
+      ]
+    },
+    {
+      "name": "Mobilize: Skewer",
+      "input": "(2)_(8)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -18",
+        "Hit: 4",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: upon hitting opponent at tip range after they missed an attack"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "(2)_(8)B6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: 15",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: into AGS.  upon hitting opponent at tip range after they missed an attack"
+      ]
+    },
+    {
+      "name": "~ Back Step ~ Aggression Shift",
+      "input": "(2)_(8)B4",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -28",
+        "Hit: -7",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: into AGS.  upon hitting opponent at tip range after they missed an attack"
+      ]
+    },
+    {
+      "name": "~ Aerial Leap",
+      "input": "(2)_(8)B8",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -24",
+        "Hit: -2",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: into AL.  upon hitting opponent at tip range after they missed an attack"
+      ]
+    },
+    {
+      "name": "Mobilize: Rotating Slash Assault",
+      "input": "(1)_(4)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 40",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "(1)_(4)_(7)B6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 40",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: .  into AGS on hit or block"
+      ]
+    },
+    {
+      "name": "~ Back Step ~ Aggression Shift",
+      "input": "(1)_(4)_(7)B4",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 40",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: .  into AGS on hit or block"
+      ]
+    },
+    {
+      "name": "~ Aerial Leap",
+      "input": "(1)_(4)_(7)B8",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 40",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: .  into AL on hit or block"
+      ]
+    },
+    {
+      "name": "~ Aerial Leap",
+      "input": "(1)_(4)_(7)(B)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 50",
+        "Block: 0",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "(1)_(4)_(7)(B)6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 50",
+        "Block: 6",
+        "Hit: STN",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: . .  into AGS on hit or block"
+      ]
+    },
+    {
+      "name": "~ Back Step ~ Aggression Shift",
+      "input": "(1)_(4)_(7)(B)4",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 50",
+        "Block: -8",
+        "Hit: STN",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: . .  into AGS on hit or block"
+      ]
+    },
+    {
+      "name": "~ Aerial Leap",
+      "input": "(1)_(4)_(7)(B)8",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 50",
+        "Block: -4",
+        "Hit: STN",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: . .  into AL on hit or block"
+      ]
+    },
+    {
+      "name": "Mobilize: Spinning Strike",
+      "input": "(2)_(8)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20,4,4,4",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 7%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Mobilize: Spinning Strike",
+      "input": "(2)_(8)KK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20,4,4,4,24",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Mobilize: Spinning Strike",
+      "input": "(2)_(8)K(K)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20,4,4,4,40",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: LNC",
+        "Guard Burst: 12%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Mobilize: Cyclone Kick",
+      "input": "(1)_(4)_(7)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10,5,15",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: +2 AP on hit"
+      ]
+    },
+    {
+      "name": "Mobilize: Cyclone Kick",
+      "input": "(1)_(4)_(7)(K)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 15,5,20",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: +3 AP on hit if fully held"
+      ]
+    },
+    {
+      "name": "Mobilized Pod Program R040: Blade",
+      "input": "(2)_(8)_(1)_(4)_(7)_(3)_(6)_(9)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 8,6,6,14",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Mobilize: Projectile Slash Pattern",
+      "input": "(3)_(6)_(9)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 8,6,6,6,16",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo. .  after 1 successful dodge with Counter Bomb"
+      ]
+    },
+    {
+      "name": "Mobilize: Scatter Spear",
+      "input": "(2)_(8)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 10,8,16",
+        "Block: -4",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 13%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Mobilze: Crushing Kick",
+      "input": "(1)_(7)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 38",
+        "Block: 8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Mobilize: Heavy Assault",
+      "input": "+(1)_(7)(B)+(K)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 10,10,10,14",
+        "Block: -16",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: Normal Hit Combo."
+      ]
+    },
+    {
+      "name": "Mobilize: Reversed Severing Spin",
+      "input": "(4)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 58",
+        "Damage: 16,16,27,9",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo."
+      ]
+    },
+    {
+      "name": "Sliding Charge",
+      "input": "RUNK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -24",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Aggression Shift",
+      "input": "AGS236",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 31",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: actions in AGS possible after 29 frames"
+      ]
+    },
+    {
+      "name": "Back Step",
+      "input": "AGS214",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 43",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: actions in AGS possible after 39 frames"
+      ]
+    },
+    {
+      "name": "Shifted Revolving Slash",
+      "input": "AGSA",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,8",
+        "Block: -12",
+        "Hit: -2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "AGSA6",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,8",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo.  into AGS"
+      ]
+    },
+    {
+      "name": "~ Back Step ~ Aggression Shift",
+      "input": "AGSA4",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,8",
+        "Block: -14",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo.  into AGS"
+      ]
+    },
+    {
+      "name": "~ Aerial Leap",
+      "input": "AGSA8",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,8",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo.  into AL"
+      ]
+    },
+    {
+      "name": "~ Aerial Leap",
+      "input": "AGSAA",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,8,3,3,8",
+        "Block: -8",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 7%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Shifted Projectile Blade",
+      "input": "AGS2A",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 28",
+        "Damage: 36",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: GI [4-14] horizontal attacks"
+      ]
+    },
+    {
+      "name": "Shifted Support Kick",
+      "input": "AGSB",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 28",
+        "Damage: 16",
+        "Block: -18",
+        "Hit: -12",
+        "Counter: -12",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Shifted Support Kick",
+      "input": "AGSBA",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 28",
+        "Damage: 16,18,22",
+        "Block: -24",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Shifted Support Kick",
+      "input": "AGSBB",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 28",
+        "Damage: 16,16",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo.  into AL"
+      ]
+    },
+    {
+      "name": "Shifted Support Skewer (augmented)",
+      "input": "AGS(B)",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 28",
+        "Damage: 36",
+        "Block: -12",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Shifted Strike Sequence",
+      "input": "AGSK",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 16",
+        "Damage: 6,6,6,6",
+        "Block: -12",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 5%",
+        "Notes: . Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "AGSK6",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 16",
+        "Damage: 6,6,6,6",
+        "Block: 0",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 5%",
+        "Notes: . Normal Hit Combo.  into AGS"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "AGSK4",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 16",
+        "Damage: 6,6,6,6",
+        "Block: -16",
+        "Hit: -10",
+        "Counter: -10",
+        "Guard Burst: 5%",
+        "Notes: . Normal Hit Combo.  into AGS"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "AGSK8",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 16",
+        "Damage: 6,6,6,6",
+        "Block: -12",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 5%",
+        "Notes: . Normal Hit Combo.  into AGS"
+      ]
+    },
+    {
+      "name": "~ Aggression Shift",
+      "input": "AGSKK",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 16",
+        "Damage: 6,6,6,6,18",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 10%",
+        "Notes: . Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Pod Program R020: Mirage",
+      "input": "AGSA+B",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 22",
+        "Damage: 8,6,5,4,4",
+        "Block: -16",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo Dodges all attacks starting i10"
+      ]
+    },
+    {
+      "name": "Pod Program R020: Mirage",
+      "input": "AGS+(A)+(B)",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 34",
+        "Damage: 12,9,7,6,6",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 12%",
+        "Notes: Normal Hit Combo Dodges all attacks starting i22"
+      ]
+    },
+    {
+      "name": "Shifted Crushing Rocket",
+      "input": "AGSB+K",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 32",
+        "Damage: 64",
+        "Block: -30",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 8%",
+        "Notes: (no followup possible), Shifts to  on hit"
+      ]
+    },
+    {
+      "name": "Suppression: Composite Kick",
+      "input": "AGSA+G",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 18",
+        "Damage: 61",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Suppression: Composite Slash",
+      "input": "AGS4A+G",
+      "type": "Aggression Shift",
+      "properties": [
+        "Impact: 18",
+        "Damage: 40",
+        "Block: LNC",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Support Blade",
+      "input": "ALA",
+      "type": "Aerial Leap",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Airborne Slash Pattern",
+      "input": "ALAA",
+      "type": "Aerial Leap",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,6",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Airborne Slash Pattern",
+      "input": "ALAAA",
+      "type": "Aerial Leap",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,6,6,5,6",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Airborne Assault",
+      "input": "ALAAB",
+      "type": "Aerial Leap",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,6,12,23",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 19%",
+        "Notes: . Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Airborne Unarmed Strike",
+      "input": "ALAAK",
+      "type": "Aerial Leap",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,6,28",
+        "Block: -28",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: (no followups possible), +2AP or  upon hitting opponent whose stun build-up is at 9 or above"
+      ]
+    },
+    {
+      "name": "Airborne Spear Cleave",
+      "input": "ALB",
+      "type": "Aerial Leap",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,8,18",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Airborne Support Kick",
+      "input": "ALK",
+      "type": "Aerial Leap",
+      "properties": [
+        "Impact: 16",
+        "Damage: 8,7,6",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: 14",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo can hold directions to slightly shift where 2B lands"
+      ]
+    },
+    {
+      "name": "Pod Program A080: Wave",
+      "input": "ALA+B",
+      "type": "Aerial Leap",
+      "properties": [
+        "Impact: 24",
+        "Damage: 16,2,2,2",
+        "Block: -8",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 11%",
+        "Notes: Normal Hit Combo Deals 3 chip damage when guarded"
+      ]
+    },
+    {
+      "name": "Pod Program A080: Wave",
+      "input": "AL+(A)+(B)",
+      "type": "Aerial Leap",
+      "properties": [
+        "Impact: 40",
+        "Damage: 24,3,3,3",
+        "Block: -4",
+        "Hit: 14",
+        "Counter: KND",
+        "Guard Burst: 19%",
+        "Notes: Normal Hit Combo.  If own guard gauge full, deals 6 chip damage when guarded"
+      ]
+    },
+    {
+      "name": "Aerial Support Gambit",
+      "input": "ALB+K",
+      "type": "Aerial Leap",
+      "properties": [
+        "Impact: 24",
+        "Damage: 10,12",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 6%",
+        "Notes: (vs Astaroth only)"
+      ]
+    },
+    {
+      "name": "Airborne Aggression Shift",
+      "input": "AL6",
+      "type": "Aerial Leap",
+      "properties": [
+        "Impact: 23",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: actions in AGS possible after 23 frames"
+      ]
+    },
+    {
+      "name": "Airborne Back Step",
+      "input": "AL4",
+      "type": "Aerial Leap",
+      "properties": [
+        "Impact: 33",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: actions in AGS possible after 33 frames"
+      ]
+    },
+    {
+      "name": "Glide",
+      "input": "AL8",
+      "type": "Aerial Leap",
+      "properties": [
+        "Impact: 10",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: allows delayed AL inputs, hold 8, 7 or 9 to extend delay and float down to ground in different directions"
+      ]
+    },
+    {
+      "name": "Support Blade",
+      "input": "ANGA",
+      "type": "Angler Stance",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16,16",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Support Blade",
+      "input": "ANG(A)",
+      "type": "Angler Stance",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16,16",
+        "Block: 2",
+        "Hit: 14",
+        "Counter: -",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo.  Angler Stance"
+      ]
+    },
+    {
+      "name": "Support Gatling",
+      "input": "ANGB",
+      "type": "Angler Stance",
+      "properties": [
+        "Impact: 16",
+        "Damage: 4,4,4",
+        "Block: -22",
+        "Hit: -10",
+        "Counter: STN",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Support Gatling",
+      "input": "ANG(B)",
+      "type": "Angler Stance",
+      "properties": [
+        "Impact: 16",
+        "Damage: 4,4,4",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: STN",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo.  Angler Stance"
+      ]
+    },
+    {
+      "name": "Support Casting",
+      "input": "ANGK",
+      "type": "Angler Stance",
+      "properties": [
+        "Impact: 24",
+        "Damage: 10",
+        "Block: -20",
+        "Hit: 16",
+        "Counter: 16",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Support Casting",
+      "input": "ANG(K)",
+      "type": "Angler Stance",
+      "properties": [
+        "Impact: 24",
+        "Damage: 10",
+        "Block: -4",
+        "Hit: 16",
+        "Counter: 16",
+        "Guard Burst: 9%",
+        "Notes: .  Angler Stance on block or whiff"
+      ]
+    },
+    {
+      "name": "Support Casting",
+      "input": "ANG6K",
+      "type": "Angler Stance",
+      "properties": [
+        "Impact: 26",
+        "Damage: 10",
+        "Block: -22",
+        "Hit: 16",
+        "Counter: 16",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Support Casting",
+      "input": "ANG6(K)",
+      "type": "Angler Stance",
+      "properties": [
+        "Impact: 26",
+        "Damage: 10",
+        "Block: -6",
+        "Hit: 16",
+        "Counter: 16",
+        "Guard Burst: 9%",
+        "Notes: .  Angler Stance on block or whiff"
+      ]
+    },
+    {
+      "name": "Support Casting",
+      "input": "ANG4K",
+      "type": "Angler Stance",
+      "properties": [
+        "Impact: 24",
+        "Damage: 10",
+        "Block: -20",
+        "Hit: 16",
+        "Counter: 16",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Support Casting",
+      "input": "ANG4(K)",
+      "type": "Angler Stance",
+      "properties": [
+        "Impact: 24",
+        "Damage: 10",
+        "Block: -4",
+        "Hit: 16",
+        "Counter: 16",
+        "Guard Burst: 9%",
+        "Notes: .  Angler Stance on block or whiff"
+      ]
+    },
+    {
+      "name": "Revolving Support",
+      "input": "ANGA+B",
+      "type": "Angler Stance",
+      "properties": [
+        "Impact: 26",
+        "Damage: 28",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Aggression Shift",
+      "input": "ANG236",
+      "type": "Angler Stance",
+      "properties": [
+        "Impact: 31",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: actions in AGS possible after 31 frames"
+      ]
+    },
+    {
+      "name": "Back Step",
+      "input": "ANG214",
+      "type": "Angler Stance",
+      "properties": [
+        "Impact: 43",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: actions in AGS possible after 43 frames"
+      ]
+    },
+    {
+      "name": "Aerial Leap",
+      "input": "ANG8B+K",
+      "type": "Angler Stance",
+      "properties": [
+        "Impact: 35",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: actions in AL possible after 35 frames"
+      ]
+    },
+    {
+      "name": "Soul Stance: Aggressive Defense",
+      "input": "B+G",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 46",
+        "Damage: 35",
+        "Block: -10",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 16%"
+      ]
+    },
+    {
+      "name": "Soul Stance: Aggressive Defense",
+      "input": "+(B)+(G)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 64",
+        "Damage: 45",
+        "Block: 8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 20%",
+        "Notes: . ."
+      ]
+    },
+    {
+      "name": "Inverted Support ~ Aggression Shift",
+      "input": "REA6",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 22",
+        "Block: -2",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 33%",
+        "Notes: . STN on LH upon winning 2nd round"
+      ]
+    },
+    {
+      "name": "Inverted Support",
+      "input": "REAA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 22,6,6",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 34%",
+        "Notes: Normal Hit Combo.  upon winning 2nd round"
+      ]
+    },
+    {
+      "name": "Inverted Support",
+      "input": "REAAA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 22,6,6,4,9",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 38%",
+        "Notes: Normal Hit Combo. .  upon winning 2nd round"
+      ]
+    },
+    {
+      "name": "Inverted Assault Volley",
+      "input": "REAB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 29,6,6,6,6",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 38%",
+        "Notes: , Normal Hit Combo on  upon winning 2nd round"
+      ]
+    },
+    {
+      "name": "Inverted Skewer Sequence",
+      "input": "REB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 14,22",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 50%",
+        "Notes: Normal Hit Combo. . .  upon winning 2nd round"
+      ]
+    },
+    {
+      "name": "Inverted Skewer: Augmented",
+      "input": "RE(B)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 19,20,20",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 50%",
+        "Notes: . . Normal Hit Combo on  upon winning 2nd round"
+      ]
+    },
+    {
+      "name": "Inverted Orbit Strike ~ Aerial Leap",
+      "input": "REK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 24",
+        "Block: 6",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 33%",
+        "Notes: . .  upon winning 2nd round then does 26+30 damage and launches higher"
+      ]
+    },
+    {
+      "name": "Supression: Extermination Gambit",
+      "input": "A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 80",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Supression: Extermination Gambit",
+      "input": "ALA+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 80",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: .  Restores 10% guard stamina"
+      ]
+    },
+    {
+      "name": "Supression: Extermination Gambit",
+      "input": "ALAAA+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,6,54",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: .  Restores 10% guard stamina, last input can be delayed"
+      ]
+    },
+    {
+      "name": "Limiter Release: Self-Destruct",
+      "input": "6A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 116",
+        "Block: -32",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Soul Charge",
+      "input": "4A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 6",
+        "Damage: 0",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 0%",
+        "Notes: invincible since i4. Pushback happens at i6"
+      ]
+    },
+    {
+      "name": "Soul Stance: Charged Support",
+      "input": "236A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 24,4,11",
+        "Block: -2",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Slash Sequence: Charged Blade",
+      "input": "SCAAAA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,4,4,4,12,25",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%"
+      ]
+    },
+    {
+      "name": "Revolving Strike (First Class) ~ Aerial Leap",
+      "input": "SC3AK",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 11,12,8,8",
+        "Block: -10",
+        "Hit: 0",
+        "Counter: 2",
+        "Guard Burst: 6%",
+        "Notes: Normal Hit Combo first 2 hits and last 2 hits, delayable"
+      ]
+    },
+    {
+      "name": "Revolving Strike (First Class) ~ Aerial Leap",
+      "input": "SC3AKK",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 11,13,8,9,16",
+        "Block: -6",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 19%",
+        "Notes: Normal Hit Combo first 2 hits and last 3 hits, delayable,  into AL"
+      ]
+    },
+    {
+      "name": "Severing Sequence (First Class) ~ Aerial Leap",
+      "input": "SCBBBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,10,10,17,21",
+        "Block: -4",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: Counter Hit Combo 64 damage total .  into AL"
+      ]
+    },
+    {
+      "name": "Assault Pattern: Charged Gatling",
+      "input": "SC4BBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 25,17,27,3,2,2",
+        "Block: 2",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 35%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Mobilize: Spear Spin (first Class)",
+      "input": "SC(2)_(8)AAA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,10,17,9",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: Normal Hit Combo.  upon hitting an opponent when your helath is full"
+      ]
+    },
+    {
+      "name": "Mobilize: Piercing Assault (first Class)",
+      "input": "SC(3)_(6)_(9)BB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 23,39",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 17%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Shifted Slice: Charged Blade",
+      "input": "SC AGSA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,5,10",
+        "Block: -3",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Shifted Slice: Charged Blade",
+      "input": "SC AGSA6",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,5,10",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo.  into AGS"
+      ]
+    },
+    {
+      "name": "Shifted Slice: Charged Blade",
+      "input": "SC AGSA4",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,5,10",
+        "Block: -7",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo.  into AGS"
+      ]
+    },
+    {
+      "name": "Shifted Slice: Charged Blade",
+      "input": "SC AGSA8",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,5,10",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo.  into AGS"
+      ]
+    },
+    {
+      "name": "Shifted Support Kick",
+      "input": "SC AGSBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 16,17,11",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 13%",
+        "Notes: Normal Hit Combo.  into AL"
+      ]
+    },
+    {
+      "name": "Airborne Slash Pattern: Charged Laser",
+      "input": "SC ALAAA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,6,6,5,6,11",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Airborne Spear Cleave: Charged Spear",
+      "input": "SC ALB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,8,15,14",
+        "Block: 0",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 13%",
+        "Notes: Normal Hit Combo."
+      ]
     }
   ]
 }

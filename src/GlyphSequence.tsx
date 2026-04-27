@@ -452,7 +452,9 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
     // Tekken uses 1234 for buttons, so we bypass numpad parsing for it.
     const effectiveSystem = controller === 'tekken' ? 'traditional' : notationSystem;
     // We NO LONGER expand macros here. We keep 'PP' as a single token so we can stack it.
-    return tokenizeInputs(inputs, effectiveSystem, isCombo);
+    const res = tokenizeInputs(inputs, effectiveSystem, isCombo);
+    console.log("GLYPH_DEBUG", { inputs, effectiveSystem, res });
+    return res;
   }, [inputs, notationSystem, controller, isCombo]);
 
   const renderSingleGlyph = (input: string, idx: React.Key, styleOverrides: React.CSSProperties = {}) => {
@@ -534,7 +536,7 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
 
     let isCharge = false;
     let rawInput = input;
-    if (rawInput.startsWith('[') && rawInput.endsWith(']')) {
+    if ((rawInput.startsWith('[') && rawInput.endsWith(']')) || (rawInput.startsWith('(') && rawInput.endsWith(')'))) {
       isCharge = true;
       rawInput = rawInput.substring(1, rawInput.length - 1);
     }

@@ -43,6 +43,20 @@ const getFrameAdvantageColor = (frames?: string): string => {
   return 'var(--text-secondary)';
 };
 
+const formatSCInput = (input: string) => {
+  return input
+    .replace(/(WR|FC|BT|CE|SC)([1-9abkgABKG\[\(])/g, '$1 $2')
+    .replace(/([1-9abkgABKG\]\)])(WR|FC|BT|CE|SC)/g, '$1 $2')
+    .replace(/([1-9])([abkgABKG\[\(])/g, '$1 $2')
+    .replace(/([abkgABKG\]\)])([1-9])/g, '$1 $2')
+    .replace(/([abkgABKG])(?=[abkgABKG])/g, '$1 ')
+    .replace(/([1-9])(?=[1-9])/g, '$1 ')
+    .replace(/([abkgABKG1-9])\(/g, '$1 (')
+    .replace(/\)([abkgABKG1-9])/g, ') $1')
+    .replace(/_/g, '/')
+    .replace(/\s+/g, ' ').trim();
+};
+
 const STAT_TOOLTIPS: Record<string, React.ReactNode> = {
   'STARTUP': (
     <>
@@ -347,6 +361,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           'string': 'normal',         // DOA / Tekken
           'combo': 'normal',          // Tekken
           'move': 'normal',           // generic fallback
+          'moves': 'normal',
 
           // ── hold: DOA counter system → unique (defensive tech) ──
           'hold': 'unique',           // DOA
@@ -362,6 +377,16 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           '8wr': 'normal',            // 8-Way Run
           'launcher': 'unique',
           'charge': 'special',
+          'horizontal attacks': 'normal',
+          'vertical attacks': 'normal',
+          'kicks': 'normal',
+          'kick attacks': 'normal',
+          'simultaneous press attacks': 'normal',
+          '8-way run moves': 'normal',
+          'reversal edge': 'system',
+          'critical edge': 'super',
+          'soul charge moves': 'special',
+          'soul attack': 'special',
 
           // ── Tekken specifics ──
           'instant-motion': 'special',
@@ -1147,6 +1172,11 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
               };
 
               const renderMoveCard = (move: Move, idx: number) => {
+                let cleanMainInput = move.input.replace(/^↳\s*/, '');
+                if (game.id.startsWith('soulcalibur')) {
+                  cleanMainInput = formatSCInput(cleanMainInput);
+                }
+
                 const isSelected = selectedPlaylist && selectedPlaylist.some(m => m && move && m.id === move.id);
                 const hasChildren = childrenMap.has(move.id) && childrenMap.get(move.id)!.length > 0;
                 const children = childrenMap.get(move.id) || [];
@@ -1172,7 +1202,11 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                       {childrenMoves.map(child => {
                         const isChildSelected = selectedPlaylist && selectedPlaylist.some(m => m && child && m.id === child.id);
                         const cleanChildName = child.name.replace(/^↳\s*/, '');
-                        const cleanChildInput = child.input.replace(/^↳\s*/, '');
+                        let cleanChildInput = child.input.replace(/^↳\s*/, '');
+                        
+                        if (game.id.startsWith('soulcalibur')) {
+                          cleanChildInput = formatSCInput(cleanChildInput);
+                        }
                         const childHasChildren = childrenMap.has(child.id) && childrenMap.get(child.id)!.length > 0;
                         const childsChildren = childrenMap.get(child.id) || [];
                         
@@ -1355,7 +1389,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                           border: '1px inset rgba(255,255,255,0.05)',
                         }}>
                           <GlyphSequence 
-                            inputs={[move.input.replace(/^↳\s*/, '')]} 
+                            inputs={[cleanMainInput]} 
                             controller={effectiveController} 
                             notationSystem={(game.notationSystem === 'mk' || game.notationSystem === 'tekken') ? game.notationSystem : (notationSystem || game.notationSystem)} 
                             isCombo={move.type?.toLowerCase() === 'combo'}

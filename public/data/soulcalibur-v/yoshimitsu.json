@@ -1,71 +1,1359 @@
 {
+  "name": "Yoshimitsu",
   "character": "Yoshimitsu",
+  "game": "SoulCalibur V",
   "movesList": [
     {
-      "name": "Manji Virtue and Influence",
-      "input": "A+B+K",
-      "type": "Critical Edge"
-    },
-    {
-      "name": "Soul Siphon",
-      "input": "4A+B",
-      "type": "Move"
-    },
-    {
-      "name": "Manji Carwheel",
-      "input": "236B",
-      "type": "Move"
-    },
-    {
-      "name": "Meditation (Stance)",
-      "input": "2B+K",
-      "type": "Move"
+      "name": "Rapid Gale",
+      "input": "AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH"
+      ]
     },
     {
       "name": "Parting Thrust",
+      "input": "aB+K",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Back Hand",
+      "input": "6A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Spirit Possession",
+      "input": "6(A)",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH",
+        "Other: TH, dmg if enemy techs throw"
+      ]
+    },
+    {
+      "name": "Spirit Siphon",
+      "input": "6(A)6",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH",
+        "Other: TH, steals health"
+      ]
+    },
+    {
+      "name": "Gold Twilight",
+      "input": "3AB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Parting Grass",
+      "input": "2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Manji Carve Fist",
+      "input": "2aB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Stone Fist",
+      "input": "1AAAAA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M x5",
+        "Other: Dizzy on last input"
+      ]
+    },
+    {
+      "name": "Stone Backhands",
+      "input": "4AAAAA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H x5",
+        "Other: Dizzy on last input"
+      ]
+    },
+    {
+      "name": "Samurai Cutter",
+      "input": "214A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Parting Grass",
+      "input": "FC A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Manji Carve Fist",
+      "input": "FC 2aB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Purify Evil",
+      "input": "WR A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Rising Kite ~ Super Dragonfly",
+      "input": "WJ A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: MMM",
+        "Other: SS, BT possible"
+      ]
+    },
+    {
+      "name": "Reverse Splinter Gale",
+      "input": "BT A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Reverse Grass Part",
+      "input": "BT 2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Rapid Grace",
+      "input": "BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Sword Smash",
+      "input": "bA",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: AT on counter hit"
+      ]
+    },
+    {
+      "name": "Tsuka Atemi",
+      "input": "6B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Shrine",
+      "input": "3B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Autumn Drizzle",
+      "input": "2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Death Slash",
+      "input": "1B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Death Slash (Unblockable)",
+      "input": "1(B)",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Spine Divide",
+      "input": "4B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Moonsault Slayer",
+      "input": "236B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Snowflake",
+      "input": "FC B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Tangled Blade",
+      "input": "WR B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Quarter Moon",
+      "input": "WJ B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Reverse Drizzle",
+      "input": "BT B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Reverse Snowflake",
+      "input": "BT 2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Side Kick",
+      "input": "K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Zig Zag",
+      "input": "6KK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: HM"
+      ]
+    },
+    {
+      "name": "Mid Kick",
+      "input": "3K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Arc Kick",
+      "input": "2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Kangaroo Kick",
+      "input": "1K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Wood Cutter",
+      "input": "4KB",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Wood Cutter (Unblockable)",
+      "input": "4K(B)",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MM",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Arc Kick",
+      "input": "FC K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Knee Cap",
+      "input": "FC 3K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Spinning Low Kick",
+      "input": "FC 1KKKKK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L x5",
+        "Other: Dizzy on last input"
+      ]
+    },
+    {
+      "name": "Rising Knee",
+      "input": "WR K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Manji Jump Kick",
+      "input": "WJ K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Reverse Koragashi",
+      "input": "BT K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Reverse Dust Banishment",
+      "input": "BT 2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Poison Breath",
+      "input": "A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: H",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Bad Stomach",
+      "input": "(A+B)",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Other: S"
+      ]
+    },
+    {
+      "name": "to Backflip Kick",
+      "input": "(A+B) K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Digging Cyclone",
+      "input": "2A+BB",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "~ Flea",
+      "input": "2(A+B)",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Deathcopter",
+      "input": "8A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Deathcopter Attack",
+      "input": "8a+b2_G",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Deathcopter Trick",
+      "input": "8a+b4",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "~ Manji Dragonfly",
+      "input": "8a+bB+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Door Knocker",
+      "input": "6B+KBBB",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MHHM"
+      ]
+    },
+    {
+      "name": "Circium",
+      "input": "3B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Cyclone Lift",
+      "input": "1B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Spinning Evade",
+      "input": "4B+KBBBBBB",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Other: SS, self-damage, end dizzy"
+      ]
+    },
+    {
+      "name": "Steel Wind",
+      "input": "9B+KK",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "~ Manji Dragonfly",
+      "input": "9B+K(K)",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Soul Stealer",
+      "input": "A+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: GI vs H/M horizontal/body"
+      ]
+    },
+    {
+      "name": "Harakiri",
+      "input": "2A+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA, self-damage, BT possible"
+      ]
+    },
+    {
+      "name": "Manji Blood Dance",
+      "input": "2A+KAAAA",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M x5",
+        "Other: UA, self-damage"
+      ]
+    },
+    {
+      "name": "Final Harakiri",
+      "input": "2A+KA+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: UA, self-damage"
+      ]
+    },
+    {
+      "name": "Kabuki",
+      "input": "66A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Asura Sweeper",
+      "input": "22_88A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Flagstaff",
+      "input": "44A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Inner Palm",
+      "input": "66B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Palm Water",
+      "input": "33_99BB+KA+BK",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MMHM"
+      ]
+    },
+    {
+      "name": "Shark Deathcopter",
+      "input": "33_99BB+K(A+B)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MMHM",
+        "Other: UA, early last hit: 4/2/G"
+      ]
+    },
+    {
+      "name": "~ Manji Dragonfly",
+      "input": "..BB+K(A+B)B+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MMH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Reverse Shark Attack Combo",
+      "input": "..B(B+K)A+BK",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MMHM"
+      ]
+    },
+    {
+      "name": "Reverse Shark Deathcopter",
+      "input": "..B(B+K)(A+B)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MMHM",
+        "Other: UA, early last hit: 4/2/G"
+      ]
+    },
+    {
+      "name": "~ Manji Dragonfly",
+      "input": ".....(A+B)B+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MMH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Gehosen",
+      "input": "22_88B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Prison Gate",
+      "input": "11_77B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sword Stab",
+      "input": "44B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Sword Poke Windmill",
+      "input": "44bA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M x7"
+      ]
+    },
+    {
+      "name": "Face Splitter",
+      "input": "44bB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Fubuki",
+      "input": "66K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Iwatsubute",
+      "input": "22_88K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Wood Cutter",
+      "input": "44KB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Wood Cutter (Unblockable)",
+      "input": "44K(B)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Crying Spirit Sword",
+      "input": "66_22_88A+B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "... to Death",
+      "input": "...a+b2B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "~ Flea",
+      "input": "...a+bB+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "~ Indian Stance",
+      "input": "...a+b2B+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Shark Attack Combo",
+      "input": "66B+KA+BK",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MHM"
+      ]
+    },
+    {
+      "name": "Shark Deathcopter",
+      "input": "66B+K(A+B)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MHM",
+        "Other: UA, early last hit: 4/2/G"
+      ]
+    },
+    {
+      "name": "~ Manji Dragonfly",
+      "input": "...(a+b)B+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Reverse Shark Attack Combo",
+      "input": "66(B+K)A+BK",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MHM"
+      ]
+    },
+    {
+      "name": "Reverse Shark Deathcopter",
+      "input": "66(B+K)(A+B)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MHM",
+        "Other: UA, early last hit: 4/2/G"
+      ]
+    },
+    {
+      "name": "~ Manji Dragonfly",
+      "input": "...(a+b)B+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Ninja Sun Flare",
+      "input": "44_22_88B+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "~ Flea",
+      "input": "...b+kB+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "~ Indian Stance",
+      "input": "...b+K2B+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Confusion",
+      "input": "66A+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Other: Ends BT"
+      ]
+    },
+    {
+      "name": "Suicide",
+      "input": "66(A+K)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA, self-damage"
+      ]
+    },
+    {
+      "name": "Manji Blood Dance",
+      "input": "66(A+K)AAAA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M x5",
+        "Other: UA, self-damage"
+      ]
+    },
+    {
+      "name": "Double Suicide",
+      "input": "66(A+K)A+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: UA, self-damage"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "Run K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Jaw Smash",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Jumping Body Slam",
+      "input": "B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Elegant Storm",
+      "input": "Left TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Wheels of Hell",
+      "input": "Right TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Tornado Drop",
+      "input": "Back TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Soul Possession",
+      "input": "b+g6",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH, dmg if enemy techs throw"
+      ]
+    },
+    {
+      "name": "Soul Siphon",
+      "input": "b+g4",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH, steal health"
+      ]
+    },
+    {
+      "name": "Rainbow Drop",
+      "input": "214A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Oni Killer",
+      "input": "Stance GA+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Nimbus",
+      "input": "Stance GB+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Flea",
       "input": "B+K",
-      "type": "Move"
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS, BT possible"
+      ]
     },
     {
-      "name": "Rapid Gale",
-      "input": "A, A",
-      "type": "Move"
+      "name": "Rolling Spark",
+      "input": "FLE A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: L"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Skull Splitter",
+      "input": "FLE B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: Delayable"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Sakanobori ~ Manji Dragonfly",
+      "input": "FLE K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Tsurubebi",
+      "input": "FLE (K)",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: L"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Jumping Flea ~ Flea",
+      "input": "FLE4_5_6A+B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Vaulting Flea ~ Flea",
+      "input": "4_5_6(A+B)",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Flea Digger ~ Flea",
+      "input": "FLE 2A+B",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Mine Spark ~ Flea",
+      "input": "FLE B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: SM",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Indian Stance",
+      "input": "FLE 2B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Manji Dragonfly",
+      "input": "FLE 8B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Fleat Step",
+      "input": "FLE 4_6",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Running Flea",
+      "input": "FLE 66",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: LLL"
+      ]
+    },
+    {
+      "name": "Flea Dance ~ Flea",
+      "input": "FLE 2_8",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Indian Stance",
+      "input": "2B+K",
+      "type": "Special Stances",
+      "properties": []
+    },
+    {
+      "name": "Warp Rolling Shark",
+      "input": "IND A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Warp Heaven Divide",
+      "input": "IND B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Warp Kangaroo Kick",
+      "input": "IND K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Extermination ~ Indian Stance",
+      "input": "IND A+B",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS, GI vs HML veritcal/stab"
+      ]
+    },
+    {
+      "name": "Raging Kneel Head",
+      "input": "IND 4_6A+BK",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Warp",
+      "input": "IND 2A+B",
+      "type": "Special Stances",
+      "properties": []
+    },
+    {
+      "name": "Flea",
+      "input": "IND B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Indian Healing Stance ~ IND",
+      "input": "IND (2B+K)",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Manji Dragonfly",
+      "input": "IND 8B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "No Fear",
+      "input": "IND A+K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: UA, self-damage"
+      ]
+    },
+    {
+      "name": "Intrepid",
+      "input": "IND (A+K)",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: UA, self-damage"
+      ]
+    },
+    {
+      "name": "Manji Blood Star ~ Warp",
+      "input": "IND A+KAA+B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: MM",
+        "Other: UA, self-damage"
+      ]
+    },
+    {
+      "name": "Manji Blood Star ~ Intrepid",
+      "input": "IND A+KAA+K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: MMM",
+        "Other: UA, self-damage"
+      ]
+    },
+    {
+      "name": "No Fear ~ Warp",
+      "input": "IND A+KA+B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: UA, self-damage"
+      ]
+    },
+    {
+      "name": "Manji Dragonfly",
+      "input": "8B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Flag Slap",
+      "input": "DGF A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: H",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Dragonfly Blade",
+      "input": "DGF B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Dragonfly Sweep",
+      "input": "DGF K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Spirited Away",
+      "input": "DGF A+B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: H",
+        "Other: TH vs midair"
+      ]
+    },
+    {
+      "name": "Dragonfly Turbo ~ DGF",
+      "input": "DGF 8WR A+B",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS, self-damage"
+      ]
+    },
+    {
+      "name": "Flea",
+      "input": "DGF B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Indian Stance",
+      "input": "DGF 2B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Super Dragonfly",
+      "input": "DGF 8B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS, self-damage while SDF"
+      ]
+    },
+    {
+      "name": "Parachute Spinner",
+      "input": "SDF A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Transcendent Dragonfly",
+      "input": "SDF B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Acrobatic Bliss",
+      "input": "SDF KK",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: SM L"
+      ]
+    },
+    {
+      "name": "Transcendent Turbo ~ SDF",
+      "input": "SDF 8WR A+B",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS, self-damage"
+      ]
+    },
+    {
+      "name": "Spinning Fall ~ Flea",
+      "input": "SDF B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Daruma Drop ~ Indian Stance",
+      "input": "SDF 2B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: SM LM",
+        "Other: BA, SS"
+      ]
+    },
+    {
+      "name": "Manji Dragonfly",
+      "input": "SDF 8B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Paradise Death",
+      "input": "SDF A+K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: UA, self-damage"
+      ]
+    },
+    {
+      "name": "Iron-Fist Possession",
+      "input": "4A+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: *See below*"
+      ]
+    },
+    {
+      "name": "Golden Gehosen",
+      "input": "3A BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MMM"
+      ]
+    },
+    {
+      "name": "Mani Yield Fist",
+      "input": "6B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Kabuki Compendium",
+      "input": "66A BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Manji Virtue and Influence",
+      "input": "CE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: LL"
+      ]
     }
   ]
 }

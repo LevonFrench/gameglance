@@ -1,56 +1,2826 @@
 {
+  "name": "Yoshimitsu",
   "character": "Yoshimitsu",
+  "game": "SoulCalibur VI",
   "movesList": [
     {
-      "name": "Soul Siphon",
-      "input": "4A+B",
-      "type": "Move"
+      "name": "Splinter Gale Lightning Blade",
+      "input": "A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%"
+      ]
     },
     {
-      "name": "Manji Carwheel",
-      "input": "236B",
-      "type": "Move"
+      "name": "Splinter Gale Lightning Blade",
+      "input": "AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10,8",
+        "Block: -8",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Splinter Gale Lightning Blade",
+      "input": "AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10,8,18",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 7%",
+        "Notes: Tech Crouch[14-24]"
+      ]
+    },
+    {
+      "name": "Splinter Gale Lightning Blade",
+      "input": "BEAAA+B",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10,8,10,15",
+        "Block: 2",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 12%",
+        "Notes: Counter Hit Combo. BA"
+      ]
+    },
+    {
+      "name": "Splinter Gale Lightning Blade",
+      "input": "AAaB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10,8,20",
+        "Block: -6",
+        "Hit: 0",
+        "Counter: KND",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Parting Thrust",
+      "input": "a6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 26",
+        "Block: -2",
+        "Hit: 4",
+        "Counter: 8",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[9-12]"
+      ]
+    },
+    {
+      "name": "Side Blow",
+      "input": "aB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 31",
+        "Block: -4",
+        "Hit: 0",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: soul steal"
+      ]
+    },
+    {
+      "name": "Heshikirigari",
+      "input": "6A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%",
+        "Notes: after 7 hits with meter draining attacks"
+      ]
+    },
+    {
+      "name": "Heshikirigari",
+      "input": "6AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12,30",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: KND",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Heshikirigari",
+      "input": "6AB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12,14,24",
+        "Block: 4",
+        "Hit: 8",
+        "Counter: KND",
+        "Guard Burst: 17%",
+        "Notes: Counter Hit Combo. Tech Crouch[11-22]."
+      ]
+    },
+    {
+      "name": "Golden Bar",
+      "input": "3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: -4",
+        "Counter: 6",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Golden Bar",
+      "input": "3AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,12",
+        "Block: -4",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo. Tech Crouch[5-8]. Trasfers to hit-throw on CH for 30 more damage."
+      ]
+    },
+    {
+      "name": "Golden Gate",
+      "input": "3AB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,24",
+        "Block: -18",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo. Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Partin Grass",
+      "input": "2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[8-RC]"
+      ]
+    },
+    {
+      "name": "Manji Carve Fist",
+      "input": "2aB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 16",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[8-RC]"
+      ]
+    },
+    {
+      "name": "Asura Sweeper",
+      "input": "1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 24",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 8%",
+        "Notes: Tech Crouch[12-24]"
+      ]
+    },
+    {
+      "name": "Slap U Silly",
+      "input": "4A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 15",
+        "Block: -2",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Slap U Silly",
+      "input": "4AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 15,5",
+        "Block: -4",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Slap U Silly",
+      "input": "4AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 15,5,5",
+        "Block: -4",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Slap U Silly",
+      "input": "4AAAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 15,5,5,5",
+        "Block: -4",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 6%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Slap U Silly",
+      "input": "4AAAAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 15,5,5,5,15",
+        "Block: DZY",
+        "Hit: DZY",
+        "Counter: DZY",
+        "Guard Burst: 8%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Slap U Silly",
+      "input": "BE4AA+B",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 15,4,4,4,4,8,2",
+        "Block: 8",
+        "Hit: 18",
+        "Counter: 18",
+        "Guard Burst: 9%",
+        "Notes: Counter Hit Combo."
+      ]
+    },
+    {
+      "name": "Samurai Cutter",
+      "input": "214A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 24",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: TS. Tech Crouch[4-44]."
+      ]
+    },
+    {
+      "name": "Exorcism Fist",
+      "input": "WRA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[0-8]"
+      ]
+    },
+    {
+      "name": "~ Manji Dragonfly",
+      "input": "WRAA+B",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16,14",
+        "Block: 6",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 8%",
+        "Notes: Normal Hit Combo. Tech Jump.  into DGF"
+      ]
+    },
+    {
+      "name": "Partin Grass",
+      "input": "FCA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Manji Carve Fist",
+      "input": "FCaB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 16",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Flashing Steel",
+      "input": "FC3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 22",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch.  once per match with health below 5%"
+      ]
+    },
+    {
+      "name": "Stone Fists",
+      "input": "FC1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 14",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[5-RC]"
+      ]
+    },
+    {
+      "name": "Stone Fists",
+      "input": "FC1AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 14,7",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo. Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Stone Fists",
+      "input": "FC1AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 14,7,7",
+        "Block: -10",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo. Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Stone Fists",
+      "input": "FC1AAAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 14,7,7,10",
+        "Block: -10",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 6%",
+        "Notes: Counter Hit Combo. Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Stone Fists",
+      "input": "FC1AAAAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 14,7,7,10,10",
+        "Block: DZY",
+        "Hit: DZY",
+        "Counter: DZY",
+        "Guard Burst: 8%",
+        "Notes: Normal Hit Combo. Tech Crouch"
+      ]
+    },
+    {
+      "name": "Kurama Itto",
+      "input": "7A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 4%",
+        "Notes: Can RO. Tech Jump[13-36]"
+      ]
+    },
+    {
+      "name": "Kurama Itto",
+      "input": "8A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 27",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 4%",
+        "Notes: Can RO. Tech Jump[13-36]"
+      ]
+    },
+    {
+      "name": "Kurama Itto",
+      "input": "9A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 30",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 4%",
+        "Notes: Can RO. Tech Jump[13-36]"
+      ]
+    },
+    {
+      "name": "Reverse Splinter Gale",
+      "input": "BTA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Reverse Grass Part",
+      "input": "BT2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -6",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[11-RC]"
+      ]
+    },
+    {
+      "name": "Vampiric Rain",
+      "input": "B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Vampiric Rain",
+      "input": "BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,14",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Vampiric Rain",
+      "input": "BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,14,16",
+        "Block: -12",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 9%",
+        "Notes: Counter Hit Combo."
+      ]
+    },
+    {
+      "name": "Yomi Gake",
+      "input": "bA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Fastest input has further range. Tech Crouch[10-13]. 40 dmg on CH"
+      ]
+    },
+    {
+      "name": "Door Knocker",
+      "input": "6B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Door Knocker",
+      "input": "6BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,6",
+        "Block: -14",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Door Knocker",
+      "input": "BE6BBA+B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,6,18",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: Counter Hit Combo.  into DGF. Tech Crouch[9-19]. Tech Jump[24-46]"
+      ]
+    },
+    {
+      "name": "Door Knocker",
+      "input": "6BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,6,8",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Door Knocker",
+      "input": "BE6BBBA+B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,6,8,18",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 16%",
+        "Notes: Counter Hit Combo.  into DGF. Tech Crouch[9-19]. Tech Jump[24-46]"
+      ]
+    },
+    {
+      "name": "Door Knocker",
+      "input": "6BBBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,6,8,19",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 11%"
+      ]
+    },
+    {
+      "name": "Submission Slash",
+      "input": "3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22,4,10",
+        "Block: -16",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 6%"
+      ]
+    },
+    {
+      "name": "~ Manji Dragonfly",
+      "input": "3(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22,4,10",
+        "Block: -10",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 6%",
+        "Notes: into DGF"
+      ]
+    },
+    {
+      "name": "~ Manji Dragonfly",
+      "input": "3BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22,4,10,13",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Normal Hit Combo. 25 dmg if all previous hits were blocked/whiffed."
+      ]
+    },
+    {
+      "name": "Death Slash",
+      "input": "2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Death Slash",
+      "input": "short2(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 22",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: -",
+        "Notes: Damage and duration depend on hold timing"
+      ]
+    },
+    {
+      "name": "Death Slash",
+      "input": "medium2(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 40",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Damage and duration depend on hold timing"
+      ]
+    },
+    {
+      "name": "Death Slash",
+      "input": "long2(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 50",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Damage and duration depend on hold timing"
+      ]
+    },
+    {
+      "name": "Nebular Burst",
+      "input": "1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 14",
+        "Block: -18",
+        "Hit: -10",
+        "Counter: -10",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Nebular Burst",
+      "input": "1(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 14",
+        "Block: -4",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: into IND"
+      ]
+    },
+    {
+      "name": "Nebular Burst",
+      "input": "1BA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 14,14",
+        "Block: -20",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo. Tech Crouch[0-13]"
+      ]
+    },
+    {
+      "name": "Nebular Burst",
+      "input": "1BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 14,30",
+        "Block: -4",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo. Forces crouch on block and hit"
+      ]
+    },
+    {
+      "name": "Hannya Hammer",
+      "input": "4B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 14",
+        "Block: -12",
+        "Hit: -8",
+        "Counter: -8",
+        "Guard Burst: 2%",
+        "Notes: Soul steal"
+      ]
+    },
+    {
+      "name": "Inner Palm",
+      "input": "WRB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 28",
+        "Block: -10",
+        "Hit: 10",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[0-18]"
+      ]
+    },
+    {
+      "name": "Snowflake",
+      "input": "FCB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 18",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Heretic Sword",
+      "input": "FC3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 30",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Heretic Sword",
+      "input": "FC3(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 30",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Soul steal"
+      ]
+    },
+    {
+      "name": "Quarter Moon",
+      "input": "7B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 28",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[7-29]"
+      ]
+    },
+    {
+      "name": "Quarter Moon",
+      "input": "8B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 30",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[7-29]"
+      ]
+    },
+    {
+      "name": "Quarter Moon",
+      "input": "9B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 32",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[7-29]"
+      ]
+    },
+    {
+      "name": "Reverse Drizzle",
+      "input": "BTB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Reverse Snowflake",
+      "input": "BT2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Side Kick",
+      "input": "K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 14",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Ballerina Spin",
+      "input": "6K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 30",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Ballerina Spin",
+      "input": "BE6KA+B",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20,11,22",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Mid Kick",
+      "input": "3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Arc Kick",
+      "input": "2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Nozuchi Fumi",
+      "input": "1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Wood Cutter",
+      "input": "4K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -10",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Wood Cutter",
+      "input": "4KB",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,30",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Wood Cutter",
+      "input": "short4K(B)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,22",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 9%",
+        "Notes: Same properties as ."
+      ]
+    },
+    {
+      "name": "Wood Cutter",
+      "input": "medium4K(B)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,40",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Same properties as ."
+      ]
+    },
+    {
+      "name": "Wood Cutter",
+      "input": "long4K(B)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,50",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Same properties as ."
+      ]
+    },
+    {
+      "name": "Steel Wind",
+      "input": "236K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 29",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[4-6]. Tech Jump[6-33]"
+      ]
+    },
+    {
+      "name": "Steel Wind",
+      "input": "236K(K)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 29",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump.  into DGF"
+      ]
+    },
+    {
+      "name": "Steel Wind",
+      "input": "236KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 29,30",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Steel Wind",
+      "input": "236K4",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 29",
+        "Block: -38",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 9%",
+        "Notes: into back jump"
+      ]
+    },
+    {
+      "name": "Steel Wind",
+      "input": "236KK4",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 29,30",
+        "Block: -38",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 15%",
+        "Notes: into back jump"
+      ]
+    },
+    {
+      "name": "Arc Kick",
+      "input": "FCK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Knee Cap",
+      "input": "FC3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Manji Spin Low Kicks",
+      "input": "FC1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 8",
+        "Block: -20",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Manji Spin Low Kicks",
+      "input": "FC1KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 8,8",
+        "Block: -22",
+        "Hit: -14",
+        "Counter: -14",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo. Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Manji Spin Low Kicks",
+      "input": "FC1KKK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 8,8,6",
+        "Block: -22",
+        "Hit: -12",
+        "Counter: -12",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo. Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Manji Spin Low Kicks",
+      "input": "FC1KKKK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 8,8,6,6",
+        "Block: -22",
+        "Hit: -12",
+        "Counter: -12",
+        "Guard Burst: 6%",
+        "Notes: Counter Hit Combo. Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Manji Spin Low Kicks",
+      "input": "FC1KKKKK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 8,8,6,6,10",
+        "Block: DZY",
+        "Hit: DZY",
+        "Counter: DZY",
+        "Guard Burst: 8%",
+        "Notes: Tech Crouch[1-66]"
+      ]
+    },
+    {
+      "name": "Rising Knee",
+      "input": "WRK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[2-11]. Tech Jump[12-35]"
+      ]
+    },
+    {
+      "name": "Avoiding the Puddle",
+      "input": "7K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: KND/-2",
+        "Counter: KND/-2",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump[9-31]"
+      ]
+    },
+    {
+      "name": "Avoiding the Puddle",
+      "input": "8K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: KND/-2",
+        "Counter: KND/-2",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump[9-31]"
+      ]
+    },
+    {
+      "name": "Avoiding the Puddle",
+      "input": "9K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: KND/-2",
+        "Counter: KND/-2",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump[9-31]"
+      ]
+    },
+    {
+      "name": "Reverse Koragashi",
+      "input": "BTK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Reverse Dust Banishment",
+      "input": "BT2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Poison Breath",
+      "input": "A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 35",
+        "Damage: 30",
+        "Block: 4",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%",
+        "Notes: . Tech Crouch[1-17].  vs RE/GI"
+      ]
+    },
+    {
+      "name": "Toxic Breath",
+      "input": "+(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 44",
+        "Damage: 40",
+        "Block: 8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%",
+        "Notes: . Tech Crouch[1-17].  vs RE/GI"
+      ]
+    },
+    {
+      "name": "Bad Stomach to Backflip Kick",
+      "input": "a+bK",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: TS"
+      ]
+    },
+    {
+      "name": "Bad Stomach to Backflip Kick",
+      "input": "BT2a+bK",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 18,18",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%",
+        "Notes: Tech Jump. Tech Crouch. Forces crouch on block"
+      ]
+    },
+    {
+      "name": "Digging Cyclone ~ Flea",
+      "input": "6A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 16",
+        "Block: 7",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: into FLE"
+      ]
+    },
+    {
+      "name": "Spine Divine",
+      "input": "4A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 36",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 9%",
+        "Notes: versus whiffed RE"
+      ]
+    },
+    {
+      "name": "Deathcopter",
+      "input": "8A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 100",
+        "Damage: 80",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Tech Jump[8-115]"
+      ]
+    },
+    {
+      "name": "Deathcopter",
+      "input": "8A+BG",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 55",
+        "Damage: 40",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Tech Jump[1-23]. Can use  instead of"
+      ]
+    },
+    {
+      "name": "Deathcopter",
+      "input": "8A+B4",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 92",
+        "Damage: 42",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Tech Jump[1-63]"
+      ]
+    },
+    {
+      "name": "Moonsault Slayer",
+      "input": "236A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 60",
+        "Damage: 60",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Tech Crouch[60-89]. Tech Jump[10-60]"
+      ]
+    },
+    {
+      "name": "Flea",
+      "input": "Flea StanceB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 15",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Tech Jump.  into FLE"
+      ]
+    },
+    {
+      "name": "Insiand Stance",
+      "input": "Indian Stance2B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 15",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into IND"
+      ]
+    },
+    {
+      "name": "Manji Dragonfly",
+      "input": "Manji Dragonfly8B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 15",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into DGF"
+      ]
+    },
+    {
+      "name": "Spinning Evade",
+      "input": "4B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 17",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Evades i12 verticals up to -6"
+      ]
+    },
+    {
+      "name": "Spinning Evade",
+      "input": "4B+KB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 17",
+        "Damage: -",
+        "Block: DZY",
+        "Hit: DZY",
+        "Counter: DZY",
+        "Guard Burst: -",
+        "Notes: Can tap multiple Bs, each cost 9 health"
+      ]
+    },
+    {
+      "name": "Soul Stealer",
+      "input": "A+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 8",
+        "Damage: 10",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: versus whiffed attack.  vs high and mid horizontals"
+      ]
+    },
+    {
+      "name": "Soul Stealer",
+      "input": "BEA+KA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 24",
+        "Block: -10",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 15%",
+        "Notes: versus opponent doing GI"
+      ]
+    },
+    {
+      "name": "Harakiri",
+      "input": "2A+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 90",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Tech Crouch[80-101]. Cost 90 HP"
+      ]
+    },
+    {
+      "name": "Suicide",
+      "input": "6A+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Feint. Ends in BT"
+      ]
+    },
+    {
+      "name": "Suicide",
+      "input": "+6(A)+(K)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 44",
+        "Damage: 90",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Seppuka, cost 80 HP. Tech Crouch[86-106]"
+      ]
+    },
+    {
+      "name": "Suicide",
+      "input": "+6(A)+(K)G",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Feint. Ends in BT"
+      ]
+    },
+    {
+      "name": "Suicide",
+      "input": "+6(A)+(K)2",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 54",
+        "Damage: 95",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Seppuka, cost 80 HP."
+      ]
+    },
+    {
+      "name": "Suicide",
+      "input": "+6(A)+(K)2G",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Feint"
+      ]
+    },
+    {
+      "name": "Suicide",
+      "input": "+6(A)+(K)A+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 44",
+        "Damage: 90,9",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Seppuka, cost 200 HP. Tech Crouch[101-122]"
+      ]
+    },
+    {
+      "name": "Suicide",
+      "input": "+6(A)+(K)A",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 44",
+        "Damage: 90,2",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Seppuka, cost 90 HP. Can do multiple spins, each cost 90 HP."
+      ]
+    },
+    {
+      "name": "Suicide",
+      "input": "+6(A)+(K)AA",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 44",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Seppuka into spin into justframe recovery. Ends in BT, gains 125% soul gauge."
+      ]
+    },
+    {
+      "name": "Sword Face Smash",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 50",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Jumping Body Slam",
+      "input": "4A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 55",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Wheels of Hell",
+      "input": "RIGHT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 60",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Elegant Storm",
+      "input": "LEFT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 60",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Tornado Drop",
+      "input": "BACK THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 70",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Soul Siphon",
+      "input": "6A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 29",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Gains 25% of soul gauge. If broken, cost 20HP and do no damage."
+      ]
+    },
+    {
+      "name": "Soul Possession",
+      "input": "6A+G6",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 29",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Gains 25% of soul gauge. If not broken, cost 20HP and do no damage."
+      ]
     },
     {
       "name": "Rainbow Drop",
+      "input": "214A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 68",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Kabuki",
+      "input": "(3)_(6)_(9)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 8",
+        "Guard Burst: 1%",
+        "Notes: Soul steal on CH"
+      ]
+    },
+    {
+      "name": "Ganto",
+      "input": "(2)_(8)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 31",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: versus opponent with 2 meters"
+      ]
+    },
+    {
+      "name": "Flagstaff",
+      "input": "(1)_(4)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 26",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Circium",
+      "input": "(3)_(6)_(9)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 32",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Shrine",
+      "input": "(2)_(8)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 15",
+        "Block: -12",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[4-15]"
+      ]
+    },
+    {
+      "name": "Sword Stab",
+      "input": "(1)_(4)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 80",
+        "Damage: 130",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: UA"
+      ]
+    },
+    {
+      "name": "Sword Poke Windmill",
+      "input": "(1)_(4)_(7)bA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 81",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: STN",
+        "Guard Burst: 12%"
+      ]
+    },
+    {
+      "name": "Face Spitter",
+      "input": "(1)_(4)_(7)bB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: -16",
+        "Hit: -2",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: on CH"
+      ]
+    },
+    {
+      "name": "Fubuki",
+      "input": "(3)_(6)_(9)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[9-33]."
+      ]
+    },
+    {
+      "name": "Guillotine Crow Kick",
+      "input": "(2)_(8)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 10,14",
+        "Block: 2",
+        "Hit: 14",
+        "Counter: 14",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[4-10]"
+      ]
+    },
+    {
+      "name": "Kanaroo Kick",
+      "input": "(1)_(4)_(7)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 30",
+        "Block: -10",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[5-58].  on whiffed GI"
+      ]
+    },
+    {
+      "name": "Crying Spirit Sword",
+      "input": "(3)_(6)_(9)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 38",
+        "Block: -4",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%",
+        "Notes: Forces crouch on block.."
+      ]
+    },
+    {
+      "name": "Crying Spirit Sword",
+      "input": "+(3)_(6)_(9)(A)+(B)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: intoFLE"
+      ]
+    },
+    {
+      "name": "Crying Spirit Sword",
+      "input": "(3)_(6)_(9)A+B2B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 42",
+        "Damage: 20",
+        "Block: -18",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Solar Kick Shark Attack",
+      "input": "(3)_(6)_(9)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -12",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 2%",
+        "Notes: on whiffed low. Tech Crouch[17-22]. Tech Jump[14-16]"
+      ]
+    },
+    {
+      "name": "Solar Kick Shark Attack",
+      "input": "+(3)_(6)_(9)(B)+(K)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -17",
+        "Hit: -7",
+        "Counter: -7",
+        "Guard Burst: 2%",
+        "Notes: on whiffed low. Tech Crouch[17-22]. Tech Jump[14-16]. Ends in BT"
+      ]
+    },
+    {
+      "name": "Solar Kick Shark Attack",
+      "input": "(3)_(6)_(9)B+KA+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26,14",
+        "Block: -26",
+        "Hit: -18",
+        "Counter: -18",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Solar Kick Shark Attack",
+      "input": "+(3)_(6)_(9)B+K(A)+(B)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26,14",
+        "Block: -26",
+        "Hit: -18",
+        "Counter: -18",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo.  into IND"
+      ]
+    },
+    {
+      "name": "Solar Kick Shark Attack",
+      "input": "+(3)_(6)_(9)(B)+(K)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26,14",
+        "Block: -26",
+        "Hit: -18",
+        "Counter: -18",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Solar Kick Shark Attack",
+      "input": "++(3)_(6)_(9)(B)+(K)(A)+(B)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26,14",
+        "Block: -26",
+        "Hit: -18",
+        "Counter: -18",
+        "Guard Burst: 9%",
+        "Notes: into IND. Backturned IND"
+      ]
+    },
+    {
+      "name": "Solar Kick Shark Attack",
+      "input": "(3)_(6)_(9)B+KA+BK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26,14,26",
+        "Block: -18",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 14%",
+        "Notes: Tech Crouch[1-51]"
+      ]
+    },
+    {
+      "name": "Ninja Sun Flare",
+      "input": "(1)_(4)_(7)_(2)_(8)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 40",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Tech Crouch[7-68]. . Guard cancellable into FC"
+      ]
+    },
+    {
+      "name": "Ninja Sun Flare",
+      "input": "+(1)_(4)_(7)_(2)_(8)(B)+(K)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into IND"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "RUNK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Rolling Spark",
+      "input": "FLEA",
+      "type": "Flea Stance",
+      "properties": [
+        "Impact: 36",
+        "Damage: 28",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump[1-12]. Tech Crouch[12-38]"
+      ]
+    },
+    {
+      "name": "Rolling Spark",
+      "input": "FLE6A",
+      "type": "Flea Stance",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: 8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: into DGF"
+      ]
+    },
+    {
+      "name": "Skull Splitter",
+      "input": "FLEB",
+      "type": "Flea Stance",
+      "properties": [
+        "Impact: 14",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Skull Splitter",
+      "input": "FLE(B)",
+      "type": "Flea Stance",
+      "properties": [
+        "Impact: 22",
+        "Damage: 30",
+        "Block: 0",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%"
+      ]
+    },
+    {
+      "name": "Flea Kicker",
+      "input": "FLEK",
+      "type": "Flea Stance",
+      "properties": [
+        "Impact: 24",
+        "Damage: 25",
+        "Block: 2",
+        "Hit: 14",
+        "Counter: 14",
+        "Guard Burst: 19%",
+        "Notes: into IND. Tech Jump[1-32]"
+      ]
+    },
+    {
+      "name": "Flea Gouge",
+      "input": "FLEA+B",
+      "type": "Flea Stance",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: BA. Tech Jump[1-17]"
+      ]
+    },
+    {
+      "name": "Flea Roll",
+      "input": "FLEB+K",
+      "type": "Flea Stance",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Feint. Tech Crouch[9-RC]. 34 frames in total"
+      ]
+    },
+    {
+      "name": "Jumping Flea",
+      "input": "FLE7_8_9",
+      "type": "Flea Stance",
+      "properties": [
+        "Impact: 36",
+        "Damage: 20",
+        "Block: 6",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 2%",
+        "Notes: back to FLE. 32 frames in total"
+      ]
+    },
+    {
+      "name": "Running Flea",
+      "input": "FLE66",
+      "type": "Flea Stance",
+      "properties": [
+        "Impact: 8",
+        "Damage: 5, 5, 5, 5",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 7%",
+        "Notes: Normal Hit Combo. Soul steal"
+      ]
+    },
+    {
+      "name": "Warp Rolling Shark",
+      "input": "INDA",
+      "type": "Indian Stance",
+      "properties": [
+        "Impact: 40",
+        "Damage: 28",
+        "Block: -16",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Enlightened Sun Flare",
+      "input": "INDB",
+      "type": "Indian Stance",
+      "properties": [
+        "Impact: 40",
+        "Damage: 25",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: when dodging attack"
+      ]
+    },
+    {
+      "name": "Tobi Ushikawa ~ Manji Dragonfly",
+      "input": "INDK",
+      "type": "Indian Stance",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14,10",
+        "Block: 8",
+        "Hit: 16",
+        "Counter: 34",
+        "Guard Burst: 3%",
+        "Notes: into DGF. +16 oC only is 2nd kick is cH (not 1st)"
+      ]
+    },
+    {
+      "name": "Raging Kneel Head",
+      "input": "IND2B+KB",
+      "type": "Indian Stance",
+      "properties": [
+        "Impact: 18",
+        "Damage: 24",
+        "Block: -34",
+        "Hit: -26",
+        "Counter: -26",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[4-46]. Tech Jump[1-4]"
+      ]
+    },
+    {
+      "name": "No Fear",
+      "input": "INDA+K",
+      "type": "Indian Stance",
+      "properties": [
+        "Impact: 30",
+        "Damage: 60",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: . Seppuku, cost 60 HP. Gains 100% soul gauge. Tech Crouch[1-111]"
+      ]
+    },
+    {
+      "name": "Intrepid",
+      "input": "IND+(A)+(K)",
+      "type": "Indian Stance",
+      "properties": [
+        "Impact: 30",
+        "Damage: 60",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: . Seppuku, cost 110 HP. Gains 200% soul gauge. Tech Crouch[1-111]"
+      ]
+    },
+    {
+      "name": "Manji Blood Star",
+      "input": "INDA+KA",
+      "type": "Indian Stance",
+      "properties": [
+        "Impact: 16",
+        "Damage: 60,8",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Tech Jump"
+      ]
+    },
+    {
+      "name": "Warp",
+      "input": "IND8",
+      "type": "Indian Stance",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Teleports to opponents right side"
+      ]
+    },
+    {
+      "name": "Warp",
+      "input": "IND6",
+      "type": "Indian Stance",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Teleports in front of opponent"
+      ]
+    },
+    {
+      "name": "Warp",
+      "input": "IND4",
+      "type": "Indian Stance",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Teleports on the same place"
+      ]
+    },
+    {
+      "name": "Warp",
+      "input": "IND2",
+      "type": "Indian Stance",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Teleports behind opponent"
+      ]
+    },
+    {
+      "name": "Akitsu Mandala",
+      "input": "DGFA",
+      "type": "Manji Dragonfly",
+      "properties": [
+        "Impact: 18",
+        "Damage: 12,12,12",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: Tech Jump[1-?]"
+      ]
+    },
+    {
+      "name": "Dragonfly Blade",
+      "input": "DGFB",
+      "type": "Manji Dragonfly",
+      "properties": [
+        "Impact: 30",
+        "Damage: 26",
+        "Block: 2",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[1-29]. Tech Crouch[31-50]."
+      ]
+    },
+    {
+      "name": "Dragonfly Sweep",
+      "input": "DGFK",
+      "type": "Manji Dragonfly",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -16",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[19-34]. Tech Jump[1-17]"
+      ]
+    },
+    {
+      "name": "Spirited Away ~ Manji Dragonfly",
+      "input": "DGFA+B",
+      "type": "Manji Dragonfly",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -5",
+        "Hit: 12",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: Air throw. Upon landing, perfect input  grants soul gauge; if fails, Yoshi stumbles. On whif, back to DGF"
+      ]
+    },
+    {
+      "name": "Parachute Spinner",
+      "input": "SGDFA",
+      "type": "Super Dragonfly",
+      "properties": [
+        "Impact: 30",
+        "Damage: 11,11,11",
+        "Block: -7",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Transcendent Dragonfly",
+      "input": "SGDFB",
+      "type": "Super Dragonfly",
+      "properties": [
+        "Impact: 21",
+        "Damage: 33",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: . Tech Crouch[22-32]. Tech Jump[1-22]"
+      ]
+    },
+    {
+      "name": "Acrobatic Bliss",
+      "input": "SGDFKK",
+      "type": "Super Dragonfly",
+      "properties": [
+        "Impact: 65",
+        "Damage: 33",
+        "Block: -8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%",
+        "Notes: Tech Jump[1-69]. Perfect input required. Gains soul gauge. If failed, stumbles (-100)"
+      ]
+    },
+    {
+      "name": "Spinning Fall",
+      "input": "SGDFB+K",
+      "type": "Super Dragonfly",
+      "properties": [
+        "Impact: 54",
+        "Damage: 66",
+        "Block: 0",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%",
+        "Notes: Tech Jump[1-60].  into FLE"
+      ]
+    },
+    {
+      "name": "Dragonfly Super into Manji",
+      "input": "SGDF8B+K",
+      "type": "Super Dragonfly",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into DGF."
+      ]
+    },
+    {
+      "name": "Daruma Drop",
+      "input": "SGDF2B+K",
+      "type": "Super Dragonfly",
+      "properties": [
+        "Impact: 54",
+        "Damage: 44,33",
+        "Block: 32",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: into IND. Normal Hit Combo. . Input 6 to increase range."
+      ]
+    },
+    {
+      "name": "Paradise Death",
+      "input": "SGDFA+K",
+      "type": "Super Dragonfly",
+      "properties": [
+        "Impact: 62",
+        "Damage: 132",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: UB. Seppuka"
+      ]
+    },
+    {
+      "name": "Johari Thiste",
+      "input": "B+G",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 46",
+        "Damage: 30",
+        "Block: 2",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 16%",
+        "Notes: [6-30]"
+      ]
+    },
+    {
+      "name": "Johari Thiste",
+      "input": "+(B)+(G)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 66",
+        "Damage: 40",
+        "Block: 8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 20%",
+        "Notes: .  [6-50]"
+      ]
+    },
+    {
+      "name": "Shudaro War Fan",
+      "input": "REA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 20",
+        "Block: 8",
+        "Hit: 16",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: into DGF."
+      ]
+    },
+    {
+      "name": "Shudaro War Fan",
+      "input": "REAA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 22,17",
+        "Block: -",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: Normal Hit Combo.  into DGF."
+      ]
+    },
+    {
+      "name": "Famished Preta",
+      "input": "REB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 30",
+        "Block: -",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: 50%"
+      ]
+    },
+    {
+      "name": "Road to Madness",
+      "input": "REK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 44",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Ghost Thief Funreal",
       "input": "A+B+K",
-      "type": "Critical Edge"
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 77",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: Flash on frame 23. . . Tech Jump"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Soul Charge",
+      "input": "4A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 6",
+        "Damage: 0",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 0%",
+        "Notes: invincible since i4. Pushback happens at i6"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Yin and Yang Recursion",
+      "input": "236A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 36",
+        "Block: -1",
+        "Hit: 11",
+        "Counter: 11",
+        "Guard Burst: 8%",
+        "Notes: into SDGF. 1-14 activation. 15-60 freeze. 61 hits."
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Manji Tsunami",
+      "input": "SCA+G",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 60",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Is +8 when broken"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Nimbus",
+      "input": "SC4A+G",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 60",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Is +8 when broken"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Golden Bar",
+      "input": "SC3AA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 13,43",
+        "Block: -4",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo. Tech Crouch[5-8]"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Akitsu Mandala",
+      "input": "SC DGFAB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 13,13,13,24",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 17%",
+        "Notes: Normal Hit Combo. . Tech Crouch[33-68]"
+      ]
+    },
+    {
+      "name": "Skull Splitter",
+      "input": "SC DGFBBBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 26,13,15,18",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Normal Hit Combo. Post-1st attacks comes out only on hit"
+      ]
+    },
+    {
+      "name": "Flea Kicker",
+      "input": "SC DGFKA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 28,11,11,6",
+        "Block: X",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 7%",
+        "Notes: Normal Hit Combo. Tech Jump.  into SDGF. Frames on block are unknown/unimportant due to SDGF transition"
+      ]
+    },
+    {
+      "name": "Dragonfly Manji into Super",
+      "input": "SC DGF8B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into SGDF"
+      ]
+    },
+    {
+      "name": "Shudaro War Fan",
+      "input": "SC REAA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 22,17",
+        "Block: -",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: . Normal Hit Combo.  into DGF"
+      ]
     }
   ]
 }

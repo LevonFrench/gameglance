@@ -1,71 +1,1033 @@
 {
+  "name": "Siegfried",
   "character": "Siegfried",
+  "game": "SoulCalibur V",
   "movesList": [
     {
-      "name": "Legacy Testament",
-      "input": "A+B+K",
-      "type": "Critical Edge"
+      "name": "Slash Impact",
+      "input": "AAB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HHL"
+      ]
     },
     {
-      "name": "Overlord",
-      "input": "236B",
-      "type": "Move"
+      "name": "Slash Impact ~ SBH",
+      "input": "AA(B)",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HHL",
+        "Other: SS"
+      ]
     },
     {
-      "name": "Base Hold (Stance)",
-      "input": "2B+K",
-      "type": "Move"
+      "name": "Slash Impact ~ SSH",
+      "input": "(A)",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H",
+        "Other: SS"
+      ]
     },
     {
-      "name": "Chief Hold (Stance)",
-      "input": "6B+K",
-      "type": "Move"
+      "name": "Quick Backspin Slash",
+      "input": "agA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
     },
     {
-      "name": "Night Side (Stance)",
-      "input": "4B+K",
-      "type": "Move"
+      "name": "Quick Backspin Slash ~ SRSH",
+      "input": "ag(A)",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H",
+        "Other: SS"
+      ]
     },
     {
-      "name": "Iron Hammer",
+      "name": "Quick Spin Slash",
+      "input": "6A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Quick Spin Slash ~ SSH",
+      "input": "6(A)",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Armlet Crusher",
+      "input": "3A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Alternate Cross",
+      "input": "3aA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Leg Slash",
+      "input": "2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Double Grounder Beta",
+      "input": "1AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: LL"
+      ]
+    },
+    {
+      "name": "Visor Crusher",
+      "input": "4A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Visor Crusher ~ SRSH",
+      "input": "4(A)",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Leg Slash",
+      "input": "FC A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Maelstrom",
+      "input": "WR AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: ML"
+      ]
+    },
+    {
+      "name": "Maelstrom",
+      "input": "WR Aa2",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Maelstrom ~ SSH",
+      "input": "WR (A)",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Fatal Spin Slash",
+      "input": "WJ A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Turning Head Slash",
+      "input": "BT A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Turning Leg Slash",
+      "input": "BT 2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Break Grounder ~ SBH",
+      "input": "(B)",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Break Grounder",
+      "input": "BBA",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MML"
+      ]
+    },
+    {
+      "name": "Break Grounder (BA)",
+      "input": "BB(A)",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MML",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Break Grounder ~ SCH",
+      "input": "BBa4",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Break Kick",
+      "input": "BBK",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MMH"
+      ]
+    },
+    {
+      "name": "Gauntlet Buster",
+      "input": "b6",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Rampart Buster",
+      "input": "b4",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Piercing Strike",
       "input": "6B",
-      "type": "Move"
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Sky Splitter",
+      "input": "3B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Sky Splitter ~ SCH",
+      "input": "3(B)",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Shadow Buster",
+      "input": "2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Shadow Buster ~ SBH",
+      "input": "2(B)",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Thrust Throw",
+      "input": "1B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: AT"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Hilt Knocker",
+      "input": "4B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Earth Divide",
+      "input": "236B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Split Buster",
+      "input": "FC B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Split Buster ~ SBH",
+      "input": "FC (B)",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Cannonball Lifter",
+      "input": "WR B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Cannonball Lifter ~ SCH",
+      "input": "WR (B)",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Fatal Buster",
+      "input": "WJ B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Turning Sword Thrust",
+      "input": "BT BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: ML"
+      ]
+    },
+    {
+      "name": "Turning Shadow Buster",
+      "input": "BT 2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Grief High Kick",
+      "input": "K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Grief Side Kick",
+      "input": "6K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Axle Head Upper",
+      "input": "3KKB",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MLM"
+      ]
+    },
+    {
+      "name": "Stomping",
+      "input": "2KKKKK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L x5"
+      ]
+    },
+    {
+      "name": "Grief Low Kick",
+      "input": "1K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Head Toe Kick",
+      "input": "4KK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MH"
+      ]
+    },
+    {
+      "name": "Grief Low Kick",
+      "input": "FC K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Rising Night Kicks",
+      "input": "WR K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Fatal Brave Kick",
+      "input": "WJ K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Turning Grief High Kick",
+      "input": "BT K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Turning Grief Low Kick",
+      "input": "BT 2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Blaze Wind ~ Side Hold",
+      "input": "A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MMM",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Blaze Storm",
+      "input": "A+BA",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MML"
+      ]
+    },
+    {
+      "name": "Grief Impact",
+      "input": "2A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Grief Impact ~ SBH",
+      "input": "2(A+B)",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: L",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Rebuff Turn Slash",
+      "input": "66A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H",
+        "Other: BA, GI"
+      ]
+    },
+    {
+      "name": "Memento Slap",
+      "input": "22_88A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Backspin Slash",
+      "input": "44A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Backspin Slash ~ SRSH",
+      "input": "44(A)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Rook Splitter",
+      "input": "66B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sky Splitter",
+      "input": "33_99B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sky Splitter ~ SCH",
+      "input": "33_99(B)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Chariot Splitter",
+      "input": "22_88BB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Chariot Splitter ~ SCH",
+      "input": "22_88Bb4",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Illusion Edge",
+      "input": "11_77B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Illusion Edge ~ SCH",
+      "input": "11_77(B)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Fatal Dive",
+      "input": "44B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Fatal Dive ~ SBH",
+      "input": "44(B)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Fatal Dive ~ SCH",
+      "input": "44bG",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Fatal Drive",
+      "input": "44BB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Fatal Drive ~ SCH",
+      "input": "44B(B)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Shoulder Rush",
+      "input": "66K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Spinning Cross Combo",
+      "input": "22_88KAAB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HHHM"
+      ]
+    },
+    {
+      "name": "Spinning Cross Combo ~ SSH",
+      "input": "22_88KA(A)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HHH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Spin Slash Double Grounder",
+      "input": "22_88KA2AA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HHLL"
+      ]
+    },
+    {
+      "name": "Spinning Phantom Combo",
+      "input": "22_88Ka2AA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HLL"
+      ]
+    },
+    {
+      "name": "Spinning Cross Combo ~ SCH",
+      "input": "22_88K(A)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Cross Combo",
+      "input": "22_88kAAB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HHM"
+      ]
+    },
+    {
+      "name": "Cross Combo ~ SSH",
+      "input": "22_88kA(A)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Progressive Grounder",
+      "input": "22_88kA2AA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HLL"
+      ]
+    },
+    {
+      "name": "Progressive Phantom",
+      "input": "22_88ka2AA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: LL"
+      ]
+    },
+    {
+      "name": "Cross Combo ~ SCH",
+      "input": "22_88k(A)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Spin Kick Combo",
+      "input": "22_88KK",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HM"
+      ]
+    },
+    {
+      "name": "Fatal Ascend Kick",
+      "input": "11_77K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Drop Kick",
+      "input": "44K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Flying Edge",
+      "input": "66A+B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "Run K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Hilt Impact",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Nightmare Killer",
+      "input": "B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Calamity Fall",
+      "input": "Left TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Silent Pride",
+      "input": "Right TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Neutral Judge",
+      "input": "Back TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Flap Jack",
+      "input": "FC A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: L",
+        "Other: AT"
+      ]
+    },
+    {
+      "name": "Over Toss",
+      "input": "FC B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: L",
+        "Other: AT"
+      ]
+    },
+    {
+      "name": "Base Hold",
+      "input": "B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS, GI vs M/L horizontal"
+      ]
+    },
+    {
+      "name": "Reborn Storm",
+      "input": "SBH A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Reborn Storm",
+      "input": "SBH a2",
+      "type": "Special Stances",
+      "properties": [
+        "Other: Ends in FC state"
+      ]
+    },
+    {
+      "name": "Reborn Kaiser",
+      "input": "SBH B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Reborn Basher",
+      "input": "SBH K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Reverse Side Hold",
+      "input": "6B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Geist Slasher",
+      "input": "SRSH A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Geist Strike",
+      "input": "SRSH B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Geist Spinning Low Kick",
+      "input": "SRSH K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Geist Spinning Low Kick ~ SBH",
+      "input": "SRSH (K)",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: L",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Chief Hold",
+      "input": "2_8B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Chief Hold",
+      "input": "BT B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Terror Circular",
+      "input": "SCH A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: HM"
+      ]
+    },
+    {
+      "name": "Terror Circular ~ SSH",
+      "input": "SCH (A)",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: H",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Terror Stomper",
+      "input": "SCH B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Knee Kick Rush",
+      "input": "SCH KK",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: MH"
+      ]
+    },
+    {
+      "name": "Side Hold",
+      "input": "4B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Double Grounder Alpha",
+      "input": "SSH AA",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: LL"
+      ]
+    },
+    {
+      "name": "Double Grounder Alpha ~ SRSH",
+      "input": "SSH (A)",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: L",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Phantom Castling",
+      "input": "SSH BBB",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: MMM"
+      ]
+    },
+    {
+      "name": "Phantom Castling ~ SCH",
+      "input": "SSH BB(B)",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: MMM",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "High Kick Beta",
+      "input": "SSH K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Charging Hilt",
+      "input": "66K BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Charging Hilt ~ SCH",
+      "input": "66K (BE)",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MM",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Reborn Grinder",
+      "input": "SBH K BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MMM"
+      ]
+    },
+    {
+      "name": "Kick Rush Vortex",
+      "input": "SCH K BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MM",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Legacy Testament",
+      "input": "CE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MM"
+      ]
     }
   ]
 }

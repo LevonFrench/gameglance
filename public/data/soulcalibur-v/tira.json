@@ -1,66 +1,790 @@
 {
+  "name": "Tira",
   "character": "Tira",
+  "game": "SoulCalibur V",
   "movesList": [
     {
-      "name": "Discord Parade",
-      "input": "A+B+K",
-      "type": "Critical Edge"
+      "name": "Harmonic Wing",
+      "input": "AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH"
+      ]
+    },
+    {
+      "name": "Snare Robin",
+      "input": "JS 6AB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HL"
+      ]
+    },
+    {
+      "name": "Wailing Minerva",
+      "input": "GS 6A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Fin Beat",
+      "input": "JS 3A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Shriek Noise",
+      "input": "GS 3AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: MMH"
+      ]
+    },
+    {
+      "name": "Ptarmigan Polka ~ Gestopft M.",
+      "input": "JS 2ABA+B",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: LMH",
+        "Other: GI, change persona"
+      ]
+    },
+    {
+      "name": "Ptarmigan Polka ~ G. Madness",
+      "input": "JS 2AB(A+B)",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: LMHHH",
+        "Other: GI, change persona"
+      ]
+    },
+    {
+      "name": "Low Pitch Flap",
+      "input": "GS 2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Low Swoop",
+      "input": "1A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Menuett Dance",
+      "input": "JS 4A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HHH"
+      ]
+    },
+    {
+      "name": "Noise Break",
+      "input": "GS 4A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Low Pitch Flap",
+      "input": "FC A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Snare Clap",
+      "input": "WR A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Flitting Feather",
+      "input": "WJ A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Retrograde Wing",
+      "input": "BT A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Low Retro Flap",
+      "input": "BT 2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Two-Step Beak",
+      "input": "JS BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Two-Step Terror",
+      "input": "GS BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Dark Elegy",
+      "input": "JS 6B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Nightjar Elegy",
+      "input": "GS 6B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Beakbreak Toss",
+      "input": "JS 3B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Peregrine Rhythm",
+      "input": "GS 3B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Lowdown Neb",
+      "input": "2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Low Pitch Pointe",
+      "input": "1B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: SM"
+      ]
+    },
+    {
+      "name": "Back Step Pizzicato",
+      "input": "JS 4B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Oratorio Halcyon",
+      "input": "GS 4B:B:B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MMM",
+        "Other: Change persona"
+      ]
+    },
+    {
+      "name": "Lowdown Neb",
+      "input": "FC B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Up Bow Cantabile ~ Updraft",
+      "input": "WR BK",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MSMMM",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Trill Up Bow Neb",
+      "input": "WJ B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: AT on counter hit"
+      ]
+    },
+    {
+      "name": "Retrograde Beak",
+      "input": "BT B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Low Retro Neb",
+      "input": "BT 2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "High Note Kick",
+      "input": "K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Cadence BacK Kick",
+      "input": "6K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Fear Pecker",
+      "input": "3K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Low Pitch Claw",
+      "input": "2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Ring Con Sordino",
+      "input": "JS 1K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Claw Kick",
+      "input": "GS 1K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Bremen Fortissimo",
+      "input": "4K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Scratch Scherzo",
+      "input": "236K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Low Pitch Claw",
+      "input": "FC K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Swing Kick",
+      "input": "WR K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Flickering Heelkick",
+      "input": "WJ K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Flickering Heelkick ~ Updraft",
+      "input": "WJ K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MMMM",
+        "Other: SS, counter hit"
+      ]
+    },
+    {
+      "name": "Retrograde Kick",
+      "input": "BT K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Low Retro Claw",
+      "input": "BT 2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Gestopft Madness",
+      "input": "A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: H",
+        "Other: GI, change persona, BT ok"
+      ]
+    },
+    {
+      "name": "Gestopft Madness",
+      "input": "(A+B)",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: HHH",
+        "Other: GI, change persona, BT ok"
+      ]
+    },
+    {
+      "name": "Blazing Cadenza",
+      "input": "6A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Deadly Arietta",
+      "input": "GS 2A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Einsatz Calcatrix",
+      "input": "JS B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Other: GI vs H/M under 20 damage"
+      ]
+    },
+    {
+      "name": "Grim Reaper",
+      "input": "Gs B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Other: GI vs M (non-kicks/thrusts)"
+      ]
+    },
+    {
+      "name": "Piercing Talon Strike",
+      "input": "4B+KB",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Retro Noise ~ Gestopft Madness",
+      "input": "BT JS B+KB",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: A+B after for change persona"
+      ]
+    },
+    {
+      "name": "Retrograde Fortissimo",
+      "input": "BT GS B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: Change persona"
+      ]
+    },
+    {
+      "name": "Taunt",
+      "input": "K+G",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Other: Change persona"
+      ]
+    },
+    {
+      "name": "Flageolette Fin",
+      "input": "JS 66AA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Scolding Starling",
+      "input": "GS 66A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Deriding Thrush",
+      "input": "22_88A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Canary Waltz C-Dur",
+      "input": "JS 44AA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HM"
+      ]
+    },
+    {
+      "name": "Canary Waltz C Minor",
+      "input": "JS 44A2A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HL"
+      ]
+    },
+    {
+      "name": "Chattering Pinion",
+      "input": "GS 44A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: Change persona"
+      ]
+    },
+    {
+      "name": "Wild Beat Neb",
+      "input": "JS 66B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Metsa Gigue Baroque",
+      "input": "GS 66B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MMM",
+        "Other: Change persona"
+      ]
+    },
+    {
+      "name": "Hiisi Gigue Baroque",
+      "input": "GS 666B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M x5",
+        "Other: Change persona"
+      ]
+    },
+    {
+      "name": "Peregrine Rhythm",
+      "input": "GS 33_99B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Double Rhythm",
+      "input": "JS 22_88B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Staccato Ravage",
+      "input": "GS 22_88B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Strayed Robin",
+      "input": "JS 11_77B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L",
+        "Other: Extra hit on counter"
+      ]
+    },
+    {
+      "name": "Chattering Mandible",
+      "input": "JS 44B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Murderous Vibrato",
+      "input": "GS 44B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MMM"
+      ]
+    },
+    {
+      "name": "Murderous Vibrato",
+      "input": "GS 44(B)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M x5"
+      ]
+    },
+    {
+      "name": "Parrot Scratch",
+      "input": "JS 66K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MH"
+      ]
+    },
+    {
+      "name": "Hell's Barkarole",
+      "input": "GS 66K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: AT on counter hit"
+      ]
+    },
+    {
+      "name": "Rhythmic Hook",
+      "input": "22_88K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Parakeet Scratch",
+      "input": "JS 44K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Somersault Scratch",
+      "input": "GS 44K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Chattering Tear",
+      "input": "JS Run K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L",
+        "Other: Change persona"
+      ]
+    },
+    {
+      "name": "Glissando Claw",
+      "input": "GS Run K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Death Spindle",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Poison Apple",
+      "input": "B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Sweet Lullaby",
+      "input": "Left TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Bloody Tale",
+      "input": "Right TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Glass Slippers",
+      "input": "Back TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
     },
     {
       "name": "Updraft",
-      "input": "236B",
-      "type": "Move"
+      "input": "7_8_9B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
     },
     {
-      "name": "Mood Swing (Stance Shift)",
-      "input": "2B+K",
-      "type": "Move"
+      "name": "Diving Wing Flap",
+      "input": "UD A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: Change persona"
+      ]
     },
     {
-      "name": "Gull Wing",
-      "input": "66B",
-      "type": "Move"
+      "name": "Diving Talon Thrust",
+      "input": "UD B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: BA"
+      ]
     },
     {
-      "name": "Circular Slicer",
-      "input": "66A",
-      "type": "Move"
+      "name": "Claw Dive",
+      "input": "UD K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M/L"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Shriek Quarrel",
+      "input": "GS 3AA BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MMHHH"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Scratch Glissando",
+      "input": "236K BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: LL",
+        "Other: Change persona"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Wild Beat Scherzo",
+      "input": "JS 66B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MM",
+        "Other: Change Persona"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Metsa Gigue Canon",
+      "input": "GS 66B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MMMM",
+        "Other: BA, change persona"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Hiisi Gigue Canon",
+      "input": "GS 666B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M x6",
+        "Other: BA, change persona"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Discord Parade",
+      "input": "JS CE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M x6",
+        "Other: Change persona"
+      ]
+    },
+    {
+      "name": "Discord Parade Finale",
+      "input": "GS CE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M x7"
+      ]
     }
   ]
 }

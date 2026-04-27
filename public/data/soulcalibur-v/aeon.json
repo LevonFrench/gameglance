@@ -1,52 +1,568 @@
 {
   "name": "Aeon",
   "character": "Aeon",
+  "game": "SoulCalibur V",
   "movesList": [
     {
-      "name": "Sand Dust",
-      "type": "special",
-      "input": "214B"
+      "name": "Refrain Ax",
+      "input": "AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH"
+      ]
     },
     {
-      "name": "Calamity Axe",
-      "type": "special",
-      "input": "66B"
+      "name": "Razor Ax",
+      "input": "6A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Lumber Ax",
+      "input": "3A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Base Razor Ax",
+      "input": "2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Sand Current",
+      "input": "1A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: L"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Symplegades",
+      "input": "4A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Base Razor Ax",
+      "input": "FC A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Desert Carrefour",
+      "input": "WR AB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HM"
+      ]
+    },
+    {
+      "name": "Lope Side Ax",
+      "input": "WJ A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Rear Side Adze",
+      "input": "BT A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Rear Base Razor",
+      "input": "BT 2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Turnus Style Furious Drought",
+      "input": "BBB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MMM"
+      ]
+    },
+    {
+      "name": "Menzentius Style Twin Gravel",
+      "input": "6BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MH"
+      ]
+    },
+    {
+      "name": "Rising Grit",
+      "input": "3B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sinker Sand Ax",
+      "input": "2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Menzentius Style Camel Blow",
+      "input": "1B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sand Gale Dart",
+      "input": "4B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Sinker Sand Ax",
+      "input": "FC B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Turnus Style Sand Geyser",
+      "input": "WR B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Lope Grudge Labrys",
+      "input": "WJ B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Rear Sand Ax",
+      "input": "BT B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Rear Base Ax",
+      "input": "BT 2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Grudge High Kick",
+      "input": "K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Grudge Front Kick",
+      "input": "6K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Grudge Front Kick (BA)",
+      "input": "6(K)",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Grudge Side Kick",
+      "input": "3K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Grudge Low Kick",
+      "input": "2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Grudge Earth Stomp",
+      "input": "1K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "M. Style Lightning Head Masher",
+      "input": "4K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Ire Low Kick",
+      "input": "FC K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Scale Raiser Kick",
+      "input": "WR K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Lope Ire Shoot",
+      "input": "WJ K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Rear Grudge High Kick",
+      "input": "BT K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Rear Grudge Low Kick",
+      "input": "BT 2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Menzentius Style Rocky Smash",
+      "input": "B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: H",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Menzentius Style Sand Roll",
+      "input": "1B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: L",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Sand Revenger",
+      "input": "4B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Quick Sand Revenger",
+      "input": "4b+kG",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Rising Revenge ~ Sand Winger",
+      "input": "8B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: SS, no SW at long range"
+      ]
+    },
+    {
+      "name": "Rolling Revenge",
+      "input": "BT B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Grit Draft",
+      "input": "66A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Double Ire Hatchet",
+      "input": "22_88AB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Hunting Draft ~ Sand Winger",
+      "input": "44A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: SS, Also: 44(A)"
+      ]
+    },
+    {
+      "name": "Camilla Style Dune Riser ~ SW",
+      "input": "66B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "M. Style Cannon Pelekys",
+      "input": "33_99B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Turnus Style Dune Smash",
+      "input": "22_88B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Lower Labrys",
+      "input": "11_77B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Turnus Style Severing Pelekys",
+      "input": "44BAA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MHH",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Menzentius Style Grit Blast",
+      "input": "66K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Menzentius Style Scale Basher",
+      "input": "33_99K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Grudge Float Kick",
+      "input": "22_88K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "M. Style Sinker Spin Kick",
+      "input": "11_77K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Killing Bite",
+      "input": "44K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sand Rage Myrmex",
+      "input": "44K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: Vs downed opponent head, TH"
+      ]
+    },
+    {
+      "name": "Turnus Style Screw Shot",
+      "input": "66A+B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sand Drifter",
+      "input": "Run K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Menzentius Style Sand Tomb",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Menzentius Style Santana Storm",
+      "input": "B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Menzentius Style Scale Brusher",
+      "input": "Left TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "M. Style Sadistic Rush Lift",
+      "input": "Right TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Menzentius Style Sand Bomb",
+      "input": "Back TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "M. Style Reptile Rumble",
+      "input": "214B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Sand Winger",
+      "input": "A+B",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Atomic Revenger",
+      "input": "SW K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sandland Batallion",
+      "input": "6B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M x6"
+      ]
+    },
+    {
+      "name": "Sandland Predator",
+      "input": "1B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M",
+        "Other: AT, BA"
+      ]
+    },
+    {
+      "name": "Sanddrake Catapult ~ SW",
+      "input": "SW BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M",
+        "Other: UA, SS, cancel with G"
+      ]
+    },
+    {
+      "name": "Devourer of God",
+      "input": "CE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M",
+        "Other: AT"
+      ]
     }
   ]
 }

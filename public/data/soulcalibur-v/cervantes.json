@@ -1,81 +1,759 @@
 {
+  "name": "Cervantes",
   "character": "Cervantes",
+  "game": "SoulCalibur V",
   "movesList": [
     {
-      "name": "Cursed Roman Fire",
-      "input": "A+B+K",
-      "type": "Critical Edge"
+      "name": "Soul Swing",
+      "input": "AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH"
+      ]
     },
     {
-      "name": "Shadow Flare",
-      "input": "66B",
-      "type": "Move"
+      "name": "Pirate's Cross",
+      "input": "aB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HM"
+      ]
     },
     {
-      "name": "Geo Da Ray",
-      "input": "2B+K",
-      "type": "Move"
+      "name": "Gentle Wave",
+      "input": "6A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
     },
     {
-      "name": "Dread Charge (Stance)",
-      "input": "214",
-      "type": "Move"
+      "name": "Scissor Wave",
+      "input": "3A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: MM"
+      ]
     },
     {
-      "name": "Acheron",
-      "input": "236B",
-      "type": "Move"
+      "name": "Laser Wave",
+      "input": "2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
     },
     {
-      "name": "Darkness Anchor",
-      "input": "236A",
-      "type": "Move"
+      "name": "Scissor Lifter",
+      "input": "1AB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: LM"
+      ]
+    },
+    {
+      "name": "Finishing Culverin",
+      "input": "1A:B",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: LMM",
+        "Other: Counter hit"
+      ]
+    },
+    {
+      "name": "Merciless Wave",
+      "input": "4A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Merciless Needle",
+      "input": "4aBB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Laser Wave",
+      "input": "FC A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Full Sail Anchoring",
+      "input": "WR AB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Soul Wave Riptide",
+      "input": "WJ A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Aft Soul Wipe",
+      "input": "BT A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Sub Laser Wave",
+      "input": "BT 2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Wild Storm",
+      "input": "BBB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MMM"
+      ]
+    },
+    {
+      "name": "Surprise Wave",
+      "input": "bA",
+      "type": "Verticals",
+      "properties": [
+        "Hit: H",
+        "Other: GI vs M"
+      ]
+    },
+    {
+      "name": "Head Snap Kick",
+      "input": "bK",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Storm Generate",
+      "input": "b2",
+      "type": "Verticals",
+      "properties": [
+        "Hit: SM",
+        "Other: AT vs midair"
+      ]
+    },
+    {
+      "name": "Sail Nautilus",
+      "input": "6BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Cannonball Lifter",
+      "input": "3B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Slay Storm",
+      "input": "2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Gale Slash",
+      "input": "1BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MMM"
+      ]
+    },
+    {
+      "name": "Bloody Hilt Kick",
+      "input": "4BK",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MH"
+      ]
+    },
+    {
+      "name": "Slay Storm",
+      "input": "FC B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Devastater",
+      "input": "WR B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Spike Anchor Riptide",
+      "input": "WJ B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Aft Blade Storm",
+      "input": "BT B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sub Slay Storm",
+      "input": "BT 2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Anchor Kick",
+      "input": "K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Anchor Knee Kick",
+      "input": "6K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Anchor Middle Kick",
+      "input": "3K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Anchor Bow Kick",
+      "input": "2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Anchor Whirlpool",
+      "input": "1K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Anchor Steep Kick",
+      "input": "4KK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: HM"
+      ]
+    },
+    {
+      "name": "Anchor Bow Kick",
+      "input": "FC K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Anchor Revive Kick",
+      "input": "WR K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Cannon Launch Kick",
+      "input": "WJ K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Aft Anchor Kick",
+      "input": "BT K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Sub Anchor Bow Kick",
+      "input": "BT 2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Pirate's Scheme",
+      "input": "A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Other: GI vs all horizontal"
+      ]
+    },
+    {
+      "name": "Night Raid",
+      "input": "6A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MMM"
+      ]
+    },
+    {
+      "name": "Shattering Man of War",
+      "input": "3A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Killer X",
+      "input": "2A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Dark Geo Da Ray",
+      "input": "4A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Iceberg Circular ~ DC",
+      "input": "8A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Flying Dutchman",
+      "input": "WR A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M x7"
+      ]
+    },
+    {
+      "name": "Pirate's Tactics",
+      "input": "B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Other: GI vs all veritical/thrust"
+      ]
     },
     {
       "name": "Genocidal Culverin",
       "input": "6B+K",
-      "type": "Move"
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: H",
+        "Other: UA"
+      ]
     },
     {
-      "name": "Sail Nautilus",
-      "input": "6B, B",
-      "type": "Move"
+      "name": "High Tide Anchoring",
+      "input": "2B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "High Tide Anchoring (hold)",
+      "input": "2(B+K)",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: SM L"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Eternal Curse",
+      "input": "1B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Bloody Hoist",
+      "input": "4B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Killer X Crawler",
+      "input": "7B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Pressure Astern",
+      "input": "7(B+K)",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Bloody Culverin",
+      "input": "8B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: H",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Tornado Swell",
+      "input": "WR B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MMM"
+      ]
+    },
+    {
+      "name": "Pressure Astern",
+      "input": "BT B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Lagging Wave",
+      "input": "66A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Dishonest Wave",
+      "input": "33_99A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H",
+        "Other: GI vs M (non-thrusts)"
+      ]
+    },
+    {
+      "name": "Gibbering Torpedo",
+      "input": "22_88A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: LL"
+      ]
+    },
+    {
+      "name": "Tornado Slice",
+      "input": "44A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HM"
+      ]
+    },
+    {
+      "name": "Bile Lunges",
+      "input": "66B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: AT"
+      ]
+    },
+    {
+      "name": "Riot Storm",
+      "input": "33_99B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Dread Pressure",
+      "input": "22_88B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: (B) for UA"
+      ]
+    },
+    {
+      "name": "Submerged Harpoon",
+      "input": "11_77B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Bow Breaker",
+      "input": "44B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Head Scratch Kick",
+      "input": "66K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Anchor Side Kick",
+      "input": "22_88K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: GI vs M (horizontal)"
+      ]
+    },
+    {
+      "name": "Anchor Swirl Kick",
+      "input": "11_77K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Galleon Sinker",
+      "input": "44K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Cross Bone Divider",
+      "input": "44A+B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: (A+B) for UA"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "Run K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Sadistic Cross",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Cannonball Split",
+      "input": "B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Figurehead Break",
+      "input": "Left TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Jolly Roger Hoist",
+      "input": "Right TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Flush Flood",
+      "input": "Back TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Dread Charge",
+      "input": "214",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Geo Da Ray Conclusion",
+      "input": "DC:B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Marshal Wave",
+      "input": "DC A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: H",
+        "Other: BA, GI vs M (non-thrusts)"
+      ]
+    },
+    {
+      "name": "Geo Da Ray",
+      "input": "DC B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Geo Da Ray",
+      "input": "DC 2_8B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Vile Tornado",
+      "input": "DC K:B:B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: LHH"
+      ]
+    },
+    {
+      "name": "Shadow Flare",
+      "input": "DC B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: (B+K) to change sides"
+      ]
+    },
+    {
+      "name": "Dread Dash",
+      "input": "DC 6",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Storm Geo Da Ray",
+      "input": "6B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Flash Geo Da Ray",
+      "input": "4b BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Gibbering Pressure",
+      "input": "22_88a BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: LM",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Fata Morgana",
+      "input": "WR A+B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M x9",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Curse of the Ancient Mariner",
+      "input": "a+g BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Cursed Roman Fire",
+      "input": "CE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: H",
+        "Other: UA"
+      ]
     }
   ]
 }

@@ -1,37 +1,1757 @@
 {
-  "name": "Ivy",
-  "character": "Ivy",
+  "name": "IVY",
+  "character": "IVY",
   "game": "SoulCalibur III",
   "movesList": [
     {
-      "name": "Ivy Slashes",
-      "input": "5A, 5A",
-      "type": "normal"
+      "name": "Biting Raven",
+      "input": "AA",
+      "type": "HORIZONTAL",
+      "properties": [
+        "HH"
+      ]
     },
     {
-      "name": "Dominion",
-      "input": "5B, 5B",
-      "type": "normal"
+      "name": "~ (Hold)",
+      "input": "A[A]",
+      "type": "HORIZONTAL",
+      "properties": [
+        "HH/SP"
+      ]
     },
     {
-      "name": "Serpent's Whip",
-      "input": "4+A+B",
-      "type": "stance"
+      "name": "~ (CH)",
+      "input": "A[A]",
+      "type": "HORIZONTAL",
+      "properties": [
+        "HH/AT"
+      ]
     },
     {
-      "name": "Ivy's Embrace",
+      "name": "Ancient Pact",
+      "input": "1A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Cursed Mark",
+      "input": "2A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "SL"
+      ]
+    },
+    {
+      "name": "Raven Gash",
+      "input": "3A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Menace Slice",
+      "input": "4A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Cross Madness",
+      "input": "6A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Force Pact",
+      "input": "4[4]A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Raven's Egg",
+      "input": "6[6]A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Pecking Raven",
+      "input": "WC A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "SL"
+      ]
+    },
+    {
+      "name": "Menace",
+      "input": "WR A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Reverse Raven",
+      "input": "BT A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Deep Curse",
+      "input": "BTWC A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Diving Raven",
+      "input": "JUMP A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Rising Raven",
+      "input": "JD A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Danger Range",
+      "input": "AA",
+      "type": "HORIZONTAL",
+      "properties": [
+        "HH"
+      ]
+    },
+    {
+      "name": "Hidden Gnome",
+      "input": "1AB",
+      "type": "HORIZONTAL",
+      "properties": [
+        "LM"
+      ]
+    },
+    {
+      "name": "~ (Hold)",
+      "input": "1[A]",
+      "type": "HORIZONTAL",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Ancient Worshipper",
+      "input": "2A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "SL"
+      ]
+    },
+    {
+      "name": "Dancing Tezhas",
+      "input": "3A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Coating Tezhas",
+      "input": "4A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "~ Serpent's Embrace",
+      "input": "4[A]",
+      "type": "HORIZONTAL",
+      "properties": [
+        "H/ST"
+      ]
+    },
+    {
+      "name": "Violent Spirits",
+      "input": "6AA",
+      "type": "HORIZONTAL",
+      "properties": [
+        "HMH"
+      ]
+    },
+    {
+      "name": "Venom Strike",
+      "input": "4[4]A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "~ Serpent's Embrace",
+      "input": "4[4][A]",
+      "type": "HORIZONTAL",
+      "properties": [
+        "H/ST"
+      ]
+    },
+    {
+      "name": "Tezhas Raven",
+      "input": "6[6]A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Serpent's Venom",
+      "input": "QCR A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "H/!/CA"
+      ]
+    },
+    {
+      "name": "Ancient Worshipper",
+      "input": "WC A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "SL"
+      ]
+    },
+    {
+      "name": "Demented Loop",
+      "input": "WR AA",
+      "type": "HORIZONTAL",
+      "properties": [
+        "MMH"
+      ]
+    },
+    {
+      "name": "Reverse Raven",
+      "input": "BT A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Deep Curse",
+      "input": "BTWC A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Rising Raven",
+      "input": "JUMP A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Diving Raven",
+      "input": "JD A",
+      "type": "HORIZONTAL",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Immortal Gale",
+      "input": "BB",
+      "type": "VERTICAL",
+      "properties": [
+        "MM"
+      ]
+    },
+    {
+      "name": "~ (Hold)",
+      "input": "B[B]",
+      "type": "VERTICAL",
+      "properties": [
+        "MM/SP"
+      ]
+    },
+    {
+      "name": "Poison Leaf",
+      "input": "1B",
+      "type": "VERTICAL",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Curse Brand",
+      "input": "2B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Cursed Heavens",
+      "input": "3B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Ivy Bite",
+      "input": "4B",
+      "type": "VERTICAL",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Ivy Thrust",
+      "input": "6B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Ivy Lick",
+      "input": "6B 8_2B+K",
+      "type": "VERTICAL",
+      "properties": [
+        "H/SP"
+      ]
+    },
+    {
+      "name": "~ (Attack Throw)",
+      "input": "6B 8_2B+K",
+      "type": "VERTICAL",
+      "properties": [
+        "H/AT"
+      ]
+    },
+    {
+      "name": "Silhouette",
+      "input": "6B 8K_8B+K K",
+      "type": "VERTICAL",
+      "properties": [
+        "HL/SP"
+      ]
+    },
+    {
+      "name": "Lost Pledge",
+      "input": "4[4]B",
+      "type": "VERTICAL",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Force Pledge",
+      "input": "6[6]B",
+      "type": "VERTICAL",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Immortal Flow",
+      "input": "WC B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Ivy Masquerade",
+      "input": "WC 3B",
+      "type": "VERTICAL",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Pride",
+      "input": "WC 1B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Shameless",
+      "input": "WR B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Reverse Immortal",
+      "input": "BT B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Deep Immortal",
+      "input": "BTWC B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Rising Ivy",
+      "input": "JUMP B",
+      "type": "VERTICAL",
+      "properties": [
+        "SM"
+      ]
+    },
+    {
+      "name": "Diving Immortal",
+      "input": "JD B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Splashing Apas",
+      "input": "BB",
+      "type": "VERTICAL",
+      "properties": [
+        "MM"
+      ]
+    },
+    {
+      "name": "Poison Ivy",
+      "input": "1B",
+      "type": "VERTICAL",
+      "properties": [
+        "L/SM/SM"
+      ]
+    },
+    {
+      "name": "Aqua Worshipper",
+      "input": "2B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Aqua Clipper",
+      "input": "3B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "~ Serpent's Embrace",
+      "input": "3[B]",
+      "type": "VERTICAL",
+      "properties": [
+        "M/ST"
+      ]
+    },
+    {
+      "name": "Dancing Insanity",
+      "input": "4B",
+      "type": "VERTICAL",
+      "properties": [
+        "HH"
+      ]
+    },
+    {
+      "name": "Ivy Lash",
+      "input": "6B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Biting Ivy Inner",
+      "input": "6B8_2",
+      "type": "VERTICAL",
+      "properties": [
+        "MM/SP"
+      ]
+    },
+    {
+      "name": "Metal Fencer",
+      "input": "4[4]BB",
+      "type": "VERTICAL",
+      "properties": [
+        "MM"
+      ]
+    },
+    {
+      "name": "Darkside",
+      "input": "6[6]B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Venom Lash",
+      "input": "QCR B",
+      "type": "VERTICAL",
+      "properties": [
+        "MM"
+      ]
+    },
+    {
+      "name": "~ Serpent's Embrace",
+      "input": "QCR [B]",
+      "type": "VERTICAL",
+      "properties": [
+        "MM/ST"
+      ]
+    },
+    {
+      "name": "Aqua Worshipper",
+      "input": "WC B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Ivy Masquerade",
+      "input": "WC 3B",
+      "type": "VERTICAL",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Masquerade~Resting Madness",
+      "input": "WC 3[B]",
+      "type": "VERTICAL",
+      "properties": [
+        "L/SM"
+      ]
+    },
+    {
+      "name": "~ Spiral Lust",
+      "input": "WC 3[B]",
+      "type": "VERTICAL",
+      "properties": [
+        "L/SM/!/ST"
+      ]
+    },
+    {
+      "name": "Cagemaster",
+      "input": "WR BB",
+      "type": "VERTICAL",
+      "properties": [
+        "MMMM"
+      ]
+    },
+    {
+      "name": "~ (CH)",
+      "input": "WR BB",
+      "type": "VERTICAL",
+      "properties": [
+        "MMMM/AT/SP"
+      ]
+    },
+    {
+      "name": "Reverse Immortal",
+      "input": "BT B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Deep Immortal",
+      "input": "BTWC B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Ivy Brambler",
+      "input": "JUMP B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Diving Immortal",
+      "input": "JD B",
+      "type": "VERTICAL",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Night Swallow",
+      "input": "K",
+      "type": "KICK",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Evil Sparrow",
+      "input": "1K",
+      "type": "KICK",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Charmer Silhouette",
+      "input": "2K",
+      "type": "KICK",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Rage Kick",
+      "input": "3K",
+      "type": "KICK",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "~ (Hold)",
+      "input": "3[K]",
+      "type": "KICK",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Midnight Gaze",
+      "input": "4KB",
+      "type": "KICK",
+      "properties": [
+        "MH/SP"
+      ]
+    },
+    {
+      "name": "~ (CH)",
+      "input": "4KB",
+      "type": "KICK",
+      "properties": [
+        "MH/AT"
+      ]
+    },
+    {
+      "name": "Dark Cage",
+      "input": "4KBK",
+      "type": "KICK",
+      "properties": [
+        "MHL/SP"
+      ]
+    },
+    {
+      "name": "Raven Catcher",
+      "input": "6K",
+      "type": "KICK",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Diving Raven",
+      "input": "44K",
+      "type": "KICK",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Wondergale",
+      "input": "6[6]K",
+      "type": "KICK",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "~ Serpent's Embrace",
+      "input": "6[6][K]",
+      "type": "KICK",
+      "properties": [
+        "M/ST"
+      ]
+    },
+    {
+      "name": "Ivy Sweep",
+      "input": "QCR K",
+      "type": "KICK",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Charmer Silhouette",
+      "input": "WC K",
+      "type": "KICK",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Nail Cross",
+      "input": "WC 3K",
+      "type": "KICK",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Rising Cross",
+      "input": "WR K",
+      "type": "KICK",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Reverse Night Swallow",
+      "input": "BT K",
+      "type": "KICK",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Deep Silhouette",
+      "input": "BTWC K",
+      "type": "KICK",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Rising Mind Shatter",
+      "input": "JUMP K",
+      "type": "KICK",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Diving Night Swallow",
+      "input": "JD K",
+      "type": "KICK",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Night Swallow",
+      "input": "K",
+      "type": "KICK",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Evil Sparrow",
+      "input": "1K",
+      "type": "KICK",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Charmer Silhouette",
+      "input": "2K",
+      "type": "KICK",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Rage Kick",
+      "input": "3K",
+      "type": "KICK",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "~ (Hold)",
+      "input": "3[K]",
+      "type": "KICK",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Raven Knee",
+      "input": "4K",
+      "type": "KICK",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Raven Catcher",
+      "input": "6K",
+      "type": "KICK",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Diving Raven",
+      "input": "4[4]K",
+      "type": "KICK",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Mind Shatter",
+      "input": "6[6]K",
+      "type": "KICK",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "~ (Hold)",
+      "input": "6[6][K]",
+      "type": "KICK",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Ivy Sweep",
+      "input": "QCR K",
+      "type": "KICK",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Charmer Silhouette",
+      "input": "WC K",
+      "type": "KICK",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Nail Cross",
+      "input": "WC 3K",
+      "type": "KICK",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Rising Cross",
+      "input": "WR K",
+      "type": "KICK",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Reverse Night Swallow",
+      "input": "BT K",
+      "type": "KICK",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Deep Silhouette",
+      "input": "BTWC K",
+      "type": "KICK",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Rising Mind Shatter",
+      "input": "JUMP K",
+      "type": "KICK",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Diving Night Swallow",
+      "input": "JD K",
+      "type": "KICK",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "God Whisper",
+      "input": "A+B A",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "M/L/SM"
+      ]
+    },
+    {
+      "name": "Razor's Bite",
+      "input": "2A+B",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Spiral Punishment",
+      "input": "3A+B B",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "M(x8)/GI/SP"
+      ]
+    },
+    {
+      "name": "Freeze Gaze",
+      "input": "4A+B",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "MM"
+      ]
+    },
+    {
+      "name": "Crucifixion",
+      "input": "44A+B",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "~ (Hold)",
+      "input": "44[A+B]",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "M/!"
+      ]
+    },
+    {
+      "name": "Revelation Change",
+      "input": "B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "SP"
+      ]
+    },
+    {
+      "name": "Fear's Void",
+      "input": "1_2_3B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "SM/SP"
+      ]
+    },
+    {
+      "name": "Gnome Huntress",
+      "input": "(close range) 3B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "H/!/SP"
+      ]
+    },
+    {
+      "name": "Heel Explosion",
+      "input": "4B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "M/!/CA"
+      ]
+    },
+    {
+      "name": "Embrace of Guilt",
+      "input": "6B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "M/AT"
+      ]
+    },
+    {
+      "name": "Serpent's Embrace",
+      "input": "A+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "ST"
+      ]
+    },
+    {
+      "name": "Royal Huntress",
+      "input": "2A+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Asylum",
+      "input": "WR B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "MMMM/GI"
+      ]
+    },
+    {
+      "name": "Revelation Change",
+      "input": "BT B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "SP"
+      ]
+    },
+    {
+      "name": "Metal Dancer",
+      "input": "A+B B",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "M(x5)/SP"
+      ]
+    },
+    {
+      "name": "~ (Hold)",
+      "input": "A+B [B]",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "M(x10)/!/SP"
+      ]
+    },
+    {
+      "name": "Lamenting Tail",
+      "input": "2A+B",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "L/AT"
+      ]
+    },
+    {
+      "name": "Eye of Madness",
+      "input": "3A+B",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "SM"
+      ]
+    },
+    {
+      "name": "~ Spiral Lust",
+      "input": "3[A+B]",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "SM/!/ST"
+      ]
+    },
+    {
+      "name": "Spiral Punishment",
+      "input": "4A+B B",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "M(x8)/GI/SP"
+      ]
+    },
+    {
+      "name": "Asylum",
+      "input": "WR B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "MMMM/GI"
+      ]
+    },
+    {
+      "name": "Prison Change",
+      "input": "B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "SP"
+      ]
+    },
+    {
+      "name": "Stinging Souls",
+      "input": "1B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "HM/GB/SP"
+      ]
+    },
+    {
+      "name": "Stinging Souls",
+      "input": "2B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "HM/GB/SP"
+      ]
+    },
+    {
+      "name": "Stinging Souls",
+      "input": "3B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "HM/GB/SP"
+      ]
+    },
+    {
+      "name": "~ (CH)",
+      "input": "3B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "MMM/GB"
+      ]
+    },
+    {
+      "name": "Heel Explosion",
+      "input": "4B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "M/!/CA"
+      ]
+    },
+    {
+      "name": "Embrace of Lust",
+      "input": "6B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "~ (Attack Throw)",
+      "input": "6B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "M/AT/SP"
+      ]
+    },
+    {
+      "name": "Exile",
+      "input": "44B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "M/SM"
+      ]
+    },
+    {
+      "name": "~ Spiral Lust",
+      "input": "44[B+K]",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "M/SM/!/ST"
+      ]
+    },
+    {
+      "name": "Prison Change",
+      "input": "BT B+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "SP"
+      ]
+    },
+    {
+      "name": "Serpent's Embrace",
+      "input": "A+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "ST"
+      ]
+    },
+    {
+      "name": "Royal Huntress",
+      "input": "2A+K",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Taunt",
+      "input": "K+G",
+      "type": "SIMULTANEOUS",
+      "properties": [
+        "SP"
+      ]
+    },
+    {
+      "name": "Raven's Egg",
+      "input": "[9]_[6]_[3]A",
+      "type": "8-WAY RUN",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Force Pledge",
+      "input": "[6]B",
+      "type": "8-WAY RUN",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "[6]K",
+      "type": "8-WAY RUN",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "God Whisper",
+      "input": "8WY(except 4) A+B A",
+      "type": "8-WAY RUN",
+      "properties": [
+        "ML/SM"
+      ]
+    },
+    {
+      "name": "Embrace of Guilt",
+      "input": "[6][B+K]",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M/AT"
+      ]
+    },
+    {
+      "name": "Serpent's Embrace",
+      "input": "8WY A+K",
+      "type": "8-WAY RUN",
+      "properties": [
+        "ST"
+      ]
+    },
+    {
+      "name": "Serpent's Breath",
+      "input": "[9]_[3]B",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Wondergale",
+      "input": "[9]_[3]K",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "~ Serpent's Embrace",
+      "input": "[9]_[3][K]",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M/ST"
+      ]
+    },
+    {
+      "name": "Wolf Lash",
+      "input": "[8]_[2]A",
+      "type": "8-WAY RUN",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Dominance",
+      "input": "[8]_[2]B",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Royal Huntress",
+      "input": "[8]_[2]K",
+      "type": "8-WAY RUN",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Ancient Pact",
+      "input": "[7]_[3]A",
+      "type": "8-WAY RUN",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Poison Leaf",
+      "input": "[7]_[3]B",
+      "type": "8-WAY RUN",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Evil Sparrow",
+      "input": "[7]_[3]K",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Force Pact",
+      "input": "[4]A",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Lost Pledge",
+      "input": "[4]B",
+      "type": "8-WAY RUN",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Diving Raven",
+      "input": "[4]K",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Crucifixion",
+      "input": "[4]A+B",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "~ (Hold)",
+      "input": "[4]A+B",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M/!"
+      ]
+    },
+    {
+      "name": "Tezhas Raven",
+      "input": "[9]_[6]_[3]A",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Darkside",
+      "input": "[6]B",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "[6]K",
+      "type": "8-WAY RUN",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Metal Dancer",
+      "input": "8WY A+B B",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M(x5)/SP"
+      ]
+    },
+    {
+      "name": "~ (Hold)",
+      "input": "8WY A+B [B]",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M(x10)/!/SP"
+      ]
+    },
+    {
+      "name": "Embrace of Lust",
+      "input": "[6]B+K",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Serpent's Embrace",
+      "input": "8WY A+K",
+      "type": "8-WAY RUN",
+      "properties": [
+        "ST"
+      ]
+    },
+    {
+      "name": "Drowning Madness",
+      "input": "[9]_[3]B",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "~ Serpent's Embrace",
+      "input": "[9]_[3][B]",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M/ST"
+      ]
+    },
+    {
+      "name": "Mind Shatter",
+      "input": "[9]_[3]K",
+      "type": "8-WAY RUN",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "~ (Hold)",
+      "input": "[9]_[3][K]",
+      "type": "8-WAY RUN",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Insanity Light",
+      "input": "[8]_[2]A",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M/AT/SP"
+      ]
+    },
+    {
+      "name": "Insanity Feast",
+      "input": "[8]_[2]A4",
+      "type": "8-WAY RUN",
+      "properties": [
+        "AT/SP"
+      ]
+    },
+    {
+      "name": "Landing Embrace",
+      "input": "[8]_[2]B",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Royal Huntress",
+      "input": "[8]_[2]K",
+      "type": "8-WAY RUN",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Ancient Wheel",
+      "input": "[7]_[1]AA",
+      "type": "8-WAY RUN",
+      "properties": [
+        "LL"
+      ]
+    },
+    {
+      "name": "Poison Ivy",
+      "input": "[7]_[1]B",
+      "type": "8-WAY RUN",
+      "properties": [
+        "L/SM/SM"
+      ]
+    },
+    {
+      "name": "Evil Sparrow",
+      "input": "[7]_[1]K",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Venom Strike",
+      "input": "4A",
+      "type": "8-WAY RUN",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "~ Serpent's Embrace",
+      "input": "4[A]",
+      "type": "8-WAY RUN",
+      "properties": [
+        "H/ST"
+      ]
+    },
+    {
+      "name": "Metal Fencer",
+      "input": "4BB",
+      "type": "8-WAY RUN",
+      "properties": [
+        "MM"
+      ]
+    },
+    {
+      "name": "Diving Raven",
+      "input": "4K",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Exile",
+      "input": "4B+K",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M/SM"
+      ]
+    },
+    {
+      "name": "~ Spiral Lust",
+      "input": "4[B+K]",
+      "type": "8-WAY RUN",
+      "properties": [
+        "M/SM/ST"
+      ]
+    },
+    {
+      "name": "Primal Dominance",
       "input": "A+G",
-      "type": "throw"
+      "type": "THROW",
+      "properties": [
+        "T"
+      ]
+    },
+    {
+      "name": "Dominion Throw",
+      "input": "B+G",
+      "type": "THROW",
+      "properties": [
+        "T"
+      ]
+    },
+    {
+      "name": "Heartless Guide",
+      "input": "Leftside",
+      "type": "THROW",
+      "properties": [
+        "T"
+      ]
+    },
+    {
+      "name": "Sunset Cradle",
+      "input": "Rightside",
+      "type": "THROW",
+      "properties": [
+        "T"
+      ]
+    },
+    {
+      "name": "Sweet Dominance",
+      "input": "Backside",
+      "type": "THROW",
+      "properties": [
+        "T"
+      ]
     },
     {
       "name": "Summon Suffering",
-      "input": "360+B+G",
-      "type": "command throw"
+      "input": "376 QCR B+G",
+      "type": "THROW",
+      "properties": [
+        "T"
+      ]
     },
     {
-      "name": "Grave Marker",
-      "input": "A+B",
-      "type": "unblockable"
+      "name": "Calamity Symphony",
+      "input": "(during whip) 376 QCR A+G",
+      "type": "THROW",
+      "properties": [
+        "T"
+      ]
+    },
+    {
+      "name": "Exile~Spiral Lust",
+      "input": "(during whip) 4[4]B+K",
+      "type": "MISCELLANEOUS",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Suppressed Exile (M)",
+      "input": "(during whip) 4[4][B+K]",
+      "type": "MISCELLANEOUS",
+      "properties": [
+        "M/!"
+      ]
+    },
+    {
+      "name": "Exile (R)",
+      "input": "(during whip) Exile~Spiral Lust = release button",
+      "type": "MISCELLANEOUS",
+      "properties": [
+        "SM"
+      ]
+    },
+    {
+      "name": "Serpent's Embrace",
+      "input": "A+K",
+      "type": "MISCELLANEOUS",
+      "properties": [
+        "ST"
+      ]
+    },
+    {
+      "name": "Lamenting Tail",
+      "input": "A+K A",
+      "type": "MISCELLANEOUS",
+      "properties": [
+        "L/AT"
+      ]
+    },
+    {
+      "name": "Mistress' Justice",
+      "input": "A+K BBB",
+      "type": "MISCELLANEOUS",
+      "properties": [
+        "MMM"
+      ]
+    },
+    {
+      "name": "Howling Spirits",
+      "input": "A+K B 6B 4B 6B 4B",
+      "type": "MISCELLANEOUS",
+      "properties": [
+        "M(x5)/GB"
+      ]
+    },
+    {
+      "name": "Charging Serpent",
+      "input": "A+K K",
+      "type": "MISCELLANEOUS",
+      "properties": [
+        "M/ST"
+      ]
+    },
+    {
+      "name": "Charging Serpent",
+      "input": "A+K 6[6]K",
+      "type": "MISCELLANEOUS",
+      "properties": [
+        "M/ST"
+      ]
+    },
+    {
+      "name": "Released Souls",
+      "input": "A+K A+B",
+      "type": "MISCELLANEOUS",
+      "properties": [
+        "M/!"
+      ]
+    },
+    {
+      "name": "Stinging Souls",
+      "input": "A+K B+K",
+      "type": "MISCELLANEOUS",
+      "properties": [
+        "HM/GB"
+      ]
+    },
+    {
+      "name": "Stinging Souls",
+      "input": "A+K 4B+K",
+      "type": "MISCELLANEOUS",
+      "properties": [
+        "HM/GB"
+      ]
+    },
+    {
+      "name": "Stinging Souls",
+      "input": "A+K 6B+K",
+      "type": "MISCELLANEOUS",
+      "properties": [
+        "HM/GB"
+      ]
+    },
+    {
+      "name": "~ (CH)",
+      "input": "A+K 6B+K",
+      "type": "MISCELLANEOUS",
+      "properties": [
+        "HMM/GB"
+      ]
+    },
+    {
+      "name": "Summon Suffering",
+      "input": "A+K 736 QCR B+G",
+      "type": "MISCELLANEOUS",
+      "properties": [
+        "T"
+      ]
+    },
+    {
+      "name": "Calamity Symphony",
+      "input": "A+K 736 QCR A+G",
+      "type": "MISCELLANEOUS",
+      "properties": [
+        "T"
+      ]
+    },
+    {
+      "name": "Combo",
+      "input": "(during whip) 7_3[b] ~ A+K BBB",
+      "type": "SIGNATURE",
+      "properties": []
+    },
+    {
+      "name": "|",
+      "input": "KILIK",
+      "type": "SIGNATURE",
+      "properties": [
+        "|"
+      ]
     }
   ]
 }

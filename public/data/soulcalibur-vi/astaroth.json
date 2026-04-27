@@ -4,34 +4,2582 @@
   "game": "SoulCalibur VI",
   "movesList": [
     {
-      "name": "Executioner",
-      "input": "5A, 5A",
-      "type": "normal"
+      "name": "Annihilation",
+      "input": "A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18",
+        "Block: -4",
+        "Hit: 2",
+        "Counter: 6",
+        "Guard Burst: 4%"
+      ]
     },
     {
       "name": "Annihilation",
-      "input": "5B, 5B",
-      "type": "normal"
+      "input": "AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18,20",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 14",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo"
+      ]
     },
     {
-      "name": "Disaster",
-      "input": "236B",
-      "type": "special"
+      "name": "Destruction",
+      "input": "AB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18,22",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Counter Hit Combo"
+      ]
     },
     {
-      "name": "Poseidon Tide",
-      "input": "66A",
-      "type": "normal"
+      "name": "Hades Control",
+      "input": "6A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 14",
+        "Guard Burst: 4%"
+      ]
     },
     {
-      "name": "Cursed Strike",
+      "name": "Ax Blow",
+      "input": "3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -10",
+        "Hit: 0",
+        "Counter: 6",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Hades Break",
+      "input": "2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch [8-RC]"
+      ]
+    },
+    {
+      "name": "Discus",
+      "input": "1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 26",
+        "Block: -18",
+        "Hit: -6",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Double Discus",
+      "input": "1(A)",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 56",
+        "Damage: 32",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch [11-RC]"
+      ]
+    },
+    {
+      "name": "Double Discus",
+      "input": "1(A)A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 56",
+        "Damage: 32,27",
+        "Block: -24",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo. Tech Crouch [11-RC]"
+      ]
+    },
+    {
+      "name": "Discus Breaker",
+      "input": "1(A)B",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 56",
+        "Damage: 32,32",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 16%",
+        "Notes: . Normal Hit Combo. Tech Crouch [11-RC]"
+      ]
+    },
+    {
+      "name": "Decimation",
+      "input": "4A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Decimation",
+      "input": "4AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,14",
+        "Block: 4",
+        "Hit: 14",
+        "Counter: 14",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Decimation",
+      "input": "4A(A)",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,24",
+        "Block: 8",
+        "Hit: 14",
+        "Counter: 14",
+        "Guard Burst: 8%"
+      ]
+    },
+    {
+      "name": "Grip Shot to Ax Volcano",
+      "input": "4AB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,30",
+        "Block: -6",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 8%"
+      ]
+    },
+    {
+      "name": "Poseidon's Tide",
+      "input": "214A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 90",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: if followups not pressed"
+      ]
+    },
+    {
+      "name": "Poseidon's Tide Rush",
+      "input": "214AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 30,8",
+        "Block: -22",
+        "Hit: -12",
+        "Counter: -12",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Poseidon's Tide Rush",
+      "input": "214AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 30,8,8",
+        "Block: -22",
+        "Hit: -12",
+        "Counter: -12",
+        "Guard Burst: 7%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Poseidon's Tide Rush",
+      "input": "214AAAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 30,8,8,8",
+        "Block: -16",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 8%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Poseidon's Tide Rush",
+      "input": "214AAAAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 30,8,8,8,8",
+        "Block: -16",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Poseidon's Tide Rush",
+      "input": "214AAAAAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 30,8,8,8,8,8",
+        "Block: -16",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 12%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Hades Break",
+      "input": "FCA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Reverse Spiral Ax",
+      "input": "WRA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 54",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Does 34 damage on close-range hit"
+      ]
+    },
+    {
+      "name": "Great Annihilation",
+      "input": "9A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 28",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Great Annihilation",
+      "input": "8A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 25",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Great Annihilation",
+      "input": "7A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 22",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Reverse Ax Split",
+      "input": "BTA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Lower Hades Split",
+      "input": "BT2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 18",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch [13-RC]"
+      ]
+    },
+    {
+      "name": "Great Divide",
+      "input": "B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 8",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Bear Tamer",
+      "input": "BA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20,14",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Bear Tamer",
+      "input": "B6A",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20,14",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Great Divide",
+      "input": "BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20,20",
+        "Block: -2",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 15%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Great Divide",
+      "input": "B(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20,32",
+        "Block: 6",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 21%"
+      ]
+    },
+    {
+      "name": "Command Kicks",
+      "input": "bK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,14",
+        "Block: -8",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 4%",
+        "Notes: +10 on 2nd hit CH. Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Command Kicks",
+      "input": "bKK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,14,27",
+        "Block: -2",
+        "Hit: 14",
+        "Counter: 14",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Castigate",
+      "input": "bKA+G",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,14,40",
+        "Block: -42",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 1%",
+        "Notes: . Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Bluster",
+      "input": "bK4A+G",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,14,40",
+        "Block: -42",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: 4 . Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Ax Offering",
+      "input": "B6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 19",
+        "Damage: 18",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 10",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Ax Offering",
+      "input": "B6B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 19",
+        "Damage: 18,21",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 14",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Ax Side Divide",
+      "input": "Bb6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20,16",
+        "Block: 2",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Ax Side Cannon",
+      "input": "6B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Swipe",
+      "input": "6(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 26",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Swipe",
+      "input": "6(B)B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 26,27",
+        "Block: 6",
+        "Hit: 24",
+        "Counter: 24",
+        "Guard Burst: 20%",
+        "Notes: . Normal Hit Combo. +24G on hit (can guard)"
+      ]
+    },
+    {
+      "name": "Ax Volcano",
+      "input": "3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 32",
+        "Block: -12",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Ax Volcano",
+      "input": "3(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 64",
+        "Damage: 52",
+        "Block: LNC",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Hades",
+      "input": "2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -10",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch [11-RC]"
+      ]
+    },
+    {
+      "name": "Ax Grave",
+      "input": "1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 24",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch [20-RC]"
+      ]
+    },
+    {
+      "name": "Ax Grave",
+      "input": "1(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 30",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch [20-RC]"
+      ]
+    },
+    {
+      "name": "Bear Fang",
+      "input": "4B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Bear Fang",
+      "input": "4(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 42",
+        "Damage: 30",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%"
+      ]
+    },
+    {
+      "name": "Gorefang",
+      "input": "4(B)B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 42",
+        "Damage: 30,22",
+        "Block: 0",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 12%",
+        "Notes: . Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Gorefang",
+      "input": "4(B)(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 42",
+        "Damage: 30,37",
+        "Block: 10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 19%"
+      ]
+    },
+    {
+      "name": "Dark Split",
+      "input": "FCB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -10",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Hades Rising",
+      "input": "WRB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 32",
+        "Block: -12",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Hades Rising",
+      "input": "WR(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 40",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: on impact counter"
+      ]
+    },
+    {
+      "name": "Greater Divide",
+      "input": "9B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 32",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Greater Divide",
+      "input": "8B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 29",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Greater Divide",
+      "input": "7B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 26",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Reverse Dark Split",
+      "input": "BTB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Lower Dark Split",
+      "input": "BT2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 26",
+        "Block: -12",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch [13-RC]"
+      ]
+    },
+    {
+      "name": "Moloch's Vise",
+      "input": "K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Moloch's Vise",
+      "input": "(K)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 24,30",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: on opponent full Soul Gauge"
+      ]
+    },
+    {
+      "name": "Hades Knee",
+      "input": "6K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 26",
+        "Block: -12",
+        "Hit: 10",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[6-14].  after opponent breaks 4 throws in current round"
+      ]
+    },
+    {
+      "name": "Moloch's Revenge",
+      "input": "3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 8,12",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Bull Low Kick",
+      "input": "2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch [11-RC]"
+      ]
+    },
+    {
+      "name": "Reverse Tamer",
+      "input": "1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 26",
+        "Block: -18",
+        "Hit: 0",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Reverse Tamer",
+      "input": "1KA",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 68",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Dark Tamer",
+      "input": "4K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 19",
+        "Block: -12",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Dark Tamer",
+      "input": "4KA",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 19,30",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Dark Coercion",
+      "input": "4K(A)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 19,36",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Dark Tamer",
+      "input": "4(K)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 38",
+        "Block: 0",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Dark Tamer",
+      "input": "4(K)A",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 38,27",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo. Forceblock"
+      ]
+    },
+    {
+      "name": "Coercion",
+      "input": "4(K)(A)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 38,36",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 10%"
+      ]
+    },
+    {
+      "name": "Bull Rage",
+      "input": "FC3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 30",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Rising Torment",
+      "input": "WRK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: 2",
+        "Counter: KND",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Rising Torment",
+      "input": "WRKA",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18,30",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Rising Torment",
+      "input": "WRK(A)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18,36",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Great Kick",
+      "input": "9K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 26",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Great Kick",
+      "input": "8K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 24",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Great Kick",
+      "input": "7K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 22",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Reverse Bull Kick",
+      "input": "BTK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Lower Sweep",
+      "input": "BT2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch [13-RC]"
+      ]
+    },
+    {
+      "name": "Eternal Damnation",
       "input": "A+B",
-      "type": "unblockable"
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 40",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: .  versus"
+      ]
     },
     {
-      "name": "Mouth of Hell",
+      "name": "Minotaur Crush",
+      "input": "6A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 12",
+        "Guard Burst: 4%",
+        "Notes: after winning previous round via Ring Out"
+      ]
+    },
+    {
+      "name": "Titan Axe",
+      "input": "2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 32",
+        "Block: -20",
+        "Hit: -8",
+        "Counter: -8",
+        "Guard Burst: 9%",
+        "Notes: KND and 52 damage on ranged hit, counterhit"
+      ]
+    },
+    {
+      "name": "Breath of Hades",
+      "input": "4A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Breath of Hades",
+      "input": "+4(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 56",
+        "Damage: 56",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Flip Titan Axe",
+      "input": "8A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 32",
+        "Block: -20",
+        "Hit: -8",
+        "Counter: -8",
+        "Guard Burst: 9%",
+        "Notes: KND and 52 damage on ranged hit, counterhit"
+      ]
+    },
+    {
+      "name": "Guard Breaker",
+      "input": "B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 16",
+        "Block: -4",
+        "Hit: 14",
+        "Counter: 14",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Body Splash",
+      "input": "6B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 26",
+        "Block: -14",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 9%",
+        "Notes: after opponent interrupts any Armor move. Tech Crouch[6-10]"
+      ]
+    },
+    {
+      "name": "Body Splash",
+      "input": "+6(B)+(K)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 26",
+        "Block: -12",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 9%",
+        "Notes: Armor[11-24] If armor clicks, is  and +4 on block. Tech Crouch[6-10].  if armor clicks"
+      ]
+    },
+    {
+      "name": "Hades Crush",
+      "input": "2B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 36",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Hymn to Destruction",
+      "input": "2B+KA+G",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 58",
+        "Block: -26",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Hymn To Obliteration",
+      "input": "2B+K6A+G",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 58",
+        "Block: -26",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Hymn to Annihilation",
+      "input": "2B+K4A+G",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 58",
+        "Block: -26",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Ax Lower Cannon",
+      "input": "4B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 8,8,8",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 18%",
+        "Notes: on 3rd hit. Tech Crouch [16-RC]"
+      ]
+    },
+    {
+      "name": "Ax Lower Cannon",
+      "input": "4B+KB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 8,8,8,14,6",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: . Tech Crouch [16-RC]"
+      ]
+    },
+    {
+      "name": "Flying Divide",
+      "input": "9B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 42",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Flying Divide",
+      "input": "+9(B)+(K)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 52",
+        "Block: 14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%"
+      ]
+    },
+    {
+      "name": "Demented Moon",
+      "input": "236B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 84",
+        "Damage: 120",
+        "Block: LNC",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Death Bringer",
+      "input": "FCB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 31",
+        "Block: -14",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch [1-19]"
+      ]
+    },
+    {
+      "name": "Side Divide",
+      "input": "BTB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 28",
+        "Block: 0",
+        "Hit: 10",
+        "Counter: STN",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Hades Destroyer",
       "input": "A+G",
-      "type": "throw"
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 55",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Colossus",
+      "input": "6A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 50",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Festival of Havoc",
+      "input": "4A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 50",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 4"
+      ]
+    },
+    {
+      "name": "On Silent Wings",
+      "input": "RIGHT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 65",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: or 4"
+      ]
+    },
+    {
+      "name": "Beat Down",
+      "input": "LEFT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 67",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: or 4"
+      ]
+    },
+    {
+      "name": "The Rack",
+      "input": "BACK THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 75",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: TH"
+      ]
+    },
+    {
+      "name": "Death Crush",
+      "input": "BACK THROW4A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 75",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 4"
+      ]
+    },
+    {
+      "name": "Maelstrom Divide",
+      "input": "8A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 28",
+        "Damage: 55",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Tech Jump"
+      ]
+    },
+    {
+      "name": "Bludgeoning Crush",
+      "input": "2A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 12",
+        "Damage: 45",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Tech Crouch"
+      ]
+    },
+    {
+      "name": "Drop of Lava",
+      "input": "1A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 12",
+        "Damage: 55",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 4 . Tech Crouch"
+      ]
+    },
+    {
+      "name": "Wrath of the Accursed",
+      "input": "AIRA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 29",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: unbreakable"
+      ]
+    },
+    {
+      "name": "Wrath of the Damned",
+      "input": "AIR4A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 29",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 4 .  [Launcher] on opponent, unbreakable"
+      ]
+    },
+    {
+      "name": "Wicked Judgment",
+      "input": "46A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 22",
+        "Damage: 56",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Tech Crouch [6-22]"
+      ]
+    },
+    {
+      "name": "Vile Titan",
+      "input": "64A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 22",
+        "Damage: 46",
+        "Block: 8",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: -",
+        "Notes: 4. Tech Crouch [6-22]"
+      ]
+    },
+    {
+      "name": "Titan Bomb",
+      "input": "236A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 65",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 70 damage if fastest input"
+      ]
+    },
+    {
+      "name": "Titan Bomb",
+      "input": "+236(A)+(G)",
+      "type": "Throws",
+      "properties": [
+        "Impact: 45",
+        "Damage: 70",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: .  Not breakable"
+      ]
+    },
+    {
+      "name": "Flight of the Wicked",
+      "input": "214A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 35",
+        "Block: LNC",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: 4  40 damage if fastest input"
+      ]
+    },
+    {
+      "name": "Flight of the Wicked",
+      "input": "+214(A)+(G)",
+      "type": "Throws",
+      "properties": [
+        "Impact: 45",
+        "Damage: 40",
+        "Block: LNC",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: .  Not breakable"
+      ]
+    },
+    {
+      "name": "Wicked Twister",
+      "input": "214A+G2_8A",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 52",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 4"
+      ]
+    },
+    {
+      "name": "Obsidian Drop",
+      "input": "AIR28A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 55",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: hits opponent midair unbreakable. 60 damage if fastest input"
+      ]
+    },
+    {
+      "name": "Brutal Grasp",
+      "input": "GROUNDED3A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: -",
+        "Damage: 10",
+        "Block: -",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: -",
+        "Notes: unbreakable.  hits downed opponent head toward"
+      ]
+    },
+    {
+      "name": "Burial",
+      "input": "GROUNDEDA+G2",
+      "type": "Throws",
+      "properties": [
+        "Impact: 22",
+        "Damage: 35",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: unbreakable.  hits downed opponent"
+      ]
+    },
+    {
+      "name": "Vicious Madness",
+      "input": "(3)_(6)_(9)A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 46",
+        "Damage: 40",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Armor [10-46]"
+      ]
+    },
+    {
+      "name": "Underworld Pull",
+      "input": "(3)_(6)_(9)A+G2",
+      "type": "Throws",
+      "properties": [
+        "Impact: 45",
+        "Damage: 45",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Armor [10-46]"
+      ]
+    },
+    {
+      "name": "Cursed Earth",
+      "input": "(1)_(4)_(7)A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 46",
+        "Damage: 60",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 4  Armor [10-46]"
+      ]
+    },
+    {
+      "name": "Cursed Earth",
+      "input": "(1)_(4)_(7)A+G(B)",
+      "type": "Throws",
+      "properties": [
+        "Impact: 46",
+        "Damage: 71",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 4  Armor [10-46] +6 on guard if failed JF"
+      ]
+    },
+    {
+      "name": "Uproot",
+      "input": "(1)_(4)_(7)A+G2",
+      "type": "Throws",
+      "properties": [
+        "Impact: 45",
+        "Damage: 40",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 4 Armor [10-46]"
+      ]
+    },
+    {
+      "name": "Tornado Spike",
+      "input": "(3)_(6)_(9)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 28",
+        "Block: -18",
+        "Hit: -2",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Tornado Spike",
+      "input": "(3)_(6)_(9)AB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 28,30",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Tornado Spike",
+      "input": "(3)_(6)_(9)A(B)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 28,75",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Poseiden Crest",
+      "input": "(2)_(8)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -10",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Poseiden Crest",
+      "input": "(2)_(8)AA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,21",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Hades Divide",
+      "input": "(1)_(4)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 22",
+        "Block: -12",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: +10 dmg and KND on range hit"
+      ]
+    },
+    {
+      "name": "Hades Divide",
+      "input": "(1)_(4)_(7)(A)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 44",
+        "Damage: 36",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: +4 damage on tip range."
+      ]
+    },
+    {
+      "name": "Ax Crash",
+      "input": "(3)_(6)_(9)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 32",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: [4-14] vs  and  horizontals.  when hitting backdashing opponents"
+      ]
+    },
+    {
+      "name": "Hades Cannon",
+      "input": "(2)_(8)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 60",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: on opponent who missed a light attack"
+      ]
+    },
+    {
+      "name": "Azazel Tackle",
+      "input": "(1)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 32",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%"
+      ]
+    },
+    {
+      "name": "Azazel Tackle",
+      "input": "(1)_(7)BK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 32,19",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 20%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Canyon Creation",
+      "input": "(4)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 38",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Canyon Creation",
+      "input": "(4)(B)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 60",
+        "Damage: 65",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Bull Rush",
+      "input": "(3)_(6)_(9)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 26",
+        "Block: -6",
+        "Hit: 12",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[6-RC]"
+      ]
+    },
+    {
+      "name": "Bone Grinder",
+      "input": "(3)_(6)_(9)(K)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 48",
+        "Damage: 34",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: . [Launcher] at range. Tech Crouch[6-RC]"
+      ]
+    },
+    {
+      "name": "Bone Grinder",
+      "input": "(3)_(6)_(9)(K)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 48",
+        "Damage: 34,20",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 17%"
+      ]
+    },
+    {
+      "name": "Stamp of Hades",
+      "input": "(2)_(8)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Stamp of Hades",
+      "input": "(2)_(8)(K)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 58",
+        "Damage: 30",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: on ranged hit, is L quake that is +10 on block and +28 on hit."
+      ]
+    },
+    {
+      "name": "Lower Command Kick",
+      "input": "(1)_(4)_(7)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 26",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: on opponent who missed a medium attack"
+      ]
+    },
+    {
+      "name": "Atlas Punishment",
+      "input": "(3)_(6)_(9)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 44",
+        "Damage: 42",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Titan Ax",
+      "input": "(2)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 32",
+        "Block: -20",
+        "Hit: -8",
+        "Counter: -8",
+        "Guard Burst: 9%",
+        "Notes: KND and 52 damage on ranged hit, counterhit"
+      ]
+    },
+    {
+      "name": "Flip Titan Ax",
+      "input": "(8)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 32",
+        "Block: -20",
+        "Hit: -8",
+        "Counter: -8",
+        "Guard Burst: 9%",
+        "Notes: KND and 52 damage on ranged hit, counterhit"
+      ]
+    },
+    {
+      "name": "Titan Swing",
+      "input": "(1)_(4)_(7)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 50",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Titan Swing",
+      "input": "+(1)_(4)_(7)(A)+(B)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 48",
+        "Damage: 70",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "RUNK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 26",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Woebringer",
+      "input": "B+G",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 46",
+        "Damage: 40",
+        "Block: -12",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 16%"
+      ]
+    },
+    {
+      "name": "Woebringer",
+      "input": "+(B)+(G)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 66",
+        "Damage: 50",
+        "Block: 8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 20%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Ax of Woe",
+      "input": "REA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 54",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 33%",
+        "Notes: as initiator 2nd round opponent  K"
+      ]
+    },
+    {
+      "name": "Rending Torment",
+      "input": "REB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 63",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 50%",
+        "Notes: Will always  on 2nd round as initiator.  as initiator 2nd round opponent  A"
+      ]
+    },
+    {
+      "name": "Eviscerate",
+      "input": "REK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 36",
+        "Block: 14",
+        "Hit: 14",
+        "Counter: 14",
+        "Guard Burst: 33%",
+        "Notes: [STN] as initiator 2nd round opponent  B"
+      ]
+    },
+    {
+      "name": "Final Anguish",
+      "input": "A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 85",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Unbreakable"
+      ]
+    },
+    {
+      "name": "Soul Charge",
+      "input": "4A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 6",
+        "Damage: 0",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 0%",
+        "Notes: invincible since i4. Pushback happens at i6"
+      ]
+    },
+    {
+      "name": "Fiendish Assault",
+      "input": "236A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 39",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Fiendish Assault",
+      "input": "++236(A)+(B)+(K)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 39",
+        "Block: 2",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 9%",
+        "Notes: Armor [16-22]."
+      ]
+    },
+    {
+      "name": "Bringer of Ruin",
+      "input": "SC1AA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 35,30",
+        "Block: -24",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo. Tech Crouch [11-RC]. Armor [8-32]"
+      ]
+    },
+    {
+      "name": "Ruinous Discus Breaker",
+      "input": "SC1AB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 35,35",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 16%",
+        "Notes: BA. Normal Hit Combo. Tech Crouch [11-RC]. Armor [8-32]"
+      ]
+    },
+    {
+      "name": "Decimation",
+      "input": "SC4AA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,14",
+        "Block: 8",
+        "Hit: 14",
+        "Counter: 14",
+        "Guard Burst: 8%",
+        "Notes: . Armor"
+      ]
+    },
+    {
+      "name": "Decimation",
+      "input": "SC4A(A)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,25",
+        "Block: 8",
+        "Hit: 14",
+        "Counter: 14",
+        "Guard Burst: 8%",
+        "Notes: . Armor"
+      ]
+    },
+    {
+      "name": "Cerberus Surge",
+      "input": "SC236A",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 68",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 19%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Unstoppable Great Divide",
+      "input": "SCBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22,22",
+        "Block: -2",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Savage Great Divide",
+      "input": "SCB(B)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22,35",
+        "Block: LNC",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Apocalypse Pound",
+      "input": "SCbKA+G",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 88",
+        "Block: -42",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: . Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Apocalypse Drop",
+      "input": "SCbK4A+GA+G",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 93",
+        "Block: -42",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: 4 . Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Ruin Slam",
+      "input": "SC6B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Armor"
+      ]
+    },
+    {
+      "name": "Blood Tide Rush",
+      "input": "SC6BA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24,66",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 25%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Cyclopean Swipe",
+      "input": "SC6BB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 24,28",
+        "Block: 6",
+        "Hit: 24",
+        "Counter: 24",
+        "Guard Burst: 20%",
+        "Notes: . Normal Hit Combo. +24G on hit (can guard)"
+      ]
+    },
+    {
+      "name": "Ruinous Gorefang",
+      "input": "SC4BB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22,34",
+        "Block: 10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%"
+      ]
+    },
+    {
+      "name": "Annihilation Gorefang",
+      "input": "SC4B(B)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22,39",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Victorious Charge",
+      "input": "SC4KA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20,33",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Counter Hit Combo Armor [6-37]"
+      ]
+    },
+    {
+      "name": "Ruthless Assault",
+      "input": "SC4K(A)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20,39",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Armor [6-37]"
+      ]
+    },
+    {
+      "name": "Malicious Torment",
+      "input": "SC4B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 8,9,9",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 18%",
+        "Notes: on 3rd hit. Armor [6-38]. Tech Crouch [16-RC]"
+      ]
+    },
+    {
+      "name": "Apocalypse Cannon",
+      "input": "SC(2)_(8)B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 49",
+        "Block: 2",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: .  on opponent who missed a light attack"
+      ]
+    },
+    {
+      "name": "Apocalypse Rush",
+      "input": "SC(3)_(6)_(9)KK",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 28,23",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: Normal Hit Combo. Tech Crouch Armor [6-16]"
+      ]
+    },
+    {
+      "name": "Apocalypse Rush",
+      "input": "SC(3)_(6)_(9)(K)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 48",
+        "Damage: 37",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo. Tech Crouch Armor [8-46]"
+      ]
+    },
+    {
+      "name": "Vicious Fury",
+      "input": "SC(3)_(6)_(9)A+G",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 46",
+        "Damage: 55",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Armor [10-46]"
+      ]
+    },
+    {
+      "name": "Cursed Altar",
+      "input": "SC(1)_(4)_(7)A+G",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 46",
+        "Damage: 78",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 4  Armor [10-46]"
+      ]
+    },
+    {
+      "name": "Apocalypse Pound",
+      "input": "SC2A+G",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 60",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Apocalypse Drop",
+      "input": "SC1A+GA+G",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 80",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 4"
+      ]
+    },
+    {
+      "name": "Apocalypse Destroyer",
+      "input": "SC236A+GA+G",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 85",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Ride of the Wicked",
+      "input": "SC214A+G",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 45",
+        "Block: LNC",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: 4"
+      ]
+    },
+    {
+      "name": "Wicked Twister of Carnage",
+      "input": "SC214A+G2_8A",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 68",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 4"
+      ]
     }
   ]
 }

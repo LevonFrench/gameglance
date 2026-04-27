@@ -1,56 +1,2363 @@
 {
+  "name": "Setsuka",
   "character": "Setsuka",
+  "game": "SoulCalibur VI",
   "movesList": [
     {
-      "name": "Seven Stars",
-      "input": "236B",
-      "type": "Move"
+      "name": "Spring Downpour",
+      "input": "A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -8",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 1%"
+      ]
     },
     {
-      "name": "Falling Petal",
-      "input": "214B",
-      "type": "Move"
+      "name": "Spring Downpour",
+      "input": "AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,12",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
     },
     {
-      "name": "Empty Sky",
+      "name": "Spring Downpour",
+      "input": "AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,12,24",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Mourning Thrust",
+      "input": "aB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -4",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Rising Red Moon",
+      "input": "agB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 27",
+        "Block: -22",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[10-17].  on low health opponent. Have JF version (prevents AC)."
+      ]
+    },
+    {
+      "name": "Sakura Air Combo",
+      "input": "1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 8",
+        "Block: -20",
+        "Hit: -12",
+        "Counter: -12",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Sakura Air Combo",
+      "input": "1AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 8,12",
+        "Block: -20",
+        "Hit: -10",
+        "Counter: -10",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Sakura Air Combo",
+      "input": "1AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 8,12,14",
+        "Block: -12",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo. 3rd hit comes out only if 2nd hit connects."
+      ]
+    },
+    {
+      "name": "Grasscutter",
+      "input": "2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Willow Slash",
+      "input": "3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Winter Stitch",
+      "input": "4A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -10",
+        "Hit: 6",
+        "Counter: STN",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[10-39]"
+      ]
+    },
+    {
+      "name": "Tousled Hair Slash",
+      "input": "6A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Tousled Hair Slash",
+      "input": "6AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,18",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Blossom Slicer",
+      "input": "7A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Jump[9-32]"
+      ]
+    },
+    {
+      "name": "Blossom Slicer",
+      "input": "8A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 22",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Jump[9-32]"
+      ]
+    },
+    {
+      "name": "Blossom Slicer",
+      "input": "9A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 24",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Jump[9-32]"
+      ]
+    },
+    {
+      "name": "Crescent Slash",
+      "input": "WRA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -2",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[0-10]"
+      ]
+    },
+    {
+      "name": "Stalk Clipper",
+      "input": "FCA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[0-9]. Tech Crouch[13-RC]"
+      ]
+    },
+    {
+      "name": "Shade Buster",
+      "input": "FC3aB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 35",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[0-13]"
+      ]
+    },
+    {
+      "name": "Winter Breeze",
+      "input": "BTA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -4",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Wisteria Cutter",
+      "input": "BT2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[11-RC]"
+      ]
+    },
+    {
+      "name": "Wingbeat Shower",
+      "input": "B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -8",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Wingbeat Shower",
+      "input": "BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,12",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Wingbeat Shower",
+      "input": "BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,12,20",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Winter Funeral",
+      "input": "bA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 40",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Winter Funeral",
+      "input": "b(A)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 44",
+        "Block: -25",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[10-51]. SKY ready."
+      ]
+    },
+    {
+      "name": "Heartening Strike",
+      "input": "b4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 17",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 3%",
+        "Notes: after RI."
+      ]
+    },
+    {
+      "name": "Moonlight Thrust",
+      "input": "b6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 10",
+        "Guard Burst: 3%",
+        "Notes: on missed GI"
+      ]
+    },
+    {
+      "name": "Feather Slash",
+      "input": "bK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 12,18",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo. Tech Jump[14-31]"
+      ]
+    },
+    {
+      "name": "Half Moon Shadow",
+      "input": "1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[18-RC]"
+      ]
+    },
+    {
+      "name": "Waterfowl Slice",
+      "input": "2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Air Cutter",
+      "input": "3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -10",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Reverse Blade",
+      "input": "4B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Reverse Blade",
+      "input": "4BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10,10",
+        "Block: -12",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Mountain Mists",
+      "input": "6B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: STN",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Willow Divide",
+      "input": "7B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[9-32]"
+      ]
+    },
+    {
+      "name": "Willow Divide",
+      "input": "8B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 26",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[9-32]"
+      ]
+    },
+    {
+      "name": "Willow Divide",
+      "input": "9B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 28",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[9-32]"
+      ]
+    },
+    {
+      "name": "Petal Slicer",
+      "input": "FCB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[0-4]. Tech Crouch[16-RC]"
+      ]
+    },
+    {
+      "name": "Shade Thrust",
+      "input": "FC3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -18",
+        "Hit: -8",
+        "Counter: STN",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[0-33]"
+      ]
+    },
+    {
+      "name": "Shade Thrust",
+      "input": "FC3BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12,16",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Crescent Blade",
+      "input": "WRB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[0-16]"
+      ]
+    },
+    {
+      "name": "Silver Slicer",
+      "input": "BTB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Windbeat Strike",
+      "input": "BT BTBT 2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[19-RC]"
+      ]
+    },
+    {
+      "name": "Rising Sun Kick",
+      "input": "K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 14",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Flame Bearer",
+      "input": "1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Flame Bearer",
+      "input": "1(K)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: SKY ready"
+      ]
+    },
+    {
+      "name": "Crouching Side Kick",
+      "input": "2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 3%",
+        "Notes: Tech Crouch[0-11]"
+      ]
+    },
+    {
+      "name": "Shadow Attendant",
+      "input": "3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Shadow Attendant",
+      "input": "B 3KB",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,16",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 12",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Scarlet Blossom",
+      "input": "4K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -2",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Scarlet Blossom",
+      "input": "A 4KA",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,22",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 5%",
+        "Notes: Tech Crouch[12-57]. Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Knee Seduction",
+      "input": "6K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: STN",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Rising Heel",
+      "input": "7K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[13-36].  vs jumping opponent"
+      ]
+    },
+    {
+      "name": "Rising Heel",
+      "input": "8K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[13-36].  vs jumping opponent"
+      ]
+    },
+    {
+      "name": "Rising Heel",
+      "input": "9K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[13-36].  vs jumping opponent"
+      ]
+    },
+    {
+      "name": "Shin Kick",
+      "input": "FCK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 3%",
+        "Notes: Tech Crouch[0-4]. Tech Crouch[10-RC]"
+      ]
+    },
+    {
+      "name": "Rising Front Kick",
+      "input": "WRK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 18",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: Tech Crouch[0-4]"
+      ]
+    },
+    {
+      "name": "Rising Moon Kick",
+      "input": "BTK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 18",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Blind Shin Kick",
+      "input": "BT2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[13-RC]"
+      ]
+    },
+    {
+      "name": "Drifting Moon",
+      "input": "A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 40",
+        "Block: 4",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 15%",
+        "Notes: versus  or"
+      ]
+    },
+    {
+      "name": "Fiery Dance",
+      "input": "1A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,8,8,18",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Have JF version for +6 dmg."
+      ]
+    },
+    {
+      "name": "Lonely Shade",
+      "input": "2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -2",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Sunbeam Slice",
+      "input": "3A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[0-11]"
+      ]
+    },
+    {
+      "name": "Winter Funeral",
+      "input": "4A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 40",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[10-51]"
+      ]
+    },
+    {
+      "name": "Winter Funeral",
+      "input": "+4(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 40",
+        "Block: -22",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 4%",
+        "Notes: SKY ready"
+      ]
+    },
+    {
+      "name": "Shade Buster",
+      "input": "6A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 30",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[4-13]"
+      ]
+    },
+    {
+      "name": "Ocean Drizzle",
+      "input": "FC3A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -20",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[0-18]"
+      ]
+    },
+    {
+      "name": "Ocean Drizzle",
+      "input": "FC3A+BA",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22,16",
+        "Block: -14",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Warbler Slash",
+      "input": "BT2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 22",
+        "Block: -6",
+        "Hit: STN",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[8-17]. Tech Jump[17-50]"
+      ]
+    },
+    {
+      "name": "Silver Moon Combo",
+      "input": "B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 20",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Silver Moon Combo",
+      "input": "B+KB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 20,16",
+        "Block: -14",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Silver Moon Combo",
+      "input": "B+KBB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 20,16,28",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Silver Moon Combo",
+      "input": "B+KBA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 20,16,22",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Swan Slash",
+      "input": "1B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[10-19]"
+      ]
+    },
+    {
+      "name": "Swan Slash",
+      "input": "1B+KB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22,22",
+        "Block: -16",
+        "Hit: LNC, STN (2nd)",
+        "Counter: LNC, STN (2nd)",
+        "Guard Burst: 9, 14%",
+        "Notes: Tech Jump[22-53]"
+      ]
+    },
+    {
+      "name": "Crescent Lash",
+      "input": "2B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Shade Thrust",
+      "input": "3B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -18",
+        "Hit: -8",
+        "Counter: STN",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[6-33]"
+      ]
+    },
+    {
+      "name": "Shade Thrust",
+      "input": "3B+KB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12,12",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Shrouded Sky",
+      "input": "4B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: SKY"
+      ]
+    },
+    {
+      "name": "Mirror Blade",
+      "input": "6B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 24",
+        "Block: -",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: -",
+        "Notes: 1st time [6-12] vs & attacks"
+      ]
+    },
+    {
+      "name": "Mirror Blade",
+      "input": "6B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 34",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 2nd time [6-12] vs & attacks"
+      ]
+    },
+    {
+      "name": "Mirror Blade",
+      "input": "6B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 25",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: 3rd time [6-12] vs & attacks"
+      ]
+    },
+    {
+      "name": "Ring of Heaven",
+      "input": "8B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Tech Crouch[4-8]. Tech Jump[8-30]. Tech Crouch[33-53]"
+      ]
+    },
+    {
+      "name": "Breaking Wave",
+      "input": "8B+KA",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 8",
+        "Counter: 16",
+        "Guard Burst: 4%",
+        "Notes: ROH"
+      ]
+    },
+    {
+      "name": "Island Divide",
+      "input": "8B+KB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: KND/LNC",
+        "Counter: KND/LNC",
+        "Guard Burst: 9%",
+        "Notes: ROH"
+      ]
+    },
+    {
+      "name": "Rainy Moon",
+      "input": "BTB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -14",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[4-15]"
+      ]
+    },
+    {
+      "name": "Rainy Moon",
+      "input": "BTB+KB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 38",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2, 7%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Foggy Veil",
+      "input": "BT2B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 22",
+        "Block: -14",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[17-50]"
+      ]
+    },
+    {
+      "name": "Ring of Heaven",
+      "input": "BT8B+KA",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 8",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: ROH"
+      ]
+    },
+    {
+      "name": "Breaking Wave",
+      "input": "BT8B+KB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: ROH"
+      ]
+    },
+    {
+      "name": "Willow Splitter",
+      "input": "(3)_(6)_(9)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Shadow Cutter",
+      "input": "(2)_(8)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 12",
+        "Counter: 16",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[7-17]"
+      ]
+    },
+    {
+      "name": "Sakura Swipe",
+      "input": "(2)_(8)aB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 30",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: when punishing after guarding. Tech Jump[23-38]"
+      ]
+    },
+    {
+      "name": "Sakura Swipe",
+      "input": "2362aB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 30",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: when punishing after guarding. Tech Jump[23-38]"
+      ]
+    },
+    {
+      "name": "Horizon Sweeper",
+      "input": "(1)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Mist Cutter",
+      "input": "(4)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Mist Cutter",
+      "input": "(4)AA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16,20",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Rising Crescent",
+      "input": "(6)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[13-18]"
+      ]
+    },
+    {
+      "name": "Rising Crescent",
+      "input": "(3)_(9)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[13-18]"
+      ]
+    },
+    {
+      "name": "Double Silver Stab",
+      "input": "(2)_(8)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 9%",
+        "Notes: when opponent misses"
+      ]
+    },
+    {
+      "name": "Double Silver Stab",
+      "input": "(2)_(8)BB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,22",
+        "Block: -2",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9, 5%",
+        "Notes: Normal Hit Combo.  when opponent misses"
+      ]
+    },
+    {
+      "name": "Crescent Strike",
+      "input": "(1)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 30",
+        "Block: 0",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Moon Shadow Strike",
+      "input": "(4)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Moon Shadow Strike",
+      "input": "(4)BA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18,23",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3, 2%",
+        "Notes: Normal Hit Combo. Tech Crouch[24-48]"
+      ]
+    },
+    {
+      "name": "Heavenly Maiden",
+      "input": "(3)_(6)_(9)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16,10",
+        "Block: -4",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo. Tech Jump[12-62]  into WoH on hit"
+      ]
+    },
+    {
+      "name": "Shade Roundhouse",
+      "input": "(2)_(8)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 4%",
+        "Notes: [38-46] vs .  when opponent whiffs"
+      ]
+    },
+    {
+      "name": "Backspin Snow Sweeper",
+      "input": "(1)_(7)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[16-RC]"
+      ]
+    },
+    {
+      "name": "Shadow Hunter",
+      "input": "(4)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 18",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[19-33]"
+      ]
+    },
+    {
+      "name": "Shadow Hunter",
+      "input": "(4)KB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 18,22",
+        "Block: 0",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 14%",
+        "Notes: Normal Hit Combo. Tech Jump[0-4]"
+      ]
+    },
+    {
+      "name": "Dancing Feather Strike",
+      "input": "(4)Kb6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 18,32",
+        "Block: -12",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%"
+      ]
+    },
+    {
+      "name": "Dawn Petal Strike",
+      "input": "(3)_(6)_(9)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 36",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[10-28]"
+      ]
+    },
+    {
+      "name": "Shade Dancer",
+      "input": "(2)_(8)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 18",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Shade Dancer",
+      "input": "(2)_(8)A+BA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 18,19",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 1%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Blazing Moon",
+      "input": "(1)_(4)_(7)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 68",
+        "Damage: 70",
+        "Block: UB, STN",
+        "Hit: UB, STN",
+        "Counter: UB, STN",
+        "Guard Burst: -",
+        "Notes: . Tech Crouch[31-60]. Tech Jump[71-103]"
+      ]
+    },
+    {
+      "name": "Sodden Wings",
+      "input": "(3)_(6)_(9)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Sodden Wings",
+      "input": "(3)_(6)_(9)B+KB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16,13",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%",
+        "Notes: Normal Hit Combo. Tech Jump[6-24]. Can be delayed"
+      ]
+    },
+    {
+      "name": "Kingfisher Divide",
+      "input": "(2)_(8)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 38",
+        "Block: 2",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%",
+        "Notes: Tech Crouch[12-18]"
+      ]
+    },
+    {
+      "name": "Blind Heaven",
+      "input": "(1)_(7)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 28",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[14-22]. Tech Jump[22-39]. Tech Crouch[39-51]"
+      ]
+    },
+    {
+      "name": "Silver Shadow",
+      "input": "(4)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 28",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: STN",
+        "Guard Burst: 2%",
+        "Notes: With Moon Reflection, +4 damage and KND on NH"
+      ]
+    },
+    {
+      "name": "Sliding Scraper",
+      "input": "runK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[2-22]. Tech Crouch[22-52]"
+      ]
+    },
+    {
+      "name": "Wintry Chill",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 45",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Moon Wind",
+      "input": "4A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 45",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Crescent Sweep",
+      "input": "214A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 28",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Crimson Death",
+      "input": "236A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 30",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Shadow Descent",
+      "input": "LEFT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 58",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Vermilion Moon",
+      "input": "RIGHT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 62",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Snow Gate",
+      "input": "BACK THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 70",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Twilight Haze",
+      "input": "236",
+      "type": "Twilight Haze",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Dawn Haze",
+      "input": "214",
+      "type": "Dawn Haze",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Wings Of Heaven",
+      "input": "8B+KK",
+      "type": "Wingsof Heaven",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into WOH. Backturned"
+      ]
+    },
+    {
+      "name": "Wings Of Heaven",
+      "input": "+8(B)+(K)",
+      "type": "Wingsof Heaven",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into WOH."
+      ]
+    },
+    {
+      "name": "Wisteria Cutter",
+      "input": "WoHA",
+      "type": "Wingsof Heaven",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 12",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump[0-17]. Tech Crouch[20-RC]"
+      ]
+    },
+    {
+      "name": "Lunar Arc",
+      "input": "WoHB",
+      "type": "Wingsof Heaven",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[0-18]. Tech Crouch[18-RC]. +9 damage with Wintery Reflection"
+      ]
+    },
+    {
+      "name": "Land",
+      "input": "WoHG",
+      "type": "Wingsof Heaven",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Shrouded Sky",
+      "input": "4B+K",
+      "type": "Shrouded Sky",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into SKY"
+      ]
+    },
+    {
+      "name": "Supernal Winds",
+      "input": "SKY stage IA",
+      "type": "Shrouded Sky",
+      "properties": [
+        "Impact: 12",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[12+]"
+      ]
+    },
+    {
+      "name": "Supernal Winds",
+      "input": "SKY stage IIA",
+      "type": "Shrouded Sky",
+      "properties": [
+        "Impact: 10",
+        "Damage: 34",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[12+]"
+      ]
+    },
+    {
+      "name": "Supernal Winds",
+      "input": "SKY stage IIIA",
+      "type": "Shrouded Sky",
+      "properties": [
+        "Impact: 8",
+        "Damage: 46",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[12+]"
+      ]
+    },
+    {
+      "name": "Infernal Winds",
+      "input": "SKY stage I2A",
+      "type": "Shrouded Sky",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: -16",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 3%",
+        "Notes: Tech Crouch[12+]"
+      ]
+    },
+    {
+      "name": "Infernal Winds",
+      "input": "SKY stage II2A",
+      "type": "Shrouded Sky",
+      "properties": [
+        "Impact: 12",
+        "Damage: 30",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[12+]"
+      ]
+    },
+    {
+      "name": "Infernal Winds",
+      "input": "SKY stage III2A",
+      "type": "Shrouded Sky",
+      "properties": [
+        "Impact: 8",
+        "Damage: 34",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[12+]"
+      ]
+    },
+    {
+      "name": "Terrestrial Winds",
+      "input": "SKY stage IB",
+      "type": "Shrouded Sky",
+      "properties": [
+        "Impact: 16",
+        "Damage: 24",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[12+]"
+      ]
+    },
+    {
+      "name": "Terrestrial Winds",
+      "input": "SKY stage IIB",
+      "type": "Shrouded Sky",
+      "properties": [
+        "Impact: 12",
+        "Damage: 34",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[12+]"
+      ]
+    },
+    {
+      "name": "Terrestrial Winds",
+      "input": "SKY stage IIIB",
+      "type": "Shrouded Sky",
+      "properties": [
+        "Impact: 8",
+        "Damage: 28",
+        "Block: -4",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[12+]"
+      ]
+    },
+    {
+      "name": "Songbird Slice",
+      "input": "B+G",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 35",
+        "Damage: 40",
+        "Block: -4",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 16%"
+      ]
+    },
+    {
+      "name": "Songbird Slice",
+      "input": "+(B)+(G)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 45",
+        "Damage: 50",
+        "Block: 8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 20%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Silken Strike",
+      "input": "REA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 45",
+        "Block: -8",
+        "Hit: STN",
+        "Counter: -",
+        "Guard Burst: 33%"
+      ]
+    },
+    {
+      "name": "Autumn Rains",
+      "input": "REB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 54",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: -",
+        "Guard Burst: 50%"
+      ]
+    },
+    {
+      "name": "Flickering Flames",
+      "input": "REK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 30",
+        "Block: -4",
+        "Hit: STN",
+        "Counter: -",
+        "Guard Burst: 33%"
+      ]
+    },
+    {
+      "name": "Flickering Flames",
+      "input": "RE(K)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 30",
+        "Block: 0",
+        "Hit: STN",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: SKY ready"
+      ]
+    },
+    {
+      "name": "Silken Strike",
+      "input": "RE Second roundA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 52",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: -",
+        "Guard Burst: 33%"
+      ]
+    },
+    {
+      "name": "Autumn Rains",
+      "input": "RE Second roundB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 58",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: -",
+        "Guard Burst: 50%"
+      ]
+    },
+    {
+      "name": "Flicker Flames",
+      "input": "RE Second roundK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 31",
+        "Block: -4",
+        "Hit: LNC",
+        "Counter: -",
+        "Guard Burst: 33%"
+      ]
+    },
+    {
+      "name": "Flicker Flames",
+      "input": "RE Second round(K)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 31",
+        "Block: 0",
+        "Hit: LNC",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: . SKY ready"
+      ]
+    },
+    {
+      "name": "Demon's Lamnt",
       "input": "A+B+K",
-      "type": "Critical Edge"
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 84",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Soul Charge",
+      "input": "4A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 6",
+        "Damage: 0",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 0%",
+        "Notes: invincible since i4. Pushback happens at i6"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Rushing Waters",
+      "input": "236A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 36",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 14",
+        "Guard Burst: 9%",
+        "Notes: when all 3 visions are completed"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Divine Throne Air Combo",
+      "input": "SC1AAAAA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 8,12,14,8,22",
+        "Block: -20",
+        "Hit: -10",
+        "Counter: -10",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo. 3rd hit + not comes out oB"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Roaring Ocean",
+      "input": "SC2aB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 29",
+        "Block: 2",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 2%",
+        "Notes: WoH. Tech Crouch[8-13]. Tech Jump[17-50]"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Sakura Assault",
+      "input": "SC22aBA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 26,26",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: when guard punish. Tech Jump[23-38]"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Sakura Assault",
+      "input": "SC2362aBA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 26,26",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: when guard punish. Tech Jump[23-38]"
+      ]
+    },
+    {
+      "name": "Dawn Blossom",
+      "input": "SC(3)_(6)_(9)A+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 60",
+        "Block: 2",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 9%",
+        "Notes: . Tech Crouch[10-23]"
+      ]
+    },
+    {
+      "name": "Celestial Gleam",
+      "input": "SC(2)_(8)A+BAA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 18,24,8,8,22",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Ocean God's Ritual",
+      "input": "SCB+KBB+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 93",
+        "Block: -4",
+        "Hit: STN",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Hallowed Grounds",
+      "input": "SC6BB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22,36",
+        "Block: 4",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 12%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Cerulean Waters",
+      "input": "SC(4)B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 59",
+        "Block: -10",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Ravenous Viper",
+      "input": "SC2143BBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 54",
+        "Block: -2",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[0-33]"
+      ]
+    },
+    {
+      "name": "Ravenous Viper",
+      "input": "SC3B+KBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12,16,26",
+        "Block: -2",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[6-33]"
+      ]
+    },
+    {
+      "name": "Ravenous Viper",
+      "input": "SC FC3BBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12,16,26",
+        "Block: -2",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[0-33]"
+      ]
+    },
+    {
+      "name": "Serpent Slayer",
+      "input": "SC SKYA+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 65",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Ethernal Slayer ~ Shrouded Sky",
+      "input": "SC SKYK",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 5",
+        "Damage: 1",
+        "Block: -",
+        "Hit: -",
+        "Counter: 34",
+        "Guard Burst: -",
+        "Notes: Tech Crouch Interrupts opponent attacks"
+      ]
     }
   ]
 }

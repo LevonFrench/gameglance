@@ -4,34 +4,3680 @@
   "game": "SoulCalibur VI",
   "movesList": [
     {
-      "name": "Hachimitsu",
-      "input": "5A, 5A",
-      "type": "normal"
+      "name": "Barbed Blades",
+      "input": "A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 8",
+        "Block: -10",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 1%",
+        "Notes: Cancel with G"
+      ]
     },
     {
-      "name": "Lightning strike",
+      "name": "Barbed Blades",
+      "input": "AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 8,8",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Barbed Blades",
+      "input": "AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 8,8,10,16",
+        "Block: -8",
+        "Hit: -2",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: Tech Crouch[26-35] W! on CH. 3rd hit will force standing, Chip 6"
+      ]
+    },
+    {
+      "name": "Shadow Ripper",
+      "input": "AAB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 8,8,18",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo OTG. Recovers crouching. B can be delayed."
+      ]
+    },
+    {
+      "name": "Death Penalty",
+      "input": "AAK",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 8,8,16",
+        "Block: -2",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo Jails at tip range. K forces opponent BT on hit."
+      ]
+    },
+    {
+      "name": "Shadow Gate",
+      "input": "A6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 8,10,14",
+        "Block: -16",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo Just Frame [10-11]. Chip 6. LH triggers when hitting an opponent from the side."
+      ]
+    },
+    {
+      "name": "Shadow Shrine",
+      "input": "a6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 15",
+        "Damage: 10,14",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo W! Chip 6. LH triggers when hitting an opponent from the side."
+      ]
+    },
+    {
+      "name": "Shadow Plot ~ Wind Roll",
+      "input": "a6B+K",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 15",
+        "Damage: 10,14",
+        "Block: 12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo Tech Crouch[7-RC] W! Chip 6."
+      ]
+    },
+    {
+      "name": "Shadow Plot",
+      "input": "+a6(B)+(K)",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 15",
+        "Damage: 8,10,34",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: Tech Crouch[7-27] W! Chip 6. 4th hit will W! on LH"
+      ]
+    },
+    {
+      "name": "~ Distorted Breeze",
+      "input": "a62_8B+K",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 15",
+        "Damage: 10,14",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo Tech Crouch[9-RC] W! Chip 6."
+      ]
+    },
+    {
+      "name": "Fan Dance",
+      "input": "6A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "6A4",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -4",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "6AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12,15,20",
+        "Block: -8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: Counter Hit Combo at tip range, Chip 10 W!"
+      ]
+    },
+    {
+      "name": "Burning Misery",
+      "input": "6AB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12,8",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 3%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Burning Misery",
+      "input": "6ABB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12,8,10",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Burning Misery",
+      "input": "6ABBB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12,8,10,12",
+        "Block: -10",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 6%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Wind Scroll",
+      "input": "3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -10",
+        "Hit: 6",
+        "Counter: 10",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[6-16] Forces opponent BT on NH, Chip 6"
+      ]
+    },
+    {
+      "name": "Shadow Split",
+      "input": "2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[8-RC]"
+      ]
+    },
+    {
+      "name": "Reaping Hook",
+      "input": "1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 28",
+        "Block: -24",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[5-RC]. OTG. RO on NH"
+      ]
+    },
+    {
+      "name": "Judgment",
+      "input": "4A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 18",
+        "Block: -10",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "4A4",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -2",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Divine Judgment",
+      "input": "4AK",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,10,16",
+        "Block: 2",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 5%",
+        "Notes: Tech Jump[19-73] OTG"
+      ]
+    },
+    {
+      "name": "Divine Judgment",
+      "input": "4AK4",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,10,16",
+        "Block: -8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 5%",
+        "Notes: Tech Jump[19-73] OTG"
+      ]
+    },
+    {
+      "name": "Shadow Strike",
+      "input": "FCA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[0-9] then [13-RC]"
+      ]
+    },
+    {
+      "name": "Earth Scroll",
+      "input": "FC3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 16",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[20-RC]."
+      ]
+    },
+    {
+      "name": "Earth Scroll",
+      "input": "FC3AK",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 16,16",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 3%",
+        "Notes: Counter Hit Combo Tech Crouch[...-RC]"
+      ]
+    },
+    {
+      "name": "Shadow Claw",
+      "input": "WRA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -2",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[0-26] Does not force standing against crouching opponent."
+      ]
+    },
+    {
+      "name": "Shadow Claw",
+      "input": "WRAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18,8",
+        "Block: -10",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo Tech Crouch[0-26] Chip 3"
+      ]
+    },
+    {
+      "name": "Shadow Claw",
+      "input": "WRAAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18,8,29",
+        "Block: -18",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: Counter Hit Combo Tech Crouch[0-26] Tech Jump[10-27] Chip 3"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "WRAA4",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18,8",
+        "Block: -2",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%",
+        "Notes: Counter Hit Combo Tech Crouch[0-26] Chip 3"
+      ]
+    },
+    {
+      "name": "Falling Scroll",
+      "input": "7_8_9A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump[4-RC]"
+      ]
+    },
+    {
+      "name": "Reverse Shadow",
+      "input": "BTA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Reverse Shadow Split",
+      "input": "BT2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[11-RC]"
+      ]
+    },
+    {
+      "name": "Shadow Banishment",
+      "input": "B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Cancel with G, Forces standing"
+      ]
+    },
+    {
+      "name": "Shadow Banishment",
+      "input": "BA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,10",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Shadow Banishment",
+      "input": "BAK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,10,26",
+        "Block: -2",
+        "Hit: 6",
+        "Counter: KND,+6",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo Last hit forces opponent Back Turn on NH and CH. KND during STN"
+      ]
+    },
+    {
+      "name": "Heavy Shadow",
+      "input": "BA6K",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,10,31",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: GC"
+      ]
+    },
+    {
+      "name": "Shadow Return ~ Possession",
+      "input": "BA4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,10",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Hidden Assassin",
+      "input": "BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,12",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Hidden Assassin",
+      "input": "BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,12,10,14",
+        "Block: -10",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 7%",
+        "Notes: OTG Tech Crouch[28-RC]. Final input can be slightly delayed."
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "BB4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,12",
+        "Block: -2",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Oppression",
+      "input": "BK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,25",
+        "Block: -2",
+        "Hit: 6",
+        "Counter: KND,+6",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo Last hit forces opponent Back Turn on normal/counter hit. KND during STN"
+      ]
+    },
+    {
+      "name": "Oppression",
+      "input": "B(K)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,35",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: W! on air hit"
+      ]
+    },
+    {
+      "name": "Cursed Talisman",
       "input": "6B",
-      "type": "normal"
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -6",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 2%",
+        "Notes: Attacks can connect if opponent isnt pushed too far back on CH."
+      ]
     },
     {
-      "name": "Mekkyu",
-      "input": "236B",
-      "type": "special"
+      "name": "Cursed Talisman",
+      "input": "6BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,10,18,6",
+        "Block: 6",
+        "Hit: 6",
+        "Counter: LNC+6",
+        "Guard Burst: 19%",
+        "Notes: W!, Adds 1 stock towards LHs"
+      ]
     },
     {
-      "name": "Wind Roll",
-      "input": "6+B+K",
-      "type": "movement"
+      "name": "~ Possession Rush",
+      "input": "6BB6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,10,18,6",
+        "Block: 14",
+        "Hit: 14",
+        "Counter: LNC+14",
+        "Guard Burst: 19%",
+        "Notes: W!, Adds 1 stock towards LHs, Invulnerability."
+      ]
+    },
+    {
+      "name": "Spread Wing",
+      "input": "3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: -16",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[6-14]. OTG W!"
+      ]
+    },
+    {
+      "name": "Gust ~ Stalker",
+      "input": "3BB+K",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: -40",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[6-14]. OTG, W!, Hold B for shortcut."
+      ]
+    },
+    {
+      "name": "Gust ~ Stalker Forward",
+      "input": "+3B(B)+(K)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: -40",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[6-14]. OTG, W!, No shortcut available."
+      ]
+    },
+    {
+      "name": "Gust ~ Stalker Side",
+      "input": "3B2_8B+K",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: -40",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[6-14]. OTG, W!, Hold B for shortcut."
+      ]
+    },
+    {
+      "name": "Dark Slicer",
+      "input": "2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -10",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[16-RC]"
+      ]
+    },
+    {
+      "name": "Dark Slicer",
+      "input": "2BA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16,8",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: 0",
+        "Guard Burst: 4%",
+        "Notes: A can be delayed, Chip 3"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "2BA4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16,8",
+        "Block: -2",
+        "Hit: 6",
+        "Counter: 10",
+        "Guard Burst: 4%",
+        "Notes: A can be delayed, Chip3."
+      ]
+    },
+    {
+      "name": "Dark Slicer Feint",
+      "input": "2bA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 7",
+        "Damage: 10",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: 0",
+        "Guard Burst: 1%",
+        "Notes: Chip 3"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "2bA4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 7",
+        "Damage: 10",
+        "Block: -2",
+        "Hit: 6",
+        "Counter: 10",
+        "Guard Burst: 1%",
+        "Notes: Chip 3"
+      ]
+    },
+    {
+      "name": "Curse ~ Possession",
+      "input": "1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22",
+        "Block: -10",
+        "Hit: 0",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[8-PO] Stance triggers automatically."
+      ]
+    },
+    {
+      "name": "Lightning Scroll",
+      "input": "4B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -16",
+        "Hit: -10",
+        "Counter: -10",
+        "Guard Burst: 2%",
+        "Notes: Chip 3, i13 at tip range"
+      ]
+    },
+    {
+      "name": "Lightning Scroll",
+      "input": "4BA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,10",
+        "Block: -16",
+        "Hit: -10",
+        "Counter: -10",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo Chip 3,3"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "4BA4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,10",
+        "Block: 4",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo Chip 3,3"
+      ]
+    },
+    {
+      "name": "Seal of the Fire Dragon",
+      "input": "41236B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 60",
+        "Damage: 50",
+        "Block: LNC -43",
+        "Hit: LNC -43",
+        "Counter: LNC -43",
+        "Guard Burst: -",
+        "Notes: Tech Jump[62-96] W! OTG. Cancel with G"
+      ]
+    },
+    {
+      "name": "Free Shadow",
+      "input": "FCB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[16-RC]"
+      ]
+    },
+    {
+      "name": "Darkness Banishment",
+      "input": "WRB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[0-13]"
+      ]
+    },
+    {
+      "name": "Darkness Banishment",
+      "input": "WRBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12,20",
+        "Block: -18",
+        "Hit: -4",
+        "Counter: STN -4",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo  Tech Crouch[0-13] 2nd hit will KND during STN. Cannot ukemi on air hit."
+      ]
+    },
+    {
+      "name": "Dark Ambush ~ Stalker",
+      "input": "WRBB+K",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[4-12] Tech Jump[12-43]"
+      ]
+    },
+    {
+      "name": "Dark Ambush ~ Stalker",
+      "input": "WR+B(B)+(K)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[4-12] Tech Jump[12-43]"
+      ]
+    },
+    {
+      "name": "Dark Ambush ~ Stalker",
+      "input": "WRB2_8B+K",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[4-12] Tech Jump[12-43]"
+      ]
+    },
+    {
+      "name": "Veiled Banishment",
+      "input": "7_8_9B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 12",
+        "Block: -10",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[4-32]"
+      ]
+    },
+    {
+      "name": "Veiled Banishment",
+      "input": "7_8_9BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 12,20",
+        "Block: -18",
+        "Hit: -4",
+        "Counter: STN,-4",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo Tech Jump[4-32]. Tech Crouch[26-36]. 2nd hit will KND during STN"
+      ]
+    },
+    {
+      "name": "Veiled Ambush ~ Stalker",
+      "input": "7_8_9BB+K",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 12",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[4-32] ~ Tech Crouch[4-12] Tech Jump[12-43]"
+      ]
+    },
+    {
+      "name": "Veiled Ambush ~ Stalker",
+      "input": "+7_8_9B(B)+(K)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 12",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[4-32] ~ Tech Crouch[4-12] Tech Jump[12-43]"
+      ]
+    },
+    {
+      "name": "Veiled Ambush ~ Stalker",
+      "input": "7_8_9B2_8B+K",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 12",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[4-32] ~ Tech Crouch[4-12] Tech Jump[12-43]"
+      ]
+    },
+    {
+      "name": "Shadow Mekki-maru",
+      "input": "BTB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Shadow Mekki-maru",
+      "input": "BTBA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16,10",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 4%",
+        "Notes: A can be delayed significantly, Chip 3"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "BTBA4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16,10",
+        "Block: -2",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 4%",
+        "Notes: A can be delayed significantly. Chip 3."
+      ]
+    },
+    {
+      "name": "Darkness Shatter",
+      "input": "BT2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[20-RC]"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "BT2B4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -5",
+        "Hit: 3",
+        "Counter: 3",
+        "Guard Burst: 2%",
+        "Notes: [20-PO]"
+      ]
+    },
+    {
+      "name": "Haste",
+      "input": "K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -10",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 1%",
+        "Notes: Cancel with G"
+      ]
+    },
+    {
+      "name": "Haste",
+      "input": "KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,10",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Haste",
+      "input": "KKK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,10,12",
+        "Block: -2",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Return ~ Possession",
+      "input": "KK4",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,10",
+        "Block: -4",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 3%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Water Haste",
+      "input": "KK2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,10,10",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo Tech Crouch[25-RC] OTG"
+      ]
+    },
+    {
+      "name": "Thunder Fall Kick",
+      "input": "K2",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 17,13",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 9%",
+        "Notes: Counter Hit Combo Tech Jump.  OTG Forces crouch on block/hit. KND during STN"
+      ]
+    },
+    {
+      "name": "Divine Punishment",
+      "input": "6K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14",
+        "Block: -12",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 2%",
+        "Notes: OTG"
+      ]
+    },
+    {
+      "name": "Divine Punishment",
+      "input": "6KA",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14,10",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo OTG. A can be delayed, Chip 3"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "6KA4",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14,10",
+        "Block: -2",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo OTG. A can be delayed."
+      ]
+    },
+    {
+      "name": "Divine Kicker",
+      "input": "6KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14,22",
+        "Block: 2",
+        "Hit: 8",
+        "Counter: KND,+8",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo OTG. KND during STN"
+      ]
+    },
+    {
+      "name": "Rapid Destruction",
+      "input": "3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10",
+        "Block: -8",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 2%",
+        "Notes: Does not force standing"
+      ]
+    },
+    {
+      "name": "Rapid Destruction",
+      "input": "3KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,10",
+        "Block: -16",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo 2nd hit forces standing"
+      ]
+    },
+    {
+      "name": "Rapid Destruction",
+      "input": "3KKK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,10,20",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: Counter Hit Combo Tech Jump[13-28] W! combos and KND during STN"
+      ]
+    },
+    {
+      "name": "~ Wind Roll",
+      "input": "3KKB+K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,10",
+        "Block: 16",
+        "Hit: 30",
+        "Counter: 30",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[7-RC]"
+      ]
+    },
+    {
+      "name": "~ Wind Roll",
+      "input": "+3KK(B)+(K)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,10,34",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 13%",
+        "Notes: Tech Crouch[0-27] ~Tech Jump[27-45] Tech Crouch[48-62] .  [B+K] will W! on LH"
+      ]
+    },
+    {
+      "name": "Sealing Punishment",
+      "input": "2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[11-RC] OTG"
+      ]
+    },
+    {
+      "name": "Punishing Strike",
+      "input": "1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10",
+        "Block: -14",
+        "Hit: -8",
+        "Counter: -2",
+        "Guard Burst: 1%",
+        "Notes: OTG"
+      ]
+    },
+    {
+      "name": "Punishing Strike",
+      "input": "1KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,14",
+        "Block: 0",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 3%",
+        "Notes: Counter Hit Combo OTG, Forces crouch on Hit, i10 attacks will not connect."
+      ]
+    },
+    {
+      "name": "Water Kick",
+      "input": "4K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Water Kick",
+      "input": "4KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20,12",
+        "Block: -8",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 3%",
+        "Notes: Counter Hit Combo. Tech Crouch[26-RC] OTG"
+      ]
+    },
+    {
+      "name": "Sealing Punishment",
+      "input": "FCK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[10-RC] OTG"
+      ]
+    },
+    {
+      "name": "Divine Cannon Combo",
+      "input": "FC3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -20",
+        "Hit: -10",
+        "Counter: -6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[17-RC]"
+      ]
+    },
+    {
+      "name": "Divine Cannon Combo",
+      "input": "FC3KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12,14",
+        "Block: -12",
+        "Hit: 6",
+        "Counter: STN,+6",
+        "Guard Burst: 3%",
+        "Notes: Counter Hit Combo Tech Crouch[...-18] Combos and KND during STN"
+      ]
+    },
+    {
+      "name": "Divine Cannon",
+      "input": "WRK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 15",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: STN,+2",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[0-16] W!"
+      ]
+    },
+    {
+      "name": "Haste Alternate",
+      "input": "7_8_9K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 12",
+        "Block: -20",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 1%",
+        "Notes: Tech Jump[4-32]"
+      ]
+    },
+    {
+      "name": "Haste Alternate",
+      "input": "7_8_9KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 12,10",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: Tech Jump[4-32] Tech Crouch[0-16] OTG. Jails against movmement, counter attacks, and RE."
+      ]
+    },
+    {
+      "name": "Haste Alternate",
+      "input": "7_8_9KKK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 12,10,14",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Tech Jump Tech Crouch OTG"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "7_8_9KK4",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 12,10",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: Tech Jump Tech Crouch OTG."
+      ]
+    },
+    {
+      "name": "Punishing Wind",
+      "input": "BTK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -2",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Forces crouch on Block/hit, Cannot ukemi air hit"
+      ]
+    },
+    {
+      "name": "Reverse Seal Punishment",
+      "input": "BT2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -16",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch OTG RTech Crouch"
+      ]
+    },
+    {
+      "name": "Ninja Cannon",
+      "input": "A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 18,6",
+        "Block: 2",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: Tech Crouch. .  RTech Crouch, Forces crouch, LH triggers upon Impact Counter"
+      ]
+    },
+    {
+      "name": "Ninja Cannon",
+      "input": "A+BA",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 18,6",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: Tech Crouch. .  Froces crouch. LH triggers upon Impact Counter. 2nd hit misses if 1st hit connects."
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "A+BA4",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 18,6",
+        "Block: 1",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: Tech Crouch. .  Forces crouch. LH triggers upon Impact Countee. 2nd hit misses if 1st hit connects."
+      ]
+    },
+    {
+      "name": "Lightning Blaze",
+      "input": "a+bA",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 7",
+        "Damage: 10",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: 0",
+        "Guard Burst: 1%",
+        "Notes: Chip 3"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "a+bA4",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 7",
+        "Damage: 10",
+        "Block: -2",
+        "Hit: 6",
+        "Counter: 10",
+        "Guard Burst: 1%",
+        "Notes: Chip3."
+      ]
+    },
+    {
+      "name": "Demon Destroyer ~ Possession Rush",
+      "input": "6A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 49",
+        "Damage: 20",
+        "Block: 0",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%",
+        "Notes: Froced into stance"
+      ]
+    },
+    {
+      "name": "Demon Destroyer ~ Possession",
+      "input": "6A+B4",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 49",
+        "Damage: 20",
+        "Block: -3",
+        "Hit: -3",
+        "Counter: -3",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Demon Destroyer ~ Possession",
+      "input": "6a+b4",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Cancels projectile into stance."
+      ]
+    },
+    {
+      "name": "Fog Blanket",
+      "input": "2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 37",
+        "Damage: 30",
+        "Block: -26",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch. Tech Jump.  OTG Has the capacity to jump over mids. Attack recovers Downed on whiff; the same applies to GC, but only if the prior attack's block advantage is +0 or greater"
+      ]
+    },
+    {
+      "name": "Seal",
+      "input": "4A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 28",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[4-20] W!"
+      ]
+    },
+    {
+      "name": "Poison Dart",
+      "input": "FCA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10",
+        "Block: -16",
+        "Hit: 6",
+        "Counter: STN,+6",
+        "Guard Burst: 2%",
+        "Notes: STN when used OTG"
+      ]
+    },
+    {
+      "name": "Fog Blanket",
+      "input": "BT2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 30",
+        "Block: -40",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch. Tech Jump.  OTG Has the capacity to jump over mids. Attack recovers Downed on whiff; the same applies to GC, but only if the prior attack's block advantage is +0 or greater"
+      ]
+    },
+    {
+      "name": "Gunpowder Plot",
+      "input": "+6(B)+(K)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 28",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: .  OTG at later frames. LH Triggers upon hitting an opponent using a high attack, W! on LH. Becomes -4 on block at max range."
+      ]
+    },
+    {
+      "name": "Reverse Lightning",
+      "input": "BTB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 40",
+        "Block: -24",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: . Tech Crouch. Tech Jump"
+      ]
+    },
+    {
+      "name": "Reverse Lightning",
+      "input": "DOWNB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 17",
+        "Damage: 40",
+        "Block: -24",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: . Tech Crouch. Tech Jump"
+      ]
+    },
+    {
+      "name": "Appeal",
+      "input": "K+G",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Taunt, Cancel with G. Can also be cancelled with attacks after a few frames."
+      ]
+    },
+    {
+      "name": "Strangulation Blade",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 48",
+        "Block: -",
+        "Hit: KND,+16",
+        "Counter: KND,+16",
+        "Guard Burst: -",
+        "Notes: Cannot ukemi"
+      ]
+    },
+    {
+      "name": "Departure in Fire",
+      "input": "4A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 52",
+        "Block: -",
+        "Hit: KND,+26",
+        "Counter: KND,+26",
+        "Guard Burst: -",
+        "Notes: Cannot ukemi"
+      ]
+    },
+    {
+      "name": "Jute Burial",
+      "input": "LEFT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 62",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Cannot ukemi"
+      ]
+    },
+    {
+      "name": "Cellar Drop",
+      "input": "RIGHT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 62",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Cannot ukemi"
+      ]
+    },
+    {
+      "name": "Dropping the Bottle",
+      "input": "BACK THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 70",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Can ukemi"
+      ]
+    },
+    {
+      "name": "Crossing the Cliff",
+      "input": "(3)_(6)_(9)A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 62",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Cannot ukemi, Taki is +6 upon grapple break"
+      ]
+    },
+    {
+      "name": "Shadow Step",
+      "input": "(3)_(6)_(9)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10",
+        "Block: -10",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "(3)_(6)_(9)A4",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10",
+        "Block: -4",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Shadow Run",
+      "input": "(3)_(6)_(9)AA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10,16",
+        "Block: -6",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "(3)_(6)_(9)AA4",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10,16",
+        "Block: -8",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Piercing Wind Seal",
+      "input": "(2)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 14",
+        "Block: -4",
+        "Hit: 4",
+        "Counter: STN,+4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch. Tech Jump. No Chip"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "(2)A4",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 14",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: STN,+4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch. Tech Jump. No Chip"
+      ]
+    },
+    {
+      "name": "Piercing Wind Curse",
+      "input": "(8)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 16",
+        "Block: -4",
+        "Hit: 4",
+        "Counter: STN,+4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch. Tech Jump Chip 3"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "(8)A4",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 16",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: STN,+4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch. Tech Jump. Chip 3."
+      ]
+    },
+    {
+      "name": "Bamboo Cutter",
+      "input": "(1)_(4)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%",
+        "Notes: -7 On block at tip, +3 on hit at tip range. Somewhat forces BT"
+      ]
+    },
+    {
+      "name": "Assassin's Strike",
+      "input": "(3)_(6)_(9)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -12",
+        "Hit: STN -8",
+        "Counter: STN -8",
+        "Guard Burst: 9%",
+        "Notes: . Tech Crouch[7-22]. -16 when blocked from a distance. LH Triggers upon close range front hit"
+      ]
+    },
+    {
+      "name": "Illusion Scroll",
+      "input": "(2)_(8)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,17",
+        "Block: -12",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "False Illusion Scroll",
+      "input": "(2)_(8)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 15",
+        "Block: -12",
+        "Hit: STN,+18",
+        "Counter: STN,+18",
+        "Guard Burst: 9%",
+        "Notes: Sweet spot STN will occur if 1st hit misses"
+      ]
+    },
+    {
+      "name": "Explosive Talisman",
+      "input": "(1)_(4)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 16,18,6",
+        "Block: 6",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 20%",
+        "Notes: .  W!. Adds 1 stock towards LHs"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "(1)_(4)_(7)B6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 16,18,6",
+        "Block: 14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 20%",
+        "Notes: .  W!. Adds 1 stock towards LHs, Invulnerability.  Rush"
+      ]
+    },
+    {
+      "name": "Hurricane Punishment",
+      "input": "(3)_(6)_(9)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 20,20",
+        "Block: -18",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo. Tech Crouch[4-10]. Tech Jump[10-28]"
+      ]
+    },
+    {
+      "name": "Storm Cloud Scroll",
+      "input": "(2)_(8)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,14",
+        "Block: -18",
+        "Hit: -8",
+        "Counter: STN",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo. Tech Crouch. Tech Jump."
+      ]
+    },
+    {
+      "name": "Storm Cloud Scroll",
+      "input": "(2)_(8)KA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,14,26",
+        "Block: -18",
+        "Hit: KND -16",
+        "Counter: KND -16",
+        "Guard Burst: 12%",
+        "Notes: Counter Hit Combo. Tech Crouch. Tech Jump.  W!"
+      ]
+    },
+    {
+      "name": "~ Stalker",
+      "input": "(2)_(8)KB+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,14",
+        "Block: -",
+        "Hit: -",
+        "Counter: STN",
+        "Guard Burst: 10%",
+        "Notes: Tech Crouch. Tech Jump. ."
+      ]
+    },
+    {
+      "name": "~ Stalker",
+      "input": "+(2)_(8)K(B)+(K)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,14",
+        "Block: -",
+        "Hit: -",
+        "Counter: STN",
+        "Guard Burst: 10%",
+        "Notes: Tech Crouch. Tech Jump. ."
+      ]
+    },
+    {
+      "name": "~ Stalker",
+      "input": "(2)_(8)KB+K2_8",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,14",
+        "Block: -",
+        "Hit: -",
+        "Counter: STN",
+        "Guard Burst: 10%",
+        "Notes: Tech Crouch. Tech Jump. ."
+      ]
+    },
+    {
+      "name": "~ Wind Roll",
+      "input": "(2)_(8)K6B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,14",
+        "Block: 4",
+        "Hit: 14",
+        "Counter: STN",
+        "Guard Burst: 10%",
+        "Notes: Tech Crouch. Tech Jump. ."
+      ]
+    },
+    {
+      "name": "~ Gunpowder Plot",
+      "input": "+(2)_(8)K6(B)+(K)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,14,34",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: STN,KND",
+        "Guard Burst: 19%",
+        "Notes: Tech Crouch. Tech Jump. . Counter Hit Combo [B+K] will W! on LH."
+      ]
+    },
+    {
+      "name": "~ Distorted Breeze",
+      "input": "(2)_(8)K2_8B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,14",
+        "Block: -",
+        "Hit: -",
+        "Counter: STN",
+        "Guard Burst: 10%",
+        "Notes: Tech Crouch. Tech Jump. ."
+      ]
+    },
+    {
+      "name": "Heavy Burden",
+      "input": "(1)_(4)_(7)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 18",
+        "Block: -4",
+        "Hit: 4",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Forces crouch on block/normal hit, Cannot ukemi air hit"
+      ]
+    },
+    {
+      "name": "Spectre Extermination",
+      "input": "(3)_(6)_(9)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10,10,22",
+        "Block: -4",
+        "Hit: STN,4",
+        "Counter: STN,4",
+        "Guard Burst: 5%",
+        "Notes: Tech Jump. Tech Crouch"
+      ]
+    },
+    {
+      "name": "Spectre Extermination",
+      "input": "+(3)_(6)_(9)(A)+(B)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10,10,38",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump. Tech Crouch."
+      ]
+    },
+    {
+      "name": "Vacuum Drop Kick",
+      "input": "RUNK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 21",
+        "Damage: 26",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump. Tech Crouch."
+      ]
+    },
+    {
+      "name": "Vacuum Drop Kick",
+      "input": "RUNKK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 21",
+        "Damage: 26,19",
+        "Block: -",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo. Tech Jump. Tech Crouch.  String can only be completed on hit"
+      ]
+    },
+    {
+      "name": "Vacuum Drop Kick",
+      "input": "RUNKKB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 21",
+        "Damage: 26,19,31",
+        "Block: -8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 10%",
+        "Notes: Tech Jump. Tech Crouch.  String can only be completed on hit"
+      ]
     },
     {
       "name": "Possession",
-      "input": "214",
-      "type": "stance"
+      "input": "PO214",
+      "type": "Possession",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Striking Shadow",
+      "input": "POA",
+      "type": "Possession",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -16",
+        "Hit: -4",
+        "Counter: STN,-4",
+        "Guard Burst: 4%",
+        "Notes: Active hitbox [12-14]. Chip 6"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "POA4",
+      "type": "Possession",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: Active hitbox [12-14]. Chip 6"
+      ]
+    },
+    {
+      "name": "Scroll Of Darkness",
+      "input": "PO6A",
+      "type": "Possession",
+      "properties": [
+        "Impact: 20",
+        "Damage: 30",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump W! towards the left."
+      ]
+    },
+    {
+      "name": "Scroll Of Vanishing ~ Stalker",
+      "input": "PO6AB+K",
+      "type": "Possession",
+      "properties": [
+        "Impact: 20",
+        "Damage: 30",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump W! towards the left."
+      ]
+    },
+    {
+      "name": "Forward",
+      "input": "PO+6A(B)+(K)",
+      "type": "Possession",
+      "properties": [
+        "Impact: 20",
+        "Damage: 30",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump W! towards the left."
+      ]
+    },
+    {
+      "name": "Side",
+      "input": "PO6A2_8B+K",
+      "type": "Possession",
+      "properties": [
+        "Impact: 20",
+        "Damage: 30",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump W! towards the left."
+      ]
+    },
+    {
+      "name": "Storm Scroll",
+      "input": "PO2_8A",
+      "type": "Possession",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,17",
+        "Block: -4",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 3%",
+        "Notes: TS. Tech Crouch. Tech Jump. Normal Hit Combo Chip 6"
+      ]
+    },
+    {
+      "name": "Dream Scroll",
+      "input": "POB",
+      "type": "Possession",
+      "properties": [
+        "Impact: 22",
+        "Damage: 34",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Forces crouch on block, Chip 10"
+      ]
+    },
+    {
+      "name": "Dream Scroll",
+      "input": "PObG",
+      "type": "Possession",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: . Cancel into stance"
+      ]
+    },
+    {
+      "name": "Possession Quake",
+      "input": "PObA",
+      "type": "Possession",
+      "properties": [
+        "Impact: 10",
+        "Damage: 12,10",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo Chip 3"
+      ]
+    },
+    {
+      "name": "Assassin's Purification",
+      "input": "PO6B",
+      "type": "Possession",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18",
+        "Block: -18",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch.  Chip 6"
+      ]
+    },
+    {
+      "name": "Assassin's Purification",
+      "input": "PO6BA",
+      "type": "Possession",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18,24",
+        "Block: -14",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 10%",
+        "Notes: Tech Crouch.  Chip 6"
+      ]
+    },
+    {
+      "name": "Assassin's Secret",
+      "input": "PO2_8B",
+      "type": "Possession",
+      "properties": [
+        "Impact: 20",
+        "Damage: 15,10",
+        "Block: 0",
+        "Hit: 18",
+        "Counter: 18",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo Tech Crouch   W! LH Triggers upon punishing a high attack. Stance triggers automatically."
+      ]
+    },
+    {
+      "name": "Fire Dragon Possession",
+      "input": "PO41236B",
+      "type": "Possession",
+      "properties": [
+        "Impact: 60",
+        "Damage: 50",
+        "Block: LNC",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: . Tech Jump OTG W!, Cancel with G"
+      ]
+    },
+    {
+      "name": "Mat",
+      "input": "POK",
+      "type": "Possession",
+      "properties": [
+        "Impact: 28",
+        "Damage: 22",
+        "Block: -16",
+        "Hit: STN,-4",
+        "Counter: STN,-4",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump OTG Cancel with G"
+      ]
+    },
+    {
+      "name": "Mat",
+      "input": "POKK",
+      "type": "Possession",
+      "properties": [
+        "Impact: 28",
+        "Damage: 22,21",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Normal Hit Combo. Tech Jump GC OTG, Recovers BT. String cannot be completed if first hit misses"
+      ]
+    },
+    {
+      "name": "Stormy Skies",
+      "input": "PO(K)",
+      "type": "Possession",
+      "properties": [
+        "Impact: 28",
+        "Damage: 52",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump.  OTG Cannot ukemi"
+      ]
+    },
+    {
+      "name": "Whirling Misery",
+      "input": "PO6K",
+      "type": "Possession",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,16",
+        "Block: -4",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo OTG"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "PO6K4",
+      "type": "Possession",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,16",
+        "Block: -8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo.  . OTG"
+      ]
+    },
+    {
+      "name": "Possession Strike",
+      "input": "PO2_8K",
+      "type": "Possession",
+      "properties": [
+        "Impact: 14",
+        "Damage: 20",
+        "Block: -26",
+        "Hit: -16",
+        "Counter: STN",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump OTG on back and forward rolling opponent"
+      ]
+    },
+    {
+      "name": "Reverse Possession Strike",
+      "input": "PO BT2_8K",
+      "type": "Possession",
+      "properties": [
+        "Impact: 28",
+        "Damage: 19",
+        "Block: -12",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump OTG"
+      ]
     },
     {
       "name": "Exorcism",
-      "input": "A+B",
-      "type": "unblockable"
+      "input": "POA+B",
+      "type": "Possession",
+      "properties": [
+        "Impact: 46",
+        "Damage: 60",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Tech Crouch"
+      ]
+    },
+    {
+      "name": "Hover Lightning",
+      "input": "POB+K",
+      "type": "Possession",
+      "properties": [
+        "Impact: 48",
+        "Damage: 30",
+        "Block: 0",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%",
+        "Notes: Chip 10, LH Triggers upon punishing a missed attack"
+      ]
+    },
+    {
+      "name": "Vacuum Dropkick",
+      "input": "PO2_8B+K",
+      "type": "Possession",
+      "properties": [
+        "Impact: 23",
+        "Damage: 25",
+        "Block: -36",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: .  Tech Crouch[2-20]. Tech Jump [20-58]. Tech Crouch [58...]. Recovers Downed on Guard/whiff. Low profile allows for evading Mid atacks. LH Triggers upon hitting opponent after detonating 4 Talismans"
+      ]
+    },
+    {
+      "name": "Vacuum Dropkick",
+      "input": "PO2_8B+KB",
+      "type": "Possession",
+      "properties": [
+        "Impact: 23",
+        "Damage: 25,28",
+        "Block: 11",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 12%",
+        "Notes: .  Tech Crouch[2-20]. Tech Jump [20-58]. Tech Crouch [58...]. Recovers Downed on Guard/whiff. Low profile allows for evading Mid atacks. String can only be completed on hit and GC. Normal Hit Combo on LH. LH Triggers upon hitting opponent after detonating 4 Talismans."
+      ]
+    },
+    {
+      "name": "Bow Breaker",
+      "input": "POA+G",
+      "type": "Possession",
+      "properties": [
+        "Impact: 18",
+        "Damage: 45",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Cannot Ukemi. +6 Grapple break"
+      ]
+    },
+    {
+      "name": "Return of the Sun",
+      "input": "PO4A+G",
+      "type": "Possession",
+      "properties": [
+        "Impact: 18",
+        "Damage: 30",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: .  Cannot Ukemi. +6 Grapple break. LH Triggers upon successful grab after detonating 6 Talismans; only once per match."
+      ]
+    },
+    {
+      "name": "Possession Rush",
+      "input": "PO6",
+      "type": "Possession",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: . Tech Crouch PO Rush"
+      ]
+    },
+    {
+      "name": "Possession Step",
+      "input": "PO2_8",
+      "type": "Possession",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: . Tech Crouch PO Step"
+      ]
+    },
+    {
+      "name": "Wind Roll",
+      "input": "WRO6B+K",
+      "type": "Wind Roll",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Tech Crouch."
+      ]
+    },
+    {
+      "name": "Silent Killer",
+      "input": "WROA",
+      "type": "Wind Roll",
+      "properties": [
+        "Impact: 23",
+        "Damage: 10,20",
+        "Block: 0",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 10%",
+        "Notes: Tech Crouch. .  Triggers upon hitting an opponent after breaking their guard"
+      ]
+    },
+    {
+      "name": "Wind Death Sault",
+      "input": "WROB",
+      "type": "Wind Roll",
+      "properties": [
+        "Impact: 10",
+        "Damage: 24",
+        "Block: -22",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch. Tech Jump."
+      ]
+    },
+    {
+      "name": "Wind Death Sault",
+      "input": "WROBB",
+      "type": "Wind Roll",
+      "properties": [
+        "Impact: 10",
+        "Damage: 24,9",
+        "Block: -",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch. Tech Jump. Normal Hit Combo."
+      ]
+    },
+    {
+      "name": "Wind Death Sault",
+      "input": "WROBBB",
+      "type": "Wind Roll",
+      "properties": [
+        "Impact: 10",
+        "Damage: 24,9,34",
+        "Block: -",
+        "Hit: STN -23",
+        "Counter: STN -23",
+        "Guard Burst: 19%",
+        "Notes: Tech Crouch. Tech Jump. Counter Hit Combo. x2"
+      ]
+    },
+    {
+      "name": "Wind Sealing Rush",
+      "input": "WROBK",
+      "type": "Wind Roll",
+      "properties": [
+        "Impact: 10",
+        "Damage: 24,6",
+        "Block: -34",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch. Tech Jump. Normal Hit Combo."
+      ]
+    },
+    {
+      "name": "Wind Sealing Rush",
+      "input": "WROBKB",
+      "type": "Wind Roll",
+      "properties": [
+        "Impact: 10",
+        "Damage: 24,6,15",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch. Tech Jump. Normal Hit Combo. x2. String cannot be completed if second hit misses"
+      ]
+    },
+    {
+      "name": "Wind Sealing Descent",
+      "input": "WROBK(B)",
+      "type": "Wind Roll",
+      "properties": [
+        "Impact: 10",
+        "Damage: 24,6,6,12,8",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch. Tech Jump. Normal Hit Combo. .  String cannot be completed if second hit misses"
+      ]
+    },
+    {
+      "name": "Wind Stealth Launch",
+      "input": "WROK",
+      "type": "Wind Roll",
+      "properties": [
+        "Impact: 28",
+        "Damage: 28",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch. Tech Jump. .  Triggers upon hitting an opponent using a high attack, W! on LH"
+      ]
+    },
+    {
+      "name": "Wind Roll ~ Possession",
+      "input": "WRO4",
+      "type": "Wind Roll",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Tech Crouch."
+      ]
+    },
+    {
+      "name": "Distorted Wind Roll ~ Distorted Breeze",
+      "input": "WRO2_8B+K",
+      "type": "Wind Roll",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Tech Crouch."
+      ]
+    },
+    {
+      "name": "Distorted Breeze",
+      "input": "DB2_8B+K",
+      "type": "Distorted Breeze",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Side Breeze Seal",
+      "input": "DB LEFTA",
+      "type": "Distorted Breeze",
+      "properties": [
+        "Impact: 52",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch No chip"
+      ]
+    },
+    {
+      "name": "Side Breeze Curse",
+      "input": "DB RIGHTA",
+      "type": "Distorted Breeze",
+      "properties": [
+        "Impact: 52",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch Chip 3"
+      ]
+    },
+    {
+      "name": "Demon Fangs",
+      "input": "DBB",
+      "type": "Distorted Breeze",
+      "properties": [
+        "Impact: 58",
+        "Damage: 30",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Tech Crouch    Chip 10, LH Triggers upon succesful GI against High or Middle attacks excluding projectiles."
+      ]
+    },
+    {
+      "name": "Flowing Breeze",
+      "input": "DBK",
+      "type": "Distorted Breeze",
+      "properties": [
+        "Impact: 50",
+        "Damage: 14,14",
+        "Block: -18",
+        "Hit: -8",
+        "Counter: STN",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo. Tech Crouch. Tech Jump. Though exactly the same as 2288K this move is incapable of Guard Crush"
+      ]
+    },
+    {
+      "name": "Flowing Breeze",
+      "input": "DBKA",
+      "type": "Distorted Breeze",
+      "properties": [
+        "Impact: 50",
+        "Damage: 14,14,27",
+        "Block: -18",
+        "Hit: KND,-16",
+        "Counter: KND,-16",
+        "Guard Burst: 12%",
+        "Notes: Counter Hit Combo. Tech Crouch. Tech Jump W!"
+      ]
+    },
+    {
+      "name": "Flowing Gale ~ Stalker",
+      "input": "DBKB+K",
+      "type": "Distorted Breeze",
+      "properties": [
+        "Impact: 50",
+        "Damage: 14,14",
+        "Block: -",
+        "Hit: -",
+        "Counter: STN",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo. Tech Crouch. Tech Jump."
+      ]
+    },
+    {
+      "name": "Forward",
+      "input": "DB+K(B)+(K)",
+      "type": "Distorted Breeze",
+      "properties": [
+        "Impact: 50",
+        "Damage: 14,14",
+        "Block: -",
+        "Hit: -",
+        "Counter: STN",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo. Tech Crouch. Tech Jump."
+      ]
+    },
+    {
+      "name": "Side",
+      "input": "DBKB+K2_8",
+      "type": "Distorted Breeze",
+      "properties": [
+        "Impact: 50",
+        "Damage: 14,14",
+        "Block: -",
+        "Hit: -",
+        "Counter: STN",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo. Tech Crouch. Tech Jump."
+      ]
+    },
+    {
+      "name": "Flowing Gust ~ Wind Roll",
+      "input": "DBK6B+K",
+      "type": "Distorted Breeze",
+      "properties": [
+        "Impact: 50",
+        "Damage: 14,14",
+        "Block: 4",
+        "Hit: 14",
+        "Counter: STN",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo. Tech Crouch. Tech Jump."
+      ]
+    },
+    {
+      "name": "Flowing Gust",
+      "input": "DB+K6(B)+(K)",
+      "type": "Distorted Breeze",
+      "properties": [
+        "Impact: 50",
+        "Damage: 14,14,34",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 19%",
+        "Notes: Counter Hit Combo. Tech Crouch. Tech Jump.  W! on LH"
+      ]
+    },
+    {
+      "name": "~ Distorted Breeze",
+      "input": "DBK2_8B+K",
+      "type": "Distorted Breeze",
+      "properties": [
+        "Impact: 50",
+        "Damage: 14,14",
+        "Block: -",
+        "Hit: -",
+        "Counter: STN",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo. Tech Crouch. Tech Jump.  Guard damage scaling on DB B."
+      ]
+    },
+    {
+      "name": "Distorted Breeze ~ Possession",
+      "input": "DB4",
+      "type": "Distorted Breeze",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Tech Crouch."
+      ]
+    },
+    {
+      "name": "Stalker",
+      "input": "STKB+K",
+      "type": "Stalker",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: . Tech Jump"
+      ]
+    },
+    {
+      "name": "Stalker Blade",
+      "input": "STKA",
+      "type": "Stalker",
+      "properties": [
+        "Impact: 47",
+        "Damage: 35",
+        "Block: -20",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump Chip 6"
+      ]
+    },
+    {
+      "name": "Stalker Thunder",
+      "input": "STKB",
+      "type": "Stalker",
+      "properties": [
+        "Impact: 58",
+        "Damage: 55",
+        "Block: -14",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%",
+        "Notes: Tech Jump. GC , OTG, Chip 10, LH Triggers punishing a missed attack"
+      ]
+    },
+    {
+      "name": "Stalker Omen",
+      "input": "STKK",
+      "type": "Stalker",
+      "properties": [
+        "Impact: 44",
+        "Damage: 10,10",
+        "Block: 2",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump Invulnerablity. Cannot ukemi air hit"
+      ]
+    },
+    {
+      "name": "Stalker Omen",
+      "input": "STKKA",
+      "type": "Stalker",
+      "properties": [
+        "Impact: 44",
+        "Damage: 10,10,35",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump Invulnerablity. W! towards the right. Chip 6. Air hit resets STN in combos/tech traps"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "STKK4",
+      "type": "Stalker",
+      "properties": [
+        "Impact: 44",
+        "Damage: 10,10",
+        "Block: 6",
+        "Hit: 14",
+        "Counter: 14",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump Invulnerablity."
+      ]
+    },
+    {
+      "name": "Stalker Cloud",
+      "input": "STK(K)",
+      "type": "Stalker",
+      "properties": [
+        "Impact: 40",
+        "Damage: 6,5,5,16",
+        "Block: -16",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 6%",
+        "Notes: Tech Jump. Tech Crouch Invulnerablity"
+      ]
+    },
+    {
+      "name": "Stalker Drop",
+      "input": "STKA+G",
+      "type": "Stalker",
+      "properties": [
+        "Impact: 17",
+        "Damage: 50",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: upon grabbing airborne opponents. Cannot ukemi"
+      ]
+    },
+    {
+      "name": "Stalker Breeze",
+      "input": "STKB+K2_8",
+      "type": "Stalker",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Stalker Breeze",
+      "input": "STKB+K2_84",
+      "type": "Stalker",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Stalker Deception",
+      "input": "STK+(B)+(K)",
+      "type": "Stalker",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Blighted Leaves",
+      "input": "REB+G",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 46",
+        "Damage: 30",
+        "Block: -4",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 16%",
+        "Notes: Chip 8, Cannot ukemi on air hit"
+      ]
+    },
+    {
+      "name": "Blighted Leaves",
+      "input": "RE+(B)+(G)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 66",
+        "Damage: 40",
+        "Block: 8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 20%",
+        "Notes: . .  Chip 12, Cannot ukemi on air hit"
+      ]
+    },
+    {
+      "name": "Falling Leaf ~ Possession",
+      "input": "REB+G4",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Tech Jump."
+      ]
+    },
+    {
+      "name": "Demon Oppressor",
+      "input": "REA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 19",
+        "Block: -8",
+        "Hit: -10",
+        "Counter: -10",
+        "Guard Burst: 33%",
+        "Notes: LH triggers upon winning second bout as initiator."
+      ]
+    },
+    {
+      "name": "Demon Oppressor",
+      "input": "REAA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 19,11",
+        "Block: -20",
+        "Hit: -30",
+        "Counter: -30",
+        "Guard Burst: 33.5%",
+        "Notes: LH triggers upon winning second bout as initiator."
+      ]
+    },
+    {
+      "name": "Demon Oppressor",
+      "input": "REAAA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 19,11,10,12",
+        "Block: 0",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 36%",
+        "Notes: x2 LH triggers upon winning second bout as initiator. Chip 10."
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "REAA4",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 19,11",
+        "Block: 5",
+        "Hit: 3",
+        "Counter: 3",
+        "Guard Burst: 33.5%",
+        "Notes: LH triggers upon winning second bout as initiator."
+      ]
+    },
+    {
+      "name": "Demon Deception",
+      "input": "REAB+K",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 19",
+        "Block: -30",
+        "Hit: 30",
+        "Counter: 30",
+        "Guard Burst: 33%",
+        "Notes: Tech Crouch  LH triggers upon winning second bout as initiator."
+      ]
+    },
+    {
+      "name": "Demon Deception",
+      "input": "RE+A(B)+(K)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 19,27",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 30%",
+        "Notes: Normal Hit Combo  Tech Crouch Tech Jump x2  LH triggers upon winning second bout as initiator. W! if second hit LHs"
+      ]
+    },
+    {
+      "name": "Blazing Flame",
+      "input": "REB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 12,12",
+        "Block: -",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 46%",
+        "Notes: Normal Hit Combo   Chip 6, GC on second round vs Guard. LH triggers upon winning second bout as initiator."
+      ]
+    },
+    {
+      "name": "Death Dealer",
+      "input": "REK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 25",
+        "Block: -8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 33%",
+        "Notes: LH triggers upon winning second bout as initiator."
+      ]
+    },
+    {
+      "name": "Guard",
+      "input": "REG",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: As initiator, GI on second round if defender selects G. +28 if opponent doesnt Reverse Impact"
+      ]
+    },
+    {
+      "name": "Forward Step",
+      "input": "RE6",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Side Step",
+      "input": "RE2_8",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Step is treated as 8 way run"
+      ]
+    },
+    {
+      "name": "Back Step",
+      "input": "RE4",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Fu-Ma Seal, Fatal Violet",
+      "input": "SGA+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 90",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: . .  Invulnerable[11-28], Able to clash with attacks. Rare W!"
+      ]
+    },
+    {
+      "name": "Soul Charge",
+      "input": "SG4A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 6",
+        "Damage: 0",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 0%",
+        "Notes: invincible since i4. Pushback happens at i6"
+      ]
+    },
+    {
+      "name": "Quake Slash",
+      "input": "SG236A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 29,4,4,13",
+        "Block: 0",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 12%",
+        "Notes: Normal Hit Combo.  W!"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "SG236A+B+K4",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 29,4,4,13",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 12%",
+        "Notes: Normal Hit Combo. . W!."
+      ]
+    },
+    {
+      "name": "Sundering Talisman",
+      "input": "SCAAKB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 8,8,17,19,21,7",
+        "Block: 6",
+        "Hit: LNC,+6",
+        "Counter: LNC,+6",
+        "Guard Burst: 20%",
+        "Notes: W! Adds 1 stock towards LHs. 4th hit jails if 3rd hit connects."
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "SCAAKB6",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 8,8,17,19,21,7",
+        "Block: 14",
+        "Hit: LNC,+14",
+        "Counter: LNC,+14",
+        "Guard Burst: 20%",
+        "Notes: W! Adds 1 stock towards LHs. Invulnerability."
+      ]
+    },
+    {
+      "name": "Rending Ninja Cannon",
+      "input": "SCAAA+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 8,8,19",
+        "Block: 2",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 8%",
+        "Notes: OTG. Third hit follows step"
+      ]
+    },
+    {
+      "name": "Rending Ninja Cannon",
+      "input": "SCAAA+BA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 8,8,19,8",
+        "Block: 1",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 8%",
+        "Notes: OTG. Third hit follows step"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "SCAAA+BA4",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 8,8,19,8",
+        "Block: 9",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 8%",
+        "Notes: OTG. Third hit follows step"
+      ]
+    },
+    {
+      "name": "Exorcising Blade",
+      "input": "SCAAa+bA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 8,8,11",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 10",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "SCAAa+bA4",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 8,8,11",
+        "Block: -2",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo."
+      ]
+    },
+    {
+      "name": "Rapid Wing",
+      "input": "SC6ABBBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12,8,10,12,19",
+        "Block: 0",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 17%",
+        "Notes: Counter Hit Combo  W!"
+      ]
+    },
+    {
+      "name": "Midnight Stalker",
+      "input": "SC WRAAA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 19,8,32",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 7%",
+        "Notes: Counter Hit Combo Tech Crouch Tech Jump"
+      ]
+    },
+    {
+      "name": "Nightmare Scroll",
+      "input": "SC4BB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 11,37",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 16%",
+        "Notes: GC. 2nd B can be delayed. chip 3,10"
+      ]
+    },
+    {
+      "name": "Wing Ninja Cannon",
+      "input": "SC3BA+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 24,21",
+        "Block: 4",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: Normal Hit Combo   Tech Crouch[6-14] OTG"
+      ]
+    },
+    {
+      "name": "Demon Decimator ~ Possession Rush",
+      "input": "SC6A+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 22",
+        "Block: 20",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%",
+        "Notes: W! on air hit, Invulnerability. Stance triggers automatically."
+      ]
+    },
+    {
+      "name": "Demon Decimator ~ Possession",
+      "input": "SC6A+B4",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 22",
+        "Block: 6",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%",
+        "Notes: W! on air hit."
+      ]
+    },
+    {
+      "name": "Demon Decimator",
+      "input": "SC6a+b4",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Cancels projectile."
+      ]
+    },
+    {
+      "name": "Iron Seal",
+      "input": "SC4A+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 28",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: W! Becomes a level 1 GI in SC"
+      ]
+    },
+    {
+      "name": "Eraser Ninja Cannon",
+      "input": "SC(3)_(6)_(9)AAA+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 11,17,19,6",
+        "Block: 2",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 8%"
+      ]
+    },
+    {
+      "name": "Eraser Ninja Cannon",
+      "input": "SC(3)_(6)_(9)AAA+BA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 11,17,19,8",
+        "Block: 1",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 8%"
+      ]
+    },
+    {
+      "name": "~ Possession",
+      "input": "SC(3)_(6)_(9)AAA+BA4",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 11,17,19,8",
+        "Block: 9",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 8%"
+      ]
+    },
+    {
+      "name": "Target Takeout",
+      "input": "SC(3)_(6)_(9)AAa+bA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 11,17,11",
+        "Block: -12",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Target Takeout",
+      "input": "SC(3)_(6)_(9)AAa+bA4",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 11,17,11",
+        "Block: -2",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Mourning Gods",
+      "input": "SC POB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 41",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: .  Forces crouch"
+      ]
+    },
+    {
+      "name": "Demon Purification",
+      "input": "SC PO6BAA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 19,26,31",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%",
+        "Notes: Tech Crouch. Normal Hit Combo.  W! Jails while being able to drop guard"
+      ]
+    },
+    {
+      "name": "Fallen Demon",
+      "input": "SC POA+G",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 60",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Cannot ukemi, +6 upon grapple break"
+      ]
     }
   ]
 }

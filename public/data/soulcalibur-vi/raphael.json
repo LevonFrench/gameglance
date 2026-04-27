@@ -1,56 +1,2492 @@
 {
+  "name": "Raphael",
   "character": "Raphael",
+  "game": "SoulCalibur VI",
   "movesList": [
     {
-      "name": "Shadow Strike",
-      "input": "66B",
-      "type": "Move"
+      "name": "Temple Bayonet",
+      "input": "A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%",
+        "Notes: G cancel"
+      ]
     },
     {
-      "name": "Preparation (Stance)",
+      "name": "Temple Bayonet",
+      "input": "AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,10",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Temple Bayonet",
+      "input": "AB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,15",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Vicious Lullaby",
+      "input": "6A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 12",
+        "Block: -10",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Vicious Lullaby",
+      "input": "6AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 12,14",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Violent Blood",
+      "input": "3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%",
+        "Notes: on 3rd hit. Tech Crouch [10-16]"
+      ]
+    },
+    {
+      "name": "Cleaving Talon",
+      "input": "2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch [8-RC]"
+      ]
+    },
+    {
+      "name": "Heel Snipe",
+      "input": "1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 15",
+        "Block: -16",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch [22-40]"
+      ]
+    },
+    {
+      "name": "Heavy Mandritti",
+      "input": "4A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16",
+        "Block: -16",
+        "Hit: -2",
+        "Counter: KND",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Rising Wyvern",
+      "input": "46A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: vs whiffed horizontals"
+      ]
+    },
+    {
+      "name": "Low Tondo Roversi",
+      "input": "FCA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -10",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch [7-14]."
+      ]
+    },
+    {
+      "name": "Rising Tondo",
+      "input": "WRA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14",
+        "Block: -4",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Scarlet Talon",
+      "input": "7A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%",
+        "Notes: forces BT on hit. Tech Jump[7-30]. Tech Crouch[33-50]"
+      ]
+    },
+    {
+      "name": "Scarlet Talon",
+      "input": "8A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%",
+        "Notes: forces BT on hit. Tech Jump[7-30]. Tech Crouch[33-50]"
+      ]
+    },
+    {
+      "name": "Scarlet Talon",
+      "input": "9A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%",
+        "Notes: forces BT on hit. Tech Jump[7-30]. Tech Crouch[33-50]"
+      ]
+    },
+    {
+      "name": "Turning Attack au Fer",
+      "input": "BTA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Low Turning Attack au Fer",
+      "input": "BT2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 11",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Rapid Arrogance",
+      "input": "B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10",
+        "Block: -8",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 2%",
+        "Notes: G cancel"
+      ]
+    },
+    {
+      "name": "Rapid Arrogance",
+      "input": "BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Rapid Arrogance",
+      "input": "BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,12,10",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%",
+        "Notes: 4 dmg more on perfect input"
+      ]
+    },
+    {
+      "name": "Rapid Arrogance",
+      "input": "BBB4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,12,10",
+        "Block: -1",
+        "Hit: 9",
+        "Counter: 9",
+        "Guard Burst: 1%",
+        "Notes: 4 dmg more on perfect input.  into AG"
+      ]
+    },
+    {
+      "name": "Rapid Arrogance",
+      "input": "BBB46",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,12,10",
+        "Block: 1",
+        "Hit: 11",
+        "Counter: 11",
+        "Guard Burst: 1%",
+        "Notes: 4 dmg more on perfect input.  into PR"
+      ]
+    },
+    {
+      "name": "Rapid Arrogance",
+      "input": "BBBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,14,14,26",
+        "Block: -14",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 5%",
+        "Notes: Last 2 hits Normal Hit Combo. 6 dmg more on perfect input"
+      ]
+    },
+    {
+      "name": "Phasing Moon",
+      "input": "BBK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,14,20",
+        "Block: -12",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Grave Needle",
+      "input": "b2",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Fendante",
+      "input": "b2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,15",
+        "Block: -16",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Single Montante",
+      "input": "b4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 30",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Triple Botta in Tempo",
+      "input": "6B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10",
+        "Block: -12",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Triple Botta in Tempo",
+      "input": "6B4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10",
+        "Block: 0",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 2%",
+        "Notes: into AG"
+      ]
+    },
+    {
+      "name": "Triple Botta in Tempo",
+      "input": "6B46",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10",
+        "Block: 2",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 2%",
+        "Notes: into PR"
+      ]
+    },
+    {
+      "name": "Triple Botta in Tempo",
+      "input": "6BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10,10",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Triple Botta in Tempo",
+      "input": "6B(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10,10",
+        "Block: -4",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo.  into PR"
+      ]
+    },
+    {
+      "name": "Triple Botta in Tempo",
+      "input": "6BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10,10,25",
+        "Block: -16",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo. 6 dmg more on perfect input"
+      ]
+    },
+    {
+      "name": "Raptor Rush",
+      "input": "3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[12-21]"
+      ]
+    },
+    {
+      "name": "Raptor Rush",
+      "input": "3(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22",
+        "Block: -4",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[12-21].  into PR"
+      ]
+    },
+    {
+      "name": "Crouching Montante",
+      "input": "2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Striking Snake",
+      "input": "1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 25",
+        "Block: -16",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Striking Snake",
+      "input": "1(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 25",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 2%",
+        "Notes: into PR"
+      ]
+    },
+    {
+      "name": "Wicked Thrust",
+      "input": "4B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20",
+        "Block: -14",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[3-23]"
+      ]
+    },
+    {
+      "name": "Wicked Thrust",
+      "input": "4(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20",
+        "Block: -4",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[3-23].  into PR"
+      ]
+    },
+    {
+      "name": "Affondo Fendante",
+      "input": "236B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 42",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: on -20 or more block punish. 4 dmg more on perfect input. Tech Crouch[10-12]"
+      ]
+    },
+    {
+      "name": "Nouveau Soleil",
+      "input": "214B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 46",
+        "Block: -20",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: versus whiffed  or . 4 dmg more on perfect input. Tech Crouch[6-12]"
+      ]
+    },
+    {
+      "name": "Deadly Dirge",
+      "input": "46B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -14",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 2%",
+        "Notes: versus whiffed verticals"
+      ]
+    },
+    {
+      "name": "Crouching Montante",
+      "input": "FCB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Advance Slicer",
+      "input": "FC3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: upon hitting whiffed throw"
+      ]
+    },
+    {
+      "name": "Rising Threat",
+      "input": "WRB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Rising Threat",
+      "input": "WRBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,10",
+        "Block: -10",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Rising Threat",
+      "input": "WRBB4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,10",
+        "Block: 0",
+        "Hit: 14",
+        "Counter: 14",
+        "Guard Burst: 2%",
+        "Notes: Counter Hit Combo.  into AG"
+      ]
+    },
+    {
+      "name": "Rising Threat",
+      "input": "WRBB46",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,10",
+        "Block: 2",
+        "Hit: 16",
+        "Counter: 16",
+        "Guard Burst: 2%",
+        "Notes: Counter Hit Combo.  into PR"
+      ]
+    },
+    {
+      "name": "Rising Threat",
+      "input": "WRbK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10,18",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo on crouching opponent"
+      ]
+    },
+    {
+      "name": "Sky Agente",
+      "input": "7B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 20",
+        "Block: -10",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[7-31]. Tech Crouch[33-50]"
+      ]
+    },
+    {
+      "name": "Sky Agente",
+      "input": "8B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 24",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[7-31]. Tech Crouch[33-50]"
+      ]
+    },
+    {
+      "name": "Sky Agente",
+      "input": "9B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 28",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[7-31]. Tech Crouch[33-50]"
+      ]
+    },
+    {
+      "name": "Turning Montante",
+      "input": "BTB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -6",
+        "Hit: -2",
+        "Counter: 4",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Low Turn Montante",
+      "input": "BT2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Venom High Kick",
+      "input": "K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%",
+        "Notes: G cancel"
+      ]
+    },
+    {
+      "name": "Venom Toe Kick",
+      "input": "6K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[10-17].  after RI"
+      ]
+    },
+    {
+      "name": "Venom Kick",
+      "input": "3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Harm Kick",
+      "input": "2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[12-RC]. Horizontal attack"
+      ]
+    },
+    {
+      "name": "Pirouette Sweep",
+      "input": "1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 1%",
+        "Notes: Tech Jump[10-12]. Horizontal attack"
+      ]
+    },
+    {
+      "name": "Venom Heel",
+      "input": "4K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Hemlock Kick",
+      "input": "46K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%",
+        "Notes: versus whiffed kicks"
+      ]
+    },
+    {
+      "name": "Harm Kick",
+      "input": "FCK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "High Toe Kick",
+      "input": "WRK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -2",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Chaos Moon",
+      "input": "7K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 14",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[7-31]"
+      ]
+    },
+    {
+      "name": "Chaos Moon",
+      "input": "8K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[7-31]"
+      ]
+    },
+    {
+      "name": "Chaos Moon",
+      "input": "9K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[7-31]"
+      ]
+    },
+    {
+      "name": "Turning Venom High Kick",
+      "input": "BTK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -8",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 1%",
+        "Notes: Horizontal attack"
+      ]
+    },
+    {
+      "name": "Turning Sweep Kick",
+      "input": "BT2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 1%",
+        "Notes: Horizontal attack"
+      ]
+    },
+    {
+      "name": "Enveloping Stocatta",
+      "input": "A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 40",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: .  versus  & . Can also be done as WR.  or BT."
+      ]
+    },
+    {
+      "name": "Fury of the Loup-Garou",
+      "input": "6A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 14,14",
+        "Block: -2",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Fury of the Loup-Garou",
+      "input": "+6(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 39",
+        "Damage: 16,14",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Spinning Affondo Thrust",
+      "input": "3A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 28",
+        "Block: -14",
+        "Hit: 2",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Baroque Storm",
+      "input": "2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,18",
+        "Block: -10",
+        "Hit: -10",
+        "Counter: KND",
+        "Guard Burst: 14%",
+        "Notes: Normal Hit Combo. Tech Crouch&Tech Jump"
+      ]
+    },
+    {
+      "name": "Assalto Montante Crescendo",
+      "input": "4A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 19",
+        "Damage: 16,18",
+        "Block: -16",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 14%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Assalto Montante Crescendo",
+      "input": "4A+BA",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 19",
+        "Damage: 16,18,24",
+        "Block: -12",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Blood Roar",
+      "input": "8A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 15,20",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 8%",
+        "Notes: [12-16] versus M H horizontals.  if you hit 4+ lethal hits"
+      ]
+    },
+    {
+      "name": "Spiral Envelopment",
+      "input": "B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [2-9] – evades high and mid attacks"
+      ]
+    },
+    {
+      "name": "Circular Envelopment",
+      "input": "2B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [2-9] – evades low and mid attacks"
+      ]
+    },
+    {
+      "name": "Riposte",
+      "input": "BTB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [5-13] – evades low and mid attacks"
+      ]
+    },
+    {
+      "name": "Sly Riposte",
+      "input": "EvadeB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 25",
+        "Block: -12",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Sly Riposte",
+      "input": "EvadeB4",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 25",
+        "Block: 1",
+        "Hit: 20",
+        "Counter: 20",
+        "Guard Burst: -",
+        "Notes: into AG"
+      ]
+    },
+    {
+      "name": "Sly Riposte",
+      "input": "EvadeB46",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 25",
+        "Block: 2",
+        "Hit: 20",
+        "Counter: 20",
+        "Guard Burst: -",
+        "Notes: into PR"
+      ]
+    },
+    {
+      "name": "Quick Parade",
       "input": "4B+K",
-      "type": "Move"
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [8-17].  into QP"
+      ]
     },
     {
-      "name": "Bloody Murder",
+      "name": "Cantarella Needle (Advance)",
+      "input": "6B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -10",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch starts from impact frame"
+      ]
+    },
+    {
+      "name": "Cantarella Needle (Left)",
+      "input": "6B+K8",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -10",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Cantarella Needle (Right)",
+      "input": "6B+K2",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -10",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Unending Stings",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 45",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Death Puppet",
+      "input": "4A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 50",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "A Lesson in Massacre",
+      "input": "LEFT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 62",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Front or Back Escape"
+      ]
+    },
+    {
+      "name": "Undertaker",
+      "input": "RIGHT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 60",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Front or Back Escape"
+      ]
+    },
+    {
+      "name": "Pure Sacrifice",
+      "input": "BACK THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 72",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: can only be broken by Astaroth, Voldo"
+      ]
+    },
+    {
+      "name": "Bloody Slicer",
+      "input": "(3)_(6)_(9)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -14",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[4-12]"
+      ]
+    },
+    {
+      "name": "Merciless Stramazone",
+      "input": "(2)_(8)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Merciless Stramazone",
+      "input": "(2)_(8)AA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,18",
+        "Block: -8",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Merciless Stramazone",
+      "input": "(2)_(8)AA4",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,18",
+        "Block: -3",
+        "Hit: 20",
+        "Counter: 20",
+        "Guard Burst: 2%",
+        "Notes: into AG"
+      ]
+    },
+    {
+      "name": "Merciless Stramazone",
+      "input": "(2)_(8)AA46",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,18",
+        "Block: -8",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 2%",
+        "Notes: into iPR"
+      ]
+    },
+    {
+      "name": "Deadly Strikes",
+      "input": "(2)_(8)AB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,18",
+        "Block: -18",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 7%"
+      ]
+    },
+    {
+      "name": "Deadly Strikes",
+      "input": "(2)_(8)A(B)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,18",
+        "Block: -4",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 7%",
+        "Notes: into PR"
+      ]
+    },
+    {
+      "name": "Squalambrato Concierto",
+      "input": "(1)_(4)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 14",
+        "Block: -10",
+        "Hit: 0",
+        "Counter: 8",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Squalambrato Concierto",
+      "input": "(1)_(4)_(7)AB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 14,16",
+        "Block: -8",
+        "Hit: -4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Squalambrato Concierto",
+      "input": "(1)_(4)_(7)A(B)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 14,16",
+        "Block: 2",
+        "Hit: 6",
+        "Counter: 14",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo.  into PR"
+      ]
+    },
+    {
+      "name": "Broken Thrust",
+      "input": "(6)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -16",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Broken Thrust",
+      "input": "(6)(B)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 12",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: into PR"
+      ]
+    },
+    {
+      "name": "Death Guise",
+      "input": "(3)_(9)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 20",
+        "Block: -16",
+        "Hit: 0",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Valiant Falcon",
+      "input": "(2)_(8)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Valiant Falcon",
+      "input": "(2)_(8)BB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14,16",
+        "Block: -16",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 7%"
+      ]
+    },
+    {
+      "name": "Aiming Shaft",
+      "input": "(1)_(4)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 35",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Venom Side Kick",
+      "input": "(3)_(6)_(9)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Venom Roundhouse",
+      "input": "(2)_(8)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Dark Moon",
+      "input": "(1)_(4)_(7)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Wyvern's Tail",
+      "input": "(3)_(6)_(9)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 26",
+        "Block: -2",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: G cancel"
+      ]
+    },
+    {
+      "name": "Bloody Funeral",
+      "input": "(1)_(4)_(7)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 54",
+        "Damage: 70",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . G cancel"
+      ]
+    },
+    {
+      "name": "Dread Coffin",
+      "input": "(3)_(6)_(9)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 30",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%"
+      ]
+    },
+    {
+      "name": "Dread Coffin",
+      "input": "+(3)_(6)_(9)(B)+(K)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 30",
+        "Block: 7",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Tech Crouch[7+]. SuperTech Crouch at 22+"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "RUNK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: into PR"
+      ]
+    },
+    {
+      "name": "Ebony Slash",
+      "input": "PRA",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10",
+        "Block: -10",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Ebony Slash",
+      "input": "PRAA",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,20",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Ebony Combo",
+      "input": "PRAB",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,15",
+        "Block: -14",
+        "Hit: 7",
+        "Counter: 7",
+        "Guard Burst: 2%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Ebony Combo",
+      "input": "PRA(B)",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,15",
+        "Block: -2",
+        "Hit: 18",
+        "Counter: 18",
+        "Guard Burst: 2%",
+        "Notes: Counter Hit Combo.  into PR"
+      ]
+    },
+    {
+      "name": "Ebony Spindle",
+      "input": "PRAK",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,14,20",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Lunging Press",
+      "input": "PR6A",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Lunging Press",
+      "input": "PR6(A)",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -4",
+        "Hit: 12",
+        "Counter: 12",
+        "Guard Burst: 4%",
+        "Notes: into PR"
+      ]
+    },
+    {
+      "name": "Underworld Call",
+      "input": "PRB",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10",
+        "Block: -10",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Underworld Call",
+      "input": "PRBB",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10,10",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Underworld Call",
+      "input": "PRB(B)",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10,10",
+        "Block: -6",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo.  into PR"
+      ]
+    },
+    {
+      "name": "Twin Impalement",
+      "input": "PRBBA",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10,15",
+        "Block: -16",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Underworld Call",
+      "input": "PRBBB",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 10",
+        "Damage: 10,15,30",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: 10 dmg more on perfect input"
+      ]
+    },
+    {
+      "name": "Rapid Head Hunter",
+      "input": "PRBK",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 10",
+        "Damage: 15",
+        "Block: -16",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Dread Intrigue",
+      "input": "PR6B",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 18",
+        "Damage: 40",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%"
+      ]
+    },
+    {
+      "name": "Lunatic Rouge",
+      "input": "PRK",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Tech Crouch[8-?]"
+      ]
+    },
+    {
+      "name": "Lunatic Rouge",
+      "input": "PRKK",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,10",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Lunatic Rouge",
+      "input": "PRKKB",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 16",
+        "Damage: 10,10,22",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 8 dmg more on perfect input"
+      ]
+    },
+    {
+      "name": "Pirouette Kick",
+      "input": "PR6K",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -16",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 12%"
+      ]
+    },
+    {
+      "name": "Enveloping Stocatta",
+      "input": "PRA+B",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 20",
+        "Damage: 36",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: .  versus  &"
+      ]
+    },
+    {
+      "name": "Cantarella Needle (Retreat)",
+      "input": "PRB+K",
+      "type": "Preparation",
+      "properties": [
+        "Impact: 12",
+        "Damage: 30",
+        "Block: -10",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: [4-12] vs M.  into PR"
+      ]
+    },
+    {
+      "name": "Heavy Mandritti",
+      "input": "AGA",
+      "type": "Arrière Gambit",
+      "properties": [
+        "Impact: 24",
+        "Damage: 15",
+        "Block: -12",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Heavy Mandritti",
+      "input": "AGAB",
+      "type": "Arrière Gambit",
+      "properties": [
+        "Impact: 24",
+        "Damage: 15,20",
+        "Block: -10",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 7%"
+      ]
+    },
+    {
+      "name": "Bite of the Deadly Adder",
+      "input": "AGB",
+      "type": "Arrière Gambit",
+      "properties": [
+        "Impact: 24",
+        "Damage: 30",
+        "Block: -2",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%"
+      ]
+    },
+    {
+      "name": "Dark Stinger",
+      "input": "AGK",
+      "type": "Arrière Gambit",
+      "properties": [
+        "Impact: 32",
+        "Damage: 20",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Dark Stinger Crescendo",
+      "input": "AGKK",
+      "type": "Arrière Gambit",
+      "properties": [
+        "Impact: 32",
+        "Damage: 20,20",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Bloody Assault",
+      "input": "SEA",
+      "type": "Shadow Evade",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -4",
+        "Hit: 8",
+        "Counter: 12",
+        "Guard Burst: 2%",
+        "Notes: Forces BT on hit"
+      ]
+    },
+    {
+      "name": "Bloody Terror",
+      "input": "SEB",
+      "type": "Shadow Evade",
+      "properties": [
+        "Impact: 20",
+        "Damage: 35",
+        "Block: 8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%"
+      ]
+    },
+    {
+      "name": "Mandrake Heel",
+      "input": "SEK",
+      "type": "Shadow Evade",
+      "properties": [
+        "Impact: 20",
+        "Damage: 28",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Haunted Talon",
+      "input": "QPA",
+      "type": "Quick Parade",
+      "properties": [
+        "Impact: 49",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Dreaded Rampage",
+      "input": "QPB",
+      "type": "Quick Parade",
+      "properties": [
+        "Impact: 42",
+        "Damage: 5,5,5,5,5,5,5",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 7%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Dreaded Rampage",
+      "input": "QPBB",
+      "type": "Quick Parade",
+      "properties": [
+        "Impact: 42",
+        "Damage: 5,5,5,5,5,5,5,35",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Dreaded Kick",
+      "input": "QPK",
+      "type": "Quick Parade",
+      "properties": [
+        "Impact: 21",
+        "Damage: 8,10",
+        "Block: -32",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo.  after 2 successful form Dodges; once per match"
+      ]
+    },
+    {
+      "name": "Venomous Sting",
+      "input": "B+G",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 44",
+        "Damage: 25",
+        "Block: -8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 20%"
+      ]
+    },
+    {
+      "name": "Venomous Sting",
+      "input": "B+G4",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 44",
+        "Damage: -",
+        "Block: 11",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 20%",
+        "Notes: into AG"
+      ]
+    },
+    {
+      "name": "Venomous Sting",
+      "input": "B+G46",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 44",
+        "Damage: -",
+        "Block: 5",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 20%",
+        "Notes: into PR"
+      ]
+    },
+    {
+      "name": "Fatal Sting",
+      "input": "B+GB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 91",
+        "Damage: 16",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%",
+        "Notes: High but can not be ducked"
+      ]
+    },
+    {
+      "name": "Fatal Sting",
+      "input": "B+G(B)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 91",
+        "Damage: 16",
+        "Block: 4",
+        "Hit: 8",
+        "Counter: 14",
+        "Guard Burst: 2%",
+        "Notes: into PR"
+      ]
+    },
+    {
+      "name": "Venomous Sting",
+      "input": "+(B)+(G)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 84",
+        "Damage: 36",
+        "Block: 8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: . RE"
+      ]
+    },
+    {
+      "name": "Venomous Sting",
+      "input": "+(B)+(G)4",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 84",
+        "Damage: -",
+        "Block: 28",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: into AG"
+      ]
+    },
+    {
+      "name": "Venomous Sting",
+      "input": "+(B)+(G)46",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 84",
+        "Damage: -",
+        "Block: 22",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: into PR"
+      ]
+    },
+    {
+      "name": "Fatal Sting",
+      "input": "+(B)+(G)B",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 131",
+        "Damage: 16",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%",
+        "Notes: High but can not be ducked"
+      ]
+    },
+    {
+      "name": "Fatal Sting",
+      "input": "+(B)+(G)(B)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 131",
+        "Damage: 16",
+        "Block: 4",
+        "Hit: 8",
+        "Counter: 14",
+        "Guard Burst: 2%",
+        "Notes: into PR"
+      ]
+    },
+    {
+      "name": "Toxic Talon",
+      "input": "REA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 30",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: 33%"
+      ]
+    },
+    {
+      "name": "Fatal Skewer",
+      "input": "REB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 45",
+        "Block: RE",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: 50%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Bella Donna Spin",
+      "input": "REK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 20,15",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: 33%"
+      ]
+    },
+    {
+      "name": "Royal Poison",
       "input": "A+B+K",
-      "type": "Critical Edge"
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 70",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Royal Poison: Fatal Dose",
+      "input": "PRA+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 65",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: ."
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Soul Charge",
+      "input": "4A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 6",
+        "Damage: 0",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: -",
+        "Notes: invincible since i4. Pushback happens at i6"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Royal Serpent",
+      "input": "236A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 28",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 9%"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Royal Serpent",
+      "input": "236A+B+K2",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 28",
+        "Block: -2",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 9%",
+        "Notes: into SE"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Royal Serpent",
+      "input": "236A+B+K(2)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 28",
+        "Block: -7",
+        "Hit: 5",
+        "Counter: 5",
+        "Guard Burst: 9%",
+        "Notes: into SE"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Viper Hiss",
+      "input": "SC6AB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 13,22",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 13%",
+        "Notes: . Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Viper Hiss",
+      "input": "SC6A(B)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 13,22",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 13%",
+        "Notes: . Normal Hit Combo.  into PR"
+      ]
+    },
+    {
+      "name": "Renegade Thrust",
+      "input": "SC4AB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18,32",
+        "Block: 2",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 13%",
+        "Notes: . Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Renegade Thrust",
+      "input": "SC4A(B)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18,32",
+        "Block: 8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 13%",
+        "Notes: . Normal Hit Combo.  into PR"
+      ]
+    },
+    {
+      "name": "Death Throes",
+      "input": "SC6BBBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 11,11,27,62",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Counter Hit Combo. 6 dmg more on perfect input"
+      ]
+    },
+    {
+      "name": "Vicious Viper",
+      "input": "SC4BB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22,15",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 14%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Vicious Viper",
+      "input": "SC4BBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22,15,33",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Web Weaver",
+      "input": "SC1KB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22,33",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 13%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Baroque Storm",
+      "input": "SC2A+BB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 44",
+        "Block: -20",
+        "Hit: -20",
+        "Counter: KND",
+        "Guard Burst: 24%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Scarlet Roar",
+      "input": "SC8AB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 22,14",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 14%",
+        "Notes: . Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Scarlet Roar",
+      "input": "SC8A(B)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 22,14",
+        "Block: 6",
+        "Hit: 24",
+        "Counter: 24",
+        "Guard Burst: 14%",
+        "Notes: . Normal Hit Combo.  into PR"
+      ]
+    },
+    {
+      "name": "Thousand Hornets",
+      "input": "SCA+G",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 70",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: on break is +8"
+      ]
+    },
+    {
+      "name": "Rampage of the Queen Bee",
+      "input": "SC PRBBA+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 10",
+        "Damage: 11,11,61",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Folie a Deux",
+      "input": "SC PR6KK",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 28,25",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Mandrake Heel",
+      "input": "SC SEKB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 30,39",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%"
+      ]
     }
   ]
 }

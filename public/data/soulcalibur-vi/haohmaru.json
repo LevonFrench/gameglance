@@ -1,56 +1,2567 @@
 {
+  "name": "Haohmaru",
   "character": "Haohmaru",
+  "game": "SoulCalibur VI",
   "movesList": [
     {
+      "name": "Vagrant Slash",
+      "input": "A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: G cancelable"
+      ]
+    },
+    {
+      "name": "Vagrant Slash",
+      "input": "AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,12",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Vagrant Slash",
+      "input": "AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14,12,40",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "~ Warrior's Focus",
+      "input": "AAA6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -6",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 5%",
+        "Notes: into WF"
+      ]
+    },
+    {
+      "name": "Cross Cut",
+      "input": "AAB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -4",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 13%"
+      ]
+    },
+    {
+      "name": "Hilt Strike",
+      "input": "aB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 3%",
+        "Notes: into Ronin Technique upon hit or guard possible"
+      ]
+    },
+    {
+      "name": "Hilt Strike",
+      "input": "RTaB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 20",
+        "Block: 10",
+        "Hit: 22",
+        "Counter: 22",
+        "Guard Burst: 3%",
+        "Notes: Upon hit or guard"
+      ]
+    },
+    {
+      "name": "Gale Knell",
+      "input": "6A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -10",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%",
+        "Notes: into Ronin Technique upon hit or guard possible"
+      ]
+    },
+    {
+      "name": "Gale Knell",
+      "input": "RT6A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: 8",
+        "Hit: 18",
+        "Counter: 18",
+        "Guard Burst: 1%",
+        "Notes: On hit, guard or winning a clash only"
+      ]
+    },
+    {
+      "name": "(cancel) ~ Cyclone Slash: Zero Form",
+      "input": "6AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16,26",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: Ronin Technique (also triggers with . . .  ). Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "(cancel) ~ Cyclone Strike",
+      "input": "6AB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16,8,8",
+        "Block: -8",
+        "Hit: -2",
+        "Counter: 2",
+        "Guard Burst: 4%",
+        "Notes: Ronin Technique (also triggers with . . .  ). Counter Hit Combo.  (hit after stacking 5 Power Slashes)"
+      ]
+    },
+    {
+      "name": "(cancel) ~ Overhead Bottle Strike",
+      "input": "6AK",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16,20",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 8%",
+        "Notes: Ronin Technique (also triggers with . . .  )"
+      ]
+    },
+    {
+      "name": "Close-Quarters Cut",
+      "input": "3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: FC"
+      ]
+    },
+    {
+      "name": "Flash Strike",
+      "input": "2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: FC"
+      ]
+    },
+    {
+      "name": "Storm Splitter",
+      "input": "1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 4%",
+        "Notes: FC"
+      ]
+    },
+    {
+      "name": "Bottle Bash",
+      "input": "4A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Flash Strike",
+      "input": "FCA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: FC"
+      ]
+    },
+    {
+      "name": "Bottle Assault",
+      "input": "WRA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 30",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Birdwing Blade",
+      "input": "7A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 22",
+        "Block: -2",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump[4-34]"
+      ]
+    },
+    {
+      "name": "Birdwing Blade",
+      "input": "8A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 24",
+        "Block: -2",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump[4-34]"
+      ]
+    },
+    {
+      "name": "Birdwing Blade",
+      "input": "9A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 26",
+        "Block: -2",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump[4-34]"
+      ]
+    },
+    {
+      "name": "Reverse Vagrant Slash",
+      "input": "BTA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Reverse Flash Strike",
+      "input": "BT2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: FC"
+      ]
+    },
+    {
+      "name": "Shattering Crash",
+      "input": "B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 3%",
+        "Notes: G cancelable"
+      ]
+    },
+    {
+      "name": "Shattering Crash",
+      "input": "BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14,18",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 10",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Shattering Crash",
+      "input": "BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14,18,38",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: (3rd hit). Counter Hit Combo with 2nd hit"
+      ]
+    },
+    {
+      "name": "Haoh Blow",
+      "input": "bA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 32",
+        "Block: -6",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Cobblestone Crush",
+      "input": "bK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 3%"
+      ]
+    },
+    {
+      "name": "Tomb Robber",
+      "input": "b6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 10",
+        "Block: 6",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Gale Force Gust",
+      "input": "b4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 28",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Mighty Thrust",
+      "input": "6B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 8",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "~ Warrior's Focus",
+      "input": "6B6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 24",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 16",
+        "Guard Burst: 9%",
+        "Notes: .  into WF"
+      ]
+    },
+    {
+      "name": "Critical Cleave",
+      "input": "3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[10-14]."
+      ]
+    },
+    {
+      "name": "Knee Strike",
+      "input": "2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Ronin Technique cancel upon hit, guard or winning clash. FC"
+      ]
+    },
+    {
+      "name": "Knee Strike",
+      "input": "RT2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: 10",
+        "Hit: 18",
+        "Counter: 18",
+        "Guard Burst: 2%",
+        "Notes: Upon hit, guard or winning clash. FC"
+      ]
+    },
+    {
+      "name": "Swaying Viper",
+      "input": "1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 26",
+        "Block: -12",
+        "Hit: -2",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: FC."
+      ]
+    },
+    {
+      "name": "Bottle Hook",
+      "input": "4B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: STN",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Knee Strike",
+      "input": "FCB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: -",
+        "Notes: Ronin Technique cancel upon hit, guard or winning clash"
+      ]
+    },
+    {
+      "name": "Knee Strike",
+      "input": "RT FCB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: 10",
+        "Hit: 18",
+        "Counter: 18",
+        "Guard Burst: 2%",
+        "Notes: Upon hit, guard or winning clash"
+      ]
+    },
+    {
+      "name": "Hilt Gouge",
+      "input": "WRB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: 4",
+        "Guard Burst: 9%",
+        "Notes: Ronin Technique cancel upon hit, guard or winning clash."
+      ]
+    },
+    {
+      "name": "Hilt Gouge",
+      "input": "RT WRB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: 6",
+        "Hit: 18",
+        "Counter: 22",
+        "Guard Burst: -",
+        "Notes: Upon hit, guard or winning clash."
+      ]
+    },
+    {
+      "name": "(cancel) ~ Cyclone Slash: Zero Form",
+      "input": "WRBA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 37",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Ronin Technique (also triggers with . . .  )."
+      ]
+    },
+    {
+      "name": "(cancel) ~ Cyclone Strike",
+      "input": "WRBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 33",
+        "Block: -8",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 11%",
+        "Notes: Ronin Technique (also triggers with . . .  )."
+      ]
+    },
+    {
+      "name": "(cancel) ~ Solid Tackle",
+      "input": "WRBK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22",
+        "Block: -10",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 15%",
+        "Notes: Ronin Technique (also triggers with . . .  )."
+      ]
+    },
+    {
+      "name": "Bamboo Slicer",
+      "input": "7B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 30",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[4-30]."
+      ]
+    },
+    {
+      "name": "Bamboo Slicer",
+      "input": "8B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 32",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[4-30]."
+      ]
+    },
+    {
+      "name": "Bamboo Slicer",
+      "input": "9B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 34",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[4-30]."
+      ]
+    },
+    {
+      "name": "Reverse Shattering Crash",
+      "input": "BTB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Reverse Knee Strike",
+      "input": "BT2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: FC"
+      ]
+    },
+    {
+      "name": "Skull Drop",
+      "input": "K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 14",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%",
+        "Notes: G cancelable"
+      ]
+    },
+    {
+      "name": "Front Kick",
+      "input": "6K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -8",
+        "Hit: -2",
+        "Counter: 2",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Solar Plexus Kick",
+      "input": "3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Knee Jolt",
+      "input": "2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2%",
+        "Notes: FC"
+      ]
+    },
+    {
+      "name": "Straw Sandals Kick",
+      "input": "1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: 4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Brash Kick",
+      "input": "4K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Knee Jolt",
+      "input": "FCK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2%",
+        "Notes: FC"
+      ]
+    },
+    {
+      "name": "Earthly Kick",
+      "input": "WRK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[0-2]"
+      ]
+    },
+    {
+      "name": "Thrusting Kick",
+      "input": "7K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[4-34]"
+      ]
+    },
+    {
+      "name": "Thrusting Kick",
+      "input": "8K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[4-34]"
+      ]
+    },
+    {
+      "name": "Thrusting Kick",
+      "input": "9K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[4-34]"
+      ]
+    },
+    {
+      "name": "Reverse Skull Drop",
+      "input": "BTK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Reverse Knee Jolt",
+      "input": "BT2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: FC"
+      ]
+    },
+    {
+      "name": "Titanium Splitter",
+      "input": "A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 40",
+        "Block: 0",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%",
+        "Notes: input as . . .  for increased damage.  vs GI."
+      ]
+    },
+    {
       "name": "Cyclone Slash",
-      "input": "236A",
-      "type": "Move"
+      "input": "6A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 22",
+        "Block: -10",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 6%",
+        "Notes: input as . . .  for increased damage"
+      ]
+    },
+    {
+      "name": "Cyclone Slash",
+      "input": "+6(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 22",
+        "Block: -9",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 6%",
+        "Notes: input as . . .  for increased damage"
+      ]
     },
     {
       "name": "Crescent Moon Slash",
+      "input": "2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 28",
+        "Block: -18",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 14%",
+        "Notes: input as . . .  for increased damage. Tech Crouch[3-17]."
+      ]
+    },
+    {
+      "name": "Crescent Moon Slash",
+      "input": "RG2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 47",
+        "Block: -18",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 14%",
+        "Notes: input as . . .  for increased damage.  as whiff punish."
+      ]
+    },
+    {
+      "name": "Calm Blade",
+      "input": "4A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 27",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Parry [8-18] vs H M attacks. Input as 4 2 1 K for increased damage.  if successful parry."
+      ]
+    },
+    {
+      "name": "Earthquake Slice",
+      "input": "8A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 30",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%",
+        "Notes: input as . . .  for increased damage. Tech Jump[6-27]."
+      ]
+    },
+    {
+      "name": "Deflect",
+      "input": "236A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [4-10] vs & non-kick attacks"
+      ]
+    },
+    {
+      "name": "Iron Splitter",
+      "input": "B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 70",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 15%",
+        "Notes: Power Slash.  post-GI.  82 dmg in rage, 98 in RXP"
+      ]
+    },
+    {
+      "name": "Iron Splitter Tip Hit",
+      "input": "B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 54",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: -",
+        "Notes: Power Slash.  post-GI.  64 dmg in rage, 76 in RXP"
+      ]
+    },
+    {
+      "name": "Rising Heavy Slash",
+      "input": "2B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 45",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 15%",
+        "Notes: Power Slash. Can be done as FC. . Tech Crouch[6-12].  vs whiffed throw."
+      ]
+    },
+    {
+      "name": "Warrior's Ambush",
+      "input": "BTB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Shadow Throw",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 50",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 6"
+      ]
+    },
+    {
+      "name": "Wandering Cloud",
+      "input": "4A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 50",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 4"
+      ]
+    },
+    {
+      "name": "Autumn Flash",
+      "input": "LEFT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 65",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 6 4"
+      ]
+    },
+    {
+      "name": "Wise Blade",
+      "input": "RIGHT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 60",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 6 4  Recovers health"
+      ]
+    },
+    {
+      "name": "Omen Slash",
+      "input": "BACK THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 65",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 6 4 TH."
+      ]
+    },
+    {
+      "name": "Balance Breaker (Front)",
+      "input": "+(A)+(G)",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 0",
+        "Block: -",
+        "Hit: 18",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: 6"
+      ]
+    },
+    {
+      "name": "Balance Breaker (Back)",
+      "input": "+(4)(A)+(G)",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 0",
+        "Block: -",
+        "Hit: 14",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: 4"
+      ]
+    },
+    {
+      "name": "Judgment Sky Divider",
+      "input": "RXP WFA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 70",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Unbreakable"
+      ]
+    },
+    {
+      "name": "Rushing Vagrant Sweep",
+      "input": "(3)_(6)_(9)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Storming Assault",
+      "input": "(2)_(8)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Storming Assault",
+      "input": "(2)_(8)AA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -16",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Storming Assault",
+      "input": "(2)_(8)AB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 10%",
+        "Notes: . Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Warrior's Focus",
+      "input": "(2)_(8)A6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -4",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: -",
+        "Notes: into WF"
+      ]
+    },
+    {
+      "name": "Rolling Barrel",
+      "input": "(1)_(4)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 26",
+        "Block: 8",
+        "Hit: 18",
+        "Counter: 18",
+        "Guard Burst: 4%",
+        "Notes: into Ronin Technique upon hit or guard possible. Tech Crouch"
+      ]
+    },
+    {
+      "name": "Rolling Barrel",
+      "input": "RT(1)_(4)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 26",
+        "Block: 8",
+        "Hit: 18",
+        "Counter: 18",
+        "Guard Burst: 4%",
+        "Notes: Upon hit or guard. Tech Crouch"
+      ]
+    },
+    {
+      "name": "(cancel) ~ Cyclone Slash: Zero Form",
+      "input": "(1)_(4)_(7)AA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 26",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: 2nd attack can input . . .  for increased damage. Tech Crouch. Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "(cancel) ~ Titanium Splitter",
+      "input": "(1)_(4)_(7)AB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 26",
+        "Block: 0",
+        "Hit: STN",
+        "Counter: LNC",
+        "Guard Burst: 12%",
+        "Notes: 2nd attack can input . . .  for increased damage. .  when impact counter"
+      ]
+    },
+    {
+      "name": "(cancel) ~ Overhead Bottle Strike",
+      "input": "(1)_(4)_(7)AK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 26",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 10%",
+        "Notes: 2nd attack can input . . .  for increased damage"
+      ]
+    },
+    {
+      "name": "~ Bare Knuckles",
+      "input": "(1)_(4)_(7)aG",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 50",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: BKN. Tech Crouch"
+      ]
+    },
+    {
+      "name": "Diagonal Slash",
+      "input": "(3)_(6)_(9)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -10",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 6%",
+        "Notes: into Ronin Technique upon hit or guard possible."
+      ]
+    },
+    {
+      "name": "Diagonal Slash",
+      "input": "RT(3)_(6)_(9)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: 16",
+        "Hit: 26",
+        "Counter: 26",
+        "Guard Burst: 7%",
+        "Notes: Upon hit or guard."
+      ]
+    },
+    {
+      "name": "(cancel) ~ Cyclone Slash: Zero Form",
+      "input": "(3)_(6)_(9)BA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 7%",
+        "Notes: 2nd attack input . . .  for increased damage. Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "(cancel) ~ Crescent Moon Slash",
+      "input": "(3)_(6)_(9)BB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 45",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 17%",
+        "Notes: 2nd attack input . . .  for increased damage"
+      ]
+    },
+    {
+      "name": "(cancel) ~ Solid Tackle",
+      "input": "(3)_(6)_(9)BK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 45",
+        "Block: -10",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 12%",
+        "Notes: 2nd attack input . . .  for increased damage"
+      ]
+    },
+    {
+      "name": "Heavenly Cleave",
+      "input": "(2)_(8)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 24",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Cloud Slicer",
+      "input": "(1)_(4)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 36",
+        "Block: 2",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: versus medium or strong attack whiff."
+      ]
+    },
+    {
+      "name": "~ Bare Knuckles",
+      "input": "(1)_(4)_(7)(B)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 44",
+        "Block: 8",
+        "Hit: STN",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: . BKN"
+      ]
+    },
+    {
+      "name": "Rushing Forward Fist",
+      "input": "(3)_(6)_(9)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 14",
+        "Block: -2",
+        "Hit: 6",
+        "Counter: 10",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Headbutt",
+      "input": "(2)_(8)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: STN +10",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "~ Warrior's Focus",
+      "input": "(2)_(8)K6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: 4",
+        "Hit: 10",
+        "Counter: STN +14",
+        "Guard Burst: 9%",
+        "Notes: .  into WF"
+      ]
+    },
+    {
+      "name": "Haoh Kick",
+      "input": "(1)_(4)_(7)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 28",
+        "Block: -2",
+        "Hit: 14",
+        "Counter: 14",
+        "Guard Burst: 9%",
+        "Notes: vs crouching opponent.  Tech Jump[12-40]"
+      ]
+    },
+    {
+      "name": "Downward Heavy Slash",
+      "input": "(3)_(6)_(9)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 50",
+        "Block: -4",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 15%",
+        "Notes: Power Slash.  vhen used as block punish."
+      ]
+    },
+    {
+      "name": "Violent Ruffian",
+      "input": "(2)_(8)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 36",
+        "Block: -12",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: after not using weapon for some time."
+      ]
+    },
+    {
+      "name": "Blazing Edge",
+      "input": "(1)_(4)_(7)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 56",
+        "Damage: 55",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Restores health and guard stamina. . G cancelable"
+      ]
+    },
+    {
+      "name": "~ Burning Mist",
+      "input": "+(1)_(4)_(7)(B)+(K)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 5",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Sliding Kick",
+      "input": "RUNK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[13-19]. Tech Crouch[19-75]"
+      ]
+    },
+    {
+      "name": "Cyclone Slash",
+      "input": "236A",
+      "type": "Ronin Techniques",
+      "properties": [
+        "Impact: 36",
+        "Damage: 26",
+        "Block: -10",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 6%",
+        "Notes: Ronin Technique"
+      ]
+    },
+    {
+      "name": "Cyclone Slash",
+      "input": "236(A)",
+      "type": "Ronin Techniques",
+      "properties": [
+        "Impact: 36",
+        "Damage: 26",
+        "Block: -9",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Ronin Technique. BKN"
+      ]
+    },
+    {
+      "name": "Cyclone Strike",
+      "input": "236B",
+      "type": "Ronin Techniques",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 4%",
+        "Notes: after stacking 5 Power Slashes"
+      ]
+    },
+    {
+      "name": "Fake Cyclone Slash",
+      "input": "236K",
+      "type": "Ronin Techniques",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 4%",
+        "Notes: Ronin Technique"
+      ]
+    },
+    {
+      "name": "Cyclone Slash: Zero Form",
       "input": "623A",
-      "type": "Move"
+      "type": "Ronin Techniques",
+      "properties": [
+        "Impact: 18",
+        "Damage: 26",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: LNC",
+        "Guard Burst: 4%",
+        "Notes: +4 damage on perfect input"
+      ]
     },
     {
-      "name": "Tenha Seiou Zan",
+      "name": "Crescent Moon Slash",
+      "input": "623B",
+      "type": "Ronin Techniques",
+      "properties": [
+        "Impact: 18",
+        "Damage: 32",
+        "Block: -18",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 14%"
+      ]
+    },
+    {
+      "name": "Crescent Moon Slash",
+      "input": "RG623B",
+      "type": "Ronin Techniques",
+      "properties": [
+        "Impact: 18",
+        "Damage: 53",
+        "Block: -18",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 14%",
+        "Notes: Tech Crouch.  as whiff punish."
+      ]
+    },
+    {
+      "name": "Solid Tackle",
+      "input": "623K",
+      "type": "Ronin Techniques",
+      "properties": [
+        "Impact: 20",
+        "Damage: 32",
+        "Block: -10",
+        "Hit: 8",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[8-14]"
+      ]
+    },
+    {
+      "name": "Solid Tackle Rush",
+      "input": "RG623KK",
+      "type": "Ronin Techniques",
+      "properties": [
+        "Impact: 20",
+        "Damage: 60",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%",
+        "Notes: on 2nd hit"
+      ]
+    },
+    {
+      "name": "Titanium Splitter",
+      "input": "214B",
+      "type": "Ronin Techniques",
+      "properties": [
+        "Impact: 36",
+        "Damage: 50",
+        "Block: 0",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 15%",
+        "Notes: on impact counter."
+      ]
+    },
+    {
+      "name": "Overhead Bottle Strike",
+      "input": "214K",
+      "type": "Ronin Techniques",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Earthquake Slice",
+      "input": "421B",
+      "type": "Ronin Techniques",
+      "properties": [
+        "Impact: 28",
+        "Damage: 36",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%",
+        "Notes: Tech Jump[6-27]."
+      ]
+    },
+    {
+      "name": "Calm Blade",
+      "input": "421K",
+      "type": "Ronin Techniques",
+      "properties": [
+        "Impact: -",
+        "Damage: 28",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Parry [8-18] vs & attacks.  if successful parry"
+      ]
+    },
+    {
+      "name": "Warrior's Focus",
+      "input": "6B+K",
+      "type": "Warrior's Focus",
+      "properties": [
+        "Impact: 14",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: 14f to enter stance. Tech Crouch[8-RC].  into WF"
+      ]
+    },
+    {
+      "name": "Drifting Cloud",
+      "input": "WFA",
+      "type": "Warrior's Focus",
+      "properties": [
+        "Impact: 14",
+        "Damage: 34",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Haze",
+      "input": "WFB",
+      "type": "Warrior's Focus",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Haze",
+      "input": "WFBA",
+      "type": "Warrior's Focus",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 10%",
+        "Notes: when stacked 3 Power Slashes. Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Haze",
+      "input": "WFB(A)",
+      "type": "Warrior's Focus",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -4",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 10%",
+        "Notes: when stacked 3 Power Slashes. Normal Hit Combo. BKN"
+      ]
+    },
+    {
+      "name": "Windstorm Splitter",
+      "input": "WFK",
+      "type": "Warrior's Focus",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -22",
+        "Hit: -8",
+        "Counter: LNC",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Windstorm Splitter",
+      "input": "WFKA",
+      "type": "Warrior's Focus",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -16",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 5%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Bare Knuckles",
+      "input": "4B+K",
+      "type": "Bare Knuckles",
+      "properties": [
+        "Impact: 22",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: 22f to enter stance.  into BKN"
+      ]
+    },
+    {
+      "name": "Sweeping Chop",
+      "input": "BKNA",
+      "type": "Bare Knuckles",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: Launcher on airborne opponent"
+      ]
+    },
+    {
+      "name": "Sweeping Chop",
+      "input": "BKN(A)",
+      "type": "Bare Knuckles",
+      "properties": [
+        "Impact: 14",
+        "Damage: 14",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Launcher on airborne opponent. BKN"
+      ]
+    },
+    {
+      "name": "Forward Fist",
+      "input": "BKNB",
+      "type": "Bare Knuckles",
+      "properties": [
+        "Impact: 10",
+        "Damage: 16",
+        "Block: 0",
+        "Hit: 4",
+        "Counter: 12",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Forward Fist",
+      "input": "BKN(B)",
+      "type": "Bare Knuckles",
+      "properties": [
+        "Impact: 10",
+        "Damage: 16",
+        "Block: 4",
+        "Hit: 8",
+        "Counter: 16",
+        "Guard Burst: 2%",
+        "Notes: BKN"
+      ]
+    },
+    {
+      "name": "Vagabond Kick",
+      "input": "BKNK",
+      "type": "Bare Knuckles",
+      "properties": [
+        "Impact: 18",
+        "Damage: 26",
+        "Block: -16",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Blade Catch",
+      "input": "BKNB+K",
+      "type": "Bare Knuckles",
+      "properties": [
+        "Impact: -",
+        "Damage: 40",
+        "Block: -",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: RI[4-16] vs & non-kick attacks. BKN if fails to catch"
+      ]
+    },
+    {
+      "name": "Scarred Step (Front)",
+      "input": "BKN6",
+      "type": "Bare Knuckles",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Scarred Step (Back)",
+      "input": "BKN4",
+      "type": "Bare Knuckles",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Forward Roll",
+      "input": "BKN66",
+      "type": "Bare Knuckles",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Backward Roll",
+      "input": "BKN44",
+      "type": "Bare Knuckles",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Upper Dodge",
+      "input": "BKN8",
+      "type": "Bare Knuckles",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Lower Dodge",
+      "input": "BKN2",
+      "type": "Bare Knuckles",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Stagger",
+      "input": "STGB+K",
+      "type": "Stagger",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into Ronin Technique possible or Deflect up to 10f before Haohmaru recovers naturally. STG happens only when B+K or similar is blocked."
+      ]
+    },
+    {
+      "name": "Deflect",
+      "input": "STG236A+B",
+      "type": "Stagger",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [4-10] vs & non-kick attacks"
+      ]
+    },
+    {
+      "name": "Falcon Wing",
+      "input": "B+G",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 46",
+        "Damage: 40",
+        "Block: -8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: KND vs airborne.  [6-30]"
+      ]
+    },
+    {
+      "name": "Falcon Wing",
+      "input": "+(B)+(G)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 66",
+        "Damage: 50",
+        "Block: 8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [6-50]"
+      ]
+    },
+    {
+      "name": "Reeling Flash",
+      "input": "REA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 50",
+        "Block: -4",
+        "Hit: 2",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: Power Slash. ."
+      ]
+    },
+    {
+      "name": "Reeling Flash",
+      "input": "LH REA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 66",
+        "Block: -",
+        "Hit: 14",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Power Slash"
+      ]
+    },
+    {
+      "name": "Reeling Flash",
+      "input": "SC REA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 60",
+        "Block: -",
+        "Hit: 2",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Power Slash.  UA"
+      ]
+    },
+    {
+      "name": "Reeling Flash",
+      "input": "SC LH REA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 79",
+        "Block: -",
+        "Hit: 14",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: . Power Slash"
+      ]
+    },
+    {
+      "name": "Demon Banisher",
+      "input": "REB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: -",
+        "Guard Burst: 50%",
+        "Notes: Shifts to follow-up attack upon hit or guard crush. ."
+      ]
+    },
+    {
+      "name": "Brutal Strike",
+      "input": "REK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 24",
+        "Block: -2",
+        "Hit: 14",
+        "Counter: -",
+        "Guard Burst: 33%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Judgment Blast Slash",
       "input": "A+B+K",
-      "type": "Critical Edge"
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 79",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 21%",
+        "Notes: input as . . . . . . . . .  for +5 damage. SG."
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "14-Slash Combo",
+      "input": "236A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 26",
+        "Block: -2",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 2%",
+        "Notes: SG."
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "14-Slash Combo",
+      "input": "236A+B+KAABBKKABKKKKB+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 45",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 13%",
+        "Notes: perfect input adds +6 damage. SG. SC."
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Soul Charge",
+      "input": "4A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 6",
+        "Damage: 0",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 0%",
+        "Notes: invincible since i4. Pushback happens at i6"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Force Fang",
+      "input": "SCAAB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 15,13,44",
+        "Block: -6",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 13%",
+        "Notes: Power slash (3rd hit)."
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Force Fang",
+      "input": "SCAABB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 28,63",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 8",
+        "Guard Burst: 17%"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "~ Warrior's Focus",
+      "input": "SCAABB6",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 28,63",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 16",
+        "Guard Burst: 17%",
+        "Notes: .  into WF"
+      ]
+    },
+    {
+      "name": "Hilt Gouge",
+      "input": "SC WRBKBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 22,54",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 21%",
+        "Notes: 2nd attack can input as . . .  for increased damage."
+      ]
+    },
+    {
+      "name": "Hurricane Slash",
+      "input": "SC6A+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 24,14",
+        "Block: -16",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 16%"
+      ]
+    },
+    {
+      "name": "Hurricane Slash",
+      "input": "SC236A",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 28,14",
+        "Block: -16",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 16%"
+      ]
+    },
+    {
+      "name": "Hurricane Slash",
+      "input": "SC+6(A)+(B)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 24,14",
+        "Block: -15",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 16%",
+        "Notes: BKN"
+      ]
+    },
+    {
+      "name": "Hurricane Slash",
+      "input": "SC236(A)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 28,14",
+        "Block: -15",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 16%",
+        "Notes: BKN"
+      ]
+    },
+    {
+      "name": "Eruption Slice",
+      "input": "SC8A+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 41",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%",
+        "Notes: on whiff, quake (+10). Tech Jump[6-27]. GC."
+      ]
+    },
+    {
+      "name": "Eruption Slice",
+      "input": "SC421B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 50",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%",
+        "Notes: on whiff, quake (+10). Tech Jump[6-27]. GC."
+      ]
+    },
+    {
+      "name": "Iron Splitter",
+      "input": "SCB+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 77(50)",
+        "Block: -8",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 15%",
+        "Notes: Parry[6-18] vs one & attack with 20 or less damage.  post-GI."
+      ]
+    },
+    {
+      "name": "Falcon",
+      "input": "SC2B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 49",
+        "Block: -8",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 15%",
+        "Notes: can be done also as FC. . Tech Crouch[6-12].  on whiffed throw."
+      ]
+    },
+    {
+      "name": "Falcon",
+      "input": "SC2B+KB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 49,22",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 24%",
+        "Notes: can be done also as FC. . ."
+      ]
+    },
+    {
+      "name": "Face Splitter",
+      "input": "SC9B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 44",
+        "Damage: 44",
+        "Block: -2",
+        "Hit: 22",
+        "Counter: 22",
+        "Guard Burst: 15%",
+        "Notes: Tech Jump[14-40]"
+      ]
+    },
+    {
+      "name": "Diagonal Slash (cancel) ~ Solid Tackle ~ Curving Strike ~ Surging Tide",
+      "input": "SC(3)_(6)_(9)BKBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 64",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 18%",
+        "Notes: 2nd attack input as . . .  for increased damage"
+      ]
+    },
+    {
+      "name": "Force Fang",
+      "input": "SC(3)_(6)_(9)B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 55",
+        "Block: -6",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 15%",
+        "Notes: when used as block guard"
+      ]
+    },
+    {
+      "name": "Force Fang",
+      "input": "SC(3)_(6)_(9)B+KB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 55",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 8",
+        "Guard Burst: 20%"
+      ]
+    },
+    {
+      "name": "~ Warrior's Focus",
+      "input": "SC(3)_(6)_(9)B+KB6",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 55",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 1+6",
+        "Guard Burst: 20%",
+        "Notes: into WF"
+      ]
+    },
+    {
+      "name": "Curving Strike",
+      "input": "SC623KB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 35",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 11%",
+        "Notes: Tech Crouch[8-14]"
+      ]
+    },
+    {
+      "name": "~ Surging Tide",
+      "input": "SC623KBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 35",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 14%"
+      ]
+    },
+    {
+      "name": "Renting Tremor Slash",
+      "input": "SC623A+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 53",
+        "Block: -26",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 14%",
+        "Notes: Tech Crouch[2-14]"
+      ]
+    },
+    {
+      "name": "Flame of the Conqueror",
+      "input": "RG RXP6A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 66",
+        "Block: -28",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: input as . . .  for increased damage. ."
+      ]
+    },
+    {
+      "name": "Flame of the Conqueror",
+      "input": "RG236B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 65",
+        "Block: -28",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: 30% Guard damage upon hit. Ends RG/RXP state."
+      ]
+    },
+    {
+      "name": "Rage Explosion",
+      "input": "RG++4(A)+(B)+(K)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 6",
+        "Damage: 0",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 0%",
+        "Notes: and RXP. . . Invul since i4."
+      ]
+    },
+    {
+      "name": "Lightning Blade",
+      "input": "RXP4A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 86",
+        "Block: -26",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Ronin Technique. Damage increase based on how much gauge remains. Ends RXP but not SC."
+      ]
+    },
+    {
+      "name": "Hilt Gouge",
+      "input": "RXP WRBKBBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 26",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 31%",
+        "Notes: 2nd attack input as . . .  for increased damage.  (5th hit).  (1st and 5th hit)"
+      ]
+    },
+    {
+      "name": "Diagonal Slash (cancel) ~ Solid Tackle ~ Curving Strike ~ Surging Tide ~ Sword Of The Conqueror",
+      "input": "RXP(3)_(6)_(9)BKBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 82",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 29%",
+        "Notes: 2nd attack input as . . .  for increased damage.  (5th hit).  (1st and 5th hit)"
+      ]
+    },
+    {
+      "name": "Judgment Sky Divider",
+      "input": "RXP WFA+G",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 70",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: (unbreakable)"
+      ]
+    },
+    {
+      "name": "Curving Strike ~ Surging Tide ~ Sword of the Conqueror",
+      "input": "RXP623KBBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 84",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 25%"
+      ]
     }
   ]
 }

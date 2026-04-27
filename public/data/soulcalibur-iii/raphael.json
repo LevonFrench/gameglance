@@ -1,66 +1,880 @@
 {
+  "name": "Raphael",
   "character": "Raphael",
+  "game": "SoulCalibur III",
   "movesList": [
     {
-      "name": "Preparation (Stance)",
+      "name": "Attack au Fer",
+      "input": "AA",
+      "type": "A Button Attacks",
+      "properties": [
+        "HH"
+      ]
+    },
+    {
+      "name": "Flash Needle",
+      "input": "AB",
+      "type": "A Button Attacks",
+      "properties": [
+        "HL"
+      ]
+    },
+    {
+      "name": "Heel Snipe",
+      "input": "1A",
+      "type": "A Button Attacks",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Low Tondo Roversi",
+      "input": "2A or WC A",
+      "type": "A Button Attacks",
+      "properties": [
+        "SL"
+      ]
+    },
+    {
+      "name": "Spinal Crusher",
+      "input": "3AB",
+      "type": "A Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Heavy Mandritti",
+      "input": "4A",
+      "type": "A Button Attacks",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Hilt Strike",
+      "input": "6A",
+      "type": "A Button Attacks",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Squalambrato Concierto",
+      "input": "4[4]AB or [7]_[1]AB",
+      "type": "A Button Attacks",
+      "properties": [
+        "MM"
+      ]
+    },
+    {
+      "name": "Squalambrato Concierto ~ Preperation",
+      "input": "4[4]A[B]",
+      "type": "A Button Attacks",
+      "properties": [
+        "MM",
+        "SP"
+      ]
+    },
+    {
+      "name": "Bloody Funeral",
+      "input": "4[4]aB",
+      "type": "A Button Attacks",
+      "properties": [
+        "M",
+        "U"
+      ]
+    },
+    {
+      "name": "Bloody Funeral ~ Preperation",
+      "input": "4[4]aBG",
+      "type": "A Button Attacks",
+      "properties": [
+        "SP"
+      ]
+    },
+    {
+      "name": "Lunging Press",
+      "input": "6[6]A or [9]_[3]A",
+      "type": "A Button Attacks",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Lunging Press ~ Preperation",
+      "input": "6[6][A]",
+      "type": "A Button Attacks",
+      "properties": [
+        "H",
+        "SP"
+      ]
+    },
+    {
+      "name": "Violent Blood",
+      "input": "WR A",
+      "type": "A Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Turning Attack au Fer",
+      "input": "TA A",
+      "type": "A Button Attacks",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Low Turn Attack au Fer",
+      "input": "WC TA A",
+      "type": "A Button Attacks",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Sky Botte",
+      "input": "J A",
+      "type": "A Button Attacks",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Diving Botte",
+      "input": "JD A",
+      "type": "A Button Attacks",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Roaring Stocatta",
+      "input": "BB",
+      "type": "B Button Attacks",
+      "properties": [
+        "MM"
+      ]
+    },
+    {
+      "name": "Grave Needle",
+      "input": "1BB",
+      "type": "B Button Attacks",
+      "properties": [
+        "LL"
+      ]
+    },
+    {
+      "name": "Fendante",
+      "input": "2B",
+      "type": "B Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Rising Viper",
+      "input": "3B",
+      "type": "B Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Quick Mandritti",
+      "input": "4B",
+      "type": "B Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Quick Mandritti ~ Vurkolak Envelopement",
+      "input": "4[B]",
+      "type": "B Button Attacks",
+      "properties": [
+        "M",
+        "SP"
+      ]
+    },
+    {
+      "name": "Triple Botta in Tempo",
+      "input": "6BBB",
+      "type": "B Button Attacks",
+      "properties": [
+        "HHM"
+      ]
+    },
+    {
+      "name": "Triple Botta in Tempo ~ Preparation",
+      "input": "6BB[B]",
+      "type": "B Button Attacks",
+      "properties": [
+        "HHM",
+        "SP"
+      ]
+    },
+    {
+      "name": "Dread Coffin",
+      "input": "4[4]B",
+      "type": "B Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Broken Thurst",
+      "input": "6[6]B",
+      "type": "B Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Broken Thrust ~ Preparation",
+      "input": "6[6][B]",
+      "type": "B Button Attacks",
+      "properties": [
+        "M",
+        "SP"
+      ]
+    },
+    {
+      "name": "Crouching Montante",
+      "input": "WC B",
+      "type": "B Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Shadow Stinger",
+      "input": "WC 1B",
+      "type": "B Button Attacks",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Shadow Stinger ~ Preparation",
+      "input": "WC 1[B]",
+      "type": "B Button Attacks",
+      "properties": [
+        "L",
+        "SP"
+      ]
+    },
+    {
+      "name": "Advance Slicer",
+      "input": "WR B",
+      "type": "B Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Turning Montante",
+      "input": "TA B",
+      "type": "B Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Low Turn Montante",
+      "input": "WC TA B",
+      "type": "B Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Sky Agente",
+      "input": "J B",
+      "type": "B Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Diving Flic",
+      "input": "JD B",
+      "type": "B Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Venom High Kick",
+      "input": "K",
+      "type": "K Button Attacks",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Pirouette Sweep",
+      "input": "1K",
+      "type": "K Button Attacks",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Sweep Kick",
+      "input": "2K or WC K",
+      "type": "K Button Attacks",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Venom Kick",
+      "input": "3K",
+      "type": "K Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Venom Heel",
+      "input": "4K",
+      "type": "K Button Attacks",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Venom Toe Kick",
+      "input": "6K",
+      "type": "K Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Dark Moon",
+      "input": "4[4]K or [7]_[1]K",
+      "type": "K Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Venom Side Kick",
+      "input": "6[6]K or [9]_[3]K",
+      "type": "K Button Attacks",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Sheng Illusion Kick",
+      "input": "kB",
+      "type": "K Button Attacks",
+      "properties": [
+        "HL"
+      ]
+    },
+    {
+      "name": "Cranial Kick",
+      "input": "WR K",
+      "type": "K Button Attacks",
+      "properties": [
+        "MH"
+      ]
+    },
+    {
+      "name": "Turning Venom High Kick",
+      "input": "TA K",
+      "type": "K Button Attacks",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Turning Sweep Kick",
+      "input": "WC TA K",
+      "type": "K Button Attacks",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Dark Moon",
+      "input": "J K",
+      "type": "K Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Diving Venom Toe Kick",
+      "input": "JD K",
+      "type": "K Button Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Spinning Affondo Thrust",
+      "input": "2A+B",
+      "type": "Simultaneous Attacks",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Assalto Montante Crescendo",
+      "input": "6A+BA",
+      "type": "Simultaneous Attacks",
+      "properties": [
+        "MML"
+      ]
+    },
+    {
+      "name": "Wyvern’s Tail",
+      "input": "6[6]A+B",
+      "type": "Simultaneous Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Wyvern’s Tail (Cancel)",
+      "input": "Cantarella Needle (Right):  2B+K",
+      "type": "Simultaneous Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Cantarella Needle (Left)",
+      "input": "8B+K",
+      "type": "Simultaneous Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Cantarella Needle (Retreat)",
       "input": "4B+K",
-      "type": "Move"
+      "type": "Simultaneous Attacks",
+      "properties": [
+        "M"
+      ]
     },
     {
-      "name": "Shadow Strike",
-      "input": "66B",
-      "type": "Move"
+      "name": "Cantarella Needle (Advance)",
+      "input": "6B+K",
+      "type": "Simultaneous Attacks",
+      "properties": [
+        "M"
+      ]
     },
     {
-      "name": "Royal Flush",
-      "input": "236B",
-      "type": "Move"
+      "name": "Taunt",
+      "input": "K+G",
+      "type": "Simultaneous Attacks",
+      "properties": [
+        "SP"
+      ]
     },
     {
-      "name": "Bloody Murder",
-      "input": "214B",
-      "type": "Move"
+      "name": "Sliding",
+      "input": "[6]K",
+      "type": "8 Way Run Attacks",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Montante el Fin",
+      "input": "[9]_[3]B",
+      "type": "8 Way Run Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Crimson Moon",
+      "input": "[9]_[3]KB",
+      "type": "8 Way Run Attacks",
+      "properties": [
+        "MM"
+      ]
+    },
+    {
+      "name": "Blood Roar",
+      "input": "[9]_[3]A+B",
+      "type": "8 Way Run Attacks",
+      "properties": [
+        "HM",
+        "GI"
+      ]
+    },
+    {
+      "name": "Blood Roar ~ Preparation",
+      "input": "[9]_[3][A+B]",
+      "type": "8 Way Run Attacks",
+      "properties": [
+        "HM",
+        "SP"
+      ]
+    },
+    {
+      "name": "Merciless Stramazone",
+      "input": "[8]_[2]AA",
+      "type": "8 Way Run Attacks",
+      "properties": [
+        "HH"
+      ]
+    },
+    {
+      "name": "Deadly Strikes",
+      "input": "[8]_[2]AB",
+      "type": "8 Way Run Attacks",
+      "properties": [
+        "HL"
+      ]
+    },
+    {
+      "name": "Deadly Strikes ~ Preparation",
+      "input": "[8]_[2]A[B]",
+      "type": "8 Way Run Attacks",
+      "properties": [
+        "HL",
+        "SP"
+      ]
+    },
+    {
+      "name": "Death Guise",
+      "input": "[8]_[2]B",
+      "type": "8 Way Run Attacks",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Venom Roundhouse",
+      "input": "[8]_[2]K",
+      "type": "8 Way Run Attacks",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Baroque Storm",
+      "input": "[8]_[2]A+B",
+      "type": "8 Way Run Attacks",
+      "properties": [
+        "MM"
+      ]
+    },
+    {
+      "name": "Single Montante",
+      "input": "[7]_[1]B",
+      "type": "8 Way Run Attacks",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Dark Moon",
+      "input": "[7]_[4]_[1]K",
+      "type": "8 Way Run Attacks",
+      "properties": [
+        "M"
+      ]
     },
     {
       "name": "Quick Parade",
-      "input": "6B+K",
-      "type": "Move"
+      "input": "[7]_[4]_[1]A+B",
+      "type": "8 Way Run Attacks",
+      "properties": [
+        "SP",
+        "GI"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Quick Parade ~ Preparation",
+      "input": "[7]_[4]_[1][A+B]",
+      "type": "8 Way Run Attacks",
+      "properties": [
+        "SP",
+        "GI"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Death Puppet",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "T"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Unending Stings",
+      "input": "B+G",
+      "type": "Throws",
+      "properties": [
+        "T"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "A Lesson in Massacre",
+      "input": "Left Side Throw",
+      "type": "Throws",
+      "properties": [
+        "T"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Undertaker",
+      "input": "Right Side Throw",
+      "type": "Throws",
+      "properties": [
+        "T"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Pure Sacrifice",
+      "input": "Back Throw",
+      "type": "Throws",
+      "properties": [
+        "T"
+      ]
+    },
+    {
+      "name": "Advance Step",
+      "input": "236",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "SP"
+      ]
+    },
+    {
+      "name": "Scarlet Roar",
+      "input": "236AB",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "MM"
+      ]
+    },
+    {
+      "name": "Affondo Fendante",
+      "input": "236B",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Cranial Kick",
+      "input": "236K",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Dark Abyss",
+      "input": "236A+B",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Vurkolak Envelopment",
+      "input": "A+B",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "SP"
+      ]
+    },
+    {
+      "name": "Holwing Wolf",
+      "input": "During Vurkolak Envelopment A",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "HH"
+      ]
+    },
+    {
+      "name": "Midnight Stocatta",
+      "input": "During Vurkolak Envelopment B",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Midnight Stocatta ~ Preparation",
+      "input": "During Vurkolak Envelopment [B]",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "H",
+        "SP"
+      ]
+    },
+    {
+      "name": "Pirouette Kick",
+      "input": "During Vurkolak Envelopment K",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Mermet de Vec",
+      "input": "During Vurkolak Envelopment A+G or B+G",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "T"
+      ]
+    },
+    {
+      "name": "Sidestep ~ Preparation",
+      "input": "During Vurkolak Envelopment 8_2",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "SP"
+      ]
+    },
+    {
+      "name": "Preparation Parry",
+      "input": "214",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "SP",
+        "GI"
+      ]
+    },
+    {
+      "name": "Haunted Talon",
+      "input": "During Preparation Parry A",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "L"
+      ]
+    },
+    {
+      "name": "Cranial Scraper",
+      "input": "During Preparation Parry B",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "M",
+        "AT"
+      ]
+    },
+    {
+      "name": "Venom Side Kick",
+      "input": "During Preparation Parry K",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Quick Parade",
+      "input": "4A+B",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "SP",
+        "GI"
+      ]
+    },
+    {
+      "name": "Quick Parade ~ Preparation",
+      "input": "4[A+B]",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "SP",
+        "GI"
+      ]
+    },
+    {
+      "name": "Tondo Roversi",
+      "input": "During Quick Parade A",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "H"
+      ]
+    },
+    {
+      "name": "Strigoii Envelopment L",
+      "input": "B+K",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "SP"
+      ]
+    },
+    {
+      "name": "Strigoii Envelopment D",
+      "input": "A+K",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "SP"
+      ]
+    },
+    {
+      "name": "Preparation",
+      "input": "6[6]B",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "SP"
+      ]
+    },
+    {
+      "name": "Bloodlust",
+      "input": "During Preparation AAB",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "HHM"
+      ]
+    },
+    {
+      "name": "Affondo Fendante",
+      "input": "During Preparation B",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Dark Moon",
+      "input": "During Preparation K",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Vurkolak Envelopment",
+      "input": "During Preparation A+B",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "SP"
+      ]
+    },
+    {
+      "name": "Fallen Prayer",
+      "input": "During Preparation B+K",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "M"
+      ]
+    },
+    {
+      "name": "Sidestep ~ Preparation",
+      "input": "During Preparation 8_2",
+      "type": "Miscellaneous Moves",
+      "properties": [
+        "SP"
+      ]
     }
   ]
 }

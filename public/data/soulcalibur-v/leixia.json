@@ -1,66 +1,764 @@
 {
+  "name": "Leixia",
   "character": "Leixia",
+  "game": "SoulCalibur V",
   "movesList": [
     {
-      "name": "River of Stars",
-      "input": "A+B+K",
-      "type": "Critical Edge"
+      "name": "Dawn Rhythm",
+      "input": "AAB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HHM"
+      ]
     },
     {
-      "name": "Phoenix Tail",
-      "input": "236B",
-      "type": "Move"
+      "name": "Cross Lian Hua",
+      "input": "6A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
     },
     {
-      "name": "Leixia's Grace",
-      "input": "4B+K",
-      "type": "Move"
+      "name": "Cross Lian Hua ~ Hou Lee",
+      "input": "6(A)",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H",
+        "Other: SS"
+      ]
     },
     {
-      "name": "Indigo Wing",
-      "input": "66B",
-      "type": "Move"
+      "name": "Muu Jiann Rhythm",
+      "input": "3AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: MM"
+      ]
     },
     {
-      "name": "Wandering Star",
+      "name": "Rhythm Halt",
+      "input": "2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Reverse Shui Shian",
+      "input": "1A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M",
+        "Other: Delayable feint"
+      ]
+    },
+    {
+      "name": "Storming Lian Hua",
+      "input": "4A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Chai Hua Slice",
+      "input": "FC A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Li",
+      "input": "WR A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sparrow Spin Blade",
+      "input": "WJ A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Spinning Jiann Slice",
+      "input": "BT A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Spinning Rhythm Halt",
+      "input": "BT 2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Righteous Rhythm",
+      "input": "BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Advancing Dance",
+      "input": "6BA",
+      "type": "Verticals",
+      "properties": [
+        "Hit: HH",
+        "Other: AT on counter hit"
+      ]
+    },
+    {
+      "name": "Advancing Lian Hua",
+      "input": "6BaB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: HM"
+      ]
+    },
+    {
+      "name": "Lian Hua Rush",
       "input": "3B",
-      "type": "Move"
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Rhythm Break",
+      "input": "2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Ji",
+      "input": "1B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Tzao Rhythm",
+      "input": "4BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MMM"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Tzao Quake",
+      "input": "4BbK",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MMSM",
+        "Other: BA, last hit L shockwave"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Rhythm Break",
+      "input": "FC B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Mei Guei Hua",
+      "input": "FC 3B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Mei Guei Hua Feint",
+      "input": "FC 3bB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: L",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Great Wall",
+      "input": "WR B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sparrow Flutter Blade",
+      "input": "WJ B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Spinning Hua Bann",
+      "input": "BT B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Spinning Rhythm Break",
+      "input": "BT 2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Yuen Kick",
+      "input": "K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Heaven and Earth",
+      "input": "6KK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Level Kick",
+      "input": "3K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Woan Shyong Nibble",
+      "input": "2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Lian Hua Sweeps",
+      "input": "1KK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: LL"
+      ]
+    },
+    {
+      "name": "Shan Kick",
+      "input": "4K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Woan Shyong Nibble",
+      "input": "FC K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Level Kick",
+      "input": "WR K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Tiao Wu Kick",
+      "input": "WJ K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Spinning Yuen Kick",
+      "input": "BT K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Spinning Woan Shyong Nibble",
+      "input": "BT 2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Muu Jiann",
+      "input": "A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Lian Hua Cannon",
+      "input": "6A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Spinning Lian Hua",
+      "input": "3A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Yann Divide",
+      "input": "2A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Muu Jiann Retreat",
+      "input": "4A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: GI vs H/M"
+      ]
+    },
+    {
+      "name": "Muu Jiann Twist",
+      "input": "4a+bB",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: GI vs H/M"
+      ]
+    },
+    {
+      "name": "Fan Xiang",
+      "input": "FC A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Mei Hua Carve",
+      "input": "WR A+BB",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: LHL"
+      ]
+    },
+    {
+      "name": "Mei Hua Dance",
+      "input": "WR A+BbB",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: LHL",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Guei",
+      "input": "Downed A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Muu Jiann Advance",
+      "input": "6B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Quake Step",
+      "input": "2B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: SM/L",
+        "Other: BA, last hit L shockwave"
+      ]
+    },
+    {
+      "name": "From the Highest Heavens",
+      "input": "3B+KK",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Hwu Dye",
+      "input": "1B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Muu Ling",
+      "input": "4B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Ben Xing",
+      "input": "8B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Reverse Chicken Kick",
+      "input": "BT B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Elegant Rhythm",
+      "input": "66AA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HM"
+      ]
+    },
+    {
+      "name": "Ma Chiueh",
+      "input": "22_88A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Fan Xiang Rhythm",
+      "input": "11_77AA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: LL"
+      ]
+    },
+    {
+      "name": "Lan Hua",
+      "input": "44A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Lan Hua",
+      "input": "44(A)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MH"
+      ]
+    },
+    {
+      "name": "Lan Hua Twist",
+      "input": "44aB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Playful Rhythm",
+      "input": "66BB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Playful Rhythm ~ Laughing BHH",
+      "input": "66BB4",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: GI vs verticals"
+      ]
+    },
+    {
+      "name": "Playful Dance",
+      "input": "66BbB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Playful Dance ~ Laughing BHH",
+      "input": "66BbB4",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: BA, GI vs verticals"
+      ]
+    },
+    {
+      "name": "Twin Rhythm",
+      "input": "33_99BB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Playful Slice",
+      "input": "22_88B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Vengeful Lian Hua",
+      "input": "44B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Vengeful Lian Hua ~LaughingBHH",
+      "input": "44B4",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: GI vs verticals"
+      ]
+    },
+    {
+      "name": "Woan Shyong Swing",
+      "input": "66K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Circle Breaker",
+      "input": "22_88K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Circle Breaker Feint Divide",
+      "input": "22_88kAAB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MMML"
+      ]
+    },
+    {
+      "name": "C. B. Feint Double Fend Yun",
+      "input": "22_88kAAK",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MMMM"
+      ]
+    },
+    {
+      "name": "Mei Hua Kick",
+      "input": "44K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Retreating Bea Her Hua",
+      "input": "44B+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Other: GI vs verticals"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "Run K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Yuen Chuei Shaur",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Tian Ling Xiang",
+      "input": "B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Tien E Sheang",
+      "input": "Left TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Yng Dyi Yann",
+      "input": "Right TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Yug Luen shaur",
+      "input": "Back TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Hou Lee",
+      "input": "B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: Enters FC state"
+      ]
+    },
+    {
+      "name": "Bea Her Hua",
+      "input": "22_88B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS, GI"
+      ]
+    },
+    {
+      "name": "Ma Chiueh",
+      "input": "BHH A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Playful Slice",
+      "input": "BHH B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Circle Breaker",
+      "input": "BHH K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Circle Breaker Feint Divide",
+      "input": "BHH kAAB",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: MMML"
+      ]
+    },
+    {
+      "name": "C. B. Feint Double Fend Yun",
+      "input": "BHH kAAK",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: MMMM"
+      ]
+    },
+    {
+      "name": "Dawn of Twilight",
+      "input": "AA BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: HHMMM"
+      ]
+    },
+    {
+      "name": "Twilight Quake",
+      "input": "AA BE K",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: HHMMSM",
+        "Other: BA, last hit L shockwave"
+      ]
+    },
+    {
+      "name": "Winged Rhythm",
+      "input": "WR B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MMM",
+        "Other: GI vs H horizontals"
+      ]
+    },
+    {
+      "name": "River of Stars",
+      "input": "CE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M"
+      ]
     }
   ]
 }

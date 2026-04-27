@@ -4,49 +4,838 @@
   "game": "SoulCalibur V",
   "movesList": [
     {
-      "name": "Samurai Slashes",
-      "input": "5A, 5A",
-      "type": "normal"
+      "name": "Twin Splinters",
+      "input": "AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH"
+      ]
     },
     {
-      "name": "Splitting Header",
-      "input": "5B, 5B",
-      "type": "normal"
+      "name": "Reaver",
+      "input": "6A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
     },
     {
-      "name": "Steel Slicer",
-      "input": "1K",
-      "type": "low"
+      "name": "Splitting Gold",
+      "input": "3A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Knee Slice",
+      "input": "2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Shin Slicer",
+      "input": "1A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Shin Slicer Feint",
+      "input": "1AB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Drawn Breath",
+      "input": "4A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Drawn Breath ~ Mist",
+      "input": "4A6",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Knee Slice",
+      "input": "FC A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Silent Slash",
+      "input": "WR A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Field Reave",
+      "input": "WJ A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Reverse Slice",
+      "input": "BT A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Hidden Slice",
+      "input": "BT 2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Forced Prayer Divide",
+      "input": "BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Forced Prayer Divide ~ Mist",
+      "input": "BB6",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Mask",
+      "input": "b6",
+      "type": "Verticals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Feint L",
+      "input": "bA",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: AT on counter hit"
+      ]
+    },
+    {
+      "name": "Wind Hole",
+      "input": "6B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Wind Hole Upper",
+      "input": "6b8",
+      "type": "Verticals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Wind Hole Lower",
+      "input": "6b2",
+      "type": "Verticals",
+      "properties": [
+        "Hit: L"
+      ]
     },
     {
       "name": "Heaven Cannon",
       "input": "3B",
-      "type": "launcher"
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Rust",
+      "input": "2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Air Tale",
+      "input": "1B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Wind Hole Vortex",
+      "input": "4B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Wind Hole Vortex ~ Mist",
+      "input": "4b6",
+      "type": "Verticals",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Upper Arch",
+      "input": "FC B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Time Hole",
+      "input": "FC 3B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Heavenly Stitch",
+      "input": "FC 1BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
     },
     {
       "name": "Wind Divide",
-      "input": "236B",
-      "type": "special"
+      "input": "WR B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "name": "Half Moon",
-      "input": "8WR 2/8+B",
-      "type": "8wr"
+      "name": "Shearing Knot",
+      "input": "WJ B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "name": "Oblique Slash",
-      "input": "8WR 66A",
-      "type": "8wr"
+      "name": "Reverse Divide",
+      "input": "BT B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "name": "Lightning Blade",
-      "input": "4A+B",
-      "type": "unblockable"
+      "name": "Hidden Divide",
+      "input": "BT 2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "name": "Sea of Fire",
+      "name": "Snap Kick",
+      "input": "K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Obedience",
+      "input": "kB",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Wheel Kick",
+      "input": "6K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Front Kick",
+      "input": "3K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Stalk Shaver",
+      "input": "2KB",
+      "type": "Kicks",
+      "properties": [
+        "Hit: LM"
+      ]
+    },
+    {
+      "name": "Stalk Shaver ~ Mist",
+      "input": "2KB6",
+      "type": "Kicks",
+      "properties": [
+        "Hit: LM",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Hem Stitch",
+      "input": "1K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Bullet Cutter",
+      "input": "4KB",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Hem Stitch",
+      "input": "FC K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Front Kick",
+      "input": "WR K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Jump Kick",
+      "input": "WJ K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Reverse Kick",
+      "input": "BT K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Hidden Kick",
+      "input": "BT 2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Autumn Requiem",
+      "input": "A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: AT"
+      ]
+    },
+    {
+      "name": "Cold Stitch",
+      "input": "2A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Wheel Slash",
+      "input": "8A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Dividing Thrust",
+      "input": "B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: AT on counter hit"
+      ]
+    },
+    {
+      "name": "Purifying Thrust",
+      "input": "B+K4",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: AT on counter hit"
+      ]
+    },
+    {
+      "name": "Full Moon Death",
+      "input": "2B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Full Moon Death",
+      "input": "2(B+K)",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Full Moon Slash",
+      "input": "2B+KB",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Samurai Tackle",
+      "input": "BT B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Acute Gale",
+      "input": "66A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Drawn Air",
+      "input": "22_88A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "True Vacuum",
+      "input": "11_77A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Fiery Air",
+      "input": "44A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Heavenly Dance",
+      "input": "66BB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Hell Flash",
+      "input": "22_88B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Blunt Flames",
+      "input": "11_77BAB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MHM"
+      ]
+    },
+    {
+      "name": "Blunt Flames ~ Mist",
+      "input": "11_77BA6",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Hell Divide",
+      "input": "44B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Hell Divide ~ Mist",
+      "input": "44B6",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Rising Knee",
+      "input": "66K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Wheel Kick",
+      "input": "22_88K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Bullet Cutter",
+      "input": "44KB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Phoenix Tail",
+      "input": "66_22_88A+B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "Run K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Sea of Madness",
       "input": "A+G",
-      "type": "throw"
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Zen Blade",
+      "input": "B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Gates of Hell",
+      "input": "Left TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "8th Bill of Punishment",
+      "input": "Right TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Divine Gift",
+      "input": "Back TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Silent Step",
+      "input": "236",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Silent Step Slash",
+      "input": "SS A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Step Stone Divide",
+      "input": "SS B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: Delayable"
+      ]
+    },
+    {
+      "name": "Silent Step Kick",
+      "input": "SS K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Mist",
+      "input": "6_4B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Mist",
+      "input": "66_44B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Full Divide",
+      "input": "MST A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Wind Stitch",
+      "input": "MST BBB",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: HHH"
+      ]
+    },
+    {
+      "name": "Wind Grab",
+      "input": "MST BB+K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: HM",
+        "Other: AT on counter hit"
+      ]
+    },
+    {
+      "name": "Wind Torture",
+      "input": "MST BB+K4",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: HM",
+        "Other: AT on counter hit"
+      ]
+    },
+    {
+      "name": "Water Parting Thrust",
+      "input": "MST KB",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: LH"
+      ]
+    },
+    {
+      "name": "Divide",
+      "input": "MST A+B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: \"GI\" vs H/M under 30 damage"
+      ]
+    },
+    {
+      "name": "Wind Purify",
+      "input": "MST B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: AT on counter hit"
+      ]
+    },
+    {
+      "name": "Wind Divide",
+      "input": "MST B+K4",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: AT on counter hit"
+      ]
+    },
+    {
+      "name": "Wind Purify",
+      "input": "MST (B+K)",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: BA, AT"
+      ]
+    },
+    {
+      "name": "Wind Divide",
+      "input": "MST (B+K)4",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: BA, AT"
+      ]
+    },
+    {
+      "name": "Lion's Clutch",
+      "input": "MST A+G",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Korefuji",
+      "input": "MST B+G",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Mist Step",
+      "input": "MST 66_44",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Mist ~ Jump",
+      "input": "MST 7_8_9",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Mist ~ Duck",
+      "input": "MST 1_2_3",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Nirvana Cannon",
+      "input": "3B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Stalk Lift",
+      "input": "2K BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: LM"
+      ]
+    },
+    {
+      "name": "Harvest Dance",
+      "input": "2K BE B",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: LMM"
+      ]
+    },
+    {
+      "name": "Step Heavenly Divide",
+      "input": "SS B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Demonic Fire Storm",
+      "input": "MST B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Witching Hour",
+      "input": "CE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MM"
+      ]
     }
   ]
 }

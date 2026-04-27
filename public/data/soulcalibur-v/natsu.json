@@ -1,76 +1,1116 @@
 {
+  "name": "Natsu",
   "character": "Natsu",
+  "game": "SoulCalibur V",
   "movesList": [
     {
-      "name": "Great Curse of Arahabaki",
-      "input": "A+B+K",
-      "type": "Critical Edge"
+      "name": "Death Light",
+      "input": "AAB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HHMMM"
+      ]
     },
     {
-      "name": "Ara-habaki",
-      "input": "236B",
-      "type": "Move"
+      "name": "Death Shadow",
+      "input": "AA6",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH",
+        "Other: SS"
+      ]
     },
     {
-      "name": "Wind Roll (Stance)",
-      "input": "6B+K",
-      "type": "Move"
+      "name": "Shadow Shrine",
+      "input": "a6",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: MM"
+      ]
     },
     {
-      "name": "Possession (Stance)",
-      "input": "214",
-      "type": "Move"
+      "name": "Shadow Gate",
+      "input": "a:6",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HMM"
+      ]
     },
     {
-      "name": "Exorcism",
-      "input": "4A+B",
-      "type": "Move"
+      "name": "Relinquish",
+      "input": "6AB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HMM"
+      ]
     },
     {
-      "name": "Shadow Claw",
-      "input": "WS A, A, A",
-      "type": "Move"
+      "name": "Hand Over",
+      "input": "6AK",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH"
+      ]
+    },
+    {
+      "name": "Wind Scroll",
+      "input": "3A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Shadow Split",
+      "input": "2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
     },
     {
       "name": "Reaping Hook",
       "input": "1A",
-      "type": "Move"
+      "type": "Horizontals",
+      "properties": [
+        "Hit: L"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Curse ~ Possession",
+      "input": "4A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: L",
+        "Other: SS"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Shadow Split",
+      "input": "FC A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Shadow Claw",
+      "input": "WR AAA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: MHM"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Shadow Claw ~ Possession",
+      "input": "WR AAA4",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: MH",
+        "Other: SS"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Falling Scroll",
+      "input": "WJ A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Reverse Shadow",
+      "input": "BT A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Reverse Shadow Split",
+      "input": "BT 2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Shadow Blast",
+      "input": "BBK",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MMH"
+      ]
+    },
+    {
+      "name": "Carnage Cannon",
+      "input": "BB4A+B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MML"
+      ]
+    },
+    {
+      "name": "Ruination ~ Kuzukiri",
+      "input": "BB4a+bB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MMH"
+      ]
+    },
+    {
+      "name": "Carnage Cannon ~ Kuzukiri",
+      "input": "BB4A+BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MMLH"
+      ]
+    },
+    {
+      "name": "Blood Scroll ~ Kuzukiri",
+      "input": "BKA",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MHH"
+      ]
+    },
+    {
+      "name": "Blood Scroll ~ Possession",
+      "input": "BK4",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Blood Scroll ~ Kuzukiri",
+      "input": "B(K)A",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MHH",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Blood Scroll ~ Possession",
+      "input": "B(K)4",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MH",
+        "Other: BA, SS"
+      ]
+    },
+    {
+      "name": "Silence",
+      "input": "6B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Assassin's Feather",
+      "input": "3B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Vacuum",
+      "input": "2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Dark Slicer Feint ~ Kuzukiri",
+      "input": "2BA",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MH"
+      ]
+    },
+    {
+      "name": "Dark Slicer Feint ~ Kuzukiri",
+      "input": "2bA",
+      "type": "Verticals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Free Shadow",
+      "input": "1B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Shadow Impale",
+      "input": "4B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Seal of the Fire Dragon",
+      "input": "41236B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Free Shadow",
+      "input": "FC B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Darkness Cannon",
+      "input": "WR B4A+B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: ML"
+      ]
+    },
+    {
+      "name": "Stroked Ruin ~ Kuzukiri",
+      "input": "WR B4a+bA",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MH"
+      ]
+    },
+    {
+      "name": "Darkness Cannon ~ Kuzukiri",
+      "input": "WR B4A+BA",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MLH"
+      ]
+    },
+    {
+      "name": "Windfall",
+      "input": "WJ B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Shadow Kuzukiri",
+      "input": "BT BA",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MH"
+      ]
+    },
+    {
+      "name": "Darkness Shatter",
+      "input": "BT 2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Haste",
+      "input": "KKK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: HHH"
+      ]
+    },
+    {
+      "name": "Water Haste",
+      "input": "KK2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: HHL"
+      ]
+    },
+    {
+      "name": "Advancing Cloud Scroll",
+      "input": "k2",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Divine Punishment ~ Kuzukiri",
+      "input": "6KA",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MH"
+      ]
+    },
+    {
+      "name": "Rapid Destruction",
+      "input": "3KKK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MMM"
+      ]
+    },
+    {
+      "name": "Rapid Destruction ~ Wind Roll",
+      "input": "3KKB+K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MM",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Rapid Destruction ~ DB",
+      "input": "3KK2_8B+K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MM",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Punishing Strike",
+      "input": "2KK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: LM"
+      ]
+    },
+    {
+      "name": "Sealing Punishment",
+      "input": "1K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Water Kick",
+      "input": "4KK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: HL"
+      ]
+    },
+    {
+      "name": "Sealing Punishment",
+      "input": "FC K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Divine Cannon Combo",
+      "input": "FC 3KK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: LM"
+      ]
+    },
+    {
+      "name": "Divine Cannon",
+      "input": "WR K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Foreboding Fall",
+      "input": "WJ KA",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MMM"
+      ]
+    },
+    {
+      "name": "Punishing Wind",
+      "input": "BT K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Reverse Seal Punishment",
+      "input": "BT 2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Scroll of Darkness",
+      "input": "A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Scroll of Invisibility",
+      "input": "A+B4",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Assassin's Secret",
+      "input": "6A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Assassin's Secret ~ Possession",
+      "input": "6A+B4",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Ninja Cannon Akagachi",
+      "input": "2A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: L",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Dark Blaze",
+      "input": "2A+B6",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Ninja Cannon: Nozuchi",
+      "input": "4A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Shadow Hunt ~ Kuzukiri",
+      "input": "4A+BA",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: LH"
+      ]
+    },
+    {
+      "name": "Wild Ruin ~ Kuzukiri",
+      "input": "4a+bA",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Ninja Cannon: Nozuchi ~ PO",
+      "input": "4A+B6",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: L",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Fog Blanket",
+      "input": "8A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Poison Dart",
+      "input": "FC A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Heavy Burden",
+      "input": "BT A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Fog Blanket",
+      "input": "BT 8A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Bullet Hang",
+      "input": "66AB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HM"
+      ]
+    },
+    {
+      "name": "Bullet Hang ~ Possession",
+      "input": "66AB4",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Reverse Hand",
+      "input": "22_88A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Weaving Blades",
+      "input": "11_77A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: LH"
+      ]
+    },
+    {
+      "name": "Fan Dance",
+      "input": "44A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Assassin's Revenge",
+      "input": "66B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Assassin's Revenge ~Possession",
+      "input": "66B4",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Illusion Scroll",
+      "input": "22_88B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Seal",
+      "input": "44B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Hurricane Punishment",
+      "input": "66K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: SM x2"
+      ]
+    },
+    {
+      "name": "Whirling Misery",
+      "input": "33_99K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MH"
+      ]
+    },
+    {
+      "name": "Storm Cloud Scroll",
+      "input": "22_88KA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HHM"
+      ]
+    },
+    {
+      "name": "Storm Cloud Scroll ~Possession",
+      "input": "22_88KA4",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Storm Cloud Scroll ~Wind Roll",
+      "input": "22_88KB+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Storm Cloud Scroll ~DB",
+      "input": "22_88K2B+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: HH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Heavy Burden",
+      "input": "11_77K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Mat",
+      "input": "44KK",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "Run K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Strangulation Blade",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Departure in Fire",
+      "input": "B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Jute Burial",
+      "input": "Left TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Cellar Drop",
+      "input": "Right TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Dropping the Bottle",
+      "input": "Back TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Falling Rain",
+      "input": "66B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Possession",
+      "input": "214",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Storm Scroll",
+      "input": "PO A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Air Scroll",
+      "input": "PO a6",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Phantom Scroll",
+      "input": "PO A:6",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: HH"
+      ]
+    },
+    {
+      "name": "Dream Scroll",
+      "input": "PO B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Dragon Wheel",
+      "input": "PO K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Wind Stalker",
+      "input": "BT PO K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: AT"
+      ]
+    },
+    {
+      "name": "Exorcism",
+      "input": "PO A+B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Vacuum Drop Kick",
+      "input": "PO B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Falling Rain",
+      "input": "PO 466B+G",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Haunting Drop",
+      "input": "PO 8B+G",
+      "type": "Special Stances",
+      "properties": [
+        "Other: TH vs midair"
+      ]
+    },
+    {
+      "name": "Reverse Haunting Drop",
+      "input": "BT PO 8B+G",
+      "type": "Special Stances",
+      "properties": [
+        "Other: TH vs midair"
+      ]
+    },
+    {
+      "name": "Possession Rush ~ Possession",
+      "input": "PO 66",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Silent Mist ~ Possession",
+      "input": "PO 2",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Hover",
+      "input": "PO 8",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Hover Falcon",
+      "input": "HOV A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: LL"
+      ]
+    },
+    {
+      "name": "Hover Lightning",
+      "input": "HOV B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Hover Divinity",
+      "input": "HOV A+B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Stalker",
+      "input": "5_3_9_4B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS, also possible BT"
+      ]
+    },
+    {
+      "name": "Stalker ~ Wind Roll",
+      "input": "STK B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Stalker ~ Distorted Breeze",
+      "input": "STK 2_8B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Stalker Drop",
+      "input": "STK B+G",
+      "type": "Special Stances",
+      "properties": [
+        "Other: TH vs midair"
+      ]
+    },
+    {
+      "name": "Wind Roll",
+      "input": "6B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Wind Swirl",
+      "input": "WRO A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Wind Death Sault",
+      "input": "WRO BBB",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: MHM",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Wind Descent",
+      "input": "WRO K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Distorted Breeze",
+      "input": "2_8B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Side Breeze",
+      "input": "DB A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Burning Breeze",
+      "input": "DB B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Flowing Breeze",
+      "input": "DB KA",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: HHM"
+      ]
+    },
+    {
+      "name": "Flowing Breeze ~ Possession",
+      "input": "DB KA4",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: HH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Flowing Breeze ~ Wind Roll",
+      "input": "DB KB+K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: HH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Flowing Breeze ~ DB",
+      "input": "DB K2_8B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: HH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Distorted Breeze",
+      "input": "BT 2_8B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Reverse Mill",
+      "input": "BT 6B+K",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Reverse Lightning ~ Possession",
+      "input": "RM K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: BA, SS"
+      ]
+    },
+    {
+      "name": "Assassin's Purification",
+      "input": "66B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MH",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Returning Swallow",
+      "input": "A+G BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Weasel Run ~ Possession",
+      "input": "PO BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Great Curse of Arahabaki",
+      "input": "CE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MMM"
+      ]
+    },
+    {
+      "name": "Great Curse of Arahabaki",
+      "input": "CE6",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MMM",
+        "Other: SS"
+      ]
     }
   ]
 }

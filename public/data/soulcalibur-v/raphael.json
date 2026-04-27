@@ -1,76 +1,755 @@
 {
+  "name": "Raphael",
   "character": "Raphael",
+  "game": "SoulCalibur V",
   "movesList": [
     {
-      "name": "Royal Vexation",
-      "input": "A+B+K",
-      "type": "Critical Edge"
+      "name": "Attack au Fer",
+      "input": "AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH"
+      ]
     },
     {
-      "name": "Shadow Strike",
-      "input": "66B",
-      "type": "Move"
+      "name": "Flash Needle",
+      "input": "AB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HL"
+      ]
     },
     {
-      "name": "Preparation (Stance)",
-      "input": "4B+K",
-      "type": "Move"
+      "name": "Nifty Musket",
+      "input": "6AB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH"
+      ]
     },
     {
-      "name": "Royal Flush",
-      "input": "236B",
-      "type": "Move"
+      "name": "Nifty Musket ~ Prep",
+      "input": "6A(B)",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH",
+        "Other: SS"
+      ]
     },
     {
-      "name": "Bloody Murder",
-      "input": "214B",
-      "type": "Move"
+      "name": "Ebony Stock",
+      "input": "3A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "name": "Quick Parade",
-      "input": "6B+K",
-      "type": "Move"
+      "name": "Cleaving Talon",
+      "input": "2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Heel Snipe",
+      "input": "1A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Heavy Mandritti",
+      "input": "4A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Low Tondo Roversi",
+      "input": "FC A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Rising Tondo",
+      "input": "WR A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Sky Botte",
+      "input": "WJ A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Turning Attack au Fer",
+      "input": "BT A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Low Turn Attack au Fer",
+      "input": "BT 2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Rapid Eminence",
+      "input": "BBB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MMM"
+      ]
+    },
+    {
+      "name": "Triple Botta in Tempo",
+      "input": "6BBB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: HHM"
+      ]
+    },
+    {
+      "name": "Triple Botta in Tempo ~ Prep",
+      "input": "6B(B)",
+      "type": "Verticals",
+      "properties": [
+        "Hit: HH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Broken Thrust",
+      "input": "3B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Broken Thrust ~ Prep",
+      "input": "3(B)",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Fendante",
+      "input": "2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Single Montante",
+      "input": "1B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Wicked Thrust",
+      "input": "4B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Wicked Thrust ~ Prep",
+      "input": "4(B)",
+      "type": "Verticals",
+      "properties": [
+        "Hit: H",
+        "Other: SS"
+      ]
     },
     {
       "name": "Affondo Fendante",
       "input": "236B",
-      "type": "Move"
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Crouching Montante",
+      "input": "FC B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Advance Slicer",
+      "input": "FC 3B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Rising Montante",
+      "input": "WR B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Sky Agente",
+      "input": "WJ B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Turning Montante",
+      "input": "BT B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Low Turn Montante",
+      "input": "BT 2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Venom High Kick",
+      "input": "K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Venom Toe Kick",
+      "input": "6K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Venom Kick",
+      "input": "3K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Harm Kick",
+      "input": "2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Head Hunter Kick",
+      "input": "1K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Venom Heel",
+      "input": "4K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Harm Kick",
+      "input": "FC K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "High Toe Kick",
+      "input": "WR K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Chaos Moon",
+      "input": "WJ K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Turning High Venom Kick",
+      "input": "BT K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Turning Sweep Kick",
+      "input": "BT 2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Assalto Montante Crescendo",
+      "input": "A+BA",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MML"
+      ]
+    },
+    {
+      "name": "Quick Parade",
+      "input": "4A+BB",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M x8",
+        "Other: GI vs H/M/SL horizontals"
+      ]
+    },
+    {
+      "name": "Blood Roar",
+      "input": "8A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: HM",
+        "Other: GI vs H/M horizontal/thrust"
+      ]
+    },
+    {
+      "name": "Necro Form",
+      "input": "B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MH",
+        "Other: GI + counter vs vert/thrust"
+      ]
+    },
+    {
+      "name": "Cantarella Needle (Advance)",
+      "input": "6B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Cantarella Needle (Right)",
+      "input": "2B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Cantarella Needle (Retreat)",
+      "input": "4B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Cantarella Needle (Left)",
+      "input": "8B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Cantarella Needle (Retreat)",
+      "input": "BT B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Lunging Press",
+      "input": "66A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Violent Blood",
+      "input": "33_99A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Tondo Roversi",
+      "input": "22_88A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Squalambrato Concierto",
+      "input": "44AB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Squalambrato Concierto ~ Prep",
+      "input": "44A(B)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Dread Coffin",
+      "input": "66B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Dread Coffin ~ Prep",
+      "input": "66(B)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: BA, SS"
+      ]
+    },
+    {
+      "name": "Death Guise",
+      "input": "33_99B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Quick Mandritti",
+      "input": "22_88B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Grave Needle",
+      "input": "11_77B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: LL"
+      ]
+    },
+    {
+      "name": "Repost Thrust",
+      "input": "44B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Venom Side Kick",
+      "input": "66K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Crimson Moon",
+      "input": "33_99KB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MH"
+      ]
+    },
+    {
+      "name": "Venom Roundhouse",
+      "input": "22_88K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Pirouette Sweep",
+      "input": "11_77K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Dark Moon",
+      "input": "44K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Wyvern's Tail",
+      "input": "66A+B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Bloody Funeral",
+      "input": "44A+B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Dark Abyss",
+      "input": "66B+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "Run K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Death Puppet",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Unending Stings",
+      "input": "B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "A Lesson in Massacre",
+      "input": "Left TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Undertaker",
+      "input": "Right TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Pure Sacrifice",
+      "input": "Back TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Mermet de Vec",
+      "input": "66A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Preparation Musket",
+      "input": "Prep AB",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: HH"
+      ]
+    },
+    {
+      "name": "Preparation Musket ~ Prep",
+      "input": "Prep A(B)",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: HH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Preparation Tac Plus",
+      "input": "Prep BBB",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: HHM"
+      ]
+    },
+    {
+      "name": "Preparation Tac Plus ~ Prep",
+      "input": "Prep B(B)",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: HH",
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Pirouette Kick",
+      "input": "Prep K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Aiming Shaft",
+      "input": "Prep A+B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Preparation Parry ~ Prep",
+      "input": "Prep 4",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS, GI vs verticals"
+      ]
+    },
+    {
+      "name": "Shadow Evade",
+      "input": "Prep 2",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Bloody Assault",
+      "input": "SE A",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Bloody Terror",
+      "input": "SE B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Mandrake Heel",
+      "input": "SE K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Dreaded Rampage",
+      "input": "6B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: HH Mx6"
+      ]
+    },
+    {
+      "name": "Vicious Moon",
+      "input": "33_99K BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MH",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Preparation Rampage",
+      "input": "Prep BB BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: HH Mx6"
+      ]
+    },
+    {
+      "name": "Folie a Deux",
+      "input": "Prep K BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MH"
+      ]
+    },
+    {
+      "name": "Royal Vexation",
+      "input": "CE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M"
+      ]
     }
   ]
 }

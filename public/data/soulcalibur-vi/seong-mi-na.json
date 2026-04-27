@@ -1,47 +1,2407 @@
 {
-  "name": "Seong Mi Na",
-  "character": "Seong Mi-na",
+  "name": "Seong Mi-Na",
+  "character": "Seong Mi-Na",
+  "game": "SoulCalibur VI",
   "movesList": [
     {
-      "name": "Spinning Halberd",
-      "type": "special",
-      "input": "236A"
+      "name": "Twin Fang",
+      "input": "A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1.5%"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Twin Fang",
+      "input": "AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,12",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 3.33%",
+        "Notes: Normal Hit Combo"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Tumultuous Assault",
+      "input": "AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,12,26",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 5,00%",
+        "Notes: 3rd A interruptible by i17 and jumping attacks on guard"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Twin Fang Trust",
+      "input": "AAB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16,12,30",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 8.33%",
+        "Notes: Counter Hit Combo. Uninterruptible on guard but the B can be dodged"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Violet Squall",
+      "input": "6A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9,00%",
+        "Notes: Tech Crouch.  on long range running counterhit"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Violet Squall",
+      "input": "tip range6A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 32",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9,00%",
+        "Notes: Tech Crouch.  on long range running counterhit"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Wing Cross",
+      "input": "3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 14",
+        "Block: -14",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 1.67%",
+        "Notes: Recovers crouching"
+      ]
+    },
+    {
+      "name": "Wing Cross",
+      "input": "tip range3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 24",
+        "Block: -4",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 3.33%",
+        "Notes: Recovers crouching"
+      ]
+    },
+    {
+      "name": "Wring Cross",
+      "input": "3AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 14,22",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 1.67%",
+        "Notes: Counter Hit Combo. Tech Crouch. Recovers crouching. Uninterruptible but jumpable. Delayable"
+      ]
+    },
+    {
+      "name": "Wing Cross",
+      "input": "tip range3AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 24,22",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3.33%",
+        "Notes: Counter Hit Combo. Tech Crouch. Recovers crouching. Uninterruptible but jumpable. Delayable"
+      ]
+    },
+    {
+      "name": "Knee Slicer",
+      "input": "2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1.67%",
+        "Notes: Recovers crouching"
+      ]
+    },
+    {
+      "name": "Opening Treasure",
+      "input": "1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 32",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 1.67%",
+        "Notes: Gives +8 on early throw break, +2 on later.  triggers after 3 BA on hit"
+      ]
+    },
+    {
+      "name": "Opening Treasure",
+      "input": "1(A)",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 47",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 1.67%",
+        "Notes: Gives +8 on early throw break, +2 on later"
+      ]
+    },
+    {
+      "name": "Opening Treasure",
+      "input": "tip range1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 12",
+        "Block: -16",
+        "Hit: -4",
+        "Counter: KND",
+        "Guard Burst: 1.67%"
+      ]
+    },
+    {
+      "name": "Opening Treasure",
+      "input": "tip range1(A)",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 12",
+        "Block: -16",
+        "Hit: -4",
+        "Counter: KND",
+        "Guard Burst: 1.67%"
+      ]
+    },
+    {
+      "name": "Shadow Step Slice",
+      "input": "4A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 14",
+        "Block: -18",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 1.67%",
+        "Notes: TS"
+      ]
+    },
+    {
+      "name": "Divine Biting Strike",
+      "input": "7A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 20",
+        "Block: -15",
+        "Hit: -3",
+        "Counter: -3",
+        "Guard Burst: 1.67%",
+        "Notes: Tech Jump[4-]"
+      ]
+    },
+    {
+      "name": "Divine Biting Strike",
+      "input": "8A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4.20%",
+        "Notes: Tech Jump[4-]"
+      ]
+    },
+    {
+      "name": "Knee Slicer",
+      "input": "FC2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1.67%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Hilt",
+      "input": "FC3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1.67%"
+      ]
+    },
+    {
+      "name": "Hilt Kick",
+      "input": "FC3AK",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,14",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 3.33%",
+        "Notes: Normal Hit Combo. Jails. KND on CH if first hit misses"
+      ]
+    },
+    {
+      "name": "Fang Strike",
+      "input": "WRA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1.67%",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Twin Fang Strike",
+      "input": "WRAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14,16",
+        "Block: -7",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 3.33%",
+        "Notes: Tech Crouch. Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Reverse Dance Blade",
+      "input": "BTA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16",
+        "Block: -2",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 1.67%",
+        "Notes: Tech Crouch[13-RC]"
+      ]
+    },
+    {
+      "name": "Reverse Biting Strike",
+      "input": "BT2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1.67%"
+      ]
+    },
+    {
+      "name": "Meteor Shower",
+      "input": "B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2.92%",
+        "Notes: OTG"
+      ]
+    },
+    {
+      "name": "Meteor Shower",
+      "input": "BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14,12",
+        "Block: -14",
+        "Hit: -6",
+        "Counter: STN",
+        "Guard Burst: 4.50%",
+        "Notes: Normal Hit Combo. On guard, 2nd hit cannot be evaded but can be GId"
+      ]
+    },
+    {
+      "name": "Meteor Shower",
+      "input": "B(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14,12",
+        "Block: -6",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 10,00%",
+        "Notes: On hit, 2nd hit cannot be evaded but can be GId"
+      ]
+    },
+    {
+      "name": "Meteor Shower",
+      "input": "BBA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14,12,18",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 6.17%",
+        "Notes: Counter Hit Combo. Trades with i14 on guard."
+      ]
+    },
+    {
+      "name": "Meteor Shower",
+      "input": "BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14,12,28",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14.67%",
+        "Notes: Counter Hit Combo. Uninteruptable but 3rd hit can be dodged."
+      ]
+    },
+    {
+      "name": "Meteor Shower",
+      "input": "BB(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14,12,34",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 25,00%",
+        "Notes: Counter Hit Combo."
+      ]
+    },
+    {
+      "name": "Meteor Shower",
+      "input": "B(B)(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14,12,34",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 29,00%"
+      ]
+    },
+    {
+      "name": "Retreating Divide",
+      "input": "B4B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14,1",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 4.50%",
+        "Notes: Normal Hit Combo.  into LS"
+      ]
+    },
+    {
+      "name": "Strangling Flower",
+      "input": "bA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 12,18",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2,00%",
+        "Notes: Normal Hit Combo. Jails."
+      ]
+    },
+    {
+      "name": "Double Hilt",
+      "input": "B6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 32",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9.50%",
+        "Notes: Normal Hit Combo. Jails."
+      ]
+    },
+    {
+      "name": "Braided Spear",
+      "input": "6B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 36",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9.17%",
+        "Notes: Tech Crouch.  on back step counterhit"
+      ]
+    },
+    {
+      "name": "Strangling Slash",
+      "input": "6bA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1.67%"
+      ]
+    },
+    {
+      "name": "Strangling Slash",
+      "input": "tip range6bA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 28",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4.20%"
+      ]
+    },
+    {
+      "name": "Lifting Heavens",
+      "input": "3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9.17%"
+      ]
+    },
+    {
+      "name": "Lifting Heavens",
+      "input": "tip range3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 28",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9.17%"
+      ]
+    },
+    {
+      "name": "Dancing Fang",
+      "input": "2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: 8",
+        "Guard Burst: 2.92%"
+      ]
+    },
+    {
+      "name": "Dancing Fang",
+      "input": "tip range2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -10",
+        "Hit: 6",
+        "Counter: 8",
+        "Guard Burst: 2.92%"
+      ]
+    },
+    {
+      "name": "Dancing Fang Sweep",
+      "input": "2BA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,3",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4.50%",
+        "Notes: Trades with i17 on guard."
+      ]
+    },
+    {
+      "name": "Back Step Fang",
+      "input": "2BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,1",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 4.50%",
+        "Notes: Normal Hit Combo.  into LS.  anytime after breaking opponents guard"
+      ]
+    },
+    {
+      "name": "Spring Barrage",
+      "input": "2BK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 10,2",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5,00%",
+        "Notes: Normal Hit Combo on tip range. Counter Hit Combo. on all ranges. Tech Jump. Delayable"
+      ]
+    },
+    {
+      "name": "Rising Heaven",
+      "input": "236B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 28",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9.17%",
+        "Notes: when winning round with CE"
+      ]
+    },
+    {
+      "name": "Rising Heaven",
+      "input": "236BA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 28,3,3,3,2,13",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15,00%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Rising Exalted Blade",
+      "input": "236BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 28,48",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 28,00%",
+        "Notes: Normal Hit Combo. Forces crouch."
+      ]
+    },
+    {
+      "name": "Rising Exalted Blade",
+      "input": "236B(B)",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 28,52",
+        "Block: 0",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 50,00%",
+        "Notes: Normal Hit Combo. Forces crouch."
+      ]
+    },
+    {
+      "name": "Rising Storm Kick",
+      "input": "236BK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 28,3",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 13,00%",
+        "Notes: Normal Hit Combo. Forces crouch."
+      ]
+    },
+    {
+      "name": "Lightning Fang",
+      "input": "1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -20",
+        "Hit: -8",
+        "Counter: -8",
+        "Guard Burst: 2.92%",
+        "Notes: Tech Crouch. Guard cancellable"
+      ]
+    },
+    {
+      "name": "Lightning Fang",
+      "input": "tip range1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 36",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9.17%",
+        "Notes: Tech Crouch. Guard cancellable"
+      ]
+    },
+    {
+      "name": "Retreating Fang",
+      "input": "4B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2.92%",
+        "Notes: into LS"
+      ]
+    },
+    {
+      "name": "Divine Lifting Heavens",
+      "input": "7B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 25",
+        "Block: -16",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9.17%",
+        "Notes: Tech Jump[4-?]"
+      ]
+    },
+    {
+      "name": "Divine Lifting Heavens",
+      "input": "8B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 25",
+        "Block: -12",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9.17%",
+        "Notes: Tech Jump[4-?]"
+      ]
+    },
+    {
+      "name": "Torrential Rush",
+      "input": "FC2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2.92%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Torrential Rush",
+      "input": "FC2BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20,22",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4.50%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Lifting Wing",
+      "input": "WRB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9.17%",
+        "Notes: -8 on block at max range"
+      ]
+    },
+    {
+      "name": "Reverse Air Parting",
+      "input": "BTB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 2.92%",
+        "Notes: Tech Crouch[22-39]"
+      ]
+    },
+    {
+      "name": "Crouching Air Parting",
+      "input": "BT2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2.92%",
+        "Notes: Tech Crouch[4-RC]"
+      ]
+    },
+    {
+      "name": "Snap Kick",
+      "input": "K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 14",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1.67%"
+      ]
+    },
+    {
+      "name": "Banishment Kick",
+      "input": "6K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9.17%",
+        "Notes: GI[3-12] vs high/mid verticals (except kicks)"
+      ]
+    },
+    {
+      "name": "Belly Crush Kick",
+      "input": "3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10",
+        "Block: -12",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2.92%"
+      ]
+    },
+    {
+      "name": "Belly Crush Kick",
+      "input": "3KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,14",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: STN",
+        "Guard Burst: 4.50%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Thrust Kick",
+      "input": "3bK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 20",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9.17%",
+        "Notes: 8 more damage with perfect input"
+      ]
+    },
+    {
+      "name": "Earth Kick",
+      "input": "2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1.67%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Rock Breaker",
+      "input": "1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 24",
+        "Block: -18",
+        "Hit: -6",
+        "Counter: -6",
+        "Guard Burst: 9.17%"
+      ]
+    },
+    {
+      "name": "Checkmate",
+      "input": "4K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 10",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2.92%",
+        "Notes: GI[7-18] vs high/mid horizontals (except kicks)"
+      ]
+    },
+    {
+      "name": "Checkmate",
+      "input": "4KB",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 10,22",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 9.17%",
+        "Notes: Normal Hit Combo. Delayable. +18 when GIs"
+      ]
+    },
+    {
+      "name": "Earth Kick",
+      "input": "FC2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1.67%",
+        "Notes: Tech Crouch[?-RC]"
+      ]
+    },
+    {
+      "name": "Liquid Rising",
+      "input": "FC1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 15",
+        "Block: -24",
+        "Hit: -4",
+        "Counter: KND",
+        "Guard Burst: 4.20%",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Liquid Rising",
+      "input": "FC tip1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 15",
+        "Block: -24",
+        "Hit: -4",
+        "Counter: KND",
+        "Guard Burst: 4.20%",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Liquid Rising",
+      "input": "FC1KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 15,19",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5.20%",
+        "Notes: Normal Hit Combo. Tech Crouch"
+      ]
+    },
+    {
+      "name": "Liquid Rising",
+      "input": "FC tip1KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 15,19",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5.20%",
+        "Notes: Normal Hit Combo. Tech Crouch"
+      ]
+    },
+    {
+      "name": "Shattering Kick",
+      "input": "WRK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 20",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9.17%",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Giant Rising Kick",
+      "input": "7K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2.92%",
+        "Notes: Tech Jump[4-?]"
+      ]
+    },
+    {
+      "name": "Giant Rising Kick",
+      "input": "8K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2.92%",
+        "Notes: Tech Jump[4-?]"
+      ]
+    },
+    {
+      "name": "Giant Rising Kick",
+      "input": "9K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2.92%",
+        "Notes: Tech Jump[4-?]"
+      ]
+    },
+    {
+      "name": "Reverse Snap Kick",
+      "input": "BTK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 18",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1.67%"
+      ]
+    },
+    {
+      "name": "Reverse Earth Kick",
+      "input": "BT2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1.67%",
+        "Notes: Tech Crouch[19-RC]"
+      ]
+    },
+    {
+      "name": "Roaring Heaven",
+      "input": "A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 36",
+        "Block: 10",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15.67%",
+        "Notes: .  on impact counter. 40 dmg at tip range"
+      ]
+    },
+    {
+      "name": "Iron Chin Strike",
+      "input": "6A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 26",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1.67%"
+      ]
+    },
+    {
+      "name": "Wild Monsoon",
+      "input": "3A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 8,8,18",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 4,00%",
+        "Notes: Normal Hit Combo. Tech Crouch. Jails"
+      ]
+    },
+    {
+      "name": "Wild Monsoon",
+      "input": "+3(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 12,12,12,22",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9,00%",
+        "Notes: Normal Hit Combo. Tech Crouch. Jails"
+      ]
+    },
+    {
+      "name": "Sweeping Blade",
+      "input": "2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 28",
+        "Block: 0",
+        "Hit: 4",
+        "Counter: KND",
+        "Guard Burst: 9.17%",
+        "Notes: .  on red guard gauge. Guard cancellable. RC"
+      ]
+    },
+    {
+      "name": "Sweeping Blade",
+      "input": "tip range2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 34",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9.17%",
+        "Notes: .  on red guard gauge. Guard cancellable. RC"
+      ]
+    },
+    {
+      "name": "Dancing Crane",
+      "input": "4A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 5,5,5,5",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 7,00%"
+      ]
+    },
+    {
+      "name": "Dancing Crane",
+      "input": "4A+BA",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 5,5,5,21",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 7,00%",
+        "Notes: Close hit ends in both being BT. Mid to far range ends facing foward"
+      ]
+    },
+    {
+      "name": "Dancing Crane",
+      "input": "4A+BAB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 5,5,5,21,36",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 17.40%",
+        "Notes: . Counter Hit Combo if A hits"
+      ]
+    },
+    {
+      "name": "Heavy Crane",
+      "input": "4A+BA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 5,5,5,5,5,5,20",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 13.33%",
+        "Notes: If any hit of second A+B hits, the rest of the attack combos"
+      ]
+    },
+    {
+      "name": "Radiant Wing",
+      "input": "8A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 35",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4.20%",
+        "Notes: Tech Crouch & Tech Jump"
+      ]
+    },
+    {
+      "name": "Seong's Crushing Long Blade",
+      "input": "9A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 84",
+        "Damage: 100",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: na%",
+        "Notes: . Guard cancel  into LS"
+      ]
+    },
+    {
+      "name": "Seong's Quick Long Blade",
+      "input": "9A+BB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 67",
+        "Damage: 60",
+        "Block: 16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15.67%",
+        "Notes: .  on impact counter"
+      ]
+    },
+    {
+      "name": "Heaven's Wheel",
+      "input": "B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 42",
+        "Block: -26 -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14.67%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Fang Barrage",
+      "input": "6B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 12,12,8,8,12",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12.50%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Shadow Fang",
+      "input": "2B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 18",
+        "Block: -16",
+        "Hit: -2",
+        "Counter: KND",
+        "Guard Burst: 2.92%",
+        "Notes: Forces crouch on hit"
+      ]
+    },
+    {
+      "name": "Shadow Fang",
+      "input": "tip range2B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -16",
+        "Hit: 16",
+        "Counter: STN",
+        "Guard Burst: 2.92%"
+      ]
+    },
+    {
+      "name": "Retreating Sands",
+      "input": "4B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 30",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 18.33%",
+        "Notes: [3-18] vs high/mid verticals (not kicks). TS"
+      ]
+    },
+    {
+      "name": "Leaping Horse Vault",
+      "input": "8B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 21",
+        "Damage: 16",
+        "Block: -14",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 9.17%",
+        "Notes: Tech Jump. Forces crouch on hit"
+      ]
+    },
+    {
+      "name": "Leaping Horse Vault",
+      "input": "8B+KB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 21",
+        "Damage: 16,10",
+        "Block: -14",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 10.40%",
+        "Notes: Normal Hit Combo. Tech Jump. Forces crouch on hit"
+      ]
+    },
+    {
+      "name": "Leaping Horse Vault",
+      "input": "8B+KBB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 21",
+        "Damage: 16,10,21",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 10.40%",
+        "Notes: Normal Hit Combo. Tech Jump. Forces crouch on hit. Have perfect input version"
+      ]
+    },
+    {
+      "name": "Celestial Kick",
+      "input": "WRB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22,16",
+        "Block: -22",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9.17%",
+        "Notes: into LS.  on throw whiff"
+      ]
+    },
+    {
+      "name": "Transformed Heavens",
+      "input": "BTB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 30",
+        "Block: -8",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9.17%"
+      ]
+    },
+    {
+      "name": "Crushing Soul",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 50",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Dropping Embrace",
+      "input": "4A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 55",
+        "Block: 8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Furious Swing",
+      "input": "46A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 0",
+        "Block: -4",
+        "Hit: 10",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Furious Swing",
+      "input": "46A+GB",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 30",
+        "Block: -4",
+        "Hit: 8",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo. +8 when broken"
+      ]
+    },
+    {
+      "name": "Furious Swing",
+      "input": "short hold46A+G(B)",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 42",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 20.67%",
+        "Notes: Leaves at perfect tip range"
+      ]
+    },
+    {
+      "name": "Furious Swing",
+      "input": "full hold46A+G(B)",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 42",
+        "Block: 8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 41.67%",
+        "Notes: Leaves at perfect tip range"
+      ]
+    },
+    {
+      "name": "Mi-Na Frankensteiner",
+      "input": "RIGHT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 64",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Riding Mustang",
+      "input": "LEFT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 60",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Stalk Cutter",
+      "input": "BACK SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 72",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Circular Heaven Slash",
+      "input": "(3)_(6)_(9)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1.67%",
+        "Notes: Tech Crouch[9-26]"
+      ]
+    },
+    {
+      "name": "Heavy Willow Divide",
+      "input": "(2)_(8)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 15",
+        "Block: -16",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1.67%",
+        "Notes: Tech Jump[30-47]"
+      ]
+    },
+    {
+      "name": "Heavy Willow Divide",
+      "input": "(2)_(8)AA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 15,16",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3.33%",
+        "Notes: Tech Jump[1-18]. Tech Jump[41-53]. Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Heavy Willow Divide",
+      "input": "tip range(2)_(8)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 25",
+        "Block: -16",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1.67%",
+        "Notes: Tech Jump[30-47]"
+      ]
+    },
+    {
+      "name": "Heavy Willow Divide",
+      "input": "tip range(2)_(8)AA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 25,3",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3.33%",
+        "Notes: Tech Jump[1-18]. Tech Jump[41-53]. Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Sparrow Sweep",
+      "input": "(1)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 15",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 4.17%",
+        "Notes: Tech Crouch[26-42]"
+      ]
+    },
+    {
+      "name": "Sparrow Sweep",
+      "input": "tip range(1)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 25",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4.17%",
+        "Notes: Tech Crouch[26-42]"
+      ]
+    },
+    {
+      "name": "Root Fang",
+      "input": "(4)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 18",
+        "Block: -12",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 4.17%"
+      ]
+    },
+    {
+      "name": "Root Fang",
+      "input": "tip range(4)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 33",
+        "Block: 2",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 4.17%",
+        "Notes: on tip range"
+      ]
+    },
+    {
+      "name": "Lightning Thrust",
+      "input": "(3)_(6)_(9)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 9.17%"
+      ]
+    },
+    {
+      "name": "Lightning Thrust",
+      "input": "(3)_(6)_(9)(B)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 35",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15,00%",
+        "Notes: i22 at tip range"
+      ]
+    },
+    {
+      "name": "Sky Blossom",
+      "input": "(2)_(8)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 19",
+        "Damage: 32",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9.17%",
+        "Notes: Tech Crouch[10-15]"
+      ]
+    },
+    {
+      "name": "Lightning Fang",
+      "input": "(1)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -20",
+        "Hit: -8",
+        "Counter: -8",
+        "Guard Burst: 2.92%",
+        "Notes: Tech Crouch. Guard cancellable"
+      ]
+    },
+    {
+      "name": "Lightning Fang",
+      "input": "tip range(1)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 34",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2.92%",
+        "Notes: Tech Crouch. Guard cancellable"
+      ]
+    },
+    {
+      "name": "Top Hammer Fang",
+      "input": "(4)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 20",
+        "Block: 2",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9.17%",
+        "Notes: Tech Crouch & Tech Jump. Forces crouchon block"
+      ]
+    },
+    {
+      "name": "Circular Heaven Spin Kick",
+      "input": "(3)_(6)_(9)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 10",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2.92%",
+        "Notes: Tech Jump[5-16]"
+      ]
+    },
+    {
+      "name": "Circular Heaven Spin Kick",
+      "input": "(3)_(6)_(9)KK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 10,1",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 4.60%",
+        "Notes: Normal Hit Combo. Tech Jump[5-16]"
+      ]
+    },
+    {
+      "name": "Circular Heaven Spin Kick",
+      "input": "(3)_(6)_(9)KKK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 10,10,14",
+        "Block: -8",
+        "Hit: 8",
+        "Counter: 18",
+        "Guard Burst: 6.26%",
+        "Notes: Counter Hit Combo. Tech Jump[5-16]"
+      ]
+    },
+    {
+      "name": "Thunder Kick",
+      "input": "(2)_(8)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 30",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9.17%",
+        "Notes: Tech Jump. Forces crouch on block"
+      ]
+    },
+    {
+      "name": "Circular Blade Kick",
+      "input": "(1)_(4)_(7)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 32",
+        "Block: -8",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 1.67%",
+        "Notes: Tech Jump.  when countering low attack"
+      ]
+    },
+    {
+      "name": "Spinning Divide",
+      "input": "(3)_(6)_(9)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 40",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 25,00%"
+      ]
+    },
+    {
+      "name": "Heavy Willow Divide",
+      "input": "(2)_(8)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 4,00%"
+      ]
+    },
+    {
+      "name": "Heavy Willow Divide",
+      "input": "(2)_(8)A+BA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20,28",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5,00%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Seong's Diamond Crusher",
+      "input": "(1)_(4)_(7)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 52",
+        "Block: -2",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 41.67%",
+        "Notes: Tech Jump.  when guard bursts. Forces crouch on block."
+      ]
+    },
+    {
+      "name": "Jagged Comet Blade",
+      "input": "(3)_(6)_(9)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 11,21",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10,00%",
+        "Notes: Counter Hit Combo. Tech Crouch& Tech Jump. Forces crouch on block."
+      ]
+    },
+    {
+      "name": "Jagged Comet Blade",
+      "input": "+(3)_(6)_(9)(B)+(K)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 16,26,5",
+        "Block: -6",
+        "Hit: 0",
+        "Counter: KND",
+        "Guard Burst: 17,00%",
+        "Notes: Tech Crouch & Tech Jump"
+      ]
+    },
+    {
+      "name": "Glory Wing",
+      "input": "(1)_(4)_(7)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 40",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12.50%",
+        "Notes: Tech Crouch[16-37]"
+      ]
+    },
+    {
+      "name": "Talon Rush",
+      "input": "+(1)_(4)_(7)(B)+(K)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 52",
+        "Damage: 44",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 16.67%",
+        "Notes: . Tech Crouch[16-37]"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "RUNK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 26",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9.17%"
+      ]
+    },
+    {
+      "name": "Violet Squall",
+      "input": "LSA",
+      "type": "Lingering Step",
+      "properties": [
+        "Impact: 20",
+        "Damage: 32",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4.17%",
+        "Notes: Tech Crouch[8-15]. Exhibits tip range behaviour at all ranges"
+      ]
+    },
+    {
+      "name": "Lightning Fang",
+      "input": "LSB",
+      "type": "Lingering Step",
+      "properties": [
+        "Impact: 22",
+        "Damage: 34",
+        "Block: -10",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9.17%",
+        "Notes: Tech Crouch[1-52]. Exhibits tip range behaviour at all ranges. Guard cancellable."
+      ]
+    },
+    {
+      "name": "Spinning Storm Kick",
+      "input": "LSK",
+      "type": "Lingering Step",
+      "properties": [
+        "Impact: 36",
+        "Damage: 35",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12,00%",
+        "Notes: . Tech Jump"
+      ]
+    },
+    {
+      "name": "Jade Break",
+      "input": "B+G",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 46",
+        "Damage: 35",
+        "Block: -10",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 25,00%",
+        "Notes: [6-30]"
+      ]
+    },
+    {
+      "name": "Jade Break",
+      "input": "+(B)+(G)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 66",
+        "Damage: 45",
+        "Block: 8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 29.17%",
+        "Notes: [6-50]"
+      ]
+    },
+    {
+      "name": "Harbinger's Radiance",
+      "input": "REA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 18",
+        "Block: -4",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 33.33%"
+      ]
+    },
+    {
+      "name": "Harbinger's Radiance",
+      "input": "REAA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 18,25",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 33,00%"
+      ]
+    },
+    {
+      "name": "Harbinger's Exalted Blade",
+      "input": "REAB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 18,23",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 44,00%"
+      ]
+    },
+    {
+      "name": "Harbinger's Exalted Blade",
+      "input": "REA(B)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 18,35",
+        "Block: 0",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 50,00%"
+      ]
+    },
+    {
+      "name": "Harbinger's Radiance",
+      "input": "RE 2nd roundA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 23",
+        "Block: -4",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 33.33%"
+      ]
+    },
+    {
+      "name": "Harbinger's Radiance",
+      "input": "RE 2nd roundAA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 23,25",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 33,00%"
+      ]
+    },
+    {
+      "name": "Harbinger's Exalted Blade",
+      "input": "RE 2nd roundAB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 23,23",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 44,00%"
+      ]
+    },
+    {
+      "name": "Harbinger's Exalted Blade",
+      "input": "RE 2nd roundA(B)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 23,29",
+        "Block: 0",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 50,00%"
+      ]
+    },
+    {
+      "name": "Hazed Skewer",
+      "input": "REB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 30",
+        "Block: na",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 50,00%"
+      ]
+    },
+    {
+      "name": "Hazed Skewer",
+      "input": "RE 2nd roundB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 39",
+        "Block: na",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 50,00%"
+      ]
+    },
+    {
+      "name": "Flying Flash Kick",
+      "input": "REK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 48",
+        "Damage: 30",
+        "Block: 12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 33.33%"
+      ]
+    },
+    {
+      "name": "Flying Flash Kick",
+      "input": "RE 2nd roundK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 48",
+        "Damage: 39",
+        "Block: 12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 33.33%"
+      ]
+    },
+    {
+      "name": "Scarlet Meteor",
+      "input": "A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 80",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10.40%"
+      ]
+    },
+    {
+      "name": "Soul Charge",
+      "input": "4A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 6",
+        "Damage: 0",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 0,00%",
+        "Notes: invincible since i4. Pushback happens at i6"
+      ]
+    },
+    {
+      "name": "Seong's Supernal Strike",
+      "input": "236A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 13,4,4,20",
+        "Block: -2",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 12,00%"
+      ]
+    },
+    {
+      "name": "Seong's Supernal Strike",
+      "input": "++236(A)+(B)+(K)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 18,4,4,23",
+        "Block: 4",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 20,00%"
+      ]
+    },
+    {
+      "name": "Shattering Violet Squall",
+      "input": "SC6A",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 39",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9.17%",
+        "Notes: .  on long range runnign counter"
+      ]
+    },
+    {
+      "name": "Shattering Meteor Shower",
+      "input": "SCBBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 15,13,30",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15,00%"
+      ]
+    },
+    {
+      "name": "Shattering Lightning Fang",
+      "input": "SC1B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 44",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15.67%"
+      ]
+    },
+    {
+      "name": "Liquid Rising",
+      "input": "SC FC1KK",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 16,19,19",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 7,00%",
+        "Notes: Normal Hit Combo.  into LS"
+      ]
+    },
+    {
+      "name": "Seong Cloud Burst",
+      "input": "SC FC1KKB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 16,19,19,14",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12,00%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Seong Snapping Jaw",
+      "input": "SC(3)_(6)_(9)AA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22,11,25",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5,00%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Whirling Willow Frenzy",
+      "input": "SC(2)_(8)AAA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 16,17,19",
+        "Block: -12",
+        "Hit: 5",
+        "Counter: 5",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo. 2nd and 3rd hit are Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Whirling Willow Frenzy",
+      "input": "SC(2)_(8)AAAA",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 16,17,19,14",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 6.67%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Shattering Lightning Fang",
+      "input": "SC(1)_(7)B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 44",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15.67%",
+        "Notes: . Tech Crouch"
+      ]
+    },
+    {
+      "name": "Shattering Spinning Divide",
+      "input": "SC(3)_(6)_(9)A+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 55",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 25,00%"
+      ]
+    },
+    {
+      "name": "Shattering Diamond Crusher",
+      "input": "SC(1)_(4)_(7)A+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 57",
+        "Block: 6",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 41.67%",
+        "Notes: . Tech Jump.  on guard burst"
+      ]
+    },
+    {
+      "name": "Shattering Talon Rush",
+      "input": "SC(1)_(4)_(7)B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 48",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 16.67%"
+      ]
+    },
+    {
+      "name": "Shattering Talon Rush",
+      "input": "SC+(1)_(4)_(7)(B)+(K)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 52",
+        "Damage: 57",
+        "Block: UB",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Guard cancel  into LS"
+      ]
     }
   ]
 }

@@ -4,29 +4,2435 @@
   "game": "SoulCalibur VI",
   "movesList": [
     {
-      "name": "Angel Step",
-      "input": "236",
-      "type": "movement"
+      "name": "Starlight Blade",
+      "input": "A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%"
+      ]
     },
     {
-      "name": "Angel Strike",
-      "input": "236B",
-      "type": "special"
+      "name": "Starlight Blade",
+      "input": "AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo"
+      ]
     },
     {
-      "name": "Shield Bash",
+      "name": "Starlight Blade",
+      "input": "AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,25",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "~ Angel Step",
+      "input": "AAA6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10,25",
+        "Block: -2",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[4-RC]. AS"
+      ]
+    },
+    {
+      "name": "Slide Tornado",
+      "input": "AK",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 8,10",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Roaring Stream",
       "input": "6A",
-      "type": "normal"
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 12",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%",
+        "Notes: [6-16] vs  attacks. Tech Crouch[6-14]"
+      ]
     },
     {
-      "name": "Heaven Strike",
-      "input": "5B, 5B",
-      "type": "normal"
+      "name": "Roaring Stream",
+      "input": "6AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 12,18",
+        "Block: -10",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo. Tech Crouch[6-14]"
+      ]
     },
     {
-      "name": "Divine Flip",
+      "name": "~ Angel Step",
+      "input": "6AA6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 12,18",
+        "Block: -2",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo. Tech Crouch[6-14].  into AS"
+      ]
+    },
+    {
+      "name": "Angel Punisher",
+      "input": "3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[9-35]"
+      ]
+    },
+    {
+      "name": "Under Slide Blade",
+      "input": "2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[8-RC]"
+      ]
+    },
+    {
+      "name": "Iron Butterfly",
+      "input": "1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 15",
+        "Block: -16",
+        "Hit: -6",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[10-RC]"
+      ]
+    },
+    {
+      "name": "Iron Butterfly",
+      "input": "1AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 15,25",
+        "Block: -14",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 1%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Cutlass Europa",
+      "input": "4A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -10",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[8-12]"
+      ]
+    },
+    {
+      "name": "Cutlass Europa",
+      "input": "4AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,15",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: delayable"
+      ]
+    },
+    {
+      "name": "Cutlass Europa",
+      "input": "4AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,15,25",
+        "Block: -24",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: delayable"
+      ]
+    },
+    {
+      "name": "Cutlass Europa",
+      "input": "4(A)",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 30",
+        "Block: -2",
+        "Hit: 16",
+        "Counter: 16",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[8-28]"
+      ]
+    },
+    {
+      "name": "Cutlass Europa",
+      "input": "4(A)AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 30,15,15,13",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: delayable. Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Cutlass Seraphim",
+      "input": "4AB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,20",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: delayable. Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Cutlass Seraphim",
+      "input": "4(A)B",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 30,28",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: delayable Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Under Slide Blade",
+      "input": "FCA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 10",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[0-9]. Tech Crouch[13-RC]"
+      ]
+    },
+    {
+      "name": "Full Turn Blade",
+      "input": "WRA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -10",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[0-10]"
+      ]
+    },
+    {
+      "name": "Jumping Mirage Satellite",
+      "input": "9A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 35",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump[7-32]"
+      ]
+    },
+    {
+      "name": "Jumping Mirage Satellite",
+      "input": "7A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 25",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump[7-32]"
+      ]
+    },
+    {
+      "name": "Turning Slide Blade",
+      "input": "BTA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Under Slide Blade",
+      "input": "BT2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -4",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[11-RC]"
+      ]
+    },
+    {
+      "name": "Divine Mist",
+      "input": "B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12",
+        "Block: -6",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Divine Mist",
+      "input": "BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,14",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Divine Mist",
+      "input": "BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,14,14,16",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 6%",
+        "Notes: Tech Crouch[9-20]"
+      ]
+    },
+    {
+      "name": "Angel's Flow",
+      "input": "BK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,18",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Ascetic's Force",
+      "input": "6B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14",
+        "Block: -10",
+        "Hit: -2",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: [ M verticals 8-15]. Tech Crouch[8-26]"
+      ]
+    },
+    {
+      "name": "Ascetic's Force",
+      "input": "6BA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14,24",
+        "Block: -12",
+        "Hit: 10",
+        "Counter: 210",
+        "Guard Burst: 2%",
+        "Notes: Opponent is BT on hit"
+      ]
+    },
+    {
+      "name": "Ascetic's Blade",
+      "input": "6bA",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 44",
+        "Damage: 24",
+        "Block: -12",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 4%",
+        "Notes: [ M verticals 8-15]. Tech Crouch[8-26]"
+      ]
+    },
+    {
+      "name": "Press the Hilt",
+      "input": "6BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 14,16",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 6%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Paladin Purifier",
+      "input": "3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 22",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[8-17]"
+      ]
+    },
+    {
+      "name": "Guardian Strike",
+      "input": "2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -10",
+        "Hit: 0",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[16-RC]"
+      ]
+    },
+    {
+      "name": "Guardian Strike",
+      "input": "2BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14,22",
+        "Block: -20",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 7%",
+        "Notes: Tech Crouch[16-RC]"
+      ]
+    },
+    {
+      "name": "Guardian Strike",
+      "input": "2BB4",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14,22,15",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 7%",
+        "Notes: Tech Crouch[16-RC] +10 damage with exact timing"
+      ]
+    },
+    {
+      "name": "Guardian Strike",
+      "input": "2BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14,22,15",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 7%",
+        "Notes: Tech Crouch[16-RC] +5 damage with exact timing"
+      ]
+    },
+    {
+      "name": "Guardian Spear Kick",
+      "input": "2BK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14,20",
+        "Block: -12",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 7%",
+        "Notes: if hit opponent from back. Tech Crouch[0-16]. Tech Jump[16-35]"
+      ]
+    },
+    {
+      "name": "Nasty Impale",
+      "input": "1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Nasty Impale",
+      "input": "1BBBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 10,8,8,8",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: KND",
+        "Guard Burst: 7%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Sword Shower",
+      "input": "4B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -2",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Forces crouch on opponent"
+      ]
+    },
+    {
+      "name": "Guardian Strike",
+      "input": "FCB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -10",
+        "Hit: 0",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[0-6]. Tech Crouch[16-RC]"
+      ]
+    },
+    {
+      "name": "Guardian Strike",
+      "input": "FCBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 7%"
+      ]
+    },
+    {
+      "name": "Guardian Spear Kick",
+      "input": "FCBK",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14,20",
+        "Block: -12",
+        "Hit: 10",
+        "Counter: 10",
+        "Guard Burst: 7%",
+        "Notes: if hit opponent from back. Tech Crouch[0-16]. Tech Jump[16-35]"
+      ]
+    },
+    {
+      "name": "Under Splash",
+      "input": "FC3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[0-4]. Tech Crouch[18-RC]"
+      ]
+    },
+    {
+      "name": "Exile",
+      "input": "WRB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[0-14]"
+      ]
+    },
+    {
+      "name": "Diving Exile",
+      "input": "9B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 18",
+        "Block: -4",
+        "Hit: JGL",
+        "Counter: JGL",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[7-31]"
+      ]
+    },
+    {
+      "name": "Diving Exile",
+      "input": "7B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 18",
+        "Block: -4",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[7-31]"
+      ]
+    },
+    {
+      "name": "Turning Sword Splash",
+      "input": "BTB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Turning Under Splash",
+      "input": "BT2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[13-RC]"
+      ]
+    },
+    {
+      "name": "Kick Duo",
+      "input": "K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 14",
+        "Block: -10",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Kick Duo",
+      "input": "KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 14,10",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Holy Punishment",
+      "input": "6K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Flapping Heel Kick",
+      "input": "3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 13",
+        "Damage: 14",
+        "Block: -7",
+        "Hit: 3",
+        "Counter: 3",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Spring Under kick",
+      "input": "2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[11-RC]"
+      ]
+    },
+    {
+      "name": "Tornado Low Kick",
+      "input": "1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: KND",
+        "Guard Burst: 1%",
+        "Notes: 16 damage and -6 on tip hit"
+      ]
+    },
+    {
+      "name": "Tornado Low Kick",
+      "input": "1(K)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 30",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: after opponent misses a"
+      ]
+    },
+    {
+      "name": "Rising Temple",
+      "input": "4K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 20",
+        "Block: -2",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[4-10]"
+      ]
+    },
+    {
+      "name": "Spring Under Kick",
+      "input": "FCK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[0-4]. Tech Crouch[10-RC]"
+      ]
+    },
+    {
+      "name": "Elysium Kick",
+      "input": "FC1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[0-10]"
+      ]
+    },
+    {
+      "name": "Angel's Spring",
+      "input": "WRK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -2",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[0-12]"
+      ]
+    },
+    {
+      "name": "Holy Crest Kick",
+      "input": "9K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 18",
+        "Block: -6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[8-32]"
+      ]
+    },
+    {
+      "name": "Turning Holy High Kick",
+      "input": "BTK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -4",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Turning Angel Sweep",
+      "input": "BT2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -14",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 5%",
+        "Notes: Tech Crouch[13-RC]"
+      ]
+    },
+    {
+      "name": "Elk Strike",
+      "input": "A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 35",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: versus GI/RE. Tech Crouch[9-39]"
+      ]
+    },
+    {
+      "name": "El Fortune",
+      "input": "6A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 4",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [4-12] vs mids"
+      ]
+    },
+    {
+      "name": "Spinning Hilt",
+      "input": "6A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 10",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [4-12] vs mid horizontals"
+      ]
+    },
+    {
+      "name": "Guardian's Judgment",
+      "input": "6A+BAK",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 20,11,28",
+        "Block: -",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [4-12] vs mid verticals Tech Crouch. Tech Jump"
+      ]
+    },
+    {
+      "name": "Tornado High Kick",
+      "input": "6A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 18",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [4-12] vs mid kicks"
+      ]
+    },
+    {
+      "name": "El Fortune (synergy)",
+      "input": "3A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 4",
+        "Damage: 40",
+        "Block: -",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: attack comes out on successful GI  [4-14] vs mids"
+      ]
+    },
+    {
+      "name": "Twin Step Grace",
+      "input": "4A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14,16",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: versus whiffed throws Tech Crouch[9-20]"
+      ]
+    },
+    {
+      "name": "Angel Fall",
+      "input": "hit8A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 40",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: Tech Crouch[7-11]. Tech Jump[13-41]. Tech Crouch[41-66]"
+      ]
+    },
+    {
+      "name": "Angel Fall",
+      "input": "miss8A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 0",
+        "Block: -16",
+        "Hit: 14",
+        "Counter: 14",
+        "Guard Burst: 0%",
+        "Notes: shockwave. Tech Crouch[7-11]. Tech Jump[13-41]. Tech Crouch[41-66]"
+      ]
+    },
+    {
+      "name": "Angel Fall",
+      "input": "hit+8(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 68",
+        "Damage: 60",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 0%",
+        "Notes: . Tech Crouch[7-11]. Tech Jump[13-41]. Tech Crouch[41-66]"
+      ]
+    },
+    {
+      "name": "Angel Fall",
+      "input": "miss+8(A)+(B)",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 68",
+        "Damage: 0",
+        "Block: -16",
+        "Hit: 14",
+        "Counter: 14",
+        "Guard Burst: 0%",
+        "Notes: shockwave. Tech Crouch[7-11]. Tech Jump[13-41]. Tech Crouch[41-66]"
+      ]
+    },
+    {
+      "name": "Twin Step Grace",
+      "input": "4A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14,16",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: on whiffed throw. Tech Crouch[9-20]"
+      ]
+    },
+    {
+      "name": "Temperance Strike",
+      "input": "B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 16",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 9%",
+        "Notes: Tech Jump[2-14]. Tech Crouch[17-30]"
+      ]
+    },
+    {
+      "name": "Temperance Strike",
+      "input": "B+KB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 16,22",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo. Tech Jump[2-14]. Tech Crouch[17-30]"
+      ]
+    },
+    {
+      "name": "Temperance Strike",
+      "input": "B+KB4",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 16,22,15",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Counter Hit Combo +10 damage with exact timing Tech Jump[2-14]. Tech Crouch[17-30]"
+      ]
+    },
+    {
+      "name": "Temperance Strike",
+      "input": "B+KBB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 16,22,15",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: Counter Hit Combo +5 damage with exact timing Tech Jump[2-14]. Tech Crouch[17-30]"
+      ]
+    },
+    {
+      "name": "Quick Strike",
+      "input": "6B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 26",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[8-31]"
+      ]
+    },
+    {
+      "name": "Angel Stroke",
+      "input": "8B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 10,10",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: KND",
+        "Guard Burst: 14%",
+        "Notes: Tech Crouch[5-14]. Tech Jump[14-36]"
+      ]
+    },
+    {
+      "name": "Angel Stroke",
+      "input": "8B+KA",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 10,10,20",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 1%",
+        "Notes: Tech Jump[10-41]. Tech Crouch[43-60]"
+      ]
+    },
+    {
+      "name": "Angel Stroke",
+      "input": "8B+KAB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 10,10,20,24",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Tech Crouch[1-17]"
+      ]
+    },
+    {
+      "name": "Angel Fall",
+      "input": "8B+KB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 10,10,40",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Tech Crouch[3-14]. Tech Jump[18-51]. Tech Crouch[51-67]"
+      ]
+    },
+    {
+      "name": "Angel's Sault",
+      "input": "8B+KK",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 10,10,22",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Launcher on airborne opponent. Normal Hit Combo. Tech Crouch[5-10]. Tech Jump[13-45]. Tech Crouch[43-59]"
+      ]
+    },
+    {
+      "name": "Heaven's Gate",
+      "input": "4B+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 64",
+        "Damage: 40",
+        "Block: LNC",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: , cancel with G. Tech Jump[55-73]"
+      ]
+    },
+    {
+      "name": "Dawn of Eos",
+      "input": "WRB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 12",
+        "Damage: 12,18",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Normal Hit Combo. Launcher on airborne opponent"
+      ]
+    },
+    {
+      "name": "Hip Charge",
+      "input": "BTB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 24",
+        "Block: -8",
+        "Hit: 8",
+        "Counter: 14",
+        "Guard Burst: 15%",
+        "Notes: Tech Jump[16-29]"
+      ]
+    },
+    {
+      "name": "Widow Maker",
       "input": "A+G",
-      "type": "throw"
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 40",
+        "Block: 6",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Widow Maker",
+      "input": "A+G(2)",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 35",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Holy Cracker",
+      "input": "4A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 40",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Heaven to Hell",
+      "input": "4A+GA",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 65",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: after 4+ successfull guard impacts"
+      ]
+    },
+    {
+      "name": "Heaven to Hell",
+      "input": "4A+G4A",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 65",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: after 4+ successfull guard impacts"
+      ]
+    },
+    {
+      "name": "Round Knocker",
+      "input": "LEFT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 50",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Restores guard stamina upon landing"
+      ]
+    },
+    {
+      "name": "Broken Promise",
+      "input": "RIGHT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 70",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Bottoms Up",
+      "input": "BACK THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 50",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Heaven's Arch",
+      "input": "(3)_(6)_(9)A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 55",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: after 4+ successfull guard impacts"
+      ]
+    },
+    {
+      "name": "Silent Cross",
+      "input": "(3)_(6)_(9)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -12",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[6-20]"
+      ]
+    },
+    {
+      "name": "Shield Rush",
+      "input": "(2)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 28",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Inverse Shield Rush",
+      "input": "(8)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 28",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Reverse Mirage",
+      "input": "(1)_(4)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: LNC",
+        "Guard Burst: 4%",
+        "Notes: On CH, damage changes to 24,18. Tech Crouch[15-20]"
+      ]
+    },
+    {
+      "name": "~ Angel Step",
+      "input": "(1)_(4)_(7)A6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: LNC",
+        "Guard Burst: 4%",
+        "Notes: No stance transition on CH. AS on NH or block. Tech Crouch[15-20]"
+      ]
+    },
+    {
+      "name": "Silent Stream",
+      "input": "(1)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 14",
+        "Block: -12",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[13-RC]"
+      ]
+    },
+    {
+      "name": "Silent Stream",
+      "input": "(1)_(7)AA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 14,26",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[0-22]. Tech Jump[28-61]"
+      ]
+    },
+    {
+      "name": "Silent Stream",
+      "input": "(1)_(7)A(A)",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 14,40",
+        "Block: KND",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: . Tech Jump[6-31]"
+      ]
+    },
+    {
+      "name": "Olympus Cannon",
+      "input": "(3)_(6)_(9)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 23",
+        "Damage: 26",
+        "Block: -3",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Guardian's Judgment",
+      "input": "(2)_(8)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 20",
+        "Block: -26",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[3-14]. Tech Jump[16-47]. Tech Crouch[49-59]"
+      ]
+    },
+    {
+      "name": "Guardian's Judgment",
+      "input": "(2)_(8)BA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 10,7",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 0%",
+        "Notes: Tech Jump[1-44]. Tech Crouch[45-56]"
+      ]
+    },
+    {
+      "name": "Guardian's Judgment",
+      "input": "(2)_(8)BAK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 20,7,20",
+        "Block: -60",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 0%",
+        "Notes: Tech Jump[1-42]. Tech Crouch[45-56]"
+      ]
+    },
+    {
+      "name": "Guardian Upper",
+      "input": "(1)_(4)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 30",
+        "Block: -16",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: post GI. Tech Crouch[5-17]"
+      ]
+    },
+    {
+      "name": "Plasma Blade",
+      "input": "(3)_(6)_(9)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Angel Side Kick",
+      "input": "(2)_(8)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -8",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Tornado High Kick",
+      "input": "(1)_(4)_(7)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 25",
+        "Block: 0",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Tornado Feint",
+      "input": "(1)_(4)_(7)kK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 46",
+        "Damage: 40",
+        "Block: 4",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[5-25]"
+      ]
+    },
+    {
+      "name": "Lodestar Strike",
+      "input": "(3)_(6)_(9)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 40",
+        "Block: -7",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: on run-counter versus backstep"
+      ]
+    },
+    {
+      "name": "Ascension",
+      "input": "(2)_(8)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 28",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: Tech Crouch[7-24]"
+      ]
+    },
+    {
+      "name": "Twin Step Grace",
+      "input": "(1)_(4)_(7)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14,16",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[9-20]  versus whiffed throws"
+      ]
+    },
+    {
+      "name": "Jet Stream Rush",
+      "input": "(3)_(6)_(9)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[5-21]"
+      ]
+    },
+    {
+      "name": "Jet Stream Rush",
+      "input": "(3)_(6)_(9)B+KA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 22,6",
+        "Block: -18",
+        "Hit: -2",
+        "Counter: LNC",
+        "Guard Burst: 1%",
+        "Notes: l"
+      ]
+    },
+    {
+      "name": "Jet Stream Rush",
+      "input": "(3)_(6)_(9)B+KAB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 22,6,16",
+        "Block: -14",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 10%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Olympus Shower",
+      "input": "(2)_(8)_(1)_(4)_(7)B+K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 34",
+        "Block: -6",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: Can also be done as 44B+K.  when whiff punish"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "RUNK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 25",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[11-46]"
+      ]
+    },
+    {
+      "name": "Angel Satellite",
+      "input": "ASA",
+      "type": "Angel Step",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22",
+        "Block: -18",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: Tech Crouch[3-19]. Tech Jump[21-48]"
+      ]
+    },
+    {
+      "name": "Angel Satellite",
+      "input": "ASAA",
+      "type": "Angel Step",
+      "properties": [
+        "Impact: 18",
+        "Damage: 22,18",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: Tech Jump[0-29]. Tech Crouch[33-59]"
+      ]
+    },
+    {
+      "name": "Angel's Strike",
+      "input": "ASB",
+      "type": "Angel Step",
+      "properties": [
+        "Impact: 14",
+        "Damage: 30",
+        "Block: -20",
+        "Hit: -6",
+        "Counter: KND",
+        "Guard Burst: 2%",
+        "Notes: +6 damage on exact timing. Tech Crouch[4-22]"
+      ]
+    },
+    {
+      "name": "Painful Fate",
+      "input": "AS on hitB4",
+      "type": "Angel Step",
+      "properties": [
+        "Impact: 14",
+        "Damage: 30,15",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: +10 dmg on exact timing. Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Heaven's Rapture",
+      "input": "ASBB",
+      "type": "Angel Step",
+      "properties": [
+        "Impact: 14",
+        "Damage: 30,15",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: +5 damage on exact timing. Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Holy Arrow Kick",
+      "input": "ASK",
+      "type": "Angel Step",
+      "properties": [
+        "Impact: 16",
+        "Damage: 20",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: versus H attacks except"
+      ]
+    },
+    {
+      "name": "Angelic Retribution",
+      "input": "ASA+B",
+      "type": "Angel Step",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14,18",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 4%",
+        "Notes: Tech Crouch[4-11]. Tech Jump[17-68]. Tech Crouch [70-92]"
+      ]
+    },
+    {
+      "name": "Seraphim Blade",
+      "input": "TASA",
+      "type": "Twin Angel Step",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: KND",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch[3-33]"
+      ]
+    },
+    {
+      "name": "Seraphim Blade",
+      "input": "TASAA",
+      "type": "Twin Angel Step",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,18",
+        "Block: -12",
+        "Hit: 6",
+        "Counter: STN",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch[0-RC]"
+      ]
+    },
+    {
+      "name": "Seraphim Echo",
+      "input": "TASAB",
+      "type": "Twin Angel Step",
+      "properties": [
+        "Impact: 20",
+        "Damage: 18,35",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: .  on impact counter"
+      ]
+    },
+    {
+      "name": "Seraphim Strike",
+      "input": "TASB",
+      "type": "Twin Angel Step",
+      "properties": [
+        "Impact: 16",
+        "Damage: 35",
+        "Block: -14",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: versus whiffed horizontals (except kicks)"
+      ]
+    },
+    {
+      "name": "Painful Fate",
+      "input": "TASB4",
+      "type": "Twin Angel Step",
+      "properties": [
+        "Impact: 16",
+        "Damage: 35,21",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: +7 damage on exact timing."
+      ]
+    },
+    {
+      "name": "Heaven's Rapture",
+      "input": "TASBB",
+      "type": "Twin Angel Step",
+      "properties": [
+        "Impact: 16",
+        "Damage: 35,14",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: +7 damage on exact timing"
+      ]
+    },
+    {
+      "name": "Tornado Feint",
+      "input": "TASK",
+      "type": "Twin Angel Step",
+      "properties": [
+        "Impact: 34",
+        "Damage: 30",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[0-25]"
+      ]
+    },
+    {
+      "name": "Holy Resonance",
+      "input": "B+G",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 46",
+        "Damage: 30",
+        "Block: -8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Holy Resonance",
+      "input": "+(B)+(G)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 64",
+        "Damage: 40",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: .  [6-50]"
+      ]
+    },
+    {
+      "name": "Celestial Blade",
+      "input": "REA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 20",
+        "Block: -4",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 33%",
+        "Notes: as initiator 2nd round"
+      ]
+    },
+    {
+      "name": "~ Angel Step",
+      "input": "REA6",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 20",
+        "Block: 6",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 33%",
+        "Notes: intoAS  as initiator 2nd"
+      ]
+    },
+    {
+      "name": "Angel Vanguard",
+      "input": "REB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 21",
+        "Block: STN",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 50%",
+        "Notes: Will always  on 2nd round as initiator.  as initiator 2nd round"
+      ]
+    },
+    {
+      "name": "Spiritual Spin Kick",
+      "input": "REK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 10",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 33%",
+        "Notes: as initiator 2nd round"
+      ]
+    },
+    {
+      "name": "Providential Thunder",
+      "input": "A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 80",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 8%"
+      ]
+    },
+    {
+      "name": "Soul Charge",
+      "input": "4A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 6",
+        "Damage: 0",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 0%",
+        "Notes: invincible since i4. Pushback happens at i6"
+      ]
+    },
+    {
+      "name": "Zeus's Fulmination",
+      "input": "236A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 39",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Cutlass Empyrean",
+      "input": "SC4AB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18,33",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 13%",
+        "Notes: Normal Hit Combo."
+      ]
+    },
+    {
+      "name": "Mystic Sword Rain",
+      "input": "SCBBBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,14,14,16,21",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%"
+      ]
+    },
+    {
+      "name": "Mystic Sword Rain",
+      "input": "SCBBB(B)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 12,14,14,16,64",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%"
+      ]
+    },
+    {
+      "name": "Guardian Punisher",
+      "input": "SC2BB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14,26",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%",
+        "Notes: Counter Hit Combo. Tech Crouch[16-RC]"
+      ]
+    },
+    {
+      "name": "Guardian Punisher",
+      "input": "SC2BB4",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14,26,55",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 7%",
+        "Notes: Counter Hit Combo Tech Crouch[16-RC]"
+      ]
+    },
+    {
+      "name": "Guardian Punisher",
+      "input": "SC2BBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14,26,40",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 7%",
+        "Notes: Counter Hit Combo Tech Crouch[16-RC]"
+      ]
+    },
+    {
+      "name": "El Fortune",
+      "input": "SC6A+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 2",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [2-12] vs mids"
+      ]
+    },
+    {
+      "name": "Spinning Hilt",
+      "input": "SC6A+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 10",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [2-12] vs mid horizontals"
+      ]
+    },
+    {
+      "name": "Guardian's Judgment",
+      "input": "SC6A+BAK",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 20,11,28,9",
+        "Block: -",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [2-12] vs mid verticals Tech Crouch. Tech Jump"
+      ]
+    },
+    {
+      "name": "Tornado High Kick",
+      "input": "SC6A+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 18",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [2-12] vs mid kicks"
+      ]
+    },
+    {
+      "name": "El Fortune (synergy)",
+      "input": "SC3A+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 2",
+        "Damage: 42",
+        "Block: -",
+        "Hit: KND",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: attack comes out on successful GI  [2-12] vs mids"
+      ]
+    },
+    {
+      "name": "Twin Step Sword Rain",
+      "input": "SC4A+BB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14,16,21",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: Normal Hit Combo. .  versus whiffed throws"
+      ]
+    },
+    {
+      "name": "Twin Step Sword Rain",
+      "input": "SC4A+B(B)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14,16,62",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: .  versus whiffed throws"
+      ]
+    },
+    {
+      "name": "Temporal Punisher",
+      "input": "SCB+KB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 16,26",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Temporal Punisher",
+      "input": "SCB+KB4",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 16,26,55",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Temporal Punisher",
+      "input": "SCB+KBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 16,26,40",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "Twin Step Sword Rain",
+      "input": "SC(1)_(4)_(7)A+BB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14,16,21",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: Normal Hit Combo. ."
+      ]
+    },
+    {
+      "name": "Twin Step Sword Rain",
+      "input": "SC(1)_(4)_(7)A+B(B)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 14,16,62",
+        "Block: 8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%",
+        "Notes: ."
+      ]
+    },
+    {
+      "name": "Mirage Cross",
+      "input": "SC(1)_(4)_(7)AB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 21,35",
+        "Block: 4",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 10%",
+        "Notes: . Tech Crouch[0-25]"
+      ]
+    },
+    {
+      "name": "Judgment Spark",
+      "input": "SC(2)_(8)BAK",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 21,7,22,9",
+        "Block: -2",
+        "Hit: KND",
+        "Counter: LNC",
+        "Guard Burst: 25%",
+        "Notes: Tech Crouch[3-14]. Tech Jump."
+      ]
+    },
+    {
+      "name": "Sun's Corona",
+      "input": "SC ASAAB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 23,19,13",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: . Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Angel's Punisher",
+      "input": "SC ASB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 37",
+        "Block: -20",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Painful Fate",
+      "input": "SC ASB4",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 37,35",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Heaven's Rapture",
+      "input": "SC ASBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 37,30",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Seraphim Castigation",
+      "input": "SC ASA+B",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 14,18,19",
+        "Block: 2",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%",
+        "Notes: Normal Hit Combo."
+      ]
+    },
+    {
+      "name": "Archangel Strike",
+      "input": "SC ASB+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 42",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[4-22]"
+      ]
+    },
+    {
+      "name": "Seraphim Punisher",
+      "input": "SC TASB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 42",
+        "Block: -8",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch[0-22]  versus whiffed horizontals (except kicks)"
+      ]
+    },
+    {
+      "name": "Painful Fate",
+      "input": "SC TASB4",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 42,38",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Heaven's Rapture",
+      "input": "SC TASBB",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 42,28",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
     }
   ]
 }

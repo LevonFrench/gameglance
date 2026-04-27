@@ -1,56 +1,1853 @@
 {
+  "name": "Inferno",
   "character": "Inferno",
+  "game": "SoulCalibur VI",
   "movesList": [
     {
-      "name": "Hellfire Blast",
-      "input": "236B",
-      "type": "Move"
+      "name": "Arrhostia Demolition",
+      "input": "A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%"
+      ]
     },
     {
-      "name": "Cataclysm",
-      "input": "66A+B",
-      "type": "Move"
+      "name": "Arrhostia Demolition",
+      "input": "AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -26",
+        "Hit: -8",
+        "Counter: -8",
+        "Guard Burst: 3%",
+        "Notes: Last 2 hits Normal Hit Combo"
+      ]
     },
     {
-      "name": "Eternal Darkness",
+      "name": "Arrhostia Demolition",
+      "input": "AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Arrhostia Force",
+      "input": "AK",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 16",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Quick Chainmail Buster",
+      "input": "B",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 19",
+        "Damage: 28",
+        "Block: -16",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Gore Fest",
+      "input": "6A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -16",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 5%"
+      ]
+    },
+    {
+      "name": "Gore Fest",
+      "input": "6AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: 2",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 6%"
+      ]
+    },
+    {
+      "name": "Gore Fest",
+      "input": "6AAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: 5",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%",
+        "Notes: Counter Hit Combo, Last 4 hits Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Infernal Reign",
+      "input": "3A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -22",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Infernal Reign",
+      "input": "3AA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo, 2nd hit UA"
+      ]
+    },
+    {
+      "name": "Infernal Divide",
+      "input": "3AB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: 2nd hit UA"
+      ]
+    },
+    {
+      "name": "Vorpal Violence",
+      "input": "2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Vorpal Violence",
+      "input": "2AB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 8%",
+        "Notes: Normal Hit Combo, STN on CH of 2nd hit"
+      ]
+    },
+    {
+      "name": "Vorpal Violence",
+      "input": "2ABB",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 12%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Vile Glare",
+      "input": "2AB6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 8%",
+        "Notes: Normal Hit Combo.  into VG"
+      ]
+    },
+    {
+      "name": "Shadow Slicer",
+      "input": "1A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 48",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 4%",
+        "Notes: when soul charged"
+      ]
+    },
+    {
+      "name": "Shadow Slicer",
+      "input": "1(A)",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 60",
+        "Damage: 68",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: .  when soul charged"
+      ]
+    },
+    {
+      "name": "~ Vile Glare",
+      "input": "1A6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 48",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 4%",
+        "Notes: .  into VG"
+      ]
+    },
+    {
+      "name": "~ Vile Glare",
+      "input": "1(A)6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 60",
+        "Damage: 68",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: .  into VG"
+      ]
+    },
+    {
+      "name": "Primal Fear",
+      "input": "4A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 38",
+        "Damage: 40",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Jade Slicer",
+      "input": "FCA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 16",
+        "Block: -",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Maelstrom",
+      "input": "WRA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -",
+        "Hit: -10",
+        "Counter: -",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Maelstrom",
+      "input": "WRAA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 3%",
+        "Notes: Counter Hit Combo. Tech Crouch"
+      ]
+    },
+    {
+      "name": "~ Vile Glare",
+      "input": "WRA6",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 20",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 1%",
+        "Notes: Tech Crouch.  into VG"
+      ]
+    },
+    {
+      "name": "Fatal Spin Slash",
+      "input": "7A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 22",
+        "Block: -12",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Fatal Spin Slash",
+      "input": "8A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 25",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Fatal Spin Slash",
+      "input": "9A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 28",
+        "Block: -12",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Turning Head Slash",
+      "input": "BTA",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -6",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Turning Leg Slash",
+      "input": "BT2A",
+      "type": "Horizontal Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 16",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Hell Vortex",
+      "input": "BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 30,33",
+        "Block: -20",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Hell Vortex",
+      "input": "BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 30,33,20",
+        "Block: 5",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 19%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Vile Glare",
+      "input": "BB6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 30",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 15%",
+        "Notes: Normal Hit Combo.  into VG"
+      ]
+    },
+    {
+      "name": "Death Lord's Impalement",
+      "input": "6B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 18",
+        "Block: -16",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Death Lord's Impalement",
+      "input": "6BB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 18,20",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 14%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Death Lord's Impalement",
+      "input": "6BBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 18,20,6,6,6,10",
+        "Block: 5",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 37%",
+        "Notes: Normal Hit Combo, Groundspin stun"
+      ]
+    },
+    {
+      "name": "~ Void Star",
+      "input": "6BBB8",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 18",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: 37%",
+        "Notes: Normal Hit Combo, Groundspin stun.  into VS"
+      ]
+    },
+    {
+      "name": "Death Smash",
+      "input": "3B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 47",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: .  when soul charged"
+      ]
+    },
+    {
+      "name": "~ Void Star",
+      "input": "3B8",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 47",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: . .  into VS"
+      ]
+    },
+    {
+      "name": "Shadow Buster",
+      "input": "2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Dark Soul Impact",
+      "input": "1B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 38",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 12%"
+      ]
+    },
+    {
+      "name": "Razor Edge",
+      "input": "4B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 52",
+        "Damage: 42",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Shadow Buster",
+      "input": "FCB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 20",
+        "Block: -10",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Will Crusher",
+      "input": "WRB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -22",
+        "Hit: LNC",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Will Crusher",
+      "input": "WRBB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18,21",
+        "Block: -18",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 15%",
+        "Notes: Normal Hit Combo. Tech Crouch"
+      ]
+    },
+    {
+      "name": "~ Vile Glare",
+      "input": "WRB6",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 18",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: STN",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch.  into VG"
+      ]
+    },
+    {
+      "name": "Fatal Buster",
+      "input": "7B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 26",
+        "Block: -6",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Fatal Buster",
+      "input": "8B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 29",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Fatal Buster",
+      "input": "9B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 32",
+        "Block: -6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Turning Sword Buster",
+      "input": "BTB",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 20",
+        "Block: -10",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Turning Shadow Buster",
+      "input": "BT2B",
+      "type": "Vertical Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Crushing Hell Storm",
+      "input": "K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 14",
+        "Damage: 18",
+        "Block: -8",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Adamantine Cracker",
+      "input": "6K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 17",
+        "Damage: 36",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: 9%",
+        "Notes: when soul charged"
+      ]
+    },
+    {
+      "name": "~ Vile Glare",
+      "input": "6K6",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 17",
+        "Damage: 36",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: .  into VG"
+      ]
+    },
+    {
+      "name": "Dark Middle Kick",
+      "input": "3K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 15",
+        "Damage: 16",
+        "Block: -9",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Dark Middle Kick",
+      "input": "3(K)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 34",
+        "Block: -4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Dark Low Kick",
+      "input": "2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Earth Trample",
+      "input": "1K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 15",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Earth Trample",
+      "input": "1(K)",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 30",
+        "Damage: 30",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Sinew Crusher",
+      "input": "4K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -14",
+        "Hit: 0",
+        "Counter: 8",
+        "Guard Burst: 2%"
+      ]
+    },
+    {
+      "name": "Sinew Crusher",
+      "input": "4KB",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -12",
+        "Hit: 0",
+        "Counter: 0",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Double Death Strike",
+      "input": "4KK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -7",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%",
+        "Notes: Counter Hit Combo."
+      ]
+    },
+    {
+      "name": "Dark Low Kick",
+      "input": "FCK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -14",
+        "Hit: -4",
+        "Counter: -4",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Phantom Knee",
+      "input": "WRK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 15",
+        "Damage: 24",
+        "Block: -6",
+        "Hit: 4",
+        "Counter: 4",
+        "Guard Burst: 2%",
+        "Notes: Tech Crouch"
+      ]
+    },
+    {
+      "name": "Fatal Brave Kick",
+      "input": "7K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: 6",
+        "Guard Burst: 1%",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Fatal Brave Kick",
+      "input": "8K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 1%",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Fatal Brave Kick",
+      "input": "9K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 24",
+        "Damage: 22",
+        "Block: -8",
+        "Hit: 6",
+        "Counter: KND",
+        "Guard Burst: 1%",
+        "Notes: Tech Jump"
+      ]
+    },
+    {
+      "name": "Turning Dark High Kick",
+      "input": "BTK",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 16",
+        "Block: -8",
+        "Hit: 2",
+        "Counter: 2",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Turning Dark Low Kick",
+      "input": "BT2K",
+      "type": "Kick Attacks",
+      "properties": [
+        "Impact: 18",
+        "Damage: 18",
+        "Block: -12",
+        "Hit: -2",
+        "Counter: -2",
+        "Guard Burst: 1%"
+      ]
+    },
+    {
+      "name": "Soul Wave",
+      "input": "A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 60",
+        "Damage: 72",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 15%",
+        "Notes: BA.  on impact counter"
+      ]
+    },
+    {
+      "name": "Roy D' Effrayeur",
+      "input": "6A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 113",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 16%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Roy D' Effrayeur",
+      "input": "6A+BB",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 22",
+        "Damage: 151",
+        "Block: 6",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 27%",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Soul Smasher",
+      "input": "2A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 15",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Soul Blaze",
+      "input": "4A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 66",
+        "Damage: 56",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: UA, Cancel with G"
+      ]
+    },
+    {
+      "name": "Roy D' Angolmois",
+      "input": "8A+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 91",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%",
+        "Notes: Tech Crouch. Tech Jump."
+      ]
+    },
+    {
+      "name": "Soul Wave (Ambush)",
+      "input": "BTA+B",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 36",
+        "Damage: 30",
+        "Block: -14",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 9%"
+      ]
+    },
+    {
+      "name": "Dark Bite",
+      "input": "BTB+K",
+      "type": "Multi Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 24",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 4%"
+      ]
+    },
+    {
+      "name": "Reign Of Doom",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 100",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Soul Devour",
+      "input": "4A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 55",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Doom's Invitation",
+      "input": "LEFT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 60",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Unholy Terror",
+      "input": "RIGHT SIDE THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 65",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Witch Hunt",
+      "input": "BACK THROWA+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 70",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Flap Jack",
+      "input": "FC3A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 30",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Over Toss",
+      "input": "FC1A+G",
+      "type": "Throws",
+      "properties": [
+        "Impact: 18",
+        "Damage: 30",
+        "Block: -16",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Insanity Storm",
+      "input": "(3)_(6)_(9)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 38",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Insanity Storm",
+      "input": "(3)_(6)_(9)AA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 38",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Vile Glare",
+      "input": "(3)_(6)_(9)A6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 28",
+        "Damage: 38",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: into VG"
+      ]
+    },
+    {
+      "name": "Death Rage",
+      "input": "(2)_(8)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 24",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Death Rage",
+      "input": "(2)_(8)AA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 24",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Counter Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Vile Glare",
+      "input": "(2)_(8)A6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 32",
+        "Damage: 24",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: into VG"
+      ]
+    },
+    {
+      "name": "Soul Gorge",
+      "input": "(1)_(4)_(7)A",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 22",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Soul Gorge",
+      "input": "(1)_(4)_(7)AA",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 22",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Ether Lord's Carnage",
+      "input": "(3)_(6)_(9)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 32",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Ether Lord's Carnage",
+      "input": "(3)_(6)_(9)BB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 32",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "~ Vile Glare",
+      "input": "(3)_(6)_(9)B6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 32",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: into VG"
+      ]
+    },
+    {
+      "name": "~ Void Star",
+      "input": "(3)_(6)_(9)BB8",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 20",
+        "Damage: 32",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo.  into VS"
+      ]
+    },
+    {
+      "name": "Rook Splitter",
+      "input": "(2)_(8)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 46",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: TS"
+      ]
+    },
+    {
+      "name": "~ Vile Glare",
+      "input": "(2)_(8)B6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 26",
+        "Damage: 46",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: TS.  into VG"
+      ]
+    },
+    {
+      "name": "Darkness Impact",
+      "input": "(1)_(7)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 40",
+        "Damage: 24",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Catastrophe's Call",
+      "input": "(4)B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 24",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Catastrophe's Call",
+      "input": "(4)BB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 24",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo"
+      ]
+    },
+    {
+      "name": "Catastrophe's Call",
+      "input": "(4)BBB",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 24",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo, Last hit"
+      ]
+    },
+    {
+      "name": "Grim Lord's Auto-da-fé",
+      "input": "(3)_(6)_(9)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Grim Lord's Auto-da-fé",
+      "input": "(3)_(6)_(9)KK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 12",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo. ."
+      ]
+    },
+    {
+      "name": "Bloody Lord's Invasion",
+      "input": "(2)_(8)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 40",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: , L quake at range"
+      ]
+    },
+    {
+      "name": "~ Void Star",
+      "input": "(2)_(8)K8",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 40",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: , L quake at range.  into VS"
+      ]
+    },
+    {
+      "name": "Jade Smasher",
+      "input": "(1)_(4)_(7)K",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 42",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "~ Vile Glare",
+      "input": "(1)_(4)_(7)K6",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 34",
+        "Damage: 42",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: .  into VG"
+      ]
+    },
+    {
+      "name": "Crimson Vortex",
+      "input": "(3)_(6)_(9)A+B",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: 31",
+        "Damage: 48",
+        "Block: -",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: 2nd hit only hits grounded"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "RUNK",
+      "type": "Run Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 26",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Tech Jump. Tech Crouch"
+      ]
+    },
+    {
+      "name": "Dire Vengeance",
+      "input": "6A6B6KA+BA+BA+B",
+      "type": "Dire Vengeance",
+      "properties": [
+        "Impact: -",
+        "Damage: 30",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: GI. BA."
+      ]
+    },
+    {
+      "name": "Dire Vengeance",
+      "input": "+6A6B6KA+BA+B(A)+(B)",
+      "type": "Dire Vengeance",
+      "properties": [
+        "Impact: -",
+        "Damage: 39",
+        "Block: 3",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Increased knockback. GI."
+      ]
+    },
+    {
+      "name": "Vile Glare",
+      "input": "236",
+      "type": "Vile Glare",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Grim Lord's Desolation",
+      "input": "VGA",
+      "type": "Vile Glare",
+      "properties": [
+        "Impact: 19",
+        "Damage: 16",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: [ H M"
+      ]
+    },
+    {
+      "name": "Grim Lord's Desolation",
+      "input": "VGAA",
+      "type": "Vile Glare",
+      "properties": [
+        "Impact: 19",
+        "Damage: 16",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Normal Hit Combo.  [ H M verticals]."
+      ]
+    },
+    {
+      "name": "Primordial Blood",
+      "input": "VGB",
+      "type": "Vile Glare",
+      "properties": [
+        "Impact: 16",
+        "Damage: 36",
+        "Block: 0",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Vile Sting",
+      "input": "VGK",
+      "type": "Vile Glare",
+      "properties": [
+        "Impact: 21",
+        "Damage: 26",
+        "Block: -22",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: Tech Jump. Tech Crouch"
+      ]
+    },
+    {
+      "name": "Judecca Flood",
+      "input": "VGA+B",
+      "type": "Vile Glare",
+      "properties": [
+        "Impact: -",
+        "Damage: 36",
+        "Block: 6",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Shadow Flare",
+      "input": "VGB+K",
+      "type": "Vile Glare",
+      "properties": [
+        "Impact: -",
+        "Damage: 32",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: UA"
+      ]
+    },
+    {
+      "name": "Void Star",
+      "input": "B+K",
+      "type": "Void Star",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: SS. Tech Crouch. Super Tech Jump"
+      ]
+    },
+    {
+      "name": "Traitor's Blast",
+      "input": "VSA",
+      "type": "Void Star",
+      "properties": [
+        "Impact: -",
+        "Damage: 40",
+        "Block: 4",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: BA. Super Tech Jump"
+      ]
+    },
+    {
+      "name": "Shadow Flare",
+      "input": "VSB",
+      "type": "Void Star",
+      "properties": [
+        "Impact: -",
+        "Damage: 32",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: UA. Super Tech Jump"
+      ]
+    },
+    {
+      "name": "Infernal Carnage",
+      "input": "VSK",
+      "type": "Void Star",
+      "properties": [
+        "Impact: -",
+        "Damage: 45",
+        "Block: -38",
+        "Hit: LNC",
+        "Counter: LNC",
+        "Guard Burst: -",
+        "Notes: Super Tech Jump"
+      ]
+    },
+    {
+      "name": "Crimson Gateway",
+      "input": "B+G",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 46",
+        "Damage: 40",
+        "Block: -8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: KND vs airborne.  [6-30]"
+      ]
+    },
+    {
+      "name": "Crimson Gateway",
+      "input": "+(B)+(G)",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: 66",
+        "Damage: 50",
+        "Block: 8",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: [6-50]"
+      ]
+    },
+    {
+      "name": "Fire Avalanche",
+      "input": "REA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 40",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: UA."
+      ]
+    },
+    {
+      "name": "Fire Avalanche",
+      "input": "REAA",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 66",
+        "Block: -",
+        "Hit: STN",
+        "Counter: STN",
+        "Guard Burst: -",
+        "Notes: UA."
+      ]
+    },
+    {
+      "name": "Incinerator",
+      "input": "REB",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 41",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: UA. BA."
+      ]
+    },
+    {
+      "name": "Despair Breeder",
+      "input": "REK",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: 61",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: UA. AT."
+      ]
+    },
+    {
+      "name": "Guard",
+      "input": "G",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -"
+      ]
+    },
+    {
+      "name": "Forward Step",
+      "input": "6",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Beats  A"
+      ]
+    },
+    {
+      "name": "Side Step",
+      "input": "2_8",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Beats  B"
+      ]
+    },
+    {
+      "name": "Back Step",
+      "input": "4",
+      "type": "Reversal Edge Attacks",
+      "properties": [
+        "Impact: -",
+        "Damage: -",
+        "Block: -",
+        "Hit: -",
+        "Counter: -",
+        "Guard Burst: -",
+        "Notes: Beats  K"
+      ]
+    },
+    {
+      "name": "Dark Reconquista: Purgatory",
       "input": "A+B+K",
-      "type": "Critical Edge"
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 37",
+        "Damage: 120",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: 10%"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Dark Reconquista: Purgatory",
+      "input": "++(A)+(B)+(K)",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 71",
+        "Damage: 150",
+        "Block: -",
+        "Hit: KND",
+        "Counter: KND",
+        "Guard Burst: -",
+        "Notes: ."
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Soul Charge",
+      "input": "4A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 6",
+        "Damage: 0",
+        "Block: 0",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: -",
+        "Notes: invincible since i4. Pushback happens at i6"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
-    },
-    {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
-    },
-    {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
-    },
-    {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Annihilation Bringer",
+      "input": "236A+B+K",
+      "type": "Gauge Attacks",
+      "properties": [
+        "Impact: 16",
+        "Damage: 37",
+        "Block: -6",
+        "Hit: 8",
+        "Counter: 8",
+        "Guard Burst: 9%"
+      ]
     }
   ]
 }

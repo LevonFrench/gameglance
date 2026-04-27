@@ -1,76 +1,598 @@
 {
+  "name": "Hilde",
   "character": "Hilde",
+  "game": "SoulCalibur V",
   "movesList": [
     {
-      "name": "Storm and Urge",
-      "input": "A+B+K",
-      "type": "Critical Edge"
+      "name": "Fire Slash",
+      "input": "AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH"
+      ]
     },
     {
-      "name": "Eagle Rush",
-      "input": "[A]",
-      "type": "Charge"
+      "name": "Crawling Flame",
+      "input": "6AKA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HML"
+      ]
     },
     {
-      "name": "Crimson Spear",
-      "input": "[B]",
-      "type": "Charge"
+      "name": "Climing Flame",
+      "input": "6AKB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HMM"
+      ]
     },
     {
-      "name": "Royal Strike",
-      "input": "66B",
-      "type": "Move"
+      "name": "Aerial Power",
+      "input": "3A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M",
+        "Other: GI vs M, extend on Counter"
+      ]
+    },
+    {
+      "name": "Aerial Power (BA)",
+      "input": "3(A)",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M",
+        "Other: GI vs M"
+      ]
+    },
+    {
+      "name": "Fire Shadow",
+      "input": "2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Blazing Shadow",
+      "input": "1A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Fire Flash",
+      "input": "4AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH"
+      ]
+    },
+    {
+      "name": "Thundering Volcano",
+      "input": "FC A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Rising Fire",
+      "input": "WR A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Burning Blade",
+      "input": "WJ A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Back Slash",
+      "input": "BT A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Back Low Slash",
+      "input": "BT 2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Mystic Star (stage 1)",
+      "input": "C1A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Mystic Star (stage 2)",
+      "input": "C2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Mystic Star (stage 3)",
+      "input": "C3A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: MM",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Mystic Star (stage 4)",
+      "input": "C4A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Roaring Horn",
+      "input": "BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
     },
     {
       "name": "Lightning Horn",
-      "input": "6B, B, B",
-      "type": "Move"
+      "input": "6BBB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: HMH"
+      ]
     },
     {
       "name": "White Torch",
-      "input": "3B, A",
-      "type": "Move"
+      "input": "3BA",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MH"
+      ]
+    },
+    {
+      "name": "White Impale",
+      "input": "3BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Glorious Hammer",
+      "input": "2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "White Stone",
+      "input": "1B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Piercing Horn",
+      "input": "4B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Crown Split",
+      "input": "FC B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Wind Horn",
+      "input": "WR B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Leaping Strike",
+      "input": "WJ B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Back Horn",
+      "input": "BT B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Back Low Horn",
+      "input": "BT 2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Moonlit Dance (stage 1)",
+      "input": "C1B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Moonlit Dance (stage 2)",
+      "input": "C2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Moonlit Dance (stage 3)",
+      "input": "C3BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MMH"
+      ]
+    },
+    {
+      "name": "Moonlit Dance (stage 4)",
+      "input": "C4B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Iron Kick",
+      "input": "K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Iron Heel",
+      "input": "6K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Metal Kick",
+      "input": "3K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Shadow Kick",
+      "input": "2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
     },
     {
       "name": "Double Kick",
-      "input": "1K, K",
-      "type": "Move"
+      "input": "1KK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: LM"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Twister",
+      "input": "4KK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: HL"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Shadow Kick",
+      "input": "FC K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Drill Knee",
+      "input": "WR K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "Tornado Kick",
+      "input": "WJ K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Back Kick",
+      "input": "BT K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Back Low Kick",
+      "input": "BT 2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Double Falcon",
+      "input": "A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Double Falcon (BA)",
+      "input": "(A+B)",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Royal Windmill",
+      "input": "6A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Golden Heart",
+      "input": "2A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Iron Tower",
+      "input": "B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Roaring Fang",
+      "input": "2B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Back Assault",
+      "input": "BT B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Lightning Fire",
+      "input": "66A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Lightning Volcano",
+      "input": "22_88AA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MH"
+      ]
+    },
+    {
+      "name": "Fire Strike",
+      "input": "11_77A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Hilt Strike",
+      "input": "44A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Hilt Crush",
+      "input": "66B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Power Declared",
+      "input": "22_88B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Peregrine Falcon",
+      "input": "44B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Knee Assault",
+      "input": "66K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Crescent Leg",
+      "input": "22_88K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sickle Kick",
+      "input": "44K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Bolt from the Sky",
+      "input": "66A+B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Sliding Kick",
+      "input": "Run K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Devine Bolt",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "March of Triumph",
+      "input": "B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Royal Seal",
+      "input": "Right TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Victorious Ruler",
+      "input": "Left TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Road to Glory",
+      "input": "Back TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "White Monument",
+      "input": "3B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Red Stone",
+      "input": "66B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: HM",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Heart of Justice",
+      "input": "A+G BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Storm and Urge",
+      "input": "CE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: M"
+      ]
     }
   ]
 }

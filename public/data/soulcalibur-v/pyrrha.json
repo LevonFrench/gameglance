@@ -1,66 +1,747 @@
 {
+  "name": "Pyrrha",
   "character": "Pyrrha",
+  "game": "SoulCalibur V",
   "movesList": [
     {
-      "name": "Trinity Strike",
-      "input": "A+B+K",
-      "type": "Critical Edge"
+      "name": "Slide Flow",
+      "input": "AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HH"
+      ]
     },
     {
-      "name": "Angel's Strike",
-      "input": "236B",
-      "type": "Move"
+      "name": "Slide Knee",
+      "input": "AK",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HM"
+      ]
     },
     {
-      "name": "Angel's Wings",
-      "input": "623B",
-      "type": "Move"
+      "name": "Timit Hilt",
+      "input": "6A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "name": "Shield Uppercut",
+      "name": "Angel Punisher",
+      "input": "3A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Under Slide Blade",
+      "input": "2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Gleaming Satellite",
+      "input": "1AA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: LM"
+      ]
+    },
+    {
+      "name": "Cutlass Europa",
+      "input": "4AAA",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HLM"
+      ]
+    },
+    {
+      "name": "Cutlass Titan",
+      "input": "4AB",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: HM"
+      ]
+    },
+    {
+      "name": "Under Slide Blade",
+      "input": "FC A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Full Turn Blade",
+      "input": "WR A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Jumping Mirage Satellite",
+      "input": "WJ A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Flipside Slide Blade",
+      "input": "BT A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Flipside Under Slide Blade",
+      "input": "BT 2A",
+      "type": "Horizontals",
+      "properties": [
+        "Hit: SL"
+      ]
+    },
+    {
+      "name": "Ascend Splash",
+      "input": "BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Angel's Flow",
+      "input": "BK",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MH"
+      ]
+    },
+    {
+      "name": "Tap and Tornade",
+      "input": "6BK",
+      "type": "Verticals",
+      "properties": [
+        "Hit: HL"
+      ]
+    },
+    {
+      "name": "Heaven's Misery",
       "input": "3B",
-      "type": "Move"
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Guardian Strike",
+      "input": "2BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "~ Miserable Fate",
+      "input": "2BB4",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM",
+        "Other: AT"
+      ]
+    },
+    {
+      "name": "~ Evangelic Fate",
+      "input": "2BB:4",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM",
+        "Other: AT"
+      ]
     },
     {
       "name": "Under Splash",
-      "input": "2A+B",
-      "type": "Move"
+      "input": "1B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_0",
-      "name": "Left Punch",
-      "type": "normal",
-      "input": "1"
+      "name": "Elk Strike",
+      "input": "4B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: H"
+      ]
     },
     {
-      "id": "n_1",
-      "name": "Right Punch",
-      "type": "normal",
-      "input": "2"
+      "name": "Under Splash",
+      "input": "FC B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
     },
     {
-      "id": "n_2",
-      "name": "Left Kick",
-      "type": "normal",
-      "input": "3"
+      "name": "Guardian Strike",
+      "input": "FC 1BB",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM"
+      ]
     },
     {
-      "id": "n_3",
-      "name": "Right Kick",
-      "type": "normal",
-      "input": "4"
+      "name": "~ Miserable Fate",
+      "input": "FC 1BB4",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM",
+        "Other: AT"
+      ]
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "~ Evangelic Fate",
+      "input": "FC 1BB:4",
+      "type": "Verticals",
+      "properties": [
+        "Hit: MM",
+        "Other: AT"
+      ]
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "2+4"
+      "name": "Full Turn Heaven",
+      "input": "WR B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Jumping Under Splash",
+      "input": "WJ B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Flipside Sword Splash",
+      "input": "BT B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Flipside Under Splash",
+      "input": "BT 2B",
+      "type": "Verticals",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Holy High Kick",
+      "input": "K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Trepid Punish Kick",
+      "input": "6K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Fragile Crusher",
+      "input": "3KK",
+      "type": "Kicks",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Spring Under Kick",
+      "input": "2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Tornade Low Heel",
+      "input": "1K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Moderate Low Heel",
+      "input": "4K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Spring Under Kick",
+      "input": "FC K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Rising Temple",
+      "input": "WR K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Holy Crest Kick",
+      "input": "WJ K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Flipside High Kick",
+      "input": "BT K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Flipside Spring Under Kick",
+      "input": "BT 2K",
+      "type": "Kicks",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "El Fortune",
+      "input": "A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Other: GI vs M (except thrusts)"
+      ]
+    },
+    {
+      "name": "Twin Step Grace",
+      "input": "3A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Mirage Satellite",
+      "input": "WR A+B",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Mirage Satellite",
+      "input": "WR (A+B)",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Guardian Upper",
+      "input": "WR B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Temperance Strike",
+      "input": "B+KB",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "~ Miserable Fate",
+      "input": "B+KB4",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: AT"
+      ]
+    },
+    {
+      "name": "~ Evangelic Fate",
+      "input": "B+KB:4",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: MM",
+        "Other: AT"
+      ]
+    },
+    {
+      "name": "Quick Strike",
+      "input": "6B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Desperate Impale",
+      "input": "2B+KBBB",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: LLLL"
+      ]
+    },
+    {
+      "name": "Heaven's Gate",
+      "input": "4B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M",
+        "Other: UA"
+      ]
+    },
+    {
+      "name": "Ultimate Ultimate Gaia Tremor",
+      "input": "8B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: SM/L",
+        "Other: Shockwave hits L"
+      ]
+    },
+    {
+      "name": "Ultimate Gaia Tremor",
+      "input": "8(B+K)",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M/L",
+        "Other: UA, shockwave blockable"
+      ]
+    },
+    {
+      "name": "Hip Charge",
+      "input": "BT B+K",
+      "type": "Simultaneous Press Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Angel Crucify",
+      "input": "66A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Shield Rush",
+      "input": "22A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Inverse Shield Rush",
+      "input": "88A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Star-Crossed Satellite",
+      "input": "11_77AA",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: LM"
+      ]
+    },
+    {
+      "name": "Star-Crossed Satellite",
+      "input": "11_77A(A)",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: LM",
+        "Other: BA"
+      ]
+    },
+    {
+      "name": "Reverse Mirage",
+      "input": "44A",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M",
+        "Other: Extends on counter hit"
+      ]
+    },
+    {
+      "name": "Angelic Meteor",
+      "input": "66B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Ascension",
+      "input": "33_99 B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Guardian's Judgment",
+      "input": "22_88BAK",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MMM"
+      ]
+    },
+    {
+      "name": "Guardian Upper",
+      "input": "44B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Plasma Blade",
+      "input": "66K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Gleaming Twister Kick",
+      "input": "22_88K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: H"
+      ]
+    },
+    {
+      "name": "Gleaming Twister Low Kick",
+      "input": "22_88kK",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Angel Stroke",
+      "input": "44KAB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MMLM"
+      ]
+    },
+    {
+      "name": "Angel Fall",
+      "input": "44KB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MMM"
+      ]
+    },
+    {
+      "name": "Twin Step Grace",
+      "input": "66A+B",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Jet Stream Rush",
+      "input": "66B+KAB",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: MHM"
+      ]
+    },
+    {
+      "name": "Olympus Shower",
+      "input": "44_22_88B+K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Sliding",
+      "input": "Run K",
+      "type": "8-Way Run Moves",
+      "properties": [
+        "Hit: L"
+      ]
+    },
+    {
+      "name": "Widow Maker",
+      "input": "A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Holy Carnivore",
+      "input": "B+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Round Knocker",
+      "input": "Left TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Broken Promise",
+      "input": "Right TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Bottoms Up",
+      "input": "Back TH",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Heaven's Rider",
+      "input": "66A+G",
+      "type": "Throws",
+      "properties": [
+        "Hit: H",
+        "Other: TH"
+      ]
+    },
+    {
+      "name": "Angel Step",
+      "input": "236",
+      "type": "Special Stances",
+      "properties": [
+        "Other: SS"
+      ]
+    },
+    {
+      "name": "Luminous Angel",
+      "input": "AS AA",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: ML"
+      ]
+    },
+    {
+      "name": "Angel's Strike",
+      "input": "AS B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "~ Miserable Fate",
+      "input": "AS B4B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: AT"
+      ]
+    },
+    {
+      "name": "~ Evangelic Fate",
+      "input": "AS B4:B",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M",
+        "Other: AT"
+      ]
+    },
+    {
+      "name": "Twin Step Somersault",
+      "input": "AS K",
+      "type": "Special Stances",
+      "properties": [
+        "Hit: M"
+      ]
+    },
+    {
+      "name": "Cutlass Seraphim",
+      "input": "4AAA BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: HLML"
+      ]
+    },
+    {
+      "name": "Seraphim Meteor",
+      "input": "66B BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MM"
+      ]
+    },
+    {
+      "name": "Luminous Seraph",
+      "input": "AS AA BE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MLM"
+      ]
+    },
+    {
+      "name": "Trinity Strike",
+      "input": "CE",
+      "type": "Edge Attacks",
+      "properties": [
+        "Hit: MMM"
+      ]
     }
   ]
 }
