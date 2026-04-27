@@ -4,62 +4,352 @@
   "game": "Killer Instinct (2013)",
   "movesList": [
     {
-      "name": "Flame Breath",
-      "input": "236P",
-      "type": "common"
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "input": "5LP",
+      "id": "n_0"
+    },
+    {
+      "name": "Far Standing Medium Punch",
+      "type": "normal",
+      "input": "5MP",
+      "id": "n_1"
+    },
+    {
+      "name": "Far Standing Heavy Punch",
+      "type": "normal",
+      "input": "5HP",
+      "id": "n_2"
+    },
+    {
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "input": "5LK",
+      "id": "n_3"
+    },
+    {
+      "name": "Far Standing Medium Kick",
+      "type": "normal",
+      "input": "5MK",
+      "id": "n_4"
+    },
+    {
+      "name": "Far Standing Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "id": "n_5"
+    },
+    {
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "input": "2LP",
+      "id": "n_6"
+    },
+    {
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "input": "2MP",
+      "id": "n_7"
+    },
+    {
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "input": "2HP",
+      "id": "n_8"
+    },
+    {
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "input": "2LK",
+      "id": "n_9"
+    },
+    {
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "input": "2MK",
+      "id": "n_10"
+    },
+    {
+      "name": "Crouching Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "id": "n_11"
+    },
+    {
+      "name": "Close Medium Punch",
+      "type": "normal",
+      "input": "5MP",
+      "id": "n_12"
+    },
+    {
+      "name": "Close Heavy Punch",
+      "type": "normal",
+      "input": "5HP",
+      "id": "n_13"
+    },
+    {
+      "name": "Close Medium Kick",
+      "type": "normal",
+      "input": "5MK",
+      "id": "n_14"
+    },
+    {
+      "name": "Close Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "id": "n_15"
+    },
+    {
+      "name": "Back Heavy Punch",
+      "type": "special",
+      "input": "4HP",
+      "id": "s_16"
+    },
+    {
+      "name": "Flame Carpet",
+      "type": "special",
+      "input": "1HP",
+      "id": "s_17"
+    },
+    {
+      "name": "Flame Mortar",
+      "type": "special",
+      "input": "PPP",
+      "id": "s_18"
+    },
+    {
+      "name": "Stand Heavy Punch 2",
+      "type": "special",
+      "input": "5HP>HP>HP",
+      "id": "s_19"
+    },
+    {
+      "name": "Crouch Heavy Punch 2",
+      "type": "special",
+      "input": "2HP>HP>HP",
+      "id": "s_20"
+    },
+    {
+      "name": "Back Heavy Punch 2",
+      "type": "special",
+      "input": "4HP>HP",
+      "id": "s_21"
+    },
+    {
+      "name": "Flame Breath 3",
+      "type": "special",
+      "input": "HP>HP>HP",
+      "id": "s_22"
+    },
+    {
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "input": "8LP",
+      "id": "n_23"
+    },
+    {
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "input": "8MP",
+      "id": "n_24"
+    },
+    {
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "input": "8HP",
+      "id": "n_25"
+    },
+    {
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "input": "8LK",
+      "id": "n_26"
+    },
+    {
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "input": "8MK",
+      "id": "n_27"
+    },
+    {
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "input": "8HK",
+      "id": "n_28"
+    },
+    {
+      "name": "Flame",
+      "type": "special",
+      "input": "66HP",
+      "id": "s_29"
+    },
+    {
+      "name": "Tail Slap",
+      "type": "special",
+      "input": "66HK",
+      "id": "s_30"
+    },
+    {
+      "name": "Flame Wall",
+      "type": "special",
+      "input": "44HP",
+      "id": "s_31"
+    },
+    {
+      "name": "Tail Fling",
+      "type": "special",
+      "input": "44HK",
+      "id": "s_32"
+    },
+    {
+      "name": "Shin Bites",
+      "type": "special",
+      "input": "Predator Stance LP",
+      "id": "s_33"
+    },
+    {
+      "name": "Ankle Bite",
+      "type": "special",
+      "input": "Predator Stance MP",
+      "id": "s_34"
+    },
+    {
+      "name": "Flame Smash",
+      "type": "special",
+      "input": "Predator Stance HP",
+      "id": "s_35"
+    },
+    {
+      "name": "Flame Arc",
+      "type": "special",
+      "input": "Predator Stance 66HP",
+      "id": "s_36"
+    },
+    {
+      "name": "Toe Tap",
+      "type": "special",
+      "input": "Predator Stance LK",
+      "id": "s_37"
+    },
+    {
+      "name": "Tail Stings",
+      "type": "special",
+      "input": "Predator Stance MK",
+      "id": "s_38"
+    },
+    {
+      "name": "Tail Whip",
+      "type": "special",
+      "input": "Predator Stance HK",
+      "id": "s_39"
+    },
+    {
+      "name": "Throw",
+      "type": "throw",
+      "input": "5LPLK",
+      "id": "t_40"
+    },
+    {
+      "name": "Run Throw",
+      "type": "throw",
+      "input": "66LPLK",
+      "id": "t_41"
+    },
+    {
+      "name": "Shoulder Charge",
+      "type": "special",
+      "input": "46P",
+      "id": "s_42"
+    },
+    {
+      "name": "Clever Girl",
+      "type": "special",
+      "input": "214P",
+      "id": "s_43"
     },
     {
       "name": "Talon Rake",
+      "type": "special",
+      "input": "46K",
+      "id": "s_44"
+    },
+    {
+      "name": "TR Flame",
+      "type": "special",
+      "input": "46K>P",
+      "id": "s_45"
+    },
+    {
+      "name": "TR Flip",
+      "type": "special",
+      "input": "46K>K",
+      "id": "s_46"
+    },
+    {
+      "name": "Tail Flip",
+      "type": "special",
       "input": "214K",
-      "type": "common"
+      "id": "s_47"
     },
     {
-      "id": "n_0",
-      "name": "Light Punch",
-      "type": "normal",
-      "input": "LP"
+      "name": "Air Tail Flip",
+      "type": "special",
+      "input": "8214K",
+      "id": "s_48"
     },
     {
-      "id": "n_1",
-      "name": "Medium Punch",
-      "type": "normal",
-      "input": "MP"
+      "name": "Shadow Shoulder Charge",
+      "type": "special",
+      "input": "46PP",
+      "id": "s_49"
     },
     {
-      "id": "n_2",
-      "name": "Heavy Punch",
-      "type": "normal",
-      "input": "HP"
+      "name": "Shadow Clever Girl",
+      "type": "special",
+      "input": "214PP",
+      "id": "s_50"
     },
     {
-      "id": "n_3",
-      "name": "Light Kick",
-      "type": "normal",
-      "input": "LK"
+      "name": "Shadow Talon Rake",
+      "type": "special",
+      "input": "46KK",
+      "id": "s_51"
     },
     {
-      "id": "n_4",
-      "name": "Medium Kick",
-      "type": "normal",
-      "input": "MK"
+      "name": "Shadow Tail Flip",
+      "type": "special",
+      "input": "214KK",
+      "id": "s_52"
     },
     {
-      "id": "n_5",
-      "name": "Heavy Kick",
-      "type": "normal",
-      "input": "HK"
+      "name": "Shadow Air Tail Flip",
+      "type": "special",
+      "input": "8214KK",
+      "id": "s_53"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "LP+LK"
+      "name": "Shoulder Charge Ender",
+      "type": "special",
+      "input": "46HP",
+      "id": "s_54"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "4LP+LK"
+      "name": "Clever Girl Ender",
+      "type": "special",
+      "input": "214P",
+      "id": "s_55"
+    },
+    {
+      "name": "Talon Rake Ender",
+      "type": "special",
+      "input": "46HK",
+      "id": "s_56"
+    },
+    {
+      "name": "Tail Flip Ender",
+      "type": "special",
+      "input": "214K",
+      "id": "s_57"
     }
   ]
 }

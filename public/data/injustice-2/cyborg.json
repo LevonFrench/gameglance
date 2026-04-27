@@ -1,63 +1,885 @@
 {
+  "id": "cyborg",
   "name": "Cyborg",
-  "character": "Cyborg",
-  "game": "Injustice 2",
   "movesList": [
     {
-      "name": "Nova Blast",
-      "input": "461",
-      "type": "special"
-    },
-    {
-      "name": "Power Fist",
-      "input": "242",
-      "type": "special"
-    },
-    {
-      "name": "Techno Tackle",
-      "input": "463",
-      "type": "special"
-    },
-    {
-      "name": "Sonic Disruptor",
-      "input": "241",
-      "type": "special"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "microchip",
+      "name": "Microchip",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "cross-swipe",
+      "name": "Cross Swipe",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "low-jammer",
+      "name": "Low Jammer",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "power-knee",
+      "name": "Power Knee",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "drone-kick",
+      "name": "Drone Kick",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cyber-kick",
+      "name": "Cyber Kick",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "instant-strike",
+      "name": "Instant Strike",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "jaw-breaker",
+      "name": "Jaw Breaker",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "left-field",
+      "name": "Left Field",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "touchdown",
+      "name": "Touchdown",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cyber-trip",
+      "name": "Cyber Trip",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "steel-drop",
+      "name": "Steel Drop",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "photon-kick",
+      "name": "Photon Kick",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "serious-slam",
+      "name": "Serious Slam",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "left-field",
+      "name": "Left Field",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "touchdown",
+      "name": "Touchdown",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "android",
+      "name": "Android",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "hybrid",
+      "name": "Hybrid",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "comeback",
+      "name": "Comeback",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "chrome-plated",
+      "name": "Chrome Plated",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "man-within",
+      "name": "Man Within",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2",
+        ">",
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "stable-core",
+      "name": "Stable Core",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "total-meltdown",
+      "name": "Total Meltdown",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "cyber-attack",
+      "name": "Cyber Attack",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "blowout",
+      "name": "Blowout",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "3",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "sideline",
+      "name": "Sideline",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "nova-blaster",
+      "name": "Nova Blaster",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--nova-blaster",
+      "name": "(Air) Nova Blaster",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "up-nova-blaster",
+      "name": "Up Nova Blaster",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--down-nova-blaster",
+      "name": "(Air) Down Nova Blaster",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "sonic-disruptor",
+      "name": "Sonic Disruptor",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "up-sonic-disruptor",
+      "name": "Up Sonic Disruptor",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "2",
+        "up"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "power-fist",
+      "name": "Power Fist",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cybernetic-sweep",
+      "name": "Cybernetic Sweep",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "techno-tackle",
+      "name": "Techno Tackle",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "target-acquired",
+      "name": "Target Acquired",
+      "type": "special",
+      "input": [
+        "down",
+        "down",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "close-target-acquired",
+      "name": "Close Target Acquired",
+      "type": "special",
+      "input": [
+        "down",
+        "down",
+        "3",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "far-target-acquired",
+      "name": "Far Target Acquired",
+      "type": "special",
+      "input": [
+        "down",
+        "down",
+        "3",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "black-grapple",
+      "name": "Black Grapple",
+      "type": "special",
+      "input": [
+        "down",
+        "Up-left"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "forward-grapple",
+      "name": "Forward Grapple",
+      "type": "special",
+      "input": [
+        "down",
+        "Up-right"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "apokolips",
+      "name": "Apokolips",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "front-air-drone",
+      "name": "Front Air Drone",
+      "type": "special",
+      "input": [
+        "4"
+      ],
+      "category": "Power of the Mother Box"
+    },
+    {
+      "id": "behind-air-drone",
+      "name": "Behind Air Drone",
+      "type": "special",
+      "input": [
+        "4",
+        "back"
+      ],
+      "category": "Power of the Mother Box"
+    },
+    {
+      "id": "behind-land-drone",
+      "name": "Behind Land Drone",
+      "type": "special",
+      "input": [
+        "4",
+        "down"
+      ],
+      "category": "Power of the Mother Box"
+    },
+    {
+      "id": "front-land-drone",
+      "name": "Front Land Drone",
+      "type": "special",
+      "input": [
+        "4",
+        "forward"
+      ],
+      "category": "Power of the Mother Box"
     }
   ]
 }

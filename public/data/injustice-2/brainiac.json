@@ -1,58 +1,674 @@
 {
+  "id": "brainiac",
   "name": "Brainiac",
-  "character": "Brainiac",
-  "game": "Injustice 2",
   "movesList": [
     {
-      "name": "Tendril Harpoon",
-      "input": "461",
-      "type": "special"
-    },
-    {
-      "name": "Divekick",
-      "input": "243",
-      "type": "special"
-    },
-    {
-      "name": "Cybernetic Charge",
-      "input": "462",
-      "type": "special"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "cyber-strike",
+      "name": "Cyber Strike",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "tendril-slap",
+      "name": "Tendril Slap",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "flick-kick",
+      "name": "Flick Kick",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "forward",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "doom-strike",
+      "name": "Doom Strike",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "Down-right",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "knee-breaker",
+      "name": "Knee Breaker",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "upgraded-swipe",
+      "name": "Upgraded Swipe",
+      "type": "normal",
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "dual-strike",
+      "name": "Dual Strike",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "lunging-punch",
+      "name": "Lunging Punch",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "tendril-flurry",
+      "name": "Tendril Flurry",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "tendril-swarm",
+      "name": "Tendril Swarm",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "haptic-flip",
+      "name": "Haptic Flip",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "tendril-smash",
+      "name": "Tendril Smash",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "tendril-trip",
+      "name": "Tendril Trip",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "tendril-push",
+      "name": "Tendril Push",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "tendril-cage",
+      "name": "Tendril Cage",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "tendril-slam",
+      "name": "Tendril Slam",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "haptic-flip",
+      "name": "Haptic Flip",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "tendril-smash",
+      "name": "Tendril Smash",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "coluan-form",
+      "name": "Coluan Form",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "perfection",
+      "name": "Perfection",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "collector-of-worlds",
+      "name": "Collector of Worlds",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "12th-level-intelligence",
+      "name": "12th-Level Intelligence",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2",
+        ">",
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "c-o-m-p-u-t-o",
+      "name": "C.O.M.P.U.T.O",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "sleeper-virus",
+      "name": "Sleeper Virus",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "godlike",
+      "name": "Godlike",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "quil-dox",
+      "name": "Quil Dox",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "living-metal",
+      "name": "Living Metal",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "3",
+        ">",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "mind2",
+      "name": "Mind2",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "man-of-tomorrow",
+      "name": "Man of Tomorrow",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "panic-in-the-sky",
+      "name": "Panic In The Sky",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "down",
+        "+",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "machine-world",
+      "name": "Machine-World",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "-air--tendril-swing",
+      "name": "(Air) Tendril Swing",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--close-tendril-swing",
+      "name": "(Air) Close Tendril Swing",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--far-tendril-swing",
+      "name": "(Air) Far Tendril Swing",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "dox-drill",
+      "name": "Dox Drill",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "tendril-thrash",
+      "name": "Tendril Thrash",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--pneumenoid-drive",
+      "name": "(Air) Pneumenoid Drive",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cybernetic-charge",
+      "name": "Cybernetic Charge",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "skull-ship",
+      "name": "Skull Ship",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "beta-strike",
+      "name": "Beta Strike",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Beta Barrage"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4"
+      ],
+      "category": "Beta Barrage"
+    },
+    {
+      "id": "beta-bomb",
+      "name": "Beta Bomb",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "4"
+      ],
+      "category": "Beta Barrage"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4"
+      ],
+      "category": "Beta Barrage"
     }
   ]
 }

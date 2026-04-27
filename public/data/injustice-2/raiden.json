@@ -1,53 +1,944 @@
 {
+  "id": "raiden",
   "name": "Raiden",
-  "character": "Raiden",
-  "game": "Injustice 2",
   "movesList": [
     {
-      "name": "Electric Fly",
-      "input": "463",
-      "type": "special"
-    },
-    {
-      "name": "Lightning Bolt",
-      "input": "241",
-      "type": "special"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "quick-zap",
+      "name": "Quick Zap",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "head-swipe",
+      "name": "Head Swipe",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "forward",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "elder-kick",
+      "name": "Elder Kick",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "low-pulse",
+      "name": "Low Pulse",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "quick-shock",
+      "name": "Quick Shock",
+      "type": "normal",
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "stepping-fist",
+      "name": "Stepping Fist",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "rising-thunder",
+      "name": "Rising Thunder",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "side-kick",
+      "name": "Side Kick",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "sudden-burst",
+      "name": "Sudden Burst",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "immortal-strikes",
+      "name": "Immortal Strikes",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "low-kick",
+      "name": "Low Kick",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "roaring-strike",
+      "name": "Roaring Strike",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "heavy-chop",
+      "name": "Heavy Chop",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "elder-boot",
+      "name": "Elder Boot",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "sudden-burst",
+      "name": "Sudden Burst",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "immortal-strikes",
+      "name": "Immortal Strikes",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "rolling-thunder",
+      "name": "Rolling Thunder",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "heavenly--hands",
+      "name": "Heavenly  Hands",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "extend",
+      "name": "Extend",
+      "type": "combo",
+      "input": [
+        "Hold",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "thunder-cloud",
+      "name": "Thunder Cloud",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "2",
+        ">",
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "extend",
+      "name": "Extend",
+      "type": "combo",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "sudden-energy",
+      "name": "Sudden Energy",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "god-fist",
+      "name": "God Fist",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "rising-lightning",
+      "name": "Rising Lightning",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "extend",
+      "name": "Extend",
+      "type": "combo",
+      "input": [
+        "Hold",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "elder-fury",
+      "name": "Elder Fury",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "extend",
+      "name": "Extend",
+      "type": "combo",
+      "input": [
+        "Hold",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "temple-kick",
+      "name": "Temple Kick",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "supercell",
+      "name": "Supercell",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "god-s-rage",
+      "name": "God's Rage",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "1",
+        ">",
+        "2",
+        ">",
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "extend",
+      "name": "Extend",
+      "type": "combo",
+      "input": [
+        "Hold",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "all-powerful",
+      "name": "All Powerful",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "1",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "almighty",
+      "name": "Almighty",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "1",
+        ">",
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "bright-spark",
+      "name": "Bright Spark",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "heavy-thunder",
+      "name": "Heavy Thunder",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "1",
+        ">",
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "distant-thunder",
+      "name": "Distant Thunder",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "1",
+        ">",
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "downpour",
+      "name": "Downpour",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "heavy-hurricane",
+      "name": "Heavy Hurricane",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "violent-thunder",
+      "name": "Violent Thunder",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "lightning-storm",
+      "name": "Lightning Storm",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "extend",
+      "name": "Extend",
+      "type": "combo",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "flash-storm",
+      "name": "Flash Storm",
+      "type": "combo",
+      "input": [
+        "3",
+        ">",
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "extend",
+      "name": "Extend",
+      "type": "combo",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "supernatural",
+      "name": "Supernatural",
+      "type": "combo",
+      "input": [
+        "3",
+        ">",
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "lightning-bolt",
+      "name": "Lightning Bolt",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "stop-bolt",
+      "name": "Stop Bolt",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "electrocute",
+      "name": "Electrocute",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "vicinity-blast",
+      "name": "Vicinity Blast",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "extend",
+      "name": "Extend",
+      "type": "special",
+      "input": [
+        "Hold",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "electric-fly",
+      "name": "Electric Fly",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--electric-fly",
+      "name": "(Air) Electric Fly",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "sparkport",
+      "name": "Sparkport",
+      "type": "special",
+      "input": [
+        "down",
+        "up"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "in-front-sparkport",
+      "name": "In Front Sparkport",
+      "type": "special",
+      "input": [
+        "down",
+        "up",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "in-place-sparkport",
+      "name": "In Place Sparkport",
+      "type": "special",
+      "input": [
+        "down",
+        "up",
+        "down"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "far-sparkport",
+      "name": "Far Sparkport",
+      "type": "special",
+      "input": [
+        "down",
+        "up",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "power-surge",
+      "name": "Power Surge",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "high-voltage",
+      "name": "High Voltage",
+      "type": "special",
+      "input": [
+        "4"
+      ],
+      "category": "Power of The Thunder God"
     }
   ]
 }

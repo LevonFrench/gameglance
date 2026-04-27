@@ -1,0 +1,731 @@
+{
+  "id": "atom",
+  "name": "Atom",
+  "movesList": [
+    {
+      "id": "rad-jab",
+      "name": "Rad Jab",
+      "type": "normal",
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "micro-step",
+      "name": "Micro Step",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "proton-punch",
+      "name": "Proton Punch",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "ion-strike",
+      "name": "Ion Strike",
+      "type": "normal",
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "double-pose",
+      "name": "Double Pose",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "photon-phists",
+      "name": "Photon Phists",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "beta-bash",
+      "name": "Beta Bash",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "curie-kick",
+      "name": "Curie Kick",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "atomic-blast",
+      "name": "Atomic Blast",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "fission-fist",
+      "name": "Fission Fist",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "chemistry-kick",
+      "name": "Chemistry Kick",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "joule-jab",
+      "name": "Joule Jab",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "micro-slam",
+      "name": "Micro Slam",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "iso-kick",
+      "name": "Iso Kick",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
+      "name": "Back Throw",
+      "type": "throw",
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "atomic-blast",
+      "name": "Atomic Blast",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "fission-fist",
+      "name": "Fission Fist",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "doesn-t-matter",
+      "name": "Doesn't Matter",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "over-exposed",
+      "name": "Over Exposed",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "take-a-cell-fie",
+      "name": "Take a Cell-Fie",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "ion-you",
+      "name": "Ion You",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "element-of-surprise",
+      "name": "Element of Surprise",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "micro-aggression",
+      "name": "Micro Aggression",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "staying-positive",
+      "name": "Staying Positive",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "up-and-atom",
+      "name": "Up And Atom",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "periodically-wrong",
+      "name": "Periodically Wrong",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "overreacting",
+      "name": "Overreacting",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "atomizer",
+      "name": "Atomizer",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "proton-port",
+      "name": "Proton Port",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--proton-port",
+      "name": "(Air) Proton Port",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "fermion-fury",
+      "name": "Fermion Fury",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--defying-gravity",
+      "name": "(Air) Defying Gravity",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "catalyst-chaos",
+      "name": "Catalyst Chaos",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "far-catalyst-chaos",
+      "name": "Far Catalyst Chaos",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "3",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "experiment-x525",
+      "name": "Experiment X525",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "experiment-e754",
+      "name": "Experiment E754",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "experiment-d978",
+      "name": "Experiment D978",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "the-big-bang",
+      "name": "The Big Bang",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "shrink",
+      "name": "Shrink",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Bio-Belt"
+    },
+    {
+      "id": "atom-uppercut",
+      "name": "Atom Uppercut",
+      "type": "normal",
+      "input": [
+        "1"
+      ],
+      "category": "Bio-Belt"
+    },
+    {
+      "id": "upward-atom-lunge",
+      "name": "Upward Atom Lunge",
+      "type": "normal",
+      "input": [
+        "2"
+      ],
+      "category": "Bio-Belt"
+    },
+    {
+      "id": "atom-slide",
+      "name": "Atom Slide",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Bio-Belt"
+    },
+    {
+      "id": "grow",
+      "name": "Grow",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Bio-Belt"
+    },
+    {
+      "id": "-air--shrink",
+      "name": "(Air) Shrink",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "(Air) Bio-Belt"
+    },
+    {
+      "id": "-air--atom-dive",
+      "name": "(Air) Atom Dive",
+      "type": "normal",
+      "input": [
+        "1"
+      ],
+      "category": "(Air) Bio-Belt"
+    },
+    {
+      "id": "-air--downward-atom-lunge",
+      "name": "(Air) Downward Atom Lunge",
+      "type": "normal",
+      "input": [
+        "2"
+      ],
+      "category": "(Air) Bio-Belt"
+    },
+    {
+      "id": "-air--atom-drop",
+      "name": "(Air) Atom Drop",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "(Air) Bio-Belt"
+    },
+    {
+      "id": "-air--dash-forward",
+      "name": "(Air) Dash Forward",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward"
+      ],
+      "category": "(Air) Bio-Belt"
+    },
+    {
+      "id": "-air--dash-away",
+      "name": "(Air) Dash Away",
+      "type": "normal",
+      "input": [
+        "back",
+        "back"
+      ],
+      "category": "(Air) Bio-Belt"
+    },
+    {
+      "id": "-air--grow",
+      "name": "(Air) Grow",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "(Air) Bio-Belt"
+    }
+  ]
+}

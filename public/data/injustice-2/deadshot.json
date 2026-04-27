@@ -1,58 +1,731 @@
 {
+  "id": "deadshot",
   "name": "Deadshot",
-  "character": "Deadshot",
-  "game": "Injustice 2",
   "movesList": [
     {
-      "name": "Trick Shot",
-      "input": "242",
-      "type": "special"
-    },
-    {
-      "name": "Bullet Barrage",
-      "input": "461",
-      "type": "special"
-    },
-    {
-      "name": "Wrist Cannon",
-      "input": "261",
-      "type": "special"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "piston-punch",
+      "name": "Piston Punch",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "knee-burst",
+      "name": "Knee Burst",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "ops-strike",
+      "name": "Ops Strike",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "forward",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "low-burst",
+      "name": "Low Burst",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "trigger-finger",
+      "name": "Trigger Finger",
+      "type": "normal",
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "pistol-poke",
+      "name": "Pistol Poke",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "hammer-slam",
+      "name": "Hammer Slam",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "rising-metal",
+      "name": "Rising Metal",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "boot-strike",
+      "name": "Boot Strike",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "double-barrel",
+      "name": "Double Barrel",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "chamber-kick",
+      "name": "Chamber Kick",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "+",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "grip-sweep",
+      "name": "Grip Sweep",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "precision-punch",
+      "name": "Precision Punch",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "head-shot",
+      "name": "Head Shot",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "suicide-kick",
+      "name": "Suicide Kick",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "double-barrel",
+      "name": "Double Barrel",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "chamber-kick",
+      "name": "Chamber Kick",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "secret-six",
+      "name": "Secret Six",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "checkmate",
+      "name": "Checkmate",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "extend",
+      "name": "Extend",
+      "type": "combo",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "triggered",
+      "name": "Triggered",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "death-wish",
+      "name": "Death Wish",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2",
+        ">",
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "killer-elite",
+      "name": "Killer Elite",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2",
+        ">",
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "for-hire",
+      "name": "For Hire",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "bad-mewes",
+      "name": "Bad Mewes",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "1",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "bulletproof",
+      "name": "Bulletproof",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "dead-to-rights",
+      "name": "Dead To Rights",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "collateral-damage",
+      "name": "Collateral Damage",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "belle-reve",
+      "name": "Belle Reve",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "3",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "task-force-x",
+      "name": "Task Force X",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "taking-the-shot",
+      "name": "Taking The Shot",
+      "type": "combo",
+      "input": [
+        "3",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "wrist-cannon",
+      "name": "Wrist Cannon",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "advance",
+      "name": "Advance",
+      "type": "special",
+      "input": [
+        "Hold",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "retreat",
+      "name": "Retreat",
+      "type": "special",
+      "input": [
+        "Hold",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--wrist-cannon",
+      "name": "(Air) Wrist Cannon",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "trick-shot",
+      "name": "Trick Shot",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "close-trick-shot",
+      "name": "Close Trick Shot",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "2",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "far-trick-shot",
+      "name": "Far Trick Shot",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "2",
+        "down"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "bullet-barrage",
+      "name": "Bullet Barrage",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "assassin-knee",
+      "name": "Assassin Knee",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "deadly-assault",
+      "name": "Deadly Assault",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "never-miss",
+      "name": "Never Miss",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "incendiary-ammo",
+      "name": "Incendiary Ammo",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Living Weapon"
+    },
+    {
+      "id": "explosive-ammo",
+      "name": "Explosive Ammo",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "4"
+      ],
+      "category": "Living Weapon"
+    },
+    {
+      "id": "poison-ammo",
+      "name": "Poison Ammo",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "4"
+      ],
+      "category": "Living Weapon"
     }
   ]
 }

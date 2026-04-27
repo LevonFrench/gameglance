@@ -1,58 +1,691 @@
 {
+  "id": "firestorm",
   "name": "Firestorm",
-  "character": "Firestorm",
-  "game": "Injustice 2",
   "movesList": [
     {
-      "name": "Fusion Blast",
-      "input": "261",
-      "type": "special"
-    },
-    {
-      "name": "Molten Trap",
-      "input": "242",
-      "type": "special"
-    },
-    {
-      "name": "Atomic Charge",
-      "input": "463",
-      "type": "special"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "short-burst",
+      "name": "Short Burst",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "quick-burn",
+      "name": "Quick Burn",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "flame-fist",
+      "name": "Flame Fist",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "forward",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "low-singe",
+      "name": "Low Singe",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "heated-hook",
+      "name": "Heated Hook",
+      "type": "normal",
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "torched",
+      "name": "Torched",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "boiling-point",
+      "name": "Boiling Point",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "rising-flame",
+      "name": "Rising Flame",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "blistering-boot",
+      "name": "Blistering Boot",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "heat-wave",
+      "name": "Heat Wave",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "advancing-heat-wave",
+      "name": "Advancing Heat Wave",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3",
+        "Hold",
+        "forward"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "flame-flip",
+      "name": "Flame Flip",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "brush-fire",
+      "name": "Brush Fire",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "vapor-jab",
+      "name": "Vapor Jab",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "double-burst",
+      "name": "Double Burst",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "ash-kicker",
+      "name": "Ash Kicker",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "heat-wave",
+      "name": "Heat Wave",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "flame-flip",
+      "name": "Flame Flip",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "the-fury",
+      "name": "The Fury",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "fusion-energy",
+      "name": "Fusion Energy",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "combustible",
+      "name": "Combustible",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "atomic-destruction",
+      "name": "Atomic Destruction",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "power-matrix",
+      "name": "Power matrix",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "identity-crisis",
+      "name": "Identity Crisis",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "1",
+        ">",
+        "3",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "good-chemistry",
+      "name": "Good Chemistry",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "1",
+        ">",
+        "3",
+        ">",
+        "3",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "nuclear-man",
+      "name": "Nuclear Man",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "little-voices",
+      "name": "Little Voices",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "containment-field",
+      "name": "Containment Field",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "god-particle",
+      "name": "God Particle",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "fusion-blast",
+      "name": "Fusion Blast",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "energy-shield",
+      "name": "Energy Shield",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "heat-flux",
+      "name": "Heat Flux",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "extend",
+      "name": "Extend",
+      "type": "special",
+      "input": [
+        "Hold",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "molten-trap",
+      "name": "Molten Trap",
+      "type": "special",
+      "input": [
+        "back",
+        "down",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "close-molten-trap",
+      "name": "Close Molten Trap",
+      "type": "special",
+      "input": [
+        "back",
+        "down",
+        "2",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "far-molten-trap",
+      "name": "Far Molten Trap",
+      "type": "special",
+      "input": [
+        "back",
+        "down",
+        "2",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "fusion-charge",
+      "name": "Fusion Charge",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--fusion-charge",
+      "name": "(Air) Fusion Charge",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "atomic-burst",
+      "name": "Atomic Burst",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--dash-away",
+      "name": "(Air) Dash Away",
+      "type": "special",
+      "input": [
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--dash-forward",
+      "name": "(Air) Dash Forward",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "molecular-mayhem",
+      "name": "Molecular Mayhem",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "eternal-flame",
+      "name": "Eternal Flame",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Particle Man"
     }
   ]
 }

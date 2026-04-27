@@ -589,7 +589,25 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
     }
 
     // Named multi-char label (like "Spear", "Teleport") — render as text pill
-    if (label.length > 2 && !['ALL', 'TAG'].includes(label)) {
+    if (label.length > 2 && !['ALL', 'TAG', '360', '720'].includes(label)) {
+      if (label.length > 8) {
+        return (
+          <span
+            key={idx}
+            style={{
+              color: 'var(--text-secondary)',
+              fontSize: large ? '0.75rem' : '0.65rem',
+              fontWeight: 500,
+              letterSpacing: '0.02em',
+              margin: '0 4px',
+              fontFamily: "'Inter', sans-serif",
+              ...styleOverrides
+            }}
+          >
+            {rawInput}
+          </span>
+        );
+      }
       return (
         <div
           key={idx}

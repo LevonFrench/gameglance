@@ -1,58 +1,779 @@
 {
+  "id": "swamp-thing",
   "name": "Swamp Thing",
-  "character": "Swamp Thing",
-  "game": "Injustice 2",
   "movesList": [
     {
-      "name": "Green Thumb",
-      "input": "261",
-      "type": "special"
-    },
-    {
-      "name": "Bio-Fission",
-      "input": "242",
-      "type": "special"
-    },
-    {
-      "name": "Log Kick",
-      "input": "463",
-      "type": "special"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "vine-slap",
+      "name": "Vine Slap",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "swamp-stomp",
+      "name": "Swamp Stomp",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "low-swipe",
+      "name": "Low Swipe",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "marsh-smash",
+      "name": "Marsh Smash",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "shoulder-spikes",
+      "name": "Shoulder Spikes",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "branch-bash",
+      "name": "Branch Bash",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "rising-water",
+      "name": "Rising Water",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "trunk-punch",
+      "name": "Trunk Punch",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "log-smack",
+      "name": "Log Smack",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "log-slam",
+      "name": "Log Slam",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "vine-swipe",
+      "name": "Vine Swipe",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "larix-strike",
+      "name": "Larix Strike",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "branch-slam",
+      "name": "Branch Slam",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "jump-tree",
+      "name": "Jump Tree",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "log-smack",
+      "name": "Log Smack",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "log-slam",
+      "name": "Log Slam",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "dark-genesis",
+      "name": "Dark Genesis",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "deep-roots",
+      "name": "Deep Roots",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "marsh-march",
+      "name": "Marsh March",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "throwing-shade",
+      "name": "Throwing Shade",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "regenesis",
+      "name": "Regenesis",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "bad-seed",
+      "name": "Bad Seed",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "bogged-down",
+      "name": "Bogged Down",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "double-trouble",
+      "name": "Double Trouble",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "family-tree",
+      "name": "Family Tree",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "3",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "earth-to-earth",
+      "name": "Earth To Earth",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "3",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "healing-the-breach",
+      "name": "Healing The breach",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "parliament-of-trees",
+      "name": "Parliament of Trees",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "killing-field",
+      "name": "Killing Field",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "3",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "vine-grab",
+      "name": "Vine Grab",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn-behind",
+      "name": "Meter Burn Behind",
+      "type": "special",
+      "input": [
+        "MB",
+        ">",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "close-vine-grab",
+      "name": "Close Vine Grab",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "1",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn-behind",
+      "name": "Meter Burn Behind",
+      "type": "special",
+      "input": [
+        "MB",
+        ">",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "far-vine-grab",
+      "name": "Far Vine Grab",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "1",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn-behind",
+      "name": "Meter Burn Behind",
+      "type": "special",
+      "input": [
+        "MB",
+        ">",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "up-vine-grab",
+      "name": "Up Vine Grab",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "1",
+        "up"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn-behind",
+      "name": "Meter Burn Behind",
+      "type": "special",
+      "input": [
+        "MB",
+        ">",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "log-kick",
+      "name": "Log Kick",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "green-thumb",
+      "name": "Green Thumb",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "spiked-palm",
+      "name": "Spiked Palm",
+      "type": "special",
+      "input": [
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "stump-bump",
+      "name": "Stump Bump",
+      "type": "special",
+      "input": [
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "up-rooted",
+      "name": "Up Rooted",
+      "type": "special",
+      "input": [
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "refoliation",
+      "name": "Refoliation",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "bayou-bash",
+      "name": "Bayou Bash",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "extend",
+      "name": "Extend",
+      "type": "special",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "bio-fission",
+      "name": "Bio-Fission",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "green-kingdom",
+      "name": "Green Kingdom",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "abigail-s-garden",
+      "name": "Abigail's Garden",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Swamp Life"
+    },
+    {
+      "id": "control-abigail-s-garden",
+      "name": "Control Abigail's Garden",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Swamp Life"
+    },
+    {
+      "id": "ephemeral-abigail-s-garden",
+      "name": "Ephemeral Abigail's Garden",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Swamp Life"
     }
   ]
 }

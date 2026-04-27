@@ -1,58 +1,780 @@
 {
+  "id": "cheetah",
   "name": "Cheetah",
-  "character": "Cheetah",
-  "game": "Injustice 2",
   "movesList": [
     {
-      "name": "Primal Rage",
-      "input": "241",
-      "type": "special"
-    },
-    {
-      "name": "Blood Lunge",
-      "input": "263",
-      "type": "special"
-    },
-    {
-      "name": "Cheetah Pounce",
-      "input": "242",
-      "type": "special"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "side-swipe",
+      "name": "Side Swipe",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "low-paw",
+      "name": "Low Paw",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "low-cutter",
+      "name": "Low Cutter",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "razor-paw",
+      "name": "Razor Paw",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "flick-kick",
+      "name": "Flick Kick",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "bloody-strike",
+      "name": "Bloody Strike",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "rising-paws",
+      "name": "Rising Paws",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "hammer-toe",
+      "name": "Hammer Toe",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "hunter-slam",
+      "name": "Hunter Slam",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cat-cel",
+      "name": "Cat-cel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "crushing-paws",
+      "name": "Crushing Paws",
+      "type": "normal",
+      "input": [],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cat-cel",
+      "name": "Cat-cel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "unsheathed",
+      "name": "Unsheathed",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "knee-drop",
+      "name": "Knee Drop",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "double-scratch",
+      "name": "Double Scratch",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "heel-smash",
+      "name": "Heel Smash",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "hunter-slam",
+      "name": "Hunter Slam",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "crushing-paws",
+      "name": "Crushing Paws",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "minerva-s-might",
+      "name": "Minerva's Might",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "beauty-and-the-beast",
+      "name": "Beauty And The Beast",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "man-eater",
+      "name": "Man Eater",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "inner-beast",
+      "name": "Inner Beast",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2",
+        ">",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "relentless-huntress",
+      "name": "Relentless Huntress",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "savage-ways",
+      "name": "Savage Ways",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "1",
+        ">",
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "violent-tendencies",
+      "name": "Violent Tendencies",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "cruel-encounter",
+      "name": "Cruel Encounter",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2",
+        ">",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "ripping-flesh",
+      "name": "Ripping Flesh",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "silent-stalker",
+      "name": "Silent Stalker",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "graceful-hunter",
+      "name": "Graceful Hunter",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "spotted-carnivore",
+      "name": "Spotted Carnivore",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "1",
+        "+",
+        "3",
+        ">",
+        "back",
+        ">",
+        "back"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "quick-kill",
+      "name": "Quick Kill",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "1",
+        "+",
+        "3",
+        ">",
+        "down",
+        ">",
+        "down"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "prey-on-the-weak",
+      "name": "Prey On The Weak",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "slaughter",
+      "name": "Slaughter",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "3",
+        ">",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "deadly-elegance",
+      "name": "Deadly Elegance",
+      "type": "combo",
+      "input": [
+        "3",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "blood-ritual",
+      "name": "Blood Ritual",
+      "type": "combo",
+      "input": [
+        "3",
+        ">",
+        "3",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "savage-ambush",
+      "name": "Savage Ambush",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "deadly-hook",
+      "name": "Deadly Hook",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "primal-rage",
+      "name": "Primal Rage",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--predator-pounce",
+      "name": "(Air) Predator Pounce",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "blood-lunge",
+      "name": "Blood Lunge",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cat-cel",
+      "name": "Cat-cel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "close-blood-lunge",
+      "name": "Close Blood Lunge",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "3",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cat-cel",
+      "name": "Cat-cel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "far-blood-lunge",
+      "name": "Far Blood Lunge",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "3",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cat-cel",
+      "name": "Cat-cel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "queen-of-the-jungle",
+      "name": "Queen of The Jungle",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "claws-of-death",
+      "name": "Claws of Death",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Urzkartaga Blood"
     }
   ]
 }

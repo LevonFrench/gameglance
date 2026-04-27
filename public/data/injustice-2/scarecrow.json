@@ -1,58 +1,738 @@
 {
+  "id": "scarecrow",
   "name": "Scarecrow",
-  "character": "Scarecrow",
-  "game": "Injustice 2",
   "movesList": [
     {
-      "name": "Death Spin",
-      "input": "241",
-      "type": "special"
-    },
-    {
-      "name": "Fear-ferno",
-      "input": "262",
-      "type": "special"
-    },
-    {
-      "name": "Schizophrenia",
-      "input": "243",
-      "type": "special"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "scarred-strike",
+      "name": "Scarred Strike",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "hideous-heel",
+      "name": "Hideous Heel",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "soaring-crow",
+      "name": "Soaring Crow",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "forward",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "side-cut",
+      "name": "Side Cut",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "brutal-kick",
+      "name": "Brutal Kick",
+      "type": "normal",
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "heavy-hook",
+      "name": "Heavy Hook",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "hook-lunge",
+      "name": "Hook Lunge",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "rising-scythe",
+      "name": "Rising Scythe",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "ground-shaker",
+      "name": "Ground Shaker",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "scythe-swipe",
+      "name": "Scythe Swipe",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "scythe-slam",
+      "name": "Scythe Slam",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "spinning-fear",
+      "name": "Spinning Fear",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "blade-bash",
+      "name": "Blade Bash",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "cross-swipe",
+      "name": "Cross Swipe",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "swinging-scythe",
+      "name": "Swinging Scythe",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "scythe-swipe",
+      "name": "Scythe Swipe",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "scythe-slam",
+      "name": "Scythe Slam",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "hallucinations",
+      "name": "Hallucinations",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "dark-perception",
+      "name": "Dark Perception",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "mind-tricks",
+      "name": "Mind Tricks",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "subliminal-messages",
+      "name": "Subliminal Messages",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "chemical-mayhem",
+      "name": "Chemical Mayhem",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "fear-is-power",
+      "name": "Fear Is Power",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2",
+        ">",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "another-experiment",
+      "name": "Another Experiment",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "delusional-episodes",
+      "name": "Delusional Episodes",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "1",
+        ">",
+        "3",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "deep-agony",
+      "name": "Deep Agony",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "grip-on-reality",
+      "name": "Grip On Reality",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2",
+        ">",
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "nature-of-horror",
+      "name": "Nature of Horror",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "beware",
+      "name": "Beware",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "be-afraid",
+      "name": "Be Afraid",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "2",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "mind-over-body",
+      "name": "Mind Over Body",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "lord-of-despair",
+      "name": "Lord of Despair",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "overdose",
+      "name": "Overdose",
+      "type": "combo",
+      "input": [
+        "3",
+        ">",
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "succumb-to-fear",
+      "name": "Succumb To Fear",
+      "type": "combo",
+      "input": [
+        "3",
+        ">",
+        "forward",
+        "+",
+        "2",
+        ">",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "scythe-grab",
+      "name": "Scythe Grab",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "death-spin",
+      "name": "Death Spin",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "retreat",
+      "name": "Retreat",
+      "type": "special",
+      "input": [
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "advance",
+      "name": "Advance",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "down"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "toxin-breath",
+      "name": "Toxin Breath",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "extend",
+      "name": "Extend",
+      "type": "special",
+      "input": [
+        "Hold",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "fear-ferno",
+      "name": "Fear-Ferno",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "fear-toxin",
+      "name": "Fear Toxin",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--fear-toxin",
+      "name": "(Air) Fear Toxin",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "schizophrenia",
+      "name": "Schizophrenia",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "panic-port",
+      "name": "Panic-Port",
+      "type": "special",
+      "input": [
+        "down",
+        "up"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "death-bed",
+      "name": "Death Bed",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "inner-fear",
+      "name": "Inner Fear",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Fear"
+    },
+    {
+      "id": "traumatize",
+      "name": "Traumatize",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Fear"
     }
   ]
 }

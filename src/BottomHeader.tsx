@@ -10,6 +10,8 @@ interface Props {
   syncConnected?: boolean;
   theme?: 'dark' | 'light';
   onSetTheme?: (t: 'dark' | 'light') => void;
+  showFrameData?: boolean;
+  onSetShowFrameData?: (v: boolean) => void;
 }
 
 export const BottomHeader: React.FC<Props> = ({ 
@@ -20,7 +22,9 @@ export const BottomHeader: React.FC<Props> = ({
   onOpenFightcadeSync,
   syncConnected,
   theme,
-  onSetTheme
+  onSetTheme,
+  showFrameData,
+  onSetShowFrameData
 }) => {
 
   return (
@@ -136,6 +140,33 @@ export const BottomHeader: React.FC<Props> = ({
           </>
         )}
 
+        {onSetShowFrameData && showFrameData !== undefined && (
+          <>
+            <div style={{ width: '1px', height: '20px', background: 'var(--border-subtle)' }} />
+            <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
+              <label style={{ fontSize: 'calc(0.8rem * var(--font-scale))', color: 'var(--text-secondary)', fontWeight: 500 }}>Frame Data:</label>
+              <select
+                value={showFrameData ? 'show' : 'hide'}
+                onChange={(e) => onSetShowFrameData(e.target.value === 'show')}
+                style={{
+                  padding: 'calc(0.35rem * var(--spacing-scale)) calc(0.65rem * var(--spacing-scale))',
+                  background: 'var(--bg-input)',
+                  border: '1px solid var(--border-subtle)',
+                  borderRadius: 'var(--radius-md)',
+                  color: 'var(--text-primary)',
+                  fontSize: 'calc(0.8rem * var(--font-scale))',
+                  fontFamily: 'inherit',
+                  cursor: 'pointer',
+                  outline: 'none',
+                }}
+              >
+                <option value="show" style={{ background: 'var(--option-bg)' }}>Show</option>
+                <option value="hide" style={{ background: 'var(--option-bg)' }}>Hide</option>
+              </select>
+            </div>
+          </>
+        )}
+
       </div>
 
       {/* Footer Info */}
@@ -156,7 +187,14 @@ export const BottomHeader: React.FC<Props> = ({
            FAQ
         </a>
         <div style={{ width: '1px', height: '12px', background: 'var(--border-subtle)' }} />
-        <a href="mailto:contact@gameglance.app" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }} 
+        <a href="/gameglance.html?promo=true" target="_blank" rel="noreferrer" title="HyperFrames Trailer" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s', display: 'flex', alignItems: 'center', gap: '0.3rem' }} 
+           onMouseEnter={e => e.currentTarget.style.color = 'var(--text-primary)'}
+           onMouseLeave={e => e.currentTarget.style.color = 'var(--text-secondary)'}>
+           <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><polygon points="5 3 19 12 5 21 5 3"></polygon></svg>
+           Trailer
+        </a>
+        <div style={{ width: '1px', height: '12px', background: 'var(--border-subtle)' }} />
+        <a href="mailto:hotghettomusic@gmail.com" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s' }} 
            onMouseEnter={e => e.currentTarget.style.color = 'var(--text-primary)'}
            onMouseLeave={e => e.currentTarget.style.color = 'var(--text-secondary)'}>
            Contact
@@ -172,7 +210,7 @@ export const BottomHeader: React.FC<Props> = ({
         <a href="https://ko-fi.com/gameglanceapp" target="_blank" rel="noreferrer" style={{ color: 'var(--text-secondary)', textDecoration: 'none', transition: 'color 0.2s', display: 'flex', alignItems: 'center', gap: '0.3rem' }}
            onMouseEnter={e => e.currentTarget.style.color = '#ff5e5b'}
            onMouseLeave={e => e.currentTarget.style.color = 'var(--text-secondary)'}>
-           <span style={{ color: '#ff5e5b' }}>❤️</span> Support GG
+           <span style={{ color: '#ff5e5b' }}>❤️</span> Ko-Fi
         </a>
         {onOpenFightcadeSync && (
           <>
@@ -200,7 +238,7 @@ export const BottomHeader: React.FC<Props> = ({
                  background: syncConnected ? '#10b981' : '#ef4444',
                  boxShadow: syncConnected ? '0 0 6px #10b981' : 'none'
                }} />
-               Fightcade Sync
+               Sync
             </button>
           </>
         )}

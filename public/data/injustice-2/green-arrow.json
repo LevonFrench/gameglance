@@ -1,63 +1,740 @@
 {
+  "id": "green-arrow",
   "name": "Green Arrow",
-  "character": "Green Arrow",
-  "game": "Injustice 2",
   "movesList": [
     {
-      "name": "Sky Bolt",
-      "input": "241",
-      "type": "special"
-    },
-    {
-      "name": "Savage Blast",
-      "input": "242",
-      "type": "special"
-    },
-    {
-      "name": "Stinger",
-      "input": "461",
-      "type": "special"
-    },
-    {
-      "name": "Hurricane Bow",
-      "input": "243",
-      "type": "special"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "outlander",
+      "name": "Outlander",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "longbow",
+      "name": "Longbow",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "low-blow",
+      "name": "Low Blow",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "bow-poke",
+      "name": "Bow Poke",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "quick-slash",
+      "name": "Quick Slash",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "money-shot",
+      "name": "Money Shot",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "rising-bow",
+      "name": "Rising Bow",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "long-slice",
+      "name": "Long Slice",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "satisfaction",
+      "name": "Satisfaction",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "canary-s-kiss",
+      "name": "Canary's Kiss",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "sweep-kick",
+      "name": "Sweep Kick",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "slicing-bow",
+      "name": "Slicing Bow",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "anchor-point",
+      "name": "Anchor Point",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "spinning-release",
+      "name": "Spinning Release",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "satisfaction",
+      "name": "Satisfaction",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "canary-s-kiss",
+      "name": "Canary's Kiss",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "minus-ten",
+      "name": "Minus Ten",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "more-fun",
+      "name": "More Fun",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "thrill-seeker",
+      "name": "Thrill Seeker",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "final-shot",
+      "name": "Final Shot",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "quiver",
+      "name": "Quiver",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "night-ranger",
+      "name": "Night Ranger",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "light-it-up",
+      "name": "Light It Up",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "longbow-hunter",
+      "name": "Longbow hunter",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "queen-s-gambit",
+      "name": "Queen's Gambit",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "down",
+        "+",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "beast-slayer",
+      "name": "Beast Slayer",
+      "type": "combo",
+      "input": [
+        "3",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "hurricane-bow",
+      "name": "Hurricane Bow",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "sky-alert",
+      "name": "Sky Alert",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--sky-alert",
+      "name": "(Air) Sky Alert",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "up-heaven-blast",
+      "name": "Up Heaven Blast",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "savage-blast",
+      "name": "Savage Blast",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "stinger",
+      "name": "Stinger",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "target-practice",
+      "name": "Target Practice",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "take-aim",
+      "name": "Take Aim",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Fully Loaded"
+    },
+    {
+      "id": "draw",
+      "name": "Draw",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4"
+      ],
+      "category": "Fully Loaded"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "STANCE"
+      ],
+      "category": "Fully Loaded"
+    },
+    {
+      "id": "walk-forward",
+      "name": "Walk Forward",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4",
+        "+",
+        "forward"
+      ],
+      "category": "Fully Loaded"
+    },
+    {
+      "id": "dash-forward",
+      "name": "Dash Forward",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4",
+        "+",
+        "forward",
+        "forward"
+      ],
+      "category": "Fully Loaded"
+    },
+    {
+      "id": "walk-backwards",
+      "name": "Walk Backwards",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4",
+        "+",
+        "back"
+      ],
+      "category": "Fully Loaded"
+    },
+    {
+      "id": "dash-backwards",
+      "name": "Dash Backwards",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4",
+        "+",
+        "back",
+        "back"
+      ],
+      "category": "Fully Loaded"
+    },
+    {
+      "id": "jump",
+      "name": "Jump",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4",
+        "+",
+        "up"
+      ],
+      "category": "Fully Loaded"
+    },
+    {
+      "id": "crouch",
+      "name": "Crouch",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4",
+        "+",
+        "down"
+      ],
+      "category": "Fully Loaded"
+    },
+    {
+      "id": "up-arrow",
+      "name": "Up Arrow",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4",
+        "+",
+        "back"
+      ],
+      "category": "Fully Loaded"
+    },
+    {
+      "id": "-air--down-arrow",
+      "name": "(Air) Down Arrow",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4",
+        "+",
+        "down"
+      ],
+      "category": "Fully Loaded"
+    },
+    {
+      "id": "boxing-glove-arrow",
+      "name": "Boxing Glove Arrow",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Fully Loaded"
+    },
+    {
+      "id": "electrocution",
+      "name": "Electrocution",
+      "type": "normal",
+      "input": [
+        "down",
+        "forward",
+        "4"
+      ],
+      "category": "Fully Loaded"
+    },
+    {
+      "id": "frozen-tip",
+      "name": "Frozen Tip",
+      "type": "normal",
+      "input": [
+        "down",
+        "back",
+        "4"
+      ],
+      "category": "Fully Loaded"
+    },
+    {
+      "id": "burning-desire",
+      "name": "Burning Desire",
+      "type": "normal",
+      "input": [
+        "down",
+        "down",
+        "4"
+      ],
+      "category": "Fully Loaded"
     }
   ]
 }

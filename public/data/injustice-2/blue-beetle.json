@@ -1,63 +1,655 @@
 {
+  "id": "blue-beetle",
   "name": "Blue Beetle",
-  "character": "Blue Beetle",
-  "game": "Injustice 2",
   "movesList": [
     {
-      "name": "Blade Barrage",
-      "input": "261",
-      "type": "special"
-    },
-    {
-      "name": "Blade Stab",
-      "input": "241",
-      "type": "special"
-    },
-    {
-      "name": "Energy Cannon",
-      "input": "462",
-      "type": "special"
-    },
-    {
-      "name": "Shield Slam",
-      "input": "463",
-      "type": "special"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "closed-fist",
+      "name": "Closed Fist",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "bugged-boot",
+      "name": "Bugged Boot",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "side-bash",
+      "name": "Side Bash",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "temple-slam",
+      "name": "Temple Slam",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "double-down",
+      "name": "Double Down",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "tarsal-claw",
+      "name": "Tarsal Claw",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "scarab-strike",
+      "name": "Scarab Strike",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "look-at-that",
+      "name": "Look At That",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "mace-slam",
+      "name": "Mace Slam",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "mace-sive-pain",
+      "name": "Mace-Sive Pain",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "coxa-kick",
+      "name": "Coxa Kick",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "lunging-punch",
+      "name": "Lunging Punch",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "heel-kick",
+      "name": "Heel Kick",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "beetle-crush",
+      "name": "Beetle Crush",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "mace-slam",
+      "name": "Mace Slam",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "mace-sive-pain",
+      "name": "Mace-Sive Pain",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "end-game",
+      "name": "End Game",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "alien-technology",
+      "name": "Alien Technology",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "artifact",
+      "name": "Artifact",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "khaji-da",
+      "name": "Khaji Da",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "3",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "golden-age",
+      "name": "Golden Age",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "3",
+        ">",
+        "2",
+        ">",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "gone-rogue",
+      "name": "Gone Rogue",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "ambush-bugs",
+      "name": "Ambush Bugs",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "black-and-blue",
+      "name": "Black And Blue",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "1",
+        ">",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "shell-shocked",
+      "name": "Shell Shocked",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "seeking-reach",
+      "name": "Seeking Reach",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "infinite-earths",
+      "name": "Infinite Earths",
+      "type": "combo",
+      "input": [
+        "3",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "world-rippers",
+      "name": "World Rippers",
+      "type": "normal",
+      "input": [
+        "2",
+        ">",
+        "1",
+        ">",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Ancient Scarab"
+    },
+    {
+      "id": "blade-barrage",
+      "name": "Blade barrage",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "blade-stab",
+      "name": "Blade Stab",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "energy-cannon",
+      "name": "Energy Cannon",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--energy-cannon",
+      "name": "(Air) Energy Cannon",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--flying-scarab",
+      "name": "(Air) Flying Scarab",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--beetle-retreat",
+      "name": "(Air) Beetle Retreat",
+      "type": "special",
+      "input": [
+        "Up-left"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--beetle-rise",
+      "name": "(Air) Beetle Rise",
+      "type": "special",
+      "input": [
+        "up"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--beetle-advance",
+      "name": "(Air) Beetle Advance",
+      "type": "special",
+      "input": [
+        "Up-right"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--beetle-dash",
+      "name": "(Air) Beetle Dash",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--beetle-drop",
+      "name": "(Air) Beetle Drop",
+      "type": "special",
+      "input": [
+        "down"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "shield-slam",
+      "name": "Shield Slam",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "mandible-strike",
+      "name": "Mandible Strike",
+      "type": "normal",
+      "input": [
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Ancient Scarab"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Ancient Scarab"
+    },
+    {
+      "id": "shape-shifter",
+      "name": "Shape Shifter",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "power-blades",
+      "name": "Power Blades",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Ancient Scarab"
     }
   ]
 }

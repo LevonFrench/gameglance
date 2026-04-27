@@ -4,62 +4,346 @@
   "game": "Killer Instinct (2013)",
   "movesList": [
     {
-      "name": "Payload Assault",
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "input": "5LP",
+      "id": "n_0"
+    },
+    {
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "input": "5MP",
+      "id": "n_1"
+    },
+    {
+      "name": "Standing Heavy Punch",
+      "type": "normal",
+      "input": "5HP",
+      "id": "n_2"
+    },
+    {
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "input": "5LK",
+      "id": "n_3"
+    },
+    {
+      "name": "Standing Medium Kick",
+      "type": "normal",
+      "input": "5MK",
+      "id": "n_4"
+    },
+    {
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "id": "n_5"
+    },
+    {
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "input": "2LP",
+      "id": "n_6"
+    },
+    {
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "input": "2MP",
+      "id": "n_7"
+    },
+    {
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "input": "2HP",
+      "id": "n_8"
+    },
+    {
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "input": "2LK",
+      "id": "n_9"
+    },
+    {
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "input": "2MK",
+      "id": "n_10"
+    },
+    {
+      "name": "Crouching Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "id": "n_11"
+    },
+    {
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "input": "8LP",
+      "id": "n_12"
+    },
+    {
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "input": "8MP",
+      "id": "n_13"
+    },
+    {
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "input": "8HP",
+      "id": "n_14"
+    },
+    {
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "input": "8LK",
+      "id": "n_15"
+    },
+    {
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "input": "8MK",
+      "id": "n_16"
+    },
+    {
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "input": "8HK",
+      "id": "n_17"
+    },
+    {
+      "name": "Throw",
+      "type": "throw",
+      "input": "5LPLK",
+      "id": "t_18"
+    },
+    {
+      "name": "Oblivion",
+      "type": "special",
       "input": "236P",
-      "type": "common"
+      "id": "s_19"
     },
     {
-      "name": "Natural Disaster",
+      "name": "Oblivion",
+      "type": "special",
+      "input": "236P",
+      "id": "s_20"
+    },
+    {
+      "name": "Oblivion",
+      "type": "special",
+      "input": "236P",
+      "id": "s_21"
+    },
+    {
+      "name": "Devil's Divide",
+      "type": "special",
+      "input": "214LP",
+      "id": "s_22"
+    },
+    {
+      "name": "Devil's Divide",
+      "type": "special",
+      "input": "214MP",
+      "id": "s_23"
+    },
+    {
+      "name": "Devil's Divide",
+      "type": "special",
+      "input": "214HP",
+      "id": "s_24"
+    },
+    {
+      "name": "Devil's Divide",
+      "type": "special",
+      "input": "214P",
+      "id": "s_25"
+    },
+    {
+      "name": "Sadistic Drop",
+      "type": "special",
+      "input": "214P8",
+      "id": "s_26"
+    },
+    {
+      "name": "Sadistic Hurl",
+      "type": "special",
+      "input": "214P6",
+      "id": "s_27"
+    },
+    {
+      "name": "Sadistic Appetite",
+      "type": "special",
+      "input": "214P4",
+      "id": "s_28"
+    },
+    {
+      "name": "Sadistic Intent",
+      "type": "special",
+      "input": "214P2",
+      "id": "s_29"
+    },
+    {
+      "name": "Reckoning",
+      "type": "special",
+      "input": "236K",
+      "id": "s_30"
+    },
+    {
+      "name": "Reckoning",
+      "type": "special",
+      "input": "236K",
+      "id": "s_31"
+    },
+    {
+      "name": "Reckoning",
+      "type": "special",
+      "input": "236K",
+      "id": "s_32"
+    },
+    {
+      "name": "Eternal Reckoning",
+      "type": "special",
+      "input": "J236LK",
+      "id": "s_33"
+    },
+    {
+      "name": "Eternal Reckoning",
+      "type": "special",
+      "input": "J236MK",
+      "id": "s_34"
+    },
+    {
+      "name": "Eternal Reckoning",
+      "type": "special",
+      "input": "J236HK",
+      "id": "s_35"
+    },
+    {
+      "name": "Shadow Oblivion",
+      "type": "special",
+      "input": "236PP",
+      "id": "s_36"
+    },
+    {
+      "name": "Shadow Devil's Divide",
+      "type": "special",
+      "input": "214PP",
+      "id": "s_37"
+    },
+    {
+      "name": "Shadow Reckoning",
+      "type": "special",
+      "input": "236KK",
+      "id": "s_38"
+    },
+    {
+      "name": "Minions",
+      "type": "special",
       "input": "214K",
-      "type": "common"
+      "id": "s_39"
     },
     {
-      "id": "n_0",
-      "name": "Light Punch",
-      "type": "normal",
-      "input": "LP"
+      "name": "Minion Summon",
+      "type": "special",
+      "input": "214KK",
+      "id": "s_40"
     },
     {
-      "id": "n_1",
-      "name": "Medium Punch",
-      "type": "normal",
-      "input": "MP"
+      "name": "Izzik Attack",
+      "type": "special",
+      "input": "--",
+      "id": "s_41"
     },
     {
-      "id": "n_2",
-      "name": "Heavy Punch",
-      "type": "normal",
-      "input": "HP"
+      "name": "Izzik Anti-Air",
+      "type": "special",
+      "input": "--",
+      "id": "s_42"
     },
     {
-      "id": "n_3",
-      "name": "Light Kick",
-      "type": "normal",
-      "input": "LK"
+      "name": "Izzik Kill",
+      "type": "special",
+      "input": "--",
+      "id": "s_43"
     },
     {
-      "id": "n_4",
-      "name": "Medium Kick",
-      "type": "normal",
-      "input": "MK"
+      "name": "Dretch Attack",
+      "type": "special",
+      "input": "--",
+      "id": "s_44"
     },
     {
-      "id": "n_5",
-      "name": "Heavy Kick",
-      "type": "normal",
-      "input": "HK"
+      "name": "Dretch Kill",
+      "type": "special",
+      "input": "--",
+      "id": "s_45"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "LP+LK"
+      "name": "Cover Command",
+      "type": "special",
+      "input": "214LK",
+      "id": "s_46"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "4LP+LK"
+      "name": "Creep Command",
+      "type": "special",
+      "input": "214MK",
+      "id": "s_47"
+    },
+    {
+      "name": "Kill Command",
+      "type": "special",
+      "input": "214MK",
+      "id": "s_48"
+    },
+    {
+      "name": "Minion Grab",
+      "type": "special",
+      "input": "214K",
+      "id": "s_49"
+    },
+    {
+      "name": "Cruel Inspiration",
+      "type": "special",
+      "input": "214K > L",
+      "id": "s_50"
+    },
+    {
+      "name": "Sadistic Intent",
+      "type": "special",
+      "input": "QCB+K2",
+      "id": "s_51"
+    },
+    {
+      "name": "Sadistic Appetite",
+      "type": "special",
+      "input": "QCB+K4",
+      "id": "s_52"
+    },
+    {
+      "name": "Sadistic Lob",
+      "type": "special",
+      "input": "QCB+K8",
+      "id": "s_53"
+    },
+    {
+      "name": "Sadistic Lob",
+      "type": "special",
+      "input": "QCB+K6",
+      "id": "s_54"
+    },
+    {
+      "name": "Stoneskin",
+      "type": "special",
+      "input": "HP+HK",
+      "id": "s_55"
+    },
+    {
+      "name": "Eruption",
+      "type": "special",
+      "input": "3P",
+      "id": "s_56"
     }
   ]
 }

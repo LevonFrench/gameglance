@@ -1,58 +1,859 @@
 {
+  "id": "hellboy",
   "name": "Hellboy",
-  "character": "Hellboy",
-  "game": "Injustice 2",
   "movesList": [
     {
-      "name": "Doom Kick",
-      "input": "463",
-      "type": "special"
-    },
-    {
-      "name": "Devil's Revolver",
-      "input": "261",
-      "type": "special"
-    },
-    {
-      "name": "Stone Strike",
-      "input": "242",
-      "type": "special"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "hell-s-hook",
+      "name": "Hell's Hook",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "hell-s-hoof",
+      "name": "Hell's Hoof",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "swinging-hammer",
+      "name": "Swinging Hammer",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "forward",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "straight-strike",
+      "name": "Straight Strike",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "face-smash",
+      "name": "Face Smash",
+      "type": "normal",
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "high-hoof",
+      "name": "High Hoof",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "breaking-bow",
+      "name": "Breaking Bow",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "rising-doom",
+      "name": "Rising Doom",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "body-breaker",
+      "name": "Body Breaker",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "doom-strike",
+      "name": "Doom Strike",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "doom-slam",
+      "name": "Doom Slam",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "virtue-sweep",
+      "name": "Virtue Sweep",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "corpse-punch",
+      "name": "Corpse Punch",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "heavy-hoof",
+      "name": "Heavy Hoof",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "doom-hook",
+      "name": "Doom Hook",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "doom-strike",
+      "name": "Doom Strike",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "doom-slam",
+      "name": "Doom Slam",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "blood-of-azzael",
+      "name": "Blood of Azzael",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "a-pack-a-day",
+      "name": "A Pack A Day",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "the-chained-coffin",
+      "name": "The Chained Coffin",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "drinking-with-skeletons",
+      "name": "Drinking With Skeletons",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "b-p-r-d-",
+      "name": "B.P.R.D.",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "spilling-blood",
+      "name": "Spilling Blood",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "darkness-calls",
+      "name": "Darkness Calls",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "harbinger-of-the-apocalypse",
+      "name": "Harbinger of The Apocalypse",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2",
+        ">",
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "garden-of-souls",
+      "name": "Garden of Souls",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2",
+        ">",
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "nature-of-the-beast",
+      "name": "Nature of The Beast",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "night-train",
+      "name": "Night Train",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "dark-waters",
+      "name": "Dark Waters",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "devil-s-revolver",
+      "name": "Devil's Revolver",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "up-devil-s-revolver",
+      "name": "Up Devil's Revolver",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "devil-s-shoulder",
+      "name": "Devil's Shoulder",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "hand-of-god",
+      "name": "Hand of God",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "fist-of-doom",
+      "name": "Fist of Doom",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--away-cancel",
+      "name": "(Air) Away Cancel",
+      "type": "special",
+      "input": [
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--forward-cancel",
+      "name": "(Air) Forward Cancel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--cancel",
+      "name": "(Air) Cancel",
+      "type": "special",
+      "input": [
+        "up"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "close-fist-of-doom",
+      "name": "Close Fist of Doom",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "3",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--away-cancel",
+      "name": "(Air) Away Cancel",
+      "type": "special",
+      "input": [
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--forward-cancel",
+      "name": "(Air) Forward Cancel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--cancel",
+      "name": "(Air) Cancel",
+      "type": "special",
+      "input": [
+        "up"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "far-fist-of-doom",
+      "name": "Far Fist of Doom",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "3",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--away-cancel",
+      "name": "(Air) Away Cancel",
+      "type": "special",
+      "input": [
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--forward-cancel",
+      "name": "(Air) Forward Cancel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--cancel",
+      "name": "(Air) Cancel",
+      "type": "special",
+      "input": [
+        "up"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--fist-of-doom",
+      "name": "(Air) Fist of Doom",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--cancel",
+      "name": "(Air) Cancel",
+      "type": "special",
+      "input": [
+        "up"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "doom-fury",
+      "name": "Doom Fury",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--dash-away",
+      "name": "(Air) Dash Away",
+      "type": "special",
+      "input": [
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--dash-forward",
+      "name": "(Air) Dash Forward",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "final-resting-place",
+      "name": "Final Resting Place",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "broom-s-rosary",
+      "name": "Broom's Rosary",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Anung Un Rama"
+    },
+    {
+      "id": "agrippa-s-charm",
+      "name": "Agrippa's Charm",
+      "type": "normal",
+      "input": [
+        "down",
+        "forward",
+        "4"
+      ],
+      "category": "Anung Un Rama"
+    },
+    {
+      "id": "whittier-s-amulet",
+      "name": "Whittier's Amulet",
+      "type": "normal",
+      "input": [
+        "down",
+        "back",
+        "4"
+      ],
+      "category": "Anung Un Rama"
+    },
+    {
+      "id": "mohlomi-s-bell",
+      "name": "Mohlomi's Bell",
+      "type": "normal",
+      "input": [
+        "down",
+        "down",
+        "4"
+      ],
+      "category": "Anung Un Rama"
     }
   ]
 }

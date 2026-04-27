@@ -253,7 +253,7 @@ export const CharacterSelectView: React.FC<Props> = ({
               marginTop: 'auto',
               paddingTop: '0.75rem',
             }}>
-              {isComingSoon ? (
+              {isComingSoon && (
                 <div style={{
                   padding: '0.2rem 0.6rem',
                   borderRadius: 'var(--radius-full)',
@@ -266,22 +266,6 @@ export const CharacterSelectView: React.FC<Props> = ({
                   letterSpacing: '0.1em',
                 }}>
                   Coming Soon
-                </div>
-              ) : (
-                <div style={{
-                  padding: '0.2rem 0.6rem',
-                  borderRadius: 'var(--radius-full)',
-                  background: isHovered ? `${accentColor}15` : 'var(--bg-elevated)',
-                  border: `1px solid ${isHovered ? `${accentColor}50` : 'var(--border-medium)'}`,
-                  fontSize: '0.75rem',
-                  fontWeight: 700,
-                  color: isHovered ? accentColor : 'var(--text-secondary)',
-                  opacity: (character.moveCount && character.moveCount > 0) ? 1 : 0,
-                  transition: 'all 0.3s ease',
-                }}>
-                  {[
-                    character.moveCount ? `${character.moveCount} Moves` : null
-                  ].filter(Boolean).join(' | ') || 'No Data'}
                 </div>
               )}
             </div>
@@ -329,12 +313,12 @@ export const CharacterSelectView: React.FC<Props> = ({
       }}>
 
         <div style={{
-          fontSize: '0.75rem',
+          fontSize: '1rem',
           textTransform: 'uppercase',
-          letterSpacing: '0.2em',
+          letterSpacing: '0.25em',
           color: 'var(--accent-indigo)',
-          fontWeight: 700,
-          marginBottom: '0.5rem',
+          fontWeight: 800,
+          marginBottom: '0.75rem',
           fontFamily: "'JetBrains Mono', monospace",
         }}>
           SELECT CHARACTER
@@ -351,7 +335,7 @@ export const CharacterSelectView: React.FC<Props> = ({
           {game.name}
         </h1>
         <div style={{
-          fontSize: '0.85rem',
+          fontSize: '1.2rem',
           color: 'var(--text-tertiary)',
           fontFamily: "'JetBrains Mono', monospace",
         }}>

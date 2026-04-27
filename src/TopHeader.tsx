@@ -153,50 +153,56 @@ export const TopHeader: React.FC<TopHeaderProps> = ({
           {/* Right tools: GameGlance controls or Social links */}
           <div className="top-header-social" style={{ marginLeft: 'auto', display: 'flex', alignItems: 'center', gap: '0.85rem' }}>
             {(selectedCount > 0 && !hideGameGlanceControls) ? (
-              <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem', marginRight: '0.5rem' }}>
+              <div style={{ display: 'flex', alignItems: 'center', gap: '0.75rem', marginRight: '0.5rem' }}>
                 <button
                   onClick={onClearGameGlance}
                   style={{
-                    background: 'transparent',
-                    border: '1px solid var(--border-subtle)',
+                    background: 'var(--bg-card)',
+                    border: '1px solid var(--border-medium)',
                     color: 'var(--text-secondary)',
-                    borderRadius: 'var(--radius-full)',
-                    padding: '4px 10px',
+                    borderRadius: 'var(--radius-md)',
+                    padding: '6px 12px',
                     fontSize: '0.85rem',
+                    fontWeight: 600,
                     cursor: 'pointer',
                     transition: 'all 0.2s ease',
+                    textTransform: 'uppercase',
+                    letterSpacing: '1px'
                   }}
-                  onMouseOver={e => { e.currentTarget.style.color = 'var(--text-primary)'; e.currentTarget.style.borderColor = 'var(--text-secondary)'; }}
-                  onMouseOut={e => { e.currentTarget.style.color = 'var(--text-secondary)'; e.currentTarget.style.borderColor = 'var(--border-subtle)'; }}
+                  onMouseOver={e => { e.currentTarget.style.color = 'var(--text-primary)'; e.currentTarget.style.borderColor = 'var(--accent-indigo)'; }}
+                  onMouseOut={e => { e.currentTarget.style.color = 'var(--text-secondary)'; e.currentTarget.style.borderColor = 'var(--border-medium)'; }}
                 >
-                  Clear
+                  Reset
                 </button>
                 <button
                   onClick={onLaunchGameGlance}
                   style={{
-                    background: 'var(--accent-indigo)',
+                    background: 'linear-gradient(135deg, var(--accent-indigo), #8b5cf6)',
                     border: 'none',
                     color: 'white',
-                    borderRadius: 'var(--radius-full)',
-                    padding: '4px 14px',
+                    borderRadius: 'var(--radius-md)',
+                    padding: '6px 16px',
                     fontSize: '0.9rem',
-                    fontWeight: 600,
+                    fontWeight: 700,
                     cursor: 'pointer',
                     display: 'flex',
                     alignItems: 'center',
-                    gap: '6px',
+                    gap: '8px',
                     transition: 'all 0.2s ease',
-                    boxShadow: '0 2px 8px rgba(99, 102, 241, 0.3)',
+                    boxShadow: '0 4px 12px rgba(99, 102, 241, 0.25)',
+                    textTransform: 'uppercase',
+                    letterSpacing: '1px'
                   }}
-                  onMouseOver={e => e.currentTarget.style.boxShadow = '0 2px 12px rgba(99, 102, 241, 0.5)'}
-                  onMouseOut={e => e.currentTarget.style.boxShadow = '0 2px 8px rgba(99, 102, 241, 0.3)'}
+                  onMouseOver={e => { e.currentTarget.style.boxShadow = '0 6px 16px rgba(99, 102, 241, 0.4)'; e.currentTarget.style.transform = 'translateY(-1px)'; }}
+                  onMouseOut={e => { e.currentTarget.style.boxShadow = '0 4px 12px rgba(99, 102, 241, 0.25)'; e.currentTarget.style.transform = 'translateY(0)'; }}
                 >
-                  <span>Glance</span>
+                  <span>Launch GG</span>
                   <span style={{ 
-                    background: 'rgba(255,255,255,0.2)', 
-                    padding: '2px 6px', 
-                    borderRadius: '10px', 
-                    fontSize: '0.8rem' 
+                    background: 'rgba(0,0,0,0.2)', 
+                    padding: '2px 8px', 
+                    borderRadius: 'var(--radius-sm)', 
+                    fontSize: '0.8rem',
+                    fontWeight: 800
                   }}>
                     {selectedCount}
                   </span>

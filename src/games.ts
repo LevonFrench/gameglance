@@ -2660,168 +2660,29 @@ rosterCount: 23,
       { platform: 'Steam', url: 'https://store.steampowered.com/app/520440/GUILTY_GEAR_Xrd_REV_2/' }
     ],
     characters: [
-      { id: 'answer', name: 'Answer', moveCount: 2 },
-      { id: 'baiken', name: 'Baiken', moveCount: 12 },
-      { id: 'bedman', name: 'Bedman', moveCount: 14 },
-      { id: 'chipp', name: 'Chipp', moveCount: 0 },
-      { id: 'dizzy', name: 'Dizzy', moveCount: 15 },
-      { id: 'elphelt', name: 'Elphelt', moveCount: 0 },
-      { id: 'faust', name: 'Faust', moveCount: 11 },
-      { id: 'i-no', name: 'I-No', moveCount: 13 },
-      { id: 'jam', name: 'Jam', moveCount: 0 },
-      { id: 'johnny', name: 'Johnny', moveCount: 11 },
-      { id: 'kum-haehyun', name: 'Kum Haehyun', moveCount: 2 },
-      { id: 'ky', name: 'Ky', moveCount: 0 },
-      { id: 'leo', name: 'Leo', moveCount: 0 },
-      { id: 'may', name: 'May', moveCount: 13 },
-      { id: 'millia', name: 'Millia', moveCount: 0 },
-      { id: 'potemkin', name: 'Potemkin', moveCount: 17 },
-      { id: 'ramlethal', name: 'Ramlethal', moveCount: 0 },
-      { id: 'raven', name: 'Raven', moveCount: 14 },
-      { id: 'sin', name: 'Sin', moveCount: 0 },
-      { id: 'slayer', name: 'Slayer', moveCount: 12 },
-      { id: 'sol', name: 'Sol', moveCount: 0 },
-      { id: 'venom', name: 'Venom', moveCount: 14 }
-    ],
-
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
-
-  },
-
-  {
-
-    id: 'guilty-gear-xx-accent-core-plus-r',
-
-    mameRomset: "",
-
-    name: "Guilty Gear XX Accent Core Plus R",
-    tagline: "Accent Core Plus R",
-
-    developer: "Arc System Works",
-
-    releaseYear: 2012,
-
-    platform: "Arcade, PS3, Xbox 360, Vita, PC, Switch",
-
-rosterCount: 25,
-
-        
-    systemMechanics: [
-      { name: 'Roman Cancel', description: 'Cancel any move on hit for 50% Tension.' , input: 'P+K+S' },
-      { name: 'False Roman Cancel', description: 'Cancel specific move frames for 25% Tension. Tight timing windows.' , input: 'P+K+S (at FRC point)' },
-      { name: 'Force Break', description: 'Enhanced special moves that cost 25% Tension. Purple flash on use.'  },
-      { name: 'Burst', description: 'Blue Burst escapes combos, Gold Burst fills Tension.' , input: 'D+button' },
-      { name: 'Faultless Defense', description: 'Block without chip damage or guard gauge depletion.' , input: '4+2 buttons' },
-      { name: 'Dead Angle Attack', description: 'Counter-attack while blocking.' , input: '6+2 buttons (blocking)' },
-      { name: 'Slashback', description: 'Precise parry with 2f window. Reduces blockstun significantly.' , input: '4+D (precise timing)' },
-      { name: 'Instant Kill', description: 'One-hit KO mode. Sacrifice Tension for an instant win.' , input: 'PKSH' }
-    ],
-
-    notationSystem: 'numpad',
-    tags: ["2D", "Anime"],
-    links: [
-      { title: 'Dustloop Wiki (GGACR)', url: 'https://dustloop.com/w/GGACR' },
-    ],
-    stores: [
-      { platform: 'Steam', url: 'https://store.steampowered.com/app/348550/Guilty_Gear_XX_Accent_Core_Plus_R/' },
-      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/guilty-gear-xx-accent-core-plus-r-switch/' }
-    ],
-    characters: [
-      { id: 'aba', name: 'A.B.A', moveCount: 0 },
-      { id: 'anji', name: 'Anji', moveCount: 0 },
-      { id: 'asuka', name: 'Asuka', moveCount: 0 },
-      { id: 'axl', name: 'Axl', moveCount: 0 },
-      { id: 'baiken', name: 'Baiken', moveCount: 27 },
+      { id: 'jack-o', name: "Jack-O'", moveCount: 0 },
+      { id: 'answer', name: 'Answer', moveCount: 0 },
+      { id: 'baiken', name: 'Baiken', moveCount: 0 },
       { id: 'bedman', name: 'Bedman', moveCount: 0 },
-      { id: 'bridget', name: 'Bridget', moveCount: 0 },
-      { id: 'chipp', name: 'Chipp', moveCount: 0 },
-      { id: 'elphelt', name: 'Elphelt', moveCount: 0 },
-      { id: 'faust', name: 'Faust', moveCount: 22 },
-      { id: 'giovanna', name: 'Giovanna', moveCount: 0 },
-      { id: 'goldlewis', name: 'Goldlewis', moveCount: 0 },
-      { id: 'happy-chaos', name: 'Happy Chaos', moveCount: 0 },
-      { id: 'i-no', name: 'I-No', moveCount: 0 },
-      { id: 'jack-o', name: 'Jack-O', moveCount: 0 },
-      { id: 'jam', name: 'Jam', moveCount: 0 },
-      { id: 'johnny', name: 'Johnny', moveCount: 0 },
-      { id: 'ky', name: 'Ky', moveCount: 0 },
-      { id: 'leo', name: 'Leo', moveCount: 0 },
-      { id: 'lucy', name: 'Lucy', moveCount: 0 },
-      { id: 'may', name: 'May', moveCount: 0 },
-      { id: 'millia', name: 'Millia', moveCount: 0 },
-      { id: 'nagoriyuki', name: 'Nagoriyuki', moveCount: 0 },
-      { id: 'potemkin', name: 'Potemkin', moveCount: 0 },
+      { id: 'chipp-zanuff', name: 'Chipp Zanuff', moveCount: 0 },
       { id: 'dizzy', name: 'Dizzy', moveCount: 0 },
-      { id: 'ramlethal', name: 'Ramlethal', moveCount: 0 },
-      { id: 'sin', name: 'Sin', moveCount: 0 },
+      { id: 'elphelt-valentine', name: 'Elphelt Valentine', moveCount: 0 },
+      { id: 'faust', name: 'Faust', moveCount: 0 },
+      { id: 'i-no', name: 'I-No', moveCount: 0 },
+      { id: 'jam-kuradoberi', name: 'Jam Kuradoberi', moveCount: 0 },
+      { id: 'johnny', name: 'Johnny', moveCount: 0 },
+      { id: 'kum-haehyun', name: 'Kum Haehyun', moveCount: 0 },
+      { id: 'ky-kiske', name: 'Ky Kiske', moveCount: 0 },
+      { id: 'leo-whitefang', name: 'Leo Whitefang', moveCount: 0 },
+      { id: 'may', name: 'May', moveCount: 0 },
+      { id: 'millia-rage', name: 'Millia Rage', moveCount: 0 },
+      { id: 'potemkin', name: 'Potemkin', moveCount: 0 },
+      { id: 'ramlethal-valentine', name: 'Ramlethal Valentine', moveCount: 0 },
+      { id: 'raven', name: 'Raven', moveCount: 0 },
+      { id: 'sin-kiske', name: 'Sin Kiske', moveCount: 0 },
       { id: 'slayer', name: 'Slayer', moveCount: 0 },
-      { id: 'sol', name: 'Sol', moveCount: 0 },
-      { id: 'testament', name: 'Testament', moveCount: 0 },
-      { id: 'unika', name: 'Unika', moveCount: 0 },
-      { id: 'venom', name: 'Venom', moveCount: 0 },
-      { id: 'zato-1', name: 'Zato-1', moveCount: 0 },
-    ],
-
-    tabs: ['Special Moves', 'Super Combos', 'Finishers', 'Unique Attacks', 'Normal Moves', 'Command Throws', 'Normal Throws', 'Common Moves']
-
-  },
-
-  {
-
-    id: 'hyper-street-fighter-ii',
-
-    mameRomset: "hsf2",
-
-    name: "Hyper Street Fighter II",
-    tagline: "The Anniversary Edition",
-
-    developer: "Capcom",
-
-    releaseYear: 2003,
-
-        
-    systemMechanics: [
-      { name: 'Version Select', description: 'Choose any version of each character from WW through Super Turbo. Mix eras in one match.'  },
-      { name: 'Super Combos', description: 'Super Turbo characters have access to devastating super moves at full meter.'  },
-      { name: 'Throw Teching', description: 'Reduce throw damage with a well-timed tech input.'  },
-      { name: 'Chip KO', description: 'Special moves and supers can kill through block with chip damage.'  },
-      { name: 'Reversal Timing', description: 'Input a special move on the first wakeup frame for an automatic reversal.'  },
-      { name: 'Dizzy System', description: 'Taking too many hits in quick succession stuns the character. Mash to recover.'  },
-      { name: 'Safe Jumps', description: 'Time jump attacks to land and block before a reversal can hit.'  },
-      { name: 'Crossup', description: 'Jump over the opponent with an attack that must be blocked in the opposite direction.'  }
-    ],
-
-    notationSystem: 'traditional',
-    tags: ["2D"],
-    searchAliases: ['hsf2 ae', 'hyper sf2'],
-    links: [
-      { title: 'SuperCombo Wiki', url: 'https://wiki.supercombo.gg/' },
-    ],
-    characters: [
-      { id: 'ryu', name: 'Ryu', moveCount: 9 },
-      { id: 'ken', name: 'Ken', moveCount: 12 },
-      { id: 'ehonda', name: 'Ehonda', moveCount: 0 },
-      { id: 'chun-li', name: 'Chun Li', moveCount: 15 },
-      { id: 'blanka', name: 'Blanka', moveCount: 17 },
-      { id: 'zangief', name: 'Zangief', moveCount: 35 },
-      { id: 'guile', name: 'Guile', moveCount: 20 },
-      { id: 'dhalsim', name: 'Dhalsim', moveCount: 29 },
-      { id: 'thawk', name: 'Thawk', moveCount: 0 },
-      { id: 'cammy', name: 'Cammy', moveCount: 12 },
-      { id: 'fei-long', name: 'Fei Long', moveCount: 18 },
-      { id: 'dee-jay', name: 'Dee Jay', moveCount: 34 },
-      { id: 'balrog', name: 'Balrog', moveCount: 12 },
-      { id: 'vega', name: 'Vega', moveCount: 11 },
-      { id: 'sagat', name: 'Sagat', moveCount: 23 },
-      { id: 'mbison', name: 'Mbison', moveCount: 0 },
-      { id: 'akuma', name: 'Akuma', moveCount: 0 }
-    ],
-
-        stores: [
-      { platform: 'Steam', url: 'https://store.steampowered.com/app/586200/Street_Fighter_30th_Anniversary_Collection/' },
-      { platform: 'PlayStation', url: 'https://store.playstation.com/en-us/product/UP0102-CUSA11392_00-SF30THBUNDLESF30' },
-      { platform: 'Xbox', url: 'https://www.xbox.com/en-US/games/store/street-fighter-30th-anniversary-collection/c24t2nldbxg1' },
-      { platform: 'Nintendo', url: 'https://www.nintendo.com/us/store/products/street-fighter-30th-anniversary-collection-switch/' },
+      { id: 'sol-badguy', name: 'Sol Badguy', moveCount: 0 },
+      { id: 'venom', name: 'Venom', moveCount: 0 }
     ],
     tabs: ['Special Moves', 'Super Arts', 'Command Throws', 'Normal Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves']
 
@@ -11472,4 +11333,97 @@ rosterCount: 8,
     tabs: ['Special Moves', 'Super Combos', 'Normal Moves', 'Common Moves', 'Finishers']
   },
 
+  {
+    id: 'dead-or-alive-6',
+    name: 'Dead or Alive 6',
+    tagline: 'Last Round',
+    developer: 'Koei Tecmo',
+    releaseYear: 2019,
+    platform: 'PS4, Xbox One, PC',
+    rosterCount: 29,
+    notationSystem: 'numpad',
+    tags: ['3D'],
+    characters: [
+      { id: 'eliot', name: 'Eliot', moveCount: 0 },
+      { id: 'jann-lee', name: 'Jann Lee', moveCount: 0 },
+      { id: 'ryu-hayabusa', name: 'Ryu Hayabusa', moveCount: 0 },
+      { id: 'mai-shiranui', name: 'Mai Shiranui', moveCount: 0 },
+      { id: 'diego', name: 'Diego', moveCount: 0 },
+      { id: 'lisa-hamilton', name: 'Lisa Hamilton', moveCount: 0 },
+      { id: 'hitomi', name: 'Hitomi', moveCount: 0 },
+      { id: 'raidou', name: 'Raidou', moveCount: 0 },
+      { id: 'rachel', name: 'Rachel', moveCount: 0 },
+      { id: 'bass', name: 'Bass', moveCount: 0 },
+      { id: 'phase-4', name: 'Phase 4', moveCount: 0 },
+      { id: 'christie', name: 'Christie', moveCount: 0 },
+      { id: 'ayane', name: 'Ayane', moveCount: 0 },
+      { id: 'kokoro', name: 'Kokoro', moveCount: 0 },
+      { id: 'helena', name: 'Helena', moveCount: 0 },
+      { id: 'kula-diamond', name: 'Kula Diamond', moveCount: 0 },
+      { id: 'honoka', name: 'Honoka', moveCount: 0 },
+      { id: 'mila', name: 'Mila', moveCount: 0 },
+      { id: 'tina', name: 'Tina', moveCount: 0 },
+      { id: 'momiji', name: 'Momiji', moveCount: 0 },
+      { id: 'bayman', name: 'Bayman', moveCount: 0 },
+      { id: 'kasumi', name: 'Kasumi', moveCount: 0 },
+      { id: 'nyotengu', name: 'Nyotengu', moveCount: 0 },
+      { id: 'rig', name: 'Rig', moveCount: 0 },
+      { id: 'tamaki', name: 'Tamaki', moveCount: 0 },
+      { id: 'brad-wong', name: 'Brad Wong', moveCount: 0 },
+      { id: 'zack', name: 'Zack', moveCount: 0 },
+      { id: 'leifang', name: 'Leifang', moveCount: 0 },
+      { id: 'marie-rose', name: 'Marie Rose', moveCount: 0 }
+    ],
+    tabs: ['Unique Strikes', 'Back-Facing Strikes', 'Throws', 'Holds', 'Ground Attacks', 'Break System', 'Special Moves']
+  },
+  {
+    id: 'marvel-vs-capcom-infinite',
+    name: 'Marvel vs. Capcom: Infinite',
+    tagline: '',
+    developer: 'Capcom',
+    releaseYear: 2017,
+    platform: 'PS4, Xbox One, PC',
+    rosterCount: 36,
+    notationSystem: 'traditional',
+    tags: ['2D', 'Tag'],
+    characters: [
+      { id: 'arthur', name: 'Arthur', moveCount: 0 },
+      { id: 'black-panther', name: 'Black Panther', moveCount: 0 },
+      { id: 'black-widow', name: 'Black Widow', moveCount: 0 },
+      { id: 'captain-america', name: 'Captain America', moveCount: 0 },
+      { id: 'captain-marvel', name: 'Captain Marvel', moveCount: 0 },
+      { id: 'chris', name: 'Chris', moveCount: 0 },
+      { id: 'chun-li', name: 'Chun Li', moveCount: 0 },
+      { id: 'dante', name: 'Dante', moveCount: 0 },
+      { id: 'doctor-strange', name: 'Doctor Strange', moveCount: 0 },
+      { id: 'dormammu', name: 'Dormammu', moveCount: 0 },
+      { id: 'firebrand', name: 'Firebrand', moveCount: 0 },
+      { id: 'frank-west', name: 'Frank West', moveCount: 0 },
+      { id: 'gamora', name: 'Gamora', moveCount: 0 },
+      { id: 'ghost-rider', name: 'Ghost Rider', moveCount: 0 },
+      { id: 'haggar', name: 'Haggar', moveCount: 0 },
+      { id: 'hawkeye', name: 'Hawkeye', moveCount: 0 },
+      { id: 'hulk', name: 'Hulk', moveCount: 0 },
+      { id: 'iron-man', name: 'Iron Man', moveCount: 0 },
+      { id: 'jedah', name: 'Jedah', moveCount: 0 },
+      { id: 'monster-hunter', name: 'Monster Hunter', moveCount: 0 },
+      { id: 'morrigan', name: 'Morrigan', moveCount: 0 },
+      { id: 'nemesis', name: 'Nemesis', moveCount: 0 },
+      { id: 'nova', name: 'Nova', moveCount: 0 },
+      { id: 'rocket-raccoon', name: 'Rocket Raccoon', moveCount: 0 },
+      { id: 'ryu', name: 'Ryu', moveCount: 0 },
+      { id: 'sigma', name: 'Sigma', moveCount: 0 },
+      { id: 'spencer', name: 'Spencer', moveCount: 0 },
+      { id: 'spider-man', name: 'Spider Man', moveCount: 0 },
+      { id: 'strider-hiryu', name: 'Strider Hiryu', moveCount: 0 },
+      { id: 'thanos', name: 'Thanos', moveCount: 0 },
+      { id: 'thor', name: 'Thor', moveCount: 0 },
+      { id: 'ultron', name: 'Ultron', moveCount: 0 },
+      { id: 'venom', name: 'Venom', moveCount: 0 },
+      { id: 'winter-soldier', name: 'Winter Soldier', moveCount: 0 },
+      { id: 'x', name: 'X', moveCount: 0 },
+      { id: 'zero', name: 'Zero', moveCount: 0 }
+    ],
+    tabs: ['Special Moves', 'Hyper Combos', 'Unique Traits', 'Throws', 'Normal Moves', 'Common Moves']
+  },
 ];

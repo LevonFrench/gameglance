@@ -1,58 +1,833 @@
 {
+  "id": "gorilla-grodd",
   "name": "Gorilla Grodd",
-  "character": "Gorilla Grodd",
-  "game": "Injustice 2",
   "movesList": [
     {
-      "name": "Primal Lunge",
-      "input": "463",
-      "type": "special"
-    },
-    {
-      "name": "Ground Pound",
-      "input": "223",
-      "type": "special"
-    },
-    {
-      "name": "Stampede",
-      "input": "461",
-      "type": "special"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "knuckle-swipe",
+      "name": "Knuckle Swipe",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "low-bash",
+      "name": "Low Bash",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "straight-paw",
+      "name": "Straight Paw",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "skull-crush",
+      "name": "Skull Crush",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "straight-kick",
+      "name": "Straight Kick",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "primate-slam",
+      "name": "Primate Slam",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "king-strike",
+      "name": "King Strike",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "fist-flurry",
+      "name": "Fist Flurry",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "heavy-handed",
+      "name": "Heavy Handed",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "gorilla-fist",
+      "name": "Gorilla Fist",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "secret-sweep",
+      "name": "Secret Sweep",
+      "type": "normal",
+      "input": [
+        "Down-right",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "carnivore-sweep",
+      "name": "Carnivore Sweep",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "fatal-strike",
+      "name": "Fatal Strike",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "brutal-punch",
+      "name": "Brutal Punch",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "savage-kick",
+      "name": "Savage Kick",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "heavy-handed",
+      "name": "Heavy Handed",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "gorilla-fist",
+      "name": "Gorilla Fist",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "slaughtering-humans",
+      "name": "Slaughtering Humans",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "brutal-nature",
+      "name": "Brutal Nature",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "fierce-appetite",
+      "name": "Fierce Appetite",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "2",
+        ">",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "bloodthirsty-ruler",
+      "name": "Bloodthirsty Ruler",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "combo",
+      "input": [
+        "MB"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "cutthroat-king",
+      "name": "Cutthroat King",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "cruel-intentions",
+      "name": "Cruel Intentions",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2",
+        ">",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "combo",
+      "input": [
+        "MB"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "animalistic",
+      "name": "Animalistic",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "salvation-run",
+      "name": "Salvation Run",
+      "type": "special",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Telekinetic Power"
+    },
+    {
+      "id": "hyper-intelligence",
+      "name": "Hyper-Intelligence",
+      "type": "special",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Telekinetic Power"
+    },
+    {
+      "id": "primal-lunge",
+      "name": "Primal Lunge",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--fatal-strike",
+      "name": "(Air) Fatal Strike",
+      "type": "special",
+      "input": [
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--brutal-punch",
+      "name": "(Air) Brutal Punch",
+      "type": "special",
+      "input": [
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--savage-kick",
+      "name": "(Air) Savage Kick",
+      "type": "special",
+      "input": [
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--head-bash",
+      "name": "(Air) Head Bash",
+      "type": "special",
+      "input": [
+        "THROW"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "close-primal-lunge",
+      "name": "Close Primal Lunge",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "1",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--fatal-strike",
+      "name": "(Air) Fatal Strike",
+      "type": "special",
+      "input": [
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--brutal-punch",
+      "name": "(Air) Brutal Punch",
+      "type": "special",
+      "input": [
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--savage-kick",
+      "name": "(Air) Savage Kick",
+      "type": "special",
+      "input": [
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--head-bash",
+      "name": "(Air) Head Bash",
+      "type": "special",
+      "input": [
+        "THROW"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "far-primal-lunge",
+      "name": "Far Primal Lunge",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "1",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--fatal-strike",
+      "name": "(Air) Fatal Strike",
+      "type": "special",
+      "input": [
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--brutal-punch",
+      "name": "(Air) Brutal Punch",
+      "type": "special",
+      "input": [
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--savage-kick",
+      "name": "(Air) Savage Kick",
+      "type": "special",
+      "input": [
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--head-bash",
+      "name": "(Air) Head Bash",
+      "type": "special",
+      "input": [
+        "THROW"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "ground-pound",
+      "name": "Ground Pound",
+      "type": "special",
+      "input": [
+        "down",
+        "down",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "stampede",
+      "name": "Stampede",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "back",
+        "back",
+        "or",
+        "forward",
+        "forward",
+        "or",
+        "STANCE"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "psionic-lift",
+      "name": "Psionic Lift",
+      "type": "special",
+      "input": [
+        "down",
+        "down",
+        "1"
+      ],
+      "category": "Telekinetic Power"
+    },
+    {
+      "id": "psionic-dash",
+      "name": "Psionic Dash",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Telekinetic Power"
+    },
+    {
+      "id": "cancel-lift",
+      "name": "Cancel Lift",
+      "type": "special",
+      "input": [
+        "down",
+        "down"
+      ],
+      "category": "Telekinetic Power"
+    },
+    {
+      "id": "psionic-blast",
+      "name": "Psionic Blast",
+      "type": "special",
+      "input": [
+        "1"
+      ],
+      "category": "Telekinetic Power"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Telekinetic Power"
+    },
+    {
+      "id": "ground-slam",
+      "name": "Ground Slam",
+      "type": "special",
+      "input": [
+        "3"
+      ],
+      "category": "Telekinetic Power"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Telekinetic Power"
+    },
+    {
+      "id": "psionic-push",
+      "name": "Psionic Push",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "2"
+      ],
+      "category": "Telekinetic Power"
+    },
+    {
+      "id": "mind-control",
+      "name": "Mind Control",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Telekinetic Power"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Telekinetic Power"
+    },
+    {
+      "id": "savage-strength",
+      "name": "Savage Strength",
+      "type": "special",
+      "input": [
+        "down",
+        "down",
+        "3"
+      ],
+      "category": "Telekinetic Power"
+    },
+    {
+      "id": "animal-instinct",
+      "name": "Animal Instinct",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "telekinesis",
+      "name": "Telekinesis",
+      "type": "special",
+      "input": [
+        "4"
+      ],
+      "category": "Telekinetic Power"
     }
   ]
 }

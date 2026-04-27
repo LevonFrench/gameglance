@@ -21,6 +21,7 @@ interface Props {
   onClearGameGlance?: () => void;
   onBack: () => void;
   onHome: () => void;
+  showFrameData?: boolean;
 }
 
 const formatNormalName = (name: string): string => {
@@ -161,7 +162,7 @@ const OkiTooltip = ({ content, children }: { content: React.ReactNode; children:
   </div>
 );
 
-export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, notationSystem, onToggleMove, onLaunchMainScreen, onLaunchComboView, onClearGameGlance, onBack, onHome }) => {
+export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, notationSystem, onToggleMove, onLaunchMainScreen, onLaunchComboView, onClearGameGlance, onBack, onHome, showFrameData = true }) => {
   useArrowNavigation('[id^="move-"]');
 
   const [characterData, setCharacterData] = useState<CharacterExport | null>(null);
@@ -211,6 +212,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
       'Offensive Art',
       'Defensive Art',
       'Throws', 
+      'Combos',
       'Unique Attacks', 
       'Normal Moves', 
       'Common Moves', 
@@ -230,7 +232,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     }
     const baseTabs = game.tabs && game.tabs.length > 0 ? game.tabs : GLOBAL_DEFAULT_SORT;
     const combinedTabs = Array.from(new Set(baseTabs))
-      .filter(t => t !== 'Command Throws' && t !== 'Normal Throws' && t !== 'Combos');
+      .filter(t => t !== 'Command Throws' && t !== 'Normal Throws');
     const sorted = combinedTabs.sort((a,b) => {
       let idxA = pref.indexOf(a);
       let idxB = pref.indexOf(b);
@@ -517,7 +519,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
   const isSuperMove = (m: Move) => m.type && m.type.toLowerCase() === 'super' || /\b(super|climax|meteor)\b/i.test(m.name);
   
   const isNormalThrow = (m: Move) => {
-    const input = m.input.toLowerCase();
+    const input = (Array.isArray(m.input) ? m.input.join('') : String(m.input || '')).toLowerCase();
     const name = m.name.toLowerCase();
     if (name.includes('command')) return false;
     
@@ -540,7 +542,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     
     // Fallback for games where command throws are typed as 'special' (e.g. SF6)
     if (m.type === 'special') {
-      const input = m.input.toLowerCase();
+      const input = (Array.isArray(m.input) ? m.input.join('') : String(m.input || '')).toLowerCase();
       const name = m.name.toLowerCase();
       
       const throwKeywords = ['throw', 'bomb', 'drop', 'buster', 'piledriver', 'suplex', 'choke', 'slam', 'driver', 'toss'];
@@ -567,6 +569,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
       const sf6Specials = (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'special' && isCommandThrow(m));
       return [...throws, ...sf6Specials];
     },
+    'Combos':         (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'combo'),
     'Common Moves':   (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'common'),
     'Moves':          (d) => d.movesList || [],
     'Fatalities':     (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'finisher'),
@@ -748,9 +751,37 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         zIndex: 0,
         overflow: 'hidden',
       }}>
-        {Array(60).fill((characterData.character || characterData.name || characterId || '').toUpperCase()).map((text, i) => (
-          <span key={i} style={{ whiteSpace: 'nowrap' }}>{text}</span>
-        ))}
+        {(() => {
+          const mainText = (characterData.character || characterData.name || characterId || '').toUpperCase();
+          const specialMoves = (characterData.movesList || [])
+            .filter(m => {
+              const t = m.type?.toLowerCase() || '';
+              return t.includes('special') || t.includes('super') || t.includes('hyper') || t.includes('art') || t.includes('desperation');
+            })
+            .map(m => formatNormalName(m.name).toUpperCase())
+            .filter(n => n.length > 0 && n !== 'UNKNOWN');
+
+          const watermarkSequence = [];
+          for (let i = 0; i < 60; i++) {
+            watermarkSequence.push({ text: mainText, isMain: true });
+            if (specialMoves.length > 0) {
+              watermarkSequence.push({ text: specialMoves[i % specialMoves.length], isMain: false });
+            } else {
+              watermarkSequence.push({ text: mainText, isMain: true });
+            }
+          }
+
+          return watermarkSequence.map((item, i) => (
+            <span key={i} style={{ 
+              whiteSpace: 'nowrap', 
+              opacity: item.isMain ? 1 : 0.4,
+              fontWeight: item.isMain ? 900 : 700,
+              fontSize: item.isMain ? '1em' : '0.65em'
+            }}>
+              {item.text}
+            </span>
+          ));
+        })()}
       </div>
 
       <div style={{
@@ -1104,7 +1135,8 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                   if (!stanceGroups.has(prefix)) stanceGroups.set(prefix, []);
                   stanceGroups.get(prefix)!.push(m);
                 } else {
-                  const stanceMatch = m.input.match(/^([A-Z]{3,})\s+(.*)/);
+                  const inputStr = Array.isArray(m.input) ? m.input.join(' ') : String(m.input || '');
+                  const stanceMatch = inputStr.match(/^([A-Z]{3,})\s+(.*)/);
                   if (stanceMatch) {
                     const prefix = stanceMatch[1];
                     if (!stanceGroups.has(prefix)) stanceGroups.set(prefix, []);
@@ -1125,6 +1157,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
               }
 
               const renderStatsGrid = (m: Move) => {
+                if (!showFrameData) return null;
                 if (!m.frameData && (!m.properties || m.properties.length === 0)) return null;
                 const f = m.frameData || {};
                 
@@ -1208,8 +1241,8 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
               };
 
               const renderMoveCard = (move: Move, idx: number) => {
-                let cleanMainInput = move.input.replace(/^↳\s*/, '');
-                if (game.id.startsWith('soulcalibur')) {
+                let cleanMainInput = Array.isArray(move.input) ? move.input : move.input.replace(/^↳\s*/, '');
+                if (game.id.startsWith('soulcalibur') && typeof cleanMainInput === 'string') {
                   cleanMainInput = formatSCInput(cleanMainInput);
                 }
 
@@ -1238,9 +1271,9 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                       {childrenMoves.map(child => {
                         const isChildSelected = selectedPlaylist && selectedPlaylist.some(m => m && child && m.id === child.id);
                         const cleanChildName = formatNormalName(child.name.replace(/^↳\s*/, ''));
-                        let cleanChildInput = child.input.replace(/^↳\s*/, '');
+                        let cleanChildInput = Array.isArray(child.input) ? child.input : child.input.replace(/^↳\s*/, '');
                         
-                        if (game.id.startsWith('soulcalibur')) {
+                        if (game.id.startsWith('soulcalibur') && typeof cleanChildInput === 'string') {
                           cleanChildInput = formatSCInput(cleanChildInput);
                         }
                         const childHasChildren = childrenMap.has(child.id) && childrenMap.get(child.id)!.length > 0;
@@ -1270,7 +1303,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                               </div>
                               <div style={{ transform: 'scale(0.8)', transformOrigin: 'right center' }}>
                                 <GlyphSequence 
-                                  inputs={[cleanChildInput]} 
+                                  inputs={Array.isArray(cleanChildInput) ? cleanChildInput : [cleanChildInput]} 
                                   controller={effectiveController} 
                                   notationSystem={(game.notationSystem === 'mk' || game.notationSystem === 'tekken') ? game.notationSystem : (notationSystem || game.notationSystem)} 
                                   isCombo={child.type?.toLowerCase() === 'combo'}
@@ -1327,7 +1360,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                           {tab !== 'Combos' && (() => {
                             const dlMatch = move.name.match(/\(DL(\d+)\)/);
                             const cleanName = formatNormalName(move.name.replace(/^↳\s*/, '').replace(/\(DL\d+\)/, '').trim());
-                            const isFollowUp = move.input.includes('~');
+                            const isFollowUp = Array.isArray(move.input) ? move.input.includes('~') : move.input.includes('~');
 
                             return (
                               <div style={{ paddingRight: '2rem' }}>
@@ -1425,7 +1458,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                           border: '1px inset rgba(255,255,255,0.05)',
                         }}>
                           <GlyphSequence 
-                            inputs={[cleanMainInput]} 
+                            inputs={Array.isArray(cleanMainInput) ? cleanMainInput : [cleanMainInput]} 
                             controller={effectiveController} 
                             notationSystem={(game.notationSystem === 'mk' || game.notationSystem === 'tekken') ? game.notationSystem : (notationSystem || game.notationSystem)} 
                             isCombo={move.type?.toLowerCase() === 'combo'}

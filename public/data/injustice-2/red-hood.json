@@ -1,58 +1,998 @@
 {
+  "id": "red-hood",
   "name": "Red Hood",
-  "character": "Red Hood",
-  "game": "Injustice 2",
   "movesList": [
     {
-      "name": "Pistol Whip",
-      "input": "261",
-      "type": "special"
-    },
-    {
-      "name": "Lethal Lunge",
-      "input": "462",
-      "type": "special"
-    },
-    {
-      "name": "Ground Mine",
-      "input": "243",
-      "type": "special"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "gotham-s-fist",
+      "name": "Gotham's Fist",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "deadly-palm",
+      "name": "Deadly Palm",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "quick-strike",
+      "name": "Quick Strike",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "hammer-hook",
+      "name": "Hammer Hook",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "shin-slam",
+      "name": "Shin Slam",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "bloody-knuckles",
+      "name": "Bloody Knuckles",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "rising-blade",
+      "name": "Rising Blade",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "flick-kick",
+      "name": "Flick Kick",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "side-kick",
+      "name": "Side Kick",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "down-blade",
+      "name": "Down Blade",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "street-sweep",
+      "name": "Street Sweep",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "strong-hand",
+      "name": "Strong Hand",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "hate-stab",
+      "name": "Hate Stab",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "boot-bash",
+      "name": "Boot Bash",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "side-kick",
+      "name": "Side Kick",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "down-blade",
+      "name": "Down Blade",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "lethal-force",
+      "name": "Lethal Force",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "extreme-measures",
+      "name": "Extreme Measures",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "murderous-vigilante",
+      "name": "Murderous Vigilante",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "no-jokes",
+      "name": "No Jokes",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "another-outlaw",
+      "name": "Another Outlaw",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "death-in-the-family",
+      "name": "Death In The Family",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "gunned-down",
+      "name": "Gunned Down",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "seeking-revenge",
+      "name": "Seeking Revenge",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "3",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "killing-criminals",
+      "name": "Killing Criminals",
+      "type": "combo",
+      "input": [
+        "3",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "under-the-hood",
+      "name": "Under The Hood",
+      "type": "combo",
+      "input": [
+        "3",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "ground-mine",
+      "name": "Ground Mine",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "close-ground-mine",
+      "name": "Close Ground Mine",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "1",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "far-ground-mine",
+      "name": "Far Ground Mine",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "1",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "very-far-ground-mine",
+      "name": "Very Far Ground Mine",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "1",
+        "up"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "spin-parry",
+      "name": "Spin Parry",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "low-spin-parry",
+      "name": "Low Spin Parry",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1",
+        "down"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "gotham-stars",
+      "name": "Gotham Stars",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "up-gotham-stars",
+      "name": "Up Gotham Stars",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--akimbo-blaze",
+      "name": "(Air) Akimbo Blaze",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "lethal-lunge",
+      "name": "Lethal Lunge",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "fatal-drop",
+      "name": "Fatal Drop",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--vendetta-slam",
+      "name": "(Air) Vendetta Slam",
+      "type": "special",
+      "input": [
+        "down",
+        "+",
+        "THROW"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "gotham-s-outlaw",
+      "name": "Gotham's Outlaw",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "electric-hammers",
+      "name": "Electric Hammers",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "1"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "quick-shot",
+      "name": "Quick Shot",
+      "type": "normal",
+      "input": [
+        "2"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "kneecappin-",
+      "name": "Kneecappin'",
+      "type": "normal",
+      "input": [],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "electric-hammers",
+      "name": "Electric Hammers",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "hammer-slam",
+      "name": "Hammer Slam",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "double-hammers",
+      "name": "Double Hammers",
+      "type": "normal",
+      "input": [
+        "3",
+        ">",
+        "3"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "hammer-fury",
+      "name": "Hammer Fury",
+      "type": "normal",
+      "input": [
+        "3",
+        ">",
+        "3",
+        ">",
+        "2"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "low-shot",
+      "name": "Low Shot",
+      "type": "normal",
+      "input": [
+        "3",
+        ">",
+        "3",
+        ">",
+        "2",
+        ">",
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "cracking-skulls",
+      "name": "Cracking Skulls",
+      "type": "normal",
+      "input": [],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "electric-hammers",
+      "name": "Electric Hammers",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "hammer-slam",
+      "name": "Hammer Slam",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "double-hammers",
+      "name": "Double Hammers",
+      "type": "normal",
+      "input": [
+        "3",
+        ">",
+        "3"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "hammer-fury",
+      "name": "Hammer Fury",
+      "type": "normal",
+      "input": [
+        "3",
+        ">",
+        "3",
+        ">",
+        "2"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "brain-buster",
+      "name": "Brain Buster",
+      "type": "normal",
+      "input": [
+        "3",
+        ">",
+        "3",
+        ">",
+        "2",
+        ">",
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "battle-chain",
+      "name": "Battle Chain",
+      "type": "normal",
+      "input": [],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "electric-hammers",
+      "name": "Electric Hammers",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "hammer-slam",
+      "name": "Hammer Slam",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "double-hammers",
+      "name": "Double Hammers",
+      "type": "normal",
+      "input": [
+        "3",
+        ">",
+        "3"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "hammer-fury",
+      "name": "Hammer Fury",
+      "type": "normal",
+      "input": [
+        "3",
+        ">",
+        "3",
+        ">",
+        "2"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "switch-and-shoot",
+      "name": "Switch and Shoot",
+      "type": "normal",
+      "input": [
+        "3",
+        ">",
+        "3",
+        ">",
+        "2",
+        ">",
+        "THROW",
+        "or",
+        "3",
+        ">",
+        "3",
+        ">",
+        "2",
+        ">",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "bullet-barrage",
+      "name": "Bullet Barrage",
+      "type": "normal",
+      "input": [],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "electric-hammers",
+      "name": "Electric Hammers",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "hammer-slam",
+      "name": "Hammer Slam",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "double-hammers",
+      "name": "Double Hammers",
+      "type": "normal",
+      "input": [
+        "3",
+        ">",
+        "3"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "hammer-fury",
+      "name": "Hammer Fury",
+      "type": "normal",
+      "input": [
+        "3",
+        ">",
+        "3",
+        ">",
+        "2"
+      ],
+      "category": "Going Ballistic"
+    },
+    {
+      "id": "bullet-storm",
+      "name": "Bullet Storm",
+      "type": "normal",
+      "input": [
+        "3",
+        ">",
+        "3",
+        ">",
+        "2",
+        ">",
+        "MB"
+      ],
+      "category": "Going Ballistic"
     }
   ]
 }

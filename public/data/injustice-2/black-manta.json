@@ -1,63 +1,853 @@
 {
+  "id": "black-manta",
   "name": "Black Manta",
-  "character": "Black Manta",
-  "game": "Injustice 2",
   "movesList": [
     {
-      "name": "High Parry",
-      "input": "261",
-      "type": "special"
-    },
-    {
-      "name": "Low Parry",
-      "input": "241",
-      "type": "special"
-    },
-    {
-      "name": "Soaring Knee",
-      "input": "462",
-      "type": "special"
-    },
-    {
-      "name": "Canary Drop",
-      "input": "242",
-      "type": "special"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "side-slice",
+      "name": "Side Slice",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "precise-puncture",
+      "name": "Precise Puncture",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "low-strike",
+      "name": "Low Strike",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "gutted-deep",
+      "name": "Gutted Deep",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "stingray-stomp",
+      "name": "Stingray Stomp",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "aqua-lunge",
+      "name": "Aqua Lunge",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "rising-dagger",
+      "name": "Rising Dagger",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "barracuda-bash",
+      "name": "Barracuda Bash",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "water-pressure",
+      "name": "Water Pressure",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "diving-daggers",
+      "name": "Diving Daggers",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "low-laser-blast",
+      "name": "Low Laser Blast",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cutting-away",
+      "name": "Cutting Away",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "deep-sea-stab",
+      "name": "Deep Sea Stab",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "manta-beam",
+      "name": "Manta Beam",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "water-pressure",
+      "name": "Water Pressure",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "diving-daggers",
+      "name": "Diving Daggers",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "above-water",
+      "name": "Above Water",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "end-the-fear",
+      "name": "End The Fear",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "hunting-the-others",
+      "name": "Hunting The Others",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2",
+        ">",
+        "3",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "treasure-hunter",
+      "name": "Treasure Hunter",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "flooded",
+      "name": "Flooded",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "1",
+        ">",
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "great-white-strike",
+      "name": "Great White Strike",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "1",
+        ">",
+        "up",
+        "+",
+        "3",
+        ">",
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "seeking-revenge",
+      "name": "Seeking Revenge",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "piranha-bites",
+      "name": "Piranha Bites",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "the-drowning",
+      "name": "The Drowning",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "merciless-mercenary",
+      "name": "Merciless mercenary",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "scarred-scavenger",
+      "name": "Scarred Scavenger",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "death-of-a-prince",
+      "name": "Death of A Prince",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "the-bends",
+      "name": "The Bends",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "blood-in-the-water",
+      "name": "Blood In The Water",
+      "type": "combo",
+      "input": [
+        "3",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "manta-rays",
+      "name": "Manta Rays",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "shark-attack",
+      "name": "Shark Attack",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--shark-attack",
+      "name": "(Air) Shark Attack",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "torpedo-cannon",
+      "name": "Torpedo Cannon",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--torpedo-cannon",
+      "name": "(Air) Torpedo Cannon",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "rising-tide",
+      "name": "Rising Tide",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "harpoon",
+      "name": "Harpoon",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--harpoon",
+      "name": "(Air) Harpoon",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--close-harpoon",
+      "name": "(Air) Close Harpoon",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3",
+        "down"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "speared-and-seared",
+      "name": "Speared And Seared",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "float",
+      "name": "Float",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Hydro Jetpack"
+    },
+    {
+      "id": "float-upward",
+      "name": "Float Upward",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4"
+      ],
+      "category": "Hydro Jetpack"
+    },
+    {
+      "id": "float-away",
+      "name": "Float Away",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4",
+        "+",
+        "back"
+      ],
+      "category": "Hydro Jetpack"
+    },
+    {
+      "id": "float-forward",
+      "name": "Float Forward",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4",
+        "+",
+        "forward"
+      ],
+      "category": "Hydro Jetpack"
+    },
+    {
+      "id": "cancel-float",
+      "name": "Cancel Float",
+      "type": "normal",
+      "input": [
+        "STANCE"
+      ],
+      "category": "Hydro Jetpack"
+    },
+    {
+      "id": "cutting-away",
+      "name": "Cutting Away",
+      "type": "normal",
+      "input": [
+        "1"
+      ],
+      "category": "Hydro Jetpack"
+    },
+    {
+      "id": "deep-sea-stab",
+      "name": "Deep Sea Stab",
+      "type": "normal",
+      "input": [
+        "2"
+      ],
+      "category": "Hydro Jetpack"
+    },
+    {
+      "id": "manta-beam",
+      "name": "Manta Beam",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Hydro Jetpack"
+    },
+    {
+      "id": "-air--float",
+      "name": "(Air) Float",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Hydro Jetpack"
+    },
+    {
+      "id": "float-upward",
+      "name": "Float Upward",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4"
+      ],
+      "category": "Hydro Jetpack"
+    },
+    {
+      "id": "float-away",
+      "name": "Float Away",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4",
+        "+",
+        "back"
+      ],
+      "category": "Hydro Jetpack"
+    },
+    {
+      "id": "float-forward",
+      "name": "Float Forward",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4",
+        "+",
+        "forward"
+      ],
+      "category": "Hydro Jetpack"
+    },
+    {
+      "id": "cancel-float",
+      "name": "Cancel Float",
+      "type": "normal",
+      "input": [
+        "STANCE"
+      ],
+      "category": "Hydro Jetpack"
+    },
+    {
+      "id": "cutting-away",
+      "name": "Cutting Away",
+      "type": "normal",
+      "input": [
+        "1"
+      ],
+      "category": "Hydro Jetpack"
+    },
+    {
+      "id": "deep-sea-stab",
+      "name": "Deep Sea Stab",
+      "type": "normal",
+      "input": [
+        "2"
+      ],
+      "category": "Hydro Jetpack"
+    },
+    {
+      "id": "manta-beam",
+      "name": "Manta Beam",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Hydro Jetpack"
     }
   ]
 }

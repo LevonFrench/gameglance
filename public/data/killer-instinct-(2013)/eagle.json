@@ -4,62 +4,334 @@
   "game": "Killer Instinct (2013)",
   "movesList": [
     {
-      "name": "Bird Call",
-      "input": "214K",
-      "type": "common"
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "input": "5LP",
+      "id": "n_0"
     },
     {
-      "name": "Bow Spin",
+      "name": "Standing Medium Punch",
+      "type": "normal",
+      "input": "5MP",
+      "id": "n_1"
+    },
+    {
+      "name": "Standing Heavy Punch (No Arrows)",
+      "type": "normal",
+      "input": "5HP",
+      "id": "n_2"
+    },
+    {
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "input": "5LK",
+      "id": "n_3"
+    },
+    {
+      "name": "Far Medium Kick",
+      "type": "normal",
+      "input": "5MK",
+      "id": "n_4"
+    },
+    {
+      "name": "Standing Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "id": "n_5"
+    },
+    {
+      "name": "Close Medium Kick",
+      "type": "normal",
+      "input": "5MK",
+      "id": "n_6"
+    },
+    {
+      "name": "Close Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "id": "n_7"
+    },
+    {
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "input": "2LP",
+      "id": "n_8"
+    },
+    {
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "input": "2MP",
+      "id": "n_9"
+    },
+    {
+      "name": "Crouching Heavy Punch (No Arrows)",
+      "type": "normal",
+      "input": "2HP",
+      "id": "n_10"
+    },
+    {
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "input": "2LK",
+      "id": "n_11"
+    },
+    {
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "input": "2MK",
+      "id": "n_12"
+    },
+    {
+      "name": "Crouching Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "id": "n_13"
+    },
+    {
+      "name": "Tailspin",
+      "type": "special",
+      "input": "6MP",
+      "id": "s_14"
+    },
+    {
+      "name": "Whipslap",
+      "type": "special",
+      "input": "4MP",
+      "id": "s_15"
+    },
+    {
+      "name": "Whiplash",
+      "type": "special",
+      "input": "1MP",
+      "id": "s_16"
+    },
+    {
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "input": "8LP",
+      "id": "n_17"
+    },
+    {
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "input": "8MP",
+      "id": "n_18"
+    },
+    {
+      "name": "Jumping Heavy Punch (No Arrows)",
+      "type": "normal",
+      "input": "8HP",
+      "id": "n_19"
+    },
+    {
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "input": "8LK",
+      "id": "n_20"
+    },
+    {
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "input": "8MK",
+      "id": "n_21"
+    },
+    {
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "input": "8HK",
+      "id": "n_22"
+    },
+    {
+      "name": "Straight Arrow Shot",
+      "type": "special",
+      "input": "5HP",
+      "id": "s_23"
+    },
+    {
+      "name": "Arc Arrow Shot",
+      "type": "special",
+      "input": "4HP",
+      "id": "s_24"
+    },
+    {
+      "name": "Straight Arrow Shot (Crouch)",
+      "type": "special",
+      "input": "2HP",
+      "id": "s_25"
+    },
+    {
+      "name": "Low Arrow Shot",
+      "type": "special",
+      "input": "3HP",
+      "id": "s_26"
+    },
+    {
+      "name": "Up Arrow Shot",
+      "type": "special",
+      "input": "1HP",
+      "id": "s_27"
+    },
+    {
+      "name": "Air Arrow Shot",
+      "type": "special",
+      "input": "8HP",
+      "id": "s_28"
+    },
+    {
+      "name": "Air Angle Arrow Shot",
+      "type": "special",
+      "input": "8>3HP",
+      "id": "s_29"
+    },
+    {
+      "name": "Air Downward Arrow Shot",
+      "type": "special",
+      "input": "8>2HP",
+      "id": "s_30"
+    },
+    {
+      "name": "Retrieve Arrows",
+      "type": "special",
+      "input": "Stand LMHK",
+      "id": "s_31"
+    },
+    {
+      "name": "Swoop Attack",
+      "type": "special",
+      "input": "Forward LMHK",
+      "id": "s_32"
+    },
+    {
+      "name": "Sonic Screech",
+      "type": "special",
+      "input": "Back LMHK",
+      "id": "s_33"
+    },
+    {
+      "name": "Divebomb",
+      "type": "special",
+      "input": "Down LMHK",
+      "id": "s_34"
+    },
+    {
+      "name": "Bird Fling",
+      "type": "special",
+      "input": "Jump LMHK",
+      "id": "s_35"
+    },
+    {
+      "name": "Throw",
+      "type": "throw",
+      "input": "5LPLK",
+      "id": "t_36"
+    },
+    {
+      "name": "Scatter Shot",
+      "type": "special",
       "input": "236P",
-      "type": "common"
+      "id": "s_37"
     },
     {
-      "id": "n_0",
-      "name": "Light Punch",
-      "type": "normal",
-      "input": "LP"
+      "name": "Rain Shot",
+      "type": "special",
+      "input": "236P",
+      "id": "s_38"
     },
     {
-      "id": "n_1",
-      "name": "Medium Punch",
-      "type": "normal",
-      "input": "MP"
+      "name": "Ankle Breaker",
+      "type": "special",
+      "input": "236K",
+      "id": "s_39"
     },
     {
-      "id": "n_2",
-      "name": "Heavy Punch",
-      "type": "normal",
-      "input": "HP"
+      "name": "Wingspan",
+      "type": "special",
+      "input": "214K",
+      "id": "s_40"
     },
     {
-      "id": "n_3",
-      "name": "Light Kick",
-      "type": "normal",
-      "input": "LK"
+      "name": "Flying Knee",
+      "type": "special",
+      "input": "214K>LK",
+      "id": "s_41"
     },
     {
-      "id": "n_4",
-      "name": "Medium Kick",
-      "type": "normal",
-      "input": "MK"
+      "name": "Flying Kick",
+      "type": "special",
+      "input": "214K>MK",
+      "id": "s_42"
     },
     {
-      "id": "n_5",
-      "name": "Heavy Kick",
-      "type": "normal",
-      "input": "HK"
+      "name": "Sky Fall",
+      "type": "special",
+      "input": "214K>HK",
+      "id": "s_43"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "LP+LK"
+      "name": "Arrow Shot",
+      "type": "special",
+      "input": "214K>HP",
+      "id": "s_44"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "4LP+LK"
+      "name": "Shadow Scatter Shot",
+      "type": "special",
+      "input": "236PP",
+      "id": "s_45"
+    },
+    {
+      "name": "Shadow Rain Shot",
+      "type": "special",
+      "input": "214PP",
+      "id": "s_46"
+    },
+    {
+      "name": "Shadow Ankle Breaker",
+      "type": "special",
+      "input": "236KK",
+      "id": "s_47"
+    },
+    {
+      "name": "Shadow Arrow Retrieval",
+      "type": "special",
+      "input": "214KK",
+      "id": "s_48"
+    },
+    {
+      "name": "Scatter Shot Ender",
+      "type": "special",
+      "input": "236P",
+      "id": "s_49"
+    },
+    {
+      "name": "Rain Shot Ender",
+      "type": "special",
+      "input": "214P",
+      "id": "s_50"
+    },
+    {
+      "name": "Ankle Breaker Ender",
+      "type": "special",
+      "input": "236HK",
+      "id": "s_51"
+    },
+    {
+      "name": "Wingspan Ender",
+      "type": "special",
+      "input": "214HK",
+      "id": "s_52"
+    },
+    {
+      "name": "Birds of Prey",
+      "type": "special",
+      "input": "HP+HK",
+      "id": "s_53"
+    },
+    {
+      "name": "Peck",
+      "type": "special",
+      "input": "--",
+      "id": "s_54"
     }
   ]
 }

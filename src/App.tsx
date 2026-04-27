@@ -42,6 +42,10 @@ export const App: React.FC = () => {
   const [disableGameSelectAnimation, setDisableGameSelectAnimation] = useState(false);
   const [lastExpandedGameId, setLastExpandedGameId] = useState<string | null>(null);
 
+  const [showFrameData, setShowFrameData] = useState<boolean>(() => {
+    return localStorage.getItem('gg_show_frame_data') !== 'false';
+  });
+
   const [controllerLocked, setControllerLocked] = useState<boolean>(() => {
     return localStorage.getItem('gg_controller_locked') === 'true';
   });
@@ -62,6 +66,10 @@ export const App: React.FC = () => {
   useEffect(() => {
     localStorage.setItem('gg_notation_override', notationOverride);
   }, [notationOverride]);
+
+  useEffect(() => {
+    localStorage.setItem('gg_show_frame_data', showFrameData.toString());
+  }, [showFrameData]);
 
   // Global Theme
   const { theme, setTheme } = useTheme();
@@ -278,13 +286,14 @@ export const App: React.FC = () => {
          onLaunchComboView={() => navigate('combo_view', selectedGame, selectedCharacter)}
          onBack={() => {
            setReturningFromMoveList(true);
-           navigate('char_select', selectedGame);
+           window.history.back();
          }}
          onHome={() => {
            setDisableGameSelectAnimation(true);
            navigate('game_select');
          }}
          onClearGameGlance={handleClearPlaylist}
+         showFrameData={showFrameData}
       />;
       break;
     case 'combo_view':
@@ -298,7 +307,7 @@ export const App: React.FC = () => {
          controller={controller}
          notationSystem={(notationOverride === 'auto' ? selectedGame.notationSystem : notationOverride) as 'numpad' | 'traditional' | 'mk' | undefined}
          onSetController={handleSetController}
-         onBack={() => navigate('move_list', selectedGame, selectedCharacter)}
+         onBack={() => window.history.back()}
          onHome={() => {
            setDisableGameSelectAnimation(true);
            navigate('game_select');
@@ -330,7 +339,7 @@ export const App: React.FC = () => {
          onExit={() => setCurrentView('move_list')}
          onBack={() => {
            setReturningFromMoveList(true);
-           navigate('char_select', selectedGame);
+           window.history.back();
          }}
          onHome={() => {
            setDisableGameSelectAnimation(true);
@@ -366,6 +375,8 @@ export const App: React.FC = () => {
         syncConnected={syncState.connected}
         theme={theme}
         onSetTheme={setTheme}
+        showFrameData={showFrameData}
+        onSetShowFrameData={setShowFrameData}
       />
     </div>
   );

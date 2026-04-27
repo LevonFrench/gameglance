@@ -1,57 +1,721 @@
 {
-  "character": "Enchantress",
-  "game": "Injustice 2",
+  "id": "enchantress",
+  "name": "Enchantress",
   "movesList": [
     {
-      "name": "Attack 1",
-      "input": "A",
-      "type": "Normal"
-    },
-    {
-      "name": "Attack 2",
-      "input": "B",
-      "type": "Normal"
-    },
-    {
-      "name": "Attack 3",
-      "input": "C",
-      "type": "Normal"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "quick-spell",
+      "name": "Quick Spell",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "simple-sorcery",
+      "name": "Simple Sorcery",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "jinx-jab",
+      "name": "Jinx Jab",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "cursed-push",
+      "name": "Cursed Push",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "slicing-athame",
+      "name": "Slicing Athame",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "witch-s-elbow",
+      "name": "Witch's Elbow",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "pocket-magic",
+      "name": "Pocket Magic",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "aura-blast",
+      "name": "Aura Blast",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "witch-twist",
+      "name": "Witch Twist",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "xibalba-strike",
+      "name": "Xibalba Strike",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "close-xibalba-strike",
+      "name": "Close Xibalba Strike",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "far-xibalba-strike",
+      "name": "Far Xibalba Strike",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "forward"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "suicide-sweep",
+      "name": "Suicide Sweep",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "dark-beam",
+      "name": "Dark Beam",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "sweeping-athame",
+      "name": "Sweeping Athame",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "xanadu-s-barrier",
+      "name": "Xanadu's Barrier",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "witch-twist",
+      "name": "Witch Twist",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "xibalba-strike",
+      "name": "Xibalba Strike",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "day-of-vengeance",
+      "name": "Day of Vengeance",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "bad-omen",
+      "name": "Bad Omen",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "ancient-ritual",
+      "name": "Ancient Ritual",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "free-again",
+      "name": "Free Again",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "pillar-of-pain",
+      "name": "Pillar of Pain",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "trapped",
+      "name": "Trapped",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "shrieking-witch",
+      "name": "Shrieking Witch",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "combo",
+      "input": [
+        "Hold",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "combo",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "evil-essence",
+      "name": "Evil Essence",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "combo",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "combo",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back",
+        "or",
+        "down",
+        "down"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "corrupted",
+      "name": "Corrupted",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "turning-evil",
+      "name": "Turning Evil",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "dark-moon-rising",
+      "name": "Dark Moon Rising",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "chakra-strike",
+      "name": "Chakra Strike",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "combo",
+      "input": [
+        "MB"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "hell-s-gate",
+      "name": "Hell's Gate",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "astral-soul-rip",
+      "name": "Astral Soul Rip",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "spell-of-protection",
+      "name": "Spell of Protection",
+      "type": "special",
+      "input": [
+        "down",
+        "down",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "down",
+        "down",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "pentacle-hex",
+      "name": "Pentacle hex",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "vanish",
+      "name": "Vanish",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "up-vanish",
+      "name": "Up Vanish",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3",
+        "up"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--dash-forward",
+      "name": "(Air) Dash Forward",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--dash-away",
+      "name": "(Air) Dash Away",
+      "type": "special",
+      "input": [
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "out-of-body-experience",
+      "name": "Out of Body Experience",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "-air--out-of-body-experience",
+      "name": "(Air) Out of Body Experience",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "xibalba",
+      "name": "Xibalba",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Invoke The Demon"
+    },
+    {
+      "id": "demonic-sacrifice",
+      "name": "Demonic Sacrifice",
+      "type": "normal",
+      "input": [
+        "down",
+        "forward",
+        "4"
+      ],
+      "category": "Invoke The Demon"
+    },
+    {
+      "id": "demonic-guard",
+      "name": "Demonic Guard",
+      "type": "normal",
+      "input": [
+        "down",
+        "back",
+        "4"
+      ],
+      "category": "Invoke The Demon"
+    },
+    {
+      "id": "cancel-guard",
+      "name": "Cancel Guard",
+      "type": "normal",
+      "input": [
+        "down",
+        "back",
+        "4"
+      ],
+      "category": "Invoke The Demon"
     }
   ]
 }

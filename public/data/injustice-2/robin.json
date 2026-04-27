@@ -1,63 +1,934 @@
 {
+  "id": "robin",
   "name": "Robin",
-  "character": "Robin",
-  "game": "Injustice 2",
   "movesList": [
     {
-      "name": "Blade Dance",
-      "input": "242",
-      "type": "special"
-    },
-    {
-      "name": "Assassin Strike",
-      "input": "463",
-      "type": "special"
-    },
-    {
-      "name": "Swoop",
-      "input": "241",
-      "type": "special"
-    },
-    {
-      "name": "Birdarang",
-      "input": "261",
-      "type": "special"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "backhand-bash",
+      "name": "Backhand Bash",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "quick-draw",
+      "name": "Quick Draw",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "low-gouge",
+      "name": "Low Gouge",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "deep-laceration",
+      "name": "Deep Laceration",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "straight-stab",
+      "name": "Straight Stab",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "vertical-slice",
+      "name": "Vertical Slice",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "rising-blade",
+      "name": "Rising Blade",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "quick-execution",
+      "name": "Quick Execution",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "fatal-cut",
+      "name": "Fatal Cut",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "flip-kick",
+      "name": "Flip Kick",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "retreat",
+      "name": "Retreat",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "advance",
+      "name": "Advance",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "forward"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "low-cutter",
+      "name": "Low Cutter",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "high-chop",
+      "name": "High Chop",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "heavy-blade",
+      "name": "Heavy Blade",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "full-swing",
+      "name": "Full Swing",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "fatal-cut",
+      "name": "Fatal Cut",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "flip-kick",
+      "name": "Flip Kick",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "haunting-legacy",
+      "name": "Haunting Legacy",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "fighting-authority",
+      "name": "Fighting Authority",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "family-secrets",
+      "name": "Family Secrets",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2",
+        ">",
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "disobeying-orders",
+      "name": "Disobeying Orders",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "skill-and-training",
+      "name": "Skill And Training",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2",
+        ">",
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "born-to-kill",
+      "name": "Born To Kill",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2",
+        ">",
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "son-of-batman",
+      "name": "Son of Batman",
+      "type": "combo",
+      "input": [
+        "down",
+        "+",
+        "1",
+        ">",
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "blades-and-blood",
+      "name": "Blades And Blood",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "vengeance",
+      "name": "Vengeance",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "taught-to-win",
+      "name": "Taught to Win",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "never-lose",
+      "name": "Never Lose",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "inner-darkness",
+      "name": "Inner Darkness",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "legacy-and-curse",
+      "name": "Legacy and Curse",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "1",
+        ">",
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "good-and-evil",
+      "name": "Good And Evil",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "love-and-respect",
+      "name": "Love And Respect",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "down",
+        "+",
+        "3",
+        ">",
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "smart-birdarang",
+      "name": "Smart Birdarang",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "sword-dance",
+      "name": "Sword Dance",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--blade-spin",
+      "name": "(Air) Blade Spin",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--close-blade-spin",
+      "name": "(Air) Close Blade Spin",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--far-blade-spin",
+      "name": "(Air) Far Blade Spin",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "assassin-strike",
+      "name": "Assassin Strike",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "down"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "swoop",
+      "name": "Swoop",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "close-swoop",
+      "name": "Close Swoop",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "far-swoop",
+      "name": "Far Swoop",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3",
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "holding-back",
+      "name": "Holding Back",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "smoke-pellet",
+      "name": "Smoke Pellet",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "teleport",
+      "name": "Teleport",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "close-smoke-pellet",
+      "name": "Close Smoke Pellet",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "4"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "teleport",
+      "name": "Teleport",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "far-smoke-pellet",
+      "name": "Far Smoke Pellet",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "4"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "teleport",
+      "name": "Teleport",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "explosive-birdarang",
+      "name": "Explosive Birdarang",
+      "type": "normal",
+      "input": [
+        "down",
+        "back",
+        "4"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "detonate",
+      "name": "Detonate",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "close-explosive-birdarang",
+      "name": "Close Explosive Birdarang",
+      "type": "normal",
+      "input": [
+        "down",
+        "back",
+        "4",
+        "back"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "detonate",
+      "name": "Detonate",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "far-explosive-birdarang",
+      "name": "Far Explosive Birdarang",
+      "type": "normal",
+      "input": [
+        "down",
+        "back",
+        "4",
+        "forward"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "detonate",
+      "name": "Detonate",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "remote-birdarang",
+      "name": "Remote Birdarang",
+      "type": "normal",
+      "input": [
+        "down",
+        "forward",
+        "4"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "recall",
+      "name": "Recall",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "close-remote-birdarang",
+      "name": "Close Remote Birdarang",
+      "type": "normal",
+      "input": [
+        "down",
+        "forward",
+        "4",
+        "back"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "recall",
+      "name": "Recall",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "far-remote-birdarang",
+      "name": "Far Remote Birdarang",
+      "type": "normal",
+      "input": [
+        "down",
+        "forward",
+        "4",
+        "forward"
+      ],
+      "category": "Deadly Arsenal"
+    },
+    {
+      "id": "recall",
+      "name": "Recall",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Deadly Arsenal"
     }
   ]
 }

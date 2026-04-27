@@ -1,63 +1,828 @@
 {
+  "id": "harley-quinn",
   "name": "Harley Quinn",
-  "character": "Harley Quinn",
-  "game": "Injustice 2",
   "movesList": [
     {
-      "name": "Pistol Whip",
-      "input": "261",
-      "type": "special"
-    },
-    {
-      "name": "Cupcake Bomb",
-      "input": "242",
-      "type": "special"
-    },
-    {
-      "name": "Pop Pop",
-      "input": "241",
-      "type": "special"
-    },
-    {
-      "name": "Tantrum Stance",
-      "input": "243",
-      "type": "special"
-    },
-    {
-      "id": "n_0",
-      "name": "Front Punch",
+      "id": "revolver-slap",
+      "name": "Revolver Slap",
       "type": "normal",
-      "input": "1"
+      "input": [
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "id": "gun-smack",
+      "name": "Gun Smack",
       "type": "normal",
-      "input": "2"
+      "input": [
+        "back",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "id": "ear-smash",
+      "name": "Ear Smash",
       "type": "normal",
-      "input": "3"
+      "input": [
+        "forward",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "id": "revolver-poke",
+      "name": "Revolver Poke",
       "type": "normal",
-      "input": "4"
+      "input": [
+        "down",
+        "+",
+        "1"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "id": "revolver-slam",
+      "name": "Revolver Slam",
+      "type": "normal",
+      "input": [
+        "2"
+      ],
+      "category": "Basic Attacks"
     },
     {
-      "id": "t_1",
+      "id": "single-shot",
+      "name": "Single Shot",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "clown-bash",
+      "name": "Clown Bash",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "spinning-pistols",
+      "name": "Spinning Pistols",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "2"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "spot-kick",
+      "name": "Spot Kick",
+      "type": "normal",
+      "input": [
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "mallet-slap",
+      "name": "Mallet Slap",
+      "type": "normal",
+      "input": [
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "hammer-slam",
+      "name": "Hammer Slam",
+      "type": "normal",
+      "input": [
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "retreat",
+      "name": "Retreat",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "advance",
+      "name": "Advance",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "forward"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "normal",
+      "input": [
+        "MB"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "normal",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "take-aim",
+      "name": "Take Aim",
+      "type": "normal",
+      "input": [
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Basic Attacks"
+    },
+    {
+      "id": "side-boot",
+      "name": "Side Boot",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "1"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "double-dose",
+      "name": "Double Dose",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "2"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "high-stomp",
+      "name": "High Stomp",
+      "type": "normal",
+      "input": [
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Jumping Attacks"
+    },
+    {
+      "id": "back-throw",
       "name": "Back Throw",
       "type": "throw",
-      "input": "41+3"
+      "input": [
+        "THROW",
+        "or",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "forward-throw",
+      "name": "Forward Throw",
+      "type": "throw",
+      "input": [
+        "forward",
+        "+",
+        "THROW",
+        "or",
+        "forward",
+        "+",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Throws"
+    },
+    {
+      "id": "mallet-slap",
+      "name": "Mallet Slap",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB",
+        "or",
+        "down",
+        "forward",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "hammer-slam",
+      "name": "Hammer Slam",
+      "type": "system",
+      "input": [
+        "back",
+        "back",
+        "MB",
+        "or",
+        "down",
+        "back",
+        "MB"
+      ],
+      "category": "Bounce Cancels"
+    },
+    {
+      "id": "roll-escape",
+      "name": "Roll Escape",
+      "type": "system",
+      "input": [
+        "forward",
+        "forward",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "up-air-escape",
+      "name": "Up Air Escape",
+      "type": "system",
+      "input": [
+        "up",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "away-air-escape",
+      "name": "Away Air Escape",
+      "type": "system",
+      "input": [
+        "back",
+        "+",
+        "MB"
+      ],
+      "category": "Quick Escape"
+    },
+    {
+      "id": "naughty-naughty",
+      "name": "Naughty-Naughty",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "i-hope-it-hurts",
+      "name": "I Hope It Hurts",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "girl-s-best-friend",
+      "name": "Girl's Best Friend",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "rude-joke",
+      "name": "Rude Joke",
+      "type": "combo",
+      "input": [
+        "1",
+        ">",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "irresistible",
+      "name": "Irresistible",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "let-s-play",
+      "name": "Let's Play",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "1",
+        ">",
+        "2",
+        ">",
+        "1"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "for-mistah-j",
+      "name": "For Mistah J",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "1",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "miss-me",
+      "name": "Miss Me",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "back",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "batter-up",
+      "name": "Batter Up",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "forward",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "go-night-night",
+      "name": "Go Night Night",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "forward",
+        "+",
+        "3",
+        ">",
+        "1",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "hi-puddin-",
+      "name": "Hi Puddin'",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "down",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "pleased-to-meetcha",
+      "name": "Pleased To Meetcha",
+      "type": "combo",
+      "input": [
+        "2",
+        ">",
+        "up",
+        "+",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "a-little-crazy",
+      "name": "A Little Crazy",
+      "type": "combo",
+      "input": [
+        "back",
+        "+",
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "don-t-get-hurt",
+      "name": "Don't Get Hurt",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "2"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "that-s-cute",
+      "name": "That's Cute",
+      "type": "combo",
+      "input": [
+        "forward",
+        "+",
+        "2",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "lollipops",
+      "name": "Lollipops",
+      "type": "combo",
+      "input": [
+        "3",
+        ">",
+        "3"
+      ],
+      "category": "Combo Attacks"
+    },
+    {
+      "id": "pistol-fury",
+      "name": "Pistol Fury",
+      "type": "special",
+      "input": [
+        "down",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "up-pistol-fury",
+      "name": "Up Pistol Fury",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "-air--pistol-fury",
+      "name": "(Air) Pistol Fury",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "play-doctor",
+      "name": "Play Doctor",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "forward",
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cupcake-bomb",
+      "name": "Cupcake Bomb",
+      "type": "special",
+      "input": [
+        "back",
+        "forward",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "pop-pop",
+      "name": "Pop Pop",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "delay",
+      "name": "Delay",
+      "type": "special",
+      "input": [
+        "Hold",
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cancel",
+      "name": "Cancel",
+      "type": "special",
+      "input": [
+        "forward",
+        "forward",
+        "or",
+        "back",
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "meter-burn",
+      "name": "Meter Burn",
+      "type": "special",
+      "input": [
+        "MB"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "tantrum-stance",
+      "name": "Tantrum Stance",
+      "type": "special",
+      "input": [
+        "down",
+        "back",
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "cartwheel",
+      "name": "Cartwheel",
+      "type": "special",
+      "input": [
+        "1"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "boom-boom",
+      "name": "Boom Boom",
+      "type": "special",
+      "input": [
+        "2"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "bullet-frenzy",
+      "name": "Bullet Frenzy",
+      "type": "special",
+      "input": [
+        "3"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "forward-roll",
+      "name": "Forward Roll",
+      "type": "special",
+      "input": [
+        "forward"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "back-roll",
+      "name": "Back Roll",
+      "type": "special",
+      "input": [
+        "back"
+      ],
+      "category": "Special Moves"
+    },
+    {
+      "id": "get--em-boys",
+      "name": "Get 'Em Boys",
+      "type": "super",
+      "input": [
+        "STANCE",
+        "+",
+        "MB"
+      ],
+      "category": "Supermove"
+    },
+    {
+      "id": "bud-rush",
+      "name": "Bud Rush",
+      "type": "normal",
+      "input": [
+        "4"
+      ],
+      "category": "Hungry Hyenas"
+    },
+    {
+      "id": "double-trouble",
+      "name": "Double-Trouble",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4"
+      ],
+      "category": "Hungry Hyenas"
+    },
+    {
+      "id": "lou-strike",
+      "name": "Lou Strike",
+      "type": "normal",
+      "input": [
+        "4",
+        ">",
+        "Hold",
+        "2"
+      ],
+      "category": "Hungry Hyenas"
+    },
+    {
+      "id": "like-it-ruff",
+      "name": "Like It Ruff",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4",
+        "+",
+        "back"
+      ],
+      "category": "Hungry Hyenas"
+    },
+    {
+      "id": "pounding-puppies",
+      "name": "Pounding Puppies",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4",
+        "+",
+        "up"
+      ],
+      "category": "Hungry Hyenas"
+    },
+    {
+      "id": "ruff-housing",
+      "name": "Ruff Housing",
+      "type": "normal",
+      "input": [
+        "Hold",
+        "4",
+        "+",
+        "forward"
+      ],
+      "category": "Hungry Hyenas"
     }
   ]
 }

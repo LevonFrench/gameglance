@@ -4,87 +4,238 @@
   "game": "Killer Instinct (2013)",
   "movesList": [
     {
+      "name": "Standing Light Punch",
+      "type": "normal",
+      "input": "5LP",
+      "id": "n_0"
+    },
+    {
+      "name": "Far Standing Medium Punch",
+      "type": "normal",
+      "input": "5MP",
+      "id": "n_1"
+    },
+    {
+      "name": "Far Standing Heavy Punch",
+      "type": "normal",
+      "input": "5HP",
+      "id": "n_2"
+    },
+    {
+      "name": "Standing Light Kick",
+      "type": "normal",
+      "input": "5LK",
+      "id": "n_3"
+    },
+    {
+      "name": "Far Standing Medium Kick",
+      "type": "normal",
+      "input": "5MK",
+      "id": "n_4"
+    },
+    {
+      "name": "Far Standing Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "id": "n_5"
+    },
+    {
+      "name": "Crouching Light Punch",
+      "type": "normal",
+      "input": "2LP",
+      "id": "n_6"
+    },
+    {
+      "name": "Crouching Medium Punch",
+      "type": "normal",
+      "input": "2MP",
+      "id": "n_7"
+    },
+    {
+      "name": "Crouching Heavy Punch",
+      "type": "normal",
+      "input": "2HP",
+      "id": "n_8"
+    },
+    {
+      "name": "Crouching Light Kick",
+      "type": "normal",
+      "input": "2LK",
+      "id": "n_9"
+    },
+    {
+      "name": "Crouching Medium Kick",
+      "type": "normal",
+      "input": "2MK",
+      "id": "n_10"
+    },
+    {
+      "name": "Crouching Heavy Kick",
+      "type": "normal",
+      "input": "5HK",
+      "id": "n_11"
+    },
+    {
+      "name": "Close Standing Medium Punch",
+      "type": "normal",
+      "input": "clMP",
+      "id": "n_12"
+    },
+    {
+      "name": "Close Standing Heavy Punch",
+      "type": "normal",
+      "input": "clHP",
+      "id": "n_13"
+    },
+    {
+      "name": "Close Standing Medium Kick",
+      "type": "normal",
+      "input": "clMK",
+      "id": "n_14"
+    },
+    {
+      "name": "Close Standing Heavy Kick",
+      "type": "normal",
+      "input": "clHK",
+      "id": "n_15"
+    },
+    {
+      "name": "Spine Splitter",
+      "type": "special",
+      "input": "4HP",
+      "id": "s_16"
+    },
+    {
+      "name": "Jumping Light Punch",
+      "type": "normal",
+      "input": "8LP",
+      "id": "n_17"
+    },
+    {
+      "name": "Jumping Medium Punch",
+      "type": "normal",
+      "input": "8MP",
+      "id": "n_18"
+    },
+    {
+      "name": "Jumping Heavy Punch",
+      "type": "normal",
+      "input": "8HP",
+      "id": "n_19"
+    },
+    {
+      "name": "Jumping Light Kick",
+      "type": "normal",
+      "input": "8LK",
+      "id": "n_20"
+    },
+    {
+      "name": "Jumping Medium Kick",
+      "type": "normal",
+      "input": "8MK",
+      "id": "n_21"
+    },
+    {
+      "name": "Jumping Heavy Kick",
+      "type": "normal",
+      "input": "8HK",
+      "id": "n_22"
+    },
+    {
+      "name": "Throw",
+      "type": "throw",
+      "input": "5LPLK",
+      "id": "t_23"
+    },
+    {
       "name": "Skull Splitter",
-      "input": "236P",
-      "type": "special"
+      "type": "special",
+      "input": "214P",
+      "id": "s_24"
+    },
+    {
+      "name": "Air Skull Splitter",
+      "type": "special",
+      "input": "8 214P",
+      "id": "s_25"
     },
     {
       "name": "Conqueror",
+      "type": "special",
       "input": "623P",
-      "type": "special"
+      "id": "s_26"
+    },
+    {
+      "name": "Conqueror Followup",
+      "type": "special",
+      "input": "623P > HP",
+      "id": "s_27"
     },
     {
       "name": "Immortal Spirit",
-      "input": "214P",
-      "type": "special"
-    },
-    {
-      "name": "Moonsweep",
-      "input": "214K",
-      "type": "special"
-    },
-    {
-      "name": "Deflect",
+      "type": "special",
       "input": "236K",
-      "type": "special"
+      "id": "s_28"
     },
     {
-      "name": "Instinct Mode (Immortal Fire)",
-      "input": "HP+HK",
-      "type": "instinct"
+      "name": "Moosejaw",
+      "type": "special",
+      "input": "236K > LK",
+      "id": "s_29"
+    },
+    {
+      "name": "Collateral Damage",
+      "type": "special",
+      "input": "236K > MK",
+      "id": "s_30"
+    },
+    {
+      "name": "Destroyer",
+      "type": "special",
+      "input": "236K > HK",
+      "id": "s_31"
     },
     {
       "name": "Shadow Skull Splitter",
-      "input": "236PP",
-      "type": "shadow"
+      "type": "special",
+      "input": "214PP",
+      "id": "s_32"
     },
     {
-      "id": "n_0",
-      "name": "Light Punch",
-      "type": "normal",
-      "input": "LP"
+      "name": "Shadow Air Skull Splitter",
+      "type": "special",
+      "input": "8 > 214PP",
+      "id": "s_33"
     },
     {
-      "id": "n_1",
-      "name": "Medium Punch",
-      "type": "normal",
-      "input": "MP"
+      "name": "Shadow Conqueror",
+      "type": "special",
+      "input": "623PP",
+      "id": "s_34"
     },
     {
-      "id": "n_2",
-      "name": "Heavy Punch",
-      "type": "normal",
-      "input": "HP"
+      "name": "Shadow Immortal Spirit",
+      "type": "special",
+      "input": "236KK > K",
+      "id": "s_35"
     },
     {
-      "id": "n_3",
-      "name": "Light Kick",
-      "type": "normal",
-      "input": "LK"
+      "name": "Skull Splitter Ender",
+      "type": "special",
+      "input": "214HP",
+      "id": "s_36"
     },
     {
-      "id": "n_4",
-      "name": "Medium Kick",
-      "type": "normal",
-      "input": "MK"
+      "name": "Conqueror Ender",
+      "type": "special",
+      "input": "623",
+      "id": "s_37"
     },
     {
-      "id": "n_5",
-      "name": "Heavy Kick",
-      "type": "normal",
-      "input": "HK"
-    },
-    {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "LP+LK"
-    },
-    {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "4LP+LK"
+      "name": "Immortal Spirit Ender",
+      "type": "special",
+      "input": "236HK",
+      "id": "s_38"
     }
   ]
 }
