@@ -175,7 +175,7 @@ export const App: React.FC = () => {
   // Navigation handlers
   const handleSelectGame = (game: GameDefinition) => {
     setReturningFromMoveList(false);
-    setDisableGameSelectAnimation(false);
+    setDisableGameSelectAnimation(true);
     setLastExpandedGameId(game.id);
     
     if (!controllerLocked) {

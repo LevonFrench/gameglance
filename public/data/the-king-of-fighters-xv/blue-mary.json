@@ -1,31 +1,187 @@
 {
+  "id": "blue-mary",
   "name": "Blue Mary",
-  "character": "Blue Mary",
-  "game": "The King of Fighters XV",
   "movesList": [
     {
-      "id": "sp_0",
-      "name": "Fill In",
-      "type": "special",
-      "input": "236P"
+      "id": "move_1",
+      "name": "Lock Kick",
+      "input": "(close)4 /  6+ HP",
+      "type": "Throws"
     },
     {
-      "id": "sp_1",
-      "name": "Drip Drop",
-      "type": "throw",
-      "input": "236K(AirOK,x3)"
+      "id": "move_2",
+      "name": "Viktor Throw",
+      "input": "(close)4 /  6+ HK",
+      "type": "Throws"
     },
     {
-      "id": "sp_2",
-      "name": "To the Front",
-      "type": "special",
-      "input": "623K"
+      "id": "move_3",
+      "name": "Hammer Arch",
+      "input": "6+ LP",
+      "type": "Command Moves"
     },
     {
-      "id": "sp_3",
-      "name": "Piece of Cake",
-      "type": "special",
-      "input": "214K"
+      "id": "move_4",
+      "name": "Double Rolling",
+      "input": "4+ LK",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_5",
+      "name": "Climbing Arrow",
+      "input": "6+ HK",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_6",
+      "name": "Straight Slicer",
+      "input": "6+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_7",
+      "name": "Crab Clutch",
+      "input": "236+ LK /  HKafter HKStraight Slicer",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_8",
+      "name": "Stun Fang",
+      "input": "236+ LP /  HPafter Straight Slicer",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_9",
+      "name": "Vertical Arrow",
+      "input": "623+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_10",
+      "name": "M. Snatcher",
+      "input": "LK /  HKafter HK /  Vertical Arrow",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_11",
+      "name": "Spin Fall",
+      "input": "236+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_12",
+      "name": "M. Spider",
+      "input": "236+ LP /  HPafter HPSpin Fall",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_13",
+      "name": "Real Counter",
+      "input": "214+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_14",
+      "name": "Backdrop Real",
+      "input": "(close)236+ LP /  HPafter Real Counter",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_15",
+      "name": "M. Breaker",
+      "input": "623+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_16",
+      "name": "M. Typhoon",
+      "input": "(close)63214+ LK /  HK( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_17",
+      "name": "M. Splash Rose",
+      "input": "63214+ LP /  HP( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_18",
+      "name": "M. Dynamite Swing",
+      "input": "41236+ HPHK",
+      "type": "Climax Super Special Moves"
+    },
+    {
+      "id": "univ_1",
+      "name": "Standing Blow Back",
+      "input": "HP HK",
+      "type": "System Mechanics",
+      "notes": "Wall bounces opponent"
+    },
+    {
+      "id": "univ_2",
+      "name": "Jumping Blow Back",
+      "input": "j.HP HK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_3",
+      "name": "Shatter Strike",
+      "input": "236HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_4",
+      "name": "Advance Strike",
+      "input": "214HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 0.5 power gauge bar"
+    },
+    {
+      "id": "univ_5",
+      "name": "Emergency Evasion (Forward)",
+      "input": "LP LK / 6LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_6",
+      "name": "Emergency Evasion (Backward)",
+      "input": "4LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_7",
+      "name": "Recovery",
+      "input": "LP LK",
+      "type": "System Mechanics",
+      "notes": "When knocked back"
+    },
+    {
+      "id": "univ_8",
+      "name": "Guard Cancel Blow Back",
+      "input": "(Guard) HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_9",
+      "name": "Guard Cancel Emergency Evasion",
+      "input": "(Guard) LP LK / 4LP LK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_10",
+      "name": "MAX Mode",
+      "input": "LK HP",
+      "type": "System Mechanics",
+      "notes": "Consumes 2 power gauge bars"
+    },
+    {
+      "id": "univ_11",
+      "name": "MAX Mode (Quick)",
+      "input": "(Cancel) LK HP",
+      "type": "System Mechanics"
     }
   ]
 }

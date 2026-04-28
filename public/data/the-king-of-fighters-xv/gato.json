@@ -1,37 +1,199 @@
 {
+  "id": "gato",
   "name": "Gato",
-  "character": "Gato",
-  "game": "The King of Fighters XV",
   "movesList": [
     {
-      "name": "Shin-Ga",
-      "input": "236A/C",
-      "type": "special"
+      "id": "move_1",
+      "name": "Danzetsu Tai",
+      "input": "(close)4 /  6+ HP",
+      "type": "Throws"
     },
     {
-      "name": "Ura-Fu-Ga",
-      "input": "214B/D",
-      "type": "special"
+      "id": "move_2",
+      "name": "Daienshin",
+      "input": "(close)4 /  6+ HK",
+      "type": "Throws"
     },
     {
-      "name": "Ei-Ga",
-      "input": "623A/C",
-      "type": "special"
+      "id": "move_3",
+      "name": "Startup frame \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tSaigaku (Active frame)",
+      "input": "6+ LP",
+      "type": "Command Moves"
     },
     {
-      "name": "Ryuu-Ga",
-      "input": "214A/C",
-      "type": "special"
+      "id": "move_4",
+      "name": "Muran Geri",
+      "input": "6+ LK",
+      "type": "Command Moves"
     },
     {
-      "name": "Tenryuu Retsuga",
-      "input": "236236A/C",
-      "type": "super"
+      "id": "move_5",
+      "name": "Shinga",
+      "input": "236+ LP /  HP( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Zero-Kiba",
-      "input": "236236B/D",
-      "type": "super"
+      "id": "move_6",
+      "name": "Totsuga",
+      "input": "6+ LP /  HPduring Shinga",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_7",
+      "name": "Fuuga \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tThe leap ( version only)",
+      "input": "214+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_8",
+      "name": "Kouga",
+      "input": "LPduring Fuuga",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_9",
+      "name": "Senga",
+      "input": "LKduring Fuuga",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_10",
+      "name": "Kyuuga",
+      "input": "HPduring Fuuga",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_11",
+      "name": "Katsuga",
+      "input": "HKduring Fuuga",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_12",
+      "name": "Ura Fuuga \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tThe leap ( version only)",
+      "input": "214+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_13",
+      "name": "Shunga",
+      "input": "LPduring Ura Fuuga",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_14",
+      "name": "Ouga (From Regular Ura Fuuga) \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tFrom  Ura Fuuga",
+      "input": "Timed to Opponent's attack, LKduring Ura Fuuga",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_15",
+      "name": "Muuga \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tOn hit",
+      "input": "HPduring Ura Fuuga",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_16",
+      "name": "Rouga",
+      "input": "HKduring Ura Fuuga",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_17",
+      "name": "Raiga (Initial hit) \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tRaiga (The full kick)",
+      "input": "623+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_18",
+      "name": "Startup \t\t \t \n \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tThe grab \t\t \t \n \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tZero Kiba (The successful hit)",
+      "input": "236+ LP /  HP( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_19",
+      "name": "Tatsu Kiba",
+      "input": "236+ LK /  HK( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_20",
+      "name": "Zesshou: Radan Shoukyuuga",
+      "input": "41236+ HPHK",
+      "type": "Climax Super Special Moves"
+    },
+    {
+      "id": "univ_1",
+      "name": "Standing Blow Back",
+      "input": "HP HK",
+      "type": "System Mechanics",
+      "notes": "Wall bounces opponent"
+    },
+    {
+      "id": "univ_2",
+      "name": "Jumping Blow Back",
+      "input": "j.HP HK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_3",
+      "name": "Shatter Strike",
+      "input": "236HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_4",
+      "name": "Advance Strike",
+      "input": "214HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 0.5 power gauge bar"
+    },
+    {
+      "id": "univ_5",
+      "name": "Emergency Evasion (Forward)",
+      "input": "LP LK / 6LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_6",
+      "name": "Emergency Evasion (Backward)",
+      "input": "4LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_7",
+      "name": "Recovery",
+      "input": "LP LK",
+      "type": "System Mechanics",
+      "notes": "When knocked back"
+    },
+    {
+      "id": "univ_8",
+      "name": "Guard Cancel Blow Back",
+      "input": "(Guard) HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_9",
+      "name": "Guard Cancel Emergency Evasion",
+      "input": "(Guard) LP LK / 4LP LK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_10",
+      "name": "MAX Mode",
+      "input": "LK HP",
+      "type": "System Mechanics",
+      "notes": "Consumes 2 power gauge bars"
+    },
+    {
+      "id": "univ_11",
+      "name": "MAX Mode (Quick)",
+      "input": "(Cancel) LK HP",
+      "type": "System Mechanics"
     }
   ]
 }

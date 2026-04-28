@@ -1,37 +1,151 @@
 {
+  "id": "orochi-chris",
   "name": "Orochi Chris",
-  "character": "Orochi Chris",
-  "game": "The King of Fighters XV",
   "movesList": [
     {
-      "name": "Taiyou wo Iru Honou",
-      "input": "236A/C",
-      "type": "special"
+      "id": "move_1",
+      "name": "Chi no Batsu",
+      "input": "(close)4 /  6+ HP",
+      "type": "Throws"
     },
     {
-      "name": "Tsuki wo Tsumu Honou",
-      "input": "623A/C",
-      "type": "special"
+      "id": "move_2",
+      "name": "Ten no Tsumi",
+      "input": "(close)4 /  6+ HK",
+      "type": "Throws"
     },
     {
-      "name": "Shishi wo Kamu Honou",
-      "input": "214B/D",
-      "type": "special"
+      "id": "move_3",
+      "name": "Muyou no Ono",
+      "input": "6+ LP",
+      "type": "Command Moves"
     },
     {
-      "name": "Kagami wo Hofuru Honou",
-      "input": "214A/C",
-      "type": "special"
+      "id": "move_4",
+      "name": "Jyukei no Oni",
+      "input": "6+ LK",
+      "type": "Command Moves"
     },
     {
+      "id": "move_5",
+      "name": "Setsudan no Koto",
+      "input": "6+ HK",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_6",
+      "name": "Taiyou O Iru Honoo",
+      "input": "236+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_7",
+      "name": "Tsuki O Tsumu Honoo",
+      "input": "623+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_8",
+      "name": "Kagami O Hofuru Honoo",
+      "input": "214+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_9",
+      "name": "Shishi O Kamu Honoo",
+      "input": "(close)41236+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_10",
       "name": "Ankoku Orochinagi",
-      "input": "2141236A/C",
-      "type": "super"
+      "input": "41236+ LP /  HP( [hold ok]OK, OK)",
+      "type": "Super Special Moves"
     },
     {
-      "name": "Daichi wo Harau Gouka",
-      "input": "236236A/C",
-      "type": "super"
+      "id": "move_11",
+      "name": "Daichi ni Hisomu Gouka",
+      "input": "236+ LK /  HK( [hold ok]OK, OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_12",
+      "name": "Hirameki Kogaretaru Tamashi",
+      "input": "41236+ HPHK",
+      "type": "Climax Super Special Moves"
+    },
+    {
+      "id": "univ_1",
+      "name": "Standing Blow Back",
+      "input": "HP HK",
+      "type": "System Mechanics",
+      "notes": "Wall bounces opponent"
+    },
+    {
+      "id": "univ_2",
+      "name": "Jumping Blow Back",
+      "input": "j.HP HK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_3",
+      "name": "Shatter Strike",
+      "input": "236HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_4",
+      "name": "Advance Strike",
+      "input": "214HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 0.5 power gauge bar"
+    },
+    {
+      "id": "univ_5",
+      "name": "Emergency Evasion (Forward)",
+      "input": "LP LK / 6LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_6",
+      "name": "Emergency Evasion (Backward)",
+      "input": "4LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_7",
+      "name": "Recovery",
+      "input": "LP LK",
+      "type": "System Mechanics",
+      "notes": "When knocked back"
+    },
+    {
+      "id": "univ_8",
+      "name": "Guard Cancel Blow Back",
+      "input": "(Guard) HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_9",
+      "name": "Guard Cancel Emergency Evasion",
+      "input": "(Guard) LP LK / 4LP LK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_10",
+      "name": "MAX Mode",
+      "input": "LK HP",
+      "type": "System Mechanics",
+      "notes": "Consumes 2 power gauge bars"
+    },
+    {
+      "id": "univ_11",
+      "name": "MAX Mode (Quick)",
+      "input": "(Cancel) LK HP",
+      "type": "System Mechanics"
     }
   ]
 }

@@ -923,3 +923,15 @@ html.force-mobile .char-grid-main {
     transform: perspective(1000px) rotateY(0deg) translateY(0);
   }
 }
+
+
+@keyframes slideDownFade {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

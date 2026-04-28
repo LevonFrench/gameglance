@@ -1,37 +1,157 @@
 {
+  "id": "chizuru-kagura",
   "name": "Chizuru Kagura",
-  "character": "Chizuru Kagura",
-  "game": "The King of Fighters XV",
   "movesList": [
     {
-      "name": "100-Katsu: Tenjin no Kotowari",
-      "input": "623A/C",
-      "type": "special"
+      "id": "move_1",
+      "name": "Rei Getsu",
+      "input": "(close)4 /  6+ HP",
+      "type": "Throws"
     },
     {
-      "name": "212-Katsu: Shinsoku no Norito",
-      "input": "236A/B/C/D",
-      "type": "special"
+      "id": "move_2",
+      "name": "Kai Ten",
+      "input": "(close)4 /  6+ HK",
+      "type": "Throws"
     },
     {
-      "name": "212-Katsu: Shinsoku no Norito (Followup)",
-      "input": "214A/B/C/D",
-      "type": "special"
+      "id": "move_3",
+      "name": "Jo Katsu Zheng Zheng",
+      "input": "6+ LP",
+      "type": "Command Moves"
     },
     {
-      "name": "Ura 1-Katsu: San Shinki no Ichi (Super)",
-      "input": "236236A/C",
-      "type": "special"
+      "id": "move_4",
+      "name": "Jo Katsu Cang Cang",
+      "input": "6+ LK",
+      "type": "Command Moves"
     },
     {
-      "name": "Ura 31-Katsu: San Shinki no San (Super)",
-      "input": "2141236B/D",
-      "type": "special"
+      "id": "move_5",
+      "name": "Jo Katsu Cong Cong",
+      "input": "6+ HK",
+      "type": "Command Moves"
     },
     {
-      "name": "Ura 85-Katsu: Reigi no Ishizue (Climax)",
-      "input": "2141236AC",
-      "type": "special"
+      "id": "move_6",
+      "name": "212 Katsu Otsushiki Choumon no Isshin",
+      "input": "2+ LP /  LK /  HP /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_7",
+      "name": "212 Katsu Shinsoku no Norito;  or  ver. \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t or  ver.",
+      "input": "214+ LP/ LK/ HP/ HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_8",
+      "name": "212 Katsu Shinsoku no Norito Tenzui;  or  ver. \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t or  ver.",
+      "input": "214+ LP /  HPduring LP /  HPShinzoku no Norito",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_9",
+      "name": "100 Katsu Tenjin no Kotowari",
+      "input": "623+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_10",
+      "name": "Startup roll ( version only) \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t108 Katsu Tamayura no Shitsune",
+      "input": "236+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_11",
+      "name": "Uramen 85 Katsu Reigi no Ishizue",
+      "input": "41236+ LP /  HP( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_12",
+      "name": "Uramen 1 Katsu San Rai no Fujin",
+      "input": "236+ LK /  HK( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_13",
+      "name": "Uramen 31 Katsu Kyuusen no Jouhari",
+      "input": "41236+ HPHK",
+      "type": "Climax Super Special Moves"
+    },
+    {
+      "id": "univ_1",
+      "name": "Standing Blow Back",
+      "input": "HP HK",
+      "type": "System Mechanics",
+      "notes": "Wall bounces opponent"
+    },
+    {
+      "id": "univ_2",
+      "name": "Jumping Blow Back",
+      "input": "j.HP HK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_3",
+      "name": "Shatter Strike",
+      "input": "236HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_4",
+      "name": "Advance Strike",
+      "input": "214HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 0.5 power gauge bar"
+    },
+    {
+      "id": "univ_5",
+      "name": "Emergency Evasion (Forward)",
+      "input": "LP LK / 6LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_6",
+      "name": "Emergency Evasion (Backward)",
+      "input": "4LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_7",
+      "name": "Recovery",
+      "input": "LP LK",
+      "type": "System Mechanics",
+      "notes": "When knocked back"
+    },
+    {
+      "id": "univ_8",
+      "name": "Guard Cancel Blow Back",
+      "input": "(Guard) HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_9",
+      "name": "Guard Cancel Emergency Evasion",
+      "input": "(Guard) LP LK / 4LP LK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_10",
+      "name": "MAX Mode",
+      "input": "LK HP",
+      "type": "System Mechanics",
+      "notes": "Consumes 2 power gauge bars"
+    },
+    {
+      "id": "univ_11",
+      "name": "MAX Mode (Quick)",
+      "input": "(Cancel) LK HP",
+      "type": "System Mechanics"
     }
   ]
 }

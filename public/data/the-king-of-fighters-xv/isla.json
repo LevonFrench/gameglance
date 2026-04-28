@@ -1,105 +1,199 @@
 {
-  "character": "Isla",
+  "id": "isla",
+  "name": "Isla & Amanda",
   "movesList": [
     {
-      "name": "Light Punch",
-      "input": "5A",
-      "type": "Normal"
+      "id": "move_1",
+      "name": "All-City",
+      "input": "(close)4 /  6+ HP",
+      "type": "Throws"
     },
     {
-      "name": "Light Kick",
-      "input": "5B",
-      "type": "Normal"
+      "id": "move_2",
+      "name": "Crossing Out",
+      "input": "(close)4 /  6+ HK",
+      "type": "Throws"
     },
     {
-      "name": "Heavy Punch",
-      "input": "5C",
-      "type": "Normal"
-    },
-    {
-      "name": "Heavy Kick",
-      "input": "5D",
-      "type": "Normal"
-    },
-    {
+      "id": "move_3",
       "name": "Cloud",
-      "input": "6A",
-      "type": "Special"
+      "input": "6+ LK",
+      "type": "Command Moves"
     },
     {
-      "name": "Design",
-      "input": "3B",
-      "type": "Special"
+      "id": "move_4",
+      "name": "Designs",
+      "input": "6+ HK",
+      "type": "Command Moves"
     },
     {
+      "id": "move_5",
+      "name": "Drips Forward",
+      "input": "j.236+ LP /  HP",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_6",
+      "name": "Drips Backward",
+      "input": "j.214+ LP",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_7",
+      "name": "Drips Vertical",
+      "input": "j.214+ HP",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_8",
+      "name": "③ Piecing A \t\t \t \n \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t ver.",
+      "input": "j.236+ LK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_9",
+      "name": "③ Piecing B",
+      "input": "j.236+ HK",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_10",
+      "name": "③ Piecing C \t\t \t \n \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t ver.",
+      "input": "j.214+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_11",
       "name": "Fill-In",
-      "input": "236A / 236C",
-      "type": "Special"
+      "input": "236+ LP /  HP( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Scrawl",
-      "input": "214A / 214C",
-      "type": "Special"
+      "id": "move_12",
+      "name": "Scribe",
+      "input": "623+ LK /  HK( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Air Scrawl",
-      "input": "j.214A / j.214C",
-      "type": "Aerial"
+      "id": "move_13",
+      "name": "① To Front",
+      "input": "214+ LK /  HK( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Front",
-      "input": "236B / 236D",
-      "type": "Special"
+      "id": "move_14",
+      "name": "② Brake",
+      "input": "HKafter To Front",
+      "type": "Special Moves"
     },
     {
-      "name": "Color Point (A)",
-      "input": "623A",
-      "type": "Special"
+      "id": "move_15",
+      "name": "② Throwie A",
+      "input": "LPafter HK /  To Front",
+      "type": "Special Moves"
     },
     {
-      "name": "Color Point (B)",
-      "input": "623B",
-      "type": "Special"
+      "id": "move_16",
+      "name": "② Throwie B",
+      "input": "LKafter HK /  To Front",
+      "type": "Special Moves"
     },
     {
-      "name": "Color Point (C)",
-      "input": "623C",
-      "type": "Special"
+      "id": "move_17",
+      "name": "② Throwie C",
+      "input": "HPafter HK /  To Front",
+      "type": "Special Moves"
     },
     {
-      "name": "Color Point (D)",
-      "input": "623D",
-      "type": "Special"
+      "id": "move_18",
+      "name": "Back to Back",
+      "input": "236+ LK /  HK( [air ok]OK, OK)",
+      "type": "Super Special Moves"
     },
     {
-      "name": "Piecing",
-      "input": "214B / 214D",
-      "type": "Special"
+      "id": "move_19",
+      "name": "Wild Style",
+      "input": "214+ LP /  HP( OK)",
+      "type": "Super Special Moves"
     },
     {
-      "name": "Bubbly",
-      "input": "j.236B / j.236D",
-      "type": "Special"
+      "id": "move_20",
+      "name": "King of Piece: I&A",
+      "input": "41236+ HPHK",
+      "type": "Climax Super Special Moves"
     },
     {
-      "name": "Back to Back (Super Special Move)",
-      "input": "236236A / 236236C",
-      "type": "Special"
+      "id": "univ_1",
+      "name": "Standing Blow Back",
+      "input": "HP HK",
+      "type": "System Mechanics",
+      "notes": "Wall bounces opponent"
     },
     {
-      "name": "Air Back to Back (Super Special Move)",
-      "input": "j.236236A / j.236236C",
-      "type": "Aerial"
+      "id": "univ_2",
+      "name": "Jumping Blow Back",
+      "input": "j.HP HK",
+      "type": "System Mechanics"
     },
     {
-      "name": "Wild Style (Super Special Move)",
-      "input": "236236B / 236236D",
-      "type": "Special"
+      "id": "univ_3",
+      "name": "Shatter Strike",
+      "input": "236HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
     },
     {
-      "name": "I-S-L-A (Climax Super Special Move)",
-      "input": "2141236C+D",
-      "type": "Super"
+      "id": "univ_4",
+      "name": "Advance Strike",
+      "input": "214HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 0.5 power gauge bar"
+    },
+    {
+      "id": "univ_5",
+      "name": "Emergency Evasion (Forward)",
+      "input": "LP LK / 6LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_6",
+      "name": "Emergency Evasion (Backward)",
+      "input": "4LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_7",
+      "name": "Recovery",
+      "input": "LP LK",
+      "type": "System Mechanics",
+      "notes": "When knocked back"
+    },
+    {
+      "id": "univ_8",
+      "name": "Guard Cancel Blow Back",
+      "input": "(Guard) HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_9",
+      "name": "Guard Cancel Emergency Evasion",
+      "input": "(Guard) LP LK / 4LP LK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_10",
+      "name": "MAX Mode",
+      "input": "LK HP",
+      "type": "System Mechanics",
+      "notes": "Consumes 2 power gauge bars"
+    },
+    {
+      "id": "univ_11",
+      "name": "MAX Mode (Quick)",
+      "input": "(Cancel) LK HP",
+      "type": "System Mechanics"
     }
   ]
 }

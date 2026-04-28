@@ -381,6 +381,8 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
       .replace(/KICK:FWB/gi, 'Kick: Fwd B')
       .replace(/([A-Z0-9\/])\(/gi, '$1 (')
       .replace(/punch/gi, 'P')
+      .replace(/\(\s*OK\s*\)/gi, '')
+      .replace(/\(\s*MAX\s*OK\s*\)/gi, '')
       .replace(/\.$/, '');
   });
 
@@ -472,6 +474,27 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
             margin: large ? '6px 0' : '4px 0',
           }}
         />
+      );
+    }
+
+    if (input.toLowerCase() === 'or') {
+      return (
+        <span
+          key={idx}
+          style={{
+            color: 'var(--text-secondary)',
+            fontSize: large ? '0.85rem' : '0.7rem',
+            fontWeight: 800,
+            margin: `0 ${large ? '4px' : '2px'}`,
+            display: 'inline-flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            fontStyle: 'italic',
+            ...styleOverrides
+          }}
+        >
+          OR
+        </span>
       );
     }
 

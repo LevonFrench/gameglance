@@ -1,22 +1,235 @@
 {
-  "name": "Angel",
-  "character": "Angel",
-  "game": "The King of Fighters XV",
+  "id": "angel",
+  "name": "Ángel",
   "movesList": [
     {
-      "name": "Red Sky",
-      "input": "41236B/D",
-      "type": "special"
+      "id": "move_1",
+      "name": "Tekitou Rush",
+      "input": "(close)4 /  6+ HP",
+      "type": "Throws"
     },
     {
-      "name": "Formalists Blue",
-      "input": "214A/C",
-      "type": "special"
+      "id": "move_2",
+      "name": "Shadow Behead",
+      "input": "(close)4 /  6+ HK",
+      "type": "Throws"
     },
     {
-      "name": "Loyalty Test for the Liberalists",
-      "input": "4123641236A/C",
-      "type": "super"
+      "id": "move_3",
+      "name": "Middle Spin",
+      "input": "6+ LK",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_4",
+      "name": "Heavy Knee Attack",
+      "input": "j.2+ HK",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_5",
+      "name": "Red Sky (Dash) \t\t \t \n \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t(Kick) \t\t \t \n \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t(Elbow)",
+      "input": "63214+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_6",
+      "name": "Mad Murder; Grab \t\t \t \n \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tLauncher",
+      "input": "(close)41236+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_7",
+      "name": "① Unchain • Low",
+      "input": "6+ LK",
+      "type": "Unchain Starter Moves"
+    },
+    {
+      "id": "move_8",
+      "name": "① Unchain • Heel",
+      "input": "6+ HK",
+      "type": "Unchain Starter Moves"
+    },
+    {
+      "id": "move_9",
+      "name": "① Unchain • Tornado",
+      "input": "6+ LK /  HK( OK)",
+      "type": "Unchain Starter Moves"
+    },
+    {
+      "id": "move_10",
+      "name": "① Unchain • Blow",
+      "input": "214+ LP /  HP( OK)",
+      "type": "Unchain Starter Moves"
+    },
+    {
+      "id": "move_11",
+      "name": "① Unchain • Step",
+      "input": "41236+ LK /  HK( OK)",
+      "type": "Unchain Starter Moves"
+    },
+    {
+      "id": "move_12",
+      "name": "② Circle • Upper",
+      "input": "8+ LP /  HPduring ①",
+      "type": "Unchain Circle Moves"
+    },
+    {
+      "id": "move_13",
+      "name": "② Circle • Assault",
+      "input": "2+ LK /  HKduring ①",
+      "type": "Unchain Circle Moves"
+    },
+    {
+      "id": "move_14",
+      "name": "② Circle • Hammer Blow",
+      "input": "6+ LP /  HPduring ①",
+      "type": "Unchain Circle Moves"
+    },
+    {
+      "id": "move_15",
+      "name": "② Circle • High",
+      "input": "8+ LK /  HKduring ①",
+      "type": "Unchain Circle Moves"
+    },
+    {
+      "id": "move_16",
+      "name": "② Circle • Under Blow",
+      "input": "2+ LP /  HPduring ①",
+      "type": "Unchain Circle Moves"
+    },
+    {
+      "id": "move_17",
+      "name": "② Circle • Sobat",
+      "input": "6+ LK /  HKduring ①",
+      "type": "Unchain Circle Moves"
+    },
+    {
+      "id": "move_18",
+      "name": "Circle • Feint;  ver. \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t ver. \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t ver.",
+      "input": "4 /  5 /  6+ LPLKduring ②",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_19",
+      "name": "③ Finish • Lariat",
+      "input": "6+ LPduring ②",
+      "type": "Unchain Finish"
+    },
+    {
+      "id": "move_20",
+      "name": "③ Finish • Rolling",
+      "input": "6+ LK /  HKduring ②",
+      "type": "Unchain Finish"
+    },
+    {
+      "id": "move_21",
+      "name": "③ Finish • Straight",
+      "input": "6+ HPduring ②",
+      "type": "Unchain Finish"
+    },
+    {
+      "id": "move_22",
+      "name": "③ Finish • Neck Cutter \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tFinishing Hit",
+      "input": "236+ LPduring ②",
+      "type": "Unchain Finish"
+    },
+    {
+      "id": "move_23",
+      "name": "③ Finish • Grapple Kick \t\t \t \n \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tFinishing Hit",
+      "input": "(close)236+ HPduring ②",
+      "type": "Unchain Finish"
+    },
+    {
+      "id": "move_24",
+      "name": "Real Rave",
+      "input": "623+ LP /  HP( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_25",
+      "name": "Blue Monday Counter",
+      "input": "Timed to opponent's attack, 623+ LK /  HK( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_26",
+      "name": "Ascension Time",
+      "input": "41236+ HPHK",
+      "type": "Climax Super Special Moves"
+    },
+    {
+      "id": "univ_1",
+      "name": "Standing Blow Back",
+      "input": "HP HK",
+      "type": "System Mechanics",
+      "notes": "Wall bounces opponent"
+    },
+    {
+      "id": "univ_2",
+      "name": "Jumping Blow Back",
+      "input": "j.HP HK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_3",
+      "name": "Shatter Strike",
+      "input": "236HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_4",
+      "name": "Advance Strike",
+      "input": "214HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 0.5 power gauge bar"
+    },
+    {
+      "id": "univ_5",
+      "name": "Emergency Evasion (Forward)",
+      "input": "LP LK / 6LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_6",
+      "name": "Emergency Evasion (Backward)",
+      "input": "4LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_7",
+      "name": "Recovery",
+      "input": "LP LK",
+      "type": "System Mechanics",
+      "notes": "When knocked back"
+    },
+    {
+      "id": "univ_8",
+      "name": "Guard Cancel Blow Back",
+      "input": "(Guard) HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_9",
+      "name": "Guard Cancel Emergency Evasion",
+      "input": "(Guard) LP LK / 4LP LK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_10",
+      "name": "MAX Mode",
+      "input": "LK HP",
+      "type": "System Mechanics",
+      "notes": "Consumes 2 power gauge bars"
+    },
+    {
+      "id": "univ_11",
+      "name": "MAX Mode (Quick)",
+      "input": "(Cancel) LK HP",
+      "type": "System Mechanics"
     }
   ]
 }

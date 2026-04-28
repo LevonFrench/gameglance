@@ -1,47 +1,151 @@
 {
+  "id": "b-jenet",
   "name": "B. Jenet",
-  "character": "B. Jenet",
-  "game": "The King of Fighters XV",
   "movesList": [
     {
+      "id": "move_1",
+      "name": "Bye-Bye Boo",
+      "input": "(close)4 /  6+ HP",
+      "type": "Throws"
+    },
+    {
+      "id": "move_2",
+      "name": "Broach",
+      "input": "(close)4 /  6+ HK",
+      "type": "Throws"
+    },
+    {
+      "id": "move_3",
+      "name": "Falling Crush",
+      "input": "j.4 /  6+ HP",
+      "type": "Throws"
+    },
+    {
+      "id": "move_4",
+      "name": "Rolling Thunder (Flip Kick) \t\t \t \n \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tRolling Thunder (Dive Kick)",
+      "input": "6+ HK",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_5",
       "name": "Baffrass",
-      "input": "236A/C",
-      "type": "special"
+      "input": "236+ LP /  HP( OK)",
+      "type": "Special Moves"
     },
     {
+      "id": "move_6",
       "name": "Crazy Ivan",
-      "input": "214A/C",
-      "type": "special"
+      "input": "214+ LP /  HP( OK)",
+      "type": "Special Moves"
     },
     {
+      "id": "move_7",
+      "name": "Startup hop \t\t \t \n \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tThe Hind",
+      "input": "236+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_8",
       "name": "Gulf Tomahawk",
-      "input": "214B/D",
-      "type": "special"
+      "input": "214+ LK /  HK( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "The Hind",
-      "input": "236B/D",
-      "type": "special"
+      "id": "move_9",
+      "name": "Harrier Bee (Hit 1) \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tHits 2 and 3 \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tHits 4 and 5",
+      "input": "j.2+ LK /  HK[x5] ( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Harrier Bee",
-      "input": "j.214B/D",
-      "type": "special"
+      "id": "move_10",
+      "name": "Many Many Torpedoes",
+      "input": "236+ LP /  HP( [air ok]OK, OK)",
+      "type": "Super Special Moves"
     },
     {
-      "name": "Many Many Torpedoes (Super)",
-      "input": "236236A/C",
-      "type": "special"
+      "id": "move_11",
+      "name": "Aurora",
+      "input": "236+ LK /  HK( OK)",
+      "type": "Super Special Moves"
     },
     {
-      "name": "Aurora (Super)",
-      "input": "236236B/D",
-      "type": "special"
+      "id": "move_12",
+      "name": "Ennui Mademoiselle (Ready Pose)",
+      "input": "Timed to Opponent's attack, 41236+ HPHK",
+      "type": "Climax Super Special Moves"
     },
     {
-      "name": "Ennui Mademoiselle (Climax)",
-      "input": "2141236AC",
-      "type": "special"
+      "id": "univ_1",
+      "name": "Standing Blow Back",
+      "input": "HP HK",
+      "type": "System Mechanics",
+      "notes": "Wall bounces opponent"
+    },
+    {
+      "id": "univ_2",
+      "name": "Jumping Blow Back",
+      "input": "j.HP HK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_3",
+      "name": "Shatter Strike",
+      "input": "236HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_4",
+      "name": "Advance Strike",
+      "input": "214HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 0.5 power gauge bar"
+    },
+    {
+      "id": "univ_5",
+      "name": "Emergency Evasion (Forward)",
+      "input": "LP LK / 6LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_6",
+      "name": "Emergency Evasion (Backward)",
+      "input": "4LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_7",
+      "name": "Recovery",
+      "input": "LP LK",
+      "type": "System Mechanics",
+      "notes": "When knocked back"
+    },
+    {
+      "id": "univ_8",
+      "name": "Guard Cancel Blow Back",
+      "input": "(Guard) HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_9",
+      "name": "Guard Cancel Emergency Evasion",
+      "input": "(Guard) LP LK / 4LP LK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_10",
+      "name": "MAX Mode",
+      "input": "LK HP",
+      "type": "System Mechanics",
+      "notes": "Consumes 2 power gauge bars"
+    },
+    {
+      "id": "univ_11",
+      "name": "MAX Mode (Quick)",
+      "input": "(Cancel) LK HP",
+      "type": "System Mechanics"
     }
   ]
 }

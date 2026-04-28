@@ -1,27 +1,181 @@
 {
+  "id": "clark-still",
   "name": "Clark Still",
-  "character": "Clark Still",
-  "game": "The King of Fighters XV",
   "movesList": [
     {
-      "name": "Gatling Attack",
-      "input": "[4]6+A/C",
-      "type": "special"
+      "id": "move_1",
+      "name": "Nageppanashi German",
+      "input": "(close)4 /  6+ HP",
+      "type": "Throws"
     },
     {
-      "name": "Mount Tackle",
-      "input": "41236+A/C",
-      "type": "special"
+      "id": "move_2",
+      "name": "Fisherman Buster",
+      "input": "(close)4 /  6+ HK",
+      "type": "Throws"
     },
     {
-      "name": "Napalm Stretch",
-      "input": "623+A/C",
-      "type": "special"
+      "id": "move_3",
+      "name": "Death Lake Driver",
+      "input": "j.4 /  6+ HP",
+      "type": "Throws"
     },
     {
+      "id": "move_4",
+      "name": "Stomping",
+      "input": "6+ LK",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_5",
+      "name": "Step",
+      "input": "6+ LKHK",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_6",
+      "name": "Vulcan Punch",
+      "input": "623+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_7",
+      "name": "Gatling Attack; Backhand \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tUppercut",
+      "input": "214+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_8",
+      "name": "Super Argentine Backbreaker; Start-Up \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tGrab",
+      "input": "(close)41236+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_9",
+      "name": "Mount Tackle; Run \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tGrab",
+      "input": "41236+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_10",
+      "name": "Clark Lift",
+      "input": "2+ LPduring Mount Tackle",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_11",
+      "name": "Sleeper Lift (D.D.T.)",
+      "input": "2+ HPduring Mount Tackle",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_12",
+      "name": "Rolling Cradle",
+      "input": "2+ LK /  HKduring Mount Tackle",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_13",
+      "name": "Frankensteiner",
+      "input": "(close)623+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_14",
+      "name": "Flashing Elbow",
+      "input": "236+ LP /  HPduring Clark Lift, Sleeper (D.D.T.), Super Argentine Backbreaker or Frankensteiner",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_15",
+      "name": "Ultra Argentine Backbreaker; Start-Up \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tGrab",
+      "input": "(close)63214+ LP /  HP( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_16",
       "name": "Running Three",
-      "input": "4123641236+B/D",
-      "type": "super"
+      "input": "41236+ LK /  HK( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_17",
+      "name": "Ultra Clark Buster",
+      "input": "41236+ HPHK",
+      "type": "Climax Super Special Moves"
+    },
+    {
+      "id": "univ_1",
+      "name": "Standing Blow Back",
+      "input": "HP HK",
+      "type": "System Mechanics",
+      "notes": "Wall bounces opponent"
+    },
+    {
+      "id": "univ_2",
+      "name": "Jumping Blow Back",
+      "input": "j.HP HK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_3",
+      "name": "Shatter Strike",
+      "input": "236HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_4",
+      "name": "Advance Strike",
+      "input": "214HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 0.5 power gauge bar"
+    },
+    {
+      "id": "univ_5",
+      "name": "Emergency Evasion (Forward)",
+      "input": "LP LK / 6LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_6",
+      "name": "Emergency Evasion (Backward)",
+      "input": "4LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_7",
+      "name": "Recovery",
+      "input": "LP LK",
+      "type": "System Mechanics",
+      "notes": "When knocked back"
+    },
+    {
+      "id": "univ_8",
+      "name": "Guard Cancel Blow Back",
+      "input": "(Guard) HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_9",
+      "name": "Guard Cancel Emergency Evasion",
+      "input": "(Guard) LP LK / 4LP LK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_10",
+      "name": "MAX Mode",
+      "input": "LK HP",
+      "type": "System Mechanics",
+      "notes": "Consumes 2 power gauge bars"
+    },
+    {
+      "id": "univ_11",
+      "name": "MAX Mode (Quick)",
+      "input": "(Cancel) LK HP",
+      "type": "System Mechanics"
     }
   ]
 }

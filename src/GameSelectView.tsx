@@ -507,6 +507,12 @@ export const GameSelectView: React.FC<Props> = ({
     ...Object.keys(tagCounts).sort()
   ];
 
+  
+  const expandedGame = React.useMemo(() => {
+    return filteredAndSortedGames.find(g => g.id === expandedGameId) || 
+           filteredAndSortedGames.filter(g => favorites.includes(g.id)).find(g => g.id === expandedGameId);
+  }, [expandedGameId, filteredAndSortedGames, favorites]);
+
   return (
     <div style={{
       minHeight: '100vh',
@@ -721,7 +727,131 @@ export const GameSelectView: React.FC<Props> = ({
       </header>
 
       {/* Game Grid */}
-      <main className="game-grid-main" style={{
+      
+      {/* Top Expansion Area */}
+      {expandedGameId && expandedGame && (
+        <div style={{
+          width: '100%',
+          maxWidth: '1400px',
+          margin: '0 auto 2rem auto',
+          background: isDark ? 'linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(20,20,30,0.8) 100%)' : 'linear-gradient(180deg, rgba(0,0,0,0.02) 0%, rgba(255,255,255,0.9) 100%)',
+          border: '1px solid var(--border-medium)',
+          boxShadow: '0 8px 32px rgba(0,0,0,0.2)',
+          borderRadius: 'var(--radius-xl)',
+          padding: '4rem 2rem 2rem 2rem',
+          position: 'relative',
+          overflow: 'hidden',
+          animation: 'slideDownFade 0.4s cubic-bezier(0.16, 1, 0.3, 1) both',
+          backdropFilter: 'blur(12px)',
+          WebkitBackdropFilter: 'blur(12px)',
+        }}>
+           <div style={{
+             position: 'absolute', top: 0, left: 0, right: 0, height: '4px',
+             background: getGameTheme(expandedGame).gradient, opacity: 0.8,
+           }} />
+           
+           <button
+             onClick={() => setExpandedGameId(null)}
+             style={{
+               position: 'absolute',
+               top: '1rem',
+               right: '1rem',
+               background: 'var(--bg-glass)',
+               border: '1px solid var(--border-subtle)',
+               borderRadius: '50%',
+               width: '32px',
+               height: '32px',
+               display: 'flex',
+               alignItems: 'center',
+               justifyContent: 'center',
+               cursor: 'pointer',
+               color: 'var(--text-secondary)',
+               transition: 'all 0.25s',
+               zIndex: 10,
+               backdropFilter: 'blur(4px)',
+             }}
+             onMouseOver={e => { e.currentTarget.style.color = 'var(--text-primary)'; e.currentTarget.style.transform = 'scale(1.1)'; e.currentTarget.style.borderColor = 'rgba(239, 68, 68, 0.5)'; }}
+             onMouseOut={e => { e.currentTarget.style.color = 'var(--text-secondary)'; e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.borderColor = 'var(--border-subtle)'; }}
+           >
+             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+               <line x1="18" y1="6" x2="6" y2="18"></line>
+               <line x1="6" y1="6" x2="18" y2="18"></line>
+             </svg>
+           </button>
+           
+           <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem', width: '100%', position: 'relative', zIndex: 1, marginBottom: '2rem' }}>
+              <div style={{
+                position: 'absolute', top: '50%', left: '50%', transform: 'translate(-50%, -50%)',
+                fontSize: 'clamp(4rem, 12vw, 10rem)', fontWeight: 900,
+                color: isDark ? 'rgba(255, 255, 255, 0.04)' : 'rgba(0, 0, 0, 0.05)',
+                whiteSpace: 'nowrap', userSelect: 'none', pointerEvents: 'none',
+                fontFamily: "'Outfit', sans-serif", letterSpacing: '-0.03em', zIndex: 0,
+                mixBlendMode: isDark ? 'overlay' : 'multiply'
+              }}>
+                {expandedGame.name.toUpperCase()}
+              </div>
+
+              <h2 style={{ 
+                margin: 0, fontSize: 'clamp(2.5rem, 5vw, 3.5rem)', fontWeight: 900,
+                color: 'var(--text-primary)', position: 'relative', zIndex: 1,
+                letterSpacing: '-0.02em', fontFamily: "'Outfit', sans-serif",
+                textShadow: isDark ? '0 4px 12px rgba(0,0,0,0.5)' : 'none'
+              }}>
+                {expandedGame.name}
+              </h2>
+              
+              <div style={{ 
+                display: 'flex', gap: 'var(--space-sm)', color: 'var(--text-secondary)',
+                fontSize: '0.95rem', position: 'relative', zIndex: 1, fontWeight: 600,
+                letterSpacing: '0.03em', textTransform: 'uppercase', flexWrap: 'wrap',
+                justifyContent: 'center', alignItems: 'center'
+              }}>
+                <span>Roster: {expandedGame.rosterCount || expandedGame.characters?.length || 0}</span>
+                <span style={{ opacity: 0.5 }}>•</span>
+                <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
+                  Platforms: <PlatformIcons platformString={expandedGame.platform || 'Arcade'} />
+                </span>
+                <span style={{ opacity: 0.5 }}>•</span>
+                {expandedGame.developer && <span style={{ color: `hsl(${Math.abs(Array.from(expandedGame.id).reduce((hash, char) => char.charCodeAt(0) + ((hash << 5) - hash), 0)) % 360}, 70%, 60%)` }}>{expandedGame.developer}</span>}
+                {expandedGame.developer && expandedGame.releaseYear && <span style={{ opacity: 0.5 }}>•</span>}
+                {expandedGame.releaseYear && <span>{expandedGame.releaseYear}</span>}
+
+                {expandedGame.tagline && (
+                  <>
+                    <span style={{ opacity: 0.5, margin: '0 0.25rem' }}>|</span>
+                    <span style={{ color: 'var(--text-tertiary)', fontStyle: 'italic', textTransform: 'none' }}>
+                      "{expandedGame.tagline}"
+                    </span>
+                  </>
+                )}
+
+                {expandedGame.tags && expandedGame.tags.length > 0 && (
+                  <>
+                    <span style={{ opacity: 0.5, margin: '0 0.25rem' }}>|</span>
+                    <div style={{ display: 'flex', gap: '6px' }}>
+                      {expandedGame.tags.map(tag => (
+                        <span key={tag} style={{
+                          background: isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.04)',
+                          padding: '2px 8px', borderRadius: '12px', fontSize: '0.75rem',
+                          color: 'var(--text-primary)', border: `1px solid ${isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'}`,
+                          backdropFilter: 'blur(4px)'
+                        }}>
+                          {tag}
+                        </span>
+                      ))}
+                    </div>
+                  </>
+                )}
+              </div>
+           </div>
+           
+           <div style={{ animation: 'fadeInUp 0.4s ease-out 0.1s both' }}>
+              <GameInfoCard game={expandedGame} controller={controller} notationOverride={notationOverride} />
+           </div>
+        </div>
+      )}
+
+<main className="game-grid-main" style={{
         display: 'grid',
         gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
         gridAutoRows: 'minmax(160px, auto)',
@@ -733,19 +863,18 @@ export const GameSelectView: React.FC<Props> = ({
         {(showCards ? filteredAndSortedGames : filteredAndSortedGames.filter(g => favorites.includes(g.id))).map((game, index) => {
           const theme = getGameTheme(game);
           const isFavorite = favorites.includes(game.id);
+          const isActive = expandedGameId === game.id;
+          
           return (
             <div
               key={game.id}
               id={`game-container-${game.id}`}
               style={{
-                gridColumn: expandedGameId === game.id ? '1 / -1' : 'auto',
-                gridRow: expandedGameId === game.id ? 'auto / span 1' : 'auto',
                 display: 'flex',
                 flexDirection: 'column',
                 gap: '1rem',
-                zIndex: expandedGameId === game.id ? 10 : 1,
                 position: 'relative',
-                animation: `cardTurnIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275) ${100 + index * 50}ms both`,
+                animation: disableInitialAnimation ? 'none' : `fadeInUp 0.3s ease-out ${index * 30}ms both`,
               }}
             >
               <div
@@ -757,46 +886,48 @@ export const GameSelectView: React.FC<Props> = ({
                 tabIndex={0}
                 style={{
                   position: 'relative',
-                  background: expandedGameId === game.id 
-                    ? (isDark ? 'linear-gradient(180deg, rgba(255,255,255,0.03) 0%, rgba(20,20,30,0.8) 100%)' : 'linear-gradient(180deg, rgba(0,0,0,0.02) 0%, rgba(255,255,255,0.9) 100%)')
-                    : 'var(--bg-card)',
-                  border: '1px solid var(--border-medium)',
-                  boxShadow: '0 4px 12px rgba(0,0,0,0.1)',
+                  background: isActive ? (isDark ? 'linear-gradient(180deg, rgba(255,255,255,0.05) 0%, rgba(20,20,30,0.9) 100%)' : 'var(--bg-card)') : 'var(--bg-card)',
+                  border: isActive ? `1px solid ${theme.glowColor}` : '1px solid var(--border-medium)',
+                  boxShadow: isActive ? `0 0 15px ${theme.glowColor}40` : '0 4px 12px rgba(0,0,0,0.1)',
                   borderRadius: 'var(--radius-xl)',
-                  padding: expandedGameId === game.id ? '4rem 2rem' : '1.25rem 1rem',
+                  padding: '1.25rem 1rem',
                   display: 'flex',
                   flexDirection: 'column',
-                  alignItems: expandedGameId === game.id ? 'center' : 'flex-start',
-                  justifyContent: expandedGameId === game.id ? 'center' : 'space-between',
+                  alignItems: 'flex-start',
+                  justifyContent: 'space-between',
                   cursor: 'pointer',
                   transition: 'all 0.45s cubic-bezier(0.16, 1, 0.3, 1)',
                   minHeight: '110px',
                   flex: 1,
                   overflow: 'hidden',
                   color: 'var(--text-primary)',
-                  textAlign: expandedGameId === game.id ? 'center' : 'left',
+                  textAlign: 'left',
                   fontFamily: 'inherit',
                   backdropFilter: 'blur(12px)',
                   WebkitBackdropFilter: 'blur(12px)',
-                  transform: expandedGameId === game.id ? 'none' : undefined,
+                  transform: isActive ? 'translateY(-2px)' : 'none',
                 }}
                 onMouseOver={(e) => {
-                  const el = e.currentTarget;
-                  el.style.borderColor = isDark ? 'rgba(255,255,255,0.25)' : 'rgba(99,102,241,0.4)';
-                  el.style.boxShadow = `0 0 20px ${theme.glowColor}, 0 0 40px ${theme.glowColor}, var(--shadow-glow-indigo)`;
-                  const gradientOverlay = el.querySelector('.gradient-overlay') as HTMLElement;
-                  if (gradientOverlay) gradientOverlay.style.opacity = isDark ? '0.15' : '0.10';
-                  const mouseGlow = el.querySelector('.mouse-glow') as HTMLElement;
-                  if (mouseGlow) mouseGlow.style.opacity = '1';
+                  if (!isActive) {
+                    const el = e.currentTarget;
+                    el.style.borderColor = isDark ? 'rgba(255,255,255,0.25)' : 'rgba(99,102,241,0.4)';
+                    el.style.boxShadow = `0 0 20px ${theme.glowColor}, 0 0 40px ${theme.glowColor}, var(--shadow-glow-indigo)`;
+                    const gradientOverlay = el.querySelector('.gradient-overlay');
+                    if (gradientOverlay) gradientOverlay.style.opacity = isDark ? '0.15' : '0.10';
+                    const mouseGlow = el.querySelector('.mouse-glow');
+                    if (mouseGlow) mouseGlow.style.opacity = '1';
+                  }
                 }}
                 onMouseOut={(e) => {
-                  const el = e.currentTarget;
-                  el.style.borderColor = 'var(--border-medium)';
-                  el.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
-                  const gradientOverlay = el.querySelector('.gradient-overlay') as HTMLElement;
-                  if (gradientOverlay) gradientOverlay.style.opacity = '0.04';
-                  const mouseGlow = el.querySelector('.mouse-glow') as HTMLElement;
-                  if (mouseGlow) mouseGlow.style.opacity = '0';
+                  if (!isActive) {
+                    const el = e.currentTarget;
+                    el.style.borderColor = 'var(--border-medium)';
+                    el.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
+                    const gradientOverlay = el.querySelector('.gradient-overlay');
+                    if (gradientOverlay) gradientOverlay.style.opacity = '0.04';
+                    const mouseGlow = el.querySelector('.mouse-glow');
+                    if (mouseGlow) mouseGlow.style.opacity = '0';
+                  }
                 }}
               >
                 {/* Mouse-reactive glow */}
@@ -806,7 +937,7 @@ export const GameSelectView: React.FC<Props> = ({
                     position: 'absolute',
                     inset: 0,
                     background: `radial-gradient(circle 180px at var(--mouse-x, 50%) var(--mouse-y, 50%), ${theme.glowColor}, transparent 70%)`,
-                    opacity: 0,
+                    opacity: isActive ? 0.3 : 0,
                     transition: 'opacity 0.4s ease',
                     borderRadius: 'inherit',
                     pointerEvents: 'none',
@@ -821,7 +952,7 @@ export const GameSelectView: React.FC<Props> = ({
                     position: 'absolute',
                     inset: 0,
                     background: theme.gradient,
-                    opacity: expandedGameId === game.id ? (isDark ? 0.15 : 0.1) : 0.04,
+                    opacity: isActive ? (isDark ? 0.15 : 0.1) : 0.04,
                     transition: 'opacity 0.4s ease',
                     borderRadius: 'inherit',
                   }}
@@ -835,7 +966,7 @@ export const GameSelectView: React.FC<Props> = ({
                   right: 0,
                   height: '4px',
                   background: theme.gradient,
-                  opacity: 0.8,
+                  opacity: isActive ? 1 : 0.8,
                 }} />
 
                 {/* Fav button - Top Right */}
@@ -877,181 +1008,80 @@ export const GameSelectView: React.FC<Props> = ({
                   </svg>
                 </button>
 
-                {expandedGameId === game.id ? (
-                  /* Expanded Header Layout */
-                  <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: '0.75rem', width: '100%', position: 'relative', zIndex: 1 }}>
-                    {/* Watermark Logo */}
-                    <div style={{
-                      position: 'absolute',
-                      top: '50%',
-                      left: '50%',
-                      transform: 'translate(-50%, -50%)',
-                      fontSize: 'clamp(4rem, 12vw, 10rem)',
-                      fontWeight: 900,
-                      color: isDark ? 'rgba(255, 255, 255, 0.04)' : 'rgba(0, 0, 0, 0.05)',
-                      whiteSpace: 'nowrap',
-                      userSelect: 'none',
-                      pointerEvents: 'none',
-                      fontFamily: "'Outfit', sans-serif",
-                      letterSpacing: '-0.03em',
-                      zIndex: 0,
-                      mixBlendMode: isDark ? 'overlay' : 'multiply'
-                    }}>
-                      {game.name.toUpperCase()}
-                    </div>
-
-                    <h2 style={{ 
-                      margin: 0, 
-                      fontSize: 'clamp(2.5rem, 5vw, 3.5rem)',
-                      fontWeight: 900,
-                      color: 'var(--text-primary)',
-                      position: 'relative',
-                      zIndex: 1,
-                      letterSpacing: '-0.02em',
-                      fontFamily: "'Outfit', sans-serif",
-                      textShadow: isDark ? '0 4px 12px rgba(0,0,0,0.5)' : 'none'
-                    }}>
-                      {game.name}
-                    </h2>
-                    
-                    <div style={{ 
-                      display: 'flex', 
-                      gap: 'var(--space-sm)', 
-                      color: 'var(--text-secondary)',
-                      fontSize: '0.95rem',
-                      position: 'relative',
-                      zIndex: 1,
-                      fontWeight: 600,
-                      letterSpacing: '0.03em',
-                      textTransform: 'uppercase',
-                      flexWrap: 'wrap',
-                      justifyContent: 'center',
-                      alignItems: 'center'
-                    }}>
-                      <span>Roster: {game.rosterCount || game.characters?.length || 0}</span>
-                      <span style={{ opacity: 0.5 }}>•</span>
-                      <span style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-                        Platforms: <PlatformIcons platformString={game.platform || 'Arcade'} />
+                {/* Tiled Watermark */}
+                <div style={{
+                  position: 'absolute',
+                  inset: '-50%',
+                  transform: 'rotate(-15deg)',
+                  display: 'flex',
+                  flexWrap: 'wrap',
+                  gap: '0 1.5rem',
+                  alignContent: 'center',
+                  justifyContent: 'center',
+                  fontSize: '3rem',
+                  fontWeight: 900,
+                  color: 'rgba(255, 255, 255, 0.02)',
+                  userSelect: 'none',
+                  pointerEvents: 'none',
+                  fontFamily: "'Outfit', sans-serif",
+                  letterSpacing: '-0.02em',
+                  lineHeight: 1.2,
+                  zIndex: 0,
+                }}>
+                  {Array.from({ length: 12 }, (_, i) => (
+                    <span key={i} style={{ whiteSpace: 'nowrap' }}>{game.name.toUpperCase()}</span>
+                  ))}
+                </div>
+                <h2 style={{
+                  margin: 0,
+                  fontSize: '1.35rem',
+                  fontWeight: 800,
+                  letterSpacing: '-0.02em',
+                  position: 'relative',
+                  zIndex: 1,
+                  paddingRight: '2rem',
+                }}>
+                  {game.name.split(': ').map((part, i, arr) => (
+                    <React.Fragment key={i}>
+                      <span style={{ display: 'inline-block' }}>
+                        {part}{i < arr.length - 1 ? ':' : ''}
                       </span>
-                      <span style={{ opacity: 0.5 }}>•</span>
-                      {game.developer && <span style={{ color: `hsl(${Math.abs(Array.from(game.id).reduce((hash, char) => char.charCodeAt(0) + ((hash << 5) - hash), 0)) % 360}, 70%, 60%)` }}>{game.developer}</span>}
-                      {game.developer && game.releaseYear && <span style={{ opacity: 0.5 }}>•</span>}
-                      {game.releaseYear && <span>{game.releaseYear}</span>}
+                      {i < arr.length - 1 ? ' ' : ''}
+                    </React.Fragment>
+                  ))}
+                </h2>
 
-                      {game.tagline && (
-                        <>
-                          <span style={{ opacity: 0.5, margin: '0 0.25rem' }}>|</span>
-                          <span style={{
-                            color: 'var(--text-tertiary)',
-                            fontStyle: 'italic',
-                            textTransform: 'none',
-                          }}>
-                            "{game.tagline}"
-                          </span>
-                        </>
-                      )}
-
-                      {game.tags && game.tags.length > 0 && (
-                        <>
-                          <span style={{ opacity: 0.5, margin: '0 0.25rem' }}>|</span>
-                          <div style={{ display: 'flex', gap: '6px' }}>
-                            {game.tags.map(tag => (
-                              <span key={tag} style={{
-                                background: isDark ? 'rgba(255,255,255,0.06)' : 'rgba(0,0,0,0.04)',
-                                padding: '2px 8px',
-                                borderRadius: '12px',
-                                fontSize: '0.75rem',
-                                color: 'var(--text-primary)',
-                                border: `1px solid ${isDark ? 'rgba(255,255,255,0.08)' : 'rgba(0,0,0,0.08)'}`,
-                                backdropFilter: 'blur(4px)'
-                              }}>
-                                {tag}
-                              </span>
-                            ))}
-                          </div>
-                        </>
-                      )}
-                    </div>
-                  </div>
-                ) : (
-                  /* Standard Card Layout */
-                  <>
-                    {/* Tiled Watermark */}
+                <div style={{
+                  marginTop: '1.5rem',
+                  display: 'flex',
+                  alignItems: 'center',
+                  justifyContent: 'space-between',
+                  width: '100%',
+                  position: 'relative',
+                  zIndex: 1,
+                }}>
+                  <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
                     <div style={{
-                      position: 'absolute',
-                      inset: '-50%',
-                      transform: 'rotate(-15deg)',
-                      display: 'flex',
-                      flexWrap: 'wrap',
-                      gap: '0 1.5rem',
-                      alignContent: 'center',
-                      justifyContent: 'center',
-                      fontSize: '3rem',
-                      fontWeight: 900,
-                      color: 'rgba(255, 255, 255, 0.02)',
-                      userSelect: 'none',
-                      pointerEvents: 'none',
-                      fontFamily: "'Outfit', sans-serif",
-                      letterSpacing: '-0.02em',
-                      lineHeight: 1.2,
-                      zIndex: 0,
-                    }}>
-                      {Array.from({ length: 12 }, (_, i) => (
-                        <span key={i} style={{ whiteSpace: 'nowrap' }}>{game.name.toUpperCase()}</span>
-                      ))}
-                    </div>
-                    <h2 style={{
-                      margin: 0,
-                      fontSize: '1.35rem',
-                      fontWeight: 800,
-                      letterSpacing: '-0.02em',
-                      position: 'relative',
-                      zIndex: 1,
-                      paddingRight: '2rem', // Space for fav button
-                    }}>
-                      {game.name.split(': ').map((part, i, arr) => (
-                        <React.Fragment key={i}>
-                          <span style={{ display: 'inline-block' }}>
-                            {part}{i < arr.length - 1 ? ':' : ''}
-                          </span>
-                          {i < arr.length - 1 ? ' ' : ''}
-                        </React.Fragment>
-                      ))}
-                    </h2>
-
-                    <div style={{
-                      marginTop: '1.5rem',
                       display: 'flex',
                       alignItems: 'center',
-                      justifyContent: 'space-between',
-                      width: '100%',
-                      position: 'relative',
-                      zIndex: 1,
+                      gap: '0.4rem',
+                      padding: '0.3rem 0.7rem',
+                      borderRadius: 'var(--radius-full)',
+                      background: 'var(--bg-badge)',
+                      border: '1px solid var(--border-subtle)',
+                      fontSize: '0.82rem',
+                      fontWeight: 700,
+                      color: 'var(--text-primary)',
                     }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: '0.5rem' }}>
-                        <div style={{
-                          display: 'flex',
-                          alignItems: 'center',
-                          gap: '0.4rem',
-                          padding: '0.3rem 0.7rem',
-                          borderRadius: 'var(--radius-full)',
-                          background: 'var(--bg-badge)',
-                          border: '1px solid var(--border-subtle)',
-                          fontSize: '0.82rem',
-                          fontWeight: 700,
-                          color: 'var(--text-primary)',
-                        }}>
-                          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                            <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-                            <circle cx="12" cy="7" r="4"></circle>
-                          </svg>
-                          {game.rosterCount || game.characters?.length || 0}
-                        </div>
-                        {game.platform && <PlatformIcons platformString={game.platform} />}
-                      </div>
+                      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                      </svg>
+                      {game.rosterCount || game.characters?.length || 0}
                     </div>
-                  </>
-                )}
+                    {game.platform && <PlatformIcons platformString={game.platform} />}
+                  </div>
+                </div>
 
                 {/* Info button - Bottom Right */}
                 <button
@@ -1062,13 +1092,7 @@ export const GameSelectView: React.FC<Props> = ({
                     setExpandedGameId(isExpanding ? game.id : null);
                     if (isExpanding) {
                       setTimeout(() => {
-                        const el = document.getElementById(`game-container-${game.id}`);
-                        const header = document.querySelector('header');
-                        if (el) {
-                          const headerHeight = header ? header.getBoundingClientRect().height : 0;
-                          const y = el.getBoundingClientRect().top + window.scrollY - headerHeight;
-                          window.scrollTo({ top: Math.max(0, y), behavior: 'smooth' });
-                        }
+                        window.scrollTo({ top: 0, behavior: 'smooth' });
                       }, 50);
                     }
                   }}
@@ -1076,13 +1100,13 @@ export const GameSelectView: React.FC<Props> = ({
                     position: 'absolute',
                     bottom: '1rem',
                     right: '1rem',
-                    background: expandedGameId === game.id ? 'var(--accent-indigo)' : 'var(--bg-glass)',
+                    background: isActive ? 'var(--accent-indigo)' : 'var(--bg-glass)',
                     border: '1px solid var(--border-subtle)',
                     display: 'flex',
                     alignItems: 'center',
                     justifyContent: 'center',
                     cursor: 'pointer',
-                    color: expandedGameId === game.id ? '#fff' : 'var(--text-secondary)',
+                    color: isActive ? '#fff' : 'var(--text-secondary)',
                     transition: 'all 0.25s cubic-bezier(0.16, 1, 0.3, 1)',
                     width: '32px',
                     height: '32px',
@@ -1092,14 +1116,14 @@ export const GameSelectView: React.FC<Props> = ({
                     backdropFilter: 'blur(4px)',
                   }}
                   onMouseOver={e => {
-                    if (expandedGameId !== game.id) {
+                    if (!isActive) {
                       e.currentTarget.style.color = 'var(--text-primary)';
                       e.currentTarget.style.boxShadow = '0 0 12px rgba(99, 102, 241, 0.4)';
                       e.currentTarget.style.borderColor = 'rgba(255,255,255,0.3)';
                     }
                   }}
                   onMouseOut={e => {
-                    if (expandedGameId !== game.id) {
+                    if (!isActive) {
                       e.currentTarget.style.color = 'var(--text-secondary)';
                       e.currentTarget.style.boxShadow = 'none';
                       e.currentTarget.style.borderColor = 'var(--border-subtle)';
@@ -1107,7 +1131,7 @@ export const GameSelectView: React.FC<Props> = ({
                   }}
                 >
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                    {expandedGameId === game.id ? (
+                    {isActive ? (
                       <>
                         <line x1="18" y1="6" x2="6" y2="18"></line>
                         <line x1="6" y1="6" x2="18" y2="18"></line>
@@ -1122,16 +1146,10 @@ export const GameSelectView: React.FC<Props> = ({
                   </svg>
                 </button>
               </div>
-
-              {/* Expanded Area */}
-              {expandedGameId === game.id && (
-                <div style={{ animation: 'fadeInUp 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275)' }}>
-                  <GameInfoCard game={game} controller={controller} notationOverride={notationOverride} />
-                </div>
-              )}
             </div>
           );
         })}
+
       </main>
 
     </div>

@@ -1,32 +1,181 @@
 {
+  "id": "billy-kane",
   "name": "Billy Kane",
-  "character": "Billy Kane",
-  "game": "The King of Fighters XV",
   "movesList": [
     {
-      "name": "Sansetsu Kon Seichuu Uchi",
-      "input": "41236A/C",
-      "type": "special"
+      "id": "move_1",
+      "name": "Jigoku Otoshi",
+      "input": "(close)4 /  6+ HP",
+      "type": "Throws"
     },
     {
+      "id": "move_2",
+      "name": "Ippon Tsuri Nage",
+      "input": "(close)4 /  6+ HK",
+      "type": "Throws"
+    },
+    {
+      "id": "move_3",
+      "name": "Dai Kaiten-Geri",
+      "input": "6+ LP",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_4",
+      "name": "Boutakatobi-Geri",
+      "input": "6+ LK",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_5",
+      "name": "Chokka Uchi",
+      "input": "j.2+ HP",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_6",
       "name": "Senpuu Kon",
-      "input": "A rapid",
-      "type": "special"
+      "input": "623+ LP /  HP( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Suzume Otoshi",
-      "input": "214A/C",
-      "type": "special"
+      "id": "move_7",
+      "name": "Sansetsu Kon Chuudan Uchi",
+      "input": "41236+ LP /  HP( OK)",
+      "type": "Special Moves"
     },
     {
+      "id": "move_8",
+      "name": "Kaen Sansetsu Kon Chuudan Uchi",
+      "input": "236+ LP(after HP /  Sansetsu Kon Chuudan Uchi) ( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_9",
+      "name": "Tsurigome Sansetsu Kon Chuudan Uchi",
+      "input": "236+ HP(after HPSansetsu Kon Chuudan Uchi)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_10",
       "name": "Kyoushuu Hishou Kon",
-      "input": "623B/D",
-      "type": "special"
+      "input": "623+ LK /  HK( OK)",
+      "type": "Special Moves"
     },
     {
+      "id": "move_11",
+      "name": "Suzume Otoshi",
+      "input": "214+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_12",
+      "name": "Kaen Suzume Otoshi",
+      "input": "236+ LP /  HP(after HP /  Suzume Otoshi) ( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_13",
+      "name": "Ka Ryuu Tsuigeki Kon",
+      "input": "214+ LK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_14",
+      "name": "Sui Ryuu Tsuigeki Kon",
+      "input": "214+ HK",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_15",
       "name": "Chou Kaen Senpuu Kon",
-      "input": "2363214A/C",
-      "type": "super"
+      "input": "63214+ LP /  HP( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_16",
+      "name": "Guren Sakkon",
+      "input": "236+ LK /  HK( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_17",
+      "name": "Syaku Netu・Kaisen Kon",
+      "input": "41236+ HPHK",
+      "type": "Climax Super Special Moves"
+    },
+    {
+      "id": "univ_1",
+      "name": "Standing Blow Back",
+      "input": "HP HK",
+      "type": "System Mechanics",
+      "notes": "Wall bounces opponent"
+    },
+    {
+      "id": "univ_2",
+      "name": "Jumping Blow Back",
+      "input": "j.HP HK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_3",
+      "name": "Shatter Strike",
+      "input": "236HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_4",
+      "name": "Advance Strike",
+      "input": "214HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 0.5 power gauge bar"
+    },
+    {
+      "id": "univ_5",
+      "name": "Emergency Evasion (Forward)",
+      "input": "LP LK / 6LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_6",
+      "name": "Emergency Evasion (Backward)",
+      "input": "4LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_7",
+      "name": "Recovery",
+      "input": "LP LK",
+      "type": "System Mechanics",
+      "notes": "When knocked back"
+    },
+    {
+      "id": "univ_8",
+      "name": "Guard Cancel Blow Back",
+      "input": "(Guard) HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_9",
+      "name": "Guard Cancel Emergency Evasion",
+      "input": "(Guard) LP LK / 4LP LK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_10",
+      "name": "MAX Mode",
+      "input": "LK HP",
+      "type": "System Mechanics",
+      "notes": "Consumes 2 power gauge bars"
+    },
+    {
+      "id": "univ_11",
+      "name": "MAX Mode (Quick)",
+      "input": "(Cancel) LK HP",
+      "type": "System Mechanics"
     }
   ]
 }

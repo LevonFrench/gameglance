@@ -1,27 +1,163 @@
 {
+  "id": "vanessa",
   "name": "Vanessa",
-  "character": "Vanessa",
-  "game": "The King of Fighters XV",
   "movesList": [
     {
-      "name": "Machine Gun Punch",
-      "input": "41236A/C",
-      "type": "special"
+      "id": "move_1",
+      "name": "Barrett Puncher",
+      "input": "(close)4 /  6+ HP",
+      "type": "Throws"
     },
     {
-      "name": "Dash Punch",
-      "input": "4 charge 6A/C",
-      "type": "special"
+      "id": "move_2",
+      "name": "Clinch Puncher",
+      "input": "(close)4 /  6+ HK",
+      "type": "Throws"
     },
     {
-      "name": "Punching Machine",
-      "input": "214A/C",
-      "type": "special"
+      "id": "move_3",
+      "name": "One Two Puncher \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tRaw versions \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tCancel versions",
+      "input": "4 /  6+ LP",
+      "type": "Command Moves"
     },
     {
-      "name": "Crazy Puncher",
-      "input": "236236A/C",
-      "type": "super"
+      "id": "move_4",
+      "name": "Sliding Puncher",
+      "input": "6+ HK",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_5",
+      "name": "Machine Gun Puncher; First Hit \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tSecond Hit",
+      "input": "41236+ LP /  HP( [mash ok]OK, OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_6",
+      "name": "Parrying Puncher;  ver. \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t ver.",
+      "input": "623+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_7",
+      "name": "Dash Puncher (First Hit) \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tSecond Hit",
+      "input": "6+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_8",
+      "name": "Puncher Vision (Forward ver.) \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tBackward ver.",
+      "input": "214 /  236+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_9",
+      "name": "Puncher Upper",
+      "input": "6+ LPduring Puncher Vision",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_10",
+      "name": "Puncher Straight",
+      "input": "6+ HPduring Puncher Vision",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_11",
+      "name": "Puncher Weaving",
+      "input": "214+ LP /  HP( [hold ok]OK, OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_12",
+      "name": "Champion Puncher",
+      "input": "236+ LP /  HP( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_13",
+      "name": "Crazy Puncher; Dash \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tFinal Hit",
+      "input": "41236+ LP /  HP( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_14",
+      "name": "Infinity Puncher",
+      "input": "41236+ HPHK",
+      "type": "Climax Super Special Moves"
+    },
+    {
+      "id": "univ_1",
+      "name": "Standing Blow Back",
+      "input": "HP HK",
+      "type": "System Mechanics",
+      "notes": "Wall bounces opponent"
+    },
+    {
+      "id": "univ_2",
+      "name": "Jumping Blow Back",
+      "input": "j.HP HK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_3",
+      "name": "Shatter Strike",
+      "input": "236HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_4",
+      "name": "Advance Strike",
+      "input": "214HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 0.5 power gauge bar"
+    },
+    {
+      "id": "univ_5",
+      "name": "Emergency Evasion (Forward)",
+      "input": "LP LK / 6LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_6",
+      "name": "Emergency Evasion (Backward)",
+      "input": "4LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_7",
+      "name": "Recovery",
+      "input": "LP LK",
+      "type": "System Mechanics",
+      "notes": "When knocked back"
+    },
+    {
+      "id": "univ_8",
+      "name": "Guard Cancel Blow Back",
+      "input": "(Guard) HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_9",
+      "name": "Guard Cancel Emergency Evasion",
+      "input": "(Guard) LP LK / 4LP LK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_10",
+      "name": "MAX Mode",
+      "input": "LK HP",
+      "type": "System Mechanics",
+      "notes": "Consumes 2 power gauge bars"
+    },
+    {
+      "id": "univ_11",
+      "name": "MAX Mode (Quick)",
+      "input": "(Cancel) LK HP",
+      "type": "System Mechanics"
     }
   ]
 }

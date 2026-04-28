@@ -1,22 +1,211 @@
 {
-  "name": "Ramon",
-  "character": "Ramon",
-  "game": "The King of Fighters XV",
+  "id": "ramon",
+  "name": "Ramón",
   "movesList": [
     {
+      "id": "move_1",
+      "name": "Arm Whip",
+      "input": "(close)4 /  6+ HP",
+      "type": "Throws"
+    },
+    {
+      "id": "move_2",
+      "name": "Flying Mare",
+      "input": "(close)4 /  6+ HK",
+      "type": "Throws"
+    },
+    {
+      "id": "move_3",
+      "name": "Sankaku Tobi",
+      "input": "j.6near wall",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_4",
+      "name": "Drop Kick",
+      "input": "6+ HK",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_5",
+      "name": "Head Butt",
+      "input": "6+ LP",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_6",
+      "name": "Tiger Neck Chancery",
+      "input": "(close)41236+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_7",
+      "name": "Rolling Sobat",
+      "input": "623+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_8",
+      "name": "Flying Body Attack",
+      "input": "623+ LK /  HKafter Rolling Sobat ( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_9",
       "name": "Somersault",
-      "input": "41236B/D",
-      "type": "special"
+      "input": "41236+ LK /  HK( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Tiger Road",
-      "input": "214B/D",
-      "type": "special"
+      "id": "move_10",
+      "name": "Stop",
+      "input": "LPLKduring Somersault",
+      "type": "Special Moves"
     },
     {
-      "name": "El Diablo Amarilo Ramon",
-      "input": "2141236B/D",
-      "type": "super"
+      "id": "move_11",
+      "name": "Tiger Road \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tDive",
+      "input": "214+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_12",
+      "name": "Feint Dash",
+      "input": "LPLKduring Tiger Road",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_13",
+      "name": "Feint Jump",
+      "input": "6during Tiger Road",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_14",
+      "name": "Cross Chop",
+      "input": "LK /  HKduring Tiger Road",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_15",
+      "name": "Force of Will",
+      "input": "236+ LP /  HPduring Tiger Road",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_16",
+      "name": "Bird of Paradise",
+      "input": "2+ LPHP",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_17",
+      "name": "Hoist 1",
+      "input": "2+ LPafter Head Butt, Flying Body Attack, Tiger Road, Force of Will or Bird of Paradise",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_18",
+      "name": "Hoist 2",
+      "input": "2+ HPafter Head Butt, Flying Body Attack, Tiger Road, Force of Will or Bird of Paradise",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_19",
+      "name": "Feint Step",
+      "input": "214+ LP /  HP( [hold ok]OK, OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_20",
+      "name": "Tiger Spin",
+      "input": "(close)63214+ LP /  HP( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_21",
+      "name": "El Diablo Amarillo Ramón Volando (Start-Up) \t\t \t \n \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tRegular ver. ender \t\t \t \n \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t ver. ender",
+      "input": "41236+ LK /  HK( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_22",
+      "name": "Hyper Sonic • Ramón",
+      "input": "41236+ HPHK",
+      "type": "Climax Super Special Moves"
+    },
+    {
+      "id": "univ_1",
+      "name": "Standing Blow Back",
+      "input": "HP HK",
+      "type": "System Mechanics",
+      "notes": "Wall bounces opponent"
+    },
+    {
+      "id": "univ_2",
+      "name": "Jumping Blow Back",
+      "input": "j.HP HK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_3",
+      "name": "Shatter Strike",
+      "input": "236HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_4",
+      "name": "Advance Strike",
+      "input": "214HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 0.5 power gauge bar"
+    },
+    {
+      "id": "univ_5",
+      "name": "Emergency Evasion (Forward)",
+      "input": "LP LK / 6LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_6",
+      "name": "Emergency Evasion (Backward)",
+      "input": "4LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_7",
+      "name": "Recovery",
+      "input": "LP LK",
+      "type": "System Mechanics",
+      "notes": "When knocked back"
+    },
+    {
+      "id": "univ_8",
+      "name": "Guard Cancel Blow Back",
+      "input": "(Guard) HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_9",
+      "name": "Guard Cancel Emergency Evasion",
+      "input": "(Guard) LP LK / 4LP LK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_10",
+      "name": "MAX Mode",
+      "input": "LK HP",
+      "type": "System Mechanics",
+      "notes": "Consumes 2 power gauge bars"
+    },
+    {
+      "id": "univ_11",
+      "name": "MAX Mode (Quick)",
+      "input": "(Cancel) LK HP",
+      "type": "System Mechanics"
     }
   ]
 }

@@ -1,62 +1,217 @@
 {
+  "id": "kyo-kusanagi",
   "name": "Kyo Kusanagi",
-  "character": "Kyo Kusanagi",
-  "game": "The King of Fighters XV",
   "movesList": [
     {
-      "name": "Ge-Shiki: Goufu You",
-      "input": "6+B",
-      "type": "normal"
+      "id": "move_1",
+      "name": "Hatsugane",
+      "input": "(close)4 /  6+ HP",
+      "type": "Throws"
     },
     {
+      "id": "move_2",
+      "name": "Issetsu Seoi Nage",
+      "input": "(close)4 /  6+ HK",
+      "type": "Throws"
+    },
+    {
+      "id": "move_3",
+      "name": "Ge-Shiki Goufu You",
+      "input": "6+ LK",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_4",
       "name": "88 Shiki",
-      "input": "3+D",
-      "type": "normal"
+      "input": "6+ HK",
+      "type": "Command Moves"
     },
     {
-      "name": "Ge-Shiki: Naraku Otoshi",
-      "input": "j.2+C",
-      "type": "normal"
+      "id": "move_5",
+      "name": "Ge-Shiki Naraku Otoshi",
+      "input": "j.2+ HP",
+      "type": "Command Moves"
     },
     {
-      "name": "100 Shiki: Oniyaki",
-      "input": "623+A/C",
-      "type": "special"
+      "id": "move_6",
+      "name": "114 Shiki Aragami",
+      "input": "236+ LP",
+      "type": "Special Moves"
     },
     {
-      "name": "114 Shiki: Aragami",
-      "input": "236+A",
-      "type": "special"
+      "id": "move_7",
+      "name": "128 Shiki Konokizu",
+      "input": "236+ LP /  HPduring 114 Shiki Aragami",
+      "type": "Special Moves"
     },
     {
-      "name": "115 Shiki: Dokugami",
-      "input": "236+C",
-      "type": "special"
+      "id": "move_8",
+      "name": "125 Shiki Nanase",
+      "input": "LK /  HKduring 128 Shiki Konokizu",
+      "type": "Special Moves"
     },
     {
+      "id": "move_9",
+      "name": "127 Shiki Yanosabi",
+      "input": "LP /  HP➀ during 128 Shiki Konokizu",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_10",
+      "name": "Ge-Shiki Migiri Ugachi",
+      "input": "LP /  HPduring 127 Shiki Yanosabi ➁",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_11",
+      "name": "124 Shiki Munotsuchi",
+      "input": "63214+ LK /  HKduring 114 Shiki Aragami",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_12",
+      "name": "427 Shiki Hikigane",
+      "input": "LK /  HKduring 124 Shiki Munotsuchi",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_13",
+      "name": "Ge-Shiki Tsurubeotoshi",
+      "input": "LP /  HPduring 124 Shiki Munotsuchi",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_14",
+      "name": "115 Shiki Dokugami",
+      "input": "236+ HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_15",
+      "name": "401 Shiki Tsumiyomi",
+      "input": "63214+ LP /  HPduring 115 Shiki Dokugami",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_16",
+      "name": "402 Shiki Batsuyomi",
+      "input": "6+ LP /  HPduring 401 Shiki Tsumiyomi",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_17",
+      "name": "100 Shiki Oniyaki",
+      "input": "623+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_18",
       "name": "R.E.D. Kick",
-      "input": "421+B/D",
-      "type": "special"
+      "input": "623 /  4214+ LK /  HK( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "75 Shiki: Kai",
-      "input": "236+B, B / D, D",
-      "type": "special"
+      "id": "move_19",
+      "name": "75 Shiki Kai",
+      "input": "236+ LK /  HK・ LK /  HK( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "182 Shiki",
-      "input": "236236+A/C",
-      "type": "super"
+      "id": "move_20",
+      "name": "212 Shiki Kototsuki You (Dash) \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t212 Shiki Kototsuki You (Grab)",
+      "input": "63214+ LK /  HK( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Stylish 1",
-      "input": "A, A, A, 6+B",
-      "type": "common"
+      "id": "move_21",
+      "name": "Ura 108 Shiki Orochinagi",
+      "input": "41236+ LP /  HP( [hold ok]OK, OK)",
+      "type": "Super Special Moves"
     },
     {
-      "name": "Stylish 2",
-      "input": "A, A, 3+D",
-      "type": "common"
+      "id": "move_22",
+      "name": "182 Shiki (First two hits) \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tFinal hit,  ver. only",
+      "input": "236+ LP /  HP( [hold ok]OK, OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_23",
+      "name": "Ura 1212 Shiki Yakumo",
+      "input": "41236+ HPHK",
+      "type": "Climax Super Special Moves"
+    },
+    {
+      "id": "univ_1",
+      "name": "Standing Blow Back",
+      "input": "HP HK",
+      "type": "System Mechanics",
+      "notes": "Wall bounces opponent"
+    },
+    {
+      "id": "univ_2",
+      "name": "Jumping Blow Back",
+      "input": "j.HP HK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_3",
+      "name": "Shatter Strike",
+      "input": "236HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_4",
+      "name": "Advance Strike",
+      "input": "214HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 0.5 power gauge bar"
+    },
+    {
+      "id": "univ_5",
+      "name": "Emergency Evasion (Forward)",
+      "input": "LP LK / 6LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_6",
+      "name": "Emergency Evasion (Backward)",
+      "input": "4LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_7",
+      "name": "Recovery",
+      "input": "LP LK",
+      "type": "System Mechanics",
+      "notes": "When knocked back"
+    },
+    {
+      "id": "univ_8",
+      "name": "Guard Cancel Blow Back",
+      "input": "(Guard) HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_9",
+      "name": "Guard Cancel Emergency Evasion",
+      "input": "(Guard) LP LK / 4LP LK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_10",
+      "name": "MAX Mode",
+      "input": "LK HP",
+      "type": "System Mechanics",
+      "notes": "Consumes 2 power gauge bars"
+    },
+    {
+      "id": "univ_11",
+      "name": "MAX Mode (Quick)",
+      "input": "(Cancel) LK HP",
+      "type": "System Mechanics"
     }
   ]
 }

@@ -1,43 +1,163 @@
 {
+  "id": "chris",
   "name": "Chris",
-  "character": "Chris",
-  "game": "The King of Fighters XV",
   "movesList": [
     {
-      "id": "sp_0",
-      "name": "Aqua Spear",
-      "type": "special",
-      "input": "236P"
+      "id": "move_1",
+      "name": "Step Turn",
+      "input": "(close)4 /  6+ HP",
+      "type": "Throws"
     },
     {
-      "id": "sp_1",
-      "name": "Rising Efreet",
-      "type": "special",
-      "input": "623P"
+      "id": "move_2",
+      "name": "Aerial Drop",
+      "input": "(close)4 /  6+ HK",
+      "type": "Throws"
     },
     {
-      "id": "sp_2",
-      "name": "Vision (Front)",
-      "type": "special",
-      "input": "236K(AirOK)"
+      "id": "move_3",
+      "name": "Spinning Array",
+      "input": "6+ LP",
+      "type": "Command Moves"
     },
     {
-      "id": "sp_3",
-      "name": "Vision (Back)",
-      "type": "special",
-      "input": "214K(AirOK)"
+      "id": "move_4",
+      "name": "Reverse Anchor Kick",
+      "input": "6+ LK",
+      "type": "Command Moves"
     },
     {
-      "id": "sp_4",
-      "name": "Vision (Down)",
-      "type": "special",
-      "input": "(InAir)22K"
+      "id": "move_5",
+      "name": "Carry Off Kick",
+      "input": "6+ HK",
+      "type": "Command Moves"
     },
     {
-      "id": "sp_5",
-      "name": "Vision (Up)",
-      "type": "special",
-      "input": "(InAir)88K"
+      "id": "move_6",
+      "name": "Hunting Air",
+      "input": "623+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_7",
+      "name": "Glider Stomp",
+      "input": "j.236+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_8",
+      "name": "Scramble Dash; / ver. \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t ver.",
+      "input": "236+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_9",
+      "name": "Shooting Dancer Thrust (Startup Dash) \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t ver. \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t ver. \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t ver.",
+      "input": "214+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_10",
+      "name": "Shooting Dancer Step",
+      "input": "214+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_11",
+      "name": "Direction Change",
+      "input": "623+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_12",
+      "name": "Chain Slide Touch",
+      "input": "236+ LP /  HP( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_13",
+      "name": "Twister Drive",
+      "input": "214+ LK /  HK( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_14",
+      "name": "Onslaught Mirage",
+      "input": "41236+ HPHK",
+      "type": "Climax Super Special Moves"
+    },
+    {
+      "id": "univ_1",
+      "name": "Standing Blow Back",
+      "input": "HP HK",
+      "type": "System Mechanics",
+      "notes": "Wall bounces opponent"
+    },
+    {
+      "id": "univ_2",
+      "name": "Jumping Blow Back",
+      "input": "j.HP HK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_3",
+      "name": "Shatter Strike",
+      "input": "236HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_4",
+      "name": "Advance Strike",
+      "input": "214HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 0.5 power gauge bar"
+    },
+    {
+      "id": "univ_5",
+      "name": "Emergency Evasion (Forward)",
+      "input": "LP LK / 6LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_6",
+      "name": "Emergency Evasion (Backward)",
+      "input": "4LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_7",
+      "name": "Recovery",
+      "input": "LP LK",
+      "type": "System Mechanics",
+      "notes": "When knocked back"
+    },
+    {
+      "id": "univ_8",
+      "name": "Guard Cancel Blow Back",
+      "input": "(Guard) HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_9",
+      "name": "Guard Cancel Emergency Evasion",
+      "input": "(Guard) LP LK / 4LP LK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_10",
+      "name": "MAX Mode",
+      "input": "LK HP",
+      "type": "System Mechanics",
+      "notes": "Consumes 2 power gauge bars"
+    },
+    {
+      "id": "univ_11",
+      "name": "MAX Mode (Quick)",
+      "input": "(Cancel) LK HP",
+      "type": "System Mechanics"
     }
   ]
 }

@@ -201,27 +201,14 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
   useEffect(() => {
     const GLOBAL_DEFAULT_SORT = [
       'System',
-      'Special Moves', 
+      'Special Moves', 'Special',
       'Arcana Moves',
-      'Super Arts', 
-      'Super Combos', 
-      'Super Moves',
-      'Overdrives',
-      'Critical Art',
-      'Critical Heart',
-      'Offensive Art',
-      'Defensive Art',
-      'Throws', 
-      'Combos',
-      'Unique Attacks', 
-      'Normal Moves', 
-      'Common Moves', 
-      'Finishers', 
-      'Fatality',
-      'Fatalities',
-      'Heroic Brutality'
+      'Super Arts', 'Super Combos', 'Super Moves', 'Super',
+      'Overdrives', 'Critical Art', 'Critical Heart', 'Offensive Art', 'Defensive Art',
+      'Finishers', 'Finisher', 'Fatality', 'Fatalities', 'Heroic Brutality',
+      'Throws', 'Throw', 'Combos', 'Unique Attacks', 'Normal Moves', 'Normal', 'Common Moves', 'Common'
     ];
-    const stored = localStorage.getItem('fgc_tab_order');
+    const stored = localStorage.getItem('fgc_tab_order_v2');
     let pref = GLOBAL_DEFAULT_SORT;
     if (stored) {
       try {
@@ -247,7 +234,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     window.scrollTo(0, 0);
     setCharacterData(null);
     setLoadingError('');
-    fetch(`/data/${game.id}/${characterId}.json`)
+    fetch(`/data/${game.id}/${characterId}.json?v=${Date.now()}`)
       .then(res => {
         if (!res.ok) throw new Error("File not found");
         return res.json();
@@ -581,10 +568,10 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     if (!characterData) return {} as Record<string, number>;
     const counts: Record<string, number> = {};
     const GLOBAL_DEFAULT_SORT = [
-      'System', 'Special Moves', 'Arcana Moves', 'Super Arts', 'Super Combos', 'Super Moves',
+      'System', 'Special Moves', 'Special', 'Arcana Moves', 'Super Arts', 'Super Combos', 'Super Moves', 'Super',
       'Overdrives', 'Critical Art', 'Critical Heart', 'Offensive Art', 'Defensive Art',
-      'Throws', 'Unique Attacks', 'Normal Moves', 'Common Moves', 'Finishers', 
-      'Fatality', 'Fatalities', 'Heroic Brutality'
+      'Finishers', 'Finisher', 'Fatality', 'Fatalities', 'Heroic Brutality',
+      'Throws', 'Throw', 'Combos', 'Unique Attacks', 'Normal Moves', 'Normal', 'Common Moves', 'Common'
     ];
     const combinedTabs = game.tabs && game.tabs.length > 0 ? game.tabs : GLOBAL_DEFAULT_SORT;
     
@@ -635,11 +622,11 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     
     setOrderedTabs(newTabs);
     
-    const stored = localStorage.getItem('fgc_tab_order');
+    const stored = localStorage.getItem('fgc_tab_order_v2');
     let pref: string[] = [];
     if (stored) { try { pref = JSON.parse(stored); } catch { pref = []; } }
     const newPref = Array.from(new Set([...newTabs, ...pref]));
-    localStorage.setItem('fgc_tab_order', JSON.stringify(newPref));
+    localStorage.setItem('fgc_tab_order_v2', JSON.stringify(newPref));
   };
 
   if (loadingError) {

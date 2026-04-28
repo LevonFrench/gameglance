@@ -1,52 +1,205 @@
 {
+  "id": "geese-howard",
   "name": "Geese Howard",
-  "character": "Geese Howard",
-  "game": "The King of Fighters XV",
   "movesList": [
     {
+      "id": "move_1",
+      "name": "Ko Satsu Shou",
+      "input": "(close)4 /  6+ HP",
+      "type": "Throws"
+    },
+    {
+      "id": "move_2",
+      "name": "Shinkuu Nage",
+      "input": "(close)4 /  6+ HK",
+      "type": "Throws"
+    },
+    {
+      "id": "move_3",
+      "name": "Raikou Mawashigeri",
+      "input": "6+ LK",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_4",
+      "name": "Tendoh Kudaki",
+      "input": "6+ LP",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_5",
       "name": "Reppuken",
-      "input": "236+A",
-      "type": "special"
+      "input": "236+ LP",
+      "type": "Special Moves"
     },
     {
+      "id": "move_6",
       "name": "Double Reppuken",
-      "input": "236+C",
-      "type": "special"
+      "input": "236+ HP( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Rising Tackle",
-      "input": "623+A/C",
-      "type": "special"
+      "id": "move_7",
+      "name": "Shippuken",
+      "input": "j.214+ LP /  HP( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Hard Edge",
-      "input": "214+A/C",
-      "type": "special"
+      "id": "move_8",
+      "name": "Hishou Nichirinzan",
+      "input": "623+ LP /  HP( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Crack Counter",
-      "input": "236+B/D",
-      "type": "special"
+      "id": "move_9",
+      "name": "Jyoudan Atemi",
+      "input": "Timed to opponent's high attack, 63214+ LK( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Rage Run",
-      "input": "214+B/D",
-      "type": "special"
+      "id": "move_10",
+      "name": "Chuudan Atemi",
+      "input": "Timed to opponent's mid attack, 63214+ HK",
+      "type": "Special Moves"
     },
     {
+      "id": "move_11",
+      "name": "Gedan Atemi",
+      "input": "Timed to opponent's low attack, 41236+ LK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_12",
+      "name": "Raimei Gouha Nage",
+      "input": "[hcbf input]+ LP /  HPnear downed opponent ( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_13",
+      "name": "Fudou Ken",
+      "input": "214+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_14",
+      "name": "Fudou Ken・A",
+      "input": "6+ LP /  HP(after HP /  Fudou Ken ) ( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_15",
+      "name": "Fudou Ken・Ba",
+      "input": "2+ LK /  HK(after HP /  Fudou Ken ) ( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_16",
+      "name": "Fudou Ken・Un",
+      "input": "6+ LK /  HK(after HP /  Fudou Ken ) ( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_17",
+      "name": "Fudou Ken・O",
+      "input": "6+ LP /  HP(after LPFudou Ken )",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_18",
+      "name": "Raigou Reppuken",
+      "input": "63214+ LP /  HP( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_19",
+      "name": "Oni Hanmon",
+      "input": "63214+ LK /  HK( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_20",
       "name": "Raging Storm",
-      "input": "236236+A/C",
-      "type": "super"
+      "input": "41236+ HPHK",
+      "type": "Climax Super Special Moves"
     },
     {
-      "name": "Shine Knuckle",
-      "input": "236236+B/D",
-      "type": "super"
+      "id": "move_21",
+      "name": "Rashoumon",
+      "input": "(close)63214+ HPHK",
+      "type": "Climax Super Special Moves"
     },
     {
-      "name": "Neo Deadly Rave",
-      "input": "632146+A + Programmed Sequence",
-      "type": "super"
+      "id": "univ_1",
+      "name": "Standing Blow Back",
+      "input": "HP HK",
+      "type": "System Mechanics",
+      "notes": "Wall bounces opponent"
+    },
+    {
+      "id": "univ_2",
+      "name": "Jumping Blow Back",
+      "input": "j.HP HK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_3",
+      "name": "Shatter Strike",
+      "input": "236HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_4",
+      "name": "Advance Strike",
+      "input": "214HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 0.5 power gauge bar"
+    },
+    {
+      "id": "univ_5",
+      "name": "Emergency Evasion (Forward)",
+      "input": "LP LK / 6LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_6",
+      "name": "Emergency Evasion (Backward)",
+      "input": "4LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_7",
+      "name": "Recovery",
+      "input": "LP LK",
+      "type": "System Mechanics",
+      "notes": "When knocked back"
+    },
+    {
+      "id": "univ_8",
+      "name": "Guard Cancel Blow Back",
+      "input": "(Guard) HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_9",
+      "name": "Guard Cancel Emergency Evasion",
+      "input": "(Guard) LP LK / 4LP LK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_10",
+      "name": "MAX Mode",
+      "input": "LK HP",
+      "type": "System Mechanics",
+      "notes": "Consumes 2 power gauge bars"
+    },
+    {
+      "id": "univ_11",
+      "name": "MAX Mode (Quick)",
+      "input": "(Cancel) LK HP",
+      "type": "System Mechanics"
     }
   ]
 }

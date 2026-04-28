@@ -1,22 +1,145 @@
 {
+  "id": "maxima",
   "name": "Maxima",
-  "character": "Maxima",
-  "game": "The King of Fighters XV",
   "movesList": [
     {
-      "name": "Vapor Cannon",
-      "input": "214+A/C",
-      "type": "special"
+      "id": "move_1",
+      "name": "Dynamite Drop",
+      "input": "(close)4 /  6+ HP",
+      "type": "Throws"
     },
     {
-      "name": "System 1-2",
-      "input": "236+A/C",
-      "type": "special"
+      "id": "move_2",
+      "name": "Drop Bomb",
+      "input": "(close)4 /  6+ HK",
+      "type": "Throws"
     },
     {
-      "name": "Bunker Buster",
-      "input": "236236+A/C",
-      "type": "super"
+      "id": "move_3",
+      "name": "M-9 Maxima Missile (Prototype)",
+      "input": "6+ HP",
+      "type": "Command Moves"
+    },
+    {
+      "id": "move_4",
+      "name": "M-4 Vapor Cannon \t\t \t \n \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t ver. \t\t \t \n \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tAerial ver.",
+      "input": "214+ LP /  HP( [air ok]OK, OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_5",
+      "name": "M-19 Blitz Cannon",
+      "input": "623+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_6",
+      "name": "Maxima Press;  ver. \t\t \t \n \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t/ ver. \t\t \t \n \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\tSuccessful Grab",
+      "input": "(close)63214+ LK /  HK( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_7",
+      "name": "Maxima Press (Follow-Up)",
+      "input": "214+ LP /  HPafter Maxima Press",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_8",
+      "name": "Maxima Charge",
+      "input": "236+ LP /  HP( OK)",
+      "type": "Special Moves"
+    },
+    {
+      "id": "move_9",
+      "name": "Double Vapor Cannon",
+      "input": "236+ LP /  HP( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_10",
+      "name": "M-24 Atomic Laser",
+      "input": "236+ LK /  HK( OK)",
+      "type": "Super Special Moves"
+    },
+    {
+      "id": "move_11",
+      "name": "MX-III CIWS Launcher",
+      "input": "41236+ HPHK",
+      "type": "Climax Super Special Moves"
+    },
+    {
+      "id": "univ_1",
+      "name": "Standing Blow Back",
+      "input": "HP HK",
+      "type": "System Mechanics",
+      "notes": "Wall bounces opponent"
+    },
+    {
+      "id": "univ_2",
+      "name": "Jumping Blow Back",
+      "input": "j.HP HK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_3",
+      "name": "Shatter Strike",
+      "input": "236HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_4",
+      "name": "Advance Strike",
+      "input": "214HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 0.5 power gauge bar"
+    },
+    {
+      "id": "univ_5",
+      "name": "Emergency Evasion (Forward)",
+      "input": "LP LK / 6LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_6",
+      "name": "Emergency Evasion (Backward)",
+      "input": "4LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_7",
+      "name": "Recovery",
+      "input": "LP LK",
+      "type": "System Mechanics",
+      "notes": "When knocked back"
+    },
+    {
+      "id": "univ_8",
+      "name": "Guard Cancel Blow Back",
+      "input": "(Guard) HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_9",
+      "name": "Guard Cancel Emergency Evasion",
+      "input": "(Guard) LP LK / 4LP LK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_10",
+      "name": "MAX Mode",
+      "input": "LK HP",
+      "type": "System Mechanics",
+      "notes": "Consumes 2 power gauge bars"
+    },
+    {
+      "id": "univ_11",
+      "name": "MAX Mode (Quick)",
+      "input": "(Cancel) LK HP",
+      "type": "System Mechanics"
     }
   ]
 }

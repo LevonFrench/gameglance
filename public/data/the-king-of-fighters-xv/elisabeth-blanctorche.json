@@ -1,62 +1,145 @@
 {
+  "id": "elisabeth-blanctorche",
   "name": "Elisabeth Blanctorche",
-  "character": "Elisabeth Blanctorche",
-  "game": "The King of Fighters XV",
   "movesList": [
     {
-      "name": "Manières (Throw)",
-      "input": "4/6 + C/D",
-      "type": "special"
+      "id": "move_1",
+      "name": "Manières",
+      "input": "(close)4 /  6+ HP",
+      "type": "Throws"
     },
     {
-      "name": "Un Coup de Pied",
-      "input": "6B",
-      "type": "special"
+      "id": "move_2",
+      "name": "Exil",
+      "input": "(close)4 /  6+ HK",
+      "type": "Throws"
     },
     {
-      "name": "Étincelles",
-      "input": "236A/C",
-      "type": "special"
+      "id": "move_3",
+      "name": "Éclair",
+      "input": "6+ LP",
+      "type": "Command Moves"
     },
     {
-      "name": "Coup de Vent",
-      "input": "623A/C",
-      "type": "special"
+      "id": "move_4",
+      "name": "Étincelles;  ver. \t\t \t  \t \t \t \t\t \t\t\t \t\t \t\t \t\t \t\t\t ver.",
+      "input": "236+ LP /  HP( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Rêverie-Souhaiter",
-      "input": "236B/D",
-      "type": "special"
+      "id": "move_5",
+      "name": "Coup De Vent",
+      "input": "623+ LP /  HP( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Rêverie-Prier",
-      "input": "214B/D",
-      "type": "special"
+      "id": "move_6",
+      "name": "Illusion",
+      "input": "Timed to opponent's attack, 236+ LK /  HK( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Rêverie-Geler",
-      "input": "214A/C",
-      "type": "special"
+      "id": "move_7",
+      "name": "Grêle",
+      "input": "214+ LP /  HP( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Mistral",
-      "input": "632146A/C",
-      "type": "special"
+      "id": "move_8",
+      "name": "Aurore",
+      "input": "214+ LK /  HK( OK)",
+      "type": "Special Moves"
     },
     {
-      "name": "Noble Blanc (Super)",
-      "input": "236236A/C",
-      "type": "special"
+      "id": "move_9",
+      "name": "Noble-Blanche",
+      "input": "236+ LP /  HP( OK)",
+      "type": "Super Special Moves"
     },
     {
-      "name": "Grand Rafale (Super)",
-      "input": "2363214A/C",
-      "type": "special"
+      "id": "move_10",
+      "name": "Grand Rafale",
+      "input": "63214+ LP /  HP( OK)",
+      "type": "Super Special Moves"
     },
     {
-      "name": "Étoile Filante (Neo Max)",
-      "input": "2141236BD",
-      "type": "special"
+      "id": "move_11",
+      "name": "Fête de la Lumière",
+      "input": "41236+ HPHK",
+      "type": "Climax Super Special Moves"
+    },
+    {
+      "id": "univ_1",
+      "name": "Standing Blow Back",
+      "input": "HP HK",
+      "type": "System Mechanics",
+      "notes": "Wall bounces opponent"
+    },
+    {
+      "id": "univ_2",
+      "name": "Jumping Blow Back",
+      "input": "j.HP HK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_3",
+      "name": "Shatter Strike",
+      "input": "236HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_4",
+      "name": "Advance Strike",
+      "input": "214HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 0.5 power gauge bar"
+    },
+    {
+      "id": "univ_5",
+      "name": "Emergency Evasion (Forward)",
+      "input": "LP LK / 6LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_6",
+      "name": "Emergency Evasion (Backward)",
+      "input": "4LP LK",
+      "type": "System Mechanics"
+    },
+    {
+      "id": "univ_7",
+      "name": "Recovery",
+      "input": "LP LK",
+      "type": "System Mechanics",
+      "notes": "When knocked back"
+    },
+    {
+      "id": "univ_8",
+      "name": "Guard Cancel Blow Back",
+      "input": "(Guard) HP HK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_9",
+      "name": "Guard Cancel Emergency Evasion",
+      "input": "(Guard) LP LK / 4LP LK",
+      "type": "System Mechanics",
+      "notes": "Consumes 1 power gauge bar"
+    },
+    {
+      "id": "univ_10",
+      "name": "MAX Mode",
+      "input": "LK HP",
+      "type": "System Mechanics",
+      "notes": "Consumes 2 power gauge bars"
+    },
+    {
+      "id": "univ_11",
+      "name": "MAX Mode (Quick)",
+      "input": "(Cancel) LK HP",
+      "type": "System Mechanics"
     }
   ]
 }
