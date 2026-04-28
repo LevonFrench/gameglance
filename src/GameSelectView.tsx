@@ -912,9 +912,9 @@ export const GameSelectView: React.FC<Props> = ({
                     const el = e.currentTarget;
                     el.style.borderColor = isDark ? 'rgba(255,255,255,0.25)' : 'rgba(99,102,241,0.4)';
                     el.style.boxShadow = `0 0 20px ${theme.glowColor}, 0 0 40px ${theme.glowColor}, var(--shadow-glow-indigo)`;
-                    const gradientOverlay = el.querySelector('.gradient-overlay');
+                    const gradientOverlay = el.querySelector('.gradient-overlay') as HTMLElement;
                     if (gradientOverlay) gradientOverlay.style.opacity = isDark ? '0.15' : '0.10';
-                    const mouseGlow = el.querySelector('.mouse-glow');
+                    const mouseGlow = el.querySelector('.mouse-glow') as HTMLElement;
                     if (mouseGlow) mouseGlow.style.opacity = '1';
                   }
                 }}
@@ -923,9 +923,9 @@ export const GameSelectView: React.FC<Props> = ({
                     const el = e.currentTarget;
                     el.style.borderColor = 'var(--border-medium)';
                     el.style.boxShadow = '0 4px 12px rgba(0,0,0,0.1)';
-                    const gradientOverlay = el.querySelector('.gradient-overlay');
+                    const gradientOverlay = el.querySelector('.gradient-overlay') as HTMLElement;
                     if (gradientOverlay) gradientOverlay.style.opacity = '0.04';
-                    const mouseGlow = el.querySelector('.mouse-glow');
+                    const mouseGlow = el.querySelector('.mouse-glow') as HTMLElement;
                     if (mouseGlow) mouseGlow.style.opacity = '0';
                   }
                 }}
