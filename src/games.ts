@@ -3703,7 +3703,8 @@ rosterCount: 14,
 
     id: 'mortal-kombat-x',
 
-    mameRomset: "",
+  
+    isDraft: true,  mameRomset: "",
 
     notationSystem: 'mk',
     name: "Mortal Kombat X",
