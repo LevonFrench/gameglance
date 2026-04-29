@@ -4,40 +4,580 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Quick Jab",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "quick-jab"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Light Kut",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "light-kut"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Sledge Fist",
+      "input": "f 1",
       "type": "normal",
-      "input": "3"
+      "id": "sledge-fist"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Low Metal",
+      "input": "d 1",
       "type": "normal",
-      "input": "4"
+      "id": "low-metal"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Spec Hook",
+      "input": "2",
+      "type": "normal",
+      "id": "spec-hook"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Downward Hammer",
+      "input": "b 2",
+      "type": "normal",
+      "id": "downward-hammer"
+    },
+    {
+      "name": "Turnaround Punch",
+      "input": "f 2",
+      "type": "normal",
+      "id": "turnaround-punch"
+    },
+    {
+      "name": "Rising Steel",
+      "input": "d 2",
+      "type": "normal",
+      "id": "rising-steel"
+    },
+    {
+      "name": "Side Boot",
+      "input": "3",
+      "type": "normal",
+      "id": "side-boot"
+    },
+    {
+      "name": "Steel Toe",
+      "input": "b 3",
+      "type": "normal",
+      "id": "steel-toe"
+    },
+    {
+      "name": "Roundhouse",
+      "input": "f 3",
+      "type": "normal",
+      "id": "roundhouse"
+    },
+    {
+      "name": "Downward Hammer",
+      "input": "b 2",
+      "type": "normal",
+      "id": "downward-hammer"
+    },
+    {
+      "name": "Toe Stomp",
+      "input": "b 4",
+      "type": "normal",
+      "id": "toe-stomp"
+    },
+    {
+      "name": "Low Heel",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-heel"
+    },
+    {
+      "name": "Fast Knee",
+      "input": "4",
+      "type": "normal",
+      "id": "fast-knee"
+    },
+    {
+      "name": "Helicopter",
+      "input": "b 4",
+      "type": "normal",
+      "id": "helicopter"
+    },
+    {
+      "name": "Hop Kick",
+      "input": "f 4",
+      "type": "normal",
+      "id": "hop-kick"
+    },
+    {
+      "name": "Downward Hammer",
+      "input": "b 2",
+      "type": "normal",
+      "id": "downward-hammer"
+    },
+    {
+      "name": "Toe Stomp",
+      "input": "b 4",
+      "type": "normal",
+      "id": "toe-stomp"
+    },
+    {
+      "name": "Deep Sweep",
+      "input": "d 4",
+      "type": "normal",
+      "id": "deep-sweep"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Stanky Leg",
+      "input": "4 u 4",
+      "type": "string",
+      "id": "stanky-leg"
+    },
+    {
+      "name": "Quick Steel",
+      "input": "1 1",
+      "type": "string",
+      "id": "quick-steel"
+    },
+    {
+      "name": "Trained Killer",
+      "input": "1 1 4",
+      "type": "string",
+      "id": "trained-killer"
+    },
+    {
+      "name": "Operative",
+      "input": "1 2",
+      "type": "string",
+      "id": "operative"
+    },
+    {
+      "name": "Tank",
+      "input": "1 2 1",
+      "type": "string",
+      "id": "tank"
+    },
+    {
+      "name": "Bouncing Betty",
+      "input": "1 2 1 2",
+      "type": "string",
+      "id": "bouncing-betty"
+    },
+    {
+      "name": "Cranked",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "cranked"
+    },
+    {
+      "name": "Cranked",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "cranked"
+    },
+    {
+      "name": "Gunner",
+      "input": "b 1 4",
+      "type": "string",
+      "id": "gunner"
+    },
+    {
+      "name": "Hawkeye",
+      "input": "b 1 4 2",
+      "type": "string",
+      "id": "hawkeye"
+    },
+    {
+      "name": "Red Team",
+      "input": "f 1 2",
+      "type": "string",
+      "id": "red-team"
+    },
+    {
+      "name": "The Trenches",
+      "input": "f 1 2 1",
+      "type": "string",
+      "id": "the-trenches"
+    },
+    {
+      "name": "Back Shot",
+      "input": "f 1 2 2 + 4",
+      "type": "string",
+      "id": "back-shot"
+    },
+    {
+      "name": "Danger Zone",
+      "input": "2 1",
+      "type": "string",
+      "id": "danger-zone"
+    },
+    {
+      "name": "Fully United",
+      "input": "2 1 2",
+      "type": "string",
+      "id": "fully-united"
+    },
+    {
+      "name": "Snake Eater",
+      "input": "2 3",
+      "type": "string",
+      "id": "snake-eater"
+    },
+    {
+      "name": "Artillery",
+      "input": "2 3 3",
+      "type": "string",
+      "id": "artillery"
+    },
+    {
+      "name": "Buck Up",
+      "input": "2 3 3 4",
+      "type": "string",
+      "id": "buck-up"
+    },
+    {
+      "name": "VTOL",
+      "input": "f 2 u 2",
+      "type": "string",
+      "id": "vtol"
+    },
+    {
+      "name": "War Ship",
+      "input": "f 2 u 2 2 + 4",
+      "type": "string",
+      "id": "war-ship"
+    },
+    {
+      "name": "War Ship",
+      "input": "f 2 u 2 2 + 4",
+      "type": "string",
+      "id": "war-ship"
+    },
+    {
+      "name": "Dog Tags",
+      "input": "3 3",
+      "type": "string",
+      "id": "dog-tags"
+    },
+    {
+      "name": "Jacqui's Justice",
+      "input": "b 3 3",
+      "type": "string",
+      "id": "jacquis-justice"
+    },
+    {
+      "name": "Air Ground Smash",
+      "input": "(air) d d 4",
+      "type": "normal",
+      "id": "air-ground-smash"
+    },
+    {
+      "name": "Air Ground Tremor",
+      "input": "(air) d d 4 + block",
+      "type": "normal",
+      "id": "air-ground-tremor"
+    },
+    {
+      "name": "Air Fake Out",
+      "input": "(air) d u 4",
+      "type": "normal",
+      "id": "air-fake-out"
+    },
+    {
+      "name": "Forces Rush",
+      "input": "b f 1",
+      "type": "special",
+      "id": "forces-rush"
+    },
+    {
+      "name": "Forces Charge",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "forces-charge"
+    },
+    {
+      "name": "Forces Rush",
+      "input": "b f 1",
+      "type": "special",
+      "id": "forces-rush"
+    },
+    {
+      "name": "Forces Charge",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "forces-charge"
+    },
+    {
+      "name": "Forces Rush",
+      "input": "b f 1",
+      "type": "special",
+      "id": "forces-rush"
+    },
+    {
+      "name": "Forces Charge",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "forces-charge"
+    },
+    {
+      "name": "Bionic Dash",
+      "input": "b f 2",
+      "type": "special",
+      "id": "bionic-dash"
+    },
+    {
+      "name": "Bionic Blast",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "bionic-blast"
+    },
+    {
+      "name": "Gauntlet Strike",
+      "input": "b f 4",
+      "type": "special",
+      "id": "gauntlet-strike"
+    },
+    {
+      "name": "Gauntlet Flurry",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "gauntlet-flurry"
+    },
+    {
+      "name": "Tech Shield",
+      "input": "d b 1",
+      "type": "special",
+      "id": "tech-shield"
+    },
+    {
+      "name": "Advance Tech",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "advance-tech"
+    },
+    {
+      "name": "Hand Cannon",
+      "input": "d f 2",
+      "type": "special",
+      "id": "hand-cannon"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Low Rocket",
+      "input": "d b 3",
+      "type": "special",
+      "id": "low-rocket"
+    },
+    {
+      "name": "Rocket Crater",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "rocket-crater"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 3",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Up Rocket",
+      "input": "d b 2",
+      "type": "special",
+      "id": "up-rocket"
+    },
+    {
+      "name": "Rocket Power",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "rocket-power"
+    },
+    {
+      "name": "Single Barrel",
+      "input": "d f 2",
+      "type": "special",
+      "id": "single-barrel"
+    },
+    {
+      "name": "Double Barrel",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "double-barrel"
+    },
+    {
+      "name": "Low Blow",
+      "input": "d b 2",
+      "type": "special",
+      "id": "low-blow"
+    },
+    {
+      "name": "Low Blast",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "low-blast"
+    },
+    {
+      "name": "Gauntlet Spark",
+      "input": "d b 2",
+      "type": "special",
+      "id": "gauntlet-spark"
+    },
+    {
+      "name": "Gauntlet Ignite",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "gauntlet-ignite"
+    },
+    {
+      "name": "Quick Burst",
+      "input": "d f 2",
+      "type": "special",
+      "id": "quick-burst"
+    },
+    {
+      "name": "Charge Level 1",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "charge-level-1"
+    },
+    {
+      "name": "Charge Level 2",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "charge-level-2"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Plasma Burst",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "plasma-burst"
+    },
+    {
+      "name": "Chest Kavity",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "chest-kavity"
+    },
+    {
+      "name": "Blown Out (Close)",
+      "input": "b f b f 2",
+      "type": "special",
+      "id": "blown-out-close"
+    },
+    {
+      "name": "Fist Pump (Close)",
+      "input": "f d b 4",
+      "type": "special",
+      "id": "fist-pump-close"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "d f d 4",
+      "type": "special",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Mind Blown",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "mind-blown"
+    },
+    {
+      "name": "Gun Show",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "gun-show"
+    },
+    {
+      "name": "Shrapnel",
+      "input": "d b 2",
+      "type": "special",
+      "id": "shrapnel"
+    },
+    {
+      "name": "Heavy Artillery",
+      "input": "d f 2 block",
+      "type": "special",
+      "id": "heavy-artillery"
+    },
+    {
+      "name": "Aftershock",
+      "input": "(air) d d 4 + block",
+      "type": "normal",
+      "id": "aftershock"
     }
   ]
 }

@@ -4,40 +4,580 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Quick Jab",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "quick-jab"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Elbow Spike",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "elbow-spike"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Sneaky Blade",
+      "input": "b 1",
       "type": "normal",
-      "input": "3"
+      "id": "sneaky-blade"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Low Spike",
+      "input": "d 1",
       "type": "normal",
-      "input": "4"
+      "id": "low-spike"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Back Fist",
+      "input": "2",
+      "type": "normal",
+      "id": "back-fist"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Power Plant",
+      "input": "b 2",
+      "type": "normal",
+      "id": "power-plant"
+    },
+    {
+      "name": "Terminated",
+      "input": "f 2",
+      "type": "normal",
+      "id": "terminated"
+    },
+    {
+      "name": "Pointy Uppercut",
+      "input": "d 2",
+      "type": "normal",
+      "id": "pointy-uppercut"
+    },
+    {
+      "name": "Knee Crusher",
+      "input": "3",
+      "type": "normal",
+      "id": "knee-crusher"
+    },
+    {
+      "name": "Shin Strike",
+      "input": "b 3",
+      "type": "normal",
+      "id": "shin-strike"
+    },
+    {
+      "name": "Snap Boot",
+      "input": "f 3",
+      "type": "normal",
+      "id": "snap-boot"
+    },
+    {
+      "name": "Low Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-kick"
+    },
+    {
+      "name": "Side Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "side-kick"
+    },
+    {
+      "name": "Sweep",
+      "input": "b 4",
+      "type": "normal",
+      "id": "sweep"
+    },
+    {
+      "name": "Lifting Knee",
+      "input": "f 4",
+      "type": "normal",
+      "id": "lifting-knee"
+    },
+    {
+      "name": "Toe Kick",
+      "input": "d 4",
+      "type": "normal",
+      "id": "toe-kick"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Mischievous",
+      "input": "1 1",
+      "type": "string",
+      "id": "mischievous"
+    },
+    {
+      "name": "Villainous",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "villainous"
+    },
+    {
+      "name": "Troublesome",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "troublesome"
+    },
+    {
+      "name": "Bloodthhirsty",
+      "input": "b 1 2 1",
+      "type": "string",
+      "id": "bloodthhirsty"
+    },
+    {
+      "name": "Delinquent",
+      "input": "b 1 3",
+      "type": "string",
+      "id": "delinquent"
+    },
+    {
+      "name": "Ear To Ear",
+      "input": "b 1 3 1 + 3",
+      "type": "string",
+      "id": "ear-to-ear"
+    },
+    {
+      "name": "Miss Me?",
+      "input": "b 1 3 1 + 3",
+      "type": "string",
+      "id": "miss-me?"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "For The Money",
+      "input": "2 2",
+      "type": "string",
+      "id": "for-the-money"
+    },
+    {
+      "name": "Stomach Ache",
+      "input": "b 1 3 2 + 4",
+      "type": "string",
+      "id": "stomach-ache"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Be Back",
+      "input": "2 f 4",
+      "type": "string",
+      "id": "be-back"
+    },
+    {
+      "name": "Pay Attention",
+      "input": "f 2 1",
+      "type": "string",
+      "id": "pay-attention"
+    },
+    {
+      "name": "Attitude Problem",
+      "input": "f 2 1 2",
+      "type": "string",
+      "id": "attitude-problem"
+    },
+    {
+      "name": "Treacherous",
+      "input": "b 2 3",
+      "type": "string",
+      "id": "treacherous"
+    },
+    {
+      "name": "Black Market",
+      "input": "b 2 3 1 + 3",
+      "type": "string",
+      "id": "black-market"
+    },
+    {
+      "name": "Gut Blast",
+      "input": "b 2 3 2 + 4",
+      "type": "string",
+      "id": "gut-blast"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Kombat Boots",
+      "input": "3 2",
+      "type": "string",
+      "id": "kombat-boots"
+    },
+    {
+      "name": "Wood Chipper",
+      "input": "3 2 1 + 3",
+      "type": "string",
+      "id": "wood-chipper"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Getting Ahead",
+      "input": "b 3 1",
+      "type": "string",
+      "id": "getting-ahead"
+    },
+    {
+      "name": "Mean Machine",
+      "input": "b 3 1 2",
+      "type": "string",
+      "id": "mean-machine"
+    },
+    {
+      "name": "No Escape",
+      "input": "f 3 3",
+      "type": "string",
+      "id": "no-escape"
+    },
+    {
+      "name": "Burner",
+      "input": "f 3 1 + 3",
+      "type": "string",
+      "id": "burner"
+    },
+    {
+      "name": "Big Boom",
+      "input": "f 3 2 + 4",
+      "type": "string",
+      "id": "big-boom"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Air Ball",
+      "input": "(air) b f 3",
+      "type": "special",
+      "id": "air-ball"
+    },
+    {
+      "name": "Enhance",
+      "input": "(air) block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Kano Ball",
+      "input": "b f 3",
+      "type": "special",
+      "id": "kano-ball"
+    },
+    {
+      "name": "Black Dragon Ball",
+      "input": "b f 3 + block",
+      "type": "special",
+      "id": "black-dragon-ball"
+    },
+    {
+      "name": "Delay",
+      "input": "hold block",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "d d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Up Ball",
+      "input": "d b 2",
+      "type": "special",
+      "id": "up-ball"
+    },
+    {
+      "name": "Uprise Ball",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "uprise-ball"
+    },
+    {
+      "name": "Blade Slice",
+      "input": "d b 1",
+      "type": "special",
+      "id": "blade-slice"
+    },
+    {
+      "name": "Bloody Slice",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "bloody-slice"
+    },
+    {
+      "name": "Blade Throw",
+      "input": "d f 2",
+      "type": "special",
+      "id": "blade-throw"
+    },
+    {
+      "name": "Blade Toss",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "blade-toss"
+    },
+    {
+      "name": "Power Up",
+      "input": "d d 3",
+      "type": "normal",
+      "id": "power-up"
+    },
+    {
+      "name": "Power Down",
+      "input": "d d 3",
+      "type": "normal",
+      "id": "power-down"
+    },
+    {
+      "name": "Charge Up",
+      "input": "d d 3 + block",
+      "type": "normal",
+      "id": "charge-up"
+    },
+    {
+      "name": "Power Down",
+      "input": "d d 3",
+      "type": "normal",
+      "id": "power-down"
+    },
+    {
+      "name": "Eye Burst",
+      "input": "d b 1",
+      "type": "special",
+      "id": "eye-burst"
+    },
+    {
+      "name": "Eye Blast",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "eye-blast"
+    },
+    {
+      "name": "Upward Laser",
+      "input": "d b 3",
+      "type": "special",
+      "id": "upward-laser"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Knife Toss",
+      "input": "d f 2",
+      "type": "special",
+      "id": "knife-toss"
+    },
+    {
+      "name": "Multi Blades",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "multi-blades"
+    },
+    {
+      "name": "Choke",
+      "input": "d f 1",
+      "type": "special",
+      "id": "choke"
+    },
+    {
+      "name": "Strangle",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "strangle"
+    },
+    {
+      "name": "Low Kounter",
+      "input": "d b 3",
+      "type": "special",
+      "id": "low-kounter"
+    },
+    {
+      "name": "Dirty Kounter",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "dirty-kounter"
+    },
+    {
+      "name": "High Kounter",
+      "input": "d b 1",
+      "type": "special",
+      "id": "high-kounter"
+    },
+    {
+      "name": "Survivor's Kounter",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "survivors-kounter"
+    },
+    {
+      "name": "Rib Strike",
+      "input": "d b f 4",
+      "type": "special",
+      "id": "rib-strike"
+    },
+    {
+      "name": "Rib Breaker",
+      "input": "d b f 4 + block",
+      "type": "special",
+      "id": "rib-breaker"
+    },
+    {
+      "name": "Power Slam",
+      "input": "d f b 4",
+      "type": "special",
+      "id": "power-slam"
+    },
+    {
+      "name": "Power Bomb",
+      "input": "d f b 4 + block",
+      "type": "special",
+      "id": "power-bomb"
+    },
+    {
+      "name": "Lacerater",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "lacerater"
+    },
+    {
+      "name": "Head Case (Close)",
+      "input": "d f d b 3",
+      "type": "special",
+      "id": "head-case-close"
+    },
+    {
+      "name": "Knife To Meet You (Far)",
+      "input": "d d f 1",
+      "type": "special",
+      "id": "knife-to-meet-you-far"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "u u b 3",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Ballin'",
+      "input": "(air) b f 3 block",
+      "type": "special",
+      "id": "ballin"
+    },
+    {
+      "name": "Terminate",
+      "input": "throw or 1 + 3",
+      "type": "string",
+      "id": "terminate"
+    },
+    {
+      "name": "Just The Tip",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "just-the-tip"
+    },
+    {
+      "name": "Glaring Light",
+      "input": "d b 3 block",
+      "type": "special",
+      "id": "glaring-light"
+    },
+    {
+      "name": "Wham Bam",
+      "input": "d f b 4",
+      "type": "special",
+      "id": "wham-bam"
+    },
+    {
+      "name": "Pop Off",
+      "input": "d f 1",
+      "type": "special",
+      "id": "pop-off"
     }
   ]
 }

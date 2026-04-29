@@ -4,40 +4,586 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Back Slap",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "back-slap"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Royal Hand",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "royal-hand"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Back Slash",
+      "input": "f 1",
       "type": "normal",
-      "input": "3"
+      "id": "back-slash"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Punishing Poke",
+      "input": "d 1",
       "type": "normal",
-      "input": "4"
+      "id": "punishing-poke"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Quick Chop",
+      "input": "2",
+      "type": "normal",
+      "id": "quick-chop"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Fan Out",
+      "input": "b 2",
+      "type": "normal",
+      "id": "fan-out"
+    },
+    {
+      "name": "Fan Swipe",
+      "input": "f 2",
+      "type": "normal",
+      "id": "fan-swipe"
+    },
+    {
+      "name": "Spinning Slash",
+      "input": "d 2",
+      "type": "normal",
+      "id": "spinning-slash"
+    },
+    {
+      "name": "Flick Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "flick-kick"
+    },
+    {
+      "name": "Butterfly",
+      "input": "u 2",
+      "type": "normal",
+      "id": "butterfly"
+    },
+    {
+      "name": "Pretty Kick",
+      "input": "b 3",
+      "type": "normal",
+      "id": "pretty-kick"
+    },
+    {
+      "name": "Whiplash",
+      "input": "f 3",
+      "type": "normal",
+      "id": "whiplash"
+    },
+    {
+      "name": "Knee Buckle",
+      "input": "d 3",
+      "type": "normal",
+      "id": "knee-buckle"
+    },
+    {
+      "name": "Turnaround",
+      "input": "4",
+      "type": "normal",
+      "id": "turnaround"
+    },
+    {
+      "name": "Drop Back",
+      "input": "b 4",
+      "type": "normal",
+      "id": "drop-back"
+    },
+    {
+      "name": "Reverse Heel",
+      "input": "f 4",
+      "type": "normal",
+      "id": "reverse-heel"
+    },
+    {
+      "name": "Full Spin",
+      "input": "d 4",
+      "type": "normal",
+      "id": "full-spin"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Double Strike",
+      "input": "1 1",
+      "type": "string",
+      "id": "double-strike"
+    },
+    {
+      "name": "Rising Power",
+      "input": "1 1 1",
+      "type": "string",
+      "id": "rising-power"
+    },
+    {
+      "name": "Royal Lunge",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "royal-lunge"
+    },
+    {
+      "name": "Charging Blow",
+      "input": "b 1 2 2",
+      "type": "string",
+      "id": "charging-blow"
+    },
+    {
+      "name": "Majestic",
+      "input": "b 1 4",
+      "type": "string",
+      "id": "majestic"
+    },
+    {
+      "name": "Cunning Sting",
+      "input": "b 1 4 3",
+      "type": "string",
+      "id": "cunning-sting"
+    },
+    {
+      "name": "Learn Respect",
+      "input": "f 1 1",
+      "type": "string",
+      "id": "learn-respect"
+    },
+    {
+      "name": "Finding Truth",
+      "input": "f 1 1 2",
+      "type": "string",
+      "id": "finding-truth"
+    },
+    {
+      "name": "Fake Out",
+      "input": "2 1",
+      "type": "string",
+      "id": "fake-out"
+    },
+    {
+      "name": "Fan-Tastic",
+      "input": "2 1 2",
+      "type": "string",
+      "id": "fan-tastic"
+    },
+    {
+      "name": "Edenian Dance",
+      "input": "2 4",
+      "type": "string",
+      "id": "edenian-dance"
+    },
+    {
+      "name": "Gut Gash",
+      "input": "f 2 2",
+      "type": "string",
+      "id": "gut-gash"
+    },
+    {
+      "name": "Dignified",
+      "input": "f 2 2 u 4",
+      "type": "string",
+      "id": "dignified"
+    },
+    {
+      "name": "Regal Assault",
+      "input": "u 2 4",
+      "type": "string",
+      "id": "regal-assault"
+    },
+    {
+      "name": "Deception",
+      "input": "3 d 4",
+      "type": "string",
+      "id": "deception"
+    },
+    {
+      "name": "Noble Kicks",
+      "input": "f 3 3",
+      "type": "string",
+      "id": "noble-kicks"
+    },
+    {
+      "name": "Mesmerizing",
+      "input": "f 3 3",
+      "type": "string",
+      "id": "mesmerizing"
+    },
+    {
+      "name": "Searching For Truth",
+      "input": "f 3 3 4",
+      "type": "string",
+      "id": "searching-for-truth"
+    },
+    {
+      "name": "Rightful Heir",
+      "input": "f 4 3",
+      "type": "string",
+      "id": "rightful-heir"
+    },
+    {
+      "name": "Rising Fan",
+      "input": "d b 2",
+      "type": "special",
+      "id": "rising-fan"
+    },
+    {
+      "name": "Air Fan Toss",
+      "input": "(air) d f 1 + block",
+      "type": "special",
+      "id": "air-fan-toss"
+    },
+    {
+      "name": "Air Princess Flutter",
+      "input": "(air) d b 2 + block",
+      "type": "special",
+      "id": "air-princess-flutter"
+    },
+    {
+      "name": "Air Glaive Return",
+      "input": "(air) d f 1 + block",
+      "type": "special",
+      "id": "air-glaive-return"
+    },
+    {
+      "name": "Rising Blades",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "rising-blades"
+    },
+    {
+      "name": "Air Fan Toss",
+      "input": "(air) d f 1 + block",
+      "type": "special",
+      "id": "air-fan-toss"
+    },
+    {
+      "name": "Air Princess Flutter",
+      "input": "(air) d f 2 + block",
+      "type": "special",
+      "id": "air-princess-flutter"
+    },
+    {
+      "name": "Air Glaive Return",
+      "input": "(air) d f 1 + block",
+      "type": "special",
+      "id": "air-glaive-return"
+    },
+    {
+      "name": "Throat Slice",
+      "input": "b f 3",
+      "type": "special",
+      "id": "throat-slice"
+    },
+    {
+      "name": "Throat Slash",
+      "input": "b f 3 + block",
+      "type": "special",
+      "id": "throat-slash"
+    },
+    {
+      "name": "Fan Throw",
+      "input": "d f 1",
+      "type": "special",
+      "id": "fan-throw"
+    },
+    {
+      "name": "Fan Toss",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "fan-toss"
+    },
+    {
+      "name": "Air Fan Throw",
+      "input": "(air) d f 1",
+      "type": "special",
+      "id": "air-fan-throw"
+    },
+    {
+      "name": "Air Float",
+      "input": "(air) d b 2",
+      "type": "special",
+      "id": "air-float"
+    },
+    {
+      "name": "Square Boost",
+      "input": "d b 3",
+      "type": "special",
+      "id": "square-boost"
+    },
+    {
+      "name": "Square Wave",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "square-wave"
+    },
+    {
+      "name": "Air Square Boost",
+      "input": "(air ) d b 3",
+      "type": "special",
+      "id": "air-square-boost"
+    },
+    {
+      "name": "Air Square Wave",
+      "input": "(air ) d b 3 + block",
+      "type": "special",
+      "id": "air-square-wave"
+    },
+    {
+      "name": "Fan-Nado",
+      "input": "d b 1",
+      "type": "special",
+      "id": "fan-nado"
+    },
+    {
+      "name": "Fan Vortex",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "fan-vortex"
+    },
+    {
+      "name": "Bounce Back",
+      "input": "d b 4",
+      "type": "special",
+      "id": "bounce-back"
+    },
+    {
+      "name": "Extend",
+      "input": "hold 4",
+      "type": "normal",
+      "id": "extend"
+    },
+    {
+      "name": "Assassin Strike",
+      "input": "d f 3",
+      "type": "special",
+      "id": "assassin-strike"
+    },
+    {
+      "name": "Assassin Impale",
+      "input": "d f 3 + block",
+      "type": "special",
+      "id": "assassin-impale"
+    },
+    {
+      "name": "Princess Parry",
+      "input": "d f 4",
+      "type": "special",
+      "id": "princess-parry"
+    },
+    {
+      "name": "Extend",
+      "input": "hold 4",
+      "type": "normal",
+      "id": "extend"
+    },
+    {
+      "name": "Sharpen",
+      "input": "d b 4",
+      "type": "special",
+      "id": "sharpen"
+    },
+    {
+      "name": "Razor Blade",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "razor-blade"
+    },
+    {
+      "name": "Glaive Throw",
+      "input": "d f 1",
+      "type": "special",
+      "id": "glaive-throw"
+    },
+    {
+      "name": "Glaive Up",
+      "input": "hold u",
+      "type": "normal",
+      "id": "glaive-up"
+    },
+    {
+      "name": "Glaive Down",
+      "input": "hold d",
+      "type": "normal",
+      "id": "glaive-down"
+    },
+    {
+      "name": "Glaive Return",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "glaive-return"
+    },
+    {
+      "name": "Air Glaive Throw",
+      "input": "(air) d f 1",
+      "type": "special",
+      "id": "air-glaive-throw"
+    },
+    {
+      "name": "Air Glaive Return",
+      "input": "(air) d f 1 + block",
+      "type": "special",
+      "id": "air-glaive-return"
+    },
+    {
+      "name": "Shadow Kick",
+      "input": "d f 4",
+      "type": "special",
+      "id": "shadow-kick"
+    },
+    {
+      "name": "Eclipse Kick",
+      "input": "d f 4 + block",
+      "type": "special",
+      "id": "eclipse-kick"
+    },
+    {
+      "name": "Staff Grab",
+      "input": "d b 3",
+      "type": "special",
+      "id": "staff-grab"
+    },
+    {
+      "name": "Staff Smash",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "staff-smash"
+    },
+    {
+      "name": "Slice And Dice",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "slice-and-dice"
+    },
+    {
+      "name": "(Air)",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "air"
+    },
+    {
+      "name": "Dark Fan-Tasy (Mid)",
+      "input": "d f b f 2",
+      "type": "special",
+      "id": "dark-fan-tasy-mid"
+    },
+    {
+      "name": "Splitting Hairs (Mid)",
+      "input": "b f d d",
+      "type": "normal",
+      "id": "splitting-hairs-mid"
+    },
+    {
+      "name": "Decapitation (Close)",
+      "input": "d f 4 + block",
+      "type": "special",
+      "id": "decapitation-close"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "f d d 1",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Off The Top",
+      "input": "b f 3",
+      "type": "special",
+      "id": "off-the-top"
+    },
+    {
+      "name": "Biggest Fan",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "biggest-fan"
+    },
+    {
+      "name": "Back That Up",
+      "input": "(air) d b 3",
+      "type": "special",
+      "id": "back-that-up"
+    },
+    {
+      "name": "Lost Girl",
+      "input": "d b 3",
+      "type": "special",
+      "id": "lost-girl"
+    },
+    {
+      "name": "All Is On",
+      "input": "d f 1",
+      "type": "special",
+      "id": "all-is-on"
+    },
+    {
+      "name": "Hidden Brutality",
+      "input": "d b 4",
+      "type": "special",
+      "id": "hidden-brutality"
     }
   ]
 }

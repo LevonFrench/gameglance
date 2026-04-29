@@ -4,40 +4,502 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Hook Punch",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "hook-punch"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Stepping Elbow",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "stepping-elbow"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Shoulder Charge",
+      "input": "f 1",
       "type": "normal",
-      "input": "3"
+      "id": "shoulder-charge"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Low Swipe",
+      "input": "d 1",
       "type": "normal",
-      "input": "4"
+      "id": "low-swipe"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Slicing Fist",
+      "input": "2",
+      "type": "normal",
+      "id": "slicing-fist"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Elbow Drop",
+      "input": "b 2",
+      "type": "normal",
+      "id": "elbow-drop"
+    },
+    {
+      "name": "Rising Fist",
+      "input": "f 2",
+      "type": "normal",
+      "id": "rising-fist"
+    },
+    {
+      "name": "2 Fist Uppercut",
+      "input": "d 2",
+      "type": "normal",
+      "id": "2-fist-uppercut"
+    },
+    {
+      "name": "Push Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "push-kick"
+    },
+    {
+      "name": "Crescent Moon",
+      "input": "b 3",
+      "type": "normal",
+      "id": "crescent-moon"
+    },
+    {
+      "name": "Osh-Tekk Stomp",
+      "input": "f 3",
+      "type": "normal",
+      "id": "osh-tekk-stomp"
+    },
+    {
+      "name": "Low Boot",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-boot"
+    },
+    {
+      "name": "Face Smash",
+      "input": "4",
+      "type": "normal",
+      "id": "face-smash"
+    },
+    {
+      "name": "God Sweep",
+      "input": "b 4",
+      "type": "normal",
+      "id": "god-sweep"
+    },
+    {
+      "name": "Big Leg",
+      "input": "f 4",
+      "type": "normal",
+      "id": "big-leg"
+    },
+    {
+      "name": "Low Toe Kick",
+      "input": "d 4",
+      "type": "normal",
+      "id": "low-toe-kick"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Impitzoyo",
+      "input": "1 1",
+      "type": "string",
+      "id": "impitzoyo"
+    },
+    {
+      "name": "Melahuac",
+      "input": "1 1 4",
+      "type": "string",
+      "id": "melahuac"
+    },
+    {
+      "name": "Metztli",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "metztli"
+    },
+    {
+      "name": "Tonaltzintli",
+      "input": "b 1 2 2",
+      "type": "string",
+      "id": "tonaltzintli"
+    },
+    {
+      "name": "Cuazquia",
+      "input": "b 1 4",
+      "type": "string",
+      "id": "cuazquia"
+    },
+    {
+      "name": "Mahtizquia",
+      "input": "f 1 2",
+      "type": "string",
+      "id": "mahtizquia"
+    },
+    {
+      "name": "Tenchalli Rush",
+      "input": "f 1 b 2",
+      "type": "string",
+      "id": "tenchalli-rush"
+    },
+    {
+      "name": "Mahuiztiquez",
+      "input": "2 1",
+      "type": "string",
+      "id": "mahuiztiquez"
+    },
+    {
+      "name": "Soleil",
+      "input": "2 b 2",
+      "type": "string",
+      "id": "soleil"
+    },
+    {
+      "name": "Coatl Strikes",
+      "input": "2 1 2",
+      "type": "string",
+      "id": "coatl-strikes"
+    },
+    {
+      "name": "Tlaneltocaz",
+      "input": "b 3 2",
+      "type": "string",
+      "id": "tlaneltocaz"
+    },
+    {
+      "name": "Tlamanalo",
+      "input": "f 3 4",
+      "type": "string",
+      "id": "tlamanalo"
+    },
+    {
+      "name": "Blood Offering",
+      "input": "f d b 4",
+      "type": "special",
+      "id": "blood-offering"
+    },
+    {
+      "name": "Sunstone",
+      "input": "d f 3",
+      "type": "special",
+      "id": "sunstone"
+    },
+    {
+      "name": "Burning Sunstone",
+      "input": "d f 3 + block",
+      "type": "special",
+      "id": "burning-sunstone"
+    },
+    {
+      "name": "God Ray",
+      "input": "d f 4",
+      "type": "special",
+      "id": "god-ray"
+    },
+    {
+      "name": "Sunlight",
+      "input": "d f 4 + block",
+      "type": "special",
+      "id": "sunlight"
+    },
+    {
+      "name": "Close God Ray",
+      "input": "d f 4 b",
+      "type": "special",
+      "id": "close-god-ray"
+    },
+    {
+      "name": "Close Sunlight",
+      "input": "d f 4 + block b",
+      "type": "special",
+      "id": "close-sunlight"
+    },
+    {
+      "name": "Far God Ray",
+      "input": "d f 4 f",
+      "type": "special",
+      "id": "far-god-ray"
+    },
+    {
+      "name": "Far Sunlight",
+      "input": "d f 4 + block f",
+      "type": "special",
+      "id": "far-sunlight"
+    },
+    {
+      "name": "Air Takedown",
+      "input": "d f 1",
+      "type": "special",
+      "id": "air-takedown"
+    },
+    {
+      "name": "Anti-Air Throw",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "anti-air-throw"
+    },
+    {
+      "name": "Crystal Totem",
+      "input": "d b 1",
+      "type": "special",
+      "id": "crystal-totem"
+    },
+    {
+      "name": "Obsidian Totem",
+      "input": "d b 2",
+      "type": "special",
+      "id": "obsidian-totem"
+    },
+    {
+      "name": "Blood Totem",
+      "input": "d b 3",
+      "type": "special",
+      "id": "blood-totem"
+    },
+    {
+      "name": "Mace Parry",
+      "input": "d f 2",
+      "type": "special",
+      "id": "mace-parry"
+    },
+    {
+      "name": "Master Mace Parry",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "master-mace-parry"
+    },
+    {
+      "name": "Saw Blade",
+      "input": "d f 2",
+      "type": "special",
+      "id": "saw-blade"
+    },
+    {
+      "name": "Buzz Saw",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "buzz-saw"
+    },
+    {
+      "name": "Overhead Sword Strike",
+      "input": "d b 1",
+      "type": "special",
+      "id": "overhead-sword-strike"
+    },
+    {
+      "name": "Overhead Sword Smash",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "overhead-sword-smash"
+    },
+    {
+      "name": "Sword Sweep",
+      "input": "d b 2",
+      "type": "special",
+      "id": "sword-sweep"
+    },
+    {
+      "name": "Sword Takedown",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "sword-takedown"
+    },
+    {
+      "name": "Sword Toss",
+      "input": "d f 3",
+      "type": "special",
+      "id": "sword-toss"
+    },
+    {
+      "name": "Spinning Sword Toss",
+      "input": "d f 3 + block",
+      "type": "special",
+      "id": "spinning-sword-toss"
+    },
+    {
+      "name": "Sword Shake",
+      "input": "d b 3",
+      "type": "special",
+      "id": "sword-shake"
+    },
+    {
+      "name": "Cancel",
+      "input": "hold u",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Sword Quake",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "sword-quake"
+    },
+    {
+      "name": "Cancel",
+      "input": "hold u",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Soul Scorch",
+      "input": "f d b f 1",
+      "type": "special",
+      "id": "soul-scorch"
+    },
+    {
+      "name": "Soul Burn",
+      "input": "f d b 1 + block",
+      "type": "special",
+      "id": "soul-burn"
+    },
+    {
+      "name": "Soul Spark",
+      "input": "f d b 3",
+      "type": "special",
+      "id": "soul-spark"
+    },
+    {
+      "name": "Soul Charge",
+      "input": "f d b 3 + block",
+      "type": "special",
+      "id": "soul-charge"
+    },
+    {
+      "name": "Sun God Choke",
+      "input": "d b 2",
+      "type": "special",
+      "id": "sun-god-choke"
+    },
+    {
+      "name": "Moon God Choke",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "moon-god-choke"
+    },
+    {
+      "name": "Sunburn",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "sunburn"
+    },
+    {
+      "name": "Be Mine! (Close)",
+      "input": "d b f 1",
+      "type": "special",
+      "id": "be-mine-close"
+    },
+    {
+      "name": "Tight Squeeze (Close)",
+      "input": "f b f b 2",
+      "type": "special",
+      "id": "tight-squeeze-close"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "f d b 1",
+      "type": "special",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Kotally Awesome",
+      "input": "d f 4",
+      "type": "special",
+      "id": "kotally-awesome"
+    },
+    {
+      "name": "Stick Around",
+      "input": "d f 1",
+      "type": "special",
+      "id": "stick-around"
+    },
+    {
+      "name": "Offering",
+      "input": "f d b 4",
+      "type": "special",
+      "id": "offering"
+    },
+    {
+      "name": "Totem This",
+      "input": "d 2",
+      "type": "normal",
+      "id": "totem-this"
+    },
+    {
+      "name": "Sawed Off",
+      "input": "d f 2",
+      "type": "special",
+      "id": "sawed-off"
+    },
+    {
+      "name": "Dry Rub",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "dry-rub"
     }
   ]
 }

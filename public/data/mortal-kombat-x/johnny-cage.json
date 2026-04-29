@@ -4,40 +4,580 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Straight Punch",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "straight-punch"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Hard Hit",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "hard-hit"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Low Poke",
+      "input": "d 1",
       "type": "normal",
-      "input": "3"
+      "id": "low-poke"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Palm Strike",
+      "input": "2",
       "type": "normal",
-      "input": "4"
+      "id": "palm-strike"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Strong Hand",
+      "input": "b 2",
+      "type": "normal",
+      "id": "strong-hand"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Force Punch",
+      "input": "b 2",
+      "type": "normal",
+      "id": "force-punch"
+    },
+    {
+      "name": "Charge",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "charge"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Hammer Fist",
+      "input": "f 2",
+      "type": "normal",
+      "id": "hammer-fist"
+    },
+    {
+      "name": "Upper-Kut",
+      "input": "d 2",
+      "type": "normal",
+      "id": "upper-kut"
+    },
+    {
+      "name": "Snap Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "snap-kick"
+    },
+    {
+      "name": "Flick Kick",
+      "input": "b 3",
+      "type": "normal",
+      "id": "flick-kick"
+    },
+    {
+      "name": "Dizzy Knee",
+      "input": "f 3",
+      "type": "normal",
+      "id": "dizzy-knee"
+    },
+    {
+      "name": "Low Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-kick"
+    },
+    {
+      "name": "High Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "high-kick"
+    },
+    {
+      "name": "Stylin' Sweep",
+      "input": "b 4",
+      "type": "normal",
+      "id": "stylin-sweep"
+    },
+    {
+      "name": "Ax Kick",
+      "input": "f 4",
+      "type": "normal",
+      "id": "ax-kick"
+    },
+    {
+      "name": "Turnaround Heel",
+      "input": "d 4",
+      "type": "normal",
+      "id": "turnaround-heel"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Outtake",
+      "input": "1 1",
+      "type": "string",
+      "id": "outtake"
+    },
+    {
+      "name": "Stand-In",
+      "input": "1 1 3",
+      "type": "string",
+      "id": "stand-in"
+    },
+    {
+      "name": "Widescreen",
+      "input": "1 1 4",
+      "type": "string",
+      "id": "widescreen"
+    },
+    {
+      "name": "Almost Famous",
+      "input": "1 2",
+      "type": "string",
+      "id": "almost-famous"
+    },
+    {
+      "name": "Cross-Kutting",
+      "input": "1 2 1",
+      "type": "string",
+      "id": "cross-kutting"
+    },
+    {
+      "name": "Fatal Strike",
+      "input": "1 2 1",
+      "type": "string",
+      "id": "fatal-strike"
+    },
+    {
+      "name": "Charge",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "charge"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "The One-Two",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "the-one-two"
+    },
+    {
+      "name": "Speed Bag",
+      "input": "b 1 2 1",
+      "type": "string",
+      "id": "speed-bag"
+    },
+    {
+      "name": "Silent But Deadly",
+      "input": "2 1",
+      "type": "string",
+      "id": "silent-but-deadly"
+    },
+    {
+      "name": "Take Two",
+      "input": "2 1 4",
+      "type": "string",
+      "id": "take-two"
+    },
+    {
+      "name": "Money Shot",
+      "input": "f 2 4",
+      "type": "string",
+      "id": "money-shot"
+    },
+    {
+      "name": "Cliffhanger",
+      "input": "f 2 4 4",
+      "type": "string",
+      "id": "cliffhanger"
+    },
+    {
+      "name": "That's The Ticket",
+      "input": "3 3",
+      "type": "string",
+      "id": "thats-the-ticket"
+    },
+    {
+      "name": "Big Name",
+      "input": "3 3 3",
+      "type": "string",
+      "id": "big-name"
+    },
+    {
+      "name": "Director's Kut",
+      "input": "b 3 4",
+      "type": "string",
+      "id": "directors-kut"
+    },
+    {
+      "name": "Fade-Out",
+      "input": "b 3 4 3",
+      "type": "string",
+      "id": "fade-out"
+    },
+    {
+      "name": "Kameo",
+      "input": "f 3 4",
+      "type": "string",
+      "id": "kameo"
+    },
+    {
+      "name": "Entertainer",
+      "input": "f 3 4",
+      "type": "string",
+      "id": "entertainer"
+    },
+    {
+      "name": "Charge",
+      "input": "hold 4",
+      "type": "normal",
+      "id": "charge"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Low Forceball",
+      "input": "d f 2",
+      "type": "special",
+      "id": "low-forceball"
+    },
+    {
+      "name": "Double Low Forceball",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "double-low-forceball"
+    },
+    {
+      "name": "High Forceball",
+      "input": "d b 2",
+      "type": "special",
+      "id": "high-forceball"
+    },
+    {
+      "name": "Double High Forceball",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "double-high-forceball"
+    },
+    {
+      "name": "Flipkick",
+      "input": "d b 4",
+      "type": "special",
+      "id": "flipkick"
+    },
+    {
+      "name": "Ultra Flipkick",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "ultra-flipkick"
+    },
+    {
+      "name": "Nut Punch",
+      "input": "b d 3",
+      "type": "normal",
+      "id": "nut-punch"
+    },
+    {
+      "name": "Nutcracker",
+      "input": "b d 3 + block",
+      "type": "normal",
+      "id": "nutcracker"
+    },
+    {
+      "name": "Shadow Kick",
+      "input": "b f 4",
+      "type": "special",
+      "id": "shadow-kick"
+    },
+    {
+      "name": "Eclipse Kick",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "eclipse-kick"
+    },
+    {
+      "name": "Fist Bump",
+      "input": "b f 1",
+      "type": "special",
+      "id": "fist-bump"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Straight Forceball",
+      "input": "d b 2",
+      "type": "special",
+      "id": "straight-forceball"
+    },
+    {
+      "name": "Double Straight Forceball",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "double-straight-forceball"
+    },
+    {
+      "name": "Rising Shadow",
+      "input": "d b 1",
+      "type": "special",
+      "id": "rising-shadow"
+    },
+    {
+      "name": "Shadow Dropkick",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "shadow-dropkick"
+    },
+    {
+      "name": "Mimic",
+      "input": "d b 4",
+      "type": "special",
+      "id": "mimic"
+    },
+    {
+      "name": "Shadow Kick",
+      "input": "b f 4",
+      "type": "special",
+      "id": "shadow-kick"
+    },
+    {
+      "name": "Eclipse Kick",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "eclipse-kick"
+    },
+    {
+      "name": "Rising Shadow",
+      "input": "d b 1",
+      "type": "special",
+      "id": "rising-shadow"
+    },
+    {
+      "name": "Shadow Dropkick",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "shadow-dropkick"
+    },
+    {
+      "name": "Rising Kick",
+      "input": "d b 4",
+      "type": "special",
+      "id": "rising-kick"
+    },
+    {
+      "name": "Charge",
+      "input": "hold 4",
+      "type": "normal",
+      "id": "charge"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Nut Breaker",
+      "input": "b d 3",
+      "type": "normal",
+      "id": "nut-breaker"
+    },
+    {
+      "name": "Charge",
+      "input": "hold 3",
+      "type": "normal",
+      "id": "charge"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Flashy Shadow Kick",
+      "input": "b f 4",
+      "type": "special",
+      "id": "flashy-shadow-kick"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 4",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Kasting Kall",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "kasting-kall"
+    },
+    {
+      "name": "Here's Johnny (Close)",
+      "input": "b f b f 1",
+      "type": "special",
+      "id": "heres-johnny-close"
+    },
+    {
+      "name": "Little Improv (Mid)",
+      "input": "f b f f",
+      "type": "normal",
+      "id": "little-improv-mid"
+    },
+    {
+      "name": "Decap (Close)",
+      "input": "f f d u",
+      "type": "normal",
+      "id": "decap-close"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "d b f block",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Eye Popping",
+      "input": "b d 3",
+      "type": "normal",
+      "id": "eye-popping"
+    },
+    {
+      "name": "Blood Spurt",
+      "input": "2 1 4",
+      "type": "string",
+      "id": "blood-spurt"
+    },
+    {
+      "name": "Wow Out",
+      "input": "b 1 2 1",
+      "type": "string",
+      "id": "wow-out"
+    },
+    {
+      "name": "Fall Guy",
+      "input": "b f 4",
+      "type": "special",
+      "id": "fall-guy"
+    },
+    {
+      "name": "Bring It On",
+      "input": "d b 4",
+      "type": "special",
+      "id": "bring-it-on"
+    },
+    {
+      "name": "Heads Will Roll",
+      "input": "b d 3 + block",
+      "type": "normal",
+      "id": "heads-will-roll"
     }
   ]
 }

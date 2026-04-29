@@ -4,40 +4,628 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Straight Punch",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "straight-punch"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Rising Hook",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "rising-hook"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Pistol Whip",
+      "input": "f 1",
       "type": "normal",
-      "input": "3"
+      "id": "pistol-whip"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Low Kut",
+      "input": "d 1",
       "type": "normal",
-      "input": "4"
+      "id": "low-kut"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Hard Hook",
+      "input": "2",
+      "type": "normal",
+      "id": "hard-hook"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Quick Snap",
+      "input": "b 2",
+      "type": "normal",
+      "id": "quick-snap"
+    },
+    {
+      "name": "Push Off",
+      "input": "f 2",
+      "type": "normal",
+      "id": "push-off"
+    },
+    {
+      "name": "Spur Punch",
+      "input": "d 2",
+      "type": "normal",
+      "id": "spur-punch"
+    },
+    {
+      "name": "Quick Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "quick-kick"
+    },
+    {
+      "name": "Shin Kicker",
+      "input": "b 3",
+      "type": "normal",
+      "id": "shin-kicker"
+    },
+    {
+      "name": "Quick Boot",
+      "input": "f 3",
+      "type": "normal",
+      "id": "quick-boot"
+    },
+    {
+      "name": "Hop Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "hop-kick"
+    },
+    {
+      "name": "High Boot",
+      "input": "4",
+      "type": "normal",
+      "id": "high-boot"
+    },
+    {
+      "name": "Pistol Trip",
+      "input": "b 4",
+      "type": "normal",
+      "id": "pistol-trip"
+    },
+    {
+      "name": "Boot Drop",
+      "input": "f 4",
+      "type": "normal",
+      "id": "boot-drop"
+    },
+    {
+      "name": "Saddle Strike",
+      "input": "d 4",
+      "type": "normal",
+      "id": "saddle-strike"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Badlands",
+      "input": "1 1",
+      "type": "string",
+      "id": "badlands"
+    },
+    {
+      "name": "Wrangler",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "wrangler"
+    },
+    {
+      "name": "Abandoned",
+      "input": "1 1 b 3",
+      "type": "string",
+      "id": "abandoned"
+    },
+    {
+      "name": "High Noon",
+      "input": "1 2",
+      "type": "string",
+      "id": "high-noon"
+    },
+    {
+      "name": "Widow Maker",
+      "input": "1 2 1",
+      "type": "string",
+      "id": "widow-maker"
+    },
+    {
+      "name": "Dirty Move",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "dirty-move"
+    },
+    {
+      "name": "Dry Gulch",
+      "input": "b 1 2 d 1",
+      "type": "string",
+      "id": "dry-gulch"
+    },
+    {
+      "name": "Flush",
+      "input": "f 1 2",
+      "type": "string",
+      "id": "flush"
+    },
+    {
+      "name": "Jawing",
+      "input": "f 1 2 2",
+      "type": "string",
+      "id": "jawing"
+    },
+    {
+      "name": "Bluff",
+      "input": "f 1 3",
+      "type": "string",
+      "id": "bluff"
+    },
+    {
+      "name": "Above Snakes",
+      "input": "f 1 3 2",
+      "type": "string",
+      "id": "above-snakes"
+    },
+    {
+      "name": "Packing Heat",
+      "input": "2 1 1",
+      "type": "string",
+      "id": "packing-heat"
+    },
+    {
+      "name": "Put 'em Up",
+      "input": "2 1 1 2 2",
+      "type": "string",
+      "id": "put-em-up"
+    },
+    {
+      "name": "Tarkatan Poke",
+      "input": "b 2 1",
+      "type": "string",
+      "id": "tarkatan-poke"
+    },
+    {
+      "name": "Double Poke",
+      "input": "b 2 1 1",
+      "type": "string",
+      "id": "double-poke"
+    },
+    {
+      "name": "Killing Time",
+      "input": "f 2 2",
+      "type": "string",
+      "id": "killing-time"
+    },
+    {
+      "name": "Simple Plunder",
+      "input": "f 2 2 2",
+      "type": "string",
+      "id": "simple-plunder"
+    },
+    {
+      "name": "Peacemaker",
+      "input": "f 2 4",
+      "type": "string",
+      "id": "peacemaker"
+    },
+    {
+      "name": "Firefly",
+      "input": "f 2 4 2",
+      "type": "string",
+      "id": "firefly"
+    },
+    {
+      "name": "Nailed",
+      "input": "3 2",
+      "type": "string",
+      "id": "nailed"
+    },
+    {
+      "name": "Gunfighter",
+      "input": "b 3 2",
+      "type": "string",
+      "id": "gunfighter"
+    },
+    {
+      "name": "Goner",
+      "input": "b 3 2 d 1",
+      "type": "string",
+      "id": "goner"
+    },
+    {
+      "name": "Deal In Lead",
+      "input": "b 3 2 u 1",
+      "type": "string",
+      "id": "deal-in-lead"
+    },
+    {
+      "name": "Ace High",
+      "input": "b 3 3",
+      "type": "string",
+      "id": "ace-high"
+    },
+    {
+      "name": "Ash-Hopper",
+      "input": "b 3 3 4",
+      "type": "string",
+      "id": "ash-hopper"
+    },
+    {
+      "name": "Tarkatan Strike",
+      "input": "f 3 2 + 4",
+      "type": "string",
+      "id": "tarkatan-strike"
+    },
+    {
+      "name": "Sand Grenade",
+      "input": "b f 3",
+      "type": "special",
+      "id": "sand-grenade"
+    },
+    {
+      "name": "Sand Shot",
+      "input": "b f 3 + block",
+      "type": "special",
+      "id": "sand-shot"
+    },
+    {
+      "name": "Close Sand Shot",
+      "input": "b f 3 + block b",
+      "type": "special",
+      "id": "close-sand-shot"
+    },
+    {
+      "name": "Far Sand Shot",
+      "input": "b f 3 + block f",
+      "type": "special",
+      "id": "far-sand-shot"
+    },
+    {
+      "name": "Caltrops",
+      "input": "d b 3",
+      "type": "special",
+      "id": "caltrops"
+    },
+    {
+      "name": "Double Trops",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "double-trops"
+    },
+    {
+      "name": "Close Caltrops",
+      "input": "d b 3 b",
+      "type": "special",
+      "id": "close-caltrops"
+    },
+    {
+      "name": "Close Double Trops",
+      "input": "d b 3 + block b",
+      "type": "special",
+      "id": "close-double-trops"
+    },
+    {
+      "name": "Far Caltrops",
+      "input": "d b 3 f",
+      "type": "special",
+      "id": "far-caltrops"
+    },
+    {
+      "name": "Far Double Trops",
+      "input": "d b 3 + block f",
+      "type": "special",
+      "id": "far-double-trops"
+    },
+    {
+      "name": "Sand Slide",
+      "input": "b f 4",
+      "type": "special",
+      "id": "sand-slide"
+    },
+    {
+      "name": "Slide Shots",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "slide-shots"
+    },
+    {
+      "name": "Sand Gust",
+      "input": "d b 4",
+      "type": "special",
+      "id": "sand-gust"
+    },
+    {
+      "name": "Dust Storm",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "dust-storm"
+    },
+    {
+      "name": "Sand Trap",
+      "input": "d b f 2",
+      "type": "special",
+      "id": "sand-trap"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Quick Sand",
+      "input": "d b f 2 + block",
+      "type": "special",
+      "id": "quick-sand"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Money Shot",
+      "input": "d f 1",
+      "type": "special",
+      "id": "money-shot"
+    },
+    {
+      "name": "Close Money Shot",
+      "input": "d f 1 b",
+      "type": "special",
+      "id": "close-money-shot"
+    },
+    {
+      "name": "Far Money Shot",
+      "input": "d f 1 f",
+      "type": "special",
+      "id": "far-money-shot"
+    },
+    {
+      "name": "Barrage",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "barrage"
+    },
+    {
+      "name": "Stand Off",
+      "input": "d b 1",
+      "type": "special",
+      "id": "stand-off"
+    },
+    {
+      "name": "Holster",
+      "input": "1",
+      "type": "normal",
+      "id": "holster"
+    },
+    {
+      "name": "Spin Shot",
+      "input": "4",
+      "type": "normal",
+      "id": "spin-shot"
+    },
+    {
+      "name": "Quick Shot",
+      "input": "2",
+      "type": "normal",
+      "id": "quick-shot"
+    },
+    {
+      "name": "Low Shot",
+      "input": "3",
+      "type": "normal",
+      "id": "low-shot"
+    },
+    {
+      "name": "Sand Toss",
+      "input": "d b 4",
+      "type": "special",
+      "id": "sand-toss"
+    },
+    {
+      "name": "Sand Throw",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "sand-throw"
+    },
+    {
+      "name": "Tarkatan Stab",
+      "input": "d f 2",
+      "type": "special",
+      "id": "tarkatan-stab"
+    },
+    {
+      "name": "Tarkatan Infection",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "tarkatan-infection"
+    },
+    {
+      "name": "Long Shot",
+      "input": "d f 1",
+      "type": "special",
+      "id": "long-shot"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Sniper Shot",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "sniper-shot"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Swing Shot",
+      "input": "d b 2",
+      "type": "special",
+      "id": "swing-shot"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Unload",
+      "input": "d b 1",
+      "type": "special",
+      "id": "unload"
+    },
+    {
+      "name": "Barrage",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "barrage"
+    },
+    {
+      "name": "Trick Shot",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "trick-shot"
+    },
+    {
+      "name": "Sand Storm (Mid)",
+      "input": "d b f d 1",
+      "type": "special",
+      "id": "sand-storm-mid"
+    },
+    {
+      "name": "Six-Shooter (Far)",
+      "input": "b f b f 2",
+      "type": "special",
+      "id": "six-shooter-far"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "d d d 4",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Tunnel Vision",
+      "input": "throw or 1 + 3",
+      "type": "string",
+      "id": "tunnel-vision"
+    },
+    {
+      "name": "Serenity",
+      "input": "d b f 2",
+      "type": "special",
+      "id": "serenity"
+    },
+    {
+      "name": "Quick Draw",
+      "input": "d b 1 4",
+      "type": "string",
+      "id": "quick-draw"
+    },
+    {
+      "name": "Sword In The Stone",
+      "input": "d f 2",
+      "type": "special",
+      "id": "sword-in-the-stone"
+    },
+    {
+      "name": "Swing Low",
+      "input": "d b 2",
+      "type": "special",
+      "id": "swing-low"
+    },
+    {
+      "name": "Hidden Brutality",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "hidden-brutality"
     }
   ]
 }

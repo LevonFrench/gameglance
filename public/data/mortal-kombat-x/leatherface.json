@@ -3,10 +3,574 @@
   "character": "Leatherface",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "name": "Straight Jab",
+      "input": "1",
       "type": "normal",
-      "input": "P"
+      "id": "straight-jab"
+    },
+    {
+      "name": "High Chain",
+      "input": "b 1",
+      "type": "normal",
+      "id": "high-chain"
+    },
+    {
+      "name": "Gut Bash",
+      "input": "b 1",
+      "type": "normal",
+      "id": "gut-bash"
+    },
+    {
+      "name": "Quick Buzz",
+      "input": "f 1",
+      "type": "normal",
+      "id": "quick-buzz"
+    },
+    {
+      "name": "Low Poke",
+      "input": "d 1",
+      "type": "normal",
+      "id": "low-poke"
+    },
+    {
+      "name": "Face Smash",
+      "input": "2",
+      "type": "normal",
+      "id": "face-smash"
+    },
+    {
+      "name": "Temple Smack",
+      "input": "2",
+      "type": "normal",
+      "id": "temple-smack"
+    },
+    {
+      "name": "Knockout",
+      "input": "b 2",
+      "type": "normal",
+      "id": "knockout"
+    },
+    {
+      "name": "Knockout",
+      "input": "b 2",
+      "type": "normal",
+      "id": "knockout"
+    },
+    {
+      "name": "Quick Saw",
+      "input": "f 2",
+      "type": "normal",
+      "id": "quick-saw"
+    },
+    {
+      "name": "Splitting Head",
+      "input": "f 2",
+      "type": "normal",
+      "id": "splitting-head"
+    },
+    {
+      "name": "Rising Punch",
+      "input": "d 2",
+      "type": "normal",
+      "id": "rising-punch"
+    },
+    {
+      "name": "Hinge Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "hinge-kick"
+    },
+    {
+      "name": "Brutal Stomp",
+      "input": "f 3",
+      "type": "normal",
+      "id": "brutal-stomp"
+    },
+    {
+      "name": "Killer Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "killer-kick"
+    },
+    {
+      "name": "High Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "high-kick"
+    },
+    {
+      "name": "Ankle Slice",
+      "input": "b 4",
+      "type": "normal",
+      "id": "ankle-slice"
+    },
+    {
+      "name": "Straight Boot",
+      "input": "f 4",
+      "type": "normal",
+      "id": "straight-boot"
+    },
+    {
+      "name": "Ground Slam",
+      "input": "d 4",
+      "type": "normal",
+      "id": "ground-slam"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Insane Killer",
+      "input": "1 2",
+      "type": "string",
+      "id": "insane-killer"
+    },
+    {
+      "name": "Saw Is Family",
+      "input": "1 2 2",
+      "type": "string",
+      "id": "saw-is-family"
+    },
+    {
+      "name": "Peel That Pig",
+      "input": "f 1 2",
+      "type": "string",
+      "id": "peel-that-pig"
+    },
+    {
+      "name": "Make Them Stop",
+      "input": "f 1 2 b 2",
+      "type": "string",
+      "id": "make-them-stop"
+    },
+    {
+      "name": "Shocking Truth",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "shocking-truth"
+    },
+    {
+      "name": "Man Slaughter",
+      "input": "2 2",
+      "type": "string",
+      "id": "man-slaughter"
+    },
+    {
+      "name": "Hookin' And Crookin'",
+      "input": "2 2 u 2",
+      "type": "string",
+      "id": "hookin-and-crookin"
+    },
+    {
+      "name": "Dog Will Hunt",
+      "input": "2 2 d 2",
+      "type": "string",
+      "id": "dog-will-hunt"
+    },
+    {
+      "name": "Bizarre Crimes",
+      "input": "f 2 1",
+      "type": "string",
+      "id": "bizarre-crimes"
+    },
+    {
+      "name": "Pleasure In Killing",
+      "input": "f 2 1 d 2",
+      "type": "string",
+      "id": "pleasure-in-killing"
+    },
+    {
+      "name": "Torturous Ways",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "torturous-ways"
+    },
+    {
+      "name": "Spilling Blood",
+      "input": "b 1 u 2",
+      "type": "string",
+      "id": "spilling-blood"
+    },
+    {
+      "name": "Killing Mask",
+      "input": "2 2",
+      "type": "string",
+      "id": "killing-mask"
+    },
+    {
+      "name": "Massacre",
+      "input": "2 2 d 2",
+      "type": "string",
+      "id": "massacre"
+    },
+    {
+      "name": "Last Chance",
+      "input": "2 2 u 2",
+      "type": "string",
+      "id": "last-chance"
+    },
+    {
+      "name": "Little Seizure",
+      "input": "f 2 1",
+      "type": "string",
+      "id": "little-seizure"
+    },
+    {
+      "name": "Gore",
+      "input": "f 2 1 d 2",
+      "type": "string",
+      "id": "gore"
+    },
+    {
+      "name": "Terror",
+      "input": "f 2 1 d 2 2",
+      "type": "string",
+      "id": "terror"
+    },
+    {
+      "name": "Psycho Kutter",
+      "input": "d b 1",
+      "type": "special",
+      "id": "psycho-kutter"
+    },
+    {
+      "name": "Psycho Slasher",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "psycho-slasher"
+    },
+    {
+      "name": "Spinning Saw",
+      "input": "d f 4",
+      "type": "special",
+      "id": "spinning-saw"
+    },
+    {
+      "name": "Spin-Sanity",
+      "input": "d f 4 + block",
+      "type": "special",
+      "id": "spin-sanity"
+    },
+    {
+      "name": "High Saw",
+      "input": "d b 4",
+      "type": "special",
+      "id": "high-saw"
+    },
+    {
+      "name": "High Grinder",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "high-grinder"
+    },
+    {
+      "name": "Chain Sparks",
+      "input": "b d 4",
+      "type": "normal",
+      "id": "chain-sparks"
+    },
+    {
+      "name": "Ground Sparks",
+      "input": "b d 4 + block",
+      "type": "normal",
+      "id": "ground-sparks"
+    },
+    {
+      "name": "Cancel",
+      "input": "b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Crazed",
+      "input": "f f",
+      "type": "normal",
+      "id": "crazed"
+    },
+    {
+      "name": "Low Saw",
+      "input": "b f 3",
+      "type": "special",
+      "id": "low-saw"
+    },
+    {
+      "name": "Low Grinder",
+      "input": "b f 3 + block",
+      "type": "special",
+      "id": "low-grinder"
+    },
+    {
+      "name": "Berserker Stance",
+      "input": "d b 3",
+      "type": "special",
+      "id": "berserker-stance"
+    },
+    {
+      "name": "Exit Berserker",
+      "input": "3",
+      "type": "normal",
+      "id": "exit-berserker"
+    },
+    {
+      "name": "Running Frenzy",
+      "input": "4",
+      "type": "normal",
+      "id": "running-frenzy"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Psycho Rush",
+      "input": "1",
+      "type": "normal",
+      "id": "psycho-rush"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "No Escape",
+      "input": "2",
+      "type": "normal",
+      "id": "no-escape"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Gut Slice",
+      "input": "d f 4",
+      "type": "special",
+      "id": "gut-slice"
+    },
+    {
+      "name": "Gut Gash",
+      "input": "d f 4 + block",
+      "type": "special",
+      "id": "gut-gash"
+    },
+    {
+      "name": "Mallet Strike",
+      "input": "d f 2",
+      "type": "special",
+      "id": "mallet-strike"
+    },
+    {
+      "name": "Mallet Slam",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "mallet-slam"
+    },
+    {
+      "name": "Skull Smash",
+      "input": "d b f 1",
+      "type": "special",
+      "id": "skull-smash"
+    },
+    {
+      "name": "Skull Fracture",
+      "input": "d b f 1 + block",
+      "type": "special",
+      "id": "skull-fracture"
+    },
+    {
+      "name": "Blood Bath",
+      "input": "d b 3",
+      "type": "special",
+      "id": "blood-bath"
+    },
+    {
+      "name": "Slaughter House",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "slaughter-house"
+    },
+    {
+      "name": "Saw Toss",
+      "input": "b f 2",
+      "type": "special",
+      "id": "saw-toss"
+    },
+    {
+      "name": "Saw Throw",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "saw-throw"
+    },
+    {
+      "name": "Air Saw Toss",
+      "input": "(air) b f 2",
+      "type": "special",
+      "id": "air-saw-toss"
+    },
+    {
+      "name": "Air Saw Throw",
+      "input": "(air) b f 2 + block",
+      "type": "special",
+      "id": "air-saw-throw"
+    },
+    {
+      "name": "Up Saw Toss",
+      "input": "d b 2",
+      "type": "special",
+      "id": "up-saw-toss"
+    },
+    {
+      "name": "Up Saw Throw",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "up-saw-throw"
+    },
+    {
+      "name": "Low Saw Toss",
+      "input": "d b 3",
+      "type": "special",
+      "id": "low-saw-toss"
+    },
+    {
+      "name": "Low Saw Throw",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "low-saw-throw"
+    },
+    {
+      "name": "Air Down Saw Toss",
+      "input": "(air) d b 3",
+      "type": "special",
+      "id": "air-down-saw-toss"
+    },
+    {
+      "name": "Air Down Saw Throw",
+      "input": "(air) d b 3 + block",
+      "type": "special",
+      "id": "air-down-saw-throw"
+    },
+    {
+      "name": "Blood 'n' Guts",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "blood-n-guts"
+    },
+    {
+      "name": "Seeing Double (Close)",
+      "input": "f b d 1",
+      "type": "normal",
+      "id": "seeing-double-close"
+    },
+    {
+      "name": "Hook And Sinker (Close)",
+      "input": "b f d f 3",
+      "type": "special",
+      "id": "hook-and-sinker-close"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "f b d u",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Country-Fried",
+      "input": "throw or 1 + 3",
+      "type": "string",
+      "id": "country-fried"
+    },
+    {
+      "name": "Butcher Block",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "butcher-block"
+    },
+    {
+      "name": "Half Slab",
+      "input": "d b 3 4",
+      "type": "string",
+      "id": "half-slab"
+    },
+    {
+      "name": "The Tenderizer",
+      "input": "d b f 1",
+      "type": "special",
+      "id": "the-tenderizer"
+    },
+    {
+      "name": "Trimming The Fat",
+      "input": "b f 2",
+      "type": "special",
+      "id": "trimming-the-fat"
     }
   ]
 }

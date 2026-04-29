@@ -4,40 +4,680 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Bitch Slap",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "bitch-slap"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Double Tonfa Snap",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "double-tonfa-snap"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "High Slash",
+      "input": "b 1",
       "type": "normal",
-      "input": "3"
+      "id": "high-slash"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Low Smash",
+      "input": "d 1",
       "type": "normal",
-      "input": "4"
+      "id": "low-smash"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Side Chop",
+      "input": "2",
+      "type": "normal",
+      "id": "side-chop"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Spinning Spikes",
+      "input": "b 2",
+      "type": "normal",
+      "id": "spinning-spikes"
+    },
+    {
+      "name": "Lunging Stab",
+      "input": "b 2",
+      "type": "normal",
+      "id": "lunging-stab"
+    },
+    {
+      "name": "Spinning Slaps",
+      "input": "f 2",
+      "type": "normal",
+      "id": "spinning-slaps"
+    },
+    {
+      "name": "Rising Fist",
+      "input": "d 2",
+      "type": "normal",
+      "id": "rising-fist"
+    },
+    {
+      "name": "High Poke",
+      "input": "down-left 2",
+      "type": "normal",
+      "id": "high-poke"
+    },
+    {
+      "name": "Snap Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "snap-kick"
+    },
+    {
+      "name": "Shin Strike",
+      "input": "b 3",
+      "type": "normal",
+      "id": "shin-strike"
+    },
+    {
+      "name": "High Heel",
+      "input": "f 3",
+      "type": "normal",
+      "id": "high-heel"
+    },
+    {
+      "name": "Charge",
+      "input": "hold 3",
+      "type": "normal",
+      "id": "charge"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Low Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-kick"
+    },
+    {
+      "name": "Side Strike",
+      "input": "4",
+      "type": "normal",
+      "id": "side-strike"
+    },
+    {
+      "name": "Double Spin",
+      "input": "b 4",
+      "type": "normal",
+      "id": "double-spin"
+    },
+    {
+      "name": "Split Kick",
+      "input": "f 4",
+      "type": "normal",
+      "id": "split-kick"
+    },
+    {
+      "name": "Side Kick",
+      "input": "d 4",
+      "type": "normal",
+      "id": "side-kick"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Perfect Form",
+      "input": "1 1",
+      "type": "string",
+      "id": "perfect-form"
+    },
+    {
+      "name": "Natural Palm",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "natural-palm"
+    },
+    {
+      "name": "Dragon Caller",
+      "input": "1 1 u 4",
+      "type": "string",
+      "id": "dragon-caller"
+    },
+    {
+      "name": "Dragon Teeth",
+      "input": "b 1 d 2",
+      "type": "string",
+      "id": "dragon-teeth"
+    },
+    {
+      "name": "Gut Rip",
+      "input": "b 1 2 + 4",
+      "type": "string",
+      "id": "gut-rip"
+    },
+    {
+      "name": "Back Stab",
+      "input": "b 1 2 + 4 1 + 3",
+      "type": "string",
+      "id": "back-stab"
+    },
+    {
+      "name": "Ankle Kutter",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "ankle-kutter"
+    },
+    {
+      "name": "Wanted For Treason",
+      "input": "2 u 3",
+      "type": "string",
+      "id": "wanted-for-treason"
+    },
+    {
+      "name": "Underhanded",
+      "input": "2 4",
+      "type": "string",
+      "id": "underhanded"
+    },
+    {
+      "name": "Ambassador",
+      "input": "2 4 3",
+      "type": "string",
+      "id": "ambassador"
+    },
+    {
+      "name": "Light Concussion",
+      "input": "3 2",
+      "type": "string",
+      "id": "light-concussion"
+    },
+    {
+      "name": "Dark Edenian",
+      "input": "3 2 1",
+      "type": "string",
+      "id": "dark-edenian"
+    },
+    {
+      "name": "Dark Worship",
+      "input": "3 4",
+      "type": "string",
+      "id": "dark-worship"
+    },
+    {
+      "name": "Simple Betrayal",
+      "input": "b 3 1",
+      "type": "string",
+      "id": "simple-betrayal"
+    },
+    {
+      "name": "Bitter Hatred",
+      "input": "b 3 1 2",
+      "type": "string",
+      "id": "bitter-hatred"
+    },
+    {
+      "name": "Dark Burst",
+      "input": "b 3 1 2",
+      "type": "string",
+      "id": "dark-burst"
+    },
+    {
+      "name": "Betrayal",
+      "input": "b 3 1 3",
+      "type": "string",
+      "id": "betrayal"
+    },
+    {
+      "name": "Spin Cycle",
+      "input": "b 3 2",
+      "type": "string",
+      "id": "spin-cycle"
+    },
+    {
+      "name": "Slicing Wind",
+      "input": "f 4 2",
+      "type": "string",
+      "id": "slicing-wind"
+    },
+    {
+      "name": "Evil Lurking",
+      "input": "f 4 3",
+      "type": "string",
+      "id": "evil-lurking"
+    },
+    {
+      "name": "Low Spin Kick",
+      "input": "b f 4",
+      "type": "special",
+      "id": "low-spin-kick"
+    },
+    {
+      "name": "Low Drill Kick",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "low-drill-kick"
+    },
+    {
+      "name": "Flip Kick",
+      "input": "d b 4",
+      "type": "special",
+      "id": "flip-kick"
+    },
+    {
+      "name": "Split Flip Kick",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "split-flip-kick"
+    },
+    {
+      "name": "Teleport Away",
+      "input": "d b 3",
+      "type": "special",
+      "id": "teleport-away"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 3",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "d d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Quick Teleport Away",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "quick-teleport-away"
+    },
+    {
+      "name": "Teleport Forward",
+      "input": "d f 3",
+      "type": "special",
+      "id": "teleport-forward"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 3",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "d d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Quick Teleport Forward",
+      "input": "d f 3 + block",
+      "type": "special",
+      "id": "quick-teleport-forward"
+    },
+    {
+      "name": "Air Teleport Away",
+      "input": "(air) d b 3",
+      "type": "special",
+      "id": "air-teleport-away"
+    },
+    {
+      "name": "Air Teleport Forward",
+      "input": "(air) d f 3",
+      "type": "special",
+      "id": "air-teleport-forward"
+    },
+    {
+      "name": "Air Spin Kick",
+      "input": "(air) d f 4",
+      "type": "special",
+      "id": "air-spin-kick"
+    },
+    {
+      "name": "Air Split Drop",
+      "input": "(air) d b 4",
+      "type": "special",
+      "id": "air-split-drop"
+    },
+    {
+      "name": "Tonfa Toss",
+      "input": "d f 1",
+      "type": "special",
+      "id": "tonfa-toss"
+    },
+    {
+      "name": "Tonfa Throw",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "tonfa-throw"
+    },
+    {
+      "name": "Blade Dive",
+      "input": "(air) d f 2",
+      "type": "special",
+      "id": "blade-dive"
+    },
+    {
+      "name": "Tonfa Swipe",
+      "input": "d f 2",
+      "type": "special",
+      "id": "tonfa-swipe"
+    },
+    {
+      "name": "Tonfa Slash",
+      "input": "d f 1",
+      "type": "special",
+      "id": "tonfa-slash"
+    },
+    {
+      "name": "Tonfa Push",
+      "input": "d f 2",
+      "type": "special",
+      "id": "tonfa-push"
+    },
+    {
+      "name": "Rising Tonfa",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "rising-tonfa"
+    },
+    {
+      "name": "Tonfa Strike",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "tonfa-strike"
+    },
+    {
+      "name": "Tonfa Spin",
+      "input": "d f 1",
+      "type": "special",
+      "id": "tonfa-spin"
+    },
+    {
+      "name": "Tonfa Push",
+      "input": "d f 2",
+      "type": "special",
+      "id": "tonfa-push"
+    },
+    {
+      "name": "Rising Tonfa",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "rising-tonfa"
+    },
+    {
+      "name": "Air Staff Stance",
+      "input": "(air) d + 2",
+      "type": "normal",
+      "id": "air-staff-stance"
+    },
+    {
+      "name": "Exit Stance",
+      "input": "2",
+      "type": "normal",
+      "id": "exit-stance"
+    },
+    {
+      "name": "Staff Slam",
+      "input": "1",
+      "type": "normal",
+      "id": "staff-slam"
+    },
+    {
+      "name": "Staff Slide",
+      "input": "3",
+      "type": "normal",
+      "id": "staff-slide"
+    },
+    {
+      "name": "Swing Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "swing-kick"
+    },
+    {
+      "name": "Jump Towards",
+      "input": "f + 2",
+      "type": "normal",
+      "id": "jump-towards",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Away",
+      "input": "b + 2",
+      "type": "normal",
+      "id": "jump-away",
+      "notes": "Air"
+    },
+    {
+      "name": "Swing Kick",
+      "input": "b f 2",
+      "type": "special",
+      "id": "swing-kick"
+    },
+    {
+      "name": "Spinning Kick",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "spinning-kick"
+    },
+    {
+      "name": "Exit Stance",
+      "input": "2",
+      "type": "normal",
+      "id": "exit-stance"
+    },
+    {
+      "name": "Staff Slam",
+      "input": "1",
+      "type": "normal",
+      "id": "staff-slam"
+    },
+    {
+      "name": "Staff Slide",
+      "input": "3",
+      "type": "normal",
+      "id": "staff-slide"
+    },
+    {
+      "name": "Swing Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "swing-kick"
+    },
+    {
+      "name": "Jump Towards",
+      "input": "f + 2",
+      "type": "normal",
+      "id": "jump-towards",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Away",
+      "input": "b + 2",
+      "type": "normal",
+      "id": "jump-away",
+      "notes": "Air"
+    },
+    {
+      "name": "High Fireball",
+      "input": "d b 1",
+      "type": "special",
+      "id": "high-fireball"
+    },
+    {
+      "name": "Surging Blast",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "surging-blast"
+    },
+    {
+      "name": "Low Fireball",
+      "input": "d f 1",
+      "type": "special",
+      "id": "low-fireball"
+    },
+    {
+      "name": "Surging Blast",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "surging-blast"
+    },
+    {
+      "name": "Air Close Fire Blast",
+      "input": "(air) d b 1",
+      "type": "special",
+      "id": "air-close-fire-blast"
+    },
+    {
+      "name": "Air Surging Blast",
+      "input": "(air) d b 1 + block",
+      "type": "special",
+      "id": "air-surging-blast"
+    },
+    {
+      "name": "Air Far Fire Blast",
+      "input": "(air) d f 1",
+      "type": "special",
+      "id": "air-far-fire-blast"
+    },
+    {
+      "name": "Air Surging Blast",
+      "input": "(air) d f 1 + block",
+      "type": "special",
+      "id": "air-surging-blast"
+    },
+    {
+      "name": "Dark Shroud",
+      "input": "d f 2",
+      "type": "special",
+      "id": "dark-shroud"
+    },
+    {
+      "name": "Devil's Dust",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "devils-dust"
+    },
+    {
+      "name": "Air Up And Over",
+      "input": "(air) stance + block",
+      "type": "normal",
+      "id": "air-up-and-over"
+    },
+    {
+      "name": "Bloody Boots (Close)",
+      "input": "f d d b d",
+      "type": "normal",
+      "id": "bloody-boots-close"
+    },
+    {
+      "name": "Edenian Drill (Close)",
+      "input": "b b f f 4",
+      "type": "special",
+      "id": "edenian-drill-close"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "u d u d 4",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Top Off",
+      "input": "throw or 1 + 3",
+      "type": "string",
+      "id": "top-off"
+    },
+    {
+      "name": "Romp Stomp",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "romp-stomp"
+    },
+    {
+      "name": "Backstabbed",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "backstabbed"
+    },
+    {
+      "name": "Watch This",
+      "input": "(air) d + 2 4",
+      "type": "string",
+      "id": "watch-this"
+    },
+    {
+      "name": "Pop Pop",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "pop-pop"
     }
   ]
 }

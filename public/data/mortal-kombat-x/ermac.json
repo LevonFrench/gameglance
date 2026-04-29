@@ -4,40 +4,814 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Soul Strike",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "soul-strike"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Lunge Slap",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "lunge-slap"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Low Jab",
+      "input": "d 1",
       "type": "normal",
-      "input": "3"
+      "id": "low-jab"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Palm Blast",
+      "input": "2",
       "type": "normal",
-      "input": "4"
+      "id": "palm-blast"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Soul Charge",
+      "input": "b 2",
+      "type": "normal",
+      "id": "soul-charge"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Delay",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Crushing Fist",
+      "input": "f 2",
+      "type": "normal",
+      "id": "crushing-fist"
+    },
+    {
+      "name": "The Risen",
+      "input": "d 2",
+      "type": "normal",
+      "id": "the-risen"
+    },
+    {
+      "name": "Chin Snap",
+      "input": "3",
+      "type": "normal",
+      "id": "chin-snap"
+    },
+    {
+      "name": "Ankle Snap",
+      "input": "b 3",
+      "type": "normal",
+      "id": "ankle-snap"
+    },
+    {
+      "name": "High Kick",
+      "input": "f 3",
+      "type": "normal",
+      "id": "high-kick"
+    },
+    {
+      "name": "Side Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "side-kick"
+    },
+    {
+      "name": "Hinge Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "hinge-kick"
+    },
+    {
+      "name": "Spirit Sweep",
+      "input": "b 4",
+      "type": "normal",
+      "id": "spirit-sweep"
+    },
+    {
+      "name": "Crown Breaker",
+      "input": "f 4",
+      "type": "normal",
+      "id": "crown-breaker"
+    },
+    {
+      "name": "Arc Kick",
+      "input": "d 4",
+      "type": "normal",
+      "id": "arc-kick"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Lifeless",
+      "input": "1 1",
+      "type": "string",
+      "id": "lifeless"
+    },
+    {
+      "name": "Soul Rush",
+      "input": "1 1 1",
+      "type": "string",
+      "id": "soul-rush"
+    },
+    {
+      "name": "Fusion",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "fusion"
+    },
+    {
+      "name": "Nether-Pain",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "nether-pain"
+    },
+    {
+      "name": "Psychic Strikes",
+      "input": "b 1 2 4",
+      "type": "string",
+      "id": "psychic-strikes"
+    },
+    {
+      "name": "Lost Souls",
+      "input": "b 1 d 2",
+      "type": "string",
+      "id": "lost-souls"
+    },
+    {
+      "name": "Surrender",
+      "input": "2 2",
+      "type": "string",
+      "id": "surrender"
+    },
+    {
+      "name": "Relinquish",
+      "input": "2 2 2",
+      "type": "string",
+      "id": "relinquish"
+    },
+    {
+      "name": "Disoriented",
+      "input": "b 2 4 + 3",
+      "type": "string",
+      "id": "disoriented"
+    },
+    {
+      "name": "Unstoppable Force",
+      "input": "b 2 4 + 3 1 2",
+      "type": "string",
+      "id": "unstoppable-force"
+    },
+    {
+      "name": "Tortured Souls",
+      "input": "f 2 d 2",
+      "type": "string",
+      "id": "tortured-souls"
+    },
+    {
+      "name": "Inner Struggles",
+      "input": "f 2 1",
+      "type": "string",
+      "id": "inner-struggles"
+    },
+    {
+      "name": "Experiment",
+      "input": "f 2 1 2",
+      "type": "string",
+      "id": "experiment"
+    },
+    {
+      "name": "Certain Death",
+      "input": "f 2 1 d 2",
+      "type": "string",
+      "id": "certain-death"
+    },
+    {
+      "name": "Anguish",
+      "input": "3 4",
+      "type": "string",
+      "id": "anguish"
+    },
+    {
+      "name": "Torment",
+      "input": "b 3 2",
+      "type": "string",
+      "id": "torment"
+    },
+    {
+      "name": "Inner Misery",
+      "input": "b 3 2 1",
+      "type": "string",
+      "id": "inner-misery"
+    },
+    {
+      "name": "Wretchedness",
+      "input": "b 3 4",
+      "type": "string",
+      "id": "wretchedness"
+    },
+    {
+      "name": "Hurting",
+      "input": "f 3 4",
+      "type": "string",
+      "id": "hurting"
+    },
+    {
+      "name": "Limited Grief",
+      "input": "f 4 3",
+      "type": "string",
+      "id": "limited-grief"
+    },
+    {
+      "name": "Soul Burst",
+      "input": "d b 2",
+      "type": "special",
+      "id": "soul-burst"
+    },
+    {
+      "name": "Soul Blast",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "soul-blast"
+    },
+    {
+      "name": "Up Soul Burst",
+      "input": "d b 2 u",
+      "type": "special",
+      "id": "up-soul-burst"
+    },
+    {
+      "name": "Up Soul Blast",
+      "input": "d b 2 + block u",
+      "type": "special",
+      "id": "up-soul-blast"
+    },
+    {
+      "name": "Air Soul Burst",
+      "input": "(air) d b 2",
+      "type": "special",
+      "id": "air-soul-burst"
+    },
+    {
+      "name": "Air Soul Blast",
+      "input": "(air) d b 2 + block",
+      "type": "special",
+      "id": "air-soul-blast"
+    },
+    {
+      "name": "Force Lift",
+      "input": "d b 1",
+      "type": "special",
+      "id": "force-lift"
+    },
+    {
+      "name": "Tele-Lift",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "tele-lift"
+    },
+    {
+      "name": "Teleport",
+      "input": "d b 4",
+      "type": "special",
+      "id": "teleport"
+    },
+    {
+      "name": "Force Port",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "force-port"
+    },
+    {
+      "name": "Air Teleport",
+      "input": "(air) d b 4",
+      "type": "special",
+      "id": "air-teleport"
+    },
+    {
+      "name": "Air Force Port",
+      "input": "(air) d b 4 + block",
+      "type": "special",
+      "id": "air-force-port"
+    },
+    {
+      "name": "Hover",
+      "input": "d u + block",
+      "type": "normal",
+      "id": "hover"
+    },
+    {
+      "name": "Soul Burst",
+      "input": "(air) d b 2",
+      "type": "special",
+      "id": "soul-burst"
+    },
+    {
+      "name": "Teleport",
+      "input": "(air) d b 4",
+      "type": "special",
+      "id": "teleport"
+    },
+    {
+      "name": "Ground Slam",
+      "input": "(air) 3",
+      "type": "normal",
+      "id": "ground-slam"
+    },
+    {
+      "name": "Cancel",
+      "input": "(air) d d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Air Hover",
+      "input": "(air) d u + block",
+      "type": "normal",
+      "id": "air-hover"
+    },
+    {
+      "name": "Soul Burst",
+      "input": "(air) d b 2",
+      "type": "special",
+      "id": "soul-burst"
+    },
+    {
+      "name": "Teleport",
+      "input": "(air) d b 4",
+      "type": "special",
+      "id": "teleport"
+    },
+    {
+      "name": "Ground Slam",
+      "input": "(air) 3",
+      "type": "normal",
+      "id": "ground-slam"
+    },
+    {
+      "name": "Cancel",
+      "input": "(air) d d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Tele-Choke",
+      "input": "b f 2",
+      "type": "special",
+      "id": "tele-choke"
+    },
+    {
+      "name": "Levitate",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "levitate"
+    },
+    {
+      "name": "Tele-Hang",
+      "input": "d b 1",
+      "type": "special",
+      "id": "tele-hang"
+    },
+    {
+      "name": "Tele-Hold",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "tele-hold"
+    },
+    {
+      "name": "Soul Ball",
+      "input": "b f 2",
+      "type": "special",
+      "id": "soul-ball"
+    },
+    {
+      "name": "Soul Release",
+      "input": "b f 1",
+      "type": "special",
+      "id": "soul-release"
+    },
+    {
+      "name": "Soul Trap",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "soul-trap"
+    },
+    {
+      "name": "Soul Release",
+      "input": "b f 1",
+      "type": "special",
+      "id": "soul-release"
+    },
+    {
+      "name": "Air Soul Ball",
+      "input": "(air) b f 2",
+      "type": "special",
+      "id": "air-soul-ball"
+    },
+    {
+      "name": "Soul Release",
+      "input": "b f 1",
+      "type": "special",
+      "id": "soul-release"
+    },
+    {
+      "name": "Air Soul Trap",
+      "input": "(air) b f 2 + block",
+      "type": "special",
+      "id": "air-soul-trap"
+    },
+    {
+      "name": "Soul Release",
+      "input": "b f 1",
+      "type": "special",
+      "id": "soul-release"
+    },
+    {
+      "name": "Disappear",
+      "input": "d b 3",
+      "type": "special",
+      "id": "disappear"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 3",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Vanish",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "vanish"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 3",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Air Disappear",
+      "input": "(air) d b 3",
+      "type": "special",
+      "id": "air-disappear"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 3",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Air Vanish",
+      "input": "(air) d b 3 + block",
+      "type": "special",
+      "id": "air-vanish"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 3",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Soul Charge",
+      "input": "b f 2",
+      "type": "special",
+      "id": "soul-charge"
+    },
+    {
+      "name": "Spectral Charge",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "spectral-charge"
+    },
+    {
+      "name": "Air Soul Charge",
+      "input": "(air) b f 2",
+      "type": "special",
+      "id": "air-soul-charge"
+    },
+    {
+      "name": "Air Spectral Charge",
+      "input": "(air) b f 2 + block",
+      "type": "special",
+      "id": "air-spectral-charge"
+    },
+    {
+      "name": "Soul Ascension",
+      "input": "d u + block",
+      "type": "normal",
+      "id": "soul-ascension"
+    },
+    {
+      "name": "Rise",
+      "input": "u",
+      "type": "normal",
+      "id": "rise"
+    },
+    {
+      "name": "Forward",
+      "input": "f",
+      "type": "normal",
+      "id": "forward"
+    },
+    {
+      "name": "Away",
+      "input": "b",
+      "type": "normal",
+      "id": "away"
+    },
+    {
+      "name": "Descend",
+      "input": "d",
+      "type": "normal",
+      "id": "descend"
+    },
+    {
+      "name": "Soul Strike",
+      "input": "(air) 1",
+      "type": "normal",
+      "id": "soul-strike"
+    },
+    {
+      "name": "Crushing Fist",
+      "input": "(air) 2",
+      "type": "normal",
+      "id": "crushing-fist"
+    },
+    {
+      "name": "Quick Kick",
+      "input": "(air) 3",
+      "type": "normal",
+      "id": "quick-kick"
+    },
+    {
+      "name": "Swing Kick",
+      "input": "(air) 4",
+      "type": "normal",
+      "id": "swing-kick"
+    },
+    {
+      "name": "Air Soul Charge",
+      "input": "(air) b f 2",
+      "type": "special",
+      "id": "air-soul-charge"
+    },
+    {
+      "name": "Air Spectral Charge",
+      "input": "(air) b f 2 + block",
+      "type": "special",
+      "id": "air-spectral-charge"
+    },
+    {
+      "name": "Teleport",
+      "input": "(air) d b 4",
+      "type": "special",
+      "id": "teleport"
+    },
+    {
+      "name": "Force Port",
+      "input": "(air) d b 4 + block",
+      "type": "special",
+      "id": "force-port"
+    },
+    {
+      "name": "Soul Burst",
+      "input": "(air) d b 2",
+      "type": "special",
+      "id": "soul-burst"
+    },
+    {
+      "name": "Soul Blast",
+      "input": "(air) d b 2 + block",
+      "type": "special",
+      "id": "soul-blast"
+    },
+    {
+      "name": "Ground Slam",
+      "input": "(air) d + 3",
+      "type": "normal",
+      "id": "ground-slam"
+    },
+    {
+      "name": "Air Soul Ascension",
+      "input": "(air) d u + block",
+      "type": "normal",
+      "id": "air-soul-ascension"
+    },
+    {
+      "name": "Rise",
+      "input": "u",
+      "type": "normal",
+      "id": "rise"
+    },
+    {
+      "name": "Forward",
+      "input": "f",
+      "type": "normal",
+      "id": "forward"
+    },
+    {
+      "name": "Away",
+      "input": "b",
+      "type": "normal",
+      "id": "away"
+    },
+    {
+      "name": "Descend",
+      "input": "d",
+      "type": "normal",
+      "id": "descend"
+    },
+    {
+      "name": "Soul Strike",
+      "input": "(air) 1",
+      "type": "normal",
+      "id": "soul-strike"
+    },
+    {
+      "name": "Crushing Fist",
+      "input": "(air) 2",
+      "type": "normal",
+      "id": "crushing-fist"
+    },
+    {
+      "name": "Quick Kick",
+      "input": "(air) 3",
+      "type": "normal",
+      "id": "quick-kick"
+    },
+    {
+      "name": "Swing Kick",
+      "input": "(air) 4",
+      "type": "normal",
+      "id": "swing-kick"
+    },
+    {
+      "name": "Air Soul Charge",
+      "input": "(air) b f 2",
+      "type": "special",
+      "id": "air-soul-charge"
+    },
+    {
+      "name": "Air Spectral Charge",
+      "input": "(air) b f 2 + block",
+      "type": "special",
+      "id": "air-spectral-charge"
+    },
+    {
+      "name": "Teleport",
+      "input": "(air) d b 4",
+      "type": "special",
+      "id": "teleport"
+    },
+    {
+      "name": "Force Port",
+      "input": "(air) d b 4 + block",
+      "type": "special",
+      "id": "force-port"
+    },
+    {
+      "name": "Soul Burst",
+      "input": "(air) d b 2",
+      "type": "special",
+      "id": "soul-burst"
+    },
+    {
+      "name": "Soul Blast",
+      "input": "(air) d b 2 + block",
+      "type": "special",
+      "id": "soul-blast"
+    },
+    {
+      "name": "Ground Slam",
+      "input": "(air) d + 3",
+      "type": "normal",
+      "id": "ground-slam"
+    },
+    {
+      "name": "We Are Many",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "we-are-many"
+    },
+    {
+      "name": "Inner Workings (Mid)",
+      "input": "d u b",
+      "type": "normal",
+      "id": "inner-workings-mid"
+    },
+    {
+      "name": "Head Out (Mid)",
+      "input": "f d d u",
+      "type": "normal",
+      "id": "head-out-mid"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "d u d d 1",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Nether Force",
+      "input": "(air) d b 4 + block",
+      "type": "special",
+      "id": "nether-force"
+    },
+    {
+      "name": "We Win",
+      "input": "d b 1",
+      "type": "special",
+      "id": "we-win"
+    },
+    {
+      "name": "Gluttony",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "gluttony"
+    },
+    {
+      "name": "Soul Eater",
+      "input": "b f 1",
+      "type": "special",
+      "id": "soul-eater"
+    },
+    {
+      "name": "Controlled Chaos",
+      "input": "b f 2",
+      "type": "special",
+      "id": "controlled-chaos"
     }
   ]
 }

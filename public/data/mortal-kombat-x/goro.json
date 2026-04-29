@@ -4,40 +4,514 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Face Breaker",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "face-breaker"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Knuckle Push",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "knuckle-push"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Low Knuckles",
+      "input": "d 1",
       "type": "normal",
-      "input": "3"
+      "id": "low-knuckles"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Rise Up",
+      "input": "u 1",
       "type": "normal",
-      "input": "4"
+      "id": "rise-up"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Shokan Hook",
+      "input": "2",
+      "type": "normal",
+      "id": "shokan-hook"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Wind Back",
+      "input": "b 2",
+      "type": "normal",
+      "id": "wind-back"
+    },
+    {
+      "name": "Double Slap",
+      "input": "f 2",
+      "type": "normal",
+      "id": "double-slap"
+    },
+    {
+      "name": "Dragon-cut",
+      "input": "d 2",
+      "type": "normal",
+      "id": "dragon-cut"
+    },
+    {
+      "name": "Upward Fists",
+      "input": "u 2",
+      "type": "normal",
+      "id": "upward-fists"
+    },
+    {
+      "name": "Fast Toe",
+      "input": "3",
+      "type": "normal",
+      "id": "fast-toe"
+    },
+    {
+      "name": "Foot Smash",
+      "input": "b 3",
+      "type": "normal",
+      "id": "foot-smash"
+    },
+    {
+      "name": "Lunge Kick",
+      "input": "f 3",
+      "type": "normal",
+      "id": "lunge-kick"
+    },
+    {
+      "name": "Low Side",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-side"
+    },
+    {
+      "name": "Push Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "push-kick"
+    },
+    {
+      "name": "Low Sweep",
+      "input": "b 4",
+      "type": "normal",
+      "id": "low-sweep"
+    },
+    {
+      "name": "Brutal Kick",
+      "input": "f 4",
+      "type": "normal",
+      "id": "brutal-kick"
+    },
+    {
+      "name": "Quick Hinge",
+      "input": "d 4",
+      "type": "normal",
+      "id": "quick-hinge"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Half Dragon",
+      "input": "1 1",
+      "type": "string",
+      "id": "half-dragon"
+    },
+    {
+      "name": "Grand Champion",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "grand-champion"
+    },
+    {
+      "name": "Gongoro",
+      "input": "1 2",
+      "type": "string",
+      "id": "gongoro"
+    },
+    {
+      "name": "Fists of Fury",
+      "input": "1 2 1",
+      "type": "string",
+      "id": "fists-of-fury"
+    },
+    {
+      "name": "Human Blood",
+      "input": "1 2 1 2",
+      "type": "string",
+      "id": "human-blood"
+    },
+    {
+      "name": "Shokan Prince",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "shokan-prince"
+    },
+    {
+      "name": "Blood And Thunder",
+      "input": "b 1 2 1",
+      "type": "string",
+      "id": "blood-and-thunder"
+    },
+    {
+      "name": "Barbarian Blow",
+      "input": "b 1 2 u 2",
+      "type": "string",
+      "id": "barbarian-blow"
+    },
+    {
+      "name": "Prince of Pain",
+      "input": "2 1",
+      "type": "string",
+      "id": "prince-of-pain"
+    },
+    {
+      "name": "Titan Krush",
+      "input": "2 1 4",
+      "type": "string",
+      "id": "titan-krush"
+    },
+    {
+      "name": "Bruiser",
+      "input": "2 1 2",
+      "type": "string",
+      "id": "bruiser"
+    },
+    {
+      "name": "Gorbak Swing",
+      "input": "f 2 1",
+      "type": "string",
+      "id": "gorbak-swing"
+    },
+    {
+      "name": "Durak Push",
+      "input": "f 2 1 2 + 4",
+      "type": "string",
+      "id": "durak-push"
+    },
+    {
+      "name": "Diabolical End",
+      "input": "f 2 1 4",
+      "type": "string",
+      "id": "diabolical-end"
+    },
+    {
+      "name": "Unfair Advantage",
+      "input": "f 2 1 b 2",
+      "type": "string",
+      "id": "unfair-advantage"
+    },
+    {
+      "name": "Undefeated",
+      "input": "3 d 3",
+      "type": "string",
+      "id": "undefeated"
+    },
+    {
+      "name": "Shokan Bolt",
+      "input": "b f 1",
+      "type": "special",
+      "id": "shokan-bolt"
+    },
+    {
+      "name": "Shokan Blast",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "shokan-blast"
+    },
+    {
+      "name": "Punch Walk",
+      "input": "b f 4",
+      "type": "special",
+      "id": "punch-walk"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Fist Flurry",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "fist-flurry"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Shokan Grab",
+      "input": "d b f 3",
+      "type": "special",
+      "id": "shokan-grab"
+    },
+    {
+      "name": "Shokan Slam",
+      "input": "d b f 3 + block",
+      "type": "special",
+      "id": "shokan-slam"
+    },
+    {
+      "name": "Stomp",
+      "input": "d u",
+      "type": "normal",
+      "id": "stomp"
+    },
+    {
+      "name": "Krush",
+      "input": "d u + block",
+      "type": "normal",
+      "id": "krush"
+    },
+    {
+      "name": "In Front Stomp",
+      "input": "d u b",
+      "type": "normal",
+      "id": "in-front-stomp"
+    },
+    {
+      "name": "In Front Krush",
+      "input": "d u + block b",
+      "type": "normal",
+      "id": "in-front-krush"
+    },
+    {
+      "name": "Behind Stomp",
+      "input": "d u f",
+      "type": "normal",
+      "id": "behind-stomp"
+    },
+    {
+      "name": "Behind Krush",
+      "input": "d u + block f",
+      "type": "normal",
+      "id": "behind-krush"
+    },
+    {
+      "name": "Chest Lunge",
+      "input": "b f 2",
+      "type": "special",
+      "id": "chest-lunge"
+    },
+    {
+      "name": "Chest Charge",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "chest-charge"
+    },
+    {
+      "name": "Quake",
+      "input": "d d 4",
+      "type": "normal",
+      "id": "quake"
+    },
+    {
+      "name": "Tremor",
+      "input": "d d 4 + block",
+      "type": "normal",
+      "id": "tremor"
+    },
+    {
+      "name": "Shokan Stabs",
+      "input": "d b f 3",
+      "type": "special",
+      "id": "shokan-stabs"
+    },
+    {
+      "name": "Shokan Massacre",
+      "input": "d b f 3 + block",
+      "type": "special",
+      "id": "shokan-massacre"
+    },
+    {
+      "name": "Fang Spin",
+      "input": "d b 2",
+      "type": "special",
+      "id": "fang-spin"
+    },
+    {
+      "name": "Dragon Spin",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "dragon-spin"
+    },
+    {
+      "name": "Low Fang",
+      "input": "b f 2",
+      "type": "special",
+      "id": "low-fang"
+    },
+    {
+      "name": "Piercing Fang",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "piercing-fang"
+    },
+    {
+      "name": "Flame Ball",
+      "input": "b f 1",
+      "type": "special",
+      "id": "flame-ball"
+    },
+    {
+      "name": "Flame Chain",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "flame-chain"
+    },
+    {
+      "name": "Close Ground Fire",
+      "input": "d b 4",
+      "type": "special",
+      "id": "close-ground-fire"
+    },
+    {
+      "name": "Close Ground Scorch",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "close-ground-scorch"
+    },
+    {
+      "name": "Far Ground Fire",
+      "input": "d f 4",
+      "type": "special",
+      "id": "far-ground-fire"
+    },
+    {
+      "name": "Far Ground Scorch",
+      "input": "d f 4 + block",
+      "type": "special",
+      "id": "far-ground-scorch"
+    },
+    {
+      "name": "Dragon Breath",
+      "input": "b f 2",
+      "type": "special",
+      "id": "dragon-breath"
+    },
+    {
+      "name": "Dragon Torch",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "dragon-torch"
+    },
+    {
+      "name": "Spine Adjustment",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "spine-adjustment"
+    },
+    {
+      "name": "Peek-A-Boo (Close)",
+      "input": "b f d 4",
+      "type": "special",
+      "id": "peek-a-boo-close"
+    },
+    {
+      "name": "Shokan Amputation (Close)",
+      "input": "b d d u",
+      "type": "normal",
+      "id": "shokan-amputation-close"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "d d d d 1",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Speed Bag",
+      "input": "d b f 3",
+      "type": "special",
+      "id": "speed-bag"
+    },
+    {
+      "name": "Krush",
+      "input": "d u + block",
+      "type": "normal",
+      "id": "krush"
+    },
+    {
+      "name": "Chest Bump",
+      "input": "b f 2",
+      "type": "special",
+      "id": "chest-bump"
+    },
+    {
+      "name": "Tail Spin",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "tail-spin"
+    },
+    {
+      "name": "Shokan Flame",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "shokan-flame"
     }
   ]
 }

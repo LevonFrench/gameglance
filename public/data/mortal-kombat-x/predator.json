@@ -3,10 +3,664 @@
   "character": "Predator",
   "movesList": [
     {
-      "id": "basic-attack",
-      "name": "Basic Attack",
+      "name": "Klaw Swipe",
+      "input": "1",
       "type": "normal",
-      "input": "P"
+      "id": "klaw-swipe"
+    },
+    {
+      "name": "Low Lunge",
+      "input": "b 1",
+      "type": "normal",
+      "id": "low-lunge"
+    },
+    {
+      "name": "Fatal Backhand",
+      "input": "f 1",
+      "type": "normal",
+      "id": "fatal-backhand"
+    },
+    {
+      "name": "Crouching Klaw",
+      "input": "d 1",
+      "type": "normal",
+      "id": "crouching-klaw"
+    },
+    {
+      "name": "Gut Strike",
+      "input": "2",
+      "type": "normal",
+      "id": "gut-strike"
+    },
+    {
+      "name": "Combi Poke",
+      "input": "b 2",
+      "type": "normal",
+      "id": "combi-poke"
+    },
+    {
+      "name": "Hunter's Strike",
+      "input": "f 2",
+      "type": "normal",
+      "id": "hunters-strike"
+    },
+    {
+      "name": "Rising Scimitar",
+      "input": "d 2",
+      "type": "normal",
+      "id": "rising-scimitar"
+    },
+    {
+      "name": "Flat Foot",
+      "input": "3",
+      "type": "normal",
+      "id": "flat-foot"
+    },
+    {
+      "name": "Shin Splint",
+      "input": "b 3",
+      "type": "normal",
+      "id": "shin-splint"
+    },
+    {
+      "name": "Flick Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "flick-kick"
+    },
+    {
+      "name": "Spinning Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "spinning-kick"
+    },
+    {
+      "name": "Low Kutter",
+      "input": "b 4",
+      "type": "normal",
+      "id": "low-kutter"
+    },
+    {
+      "name": "Brutal Kick",
+      "input": "f 4",
+      "type": "normal",
+      "id": "brutal-kick"
+    },
+    {
+      "name": "Combi Strike",
+      "input": "d 4",
+      "type": "normal",
+      "id": "combi-strike"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Knock-Knock",
+      "input": "1 2",
+      "type": "string",
+      "id": "knock-knock"
+    },
+    {
+      "name": "Come On",
+      "input": "1 2 2",
+      "type": "string",
+      "id": "come-on"
+    },
+    {
+      "name": "Payback Time",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "payback-time"
+    },
+    {
+      "name": "I See You",
+      "input": "f 1 2",
+      "type": "string",
+      "id": "i-see-you"
+    },
+    {
+      "name": "CONTAAAAACT",
+      "input": "f 1 2 u 2",
+      "type": "string",
+      "id": "contaaaaact"
+    },
+    {
+      "name": "Meat Grinder",
+      "input": "f 1 2 d 2",
+      "type": "string",
+      "id": "meat-grinder"
+    },
+    {
+      "name": "Hunt Begins",
+      "input": "2 1",
+      "type": "string",
+      "id": "hunt-begins"
+    },
+    {
+      "name": "Pleasure Kill",
+      "input": "2 1 2",
+      "type": "string",
+      "id": "pleasure-kill"
+    },
+    {
+      "name": "Kill Me",
+      "input": "f 2 1",
+      "type": "string",
+      "id": "kill-me"
+    },
+    {
+      "name": "Bleed Bastard",
+      "input": "f 2 1 2",
+      "type": "string",
+      "id": "bleed-bastard"
+    },
+    {
+      "name": "You're One",
+      "input": "b 2 2",
+      "type": "string",
+      "id": "youre-one"
+    },
+    {
+      "name": "I'm Here",
+      "input": "b 2 2 d 2",
+      "type": "string",
+      "id": "im-here"
+    },
+    {
+      "name": "World Of Hurt",
+      "input": "3 2",
+      "type": "string",
+      "id": "world-of-hurt"
+    },
+    {
+      "name": "Ugly Mother...",
+      "input": "3 2 1 + 3",
+      "type": "string",
+      "id": "ugly-mother..."
+    },
+    {
+      "name": "Slack-jawed",
+      "input": "b 3 1",
+      "type": "string",
+      "id": "slack-jawed"
+    },
+    {
+      "name": "We. Hit. Nothing.",
+      "input": "b 3 1 1",
+      "type": "string",
+      "id": "we.-hit.-nothing."
+    },
+    {
+      "name": "Get To The Chopper",
+      "input": "b 3 d 2",
+      "type": "string",
+      "id": "get-to-the-chopper"
+    },
+    {
+      "name": "Stealth",
+      "input": "d d 1",
+      "type": "normal",
+      "id": "stealth"
+    },
+    {
+      "name": "Cloaking",
+      "input": "d d 1 + block",
+      "type": "normal",
+      "id": "cloaking"
+    },
+    {
+      "name": "Smart-Disc",
+      "input": "b f 2",
+      "type": "special",
+      "id": "smart-disc"
+    },
+    {
+      "name": "Dual Smart-Disc",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "dual-smart-disc"
+    },
+    {
+      "name": "Air Smart-Disc",
+      "input": "(air) b f 2",
+      "type": "special",
+      "id": "air-smart-disc"
+    },
+    {
+      "name": "Air Dual Smart-Disc",
+      "input": "(air) b f 2 + block",
+      "type": "special",
+      "id": "air-dual-smart-disc"
+    },
+    {
+      "name": "Scimitar Stab",
+      "input": "b f 4",
+      "type": "special",
+      "id": "scimitar-stab"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Scimitar Slam",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "scimitar-slam"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Away Scimitar Stab",
+      "input": "b f 4 b",
+      "type": "special",
+      "id": "away-scimitar-stab"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Away Scimitar Slam",
+      "input": "b f 4 + block b",
+      "type": "special",
+      "id": "away-scimitar-slam"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Yautja Strike",
+      "input": "d b 2",
+      "type": "special",
+      "id": "yautja-strike"
+    },
+    {
+      "name": "Yautja Pounce",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "yautja-pounce"
+    },
+    {
+      "name": "Close Yautja Strike",
+      "input": "d b 2 b",
+      "type": "special",
+      "id": "close-yautja-strike"
+    },
+    {
+      "name": "Close Yautja Pounce",
+      "input": "d b 2 + block b",
+      "type": "special",
+      "id": "close-yautja-pounce"
+    },
+    {
+      "name": "Far Yautja Strike",
+      "input": "d b 2 f",
+      "type": "special",
+      "id": "far-yautja-strike"
+    },
+    {
+      "name": "Far Yautja Pounce",
+      "input": "d b 2 + block f",
+      "type": "special",
+      "id": "far-yautja-pounce"
+    },
+    {
+      "name": "Air Yautja Strike",
+      "input": "(air) d b 2",
+      "type": "special",
+      "id": "air-yautja-strike"
+    },
+    {
+      "name": "Air Yautja Pounce",
+      "input": "(air) d b 2 + block",
+      "type": "special",
+      "id": "air-yautja-pounce"
+    },
+    {
+      "name": "Dread Slam",
+      "input": "b f 1",
+      "type": "special",
+      "id": "dread-slam"
+    },
+    {
+      "name": "Dread Launch",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "dread-launch"
+    },
+    {
+      "name": "Self-Detonate",
+      "input": "d b 4",
+      "type": "special",
+      "id": "self-detonate"
+    },
+    {
+      "name": "Self-Destruct",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "self-destruct"
+    },
+    {
+      "name": "Medi-Kit",
+      "input": "d d 3",
+      "type": "normal",
+      "id": "medi-kit"
+    },
+    {
+      "name": "Quick Healing",
+      "input": "d d 3 + block",
+      "type": "normal",
+      "id": "quick-healing"
+    },
+    {
+      "name": "Snag",
+      "input": "d b 4",
+      "type": "special",
+      "id": "snag"
+    },
+    {
+      "name": "Detonate",
+      "input": "d b 4",
+      "type": "special",
+      "id": "detonate"
+    },
+    {
+      "name": "Armored Explosion",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "armored-explosion"
+    },
+    {
+      "name": "Close Snag",
+      "input": "d b 4 b",
+      "type": "special",
+      "id": "close-snag"
+    },
+    {
+      "name": "Far Snag",
+      "input": "d b 4 f",
+      "type": "special",
+      "id": "far-snag"
+    },
+    {
+      "name": "Trap",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "trap"
+    },
+    {
+      "name": "Detonate",
+      "input": "d b 4",
+      "type": "special",
+      "id": "detonate"
+    },
+    {
+      "name": "Armored Explosion",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "armored-explosion"
+    },
+    {
+      "name": "Close Trap",
+      "input": "d b 4 + block b",
+      "type": "special",
+      "id": "close-trap"
+    },
+    {
+      "name": "Far Trap",
+      "input": "d b 4 + block f",
+      "type": "special",
+      "id": "far-trap"
+    },
+    {
+      "name": "Air Snag",
+      "input": "(air) d b 4",
+      "type": "special",
+      "id": "air-snag"
+    },
+    {
+      "name": "Air Close Snag",
+      "input": "(air) d b 4 b",
+      "type": "special",
+      "id": "air-close-snag"
+    },
+    {
+      "name": "Air Far Snag",
+      "input": "(air) d b 4 f",
+      "type": "special",
+      "id": "air-far-snag"
+    },
+    {
+      "name": "Air Trap",
+      "input": "(air) d b 4 + block",
+      "type": "special",
+      "id": "air-trap"
+    },
+    {
+      "name": "Air Close Trap",
+      "input": "(air) d b 4 + block b",
+      "type": "special",
+      "id": "air-close-trap"
+    },
+    {
+      "name": "Air Far Trap",
+      "input": "(air) d b 4 + block f",
+      "type": "special",
+      "id": "air-far-trap"
+    },
+    {
+      "name": "Plasma Shot",
+      "input": "b f 3",
+      "type": "special",
+      "id": "plasma-shot"
+    },
+    {
+      "name": "Plasma Barrage",
+      "input": "b f 3 + block",
+      "type": "special",
+      "id": "plasma-barrage"
+    },
+    {
+      "name": "Up Plasma Shot",
+      "input": "d f 3",
+      "type": "special",
+      "id": "up-plasma-shot"
+    },
+    {
+      "name": "Up Plasma Barrage",
+      "input": "d f 3 + block",
+      "type": "special",
+      "id": "up-plasma-barrage"
+    },
+    {
+      "name": "Ground Plasma Shot",
+      "input": "d b 3",
+      "type": "special",
+      "id": "ground-plasma-shot"
+    },
+    {
+      "name": "Ground Plasma Barrage",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "ground-plasma-barrage"
+    },
+    {
+      "name": "Close Ground Plasma Shot",
+      "input": "d b 3 b",
+      "type": "special",
+      "id": "close-ground-plasma-shot"
+    },
+    {
+      "name": "Far Ground Plasma Shot",
+      "input": "d b 3 f",
+      "type": "special",
+      "id": "far-ground-plasma-shot"
+    },
+    {
+      "name": "Plasma Caster",
+      "input": "b f 3 hold 3",
+      "type": "string",
+      "id": "plasma-caster"
+    },
+    {
+      "name": "Up Plasma Caster",
+      "input": "hold 3 + u",
+      "type": "normal",
+      "id": "up-plasma-caster"
+    },
+    {
+      "name": "Down Plasma Caster",
+      "input": "hold 3 + d",
+      "type": "normal",
+      "id": "down-plasma-caster"
+    },
+    {
+      "name": "Straight Plasma Caster",
+      "input": "holde 3 + f",
+      "type": "normal",
+      "id": "straight-plasma-caster"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "What The Hell",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "what-the-hell"
+    },
+    {
+      "name": "Ghostin' Us (Close)",
+      "input": "d d b f 1",
+      "type": "special",
+      "id": "ghostin-us-close"
+    },
+    {
+      "name": "Certain Death",
+      "input": "d f b u",
+      "type": "normal",
+      "id": "certain-death"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "f d b u",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Anytime",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "anytime"
+    },
+    {
+      "name": "Time To Bleed",
+      "input": "throw or 1 + 3",
+      "type": "string",
+      "id": "time-to-bleed"
+    },
+    {
+      "name": "Final Kountdown",
+      "input": "d b 4",
+      "type": "special",
+      "id": "final-kountdown"
+    },
+    {
+      "name": "Skinned Alive",
+      "input": "d b 4",
+      "type": "special",
+      "id": "skinned-alive"
+    },
+    {
+      "name": "If It Bleeds",
+      "input": "b f 3",
+      "type": "special",
+      "id": "if-it-bleeds"
+    },
+    {
+      "name": "Hidden Brutality",
+      "input": "3 2 1 + 3",
+      "type": "string",
+      "id": "hidden-brutality"
     }
   ]
 }

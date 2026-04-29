@@ -4,40 +4,634 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Quick Strike",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "quick-strike"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Double Slap",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "double-slap"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Low Punch",
+      "input": "d 1",
       "type": "normal",
-      "input": "3"
+      "id": "low-punch"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "High Chop",
+      "input": "2",
       "type": "normal",
-      "input": "4"
+      "id": "high-chop"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Double Palm Strike",
+      "input": "b 2",
+      "type": "normal",
+      "id": "double-palm-strike"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Leaping Sword",
+      "input": "b 2",
+      "type": "normal",
+      "id": "leaping-sword"
+    },
+    {
+      "name": "Face Slap",
+      "input": "f 2",
+      "type": "normal",
+      "id": "face-slap"
+    },
+    {
+      "name": "Head Splitter",
+      "input": "f 2",
+      "type": "normal",
+      "id": "head-splitter"
+    },
+    {
+      "name": "Rising Fist",
+      "input": "d 2",
+      "type": "normal",
+      "id": "rising-fist"
+    },
+    {
+      "name": "Side Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "side-kick"
+    },
+    {
+      "name": "Shin Kick",
+      "input": "b 3",
+      "type": "normal",
+      "id": "shin-kick"
+    },
+    {
+      "name": "High Boot",
+      "input": "f 3",
+      "type": "normal",
+      "id": "high-boot"
+    },
+    {
+      "name": "Straight Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "straight-kick"
+    },
+    {
+      "name": "Snap Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "snap-kick"
+    },
+    {
+      "name": "Light Sweep",
+      "input": "b 4",
+      "type": "normal",
+      "id": "light-sweep"
+    },
+    {
+      "name": "Roundhouse",
+      "input": "f 4",
+      "type": "normal",
+      "id": "roundhouse"
+    },
+    {
+      "name": "Spinning Hell",
+      "input": "f 4",
+      "type": "normal",
+      "id": "spinning-hell"
+    },
+    {
+      "name": "Stun Strike",
+      "input": "d 4",
+      "type": "normal",
+      "id": "stun-strike"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Telekinetic Rush",
+      "input": "1 1",
+      "type": "string",
+      "id": "telekinetic-rush"
+    },
+    {
+      "name": "Sword Kiss",
+      "input": "1 1",
+      "type": "string",
+      "id": "sword-kiss"
+    },
+    {
+      "name": "Blind Justice",
+      "input": "1 1 1",
+      "type": "string",
+      "id": "blind-justice"
+    },
+    {
+      "name": "Inner Strength",
+      "input": "1 1 1",
+      "type": "string",
+      "id": "inner-strength"
+    },
+    {
+      "name": "Off Balance",
+      "input": "1 1 4",
+      "type": "string",
+      "id": "off-balance"
+    },
+    {
+      "name": "Blind Sided",
+      "input": "2 1",
+      "type": "string",
+      "id": "blind-sided"
+    },
+    {
+      "name": "Stolen Soul",
+      "input": "2 1 1",
+      "type": "string",
+      "id": "stolen-soul"
+    },
+    {
+      "name": "Absentminded",
+      "input": "2 1 1 2 + 4",
+      "type": "string",
+      "id": "absentminded"
+    },
+    {
+      "name": "Shortsighted",
+      "input": "2 1 2",
+      "type": "string",
+      "id": "shortsighted"
+    },
+    {
+      "name": "Brainpower",
+      "input": "2 2",
+      "type": "string",
+      "id": "brainpower"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Concentration",
+      "input": "2 2 4",
+      "type": "string",
+      "id": "concentration"
+    },
+    {
+      "name": "Quick Slice",
+      "input": "3 1",
+      "type": "string",
+      "id": "quick-slice"
+    },
+    {
+      "name": "Spinning Slash",
+      "input": "3 1 1",
+      "type": "string",
+      "id": "spinning-slash"
+    },
+    {
+      "name": "Downward Kut",
+      "input": "3 2 2",
+      "type": "string",
+      "id": "downward-kut"
+    },
+    {
+      "name": "Upward Slice",
+      "input": "3 2",
+      "type": "string",
+      "id": "upward-slice"
+    },
+    {
+      "name": "Spinning Sin",
+      "input": "b 3 2",
+      "type": "string",
+      "id": "spinning-sin"
+    },
+    {
+      "name": "Soul Blade",
+      "input": "f 3 2",
+      "type": "string",
+      "id": "soul-blade"
+    },
+    {
+      "name": "Scatterbrained",
+      "input": "4 2",
+      "type": "string",
+      "id": "scatterbrained"
+    },
+    {
+      "name": "Split Ends",
+      "input": "4 2 1",
+      "type": "string",
+      "id": "split-ends"
+    },
+    {
+      "name": "Deep Connection",
+      "input": "4 2 1 f 2",
+      "type": "string",
+      "id": "deep-connection"
+    },
+    {
+      "name": "Forgotten Warrior",
+      "input": "4 4",
+      "type": "string",
+      "id": "forgotten-warrior"
+    },
+    {
+      "name": "Heighten Senses",
+      "input": "4 d 4",
+      "type": "string",
+      "id": "heighten-senses"
+    },
+    {
+      "name": "See No Evil",
+      "input": "4 4 1",
+      "type": "string",
+      "id": "see-no-evil"
+    },
+    {
+      "name": "Inner Darkness",
+      "input": "4 4 1 2",
+      "type": "string",
+      "id": "inner-darkness"
+    },
+    {
+      "name": "Foresight",
+      "input": "4 3",
+      "type": "string",
+      "id": "foresight"
+    },
+    {
+      "name": "Spirit Push",
+      "input": "b f 2",
+      "type": "special",
+      "id": "spirit-push"
+    },
+    {
+      "name": "Spirit Charge",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "spirit-charge"
+    },
+    {
+      "name": "Telekinetic Slice",
+      "input": "d b 4",
+      "type": "special",
+      "id": "telekinetic-slice"
+    },
+    {
+      "name": "Telekinetic Slash",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "telekinetic-slash"
+    },
+    {
+      "name": "Close Telekinetic Slice",
+      "input": "d b 4 b",
+      "type": "special",
+      "id": "close-telekinetic-slice"
+    },
+    {
+      "name": "Close Telekinetic Slash",
+      "input": "d b 4 + block b",
+      "type": "special",
+      "id": "close-telekinetic-slash"
+    },
+    {
+      "name": "Far Telekinetic Slice",
+      "input": "d b 4 f",
+      "type": "special",
+      "id": "far-telekinetic-slice"
+    },
+    {
+      "name": "Far Telekinetic Slash",
+      "input": "d b 4 + block f",
+      "type": "special",
+      "id": "far-telekinetic-slash"
+    },
+    {
+      "name": "Tele-Flurry",
+      "input": "b f 3",
+      "type": "special",
+      "id": "tele-flurry"
+    },
+    {
+      "name": "Tele-Beatdown",
+      "input": "b f 3 + block",
+      "type": "special",
+      "id": "tele-beatdown"
+    },
+    {
+      "name": "Rising Karma",
+      "input": "d b 1",
+      "type": "special",
+      "id": "rising-karma"
+    },
+    {
+      "name": "Karma Eruption",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "karma-eruption"
+    },
+    {
+      "name": "Sickle Lift",
+      "input": "d b 1",
+      "type": "special",
+      "id": "sickle-lift"
+    },
+    {
+      "name": "Sickle Strike",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "sickle-strike"
+    },
+    {
+      "name": "Demon Assault",
+      "input": "b f 3",
+      "type": "special",
+      "id": "demon-assault"
+    },
+    {
+      "name": "Demon Fury",
+      "input": "b f 3 + block",
+      "type": "special",
+      "id": "demon-fury"
+    },
+    {
+      "name": "Soul Push",
+      "input": "b f 2",
+      "type": "special",
+      "id": "soul-push"
+    },
+    {
+      "name": "Soul Charge",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "soul-charge"
+    },
+    {
+      "name": "Demon Slam",
+      "input": "d b 4",
+      "type": "special",
+      "id": "demon-slam"
+    },
+    {
+      "name": "Demon Drop",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "demon-drop"
+    },
+    {
+      "name": "Close Demon Slam",
+      "input": "d b 4 b",
+      "type": "special",
+      "id": "close-demon-slam"
+    },
+    {
+      "name": "Close Demon Drop",
+      "input": "d b 4 + block b",
+      "type": "special",
+      "id": "close-demon-drop"
+    },
+    {
+      "name": "Far Demon Slam",
+      "input": "d b 4 f",
+      "type": "special",
+      "id": "far-demon-slam"
+    },
+    {
+      "name": "Far Demon Drop",
+      "input": "d b 4 + block f",
+      "type": "special",
+      "id": "far-demon-drop"
+    },
+    {
+      "name": "Blade Reflect",
+      "input": "d b 2",
+      "type": "special",
+      "id": "blade-reflect"
+    },
+    {
+      "name": "Blade Absorb",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "blade-absorb"
+    },
+    {
+      "name": "Demon Beam",
+      "input": "d b 2",
+      "type": "special",
+      "id": "demon-beam"
+    },
+    {
+      "name": "Demon Port",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "demon-port"
+    },
+    {
+      "name": "Demonic Strike",
+      "input": "d f 4",
+      "type": "special",
+      "id": "demonic-strike"
+    },
+    {
+      "name": "Demonic Slice",
+      "input": "d f 4 + block",
+      "type": "special",
+      "id": "demonic-slice"
+    },
+    {
+      "name": "Rising Sword",
+      "input": "d b 1",
+      "type": "special",
+      "id": "rising-sword"
+    },
+    {
+      "name": "Sword Dance",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "sword-dance"
+    },
+    {
+      "name": "Spinning Blade",
+      "input": "d f 1",
+      "type": "special",
+      "id": "spinning-blade"
+    },
+    {
+      "name": "Blade-Nado",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "blade-nado"
+    },
+    {
+      "name": "Tele-Slam",
+      "input": "d b 4",
+      "type": "special",
+      "id": "tele-slam"
+    },
+    {
+      "name": "Tele-Suspend",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "tele-suspend"
+    },
+    {
+      "name": "Tele-Push",
+      "input": "b f 2",
+      "type": "special",
+      "id": "tele-push"
+    },
+    {
+      "name": "Tele-Blast",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "tele-blast"
+    },
+    {
+      "name": "Tele-Toss",
+      "input": "b f 3",
+      "type": "special",
+      "id": "tele-toss"
+    },
+    {
+      "name": "Tele-Strike",
+      "input": "b f 3 + block",
+      "type": "special",
+      "id": "tele-strike"
+    },
+    {
+      "name": "Way Of The Blade",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "way-of-the-blade"
+    },
+    {
+      "name": "Tele-Copter (Far)",
+      "input": "b f b b",
+      "type": "normal",
+      "id": "tele-copter-far"
+    },
+    {
+      "name": "My Puppet (Far)",
+      "input": "f d b u",
+      "type": "normal",
+      "id": "my-puppet-far"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "d f d 3",
+      "type": "special",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Used Up",
+      "input": "throw or 1 + 3",
+      "type": "string",
+      "id": "used-up"
+    },
+    {
+      "name": "Brutal Kick",
+      "input": "2 2 4",
+      "type": "string",
+      "id": "brutal-kick"
+    },
+    {
+      "name": "Leg Up",
+      "input": "b f 3",
+      "type": "special",
+      "id": "leg-up"
+    },
+    {
+      "name": "Demon Slice",
+      "input": "d b 1",
+      "type": "special",
+      "id": "demon-slice"
+    },
+    {
+      "name": "Instant Karma",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "instant-karma"
+    },
+    {
+      "name": "Hidden Brutality",
+      "input": "d b 2",
+      "type": "special",
+      "id": "hidden-brutality"
     }
   ]
 }

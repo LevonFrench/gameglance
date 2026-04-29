@@ -4,40 +4,682 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Strong Fist",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "strong-fist"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Dragon Fist",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "dragon-fist"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Quick Strike",
+      "input": "f 1",
       "type": "normal",
-      "input": "3"
+      "id": "quick-strike"
     },
     {
-      "id": "n_3",
+      "name": "Straight Jab",
+      "input": "d 1",
+      "type": "normal",
+      "id": "straight-jab"
+    },
+    {
+      "name": "Death Strike",
+      "input": "2",
+      "type": "normal",
+      "id": "death-strike"
+    },
+    {
+      "name": "Tiger Backfist",
+      "input": "b 2",
+      "type": "normal",
+      "id": "tiger-backfist"
+    },
+    {
+      "name": "Dragon Hook",
+      "input": "f 2",
+      "type": "normal",
+      "id": "dragon-hook"
+    },
+    {
+      "name": "Rising Flower",
+      "input": "d 2",
+      "type": "normal",
+      "id": "rising-flower"
+    },
+    {
+      "name": "Snap Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "snap-kick"
+    },
+    {
       "name": "Back Kick",
+      "input": "b 3",
       "type": "normal",
-      "input": "4"
+      "id": "back-kick"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Low Tap",
+      "input": "f 3",
+      "type": "normal",
+      "id": "low-tap"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Ankle Snap",
+      "input": "d 3",
+      "type": "normal",
+      "id": "ankle-snap"
+    },
+    {
+      "name": "Lotus Strike",
+      "input": "4",
+      "type": "normal",
+      "id": "lotus-strike"
+    },
+    {
+      "name": "Shaolin Heel",
+      "input": "b 4",
+      "type": "normal",
+      "id": "shaolin-heel"
+    },
+    {
+      "name": "Hammer Kicks",
+      "input": "f 4",
+      "type": "normal",
+      "id": "hammer-kicks"
+    },
+    {
+      "name": "Quick Spin",
+      "input": "d 4",
+      "type": "normal",
+      "id": "quick-spin"
+    },
+    {
+      "name": "Rising Dragon",
+      "input": "u 4",
+      "type": "normal",
+      "id": "rising-dragon"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Hidden Lotus",
+      "input": "1 1",
+      "type": "string",
+      "id": "hidden-lotus"
+    },
+    {
+      "name": "Tiger Strike",
+      "input": "1 1 1",
+      "type": "string",
+      "id": "tiger-strike"
+    },
+    {
+      "name": "Snapping Dragon",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "snapping-dragon"
+    },
+    {
+      "name": "Dragon Seeks Path",
+      "input": "1 1 3",
+      "type": "string",
+      "id": "dragon-seeks-path"
+    },
+    {
+      "name": "Dragon Dance",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "dragon-dance"
+    },
+    {
+      "name": "Dragon Whips Tail",
+      "input": "b 1 2 4",
+      "type": "string",
+      "id": "dragon-whips-tail"
+    },
+    {
+      "name": "Harm-Onious",
+      "input": "f 1 2",
+      "type": "string",
+      "id": "harm-onious"
+    },
+    {
+      "name": "Twin Lotus",
+      "input": "f 1 2 3",
+      "type": "string",
+      "id": "twin-lotus"
+    },
+    {
+      "name": "Shaolin Spirit",
+      "input": "2 2",
+      "type": "string",
+      "id": "shaolin-spirit"
+    },
+    {
+      "name": "Back Down",
+      "input": "2 b 2",
+      "type": "string",
+      "id": "back-down"
+    },
+    {
+      "name": "Pouncing Tiger",
+      "input": "f 2 1",
+      "type": "string",
+      "id": "pouncing-tiger"
+    },
+    {
+      "name": "Blazing Dragon",
+      "input": "f 2 1 3",
+      "type": "string",
+      "id": "blazing-dragon"
+    },
+    {
+      "name": "Tiger Stalks Pray",
+      "input": "f 2 1 u 4",
+      "type": "string",
+      "id": "tiger-stalks-pray"
+    },
+    {
+      "name": "Primary Lotus",
+      "input": "b 3 3",
+      "type": "string",
+      "id": "primary-lotus"
+    },
+    {
+      "name": "Dragon's Fire",
+      "input": "b 3 4",
+      "type": "string",
+      "id": "dragons-fire"
+    },
+    {
+      "name": "Lotus Fury",
+      "input": "b 3 4 2",
+      "type": "string",
+      "id": "lotus-fury"
+    },
+    {
+      "name": "Final Roar",
+      "input": "4 4",
+      "type": "string",
+      "id": "final-roar"
+    },
+    {
+      "name": "Fierce Tiger",
+      "input": "4 4 2",
+      "type": "string",
+      "id": "fierce-tiger"
+    },
+    {
+      "name": "Showdown",
+      "input": "f 4 4",
+      "type": "string",
+      "id": "showdown"
+    },
+    {
+      "name": "Launching Fury",
+      "input": "f 4 4 3",
+      "type": "string",
+      "id": "launching-fury"
+    },
+    {
+      "name": "Immortal Dragon",
+      "input": "f 4 4 4",
+      "type": "string",
+      "id": "immortal-dragon"
+    },
+    {
+      "name": "Fireball",
+      "input": "b f 1",
+      "type": "special",
+      "id": "fireball"
+    },
+    {
+      "name": "Fire Wave",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "fire-wave"
+    },
+    {
+      "name": "Low Fireball",
+      "input": "b f 3",
+      "type": "special",
+      "id": "low-fireball"
+    },
+    {
+      "name": "Air Fireball",
+      "input": "(air) b f 1",
+      "type": "special",
+      "id": "air-fireball"
+    },
+    {
+      "name": "Flying Dragon Kick",
+      "input": "b f 2",
+      "type": "special",
+      "id": "flying-dragon-kick"
+    },
+    {
+      "name": "Flying Dragon Strike",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "flying-dragon-strike"
+    },
+    {
+      "name": "Dragon's Roar",
+      "input": "d b 2",
+      "type": "special",
+      "id": "dragons-roar"
+    },
+    {
+      "name": "Dragon's Wrath",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "dragons-wrath"
+    },
+    {
+      "name": "Windmill Punch",
+      "input": "f b f 4",
+      "type": "special",
+      "id": "windmill-punch"
+    },
+    {
+      "name": "Windmill Flurry",
+      "input": "f b f 4 + block",
+      "type": "special",
+      "id": "windmill-flurry"
+    },
+    {
+      "name": "Shaolin Flame",
+      "input": "d d 1",
+      "type": "normal",
+      "id": "shaolin-flame"
+    },
+    {
+      "name": "Shaolin-ferno",
+      "input": "d d 1 + block",
+      "type": "normal",
+      "id": "shaolin-ferno"
+    },
+    {
+      "name": "Dragon Parry",
+      "input": "d b 3",
+      "type": "special",
+      "id": "dragon-parry"
+    },
+    {
+      "name": "Smash",
+      "input": "block",
+      "type": "normal",
+      "id": "smash"
+    },
+    {
+      "name": "Bicycle Kick",
+      "input": "f b f 4",
+      "type": "special",
+      "id": "bicycle-kick"
+    },
+    {
+      "name": "Flip Kick",
+      "input": "block",
+      "type": "normal",
+      "id": "flip-kick"
+    },
+    {
+      "name": "Bicycle Flurry",
+      "input": "f b f 4 + block",
+      "type": "special",
+      "id": "bicycle-flurry"
+    },
+    {
+      "name": "Flip Kick",
+      "input": "block",
+      "type": "normal",
+      "id": "flip-kick"
+    },
+    {
+      "name": "Dragon Fire",
+      "input": "b f 1",
+      "type": "special",
+      "id": "dragon-fire"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Double Dragon",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "double-dragon"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Low Dragon Fire",
+      "input": "b f 3",
+      "type": "special",
+      "id": "low-dragon-fire"
+    },
+    {
+      "name": "Air Dragon Fire",
+      "input": "(air) b f 1",
+      "type": "special",
+      "id": "air-dragon-fire"
+    },
+    {
+      "name": "Air Double Dragon",
+      "input": "(air) b f 1 + block",
+      "type": "special",
+      "id": "air-double-dragon"
+    },
+    {
+      "name": "Double Dragon Kick",
+      "input": "b f 2",
+      "type": "special",
+      "id": "double-dragon-kick"
+    },
+    {
+      "name": "Bicycle Kick",
+      "input": "block",
+      "type": "normal",
+      "id": "bicycle-kick"
+    },
+    {
+      "name": "Flip Kick",
+      "input": "block",
+      "type": "normal",
+      "id": "flip-kick"
+    },
+    {
+      "name": "Double Dragon Strike",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "double-dragon-strike"
+    },
+    {
+      "name": "Bicycle Kick",
+      "input": "block",
+      "type": "normal",
+      "id": "bicycle-kick"
+    },
+    {
+      "name": "Flip Kick",
+      "input": "block",
+      "type": "normal",
+      "id": "flip-kick"
+    },
+    {
+      "name": "Bicycle Kick",
+      "input": "f b f 4",
+      "type": "special",
+      "id": "bicycle-kick"
+    },
+    {
+      "name": "Bicycle Flurry",
+      "input": "f b f 4 + block",
+      "type": "special",
+      "id": "bicycle-flurry"
+    },
+    {
+      "name": "Light Metamorphosis",
+      "input": "d d 1",
+      "type": "normal",
+      "id": "light-metamorphosis"
+    },
+    {
+      "name": "Solar Flare",
+      "input": "b f 1",
+      "type": "special",
+      "id": "solar-flare"
+    },
+    {
+      "name": "Solar Blast",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "solar-blast"
+    },
+    {
+      "name": "Low Solar Flare",
+      "input": "b f 3",
+      "type": "special",
+      "id": "low-solar-flare"
+    },
+    {
+      "name": "Air Solar Flare",
+      "input": "(air) b f 1",
+      "type": "special",
+      "id": "air-solar-flare"
+    },
+    {
+      "name": "Yin",
+      "input": "d b 3",
+      "type": "special",
+      "id": "yin"
+    },
+    {
+      "name": "Charge",
+      "input": "hold 3",
+      "type": "normal",
+      "id": "charge"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Dark Metamorphosis",
+      "input": "d d 1",
+      "type": "normal",
+      "id": "dark-metamorphosis"
+    },
+    {
+      "name": "Soul Sphere",
+      "input": "b f 1",
+      "type": "special",
+      "id": "soul-sphere"
+    },
+    {
+      "name": "Stop Sphere",
+      "input": "d b 1",
+      "type": "special",
+      "id": "stop-sphere"
+    },
+    {
+      "name": "Dark Sphere",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "dark-sphere"
+    },
+    {
+      "name": "Stop Sphere",
+      "input": "d b 1",
+      "type": "special",
+      "id": "stop-sphere"
+    },
+    {
+      "name": "Low Soul Sphere",
+      "input": "b f 3",
+      "type": "special",
+      "id": "low-soul-sphere"
+    },
+    {
+      "name": "Stop Sphere",
+      "input": "d b 1",
+      "type": "special",
+      "id": "stop-sphere"
+    },
+    {
+      "name": "Air Soul Sphere",
+      "input": "(air) b f 1",
+      "type": "special",
+      "id": "air-soul-sphere"
+    },
+    {
+      "name": "Stop Sphere",
+      "input": "d b 1",
+      "type": "special",
+      "id": "stop-sphere"
+    },
+    {
+      "name": "Yang",
+      "input": "d b 3",
+      "type": "special",
+      "id": "yang"
+    },
+    {
+      "name": "Charge",
+      "input": "hold 3",
+      "type": "normal",
+      "id": "charge"
+    },
+    {
+      "name": "For The Shaolin",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "for-the-shaolin"
+    },
+    {
+      "name": "Sore Throat (Close)",
+      "input": "d d b f f",
+      "type": "normal",
+      "id": "sore-throat-close"
+    },
+    {
+      "name": "Splitter (Close)",
+      "input": "b f d u",
+      "type": "normal",
+      "id": "splitter-close"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "d f b 3",
+      "type": "special",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Hot Head",
+      "input": "(air) b f 1",
+      "type": "special",
+      "id": "hot-head"
+    },
+    {
+      "name": "Dragon's Den",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "dragons-den"
+    },
+    {
+      "name": "Kounter Top",
+      "input": "d b 3 block",
+      "type": "special",
+      "id": "kounter-top"
+    },
+    {
+      "name": "Tread Lightly",
+      "input": "f b f 4 block",
+      "type": "special",
+      "id": "tread-lightly"
+    },
+    {
+      "name": "Hot Mess",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "hot-mess"
     }
   ]
 }

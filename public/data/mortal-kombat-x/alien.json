@@ -4,40 +4,694 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Straight Klaw",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "straight-klaw"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Tongue Snap",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "tongue-snap"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Khomp",
+      "input": "f 1",
       "type": "normal",
-      "input": "3"
+      "id": "khomp"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Low Bite",
+      "input": "d 1",
       "type": "normal",
-      "input": "4"
+      "id": "low-bite"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Quick Strike",
+      "input": "2",
+      "type": "normal",
+      "id": "quick-strike"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Cross Swipe",
+      "input": "2",
+      "type": "normal",
+      "id": "cross-swipe"
+    },
+    {
+      "name": "Xeno Krush",
+      "input": "b 2",
+      "type": "normal",
+      "id": "xeno-krush"
+    },
+    {
+      "name": "Blade Krush",
+      "input": "b 2",
+      "type": "normal",
+      "id": "blade-krush"
+    },
+    {
+      "name": "Quick Scratch",
+      "input": "f 2",
+      "type": "normal",
+      "id": "quick-scratch"
+    },
+    {
+      "name": "Prime Smash",
+      "input": "d 2",
+      "type": "normal",
+      "id": "prime-smash"
+    },
+    {
+      "name": "High Sting",
+      "input": "3",
+      "type": "normal",
+      "id": "high-sting"
+    },
+    {
+      "name": "Low Kut",
+      "input": "b 3",
+      "type": "normal",
+      "id": "low-kut"
+    },
+    {
+      "name": "Tail Slap",
+      "input": "f 3",
+      "type": "normal",
+      "id": "tail-slap"
+    },
+    {
+      "name": "Side Swipe",
+      "input": "d 3",
+      "type": "normal",
+      "id": "side-swipe"
+    },
+    {
+      "name": "Bladed Sting",
+      "input": "u 3",
+      "type": "normal",
+      "id": "bladed-sting"
+    },
+    {
+      "name": "Sizzle Strike",
+      "input": "u 3",
+      "type": "normal",
+      "id": "sizzle-strike"
+    },
+    {
+      "name": "Tail Strike",
+      "input": "4",
+      "type": "normal",
+      "id": "tail-strike"
+    },
+    {
+      "name": "Tail Sweep",
+      "input": "b 4",
+      "type": "normal",
+      "id": "tail-sweep"
+    },
+    {
+      "name": "Skull Slam",
+      "input": "f 3",
+      "type": "normal",
+      "id": "skull-slam"
+    },
+    {
+      "name": "Quick Sting",
+      "input": "d 4",
+      "type": "normal",
+      "id": "quick-sting"
+    },
+    {
+      "name": "Corrosive Sting",
+      "input": "d 4",
+      "type": "normal",
+      "id": "corrosive-sting"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Ambush",
+      "input": "1 1",
+      "type": "string",
+      "id": "ambush"
+    },
+    {
+      "name": "Overpowered",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "overpowered"
+    },
+    {
+      "name": "Mutilating Humans",
+      "input": "1 2",
+      "type": "string",
+      "id": "mutilating-humans"
+    },
+    {
+      "name": "Silent Stalker",
+      "input": "1 2 3",
+      "type": "string",
+      "id": "silent-stalker"
+    },
+    {
+      "name": "Here Kitty, Kitty",
+      "input": "b 1 1",
+      "type": "string",
+      "id": "here-kitty-kitty"
+    },
+    {
+      "name": "Lucky Star",
+      "input": "b 1 1 3",
+      "type": "string",
+      "id": "lucky-star"
+    },
+    {
+      "name": "Narcissus",
+      "input": "b 1 1 u 4",
+      "type": "string",
+      "id": "narcissus"
+    },
+    {
+      "name": "Bug Hunt",
+      "input": "f 1 3",
+      "type": "string",
+      "id": "bug-hunt"
+    },
+    {
+      "name": "Zeta II",
+      "input": "f 1 3 4",
+      "type": "string",
+      "id": "zeta-ii"
+    },
+    {
+      "name": "Special Orders",
+      "input": "2 1",
+      "type": "string",
+      "id": "special-orders"
+    },
+    {
+      "name": "Deadly Splinters",
+      "input": "2 1",
+      "type": "string",
+      "id": "deadly-splinters"
+    },
+    {
+      "name": "Kane's Son",
+      "input": "2 1 4",
+      "type": "string",
+      "id": "kanes-son"
+    },
+    {
+      "name": "Warning Beacon",
+      "input": "f 2 3",
+      "type": "string",
+      "id": "warning-beacon"
+    },
+    {
+      "name": "S.O.S",
+      "input": "f 2 3 4 3 4",
+      "type": "string",
+      "id": "s.o.s"
+    },
+    {
+      "name": "Break Quarantine",
+      "input": "3 3",
+      "type": "string",
+      "id": "break-quarantine"
+    },
+    {
+      "name": "Hyperspeed",
+      "input": "3 3 3",
+      "type": "string",
+      "id": "hyperspeed"
+    },
+    {
+      "name": "Doomed",
+      "input": "b 3 4",
+      "type": "string",
+      "id": "doomed"
+    },
+    {
+      "name": "Embryo Implant",
+      "input": "f 3 4",
+      "type": "string",
+      "id": "embryo-implant"
+    },
+    {
+      "name": "Tail Flip",
+      "input": "b f 4",
+      "type": "special",
+      "id": "tail-flip"
+    },
+    {
+      "name": "Tail Slam",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "tail-slam"
+    },
+    {
+      "name": "Air Tail Flip",
+      "input": "(air) b f 4",
+      "type": "special",
+      "id": "air-tail-flip"
+    },
+    {
+      "name": "Air Tail Slam",
+      "input": "(air) b f 4 + block",
+      "type": "special",
+      "id": "air-tail-slam"
+    },
+    {
+      "name": "Xeno Strike",
+      "input": "d f 3",
+      "type": "special",
+      "id": "xeno-strike"
+    },
+    {
+      "name": "Xeno Pounce",
+      "input": "d f 3 + block",
+      "type": "special",
+      "id": "xeno-pounce"
+    },
+    {
+      "name": "Tail Snag",
+      "input": "d b 3",
+      "type": "special",
+      "id": "tail-snag"
+    },
+    {
+      "name": "Tail Grab",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "tail-grab"
+    },
+    {
+      "name": "Low Krawl",
+      "input": "b f 1",
+      "type": "special",
+      "id": "low-krawl"
+    },
+    {
+      "name": "Quick Dash",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "quick-dash"
+    },
+    {
+      "name": "Chop Chop",
+      "input": "d b 1",
+      "type": "special",
+      "id": "chop-chop"
+    },
+    {
+      "name": "Chop Chop Shop",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "chop-chop-shop"
+    },
+    {
+      "name": "Away Chop Chop Shop",
+      "input": "d b 1 + block b",
+      "type": "special",
+      "id": "away-chop-chop-shop"
+    },
+    {
+      "name": "Blade Spin",
+      "input": "d b 2",
+      "type": "special",
+      "id": "blade-spin"
+    },
+    {
+      "name": "Spinner",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "spinner"
+    },
+    {
+      "name": "Exo Sting",
+      "input": "d b 2",
+      "type": "special",
+      "id": "exo-sting"
+    },
+    {
+      "name": "Exo Splash",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "exo-splash"
+    },
+    {
+      "name": "Close Exo Sting",
+      "input": "d b 2 b",
+      "type": "special",
+      "id": "close-exo-sting"
+    },
+    {
+      "name": "Far Exo Sting",
+      "input": "d b 2 f",
+      "type": "special",
+      "id": "far-exo-sting"
+    },
+    {
+      "name": "Air Exo Sting",
+      "input": "(air) d b 2",
+      "type": "special",
+      "id": "air-exo-sting"
+    },
+    {
+      "name": "Air Exo Splash",
+      "input": "(air) d b 2 + block",
+      "type": "special",
+      "id": "air-exo-splash"
+    },
+    {
+      "name": "Acid Blood",
+      "input": "d b 4",
+      "type": "special",
+      "id": "acid-blood"
+    },
+    {
+      "name": "Erosive Blood",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "erosive-blood"
+    },
+    {
+      "name": "Ovomorph",
+      "input": "d b 1",
+      "type": "special",
+      "id": "ovomorph"
+    },
+    {
+      "name": "Facehugger",
+      "input": "d b 1",
+      "type": "special",
+      "id": "facehugger"
+    },
+    {
+      "name": "Advanced Ovomorph",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "advanced-ovomorph"
+    },
+    {
+      "name": "Facehugger",
+      "input": "d b 1",
+      "type": "special",
+      "id": "facehugger"
+    },
+    {
+      "name": "Close Ovomorph",
+      "input": "d b 1 b",
+      "type": "special",
+      "id": "close-ovomorph"
+    },
+    {
+      "name": "Facehugger",
+      "input": "d b 1",
+      "type": "special",
+      "id": "facehugger"
+    },
+    {
+      "name": "Close Advanced Ovomorph",
+      "input": "d b 1 + block b",
+      "type": "special",
+      "id": "close-advanced-ovomorph"
+    },
+    {
+      "name": "Facehugger",
+      "input": "d b 1",
+      "type": "special",
+      "id": "facehugger"
+    },
+    {
+      "name": "Far Ovomorph",
+      "input": "d b 1 f",
+      "type": "special",
+      "id": "far-ovomorph"
+    },
+    {
+      "name": "Facehugger",
+      "input": "d b 1",
+      "type": "special",
+      "id": "facehugger"
+    },
+    {
+      "name": "Far Advanced Ovomorph",
+      "input": "d b 1 + block f",
+      "type": "special",
+      "id": "far-advanced-ovomorph"
+    },
+    {
+      "name": "Facehugger",
+      "input": "d b 1",
+      "type": "special",
+      "id": "facehugger"
+    },
+    {
+      "name": "Drone Drop",
+      "input": "d b 4",
+      "type": "special",
+      "id": "drone-drop"
+    },
+    {
+      "name": "Drone Slam",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "drone-slam"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 4",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Close Drone Drop",
+      "input": "d b 4 b",
+      "type": "special",
+      "id": "close-drone-drop"
+    },
+    {
+      "name": "Close Drone Slam",
+      "input": "d b 4 + block b",
+      "type": "special",
+      "id": "close-drone-slam"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 4",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Far Drone Drop",
+      "input": "d b 4 f",
+      "type": "special",
+      "id": "far-drone-drop"
+    },
+    {
+      "name": "Far Drone Slam",
+      "input": "d b 4 + block f",
+      "type": "special",
+      "id": "far-drone-slam"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 4",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Tarkatan Rush",
+      "input": "b f 2",
+      "type": "special",
+      "id": "tarkatan-rush"
+    },
+    {
+      "name": "Straight Slice",
+      "input": "1",
+      "type": "normal",
+      "id": "straight-slice"
+    },
+    {
+      "name": "Painful Slam",
+      "input": "2",
+      "type": "normal",
+      "id": "painful-slam"
+    },
+    {
+      "name": "Blade Sweep",
+      "input": "4",
+      "type": "normal",
+      "id": "blade-sweep"
+    },
+    {
+      "name": "Nail And Impale",
+      "input": "throw or 1 + 3",
+      "type": "string",
+      "id": "nail-and-impale"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Tarkatan Fury",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "tarkatan-fury"
+    },
+    {
+      "name": "Straight Slice",
+      "input": "1",
+      "type": "normal",
+      "id": "straight-slice"
+    },
+    {
+      "name": "Painful Slam",
+      "input": "2",
+      "type": "normal",
+      "id": "painful-slam"
+    },
+    {
+      "name": "Blade Sweep",
+      "input": "4",
+      "type": "normal",
+      "id": "blade-sweep"
+    },
+    {
+      "name": "Nail And Impale",
+      "input": "throw or 1 + 3",
+      "type": "string",
+      "id": "nail-and-impale"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Survival",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "survival"
+    },
+    {
+      "name": "Killer Queen (Close)",
+      "input": "d d b f 3",
+      "type": "special",
+      "id": "killer-queen-close"
+    },
+    {
+      "name": "Deadly Hybrid (Mid)",
+      "input": "b f d f 1",
+      "type": "special",
+      "id": "deadly-hybrid-mid"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "d d d 3",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Slash And Bash",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "slash-and-bash"
+    },
+    {
+      "name": "Little Head",
+      "input": "throw or 1 + 3",
+      "type": "string",
+      "id": "little-head"
+    },
+    {
+      "name": "Acid Burn",
+      "input": "(air) d b 2",
+      "type": "special",
+      "id": "acid-burn"
+    },
+    {
+      "name": "Alien Baby",
+      "input": "d b 1",
+      "type": "special",
+      "id": "alien-baby"
+    },
+    {
+      "name": "The Slicer",
+      "input": "d b 1",
+      "type": "special",
+      "id": "the-slicer"
     }
   ]
 }

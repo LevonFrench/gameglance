@@ -4,55 +4,466 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Back Hand",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "back-hand"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Gut Buster",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "gut-buster"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Quick Chop",
+      "input": "f 1",
       "type": "normal",
-      "input": "3"
+      "id": "quick-chop"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Low Chop",
+      "input": "d 1",
       "type": "normal",
-      "input": "4"
+      "id": "low-chop"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Straight Chop",
+      "input": "2",
+      "type": "normal",
+      "id": "straight-chop"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Overhead Smash",
+      "input": "b 2",
+      "type": "normal",
+      "id": "overhead-smash"
     },
     {
-      "name": "Fatality 1 (Chest Kold)",
-      "input": "4624 (Close)",
-      "type": "finisher"
+      "name": "Rising Fist",
+      "input": "d 2",
+      "type": "normal",
+      "id": "rising-fist"
     },
     {
-      "name": "Fatality 2 (Bed of Ice)",
-      "input": "2426 (Close)",
-      "type": "finisher"
+      "name": "Upward Sword",
+      "input": "d 2",
+      "type": "normal",
+      "id": "upward-sword"
     },
     {
-      "name": "Brutality (Snow Ball)",
-      "input": "262 (Far)",
-      "type": "finisher"
+      "name": "Gut Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "gut-kick"
+    },
+    {
+      "name": "Knee Breaker",
+      "input": "b 3",
+      "type": "normal",
+      "id": "knee-breaker"
+    },
+    {
+      "name": "Chin Breaker",
+      "input": "f 3",
+      "type": "normal",
+      "id": "chin-breaker"
+    },
+    {
+      "name": "Shin Shatter",
+      "input": "d 3",
+      "type": "normal",
+      "id": "shin-shatter"
+    },
+    {
+      "name": "Roundhouse",
+      "input": "4",
+      "type": "normal",
+      "id": "roundhouse"
+    },
+    {
+      "name": "Ice Trip",
+      "input": "b 4",
+      "type": "normal",
+      "id": "ice-trip"
+    },
+    {
+      "name": "Quick Kick",
+      "input": "f 4",
+      "type": "normal",
+      "id": "quick-kick"
+    },
+    {
+      "name": "Low Kick",
+      "input": "d 4",
+      "type": "normal",
+      "id": "low-kick"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Frosty",
+      "input": "1 1",
+      "type": "string",
+      "id": "frosty"
+    },
+    {
+      "name": "Hailstone",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "hailstone"
+    },
+    {
+      "name": "Permafrost",
+      "input": "1 1 4",
+      "type": "string",
+      "id": "permafrost"
+    },
+    {
+      "name": "Black Ice",
+      "input": "1 2",
+      "type": "string",
+      "id": "black-ice"
+    },
+    {
+      "name": "Straight Slash",
+      "input": "f 1 2",
+      "type": "string",
+      "id": "straight-slash"
+    },
+    {
+      "name": "Ice Age",
+      "input": "f 1 2",
+      "type": "string",
+      "id": "ice-age"
+    },
+    {
+      "name": "Throat Slice",
+      "input": "f 1 2 2",
+      "type": "string",
+      "id": "throat-slice"
+    },
+    {
+      "name": "Tundra",
+      "input": "1 2 3",
+      "type": "string",
+      "id": "tundra"
+    },
+    {
+      "name": "Snow Fall",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "snow-fall"
+    },
+    {
+      "name": "Quick Slice",
+      "input": "1 1 1",
+      "type": "string",
+      "id": "quick-slice"
+    },
+    {
+      "name": "Cold Punish",
+      "input": "2 4",
+      "type": "string",
+      "id": "cold-punish"
+    },
+    {
+      "name": "Ice Pain",
+      "input": "2 4 2",
+      "type": "string",
+      "id": "ice-pain"
+    },
+    {
+      "name": "Ices Up",
+      "input": "b 3 3",
+      "type": "string",
+      "id": "ices-up"
+    },
+    {
+      "name": "Cold Encounter",
+      "input": "b 3 3 d 4",
+      "type": "string",
+      "id": "cold-encounter"
+    },
+    {
+      "name": "Absolute Zero",
+      "input": "f 3 3",
+      "type": "string",
+      "id": "absolute-zero"
+    },
+    {
+      "name": "Cold Blooded",
+      "input": "f 4 2",
+      "type": "string",
+      "id": "cold-blooded"
+    },
+    {
+      "name": "Ability to Freeze",
+      "input": "f 4 2 1 + 3",
+      "type": "string",
+      "id": "ability-to-freeze"
+    },
+    {
+      "name": "Ice Burst",
+      "input": "d b 1",
+      "type": "special",
+      "id": "ice-burst"
+    },
+    {
+      "name": "Frost Bomb",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "frost-bomb"
+    },
+    {
+      "name": "Frost Hammer",
+      "input": "d b 2",
+      "type": "special",
+      "id": "frost-hammer"
+    },
+    {
+      "name": "Crushing Hammer",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "crushing-hammer"
+    },
+    {
+      "name": "Air Frost Hammer",
+      "input": "(air) d b 2",
+      "type": "special",
+      "id": "air-frost-hammer"
+    },
+    {
+      "name": "Ice Ball",
+      "input": "d f 2",
+      "type": "special",
+      "id": "ice-ball"
+    },
+    {
+      "name": "Ice Blast",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "ice-blast"
+    },
+    {
+      "name": "Slide",
+      "input": "b f 4",
+      "type": "special",
+      "id": "slide"
+    },
+    {
+      "name": "Icy Slide",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "icy-slide"
+    },
+    {
+      "name": "Polar Puncture",
+      "input": "d b f 3",
+      "type": "special",
+      "id": "polar-puncture"
+    },
+    {
+      "name": "Arctic Assault",
+      "input": "d b f 3 + block",
+      "type": "special",
+      "id": "arctic-assault"
+    },
+    {
+      "name": "Frozen Aura",
+      "input": "d b 3",
+      "type": "special",
+      "id": "frozen-aura"
+    },
+    {
+      "name": "Ice Aura",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "ice-aura"
+    },
+    {
+      "name": "Barrier of Frost",
+      "input": "d b 2",
+      "type": "special",
+      "id": "barrier-of-frost"
+    },
+    {
+      "name": "Barrier of Ice",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "barrier-of-ice"
+    },
+    {
+      "name": "Ice Klone",
+      "input": "d b 2",
+      "type": "special",
+      "id": "ice-klone"
+    },
+    {
+      "name": "Klone Toss",
+      "input": "d f 1",
+      "type": "special",
+      "id": "klone-toss"
+    },
+    {
+      "name": "Klone Smash",
+      "input": "d f 1 d",
+      "type": "special",
+      "id": "klone-smash"
+    },
+    {
+      "name": "Ice Statue",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "ice-statue"
+    },
+    {
+      "name": "Klone Toss",
+      "input": "d f 1",
+      "type": "special",
+      "id": "klone-toss"
+    },
+    {
+      "name": "Klone Smash",
+      "input": "d f 1 d",
+      "type": "special",
+      "id": "klone-smash"
+    },
+    {
+      "name": "Deep Freeze",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "deep-freeze"
+    },
+    {
+      "name": "Delay",
+      "input": "hold stance + block",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Chest Kold (Close)",
+      "input": "b f d b 4",
+      "type": "special",
+      "id": "chest-kold-close"
+    },
+    {
+      "name": "Bed of Ice (Close)",
+      "input": "d b d f 4",
+      "type": "special",
+      "id": "bed-of-ice-close"
+    },
+    {
+      "name": "Head Rip (Close)",
+      "input": "f d f 2",
+      "type": "special",
+      "id": "head-rip-close"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "f d b 2",
+      "type": "special",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Snow Ball",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "snow-ball"
+    },
+    {
+      "name": "Frozen Dinner",
+      "input": "d 2",
+      "type": "normal",
+      "id": "frozen-dinner"
+    },
+    {
+      "name": "Pick Your Brain",
+      "input": "f 4 2 1 + 3",
+      "type": "string",
+      "id": "pick-your-brain"
+    },
+    {
+      "name": "Ice Cubed",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "ice-cubed"
+    },
+    {
+      "name": "Splitting Image",
+      "input": "d b 1",
+      "type": "special",
+      "id": "splitting-image"
     }
   ]
 }

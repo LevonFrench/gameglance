@@ -4,40 +4,484 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Quick Backhand",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "quick-backhand"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Up Slash",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "up-slash"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Double Chop",
+      "input": "f 1",
       "type": "normal",
-      "input": "3"
+      "id": "double-chop"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Low Chop",
+      "input": "d 1",
       "type": "normal",
-      "input": "4"
+      "id": "low-chop"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Downward Chop",
+      "input": "2",
+      "type": "normal",
+      "id": "downward-chop"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Down Slash",
+      "input": "b 2",
+      "type": "normal",
+      "id": "down-slash"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Power Punch",
+      "input": "f 2",
+      "type": "normal",
+      "id": "power-punch"
+    },
+    {
+      "name": "Doom Punch",
+      "input": "d 2",
+      "type": "normal",
+      "id": "doom-punch"
+    },
+    {
+      "name": "Rising Boot",
+      "input": "3",
+      "type": "normal",
+      "id": "rising-boot"
+    },
+    {
+      "name": "Krushing Kick",
+      "input": "b 3",
+      "type": "normal",
+      "id": "krushing-kick"
+    },
+    {
+      "name": "Portal Kick",
+      "input": "f 3",
+      "type": "normal",
+      "id": "portal-kick"
+    },
+    {
+      "name": "Straight Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "straight-kick"
+    },
+    {
+      "name": "Demon Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "demon-kick"
+    },
+    {
+      "name": "Spinning Sweep",
+      "input": "b 4",
+      "type": "normal",
+      "id": "spinning-sweep"
+    },
+    {
+      "name": "Krescent Kick",
+      "input": "f 4",
+      "type": "normal",
+      "id": "krescent-kick"
+    },
+    {
+      "name": "Spin Kick",
+      "input": "d 4",
+      "type": "normal",
+      "id": "spin-kick"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Darkness",
+      "input": "1 2",
+      "type": "string",
+      "id": "darkness"
+    },
+    {
+      "name": "Afterlife",
+      "input": "1 4",
+      "type": "string",
+      "id": "afterlife"
+    },
+    {
+      "name": "Torment",
+      "input": "1 4 1",
+      "type": "string",
+      "id": "torment"
+    },
+    {
+      "name": "Enchantment",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "enchantment"
+    },
+    {
+      "name": "Korruption",
+      "input": "f 1 4",
+      "type": "string",
+      "id": "korruption"
+    },
+    {
+      "name": "Pure Evil",
+      "input": "f 1 4 2",
+      "type": "string",
+      "id": "pure-evil"
+    },
+    {
+      "name": "Deceptive",
+      "input": "2 1",
+      "type": "string",
+      "id": "deceptive"
+    },
+    {
+      "name": "Spellbinder",
+      "input": "2 1 f 3",
+      "type": "string",
+      "id": "spellbinder"
+    },
+    {
+      "name": "Incantation",
+      "input": "f 2 1",
+      "type": "string",
+      "id": "incantation"
+    },
+    {
+      "name": "Annihilation",
+      "input": "f 2 1 2",
+      "type": "string",
+      "id": "annihilation"
+    },
+    {
+      "name": "Sinister",
+      "input": "f 2 1 2 2",
+      "type": "string",
+      "id": "sinister"
+    },
+    {
+      "name": "Kruel Intentions",
+      "input": "b 3 2",
+      "type": "string",
+      "id": "kruel-intentions"
+    },
+    {
+      "name": "Re-Animator",
+      "input": "b 3 2 4",
+      "type": "string",
+      "id": "re-animator"
+    },
+    {
+      "name": "Dark Sorcerer",
+      "input": "f 4 d 4",
+      "type": "string",
+      "id": "dark-sorcerer"
+    },
+    {
+      "name": "Skull",
+      "input": "d b 2",
+      "type": "special",
+      "id": "skull"
+    },
+    {
+      "name": "Demon Skull",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "demon-skull"
+    },
+    {
+      "name": "Air Skull",
+      "input": "(air) d b 2",
+      "type": "special",
+      "id": "air-skull"
+    },
+    {
+      "name": "Air Demon Skull",
+      "input": "(air) d b 2 + block",
+      "type": "special",
+      "id": "air-demon-skull"
+    },
+    {
+      "name": "Trance",
+      "input": "b f 3",
+      "type": "special",
+      "id": "trance"
+    },
+    {
+      "name": "Deep Trance",
+      "input": "b f 3 + block",
+      "type": "special",
+      "id": "deep-trance"
+    },
+    {
+      "name": "Sky Drop",
+      "input": "d b 4",
+      "type": "special",
+      "id": "sky-drop"
+    },
+    {
+      "name": "Sky Crush",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "sky-crush"
+    },
+    {
+      "name": "Air Sky Drop",
+      "input": "(air) d b 4",
+      "type": "special",
+      "id": "air-sky-drop"
+    },
+    {
+      "name": "Air Sky Crush",
+      "input": "(air) d b 4 + block",
+      "type": "special",
+      "id": "air-sky-crush"
+    },
+    {
+      "name": "Ground Burst",
+      "input": "d b 1",
+      "type": "special",
+      "id": "ground-burst"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Close Ground Burst",
+      "input": "d b 1 b",
+      "type": "special",
+      "id": "close-ground-burst"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Far Ground Burst",
+      "input": "d b 1 f",
+      "type": "special",
+      "id": "far-ground-burst"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Black Magic",
+      "input": "d d 1",
+      "type": "normal",
+      "id": "black-magic"
+    },
+    {
+      "name": "Final Hex",
+      "input": "d d 2",
+      "type": "normal",
+      "id": "final-hex"
+    },
+    {
+      "name": "Dark Curse",
+      "input": "d d 3",
+      "type": "normal",
+      "id": "dark-curse"
+    },
+    {
+      "name": "Portal Scoop",
+      "input": "d f 1",
+      "type": "special",
+      "id": "portal-scoop"
+    },
+    {
+      "name": "Portal Slam",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "portal-slam"
+    },
+    {
+      "name": "Portal Grab",
+      "input": "d f 2",
+      "type": "special",
+      "id": "portal-grab"
+    },
+    {
+      "name": "Portal Stab",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "portal-stab"
+    },
+    {
+      "name": "Demon Spawn",
+      "input": "d b 3",
+      "type": "special",
+      "id": "demon-spawn"
+    },
+    {
+      "name": "Demon Grab",
+      "input": "d f 3",
+      "type": "special",
+      "id": "demon-grab"
+    },
+    {
+      "name": "Demon Strike",
+      "input": "stance",
+      "type": "normal",
+      "id": "demon-strike"
+    },
+    {
+      "name": "Demon Spark",
+      "input": "f + stance",
+      "type": "normal",
+      "id": "demon-spark"
+    },
+    {
+      "name": "Rising Demon",
+      "input": "b + stance",
+      "type": "normal",
+      "id": "rising-demon"
+    },
+    {
+      "name": "Demon Swoop",
+      "input": "d + stance",
+      "type": "normal",
+      "id": "demon-swoop"
+    },
+    {
+      "name": "Skull Krusher",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "skull-krusher"
+    },
+    {
+      "name": "Mind Game (Far)",
+      "input": "f b f b 4",
+      "type": "special",
+      "id": "mind-game-far"
+    },
+    {
+      "name": "Both Ends (Close)",
+      "input": "d f b f 2",
+      "type": "special",
+      "id": "both-ends-close"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "b f d 2",
+      "type": "special",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Kurb Stomp",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "kurb-stomp"
+    },
+    {
+      "name": "Skull Transplant",
+      "input": "d b 2",
+      "type": "special",
+      "id": "skull-transplant"
+    },
+    {
+      "name": "Touch Of Death",
+      "input": "d b 1",
+      "type": "special",
+      "id": "touch-of-death"
+    },
+    {
+      "name": "Blood Shower",
+      "input": "throw or 1 + 3",
+      "type": "string",
+      "id": "blood-shower"
+    },
+    {
+      "name": "Puggles' Wrath",
+      "input": "d f 3",
+      "type": "special",
+      "id": "puggles-wrath"
     }
   ]
 }

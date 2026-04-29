@@ -4,40 +4,580 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Straight Jab",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "straight-jab"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Fist Lunge",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "fist-lunge"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Gut Stab",
+      "input": "b 1",
       "type": "normal",
-      "input": "3"
+      "id": "gut-stab"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Low Poke",
+      "input": "d 1",
       "type": "normal",
-      "input": "4"
+      "id": "low-poke"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Dark Hook",
+      "input": "2",
+      "type": "normal",
+      "id": "dark-hook"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Quick Slash",
+      "input": "2",
+      "type": "normal",
+      "id": "quick-slash"
+    },
+    {
+      "name": "Double Fist",
+      "input": "b 2",
+      "type": "normal",
+      "id": "double-fist"
+    },
+    {
+      "name": "Rising Blade",
+      "input": "b 2",
+      "type": "normal",
+      "id": "rising-blade"
+    },
+    {
+      "name": "Skull Slam",
+      "input": "f 2",
+      "type": "normal",
+      "id": "skull-slam"
+    },
+    {
+      "name": "Skull Strike",
+      "input": "f 2",
+      "type": "normal",
+      "id": "skull-strike"
+    },
+    {
+      "name": "Chin Breaker",
+      "input": "d 2",
+      "type": "normal",
+      "id": "chin-breaker"
+    },
+    {
+      "name": "Machete Cut",
+      "input": "d 2",
+      "type": "normal",
+      "id": "machete-cut"
+    },
+    {
+      "name": "Chin Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "chin-kick"
+    },
+    {
+      "name": "Knee Strike",
+      "input": "b 3",
+      "type": "normal",
+      "id": "knee-strike"
+    },
+    {
+      "name": "Brutal Boot",
+      "input": "f 3",
+      "type": "normal",
+      "id": "brutal-boot"
+    },
+    {
+      "name": "Boot Flick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "boot-flick"
+    },
+    {
+      "name": "Quick Stomp",
+      "input": "4",
+      "type": "normal",
+      "id": "quick-stomp"
+    },
+    {
+      "name": "Low Life",
+      "input": "b 4",
+      "type": "normal",
+      "id": "low-life"
+    },
+    {
+      "name": "Shin Shatter",
+      "input": "f 4",
+      "type": "normal",
+      "id": "shin-shatter"
+    },
+    {
+      "name": "Heel Stomp",
+      "input": "f 4",
+      "type": "normal",
+      "id": "heel-stomp"
+    },
+    {
+      "name": "Sweep",
+      "input": "d 4",
+      "type": "normal",
+      "id": "sweep"
+    },
+    {
+      "name": "Sharp Sweep",
+      "input": "d 4",
+      "type": "normal",
+      "id": "sharp-sweep"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Nightmare",
+      "input": "1 1",
+      "type": "string",
+      "id": "nightmare"
+    },
+    {
+      "name": "Shoulder Smash",
+      "input": "1 1 1",
+      "type": "string",
+      "id": "shoulder-smash"
+    },
+    {
+      "name": "Crown Crusher",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "crown-crusher"
+    },
+    {
+      "name": "Cut 'n' Gut",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "cut-n-gut"
+    },
+    {
+      "name": "The Innocent",
+      "input": "1 2",
+      "type": "string",
+      "id": "the-innocent"
+    },
+    {
+      "name": "No Hiding",
+      "input": "1 2 2",
+      "type": "string",
+      "id": "no-hiding"
+    },
+    {
+      "name": "Bad Omen",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "bad-omen"
+    },
+    {
+      "name": "Heavy Bleeding",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "heavy-bleeding"
+    },
+    {
+      "name": "Awakens",
+      "input": "b 1 2 2",
+      "type": "string",
+      "id": "awakens"
+    },
+    {
+      "name": "Machete Launch",
+      "input": "b 1 2 2",
+      "type": "string",
+      "id": "machete-launch"
+    },
+    {
+      "name": "Killing Blow",
+      "input": "2 3",
+      "type": "string",
+      "id": "killing-blow"
+    },
+    {
+      "name": "Never Dies",
+      "input": "2 3",
+      "type": "string",
+      "id": "never-dies"
+    },
+    {
+      "name": "Killer",
+      "input": "2 4",
+      "type": "string",
+      "id": "killer"
+    },
+    {
+      "name": "Momma's Boy",
+      "input": "2 4",
+      "type": "string",
+      "id": "mommas-boy"
+    },
+    {
+      "name": "Camp Killer",
+      "input": "f 2 1 + 3",
+      "type": "string",
+      "id": "camp-killer"
+    },
+    {
+      "name": "Camp Blood",
+      "input": "3 2",
+      "type": "string",
+      "id": "camp-blood"
+    },
+    {
+      "name": "Serial Killer",
+      "input": "3 2",
+      "type": "string",
+      "id": "serial-killer"
+    },
+    {
+      "name": "Run Away",
+      "input": "3 2 u 1",
+      "type": "string",
+      "id": "run-away"
+    },
+    {
+      "name": "Drowning",
+      "input": "3 2 u 1",
+      "type": "string",
+      "id": "drowning"
+    },
+    {
+      "name": "Shattering Slam",
+      "input": "3 2 d 1",
+      "type": "string",
+      "id": "shattering-slam"
+    },
+    {
+      "name": "Payback",
+      "input": "3 2 d 1",
+      "type": "string",
+      "id": "payback"
+    },
+    {
+      "name": "Final Friday",
+      "input": "b 3 1 + 3",
+      "type": "string",
+      "id": "final-friday"
+    },
+    {
+      "name": "Haunting",
+      "input": "b 3 d 1",
+      "type": "string",
+      "id": "haunting"
+    },
+    {
+      "name": "In The Shadows",
+      "input": "b 3 u 1",
+      "type": "string",
+      "id": "in-the-shadows"
+    },
+    {
+      "name": "Brooding",
+      "input": "f 4 2",
+      "type": "string",
+      "id": "brooding"
+    },
+    {
+      "name": "Stalker",
+      "input": "f 4 4",
+      "type": "string",
+      "id": "stalker"
+    },
+    {
+      "name": "Back Breaker",
+      "input": "d b f 1",
+      "type": "special",
+      "id": "back-breaker"
+    },
+    {
+      "name": "Spine Shatter",
+      "input": "d b f 1 + block",
+      "type": "special",
+      "id": "spine-shatter"
+    },
+    {
+      "name": "Choke",
+      "input": "d f 1",
+      "type": "special",
+      "id": "choke"
+    },
+    {
+      "name": "Choke Slam",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "choke-slam"
+    },
+    {
+      "name": "Tight Squeeze",
+      "input": "d b f 2",
+      "type": "special",
+      "id": "tight-squeeze"
+    },
+    {
+      "name": "Crippler",
+      "input": "d b f 2 + block",
+      "type": "special",
+      "id": "crippler"
+    },
+    {
+      "name": "Front Crippler",
+      "input": "d b f 2 + block f",
+      "type": "special",
+      "id": "front-crippler"
+    },
+    {
+      "name": "Temple Punch",
+      "input": "b f 3",
+      "type": "special",
+      "id": "temple-punch"
+    },
+    {
+      "name": "Temple Slam",
+      "input": "d f 3 + block",
+      "type": "special",
+      "id": "temple-slam"
+    },
+    {
+      "name": "Corpse Grab",
+      "input": "d b 1",
+      "type": "special",
+      "id": "corpse-grab"
+    },
+    {
+      "name": "Corpse Slam",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "corpse-slam"
+    },
+    {
+      "name": "Killing Machine",
+      "input": "d d 4",
+      "type": "normal",
+      "id": "killing-machine"
+    },
+    {
+      "name": "Shoulder Push",
+      "input": "b f 3",
+      "type": "special",
+      "id": "shoulder-push"
+    },
+    {
+      "name": "Shoulder Charge",
+      "input": "b f 3 + block",
+      "type": "special",
+      "id": "shoulder-charge"
+    },
+    {
+      "name": "Bloodshed",
+      "input": "d f 1",
+      "type": "special",
+      "id": "bloodshed"
+    },
+    {
+      "name": "Bloodlust",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "bloodlust"
+    },
+    {
+      "name": "Machete Toss",
+      "input": "d b 2",
+      "type": "special",
+      "id": "machete-toss"
+    },
+    {
+      "name": "Machete Throw",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "machete-throw"
+    },
+    {
+      "name": "Psycho Slash",
+      "input": "b f 2",
+      "type": "special",
+      "id": "psycho-slash"
+    },
+    {
+      "name": "Hack 'n' Slash",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "hack-n-slash"
+    },
+    {
+      "name": "Pursuit",
+      "input": "d d 3",
+      "type": "normal",
+      "id": "pursuit"
+    },
+    {
+      "name": "Dark Pursuit",
+      "input": "d d 3 + block",
+      "type": "normal",
+      "id": "dark-pursuit"
+    },
+    {
+      "name": "Lake Mist",
+      "input": "d f 2",
+      "type": "special",
+      "id": "lake-mist"
+    },
+    {
+      "name": "Blood Mist",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "blood-mist"
+    },
+    {
+      "name": "Punishment",
+      "input": "d d 3",
+      "type": "normal",
+      "id": "punishment"
+    },
+    {
+      "name": "Rampant",
+      "input": "d d 3 + block",
+      "type": "normal",
+      "id": "rampant"
+    },
+    {
+      "name": "Rise",
+      "input": "d d 4",
+      "type": "normal",
+      "id": "rise"
+    },
+    {
+      "name": "Corpse Walk",
+      "input": "d d 4 + block",
+      "type": "normal",
+      "id": "corpse-walk"
+    },
+    {
+      "name": "The Horror",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "the-horror"
+    },
+    {
+      "name": "Kill For Mother (Mid)",
+      "input": "d f d f 2",
+      "type": "special",
+      "id": "kill-for-mother-mid"
+    },
+    {
+      "name": "Sleeping Bag Killer (Mid)",
+      "input": "d b f 4 + block",
+      "type": "special",
+      "id": "sleeping-bag-killer-mid"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "d b f f",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Blunt Trauma",
+      "input": "b f 3 + block",
+      "type": "special",
+      "id": "blunt-trauma"
+    },
+    {
+      "name": "Go To Hell",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "go-to-hell"
+    },
+    {
+      "name": "Blood Bath",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "blood-bath"
+    },
+    {
+      "name": "Head Spin",
+      "input": "d b f 2 + block",
+      "type": "special",
+      "id": "head-spin"
+    },
+    {
+      "name": "Spinal Tap",
+      "input": "d b f 1",
+      "type": "special",
+      "id": "spinal-tap"
     }
   ]
 }

@@ -4,40 +4,1136 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Hard Jab",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "hard-jab"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Spin Slab",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "spin-slab"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Palm Strike",
+      "input": "f 1",
       "type": "normal",
-      "input": "3"
+      "id": "palm-strike"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Low Punch",
+      "input": "d 1",
       "type": "normal",
-      "input": "4"
+      "id": "low-punch"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Side Strike",
+      "input": "2",
+      "type": "normal",
+      "id": "side-strike"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Rising Stone",
+      "input": "b 2",
+      "type": "normal",
+      "id": "rising-stone"
+    },
+    {
+      "name": "Rock Slam",
+      "input": "f 2",
+      "type": "normal",
+      "id": "rock-slam"
+    },
+    {
+      "name": "Rising Rock",
+      "input": "d 2",
+      "type": "normal",
+      "id": "rising-rock"
+    },
+    {
+      "name": "High Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "high-kick"
+    },
+    {
+      "name": "Low Stomp",
+      "input": "b 3",
+      "type": "normal",
+      "id": "low-stomp"
+    },
+    {
+      "name": "Hinge Kick",
+      "input": "f 3",
+      "type": "normal",
+      "id": "hinge-kick"
+    },
+    {
+      "name": "Low Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-kick"
+    },
+    {
+      "name": "Turning Boot",
+      "input": "4",
+      "type": "normal",
+      "id": "turning-boot"
+    },
+    {
+      "name": "Back Heel",
+      "input": "b 4",
+      "type": "normal",
+      "id": "back-heel"
+    },
+    {
+      "name": "Flying Kick",
+      "input": "f 4",
+      "type": "normal",
+      "id": "flying-kick"
+    },
+    {
+      "name": "Low Shake",
+      "input": "d 4",
+      "type": "normal",
+      "id": "low-shake"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Stone Klaw",
+      "input": "1 1",
+      "type": "string",
+      "id": "stone-klaw"
+    },
+    {
+      "name": "Beast Kick",
+      "input": "1 1 4",
+      "type": "string",
+      "id": "beast-kick"
+    },
+    {
+      "name": "Death Strike",
+      "input": "1 2",
+      "type": "string",
+      "id": "death-strike"
+    },
+    {
+      "name": "Hard Knockback",
+      "input": "1 2 3",
+      "type": "string",
+      "id": "hard-knockback"
+    },
+    {
+      "name": "Low Rumble",
+      "input": "1 2 d 3",
+      "type": "string",
+      "id": "low-rumble"
+    },
+    {
+      "name": "Evil Kore",
+      "input": "f 1 2",
+      "type": "string",
+      "id": "evil-kore"
+    },
+    {
+      "name": "Body Quake",
+      "input": "f 1 2 1",
+      "type": "string",
+      "id": "body-quake"
+    },
+    {
+      "name": "Rocky Start",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "rocky-start"
+    },
+    {
+      "name": "Rock On",
+      "input": "b 1 2 1",
+      "type": "string",
+      "id": "rock-on"
+    },
+    {
+      "name": "Not Pelite",
+      "input": "b 1 d 4",
+      "type": "string",
+      "id": "not-pelite"
+    },
+    {
+      "name": "Igneous Strike",
+      "input": "b 1 d 4 u 4",
+      "type": "string",
+      "id": "igneous-strike"
+    },
+    {
+      "name": "Hard Place",
+      "input": "2 1",
+      "type": "string",
+      "id": "hard-place"
+    },
+    {
+      "name": "Klean Slate",
+      "input": "2 1 2",
+      "type": "string",
+      "id": "klean-slate"
+    },
+    {
+      "name": "Gravel Before Me",
+      "input": "2 1 d 4",
+      "type": "string",
+      "id": "gravel-before-me"
+    },
+    {
+      "name": "Mountainous Pain",
+      "input": "2 1 d 4 u 4",
+      "type": "string",
+      "id": "mountainous-pain"
+    },
+    {
+      "name": "Not For Granite",
+      "input": "b 2 4",
+      "type": "string",
+      "id": "not-for-granite"
+    },
+    {
+      "name": "Krater Kicks",
+      "input": "3 3",
+      "type": "string",
+      "id": "krater-kicks"
+    },
+    {
+      "name": "Landslide",
+      "input": "b 3 2",
+      "type": "string",
+      "id": "landslide"
+    },
+    {
+      "name": "Shock Wave",
+      "input": "b 3 2 2",
+      "type": "string",
+      "id": "shock-wave"
+    },
+    {
+      "name": "Rock Drop",
+      "input": "d b 3",
+      "type": "special",
+      "id": "rock-drop"
+    },
+    {
+      "name": "Rock Shower",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "rock-shower"
+    },
+    {
+      "name": "Close Rock Drop",
+      "input": "d b 3 b",
+      "type": "special",
+      "id": "close-rock-drop"
+    },
+    {
+      "name": "Close Rock Shower",
+      "input": "d b 3 + block b",
+      "type": "special",
+      "id": "close-rock-shower"
+    },
+    {
+      "name": "Far Rock Drop",
+      "input": "d b 3 f",
+      "type": "special",
+      "id": "far-rock-drop"
+    },
+    {
+      "name": "Far Rock Shower",
+      "input": "d b 3 + block f",
+      "type": "special",
+      "id": "far-rock-shower"
+    },
+    {
+      "name": "Ground Pulse",
+      "input": "d d 4",
+      "type": "normal",
+      "id": "ground-pulse"
+    },
+    {
+      "name": "Ground Quake",
+      "input": "d d 4 + block",
+      "type": "normal",
+      "id": "ground-quake"
+    },
+    {
+      "name": "Rock Toss",
+      "input": "b f 2",
+      "type": "special",
+      "id": "rock-toss"
+    },
+    {
+      "name": "Boulder Throw",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "boulder-throw"
+    },
+    {
+      "name": "Earth Shake",
+      "input": "d d 1",
+      "type": "normal",
+      "id": "earth-shake"
+    },
+    {
+      "name": "Earthquake",
+      "input": "d d 1 + block",
+      "type": "normal",
+      "id": "earthquake"
+    },
+    {
+      "name": "Air Earth Shake",
+      "input": "(air) d d 1",
+      "type": "normal",
+      "id": "air-earth-shake"
+    },
+    {
+      "name": "Air Earthquake",
+      "input": "(air) d d 1 + block",
+      "type": "normal",
+      "id": "air-earthquake"
+    },
+    {
+      "name": "Air Close Earth Shake",
+      "input": "(air) d d 1 b",
+      "type": "normal",
+      "id": "air-close-earth-shake"
+    },
+    {
+      "name": "Air Close Earthquake",
+      "input": "(air) d d 1 + block b",
+      "type": "normal",
+      "id": "air-close-earthquake"
+    },
+    {
+      "name": "Air Far Earth Shake",
+      "input": "(air) d d 1 f",
+      "type": "normal",
+      "id": "air-far-earth-shake"
+    },
+    {
+      "name": "Air Far Earthquake",
+      "input": "(air) d d 1 + block f",
+      "type": "normal",
+      "id": "air-far-earthquake"
+    },
+    {
+      "name": "Rolling Stone",
+      "input": "b f 4",
+      "type": "special",
+      "id": "rolling-stone"
+    },
+    {
+      "name": "Rolling Kutter",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "rolling-kutter"
+    },
+    {
+      "name": "Stone Punch",
+      "input": "d b 2",
+      "type": "special",
+      "id": "stone-punch"
+    },
+    {
+      "name": "Stone Strike",
+      "input": "d b 2 u",
+      "type": "special",
+      "id": "stone-strike"
+    },
+    {
+      "name": "Stone Smash",
+      "input": "d b 2 d",
+      "type": "special",
+      "id": "stone-smash"
+    },
+    {
+      "name": "Stone Slam",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "stone-slam"
+    },
+    {
+      "name": "Stone Kut",
+      "input": "d b 2 + block u",
+      "type": "special",
+      "id": "stone-kut"
+    },
+    {
+      "name": "Stone Hammer",
+      "input": "d b 2 + block d",
+      "type": "special",
+      "id": "stone-hammer"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Stone Shatter",
+      "input": "d b 1",
+      "type": "special",
+      "id": "stone-shatter"
+    },
+    {
+      "name": "Up Shatter",
+      "input": "hold 1 + u",
+      "type": "normal",
+      "id": "up-shatter"
+    },
+    {
+      "name": "Down Shatter",
+      "input": "hold 1 + d",
+      "type": "normal",
+      "id": "down-shatter"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "d d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Rock Blast",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "rock-blast"
+    },
+    {
+      "name": "Up Shatter",
+      "input": "hold 1 + u",
+      "type": "normal",
+      "id": "up-shatter"
+    },
+    {
+      "name": "Down Shatter",
+      "input": "hold 1 + d",
+      "type": "normal",
+      "id": "down-shatter"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "d d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Magma Toss",
+      "input": "b f 2",
+      "type": "special",
+      "id": "magma-toss"
+    },
+    {
+      "name": "Magma Throw",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "magma-throw"
+    },
+    {
+      "name": "Rolling Magma",
+      "input": "b f 4",
+      "type": "special",
+      "id": "rolling-magma"
+    },
+    {
+      "name": "Lava Kutter",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "lava-kutter"
+    },
+    {
+      "name": "Lava Skin",
+      "input": "d d 1",
+      "type": "normal",
+      "id": "lava-skin"
+    },
+    {
+      "name": "Lava Punch",
+      "input": "d b 2",
+      "type": "special",
+      "id": "lava-punch"
+    },
+    {
+      "name": "Lava Strike",
+      "input": "d b 2 u",
+      "type": "special",
+      "id": "lava-strike"
+    },
+    {
+      "name": "Lava Smash",
+      "input": "d b 2 d",
+      "type": "special",
+      "id": "lava-smash"
+    },
+    {
+      "name": "Lava Slam",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "lava-slam"
+    },
+    {
+      "name": "Lava Kut",
+      "input": "d b 2 + block u",
+      "type": "special",
+      "id": "lava-kut"
+    },
+    {
+      "name": "Lava Hammer",
+      "input": "d b 2 + block d",
+      "type": "special",
+      "id": "lava-hammer"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Magma Shatter",
+      "input": "d b 1",
+      "type": "special",
+      "id": "magma-shatter"
+    },
+    {
+      "name": "Up Shatter",
+      "input": "hold 1 + u",
+      "type": "normal",
+      "id": "up-shatter"
+    },
+    {
+      "name": "Down Shatter",
+      "input": "hold 1 + d",
+      "type": "normal",
+      "id": "down-shatter"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "d d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Magma Blast",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "magma-blast"
+    },
+    {
+      "name": "Up Shatter",
+      "input": "hold 1 + u",
+      "type": "normal",
+      "id": "up-shatter"
+    },
+    {
+      "name": "Down Shatter",
+      "input": "hold 1 + d",
+      "type": "normal",
+      "id": "down-shatter"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "d d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Lava Drop",
+      "input": "d b 3",
+      "type": "special",
+      "id": "lava-drop"
+    },
+    {
+      "name": "Magma Shower",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "magma-shower"
+    },
+    {
+      "name": "Close Lava Drop",
+      "input": "d b 3 b",
+      "type": "special",
+      "id": "close-lava-drop"
+    },
+    {
+      "name": "Close Magma Shower",
+      "input": "d b 3 + block b",
+      "type": "special",
+      "id": "close-magma-shower"
+    },
+    {
+      "name": "Far Lava Drop",
+      "input": "d b 3 f",
+      "type": "special",
+      "id": "far-lava-drop"
+    },
+    {
+      "name": "Far Magma Shower",
+      "input": "d b 3 + block f",
+      "type": "special",
+      "id": "far-magma-shower"
+    },
+    {
+      "name": "Gold Toss",
+      "input": "b f 2",
+      "type": "special",
+      "id": "gold-toss"
+    },
+    {
+      "name": "Gold Throw",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "gold-throw"
+    },
+    {
+      "name": "Gold Boulder",
+      "input": "b f 4",
+      "type": "special",
+      "id": "gold-boulder"
+    },
+    {
+      "name": "Gold Kutter",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "gold-kutter"
+    },
+    {
+      "name": "Gold Skin",
+      "input": "d d 1",
+      "type": "normal",
+      "id": "gold-skin"
+    },
+    {
+      "name": "Metal Punch",
+      "input": "d b 2",
+      "type": "special",
+      "id": "metal-punch"
+    },
+    {
+      "name": "Metal Strike",
+      "input": "d b 2 u",
+      "type": "special",
+      "id": "metal-strike"
+    },
+    {
+      "name": "Metal Smash",
+      "input": "d b 2 d",
+      "type": "special",
+      "id": "metal-smash"
+    },
+    {
+      "name": "Metal Slam",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "metal-slam"
+    },
+    {
+      "name": "Metal Kut",
+      "input": "d b 2 + block u",
+      "type": "special",
+      "id": "metal-kut"
+    },
+    {
+      "name": "Golden Hammer",
+      "input": "d b 2 + block d",
+      "type": "special",
+      "id": "golden-hammer"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Gold Punch",
+      "input": "d b 1",
+      "type": "special",
+      "id": "gold-punch"
+    },
+    {
+      "name": "Arcing Gold",
+      "input": "hold 1 + u",
+      "type": "normal",
+      "id": "arcing-gold"
+    },
+    {
+      "name": "Bouncing Gold",
+      "input": "hold 1 + d",
+      "type": "normal",
+      "id": "bouncing-gold"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "d d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Gold Launch",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "gold-launch"
+    },
+    {
+      "name": "Arcing Gold",
+      "input": "hold 1 + u",
+      "type": "normal",
+      "id": "arcing-gold"
+    },
+    {
+      "name": "Bouncing Gold",
+      "input": "hold 1 + d",
+      "type": "normal",
+      "id": "bouncing-gold"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "d d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Krystal Toss",
+      "input": "b f 2",
+      "type": "special",
+      "id": "krystal-toss"
+    },
+    {
+      "name": "Krystal Throw",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "krystal-throw"
+    },
+    {
+      "name": "Rolling Krystal",
+      "input": "b f 4",
+      "type": "special",
+      "id": "rolling-krystal"
+    },
+    {
+      "name": "Krystal Kutter",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "krystal-kutter"
+    },
+    {
+      "name": "Krystallization",
+      "input": "d d 1",
+      "type": "normal",
+      "id": "krystallization"
+    },
+    {
+      "name": "Dark Krystal",
+      "input": "d d 1 + block",
+      "type": "normal",
+      "id": "dark-krystal"
+    },
+    {
+      "name": "Summon Krystal",
+      "input": "d f 3",
+      "type": "special",
+      "id": "summon-krystal"
+    },
+    {
+      "name": "Flying Krystal",
+      "input": "f + int",
+      "type": "normal",
+      "id": "flying-krystal"
+    },
+    {
+      "name": "Flying Boulder",
+      "input": "f + int + block",
+      "type": "normal",
+      "id": "flying-boulder"
+    },
+    {
+      "name": "Downward Flying Krystal",
+      "input": "f + int d",
+      "type": "normal",
+      "id": "downward-flying-krystal"
+    },
+    {
+      "name": "Downward Flying Boulder",
+      "input": "f + int + block d",
+      "type": "normal",
+      "id": "downward-flying-boulder"
+    },
+    {
+      "name": "Krystal Jump",
+      "input": "d + int",
+      "type": "normal",
+      "id": "krystal-jump",
+      "notes": "Air"
+    },
+    {
+      "name": "Boulder Jump",
+      "input": "d + int + block",
+      "type": "normal",
+      "id": "boulder-jump",
+      "notes": "Air"
+    },
+    {
+      "name": "Summon Boulder",
+      "input": "d f 3 + block",
+      "type": "special",
+      "id": "summon-boulder"
+    },
+    {
+      "name": "Flying Krystal",
+      "input": "f + int",
+      "type": "normal",
+      "id": "flying-krystal"
+    },
+    {
+      "name": "Flying Boulder",
+      "input": "f + int + block",
+      "type": "normal",
+      "id": "flying-boulder"
+    },
+    {
+      "name": "Downward Flying Krystal",
+      "input": "f + int d",
+      "type": "normal",
+      "id": "downward-flying-krystal"
+    },
+    {
+      "name": "Downward Flying Boulder",
+      "input": "f + int + block d",
+      "type": "normal",
+      "id": "downward-flying-boulder"
+    },
+    {
+      "name": "Krystal Jump",
+      "input": "d + int",
+      "type": "normal",
+      "id": "krystal-jump",
+      "notes": "Air"
+    },
+    {
+      "name": "Boulder Jump",
+      "input": "d + int + block",
+      "type": "normal",
+      "id": "boulder-jump",
+      "notes": "Air"
+    },
+    {
+      "name": "Krystal Punch",
+      "input": "d b 2",
+      "type": "special",
+      "id": "krystal-punch"
+    },
+    {
+      "name": "Krystal Strike",
+      "input": "d b 2 u",
+      "type": "special",
+      "id": "krystal-strike"
+    },
+    {
+      "name": "Krystal Smash",
+      "input": "d b 2 d",
+      "type": "special",
+      "id": "krystal-smash"
+    },
+    {
+      "name": "Krystal Slam",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "krystal-slam"
+    },
+    {
+      "name": "Krystal Kut",
+      "input": "d b 2 + block u",
+      "type": "special",
+      "id": "krystal-kut"
+    },
+    {
+      "name": "Krystal Hammer",
+      "input": "d b 2 + block d",
+      "type": "special",
+      "id": "krystal-hammer"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Krystal Shatter",
+      "input": "d b 1",
+      "type": "special",
+      "id": "krystal-shatter"
+    },
+    {
+      "name": "Up Shatter",
+      "input": "hold 1 + u",
+      "type": "normal",
+      "id": "up-shatter"
+    },
+    {
+      "name": "Down Shatter",
+      "input": "hold 1 + d",
+      "type": "normal",
+      "id": "down-shatter"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "d d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Krystal Blast",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "krystal-blast"
+    },
+    {
+      "name": "Up Shatter",
+      "input": "hold 1 + u",
+      "type": "normal",
+      "id": "up-shatter"
+    },
+    {
+      "name": "Down Shatter",
+      "input": "hold 1 + d",
+      "type": "normal",
+      "id": "down-shatter"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "d d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Rock Bottom",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "rock-bottom"
+    },
+    {
+      "name": "Stone Tomb (Mid)",
+      "input": "d b f b 3",
+      "type": "special",
+      "id": "stone-tomb-mid"
+    },
+    {
+      "name": "Stalag-Might (Mid)",
+      "input": "d f b f 1",
+      "type": "special",
+      "id": "stalag-might-mid"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "d d d 4",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Blood Rock",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "blood-rock"
+    },
+    {
+      "name": "Rumble Trouble",
+      "input": "d d 4 + block",
+      "type": "normal",
+      "id": "rumble-trouble"
+    },
+    {
+      "name": "Rock Head",
+      "input": "b f 2",
+      "type": "special",
+      "id": "rock-head"
+    },
+    {
+      "name": "It's Me Tremor",
+      "input": "d b 1",
+      "type": "special",
+      "id": "its-me-tremor"
+    },
+    {
+      "name": "Krystal Khaos",
+      "input": "d f 3 f + int",
+      "type": "special",
+      "id": "krystal-khaos"
+    },
+    {
+      "name": "Hidden Brutality 1",
+      "input": "b f 4",
+      "type": "special",
+      "id": "hidden-brutality-1"
+    },
+    {
+      "name": "Hidden Brutality 2",
+      "input": "throw",
+      "type": "normal",
+      "id": "hidden-brutality-2"
+    },
+    {
+      "name": "Hidden Brutality 3",
+      "input": "d b 1",
+      "type": "special",
+      "id": "hidden-brutality-3"
+    },
+    {
+      "name": "Hidden Brutality 4",
+      "input": "f 2",
+      "type": "normal",
+      "id": "hidden-brutality-4"
+    },
+    {
+      "name": "Hidden Brutality 5",
+      "input": "b 3 2 2",
+      "type": "string",
+      "id": "hidden-brutality-5"
     }
   ]
 }

@@ -4,40 +4,544 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Bone Strike",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "bone-strike"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Wind Punch",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "wind-punch"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Low Palm",
+      "input": "d 1",
       "type": "normal",
-      "input": "3"
+      "id": "low-palm"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Downwards Claw",
+      "input": "2",
       "type": "normal",
-      "input": "4"
+      "id": "downwards-claw"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Double Punch",
+      "input": "b 2",
+      "type": "normal",
+      "id": "double-punch"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Lunge Punch",
+      "input": "f 2",
+      "type": "normal",
+      "id": "lunge-punch"
+    },
+    {
+      "name": "God Strike",
+      "input": "f 2",
+      "type": "normal",
+      "id": "god-strike"
+    },
+    {
+      "name": "Rising Palm",
+      "input": "d 2",
+      "type": "normal",
+      "id": "rising-palm"
+    },
+    {
+      "name": "Quick Stump",
+      "input": "3",
+      "type": "normal",
+      "id": "quick-stump"
+    },
+    {
+      "name": "Devious Heel",
+      "input": "b 3",
+      "type": "normal",
+      "id": "devious-heel"
+    },
+    {
+      "name": "Step Kick",
+      "input": "f 3",
+      "type": "normal",
+      "id": "step-kick"
+    },
+    {
+      "name": "Side Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "side-kick"
+    },
+    {
+      "name": "Back Strike",
+      "input": "4",
+      "type": "normal",
+      "id": "back-strike"
+    },
+    {
+      "name": "Reverse Push",
+      "input": "b 4",
+      "type": "normal",
+      "id": "reverse-push"
+    },
+    {
+      "name": "Shin Kick",
+      "input": "f 4",
+      "type": "normal",
+      "id": "shin-kick"
+    },
+    {
+      "name": "Reverse Boot",
+      "input": "d 4",
+      "type": "normal",
+      "id": "reverse-boot"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Vanquished",
+      "input": "1 1",
+      "type": "string",
+      "id": "vanquished"
+    },
+    {
+      "name": "Immortality",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "immortality"
+    },
+    {
+      "name": "Dark Magic",
+      "input": "1 1 2 3",
+      "type": "string",
+      "id": "dark-magic"
+    },
+    {
+      "name": "Nexus",
+      "input": "2 2",
+      "type": "string",
+      "id": "nexus"
+    },
+    {
+      "name": "Divine Power",
+      "input": "f 2 2",
+      "type": "string",
+      "id": "divine-power"
+    },
+    {
+      "name": "God of Darkness",
+      "input": "f 2 2",
+      "type": "string",
+      "id": "god-of-darkness"
+    },
+    {
+      "name": "Deity",
+      "input": "f 2 2 1 + 3",
+      "type": "string",
+      "id": "deity"
+    },
+    {
+      "name": "Mystical",
+      "input": "f 2 2 4",
+      "type": "string",
+      "id": "mystical"
+    },
+    {
+      "name": "Possession",
+      "input": "3 1",
+      "type": "string",
+      "id": "possession"
+    },
+    {
+      "name": "Immense Power",
+      "input": "3 1 2",
+      "type": "string",
+      "id": "immense-power"
+    },
+    {
+      "name": "Fallen Elder God",
+      "input": "f 3 1",
+      "type": "string",
+      "id": "fallen-elder-god"
+    },
+    {
+      "name": "Fall From Grace",
+      "input": "f 3 1 d 2",
+      "type": "string",
+      "id": "fall-from-grace"
+    },
+    {
+      "name": "Brute Strength",
+      "input": "f 3 1 d 2 u 2",
+      "type": "string",
+      "id": "brute-strength"
+    },
+    {
+      "name": "Hell-Raiser",
+      "input": "f 4 1",
+      "type": "string",
+      "id": "hell-raiser"
+    },
+    {
+      "name": "Banishment",
+      "input": "f 4 1 d 2",
+      "type": "string",
+      "id": "banishment"
+    },
+    {
+      "name": "Konquer All",
+      "input": "f 4 1 d 2 u 2",
+      "type": "string",
+      "id": "konquer-all"
+    },
+    {
+      "name": "Charging Shoulder",
+      "input": "b f 3",
+      "type": "special",
+      "id": "charging-shoulder"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Krushing Shoulder",
+      "input": "b f 3 + block",
+      "type": "special",
+      "id": "krushing-shoulder"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Hell Sparks",
+      "input": "d b 2",
+      "type": "special",
+      "id": "hell-sparks"
+    },
+    {
+      "name": "Enhance",
+      "input": "BL",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Hell Blast",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "hell-blast"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Amulet Strike",
+      "input": "b f 1",
+      "type": "special",
+      "id": "amulet-strike"
+    },
+    {
+      "name": "Amulet Curse",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "amulet-curse"
+    },
+    {
+      "name": "Stolen Power",
+      "input": "d b 1",
+      "type": "special",
+      "id": "stolen-power"
+    },
+    {
+      "name": "Mimicry",
+      "input": "d b 1",
+      "type": "special",
+      "id": "mimicry"
+    },
+    {
+      "name": "Stolen Power",
+      "input": "d b 1",
+      "type": "special",
+      "id": "stolen-power"
+    },
+    {
+      "name": "Air Tricky Portal",
+      "input": "(air) d u",
+      "type": "normal",
+      "id": "air-tricky-portal"
+    },
+    {
+      "name": "In front",
+      "input": "(air) d u b",
+      "type": "normal",
+      "id": "in-front"
+    },
+    {
+      "name": "Scepter Slam",
+      "input": "d f 2",
+      "type": "special",
+      "id": "scepter-slam"
+    },
+    {
+      "name": "Scepter Launch",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "scepter-launch"
+    },
+    {
+      "name": "Scepter Strike",
+      "input": "d b 1",
+      "type": "special",
+      "id": "scepter-strike"
+    },
+    {
+      "name": "Scepter Quake",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "scepter-quake"
+    },
+    {
+      "name": "Dark Beam",
+      "input": "b f 1",
+      "type": "special",
+      "id": "dark-beam"
+    },
+    {
+      "name": "Dark Blast",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "dark-blast"
+    },
+    {
+      "name": "Summoned Fiend",
+      "input": "d f 4",
+      "type": "special",
+      "id": "summoned-fiend"
+    },
+    {
+      "name": "Summoned Slam",
+      "input": "d f 4 + block",
+      "type": "special",
+      "id": "summoned-slam"
+    },
+    {
+      "name": "Judgment Fist",
+      "input": "d b 1",
+      "type": "special",
+      "id": "judgment-fist"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Judgment Smash",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "judgment-smash"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "In Front Judgment Fist",
+      "input": "d b 1 b",
+      "type": "special",
+      "id": "in-front-judgment-fist"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "In Front Judgment Smash",
+      "input": "d b 1 + block b",
+      "type": "special",
+      "id": "in-front-judgment-smash"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Behind Judgment Fist",
+      "input": "d b 1 f",
+      "type": "special",
+      "id": "behind-judgment-fist"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Behind Judgment Smash",
+      "input": "d b 1 + block f",
+      "type": "special",
+      "id": "behind-judgment-smash"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Devil's Flick",
+      "input": "b f 2",
+      "type": "special",
+      "id": "devils-flick"
+    },
+    {
+      "name": "Devil's Backhand",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "devils-backhand"
+    },
+    {
+      "name": "The Devil's Hand",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "the-devils-hand"
+    },
+    {
+      "name": "The Grinder (Mid)",
+      "input": "d b f d u",
+      "type": "normal",
+      "id": "the-grinder-mid"
+    },
+    {
+      "name": "Flick Trick (Mid)",
+      "input": "d u d u block",
+      "type": "normal",
+      "id": "flick-trick-mid"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "d b f f",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Gory Hole",
+      "input": "b f 1",
+      "type": "special",
+      "id": "gory-hole"
+    },
+    {
+      "name": "Skull Bash",
+      "input": "throw or 1 + 3",
+      "type": "string",
+      "id": "skull-bash"
+    },
+    {
+      "name": "Face Off",
+      "input": "d b 1",
+      "type": "special",
+      "id": "face-off"
+    },
+    {
+      "name": "Have A Nice Day",
+      "input": "f 2 2 1 + 3",
+      "type": "string",
+      "id": "have-a-nice-day"
+    },
+    {
+      "name": "Hands Down",
+      "input": "d b 1",
+      "type": "special",
+      "id": "hands-down"
+    },
+    {
+      "name": "Hidden Brutality",
+      "input": "d b 1",
+      "type": "special",
+      "id": "hidden-brutality"
     }
   ]
 }

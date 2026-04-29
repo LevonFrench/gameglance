@@ -4,40 +4,646 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Head Knock",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "head-knock"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Low Poke",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "low-poke"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Staff Strike",
+      "input": "d 1",
       "type": "normal",
-      "input": "3"
+      "id": "staff-strike"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Extended Reach",
+      "input": "u 1",
       "type": "normal",
-      "input": "4"
+      "id": "extended-reach"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Elbow Strike",
+      "input": "2",
+      "type": "normal",
+      "id": "elbow-strike"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Blade Stab",
+      "input": "2",
+      "type": "normal",
+      "id": "blade-stab"
+    },
+    {
+      "name": "Turnaround Strike",
+      "input": "b 2",
+      "type": "normal",
+      "id": "turnaround-strike"
+    },
+    {
+      "name": "Head Breaker",
+      "input": "f 2",
+      "type": "normal",
+      "id": "head-breaker"
+    },
+    {
+      "name": "Rising Bo",
+      "input": "d 2",
+      "type": "normal",
+      "id": "rising-bo"
+    },
+    {
+      "name": "Side Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "side-kick"
+    },
+    {
+      "name": "Step Kick",
+      "input": "b 3",
+      "type": "normal",
+      "id": "step-kick"
+    },
+    {
+      "name": "Hinge Kick",
+      "input": "f 3",
+      "type": "normal",
+      "id": "hinge-kick"
+    },
+    {
+      "name": "Low Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-kick"
+    },
+    {
+      "name": "Spin Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "spin-kick"
+    },
+    {
+      "name": "Shaolin Sweep",
+      "input": "b 4",
+      "type": "normal",
+      "id": "shaolin-sweep"
+    },
+    {
+      "name": "Step Kick",
+      "input": "f 4",
+      "type": "normal",
+      "id": "step-kick"
+    },
+    {
+      "name": "Quick Step",
+      "input": "d 4",
+      "type": "normal",
+      "id": "quick-step"
+    },
+    {
+      "name": "Bo Sweep",
+      "input": "down-left 4",
+      "type": "normal",
+      "id": "bo-sweep"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Hook Strike",
+      "input": "1 1",
+      "type": "string",
+      "id": "hook-strike"
+    },
+    {
+      "name": "Downward Flower",
+      "input": "1 1 1",
+      "type": "string",
+      "id": "downward-flower"
+    },
+    {
+      "name": "Double Strike",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "double-strike"
+    },
+    {
+      "name": "Silent Thief",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "silent-thief"
+    },
+    {
+      "name": "Inner Peace",
+      "input": "b 1 2 3",
+      "type": "string",
+      "id": "inner-peace"
+    },
+    {
+      "name": "Heel Smash",
+      "input": "b 1 4",
+      "type": "string",
+      "id": "heel-smash"
+    },
+    {
+      "name": "Slide Kick",
+      "input": "b 1 4 3",
+      "type": "string",
+      "id": "slide-kick"
+    },
+    {
+      "name": "Trick Sweep",
+      "input": "b 1 4 d 4",
+      "type": "string",
+      "id": "trick-sweep"
+    },
+    {
+      "name": "Snapping Chop",
+      "input": "2 2",
+      "type": "string",
+      "id": "snapping-chop"
+    },
+    {
+      "name": "Side Slice",
+      "input": "2 2",
+      "type": "string",
+      "id": "side-slice"
+    },
+    {
+      "name": "Bo Lunge",
+      "input": "2 2 1",
+      "type": "string",
+      "id": "bo-lunge"
+    },
+    {
+      "name": "Sharp Teeth",
+      "input": "2 2 1",
+      "type": "string",
+      "id": "sharp-teeth"
+    },
+    {
+      "name": "Rising Boot",
+      "input": "2 4",
+      "type": "string",
+      "id": "rising-boot"
+    },
+    {
+      "name": "Rising Monk",
+      "input": "2 4",
+      "type": "string",
+      "id": "rising-monk"
+    },
+    {
+      "name": "Cross Back",
+      "input": "b 2 1",
+      "type": "string",
+      "id": "cross-back"
+    },
+    {
+      "name": "Stabilizer",
+      "input": "b 2 1 2 + 4",
+      "type": "string",
+      "id": "stabilizer"
+    },
+    {
+      "name": "Low Force",
+      "input": "b 2 1 4",
+      "type": "string",
+      "id": "low-force"
+    },
+    {
+      "name": "Leg Pass",
+      "input": "f 2 4",
+      "type": "string",
+      "id": "leg-pass"
+    },
+    {
+      "name": "Cross Kick",
+      "input": "f 2 4 3",
+      "type": "string",
+      "id": "cross-kick"
+    },
+    {
+      "name": "Honorable Kata",
+      "input": "f 2 d 1",
+      "type": "string",
+      "id": "honorable-kata"
+    },
+    {
+      "name": "Serving Blow",
+      "input": "f 2 d 1 u 2",
+      "type": "string",
+      "id": "serving-blow"
+    },
+    {
+      "name": "Chop Chop",
+      "input": "3 4",
+      "type": "string",
+      "id": "chop-chop"
+    },
+    {
+      "name": "Traditional Ways",
+      "input": "3 4 3",
+      "type": "string",
+      "id": "traditional-ways"
+    },
+    {
+      "name": "Szu",
+      "input": "b 3 4",
+      "type": "string",
+      "id": "szu"
+    },
+    {
+      "name": "Straight Arrow",
+      "input": "d f 2",
+      "type": "special",
+      "id": "straight-arrow"
+    },
+    {
+      "name": "Split Shot",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "split-shot"
+    },
+    {
+      "name": "Up Arrow",
+      "input": "d b 2",
+      "type": "special",
+      "id": "up-arrow"
+    },
+    {
+      "name": "Up Split Shot",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "up-split-shot"
+    },
+    {
+      "name": "Air Dive Kick",
+      "input": "(air) d 4",
+      "type": "normal",
+      "id": "air-dive-kick"
+    },
+    {
+      "name": "Air Shaolin Strike",
+      "input": "(air) d 4 + block",
+      "type": "normal",
+      "id": "air-shaolin-strike"
+    },
+    {
+      "name": "Lunge Kick",
+      "input": "b f 3",
+      "type": "special",
+      "id": "lunge-kick"
+    },
+    {
+      "name": "Fly Kick",
+      "input": "b f 3 + block",
+      "type": "special",
+      "id": "fly-kick"
+    },
+    {
+      "name": "Cartwheel Drop",
+      "input": "d b 4",
+      "type": "special",
+      "id": "cartwheel-drop"
+    },
+    {
+      "name": "Cartwheel Smash",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "cartwheel-smash"
+    },
+    {
+      "name": "Fire Quiver",
+      "input": "d d 1",
+      "type": "normal",
+      "id": "fire-quiver"
+    },
+    {
+      "name": "Stun Quiver",
+      "input": "d b 1",
+      "type": "special",
+      "id": "stun-quiver"
+    },
+    {
+      "name": "Straight Arrow",
+      "input": "d f 2",
+      "type": "special",
+      "id": "straight-arrow"
+    },
+    {
+      "name": "Vampiric Quiver",
+      "input": "down-right 1",
+      "type": "normal",
+      "id": "vampiric-quiver"
+    },
+    {
+      "name": "Split Shot",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "split-shot"
+    },
+    {
+      "name": "Air Straight Arrow",
+      "input": "(air) d f 2",
+      "type": "special",
+      "id": "air-straight-arrow"
+    },
+    {
+      "name": "Air Split Shot",
+      "input": "(air) d f 2 + block",
+      "type": "special",
+      "id": "air-split-shot"
+    },
+    {
+      "name": "Up Arrow",
+      "input": "d b 2",
+      "type": "special",
+      "id": "up-arrow"
+    },
+    {
+      "name": "Up Split Shot",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "up-split-shot"
+    },
+    {
+      "name": "Air Angle Arrow",
+      "input": "(air) d b 2",
+      "type": "special",
+      "id": "air-angle-arrow"
+    },
+    {
+      "name": "Air Angle Split Shot",
+      "input": "(air) d b 2 + block",
+      "type": "special",
+      "id": "air-angle-split-shot"
+    },
+    {
+      "name": "Air Down Arrow",
+      "input": "(air) d d 2",
+      "type": "normal",
+      "id": "air-down-arrow"
+    },
+    {
+      "name": "Air Split Down Arrow",
+      "input": "(air) d d 2 + block",
+      "type": "normal",
+      "id": "air-split-down-arrow"
+    },
+    {
+      "name": "Low Shot",
+      "input": "d d 2",
+      "type": "normal",
+      "id": "low-shot"
+    },
+    {
+      "name": "Bo Flame",
+      "input": "d b 1",
+      "type": "special",
+      "id": "bo-flame"
+    },
+    {
+      "name": "Bo Inferno",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "bo-inferno"
+    },
+    {
+      "name": "Bo Swat",
+      "input": "b f 4",
+      "type": "special",
+      "id": "bo-swat"
+    },
+    {
+      "name": "Bo Strike",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "bo-strike"
+    },
+    {
+      "name": "Bo Swing",
+      "input": "d b 3",
+      "type": "special",
+      "id": "bo-swing"
+    },
+    {
+      "name": "Bo Spin",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "bo-spin"
+    },
+    {
+      "name": "Low Bo Swing",
+      "input": "b d 3",
+      "type": "normal",
+      "id": "low-bo-swing"
+    },
+    {
+      "name": "Low Bo Spin",
+      "input": "b d 3 + block",
+      "type": "normal",
+      "id": "low-bo-spin"
+    },
+    {
+      "name": "Up Kick",
+      "input": "d b 3",
+      "type": "special",
+      "id": "up-kick"
+    },
+    {
+      "name": "Shaolin Drop",
+      "input": "d 4",
+      "type": "normal",
+      "id": "shaolin-drop"
+    },
+    {
+      "name": "Shaolin Slam",
+      "input": "d 4 + block",
+      "type": "normal",
+      "id": "shaolin-slam"
+    },
+    {
+      "name": "Rising Strike",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "rising-strike"
+    },
+    {
+      "name": "Shaolin Drop",
+      "input": "d 4",
+      "type": "normal",
+      "id": "shaolin-drop"
+    },
+    {
+      "name": "Shaolin Slam",
+      "input": "d 4 + block",
+      "type": "normal",
+      "id": "shaolin-slam"
+    },
+    {
+      "name": "Chakram",
+      "input": "b f 1",
+      "type": "special",
+      "id": "chakram"
+    },
+    {
+      "name": "Up",
+      "input": "hold u",
+      "type": "normal",
+      "id": "up"
+    },
+    {
+      "name": "Down",
+      "input": "hold d",
+      "type": "normal",
+      "id": "down"
+    },
+    {
+      "name": "Chak-A-Rang",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "chak-a-rang"
+    },
+    {
+      "name": "Low Chakram",
+      "input": "d b 1",
+      "type": "special",
+      "id": "low-chakram"
+    },
+    {
+      "name": "Low Chak-A-Rang",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "low-chak-a-rang"
+    },
+    {
+      "name": "Staff Infection",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "staff-infection"
+    },
+    {
+      "name": "Target Practice (Close)",
+      "input": "d f d b 2",
+      "type": "special",
+      "id": "target-practice-close"
+    },
+    {
+      "name": "Pinned Down (Mid)",
+      "input": "f b d d 1",
+      "type": "normal",
+      "id": "pinned-down-mid"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "u d f 4",
+      "type": "special",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "A Little Heart",
+      "input": "d f 2",
+      "type": "special",
+      "id": "a-little-heart"
+    },
+    {
+      "name": "Round About",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "round-about"
+    },
+    {
+      "name": "Where'd You Go",
+      "input": "throw or 1 + 3",
+      "type": "string",
+      "id": "whered-you-go"
+    },
+    {
+      "name": "Bullseye",
+      "input": "(air) d b 2",
+      "type": "special",
+      "id": "bullseye"
+    },
+    {
+      "name": "Burnt Out",
+      "input": "d b 1",
+      "type": "special",
+      "id": "burnt-out"
+    },
+    {
+      "name": "Decapitator",
+      "input": "b f 1",
+      "type": "special",
+      "id": "decapitator"
     }
   ]
 }

@@ -4,55 +4,526 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Palm Strike",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "palm-strike"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Down Strike",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "down-strike"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Low Poke",
+      "input": "d 1",
       "type": "normal",
-      "input": "3"
+      "id": "low-poke"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Crescent Punch",
+      "input": "2",
       "type": "normal",
-      "input": "4"
+      "id": "crescent-punch"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Doom Slice",
+      "input": "b 2",
+      "type": "normal",
+      "id": "doom-slice"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Flame Fist",
+      "input": "b 2",
+      "type": "normal",
+      "id": "flame-fist"
     },
     {
-      "name": "Fatality 1 (Stop Ahead)",
-      "input": "2462 (Mid)",
-      "type": "finisher"
+      "name": "Crushing Blow",
+      "input": "f 2",
+      "type": "normal",
+      "id": "crushing-blow"
     },
     {
-      "name": "Fatality 2 (Who's Next!)",
-      "input": "2468 (Mid)",
-      "type": "finisher"
+      "name": "Doom Blade",
+      "input": "f 2",
+      "type": "normal",
+      "id": "doom-blade"
     },
     {
-      "name": "Brutality (Shirai Ryu Fire)",
-      "input": "241 (Close)",
-      "type": "finisher"
+      "name": "Uppercut",
+      "input": "d 2",
+      "type": "normal",
+      "id": "uppercut"
+    },
+    {
+      "name": "Side Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "side-kick"
+    },
+    {
+      "name": "Shin Strike",
+      "input": "b 3",
+      "type": "normal",
+      "id": "shin-strike"
+    },
+    {
+      "name": "Hop Kick",
+      "input": "f 3",
+      "type": "normal",
+      "id": "hop-kick"
+    },
+    {
+      "name": "Toe Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "toe-kick"
+    },
+    {
+      "name": "Roundhouse",
+      "input": "4",
+      "type": "normal",
+      "id": "roundhouse"
+    },
+    {
+      "name": "Sweep",
+      "input": "b 4",
+      "type": "normal",
+      "id": "sweep"
+    },
+    {
+      "name": "Downfall",
+      "input": "b 4",
+      "type": "normal",
+      "id": "downfall"
+    },
+    {
+      "name": "Flame Heel",
+      "input": "f 4",
+      "type": "normal",
+      "id": "flame-heel"
+    },
+    {
+      "name": "Low Kick",
+      "input": "d 4",
+      "type": "normal",
+      "id": "low-kick"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Torment",
+      "input": "1 1",
+      "type": "string",
+      "id": "torment"
+    },
+    {
+      "name": "Damnation",
+      "input": "1 1 4",
+      "type": "string",
+      "id": "damnation"
+    },
+    {
+      "name": "Brimstone",
+      "input": "1 2",
+      "type": "string",
+      "id": "brimstone"
+    },
+    {
+      "name": "Gravedigger",
+      "input": "1 2 3",
+      "type": "string",
+      "id": "gravedigger"
+    },
+    {
+      "name": "Grievance",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "grievance"
+    },
+    {
+      "name": "Affliction",
+      "input": "b 1 2 1",
+      "type": "string",
+      "id": "affliction"
+    },
+    {
+      "name": "End Game",
+      "input": "b 1 2 1",
+      "type": "string",
+      "id": "end-game"
+    },
+    {
+      "name": "Eternal Flame",
+      "input": "2 1",
+      "type": "string",
+      "id": "eternal-flame"
+    },
+    {
+      "name": "Dead End",
+      "input": "2 1 2",
+      "type": "string",
+      "id": "dead-end"
+    },
+    {
+      "name": "Eternal Vengeance",
+      "input": "2 1 4",
+      "type": "string",
+      "id": "eternal-vengeance"
+    },
+    {
+      "name": "Judgement Day",
+      "input": "b 3 2",
+      "type": "string",
+      "id": "judgement-day"
+    },
+    {
+      "name": "Catastrophe",
+      "input": "b 3 2 f 2",
+      "type": "string",
+      "id": "catastrophe"
+    },
+    {
+      "name": "Soulless",
+      "input": "b 3 2 f 2",
+      "type": "string",
+      "id": "soulless"
+    },
+    {
+      "name": "Cataclysm",
+      "input": "f 4 2",
+      "type": "string",
+      "id": "cataclysm"
+    },
+    {
+      "name": "Teleport",
+      "input": "d b 3",
+      "type": "special",
+      "id": "teleport"
+    },
+    {
+      "name": "Cancel",
+      "input": "hold d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Cancel",
+      "input": "hold f",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Flameport",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "flameport"
+    },
+    {
+      "name": "Cancel",
+      "input": "hold d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Cancel",
+      "input": "hold f",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Air Teleport",
+      "input": "(air) d b 3",
+      "type": "special",
+      "id": "air-teleport"
+    },
+    {
+      "name": "Cancel",
+      "input": "hold d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Cancel",
+      "input": "hold f",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Air Flameport",
+      "input": "(air) d b 3 + block",
+      "type": "special",
+      "id": "air-flameport"
+    },
+    {
+      "name": "Cancel",
+      "input": "hold d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Cancel",
+      "input": "hold f",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Spear",
+      "input": "b f 1",
+      "type": "special",
+      "id": "spear"
+    },
+    {
+      "name": "Double Spear",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "double-spear"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Takedown",
+      "input": "b f 4",
+      "type": "special",
+      "id": "takedown"
+    },
+    {
+      "name": "Takeout",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "takeout"
+    },
+    {
+      "name": "Fire Ball",
+      "input": "d b 1",
+      "type": "special",
+      "id": "fire-ball"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Hell Ball",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "hell-ball"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Hell Fire",
+      "input": "d b 2",
+      "type": "special",
+      "id": "hell-fire"
+    },
+    {
+      "name": "Hell-Ferno",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "hell-ferno"
+    },
+    {
+      "name": "Flame Aura",
+      "input": "d b 4",
+      "type": "special",
+      "id": "flame-aura"
+    },
+    {
+      "name": "Burner",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "burner"
+    },
+    {
+      "name": "Minion Grab",
+      "input": "d b 4",
+      "type": "special",
+      "id": "minion-grab"
+    },
+    {
+      "name": "Minion Hold",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "minion-hold"
+    },
+    {
+      "name": "Minion Charge",
+      "input": "d b 1",
+      "type": "special",
+      "id": "minion-charge"
+    },
+    {
+      "name": "Minion Slam",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "minion-slam"
+    },
+    {
+      "name": "Minion Drop",
+      "input": "d b 2",
+      "type": "special",
+      "id": "minion-drop"
+    },
+    {
+      "name": "Minion Strike",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "minion-strike"
+    },
+    {
+      "name": "From Hell",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "from-hell"
+    },
+    {
+      "name": "Teleport",
+      "input": "stance + block + b",
+      "type": "normal",
+      "id": "teleport"
+    },
+    {
+      "name": "Delay",
+      "input": "hold stance + block",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Stop Ahead (Mid)",
+      "input": "d b f 2",
+      "type": "special",
+      "id": "stop-ahead-mid"
+    },
+    {
+      "name": "Who's Next! (Mid)",
+      "input": "d b f u",
+      "type": "normal",
+      "id": "whos-next-mid"
+    },
+    {
+      "name": "Toasty (Mid)",
+      "input": "u u 2",
+      "type": "normal",
+      "id": "toasty-mid"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "d d 1",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Get Over Here",
+      "input": "b f 1 + block block",
+      "type": "special",
+      "id": "get-over-here"
+    },
+    {
+      "name": "Shirai Ryu Fire",
+      "input": "(air) d b 3 + block",
+      "type": "special",
+      "id": "shirai-ryu-fire"
+    },
+    {
+      "name": "Just A Scratch",
+      "input": "f 2",
+      "type": "normal",
+      "id": "just-a-scratch"
+    },
+    {
+      "name": "Nether Hole",
+      "input": "d b 1",
+      "type": "special",
+      "id": "nether-hole"
+    },
+    {
+      "name": "Little Devil",
+      "input": "d b 4",
+      "type": "special",
+      "id": "little-devil"
     }
   ]
 }

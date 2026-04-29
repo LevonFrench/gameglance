@@ -4,40 +4,538 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Straight Jab",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "straight-jab"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Tongue Slap",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "tongue-slap"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Quick Scratch",
+      "input": "d 1",
       "type": "normal",
-      "input": "3"
+      "id": "quick-scratch"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Rising Claw",
+      "input": "2",
       "type": "normal",
-      "input": "4"
+      "id": "rising-claw"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Slithering Slaps",
+      "input": "b 2",
+      "type": "normal",
+      "id": "slithering-slaps"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Lizard Lunge",
+      "input": "f 2",
+      "type": "normal",
+      "id": "lizard-lunge"
+    },
+    {
+      "name": "Saurian Cut",
+      "input": "d 2",
+      "type": "normal",
+      "id": "saurian-cut"
+    },
+    {
+      "name": "Dragon Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "dragon-kick"
+    },
+    {
+      "name": "Double Down",
+      "input": "b 3",
+      "type": "normal",
+      "id": "double-down"
+    },
+    {
+      "name": "Spinning Carnivore",
+      "input": "f 3",
+      "type": "normal",
+      "id": "spinning-carnivore"
+    },
+    {
+      "name": "Low Heel",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-heel"
+    },
+    {
+      "name": "Gecko Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "gecko-kick"
+    },
+    {
+      "name": "Reptilious Sweep",
+      "input": "b 4",
+      "type": "normal",
+      "id": "reptilious-sweep"
+    },
+    {
+      "name": "Quick Knee",
+      "input": "f 4",
+      "type": "normal",
+      "id": "quick-knee"
+    },
+    {
+      "name": "Gut Crunch",
+      "input": "d 4",
+      "type": "normal",
+      "id": "gut-crunch"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Crawler",
+      "input": "1 2",
+      "type": "string",
+      "id": "crawler"
+    },
+    {
+      "name": "Slink",
+      "input": "1 2 1",
+      "type": "string",
+      "id": "slink"
+    },
+    {
+      "name": "Cold Blooded",
+      "input": "1 2 3",
+      "type": "string",
+      "id": "cold-blooded"
+    },
+    {
+      "name": "Deadly Venom",
+      "input": "1 4",
+      "type": "string",
+      "id": "deadly-venom"
+    },
+    {
+      "name": "Just Hatched",
+      "input": "1 4 1",
+      "type": "string",
+      "id": "just-hatched"
+    },
+    {
+      "name": "Sneaky Snake",
+      "input": "b 1 d 4",
+      "type": "string",
+      "id": "sneaky-snake"
+    },
+    {
+      "name": "Hybrid Krush",
+      "input": "2 1",
+      "type": "string",
+      "id": "hybrid-krush"
+    },
+    {
+      "name": "Evolution",
+      "input": "2 1 2",
+      "type": "string",
+      "id": "evolution"
+    },
+    {
+      "name": "Carnivor Bash",
+      "input": "2 1 2 4",
+      "type": "string",
+      "id": "carnivor-bash"
+    },
+    {
+      "name": "Amphibian Charge",
+      "input": "f 2 1",
+      "type": "string",
+      "id": "amphibian-charge"
+    },
+    {
+      "name": "Slithering Slam",
+      "input": "f 2 1 + 3",
+      "type": "string",
+      "id": "slithering-slam"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Swamp Slam",
+      "input": "f 2 1 1 + 3",
+      "type": "string",
+      "id": "swamp-slam"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Nocturnal",
+      "input": "3 4",
+      "type": "string",
+      "id": "nocturnal"
+    },
+    {
+      "name": "Shedding Skin",
+      "input": "3 4 d 4",
+      "type": "string",
+      "id": "shedding-skin"
+    },
+    {
+      "name": "Toxic",
+      "input": "b 3 4",
+      "type": "string",
+      "id": "toxic"
+    },
+    {
+      "name": "Scaly Serpent",
+      "input": "f 3 b 4",
+      "type": "string",
+      "id": "scaly-serpent"
+    },
+    {
+      "name": "Bad Blood",
+      "input": "f 4 1",
+      "type": "string",
+      "id": "bad-blood"
+    },
+    {
+      "name": "Slime Trail",
+      "input": "f 4 1 2",
+      "type": "string",
+      "id": "slime-trail"
+    },
+    {
+      "name": "Forceball",
+      "input": "d f 3",
+      "type": "special",
+      "id": "forceball"
+    },
+    {
+      "name": "Floating Ball",
+      "input": "d d + block",
+      "type": "normal",
+      "id": "floating-ball"
+    },
+    {
+      "name": "Fast Slimeball",
+      "input": "d f 3 + block",
+      "type": "special",
+      "id": "fast-slimeball"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 3",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Floating Ball",
+      "input": "d d + block",
+      "type": "normal",
+      "id": "floating-ball"
+    },
+    {
+      "name": "Slow Forceball",
+      "input": "d b 3",
+      "type": "special",
+      "id": "slow-forceball"
+    },
+    {
+      "name": "Floating Ball",
+      "input": "d d + block",
+      "type": "normal",
+      "id": "floating-ball"
+    },
+    {
+      "name": "Creeping Slimeball",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "creeping-slimeball"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 3",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Floating Ball",
+      "input": "d d + block",
+      "type": "normal",
+      "id": "floating-ball"
+    },
+    {
+      "name": "Slide",
+      "input": "b f 4",
+      "type": "special",
+      "id": "slide"
+    },
+    {
+      "name": "Slippery Slide",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "slippery-slide"
+    },
+    {
+      "name": "Acid Spit",
+      "input": "d f 1",
+      "type": "special",
+      "id": "acid-spit"
+    },
+    {
+      "name": "Acid Puddle",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "acid-puddle"
+    },
+    {
+      "name": "Klaw Pounce",
+      "input": "d b 4",
+      "type": "special",
+      "id": "klaw-pounce"
+    },
+    {
+      "name": "Klaw Bounce",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "klaw-bounce"
+    },
+    {
+      "name": "Close Klaw Pounce",
+      "input": "d b 4 b",
+      "type": "special",
+      "id": "close-klaw-pounce"
+    },
+    {
+      "name": "Close Klaw Bounce",
+      "input": "d b 4 + block b",
+      "type": "special",
+      "id": "close-klaw-bounce"
+    },
+    {
+      "name": "Flar Klaw Pounce",
+      "input": "d b 4 f",
+      "type": "special",
+      "id": "flar-klaw-pounce"
+    },
+    {
+      "name": "Far Klaw Bounce",
+      "input": "d b 4 + block f",
+      "type": "special",
+      "id": "far-klaw-bounce"
+    },
+    {
+      "name": "Klaw Swipe",
+      "input": "d b 2",
+      "type": "special",
+      "id": "klaw-swipe"
+    },
+    {
+      "name": "Klaw Slash",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "klaw-slash"
+    },
+    {
+      "name": "Reptilian Dash",
+      "input": "b f 2",
+      "type": "special",
+      "id": "reptilian-dash"
+    },
+    {
+      "name": "Reptilian Smash",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "reptilian-smash"
+    },
+    {
+      "name": "Stealth",
+      "input": "d d 3",
+      "type": "normal",
+      "id": "stealth"
+    },
+    {
+      "name": "Invisible",
+      "input": "hold 3",
+      "type": "normal",
+      "id": "invisible"
+    },
+    {
+      "name": "Invisibility",
+      "input": "d d 3 + block",
+      "type": "normal",
+      "id": "invisibility"
+    },
+    {
+      "name": "Basilisk",
+      "input": "d d 3",
+      "type": "normal",
+      "id": "basilisk"
+    },
+    {
+      "name": "Basilisk Runner",
+      "input": "d d 3 + block",
+      "type": "normal",
+      "id": "basilisk-runner"
+    },
+    {
+      "name": "Poison Gas",
+      "input": "d d 3",
+      "type": "normal",
+      "id": "poison-gas"
+    },
+    {
+      "name": "Toxic Fumes",
+      "input": "d d 3 + block",
+      "type": "normal",
+      "id": "toxic-fumes"
+    },
+    {
+      "name": "Reptile Disfunction",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "reptile-disfunction"
+    },
+    {
+      "name": "Delay",
+      "input": "hold stance + block",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Bad Breath (Close)",
+      "input": "d f d f 4",
+      "type": "special",
+      "id": "bad-breath-close"
+    },
+    {
+      "name": "Acid Bath (Close)",
+      "input": "d d b f 1",
+      "type": "special",
+      "id": "acid-bath-close"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "f d d block",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Acid Wash",
+      "input": "d f 1",
+      "type": "special",
+      "id": "acid-wash"
+    },
+    {
+      "name": "Heart Attack",
+      "input": "b 1",
+      "type": "normal",
+      "id": "heart-attack"
+    },
+    {
+      "name": "Puke",
+      "input": "f 2 1 + 3",
+      "type": "string",
+      "id": "puke"
+    },
+    {
+      "name": "Knee Kapper",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "knee-kapper"
+    },
+    {
+      "name": "Bo Dash",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "bo-dash"
+    },
+    {
+      "name": "Bubble Head",
+      "input": "d f 1",
+      "type": "special",
+      "id": "bubble-head"
     }
   ]
 }

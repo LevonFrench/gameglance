@@ -4,40 +4,646 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Slap",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "slap"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Lunging Strike",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "lunging-strike"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Sai Poke",
+      "input": "b 1",
       "type": "normal",
-      "input": "3"
+      "id": "sai-poke"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Multi Slaps",
+      "input": "f 1",
       "type": "normal",
-      "input": "4"
+      "id": "multi-slaps"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Sai-Fan",
+      "input": "f 1",
+      "type": "normal",
+      "id": "sai-fan"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Low Slash",
+      "input": "d 1",
+      "type": "normal",
+      "id": "low-slash"
+    },
+    {
+      "name": "Scratches",
+      "input": "2",
+      "type": "normal",
+      "id": "scratches"
+    },
+    {
+      "name": "Sharp Nails",
+      "input": "b 2",
+      "type": "normal",
+      "id": "sharp-nails"
+    },
+    {
+      "name": "Up Sai",
+      "input": "b 2",
+      "type": "normal",
+      "id": "up-sai"
+    },
+    {
+      "name": "Quick Scratch",
+      "input": "f 2",
+      "type": "normal",
+      "id": "quick-scratch"
+    },
+    {
+      "name": "Rising Claw",
+      "input": "d 2",
+      "type": "normal",
+      "id": "rising-claw"
+    },
+    {
+      "name": "Ax Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "ax-kick"
+    },
+    {
+      "name": "Rising Boots",
+      "input": "b 3",
+      "type": "normal",
+      "id": "rising-boots"
+    },
+    {
+      "name": "Somersault Kick",
+      "input": "f 3",
+      "type": "normal",
+      "id": "somersault-kick"
+    },
+    {
+      "name": "Shin Cracker",
+      "input": "d 3",
+      "type": "normal",
+      "id": "shin-cracker"
+    },
+    {
+      "name": "High Heel",
+      "input": "u 3",
+      "type": "normal",
+      "id": "high-heel"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Brutal Boot",
+      "input": "4",
+      "type": "normal",
+      "id": "brutal-boot"
+    },
+    {
+      "name": "Corkscrew",
+      "input": "b 4",
+      "type": "normal",
+      "id": "corkscrew"
+    },
+    {
+      "name": "Crab Step",
+      "input": "f 4",
+      "type": "normal",
+      "id": "crab-step"
+    },
+    {
+      "name": "Low Heel",
+      "input": "d 4",
+      "type": "normal",
+      "id": "low-heel"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Slap Around",
+      "input": "1 2",
+      "type": "string",
+      "id": "slap-around"
+    },
+    {
+      "name": "Vicious",
+      "input": "1 2 3",
+      "type": "string",
+      "id": "vicious"
+    },
+    {
+      "name": "Flip Kick",
+      "input": "1 2 4",
+      "type": "string",
+      "id": "flip-kick"
+    },
+    {
+      "name": "Double Chop",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "double-chop"
+    },
+    {
+      "name": "Gut Stab",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "gut-stab"
+    },
+    {
+      "name": "Quick Taste",
+      "input": "b 1 2 1 + 3",
+      "type": "string",
+      "id": "quick-taste"
+    },
+    {
+      "name": "Extend",
+      "input": "u u 2",
+      "type": "normal",
+      "id": "extend"
+    },
+    {
+      "name": "Throat Piercing",
+      "input": "b 1 2 1 + 3",
+      "type": "string",
+      "id": "throat-piercing"
+    },
+    {
+      "name": "Extend",
+      "input": "d d 2",
+      "type": "normal",
+      "id": "extend"
+    },
+    {
+      "name": "Pretty One",
+      "input": "f 1 2",
+      "type": "string",
+      "id": "pretty-one"
+    },
+    {
+      "name": "Chain Hands",
+      "input": "f 1 2",
+      "type": "string",
+      "id": "chain-hands"
+    },
+    {
+      "name": "Sai-Onara",
+      "input": "f 1 2 + 4",
+      "type": "string",
+      "id": "sai-onara"
+    },
+    {
+      "name": "Double Impale",
+      "input": "f 1 2 + 4 1 + 3",
+      "type": "string",
+      "id": "double-impale"
+    },
+    {
+      "name": "Heel Stomp",
+      "input": "f 1 2 b 4",
+      "type": "string",
+      "id": "heel-stomp"
+    },
+    {
+      "name": "Boot Lunge",
+      "input": "f 1 4",
+      "type": "string",
+      "id": "boot-lunge"
+    },
+    {
+      "name": "Cartwheel",
+      "input": "f 1 4 3",
+      "type": "string",
+      "id": "cartwheel"
+    },
+    {
+      "name": "Knee Slapper",
+      "input": "2 1",
+      "type": "string",
+      "id": "knee-slapper"
+    },
+    {
+      "name": "Overhead Heel",
+      "input": "2 1 u 4",
+      "type": "string",
+      "id": "overhead-heel"
+    },
+    {
+      "name": "Knee Stab",
+      "input": "b 2 1",
+      "type": "string",
+      "id": "knee-stab"
+    },
+    {
+      "name": "Sadistic Ways",
+      "input": "b 2 1 2 + 4",
+      "type": "string",
+      "id": "sadistic-ways"
+    },
+    {
+      "name": "Deep Scratches",
+      "input": "b 2 2",
+      "type": "string",
+      "id": "deep-scratches"
+    },
+    {
+      "name": "Rider",
+      "input": "b 2 2 1 + 3",
+      "type": "string",
+      "id": "rider"
+    },
+    {
+      "name": "Reverse Heel",
+      "input": "f 2 3",
+      "type": "string",
+      "id": "reverse-heel"
+    },
+    {
+      "name": "Spinning Heel",
+      "input": "f 2 3 4",
+      "type": "string",
+      "id": "spinning-heel"
+    },
+    {
+      "name": "Tarkatan Knee",
+      "input": "b 3 4",
+      "type": "string",
+      "id": "tarkatan-knee"
+    },
+    {
+      "name": "Pounding Heel",
+      "input": "b 3 4 3 4",
+      "type": "string",
+      "id": "pounding-heel"
+    },
+    {
+      "name": "Stinger",
+      "input": "f 3 4",
+      "type": "string",
+      "id": "stinger"
+    },
+    {
+      "name": "Over the Top",
+      "input": "f 3 4 3",
+      "type": "string",
+      "id": "over-the-top"
+    },
+    {
+      "name": "Half Blood",
+      "input": "f 3 4 4",
+      "type": "string",
+      "id": "half-blood"
+    },
+    {
+      "name": "Wrap Around",
+      "input": "4 u 3",
+      "type": "string",
+      "id": "wrap-around"
+    },
+    {
+      "name": "Neck Snapper",
+      "input": "4 u 3 1 + 2",
+      "type": "string",
+      "id": "neck-snapper"
+    },
+    {
+      "name": "Beast or Beauty",
+      "input": "f 4 4",
+      "type": "string",
+      "id": "beast-or-beauty"
+    },
+    {
+      "name": "Tele-Kick",
+      "input": "d d 3",
+      "type": "normal",
+      "id": "tele-kick"
+    },
+    {
+      "name": "Tele-Drop",
+      "input": "d d 3 + block",
+      "type": "normal",
+      "id": "tele-drop"
+    },
+    {
+      "name": "Air Tele-Kick",
+      "input": "(air) d d 3",
+      "type": "normal",
+      "id": "air-tele-kick"
+    },
+    {
+      "name": "Air Tele-Drop",
+      "input": "(air) d d 3 + block",
+      "type": "normal",
+      "id": "air-tele-drop"
+    },
+    {
+      "name": "Ball Roll",
+      "input": "b d 4",
+      "type": "normal",
+      "id": "ball-roll"
+    },
+    {
+      "name": "Flip 'n' Roll",
+      "input": "b d 4 + block",
+      "type": "normal",
+      "id": "flip-n-roll"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Sai Blast",
+      "input": "b f 1",
+      "type": "special",
+      "id": "sai-blast"
+    },
+    {
+      "name": "Double Sai Blast",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "double-sai-blast"
+    },
+    {
+      "name": "Air Sai Blast",
+      "input": "(air) b f 1",
+      "type": "special",
+      "id": "air-sai-blast"
+    },
+    {
+      "name": "Air Double Sai Blast",
+      "input": "(air) b f 1 + block",
+      "type": "special",
+      "id": "air-double-sai-blast"
+    },
+    {
+      "name": "Low Sai",
+      "input": "b f 3",
+      "type": "special",
+      "id": "low-sai"
+    },
+    {
+      "name": "Double Low Sai",
+      "input": "b f 3 + block",
+      "type": "special",
+      "id": "double-low-sai"
+    },
+    {
+      "name": "Fade",
+      "input": "d d 2",
+      "type": "normal",
+      "id": "fade"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Vanish",
+      "input": "d d 2 + block",
+      "type": "normal",
+      "id": "vanish"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Fade Towards",
+      "input": "b f 2",
+      "type": "special",
+      "id": "fade-towards"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Vanish Towards",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "vanish-towards"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Fade Away",
+      "input": "f b 2",
+      "type": "normal",
+      "id": "fade-away"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Vanish Away",
+      "input": "f b 2 + block",
+      "type": "normal",
+      "id": "vanish-away"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Low Pounce",
+      "input": "d b 4",
+      "type": "special",
+      "id": "low-pounce"
+    },
+    {
+      "name": "Dislocate",
+      "input": "f f 1",
+      "type": "normal",
+      "id": "dislocate"
+    },
+    {
+      "name": "Back Ride",
+      "input": "d d 2",
+      "type": "normal",
+      "id": "back-ride"
+    },
+    {
+      "name": "High Pounce",
+      "input": "d b 3",
+      "type": "special",
+      "id": "high-pounce"
+    },
+    {
+      "name": "Stab",
+      "input": "d d 2",
+      "type": "normal",
+      "id": "stab"
+    },
+    {
+      "name": "Double Kick",
+      "input": "f f 4",
+      "type": "normal",
+      "id": "double-kick"
+    },
+    {
+      "name": "Let Us Dance",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "let-us-dance"
+    },
+    {
+      "name": "(Air)",
+      "input": "(air) stance + block",
+      "type": "normal",
+      "id": "air"
+    },
+    {
+      "name": "Face Feast (Close)",
+      "input": "d b d b 3",
+      "type": "special",
+      "id": "face-feast-close"
+    },
+    {
+      "name": "Tasty Treat (Close)",
+      "input": "f b f b 2",
+      "type": "special",
+      "id": "tasty-treat-close"
+    },
+    {
+      "name": "Man-Eater (Close)",
+      "input": "d d d d 4",
+      "type": "normal",
+      "id": "man-eater-close"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "d d d 1",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "High Roller",
+      "input": "b d 4",
+      "type": "normal",
+      "id": "high-roller"
+    },
+    {
+      "name": "Tele-Splat",
+      "input": "d d 3",
+      "type": "normal",
+      "id": "tele-splat"
+    },
+    {
+      "name": "Impaler",
+      "input": "b 2 1 2 + 4",
+      "type": "string",
+      "id": "impaler"
+    },
+    {
+      "name": "Fun Ride",
+      "input": "b 2 2 1 + 3",
+      "type": "string",
+      "id": "fun-ride"
+    },
+    {
+      "name": "Early Lunch",
+      "input": "b 1 2 1 + 3 u u 2",
+      "type": "string",
+      "id": "early-lunch"
+    },
+    {
+      "name": "Hidden Brutality",
+      "input": "d b 4 b b 1 d d d and hold 2",
+      "type": "string",
+      "id": "hidden-brutality"
     }
   ]
 }

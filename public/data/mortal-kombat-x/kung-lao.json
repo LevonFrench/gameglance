@@ -4,40 +4,598 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Shaolin Punch",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "shaolin-punch"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Quick Chop",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "quick-chop"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Downward Hook",
+      "input": "f 1",
       "type": "normal",
-      "input": "3"
+      "id": "downward-hook"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Low Poke",
+      "input": "d 1",
       "type": "normal",
-      "input": "4"
+      "id": "low-poke"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Straight Jab",
+      "input": "2",
+      "type": "normal",
+      "id": "straight-jab"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Hat Slice",
+      "input": "b 2",
+      "type": "normal",
+      "id": "hat-slice"
+    },
+    {
+      "name": "Face Smash",
+      "input": "f 2",
+      "type": "normal",
+      "id": "face-smash"
+    },
+    {
+      "name": "Rising Hat",
+      "input": "d 2",
+      "type": "normal",
+      "id": "rising-hat"
+    },
+    {
+      "name": "High Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "high-kick"
+    },
+    {
+      "name": "Hinge Kick",
+      "input": "b 3",
+      "type": "normal",
+      "id": "hinge-kick"
+    },
+    {
+      "name": "Side Kick",
+      "input": "f 3",
+      "type": "normal",
+      "id": "side-kick"
+    },
+    {
+      "name": "Low Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-kick"
+    },
+    {
+      "name": "Spin Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "spin-kick"
+    },
+    {
+      "name": "Spinning Hat",
+      "input": "b 4",
+      "type": "normal",
+      "id": "spinning-hat"
+    },
+    {
+      "name": "Flip Kick",
+      "input": "f 4",
+      "type": "normal",
+      "id": "flip-kick"
+    },
+    {
+      "name": "Full Sweep",
+      "input": "d 4",
+      "type": "normal",
+      "id": "full-sweep"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Windy Palm",
+      "input": "1 1",
+      "type": "string",
+      "id": "windy-palm"
+    },
+    {
+      "name": "Fist Fury",
+      "input": "1 1 2 1 2",
+      "type": "string",
+      "id": "fist-fury"
+    },
+    {
+      "name": "Chain Fist",
+      "input": "1 1 2 1 2 4",
+      "type": "string",
+      "id": "chain-fist"
+    },
+    {
+      "name": "Iron Brrom",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "iron-brrom"
+    },
+    {
+      "name": "Lead The Way",
+      "input": "b 1 2 2 + 4",
+      "type": "string",
+      "id": "lead-the-way"
+    },
+    {
+      "name": "Plum Flower",
+      "input": "f 1 4",
+      "type": "string",
+      "id": "plum-flower"
+    },
+    {
+      "name": "Healing Wind",
+      "input": "2 1",
+      "type": "string",
+      "id": "healing-wind"
+    },
+    {
+      "name": "Razor Rim",
+      "input": "b 2 2",
+      "type": "string",
+      "id": "razor-rim"
+    },
+    {
+      "name": "Double Yang",
+      "input": "f 2 1",
+      "type": "string",
+      "id": "double-yang"
+    },
+    {
+      "name": "Dragon Step",
+      "input": "f 2 1 d 1",
+      "type": "string",
+      "id": "dragon-step"
+    },
+    {
+      "name": "Graceful Cat",
+      "input": "f 2 3",
+      "type": "string",
+      "id": "graceful-cat"
+    },
+    {
+      "name": "Aggressive Tiger",
+      "input": "b 3 2",
+      "type": "string",
+      "id": "aggressive-tiger"
+    },
+    {
+      "name": "Heavy Mountain",
+      "input": "b 3 2 1",
+      "type": "string",
+      "id": "heavy-mountain"
+    },
+    {
+      "name": "Mabu",
+      "input": "f 3 d 3",
+      "type": "string",
+      "id": "mabu"
+    },
+    {
+      "name": "Twin Lock",
+      "input": "f 3 4",
+      "type": "string",
+      "id": "twin-lock"
+    },
+    {
+      "name": "Butterfly Kick",
+      "input": "4 4",
+      "type": "string",
+      "id": "butterfly-kick"
+    },
+    {
+      "name": "Spin",
+      "input": "d f 1",
+      "type": "special",
+      "id": "spin"
+    },
+    {
+      "name": "Vortex",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "vortex"
+    },
+    {
+      "name": "Dive Kick",
+      "input": "(air) d 4",
+      "type": "normal",
+      "id": "dive-kick"
+    },
+    {
+      "name": "Multi Kick",
+      "input": "(air) d 4 + block",
+      "type": "normal",
+      "id": "multi-kick"
+    },
+    {
+      "name": "Teleport",
+      "input": "d u",
+      "type": "normal",
+      "id": "teleport"
+    },
+    {
+      "name": "Hammer Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "hammer-punch"
+    },
+    {
+      "name": "Teleport Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "teleport-kick"
+    },
+    {
+      "name": "Drop Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "drop-kick"
+    },
+    {
+      "name": "Teleport Throw",
+      "input": "1",
+      "type": "normal",
+      "id": "teleport-throw"
+    },
+    {
+      "name": "Advanced Teleportation",
+      "input": "d u + block",
+      "type": "normal",
+      "id": "advanced-teleportation"
+    },
+    {
+      "name": "Hammer Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "hammer-punch"
+    },
+    {
+      "name": "Teleport Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "teleport-kick"
+    },
+    {
+      "name": "Drop Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "drop-kick"
+    },
+    {
+      "name": "Teleport Throw",
+      "input": "1",
+      "type": "normal",
+      "id": "teleport-throw"
+    },
+    {
+      "name": "Enhance Throw",
+      "input": "1 block",
+      "type": "normal",
+      "id": "enhance-throw"
+    },
+    {
+      "name": "Delay",
+      "input": "hold block",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Tornado",
+      "input": "d f 1",
+      "type": "special",
+      "id": "tornado"
+    },
+    {
+      "name": "Spin Forward",
+      "input": "hold 1 press f",
+      "type": "normal",
+      "id": "spin-forward"
+    },
+    {
+      "name": "Spin Away",
+      "input": "hold 1 press b",
+      "type": "normal",
+      "id": "spin-away"
+    },
+    {
+      "name": "Cyclone",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "cyclone"
+    },
+    {
+      "name": "Hat Toss",
+      "input": "b f 2",
+      "type": "special",
+      "id": "hat-toss"
+    },
+    {
+      "name": "Hat Up",
+      "input": "u",
+      "type": "normal",
+      "id": "hat-up"
+    },
+    {
+      "name": "Hat Down",
+      "input": "d",
+      "type": "normal",
+      "id": "hat-down"
+    },
+    {
+      "name": "Hat Dance",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "hat-dance"
+    },
+    {
+      "name": "Hat Spin",
+      "input": "d b 1",
+      "type": "special",
+      "id": "hat-spin"
+    },
+    {
+      "name": "Orbiting Hat",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "orbiting-hat"
+    },
+    {
+      "name": "Hat Grinder",
+      "input": "b f 2",
+      "type": "special",
+      "id": "hat-grinder"
+    },
+    {
+      "name": "Buzz Saw",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "buzz-saw"
+    },
+    {
+      "name": "Grind",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "grind"
+    },
+    {
+      "name": "Upward Grinder",
+      "input": "d f 2",
+      "type": "special",
+      "id": "upward-grinder"
+    },
+    {
+      "name": "Upward Buzz Saw",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "upward-buzz-saw"
+    },
+    {
+      "name": "Grind",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "grind"
+    },
+    {
+      "name": "Low Grinder",
+      "input": "d b 2",
+      "type": "special",
+      "id": "low-grinder"
+    },
+    {
+      "name": "Low Buzz Saw",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "low-buzz-saw"
+    },
+    {
+      "name": "Grind",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "grind"
+    },
+    {
+      "name": "Hat Throw",
+      "input": "b f 2",
+      "type": "special",
+      "id": "hat-throw"
+    },
+    {
+      "name": "Hat Up",
+      "input": "u",
+      "type": "normal",
+      "id": "hat-up"
+    },
+    {
+      "name": "Hat Down",
+      "input": "d",
+      "type": "normal",
+      "id": "hat-down"
+    },
+    {
+      "name": "Hat-A-Rang",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "hat-a-rang"
+    },
+    {
+      "name": "Hat Trap",
+      "input": "d f 2",
+      "type": "special",
+      "id": "hat-trap"
+    },
+    {
+      "name": "Forward Low Hat Trap",
+      "input": "d f 2 d",
+      "type": "special",
+      "id": "forward-low-hat-trap"
+    },
+    {
+      "name": "Away Low Hat Trap",
+      "input": "d b 2 d",
+      "type": "special",
+      "id": "away-low-hat-trap"
+    },
+    {
+      "name": "Away Hat Trap",
+      "input": "d b 2",
+      "type": "special",
+      "id": "away-hat-trap"
+    },
+    {
+      "name": "High Hat Trap",
+      "input": "d d 2",
+      "type": "normal",
+      "id": "high-hat-trap"
+    },
+    {
+      "name": "Hat Call Back",
+      "input": "d d 2",
+      "type": "normal",
+      "id": "hat-call-back"
+    },
+    {
+      "name": "Heavy Call Back",
+      "input": "d d 2 + BL",
+      "type": "normal",
+      "id": "heavy-call-back"
+    },
+    {
+      "name": "Head Trauma",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "head-trauma"
+    },
+    {
+      "name": "Face Grind (Close)",
+      "input": "d f d b 4",
+      "type": "special",
+      "id": "face-grind-close"
+    },
+    {
+      "name": "Flower Pot (Close)",
+      "input": "d f d b 1",
+      "type": "special",
+      "id": "flower-pot-close"
+    },
+    {
+      "name": "Hat Split (Close)",
+      "input": "b f b 3",
+      "type": "special",
+      "id": "hat-split-close"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "d f d 3",
+      "type": "special",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Open Wide",
+      "input": "throw or 1 + 3",
+      "type": "string",
+      "id": "open-wide"
+    },
+    {
+      "name": "Klassic Toss",
+      "input": "b f 2",
+      "type": "special",
+      "id": "klassic-toss"
+    },
+    {
+      "name": "Spin Cycle",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "spin-cycle"
+    },
+    {
+      "name": "Grind Away",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "grind-away"
+    },
+    {
+      "name": "Z Hat",
+      "input": "d d 2",
+      "type": "normal",
+      "id": "z-hat"
     }
   ]
 }

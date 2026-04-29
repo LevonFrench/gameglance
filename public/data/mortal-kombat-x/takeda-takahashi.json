@@ -4,40 +4,748 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Straight Jab",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "straight-jab"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Whip Around",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "whip-around"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Back Slash",
+      "input": "b 1",
       "type": "normal",
-      "input": "3"
+      "id": "back-slash"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Strong Lunge",
+      "input": "f 1",
       "type": "normal",
-      "input": "4"
+      "id": "strong-lunge"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Low Slash",
+      "input": "down-right 1",
+      "type": "normal",
+      "id": "low-slash"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Low Chop",
+      "input": "d 1",
+      "type": "normal",
+      "id": "low-chop"
+    },
+    {
+      "name": "Back Slash",
+      "input": "2",
+      "type": "normal",
+      "id": "back-slash"
+    },
+    {
+      "name": "Downward Slice",
+      "input": "2",
+      "type": "normal",
+      "id": "downward-slice"
+    },
+    {
+      "name": "Downward Slap",
+      "input": "b 2",
+      "type": "normal",
+      "id": "downward-slap"
+    },
+    {
+      "name": "Spinning Blade",
+      "input": "b 2",
+      "type": "normal",
+      "id": "spinning-blade"
+    },
+    {
+      "name": "Piston Punch",
+      "input": "f 2",
+      "type": "normal",
+      "id": "piston-punch"
+    },
+    {
+      "name": "Rising Fist",
+      "input": "d 2",
+      "type": "normal",
+      "id": "rising-fist"
+    },
+    {
+      "name": "Hinge Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "hinge-kick"
+    },
+    {
+      "name": "Step Kick",
+      "input": "b 3",
+      "type": "normal",
+      "id": "step-kick"
+    },
+    {
+      "name": "Double Kick",
+      "input": "f 3",
+      "type": "normal",
+      "id": "double-kick"
+    },
+    {
+      "name": "Side Step",
+      "input": "d 3",
+      "type": "normal",
+      "id": "side-step"
+    },
+    {
+      "name": "High Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "high-kick"
+    },
+    {
+      "name": "Quick Sweep",
+      "input": "b 4",
+      "type": "normal",
+      "id": "quick-sweep"
+    },
+    {
+      "name": "Flying Feet",
+      "input": "f 4",
+      "type": "normal",
+      "id": "flying-feet"
+    },
+    {
+      "name": "Reverse Strike",
+      "input": "d 4",
+      "type": "normal",
+      "id": "reverse-strike"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Lasher-ation",
+      "input": "f + 1",
+      "type": "normal",
+      "id": "lasher-ation"
+    },
+    {
+      "name": "Slasher-ation",
+      "input": "f + 2",
+      "type": "normal",
+      "id": "slasher-ation"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Shirai Ryu Order",
+      "input": "1 1",
+      "type": "string",
+      "id": "shirai-ryu-order"
+    },
+    {
+      "name": "Strong Flow",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "strong-flow"
+    },
+    {
+      "name": "Quick Lash",
+      "input": "b 1 1",
+      "type": "string",
+      "id": "quick-lash"
+    },
+    {
+      "name": "High Strike",
+      "input": "b 1 1",
+      "type": "string",
+      "id": "high-strike"
+    },
+    {
+      "name": "Old Grudges",
+      "input": "b 1 1 2",
+      "type": "string",
+      "id": "old-grudges"
+    },
+    {
+      "name": "Rising Blade",
+      "input": "b 1 1 2",
+      "type": "string",
+      "id": "rising-blade"
+    },
+    {
+      "name": "White Well",
+      "input": "f 1 2",
+      "type": "string",
+      "id": "white-well"
+    },
+    {
+      "name": "Apprentice",
+      "input": "f 1 2 + 4",
+      "type": "string",
+      "id": "apprentice"
+    },
+    {
+      "name": "Hellspawn",
+      "input": "f 1 2 2 + 4",
+      "type": "string",
+      "id": "hellspawn"
+    },
+    {
+      "name": "Trained Assassin",
+      "input": "2 1",
+      "type": "string",
+      "id": "trained-assassin"
+    },
+    {
+      "name": "Double Bladed",
+      "input": "2 1",
+      "type": "string",
+      "id": "double-bladed"
+    },
+    {
+      "name": "Quick Learner",
+      "input": "2 1 2",
+      "type": "string",
+      "id": "quick-learner"
+    },
+    {
+      "name": "Low Swipe",
+      "input": "2 1 2",
+      "type": "string",
+      "id": "low-swipe"
+    },
+    {
+      "name": "Whip Snap",
+      "input": "b 2 1",
+      "type": "string",
+      "id": "whip-snap"
+    },
+    {
+      "name": "Low Stab",
+      "input": "b 2 1",
+      "type": "string",
+      "id": "low-stab"
+    },
+    {
+      "name": "Fallen Warrior",
+      "input": "b 2 1 2 + 4",
+      "type": "string",
+      "id": "fallen-warrior"
+    },
+    {
+      "name": "Way of Hasashi",
+      "input": "b 2 1 2 + 4",
+      "type": "string",
+      "id": "way-of-hasashi"
+    },
+    {
+      "name": "Victorious Ways",
+      "input": "f 2 1",
+      "type": "string",
+      "id": "victorious-ways"
+    },
+    {
+      "name": "Hasashi Kick",
+      "input": "f 2 1 4",
+      "type": "string",
+      "id": "hasashi-kick"
+    },
+    {
+      "name": "Turn Around",
+      "input": "3 3",
+      "type": "string",
+      "id": "turn-around"
+    },
+    {
+      "name": "Overpowered",
+      "input": "3 3 4",
+      "type": "string",
+      "id": "overpowered"
+    },
+    {
+      "name": "Shin Shatter",
+      "input": "b 3 d 3",
+      "type": "string",
+      "id": "shin-shatter"
+    },
+    {
+      "name": "Forgotten Son",
+      "input": "4 4",
+      "type": "string",
+      "id": "forgotten-son"
+    },
+    {
+      "name": "Kunai",
+      "input": "d b 1",
+      "type": "special",
+      "id": "kunai"
+    },
+    {
+      "name": "Close Kunai",
+      "input": "d b 1 b",
+      "type": "special",
+      "id": "close-kunai"
+    },
+    {
+      "name": "Far Kunai",
+      "input": "d b 1 f",
+      "type": "special",
+      "id": "far-kunai"
+    },
+    {
+      "name": "Tri Kunai",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "tri-kunai"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Tornado Strike",
+      "input": "b f 4",
+      "type": "special",
+      "id": "tornado-strike"
+    },
+    {
+      "name": "Tornado Kick",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "tornado-kick"
+    },
+    {
+      "name": "Close Tornado Strike",
+      "input": "b f 4 b",
+      "type": "special",
+      "id": "close-tornado-strike"
+    },
+    {
+      "name": "Close Tornado Kick",
+      "input": "b f 4 + block b",
+      "type": "special",
+      "id": "close-tornado-kick"
+    },
+    {
+      "name": "Far Tornado Strike",
+      "input": "b f 4 f",
+      "type": "special",
+      "id": "far-tornado-strike"
+    },
+    {
+      "name": "Far Tornado Kick",
+      "input": "b f 4 + block f",
+      "type": "special",
+      "id": "far-tornado-kick"
+    },
+    {
+      "name": "Air Tornado Strike",
+      "input": "(air) b f 4",
+      "type": "special",
+      "id": "air-tornado-strike"
+    },
+    {
+      "name": "Air Tornado Kick",
+      "input": "(air) b f 4 + block",
+      "type": "special",
+      "id": "air-tornado-kick"
+    },
+    {
+      "name": "Air Close Tornado Strike",
+      "input": "(air) b f 4 b",
+      "type": "special",
+      "id": "air-close-tornado-strike"
+    },
+    {
+      "name": "Air Close Tornado Kick",
+      "input": "(air) b f 4 + block b",
+      "type": "special",
+      "id": "air-close-tornado-kick"
+    },
+    {
+      "name": "Air Far Tornado Strike",
+      "input": "(air) b f 4 f",
+      "type": "special",
+      "id": "air-far-tornado-strike"
+    },
+    {
+      "name": "Air Far Tornado Kick",
+      "input": "(air) b f 4 + block f",
+      "type": "special",
+      "id": "air-far-tornado-kick"
+    },
+    {
+      "name": "Fist Flurry",
+      "input": "b f 2",
+      "type": "special",
+      "id": "fist-flurry"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Fist Whirlwind",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "fist-whirlwind"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Quick Phase",
+      "input": "d b 3",
+      "type": "special",
+      "id": "quick-phase"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 3",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "d d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Shirai Ryu Phase",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "shirai-ryu-phase"
+    },
+    {
+      "name": "Delay",
+      "input": "hold 3",
+      "type": "normal",
+      "id": "delay"
+    },
+    {
+      "name": "Cancel",
+      "input": "d d",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Air Quick Phase",
+      "input": "(air) d b 3",
+      "type": "special",
+      "id": "air-quick-phase"
+    },
+    {
+      "name": "Air Shirai Ryu Phase",
+      "input": "(air) d b 3 + block",
+      "type": "special",
+      "id": "air-shirai-ryu-phase"
+    },
+    {
+      "name": "Spear Ryu",
+      "input": "b f 1",
+      "type": "special",
+      "id": "spear-ryu"
+    },
+    {
+      "name": "Double Spear Ryu",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "double-spear-ryu"
+    },
+    {
+      "name": "Air Spear",
+      "input": "(air) d b 1",
+      "type": "special",
+      "id": "air-spear"
+    },
+    {
+      "name": "Air Spike",
+      "input": "(air) d b 1 + block",
+      "type": "special",
+      "id": "air-spike"
+    },
+    {
+      "name": "Whip Strike",
+      "input": "d f 1",
+      "type": "special",
+      "id": "whip-strike"
+    },
+    {
+      "name": "Whip Thrash",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "whip-thrash"
+    },
+    {
+      "name": "Whip Assault",
+      "input": "b f 2",
+      "type": "special",
+      "id": "whip-assault"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Whip Flurry",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "whip-flurry"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Whip Trip",
+      "input": "d b 2",
+      "type": "special",
+      "id": "whip-trip"
+    },
+    {
+      "name": "Whip Flip",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "whip-flip"
+    },
+    {
+      "name": "Blade Drop",
+      "input": "d b 1",
+      "type": "special",
+      "id": "blade-drop"
+    },
+    {
+      "name": "Blade Kall",
+      "input": "d b 1",
+      "type": "special",
+      "id": "blade-kall"
+    },
+    {
+      "name": "Blade Summon",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "blade-summon"
+    },
+    {
+      "name": "Quick Kall",
+      "input": "d f 1",
+      "type": "special",
+      "id": "quick-kall"
+    },
+    {
+      "name": "Close Blade Drop",
+      "input": "d b 1 b",
+      "type": "special",
+      "id": "close-blade-drop"
+    },
+    {
+      "name": "Blade Kall",
+      "input": "d b 1",
+      "type": "special",
+      "id": "blade-kall"
+    },
+    {
+      "name": "Blade Summon",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "blade-summon"
+    },
+    {
+      "name": "Quick Kall",
+      "input": "d f 1",
+      "type": "special",
+      "id": "quick-kall"
+    },
+    {
+      "name": "Far Blade Drop",
+      "input": "d b 1 f",
+      "type": "special",
+      "id": "far-blade-drop"
+    },
+    {
+      "name": "Blade Kall",
+      "input": "d b 1",
+      "type": "special",
+      "id": "blade-kall"
+    },
+    {
+      "name": "Blade Summon",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "blade-summon"
+    },
+    {
+      "name": "Quick Kall",
+      "input": "d f 1",
+      "type": "special",
+      "id": "quick-kall"
+    },
+    {
+      "name": "Piercing Spark",
+      "input": "d f 3",
+      "type": "special",
+      "id": "piercing-spark"
+    },
+    {
+      "name": "Piercing Beam",
+      "input": "d f 3 + block",
+      "type": "special",
+      "id": "piercing-beam"
+    },
+    {
+      "name": "Shirai Ryu Reflect",
+      "input": "d b 3",
+      "type": "special",
+      "id": "shirai-ryu-reflect"
+    },
+    {
+      "name": "Shirai Ryu Absorb",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "shirai-ryu-absorb"
+    },
+    {
+      "name": "Shirai Ryu Kan",
+      "input": "d f 1",
+      "type": "special",
+      "id": "shirai-ryu-kan"
+    },
+    {
+      "name": "Double Shirai Ryu Kan",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "double-shirai-ryu-kan"
+    },
+    {
+      "name": "Air Whiplash",
+      "input": "(air) stance + block",
+      "type": "normal",
+      "id": "air-whiplash"
+    },
+    {
+      "name": "Whip It Good (Mid)",
+      "input": "d f d b 2",
+      "type": "special",
+      "id": "whip-it-good-mid"
+    },
+    {
+      "name": "Head Cage (Mid)",
+      "input": "f b d d 1",
+      "type": "normal",
+      "id": "head-cage-mid"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "u u u d",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Armless",
+      "input": "throw or 1 + 3",
+      "type": "string",
+      "id": "armless"
+    },
+    {
+      "name": "Kool Whip",
+      "input": "2 1 2",
+      "type": "string",
+      "id": "kool-whip"
+    },
+    {
+      "name": "Whip It Out",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "whip-it-out"
+    },
+    {
+      "name": "Two-Sided",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "two-sided"
+    },
+    {
+      "name": "Force Slice",
+      "input": "d b 1",
+      "type": "special",
+      "id": "force-slice"
     }
   ]
 }

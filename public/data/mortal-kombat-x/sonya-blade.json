@@ -4,40 +4,622 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Single Jab",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "single-jab"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Downward Slam",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "downward-slam"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Low Poke",
+      "input": "d 1",
       "type": "normal",
-      "input": "3"
+      "id": "low-poke"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Hook",
+      "input": "2",
       "type": "normal",
-      "input": "4"
+      "id": "hook"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Leaping Smash",
+      "input": "b 2",
+      "type": "normal",
+      "id": "leaping-smash"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Prime Punch",
+      "input": "b 2",
+      "type": "normal",
+      "id": "prime-punch"
+    },
+    {
+      "name": "Rib Breaker",
+      "input": "f 2",
+      "type": "normal",
+      "id": "rib-breaker"
+    },
+    {
+      "name": "Boot Strap",
+      "input": "d 2",
+      "type": "normal",
+      "id": "boot-strap"
+    },
+    {
+      "name": "High Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "high-kick"
+    },
+    {
+      "name": "Shin Snap",
+      "input": "b 3",
+      "type": "normal",
+      "id": "shin-snap"
+    },
+    {
+      "name": "Wrap Around",
+      "input": "f 3",
+      "type": "normal",
+      "id": "wrap-around"
+    },
+    {
+      "name": "Foot Snap",
+      "input": "d 3",
+      "type": "normal",
+      "id": "foot-snap"
+    },
+    {
+      "name": "Brutal Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "brutal-kick"
+    },
+    {
+      "name": "Military Sweep",
+      "input": "b 4",
+      "type": "normal",
+      "id": "military-sweep"
+    },
+    {
+      "name": "One Two",
+      "input": "f 4",
+      "type": "normal",
+      "id": "one-two"
+    },
+    {
+      "name": "Ankle Breaker",
+      "input": "d 4",
+      "type": "normal",
+      "id": "ankle-breaker"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Advance Forces",
+      "input": "1 1",
+      "type": "string",
+      "id": "advance-forces"
+    },
+    {
+      "name": "Power Trip",
+      "input": "1 1 1",
+      "type": "string",
+      "id": "power-trip"
+    },
+    {
+      "name": "Mess Hall",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "mess-hall"
+    },
+    {
+      "name": "Boomer",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "boomer"
+    },
+    {
+      "name": "Fierce Assault",
+      "input": "1 2",
+      "type": "string",
+      "id": "fierce-assault"
+    },
+    {
+      "name": "Drop Zone",
+      "input": "1 2 1",
+      "type": "string",
+      "id": "drop-zone"
+    },
+    {
+      "name": "Ground Control",
+      "input": "1 2 1 f 4",
+      "type": "string",
+      "id": "ground-control"
+    },
+    {
+      "name": "Pull Out",
+      "input": "1 2 4",
+      "type": "string",
+      "id": "pull-out"
+    },
+    {
+      "name": "Beat up",
+      "input": "b 1 4",
+      "type": "string",
+      "id": "beat-up"
+    },
+    {
+      "name": "Play Time",
+      "input": "b 1 4 2",
+      "type": "string",
+      "id": "play-time"
+    },
+    {
+      "name": "Honorable Discharge",
+      "input": "2 1",
+      "type": "string",
+      "id": "honorable-discharge"
+    },
+    {
+      "name": "Hand of Justice",
+      "input": "2 1 3",
+      "type": "string",
+      "id": "hand-of-justice"
+    },
+    {
+      "name": "Beat Down",
+      "input": "2 1 3 4",
+      "type": "string",
+      "id": "beat-down"
+    },
+    {
+      "name": "American Way",
+      "input": "2 1 u 4",
+      "type": "string",
+      "id": "american-way"
+    },
+    {
+      "name": "Study This",
+      "input": "2 2",
+      "type": "string",
+      "id": "study-this"
+    },
+    {
+      "name": "Trust No one",
+      "input": "2 2 2",
+      "type": "string",
+      "id": "trust-no-one"
+    },
+    {
+      "name": "No Backup",
+      "input": "2 2 4",
+      "type": "string",
+      "id": "no-backup"
+    },
+    {
+      "name": "Ambush",
+      "input": "f 2 b 1",
+      "type": "string",
+      "id": "ambush"
+    },
+    {
+      "name": "Fly By",
+      "input": "b 3 3",
+      "type": "string",
+      "id": "fly-by"
+    },
+    {
+      "name": "Extraction",
+      "input": "b 3 3 2",
+      "type": "string",
+      "id": "extraction"
+    },
+    {
+      "name": "Suppression",
+      "input": "b 3 3 2 1 2",
+      "type": "string",
+      "id": "suppression"
+    },
+    {
+      "name": "Alert Force",
+      "input": "b 3 3 2 4",
+      "type": "string",
+      "id": "alert-force"
+    },
+    {
+      "name": "Final Drill",
+      "input": "b 3 3 u 4",
+      "type": "string",
+      "id": "final-drill"
+    },
+    {
+      "name": "Armed Forces",
+      "input": "b 3 3 f 4",
+      "type": "string",
+      "id": "armed-forces"
+    },
+    {
+      "name": "Air Drop",
+      "input": "(air) d + 4",
+      "type": "normal",
+      "id": "air-drop"
+    },
+    {
+      "name": "Energy Rising",
+      "input": "b f 2",
+      "type": "special",
+      "id": "energy-rising"
+    },
+    {
+      "name": "Energy Blast",
+      "input": "b f 2 + block",
+      "type": "special",
+      "id": "energy-blast"
+    },
+    {
+      "name": "Arc Kick",
+      "input": "d b 4",
+      "type": "special",
+      "id": "arc-kick"
+    },
+    {
+      "name": "Flying Kick",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "flying-kick"
+    },
+    {
+      "name": "Leg Grab",
+      "input": "b f 4",
+      "type": "special",
+      "id": "leg-grab"
+    },
+    {
+      "name": "Leg Slam",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "leg-slam"
+    },
+    {
+      "name": "Military Stance",
+      "input": "d b 2",
+      "type": "special",
+      "id": "military-stance"
+    },
+    {
+      "name": "Grab",
+      "input": "1",
+      "type": "normal",
+      "id": "grab"
+    },
+    {
+      "name": "At Ease",
+      "input": "2",
+      "type": "normal",
+      "id": "at-ease"
+    },
+    {
+      "name": "Rising Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "rising-kick"
+    },
+    {
+      "name": "Double Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "double-kick"
+    },
+    {
+      "name": "Garrote Parry",
+      "input": "d b 1",
+      "type": "special",
+      "id": "garrote-parry"
+    },
+    {
+      "name": "Eagle Strike",
+      "input": "2 or 4",
+      "type": "string",
+      "id": "eagle-strike"
+    },
+    {
+      "name": "Freedom Strike",
+      "input": "1 or 3",
+      "type": "string",
+      "id": "freedom-strike"
+    },
+    {
+      "name": "Garrote Punish",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "garrote-punish"
+    },
+    {
+      "name": "Stiff Neck",
+      "input": "1 or 3",
+      "type": "string",
+      "id": "stiff-neck"
+    },
+    {
+      "name": "Justice",
+      "input": "2 or 4",
+      "type": "string",
+      "id": "justice"
+    },
+    {
+      "name": "Air Strike",
+      "input": "(air) d + throw",
+      "type": "normal",
+      "id": "air-strike"
+    },
+    {
+      "name": "Drone Drop",
+      "input": "d d 1",
+      "type": "normal",
+      "id": "drone-drop"
+    },
+    {
+      "name": "Drone Bomb",
+      "input": "d d 1 + block",
+      "type": "normal",
+      "id": "drone-bomb"
+    },
+    {
+      "name": "Frag Grenade",
+      "input": "d b 1",
+      "type": "special",
+      "id": "frag-grenade"
+    },
+    {
+      "name": "Detonate",
+      "input": "1",
+      "type": "normal",
+      "id": "detonate"
+    },
+    {
+      "name": "Close Frag Grenade",
+      "input": "d b 1 b",
+      "type": "special",
+      "id": "close-frag-grenade"
+    },
+    {
+      "name": "Detonate",
+      "input": "1",
+      "type": "normal",
+      "id": "detonate"
+    },
+    {
+      "name": "Sharpnel",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "sharpnel"
+    },
+    {
+      "name": "Stun Grenade",
+      "input": "d f 1",
+      "type": "special",
+      "id": "stun-grenade"
+    },
+    {
+      "name": "Detonate",
+      "input": "1",
+      "type": "normal",
+      "id": "detonate"
+    },
+    {
+      "name": "Close Stun Grenade",
+      "input": "d f 1 b",
+      "type": "special",
+      "id": "close-stun-grenade"
+    },
+    {
+      "name": "Detonate",
+      "input": "1",
+      "type": "normal",
+      "id": "detonate"
+    },
+    {
+      "name": "Far Stun Grenade",
+      "input": "d f 1 f",
+      "type": "special",
+      "id": "far-stun-grenade"
+    },
+    {
+      "name": "Detonate",
+      "input": "1",
+      "type": "normal",
+      "id": "detonate"
+    },
+    {
+      "name": "Flashbang",
+      "input": "d f 1 + block",
+      "type": "special",
+      "id": "flashbang"
+    },
+    {
+      "name": "Bake 'n' Wake",
+      "input": "1",
+      "type": "normal",
+      "id": "bake-n-wake"
+    },
+    {
+      "name": "Drone",
+      "input": "d d 1",
+      "type": "normal",
+      "id": "drone"
+    },
+    {
+      "name": "Park Drone",
+      "input": "d d 1",
+      "type": "normal",
+      "id": "park-drone"
+    },
+    {
+      "name": "Remove Park",
+      "input": "d d 1",
+      "type": "normal",
+      "id": "remove-park"
+    },
+    {
+      "name": "Heavy Blast",
+      "input": "1 + block",
+      "type": "normal",
+      "id": "heavy-blast"
+    },
+    {
+      "name": "Homing Missile",
+      "input": "2 + block",
+      "type": "normal",
+      "id": "homing-missile"
+    },
+    {
+      "name": "Kamikaze",
+      "input": "3 + block",
+      "type": "normal",
+      "id": "kamikaze"
+    },
+    {
+      "name": "Low Kamikaze",
+      "input": "4 + block",
+      "type": "normal",
+      "id": "low-kamikaze"
+    },
+    {
+      "name": "Special Forces",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "special-forces"
+    },
+    {
+      "name": "Target Marked (Close)",
+      "input": "d d b f block",
+      "type": "normal",
+      "id": "target-marked-close"
+    },
+    {
+      "name": "Head Hunter (Mid)",
+      "input": "f b d b 2",
+      "type": "special",
+      "id": "head-hunter-mid"
+    },
+    {
+      "name": "Kiss Of Death (Mid)",
+      "input": "u u b d",
+      "type": "normal",
+      "id": "kiss-of-death-mid"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "b f d 2",
+      "type": "special",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Thigh Master",
+      "input": "b f 4",
+      "type": "special",
+      "id": "thigh-master"
+    },
+    {
+      "name": "Boot To Head",
+      "input": "f 3",
+      "type": "normal",
+      "id": "boot-to-head"
+    },
+    {
+      "name": "Garro-That",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "garro-that"
+    },
+    {
+      "name": "Time Bomb",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "time-bomb"
+    },
+    {
+      "name": "Kamikaze",
+      "input": "d d 1 3 + block",
+      "type": "string",
+      "id": "kamikaze"
+    },
+    {
+      "name": "Hidden Brutality",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "hidden-brutality"
     }
   ]
 }

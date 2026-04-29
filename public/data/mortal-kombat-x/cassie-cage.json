@@ -4,40 +4,496 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Front Jab",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "front-jab"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Elbow Smash",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "elbow-smash"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Low Jab",
+      "input": "d 1",
       "type": "normal",
-      "input": "3"
+      "id": "low-jab"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Back Strike",
+      "input": "2",
       "type": "normal",
-      "input": "4"
+      "id": "back-strike"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Tonfa Strike",
+      "input": "b 2",
+      "type": "normal",
+      "id": "tonfa-strike"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Superman",
+      "input": "f 2",
+      "type": "normal",
+      "id": "superman"
+    },
+    {
+      "name": "Uppercut",
+      "input": "d 2",
+      "type": "normal",
+      "id": "uppercut"
+    },
+    {
+      "name": "Step Sidekick",
+      "input": "3",
+      "type": "normal",
+      "id": "step-sidekick"
+    },
+    {
+      "name": "Heel Plunge",
+      "input": "f 3",
+      "type": "normal",
+      "id": "heel-plunge"
+    },
+    {
+      "name": "Low Heel",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-heel"
+    },
+    {
+      "name": "Roundhouse",
+      "input": "4",
+      "type": "normal",
+      "id": "roundhouse"
+    },
+    {
+      "name": "Cunning Sweep",
+      "input": "b 4",
+      "type": "normal",
+      "id": "cunning-sweep"
+    },
+    {
+      "name": "Kritical Strike",
+      "input": "f 4",
+      "type": "normal",
+      "id": "kritical-strike"
+    },
+    {
+      "name": "Low Poke",
+      "input": "d 4",
+      "type": "normal",
+      "id": "low-poke"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Rockin'",
+      "input": "1 1",
+      "type": "string",
+      "id": "rockin"
+    },
+    {
+      "name": "Rollin'",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "rollin"
+    },
+    {
+      "name": "Turn Left",
+      "input": "1 2",
+      "type": "string",
+      "id": "turn-left"
+    },
+    {
+      "name": "By All Means",
+      "input": "1 2 1",
+      "type": "string",
+      "id": "by-all-means"
+    },
+    {
+      "name": "Sneak Preview",
+      "input": "1 2 3",
+      "type": "string",
+      "id": "sneak-preview"
+    },
+    {
+      "name": "Upper Hand",
+      "input": "1 2 b 4",
+      "type": "string",
+      "id": "upper-hand"
+    },
+    {
+      "name": "Kick Abuse",
+      "input": "down-right 1",
+      "type": "normal",
+      "id": "kick-abuse"
+    },
+    {
+      "name": "Hard Sell",
+      "input": "b 1 2",
+      "type": "string",
+      "id": "hard-sell"
+    },
+    {
+      "name": "Active Duty",
+      "input": "b 1 2 4",
+      "type": "string",
+      "id": "active-duty"
+    },
+    {
+      "name": "Slap Back",
+      "input": "2 1",
+      "type": "string",
+      "id": "slap-back"
+    },
+    {
+      "name": "Don't Blink",
+      "input": "2 1 2",
+      "type": "string",
+      "id": "dont-blink"
+    },
+    {
+      "name": "Caged Heat",
+      "input": "2 1 u 4",
+      "type": "string",
+      "id": "caged-heat"
+    },
+    {
+      "name": "Assault Phase",
+      "input": "2 4",
+      "type": "string",
+      "id": "assault-phase"
+    },
+    {
+      "name": "Around We Go",
+      "input": "2 4 2",
+      "type": "string",
+      "id": "around-we-go"
+    },
+    {
+      "name": "Play Time",
+      "input": "f 2 1",
+      "type": "string",
+      "id": "play-time"
+    },
+    {
+      "name": "Ugly Stick",
+      "input": "f 2 1 1",
+      "type": "string",
+      "id": "ugly-stick"
+    },
+    {
+      "name": "Attack Pattern",
+      "input": "f 2 4",
+      "type": "string",
+      "id": "attack-pattern"
+    },
+    {
+      "name": "Severance Package",
+      "input": "f 2 1 + 3",
+      "type": "string",
+      "id": "severance-package"
+    },
+    {
+      "name": "Shifting Fire",
+      "input": "b 2 1 2",
+      "type": "string",
+      "id": "shifting-fire"
+    },
+    {
+      "name": "Caged Rage",
+      "input": "b 2 1 2 d 2 + 4",
+      "type": "string",
+      "id": "caged-rage"
+    },
+    {
+      "name": "Blood Stain",
+      "input": "3 3",
+      "type": "string",
+      "id": "blood-stain"
+    },
+    {
+      "name": "Blood Splat",
+      "input": "3 3 1",
+      "type": "string",
+      "id": "blood-splat"
+    },
+    {
+      "name": "Rise Up",
+      "input": "3 3 2",
+      "type": "string",
+      "id": "rise-up"
+    },
+    {
+      "name": "Fancy Footwork",
+      "input": "f 3 3",
+      "type": "string",
+      "id": "fancy-footwork"
+    },
+    {
+      "name": "Assault Force",
+      "input": "f 3 4",
+      "type": "string",
+      "id": "assault-force"
+    },
+    {
+      "name": "Street Smart",
+      "input": "f 4 4",
+      "type": "string",
+      "id": "street-smart"
+    },
+    {
+      "name": "Single Shot",
+      "input": "b f 1",
+      "type": "special",
+      "id": "single-shot"
+    },
+    {
+      "name": "Akimbo",
+      "input": "b f 1 + block",
+      "type": "special",
+      "id": "akimbo"
+    },
+    {
+      "name": "Glow Kick",
+      "input": "b f 4",
+      "type": "special",
+      "id": "glow-kick"
+    },
+    {
+      "name": "Diving Glow Kick",
+      "input": "b f 4 + block",
+      "type": "special",
+      "id": "diving-glow-kick"
+    },
+    {
+      "name": "Getaway Flip",
+      "input": "d b 2",
+      "type": "special",
+      "id": "getaway-flip"
+    },
+    {
+      "name": "Power Flip",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "power-flip"
+    },
+    {
+      "name": "Air Akimbo",
+      "input": "(air) b f 1",
+      "type": "special",
+      "id": "air-akimbo"
+    },
+    {
+      "name": "Air Multi Gun",
+      "input": "(air) b f 1 + block",
+      "type": "special",
+      "id": "air-multi-gun"
+    },
+    {
+      "name": "Nut Kracker",
+      "input": "b d 3",
+      "type": "normal",
+      "id": "nut-kracker"
+    },
+    {
+      "name": "Nut Buster",
+      "input": "b d 3 + block",
+      "type": "normal",
+      "id": "nut-buster"
+    },
+    {
+      "name": "Take Down",
+      "input": "b f 3",
+      "type": "special",
+      "id": "take-down"
+    },
+    {
+      "name": "Haymaker",
+      "input": "b f 3 + block",
+      "type": "special",
+      "id": "haymaker"
+    },
+    {
+      "name": "Bow Breaker",
+      "input": "d b f 2",
+      "type": "special",
+      "id": "bow-breaker"
+    },
+    {
+      "name": "Bone Breaker",
+      "input": "d b f 2 + block",
+      "type": "special",
+      "id": "bone-breaker"
+    },
+    {
+      "name": "Air Power Slam",
+      "input": "(air) d + throw",
+      "type": "normal",
+      "id": "air-power-slam"
+    },
+    {
+      "name": "Enhance",
+      "input": "(air) block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Air Assault (Medium)",
+      "input": "d d 1",
+      "type": "normal",
+      "id": "air-assault-medium"
+    },
+    {
+      "name": "Air Assault (Close)",
+      "input": "d d 1 b",
+      "type": "normal",
+      "id": "air-assault-close"
+    },
+    {
+      "name": "Air Assault (Far)",
+      "input": "d d 1 f",
+      "type": "normal",
+      "id": "air-assault-far"
+    },
+    {
+      "name": "Target Paint",
+      "input": "d d 1 + block",
+      "type": "normal",
+      "id": "target-paint"
+    },
+    {
+      "name": "The American Way",
+      "input": "d b 1",
+      "type": "special",
+      "id": "the-american-way"
+    },
+    {
+      "name": "Testi-Kill",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "testi-kill"
+    },
+    {
+      "name": "Bubble Head (Mid)",
+      "input": "f d b f 1",
+      "type": "special",
+      "id": "bubble-head-mid"
+    },
+    {
+      "name": "Selfie (Close)",
+      "input": "d f d b 4",
+      "type": "special",
+      "id": "selfie-close"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "d d b f 2",
+      "type": "special",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Between The Eyes",
+      "input": "b f 1",
+      "type": "special",
+      "id": "between-the-eyes"
+    },
+    {
+      "name": "Hats Off",
+      "input": "down-right 1",
+      "type": "normal",
+      "id": "hats-off"
+    },
+    {
+      "name": "Pop Goes",
+      "input": "b d 3",
+      "type": "normal",
+      "id": "pop-goes"
+    },
+    {
+      "name": "Beatdown",
+      "input": "b f 3",
+      "type": "special",
+      "id": "beatdown"
+    },
+    {
+      "name": "Half Day?",
+      "input": "d d 1 + block",
+      "type": "normal",
+      "id": "half-day?"
+    },
+    {
+      "name": "Hidden Brutality",
+      "input": "d b 1",
+      "type": "special",
+      "id": "hidden-brutality"
     }
   ]
 }

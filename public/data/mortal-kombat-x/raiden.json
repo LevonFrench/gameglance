@@ -4,40 +4,640 @@
   "game": "Mortal Kombat X",
   "movesList": [
     {
-      "id": "n_0",
-      "name": "Front Punch",
+      "name": "Quick Zap",
+      "input": "1",
       "type": "normal",
-      "input": "1"
+      "id": "quick-zap"
     },
     {
-      "id": "n_1",
-      "name": "Back Punch",
+      "name": "Chop",
+      "input": "b 1",
       "type": "normal",
-      "input": "2"
+      "id": "chop"
     },
     {
-      "id": "n_2",
-      "name": "Front Kick",
+      "name": "Head Swipe",
+      "input": "f 1",
       "type": "normal",
-      "input": "3"
+      "id": "head-swipe"
     },
     {
-      "id": "n_3",
-      "name": "Back Kick",
+      "name": "Low Pulse",
+      "input": "d 1",
       "type": "normal",
-      "input": "4"
+      "id": "low-pulse"
     },
     {
-      "id": "t_0",
-      "name": "Forward Throw",
-      "type": "throw",
-      "input": "1+3"
+      "name": "Quick Shock",
+      "input": "2",
+      "type": "normal",
+      "id": "quick-shock"
     },
     {
-      "id": "t_1",
-      "name": "Back Throw",
-      "type": "throw",
-      "input": "41+3"
+      "name": "Hammer Fists",
+      "input": "b 2",
+      "type": "normal",
+      "id": "hammer-fists"
+    },
+    {
+      "name": "Stepping Fist",
+      "input": "f 2",
+      "type": "normal",
+      "id": "stepping-fist"
+    },
+    {
+      "name": "Uppercut",
+      "input": "d 2",
+      "type": "normal",
+      "id": "uppercut"
+    },
+    {
+      "name": "Side Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "side-kick"
+    },
+    {
+      "name": "Shin Strike",
+      "input": "b 3",
+      "type": "normal",
+      "id": "shin-strike"
+    },
+    {
+      "name": "Low Kick",
+      "input": "d 3",
+      "type": "normal",
+      "id": "low-kick"
+    },
+    {
+      "name": "Spinning Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "spinning-kick"
+    },
+    {
+      "name": "Sweep",
+      "input": "b 4",
+      "type": "normal",
+      "id": "sweep"
+    },
+    {
+      "name": "Hop Heel Smash",
+      "input": "f 4",
+      "type": "normal",
+      "id": "hop-heel-smash"
+    },
+    {
+      "name": "Toe Kick",
+      "input": "d 4",
+      "type": "normal",
+      "id": "toe-kick"
+    },
+    {
+      "name": "Jump Front Punch",
+      "input": "1",
+      "type": "normal",
+      "id": "jump-front-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Punch",
+      "input": "2",
+      "type": "normal",
+      "id": "jump-back-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Front Kick",
+      "input": "3",
+      "type": "normal",
+      "id": "jump-front-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Back Kick",
+      "input": "4",
+      "type": "normal",
+      "id": "jump-back-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Punch",
+      "input": "1 or 2",
+      "type": "string",
+      "id": "jump-up-punch",
+      "notes": "Air"
+    },
+    {
+      "name": "Jump Up Kick",
+      "input": "3 or 4",
+      "type": "string",
+      "id": "jump-up-kick",
+      "notes": "Air"
+    },
+    {
+      "name": "Throw (Towards)",
+      "input": "f + throw",
+      "type": "normal",
+      "id": "throw-towards"
+    },
+    {
+      "name": "Enhance",
+      "input": "f + throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Throw (Away)",
+      "input": "throw",
+      "type": "normal",
+      "id": "throw-away"
+    },
+    {
+      "name": "Enhance",
+      "input": "throw block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Rolling Thunder",
+      "input": "1 1",
+      "type": "string",
+      "id": "rolling-thunder"
+    },
+    {
+      "name": "Sudden Energy",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "sudden-energy"
+    },
+    {
+      "name": "Heavenly Hands",
+      "input": "1 1 2",
+      "type": "string",
+      "id": "heavenly-hands"
+    },
+    {
+      "name": "Hold (x3)",
+      "input": "2",
+      "type": "normal",
+      "id": "hold-x3"
+    },
+    {
+      "name": "Thunder Cloud",
+      "input": "1 1 2 2",
+      "type": "string",
+      "id": "thunder-cloud"
+    },
+    {
+      "name": "Hold (x3)",
+      "input": "2",
+      "type": "normal",
+      "id": "hold-x3"
+    },
+    {
+      "name": "God Fist",
+      "input": "b 1 1",
+      "type": "string",
+      "id": "god-fist"
+    },
+    {
+      "name": "Power Discharge",
+      "input": "b 1 1 1 + 3",
+      "type": "string",
+      "id": "power-discharge"
+    },
+    {
+      "name": "Forked Lightning",
+      "input": "b 1 4",
+      "type": "string",
+      "id": "forked-lightning"
+    },
+    {
+      "name": "Lightning Storm",
+      "input": "f 1 4",
+      "type": "string",
+      "id": "lightning-storm"
+    },
+    {
+      "name": "All Powerful",
+      "input": "b 1 1 2",
+      "type": "string",
+      "id": "all-powerful"
+    },
+    {
+      "name": "Hold (x3)",
+      "input": "2",
+      "type": "normal",
+      "id": "hold-x3"
+    },
+    {
+      "name": "Lightning Strike",
+      "input": "b 1 1 2 2",
+      "type": "string",
+      "id": "lightning-strike"
+    },
+    {
+      "name": "Hold (x3)",
+      "input": "2",
+      "type": "normal",
+      "id": "hold-x3"
+    },
+    {
+      "name": "Supercell",
+      "input": "f 1 2",
+      "type": "string",
+      "id": "supercell"
+    },
+    {
+      "name": "Infinite Spirit",
+      "input": "f 1 2",
+      "type": "string",
+      "id": "infinite-spirit"
+    },
+    {
+      "name": "God's Rage",
+      "input": "f 1 2 b 2",
+      "type": "string",
+      "id": "gods-rage"
+    },
+    {
+      "name": "Divine Power",
+      "input": "f 1 2 b 2",
+      "type": "string",
+      "id": "divine-power"
+    },
+    {
+      "name": "Hold (x3)",
+      "input": "2",
+      "type": "normal",
+      "id": "hold-x3"
+    },
+    {
+      "name": "White Spark",
+      "input": "2 1",
+      "type": "string",
+      "id": "white-spark"
+    },
+    {
+      "name": "White Lightning",
+      "input": "2 1 3",
+      "type": "string",
+      "id": "white-lightning"
+    },
+    {
+      "name": "Distant Thunder",
+      "input": "2 1 4",
+      "type": "string",
+      "id": "distant-thunder"
+    },
+    {
+      "name": "Kalm Storm",
+      "input": "f 2 2 + 4",
+      "type": "string",
+      "id": "kalm-storm"
+    },
+    {
+      "name": "Violent Thunder",
+      "input": "f 2 2 + 4",
+      "type": "string",
+      "id": "violent-thunder"
+    },
+    {
+      "name": "Hold (x4)",
+      "input": "2 + 4",
+      "type": "string",
+      "id": "hold-x4"
+    },
+    {
+      "name": "Almighty",
+      "input": "f 2 4",
+      "type": "string",
+      "id": "almighty"
+    },
+    {
+      "name": "Godlike",
+      "input": "f 2 4 4",
+      "type": "string",
+      "id": "godlike"
+    },
+    {
+      "name": "Supernatural",
+      "input": "3 4",
+      "type": "string",
+      "id": "supernatural"
+    },
+    {
+      "name": "Flash Storm",
+      "input": "3 2 + 4",
+      "type": "string",
+      "id": "flash-storm"
+    },
+    {
+      "name": "Hold (x4)",
+      "input": "2 + 4",
+      "type": "string",
+      "id": "hold-x4"
+    },
+    {
+      "name": "Elder Fury",
+      "input": "b 3 2",
+      "type": "string",
+      "id": "elder-fury"
+    },
+    {
+      "name": "Hold (x3)",
+      "input": "2",
+      "type": "normal",
+      "id": "hold-x3"
+    },
+    {
+      "name": "Might Of Mordulus",
+      "input": "b 3 3",
+      "type": "string",
+      "id": "might-of-mordulus"
+    },
+    {
+      "name": "Quick Burn",
+      "input": "b 3 4",
+      "type": "string",
+      "id": "quick-burn"
+    },
+    {
+      "name": "Spinning Spark",
+      "input": "4 4",
+      "type": "string",
+      "id": "spinning-spark"
+    },
+    {
+      "name": "Electric Fly",
+      "input": "b f 3",
+      "type": "special",
+      "id": "electric-fly"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Thunder Fly",
+      "input": "b f 3 + block",
+      "type": "special",
+      "id": "thunder-fly"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Air Electric Fly",
+      "input": "(air) b f 3",
+      "type": "special",
+      "id": "air-electric-fly"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Air Thunder Fly",
+      "input": "(air) b f 3 + block",
+      "type": "special",
+      "id": "air-thunder-fly"
+    },
+    {
+      "name": "Enhance",
+      "input": "block",
+      "type": "normal",
+      "id": "enhance"
+    },
+    {
+      "name": "Lightning",
+      "input": "d b 1",
+      "type": "special",
+      "id": "lightning"
+    },
+    {
+      "name": "Extend",
+      "input": "hold 1",
+      "type": "normal",
+      "id": "extend"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Bolt",
+      "input": "d b 1 + block",
+      "type": "special",
+      "id": "bolt"
+    },
+    {
+      "name": "Stop Bolt",
+      "input": "d b 1",
+      "type": "special",
+      "id": "stop-bolt"
+    },
+    {
+      "name": "Vicinity Blast",
+      "input": "d b 2",
+      "type": "special",
+      "id": "vicinity-blast"
+    },
+    {
+      "name": "Extend",
+      "input": "hold 2",
+      "type": "normal",
+      "id": "extend"
+    },
+    {
+      "name": "Cancel",
+      "input": "f f or b b",
+      "type": "normal",
+      "id": "cancel"
+    },
+    {
+      "name": "Vicinity Burst",
+      "input": "d b 2 + block",
+      "type": "special",
+      "id": "vicinity-burst"
+    },
+    {
+      "name": "Electrocute",
+      "input": "d f 2",
+      "type": "special",
+      "id": "electrocute"
+    },
+    {
+      "name": "Shocker",
+      "input": "d f 2 + block",
+      "type": "special",
+      "id": "shocker"
+    },
+    {
+      "name": "Rising Thunder",
+      "input": "d b 3",
+      "type": "special",
+      "id": "rising-thunder"
+    },
+    {
+      "name": "Thunder Strike",
+      "input": "d b 3 + block",
+      "type": "special",
+      "id": "thunder-strike"
+    },
+    {
+      "name": "Teleport",
+      "input": "d u",
+      "type": "normal",
+      "id": "teleport"
+    },
+    {
+      "name": "In front",
+      "input": "b",
+      "type": "normal",
+      "id": "in-front"
+    },
+    {
+      "name": "Phase",
+      "input": "d",
+      "type": "normal",
+      "id": "phase"
+    },
+    {
+      "name": "Behind & Away",
+      "input": "f",
+      "type": "normal",
+      "id": "behind-&-away"
+    },
+    {
+      "name": "Sparkport",
+      "input": "d u + block",
+      "type": "normal",
+      "id": "sparkport"
+    },
+    {
+      "name": "In front",
+      "input": "b",
+      "type": "normal",
+      "id": "in-front"
+    },
+    {
+      "name": "Phase",
+      "input": "d",
+      "type": "normal",
+      "id": "phase"
+    },
+    {
+      "name": "Behind & Away",
+      "input": "f",
+      "type": "normal",
+      "id": "behind-&-away"
+    },
+    {
+      "name": "(Front) Static Trap",
+      "input": "d f 4",
+      "type": "special",
+      "id": "front-static-trap"
+    },
+    {
+      "name": "Forward Full Trap",
+      "input": "d f 4 + block",
+      "type": "special",
+      "id": "forward-full-trap"
+    },
+    {
+      "name": "(Behind) Static Trap",
+      "input": "d b 4",
+      "type": "special",
+      "id": "behind-static-trap"
+    },
+    {
+      "name": "Away Full Trap",
+      "input": "d b 4 + block",
+      "type": "special",
+      "id": "away-full-trap"
+    },
+    {
+      "name": "(Above) Static Trap",
+      "input": "d d 4",
+      "type": "normal",
+      "id": "above-static-trap"
+    },
+    {
+      "name": "(Above & In Front) Static Trap",
+      "input": "d f + 4 up-right",
+      "type": "special",
+      "id": "above-&-in-front-static-trap"
+    },
+    {
+      "name": "(Above & Behind) Static Trap",
+      "input": "d b + 4 up-left",
+      "type": "special",
+      "id": "above-&-behind-static-trap"
+    },
+    {
+      "name": "Shock Therapy",
+      "input": "stance + block",
+      "type": "normal",
+      "id": "shock-therapy"
+    },
+    {
+      "name": "Bug Eyes (Close)",
+      "input": "f b f 1",
+      "type": "special",
+      "id": "bug-eyes-close"
+    },
+    {
+      "name": "Conducting Rod (Far)",
+      "input": "d f b f 4",
+      "type": "special",
+      "id": "conducting-rod-far"
+    },
+    {
+      "name": "Stage Fatality (Close)",
+      "input": "d d d 2",
+      "type": "normal",
+      "id": "stage-fatality-close"
+    },
+    {
+      "name": "Super Shocker",
+      "input": "d f 2",
+      "type": "special",
+      "id": "super-shocker"
+    },
+    {
+      "name": "Dark Force",
+      "input": "b 1 1 1 + 3",
+      "type": "string",
+      "id": "dark-force"
+    },
+    {
+      "name": "Overload",
+      "input": "b 1 1 2 2",
+      "type": "string",
+      "id": "overload"
+    },
+    {
+      "name": "Inside You",
+      "input": "b f 1 + block block",
+      "type": "special",
+      "id": "inside-you"
+    },
+    {
+      "name": "Power Outage",
+      "input": "d f 4",
+      "type": "special",
+      "id": "power-outage"
     }
   ]
 }
