@@ -1,4 +1,4 @@
-export interface FrameData {
+interface FrameData {
   startup?: string;
   active?: string;
   recovery?: string;
@@ -9,13 +9,13 @@ export interface FrameData {
   onCounter?: string;
 }
 
-export const MOVE_TYPES = ['normal', 'special', 'super', 'throw', 'unique', 'common', 'finisher', 'system'] as const;
-export type MoveType = typeof MOVE_TYPES[number];
+type MoveType = 'normal' | 'special' | 'super' | 'throw' | 'unique' | 'common' | 'finisher' | 'system';
 
 export interface Move {
   id: string;
   name: string;
   type: MoveType;
+  rawType?: string;
   category?: string;
   input: string;
   frameData?: FrameData;
@@ -44,28 +44,7 @@ export interface CharacterExport {
 export const CARD_THEMES = ['auto', 'default-dark', 'default-light', 'genesis', 'sf2gen', 'snes', 'cps2', 'mvs', 'aes', 'mvscab', 'cps2cab', 'sfami', 'tekken', 'sf6-layout', '3s-layout', 'mvc2-layout', 'samsho-layout', 'kof-layout', 'vampire-layout', 'vf-layout'] as const;
 export type CardTheme = typeof CARD_THEMES[number];
 
-export const THEME_DISPLAY_NAMES: Record<CardTheme, string> = {
-  'auto': 'Per Game (Auto)',
-  'default-dark': 'Default',
-  'default-light': 'Light',
-  'genesis': 'Genesis',
-  'sf2gen': 'SF2GEN',
-  'snes': 'SNES',
-  'cps2': 'CPS2',
-  'cps2cab': 'CPS2 CAB',
-  'mvs': 'MVS',
-  'mvscab': 'MVS CAB',
-  'aes': 'AES',
-  'sfami': 'Super Famicom',
-  'tekken': 'Tekken Cabinet',
-  'sf6-layout': 'Street Fighter 6',
-  '3s-layout': '3rd Strike',
-  'mvc2-layout': 'MvC 2',
-  'samsho-layout': 'Samurai Shodown',
-  'kof-layout': 'King of Fighters',
-  'vampire-layout': 'Darkstalkers',
-  'vf-layout': 'Virtua Fighter'
-};
+
 
 export interface GameDefinition {
   id: string;
@@ -94,13 +73,4 @@ export interface GameDefinition {
   stores?: { platform: string; url: string }[];
 }
 
-export const APP_VIEWS = ['game_select', 'char_select', 'move_list', 'main_screen'] as const;
-export type AppView = typeof APP_VIEWS[number];
 
-export interface GameSystemData {
-  gameId: string;
-  buttons?: { id: string, name: string, description?: string }[];
-  mechanics?: { name: string, description: string, input?: string }[];
-  modes?: { name: string, description: string }[];
-  faqs?: { question: string, answer: string }[];
-}

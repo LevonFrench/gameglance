@@ -4,7 +4,7 @@
    automatically via `getCardColor(index)`.
    ═══════════════════════════════════════════════════════════════ */
 
-export interface Palette {
+interface Palette {
   /** Human-readable name shown in a future settings UI */
   name: string;
   /** Ordered list of hex colors to cycle through */
@@ -12,7 +12,7 @@ export interface Palette {
 }
 
 /** Registry of available palettes — add new ones here */
-export const PALETTES: Record<string, Palette> = {
+const PALETTES: Record<string, Palette> = {
   neon: {
     name: 'Neon Nights',
     colors: [
@@ -97,24 +97,14 @@ export const PALETTES: Record<string, Palette> = {
 };
 
 /** The currently active palette key — change this to switch globally */
-let activePaletteKey = 'neon';
+const activePaletteKey = 'neon';
 
 /** Get the currently active palette */
-export function getActivePalette(): Palette {
+function getActivePalette(): Palette {
   return PALETTES[activePaletteKey] ?? PALETTES.neon;
 }
 
-/** Get the active palette key */
-export function getActivePaletteKey(): string {
-  return activePaletteKey;
-}
 
-/** Switch to a different palette by key */
-export function setActivePalette(key: string): void {
-  if (PALETTES[key]) {
-    activePaletteKey = key;
-  }
-}
 
 /**
  * Return the color for a character card at the given index.

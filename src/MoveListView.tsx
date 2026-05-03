@@ -83,10 +83,10 @@ const getFrameAdvantageColor = (frames?: string): string => {
 
 const formatSCInput = (input: string) => {
   return input
-    .replace(/(WR|FC|BT|CE|SC)([1-9abkgABKG\[\(])/g, '$1 $2')
-    .replace(/([1-9abkgABKG\]\)])(WR|FC|BT|CE|SC)/g, '$1 $2')
-    .replace(/([1-9])([abkgABKG\[\(])/g, '$1 $2')
-    .replace(/([abkgABKG\]\)])([1-9])/g, '$1 $2')
+    .replace(/(WR|FC|BT|CE|SC)([1-9abkgABKG[(])/g, '$1 $2')
+    .replace(/([1-9abkgABKG\])])(WR|FC|BT|CE|SC)/g, '$1 $2')
+    .replace(/([1-9])([abkgABKG[(])/g, '$1 $2')
+    .replace(/([abkgABKG\])])([1-9])/g, '$1 $2')
     .replace(/([abkgABKG])(?=[abkgABKG])/g, '$1 ')
     .replace(/([1-9])(?=[1-9])/g, '$1 ')
     .replace(/([abkgABKG1-9])\(/g, '$1 (')
@@ -484,10 +484,25 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
 
             const deterministicId = m.id || `move-${(String(m.name || '') + '-' + String(m.input || '')).replace(/[^a-zA-Z0-9]/g, '').toLowerCase()}`;
 
+            // Defensive sanitization: ensure input is always a string or string[]
+            // to prevent runtime crashes when passed to GlyphSequence
+            let safeInput = m.input;
+            if (safeInput !== undefined && safeInput !== null) {
+              if (Array.isArray(safeInput)) {
+                safeInput = safeInput.map(val => typeof val === 'string' ? val : JSON.stringify(val));
+              } else if (typeof safeInput !== 'string') {
+                safeInput = String(safeInput);
+              }
+            } else {
+              safeInput = '';
+            }
+
             return { 
               ...m, 
               id: deterministicId,
+              input: safeInput,
               type: TYPE_ALIASES[rawType] || rawType,
+              rawType: rawType,
               properties: parsedProperties,
               frameData: Object.keys(parsedFrameData).length > 0 ? parsedFrameData : undefined,
               notes: parsedNotes || undefined
@@ -550,13 +565,25 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     'Special Moves':  (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'special' && !isSuperMove(m) && !isCommandThrow(m)),
     'Super Arts':     (d) => (d.movesList || []).filter(m => isSuperMove(m)),
     'Super Combos':   (d) => (d.movesList || []).filter(m => isSuperMove(m)),
+    'Super Moves':    (d) => (d.movesList || []).filter(m => isSuperMove(m)),
+    'Super':          (d) => (d.movesList || []).filter(m => isSuperMove(m)),
+    'Overdrives':     (d) => (d.movesList || []).filter(m => isSuperMove(m)),
     'Unique Attacks': (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'unique'),
     'Throws':         (d) => {
       const throws = (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'throw');
       const sf6Specials = (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'special' && isCommandThrow(m));
       return [...throws, ...sf6Specials];
     },
-    'Combos':         (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'combo'),
+    'Command Throws': (d) => (d.movesList || []).filter(m => isCommandThrow(m)),
+    'Normal Throws':  (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'throw' && isNormalThrow(m)),
+    'System':         (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'common'),
+    'Combos':         (d) => (d.movesList || []).filter(m => (m.type && m.type.toLowerCase() === 'combo') || (m.rawType && m.rawType.toLowerCase() === 'combo')),
+    '10-Hit Combos':  (d) => (d.movesList || []).filter(m => m.rawType && m.rawType.toLowerCase() === '10-hit combo'),
+    'Strings':        (d) => (d.movesList || []).filter(m => m.rawType && m.rawType.toLowerCase() === 'string'),
+    'Stances':        (d) => (d.movesList || []).filter(m => m.rawType && m.rawType.toLowerCase() === 'stance'),
+    'While Standing': (d) => (d.movesList || []).filter(m => m.rawType && m.rawType.toLowerCase() === 'while standing'),
+    'Single Hits':    (d) => (d.movesList || []).filter(m => m.rawType && m.rawType.toLowerCase() === 'single hit'),
+    'Heat Moves':     (d) => (d.movesList || []).filter(m => m.rawType && m.rawType.toLowerCase() === 'heat move'),
     'Common Moves':   (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'common'),
     'Moves':          (d) => d.movesList || [],
     'Fatalities':     (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'finisher'),
@@ -579,6 +606,8 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
       const fallbackFilter = (list: Move[]) => list.filter(m => 
         (m.type && m.type.toLowerCase() === tab.toLowerCase()) || 
         (m.category && m.category.toLowerCase() === tab.toLowerCase()) ||
+        (m.rawType && m.rawType.toLowerCase() === tab.toLowerCase()) ||
+        (m.rawType && tab.toLowerCase().startsWith(m.rawType.toLowerCase())) ||
         (m.type && tab.toLowerCase().startsWith(m.type.toLowerCase()))
       );
       const list = TAB_FILTER[tab] ? TAB_FILTER[tab](characterData) : fallbackFilter(characterData.movesList || []);

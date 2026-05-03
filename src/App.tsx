@@ -17,7 +17,7 @@ import { CARD_THEMES } from './types';
 
 import { SUPPORTED_GAMES } from './games';
 
-export const App: React.FC = () => {
+const App: React.FC = () => {
 
   const [currentView, setCurrentView] = useState<'game_select' | 'char_select' | 'move_list' | 'combo_view' | 'fightcade_sync' | 'main_screen'>('game_select');
   const [selectedGame, setSelectedGame] = useState<GameDefinition | null>(null);

@@ -352,6 +352,10 @@ const tokenizeStandardInputs = (inputs: string[], notationSystem: string = 'trad
 
 const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional', isCombo: boolean = false): string[] => {
   const processedInputs = inputs.map(raw => {
+    if (typeof raw !== 'string') {
+      console.warn('GlyphSequence encountered a non-string input during tokenization:', raw, 'in sequence:', inputs);
+      raw = String(raw);
+    }
     return raw
       .replace(/\(InAir\)/gi, 'j.')
       .replace(/\(AirOK\)/gi, ' (Air OK)')
@@ -379,7 +383,7 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
       .replace(/kickorheavykick/gi, 'K or HK')
       .replace(/ORC\.?/gi, ' or C')
       .replace(/KICK:FWB/gi, 'Kick: Fwd B')
-      .replace(/([A-Z0-9\/])\(/gi, '$1 (')
+      .replace(/([A-Z0-9/])\(/gi, '$1 (')
       .replace(/punch/gi, 'P')
       .replace(/\(\s*OK\s*\)/gi, '')
       .replace(/\(\s*MAX\s*OK\s*\)/gi, '')
