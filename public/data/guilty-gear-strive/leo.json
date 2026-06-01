@@ -467,7 +467,7 @@
     },
     {
       "id": "7d1d7183-fae4-4d01-80b5-ba42240a36ad",
-      "name": "Gl\u00e4ndzendes Dunkel",
+      "name": "Gländzendes Dunkel",
       "input": "bt.214K",
       "frameData": {
         "startup": "30",
@@ -565,7 +565,7 @@
     },
     {
       "id": "4789cde1-de84-4fac-82ae-83bfdcd4f828",
-      "name": "Kaltes Gest\u00f6ber Erst",
+      "name": "Kaltes Gestöber Erst",
       "input": "236S",
       "frameData": {
         "startup": "12",
@@ -579,7 +579,7 @@
     },
     {
       "id": "6195df27-2e96-4c5d-a01a-4389254f5dbd",
-      "name": "Kaltes Gest\u00f6ber Zweit",
+      "name": "Kaltes Gestöber Zweit",
       "input": "236H",
       "frameData": {
         "startup": "25 [27]",
@@ -710,6 +710,641 @@
       "id": "miss_4",
       "name": "Mission 4",
       "input": "c.S 2D 236K"
+    },
+    {
+      "id": "dl_1",
+      "name": "Dustloop Combo 1",
+      "input": "(5P/2P) xN > 236S"
+    },
+    {
+      "id": "dl_2",
+      "name": "Dustloop Combo 2",
+      "input": "(5K/2K) > 6K > 236S"
+    },
+    {
+      "id": "dl_3",
+      "name": "Dustloop Combo 3",
+      "input": "c.S > 2S > 5H > 214[S]"
+    },
+    {
+      "id": "dl_4",
+      "name": "Dustloop Combo 4",
+      "input": "f.s (> 5H) > 236S"
+    },
+    {
+      "id": "dl_5",
+      "name": "Dustloop Combo 5",
+      "input": "Starter > 66RRC/236D > 2H > 214[S], > bt.S > bt.H (> 214[H])"
+    },
+    {
+      "id": "dl_6",
+      "name": "Dustloop Combo 6",
+      "input": "Starter > 2H > 214[S], microwalk bt.P/bt.S > bt.H > Ender"
+    },
+    {
+      "id": "dl_7",
+      "name": "Dustloop Combo 7",
+      "input": "Starter > 6H > 214[S], > bt.S > bt.H > Ender"
+    },
+    {
+      "id": "dl_8",
+      "name": "Dustloop Combo 8",
+      "input": "Scaled starter > 5H > 214[S], (> bt.K > bt.S > bt.H > 214[H])"
+    },
+    {
+      "id": "dl_9",
+      "name": "Dustloop Combo 9",
+      "input": "Unscaled starter > 5H > 214[S], > bt.S > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_10",
+      "name": "Dustloop Combo 10",
+      "input": "( >) bt.H > Ender"
+    },
+    {
+      "id": "dl_11",
+      "name": "Dustloop Combo 11",
+      "input": ">  > bt.H > Ender"
+    },
+    {
+      "id": "dl_12",
+      "name": "Dustloop Combo 12",
+      "input": ">  >  > bt.H > Ender"
+    },
+    {
+      "id": "dl_13",
+      "name": "Dustloop Combo 13",
+      "input": "Starter > (2S > 5H) xN > Ender"
+    },
+    {
+      "id": "dl_14",
+      "name": "Dustloop Combo 14",
+      "input": "AA 5P, >  66 c.S > 2H > 214[S],  > 66 bt.K > bt.S > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_15",
+      "name": "Dustloop Combo 15",
+      "input": "CH 2D, > 2K > 214[S], (bt.S > bt.H > )"
+    },
+    {
+      "id": "dl_16",
+      "name": "Dustloop Combo 16",
+      "input": "'''CH''' c.S/, 66 > c.S > 2H > 214[S], > 66  > bt.P > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_17",
+      "name": "Dustloop Combo 17",
+      "input": "'''CH'''  >  214[S], > 66 > bt.S > bt.H > 214[H] (> 66  bt.S > bt.H > WS > 214[H])"
+    },
+    {
+      "id": "dl_18",
+      "name": "Dustloop Combo 18",
+      "input": "(5K/2K) > 6K > [2]8H"
+    },
+    {
+      "id": "dl_19",
+      "name": "Dustloop Combo 19",
+      "input": "(5K/2K) > 6K > [2]8H > dl.66PRC~j.P whiff, j.S land c.S > 5H > 2S > 214[S] > WS > 214H"
+    },
+    {
+      "id": "dl_20",
+      "name": "Dustloop Combo 20",
+      "input": "Starter > 2H > 214[S], 66 bt.P > bt.K, > 66 bt.P > bt.K, 66 > bt.K > bt.S > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_21",
+      "name": "Dustloop Combo 21",
+      "input": "66 CH c.S > 5[D], > 66 c.S > 2H > 214[S], 66 bt.K > bt.S > bt.H > 214H"
+    },
+    {
+      "id": "dl_22",
+      "name": "Dustloop Combo 22",
+      "input": "'''CH''' c.S > 6H > [4]6H , 66 c.S > 5H > (2S or f.S) > 5H > 214[S] > WS > 214H"
+    },
+    {
+      "id": "dl_23",
+      "name": "Dustloop Combo 23",
+      "input": "CH bt.S > 214[H], > bt.H > 214[H], > bt.S > bt.H > WS > 214[H]."
+    },
+    {
+      "id": "dl_24",
+      "name": "Dustloop Combo 24",
+      "input": "Starter > 2H > 214[S], 66 bt.K > bt.P > bt.K, 66 > bt.K > bt.S > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_25",
+      "name": "Dustloop Combo 25",
+      "input": "(bt.K >) bt.P > bt.K, 66 > bt.P > bt.K, 66 > bt.K > bt.S > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_26",
+      "name": "Dustloop Combo 26",
+      "input": "Starter > 236D > 2H > 214[S] > bt.S > bt.H > (Ender)"
+    },
+    {
+      "id": "dl_27",
+      "name": "Dustloop Combo 27",
+      "input": "5P/2P (> 5P > 5P) > 236S"
+    },
+    {
+      "id": "dl_28",
+      "name": "Dustloop Combo 28",
+      "input": "'''CH''' 5P/2P, > c.S > 5H > 214[S]"
+    },
+    {
+      "id": "dl_29",
+      "name": "Dustloop Combo 29",
+      "input": "'''CH''' 5P/2P, > 2K >  > [2]8H"
+    },
+    {
+      "id": "dl_30",
+      "name": "Dustloop Combo 30",
+      "input": "'''CH''' 6P > 214[S] (> bt.S > bt.H > 214[S])"
+    },
+    {
+      "id": "dl_31",
+      "name": "Dustloop Combo 31",
+      "input": "'''CH''' 6P > 214[S] > bt.K) > bt.S > bt.H > 22 66 > 5[H] (> [H]S/[S]H) (> whiff 236S) > WS > 214[S]"
+    },
+    {
+      "id": "dl_32",
+      "name": "Dustloop Combo 32",
+      "input": "'''CH''' 6P > 236[D] > whiff 2P > 66 c.S > 5H > dl. 2S > 5H > 214[S] > WS > 214H"
+    },
+    {
+      "id": "dl_33",
+      "name": "Dustloop Combo 33",
+      "input": "5K/2K >  > 236S"
+    },
+    {
+      "id": "dl_34",
+      "name": "Dustloop Combo 34",
+      "input": "5K/2K > 2D, > whiff 236H"
+    },
+    {
+      "id": "dl_35",
+      "name": "Dustloop Combo 35",
+      "input": "5K/2K > 6K > 236S  >  66RRC > 2H > 214[S], > microwalk  > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_36",
+      "name": "Dustloop Combo 36",
+      "input": "5K/2K  > 6K > [2]8H"
+    },
+    {
+      "id": "dl_37",
+      "name": "Dustloop Combo 37",
+      "input": "'''CH''' 5K, > 5P > 236S"
+    },
+    {
+      "id": "dl_38",
+      "name": "Dustloop Combo 38",
+      "input": "'''CH''' Crouch 5K, > 2K  > 2D OR 6K > [2]8H"
+    },
+    {
+      "id": "dl_39",
+      "name": "Dustloop Combo 39",
+      "input": "5K/2K > 6K > [2]8H(3) 22FRC~whiff (j.6D / j.4D) > 66 > c.S > 5H > dl. 2S > 5H > 214[S] > WS > 214H"
+    },
+    {
+      "id": "dl_40",
+      "name": "Dustloop Combo 40",
+      "input": "(5K/2K) > 6K > [2]8H > 66FRC~j.P whiff, dl. j.S(2) > land > 66 c.S  > 5H > dl. 2S > 214[S] > WS > bt.214H"
+    },
+    {
+      "id": "dl_41",
+      "name": "Dustloop Combo 41",
+      "input": "5K > 6K > [2]8H > 22FRC whiff j.H > land > 6H > [4]6H,> f.S  > 5H > dl. f.S > 236S > WS > 214H"
+    },
+    {
+      "id": "dl_42",
+      "name": "Dustloop Combo 42",
+      "input": "2K > 6K > [2]8H > 22FRC whiff j.H > land > 6H > [4]6H,> 2S  > 214[S] > WS > 214H"
+    },
+    {
+      "id": "dl_43",
+      "name": "Dustloop Combo 43",
+      "input": "c.S > (2S) > 5H > 214[S]"
+    },
+    {
+      "id": "dl_44",
+      "name": "Dustloop Combo 44",
+      "input": "c.S > 2H > 214[S], microwalk bt.S > bt.H (> ender)"
+    },
+    {
+      "id": "dl_45",
+      "name": "Dustloop Combo 45",
+      "input": "c.S > 2H > 214[S], 66 bt.P > bt.K > 66 bt.P > bt.K > 66 bt.K > bt.S > bt.H > 214[H] (> ender)"
+    },
+    {
+      "id": "dl_46",
+      "name": "Dustloop Combo 46",
+      "input": "CH c.S, > 66 c.S > 2H > 214[S], > 66 bt.K > bt.P/bt.S > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_47",
+      "name": "Dustloop Combo 47",
+      "input": "66 '''CH''' c.S > 5[D], > 66 c.S > 2H > 214[S], 66 bt.K > bt.S > bt.H > 214H"
+    },
+    {
+      "id": "dl_48",
+      "name": "Dustloop Combo 48",
+      "input": "'''CH''' c.S > 6H > [4]6H, > 66 c.S > 5H > 2S > 5H > 214[S] >  214H"
+    },
+    {
+      "id": "dl_49",
+      "name": "Dustloop Combo 49",
+      "input": "f.S > 5H > 236S"
+    },
+    {
+      "id": "dl_50",
+      "name": "Dustloop Combo 50",
+      "input": "66 f.S > 5H > 214[S] (> bt.S > bt.H > 214[S]/214[H])"
+    },
+    {
+      "id": "dl_51",
+      "name": "Dustloop Combo 51",
+      "input": "f.S (>  5H) > 236D > 2H > 214[S] >  > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_52",
+      "name": "Dustloop Combo 52",
+      "input": "f.S  (> 5H) > 236[S] > 66RRC > 2H > 214[S], > 66  > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_53",
+      "name": "Dustloop Combo 53",
+      "input": "f.S  (> 5H) > 236S > 66RRC > 66 9 > j.S > adc >  > land > 66 c.S (> ) > 5H > dl. 2S > 214[S] > WS > 214[H]"
+    },
+    {
+      "id": "dl_54",
+      "name": "Dustloop Combo 54",
+      "input": "CH f.S > 6H > 214[S] > bt.S > bt.H > 214[H] (> 236S WS > 214[S])"
+    },
+    {
+      "id": "dl_55",
+      "name": "Dustloop Combo 55",
+      "input": "2S > 5H > f.S > 236S"
+    },
+    {
+      "id": "dl_56",
+      "name": "Dustloop Combo 56",
+      "input": "2S > 5H > 214[S]"
+    },
+    {
+      "id": "dl_57",
+      "name": "Dustloop Combo 57",
+      "input": "CH 2S > 6H > 214[S] > bt.S > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_58",
+      "name": "Dustloop Combo 58",
+      "input": "CH 2S > 236[D] > whiff 2P > 66 c.S> 5H > dl. 2S > 5H > 214[S] > WS >214[H]"
+    },
+    {
+      "id": "dl_59",
+      "name": "Dustloop Combo 59",
+      "input": "5H (> f.S) > 236S"
+    },
+    {
+      "id": "dl_60",
+      "name": "Dustloop Combo 60",
+      "input": "5H > 214[S], > bt.S > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_61",
+      "name": "Dustloop Combo 61",
+      "input": "'''CH''' 5H > 214[S], > 66 bt.S > bt.H > 214[H] 66 bt.S > bt.H > WS > 214[H]"
+    },
+    {
+      "id": "dl_62",
+      "name": "Dustloop Combo 62",
+      "input": "'''CH''' 5H > f.S > 6H > 214[S], > bt.S > bt.H > 22 66 > 2S > 5H > dl. S > 214[H] (> 66 bt.K > WS > 214[H])"
+    },
+    {
+      "id": "dl_63",
+      "name": "Dustloop Combo 63",
+      "input": "'''CH''' 5H > 236S, > 66 5K /2K > 6K > 214[S]"
+    },
+    {
+      "id": "dl_64",
+      "name": "Dustloop Combo 64",
+      "input": "5H >  (f.S >) 236D > 2H > 214[S] >  > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_65",
+      "name": "Dustloop Combo 65",
+      "input": "5H  (> f.S) > 236S > 66RRC > 2H > 214[S], >  > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_66",
+      "name": "Dustloop Combo 66",
+      "input": "5H >  (> f.S) > 236S > 66RRC > 9 > j.S > adc > j.S > land > 66 c.S > 5H > dl. 2S > 214[S] > WS > 214H"
+    },
+    {
+      "id": "dl_67",
+      "name": "Dustloop Combo 67",
+      "input": "CH 2D > 2K > 214[S] > bt.S > bt.H ( > 214[H])"
+    },
+    {
+      "id": "dl_68",
+      "name": "Dustloop Combo 68",
+      "input": "CH 2D > 66 > 2K > 214[S]"
+    },
+    {
+      "id": "dl_69",
+      "name": "Dustloop Combo 69",
+      "input": "CH 2D, c.S > DC~214[S], bt.S > bt.H > 214H (> 236S > WS >  )"
+    },
+    {
+      "id": "dl_70",
+      "name": "Dustloop Combo 70",
+      "input": "2D > 66RRC > 2H > 214[S], > 66  > bt.H > 214[H]/214[S]"
+    },
+    {
+      "id": "dl_71",
+      "name": "Dustloop Combo 71",
+      "input": "2D > 66FRRC~2H > 214[S], 66 bt.P > bt.K > 66 bt.P > bt.K > 66 bt.K > bt.S > bt.H > 214[H] (> ender)"
+    },
+    {
+      "id": "dl_72",
+      "name": "Dustloop Combo 72",
+      "input": "'''CH''' 6K, 66 c.S > 2H >  214[S], > microwalk bt.S > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_73",
+      "name": "Dustloop Combo 73",
+      "input": "6K > [2]8H"
+    },
+    {
+      "id": "dl_74",
+      "name": "Dustloop Combo 74",
+      "input": "(CH) [2]8H > 22FRC~Whiff (j.6D / j.4D) > 66 > 9 >  (2) > adc >  (2) > 66 > c.S > f.S >  > dl.  >  > WS >"
+    },
+    {
+      "id": "dl_75",
+      "name": "Dustloop Combo 75",
+      "input": "[2]8H > 22FRC~Whiff j.H > 66 , >  66 c.S > 2H > 214[S], > 66 bt.K > bt.S > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_76",
+      "name": "Dustloop Combo 76",
+      "input": "(6K >) [2]8H > 22FRC~Whiff j.H > 6H > [4]6H > 66 > c.S >  > dl.  >  WS >"
+    },
+    {
+      "id": "dl_77",
+      "name": "Dustloop Combo 77",
+      "input": "(6K >) [2]8H > 22FRC~ j.S > adc > j.S > 66 c.S > f.S > 5H > 2S > 214[S], WS > 214H"
+    },
+    {
+      "id": "dl_78",
+      "name": "Dustloop Combo 78",
+      "input": "'''CH''' 2H > 2S(whiff), 66 9 > j.S > airdash > j.S > c.S > 5H > dl.2S > 214[S] > WS > 214H"
+    },
+    {
+      "id": "dl_79",
+      "name": "Dustloop Combo 79",
+      "input": "'''CH''' [H]S/[S]H > 66 5K > 6K > 214[S]"
+    },
+    {
+      "id": "dl_80",
+      "name": "Dustloop Combo 80",
+      "input": "Air [H]S/[S]H > 214[S]"
+    },
+    {
+      "id": "dl_81",
+      "name": "Dustloop Combo 81",
+      "input": "Air '''CH''' [H]S/[S]H > 66 2H > 214[S] > bt.S > bt.H (> 214[H], > 66 bt.K > WS > 214[H]"
+    },
+    {
+      "id": "dl_82",
+      "name": "Dustloop Combo 82",
+      "input": "'''CH''' [H]S/[S]H > 66 2S/c.S > 5H > dl. 2S > 5H > dl. 2S > 5H > 214[S} > WS > 214H"
+    },
+    {
+      "id": "dl_83",
+      "name": "Dustloop Combo 83",
+      "input": "'''RISC CH''' 5D, > 66 9 > j.S > airdash > j.S > 66 c.S > 214[S] > WS > 214H)"
+    },
+    {
+      "id": "dl_84",
+      "name": "Dustloop Combo 84",
+      "input": "5D > 66FRC~2H > 214[S], >  > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_85",
+      "name": "Dustloop Combo 85",
+      "input": "5D > 66FRC~2H > 214[S], 66 bt.P > bt.K > 66 bt.P > bt.K > 66 bt.K > bt.S > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_86",
+      "name": "Dustloop Combo 86",
+      "input": "5D > 66RRC > [4]6H > 66 c.S > 5H > dl. 2S > 5H > dl. 2S > 214[S] > WS > 214H"
+    },
+    {
+      "id": "dl_87",
+      "name": "Dustloop Combo 87",
+      "input": "4/6D > 66RRC > 66 2H > 214[S], > microwalk  > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_88",
+      "name": "Dustloop Combo 88",
+      "input": "4/6D > OTG 632146S"
+    },
+    {
+      "id": "dl_89",
+      "name": "Dustloop Combo 89",
+      "input": "4/6D > FRC~[4]6H > 66 c.S > 5H > dl. 2S > 5H > 214[S] > WS > 214H"
+    },
+    {
+      "id": "dl_90",
+      "name": "Dustloop Combo 90",
+      "input": "5[D], j.S > 9jc > j.H > j.S > j.H > 9j.c > j.H > j.H (Finishing Blow)"
+    },
+    {
+      "id": "dl_91",
+      "name": "Dustloop Combo 91",
+      "input": "j.X > land > 2K > 6K > 236S"
+    },
+    {
+      "id": "dl_92",
+      "name": "Dustloop Combo 92",
+      "input": "'''CH''' j.H/j.S > land > 66 2H >  214[S], > 66 bt.K > bt.P > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_93",
+      "name": "Dustloop Combo 93",
+      "input": "'''CH''' j.H > land > 66 2H >  214[S], > 66 bt.K > bt.P > bt.K > 66 bt.K > bt.S > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_94",
+      "name": "Dustloop Combo 94",
+      "input": "'''CH''' j.K > land > 66 2K >  6K > [2]8H"
+    },
+    {
+      "id": "dl_95",
+      "name": "Dustloop Combo 95",
+      "input": "j.K/j.S/j.H > adc > j.S > land > 66 c.S/2S > 5H, 2S >  > WS > 214H"
+    },
+    {
+      "id": "dl_96",
+      "name": "Dustloop Combo 96",
+      "input": "j.P, > j.S> adc > j.S > land > 66 c.S/2S > 5H, 2S >  > WS > 214H"
+    },
+    {
+      "id": "dl_97",
+      "name": "Dustloop Combo 97",
+      "input": "j.S/'''CH''' j.K/'''CH''' j.H > adc > j.S (1) > whiff j.H > land > 66 c.S > 214[S]"
+    },
+    {
+      "id": "dl_98",
+      "name": "Dustloop Combo 98",
+      "input": "j.P > j.P > land > c.S > 214[S] or wall loops"
+    },
+    {
+      "id": "dl_99",
+      "name": "Dustloop Combo 99",
+      "input": "j.D > land > 236S"
+    },
+    {
+      "id": "dl_100",
+      "name": "Dustloop Combo 100",
+      "input": "j.D > land > [2]8H"
+    },
+    {
+      "id": "dl_101",
+      "name": "Dustloop Combo 101",
+      "input": "'''CH''' j.D > land > 214[S] > bt.S > bt.H > 214[H/214[S]"
+    },
+    {
+      "id": "dl_102",
+      "name": "Dustloop Combo 102",
+      "input": "(bt.K > bt.S) > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_103",
+      "name": "Dustloop Combo 103",
+      "input": "bt.K > bt.K >  bt.S > bt.H >  236H"
+    },
+    {
+      "id": "dl_104",
+      "name": "Dustloop Combo 104",
+      "input": "(bt.K) > bt.S > bt.H 22 > 66 > c.S  > 214[S]"
+    },
+    {
+      "id": "dl_105",
+      "name": "Dustloop Combo 105",
+      "input": "bt.K > bt.K > bt.S > bt.H 22 > 66 > 2S  > 214[S]"
+    },
+    {
+      "id": "dl_106",
+      "name": "Dustloop Combo 106",
+      "input": "(bt.S >) bt.H 22 66 > 2H > 214[S]"
+    },
+    {
+      "id": "dl_107",
+      "name": "Dustloop Combo 107",
+      "input": "(bt.K > bt.S >) bt.H > 214[H], > 66 bt.K > bt.S >) bt.H > WS > 214[H]"
+    },
+    {
+      "id": "dl_108",
+      "name": "Dustloop Combo 108",
+      "input": "(bt.K >  > bt.S >) bt.H > 22 66 2S > 5H ( > dl. 2S > 5H) > 214[S] > WS > 214[H]"
+    },
+    {
+      "id": "dl_109",
+      "name": "Dustloop Combo 109",
+      "input": "66 bt.K >  bt.P > bt.K, > 66 bt.P > bt.K, > 66 bt.K > bt.S >  bt.H > 214[H]"
+    },
+    {
+      "id": "dl_110",
+      "name": "Dustloop Combo 110",
+      "input": "'''CH''' bt.S > 22 66 > 2H > 214[S], 66 bt.P > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_111",
+      "name": "Dustloop Combo 111",
+      "input": "'''CH''' bt.S > 22 66 > 2H > 214[S], 66 bt.P > bt.K, > 66 bt.P > bt.K, > 66 bt.K > bt.S > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_112",
+      "name": "Dustloop Combo 112",
+      "input": "bt.S >  bt.H > 22 66 2H > 214[S], > 66 bt.K > bt.P > bt.K , 66 bt.K >bt.S > bt.H > 214[S] > WS , 214[H]/"
+    },
+    {
+      "id": "dl_113",
+      "name": "Dustloop Combo 113",
+      "input": "'''CH''' AA bt.S > 22 66 9 > j.S > airdash > j.S > 66 c.S > 5H > dl.2S > 214[S] > WS > 214H"
+    },
+    {
+      "id": "dl_114",
+      "name": "Dustloop Combo 114",
+      "input": "'''CH''' bt.S > 214[H],  > bt.H > 214[H], >bt.H 214[S] > WS > 214[H]"
+    },
+    {
+      "id": "dl_115",
+      "name": "Dustloop Combo 115",
+      "input": "'''CH''' bt.P, microwalk bt.P > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_116",
+      "name": "Dustloop Combo 116",
+      "input": "'''CH''' bt.P > 214[H], > 66 bt.K >  bt.S > bt.H > 214[H] > WS  214[S]"
+    },
+    {
+      "id": "dl_117",
+      "name": "Dustloop Combo 117",
+      "input": "'''CH''' 214[H], >214[H],  > bt.H > 214[H], > bt.S > WS > 214[H]"
+    },
+    {
+      "id": "dl_118",
+      "name": "Dustloop Combo 118",
+      "input": "632146H(5) > 66FRC~j.PxN > WS > Any Button"
+    },
+    {
+      "id": "dl_119",
+      "name": "Dustloop Combo 119",
+      "input": "632146H(5) > 66RRC > dl. 66 > c.S > 5H > dl. f.S > 5H > dl. 2S > 5H > 214[S] > WS > 214H"
+    },
+    {
+      "id": "dl_120",
+      "name": "Dustloop Combo 120",
+      "input": "632146H(5) > 66RRC > dl. 66 2H > 214[S],  > bt.S > bt.H > 214[H], > 66 bt.K > WS > 214H"
+    },
+    {
+      "id": "dl_121",
+      "name": "Dustloop Combo 121",
+      "input": "236S > 66RRC > 66 2H > 214[S] > 66 bt.P > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_122",
+      "name": "Dustloop Combo 122",
+      "input": "236S > 66RRC > 9 > j.S > adc > j.S ▷ 66 c.S > 5H > dl. 2S > 214[S] > WS > 214H"
+    },
+    {
+      "id": "dl_123",
+      "name": "Dustloop Combo 123",
+      "input": "236H > 88RRC > land > 66 > dl. c.S > 5H > dl. 2S > 5H > dl. 2S > 5H > 214[S] > WS > 214H"
+    },
+    {
+      "id": "dl_124",
+      "name": "Dustloop Combo 124",
+      "input": "236H > 88RRC > land > 66 > 5[D], dl. c.S > 5H > dl. 2S > 5H > dl. 2S > 5H > 214[S] > WS > 214H"
+    },
+    {
+      "id": "dl_125",
+      "name": "Dustloop Combo 125",
+      "input": "236H > 44FRC~2H > 214[S], > 66 bt.K >  > bt.H > 22 66 > slight delay 5K > 6K > 236S > WS > 66 214S"
+    },
+    {
+      "id": "dl_126",
+      "name": "Dustloop Combo 126",
+      "input": "Trade 214S > 2H > 214[S] > microwalk bt.S > bt.H > 214[H]"
+    },
+    {
+      "id": "dl_127",
+      "name": "Dustloop Combo 127",
+      "input": "'''CH''' 214[S], > bt.P > 214H, 66 c.S > 5H, > 2S > 214[S] > WS > 214[H],"
     }
   ]
 }

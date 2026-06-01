@@ -13,6 +13,7 @@ interface Props {
   controller?: ControllerType;
   notationOverride?: string;
   initialExpandedId?: string | null;
+  onSelectCharacter?: (game: GameDefinition, charId: string) => void;
 }
 
 const GAME_THEMES: Record<string, { gradient: string; icon: string; tagline: string; glowColor: string }> = {
@@ -192,9 +193,18 @@ interface AutocompleteProps {
   onChange: (val: string) => void;
   games: GameDefinition[];
   onSelectGame?: (game: GameDefinition) => void;
+  onSelectCharacter?: (game: GameDefinition, charId: string) => void;
 }
 
-const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: AutocompleteProps) => {
+interface SearchResult {
+  type: 'game' | 'character';
+  game: GameDefinition;
+  character?: { id: string; name: string };
+  label: string;
+  searchString: string;
+}
+
+const CustomAutocomplete = ({ value, onChange, games, onSelectGame, onSelectCharacter }: AutocompleteProps) => {
   const [isOpen, setIsOpen] = useState(false);
   const triggerRef = useRef<HTMLDivElement>(null);
 
@@ -208,22 +218,65 @@ const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: Autocomple
     return () => document.removeEventListener('mousedown', handleClickOutside);
   }, []);
 
-  const matches = (value ? games.filter((g: GameDefinition) => 
-    g.name.toLowerCase().includes(value.toLowerCase()) || 
-    (g.searchAliases && g.searchAliases.some(alias => alias.toLowerCase().includes(value.toLowerCase())))
-  ) : games).sort((a: GameDefinition, b: GameDefinition) => a.name.localeCompare(b.name));
+  const searchableItems = React.useMemo(() => {
+    const items: SearchResult[] = [];
+    games.forEach(g => {
+      items.push({
+        type: 'game',
+        game: g,
+        label: g.name,
+        searchString: `${g.name} ${g.searchAliases?.join(' ') || ''}`.toLowerCase()
+      });
+      if (g.characters) {
+        g.characters.forEach(c => {
+          if (!c.isHidden) {
+            items.push({
+              type: 'character',
+              game: g,
+              character: c,
+              label: c.name,
+              searchString: `${c.name} ${g.name} ${g.searchAliases?.join(' ') || ''}`.toLowerCase()
+            });
+          }
+        });
+      }
+    });
+    return items;
+  }, [games]);
+
+  const matches = React.useMemo(() => {
+    if (!value) {
+      return searchableItems.filter(i => i.type === 'game').sort((a, b) => a.game.name.localeCompare(b.game.name));
+    }
+    const terms = value.toLowerCase().split(' ').filter(Boolean);
+    return searchableItems.filter(item => 
+      terms.every(term => item.searchString.includes(term))
+    ).slice(0, 30); // Limit to 30 results for performance
+  }, [value, searchableItems]);
 
   return (
     <div ref={triggerRef} style={{ position: 'relative', width: '100%', zIndex: isOpen ? 100 : 10 }}>
         <input
           type="text"
-          placeholder="Search Games"
+          placeholder="Search Games or Characters... (e.g. 'Strive Sol')"
           value={value}
           onChange={(e) => {
              onChange(e.target.value);
              setIsOpen(true);
           }}
           onFocus={() => setIsOpen(true)}
+          onKeyDown={(e) => {
+            if (e.key === 'Enter' && matches.length > 0) {
+              const item = matches[0];
+              onChange('');
+              setIsOpen(false);
+              if (item.type === 'game' && onSelectGame) {
+                onSelectGame(item.game);
+              } else if (item.type === 'character' && onSelectCharacter && item.character) {
+                onSelectCharacter(item.game, item.character.id);
+              }
+            }
+          }}
           style={{
             width: '100%',
             padding: '0.75rem 1.5rem',
@@ -252,7 +305,7 @@ const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: Autocomple
             background: 'var(--bg-card)',
             border: '1px solid var(--border-subtle)',
             borderRadius: 'var(--radius-lg)',
-            maxHeight: '300px',
+            maxHeight: '400px',
             overflowY: 'auto',
             boxShadow: '0 10px 25px -5px rgba(0,0,0,0.3)',
             padding: '0.5rem',
@@ -260,13 +313,17 @@ const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: Autocomple
             flexDirection: 'column',
             gap: '2px',
          }}>
-           {matches.map((g: GameDefinition) => (
+           {matches.map((item: SearchResult, idx: number) => (
               <div 
-                key={g.id}
+                key={`${item.type}-${item.game.id}-${item.character?.id || idx}`}
                 onClick={() => { 
-                   onChange(g.name); 
+                   onChange(''); // Clear search box on navigation
                    setIsOpen(false); 
-                   if(onSelectGame) onSelectGame(g);
+                   if(item.type === 'game' && onSelectGame) {
+                     onSelectGame(item.game);
+                   } else if(item.type === 'character' && onSelectCharacter && item.character) {
+                     onSelectCharacter(item.game, item.character.id);
+                   }
                 }}
                 style={{
                    padding: '0.6rem 1rem',
@@ -276,11 +333,22 @@ const CustomAutocomplete = ({ value, onChange, games, onSelectGame }: Autocomple
                    transition: 'all 0.2s ease',
                    textAlign: 'center',
                    fontWeight: 500,
+                   display: 'flex',
+                   flexDirection: 'column',
+                   alignItems: 'center',
+                   gap: '2px'
                 }}
                 onMouseOver={(e) => { e.currentTarget.style.background = 'var(--bg-input)'; e.currentTarget.style.color = 'var(--text-primary)'; }}
                 onMouseOut={(e) => { e.currentTarget.style.background = 'transparent'; e.currentTarget.style.color = 'var(--text-secondary)'; }}
               >
-                 {g.name}
+                 <span style={{ color: item.type === 'character' ? 'var(--accent-indigo)' : 'var(--text-primary)', fontWeight: 600 }}>
+                   {item.label}
+                 </span>
+                 {item.type === 'character' && (
+                   <span style={{ fontSize: '0.75rem', opacity: 0.7 }}>
+                     {item.game.name}
+                   </span>
+                 )}
               </div>
            ))}
          </div>
@@ -363,7 +431,8 @@ export const GameSelectView: React.FC<Props> = ({
   disableInitialAnimation = false,
   controller,
   notationOverride = 'auto',
-  initialExpandedId
+  initialExpandedId,
+  onSelectCharacter
 }) => {
   useArrowNavigation('[id^="game-card-"]');
 
@@ -631,6 +700,7 @@ export const GameSelectView: React.FC<Props> = ({
             }}
             games={VISIBLE_GAMES}
             onSelectGame={onSelectGame}
+            onSelectCharacter={onSelectCharacter}
           />
 
           {/* Sort Pill */}

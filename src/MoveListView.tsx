@@ -17,7 +17,6 @@ interface Props {
   onSetController: (c: ControllerType) => void;
   onToggleMove: (move: Move) => void;
   onLaunchMainScreen: () => void;
-  onLaunchComboView?: () => void;
   onClearGameGlance?: () => void;
   onBack: () => void;
   onHome: () => void;
@@ -162,13 +161,13 @@ const OkiTooltip = ({ content, children }: { content: React.ReactNode; children:
   </div>
 );
 
-export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, notationSystem, onToggleMove, onLaunchMainScreen, onLaunchComboView, onClearGameGlance, onBack, onHome, showFrameData = true }) => {
+export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlaylist, controller, notationSystem, onToggleMove, onLaunchMainScreen, onClearGameGlance, onBack, onHome, showFrameData = true }) => {
   useArrowNavigation('[id^="move-"]');
 
   const [characterData, setCharacterData] = useState<CharacterExport | null>(null);
   const [orderedTabs, setOrderedTabs] = useState<string[]>([]);
   const [loadingError, setLoadingError] = useState<string>('');
-  const [searchQuery, setSearchQuery] = useState('');
+  const searchQuery = '';
   const [showScrollTop, setShowScrollTop] = useState(false);
   const [collapsedSections, setCollapsedSections] = useState<Record<string, boolean>>(() => {
     try {
@@ -217,7 +216,10 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
         console.warn('Failed to parse tab preferences', err);
       }
     }
-    const baseTabs = game.tabs && game.tabs.length > 0 ? game.tabs : GLOBAL_DEFAULT_SORT;
+    const baseTabs = game.tabs && game.tabs.length > 0 ? [...game.tabs] : [...GLOBAL_DEFAULT_SORT];
+    if (!baseTabs.includes('Combos')) {
+      baseTabs.push('Combos');
+    }
     const combinedTabs = Array.from(new Set(baseTabs))
       .filter(t => t !== 'Command Throws' && t !== 'Normal Throws');
     const sorted = combinedTabs.sort((a,b) => {
@@ -577,7 +579,19 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
     'Command Throws': (d) => (d.movesList || []).filter(m => isCommandThrow(m)),
     'Normal Throws':  (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'throw' && isNormalThrow(m)),
     'System':         (d) => (d.movesList || []).filter(m => m.type && m.type.toLowerCase() === 'common'),
-    'Combos':         (d) => (d.movesList || []).filter(m => (m.type && m.type.toLowerCase() === 'combo') || (m.rawType && m.rawType.toLowerCase() === 'combo')),
+    'Combos':         (d) => {
+      const movesCombos = (d.movesList || []).filter(m => (m.type && m.type.toLowerCase() === 'combo') || (m.rawType && m.rawType.toLowerCase() === 'combo'));
+      const parsedCombos = (d.combosList || []).map(c => ({
+        id: c.id || `combo-${c.name?.replace(/\s+/g, '-')}`,
+        name: c.name || 'Combo',
+        input: c.input,
+        type: 'combo' as Move['type'],
+        rawType: 'combo',
+        properties: [] as string[],
+        notes: [c.damage ? `Damage: ${c.damage}` : null, c.notes].filter(Boolean).join('\n')
+      }));
+      return [...movesCombos, ...parsedCombos];
+    },
     '10-Hit Combos':  (d) => (d.movesList || []).filter(m => m.rawType && m.rawType.toLowerCase() === '10-hit combo'),
     'Strings':        (d) => (d.movesList || []).filter(m => m.rawType && m.rawType.toLowerCase() === 'string'),
     'Stances':        (d) => (d.movesList || []).filter(m => m.rawType && m.rawType.toLowerCase() === 'stance'),
@@ -598,9 +612,13 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
       'System', 'Special Moves', 'Special', 'Arcana Moves', 'Super Arts', 'Super Combos', 'Super Moves', 'Super',
       'Overdrives', 'Critical Art', 'Critical Heart', 'Offensive Art', 'Defensive Art',
       'Finishers', 'Finisher', 'Fatality', 'Fatalities', 'Heroic Brutality',
-      'Throws', 'Throw', 'Combos', 'Unique Attacks', 'Normal Moves', 'Normal', 'Common Moves', 'Common'
+      'Throws', 'Throw', 'Unique Attacks', 'Normal Moves', 'Normal', 'Common Moves', 'Common', 'Combos'
     ];
-    const combinedTabs = game.tabs && game.tabs.length > 0 ? game.tabs : GLOBAL_DEFAULT_SORT;
+    const baseTabs = game.tabs && game.tabs.length > 0 ? [...game.tabs] : [...GLOBAL_DEFAULT_SORT];
+    if (!baseTabs.includes('Combos')) {
+      baseTabs.push('Combos');
+    }
+    const combinedTabs = Array.from(new Set(baseTabs));
     
     combinedTabs.forEach(tab => {
       const fallbackFilter = (list: Move[]) => list.filter(m => 
@@ -959,83 +977,8 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
           })}
         </div>
 
-        {/* Search + controller */}
+        {/* Launch GameGlance Button */}
         <div style={{ display: 'flex', gap: 'var(--space-sm)', alignItems: 'center', flexWrap: 'wrap' }}>
-          <div style={{ flex: 1, minWidth: '200px', position: 'relative' }}>
-            <span style={{
-              position: 'absolute',
-              left: '14px',
-              top: '50%',
-              transform: 'translateY(-50%)',
-              color: 'var(--text-tertiary)',
-              fontSize: '0.9rem',
-              pointerEvents: 'none',
-            }}>🔍</span>
-            <input
-              id="move-search"
-              type="text"
-              placeholder="Search moves..."
-              value={searchQuery}
-              onChange={e => setSearchQuery(e.target.value)}
-              style={{
-                width: '100%',
-                padding: '0.65rem 0.75rem 0.65rem 2.4rem',
-                background: 'var(--bg-input)',
-                border: '1px solid var(--border-subtle)',
-                borderRadius: 'var(--radius-lg)',
-                color: 'var(--text-primary)',
-                fontSize: '0.9rem',
-                fontFamily: 'inherit',
-                outline: 'none',
-                transition: 'all 0.25s ease',
-              }}
-              onFocus={e => {
-                e.currentTarget.style.borderColor = 'var(--accent-indigo)';
-                e.currentTarget.style.boxShadow = '0 0 0 3px rgba(99, 102, 241, 0.12)';
-              }}
-              onBlur={e => {
-                e.currentTarget.style.borderColor = 'var(--border-subtle)';
-                e.currentTarget.style.boxShadow = 'none';
-              }}
-            />
-          </div>
-
-          {/* Combos Button */}
-          {onLaunchComboView && (
-            <button
-              onClick={onLaunchComboView}
-              style={{
-                background: 'var(--bg-glass)',
-                color: 'var(--text-primary)',
-                border: '1px solid var(--border-subtle)',
-                padding: '0.65rem 1rem',
-                borderRadius: 'var(--radius-lg)',
-                fontWeight: 600,
-                cursor: 'pointer',
-                fontSize: '0.85rem',
-                transition: 'all 0.25s ease',
-                display: 'flex',
-                alignItems: 'center',
-                gap: '0.5rem',
-              }}
-              onMouseOver={e => {
-                e.currentTarget.style.borderColor = 'var(--accent-indigo)';
-                e.currentTarget.style.color = 'var(--accent-indigo)';
-                e.currentTarget.style.background = 'var(--bg-input)';
-              }}
-              onMouseOut={e => {
-                e.currentTarget.style.borderColor = 'var(--border-subtle)';
-                e.currentTarget.style.color = 'var(--text-primary)';
-                e.currentTarget.style.background = 'var(--bg-glass)';
-              }}
-            >
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon>
-              </svg>
-              Combos
-            </button>
-          )}
-
           {selectedCount > 0 && (
             <button
               id="launch-main-screen"
@@ -1322,7 +1265,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                                   inputs={Array.isArray(cleanChildInput) ? cleanChildInput : [cleanChildInput]} 
                                   controller={effectiveController} 
                                   notationSystem={(game.notationSystem === 'mk' || game.notationSystem === 'tekken') ? game.notationSystem : (notationSystem || game.notationSystem)} 
-                                  isCombo={child.type?.toLowerCase() === 'combo'}
+                                  isCombo={child.type?.toLowerCase() === 'combo' || tab === 'Combos'}
                                 />
                               </div>
                             </div>
@@ -1477,7 +1420,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                             inputs={Array.isArray(cleanMainInput) ? cleanMainInput : [cleanMainInput]} 
                             controller={effectiveController} 
                             notationSystem={(game.notationSystem === 'mk' || game.notationSystem === 'tekken') ? game.notationSystem : (notationSystem || game.notationSystem)} 
-                            isCombo={move.type?.toLowerCase() === 'combo'}
+                            isCombo={move.type?.toLowerCase() === 'combo' || tab === 'Combos'}
                           />
                           {move.notes && (
                             <div style={{
@@ -1551,7 +1494,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                   {noStanceGroup.length > 0 && (
                     <div className="move-grid-main" style={{ 
                       display: 'grid',
-                      gridTemplateColumns: 'repeat(auto-fit, minmax(330px, 1fr))',
+                      gridTemplateColumns: tab === 'Combos' ? '1fr' : 'repeat(auto-fit, minmax(330px, 1fr))',
                       gridAutoRows: 'auto',
                       gap: '1rem',
                       width: '100%',
@@ -1590,7 +1533,7 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
                       </h3>
                       <div className="move-grid-main" style={{ 
                         display: 'grid',
-                        gridTemplateColumns: 'repeat(auto-fit, minmax(330px, 1fr))',
+                        gridTemplateColumns: tab === 'Combos' ? '1fr' : 'repeat(auto-fit, minmax(330px, 1fr))',
                         gridAutoRows: 'auto',
                         gap: '1rem',
                         width: '100%',

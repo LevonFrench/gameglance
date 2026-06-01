@@ -34,13 +34,13 @@ const tokenizeMKInputs = (inputs: string[], isCombo: boolean = false): string[] 
       let t = tokens[i];
       if (t === ' ') { 
         if (skipNextSpace) { skipNextSpace = false; continue; }
-        if (isCombo) { result.push('[Cancel]'); }
+        if (isCombo) { result.push('>'); }
         continue; 
       }
       
       if (t.toUpperCase() === 'ANY') { skipNextSpace = true; }
       if (t === '-') { continue; }
-      if (t === '~' || t === '>' || t === ',') { result.push('[Cancel]'); continue; }
+      if (t === '~' || t === '>' || t === ',') { result.push(isCombo ? '>' : '[Cancel]'); continue; }
       if (t === '/') { result.push('or'); continue; }
       if (t === '+') { result.push('+'); continue; }
       if (t === '[Cancel]') { result.push(t); continue; }
@@ -104,12 +104,12 @@ const tokenizeTekkenInputs = (inputs: string[], isCombo: boolean = false): strin
       let t = tokens[i];
       if (t === ' ') { 
         if (skipNextSpace) { skipNextSpace = false; continue; }
-        if (isCombo) { result.push('[Cancel]'); }
+        if (isCombo) { result.push('>'); }
         continue; 
       }
       
       if (t === '-') { continue; }
-      if (t === '~' || t === '>' || t === ',') { result.push('[Cancel]'); continue; }
+      if (t === '~' || t === '>' || t === ',') { result.push(isCombo ? '>' : '[Cancel]'); continue; }
       if (t === '+') { result.push('+'); continue; }
       if (t === '[Cancel]') { result.push(t); continue; }
 
@@ -216,7 +216,7 @@ const tokenizeStandardInputs = (inputs: string[], notationSystem: string = 'trad
           continue;
         }
         if (isCombo) {
-          result.push('[Cancel]');
+          result.push('>');
         }
         continue; 
       }
@@ -226,9 +226,9 @@ const tokenizeStandardInputs = (inputs: string[], notationSystem: string = 'trad
       }
 
       if (t === '-') { continue; }
-      if (t === ',') { result.push('[Cancel]'); continue; }
-      if (t === '~') { result.push('[Cancel]'); continue; }
-      if (t === '>') { result.push('[Cancel]'); continue; }
+      if (t === ',') { result.push(isCombo ? '>' : '[Cancel]'); continue; }
+      if (t === '~') { result.push(isCombo ? '>' : '[Cancel]'); continue; }
+      if (t === '>') { result.push(isCombo ? '>' : '[Cancel]'); continue; }
       if (t === '/') { result.push('or'); continue; }
       if (t === '+') { result.push('+'); continue; }
       if (t === '[Cancel]') { result.push(t); continue; }
@@ -264,11 +264,12 @@ const tokenizeStandardInputs = (inputs: string[], notationSystem: string = 'trad
       }
 
       let processingT = t;
-      let prefix = '';
-      if (processingT === 'jc' || processingT === 'IAD') {
+      const KEEP_TOGETHER = ['jc', 'adc', 'IAD', 'CL', 'dc', 'dl', 'dl.', 'WS', 'CH', 'RRC', 'PRC', 'BRC', 'YRC', 'WA', 'WB', 'OTG'];
+      if (KEEP_TOGETHER.includes(processingT) || KEEP_TOGETHER.includes(processingT.toUpperCase())) {
         result.push(processingT);
         continue;
       }
+      let prefix = '';
       if (processingT.startsWith('en.j.')) { prefix = 'en.j.'; processingT = processingT.substring(5); }
       else if (processingT.startsWith('btj.')) { prefix = 'btj.'; processingT = processingT.substring(4); }
       else if (processingT.startsWith('dj.')) { prefix = 'dj.'; processingT = processingT.substring(3); }
@@ -285,33 +286,44 @@ const tokenizeStandardInputs = (inputs: string[], notationSystem: string = 'trad
       else if (processingT.startsWith('r.')) { prefix = 'r.'; processingT = processingT.substring(2); }
       else if (processingT.startsWith('w.')) { prefix = 'w.'; processingT = processingT.substring(2); }
 
-      const cleanT = processingT.replace(/\[|\]/g, ''); 
-      const match = processingT.match(/^([a-zA-Z.+]*?)([[\]1-9]+)([[\]a-zA-Z]*)$/);
+      const cleanT = processingT.replace(/\[|\]|\(|\)/g, ''); 
+      const match = processingT.match(/^([a-zA-Z.+]*?)([[\]()1-9]+)([[\]()a-zA-Z]*)$/);
       if (match) {
         if (prefix) result.push(prefix);
         if (match[1]) result.push(match[1]);
 
         let pushedDirection = false;
         let inBracket = false;
-        for (const char of match[2]) {
-          if (char === '[') { inBracket = true; continue; }
-          if (char === ']') { inBracket = false; continue; }
-          
-          if (char === '5') continue;
+        
+        const cleanMotion = match[2].replace(/\[|\]|\(|\)/g, '');
+        const validMotions = ['236', '214', '41236', '63214', '623', '421', '360', '720'];
+        
+        if (notationSystem === 'numpad' && validMotions.includes(cleanMotion)) {
+          result.push(match[2]);
           pushedDirection = true;
-          
-          let dir = char;
-          if (notationSystem !== 'numpad') {
-            const NUMPAD_MAP: Record<string, string> = {
-              '1': 'down-back', '2': 'down', '3': 'down-forward',
-              '4': 'back', '5': 'neutral', '6': 'forward', '7': 'up-back',
-              '8': 'up', '9': 'up-forward'
-            };
-            if (NUMPAD_MAP[char]) dir = NUMPAD_MAP[char];
+        } else {
+          for (const char of match[2]) {
+            if (char === '[') { inBracket = true; continue; }
+            if (char === ']') { inBracket = false; continue; }
+            if (char === '(') { result.push('('); continue; }
+            if (char === ')') { result.push(')'); continue; }
+            
+            if (char === '5') continue;
+            pushedDirection = true;
+            
+            let dir = char;
+            if (notationSystem !== 'numpad') {
+              const NUMPAD_MAP: Record<string, string> = {
+                '1': 'down-back', '2': 'down', '3': 'down-forward',
+                '4': 'back', '5': 'neutral', '6': 'forward', '7': 'up-back',
+                '8': 'up', '9': 'up-forward'
+              };
+              if (NUMPAD_MAP[char]) dir = NUMPAD_MAP[char];
+            }
+            
+            if (inBracket) result.push(`[${dir}]`);
+            else result.push(dir);
           }
-          
-          if (inBracket) result.push(`[${dir}]`);
-          else result.push(dir);
         }
 
         if (match[3]) {
@@ -319,7 +331,7 @@ const tokenizeStandardInputs = (inputs: string[], notationSystem: string = 'trad
             result.push('+');
           }
           const isBtnBracketed = match[3].includes(']') || inBracket;
-          const cleanBtnStr = match[3].replace(/\]/g, '');
+          const cleanBtnStr = match[3].replace(/\]|\)|\(/g, '');
           const buttonMatches = cleanBtnStr.match(/(SD|DR|SP|IAD|V|LP|MP|HP|LK|MK|HK|P|K|S|H|D|L|M|A1|A2|A|B|C)/gi);
           if (buttonMatches && buttonMatches.join('') === cleanBtnStr) {
             const btns = buttonMatches.map(b => b.toUpperCase());
@@ -336,10 +348,14 @@ const tokenizeStandardInputs = (inputs: string[], notationSystem: string = 'trad
         const buttonMatches = cleanT.match(/(SD|DR|SP|IAD|V|LP|MP|HP|LK|MK|HK|P|K|S|H|D|L|M|A1|A2|A|B|C)/gi);
         if (buttonMatches && buttonMatches.join('') === cleanT) {
           const isBracketed = processingT.startsWith('[') && processingT.endsWith(']');
+          const isParenthesized = processingT.startsWith('(') && processingT.endsWith(')');
           const btns = buttonMatches.map(b => b.toUpperCase());
           for (let j = 0; j < btns.length; j++) {
             if (j > 0) result.push('+');
-            result.push(isBracketed ? `[${btns[j]}]` : btns[j]);
+            let formattedBtn = btns[j];
+            if (isBracketed) formattedBtn = `[${formattedBtn}]`;
+            if (isParenthesized) formattedBtn = `(${formattedBtn})`;
+            result.push(formattedBtn);
           }
         } else {
           result.push(processingT);
@@ -390,13 +406,19 @@ const tokenizeInputs = (inputs: string[], notationSystem: string = 'traditional'
       .replace(/\.$/, '');
   });
 
+  let finalTokens: string[] = [];
   if (notationSystem === 'mk') {
-    return tokenizeMKInputs(processedInputs, isCombo);
+    finalTokens = tokenizeMKInputs(processedInputs, isCombo);
+  } else if (notationSystem === 'tekken') {
+    finalTokens = tokenizeTekkenInputs(processedInputs, isCombo);
+  } else {
+    finalTokens = tokenizeStandardInputs(processedInputs, notationSystem, isCombo);
   }
-  if (notationSystem === 'tekken') {
-    return tokenizeTekkenInputs(processedInputs, isCombo);
+
+  if (isCombo) {
+    return finalTokens.filter((token, i, arr) => !(token === '>' && arr[i-1] === '>'));
   }
-  return tokenizeStandardInputs(processedInputs, notationSystem, isCombo);
+  return finalTokens;
 };
 
 const renderDirectionalSVG = (label: string, large: boolean, isDark: boolean, isCharge: boolean = false) => {
@@ -523,22 +545,35 @@ export const GlyphSequence: React.FC<GlyphSequenceProps> = ({ inputs, controller
       );
     }
 
+    if (input === '>') {
+      return (
+        <svg 
+          key={idx}
+          width={large ? "18" : "14"} 
+          height={large ? "18" : "14"} 
+          viewBox="0 0 24 24" 
+          fill="none" 
+          stroke="var(--text-muted)" 
+          strokeWidth="3" 
+          strokeLinecap="round" 
+          strokeLinejoin="round"
+          style={{ flexShrink: 0, margin: '0 4px', ...styleOverrides }}
+        >
+          <path d="M5 12h14" />
+          <path d="m12 5 7 7-7 7" />
+        </svg>
+      );
+    }
+
     const prefixMap: Record<string, string> = {
-      'j.': 'IN AIR',
-      'cr.': 'CROUCH',
-      'st.': 'STAND',
-      'dj.': 'D. JUMP',
-      'en.': 'ENHANCED',
-      'en.j.': 'EN. AIR',
-      'c.': 'CLOSE',
-      'f.': 'FAR',
-      'wf.': 'W. FREE',
-      'bt.': 'BACKTURN',
-      'btj.': 'BT AIR',
-      'rc.': 'ROPE (C)',
-      'rf.': 'ROPE (F)',
-      'r.': 'ROPE',
-      'w.': 'WALL',
+      'j.': 'IN AIR', 'cr.': 'CROUCH', 'st.': 'STAND', 'dj.': 'D. JUMP',
+      'en.': 'ENHANCED', 'en.j.': 'EN. AIR', 'c.': 'CLOSE', 'f.': 'FAR',
+      'wf.': 'W. FREE', 'bt.': 'BACKTURN', 'btj.': 'BT AIR',
+      'rc.': 'ROPE (C)', 'rf.': 'ROPE (F)', 'r.': 'ROPE', 'w.': 'WALL',
+      'di': 'DRAGON INSTALL', 'CH': 'COUNTER', 'CL': 'CLEAN HIT', 'WS': 'WALL SPLAT',
+      'dl.': 'DELAY', 'dl': 'DELAY', 'dc': 'DASH CANCEL', 'adc': 'AIR DASH CANCEL',
+      'jc': 'JUMP CANCEL', 'RRC': 'RED RC', 'PRC': 'PURPLE RC', 'BRC': 'BLUE RC',
+      'YRC': 'YELLOW RC', 'WA': 'WILD ASSAULT', 'WB': 'WALL BREAK', 'OTG': 'OTG'
     };
 
     const lowerInput = input.toLowerCase();

@@ -9,7 +9,7 @@ interface FrameData {
   onCounter?: string;
 }
 
-type MoveType = 'normal' | 'special' | 'super' | 'throw' | 'unique' | 'common' | 'finisher' | 'system';
+type MoveType = 'normal' | 'special' | 'super' | 'throw' | 'unique' | 'common' | 'finisher' | 'system' | 'combo';
 
 export interface Move {
   id: string;

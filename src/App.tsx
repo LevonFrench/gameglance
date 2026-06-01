@@ -5,7 +5,6 @@ import './index.css';
 import { GameSelectView } from './GameSelectView';
 import { CharacterSelectView } from './CharacterSelectView';
 import { MoveListView } from './MoveListView';
-import { ComboView } from './ComboView';
 import { GameGlanceMainView } from './GameGlanceView';
 import type { ControllerType } from './glyphMap';
 import { FightcadeSyncView } from './FightcadeSyncView';
@@ -19,7 +18,7 @@ import { SUPPORTED_GAMES } from './games';
 
 const App: React.FC = () => {
 
-  const [currentView, setCurrentView] = useState<'game_select' | 'char_select' | 'move_list' | 'combo_view' | 'fightcade_sync' | 'main_screen'>('game_select');
+  const [currentView, setCurrentView] = useState<'game_select' | 'char_select' | 'move_list' | 'fightcade_sync' | 'main_screen'>('game_select');
   const [selectedGame, setSelectedGame] = useState<GameDefinition | null>(null);
   const [selectedCharacter, setSelectedCharacter] = useState<string | null>(null);
   const [selectedPlaylist, setSelectedPlaylist] = useState<PlaylistItem[]>(() => {
@@ -123,7 +122,7 @@ const App: React.FC = () => {
 
 
 
-  const navigate = (view: 'game_select' | 'char_select' | 'move_list' | 'combo_view' | 'fightcade_sync' | 'main_screen', game: GameDefinition | null = selectedGame, char: string | null = selectedCharacter) => {
+  const navigate = (view: 'game_select' | 'char_select' | 'move_list' | 'fightcade_sync' | 'main_screen', game: GameDefinition | null = selectedGame, char: string | null = selectedCharacter) => {
     window.history.pushState({ view, gameId: game?.id, charId: char }, '', '');
     setSelectedGame(game);
     setSelectedCharacter(char);
@@ -206,6 +205,39 @@ const App: React.FC = () => {
     navigate('char_select', game);
   };
 
+  const handleGlobalSelectCharacter = (game: GameDefinition, charId: string) => {
+    setReturningFromMoveList(false);
+    setDisableGameSelectAnimation(true);
+    setLastExpandedGameId(game.id);
+    
+    if (!controllerLocked) {
+      const dev = game.developer?.toUpperCase() || '';
+      const name = game.name.toLowerCase();
+      
+      if (dev === 'SNK') {
+        setController('neogeo');
+      } else if (name.includes('mortal kombat') || name.includes('mk')) {
+        setController('mk');
+      } else if (name.includes('tatsunoko') && name.includes('capcom')) {
+        setController('wii');
+      } else if (name.includes('alpha') || name.includes('vampire') || name.includes('darkstalkers') || name.includes('vs capcom') || name.includes('msh') || name.includes('cota') || name.includes('xmvsf') || name.includes('pocket fighter')) {
+        setController('cps');
+      } else if (name.includes('street fighter ii') && !name.includes('alpha')) {
+        if (cardTheme === 'genesis' || cardTheme === 'sf2gen') {
+          setController('genesis');
+        } else {
+          setController('snes');
+        }
+      } else if (name.includes('street fighter 6') || name.includes('tekken') || name.includes('guilty gear') || name.includes('blazblue')) {
+         if (['snes', 'genesis', 'neogeo', 'sfami', 'wii', 'cps'].includes(controller)) {
+           setController('playstation');
+         }
+      }
+    }
+
+    navigate('move_list', game, charId);
+  };
+
   const handleSelectCharacter = (charId: string) => {
     navigate('move_list', selectedGame, charId);
   };
@@ -242,6 +274,7 @@ const App: React.FC = () => {
         controller={controller}
         notationOverride={notationOverride}
         initialExpandedId={lastExpandedGameId}
+        onSelectCharacter={handleGlobalSelectCharacter}
       />;
       break;
     case 'char_select':
@@ -283,7 +316,6 @@ const App: React.FC = () => {
          onSetController={handleSetController}
          onToggleMove={handleToggleMove}
          onLaunchMainScreen={handleLaunchMainScreen}
-         onLaunchComboView={() => navigate('combo_view', selectedGame, selectedCharacter)}
          onBack={() => {
            setReturningFromMoveList(true);
            window.history.back();
@@ -294,24 +326,6 @@ const App: React.FC = () => {
          }}
          onClearGameGlance={handleClearPlaylist}
          showFrameData={showFrameData}
-      />;
-      break;
-    case 'combo_view':
-      if (!selectedGame || !selectedCharacter) {
-         viewComponent = null;
-         break;
-      }
-      viewComponent = <ComboView 
-         game={selectedGame}
-         characterId={selectedCharacter}
-         controller={controller}
-         notationSystem={(notationOverride === 'auto' ? selectedGame.notationSystem : notationOverride) as 'numpad' | 'traditional' | 'mk' | undefined}
-         onSetController={handleSetController}
-         onBack={() => window.history.back()}
-         onHome={() => {
-           setDisableGameSelectAnimation(true);
-           navigate('game_select');
-         }}
       />;
       break;
     case 'fightcade_sync':

@@ -261,7 +261,7 @@
       "input": "214S (6-Hit)",
       "frameData": {
         "startup": "13",
-        "active": "[1(3)]\u00d75, 1",
+        "active": "[1(3)]×5, 1",
         "recovery": "18",
         "advantage": "-"
       },
@@ -275,7 +275,7 @@
       "input": "214S (9-Hit)",
       "frameData": {
         "startup": "13",
-        "active": "[1(3)]\u00d78, 1",
+        "active": "[1(3)]×8, 1",
         "recovery": "20",
         "advantage": "-"
       },
@@ -471,7 +471,7 @@
       "input": "214S",
       "frameData": {
         "startup": "13",
-        "active": "[1(3)]\u00d72~8, 1",
+        "active": "[1(3)]×2~8, 1",
         "recovery": "-16, -18, -20",
         "advantage": "-"
       },
@@ -598,6 +598,766 @@
       "id": "miss_4",
       "name": "Mission 4",
       "input": "c.S 2D 236K"
+    },
+    {
+      "id": "dl_1",
+      "name": "Dustloop Combo 1",
+      "input": "(> ) >  >"
+    },
+    {
+      "id": "dl_2",
+      "name": "Dustloop Combo 2",
+      "input": "/ >  >"
+    },
+    {
+      "id": "dl_3",
+      "name": "Dustloop Combo 3",
+      "input": ">  > mc ,  >  > mc"
+    },
+    {
+      "id": "dl_4",
+      "name": "Dustloop Combo 4",
+      "input": ">"
+    },
+    {
+      "id": "dl_5",
+      "name": "Dustloop Combo 5",
+      "input": "CH  >  /  >"
+    },
+    {
+      "id": "dl_6",
+      "name": "Dustloop Combo 6",
+      "input": "CH ,  >  >"
+    },
+    {
+      "id": "dl_7",
+      "name": "Dustloop Combo 7",
+      "input": "CH  >  >"
+    },
+    {
+      "id": "dl_8",
+      "name": "Dustloop Combo 8",
+      "input": "66 CH ,  >  > mc dl.,  >  > mc"
+    },
+    {
+      "id": "dl_9",
+      "name": "Dustloop Combo 9",
+      "input": ">  > mc  66  >  >  > mc"
+    },
+    {
+      "id": "dl_10",
+      "name": "Dustloop Combo 10",
+      "input": ">  > 22PRC 66 >,  >  > mc"
+    },
+    {
+      "id": "dl_11",
+      "name": "Dustloop Combo 11",
+      "input": "AA  66 >  >  > mc ,  /  >  > mc"
+    },
+    {
+      "id": "dl_12",
+      "name": "Dustloop Combo 12",
+      "input": "CH  > mc"
+    },
+    {
+      "id": "dl_13",
+      "name": "Dustloop Combo 13",
+      "input": "CH  > mc (9-hit)"
+    },
+    {
+      "id": "dl_14",
+      "name": "Dustloop Combo 14",
+      "input": "AA CH  > mc ,  >  > mc"
+    },
+    {
+      "id": "dl_15",
+      "name": "Dustloop Combo 15",
+      "input": ">  > mc  66 >  >  > ,  >  > mc  WS > mc"
+    },
+    {
+      "id": "dl_16",
+      "name": "Dustloop Combo 16",
+      "input": ">  >  > 22PRC / (PRC > ) 66 >  (66 > ) >  > mc"
+    },
+    {
+      "id": "dl_17",
+      "name": "Dustloop Combo 17",
+      "input": ">  >  > 66FPRC~ j.66 >  >  j.66 >  >  >"
+    },
+    {
+      "id": "dl_18",
+      "name": "Dustloop Combo 18",
+      "input": "(Crouching)/CH  >  >"
+    },
+    {
+      "id": "dl_19",
+      "name": "Dustloop Combo 19",
+      "input": ">  > mc  66 >  >  > mc"
+    },
+    {
+      "id": "dl_20",
+      "name": "Dustloop Combo 20",
+      "input": ">  > mc  66 >  jc.9 >  jc.9 >  j.66 >  >  > dl."
+    },
+    {
+      "id": "dl_21",
+      "name": "Dustloop Combo 21",
+      "input": ">  > 22PRC 66 >  > mc dl.,  >  > mc  WS > mc"
+    },
+    {
+      "id": "dl_22",
+      "name": "Dustloop Combo 22",
+      "input": ">  >  > 22PRC 66 >  > mc dl.,  >  WS > , mc"
+    },
+    {
+      "id": "dl_23",
+      "name": "Dustloop Combo 23",
+      "input": ",  >"
+    },
+    {
+      "id": "dl_24",
+      "name": "Dustloop Combo 24",
+      "input": ",  >  >"
+    },
+    {
+      "id": "dl_25",
+      "name": "Dustloop Combo 25",
+      "input": ",  >  > mc"
+    },
+    {
+      "id": "dl_26",
+      "name": "Dustloop Combo 26",
+      "input": ",  >  > mc  66 >  >  > mc"
+    },
+    {
+      "id": "dl_27",
+      "name": "Dustloop Combo 27",
+      "input": ">  > ,  >  >  66 >  >  > mc"
+    },
+    {
+      "id": "dl_28",
+      "name": "Dustloop Combo 28",
+      "input": ">  > mc ,  jc.9 >  >  jc.9 >  >  j.66 >  > dl."
+    },
+    {
+      "id": "dl_29",
+      "name": "Dustloop Combo 29",
+      "input": "CH  >  > mc dl.,  jc.9 >  > jc.9 >  >  j.66 >  > dl."
+    },
+    {
+      "id": "dl_30",
+      "name": "Dustloop Combo 30",
+      "input": "CH  jc.9  jc.9 >  > ~dl., ,  >  > mc  WS > mc"
+    },
+    {
+      "id": "dl_31",
+      "name": "Dustloop Combo 31",
+      "input": ">  > mc  [Run Under] >  jc.9 >  jc.9 > , ,  >  > mc  WS > mc"
+    },
+    {
+      "id": "dl_32",
+      "name": "Dustloop Combo 32",
+      "input": ">  > mc dl. 66 >  > mc  66 >  >  >  WS > mc"
+    },
+    {
+      "id": "dl_33",
+      "name": "Dustloop Combo 33",
+      "input": ">  > ,  >  > mc ,  >  WS > mc"
+    },
+    {
+      "id": "dl_34",
+      "name": "Dustloop Combo 34",
+      "input": "CH  >  >  66 >  >  > ,  >  WS >  > mc"
+    },
+    {
+      "id": "dl_35",
+      "name": "Dustloop Combo 35",
+      "input": ">  > mc  66 >  >  > mc  (> ) WS > mc"
+    },
+    {
+      "id": "dl_36",
+      "name": "Dustloop Combo 36",
+      "input": ">  > mc ,  > ,  >  >  WS > mc"
+    },
+    {
+      "id": "dl_37",
+      "name": "Dustloop Combo 37",
+      "input": ">  > mc ,  66 >  > ,  >  WS >  > mc"
+    },
+    {
+      "id": "dl_38",
+      "name": "Dustloop Combo 38",
+      "input": ">  > ,  >  > mc ,  66 >  WS >  > mc"
+    },
+    {
+      "id": "dl_39",
+      "name": "Dustloop Combo 39",
+      "input": "CH  >  > mc ,  > ,  >  WS  > mc"
+    },
+    {
+      "id": "dl_40",
+      "name": "Dustloop Combo 40",
+      "input": "CH  >  > mc ,  66 >  > ,  >  WS >  > mc"
+    },
+    {
+      "id": "dl_41",
+      "name": "Dustloop Combo 41",
+      "input": "AA  jc.9 >  jc.9 > , ,  jc.9 >  jc.9 >  >  j.66 >  >  > dl."
+    },
+    {
+      "id": "dl_42",
+      "name": "Dustloop Combo 42",
+      "input": ">  >"
+    },
+    {
+      "id": "dl_43",
+      "name": "Dustloop Combo 43",
+      "input": ">  > mc ,  jc.9 >  jc.9 >  j.66 >  >  > dl."
+    },
+    {
+      "id": "dl_44",
+      "name": "Dustloop Combo 44",
+      "input": "CH  (> ) > mc"
+    },
+    {
+      "id": "dl_45",
+      "name": "Dustloop Combo 45",
+      "input": "CH   (> ) > mc (9-hit)"
+    },
+    {
+      "id": "dl_46",
+      "name": "Dustloop Combo 46",
+      "input": ">  > 66/22PRC 66 >   > mc ,   > mc"
+    },
+    {
+      "id": "dl_47",
+      "name": "Dustloop Combo 47",
+      "input": ">  > mc , (66)  >  > mc"
+    },
+    {
+      "id": "dl_48",
+      "name": "Dustloop Combo 48",
+      "input": ">  > mc ,  jc.9 >  jc.9 >  j.66 \"  >  > dl."
+    },
+    {
+      "id": "dl_49",
+      "name": "Dustloop Combo 49",
+      "input": "CH  >  > ,  jc.9 >  >  jc.9 >  >  j.66 >  >  > dl."
+    },
+    {
+      "id": "dl_50",
+      "name": "Dustloop Combo 50",
+      "input": ">  > mc ,  >  > mc  WS > mc"
+    },
+    {
+      "id": "dl_51",
+      "name": "Dustloop Combo 51",
+      "input": ">  > mc  66 >  > , mc  jc.9 >  WS  > mc"
+    },
+    {
+      "id": "dl_52",
+      "name": "Dustloop Combo 52",
+      "input": ">  >  / mc"
+    },
+    {
+      "id": "dl_53",
+      "name": "Dustloop Combo 53",
+      "input": "> mc  66 >  jc.9 >  >  jc.9 >  >  j.66 >  >  >"
+    },
+    {
+      "id": "dl_54",
+      "name": "Dustloop Combo 54",
+      "input": "> mc  66 >  >  > mc"
+    },
+    {
+      "id": "dl_55",
+      "name": "Dustloop Combo 55",
+      "input": "> mc  22PRC 66 >  >  > mc ,  >  > mc"
+    },
+    {
+      "id": "dl_56",
+      "name": "Dustloop Combo 56",
+      "input": "> mc  22PRC 66 >  >  > mc ,  jc.9 >  jc.9 >  j.66 >  >"
+    },
+    {
+      "id": "dl_57",
+      "name": "Dustloop Combo 57",
+      "input": "CH  > , (66)  >  > mc ,  jc.9 >  jc.9 >  j.66 >  >"
+    },
+    {
+      "id": "dl_58",
+      "name": "Dustloop Combo 58",
+      "input": "CH (Crouching)  > ,  > mc ,  > ,  >  >  WS > mc"
+    },
+    {
+      "id": "dl_59",
+      "name": "Dustloop Combo 59",
+      "input": "CH  > ,  >  > mc  66 >  >  > mc  WS > mc"
+    },
+    {
+      "id": "dl_60",
+      "name": "Dustloop Combo 60",
+      "input": "> mc ,  (66 > ) >  > mc"
+    },
+    {
+      "id": "dl_61",
+      "name": "Dustloop Combo 61",
+      "input": "> mc ,  jc.9 >  >  jc.9 >  >  j.66 >  >  > dl."
+    },
+    {
+      "id": "dl_62",
+      "name": "Dustloop Combo 62",
+      "input": "CH  > ,  jc.9 >  jc.9 > dl., ,  >  > mc"
+    },
+    {
+      "id": "dl_63",
+      "name": "Dustloop Combo 63",
+      "input": "CH  > ,  jc.9 >  jc.9 > dl., ,  jc.9 >  jc.9 >  j.66 >  >  > dl."
+    },
+    {
+      "id": "dl_64",
+      "name": "Dustloop Combo 64",
+      "input": "> mc ,  > mc  66 >  >  WS >  > mc"
+    },
+    {
+      "id": "dl_65",
+      "name": "Dustloop Combo 65",
+      "input": "CH  > ,  > mc  66 >  >  > mc  WS > mc"
+    },
+    {
+      "id": "dl_66",
+      "name": "Dustloop Combo 66",
+      "input": "CH  > ,  > ,  >  > mc ,  >  >  WS > mc"
+    },
+    {
+      "id": "dl_67",
+      "name": "Dustloop Combo 67",
+      "input": "> mc  66 > ,  >  > mc"
+    },
+    {
+      "id": "dl_68",
+      "name": "Dustloop Combo 68",
+      "input": "> mc  66 >  jc.9 >  >  jc.9 >  >  j.66 >  >  > dl."
+    },
+    {
+      "id": "dl_69",
+      "name": "Dustloop Combo 69",
+      "input": "CH (1) > ,  >  > mc ,  >  > mc"
+    },
+    {
+      "id": "dl_70",
+      "name": "Dustloop Combo 70",
+      "input": "CH (1) > ,  >  > mc ,  jc.9 >  jc.9 >  >  j.66 >  >  > dl."
+    },
+    {
+      "id": "dl_71",
+      "name": "Dustloop Combo 71",
+      "input": "= CH (1) > ,  > mc ,  > ,  >  >  WS > mc"
+    },
+    {
+      "id": "dl_72",
+      "name": "Dustloop Combo 72",
+      "input": "> mc dl.,  >  > mc"
+    },
+    {
+      "id": "dl_73",
+      "name": "Dustloop Combo 73",
+      "input": "> mc dl.,  > jc.9 >  jc.9 >  >  j.66 >  >"
+    },
+    {
+      "id": "dl_74",
+      "name": "Dustloop Combo 74",
+      "input": "8 >  >  >  >  >  >"
+    },
+    {
+      "id": "dl_75",
+      "name": "Dustloop Combo 75",
+      "input": "8 >  >  >  > , ,"
+    },
+    {
+      "id": "dl_76",
+      "name": "Dustloop Combo 76",
+      "input": "> (9-hit)"
+    },
+    {
+      "id": "dl_77",
+      "name": "Dustloop Combo 77",
+      "input": "CH  > ,  >  > mc ,  >  > mc"
+    },
+    {
+      "id": "dl_78",
+      "name": "Dustloop Combo 78",
+      "input": "CH  > ,  jc.9 >  jc.9 >  j.66 >  >  > dl."
+    },
+    {
+      "id": "dl_79",
+      "name": "Dustloop Combo 79",
+      "input": "CH  > mc ,  > mc dl.,  >  > mc  WS > mc"
+    },
+    {
+      "id": "dl_80",
+      "name": "Dustloop Combo 80",
+      "input": ", ,  >  > mc"
+    },
+    {
+      "id": "dl_81",
+      "name": "Dustloop Combo 81",
+      "input": ", ,  jc.9 >  jc.9 >  j.66 >  >  >"
+    },
+    {
+      "id": "dl_82",
+      "name": "Dustloop Combo 82",
+      "input": ">  dj. > dl., ,  /  >  > mc"
+    },
+    {
+      "id": "dl_83",
+      "name": "Dustloop Combo 83",
+      "input": "CH  > ,  jc.9 >  jc.9 > dl., ,  jc.9 >  jc.9  j.66  >  >"
+    },
+    {
+      "id": "dl_84",
+      "name": "Dustloop Combo 84",
+      "input": "> 66BRC >  >  j.9 >  jc.9 > dl., ,  >  > mc"
+    },
+    {
+      "id": "dl_85",
+      "name": "Dustloop Combo 85",
+      "input": "> 66BRC >  >  j.9 >  jc.9 > dl., ,  jc.9 >  jc.9 >  >"
+    },
+    {
+      "id": "dl_86",
+      "name": "Dustloop Combo 86",
+      "input": ">  j.66 >  >  j.66 >  >  > dl. > 66FRRC >  >  WS > , mc"
+    },
+    {
+      "id": "dl_87",
+      "name": "Dustloop Combo 87",
+      "input": "IAD  >  j.66 >  >  (> )"
+    },
+    {
+      "id": "dl_88",
+      "name": "Dustloop Combo 88",
+      "input": "IAD  >  j.66 >  dl."
+    },
+    {
+      "id": "dl_89",
+      "name": "Dustloop Combo 89",
+      "input": "IAD (Crouching) ,  >"
+    },
+    {
+      "id": "dl_90",
+      "name": "Dustloop Combo 90",
+      "input": "IAD (Crouching) ,  >  >"
+    },
+    {
+      "id": "dl_91",
+      "name": "Dustloop Combo 91",
+      "input": "(Low / Crouching)  66 > (1) >  > mc ,  >  > mc"
+    },
+    {
+      "id": "dl_92",
+      "name": "Dustloop Combo 92",
+      "input": "Low ,  >  > mc ,  >  WS >  > mc"
+    },
+    {
+      "id": "dl_93",
+      "name": "Dustloop Combo 93",
+      "input": ">  > dl.,  >  > mc  WS > mc"
+    },
+    {
+      "id": "dl_94",
+      "name": "Dustloop Combo 94",
+      "input": "CH  >  j.66 FDC >  /  66 >  >  > mc"
+    },
+    {
+      "id": "dl_95",
+      "name": "Dustloop Combo 95",
+      "input": "CH  >  j.66 FDC >  66 >  >  > ,  jc.9 >  WS > , mc"
+    },
+    {
+      "id": "dl_96",
+      "name": "Dustloop Combo 96",
+      "input": "CH  66 > (1) >  > mc ,  > mc"
+    },
+    {
+      "id": "dl_97",
+      "name": "Dustloop Combo 97",
+      "input": "CH ,  > mc dl.,  >  > mc"
+    },
+    {
+      "id": "dl_98",
+      "name": "Dustloop Combo 98",
+      "input": "CH ,  > mc dl.,  jc.9 >  jc.9 >  j.66 >  >  > dl."
+    },
+    {
+      "id": "dl_99",
+      "name": "Dustloop Combo 99",
+      "input": "CH ,  >  > mc ,  >  WS > , mc"
+    },
+    {
+      "id": "dl_100",
+      "name": "Dustloop Combo 100",
+      "input": "CH ,  > mc  66 >  >  > ,  jc.9 >  WS > , mc"
+    },
+    {
+      "id": "dl_101",
+      "name": "Dustloop Combo 101",
+      "input": "Disc Hit  jc. >  > tc dl., ,  >  > mc"
+    },
+    {
+      "id": "dl_102",
+      "name": "Dustloop Combo 102",
+      "input": "Disc Hit  jc. >  jc. > , ,  jc. >  jc. >  j.66 >"
+    },
+    {
+      "id": "dl_103",
+      "name": "Dustloop Combo 103",
+      "input": "Disc Hit  jc.  dj. > dl., ,  >  > mc dl. WS 66 > mc"
+    },
+    {
+      "id": "dl_104",
+      "name": "Dustloop Combo 104",
+      "input": "Disc Hit j.66 FDC > (Whiff),  jc. >  >  jc.  >  j.66 >  >  >"
+    },
+    {
+      "id": "dl_105",
+      "name": "Dustloop Combo 105",
+      "input": "Disc Hit ,  >  > ,  >  WS >  > mc"
+    },
+    {
+      "id": "dl_106",
+      "name": "Dustloop Combo 106",
+      "input": "Disc Hit  jc. >  > tc dl., ,  >  > mc  WS 66 >"
+    },
+    {
+      "id": "dl_107",
+      "name": "Dustloop Combo 107",
+      "input": "Disc Hit  jc. >  > tc dl., ,  >  > mc  66 >  WS >  > mc"
+    },
+    {
+      "id": "dl_108",
+      "name": "Dustloop Combo 108",
+      "input": "tc dl. Disc Hit  >  > mc"
+    },
+    {
+      "id": "dl_109",
+      "name": "Dustloop Combo 109",
+      "input": "Disc Hit  jc. >  > tc dl., ,  >  > mc  WS >  > mc"
+    },
+    {
+      "id": "dl_110",
+      "name": "Dustloop Combo 110",
+      "input": "Disc Hit  jc. >  jc. > , ,  >  > mc"
+    },
+    {
+      "id": "dl_111",
+      "name": "Dustloop Combo 111",
+      "input": "Disc Hit  jc. >  jc. > , ,  jc. >  jc. >  >  j.66 >  /  /  >  >"
+    },
+    {
+      "id": "dl_112",
+      "name": "Dustloop Combo 112",
+      "input": "Disc Hit  >  > mc ,  >  > mc"
+    },
+    {
+      "id": "dl_113",
+      "name": "Dustloop Combo 113",
+      "input": "Disc Hit j.66 FDC > (Whiff),  >  > mc ,  >  WS >  > mc"
+    },
+    {
+      "id": "dl_114",
+      "name": "Dustloop Combo 114",
+      "input": "Disc Hit 66 >  >  > mc ,  >  > mc  WS > mc"
+    },
+    {
+      "id": "dl_115",
+      "name": "Dustloop Combo 115",
+      "input": "Disc Hit  >  66 >  >  > mc  WS >"
+    },
+    {
+      "id": "dl_116",
+      "name": "Dustloop Combo 116",
+      "input": "Disc Hit  > ,  > , (1) >  WS >  > mc"
+    },
+    {
+      "id": "dl_117",
+      "name": "Dustloop Combo 117",
+      "input": "Disc Hit mc ,  > , (1) >  WS >  > mc"
+    },
+    {
+      "id": "dl_118",
+      "name": "Dustloop Combo 118",
+      "input": "Disc Hit j.66 FDC >  >  > mc ,  >  > mc"
+    },
+    {
+      "id": "dl_119",
+      "name": "Dustloop Combo 119",
+      "input": "tc  Disc Hit 66 ,  >  WS > mc"
+    },
+    {
+      "id": "dl_120",
+      "name": "Dustloop Combo 120",
+      "input": "66FRRC  jc.9 >  jc.9 > dl., ,  >  > mc"
+    },
+    {
+      "id": "dl_121",
+      "name": "Dustloop Combo 121",
+      "input": "66FRRC  jc.9 >  jc.9 > dl., ,  jc.9 >  jc.9 >  >"
+    },
+    {
+      "id": "dl_122",
+      "name": "Dustloop Combo 122",
+      "input": "66FRRC  > mc ,  >  > mc  WS > mc"
+    },
+    {
+      "id": "dl_123",
+      "name": "Dustloop Combo 123",
+      "input": "66FRRC  >  > mc ,  >  > mc  WS > mc"
+    },
+    {
+      "id": "dl_124",
+      "name": "Dustloop Combo 124",
+      "input": "66FRRC (Whiff),  jc.9 >  jc.9 >  j.66  >  > dl."
+    },
+    {
+      "id": "dl_125",
+      "name": "Dustloop Combo 125",
+      "input": "66FRRC (Whiff),  >  > mc"
+    },
+    {
+      "id": "dl_126",
+      "name": "Dustloop Combo 126",
+      "input": "66FRRC (Whiff),  >  > mc ,  >  WS > mc"
+    },
+    {
+      "id": "dl_127",
+      "name": "Dustloop Combo 127",
+      "input": "66FRRC (Whiff),  jc.9 >  j.66 >  >  j.66 >  >  WS > mc"
+    },
+    {
+      "id": "dl_128",
+      "name": "Dustloop Combo 128",
+      "input": "88FRRC~ jc.9. > dl. / , ,  /  >  > mc"
+    },
+    {
+      "id": "dl_129",
+      "name": "Dustloop Combo 129",
+      "input": "88FRRC~ jc.9 >  / , ,  jc.9 >  jc.9 >  >  >"
+    },
+    {
+      "id": "dl_130",
+      "name": "Dustloop Combo 130",
+      "input": "88FRRC~ jc.9. > dl., dl. 66 >  >  > mc ,  > mc  WS > mc"
+    },
+    {
+      "id": "dl_131",
+      "name": "Dustloop Combo 131",
+      "input": "88FRRC~ j.66 > ,  >  > mc  WS > mc"
+    },
+    {
+      "id": "dl_132",
+      "name": "Dustloop Combo 132",
+      "input": "(Blocked) 88FRRC~ jc.9 >  > tc dl., ,  >  > mc  WS > mc"
+    },
+    {
+      "id": "dl_133",
+      "name": "Dustloop Combo 133",
+      "input": "(Blocked) 88FRRC~ jc.9 >  > tc dl., ,  jc.9 >  jc.9 >  >"
+    },
+    {
+      "id": "dl_134",
+      "name": "Dustloop Combo 134",
+      "input": "(Blocked) 88FRRC~ jc.9 >  > dl.,  >  WS > mc"
+    },
+    {
+      "id": "dl_135",
+      "name": "Dustloop Combo 135",
+      "input": "(Blocked) 88FRRC~ j.66 >  >  j.66 >  >  > tc dl WS > mc"
+    },
+    {
+      "id": "dl_136",
+      "name": "Dustloop Combo 136",
+      "input": "(Air hit) ,  >  > mc"
+    },
+    {
+      "id": "dl_137",
+      "name": "Dustloop Combo 137",
+      "input": "(Air hit) ,  >  > mc ,  >  > mc  WS > mc"
+    },
+    {
+      "id": "dl_138",
+      "name": "Dustloop Combo 138",
+      "input": "> 66FRRC > (Whiff) 66 >  jc.9 >  jc.9 . dl., ,  >  > mc"
+    },
+    {
+      "id": "dl_139",
+      "name": "Dustloop Combo 139",
+      "input": "> 66FRRC > (Whiff) 66 >  jc.9 >  jc.9 . dl., ,  jc.9  jc.9 >  >"
+    },
+    {
+      "id": "dl_140",
+      "name": "Dustloop Combo 140",
+      "input": "CH ,  >  > mc ,  >  > mc"
+    },
+    {
+      "id": "dl_141",
+      "name": "Dustloop Combo 141",
+      "input": "CH  66 >  jc.9 >  jc.9 dl., ,  >  > mc"
+    },
+    {
+      "id": "dl_142",
+      "name": "Dustloop Combo 142",
+      "input": "CH  66 >  jc.9 >  jc.9 dl., ,  jc.9 >  jc.9 >  j.66 >  >  >"
+    },
+    {
+      "id": "dl_143",
+      "name": "Dustloop Combo 143",
+      "input": "CH  66 > , ,  > mc"
+    },
+    {
+      "id": "dl_144",
+      "name": "Dustloop Combo 144",
+      "input": "CH  >  > ,  >  > ,  jc.9 >  WS >  > mc"
+    },
+    {
+      "id": "dl_145",
+      "name": "Dustloop Combo 145",
+      "input": "CH  66 >  > mc dl.,  66 >  > ,  jc.9 >  WS >  > mc"
+    },
+    {
+      "id": "dl_146",
+      "name": "Dustloop Combo 146",
+      "input": "IAD ,  66 >  >"
+    },
+    {
+      "id": "dl_147",
+      "name": "Dustloop Combo 147",
+      "input": "IAD ,  >  >"
+    },
+    {
+      "id": "dl_148",
+      "name": "Dustloop Combo 148",
+      "input": "IAD ,  (66) > (1) >  > mc ,  WS > , mc"
+    },
+    {
+      "id": "dl_149",
+      "name": "Dustloop Combo 149",
+      "input": "IAD ,  >  > mc ,  WS > mc"
+    },
+    {
+      "id": "dl_150",
+      "name": "Dustloop Combo 150",
+      "input": "Throw > 22FRRC~(Whiff) j.9 >  jc.9 > dl., ,  >  > mc"
+    },
+    {
+      "id": "dl_151",
+      "name": "Dustloop Combo 151",
+      "input": "Throw > 22FRRC~(Whiff) j.9 >  jc.9 > dl., ,  jc.9  jc.9 >  >"
+    },
+    {
+      "id": "dl_152",
+      "name": "Dustloop Combo 152",
+      "input": "Throw > 22FRRC~(Whiff) > mc  66 >  >  > mc  WS > mc"
     }
   ]
 }
