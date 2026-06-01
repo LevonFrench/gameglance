@@ -5310,7 +5310,7 @@ rosterCount: 25,
       { id: 'sagat', name: 'Sagat', moveCount: 46 },
       { id: 'c-viper', name: 'C. Viper', moveCount: 45 },
       { id: 'alex', name: 'Alex', moveCount: 53 },
-      { id: 'ingrid', name: 'Ingrid', moveCount: 24 }
+      { id: 'ingrid', name: 'Ingrid', moveCount: 23 }
     ],
 
     

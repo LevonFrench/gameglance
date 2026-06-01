@@ -217,11 +217,11 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
       }
     }
     const baseTabs = game.tabs && game.tabs.length > 0 ? [...game.tabs] : [...GLOBAL_DEFAULT_SORT];
-    if (!baseTabs.includes('Combos')) {
-      baseTabs.push('Combos');
-    }
+    // if (!baseTabs.includes('Combos')) {
+    //   baseTabs.push('Combos');
+    // }
     const combinedTabs = Array.from(new Set(baseTabs))
-      .filter(t => t !== 'Command Throws' && t !== 'Normal Throws');
+      .filter(t => t !== 'Command Throws' && t !== 'Normal Throws' && t !== 'Combos');
     const sorted = combinedTabs.sort((a,b) => {
       let idxA = pref.indexOf(a);
       let idxB = pref.indexOf(b);
@@ -615,10 +615,11 @@ export const MoveListView: React.FC<Props> = ({ game, characterId, selectedPlayl
       'Throws', 'Throw', 'Unique Attacks', 'Normal Moves', 'Normal', 'Common Moves', 'Common', 'Combos'
     ];
     const baseTabs = game.tabs && game.tabs.length > 0 ? [...game.tabs] : [...GLOBAL_DEFAULT_SORT];
-    if (!baseTabs.includes('Combos')) {
-      baseTabs.push('Combos');
-    }
-    const combinedTabs = Array.from(new Set(baseTabs));
+    // if (!baseTabs.includes('Combos')) {
+    //   baseTabs.push('Combos');
+    // }
+    const combinedTabs = Array.from(new Set(baseTabs))
+      .filter(t => t !== 'Combos');
     
     combinedTabs.forEach(tab => {
       const fallbackFilter = (list: Move[]) => list.filter(m => 
